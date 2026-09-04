@@ -1,10 +1,19 @@
-param([int]$TimeoutMs = 1000, [ValidateSet('sets','foundations')][string]$Edition = 'sets')
+param(
+ [int]$TimeoutMs = 1000,
+ [ValidateSet('sets','foundations','functions','size')][string]$Edition = 'sets',
+ [string]$StateDirectory = $env:INTERLANGUAGE_STATE_DIR
+)
 $ErrorActionPreference = 'Stop'
-$GuRepo = 'C:\interlanguage-production\openlogic-gu-Gujr-IN\repo'
-$GuState = 'C:\interlanguage-task-state\openlogic-gu-Gujr-IN'
+$GuRepo = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
+$GuState = if ([string]::IsNullOrWhiteSpace($StateDirectory)) {
+ Join-Path $GuRepo 'build'
+} else {
+ [System.IO.Path]::GetFullPath($StateDirectory)
+}
+[void](New-Item -ItemType Directory -Force -Path $GuState)
 $GuJob = "gu-$Edition"
-$GuReceiptName = if ($Edition -eq 'sets') { 'BUILD_RECEIPT.json' } else { 'BUILD_RECEIPT_002.json' }
-$GuLogPrefix = if ($Edition -eq 'sets') { 'pass' } else { 'foundations-pass' }
+$GuReceiptName = switch ($Edition) { 'sets' { 'BUILD_RECEIPT.json' } 'foundations' { 'BUILD_RECEIPT_002.json' } 'functions' { 'BUILD_RECEIPT_003.json' } 'size' { 'BUILD_RECEIPT_004.json' } }
+$GuLogPrefix = if ($Edition -eq 'sets') { 'pass' } else { "$Edition-pass" }
 $GuMutex = [System.Threading.Mutex]::new($false, 'Global\InterlanguageTeXSlotV1')
 $GuAcquired = $false
 $GuAbandoned = $false

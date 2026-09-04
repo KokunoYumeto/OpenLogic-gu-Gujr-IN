@@ -1,0 +1,135 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: zig-zag
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{zigzag}
+
+\olsection{કૅન્ટૉરની આડીઅવળી રીત}
+
+\begin{explain}
+આપણે કેટલીક “સરળ” પરિગણનાઓ જોઈ ચૂક્યા છીએ. હવે
+થોડું વધુ અઘરું ઉદાહરણ લઈએ. પ્રાકૃતિક સંખ્યાઓની
+જોડોનો ગણ લો\oliflabeldef{sfr:set:pai:sec}{, જેને
+\olref[set][pai]{sec}માં આ રીતે વ્યાખ્યાયિત કર્યો હતો:}{,
+જેની વ્યાખ્યા આ છે:}
+\[
+\Nat \times \Nat = \Setabs{\tuple{n,m}}{n,m \in \Nat}
+\]
+આ ક્રમયુક્ત જોડોને નીચે મુજબ \emph{સરણિ}માં ગોઠવી શકીએ:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf 0 & \tuple{0,0} & \tuple{0,1} & \tuple{0,2} & \tuple{0,3} & \dots \\
+\hline
+\mathbf 1 & \tuple{1,0} & \tuple{1,1} & \tuple{1,2} & \tuple{1,3} & \dots \\
+\hline
+\mathbf 2 & \tuple{2,0} & \tuple{2,1} & \tuple{2,2} & \tuple{2,3} & \dots \\
+\hline
+\mathbf 3 & \tuple{3,0} & \tuple{3,1} & \tuple{3,2} & \tuple{3,3} & \dots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+\end{array}
+\]
+સ્પષ્ટપણે $\Nat \times \Nat$ની દરેક ક્રમયુક્ત જોડ
+સરણિમાં ચોક્કસ એક વાર આવશે. ખાસ કરીને,
+$\tuple{n,m}$ એ $n$મી હાર અને $m$મા સ્તંભમાં આવશે.
+પરંતુ આવી સરણિના ઘટકોને “એક પરિમાણવાળી” યાદીમાં
+કેવી રીતે ગોઠવવા? નીચેની સરણિમાંની ભાત તેની એક રીત
+બતાવે છે (અલબત્ત, બીજા ઘણા વિકલ્પો છે):
+\[
+\begin{array}{ c | c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 &\dots \\
+\hline
+\mathbf 0 & 0  & 1& 3 & 6& 10 &\ldots \\
+\hline
+\mathbf 1 &2 & 4& 7 & 11 & \dots &\ldots \\
+\hline
+\mathbf 2 & 5 & 8 & 12 & \ldots & \dots&\ldots \\
+\hline
+\mathbf 3 & 9 & 13 & \ldots & \ldots & \dots & \ldots \\
+\hline
+\mathbf 4 & 14 & \ldots & \ldots & \ldots & \dots & \ldots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots&\ldots & \ddots\\
+\end{array}
+\]\noindent
+આ ભાતને \emph{કૅન્ટૉરની આડીઅવળી રીત} કહે છે.
+તે $\Nat \times \Nat$ની પરિગણના નીચે મુજબ કરે છે:
+\[
+\tuple{0,0}, \tuple{0,1}, \tuple{1,0}, \tuple{0,2}, \tuple{1,1},
+\tuple{2,0}, \tuple{0,3}, \tuple{1,2}, \tuple{2,1}, \tuple{3,0}, \dots
+\]
+આથી નીચેનું પરિણામ સ્થાપિત થાય છે:
+\end{explain}
+
+\begin{prop}\ollabel{natsquaredenumerable}
+$\Nat \times \Nat$ એ !!{enumerable} છે.
+\end{prop}
+
+\begin{proof}
+વિધેય $f \colon \Nat \to \Nat\times\Nat$ દરેક
+$k \in \Nat$ને એવી બહુજોડ
+$\tuple{n,m} \in \Nat \times \Nat$ પર મોકલે એમ લો
+કે કૅન્ટૉરની આડીઅવળી સરણિની $n$મી હાર અને
+$m$મા સ્તંભમાંની કિંમત $k$ હોય.
+\end{proof}
+
+\begin{explain}
+આ રીતનું સામાન્યીકરણ પણ સારી રીતે થાય છે. દાખલા તરીકે,
+પ્રાકૃતિક સંખ્યાઓની ક્રમયુક્ત ત્રિજોડોના ગણની પરિગણના
+કરવા તેનો ઉપયોગ કરી શકીએ, એટલે કે:
+\[
+\Nat \times \Nat \times \Nat = \Setabs{\tuple{n,m,k}}{n,m,k \in \Nat}
+\]
+આપણે $\Nat \times \Nat \times \Nat$ને
+$\Nat \times \Nat$ અને $\Nat$ના કાર્તેઝીય ગુણાકાર
+તરીકે વિચારીએ છીએ, એટલે કે:
+\[
+\Nat^3 = (\Nat \times \Nat) \times \Nat =
+\Setabs{\tuple{\tuple{n,m},k}}{n, m, k
+  \in \Nat }
+\]
+તેથી સરણિના એક અક્ષ પર $\Nat$ની પરિગણના
+અને બીજા અક્ષ પર $\Nat^2$ની પરિગણનાનાં નામ
+મૂકીને $\Nat^3$ની પરિગણના કરી શકીએ:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \dots \\
+\hline
+\mathbf{\tuple{0,0}} & \tuple{0,0,0} & \tuple{0,0,1} & \tuple{0,0,2} & \tuple{0,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,1}} & \tuple{0,1,0} & \tuple{0,1,1} & \tuple{0,1,2} & \tuple{0,1,3} & \dots \\
+\hline
+\mathbf{\tuple{1,0}} & \tuple{1,0,0} & \tuple{1,0,1} & \tuple{1,0,2} & \tuple{1,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,2}} & \tuple{0,2,0} & \tuple{0,2,1} & \tuple{0,2,2} & \tuple{0,2,3} & \dots\\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{array}
+\]
+આમ, કૅન્ટૉરની આડીઅવળી રીત જેવી રીત વડે
+$\Nat^3$ની પરિગણના પણ મેળવી શકીએ.
+આગળ વધતાં, કોઈ પણ પ્રાકૃતિક સંખ્યા $n$ માટે
+$\Nat^n$ની પરિગણના મેળવી શકીએ. તેથી:
+\end{explain}
+
+\begin{prop}
+દરેક $n \in \Nat$ માટે $\Nat^n$ એ !!{enumerable} છે.
+\end{prop}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-n}
+બતાવો કે દરેક $n \in \Nat$ માટે $(\PosInt)^n$
+એ !!{enumerable} છે.
+\end{prob}
+
+\begin{prob}\label{sfr:siz:zigzag:prob:posint-star}
+બતાવો કે $(\PosInt)^*$ એ !!{enumerable} છે.
+તમે \cref{sfr:siz:zigzag:prob:posint-n} ધારી શકો છો.
+\end{prob}
+
+\end{document}

@@ -1,8 +1,15 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 16,
-  "release_scope": "Complete Sets and Relations chapters, OLP-0004–0019",
+  "translated": 37,
+  "working_scope": "Complete Sets, Relations, Functions, and Size of Sets, OLP-0004–0040",
+  "working_status": "structural, semantic, and HTML QA passed; cumulative PDF pending shared TeX slot",
+  "public_release": {
+    "tag": "sets-relations-v0.2.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/sets-relations-v0.2.0",
+    "translated": 16,
+    "scope": "Complete Sets and Relations, OLP-0004–0019"
+  },
   "complete_edition": false,
   "units": [
     {
@@ -27,239 +34,260 @@
       "unit_id": "OLP-0004",
       "source_path": "content/sets-functions-relations/sets/sets.tex",
       "source_sha256": "98a8964a95d72ab3004decdef3ee74f1dd1f221dd06dfc0e6d44eff52104f277",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "75a3605b435b121adb3686240cb502c88dfb2f608bc241e4cf281b21722e45cd"
     },
     {
       "unit_id": "OLP-0005",
       "source_path": "content/sets-functions-relations/sets/basics.tex",
       "source_sha256": "232ff51f51e74fcfee836650f3c597b54bf10ba5363c648a0c05fe8222e4a865",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "2cd3cb8c290c5b1a9e969db7d41eb8e2eb451035ef3511cc8c0ae9bf02ff6de1"
     },
     {
       "unit_id": "OLP-0006",
       "source_path": "content/sets-functions-relations/sets/subsets.tex",
       "source_sha256": "63d819c246577b3bfd8ba2a933f114b58c6549bdc4fa6ea8ffa8ab07c7fed4b7",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "782cca88ad1be7f99828292ce9f506716d3b0ba6ae8f7cc8ee45ac6731f0fb74"
     },
     {
       "unit_id": "OLP-0007",
       "source_path": "content/sets-functions-relations/sets/important-sets.tex",
       "source_sha256": "ec2115fa48ea6c6684a65bdf2f504102ca0a74b40cf88293dfc12f4ab97ada02",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "04268d7451f2610594b244a9ba8b20c37a608c8c34b40ec6bac8892c3b5eeaee"
     },
     {
       "unit_id": "OLP-0008",
       "source_path": "content/sets-functions-relations/sets/unions-and-intersections.tex",
       "source_sha256": "e556ac6add69b1e6d41123eb05be4adb15f2dc120a3782a721caeab42dbc4529",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "479a866032c9eae22230d376f546944bc9e67e7852575dd0dd39aa30fb335a81"
     },
     {
       "unit_id": "OLP-0009",
       "source_path": "content/sets-functions-relations/sets/pairs-and-products.tex",
       "source_sha256": "935f1e0e90dc783a1d5cb3298a38aa8df49af8b424e7282b27dc2ab4e9d85610",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "aa9a7b740875860a3af42fb205b6cacc08d4c364487677797dcb197129585c64"
     },
     {
       "unit_id": "OLP-0010",
       "source_path": "content/sets-functions-relations/sets/russells-paradox.tex",
       "source_sha256": "aa8e94675f56112d8952b81d17968545b54c33393bfc466745edcaca30f4453a",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "6946b2ff400e46866f64e91253e6d319c83c04c43d182c4dc701bf870965c002"
     },
     {
       "unit_id": "OLP-0011",
       "source_path": "content/sets-functions-relations/relations/relations-complete.tex",
       "source_sha256": "9720780fcf56a05f8f18c26234d7bebc24024116bb6549a151e0905845b41ef5",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "f992858641a0783491b622b5f69eb3b78d7baf310687139a6edf6ec32f1cce5b"
     },
     {
       "unit_id": "OLP-0012",
       "source_path": "content/sets-functions-relations/relations/relations-as-sets.tex",
       "source_sha256": "2a67c6fb4846155e8e7cd8172fd1fb8214db96d508ceae5d70dec95d5dfcc1ff",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495"
     },
     {
       "unit_id": "OLP-0013",
       "source_path": "content/sets-functions-relations/relations/reflections.tex",
       "source_sha256": "75047e8806a58c0a0c07ae2e55554d9ad2affb9d5297b1d5585ebe0b2f3de651",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "65505e647ccb1492de0bc1d7c60bae8b1cc9d986221117daf91f3ab0d1c703ee"
     },
     {
       "unit_id": "OLP-0014",
       "source_path": "content/sets-functions-relations/relations/special-properties.tex",
       "source_sha256": "006f2ea0d65e5069ef1509de94dd35a477ea835c19962da22f4bef48caffbee7",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "c738b8f1648d9f4aa32cb4efcad04e3ec3fbf2251c735abf508754abab82fb84"
     },
     {
       "unit_id": "OLP-0015",
       "source_path": "content/sets-functions-relations/relations/equivalence-relations.tex",
       "source_sha256": "d9531aa5cd774c12090fbd5c9fb289181e93cf7e9a96ecf7d4fd3fcdf5d250c7",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "1ecb10dd8641f2237298cefbafa8100c07f2f8f06d558f538e5b6d32de1343b3"
     },
     {
       "unit_id": "OLP-0016",
       "source_path": "content/sets-functions-relations/relations/orders.tex",
       "source_sha256": "79593789022fef31c0609b9c94856e2aef5cd5e88e92864e782bb6e6e5f4bce4",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c"
     },
     {
       "unit_id": "OLP-0017",
       "source_path": "content/sets-functions-relations/relations/graphs.tex",
       "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "290b9c1f9ecd86be9b20ce20bd0160eba67008e083370b8c159e3fb24c2cd641"
     },
     {
       "unit_id": "OLP-0018",
       "source_path": "content/sets-functions-relations/relations/trees.tex",
       "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b"
     },
     {
       "unit_id": "OLP-0019",
       "source_path": "content/sets-functions-relations/relations/operations.tex",
       "source_sha256": "73c8bdb301aca93f687a06a045533d75d30088ae711f5e1dfd577b7864f8d3d5",
-      "status": "translated_chapter_qa_passed",
+      "status": "translated_public_release_qa_passed",
       "translation_sha256": "8baad1e3ebf355a5c5195bab8f6a9060126934153bd3830b6d68fafa4306831b"
     },
     {
       "unit_id": "OLP-0020",
       "source_path": "content/sets-functions-relations/functions/functions.tex",
       "source_sha256": "d68bba27e593df2c17e2dc93b34256d829361b04134b4a962b997d5f4a230a59",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "254a1e289685133893c599e379c0b5fc9d6bb747483a90ad30780e6e29ea7333"
     },
     {
       "unit_id": "OLP-0021",
       "source_path": "content/sets-functions-relations/functions/function-basics.tex",
       "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364"
     },
     {
       "unit_id": "OLP-0022",
       "source_path": "content/sets-functions-relations/functions/function-kinds.tex",
       "source_sha256": "4d30902b7c66720afabb8b079294106a685aefba0dc02ca10d9921bb554db0ac",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "3255e9aba2a04f71c6c86aefdb14438c345a8105b69c545220ccaf69fd397f7e"
     },
     {
       "unit_id": "OLP-0023",
       "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
       "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "b348c926961347405fb3589274e0ad70c027d84e9c92f745e378734199b0c909"
     },
     {
       "unit_id": "OLP-0024",
       "source_path": "content/sets-functions-relations/functions/inverses.tex",
       "source_sha256": "96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "d782d6872d682641ec8ccd156efcfce26b78dc81d2ce0155297cb0e17c22de5c"
     },
     {
       "unit_id": "OLP-0025",
       "source_path": "content/sets-functions-relations/functions/composition.tex",
       "source_sha256": "1733e9f6b7f1009f7d36cb47b3f11ec8cccc28ef173a379e4d69c3de352fcf28",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "335ed06479d8ac82043ddb3fe3cfcf13a28fc060bcfb5812d6595bef832e3195"
     },
     {
       "unit_id": "OLP-0026",
       "source_path": "content/sets-functions-relations/functions/partial-functions.tex",
       "source_sha256": "0f638e25ad1f565b9256846fb8b293c03663072b69a2adc5f2cfea1e94d00933",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "59a4c449acea7ed67a295bacded5a4d0d177ff5be56ec383ee1f55d3536330f8"
     },
     {
       "unit_id": "OLP-0027",
       "source_path": "content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
       "source_sha256": "bce6978871cb87871f8fbae0d51c9e260ba26c6c63ebefaad30d83c89ad1eae0",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "c9c72f5d8f757480b06cb58eacf53351395ab9ca09442d5273d7928a36f7162f"
     },
     {
       "unit_id": "OLP-0028",
       "source_path": "content/sets-functions-relations/size-of-sets/introduction.tex",
       "source_sha256": "bb5010906c4b4b95ef652f372efc49c44ca9feebbca1e50fecbb29b3ff6ce8aa",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "fb13e311d0f0ee0e624440a22c42d779b80ad6aa6e6269337ac48c517f607426"
     },
     {
       "unit_id": "OLP-0029",
       "source_path": "content/sets-functions-relations/size-of-sets/enumerability.tex",
       "source_sha256": "bf6be35c0e393cb6e1d227f8e9024df4216792e663f23beb7277045487acfa67",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "ae95ab24ac3c3306d59b0367ad1b3448883afe73a034510ca724ba59f0ee505d"
     },
     {
       "unit_id": "OLP-0030",
       "source_path": "content/sets-functions-relations/size-of-sets/zig-zag.tex",
       "source_sha256": "514c709d325dd5496ee321828b0c4a0e7eea089a58d3f2ecde05128b9e7daf26",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "92267db5ab4560c2a1f3786ee174caeed444c59983cf2c63d0a452fb8a254923"
     },
     {
       "unit_id": "OLP-0031",
       "source_path": "content/sets-functions-relations/size-of-sets/pairing.tex",
       "source_sha256": "fb6cc1176e91e56cea5f5b9708723c59191813f8fe256aac8ed0457a0119a9bf",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "d647d28c903c54c4a3aa2aefe711ad620b4b4a34249428234d50752edabf3ba6"
     },
     {
       "unit_id": "OLP-0032",
       "source_path": "content/sets-functions-relations/size-of-sets/pairing-alt.tex",
       "source_sha256": "c26b4e0da9e2e0b0ec839470ddd1d0d5eb1b3d3922d3b6986c9a795f34328797",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "40904100170476dac400d273c4eceddc5750aacd22d4d383bffaed2604c9a9a8"
     },
     {
       "unit_id": "OLP-0033",
       "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability.tex",
       "source_sha256": "4471def29c2da48dcb01635adf692cd0bc89cb6885636db149f4b2d86ff4e9fa",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "bce8320a7d3364019ba9f17a97611a5a0de943647cbc4ba845bf615ef26494b4"
     },
     {
       "unit_id": "OLP-0034",
       "source_path": "content/sets-functions-relations/size-of-sets/reduction.tex",
       "source_sha256": "0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "f87e04b6c9b161fd013d69c12446a5de4a81cf9a2fbbb944c37a49e3c9fe7653"
     },
     {
       "unit_id": "OLP-0035",
       "source_path": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
       "source_sha256": "025a3fc368d6873825effcb07631913762edbf2d3f9a0711d57dcd9575361251",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "6fbd4a47047c24d9dc2f53b708812801075de97462a139f0ae6b7852a0bac85b"
     },
     {
       "unit_id": "OLP-0036",
       "source_path": "content/sets-functions-relations/size-of-sets/comparing-size.tex",
       "source_sha256": "075810b1cf1c8b54266518523d4665d3deae4a4937f4e19a66a09cc0e1aaebf7",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "cf50fcd95edeadb0e27343b90e92c238c4b53c6e8bc8bcbd65c53fe1ca4a51dd"
     },
     {
       "unit_id": "OLP-0037",
       "source_path": "content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
       "source_sha256": "7b99b3e032e24e425383734ce80ad9a5cc37d018c09205e02f37b927d50bb56a",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "7f481c83f2e1e975c0935282cf02bbd2405b19672fd1e604301386a6c979f343"
     },
     {
       "unit_id": "OLP-0038",
       "source_path": "content/sets-functions-relations/size-of-sets/enumerability-alt.tex",
       "source_sha256": "9a9060e57403586c0f8a81353c1d9c81049869e486b4dc032fbf32542023ba8f",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "5bea908c829dcd500d91810a033fcb46dd399e4a13cd28a144545b6687639002"
     },
     {
       "unit_id": "OLP-0039",
       "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
       "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "bbf7f9fe3a894044e816432156c06a083dbf4e7aa5b8899e35c00cb28003520f"
     },
     {
       "unit_id": "OLP-0040",
       "source_path": "content/sets-functions-relations/size-of-sets/reduction-alt.tex",
       "source_sha256": "f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "1c0dd4b5ba5d8c82b6e9620c34080cd16728323f5dc44d74fab7c10f69d7c18d"
     },
     {
       "unit_id": "OLP-0041",

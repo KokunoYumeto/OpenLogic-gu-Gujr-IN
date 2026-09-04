@@ -1,129 +1,127 @@
 {
-  "schema": "openlogic-gu-qa/1",
-  "checkpoint_utc": "2026-09-04T15:59:49.717102+00:00",
+  "schema": "openlogic-gu-qa/2",
+  "checkpoint_utc": "2026-09-04T19:47:58.957876+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 16,
+  "translated_units": 37,
+  "publicly_verified_release_units": 16,
   "total_units": 722,
-  "aligned_linguistic_blocks": 190,
-  "status": "sets_relations_release_ready; complete_corpus_in_progress",
-  "math_spans_verified": 844,
-  "all_identifier_reference_environment_checks": true,
+  "aligned_linguistic_blocks": 464,
+  "source_math_spans_verified": 2397,
   "semantic_review": {
-    "method": "same-agent comparison",
-    "reverse_paraphrase_samples": 22,
-    "independent_native_certification": false
+    "method": "same-agent source comparison and reverse paraphrase",
+    "samples": 91,
+    "independent_native_certification": false,
+    "status": "passed_for_current_37_unit_scope"
   },
-  "pdf": {
-    "bytes": 266608,
-    "sha256": "c4235f6bdc210ca4e0763a4c6d4c067cad755076984dc2b040b333b7c39b4698",
-    "pages": 19,
-    "renders": [
-      {
-        "pdf_page": 1,
-        "png_sha256": "1e2e3be9e94980c182f2e41d9e2bd1ec2f67b3e43043163f01356410767412a1"
-      },
-      {
-        "pdf_page": 2,
-        "png_sha256": "08fa27bf34e4bef4565c105ad3302c3e0a448abb33de89c19a8462c73e6dee21"
-      },
-      {
-        "pdf_page": 3,
-        "png_sha256": "d5e2bfb29beceae86b527b3631d55e3b1581745109ba987f98c576b3c242d00e"
-      },
-      {
-        "pdf_page": 4,
-        "png_sha256": "58781e7fc896d4b34885e4c03ee1f1b4e2bc5bea0a26fcda53e1b873efd96c02"
-      },
-      {
-        "pdf_page": 5,
-        "png_sha256": "ec74eeda2ff766ae1942c53ad0bcc085591859a76cc6cd0e8fed079dc48387c4"
-      },
-      {
-        "pdf_page": 6,
-        "png_sha256": "4ff4edeb28c7f550f1d8ef81cbdf61b15fe72bd460781ab533a38a98c431b136"
-      },
-      {
-        "pdf_page": 7,
-        "png_sha256": "fe4908801bc757ed4b5eb2d2cb0f8b0a191be6dcc771a56a2fccb27a9d898d96"
-      },
-      {
-        "pdf_page": 8,
-        "png_sha256": "a0c23c44af2cd8013d110a95c8719cbc7347fa58bf9421197dda6855a4bde12d"
-      },
-      {
-        "pdf_page": 9,
-        "png_sha256": "c4366eab0ccb625472fcfd6958d9675c0fa08564c71ba63e7d061dd5423f1031"
-      },
-      {
-        "pdf_page": 10,
-        "png_sha256": "502a94d95ebe33270d717719f68b6481fc95cbce638e6900320ea1e97e361fcd"
-      },
-      {
-        "pdf_page": 11,
-        "png_sha256": "6c007126bf5c911c04858943ff8870c54fd8244966231e93ba9fea56ba1be8fb"
-      },
-      {
-        "pdf_page": 12,
-        "png_sha256": "55a010241b87e40ffbf8052ca7d252cc3f254d18ca8451400870e5164f9ecc5c"
-      },
-      {
-        "pdf_page": 13,
-        "png_sha256": "33c4cc1cb1eade6c43d217f5c9ba61a3adb4cb04cfb2ea58a7369b14ea6777c0"
-      },
-      {
-        "pdf_page": 14,
-        "png_sha256": "82833786c6ab611ab707ce351689142d9903bb9b5a56dae2e6270c3306727dab"
-      },
-      {
-        "pdf_page": 15,
-        "png_sha256": "5c3bb7abab60e532ed1254ff4aa615fd294bd7276bf835157a0c6f5bd022b840"
-      },
-      {
-        "pdf_page": 16,
-        "png_sha256": "6f03596a9e4e1436764138bc79fb454bba33be8a3739b91c9ed2bb6bf1161737"
-      },
-      {
-        "pdf_page": 17,
-        "png_sha256": "be1adbf11f0db3dde50bb680bad8649385ae9f230e682a7c6aff5cd5f9538000"
-      },
-      {
-        "pdf_page": 18,
-        "png_sha256": "f11bc38500d62f4693fb1a27d5c1f882612c52b18bc2076faf8b36b5343701d8"
-      },
-      {
-        "pdf_page": 19,
-        "png_sha256": "94e9cc50ffde68410623be269ec46ca0ff2cd701982b0de3db274f5de9ee6e6a"
-      }
+  "source_corrections": {
+    "count": 17,
+    "ids": [
+      "OLFUN-001",
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-011",
+      "OLSIZ-012"
     ],
-    "changed_pages_since_initial_render": [
-      3,
-      10
-    ],
-    "all_pages_visual_inspection": "All 19 initial pages actually viewed; final changed pages 3 and 10 reinspected, other 17 byte-identical PNGs.",
-    "glyphs": "No missing glyph warning; Gujarati conjuncts/vowels/numerals and math visually checked",
-    "extraction": "PyMuPDF logical text present but word spacing imperfect; offline semantic HTML supplied",
-    "all_pages_visually_inspected": true
+    "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "bytes": 324023,
-    "sha256": "8982aae565eadc6d11ad95aa55a7a7fccf61d425d0ad02733788e0291bf5ed7f",
-    "gujarati_char_sequence_preserved": true,
+    "path": "reader/size.html",
+    "bytes": 917506,
+    "sha256": "f14fd54567b955e659d0cba1443f3ba67b5a2145669bb92f142deb88595fe4b0",
+    "source_units_covered": 37,
+    "size_units_complete": 14,
+    "mathml_nodes": 2370,
+    "images": 11,
+    "unique_ids": 128,
+    "broken_internal_links": 0,
+    "size_section_ids": [
+      "sfr:siz:int:sec",
+      "sfr:siz:enm:sec",
+      "sfr:siz:zigzag:sec",
+      "sfr:siz:pai:sec",
+      "sfr:siz:pai-alt:sec",
+      "sfr:siz:nen:sec",
+      "sfr:siz:red:sec",
+      "sfr:siz:equ:sec",
+      "sfr:siz:car:sec",
+      "sfr:siz:sb:sec",
+      "sfr:siz:enm-alt:sec",
+      "sfr:siz:nen-alt:sec",
+      "sfr:siz:red-alt:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012"
+    ],
     "gujarati_character_inventory_preserved": true,
-    "source_gujarati_chars": 25036,
-    "html_gujarati_chars": 25036,
-    "missing_char_inventory": {},
-    "extra_char_inventory": {},
-    "mathml_nodes": 842,
-    "images": 6,
-    "browser_inspection": "Actually viewed graph and tree sections; Gujarati glyphs and source incidence correct"
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 3,
+    "partial_arrows": 6,
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ],
+    "browser_inspection": "passed_actual_live_browser_inspection"
   },
-  "full_corpus_complete": false,
-  "batch_002": {
-    "draft_units": 9,
-    "linguistic_blocks": 104,
-    "math_spans": 517,
-    "structural_parity": "passed",
-    "build": "passed_reproducible_visual_checked",
-    "semantic_samples": 13
-  }
+  "pdf": {
+    "status": "pending_shared_tex_slot",
+    "latest_attempt_receipt": "BUILD_RECEIPT_004.json",
+    "publication_gate": "three guarded passes, reproducible hash, all-page visual inspection"
+  },
+  "batches": {
+    "001": {
+      "units": 7,
+      "blocks": 86,
+      "math": 327,
+      "semantic": 9
+    },
+    "002": {
+      "units": 9,
+      "blocks": 104,
+      "math": 517,
+      "semantic": 13
+    },
+    "003": {
+      "units": 7,
+      "blocks": 87,
+      "math": 414,
+      "semantic": 18
+    },
+    "004": {
+      "units": 14,
+      "blocks": 187,
+      "math": 1139,
+      "semantic": 51
+    }
+  },
+  "status": "37_unit_source_and_html_checkpoint_passed; cumulative_pdf_pending; complete_corpus_in_progress",
+  "full_corpus_complete": false
 }

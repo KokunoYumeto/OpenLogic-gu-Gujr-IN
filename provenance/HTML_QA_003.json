@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-gu-html-qa/4",
+  "html": {
+    "bytes": 478874,
+    "sha256": "03bb1c0e17d7926e20abbf3212a345d640ecaf1e5a0048e2e249e5ceba26c211",
+    "mathml_nodes": 1269,
+    "images": 11,
+    "unique_ids": 75,
+    "broken_internal_links": 0,
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 1,
+    "partial_arrows": 6,
+    "partial_arrow_representation": "Unicode U+21F8 RIGHTWARDS ARROW WITH VERTICAL STROKE matches frozen TeX composite arrow; aria label and TeX annotation retained."
+  },
+  "browser_inspection": {
+    "status": "passed_actual_iab_visual_inspection",
+    "viewed": [
+      "all five adjacent OLFUN correction boxes in their rendered sections",
+      "corrected nonempty-domain left-inverse theorem and proof",
+      "nonnegative principal-square-root wording",
+      "domain-only restriction distinction",
+      "surjective diagram and type definition",
+      "partial function definition and arrow",
+      "composition prose, order, diagram and activated references",
+      "function diagram: all three inputs reach same output, three other outputs unattained",
+      "injective diagram: three inputs reach distinct outputs, other codomain elements unattained",
+      "bijective diagram: three inputs paired with three outputs"
+    ],
+    "pending": []
+  },
+  "pdf": "pending shared TeX slot",
+  "full_corpus_complete": false
+}

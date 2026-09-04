@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-gu-html-qa/4",
+  "html": {
+    "path": "reader/size.html",
+    "bytes": 917506,
+    "sha256": "f14fd54567b955e659d0cba1443f3ba67b5a2145669bb92f142deb88595fe4b0",
+    "source_units_covered": 37,
+    "size_units_complete": 14,
+    "mathml_nodes": 2370,
+    "images": 11,
+    "unique_ids": 128,
+    "broken_internal_links": 0,
+    "size_section_ids": [
+      "sfr:siz:int:sec",
+      "sfr:siz:enm:sec",
+      "sfr:siz:zigzag:sec",
+      "sfr:siz:pai:sec",
+      "sfr:siz:pai-alt:sec",
+      "sfr:siz:nen:sec",
+      "sfr:siz:red:sec",
+      "sfr:siz:equ:sec",
+      "sfr:siz:car:sec",
+      "sfr:siz:sb:sec",
+      "sfr:siz:enm-alt:sec",
+      "sfr:siz:nen-alt:sec",
+      "sfr:siz:red-alt:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 3,
+    "partial_arrows": 6,
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ]
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-04T19:47:03.960982+00:00",
+    "method": "Codex in-app browser: focused accessibility inspection plus viewport screenshots using CUA and Playwright locators.",
+    "url": "http://127.0.0.1:8789/reader/size.html",
+    "viewed": [
+      "Gujarati document title, 37/722 edition notice, and 33-section cumulative table of contents",
+      "section 22 enumerability table and disclosed OLSIZ-001 repair",
+      "section 27 reduction formulas and OLSIZ-004/OLSIZ-005 notices",
+      "section 28 empty-set proof branch and OLSIZ-006 notice",
+      "section 29 cardinal comparisons, Cantor theorem, and OLSIZ-007 notice",
+      "section 32 repaired conditional footnote, diagonal array, and OLSIZ-011/OLSIZ-008/OLSIZ-009 notices",
+      "section 33 reduction formulas, repaired non-enumerability sentence, exercises, and OLSIZ-010/OLSIZ-012 notices",
+      "partial-function arrow rendered as ⇸ with Gujarati accessibility labels",
+      "editorial notes with OLSIZ-001–012 range, bibliography, and three rendered footnotes"
+    ],
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_004.json",
+    "samples": 51,
+    "status": "passed_same_agent_not_independent_native_certification"
+  },
+  "pdf": "pending shared TeX slot",
+  "full_corpus_complete": false
+}

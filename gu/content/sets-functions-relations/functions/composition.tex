@@ -1,0 +1,75 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{cmp}
+\olsection{વિધેયોનું સંયોજન}
+
+\begin{explain}
+\oliflabeldef{sfr:fun:inv:sec}{આપણે \olref[inv]{sec}માં
+જોયું કે !!a{bijection}~$f$નું પ્રતિવિધેય~$f^{-1}$
+પોતે એક વિધેય છે. વિધેયો પરની બીજી ક્રિયા સંયોજન છે:
+આપણે}{આપણે} બે વિધેયો $f$ અને~$g$નું સંયોજન કરીને,
+એટલે કે પહેલાં $f$ અને પછી $g$ લાગુ પાડીને, નવું વિધેય
+વ્યાખ્યાયિત કરી શકીએ. અલબત્ત, વિસ્તાર અને પ્રદેશ મેળ ખાતા
+હોય તો જ આ શક્ય છે: $f$નો વિસ્તાર $g$ના પ્રદેશનો
+ઉપગણ હોવો જોઈએ. \oliflabeldef{sfr:rel:ops:sec}{વિધેયો
+પરની આ ક્રિયા \olref[rel][ops]{sec}માં સંબંધો પરની
+સાપેક્ષ ગુણાકારની ક્રિયાને અનુરૂપ છે.}{}
+
+સંયોજનનો ખ્યાલ સમજાવવામાં ચિત્ર મદદરૂપ થઈ શકે.
+\olref{fig:composition}માં આપણે બે વિધેયો
+$f \colon A \to B$ અને $g \colon B \to C$
+તથા તેમનું સંયોજન~$(\comp{f}{g})$ દર્શાવીએ છીએ.
+વિધેય $(\comp{f}{g}) \colon A \to C$ એ $A$ના દરેક
+!!{element}ને $C$ના !!a{element} સાથે જોડે છે.
+$A$નો !!a{element} એ $C$ના કયા !!{element}
+સાથે જોડાય છે તે આ રીતે નક્કી કરીએ: આગત $x \in
+A$ આપેલું હોય ત્યારે પહેલાં વિધેય $f$ને $x$ પર લાગુ પાડો.
+તે કોઈક $f(x)
+= y \in B$ આપશે; પછી $g$ને $y$ પર લાગુ પાડો.
+તે કોઈક $g(f(x)) = g(y) = z \in C$ આપશે.
+\begin{figure}
+  \olasset[2\olphotowidth]{assets/diagrams/composition.tikz}
+  \caption{બે વિધેયો $f$ અને~$g$નું સંયોજન $g \circ f$.}
+  \ollabel{fig:composition}
+\end{figure}
+\end{explain}
+
+\begin{defn}[સંયોજન]
+ધારો કે $f\colon A \to B$ અને $g\colon B \to C$
+વિધેયો છે. $f$નું $g$ સાથેનું \emph{સંયોજન}
+એ $\comp{f}{g} \colon A \to C$ છે, જ્યાં
+$(\comp{f}{g})(x) = g(f(x))$.
+\end{defn}
+
+\begin{ex}
+વિધેયો $f(x) = x + 1$ અને $g(x) = 2x$ લો.
+$(\comp{f}{g})(x) = g(f(x))$ હોવાથી, દરેક આગત~$x$
+માટે પહેલાં તેનું અનુગામી લેવું પડે અને પછી પરિણામને
+બે વડે ગુણવું પડે. તેથી તેમનું સંયોજન
+$(\comp{f}{g})(x) = 2(x+1)$ દ્વારા અપાય છે.
+\end{ex}
+
+\begin{prob}
+બતાવો કે જો $f \colon A \to B$ અને $g \colon B \to C$
+બંને !!{injective} હોય, તો $\comp{f}{g}\colon A \to C$
+પણ !!{injective} છે.
+\end{prob}
+
+\begin{prob}
+બતાવો કે જો $f \colon A \to B$ અને $g \colon B \to C$
+બંને !!{surjective} હોય, તો $\comp{f}{g}\colon A \to C$
+પણ !!{surjective} છે.
+\end{prob}
+
+\begin{prob}
+ધારો કે $f \colon A \to B$ અને $g \colon B \to C$ છે.
+બતાવો કે $\comp{f}{g}$નો આલેખ $R_f \mid R_g$ છે.
+\end{prob}
+
+\end{document}

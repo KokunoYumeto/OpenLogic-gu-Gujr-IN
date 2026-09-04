@@ -1,0 +1,166 @@
+{
+  "schema": "openlogic-gu-parity/4",
+  "reports": [
+    {
+      "unit_id": "OLP-0020",
+      "path": "content/sets-functions-relations/functions/functions.tex",
+      "math_source_count": 0,
+      "math_target_count": 0,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_correction_math_deltas": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 13,
+      "target_blocks": 13
+    },
+    {
+      "unit_id": "OLP-0021",
+      "path": "content/sets-functions-relations/functions/function-basics.tex",
+      "math_source_count": 64,
+      "math_target_count": 64,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_correction_math_deltas": [
+        {
+          "block": 18,
+          "removed": [
+            "$n$"
+          ],
+          "added": [
+            "$x$"
+          ],
+          "finding_id": "OLFUN-003",
+          "reason": "Corrected the frozen source input-variable switch from n to x."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLFUN-002",
+        "OLFUN-003"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 21,
+      "target_blocks": 21
+    },
+    {
+      "unit_id": "OLP-0022",
+      "path": "content/sets-functions-relations/functions/function-kinds.tex",
+      "math_source_count": 44,
+      "math_target_count": 44,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_correction_math_deltas": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 20,
+      "target_blocks": 20
+    },
+    {
+      "unit_id": "OLP-0023",
+      "path": "content/sets-functions-relations/functions/functions-relations.tex",
+      "math_source_count": 55,
+      "math_target_count": 55,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_correction_math_deltas": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLFUN-004",
+        "OLFUN-005"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 17,
+      "target_blocks": 17
+    },
+    {
+      "unit_id": "OLP-0024",
+      "path": "content/sets-functions-relations/functions/inverses.tex",
+      "math_source_count": 143,
+      "math_target_count": 143,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_correction_math_deltas": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLFUN-001"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 28,
+      "target_blocks": 28
+    },
+    {
+      "unit_id": "OLP-0025",
+      "path": "content/sets-functions-relations/functions/composition.tex",
+      "math_source_count": 47,
+      "math_target_count": 47,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_correction_math_deltas": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 12,
+      "target_blocks": 12
+    },
+    {
+      "unit_id": "OLP-0026",
+      "path": "content/sets-functions-relations/functions/partial-functions.tex",
+      "math_source_count": 61,
+      "math_target_count": 61,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_correction_math_deltas": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 14,
+      "target_blocks": 14
+    }
+  ],
+  "meaning": "Formula multiset checked in each aligned frozen-source block, including nested inline math inside translated text. Gujarati source-correction boxes are stripped only for parity; every accepted mathematical delta is keyed to a stable finding ID."
+}

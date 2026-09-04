@@ -1,0 +1,357 @@
+{
+  "schema": "openlogic-gu-parity/4",
+  "reports": [
+    {
+      "unit_id": "OLP-0027",
+      "path": "content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
+      "math_source_count": 4,
+      "math_target_count": 4,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 19,
+      "target_blocks": 19
+    },
+    {
+      "unit_id": "OLP-0028",
+      "path": "content/sets-functions-relations/size-of-sets/introduction.tex",
+      "math_source_count": 5,
+      "math_target_count": 5,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 8,
+      "target_blocks": 8
+    },
+    {
+      "unit_id": "OLP-0029",
+      "path": "content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "math_source_count": 217,
+      "math_target_count": 217,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLSIZ-001",
+          "change": "Completed the f(7) value cell with -3 in the displayed integer enumeration."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-001"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 36,
+      "target_blocks": 36
+    },
+    {
+      "unit_id": "OLP-0030",
+      "path": "content/sets-functions-relations/size-of-sets/zig-zag.tex",
+      "math_source_count": 33,
+      "math_target_count": 33,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 13,
+      "target_blocks": 13
+    },
+    {
+      "unit_id": "OLP-0031",
+      "path": "content/sets-functions-relations/size-of-sets/pairing.tex",
+      "math_source_count": 57,
+      "math_target_count": 57,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-002"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 19,
+      "target_blocks": 19
+    },
+    {
+      "unit_id": "OLP-0032",
+      "path": "content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "math_source_count": 51,
+      "math_target_count": 51,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLSIZ-003",
+          "change": "Corrected the repeated second pair family from (2,m) to (3,m)."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-003"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 11,
+      "target_blocks": 11
+    },
+    {
+      "unit_id": "OLP-0033",
+      "path": "content/sets-functions-relations/size-of-sets/non-enumerability.tex",
+      "math_source_count": 173,
+      "math_target_count": 173,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 27,
+      "target_blocks": 27
+    },
+    {
+      "unit_id": "OLP-0034",
+      "path": "content/sets-functions-relations/size-of-sets/reduction.tex",
+      "math_source_count": 100,
+      "math_target_count": 100,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLSIZ-004",
+          "change": "Removed the undefined k subscript from the characteristic sequence f(Z)=s."
+        },
+        {
+          "finding_id": "OLSIZ-005",
+          "change": "Made h(n) an infinite binary sequence by appending an infinite 1-tail."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-004",
+        "OLSIZ-005"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 22,
+      "target_blocks": 22
+    },
+    {
+      "unit_id": "OLP-0035",
+      "path": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "math_source_count": 74,
+      "math_target_count": 74,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLSIZ-006",
+          "change": "Replaced undefined g with the already introduced bijection f in both empty-set conditional branches."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-006"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 19,
+      "target_blocks": 19
+    },
+    {
+      "unit_id": "OLP-0036",
+      "path": "content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "math_source_count": 116,
+      "math_target_count": 116,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLSIZ-007",
+          "change": "Restored the arbitrary-element conclusion from x in overline(A) to x in A."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-007"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 19,
+      "target_blocks": 19
+    },
+    {
+      "unit_id": "OLP-0037",
+      "path": "content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
+      "math_source_count": 17,
+      "math_target_count": 17,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 10,
+      "target_blocks": 10
+    },
+    {
+      "unit_id": "OLP-0038",
+      "path": "content/sets-functions-relations/size-of-sets/enumerability-alt.tex",
+      "math_source_count": 70,
+      "math_target_count": 70,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 20,
+      "target_blocks": 20
+    },
+    {
+      "unit_id": "OLP-0039",
+      "path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "math_source_count": 119,
+      "math_target_count": 119,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLSIZ-008",
+          "change": "Corrected the prose definition of s_n(m) to the mth digit of the nth string, matching the array."
+        },
+        {
+          "finding_id": "OLSIZ-009",
+          "change": "Corrected the repeated 1-to-0 instruction so the second bit flip is 0-to-1."
+        },
+        {
+          "finding_id": "OLSIZ-011",
+          "change": "Closed the malformed three-argument conditional after its footnote and kept the following prose unconditional."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-011",
+        "OLSIZ-008",
+        "OLSIZ-009"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 19,
+      "target_blocks": 19
+    },
+    {
+      "unit_id": "OLP-0040",
+      "path": "content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "math_source_count": 103,
+      "math_target_count": 103,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLSIZ-010",
+          "change": "Removed the undefined k subscript from the characteristic sequence f(N)=s."
+        },
+        {
+          "finding_id": "OLSIZ-012",
+          "change": "Changed the duplicate primary-section exercise label to the alternative-section prefix red-alt."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLSIZ-010",
+        "OLSIZ-012"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_char": false,
+      "devanagari_characters": 0,
+      "source_blocks": 24,
+      "target_blocks": 24
+    }
+  ],
+  "meaning": "Formula multiset checked in each aligned block, including nested inline math. Gujarati source-correction boxes are stripped only for parity; corrected expected source math is explicit and keyed."
+}

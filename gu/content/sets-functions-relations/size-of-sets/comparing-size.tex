@@ -1,0 +1,155 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: comparing-sizes
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{car}
+
+\olsection{જુદાં કદના ગણો અને કૅન્ટૉરનું પ્રમેય}
+
+\begin{explain}
+બે ગણોનું કદ સરખું હોવાના વિચારને આપણે ચોક્કસ રીતે રજૂ કર્યો છે.
+એક ગણ બીજા કરતાં નાનો હોવાના વિચારને પણ ચોક્કસ રીતે રજૂ કરી શકાય.
+“નાનો (અથવા સામ્ય ગણ)” હોવાની આપણી વ્યાખ્યામાં બંને ગણો વચ્ચેના
+!!a{bijection}ને બદલે પહેલા ગણમાંથી બીજા ગણમાં જતા !!a{injection}ની
+જરૂર પડશે. આવું વિધેય અસ્તિત્વમાં હોય, તો પહેલા ગણનું કદ બીજા
+ગણના કદ કરતાં ઓછું અથવા બરાબર છે. સહજ રીતે, એક ગણમાંથી બીજા ગણમાં
+જતો !!a{injection} ખાતરી આપે છે કે વિધેયના વિસ્તારમાં તેના પ્રદેશ
+જેટલા તો !!{element}s છે જ, કારણ કે પ્રદેશના કોઈ બે !!{element}sનું
+નિરૂપણ વિસ્તારના એક જ !!{element} પર થતું નથી.
+\end{explain}
+
+\begin{defn}
+$A$ એ $B$ કરતાં \emph{મોટો નથી}, જે $\cardle{A}{B}$ લખીએ,
+જો અને માત્ર જો કોઈ !!a{injection} $f \colon A \to B$ હોય.
+\end{defn}
+
+સ્પષ્ટ છે કે આ સંબંધ સ્વવાચક અને પરંપરિત છે, પરંતુ સંમિત નથી
+(આ સાબિત કરવાનું અભ્યાસ તરીકે છોડ્યું છે). એક ગણ બીજા કરતાં
+(ચુસ્તપણે) નાનો હોવાનું જણાવતો ખ્યાલ પણ રજૂ કરી શકાય છે.
+
+\begin{defn}
+$A$ એ $B$ કરતાં \emph{નાનો} છે, જે $\cardless{A}{B}$ લખીએ,
+જો અને માત્ર જો કોઈ !!a{injection}~$f\colon A \to B$ હોય પરંતુ
+કોઈ !!{bijection}~$g\colon A \to B$ ન હોય; એટલે કે,
+$\cardle{A}{B}$ અને $\cardneq{A}{B}$.
+\end{defn}
+
+સ્પષ્ટ છે કે આ સંબંધ અસ્વવાચક અને પરંપરિત છે. (આ સાબિત કરવાનું
+અભ્યાસ તરીકે છોડ્યું છે.) આ સંજ્ઞા વાપરીને કહી શકાય કે ગણ $A$ એ
+!!{enumerable} હોય જો અને માત્ર જો $\cardle{A}{\Nat}$, અને $A$ એ
+!!{nonenumerable} હોય જો અને માત્ર જો $\cardless{\Nat}{A}$.
+આથી
+\oliflabeldef{sfr:siz:nen-alt:thm:nonenum-pownat}{%
+\olref[sfr][siz][nen-alt]{thm:nonenum-pownat}ને
+$\cardless{\Nat}{\Pow{\Nat}}$ એવા અવલોકન તરીકે}{%
+\olref[sfr][siz][nen]{thm:nonenum-pownat}ને
+$\cardless{\PosInt}{\Pow{\PosInt}}$ એવા અવલોકન તરીકે} ફરી રજૂ
+કરી શકાય છે. હકીકતમાં, \citet{Cantor1892}એ સાબિત કર્યું કે આ છેલ્લી
+વાત \emph{સર્વથા સામાન્ય} છે:
+
+\begin{thm}[કૅન્ટૉર]\ollabel{thm:cantor}
+કોઈ પણ ગણ $A$ માટે, $\cardless{A}{\Pow{A}}$.
+\end{thm}
+
+\begin{proof}
+નિરૂપણ $f(x) = \{x\}$ એ !!a{injection} $f \colon A \to \Pow{A}$
+છે, કારણ કે $x \neq y$ હોય, તો ઘટકો દ્વારા નિર્ધારિત સમાનતાના
+સિદ્ધાંતથી $\{x\} \neq \{y\}$ પણ હોય, અને તેથી $f(x) \neq f(y)$.
+આથી $\cardle{A}{\Pow{A}}$.
+
+\begin{editorial}
+\olref[nen]{sec} સમાવેલો હોય તો આપણે વિગતવાર સાબિતી રજૂ કરીએ છીએ;
+અન્યથા \olref[nen-alt]{sec}ને અનુરૂપ ટૂંકી સાબિતી રજૂ કરીએ છીએ.
+\end{editorial}
+
+\oliflabeldef{sfr:siz:nen:sec}{%
+  હવે આપણે બતાવીશું કે !!a{surjective} વિધેય~$g\colon A \to
+  \Pow{A}$ અસ્તિત્વમાં હોઈ જ ન શકે, તેથી !!a{bijective} વિધેય તો
+  અસ્તિત્વમાં ન જ હોય, અને આમ $\cardneq{A}{\Pow{A}}$. વિરોધાર્થે,
+  ધારો કે $g\colon A \to \Pow{A}$. $g$ પૂર્ણ હોવાથી દરેક
+  $x \in A$નું નિરૂપણ કોઈ ઉપગણ $g(x) \subseteq A$ પર થાય છે.
+  આપણે બતાવી શકીએ કે $g$ વ્યાપ્ત ન હોઈ શકે. તે માટે આપણે એવો
+  ઉપગણ~$\overline{A} \subseteq A$ વ્યાખ્યાયિત કરીએ છીએ જે
+  વ્યાખ્યા પ્રમાણે $g$ના વિસ્તારમાં હોઈ ન શકે. ધારો કે
+  \[
+  \overline{A} = \Setabs{x \in A}{x \notin g(x)}.
+  \]
+  દરેક $x \in A$ માટે $g(x)$ વ્યાખ્યાયિત હોવાથી $\overline{A}$
+  સ્પષ્ટ રીતે $A$નો સુવ્યાખ્યાયિત ઉપગણ છે. પરંતુ તે $g$ના વિસ્તારમાં
+  હોઈ ન શકે. મનસ્વી $x \in A$ લો; આપણે બતાવીશું કે
+  $\overline{A} \neq g(x)$. જો $x \in g(x)$, તો તે
+  $x \notin g(x)$ને સંતોષતો નથી, અને તેથી $\overline{A}$ની વ્યાખ્યા
+  પ્રમાણે $x \notin \overline{A}$. જો $x \in \overline{A}$, તો
+  તેણે $\overline{A}$નો વ્યાખ્યાયી ગુણધર્મ સંતોષવો જ પડે; એટલે કે,
+  $x \in A$ અને $x \notin g(x)$. $x$ મનસ્વી હોવાથી, આ બતાવે છે કે
+  દરેક $x \in A$ માટે $x \in g(x)$ જો અને માત્ર જો
+  $x \notin \overline{A}$, અને તેથી $g(x) \neq \overline{A}$.
+  બીજા શબ્દોમાં, $\overline{A}$ એ $g$ના વિસ્તારમાં હોઈ ન શકે, જે
+  $g$ વ્યાપ્ત હોવાની ધારણાનો વિરોધાભાસ છે.
+  \sourcecorrection{OLSIZ-007}{મૂળની \texttt{comparing-size.tex},
+  પંક્તિઓ 91--95માં મનસ્વી \(x\in A\) માટેના નિષ્કર્ષને ભૂલથી
+  “દરેક \(x\in\overline A\) માટે” મર્યાદિત કર્યો છે. અહીં દલીલને
+  નિયંત્રિત કરતી મનસ્વી પસંદગી મુજબ \(x\in A\) લખ્યું છે.}}{બાકી
+  $\cardneq{A}{\Pow{A}}$ બતાવવાનું છે. વિરોધ દ્વારા સાબિતી માટે
+  ધારો કે $\cardeq{A}{\Pow{A}}$; એટલે કે કોઈ
+  !!{bijection} $g \colon A \to \Pow{A}$ છે. હવે આ ગણ જુઓ:
+  \[
+    D = \Setabs{x \in A}{x \notin g(x)}
+  \]
+  નોંધો કે $D \subseteq A$, તેથી $D \in \Pow{A}$. $g$ એ
+  !!a{bijection} હોવાથી કોઈ $y \in A$ માટે $g(y) = D$. પરંતુ હવે:
+  \[
+    y \in g(y) \text{ જો અને માત્ર જો } y \in D \text{ જો અને માત્ર જો } y \notin g(y).
+  \]
+  આ વિરોધાભાસ છે; તેથી $\cardneq{A}{\Pow{A}}$.}{}
+\end{proof}
+
+\begin{explain}
+\oliflabeldef{sfr:siz:nen:thm:nonenum-pownat}{\olref{thm:cantor}ની
+  સાબિતીને \olref[nen]{thm:nonenum-pownat}ની સાબિતી સાથે સરખાવવી
+  બોધપ્રદ છે. ત્યાં આપણે બતાવ્યું હતું કે $\PosInt$ના ઉપગણોની કોઈ પણ
+  યાદી $Z_1$, $Z_2$, \dots, માટે એવો સંખ્યાઓનો ગણ~$\overline{Z}$
+  બનાવી શકાય જે યાદીમાં ન હોવાની ખાતરી હોય. તે યાદીમાં નથી તેની
+  ખાતરીનું કારણ એ હતું કે દરેક $n \in \PosInt$ માટે $n \in Z_n$
+  જો અને માત્ર જો $n \notin \overline{Z}$. આ રીતે $Z_n$ અને
+  $\overline{Z}$ પૈકી એકનો !!a{element} હોય પરંતુ બીજાનો ન હોય એવી
+  કોઈ સંખ્યા હંમેશાં મળે છે. અહીં આપણે એ જ વિચારને અનુસરીએ છીએ,
+  પરંતુ હવે સૂચકો~$n$ એ $\PosInt$ના બદલે $A$ના !!{element}s છે.
+  ગણ $\overline{A}$ને એવી રીતે વ્યાખ્યાયિત કર્યો છે કે તે દરેક
+  $x \in A$ માટે $g(x)$થી જુદો હોય, કારણ કે $x \in g(x)$ જો અને
+  માત્ર જો $x \notin \overline{A}$. ફરી, $A$નો એવો !!a{element}
+  હંમેશાં હોય છે જે $g(x)$ અને $\overline{A}$ પૈકી એકનો
+  !!a{element} હોય પણ બીજાનો ન હોય. અને જેમ $\overline{Z}$ યાદી
+  $Z_1$, $Z_2$, \dots, માં હોઈ શકતો નથી, તેમ $\overline{A}$ એ
+  $g$ના વિસ્તારમાં હોઈ શકતો નથી.}{}
+
+\oliflabeldef{sfr:siz:nen-alt:thm:nonenum-pownat}{\olref{thm:cantor}ની
+  સાબિતીને \olref[nen-alt]{thm:nonenum-pownat}ની સાબિતી સાથે સરખાવવી
+  બોધપ્રદ છે. ત્યાં આપણે બતાવ્યું હતું કે $\Nat$ના ઉપગણોની કોઈ પણ
+  યાદી $N_0$, $N_1$, $N_2$, \dots, માટે એવો સંખ્યાઓનો ગણ~$D$
+  બનાવી શકાય જે યાદીમાં ન હોવાની ખાતરી હોય. તેનું કારણ એ હતું કે
+  દરેક $n \in \Nat$ માટે $n \in N_n$ જો અને માત્ર જો $n \notin D$.
+  અહીં આપણે એ જ વિચારને અનુસરીએ છીએ, પરંતુ હવે સૂચકો~$n$ એ $\Nat$ના
+  બદલે $A$ના !!{element}s છે. ગણ $D$ને એવી રીતે વ્યાખ્યાયિત કર્યો છે
+  કે તે દરેક $x \in A$ માટે $g(x)$થી જુદો હોય, કારણ કે
+  $x \in g(x)$ જો અને માત્ર જો $x \notin D$.}{}
+
+આ સાબિતીની રસેલના વિરોધાભાસની સાબિતી,
+\olref[sfr][set][rus]{thm:russells-paradox}, સાથેની તુલના પણ કરવા
+જેવી છે. ખરેખર, કૅન્ટૉરનું પ્રમેય રસેલના પોતાના વિરોધાભાસની પ્રેરણા હતું.
+\end{explain}
+
+\begin{prob}
+  બતાવો કે કોઈ પણ ગણ~$A$ માટે !!a{injection}
+  $g\colon \Pow{A} \to A$ હોઈ ન શકે. સંકેત: ધારો કે
+  $g\colon \Pow{A} \to A$ એ !!{injective} છે. ગણ
+  $D = \Setabs{g(B)}{B \subseteq A \text{ અને } g(B) \notin B}$
+  વિચારો. $x = g(D)$ લો. વિરોધાભાસ મેળવવા માટે $g$ !!{injective}
+  હોવાની હકીકત વાપરો.
+\end{prob}
+
+\end{document}

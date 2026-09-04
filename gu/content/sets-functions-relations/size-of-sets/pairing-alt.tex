@@ -1,0 +1,131 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: pairing-alt
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{pai-alt}
+
+\olsection{વૈકલ્પિક જોડ-નિરૂપણ વિધેય}
+
+\begin{explain}
+$\Nat^2$ની બીજી પરિગણનાઓ પણ છે જેમનાં પ્રતિવિધેયો
+શોધવાં વધુ સરળ છે. અહીં એક આપીએ.
+પરિગણનાને સરણિમાં જોવાને બદલે, શરૂઆતમાં ખાલી
+જગ્યાઓ સાથે સંકળાયેલી ધન પૂર્ણાંકોની યાદી લો.
+આ જગ્યાઓને $\tuple{n,m}$ જોડો વડે નીચે મુજબ
+ક્રમશઃ ભરવાની કલ્પના કરો. પહેલા સ્થાને~$0$ હોય
+એવી જોડોથી (એટલે કે $\tuple{0,m}$ જોડોથી) શરૂ કરો.
+પ્રથમ જોડ (એટલે કે $\tuple{0,0}$) પ્રથમ ખાલી
+જગ્યામાં મૂકો, પછી એક ખાલી જગ્યા છોડો, બીજી જોડ
+(એટલે કે $\tuple{0,2}$) પછીની ખાલી જગ્યામાં મૂકો,
+ફરી એક જગ્યા છોડો, અને એમ આગળ વધો.
+હવે પરિગણનાની (અધૂરી) શરૂઆત આ રીતે દેખાય છે:
+\[\small
+\begin{array}{@{}c c c c c c c c c c c@{}}
+\mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 & \mathbf 5 & \mathbf 6 & \mathbf 7 & \mathbf 8 & \mathbf 9 & \mathbf{10} & \dots \\ \\
+\tuple{0,0} &  & \tuple{0,1} &  & \tuple{0,2} &  & \tuple{0,3} & & \tuple{0,4} &  & \dots \\
+\end{array}
+\]
+હજી ખાલી રહેલી જગ્યાઓ માટે $\tuple{1,m}$ જોડો
+સાથે આ પ્રક્રિયા ફરી કરો, ફરીથી એકાંતરે ખાલી
+જગ્યા છોડતા જાઓ:
+\[\small
+\begin{array}{@{}c c c c c c c c c c c@{}}
+\mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 & \mathbf 5 & \mathbf 6 & \mathbf 7 & \mathbf 8 & \mathbf 9 & \mathbf{10} & \dots \\ \\
+\tuple{0,0} & \tuple{1,0} & \tuple{0,1} &  & \tuple{0,2} & \tuple{1,1} &
+\tuple{0,3} & & \tuple{0,4} &  \tuple{1,2} & \dots \\
+\end{array}
+\]
+એ જ રીતે $\tuple{2,m}$, $\tuple{3,m}$ વગેરે
+જોડો મૂકો. આમ, પૂર્ણ કરેલી પરિગણનાની શરૂઆત
+આ રીતે થાય છે:
+\[\small
+\begin{array}{@{}cc c c c c c c c c c@{}}
+\mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 & \mathbf 5 & \mathbf 6 & \mathbf 7 & \mathbf 8 & \mathbf 9 & \mathbf{10} & \dots \\ \\
+\tuple{0,0} & \tuple{1,0} & \tuple{0,1} & \tuple{2,0}  & \tuple{0,2} &
+\tuple{1,1} & \tuple{0,3} & \tuple{3,0}  & \tuple{0,4} &  \tuple{1,2} & \dots \\
+\end{array}
+\]
+\sourcecorrection{OLSIZ-003}{મૂળની \texttt{pairing-alt.tex}, પંક્તિઓ 39--45માં
+\(\tuple{2,m}\) બે વાર લખાયું છે. તરત પછીના કોષ્ટકમાં
+\(\tuple{2,0}\) અને \(\tuple{3,0}\) આવતા હોવાથી અહીં બીજી જોડને
+\(\tuple{3,m}\) કરી છે.}
+ઉપરની સરણિના ખાનાંને આ પરિગણના પ્રમાણે અંકો
+આપીએ, તો સુઘડ આડીઅવળી રેખાને બદલે આ ગોઠવણી મળે:
+\[
+\begin{array}{ c | c | c | c | c | c | c | c }
+& \mathbf 0 & \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 & \mathbf 5 & \dots \\
+\hline
+\mathbf 0 & 1 & 3 & 5 & 7 & 9 & 11 & \dots \\
+\hline
+\mathbf 1 & 2 & 6 & 10 & 14 & 18 & \dots & \dots \\
+\hline
+\mathbf 2 & 4 & 12 & 20 & 28 & \dots & \dots & \dots \\
+\hline
+\mathbf 3 & 8 & 24 & 40 & \dots & \dots & \dots & \dots \\
+\hline
+\mathbf 4 & 16 & 48 & \dots & \dots & \dots & \dots & \dots \\
+\hline
+\mathbf 5 & 32 & \dots & \dots & \dots & \dots & \dots & \dots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+\end{array}
+\]
+જોઈ શકાય છે કે હાર~$0$ની જોડો પરિગણનાના અયુગ્મ
+અંકવાળાં સ્થાનો પર છે: જોડ $\tuple{0,m}$નું સ્થાન
+$2m+1$ છે. બીજી હારની જોડો $\tuple{1,m}$ એવા
+સ્થાનો પર છે જેમનો અંક અયુગ્મ સંખ્યાનો બમણો છે,
+ખાસ કરીને $2 \cdot (2m+1)$.
+ત્રીજી હારની જોડો $\tuple{2,m}$ એવા સ્થાનો પર
+છે જેમનો અંક અયુગ્મ સંખ્યાનો ચાર ગણો છે,
+$4 \cdot (2m+1)$; અને એમ આગળ વધે છે.
+દરેક હાર માટે $(2m+1)$ના ગુણકો
+$1$, $2$, $4$, $8$, \dots એ ચોક્કસપણે
+$2$ના ઘાત છે: $1= 2^0$, $2 = 2^1$,
+$4 = 2^2$, $8 = 2^3$, \dots\@
+હકીકતમાં, સંબંધિત ઘાતાંક હંમેશાં તે જોડનો પ્રથમ
+સભ્ય છે. તેથી જોડ $\tuple{n,m}$ માટે ગુણક
+$2^n$ છે. આથી સામાન્ય સૂત્ર $2^n \cdot (2m+1)$
+મળે છે. જોકે, આ જોડોનું \emph{ધન} પૂર્ણાંકોમાં
+નિરૂપણ છે: $\tuple{0,0}$નું સ્થાન~$1$ છે.
+સ્થાન~$0$થી શરૂ કરવું હોય, તો પરિણામમાંથી~$1$
+બાદ કરવો પડે. આથી મળે છે:
+\end{explain}
+
+\begin{ex}
+નીચે મુજબ આપેલું વિધેય $h\colon \Nat^2 \to \Nat$:
+\[
+h(n,m) = 2^n (2m+1) - 1
+\]
+પ્રાકૃતિક સંખ્યાઓની જોડોના ગણ~$\Nat^2$ માટેનું
+જોડ-નિરૂપણ વિધેય છે.
+\end{ex}
+
+\begin{explain}
+આ પ્રમાણે, $\Nat^2$ની આપણી બીજી પરિગણનામાં
+જોડ $\tuple{0,0}$ની સંકેતસંખ્યા
+$h(0,0) = 2^0(2\cdot 0+1) - 1 = 0$ છે;
+$\tuple{1,2}$ની સંકેતસંખ્યા
+$2^{1} \cdot (2 \cdot 2 + 1) - 1 = 2
+\cdot 5 - 1 = 9$ છે; અને $\tuple{2,6}$ની
+સંકેતસંખ્યા $2^{2} \cdot (2
+\cdot 6 + 1) - 1 = 51$ છે.
+\end{explain}
+
+ક્યારેક પ્રાકૃતિક સંખ્યાઓની જોડો~$\Nat^2$ને
+સંકેતબદ્ધ કરવું પૂરતું હોય છે; સંકેતન વ્યાપ્ત હોય
+તે જરૂરી નથી. આવાં સંકેતનોનાં પ્રતિવિધેયો
+માત્ર આંશિક વિધેયો હોય છે.
+
+\begin{ex}
+નીચે મુજબ આપેલું વિધેય $j\colon \Nat^2 \to \Nat^+$:
+\[
+j(n,m) = 2^n3^m
+\]
+એ !!a{injective} વિધેય $\Nat^2 \to \Nat$ છે.
+\end{ex}
+
+\end{document}

@@ -1,0 +1,21 @@
+{
+  "compatibility_fields": {
+    "extract_path": "Same path as raw_extract_identity.path.",
+    "extract_sha256": "Same raw-byte hash as raw_extract_identity.sha256."
+  },
+  "identity_fields": {
+    "locator.utf8_start/utf8_end": "Zero-based half-open byte offsets in the object named by locator.byte_basis.",
+    "normalized_extract_identity": "Identity of the derived locator stream. normalization_id names the only permitted byte transformation and derived_from_raw_extract_sha256 binds its input.",
+    "passage_sha256": "SHA-256 of the exact half-open byte slice selected by the locator.",
+    "raw_extract_identity": "Identity of the exact extraction file before locator normalization; its path, byte count, and SHA-256 apply to raw on-disk bytes.",
+    "raw_source_identity": "Identity of the locally acquired source object from CANON_SOURCES.jsonl; its path, byte count, and SHA-256 apply to unmodified acquired bytes."
+  },
+  "normalizations": {
+    "crlf-to-lf-v1": {
+      "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+      "input": "raw_extract_identity bytes",
+      "output": "normalized_extract_identity bytes"
+    }
+  },
+  "schema": "openlogic-gu-canon-passage-schema/2"
+}

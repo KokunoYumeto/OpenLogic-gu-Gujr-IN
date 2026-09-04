@@ -1,0 +1,114 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-04T17:09:42.591125+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "audit_id": "OLFUN-20260904",
+  "audit_artifacts": [
+    {
+      "name": "REVIEW.md",
+      "bytes": 6050,
+      "sha256": "bc183d34b6ac57cc00e2df76d00277cdd2fabee293d12beb142d2e27344f8d24"
+    },
+    {
+      "name": "FINDINGS.json",
+      "bytes": 7204,
+      "sha256": "eee57facbea44f65a19a816fb12cbc86be0b18e21dcffeeed943f52f7e332960"
+    }
+  ],
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLFUN-001",
+      "unit_id": "OLP-0024",
+      "classification": "confirmed_mathematical_defect",
+      "source_locator": "functions/inverses.tex:62-84",
+      "source_path": "content/sets-functions-relations/functions/inverses.tex",
+      "source_bytes": 6747,
+      "source_sha256": "96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1",
+      "target_path": "gu/content/sets-functions-relations/functions/inverses.tex",
+      "target_bytes": 13244,
+      "target_sha256": "d782d6872d682641ec8ccd156efcfce26b78dc81d2ce0155297cb0e17c22de5c",
+      "corrected_body_line": 75,
+      "adjacent_note_line": 104,
+      "handling": "Added the nonempty-domain hypothesis to the theorem and proof; disclosed the counterexample and exact general condition.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_machine_qa_passed"
+    },
+    {
+      "finding_id": "OLFUN-002",
+      "unit_id": "OLP-0021",
+      "classification": "confirmed_wording_defect",
+      "source_locator": "functions/function-basics.tex:64-71; sets/important-sets.tex:17",
+      "source_path": "content/sets-functions-relations/functions/function-basics.tex",
+      "source_bytes": 5443,
+      "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
+      "target_path": "gu/content/sets-functions-relations/functions/function-basics.tex",
+      "target_bytes": 11473,
+      "target_sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+      "corrected_body_line": 73,
+      "adjacent_note_line": 78,
+      "handling": "Used nonnegative (principal) square root on the natural-number domain and disclosed the English adjective correction.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_machine_qa_passed"
+    },
+    {
+      "finding_id": "OLFUN-003",
+      "unit_id": "OLP-0021",
+      "classification": "confirmed_typographical_inconsistency",
+      "source_locator": "functions/function-basics.tex:103-107",
+      "source_path": "content/sets-functions-relations/functions/function-basics.tex",
+      "source_bytes": 5443,
+      "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
+      "target_path": "gu/content/sets-functions-relations/functions/function-basics.tex",
+      "target_bytes": 11473,
+      "target_sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+      "corrected_body_line": 115,
+      "adjacent_note_line": 118,
+      "handling": "Normalized the input variable from n to x and disclosed the frozen typographical inconsistency.",
+      "mathematical_delta": {
+        "removed": "$n$",
+        "added": "$x$",
+        "parity_receipt": "PARITY_003.json"
+      },
+      "status": "applied_disclosed_machine_qa_passed"
+    },
+    {
+      "finding_id": "OLFUN-004",
+      "unit_id": "OLP-0023",
+      "classification": "confirmed_terminology_imprecision",
+      "source_locator": "functions/functions-relations.tex:24-30,61-64; relations/relations-as-sets.tex:55-58",
+      "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
+      "source_bytes": 3881,
+      "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
+      "target_path": "gu/content/sets-functions-relations/functions/functions-relations.tex",
+      "target_bytes": 8136,
+      "target_sha256": "b348c926961347405fb3589274e0ad70c027d84e9c92f745e378734199b0c909",
+      "corrected_body_line": 67,
+      "adjacent_note_line": 84,
+      "handling": "Typed the graph as a relation contained in A times B and disclosed the source imprecision.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_machine_qa_passed"
+    },
+    {
+      "finding_id": "OLFUN-005",
+      "unit_id": "OLP-0023",
+      "classification": "confirmed_explanatory_inconsistency_explicit_definition_correct",
+      "source_locator": "functions/functions-relations.tex:78-100; relations/operations.tex:20-32",
+      "source_path": "content/sets-functions-relations/functions/functions-relations.tex",
+      "source_bytes": 3881,
+      "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
+      "target_path": "gu/content/sets-functions-relations/functions/functions-relations.tex",
+      "target_bytes": 8136,
+      "target_sha256": "b348c926961347405fb3589274e0ad70c027d84e9c92f745e378734199b0c909",
+      "corrected_body_line": 110,
+      "adjacent_note_line": 116,
+      "handling": "Kept the correct domain-only function restriction and qualified its analogy with the earlier two-coordinate relation restriction.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_machine_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_003.json",
+  "html_receipt": "HTML_QA_003.json",
+  "browser_reinspection": "passed_actual_iab_visual_inspection_of_all_five_notes_and_corrected_theorem",
+  "pdf_build": "pending_shared_named_tex_slot"
+}

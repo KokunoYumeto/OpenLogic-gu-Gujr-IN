@@ -1,0 +1,93 @@
+\input{build/foundations-preamble.tex}
+\usepackage[authoryear]{natbib}
+\renewcommand{\refname}{સંદર્ભગ્રંથો}
+\renewcommand{\partname}{ભાગ}
+\newenvironment{intro}{}{}
+\newcommand{\Id}[1]{\mathord{\mathrm{Id}_{#1}}}
+\newcommand{\equivrep}[2]{[#1]_{#2}}
+\newcommand{\equivclass}[2]{#1/_{\!{#2}}}
+\newcommand{\funrestrictionto}[2]{#1\mathord{\restriction}_{#2}}
+\newcommand{\funimage}[2]{#1[#2]}
+\newcommand{\emptyseq}{\Lambda}
+\newcommand{\liff}{\mathbin{\leftrightarrow}}
+\newcommand{\dom}[1]{\mathrm{dom}(#1)}
+\newcommand{\ran}[1]{\mathrm{ran}(#1)}
+\newcommand{\comp}[2]{#2\circ #1}
+\newcommand{\pto}{\mathrel{\ooalign{\hfil$\mapstochar\mkern5mu$\hfil\cr$\to$}}}
+\newcommand{\fdefined}{\downarrow}
+\newcommand{\fundefined}{\uparrow}
+\newcommand{\sourcecorrection}[2]{%
+  \par\smallskip\noindent
+  \fbox{\begin{minipage}{0.94\linewidth}\small
+    \textbf{સ્રોત-સુધારો #1.} #2
+  \end{minipage}}%
+  \par\smallskip}
+\definecolor{oldiagcolorD}{HTML}{1973ba}
+\newlength{\olphotowidth}
+\setlength{\olphotowidth}{.4\textwidth}
+\RenewDocumentCommand{\olasset}{O{\olphotowidth} m}{\centering\resizebox{#1}{!}{\input{upstream/#2}}}
+\input{build/functions-available-labels.tex}
+\renewcommand{\oliflabeldef}[3]{\ifcsname guavailable@#1\endcsname#2\else#3\fi}
+\hypersetup{pdftitle={ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી}}
+\begin{document}
+\begin{titlepage}
+{\Huge\bfseries ગણો, સંબંધો અને વિધેયો\par}
+\vspace{1em}
+{\Large ઓપન લોજિક — ગુજરાતી\par}
+\vspace{2em}
+ઓપન લોજિક પ્રોજેક્ટના અંગ્રેજી મૂળનો ગુજરાતી અનુવાદ.\par
+\vspace{1em}
+આ આવૃત્તિમાં ગણો, સંબંધો અને વિધેયોનાં સંપૂર્ણ પ્રકરણો છે.
+ગણો અને સંબંધોના પાયા પછી, વિધેયોના પ્રકારો, પ્રતિવિધેયો,
+સંયોજન અને આંશિક વિધેયોનો અભ્યાસ થાય છે.\par
+\vfill
+આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.
+આ આવૃત્તિમાં મૂળનાં ૨૩ એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
+કેટલીક વિશિષ્ટ પરિભાષા કામચલાઉ છે. ચકાસણીની વિગતો અને
+મૂળ પાઠ વિશેની નોંધો સંપાદકીય માહિતીમાં આપેલી છે.\par
+\vspace{1em}
+\href{https://github.com/OpenLogicProject/OpenLogic}{Open Logic Project}
+\quad \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}\par
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{અનુવાદોનું કેન્દ્ર}\par
+\end{titlepage}
+\tableofcontents
+\clearpage
+\input{build/functions-body.tex}
+\clearpage
+\section*{સંપાદકીય નોંધો}
+\addcontentsline{toc}{section}{સંપાદકીય નોંધો}
+આ નોંધો મૂળ પાઠથી અલગ છે. મૂળની ગણિતીય નિશાનીઓ જાળવી છે.
+સંબંધોને ગણ તરીકે રજૂ કરતા ઉદાહરણમાં વિકર્ણ માટે \(I\) વપરાયું છે,
+પણ તેને અલગથી વ્યાખ્યાયિત કરેલું નથી. વૃક્ષની શાખાની વ્યાખ્યામાં
+\(X\) વપરાયું છે, જ્યારે વૃક્ષનો આધારગણ \(A\) છે; અહીં મૂળનો
+\(X\) જાળવ્યો છે. ઉપવૃક્ષના ઉદાહરણમાં ખાલી ઉપગણનો અપવાદ
+સ્પષ્ટ નથી, જોકે મૂળવાળા વૃક્ષની વ્યાખ્યા તેને બાકાત રાખે છે.
+ક્રમોના વિભાગમાં \(R^+\) સ્વવાચક સંવરણ દર્શાવે છે અને
+સંબંધોની ક્રિયાઓના વિભાગમાં તે પરંપરિત સંવરણ દર્શાવે છે;
+દરેક વિભાગની સ્થાનિક વ્યાખ્યા લાગુ પડે છે.
+
+વિધેયોના પાયાના વિભાગમાં મૂળનું એક ઉદાહરણ આગત માટે \(n\)
+કહ્યા પછી \(x\) વાપરે છે; અનુવાદમાં \(x\) સુસંગત રીતે વાપર્યું છે.
+વર્ગમૂળના ઉદાહરણમાં પ્રદેશમાં શૂન્ય હોવાથી “ધન”ને બદલે
+“અનૃણ (મુખ્ય)” લખ્યું છે. વિધેયોના આલેખ વિશેના વર્ણનમાં
+“\(A\times B\) પરનો સંબંધ”ને બદલે \(A\times B\)માં સમાયેલો
+સંબંધ લખ્યો છે. દરેક ફેરફાર પાસે OLFUN ઓળખવાળી અલગ નોંધ છે.
+
+પ્રતિવિધેયોના વિભાગના પ્રથમ વિધાનમાં પ્રદેશ અખાલી હોવાની
+છૂટી ગયેલી શરત ઉમેરી છે. ખાલી ગણથી એક ઘટકવાળા ગણમાંનું
+વિધેય એક-એક છે, પરંતુ તેનો ડાબી બાજુનો વ્યસ્ત નથી; સાબિતીમાં
+\(a\in A\) પસંદ કરવાનો તબક્કો પણ અખાલી પ્રદેશ ધારે છે.
+સંબંધ-મર્યાદન અને વિધેય-મર્યાદન વચ્ચેનો બંને અવયવો સામે
+માત્ર પ્રદેશનો તફાવત પણ અનુવાદમાં સ્પષ્ટ કર્યો છે.
+
+આવૃત્તિમાં સમાવેલા વિભાગો માટેના સશરતી ઉલ્લેખો સક્રિય છે.
+પછીનાં પ્રકરણોના ઉલ્લેખોમાં મૂળે આપેલો વૈકલ્પિક પાઠ વપરાયો છે.
+પરિભાષા, મૂળ સ્રોતો અને ચકાસણીની વધુ વિગતો આવૃત્તિની
+સાથેની ફાઇલોમાં છે.
+\begin{thebibliography}{1}
+\bibitem[Benacerraf(1965)]{Benacerraf1965}
+Benacerraf, Paul. 1965.
+\emph{What numbers could not be}.
+The Philosophical Review 74(1), 47--73.
+\end{thebibliography}
+\end{document}

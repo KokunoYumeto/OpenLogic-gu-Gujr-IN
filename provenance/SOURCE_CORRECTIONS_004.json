@@ -1,0 +1,306 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-04T19:43:01.787192+00:00",
+  "audit_id": "GU-OLSIZ-20260904",
+  "audit_method": "Bounded same-agent comparison of each suspect sentence/table against its immediately controlling formula or construction at the frozen revision.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLSIZ-001",
+      "unit_id": "OLP-0029",
+      "classification": "confirmed_tabular_value_omission",
+      "finding": "The header and formula rows include f(7), but the final values row omits its value -3.",
+      "source_path": "content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "source_locator": "enumerability.tex:140-153",
+      "source_bytes": 12006,
+      "source_sha256": "bf6be35c0e393cb6e1d227f8e9024df4216792e663f23beb7277045487acfa67",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "target_bytes": 21372,
+      "target_sha256": "ae95ab24ac3c3306d59b0367ad1b3448883afe73a034510ca724ba59f0ee505d",
+      "corrected_body_line": 174,
+      "corrected_body_lines": [
+        174
+      ],
+      "adjacent_note_line": 177,
+      "handling": "Completed the Gujarati values row with -3 and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "display_value_added": "-3"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-002",
+      "unit_id": "OLP-0031",
+      "classification": "confirmed_grammatical_defect_clarified_by_following_formula",
+      "finding": "The source says “the complement of a finite set Nat”; the next equivalence shows it means the complement of a finite subset of Nat.",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing.tex",
+      "source_locator": "pairing.tex:91-97",
+      "source_bytes": 4056,
+      "source_sha256": "fb6cc1176e91e56cea5f5b9708723c59191813f8fe256aac8ed0457a0119a9bf",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "target_bytes": 7702,
+      "target_sha256": "d647d28c903c54c4a3aa2aefe711ad620b4b4a34249428234d50752edabf3ba6",
+      "corrected_body_line": 102,
+      "corrected_body_lines": [
+        102
+      ],
+      "adjacent_note_line": 108,
+      "handling": "Translated the formula-controlled meaning and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-003",
+      "unit_id": "OLP-0032",
+      "classification": "confirmed_typographical_duplication",
+      "finding": "The source repeats the (2,m) family; the immediately following table uses the intended (2,m), (3,m), and subsequent families.",
+      "source_path": "content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "source_locator": "pairing-alt.tex:39-45",
+      "source_bytes": 4592,
+      "source_sha256": "c26b4e0da9e2e0b0ec839470ddd1d0d5eb1b3d3922d3b6986c9a795f34328797",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "target_bytes": 7239,
+      "target_sha256": "40904100170476dac400d273c4eceddc5750aacd22d4d383bffaed2604c9a9a8",
+      "corrected_body_line": 42,
+      "corrected_body_lines": [
+        42
+      ],
+      "adjacent_note_line": 52,
+      "handling": "Corrected the second family to (3,m) and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$\\tuple{2,m}$",
+        "added": "$\\tuple{3,m}$"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-004",
+      "unit_id": "OLP-0034",
+      "classification": "confirmed_undefined_index_in_function_definition",
+      "finding": "The definition calls f(Z) a sequence s_k although k is not bound; the later surjectivity proof consistently calls the arbitrary sequence s.",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction.tex",
+      "source_locator": "reduction.tex:51-58",
+      "source_bytes": 5540,
+      "source_sha256": "0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "target_bytes": 10524,
+      "target_sha256": "f87e04b6c9b161fd013d69c12446a5de4a81cf9a2fbbb944c37a49e3c9fe7653",
+      "corrected_body_line": 55,
+      "corrected_body_lines": [
+        55
+      ],
+      "adjacent_note_line": 62,
+      "handling": "Used s consistently in the characteristic-sequence definition and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": [
+          "$s_{k}$",
+          "$s_{k}(n) = 1$",
+          "$s_k(n) = 0$"
+        ],
+        "added": [
+          "$s$",
+          "$s(n) = 1$",
+          "$s(n) = 0$"
+        ]
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-005",
+      "unit_id": "OLP-0034",
+      "classification": "confirmed_codomain_error_finite_string_used_as_infinite_sequence",
+      "finding": "The displayed h(n) contains only n zeros and is finite, so it is not an element of the declared codomain of infinite binary sequences.",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction.tex",
+      "source_locator": "reduction.tex:85-101",
+      "source_bytes": 5540,
+      "source_sha256": "0d6d2e3280698668b837cef6dcf3134b86d2a4b48831ae516e6e33e42898c79a",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "target_bytes": 10524,
+      "target_sha256": "f87e04b6c9b161fd013d69c12446a5de4a81cf9a2fbbb944c37a49e3c9fe7653",
+      "corrected_body_line": 103,
+      "corrected_body_lines": [
+        103
+      ],
+      "adjacent_note_line": 107,
+      "handling": "Appended an infinite tail of ones, producing a valid nonsurjective map into the intended codomain, and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "display_tail_added": "111\\dots"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-006",
+      "unit_id": "OLP-0035",
+      "classification": "confirmed_undefined_function_in_empty_set_branch",
+      "finding": "Both conditional variants of the empty-set argument refer to g(x)=y before g is introduced; the bijection already in scope is f.",
+      "source_path": "content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "source_locator": "equinumerous-sets.tex:68-94",
+      "source_bytes": 4141,
+      "source_sha256": "025a3fc368d6873825effcb07631913762edbf2d3f9a0711d57dcd9575361251",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "target_bytes": 7082,
+      "target_sha256": "6fbd4a47047c24d9dc2f53b708812801075de97462a139f0ae6b7852a0bac85b",
+      "corrected_body_line": 74,
+      "corrected_body_lines": [
+        74,
+        90
+      ],
+      "adjacent_note_line": 94,
+      "handling": "Used f(x)=y in both conditional branches and added one adjacent keyed note covering both repairs.",
+      "mathematical_delta": {
+        "occurrences": 2,
+        "removed": "$g(x) = y$",
+        "added": "$f(x) = y$"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-007",
+      "unit_id": "OLP-0036",
+      "classification": "confirmed_wrong_domain_in_arbitrary_element_conclusion",
+      "finding": "After choosing an arbitrary x in A, the source mistakenly says the conclusion holds for each x in overline(A), which is too narrow and does not establish inequality with every g(x).",
+      "source_path": "content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "source_locator": "comparing-size.tex:91-95",
+      "source_bytes": 6677,
+      "source_sha256": "075810b1cf1c8b54266518523d4665d3deae4a4937f4e19a66a09cc0e1aaebf7",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "target_bytes": 12351,
+      "target_sha256": "cf50fcd95edeadb0e27343b90e92c238c4b53c6e8bc8bcbd65c53fe1ca4a51dd",
+      "corrected_body_line": 89,
+      "corrected_body_lines": [
+        89
+      ],
+      "adjacent_note_line": 93,
+      "handling": "Restored the quantified domain A and added an adjacent keyed note inside the affected conditional proof branch.",
+      "mathematical_delta": {
+        "removed": "$x \\in \\overline{A}$",
+        "added": "$x \\in A$"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-008",
+      "unit_id": "OLP-0039",
+      "classification": "confirmed_reversed_index_description_vs_array",
+      "finding": "The prose calls s_n(m) the nth digit of the mth string, while the immediately following row-column placement and array make it the mth digit of the nth string.",
+      "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "source_locator": "non-enumerability-alt.tex:59-62",
+      "source_bytes": 6574,
+      "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "target_bytes": 12922,
+      "target_sha256": "bbf7f9fe3a894044e816432156c06a083dbf4e7aa5b8899e35c00cb28003520f",
+      "corrected_body_line": 68,
+      "corrected_body_lines": [
+        68
+      ],
+      "adjacent_note_line": 70,
+      "handling": "Translated the indexing in the order fixed by the array and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-009",
+      "unit_id": "OLP-0039",
+      "classification": "confirmed_duplicated_bit_flip_instruction",
+      "finding": "The source says to change every 1 to 0 twice; the immediately following cases require the second instruction to change every 0 to 1.",
+      "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "source_locator": "non-enumerability-alt.tex:76-78",
+      "source_bytes": 6574,
+      "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "target_bytes": 12922,
+      "target_sha256": "bbf7f9fe3a894044e816432156c06a083dbf4e7aa5b8899e35c00cb28003520f",
+      "corrected_body_line": 88,
+      "corrected_body_lines": [
+        88
+      ],
+      "adjacent_note_line": 89,
+      "handling": "Restored the complementary 0-to-1 bit flip and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "prose_bit_flip_removed": "1→0",
+        "prose_bit_flip_added": "0→1"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-010",
+      "unit_id": "OLP-0040",
+      "classification": "confirmed_undefined_index_in_function_definition",
+      "finding": "The characteristic-sequence definition calls f(N) a sequence s_k although k is not bound; the following surjectivity proof consistently calls an arbitrary sequence s.",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "source_locator": "reduction-alt.tex:53-56",
+      "source_bytes": 5500,
+      "source_sha256": "f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "target_bytes": 10572,
+      "target_sha256": "1c0dd4b5ba5d8c82b6e9620c34080cd16728323f5dc44d74fab7c10f69d7c18d",
+      "corrected_body_line": 55,
+      "corrected_body_lines": [
+        55
+      ],
+      "adjacent_note_line": 57,
+      "handling": "Used s consistently throughout the definition and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": [
+          "$s_{k}$",
+          "$s_{k}(n) = 1$",
+          "$s_k(n) = 0$"
+        ],
+        "added": [
+          "$s$",
+          "$s(n) = 1$",
+          "$s(n) = 0$"
+        ]
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-011",
+      "unit_id": "OLP-0039",
+      "classification": "confirmed_malformed_three_argument_conditional",
+      "finding": "The source never closes the positive branch of oliflabeldef after its footnote, so the empty alternative and following unconditional sentence are swallowed into that branch and the required third argument is missing.",
+      "source_path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "source_locator": "non-enumerability-alt.tex:47-53",
+      "source_bytes": 6574,
+      "source_sha256": "a075f6c63879101314fb20fa493acfb38d78ff24095bb55914f2af4527e1ad3e",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "target_bytes": 12922,
+      "target_sha256": "bbf7f9fe3a894044e816432156c06a083dbf4e7aa5b8899e35c00cb28003520f",
+      "corrected_body_line": 50,
+      "corrected_body_lines": [
+        50
+      ],
+      "adjacent_note_line": 52,
+      "handling": "Closed the positive footnote branch, supplied the empty negative branch, kept the following sentence outside the conditional, and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLSIZ-012",
+      "unit_id": "OLP-0040",
+      "classification": "confirmed_duplicate_cross_section_label",
+      "finding": "The alternative reduction exercise reuses the fully qualified label of the primary reduction exercise, producing duplicate anchors and a duplicate-label warning when both variants are included.",
+      "source_path": "content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "source_locator": "reduction-alt.tex:107",
+      "source_bytes": 5500,
+      "source_sha256": "f7717d8394048096cf7a65bc87a1a1ed15861cdfb8c7edb23429d5256d954d11",
+      "target_path": "gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "target_bytes": 10572,
+      "target_sha256": "1c0dd4b5ba5d8c82b6e9620c34080cd16728323f5dc44d74fab7c10f69d7c18d",
+      "corrected_body_line": 112,
+      "corrected_body_lines": [
+        112
+      ],
+      "adjacent_note_line": 113,
+      "handling": "Changed only the target label section component from red to red-alt and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_structural_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_004.json",
+  "semantic_review": "passed same-agent 51-sample review; see SEMANTIC_REVIEW_004.json",
+  "reader_render": "passed machine and actual browser inspection; see HTML_QA_004.json",
+  "external_upstream_report_submitted": false
+}

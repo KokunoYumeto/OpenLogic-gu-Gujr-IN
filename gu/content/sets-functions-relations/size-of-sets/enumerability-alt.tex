@@ -1,0 +1,132 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: enumerations-alt
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{enm-alt}
+
+\olsection{પરિગણનાઓ અને \usetoken{S}{enumerable} ગણો}
+
+\begin{editorial}
+  આ વિભાગ ગણસિદ્ધાંતમાં થતી રીતે પરિગણનાઓને $\Nat$ના
+  (આરંભખંડો) સાથેના એક-એક વ્યાપ્ત વિધેયો તરીકે વ્યાખ્યાયિત કરે છે.
+  તેથી તે \olref[enm]{sec}ની વ્યાખ્યાઓથી સહેજ અસંગત છે અને ત્યાંનાં
+  બધાં ઉદાહરણોનું પુનરાવર્તન કરે છે. તે વિભાગ કરતાં આ વિભાગ થોડો
+  વધુ સંક્ષિપ્ત પણ છે.
+\end{editorial}
+
+સાન્ત ગણના !!{element}sની પરિગણના કરીને આપણે તે ગણને સહેલાઈથી
+નિર્દિષ્ટ કરી શકીએ. દાખલા તરીકે, ગણને આ રીતે વ્યાખ્યાયિત કરીએ છીએ:
+\[
+  A = \{a_1, a_2, \ldots, a_n\}.
+\]
+!!{element}s $a_1$, \dots, $a_n$ બધા જુદા છે તેમ ધારીએ, તો આ
+$A$ અને પ્રથમ $n$ પ્રાકૃતિક સંખ્યાઓ $0$, \dots, $n-1$ વચ્ચે
+!!a{bijection} આપે છે. ઊલટું, દરેક સાન્ત ગણમાં સાન્ત સંખ્યામાં જ
+!!{element}s હોવાથી દરેક સાન્ત ગણને આવી સંગતિમાં મૂકી શકાય છે.
+બીજા શબ્દોમાં, જો $A$ સાન્ત હોય, તો $A$ અને $\{0, \dots, n-1\}$
+વચ્ચે !!a{bijection} હોય છે, જ્યાં $n$ એ $A$ના !!{element}sની સંખ્યા છે.
+
+ચોક્કસ પ્રકારના અનંત ગણોને સ્વીકારીએ, તો કેટલાક અનંત ગણોની પણ
+પરિગણના થઈ શકે તેમ સ્વીકારીશું. અનંત ગણ અને સમગ્ર~$\Nat$ વચ્ચે
+!!a{bijection} હોય ત્યારે તે અનંત ગણ પરિગણિત થાય છે એમ કહીને આ
+વાત ચોક્કસ કરી શકાય છે.
+
+\begin{defn}[પરિગણના, ગણસિદ્ધાંત મુજબ]
+ગણ $A$ની \emph{પરિગણના} એ એવું !!a{bijection} છે જેનો વિસ્તાર
+$A$ હોય અને જેનો પ્રદેશ કાં તો પ્રાકૃતિક સંખ્યાઓનો કોઈ આરંભખંડ
+$\{0, 1, \ldots, n\}$ {અથવા} પ્રાકૃતિક સંખ્યાઓનો સમગ્ર ગણ~$\Nat$ હોય.
+\end{defn}
+
+\begin{explain}
+\emph{પરિગણના} શબ્દના આ ઉપયોગને સહજ આધાર છે. આપણે ગણ $A$ની
+પરિગણના કરી છે તેમ કહેવાનો અર્થ એ છે કે એવું !!a{bijection} $f$
+છે જેનાથી ગણ $A$ના ઘટકો ગણી શકાય છે. $0$મો ઘટક $f(0)$ છે,
+1લો $f(1)$ છે, \ldots અને $n$મો $f(n)$ છે\ldots.
+\footnote{હા, આપણે $0$થી ગણીએ છીએ. અલબત્ત, $1$થી પણ શરૂ કરી
+શકીએ. તેનાથી કોઈ મોટો ફરક ન પડે. માત્ર~$\Nat$ને~$\PosInt$થી
+બદલવું પડે.} નીચેનું ઉમેરવાથી આનું કારણ વધુ સ્પષ્ટ થઈ શકે છે:
+\end{explain}
+
+\begin{defn}
+  \ollabel{defn:enumerable}
+  ગણ~$A$ એ !!{enumerable} હોય જો અને માત્ર જો કાં તો
+  $A = \emptyset$ અથવા $A$ની કોઈ પરિગણના હોય. ગણ~$A$ને
+  !!{nonenumerable} કહીએ જો અને માત્ર જો $A$ એ !!{enumerable} ન હોય.
+\end{defn}
+
+\begin{explain}
+આમ, ગણ !!{enumerable} હોય જો અને માત્ર જો તે ખાલી હોય અથવા તેના
+!!{element}sને પરિગણનાથી ગણી શકાય.
+\end{explain}
+
+\begin{ex}
+પ્રાકૃતિક સંખ્યાઓની પરિગણના કરતું વિધેય
+$\Id{\Nat} \colon \Nat \to \Nat$ એવું તદેવ વિધેય છે, જ્યાં
+$\Id{\Nat}(n) = n$. \emph{ધન} પ્રાકૃતિક સંખ્યાઓ
+$\Nat^+ = \Nat \setminus \{0\}$ની પરિગણના કરતું વિધેય
+$g(n) = n + 1$ છે, એટલે કે અનુગામી વિધેય.
+\end{ex}
+
+\begin{prob}
+બતાવો કે ગણ $A$ એ !!{enumerable} હોય જો અને માત્ર જો કાં તો
+$A = \emptyset$ અથવા કોઈ !!a{surjection} $f\colon \Nat \to A$ હોય.
+બતાવો કે $A$ એ !!{enumerable} હોય જો અને માત્ર જો કોઈ
+!!a{injection} $g\colon A \to \Nat$ હોય.
+\end{prob}
+
+\begin{ex}
+વિધેયો $f\colon \Nat \to \Nat$ અને $g \colon \Nat \to \Nat$ને
+અનુક્રમે
+\begin{align*}
+  f(n) & = 2n \text{ અને}\\
+  g(n) & = 2n+1
+\end{align*}
+દ્વારા આપીએ, તો તેઓ યુગ્મ પ્રાકૃતિક સંખ્યાઓ અને અયુગ્મ પ્રાકૃતિક
+સંખ્યાઓની પરિગણના કરે છે. પરંતુ એકેય !!{surjective} નથી, તેથી
+એકેય $\Nat$ની પરિગણના નથી.
+\end{ex}
+
+\begin{prob}
+વર્ગસંખ્યાઓ $1$, $4$, $9$, $16$, \dots{}ની પરિગણના વ્યાખ્યાયિત કરો.
+\end{prob}
+
+\begin{ex}
+$\lceil x \rceil$ એ \emph{ઊર્ધ્વ પૂર્ણાંક} વિધેય હોય, જે $x$ને
+ઉપરની નજીકની પૂર્ણાંક કિંમત સુધી લઈ જાય. ત્યારે આ રીતે આપેલું
+વિધેય $f \colon \Nat \to \Int$:
+\[
+  f(n) = (-1)^{n} \left\lceil\tfrac{n}{2}\right\rceil
+\]
+પૂર્ણાંકોના ગણ~$\Int$ની પરિગણના નીચે મુજબ કરે છે:
+\[
+\begin{array}{c c c c c c c c}
+f(0) & f(1) & f(2) & f(3) & f(4) & f(5) & f(6) & \dots \\ \\
+\big\lceil \tfrac{0}{2} \big\rceil & -\big\lceil \tfrac{1}{2}\big\rceil &  \big\lceil \tfrac{2}{2} \big\rceil & -\big\lceil \tfrac{3}{2} \big\rceil & \big\lceil \tfrac{4}{2} \big\rceil  & -\big\lceil \tfrac{5}{2}\big\rceil & \big\lceil \tfrac{6}{2} \big\rceil & \dots \\ \\
+0 & -1 & 1 & -2 & 2 & -3 & 3& \dots
+\end{array}
+\]
+જુઓ કે $f$ ધન અને ઋણ પૂર્ણાંકો વચ્ચે આગળપાછળ “કૂદીને” $\Int$ની
+કિંમતો કેવી રીતે ઉત્પન્ન કરે છે. નીચે મુજબ કિસ્સા પાડીને $f$
+વ્યાખ્યાયિત થયું છે એમ પણ વિચારી શકો:
+\[
+f(n) = \begin{cases}
+  \frac{n}{2} & \text{જો $n$ યુગ્મ હોય}\\
+  -\frac{n+1}{2} & \text{જો $n$ અયુગ્મ હોય}
+  \end{cases}
+\]
+\end{ex}
+
+\begin{prob}
+બતાવો કે જો $A$ અને $B$ એ !!{enumerable} હોય, તો $A \cup B$ પણ છે.
+\end{prob}
+
+\begin{prob}
+$n$ પર ગાણિતિક અનુમાનથી બતાવો કે જો $A_1$, $A_2$, \dots, $A_n$
+બધા !!{enumerable} હોય, તો $A_1 \cup \dots \cup A_n$ પણ છે.
+\end{prob}
+
+\end{document}

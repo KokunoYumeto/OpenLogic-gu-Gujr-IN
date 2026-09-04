@@ -1,0 +1,104 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "date_utc": "2026-09-04T17:07:55.544834+00:00",
+  "boundary": "OLP-0020–OLP-0026 complete Functions chapter",
+  "units": [
+    {
+      "unit_id": "OLP-0020",
+      "source_sha256": "d68bba27e593df2c17e2dc93b34256d829361b04134b4a962b997d5f4a230a59",
+      "target_sha256": "254a1e289685133893c599e379c0b5fc9d6bb747483a90ad30780e6e29ea7333",
+      "source_bytes": 399,
+      "target_bytes": 408,
+      "aligned_blocks": 13,
+      "status": "translated; structural parity passed; cumulative render pending"
+    },
+    {
+      "unit_id": "OLP-0021",
+      "source_sha256": "d1fa0923e303fc49a88d4e476c319d6e91a8088de44c232dcfba5878325faea3",
+      "target_sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+      "source_bytes": 5443,
+      "target_bytes": 11473,
+      "aligned_blocks": 21,
+      "status": "translated; structural parity passed; cumulative render pending"
+    },
+    {
+      "unit_id": "OLP-0022",
+      "source_sha256": "4d30902b7c66720afabb8b079294106a685aefba0dc02ca10d9921bb554db0ac",
+      "target_sha256": "3255e9aba2a04f71c6c86aefdb14438c345a8105b69c545220ccaf69fd397f7e",
+      "source_bytes": 3894,
+      "target_bytes": 6257,
+      "aligned_blocks": 20,
+      "status": "translated; structural parity passed; cumulative render pending"
+    },
+    {
+      "unit_id": "OLP-0023",
+      "source_sha256": "e2e46c0270c44b6f54861a4565f3829b1b5f91a7f72dca84046361e5abf622c3",
+      "target_sha256": "b348c926961347405fb3589274e0ad70c027d84e9c92f745e378734199b0c909",
+      "source_bytes": 3881,
+      "target_bytes": 8136,
+      "aligned_blocks": 17,
+      "status": "translated; structural parity passed; cumulative render pending"
+    },
+    {
+      "unit_id": "OLP-0024",
+      "source_sha256": "96e36d8cd8dc4ec0e73e9507147ecfe33d7e4f368ecf46de92efb423a7d409c1",
+      "target_sha256": "d782d6872d682641ec8ccd156efcfce26b78dc81d2ce0155297cb0e17c22de5c",
+      "source_bytes": 6747,
+      "target_bytes": 13244,
+      "aligned_blocks": 28,
+      "status": "translated; structural parity passed; cumulative render pending"
+    },
+    {
+      "unit_id": "OLP-0025",
+      "source_sha256": "1733e9f6b7f1009f7d36cb47b3f11ec8cccc28ef173a379e4d69c3de352fcf28",
+      "target_sha256": "335ed06479d8ac82043ddb3fe3cfcf13a28fc060bcfb5812d6595bef832e3195",
+      "source_bytes": 2505,
+      "target_bytes": 3920,
+      "aligned_blocks": 12,
+      "status": "translated; structural parity passed; cumulative render pending"
+    },
+    {
+      "unit_id": "OLP-0026",
+      "source_sha256": "0f638e25ad1f565b9256846fb8b293c03663072b69a2adc5f2cfea1e94d00933",
+      "target_sha256": "59a4c449acea7ed67a295bacded5a4d0d177ff5be56ec383ee1f55d3536330f8",
+      "source_bytes": 2601,
+      "target_bytes": 4566,
+      "aligned_blocks": 14,
+      "status": "translated; structural parity passed; cumulative render pending"
+    }
+  ],
+  "translated_linguistic_blocks": 87,
+  "source_corrections": [
+    {
+      "finding_id": "OLFUN-001",
+      "unit_id": "OLP-0024",
+      "issue": "Injection need not have a left inverse when the domain is empty and codomain nonempty.",
+      "handling": "Corrected theorem/proof with nonempty-domain condition and adjacent disclosed counterexample/exact condition."
+    },
+    {
+      "finding_id": "OLFUN-002",
+      "unit_id": "OLP-0021",
+      "issue": "Positive square-root selector is inaccurate at zero on Nat.",
+      "handling": "Translated as nonnegative (principal) square root with adjacent source-correction note."
+    },
+    {
+      "finding_id": "OLFUN-003",
+      "unit_id": "OLP-0021",
+      "issue": "Example switches its input variable from n to x.",
+      "handling": "Normalized the prose input to x; the single n-to-x math delta is explicitly accepted in PARITY_003.json."
+    },
+    {
+      "finding_id": "OLFUN-004",
+      "unit_id": "OLP-0023",
+      "issue": "Graph is imprecisely called a relation on A times B.",
+      "handling": "Translated as a relation contained in A times B with adjacent source-correction note."
+    },
+    {
+      "finding_id": "OLFUN-005",
+      "unit_id": "OLP-0023",
+      "issue": "Function restriction is called exactly analogous to earlier two-coordinate relation restriction.",
+      "handling": "Kept the correct function definition and explicitly distinguished domain-only restriction from two-coordinate relation restriction."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_003.json"
+}

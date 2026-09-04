@@ -1,0 +1,115 @@
+% Part:sets-functions-relations
+% Chapter: size-of-sets
+% Section: equinumerous-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{equ}
+
+\olsection{ગણસામ્ય}
+
+ગણોના ``કદ''નો આપણો સહજ ખ્યાલ સાન્ત ગણો માટે સારી રીતે
+કામ કરે છે. પરંતુ અનંત ગણોનું શું? કોઈ પણ કદના બે ગણોના કદની
+તુલના કરવાની ઔપચારિક રીત ઘડવી હોય, તો ગણો ક્યારે સરખા કદના છે
+તેની વ્યાખ્યાથી શરૂઆત કરવી યોગ્ય છે. અહીં ફ્રેગેનું ઉદાહરણ છે:
+\begin{quote}
+  પીરસનારને મેજ પર થાળીઓ જેટલી જ છરીઓ મૂકી છે તેની ખાતરી કરવી
+  હોય, તો તેને બંનેમાંથી એકેયની ગણતરી કરવાની જરૂર નથી. તે દરેક
+  થાળીની જમણી બાજુએ એક છરી એવી રીતે મૂકે કે મેજ પરની દરેક છરી
+  કોઈ થાળીની જમણી બાજુએ હોય એટલું પૂરતું છે. આમ, થાળીઓ અને
+  છરીઓ એકબીજા સાથે અનન્ય રીતે, અને ખરેખર એ જ અવકાશી સંબંધ
+  દ્વારા, સંગત કરવામાં આવે છે. \citep[\S70]{Frege1884}
+\end{quote}
+આ અવતરણનો મુખ્ય વિચાર ઔપચારિક વ્યાખ્યા દ્વારા સ્પષ્ટ કરી શકાય છે:
+
+\begin{defn}\ollabel{comparisondef}
+  $A$ અને $B$ \emph{સામ્ય ગણો} છે, જે $\cardeq{A}{B}$ લખીએ,
+  જો અને માત્ર જો કોઈ !!a{bijection} $f \colon A \to B$ હોય.
+\end{defn}
+
+\begin{prop}\ollabel{equinumerosityisequi}
+ગણસામ્ય એ સામ્ય સંબંધ છે.
+\end{prop}
+
+\begin{proof}
+આપણે બતાવવું છે કે ગણસામ્ય સ્વવાચક, સંમિત અને પરંપરિત છે.
+$A, B$ અને $C$ ગણો હોય.
+
+\emph{સ્વવાચકતા.} તદેવ નિરૂપણ $\Id{A} \colon A \to A$, જ્યાં
+બધા $x \in A$ માટે $\Id{A} (x) = x$, એ !!a{bijection} છે.
+તેથી $\cardeq{A}{A}$.
+
+\emph{સંમિતતા.} ધારો કે $\cardeq{A}{B}$; એટલે કે કોઈ
+!!a{bijection} $f\colon A \to B$ છે. $f$ એ !!{bijective} હોવાથી
+તેનું પ્રતિવિધેય $f^{-1}$ અસ્તિત્વમાં છે અને !!{bijective} પણ છે.
+તેથી $f^{-1}\colon B \to A$ એ !!a{bijection} છે અને
+$\cardeq{B}{A}$.
+
+\emph{પરંપરિતતા.} ધારો કે $\cardeq{A}{B}$ અને $\cardeq{B}{C}$;
+એટલે કે !!{bijection}s $f\colon A \to B$ અને $g\colon B \to
+C$ છે. ત્યારે સંયોજન $\comp{f}{g}\colon A \to C$ એ !!{bijective}
+છે, તેથી $\cardeq{A}{C}$.
+\end{proof}
+
+\begin{prop}
+જો $\cardeq{A}{B}$ હોય, તો $A$ એ !!{enumerable} હોય જો અને
+માત્ર જો $B$ પણ હોય.
+\end{prop}
+
+\begin{editorial}
+નીચેની સાબિતીમાં \olref[enm]{sec} સમાવેલો હોય, તો
+\olref[enm]{defn:enumerable}ની વ્યાખ્યા, અને અન્યથા
+\olref[enm-alt]{defn:enumerable}ની વ્યાખ્યા વપરાય છે.
+\end{editorial}
+
+\begin{proof}
+ધારો કે $\cardeq{A}{B}$, એટલે કોઈ !!{bijection}
+$f \colon A \to B$ છે, અને ધારો કે $A$ એ !!{enumerable} છે.
+\oliflabeldef{sfr:siz:enm:defn:enumerable}{
+  ત્યારે કાં તો $A = \emptyset$ અથવા કોઈ !!a{surjective} વિધેય
+  $g\colon \PosInt \to A$ છે. જો $A = \emptyset$ હોય, તો
+  $B = \emptyset$ પણ હોય (અન્યથા કોઈ !!a{element}~$y \in B$ હોત,
+  પરંતુ $f(x) = y$ થાય એવો કોઈ $x \in A$ ન હોત). બીજી તરફ,
+  જો $g\colon \PosInt \to A$ એ !!{surjective} હોય, તો
+  $\comp{g}{f} \colon \PosInt \to B$ પણ !!{surjective} છે.
+  આ જોવા $y \in B$ લો. $f$ એ !!{surjective} હોવાથી એવો
+  $x \in A$ છે કે $f(x) = y$. $g$ એ !!{surjective} હોવાથી
+  એવો $n \in \PosInt$ છે કે $g(n) = x$. તેથી
+\[
+(\comp{g}{f})(n) = f(g(n)) = f(x) = y
+\]
+અને આમ $\comp{g}{f}$ એ !!{surjective} છે. $\comp{g}{f}$ એ
+$B$ની પરિગણના છે, તેથી $B$ એ !!{enumerable} છે.}
+{
+  ત્યારે કાં તો $A  = \emptyset$ અથવા કોઈ !!a{bijection}~$g$ છે
+  જેનો વિસ્તાર $A$ છે અને જેનો પ્રદેશ $\Nat$ અથવા પ્રાકૃતિક
+  સંખ્યાઓનો કોઈ આરંભખંડ છે. જો $A = \emptyset$ હોય, તો
+  $B = \emptyset$ પણ હોય (અન્યથા કોઈ~$y \in B$ હોત, પરંતુ
+  $f(x) = y$ થાય એવો કોઈ $x \in A$ ન હોત). હવે ધારો કે આપણું
+  !!{bijection}~$g$ છે. ત્યારે $\comp{g}{f}$ એ વિસ્તાર~$B$ અને
+  $g$ના પ્રદેશ જેવો જ પ્રદેશ (એટલે કે $\Nat$ અથવા તેનો કોઈ
+  આરંભખંડ) ધરાવતું !!a{bijection} છે. તેથી $B$ એ !!{enumerable} છે.}
+\sourcecorrection{OLSIZ-006}{મૂળની \texttt{equinumerous-sets.tex},
+પંક્તિઓ 68--94ની બંને સશરતી શાખામાં ખાલી ગણના કિસ્સે
+\(g(x)=y\) લખાયું છે, જોકે એ શાખામાં \(g\) વ્યાખ્યાયિત નથી.
+અહીં પહેલેથી આપેલા સામ્ય વિધેય મુજબ \(f(x)=y\) લખ્યું છે.}
+
+જો $B$ એ !!{enumerable} હોય, તો ઉપરની દલીલ $f$ને બદલે
+!!{bijection} $f^{-1}\colon B \to A$ સાથે ફરી કરતાં $A$ એ
+!!{enumerable} છે તેમ મળે છે.
+\end{proof}
+
+\begin{prob}
+બતાવો કે જો $\cardeq{A}{C}$ અને $\cardeq{B}{D}$ હોય તથા
+$A \cap B = C \cap D = \emptyset$ હોય, તો
+$\cardeq{A \cup B}{C \cup D}$.
+\end{prob}
+
+\begin{prob}
+બતાવો કે જો $A$ અનંત અને !!{enumerable} હોય, તો
+$\cardeq{A}{\Nat}$.
+\end{prob}
+
+\end{document}

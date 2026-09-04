@@ -1,0 +1,85 @@
+\input{build/foundations-preamble.tex}
+\usepackage[authoryear]{natbib}
+\renewcommand{\refname}{સંદર્ભગ્રંથો}
+\renewcommand{\partname}{ભાગ}
+\newenvironment{intro}{}{}
+\newcommand{\Id}[1]{\mathord{\mathrm{Id}_{#1}}}
+\newcommand{\equivrep}[2]{[#1]_{#2}}
+\newcommand{\equivclass}[2]{#1/_{\!{#2}}}
+\newcommand{\funrestrictionto}[2]{#1\mathord{\restriction}_{#2}}
+\newcommand{\funimage}[2]{#1[#2]}
+\newcommand{\emptyseq}{\Lambda}
+\newcommand{\liff}{\mathbin{\leftrightarrow}}
+\newcommand{\dom}[1]{\mathrm{dom}(#1)}
+\newcommand{\ran}[1]{\mathrm{ran}(#1)}
+\newcommand{\comp}[2]{#2\circ #1}
+\newcommand{\pto}{\mathrel{\ooalign{\hfil$\mapstochar\mkern5mu$\hfil\cr$\to$}}}
+\newcommand{\fdefined}{\downarrow}
+\newcommand{\fundefined}{\uparrow}
+\newcommand{\sourcecorrection}[2]{%
+  \par\smallskip\noindent
+  \fbox{\begin{minipage}{0.94\linewidth}\small
+    \textbf{સ્રોત-સુધારો #1.} #2
+  \end{minipage}}%
+  \par\smallskip}
+\definecolor{oldiagcolorD}{HTML}{1973ba}
+\newlength{\olphotowidth}
+\setlength{\olphotowidth}{.4\textwidth}
+\RenewDocumentCommand{\olasset}{O{\olphotowidth} m}{\centering\resizebox{#1}{!}{\input{upstream/#2}}}
+\input{build/size-available-labels.tex}
+\renewcommand{\oliflabeldef}[3]{\ifcsname guavailable@#1\endcsname#2\else#3\fi}
+\hypersetup{pdftitle={ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી}}
+\begin{document}
+\begin{titlepage}
+{\Huge\bfseries ગણો, સંબંધો, વિધેયો અને ગણોનું કદ\par}
+\vspace{1em}
+{\Large ઓપન લોજિક — ગુજરાતી\par}
+\vspace{2em}
+ઓપન લોજિક પ્રોજેક્ટના અંગ્રેજી મૂળનો ગુજરાતી અનુવાદ.\par
+\vspace{1em}
+આ આવૃત્તિમાં ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં સંપૂર્ણ પ્રકરણો છે.
+ગણનીયતા, વિકર્ણીકરણ, જોડ-નિરૂપણ, ગણસામ્ય, કૅન્ટૉરનું પ્રમેય અને
+શ્રેડર--બર્નસ્ટાઇન પ્રમેય સહિત પ્રાથમિક તથા ગણસિદ્ધાંત મુજબનાં
+વૈકલ્પિક વિભાગો સતત ક્રમમાં સમાવ્યા છે.\par
+\vfill
+આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.
+આ આવૃત્તિમાં મૂળનાં ૩૭ એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
+કેટલીક વિશિષ્ટ પરિભાષા કામચલાઉ છે. ચકાસણીની વિગતો અને
+મૂળ પાઠ વિશેની નોંધો સંપાદકીય માહિતીમાં આપેલી છે.\par
+\vspace{1em}
+\href{https://github.com/OpenLogicProject/OpenLogic}{Open Logic Project}
+\quad \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}\par
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{અનુવાદોનું કેન્દ્ર}\par
+\end{titlepage}
+\tableofcontents
+\clearpage
+\input{build/size-body.tex}
+\clearpage
+\section*{સંપાદકીય નોંધો}
+\addcontentsline{toc}{section}{સંપાદકીય નોંધો}
+આ નોંધો મૂળ પાઠથી અલગ છે. મૂળની ગણિતીય નિશાનીઓ જાળવી છે.
+OLFUN-001થી OLFUN-005 અને OLSIZ-001થી OLSIZ-012 સુધીની ઓળખવાળી
+નોંધો સ્થિર અંગ્રેજી મૂળમાં મળેલી ખામીઓ અને ગુજરાતી પાઠમાં કરેલા
+મર્યાદિત સુધારા બાજુબાજુ દર્શાવે છે. દરેક સુધારાની ચોક્કસ જગ્યા,
+કારણ અને સૂત્રમાં થયેલો ફેરફાર સાથેના નિર્ણય-અભિલેખમાં નોંધાયેલ છે.
+
+ગણનીય માટેનું ગુજરાતી પ્રમાણ ગણનીયને ગણનીય અનંત ગણ માટે વાપરે છે,
+જ્યારે Open Logicની આ આવૃત્તિની વ્યાખ્યા સાન્ત અને ખાલી ગણોને પણ
+સમાવે છે. બંને પરિગણના-રૂપો પોતાની સ્થાનિક વ્યાખ્યા સાથે જ વાંચવાનાં છે.
+પ્રાથમિક વિભાગો અને વધુ અમૂર્ત વૈકલ્પિક વિભાગો બંને સાથે મૂક્યાં છે,
+અને સશરતી પાઠ ઉપલબ્ધ વિભાગોને અનુરૂપ રીતે પસંદ થાય છે.
+
+પરિભાષા, મૂળ સ્રોતો, પ્રત્યેક અનુવાદિત ખંડની સ્રોત-સંગતિ અને
+ચકાસણીની વધુ વિગતો આવૃત્તિની સાથેની ફાઇલોમાં છે.
+\begin{thebibliography}{4}
+\bibitem[Benacerraf(1965)]{Benacerraf1965}
+Benacerraf, Paul. 1965. \emph{What numbers could not be}.
+The Philosophical Review 74(1), 47--73.
+\bibitem[Cantor(1892)]{Cantor1892}
+Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.
+\bibitem[Frege(1884)]{Frege1884}
+Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.
+\bibitem[Potter(2004)]{Potter2004}
+Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.
+\end{thebibliography}
+\end{document}

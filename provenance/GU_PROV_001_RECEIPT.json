@@ -1,0 +1,301 @@
+{
+  "assertions": {
+    "all_target_ids_present_once": true,
+    "normalized_extract_identities": 8,
+    "normalized_passage_hashes": 8,
+    "raw_extract_identities": 8,
+    "raw_source_identities": 8,
+    "result": "passed"
+  },
+  "canon_passage_schema_sha256": "544837e0f014324ea40110c932c6cf7e35355d31bfb8fbb01ce1d073e77be819",
+  "canon_passages_sha256": "e36fae1b9de416debc4305f3d238f2e96b56ee55ce87f8b46a34c7f4f8ec1dbd",
+  "issue_id": "GU-PROV-001",
+  "normalization_algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+  "normalization_id": "crlf-to-lf-v1",
+  "records": [
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 479,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 185277,
+        "utf8_start": 182785
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 194951,
+        "derived_from_raw_extract_sha256": "cdeccbaadf5274656f40f60a67ce450fc8a3b985daa95df23264bfbab0e4be67",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "164263f76d38026ecbbda327d1c63d933c19cecb2a8eb5c1021201d70cba8e10"
+      },
+      "passage_bytes": 2492,
+      "passage_id": "GU-P011",
+      "passage_sha256": "f7c8fbb581b4d9e097e55210732502e0b82185c4701ac54032fbc030602cb96a",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 195456,
+        "crlf_pairs": 505,
+        "path": "canon/extracts/GU-VK-MATH.txt",
+        "sha256": "cdeccbaadf5274656f40f60a67ce450fc8a3b985daa95df23264bfbab0e4be67"
+      },
+      "raw_source_identity": {
+        "bytes": 273517,
+        "path": "canon/originals/GU-VK-MATH.html",
+        "sha256": "9c8fa04e438e02d2b870d696d14da46e51e667c157c23b358bcfe31a15fc21bb",
+        "source_id": "GU-VK-MATH"
+      },
+      "source_id": "GU-VK-MATH",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    },
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 486,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 193794,
+        "utf8_start": 192646
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 194951,
+        "derived_from_raw_extract_sha256": "cdeccbaadf5274656f40f60a67ce450fc8a3b985daa95df23264bfbab0e4be67",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "164263f76d38026ecbbda327d1c63d933c19cecb2a8eb5c1021201d70cba8e10"
+      },
+      "passage_bytes": 1148,
+      "passage_id": "GU-P012",
+      "passage_sha256": "3e4208bccd5a814005ce02308ad993323279502bcd647e01fe66b4827586d96b",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 195456,
+        "crlf_pairs": 505,
+        "path": "canon/extracts/GU-VK-MATH.txt",
+        "sha256": "cdeccbaadf5274656f40f60a67ce450fc8a3b985daa95df23264bfbab0e4be67"
+      },
+      "raw_source_identity": {
+        "bytes": 273517,
+        "path": "canon/originals/GU-VK-MATH.html",
+        "sha256": "9c8fa04e438e02d2b870d696d14da46e51e667c157c23b358bcfe31a15fc21bb",
+        "source_id": "GU-VK-MATH"
+      },
+      "source_id": "GU-VK-MATH",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    },
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 36,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 4684,
+        "utf8_start": 3637
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 19173,
+        "derived_from_raw_extract_sha256": "e1d2fdb1e4355c5a5bab03b6ce8b6d5ff12aef7138bdb2f896f0b2ddf5ebd98e",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "17758bb3cda21264b4403d3a895720b31c16c0b62d483ce8d7c8e0a7275d14ed"
+      },
+      "passage_bytes": 1047,
+      "passage_id": "GU-P013",
+      "passage_sha256": "e044ced10eb1461d865eed366b9f5cd142862943363aab3d7b5320de26db78e4",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 19325,
+        "crlf_pairs": 152,
+        "path": "canon/extracts/GU-VK-SETS.txt",
+        "sha256": "e1d2fdb1e4355c5a5bab03b6ce8b6d5ff12aef7138bdb2f896f0b2ddf5ebd98e"
+      },
+      "raw_source_identity": {
+        "bytes": 82751,
+        "path": "canon/originals/GU-VK-SETS.html",
+        "sha256": "a8df3a64ae078f1c7c620486639d27df56d97963827a35a6fe6c3f51a767e31e",
+        "source_id": "GU-VK-SETS"
+      },
+      "source_id": "GU-VK-SETS",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    },
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 37,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 4762,
+        "utf8_start": 4684
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 19173,
+        "derived_from_raw_extract_sha256": "e1d2fdb1e4355c5a5bab03b6ce8b6d5ff12aef7138bdb2f896f0b2ddf5ebd98e",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "17758bb3cda21264b4403d3a895720b31c16c0b62d483ce8d7c8e0a7275d14ed"
+      },
+      "passage_bytes": 78,
+      "passage_id": "GU-P014",
+      "passage_sha256": "002a61058bce0309323f5f83f43dcb66d227a0a719ad817eba6b660954bf4309",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 19325,
+        "crlf_pairs": 152,
+        "path": "canon/extracts/GU-VK-SETS.txt",
+        "sha256": "e1d2fdb1e4355c5a5bab03b6ce8b6d5ff12aef7138bdb2f896f0b2ddf5ebd98e"
+      },
+      "raw_source_identity": {
+        "bytes": 82751,
+        "path": "canon/originals/GU-VK-SETS.html",
+        "sha256": "a8df3a64ae078f1c7c620486639d27df56d97963827a35a6fe6c3f51a767e31e",
+        "source_id": "GU-VK-SETS"
+      },
+      "source_id": "GU-VK-SETS",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    },
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 26,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 1060,
+        "utf8_start": 820
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 33499,
+        "derived_from_raw_extract_sha256": "e18557a0b1674ad852d8d6a932c7e0af6603383eec12c5c502bf9e1b03d67271",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "fb78a6e976b829703add5c97ae0fe691a7a0e59096c670084b70e09873f02ddd"
+      },
+      "passage_bytes": 240,
+      "passage_id": "GU-P015",
+      "passage_sha256": "3844f2af3e604c119da4c0089a518b10268f4028ad310e1c9890b0eed2f4f8ab",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 33748,
+        "crlf_pairs": 249,
+        "path": "canon/extracts/GU-VK-GROUPS.txt",
+        "sha256": "e18557a0b1674ad852d8d6a932c7e0af6603383eec12c5c502bf9e1b03d67271"
+      },
+      "raw_source_identity": {
+        "bytes": 89986,
+        "path": "canon/originals/GU-VK-GROUPS.html",
+        "sha256": "16636a827efd1de1fe38ef6e0debb22b5957c55c019ac74496b890278e0d0e7d",
+        "source_id": "GU-VK-GROUPS"
+      },
+      "source_id": "GU-VK-GROUPS",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    },
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 126,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 44439,
+        "utf8_start": 43654
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 91151,
+        "derived_from_raw_extract_sha256": "6d052b61853706c86f16a139081064764a8900da66f47efed7306a2b275d33ea",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "b4aec6350090eb6d816ff891e0326ae56c9a1756ab9a5d4f0b8b17671dd4f26a"
+      },
+      "passage_bytes": 785,
+      "passage_id": "GU-P024",
+      "passage_sha256": "280734bbd30e57bddaad49b63781058bf0ad51cc6697791fcc4399ea4b1bc1db",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 91412,
+        "crlf_pairs": 261,
+        "path": "canon/extracts/GU-VK-TRUTH.txt",
+        "sha256": "6d052b61853706c86f16a139081064764a8900da66f47efed7306a2b275d33ea"
+      },
+      "raw_source_identity": {
+        "bytes": 145972,
+        "path": "canon/originals/GU-VK-TRUTH.html",
+        "sha256": "f27a095bca5a3aba579fa2dfd3d791b417dfbda3ce3e9f4f38ebe1a43353b8fc",
+        "source_id": "GU-VK-TRUTH"
+      },
+      "source_id": "GU-VK-TRUTH",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    },
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 128,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 46011,
+        "utf8_start": 44931
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 91151,
+        "derived_from_raw_extract_sha256": "6d052b61853706c86f16a139081064764a8900da66f47efed7306a2b275d33ea",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "b4aec6350090eb6d816ff891e0326ae56c9a1756ab9a5d4f0b8b17671dd4f26a"
+      },
+      "passage_bytes": 1080,
+      "passage_id": "GU-P025",
+      "passage_sha256": "ffd11133bf7767d0908213c85b3b55f77cdf000bf423909d1a799f26c59c8a53",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 91412,
+        "crlf_pairs": 261,
+        "path": "canon/extracts/GU-VK-TRUTH.txt",
+        "sha256": "6d052b61853706c86f16a139081064764a8900da66f47efed7306a2b275d33ea"
+      },
+      "raw_source_identity": {
+        "bytes": 145972,
+        "path": "canon/originals/GU-VK-TRUTH.html",
+        "sha256": "f27a095bca5a3aba579fa2dfd3d791b417dfbda3ce3e9f4f38ebe1a43353b8fc",
+        "source_id": "GU-VK-TRUTH"
+      },
+      "source_id": "GU-VK-TRUTH",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    },
+    {
+      "locator": {
+        "byte_basis": "normalized_extract_identity bytes",
+        "line_one_based": 152,
+        "normalization_id": "crlf-to-lf-v1",
+        "utf8_end": 55596,
+        "utf8_start": 54422
+      },
+      "normalized_extract_identity": {
+        "algorithm": "On the raw extract byte string, replace every non-overlapping byte pair 0x0D 0x0A with the single byte 0x0A; preserve every other byte exactly; perform no Unicode decoding, encoding, normalization, or other transformation.",
+        "bytes": 91151,
+        "derived_from_raw_extract_sha256": "6d052b61853706c86f16a139081064764a8900da66f47efed7306a2b275d33ea",
+        "normalization_id": "crlf-to-lf-v1",
+        "sha256": "b4aec6350090eb6d816ff891e0326ae56c9a1756ab9a5d4f0b8b17671dd4f26a"
+      },
+      "passage_bytes": 1174,
+      "passage_id": "GU-P026",
+      "passage_sha256": "57549b0ee270c6289ad657faf25eac6675c15ab6f5c69796561d0c65473bc516",
+      "raw_extract_identity": {
+        "bare_cr_bytes": 0,
+        "bytes": 91412,
+        "crlf_pairs": 261,
+        "path": "canon/extracts/GU-VK-TRUTH.txt",
+        "sha256": "6d052b61853706c86f16a139081064764a8900da66f47efed7306a2b275d33ea"
+      },
+      "raw_source_identity": {
+        "bytes": 145972,
+        "path": "canon/originals/GU-VK-TRUTH.html",
+        "sha256": "f27a095bca5a3aba579fa2dfd3d791b417dfbda3ce3e9f4f38ebe1a43353b8fc",
+        "source_id": "GU-VK-TRUTH"
+      },
+      "source_id": "GU-VK-TRUTH",
+      "status": "raw_source_identity_valid; raw_extract_identity_valid; normalized_stream_identity_valid; normalized_slice_hash_valid; normalized_line_locator_valid"
+    }
+  ],
+  "schema": "openlogic-gu-gu-prov-001-receipt/1",
+  "target_passage_ids": [
+    "GU-P011",
+    "GU-P012",
+    "GU-P013",
+    "GU-P014",
+    "GU-P015",
+    "GU-P024",
+    "GU-P025",
+    "GU-P026"
+  ],
+  "target_records": 8
+}
