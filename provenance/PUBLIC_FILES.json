@@ -15,9 +15,14 @@
     "sha256": "46f5222485edc7af5fb9085e55f9452264d45c7a5825dc90f4a47002e8f2fdfd"
   },
   {
+    "file": "docs/BUILD_CUMULATIVE.md",
+    "bytes": 935,
+    "sha256": "925eec24382193d09f422d515caeeeff18fffd3eb585d695dc41db84c187b539"
+  },
+  {
     "file": "docs/EDITION_NOTES.md",
-    "bytes": 4401,
-    "sha256": "af71f921a5ca0425c585149946f360f4229a725d93cabb9f2d8c9bc6353b7cb8"
+    "bytes": 5295,
+    "sha256": "61e769942f22a1d8ffca9b4daec725cc1d237e3cb0910d6416b2b49e41855811"
   },
   {
     "file": "docs/LICENSE_NOTES.md",
@@ -48,6 +53,51 @@
     "file": "fonts/OFL.txt",
     "bytes": 4384,
     "sha256": "c0b88977aa18b5e4fd05d646d560da89fde61b6581fa4507cb00dd90bd1bf7d4"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/equivalence-relations.tex",
+    "bytes": 5531,
+    "sha256": "1ecb10dd8641f2237298cefbafa8100c07f2f8f06d558f538e5b6d32de1343b3"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/graphs.tex",
+    "bytes": 4858,
+    "sha256": "290b9c1f9ecd86be9b20ce20bd0160eba67008e083370b8c159e3fb24c2cd641"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/operations.tex",
+    "bytes": 3525,
+    "sha256": "8baad1e3ebf355a5c5195bab8f6a9060126934153bd3830b6d68fafa4306831b"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/orders.tex",
+    "bytes": 10935,
+    "sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/reflections.tex",
+    "bytes": 8000,
+    "sha256": "65505e647ccb1492de0bc1d7c60bae8b1cc9d986221117daf91f3ab0d1c703ee"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/relations-as-sets.tex",
+    "bytes": 9236,
+    "sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/relations-complete.tex",
+    "bytes": 419,
+    "sha256": "f992858641a0783491b622b5f69eb3b78d7baf310687139a6edf6ec32f1cce5b"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/special-properties.tex",
+    "bytes": 5670,
+    "sha256": "c738b8f1648d9f4aa32cb4efcad04e3ec3fbf2251c735abf508754abab82fb84"
+  },
+  {
+    "file": "gu/content/sets-functions-relations/relations/trees.tex",
+    "bytes": 9388,
+    "sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b"
   },
   {
     "file": "gu/content/sets-functions-relations/sets/basics.tex",
@@ -85,6 +135,11 @@
     "sha256": "479a866032c9eae22230d376f546944bc9e67e7852575dd0dd39aa30fb335a81"
   },
   {
+    "file": "gu-foundations.tex",
+    "bytes": 4653,
+    "sha256": "691670e262141da47f6683035ea7649902fde840d2c1b90b5873bf38213bd5da"
+  },
+  {
     "file": "gu-sets.tex",
     "bytes": 4036,
     "sha256": "038be8d1470868d41ddcca3a6ef3925423c5a1d903698c842a77b76d00edda1f"
@@ -100,19 +155,39 @@
     "sha256": "053e12fe77406cc236c539a3e247e9583c0881626da52c0fafc3e0cf6e38f6d6"
   },
   {
+    "file": "provenance/BATCH_002.json",
+    "bytes": 4247,
+    "sha256": "43699cec18be506e8e72d29e9d44ca97dcd4dc212957bfb621839d554fd77a6c"
+  },
+  {
     "file": "provenance/CANON_PASSAGES.jsonl",
-    "bytes": 9113,
-    "sha256": "b5d4e14d7e9c8719d97ca0028691fbe140d8cca20e4ebf5c569a05d5cbc30df1"
+    "bytes": 19355,
+    "sha256": "55e6f8580de100b78ac89375dd9effde0611df082f7be2aa2fd0c72175591ba3"
   },
   {
     "file": "provenance/CANON_SOURCES.jsonl",
-    "bytes": 3533,
-    "sha256": "760aa093a34994686d52a26b4e3f6cb7defcbbf2ebd9517d3cc93feaa5c7799a"
+    "bytes": 5926,
+    "sha256": "a2fb8cf9df453ff3bfb13346f66e24a1ab8fbd1d714a6939a9d1225c2450e28a"
   },
   {
     "file": "provenance/COVERAGE.json",
-    "bytes": 182917,
-    "sha256": "1142f18536796966d3322273c34a8f7ad58ce68f3905d550a402dc83e7c512e4"
+    "bytes": 183946,
+    "sha256": "6f747e70667a8b6eaedb0a0c31678feeb8f529bd6bc6de7c91db58edaad894e1"
+  },
+  {
+    "file": "provenance/FINAL_QA_002.json",
+    "bytes": 4068,
+    "sha256": "0094321971adcc623103977ebc11e10c9902e6d9ce051ea310767be163e0dfb4"
+  },
+  {
+    "file": "provenance/HTML_DIAGRAM_QA_002.json",
+    "bytes": 2631,
+    "sha256": "d6c832f11c63b8609f2e20ad689a5d199eccdd759c0ecf8f7678ff76ea2c59f3"
+  },
+  {
+    "file": "provenance/LAPTOP_CANON_RECONCILIATION.json",
+    "bytes": 8175,
+    "sha256": "dc2bbd56504ae0b3042d33d99d2438efb4229987ee4c852e0b97b3b84f3e94c5"
   },
   {
     "file": "provenance/PARITY_001.json",
@@ -120,19 +195,29 @@
     "sha256": "18115805d2189fff36db3d4c98f144723e7d4201d8e4e3f5550e5c811a6273f6"
   },
   {
+    "file": "provenance/PARITY_002.json",
+    "bytes": 5700,
+    "sha256": "4825236f13d436419faa724caf2aac995909a6df4a264c7e1937bf21390a0586"
+  },
+  {
     "file": "provenance/QA.json",
-    "bytes": 1691,
-    "sha256": "fc97d855775b3ec0ea10c2348d55ce4b29fa2e4092aaf5c4c5d4c8579d8bf161"
+    "bytes": 4490,
+    "sha256": "d15bcb9eb2b204b60e31a0cacf400dbc6738ec6707a276e7facb65e556d0caaf"
   },
   {
     "file": "provenance/SEGMENT_CANON_USE.jsonl",
-    "bytes": 93223,
-    "sha256": "18e78f30c6ec77c2d5d85dfc80ff1654889c8cf92ade6b5263e89da67d3b6246"
+    "bytes": 230240,
+    "sha256": "6187780b3c1d3c971ce2b31391a0ae1c0e90f4a936bf06a4f97172d073e1a79e"
   },
   {
     "file": "provenance/SEMANTIC_REVIEW_001.json",
     "bytes": 5748,
     "sha256": "c76d641af5ee9202796a994079bf53ac28296eaf08fba3bb3512ff506b273aff"
+  },
+  {
+    "file": "provenance/SEMANTIC_REVIEW_002.json",
+    "bytes": 7637,
+    "sha256": "0059e52457ffd3cce811ca30272ec4eea3489b6bc315fc479c10fe326c851a45"
   },
   {
     "file": "provenance/SOURCE_MANIFEST.jsonl",
@@ -141,8 +226,8 @@
   },
   {
     "file": "provenance/TERM_DECISIONS.jsonl",
-    "bytes": 4534,
-    "sha256": "c5badbaaac306d5421281773cfd6727d1c1e9c7c846c140201411bfd97e80ea2"
+    "bytes": 10799,
+    "sha256": "94951f44f6f1b17a83ebc52398e1be76f26dda30c84f8cbf2c40c4743ccebb8d"
   },
   {
     "file": "reader/assets/difference.svg",
@@ -150,14 +235,34 @@
     "sha256": "96209f496ccbc15301e24b9be3e6bb0c6844c00e07d850d15853e2f7f78ae9c4"
   },
   {
+    "file": "reader/assets/graph-four.svg",
+    "bytes": 1253,
+    "sha256": "1e4e7924276d2b3fe156ef036e679582b77020f82f326a74a6ebcf09b5f7d6d6"
+  },
+  {
+    "file": "reader/assets/graph-three.svg",
+    "bytes": 1108,
+    "sha256": "fa49eb769792ed0a18d728e25208ed0bd6e28129312bb14a16f1f7577cd67d10"
+  },
+  {
     "file": "reader/assets/intersection.svg",
     "bytes": 3078,
     "sha256": "39196746e170600adc196f1261a0dfec9b0e58c4dfcd637d3acaae77a4331aec"
   },
   {
+    "file": "reader/assets/tree.svg",
+    "bytes": 1546,
+    "sha256": "579ff65e523d3a1ad418d47c782903fb26daab55feafe12cc47d14877939d096"
+  },
+  {
     "file": "reader/assets/union.svg",
     "bytes": 4024,
     "sha256": "8fad36bc95d3926c8df64dae2d9dc5f178feb6836556c30647f3cc9e5c714c02"
+  },
+  {
+    "file": "reader/foundations.html",
+    "bytes": 324023,
+    "sha256": "8982aae565eadc6d11ad95aa55a7a7fccf61d425d0ad02733788e0291bf5ed7f"
   },
   {
     "file": "reader/reader.css",
@@ -171,8 +276,13 @@
   },
   {
     "file": "README.md",
-    "bytes": 2139,
-    "sha256": "aac02a4b1e0998e94c6539791d073418a7625cc52bc1e9f899a9a1c760d27566"
+    "bytes": 2191,
+    "sha256": "349546bbd743bbf243be079e33d4881ebca6838f13fa01db258be511125c6154"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Sets-Relations.pdf",
+    "bytes": 266608,
+    "sha256": "c4235f6bdc210ca4e0763a4c6d4c067cad755076984dc2b040b333b7c39b4698"
   },
   {
     "file": "releases/OpenLogic-gu-Gujr-IN-Sets.pdf",
@@ -180,14 +290,24 @@
     "sha256": "becd2e80549e0583e1dec597f5a052df002f712cb7f09d72da6151bfc58779a3"
   },
   {
+    "file": "tools/build_foundations_html.py",
+    "bytes": 12196,
+    "sha256": "ac626e6d4bb6f5d380d9a437fa4a429b41a65f1d9d879c76950b143f76538c2b"
+  },
+  {
     "file": "tools/build_sets_guarded.ps1",
-    "bytes": 4265,
-    "sha256": "836914965110ffc9e81d48557e690c7fd775e9b12b4ff65140287212052796e1"
+    "bytes": 4536,
+    "sha256": "99db145fd9e667bef346336ffb6dd2445645f73b41ff335fe71b023059e25b61"
   },
   {
     "file": "tools/build_sets_html.py",
     "bytes": 8369,
     "sha256": "1e80beb25da705e1af4e9ab1507b66f97cd9ba7db46855d62f0d52182aa3e4be"
+  },
+  {
+    "file": "tools/prepare_foundations.py",
+    "bytes": 1721,
+    "sha256": "41f0ff039f37dede36dc9cac22736e10999d03cbecdd1988518b9ddee179abfd"
   },
   {
     "file": "tools/prepare_sets.py",

@@ -1,0 +1,76 @@
+% Part: sets-functions-relations
+% Chapter: relations
+% Section: operations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{rel}{ops}
+\olsection{સંબંધો પરની ક્રિયાઓ}
+
+સંબંધોમાં ફેરફાર કરવો અથવા તેમને ભેગા કરવા ઘણી વાર ઉપયોગી
+બને છે. \olref[sfr][rel][ord]{prop:stricttopartial}માં આપણે
+સંબંધોના \emph{યોગગણ}નો વિચાર કર્યો હતો, જે બે સંબંધોને
+જોડના ગણ તરીકે લઈએ ત્યારે તેમનો યોગગણ જ છે.
+એ જ રીતે, \olref[sfr][rel][ord]{prop:partialtostrict}માં
+આપણે સંબંધોના સાપેક્ષ તફાવતનો વિચાર કર્યો હતો.
+અહીં સંબંધો પર કરી શકાય તેવી કેટલીક બીજી ક્રિયાઓ આપેલી છે.
+
+\begin{defn}\ollabel{relationoperations}
+ધારો કે $R$, $S$ સંબંધો છે, અને $A$ કોઈ પણ ગણ છે.
+
+$R$નો \emph{વ્યસ્ત} એ
+$R^{-1} = \Setabs{\tuple{y, x}}{\tuple{x, y} \in R}$ છે.
+
+$R$ અને $S$નો \emph{સાપેક્ષ ગુણાકાર} એ
+$(R \mid S) = \{\tuple{x, z} : \exists y(Rxy \land Syz)\}$ છે.
+
+$R$નું $A$ પર \emph{મર્યાદન} એ
+$\funrestrictionto{R}{A}= R \cap A^2$ છે.
+
+$R$ને $A$ પર \emph{લાગુ પાડતાં મળતો ગણ} એ
+$\funimage{R}{A} = \{y : (\exists x \in A)Rxy\}$ છે.
+\end{defn}
+
+\begin{ex}
+ધારો કે $S \subseteq \Int^2$ એ $\Int$ પરનો અનુગામી સંબંધ છે,
+એટલે કે $S = \Setabs{\tuple{x, y} \in \Int^2}{x + 1 = y}$,
+જેથી $Sxy$ તો અને તો જ $x + 1 = y$.
+
+$S^{-1}$ એ $\Int$ પરનો પુરોગામી સંબંધ છે,
+એટલે કે $\Setabs{\tuple{x,y}\in\Int^2}{x -1 =y}$.
+
+$S\mid S$ એ
+$ \Setabs{\tuple{x,y}\in\Int^2}{x + 2 =y}$ છે.
+
+$\funrestrictionto{S}{\Nat}$ એ $\Nat$ પરનો અનુગામી સંબંધ છે.
+
+$\funimage{S}{\{1,2,3\}}$ એ $\{2, 3, 4\}$ છે.
+\end{ex}
+
+\begin{defn}[પરંપરિત સંવરણ]ધારો કે $R \subseteq A^2$ દ્વિઘટકી સંબંધ છે.
+
+$R$નું \emph{પરંપરિત સંવરણ} એ
+$R^+ = \bigcup_{0 < n \in \Nat} R^n$ છે,
+જ્યાં આપણે પુનરાવર્તી રીતે $R^1 = R$ અને
+$R^{n+1} = R^n \mid R$ વ્યાખ્યાયિત કરીએ છીએ.
+
+$R$નું \emph{સ્વવાચક પરંપરિત સંવરણ} એ
+$R^* = R^+ \cup \Id{A}$ છે.
+\end{defn}
+
+\begin{ex}
+અનુગામી સંબંધ $S \subseteq \Int^2$ લો.
+$S^2xy$ તો અને તો જ $x + 2 = y$,
+$S^3xy$ તો અને તો જ $x + 3 = y$, વગેરે.
+તેથી $S^+xy$ તો અને તો જ કોઈક $n \geq 1$ માટે
+$x + n = y$. બીજા શબ્દોમાં, $S^+xy$ તો અને તો જ $x < y$,
+અને $S^*xy$ તો અને તો જ $x \le y$.
+\end{ex}
+
+\begin{prob}
+$R$નું પરંપરિત સંવરણ ખરેખર પરંપરિત છે તે દર્શાવો.
+\end{prob}
+
+\end{document}

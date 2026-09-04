@@ -1,0 +1,89 @@
+% Part: sets-functions-relations
+% Chapter: relations
+% Section: equivalence-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{rel}{eqv}
+
+\olsection{સામ્ય સંબંધો}
+
+ગણ પરનો તાદાત્મ્ય સંબંધ સ્વવાચક, સંમિત અને પરંપરિત છે.
+આ ત્રણેય ગુણધર્મો ધરાવતા સંબંધો $R$ ઘણા સામાન્ય છે.
+
+\begin{defn}[સામ્ય સંબંધ]
+સ્વવાચક, સંમિત અને પરંપરિત એવા સંબંધ $R \subseteq A^2$ને
+\emph{સામ્ય સંબંધ} કહે છે. $A$ના !!^{element}s $x$ અને $y$
+એ \emph{$R$-સામ્ય} ધરાવે છે એમ કહેવાય જો $Rxy$.
+\end{defn}
+
+સામ્ય સંબંધોથી \emph{સામ્ય વર્ગ}નો ખ્યાલ મળે છે.
+સામ્ય સંબંધ પ્રદેશને જુદા જુદા વર્ગોમાં “વહેંચે છે”.
+દરેક વર્ગની બધી વસ્તુઓ એકબીજા સાથે સંબંધ ધરાવે છે;
+અને જુદા વર્ગોની કોઈ વસ્તુઓ એકબીજા સાથે સંબંધ ધરાવતી નથી.
+ક્યારેક આ વર્ગોની જ \emph{સીધી} વાત કરવી ઉપયોગી બને છે.
+તે માટે આપણે એક વ્યાખ્યા રજૂ કરીએ:
+
+\begin{defn}\ollabel{def:equivalenceclass}
+ધારો કે $R \subseteq A^2$ સામ્ય સંબંધ છે. દરેક $x \in A$
+માટે, $A$માં $x$નો \emph{સામ્ય વર્ગ} એ ગણ
+$\equivrep{x}{R} = \Setabs{y \in A}{Rxy}$ છે.
+$R$ અનુસાર $A$નો \emph{ભાગફળ ગણ} એ
+$\equivclass{A}{R} = \Setabs{\equivrep{x}{R}}{x \in A}$ છે,
+એટલે કે આ સામ્ય વર્ગોનો ગણ.
+\end{defn}
+
+સામ્ય વર્ગો ખરેખર $A$નું વર્ગ વિભાજન કરે છે તે સાબિત કરીને,
+હવે પછીનું પરિણામ સામ્ય વર્ગની વ્યાખ્યાને સમર્થન આપે છે:
+
+\begin{prop}
+જો $R \subseteq A^2$ સામ્ય સંબંધ હોય, તો $Rxy$ હોય
+તો અને તો જ $\equivrep{x}{R} = \equivrep{y}{R}$.
+\end{prop}
+
+\begin{proof}
+ડાબેથી જમણી દિશા માટે, ધારો કે $Rxy$, અને
+$z \in \equivrep{x}{R}$ લો. તો વ્યાખ્યા પ્રમાણે $Rxz$.
+$R$ સામ્ય સંબંધ હોવાથી, $Ryz$. (વિગતે કહીએ તો:
+$Rxy$ અને $R$ સંમિત હોવાથી $Ryx$ મળે છે, અને
+$Rxz$ અને $R$ પરંપરિત હોવાથી $Ryz$ મળે છે.)
+તેથી $z \in \equivrep{y}{R}$. આથી સામાન્ય રીતે
+$\equivrep{x}{R} \subseteq \equivrep{y}{R}$.
+પણ બરાબર એ જ રીતે,
+$\equivrep{y}{R} \subseteq \equivrep{x}{R}$.
+તેથી ઘટકો દ્વારા નિર્ધારિત સમાનતાના સિદ્ધાંતથી
+$\equivrep{x}{R} = \equivrep{y}{R}$.
+
+જમણેથી ડાબી દિશા માટે, ધારો કે
+$\equivrep{x}{R} = \equivrep{y}{R}$.
+$R$ સ્વવાચક હોવાથી $Ryy$, તેથી $y \in \equivrep{y}{R}$.
+આમ $\equivrep{x}{R} = \equivrep{y}{R}$ એવી ધારણાથી
+$y \in \equivrep{x}{R}$ પણ મળે છે. તેથી $Rxy$.
+\end{proof}
+
+\begin{ex}
+મોડ્યુલો અંકગણિતમાંથી સામ્ય સંબંધોનો સુંદર દાખલો મળે છે.
+કોઈ પણ $a$, $b$ અને $n \in \PosInt$ માટે,
+$a \equiv_n b$ એમ કહીએ જો અને ફક્ત જો $a$ને $n$ વડે
+ભાગતાં જે શેષ મળે તે જ શેષ $b$ને $n$ વડે ભાગતાં મળે.
+(થોડું વધુ સાંકેતિક રીતે: $a \equiv_n b$ તો અને તો જ,
+કોઈક $k \in \Int$ માટે, $a - b = kn$.)
+હવે, કોઈ પણ $n$ માટે, $\equiv_n$ સામ્ય સંબંધ છે.
+અને $\equiv_n$થી બરાબર $n$ જુદા સામ્ય વર્ગો મળે છે;
+એટલે કે, $\equivclass{\Nat}{\equiv_n}$માં $n$ !!{element}s છે.
+આ વર્ગો છે: $n$ વડે નિઃશેષ ભાગી શકાય તેવી સંખ્યાઓનો ગણ,
+એટલે કે $\equivrep{0}{\equiv_n}$; $n$ વડે ભાગતાં
+શેષ $1$ મળે તેવી સંખ્યાઓનો ગણ, એટલે કે
+$\equivrep{1}{\equiv_n}$; \ldots; અને $n$ વડે ભાગતાં
+શેષ $n-1$ મળે તેવી સંખ્યાઓનો ગણ, એટલે કે
+$\equivrep{n-1}{\equiv_n}$.
+\end{ex}
+
+\begin{prob}
+દરેક $n \in \PosInt$ માટે $\equiv_n$ સામ્ય સંબંધ છે અને
+$\equivclass{\Nat}{\equiv_n}$માં બરાબર $n$ સભ્યો છે તે દર્શાવો.
+\end{prob}
+
+\end{document}

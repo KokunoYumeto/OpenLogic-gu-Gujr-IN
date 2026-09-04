@@ -1,7 +1,10 @@
-param([int]$TimeoutMs = 1000)
+param([int]$TimeoutMs = 1000, [ValidateSet('sets','foundations')][string]$Edition = 'sets')
 $ErrorActionPreference = 'Stop'
 $GuRepo = 'C:\interlanguage-production\openlogic-gu-Gujr-IN\repo'
 $GuState = 'C:\interlanguage-task-state\openlogic-gu-Gujr-IN'
+$GuJob = "gu-$Edition"
+$GuReceiptName = if ($Edition -eq 'sets') { 'BUILD_RECEIPT.json' } else { 'BUILD_RECEIPT_002.json' }
+$GuLogPrefix = if ($Edition -eq 'sets') { 'pass' } else { 'foundations-pass' }
 $GuMutex = [System.Threading.Mutex]::new($false, 'Global\InterlanguageTeXSlotV1')
 $GuAcquired = $false
 $GuAbandoned = $false
@@ -22,12 +25,12 @@ try {
   $env:FORCE_SOURCE_DATE='1'
   $env:MIKTEX_ENABLE_INSTALLER='0'
   for ($GuPass=1; $GuPass -le 3; $GuPass++) {
-   $GuOut=Join-Path $GuRepo "build\pass-$GuPass.stdout.log"
-   $GuErr=Join-Path $GuRepo "build\pass-$GuPass.stderr.log"
+   $GuOut=Join-Path $GuRepo "build\$GuLogPrefix-$GuPass.stdout.log"
+   $GuErr=Join-Path $GuRepo "build\$GuLogPrefix-$GuPass.stderr.log"
    $GuStart=[DateTime]::UtcNow
    $GuInfo=[System.Diagnostics.ProcessStartInfo]::new()
    $GuInfo.FileName='lualatex.exe'
-   $GuInfo.Arguments='--disable-installer --no-shell-escape --interaction=nonstopmode --halt-on-error --output-directory=build gu-sets.tex'
+   $GuInfo.Arguments="--disable-installer --no-shell-escape --interaction=nonstopmode --halt-on-error --output-directory=build $GuJob.tex"
    $GuInfo.WorkingDirectory=$GuRepo
    $GuInfo.UseShellExecute=$false
    $GuInfo.CreateNoWindow=$true
@@ -50,7 +53,7 @@ try {
     $GuStderr=$GuStderrTask.GetAwaiter().GetResult().Replace($env:USERPROFILE,'{USERPROFILE}').Replace($env:USERPROFILE.Replace('\','/'),'{USERPROFILE}')
     $GuStdout | Set-Content -LiteralPath $GuOut -Encoding utf8
     $GuStderr | Set-Content -LiteralPath $GuErr -Encoding utf8
-    $GuLogPath=Join-Path $GuRepo 'build\gu-sets.log'
+    $GuLogPath=Join-Path $GuRepo "build\$GuJob.log"
     if (Test-Path -LiteralPath $GuLogPath) {
      $GuSanitized=(Get-Content -LiteralPath $GuLogPath -Raw).Replace($env:USERPROFILE,'{USERPROFILE}').Replace($env:USERPROFILE.Replace('\','/'),'{USERPROFILE}')
      $GuSanitized | Set-Content -LiteralPath $GuLogPath -Encoding utf8
@@ -61,9 +64,9 @@ try {
     if (-not $GuProcess.HasExited) { $GuProcess.Kill($true); $GuProcess.WaitForExit() }
     $GuProcess.Dispose()
    }
-   $GuLog=Get-Content -LiteralPath (Join-Path $GuRepo 'build\gu-sets.log') -Raw
+   $GuLog=Get-Content -LiteralPath (Join-Path $GuRepo "build\$GuJob.log") -Raw
    if ($GuLog -match 'Missing character:|^!|Emergency stop|Fatal error') { throw 'Deterministic TeX log defect; inspect own build log.' }
-   $GuHash=(Get-FileHash -LiteralPath (Join-Path $GuRepo 'build\gu-sets.pdf') -Algorithm SHA256).Hash.ToLower()
+   $GuHash=(Get-FileHash -LiteralPath (Join-Path $GuRepo "build\$GuJob.pdf") -Algorithm SHA256).Hash.ToLower()
    $GuReceipt.passes[-1].pdf_sha256=$GuHash
   }
   $GuReceipt.replay_equal=($GuReceipt.passes[1].pdf_sha256 -eq $GuReceipt.passes[2].pdf_sha256)
@@ -75,7 +78,7 @@ try {
  $GuReceipt.error=$_.Exception.Message
 } finally {
  $GuReceipt.ended_utc=[DateTime]::UtcNow.ToString('o')
- $GuReceipt | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $GuState 'BUILD_RECEIPT.json') -Encoding utf8
+ $GuReceipt | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $GuState $GuReceiptName) -Encoding utf8
  if ($GuAcquired) { $GuMutex.ReleaseMutex() }
  $GuMutex.Dispose()
 }

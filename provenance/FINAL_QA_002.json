@@ -1,18 +1,5 @@
 {
-  "schema": "openlogic-gu-qa/1",
-  "checkpoint_utc": "2026-09-04T15:59:49.717102+00:00",
-  "source_units_verified": 722,
-  "translated_units": 16,
-  "total_units": 722,
-  "aligned_linguistic_blocks": 190,
-  "status": "sets_relations_release_ready; complete_corpus_in_progress",
-  "math_spans_verified": 844,
-  "all_identifier_reference_environment_checks": true,
-  "semantic_review": {
-    "method": "same-agent comparison",
-    "reverse_paraphrase_samples": 22,
-    "independent_native_certification": false
-  },
+  "schema": "openlogic-gu-final-qa/2",
   "pdf": {
     "bytes": 266608,
     "sha256": "c4235f6bdc210ca4e0763a4c6d4c067cad755076984dc2b040b333b7c39b4698",
@@ -117,13 +104,14 @@
     "images": 6,
     "browser_inspection": "Actually viewed graph and tree sections; Gujarati glyphs and source incidence correct"
   },
+  "coverage": {
+    "total_source_units": 722,
+    "translated_units": 16,
+    "public_verified_units": 7
+  },
+  "semantic_samples": 13,
   "full_corpus_complete": false,
-  "batch_002": {
-    "draft_units": 9,
-    "linguistic_blocks": 104,
-    "math_spans": 517,
-    "structural_parity": "passed",
-    "build": "passed_reproducible_visual_checked",
-    "semantic_samples": 13
-  }
+  "status": "sets_relations_release_ready; full_corpus_in_progress",
+  "semantic_samples_total": 22,
+  "source_math_spans_verified": 844
 }

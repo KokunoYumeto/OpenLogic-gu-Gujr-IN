@@ -1,0 +1,184 @@
+{
+  "schema": "openlogic-gu-laptop-reuse/1",
+  "checked_utc": "2026-09-04T15:49:58.547141+00:00",
+  "index_sha256": "1728c3994660375183084e40ae09ed84e141ad7e4685cab2cf8c4e16731d93e1",
+  "entry_points": [
+    {
+      "path": "canon/reference-lock.json",
+      "bytes": 3989,
+      "sha256": "0dc51b3a33df20f2763bba87ce857796a8ee0200b47b93686431dea7e16ccf57",
+      "status": "fresh_hash_match"
+    },
+    {
+      "path": "canon/consultation-log.md",
+      "bytes": 10601,
+      "sha256": "8508385d0ed7866b10e8125f6df58842cb22c1e68b50e3f465e521034e2ff371",
+      "status": "fresh_hash_match"
+    },
+    {
+      "path": "canon/examples.csv",
+      "bytes": 1548,
+      "sha256": "22c11de8777570ec5d3d7b3d4271fac943663f6a2754a859d467507342dfb949",
+      "status": "fresh_hash_match"
+    },
+    {
+      "path": "canon/targeted-examples.md",
+      "bytes": 12020,
+      "sha256": "7e2ced0d0a6463f5289904a65262ab71086d74471c253528007008b6e88e16b6",
+      "status": "fresh_hash_match"
+    },
+    {
+      "path": "terminology.csv",
+      "bytes": 7083,
+      "sha256": "69697a78fc51144d55e19d820a2a5d1ce861d3c80db2b3c8fd0caa76b3be97f3",
+      "status": "fresh_hash_match"
+    },
+    {
+      "path": "GOAL.md",
+      "bytes": 4734,
+      "sha256": "2d91a00e2335bfebfbc29caff0bbbacb75cc35b6cc0403161a9bad898f0868df",
+      "status": "fresh_hash_match"
+    }
+  ],
+  "originals": [
+    {
+      "path": "downloads/gu-Gujr-IN/gujarati-canon/std3-week2.pdf",
+      "expected_sha256": "d5ca6b326ed6d57cbb6dac077a64b06181bf914adab8dc93ebe70f2c07bb10bd",
+      "url": "https://ssagujarat.org/StudyFromHome/STD%203-Week2.pdf",
+      "exists": true,
+      "bytes": 804401,
+      "sha256": "d5ca6b326ed6d57cbb6dac077a64b06181bf914adab8dc93ebe70f2c07bb10bd",
+      "hash_match": true
+    },
+    {
+      "path": "downloads/gu-Gujr-IN/gujarati-canon/std5-week1.pdf",
+      "expected_sha256": "335bbb4e14b1c3e931ef16048a0f526fd0424a388ab36c624c14bbc48887aaeb",
+      "url": "https://ssagujarat.org/StudyFromHome/Std%205-Week1.pdf",
+      "exists": true,
+      "bytes": 838457,
+      "sha256": "335bbb4e14b1c3e931ef16048a0f526fd0424a388ab36c624c14bbc48887aaeb",
+      "hash_match": true
+    },
+    {
+      "path": "downloads/gu-Gujr-IN/gujarati-canon/std6-week1.pdf",
+      "expected_sha256": "0512ebe47a04aa7ebb06d56c8193b394eb6741ec0df3558d56e38f42d4af9970",
+      "url": "https://ssagujarat.org/StudyFromHome/Std%206-Week1.pdf",
+      "exists": true,
+      "bytes": 1417536,
+      "sha256": "0512ebe47a04aa7ebb06d56c8193b394eb6741ec0df3558d56e38f42d4af9970",
+      "hash_match": true
+    },
+    {
+      "path": "downloads/gu-Gujr-IN/gujarati-canon/std6-week2.pdf",
+      "expected_sha256": "2553e4b975130185bcfc6c76a830524f1129fda3fdbd3ae4250e34bd9519eba9",
+      "url": "https://www.ssagujarat.org/StudyFromHome/STD%206-Week2.pdf",
+      "exists": true,
+      "bytes": 723203,
+      "sha256": "2553e4b975130185bcfc6c76a830524f1129fda3fdbd3ae4250e34bd9519eba9",
+      "hash_match": true
+    }
+  ],
+  "font": {
+    "path": "assets/NotoSansGujarati.ttf",
+    "bytes": 672904,
+    "sha256": "9901d8552f1dd5d2c50dbd4caa6f6e174e74e8264f06594ab259ae6e7b1ac428",
+    "same_as_current_edition": true
+  },
+  "visual_consultation": "Freshly rendered and personally read five original PDF pages on 2026-09-04; prior consultation/QA not inherited.",
+  "historical_claim_policy": "Historical consultations and QA are attributed to old owners, not inherited as personal reads or current PASS.",
+  "reconciliation": [
+    {
+      "evidence": "SSA Std5 Week1 physical13/printed29; Std6 Week1 physical12,14,15,16/printed30,32,33,34",
+      "decision": "reused",
+      "rationale": "Short Gujarati exercise instructions, numerical order and digit/place-value distinction reinforce instructional register. No specialized relation/tree/logic attestation claimed."
+    },
+    {
+      "evidence": "Recovered NotoSansGujarati.ttf",
+      "decision": "already_duplicated",
+      "rationale": "Exact SHA matches current pinned font; keep current pinned provenance and OFL; no rebuild of accepted first release."
+    },
+    {
+      "evidence": "Recovered terminology T04 natural number convention",
+      "decision": "source_specific_not_imported",
+      "rationale": "Old OpenStax assignment excludes zero; current frozen OpenLogic explicitly includes zero in Nat. Retain OpenLogic convention."
+    },
+    {
+      "evidence": "Recovered terminology T05 whole number versus current GU-T013 perfect number",
+      "decision": "lexical_conflict_recorded",
+      "rationale": "Old ledger uses પૂર્ણ સંખ્યા for whole number. Current perfect-number label is provisional and explicitly defined by proper-divisor sum. Do not infer matching technical senses from matching words or silently change theorem; future specialized lexical adjudication remains open."
+    },
+    {
+      "evidence": "Recovered targeted-examples.md Khan links and historical consultation-log.md",
+      "decision": "locator_and_method_reused",
+      "rationale": "Reuses distinction between full transcript, heading-only and failed open, and operator-checking against rendered originals. Old observations remain attributed; no claim of fresh direct Khan transcript consultation."
+    },
+    {
+      "evidence": "Old QA and answer-count records",
+      "decision": "not_imported",
+      "rationale": "Different books, packages, source inputs and reviewers; not evidence of current OpenLogic coverage or acceptance."
+    },
+    {
+      "evidence": "Recovered GOAL.md and full methodology report",
+      "decision": "local_needs_context_reused",
+      "rationale": "Gujarati Grades 2–6 diagnostic/remediation is a separate learner-support rationale; preserve full advanced OpenLogic scope. Existing book owners retain their texts, answers and adaptations. Historical rank and permission instructions do not replace current commission."
+    },
+    {
+      "evidence": "Std3 Week2 and Std6 Week2 PDFs",
+      "decision": "integrity_checked_only",
+      "rationale": "Exact originals verified against lock; no pages consulted, so not entered as usage evidence."
+    },
+    {
+      "evidence": "Current GSSTB Grade11/12 relation/set pages and Vishwakosh philosophical prose",
+      "decision": "retained_as_more_specific",
+      "rationale": "Current sources provide direct set/relation/equivalence and predicate/name senses absent from recovered initial numeracy corpus. No current translation discarded."
+    }
+  ],
+  "fresh_passages": [
+    {
+      "passage_id": "GU-P027",
+      "source_id": "GU-SSA-STD5-WEEK1",
+      "locator": {
+        "pdf_page_one_based": 13,
+        "printed_page": "29"
+      },
+      "render_sha256": "c23c361b013166eae99248a1b037f10198e6d7d66ae139832e6fed468c05328a"
+    },
+    {
+      "passage_id": "GU-P028",
+      "source_id": "GU-SSA-STD6-WEEK1",
+      "locator": {
+        "pdf_page_one_based": 12,
+        "printed_page": "30"
+      },
+      "render_sha256": "bc417f9eae2e7075d05e718e25ae9de078140399b73e69327259ccfdff3cff6f"
+    },
+    {
+      "passage_id": "GU-P029",
+      "source_id": "GU-SSA-STD6-WEEK1",
+      "locator": {
+        "pdf_page_one_based": 14,
+        "printed_page": "32"
+      },
+      "render_sha256": "c39690bb2a5382cb7dd7b0a3f91cef353f5d5548f1cfb2e3c386720d61ce5b67"
+    },
+    {
+      "passage_id": "GU-P030",
+      "source_id": "GU-SSA-STD6-WEEK1",
+      "locator": {
+        "pdf_page_one_based": 15,
+        "printed_page": "33"
+      },
+      "render_sha256": "80ad5012d3155c9bf28079a3d48bda5776ac2ec11c93dfdfb998d65757a2cf56"
+    },
+    {
+      "passage_id": "GU-P031",
+      "source_id": "GU-SSA-STD6-WEEK1",
+      "locator": {
+        "pdf_page_one_based": 16,
+        "printed_page": "34"
+      },
+      "render_sha256": "6544103371bdd355ab540fc7617d27d06401d9063c5073e987a8ea385685dedf"
+    }
+  ],
+  "production_review_use": "Fresh supplementary review of Relations numerical-comparison and exercise wording, after drafting. Earlier segment ledgers remain truthful about chronology."
+}

@@ -1,0 +1,94 @@
+{
+  "date_utc": "2026-09-04T15:21:10.966885+00:00",
+  "boundary": "OLP-0011–OLP-0019 complete Relations chapter",
+  "units": [
+    {
+      "unit_id": "OLP-0011",
+      "source_sha256": "9720780fcf56a05f8f18c26234d7bebc24024116bb6549a151e0905845b41ef5",
+      "target_sha256": "f992858641a0783491b622b5f69eb3b78d7baf310687139a6edf6ec32f1cce5b",
+      "source_bytes": 410,
+      "target_bytes": 419,
+      "aligned_blocks": 14,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0012",
+      "source_sha256": "2a67c6fb4846155e8e7cd8172fd1fb8214db96d508ceae5d70dec95d5dfcc1ff",
+      "target_sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495",
+      "source_bytes": 5251,
+      "target_bytes": 9236,
+      "aligned_blocks": 13,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0013",
+      "source_sha256": "75047e8806a58c0a0c07ae2e55554d9ad2affb9d5297b1d5585ebe0b2f3de651",
+      "target_sha256": "65505e647ccb1492de0bc1d7c60bae8b1cc9d986221117daf91f3ab0d1c703ee",
+      "source_bytes": 3989,
+      "target_bytes": 8000,
+      "aligned_blocks": 9,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0014",
+      "source_sha256": "006f2ea0d65e5069ef1509de94dd35a477ea835c19962da22f4bef48caffbee7",
+      "target_sha256": "c738b8f1648d9f4aa32cb4efcad04e3ec3fbf2251c735abf508754abab82fb84",
+      "source_bytes": 3081,
+      "target_bytes": 5670,
+      "aligned_blocks": 16,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0015",
+      "source_sha256": "d9531aa5cd774c12090fbd5c9fb289181e93cf7e9a96ecf7d4fd3fcdf5d250c7",
+      "target_sha256": "1ecb10dd8641f2237298cefbafa8100c07f2f8f06d558f538e5b6d32de1343b3",
+      "source_bytes": 3387,
+      "target_bytes": 5531,
+      "aligned_blocks": 16,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0016",
+      "source_sha256": "79593789022fef31c0609b9c94856e2aef5cd5e88e92864e782bb6e6e5f4bce4",
+      "target_sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c",
+      "source_bytes": 6308,
+      "target_bytes": 10935,
+      "aligned_blocks": 30,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0017",
+      "source_sha256": "dec624ef4e71903b72a9f0b5fcc6a15a2e0f897f9ebe881dd9c9e21333aeee75",
+      "target_sha256": "290b9c1f9ecd86be9b20ce20bd0160eba67008e083370b8c159e3fb24c2cd641",
+      "source_bytes": 2939,
+      "target_bytes": 4858,
+      "aligned_blocks": 10,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0018",
+      "source_sha256": "a158f1ce5b84c8c3f681dd6347b22491d1b67a91e110138b9cb6833e3d9dc23c",
+      "target_sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b",
+      "source_bytes": 5102,
+      "target_bytes": 9388,
+      "aligned_blocks": 21,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    },
+    {
+      "unit_id": "OLP-0019",
+      "source_sha256": "73c8bdb301aca93f687a06a045533d75d30088ae711f5e1dfd577b7864f8d3d5",
+      "target_sha256": "8baad1e3ebf355a5c5195bab8f6a9060126934153bd3830b6d68fafa4306831b",
+      "source_bytes": 2163,
+      "target_bytes": 3525,
+      "aligned_blocks": 21,
+      "status": "translated_draft; structural parity passed; render QA pending"
+    }
+  ],
+  "translated_linguistic_blocks": 104,
+  "known_source_issues": [
+    "OLP-0012 uses I for natural-number diagonal without an explicit I assignment; retained.",
+    "OLP-0018 branch definition uses undefined X rather than A; retained with separate editorial notice.",
+    "OLP-0018 says every prefix-closed subset is a subtree although empty subset fails its rooted-tree definition; source quantifier retained.",
+    "OLP-0019 R+ notation differs from reflexive closure notation R+ in OLP-0016; local definitions retained."
+  ]
+}
