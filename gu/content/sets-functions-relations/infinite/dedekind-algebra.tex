@@ -1,0 +1,132 @@
+% Part: sets-functions-relations
+% Chapter: infinite
+% Section: dedekind
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{dedekind}
+\olsection{ડેડેકિન્ડ બીજગણિતો}
+
+આપણે પ્રાકૃતિક સંખ્યાઓ માત્ર અનંત હોય એટલું જ નથી માગતા; આપણે એમ પણ
+માગીએ છીએ કે તેમને અમુક (બૈજિક) ગુણધર્મો હોય: સરવાળા, ગુણાકાર વગેરે
+હેઠળ તેમનો વ્યવહાર સુસંગત હોવો જોઈએ.
+
+ડેડેકિન્ડનો વિચાર \emph{અનુગામી વિધેય}ના ખ્યાલને મૂળભૂત માનવાનો અને
+પછી નીચેના ગુણધર્મો ધરાવતી સંખ્યાઓ તરીકે તેમનું લક્ષણ આપવાનો હતો:
+\begin{enumerate}
+	\item એવી સંખ્યા $0$ છે જે કોઈ પણ સંખ્યાની અનુગામી નથી
+	\\અર્થાત્, $0 \notin \ran{s}$
+	\\અર્થાત્, $\forall x\ s(x) \neq 0$
+	\item ભિન્ન સંખ્યાઓના અનુગામીઓ ભિન્ન હોય છે
+	\\અર્થાત્, $s$ એ !!a{injection} છે
+	\\અર્થાત્, $\forall x \forall y (s(x) = s(y) \lif x = y)$
+	\item\ollabel{repeatedapplication} દરેક સંખ્યા $0$ પર અનુગામી
+	વિધેય વારંવાર લગાડવાથી મળે છે.
+\end{enumerate}
+પહેલી બે શરતોને પ્રથમ-ક્રમ તર્કશાસ્ત્રથી સહેલાઈથી સંભાળી શકાય છે
+(ઉપર જુઓ). પરંતુ માત્ર પ્રથમ-ક્રમ તર્કશાસ્ત્રથી
+\olref{repeatedapplication}ને સંભાળી શકાતી નથી. ડેડેકિન્ડની સફળતા
+શરત \olref{repeatedapplication}ને ગણસૈદ્ધાંતિક રીતે આ પ્રમાણે ફરી
+ઘડવામાં હતી:
+\begin{enumerate}
+	\item[3$'$.] પ્રાકૃતિક સંખ્યાઓ એવો નાનામાં નાનો ગણ છે જે
+	\emph{અનુગામી વિધેય હેઠળ સંવૃત} છે: એટલે કે, ગણના કોઈ પણ
+	!!{element} પર $s$ લગાડીએ તો ગણનો બીજો !!{element} મળે છે.
+\end{enumerate}
+પરંતુ આ વાત આપણે ધીમે ધીમે પૂરેપૂરી સ્પષ્ટ કરવી પડશે.
+
+\begin{defn}\ollabel{Closure}
+	દરેક વિધેય $f \colon A \to A$ માટે ગણ $X \subseteq A$ એ
+	$f$-\emph{સંવૃત} છે {iff} $(\forall x \in X)f(x) \in X$.
+	હવે દરેક $o \in A$ માટે વ્યાખ્યા કરીએ:
+	$$\closureofunder{f}{o} = \bigcap\Setabs{X}{o \in X\text{ અને }X
+\text{ એ $f$-સંવૃત છે}}$$
+\end{defn}
+\sourcecorrection{OLINF-001}{મૂળની \texttt{dedekind-algebra.tex},
+પંક્તિઓ 40--64માં સંવરણની વ્યાખ્યા કોઈ પણ $f$ અને $o$ માટે અપાઈ
+છે, પછીના લેમામાં $A$ને બાંધ્યા વિના $o\in A$ લખાયું છે, અને
+સાબિતીમાં $\ran{f}\cup\{o\}$ એ $f$-સંવૃત હોવાનો ઉપયોગ થાય છે.
+આ દલીલને જરૂરી અને પછીના બધા ઉપયોગો સાથે સુસંગત એવી ધારણા
+$f\colon A\to A$, $X\subseteq A$ અને $o\in A$ અહીં સ્પષ્ટ કરી છે.}
+
+આમ $\closureofunder{f}{o}$ એ એવા બધા $f$-સંવૃત ગણોનો છેદ છે
+જેમનો !!a{element}~$o$ છે. તેથી સહજ રીતે,
+$\closureofunder{f}{o}$ એ !!a{element} તરીકે $o$ ધરાવતો
+\emph{નાનામાં નાનો} $f$-સંવૃત ગણ છે. આગળનું પરિણામ આ સહજ વિચારને
+ચોક્કસ બનાવે છે;
+\begin{lem}\ollabel{closureproperties}
+	દરેક વિધેય $f \colon A \to A$ અને દરેક $o \in A$ માટે:
+	\begin{enumerate}
+		\item\ollabel{closurehaselem} $o \in \closureofunder{f}{o}$; અને
+		\item\ollabel{closureclosed} $\closureofunder{f}{o}$ એ $f$-સંવૃત છે; અને
+		\item\ollabel{closuresmallest} જો $X$ એ $f$-સંવૃત હોય અને $o \in
+		X$, તો $\closureofunder{f}{o} \subseteq X$.
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+નોંધો કે !!a{element} તરીકે $o$ ધરાવતો ઓછામાં ઓછો એક $f$-સંવૃત ગણ
+છે, એટલે કે $\ran{f}\cup \{o\}$. તેથી આવા \emph{બધા} ગણોનો છેદ
+$\closureofunder{f}{o}$ અસ્તિત્વ ધરાવે છે. હવે આપણે
+\olref{closurehaselem}--\olref{closuresmallest} તપાસવાં છે.
+
+\olref{closurehaselem} અંગે: $o \in \closureofunder{f}{o}$, કારણ કે
+તે એવા ગણોનો છેદ છે જેમના દરેકનો !!a{element}~$o$ છે.
+
+\olref{closureclosed} અંગે: ધારો કે $x \in \closureofunder{f}{o}$.
+તેથી જો $o \in X$ અને $X$ એ $f$-સંવૃત હોય, તો $x \in X$; અને
+$X$ એ $f$-સંવૃત હોવાથી હવે $f(x) \in X$. તેથી
+$f(x) \in \closureofunder{f}{o}$.
+
+\olref{closuresmallest} અંગે: સામાન્ય રીતે, જો $X \in C$ હોય, તો
+$\bigcap C \subseteq X$.
+\end{proof}
+
+આનો ઉપયોગ કરીને આપણે કહી શકીએ:
+
+\begin{defn}
+\emph{ડેડેકિન્ડ બીજગણિત} એટલે ગણ $A$, વિધેય $f \colon A \to A$
+અને કોઈ $o \in A$ એવાં કે:
+	\begin{enumerate}
+		\item \ollabel{ded:proper} $o \notin \ran{f}$
+		\item \ollabel{ded:injection} $f$ એ !!a{injection} છે
+		\item \ollabel{ded:closure} $A = \closureofunder{f}{o}$
+	\end{enumerate}
+\end{defn}
+
+$A = \closureofunder{f}{o}$ હોવાથી આપણું પહેલાનું પરિણામ જણાવે છે કે
+$A$ એ !!a{element} તરીકે $o$ ધરાવતો નાનામાં નાનો $f$-સંવૃત ગણ છે.
+ડેડેકિન્ડ બીજગણિત સ્પષ્ટપણે ડેડેકિન્ડ-અનંત છે; વ્યાખ્યાની કલમો
+\olref{ded:proper} અને \olref{ded:injection} જ જુઓ. પરંતુ વધુ રસપ્રદ
+હકીકત એ છે કે કોઈ પણ ડેડેકિન્ડ-અનંત ગણને ડેડેકિન્ડ બીજગણિતમાં ફેરવી
+શકાય છે.
+
+\begin{thm}\ollabel{thm:DedekindInfiniteAlgebra}
+જો કોઈ ડેડેકિન્ડ-અનંત ગણ હોય, તો કોઈ ડેડેકિન્ડ બીજગણિત હોય છે.
+\end{thm}
+
+\begin{proof}
+ધારો કે $D$ ડેડેકિન્ડ-અનંત છે. તેથી એક-એક વિધેય $g \colon D \to
+D$ અને ઘટક $o \in D \setminus \ran{g}$ છે. હવે $A =
+\closureofunder{g}{o}$ લો; \olref{closureproperties} મુજબ $A$
+અસ્તિત્વ ધરાવે છે અને $o \in A$. $f = \funrestrictionto{g}{A}$ લો.
+$A, f, o$ મળીને ડેડેકિન્ડ બીજગણિત રચે છે તે આપણે બતાવીશું.
+
+\olref{ded:proper} અંગે: $o \notin \ran{g}$ અને $\ran{f}
+\subseteq \ran{g}$ હોવાથી $o\notin \ran{f}$.
+
+\olref{ded:injection} અંગે: $g$ એ $D$ પર એક-એક વિધેય છે; તેથી
+$f \subseteq g$ પણ એક-એક વિધેય જ હોય.
+
+\olref{ded:closure} અંગે: \olref{closureproperties} મુજબ $A$ એ
+$g$-સંવૃત છે; તેથી ખાસ કરીને $A$ એ $f$-સંવૃત છે. આમ
+$\closureofunder{f}{o} \subseteq A$ એ \olref{closureproperties}થી મળે
+છે. વળી $\closureofunder{f}{o}$ એ $f$-સંવૃત છે અને
+$f = \funrestrictionto{g}{A}$ હોવાથી $\closureofunder{f}{o}$ એ
+$g$-સંવૃત છે. તેથી \olref{closureproperties} મુજબ
+$A \subseteq \closureofunder{f}{o}$.
+\end{proof}
+
+\end{document}

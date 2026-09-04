@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-04T20:53:34.073909+00:00. This is a **complete decision log for the current 45/722-unit draft**, while the translation corpus itself remains partial. Public artifact verification currently covers 16/722 units. It contains all 81 terminology decisions from the durable ledger and all 21 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-04T21:40:52.462038+00:00. This is a **complete decision log for the current 51/722-unit draft**, while the translation corpus itself remains partial. Public artifact verification currently covers 45/722 units. It contains all 88 terminology decisions from the durable ledger and all 23 source corrections identified so far. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -89,7 +89,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:8`.
-- **English use:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:82` (OLP-0010, “intersection”)
+- **English use:** `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:48` (OLP-0051, “intersection”)
 - **Gujarati use:** `gu/content/sets-functions-relations/sets/russells-paradox.tex:86` (OLP-0010, “છેદગણ”)
 - **Authorities actually checked:** `GU-P005` (GU-GSSTB-MATH11, {"pdf_page_one_based": 28, "printed_page": "16"}); `GU-P006` (GU-GSSTB-MATH11, {"pdf_page_one_based": 29, "printed_page": "17"})
 - **Chosen sense and rationale:** Members in both sets.
@@ -210,7 +210,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:19`.
-- **English use:** `upstream/content/sets-functions-relations/relations/reflections.tex:45` (OLP-0013, “paradox”)
+- **English use:** `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:111` (OLP-0053, “paradox”)
 - **Gujarati use:** `gu/content/sets-functions-relations/arithmetization/cauchy.tex:224` (OLP-0048, “વિરોધાભાસ”)
 - **Authorities actually checked:** `GU-P012` (GU-VK-MATH, {"line_one_based": 486, "utf8_start": 192646, "utf8_end": 193794, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"})
 - **Chosen sense and rationale:** Contradiction is પરસ્પરવિરોધ; Russell language usage checked.
@@ -453,7 +453,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:41`.
 - **English use:** `upstream/content/sets-functions-relations/relations/trees.tex:126` (OLP-0018, “computability”); `upstream/content/sets-functions-relations/functions/function-basics.tex:85` (OLP-0021, “formula”); `upstream/content/sets-functions-relations/relations/trees.tex:15` (OLP-0018, “derivation”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:174` (OLP-0048, “completeness”)
-- **Gujarati use:** `gu/content/sets-functions-relations/relations/trees.tex:138` (OLP-0018, “સંગણનીયતા”); `gu/content/sets-functions-relations/arithmetization/checking-details.tex:25` (OLP-0047, “સૂત્ર”); `gu/content/sets-functions-relations/arithmetization/cauchy.tex:173` (OLP-0048, “પૂર્ણતા”)
+- **Gujarati use:** `gu/content/sets-functions-relations/relations/trees.tex:138` (OLP-0018, “સંગણનીયતા”); `gu/content/sets-functions-relations/arithmetization/checking-details.tex:25` (OLP-0047, “સૂત્ર”); `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:54` (OLP-0053, “નિષ્પત્તિ”); `gu/content/sets-functions-relations/arithmetization/cauchy.tex:173` (OLP-0048, “પૂર્ણતા”)
 - **Authorities actually checked:** `GU-P024` (GU-VK-TRUTH, {"line_one_based": 126, "utf8_start": 43654, "utf8_end": 44439, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P026` (GU-VK-TRUTH, {"line_one_based": 152, "utf8_start": 54422, "utf8_end": 55596, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"})
 - **Chosen sense and rationale:** Introductory occurrence in Trees only; logic prose consulted, dedicated technical canon expansion still required.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -475,7 +475,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:43`.
 - **English use:** `upstream/content/sets-functions-relations/functions/composition.tex:54` (OLP-0025, “injective”); `upstream/content/sets-functions-relations/functions/function-kinds.tex:67` (OLP-0022, “injection”)
-- **Gujarati use:** `gu/content/sets-functions-relations/functions/function-kinds.tex:109` (OLP-0022, “એક-એક”)
+- **Gujarati use:** `gu/content/sets-functions-relations/functions/function-kinds.tex:109` (OLP-0022, “એક-એક”); `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:111` (OLP-0051, “એક-એક વિધેય”)
 - **Authorities actually checked:** `GU-P034` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 14, "printed_page": "8"})
 - **Chosen sense and rationale:** Both distinct-input and equal-output definitions actually inspected.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -486,7 +486,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:44`.
 - **English use:** `upstream/content/sets-functions-relations/functions/composition.tex:59` (OLP-0025, “surjective”); `upstream/content/sets-functions-relations/functions/function-kinds.tex:36` (OLP-0022, “surjection”)
-- **Gujarati use:** `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:75` (OLP-0036, “વ્યાપ્ત”); `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:15` (OLP-0038, “વ્યાપ્ત વિધેય”)
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/card-sb.tex:56` (OLP-0054, “વ્યાપ્ત”); `gu/content/sets-functions-relations/infinite/card-sb.tex:56` (OLP-0054, “વ્યાપ્ત વિધેય”)
 - **Authorities actually checked:** `GU-P036` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 16, "printed_page": "10"})
 - **Chosen sense and rationale:** Every codomain element attained; not just each input assigned.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -497,7 +497,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:45`.
 - **English use:** `upstream/content/sets-functions-relations/functions/function-kinds.tex:100` (OLP-0022, “bijective”); `upstream/content/sets-functions-relations/functions/composition.tex:14` (OLP-0025, “bijection”)
-- **Gujarati use:** `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:15` (OLP-0038, “એક-એક વ્યાપ્ત વિધેય”)
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/card-sb.tex:56` (OLP-0054, “એક-એક વ્યાપ્ત વિધેય”)
 - **Authorities actually checked:** `GU-P036` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 16, "printed_page": "10"}); `GU-P044` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 24, "printed_page": "18"})
 - **Chosen sense and rationale:** Conjunction retained; one-to-one correspondence rendered as પરસ્પર એક-એક સંગતતા.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -639,8 +639,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:58`.
-- **English use:** `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:196` (OLP-0048, “recursive definition”); `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:111` (OLP-0009, “induction”); `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:163` (OLP-0047, “initial segment”)
-- **Gujarati use:** `gu/content/sets-functions-relations/sets/pairs-and-products.tex:74` (OLP-0009, “પુનરાવર્તી વ્યાખ્યા”); `gu/content/sets-functions-relations/arithmetization/cuts.tex:27` (OLP-0045, “આરંભખંડ”)
+- **English use:** `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:196` (OLP-0048, “recursive definition”); `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:3` (OLP-0052, “induction”); `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:163` (OLP-0047, “initial segment”)
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:68` (OLP-0052, “પુનરાવર્તી વ્યાખ્યા”); `gu/content/sets-functions-relations/arithmetization/cuts.tex:27` (OLP-0045, “આરંભખંડ”)
 - **Authorities actually checked:** `GU-P041` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 21, "printed_page": "15"}); `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** Proof-language and initial-segment set displayed in native sources; no exact direct technical attestation for these labels claimed.
 - **Alternatives:** અનુમાનપ્રવર્તન — superseded for mathematical induction by directly attested ગાણિતિક અનુમાન; retained only as a reconstructed earlier choice.
@@ -662,7 +662,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:60`.
 - **English use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
-- **Gujarati use:** `gu/content/sets-functions-relations/sets/pairs-and-products.tex:114` (OLP-0009, “ગાણિતિક અનુમાન”)
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:10` (OLP-0052, “ગાણિતિક અનુમાન”)
 - **Authorities actually checked:** `GU-P051` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 98, "printed_page": "88"}); `GU-P052` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 100, "printed_page": "90"}); `GU-P053` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 101, "printed_page": "91"})
 - **Chosen sense and rationale:** Exact textbook chapter title, principle and worked proof inspected. Supersedes provisional induction component of GU-T058; base case and induction step essential.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -739,7 +739,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted_descriptive`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:67`.
 - **English use:** `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:27` (OLP-0036, “no larger than”)
-- **Gujarati use:** `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:26` (OLP-0036, “મોટો નથી”); `gu/content/sets-functions-relations/sets/subsets.tex:13` (OLP-0006, “નાનો”)
+- **Gujarati use:** `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:26` (OLP-0036, “મોટો નથી”); `gu/content/sets-functions-relations/infinite/card-sb.tex:31` (OLP-0054, “નાનો”)
 - **Authorities actually checked:** `GU-P045` (GU-VK-COUNT, {"line_one_based": 25, "last_line_one_based": 29, "utf8_start": 848, "utf8_end": 3636, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P047` (GU-VK-INFINITY, {"line_one_based": 49, "last_line_one_based": 49, "utf8_start": 12140, "utf8_end": 16135, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The formal injection and non-bijection clauses control the two cardinal comparisons. The plain Gujarati comparative phrases preserve the source distinction and avoid introducing an unattested cardinal-order noun.
 - **Alternatives:** ગણાંકમાં ન્યૂન / ચુસ્તપણે ન્યૂન — possible symbolic-register alternatives, but no checked Gujarati authority attested them for cardinal comparison.
@@ -898,6 +898,83 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Chosen sense and rationale:** એકમ ઘટક and વ્યસ્ત ઘટક are directly attested. The operation-specific modifiers distinguish the two inverse axioms.
 - **Alternatives:** યોગાત્મક વ્યસ્ત / ગુણાત્મક વ્યસ્ત / તટસ્થ ઘટક — possible alternatives; the adopted compounds extend directly attested વ્યસ્ત ઘટક and એકમ ઘટક.
 - **Review question:** In Gujarati mathematical-logic prose, does “યોજક વ્યસ્ત / ગુણાકારી વ્યસ્ત / એકમ ઘટક” express “additive inverse / multiplicative inverse / identity element” with the scope stated in this rationale: એકમ ઘટક and વ્યસ્ત ઘટક are directly attested. The operation-specific modifiers distinguish the two inverse axioms. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T082: Dedekind infinite → ડેડેકિન્ડ-અનંત
+
+- **Status and uncertainty:** `adopted_derivation`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
+- **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:82`.
+- **English use:** `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:93` (OLP-0051, “Dedekind infinite”)
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:101` (OLP-0051, “ડેડેકિન્ડ-અનંત”)
+- **Authorities actually checked:** `GU-P048` (GU-VK-INFINITY, {"line_one_based": 57, "last_line_one_based": 80, "utf8_start": 16162, "utf8_end": 20186, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P060` (GU-VK-MATH, {"line_one_based": 375, "last_line_one_based": 375, "utf8_start": 122403, "utf8_end": 124473, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked infinity passage states exactly Dedekind's proper-subset definition of an infinite set. The named compound follows the edition's established Gujarati spelling of Dedekind.
+- **Alternatives:** ડેડેકિન્ડીય અનંત — a possible inflected eponym; the hyphenated form keeps the name and defined property visibly separate.
+- **Review question:** In Gujarati mathematical-logic prose, does “ડેડેકિન્ડ-અનંત” express “Dedekind infinite” with the scope stated in this rationale: The checked infinity passage states exactly Dedekind's proper-subset definition of an infinite set. The named compound follows the edition's established Gujarati spelling of Dedekind. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T083: closure / f-closed → સંવરણ / f-સંવૃત
+
+- **Status and uncertainty:** `adopted_derivation`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
+- **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:83`.
+- **English use:** `upstream/content/sets-functions-relations/infinite/card-sb.tex:25` (OLP-0054, “closure”)
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/card-sb.tex:16` (OLP-0054, “સંવરણ”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked algebra passage directly pairs closure with સંવૃતતા. The adjective f-સંવૃત and the set noun સંવરણ preserve that attested root and the edition's earlier transitive-closure usage.
+- **Alternatives:** બંધતા / f-બંધ — possible literal alternatives, but they risk collision with topological closedness; the checked algebraic source supports સંવૃતતા and સંવરણ.
+- **Review question:** In Gujarati mathematical-logic prose, does “સંવરણ / f-સંવૃત” express “closure / f-closed” with the scope stated in this rationale: The checked algebra passage directly pairs closure with સંવૃતતા. The adjective f-સંવૃત and the set noun સંવરણ preserve that attested root and the edition's earlier transitive-closure usage. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T084: Dedekind algebra → ડેડેકિન્ડ બીજગણિત
+
+- **Status and uncertainty:** `provisional_named_compound`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:84`.
+- **English use:** `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:82` (OLP-0051, “Dedekind algebra”)
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:10` (OLP-0051, “ડેડેકિન્ડ બીજગણિત”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P060` (GU-VK-MATH, {"line_one_based": 375, "last_line_one_based": 375, "utf8_start": 122403, "utf8_end": 124473, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The Gujarati authorities directly support the algebraic-structure register and Dedekind's name, while this exact named structure is a transparent compound not directly attested.
+- **Alternatives:** ડેડેકિન્ડ બૈજિક સંરચના — a descriptive alternative, but the source defines a named algebra and the edition already uses બીજગણિત for algebra.
+- **Review question:** In Gujarati mathematical-logic prose, does “ડેડેકિન્ડ બીજગણિત” express “Dedekind algebra” with the scope stated in this rationale: The Gujarati authorities directly support the algebraic-structure register and Dedekind's name, while this exact named structure is a transparent compound not directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T085: parameter → પ્રાચલ
+
+- **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
+- **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:85`.
+- **English use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:38` (OLP-0052, “પ્રાચલ”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The exact Gujarati scholarly passage explicitly pairs પ્રાચલ with parameter and explains its auxiliary-variable role.
+- **Alternatives:** પારામિતિ — a possible technical alternative; the checked Gujarati encyclopaedic source explicitly pairs parameter with પ્રાચલ.
+- **Review question:** In Gujarati mathematical-logic prose, does “પ્રાચલ” express “parameter” with the scope stated in this rationale: The exact Gujarati scholarly passage explicitly pairs પ્રાચલ with parameter and explains its auxiliary-variable role. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T086: free variable → મુક્ત ચલ
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:86`.
+- **English use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:55` (OLP-0052, “મુક્ત ચલ”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The authority directly supports ચલ for variable. The modifier મુક્ત transparently preserves the logical distinction, but the exact compound was not found in the checked passage.
+- **Alternatives:** અબદ્ધ ચલ — a plausible alternative without direct attestation in the checked passages; મુક્ત ચલ remains open to specialist correction.
+- **Review question:** In Gujarati mathematical-logic prose, does “મુક્ત ચલ” express “free variable” with the scope stated in this rationale: The authority directly supports ચલ for variable. The modifier મુક્ત transparently preserves the logical distinction, but the exact compound was not found in the checked passage. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T087: isomorphism / isomorphic → એકરૂપતા / એકરૂપ
+
+- **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
+- **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:87`.
+- **English use:** `upstream/content/sets-functions-relations/functions/functions.tex:20` (OLP-0020, “isomorphic”)
+- **Gujarati use:** `gu/content/sets-functions-relations/functions/functions-relations.tex:75` (OLP-0023, “એકરૂપતા”); `gu/content/sets-functions-relations/functions/functions-relations.tex:19` (OLP-0023, “એકરૂપ”)
+- **Authorities actually checked:** `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked algebra article directly pairs એકરૂપતા with isomorphism in a structure-preserving correspondence between algebraic spaces.
+- **Alternatives:** સમરૂપતા — a familiar possible alternative; the checked Gujarati algebra article explicitly pairs isomorphism with એકરૂપતા.
+- **Review question:** In Gujarati mathematical-logic prose, does “એકરૂપતા / એકરૂપ” express “isomorphism / isomorphic” with the scope stated in this rationale: The checked algebra article directly pairs એકરૂપતા with isomorphism in a structure-preserving correspondence between algebraic spaces. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T088: structuralism / structuralist → સંરચનાવાદ / સંરચનાવાદી
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:88`.
+- **English use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
+- **Gujarati use:** `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:38` (OLP-0053, “સંરચનાવાદ”); `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:38` (OLP-0053, “સંરચનાવાદી”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked sources directly support સંરચના and algebraic isomorphism. The philosophical school name is a transparent construction but was not directly attested.
+- **Alternatives:** બંધારણવાદ — a possible alternative without direct attestation in the checked sources; સંરચનાવાદ transparently follows સંરચના.
+- **Review question:** In Gujarati mathematical-logic prose, does “સંરચનાવાદ / સંરચનાવાદી” express “structuralism / structuralist” with the scope stated in this rationale: The checked sources directly support સંરચના and algebraic isomorphism. The philosophical school name is a transparent construction but was not directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
 
 ## Difficult source-correction decisions
 
@@ -1110,3 +1187,23 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLARI-004 without changing any unaffected claim or formula?
+
+### OLINF-001: confirmed_unbound_carrier_and_missing_self_map_constraints
+
+- **Frozen source:** `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex` at `dedekind-algebra.tex:41-64`; SHA-256 `9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036`.
+- **Gujarati target:** `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex` body line(s) 41; adjacent note line 47; SHA-256 `8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe`.
+- **Chosen handling:** Made the carrier explicit throughout the controlling definition and lemma as f:A→A, X⊆A and o∈A, and added an adjacent keyed note.
+- **Rationale:** The closure definition quantifies over any function and any o, the following lemma mentions o∈A without binding A, and its proof assumes ran(f)∪{o} is f-closed. That proof requires f to be a self-map on a carrier containing o.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINF-001 without changing any unaffected claim or formula?
+
+### OLINF-002: confirmed_malformed_nested_cardinality_conclusion
+
+- **Frozen source:** `upstream/content/sets-functions-relations/infinite/card-sb.tex` at `card-sb.tex:49-53`; SHA-256 `88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9`.
+- **Gujarati target:** `gu/content/sets-functions-relations/infinite/card-sb.tex` body line(s) 51; adjacent note line 53; SHA-256 `630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b`.
+- **Chosen handling:** Stated the two cardinality equalities actually established by the proof and added an adjacent keyed note.
+- **Rationale:** The helper proposition nests A≈B inside the first argument of another cardinality comparison. Its proof constructs bijections C→B and A→B, yielding A≈B and B≈C.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINF-002 without changing any unaffected claim or formula?

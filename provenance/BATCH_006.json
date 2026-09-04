@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-04T21:46:31.879162+00:00",
+  "boundary": "Infinite OLP-0049–0054",
+  "units": [
+    {
+      "unit_id": "OLP-0049",
+      "source_sha256": "6ea6bff5ac4f128338bfa6b1cb5b7c8bed6121210257e06f6aaa7b27d5cc4bbb",
+      "target_sha256": "5583ad311e2f5003a5f46e9c59d0bcb2da3456aef710e50a3b629571ed666ff7",
+      "source_bytes": 438,
+      "target_bytes": 548,
+      "aligned_blocks": 7,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0050",
+      "source_sha256": "e9a73caefcc496d7074251a3ac15f66fd577415bd3a531dd23f79375502ee0ed",
+      "target_sha256": "4508359b21e4b13bb5340322aebb967117544ba82dcce95eba802d8cc8a7c904",
+      "source_bytes": 2551,
+      "target_bytes": 4346,
+      "aligned_blocks": 7,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0051",
+      "source_sha256": "9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036",
+      "target_sha256": "8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe",
+      "source_bytes": 5072,
+      "target_bytes": 8942,
+      "aligned_blocks": 20,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0052",
+      "source_sha256": "ea5f6c80d70abca6f5598de3e221c2f60524c40cbf533ae8a5336d5bb7186537",
+      "target_sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945",
+      "source_bytes": 3486,
+      "target_bytes": 5938,
+      "aligned_blocks": 14,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0053",
+      "source_sha256": "a7c41cebb6b7b0e2bed0d187777be4ba69fecdb17baa070975a0ca5c5c55b8bf",
+      "target_sha256": "c22dc425e4688da45ff2573876a7e4072e493f2cf411436fdb9567a46fa031d4",
+      "source_bytes": 5886,
+      "target_bytes": 12264,
+      "aligned_blocks": 15,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0054",
+      "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
+      "target_sha256": "630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b",
+      "source_bytes": 4143,
+      "target_bytes": 7312,
+      "aligned_blocks": 18,
+      "status": "translated_draft_structural_parity_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 58,
+  "source_math_spans": 207,
+  "source_corrections": [
+    {
+      "finding_id": "OLINF-001",
+      "unit_id": "OLP-0051",
+      "handling": "Made the carrier explicit throughout the controlling definition and lemma as f:A→A, X⊆A and o∈A, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINF-002",
+      "unit_id": "OLP-0054",
+      "handling": "Stated the two cardinality equalities actually established by the proof and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_006.json",
+  "reader_integration": "Passed cumulative 51-unit HTML QA and actual live browser inspection with both Infinite source-correction notes exposed; see HTML_QA_006.json."
+}

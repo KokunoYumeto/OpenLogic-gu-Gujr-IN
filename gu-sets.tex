@@ -22,9 +22,12 @@
 \newtheorem{prob}{સ્વાધ્યાય}[section]
 \newtheorem{thm}[defn]{પ્રમેય}
 \newtheorem{prop}[defn]{વિધાન}
+\newtheorem{lem}[defn]{લેમા}
+\newtheorem{cor}[defn]{ઉપસિદ્ધાંત}
 \newenvironment{explain}{}{}
 \newenvironment{digress}{\par\smallskip}{\par\smallskip}
 \newenvironment{tagblock}[1]{}{}
+\newenvironment{editorial}{\begin{quote}\textbf{સંપાદકીય નોંધ.} }{\end{quote}}
 \newcommand{\Nat}{\mathbb{N}}
 \newcommand{\Int}{\mathbb{Z}}
 \newcommand{\Rat}{\mathbb{Q}}
@@ -35,16 +38,31 @@
 \newcommand{\Setabs}[2]{\{#1:#2\}}
 \newcommand{\tuple}[1]{\langle #1\rangle}
 \newcommand{\len}[1]{\mathrm{len}(#1)}
+\newcommand{\defis}{\mathrel{:=}}
+\newcommand{\funfromto}[2]{#2^{#1}}
+\newcommand{\cardeq}[2]{\lvert#1\rvert=\lvert#2\rvert}
+\newcommand{\cardneq}[2]{\lvert#1\rvert\ne\lvert#2\rvert}
+\newcommand{\cardle}[2]{\lvert#1\rvert\le\lvert#2\rvert}
+\newcommand{\cardless}[2]{\lvert#1\rvert<\lvert#2\rvert}
+\newcommand{\closureofunder}[2]{\mathrm{clo}_{#1}(#2)}
+\newcommand{\Closureofunder}[2]{\mathrm{Clo}_{#1}(#2)}
 \let\phi\varphi
 \newcommand{\lif}{\mathbin{\rightarrow}}
 \newcommand{\olfileid}[3]{\gdef\olpartid{#1}\gdef\olchapid{#2}\gdef\olsecid{#3}}
-\newcommand{\olsection}[1]{\section{#1}\label{\olpartid:\olchapid:\olsecid:sec}}
+\NewDocumentCommand{\olsection}{o m}{%
+  \IfNoValueTF{#1}{\section{#2}}{\section[#1]{#2}}%
+  \label{\olpartid:\olchapid:\olsecid:sec}}
 \newcommand{\ollabel}[1]{\label{\olpartid:\olchapid:\olsecid:#1}}
+\newcommand{\cref}[1]{\ref{#1}}
 \NewDocumentCommand{\olref}{o o o m}{%
 \IfNoValueTF{#1}{\ref{\olpartid:\olchapid:\olsecid:#4}}{%
 \IfNoValueTF{#2}{\ref{\olpartid:\olchapid:#1:#4}}{%
 \IfNoValueTF{#3}{\ref{\olpartid:#1:#2:#4}}{\ref{#1:#2:#3:#4}}}}}
 \newcommand{\oliflabeldef}[3]{#3}
+\expandafter\def\csname gutoken@enumerable\endcsname{ગણનીય}
+\expandafter\def\csname gutoken@nonenumerable\endcsname{અગણનીય}
+\newcommand{\usetoken}[2]{\csname gutoken@#2\endcsname}
+\let\printtoken\usetoken
 \colorlet{oldiagcolorA}{black}
 \colorlet{oldiagcolorB}{gray}
 \definecolor{oldiagcolorC}{HTML}{a81c21}

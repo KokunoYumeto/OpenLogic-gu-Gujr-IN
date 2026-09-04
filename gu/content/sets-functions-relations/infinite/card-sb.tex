@@ -1,0 +1,110 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{infinite}{card-sb}
+
+\olsection{પરિશિષ્ટ: શ્રેડર--બર્નસ્ટાઇનની સાબિતી}
+
+સહજ ગણસિદ્ધાંત છોડીએ તે પહેલાં એક છેલ્લી સહજ (પણ સુવિકસિત!) સાબિતી
+વિચારવાની બાકી છે. આ શ્રેડર--બર્નસ્ટાઇન
+(\olref[sfr][siz][sb]{thm:schroder-bernstein})ની સાબિતી છે: જો
+$\cardle{A}{B}$ અને $\cardle{B}{A}$ હોય, તો $\cardeq{A}{B}$; એટલે કે,
+!!{injection}s $f \colon A \to B$ અને $g \colon B \to A$ આપેલાં હોય,
+તો !!a{bijection} $h \colon A \to B$ હોય છે.
+
+આ પ્રકરણમાં આપણે ડેડેકિન્ડના \emph{સંવરણો}ના ખ્યાલને અનુસર્યા છીએ.
+ખરેખર, ડેડેકિન્ડે આ ખ્યાલ વાપરીને શ્રેડર--બર્નસ્ટાઇનની એક સુંદર
+સાબિતી આપી હતી અને આપણે તેને અહીં રજૂ કરીશું. અહીંની સાબિતી
+\citet[pp.~157--8]{Potter2004}ને નજીકથી અનુસરે છે; ત્યાં થોડું જુદું
+પણ મૂળભૂત રીતે સરખું નિરૂપણ મળશે. થોડું ગૂગલમાં
+શોધવાથી પણ ખાતરી થશે કે---$\sqrt{2}$ની અસંમેયતા જેવું---આ એવું પ્રમેય
+છે જેની \emph{ઘણી} રસપ્રદ અને જુદી સાબિતીઓ છે.
+
+\olref[sfr][infinite][dedekind]{Closure} જેવી જ સંજ્ઞા વાપરીને,
+દરેક ગણ $B$ અને વિધેય~$f$ માટે લો:
+\[
+\Closureofunder{f}{B} = \bigcap \Setabs{X}{B \subseteq X
+\text{ અને $X$ એ $f$-સંવૃત છે}}
+\]
+આ રીતે વ્યાખ્યાયિત $\Closureofunder{f}{B}$ એ $B$ને સમાવતો નાનામાં
+નાનો $f$-સંવૃત ગણ છે, એ અર્થમાં કે:
+
+\begin{lem}\ollabel{Closureprops}
+	દરેક વિધેય $f$ અને દરેક $B$ માટે:
+	\begin{enumerate}
+		\item\ollabel{Closurehaselem} $B \subseteq \Closureofunder{f}{B}$; અને
+		\item\ollabel{Closureclosed} $\Closureofunder{f}{B}$ એ $f$-સંવૃત છે; અને
+		\item\ollabel{Closuresmallest} જો $X$ એ $f$-સંવૃત હોય અને $B
+		\subseteq X$, તો $\Closureofunder{f}{B} \subseteq X$.
+	\end{enumerate}
+\end{lem}
+
+\begin{proof}
+બરાબર \olref[sfr][infinite][dedekind]{closureproperties}ની જેમ.
+\end{proof}
+
+શ્રેડર--બર્નસ્ટાઇન સુધી પહોંચવા માટે એક છેલ્લી હકીકત જોઈએ:
+
+\begin{prop}\ollabel{sbhelper}
+જો $A \subseteq B \subseteq C$ અને $A \approx C$ હોય, તો
+$\cardeq{A}{B}$ અને $\cardeq{B}{C}$.
+\end{prop}
+\sourcecorrection{OLINF-002}{મૂળની \texttt{card-sb.tex}, પંક્તિઓ
+50--52માં નિષ્કર્ષ $\cardeq{\cardeq{A}{B}}{C}$ તરીકે લખાયો છે,
+જેમાં એક સભ્યસંખ્યા-સમાનતા બીજીના ગણ-સ્થાને ગેરરીતે આવેલી છે.
+સાબિતી પહેલાં $C$થી $B$માં એક-એક વ્યાપ્ત વિધેય અને પછી $A$થી
+$B$માં એવું વિધેય રચે છે; તેથી અહીં તે સાબિત કરતી બંને સુઘડ
+સમાનતાઓ $\cardeq{A}{B}$ અને $\cardeq{B}{C}$ લખી છે.}
+
+\begin{proof}
+!!a{bijection} $f \colon C \to A$ આપેલું હોય, ત્યારે $F =
+\Closureofunder{f}{C \setminus B}$ લો અને પ્રદેશ $C$ ધરાવતું વિધેય
+$g$ આ પ્રમાણે વ્યાખ્યાયિત કરો:
+\[
+	g(x) =
+	\begin{cases}
+			f(x) &\text{જો $x \in F$}\\
+			x & \text{અન્યથા}
+		\end{cases}
+\]
+$g$ એ $C \to B$નું !!a{bijection} છે તે આપણે બતાવીશું; તેના પરથી
+$\comp{f^{-1}}{g} \colon A \to B$ એ !!a{bijection} છે એવું મળશે અને
+સાબિતી પૂરી થશે.
+
+પહેલો દાવો એ છે કે જો $x \in F$ પણ $y\notin F$ હોય, તો
+$g(x) \neq g(y)$. વિરોધાભાસ મેળવવા ઊલટું ધારો; ત્યારે
+$y = g(y) = g(x) = f(x)$. \olref{Closureprops} મુજબ $F$ એ
+$f$-સંવૃત છે અને $x \in F$ હોવાથી $y = f(x) \in F$, જે વિરોધાભાસ છે.
+
+હવે ધારો કે $g(x) = g(y)$. તેથી ઉપરના દાવાથી $x \in F$ જો અને માત્ર
+જો $y \in F$. જો $x, y \in F$, તો $f(x) = g (x) = g(y) = f(y)$;
+અને $f$ એ !!a{bijection} હોવાથી $x = y$. જો $x, y \notin F$, તો
+$x = g(x) = g(y) = y$. તેથી $g$ એ !!a{injection} છે.
+
+હવે માત્ર $\ran{g} = B$ બતાવવાનું બાકી છે. તેથી $x \in B \subseteq C$
+નિશ્ચિત કરો. જો $x \notin F$, તો $g(x) = x$. જો $x \in F$, તો કોઈ
+$y \in F$ માટે $x = f(y)$; કારણ કે નહિતર $F \setminus \{x\}$ એ
+$f$-સંવૃત હોત અને $C\setminus B$ને સમાવતો હોત, જે
+\olref{Closureprops}થી અશક્ય છે. હવે $g(y) = f(y) = x$.
+\end{proof}
+
+છેલ્લે મુખ્ય પરિણામની સાબિતી આ રહી. યાદ કરો કે વિધેય $h$ અને ગણ $D$
+આપેલાં હોય ત્યારે આપણે $\funimage{h}{D} = \Setabs{h(x)}{x
+\in D}$ વ્યાખ્યાયિત કરીએ છીએ.
+
+\begin{proof}[શ્રેડર--બર્નસ્ટાઇનની સાબિતી] ધારો કે $f \colon A \to B$
+અને $g \colon B \to A$ એ !!{injection}s છે. $\funimage{f}{A}
+\subseteq B$ હોવાથી $\funimage{g}{\funimage{f}{A}} \subseteq
+g[B] \subseteq A$. વળી, $g$ અને $f$ બંને એક-એક હોવાથી
+$\comp{f}{g} \colon A \to \funimage{g}{\funimage{f}{A}}$ પણ
+!!{injection} છે; અને ખરેખર, તેનો સહપ્રદેશ જે રીતે વ્યાખ્યાયિત કર્યો
+છે તે પરથી $\comp{f}{g}$ એ !!a{bijection} છે. તેથી
+$\cardeq{\funimage{g}{\funimage{f}{A}}}{A}$ અને આમ
+\olref{sbhelper} મુજબ કોઈ !!a{bijection} $h \colon A \to
+\funimage{g}{B}$ છે. વળી, $g^{-1}$ એ !!a{bijection}
+$\funimage{g}{B} \to B$ છે. તેથી $\comp{h}{g^{-1}} \colon A \to B$
+એ !!a{bijection} છે.
+\end{proof}
+
+\end{document}

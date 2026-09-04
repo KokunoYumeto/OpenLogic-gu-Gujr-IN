@@ -1,0 +1,96 @@
+{
+  "schema": "openlogic-gu-html-qa/6",
+  "html": {
+    "path": "reader/infinite.html",
+    "bytes": 1252499,
+    "sha256": "0721d58b2164784b5de2b7a0c874108ae74552d0684b3ad5eafec82bd9ca5071",
+    "source_units_covered": 51,
+    "infinite_units_complete": 6,
+    "mathml_nodes": 3031,
+    "images": 13,
+    "unique_ids": 192,
+    "broken_internal_links": 0,
+    "infinite_section_ids": [
+      "sfr:infinite:hilbert:sec",
+      "sfr:infinite:dedekind:sec",
+      "sfr:infinite:induction:sec",
+      "sfr:infinite:dedekindsproof:sec",
+      "sfr:infinite:card-sb:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 9,
+    "partial_arrows": 6,
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ]
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-04T21:46:31.255223+00:00",
+    "method": "Codex in-app browser at the local byte-bound URL; direct live navigation and viewport screenshots of the cumulative title, each new section, both new correction boxes, the deterministic hotel diagram, rebuilt editorial math, references, and all nine footnotes.",
+    "url": "http://127.0.0.1:8789/reader/infinite.html",
+    "viewed": [
+      "Gujarati cumulative title, 51/722 coverage notice, and table of contents through section 45",
+      "section 41 Hilbert Hotel prose, linked year-and-page citation, Dedekind citation, and room-shift diagram",
+      "section 42 three Dedekind conditions, closure definition, OLINF-001 disclosure, corrected self-map domain, and closure lemma",
+      "section 43 mathematical-induction theorem, proof, first-order formulation, and corollary rendering",
+      "section 44 philosophical discussion, external chapter links, theorem-locator citation, and preface citation",
+      "section 45 closure construction, corrected cardinality proposition, OLINF-002 disclosure, and piecewise Schröder–Bernstein map",
+      "editorial note with MathML self-map, subset and base-point constraints after the PDF adapter repair",
+      "bibliography entries including Hilbert and Dedekind, plus all nine rendered footnotes"
+    ],
+    "defects_found_and_repaired": [
+      "The optional olsection form initially reached the HTML command parser unchanged; the converter now normalizes it before section expansion.",
+      "The third-condition list label initially lacked visible reference text; the converter now binds that source label to item 3."
+    ],
+    "final_hash_binding": {
+      "html_sha256": "0721d58b2164784b5de2b7a0c874108ae74552d0684b3ad5eafec82bd9ca5071",
+      "live_reload_url": "http://127.0.0.1:8789/reader/infinite.html",
+      "live_title": "ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ અને અનંત ગણો — ઓપન લોજિક ગુજરાતી",
+      "focused_anchor_views": [
+        "sfr:infinite:hilbert:sec",
+        "sfr:infinite:dedekind:sec",
+        "sfr:infinite:induction:sec",
+        "sfr:infinite:dedekindsproof:sec",
+        "sfr:infinite:card-sb:sec",
+        "bib:Benacerraf1965",
+        "સપદકય-નધ"
+      ]
+    },
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_006.json",
+    "samples": 58,
+    "status": "passed_same_agent_not_independent_native_certification"
+  },
+  "pdf": "built_unstable_pending_reproducibility_and_visual_qa",
+  "full_corpus_complete": false
+}

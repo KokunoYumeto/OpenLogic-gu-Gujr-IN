@@ -4,13 +4,14 @@ import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size','arithmetization'}
-coverage={'functions':23,'size':37,'arithmetization':45}[edition]
-coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫'}[edition]
+assert edition in {'functions','size','arithmetization','infinite'}
+coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧'}[edition]
 title={
     'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
     'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
     'arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોનું કદ અને અંકગણિતીકરણ — ઓપન લોજિક ગુજરાતી',
+    'infinite':'ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ અને અનંત ગણો — ઓપન લોજિક ગુજરાતી',
 }[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
@@ -38,12 +39,15 @@ body=command(body,'printtoken',2,lambda namespace,key:token_words[key])
 authors={'Cantor1892':'કૅન્ટૉર','Frege1884':'ફ્રેગે','Potter2004':'પૉટર',
          'Benacerraf1965':'બેનાસેરાફ','Conway2006':'કૉનવે',
          'KatzKatz2012':'કૅટ્ઝ અને કૅટ્ઝ',
-         'OConnorRobertson:RN':"ઓ'કૉનર અને રૉબર્ટસન"}
+         'OConnorRobertson:RN':"ઓ'કૉનર અને રૉબર્ટસન",
+         'EwaldSieg2013':'હિલ્બર્ટ','Dedekind1888':'ડેડેકિન્ડ'}
 years={'Cantor1892':'1892','Frege1884':'1884','Potter2004':'2004',
        'Benacerraf1965':'1965','Conway2006':'2006','KatzKatz2012':'2012',
-       'OConnorRobertson:RN':'2005'}
+       'OConnorRobertson:RN':'2005','EwaldSieg2013':'2013','Dedekind1888':'1888'}
 def citation_note(note):
-    return note.replace(r'\S','§').replace('~',' ').replace('--','–') if note else ''
+    if not note:return ''
+    note=' '.join(note.replace(r'\S','§').replace('~',' ').replace('--','–').split())
+    return note.replace('Theorems','પ્રમેયો').replace('preface','પ્રસ્તાવના')
 def textual_citation(match):
     note,key=match.groups();extra=', '+citation_note(note) if note else ''
     return r'\hyperref[bib:'+key+']{'+authors[key]+' ('+years[key]+extra+')} '
@@ -52,13 +56,34 @@ def parenthetical_citation(match):
     return r'(\hyperref[bib:'+key+']{'+authors[key]+' '+years[key]+extra+'})'
 body=re.sub(r'\\citet(?:\[([^\]]*)\])?\{([^}]+)\}',textual_citation,body)
 body=re.sub(r'\\citep(?:\[([^\]]*)\])?\{([^}]+)\}',parenthetical_citation,body)
-body=re.sub(r'\\citealt\{([^}]+)\}',lambda m:r'\hyperref[bib:'+m[1]+']{'+authors[m[1]]+' '+years[m[1]]+'}',body)
+body=re.sub(r'\\citealt(?:\[([^\]]*)\])?\{([^}]+)\}',lambda m:r'\hyperref[bib:'+m[2]+']{'+authors[m[2]]+' '+years[m[2]]+(', '+citation_note(m[1]) if m[1] else '')+'}',body)
+body=re.sub(r'\\citeyear(?:\[([^\]]*)\])?\{([^}]+)\}',lambda m:r'\hyperref[bib:'+m[2]+']{'+years[m[2]]+(', '+citation_note(m[1]) if m[1] else '')+'}',body)
 body=re.sub(r'\\citeauthor\{([^}]+)\}',lambda m:r'\hyperref[bib:'+m[1]+']{'+authors[m[1]]+'}',body)
 body=re.sub(r'\\cite\{([^}]+)\}',lambda m:'('+r'\hyperref[bib:'+m[1]+']{'+authors[m[1]]+' '+years[m[1]]+'})',body)
+body=body.replace(r'\textparagraph','¶')
 body=command(body,'part',1,lambda x:'') # Chapter identity appears in grouped introduction; section numbering continuous.
 graph_receipts=[];graph_alt={}
 def render_graph(m):
     src=m[0]
+    if r'\foreach \x in {1, 2, 3, 4, 5, 6, 7, 8, 9}' in src:
+        arrows=re.findall(r'\\draw\[->\] \((\d)b\)--\((\d)a\);',src)
+        assert arrows==[(str(i),str(i+1)) for i in range(1,9)] and r'\draw[->] (9b)--(dotsa);' in src
+        name='hilbert-hotel-shift'
+        alt='ઉપરની હારમાં જૂના મહેમાનો 1થી 9 અને આગળ; દરેક તીર મહેમાન nને નીચેની હારમાં ઓરડા n+1માં ખસેડે છે. નીચેનો ઓરડો 1 વર્તુળથી ખાલી દર્શાવ્યો છે.'
+        svg=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img"><defs><marker id="hotel-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#222"/></marker></defs>']
+        for i in range(1,10):
+            x=50+70*(i-1)
+            svg.append(f'<text x="{x}" y="42" text-anchor="middle" font-family="serif" font-size="21">{i}</text>')
+            svg.append(f'<text x="{x}" y="157" text-anchor="middle" font-family="serif" font-size="21">{i}</text>')
+        svg.append('<text x="690" y="42" text-anchor="middle" font-family="serif" font-size="24">…</text><text x="690" y="157" text-anchor="middle" font-family="serif" font-size="24">…</text>')
+        for i in range(1,9):
+            x1=50+70*(i-1);x2=50+70*i
+            svg.append(f'<path d="M{x1},54 L{x2},132" fill="none" stroke="#222" stroke-width="1.8" marker-end="url(#hotel-arrow)"/>')
+        svg.append('<path d="M610,54 L680,132" fill="none" stroke="#222" stroke-width="1.8" marker-end="url(#hotel-arrow)"/><circle cx="50" cy="151" r="27" fill="none" stroke="#222" stroke-width="2"/></svg>')
+        path=O/'assets'/f'{name}.svg';path.write_text(''.join(svg),encoding='utf-8',newline='\n')
+        graph_receipts.append(dict(asset=path.relative_to(R).as_posix(),source_tikz_sha256=hashlib.sha256(src.encode('utf-8')).hexdigest(),svg_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),rooms=list(range(1,10)),arrows=[(i,i+1) for i in range(1,10)],method='Deterministic SVG reconstruction of the validated Hilbert Hotel labels, shift arrows and circled vacant room 1.'))
+        graph_alt[name]=alt
+        return '\n\n'+r'\includegraphics{assets/'+name+'.svg}\n\n'
     if 'fill=red!50' in src and 'rectangle (2.3,2.3)' in src:
         name='sqrt-two-parity'
         alt='બાજુ mવાળો મોટો ચોરસ; તેની અંદર બાજુ nવાળા બે સરખા, એકબીજા પર ચઢતા ચોરસ. નારંગી છેદનું ક્ષેત્રફળ બંને ઢાંકાયા વિનાના ખૂણાના ચોરસોના કુલ ક્ષેત્રફળ જેટલું છે.'
@@ -132,20 +157,21 @@ body=re.sub(r'\\begin\{align\*\}[\s\S]*?\\end\{align\*\}',clean_align,body)
 body=re.sub(r'(\\\[)\s*\\small\b',r'\1',body)
 body=re.sub(r'\\begin\{array\}\{@\{\}([^}]*)@\{\}\}',r'\\begin{array}{\1}',body)
 sections=re.split(r'(?=\\olfileid)',body);labels={};section_text=[];figcount=0
-names={'defn':'વ્યાખ્યા','ex':'ઉદાહરણ','thm':'પ્રમેય','prop':'વિધાન','cor':'ઉપસિદ્ધાંત','prob':'સ્વાધ્યાય','proof':'સાબિતી'}
+names={'defn':'વ્યાખ્યા','ex':'ઉદાહરણ','thm':'પ્રમેય','lem':'લેમા','prop':'વિધાન','cor':'ઉપસિદ્ધાંત','prob':'સ્વાધ્યાય','proof':'સાબિતી'}
 for block in sections:
     if not block.strip():continue
     ident=re.search(r'\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}',block);prefix=':'.join(ident.groups())
     num=len(section_text)+1;count=probcount=0
     labels[prefix+':sec']=str(num)
     block=command(block,'olfileid',3,lambda a,b,c:'')
+    block=re.sub(r'\\olsection\[[^\]]*\](?=\{)',r'\\olsection',block)
     block=command(block,'olsection',1,lambda title:r'\section{'+title+r'}\label{'+prefix+':sec}')
     block=re.sub(r'\\begin\{tagblock\}\{[^}]+\}|\\end\{tagblock\}','',block)
     block=re.sub(r'\\(?:begin|end)\{(?:explain|digress|intro)\}','',block)
     block=block.replace(r'\begin{editorial}',r'\begin{quote}\textbf{સંપાદકીય નોંધ.} ')
     block=block.replace(r'\end{editorial}',r'\end{quote}')
     # Treat environment opening and all subsequent labels in display order.
-    pat=re.compile(r'\\begin\{(defn|ex|thm|prop|cor|prob|proof)\}(?:\[((?:[^\[\]]|\[[^\[\]]*\])*)\])?|\\(ollabel|label)\{([^}]+)\}')
+    pat=re.compile(r'\\begin\{(defn|ex|thm|lem|prop|cor|prob|proof)\}(?:\[((?:[^\[\]]|\[[^\[\]]*\])*)\])?|\\(ollabel|label)\{([^}]+)\}')
     last='';out='';start=0
     for m in pat.finditer(block):
         out+=block[start:m.start()]
@@ -162,7 +188,7 @@ for block in sections:
             out+=r'\begin{quote}\textbf{'+names[typ]+(' '+last if last else '')+(' ('+env_title+')' if env_title else '')+'.} '
         start=m.end()
     block=out+block[start:]
-    block=re.sub(r'\\end\{(?:defn|ex|thm|prop|cor|prob|proof)\}',r'\\end{quote}',block)
+    block=re.sub(r'\\end\{(?:defn|ex|thm|lem|prop|cor|prob|proof)\}',r'\\end{quote}',block)
     def figure(m):
         global figcount
         figcount+=1;t=m[1];asset=re.search(r'\\olasset(?:\[[^\]]*\])?\{assets/diagrams/([^}]+)\.tikz\}',t)[1]
@@ -171,6 +197,8 @@ for block in sections:
         return r'\begin{center}\includegraphics{assets/'+asset+r'.svg}'+'\n'+r'\textbf{આકૃતિ '+str(figcount)+'.} '+cap+r'\label{'+lid+r'}\end{center}'
     block=re.sub(r'\\begin\{figure\}([\s\S]*?)\\end\{figure\}',figure,block)
     section_text.append((prefix,block))
+# This label marks the third item in Dedekind's displayed three-condition list.
+labels['sfr:infinite:dedekind:repeatedapplication']='3'
 texts=[]
 for prefix,block in section_text:
     def ref(m):
@@ -182,12 +210,16 @@ for prefix,block in section_text:
         external={
             'his:set:limits:sec':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/history/set-theory/limits.tex','મૂળ ગ્રંથનો લક્ષોનો વિભાગ'),
             'his:set:mythology:sec':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/history/set-theory/mythology.tex','મૂળ ગ્રંથનો સંબંધિત ઐતિહાસિક વિભાગ'),
+            'sth:::part':('https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/set-theory','મૂળ ગ્રંથનો ગણસિદ્ધાંત ભાગ'),
+            'sth:ord-arithmetic::chap':('https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/set-theory/ord-arithmetic','મૂળ ગ્રંથનું ક્રમસંખ્યાઓના અંકગણિતનું પ્રકરણ'),
         }
         if lid in external:
             url,text=external[lid]
             return r'\href{'+url+'}{'+text+'}'
         if lid=='sfr:siz::chap' and 'sfr:siz:int:sec' in labels:
             return r'\hyperref[sfr:siz:int:sec]{ગણોના કદનું પ્રકરણ}'
+        if lid=='sfr:arith::chap' and 'sfr:arith:int:sec' in labels:
+            return r'\hyperref[sfr:arith:int:sec]{અંકગણિતીકરણનું પ્રકરણ}'
         raise AssertionError(lid)
     block=re.sub(r'\\olref((?:\[[^\]]*\])*)\{([^}]+)\}',ref,block)
     def cref(m):
@@ -195,7 +227,6 @@ for prefix,block in section_text:
         assert lid in labels and labels[lid],lid
         return r'\hyperref['+lid+']{'+labels[lid]+'}'
     block=re.sub(r'\\cref\{([^}]+)\}',cref,block)
-    block=command(block,'citeyear',1,lambda key:r'\hyperref[bib:'+key+']{'+years[key]+'}')
     block=block.replace(r'\begin{multline*}',r'\[\begin{aligned}').replace(r'\end{multline*}',r'\end{aligned}\]')
     block=command(block,'shoveright',1,lambda x:x);block=command(block,'shoveleft',1,lambda x:x)
     texts.append(block)
@@ -234,6 +265,8 @@ macros=r"""
 \newcommand{\cardle}[2]{\lvert#1\rvert\le\lvert#2\rvert}
 \newcommand{\cardless}[2]{\lvert#1\rvert<\lvert#2\rvert}
 \newcommand{\funfromto}[2]{#2^{#1}}
+\newcommand{\closureofunder}[2]{\mathrm{clo}_{#1}(#2)}
+\newcommand{\Closureofunder}[2]{\mathrm{Clo}_{#1}(#2)}
 \newcommand{\pto}{\mathrel{\text{GU-PARTIAL-ARROW}}}
 \newcommand{\fdefined}{\downarrow}
 \newcommand{\fundefined}{\uparrow}
@@ -245,13 +278,16 @@ if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
-if edition=='arithmetization':
+if edition in {'arithmetization','infinite'}:
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
                      +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
                      +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
                      +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
+if edition=='infinite':
+    bibliography += (r'\label{bib:EwaldSieg2013}Hilbert, David. 2013. On the infinite. In \emph{David Hilbert’s Lectures on the Foundations of Arithmetic and Logic 1917–1933}.'+'\n'
+                     +r'\label{bib:Dedekind1888}Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?}.'+'\n')
 src=B/f'{edition}-html.tex'
 src.write_text(macros+'\n'.join(texts)+r'\section*{સંપાદકીય નોંધો}'+editorial+bibliography,encoding='utf-8')
 cmd=['pandoc',str(src),'-f','latex','-t','html5','--mathml','--standalone','--toc','--number-sections','--shift-heading-level-by=1','--metadata','lang=gu-IN','--metadata',f'title={title}','--css','reader.css','-o',str(O/f'{edition}.html')]
@@ -259,7 +295,7 @@ result=subprocess.run(cmd,capture_output=True,encoding='utf-8',errors='replace')
 (B/f'{edition}-pandoc.stderr.txt').write_text(result.stderr,encoding='utf-8')
 assert result.returncode==0,result.stderr
 soup=BeautifulSoup((O/f'{edition}.html').read_text(encoding='utf-8'),'html.parser')
-scope={'functions':'ગણો, સંબંધો અને વિધેયોનાં','size':'ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં','arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોના કદ અને અંકગણિતીકરણનાં'}[edition]
+scope={'functions':'ગણો, સંબંધો અને વિધેયોનાં','size':'ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં','arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોના કદ અને અંકગણિતીકરણનાં','infinite':'ગણો, સંબંધો, વિધેયો, ગણોના કદ, અંકગણિતીકરણ અને અનંત ગણોનાં'}[edition]
 notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે. <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
 soup.header.insert_after(notice.aside)
 alts={'union':'બંને ગણોના બધા ઘટકો દર્શાવતો યોગગણ','intersection':'બંને ગણોમાં સામાન્ય ઘટકો દર્શાવતો છેદગણ','difference':'પહેલા ગણમાં હોય અને બીજા ગણમાં ન હોય તેવા ઘટકો'}
@@ -278,7 +314,7 @@ for box in soup.select('div.center'):
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-expected_images=12 if edition=='arithmetization' else 11
+expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13}[edition]
 assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.

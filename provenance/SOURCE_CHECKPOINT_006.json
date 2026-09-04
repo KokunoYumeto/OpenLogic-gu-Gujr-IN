@@ -1,0 +1,637 @@
+{
+  "schema": "openlogic-gu-source-checkpoint/1",
+  "prepared_utc": "2026-09-04T21:46:41.892373+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated": 51,
+    "total": 722,
+    "public_release_verified": 16,
+    "public_source_checkpoint_verified": 45,
+    "pdf": "built_unstable_pending_reproducibility_and_visual_qa"
+  },
+  "qa": {
+    "linguistic_blocks": 625,
+    "source_math_spans": 3028,
+    "semantic_samples": 204,
+    "source_corrections": 23,
+    "html_sha256": "0721d58b2164784b5de2b7a0c874108ae74552d0684b3ad5eafec82bd9ca5071",
+    "gu_prov_001_receipt_sha256": "214503a926eea1861f6217a04aac150d4580ed92cbf64b44b5f006937ea9295f"
+  },
+  "files": [
+    {
+      "path": "docs/BUILD_CUMULATIVE.md",
+      "bytes": 1749,
+      "sha256": "009e0483555b2d499f0542157547c12bd8849367d19d3601fb9b129f8507b6bc"
+    },
+    {
+      "path": "docs/EDITION_NOTES.md",
+      "bytes": 8002,
+      "sha256": "5dcb98b4176817bfe877ff3a45e5eebaa7fbf82de0d78375ec0c3abc220b28bf"
+    },
+    {
+      "path": "docs/TERMINOLOGY_REVIEW_LOG.md",
+      "bytes": 180360,
+      "sha256": "b084fc70596665c1614baa9afd004d67612fe8341b5497de2494eb42d3e223ba"
+    },
+    {
+      "path": "docs/TRANSLATION_DECISION_LOG_METADATA.json",
+      "bytes": 840,
+      "sha256": "e1af24f1fa69adf55df0ecad7d9d2999094e1c17302c068483f94a721967c792"
+    },
+    {
+      "path": "docs/TRANSLATION_DECISIONS.jsonl",
+      "bytes": 295945,
+      "sha256": "6b632c97163c6d5e7648fa37e6b1c95fdf6a2392abe0d7bfba7a1051d5728f22"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/arithmetization.tex",
+      "bytes": 767,
+      "sha256": "4209ef7f37bcc7515f27da3a5125c20ed5fa79ce2751a00a7fb42f8b1687ad6f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "bytes": 21263,
+      "sha256": "08fd34248ef36f5e12d234f75f76e88383e8b81eca37862d4f6788bc976e7d34"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "bytes": 14120,
+      "sha256": "77b13461dc42a8d952431a1987a8134c972df7d7b8f06c404e20343d7e9a440f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/cuts.tex",
+      "bytes": 10147,
+      "sha256": "4c561ba8bc656647400630dd331bc68ed1f4eb170eb9ab4cb7253303306b4565"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/integers.tex",
+      "bytes": 9515,
+      "sha256": "7d83ece86825d8835020a9b0bcf87788f04d4459bf1aa290e069f92118104bbf"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/rationals.tex",
+      "bytes": 6452,
+      "sha256": "3679f4a3d9a09466b28cfe9543479a720522cc1b38a6c935b09866c73200ee94"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/reals.tex",
+      "bytes": 8992,
+      "sha256": "aa1466013eb5df4e221b2ffe9ae79e66b1b159c52e351d3ad89d4950fcccf6ee"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/reflections.tex",
+      "bytes": 10711,
+      "sha256": "ef1c7039bc8d1ad4600447e349864b8fbe435b3c95d6b4dd232c5bf9521dfa8b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/composition.tex",
+      "bytes": 3920,
+      "sha256": "335ed06479d8ac82043ddb3fe3cfcf13a28fc060bcfb5812d6595bef832e3195"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/function-basics.tex",
+      "bytes": 11473,
+      "sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/function-kinds.tex",
+      "bytes": 6257,
+      "sha256": "3255e9aba2a04f71c6c86aefdb14438c345a8105b69c545220ccaf69fd397f7e"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/functions-relations.tex",
+      "bytes": 8136,
+      "sha256": "b348c926961347405fb3589274e0ad70c027d84e9c92f745e378734199b0c909"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/functions.tex",
+      "bytes": 408,
+      "sha256": "254a1e289685133893c599e379c0b5fc9d6bb747483a90ad30780e6e29ea7333"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/inverses.tex",
+      "bytes": 13244,
+      "sha256": "d782d6872d682641ec8ccd156efcfce26b78dc81d2ce0155297cb0e17c22de5c"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/partial-functions.tex",
+      "bytes": 4566,
+      "sha256": "59a4c449acea7ed67a295bacded5a4d0d177ff5be56ec383ee1f55d3536330f8"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/card-sb.tex",
+      "bytes": 7312,
+      "sha256": "630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "bytes": 8942,
+      "sha256": "8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/dedekind-induction.tex",
+      "bytes": 5938,
+      "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/dedekinds-proof.tex",
+      "bytes": 12264,
+      "sha256": "c22dc425e4688da45ff2573876a7e4072e493f2cf411436fdb9567a46fa031d4"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/hilberts-hotel.tex",
+      "bytes": 4346,
+      "sha256": "4508359b21e4b13bb5340322aebb967117544ba82dcce95eba802d8cc8a7c904"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/infinite.tex",
+      "bytes": 548,
+      "sha256": "5583ad311e2f5003a5f46e9c59d0bcb2da3456aef710e50a3b629571ed666ff7"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/equivalence-relations.tex",
+      "bytes": 5531,
+      "sha256": "1ecb10dd8641f2237298cefbafa8100c07f2f8f06d558f538e5b6d32de1343b3"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/graphs.tex",
+      "bytes": 4858,
+      "sha256": "290b9c1f9ecd86be9b20ce20bd0160eba67008e083370b8c159e3fb24c2cd641"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/operations.tex",
+      "bytes": 3525,
+      "sha256": "8baad1e3ebf355a5c5195bab8f6a9060126934153bd3830b6d68fafa4306831b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/orders.tex",
+      "bytes": 10935,
+      "sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/reflections.tex",
+      "bytes": 8000,
+      "sha256": "65505e647ccb1492de0bc1d7c60bae8b1cc9d986221117daf91f3ab0d1c703ee"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/relations-as-sets.tex",
+      "bytes": 9236,
+      "sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/relations-complete.tex",
+      "bytes": 419,
+      "sha256": "f992858641a0783491b622b5f69eb3b78d7baf310687139a6edf6ec32f1cce5b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/special-properties.tex",
+      "bytes": 5670,
+      "sha256": "c738b8f1648d9f4aa32cb4efcad04e3ec3fbf2251c735abf508754abab82fb84"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/trees.tex",
+      "bytes": 9388,
+      "sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/basics.tex",
+      "bytes": 8014,
+      "sha256": "2cd3cb8c290c5b1a9e969db7d41eb8e2eb451035ef3511cc8c0ae9bf02ff6de1"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/important-sets.tex",
+      "bytes": 4647,
+      "sha256": "04268d7451f2610594b244a9ba8b20c37a608c8c34b40ec6bac8892c3b5eeaee"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/pairs-and-products.tex",
+      "bytes": 7879,
+      "sha256": "aa9a7b740875860a3af42fb205b6cacc08d4c364487677797dcb197129585c64"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/russells-paradox.tex",
+      "bytes": 7713,
+      "sha256": "6946b2ff400e46866f64e91253e6d319c83c04c43d182c4dc701bf870965c002"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/sets.tex",
+      "bytes": 362,
+      "sha256": "75a3605b435b121adb3686240cb502c88dfb2f608bc241e4cf281b21722e45cd"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/subsets.tex",
+      "bytes": 6265,
+      "sha256": "782cca88ad1be7f99828292ce9f506716d3b0ba6ae8f7cc8ee45ac6731f0fb74"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "bytes": 9550,
+      "sha256": "479a866032c9eae22230d376f546944bc9e67e7852575dd0dd39aa30fb335a81"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "bytes": 12351,
+      "sha256": "cf50fcd95edeadb0e27343b90e92c238c4b53c6e8bc8bcbd65c53fe1ca4a51dd"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex",
+      "bytes": 8115,
+      "sha256": "5bea908c829dcd500d91810a033fcb46dd399e4a13cd28a144545b6687639002"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "bytes": 21372,
+      "sha256": "ae95ab24ac3c3306d59b0367ad1b3448883afe73a034510ca724ba59f0ee505d"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "bytes": 7082,
+      "sha256": "6fbd4a47047c24d9dc2f53b708812801075de97462a139f0ae6b7852a0bac85b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/introduction.tex",
+      "bytes": 2111,
+      "sha256": "fb13e311d0f0ee0e624440a22c42d779b80ad6aa6e6269337ac48c517f607426"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "bytes": 12922,
+      "sha256": "bbf7f9fe3a894044e816432156c06a083dbf4e7aa5b8899e35c00cb28003520f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/non-enumerability.tex",
+      "bytes": 15720,
+      "sha256": "bce8320a7d3364019ba9f17a97611a5a0de943647cbc4ba845bf615ef26494b4"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "bytes": 7239,
+      "sha256": "40904100170476dac400d273c4eceddc5750aacd22d4d383bffaed2604c9a9a8"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "bytes": 7702,
+      "sha256": "d647d28c903c54c4a3aa2aefe711ad620b4b4a34249428234d50752edabf3ba6"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "bytes": 10572,
+      "sha256": "1c0dd4b5ba5d8c82b6e9620c34080cd16728323f5dc44d74fab7c10f69d7c18d"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "bytes": 10524,
+      "sha256": "f87e04b6c9b161fd013d69c12446a5de4a81cf9a2fbbb944c37a49e3c9fe7653"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
+      "bytes": 3667,
+      "sha256": "7f481c83f2e1e975c0935282cf02bbd2405b19672fd1e604301386a6c979f343"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
+      "bytes": 2445,
+      "sha256": "c9c72f5d8f757480b06cb58eacf53351395ab9ca09442d5273d7928a36f7162f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/zig-zag.tex",
+      "bytes": 6079,
+      "sha256": "92267db5ab4560c2a1f3786ee174caeed444c59983cf2c63d0a452fb8a254923"
+    },
+    {
+      "path": "gu-arithmetization.tex",
+      "bytes": 7746,
+      "sha256": "ae3cfda284036d93a89bd7c9afba7ad233f3c0d39c9adc9902fef1cffe3a42f7"
+    },
+    {
+      "path": "gu-functions.tex",
+      "bytes": 7074,
+      "sha256": "7ebd25687f6ac55be9134ea4a13bca9dedecc0192ce441993a80ab705ff3b5cb"
+    },
+    {
+      "path": "gu-infinite.tex",
+      "bytes": 8236,
+      "sha256": "1b848de0e0983cd7c4d7b906284cec612c79f1d59f50a629adc2ad533fa6285e"
+    },
+    {
+      "path": "gu-sets.tex",
+      "bytes": 4951,
+      "sha256": "6625883496f6ae887fa8c3d60f137d2493f114eb6aa4f4d6b4f81ac5e49aa07f"
+    },
+    {
+      "path": "gu-size.tex",
+      "bytes": 5981,
+      "sha256": "d9d790c4afb8b0ee504373d31a8e16a32ba8eb2d74f9868f309af8006702c5a0"
+    },
+    {
+      "path": "provenance/BATCH_001.json",
+      "bytes": 2650,
+      "sha256": "0362c1e67e9889d36c875bc55f70130c98e51de68330cf86a03dc72c6cccd1b6"
+    },
+    {
+      "path": "provenance/BATCH_002.json",
+      "bytes": 4153,
+      "sha256": "dc3d0025b7a93b4acdc7d2b2ab88ad6450ee452a51c92cc0b8c88c4f52556168"
+    },
+    {
+      "path": "provenance/BATCH_003.json",
+      "bytes": 4463,
+      "sha256": "4894f329923a20e009047297eb0930445c21a4098f980025ebfde1f223f2759c"
+    },
+    {
+      "path": "provenance/BATCH_004.json",
+      "bytes": 8065,
+      "sha256": "9ace007e6d46b3000082822d36577a3e629c7a993bca4376c2cba1676b91587e"
+    },
+    {
+      "path": "provenance/BATCH_005.json",
+      "bytes": 4249,
+      "sha256": "ee7ec0329898479a8e1be2c94fa4a4ddfaed3d794ffb834c1207e19f3b711552"
+    },
+    {
+      "path": "provenance/BATCH_006.json",
+      "bytes": 3172,
+      "sha256": "2390cf50e41513de38e651d92516c5133cf9800b85d36a8e3fe92e00fa2443fb"
+    },
+    {
+      "path": "provenance/BUILD_RECEIPT_006.json",
+      "bytes": 3047,
+      "sha256": "a8082df4d10ec08e3ced2ce9d2a4c346211a4c1eb857fa6584ba4e93bc8532d1"
+    },
+    {
+      "path": "provenance/CANON_PASSAGE_SCHEMA.json",
+      "bytes": 1384,
+      "sha256": "544837e0f014324ea40110c932c6cf7e35355d31bfb8fbb01ce1d073e77be819"
+    },
+    {
+      "path": "provenance/CANON_PASSAGES.jsonl",
+      "bytes": 57828,
+      "sha256": "8488c5b4230eece24229d0eab79d50abee32aa3742056d71cd5f48e72afa2f15"
+    },
+    {
+      "path": "provenance/CANON_SOURCES.jsonl",
+      "bytes": 10113,
+      "sha256": "b73c41ba2b0fcf848c7c9c9c9bb0979fa60cd9012105ffd45c8c15d285578666"
+    },
+    {
+      "path": "provenance/COVERAGE.json",
+      "bytes": 185049,
+      "sha256": "7efd0897ba21c11f853c9d8dca62e4d892fe1e8087d4b38bf16cf4581f1d14c6"
+    },
+    {
+      "path": "provenance/GU_PROV_001_RECEIPT.json",
+      "bytes": 14059,
+      "sha256": "214503a926eea1861f6217a04aac150d4580ed92cbf64b44b5f006937ea9295f"
+    },
+    {
+      "path": "provenance/HTML_QA_003.json",
+      "bytes": 1629,
+      "sha256": "b27df06ee08408983d7ddea062918684797ab477fe208e8afd91090799095fa2"
+    },
+    {
+      "path": "provenance/HTML_QA_004.json",
+      "bytes": 2796,
+      "sha256": "7b4f1c3af298144cf08afae80cd272ed47335419843530362cf19f099e1415df"
+    },
+    {
+      "path": "provenance/HTML_QA_005.json",
+      "bytes": 3554,
+      "sha256": "c8521f34a98c2f3030018f8a72e85a5cc7ecbdd2afaad72c2dcdc842d4430bb4"
+    },
+    {
+      "path": "provenance/HTML_QA_006.json",
+      "bytes": 4092,
+      "sha256": "b2ac28e4f98703e2a3b0dbb83f6c37d3cdb966a6d18f70e0bc298ca16dc25ded"
+    },
+    {
+      "path": "provenance/LAPTOP_CANON_RECONCILIATION.json",
+      "bytes": 7991,
+      "sha256": "aa6d3f2924caed6c37b7c4052464fa99caa2781e4a289e3a0e2b490069f11967"
+    },
+    {
+      "path": "provenance/PARITY_001.json",
+      "bytes": 3058,
+      "sha256": "8f5fdc6f9faadec7337aa8e0c3b405f260108b40067f7f740d9c8cdae1deccd6"
+    },
+    {
+      "path": "provenance/PARITY_002.json",
+      "bytes": 5532,
+      "sha256": "5d3582bf433f68e8b3ee7397a0a2aa39b4a7b3b2e57426092d62f35483e9336d"
+    },
+    {
+      "path": "provenance/PARITY_003.json",
+      "bytes": 5855,
+      "sha256": "fba5339c85f146b9270c42efc20b1a43ad90a7fa0f6231218eff0ea0708ffbd5"
+    },
+    {
+      "path": "provenance/PARITY_004.json",
+      "bytes": 12585,
+      "sha256": "00351652aff40be421b9289b71f1e364ccf46f32e177e481d35426e4f434de17"
+    },
+    {
+      "path": "provenance/PARITY_005.json",
+      "bytes": 8615,
+      "sha256": "31be605bce3851cd86cdfc94f4c9f668db8aa65b67f239dfba8fed215af2292a"
+    },
+    {
+      "path": "provenance/PARITY_006.json",
+      "bytes": 6340,
+      "sha256": "ebcd7baa93ec045d3d8155eaee098cc16c0e10be9f9b45418a1fc3cb75a9367d"
+    },
+    {
+      "path": "provenance/QA.json",
+      "bytes": 3590,
+      "sha256": "eb172d9223bcb21b1883ebba2d3038baebfe7f34df9ea175f9e115898cf154d8"
+    },
+    {
+      "path": "provenance/SEGMENT_CANON_USE.jsonl",
+      "bytes": 757523,
+      "sha256": "dded4b650b4e88fdaafd06a395655b1503b73fa3e9a0460c2e54f9baa604f00e"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_001.json",
+      "bytes": 5668,
+      "sha256": "6d29de6851c84b5aa33e954c48dc674fe397319249b6c1301077bcf39b026917"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_002.json",
+      "bytes": 7525,
+      "sha256": "86419dac52f5e806db19c36eea7c1460878938a2869bfbde975f43bcb8d42cf9"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_003.json",
+      "bytes": 9658,
+      "sha256": "ab2b8764e15310a401460f00a776a858d81a275f29a69029496e3a2d2c1c47b4"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_004.json",
+      "bytes": 37528,
+      "sha256": "63a3a4f0c4f61be0e485b3c7f639c2b0bb73266f83b42dc93ffaae5567982dc9"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_005.json",
+      "bytes": 40888,
+      "sha256": "71064f235df03e5242db1ccc6b4b6a89f0946d37e20a998c45e3e2ceb44a4ae7"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_006.json",
+      "bytes": 42023,
+      "sha256": "e4fa699abe99155e03f7023003226ca8f2db51542f3a5cf556f133a1f93d21b9"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_003.json",
+      "bytes": 5552,
+      "sha256": "93e683b58425ded7b5eb22706a14ea5d9e90d24237a866d9571db4c9f7773201"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_004.json",
+      "bytes": 14985,
+      "sha256": "3f8f849229472aeec134e9724dd47cd9b9df210052916dcb79e23d2f254909cf"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_005.json",
+      "bytes": 5358,
+      "sha256": "253dbc3d4abe6b56c3b51bcd9a16a7bc9dd71ca75bfdf236c92deccc47ea7adb"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_006.json",
+      "bytes": 3278,
+      "sha256": "cbe80b51944232cabecc3c1107d1f000e9673b2adc2f5bd85d0572b482e2bb8c"
+    },
+    {
+      "path": "provenance/SOURCE_MANIFEST.jsonl",
+      "bytes": 355745,
+      "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
+    },
+    {
+      "path": "provenance/TERM_DECISIONS.jsonl",
+      "bytes": 246000,
+      "sha256": "74b0e3d034f3df4255f50ac5dea58817e178a8731b254d5c60811e6c573aadf2"
+    },
+    {
+      "path": "reader/arithmetization.html",
+      "bytes": 1144911,
+      "sha256": "e8540d1d1304297d81f4a7da620e0a2f19c36e7df9a59df09dd728b565856933"
+    },
+    {
+      "path": "reader/assets/bijective.svg",
+      "bytes": 6740,
+      "sha256": "cd5cfda97623fa854df47209559573b9ca12f010e75aae9721611385ef100433"
+    },
+    {
+      "path": "reader/assets/composition.svg",
+      "bytes": 12008,
+      "sha256": "f0f8431a13617375441f69dad2d767fa8b63ad45c5f225613d07623dbadac5bc"
+    },
+    {
+      "path": "reader/assets/difference.svg",
+      "bytes": 3682,
+      "sha256": "96209f496ccbc15301e24b9be3e6bb0c6844c00e07d850d15853e2f7f78ae9c4"
+    },
+    {
+      "path": "reader/assets/function.svg",
+      "bytes": 8340,
+      "sha256": "18d2618a8bbbf547bdde6ea1b8daa6052f2e5b33fc5f8f68c0e92f0bc22ba258"
+    },
+    {
+      "path": "reader/assets/graph-four.svg",
+      "bytes": 1253,
+      "sha256": "1e4e7924276d2b3fe156ef036e679582b77020f82f326a74a6ebcf09b5f7d6d6"
+    },
+    {
+      "path": "reader/assets/graph-three.svg",
+      "bytes": 1108,
+      "sha256": "fa49eb769792ed0a18d728e25208ed0bd6e28129312bb14a16f1f7577cd67d10"
+    },
+    {
+      "path": "reader/assets/hilbert-hotel-shift.svg",
+      "bytes": 2966,
+      "sha256": "a53cc1d7cbd4dd70b985e0a8b3c9c51976f4441f156a377ee451738f7c0f9eb1"
+    },
+    {
+      "path": "reader/assets/injective.svg",
+      "bytes": 8252,
+      "sha256": "72cf1131c5427ffee18d76a27d4e77691f43220821cd5978563058d2aeb8c2aa"
+    },
+    {
+      "path": "reader/assets/intersection.svg",
+      "bytes": 3078,
+      "sha256": "39196746e170600adc196f1261a0dfec9b0e58c4dfcd637d3acaae77a4331aec"
+    },
+    {
+      "path": "reader/assets/sqrt-two-parity.svg",
+      "bytes": 982,
+      "sha256": "6bb543bee382bdfdfb8b3a41c9fdafce8aec5240ded1a4c1d2a90e3da080fc00"
+    },
+    {
+      "path": "reader/assets/surjective.svg",
+      "bytes": 6191,
+      "sha256": "a4ff73e8b763725bfad454a32f7e2b4ba51061a30ddf23cc5749db8dd834a6c1"
+    },
+    {
+      "path": "reader/assets/tree.svg",
+      "bytes": 1546,
+      "sha256": "579ff65e523d3a1ad418d47c782903fb26daab55feafe12cc47d14877939d096"
+    },
+    {
+      "path": "reader/assets/union.svg",
+      "bytes": 4024,
+      "sha256": "8fad36bc95d3926c8df64dae2d9dc5f178feb6836556c30647f3cc9e5c714c02"
+    },
+    {
+      "path": "reader/functions.html",
+      "bytes": 478874,
+      "sha256": "03bb1c0e17d7926e20abbf3212a345d640ecaf1e5a0048e2e249e5ceba26c211"
+    },
+    {
+      "path": "reader/infinite.html",
+      "bytes": 1252499,
+      "sha256": "0721d58b2164784b5de2b7a0c874108ae74552d0684b3ad5eafec82bd9ca5071"
+    },
+    {
+      "path": "reader/size.html",
+      "bytes": 917506,
+      "sha256": "f14fd54567b955e659d0cba1443f3ba67b5a2145669bb92f142deb88595fe4b0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3140,
+      "sha256": "313045087876d0856f217a6e0bf0d36c73d216e38f77a521c76b8430221a5cf0"
+    },
+    {
+      "path": "tools/build_function_diagrams.py",
+      "bytes": 2841,
+      "sha256": "2a3a316b079006f413fd127de0a9867cd56818e195ce44c8765ec974e322cacf"
+    },
+    {
+      "path": "tools/build_functions_html.py",
+      "bytes": 28111,
+      "sha256": "3eb3580b9ddba9e5ec8b956e210b755e5f15f88eb3751ab8b73cb89422a3e762"
+    },
+    {
+      "path": "tools/build_sets_guarded.ps1",
+      "bytes": 4974,
+      "sha256": "54844cbc6e93e2ed4aab7ba4d313182be161f878bafa23bd5b07f15c352afddd"
+    },
+    {
+      "path": "tools/prepare_arithmetization.py",
+      "bytes": 3465,
+      "sha256": "5addeb39588e75c920f003eefa19f9709c64c93870305fd026b00f7da71aaaf6"
+    },
+    {
+      "path": "tools/prepare_functions.py",
+      "bytes": 2447,
+      "sha256": "4e7c5d9853f1e5dfccac09152bdd15f1a5ceac2b851ae951a4a118eb06368f1f"
+    },
+    {
+      "path": "tools/prepare_infinite.py",
+      "bytes": 3442,
+      "sha256": "8279457fdcbce9f989409d767cafd3418f78908c4e96cce410e3bb7ac185b9d7"
+    },
+    {
+      "path": "tools/prepare_size.py",
+      "bytes": 3105,
+      "sha256": "6cb7acddd3d9fe73b8c35890816e07ad347e6cd9c4d7ccc00bf201fb855d9281"
+    }
+  ]
+}

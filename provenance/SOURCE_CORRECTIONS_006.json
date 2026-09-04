@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-04T21:40:01.680874+00:00",
+  "audit_id": "GU-OLINF-20260904",
+  "audit_method": "Bounded same-agent comparison of each suspect statement with its immediately controlling definition, type constraints and proof construction at the frozen revision.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLINF-001",
+      "unit_id": "OLP-0051",
+      "classification": "confirmed_unbound_carrier_and_missing_self_map_constraints",
+      "finding": "The closure definition quantifies over any function and any o, the following lemma mentions o∈A without binding A, and its proof assumes ran(f)∪{o} is f-closed. That proof requires f to be a self-map on a carrier containing o.",
+      "source_path": "content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "source_locator": "dedekind-algebra.tex:41-64",
+      "source_bytes": 5072,
+      "source_sha256": "9cee716bb8cb3bfd507ed5c17bbd4477d05995af6f8f8d411087793bdaa86036",
+      "target_path": "gu/content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "target_bytes": 8942,
+      "target_sha256": "8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe",
+      "corrected_body_line": 41,
+      "adjacent_note_line": 47,
+      "handling": "Made the carrier explicit throughout the controlling definition and lemma as f:A→A, X⊆A and o∈A, and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "source_under_specification": "any function f; any o; later unbound A",
+        "made_explicit": "f:A→A; X⊆A; o∈A"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLINF-002",
+      "unit_id": "OLP-0054",
+      "classification": "confirmed_malformed_nested_cardinality_conclusion",
+      "finding": "The helper proposition nests A≈B inside the first argument of another cardinality comparison. Its proof constructs bijections C→B and A→B, yielding A≈B and B≈C.",
+      "source_path": "content/sets-functions-relations/infinite/card-sb.tex",
+      "source_locator": "card-sb.tex:49-53",
+      "source_bytes": 4143,
+      "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
+      "target_path": "gu/content/sets-functions-relations/infinite/card-sb.tex",
+      "target_bytes": 7312,
+      "target_sha256": "630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b",
+      "corrected_body_line": 51,
+      "adjacent_note_line": 53,
+      "handling": "Stated the two cardinality equalities actually established by the proof and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$\\cardeq{\\cardeq{A}{B}}{C}$",
+        "added": "$\\cardeq{A}{B}$ and $\\cardeq{B}{C}$"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_006.json",
+  "semantic_review": "passed same-agent 58-sample full linguistic-block review; see SEMANTIC_REVIEW_006.json",
+  "reader_render": "passed cumulative 51-unit HTML QA and actual live browser inspection; see HTML_QA_006.json",
+  "external_upstream_report_submitted": false
+}

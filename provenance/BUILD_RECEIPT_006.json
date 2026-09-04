@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-gu-guarded-tex/1",
+  "started_utc": "2026-09-04T21:36:09.0310735Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 15000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 62668,
+      "exit_code": 0,
+      "seconds": 3.4154489,
+      "pdf_sha256": "9b9b6a62afc0f2bd28fe96561b592f716ed2db7c85155e7a974525f59b4698b2"
+    },
+    {
+      "pass": 2,
+      "process_id": 72128,
+      "exit_code": 0,
+      "seconds": 3.3512739,
+      "pdf_sha256": "d11937d324edae265cd2d8d9c2143dccea947fcd68f9ad226d9c6e1647540fa6"
+    },
+    {
+      "pass": 3,
+      "process_id": 19064,
+      "exit_code": 0,
+      "seconds": 3.7934875,
+      "pdf_sha256": "e343a94b91132aeb9c12226f95ac0df71635435dbb70c5d81a1b6771975388a9"
+    }
+  ],
+  "status": "built_pending_visual_and_semantic_qa",
+  "replay_equal": false,
+  "log_warnings": [
+    "Package epstopdf Warning: Shell escape feature is not enabled.",
+    "LaTeX Font Warning: Command \\small invalid in math mode on input line 2834.",
+    "LaTeX Font Warning: Command \\small invalid in math mode on input line 2843.",
+    "LaTeX Font Warning: Command \\small invalid in math mode on input line 2853.",
+    "Overfull \\hbox (47.69691pt too wide) in paragraph at lines 3994--3994",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "LaTeX Warning: Reference `sfr:siz::chap' on page 48 undefined on input line 422",
+    "LaTeX Warning: Reference `his:set:mythology:sec' on page 48 undefined on input ",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "LaTeX Warning: Reference `his:set:limits:sec' on page 55 undefined on input lin",
+    "LaTeX Warning: Reference `his:set:limits:sec' on page 55 undefined on input lin",
+    "LaTeX Warning: Reference `sth:::part' on page 60 undefined on input line 5180.",
+    "LaTeX Warning: Reference `sth:ord-arithmetic::chap' on page 60 undefined on inp",
+    "LaTeX Warning: Reference `sfr:arith::chap' on page 61 undefined on input line 5",
+    "LaTeX Warning: Reference `sfr:arith::chap' on page 61 undefined on input line 5",
+    "LaTeX Warning: There were undefined references."
+  ],
+  "ended_utc": "2026-09-04T21:36:19.6459948Z"
+}

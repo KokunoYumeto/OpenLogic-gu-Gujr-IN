@@ -1,21 +1,22 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-04T20:53:34.389313+00:00",
+  "checkpoint_utc": "2026-09-04T21:46:41.779088+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 45,
+  "translated_units": 51,
   "publicly_verified_release_units": 16,
+  "publicly_verified_source_checkpoint_units": 45,
   "total_units": 722,
-  "aligned_linguistic_blocks": 567,
-  "source_math_spans_verified": 2821,
+  "aligned_linguistic_blocks": 625,
+  "source_math_spans_verified": 3028,
   "semantic_review": {
     "method": "same-agent source comparison and reverse paraphrase",
-    "samples": 146,
+    "samples": 204,
     "independent_native_certification": false,
-    "status": "passed_for_current_45_unit_scope"
+    "status": "passed_for_current_51_unit_scope"
   },
   "source_corrections": {
-    "count": 21,
+    "count": 23,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -37,28 +38,28 @@
       "OLARI-001",
       "OLARI-002",
       "OLARI-003",
-      "OLARI-004"
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/arithmetization.html",
-    "bytes": 1144911,
-    "sha256": "e8540d1d1304297d81f4a7da620e0a2f19c36e7df9a59df09dd728b565856933",
-    "source_units_covered": 45,
-    "arithmetization_units_complete": 8,
-    "mathml_nodes": 2806,
-    "images": 12,
-    "unique_ids": 160,
+    "path": "reader/infinite.html",
+    "bytes": 1252499,
+    "sha256": "0721d58b2164784b5de2b7a0c874108ae74552d0684b3ad5eafec82bd9ca5071",
+    "source_units_covered": 51,
+    "infinite_units_complete": 6,
+    "mathml_nodes": 3031,
+    "images": 13,
+    "unique_ids": 192,
     "broken_internal_links": 0,
-    "arithmetization_section_ids": [
-      "sfr:arith:int:sec",
-      "sfr:arith:rat:sec",
-      "sfr:arith:real:sec",
-      "sfr:arith:cuts:sec",
-      "sfr:arith:ref:sec",
-      "sfr:arith:check:sec",
-      "sfr:arith:cauchy:sec"
+    "infinite_section_ids": [
+      "sfr:infinite:hilbert:sec",
+      "sfr:infinite:dedekind:sec",
+      "sfr:infinite:induction:sec",
+      "sfr:infinite:dedekindsproof:sec",
+      "sfr:infinite:card-sb:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -81,12 +82,14 @@
       "OLARI-001",
       "OLARI-002",
       "OLARI-003",
-      "OLARI-004"
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002"
     ],
     "gujarati_character_inventory_preserved": true,
     "main_gujarati_character_sequence_preserved": true,
     "footnote_gujarati_character_sequence_preserved": true,
-    "footnotes": 8,
+    "footnotes": 9,
     "partial_arrows": 6,
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
@@ -94,8 +97,8 @@
     "browser_inspection": "passed_actual_live_browser_inspection"
   },
   "pdf": {
-    "status": "pending_shared_tex_slot",
-    "latest_attempt_receipt": "BUILD_RECEIPT_005.json",
+    "status": "built_unstable_pending_reproducibility_and_visual_qa",
+    "latest_attempt_receipt": "BUILD_RECEIPT_006.json",
     "publication_gate": "three guarded passes, reproducible hash, all-page visual inspection"
   },
   "batches": {
@@ -128,8 +131,14 @@
       "blocks": 103,
       "math": 424,
       "semantic": 55
+    },
+    "006": {
+      "units": 6,
+      "blocks": 58,
+      "math": 207,
+      "semantic": 58
     }
   },
-  "status": "45_unit_source_and_html_checkpoint_passed; cumulative_pdf_pending; complete_corpus_in_progress",
+  "status": "51_unit_source_and_html_checkpoint_passed; cumulative_pdf_reproducibility_and_visual_qa_pending; complete_corpus_in_progress",
   "full_corpus_complete": false
 }
