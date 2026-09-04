@@ -1,0 +1,15 @@
+@font-face { font-family: Gujarati; src: url('../fonts/NotoSansGujarati-Regular.ttf'); }
+@font-face { font-family: Gujarati; src: url('../fonts/NotoSansGujarati-Bold.ttf'); font-weight: 700; }
+html { background: #f8f7f3; color: #182320; }
+body { font-family: Gujarati, sans-serif; max-width: 850px; margin: auto; padding: 2rem; line-height: 1.85; }
+h1,h2 { line-height: 1.4; color:#183c37; }
+a { color: #065da3; }
+blockquote { margin: 1.4rem 0; padding: .2rem 1.2rem; border-left: 3px solid #bbcdc7; }
+img { width: min(80%, 340px); height: auto; }
+figure { margin: 1.5rem 0; text-align: center; }
+figure img { display: block; margin: auto auto 1rem; }
+figcaption { font-size: .92em; }
+aside { border: 1px solid #bbcdc7; border-radius: 6px; padding: .5rem 1rem; margin-bottom: 2rem; }
+math { font-family: math; font-size: 1.05em; }
+math[display='block'] { margin: 1rem 0; overflow-x: auto; }
+@media (max-width:600px) { body { padding: 1rem; } }

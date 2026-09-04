@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{NotoSansGujarati-Regular.ttf}[Path=fonts/,Renderer=HarfBuzz,Script=Gujarati,BoldFont=NotoSansGujarati-Bold.ttf,ItalicFont=NotoSansGujarati-Regular.ttf,BoldItalicFont=NotoSansGujarati-Bold.ttf]
+\usepackage{amsmath,amssymb,amsthm,nicefrac}
+\usepackage{tikz}
+\usepackage{xparse}
+\usepackage[unicode,colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={ગણો — ઓપન લોજિક ગુજરાતી},pdfauthor={Open Logic Project; Gujarati machine translation}}
+\pdfvariable suppressoptionalinfo 767
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.15}
+\emergencystretch=2em
+\renewcommand{\contentsname}{વિષયસૂચિ}
+\renewcommand{\figurename}{આકૃતિ}
+\renewcommand{\proofname}{સાબિતી}
+\theoremstyle{definition}
+\newtheorem{defn}{વ્યાખ્યા}[section]
+\newtheorem{ex}[defn]{ઉદાહરણ}
+\newtheorem{prob}{સ્વાધ્યાય}[section]
+\newtheorem{thm}[defn]{પ્રમેય}
+\newtheorem{prop}[defn]{વિધાન}
+\newenvironment{explain}{}{}
+\newenvironment{digress}{\par\smallskip}{\par\smallskip}
+\newenvironment{tagblock}[1]{}{}
+\newcommand{\Nat}{\mathbb{N}}
+\newcommand{\Int}{\mathbb{Z}}
+\newcommand{\Rat}{\mathbb{Q}}
+\newcommand{\Real}{\mathbb{R}}
+\newcommand{\PosInt}{\mathbb{Z}^{+}}
+\newcommand{\Bin}{\mathbb{B}}
+\newcommand{\Pow}[1]{\wp(#1)}
+\newcommand{\Setabs}[2]{\{#1:#2\}}
+\newcommand{\tuple}[1]{\langle #1\rangle}
+\newcommand{\len}[1]{\mathrm{len}(#1)}
+\let\phi\varphi
+\newcommand{\lif}{\mathbin{\rightarrow}}
+\newcommand{\olfileid}[3]{\gdef\olpartid{#1}\gdef\olchapid{#2}\gdef\olsecid{#3}}
+\newcommand{\olsection}[1]{\section{#1}\label{\olpartid:\olchapid:\olsecid:sec}}
+\newcommand{\ollabel}[1]{\label{\olpartid:\olchapid:\olsecid:#1}}
+\NewDocumentCommand{\olref}{o o o m}{%
+\IfNoValueTF{#1}{\ref{\olpartid:\olchapid:\olsecid:#4}}{%
+\IfNoValueTF{#2}{\ref{\olpartid:\olchapid:#1:#4}}{%
+\IfNoValueTF{#3}{\ref{\olpartid:#1:#2:#4}}{\ref{#1:#2:#3:#4}}}}}
+\newcommand{\oliflabeldef}[3]{#3}
+\colorlet{oldiagcolorA}{black}
+\colorlet{oldiagcolorB}{gray}
+\definecolor{oldiagcolorC}{HTML}{a81c21}
+\newcommand{\olasset}[1]{\centering\input{upstream/#1}}
+\begin{document}
+\begin{titlepage}
+{\Huge\bfseries ગણો\par}
+\vspace{1em}
+{\Large ઓપન લોજિક — ગુજરાતી\par}
+\vspace{2em}
+ઓપન લોજિક પ્રોજેક્ટના અંગ્રેજી મૂળનો ગુજરાતી અનુવાદ.\par
+\vspace{1em}
+આ પ્રકાશનમાં ગણોનું સંપૂર્ણ પ્રકરણ છે: ઘટકો દ્વારા નિર્ધારિત સમાનતા,
+ઉપગણો અને ઘાતગણો, મહત્ત્વના ગણો, યોગગણો અને છેદગણો,
+કાર્તેઝીય ગુણાકાર તથા રસેલનો વિરોધાભાસ.\par
+\vfill
+આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.
+આ આવૃત્તિમાં મૂળનાં ૭ એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
+પરિભાષાના કેટલાક નિર્ણયો કામચલાઉ છે. સંપાદકીય નોંધો અને
+ચકાસણીની વિગતો સાથેની અંગ્રેજી માહિતી અલગ ફાઇલમાં છે.\par
+\vspace{1em}
+\href{https://github.com/OpenLogicProject/OpenLogic}{Open Logic Project}
+\quad \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}\par
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{અનુવાદોનું કેન્દ્ર}\par
+\end{titlepage}
+\tableofcontents
+\clearpage
+\input{build/sets-body.tex}
+\end{document}

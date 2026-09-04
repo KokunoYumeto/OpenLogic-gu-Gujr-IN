@@ -1,0 +1,80 @@
+{
+  "schema": "openlogic-gu-semantic-review/1",
+  "method": "Same AI agent reread aligned source and target and produced reverse paraphrases. This is not independent human review or a fluency certification.",
+  "scope": "All 86 linguistic blocks compared during drafting; nine conceptual-risk blocks explicitly reverse-paraphrased here.",
+  "samples": [
+    {
+      "segment_id": "OLP-0005-B007",
+      "source_segment_sha256": "e11052d2c0bf7cbc8a4f5a8ba67c1a51676dec652e3b9a0e73b06a25711d8da5",
+      "target_segment_sha256": "7de428cea04566668e647b8caffa32fc11a5d801a13c3a91d8c2e8811a062ede",
+      "reverse_paraphrase_english": "Two sets are equal exactly when every member of the first belongs to the second and conversely.",
+      "comparison": "Both directions preserved; no existence claim added to definition.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0005-B012",
+      "source_segment_sha256": "c0c079a49b7ae943c120dde448047b64a278eadfbccfb2fab0b3db8b16ff35ff",
+      "target_segment_sha256": "02506625c551dcdfce32563220c58fbc595b3fa12e5942d0ad1dfb78023b30db",
+      "reverse_paraphrase_english": "A perfect number equals the sum of its proper divisors; six is the only positive perfect number below ten, with the displayed source bound 0 <= x <= 10 unchanged.",
+      "comparison": "Definition and example preserved. Source subsequently qualifies general set-existence wording in Russell section; translation keeps that sequencing. Perfect-number lexical label remains provisional.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0006-B008",
+      "source_segment_sha256": "299727b0a5dc7ae203dd4a76b1bcc7af17c3ffdfc86f418d934bbd83c29ab041",
+      "target_segment_sha256": "d43c07df3b3ddbb544f3d96873554643c189f7163f6366f983e302f78e96bf1e",
+      "reverse_paraphrase_english": "Two belongs to the integers; even numbers form a subset. A set can simultaneously be a member and subset of another set.",
+      "comparison": "Membership versus inclusion, singleton and nested singleton examples intact.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0006-B009",
+      "source_segment_sha256": "2e75907e57836259c06bd4f9b854fdf7fa7590050c53a61b383852759be3bfd8",
+      "target_segment_sha256": "b2dd9f2c485fd84f1848c09a7ef52bd4ea74d6a1975f21af049936ecf0963a83",
+      "reverse_paraphrase_english": "A equals B exactly when each is a subset of the other; the two halves correspond to extensionality.",
+      "comparison": "Iff and reversed quantification retained.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0008-B022",
+      "source_segment_sha256": "594368e2a1950d5181345f2e6ca40f8139dcb443847faf234a9344f53c4e41d5",
+      "target_segment_sha256": "c1aa15d3bead184ab568e12cb68eb8a63d6d2e6f736e44e383409a72a10deddf",
+      "reverse_paraphrase_english": "The intersection of a family contains precisely the objects common to every member of that family.",
+      "comparison": "Universal scope, not existential. Source's empty-family convention is not silently repaired.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0009-B009",
+      "source_segment_sha256": "6e937f0def2a00f5a3d81e8312e10bf8d966f5b1a91b58b64601a3d10f572ce2",
+      "target_segment_sha256": "72ec751661788ffb5eebdc6c4cafb0c832abbe5eda956a0f6aeb3b08beaca5a5",
+      "reverse_paraphrase_english": "Triples are nested pairs with the first component a pair; quadruples nest to the left in the same way.",
+      "comparison": "Wiener–Kuratowski/nesting formulas unchanged; provisional Gujarati tuple labels recorded.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0009-B016",
+      "source_segment_sha256": "419f56f9a1d729cacc9c73e97681ee5703feddf2aa18a38bac9150d39b5987ff",
+      "target_segment_sha256": "4e0640d779331f6193c12637778c7cfacae71e625135aae10b386575a938ee57",
+      "reverse_paraphrase_english": "For each x in A there are m pairs with that first component; distinct first components give disjoint rows, hence n times m members.",
+      "comparison": "Counting proof preserves disjointness and union argument.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0010-B005",
+      "source_segment_sha256": "2d87e00f082b79799a46407ccdf8809c81f3a10c4d1cf1a3d8ca018f497db4f3",
+      "target_segment_sha256": "7ef23dc96feee7b7f236bba99134519b05cc5bca8de02d5400198a7a44da9433",
+      "reverse_paraphrase_english": "Extensionality gives uniqueness of the set satisfying a property, if it exists; it does not grant existence for every property.",
+      "comparison": "Conditional scope explicitly preserved, with existence italicized in target.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    },
+    {
+      "segment_id": "OLP-0010-B011",
+      "source_segment_sha256": "29c961c98f91bbee7b0d93aca6fccb0e3deb3885f6a3186141a3be4a1b6e9f4d",
+      "target_segment_sha256": "cc1ef01a544a1cba33ca2c2348290e249a6d4930fe42c2fe905f05f2ebc6ac00",
+      "reverse_paraphrase_english": "Assuming R belongs to itself contradicts its defining nonselfmembership; assuming nonmembership satisfies the defining property and yields membership.",
+      "comparison": "Both branches retained; no appeal to a universal set or native witness replaces the original proof.",
+      "result": "pass_with_recorded_lexical_uncertainty"
+    }
+  ],
+  "known_language_uncertainty": "See TERM_DECISIONS.jsonl; source meaning governs every provisional term."
+}

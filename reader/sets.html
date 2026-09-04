@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+
+<html lang="gu-IN" xml:lang="gu-IN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="pandoc" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>ગણો — ઓપન લોજિક ગુજરાતી</title>
+<style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+<link href="reader.css" rel="stylesheet"/>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">ગણો — ઓપન લોજિક ગુજરાતી</h1>
+</header><aside aria-label="આવૃત્તિ વિશે"><p>આ યંત્ર દ્વારા કરેલો ગુજરાતી અનુવાદ છે. આ આવૃત્તિમાં ગણોનું સંપૂર્ણ પ્રકરણ છે: મૂળનાં ૭ એકમો, કુલ ૭૨૨માંથી. સમગ્ર ગ્રંથનું કામ ચાલુ છે. <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#sfr:set:bas:sec" id="toc-sfr:set:bas:sec"><span class="toc-section-number">1</span> ઘટકો દ્વારા નિર્ધારિત સમાનતા</a></li>
+<li><a href="#sfr:set:sub:sec" id="toc-sfr:set:sub:sec"><span class="toc-section-number">2</span> ઉપગણો અને ઘાતગણો</a></li>
+<li><a href="#sfr:set:imp:sec" id="toc-sfr:set:imp:sec"><span class="toc-section-number">3</span> કેટલાક મહત્ત્વના ગણો</a></li>
+<li><a href="#sfr:set:uni:sec" id="toc-sfr:set:uni:sec"><span class="toc-section-number">4</span> યોગગણો અને છેદગણો</a></li>
+<li><a href="#sfr:set:pai:sec" id="toc-sfr:set:pai:sec"><span class="toc-section-number">5</span> જોડ, બહુજોડ અને કાર્તેઝીય
+ગુણાકાર</a></li>
+<li><a href="#sfr:set:rus:sec" id="toc-sfr:set:rus:sec"><span class="toc-section-number">6</span> રસેલનો વિરોધાભાસ</a></li>
+</ul>
+</nav>
+<h2 data-number="1" id="sfr:set:bas:sec"><span class="header-section-number">1</span> ઘટકો દ્વારા નિર્ધારિત સમાનતા</h2>
+<p><em>ગણ</em> એટલે વસ્તુઓનો એવો સંગ્રહ, જેને <span>એક જ</span> વસ્તુ તરીકે ગણવામાં
+આવે. ગણ બનાવતી વસ્તુઓને તેના <em>ઘટકો</em> અથવા <em>સભ્યો</em> કહે છે. જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+ગણ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+ઘટક હોય, તો આપણે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x \in A</annotation></semantics></math>
+લખીએ; જો ન હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x \notin A</annotation></semantics></math>
+લખીએ. જે ગણમાં એક પણ ઘટક ન હોય તેને <em>ખાલી</em> ગણ કહે છે અને
+“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>∅</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math>”
+વડે દર્શાવીએ છીએ.</p>
+<p>આપણે ગણને કેવી રીતે <em>નિર્દિષ્ટ</em> કરીએ છીએ, તેના ઘટકોને કયા
+<em>ક્રમમાં</em> મૂકીએ છીએ, કે તેના ઘટકોને <em>કેટલી વાર</em> ગણીએ છીએ, તેનાથી
+કોઈ ફરક પડતો નથી. તેના ઘટકો કયા છે એટલું જ મહત્ત્વનું છે. આ વાતને આપણે નીચેના
+સિદ્ધાંતમાં વ્યક્ત કરીએ છીએ.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 1.1 (ઘટકો દ્વારા નિર્ધારિત સમાનતા).</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+ગણો હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A = B</annotation></semantics></math>
+ત્યારે અને ત્યારે જ થાય જ્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+દરેક ઘટક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+પણ ઘટક હોય અને ઊલટું પણ સાચું હોય.</p>
+</blockquote>
+<p>ઘટકો દ્વારા નિર્ધારિત સમાનતાનો સિદ્ધાંત કેટલીક સંજ્ઞાઓને યોગ્ય ઠરાવે છે. સામાન્ય
+રીતે, આપણી પાસે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mn>1</mn></msub><annotation encoding="application/x-tex">a_{1}</annotation></semantics></math>,
+…,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>n</mi></msub><annotation encoding="application/x-tex">a_{n}</annotation></semantics></math>
+વસ્તુઓ હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a_{1}, \dots, a_{n}\}</annotation></semantics></math>
+એ <em>ચોક્કસ એ જ</em> ગણ છે જેના ઘટકો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_1, \ldots, a_n</annotation></semantics></math>
+છે. આપણે “<em>ચોક્કસ એ જ</em>” શબ્દો પર ભાર મૂકીએ છીએ, કારણ કે આ સિદ્ધાંત જણાવે છે
+કે આવો <em>એક જ</em> ગણ હોઈ શકે. હકીકતમાં, આ સિદ્ધાંત નીચેની સમાનતાઓને પણ યોગ્ય
+ઠરાવે છે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo form="postfix" stretchy="false">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\{a, a, b\} = \{a, b\} = \{b,a\}.</annotation></semantics></math>
+આથી એ વાત સ્પષ્ટ થાય છે કે ગણોનો વિચાર કરતી વખતે તેમના ઘટકોનો ક્રમ કે તેમને કેટલી
+વાર દર્શાવ્યા છે તે આપણા માટે મહત્ત્વનું નથી.</p>
+<blockquote>
+<p><strong>ઉદાહરણ 1.2.</strong> તમારી પાસે કેટલીક વસ્તુઓ હોય, ત્યારે તેમને એકત્ર
+કરીને ગણ બનાવી શકો છો. દાખલા તરીકે, રિચર્ડનાં ભાઈબહેનોનો ગણ એક વ્યક્તિ ધરાવતો
+ગણ છે, અને તેને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mtext mathvariant="normal">રૂથ</mtext><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">S=\{\textrm{રૂથ}\}</annotation></semantics></math>
+તરીકે લખી શકાય.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>
+કરતાં નાના ધન પૂર્ણાંકોનો ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, 2, 3\}</annotation></semantics></math>
+છે, પરંતુ તેને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{3, 2, 1\}</annotation></semantics></math>
+અથવા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, 2, 1, 2, 3\}</annotation></semantics></math>
+તરીકે પણ લખી શકાય. ઘટકો દ્વારા નિર્ધારિત સમાનતાના સિદ્ધાંત અનુસાર આ બધા એક જ
+ગણ છે. કારણ કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, 2, 3\}</annotation></semantics></math>નો
+દરેક ઘટક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{3, 2, 1\}</annotation></semantics></math>નો
+(અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, 2, 1, 2, 3\}</annotation></semantics></math>નો)
+પણ ઘટક છે, અને ઊલટું પણ સાચું છે.</p>
+</blockquote>
+<p>ઘણી વાર આપણે ગણના ઘટકોમાં રહેલા કોઈ સામાન્ય ગુણધર્મ દ્વારા ગણને નિર્દિષ્ટ કરીશું.
+તે માટે આપણે આ સંક્ષિપ્ત સંજ્ઞા વાપરીશું:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x:\varphi(x)\}</annotation></semantics></math>.
+અહીં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi(x)</annotation></semantics></math>
+એ એવો ગુણધર્મ દર્શાવે છે જે ગણના ઘટકોમાં ગણાવા માટે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>માં
+હોવો જરૂરી છે.</p>
+<blockquote>
+<p><strong>ઉદાહરણ 1.3.</strong> આપણા ઉદાહરણમાં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>ને
+આ રીતે પણ નિર્દિષ્ટ કરી શક્યા હોત:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> રિચર્ડનાં ભાઈબહેનો પૈકી છે</mtext></mrow><mo form="postfix" stretchy="false">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">S = \{x:x \text{ રિચર્ડનાં ભાઈબહેનો પૈકી છે}\}.</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 1.4.</strong> કોઈ સંખ્યાને <em>પૂર્ણ સંખ્યા</em> ત્યારે અને ત્યારે
+જ કહે છે જ્યારે તે તેના ઉચિત ભાજકોના સરવાળા જેટલી હોય (એટલે કે, તેને નિઃશેષ ભાગતા
+હોય પણ તેના જેટલા ન હોય તેવા ભાજકો). દાખલા તરીકે,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math>
+પૂર્ણ સંખ્યા છે, કારણ કે તેના ઉચિત ભાજકો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+અને <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>
+છે, અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>=</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">6 = 1 + 2 + 3</annotation></semantics></math>.
+હકીકતમાં,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math>
+કરતાં નાના ધન પૂર્ણાંકોમાં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math>
+એકમાત્ર પૂર્ણ સંખ્યા છે. આથી, ઘટકો દ્વારા નિર્ધારિત સમાનતાનો સિદ્ધાંત વાપરીને કહી
+શકીએ:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>6</mn><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> પૂર્ણ સંખ્યા છે અને </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>10</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{6\} = \{x:x\text{ પૂર્ણ સંખ્યા છે અને }0 \leq x \leq 10\}</annotation></semantics></math>
+જમણી બાજુની સંજ્ઞાને આપણે આ રીતે વાંચીએ: “એવા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>નો
+ગણ કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+પૂર્ણ સંખ્યા છે અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">0 \leq x \leq 10</annotation></semantics></math>”.
+અહીંની સમાનતા ખાતરી આપે છે કે ગણોનો વિચાર કરતી વખતે તેમને કેવી રીતે નિર્દિષ્ટ કર્યા
+છે તે મહત્ત્વનું નથી. વધુ સામાન્ય રીતે, ઘટકો દ્વારા નિર્ધારિત સમાનતાનો સિદ્ધાંત ખાતરી
+આપે છે કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi(x)</annotation></semantics></math>
+હોય તેવા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>નો
+હંમેશાં એક જ ગણ હોય. આથી
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x:\varphi(x)\}</annotation></semantics></math>ને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi(x)</annotation></semantics></math>
+હોય તેવા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>નો
+<em>ચોક્કસ એ જ</em> ગણ કહેવું યોગ્ય છે.</p>
+</blockquote>
+<p>ઘટકો દ્વારા નિર્ધારિત સમાનતાનો સિદ્ધાંત ગણો એક જ છે તે બતાવવાની રીત આપે છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A = B</annotation></semantics></math>
+બતાવવા માટે, જ્યારે પણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x \in A</annotation></semantics></math>
+હોય ત્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">x \in B</annotation></semantics></math>
+પણ હોય, અને જ્યારે પણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">y \in B</annotation></semantics></math>
+હોય ત્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">y \in A</annotation></semantics></math>
+પણ હોય, તે બતાવો.</p>
+<blockquote>
+<p><strong>સ્વાધ્યાય 1.1.</strong> વધુમાં વધુ એક જ ખાલી ગણ હોઈ શકે તે સાબિત
+કરો. એટલે કે, જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+એવા ગણો હોય જેમાં કોઈ ઘટકો ન હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A = B</annotation></semantics></math>
+થાય તે બતાવો.</p>
+</blockquote>
+<h2 data-number="2" id="sfr:set:sub:sec"><span class="header-section-number">2</span> ઉપગણો અને ઘાતગણો</h2>
+<p>આપણે ઘણી વાર ગણોની તુલના કરવા માગીશું. આવી તુલનાનો એક સ્પષ્ટ પ્રકાર આ છે:
+<em>એક ગણમાં જે કંઈ છે તે બધું બીજા ગણમાં પણ છે</em>. આ પરિસ્થિતિ એટલી મહત્ત્વની છે કે
+તેના માટે આપણે નવી સંજ્ઞા રજૂ કરીએ છીએ.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 2.1 (ઉપગણ).</strong> જો ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+દરેક ઘટક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+પણ ઘટક હોય, તો આપણે કહીએ કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+<em>ઉપગણ</em> છે, અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq B</annotation></semantics></math>
+લખીએ. જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+ઉપગણ ન હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \not\subseteq B</annotation></semantics></math>
+લખીએ. જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq B</annotation></semantics></math>
+પરંતુ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≠</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \neq B</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊊</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subsetneq B</annotation></semantics></math>
+લખીએ અને કહીએ કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+<em>ઉચિત ઉપગણ</em> છે.</p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 2.2.</strong> દરેક ગણ પોતાનો જ ઉપગણ છે, અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>∅</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math>
+દરેક ગણનો ઉપગણ છે. યુગ્મ પ્રાકૃતિક સંખ્યાઓનો ગણ પ્રાકૃતિક સંખ્યાઓના ગણનો ઉપગણ છે.
+વળી,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo>⊆</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{ a, b \} \subseteq \{ a, b, c \}</annotation></semantics></math>.
+પરંતુ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>e</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{ a, b, e \}</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{ a, b, c \}</annotation></semantics></math>નો
+ઉપગણ નથી.</p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 2.3.</strong> સંખ્યા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+પૂર્ણાંકોના ગણનો ઘટક છે, જ્યારે યુગ્મ સંખ્યાઓનો ગણ પૂર્ણાંકોના ગણનો ઉપગણ છે. તેમ છતાં,
+કોઈ ગણ બીજા ગણનો ઘટક અને ઉપગણ <em>બંને</em> હોઈ શકે. દા.ત.,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo form="postfix" stretchy="false">}</mo><mo>∈</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo form="postfix" stretchy="false">}</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0\} \in \{0, \{0\}\}</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo form="postfix" stretchy="false">}</mo><mo>⊆</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo form="postfix" stretchy="false">}</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0\} \subseteq \{0, \{0\}\}</annotation></semantics></math>
+પણ છે.</p>
+</blockquote>
+<p>ઘટકો દ્વારા નિર્ધારિત સમાનતાનો સિદ્ધાંત ગણો એક જ હોવાની કસોટી આપે છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A = B</annotation></semantics></math>
+ત્યારે અને ત્યારે જ થાય જ્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+દરેક ઘટક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+પણ ઘટક હોય અને ઊલટું પણ સાચું હોય. “ઉપગણ”ની વ્યાખ્યા અનુસાર
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq B</annotation></semantics></math>
+એ આ કસોટીના પહેલા ભાગનું જ નિરૂપણ છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+દરેક ઘટક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+પણ ઘટક છે. અલબત્ત,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ની
+અદલાબદલી કરીએ તો પણ આ વ્યાખ્યા લાગુ પડે છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">B \subseteq A</annotation></semantics></math>
+ત્યારે અને ત્યારે જ થાય જ્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+દરેક ઘટક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+પણ ઘટક હોય. આ તો ઘટકો દ્વારા નિર્ધારિત સમાનતાના સિદ્ધાંતનો “ઊલટું પણ” એવો ભાગ
+જ છે. બીજા શબ્દોમાં, આ સિદ્ધાંત અનુસાર ગણો ત્યારે અને ત્યારે જ સમાન હોય જ્યારે તેઓ
+એકબીજાના ઉપગણો હોય.</p>
+<blockquote>
+<p><strong>વિધાન 2.4.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A = B</annotation></semantics></math>
+ત્યારે અને ત્યારે જ થાય જ્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq B</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">B \subseteq A</annotation></semantics></math>
+બંને હોય.</p>
+</blockquote>
+<p>કેટલીક વધુ ઉપયોગી સંજ્ઞાઓ રજૂ કરવાની આ સારી તક છે.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+ઉપગણ ક્યારે કહેવાય તેની વ્યાખ્યા આપતી વખતે આપણે
+“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+દરેક ઘટક …” કહ્યું હતું, અને
+“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>…</mi><annotation encoding="application/x-tex">\dots</annotation></semantics></math>”ની
+જગ્યાએ
+“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+ઘટક છે” મૂક્યું હતું. પરંતુ આવાં વિધાનોનું આ <em>સ્વરૂપ</em> એટલું સામાન્ય છે કે તેના માટે
+ઔપચારિક સંજ્ઞા રજૂ કરવી ઉપયોગી થશે.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 2.5.</strong> <span data-label="sfr:set:sub:forallxina" id="sfr:set:sub:forallxina"></span>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">(</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo form="postfix" stretchy="false">)</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">(\forall x \in A)\varphi</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∀</mo><mi>x</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo>→</mo><mi>φ</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\forall x(x \in A \rightarrow
+\varphi)</annotation></semantics></math>નું સંક્ષિપ્ત સ્વરૂપ છે. તેવી જ રીતે,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">(</mo><mo>∃</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo form="postfix" stretchy="false">)</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">(\exists x \in A)\varphi</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∃</mo><mi>x</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo>∧</mo><mi>φ</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\exists x(x \in A \land \varphi)</annotation></semantics></math>નું
+સંક્ષિપ્ત સ્વરૂપ છે.</p>
+</blockquote>
+<p>આ સંજ્ઞા વાપરીને આપણે કહી શકીએ કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq B</annotation></semantics></math>
+ત્યારે અને ત્યારે જ થાય જ્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">(</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo form="postfix" stretchy="false">)</mo><mi>x</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">(\forall x \in A)x \in B</annotation></semantics></math>
+હોય.</p>
+<p>હવે આપણે એક ખાસ પ્રકારના ગણનો વિચાર કરીએ: આપેલા ગણના બધા ઉપગણોનો ગણ.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 2.6 (ઘાતગણ).</strong>
+ગણ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+બધા ઉપગણોથી બનેલા ગણને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+<em>ઘાતગણ</em> કહે છે અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>℘</mi><mo form="prefix" stretchy="false">(</mo><mi>A</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\wp(A)</annotation></semantics></math>
+વડે દર્શાવીએ છીએ.
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>℘</mi><mo form="prefix" stretchy="false">(</mo><mi>A</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>B</mi><mo>:</mo><mi>B</mi><mo>⊆</mo><mi>A</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\wp(A) = \{B:B \subseteq A\}</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 2.7.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{ a, b, c \}</annotation></semantics></math>ના
+બધા શક્ય ઉપગણો કયા છે? તે આ છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>∅</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a \}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{b\}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{c\}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b\}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, c\}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{b,
+c\}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c\}</annotation></semantics></math>.
+આ બધા ઉપગણોનો ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>℘</mi><mo form="prefix" stretchy="false">(</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\wp(\{a,b,c\})</annotation></semantics></math>
+છે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>℘</mi><mo form="prefix" stretchy="false">(</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>∅</mi><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\wp(\{ a, b, c \}) = \{\emptyset, \{a \}, \{b\}, \{c\}, \{a, b\},
+\{b, c\}, \{a, c\}, \{a, b, c\}\}</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 2.1.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c, d\}</annotation></semantics></math>ના
+બધા ઉપગણોની યાદી બનાવો.</p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 2.2.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>માં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+ઘટકો હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>℘</mi><mo form="prefix" stretchy="false">(</mo><mi>A</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\wp(A)</annotation></semantics></math>માં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>2</mn><mi>n</mi></msup><annotation encoding="application/x-tex">2^n</annotation></semantics></math>
+ઘટકો હોય તે બતાવો.</p>
+</blockquote>
+<h2 data-number="3" id="sfr:set:imp:sec"><span class="header-section-number">3</span> કેટલાક મહત્ત્વના ગણો</h2>
+<blockquote>
+<p><strong>ઉદાહરણ 3.1.</strong> આપણે મુખ્યત્વે એવા ગણોનો અભ્યાસ કરીશું જેમના ઘટકો
+ગાણિતિક વસ્તુઓ હોય. આવા ચાર ગણો એટલા મહત્ત્વના છે કે તેમને ખાસ નામ આપેલાં છે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi mathvariant="double-struck">ℕ</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>…</mi><mo form="postfix" stretchy="false">}</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mtext mathvariant="normal">પ્રાકૃતિક સંખ્યાઓનો ગણ</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi mathvariant="double-struck">ℤ</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>…</mi><mo>,</mo><mi>−</mi><mn>2</mn><mo>,</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi><mo form="postfix" stretchy="false">}</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mtext mathvariant="normal">પૂર્ણાંકોનો ગણ</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi mathvariant="double-struck">ℚ</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mfrac><mi>m</mi><mi>n</mi></mfrac><mo>:</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">ℤ</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> અને </mtext><mspace width="0.333em"></mspace></mrow><mi>n</mi><mo>≠</mo><mn>0</mn><mo form="postfix" stretchy="false">}</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mtext mathvariant="normal">સંમેય સંખ્યાઓનો ગણ</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi mathvariant="double-struck">ℝ</mi><mo>=</mo><mo form="prefix" stretchy="false">(</mo><mi>−</mi><mi>∞</mi><mo>,</mo><mi>∞</mi><mo form="postfix" stretchy="false">)</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mtext mathvariant="normal">વાસ્તવિક સંખ્યાઓનો ગણ (સાતત્યક)</mtext></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+    \mathbb{N}= \{0, 1, 2, 3, \ldots\} \\
+    \text{પ્રાકૃતિક સંખ્યાઓનો ગણ}\\
+    \mathbb{Z}= \{\ldots, -2, -1, 0, 1, 2, \ldots\} \\
+    \text{પૂર્ણાંકોનો ગણ}\\
+    \mathbb{Q}= \{\frac{m}{n}:m, n \in \mathbb{Z}\text{ અને }n \neq 0\}\\
+    \text{સંમેય સંખ્યાઓનો ગણ}\\
+    \mathbb{R}= (-\infty, \infty)\\
+    \text{વાસ્તવિક સંખ્યાઓનો ગણ (સાતત્યક)}
+\end{aligned}</annotation></semantics></math> આ બધા <em>અનંત</em> ગણો છે,
+એટલે કે દરેકમાં અનંત સંખ્યામાં ઘટકો છે.</p>
+<p>આ ગણોમાં આગળ વધતા જઈએ તેમ આપણી પાસે <em>વધુ</em> સંખ્યાઓ ઉમેરાતી જાય છે.
+હકીકતમાં,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℕ</mi><mo>⊆</mo><mi mathvariant="double-struck">ℤ</mi><mo>⊆</mo><mi mathvariant="double-struck">ℚ</mi><mo>⊆</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}\subseteq \mathbb{Z}\subseteq \mathbb{Q}\subseteq \mathbb{R}</annotation></semantics></math>
+હોવું સ્પષ્ટ થવું જોઈએ: દરેક પ્રાકૃતિક સંખ્યા પૂર્ણાંક છે; દરેક પૂર્ણાંક સંમેય સંખ્યા છે; અને દરેક
+સંમેય સંખ્યા વાસ્તવિક સંખ્યા છે. તેવી જ રીતે,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℕ</mi><mo>⊊</mo><mi mathvariant="double-struck">ℤ</mi><mo>⊊</mo><mi mathvariant="double-struck">ℚ</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}\subsetneq \mathbb{Z}\subsetneq \mathbb{Q}</annotation></semantics></math>
+હોવું પણ સ્પષ્ટ થવું જોઈએ, કારણ કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>
+પૂર્ણાંક છે પરંતુ પ્રાકૃતિક સંખ્યા નથી, અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math>
+સંમેય છે પરંતુ પૂર્ણાંક નથી.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">ℚ</mi><mo>⊊</mo><mi mathvariant="double-struck">ℝ</mi></mrow><annotation encoding="application/x-tex">\mathbb{Q}\subsetneq \mathbb{R}</annotation></semantics></math>,
+એટલે કે કેટલીક વાસ્તવિક સંખ્યાઓ સંમેય નથી, તે એટલું સ્પષ્ટ નથી.</p>
+<p>ક્યારેક આપણે ધન પૂર્ણાંકોનો ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">ℤ</mi><mo>+</mo></msup><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>…</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}^+= \{1, 2, 3, \dots\}</annotation></semantics></math>
+અને માત્ર પહેલી બે પ્રાકૃતિક સંખ્યાઓ ધરાવતો ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">𝔹</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{B}= \{0, 1\}</annotation></semantics></math>
+પણ વાપરીશું.</p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 3.2 (પ્રતીકશ્રેણીઓ).</strong> બીજું રસપ્રદ ઉદાહરણ મૂળાક્ષરસમૂહ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+પરથી બનતી <em>સાંત પ્રતીકશ્રેણીઓ</em>નો ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mo>*</mo></msup><annotation encoding="application/x-tex">A^{*}</annotation></semantics></math>
+છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકોનો કોઈ પણ સાંત અનુક્રમ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+પરની પ્રતીકશ્રેણી છે. દરેક
+મૂળાક્ષરસમૂહ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+માટે,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+પરની પ્રતીકશ્રેણીઓમાં આપણે <em>ખાલી પ્રતીકશ્રેણી
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Λ</mi><annotation encoding="application/x-tex">\Lambda</annotation></semantics></math></em>નો
+સમાવેશ કરીએ છીએ. દાખલા તરીકે,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msup><mi mathvariant="double-struck">𝔹</mi><mo>*</mo></msup><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi mathvariant="normal">Λ</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>00</mn><mo>,</mo><mn>01</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>11</mn><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mn>000</mn><mo>,</mo><mn>001</mn><mo>,</mo><mn>010</mn><mo>,</mo><mn>011</mn><mo>,</mo><mn>100</mn><mo>,</mo><mn>101</mn><mo>,</mo><mn>110</mn><mo>,</mo><mn>111</mn><mo>,</mo><mn>0000</mn><mo>,</mo><mi>…</mi><mo form="postfix" stretchy="false">}</mo><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\mathbb{B}^*
+=\{\Lambda,0,1,00,01,10,11,\\
+000,001,010,011,100,101,110,111,0000,\ldots\}.
+\end{aligned}</annotation></semantics></math> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mi>…</mi><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><msup><mi>A</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">x=x_{1}\ldots x_{n}\in A^{*}</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+“અક્ષરો”થી બનેલી પ્રતીકશ્રેણી હોય, તો આપણે કહીએ કે તેની
+<em>લંબાઈ</em> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+છે અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi></mrow><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\mathrm{len}(x)=n</annotation></semantics></math>
+લખીએ.</p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 3.3 (અનંત અનુક્રમો).</strong> કોઈ પણ ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+માટે આપણે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકોના અનંત અનુક્રમોનો
+ગણ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mi>ω</mi></msup><annotation encoding="application/x-tex">A^\omega</annotation></semantics></math>
+પણ વિચારી શકીએ. અનંત અનુક્રમ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><msub><mi>a</mi><mn>2</mn></msub><msub><mi>a</mi><mn>3</mn></msub><msub><mi>a</mi><mn>4</mn></msub><mi>…</mi></mrow><annotation encoding="application/x-tex">a_1a_2a_3a_4\dots</annotation></semantics></math>
+એ વસ્તુઓની એક દિશામાં અનંત સુધી ચાલતી યાદી છે, જેમાંની દરેક વસ્તુ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+ઘટક છે.</p>
+</blockquote>
+<h2 data-number="4" id="sfr:set:uni:sec"><span class="header-section-number">4</span> યોગગણો અને છેદગણો</h2>
+<p><a href="#sfr:set:bas:sec">1</a>માં આપણે ગુણધર્મ દ્વારા ગણોની વ્યાખ્યા, એટલે
+કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x:\varphi(x)\}</annotation></semantics></math>
+સ્વરૂપની વ્યાખ્યાઓ રજૂ કરી હતી. અહીં આપણે કોઈ
+ગુણધર્મ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>નો
+ઉપયોગ કરીએ છીએ, અને આ ગુણધર્મમાં અગાઉ વ્યાખ્યાયિત કરેલા ગણોનો ઉલ્લેખ હોઈ શકે છે.
+દાખલા તરીકે, જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+ગણો હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo>∨</mo><mi>x</mi><mo>∈</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x:x \in A \lor x \in B\}</annotation></semantics></math>
+એ બધી વસ્તુઓનો ગણ છે જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અથવા <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+ઘટકો હોય; એટલે કે તે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+ઘટકોને એકત્ર કરતો ગણ છે. આને <a href="#sfr:set:uni:fig:union">1</a>માં
+દર્શાવ્યા મુજબ જોઈ શકાય, જ્યાં રંગેલો વિસ્તાર બંને ગણો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+ઘટકોને એકસાથે દર્શાવે છે.</p>
+<figure><img alt="બંને ગણોના બધા ઘટકો દર્શાવતી યોગગણની આકૃતિ" src="assets/union.svg"/><figcaption> <strong>આકૃતિ 1.</strong> બે
+ગણોનો યોગગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cup B</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકો અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+ઘટકોને એકત્ર કરતાં મળતો ગણ છે.<span data-label="sfr:set:uni:fig:union" id="sfr:set:uni:fig:union"></span></figcaption></figure>
+<p>ગણો પરની આ ક્રિયા—તેમને એકત્ર કરવાની ક્રિયા—ખૂબ ઉપયોગી અને સામાન્ય છે, તેથી આપણે
+તેને ઔપચારિક નામ અને સંકેત આપીએ છીએ.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 4.1 (યોગગણ).</strong> બે ગણો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+<em>યોગગણ</em>, જેને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cup B</annotation></semantics></math>
+લખીએ છીએ, એ બધી વસ્તુઓનો ગણ છે જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના,
+અથવા બંનેના ઘટકો હોય.
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo>∨</mo><mi>x</mi><mo>∈</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A \cup B = \{x:x \in A \lor x \in B\}</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 4.2.</strong> ઘટકો કેટલી વાર આવ્યા છે તે મહત્ત્વનું ન હોવાથી,
+કોઈ ઘટક સામાન્ય હોય તેવા બે ગણોના યોગગણમાં તે ઘટક એક જ વાર આવે છે. દા.ત.,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>∪</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{ a, b, c\} \cup \{ a, 0, 1\} = \{a, b, c, 0, 1\}</annotation></semantics></math>.</p>
+<p>ગણ અને તેના કોઈ ઉપગણનો યોગગણ મોટો ગણ પોતે જ છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>∪</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c \} \cup \{a \} = \{a, b, c\}</annotation></semantics></math>.</p>
+<p>ગણ અને ખાલી ગણનો યોગગણ તે ગણ પોતે જ છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>∪</mo><mi>∅</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c \} \cup \emptyset = \{a, b, c \}</annotation></semantics></math>.</p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 4.1.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq B</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cup B = B</annotation></semantics></math>
+થાય તે સાબિત કરો.</p>
+</blockquote>
+<p>આપણે યોગક્રિયાની “દ્વૈત” ક્રિયાનો પણ વિચાર કરી શકીએ. આ ક્રિયા એવા બધા
+ઘટકોનો ગણ બનાવે છે જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકો હોય અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+પણ ઘટકો હોય. આ ક્રિયાને <em>છેદક્રિયા</em> કહે છે અને તેને <a href="#sfr:set:uni:fig:intersection">2</a>માં દર્શાવ્યા પ્રમાણે ચિત્રી
+શકાય.</p>
+<figure><img alt="બંને ગણોમાં સામાન્ય ઘટકો દર્શાવતી છેદગણની આકૃતિ" src="assets/intersection.svg"/><figcaption> <strong>આકૃતિ
+2.</strong> બે ગણોનો છેદગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cap B</annotation></semantics></math>
+એ તેમના સામાન્ય ઘટકોનો ગણ છે.<span data-label="sfr:set:uni:fig:intersection" id="sfr:set:uni:fig:intersection"></span></figcaption></figure>
+<blockquote>
+<p><strong>વ્યાખ્યા 4.3 (છેદગણ).</strong> બે ગણો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>નો
+<em>છેદગણ</em>, જેને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cap B</annotation></semantics></math>
+લખીએ છીએ, એ બધી વસ્તુઓનો ગણ છે જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+બંનેના ઘટકો હોય.
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo>∧</mo><mi>x</mi><mo>∈</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A \cap B = \{x:x \in A \land x \in B\}</annotation></semantics></math>
+જો બે ગણોનો છેદગણ ખાલી હોય, તો તેમને <em>અલગ ગણો</em> કહે છે. આનો અર્થ એ છે કે
+તેમનામાં એક પણ સામાન્ય ઘટક નથી.</p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 4.4.</strong> જો બે ગણોમાં એક પણ સામાન્ય ઘટક ન હોય, તો
+તેમનો છેદગણ ખાલી છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>∩</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mi>∅</mi></mrow><annotation encoding="application/x-tex">\{ a, b, c\} \cap \{ 0, 1\} = \emptyset</annotation></semantics></math>.</p>
+<p>જો બે ગણોમાં સામાન્ય ઘટકો હોય, તો તેમનો છેદગણ એ બધા ઘટકોનો ગણ છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>∩</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>d</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c \} \cap \{a, b, d \} = \{a, b\}</annotation></semantics></math>.</p>
+<p>ગણ અને તેના કોઈ ઉપગણનો છેદગણ નાનો ગણ પોતે જ છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>∩</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c\} \cap \{a, b\} = \{a, b\}</annotation></semantics></math>.</p>
+<p>કોઈ પણ ગણ અને ખાલી ગણનો છેદગણ ખાલી છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo><mo>∩</mo><mi>∅</mi><mo>=</mo><mi>∅</mi></mrow><annotation encoding="application/x-tex">\{a, b, c \} \cap \emptyset = \emptyset</annotation></semantics></math>.</p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 4.2.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq B</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cap B = A</annotation></semantics></math>
+થાય તે ચોકસાઈપૂર્વક સાબિત કરો.</p>
+</blockquote>
+<p>આપણે બે કરતાં વધુ ગણોનો યોગગણ કે છેદગણ પણ બનાવી શકીએ. સામાન્ય રીતે આ કરવાની
+એક સુઘડ રીત નીચે મુજબ છે: ધારો કે જે બધા ગણોનો યોગગણ (અથવા છેદગણ) બનાવવો છે તેમને
+આપણે એક જ ગણમાં એકત્ર કરીએ. ત્યાર પછી, આપણા બધા મૂળ ગણોના યોગગણની વ્યાખ્યા એ
+બધી વસ્તુઓના ગણ તરીકે કરી શકીએ જે આ ગણના ઓછામાં ઓછા એક ઘટકમાં હોય; અને છેદગણની
+વ્યાખ્યા એ બધી વસ્તુઓના ગણ તરીકે કરી શકીએ જે આ ગણના દરેક ઘટકમાં હોય.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 4.5.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+ગણોનો ગણ હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋃</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\bigcup A</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકોના ઘટકોનો ગણ છે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo>⋃</mo><mi>A</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ગણ </mtext><mspace width="0.333em"></mspace></mrow><mi>A</mi><mtext mathvariant="normal">ના કોઈ ઘટકમાં છે</mtext><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> એટલે કે,</mtext></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mrow><mtext mathvariant="normal">એવો </mtext><mspace width="0.333em"></mspace></mrow><mi>B</mi><mo>∈</mo><mi>A</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> છે કે </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi><mo>∈</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
+\bigcup A &amp; = \{x:x \text{ ગણ } A \text{ના કોઈ ઘટકમાં છે}\},
+\text{ એટલે કે,}\\
+&amp; = \{x:\text{એવો } B \in A
+  \text{ છે કે } x \in B\}
+\end{align*}</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>વ્યાખ્યા 4.6.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+ગણોનો ગણ હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋂</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\bigcap A</annotation></semantics></math>
+એ બધી વસ્તુઓનો ગણ છે જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+બધા ઘટકોમાં સામાન્ય હોય:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo>⋂</mo><mi>A</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ગણ </mtext><mspace width="0.333em"></mspace></mrow><mi>A</mi><mtext mathvariant="normal">ના દરેક ઘટકમાં છે</mtext><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> એટલે કે,</mtext></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mrow><mtext mathvariant="normal">દરેક </mtext><mspace width="0.333em"></mspace></mrow><mi>B</mi><mo>∈</mo><mi>A</mi><mo>,</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> માટે </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi><mo>∈</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
+\bigcap A &amp; = \{x:x \text{ ગણ } A \text{ના દરેક ઘટકમાં છે}\},
+\text{ એટલે કે,}\\
+ &amp; = \{x:\text{દરેક } B \in A, \text{ માટે } x \in B\}
+\end{align*}</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 4.7.</strong> ધારો કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>d</mi><mo form="postfix" stretchy="false">}</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A = \{ \{ a, b \}, \{ a, d, e \}, \{ a, d \} \}</annotation></semantics></math>.
+તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋃</mo><mi>A</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\bigcup A = \{ a, b, d, e \}</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋂</mo><mi>A</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\bigcap A = \{ a \}</annotation></semantics></math>.</p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 4.3.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+ગણ હોય અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \in B</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mo>⋃</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subseteq \bigcup B</annotation></semantics></math>
+થાય તે બતાવો.</p>
+</blockquote>
+<p>ગણોના અનુક્રમ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">A_1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_2</annotation></semantics></math>,
+…માટે પણ આપણે આમ જ કરી શકીએ:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><munder><mo>⋃</mo><mi>i</mi></munder><msub><mi>A</mi><mi>i</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> કોઈ એક </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>A</mi><mi>i</mi></msub><mtext mathvariant="normal">માં છે</mtext><mo form="postfix" stretchy="false">}</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><munder><mo>⋂</mo><mi>i</mi></munder><msub><mi>A</mi><mi>i</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> દરેક </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>A</mi><mi>i</mi></msub><mtext mathvariant="normal">માં છે</mtext><mo form="postfix" stretchy="false">}</mo><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
+\bigcup_i A_i &amp; = \{x:x \text{ કોઈ એક } A_i \text{માં છે}\}\\
+\bigcap_i A_i &amp; = \{x:x \text{ દરેક } A_i \text{માં છે}\}.
+\end{align*}</annotation></semantics></math></p>
+<p>જ્યારે આપણી પાસે ગણોનો <em>સૂચકગણ</em> હોય, એટલે કે એવો ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+હોય કે દરેક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">i \in I</annotation></semantics></math>
+માટે આપણે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>i</mi></msub><annotation encoding="application/x-tex">A_i</annotation></semantics></math>નો
+વિચાર કરતા હોઈએ, ત્યારે આ સંક્ષિપ્ત સંજ્ઞાઓ પણ વાપરી શકીએ:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><munder><mo>⋃</mo><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></munder><msub><mi>A</mi><mi>i</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo>⋃</mo><mo form="prefix" stretchy="false">{</mo><msub><mi>A</mi><mi>i</mi></msub><mo>:</mo><mi>i</mi><mo>∈</mo><mi>I</mi><mo form="postfix" stretchy="false">}</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><munder><mo>⋂</mo><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow></munder><msub><mi>A</mi><mi>i</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo>⋂</mo><mo form="prefix" stretchy="false">{</mo><msub><mi>A</mi><mi>i</mi></msub><mo>:</mo><mi>i</mi><mo>∈</mo><mi>I</mi><mo form="postfix" stretchy="false">}</mo></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
+    \bigcup_{i \in I} A_i &amp; = \bigcup \{A_i :i \in I\}\\
+    \bigcap_{i \in I} A_i &amp; = \bigcap\{A_i:i \in I\}
+\end{align*}</annotation></semantics></math></p>
+<p>છેલ્લે, આપણે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+એવા બધા ઘટકોના ગણનો વિચાર કરવા માગીએ જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>માં
+નથી. તેને <a href="#sfr:set:uni:difference">3</a>માં દર્શાવ્યા પ્રમાણે ચિત્રી
+શકાય.</p>
+<figure><img alt="પહેલા ગણમાં હોય અને બીજા ગણમાં ન હોય તેવા ઘટકોની આકૃતિ" src="assets/difference.svg"/><figcaption> <strong>આકૃતિ
+3.</strong> બે ગણોનો તફાવત ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>\</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \setminus B</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+એવા ઘટકોનો ગણ છે જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+પણ ઘટકો નથી.<span data-label="sfr:set:uni:difference" id="sfr:set:uni:difference"></span></figcaption></figure>
+<blockquote>
+<p><strong>વ્યાખ્યા 4.8 (તફાવત ગણ).</strong> <em>તફાવત
+ગણ</em> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>\</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \setminus B</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+એવા બધા ઘટકોનો ગણ છે જે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+પણ ઘટકો નથી, એટલે કે,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>\</mo><mi>B</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> અને </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi><mo>∉</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">A\setminus B = \{x:x\in A \text{ અને } x \notin B\}.</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 4.4.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊊</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subsetneq B</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>\</mo><mi>A</mi><mo>≠</mo><mi>∅</mi></mrow><annotation encoding="application/x-tex">B \setminus A \neq \emptyset</annotation></semantics></math>
+થાય તે સાબિત કરો.</p>
+</blockquote>
+<h2 data-number="5" id="sfr:set:pai:sec"><span class="header-section-number">5</span> જોડ, બહુજોડ અને કાર્તેઝીય ગુણાકાર</h2>
+<p>ઘટકો દ્વારા નિર્ધારિત સમાનતાના સિદ્ધાંત પરથી મળે છે કે ગણના ઘટકોનો કોઈ ક્રમ
+હોતો નથી. તેથી ક્રમ દર્શાવવા માટે આપણે <em>ક્રમયુક્ત જોડ</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x, y\rangle</annotation></semantics></math>
+વાપરીએ છીએ. ક્રમ વગરની જોડ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x, y\}</annotation></semantics></math>માં
+ક્રમ મહત્ત્વનો નથી:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">}</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x, y\} = \{y, x\}</annotation></semantics></math>.
+ક્રમયુક્ત જોડમાં તે મહત્ત્વનો છે: જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x \neq y</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo><mo>≠</mo><mo form="prefix" stretchy="false">⟨</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x, y\rangle \neq \langle y, x\rangle</annotation></semantics></math>.</p>
+<p>ગણસિદ્ધાંતમાં ક્રમયુક્ત જોડને કેવી રીતે સમજવી? ખાસ કરીને, આપણે એ વિચાર જાળવવા
+માગીએ છીએ કે બે ક્રમયુક્ત જોડ ત્યારે અને ત્યારે જ સમાન હોય જ્યારે તેમના પ્રથમ ઘટકો એક
+જ હોય અને તેમના બીજા ઘટકો પણ એક જ હોય, એટલે કે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">⟩</mo><mo>=</mo><mo form="prefix" stretchy="false">⟨</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo form="postfix" stretchy="false">⟩</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ત્યારે અને ત્યારે જ જ્યારે બંને </mtext><mspace width="0.333em"></mspace></mrow><mi>a</mi><mo>=</mo><mi>c</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> અને </mtext><mspace width="0.333em"></mspace></mrow><mi>b</mi><mo>=</mo><mi>d</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\langle a, b\rangle= \langle c, d\rangle\text{ ત્યારે અને ત્યારે જ જ્યારે બંને }a = c \text{ અને }b=d.</annotation></semantics></math>
+ગણસિદ્ધાંતમાં આપણે વીનર–કુરાતોવ્સ્કીની વ્યાખ્યા વડે ક્રમયુક્ત જોડની વ્યાખ્યા આપી
+શકીએ.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 5.1 (ક્રમયુક્ત જોડ).</strong> <span data-label="sfr:set:pai:wienerkuratowski" id="sfr:set:pai:wienerkuratowski"></span>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">⟩</mo><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo form="postfix" stretchy="false">}</mo><mo>,</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\langle a, b\rangle = \{\{a\}, \{a, b\}\}</annotation></semantics></math>.</p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 5.1.</strong> <a href="#sfr:set:pai:wienerkuratowski">5.1</a> વાપરીને સાબિત કરો કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">⟩</mo><mo>=</mo><mo form="prefix" stretchy="false">⟨</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle a, b\rangle= \langle c, d\rangle</annotation></semantics></math>
+ત્યારે અને ત્યારે જ થાય જ્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a = c</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">b=d</annotation></semantics></math>
+બંને હોય.</p>
+</blockquote>
+<p>ક્રમયુક્ત જોડની વ્યાખ્યા નક્કી કર્યા પછી, તેને વાપરીને વધુ ગણોની વ્યાખ્યા આપી
+શકીએ. દાખલા તરીકે, ક્યારેક આપણે બે કરતાં વધુ વસ્તુઓના ક્રમયુક્ત અનુક્રમો પણ માગીએ, જેમ
+કે <em>ત્રિજોડ</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x, y, z\rangle</annotation></semantics></math>,
+<em>ચતુર્જોડ</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>u</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x, y, z, u\rangle</annotation></semantics></math>,
+વગેરે. ત્રિજોડને એવી ખાસ ક્રમયુક્ત જોડ તરીકે સમજી શકીએ જેનો પ્રથમ ઘટક પોતે જ ક્રમયુક્ત
+જોડ હોય:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x, y, z\rangle</annotation></semantics></math>
+એટલે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mi>z</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\langle x, y\rangle,z\rangle</annotation></semantics></math>.
+ચતુર્જોડ માટે પણ આ જ વાત સાચી છે:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>u</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x,y,z,u\rangle</annotation></semantics></math>
+એટલે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mo form="prefix" stretchy="false">⟨</mo><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mi>z</mi><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mi>u</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\langle\langle x,y\rangle,z\rangle,u\rangle</annotation></semantics></math>,
+વગેરે. સામાન્ય રીતે આપણે <em>ક્રમયુક્ત
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-જોડ</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x_1, \dots, x_n\rangle</annotation></semantics></math>ની
+વાત કરીએ છીએ.</p>
+<p>ક્રમયુક્ત જોડના, અથવા અન્ય ક્રમયુક્ત
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-જોડના,
+કેટલાક ગણો ઉપયોગી થશે.</p>
+<blockquote>
+<p><strong>વ્યાખ્યા 5.2 (કાર્તેઝીય ગુણાકાર).</strong> આપેલા ગણો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>ના
+<em>કાર્તેઝીય ગુણાકાર</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \times B</annotation></semantics></math>ની
+વ્યાખ્યા આ પ્રમાણે છે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo><mo>:</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> અને </mtext><mspace width="0.333em"></mspace></mrow><mi>y</mi><mo>∈</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">A \times B = \{\langle x, y\rangle:x \in A \text{ અને } y \in B\}.</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 5.3.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A = \{0, 1\}</annotation></semantics></math>
+અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">B = \{1, a, b\}</annotation></semantics></math>
+હોય, તો તેમનો ગુણાકાર આ છે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">⟨</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mo form="prefix" stretchy="false">⟨</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mo form="prefix" stretchy="false">⟨</mo><mn>0</mn><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mo form="prefix" stretchy="false">⟨</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mo form="prefix" stretchy="false">⟨</mo><mn>1</mn><mo>,</mo><mi>a</mi><mo form="postfix" stretchy="false">⟩</mo><mo>,</mo><mo form="prefix" stretchy="false">⟨</mo><mn>1</mn><mo>,</mo><mi>b</mi><mo form="postfix" stretchy="false">⟩</mo><mo form="postfix" stretchy="false">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">A \times B = \{ \langle 0, 1\rangle, \langle 0, a\rangle, \langle 0, b\rangle,
+    \langle 1, 1\rangle, \langle 1, a\rangle, \langle 1, b\rangle \}.</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 5.4.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+ગણ હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+પોતાની સાથેનો ગુણાકાર
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \times A</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mn>2</mn></msup><annotation encoding="application/x-tex">A^2</annotation></semantics></math>
+તરીકે પણ લખાય છે. તે એવી <em>બધી</em> જોડ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x, y\rangle</annotation></semantics></math>નો
+ગણ છે જેમાં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x, y \in A</annotation></semantics></math>
+હોય. આવી બધી ત્રિજોડ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x, y, z\rangle</annotation></semantics></math>નો
+ગણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mn>3</mn></msup><annotation encoding="application/x-tex">A^3</annotation></semantics></math>
+છે, વગેરે. આપણે પુનરાવર્તી વ્યાખ્યા આપી શકીએ:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mn>1</mn></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mi>A</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msup><mi>A</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msup><mi>A</mi><mi>k</mi></msup><mo>×</mo><mi>A</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{align*}
+  A^1 &amp; = A\\
+  A^{k+1} &amp; = A^k \times A
+\end{align*}</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 5.2.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><msup><mo form="postfix" stretchy="false">}</mo><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\{1, 2, 3\}^3</annotation></semantics></math>ના
+બધા ઘટકોની યાદી બનાવો.</p>
+</blockquote>
+<blockquote>
+<p><strong>વિધાન 5.5.</strong> <span data-label="sfr:set:pai:cardnmprod" id="sfr:set:pai:cardnmprod"></span> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>માં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+ઘટકો અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>માં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+ઘટકો હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \times B</annotation></semantics></math>માં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⋅</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\cdot m</annotation></semantics></math>
+ઘટકો હોય.</p>
+</blockquote>
+<blockquote>
+<p><strong>સાબિતી.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+દરેક
+ઘટક <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+માટે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo><mo>∈</mo><mi>A</mi><mo>×</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\langle x, y\rangle \in A \times B</annotation></semantics></math>
+સ્વરૂપના
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+ઘટકો હોય છે.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>x</mi></msub><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo><mo>:</mo><mi>y</mi><mo>∈</mo><mi>B</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">B_x = \{\langle x, y\rangle:y \in B\}</annotation></semantics></math>
+લો. જ્યારે પણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>≠</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">x_1 \neq x_2</annotation></semantics></math>
+હોય ત્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo><mo>≠</mo><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi>y</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x_1, y\rangle \neq \langle x_2, y\rangle</annotation></semantics></math>
+હોવાથી
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><msub><mi>x</mi><mn>1</mn></msub></msub><mo>∩</mo><msub><mi>B</mi><msub><mi>x</mi><mn>2</mn></msub></msub><mo>=</mo><mi>∅</mi></mrow><annotation encoding="application/x-tex">B_{x_1} \cap B_{x_2} = \emptyset</annotation></semantics></math>
+થાય. પરંતુ જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A = \{x_1, \dots, x_n\}</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi><mo>=</mo><msub><mi>B</mi><msub><mi>x</mi><mn>1</mn></msub></msub><mo>∪</mo><mi>…</mi><mo>∪</mo><msub><mi>B</mi><msub><mi>x</mi><mi>n</mi></msub></msub></mrow><annotation encoding="application/x-tex">A \times B = B_{x_1} \cup \dots \cup B_{x_n}</annotation></semantics></math>,
+અને તેથી તેમાં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⋅</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\cdot m</annotation></semantics></math>
+ઘટકો હોય.</p>
+<p>આ વાત ચિત્રરૂપે જોવા માટે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \times B</annotation></semantics></math>ના
+ઘટકોને જાળીમાં ગોઠવો:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>B</mi><msub><mi>x</mi><mn>1</mn></msub></msub><mo>=</mo></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo form="postfix" stretchy="false">⟩</mo></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo form="postfix" stretchy="false">⟩</mo></mtd><mtd columnalign="center" style="text-align: center"><mi>…</mi></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mi>m</mi></msub><mo form="postfix" stretchy="false">⟩</mo><mo form="postfix" stretchy="false">}</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>B</mi><msub><mi>x</mi><mn>2</mn></msub></msub><mo>=</mo></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo form="postfix" stretchy="false">⟩</mo></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo form="postfix" stretchy="false">⟩</mo></mtd><mtd columnalign="center" style="text-align: center"><mi>…</mi></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mi>m</mi></msub><mo form="postfix" stretchy="false">⟩</mo><mo form="postfix" stretchy="false">}</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>⋮</mi></mtd><mtd columnalign="center" style="text-align: center"></mtd><mtd columnalign="center" style="text-align: center"><mi>⋮</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><msub><mi>B</mi><msub><mi>x</mi><mi>n</mi></msub></msub><mo>=</mo></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">{</mo><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo form="postfix" stretchy="false">⟩</mo></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo form="postfix" stretchy="false">⟩</mo></mtd><mtd columnalign="center" style="text-align: center"><mi>…</mi></mtd><mtd columnalign="center" style="text-align: center"><mo form="prefix" stretchy="false">⟨</mo><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><msub><mi>y</mi><mi>m</mi></msub><mo form="postfix" stretchy="false">⟩</mo><mo form="postfix" stretchy="false">}</mo></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}{rcccc}
+  B_{x_1} = &amp; \{\langle x_1, y_1\rangle &amp; \langle x_1, y_2\rangle &amp; \dots &amp; \langle x_1, y_m\rangle\}\\
+  B_{x_2} = &amp; \{\langle x_2, y_1\rangle &amp; \langle x_2, y_2\rangle &amp; \dots &amp; \langle x_2, y_m\rangle\}\\
+  \vdots &amp; &amp; \vdots\\
+  B_{x_n} = &amp; \{\langle x_n, y_1\rangle &amp; \langle x_n, y_2\rangle &amp; \dots &amp; \langle x_n, y_m\rangle\}
+\end{array}</annotation></semantics></math> બધા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">x_i</annotation></semantics></math>
+જુદા છે અને બધા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>y</mi><mi>j</mi></msub><annotation encoding="application/x-tex">y_j</annotation></semantics></math>
+પણ જુદા છે, તેથી આ જાળીની કોઈ બે જોડ એકસરખી નથી, અને તેમાં કુલ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>⋅</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\cdot m</annotation></semantics></math>
+જોડ છે.</p>
+</blockquote>
+<blockquote>
+<p><strong>સ્વાધ્યાય 5.3.</strong>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+પર ગાણિતિક અનુમાન વાપરીને બતાવો કે દરેક
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k \ge 1</annotation></semantics></math>
+માટે, જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>માં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+ઘટકો હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mi>k</mi></msup><annotation encoding="application/x-tex">A^k</annotation></semantics></math>માં
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mi>k</mi></msup><annotation encoding="application/x-tex">n^k</annotation></semantics></math>
+ઘટકો હોય.</p>
+</blockquote>
+<blockquote>
+<p><strong>ઉદાહરણ 5.6.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+ગણ હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+પરનો <em>શબ્દ</em> એટલે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકોનો કોઈ પણ અનુક્રમ. અનુક્રમને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકોની
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-જોડ
+તરીકે સમજી શકાય. દાખલા તરીકે, જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A = \{a, b, c\}</annotation></semantics></math>
+હોય, તો
+“<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mi>a</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">bac</annotation></semantics></math>”
+અનુક્રમને
+ત્રિજોડ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">⟨</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo form="postfix" stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle b, a, c\rangle</annotation></semantics></math>
+તરીકે સમજી શકાય. શબ્દો, એટલે કે પ્રતીકોના અનુક્રમો, કમ્પ્યૂટર વિજ્ઞાનમાં અત્યંત
+મહત્ત્વના છે. પ્રણાલી અનુસાર આપણે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>ના
+ઘટકોને
+લંબાઈ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>ના
+અનુક્રમો તરીકે અને
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>∅</mi><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math>ને
+લંબાઈ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>ના
+અનુક્રમ તરીકે ગણીએ છીએ. આથી
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+પરના <em>બધા</em> શબ્દોનો ગણ આ છે:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>*</mo></msup><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>∅</mi><mo form="postfix" stretchy="false">}</mo><mo>∪</mo><mi>A</mi><mo>∪</mo><msup><mi>A</mi><mn>2</mn></msup><mo>∪</mo><msup><mi>A</mi><mn>3</mn></msup><mo>∪</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">A^* = \{\emptyset\} \cup A \cup A^2 \cup A^3 \cup \dots</annotation></semantics></math></p>
+</blockquote>
+<h2 data-number="6" id="sfr:set:rus:sec"><span class="header-section-number">6</span> રસેલનો વિરોધાભાસ</h2>
+<p>ઘટકો દ્વારા નિર્ધારિત સમાનતાનો સિદ્ધાંત
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi(x)</annotation></semantics></math>
+હોય તેવા
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>ના
+<em>ચોક્કસ એ જ</em> ગણ માટે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x:\varphi(x)\}</annotation></semantics></math>
+સંજ્ઞાને યોગ્ય ઠરાવે છે. પરંતુ આ સિદ્ધાંત <em>ખરેખર</em> માત્ર નીચેના વિચારને યોગ્ય
+ઠરાવે છે: <em>જો</em> એવો ગણ હોય જેના સભ્યો બરાબર
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+ગુણધર્મ ધરાવતી બધી વસ્તુઓ જ હોય, <em>તો</em> આવો એક જ ગણ હોય. બીજી રીતે કહીએ
+તો,
+કોઈ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+નક્કી કર્યા પછી,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>φ</mi><mo form="prefix" stretchy="false">(</mo><mi>x</mi><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x:\varphi(x)\}</annotation></semantics></math>
+ગણ <em>અસ્તિત્વ ધરાવતો હોય તો</em> અનન્ય છે.</p>
+<p>પરંતુ આ શરત મહત્ત્વની છે! ખાસ કરીને, દરેક ગુણધર્મ વડે <em>ગણરચના</em> કરી શકાતી
+નથી. એટલે કે કેટલાક ગુણધર્મો ગણની વ્યાખ્યા આપતા <em>નથી</em>. જો બધા ગુણધર્મો આમ
+કરતા હોત, તો સીધો જ વિરોધ ઊભો થાત. આનું સૌથી જાણીતું ઉદાહરણ રસેલનો વિરોધાભાસ
+છે.</p>
+<p>ગણો બીજા ગણોના ઘટકો હોઈ શકે છે—દાખલા તરીકે,
+ગણ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>નો
+ઘાતગણ ગણોથી બનેલો છે. આથી કોઈ ગણ બીજા ગણનો ઘટક છે કે નહીં તે પૂછવું કે તપાસવું
+અર્થપૂર્ણ છે. શું કોઈ ગણ પોતાનો જ સભ્ય હોઈ શકે? ગણના ખ્યાલમાં આને બાકાત રાખે એવું કંઈ
+દેખાતું નથી. દાખલા તરીકે, જો <em>બધા</em> ગણો વસ્તુઓનો સંગ્રહ બનાવતા હોય, તો
+કોઈને લાગે કે તેમને એક જ ગણમાં એકત્ર કરી શકાય—બધા ગણોનો ગણ. અને તે પોતે ગણ હોવાથી
+બધા ગણોના ગણનો ઘટક હોય.</p>
+<p>પોતે પોતાનો ઘટક ન હોવાના, એટલે કે <em>સ્વસભ્ય ન હોવાના</em>, ગુણધર્મનો વિચાર
+કરીએ ત્યારે રસેલનો વિરોધાભાસ ઊભો થાય છે. ધારો કે એવા બધા ગણોનો ગણ છે જે પોતે
+પોતાના ઘટક નથી. તો શું
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∉</mo><mi>x</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R = \{x:x \notin x\}</annotation></semantics></math>
+અસ્તિત્વ ધરાવે છે? આપણે સાબિત કરી શકીએ છીએ કે તે અસ્તિત્વ ધરાવતો નથી.</p>
+<blockquote>
+<p><strong>પ્રમેય 6.1 (રસેલનો વિરોધાભાસ).</strong> <span data-label="sfr:set:rus:thm:russells-paradox" id="sfr:set:rus:thm:russells-paradox"></span>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∉</mo><mi>x</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R = \{x:x \notin x\}</annotation></semantics></math>
+એવો કોઈ ગણ નથી.</p>
+</blockquote>
+<blockquote>
+<p><strong>સાબિતી.</strong> જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∉</mo><mi>x</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R = \{x:x \notin x\}</annotation></semantics></math>
+અસ્તિત્વ ધરાવતો હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \in R</annotation></semantics></math>
+ત્યારે અને ત્યારે જ થાય જ્યારે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∉</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \notin R</annotation></semantics></math>
+હોય, જે પરસ્પરવિરોધ છે.</p>
+</blockquote>
+<p>આ સાબિતીને વધુ ધીમેથી સમજીએ. જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+અસ્તિત્વ ધરાવતો હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \in R</annotation></semantics></math>
+છે કે નહીં તે પૂછવું અર્થપૂર્ણ છે. ધારો કે ખરેખર
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \in R</annotation></semantics></math>
+છે. હવે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>ની
+વ્યાખ્યા એવા બધા ગણોના ગણ તરીકે આપેલી છે જે પોતે પોતાના ઘટકો નથી. આથી, જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \in R</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+પોતે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>ને
+વ્યાખ્યાયિત કરતો ગુણધર્મ ધરાવતો નથી. પરંતુ આ ગુણધર્મ ધરાવતા ગણો જ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>માં
+છે, તેથી
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+એ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>નો
+ઘટક હોઈ શકે નહીં, એટલે કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∉</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \notin R</annotation></semantics></math>.
+પરંતુ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+એકસાથે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>નો
+ઘટક હોય અને ન પણ હોય તે શક્ય નથી. આથી આપણને પરસ્પરવિરોધ મળે છે.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∈</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \in R</annotation></semantics></math>ની
+ધારણા પરસ્પરવિરોધ તરફ દોરી જાય છે, તેથી
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∉</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \notin R</annotation></semantics></math>
+છે. પરંતુ આ પણ પરસ્પરવિરોધ તરફ દોરી જાય છે! કારણ કે જો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>∉</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \notin R</annotation></semantics></math>
+હોય, તો
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+પોતે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>ને
+વ્યાખ્યાયિત કરતો ગુણધર્મ ધરાવે છે, અને તેથી, બીજા બધા સ્વસભ્ય ન હોય તેવા ગણોની જેમ,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+પણ
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>નો
+ઘટક હોય. ફરીથી, તે એકસાથે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>નો
+ઘટક ન હોય અને હોય પણ ખરો તે શક્ય નથી.</p>
+<p>રસેલના વિરોધાભાસમાં ન ફસાતો ગણસિદ્ધાંત કેવી રીતે રચી શકાય? એટલે કે
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mo form="prefix" stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∉</mo><mi>x</mi><mo form="postfix" stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R = \{x:x \notin x\}</annotation></semantics></math>
+અસ્તિત્વ ધરાવે છે એવો <em>અસંગત</em> દાવો ટાળતો ગણસિદ્ધાંત કેવી રીતે રચી શકાય? તે
+માટે એવી પૂર્વધારણાઓ નક્કી કરવી પડે જે ગણો ક્યારે અસ્તિત્વ ધરાવે છે (અને ક્યારે નથી
+ધરાવતા) તે કહેવા માટે અત્યંત ચોક્કસ શરતો આપે.</p>
+<p>આ પ્રકરણમાં રૂપરેખા આપેલો ગણસિદ્ધાંત આવું કરતો નથી. તે <em>ખરેખર સહજ ખ્યાલો પર
+આધારિત</em> છે. તે માત્ર એટલું કહે છે કે ગણો ઘટકો દ્વારા નિર્ધારિત સમાનતાના
+સિદ્ધાંતને અનુસરે છે અને જો તમારી પાસે કેટલાક ગણો હોય, તો તેમનો યોગગણ, છેદગણ વગેરે
+બનાવી શકો છો. ગણસિદ્ધાંતને આના કરતાં વધુ ચોકસાઈથી વિકસાવવો શક્ય છે.</p>
+</body>
+</html>

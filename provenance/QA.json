@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-gu-qa/1",
+  "checkpoint_utc": "2026-09-04T15:00:18.226518+00:00",
+  "source_units_verified": 722,
+  "translated_units": 7,
+  "total_units": 722,
+  "aligned_linguistic_blocks": 86,
+  "status": "sets_chapter_release_ready; complete_corpus_in_progress",
+  "math_spans_verified": 327,
+  "all_identifier_reference_environment_checks": true,
+  "semantic_review": {
+    "method": "same-agent comparison",
+    "reverse_paraphrase_samples": 9,
+    "independent_native_certification": false
+  },
+  "pdf": {
+    "pages": 10,
+    "all_pages_visually_inspected": true,
+    "missing_glyphs": 0,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "last_two_passes_byte_identical": true,
+    "sha256": "becd2e80549e0583e1dec597f5a052df002f712cb7f09d72da6151bfc58779a3",
+    "bytes": 175556,
+    "gujarati_unicode_probes": {
+      "ઘાતગણ": true,
+      "સિદ્ધાંત": true,
+      "ક્રમયુક્ત": true,
+      "૭૨૨": true,
+      "નિઃશેષ": true
+    },
+    "extraction_limitations": "PyMuPDF joins words; installed Poppler sometimes displaces vowel signs. HTML provides semantic Unicode alternative."
+  },
+  "html": {
+    "sha256": "7cfbda46455bbbe19122bb9419dea461a47d6439febe4d0be58a1d256f7579ed",
+    "bytes": 137495,
+    "mathml_spans": 327,
+    "figures": 3,
+    "broken_internal_links": 0,
+    "all_images_have_gujarati_alt": true,
+    "browser_visual_checks": "title/body; union formulas, exact upstream curves and caption placement; browser reports all images loaded; Unicode sample exact",
+    "external_runtime_dependencies": 0
+  },
+  "full_corpus_complete": false
+}

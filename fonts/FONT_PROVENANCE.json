@@ -1,0 +1,36 @@
+[
+  {
+    "file": "NotoSansGujarati-variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/ead515ad8b1a6723071ddf7c33f8b35dcf1c97e1/ofl/notosansgujarati/NotoSansGujarati%5Bwdth%2Cwght%5D.ttf",
+    "bytes": 672904,
+    "sha256": "9901d8552f1dd5d2c50dbd4caa6f6e174e74e8264f06594ab259ae6e7b1ac428"
+  },
+  {
+    "file": "OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/ead515ad8b1a6723071ddf7c33f8b35dcf1c97e1/ofl/notosansgujarati/OFL.txt",
+    "bytes": 4384,
+    "sha256": "c0b88977aa18b5e4fd05d646d560da89fde61b6581fa4507cb00dd90bd1bf7d4"
+  },
+  {
+    "file": "NotoSansGujarati-Regular.ttf",
+    "derivation": {
+      "source": "NotoSansGujarati-variable.ttf",
+      "wght": 400,
+      "wdth": 100,
+      "tool": "fontTools.varLib.instancer"
+    },
+    "bytes": 179052,
+    "sha256": "ea8cf815fb81f9621e73777d6495510f8b94d962db851ae72882d953cf440492"
+  },
+  {
+    "file": "NotoSansGujarati-Bold.ttf",
+    "derivation": {
+      "source": "NotoSansGujarati-variable.ttf",
+      "wght": 700,
+      "wdth": 100,
+      "tool": "fontTools.varLib.instancer"
+    },
+    "bytes": 179284,
+    "sha256": "27f78fb437fb059b23e12e94eb4acb5f139a052dcfb56dd4546245adcb7ae360"
+  }
+]

@@ -1,0 +1,174 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: unions-and-intersections
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{uni}
+\olsection{યોગગણો અને છેદગણો}
+
+\begin{explain}
+\olref[sfr][set][bas]{sec}માં આપણે ગુણધર્મ દ્વારા ગણોની વ્યાખ્યા,
+એટલે કે $\Setabs{x}{\phi(x)}$ સ્વરૂપની વ્યાખ્યાઓ રજૂ કરી હતી.
+અહીં આપણે કોઈ ગુણધર્મ~$\phi$નો ઉપયોગ કરીએ છીએ, અને આ ગુણધર્મમાં
+અગાઉ વ્યાખ્યાયિત કરેલા ગણોનો ઉલ્લેખ હોઈ શકે છે.
+દાખલા તરીકે, જો $A$ અને~$B$ ગણો હોય, તો
+$\Setabs{x}{x \in A \lor x \in B}$ એ બધી વસ્તુઓનો ગણ છે જે $A$ અથવા~$B$ના
+!!{element}s હોય; એટલે કે તે $A$ અને~$B$ના !!{element}sને એકત્ર કરતો ગણ છે.
+આને \olref{fig:union}માં દર્શાવ્યા મુજબ જોઈ શકાય, જ્યાં રંગેલો વિસ્તાર
+બંને ગણો $A$ અને~$B$ના !!{element}sને એકસાથે દર્શાવે છે.
+
+\begin{figure}
+  \olasset{assets/diagrams/union.tikz}
+  \caption{બે ગણોનો યોગગણ $A \cup B$ એ $A$ના !!{element}s અને
+  $B$ના !!{element}sને એકત્ર કરતાં મળતો ગણ છે.}
+  \ollabel{fig:union}
+\end{figure}
+
+ગણો પરની આ ક્રિયા---તેમને એકત્ર કરવાની ક્રિયા---ખૂબ ઉપયોગી અને સામાન્ય છે,
+તેથી આપણે તેને ઔપચારિક નામ અને સંકેત આપીએ છીએ.
+\end{explain}
+
+\begin{defn}[યોગગણ]
+બે ગણો $A$ અને $B$નો \emph{યોગગણ}, જેને $A \cup B$ લખીએ છીએ,
+એ બધી વસ્તુઓનો ગણ છે જે $A$ના, $B$ના, અથવા બંનેના !!{element}s હોય.
+\[
+A \cup B = \Setabs{x}{x \in A \lor x \in B}
+\]
+\end{defn}
+
+\begin{ex}
+!!{element}s કેટલી વાર આવ્યા છે તે મહત્ત્વનું ન હોવાથી, કોઈ !!a{element}
+સામાન્ય હોય તેવા બે ગણોના યોગગણમાં તે !!{element} એક જ વાર આવે છે.
+દા.ત., $\{ a, b, c\} \cup \{ a, 0, 1\} = \{a, b, c, 0, 1\}$.
+
+ગણ અને તેના કોઈ ઉપગણનો યોગગણ મોટો ગણ પોતે જ છે:
+$\{a, b, c \} \cup \{a \} = \{a, b, c\}$.
+
+ગણ અને ખાલી ગણનો યોગગણ તે ગણ પોતે જ છે:
+$\{a, b, c \} \cup \emptyset = \{a, b, c \}$.
+\end{ex}
+
+\begin{prob}
+જો $A \subseteq B$ હોય, તો $A \cup B = B$ થાય તે સાબિત કરો.
+\end{prob}
+
+\begin{explain}
+આપણે યોગક્રિયાની “દ્વૈત” ક્રિયાનો પણ વિચાર કરી શકીએ.
+આ ક્રિયા એવા બધા !!{element}sનો ગણ બનાવે છે જે $A$ના !!{element}s
+હોય અને $B$ના પણ !!{element}s હોય.
+આ ક્રિયાને \emph{છેદક્રિયા} કહે છે અને તેને \olref{fig:intersection}માં
+દર્શાવ્યા પ્રમાણે ચિત્રી શકાય.
+\begin{figure}
+  \olasset{assets/diagrams/intersection.tikz}
+  \caption{બે ગણોનો છેદગણ $A \cap B$ એ તેમના સામાન્ય !!{element}sનો ગણ છે.}
+  \ollabel{fig:intersection}
+\end{figure}
+\end{explain}
+
+\begin{defn}[છેદગણ]
+બે ગણો $A$ અને $B$નો \emph{છેદગણ}, જેને $A \cap B$ લખીએ છીએ,
+એ બધી વસ્તુઓનો ગણ છે જે $A$ અને~$B$ બંનેના !!{element}s હોય.
+\[
+A \cap B = \Setabs{x}{x \in A \land x \in B}
+\]
+જો બે ગણોનો છેદગણ ખાલી હોય, તો તેમને \emph{અલગ ગણો} કહે છે.
+આનો અર્થ એ છે કે તેમનામાં એક પણ સામાન્ય !!{element} નથી.
+\end{defn}
+
+\begin{ex}
+જો બે ગણોમાં એક પણ સામાન્ય !!{element} ન હોય, તો તેમનો છેદગણ ખાલી છે:
+$\{ a, b, c\} \cap \{ 0, 1\} = \emptyset$.
+
+જો બે ગણોમાં સામાન્ય !!{element}s હોય, તો તેમનો છેદગણ એ બધા
+!!{element}sનો ગણ છે: $\{a, b, c \} \cap \{a, b, d \} = \{a, b\}$.
+
+ગણ અને તેના કોઈ ઉપગણનો છેદગણ નાનો ગણ પોતે જ છે:
+$\{a, b, c\} \cap \{a, b\} = \{a, b\}$.
+
+કોઈ પણ ગણ અને ખાલી ગણનો છેદગણ ખાલી છે:
+$\{a, b, c \} \cap \emptyset = \emptyset$.
+\end{ex}
+
+\begin{prob}
+જો $A \subseteq B$ હોય, તો $A \cap B = A$ થાય તે ચોકસાઈપૂર્વક સાબિત કરો.
+\end{prob}
+
+\begin{explain}
+આપણે બે કરતાં વધુ ગણોનો યોગગણ કે છેદગણ પણ બનાવી શકીએ.
+સામાન્ય રીતે આ કરવાની એક સુઘડ રીત નીચે મુજબ છે:
+ધારો કે જે બધા ગણોનો યોગગણ (અથવા છેદગણ) બનાવવો છે તેમને
+આપણે એક જ ગણમાં એકત્ર કરીએ. ત્યાર પછી, આપણા બધા મૂળ ગણોના
+યોગગણની વ્યાખ્યા એ બધી વસ્તુઓના ગણ તરીકે કરી શકીએ જે આ ગણના
+ઓછામાં ઓછા એક !!{element}માં હોય; અને છેદગણની વ્યાખ્યા એ બધી
+વસ્તુઓના ગણ તરીકે કરી શકીએ જે આ ગણના દરેક !!{element}માં હોય.
+\end{explain}
+
+\begin{defn}
+જો $A$ ગણોનો ગણ હોય, તો $\bigcup A$ એ $A$ના !!{element}sના
+!!{element}sનો ગણ છે:
+\begin{align*}
+\bigcup A & = \Setabs{x}{x \text{ ગણ } A \text{ના કોઈ !!a{element}માં છે}},
+\text{ એટલે કે,}\\
+& = \Setabs{x}{\text{એવો } B \in A
+  \text{ છે કે } x \in B}
+\end{align*}
+\end{defn}
+
+\begin{defn}
+જો $A$ ગણોનો ગણ હોય, તો $\bigcap A$ એ બધી વસ્તુઓનો ગણ છે જે
+$A$ના બધા ઘટકોમાં સામાન્ય હોય:
+\begin{align*}
+\bigcap A & = \Setabs{x}{x \text{ ગણ } A \text{ના દરેક !!{element}માં છે}},
+\text{ એટલે કે,}\\
+ & = \Setabs{x}{\text{દરેક } B \in A, \text{ માટે } x \in B}
+\end{align*}
+\end{defn}
+
+\begin{ex}
+ધારો કે $A = \{ \{ a, b \}, \{ a, d, e \}, \{ a, d \} \}$.
+તો $\bigcup A = \{ a, b, d, e \}$ અને $\bigcap A = \{ a \}$.
+\end{ex}
+\begin{prob}
+જો $A$ ગણ હોય અને $A \in B$ હોય, તો $A \subseteq \bigcup B$ થાય તે બતાવો.
+\end{prob}
+
+ગણોના અનુક્રમ $A_1$, $A_2$, \dots માટે પણ આપણે આમ જ કરી શકીએ:
+\begin{align*}
+\bigcup_i A_i & = \Setabs{x}{x \text{ કોઈ એક } A_i \text{માં છે}}\\
+\bigcap_i A_i & = \Setabs{x}{x \text{ દરેક } A_i \text{માં છે}}.
+\end{align*}
+
+જ્યારે આપણી પાસે ગણોનો \emph{સૂચકગણ} હોય, એટલે કે એવો ગણ $I$ હોય કે
+દરેક $i \in I$ માટે આપણે $A_i$નો વિચાર કરતા હોઈએ,
+ત્યારે આ સંક્ષિપ્ત સંજ્ઞાઓ પણ વાપરી શકીએ:
+\begin{align*}
+	\bigcup_{i \in I} A_i & = \bigcup \Setabs{A_i }{i \in I}\\
+	\bigcap_{i \in I} A_i & = \bigcap\Setabs{A_i}{i \in I}
+\end{align*}
+
+છેલ્લે, આપણે $A$ના એવા બધા !!{element}sના ગણનો વિચાર કરવા માગીએ
+જે $B$માં નથી. તેને \olref{difference}માં દર્શાવ્યા પ્રમાણે ચિત્રી શકાય.
+
+\begin{figure}
+  \olasset{assets/diagrams/difference.tikz}
+  \caption{બે ગણોનો તફાવત ગણ $A \setminus B$ એ $A$ના એવા
+  !!{element}sનો ગણ છે જે $B$ના પણ !!{element}s નથી.}
+  \ollabel{difference}
+\end{figure}
+
+\begin{defn}[તફાવત ગણ]
+\emph{તફાવત ગણ}~$A \setminus B$ એ $A$ના એવા બધા !!{element}sનો ગણ છે
+જે $B$ના પણ !!{element}s નથી, એટલે કે,
+\[
+A\setminus B = \Setabs{x}{x\in A \text{ અને } x \notin B}.
+\]
+\end{defn}
+
+\begin{prob}
+જો $A \subsetneq B$ હોય, તો $B \setminus A \neq \emptyset$ થાય તે સાબિત કરો.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,133 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: pairs-and-products
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{pai}
+\olsection{જોડ, બહુજોડ અને કાર્તેઝીય ગુણાકાર}
+
+\begin{explain}
+ઘટકો દ્વારા નિર્ધારિત સમાનતાના સિદ્ધાંત પરથી મળે છે કે ગણના ઘટકોનો
+કોઈ ક્રમ હોતો નથી. તેથી ક્રમ દર્શાવવા માટે આપણે \emph{ક્રમયુક્ત જોડ}
+$\tuple{x, y}$ વાપરીએ છીએ. ક્રમ વગરની જોડ $\{x, y\}$માં ક્રમ
+મહત્ત્વનો નથી: $\{x, y\} = \{y, x\}$. ક્રમયુક્ત જોડમાં તે મહત્ત્વનો છે:
+જો $x \neq y$ હોય, તો $\tuple{x, y} \neq \tuple{y, x}$.
+
+ગણસિદ્ધાંતમાં ક્રમયુક્ત જોડને કેવી રીતે સમજવી?
+ખાસ કરીને, આપણે એ વિચાર જાળવવા માગીએ છીએ કે બે ક્રમયુક્ત જોડ
+ત્યારે અને ત્યારે જ સમાન હોય જ્યારે તેમના પ્રથમ ઘટકો એક જ હોય
+અને તેમના બીજા ઘટકો પણ એક જ હોય, એટલે કે:
+\[
+  \tuple{a, b}= \tuple{c, d}\text{ ત્યારે અને ત્યારે જ જ્યારે બંને }a = c \text{ અને }b=d.
+\]
+ગણસિદ્ધાંતમાં આપણે વીનર--કુરાતોવ્સ્કીની વ્યાખ્યા વડે
+ક્રમયુક્ત જોડની વ્યાખ્યા આપી શકીએ.
+\end{explain}
+
+\begin{defn}[ક્રમયુક્ત જોડ]\ollabel{wienerkuratowski}
+	$\tuple{a, b} = \{\{a\}, \{a, b\}\}$.
+\end{defn}
+
+\begin{prob}
+\olref[sfr][set][pai]{wienerkuratowski} વાપરીને સાબિત કરો કે
+$\tuple{a, b}= \tuple{c, d}$ ત્યારે અને ત્યારે જ થાય
+જ્યારે $a = c$ અને $b=d$ બંને હોય.
+\end{prob}
+
+\begin{explain}
+ક્રમયુક્ત જોડની વ્યાખ્યા નક્કી કર્યા પછી, તેને વાપરીને વધુ ગણોની
+વ્યાખ્યા આપી શકીએ. દાખલા તરીકે, ક્યારેક આપણે બે કરતાં વધુ વસ્તુઓના
+ક્રમયુક્ત અનુક્રમો પણ માગીએ, જેમ કે \emph{ત્રિજોડ} $\tuple{x, y, z}$,
+\emph{ચતુર્જોડ} $\tuple{x, y, z, u}$, વગેરે.
+ત્રિજોડને એવી ખાસ ક્રમયુક્ત જોડ તરીકે સમજી શકીએ જેનો પ્રથમ ઘટક
+પોતે જ ક્રમયુક્ત જોડ હોય: $\tuple{x, y, z}$ એટલે $\tuple{\tuple{x, y},z}$.
+ચતુર્જોડ માટે પણ આ જ વાત સાચી છે: $\tuple{x,y,z,u}$ એટલે
+$\tuple{\tuple{\tuple{x,y},z},u}$, વગેરે.
+સામાન્ય રીતે આપણે \emph{ક્રમયુક્ત $n$-જોડ} $\tuple{x_1, \dots, x_n}$ની વાત કરીએ છીએ.
+
+ક્રમયુક્ત જોડના, અથવા અન્ય ક્રમયુક્ત $n$-જોડના, કેટલાક ગણો ઉપયોગી થશે.
+\end{explain}
+
+\begin{defn}[કાર્તેઝીય ગુણાકાર]
+આપેલા ગણો $A$ અને $B$ના \emph{કાર્તેઝીય ગુણાકાર} $A \times B$ની
+વ્યાખ્યા આ પ્રમાણે છે:
+\[
+  A \times B = \Setabs{\tuple{x, y}}{x \in A \text{ અને } y \in B}.
+\]
+\end{defn}
+
+\begin{ex}
+જો $A = \{0, 1\}$ અને $B = \{1, a, b\}$ હોય, તો તેમનો ગુણાકાર આ છે:
+\[
+A \times B = \{ \tuple{0, 1}, \tuple{0, a}, \tuple{0, b},
+    \tuple{1, 1}, \tuple{1, a}, \tuple{1, b} \}.
+\]
+\end{ex}
+
+\begin{ex}
+જો $A$ ગણ હોય, તો $A$નો પોતાની સાથેનો ગુણાકાર $A \times A$,
+$A^2$ તરીકે પણ લખાય છે. તે એવી \emph{બધી} જોડ $\tuple{x, y}$નો ગણ છે
+જેમાં $x, y \in A$ હોય. આવી બધી ત્રિજોડ $\tuple{x, y, z}$નો ગણ
+$A^3$ છે, વગેરે. આપણે પુનરાવર્તી વ્યાખ્યા આપી શકીએ:
+\begin{align*}
+  A^1 & = A\\
+  A^{k+1} & = A^k \times A
+\end{align*}
+\end{ex}
+
+\begin{prob}
+$\{1, 2, 3\}^3$ના બધા !!{element}sની યાદી બનાવો.
+\end{prob}
+
+\begin{prop}\ollabel{cardnmprod}
+જો $A$માં $n$ !!{element}s અને $B$માં $m$ !!{element}s હોય,
+તો $A \times B$માં $n\cdot m$ ઘટકો હોય.
+\end{prop}
+
+\begin{proof}
+$A$ના દરેક !!{element}~$x$ માટે $\tuple{x, y} \in A \times B$
+સ્વરૂપના $m$ !!{element}s હોય છે.
+$B_x = \Setabs{\tuple{x, y}}{y \in B}$ લો.
+જ્યારે પણ $x_1 \neq x_2$ હોય ત્યારે $\tuple{x_1, y} \neq \tuple{x_2, y}$
+હોવાથી $B_{x_1} \cap B_{x_2} = \emptyset$ થાય.
+પરંતુ જો $A = \{x_1, \dots, x_n\}$ હોય, તો
+$A \times B = B_{x_1} \cup \dots \cup B_{x_n}$,
+અને તેથી તેમાં $n\cdot m$ !!{element}s હોય.
+
+આ વાત ચિત્રરૂપે જોવા માટે $A \times B$ના !!{element}sને જાળીમાં ગોઠવો:
+\[
+\begin{array}{rcccc}
+  B_{x_1} = & \{\tuple{x_1, y_1} & \tuple{x_1, y_2} & \dots & \tuple{x_1, y_m}\}\\
+  B_{x_2} = & \{\tuple{x_2, y_1} & \tuple{x_2, y_2} & \dots & \tuple{x_2, y_m}\}\\
+  \vdots & & \vdots\\
+  B_{x_n} = & \{\tuple{x_n, y_1} & \tuple{x_n, y_2} & \dots & \tuple{x_n, y_m}\}
+\end{array}
+\]
+બધા $x_i$ જુદા છે અને બધા $y_j$ પણ જુદા છે, તેથી આ જાળીની કોઈ બે જોડ
+એકસરખી નથી, અને તેમાં કુલ $n\cdot m$ જોડ છે.
+\end{proof}
+
+\begin{prob}
+$k$ પર ગાણિતિક અનુમાન વાપરીને બતાવો કે દરેક $k \ge 1$ માટે,
+જો $A$માં $n$ !!{element}s હોય, તો $A^k$માં $n^k$ !!{element}s હોય.
+\end{prob}
+
+\begin{ex}
+જો $A$ ગણ હોય, તો $A$ પરનો \emph{શબ્દ} એટલે $A$ના !!{element}sનો
+કોઈ પણ અનુક્રમ. અનુક્રમને $A$ના !!{element}sની $n$-જોડ તરીકે સમજી શકાય.
+દાખલા તરીકે, જો $A = \{a, b, c\}$ હોય, તો “$bac$” અનુક્રમને
+ત્રિજોડ~$\tuple{b, a, c}$ તરીકે સમજી શકાય.
+શબ્દો, એટલે કે પ્રતીકોના અનુક્રમો, કમ્પ્યૂટર વિજ્ઞાનમાં અત્યંત મહત્ત્વના છે.
+પ્રણાલી અનુસાર આપણે $A$ના !!{element}sને લંબાઈ~$1$ના અનુક્રમો તરીકે
+અને $\emptyset$ને લંબાઈ~$0$ના અનુક્રમ તરીકે ગણીએ છીએ.
+આથી $A$ પરના \emph{બધા} શબ્દોનો ગણ આ છે:
+\[
+A^* = \{\emptyset\} \cup A \cup A^2 \cup A^3 \cup \dots
+\]
+\end{ex}
+
+\end{document}
+
