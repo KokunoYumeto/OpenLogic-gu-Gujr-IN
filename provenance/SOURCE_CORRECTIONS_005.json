@@ -1,0 +1,106 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-04T20:53:32.471591+00:00",
+  "audit_id": "GU-OLARI-20260904",
+  "audit_method": "Bounded same-agent comparison of each suspect statement against its immediately controlling definition, formula, type or proof premise at the frozen revision.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLARI-001",
+      "unit_id": "OLP-0043",
+      "classification": "confirmed_reversed_subtraction_in_nonnegativity_gloss",
+      "finding": "The source first correctly says r≤s iff s-r is nonnegative, then mistakenly calls r-s nonnegative; the displayed definition again uses s-r.",
+      "source_path": "content/sets-functions-relations/arithmetization/rationals.tex",
+      "source_locator": "rationals.tex:53-58",
+      "source_bytes": 3255,
+      "source_sha256": "7140495368042fcbc55907e6ee568c5bc8b7066e44a01a50cbf4202acebe71d2",
+      "target_path": "gu/content/sets-functions-relations/arithmetization/rationals.tex",
+      "target_bytes": 6452,
+      "target_sha256": "3679f4a3d9a09466b28cfe9543479a720522cc1b38a6c935b09866c73200ee94",
+      "corrected_body_line": 54,
+      "corrected_body_lines": [
+        54
+      ],
+      "adjacent_note_line": 61,
+      "handling": "Used s-r consistently with the inequality and displayed definition and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$r - s$",
+        "added": "$s - r$"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLARI-002",
+      "unit_id": "OLP-0045",
+      "classification": "confirmed_wrong_premise_for_nonempty_union",
+      "finding": "The proof says that S contains a cut because S has an upper bound, whereas the stated nonemptiness of S is the premise that supplies a member.",
+      "source_path": "content/sets-functions-relations/arithmetization/cuts.tex",
+      "source_locator": "cuts.tex:61-65",
+      "source_bytes": 5825,
+      "source_sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c",
+      "target_path": "gu/content/sets-functions-relations/arithmetization/cuts.tex",
+      "target_bytes": 10147,
+      "target_sha256": "4c561ba8bc656647400630dd331bc68ed1f4eb170eb9ab4cb7253303306b4565",
+      "corrected_body_line": 64,
+      "corrected_body_lines": [
+        64
+      ],
+      "adjacent_note_line": 84,
+      "handling": "Invoked the stated nonemptiness premise and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLARI-003",
+      "unit_id": "OLP-0048",
+      "classification": "confirmed_quotient_object_category_errors",
+      "finding": "The construction says to identify reals with equivalence relations rather than equivalence classes, and its theorem and exercise call the raw Cauchy sequences an ordered field although the operations were defined on their classes.",
+      "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
+      "source_locator": "cauchy.tex:84-93,152-161",
+      "source_bytes": 10928,
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_path": "gu/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "target_bytes": 21263,
+      "target_sha256": "08fd34248ef36f5e12d234f75f76e88383e8b81eca37862d4f6788bc976e7d34",
+      "corrected_body_line": 101,
+      "corrected_body_lines": [
+        101,
+        162,
+        170
+      ],
+      "adjacent_note_line": 116,
+      "handling": "Named the equivalence classes in the construction, theorem and exercise and added one adjacent keyed note covering all three repairs.",
+      "mathematical_delta": null,
+      "status": "applied_disclosed_structural_qa_passed"
+    },
+    {
+      "finding_id": "OLARI-004",
+      "unit_id": "OLP-0048",
+      "classification": "confirmed_wrong_number_system_zero",
+      "finding": "The positivity definition compares a real equivalence class with rational zero, although the class and order belong to the constructed real field.",
+      "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
+      "source_locator": "cauchy.tex:137-139",
+      "source_bytes": 10928,
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_path": "gu/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "target_bytes": 21263,
+      "target_sha256": "08fd34248ef36f5e12d234f75f76e88383e8b81eca37862d4f6788bc976e7d34",
+      "corrected_body_line": 146,
+      "corrected_body_lines": [
+        146
+      ],
+      "adjacent_note_line": 151,
+      "handling": "Used real zero in the positivity definition and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$0_\\Rat$",
+        "added": "$0_\\Real$"
+      },
+      "status": "applied_disclosed_structural_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_005.json",
+  "semantic_review": "passed same-agent 55-sample review; see SEMANTIC_REVIEW_005.json",
+  "reader_render": "passed cumulative 45-unit HTML QA and actual live browser inspection; see HTML_QA_005.json",
+  "external_upstream_report_submitted": false
+}

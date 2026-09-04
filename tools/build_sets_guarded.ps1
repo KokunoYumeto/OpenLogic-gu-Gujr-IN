@@ -1,6 +1,6 @@
 param(
  [int]$TimeoutMs = 1000,
- [ValidateSet('sets','foundations','functions','size')][string]$Edition = 'sets',
+ [ValidateSet('sets','foundations','functions','size','arithmetization')][string]$Edition = 'sets',
  [string]$StateDirectory = $env:INTERLANGUAGE_STATE_DIR
 )
 $ErrorActionPreference = 'Stop'
@@ -12,7 +12,7 @@ $GuState = if ([string]::IsNullOrWhiteSpace($StateDirectory)) {
 }
 [void](New-Item -ItemType Directory -Force -Path $GuState)
 $GuJob = "gu-$Edition"
-$GuReceiptName = switch ($Edition) { 'sets' { 'BUILD_RECEIPT.json' } 'foundations' { 'BUILD_RECEIPT_002.json' } 'functions' { 'BUILD_RECEIPT_003.json' } 'size' { 'BUILD_RECEIPT_004.json' } }
+$GuReceiptName = switch ($Edition) { 'sets' { 'BUILD_RECEIPT.json' } 'foundations' { 'BUILD_RECEIPT_002.json' } 'functions' { 'BUILD_RECEIPT_003.json' } 'size' { 'BUILD_RECEIPT_004.json' } 'arithmetization' { 'BUILD_RECEIPT_005.json' } }
 $GuLogPrefix = if ($Edition -eq 'sets') { 'pass' } else { "$Edition-pass" }
 $GuMutex = [System.Threading.Mutex]::new($false, 'Global\InterlanguageTeXSlotV1')
 $GuAcquired = $false

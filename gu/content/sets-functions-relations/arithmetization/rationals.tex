@@ -1,0 +1,79 @@
+% ભાગ: ગણો-વિધેયો-સંબંધો
+% પ્રકરણ: અંકગણિતીકરણ
+% વિભાગ: સંમેય સંખ્યાઓ
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{rat}
+\olsection{$\Int$થી $\Rat$ સુધી}
+
+હમણાં જ આપણે સહજ ગણસિદ્ધાંતનો ઉપયોગ કરીને પ્રાકૃતિક સંખ્યાઓમાંથી
+પૂર્ણાંકો કેવી રીતે રચવા તે જોયું. હવે તદ્દન સમાન રીતે પૂર્ણાંકોમાંથી
+સંમેય સંખ્યાઓ કેવી રીતે રચવી તે જોઈશું. આપણાં પ્રારંભિક અવલોકનો આ છે:
+\begin{enumerate}
+  \item દરેક સંમેય સંખ્યાને $\nicefrac{i}{j}$ સ્વરૂપે લખી શકાય છે,
+  જ્યાં $i$ અને $j$ બંને પૂર્ણાંક છે, પરંતુ $j$ શૂન્યેતર છે.
+  \item $\nicefrac{i}{j}$ પદાવલિમાં રહેલી માહિતીને ક્રમયુક્ત જોડ
+  $\tuple{ i, j}$માં પણ બરાબર નિરૂપિત કરી શકાય છે.
+\end{enumerate}
+સહજ અભિગમ સંમેય સંખ્યાઓને $\Int \times (\Int \setminus \{0_\Int\})$
+માંથી લેવાયેલી ક્રમયુક્ત જોડો \emph{તરીકે} વિચારવાનો હશે. જોકે પહેલાંની
+જેમ આ થોડું અતિસરળ થશે, કારણ કે આપણે $\nicefrac{3}{2} = \nicefrac{6}{4}$
+ઇચ્છીએ છીએ, પરંતુ $\tuple{ 3, 2}\neq \tuple{ 6, 4}$. વધુ સામાન્ય રીતે,
+આપણને નીચેનું જોઈએ છે:
+\[
+  \nicefrac{a}{b} = \nicefrac{c}{d} \text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે } a \times d = b \times c
+\]
+આ મેળવવા માટે આપણે $\Int \times (\Int \setminus \{0_\Int\})$ પર
+સામ્ય સંબંધની નીચે મુજબ વ્યાખ્યા કરીએ છીએ:
+\[
+  \tuple{ a, b }\Ratequiv \tuple{ c, d} \text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે }a \times d = b \times c
+\]
+આ સામ્ય સંબંધ છે તેની તપાસ કરવી પડશે. આ તપાસ $\Intequiv$ના કિસ્સા
+જેવી જ છે, તેથી તેને સ્વાધ્યાય તરીકે રાખીએ છીએ.
+\begin{prob}
+$\Ratequiv$ એ સામ્ય સંબંધ છે તે બતાવો.
+\end{prob}
+પરંતુ આ સંબંધ આપણને નીચેની વ્યાખ્યા આપવા દે છે:
+\begin{defn}
+સંમેય સંખ્યાઓ એ $\Ratequiv$ હેઠળ પૂર્ણાંકોની એવી જોડોના સામ્ય વર્ગો છે
+જેનો બીજો ઘટક શૂન્યેતર હોય. એટલે કે, $\Rat =
+\equivclass{(\Int \times (\Int\setminus \{0_\Int\}))}{\Ratequiv}$.
+\end{defn}
+
+પૂર્ણાંકોની જેમ અહીં પણ કેટલીક મૂળભૂત ક્રિયાઓ વ્યાખ્યાયિત કરવી છે.
+$\equivrep{i,j}{\Ratequiv}$ એ $\Ratequiv$ હેઠળનો એવો સામ્ય વર્ગ હોય
+જેમાં $\tuple{i, j}$ !!a{element} છે, ત્યારે આપણે કહીએ છીએ:
+\begin{align*}
+  \equivrep{a, b}{\Ratequiv} + \equivrep{c, d}{\Ratequiv} &= \equivrep{ad + bc,  bd}{\Ratequiv}\\
+  \equivrep{a, b}{\Ratequiv} \times \equivrep{c, d}{\Ratequiv} &= \equivrep{a  c, b d}{\Ratequiv}.
+\intertext{આ સંમેય સંખ્યાઓ પર $r \leq s$ની વ્યાખ્યા કરવા માટે આપણે એ
+હકીકત વાપરીએ છીએ કે $r \le s$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+$s - r$ ઋણ ન હોય; એટલે કે $s - r$ને $\nicefrac{i}{j}$ સ્વરૂપે લખી
+શકાય, જ્યાં $i$ અનૃણ અને $j$ ધન હોય:}
+  \equivrep{a, b}{\Ratequiv} \leq \equivrep{c, d}{\Ratequiv} &\text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે }
+  \equivrep{c, d}{\Ratequiv} - \equivrep{a, b}{\Ratequiv} =
+  \equivrep{i_\Int, j_\Int}{\Ratequiv}
+\end{align*}
+કોઈ $i \in \Nat$ અને $0 \neq j \in \Nat$ માટે.
+\sourcecorrection{OLARI-001}{મૂળની \texttt{rationals.tex}, પંક્તિઓ
+53--58માં અસમાનતા અને દર્શાવેલું સૂત્ર બંને \(s-r\) અનૃણ હોવું જોઈએ
+એવું કહે છે, પરંતુ વચ્ચેના વાક્યમાં ભૂલથી \(r-s\) લખાયું છે. અહીં
+સૂત્ર અને અભિપ્રાય સાથે સુસંગત \(s-r\) વાપર્યું છે.}
+
+પછી આ વ્યાખ્યાઓનો વ્યવહાર જેવો \emph{હોવો જોઈએ} તેવો જ છે તેની
+તપાસ કરવી પડે છે; આ તપાસ \olref[check]{sec}માં રાખી છે. પરંતુ તેમનો
+વ્યવહાર ખરેખર એવો જ છે!{} છેલ્લે પૂર્ણાંકોને સંમેય સંખ્યાઓ
+\emph{તરીકે} ગણવાની કોઈ રીત જોઈએ; તેથી દરેક $i \in \Int$ માટે આપણે
+$i_\Rat = \equivrep{i, 1_\Int}{\Ratequiv}$ એમ ઠરાવીએ છીએ. આ બધું
+યોગ્ય રીતે વર્તે છે તેની તપાસ પણ \olref[check]{sec}માં કરીએ છીએ.
+
+\begin{prob}
+કોઈ પણ $i, j \in \Int$ માટે $(i + j)_\Rat = i_\Rat+ j_\Rat$,
+$(i \times j)_\Rat = i_\Rat \times j_\Rat$ અને
+$i \leq j \liff i_\Rat \leq j_\Rat$ છે તે બતાવો.
+\end{prob}
+
+\end{document}

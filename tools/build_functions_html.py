@@ -4,11 +4,14 @@ import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size'}
-coverage=23 if edition=='functions' else 37
-coverage_gu='૨૩' if edition=='functions' else '૩૭'
-title=('ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી' if edition=='functions' else
-       'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી')
+assert edition in {'functions','size','arithmetization'}
+coverage={'functions':23,'size':37,'arithmetization':45}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫'}[edition]
+title={
+    'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
+    'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
+    'arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોનું કદ અને અંકગણિતીકરણ — ઓપન લોજિક ગુજરાતી',
+}[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
     assert t[i]=='{',(t[i:i+40],i)
@@ -32,8 +35,13 @@ body=command(body,'sourcecorrection',2,lambda ident,note:'\n\n'+r'\begin{quote}\
 token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય'}
 body=command(body,'usetoken',2,lambda namespace,key:token_words[key])
 body=command(body,'printtoken',2,lambda namespace,key:token_words[key])
-authors={'Cantor1892':'કૅન્ટૉર','Frege1884':'ફ્રેગે','Potter2004':'પૉટર'}
-years={'Cantor1892':'1892','Frege1884':'1884','Potter2004':'2004'}
+authors={'Cantor1892':'કૅન્ટૉર','Frege1884':'ફ્રેગે','Potter2004':'પૉટર',
+         'Benacerraf1965':'બેનાસેરાફ','Conway2006':'કૉનવે',
+         'KatzKatz2012':'કૅટ્ઝ અને કૅટ્ઝ',
+         'OConnorRobertson:RN':"ઓ'કૉનર અને રૉબર્ટસન"}
+years={'Cantor1892':'1892','Frege1884':'1884','Potter2004':'2004',
+       'Benacerraf1965':'1965','Conway2006':'2006','KatzKatz2012':'2012',
+       'OConnorRobertson:RN':'2005'}
 def citation_note(note):
     return note.replace(r'\S','§').replace('~',' ').replace('--','–') if note else ''
 def textual_citation(match):
@@ -44,10 +52,21 @@ def parenthetical_citation(match):
     return r'(\hyperref[bib:'+key+']{'+authors[key]+' '+years[key]+extra+'})'
 body=re.sub(r'\\citet(?:\[([^\]]*)\])?\{([^}]+)\}',textual_citation,body)
 body=re.sub(r'\\citep(?:\[([^\]]*)\])?\{([^}]+)\}',parenthetical_citation,body)
+body=re.sub(r'\\citealt\{([^}]+)\}',lambda m:r'\hyperref[bib:'+m[1]+']{'+authors[m[1]]+' '+years[m[1]]+'}',body)
+body=re.sub(r'\\citeauthor\{([^}]+)\}',lambda m:r'\hyperref[bib:'+m[1]+']{'+authors[m[1]]+'}',body)
+body=re.sub(r'\\cite\{([^}]+)\}',lambda m:'('+r'\hyperref[bib:'+m[1]+']{'+authors[m[1]]+' '+years[m[1]]+'})',body)
 body=command(body,'part',1,lambda x:'') # Chapter identity appears in grouped introduction; section numbering continuous.
 graph_receipts=[];graph_alt={}
 def render_graph(m):
     src=m[0]
+    if 'fill=red!50' in src and 'rectangle (2.3,2.3)' in src:
+        name='sqrt-two-parity'
+        alt='બાજુ mવાળો મોટો ચોરસ; તેની અંદર બાજુ nવાળા બે સરખા, એકબીજા પર ચઢતા ચોરસ. નારંગી છેદનું ક્ષેત્રફળ બંને ઢાંકાયા વિનાના ખૂણાના ચોરસોના કુલ ક્ષેત્રફળ જેટલું છે.'
+        svg='''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 290" role="img"><defs><marker id="both" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto-start-reverse"><path d="M0,0 L7,3.5 L0,7" fill="none" stroke="#222"/></marker></defs><rect x="40" y="20" width="240" height="240" fill="white" stroke="#222" stroke-width="2.5"/><rect x="40" y="76" width="184" height="184" fill="#ef9a9a" stroke="#222" stroke-width="2.5"/><rect x="96" y="20" width="184" height="184" fill="#fff59d" stroke="#222" stroke-width="2.5"/><rect x="96" y="76" width="128" height="128" fill="#ffb74d" stroke="#222" stroke-width="2.5"/><path d="M340,20 L340,204" stroke="#222" stroke-width="1.8" marker-start="url(#both)" marker-end="url(#both)"/><text x="361" y="118" font-family="serif" font-size="20">n</text><path d="M410,20 L410,260" stroke="#222" stroke-width="1.8" marker-start="url(#both)" marker-end="url(#both)"/><text x="431" y="146" font-family="serif" font-size="20">m</text></svg>'''
+        path=O/'assets'/f'{name}.svg';path.write_text(svg,encoding='utf-8')
+        graph_receipts.append(dict(asset=path.relative_to(R).as_posix(),source_tikz_sha256=hashlib.sha256(src.encode('utf-8')).hexdigest(),svg_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),method='Deterministic SVG reconstruction of the validated four source rectangles and the n/m dimension arrows.'))
+        graph_alt[name]=alt
+        return '\n\n'+r'\includegraphics{assets/'+name+'.svg}\n\n'
     if '[grow\'=up]' in src:
         labels=re.findall(r'node\s*\{\$([^$]+)\$\}',src)
         root=re.search(r'\\node\{\$([^$]+)\$\}',src)[1]
@@ -93,6 +112,21 @@ def align_graph(m):
     return command(t,'intertext',1,lambda x:'\n\n'+x+'\n\n')
 body=re.sub(r'\\begin\{align\*\}[\s\S]*?\\end\{align\*\}',align_graph,body)
 body=re.sub(r'\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}',render_graph,body)
+def clean_align(m):
+    src=re.sub(r'\\emph\{([^{}]*)\}',r'\\text{\1}',m[0])
+    if r'\intertext' not in src:return src
+    content=src[len(r'\begin{align*}'):-len(r'\end{align*}')]
+    rendered=[];pos=0;pat=re.compile(r'\\intertext(?![A-Za-z])')
+    while (hit:=pat.search(content,pos)):
+        prose,end=arg(content,hit.end())
+        before=content[pos:hit.start()].strip()
+        if before:rendered.append(r'\begin{align*}'+before+r'\end{align*}')
+        rendered.append('\n\n'+prose+'\n\n')
+        pos=end
+    after=content[pos:].strip()
+    if after:rendered.append(r'\begin{align*}'+after+r'\end{align*}')
+    return '\n'.join(rendered)
+body=re.sub(r'\\begin\{align\*\}[\s\S]*?\\end\{align\*\}',clean_align,body)
 # TexMath does not accept presentation-only size commands or outer-spacing
 # column modifiers inside display arrays; neither carries mathematical content.
 body=re.sub(r'(\\\[)\s*\\small\b',r'\1',body)
@@ -143,15 +177,25 @@ for prefix,block in section_text:
         opts=re.findall(r'\[([^\]]*)\]',m[1]);key=m[2]
         base=prefix.split(':')
         lid=':'.join(base[:3-len(opts)]+opts+[key])
-        assert lid in labels and labels[lid],lid
-        return r'\hyperref['+lid+']{'+labels[lid]+'}'
+        if lid in labels and labels[lid]:
+            return r'\hyperref['+lid+']{'+labels[lid]+'}'
+        external={
+            'his:set:limits:sec':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/history/set-theory/limits.tex','મૂળ ગ્રંથનો લક્ષોનો વિભાગ'),
+            'his:set:mythology:sec':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/history/set-theory/mythology.tex','મૂળ ગ્રંથનો સંબંધિત ઐતિહાસિક વિભાગ'),
+        }
+        if lid in external:
+            url,text=external[lid]
+            return r'\href{'+url+'}{'+text+'}'
+        if lid=='sfr:siz::chap' and 'sfr:siz:int:sec' in labels:
+            return r'\hyperref[sfr:siz:int:sec]{ગણોના કદનું પ્રકરણ}'
+        raise AssertionError(lid)
     block=re.sub(r'\\olref((?:\[[^\]]*\])*)\{([^}]+)\}',ref,block)
     def cref(m):
         lid=m[1]
         assert lid in labels and labels[lid],lid
         return r'\hyperref['+lid+']{'+labels[lid]+'}'
     block=re.sub(r'\\cref\{([^}]+)\}',cref,block)
-    block=command(block,'citeyear',1,lambda key:r'\hyperref[bib:'+key+']{1965}' if key=='Benacerraf1965' else (_ for _ in ()).throw(ValueError(key)))
+    block=command(block,'citeyear',1,lambda key:r'\hyperref[bib:'+key+']{'+years[key]+'}')
     block=block.replace(r'\begin{multline*}',r'\[\begin{aligned}').replace(r'\end{multline*}',r'\end{aligned}\]')
     block=command(block,'shoveright',1,lambda x:x);block=command(block,'shoveleft',1,lambda x:x)
     texts.append(block)
@@ -170,11 +214,15 @@ macros=r"""
 \newcommand{\len}[1]{\mathrm{len}(#1)}
 \newcommand{\lif}{\rightarrow}
 \newcommand{\liff}{\leftrightarrow}
+\newcommand{\defis}{\mathrel{:=}}
 \newcommand{\phi}{\varphi}
 \newcommand{\nicefrac}[2]{\frac{#1}{#2}}
 \newcommand{\Id}[1]{\mathrm{Id}_{#1}}
 \newcommand{\equivrep}[2]{[#1]_{#2}}
 \newcommand{\equivclass}[2]{#1/_{\!{#2}}}
+\newcommand{\Intequiv}{\mathrel{\sim_{\Int}}}
+\newcommand{\Ratequiv}{\mathrel{\sim_{\Rat}}}
+\newcommand{\Realequiv}{\mathrel{\sim_{\Real}}}
 \newcommand{\funrestrictionto}[2]{#1\mathord{\restriction}_{#2}}
 \newcommand{\funimage}[2]{#1[#2]}
 \newcommand{\emptyseq}{\Lambda}
@@ -197,6 +245,13 @@ if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
+if edition=='arithmetization':
+    bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
+                     +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
+                     +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
+                     +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
+                     +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
+                     +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
 src=B/f'{edition}-html.tex'
 src.write_text(macros+'\n'.join(texts)+r'\section*{સંપાદકીય નોંધો}'+editorial+bibliography,encoding='utf-8')
 cmd=['pandoc',str(src),'-f','latex','-t','html5','--mathml','--standalone','--toc','--number-sections','--shift-heading-level-by=1','--metadata','lang=gu-IN','--metadata',f'title={title}','--css','reader.css','-o',str(O/f'{edition}.html')]
@@ -204,7 +259,7 @@ result=subprocess.run(cmd,capture_output=True,encoding='utf-8',errors='replace')
 (B/f'{edition}-pandoc.stderr.txt').write_text(result.stderr,encoding='utf-8')
 assert result.returncode==0,result.stderr
 soup=BeautifulSoup((O/f'{edition}.html').read_text(encoding='utf-8'),'html.parser')
-scope='ગણો, સંબંધો અને વિધેયોનાં' if edition=='functions' else 'ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં'
+scope={'functions':'ગણો, સંબંધો અને વિધેયોનાં','size':'ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં','arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોના કદ અને અંકગણિતીકરણનાં'}[edition]
 notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે. <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
 soup.header.insert_after(notice.aside)
 alts={'union':'બંને ગણોના બધા ઘટકો દર્શાવતો યોગગણ','intersection':'બંને ગણોમાં સામાન્ય ઘટકો દર્શાવતો છેદગણ','difference':'પહેલા ગણમાં હોય અને બીજા ગણમાં ન હોય તેવા ઘટકો'}
@@ -223,7 +278,8 @@ for box in soup.select('div.center'):
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-assert len(soup.find_all('img'))==11
+expected_images=12 if edition=='arithmetization' else 11
+assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.
 partial_count=0
@@ -236,6 +292,7 @@ assert partial_count==(B/f'{edition}-body.tex').read_text(encoding='utf-8').coun
 for annotation in soup.select('annotation[encoding="application/x-tex"]'):
     annotation.string=annotation.get_text().replace(r'\mathrel{\text{GU-PARTIAL-ARROW}}',r'\pto')
 assert 'GU-PARTIAL-ARROW' not in str(soup)
-(O/f'{edition}.html').write_text(str(soup),encoding='utf-8')
-(B/f'{edition}-html-qa.json').write_text(json.dumps(dict(edition=edition,source_units_covered=coverage,mathml_nodes=len(soup.find_all('math')),images=11,source_labels=len(labels),broken_anchors=broken,graph_incidence=graph_receipts,pandoc_stderr=result.stderr,semantic_review='pending actual browser inspection'),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print(json.dumps(dict(edition=edition,source_units_covered=coverage,bytes=(O/f'{edition}.html').stat().st_size,mathml=len(soup.find_all('math')),labels=len(labels),images=11,warnings=result.stderr),ensure_ascii=False))
+html = str(soup).replace('\r\n', '\n').replace('\r', '\n')
+(O/f'{edition}.html').write_text(html,encoding='utf-8',newline='\n')
+(B/f'{edition}-html-qa.json').write_text(json.dumps(dict(edition=edition,source_units_covered=coverage,mathml_nodes=len(soup.find_all('math')),images=expected_images,source_labels=len(labels),broken_anchors=broken,graph_incidence=graph_receipts,pandoc_stderr=result.stderr,semantic_review='pending actual browser inspection'),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps(dict(edition=edition,source_units_covered=coverage,bytes=(O/f'{edition}.html').stat().st_size,mathml=len(soup.find_all('math')),labels=len(labels),images=expected_images,warnings=result.stderr),ensure_ascii=False))

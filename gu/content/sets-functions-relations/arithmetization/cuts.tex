@@ -1,0 +1,124 @@
+% ભાગ: ગણો-વિધેયો-સંબંધો
+% પ્રકરણ: અંકગણિતીકરણ
+% વિભાગ: કાપ
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{arith}{cuts}
+\olsection{$\Rat$થી $\Real$ સુધી}
+
+મૂળ વાત એ છે કે પૂર્ણતા ગુણધર્મ બતાવે છે કે વાસ્તવિક રેખાનું કોઈ પણ
+બિંદુ $\alpha$ એ રેખાને બે અર્ધભાગમાં બરાબર વહેંચે છે: એક ભાગ માટે
+$\alpha$ ન્યૂનતમ ઉચ્ચસીમા છે અને બીજા માટે $\alpha$ મહત્તમ અધઃસીમા
+છે. સંમેય સંખ્યાઓમાંથી વાસ્તવિક સંખ્યાઓની \emph{રચના} કરવા
+ડેડેકિન્ડે સૂચવ્યું કે વાસ્તવિક સંખ્યાઓને સંમેય સંખ્યાઓનું વિભાજન કરતા
+\emph{કાપ} તરીકે જ વિચારીએ. એટલે કે, $\sqrt{2}$ને એવા \emph{કાપ}
+સાથે ઓળખીએ જે $< \sqrt{2}$ સંમેય સંખ્યાઓને $> \sqrt{2}$ સંમેય
+સંખ્યાઓથી જુદી પાડે છે.
+
+આ વિચારને સુઘડ બનાવીએ. સંમેય સંખ્યાઓને બે અર્ધભાગમાં કાપીએ તો કરેલા
+વિભાજનને માત્ર તેના \emph{નીચલા} અર્ધભાગથી અનન્ય રીતે ઓળખી શકાય છે.
+આથી ચોક્કસ વ્યાખ્યા નીચે મુજબ આપીએ છીએ:
+
+\begin{defn}[કાપ]
+\emph{કાપ} $\alpha$ એ સંમેય સંખ્યાઓનો એવો કોઈ પણ અખાલી ઉચિત
+આરંભખંડ છે જેનો મહત્તમ ઘટક નથી. એટલે કે, $\alpha$ કાપ છે ત્યારે અને
+માત્ર ત્યારે જ જ્યારે:
+\begin{enumerate}
+  \item \emph{અખાલી, ઉચિત}: $\emptyset \neq \alpha \subsetneq \Rat$
+  \item \emph{આરંભિક}: બધા $p,q \in \Rat$ માટે, જો $p < q \in \alpha$ હોય તો $p \in \alpha$
+  \item \emph{મહત્તમ ઘટક નહીં}: દરેક $p \in \alpha$ માટે કોઈ $q \in \alpha$ એવું છે કે $p < q$
+\end{enumerate}
+ત્યારે $\Real$ એ કાપોનો ગણ છે.
+\end{defn}
+
+હવે આપણે કહી શકીએ કે $\sqrt{2} = \Setabs{p \in \Rat}{p^2 < 2\text{
+અથવા }p < 0}$. અલબત્ત, આ ખરેખર કાપ \emph{છે} તેની તપાસ કરવી પડે;
+પરંતુ તે તપાસ \olref[check]{sec}માં રાખી છે.
+
+પહેલાંની જેમ, કેટલીક વસ્તુઓની વ્યાખ્યા આપ્યા પછી હવે તેમના પરનાં
+મૂળભૂત વિધેયો અને સંબંધોની વ્યાખ્યા કરવાની છે. એક સરળ વ્યાખ્યાથી શરૂ કરીએ:
+\begin{align*}
+  \alpha \leq \beta \text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે }\alpha \subseteq \beta
+\end{align*}
+ક્રમની આ વ્યાખ્યા આપણને કેન્દ્રીય પરિણામ \emph{કહેવા} દે છે: કાપોનો
+ગણ પૂર્ણતા ગુણધર્મ ધરાવે છે. પૂરેપૂરું લખીએ તો વિધાનનું સ્વરૂપ આવું છે.
+$S$ એ ઉચ્ચસીમા ધરાવતો કાપોનો અખાલી ગણ હોય તો $S$ને ન્યૂનતમ ઉચ્ચસીમા
+હોય છે. વધુ વિગતે: કોઈ કાપ $\lambda$ એ $S$ની ઉચ્ચસીમા છે, એટલે કે
+$(\forall \alpha \in S)\alpha \subseteq \lambda$, અને $\lambda$ આવો
+ન્યૂનતમ કાપ છે, એટલે કે
+$(\forall \beta \in \Real)((\forall \alpha \in S)\alpha \subseteq \beta \lif \lambda \subseteq \beta)$.
+હવે પરિણામની સાબિતી આ રહી:
+
+\begin{thm}\ollabel{realcompleteness}
+કાપોનો ગણ પૂર્ણતા ગુણધર્મ ધરાવે છે.
+\end{thm}
+
+\begin{proof}
+$S$ એ ઉચ્ચસીમા ધરાવતો કાપોનો કોઈ અખાલી ગણ હોય. $\lambda = \bigcup S$ લો.
+%\Setabs{p \in \Rat}{(\exists \alpha \in S)p \in \alpha}$$
+પહેલાં આપણે દાવો કરીએ કે $\lambda$ કાપ છે:
+\begin{enumerate}
+\item $S$ અખાલી હોવાથી ઓછામાં ઓછો એક કાપ $S$માં છે, તેથી
+$\emptyset \neq \lambda$. $S$ કાપોનો ગણ હોવાથી $\lambda
+\subseteq \Rat$. $S$ને ઉચ્ચસીમા હોવાથી કોઈ $p \in \Rat$ દરેક કાપ
+$\alpha \in S$માંથી ગેરહાજર છે. તેથી $p\notin \lambda$, અને પરિણામે
+$\lambda \subsetneq \Rat$.
+\item ધારો કે $p < q \in \lambda$. ત્યારે કોઈ $\alpha \in S$ એવું
+છે કે $q \in \alpha$. $\alpha$ કાપ હોવાથી $p \in \alpha$. તેથી
+$p \in \lambda$.
+\item ધારો કે $p \in \lambda$. ત્યારે કોઈ $\alpha \in S$ એવું છે કે
+$p \in \alpha$. $\alpha$ કાપ હોવાથી કોઈ $q \in \alpha$ એવું છે કે
+$p < q$. તેથી $q \in \lambda$.
+\end{enumerate}
+આથી દાવો સાબિત થયો. વધુમાં, સ્પષ્ટપણે $(\forall \alpha \in S)\alpha
+\subseteq \bigcup S = \lambda$, એટલે કે $\lambda$ એ $S$ની ઉચ્ચસીમા
+છે. હવે ધારો કે $\beta \in \mathbb{R}$ પણ ઉચ્ચસીમા છે, એટલે કે
+$(\forall \alpha \in S)\alpha \subseteq \beta$. કોઈ પણ $p \in \Rat$
+માટે, જો $p \in \lambda$ હોય તો કોઈ $\alpha \in S$ માટે
+$p \in \alpha$, તેથી $p \in \beta$. સામાન્યકરણ કરતાં
+$\lambda \subseteq \beta$. આથી $\lambda$ એ $S$ની \emph{ન્યૂનતમ}
+ઉચ્ચસીમા છે.
+\sourcecorrection{OLARI-002}{મૂળની \texttt{cuts.tex}, પંક્તિઓ 61--65માં
+\(S\)માં ઓછામાં ઓછો એક કાપ હોવાનો આધાર ભૂલથી “\(S\)ને ઉચ્ચસીમા છે”
+એમ આપ્યો છે. આ તારણ \(S\) અખાલી છે એ ધારણાથી મળે છે; અહીં તે જ
+યોગ્ય ધારણા લખી છે.}
+\end{proof}
+
+આ રીતે આપણને પૂર્ણતા ગુણધર્મ ધરાવતી ઘણી વસ્તુઓ મળી છે. આને કહેવાની
+એક રીત એ છે કે આપણા કાપોમાં કોઈ ``ખાલી જગ્યા'' નથી. (આથી સંમેય
+સંખ્યાઓને બદલે વાસ્તવિક સંખ્યાઓના વધુ ``કાપ'' લેવાથી કોઈ રસપ્રદ નવી
+વસ્તુઓ નહીં મળે.)
+
+હવે વાસ્તવિક સંખ્યાઓ પર કેટલીક ક્રિયાઓ વ્યાખ્યાયિત કરવી પડશે.
+દરેક $p \in \Rat$ માટે $p_\Real = \Setabs{q \in \Rat}{q < p}$ એમ
+ઠરાવીને આપણે પહેલાં સંમેય સંખ્યાઓને વાસ્તવિક સંખ્યાઓમાં સ્થાપિત કરીએ છીએ.
+પછી વ્યાખ્યા કરીએ છીએ:
+\begin{align*}
+  \alpha + \beta &= \Setabs{p + q}{p \in \alpha \land q \in \beta}\\
+%  \alpha - \beta &\defis \Setabs{p - q}{p \in \alpha \land q \in \Rat \setminus \beta}\\
+  \alpha \times \beta &=
+  \Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0^\mathbb{R} & \text{ જો }\alpha, \beta \geq 0_\Real
+%  \alpha \div \beta &\defis
+%  \Setabs{\nicefrac{p}{q}}{p \in \alpha \land q \in \Rat \setminus \beta}  & \text{ જો }\alpha \geq 0_\Real, \beta > 0_\Real
+\end{align*}
+ગુણાકારના બીજા કિસ્સા સંભાળવા પહેલાં નીચે મુજબ લો: %કે $0_\Real \times \alpha = 0_\Real = \alpha \times 0_\Real$, અને ઉમેરો:
+\begin{align*}
+  -\alpha &= \Setabs{p - q}{p < 0 \land q \notin \alpha}
+\end{align*}
+અને પછી એમ ઠરાવો કે:
+\begin{align*}
+  \alpha \times \beta &\defis
+  \begin{cases}
+    \mathord{-}\alpha \times \mathord{-}\beta &\text{ જો }\alpha < 0_\Real\text{ અને }\beta < 0_\Real\\
+    \mathord{-}(\mathord{-}\alpha \times \beta) &\text{ જો }\alpha < 0_\Real \text{ અને }\beta > 0_\Real\\
+    \mathord{-}(\alpha \times \mathord{-}\beta) &\text{ જો }\alpha > 0_\Real \text{ અને }\beta < 0_\Real
+  \end{cases}
+\end{align*}
+આમાંની દરેક વ્યાખ્યા હંમેશાં કાપ જ આપે છે તેની તપાસ કરવી પડશે.
+છેલ્લે, આ રીતે વ્યાખ્યાયિત કાપોનો વ્યવહાર બરાબર જેવો હોવો જોઈએ
+તેવો જ છે તેનું સરળ પરંતુ લાંબું નિદર્શન કરવું પડશે. આ બધું
+\olref[check]{sec}માં રાખીએ છીએ.
+\end{document}

@@ -1,0 +1,107 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-04T20:53:32.792309+00:00",
+  "boundary": "Arithmetization OLP-0041–0048",
+  "units": [
+    {
+      "unit_id": "OLP-0041",
+      "source_sha256": "66101685650a7c53c6bdd3913ec5211699b0c747857882953e3413ef5f305331",
+      "target_sha256": "4209ef7f37bcc7515f27da3a5125c20ed5fa79ce2751a00a7fb42f8b1687ad6f",
+      "source_bytes": 549,
+      "target_bytes": 767,
+      "aligned_blocks": 8,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0042",
+      "source_sha256": "f93b142146b9527128437355d7e3922204eede2ca9c75a941d3c09a9a848ce77",
+      "target_sha256": "7d83ece86825d8835020a9b0bcf87788f04d4459bf1aa290e069f92118104bbf",
+      "source_bytes": 5572,
+      "target_bytes": 9515,
+      "aligned_blocks": 15,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0043",
+      "source_sha256": "7140495368042fcbc55907e6ee568c5bc8b7066e44a01a50cbf4202acebe71d2",
+      "target_sha256": "3679f4a3d9a09466b28cfe9543479a720522cc1b38a6c935b09866c73200ee94",
+      "source_bytes": 3255,
+      "target_bytes": 6452,
+      "aligned_blocks": 9,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0044",
+      "source_sha256": "3df30161417b836178ff701aa3d778b9ec7c1ba8e3a8a54f98b5584a7960f453",
+      "target_sha256": "aa1466013eb5df4e221b2ffe9ae79e66b1b159c52e351d3ad89d4950fcccf6ee",
+      "source_bytes": 4654,
+      "target_bytes": 8992,
+      "aligned_blocks": 14,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0045",
+      "source_sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c",
+      "target_sha256": "4c561ba8bc656647400630dd331bc68ed1f4eb170eb9ab4cb7253303306b4565",
+      "source_bytes": 5825,
+      "target_bytes": 10147,
+      "aligned_blocks": 12,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0046",
+      "source_sha256": "01032be342b6892c970733acf0b553216c39c5e864c0378d25fea8c5eaa11ead",
+      "target_sha256": "ef1c7039bc8d1ad4600447e349864b8fbe435b3c95d6b4dd232c5bf9521dfa8b",
+      "source_bytes": 5326,
+      "target_bytes": 10711,
+      "aligned_blocks": 15,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0047",
+      "source_sha256": "d791c146f159c8e43368c12cd1a10e61a53f501baf9f3d2c606c7bd589c0ae01",
+      "target_sha256": "77b13461dc42a8d952431a1987a8134c972df7d7b8f06c404e20343d7e9a440f",
+      "source_bytes": 8707,
+      "target_bytes": 14120,
+      "aligned_blocks": 28,
+      "status": "translated_draft_structural_parity_passed"
+    },
+    {
+      "unit_id": "OLP-0048",
+      "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
+      "target_sha256": "08fd34248ef36f5e12d234f75f76e88383e8b81eca37862d4f6788bc976e7d34",
+      "source_bytes": 10928,
+      "target_bytes": 21263,
+      "aligned_blocks": 24,
+      "status": "translated_draft_structural_parity_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 103,
+  "source_math_spans": 424,
+  "source_corrections": [
+    {
+      "finding_id": "OLARI-001",
+      "unit_id": "OLP-0043",
+      "handling": "Used s-r consistently with the inequality and displayed definition and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLARI-002",
+      "unit_id": "OLP-0045",
+      "handling": "Invoked the stated nonemptiness premise and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLARI-003",
+      "unit_id": "OLP-0048",
+      "handling": "Named the equivalence classes in the construction, theorem and exercise and added one adjacent keyed note covering all three repairs."
+    },
+    {
+      "finding_id": "OLARI-004",
+      "unit_id": "OLP-0048",
+      "handling": "Used real zero in the positivity definition and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_005.json",
+  "reader_integration": "Passed cumulative 45-unit HTML QA and actual live browser inspection with all four source-correction notes exposed; see HTML_QA_005.json."
+}

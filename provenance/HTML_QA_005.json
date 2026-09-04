@@ -1,0 +1,86 @@
+{
+  "schema": "openlogic-gu-html-qa/5",
+  "html": {
+    "path": "reader/arithmetization.html",
+    "bytes": 1144911,
+    "sha256": "e8540d1d1304297d81f4a7da620e0a2f19c36e7df9a59df09dd728b565856933",
+    "source_units_covered": 45,
+    "arithmetization_units_complete": 8,
+    "mathml_nodes": 2806,
+    "images": 12,
+    "unique_ids": 160,
+    "broken_internal_links": 0,
+    "arithmetization_section_ids": [
+      "sfr:arith:int:sec",
+      "sfr:arith:rat:sec",
+      "sfr:arith:real:sec",
+      "sfr:arith:cuts:sec",
+      "sfr:arith:ref:sec",
+      "sfr:arith:check:sec",
+      "sfr:arith:cauchy:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 8,
+    "partial_arrows": 6,
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ]
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-04T20:53:24.003126+00:00",
+    "method": "Codex in-app browser: full viewport inspection of the prior byte-bound artifact, followed by a focused live reload and exact visible-DOM equivalence after LF cleanup; nonvisual MathML TeX annotations are excluded from the equivalence comparison.",
+    "url": "http://127.0.0.1:8789/reader/arithmetization.html",
+    "viewed": [
+      "Gujarati document title, 45/722 edition notice, and cumulative table of contents through section 40",
+      "section 34 integer construction and rendered equivalence-class formulas",
+      "section 35 rational construction and disclosed OLARI-001 repair",
+      "section 36 irrationality theorem and deterministic square-root-of-two parity diagram",
+      "section 37 Dedekind cuts, least-upper-bound argument, and disclosed OLARI-002 repair",
+      "section 40 Cauchy-sequence appendix, repaired author/year citations, and representative display formulas",
+      "disclosed OLARI-003 equivalence-class repair and OLARI-004 real-zero repair",
+      "bibliography and all eight rendered footnotes, including repaired Conway citation"
+    ],
+    "defect_found_and_repaired": "Author-style and plain citations initially exposed raw hyperref text; the HTML converter now emits one LaTeX command escape and the rebuilt reader shows linked citations.",
+    "final_hash_binding": {
+      "previous_browser_inspected_html_sha256": "d47cb7da36fc1317a2645305960544ae773992d669408871dc2d6e09993d1dfd",
+      "current_html_sha256": "e8540d1d1304297d81f4a7da620e0a2f19c36e7df9a59df09dd728b565856933",
+      "visible_dom_sha256": "eaed3dfccf3264581b182df838c2d14ab5c4be61a4fd2d2abe830816d2cdb5a4",
+      "visible_dom_equal": true,
+      "focused_live_reload": "passed for the Gujarati title, 45/722 notice, section-40 anchor, and cumulative reader shell"
+    },
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_005.json",
+    "samples": 55,
+    "status": "passed_same_agent_not_independent_native_certification"
+  },
+  "pdf": "pending shared TeX slot",
+  "full_corpus_complete": false
+}

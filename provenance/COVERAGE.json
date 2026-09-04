@@ -1,9 +1,9 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 37,
-  "working_scope": "Complete Sets, Relations, Functions, and Size of Sets, OLP-0004–0040",
-  "working_status": "structural, semantic, and HTML QA passed; cumulative PDF pending shared TeX slot",
+  "translated": 45,
+  "working_scope": "Complete Sets, Relations, Functions, Size of Sets, and Arithmetization, OLP-0004–0048",
+  "working_status": "structural, semantic, HTML, and actual live browser QA passed; cumulative PDF pending shared TeX slot",
   "public_release": {
     "tag": "sets-relations-v0.2.0",
     "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/sets-relations-v0.2.0",
@@ -293,49 +293,57 @@
       "unit_id": "OLP-0041",
       "source_path": "content/sets-functions-relations/arithmetization/arithmetization.tex",
       "source_sha256": "66101685650a7c53c6bdd3913ec5211699b0c747857882953e3413ef5f305331",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "4209ef7f37bcc7515f27da3a5125c20ed5fa79ce2751a00a7fb42f8b1687ad6f"
     },
     {
       "unit_id": "OLP-0042",
       "source_path": "content/sets-functions-relations/arithmetization/integers.tex",
       "source_sha256": "f93b142146b9527128437355d7e3922204eede2ca9c75a941d3c09a9a848ce77",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "7d83ece86825d8835020a9b0bcf87788f04d4459bf1aa290e069f92118104bbf"
     },
     {
       "unit_id": "OLP-0043",
       "source_path": "content/sets-functions-relations/arithmetization/rationals.tex",
       "source_sha256": "7140495368042fcbc55907e6ee568c5bc8b7066e44a01a50cbf4202acebe71d2",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "3679f4a3d9a09466b28cfe9543479a720522cc1b38a6c935b09866c73200ee94"
     },
     {
       "unit_id": "OLP-0044",
       "source_path": "content/sets-functions-relations/arithmetization/reals.tex",
       "source_sha256": "3df30161417b836178ff701aa3d778b9ec7c1ba8e3a8a54f98b5584a7960f453",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "aa1466013eb5df4e221b2ffe9ae79e66b1b159c52e351d3ad89d4950fcccf6ee"
     },
     {
       "unit_id": "OLP-0045",
       "source_path": "content/sets-functions-relations/arithmetization/cuts.tex",
       "source_sha256": "e7cb1029bcb0f0f1ac677c005af8d4e6a10df84bfff50c7483447b972324b44c",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "4c561ba8bc656647400630dd331bc68ed1f4eb170eb9ab4cb7253303306b4565"
     },
     {
       "unit_id": "OLP-0046",
       "source_path": "content/sets-functions-relations/arithmetization/reflections.tex",
       "source_sha256": "01032be342b6892c970733acf0b553216c39c5e864c0378d25fea8c5eaa11ead",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "ef1c7039bc8d1ad4600447e349864b8fbe435b3c95d6b4dd232c5bf9521dfa8b"
     },
     {
       "unit_id": "OLP-0047",
       "source_path": "content/sets-functions-relations/arithmetization/checking-details.tex",
       "source_sha256": "d791c146f159c8e43368c12cd1a10e61a53f501baf9f3d2c606c7bd589c0ae01",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "77b13461dc42a8d952431a1987a8134c972df7d7b8f06c404e20343d7e9a440f"
     },
     {
       "unit_id": "OLP-0048",
       "source_path": "content/sets-functions-relations/arithmetization/cauchy.tex",
       "source_sha256": "35d0a39913340eadcab7fb9d7742b56aef0d0f29868cd65eeca9dc53694e8ac2",
-      "status": "untranslated"
+      "status": "translated_structural_semantic_html_qa_passed_pdf_pending",
+      "translation_sha256": "08fd34248ef36f5e12d234f75f76e88383e8b81eca37862d4f6788bc976e7d34"
     },
     {
       "unit_id": "OLP-0049",
