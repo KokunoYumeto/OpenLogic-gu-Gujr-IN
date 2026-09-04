@@ -1,17 +1,18 @@
-"""Cumulative Functions or Size HTML reader; source-conditionals and exact diagrams."""
+"""Build the cumulative Gujarati HTML readers and their QA receipts."""
 from pathlib import Path
 import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size','arithmetization','infinite'}
-coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51}[edition]
-coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧'}[edition]
+assert edition in {'functions','size','arithmetization','infinite','propositional'}
+coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯'}[edition]
 title={
     'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
     'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
     'arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોનું કદ અને અંકગણિતીકરણ — ઓપન લોજિક ગુજરાતી',
     'infinite':'ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ અને અનંત ગણો — ઓપન લોજિક ગુજરાતી',
+    'propositional':'ગણો અને વિધાનાત્મક તર્કશાસ્ત્ર — ઓપન લોજિક ગુજરાતી',
 }[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
@@ -33,9 +34,21 @@ body=(B/f'{edition}-body.tex').read_text(encoding='utf-8')
 available=set(json.loads((B/f'{edition}-available-labels.json').read_text()))
 body=command(body,'oliflabeldef',3,lambda key,yes,no:yes if key in available else no)
 body=command(body,'sourcecorrection',2,lambda ident,note:'\n\n'+r'\begin{quote}\textbf{સ્રોત-સુધારો '+ident+'.} '+note+r'\end{quote}'+'\n\n')
-token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય'}
+token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય',
+             'formula':'સૂત્ર','valuation':'સત્યમૂલ્ય-નિયુક્તિ'}
 body=command(body,'usetoken',2,lambda namespace,key:token_words[key])
 body=command(body,'printtoken',2,lambda namespace,key:token_words[key])
+if edition == 'propositional':
+    # Expand the two xparse-style constructs that Pandoc's LaTeX reader cannot
+    # define through ordinary \newcommand declarations.  The prepared source
+    # has already selected the frozen upstream default connective profile.
+    body=command(body,'indcase',3,lambda formula,complex_formula,case_text:
+                 '$'+formula+r' \ident '+complex_formula+'$: '+case_text.replace(r'\indfrm',formula))
+    body=body.replace(r'\pSat/',r'\pNotSat')
+    body=command(body,'pNotSat',2,lambda valuation,formula:
+                 r'\mathfrak{'+valuation+r'}\nvDash '+formula)
+    body=command(body,'pSat',2,lambda valuation,formula:
+                 r'\mathfrak{'+valuation+r'}\vDash '+formula)
 authors={'Cantor1892':'કૅન્ટૉર','Frege1884':'ફ્રેગે','Potter2004':'પૉટર',
          'Benacerraf1965':'બેનાસેરાફ','Conway2006':'કૉનવે',
          'KatzKatz2012':'કૅટ્ઝ અને કૅટ્ઝ',
@@ -270,6 +283,21 @@ macros=r"""
 \newcommand{\pto}{\mathrel{\text{GU-PARTIAL-ARROW}}}
 \newcommand{\fdefined}{\downarrow}
 \newcommand{\fundefined}{\uparrow}
+\newcommand{\True}{\mathbb{T}}
+\newcommand{\False}{\mathbb{F}}
+\newcommand{\lfalse}{\bot}
+\newcommand{\ltrue}{\top}
+\newcommand{\Obj}[1]{\mathsf{#1}}
+\newcommand{\Lang}[1]{\mathcal{#1}}
+\newcommand{\Frm}[1][]{\mathrm{Frm}(\mathcal{#1})}
+\newcommand{\PVar}{\mathrm{At}_0}
+\newcommand{\pAssign}[1]{\mathfrak{#1}}
+\newcommand{\pValue}[1]{\overline{\mathfrak{#1}}}
+\newcommand{\Entails}{\vDash}
+\newcommand{\ident}{\equiv}
+\newcommand{\subst}[2]{#1/#2}
+\newcommand{\SSubst}[2]{#1[#2]}
+\newcommand{\Subst}[3]{#1[#2/#3]}
 """
 editorial=(R/f'gu-{edition}.tex').read_text(encoding='utf-8').split(r'\section*{સંપાદકીય નોંધો}',1)[1].split(r'\begin{thebibliography}',1)[0]
 editorial=re.sub(r'\\addcontentsline\{toc\}\{section\}\{[^}]+\}','',editorial)
@@ -278,14 +306,14 @@ if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
-if edition in {'arithmetization','infinite'}:
+if edition in {'arithmetization','infinite','propositional'}:
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
                      +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
                      +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
                      +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
-if edition=='infinite':
+if edition in {'infinite','propositional'}:
     bibliography += (r'\label{bib:EwaldSieg2013}Hilbert, David. 2013. On the infinite. In \emph{David Hilbert’s Lectures on the Foundations of Arithmetic and Logic 1917–1933}.'+'\n'
                      +r'\label{bib:Dedekind1888}Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?}.'+'\n')
 src=B/f'{edition}-html.tex'
@@ -295,8 +323,12 @@ result=subprocess.run(cmd,capture_output=True,encoding='utf-8',errors='replace')
 (B/f'{edition}-pandoc.stderr.txt').write_text(result.stderr,encoding='utf-8')
 assert result.returncode==0,result.stderr
 soup=BeautifulSoup((O/f'{edition}.html').read_text(encoding='utf-8'),'html.parser')
-scope={'functions':'ગણો, સંબંધો અને વિધેયોનાં','size':'ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં','arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોના કદ અને અંકગણિતીકરણનાં','infinite':'ગણો, સંબંધો, વિધેયો, ગણોના કદ, અંકગણિતીકરણ અને અનંત ગણોનાં'}[edition]
-notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે. <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
+scope={'functions':'ગણો, સંબંધો અને વિધેયોનાં','size':'ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં','arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોના કદ અને અંકગણિતીકરણનાં','infinite':'ગણો, સંબંધો, વિધેયો, ગણોના કદ, અંકગણિતીકરણ અને અનંત ગણોનાં'}
+if edition == 'propositional':
+    notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં ગણો અને વિધેયોના અગાઉના સંપૂર્ણ પ્રકરણો તથા વિધાનાત્મક તર્કશાસ્ત્રના વાક્યરચના અને અર્થવિચારના છ ખંડ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
+else:
+    notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope[edition]} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
+notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>{notice_text} <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
 soup.header.insert_after(notice.aside)
 alts={'union':'બંને ગણોના બધા ઘટકો દર્શાવતો યોગગણ','intersection':'બંને ગણોમાં સામાન્ય ઘટકો દર્શાવતો છેદગણ','difference':'પહેલા ગણમાં હોય અને બીજા ગણમાં ન હોય તેવા ઘટકો'}
 alts.update(graph_alt)
@@ -314,7 +346,7 @@ for box in soup.select('div.center'):
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13}[edition]
+expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13}[edition]
 assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.
@@ -329,6 +361,7 @@ for annotation in soup.select('annotation[encoding="application/x-tex"]'):
     annotation.string=annotation.get_text().replace(r'\mathrel{\text{GU-PARTIAL-ARROW}}',r'\pto')
 assert 'GU-PARTIAL-ARROW' not in str(soup)
 html = str(soup).replace('\r\n', '\n').replace('\r', '\n')
+html = re.sub(r'[ \t]+(?=\n|$)', '', html)
 (O/f'{edition}.html').write_text(html,encoding='utf-8',newline='\n')
 (B/f'{edition}-html-qa.json').write_text(json.dumps(dict(edition=edition,source_units_covered=coverage,mathml_nodes=len(soup.find_all('math')),images=expected_images,source_labels=len(labels),broken_anchors=broken,graph_incidence=graph_receipts,pandoc_stderr=result.stderr,semantic_review='pending actual browser inspection'),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(dict(edition=edition,source_units_covered=coverage,bytes=(O/f'{edition}.html').stat().st_size,mathml=len(soup.find_all('math')),labels=len(labels),images=expected_images,warnings=result.stderr),ensure_ascii=False))

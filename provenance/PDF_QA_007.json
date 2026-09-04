@@ -1,0 +1,507 @@
+{
+  "schema": "openlogic-gu-pdf-qa/1",
+  "inspected_at_utc": "2026-09-04T23:01:16.228118+00:00",
+  "pdf": {
+    "path": "build/gu-propositional.pdf",
+    "bytes": 794803,
+    "sha256": "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa",
+    "pages": 73,
+    "page_size": "A4",
+    "page_size_points": [
+      595.276,
+      841.89
+    ],
+    "title": "ગણો અને વિધાનાત્મક તર્કશાસ્ત્ર — ઓપન લોજિક ગુજરાતી"
+  },
+  "guarded_build": {
+    "receipt": "BUILD_RECEIPT_007.json",
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "bounded_timeout_ms": 15000,
+    "acquired": true,
+    "passes": 3,
+    "pass_sha256": [
+      "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa",
+      "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa",
+      "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa"
+    ],
+    "last_two_passes_byte_identical": true,
+    "full_process_tree_waited": true
+  },
+  "render": {
+    "engine": "Poppler pdftoppm",
+    "dpi": 120,
+    "rendered_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "page_pngs": [
+      {
+        "page": 1,
+        "sha256": "e913b11de9577953a3c48858fa6b45d9ba9c88a434a297e669e550b348a727f7"
+      },
+      {
+        "page": 2,
+        "sha256": "f5bb01255c226531a2dbe532e0bf4770fde0a3a4c852ef0d40fcfd2256fb59af"
+      },
+      {
+        "page": 3,
+        "sha256": "07cccee9c0dcc76fb80641950a3fe8c2e281a26dbc51d9e45c36e4d12c017d0e"
+      },
+      {
+        "page": 4,
+        "sha256": "d8debc7448e1a6e4f7a61eeb72dc956c016c277c20ae6f6cf2e8ef5751798b38"
+      },
+      {
+        "page": 5,
+        "sha256": "e385577db220a5f2f0658c8973bbd84fd5645b1933fe36e4354d457ae0c43583"
+      },
+      {
+        "page": 6,
+        "sha256": "dbc6834c69df0371580a023b456bc9f69b12ed92d3f657aacacebef6bd8a78e9"
+      },
+      {
+        "page": 7,
+        "sha256": "5515a1a5399e64b0b1d102f991db6608517395f030ea26b22689cab18407a7b9"
+      },
+      {
+        "page": 8,
+        "sha256": "e5d8661809fd758733fd0aa8d3260750f3b905065d68fb5975cb8c9e142ff950"
+      },
+      {
+        "page": 9,
+        "sha256": "a5cd1a39070ee68e702222ce64e069e382d4cbe6d30a97faecf7e26c6c8188f5"
+      },
+      {
+        "page": 10,
+        "sha256": "6842ad576630766e22a66f08913f8f6ce3fbc3312af99e148db1a57051bf10ac"
+      },
+      {
+        "page": 11,
+        "sha256": "eb0442a57089e79da7c1a0574dd37042f99dc04d19c719e96e2a7f5809b4009e"
+      },
+      {
+        "page": 12,
+        "sha256": "d99a7f9b8be75eef6f087ab3d446101f8047f29649782bd819d799818de9b60f"
+      },
+      {
+        "page": 13,
+        "sha256": "b3816bd9c3ffec23e5d6a9f3612901061916b52aae433b0baf5faee67d37c570"
+      },
+      {
+        "page": 14,
+        "sha256": "a48d263bd221e52a7e0bda8490ca1860cfcd51198a05d340455ed4b462f1deb8"
+      },
+      {
+        "page": 15,
+        "sha256": "c2ab8bf8c8f0a2f46424ae0595ed835eaf73aebcf55281f2b1be86841337717b"
+      },
+      {
+        "page": 16,
+        "sha256": "175c6b1a90428f51915e80f7d4538fd829504425d2dcb40c5ec1c393ab9ad6cc"
+      },
+      {
+        "page": 17,
+        "sha256": "bc85f442f16eebfd2b8db09f3229a868dffca441dbfee10f68008078a03f2501"
+      },
+      {
+        "page": 18,
+        "sha256": "19472dff0ce8d42b7365c8c0d2dd131d7358d673d17cfd8915500da34b56f2b9"
+      },
+      {
+        "page": 19,
+        "sha256": "466170f8a2aa90a1822a5a091ffbd4026b8966f4735f9da72fd8c6c972fd16e6"
+      },
+      {
+        "page": 20,
+        "sha256": "8fd8133215f27dd2f56fb33009e81a3c3c7a0c05fe1331f78eb03d8d0f6fb52a"
+      },
+      {
+        "page": 21,
+        "sha256": "d2b55b0663ae8933ca93d72d522b4a68671e6cbd83423c70c7f91450c9f93346"
+      },
+      {
+        "page": 22,
+        "sha256": "b31e51fb59979512ef6d467b9d7ce21e8b8c4eefb7d6b1b8f1a9b54c5b40a4ad"
+      },
+      {
+        "page": 23,
+        "sha256": "e3916f63d62363eedca416b14c6f5911a0c7646b35322c2ed9d85b18669f6620"
+      },
+      {
+        "page": 24,
+        "sha256": "50fa8fbe73fe5d3f5d56aae95cf9478ee48f8e79db2648505b2c45778931b96c"
+      },
+      {
+        "page": 25,
+        "sha256": "7dcd5a51a2c053494866564e90734f88f5bcadf83c98d7b814c1c029b360a95b"
+      },
+      {
+        "page": 26,
+        "sha256": "ed3eac33bbab37f64951a1e1b2d7c62c8c2c8be3811c317ad33b8928db303e60"
+      },
+      {
+        "page": 27,
+        "sha256": "a1b3472eb01333011cc789bf2e67d63b2f01b05b5d9137b498a431449e327e3e"
+      },
+      {
+        "page": 28,
+        "sha256": "832024e7b89b524c40bc46a71ce9067a8ef4affc2a7b6b21af1c1fa0ecf8acb2"
+      },
+      {
+        "page": 29,
+        "sha256": "e759ec310b2cc6f862b989f873db016632434031ef2189668b8dbe3d8ab9d36e"
+      },
+      {
+        "page": 30,
+        "sha256": "6c85289da90f15b6e91a36bc5671652bad7d3dc7e2650d6a3c897e0ad00075f3"
+      },
+      {
+        "page": 31,
+        "sha256": "6359aa98c4c934e2cead832309880e7c6cee59545db6cf72ec0d638d45ca6a00"
+      },
+      {
+        "page": 32,
+        "sha256": "afac6f7bebde2aebded5f363d9291601e992fac7002cef330a066de3d9e83276"
+      },
+      {
+        "page": 33,
+        "sha256": "986a50c4bbd4232bd662542ea9c6cd1ed0fda35b71eb760fe0af6bf06fc42a94"
+      },
+      {
+        "page": 34,
+        "sha256": "7751a1a79a427382b5659804eb7d109111a61827060fe5ce02e913e1a0e21e0b"
+      },
+      {
+        "page": 35,
+        "sha256": "6d7470103213c190ed4a28470f508ccc47cf18c6242a75053b4831f8f9d6632f"
+      },
+      {
+        "page": 36,
+        "sha256": "23c2c315142af259fa3e6a4ffe8850282d096fbf4f4029387cd12518b2cf99c0"
+      },
+      {
+        "page": 37,
+        "sha256": "dfdef14da2d9058c937de20e7c0f5ded2ffc252b6c7db80a1cfc83bde118d960"
+      },
+      {
+        "page": 38,
+        "sha256": "02eb06556f5705b22761b23ab3fa9f217625b9a1187b1e0d5f143199ecc3ea2e"
+      },
+      {
+        "page": 39,
+        "sha256": "17cdca69677bd952e808bfa73c34b9f7f8b764625474bf26e7ba12b94f5be560"
+      },
+      {
+        "page": 40,
+        "sha256": "740ebaeba6927946e7c192e7c60ef464c50c020f1b9e20585194f267397599eb"
+      },
+      {
+        "page": 41,
+        "sha256": "c3ebc1f88ef129b48cf3baa66542fc0e93fc585f0d4eb45665b92ca010de7c01"
+      },
+      {
+        "page": 42,
+        "sha256": "ebd2c6091defd2d31c8c39b97651ed222002aee80943b3927609c0bd095b1cdc"
+      },
+      {
+        "page": 43,
+        "sha256": "de03602991bbc4c530f7dc80acffd4b3adc9f6fa90f9d10d4e0fd6ff2986ebe5"
+      },
+      {
+        "page": 44,
+        "sha256": "14f27edd050b9de4405eeb69ab8b28c27327616c25bb5d1b018209c98124b59e"
+      },
+      {
+        "page": 45,
+        "sha256": "585d3d14efeb5007519268248ba594e0961a8daa7c8821b2f668c65f07e014c8"
+      },
+      {
+        "page": 46,
+        "sha256": "a29165cfe36a65c72050f319799680cf5004ecc56e30df0641e8ca5a89a5fb30"
+      },
+      {
+        "page": 47,
+        "sha256": "3653941b90024a0bb16ee04a76b18d3e7803bccbd2a0d886c176cdbcbb3d1dd4"
+      },
+      {
+        "page": 48,
+        "sha256": "e2e9d9eae831b029c76e154fe27f51bc72f0d891f435f40407e1ac2c16feca02"
+      },
+      {
+        "page": 49,
+        "sha256": "8dbab0260e4d381f69f19c754b7f455ac3cedb84880006487acfa9719687e6e1"
+      },
+      {
+        "page": 50,
+        "sha256": "0f08d5ca82f82df50f1212552cbf1713b3af69c0dc385456baacf1f5aba94352"
+      },
+      {
+        "page": 51,
+        "sha256": "23a7a181e080501420a7bc543e8bccbbe130ca77b20496de5bf76c85a50cf252"
+      },
+      {
+        "page": 52,
+        "sha256": "3a5496987b6d9f4f708073003fee9c6f155a47ba96e94306c0241342e32f658e"
+      },
+      {
+        "page": 53,
+        "sha256": "a9ff53db5a3f7b9f7fe02141818fc2ca23fcf2adc95be0ba6f0b2022c12f4e30"
+      },
+      {
+        "page": 54,
+        "sha256": "b9162b9f089c4fdb5b924099085054ade45a7ab983a715dc66dab2e4f0a679e3"
+      },
+      {
+        "page": 55,
+        "sha256": "4d1c99c8eca2e534fa83dfcacd0c323a6668678ea0c6c8bbbdfb58760b604605"
+      },
+      {
+        "page": 56,
+        "sha256": "31285954d87281c7593528982ec49bf24df22616d78635855d25f2a48d7b52ab"
+      },
+      {
+        "page": 57,
+        "sha256": "d02146a905cf0af997a3fa757e97f3102c9db3e1f5b9210209a060694bde3055"
+      },
+      {
+        "page": 58,
+        "sha256": "4a565f236bce31b3ce83625df40884c1b9cbacc8a2a69fd550d3aaa9dca6cb4e"
+      },
+      {
+        "page": 59,
+        "sha256": "13d66a18b7dbaaf03393013dd3f43d6f82e957717b37b958b260df4f0cabd24e"
+      },
+      {
+        "page": 60,
+        "sha256": "7d612698c29496c4aefc8fc23b23ca16eafee759f90afd2138f45784edacd25c"
+      },
+      {
+        "page": 61,
+        "sha256": "4b4432edf6d33e2b3bfd94398f3a48365644a9f78cdb34d9d931ccbf6ed3900c"
+      },
+      {
+        "page": 62,
+        "sha256": "0c995d9ec1a6a9a5a09484cd82baf6158ddced534a1f13225ae2d4b526ad4cee"
+      },
+      {
+        "page": 63,
+        "sha256": "c1c0830124ad3dbc391dce377a59407b9a4549a3a9ffeb53dbd428ce0aa0ba47"
+      },
+      {
+        "page": 64,
+        "sha256": "798d5adb5ef4190ee7ed696fcd852ca4f8f50db114636a96c5e31733c9eca8ed"
+      },
+      {
+        "page": 65,
+        "sha256": "80370249ef75db4fb1b7abbaf401eb0373acd7b99ed040b9c355e3cae1e0c993"
+      },
+      {
+        "page": 66,
+        "sha256": "140455a560e5c33c3e3ac8eb803357b05b54b58beff369e7d4f1d549c62676ef"
+      },
+      {
+        "page": 67,
+        "sha256": "8880634db73883c9390eb5e7945d047689420aea7748b9dc140ebf0ab60bcb65"
+      },
+      {
+        "page": 68,
+        "sha256": "5d7b9bb402306298888c3bb3586ba2bc80ca0d9288cd4501c7c57005cfda0866"
+      },
+      {
+        "page": 69,
+        "sha256": "2f319e547871baa8da22837767fa69b65ceee7a11b035d5f18361f53586fa4af"
+      },
+      {
+        "page": 70,
+        "sha256": "4e6afa7e20df32c9986f11ebebb28e2a60de9f8d0264ce7cccbe2c0cb643a578"
+      },
+      {
+        "page": 71,
+        "sha256": "aa7de6add19513a856e84d91062976fe3ddc06b00ae384007500118415ba61fc"
+      },
+      {
+        "page": 72,
+        "sha256": "d26829c1982fabdf9475576d0444fca4beaf05f591309d4404bd561c9a7318fd"
+      },
+      {
+        "page": 73,
+        "sha256": "8b4116e88f9facc76e69c6396091ae4c48e50b5030e479a01cc70ab5663cb221"
+      }
+    ],
+    "contact_sheets": [
+      {
+        "sheet": 1,
+        "pages": [
+          1,
+          16
+        ],
+        "sha256": "ac6cffe02be4fe789d7fb26484d12157a49fb39a785708627ffc8f18b2ef9b2f"
+      },
+      {
+        "sheet": 2,
+        "pages": [
+          17,
+          32
+        ],
+        "sha256": "c54715bd085473e443daa38f3b33db7766d816d1bce394352c9bd91e8f6b3223"
+      },
+      {
+        "sheet": 3,
+        "pages": [
+          33,
+          48
+        ],
+        "sha256": "2c783b74eda1b827d70df695778ceaadae29c475df480c35056d85b9c27b34b4"
+      },
+      {
+        "sheet": 4,
+        "pages": [
+          49,
+          64
+        ],
+        "sha256": "51d0ea95f2810a0bee64360a77cf35b4e4266096a13abf4da9581724e2dd871f"
+      },
+      {
+        "sheet": 5,
+        "pages": [
+          65,
+          73
+        ],
+        "sha256": "0027eae36d7e835d2e9d0eb591ea7220deb489b3f9047a08b19ce0c36050b3fa"
+      }
+    ]
+  },
+  "visual_inspection": {
+    "status": "passed_all_pages_actual_visual_inspection",
+    "all_pages_visually_inspected": true,
+    "method": "The whitespace-cleaned source rebuild is byte-identical to the already rendered and inspected final PDF. All five contact sheets covering pages 1–73 were viewed; affected and representative pages were also opened at full resolution.",
+    "full_resolution_pages_reinspected": [
+      33,
+      46,
+      66,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "checks": {
+      "clipping": "none observed",
+      "overlap": "none observed",
+      "missing_glyphs": "none observed",
+      "placeholder_tokens": "none observed",
+      "diagrams": "sharp and correctly placed",
+      "truth_tables": "five tables clean and legible",
+      "headers_footers_page_numbers": "consistent",
+      "source_correction_boxes": "all 25 visible and within the intended margins"
+    },
+    "defect_found_and_repaired": "The OLSIZ-012 correction box previously extended beyond the text margin because it began inside a run-in theorem heading. The source-correction macro now starts a paragraph; final page 46 confirms the box is wholly inside the normal text area."
+  },
+  "log_review": {
+    "blocking_errors": 0,
+    "missing_glyph_warnings": 0,
+    "remaining_nonblocking_warnings": [
+      "Package epstopdf Warning: Shell escape feature is not enabled.",
+      "Overfull \\hbox (7.06526pt too wide) in paragraph at lines 60--61",
+      "LaTeX Font Warning: Command \\small invalid in math mode on input line 2834.",
+      "LaTeX Font Warning: Command \\small invalid in math mode on input line 2843.",
+      "LaTeX Font Warning: Command \\small invalid in math mode on input line 2853.",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "LaTeX Warning: Reference `sfr:siz::chap' on page 48 undefined on input line 422",
+      "LaTeX Warning: Reference `his:set:mythology:sec' on page 49 undefined on input ",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+      "LaTeX Warning: Reference `his:set:limits:sec' on page 55 undefined on input lin",
+      "LaTeX Warning: Reference `his:set:limits:sec' on page 55 undefined on input lin",
+      "LaTeX Warning: Reference `sth:::part' on page 60 undefined on input line 5180.",
+      "LaTeX Warning: Reference `sth:ord-arithmetic::chap' on page 60 undefined on inp",
+      "LaTeX Warning: Reference `sfr:arith::chap' on page 61 undefined on input line 5",
+      "LaTeX Warning: Reference `sfr:arith::chap' on page 61 undefined on input line 5",
+      "LaTeX Warning: There were undefined references."
+    ],
+    "assessment": "The remaining 7.065-point title-line overfull warning stays visibly within the designed title area; three inherited table-size warnings and excluded cross-reference/PDF-string warnings do not produce visible defects in the inspected pages."
+  },
+  "semantic_html_alternative": "reader/propositional.html",
+  "status": "passed_reproducible_build_and_all_page_visual_qa",
+  "full_corpus_complete": false
+}

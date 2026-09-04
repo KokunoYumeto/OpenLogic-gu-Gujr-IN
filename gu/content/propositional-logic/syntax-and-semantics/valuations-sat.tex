@@ -1,0 +1,201 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: valuations-sat
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{val}
+
+\olsection{\usetoken{P}{valuation} અને સંતોષ}
+
+\begin{defn}[!!^{valuation}s]
+$\{\True,\False\}$ને ``સત્ય'' અને ``અસત્ય'' એ બે સત્યમૂલ્યોનો ગણ
+માનો. $\Lang{L_0}$ માટેની \emph{!!{valuation}} એ ભાષાનાં
+!!{propositional variable}sને $\True$ અથવા $\False$ નિયુક્ત કરતું
+વિધેય~$\pAssign{v}$ છે; એટલે કે, $\pAssign{v}\colon
+\PVar\to\{\True,\False\}$.
+\end{defn}
+
+\begin{defn}
+  !!a{valuation}~$\pAssign{v}$ આપેલી હોય, ત્યારે મૂલ્યાંકન વિધેય
+  $\pValue{v}\colon\Frm[L_0]\to\{\True,\False\}$ને નીચે પ્રમાણે
+  અનુમાનાત્મક રીતે વ્યાખ્યાયિત કરો:
+  \begin{align*}
+    \iftag{prvFalse}{\pValue{v}(\lfalse) & = \False; \\}{}
+    \iftag{prvTrue}{\pValue{v}(\ltrue) & = \True; \\}{}
+    \pValue{v}(\Obj p_n) & = \pAssign{v}(\Obj p_n); \\
+    \iftag{prvNot}{\pValue{v}(\lnot !A) & = \begin{cases}
+        \True & \text{જો } \pValue{v}(!A) = \False;\\
+        \False & \text{અન્યથા.}
+      \end{cases} \\ }{}
+    \iftag{prvAnd}{\pValue{v}(!A \land !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \True$ અને $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) = \False$ અથવા $\pValue{v}(!B) = \False$}.
+      \end{cases}\\}{}
+    \iftag{prvOr}{\pValue{v}(!A \lor !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \True$ અથવા $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) = \False$ અને $\pValue{v}(!B) = \False$}.
+      \end{cases}\\}{}
+    \iftag{prvIf}{\pValue{v}(!A \lif !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \False$ અથવા $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) = \True$ અને $\pValue{v}(!B) = \False$}.
+      \end{cases}\\}{}
+    \iftag{prvIff}{\pValue{v}(!A \liff !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \pValue{v}(!B)$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) \neq \pValue{v}(!B)$}.
+      \end{cases}}{}
+\end{align*}
+\end{defn}
+
+\begin{explain}
+આ ખંડો નીચેની સત્યાર્થતા સારણીઓને અનુરૂપ છે:
+\begin{center}
+\iftag{prvNot}{
+  \begin{tabular}{|c||c|} \hline
+    $!A$ & $ \lnot !A$ \\
+    \hline \hline
+    $\True$ & $\False$ \\
+    $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvAnd}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \land !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvOr}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lor !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\True$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+}{}%
+\iftag{notprvNot,notprvAnd,notprvOr,notprvIf}{}{\\[1em]}
+\iftag{prvIf}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lif !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\iftag{prvIff}{
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \liff !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+}{}
+\end{center}
+\end{explain}
+
+\begin{prob}
+$\Lang{L_0}$માં ત્રિસ્થાની સંયોજક $\diamondsuit$ ઉમેરવાનું વિચારો,
+જેનું મૂલ્યાંકન આ પ્રમાણે આપેલું છે:
+\begin{gather*}
+  \pValue{v}(\diamondsuit( !A , !B , !C ) ) = \begin{cases}
+    \pValue{v}( !B ) &
+    \text{જો $\pValue{v}(!A) = \True$;}\\
+    \pValue{v}( !C ) &
+    \text{જો $\pValue{v}(!A) = \False $}.
+  \end{cases}
+\end{gather*}
+આ સંયોજકની સત્યાર્થતા સારણી લખો.
+\end{prob}
+
+\begin{thm}[સ્થાનિક નિર્ધારણ]
+\ollabel{thm:LocalDetermination} ધારો કે $\pAssign{v_1}$ અને
+$\pAssign{v_2}$ એ !!{valuation}s છે અને $!A$માં આવતાં
+!!{propositional
+variable}s પર સંમત થાય છે; એટલે કે, કોઈ
+!!{formula}~$!A$માં $\Obj p_n$ આવે ત્યારે
+$\pAssign{v_1}(\Obj p_n)=\pAssign{v_2}(\Obj p_n)$. ત્યારે
+$\pValue{v_1}$ અને $\pValue{v_2}$ પણ~$!A$ પર સંમત થાય છે; એટલે કે,
+$\pValue{v_1}(!A)=\pValue{v_2}(!A)$.
+\end{thm}
+
+\begin{proof}
+$!A$ પર અનુમાનથી.
+\end{proof}
+
+\begin{defn}[સંતોષ]
+\ollabel{defn:satisfaction} !!a{valuation}~$\pAssign{v}$ વડે
+  !!a{formula}~$!A$ના \emph{સંતોષ}, $\pSat{v}{!A}$,નો ખ્યાલ આપણે
+  નીચે પ્રમાણે અનુમાનાત્મક રીતે વ્યાખ્યાયિત કરી શકીએ છીએ.
+  (``$\pSat{v}{!A}$ નથી'' એ કહેવા આપણે $\pSat/{v}{!A}$ લખીએ છીએ.)
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\pSat/{v}{\indfrm}$.}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\pSat{v}{\indfrm}$.}}{}
+
+\item \indcase{!A}{\Obj p_i}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+  $\pAssign{v}(\Obj p_i) = \True$.}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat/{v}{!B}$.}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat{v}{!B}$ અને $\pSat{v}{!C}$.}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat{v}{!B}$ અથવા $\pSat{v}{!C}$ (અથવા બંને).}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat/{v}{!B}$ અથવા $\pSat{v}{!C}$ (અથવા બંને).}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat{v}{!B}$ અને $\pSat{v}{!C}$ બંને, અથવા $\pSat{v}{!B}$ અને
+    $\pSat{v}{!C}$ એ બેમાંથી એકેય નહિ.}}{}
+\end{enumerate}
+જો $\Gamma$ એ !!{formula}sનો ગણ હોય, તો દરેક~$!A\in\Gamma$ માટે
+$\pSat{v}{!A}$ હોય ત્યારે જ $\pSat{v}{\Gamma}$.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-value}
+  $\pSat{v}{!A}$ ત્યારે જ જ્યારે $\pValue{v}(!A)=\True$.
+\end{prop}
+
+\begin{proof}
+  $!A$ પર અનુમાનથી.
+\end{proof}
+
+\begin{prob}
+  \olref[pl][syn][val]{prop:sat-value} સાબિત કરો.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,97 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{sem}
+
+\olsection{અર્થવિચારી ખ્યાલો}
+
+આપણે નીચેના અર્થવિચારી ખ્યાલો વ્યાખ્યાયિત કરીએ છીએ:
+
+\begin{defn}
+\begin{enumerate}
+\item કોઈ~$\pAssign{v}$ માટે $\pSat{v}{!A}$ હોય, તો
+  !!^a{formula}~$!A$ \emph{સંતોષ્ય} છે; કોઈ પણ $\pAssign{v}$ માટે
+  $\pSat{v}{!A}$ ન હોય, તો તે \emph{અસંતોષ્ય} છે;
+\item બધાં !!{valuation}s~$\pAssign{v}$ માટે $\pSat{v}{!A}$ હોય, તો
+  !!^a{formula}~$!A$ \emph{પુનરુક્તિ} છે;
+\item !!^a{formula}~$!A$ સંતોષ્ય હોય પણ પુનરુક્તિ ન હોય, તો તે
+  \emph{નિવાર્ય} છે;
+\item જો $\Gamma$ એ !!{formula}sનો ગણ હોય, તો દરેક એવા
+  !!{valuation}~$\pAssign{v}$ માટે કે જેના માટે $\pSat{v}{\Gamma}$,
+  $\pSat{v}{!A}$ પણ હોય ત્યારે અને માત્ર ત્યારે $\Gamma\Entails !A$
+  (``$\Gamma$, $!A$ને ફલિત કરે છે'').
+\item જો $\Gamma$ એ !!{formula}sનો ગણ હોય, તો એવા કોઈ
+  !!a{valuation}~$\pAssign{v}$ માટે $\pSat{v}{\Gamma}$ હોય ત્યારે
+  $\Gamma$ \emph{સંતોષ્ય} છે; અન્યથા $\Gamma$ \emph{અસંતોષ્ય} છે.
+\end{enumerate}
+\end{defn}
+
+\begin{prob}
+ નીચેનાં ચાર !!{formula}sમાંનું દરેક (a)~સંતોષ્ય, (b)~પુનરુક્તિ અને
+ (c)~નિવાર્ય છે કે નહિ તે નક્કી કરો.
+\begin{enumerate}
+  \item \( ( \Obj p_0 \lif ( \lnot \Obj p_1 \lif \lnot \Obj p_0 ) ) \).
+  \item \( ( ( \Obj p_0 \land \lnot \Obj p_1 ) \lif ( \lnot \Obj p_0 \land \Obj p_2 )) \liff ( ( \Obj p_2 \lif \Obj p_0 ) \lif ( \Obj p_0 \lif \Obj p_1 )) \).
+  \item \( ( \Obj p_0 \liff \Obj p_1 ) \lif ( \Obj p_2 \liff \lnot \Obj p_1 ) \).
+  \item \( (( \Obj p_0 \liff ( \lnot \Obj p_1 \land \Obj p_2 )) \lor ( \Obj p_2 \lif ( \Obj p_0 \liff \Obj p_1 ))) \).
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:semanticalfacts}
+\begin{enumerate}
+\item $!A$ પુનરુક્તિ હોય ત્યારે અને માત્ર ત્યારે
+  $\emptyset \Entails !A$;
+\item જો $\Gamma \Entails !A$ અને $\Gamma \Entails !A \lif !B$, તો
+  $\Gamma \Entails !B$;
+\item જો $\Gamma$ સંતોષ્ય હોય, તો $\Gamma$નો દરેક સાન્ત ઉપગણ પણ
+  સંતોષ્ય છે;
+\item \ollabel{def:monotonicity} એકદિશવર્ધિતા: જો
+  $\Gamma \subseteq \Delta$ અને $\Gamma \Entails !A$, તો
+  $\Delta \Entails !A$ પણ;
+\item \ollabel{def:Cut} પરંપરિતતા: જો $\Gamma \Entails !A$ અને
+  $\Delta \cup \{ !A\} \Entails !B$, તો $\Gamma \cup \Delta \Entails
+  !B$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:semanticalfacts} સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:entails-unsat}
+  $\Gamma \Entails !A$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Gamma \cup \{\lnot !A\}$ અસંતોષ્ય હોય.
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:entails-unsat} સાબિત કરો.
+\end{prob}
+
+\begin{thm}[અર્થાનુસારી નિગમન પ્રમેય]
+  \ollabel{thm:sem-deduction} $\Gamma \Entails !A \lif !B$ ત્યારે અને માત્ર
+  ત્યારે જ્યારે $\Gamma \cup \{!A\} \Entails !B$.
+\end{thm}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{thm:sem-deduction} સાબિત કરો.
+\end{prob}
+
+\end{document}

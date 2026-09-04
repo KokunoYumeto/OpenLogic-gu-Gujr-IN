@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-04T22:58:38.575962+00:00",
+  "audit_id": "GU-OLPL-20260905",
+  "audit_method": "Same-agent comparison with the controlling connective definition, the explicit definition of syntactic identity, and the formation-sequence proof; current upstream master was checked and retains both defects.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLPL-001",
+      "unit_id": "OLP-0058",
+      "classification": "confirmed_unmatched_parenthesis_in_defined_conditional",
+      "finding": "In the branch where disjunction is primitive, the material conditional is printed as ¬A∨B) with an unmatched closing parenthesis.",
+      "source_path": "content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "source_locator": "formulas.tex:158-159",
+      "source_bytes": 7021,
+      "source_sha256": "f05ab9c5e23b362dbee9f6063f096f52ebc9e7f97b29acc9c07f18788f1f8f48",
+      "target_path": "gu/content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "target_bytes": 11750,
+      "target_sha256": "759ce2b24633dbdbbf798103b980025599bc741377792cad68c1f069a7c66701",
+      "corrected_body_line": 155,
+      "adjacent_note_line": 163,
+      "handling": "Removed the unmatched parenthesis, yielding the well-formed abbreviation ¬A∨B, and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$\\lnot !A \\lor !B)$",
+        "added": "$\\lnot !A \\lor !B$"
+      },
+      "current_upstream_master_checked": true,
+      "status": "applied_disclosed_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "finding_id": "OLPL-002",
+      "unit_id": "OLP-0060",
+      "classification": "confirmed_wrong_relation_symbol_in_syntactic_proof",
+      "finding": "The formation-sequence proof uses the logical-equivalence symbol between a string A and its conjunction parse, although the chapter explicitly defines and repeatedly uses the syntactic-identity symbol for this relation.",
+      "source_path": "content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_locator": "formation-sequences.tex:141-142",
+      "source_bytes": 5278,
+      "source_sha256": "fff70555c1ef515d9092e72c91496aa898f74e4dd41e4cadc82f49a30c5850f5",
+      "target_path": "gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_bytes": 8898,
+      "target_sha256": "eb4cdbd2f1f8f7e1301dbedf18589ab7decf4da152b2454ad531fc462f98da23",
+      "corrected_body_line": 136,
+      "adjacent_note_line": 145,
+      "handling": "Restored the syntactic-identity symbol used in the controlling definition and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$!A \\equiv (!A_j \\land !A_k)$",
+        "added": "$!A \\ident (!A_j \\land !A_k)$"
+      },
+      "current_upstream_master_checked": true,
+      "status": "applied_disclosed_structural_semantic_html_pdf_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_007.json",
+  "semantic_review": "Passed all 99 aligned linguistic blocks; see SEMANTIC_REVIEW_007.json.",
+  "reader_render": "Passed cumulative HTML QA, live browser inspection, reproducible PDF build, and all-page visual inspection; see HTML_QA_007.json and PDF_QA_007.json.",
+  "external_upstream_report_submitted": false
+}

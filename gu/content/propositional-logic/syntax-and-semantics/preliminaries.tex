@@ -1,0 +1,122 @@
+% Part: propositional-logic
+% Chapter: propositional-logic
+% Section: preliminaries
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{pre}
+
+\olsection{પ્રારંભિક બાબતો}
+
+\begin{thm}[\emph{!!{formula}s પર અનુમાનનો સિદ્ધાંત}]
+  \ollabel{thm:induction}
+  કોઈ ગુણધર્મ~$P$ બધાં આણ્વિક !!{formula}s માટે હોય અને નીચેની
+  શરતો સંતોષતો હોય:
+  \begin{enumerate}
+    \tagitem{prvNot}{$!A$ માટે ગુણધર્મ હોય ત્યારે $\lnot !A$ માટે
+      પણ હોય;}{}
+    \tagitem{prvAnd}{$!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \land !B)$ માટે પણ હોય;}{}
+    \tagitem{prvOr}{$!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \lor !B)$ માટે પણ હોય;}{}
+    \tagitem{prvIf}{$!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \lif !B)$ માટે પણ હોય;}{}
+    \tagitem{prvIff}{$!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \liff !B)$ માટે પણ હોય;}{}
+  \end{enumerate}
+  તો બધાં !!{formula}s માટે $P$ હોય છે.
+\end{thm}
+
+\begin{proof}
+  ગુણધર્મ~$P$ ધરાવતાં બધાં !!{formula}sનો સંગ્રહ $S$ લો. સ્પષ્ટપણે
+  $S \subseteq \Frm[L_0]$. $S$, \olref[fml]{defn:formulas}ની બધી
+  શરતો સંતોષે છે: તેમાં બધાં આણ્વિક !!{formula}s છે અને તે
+  !!{operator}s હેઠળ સંવૃત છે. $\Frm[L_0]$ આવો નાનામાં નાનો વર્ગ છે,
+  તેથી $\Frm[L_0] \subseteq S$. આમ $\Frm[L_0]=S$, અને દરેક !!{formula}ને
+  ગુણધર્મ~$P$ છે.
+\end{proof}
+
+\begin{prop}\ollabel{prop:balanced}
+   $\Frm[L_0]$નું દરેક !!{formula} \emph{સંતુલિત} છે, એટલે તેમાં
+   ડાબાં અને જમણાં કૌંસની સંખ્યા સમાન છે.
+\end{prop}
+
+\begin{prob}
+\olref[pl][syn][pre]{prop:balanced} સાબિત કરો.
+\end{prob}
+
+\begin{prop} \ollabel{prop:noinit}
+!!a{formula}નો કોઈ ઉચિત આરંભખંડ !!a{formula} નથી.
+\end{prop}
+
+\begin{prob}
+  \olref[pl][syn][pre]{prop:noinit} સાબિત કરો.
+\end{prob}
+
+\begin{prop}[એકમાત્ર વાચનીયતા]
+$\Frm[L_0]$નું દરેક !!{formula}~$!A$ નીચેના પૈકી કોઈ એક સ્વરૂપમાં
+બરાબર એક જ રીતે વિભાજિત થઈને વાંચી શકાય છે:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$.}{}
+
+\tagitem{prvTrue}{$\ltrue$.}{}
+
+\item કોઈ $\Obj p_n \in \PVar$ માટે $\Obj p_n$.
+
+\tagitem{prvNot}{કોઈ !!{formula}~$!B$ માટે $\lnot !B$.}{}
+
+\tagitem{prvAnd}{કોઈ !!{formula}s $!B$ અને~$!C$ માટે
+$(!B \land !C)$.}{}
+
+\tagitem{prvOr}{કોઈ !!{formula}s $!B$ અને~$!C$ માટે
+$(!B \lor !C)$.}{}
+
+\tagitem{prvIf}{કોઈ !!{formula}s $!B$ અને~$!C$ માટે
+$(!B \lif !C)$.}{}
+
+\tagitem{prvIff}{કોઈ !!{formula}s $!B$ અને~$!C$ માટે
+$(!B \liff !C)$.}{}
+\end{enumerate}
+વળી, આ વિભાજિત વાંચન \emph{એકમાત્ર} છે.
+\end{prop}
+
+\begin{proof}
+$!A$ પર અનુમાનથી. દાખલા તરીકે, ધારો કે $!A$નાં $(!B \lif !C)$ અને
+$(!B' \lif !C')$ તરીકે બે જુદાં વાંચન છે. ત્યારે $!B$ અને $!B'$ સરખાં
+હોવાં જોઈએ (નહિતર એક બીજાનો ઉચિત આરંભખંડ હોત); તેથી $!A$નાં બંને
+વાંચન જુદાં હોય તો એનું કારણ માત્ર એ હોઈ શકે કે $!C$ અને $!C'$ એક જ
+સંકેતશ્રેણીનાં જુદાં વાંચન છે, જે અનુમાન-પૂર્વધારણાથી અશક્ય છે.
+\end{proof}
+
+
+\begin{defn}[એકરૂપ પ્રતિસ્થાપન]
+જો $!A$ અને $!B$ !!{formula}s હોય અને $\Obj p_i$ !!{propositional
+variable} હોય, તો $\Subst{!A}{!B}{\Obj p_i}$ એ $!A$માં $\Obj p_i$ના
+દરેક આવર્તનને $!B$ના આવર્તનથી બદલવાથી મળતું પરિણામ દર્શાવે છે;
+એવી જ રીતે, $\Obj p_1$, \dots,~$\Obj p_n$ને !!{formula}s $!B_1$,
+\dots,~$!B_n$થી એકસાથે કરેલું પ્રતિસ્થાપન
+$\SSubst{!A}{\subst{!B_1}{\Obj p_1},\dots,\subst{!B_n}{\Obj p_n}}$થી
+દર્શાવાય છે.
+\end{defn}
+
+\begin{prob} નીચેનાં પાંચ !!{formula}sમાંના દરેક માટે નક્કી કરો કે
+ તેને પ્રતિસ્થાપન \( \Subst{!A}{!B}{\Obj p_i} \) તરીકે લખી શકાય છે કે નહિ,
+ જ્યાં \( !A \) અનુક્રમે (i) \( \Obj p_0 \); (ii) \( ( \lnot \Obj p_0 \land \Obj
+ p_1) \); અને (iii) \( ( ( \lnot \Obj p_0 \lif \Obj p_1 ) \land \Obj
+ p_2 ) \) છે. દરેક કિસ્સામાં સંબંધિત પ્રતિસ્થાપન જણાવો.
+  \begin{enumerate}
+    \item \( \Obj p_1 \)
+    \item \( ( \lnot \Obj p_0 \land \Obj p_0 ) \)
+    \item \( ( ( \Obj p_0 \lor \Obj p_1 ) \land \Obj p_2 )  \)
+    \item \( \lnot ( ( \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \)
+    \item \( (( \lnot ( \Obj p_0 \lif \Obj p_1 ) \lif ( \Obj p_0 \lor \Obj p_1 )) \land \lnot ( \Obj p_0 \land \Obj p_1 )) \)
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+અનુમાન વડે $\Subst{!A}{!B}{p}$ની ગાણિતિક રીતે ચુસ્ત વ્યાખ્યા આપો.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,106 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-04T22:58:39.158018+00:00",
+  "boundary": "Propositional Logic syntax and semantics OLP-0055–0062",
+  "units": [
+    {
+      "unit_id": "OLP-0055",
+      "source_sha256": "1af59702eeba2337e42385ae40315eb7761ca569b0991f0afe69ad74bd5258aa",
+      "target_sha256": "697e72162149ae29919295d7c119fc39af34a2d30c9400fe953bf63177b29d0b",
+      "source_bytes": 1442,
+      "target_bytes": 2224,
+      "aligned_blocks": 17,
+      "linguistic_blocks": 3,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0056",
+      "source_sha256": "d99022091f0fa2b689b3a3e845c3908dd45c8a9c36c74f3d9c589d17d629f805",
+      "target_sha256": "66d77e0969cb525423d6ffd7ef6b08916e99f26d4ab58eb876b757b9e5b01031",
+      "source_bytes": 579,
+      "target_bytes": 821,
+      "aligned_blocks": 13,
+      "linguistic_blocks": 2,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0057",
+      "source_sha256": "3040499782b5cc91adab39a5ba93031d4daf6d05ad084e97937d6f84ebed432c",
+      "target_sha256": "61450ada961d937f92f0cd8bb3172018e5d35a37203ed79a454b4d611b800556",
+      "source_bytes": 4148,
+      "target_bytes": 8384,
+      "aligned_blocks": 10,
+      "linguistic_blocks": 5,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0058",
+      "source_sha256": "f05ab9c5e23b362dbee9f6063f096f52ebc9e7f97b29acc9c07f18788f1f8f48",
+      "target_sha256": "759ce2b24633dbdbbf798103b980025599bc741377792cad68c1f069a7c66701",
+      "source_bytes": 7021,
+      "target_bytes": 11750,
+      "aligned_blocks": 36,
+      "linguistic_blocks": 29,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0059",
+      "source_sha256": "32b55f3fdc69170d1c4856c5abd86e8845d1d4993b8e649a0501475ad0c5a9dc",
+      "target_sha256": "6e09c7fb6471727b1428cef8a3a2924baf47ad361c153244f3b11bdb0025e4e0",
+      "source_bytes": 4151,
+      "target_bytes": 6306,
+      "aligned_blocks": 24,
+      "linguistic_blocks": 18,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0060",
+      "source_sha256": "fff70555c1ef515d9092e72c91496aa898f74e4dd41e4cadc82f49a30c5850f5",
+      "target_sha256": "eb4cdbd2f1f8f7e1301dbedf18589ab7decf4da152b2454ad531fc462f98da23",
+      "source_bytes": 5278,
+      "target_bytes": 8898,
+      "aligned_blocks": 17,
+      "linguistic_blocks": 12,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0061",
+      "source_sha256": "9f0b5ecd5a8462ab5d970546602a1a0b0e46e5908c6a0f46369f93543583f882",
+      "target_sha256": "ee98b21402ea405ccc242b8a7b046ebb5105c437043b34fa3548380a97a9b03b",
+      "source_bytes": 5992,
+      "target_bytes": 7533,
+      "aligned_blocks": 23,
+      "linguistic_blocks": 17,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0062",
+      "source_sha256": "992456e01aa355799eabea11dc7d2a49a5f1a0f0ebeef05d36f86603c0f06d39",
+      "target_sha256": "eee3e29aee65e0c560a6ab8f10de6f6c8bda20bc17bf6fc99533b0ee2d87b397",
+      "source_bytes": 2962,
+      "target_bytes": 4252,
+      "aligned_blocks": 18,
+      "linguistic_blocks": 13,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 99,
+  "source_math_spans": 426,
+  "source_corrections": [
+    {
+      "finding_id": "OLPL-001",
+      "unit_id": "OLP-0058",
+      "handling": "Removed the unmatched parenthesis, yielding the well-formed abbreviation ¬A∨B, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLPL-002",
+      "unit_id": "OLP-0060",
+      "handling": "Restored the syntactic-identity symbol used in the controlling definition and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_007.json",
+  "semantic_review": "Passed exact-block review for all 99 aligned linguistic blocks; see SEMANTIC_REVIEW_007.json.",
+  "reader_integration": "Passed cumulative HTML QA, actual live browser inspection, reproducible guarded PDF build, and all-page visual inspection; see HTML_QA_007.json, BUILD_RECEIPT_007.json, and PDF_QA_007.json."
+}

@@ -1,0 +1,142 @@
+\input{build/foundations-preamble.tex}
+\usepackage[authoryear]{natbib}
+\renewcommand{\refname}{સંદર્ભગ્રંથો}
+\renewcommand{\partname}{ભાગ}
+\newenvironment{intro}{}{}
+\newcommand{\Id}[1]{\mathord{\mathrm{Id}_{#1}}}
+\newcommand{\equivrep}[2]{[#1]_{#2}}
+\newcommand{\equivclass}[2]{#1/_{\!{#2}}}
+\newcommand{\Intequiv}{\mathrel{\sim_{\Int}}}
+\newcommand{\Ratequiv}{\mathrel{\sim_{\Rat}}}
+\newcommand{\Realequiv}{\mathrel{\sim_{\Real}}}
+\newcommand{\funrestrictionto}[2]{#1\mathord{\restriction}_{#2}}
+\newcommand{\funimage}[2]{#1[#2]}
+\newcommand{\emptyseq}{\Lambda}
+\newcommand{\liff}{\mathbin{\leftrightarrow}}
+\newcommand{\dom}[1]{\mathrm{dom}(#1)}
+\newcommand{\ran}[1]{\mathrm{ran}(#1)}
+\newcommand{\comp}[2]{#2\circ #1}
+\newcommand{\pto}{\mathrel{\ooalign{\hfil$\mapstochar\mkern5mu$\hfil\cr$\to$}}}
+\newcommand{\fdefined}{\downarrow}
+\newcommand{\fundefined}{\uparrow}
+\newcommand{\True}{\mathbb{T}}
+\newcommand{\False}{\mathbb{F}}
+\newcommand{\lfalse}{\bot}
+\newcommand{\ltrue}{\top}
+\newcommand{\Obj}[1]{\mathsf{#1}}
+\newcommand{\Lang}[1]{\mathcal{#1}}
+\NewDocumentCommand{\Frm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Frm}}{\mathrm{Frm}(\Lang{#1})}}
+\newcommand{\PVar}{\mathrm{At}_0}
+\newcommand{\Struct}[1]{\mathfrak{#1}}
+\newcommand{\pAssign}[1]{\mathfrak{#1}}
+\newcommand{\pValue}[1]{\overline{\mathfrak{#1}}}
+\NewDocumentCommand{\pSat}{t{/} m m}{%
+  \pAssign{#2}\IfBooleanTF{#1}{\nvDash}{\vDash}#3}
+\newcommand{\Entails}{\vDash}
+\newcommand{\ident}{\equiv}
+\newcommand{\subst}[2]{#1/#2}
+\newcommand{\SSubst}[2]{#1[#2]}
+\newcommand{\Subst}[3]{#1[\subst{#2}{#3}]}
+\newcommand{\indfrm}{}
+\newcommand{\indcase}[3]{\def\indfrm{#1}$#1\ident #2$: #3}
+\expandafter\def\csname gutoken@formula\endcsname{સૂત્ર}
+\expandafter\def\csname gutoken@valuation\endcsname{સત્યમૂલ્ય-નિયુક્તિ}
+\newcommand{\sourcecorrection}[2]{%
+  \leavevmode\par\smallskip\noindent
+  \fbox{\begin{minipage}{0.94\linewidth}\small
+    \textbf{સ્રોત-સુધારો #1.} #2
+  \end{minipage}}%
+  \par\smallskip}
+\definecolor{oldiagcolorD}{HTML}{1973ba}
+\newlength{\olphotowidth}
+\setlength{\olphotowidth}{.4\textwidth}
+\RenewDocumentCommand{\olasset}{O{\olphotowidth} m}{\centering\resizebox{#1}{!}{\input{upstream/#2}}}
+\input{build/propositional-available-labels.tex}
+\renewcommand{\oliflabeldef}[3]{\ifcsname guavailable@#1\endcsname#2\else#3\fi}
+\hypersetup{pdftitle={ગણો અને વિધાનાત્મક તર્કશાસ્ત્ર — ઓપન લોજિક ગુજરાતી}}
+\begin{document}
+\begin{titlepage}
+{\Huge\bfseries ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+અનંત ગણો અને વિધાનાત્મક તર્કશાસ્ત્ર\par}
+\vspace{1em}
+{\Large ઓપન લોજિક — ગુજરાતી\par}
+\vspace{2em}
+ઓપન લોજિક પ્રોજેક્ટના અંગ્રેજી મૂળનો ગુજરાતી અનુવાદ.\par
+\vspace{1em}
+આ આવૃત્તિમાં ગણો અને વિધેયોના અગાઉના પ્રકરણો સાથે વિધાનાત્મક
+તર્કશાસ્ત્રના વાક્યરચના અને અર્થવિચાર પ્રકરણના છ ખંડ ઉમેર્યા છે.
+તેમાં સૂત્રોની રચના, એકમાત્ર વાચનીયતા, પ્રતિસ્થાપન, રચના-શ્રેણીઓ,
+સત્યમૂલ્ય-નિયુક્તિઓ, સત્યાર્થતા સારણીઓ, સંતોષ, પુનરુક્તિ અને
+અર્થાનુસારી ફલિતતા સામેલ છે.\par
+\vfill
+આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.
+આ આવૃત્તિમાં મૂળનાં ૫૯ એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
+કેટલીક વિશિષ્ટ પરિભાષા કામચલાઉ છે. ચકાસણીની વિગતો અને
+મૂળ પાઠ વિશેની નોંધો સંપાદકીય માહિતીમાં આપેલી છે.\par
+\vspace{1em}
+\href{https://github.com/OpenLogicProject/OpenLogic}{Open Logic Project}
+\quad \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}\par
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{અનુવાદોનું કેન્દ્ર}\par
+\end{titlepage}
+\tableofcontents
+\clearpage
+\input{build/propositional-body.tex}
+\clearpage
+\section*{સંપાદકીય નોંધો}
+\addcontentsline{toc}{section}{સંપાદકીય નોંધો}
+આ નોંધો મૂળ પાઠથી અલગ છે. મૂળની ગણિતીય નિશાનીઓ જાળવી છે.
+OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+OLARI-004, OLINF-001થી OLINF-002 અને OLPL-001થી OLPL-002 સુધીની
+ઓળખવાળી નોંધો સ્થિર અંગ્રેજી મૂળમાં મળેલી ખામીઓ અને ગુજરાતી પાઠમાં
+કરેલા મર્યાદિત સુધારા બાજુબાજુ દર્શાવે છે. દરેક સુધારાની ચોક્કસ
+જગ્યા, કારણ અને સૂત્રમાં થયેલો ફેરફાર નિર્ણય-અભિલેખમાં નોંધાયેલ છે.
+
+વિધાનાત્મક તર્કશાસ્ત્રના આ વાંચનરૂપમાં સ્થિર મૂળની સામાન્ય ગોઠવણી
+અનુસરીને અસત્ય અને સત્યના અચળો તથા પાંચેય તાર્કિક સંયોજકોને મૂળભૂત
+ગણ્યા છે. વૈકલ્પિક રીતે વ્યાખ્યાયિત સંયોજકોનો અનુવાદ ગોઠવણી-ટૅગો સાથે
+સ્રોત ફાઇલમાં જાળવેલો છે. તે ગોઠવણીમાં પ્રેરણની વ્યાખ્યામાં આવેલા
+વધારાના અંતકૌંસને OLPL-001 વડે સુધાર્યો છે. રચના-શ્રેણીની સાબિતીમાં
+તાર્કિક સમતુલ્યતાના સંકેતની જગ્યાએ જરૂરી વાક્યરચનાત્મક અભિન્નતાનો
+સંકેત OLPL-002 વડે પુનઃસ્થાપિત કર્યો છે.
+
+વિધાનચલ, આણ્વિક સૂત્ર, સત્યમૂલ્ય-નિયુક્તિ, સંતોષ્ય, પુનરુક્તિ અને
+નિવાર્ય જેવા પદો ગુજરાતી પાઠ્યપુસ્તક અને વિશ્વકોશના તપાસેલા
+તર્કશાસ્ત્રીય પ્રયોગો સાથે સરખાવ્યાં છે. અર્થાનુસારી ફલિતતા અને
+સ્થાનિક નિર્ધારણ જેવા સંયોજનો નિષ્ણાત સુધારા માટે ખુલ્લા છે.
+
+અનંત ગણોના પ્રકરણમાં સંવરણની વ્યાખ્યાને સ્વવિધેય ($f\colon A\to A$),
+ઉપગણ ($X\subseteq A$) અને આરંભઘટક ($o\in A$) સાથે સ્પષ્ટ કરી છે;
+મૂળની સાબિતી અને પછીના બધા ઉપયોગો આ જ પ્રકારધારણા પર આધાર રાખે છે.
+સંવરણના સહાયક પરિણામમાં મૂળની ગેરરીતે ગૂંથાયેલી સભ્યસંખ્યા-સમાનતાને
+તેની સાબિતી સ્થાપિત કરતી બે સમાનતાઓથી બદલી છે.
+
+ગણનીય માટેનું ગુજરાતી પ્રમાણ ગણનીયને ગણનીય અનંત ગણ માટે વાપરે છે,
+જ્યારે Open Logicની આ આવૃત્તિની વ્યાખ્યા સાન્ત અને ખાલી ગણોને પણ
+સમાવે છે. બંને પરિગણના-રૂપો પોતાની સ્થાનિક વ્યાખ્યા સાથે જ વાંચવાનાં છે.
+
+પરિભાષા, મૂળ સ્રોતો, પ્રત્યેક અનુવાદિત ખંડની સ્રોત-સંગતિ અને
+ચકાસણીની વધુ વિગતો આવૃત્તિની સાથેની ફાઇલોમાં છે.
+\begin{thebibliography}{9}
+\bibitem[Benacerraf(1965)]{Benacerraf1965}
+Benacerraf, Paul. 1965. \emph{What numbers could not be}.
+The Philosophical Review 74(1), 47--73.
+\bibitem[Cantor(1892)]{Cantor1892}
+Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.
+\bibitem[Frege(1884)]{Frege1884}
+Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.
+\bibitem[Potter(2004)]{Potter2004}
+Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.
+\bibitem[Conway(2006)]{Conway2006}
+Conway, John. 2006. \emph{The Power of Mathematics}.
+\bibitem[Katz and Katz(2012)]{KatzKatz2012}
+Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.
+\bibitem[O'Connor and Robertson(2005)]{OConnorRobertson:RN}
+O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert.
+\bibitem[Hilbert(2013)]{EwaldSieg2013}
+Hilbert, David. 2013. \emph{David Hilbert's Lectures on the Foundations of Arithmetic and Logic 1917--1933}.
+Edited by William Bragg Ewald and Wilfried Sieg. Springer.
+\bibitem[Dedekind(1888)]{Dedekind1888}
+Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?} Vieweg.
+\end{thebibliography}
+\end{document}

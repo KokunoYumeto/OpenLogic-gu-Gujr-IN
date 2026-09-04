@@ -1,14 +1,14 @@
 # ઓપન લોજિક — ગુજરાતી (gu-Gujr-IN)
 
-Gujarati scholarly translation of the Open Logic Project. The full 722-unit edition is in progress. The current cumulative working edition contains complete **Sets, Relations, Functions, Size of Sets, Arithmetization, and Infinite Sets**: **51/722 source units**, comprising forty-five substantive sections and six chapter drivers. It includes examples, exercises, proofs, diagrams, footnotes, both primary and alternative treatments of countability and set size, constructions of the integers, rationals, and reals, Hilbert's Hotel, Dedekind algebra and induction, and the Schröder–Bernstein theorem.
+Gujarati scholarly translation of the Open Logic Project. The full 722-unit edition is in progress. The current cumulative working edition contains complete **Sets, Relations, Functions, Size of Sets, Arithmetization, Infinite Sets, and Propositional Logic syntax and semantics**: **59/722 source units**, comprising fifty-one substantive sections and eight chapter or part drivers. It includes examples, exercises, proofs, diagrams, footnotes, both primary and alternative treatments of countability and set size, constructions of the integers, rationals, and reals, Hilbert's Hotel, Dedekind algebra and induction, the Schröder–Bernstein theorem, formation of propositional formulas, substitution, truth tables, valuations, satisfaction, consequence, and the semantic deduction theorem.
 
-- Read [the cumulative offline HTML reader](reader/infinite.html), with semantic MathML, Unicode Gujarati prose, local fonts, and thirteen described diagrams.
-- Build the cumulative PDF with the [guarded build instructions](docs/BUILD_CUMULATIVE.md). All three latest LuaLaTeX passes completed, but their PDF hashes differed; the 51-unit PDF will be added only after reproducible compilation and all-page visual inspection.
-- Edit the aligned Gujarati sources under [gu/content/sets-functions-relations](gu/content/sets-functions-relations).
+- Read [the cumulative offline HTML reader](reader/propositional.html), with semantic MathML, Unicode Gujarati prose, five truth tables, local fonts, and thirteen described diagrams.
+- Build the cumulative PDF with the [guarded build instructions](docs/BUILD_CUMULATIVE.md). Its final two LuaLaTeX passes are byte-identical, and all 73 pages have been rendered and visually inspected.
+- Edit the aligned Gujarati sources under [gu/content](gu/content).
 - See [edition notes](docs/EDITION_NOTES.md), [coverage](provenance/COVERAGE.json), and [recovered canon reconciliation](provenance/LAPTOP_CANON_RECONCILIATION.json).
 - Visit the [international translations hub](https://github.com/KokunoYumeto/OpenLogic-translations).
 
-The latest tagged artifact release remains [Sets and Relations v0.2.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/sets-relations-v0.2.0), covering 16/722 units. A public source checkpoint on `main` verifies 45/722 units through Arithmetization. This 51-unit Infinite Sets checkpoint records the additional source and reader work while the cumulative PDF remains outside the publication gate.
+The latest cumulative artifact release is [Propositional Syntax and Semantics v0.3.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/propositional-syntax-semantics-v0.3.0), covering 59/722 units. The matching source checkpoint on `main` records the same scope and its exact QA evidence.
 
 This is an AI-authored translation grounded in actual Gujarati canon consultation, deterministic structural checks, same-agent semantic comparison, reverse-paraphrase samples, and visual inspection. It is not independently certified by native scholars. Provisional terms are identified, and every deliberate correction to the frozen English source is separately disclosed.
 

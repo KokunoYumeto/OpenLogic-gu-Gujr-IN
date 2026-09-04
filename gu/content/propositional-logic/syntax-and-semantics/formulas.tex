@@ -1,0 +1,183 @@
+% Part: propositional-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fml}
+
+\olsection{વિધાનાત્મક \usetoken{P}{formula}}
+
+વિધાનાત્મક તર્કશાસ્ત્રનાં !!^{formula}s,
+\emph{!!{propositional
+    variable}s}માંથી\iftag{prvFalse}{\iftag{prvTrue}{,}{ અને}
+  વિધાનાત્મક અચળ~$\lfalse$}{}\iftag{prvTrue}{\iftag{prvFalse}{
+    અને}{} વિધાનાત્મક અચળ~$\ltrue$}{} \emph{તાર્કિક સંયોજકો} વડે
+રચાય છે.
+
+\begin{enumerate}
+\item !!{propositional variable}s $\Obj p_0$, $\Obj p_1$, \dots નો
+  !!^a{denumerable} ગણ~$\PVar$.
+\tagitem{prvFalse}{!!{falsity} માટેનો વિધાનાત્મક અચળ~$\lfalse$.}{}
+\tagitem{prvTrue}{!!{truth} માટેનો વિધાનાત્મક અચળ~$\ltrue$.}{}
+\item તાર્કિક સંયોજકો:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (નિષેધ)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (સંયોજન)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (વિયોજન)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+\item વિરામચિહ્નો: (, ) અને અલ્પવિરામ.
+\end{enumerate}
+
+વિધાનાત્મક તર્કશાસ્ત્રની આ ભાષાને આપણે $\Lang L_0$થી દર્શાવીએ છીએ.
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+ઉપર રજૂ કરેલા મૂળભૂત સંયોજકો ઉપરાંત, આપણે નીચેના \emph{વ્યાખ્યાયિત}
+સંકેતો પણ વાપરીએ છીએ:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (નિષેધ)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (સંયોજન)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (વિયોજન)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}}{}.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+વ્યાખ્યાયિત સંકેત સત્તાવાર રીતે ભાષાનો ભાગ નથી, પણ અનૌપચારિક
+સંક્ષેપ તરીકે રજૂ થાય છે: માત્ર મૂળભૂત સંકેતો વાપરીએ તો ઘણાં લાંબાં
+થતાં સૂત્રોને તેના વડે ટૂંકાં લખી શકાય છે. આ દેખીતો લાભ છે. જોકે વધુ
+મોટો લાભ એ છે કે સાબિતીઓ ટૂંકી થાય છે. કોઈ સંકેત મૂળભૂત હોય તો
+સાબિતીઓમાં તેને અલગથી ધ્યાનમાં લેવો પડે. તેથી મૂળભૂત સંકેતો જેટલા
+વધુ, આપણી સાબિતીઓ એટલી લાંબી.
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+ઉપર આપણે વાપર્યાં તેનાથી જુદી પરિભાષા અને સંકેતોથી તમે પરિચિત હોઈ
+શકો. તર્કશાસ્ત્રનાં પુસ્તકો (અને શિક્ષકો) ``નિષેધ'' માટે સામાન્ય રીતે
+$\sim$, $\neg$ અને~!\; તથા ``સંયોજન'' માટે $\wedge$, $\cdot$ અને
+$\&$માંથી કોઈ સંકેત વાપરે છે. ``શરતી વિધાન'' અથવા ``પ્રેરણ'' માટે
+સામાન્ય સંકેતો $\rightarrow$, $\Rightarrow$ અને $\supset$ છે.
+\iftag{prvIff,defIff}{``દ્વિશરતી વિધાન'', ``દ્વિમુખી પ્રેરણ'' અથવા
+  ``(સત્યમૂલ્યલક્ષી) સમતુલ્યતા'' માટે $\leftrightarrow$,
+  $\Leftrightarrow$ અને $\equiv$ વપરાય છે.}{}
+\iftag{prvFalse,defFalse}{$\lfalse$ સંકેતને જુદી જગ્યાએ ``અસત્યતા'',
+  ``ફાલ્સમ'', ``અસંગતિ'' અથવા ``તળિયું'' કહે છે.}{}
+\iftag{prvTrue,defTrue}{$\ltrue$ સંકેતને જુદી જગ્યાએ ``સત્ય'',
+  ``વેરમ'' અથવા ``ટોચ'' કહે છે.}{}
+\end{intro}
+
+\begin{defn}[સૂત્ર]
+\ollabel{defn:formulas}
+વિધાનાત્મક તર્કશાસ્ત્રનાં \emph{!!{formula}s}નો ગણ~$\Frm[L_0]$
+નીચે પ્રમાણે અનુમાનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\tagitem{prvFalse}{$\lfalse$ એ આણ્વિક !!{formula} છે.}{}
+
+\tagitem{prvTrue}{$\ltrue$ એ આણ્વિક !!{formula} છે.}{}
+
+\item દરેક !!{propositional variable}~$\Obj p_i$ આણ્વિક
+  !!{formula} છે.
+
+\tagitem{prvNot}{જો $!A$ !!a{formula} હોય, તો $\lnot !A$ પણ
+  !!a{formula} છે.}{}
+
+\tagitem{prvAnd}{જો $!A$ અને $!B$ !!{formula}s હોય, તો $(!A \land
+  !B)$ પણ !!a{formula} છે.}{}
+
+\tagitem{prvOr}{જો $!A$ અને $!B$ !!{formula}s હોય, તો $(!A \lor !B)$
+  પણ !!a{formula} છે.}{}
+
+\tagitem{prvIf}{જો $!A$ અને $!B$ !!{formula}s હોય, તો $(!A \lif !B)$
+  પણ !!a{formula} છે.}{}
+
+\tagitem{prvIff}{જો $!A$ અને $!B$ !!{formula}s હોય, તો $(!A \liff !B)$
+  પણ !!a{formula} છે.}{}
+
+\tagitem{limitClause}{બીજું કશું !!a{formula} નથી.}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+!!{formula}sની વ્યાખ્યા \emph{અનુમાનાત્મક વ્યાખ્યા} છે. મૂળભૂત રીતે,
+આપણે !!{formula}sનો ગણ અનંત સંખ્યામાં તબક્કાઓમાં રચીએ છીએ. પહેલા
+તબક્કામાં બધાં આણ્વિક સૂત્રોને સૂત્ર જાહેર કરીએ છીએ; આ વ્યાખ્યાના
+પહેલા થોડા કિસ્સાઓ, એટલે કે
+\iftag{prvTrue}{$\ltrue$, }{}%
+\iftag{prvFalse}{$\lfalse$, }{}%
+$\Obj p_i$ના કિસ્સાઓને અનુરૂપ છે. તેથી ``આણ્વિક !!{formula}''નો અર્થ
+આ સ્વરૂપનું કોઈ પણ !!{formula} થાય છે.
+
+વ્યાખ્યાના બીજા કિસ્સાઓ અગાઉથી રચેલાં !!{formula}sમાંથી નવાં
+!!{formula}s રચવાના નિયમો આપે છે. બીજા તબક્કામાં આણ્વિક
+!!{formula}sમાંથી !!{formula}s રચવા આપણે એ નિયમો વાપરી શકીએ છીએ.
+ત્રીજા તબક્કામાં આણ્વિક સૂત્રો અને બીજા તબક્કામાં મળેલાં સૂત્રોમાંથી
+નવાં સૂત્રો રચીએ છીએ, અને આમ આગળ ચાલે છે. આવા કોઈ તબક્કે છેવટે
+રચાતી દરેક વસ્તુ, અને માત્ર એવી વસ્તુ, !!{formula} છે.
+\end{explain}
+
+દ્વિસ્થાની સંયોજક~$\ast$ વડે $!B$, $!C$માંથી રચેલું સૂત્ર
+$(!B \ast !C)$ લખતી વખતે આપણે ઘણી વાર સૌથી બહારની કૌંસજોડી છોડી
+દઈને માત્ર~$!B \ast !C$ લખીશું.
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{defn}
+વ્યાખ્યાયિત કારકો વાપરીને રચેલાં સૂત્રો નીચે પ્રમાણે સમજવાનાં છે:
+
+\begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defEx,defAll}
+
+\tagitem{defTrue}{$\ltrue$ એ
+  \iftag{prvFalse}{$\lnot\lfalse$}{$(!A \lor \lnot !A)$, જ્યાં
+    $!A$ કોઈ નિશ્ચિત આણ્વિક !!{formula} છે}, તેનું સંક્ષિપ્ત રૂપ છે.}{}
+
+\tagitem{defFalse}{$\lfalse$ એ
+  \iftag{prvTrue}{$\lnot\ltrue$}{$(!A \land \lnot !A)$, જ્યાં
+    $!A$ કોઈ નિશ્ચિત આણ્વિક !!{formula} છે}, તેનું સંક્ષિપ્ત રૂપ છે.}{}
+
+\tagitem{defNot}{$\lnot !A$ એ $!A \lif \lfalse$નું સંક્ષિપ્ત રૂપ છે.}{}
+
+\tagitem{defOr}{$!A \lor !B$ એ
+  \iftag{prvAnd}{$\lnot(\lnot !A \land \lnot !B)$}{$\lnot !A \lif
+    !B$}નું સંક્ષિપ્ત રૂપ છે.}{}
+
+\tagitem{defAnd}{$!A \land !B$ એ
+  \iftag{prvOr}{$\lnot(\lnot !A \lor \lnot !B)$}{$\lnot (!A \lif
+    \lnot !B)$}નું સંક્ષિપ્ત રૂપ છે.}{}
+
+\tagitem{defIf}{$!A \lif !B$ એ
+  \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$}નું
+  સંક્ષિપ્ત રૂપ છે.}{}
+
+\tagitem{defIff}{$!A \liff !B$ એ $(!A \lif !B) \land (!B
+  \lif !A)$નું સંક્ષિપ્ત રૂપ છે.}{}
+\end{tagenumerate}
+\end{defn}
+\end{tagblock}
+\sourcecorrection{OLPL-001}{મૂળની \texttt{formulas.tex}માં વ્યાખ્યાયિત
+પ્રેરણના વિયોજનવાળા વિકલ્પને $\lnot !A\lor !B)$ લખતાં એક વધારાનું
+અંતકૌંસ આવે છે. અહીં અર્થાત્ બનતું સુઘડ સૂત્ર $\lnot !A\lor !B$
+લખ્યું છે.}
+
+\begin{defn}[વાક્યરચનાત્મક અભિન્નતા]
+$\ident$ સંકેત, સંકેતોની શ્રેણીઓ વચ્ચેની વાક્યરચનાત્મક અભિન્નતા
+દર્શાવે છે; એટલે કે, $!A \ident !B$ ત્યારે જ જ્યારે $!A$ અને $!B$
+સમાન લંબાઈ ધરાવતી સંકેતશ્રેણીઓ હોય અને દરેક સ્થાને બંનેમાં એક જ
+સંકેત હોય.
+\end{defn}
+
+$\ident$ સંકેતની બંને બાજુએ જોડાણથી મળેલી શ્રેણીઓ પણ આવી શકે છે.
+દાખલા તરીકે, $!A \ident (!B \lor !C)$નો અર્થ આ છે: $!A$ની
+સંકેતશ્રેણી એ આરંભકૌંસ, શ્રેણી $!B$, સંકેત $\lor$, શ્રેણી $!C$ અને
+અંતકૌંસને આ જ ક્રમમાં જોડવાથી મળતી શ્રેણી છે. જો એવું હોય, તો આપણે
+જાણીએ છીએ કે $!A$નો પહેલો સંકેત આરંભકૌંસ છે, $!A$માં $!B$ ઉપશ્રેણી
+તરીકે આવે છે (બીજા સંકેતથી શરૂ થઈને), એ ઉપશ્રેણી પછી $\lor$ આવે છે,
+વગેરે.
+
+\end{document}

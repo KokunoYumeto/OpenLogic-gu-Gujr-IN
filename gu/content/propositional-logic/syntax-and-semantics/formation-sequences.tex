@@ -1,0 +1,151 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{syn}{fseq}
+
+\olsection{રચના-શ્રેણીઓ}
+
+અનુમાનાત્મક વ્યાખ્યા વડે !!{formula}s વ્યાખ્યાયિત કરવા અને તેની
+પૂરક રીત તરીકે અનુમાન વડે !!{formula}sના ગુણધર્મો સાબિત કરવા એ
+સુઘડ અને કાર્યક્ષમ અભિગમ છે. જોકે !!{formula}sની રચનાને નીચેથી ઉપર,
+ક્રમિક પગલાંમાં જોવી પણ ઉપયોગી થઈ શકે છે. અહીં આપણે \emph{રચના-શ્રેણી}
+એ ખ્યાલ વડે એમ કરીશું.
+
+\begin{defn}[સૂત્રો માટેની રચના-શ્રેણીઓ]
+\ollabel{defn:fseq-frm}
+ભાષા~$\Lang L_0$નાં સંકેતોની શ્રેણીઓની સાન્ત શ્રેણી
+$\tuple{!A_0,\dotsc,!A_n}$ને $!A$ માટેની \emph{રચના-શ્રેણી} ત્યારે
+કહીએ જ્યારે $!A \ident !A_n$ હોય અને દરેક $i\leq n$ માટે કાં તો
+$!A_i$ આણ્વિક સૂત્ર હોય, અથવા એવા $j,k<i$ હોય કે નીચેનામાંથી કોઈ
+એક વાત સાચી હોય:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$.}{}%
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    (\Obj p_1 \land \Obj p_0),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}
+\]
+એ $\lnot (\Obj p_1 \land \Obj p_0)$ની રચના-શ્રેણી છે; એવી જ રીતે
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    \Obj p_0,
+    (\Obj p_1 \land \Obj p_0),
+    (\Obj p_0 \lif \Obj p_1),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}.
+\]
+પણ છે.
+બીજા ઉદાહરણ પરથી દેખાય છે તેમ, રચના-શ્રેણીમાં `કચરો' હોઈ શકે છે:
+એવાં સૂત્રો જે બિનજરૂરી હોય અથવા રચનામાં કોઈ ફાળો આપતાં ન હોય.
+\end{ex}
+
+\begin{prop}
+\ollabel{prop:formed}
+$\Frm[L_0]$ના દરેક !!{formula}~$!A$ માટે કોઈ રચના-શ્રેણી હોય છે.
+\end{prop}
+
+\begin{proof}
+ધારો કે $!A$ આણ્વિક છે. ત્યારે શ્રેણી~$\tuple{!A}$ એ $!A$ માટેની
+રચના-શ્રેણી છે.
+%
+હવે ધારો કે $!B$ અને~$!C$ માટે અનુક્રમે રચના-શ્રેણીઓ
+$\tuple{!B_0,\dotsc,!B_n}$ અને $\tuple{!C_0,\dotsc,!C_m}$ છે.
+%
+\begin{enumerate}
+  \tagitem{prvNot}{જો $!A \ident \lnot !B$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvAnd}{જો $!A \ident (!B \land !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvOr}{જો $!A \ident (!B \lor !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvIf}{જો $!A \ident (!B \lif !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvIff}{જો $!A \ident (!B \liff !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+\end{enumerate}
+!!{formula}s પર અનુમાનના સિદ્ધાંત મુજબ દરેક !!{formula} માટે
+રચના-શ્રેણી હોય છે.
+\end{proof}
+
+આપણે તેનું પ્રતિલોમ પણ સાબિત કરી શકીએ છીએ. આ મહત્વનું છે, કારણ કે
+તેનાથી સૂત્રો વ્યાખ્યાયિત કરવાની આપણી બંને રીતો સમતુલ્ય છે---એ બંને
+સરખાં પરિણામો આપે છે---એ દેખાય છે. તેનો અર્થ એ પણ થાય છે કે
+રચના-શ્રેણીની લંબાઈ પર સામાન્ય અનુમાન વાપરીને આપણે સૂત્રો વિશેનાં
+પ્રમેયો સાબિત કરી શકીએ છીએ.
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+ધારો કે $\tuple{!A_0,\dotsc,!A_n}$ એ~$!A_n$ માટેની રચના-શ્રેણી છે
+અને $k\leq n$. ત્યારે $\tuple{!A_0,\dotsc,!A_k}$ એ~$!A_k$ માટેની
+રચના-શ્રેણી છે.
+\end{lem}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L_0]$ એ ભાષા~$\Lang L_0$ની એવી બધી સંકેતશ્રેણીઓનો ગણ છે
+જેમની રચના-શ્રેણી હોય છે.
+\end{thm}
+
+\begin{proof}
+ભાષા~$\Lang L_0$ની એવી બધી સંકેતશ્રેણીઓનો ગણ $F$ લો જેમની
+રચના-શ્રેણી હોય છે. \olref[pl][syn][fseq]{prop:formed}માં આપણે
+$\Frm[L_0]\subseteq F$ જોયું છે; તેથી હવે આપણે તેનું પ્રતિલોમ
+સાબિત કરીએ છીએ.
+
+ધારો કે $!A$ની રચના-શ્રેણી $\tuple{!A_0,\dotsc,!A_n}$ છે. $n$ પર
+પ્રબળ અનુમાનથી આપણે $!A\in\Frm[L_0]$ સાબિત કરીએ છીએ. આપણી
+અનુમાન-પૂર્વધારણા એ છે કે $m<n$ લંબાઈની રચના-શ્રેણી ધરાવતી દરેક
+સંકેતશ્રેણી $\Frm[L_0]$માં છે. રચના-શ્રેણીની વ્યાખ્યા મુજબ કાં તો
+$!A_n$ આણ્વિક છે, અથવા એવા $j,k<n$ હોવા જોઈએ કે નીચેનામાંથી કોઈ એક
+કિસ્સો બને:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_n \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_n \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_n \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_n \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_n \ident (!A_j \liff !A_k)$.}{}%
+\end{enumerate}
+હવે આપણે કિસ્સાવાર વિચારીએ. જો $!A_n$ આણ્વિક હોય, તો
+$!A_n\in\Frm[L_0]$. હવે તેના બદલે ધારો કે $!A\ident
+(!A_j\land !A_k)$. \olref[pl][syn][fseq]{lem:fseq-init} મુજબ
+$\tuple{!A_0,\dotsc,!A_j}$ અને $\tuple{!A_0,\dotsc,!A_k}$ અનુક્રમે
+$!A_j$ અને~$!A_k$ માટેની રચના-શ્રેણીઓ છે. આ બંને $!A$ની
+રચના-શ્રેણીની ઉચિત આરંભ-ઉપશ્રેણીઓ હોવાથી તેમની લંબાઈ~$n$થી ઓછી છે.
+તેથી અનુમાન-પૂર્વધારણા મુજબ $!A_j$ અને~$!A_k$, $\Frm[L_0]$માં છે;
+અને આમ !!a{formula}ની વ્યાખ્યા મુજબ $(!A_j\land !A_k)$ પણ તેમાં છે.
+બીજા કિસ્સા સમાંતર દલીલથી મળે છે.
+\end{proof}
+\sourcecorrection{OLPL-002}{મૂળની \texttt{formation-sequences.tex}માં
+આ કિસ્સાની પૂર્વધારણા $!A\equiv(!A_j\land !A_k)$ લખાઈ છે. અહીં
+તાર્કિક સમતુલ્યતાની નહિ પણ સંકેતશ્રેણીની અભિન્નતાની જરૂર છે;
+વ્યાખ્યામાં અને આ જ સાબિતીના અગાઉના ખંડમાં વપરાયેલો
+$\ident$ સંકેત અહીં પુનઃસ્થાપિત કર્યો છે.}
+
+\end{document}

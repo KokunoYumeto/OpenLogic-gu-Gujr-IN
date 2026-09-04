@@ -1,0 +1,113 @@
+{
+  "schema": "openlogic-gu-html-qa/7",
+  "html": {
+    "path": "reader/propositional.html",
+    "bytes": 1418425,
+    "sha256": "e253b3271f95c155d7a2f1c6f607102137ed3d8dc93291c48b5641b5dad9d3d6",
+    "source_units_covered": 59,
+    "propositional_units_complete": 8,
+    "rendered_logic_sections": 6,
+    "connective_profile": "frozen-upstream default: truth constants and all five connectives primitive",
+    "mathml_nodes": 3451,
+    "truth_tables": 5,
+    "images": 13,
+    "unique_ids": 220,
+    "broken_internal_links": 0,
+    "propositional_section_ids": [
+      "pl:syn:int:sec",
+      "pl:syn:fml:sec",
+      "pl:syn:pre:sec",
+      "pl:syn:fseq:sec",
+      "pl:syn:val:sec",
+      "pl:syn:sem:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002",
+      "OLPL-001",
+      "OLPL-002"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 9,
+    "partial_arrows": 6,
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ]
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-04T23:01:16.212617+00:00",
+    "method": "Codex in-app browser at the local byte-bound URL, with direct navigation and viewport inspection plus a live DOM geometry and anchor check.",
+    "url": "http://127.0.0.1:8790/reader/propositional.html?qa=007c",
+    "viewed": [
+      "Gujarati cumulative title, 59/722 coverage notice, and contents through section 51",
+      "all six new propositional-logic sections 46 through 51",
+      "formula grammar, connective profile, repaired substitution exercise, and formation-sequence proof",
+      "OLPL-001 and OLPL-002 source-correction disclosures beside the corrected mathematics",
+      "all five truth tables and their valuation clauses",
+      "satisfaction, consequence, semantic facts, and the semantic deduction theorem",
+      "editorial configuration disclosure, bibliography, and all nine footnotes"
+    ],
+    "viewport_css_pixels": {
+      "width": 1265
+    },
+    "live_dom_checks": {
+      "mathml_nodes": 3451,
+      "missing_requested_anchors": 0,
+      "horizontal_overflow_css_pixels": 0,
+      "document_width_css_pixels": 1265,
+      "viewport_width_css_pixels": 1265
+    },
+    "defects_found_and_repaired": [
+      "The substitution exercise had copied display delimiters as literal parentheses; the target now preserves the source inline-math delimiters."
+    ],
+    "final_hash_binding": {
+      "html_sha256": "e253b3271f95c155d7a2f1c6f607102137ed3d8dc93291c48b5641b5dad9d3d6",
+      "focused_anchor_views": [
+        "pl:syn:int:sec",
+        "pl:syn:fml:sec",
+        "pl:syn:pre:sec",
+        "pl:syn:fseq:sec",
+        "pl:syn:val:sec",
+        "pl:syn:sem:sec",
+        "pl:syn:sem:thm:sem-deduction"
+      ]
+    },
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_007.json",
+    "samples": 99,
+    "status": "passed_same_agent_not_independent_native_certification"
+  },
+  "pdf": {
+    "receipt": "PDF_QA_007.json",
+    "sha256": "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa",
+    "pages": 73,
+    "status": "passed_reproducible_build_and_all_page_visual_qa"
+  },
+  "full_corpus_complete": false
+}
