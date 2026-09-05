@@ -1,0 +1,1156 @@
+{
+  "schema": "openlogic-gu-pdf-qa/1",
+  "inspected_at_utc": "2026-09-05T16:11:20.107270+00:00",
+  "pdf": {
+    "path": "build/gu-sequent-calculus.pdf",
+    "bytes": 989643,
+    "sha256": "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861",
+    "pages": 100,
+    "page_size": "A4",
+    "page_size_points": [
+      595.276,
+      841.89
+    ],
+    "title": "સિક્વન્ટ કલન સહિત ઓપન લોજિક ગુજરાતી",
+    "encrypted": false,
+    "nonempty_extracted_text_pages": 100
+  },
+  "guarded_build": {
+    "receipt": "BUILD_RECEIPT_009.json",
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "bounded_timeout_ms": 1000,
+    "acquired": true,
+    "passes": 3,
+    "pass_sha256": [
+      "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861",
+      "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861",
+      "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861"
+    ],
+    "all_three_passes_byte_identical": true,
+    "full_process_tree_waited": true
+  },
+  "render": {
+    "engine": "Poppler pdftoppm",
+    "dpi": 110,
+    "rendered_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "page_pngs": [
+      {
+        "page": 1,
+        "bytes": 80528,
+        "sha256": "c38538357a9fac24c1af5667112783ee1028f6633f23b78c511f85a8dc96bf7f",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 2,
+        "bytes": 62008,
+        "sha256": "ac8074b435d0ca5442bd8989b8df74d5b77f0c9b328cb3c425b34de1eed94280",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 3,
+        "bytes": 71753,
+        "sha256": "4dc98068f0131506ef4b605bfcfecf43f9d48ea50fa715681c2c4d47cdd0ec66",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 4,
+        "bytes": 74196,
+        "sha256": "265e423ad8de112b79f3682fdfbe14ba7f8c07def59d707d7e793d6656138b2f",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 5,
+        "bytes": 84541,
+        "sha256": "08e3330cd3c2a83696ce5284ed76e3e1df6785877af347cd508600ea5f98bfed",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 6,
+        "bytes": 11474,
+        "sha256": "3482d30899100290edc297d46ab2e86f64bc57b966af034c5b61ea5005bb41a7",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 7,
+        "bytes": 262861,
+        "sha256": "d6d2badea84dc7b16f90d95251e9d37942a99c3a6e29f68b4a4697ad505eb230",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 8,
+        "bytes": 277064,
+        "sha256": "52b967edaf253242b825fc2f5090b50126cc7a7704a46020902e0934f0ef4cee",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 9,
+        "bytes": 225757,
+        "sha256": "1ed388962a9bbc823462e7bfe2260b2b2702a962319a507bb034655befb8bde9",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 10,
+        "bytes": 161742,
+        "sha256": "1cd43b68a3cb02c50a29106ec571df5ab8644cba599623e9195ca645b87ba110",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 11,
+        "bytes": 178338,
+        "sha256": "09c8e6d6c541311c741c77faf1a151991be92995b683bcf15406bd63254c3fa3",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 12,
+        "bytes": 207196,
+        "sha256": "0de3acb2acdea7e787ee3dbd03cbabf0dcb47e6d60cad5df7beaffcd3a0f2858",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 13,
+        "bytes": 251591,
+        "sha256": "ce76d491dbf4d7143588811fcc196734c05f1ea78cb4611c2c625464825bd0c7",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 14,
+        "bytes": 267869,
+        "sha256": "077a86a107af6e38f449c50d7832e0d1795ea100fccfd0f214bed168f8c9fd79",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 15,
+        "bytes": 259691,
+        "sha256": "47b23824e1ca890af4eaaebf0bc96830e24b94b07dc42a91c20340dd44ed120d",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 16,
+        "bytes": 329471,
+        "sha256": "f82d8c77fd3505e17624eb27f8de0f318fdd7928ff8708fc5ceac55fd3f8d17b",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 17,
+        "bytes": 304468,
+        "sha256": "abc6c65fbbc0c4f79a626f34ff67879786b14de2fe0f5af66c2ddfd74431495d",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 18,
+        "bytes": 286948,
+        "sha256": "b6f16f25c2d9084abbf12a5d0e6372ef43c4e5f2ec4bb887df28af6f72b9bcc2",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 19,
+        "bytes": 254655,
+        "sha256": "f9b7a6b9d2b044e890cbfc7cdcf33ea07ec5234ac2ceab3201f76f428d31dddd",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 20,
+        "bytes": 163629,
+        "sha256": "b7c03a4a62801c51203c222b1e8e70580fba3396eaed76687006eada0f066963",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 21,
+        "bytes": 282367,
+        "sha256": "63d4ae8e38b51939d6c2db254494cff1527ca9022df69e9e6df2d89afb32e569",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 22,
+        "bytes": 222874,
+        "sha256": "95a9ce8aef6e973608d2899d3a750f185dd71f4a33d2ccce18bf9c07b13e96de",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 23,
+        "bytes": 252929,
+        "sha256": "8b8903070dc3f4d938bac6bc8a4896e78fd839f25f8330fb9ba0f5b08d24010d",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 24,
+        "bytes": 206963,
+        "sha256": "4a54ebb8aff7a854e69390e9da4ea0b875903f7834b1476cf68249534dd9a5b8",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 25,
+        "bytes": 172976,
+        "sha256": "67ee4787c24308f5f5be14c2bdd00413e77bc3d7eb6f8d4a00c0aa84e327902e",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 26,
+        "bytes": 275958,
+        "sha256": "79332724651140194db893c7b9d992268e2ab23f428acd96f385263671f9968b",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 27,
+        "bytes": 278256,
+        "sha256": "63bd1f443491e9fe5e653ef74cb1c8378bba889c949b2cec52833aeddce8e2f7",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 28,
+        "bytes": 291790,
+        "sha256": "d6f3c02f2690f87ae49f549e03f354eda8af97c2bc04229926a4c2dcb5ee852f",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 29,
+        "bytes": 228725,
+        "sha256": "eac629d5fda9408502eb49f2d7271caf1fd0d2877520ecb067dce4ae0a99d66e",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 30,
+        "bytes": 239793,
+        "sha256": "0f97b707ca64b1d759b953933d28dcf27e9ab793c72f92f0bf1c2f43207655ee",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 31,
+        "bytes": 278850,
+        "sha256": "f18774ed4eeb5b201dcc357b160a7b7414679bca941152598d6505379228d7c3",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 32,
+        "bytes": 242235,
+        "sha256": "e501bd8dc1c7363e30737802e92a1842107da886895cc5d83ba445d5a613c534",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 33,
+        "bytes": 257308,
+        "sha256": "9e1dce8cc9a373e9de0de91315780e17bac97b0b07088a8f3f6669de6a12e769",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 34,
+        "bytes": 163849,
+        "sha256": "77bbf8115d5affa2cf850b2fda69538b117f3857c2b1c12ae724488cd041a612",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 35,
+        "bytes": 272099,
+        "sha256": "751e793404001534edc71db64009418bee01c925fccda40e69cc0cd361fa54f7",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 36,
+        "bytes": 196574,
+        "sha256": "97aae416c81a5aa135e3d1f820f60c8c219286d0d38e624945eed11d3561cc00",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 37,
+        "bytes": 248222,
+        "sha256": "ff4bc01e9888f4298757627be5b1b3940a90f1e535456e9469cec06ddbf2056a",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 38,
+        "bytes": 270447,
+        "sha256": "f3f95ffe116312891398f6567c9e69f408a8a423449137c15685b826b5de8e57",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 39,
+        "bytes": 266815,
+        "sha256": "92ea20b4e3964ab347c825af2f47c386391a1719accc9f6cb2274aa32ed57372",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 40,
+        "bytes": 278078,
+        "sha256": "6ec0e7e35848bc721920f092700566b964dfc2a9e25e50dec67623271a52efb4",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 41,
+        "bytes": 242953,
+        "sha256": "e4c7b5fa8f8a406d4bb4c7aeb7e3aaf22508e1484a8444c14817632ad88d7fb7",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 42,
+        "bytes": 284063,
+        "sha256": "7c78d1f394ab29db6f32ba24397baa97f1baa580c24b2da2a7c36574f4e344d5",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 43,
+        "bytes": 293665,
+        "sha256": "640d8dc844897083d4b65ede8dbc430062602bd6515d23cdadd4fd2911021bbf",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 44,
+        "bytes": 249340,
+        "sha256": "9a42554b28546426b78818fb392980004d107f7a950a2cd57673d40e7a7298e7",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 45,
+        "bytes": 231130,
+        "sha256": "5b71ce26db9da55ea6acfb6fcacb1ed3fd61789e2e8d3ec7a70f25e826e3f331",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 46,
+        "bytes": 234630,
+        "sha256": "d0b5200615533c0162165e38b73e1c1dce42fc13689632e1a8526e4c4ee8e985",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 47,
+        "bytes": 272756,
+        "sha256": "a9dd384a3a2f6ce844d23a6bc6301e57ef6c0aab4f6ec18232e60dd97a7ecbf4",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 48,
+        "bytes": 194520,
+        "sha256": "620ecca03d33b7f857601f3319ad1277de95effacdf8f5f31c7d90588d43c896",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 49,
+        "bytes": 236285,
+        "sha256": "5fc5349750a715ff8bf54179b33e45f02c24e35b2e8a42fd9eb8a9d6085053cc",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 50,
+        "bytes": 180186,
+        "sha256": "3eb56cfb81b4c942fe23fcfb223a05caa0f410b7925b281a94ada68f15fb7c54",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 51,
+        "bytes": 209623,
+        "sha256": "93194b38c69948159fc123d2348731a8da45070d22d59335298e125b94de8a78",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 52,
+        "bytes": 290621,
+        "sha256": "33470b0d2949d70b92c83364b9f09eb9ce57d8490e77784ded2ee02a459c9a37",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 53,
+        "bytes": 256453,
+        "sha256": "1131570c9c50b36f8d236525eadc9abc966f0667424b676504dedc169be867b9",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 54,
+        "bytes": 326814,
+        "sha256": "9ba2bce0b2c5447dac07bb7375a56d3313ab9517545451fbe3ce68905a1b8d0c",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 55,
+        "bytes": 191029,
+        "sha256": "587dd51972295c65626b7aa12fb5f66c3a339d4e42ae49309f38689da7f7dbc6",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 56,
+        "bytes": 222630,
+        "sha256": "7d19e19f2a64283de4eb778dc2101d335b784e781af27d63975353eb07eaa44a",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 57,
+        "bytes": 193788,
+        "sha256": "8fc7f5c51edce284874a021f933d6ea073706da200eea9a224397e2f2e9f5cc4",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 58,
+        "bytes": 299633,
+        "sha256": "48efb7c7ff37295be25e4d95c86250724305013449095c3e440804feaf944007",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 59,
+        "bytes": 258958,
+        "sha256": "3ba67711087eb3aad9577bce4ecba481cdb56137c6cde2637369d0141d0632a6",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 60,
+        "bytes": 222312,
+        "sha256": "e6599a1bca066ed110b298c09ee9f7fcdb00d49dcbd10b5374688cac9f872cf7",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 61,
+        "bytes": 215840,
+        "sha256": "a4de6ab3f7dd17e8ab0ce63e267b0b4189bf975da433dd3e00801e61bc0ff08a",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 62,
+        "bytes": 222497,
+        "sha256": "5980126025273bba986b2b6191d610909984daa5615546fbc2a06a16713e0208",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 63,
+        "bytes": 231755,
+        "sha256": "55dfbe79cf6b36c5e509fc26de5b3ac80af3ac54243de42cca82ec21952e5718",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 64,
+        "bytes": 331068,
+        "sha256": "0ee561c4b12997ae84a5f55d7bd5518783f1ad4ecd136aa7c844686f615fedfa",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 65,
+        "bytes": 259711,
+        "sha256": "c3d1d46f4e6bcf4180e51b18c8c2c1be6773d8d284e332a67872e86fefed8c25",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 66,
+        "bytes": 264507,
+        "sha256": "8b3b5ff81c8374851d8bd603662f3dfe113142d7b542830d1d69348c33f2eb09",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 67,
+        "bytes": 280039,
+        "sha256": "dd1d39e4fde52a8b516a6ead13de689b150434d29e1f9683948f97cc783333f8",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 68,
+        "bytes": 223139,
+        "sha256": "ec4c1e6d6c21fa6f3801f7b08490e22a4be1b98a7f54ab47eef8e2ad02259af5",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 69,
+        "bytes": 190024,
+        "sha256": "f6edf48c0508b0f1054c8f5e6b967e8b959cd2ef2091d045125576b5b7e5d582",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 70,
+        "bytes": 167351,
+        "sha256": "ae456386ea770b41f6616d6f6a42ca9062cc8f0d38113042a6ec23c0c9a73061",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 71,
+        "bytes": 211456,
+        "sha256": "53f21de5db4de34ba7863d694534efb9d234484f05c133fed6d88d6840f68922",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 72,
+        "bytes": 77415,
+        "sha256": "171b089ba66b4e1d6614a46a4b7eda495ea5c70426290468bf7ffb1e66c870b9",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 73,
+        "bytes": 130386,
+        "sha256": "17de0f140951e9e2a75c42bd56a0f98a01e28bddf56b899e06e258af4f5a15e5",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 74,
+        "bytes": 146310,
+        "sha256": "193ebdea96002318f75f36b7ed8d8351015cfb8ce1aa5880e5a1afec907f724f",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 75,
+        "bytes": 310463,
+        "sha256": "f9cda9e39523ba83bce09fcfd0d50642f9b4efbf82b54ed410156af332fe0372",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 76,
+        "bytes": 287581,
+        "sha256": "1ed3b1331f3d6d19291a6a834f2643e82c71020f6950d0c1a42223369d027352",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 77,
+        "bytes": 315907,
+        "sha256": "40f5562c9d2b8bf39dde10edc8a250d35f0b5a84166378a2344bd023942e9835",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 78,
+        "bytes": 272510,
+        "sha256": "cf1df1ef29dbe0747fbce66373b128d13416e8de1921e264532a47f1b00d762a",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 79,
+        "bytes": 290814,
+        "sha256": "7dc2c769f09334853980acd004768d040a012ec82a76f4b81fb58976045e65c6",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 80,
+        "bytes": 202908,
+        "sha256": "ce3daf44619c732e551a8ebd5629c1412fbb732eafe298f32067bc539fb50b4a",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 81,
+        "bytes": 116152,
+        "sha256": "8192e8ef159f3ed08e472a860d3f74552e3bcbdf7b6b55ec6dbb520c022c4ef9",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 82,
+        "bytes": 189406,
+        "sha256": "8e79884efdc63765736b41cd5d52f898a9b98a4b2b351817df1a6854c881672c",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 83,
+        "bytes": 163406,
+        "sha256": "813a866d6dbe947800ab6f03d857ea91684a796649b84599906f9fd046c3d782",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 84,
+        "bytes": 149387,
+        "sha256": "e6896a7f487bbe91767d7b0953a43bbf1bf406190f06d9f2759058929ce6a901",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 85,
+        "bytes": 180697,
+        "sha256": "39d5e713e55b7b5a5470596f60cd9e0b9510992d7ea3f010ce57a6a982779533",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 86,
+        "bytes": 159266,
+        "sha256": "c40c4a61eaa5778af9e466b96c1fd3380b5ef22958c636fc15fdec4b9c483595",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 87,
+        "bytes": 127725,
+        "sha256": "3b73a614b434df11a1024986a0eefbd4f4cf6665804f96013d25a2d7661454a1",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 88,
+        "bytes": 146497,
+        "sha256": "6c0fb1693b57ea3ee39574c5042b9cfb474ac6099609941c3cf7b437bee75a09",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 89,
+        "bytes": 163711,
+        "sha256": "a2e0d26615bb6aff069a68794c1766fe81849b0730f4ba15fc8b039a43e324d1",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 90,
+        "bytes": 236755,
+        "sha256": "f6da2ce96e4b8505b3eecad1b7f7b53a2c50da7c5254ed5451a19019a9a8eda9",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 91,
+        "bytes": 159877,
+        "sha256": "89604e7ab37f6ae7cb36afb8e1cd6447ac704b171a8d8f1c39c741ca8ce1932d",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 92,
+        "bytes": 126698,
+        "sha256": "dfbe8e6ab15dad819d19ca83bf0f1aa8f5bf30dc994d4be0eb3fb7c8b92fa5af",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 93,
+        "bytes": 89657,
+        "sha256": "edd718d0d38156de9a96cacedc367e571d5300e83dfe5db74ecf8b39121d3275",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 94,
+        "bytes": 198213,
+        "sha256": "7050f4e65af450ee262bd48cbdb33ad015fdd88ff0de875bd280a483d61648bc",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 95,
+        "bytes": 228930,
+        "sha256": "eb18eda44c84d08e5ac8762d866096d85ac1d8c98a4fad375948a2db5c898076",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 96,
+        "bytes": 210229,
+        "sha256": "1d64632640fadc6ca106a4e55cc6bc6088a51cb16635821dd5ef633db5c333eb",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 97,
+        "bytes": 268493,
+        "sha256": "8d8acd9b85ee9ba9d2ff03c662311282dcebaa74fe6089be3ac4cc8b9b3b062b",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 98,
+        "bytes": 170608,
+        "sha256": "ff4f8af7946bb0c2db91b2241fd9c8ab08fa782730557b5d2bf11e2bbd183417",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 99,
+        "bytes": 185640,
+        "sha256": "c4df413bc62eb320cba196afddd0e753db69bc0608faba7b35d881ee5ca60a62",
+        "pixels": [
+          910,
+          1287
+        ]
+      },
+      {
+        "page": 100,
+        "bytes": 177511,
+        "sha256": "a7c93287973c7e1264e3a9b8f1f2edf8e7b7fc27ad6e8356b21402f0bebabb71",
+        "pixels": [
+          910,
+          1287
+        ]
+      }
+    ],
+    "contact_sheets": [
+      {
+        "sheet": 1,
+        "pages": [
+          1,
+          20
+        ],
+        "bytes": 1470830,
+        "sha256": "484b39139bc258005812612a92a59617677d0d90399f711cc949045e95945462"
+      },
+      {
+        "sheet": 2,
+        "pages": [
+          21,
+          40
+        ],
+        "bytes": 1888455,
+        "sha256": "16ce4033c3e0480168fe58a27391b810b2607da38fb7859d65acf1772fb0504c"
+      },
+      {
+        "sheet": 3,
+        "pages": [
+          41,
+          60
+        ],
+        "bytes": 1843362,
+        "sha256": "d574b5dcf41f8d9bf59d931320e1a113a7a109dc483d9d6319e32db10114355e"
+      },
+      {
+        "sheet": 4,
+        "pages": [
+          61,
+          80
+        ],
+        "bytes": 1759749,
+        "sha256": "69525838ed0232e8cced7723970b0f36f0fad87ac1b1c37abe54be0d9d873dc0"
+      },
+      {
+        "sheet": 5,
+        "pages": [
+          81,
+          100
+        ],
+        "bytes": 1329435,
+        "sha256": "3d69c5adaec61d89f70842fc9bf51aa83660947e5bf0a772f42dd768bc65e09b"
+      }
+    ],
+    "dark_pixels_in_six_pixel_page_edge": []
+  },
+  "visual_inspection": {
+    "status": "passed_all_pages_actual_visual_inspection",
+    "all_pages_visually_inspected": true,
+    "method": "All five final-hash contact sheets covering pages 1–100 were viewed. Pages 80–100, containing every new sequent-calculus rule, proof tree, source-correction box, and end-matter transition, were also opened at full resolution.",
+    "full_resolution_pages_reinspected": [
+      1,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "checks": {
+      "clipping": "none observed; automated six-pixel edge scan also found no dark content",
+      "overlap": "none observed",
+      "missing_glyphs": "none observed; TeX log reports zero missing-character warnings",
+      "placeholder_tokens": "none observed; extracted-text search found no unresolved authoring tokens",
+      "diagrams": "sharp and correctly placed",
+      "truth_tables": "five inherited tables remain clean and legible",
+      "proof_displays": "all sequent rule schemes and proof trees are complete, centered, legible, and inside the text area",
+      "headers_footers_page_numbers": "consistent",
+      "source_correction_boxes": "all 35 cumulative keyed disclosures are visible and stay within the intended margins",
+      "title_toc_bibliography": "complete and legible"
+    },
+    "defects_found_and_repaired": [
+      "The first attempt lacked the tableau environment required by an inherited proof-system display; the wrapper now supplies the controlling prooftrees environment.",
+      "A token used in moving section titles expanded to an internal control sequence in the table of contents; the complete Gujarati token table now uses a protected document command."
+    ]
+  },
+  "log_review": {
+    "blocking_errors": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 1,
+    "missing_glyph_warnings": 0,
+    "undefined_reference_warnings": 0,
+    "remaining_nonblocking_warning_classes": [
+      "MiKTeX package-path naming notice",
+      "shell escape disabled notice",
+      "one visually harmless underfull line",
+      "three inherited table-size-in-math-mode notices",
+      "PDF bookmark math/token stripping notices"
+    ],
+    "assessment": "The warnings do not produce a visible defect on any inspected page."
+  },
+  "font_review": {
+    "NotoSansGujarati_embedded": true,
+    "NotoSansGujarati_unicode_mapping": true,
+    "all_reported_fonts_embedded": true
+  },
+  "semantic_html_alternative": "reader/sequent-calculus.html",
+  "status": "passed_reproducible_build_and_all_page_visual_qa",
+  "full_corpus_complete": false
+}

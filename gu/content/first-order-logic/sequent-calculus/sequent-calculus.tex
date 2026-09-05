@@ -1,0 +1,56 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{seq}{સિક્વન્ટ કલન}}
+      {\olchapter{pl}{seq}{સિક્વન્ટ કલન}}
+
+\begin{editorial}
+  આ પ્રકરણ શાસ્ત્રીય પ્રથમ-ક્રમના તર્કશાસ્ત્ર માટે ગેન્ટ્ઝનનું પ્રમાણભૂત
+  સિક્વન્ટ કલન LK રજૂ કરે છે. તેમાં હજી વધુ દાખલાઓ અને
+  અભ્યાસપ્રશ્નો ઉમેરવા યોગ્ય છે. સાબિતી-તંત્ર તરીકે સિક્વન્ટ કલનને લાગતી
+  સામગ્રીનો સમાવેશ કરવા કે તેને બાકાત રાખવા માટે ``prfLK'' ટૅગ વાપરો.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{structural-rules}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

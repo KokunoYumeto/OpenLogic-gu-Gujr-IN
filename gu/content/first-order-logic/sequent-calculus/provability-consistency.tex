@@ -1,0 +1,130 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{prv}}
+      {\olfileid{pl}{seq}{prv}}
+
+\olsection{\usetoken{S}{derivability} અને સુસંગતતા}
+
+હવે આપણે !!{derivability} સંબંધના અનેક ગુણધર્મો સ્થાપીશું. દરેક
+ગુણધર્મ સ્વતંત્ર રીતે રસપ્રદ છે અને પૂર્ણતા-પ્રમેયની સાબિતીમાં દરેકની
+ભૂમિકા હશે.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  જો $\Gamma \Proves !A$ હોય અને $\Gamma \cup \{!A\}$ અસુસંગત હોય,
+  તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+એવા સાન્ત $\Gamma_0$ અને $\Gamma_1 \subseteq \Gamma$ છે કે
+$\Log{LK}$ એ $\Gamma_0 \Sequent !A$ અને
+$!A, \Gamma_1 \Sequent \quad$ને !!{derive}s કરે. $\Gamma_0 \Sequent
+!A$ની $\Log{LK}$-!!{derivation}ને~$\pi_0$ અને
+$\Gamma_1, !A \Sequent \quad$ની $\Log{LK}$-!!{derivation}ને~$\pi_1$
+કહીએ. પછી આપણે નીચેનું !!{derive} કરી શકીએ છીએ:
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ \Gamma_0 \fCenter !A $
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!A, \Gamma_1 \fCenter $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0,\Gamma_1 \fCenter $
+\end{prooftree}
+
+$\Gamma_0 \subseteq \Gamma$ અને $\Gamma_1 \subseteq \Gamma$ હોવાથી
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; તેથી $\Gamma$ અસુસંગત છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ હોય જો અને માત્ર જો
+$\Gamma \cup \{\lnot !A\}$ અસુસંગત હોય.
+\end{prop}
+
+\begin{proof}
+પહેલાં માનો કે $\Gamma \Proves !A$, એટલે કે
+$\Gamma \Sequent !A$ની !!a{derivation}~$\pi_0$ છે. તેમાં
+$\LeftR{\lnot}$ નિયમ ઉમેરીએ તો $\lnot !A, \Gamma \Sequent \quad$ની
+!!a{derivation} મળે છે; એટલે કે $\Gamma \cup \{\lnot !A\}$ અસુસંગત છે.
+
+જો $\Gamma \cup \{\lnot !A\}$ અસુસંગત હોય, તો
+$\lnot !A, \Gamma \Sequent \quad$ની કોઈ !!a{derivation}~$\pi_1$ છે.
+નીચે આપેલું $\Gamma \Sequent !A$નું !!a{derivation} છે:
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma \fCenter$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma \fCenter !A$
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ હોય જો અને માત્ર જો
+$\Gamma \cup \{!A\}$ અસુસંગત હોય, એ સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  જો $\Gamma \Proves !A$ અને $\lnot !A \in \Gamma$ હોય, તો
+  $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+  માનો કે $\Gamma \Proves !A$ અને $\lnot !A \in \Gamma$. ત્યારે કોઈ
+  સિક્વન્ટ $\Gamma_0 \Sequent !A$ની !!a{derivation}~$\pi$ છે. સિક્વન્ટ
+  $\lnot !A, \Gamma_0 \Sequent \quad$ પણ !!{derivable} છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi$}
+    \Deduce$\Gamma_0 \fCenter !A$
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, !A \fCenter$
+    \RightLabel{\LeftR{\Exchange}}
+    \UnaryInf$!A, \lnot !A \fCenter$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_0, \lnot !A \fCenter$
+  \end{prooftree}
+  $\lnot !A \in \Gamma$ અને $\Gamma_0 \subseteq \Gamma$ હોવાથી આ
+  $\Gamma$ અસુસંગત છે તેમ બતાવે છે.
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  જો $\Gamma \cup \{!A\}$ અને $\Gamma \cup \{\lnot !A\}$ બંને
+  અસુસંગત હોય, તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+એવા સાન્ત ગણો $\Gamma_0 \subseteq \Gamma$ અને
+$\Gamma_1 \subseteq \Gamma$ તથા અનુક્રમે
+$!A, \Gamma_0 \Sequent \quad$ અને
+$\lnot !A, \Gamma_1 \Sequent \quad$ની $\Log{LK}$-!!{derivation}s
+$\pi_0$ અને $\pi_1$ છે. પછી આપણે નીચેનું !!{derive} કરી શકીએ છીએ:
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ !A, \Gamma_0 \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma_0 \fCenter \lnot !A$
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lnot !A, \Gamma_1 \fCenter  $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0, \Gamma_1 \fCenter $
+\end{prooftree}
+$\Gamma_0 \subseteq \Gamma$ અને $\Gamma_1 \subseteq \Gamma$ હોવાથી
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$. તેથી $\Gamma$ અસુસંગત છે.
+\end{proof}
+
+\end{document}

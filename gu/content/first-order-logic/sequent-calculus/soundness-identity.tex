@@ -1,0 +1,46 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{sid}
+
+\olsection{\usetoken{S}{identity} સાથે યથાર્થતા}
+
+\begin{prop}
+તાદાત્મ્ય માટેનાં આરંભિક સિક્વન્ટો અને નિયમો ધરાવતું $\Log{LK}$ યથાર્થ છે.
+\end{prop}
+
+\begin{proof}
+સ્વરૂપ ${} \Sequent \eq[t][t]$નાં આરંભિક સિક્વન્ટો પ્રામાણ્ય છે, કારણ
+કે દરેક !!{structure}~$\Struct M$ માટે $\Sat{M}{\eq[t][t]}$. (નોંધો કે
+પદ $t$ બંધ છે, એટલે કે તેમાં કોઈ ચલ નથી, એમ આપણે માનીએ છીએ; તેથી
+ચલ-નિયુક્તિઓ અપ્રસ્તુત છે.)
+
+માનો કે કોઈ !!a{derivation}માં છેલ્લું અનુમાન $=$ છે. ત્યારે તેનું
+આધાર-સિક્વન્ટ $\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_1)$ અને
+તેનું ફલિત-સિક્વન્ટ
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, !A(t_2)$ છે. કોઈ
+!!a{structure}~$\Struct M$ લો. ફલિત-સિક્વન્ટ પ્રામાણ્ય છે તે બતાવવું છે;
+એટલે કે જો $\Sat{M}{\eq[t_1][t_2]}$ અને $\Sat{M}{\Gamma}$ હોય, તો કાં
+તો કોઈ $!C \in \Delta$ માટે $\Sat{M}{!C}$ અથવા $\Sat{M}{!A(t_2)}$.
+
+આગમન-પરિકલ્પના મુજબ આધાર-સિક્વન્ટ પ્રામાણ્ય છે. તેનો અર્થ એ છે કે જો
+$\Sat{M}{\eq[t_1][t_2]}$ અને $\Sat{M}{\Gamma}$ હોય, તો કાં તો
+(a) કોઈ $!C \in \Delta$ માટે $\Sat{M}{!C}$ અથવા
+(b) $\Sat{M}{!A(t_1)}$. કિસ્સા (a)માં કામ પૂરું થયું. કિસ્સા (b) લો.
+$s(x) = \Value{t_1}{M}$ હોય એવી કોઈ ચલ-નિયુક્તિ $s$ લો.
+\olref[syn][ass]{prop:sentence-sat-true} મુજબ
+$\Sat{M}{!A(t_1)}[s]$. $\varAssign{s}{s}{x}$ હોવાથી
+\olref[syn][ext]{prop:ext-formulas} મુજબ $\Sat{M}{!A(x)}[s]$.
+$\Sat{M}{\eq[t_1][t_2]}$ હોવાથી
+$\Value{t_1}{M} = \Value{t_2}{M}$, અને તેથી
+$s(x) = \Value{t_2}{M}$. \olref[syn][ext]{prop:ext-formulas} ફરી
+લગાડવાથી $\Sat{M}{!A(t_2)}[s]$ પણ મળે છે.
+\olref[syn][ass]{prop:sentence-sat-true} મુજબ $\Sat{M}{!A(t_2)}$.
+\end{proof}
+
+\end{document}

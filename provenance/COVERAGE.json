@@ -1,9 +1,9 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 65,
-  "working_scope": "Complete cumulative translation through the First-order Logic proof-systems overview, OLP-0004–0068",
-  "working_status": "structural, semantic, exact HTML DOM/MathML, reproducible guarded PDF, and all-page visual QA passed; local-file browser navigation blocked by browser security policy and recorded without workaround",
+  "translated": 80,
+  "working_scope": "Complete cumulative translation through the First-order Logic Sequent Calculus chapter, OLP-0004–0083",
+  "working_status": "structural, semantic, exact HTML DOM/MathML/proof/link/asset, live-browser, reproducible guarded PDF, all-page visual, and reviewer-decision-package QA passed",
   "public_release": {
     "tag": "propositional-syntax-semantics-v0.3.0",
     "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/propositional-syntax-semantics-v0.3.0",
@@ -11,9 +11,9 @@
     "scope": "Complete cumulative artifact release through Propositional Logic syntax and semantics, OLP-0004–0062"
   },
   "public_source_checkpoint": {
-    "commit": "a9ae1d8527b7313f642046c39b3ade9a8d8dd7ff",
-    "translated": 59,
-    "scope": "Previous anonymously verified source checkpoint through Propositional Logic syntax and semantics, OLP-0004–0062; checkpoint 008 is represented by the commit containing this file"
+    "commit": "85d83046964cdfb406cb0774ec501c89eacda64e",
+    "translated": 65,
+    "scope": "Previous anonymously verified source checkpoint through the First-order Logic proof-systems overview, OLP-0004–0068; checkpoint 009 is represented by the commit containing this file"
   },
   "complete_edition": false,
   "units": [
@@ -494,91 +494,106 @@
       "unit_id": "OLP-0069",
       "source_path": "content/first-order-logic/sequent-calculus/sequent-calculus.tex",
       "source_sha256": "f7e79d7b3f181c61d3defb24c630db20ceaf12a3ec237c9b0a2ab1f7855494fb",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "7d8589a109c7ad7a40c19893b4a81dcc50bf3476b0ff13c515b8f9ac69ae9cb1"
     },
     {
       "unit_id": "OLP-0070",
       "source_path": "content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
       "source_sha256": "73a554964d7a3fc35a116f63e658340a8c89f9915c3f27e23f7ebd762df35859",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "e6005222aecfa0b29d7fd24bf05840a32be40ca629df36dc714e8f709172fb56"
     },
     {
       "unit_id": "OLP-0071",
       "source_path": "content/first-order-logic/sequent-calculus/propositional-rules.tex",
       "source_sha256": "0bf253cf8afedca1478fb820770b04ab708dbe8cfd3344377a0d14ae91889276",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "5f59cd63806abff56da31387a7d0a60cd3fe8d9b886b2533b99f6dfb9e98e468"
     },
     {
       "unit_id": "OLP-0072",
       "source_path": "content/first-order-logic/sequent-calculus/quantifier-rules.tex",
       "source_sha256": "e0047087b88b91ba65c23a76f7c8f230c4161785f4d83f07d14461341b66d90e",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "cf8a8004fb325e0683c5a988102e4c65286de06abee4bea50daba8780cb8f6da"
     },
     {
       "unit_id": "OLP-0073",
       "source_path": "content/first-order-logic/sequent-calculus/structural-rules.tex",
       "source_sha256": "5c13d5312a8b2287b54d67d2fadc6247ba499bd9b6a71255ea04891307689b06",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100"
     },
     {
       "unit_id": "OLP-0074",
       "source_path": "content/first-order-logic/sequent-calculus/derivations.tex",
       "source_sha256": "25897d850b211443621f31a1166f443c1e00c6bcbf13002bc1b9281ca4300371",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "066aa7a3c19e60fe27b845d75b61470094d45476c33f5e98a536c15894802c9b"
     },
     {
       "unit_id": "OLP-0075",
       "source_path": "content/first-order-logic/sequent-calculus/proving-things.tex",
       "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "547fbb9dc4bae7a4f347834882cefe4e784f17580d2213214ddb79a8d0d8102f"
     },
     {
       "unit_id": "OLP-0076",
       "source_path": "content/first-order-logic/sequent-calculus/proving-things-quant.tex",
       "source_sha256": "d2e7eba11801753dfd9c57c6be6d45df5c11de57843c3f689dbee7636419aa99",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "1b77230ef3f2f7530a831e883c765297673526b7e25634fba67444d0b1c05ddd"
     },
     {
       "unit_id": "OLP-0077",
       "source_path": "content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
       "source_sha256": "91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "4198b3cbe7c82641e4b723e334b3ec2c81ddc6d29242fd8638a2d0ec9ee81ec3"
     },
     {
       "unit_id": "OLP-0078",
       "source_path": "content/first-order-logic/sequent-calculus/provability-consistency.tex",
       "source_sha256": "a44d3cb4dadd224e943e0ea4d3d81529c6e108e7eecbcf9b1cb7d3632e4a150a",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "6c4ee39e5ef9ca994b11aaae70f97ebf13321136fec92efb428306715564008b"
     },
     {
       "unit_id": "OLP-0079",
       "source_path": "content/first-order-logic/sequent-calculus/provability-propositional.tex",
       "source_sha256": "b9a23c15949d620b4783f3d1629b9e41315defac417dea12dd75118342b9d36c",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "4dc62f514c7ec8c5fe250e15f069def17a88abdcf80b503d4df1ef3f8246bed1"
     },
     {
       "unit_id": "OLP-0080",
       "source_path": "content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
       "source_sha256": "30d343a6b09d234683fff540afec999650f2cf4afd9ce751138b8f3b93f2fe6a",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "cb829b91154ac68a4f7e54f84e846af00e592e5f8031d569563769b18a1e13e6"
     },
     {
       "unit_id": "OLP-0081",
       "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
       "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "4d11d1ccf5f7ab9f2382de0c6971a8405286ecfc3a9da004f4f19cd141fec441"
     },
     {
       "unit_id": "OLP-0082",
       "source_path": "content/first-order-logic/sequent-calculus/identity.tex",
       "source_sha256": "0f9d6d0731f2a74f568d49545bfeeff9373aea71d188973549054823f240f23d",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "b5ac3bb21297c57cf0ceac81ad9830660a405d8a7f0e85612203d140195de3ce"
     },
     {
       "unit_id": "OLP-0083",
       "source_path": "content/first-order-logic/sequent-calculus/soundness-identity.tex",
       "source_sha256": "0cc6d3e92d57d3070076ce2daa13aa85c6da6ac3cfb2b5d56df87bb7fef4fac3",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "f8c0daf3e88c73edbf1a03893faab40e49b79d4dc5fa3dfaefa453b71a954d3c"
     },
     {
       "unit_id": "OLP-0084",

@@ -1,22 +1,22 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-05T03:26:51.336140+00:00",
+  "checkpoint_utc": "2026-09-05T16:59:59.631570+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 65,
+  "translated_units": 80,
   "publicly_verified_release_units": 59,
-  "publicly_verified_source_checkpoint_units": 59,
+  "publicly_verified_source_checkpoint_units": 65,
   "total_units": 722,
-  "aligned_linguistic_blocks": 756,
-  "source_math_spans_verified": 3591,
+  "aligned_linguistic_blocks": 887,
+  "source_math_spans_verified": 4594,
   "semantic_review": {
     "method": "same-agent source comparison and reverse paraphrase",
-    "samples": 335,
+    "samples": 466,
     "independent_native_certification": false,
-    "status": "passed_for_current_65_unit_scope"
+    "status": "passed_for_current_80_unit_scope"
   },
   "source_corrections": {
-    "count": 29,
+    "count": 35,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -46,52 +46,62 @@
       "OLPRF-001",
       "OLPRF-002",
       "OLPRF-003",
-      "OLPRF-004"
+      "OLPRF-004",
+      "OLSEQ-001",
+      "OLSEQ-002",
+      "OLSEQ-003",
+      "OLSEQ-004",
+      "OLSEQ-005",
+      "OLSEQ-006"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/proof-systems.html",
-    "bytes": 1499731,
-    "sha256": "0faf4ffb805478f6d9f38ea745f3fe7e1d20126bd5ec3297e7eb5783ae6328cf",
-    "source_units_covered": 65,
-    "proof_system_units_complete": 6,
-    "rendered_proof_system_sections": 5,
-    "logic_profile": "frozen shared overview rendered with the propositional profile",
-    "mathml_nodes": 3593,
+    "path": "reader/sequent-calculus.html",
+    "bytes": 1849265,
+    "sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479",
+    "source_units_covered": 80,
+    "sequent_calculus_units_complete": 15,
+    "rendered_sequent_calculus_sections": 14,
+    "logic_profile": "first-order LK sequent calculus, including quantifier and identity rules",
+    "mathml_nodes": 4394,
     "mathml_tables": 70,
-    "proof_representations": [
-      {
-        "kind": "prooftree",
-        "source_sha256": "fc7a0f7ce7abf78f1a348bab2f1e5829c9b8af9c9a0ce3bcc15ca616fb1101e5",
-        "representation": "MathML inference array preserving premises, conclusions and rule labels."
-      },
-      {
-        "kind": "prooftree",
-        "source_sha256": "114088ab7308dd3e478b557d6817d68fab9415b4072d0328edc371ae1dcdf55d",
-        "representation": "MathML inference array preserving premises, conclusions and rule labels."
-      },
-      {
-        "kind": "closed_tableau",
-        "source_sha256": "b172deacb9f70de486d779592e920be9a97281c54b99ea5121f86aa316389f6c",
-        "representation": "MathML one-branch closed tableau preserving all five signed formulas, rule references and closure mark."
-      },
-      {
-        "kind": "axiomatic_derivation",
-        "source_sha256": "929cbc0bc646f1f20d60d0a8cf1008c4893a1e553bcaf72ae686fe50a9511ada",
-        "representation": "MathML numbered array preserving all three derivation lines."
-      }
-    ],
+    "block_mathml_nodes": 215,
+    "proof_representation_entries": 73,
+    "proof_representation_kinds": {
+      "axiomatic_derivation": 1,
+      "closed_tableau": 1,
+      "prooftree": 2,
+      "sequent_prooftree": 58,
+      "sequent_rule_display": 11
+    },
+    "proof_structure_totals": {
+      "trees": 88,
+      "axioms": 113,
+      "inferences": 198,
+      "deductions": 23,
+      "empty_premises": 43,
+      "double_lines": 2
+    },
     "truth_tables": 5,
     "images": 13,
-    "unique_ids": 230,
+    "unique_ids": 300,
     "broken_internal_links": 0,
-    "proof_system_section_ids": [
-      "pl:prf:int:sec",
-      "pl:prf:seq:sec",
-      "pl:prf:ntd:sec",
-      "pl:prf:tab:sec",
-      "pl:prf:axd:sec"
+    "sequent_calculus_section_ids": [
+      "fol:seq:rul:sec",
+      "fol:seq:prl:sec",
+      "fol:seq:qrl:sec",
+      "fol:seq:srl:sec",
+      "fol:seq:der:sec",
+      "fol:seq:pro:sec",
+      "fol:seq:prq:sec",
+      "fol:seq:ptn:sec",
+      "fol:seq:prv:sec",
+      "fol:seq:ppr:sec",
+      "fol:seq:qpr:sec",
+      "fol:seq:sou:sec",
+      "fol:seq:ide:sec",
+      "fol:seq:sid:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -122,32 +132,49 @@
       "OLPRF-001",
       "OLPRF-002",
       "OLPRF-004",
-      "OLPRF-003"
+      "OLPRF-003",
+      "OLSEQ-001",
+      "OLSEQ-002",
+      "OLSEQ-003",
+      "OLSEQ-004",
+      "OLSEQ-005",
+      "OLSEQ-006"
     ],
     "gujarati_character_inventory_preserved": true,
     "main_gujarati_character_sequence_preserved": true,
     "footnote_gujarati_character_sequence_preserved": true,
-    "footnotes": 9,
-    "partial_arrows": 6,
+    "footnotes": 10,
+    "stylesheet": {
+      "path": "reader/reader.css",
+      "href": "reader.css?v=3",
+      "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
+    },
+    "build_qa": {
+      "path": "build/sequent-calculus-html-qa.json",
+      "sha256": "5d7470615656568aea0f7f26e5ed9051c19ec7db547531427df638cb60586398"
+    },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
     ],
-    "status": "passed_exact_dom_mathml_and_asset_qa",
-    "browser_inspection": "not_performed_local_file_url_blocked_by_browser_security_policy"
+    "status": "passed_exact_dom_mathml_proof_link_asset_and_character_qa",
+    "browser_inspection": "passed_actual_live_browser_inspection",
+    "block_mathml_vertical_overflow_nodes": 0
   },
   "pdf": {
-    "path": "build/gu-proof-systems.pdf",
-    "bytes": 848061,
-    "sha256": "dc9dac4d37335cba20eda1411383059ad9822dcf8fbcbb84e2ba75fd590d12c5",
-    "pages": 79,
+    "path": "build/gu-sequent-calculus.pdf",
+    "bytes": 989643,
+    "sha256": "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861",
+    "pages": 100,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "ગણો, વિધાનાત્મક તર્કશાસ્ત્ર અને નિષ્પત્તિ તંત્રો — ઓપન લોજિક ગુજરાતી",
+    "title": "સિક્વન્ટ કલન સહિત ઓપન લોજિક ગુજરાતી",
+    "encrypted": false,
+    "nonempty_extracted_text_pages": 100,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_008.json",
+    "build_receipt": "BUILD_RECEIPT_009.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -199,9 +226,15 @@
       "blocks": 32,
       "math": 137,
       "semantic": 32
+    },
+    "009": {
+      "units": 15,
+      "blocks": 131,
+      "math": 1003,
+      "semantic": 131
     }
   },
-  "status": "65_unit_source_html_and_reproducible_pdf_checkpoint_passed; source_checkpoint_publication_pending; complete_corpus_in_progress",
+  "status": "80_unit_source_html_and_reproducible_pdf_checkpoint_passed; source_checkpoint_publication_pending; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -241,5 +274,35 @@
     "render": "passed_cumulative_exact_html_dom_mathml_and_asset_qa_plus_reproducible_79_page_pdf_all_page_visual_qa",
     "browser": "direct_local_file_navigation_blocked_by_browser_security_policy_and_recorded_without_workaround",
     "cumulative_gate": "CUMULATIVE_QA_008.json"
+  },
+  "translation_decisions": {
+    "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+    "sha256": "35fadf9a02125305a588107b6ba5da821ef354a0077a608eedbfbea47533388d",
+    "status": "passed",
+    "reader_locators": {
+      "available": 168,
+      "pending": 0,
+      "not_applicable": 1
+    }
+  },
+  "batch_009": {
+    "draft_units": 15,
+    "remaining_units": [],
+    "structural_parity": "passed_after_6_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLSEQ-001",
+      "OLSEQ-002",
+      "OLSEQ-003",
+      "OLSEQ-004",
+      "OLSEQ-005",
+      "OLSEQ-006"
+    ],
+    "linguistic_blocks": 131,
+    "math_spans": 1003,
+    "semantic_samples": "passed_131_hashed_samples_covering_all_linguistic_blocks",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_link_asset_and_character_qa_plus_reproducible_100_page_pdf_all_page_visual_qa",
+    "browser": "passed_live_browser_inspection_and_computed_style_check_of_all_215_block_mathml_nodes",
+    "translation_decisions": "passed_json_schema_and_168_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
+    "cumulative_gate": "CUMULATIVE_QA_009.json"
   }
 }

@@ -1,0 +1,80 @@
+{
+  "schema": "openlogic-gu-translation-decision-qa/1",
+  "generated_utc": "2026-09-05T16:47:07.645110+00:00",
+  "status": "passed",
+  "normative_schema": {
+    "path": "docs/translation-decisions/translation-decision.schema.json",
+    "bytes": 10787,
+    "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+    "upstream_revision": "811091d54be4989918864732073279a588340e6f"
+  },
+  "coverage": {
+    "source_units": 80,
+    "total_source_units": 722,
+    "term_decisions": 123,
+    "source_correction_decisions": 35,
+    "edition_scope_decisions": 3,
+    "all_decisions": 161,
+    "occurrences": 169
+  },
+  "checks": {
+    "json_schema_valid": true,
+    "unique_decision_ids": true,
+    "unique_occurrence_ids": true,
+    "all_source_and_target_line_byte_spans_exact": true,
+    "all_locator_file_hashes_exact": true,
+    "all_decisions_have_checked_authority": true,
+    "all_decisions_have_occurrences": true,
+    "csv_matches_json_occurrences": true,
+    "full_markdown_contains_every_decision": true,
+    "priority_markdown_matches_high_priority_set": true,
+    "chosen_renderings_have_no_devanagari": true,
+    "unknown_reader_pages_are_explicitly_pending": true
+  },
+  "reader_locators": {
+    "available": 168,
+    "pending": 0,
+    "not_applicable": 1
+  },
+  "reader_locator_policy": "Available only after a unique deterministic target-to-assembled-body alignment and successful SyncTeX forward query. Printed-page fields remain null unless independently established. Pending pages are never guessed.",
+  "input_artifacts": {
+    "TERM_DECISIONS.jsonl": {
+      "bytes": 381474,
+      "sha256": "af856b0b198e696c87dce31100bf3b23394186fb6e92560fe4174cc47fcf894f"
+    },
+    "CANON_PASSAGES.jsonl": {
+      "bytes": 71758,
+      "sha256": "f571baa94a6ff02a2a4ef20c5641a6c5e6c23339d2c3cda1afaa044881242ffb"
+    },
+    "GUJARATI_EDITION_SCOPE.md": {
+      "bytes": 2380,
+      "sha256": "70484e2c5ee23ffa9dba0b3d1361bee402da94917f63d9ba0539ea8eb5d20bf6"
+    }
+  },
+  "release_surfaces": {
+    "START_HERE.md": {
+      "bytes": 829,
+      "sha256": "41beaf582ab5f403c5c85dc190bc6b4bed352e0ed0ea4c131818e7d72d9ee723"
+    },
+    "TRANSLATION_DECISIONS_FULL.md": {
+      "bytes": 222802,
+      "sha256": "7bd3549c0ac20a20a8e581c4b177b0e36b8109d71f3596134a22f588a2c95328"
+    },
+    "PRIORITY_REVIEW.md": {
+      "bytes": 75930,
+      "sha256": "15f48a0ca9250a0682cd56582df62ae4ac6a2b7c81533ac0115558e8db436c00"
+    },
+    "DECISION_OCCURRENCES.csv": {
+      "bytes": 117807,
+      "sha256": "6ec0d6602787852f791f610e65dfe117ed845bb9b5c36af509f6c45a031e3082"
+    },
+    "DECISIONS.json": {
+      "bytes": 1149722,
+      "sha256": "976e17f3f30e365afc08bbb347316b2348de8fbc9978d2bf253e71b14b472cf7"
+    },
+    "translation-decision.schema.json": {
+      "bytes": 10787,
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+    }
+  }
+}

@@ -11,5 +11,11 @@ figure img { display: block; margin: auto auto 1rem; }
 figcaption { font-size: .92em; }
 aside { border: 1px solid #bbcdc7; border-radius: 6px; padding: .5rem 1rem; margin-bottom: 2rem; }
 math { font-family: math; font-size: 1.05em; }
-math[display='block'] { margin: 1rem 0; overflow-x: auto; }
+math[display='block'] {
+  box-sizing: content-box;
+  margin: .65rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: .65rem 0;
+}
 @media (max-width:600px) { body { padding: 1rem; } }

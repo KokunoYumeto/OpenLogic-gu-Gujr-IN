@@ -1,0 +1,76 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: equality
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{ide}
+
+\olsection{\usetoken{S}{identity} ધરાવતી \usetoken{P}{derivation}}
+
+!!{identity} ધરાવતી !!^{derivation}s માટે વધારાનાં આરંભિક સિક્વન્ટો અને
+અનુમાન-નિયમો જરૂરી છે.
+
+\begin{defn}[$\eq$ માટેનાં આરંભિક સિક્વન્ટો]
+જો $t$ બંધ પદ હોય, તો ${} \Sequent \eq[t][t]$ આરંભિક સિક્વન્ટ છે.
+\end{defn}
+
+$\eq$ માટેના નિયમો નીચે પ્રમાણે છે ($t_1$ અને $t_2$ બંધ પદો છે):
+
+\begin{defish}
+\Axiom$ \eq[t_1][t_2], \Gamma \fCenter \Delta, !A(t_1) $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_1][t_2], \Gamma \fCenter \Delta, !A(t_2)$
+\DisplayProof
+\hfill
+\Axiom$\eq[t_1][t_2], \Gamma \fCenter \Delta, !A(t_2) $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_1][t_2], \Gamma  \fCenter \Delta, !A(t_1)$
+\DisplayProof
+\end{defish}
+
+\begin{ex}
+જો $s$ અને $t$ બંધ પદો હોય, તો $\eq[s][t], !A(s) \Proves !A(t)$:
+\begin{prooftree}
+\Axiom$ !A(s) \fCenter !A(s)$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\eq[s][t], !A(s)  \fCenter !A(s)$
+\RightLabel{$\eq$}
+\UnaryInf$\eq[s][t], !A(s)  \fCenter !A(t)$
+\end{prooftree}
+આ અભિન્ન વસ્તુઓની પ્રતિસ્થાપનીયતાના સિદ્ધાંત તરીકે, અથવા લાઇબ્નિત્સના
+નિયમ તરીકે, પરિચિત હોઈ શકે છે.
+
+$\Log{LK}$ સાબિત કરે છે કે $\eq$ સંમિત અને પરંપરિત છે:
+\begin{prooftree}
+\Axiom$ \fCenter \eq[t_1][t_1] $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \eq[t_1][t_2] \fCenter \eq[t_1][t_1] $
+\RightLabel{$\eq$}
+\UnaryInf$ \eq[t_1][t_2] \fCenter \eq[t_2][t_1]$
+\DisplayProof\qquad\bottomAlignProof
+\Axiom$ \eq[t_1][t_2] \fCenter \eq[t_1][t_2] $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\eq[t_2][t_3], \eq[t_1][t_2]  \fCenter \eq[t_1][t_2] $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_2][t_3], \eq[t_1][t_2]  \fCenter \eq[t_1][t_3]$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\eq[t_1][t_2], \eq[t_2][t_3]  \fCenter \eq[t_1][t_3]$
+\end{prooftree}
+ડાબી બાજુની !!{derivation}માં !!{formula}~$\eq[x][t_1]$ એ આપણું
+$!A(x)$ છે. જમણી બાજુએ $!A(x)$ તરીકે~$\eq[t_1][x]$ લઈએ છીએ.
+\end{ex}
+
+\begin{prob}
+નીચેના સિક્વન્ટોની !!{derivation}s આપો:
+\begin{enumerate}
+\item $\Sequent \lforall[x][\lforall[y][((x = y \land !A(x)) \lif !A(y))]]$
+\item $\lexists[x][!A(x)] \land \lforall[y][\lforall[z][((!A(y) \land
+    !A(z)) \lif y = z)]] \Sequent
+\lexists[x][(!A(x) \land \lforall[y][(!A(y) \lif y = x)])]$
+\end{enumerate}
+\end{prob}
+
+\end{document}

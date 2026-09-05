@@ -1,0 +1,120 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{der}}
+      {\olfileid{pl}{seq}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+આરંભિક સિક્વન્ટ કેવું હોય છે તે આપણે જણાવ્યું છે અને અનુમાનના નિયમો પણ
+આપ્યા છે. સિક્વન્ટ કલનમાં !!^{derivation}s આ બંનેમાંથી આગમનાત્મક રીતે
+ઉત્પન્ન થાય છે: દરેક !!{derivation} કાં તો એકલું આરંભિક સિક્વન્ટ હોય છે,
+અથવા એક કે બે !!{derivation}s પછી આવેલું અનુમાન ધરાવે છે.
+\end{explain}
+
+\begin{defn}[$\Log{LK}$-!!{derivation}]
+સિક્વન્ટ~$S$ની \emph{$\Log{LK}$-!!{derivation}} એ નીચેની શરતો
+સંતોષતું સિક્વન્ટોનું સાન્ત વૃક્ષ છે:
+\begin{enumerate}
+\item વૃક્ષના સૌથી ઉપરના સિક્વન્ટો આરંભિક સિક્વન્ટો છે.
+\item વૃક્ષનો સૌથી નીચેનો સિક્વન્ટ~$S$ છે.
+\item વૃક્ષમાં $S$ સિવાયનો દરેક સિક્વન્ટ અનુમાનના કોઈ નિયમના યોગ્ય
+  ઉપયોગનો આધાર-સિક્વન્ટ છે, અને તે નિયમનું ફલિત-સિક્વન્ટ વૃક્ષમાં તેની
+  સીધી નીચે ઊભું છે.
+\end{enumerate}
+પછી $S$ને !!{derivation}નો \emph{અંતિમ સિક્વન્ટ} કહીએ છીએ અને કહીએ છીએ
+કે $S$ \emph{$\Log{LK}$માં !!{derivable} છે} (અથવા
+$\Log{LK}$-!!{derivable} છે).
+\end{defn}
+
+\begin{ex}
+દરેક આરંભિક સિક્વન્ટ, દાખલા તરીકે $!C \Sequent !C$, એ !!a{derivation}
+છે. તેના પર, માનો કે, $\LeftR{\Weakening}$ નિયમ લગાડીને આપણે નવી
+!!{derivation} મેળવી શકીએ છીએ:
+\begin{prooftree}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\end{prooftree}
+જોકે નિયમ સામાન્ય અર્થમાં વાપરવાનો છે: નિયમમાંના $!A$ને કોઈપણ
+!!{sentence}થી, દાખલા તરીકે~$!D$થી પણ, બદલી શકીએ છીએ. જો આધાર-સિક્વન્ટ
+આપણા આરંભિક સિક્વન્ટ $!C \Sequent !C$ સાથે મળતું હોય, તો $\Gamma$ અને
+$\Delta$ બંને માત્ર~$!C$ છે અને ફલિત-સિક્વન્ટ $!D, !C \Sequent !C$
+થશે. તેથી નીચેનું !!a{derivation} છે:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\end{prooftree}
+હવે આપણે બીજો કોઈ નિયમ, માનો કે $\LeftR{\Exchange}$, લગાડી શકીએ છીએ;
+તે ડાબી બાજુનાં બે !!{sentence}sની અદલાબદલી કરવા દે છે. તેથી નીચેનું પણ
+યોગ્ય !!{derivation} છે:
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\end{prooftree}
+નિયમ આ પ્રમાણે આપ્યો હતો:
+\begin{prooftree}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta,$
+\end{prooftree}
+તેના ઉપરના ઉપયોગમાં $\Gamma$ અને $\Pi$ બંને ખાલી હતાં, $\Delta$ એ
+$!C$ હતું, અને $!A$ તથા $!B$ની ભૂમિકા અનુક્રમે $!D$ અને~$!C$એ ભજવી
+હતી. લગભગ એ જ રીતે આપણે એ પણ જોઈ શકીએ છીએ કે
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\end{prooftree}
+એ !!a{derivation} છે. હવે આ બંને !!{derivation}s લઈને
+$\RightR{\land}$ વડે તેમને જોડી શકીએ છીએ. તે નિયમ આ હતો:
+\begin{prooftree}
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\end{prooftree}
+આપણા કિસ્સામાં આધાર-સિક્વન્ટો તેમનાથી પૂરાં થતાં !!{derivation}sના
+છેલ્લા સિક્વન્ટો સાથે મળવા જોઈએ. એટલે $\Gamma$ એ $!C, !D$ છે,
+$\Delta$ ખાલી છે, $!A$ એ $!C$ છે અને $!B$ એ $!D$ છે. તેથી અનુમાન
+યોગ્ય હોય તો તેનું ફલિત-સિક્વન્ટ $!C, !D \Sequent !C \land !D$ છે.
+\begin{prooftree}
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !C \land !D $
+\end{prooftree}
+અલબત્ત, આધાર-સિક્વન્ટોનો ક્રમ ઊલટાવી પણ શકીએ; ત્યારે $!A$ એ $!D$
+અને $!B$ એ~$!C$ થશે.
+\begin{prooftree}
+\Axiom$ !D \fCenter !D $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !C, !D \fCenter !D$
+\Axiom$ !C \fCenter !C $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !D, !C \fCenter !C$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !C, !D \fCenter !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ !C, !D \fCenter !D \land !C $
+\end{prooftree}
+\end{ex}
+
+\end{document}

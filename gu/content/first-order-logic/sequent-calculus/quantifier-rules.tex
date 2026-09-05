@@ -1,0 +1,101 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{qrl}
+
+\olsection{પરિમાણકના નિયમો}
+
+\subsection{$\lforall$ માટેના નિયમો}
+
+\begin{defish}
+\Axiom$ !A(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+\DisplayProof
+\end{defish}
+
+\LeftR{\lforall}માં $t$ બંધ પદ (એટલે કે ચલ વિનાનું પદ) છે.
+\RightR{\lforall}માં $a$ એવું !!a{constant} છે જે
+\RightR{\lforall} નિયમના નીચલા સિક્વન્ટમાં ક્યાંય ન આવવું જોઈએ.
+\RightR{\forall} અનુમાનમાં $a$ને \emph{આઇગનચલ} કહીએ
+છીએ.\footnote{ઉપરના નિયમમાં $a$ !!a{constant} હોવા છતાં આપણે
+``આઇગનચલ'' શબ્દ વાપરીએ છીએ. તેનાં ઐતિહાસિક કારણો છે.}
+
+\subsection{$\lexists$ માટેના નિયમો}
+
+\begin{defish}
+\Axiom$ !A(a), \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][!A(x)], \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A(t) $
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lexists[x][!A(x)]$
+\DisplayProof
+\end{defish}
+
+અહીં ફરીથી $t$ બંધ પદ છે, અને $a$ એવું !!a{constant} છે જે
+\LeftR{\lexists} નિયમના નીચલા સિક્વન્ટમાં આવતું નથી. \LeftR{\lexists}
+અનુમાનમાં $a$ને \emph{આઇગનચલ} કહીએ છીએ.
+
+\RightR{\lforall} અથવા \LeftR{\lexists} અનુમાનના નીચલા સિક્વન્ટમાં
+આઇગનચલ ન આવવું જોઈએ, એ શરતને \emph{આઇગનચલ-શરત} કહે છે.
+
+\begin{explain}
+યાદ કરો કે જ્યારે $!A$ એવું !!a{formula} હોય જેમાં !!{variable}~$x$
+મુક્ત હોય, ત્યારે આપણે $!A(x)$ લખીને તે દર્શાવીએ છીએ. એ જ સંદર્ભમાં
+$!A(t)$ એ~$\Subst{!A}{t}{x}$નું સંક્ષિપ્ત રૂપ છે. તેથી
+\RightR{\lexists} નિયમને આ પ્રમાણે પણ લખી શકીએ:
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter \Delta, \Subst{!A}{t}{x}$
+  \RightLabel{\RightR{\lexists}}
+  \UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!A]$
+\end{prooftree}
+નોંધો કે $t$ એ~$!A$માં પહેલેથી આવી શકે છે; દાખલા તરીકે, $!A$ એ
+$\Atom{\Obj P}{t,x}$ હોઈ શકે. તેથી $\Gamma \Sequent \Delta,
+\Atom{\Obj P}{t,t}$ પરથી $\Gamma \Sequent \Delta,
+\lexists[x][\Atom{\Obj P}{t,x}]$નું અનુમાન કરવું એ
+\RightR{\lexists}નો યોગ્ય ઉપયોગ છે—આધારવિધાનમાં આવતાં $t$નાં એક કે વધુ,
+પરંતુ અનિવાર્યપણે બધાં જ નહિ, સ્થાનોને બંધાયેલા !!{variable}~$x$થી
+``બદલી'' શકાય છે. જોકે, \RightR{\lforall} અને~\LeftR{\lexists}માંની
+આઇગનચલ-શરતો માગે છે કે !!{constant}~$a$ એ~$!A$માં ન આવે. તેથી
+$\Gamma \Sequent \Delta, \Atom{\Obj P}{a,a}$ પરથી
+$\Gamma \Sequent \Delta, \lforall[x][\Atom{\Obj P}{a,x}]$નું
+અનુમાન કરવા માટે~$\RightR{\lforall}$નો ઉપયોગ યોગ્ય રીતે થઈ શકતો નથી.
+\end{explain}
+
+\begin{explain}
+\RightR{\lexists} અને \LeftR{\lforall}માં પદ~$t$ પર કોઈ પ્રતિબંધ નથી.
+બીજી બાજુ, \LeftR{\lexists} અને \RightR{\lforall} નિયમોમાં
+આઇગનચલ-શરત માગે છે કે !!{constant}~$a$ ઉપરના સિક્વન્ટમાં $!A(a)$ની બહાર
+ક્યાંય ન આવે. તંત્ર યથાર્થ રહે—એટલે કે માત્ર પ્રામાણ્ય સિક્વન્ટો જ
+!!{derive}s કરે—તેની ખાતરી માટે આ જરૂરી છે. આ શરત વિના નીચેનું માન્ય હોત:
+\begin{prooftree}
+  \Axiom$!A(a) \fCenter !A(a)$
+  \RightLabel{*\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter !A(a)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter \lforall[x][!A(x)]$
+  \DisplayProof\bottomAlignProof
+  \qquad
+  \Axiom$!A(a) \fCenter !A(a)$
+  \RightLabel{*\RightR{\lforall}}
+  \UnaryInf$!A(a) \fCenter \lforall[x][!A(x)]$
+  \RightLabel{\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][!A(x)] \fCenter \lforall[x][!A(x)]$
+\end{prooftree}
+પરંતુ $\lexists[x][!A(x)] \Sequent \lforall[x][!A(x)]$ પ્રામાણ્ય નથી.
+\end{explain}
+
+\end{document}

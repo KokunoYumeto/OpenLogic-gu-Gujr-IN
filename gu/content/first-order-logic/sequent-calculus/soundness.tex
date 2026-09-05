@@ -1,0 +1,408 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: soundness.tex
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{sou}}
+      {\olfileid{pl}{seq}{sou}}
+
+\olsection{યથાર્થતા}
+
+\begin{explain}
+સિક્વન્ટ કલન જેવું !!^a{derivation} તંત્ર ખરેખર સધાતી ન હોય એવી વસ્તુઓ
+!!{derive} ન કરી શકે, તો તે \emph{યથાર્થ} છે. તેથી યથાર્થતા એ
+!!{derivation} તંત્રો માટે ખાતરી અપાવતો એક પ્રકારનો સુરક્ષા-ગુણધર્મ છે.
+કયો સાબિતી-સૈદ્ધાંતિક ગુણધર્મ વિચારાધીન છે તેના આધારે, દાખલા તરીકે,
+આપણે નીચેની બાબતો જાણવા માગીએ છીએ:
+\begin{enumerate}
+\item દરેક !!{derivable}~$!A$ એ \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે;
+\item જો !!a{sentence} અમુક બીજાં વાક્યોમાંથી !!{derivable} હોય, તો તે
+  તેમનું ફલિત પણ છે;
+\item જો !!{sentence}sનો ગણ અસુસંગત હોય, તો તે અસંતોષ્ય છે.
+\end{enumerate}
+!!a{derivation} તંત્રના આ મહત્વના ગુણધર્મો છે. તેમાંથી કોઈ ગુણધર્મ ન
+સધાય, તો !!{derivation} તંત્ર ખામીયુક્ત છે—તે જરૂર કરતાં વધારે
+!!{derive} કરશે. તેથી !!{derivation} તંત્રની યથાર્થતા સ્થાપવી સૌથી વધુ
+મહત્વ ધરાવે છે.
+
+આ બધા સાબિતી-સૈદ્ધાંતિક ગુણધર્મો સિક્વન્ટ કલનમાં અમુક સિક્વન્ટોની
+!!{derivability} વડે વ્યાખ્યાયિત થાય છે. તેથી ઉપરનાં (1)--(3) સાબિત કરવા
+!!{derivable} સિક્વન્ટોના અર્થાનુસારી ગુણધર્મો વિશે કંઈક સાબિત કરવું
+જરૂરી છે. પહેલાં સિક્વન્ટ \emph{પ્રામાણ્ય} હોવાનો અર્થ વ્યાખ્યાયિત કરીશું
+અને પછી દરેક !!{derivable} સિક્વન્ટ પ્રામાણ્ય છે તેમ બતાવીશું. ત્યાર બાદ
+(1)--(3) આ પરિણામનાં અનુપ્રમેયો તરીકે મળે છે.
+\end{explain}
+
+\begin{defn}
+\iftag{FOL}{!!^a{structure}~$\Struct M$}{!!^a{valuation}~$\pAssign{v}$}
+સિક્વન્ટ $\Gamma \Sequent \Delta$ને \emph{સંતોષે} છે જો અને માત્ર જો
+કોઈ $!A \in \Gamma$ માટે
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ હોય અથવા કોઈ
+$!A \in \Delta$ માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ હોય.
+
+દરેક \iftag{FOL}{!!{structure}~$\Struct M$}{!!{valuation}~$\pAssign{v}$}
+સિક્વન્ટને સંતોષે જો અને માત્ર જો તે સિક્વન્ટ \emph{પ્રામાણ્ય} છે.
+\end{defn}
+
+\begin{thm}[યથાર્થતા]
+\ollabel{thm:sequent-soundness} જો $\Log{LK}$ એ
+$\Theta \Sequent \Xi$ને !!{derive}s કરે, તો $\Theta \Sequent \Xi$
+પ્રામાણ્ય છે.
+\end{thm}
+
+\begin{proof}
+$\Theta \Sequent \Xi$ની કોઈ !!a{derivation}~$\pi$ લો. $\pi$માંનાં
+અનુમાનોની સંખ્યા~$n$ પર આગમનથી આગળ વધીએ.
+
+અનુમાનોની સંખ્યા~$0$ હોય, તો $\pi$માં માત્ર આરંભિક સિક્વન્ટ છે. દરેક
+આરંભિક સિક્વન્ટ $!A \Sequent !A$ સ્પષ્ટ રીતે પ્રામાણ્ય છે, કારણ કે દરેક
+\iftag{FOL}{$\Struct M$}{$\pAssign{v}$} માટે કાં તો
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ અથવા
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
+
+અનુમાનોની સંખ્યા~0 કરતાં મોટી હોય, તો સૌથી નીચેના અનુમાનના પ્રકાર
+પ્રમાણે કિસ્સા પાડીએ. આગમન-પરિકલ્પના મુજબ તે અનુમાનનાં આધાર-સિક્વન્ટો
+પ્રામાણ્ય છે તેમ માની શકીએ, કારણ કે કોઈપણ આધાર-સિક્વન્ટની
+!!{derivation}માંનાં અનુમાનોની સંખ્યા~$n$ કરતાં નાની છે.
+
+પહેલાં માત્ર એક આધાર-સિક્વન્ટ ધરાવતાં સંભવિત અનુમાનો જોઈએ.
+\begin{enumerate}
+\item છેલ્લું અનુમાન શિથિલીકરણ છે. ત્યારે $\Theta \Sequent \Xi$ કાં તો
+  $!A, \Gamma \Sequent \Delta$ છે (છેલ્લું અનુમાન
+  \LeftR{\Weakening} હોય ત્યારે) અથવા
+  $\Gamma \Sequent \Delta, !A$ છે (તે \RightR{\Weakening} હોય ત્યારે),
+  અને !!{derivation}નો અંત નીચેનામાંથી કોઈ એક છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof\qquad\bottomAlignProof
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A$
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $\Gamma \Sequent \Delta$ પ્રામાણ્ય છે. એટલે કે,
+  દરેક
+  \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+  માટે કાં તો કોઈ $!C \in \Gamma$ એવું છે કે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, અથવા કોઈ $!C \in \Delta$
+  એવું છે કે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
+
+  જો કોઈ $!C \in \Gamma$ માટે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ હોય, તો ડાબા શિથિલીકરણમાં
+  $\Theta = !A, \Gamma$ અને જમણા શિથિલીકરણમાં $\Theta = \Gamma$;
+  તેથી બંને કિસ્સામાં કોઈ $!C \in \Theta$ માટે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ છે. એ જ રીતે, જો કોઈ
+  $!C \in \Delta$ માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ હોય,
+  તો ડાબા શિથિલીકરણમાં $\Xi = \Delta$ અને જમણા શિથિલીકરણમાં
+  $\Xi = \Delta, !A$; તેથી બંને કિસ્સામાં કોઈ $!C \in \Xi$ માટે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ છે. પરિણામે
+  $\Theta \Sequent \Xi$ પ્રામાણ્ય છે.
+  \sourcecorrection{OLSEQ-004}{મૂળની \texttt{soundness.tex}માં બંને
+  શિથિલીકરણના કિસ્સા એકસાથે લીધા પછી $\Theta = !A,\Gamma$ લખાયું છે,
+  જે માત્ર ડાબા શિથિલીકરણ માટે સાચું છે. અહીં બંને કિસ્સામાં
+  $\Theta$ અને $\Xi$ની ચોક્કસ કિંમતો લખી છે.}
+\item છેલ્લું અનુમાન \LeftR{\lnot} છે. ત્યારે છેલ્લા અનુમાનનું
+  આધાર-સિક્વન્ટ $\Gamma \Sequent \Delta, !A$ અને તેનું ફલિત-સિક્વન્ટ
+  $\lnot !A, \Gamma \Sequent \Delta$ છે; એટલે કે !!{derivation}નો અંત
+  આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot !A, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  અને $\Theta = \lnot !A, \Gamma$, જ્યારે $\Xi = \Delta$.
+
+  આગમન-પરિકલ્પના જણાવે છે કે $\Gamma \Sequent \Delta, !A$ પ્રામાણ્ય
+  છે. એટલે કે, દરેક \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} માટે કાં તો
+  (a) કોઈ $!C \in \Gamma$ માટે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, અથવા (b) કોઈ
+  $!C \in \Delta$ માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$, અથવા
+  (c) $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. આપણે
+  $\Theta \Sequent \Xi$ પણ પ્રામાણ્ય છે તેમ બતાવવા માગીએ છીએ. કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો. (a) સધાય તો એવું $!C \in \Gamma$ છે કે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, અને $!C \in \Theta$ પણ છે.
+  (b) સધાય તો એવું $!C \in \Delta$ છે કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$, અને $!C \in \Xi$ પણ છે. છેલ્લે,
+  જો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ હોય, તો
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lnot !A}$. $\lnot !A \in \Theta$
+  હોવાથી એવું $!C \in \Theta$ છે કે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. તેથી
+  $\Theta \Sequent \Xi$ પ્રામાણ્ય છે.
+\item છેલ્લું અનુમાન \RightR{\lnot} છે: અભ્યાસપ્રશ્ન.
+\item છેલ્લું અનુમાન \LeftR{\land} છે. તેનાં બે રૂપ છે: ડાબી બાજુ
+  $!A$ ધરાવતા આધાર-સિક્વન્ટમાંથી અથવા ડાબી બાજુ $!B$ ધરાવતા
+  આધાર-સિક્વન્ટમાંથી $!A \land !B$નું અનુમાન થઈ શકે છે. પહેલા કિસ્સામાં
+  $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  અને $\Theta = !A \land !B, \Gamma$, જ્યારે $\Xi = \Delta$. કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct M$}{!!a{valuation}~$\pAssign{v}$}
+  લો. આગમન-પરિકલ્પના મુજબ $!A, \Gamma \Sequent \Delta$ પ્રામાણ્ય
+  હોવાથી કાં તો (a) $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, અથવા
+  (b) કોઈ $!C \in \Gamma$ માટે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, અથવા (c) કોઈ
+  $!C \in \Delta$ માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
+  કિસ્સા (a)માં $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \land !B}$;
+  તેથી એવું $!C \in \Theta$ છે (એટલે કે $!A \land !B$) કે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. કિસ્સા (b)માં એવું
+  $!C \in \Gamma$ છે કે $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, અને
+  $!C \in \Theta$ પણ છે. કિસ્સા (c)માં એવું $!C \in \Delta$ છે કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$, અને $\Xi = \Delta$ હોવાથી
+  $!C \in \Xi$ પણ છે. આમ દરેક કિસ્સામાં
+  \iftag{FOL}{$\Struct M$}{$\pAssign{v}$} એ
+  $!A \land !B, \Gamma \Sequent \Delta$ને સંતોષે છે. આ
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} મનસ્વી હતું, તેથી
+  $!A \land !B, \Gamma \Sequent \Delta$ પ્રામાણ્ય છે. $!B$માંથી
+  $!A \land !B$નું અનુમાન થતું હોય તે કિસ્સો $!A$ને $!B$થી બદલીને એ જ
+  રીતે સંભાળાય છે.
+  \sourcecorrection{OLSEQ-005}{મૂળની \texttt{soundness.tex}માં આ
+  કિસ્સાના અંતે હમણાં સાબિત કરેલા ફલિત-સિક્વન્ટને બદલે
+  $\Gamma \Sequent \Delta$ પ્રામાણ્ય હોવાનું લખાયું છે. અહીં નિયમનું
+  સાચું ફલિત-સિક્વન્ટ $!A \land !B,\Gamma \Sequent \Delta$ પુનઃસ્થાપિત
+  કર્યું છે.}
+\item છેલ્લું અનુમાન \RightR{\lor} છે. તેનાં બે રૂપ છે: આધાર-સિક્વન્ટની
+  જમણી બાજુના $!A$માંથી અથવા જમણી બાજુના $!B$માંથી $!A \lor !B$નું
+  અનુમાન થઈ શકે છે. પહેલા કિસ્સામાં $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B$
+  \end{prooftree}
+  હવે $\Theta = \Gamma$ અને $\Xi = \Delta, !A \lor !B$. કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો. $\Gamma \Sequent \Delta, !A$ પ્રામાણ્ય હોવાથી કાં તો
+  (a) $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$, અથવા (b) કોઈ
+  $!C \in \Gamma$ માટે $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, અથવા
+  (c) કોઈ $!C \in \Delta$ માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
+  કિસ્સા (a)માં $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$.
+  કિસ્સા (b)માં એવું $!C \in \Gamma$ છે કે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. કિસ્સા (c)માં એવું
+  $!C \in \Delta$ છે કે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
+  આમ દરેક કિસ્સામાં \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
+  $\Gamma \Sequent \Delta, !A \lor !B$, એટલે કે
+  $\Theta \Sequent \Xi$, સંતોષે છે. આ
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} મનસ્વી હતું, તેથી
+  $\Theta \Sequent \Xi$ પ્રામાણ્ય છે. $!B$માંથી $!A \lor !B$નું
+  અનુમાન થતું હોય તે કિસ્સો $!A$ને $!B$થી બદલીને એ જ રીતે સંભાળાય છે.
+\item છેલ્લું અનુમાન \RightR{\lif} છે. ત્યારે $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A, \Gamma \fCenter \Delta, !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter \Delta, !A \lif !B$
+  \end{prooftree}
+  ફરી આગમન-પરિકલ્પના કહે છે કે આધાર-સિક્વન્ટ પ્રામાણ્ય છે; આપણે
+  ફલિત-સિક્વન્ટ પણ પ્રામાણ્ય છે તેમ બતાવવા માગીએ છીએ. કોઈ મનસ્વી
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} લો. સિક્વન્ટ
+  $!A, \Gamma \Sequent \Delta, !B$ પ્રામાણ્ય હોવાથી નીચેનામાંથી ઓછામાં
+  ઓછો એક કિસ્સો સધાય છે: (a)
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, (b)
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$, (c) કોઈ $~!C \in \Gamma$ માટે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, અથવા (d) કોઈ
+  $!C \in \Delta$ માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
+  કિસ્સા (a) અને (b)માં $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$,
+  અને તેથી એવું $!C \in \Delta, !A \lif !B$ છે કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. કિસ્સા (c)માં કોઈ
+  $!C \in \Gamma$ માટે $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$.
+  કિસ્સા (d)માં કોઈ $!C \in \Delta$ માટે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. દરેક કિસ્સામાં
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
+  $\Gamma \Sequent \Delta, !A \lif !B$ને સંતોષે છે. આ
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} મનસ્વી હતું, તેથી
+  $\Gamma \Sequent \Delta, !A \lif !B$ પ્રામાણ્ય છે. \iftag{FOL}{%
+\item છેલ્લું અનુમાન \LeftR{\lforall} છે. ત્યારે એવું !!a{formula}~$!A(x)$
+  અને બંધ પદ~$t$ છે કે $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$!A(t), \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x)], \Gamma \fCenter \Delta$
+  \end{prooftree}
+  આપણે ફલિત-સિક્વન્ટ $\lforall[x][!A(x)], \Gamma \Sequent \Delta$
+  પ્રામાણ્ય છે તેમ બતાવવા માગીએ છીએ. કોઈ !!a{structure}~$\Struct M$ લો.
+  આધાર-સિક્વન્ટ $!A(t), \Gamma \Sequent \Delta$ પ્રામાણ્ય હોવાથી કાં તો
+  (a) $\Sat/{M}{!A(t)}$, અથવા (b) કોઈ $!C \in \Gamma$ માટે
+  $\Sat/{M}{!C}$, અથવા (c) કોઈ $!C \in \Delta$ માટે $\Sat{M}{!C}$.
+  કિસ્સા (a)માં, \olref[syn][sem]{prop:quant-terms} મુજબ જો
+  $\Sat{M}{\lforall[x][!A(x)]}$ હોય, તો $\Sat{M}{!A(t)}$. પરંતુ
+  $\Sat/{M}{!A(t)}$, તેથી $\Sat/{M}{\lforall[x][!A(x)]}$. કિસ્સા (b)
+  અને (c)માં $\Struct{M}$ એ
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ને પણ સંતોષે છે.
+  $\Struct M$ મનસ્વી હતું, તેથી
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ પ્રામાણ્ય છે.
+\item છેલ્લું અનુમાન \RightR{\lexists} છે: અભ્યાસપ્રશ્ન.
+\item છેલ્લું અનુમાન \RightR{\lforall} છે. ત્યારે એવું !!a{formula}~$!A(x)$
+  અને એવું !!a{constant}~$a$ છે કે $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+  \end{prooftree}
+  અહીં આઇગનચલ-શરત સંતોષાય છે, એટલે કે $a$ એ $!A(x)$, $\Gamma$ કે
+  $\Delta$માં આવતું નથી. આગમન-પરિકલ્પના મુજબ છેલ્લા અનુમાનનું
+  આધાર-સિક્વન્ટ પ્રામાણ્ય છે. તેનું ફલિત-સિક્વન્ટ પણ પ્રામાણ્ય છે તે
+  બતાવવું છે; એટલે કે કોઈપણ !!{structure}~$\Struct M$ માટે કાં તો
+  (a) $\Sat{M}{\lforall[x][!A(x)]}$, અથવા (b) કોઈ $!C \in \Gamma$ માટે
+  $\Sat/{M}{!C}$, અથવા (c) કોઈ $!C \in \Delta$ માટે $\Sat{M}{!C}$.
+
+  માનો કે $\Struct{M}$ કોઈ મનસ્વી !!{structure} છે. (b) અથવા (c) સધાય
+  તો કામ પૂરું થયું; તેથી માનો કે બંનેમાંથી એકેય સધાતું નથી: દરેક
+  $!C \in \Gamma$ માટે $\Sat{M}{!C}$ અને દરેક $!C \in \Delta$ માટે
+  $\Sat/{M}{!C}$. આપણે (a), એટલે કે
+  $\Sat{M}{\lforall[x][!A(x)]}$, બતાવવાનું છે.
+  \olref[syn][ass]{prop:sat-quant} મુજબ દરેક ચલ-નિયુક્તિ~$s$ માટે
+  $\Sat{M}{!A(x)}[s]$ બતાવવું પૂરતું છે. તેથી કોઈ મનસ્વી ચલ-નિયુક્તિ
+  $s$ લો. એવી સંરચના~$\Struct{M'}$ લો જે $\Struct{M}$ જેવી જ છે, સિવાય
+  કે $\Assign{a}{M'} = s(x)$. \olref[syn][ext]{cor:extensionality-sent}
+  મુજબ કોઈપણ $!C \in \Gamma$ માટે $\Sat{M'}{!C}$, કારણ કે $a$ એ
+  $\Gamma$માં આવતું નથી; અને કોઈપણ $!C \in \Delta$ માટે
+  $\Sat/{M'}{!C}$. પરંતુ આધાર-સિક્વન્ટ પ્રામાણ્ય છે, તેથી
+  $\Sat{M'}{!A(a)}$. $!A(a)$ વાક્ય હોવાથી
+  \olref[syn][ass]{prop:sentence-sat-true} મુજબ
+  $\Sat{M'}{!A(a)}[s]$. હવે $\varAssign{s}{s}{x}$ અને
+  $s(x) = \Value{a}{M'}[s]$, કારણ કે આપણે $\Struct{M'}$ને એ જ રીતે
+  વ્યાખ્યાયિત કરી છે. તેથી \olref[syn][ext]{prop:ext-formulas} લાગુ પડે
+  છે અને $\Sat{M'}{!A(x)}[s]$ મળે છે. $a$ એ~$!A(x)$માં આવતું નથી,
+  તેથી \olref[syn][ext]{prop:extensionality} મુજબ
+  $\Sat{M}{!A(x)}[s]$. $s$ મનસ્વી હતું, એટલે દરેક ચલ-નિયુક્તિ માટે
+  $\Sat{M}{!A(x)}[s]$ સાબિત થયું.
+\item છેલ્લું અનુમાન \LeftR{\lexists} છે: અભ્યાસપ્રશ્ન.
+}{}
+\end{enumerate}
+હવે બે આધાર-સિક્વન્ટ ધરાવતાં સંભવિત અનુમાનો જોઈએ.
+\begin{enumerate}
+\item છેલ્લું અનુમાન કટ છે. ત્યારે $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$!A, \Pi \fCenter \Lambda$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  કોઈ \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો. આગમન-પરિકલ્પના મુજબ બંને આધાર-સિક્વન્ટો પ્રામાણ્ય છે, તેથી
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} બંનેને સંતોષે છે. બે કિસ્સા
+  પાડીએ: (a) $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ અને
+  (b) $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. કિસ્સા (a)માં ડાબા
+  આધાર-સિક્વન્ટને સંતોષવા માટે
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
+  $\Gamma \Sequent \Delta$ને સંતોષવું જ પડે. પરંતુ ત્યારે તે
+  ફલિત-સિક્વન્ટને પણ સંતોષે છે. કિસ્સા (b)માં જમણા આધાર-સિક્વન્ટને
+  સંતોષવા માટે \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
+  $\Pi \Sequent \Lambda$ને સંતોષવું જ પડે. ફરીથી,
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ફલિત-સિક્વન્ટને સંતોષે છે.
+  \sourcecorrection{OLSEQ-006}{મૂળની \texttt{soundness.tex}માં કટના
+  બીજા કિસ્સામાં જમણું આધાર-સિક્વન્ટ $\Pi \Sequent \Lambda$ હોવું
+  જોઈએ ત્યાં ગણ-બાદબાકી $\Pi \setminus \Lambda$ લખાઈ છે. અહીં
+  સાબિતીમાં વપરાતું સાચું સિક્વન્ટ પુનઃસ્થાપિત કર્યું છે.}
+\item છેલ્લું અનુમાન \RightR{\land} છે. ત્યારે $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma \fCenter \Delta, !A \land !B$
+  \end{prooftree}
+  કોઈ \iftag{FOL}{!!a{structure}~$\Struct M$}{!!a{valuation}~$\pAssign{v}$}
+  લો. જો \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
+  $\Gamma \Sequent \Delta$ને સંતોષે, તો કામ પૂરું થયું. તેથી માનો કે તે
+  તેને સંતોષતું નથી. આગમન-પરિકલ્પના મુજબ
+  $\Gamma \fCenter \Delta, !A$ પ્રામાણ્ય હોવાથી
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. એ જ રીતે,
+  $\Gamma \Sequent \Delta, !B$ પ્રામાણ્ય હોવાથી
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. તેથી
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$.
+\item છેલ્લું અનુમાન \LeftR{\lor} છે: અભ્યાસપ્રશ્ન.
+\item છેલ્લું અનુમાન \LeftR{\lif} છે. ત્યારે $\pi$નો અંત આ પ્રમાણે છે:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    \AxiomC{}
+    \Deduce$!B, \Pi \fCenter \Lambda$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  ફરી કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો અને માનો કે \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
+  $\Gamma, \Pi \Sequent \Delta, \Lambda$ને સંતોષતું નથી. આપણે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ બતાવવાનું છે. જો
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
+  $\Gamma, \Pi \Sequent \Delta, \Lambda$ને સંતોષતું ન હોય, તો તે
+  $\Gamma \Sequent \Delta$ કે $\Pi \Sequent \Lambda$, એકેયને
+  સંતોષતું નથી. $\Gamma \Sequent \Delta, !A$ પ્રામાણ્ય હોવાથી
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. $!B, \Pi \Sequent \Lambda$
+  પ્રામાણ્ય હોવાથી $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$. તેથી
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$, જે જ બતાવવાનું હતું.
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][seq][sou]{thm:sequent-soundness}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][seq][sou]{thm:sequent-soundness}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+જો $\Proves !A$ હોય, તો $!A$ \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+જો $\Gamma \Proves !A$ હોય, તો $\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+જો $\Gamma \Proves !A$ હોય, તો કોઈ સાન્ત ઉપગણ
+$\Gamma_0 \subseteq \Gamma$ માટે $\Gamma_0 \Sequent !A$ની
+!!a{derivation} છે. \olref{thm:sequent-soundness} મુજબ દરેક
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+કાં તો કોઈ $!B \in \Gamma_0$ને અસત્ય કરે છે અથવા $!A$ને સત્ય કરે છે.
+તેથી જો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ હોય, તો
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ પણ છે.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+જો $\Gamma$ સંતોષ્ય હોય, તો તે સુસંગત છે.
+\end{cor}
+
+\begin{proof}
+પ્રતિપક્ષી વિધાન સાબિત કરીએ. માનો કે $\Gamma$ સુસંગત નથી. ત્યારે કોઈ
+સાન્ત $\Gamma_0 \subseteq \Gamma$ અને
+$\Gamma_0 \Sequent \quad$ની !!a{derivation} છે.
+\olref{thm:sequent-soundness} મુજબ $\Gamma_0 \Sequent \quad$ પ્રામાણ્ય
+છે. બીજા શબ્દોમાં, દરેક
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+માટે એવું $!C \in \Gamma_0$ છે કે
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$; અને
+$\Gamma_0 \subseteq \Gamma$ હોવાથી તે $!C$ એ~$\Gamma$માં પણ છે. તેથી
+કોઈ \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ~$\Gamma$ને સંતોષતું નથી,
+અને $\Gamma$ સંતોષ્ય નથી.
+\end{proof}
+
+\end{document}

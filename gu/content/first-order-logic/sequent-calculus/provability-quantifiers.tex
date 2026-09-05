@@ -1,0 +1,58 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: provability-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{qpr}
+\olsection{\usetoken{S}{derivability} અને પરિમાણકો}
+
+\begin{explain}
+  પૂર્ણતા-પ્રમેય માટે એ પણ જરૂરી છે કે સિક્વન્ટ કલનના નિયમો આ વિભાગમાં
+  સ્થાપેલી $\Proves$ વિશેની હકીકતો આપે.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} જો $c$ એવું અચલ હોય જે $\Gamma$ અથવા
+$!A(x)$માં આવતું ન હોય અને $\Gamma \Proves !A(c)$ હોય, તો
+$\Gamma \Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+કોઈ સાન્ત $\Gamma_0 \subseteq \Gamma$ માટે $\Gamma_0 \Sequent !A(c)$ની
+$\Log{LK}$-!!{derivation}ને $\pi_0$ કહો. તેમાં $\RightR{\lforall}$
+અનુમાન ઉમેરવાથી $\Gamma_0 \Sequent \lforall[x][!A(x)]$ની
+!!a{derivation} મળે છે, કારણ કે $c$ એ $\Gamma$ કે $!A(x)$માં આવતું નથી
+અને તેથી આઇગનચલ-શરત સંતોષાય છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{સિક્વન્ટ $!A(t) \Sequent \lexists[x][!A(x)]$
+  !!{derivable} છે:
+  \begin{prooftree}
+    \Axiom$!A(t) \fCenter !A(t)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$!A(t) \fCenter \lexists[x][!A(x)]$
+    \end{prooftree}}{}
+\tagitem{prvAll}{સિક્વન્ટ $\lforall[x][!A(x)] \Sequent !A(t)$
+  !!{derivable} છે:
+  \begin{prooftree}
+    \Axiom$!A(t) \fCenter !A(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x)] \fCenter !A(t)$
+    \end{prooftree}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

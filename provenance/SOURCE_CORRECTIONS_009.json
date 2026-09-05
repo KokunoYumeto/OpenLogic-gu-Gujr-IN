@@ -1,0 +1,175 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-05T15:41:25.569757+00:00",
+  "audit_id": "GU-OLSEQ-20260905",
+  "audit_method": "Same-agent exact comparison against the frozen source, controlling rule displays, stated end-sequents, and proof-local semantics within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLSEQ-001",
+      "unit_id": "OLP-0075",
+      "classification": "confirmed_wrong_exchange_side_labels",
+      "finding": "Four inferences exchange formulas in the antecedent but are labelled as right exchange; the displayed rule shapes and accompanying prose require left exchange.",
+      "source_path": "content/first-order-logic/sequent-calculus/proving-things.tex",
+      "source_locator": "proving-things.tex:86,104,125,147",
+      "source_bytes": 12407,
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "target_path": "gu/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "target_bytes": 17484,
+      "target_sha256": "547fbb9dc4bae7a4f347834882cefe4e784f17580d2213214ddb79a8d0d8102f",
+      "corrected_body_line": 80,
+      "corrected_body_lines": [
+        80,
+        102,
+        123,
+        145
+      ],
+      "adjacent_note_line": 85,
+      "handling": "Changed those four inference labels from right exchange to left exchange and added one adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "four occurrences of \\RightLabel{\\RightR{\\Exchange}}",
+        "added": "four occurrences of \\RightLabel{\\LeftR{\\Exchange}}"
+      },
+      "controlling_evidence": "upstream/content/first-order-logic/sequent-calculus/structural-rules.tex defines left exchange as reordering the antecedent and right exchange as reordering the succedent.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEQ-002",
+      "unit_id": "OLP-0075",
+      "classification": "confirmed_missing_negation_in_two_candidate_sequents",
+      "finding": "The prose candidate sequents omit the negation on B although the stated end-sequent, the immediately preceding tree, and both subsequent branch trees use not-B.",
+      "source_path": "content/first-order-logic/sequent-calculus/proving-things.tex",
+      "source_locator": "proving-things.tex:178-179",
+      "source_bytes": 12407,
+      "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
+      "target_path": "gu/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "target_bytes": 17484,
+      "target_sha256": "547fbb9dc4bae7a4f347834882cefe4e784f17580d2213214ddb79a8d0d8102f",
+      "corrected_body_line": 173,
+      "corrected_body_lines": [
+        173,
+        174
+      ],
+      "adjacent_note_line": 176,
+      "handling": "Restored the negation on B in both prose candidate sequents and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "two prose occurrences of \\lnot !A \\lor !B",
+        "added": "two prose occurrences of \\lnot !A \\lor \\lnot !B"
+      },
+      "controlling_evidence": "The example's declared end-sequent at source line 153 and every associated proof tree use the symmetric De Morgan antecedent not-A or not-B.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEQ-003",
+      "unit_id": "OLP-0077",
+      "classification": "confirmed_copied_wrong_proof_system_scope",
+      "finding": "The editorial sentence says the definitions concern natural deduction, although the file is in the sequent-calculus chapter and every definition is stated using LK sequents.",
+      "source_path": "content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "source_locator": "proof-theoretic-notions.tex:11",
+      "source_bytes": 5914,
+      "source_sha256": "91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53",
+      "target_path": "gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "target_bytes": 9620,
+      "target_sha256": "4198b3cbe7c82641e4b723e334b3ec2c81ddc6d29242fd8638a2d0ec9ee81ec3",
+      "corrected_body_line": 10,
+      "corrected_body_lines": [
+        10
+      ],
+      "adjacent_note_line": 13,
+      "handling": "Replaced the copied natural-deduction scope with sequent calculus and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "natural deduction",
+        "added": "sequent calculus"
+      },
+      "controlling_evidence": "The file path, chapter driver, displayed LK notation, and local definitions all identify the intended system as sequent calculus.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEQ-004",
+      "unit_id": "OLP-0081",
+      "classification": "confirmed_incomplete_weakening_case_assignments",
+      "finding": "The weakening proof assigns Theta only as in left weakening while arguing both left and right cases, and leaves the corresponding Xi split implicit.",
+      "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
+      "source_locator": "soundness.tex:98-101",
+      "source_bytes": 17663,
+      "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+      "target_path": "gu/content/first-order-logic/sequent-calculus/soundness.tex",
+      "target_bytes": 28947,
+      "target_sha256": "4d11d1ccf5f7ab9f2382de0c6971a8405286ecfc3a9da004f4f19cd141fec441",
+      "corrected_body_line": 99,
+      "corrected_body_lines": [
+        99,
+        104
+      ],
+      "adjacent_note_line": 107,
+      "handling": "Stated Theta and Xi separately for the left- and right-weakening cases and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "unqualified \\Theta=!A,\\Gamma while treating both rules",
+        "added": "left: \\Theta=!A,\\Gamma and \\Xi=\\Delta; right: \\Theta=\\Gamma and \\Xi=\\Delta,!A"
+      },
+      "controlling_evidence": "The two immediately displayed weakening inference schemes determine the antecedent and succedent of each conclusion exactly.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEQ-005",
+      "unit_id": "OLP-0081",
+      "classification": "confirmed_wrong_conclusion_sequent_in_soundness_case",
+      "finding": "The left-conjunction soundness case concludes that Gamma implies Delta is valid, dropping the principal conjunction from the rule's actual conclusion.",
+      "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
+      "source_locator": "soundness.tex:158",
+      "source_bytes": 17663,
+      "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+      "target_path": "gu/content/first-order-logic/sequent-calculus/soundness.tex",
+      "target_bytes": 28947,
+      "target_sha256": "4d11d1ccf5f7ab9f2382de0c6971a8405286ecfc3a9da004f4f19cd141fec441",
+      "corrected_body_line": 168,
+      "corrected_body_lines": [
+        168
+      ],
+      "adjacent_note_line": 171,
+      "handling": "Restored the actual conclusion sequent with the principal conjunction and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\Gamma \\Sequent \\Delta",
+        "added": "!A \\land !B,\\Gamma \\Sequent \\Delta"
+      },
+      "controlling_evidence": "The displayed left-conjunction inference immediately above has A-and-B,Gamma implies Delta as its conclusion.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEQ-006",
+      "unit_id": "OLP-0081",
+      "classification": "confirmed_set_difference_instead_of_sequent",
+      "finding": "The cut soundness proof writes set difference Pi minus Lambda where it must refer to the right premise sequent Pi implies Lambda.",
+      "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
+      "source_locator": "soundness.tex:288",
+      "source_bytes": 17663,
+      "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
+      "target_path": "gu/content/first-order-logic/sequent-calculus/soundness.tex",
+      "target_bytes": 28947,
+      "target_sha256": "4d11d1ccf5f7ab9f2382de0c6971a8405286ecfc3a9da004f4f19cd141fec441",
+      "corrected_body_line": 308,
+      "corrected_body_lines": [
+        308
+      ],
+      "adjacent_note_line": 310,
+      "handling": "Replaced the accidental set-difference expression with the right premise sequent and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\Pi \\setminus \\Lambda",
+        "added": "\\Pi \\Sequent \\Lambda"
+      },
+      "controlling_evidence": "The displayed cut inference immediately above names Pi implies Lambda as the right premise, and the semantic argument requires satisfaction of that premise.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_009.json",
+  "semantic_review": "Exact-block semantic review completed; durable SEMANTIC_REVIEW_009.json is generated with the checkpoint.",
+  "reader_render": "The final deterministic 100-page cumulative PDF and exact HTML reader both passed; every PDF page was rendered and visually inspected.",
+  "external_upstream_report_submitted": false
+}

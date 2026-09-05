@@ -1,0 +1,77 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{rul}}
+      {\olfileid{pl}{seq}{rul}}
+
+\olsection{નિયમો અને \usetoken{P}{derivation}}
+
+નીચેના માટે, $\Gamma, \Delta, \Pi, \Lambda$ એ !!{sentence}sની સાન્ત
+શ્રેણીઓ દર્શાવે તેમ માનો.
+
+\begin{defn}[સિક્વન્ટ]
+\emph{સિક્વન્ટ} એ નીચેના સ્વરૂપની અભિવ્યક્તિ છે:
+\[
+\Gamma \Sequent \Delta
+\]
+જ્યાં $\Gamma$ અને $\Delta$ એ ભાષા~$\Lang L$નાં !!{sentence}sની સાન્ત
+(સંભવતઃ ખાલી) શ્રેણીઓ છે. $\Gamma$ને \emph{પૂર્વાંગ} અને $\Delta$ને
+\emph{ઉત્તરાંગ} કહે છે.
+\end{defn}
+
+\begin{explain}
+સિક્વન્ટ પાછળનો સહજ વિચાર આ છે: પૂર્વાંગનાં બધાં !!{sentence}s સાચાં હોય,
+તો ઉત્તરાંગનાં !!{sentence}sમાંથી ઓછામાં ઓછું એક સાચું હોય. એટલે કે, જો
+$\Gamma = \tuple{!A_1, \dots, !A_m}$ અને
+$\Delta = \tuple{!B_1, \dots, !B_n}$ હોય, તો
+$\Gamma \Sequent \Delta$ ત્યારે અને માત્ર ત્યારે જ સધાય જ્યારે
+\[
+(!A_1 \land \cdots \land !A_m) \lif (!B_1 \lor \cdots \lor
+!B_n)
+\]
+સધાય. બે ખાસ કિસ્સા છે: $\Gamma$ ખાલી હોય તે અને $\Delta$ ખાલી હોય તે.
+$\Gamma$ ખાલી હોય, એટલે કે $m = 0$ હોય, ત્યારે $\quad \Sequent \Delta$
+ત્યારે અને માત્ર ત્યારે જ સધાય જ્યારે $!B_1 \lor \dots \lor !B_n$
+સધાય. $\Delta$ ખાલી હોય, એટલે કે $n = 0$ હોય, ત્યારે
+$\Gamma \Sequent \quad$ ત્યારે અને માત્ર ત્યારે જ સધાય જ્યારે
+$\lnot(!A_1 \land \dots \land !A_m)$ સધાય. અનુરૂપ !!{sentence}
+પ્રામાણ્ય હોય ત્યારે અને માત્ર ત્યારે જ સિક્વન્ટને પ્રામાણ્ય કહીએ છીએ.
+\end{explain}
+
+જો $\Gamma$ એ !!{sentence}sની શ્રેણી હોય, તો $\Gamma$ના જમણા છેડે
+$!A$ જોડવાથી મળતા પરિણામ માટે $\Gamma, !A$ લખીએ છીએ (અને $\Gamma$ના
+ડાબા છેડે $!A$ જોડવાથી મળતા પરિણામ માટે $!A, \Gamma$ લખીએ છીએ). જો
+$\Delta$ પણ !!{sentence}sની શ્રેણી હોય, તો $\Gamma, \Delta$ એ બંને
+શ્રેણીઓનું સળંગ જોડાણ છે.
+
+\begin{defn}[આરંભિક સિક્વન્ટ]
+\emph{આરંભિક સિક્વન્ટ} એ સિક્વન્ટ
+\iftag{prvFalse,prvTrue}{નીચે આપેલાં સ્વરૂપોમાંથી કોઈ એક સ્વરૂપનું હોય છે:
+  \begin{enumerate}
+    \item $!A \Sequent !A$
+    \tagitem{prvTrue}{$\quad \Sequent \ltrue$}{}
+    \tagitem{prvFalse}{$\lfalse \Sequent \quad$}{}
+  \end{enumerate}}
+{$!A \Sequent !A$ સ્વરૂપનું હોય છે}, જ્યાં $!A$ ભાષાનું કોઈપણ
+!!{sentence} છે.
+\end{defn}
+
+સિક્વન્ટ કલનમાં !!^{derivation}s એ સિક્વન્ટોનાં અમુક વૃક્ષો છે. તેમાં
+સૌથી ઉપરના સિક્વન્ટો આરંભિક સિક્વન્ટો હોય છે; અને કોઈ સિક્વન્ટ એક કે બે
+બીજા સિક્વન્ટોની નીચે હોય, તો તે અનુમાનના કોઈ નિયમ વડે તેમાંથી યોગ્ય
+રીતે મળવો જોઈએ. $\Log{LK}$ના નિયમો બે મુખ્ય પ્રકારમાં વહેંચાય છે:
+\emph{તાર્કિક} નિયમો અને \emph{સંરચનાત્મક} નિયમો. તાર્કિક નિયમોનાં નામ
+નીચલા સિક્વન્ટમાં $!A$ અને/અથવા $!B$ ધરાવતા !!{sentence}ના
+!!{main
+  operator} પરથી પાડવામાં આવે છે. દરેક તાર્કિક નિયમનાં બે રૂપ હોય
+છે: એક એવું રૂપ જે ડાબી બાજુ !!{operator} ધરાવતું !!{sentence} હોય એવા
+સિક્વન્ટનું અનુમાન કરે, અને બીજું એવું રૂપ જે જમણી બાજુ તે !!{sentence}
+હોય એવા સિક્વન્ટનું અનુમાન કરે.
+
+\end{document}

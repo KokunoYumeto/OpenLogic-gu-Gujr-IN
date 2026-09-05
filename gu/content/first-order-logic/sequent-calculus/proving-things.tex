@@ -1,0 +1,339 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{pro}}
+      {\olfileid{pl}{seq}{pro}}
+
+\olsection{\usetoken{P}{derivation}નાં દાખલા}
+
+\begin{ex}
+સિક્વન્ટ $!A \land !B \Sequent !A$ની $\Log{LK}$-!!{derivation} આપો.
+
+પહેલાં ઇચ્છિત અંતિમ સિક્વન્ટને !!{derivation}ની નીચે લખીએ.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+હવે કયા પ્રકારના અનુમાનનું નીચલું સિક્વન્ટ આ સ્વરૂપનું હોઈ શકે તે શોધવું
+પડશે. તે કોઈ સંરચનાત્મક નિયમ હોઈ શકે, પરંતુ પહેલાં તાર્કિક નિયમ શોધવો
+સારો ઉપાય છે. નીચલા સિક્વન્ટમાં આવતો એકમાત્ર તાર્કિક સંયોજક $\land$ છે;
+તેથી આપણે $\land$નો નિયમ શોધીએ છીએ. $\land$નું ચિહ્ન પૂર્વાંગમાં આવે છે,
+તેથી આપણે \LeftR{\land} નિયમ જોઈએ છીએ.
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+\LeftR{\land} અનુમાનનું ઉપરનું સિક્વન્ટ કયું હતું તેની બે શક્યતાઓ છે:
+$!A \Sequent !A$ અથવા $!B \Sequent !A$. સ્પષ્ટ છે કે
+$!A \Sequent !A$ આરંભિક સિક્વન્ટ છે, જ્યારે સામાન્ય રીતે
+$!B \Sequent !A$ નિષ્પન્ન થઈ શકતું નથી. તેથી ઉપરનું સિક્વન્ટ ભરીએ:
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A\land !B \fCenter !A$
+\end{prooftree}
+હવે આપણી પાસે સિક્વન્ટ $!A \land !B \Sequent !A$ની યોગ્ય
+$\Log{LK}$-!!{derivation} છે.
+\end{ex}
+
+\begin{ex}
+સિક્વન્ટ $\lnot !A \lor !B \Sequent !A \lif !B$ની
+$\Log{LK}$-!!{derivation} આપો.
+
+ઇચ્છિત અંતિમ સિક્વન્ટને !!{derivation}ની નીચે લખીને શરૂ કરીએ.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A \lor !B \fCenter !A \lif !B$
+\end{prooftree}
+આ અંતિમ સિક્વન્ટ આપતો હોય એવો તાર્કિક નિયમ શોધવા માટે તેમાંના તાર્કિક
+સંયોજકો જોઈએ: $\lnot$, $\lor$ અને $\lif$. અત્યારે આપણે માત્ર $\lor$ અને
+$\lif$ની જ ચિંતા કરીએ છીએ, કારણ કે તેઓ અંતિમ સિક્વન્ટમાંનાં
+!!{sentence}sના !!{main operator}s છે. $\lnot$ બીજા સંયોજકના વ્યાપમાં
+છે, તેથી તેને પછી સંભાળીશું. અંતિમ અનુમાન માટેના તાર્કિક નિયમોની આપણી
+શક્યતાઓ \LeftR{\lor} અને \RightR{\lif} છે. બંનેમાંથી ગમે તે નિયમ લઈ
+શકાય, પરંતુ આપણે \RightR{\lif} લઈએ છીએ (બીજું કોઈ કારણ ન હોય તોપણ તે
+વૃક્ષને બે શાખામાં વહેંચવાનું થોડું મોડું કરવા દે છે). નીચલું સિક્વન્ટ
+આપતા \RightR{\lif} અનુમાનના સ્વરૂપ મુજબ તે આવું જ હોવું જોઈએ:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}} \UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+
+પૂર્વાંગમાં $\lnot !A \lor !B$ને બહારના છેડે ખસેડીએ તો
+\LeftR{\lor} નિયમ લગાડી શકીએ. તેના પ્રરૂપ મુજબ તે નીચે પ્રમાણે બે ઉપરના
+સિક્વન્ટોમાં વહેંચાવું જોઈએ:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\AxiomC{}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$ \lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+\sourcecorrection{OLSEQ-001}{મૂળની \texttt{proving-things.tex}માં આ
+ઉદાહરણનાં ચાર વૃક્ષોમાં પૂર્વાંગના બે !!{sentence}sની અદલાબદલી કરતી
+રેખાનું નામ $\RightR{\Exchange}$ આપ્યું છે. નિયમના સ્વરૂપ અને સાથના
+વર્ણન મુજબ તેને ચારેય સ્થળે $\LeftR{\Exchange}$ કર્યું છે.}
+યાદ રાખો કે આપણે પાછળની દિશામાં આરંભિક સિક્વન્ટો સુધી પહોંચવાનો પ્રયત્ન
+કરી રહ્યા છીએ; હવે આપણે તેની ઘણી નજીક દેખાઈએ છીએ!{} જમણી શાખા આરંભિક
+સિક્વન્ટથી માત્ર એક શિથિલીકરણ અને એક અદલાબદલી દૂર છે; પછી તે પૂરી થાય છે:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+
+હવે ડાબી શાખા જોઈએ. તેના કોઈ !!{sentence}માંનો એકમાત્ર તાર્કિક
+સંયોજક પૂર્વાંગનાં !!{sentence}sમાં આવતું $\lnot$ ચિહ્ન છે, તેથી આપણે
+\LeftR{\lnot} નિયમનો કોઈ ઉપયોગ શોધીએ છીએ.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ !A \fCenter !B, !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+જેમ જમણી શાખા પૂરી કરી હતી તેમ આ ડાબી શાખા પણ પૂરી થવાથી માત્ર એક
+શિથિલીકરણ અને એક અદલાબદલી દૂર છે.
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ !A \fCenter !A, !B$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ !A \fCenter !B, !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \fCenter !B$
+\Axiom$!B \fCenter !B$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!A, !B \fCenter !B$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!B, !A \fCenter !B$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor !B, !A \fCenter !B $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ !A, \lnot !A \lor !B \fCenter !B $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot !A \lor !B \fCenter !A \lif !B $
+\end{prooftree}
+\end{ex}
+
+\begin{ex}
+સિક્વન્ટ $\lnot !A \lor \lnot !B \Sequent \lnot (!A \land !B)$ની
+$\Log{LK}$-!!{derivation} આપો.
+
+ઉપરની રીતો વાપરીને ઇચ્છિત અંતિમ સિક્વન્ટને નીચે લખીને શરૂ કરીએ.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B) $
+\end{prooftree}
+અંતિમ સિક્વન્ટનાં !!{sentence}sમાં ઉપલબ્ધ મુખ્ય સંયોજકો $\lor$ અને
+$\lnot$ છે. અહીં \LeftR{\lor} અથવા \RightR{\lnot}, બંનેમાંથી ગમે તે
+નિયમ લગાડી શકાય; પરંતુ થોડી વાર માટે બે શાખામાં વહેંચવાનું ટાળવા આપણે
+\RightR{\lnot}થી શરૂ કરીએ છીએ:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+હવે \LeftR{\land} કે \LeftR{\lor}, કયો નિયમ જોવો તેની પસંદગી છે.
+\LeftR{\land} નિયમ લગાડીએ તો શું થાય તે જોઈએ: આપણે કાં તો સિક્વન્ટ
+$!A, \lnot !A \lor \lnot !B \Sequent \quad$થી અથવા સિક્વન્ટ
+$!B, \lnot !A \lor \lnot !B \Sequent \quad$થી શરૂ કરી શકીએ છીએ.
+!!{derivation} એ $!A$ અને $!B$ની દૃષ્ટિએ સમમિત છે, તેથી પહેલું લઈએ:
+\sourcecorrection{OLSEQ-002}{મૂળની \texttt{proving-things.tex}માં આ
+વાક્યનાં બંને વૈકલ્પિક સિક્વન્ટોમાં વિયોજનનો બીજો ઘટક $!B$ લખાયો છે.
+ઇચ્છિત અંતિમ સિક્વન્ટ અને પછીનાં બંને શાખા-વૃક્ષો મુજબ તે બંને સ્થળે
+$\lnot !B$ હોવો જોઈએ.}
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$!A, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+!!{derivation} ભરવાનું આગળ વધારતાં આપણને સમસ્યા મળે છે:
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot !A, !A \fCenter$
+\AxiomC{}
+\RightLabel{?}
+\UnaryInf$!A \fCenter !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot !B, !A \fCenter$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+જમણી શાખાના ઉપરના ભાગને હવે વધુ ઘટાડવો શક્ય નથી અને સંરચનાત્મક
+અનુમાનો વડે તેને આરંભિક સિક્વન્ટ સુધી લઈ જઈ શકાતો નથી. તેથી આ સાચો
+માર્ગ નથી. એટલે ઉપર \LeftR{\land} લગાડવું ભૂલ હતું. એ પહેલાં જે હતું
+ત્યાં પાછાં જઈને તેના બદલે \LeftR{\lor} નિયમ લગાડીએ તો મળે છે:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot !A, !A \land !B \fCenter $
+
+\AxiomC{}
+\UnaryInf$\lnot !B, !A \land !B \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \land !B \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+આગળની જેમ દરેક શાખા પૂરી કરતાં મળે છે:
+\begin{prooftree}
+\Axiom$ !A \fCenter!A$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B \fCenter !A$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, !A \land !B \fCenter $
+
+\Axiom$ !B \fCenter !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!A \land !B \fCenter !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B, !A \land !B \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot !A \lor \lnot !B, !A \land !B \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$!A \land !B, \lnot !A \lor \lnot !B \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot !A \lor \lnot !B \fCenter \lnot (!A \land !B)$
+\end{prooftree}
+(આ પગલાંમાં $\land$ના નિયમો $\lnot$ના નિયમોથી નીચે લગાડ્યા હોત તોપણ
+યોગ્ય !!{derivation} મળી હોત.)
+\end{ex}
+
+\begin{ex}
+હજી સુધી આપણે સંકોચનનો નિયમ વાપર્યો નથી, પરંતુ ક્યારેક તે જરૂરી બને છે.
+તેનું એક ઉદાહરણ જોઈએ. માનો કે આપણે $\quad \Sequent !A \lor \lnot !A$
+સાબિત કરવા માગીએ છીએ. $\RightR{\lor}$ને ઊલટી દિશામાં લગાડવાથી નીચેની
+બે !!{derivation}sમાંથી કોઈ એક મળે:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\DisplayProof\qquad\bottomAlignProof
+\AxiomC{}
+\UnaryInf$!A \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \fCenter \lnot !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+આ બંનેમાંથી એકેયનું ઉપરનું છેડું આરંભિક સિક્વન્ટ નથી. યુક્તિ એ સમજવાની
+છે કે સંકોચનનો નિયમ !!a{sentence}ની બે નકલોને એકમાં ભેગી કરવા દે છે—અને
+સાબિતી શોધતી વખતે, એટલે કે નીચેથી ઉપર જતી વખતે, આપણે આધાર-સિક્વન્ટમાં
+$!A \lor \lnot !A$ની એક નકલ રાખી શકીએ છીએ; દાખલા તરીકે:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+હવે $\RightR{\lor}$ને બીજી વાર લગાડી શકાય અને~$\lnot !A$ પણ મળે છે;
+તેનાથી પૂર્ણ !!{derivation} મળે છે.
+\begin{prooftree}
+\Axiom$!A \fCenter !A$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter !A, \lnot !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$\fCenter !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter !A \lor \lnot !A, !A \lor \lnot !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter !A \lor \lnot !A$
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+નીચેના સિક્વન્ટોની !!{derivation}s આપો:
+\begin{enumerate}
+\item $!A \land (!B \land !C) \Sequent (!A \land !B) \land !C$.
+\item $!A \lor (!B \lor !C) \Sequent (!A \lor !B) \lor !C$.
+\item $!A \lif (!B \lif !C) \Sequent !B \lif (!A \lif !C)$.
+\item $!A \Sequent \lnot\lnot !A$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+નીચેના સિક્વન્ટોની !!{derivation}s આપો:
+\begin{enumerate}
+\item $(!A \lor !B) \lif !C \Sequent !A \lif !C$.
+\item $(!A \lif !C) \land (!B \lif !C) \Sequent (!A \lor !B) \lif !C$.
+\item $\Sequent \lnot(!A \land \lnot !A)$.
+\item $!B \lif !A \Sequent \lnot !A \lif \lnot !B$.
+\item $\Sequent (!A \lif \lnot !A) \lif \lnot !A$.
+\item $\Sequent \lnot(!A \lif !B) \lif \lnot !B$.
+\item $!A \lif !C \Sequent \lnot (!A \land \lnot !C)$.
+\item $!A \land \lnot !C \Sequent \lnot (!A \lif !C)$.
+\item $!A \lor !B, \lnot !B \Sequent !A$.
+\item $\lnot !A \lor \lnot !B \Sequent \lnot(!A \land !B)$.
+\item $\Sequent (\lnot !A \land \lnot !B) \lif\lnot(!A \lor !B)$.
+\item $\Sequent \lnot(!A \lor !B) \lif (\lnot !A \land \lnot !B)$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+નીચેના સિક્વન્ટોની !!{derivation}s આપો:
+\begin{enumerate}
+\item $\lnot(!A \lif !B) \Sequent !A$.
+\item $\lnot(!A \land !B) \Sequent \lnot !A \lor \lnot !B$.
+\item $!A \lif !B \Sequent \lnot !A \lor !B$.
+\item $\Sequent \lnot \lnot !A \lif !A$.
+\item $!A \lif !B, \lnot !A \lif !B \Sequent !B$.
+\item $(!A \land !B) \lif !C \Sequent (!A \lif !C) \lor (!B \lif !C)$.
+\item $(!A \lif !B) \lif !A \Sequent !A$.
+\item $\Sequent (!A \lif !B) \lor (!B \lif !C)$.
+\end{enumerate}
+(આ બધામાં $\RightR{\Contraction}$ નિયમ જરૂરી છે.)
+\end{prob}
+\end{document}

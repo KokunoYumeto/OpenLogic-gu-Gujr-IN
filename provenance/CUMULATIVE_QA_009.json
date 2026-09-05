@@ -1,0 +1,178 @@
+{
+  "schema": "openlogic-gu-cumulative-qa/1",
+  "checked_at_utc": "2026-09-05T16:58:48.380920+00:00",
+  "starting_cursor_sha256": "4195764df6a226a66f287a29783f16927c63f121d8d65b6f87c523d9c890ca7a",
+  "cursor_sha256_at_check": "4195764df6a226a66f287a29783f16927c63f121d8d65b6f87c523d9c890ca7a",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 80,
+    "total_units": 722,
+    "contiguous_units": "OLP-0004–0083",
+    "complete_edition": false
+  },
+  "totals": {
+    "aligned_linguistic_blocks": 887,
+    "source_math_spans": 4594,
+    "semantic_samples": 466,
+    "source_corrections": 35,
+    "canon_sources": 18,
+    "canon_passages": 77,
+    "term_decisions": 123,
+    "translation_decisions": 161,
+    "translation_decision_occurrences": 169
+  },
+  "batches": {
+    "001": {
+      "units": 7,
+      "blocks": 86,
+      "math": 327,
+      "semantic": 9,
+      "batch_sha256": "053e12fe77406cc236c539a3e247e9583c0881626da52c0fafc3e0cf6e38f6d6",
+      "parity_sha256": "18115805d2189fff36db3d4c98f144723e7d4201d8e4e3f5550e5c811a6273f6",
+      "semantic_sha256": "c76d641af5ee9202796a994079bf53ac28296eaf08fba3bb3512ff506b273aff"
+    },
+    "002": {
+      "units": 9,
+      "blocks": 104,
+      "math": 517,
+      "semantic": 13,
+      "batch_sha256": "43699cec18be506e8e72d29e9d44ca97dcd4dc212957bfb621839d554fd77a6c",
+      "parity_sha256": "4825236f13d436419faa724caf2aac995909a6df4a264c7e1937bf21390a0586",
+      "semantic_sha256": "0059e52457ffd3cce811ca30272ec4eea3489b6bc315fc479c10fe326c851a45"
+    },
+    "003": {
+      "units": 7,
+      "blocks": 87,
+      "math": 414,
+      "semantic": 18,
+      "batch_sha256": "15af2b6bf4599e44fc3dd30d4325c203f71b49ee13c8a918c7173406f08e930d",
+      "parity_sha256": "9142e425e04535ca5debb9763df67af69e0169167074d98433484cb235186037",
+      "semantic_sha256": "7d4df0c3e24df133c3f5347f01242c878d5969fe4bffda1fd8745e4cb54bd8c2"
+    },
+    "004": {
+      "units": 14,
+      "blocks": 187,
+      "math": 1139,
+      "semantic": 51,
+      "batch_sha256": "8ed01dba48548325beddb48a581381e597e2f4b9da1b8c296dec97b6e778e854",
+      "parity_sha256": "d3890eaf59ee88e8dc20d28599172d73eee0b6af38a2f295e36ffd0273ddf280",
+      "semantic_sha256": "d8463dcdb7c9943962e76199d322e7aa988c44ee213071a0af0b7232a89dd851"
+    },
+    "005": {
+      "units": 8,
+      "blocks": 103,
+      "math": 424,
+      "semantic": 55,
+      "batch_sha256": "5dafd3321afa5fd7e4a761d48af3053062e23cdb1e42910dabfa6b5a429dfc47",
+      "parity_sha256": "d0703fd8da38c18d66f9421ae3118d7bd3f4090d696b4ce8b4b8ac84a3ecfd02",
+      "semantic_sha256": "b3111a671d76eb989384577fda30cf71a61a3977a2d4df24695c852415ad06ac"
+    },
+    "006": {
+      "units": 6,
+      "blocks": 58,
+      "math": 207,
+      "semantic": 58,
+      "batch_sha256": "aa2f3e785bf02e19771d82babf254fd483c66152175d92a4dcce1299e6574fe9",
+      "parity_sha256": "58c769e5022ec6d333855d7d8ff552a4c8f8ec840aeb47fbce6464650fdca49b",
+      "semantic_sha256": "d444b369884edd6d9a311806a4e622b1b7149a5a9a4d9fbdfe1c5a5231589e58"
+    },
+    "007": {
+      "units": 8,
+      "blocks": 99,
+      "math": 426,
+      "semantic": 99,
+      "batch_sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de",
+      "parity_sha256": "fbc7a07f85f405ebf1fc527a90237d70fa7a927e40f6f0b1509cd192cf4f1ea4",
+      "semantic_sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
+    },
+    "008": {
+      "units": 6,
+      "blocks": 32,
+      "math": 137,
+      "semantic": 32,
+      "batch_sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649",
+      "parity_sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05",
+      "semantic_sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+    },
+    "009": {
+      "units": 15,
+      "blocks": 131,
+      "math": 1003,
+      "semantic": 131,
+      "batch_sha256": "f93547c6b6596cb30d0d6dacd1a68a42c132a76251537f7c09eed4e348651f63",
+      "parity_sha256": "b4d4e9c9f0713880284e433861baf6f1c280320b2ea12f9498919bc7b41480e7",
+      "semantic_sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b"
+    }
+  },
+  "current_artifacts": {
+    "html": {
+      "path": "reader/sequent-calculus.html",
+      "bytes": 1849265,
+      "sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479",
+      "mathml_nodes": 4394,
+      "proof_representations": 73,
+      "status": "passed_exact_dom_mathml_proof_link_asset_and_character_qa"
+    },
+    "browser": {
+      "status": "passed_actual_live_browser_inspection",
+      "inspected_at_utc": "2026-09-05T16:30:57.363551+00:00",
+      "method": "Codex in-app Chromium browser served from the exact local repository; live navigation, computed-style inspection across every block MathML node, and viewport screenshots of representative rules, nested derivations, correction notes, and the final section.",
+      "url": "http://localhost:8765/reader/sequent-calculus.html?qa=009c",
+      "viewed": [
+        "section 57 sequent definitions and initial sequents",
+        "section 58 all propositional LK rule displays",
+        "section 62 worked derivations",
+        "section 63 nested quantifier derivations",
+        "section 68 soundness proof and OLSEQ-005 correction note",
+        "section 70 identity soundness and editorial notes"
+      ],
+      "computed_mathml_check": {
+        "selector": "math[display='block']",
+        "nodes_checked": 215,
+        "vertical_overflow_nodes": 0,
+        "maximum_scroll_height_minus_client_height_px": 0,
+        "overflow_x": "auto",
+        "overflow_y": "hidden",
+        "padding_block_px": 10.4
+      },
+      "defects_found_and_repaired": [
+        "Block MathML inherited a computed vertical scrollbar from horizontal overflow; the stylesheet now gives formulas enough vertical padding and suppresses vertical overflow while retaining horizontal scrolling for wide expressions."
+      ],
+      "final_hash_binding": {
+        "html_sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479",
+        "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+        "stylesheet_href": "reader.css?v=3"
+      },
+      "pending": []
+    },
+    "pdf": {
+      "path": "build/gu-sequent-calculus.pdf",
+      "bytes": 989643,
+      "sha256": "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861",
+      "pages": 100,
+      "page_size": "A4",
+      "page_size_points": [
+        595.276,
+        841.89
+      ],
+      "title": "સિક્વન્ટ કલન સહિત ઓપન લોજિક ગુજરાતી",
+      "encrypted": false,
+      "nonempty_extracted_text_pages": 100,
+      "status": "passed_reproducible_build_and_all_page_visual_qa",
+      "all_pages_visually_inspected": true,
+      "three_passes_byte_identical": true
+    },
+    "translation_decisions": {
+      "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "sha256": "35fadf9a02125305a588107b6ba5da821ef354a0077a608eedbfbea47533388d",
+      "status": "passed",
+      "reader_locators": {
+        "available": 168,
+        "pending": 0,
+        "not_applicable": 1
+      }
+    }
+  },
+  "git_diff_check": "passed",
+  "status": "passed_single_cumulative_80_unit_gate"
+}

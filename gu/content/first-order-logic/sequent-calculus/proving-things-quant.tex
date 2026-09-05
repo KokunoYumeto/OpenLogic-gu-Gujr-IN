@@ -1,0 +1,103 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{seq}{prq}
+
+\olsection{પરિમાણકો ધરાવતી \usetoken{P}{derivation}}
+
+\begin{ex}
+સિક્વન્ટ $\lexists[x][\lnot !A(x)] \Sequent
+\lnot \lforall[x][!A(x)]$ની $\Log{LK}$-!!{derivation} આપો.
+
+પરિમાણકો સાથે કામ કરતી વખતે આઇગનચલ-શરતનો ભંગ ન થાય તેની ખાતરી કરવી
+પડે છે, અને ક્યારેક તે માટે અમુક અનુમાનો કયા ક્રમમાં કરવા તેની ગોઠવણ
+બદલવી પડે છે. સામાન્ય રીતે આઇગનચલ-શરતને આધીન નિયમોને પહેલાં સંભાળવાનો
+પ્રયત્ન કરવાથી મદદ મળે છે (પૂરી થયેલી સાબિતીમાં તેઓ વધુ નીચે હશે).
+આરંભિક સિક્વન્ટ કેવું હશે તે આગળથી વિચારીને અનુમાન કરવાનો પ્રયત્ન કરવો
+પણ સારો ઉપાય છે. આપણા કિસ્સામાં તે $!A(a) \Sequent !A(a)$ જેવું હોવું
+પડશે. એટલે પરિમાણકના નિયમોને ``ઊલટા'' લાગુ કરતી વખતે $\lforall$ અને
+$\lexists$ બંને નિયમ માટે એક જ પદ—જેને આપણે $a$ કહીશું—પસંદ કરવું પડશે.
+દરેક નિયમ માટે જુદાં પદો પસંદ કરીએ તો અંતે $!A(a) \Sequent !A(b)$ જેવું
+કંઈક મળે, જે અલબત્ત નિષ્પન્ન થઈ શકતું નથી.
+
+હંમેશની જેમ આ લખીને શરૂ કરીએ:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+અહીં \LeftR{\exists} અથવા \RightR{\lnot}, બંનેમાંથી ગમે તે નિયમ લગાડી
+શકીએ. \LeftR{\exists} નિયમ આઇગનચલ-શરતને આધીન છે, તેથી તેને મોડું કરવાને
+બદલે વહેલું સંભાળવું સારો ઉપાય છે; એટલે પહેલાં એ જ નિયમ લગાડીએ.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][\lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+\LeftR{\lnot} અને \RightR{\lnot} નિયમોને ઊલટી દિશામાં લગાડતાં મળે છે:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x] !A(x)$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x] \lnot !A(x) \fCenter \lnot \lforall[x] !A(x)$
+\end{prooftree}
+હવે આપણી એકમાત્ર શક્યતા \LeftR{\forall} નિયમ લગાડવાની છે. આ નિયમ
+આઇગનચલ-પ્રતિબંધને આધીન નથી, તેથી અહીં કોઈ અડચણ નથી. યાદ રાખો કે આપણે
+$!A(a) \Sequent !A(a)$ સ્વરૂપનું આરંભિક સિક્વન્ટ મેળવવા માગીએ છીએ;
+તેથી નિયમ લગાડીએ ત્યારે $!A$ના પદ તરીકે $a$ પસંદ કરવું જોઈએ.
+\begin{prooftree}
+\Axiom$!A(a) \fCenter !A(a)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!A(x)] \fCenter !A(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A(a), \lforall[x][!A(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][!A(x)], \lnot !A(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot !A(a) \fCenter \lnot \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][ \lnot !A(x)] \fCenter \lnot \lforall[x][!A(x)]$
+\end{prooftree}
+ખાસ કરીને પરિમાણકો સાથે કામ કરતી વખતે, હવે આઇગનચલ-શરતનો ભંગ થયો નથી
+તે ફરી તપાસવું જરૂરી છે. આપણે લગાડેલો આઇગનચલ-શરતને આધીન એકમાત્ર નિયમ
+\LeftR{\exists} હતો, અને આઇગનચલ~$a$ તેના નીચલા સિક્વન્ટમાં
+(અંતિમ સિક્વન્ટમાં) આવતું નથી. તેથી આ યોગ્ય !!{derivation} છે.
+\end{ex}
+
+\begin{prob}
+નીચેના સિક્વન્ટોની !!{derivation}s આપો:
+\begin{enumerate}
+\item $\Sequent (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[z][(!A(z) \land !B(z))]$.
+\item $\Sequent (\lexists[x][!A(x)] \lor \lexists[y][!B(y)]) \lif
+\lexists[z][(!A(z) \lor !B(z))]$.
+\item $\lforall[x][(!A(x) \lif !B)] \Sequent \lexists[y][!A(y)] \lif !B$.
+\item $\lforall[x][\lnot !A(x)] \Sequent \lnot\lexists[x][!A(x)]$.
+\item $\Sequent \lnot\lexists[x][!A(x)] \lif \lforall[x][\lnot !A(x)]$.
+\item $\Sequent \lnot\lexists[x][\lforall[y][((!A(x,y) \lif \lnot
+!A(y,y)) \land (\lnot !A(y,y) \lif !A(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+નીચેના સિક્વન્ટોની !!{derivation}s આપો:
+\begin{enumerate}
+\item $\Sequent \lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]$.
+\item $(\lforall[x][!A(x)] \lif !B) \Sequent \lexists[y][(!A(y) \lif !B)]$.
+\item $\Sequent \lexists[x][(!A(x) \lif \lforall[y][!A(y)])]$.
+\end{enumerate}
+(આ બધામાં $\RightR{\Contraction}$ નિયમ જરૂરી છે.)
+\end{prob}
+
+\end{document}

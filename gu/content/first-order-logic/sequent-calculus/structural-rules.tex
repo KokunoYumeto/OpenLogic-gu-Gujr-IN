@@ -1,0 +1,79 @@
+% Part: first-order-logic
+% Chapter: sequent-calculus
+% Section: structural-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{seq}{srl}}
+      {\olfileid{pl}{seq}{srl}}
+
+\olsection{સંરચનાત્મક નિયમો}
+
+સિક્વન્ટની ડાબી અને જમણી બાજુએ રહેલાં !!{sentence}sને ફરી ગોઠવવા દે
+એવા થોડા નિયમો પણ જોઈએ. તાર્કિક નિયમો જે આધારવિધાનનાં !!{sentence}s પર
+કાર્ય કરે છે તે છેક ડાબે અથવા છેક જમણે ઊભાં હોવાં જોઈએ; તેથી !!{sentence}sને
+યોગ્ય સ્થાને ખસેડી શકાય એવો ``અદલાબદલી''નો નિયમ જોઈએ. ક્યારેક બે સમાન
+!!{sentence}sને એકમાં ભેગાં કરી શકાય અને બંનેમાંથી ગમે તે બાજુએ
+!!a{sentence} ઉમેરી શકાય એ પણ જરૂરી છે.
+
+\subsection{શિથિલીકરણ}
+
+\begin{defish}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{સંકોચન}
+
+\begin{defish}
+\Axiom$ !A, !A, \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$ !A, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !A$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\end{defish}
+
+\subsection{અદલાબદલી}
+
+\begin{defish}
+\Axiom$ \Gamma, !A, !B, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, !B, !A, \Pi \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, !A, !B, \Lambda$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \Gamma \fCenter \Delta, !B, !A, \Lambda$
+\DisplayProof
+\end{defish}
+
+શિથિલીકરણ, સંકોચન અને અદલાબદલીનાં અનુમાનોની શ્રેણી ઘણી વાર બેવડી
+અનુમાન-રેખાઓથી દર્શાવવામાં આવશે.
+
+નીચે આપેલો ``કટ'' નામનો નિયમ કડક અર્થમાં જરૂરી નથી, પરંતુ તે
+!!{derivation}sનો ફરી ઉપયોગ અને તેમનું સંયોજન ઘણું સહેલું બનાવે છે.
+\begin{defish}
+\[
+\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !A, \Pi \fCenter \Lambda $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\end{defish}
+
+\end{document}

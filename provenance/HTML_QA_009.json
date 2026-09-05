@@ -1,0 +1,150 @@
+{
+  "schema": "openlogic-gu-html-qa/9",
+  "html": {
+    "path": "reader/sequent-calculus.html",
+    "bytes": 1849265,
+    "sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479",
+    "source_units_covered": 80,
+    "sequent_calculus_units_complete": 15,
+    "rendered_sequent_calculus_sections": 14,
+    "logic_profile": "first-order LK sequent calculus, including quantifier and identity rules",
+    "mathml_nodes": 4394,
+    "mathml_tables": 70,
+    "block_mathml_nodes": 215,
+    "proof_representation_entries": 73,
+    "proof_representation_kinds": {
+      "axiomatic_derivation": 1,
+      "closed_tableau": 1,
+      "prooftree": 2,
+      "sequent_prooftree": 58,
+      "sequent_rule_display": 11
+    },
+    "proof_structure_totals": {
+      "trees": 88,
+      "axioms": 113,
+      "inferences": 198,
+      "deductions": 23,
+      "empty_premises": 43,
+      "double_lines": 2
+    },
+    "truth_tables": 5,
+    "images": 13,
+    "unique_ids": 300,
+    "broken_internal_links": 0,
+    "sequent_calculus_section_ids": [
+      "fol:seq:rul:sec",
+      "fol:seq:prl:sec",
+      "fol:seq:qrl:sec",
+      "fol:seq:srl:sec",
+      "fol:seq:der:sec",
+      "fol:seq:pro:sec",
+      "fol:seq:prq:sec",
+      "fol:seq:ptn:sec",
+      "fol:seq:prv:sec",
+      "fol:seq:ppr:sec",
+      "fol:seq:qpr:sec",
+      "fol:seq:sou:sec",
+      "fol:seq:ide:sec",
+      "fol:seq:sid:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002",
+      "OLPL-001",
+      "OLPL-002",
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-004",
+      "OLPRF-003",
+      "OLSEQ-001",
+      "OLSEQ-002",
+      "OLSEQ-003",
+      "OLSEQ-004",
+      "OLSEQ-005",
+      "OLSEQ-006"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 10,
+    "stylesheet": {
+      "path": "reader/reader.css",
+      "href": "reader.css?v=3",
+      "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
+    },
+    "build_qa": {
+      "path": "build/sequent-calculus-html-qa.json",
+      "sha256": "5d7470615656568aea0f7f26e5ed9051c19ec7db547531427df638cb60586398"
+    },
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ],
+    "status": "passed_exact_dom_mathml_proof_link_asset_and_character_qa"
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-05T16:30:57.363551+00:00",
+    "method": "Codex in-app Chromium browser served from the exact local repository; live navigation, computed-style inspection across every block MathML node, and viewport screenshots of representative rules, nested derivations, correction notes, and the final section.",
+    "url": "http://localhost:8765/reader/sequent-calculus.html?qa=009c",
+    "viewed": [
+      "section 57 sequent definitions and initial sequents",
+      "section 58 all propositional LK rule displays",
+      "section 62 worked derivations",
+      "section 63 nested quantifier derivations",
+      "section 68 soundness proof and OLSEQ-005 correction note",
+      "section 70 identity soundness and editorial notes"
+    ],
+    "computed_mathml_check": {
+      "selector": "math[display='block']",
+      "nodes_checked": 215,
+      "vertical_overflow_nodes": 0,
+      "maximum_scroll_height_minus_client_height_px": 0,
+      "overflow_x": "auto",
+      "overflow_y": "hidden",
+      "padding_block_px": 10.4
+    },
+    "defects_found_and_repaired": [
+      "Block MathML inherited a computed vertical scrollbar from horizontal overflow; the stylesheet now gives formulas enough vertical padding and suppresses vertical overflow while retaining horizontal scrolling for wide expressions."
+    ],
+    "final_hash_binding": {
+      "html_sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479",
+      "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "stylesheet_href": "reader.css?v=3"
+    },
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_009.json",
+    "samples": 131,
+    "sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b",
+    "status": "passed_same_agent_not_independent_native_certification"
+  },
+  "pdf": {
+    "receipt": "PDF_QA_009.json",
+    "sha256": "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861",
+    "pages": 100,
+    "status": "passed_reproducible_build_and_all_page_visual_qa"
+  },
+  "full_corpus_complete": false
+}
