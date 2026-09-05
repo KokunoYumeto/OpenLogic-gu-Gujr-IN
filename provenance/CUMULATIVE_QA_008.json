@@ -1,0 +1,130 @@
+{
+  "schema": "openlogic-gu-cumulative-qa/1",
+  "checked_at_utc": "2026-09-05T03:26:51.277001+00:00",
+  "starting_cursor_sha256": "f25c8bc0c2ab0f1d75ea0854ce956bd4107c47452a6049cd7b57272b7345bea9",
+  "cursor_sha256_at_check": "70035a058200f630f76055f2ae538125b36b0fdc5a6b19203c4f9bcdd51ca437",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 65,
+    "total_units": 722,
+    "contiguous_units": "OLP-0004–0068",
+    "complete_edition": false
+  },
+  "totals": {
+    "aligned_linguistic_blocks": 756,
+    "source_math_spans": 3591,
+    "semantic_samples": 335,
+    "source_corrections": 29,
+    "canon_sources": 18,
+    "canon_passages": 75,
+    "term_decisions": 115
+  },
+  "batches": {
+    "001": {
+      "units": 7,
+      "blocks": 86,
+      "math": 327,
+      "semantic": 9,
+      "batch_sha256": "053e12fe77406cc236c539a3e247e9583c0881626da52c0fafc3e0cf6e38f6d6",
+      "parity_sha256": "18115805d2189fff36db3d4c98f144723e7d4201d8e4e3f5550e5c811a6273f6",
+      "semantic_sha256": "c76d641af5ee9202796a994079bf53ac28296eaf08fba3bb3512ff506b273aff"
+    },
+    "002": {
+      "units": 9,
+      "blocks": 104,
+      "math": 517,
+      "semantic": 13,
+      "batch_sha256": "43699cec18be506e8e72d29e9d44ca97dcd4dc212957bfb621839d554fd77a6c",
+      "parity_sha256": "4825236f13d436419faa724caf2aac995909a6df4a264c7e1937bf21390a0586",
+      "semantic_sha256": "0059e52457ffd3cce811ca30272ec4eea3489b6bc315fc479c10fe326c851a45"
+    },
+    "003": {
+      "units": 7,
+      "blocks": 87,
+      "math": 414,
+      "semantic": 18,
+      "batch_sha256": "15af2b6bf4599e44fc3dd30d4325c203f71b49ee13c8a918c7173406f08e930d",
+      "parity_sha256": "9142e425e04535ca5debb9763df67af69e0169167074d98433484cb235186037",
+      "semantic_sha256": "7d4df0c3e24df133c3f5347f01242c878d5969fe4bffda1fd8745e4cb54bd8c2"
+    },
+    "004": {
+      "units": 14,
+      "blocks": 187,
+      "math": 1139,
+      "semantic": 51,
+      "batch_sha256": "8ed01dba48548325beddb48a581381e597e2f4b9da1b8c296dec97b6e778e854",
+      "parity_sha256": "d3890eaf59ee88e8dc20d28599172d73eee0b6af38a2f295e36ffd0273ddf280",
+      "semantic_sha256": "d8463dcdb7c9943962e76199d322e7aa988c44ee213071a0af0b7232a89dd851"
+    },
+    "005": {
+      "units": 8,
+      "blocks": 103,
+      "math": 424,
+      "semantic": 55,
+      "batch_sha256": "5dafd3321afa5fd7e4a761d48af3053062e23cdb1e42910dabfa6b5a429dfc47",
+      "parity_sha256": "d0703fd8da38c18d66f9421ae3118d7bd3f4090d696b4ce8b4b8ac84a3ecfd02",
+      "semantic_sha256": "b3111a671d76eb989384577fda30cf71a61a3977a2d4df24695c852415ad06ac"
+    },
+    "006": {
+      "units": 6,
+      "blocks": 58,
+      "math": 207,
+      "semantic": 58,
+      "batch_sha256": "aa2f3e785bf02e19771d82babf254fd483c66152175d92a4dcce1299e6574fe9",
+      "parity_sha256": "58c769e5022ec6d333855d7d8ff552a4c8f8ec840aeb47fbce6464650fdca49b",
+      "semantic_sha256": "d444b369884edd6d9a311806a4e622b1b7149a5a9a4d9fbdfe1c5a5231589e58"
+    },
+    "007": {
+      "units": 8,
+      "blocks": 99,
+      "math": 426,
+      "semantic": 99,
+      "batch_sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de",
+      "parity_sha256": "fbc7a07f85f405ebf1fc527a90237d70fa7a927e40f6f0b1509cd192cf4f1ea4",
+      "semantic_sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
+    },
+    "008": {
+      "units": 6,
+      "blocks": 32,
+      "math": 137,
+      "semantic": 32,
+      "batch_sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649",
+      "parity_sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05",
+      "semantic_sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+    }
+  },
+  "current_artifacts": {
+    "html": {
+      "path": "reader/proof-systems.html",
+      "bytes": 1499731,
+      "sha256": "0faf4ffb805478f6d9f38ea745f3fe7e1d20126bd5ec3297e7eb5783ae6328cf",
+      "mathml_nodes": 3593,
+      "proof_representations": 4,
+      "status": "passed_exact_dom_mathml_and_asset_qa"
+    },
+    "browser": {
+      "status": "not_performed_local_file_url_blocked_by_browser_security_policy",
+      "attempted_at_utc": "2026-09-05T03:26:22.441080+00:00",
+      "attempt": "Direct read-only navigation to the exact local HTML artifact in the Codex in-app browser.",
+      "handling": "No workaround or alternate browser surface was used. Exact DOM, MathML, link, asset and character-sequence checks bind to the final HTML hash; the equivalent cumulative PDF was visually inspected on all pages.",
+      "pending": []
+    },
+    "pdf": {
+      "path": "build/gu-proof-systems.pdf",
+      "bytes": 848061,
+      "sha256": "dc9dac4d37335cba20eda1411383059ad9822dcf8fbcbb84e2ba75fd590d12c5",
+      "pages": 79,
+      "page_size": "A4",
+      "page_size_points": [
+        595.276,
+        841.89
+      ],
+      "title": "ગણો, વિધાનાત્મક તર્કશાસ્ત્ર અને નિષ્પત્તિ તંત્રો — ઓપન લોજિક ગુજરાતી",
+      "status": "passed_reproducible_build_and_all_page_visual_qa",
+      "all_pages_visually_inspected": true,
+      "three_passes_byte_identical": true
+    }
+  },
+  "git_diff_check": "passed",
+  "status": "passed_single_cumulative_65_unit_gate"
+}

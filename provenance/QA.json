@@ -1,22 +1,22 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-04T23:01:17.037565+00:00",
+  "checkpoint_utc": "2026-09-05T03:26:51.336140+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 59,
-  "publicly_verified_release_units": 16,
-  "publicly_verified_source_checkpoint_units": 51,
+  "translated_units": 65,
+  "publicly_verified_release_units": 59,
+  "publicly_verified_source_checkpoint_units": 59,
   "total_units": 722,
-  "aligned_linguistic_blocks": 724,
-  "source_math_spans_verified": 3454,
+  "aligned_linguistic_blocks": 756,
+  "source_math_spans_verified": 3591,
   "semantic_review": {
     "method": "same-agent source comparison and reverse paraphrase",
-    "samples": 303,
+    "samples": 335,
     "independent_native_certification": false,
-    "status": "passed_for_current_59_unit_scope"
+    "status": "passed_for_current_65_unit_scope"
   },
   "source_corrections": {
-    "count": 25,
+    "count": 29,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -42,30 +42,56 @@
       "OLINF-001",
       "OLINF-002",
       "OLPL-001",
-      "OLPL-002"
+      "OLPL-002",
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-003",
+      "OLPRF-004"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/propositional.html",
-    "bytes": 1418425,
-    "sha256": "e253b3271f95c155d7a2f1c6f607102137ed3d8dc93291c48b5641b5dad9d3d6",
-    "source_units_covered": 59,
-    "propositional_units_complete": 8,
-    "rendered_logic_sections": 6,
-    "connective_profile": "frozen-upstream default: truth constants and all five connectives primitive",
-    "mathml_nodes": 3451,
+    "path": "reader/proof-systems.html",
+    "bytes": 1499731,
+    "sha256": "0faf4ffb805478f6d9f38ea745f3fe7e1d20126bd5ec3297e7eb5783ae6328cf",
+    "source_units_covered": 65,
+    "proof_system_units_complete": 6,
+    "rendered_proof_system_sections": 5,
+    "logic_profile": "frozen shared overview rendered with the propositional profile",
+    "mathml_nodes": 3593,
+    "mathml_tables": 70,
+    "proof_representations": [
+      {
+        "kind": "prooftree",
+        "source_sha256": "fc7a0f7ce7abf78f1a348bab2f1e5829c9b8af9c9a0ce3bcc15ca616fb1101e5",
+        "representation": "MathML inference array preserving premises, conclusions and rule labels."
+      },
+      {
+        "kind": "prooftree",
+        "source_sha256": "114088ab7308dd3e478b557d6817d68fab9415b4072d0328edc371ae1dcdf55d",
+        "representation": "MathML inference array preserving premises, conclusions and rule labels."
+      },
+      {
+        "kind": "closed_tableau",
+        "source_sha256": "b172deacb9f70de486d779592e920be9a97281c54b99ea5121f86aa316389f6c",
+        "representation": "MathML one-branch closed tableau preserving all five signed formulas, rule references and closure mark."
+      },
+      {
+        "kind": "axiomatic_derivation",
+        "source_sha256": "929cbc0bc646f1f20d60d0a8cf1008c4893a1e553bcaf72ae686fe50a9511ada",
+        "representation": "MathML numbered array preserving all three derivation lines."
+      }
+    ],
     "truth_tables": 5,
     "images": 13,
-    "unique_ids": 220,
+    "unique_ids": 230,
     "broken_internal_links": 0,
-    "propositional_section_ids": [
-      "pl:syn:int:sec",
-      "pl:syn:fml:sec",
-      "pl:syn:pre:sec",
-      "pl:syn:fseq:sec",
-      "pl:syn:val:sec",
-      "pl:syn:sem:sec"
+    "proof_system_section_ids": [
+      "pl:prf:int:sec",
+      "pl:prf:seq:sec",
+      "pl:prf:ntd:sec",
+      "pl:prf:tab:sec",
+      "pl:prf:axd:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -92,7 +118,11 @@
       "OLINF-001",
       "OLINF-002",
       "OLPL-001",
-      "OLPL-002"
+      "OLPL-002",
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-004",
+      "OLPRF-003"
     ],
     "gujarati_character_inventory_preserved": true,
     "main_gujarati_character_sequence_preserved": true,
@@ -102,22 +132,23 @@
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
     ],
-    "browser_inspection": "passed_actual_live_browser_inspection"
+    "status": "passed_exact_dom_mathml_and_asset_qa",
+    "browser_inspection": "not_performed_local_file_url_blocked_by_browser_security_policy"
   },
   "pdf": {
-    "path": "build/gu-propositional.pdf",
-    "bytes": 794803,
-    "sha256": "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa",
-    "pages": 73,
+    "path": "build/gu-proof-systems.pdf",
+    "bytes": 848061,
+    "sha256": "dc9dac4d37335cba20eda1411383059ad9822dcf8fbcbb84e2ba75fd590d12c5",
+    "pages": 79,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "ગણો અને વિધાનાત્મક તર્કશાસ્ત્ર — ઓપન લોજિક ગુજરાતી",
+    "title": "ગણો, વિધાનાત્મક તર્કશાસ્ત્ર અને નિષ્પત્તિ તંત્રો — ઓપન લોજિક ગુજરાતી",
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_007.json",
-    "last_two_passes_byte_identical": true,
+    "build_receipt": "BUILD_RECEIPT_008.json",
+    "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
   "batches": {
@@ -162,9 +193,15 @@
       "blocks": 99,
       "math": 426,
       "semantic": 99
+    },
+    "008": {
+      "units": 6,
+      "blocks": 32,
+      "math": 137,
+      "semantic": 32
     }
   },
-  "status": "59_unit_source_html_and_reproducible_pdf_checkpoint_passed; publication_pending; complete_corpus_in_progress",
+  "status": "65_unit_source_html_and_reproducible_pdf_checkpoint_passed; source_checkpoint_publication_pending; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -178,5 +215,31 @@
     "math_spans": 426,
     "semantic_samples": "passed_99_hashed_samples_covering_all_linguistic_blocks",
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
+  },
+  "publication": {
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/propositional-syntax-semantics-v0.3.0",
+    "github_receipt": "PUBLICATION_RECEIPT_003.json",
+    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_007.json",
+    "zenodo_record": "https://zenodo.org/records/22313264",
+    "zenodo_doi": "10.5281/zenodo.22313264",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_003.json",
+    "status": "all_artifacts_anonymously_verified"
+  },
+  "batch_008": {
+    "draft_units": 6,
+    "remaining_units": [],
+    "structural_parity": "passed_after_4_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-003",
+      "OLPRF-004"
+    ],
+    "linguistic_blocks": 32,
+    "math_spans": 137,
+    "semantic_samples": "passed_32_hashed_samples_covering_all_linguistic_blocks",
+    "render": "passed_cumulative_exact_html_dom_mathml_and_asset_qa_plus_reproducible_79_page_pdf_all_page_visual_qa",
+    "browser": "direct_local_file_navigation_blocked_by_browser_security_policy_and_recorded_without_workaround",
+    "cumulative_gate": "CUMULATIVE_QA_008.json"
   }
 }

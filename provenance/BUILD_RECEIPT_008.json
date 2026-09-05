@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-gu-guarded-tex/1",
+  "started_utc": "2026-09-05T03:11:30.1055759Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 1000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 73264,
+      "exit_code": 0,
+      "seconds": 5.3811625,
+      "pdf_sha256": "dc9dac4d37335cba20eda1411383059ad9822dcf8fbcbb84e2ba75fd590d12c5"
+    },
+    {
+      "pass": 2,
+      "process_id": 26524,
+      "exit_code": 0,
+      "seconds": 4.3697253,
+      "pdf_sha256": "dc9dac4d37335cba20eda1411383059ad9822dcf8fbcbb84e2ba75fd590d12c5"
+    },
+    {
+      "pass": 3,
+      "process_id": 38748,
+      "exit_code": 0,
+      "seconds": 4.6429836,
+      "pdf_sha256": "dc9dac4d37335cba20eda1411383059ad9822dcf8fbcbb84e2ba75fd590d12c5"
+    }
+  ],
+  "status": "built_pending_visual_and_semantic_qa",
+  "replay_equal": true,
+  "log_warnings": [
+    "Package epstopdf Warning: Shell escape feature is not enabled.",
+    "Underfull \\hbox (badness 1629) in paragraph at lines 125--126",
+    "LaTeX Font Warning: Command \\small invalid in math mode on input line 2834.",
+    "LaTeX Font Warning: Command \\small invalid in math mode on input line 2843.",
+    "LaTeX Font Warning: Command \\small invalid in math mode on input line 2853.",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):"
+  ],
+  "ended_utc": "2026-09-05T03:11:44.5601533Z"
+}

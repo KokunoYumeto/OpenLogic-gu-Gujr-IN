@@ -1,0 +1,98 @@
+% Part: first-order-logic
+% Chapter: proof-systems
+% Section: tableaux
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{prf}{tab}}
+      {\olfileid{pl}{prf}{tab}}
+
+\olsection{\usetoken{P}{tableau}}
+
+ઘણાં !!{derivation} તંત્રો !!{sentence}sની ગોઠવણી પર કાર્ય કરે છે,
+જ્યારે !!{tableau}s !!{signed formula}s પર કાર્ય કરે છે.
+!!^a{signed formula} એ સત્યમૂલ્યના ચિહ્ન ($\True$ અથવા $\False$) અને
+!!a{sentence}ની બનેલી જોડી છે:
+\[
+\sFmla{\True}{!A} \text{ અથવા } \sFmla{\False}{!A}.
+\]
+!!^a{tableau} નીચે તરફ શાખાઓ પાડતા વૃક્ષમાં ગોઠવેલાં
+!!{signed formula}sનું બનેલું હોય છે. તે કેટલીક \emph{ધારણાઓ}થી શરૂ
+થાય છે અને એવાં !!{signed formula}s સાથે આગળ વધે છે જે ઉપરનાં
+!!{signed formula}sમાંથી કોઈ એક પર અનુમાનનો કોઈ નિયમ લગાડવાથી મળે છે.
+દરેક નિયમથી શાખાના છેડે એક કે વધુ
+!!{signed formula}s, અથવા બાજુબાજુ બે !!{signed formula}s ઉમેરી શકાય
+છે. પછીના કિસ્સામાં શાખા બે ભાગમાં વહેંચાય છે અને ઉમેરેલાં બે !!{signed
+  formula}s બંને શાખાના છેડા બને છે.
+
+સંકુલ !!{signed formula} પર લગાડેલો નિયમ એવાં !!{signed formula}s
+ઉમેરે છે જે તેનાં સીધાં ઉપ-!!{formula}s હોય. નિયમો જોડમાં આવે છે—બે
+ચિહ્નોમાંથી દરેક માટે એક નિયમ. દાખલા તરીકે, નિયમ
+$\TRule{\True}{\land}$ એ $\sFmla{\True}{!A \land !B}$ને લાગુ પડે છે,
+અને $\sFmla{\True}{!A \land !B}$ ધરાવતી કોઈપણ શાખાના છેડે બંને
+!!{signed formula}s $\sFmla{\True}{!A}$ અને~$\sFmla{\True}{!B}$
+ઉમેરવાની છૂટ આપે છે. નિયમ $\TRule{\False}{\land}$ શાખાને બે
+ભાગમાં વહેંચીને બાજુબાજુ $\sFmla{\False}{!A}$ અને
+$\sFmla{\False}{!B}$ ઉમેરવાની છૂટ આપે છે. જો !!^a{tableau}ની દરેક
+શાખામાં !!{signed formula}sની મેળ ખાતી જોડી
+$\sFmla{\True}{!A}$ અને $\sFmla{\False}{!A}$ હોય, તો તે ટેબ્લો બંધ છે.
+\sourcecorrection{OLPRF-002}{મૂળની \texttt{tableaux.tex}, પંક્તિ~38માં
+અસત્ય ચિહ્નવાળા સંયોજનના નિયમનું નામ $\TRule{\False}{!A\land !B}$
+લખાયું છે. નિયમોની નિયામક યાદી અને આ જ ગ્રંથના બધા ઉપયોગોમાં નિયમનું
+નામ $\TRule{\False}{\land}$ છે; અહીં તે જ નામ પુનઃસ્થાપિત કર્યું છે.}
+
+!!{tableau}s પર આધારિત $\Proves$ સંબંધ આ પ્રમાણે વ્યાખ્યાયિત થાય છે:
+$\Gamma \Proves !A$ જો અને માત્ર જો એવો કોઈ સાન્ત ગણ
+$\Gamma_0 = \{!B_1, \dots, !B_n\} \subseteq \Gamma$ હોય કે ધારણાઓ
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+\]
+માટે કોઈ બંધ !!{tableau} હોય. દાખલા તરીકે, નીચેનો બંધ !!{tableau}
+બતાવે છે કે $\Proves (!A \land !B) \lif !A$:
+\begin{oltableau}
+  [\sFmla{\False}{(\formula{A} \land \formula{B}) \lif \formula{A}}, just = \TAss
+    [\sFmla{\True}{\formula{A} \land \formula{B}}, just = {\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\formula{A}}, just = {\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\formula{A}}, just = {\TRule{\True}{\land}[2]}
+          [\sFmla{\True}{\formula{B}}, just = {\TRule{\True}{\land}[2]}, close]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\sourcecorrection{OLPRF-004}{મૂળની \texttt{tableaux.tex},
+પંક્તિઓ~59--60માં બીજી પંક્તિના સત્ય-સંયોજનને વિઘટિત કરતી બંને
+શાખાઓ પર $\TRule{\True}{\lif}[2]$ લખાયું છે. અહીં વપરાયેલું નિયમ
+$\TRule{\True}{\land}[2]$ છે; બંને નિયમ-નામ તે મુજબ સુધાર્યાં છે.}
+
+ધારણાઓ
+\[
+\{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+\]
+માટે બંધ !!{tableau} હોય અને દરેક $i=1,\dots,n$ માટે
+$!B_i\in\Gamma$ હોય, તો ગણ $\Gamma$ !!{tableau} કલનમાં અસુસંગત છે.
+\sourcecorrection{OLPRF-003}{મૂળની \texttt{tableaux.tex}, પંક્તિ~70માં
+ઉપર દર્શાવેલી બધી ધારણાઓમાંથી માત્ર ``કોઈ એક $!B_i\in\Gamma$'' હોવાની
+શરત લખાઈ છે. આ જ ગ્રંથની નિયામક સુસંગતતા-વ્યાખ્યા મુજબ સાન્ત ગણ
+$\{!B_1,\dots,!B_n\}$ આખો $\Gamma$નો ઉપગણ હોવો જોઈએ; તેથી અહીં
+દરેક $i=1,\dots,n$ માટે સભ્યતાની શરત લખી છે.}
+
+!!^{tableau}sની શોધ 1950ના દાયકામાં એવર્ટ બેથ અને યાક્કો હિન્ટિકાએ
+સ્વતંત્ર રીતે કરી હતી; રેમન્ડ સ્મલ્યને તેમને સરળ બનાવી લોકપ્રિય કર્યા.
+!!a{tableau} રચવાની પ્રક્રિયા બહુ પદ્ધતિસર હોવાથી તેનો ઉપયોગ ઘણો સહેલો
+છે. આ પદ્ધતિસર સ્વરૂપને કારણે !!{tableau}sનો કમ્પ્યૂટર દ્વારા અમલ પણ
+સહેલાઈથી થઈ શકે છે. પરંતુ !!a{tableau} વાંચવો ઘણી વાર અઘરો હોય છે અને
+સાબિતીઓ સાથેનો તેનો સંબંધ ક્યારેક સરળતાથી દેખાતો નથી. આ અભિગમ ઘણો
+વ્યાપક પણ છે, અને ઘણાં જુદાં તર્કશાસ્ત્રોને !!{tableau} તંત્રો છે.
+!!^{tableau}s એવી !!{structure}s શોધવામાં પણ મદદ કરે છે જે આપેલાં
+!!{sentence}sના (ગણોને) સંતોષે છે: ગણ સંતોષ્ય હોય તો તેને બંધ !!{tableau} નહિ
+હોય, એટલે કે દરેક !!{tableau}માં કોઈ ખુલ્લી શાખા હશે. તે શાખા પર
+લગાડી શકાય એવો દરેક નિયમ લગાડ્યો હોય, તો ખુલ્લી શાખામાંથી સંતોષતી
+!!{structure} ``વાંચી કાઢી'' શકાય છે. સિક્વન્ટ કલન સાથે પણ બહુ નજીકનો
+સંબંધ છે: મૂળભૂત રીતે, બંધ !!{tableau} એ ઊંધું લખેલું, સંક્ષિપ્ત કરેલું
+સિક્વન્ટ-કલનનું !!{derivation} છે.
+
+\end{document}

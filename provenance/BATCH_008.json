@@ -1,0 +1,97 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-05T03:26:18.081468+00:00",
+  "boundary": "First-order Logic proof-systems overview OLP-0063–0068, rendered under the source's propositional profile",
+  "units": [
+    {
+      "unit_id": "OLP-0063",
+      "source_sha256": "09977f6410bc57fcedf4428c2212ccf67b2bf0bf574413c4e2fdcf4de6cccab7",
+      "target_sha256": "9bedb80b99a48fe0030d908ede634330cb59c94d41c8fb1cdc9997505f7513f0",
+      "source_bytes": 704,
+      "target_bytes": 990,
+      "aligned_blocks": 12,
+      "linguistic_blocks": 2,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0064",
+      "source_sha256": "148266281cc87fcd3e454249b9f6c42a117a9aed0733cc5a5f2e954ffd60bb58",
+      "target_sha256": "1b84a55e723ee46dbbc3703c635e010a63a12f7e1015b956874cab45e9385ad8",
+      "source_bytes": 5203,
+      "target_bytes": 10755,
+      "aligned_blocks": 12,
+      "linguistic_blocks": 7,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0065",
+      "source_sha256": "5448a91da184ef1d41e40ec2d56b74db63d49412d8b96b3f2a39a101b0191bad",
+      "target_sha256": "91f89402c36aacf95aac325abee69ee78c588149b34c164023d9ceff86cb1581",
+      "source_bytes": 2919,
+      "target_bytes": 5822,
+      "aligned_blocks": 10,
+      "linguistic_blocks": 5,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0066",
+      "source_sha256": "77b5d31c7b63f657e0d5492d83810bfdc21af0169a9b38ccd5302e0e4cdefdfe",
+      "target_sha256": "ef088e5f8594092cf8410502829ab7686231f9f7d7e44d7f42b5b124720ff356",
+      "source_bytes": 4534,
+      "target_bytes": 9331,
+      "aligned_blocks": 11,
+      "linguistic_blocks": 6,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0067",
+      "source_sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f",
+      "target_sha256": "90f2d849c025a41ac4dbc059ac423c60522c38990194c87bc9d1173df149219c",
+      "source_bytes": 3914,
+      "target_bytes": 8054,
+      "aligned_blocks": 11,
+      "linguistic_blocks": 6,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0068",
+      "source_sha256": "b9637a6a1cee29ebba2f8d2cdf238d4567d8ec4b7995607abcb0ee1aef0570b9",
+      "target_sha256": "83ee5b0f14053eaa0b81be7ff1c8d6a20f4993fb5a60f1c3c79db4114bae5937",
+      "source_bytes": 3937,
+      "target_bytes": 8001,
+      "aligned_blocks": 11,
+      "linguistic_blocks": 6,
+      "status": "translated_structural_semantic_html_pdf_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 32,
+  "source_math_spans": 137,
+  "source_corrections": [
+    {
+      "finding_id": "OLPRF-001",
+      "unit_id": "OLP-0065",
+      "handling": "Ended the right sequence at B_n and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLPRF-002",
+      "unit_id": "OLP-0067",
+      "handling": "Restored the false-conjunction rule name F∧ and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLPRF-003",
+      "unit_id": "OLP-0067",
+      "handling": "Required B_i to belong to Gamma for every i=1,...,n and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLPRF-004",
+      "unit_id": "OLP-0067",
+      "handling": "Changed both line-2 justification labels from T→ to T∧ and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_008.json",
+  "semantic_review": "Passed exact-block review for all 32 aligned linguistic blocks; see SEMANTIC_REVIEW_008.json.",
+  "reader_integration": "Passed exact cumulative HTML DOM, MathML, link and asset QA plus a reproducible guarded PDF build and all-page visual inspection; see HTML_QA_008.json, BUILD_RECEIPT_008.json, and PDF_QA_008.json. Direct local-file browser navigation was blocked by browser security policy and is explicitly recorded rather than claimed as passed.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. No live Top 10 ranking is asserted: census groups, PISA burden, catalogue presence and source-token size are not rank or effect evidence. Any diagnostic companion remains separately authored and manifested and cannot replace or delay source-faithful coverage."
+}

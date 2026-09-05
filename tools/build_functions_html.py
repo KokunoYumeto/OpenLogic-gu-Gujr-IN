@@ -4,15 +4,16 @@ import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size','arithmetization','infinite','propositional'}
-coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59}[edition]
-coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯'}[edition]
+assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems'}
+coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫'}[edition]
 title={
     'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
     'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
     'arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોનું કદ અને અંકગણિતીકરણ — ઓપન લોજિક ગુજરાતી',
     'infinite':'ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ અને અનંત ગણો — ઓપન લોજિક ગુજરાતી',
     'propositional':'ગણો અને વિધાનાત્મક તર્કશાસ્ત્ર — ઓપન લોજિક ગુજરાતી',
+    'proof-systems':'ગણો, વિધાનાત્મક તર્કશાસ્ત્ર અને નિષ્પત્તિ તંત્રો — ઓપન લોજિક ગુજરાતી',
 }[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
@@ -35,10 +36,14 @@ available=set(json.loads((B/f'{edition}-available-labels.json').read_text()))
 body=command(body,'oliflabeldef',3,lambda key,yes,no:yes if key in available else no)
 body=command(body,'sourcecorrection',2,lambda ident,note:'\n\n'+r'\begin{quote}\textbf{સ્રોત-સુધારો '+ident+'.} '+note+r'\end{quote}'+'\n\n')
 token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય',
-             'formula':'સૂત્ર','valuation':'સત્યમૂલ્ય-નિયુક્તિ'}
-body=command(body,'usetoken',2,lambda namespace,key:token_words[key])
-body=command(body,'printtoken',2,lambda namespace,key:token_words[key])
-if edition == 'propositional':
+             'formula':'સૂત્ર','valuation':'સત્યમૂલ્ય-નિયુક્તિ',
+             'derivation':'નિષ્પત્તિ','tableau':'ટેબ્લો'}
+def token_value(namespace,key):
+    if edition=='proof-systems' and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
+    return token_words[key]
+body=command(body,'usetoken',2,token_value)
+body=command(body,'printtoken',2,token_value)
+if edition in {'propositional','proof-systems'}:
     # Expand the two xparse-style constructs that Pandoc's LaTeX reader cannot
     # define through ordinary \newcommand declarations.  The prepared source
     # has already selected the frozen upstream default connective profile.
@@ -49,6 +54,68 @@ if edition == 'propositional':
                  r'\mathfrak{'+valuation+r'}\nvDash '+formula)
     body=command(body,'pSat',2,lambda valuation,formula:
                  r'\mathfrak{'+valuation+r'}\vDash '+formula)
+proof_render_receipts=[]
+if edition=='proof-systems':
+    proofs=re.findall(r'\\begin\{prooftree\}[\s\S]*?\\end\{prooftree\}',body)
+    tableaux=re.findall(r'\\begin\{oltableau\}[\s\S]*?\\end\{oltableau\}',body)
+    derivations=re.findall(r'\\begin\{derivation\}[\s\S]*?\\end\{derivation\}',body)
+    assert len(proofs)==2 and len(tableaux)==1 and len(derivations)==1
+    rendered_proofs=[
+        r'''\[
+\begin{array}{cl}
+\varphi \Sequent \varphi & \\
+\hline
+\varphi \land \psi \Sequent \varphi & \LeftR{\land}\\
+\hline
+\Sequent (\varphi \land \psi) \lif \varphi & \RightR{\lif}
+\end{array}
+\]''',
+        r'''\[
+\begin{array}{cl}
+[\varphi \land \psi]^1 & \\
+\hline
+\varphi & \Elim{\land}\\
+\hline
+(\varphi \land \psi) \lif \varphi & \Intro{\lif},1
+\end{array}
+\]''',
+    ]
+    for source,rendered in zip(proofs,rendered_proofs):
+        body=body.replace(source,rendered,1)
+        proof_render_receipts.append(dict(
+            kind='prooftree',
+            source_sha256=hashlib.sha256(source.encode('utf-8')).hexdigest(),
+            representation='MathML inference array preserving premises, conclusions and rule labels.',
+        ))
+    rendered_tableau=r'''\[
+\begin{array}{rcl}
+1.&\sFmla{\False}{(\varphi \land \psi) \lif \varphi}&\text{ધારણા}\\
+2.&\sFmla{\True}{\varphi \land \psi}&\TRule{\False}{\lif}[1]\\
+3.&\sFmla{\False}{\varphi}&\TRule{\False}{\lif}[1]\\
+4.&\sFmla{\True}{\varphi}&\TRule{\True}{\land}[2]\\
+5.&\sFmla{\True}{\psi}&\TRule{\True}{\land}[2]\quad\times
+\end{array}
+\]'''
+    body=body.replace(tableaux[0],rendered_tableau,1)
+    proof_render_receipts.append(dict(
+        kind='closed_tableau',
+        source_sha256=hashlib.sha256(tableaux[0].encode('utf-8')).hexdigest(),
+        representation='MathML one-branch closed tableau preserving all five signed formulas, rule references and closure mark.',
+    ))
+    rendered_derivation=r'''\[
+\begin{array}{rl}
+1.&\psi \lif (\psi \lor \varphi)\\
+2.&(\psi \lif (\psi \lor \varphi)) \lif (\varphi \lif (\psi \lif (\psi \lor \varphi)))\\
+3.&\varphi \lif (\psi \lif (\psi \lor \varphi))
+\end{array}
+\]'''
+    body=body.replace(derivations[0],rendered_derivation,1)
+    proof_render_receipts.append(dict(
+        kind='axiomatic_derivation',
+        source_sha256=hashlib.sha256(derivations[0].encode('utf-8')).hexdigest(),
+        representation='MathML numbered array preserving all three derivation lines.',
+    ))
+    assert not re.search(r'\\begin\{(?:prooftree|oltableau|derivation)\}',body)
 authors={'Cantor1892':'કૅન્ટૉર','Frege1884':'ફ્રેગે','Potter2004':'પૉટર',
          'Benacerraf1965':'બેનાસેરાફ','Conway2006':'કૉનવે',
          'KatzKatz2012':'કૅટ્ઝ અને કૅટ્ઝ',
@@ -298,6 +365,19 @@ macros=r"""
 \newcommand{\subst}[2]{#1/#2}
 \newcommand{\SSubst}[2]{#1[#2]}
 \newcommand{\Subst}[3]{#1[#2/#3]}
+\newcommand{\Proves}{\vdash}
+\newcommand{\Sequent}{\Rightarrow}
+\newcommand{\fCenter}{\Sequent}
+\newcommand{\LeftR}[1]{#1\mathrm{L}}
+\newcommand{\RightR}[1]{#1\mathrm{R}}
+\newcommand{\Weakening}{\mathrm{W}}
+\newcommand{\Intro}[1]{#1\mathrm{Intro}}
+\newcommand{\Elim}[1]{#1\mathrm{Elim}}
+\newcommand{\FalseInt}{\bot_I}
+\newcommand{\Discharge}[2]{[#1]^{#2}}
+\newcommand{\sFmla}[2]{#1\,#2}
+\newcommand{\TRule}[2]{#2#1}
+\newcommand{\formula}[1]{#1}
 """
 editorial=(R/f'gu-{edition}.tex').read_text(encoding='utf-8').split(r'\section*{સંપાદકીય નોંધો}',1)[1].split(r'\begin{thebibliography}',1)[0]
 editorial=re.sub(r'\\addcontentsline\{toc\}\{section\}\{[^}]+\}','',editorial)
@@ -306,14 +386,14 @@ if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
-if edition in {'arithmetization','infinite','propositional'}:
+if edition in {'arithmetization','infinite','propositional','proof-systems'}:
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
                      +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
                      +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
                      +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
-if edition in {'infinite','propositional'}:
+if edition in {'infinite','propositional','proof-systems'}:
     bibliography += (r'\label{bib:EwaldSieg2013}Hilbert, David. 2013. On the infinite. In \emph{David Hilbert’s Lectures on the Foundations of Arithmetic and Logic 1917–1933}.'+'\n'
                      +r'\label{bib:Dedekind1888}Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?}.'+'\n')
 src=B/f'{edition}-html.tex'
@@ -326,6 +406,8 @@ soup=BeautifulSoup((O/f'{edition}.html').read_text(encoding='utf-8'),'html.parse
 scope={'functions':'ગણો, સંબંધો અને વિધેયોનાં','size':'ગણો, સંબંધો, વિધેયો અને ગણોના કદનાં','arithmetization':'ગણો, સંબંધો, વિધેયો, ગણોના કદ અને અંકગણિતીકરણનાં','infinite':'ગણો, સંબંધો, વિધેયો, ગણોના કદ, અંકગણિતીકરણ અને અનંત ગણોનાં'}
 if edition == 'propositional':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં ગણો અને વિધેયોના અગાઉના સંપૂર્ણ પ્રકરણો તથા વિધાનાત્મક તર્કશાસ્ત્રના વાક્યરચના અને અર્થવિચારના છ ખંડ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
+elif edition == 'proof-systems':
+    notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા નિષ્પત્તિ તંત્રોના પરિચય અને ચાર પદ્ધતિઓના પાંચ સર્વેક્ષણ-ખંડ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 else:
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope[edition]} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>{notice_text} <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
@@ -346,7 +428,7 @@ for box in soup.select('div.center'):
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13}[edition]
+expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13}[edition]
 assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.
@@ -363,5 +445,5 @@ assert 'GU-PARTIAL-ARROW' not in str(soup)
 html = str(soup).replace('\r\n', '\n').replace('\r', '\n')
 html = re.sub(r'[ \t]+(?=\n|$)', '', html)
 (O/f'{edition}.html').write_text(html,encoding='utf-8',newline='\n')
-(B/f'{edition}-html-qa.json').write_text(json.dumps(dict(edition=edition,source_units_covered=coverage,mathml_nodes=len(soup.find_all('math')),images=expected_images,source_labels=len(labels),broken_anchors=broken,graph_incidence=graph_receipts,pandoc_stderr=result.stderr,semantic_review='pending actual browser inspection'),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(B/f'{edition}-html-qa.json').write_text(json.dumps(dict(edition=edition,source_units_covered=coverage,mathml_nodes=len(soup.find_all('math')),images=expected_images,source_labels=len(labels),broken_anchors=broken,graph_incidence=graph_receipts,proof_representations=proof_render_receipts,pandoc_stderr=result.stderr,semantic_review='exact DOM, MathML, link, asset, and character-sequence QA complete; direct local-file browser navigation is recorded separately'),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(dict(edition=edition,source_units_covered=coverage,bytes=(O/f'{edition}.html').stat().st_size,mathml=len(soup.find_all('math')),labels=len(labels),images=expected_images,warnings=result.stderr),ensure_ascii=False))

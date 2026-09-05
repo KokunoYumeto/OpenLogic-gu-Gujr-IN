@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-04T22:59:10.760866+00:00. This is a **complete decision log for the current 59/722-unit draft**, while the translation corpus itself remains partial. Public artifact verification currently covers 51/722 units. It contains all 101 terminology decisions from the durable ledger and all 25 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-05T03:26:53.661253+00:00. This is a **complete decision log for the current 65/722-unit draft**, while the translation corpus itself remains partial. Public artifact verification currently covers 59/722 units. It contains all 115 terminology decisions from the durable ledger and all 29 source corrections identified so far. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -12,7 +12,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:1`.
-- **English use:** `upstream/content/propositional-logic/propositional-logic.tex:15` (OLP-0055, “set”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:22` (OLP-0068, “set”)
 - **Gujarati use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
 - **Authorities actually checked:** `GU-P001` (GU-GSSTB-MATH11, {"pdf_page_one_based": 15, "printed_page": "3"}); `GU-P010` (GU-VK-MATH, {"line_one_based": 478, "utf8_start": 182255, "utf8_end": 182785, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P015` (GU-VK-GROUPS, {"line_one_based": 26, "utf8_start": 820, "utf8_end": 1060, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"})
 - **Chosen sense and rationale:** Actual usage distinguishes set from group સમૂહ.
@@ -23,8 +23,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:2`.
-- **English use:** `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:134` (OLP-0048, “element”)
-- **Gujarati use:** `gu/content/sets-functions-relations/arithmetization/cauchy.tex:87` (OLP-0048, “ઘટક”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:22` (OLP-0068, “element”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/natural-deduction.tex:19` (OLP-0066, “ઘટક”)
 - **Authorities actually checked:** `GU-P001` (GU-GSSTB-MATH11, {"pdf_page_one_based": 15, "printed_page": "3"}); `GU-P013` (GU-VK-SETS, {"line_one_based": 36, "utf8_start": 3637, "utf8_end": 4684, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"})
 - **Chosen sense and rationale:** સભ્ય is attested synonym; element text-token emits ઘટક/ઘટકો.
 - **Alternatives:** સભ્ય — retained as an attested synonym, while ઘટક is the edition-wide output token.
@@ -46,7 +46,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:4`.
 - **English use:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:52` (OLP-0062, “subset”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:52` (OLP-0062, “ઉપગણ”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/tableaux.tex:80` (OLP-0067, “ઉપગણ”)
 - **Authorities actually checked:** `GU-P003` (GU-GSSTB-MATH11, {"pdf_page_one_based": 22, "printed_page": "10"}); `GU-P013` (GU-VK-SETS, {"line_one_based": 36, "utf8_start": 3637, "utf8_end": 4684, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"})
 - **Chosen sense and rationale:** Subset includes equality; preserve upstream subseteq.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -166,8 +166,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:15`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:18` (OLP-0060, “sequence”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:69` (OLP-0060, “અનુક્રમ”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:17` (OLP-0068, “sequence”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:34` (OLP-0068, “અનુક્રમ”)
 - **Authorities actually checked:** `GU-P008` (GU-GSSTB-MATH11, {"pdf_page_one_based": 38, "printed_page": "26"})
 - **Chosen sense and rationale:** Ordered-object prose supports construction; advanced sequence terminology needs further canon.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -221,8 +221,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:20`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:59` (OLP-0057, “relation”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:56` (OLP-0057, “સંબંધ”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46` (OLP-0068, “relation”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:47` (OLP-0068, “સંબંધ”)
 - **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P018` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 7, "printed_page": "1"})
 - **Chosen sense and rationale:** Direct definition as subset; not a colloquial-only relation word.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -254,7 +254,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:23`.
-- **English use:** `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:106` (OLP-0047, “symmetric”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:59` (OLP-0065, “symmetric”)
 - **Gujarati use:** `gu/content/sets-functions-relations/arithmetization/checking-details.tex:107` (OLP-0047, “સંમિત”)
 - **Authorities actually checked:** `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"})
 - **Chosen sense and rationale:** Both directions; actual Gujarati textbook spelling.
@@ -331,8 +331,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:30`.
-- **English use:** `upstream/content/propositional-logic/propositional-logic.tex:14` (OLP-0055, “order”); `upstream/content/sets-functions-relations/relations/orders.tex:22` (OLP-0016, “preorder”); `upstream/content/sets-functions-relations/functions/functions.tex:22` (OLP-0020, “partial”); `upstream/content/sets-functions-relations/relations/orders.tex:32` (OLP-0016, “linear”); `upstream/content/sets-functions-relations/relations/orders.tex:82` (OLP-0016, “strict”)
-- **Gujarati use:** `gu/content/propositional-logic/propositional-logic.tex:13` (OLP-0055, “ક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:23` (OLP-0016, “પૂર્વક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:27` (OLP-0016, “આંશિક ક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:31` (OLP-0016, “રેખીય ક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:86` (OLP-0016, “કડક ક્રમ”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:1` (OLP-0068, “order”); `upstream/content/sets-functions-relations/relations/orders.tex:22` (OLP-0016, “preorder”); `upstream/content/sets-functions-relations/functions/functions.tex:22` (OLP-0020, “partial”); `upstream/content/sets-functions-relations/relations/orders.tex:32` (OLP-0016, “linear”); `upstream/content/sets-functions-relations/relations/orders.tex:82` (OLP-0016, “strict”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:27` (OLP-0068, “ક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:23` (OLP-0016, “પૂર્વક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:27` (OLP-0016, “આંશિક ક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:31` (OLP-0016, “રેખીય ક્રમ”); `gu/content/sets-functions-relations/relations/orders.tex:86` (OLP-0016, “કડક ક્રમ”)
 - **Authorities actually checked:** `GU-P021` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 10, "printed_page": "4"})
 - **Chosen sense and rationale:** Definitions govern. Gujarati relations source supplies prose pattern, not attestation for these specialized labels.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -398,7 +398,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:36`.
 - **English use:** `upstream/content/sets-functions-relations/functions/composition.tex:63` (OLP-0025, “graph”); `upstream/content/sets-functions-relations/relations/graphs.tex:13` (OLP-0017, “vertex”)
-- **Gujarati use:** `gu/content/sets-functions-relations/functions/composition.tex:72` (OLP-0025, “આલેખ”); `gu/content/sets-functions-relations/relations/graphs.tex:13` (OLP-0017, “શિરોબિંદુ”); `gu/content/propositional-logic/propositional-logic.tex:18` (OLP-0055, “ધાર”)
+- **Gujarati use:** `gu/content/sets-functions-relations/functions/composition.tex:72` (OLP-0025, “આલેખ”); `gu/content/sets-functions-relations/relations/graphs.tex:13` (OLP-0017, “શિરોબિંદુ”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:37` (OLP-0068, “ધાર”)
 - **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P017` (GU-GSSTB-MATH11, {"pdf_page_one_based": 42, "printed_page": "30"})
 - **Chosen sense and rationale:** Relation arrow diagrams inspected; these specific graph-theory names not directly attested by acquired passages.
 - **Alternatives:** ગ્રાફ / વર્ટેક્સ / એજ — avoided as English transliterations while the descriptive Gujarati terms remain under review.
@@ -408,8 +408,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:37`.
-- **English use:** `upstream/content/sets-functions-relations/relations/trees.tex:13` (OLP-0018, “tree”); `upstream/content/sets-functions-relations/arithmetization/reals.tex:24` (OLP-0044, “root”); `upstream/content/sets-functions-relations/relations/trees.tex:91` (OLP-0018, “branch”)
-- **Gujarati use:** `gu/content/sets-functions-relations/relations/trees.tex:10` (OLP-0018, “વૃક્ષ”); `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:145` (OLP-0060, “મૂળ”); `gu/content/sets-functions-relations/relations/trees.tex:98` (OLP-0018, “શાખા”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:35` (OLP-0066, “tree”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:36` (OLP-0066, “root”); `upstream/content/first-order-logic/proof-systems/tableaux.tex:27` (OLP-0067, “branch”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “વૃક્ષ”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:36` (OLP-0068, “મૂળ”); `gu/content/first-order-logic/proof-systems/tableaux.tex:22` (OLP-0067, “શાખા”)
 - **Authorities actually checked:** `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"}); `GU-P021` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 10, "printed_page": "4"})
 - **Chosen sense and rationale:** Relations and proof prose consulted; graph/set-theoretic tree terminology remains unverified.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -419,8 +419,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:38`.
-- **English use:** `upstream/content/sets-functions-relations/relations/trees.tex:46` (OLP-0018, “well-ordered”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:178` (OLP-0048, “least”); `upstream/content/sets-functions-relations/relations/trees.tex:92` (OLP-0018, “maximal chain”)
-- **Gujarati use:** `gu/content/sets-functions-relations/relations/trees.tex:50` (OLP-0018, “સુક્રમિત”); `gu/content/sets-functions-relations/relations/trees.tex:48` (OLP-0018, “લઘુતમ”); `gu/content/sets-functions-relations/relations/trees.tex:100` (OLP-0018, “સમાવેશની દૃષ્ટિએ મહત્તમ શૃંખલા”)
+- **English use:** `upstream/content/sets-functions-relations/relations/trees.tex:46` (OLP-0018, “well-ordered”); `upstream/content/first-order-logic/proof-systems/introduction.tex:89` (OLP-0064, “least”); `upstream/content/sets-functions-relations/relations/trees.tex:92` (OLP-0018, “maximal chain”)
+- **Gujarati use:** `gu/content/sets-functions-relations/relations/trees.tex:50` (OLP-0018, “સુક્રમિત”); `gu/content/first-order-logic/proof-systems/introduction.tex:86` (OLP-0064, “લઘુતમ”); `gu/content/sets-functions-relations/relations/trees.tex:100` (OLP-0018, “સમાવેશની દૃષ્ટિએ મહત્તમ શૃંખલા”)
 - **Authorities actually checked:** `GU-P021` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 10, "printed_page": "4"}); `GU-P023` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 12, "printed_page": "6"})
 - **Chosen sense and rationale:** Source formal definitions govern; maximal by inclusion distinguished from largest cardinality.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -452,8 +452,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:41`.
-- **English use:** `upstream/content/sets-functions-relations/relations/trees.tex:126` (OLP-0018, “computability”); `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:13` (OLP-0060, “formula”); `upstream/content/sets-functions-relations/relations/trees.tex:15` (OLP-0018, “derivation”); `upstream/content/propositional-logic/propositional-logic.tex:13` (OLP-0055, “completeness”)
-- **Gujarati use:** `gu/content/sets-functions-relations/relations/trees.tex:138` (OLP-0018, “સંગણનીયતા”); `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:19` (OLP-0060, “સૂત્ર”); `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:54` (OLP-0053, “નિષ્પત્તિ”); `gu/content/propositional-logic/propositional-logic.tex:13` (OLP-0055, “પૂર્ણતા”)
+- **English use:** `upstream/content/sets-functions-relations/relations/trees.tex:126` (OLP-0018, “computability”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:48` (OLP-0068, “formula”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13` (OLP-0068, “derivation”); `upstream/content/first-order-logic/proof-systems/introduction.tex:74` (OLP-0064, “completeness”)
+- **Gujarati use:** `gu/content/sets-functions-relations/relations/trees.tex:138` (OLP-0018, “સંગણનીયતા”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:49` (OLP-0068, “સૂત્ર”); `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:54` (OLP-0053, “નિષ્પત્તિ”); `gu/content/first-order-logic/proof-systems/introduction.tex:71` (OLP-0064, “પૂર્ણતા”)
 - **Authorities actually checked:** `GU-P024` (GU-VK-TRUTH, {"line_one_based": 126, "utf8_start": 43654, "utf8_end": 44439, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P026` (GU-VK-TRUTH, {"line_one_based": 152, "utf8_start": 54422, "utf8_end": 55596, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"})
 - **Chosen sense and rationale:** Introductory occurrence in Trees only; logic prose consulted, dedicated technical canon expansion still required.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -508,7 +508,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted_derivation`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:46`.
 - **English use:** `upstream/content/sets-functions-relations/functions/composition.tex:3` (OLP-0025, “composition”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:28` (OLP-0058, “સંયોજન”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/tableaux.tex:43` (OLP-0067, “સંયોજન”)
 - **Authorities actually checked:** `GU-P040` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 20, "printed_page": "14"}); `GU-P041` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 21, "printed_page": "15"})
 - **Chosen sense and rationale:** Noun derived from directly attested સંયોજિત વિધેય; order g after f retained.
 - **Alternatives:** સંઘટન — not adopted; સંયોજન is derived from the directly attested સંયોજિત વિધેય.
@@ -540,8 +540,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:49`.
-- **English use:** `upstream/content/sets-functions-relations/functions/partial-functions.tex:21` (OLP-0026, “partial function”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:39` (OLP-0058, “defined”); `upstream/content/sets-functions-relations/functions/partial-functions.tex:24` (OLP-0026, “undefined”)
-- **Gujarati use:** `gu/content/sets-functions-relations/functions/partial-functions.tex:11` (OLP-0026, “આંશિક વિધેય”); `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:13` (OLP-0060, “વ્યાખ્યાયિત”); `gu/content/sets-functions-relations/functions/partial-functions.tex:25` (OLP-0026, “અવ્યાખ્યાયિત”)
+- **English use:** `upstream/content/sets-functions-relations/functions/partial-functions.tex:21` (OLP-0026, “partial function”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:46` (OLP-0068, “defined”); `upstream/content/sets-functions-relations/functions/partial-functions.tex:24` (OLP-0026, “undefined”)
+- **Gujarati use:** `gu/content/sets-functions-relations/functions/partial-functions.tex:11` (OLP-0026, “આંશિક વિધેય”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:48` (OLP-0068, “વ્યાખ્યાયિત”); `gu/content/sets-functions-relations/functions/partial-functions.tex:25` (OLP-0026, “અવ્યાખ્યાયિત”)
 - **Authorities actually checked:** `GU-P032` (GU-GSSTB-MATH11, {"pdf_page_one_based": 43, "printed_page": "31"}); `GU-P033` (GU-GSSTB-MATH11, {"pdf_page_one_based": 44, "printed_page": "32"})
 - **Chosen sense and rationale:** Only ordinary function terminology directly attested; partial/total computability senses governed by OpenLogic definitions.
 - **Alternatives:** પૂર્ણ વિધેય — avoided because “total” here means defined on every ambient input, not completeness.
@@ -551,7 +551,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_contextual`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:50`.
-- **English use:** `upstream/content/sets-functions-relations/arithmetization/reflections.tex:78` (OLP-0046, “argument”); `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:17` (OLP-0057, “value”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:91` (OLP-0048, “input”); `upstream/content/sets-functions-relations/functions/composition.tex:29` (OLP-0025, “output”)
+- **English use:** `upstream/content/sets-functions-relations/arithmetization/reflections.tex:78` (OLP-0046, “argument”); `upstream/content/first-order-logic/proof-systems/tableaux.tex:17` (OLP-0067, “value”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:91` (OLP-0048, “input”); `upstream/content/sets-functions-relations/functions/composition.tex:29` (OLP-0025, “output”)
 - **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:143` (OLP-0060, “દલીલ”); `gu/content/sets-functions-relations/functions/function-basics.tex:36` (OLP-0021, “કિંમત”); `gu/content/sets-functions-relations/arithmetization/cauchy.tex:84` (OLP-0048, “આગત”); `gu/content/sets-functions-relations/functions/function-basics.tex:19` (OLP-0021, “નિર્ગત”)
 - **Authorities actually checked:** `GU-P032` (GU-GSSTB-MATH11, {"pdf_page_one_based": 43, "printed_page": "31"}); `GU-P033` (GU-GSSTB-MATH11, {"pdf_page_one_based": 44, "printed_page": "32"})
 - **Chosen sense and rationale:** કિંમત attested in function context; input/argument labels remain provisional.
@@ -617,8 +617,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:56`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:22` (OLP-0060, “finite”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:53` (OLP-0048, “infinite”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:21` (OLP-0060, “સાન્ત”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:110` (OLP-0058, “અનંત”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/introduction.tex:20` (OLP-0064, “finite”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:53` (OLP-0048, “infinite”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:20` (OLP-0064, “સાન્ત”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:110` (OLP-0058, “અનંત”)
 - **Authorities actually checked:** `GU-P049` (GU-VK-SETS, {"line_one_based": 46, "last_line_one_based": 46, "utf8_start": 6583, "utf8_end": 9817, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** Keep previously adopted spelling સાન્ત even when source writes સાંત.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -706,7 +706,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `provisional_contextual`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:64`.
 - **English use:** `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:66` (OLP-0012, “array”); `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:66` (OLP-0039, “row”); `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:66` (OLP-0039, “column”); `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:33` (OLP-0031, “triangular number”)
-- **Gujarati use:** `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:68` (OLP-0039, “સરણિ”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:127` (OLP-0058, “હાર”); `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:69` (OLP-0039, “સ્તંભ”); `gu/content/sets-functions-relations/size-of-sets/pairing.tex:34` (OLP-0031, “ત્રિકોણીય સંખ્યા”)
+- **Gujarati use:** `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:68` (OLP-0039, “સરણિ”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:83` (OLP-0068, “હાર”); `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:69` (OLP-0039, “સ્તંભ”); `gu/content/sets-functions-relations/size-of-sets/pairing.tex:34` (OLP-0031, “ત્રિકોણીય સંખ્યા”)
 - **Authorities actually checked:** `GU-P033` (GU-GSSTB-MATH11, {"pdf_page_one_based": 44, "printed_page": "32"}); `GU-P053` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 101, "printed_page": "91"})
 - **Chosen sense and rationale:** Textbook tabular and arithmetic proof register consulted; exact technical names not all directly attested.
 - **Alternatives:** Retrospective: the earlier durable notes preserved no rejected alternative; no exhaustive candidate search is claimed.
@@ -860,7 +860,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:78`.
 - **English use:** `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:15` (OLP-0048, “Cauchy sequence”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:73` (OLP-0048, “limit”)
-- **Gujarati use:** `gu/content/sets-functions-relations/arithmetization/cauchy.tex:11` (OLP-0048, “કોશી શ્રેણી”); `gu/content/propositional-logic/propositional-logic.tex:18` (OLP-0055, “લક્ષ”)
+- **Gujarati use:** `gu/content/sets-functions-relations/arithmetization/cauchy.tex:11` (OLP-0048, “કોશી શ્રેણી”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:36` (OLP-0068, “લક્ષ”)
 - **Authorities actually checked:** `GU-P060` (GU-VK-MATH, {"line_one_based": 375, "last_line_one_based": 375, "utf8_start": 122403, "utf8_end": 124473, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P062` (GU-VK-CAUCHY, {"line_one_based": 3, "last_line_one_based": 3, "utf8_start": 4658, "utf8_end": 6713, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The exact Cauchy-sequence name and the convergence and limit vocabulary occur directly in checked scholarly Gujarati prose.
 - **Alternatives:** કોશી અનુક્રમ / સીમા — possible alternatives; the checked scholarly Gujarati prose directly uses કોશી શ્રેણી, અભિસાર and લક્ષ.
@@ -870,7 +870,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted_contextual`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:79`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:43` (OLP-0057, “even”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:66` (OLP-0048, “odd”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:35` (OLP-0068, “even”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:66` (OLP-0048, “odd”)
 - **Gujarati use:** `gu/content/sets-functions-relations/arithmetization/cauchy.tex:60` (OLP-0048, “યુગ્મ”); `gu/content/sets-functions-relations/arithmetization/cauchy.tex:60` (OLP-0048, “અયુગ્મ”)
 - **Authorities actually checked:** `GU-P058` (GU-VK-MATH, {"line_one_based": 75, "last_line_one_based": 80, "utf8_start": 36000, "utf8_end": 40685, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** યુગ્મ is directly attested for even natural numbers; અયુગ્મ is the established paired opposite already used consistently in the edition.
@@ -1002,8 +1002,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_contextual`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:91`.
-- **English use:** `upstream/content/propositional-logic/propositional-logic.tex:25` (OLP-0055, “syntax”); `upstream/content/propositional-logic/propositional-logic.tex:25` (OLP-0055, “semantics”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:168` (OLP-0058, “વાક્યરચના”); `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:21` (OLP-0057, “અર્થવિચાર”)
+- **English use:** `upstream/content/propositional-logic/propositional-logic.tex:25` (OLP-0055, “syntax”); `upstream/content/first-order-logic/proof-systems/introduction.tex:15` (OLP-0064, “semantics”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:18` (OLP-0064, “વાક્યરચના”); `gu/content/first-order-logic/proof-systems/introduction.tex:15` (OLP-0064, “અર્થવિચાર”)
 - **Authorities actually checked:** `GU-P024` (GU-VK-TRUTH, {"line_one_based": 126, "utf8_start": 43654, "utf8_end": 44439, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P026` (GU-VK-TRUTH, {"line_one_based": 152, "utf8_start": 54422, "utf8_end": 55596, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The semantic side is supported by the Vishwakosh's વાક્યાર્થવિચાર and satisfaction discussion. The paired formal-language syntax label remains a transparent contextual choice.
 - **Alternatives:** પદાવલી / અર્થવિજ્ઞાન — possible broader alternatives; વાક્યરચના and અર્થવિચાર keep the formal-string and interpretation roles explicit.
@@ -1014,7 +1014,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:92`.
 - **English use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:17` (OLP-0058, “તાર્કિક સંયોજક”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/natural-deduction.tex:25` (OLP-0066, “તાર્કિક સંયોજક”)
 - **Authorities actually checked:** `GU-P054` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 319, "printed_page": "309"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P069` (GU-VK-TRUTH, {"line_one_based": 96, "last_line_one_based": 101, "utf8_start": 36552, "utf8_end": 38930, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The exact compound appears in the checked truth passage, with સંયોજક independently attested in the textbook.
 - **Alternatives:** તર્કીય જોડક — a possible descriptive alternative; the exact checked compound is તાર્કિક સંયોજક.
@@ -1024,8 +1024,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:93`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:27` (OLP-0058, “negation”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:28` (OLP-0058, “conjunction”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:29` (OLP-0058, “disjunction”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:30` (OLP-0058, “conditional”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:31` (OLP-0058, “biconditional”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:27` (OLP-0058, “નિષેધ”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:28` (OLP-0058, “સંયોજન”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:29` (OLP-0058, “વિયોજન”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:66` (OLP-0058, “પ્રેરણ”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:68` (OLP-0058, “દ્વિમુખી પ્રેરણ”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:21` (OLP-0066, “negation”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:28` (OLP-0058, “conjunction”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:29` (OLP-0058, “disjunction”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:38` (OLP-0068, “conditional”); `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:31` (OLP-0058, “biconditional”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/natural-deduction.tex:21` (OLP-0066, “નિષેધ”); `gu/content/first-order-logic/proof-systems/tableaux.tex:43` (OLP-0067, “સંયોજન”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:29` (OLP-0058, “વિયોજન”); `gu/content/first-order-logic/proof-systems/natural-deduction.tex:23` (OLP-0066, “પ્રેરણ”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:68` (OLP-0058, “દ્વિમુખી પ્રેરણ”)
 - **Authorities actually checked:** `GU-P054` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 319, "printed_page": "309"}); `GU-P055` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 320, "printed_page": "310"}); `GU-P056` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 321, "printed_page": "311"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The checked textbook and mathematical-logic article directly pair these names with the five displayed connectives.
 - **Alternatives:** નકાર / જોડાણ / વિકલ્પ / શરતી / દ્વિશરતી — possible classroom-register alternatives; the adopted five names are directly paired with the connectives in the checked source.
@@ -1079,8 +1079,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted_derivation`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:98`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:54` (OLP-0057, “satisfaction”); `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:71` (OLP-0057, “satisfiable”); `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:19` (OLP-0062, “unsatisfiable”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:50` (OLP-0057, “સંતોષ”); `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:62` (OLP-0057, “સંતોષ્ય”); `gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:19` (OLP-0062, “અસંતોષ્ય”)
+- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:54` (OLP-0057, “satisfaction”); `upstream/content/first-order-logic/proof-systems/introduction.tex:94` (OLP-0064, “satisfiable”); `upstream/content/first-order-logic/proof-systems/introduction.tex:86` (OLP-0064, “unsatisfiable”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:19` (OLP-0068, “સંતોષ”); `gu/content/first-order-logic/proof-systems/introduction.tex:16` (OLP-0064, “સંતોષ્ય”); `gu/content/first-order-logic/proof-systems/introduction.tex:82` (OLP-0064, “અસંતોષ્ય”)
 - **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** Formal Gujarati prose directly uses સંતોષે for satisfying axioms and વિધેય-સિદ્ધિ for semantic satisfaction; the adjective pair is a concise derivation kept open for native review.
 - **Alternatives:** સિદ્ધિ / સિદ્ધિયોગ્ય / અસિદ્ધિયોગ્ય — possible terminology suggested by related semantic prose; the adopted સંતોષ family is concise but remains open to native review.
@@ -1090,8 +1090,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:99`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:65` (OLP-0057, “tautology”); `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:22` (OLP-0062, “contingent”); `upstream/content/sets-functions-relations/arithmetization/reals.tex:69` (OLP-0044, “contradiction”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:61` (OLP-0057, “પુનરુક્તિ”); `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:23` (OLP-0057, “નિવાર્ય”)
+- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:65` (OLP-0057, “tautology”); `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:22` (OLP-0062, “contingent”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:22` (OLP-0066, “contradiction”)
+- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:61` (OLP-0057, “પુનરુક્તિ”); `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:23` (OLP-0057, “નિવાર્ય”); `gu/content/first-order-logic/proof-systems/natural-deduction.tex:21` (OLP-0066, “વ્યાઘાત”)
 - **Authorities actually checked:** `GU-P066` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 6, "last_line_one_based": 6, "utf8_start": 8867, "utf8_end": 10292, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P071` (GU-VK-WITTGENSTEIN, {"line_one_based": 20, "last_line_one_based": 20, "utf8_start": 24066, "utf8_end": 27691, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The mathematical-logic article explicitly defines પુનરુક્તિ as tautology, and the philosophy article directly distinguishes નિવાર્ય and વ્યાઘાતી propositions.
 - **Alternatives:** સર્વસત્ય / પ્રસંગાધીન / વિરોધાભાસ — possible descriptive alternatives; the checked sources directly support પુનરુક્તિ, નિવાર્ય and વ્યાઘાત in the relevant logical senses.
@@ -1101,7 +1101,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted_contextual`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:100`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66` (OLP-0057, “entailment”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/introduction.tex:17` (OLP-0064, “entailment”)
 - **Gujarati use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
 - **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The exact passage describes what follows તાર્કિક રીતે from given propositions; અર્થાનુસારી marks the semantic relation when contrast is required.
@@ -1118,6 +1118,160 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Chosen sense and rationale:** Each component is supported by the truth-value and consequence discussion, while these exact theorem names are not directly attested.
 - **Alternatives:** સ્થાનીય નિશ્ચય / અર્થવિચારી નિગમન પ્રમેય — possible variants; the exact theorem compounds remain provisional pending specialist attestation.
 - **Review question:** In Gujarati mathematical-logic prose, does “સ્થાનિક નિર્ધારણ / અર્થાનુસારી નિગમન પ્રમેય” express “local determination / semantic deduction theorem” with the scope stated in this rationale: Each component is supported by the truth-value and consequence discussion, while these exact theorem names are not directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T102: proof / derivation / derivation system / derivable → સાબિતી / નિષ્પત્તિ / નિષ્પત્તિ-તંત્ર / નિષ્પન્ન કરી શકાય એવું
+
+- **Status and uncertainty:** `adopted_derivation`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:2` (OLP-0068, “proof”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13` (OLP-0068, “derivation”); `upstream/content/first-order-logic/proof-systems/introduction.tex:53` (OLP-0064, “derivable”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:84` (OLP-0068, “સાબિતી”); `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:54` (OLP-0053, “નિષ્પત્તિ”)
+- **Authorities actually checked:** `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The canon directly uses સાબિતી for finite proof and નિષ્પન્ન for derivation from primitive propositions. The noun નિષ્પત્તિ is already established in this edition; the system compound and modal phrase make the syntactic role explicit.
+- **Alternatives:** ઉપપત્તિ / વ્યુત્પત્તિ — possible learned-register alternatives, but neither was found in the checked Gujarati mathematical-logic passages.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સાબિતી / નિષ્પત્તિ / નિષ્પત્તિ-તંત્ર / નિષ્પન્ન કરી શકાય એવું’ accurately express ‘proof / derivation / derivation system / derivable’ with the scope stated here: The canon directly uses સાબિતી for finite proof and નિષ્પન્ન for derivation from primitive propositions. The noun નિષ્પત્તિ is already established in this edition; the system compound and modal phrase make the syntactic role explicit. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T103: axiom / axiomatic derivation / axiom schema / axiom system → સ્વયંસિદ્ધિ / સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ / સ્વયંસિદ્ધિ-પ્રરૂપ / સ્વયંસિદ્ધિ-તંત્ર
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:21` (OLP-0068, “axiom”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67` (OLP-0068, “axiom system”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:13` (OLP-0068, “સ્વયંસિદ્ધિ”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:35` (OLP-0068, “સ્વયંસિદ્ધિ-તંત્ર”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The canon discusses propositions satisfying axioms and a symbolic axiomatic approach; સ્વયંસિદ્ધિ is also already used for the axiom of choice in the edition. The schema compound is a transparent contextual extension.
+- **Alternatives:** પૂર્વધારણા / પૂર્વધારણાયુક્ત તંત્ર — directly attested as broader explanatory wording and retained in the rationale, while સ્વયંસિદ્ધિ distinguishes a formal axiom line in these sections.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સ્વયંસિદ્ધિ / સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ / સ્વયંસિદ્ધિ-પ્રરૂપ / સ્વયંસિદ્ધિ-તંત્ર’ accurately express ‘axiom / axiomatic derivation / axiom schema / axiom system’ with the scope stated here: The canon discusses propositions satisfying axioms and a symbolic axiomatic approach; સ્વયંસિદ્ધિ is also already used for the axiom of choice in the edition. The schema compound is a transparent contextual extension. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T104: inference rule / modus ponens → અનુમાન-નિયમ / મોડસ પોનેન્સ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:62` (OLP-0068, “modus ponens”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:82` (OLP-0068, “અનુમાન-નિયમ”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:40` (OLP-0068, “મોડસ પોનેન્સ”)
+- **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** અનુમાન and its formal validity are directly attested. The international rule name is transliterated and its exact conditional operation is stated in the body.
+- **Alternatives:** ફલનિયમ / પૂર્વપક્ષ-સ્થાપન — unattested constructions that would obscure the familiar rule name.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અનુમાન-નિયમ / મોડસ પોનેન્સ’ accurately express ‘inference rule / modus ponens’ with the scope stated here: અનુમાન and its formal validity are directly attested. The international rule name is transliterated and its exact conditional operation is stated in the body. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T105: soundness / sound / unsound → યથાર્થતા / યથાર્થ / અયથાર્થ
+
+- **Status and uncertainty:** `provisional_contextual`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/introduction.tex:66` (OLP-0064, “soundness”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:27` (OLP-0068, “sound”); `upstream/content/first-order-logic/proof-systems/introduction.tex:68` (OLP-0064, “unsound”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:63` (OLP-0064, “યથાર્થતા”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:28` (OLP-0068, “યથાર્થ”); `gu/content/first-order-logic/proof-systems/introduction.tex:66` (OLP-0064, “અયથાર્થ”)
+- **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked canon attests logical consequence and formal validity but not a dedicated Gujarati label for the metatheoretic property. યથાર્થતા is defined in place by the exact direction from derivability to entailment.
+- **Alternatives:** સાધુતા / ધ્વન્યતા / પ્રમાણભૂતતા — possible specialist calques, none attested in the Gujarati authorities actually checked.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘યથાર્થતા / યથાર્થ / અયથાર્થ’ accurately express ‘soundness / sound / unsound’ with the scope stated here: The checked canon attests logical consequence and formal validity but not a dedicated Gujarati label for the metatheoretic property. યથાર્થતા is defined in place by the exact direction from derivability to entailment. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T106: completeness / complete derivation system → પૂર્ણતા / પૂર્ણ નિષ્પત્તિ-તંત્ર
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/introduction.tex:74` (OLP-0064, “completeness”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:71` (OLP-0064, “પૂર્ણતા”)
+- **Authorities actually checked:** `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The canon directly describes a consistent system that is not પૂર્ણ and identifies sentences unprovable either way. The abstract noun and derivation-system compound preserve that exact system-level sense.
+- **Alternatives:** સંપૂર્ણતા — a possible fuller noun; the edition already consistently uses the concise પૂર્ણતા.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પૂર્ણતા / પૂર્ણ નિષ્પત્તિ-તંત્ર’ accurately express ‘completeness / complete derivation system’ with the scope stated here: The canon directly describes a consistent system that is not પૂર્ણ and identifies sentences unprovable either way. The abstract noun and derivation-system compound preserve that exact system-level sense. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T107: consistency / inconsistent / contradiction → સુસંગતતા / અસુસંગત / વ્યાઘાત
+
+- **Status and uncertainty:** `adopted`; low. Direct authority supports the choice; regional and specialist usage may still be reported.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/introduction.tex:83` (OLP-0064, “consistency”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:66` (OLP-0068, “inconsistent”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:22` (OLP-0066, “contradiction”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:80` (OLP-0064, “સુસંગતતા”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:68` (OLP-0068, “અસુસંગત”); `gu/content/first-order-logic/proof-systems/natural-deduction.tex:21` (OLP-0066, “વ્યાઘાત”)
+- **Authorities actually checked:** `GU-P071` (GU-VK-WITTGENSTEIN, {"line_one_based": 20, "last_line_one_based": 20, "utf8_start": 24066, "utf8_end": 27691, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The formal-system canon directly pairs consistency with સુસંગતતા and describes contradictory results; the edition's checked logic canon already supports વ્યાઘાત for contradiction.
+- **Alternatives:** સંગતિ / વિસંગતિ — familiar variants, while the exact formal-system passage uses સુસંગતતા.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સુસંગતતા / અસુસંગત / વ્યાઘાત’ accurately express ‘consistency / inconsistent / contradiction’ with the scope stated here: The formal-system canon directly pairs consistency with સુસંગતતા and describes contradictory results; the edition's checked logic canon already supports વ્યાઘાત for contradiction. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T108: sequent / sequent calculus / initial sequent → સિક્વન્ટ / સિક્વન્ટ કલન / આરંભિક સિક્વન્ટ
+
+- **Status and uncertainty:** `provisional_transliteration`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/introduction.tex:41` (OLP-0064, “sequent”); `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:13` (OLP-0065, “sequent calculus”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:40` (OLP-0064, “સિક્વન્ટ”); `gu/content/first-order-logic/proof-systems/introduction.tex:40` (OLP-0064, “સિક્વન્ટ કલન”); `gu/content/first-order-logic/proof-systems/sequent-calculus.tex:24` (OLP-0065, “આરંભિક સિક્વન્ટ”)
+- **Authorities actually checked:** `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** No checked Gujarati authority names this specialized calculus. The internationally recognizable name is transliterated, while the body immediately defines its two sequence components, separator and initial form.
+- **Alternatives:** અનુક્રમ કલન / અનુસરણ-કલન — unattested native constructions that risk confusing a sequent with an ordinary sequence or semantic consequence.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સિક્વન્ટ / સિક્વન્ટ કલન / આરંભિક સિક્વન્ટ’ accurately express ‘sequent / sequent calculus / initial sequent’ with the scope stated here: No checked Gujarati authority names this specialized calculus. The internationally recognizable name is transliterated, while the body immediately defines its two sequence components, separator and initial form. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T109: natural deduction / introduction rule / elimination rule → સ્વાભાવિક નિગમન / પરિચય-નિયમ / નિવારણ-નિયમ
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:13` (OLP-0066, “natural deduction”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:26` (OLP-0066, “elimination rule”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “સ્વાભાવિક નિગમન”); `gu/content/first-order-logic/proof-systems/natural-deduction.tex:25` (OLP-0066, “પરિચય-નિયમ”); `gu/content/first-order-logic/proof-systems/natural-deduction.tex:26` (OLP-0066, “નિવારણ-નિયમ”)
+- **Authorities actually checked:** `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** નિગમન and inference are supported in the checked canon. The exact system name and paired rule labels are transparent descriptions whose behavior is defined by the examples.
+- **Alternatives:** પ્રાકૃતિક નિગમન / પ્રવેશ-નિયમ / નિષ્કાસન-નિયમ — plausible literal variants without direct Gujarati specialist attestation.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સ્વાભાવિક નિગમન / પરિચય-નિયમ / નિવારણ-નિયમ’ accurately express ‘natural deduction / introduction rule / elimination rule’ with the scope stated here: નિગમન and inference are supported in the checked canon. The exact system name and paired rule labels are transparent descriptions whose behavior is defined by the examples. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T110: assumption / discharge / undischarged assumption → ધારણા / નિવૃત્ત કરવું / અનિવૃત્ત ધારણા
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:52` (OLP-0066, “assumption”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:49` (OLP-0066, “discharge”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/natural-deduction.tex:33` (OLP-0066, “ધારણા”)
+- **Authorities actually checked:** `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The temporary proof role is explained in full before the technical verb is used. નિવૃત્ત marks that the assumption's scope ends without suggesting that the formula is false.
+- **Alternatives:** ધારણા રદ કરવી / ધારણા છોડી દેવી — more conversational variants that can wrongly suggest rejection rather than scope closure.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ધારણા / નિવૃત્ત કરવું / અનિવૃત્ત ધારણા’ accurately express ‘assumption / discharge / undischarged assumption’ with the scope stated here: The temporary proof role is explained in full before the technical verb is used. નિવૃત્ત marks that the assumption's scope ends without suggesting that the formula is false. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T111: proof by cases / indirect proof / conditional proof → કિસ્સાવાર સાબિતી / પરોક્ષ સાબિતી / શરતી સાબિતી
+
+- **Status and uncertainty:** `adopted_derivation`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:18` (OLP-0066, “proof by cases”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:20` (OLP-0066, “indirect proof”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:22` (OLP-0066, “conditional proof”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/natural-deduction.tex:18` (OLP-0066, “કિસ્સાવાર સાબિતી”); `gu/content/first-order-logic/proof-systems/natural-deduction.tex:20` (OLP-0066, “પરોક્ષ સાબિતી”); `gu/content/first-order-logic/proof-systems/natural-deduction.tex:22` (OLP-0066, “શરતી સાબિતી”)
+- **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સાબિતી is directly attested and the three modifiers transparently preserve the source's proof patterns, each of which is explicitly explained in the target paragraph.
+- **Alternatives:** કિસ્સાઓ દ્વારા સાબિતી — a longer equivalent retained in explanatory prose where needed.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘કિસ્સાવાર સાબિતી / પરોક્ષ સાબિતી / શરતી સાબિતી’ accurately express ‘proof by cases / indirect proof / conditional proof’ with the scope stated here: સાબિતી is directly attested and the three modifiers transparently preserve the source's proof patterns, each of which is explicitly explained in the target paragraph. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T112: tableau / truth tree / signed formula / closed tableau → ટેબ્લો / સત્ય-વૃક્ષ / ચિહ્નિત સૂત્ર / બંધ ટેબ્લો
+
+- **Status and uncertainty:** `provisional_transliteration`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/tableaux.tex:13` (OLP-0067, “tableau”); `upstream/content/first-order-logic/proof-systems/tableaux.tex:16` (OLP-0067, “signed formula”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “ટેબ્લો”); `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “સત્ય-વૃક્ષ”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked Gujarati sources support truth, formula and finite proof but do not name this proof system. The technical name is transliterated and every structural term is defined in place.
+- **Alternatives:** સારણી / અર્થવૃક્ષ — rejected because સારણી is already used for truth table and the source system is conventionally called tableau.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ટેબ્લો / સત્ય-વૃક્ષ / ચિહ્નિત સૂત્ર / બંધ ટેબ્લો’ accurately express ‘tableau / truth tree / signed formula / closed tableau’ with the scope stated here: The checked Gujarati sources support truth, formula and finite proof but do not name this proof system. The technical name is transliterated and every structural term is defined in place. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T113: theorem / provability → પ્રમેય / સાબિત કરી શકાય તેવું
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:50` (OLP-0068, “theorem”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:53` (OLP-0068, “પ્રમેય”)
+- **Authorities actually checked:** `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The canon directly uses સાબિત for what can be proved within a system; પ્રમેય is the edition's established mathematical noun. The displayed Proves relation fixes the formal scope.
+- **Alternatives:** સિદ્ધેયતા — a concise learned formation without direct attestation in the checked passages.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રમેય / સાબિત કરી શકાય તેવું’ accurately express ‘theorem / provability’ with the scope stated here: The canon directly uses સાબિત for what can be proved within a system; પ્રમેય is the edition's established mathematical noun. The displayed Proves relation fixes the formal scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T114: proof-theoretic semantics → સાબિતી-સૈદ્ધાંતિક અર્થવિચાર
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:88` (OLP-0066, “proof-theoretic semantics”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/natural-deduction.tex:85` (OLP-0066, “સાબિતી-સૈદ્ધાંતિક અર્થવિચાર”)
+- **Authorities actually checked:** `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The compound joins the directly attested proof vocabulary to the edition's established term for semantics; the source's parenthetical context controls the philosophical sense.
+- **Alternatives:** ઉપપત્તિશાસ્ત્રીય અર્થવિજ્ઞાન — a possible specialist formation not found in the Gujarati canon checked for this batch.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સાબિતી-સૈદ્ધાંતિક અર્થવિચાર’ accurately express ‘proof-theoretic semantics’ with the scope stated here: The compound joins the directly attested proof vocabulary to the edition's established term for semantics; the source's parenthetical context controls the philosophical sense. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T115: resolution method / resolution refutation → રિઝોલ્યૂશન પદ્ધતિ / રિઝોલ્યૂશન વડે ખંડન
+
+- **Status and uncertainty:** `provisional_transliteration`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
+- **English use:** `upstream/content/first-order-logic/proof-systems/introduction.tex:43` (OLP-0064, “resolution method”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:53` (OLP-0064, “રિઝોલ્યૂશન વડે ખંડન”)
+- **Authorities actually checked:** `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** No checked Gujarati authority names the automated proof method. The conventional technical name is transliterated and the operation is identified as a method or refutation in context.
+- **Alternatives:** નિરાકરણ પદ્ધતિ — potentially confused with elimination rules and not attested for resolution in the checked sources.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘રિઝોલ્યૂશન પદ્ધતિ / રિઝોલ્યૂશન વડે ખંડન’ accurately express ‘resolution method / resolution refutation’ with the scope stated here: No checked Gujarati authority names the automated proof method. The conventional technical name is transliterated and the operation is identified as a method or refutation in context. If not, which attested form and inflection should replace it, and at which listed target locations?
 
 ## Difficult source-correction decisions
 
@@ -1370,3 +1524,43 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLPL-002 without changing any unaffected claim or formula?
+
+### OLPRF-001: confirmed_mismatched_right_sequence_index
+
+- **Frozen source:** `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex` at `sequent-calculus.tex:19`; SHA-256 `5448a91da184ef1d41e40ec2d56b74db63d49412d8b96b3f2a39a101b0191bad`.
+- **Gujarati target:** `gu/content/first-order-logic/proof-systems/sequent-calculus.tex` body line(s) 19; adjacent note line 35; SHA-256 `91f89402c36aacf95aac325abee69ee78c588149b34c164023d9ceff86cb1581`.
+- **Chosen handling:** Ended the right sequence at B_n and added an adjacent keyed note.
+- **Rationale:** The generic sequent uses independently sized left and right sequences but ends both at index m, contradicting the controlling sequent definition's A_1,...,A_m and B_1,...,B_n notation.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLPRF-001 without changing any unaffected claim or formula?
+
+### OLPRF-002: confirmed_wrong_tableau_rule_name
+
+- **Frozen source:** `upstream/content/first-order-logic/proof-systems/tableaux.tex` at `tableaux.tex:38`; SHA-256 `8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f`.
+- **Gujarati target:** `gu/content/first-order-logic/proof-systems/tableaux.tex` body line(s) 37; adjacent note line 42; SHA-256 `90f2d849c025a41ac4dbc059ac423c60522c38990194c87bc9d1173df149219c`.
+- **Chosen handling:** Restored the false-conjunction rule name F∧ and added an adjacent keyed note.
+- **Rationale:** The false-conjunction tableau rule is named with the entire operand formula A∧B in the rule-name slot, whereas the controlling rule table and every ordinary use name the connective ∧ only.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLPRF-002 without changing any unaffected claim or formula?
+
+### OLPRF-003: confirmed_reversed_finite_subset_scope
+
+- **Frozen source:** `upstream/content/first-order-logic/proof-systems/tableaux.tex` at `tableaux.tex:70`; SHA-256 `8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f`.
+- **Gujarati target:** `gu/content/first-order-logic/proof-systems/tableaux.tex` body line(s) 76; adjacent note line 77; SHA-256 `90f2d849c025a41ac4dbc059ac423c60522c38990194c87bc9d1173df149219c`.
+- **Chosen handling:** Required B_i to belong to Gamma for every i=1,...,n and added an adjacent keyed note.
+- **Rationale:** The consistency paragraph requires only some B_i to belong to Gamma although the displayed tableau contains all B_1,...,B_n; that condition would not make the tableau an inconsistency witness for Gamma.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLPRF-003 without changing any unaffected claim or formula?
+
+### OLPRF-004: confirmed_wrong_rule_names_in_tableau_example
+
+- **Frozen source:** `upstream/content/first-order-logic/proof-systems/tableaux.tex` at `tableaux.tex:59-60`; SHA-256 `8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f`.
+- **Gujarati target:** `gu/content/first-order-logic/proof-systems/tableaux.tex` body line(s) 59; adjacent note line 66; SHA-256 `90f2d849c025a41ac4dbc059ac423c60522c38990194c87bc9d1173df149219c`.
+- **Chosen handling:** Changed both line-2 justification labels from T→ to T∧ and added an adjacent keyed note.
+- **Rationale:** Both formulas obtained by decomposing the true conjunction on tableau line 2 are labelled with the true-conditional rule, although they are applications of the true-conjunction rule.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLPRF-004 without changing any unaffected claim or formula?

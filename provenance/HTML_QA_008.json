@@ -1,0 +1,106 @@
+{
+  "schema": "openlogic-gu-html-qa/8",
+  "html": {
+    "path": "reader/proof-systems.html",
+    "bytes": 1499731,
+    "sha256": "0faf4ffb805478f6d9f38ea745f3fe7e1d20126bd5ec3297e7eb5783ae6328cf",
+    "source_units_covered": 65,
+    "proof_system_units_complete": 6,
+    "rendered_proof_system_sections": 5,
+    "logic_profile": "frozen shared overview rendered with the propositional profile",
+    "mathml_nodes": 3593,
+    "mathml_tables": 70,
+    "proof_representations": [
+      {
+        "kind": "prooftree",
+        "source_sha256": "fc7a0f7ce7abf78f1a348bab2f1e5829c9b8af9c9a0ce3bcc15ca616fb1101e5",
+        "representation": "MathML inference array preserving premises, conclusions and rule labels."
+      },
+      {
+        "kind": "prooftree",
+        "source_sha256": "114088ab7308dd3e478b557d6817d68fab9415b4072d0328edc371ae1dcdf55d",
+        "representation": "MathML inference array preserving premises, conclusions and rule labels."
+      },
+      {
+        "kind": "closed_tableau",
+        "source_sha256": "b172deacb9f70de486d779592e920be9a97281c54b99ea5121f86aa316389f6c",
+        "representation": "MathML one-branch closed tableau preserving all five signed formulas, rule references and closure mark."
+      },
+      {
+        "kind": "axiomatic_derivation",
+        "source_sha256": "929cbc0bc646f1f20d60d0a8cf1008c4893a1e553bcaf72ae686fe50a9511ada",
+        "representation": "MathML numbered array preserving all three derivation lines."
+      }
+    ],
+    "truth_tables": 5,
+    "images": 13,
+    "unique_ids": 230,
+    "broken_internal_links": 0,
+    "proof_system_section_ids": [
+      "pl:prf:int:sec",
+      "pl:prf:seq:sec",
+      "pl:prf:ntd:sec",
+      "pl:prf:tab:sec",
+      "pl:prf:axd:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002",
+      "OLPL-001",
+      "OLPL-002",
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-004",
+      "OLPRF-003"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 9,
+    "partial_arrows": 6,
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ],
+    "status": "passed_exact_dom_mathml_and_asset_qa"
+  },
+  "browser_inspection": {
+    "status": "not_performed_local_file_url_blocked_by_browser_security_policy",
+    "attempted_at_utc": "2026-09-05T03:26:22.441080+00:00",
+    "attempt": "Direct read-only navigation to the exact local HTML artifact in the Codex in-app browser.",
+    "handling": "No workaround or alternate browser surface was used. Exact DOM, MathML, link, asset and character-sequence checks bind to the final HTML hash; the equivalent cumulative PDF was visually inspected on all pages.",
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_008.json",
+    "samples": 32,
+    "status": "passed_same_agent_not_independent_native_certification"
+  },
+  "pdf": {
+    "receipt": "PDF_QA_008.json",
+    "sha256": "dc9dac4d37335cba20eda1411383059ad9822dcf8fbcbb84e2ba75fd590d12c5",
+    "pages": 79,
+    "status": "passed_reproducible_build_and_all_page_visual_qa"
+  },
+  "full_corpus_complete": false
+}
