@@ -5,15 +5,15 @@
   "working_scope": "Complete cumulative translation through the First-order Logic Natural Deduction chapter, OLP-0004–0097",
   "working_status": "structural, semantic, exact HTML DOM/MathML/proof/link/asset, live-browser, reproducible guarded PDF, all-page visual, and reviewer-decision-package QA passed",
   "public_release": {
-    "tag": "propositional-syntax-semantics-v0.3.0",
-    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/propositional-syntax-semantics-v0.3.0",
-    "translated": 59,
-    "scope": "Complete cumulative artifact release through Propositional Logic syntax and semantics, OLP-0004–0062"
+    "tag": "natural-deduction-v0.4.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/natural-deduction-v0.4.0",
+    "translated": 94,
+    "scope": "Complete cumulative artifact release through First-order Natural Deduction, OLP-0004–0097"
   },
   "public_source_checkpoint": {
-    "commit": "bf6f3b718d672b209e58920b5801297ce352513f",
-    "translated": 80,
-    "scope": "Previous anonymously verified source checkpoint through the First-order Logic Sequent Calculus chapter, OLP-0004–0083; checkpoint 010 is represented by the commit containing this file"
+    "commit": "cab5caa50a1b740006b858f3bf1917e9757e4475",
+    "translated": 94,
+    "scope": "Anonymously verified source checkpoint through First-order Natural Deduction, OLP-0004–0097"
   },
   "complete_edition": false,
   "units": [
@@ -452,245 +452,245 @@
       "unit_id": "OLP-0063",
       "source_path": "content/first-order-logic/proof-systems/proof-systems.tex",
       "source_sha256": "09977f6410bc57fcedf4428c2212ccf67b2bf0bf574413c4e2fdcf4de6cccab7",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "9bedb80b99a48fe0030d908ede634330cb59c94d41c8fb1cdc9997505f7513f0"
     },
     {
       "unit_id": "OLP-0064",
       "source_path": "content/first-order-logic/proof-systems/introduction.tex",
       "source_sha256": "148266281cc87fcd3e454249b9f6c42a117a9aed0733cc5a5f2e954ffd60bb58",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "1b84a55e723ee46dbbc3703c635e010a63a12f7e1015b956874cab45e9385ad8"
     },
     {
       "unit_id": "OLP-0065",
       "source_path": "content/first-order-logic/proof-systems/sequent-calculus.tex",
       "source_sha256": "5448a91da184ef1d41e40ec2d56b74db63d49412d8b96b3f2a39a101b0191bad",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "91f89402c36aacf95aac325abee69ee78c588149b34c164023d9ceff86cb1581"
     },
     {
       "unit_id": "OLP-0066",
       "source_path": "content/first-order-logic/proof-systems/natural-deduction.tex",
       "source_sha256": "77b5d31c7b63f657e0d5492d83810bfdc21af0169a9b38ccd5302e0e4cdefdfe",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "ef088e5f8594092cf8410502829ab7686231f9f7d7e44d7f42b5b124720ff356"
     },
     {
       "unit_id": "OLP-0067",
       "source_path": "content/first-order-logic/proof-systems/tableaux.tex",
       "source_sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "90f2d849c025a41ac4dbc059ac423c60522c38990194c87bc9d1173df149219c"
     },
     {
       "unit_id": "OLP-0068",
       "source_path": "content/first-order-logic/proof-systems/axiomatic-deduction.tex",
       "source_sha256": "b9637a6a1cee29ebba2f8d2cdf238d4567d8ec4b7995607abcb0ee1aef0570b9",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "83ee5b0f14053eaa0b81be7ff1c8d6a20f4993fb5a60f1c3c79db4114bae5937"
     },
     {
       "unit_id": "OLP-0069",
       "source_path": "content/first-order-logic/sequent-calculus/sequent-calculus.tex",
       "source_sha256": "f7e79d7b3f181c61d3defb24c630db20ceaf12a3ec237c9b0a2ab1f7855494fb",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "7d8589a109c7ad7a40c19893b4a81dcc50bf3476b0ff13c515b8f9ac69ae9cb1"
     },
     {
       "unit_id": "OLP-0070",
       "source_path": "content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
       "source_sha256": "73a554964d7a3fc35a116f63e658340a8c89f9915c3f27e23f7ebd762df35859",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "e6005222aecfa0b29d7fd24bf05840a32be40ca629df36dc714e8f709172fb56"
     },
     {
       "unit_id": "OLP-0071",
       "source_path": "content/first-order-logic/sequent-calculus/propositional-rules.tex",
       "source_sha256": "0bf253cf8afedca1478fb820770b04ab708dbe8cfd3344377a0d14ae91889276",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "5f59cd63806abff56da31387a7d0a60cd3fe8d9b886b2533b99f6dfb9e98e468"
     },
     {
       "unit_id": "OLP-0072",
       "source_path": "content/first-order-logic/sequent-calculus/quantifier-rules.tex",
       "source_sha256": "e0047087b88b91ba65c23a76f7c8f230c4161785f4d83f07d14461341b66d90e",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "cf8a8004fb325e0683c5a988102e4c65286de06abee4bea50daba8780cb8f6da"
     },
     {
       "unit_id": "OLP-0073",
       "source_path": "content/first-order-logic/sequent-calculus/structural-rules.tex",
       "source_sha256": "5c13d5312a8b2287b54d67d2fadc6247ba499bd9b6a71255ea04891307689b06",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100"
     },
     {
       "unit_id": "OLP-0074",
       "source_path": "content/first-order-logic/sequent-calculus/derivations.tex",
       "source_sha256": "25897d850b211443621f31a1166f443c1e00c6bcbf13002bc1b9281ca4300371",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "066aa7a3c19e60fe27b845d75b61470094d45476c33f5e98a536c15894802c9b"
     },
     {
       "unit_id": "OLP-0075",
       "source_path": "content/first-order-logic/sequent-calculus/proving-things.tex",
       "source_sha256": "8c94fddc6d2f4c5faee64e84c1216e1c1ca096719b5528ea4faff753b906d303",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "547fbb9dc4bae7a4f347834882cefe4e784f17580d2213214ddb79a8d0d8102f"
     },
     {
       "unit_id": "OLP-0076",
       "source_path": "content/first-order-logic/sequent-calculus/proving-things-quant.tex",
       "source_sha256": "d2e7eba11801753dfd9c57c6be6d45df5c11de57843c3f689dbee7636419aa99",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "1b77230ef3f2f7530a831e883c765297673526b7e25634fba67444d0b1c05ddd"
     },
     {
       "unit_id": "OLP-0077",
       "source_path": "content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
       "source_sha256": "91c07ed071c2f9c18d3f10665b163b35dcc8636e7e0f27b4586aa9df63177a53",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "4198b3cbe7c82641e4b723e334b3ec2c81ddc6d29242fd8638a2d0ec9ee81ec3"
     },
     {
       "unit_id": "OLP-0078",
       "source_path": "content/first-order-logic/sequent-calculus/provability-consistency.tex",
       "source_sha256": "a44d3cb4dadd224e943e0ea4d3d81529c6e108e7eecbcf9b1cb7d3632e4a150a",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "6c4ee39e5ef9ca994b11aaae70f97ebf13321136fec92efb428306715564008b"
     },
     {
       "unit_id": "OLP-0079",
       "source_path": "content/first-order-logic/sequent-calculus/provability-propositional.tex",
       "source_sha256": "b9a23c15949d620b4783f3d1629b9e41315defac417dea12dd75118342b9d36c",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "4dc62f514c7ec8c5fe250e15f069def17a88abdcf80b503d4df1ef3f8246bed1"
     },
     {
       "unit_id": "OLP-0080",
       "source_path": "content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
       "source_sha256": "30d343a6b09d234683fff540afec999650f2cf4afd9ce751138b8f3b93f2fe6a",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "cb829b91154ac68a4f7e54f84e846af00e592e5f8031d569563769b18a1e13e6"
     },
     {
       "unit_id": "OLP-0081",
       "source_path": "content/first-order-logic/sequent-calculus/soundness.tex",
       "source_sha256": "4de487cafc9d685844abb2c0b29c7b51debeb30a9b1129c7a2fa8c13ae48b151",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "4d11d1ccf5f7ab9f2382de0c6971a8405286ecfc3a9da004f4f19cd141fec441"
     },
     {
       "unit_id": "OLP-0082",
       "source_path": "content/first-order-logic/sequent-calculus/identity.tex",
       "source_sha256": "0f9d6d0731f2a74f568d49545bfeeff9373aea71d188973549054823f240f23d",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "b5ac3bb21297c57cf0ceac81ad9830660a405d8a7f0e85612203d140195de3ce"
     },
     {
       "unit_id": "OLP-0083",
       "source_path": "content/first-order-logic/sequent-calculus/soundness-identity.tex",
       "source_sha256": "0cc6d3e92d57d3070076ce2daa13aa85c6da6ac3cfb2b5d56df87bb7fef4fac3",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "f8c0daf3e88c73edbf1a03893faab40e49b79d4dc5fa3dfaefa453b71a954d3c"
     },
     {
       "unit_id": "OLP-0084",
       "source_path": "content/first-order-logic/natural-deduction/natural-deduction.tex",
       "source_sha256": "c53bed3aa593285a104c9e4c1c40a08efadb3b58094119043baa7a27b8a652e7",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784"
     },
     {
       "unit_id": "OLP-0085",
       "source_path": "content/first-order-logic/natural-deduction/rules-and-proofs.tex",
       "source_sha256": "e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee"
     },
     {
       "unit_id": "OLP-0086",
       "source_path": "content/first-order-logic/natural-deduction/propositional-rules.tex",
       "source_sha256": "5a85acea130c096719ef92c9513ab18a27380a22972eb859d55db92600932846",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "cb8cefaed9c4454d89002d91ae598fc3038c607c39ef22eab86876018835f13a"
     },
     {
       "unit_id": "OLP-0087",
       "source_path": "content/first-order-logic/natural-deduction/quantifier-rules.tex",
       "source_sha256": "eb6d95a24fce278404457d9169c033645853aab7e1c22dd4ca1fec9595068313",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "c6fc4e35e785a0c715e8787f3341ca7d0105800a3d9a4d5f1fc0758a315d314c"
     },
     {
       "unit_id": "OLP-0088",
       "source_path": "content/first-order-logic/natural-deduction/derivations.tex",
       "source_sha256": "f238e4c13bb97940ff82f8016aed565b9388d475721f9b6ff132166bf628aa5e",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "74fa3a53b06ba3d36cb960f35c4a1401ed4b1ff13eac9cd702feb6ac17bc8de4"
     },
     {
       "unit_id": "OLP-0089",
       "source_path": "content/first-order-logic/natural-deduction/proving-things.tex",
       "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "ff8d304b76983fd480a52086a4c2fbf9f9f0f4659df28c8822ee743a803eadd3"
     },
     {
       "unit_id": "OLP-0090",
       "source_path": "content/first-order-logic/natural-deduction/proving-things-quant.tex",
       "source_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "d209af97317ad61cc26a4da1cd40366e592b982c6b7f429c77070ed698e7b81a"
     },
     {
       "unit_id": "OLP-0091",
       "source_path": "content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
       "source_sha256": "12ae1ea4a864b9a42e5fb6addcfc552bb4b74c1ba2cadced427593e4ca52f8e3",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "42280456f97a71e0a4892c6bcd91ae14ea3411607ef9dcf12156c07abe7cf43e"
     },
     {
       "unit_id": "OLP-0092",
       "source_path": "content/first-order-logic/natural-deduction/provability-consistency.tex",
       "source_sha256": "90f40aecedac9a8f2760b9976de0c6eac71c1b1e90911c4a30ce029a2d9e13c6",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "453fb54b8f57da9a8516aaebf205f28b1effccdae0ceaedb11daa241f61fdc05"
     },
     {
       "unit_id": "OLP-0093",
       "source_path": "content/first-order-logic/natural-deduction/provability-propositional.tex",
       "source_sha256": "afb2c635bfea260b7ab2bc413c04f13ac8be807849baf90716dd54f89b29558a",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "8718b537202685612cc38e0122f36eeafd3a716ba91712eda14442c0dd331607"
     },
     {
       "unit_id": "OLP-0094",
       "source_path": "content/first-order-logic/natural-deduction/provability-quantifiers.tex",
       "source_sha256": "589113c86043ad1152eb1f67bef6340f846cb51929e2d3f26294450516da247c",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "3b8cdbedfb4984e32ab5f88b349fc8ceb84fbc6f8f609a123439170e45016569"
     },
     {
       "unit_id": "OLP-0095",
       "source_path": "content/first-order-logic/natural-deduction/soundness.tex",
       "source_sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "23055ad895028174f53f9061f2724fdd4f8df49941d2d085216c4bda6d32cbb8"
     },
     {
       "unit_id": "OLP-0096",
       "source_path": "content/first-order-logic/natural-deduction/identity.tex",
       "source_sha256": "2f301d8fc8aa78831e17b9d14042c97218795d400a350b0726be3776eed17575",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "5d1c6195378045cc4c0f62b5f10918b23de5b23e4921020d987ca5887daf32eb"
     },
     {
       "unit_id": "OLP-0097",
       "source_path": "content/first-order-logic/natural-deduction/soundness-identity.tex",
       "source_sha256": "426ee50b639d92c730c70912bfda4fdf34c99e0e33097dc253cb196a01af7e7d",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "805d1fd43db3d1652190cae1360265c8fcf66d4824d1f9ec99e626ab142ef857"
     },
     {
