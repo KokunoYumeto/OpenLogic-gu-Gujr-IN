@@ -8,7 +8,7 @@ Gujarati scholarly translation of the Open Logic Project. The full 722-unit edit
 - See [edition notes](docs/EDITION_NOTES.md), the [reviewer-oriented translation decisions](docs/translation-decisions/START_HERE.md), [coverage](provenance/COVERAGE.json), and [recovered canon reconciliation](provenance/LAPTOP_CANON_RECONCILIATION.json).
 - Visit the [international translations hub](https://github.com/KokunoYumeto/OpenLogic-translations).
 
-The latest cumulative artifact release is [First-Order Natural Deduction v0.4.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/natural-deduction-v0.4.0), covering 94/722 units. Its three artifacts are also preserved in the existing Zenodo lineage at [DOI 10.5281/zenodo.22646424](https://doi.org/10.5281/zenodo.22646424).
+The latest cumulative artifact release is [First-Order Tableaux v0.5.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/tableaux-v0.5.0), covering 108/722 units. Its three artifacts are also preserved in the existing Zenodo lineage at [DOI 10.5281/zenodo.22649735](https://doi.org/10.5281/zenodo.22649735).
 
 This is an AI-authored translation grounded in actual Gujarati canon consultation, deterministic structural checks, same-agent semantic comparison, reverse-paraphrase samples, and visual inspection. It is not independently certified by native scholars. Provisional terms are identified, and every deliberate correction to the frozen English source is separately disclosed.
 
