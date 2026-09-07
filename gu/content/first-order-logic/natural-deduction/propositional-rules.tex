@@ -1,0 +1,120 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: propositional-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{prl}}
+      {\olfileid{pl}{ntd}{prl}}
+
+\olsection{વિધાનાત્મક નિયમો}
+
+
+\subsection{$\land$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{$!A$}
+\AxiomC{$!B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !B$}
+\DisplayProof
+\hfill
+\begin{tabular}{r}
+\AxiomC{$!A \land !B$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$!A \land !B$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B$}
+\DisplayProof
+\end{tabular}
+\end{defish}
+
+\subsection{$\lor$ માટેના નિયમો}
+
+\begin{defish}
+\begin{tabular}{r}
+\AxiomC{$!A$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$!A \lor !B$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$!B$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$!A \lor !B$}
+\DisplayProof
+\end{tabular}
+\hfill
+\AxiomC{$!A \lor !B$}
+\AxiomC{$\Discharge{!A}{n}$}
+\DeduceC{$!C$}
+\AxiomC{$\Discharge{!B}{n}$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lor}}{n}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lif$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{$\Discharge{!A}{n}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{n}
+\UnaryInfC{$!A \lif !B$}
+\DisplayProof
+\hfill
+\AxiomC{$!A \lif !B$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lnot$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{$\Discharge{!A}{n}$}
+\noLine
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{n}
+\UnaryInfC{$\lnot !A$}
+\DisplayProof
+\hfill
+\AxiomC{$\lnot !A$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lfalse$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!A$}
+\DisplayProof
+\hfill
+\AxiomC{$\Discharge{\lnot !A}{n}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\FalseCl}{n}
+\UnaryInfC{$!A$}
+\DisplayProof
+\end{defish}
+
+$\Intro{\lnot}$ અને $\FalseCl$ બહુ સરખા છે. તફાવત એટલો છે કે
+$\Intro{\lnot}$થી નિષેધિત !!{sentence}~$\lnot !A$ નિષ્પન્ન થાય છે,
+જ્યારે $\FalseCl$થી વિધેયાત્મક !!{sentence}~$!A$ નિષ્પન્ન થાય છે.
+
+કોઈ નિયમ અમુક ધારણાને નિવૃત્ત કરી શકાય એમ બતાવે ત્યારે આપણે તેને છૂટ
+ગણીએ છીએ, આવશ્યકતા નહીં. દાખલા તરીકે, $\Intro{\lif}$ નિયમમાં
+આધારવાક્ય~$!B$ની !!{derivation}માં આવતી સ્વરૂપ~$!A$ની શૂન્ય સહિત
+કોઈ પણ સંખ્યાની ધારણાઓ નિવૃત્ત કરી શકાય છે.
+
+\end{document}

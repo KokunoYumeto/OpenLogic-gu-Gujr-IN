@@ -1,0 +1,166 @@
+{
+  "schema": "openlogic-gu-html-qa/10",
+  "html": {
+    "path": "reader/natural-deduction.html",
+    "bytes": 2189523,
+    "sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052",
+    "source_units_covered": 94,
+    "natural_deduction_units_complete": 14,
+    "rendered_natural_deduction_sections": 13,
+    "logic_profile": "first-order natural deduction, including quantifier and identity rules",
+    "mathml_nodes": 5091,
+    "mathml_tables": 72,
+    "block_mathml_nodes": 303,
+    "proof_representation_entries": 144,
+    "proof_representation_kinds": {
+      "axiomatic_derivation": 1,
+      "closed_tableau": 1,
+      "natural_deduction_prooftree": 63,
+      "natural_deduction_rule_display": 8,
+      "prooftree": 2,
+      "sequent_prooftree": 58,
+      "sequent_rule_display": 11
+    },
+    "proof_structure_totals": {
+      "trees": 174,
+      "axioms": 262,
+      "inferences": 401,
+      "deductions": 74,
+      "empty_premises": 49,
+      "double_lines": 2
+    },
+    "truth_tables": 5,
+    "images": 13,
+    "unique_ids": 363,
+    "broken_internal_links": 0,
+    "natural_deduction_section_ids": [
+      "fol:ntd:rul:sec",
+      "fol:ntd:prl:sec",
+      "fol:ntd:qrl:sec",
+      "fol:ntd:der:sec",
+      "fol:ntd:pro:sec",
+      "fol:ntd:prq:sec",
+      "fol:ntd:ptn:sec",
+      "fol:ntd:prv:sec",
+      "fol:ntd:ppr:sec",
+      "fol:ntd:qpr:sec",
+      "fol:ntd:sou:sec",
+      "fol:ntd:ide:sec",
+      "fol:ntd:sid:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002",
+      "OLPL-001",
+      "OLPL-002",
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-004",
+      "OLPRF-003",
+      "OLSEQ-001",
+      "OLSEQ-002",
+      "OLSEQ-003",
+      "OLSEQ-004",
+      "OLSEQ-005",
+      "OLSEQ-006",
+      "OLND-001",
+      "OLND-002",
+      "OLND-003",
+      "OLND-004",
+      "OLND-005",
+      "OLND-006"
+    ],
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 11,
+    "stylesheet": {
+      "path": "reader/reader.css",
+      "href": "reader.css?v=3",
+      "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
+    },
+    "build_qa": {
+      "path": "build/natural-deduction-html-qa.json",
+      "sha256": "02cef2fca8b42025fb6486450457f51f23c267541f8c27fe76b22e100d481e83"
+    },
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ],
+    "status": "passed_exact_dom_mathml_proof_link_asset_and_character_qa"
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-07T14:52:05.185366+00:00",
+    "method": "Codex in-app Chromium browser served from the exact local repository; live navigation, DOM geometry inspection across every block MathML node, and viewport screenshots of representative rules, nested derivations, all six correction notes, soundness, identity, and end matter.",
+    "url": "http://127.0.0.1:8767/reader/natural-deduction.html?qa=010b",
+    "viewport_px": [
+      1280,
+      720
+    ],
+    "viewed": [
+      "section 71 assumptions, rules, and OLND-001",
+      "section 72 propositional natural-deduction rule displays",
+      "section 73 quantifier rule displays",
+      "section 75 worked proof trees and OLND-002/OLND-003",
+      "section 76 quantified derivations and OLND-004/OLND-005",
+      "section 81 soundness and OLND-006",
+      "section 83 identity soundness and editorial notes",
+      "final footnote and bibliography area at the document bottom"
+    ],
+    "computed_mathml_check": {
+      "selector": "math[display='block']",
+      "nodes_checked": 303,
+      "overflow_nodes": 0,
+      "maximum_overflow_px": 0,
+      "body_scroll_width_px": 914,
+      "body_client_width_px": 914,
+      "overflow_x": "auto",
+      "overflow_y": "hidden",
+      "padding_block_px": 10.4
+    },
+    "defects_found_and_repaired": [
+      "The HTML adapter now recognizes natural-deduction proof trees, discharge labels, rule displays, and TeX comments between conditional arguments.",
+      "The satisfaction-definition reference is mapped to the existing Gujarati semantics section instead of becoming a broken link."
+    ],
+    "final_hash_binding": {
+      "html_sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052",
+      "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "stylesheet_href": "reader.css?v=3"
+    },
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_010.json",
+    "sha256": "fbf4f5ae26035d8c7c146bf95d8b89297d5ea31546637ee7692901f50df3e3ed",
+    "status": "passed_exact_block_review_and_reverse_paraphrase_sampling"
+  },
+  "pdf": {
+    "receipt": "PDF_QA_010.json",
+    "sha256": "b4bbf27f44ceeb4c2551462d9d3c69f1654f59605896116d8fe8b51383a3741b",
+    "pdf_sha256": "9cf3db8b374373bdb0f37cefa8ecff9e59db0da5b4a91e5df8df9591cd3b31a3",
+    "pages": 121,
+    "status": "passed_reproducible_build_and_all_page_visual_qa"
+  },
+  "full_corpus_complete": false
+}

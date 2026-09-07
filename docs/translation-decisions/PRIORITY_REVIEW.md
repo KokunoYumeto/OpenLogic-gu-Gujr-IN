@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-05T16:47:07.645110+00:00. This focused queue contains 82 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-07T14:56:28.502358+00:00. This focused queue contains 82 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 

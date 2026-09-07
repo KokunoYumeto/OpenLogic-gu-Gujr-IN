@@ -1,0 +1,206 @@
+{
+  "schema": "openlogic-gu-cumulative-qa/1",
+  "checked_at_utc": "2026-09-07T15:01:55.905033+00:00",
+  "cursor_sha256_at_check": "8a377516b628443807add94271a74292de134072dadce9c0e71a07569bbdf29c",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 94,
+    "total_units": 722,
+    "contiguous_units": "OLP-0004–0097",
+    "complete_edition": false
+  },
+  "totals": {
+    "aligned_linguistic_blocks": 1029,
+    "source_math_spans": 5562,
+    "reverse_paraphrase_samples": 500,
+    "exact_block_reviews": 1029,
+    "source_corrections": 41,
+    "canon_sources": 18,
+    "canon_passages": 77,
+    "term_decisions": 123,
+    "translation_decisions": 167,
+    "translation_decision_occurrences": 175
+  },
+  "batches": {
+    "001": {
+      "units": 7,
+      "blocks": 86,
+      "math": 327,
+      "semantic": 9,
+      "exact_block_reviews": 9,
+      "batch_sha256": "053e12fe77406cc236c539a3e247e9583c0881626da52c0fafc3e0cf6e38f6d6",
+      "parity_sha256": "18115805d2189fff36db3d4c98f144723e7d4201d8e4e3f5550e5c811a6273f6",
+      "semantic_sha256": "c76d641af5ee9202796a994079bf53ac28296eaf08fba3bb3512ff506b273aff"
+    },
+    "002": {
+      "units": 9,
+      "blocks": 104,
+      "math": 517,
+      "semantic": 13,
+      "exact_block_reviews": 13,
+      "batch_sha256": "43699cec18be506e8e72d29e9d44ca97dcd4dc212957bfb621839d554fd77a6c",
+      "parity_sha256": "4825236f13d436419faa724caf2aac995909a6df4a264c7e1937bf21390a0586",
+      "semantic_sha256": "0059e52457ffd3cce811ca30272ec4eea3489b6bc315fc479c10fe326c851a45"
+    },
+    "003": {
+      "units": 7,
+      "blocks": 87,
+      "math": 414,
+      "semantic": 18,
+      "exact_block_reviews": 18,
+      "batch_sha256": "15af2b6bf4599e44fc3dd30d4325c203f71b49ee13c8a918c7173406f08e930d",
+      "parity_sha256": "9142e425e04535ca5debb9763df67af69e0169167074d98433484cb235186037",
+      "semantic_sha256": "7d4df0c3e24df133c3f5347f01242c878d5969fe4bffda1fd8745e4cb54bd8c2"
+    },
+    "004": {
+      "units": 14,
+      "blocks": 187,
+      "math": 1139,
+      "semantic": 51,
+      "exact_block_reviews": 51,
+      "batch_sha256": "8ed01dba48548325beddb48a581381e597e2f4b9da1b8c296dec97b6e778e854",
+      "parity_sha256": "d3890eaf59ee88e8dc20d28599172d73eee0b6af38a2f295e36ffd0273ddf280",
+      "semantic_sha256": "d8463dcdb7c9943962e76199d322e7aa988c44ee213071a0af0b7232a89dd851"
+    },
+    "005": {
+      "units": 8,
+      "blocks": 103,
+      "math": 424,
+      "semantic": 55,
+      "exact_block_reviews": 55,
+      "batch_sha256": "5dafd3321afa5fd7e4a761d48af3053062e23cdb1e42910dabfa6b5a429dfc47",
+      "parity_sha256": "d0703fd8da38c18d66f9421ae3118d7bd3f4090d696b4ce8b4b8ac84a3ecfd02",
+      "semantic_sha256": "b3111a671d76eb989384577fda30cf71a61a3977a2d4df24695c852415ad06ac"
+    },
+    "006": {
+      "units": 6,
+      "blocks": 58,
+      "math": 207,
+      "semantic": 58,
+      "exact_block_reviews": 58,
+      "batch_sha256": "aa2f3e785bf02e19771d82babf254fd483c66152175d92a4dcce1299e6574fe9",
+      "parity_sha256": "58c769e5022ec6d333855d7d8ff552a4c8f8ec840aeb47fbce6464650fdca49b",
+      "semantic_sha256": "d444b369884edd6d9a311806a4e622b1b7149a5a9a4d9fbdfe1c5a5231589e58"
+    },
+    "007": {
+      "units": 8,
+      "blocks": 99,
+      "math": 426,
+      "semantic": 99,
+      "exact_block_reviews": 99,
+      "batch_sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de",
+      "parity_sha256": "fbc7a07f85f405ebf1fc527a90237d70fa7a927e40f6f0b1509cd192cf4f1ea4",
+      "semantic_sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
+    },
+    "008": {
+      "units": 6,
+      "blocks": 32,
+      "math": 137,
+      "semantic": 32,
+      "exact_block_reviews": 32,
+      "batch_sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649",
+      "parity_sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05",
+      "semantic_sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+    },
+    "009": {
+      "units": 15,
+      "blocks": 131,
+      "math": 1003,
+      "semantic": 131,
+      "exact_block_reviews": 131,
+      "batch_sha256": "f93547c6b6596cb30d0d6dacd1a68a42c132a76251537f7c09eed4e348651f63",
+      "parity_sha256": "b4d4e9c9f0713880284e433861baf6f1c280320b2ea12f9498919bc7b41480e7",
+      "semantic_sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b"
+    },
+    "010": {
+      "units": 14,
+      "blocks": 142,
+      "math": 968,
+      "semantic": 34,
+      "exact_block_reviews": 142,
+      "batch_sha256": "faab0957fd94b21971476b90acf0ebd7b26a8f590ed2b256fcdb044c033815ac",
+      "parity_sha256": "08ba538a84366be545f7d1491ffc05d7263ad530c0f6b1a5c6baf81f78f8651a",
+      "semantic_sha256": "fbf4f5ae26035d8c7c146bf95d8b89297d5ea31546637ee7692901f50df3e3ed"
+    }
+  },
+  "current_artifacts": {
+    "html": {
+      "path": "reader/natural-deduction.html",
+      "bytes": 2189523,
+      "sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052",
+      "mathml_nodes": 5091,
+      "proof_representations": 144,
+      "status": "passed_exact_dom_mathml_proof_link_asset_and_character_qa"
+    },
+    "browser": {
+      "status": "passed_actual_live_browser_inspection",
+      "inspected_at_utc": "2026-09-07T14:52:05.185366+00:00",
+      "method": "Codex in-app Chromium browser served from the exact local repository; live navigation, DOM geometry inspection across every block MathML node, and viewport screenshots of representative rules, nested derivations, all six correction notes, soundness, identity, and end matter.",
+      "url": "http://127.0.0.1:8767/reader/natural-deduction.html?qa=010b",
+      "viewport_px": [
+        1280,
+        720
+      ],
+      "viewed": [
+        "section 71 assumptions, rules, and OLND-001",
+        "section 72 propositional natural-deduction rule displays",
+        "section 73 quantifier rule displays",
+        "section 75 worked proof trees and OLND-002/OLND-003",
+        "section 76 quantified derivations and OLND-004/OLND-005",
+        "section 81 soundness and OLND-006",
+        "section 83 identity soundness and editorial notes",
+        "final footnote and bibliography area at the document bottom"
+      ],
+      "computed_mathml_check": {
+        "selector": "math[display='block']",
+        "nodes_checked": 303,
+        "overflow_nodes": 0,
+        "maximum_overflow_px": 0,
+        "body_scroll_width_px": 914,
+        "body_client_width_px": 914,
+        "overflow_x": "auto",
+        "overflow_y": "hidden",
+        "padding_block_px": 10.4
+      },
+      "defects_found_and_repaired": [
+        "The HTML adapter now recognizes natural-deduction proof trees, discharge labels, rule displays, and TeX comments between conditional arguments.",
+        "The satisfaction-definition reference is mapped to the existing Gujarati semantics section instead of becoming a broken link."
+      ],
+      "final_hash_binding": {
+        "html_sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052",
+        "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+        "stylesheet_href": "reader.css?v=3"
+      },
+      "pending": []
+    },
+    "pdf": {
+      "path": "build/gu-natural-deduction.pdf",
+      "bytes": 1127178,
+      "sha256": "9cf3db8b374373bdb0f37cefa8ecff9e59db0da5b4a91e5df8df9591cd3b31a3",
+      "pages": 121,
+      "page_size": "A4",
+      "page_size_points": [
+        595.276,
+        841.89
+      ],
+      "title": "સ્વાભાવિક નિગમન સહિત ઓપન લોજિક ગુજરાતી",
+      "encrypted": false,
+      "nonempty_extracted_text_pages": 121,
+      "status": "passed_reproducible_build_and_all_page_visual_qa",
+      "all_pages_visually_inspected": true,
+      "three_passes_byte_identical": true
+    },
+    "translation_decisions": {
+      "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "sha256": "01944df2f5a201e81e46dad3a498162f93a3b2414788922c7dc72b8427197790",
+      "status": "passed",
+      "reader_locators": {
+        "available": 174,
+        "pending": 0,
+        "not_applicable": 1
+      }
+    }
+  },
+  "git_diff_check": "passed_scoped_paths",
+  "status": "passed_single_cumulative_94_unit_gate"
+}

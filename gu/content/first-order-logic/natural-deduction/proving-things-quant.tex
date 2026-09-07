@@ -1,0 +1,249 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{prq}
+
+\olsection{પરિમાણકો સાથેની \usetoken{P}{derivation}}
+
+\begin{ex}
+પરિમાણકો સાથે કામ કરતી વખતે આઇગનચલ-શરતનો ભંગ ન થાય તેની ખાતરી કરવી
+પડે છે; ક્યારેક તે માટે અમુક અનુમાનો કરવાના ક્રમમાં ફેરફાર કરવો પડે.
+સામાન્ય રીતે આઇગનચલ-શરતને આધીન નિયમોને પહેલાં સંભાળવાનો પ્રયત્ન કરવાથી
+મદદ મળે છે (પૂરી થયેલી સાબિતીમાં તેઓ વધુ નીચે આવશે).
+
+!!{formula} $\lexists[x][\lnot !A(x)] \lif \lnot \lforall[x][!A(x)]$ની
+!!a{derivation} કેવી રીતે આપીએ તે જોઈએ. હંમેશની જેમ શરૂઆતમાં લખીએ:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+\Intro{\lif} નિયમથી એ છેલ્લું પગલું સિદ્ધ કરવા શું જોઈએ તે લખીને શરૂ કરીએ.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\DeduceC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+$\lnot \lforall[x][!A(x)]$ પર લાગુ પડે એવો કોઈ સ્પષ્ટ નિયમ ન હોવાથી,
+\Elim{\lexists} નિયમ વાપરી શકાય તે રીતે !!{derivation} ગોઠવીને આગળ
+વધીશું. અહીં આઇગનચલ-શરતનું ધ્યાન રાખવું અને
+$\lexists[x][\lnot !A(x)]$માં કે તે જેના પર આધાર રાખે છે એવી કોઈ
+ધારણામાં ન આવતો અચળ પસંદ કરવો જોઈએ. (જોકે કોઈ !!{constant}s આવતા જ
+નથી, તેથી કોઈ પણ પસંદગી ચાલશે.)
+\sourcecorrection{OLND-004}{સ્થિર અંગ્રેજી મૂળ આ વાક્યમાં મુખ્ય
+આધારવાક્યને $\lexists[x][!A(x)]$ લખીને તેનો નિષેધ ચૂકી જાય છે; દર્શાવેલી
+નિષ્પત્તિ મુજબ અહીં $\lexists[x][\lnot !A(x)]$ રાખ્યું છે.}
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot !A(a)}{2}$}
+\DeduceC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)] \lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+$\lnot \lforall[x][!A(x)]$ નિષ્પન્ન કરવા \Intro{\lnot} નિયમ
+વાપરવાનો પ્રયત્ન કરીએ: એ માટે વ્યાઘાત નિષ્પન્ન કરવો પડશે, કદાચ વધારાની
+ધારણા તરીકે $\lforall[x][!A(x)]$નો ઉપયોગ કરીને. અલબત્ત, આ વ્યાઘાતમાં
+\Elim{\lexists} અનુમાનથી નિવૃત્ત થનારી ધારણા $\lnot !A(a)$ પણ આવી શકે.
+તેને આ રીતે ગોઠવી શકીએ:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot !A(a)}{2}, \Discharge{\lforall[x][!A(x)]}{3}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{3}
+\UnaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+આપણે વ્યાઘાતની નજીક પહોંચી ગયા હોઈએ એવું લાગે છે. લાગુ કરવાનો સૌથી
+સરળ નિયમ \Elim{\lforall} છે, જેને કોઈ આઇગનચલ-શરત નથી. સર્વપરિમાણિત
+$x$ના સ્થાને ઇચ્છિત પદ વાપરી શકીએ છીએ, તેથી વ્યાઘાત સુધી પહોંચવા માટે
+~$a$ જ વાપરવાનું ચાલુ રાખવું સૌથી યોગ્ય છે.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot !A(a)}{2}$}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{3}$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(a)$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{3}
+\UnaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][!A(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot !A(x)]\lif \lnot \lforall[x][!A(x)]$}
+\end{prooftree}
+
+ખાસ કરીને પરિમાણકો સાથે કામ કરતી વખતે, આ તબક્કે આઇગનચલ-શરતનો ભંગ
+થયો નથી તેની ફરી તપાસ કરવી જરૂરી છે. આપણે લાગુ કરેલો અને
+આઇગનચલ-શરતને આધીન એકમાત્ર નિયમ \Elim{\lexists} હતો; તથા આઇગનચલ~$a$
+તે જેના પર આધાર રાખે છે એવી કોઈ અનિવૃત્ત ધારણામાં આવતો નથી, તેથી આ
+યોગ્ય !!{derivation} છે.
+\sourcecorrection{OLND-005}{સ્થિર અંગ્રેજી મૂળ આ અંતિમ તપાસમાં
+અસ્તિત્વ-નિવારણને $\Elim{\exists}$થી લખે છે, જ્યારે આખા પ્રકરણમાં અને
+સંબંધિત નિષ્પત્તિમાં નિર્ધારિત કારક $\Elim{\lexists}$ છે; અહીં એ જ
+સુસંગત રૂપ રાખ્યું છે.}
+\end{ex}
+
+\begin{ex}
+ક્યારેક કેટલાક !!{formula}sમાંથી બીજું !!a{formula} નિષ્પન્ન કરીએ છીએ.
+આવા કિસ્સામાં અનિવૃત્ત ધારણાઓ રહી શકે છે. આપણા અંતિમ લક્ષ્યની સાથે
+ધારણાઓની નોંધ રાખવી પણ જરૂરી છે.
+
+ધારણાઓ $\lexists[x][(!A(x) \land !B(x))]$ અને
+$\lforall[x][(!B(x) \lif !C(x,b))]$માંથી !!{formula}
+$\lexists[x][!C(x,b)]$ની !!a{derivation} કેવી રીતે આપીએ તે જોઈએ.
+હંમેશની જેમ ફલિતવાક્યને તળિયે લખીને શરૂ કરીએ.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+
+કામ કરવા માટે આપણી પાસે બે આધારવાક્યો છે. પહેલાનો ઉપયોગ કરવા, એટલે કે
+$\lexists[x][(!A(x) \land !B(x))]$માંથી $\lexists[x][!C(x, b)]$ની
+!!a{derivation} શોધવાનો પ્રયત્ન કરવા, \Elim{\lexists} નિયમ વાપરીશું.
+તેને આઇગનચલ-શરત હોવાથી એ નિયમ પહેલાં લાગુ કરીએ. નીચેનું મળે છે:
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x))]$}
+\AxiomC{$\Discharge{!A(a) \land !B(a)}{1}$}
+\DeduceC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+આપણે જે બે ધારણાઓ સાથે કામ કરીએ છીએ તેમાં~$!B$ સહિયારું છે. આ તબક્કે
+\Elim{\land} લગાડી~$!B(a)$ને અલગ પાડવું ઉપયોગી થઈ શકે.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x)])$}
+\AxiomC{$\Discharge{!A(a)
+\land !B(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B(a)$}
+\DeduceC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+
+કામ કરવા માટેની બીજી ધારણા~$\lforall[x][(!B(x) \lif !C(x,b))]$ છે.
+અહીં આઇગનચલ-શરત ન હોવાથી \Elim{\lforall} વડે $x$ને !!{constant}~$a$
+દ્વારા દૃષ્ટાંતિત કરીને $!B(a) \lif !C(a, b)$ મેળવી શકીએ છીએ. હવે
+આપણી પાસે $!B(a) \lif !C(a,b)$ અને $!B(a)$ બંને છે. આગળનું પગલું
+\Elim{\lif} નિયમનો સીધો ઉપયોગ હોવો જોઈએ.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x))]$}
+\AxiomC{$\lforall[x][(!B(x) \lif !C(x,b))]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(a) \lif !C(a,b)$}
+\AxiomC{$\Discharge{!A(a)
+\land !B(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C(a,b)$}
+\DeduceC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\insertBetweenHyps{\hspace{-5em}}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+હવે લક્ષ્ય બહુ નજીક છે!{} \Intro{\lexists}નો એક ઉપયોગ કરતાં જ લક્ષ્ય
+સિદ્ધ થાય છે.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(!A(x) \land !B(x))]$}
+\AxiomC{$\lforall[x][(!B(x) \lif !C(x,b))]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(a) \lif !C(a,b)$}
+\AxiomC{$\Discharge{!A(a)
+\land !B(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!B(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C(a,b)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!C(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\insertBetweenHyps{\hspace{-5em}}
+\BinaryInfC{$\lexists[x][!C(x,b)]$}
+\end{prooftree}
+દરેક પગલે આઇગનચલ-શરતોનો ભંગ ન થાય તેની ખાતરી કરી હોવાથી આ યોગ્ય
+!!{derivation} છે તે વિશે વિશ્વાસ રાખી શકીએ છીએ.
+\end{ex}
+
+\begin{ex}
+ધારણાઓ $\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$ અને
+$\lnot\lexists[y][!B(y)]$માંથી !!{formula}
+$\lnot\lforall[x][!A(x)]$ની !!a{derivation} આપો. હંમેશની જેમ લક્ષ્ય
+!!{formula}ને તળિયે લખીને શરૂ કરીએ.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+!!{derivation}ની છેલ્લી પંક્તિ નિષેધ છે, તેથી \Intro{\lnot} વાપરવાનો
+પ્રયત્ન કરીએ. એ માટે વ્યાઘાત કેવી રીતે !!{derive} કરવો તે શોધવું પડશે.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{1}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+અત્યાર સુધી બધું બરાબર છે. \Elim{\lforall} વાપરી શકીએ, પણ તે લક્ષ્ય
+સુધી પહોંચવામાં મદદ કરશે કે નહીં તે સ્પષ્ટ નથી. તેના બદલે આપણી એક
+ધારણા વાપરીએ. $\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$ અને
+$\lforall[x][!A(x)]$ મળીને \Elim{\lif} નિયમ વાપરવાની છૂટ આપે છે.
+\begin{prooftree}
+\AxiomC{$\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{1}$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\lexists[y][!B(y)]$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+હવે કામ કરવા માટે એક છેલ્લી ધારણા છે, અને \Elim{\lnot} વાપરી
+વ્યાઘાત સુધી પહોંચવામાં તે મદદ કરશે એવું લાગે છે.
+\begin{prooftree}
+\AxiomC{$\lnot\lexists[y][!B(y)]$}
+\AxiomC{$\lforall[x][!A(x)] \lif \lexists[y][!B(y)]$}
+\AxiomC{$\Discharge{\lforall[x][!A(x)]}{1}$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\lexists[y][!B(y)]$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][!A(x)]$}
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+નીચેનું દર્શાવતી !!{derivation}s આપો:
+\begin{enumerate}
+\item $\Proves (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[z][(!A(z) \land !B(z))]$.
+\item $\Proves (\lexists[x][!A(x)] \lor \lexists[y][!B(y)]) \lif
+\lexists[z][(!A(z) \lor !B(z))]$.
+\item $\lforall[x][(!A(x) \lif !B)] \Proves \lexists[y][!A(y)] \lif !B$.
+\item $\lforall[x][\lnot !A(x)] \Proves \lnot\lexists[x][!A(x)]$.
+\item $\Proves \lnot\lexists[x][!A(x)] \lif \lforall[x][\lnot !A(x)]$.
+\item $\Proves \lnot\lexists[x][\lforall[y][((!A(x,y) \lif \lnot
+!A(y,y)) \land (\lnot !A(y,y) \lif !A(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+નીચેનું દર્શાવતી !!{derivation}s આપો:
+\begin{enumerate}
+\item $\Proves \lnot\lforall[x][!A(x)] \lif \lexists[x][\lnot!A(x)]$.
+\item $(\lforall[x][!A(x)] \lif !B) \Proves \lexists[y][(!A(y) \lif !B)]$.
+\item $\Proves \lexists[x][(!A(x) \lif \lforall[y][!A(y)])]$.
+\end{enumerate}
+(આ બધામાં $\FalseCl$~નિયમ જરૂરી છે.)
+\end{prob}
+
+\end{document}

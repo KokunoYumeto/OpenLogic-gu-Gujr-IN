@@ -1,0 +1,49 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{sid}
+
+\olsection{\usetoken{S}{identity} સાથે યથાર્થતા}
+
+\begin{prop}
+$\eq$ માટેના નિયમો ધરાવતું સ્વાભાવિક નિગમન યથાર્થ છે.
+\end{prop}
+
+\begin{proof}
+સ્વરૂપ $\eq[t][t]$નું કોઈ પણ !!{formula} પ્રામાણ્ય છે, કારણ કે દરેક
+!!{structure}~$\Struct M$ માટે $\Sat{M}{\eq[t][t]}$. (નોંધો કે પદ $t$
+બંધ છે, એટલે કે તેમાં કોઈ ચલ નથી, એમ આપણે માનીએ છીએ; તેથી
+ચલ-નિયુક્તિઓ અપ્રસ્તુત છે.)
+
+માનો કે કોઈ !!a{derivation}માં છેલ્લું અનુમાન \Elim{\eq} છે, એટલે કે
+!!{derivation}નું સ્વરૂપ નીચે પ્રમાણે છે:
+\begin{prooftree}
+  \AxiomC{$\Gamma_1$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\eq[t_1][t_2]$}
+  \AxiomC{$\Gamma_2$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A(t_1)$}
+  \RightLabel{\Elim{\eq}}
+  \BinaryInfC{$!A(t_2)$}
+\end{prooftree}
+આધારવાક્યો $\eq[t_1][t_2]$ અને $!A(t_1)$ અનુક્રમે !!{undischarged}
+ધારણાઓ~$\Gamma_1$ અને $\Gamma_2$માંથી !!{derive}d થયાં છે. આપણે
+$!A(t_2)$ એ $\Gamma_1 \cup \Gamma_2$માંથી ફલિત થાય છે તેમ બતાવવું છે.
+$\Sat{M}{\Gamma_1 \cup \Gamma_2}$ હોય એવી કોઈ !!a{structure}~$\Struct{M}$
+લો. આગમન-પરિકલ્પના મુજબ $\Sat{M}{!A(t_1)}$ અને
+$\Sat{M}{\eq[t_1][t_2]}$. તેથી $\Value{t_1}{M} = \Value{t_2}{M}$.
+$s$ કોઈ પણ ચલ-નિયુક્તિ હોય અને
+$m = \Value{t_1}{M} = \Value{t_2}{M}$ હોય. ત્યારે
+\olref[fol][syn][ext]{prop:ext-formulas} મુજબ $\Sat{M}{!A(t_1)}[s]$ જો
+અને માત્ર જો $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$, અને તે જો અને માત્ર જો
+$\Sat{M}{!A(t_2)}[s]$. $\Sat{M}{!A(t_1)}$ હોવાથી
+$\Sat{M}{!A(t_2)}$ મળે છે.
+\end{proof}
+
+\end{document}

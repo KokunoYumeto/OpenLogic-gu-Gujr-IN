@@ -1,0 +1,129 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{prv}}
+      {\olfileid{pl}{ntd}{prv}}
+
+\olsection{\usetoken{S}{derivability} અને સુસંગતતા}
+
+હવે આપણે !!{derivability} સંબંધના અનેક ગુણધર્મો સ્થાપીશું. દરેક ગુણધર્મ
+સ્વતંત્ર રીતે રસપ્રદ છે અને પૂર્ણતા-પ્રમેયની સાબિતીમાં દરેકની ભૂમિકા હશે.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  જો $\Gamma \Proves !A$ હોય અને $\Gamma \cup \{!A\}$ અસુસંગત હોય,
+  તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+$\Gamma$માંથી~$!A$ની !!{derivation}ને~$\delta_1$ અને
+$\Gamma \cup \{!A\}$માંથી~$\lfalse$ની !!{derivation}ને~$\delta_2$
+કહો. પછી આપણે નીચેનું !!{derive} કરી શકીએ છીએ:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\AxiomC{$\Gamma$}
+\RightLabel{$\delta_1$}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+નવી !!{derivation}માં ધારણા~$!A$ !!{discharged} છે, તેથી તે
+~$\Gamma$માંથીની !!a{derivation} છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ હોય જો અને માત્ર જો $\Gamma \cup \{\lnot !A\}$
+અસુસંગત હોય.
+\end{prop}
+
+\begin{proof}
+પહેલાં માનો કે $\Gamma \Proves !A$, એટલે કે !!{undischarged}
+ધારણાઓ~$\Gamma$માંથી~$!A$ની !!a{derivation}~$\delta_0$ છે.
+$\Gamma \cup \{\lnot !A\}$માંથી $\lfalse$ની !!a{derivation} આ રીતે મળે છે:
+\begin{prooftree}
+  \AxiomC{$\lnot !A$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+\end{prooftree}
+
+હવે માનો કે $\Gamma \cup \{\lnot !A\}$ અસુસંગત છે અને તેની અનુરૂપ,
+$\Gamma \cup \{\lnot !A\}$માંની !!{undischarged} ધારણાઓમાંથી
+~$\lfalse$ની !!{derivation}ને $\delta_1$ કહો. ~ $\FalseCl$ વાપરીને
+એકલા~$\Gamma$માંથી~$!A$ની !!a{derivation} મળે છે:
+\begin{prooftree}
+  \AxiomC{$\Gamma, \Discharge{\lnot !A}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\lfalse$}
+  \RightLabel{\FalseCl}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$!A$}
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ હોય જો અને માત્ર જો $\Gamma \cup \{!A\}$
+અસુસંગત હોય, એ સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  જો $\Gamma \Proves !A$ અને $\lnot !A \in \Gamma$ હોય, તો $\Gamma$
+  અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+  માનો કે $\Gamma \Proves !A$ અને $\lnot !A \in \Gamma$. ત્યારે
+  ~ $\Gamma$માંથી~$!A$ની કોઈ !!a{derivation}~$\delta$ છે.
+  $\Elim{\lnot}$ નિયમનો આ સરળ ઉપયોગ જુઓ:
+  \begin{prooftree}
+    \AxiomC{$\lnot !A$}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta$}
+    \DeduceC{$!A$}
+    \RightLabel{\Elim{\lnot}}
+    \BinaryInfC{$\lfalse$}
+  \end{prooftree}
+  $\lnot !A \in \Gamma$ હોવાથી બધી !!{undischarged} ધારણાઓ
+  ~ $\Gamma$માં છે; એટલે આ $\Gamma \Proves \lfalse$ બતાવે છે.
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  જો $\Gamma \cup \{!A\}$ અને $\Gamma \cup \{\lnot !A\}$ બંને
+  અસુસંગત હોય, તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+અનુક્રમે $\Gamma \cup \{ !A \}$માંથી $\lfalse$ની અને
+$\Gamma \cup \{ \lnot !A \}$માંથી $\lfalse$ની !!{derivation}s
+$\delta_1$ અને $\delta_2$ છે. પછી આપણે નીચેનું !!{derive} કરી શકીએ:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{\lnot !A}{2}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{2}
+\UnaryInfC{$\lnot \lnot !A$}
+\AxiomC{$\Gamma, \Discharge{!A}{1}$}
+\RightLabel{$\delta_1$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot !A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+ધારણાઓ $!A$ અને $\lnot !A$ !!{discharged} હોવાથી આ એકલા~$\Gamma$માંથી
+~$\lfalse$ની !!a{derivation} છે. તેથી $\Gamma$ અસુસંગત છે.
+\end{proof}
+
+\end{document}

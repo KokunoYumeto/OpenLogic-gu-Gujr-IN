@@ -1,0 +1,54 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{ntd}{સ્વાભાવિક નિગમન}}
+      {\olchapter{pl}{ntd}{સ્વાભાવિક નિગમન}}
+
+\begin{editorial}
+આ પ્રકરણ ગેન્ટ્ઝન/પ્રાવિટ્ઝની શૈલીનું સ્વાભાવિક નિગમન તંત્ર રજૂ કરે છે.
+
+સાબિતી-તંત્ર તરીકે સ્વાભાવિક નિગમનને લાગતી સામગ્રીનો સમાવેશ કરવા કે
+તેને બાકાત રાખવા માટે ``prfND'' ટૅગ વાપરો.
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

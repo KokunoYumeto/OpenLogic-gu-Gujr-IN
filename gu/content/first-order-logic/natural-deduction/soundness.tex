@@ -1,0 +1,310 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{sou}}
+      {\olfileid{pl}{ntd}{sou}}
+
+\olsection{યથાર્થતા}
+
+\begin{explain}
+સ્વાભાવિક નિગમન જેવી કોઈ !!^a{derivation} પદ્ધતિ વાસ્તવમાં ફલિત ન થતી
+બાબતોને !!{derive} ન કરી શકે, તો તે \emph{યથાર્થ} છે. તેથી યથાર્થતા
+એ !!{derivation} પદ્ધતિઓ માટે બાંયધરીવાળો સુરક્ષા-ગુણધર્મ છે. કયો
+સાબિતી-સૈદ્ધાંતિક ગુણધર્મ વિચારીએ છીએ તેના આધારે, દાખલા તરીકે, આપણે
+જાણવા માગીએ કે
+\begin{enumerate}
+\item દરેક !!{derivable} !!{sentence} \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે;
+\item કોઈ !!a{sentence} બીજાં અમુક વાક્યોમાંથી !!{derivable} હોય, તો તે
+  તેમનું ફલિત પણ છે;
+\item !!{sentence}sનો કોઈ ગણ અસુસંગત હોય, તો તે અસંતોષ્ય છે.
+\end{enumerate}
+!!a{derivation} પદ્ધતિ માટે આ મહત્વના ગુણધર્મો છે. તેમાંનો કોઈ સધાય
+નહીં તો !!{derivation} પદ્ધતિ ખામીવાળી ગણાય---તે જરૂર કરતાં વધારે
+!!{derive} કરશે. તેથી કોઈ !!{derivation} પદ્ધતિની યથાર્થતા સ્થાપવી
+અત્યંત મહત્વની છે.
+\end{explain}
+
+\begin{thm}[યથાર્થતા]
+\ollabel{thm:soundness}
+જો $!A$ એ !!{undischarged} ધારણાઓ~$\Gamma$માંથી !!{derivable} હોય,
+તો $\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+$!A$ની કોઈ !!a{derivation}ને $\delta$ કહો. $\delta$માંનાં અનુમાનોની
+સંખ્યા પર આગમનથી આગળ વધીએ.
+
+આગમનના આધાર માટે અનુમાનોની સંખ્યા~$0$ હોય ત્યારે દાવો બતાવીએ. આ
+કિસ્સામાં $\delta$માં માત્ર એક !!{sentence}~$!A$, એટલે કે એક ધારણા,
+હોય છે. એ ધારણા !!{undischarged} છે, કારણ કે ધારણાઓ માત્ર અનુમાનોથી
+!!{discharged} થઈ શકે છે અને અહીં કોઈ અનુમાન નથી. તેથી સાબિતીની બધી
+!!{undischarged} ધારણાઓને સંતોષતી કોઈ પણ
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+એ~$!A$ને પણ સંતોષે છે.
+
+હવે આગમન-પગલું લો. માનો કે $\delta$માં~$n$ અનુમાનો છે. સૌથી નીચેના
+અનુમાનનાં આધારવાક્યો એવી ઉપ-!!{derivation}s વડે !!{derive}d થયાં છે
+જેમાં દરેકમાં~$n$ કરતાં ઓછાં અનુમાનો છે. આગમન-પરિકલ્પના પ્રમાણે સૌથી
+નીચેના અનુમાનનાં આધારવાક્યો એ આધારવાક્યો પર સમાપ્ત થતી
+ઉપ-!!{derivation}sની !!{undischarged} ધારણાઓમાંથી ફલિત થાય છે. આખી
+સાબિતીની !!{undischarged} ધારણાઓમાંથી ફલિતવાક્ય~$!A$ ફલિત થાય છે તેમ
+આપણે બતાવવું છે.
+
+સૌથી નીચેના અનુમાનના પ્રકાર પ્રમાણે કિસ્સા પાડીએ. પહેલાં માત્ર એક
+આધારવાક્ય ધરાવતાં સંભવિત અનુમાનો જોઈએ.
+
+\begin{enumerate}
+\item માનો કે છેલ્લું અનુમાન \Intro{\lnot} છે. !!{derivation}નું
+  સ્વરૂપ આ છે:
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{!A}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \DischargeRule{\Intro{\lnot}}{n}
+    \UnaryInfC{$\lnot !A$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $\lfalse$ એ~$\delta_1$ની !!{undischarged}
+  ધારણાઓ $\Gamma \cup \{!A\}$માંથી ફલિત થાય છે. કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો. જો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ હોય, તો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$ છે તેમ બતાવવું છે.
+  પ્રતિવાદ માટે માનો કે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$,
+  પરંતુ $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lnot !A}$, એટલે કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. ત્યારે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma \cup \{!A\}}$ થશે, જે આપણી
+  આગમન-પરિકલ્પનાની વિરુદ્ધ છે. તેથી
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$.
+
+\item છેલ્લું અનુમાન \Elim{\land} છે. તેનાં બે રૂપ છે: આધારવાક્ય
+  $!A \land !B$માંથી $!A$ અથવા $!B$નું અનુમાન થઈ શકે છે. પહેલો
+  કિસ્સો લો. !!{derivation}~$\delta$ આવી દેખાય છે:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A \land !B$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$!A$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $!A \land !B$ એ~$\delta_1$ની
+  !!{undischarged} ધારણાઓ~$\Gamma$માંથી ફલિત થાય છે. કોઈ
+  !!a{structure}~\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} લો. જો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ હોય, તો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ છે તેમ બતાવવું છે. માનો કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$. આગમન-પરિકલ્પના
+  ($\Gamma \Entails !A \land !B$) મુજબ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$. વ્યાખ્યા મુજબ
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$ હોય જો અને માત્ર જો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ અને
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. ($!A \land !B$માંથી $!B$નું
+  અનુમાન થતું હોય તે કિસ્સો એ જ રીતે સંભાળાય છે.)
+
+\item છેલ્લું અનુમાન \Intro{\lor} છે. તેનાં બે રૂપ છે: આધારવાક્ય
+  ~ $!A$ અથવા આધારવાક્ય~$!B$માંથી $!A \lor !B$નું અનુમાન થઈ શકે છે.
+  પહેલો કિસ્સો લો. !!{derivation}નું સ્વરૂપ આ છે:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+    \RightLabel{\Intro{\lor}}
+    \UnaryInfC{$!A \lor !B$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $!A$ એ~$\delta_1$ની !!{undischarged}
+  ધારણાઓ~$\Gamma$માંથી ફલિત થાય છે. કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો. જો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ હોય, તો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$ છે તેમ બતાવવું છે.
+  માનો કે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$; ત્યારે આગમન-પરિકલ્પના
+  $\Gamma \Entails !A$ મુજબ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
+  તેથી $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$ પણ હોવું જ જોઈએ.
+  ($!B$માંથી $!A \lor !B$નું અનુમાન થતું હોય તે કિસ્સો એ જ રીતે
+  સંભાળાય છે.)
+
+\item છેલ્લું અનુમાન \Intro{\lif} છે. ધારણા~$!A$ અને
+  ફલિતવાક્ય~$!B$ ધરાવતી ઉપસાબિતીમાંથી $!A \lif !B$નું અનુમાન થાય છે,
+  એટલે કે
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{!A}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!B$}
+    \DischargeRule{\Intro{\lif}}{n}
+    \UnaryInfC{$!A \lif !B$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $!B$ એ~$\delta_1$ની !!{undischarged}
+  ધારણાઓમાંથી ફલિત થાય છે, એટલે કે $\Gamma \cup \{!A\} \Entails !B$.
+  કોઈ \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો. $!A$ છેલ્લાં અનુમાન વખતે નિવૃત્ત થાય છે, તેથી~$\delta$ની
+  !!{undischarged} ધારણાઓ માત્ર $\Gamma$ છે. એટલે આપણે
+  $\Gamma \Entails !A \lif !B$ બતાવવું છે. પ્રતિવાદ માટે માનો કે કોઈ
+  \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+  માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ પરંતુ
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$. તેથી
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ અને
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$. પરંતુ પરિકલ્પના મુજબ $!B$ એ
+  $\Gamma \cup \{!A\}$નું ફલિત છે, એટલે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$, જે વ્યાઘાત છે. તેથી
+  $\Gamma \Entails !A \lif !B$.
+
+\item છેલ્લું અનુમાન \FalseInt છે. અહીં $\delta$નો અંત આ છે:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \RightLabel{\FalseInt}
+    \UnaryInfC{$!A$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $\Gamma \Entails \lfalse$. આપણે
+  $\Gamma \Entails !A$ બતાવવું છે. નહિ એમ માનો; તો કોઈ
+  ~ $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ માટે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ અને
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$. પરંતુ હંમેશાં
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lfalse}$ હોય છે, તેથી તેનો અર્થ
+  $\Gamma \Entails/ \lfalse$ થશે, જે આગમન-પરિકલ્પનાની વિરુદ્ધ છે.
+
+\item છેલ્લું અનુમાન \FalseCl છે: અભ્યાસપ્રશ્ન.
+
+\iftag{FOL}{
+\item છેલ્લું અનુમાન \Intro{\lforall} છે. ત્યારે $\delta$નું સ્વરૂપ આ છે:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ આધારવાક્ય $!A(a)$ એ !!{undischarged}
+  ધારણાઓ~$\Gamma$નું ફલિત છે. $\Sat{M}{\Gamma}$ હોય એવી કોઈ
+  સંરચના~$\Struct{M}$ લો. આપણે $\Sat{M}{\lforall[x][!A(x)]}$ બતાવવું છે.
+  $\lforall[x][!A(x)]$ !!a{sentence} હોવાથી તેનો અર્થ દરેક
+  ચલ-નિયુક્તિ~$s$ માટે $\Sat{M}{!A(x)}[s]$ બતાવવો એવો થાય છે
+  (\olref[syn][ass]{prop:sat-quant}). $\Gamma$માં માત્ર વાક્યો હોવાથી
+  \olref[syn][sat]{defn:satisfaction} મુજબ દરેક $!B \in \Gamma$ માટે
+  $\Sat{M}{!B}[s]$. $\Struct{M'}$ એ~$\Struct{M}$ જેવી જ હોય, ફક્ત
+  $\Assign{a}{M'} = s(x)$ હોય. $a$ એ~$\Gamma$માં આવતું નથી, તેથી
+  \olref[syn][ext]{cor:extensionality-sent} મુજબ $\Sat{M'}{\Gamma}$.
+  $\Gamma \Entails !A(a)$ હોવાથી $\Sat{M'}{!A(a)}$. $!A(a)$
+  !!a{sentence} હોવાથી \olref[syn][ass]{prop:sentence-sat-true} મુજબ
+  $\Sat{M'}{!A(a)}[s]$. \olref[syn][ext]{prop:ext-formulas} મુજબ
+  $\Sat{M'}{!A(x)}[s]$ હોય જો અને માત્ર જો $\Sat{M'}{!A(a)}$ (યાદ કરો
+  કે $!A(a)$ એ માત્ર $\Subst{!A(x)}{a}{x}$ છે). તેથી
+  $\Sat{M'}{!A(x)}[s]$. $a$ એ~$!A(x)$માં આવતું નથી, તેથી
+  \olref[syn][ext]{prop:extensionality} મુજબ $\Sat{M}{!A(x)}[s]$.
+  પરંતુ $s$ મનસ્વી ચલ-નિયુક્તિ હતી, તેથી
+  $\Sat{M}{\lforall[x][!A(x)]}$.
+
+\item છેલ્લું અનુમાન \Intro{\lexists} છે: અભ્યાસપ્રશ્ન.
+
+\item છેલ્લું અનુમાન \Elim{\lforall} છે: અભ્યાસપ્રશ્ન.
+}{}
+\sourcecorrection{OLND-006}{સ્થિર અંગ્રેજી મૂળ સર્વપરિમાણકના
+નિવારણ-કિસ્સાને અહીં એકમાત્ર વાર $\Elim{\forall}$ લખે છે; પ્રકરણના
+નિયમ અને બાકીના બધા ઉપયોગ મુજબ તેને $\Elim{\lforall}$ કર્યું છે.}
+\end{enumerate}
+
+હવે અનેક આધારવાક્યો ધરાવતાં સંભવિત અનુમાનો જોઈએ:
+\Elim{\lor}, \Intro{\land},
+\iftag{FOL}{\Elim{\lif} અને \Elim{\lexists}}{\Elim{\lif}}.
+\begin{enumerate}
+
+\item છેલ્લું અનુમાન \Intro{\land} છે. આધારવાક્યો $!A$ અને $!B$માંથી
+  $!A \land !B$નું અનુમાન થાય છે અને $\delta$નું સ્વરૂપ આ છે:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!B$}
+    \RightLabel{\Intro{\land}}
+    \BinaryInfC{$!A \land !B$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $!A$ એ~$\delta_1$ની !!{undischarged}
+  ધારણાઓ~$\Gamma_1$માંથી અને $!B$ એ~$\delta_2$ની !!{undischarged}
+  ધારણાઓ~$\Gamma_2$માંથી ફલિત થાય છે. ~ $\delta$ની !!{undischarged}
+  ધારણાઓ $\Gamma_1 \cup \Gamma_2$ છે, તેથી
+  $\Gamma_1 \cup \Gamma_2 \Entails !A \land !B$ બતાવવું છે. કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો જેને $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1}$ હોવાથી
+  $\Gamma_1 \Entails !A$ પ્રમાણે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$;
+  અને $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_2}$ હોવાથી
+  $\Gamma_2 \Entails !B$ પ્રમાણે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$.
+  બંને સાથે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \land !B}$.
+
+\item છેલ્લું અનુમાન \Elim{\lor} છે: અભ્યાસપ્રશ્ન.
+
+\item છેલ્લું અનુમાન \Elim{\lif} છે. આધારવાક્યો $!A \lif !B$ અને
+  ~ $!A$માંથી $!B$નું અનુમાન થાય છે. !!{derivation}~$\delta$ આવી દેખાય છે:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A \lif !B$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!A$}
+    \RightLabel{\Elim{\lif}}
+    \BinaryInfC{$!B$}
+  \end{prooftree}
+  આગમન-પરિકલ્પના મુજબ $!A \lif !B$ એ~$\delta_1$ની
+  !!{undischarged} ધારણાઓ~$\Gamma_1$માંથી અને $!A$ એ~$\delta_2$ની
+  !!{undischarged} ધારણાઓ~$\Gamma_2$માંથી ફલિત થાય છે. કોઈ
+  \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+  લો. જો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ હોય,
+  તો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ બતાવવું છે. માનો કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$. કારણ કે
+  $\Gamma_1 \Entails !A \lif !B$, તેથી
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$. કારણ કે
+  $\Gamma_2 \Entails !A$, તેથી $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
+  તેનો અર્થ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ થાય છે (કારણ કે જો
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ હોય, તો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ હોવાથી
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ થાય, જે
+  ~ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$ને વિરુદ્ધ છે).
+
+\item છેલ્લું અનુમાન \Elim{\lnot} છે: અભ્યાસપ્રશ્ન.
+
+\tagitem{FOL}{છેલ્લું અનુમાન \Elim{\lexists} છે: અભ્યાસપ્રશ્ન.}{}
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][ntd][sou]{thm:soundness}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][ntd][sou]{thm:soundness}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+જો $\Proves !A$ હોય, તો $!A$ \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+જો $\Gamma$ સંતોષ્ય હોય, તો તે સુસંગત છે.
+\end{cor}
+
+\begin{proof}
+આપણે પ્રતિવિધાન સાબિત કરીએ. માનો કે $\Gamma$ સુસંગત નથી. ત્યારે
+$\Gamma \Proves \lfalse$, એટલે કે~$\Gamma$માંની !!{undischarged}
+ધારણાઓમાંથી $\lfalse$ની કોઈ !!a{derivation} છે. \olref{thm:soundness}
+મુજબ $\Gamma$ને સંતોષતી કોઈ પણ
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+એ $\lfalse$ને સંતોષવી જોઈએ. દરેક
+\iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+માટે $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{\lfalse}$ હોવાથી કોઈ
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ~$\Gamma$ને સંતોષી શકતી નથી;
+એટલે કે $\Gamma$ સંતોષ્ય નથી.
+\end{proof}
+
+\end{document}

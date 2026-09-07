@@ -1,22 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-05T16:59:59.631570+00:00",
+  "checkpoint_utc": "2026-09-07T15:01:55.905033+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 80,
+  "translated_units": 94,
   "publicly_verified_release_units": 59,
-  "publicly_verified_source_checkpoint_units": 65,
+  "publicly_verified_source_checkpoint_units": 80,
   "total_units": 722,
-  "aligned_linguistic_blocks": 887,
-  "source_math_spans_verified": 4594,
+  "aligned_linguistic_blocks": 1029,
+  "source_math_spans_verified": 5562,
   "semantic_review": {
-    "method": "same-agent source comparison and reverse paraphrase",
-    "samples": 466,
+    "method": "same-agent exact-block source comparison and reverse paraphrase",
+    "exact_block_reviews": 1029,
+    "samples": 500,
     "independent_native_certification": false,
-    "status": "passed_for_current_80_unit_scope"
+    "status": "passed_for_current_94_unit_scope"
   },
   "source_corrections": {
-    "count": 35,
+    "count": 41,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -52,56 +53,63 @@
       "OLSEQ-003",
       "OLSEQ-004",
       "OLSEQ-005",
-      "OLSEQ-006"
+      "OLSEQ-006",
+      "OLND-001",
+      "OLND-002",
+      "OLND-003",
+      "OLND-004",
+      "OLND-005",
+      "OLND-006"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/sequent-calculus.html",
-    "bytes": 1849265,
-    "sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479",
-    "source_units_covered": 80,
-    "sequent_calculus_units_complete": 15,
-    "rendered_sequent_calculus_sections": 14,
-    "logic_profile": "first-order LK sequent calculus, including quantifier and identity rules",
-    "mathml_nodes": 4394,
-    "mathml_tables": 70,
-    "block_mathml_nodes": 215,
-    "proof_representation_entries": 73,
+    "path": "reader/natural-deduction.html",
+    "bytes": 2189523,
+    "sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052",
+    "source_units_covered": 94,
+    "natural_deduction_units_complete": 14,
+    "rendered_natural_deduction_sections": 13,
+    "logic_profile": "first-order natural deduction, including quantifier and identity rules",
+    "mathml_nodes": 5091,
+    "mathml_tables": 72,
+    "block_mathml_nodes": 303,
+    "proof_representation_entries": 144,
     "proof_representation_kinds": {
       "axiomatic_derivation": 1,
       "closed_tableau": 1,
+      "natural_deduction_prooftree": 63,
+      "natural_deduction_rule_display": 8,
       "prooftree": 2,
       "sequent_prooftree": 58,
       "sequent_rule_display": 11
     },
     "proof_structure_totals": {
-      "trees": 88,
-      "axioms": 113,
-      "inferences": 198,
-      "deductions": 23,
-      "empty_premises": 43,
+      "trees": 174,
+      "axioms": 262,
+      "inferences": 401,
+      "deductions": 74,
+      "empty_premises": 49,
       "double_lines": 2
     },
     "truth_tables": 5,
     "images": 13,
-    "unique_ids": 300,
+    "unique_ids": 363,
     "broken_internal_links": 0,
-    "sequent_calculus_section_ids": [
-      "fol:seq:rul:sec",
-      "fol:seq:prl:sec",
-      "fol:seq:qrl:sec",
-      "fol:seq:srl:sec",
-      "fol:seq:der:sec",
-      "fol:seq:pro:sec",
-      "fol:seq:prq:sec",
-      "fol:seq:ptn:sec",
-      "fol:seq:prv:sec",
-      "fol:seq:ppr:sec",
-      "fol:seq:qpr:sec",
-      "fol:seq:sou:sec",
-      "fol:seq:ide:sec",
-      "fol:seq:sid:sec"
+    "natural_deduction_section_ids": [
+      "fol:ntd:rul:sec",
+      "fol:ntd:prl:sec",
+      "fol:ntd:qrl:sec",
+      "fol:ntd:der:sec",
+      "fol:ntd:pro:sec",
+      "fol:ntd:prq:sec",
+      "fol:ntd:ptn:sec",
+      "fol:ntd:prv:sec",
+      "fol:ntd:ppr:sec",
+      "fol:ntd:qpr:sec",
+      "fol:ntd:sou:sec",
+      "fol:ntd:ide:sec",
+      "fol:ntd:sid:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -138,43 +146,49 @@
       "OLSEQ-003",
       "OLSEQ-004",
       "OLSEQ-005",
-      "OLSEQ-006"
+      "OLSEQ-006",
+      "OLND-001",
+      "OLND-002",
+      "OLND-003",
+      "OLND-004",
+      "OLND-005",
+      "OLND-006"
     ],
     "gujarati_character_inventory_preserved": true,
     "main_gujarati_character_sequence_preserved": true,
     "footnote_gujarati_character_sequence_preserved": true,
-    "footnotes": 10,
+    "footnotes": 11,
     "stylesheet": {
       "path": "reader/reader.css",
       "href": "reader.css?v=3",
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/sequent-calculus-html-qa.json",
-      "sha256": "5d7470615656568aea0f7f26e5ed9051c19ec7db547531427df638cb60586398"
+      "path": "build/natural-deduction-html-qa.json",
+      "sha256": "02cef2fca8b42025fb6486450457f51f23c267541f8c27fe76b22e100d481e83"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
     ],
     "status": "passed_exact_dom_mathml_proof_link_asset_and_character_qa",
     "browser_inspection": "passed_actual_live_browser_inspection",
-    "block_mathml_vertical_overflow_nodes": 0
+    "block_mathml_overflow_nodes": 0
   },
   "pdf": {
-    "path": "build/gu-sequent-calculus.pdf",
-    "bytes": 989643,
-    "sha256": "654565f746938f91a2d3ff9ade7f019c276927cb12b9728e99379c2a90365861",
-    "pages": 100,
+    "path": "build/gu-natural-deduction.pdf",
+    "bytes": 1127178,
+    "sha256": "9cf3db8b374373bdb0f37cefa8ecff9e59db0da5b4a91e5df8df9591cd3b31a3",
+    "pages": 121,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "સિક્વન્ટ કલન સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "સ્વાભાવિક નિગમન સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 100,
+    "nonempty_extracted_text_pages": 121,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_009.json",
+    "build_receipt": "BUILD_RECEIPT_010.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -232,9 +246,16 @@
       "blocks": 131,
       "math": 1003,
       "semantic": 131
+    },
+    "010": {
+      "units": 14,
+      "blocks": 142,
+      "math": 968,
+      "semantic": 34,
+      "exact_block_reviews": 142
     }
   },
-  "status": "80_unit_source_html_and_reproducible_pdf_checkpoint_passed; source_checkpoint_publication_pending; complete_corpus_in_progress",
+  "status": "94_unit_working_checkpoint_passed; public_source_checkpoint_remains_80_units; artifact_release_remains_59_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -252,11 +273,11 @@
   "publication": {
     "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/propositional-syntax-semantics-v0.3.0",
     "github_receipt": "PUBLICATION_RECEIPT_003.json",
-    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_007.json",
+    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_009.json",
     "zenodo_record": "https://zenodo.org/records/22313264",
     "zenodo_doi": "10.5281/zenodo.22313264",
     "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_003.json",
-    "status": "all_artifacts_anonymously_verified"
+    "status": "current_94_unit_working_checkpoint_passed; current_source_and_artifact_publications_anonymously_verified_at_80_and_59_units"
   },
   "batch_008": {
     "draft_units": 6,
@@ -277,10 +298,14 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "35fadf9a02125305a588107b6ba5da821ef354a0077a608eedbfbea47533388d",
+    "sha256": "01944df2f5a201e81e46dad3a498162f93a3b2414788922c7dc72b8427197790",
     "status": "passed",
+    "coverage": {
+      "decisions": 167,
+      "occurrences": 175
+    },
     "reader_locators": {
-      "available": 168,
+      "available": 174,
       "pending": 0,
       "not_applicable": 1
     }
@@ -304,5 +329,27 @@
     "browser": "passed_live_browser_inspection_and_computed_style_check_of_all_215_block_mathml_nodes",
     "translation_decisions": "passed_json_schema_and_168_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
     "cumulative_gate": "CUMULATIVE_QA_009.json"
+  },
+  "batch_010": {
+    "draft_units": 14,
+    "remaining_units": [],
+    "structural_parity": "passed_after_6_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLND-001",
+      "OLND-002",
+      "OLND-003",
+      "OLND-004",
+      "OLND-005",
+      "OLND-006"
+    ],
+    "linguistic_blocks": 142,
+    "math_spans": 968,
+    "semantic_samples": "passed_142_exact_block_reviews_and_34_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_link_asset_and_character_qa_plus_reproducible_121_page_pdf_all_page_visual_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_303_block_mathml_nodes",
+    "translation_decisions": "passed_json_schema_and_174_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
+    "html_qa": "HTML_QA_010.json",
+    "pdf_qa": "PDF_QA_010.json",
+    "cumulative_gate": "CUMULATIVE_QA_010.json"
   }
 }

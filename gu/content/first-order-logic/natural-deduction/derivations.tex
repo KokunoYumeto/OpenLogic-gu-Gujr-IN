@@ -1,0 +1,104 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{der}}
+      {\olfileid{pl}{ntd}{der}}
+
+\olsection{\usetoken{P}{derivation}}
+
+\begin{explain}
+ધારણા શું છે તે આપણે કહ્યું છે અને અનુમાનના નિયમો પણ આપ્યા છે.
+સ્વાભાવિક નિગમનમાં !!^{derivation}s આ બંનેમાંથી આગમનાત્મક રીતે બને છે:
+દરેક !!{derivation} કાં તો એકલી ધારણા છે, અથવા એક, બે કે ત્રણ
+!!{derivation}s પછી આવતું યોગ્ય અનુમાન ધરાવે છે.
+\end{explain}
+
+\begin{defn}[!!^{derivation}]
+ધારણાઓ~$\Gamma$માંથી !!a{sentence}~$!A$ની \emph{!!{derivation}} એ
+!!{sentence}sનું પરિમિત વૃક્ષ છે જે નીચેની શરતો સંતોષે છે:
+\begin{enumerate}
+\item વૃક્ષનાં સૌથી ઉપરનાં !!{sentence}s કાં તો $\Gamma$માં હોય છે,
+  અથવા વૃક્ષના કોઈ અનુમાનથી !!{discharged} થાય છે.
+\item વૃક્ષનું સૌથી નીચેનું !!{sentence}~$!A$ છે.
+\item વૃક્ષમાં સૌથી નીચેના વાક્ય~$!A$ સિવાયનું દરેક !!{sentence},
+  એવા અનુમાન-નિયમના યોગ્ય ઉપયોગનું આધારવાક્ય છે જેનું ફલિતવાક્ય
+  વૃક્ષમાં એ !!{sentence}ની તરત નીચે આવે છે.
+\end{enumerate}
+પછી આપણે $!A$ને !!{derivation}નું \emph{ફલિતવાક્ય} અને $\Gamma$ને
+તેની !!{undischarged} ધારણાઓ કહીએ છીએ.
+
+$\Gamma$માંથી $!A$ની કોઈ !!a{derivation} અસ્તિત્વમાં હોય, તો આપણે
+કહીએ કે $!A$ એ~$\Gamma$માંથી \emph{!!{derivable}} છે; પ્રતીકોમાં:
+$\Gamma \Proves !A$. જો~$!A$ની એવી !!a{derivation} હોય જેમાં દરેક
+ધારણા !!{discharged} હોય, તો આપણે~$\Proves !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{ex}
+દરેક એકલી ધારણા પોતે !!a{derivation} છે. તેથી, દાખલા તરીકે, એકલું
+$!A$ !!a{derivation} છે અને એકલું $!B$ પણ છે. માનો કે આ બે પર
+$\Intro{\land}$ નિયમ લાગુ પાડીએ; તો તેમાંથી નવી !!{derivation} મળે:
+\begin{prooftree}
+\AxiomC{$!A$}
+\AxiomC{$!B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !B$}
+\end{prooftree}
+આ નિયમો સામાન્ય છે: તેમાંનાં $!A$ અને~$!B$ને કોઈ પણ !!{sentence}sથી,
+દાખલા તરીકે $!C$ અને~$!D$થી, બદલી શકીએ છીએ. ત્યારે ફલિતવાક્ય
+$!C \land !D$ થશે; તેથી
+\begin{prooftree}
+\AxiomC{$!C$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\end{prooftree}
+યોગ્ય !!{derivation} છે. અલબત્ત, ધારણાઓની અદલાબદલી પણ કરી શકીએ,
+જેથી $!D$ એ~$!A$ની અને $!C$ એ~$!B$ની ભૂમિકા ભજવે. તેથી
+\begin{prooftree}
+\AxiomC{$!D$}
+\AxiomC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!D \land !C$}
+\end{prooftree}
+પણ યોગ્ય !!{derivation} છે.
+
+હવે આપણે બીજો નિયમ, માનો કે $\Intro{\lif}$, લાગુ પાડી શકીએ છીએ. તે
+આપણને પ્રેરણનું ફલિત કાઢવાની અને એ પ્રેરણના પૂર્વવર્તી સાથે તાદાત્મ્ય
+ધરાવતી કોઈ પણ ધારણાને !!{discharge} કરવાની છૂટ આપે છે. તેથી નીચેનાં
+બંને યોગ્ય !!{derivation}s છે:
+\begin{prooftree}
+\AxiomC{$\Discharge{!C}{1}$}
+\AxiomC{$!D$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!C \lif (!C \land !D)$}
+\DisplayProof\bottomAlignProof
+\AxiomC{$!C$}
+\AxiomC{$\Discharge{!D}{1}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!C \land !D$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$!D \lif (!C \land !D)$}
+\end{prooftree}
+તેઓ અનુક્રમે બતાવે છે કે $!D \Proves !C \lif (!C \land !D)$ અને
+$!C \Proves !D \lif (!C \land !D)$.
+
+યાદ રાખો કે ધારણાઓ નિવૃત્ત કરવી એ છૂટ છે, આવશ્યકતા નહીં: આપણે ધારણાઓ
+નિવૃત્ત કરવી જ પડે એમ નથી. ખાસ કરીને, ધારણાઓ !!{derivation}માં હાજર ન
+હોય તોપણ નિયમ લાગુ કરી શકીએ છીએ. દાખલા તરીકે, !!{discharged} કરવા માટે કોઈ
+ધારણા~$!A$ ન હોવા છતાં નીચેનું માન્ય છે:
+\begin{prooftree}
+  \AxiomC{$!B$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$!A \lif !B$}
+\end{prooftree}
+\end{ex}
+
+\end{document}

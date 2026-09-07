@@ -1,0 +1,54 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{rul}}
+      {\olfileid{pl}{ntd}{rul}}
+
+\olsection{નિયમો અને \usetoken{P}{derivation}}
+
+\begin{explain}
+સ્વાભાવિક નિગમનનાં તંત્રો ગણિતીય સાબિતીમાં વપરાતી અનૌપચારિક
+તર્કપ્રક્રિયાને નજીકથી અનુસરવા માટે રચાયાં છે (એટલે તે કંઈક અંશે
+``સ્વાભાવિક'' છે). સ્વાભાવિક નિગમનની સાબિતીઓ ધારણાઓથી શરૂ થાય છે.
+પછી અનુમાન-નિયમો લાગુ પાડવામાં આવે છે. \Intro{\lnot}, \Intro{\lif},
+\iftag{FOL}{\Elim{\lor} અને \Elim{\lexists}}{ તથા \Elim{\lor}}
+અનુમાન-નિયમો ધારણાઓને ``!!{discharged}'' કરે છે; સ્પષ્ટતા માટે
+!!{discharged} ધારણાનું ચિહ્ન અનુમાનની બાજુમાં મૂકવામાં આવે છે.
+\end{explain}
+
+\begin{defn}[ધારણા]
+કોઈ પણ શાખામાં સૌથી ઉપરના સ્થાને આવતું કોઈ પણ !!{sentence}
+\emph{ધારણા} છે.
+\end{defn}
+
+સ્વાભાવિક નિગમનમાં !!^{derivation}s એ !!{sentence}sનાં અમુક વૃક્ષો છે.
+તેમાં સૌથી ઉપરનાં !!{sentence}s ધારણાઓ હોય છે; અને જો !!a{sentence}
+બીજા એક, બે કે ત્રણ !!{sentence}sની નીચે આવે, તો તે અનુમાનના કોઈ નિયમથી
+યોગ્ય રીતે ફલિત થવું જોઈએ. અનુમાનની ઉપરનાં !!{sentence}sને
+\emph{આધારવાક્યો} અને નીચેના !!{sentence}ને અનુમાનનું \emph{ફલિતવાક્ય}
+કહે છે. નિયમો જોડીઓમાં આવે છે: દરેક !!{operator} માટે એક પરિચય-નિયમ
+અને એક નિવારણ-નિયમ. તેઓ ફલિતવાક્યમાં !!a{operator} દાખલ કરે છે અથવા
+નિયમના કોઈ આધારવાક્યમાંથી !!a{operator} દૂર કરે છે. કેટલાક નિયમો અમુક
+પ્રકારની ધારણાને \emph{!!{discharged}} કરવાની છૂટ આપે છે. કઈ ધારણા કયા
+અનુમાનથી !!{discharged} થાય છે તે બતાવવા માટે ધારણા અને અનુમાન બંનેને
+ચિહ્ન આપીએ છીએ. ધારણાને ``$\Discharge{!A}{n}$'' એમ લખીને આ દર્શાવાય છે.
+\sourcecorrection{OLND-001}{સ્થિર અંગ્રેજી મૂળમાં આ વૃક્ષવર્ણનના એક સ્થાને
+``બીજા સિક્વન્ટો'' લખાયું છે; સ્વાભાવિક નિગમનનું વૃક્ષ વાક્યોનું હોવાથી
+અહીં આશય મુજબ ``બીજાં વાક્યો'' વાંચ્યું છે.}
+
+% Only include this sentence is on of \land, lor, lif or lnot is defined.
+
+\iftag{notprvNot,notprvAnd,notprvOr,notprvIf}{}%
+	{$\land$, $\lor$, $\lif$, $\lnot$ અને $\lfalse$માંથી કેટલાક
+!!{operator}s વ્યાખ્યાયિત હોય તોપણ, તે બધા માટે નિયમો ધ્યાનમાં લેવાનો
+રિવાજ છે.}
+
+
+
+\end{document}

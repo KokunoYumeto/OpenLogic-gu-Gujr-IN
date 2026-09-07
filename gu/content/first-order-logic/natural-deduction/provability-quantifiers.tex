@@ -1,0 +1,63 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-quantifiers
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{qpr}
+
+\olsection{\usetoken{S}{derivability} અને પરિમાણકો}
+
+\begin{explain}
+  પૂર્ણતા-પ્રમેય માટે એ પણ જરૂરી છે કે સ્વાભાવિક નિગમનના નિયમો આ
+  વિભાગમાં સ્થાપેલી~$\Proves$ વિશેની હકીકતો આપે.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} જો $c$ એવું અચલ હોય જે $\Gamma$ અથવા
+$!A(x)$માં આવતું ન હોય અને $\Gamma \Proves !A(c)$ હોય, તો
+$\Gamma \Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+$\Gamma$માંથી $!A(c)$ની !!a{derivation}ને $\delta$ કહો.
+\Intro{\lforall} અનુમાન ઉમેરવાથી $\lforall[x][!A(x)]$ની
+!!a{derivation} મળે છે. $c$ એ $\Gamma$ કે $!A(x)$માં આવતું નથી, તેથી
+આઇગનચલ-શરત સંતોષાય છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{નીચે આપેલું~$!A(t)$માંથી~$\lexists[x][!A(x)]$ની
+  !!a{derivation} છે:
+\begin{prooftree}
+\AxiomC{$!A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A(x)]$}
+\end{prooftree}}{}
+
+\tagitem{prvAll}{નીચે આપેલું~$\lforall[x][!A(x)]$માંથી~$!A(t)$ની
+  !!a{derivation} છે:
+\begin{prooftree}
+\AxiomC{$\lforall[x][!A(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(t)$}
+\end{prooftree}}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

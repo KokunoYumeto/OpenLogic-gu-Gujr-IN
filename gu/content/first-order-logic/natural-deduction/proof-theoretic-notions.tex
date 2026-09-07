@@ -1,0 +1,159 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{ptn}}
+      {\olfileid{pl}{ntd}{ptn}}
+
+\olsection{સાબિતી-સૈદ્ધાંતિક ખ્યાલો}
+
+\begin{editorial}
+આ વિભાગ સ્વાભાવિક નિગમન માટે સાબિત કરી શકાય તેવા હોવાના સંબંધ અને
+સુસંગતતાની વ્યાખ્યાઓ એકત્ર કરે છે.
+\end{editorial}
+
+\begin{explain}
+આપણે અનેક મહત્વના અર્થાનુસારી ખ્યાલો (પ્રામાણ્ય, ફલિતતા અને સંતોષ્યતા)
+વ્યાખ્યાયિત કર્યા છે; એ જ રીતે હવે તેમને અનુરૂપ \emph{સાબિતી-સૈદ્ધાંતિક
+ખ્યાલો} વ્યાખ્યાયિત કરીએ છીએ. આ ખ્યાલો !!{structure}sમાં !!{sentence}sના
+સંતોષનો આશરો લઈને નહિ, પરંતુ કેટલાક !!{sentence}sની બીજાં વાક્યોમાંથી
+!!{derivability} અથવા !!{nonderivability}નો આશરો લઈને વ્યાખ્યાયિત થાય છે.
+આ બંને પ્રકારના ખ્યાલો મળી જાય છે એ એક મહત્વની શોધ હતી. તેઓ મળે છે તે
+જ \emph{યથાર્થતા} અને \emph{પૂર્ણતાના પ્રમેયો}નો વિષય છે.
+\end{explain}
+
+
+\begin{defn}[પ્રમેયો]
+જો સ્વાભાવિક નિગમનમાં~$!A$ની એવી !!a{derivation} હોય જેમાં બધી ધારણાઓ
+!!{discharged} હોય, તો !!{sentence}~$!A$ \emph{પ્રમેય} છે. $!A$
+પ્રમેય હોય તો $\Proves !A$ અને ન હોય તો $\Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence} $!A$ એ !!{sentence}sના ગણ~$\Gamma$માંથી
+\emph{!!{derivable}} છે, $\Gamma \Proves !A$, જો ફલિતવાક્ય~$!A$ ધરાવતી
+એવી !!{derivation} હોય જેમાં દરેક ધારણા કાં તો !!{discharged} હોય અથવા
+~$\Gamma$માં હોય. $!A$ એ $\Gamma$માંથી !!{derivable} ન હોય તો
+$\Gamma \Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[સુસંગતતા]
+!!{sentence}sનો ગણ~$\Gamma$ \emph{અસુસંગત} છે જો અને માત્ર જો
+$\Gamma \Proves \lfalse$. જો $\Gamma$ અસુસંગત ન હોય, એટલે કે
+$\Gamma \Proves/ \lfalse$, તો તેને \emph{સુસંગત} કહીએ છીએ.
+\end{defn}
+
+\begin{prop}[સ્વવાચકતા]
+\ollabel{prop:reflexivity}
+જો $!A \in \Gamma$ હોય, તો $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+એકલી ધારણા $!A$ એ~$!A$ની એવી !!a{derivation} છે જેમાં દરેક
+!!{undischarged} ધારણા (એટલે કે $!A$) ~ $\Gamma$માં છે.
+\end{proof}
+
+
+\begin{prop}[એકદિશવર્ધિતા]
+\ollabel{prop:monotonicity}
+જો $\Gamma \subseteq \Delta$ અને $\Gamma \Proves !A$ હોય, તો
+$\Delta \Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$માંથી $!A$ની કોઈ પણ !!{derivation} એ~$\Delta$માંથી $!A$ની પણ
+!!a{derivation} છે.
+\end{proof}
+
+\begin{prop}[પરંપરિતતા]
+\ollabel{prop:transitivity}
+જો $\Gamma \Proves !A$ અને $\{!A\} \cup \Delta \Proves !B$ હોય, તો
+$\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+જો $\Gamma \Proves !A$ હોય, તો એવી !!a{derivation}~$\delta_0$ હોય છે
+જેમાં~$!A$નું ફલિતવાક્ય અને બધી !!{undischarged} ધારણાઓ~$\Gamma$માં છે.
+જો $\{!A\} \cup \Delta \Proves !B$ હોય, તો એવી
+!!a{derivation}~$\delta_1$ હોય છે જેમાં~$!B$નું ફલિતવાક્ય અને બધી
+!!{undischarged} ધારણાઓ~$\{!A\} \cup \Delta$માં છે. હવે જુઓ:
+\begin{prooftree}
+  \AxiomC{$\Delta, \Discharge{!A}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!B$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$!A \lif !B$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$!A$}
+  \RightLabel{\Elim{\lif}}
+  \BinaryInfC{$!B$}
+\end{prooftree}
+હવે બધી !!{undischarged} ધારણાઓ $\Gamma \cup \Delta$માં છે, તેથી આ
+$\Gamma \cup \Delta \Proves !B$ બતાવે છે.
+\end{proof}
+
+$\Gamma = \{!A_1, !A_2, \ldots, !A_k\}$ સાન્ત ગણ હોય ત્યારે
+$\Gamma \Proves !B$ માટે આપણે સરળ સંકેત
+$!A_1,!A_2,\ldots,!A_k \Proves !B$ વાપરી શકીએ છીએ. ખાસ કરીને,
+$!A \Proves !B$નો અર્થ $\{!A\} \Proves !B$ થાય છે.
+
+નોંધો કે જો $\Gamma \Proves !A$ અને $!A \Proves !B$ હોય, તો
+$\Gamma \Proves !B$. વળી, જો $!A_1, \dots, !A_n \Proves !B$ અને
+દરેક~$i$ માટે $\Gamma \Proves !A_i$ હોય, તો $\Gamma \Proves !B$
+એવું પણ ફલિત થાય છે.
+
+\begin{prop}
+\ollabel{prop:incons}
+નીચેની શરતો સમકક્ષ છે.
+    \begin{enumerate}
+      \item \( \Gamma \) અસુસંગત છે.
+      \item દરેક !!{sentence}~\( {!A} \) માટે \( \Gamma \Proves {!A} \).
+      \item કોઈ !!{sentence}~\( {!A} \) માટે \( \Gamma \Proves {!A} \) અને \( \Gamma \Proves \lnot {!A} \).
+    \end{enumerate}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][ntd][ptn]{prop:incons} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][ntd][ptn]{prop:incons} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\begin{prop}[સઘનતા]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item જો $\Gamma \Proves !A$ હોય, તો એવો સાન્ત ઉપગણ
+    $\Gamma_0 \subseteq \Gamma$ છે કે $\Gamma_0 \Proves !A$.
+  \item જો $\Gamma$નો દરેક સાન્ત ઉપગણ સુસંગત હોય, તો $\Gamma$ સુસંગત છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item જો $\Gamma \Proves !A$ હોય, તો $\Gamma$માંથી~$!A$ની કોઈ
+      !!a{derivation}~$\delta$ છે. $\delta$ની !!{undischarged}
+      ધારણાઓના ગણને $\Gamma_0$ કહો. દરેક !!{derivation} સાન્ત હોવાથી
+      $\Gamma_0$માં માત્ર સાન્ત સંખ્યામાં !!{sentence}s હોઈ શકે. તેથી
+      $\delta$ એ સાન્ત $\Gamma_0 \subseteq \Gamma$માંથી~$!A$ની
+      !!a{derivation} છે.
+    \item $!A \ident \lfalse$ હોય એ વિશેષ કિસ્સામાં આ (1)નું
+      પ્રતિવિધાન છે.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

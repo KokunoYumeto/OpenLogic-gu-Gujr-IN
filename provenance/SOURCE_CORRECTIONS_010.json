@@ -1,0 +1,151 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-07T14:11:44.605308+00:00",
+  "audit_id": "GU-OLND-20260905",
+  "audit_method": "Same-agent exact comparison against the frozen source, controlling rule displays, proof-tree premises and conclusions, and proof-local semantics within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLND-001",
+      "unit_id": "OLP-0085",
+      "classification": "confirmed_copied_sequent_term_in_sentence_tree",
+      "finding": "The natural-deduction tree is explicitly a tree of sentences, but one copied phrase calls the nodes above a sentence ‘sequents’.",
+      "source_path": "content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_locator": "rules-and-proofs.tex:33",
+      "source_bytes": 2061,
+      "source_sha256": "e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506",
+      "target_path": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_bytes": 4038,
+      "target_sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+      "corrected_body_line": 32,
+      "adjacent_note_line": 41,
+      "handling": "Read the copied term as ‘sentences’ and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "other sequents",
+        "added": "other sentences"
+      },
+      "controlling_evidence": "The surrounding definition, the immediately following premise/conclusion terminology, and the chapter's proof trees all identify these nodes as sentences rather than sequents.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLND-002",
+      "unit_id": "OLP-0089",
+      "classification": "confirmed_copied_end_sequent_term_in_natural_deduction",
+      "finding": "The prose calls the final natural-deduction sentence a sentence in the end-sequent, although no sequent occurs in this proof system or example.",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_locator": "proving-things.tex:67",
+      "source_bytes": 11062,
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_bytes": 15678,
+      "target_sha256": "ff8d304b76983fd480a52086a4c2fbf9f9f0f4659df28c8822ee743a803eadd3",
+      "corrected_body_line": 59,
+      "adjacent_note_line": 63,
+      "handling": "Referred to the sentence in the conclusion and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "sentence in the end-sequent",
+        "added": "sentence in the conclusion"
+      },
+      "controlling_evidence": "The displayed natural-deduction tree has a single conclusion, and the preceding paragraph explicitly calls that bottom formula the conclusion.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLND-003",
+      "unit_id": "OLP-0089",
+      "classification": "confirmed_wrong_rule_label_on_contradiction_step",
+      "finding": "A binary step from not-A and A to falsity is labelled falsity introduction, although the defined falsity-introduction rule is unary and derives an arbitrary formula from falsity.",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_locator": "proving-things.tex:133",
+      "source_bytes": 11062,
+      "source_sha256": "d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_bytes": 15678,
+      "target_sha256": "ff8d304b76983fd480a52086a4c2fbf9f9f0f4659df28c8822ee743a803eadd3",
+      "corrected_body_line": 125,
+      "adjacent_note_line": 140,
+      "handling": "Relabelled the step as negation elimination and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\RightLabel{\\Intro{\\lfalse}}",
+        "added": "\\RightLabel{\\Elim{\\lnot}}"
+      },
+      "controlling_evidence": "The displayed negation-elimination rule has exactly premises not-A and A and conclusion falsity; the preceding prose names that rule.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLND-004",
+      "unit_id": "OLP-0090",
+      "classification": "confirmed_missing_negation_in_eigenvariable_check",
+      "finding": "The eigenvariable discussion drops the negation from the existential premise used throughout the declared goal and every adjacent proof tree.",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_locator": "proving-things-quant.tex:39",
+      "source_bytes": 9548,
+      "source_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_bytes": 14046,
+      "target_sha256": "d209af97317ad61cc26a4da1cd40366e592b982c6b7f429c77070ed698e7b81a",
+      "corrected_body_line": 35,
+      "adjacent_note_line": 38,
+      "handling": "Restored the negation in the prose premise and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lexists[x][!A(x)]",
+        "added": "\\lexists[x][\\lnot !A(x)]"
+      },
+      "controlling_evidence": "The example goal and all four displayed stages use exists x not-A(x) as the premise governed by existential elimination.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLND-005",
+      "unit_id": "OLP-0090",
+      "classification": "confirmed_undefined_existential_elimination_operator",
+      "finding": "The final eigenvariable check uses the raw TeX existential symbol rather than the chapter's defined logical existential operator inside the elimination-rule macro.",
+      "source_path": "content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_locator": "proving-things-quant.tex:91",
+      "source_bytes": 9548,
+      "source_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_bytes": 14046,
+      "target_sha256": "d209af97317ad61cc26a4da1cd40366e592b982c6b7f429c77070ed698e7b81a",
+      "corrected_body_line": 88,
+      "adjacent_note_line": 91,
+      "handling": "Used the defined existential-elimination operator consistently and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\Elim{\\exists}",
+        "added": "\\Elim{\\lexists}"
+      },
+      "controlling_evidence": "The rule definition and every proof-tree invocation in the chapter use \\Elim{\\lexists}.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLND-006",
+      "unit_id": "OLP-0095",
+      "classification": "confirmed_undefined_universal_elimination_operator",
+      "finding": "One soundness case uses the raw TeX universal symbol rather than the chapter's defined logical universal operator inside the elimination-rule macro.",
+      "source_path": "content/first-order-logic/natural-deduction/soundness.tex",
+      "source_locator": "soundness.tex:207",
+      "source_bytes": 13016,
+      "source_sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_bytes": 19261,
+      "target_sha256": "23055ad895028174f53f9061f2724fdd4f8df49941d2d085216c4bda6d32cbb8",
+      "corrected_body_line": 202,
+      "adjacent_note_line": 204,
+      "handling": "Used the defined universal-elimination operator consistently and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\Elim{\\forall}",
+        "added": "\\Elim{\\lforall}"
+      },
+      "controlling_evidence": "The quantifier-rule definition and every other universal-elimination invocation in the chapter use \\Elim{\\lforall}.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_010.json",
+  "status": "six_repairs_applied_and_disclosed; reader QA pending",
+  "reader_render": "The final deterministic 121-page cumulative PDF and exact HTML reader both passed; every PDF page was rendered and visually inspected."
+}

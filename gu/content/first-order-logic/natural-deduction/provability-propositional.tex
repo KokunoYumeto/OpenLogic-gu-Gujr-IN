@@ -1,0 +1,133 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: provability-propositional
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{ntd}{ppr}}
+      {\olfileid{pl}{ntd}{ppr}}
+
+\olsection{\usetoken{S}{derivability} અને વિધાનાત્મક સંયોજકો}
+
+\begin{explain}
+  આપણે સ્થાપીએ છીએ કે સ્વાભાવિક નિગમનનો !!{derivability} સંબંધ~$\Proves$
+  વિધાનાત્મક સંયોજકોને લગતી કેટલીક પાયાની હકીકતો સ્થાપવા જેટલો સમર્થ
+  છે; જેમ કે $!A \land !B \Proves !A$ અને
+  $!A, !A \lif !B \Proves !B$ (મોડસ પોનેન્સ). પૂર્ણતા-પ્રમેયની
+  સાબિતી માટે આ હકીકતો જરૂરી છે.
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} $!A \land !B \Proves !A$
+    અને $!A \land !B \Proves !B$ બંને સધાય છે.
+  \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land !B$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item આપણે બંનેને !!{derive} કરી શકીએ છીએ:
+    \begin{prooftree}
+      \AxiomC{$!A \land !B$}
+      \RightLabel{\Elim{\land}}
+      \UnaryInfC{$!A$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$!A \land !B$}
+      \RightLabel{\Elim{\land}}
+      \UnaryInfC{$!B$}
+    \end{prooftree}
+  \item આપણે નીચેનું !!{derive} કરી શકીએ છીએ:
+    \begin{prooftree}
+      \AxiomC{$!A$}
+      \AxiomC{$!B$}
+      \RightLabel{\Intro{\land}}
+      \BinaryInfC{$!A \land !B$}
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ અસુસંગત છે.
+  \item $!A \Proves !A \lor !B$ અને $!B \Proves !A \lor !B$ બંને સધાય છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item નીચેની !!{derivation} જુઓ:
+    \begin{prooftree}
+      \AxiomC{$!A \lor !B$}
+      \AxiomC{$\lnot !A$}
+      \AxiomC{$\Discharge{!A}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \AxiomC{$\lnot !B$}
+      \AxiomC{$\Discharge{!B}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \DischargeRule{\Elim{\lor}}{1}
+      \TrinaryInfC{$\lfalse$}
+    \end{prooftree}
+    આ !!{undischarged} ધારણાઓ $!A \lor !B$, $\lnot !A$ અને
+    $\lnot !B$માંથી~$\lfalse$ની !!a{derivation} છે.
+  \item આપણે બંનેને !!{derive} કરી શકીએ છીએ:
+    \begin{prooftree}
+      \AxiomC{$!A$}
+      \RightLabel{\Intro{\lor}}
+      \UnaryInfC{$!A \lor !B$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$!B$}
+      \RightLabel{\Intro{\lor}}
+      \UnaryInfC{$!A \lor !B$}
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left} $!A, !A \lif !B \Proves !B$.
+  \item \ollabel{prop:provability-lif-right}
+    $\lnot !A \Proves !A \lif !B$ અને $!B \Proves !A \lif !B$ બંને સધાય છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item આપણે નીચેનું !!{derive} કરી શકીએ છીએ:
+    \begin{prooftree}
+      \AxiomC{$!A \lif !B$}
+      \AxiomC{$!A$}
+      \RightLabel{\Elim{\lif}}
+      \BinaryInfC{$!B$}
+    \end{prooftree}
+
+  \item નીચેની બે !!{derivation}s આ બતાવે છે:
+    \begin{prooftree}
+      \AxiomC{$\lnot !A$}
+      \AxiomC{$\Discharge{!A}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \RightLabel{\FalseInt}
+      \UnaryInfC{$!B$}
+      \DischargeRule{\Intro{\lif}}{1}
+      \UnaryInfC{$!A \lif !B$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$!B$}
+      \RightLabel{\Intro{\lif}}
+      \UnaryInfC{$!A \lif !B$}
+    \end{prooftree}
+    નોંધો કે $\Intro{\lif}$ને ધારણા~$!A$ !!{discharge} કરવાની છૂટ છે,
+    પરંતુ તેમ કરવું ફરજિયાત નથી.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

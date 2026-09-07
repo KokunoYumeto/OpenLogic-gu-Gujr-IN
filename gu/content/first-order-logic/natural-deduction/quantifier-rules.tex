@@ -1,0 +1,106 @@
+% Part: first-order-logic
+% Chapter: natural-deduction
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{ntd}{qrl}
+
+\olsection{પરિમાણક નિયમો}
+
+\subsection{$\lforall$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{$!A(a)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][\Atom{!A}{x}]$}
+\DisplayProof
+\hfill
+\AxiomC{$\lforall[x][\Atom{!A}{x}]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!A(t)$}
+\DisplayProof
+\end{defish}
+
+$\lforall$ માટેના નિયમોમાં $t$ બંધ પદ છે (એવું પદ જેમાં કોઈ ચલ આવતો
+નથી), અને $a$ એવો !!a{constant} છે જે ફલિતવાક્ય
+$\lforall[x][!A(x)]$માં અથવા આધારવાક્ય~$!A(a)$ પર સમાપ્ત થતી
+!!{derivation}માં !!{undischarged} રહેતી કોઈ ધારણામાં આવતો નથી.
+અનુમાન \Intro{\lforall}ના $a$ને આપણે \emph{આઇગનચલ} કહીએ છીએ.\footnote{
+ઉપરના નિયમમાં $a$ અચળ હોવા છતાં આપણે ``આઇગનચલ'' શબ્દ વાપરીએ છીએ.
+તેના ઐતિહાસિક કારણો છે.}
+
+\subsection{$\lexists$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{$\Atom{!A}{t}$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][\Atom{!A}{x}]$}
+\DisplayProof
+\hfill
+\AxiomC{$\lexists[x][\Atom{!A}{x}]$}
+\AxiomC{[$\Atom{!A}{a}$]$^n$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{n}
+\BinaryInfC{$!C$}
+\DisplayProof
+\end{defish}
+
+ફરીથી, $t$ બંધ પદ છે, અને $a$ એવો !!a{constant} છે જે આધારવાક્ય
+$\lexists[x][!A(x)]$માં, ફલિતવાક્ય~$!C$માં, અથવા બંને આધારવાક્યો પર
+સમાપ્ત થતી !!{derivation}sમાં !!{undischarged} રહેતી કોઈ ધારણામાં
+(ધારણાઓ $!A(a)$ સિવાય) આવતો નથી. અનુમાન \Elim{\lexists}ના $a$ને
+આપણે \emph{આઇગનચલ} કહીએ છીએ.
+
+\Intro{\lforall} અથવા \Elim{\lexists} અનુમાન તરફ લઈ જતી
+!!{derivation}sમાં કોઈ આઇગનચલ આધારવાક્યોમાં કે કોઈ !!{undischarged}
+ધારણામાં ન આવે એવી શરતને \emph{આઇગનચલ-શરત} કહે છે.
+
+\begin{explain}
+યાદ કરો કે $!A$ એવા !!a{formula} હોય જેમાં !!{variable}~$x$ મુક્ત હોય,
+તો આપણે તેને~$!A(x)$ લખીને દર્શાવીએ છીએ. એ જ સંદર્ભમાં $!A(t)$ એ
+~$\Subst{!A}{t}{x}$નું સંક્ષિપ્ત રૂપ છે. તેથી $\Intro\lexists$ નિયમને
+આ રીતે પણ લખી શકીએ:
+\begin{prooftree}
+\AxiomC{$\Subst{!A}{t}{x}$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A]$}
+\end{prooftree}
+નોંધો કે $t$ કદાચ $!A$માં પહેલેથી આવતું હોય; દાખલા તરીકે,
+$!A$ કદાચ~$\Atom{\Obj P}{t,x}$ હોય. તેથી~$\Atom{\Obj P}{t,t}$ પરથી
+$\lexists[x][\Atom{\Obj P}{t,x}]$નું અનુમાન કરવું એ
+$\Intro\lexists$નો યોગ્ય ઉપયોગ છે---આધારવાક્યમાં આવતાં $t$નાં એક કે
+વધુ, પણ જરૂરી નથી કે બધાં જ, આવર્તનોને બદ્ધ !!{variable}~$x$થી
+``બદલી'' શકાય છે. પરંતુ $\Intro\lforall$ અને~$\Elim\lexists$ની
+આઇગનચલ-શરતો મુજબ !!{constant}~$a$ એ~$!A$માં ન આવવો જોઈએ. તેથી
+$\Atom{\Obj P}{a,a}$ પરથી~$\Intro\lforall$ વાપરીને
+$\lforall[x][\Atom{\Obj P}{a,x}]$નું યોગ્ય અનુમાન કરી શકાતું નથી.
+\end{explain}
+
+\begin{explain}
+\Intro{\lexists} અને \Elim{\lforall}માં કોઈ નિયંત્રણ નથી અને
+પદ~$t$ કંઈ પણ હોઈ શકે છે, એટલે કોઈ શરતની ચિંતા કરવાની નથી. બીજી બાજુ,
+\Elim{\lexists} અને \Intro{\lforall} નિયમોમાં આઇગનચલ-શરત મુજબ
+!!{constant}~$a$ ફલિતવાક્યમાં કે કોઈ !!{undischarged} ધારણામાં ક્યાંય
+ન આવવો જોઈએ. તંત્ર યથાર્થ રહે---અર્થાત્ જે !!{sentence}s જે
+!!{undischarged} ધારણાઓમાંથી ફલિત થાય માત્ર તેમને જ !!{derive}s કરે---તે
+માટે આ શરત જરૂરી છે. આ શરત વિના નીચેનું માન્ય ગણાત:
+\begin{prooftree}
+  \AxiomC{$\lexists[x][!A(x)]$}
+  \AxiomC{$\Discharge{!A(a)}{1}$}
+  \RightLabel{*\Intro{\lforall}}
+  \UnaryInfC{$\lforall[x][!A(x)]$}
+  \RightLabel{\Elim{\lexists}}
+  \BinaryInfC{$\lforall[x][!A(x)]$}
+\end{prooftree}
+પરંતુ $\lexists[x][!A(x)] \Entails/ \lforall[x][!A(x)]$.
+
+પરિમાણકો માટેના નિવારણ-નિયમો !!{variable}sના સ્થાને માત્ર બંધ પદો
+મૂકવાની છૂટ આપે છે; તેથી !!{sentence}sના ગણમાંથી નિષ્પન્ન કરી શકાય એવું
+કોઈ પણ !!{formula} પોતે પણ !!a{sentence} હોય છે.
+\end{explain}
+
+
+\end{document}

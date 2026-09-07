@@ -1,0 +1,4438 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewed_at_utc": "2026-09-07T14:15:50.308951+00:00",
+  "batch": "OLP-0084–0097 First-order Logic natural deduction under the complete classical first-order profile",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with selected independently worded reverse paraphrases focused on tree direction, rule arity, discharge dependencies, eigenvariable scope, proof-theoretic quantifiers, semantic polarity, identity substitution and all six adjacent disclosed source repairs.",
+  "all_drafted_blocks_directly_compared_during_translation": 142,
+  "reverse_paraphrase_samples": 34,
+  "blocks": [
+    {
+      "segment_id": "OLP-0084-B004",
+      "unit_id": "OLP-0084",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "source_range_utf8": [
+        137,
+        243
+      ],
+      "target_range_utf8": [
+        137,
+        295
+      ],
+      "source_sha256": "bbc07022b13985da35cd5eed94cc956cea3265ae0925b39eb351fee2f634a50d",
+      "target_sha256": "70306d5854ccdde04b90ebba8af93ad82ab1b6b2169eea8e099354a12351ae57",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Chapter identity, Gentzen/Prawitz scope and the prfND profile are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0084-B005",
+      "unit_id": "OLP-0084",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "source_range_utf8": [
+        245,
+        344
+      ],
+      "target_range_utf8": [
+        297,
+        506
+      ],
+      "source_sha256": "f217f214cd722c5f0cc7c528e237676489fd68bf434c3098cd7e64a604308f23",
+      "target_sha256": "c7caff62d00641eb2c4c09c3329e9619f07a3d6e2167a97087779437ee720651",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Chapter identity, Gentzen/Prawitz scope and the prfND profile are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0084-B006",
+      "unit_id": "OLP-0084",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "source_range_utf8": [
+        348,
+        466
+      ],
+      "target_range_utf8": [
+        508,
+        802
+      ],
+      "source_sha256": "ff3789a7cec4bd99c81652f437f63ee1f99c3e03ad065b881a095ff9615320ce",
+      "target_sha256": "eb80be9ed959fe90ab467d158430c2e1f55375228ad5da9db571680069e29d58",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Chapter identity, Gentzen/Prawitz scope and the prfND profile are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0085-B005",
+      "unit_id": "OLP-0085",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_range_utf8": [
+        243,
+        289
+      ],
+      "target_range_utf8": [
+        243,
+        305
+      ],
+      "source_sha256": "5a82e732bf4df2ef40a34a6d97540044541abaa10f14ca1fc8769f0ac9562d6a",
+      "target_sha256": "1acf3558b6786d8804ef4bda84a06ffe3e83c5dd628163b2761204b8b86584c1",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Assumptions, discharge permissions, rule premises and conclusions, and tree orientation are preserved after OLND-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0085-B006",
+      "unit_id": "OLP-0085",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_range_utf8": [
+        291,
+        789
+      ],
+      "target_range_utf8": [
+        307,
+        1327
+      ],
+      "source_sha256": "fb50c0acd744bd1d236ae061ad31e2ebd117edf7a44d16761edb737da8e3950b",
+      "target_sha256": "eb99880bc8034ff4e2a3473c03b92ad8753879f10a6c48bbfebfbbd6c06204f1",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Assumptions, discharge permissions, rule premises and conclusions, and tree orientation are preserved after OLND-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0085-B007",
+      "unit_id": "OLP-0085",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_range_utf8": [
+        791,
+        906
+      ],
+      "target_range_utf8": [
+        1329,
+        1533
+      ],
+      "source_sha256": "4843501bb744b21a5069d7728b95fe1a29e80772ddbaa7384b201c0712cab7f2",
+      "target_sha256": "79b99372de3da1314513cb76963fefd2651bed1d55517d0a1d95fb68b94d2b9d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Assumptions, discharge permissions, rule premises and conclusions, and tree orientation are preserved after OLND-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0085-B008",
+      "unit_id": "OLP-0085",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_range_utf8": [
+        908,
+        1770
+      ],
+      "target_range_utf8": [
+        1535,
+        3618
+      ],
+      "source_sha256": "af82e4c95a61820f0be8c8862666226597792bda8c1b9260ed5d4332941c15fe",
+      "target_sha256": "9d3e601460810121d4c00cdabcf1a8f805a1a5063c5f797b1d55238e7a7e58f8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Assumptions, discharge permissions, rule premises and conclusions, and tree orientation are preserved after OLND-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0085-B010",
+      "unit_id": "OLP-0085",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "source_range_utf8": [
+        1847,
+        2042
+      ],
+      "target_range_utf8": [
+        3695,
+        4019
+      ],
+      "source_sha256": "9107a3c9d0403b3cd87f669a31d997caa5d373daede016f333dc008a9ba16174",
+      "target_sha256": "278b36a0320e04d3b15350282152725a68ac567b6500a5d33eb506845970cdde",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Assumptions, discharge permissions, rule premises and conclusions, and tree orientation are preserved after OLND-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B005",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        246,
+        277
+      ],
+      "target_range_utf8": [
+        246,
+        304
+      ],
+      "source_sha256": "2f4ec5ff4d346c7d6530c26a3a1e8594b8b37777a91af9ea0a45f63f72b46e0d",
+      "target_sha256": "6251428c270b8e52ca749614cb2f19e855a78dcbba7d3885d0a0c04aad1f512d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B006",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        280,
+        310
+      ],
+      "target_range_utf8": [
+        307,
+        362
+      ],
+      "source_sha256": "12e2c91c01087282935a170a9025e0dc12a58889c5b75b23cce9c88adf487cf1",
+      "target_sha256": "f95ca4491bc473fafe4d73f9702bf8709a8afd330a24dffff19ab5298c26cb27",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B008",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        645,
+        674
+      ],
+      "target_range_utf8": [
+        697,
+        751
+      ],
+      "source_sha256": "e5de37a181edf8429f13b52ccfbb3fa34466e020f4c2dcd1a7719f4e8a4cd3cb",
+      "target_sha256": "8dfdbe9931b1b7423bc41a784f1d4aab6b0006a07f19f35fdb533f1d313a771a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B010",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        1085,
+        1114
+      ],
+      "target_range_utf8": [
+        1162,
+        1216
+      ],
+      "source_sha256": "93ae164a55cdaddc58693c360625a20ba44cd333c68c3a58f0f512e05ed73a49",
+      "target_sha256": "c51bcaa6db34ed16c8a7d6ef48dd9b499606e7bcd5298813c10df1309254f326",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B012",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        1360,
+        1390
+      ],
+      "target_range_utf8": [
+        1462,
+        1517
+      ],
+      "source_sha256": "ca6b45c33873098084b2878e818ee07e0ccf30e3df881f664d17514a807389df",
+      "target_sha256": "d8f478492afa135e56f3f68c597095e8c305169ea40192efd79476afb0b86c42",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B014",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        1652,
+        1684
+      ],
+      "target_range_utf8": [
+        1779,
+        1836
+      ],
+      "source_sha256": "c28e4724d0efb2dd21fba24d9a6c40eecf9bd0dcdab0492d1a9583ed637d1bfa",
+      "target_sha256": "134468f0920a5cf8853ca8a21da01b18e53d9e15e1adf06d8d6f30ac92568c38",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B016",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        1909,
+        2093
+      ],
+      "target_range_utf8": [
+        2061,
+        2410
+      ],
+      "source_sha256": "8b3fbffc1f23cc2aecdbf2c1360ea0a0389dcacfe361e26310c74c7a7136669b",
+      "target_sha256": "7b98632cc393b6c13b27a887945becb22138d33ad2411aa21ccd797ffe288f16",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B017",
+      "unit_id": "OLP-0086",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "source_range_utf8": [
+        2095,
+        2369
+      ],
+      "target_range_utf8": [
+        2412,
+        2974
+      ],
+      "source_sha256": "e2d63c87aaf66a7995801cc8bce557d7dd03cfb830d8841ac61238b63267ac96",
+      "target_sha256": "5335af05b8b65c26f5fb358ea34353b2fba041d462c7c54635282147745f9178",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B005",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        191,
+        219
+      ],
+      "target_range_utf8": [
+        191,
+        240
+      ],
+      "source_sha256": "57152bededcd50051b123dd0353ccbd52f7601fb9271ca4a5b39b040ba6ad6c8",
+      "target_sha256": "38b65c9d64d0fe635d86ddde716cb23ffd004b59ebe0aa506f50d3b750600f58",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B006",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        221,
+        254
+      ],
+      "target_range_utf8": [
+        242,
+        300
+      ],
+      "source_sha256": "e35f87b2b63c8849dd20869c94d5616f59d9004364c685874f47bd4fe4db8fa6",
+      "target_sha256": "27ac21ce552cf114138235e6dfb0ac4680dba1d3fc74aea8883ba8f59c750461",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B008",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        493,
+        970
+      ],
+      "target_range_utf8": [
+        539,
+        1356
+      ],
+      "source_sha256": "6fde341215c6b7687a9b09219bbbe808e7be5e7c388b6641c17eaa3dcd7e356c",
+      "target_sha256": "e37069dbeeaad2da95e244bccee17ab0057476086f81a8567401d52a1769f5ea",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B009",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        972,
+        1005
+      ],
+      "target_range_utf8": [
+        1358,
+        1416
+      ],
+      "source_sha256": "8e88892e6e3a5589d00ff7a4174eb50041db5351487f484b37bbfdde43ddf2e0",
+      "target_sha256": "0776eb2b3d1f431fb13d28c3bfeded424c982e40e9a1177b5da5373645363245",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B011",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        1300,
+        1640
+      ],
+      "target_range_utf8": [
+        1711,
+        2279
+      ],
+      "source_sha256": "8dc67b53886c2636aed9c10d29d8493317517d0eb48255dcb28fd795410c5190",
+      "target_sha256": "295986fa54708b4da22a4a0a8814011e2c1d13f7cc8e48a7ee3d1301911015b3",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B012",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        1642,
+        1901
+      ],
+      "target_range_utf8": [
+        2281,
+        2619
+      ],
+      "source_sha256": "a9ee592660410ab5050b1c6bdd9cd6f4d951bbff3266ff9ef79a24327ee9afcf",
+      "target_sha256": "6a3b450647d65b7f33eeec3661ec5d1682093cc1a72dd479f187cb53f2669568",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B013",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        1903,
+        2877
+      ],
+      "target_range_utf8": [
+        2621,
+        4220
+      ],
+      "source_sha256": "467a0b121950682f276ad6d989141e83d1243b6586244928f9f104099c6a1349",
+      "target_sha256": "db63f42c1b1103961410b72bdfee32017396ac9c5282edff34167eef7cbb3517",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B014",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        2879,
+        3766
+      ],
+      "target_range_utf8": [
+        4222,
+        5455
+      ],
+      "source_sha256": "88f14765f2dbced96e6d108d9fc6a7f61b32f6c87260f3456cb599153e81cd1c",
+      "target_sha256": "0657c3dbe401567cf9d897082da2992da4926229a155d29a93d776d952988fa6",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B015",
+      "unit_id": "OLP-0087",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "source_range_utf8": [
+        3768,
+        3983
+      ],
+      "target_range_utf8": [
+        5457,
+        5871
+      ],
+      "source_sha256": "b39fe4989e79ed56d90d56cd9cac9400183e7400cd5a4f20a8e092049173f559",
+      "target_sha256": "c1d6de7cd9ca0dced44da05f84d6ad72133314740de222e628e04ae161e9f135",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B005",
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_range_utf8": [
+        238,
+        274
+      ],
+      "target_range_utf8": [
+        238,
+        274
+      ],
+      "source_sha256": "6a612e97ccc0bbe4dc34224978f7c29e0f1aaee8f080e192975e52998a995ec2",
+      "target_sha256": "6a612e97ccc0bbe4dc34224978f7c29e0f1aaee8f080e192975e52998a995ec2",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B006",
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_range_utf8": [
+        276,
+        595
+      ],
+      "target_range_utf8": [
+        276,
+        858
+      ],
+      "source_sha256": "b7289a437fb135aec193e8e0e49bdf98b593ed6ca21d40b2a245e294b0981cf9",
+      "target_sha256": "57532488572c4d41de01ea5eb738c0b9b69a34b7ddd01c53ea514396d89feff3",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B007",
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_range_utf8": [
+        597,
+        1324
+      ],
+      "target_range_utf8": [
+        860,
+        2063
+      ],
+      "source_sha256": "9ec49f8c2300a8a5f29502e0c7ea4518c0c65612bdbf3a9d844e981bd06ef857",
+      "target_sha256": "ae79694ff4bf0e4b468e0c18d0d944073927b262f3c1a4383c52a2244064ebf3",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B008",
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_range_utf8": [
+        1326,
+        1581
+      ],
+      "target_range_utf8": [
+        2065,
+        2518
+      ],
+      "source_sha256": "4dbe3c7c9ef3441968c71d87c135121323c0f364c78a6ff3885eac1914587da4",
+      "target_sha256": "fb2411988a9708181e77f7f6c37cc92981785bb0fd387018aaf8bb256066d37a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B009",
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_range_utf8": [
+        1583,
+        2501
+      ],
+      "target_range_utf8": [
+        2520,
+        3871
+      ],
+      "source_sha256": "401f4cc0e5866e3cf32964920934f17434b3a27fc659c60368439417bfa666ea",
+      "target_sha256": "4521d8ca4d0fbf49b92c278d0fa2ffd5ffe1195c3e0e3afba6a53b2cba7953bf",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B010",
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_range_utf8": [
+        2503,
+        3258
+      ],
+      "target_range_utf8": [
+        3873,
+        4953
+      ],
+      "source_sha256": "f701601096a89eb3c4abbc24f04958f6510657d86675c010e05505251862d2af",
+      "target_sha256": "865347c172350a95525faa9b2ddb3371248d9ae57ced2b4c3500a970c8813a1c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B011",
+      "unit_id": "OLP-0088",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/derivations.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "source_range_utf8": [
+        3260,
+        3698
+      ],
+      "target_range_utf8": [
+        4955,
+        5669
+      ],
+      "source_sha256": "59cdd829b2160782e1fddd20445715db7fd531b12e6a25d3d4ddc32e98107ea2",
+      "target_sha256": "04062c6678f190a74218828b2db2bb4ada93cfc7998951cfcb6570a74ce1c80c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B005",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        241,
+        289
+      ],
+      "target_range_utf8": [
+        241,
+        308
+      ],
+      "source_sha256": "f5fbd3a0575c1d650f54563deedede8917dfd371842b238a0c906626e7250959",
+      "target_sha256": "b78cf19c43b75d62e8f361e8142b210ff72fb727c5ba130916ee87786e5d61bb",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B006",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        291,
+        373
+      ],
+      "target_range_utf8": [
+        310,
+        407
+      ],
+      "source_sha256": "f5f594bc505a5f499a1d42c3a801870aa339967cfcf6ca2c4fc712536a68f931",
+      "target_sha256": "a5690fefd1253bd05a4e69894c500faa9cfe18e9f5776b66438ed63e976c139c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B007",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        375,
+        534
+      ],
+      "target_range_utf8": [
+        409,
+        611
+      ],
+      "source_sha256": "a10f6b74d0d321bacda5727a6efb2e6ad8da985f1f5c7dce49ba147e0478e7a8",
+      "target_sha256": "6834b54b554b1e948946779e42640b080100bf1918fcee003467a68d7098b88d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B008",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        536,
+        1098
+      ],
+      "target_range_utf8": [
+        613,
+        1543
+      ],
+      "source_sha256": "3407ef790e841baecb133e65b6e2a32a496d3337cf60cc27709c84f431b23348",
+      "target_sha256": "0dfae32d00ddee6a5dc0782c23198f551aa1594ce9d414559d074772c4a84535",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B009",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        1100,
+        1559
+      ],
+      "target_range_utf8": [
+        1545,
+        2213
+      ],
+      "source_sha256": "64ff0ac65415207eae3a64b9ab0ac722d25c206887bfa5bfde7283a6cdb6a773",
+      "target_sha256": "141d0c1f58972c815123a3e99e449b19a2ca9cca50e544ea701b4b65edaa315f",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B010",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        1561,
+        1645
+      ],
+      "target_range_utf8": [
+        2215,
+        2310
+      ],
+      "source_sha256": "35be1bd967c5f5f8c2256b4e757fbe4a4dec81cf6408877db96a516ef3671aa7",
+      "target_sha256": "2838dedeb243675cf50c269e2067ef35ea31e46cf72624fedb74d8a0480f6ff7",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B011",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        1647,
+        3445
+      ],
+      "target_range_utf8": [
+        2312,
+        5531
+      ],
+      "source_sha256": "e54b117dbe64aeeb3e561da5fdc90af6c60cfe83f1b6aae8a2293b7073d439bd",
+      "target_sha256": "248d6456d98cc53c468f7922c5d3cec61ff5d93029f618e66c8da05407fd98db",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B012",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        3447,
+        4028
+      ],
+      "target_range_utf8": [
+        5533,
+        6222
+      ],
+      "source_sha256": "6e3ad9cb104859fe871c94f50205fd6479c8db991fb3ef573a85b3e4824b23b4",
+      "target_sha256": "b1c7493363f174cf4d5079b15667cd48f149f4cda7a42a7b5c20d675e19fb83e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B013",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        4030,
+        5068
+      ],
+      "target_range_utf8": [
+        6224,
+        7850
+      ],
+      "source_sha256": "bedd0b8452b0dcc6deeb89d0bfa15d72c8dc3f8c05e713e1962e619b0783debd",
+      "target_sha256": "726995f11c9b7af303dbb6a2b4c9d424a3d1ccfc534db196c86bf3789da3e221",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B014",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        5070,
+        6185
+      ],
+      "target_range_utf8": [
+        7852,
+        9558
+      ],
+      "source_sha256": "f726f638c657626229977ebe493fe70187cdd75d74c4695871f8c409e65bfdbd",
+      "target_sha256": "960ef5db9a49832e0a12cbb48f0a7afd75b971687408dd88922813bbe23dbb76",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B015",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        6187,
+        9434
+      ],
+      "target_range_utf8": [
+        9560,
+        13934
+      ],
+      "source_sha256": "9d6eba6acd29d48ce3a176bde5427299a680bae24f5c1865ddc71c40e9725d73",
+      "target_sha256": "097e539e3fb82e9a2dd611ce3c2ed7e111ddbe5946fc2c80c57592ce6ca0778a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B016",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        9436,
+        9754
+      ],
+      "target_range_utf8": [
+        13936,
+        14282
+      ],
+      "source_sha256": "c79f1c76adebfd4f7e3c89363506f4af4b37e90d95f003061130111270bfa6df",
+      "target_sha256": "a25cf43e951188a0dc404a42c373f06645a1574cb2e6bae15c229c961d96d480",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B017",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        9756,
+        10509
+      ],
+      "target_range_utf8": [
+        14284,
+        15065
+      ],
+      "source_sha256": "d53db38288312fd2914049efc22c3ccc5ba68a50918e528f098155203b7239da",
+      "target_sha256": "24412002d8a3f8d8458ee47b52c85c591ea7db5a3df678ee4035a0f246456ff4",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B018",
+      "unit_id": "OLP-0089",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "source_range_utf8": [
+        10511,
+        11045
+      ],
+      "target_range_utf8": [
+        15067,
+        15661
+      ],
+      "source_sha256": "940c39c23fe709cefb9cbc20704a39b239fc2438513231b95b5046db4c1f042c",
+      "target_sha256": "7a49d72a8a19fc81946cc831dd32e8c4fde82dabc8e822ef993b11dd32f25391",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B005",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        195,
+        248
+      ],
+      "target_range_utf8": [
+        195,
+        275
+      ],
+      "source_sha256": "39e7ab2780a73a1f70013b2a28e6bd1cb70039247ba72fd8d094301af5ad9475",
+      "target_sha256": "6ca527aac58b74d34d9b1ed3c5343ff2a7c3fac4135a4a7bf8dca67dce3d634e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B006",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        250,
+        598
+      ],
+      "target_range_utf8": [
+        277,
+        967
+      ],
+      "source_sha256": "be23e2026dfa9e57493d93d9f808130715605cc399d0e9f8bb3b582b4bc3c31d",
+      "target_sha256": "acff808b44300b996816c4b4e86caa77c4094ee11596f2ac5f5149185fb93659",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B007",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        600,
+        3507
+      ],
+      "target_range_utf8": [
+        969,
+        5317
+      ],
+      "source_sha256": "8c6cafbc40f86dbcc8eed63ce79117d45538ba0442f537757b2e1932cc58e33a",
+      "target_sha256": "d15ff6bf383d35f59a017b153139d6726586babac535f2282ed8dc724c01e689",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B008",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        3509,
+        3869
+      ],
+      "target_range_utf8": [
+        5319,
+        6480
+      ],
+      "source_sha256": "ec55a1423bb59c9c7aaf0f9c9ab8de83d6367d7527e52cc303d1e3ab9bd0a384",
+      "target_sha256": "ddac7debbff1d5d066deba4f8cb0b149776990dd8993ea05a75ff96b2f0c2dcf",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B009",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        3871,
+        4072
+      ],
+      "target_range_utf8": [
+        6482,
+        6901
+      ],
+      "source_sha256": "212b2384ee0838b8b20f09f6dc18ca5ad2c73cd6d875847b1d177e61bab91d76",
+      "target_sha256": "e0aab8b30e22f15963f187e483cbbc8318c834a1534d6bba7bbe8337ae12a21b",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B010",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        4074,
+        4390
+      ],
+      "target_range_utf8": [
+        6903,
+        7335
+      ],
+      "source_sha256": "a0116866961de008a23d139a84d0814646879404f0f2f634794bed52fb45bf8b",
+      "target_sha256": "c2b1c1acdc353e0380b89a7311f19c2ba4019448b94dfd29a1ec8bbe58e66fdd",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B011",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        4392,
+        5310
+      ],
+      "target_range_utf8": [
+        7337,
+        8665
+      ],
+      "source_sha256": "8d1414ebeb43d39bc0c05042dbffeed99db8dd8bf4d8c1a4940016a7aa885130",
+      "target_sha256": "d5f3e85d479bcc15e7a5aff4f6cec7dfa84a59996607f18c89e61428111d1ee0",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B012",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        5312,
+        6862
+      ],
+      "target_range_utf8": [
+        8667,
+        10656
+      ],
+      "source_sha256": "ef924a8dc793120b5b6329277850d1ee466f5b1f0a241ef726feca8365692a48",
+      "target_sha256": "c1c088da17448dba9bd69abb037148b08f0704eefa13f2f1815446e952c83fcd",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B013",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        6864,
+        8549
+      ],
+      "target_range_utf8": [
+        10658,
+        12959
+      ],
+      "source_sha256": "63b17ae0cba9ed581f981a5da85c0aa74ca53d560ad284da5a2a91d138630694",
+      "target_sha256": "1b4708c5f2618746d6947de82fbfc1c5ae47395aff1d9783cf5f8aaec9aa00c5",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B014",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        8551,
+        9178
+      ],
+      "target_range_utf8": [
+        12961,
+        13616
+      ],
+      "source_sha256": "93d6a2a2806b426dae5b223992c6c82f9a3c1d3f31cb41d52c62344b7e2311f6",
+      "target_sha256": "1d0ee2e9eeb120a4e29568057af68da1a6f22c287b09176034eb826ae48e945a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B015",
+      "unit_id": "OLP-0090",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "source_range_utf8": [
+        9180,
+        9531
+      ],
+      "target_range_utf8": [
+        13618,
+        14029
+      ],
+      "source_sha256": "7a59b738f5e9ccd5697b6d84d01e3822cf5b6d3ae70e061829d1a020a7d49d31",
+      "target_sha256": "745b166eb31a748ec0c301508d9031303c6c700759ea51caa046a3a037f05d20",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B005",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        250,
+        285
+      ],
+      "target_range_utf8": [
+        250,
+        330
+      ],
+      "source_sha256": "a4d7f9696615ed4c2bbd4f7c8f942c1bf076c86055419d4a2b6901960af18cc5",
+      "target_sha256": "72d242b2e3c3d16de3bd43df601a6a683236147beb378612ab976143c59f7f1e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B006",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        287,
+        422
+      ],
+      "target_range_utf8": [
+        332,
+        632
+      ],
+      "source_sha256": "8d32febc9949ec60cc4dea9eff7264346906687ce33fca9f376b0de9ad369888",
+      "target_sha256": "f1595dea25bc7c9b5eb891d484f15a1ed6de868832ce9db951e3d70eb62ad2b9",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B007",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        424,
+        944
+      ],
+      "target_range_utf8": [
+        634,
+        1781
+      ],
+      "source_sha256": "ba26b0813de66f6d80a5cb14032481ff1128bd821c82673491e430db664d4e7f",
+      "target_sha256": "719bdda0874c4b68171134da0bdf49a9be61ee50d7c94924ce02d8050de560e8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B008",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        947,
+        1198
+      ],
+      "target_range_utf8": [
+        1784,
+        2190
+      ],
+      "source_sha256": "a8b0981c533669c6a7f90710dd697b187696e549b94d4a360fdf6980090e7580",
+      "target_sha256": "c5613eafc34e74dda3d55dfa6b4d645518a4de65ef85cf8f31a8270eeda2c2e7",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B009",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1200,
+        1543
+      ],
+      "target_range_utf8": [
+        2192,
+        2696
+      ],
+      "source_sha256": "302f43549a3912071c1335404326502c7665e44d093df83d0d2064f33c251f1b",
+      "target_sha256": "06580f9ab4ed76a19d6cd1c2ccb996754b54be74c4dfdd4e0fbee735b5aa8d50",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B010",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1545,
+        1768
+      ],
+      "target_range_utf8": [
+        2698,
+        3055
+      ],
+      "source_sha256": "9abf4cb1bafc8cff8215697d09be3c110ae68c7afa17fb2e15460bb313937770",
+      "target_sha256": "b1a77881edccc83466dd9ce17ac9f69dfd911b02eafe5e9a38d6e0e33cfa3c41",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B011",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1770,
+        1879
+      ],
+      "target_range_utf8": [
+        3057,
+        3198
+      ],
+      "source_sha256": "5d8e818c1c44e8219f194a940afcc1201566e483efcb5ec03a0b945b81a0fcba",
+      "target_sha256": "da733001936646be60bc003adcf395814b1e2d3f56a1b4424727e1be8eb9163d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B012",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1881,
+        2032
+      ],
+      "target_range_utf8": [
+        3200,
+        3424
+      ],
+      "source_sha256": "7f867e63507a65568ce95e017c980bcfad83e359062235ac0003c1a032ba1194",
+      "target_sha256": "c7f260550216ad07f0f8161a0ea0cb0bcf77f0fa3312550b4eb57fd46dc16969",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B013",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2037,
+        2182
+      ],
+      "target_range_utf8": [
+        3427,
+        3618
+      ],
+      "source_sha256": "06602badc4d4f05c3c735094fed1dffff52b105f739f416004a71e0d843d0d7c",
+      "target_sha256": "ae8fcf0534e7b95ee8d9717adf0a1f0ce174606e6cce635900930ca328793c62",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B014",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2184,
+        2297
+      ],
+      "target_range_utf8": [
+        3620,
+        3782
+      ],
+      "source_sha256": "40093f2f14f1df50d688cbe834160c8393ea37fcf3f5fa0e6405f3b3c82d6f98",
+      "target_sha256": "b6b27ecdb4e18fa0d9a747ce520118ac0f0afee15496d1001cb821c3d33454c4",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B015",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2299,
+        2462
+      ],
+      "target_range_utf8": [
+        3784,
+        3984
+      ],
+      "source_sha256": "9991a2232c9db4d305c5f20144a219ad9c253645c6f55d6593d786f9d022240a",
+      "target_sha256": "ad8f99cd19a9988f95a26c61236d75193b078a70cb04b33b7c8b6aa8349441be",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B016",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2464,
+        3178
+      ],
+      "target_range_utf8": [
+        3986,
+        4988
+      ],
+      "source_sha256": "5f57b7907adc3dadc56dd1ccbe655f964af77166ed6dae1b817e85ff9fa997f1",
+      "target_sha256": "4f337289150b70c23d200da9d5e37d3010d7625f1ae86d741896a66dffdd5684",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B017",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        3180,
+        3397
+      ],
+      "target_range_utf8": [
+        4990,
+        5328
+      ],
+      "source_sha256": "9b779d57d1f4028a733770a7afac09b8f65eb4be411845096a0e7b6664cd733e",
+      "target_sha256": "5f66d7c3a5f719027b6f99c2a870d1cb5a3b67ebaeb403a94dde5bfc1a0083d4",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B018",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        3399,
+        3599
+      ],
+      "target_range_utf8": [
+        5330,
+        5644
+      ],
+      "source_sha256": "9be1fdf19c1f03c8e5ccf011ea96f0d7001f301e3d8127c7d824a3f229bb9d46",
+      "target_sha256": "04815f91f17ba8cfde428700b3f77ec00b7b13c8aac93e5babe5d97438d7f9b1",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B019",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        3601,
+        3942
+      ],
+      "target_range_utf8": [
+        5646,
+        6064
+      ],
+      "source_sha256": "56b576cc9868a23a46315f438a1d2923220eb644cede447467e9de1fdb6d5fe7",
+      "target_sha256": "0d87e2677697e11e609008818b7598ad3091955fcfa5cd1ec7ddaa11619d8ba6",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B020",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        3944,
+        3979
+      ],
+      "target_range_utf8": [
+        6066,
+        6129
+      ],
+      "source_sha256": "d8c6d2d2cb1cd5f40f2a98ada1fb5c447be05e542181c1495d0c8e8ef828e75d",
+      "target_sha256": "5260d96b0b04dffb67a4dcaf934654c71e4cf71bc28e0226d9a5993c9e04b202",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B021",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        3981,
+        4071
+      ],
+      "target_range_utf8": [
+        6131,
+        6242
+      ],
+      "source_sha256": "a6440e0353be514a98a5a6d6816dfb4082bf1adc218bd1a5ab993cac9ecc98c1",
+      "target_sha256": "619ad87d010e42abd7414d181c57e7ee0f0a9a75fb5da42a79e675a11ce1c716",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B022",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4073,
+        4165
+      ],
+      "target_range_utf8": [
+        6244,
+        6357
+      ],
+      "source_sha256": "fce2136a058d0ef29a6b98ce2c71f1f3cdfe1559fad4b25937390577fcf388c4",
+      "target_sha256": "2bec7e8a3d7a5b6df0b9545f52e5b5f93bc3d4d134c5cbfddf5277379ea69736",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B023",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4167,
+        4490
+      ],
+      "target_range_utf8": [
+        6359,
+        6775
+      ],
+      "source_sha256": "838dc841294e52f4cde3593467ba9e049add1add51ccfaaf31d69896d6060229",
+      "target_sha256": "8e918379ee5d20eb42f682f43db982a366a5dc6cefb8034fb10150e0f6544c9b",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B024",
+      "unit_id": "OLP-0091",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4492,
+        5022
+      ],
+      "target_range_utf8": [
+        6777,
+        7543
+      ],
+      "source_sha256": "95ddd058dda38c178675ad48886c1371b7fa497ea52f04e0d975f360330f431e",
+      "target_sha256": "89c69f97320eb80cbca4c57b71ef56cb092db5f1c2d8b20f75457093f56de3a7",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B005",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        256,
+        310
+      ],
+      "target_range_utf8": [
+        250,
+        323
+      ],
+      "source_sha256": "ec1be7ec6e1691f267264698cd218c78624674606ae509d8d4d427172101a8f7",
+      "target_sha256": "3de5489dfdcfa68c57dd3877af19c6bd9d0cd0b6b8ed6bdab2c0daa669a2c105",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B006",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        312,
+        495
+      ],
+      "target_range_utf8": [
+        325,
+        686
+      ],
+      "source_sha256": "4b0d057e2c7e97206d98d1d07e3f4fb611af24b7daf6bb5e87ca5e0e8c9cc230",
+      "target_sha256": "1d34aea4eacbfd0c1e2b32e743252b10b642fc8c3b009cb4a835dfe38d227b5a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B007",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        497,
+        652
+      ],
+      "target_range_utf8": [
+        688,
+        894
+      ],
+      "source_sha256": "3785e0c978e1436fc64f6ade69130afe508bbe23cc575675f198685bd15cf5da",
+      "target_sha256": "0514304b257b0bf2d90eec19e5955e7c0731289ce12a18b6122af8dad5e85e9d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B008",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        654,
+        1222
+      ],
+      "target_range_utf8": [
+        896,
+        1613
+      ],
+      "source_sha256": "132d1f4830ef8ba868c7693d7cf867b8bd11f5710b2697b83d21ba671225572d",
+      "target_sha256": "befc72a1f2d9926bb8777d6e464c7990b7716d9c00ff564b6336b1536e5b3808",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B009",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        1224,
+        1342
+      ],
+      "target_range_utf8": [
+        1615,
+        1795
+      ],
+      "source_sha256": "752b780decac87043ecf9304f74c0ddb1eddf54cafa7f6adcb98dd767ce1c992",
+      "target_sha256": "516725719e6c3f80d183a09c99716a0cb71825cd29d3d812ccf18c9d13eb9f73",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B010",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        1344,
+        1741
+      ],
+      "target_range_utf8": [
+        1797,
+        2277
+      ],
+      "source_sha256": "2d0e4bf9171f3e06ce424bec7278948cc2aea520a1370ecbf7bf9159d779a98f",
+      "target_sha256": "8925ab173aa33a862910c1e6d4e19c280b6d4feda24f9ecd9769ef119cd8d963",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B011",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        1743,
+        2217
+      ],
+      "target_range_utf8": [
+        2279,
+        2889
+      ],
+      "source_sha256": "2815de01c1346792e2582f349db4167d7e74769f039bea386ac8f161bd039a4e",
+      "target_sha256": "36b75c30793db64e8f7b2746228612c3ac82c53a07981607590005472c801df0",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B012",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        2219,
+        2321
+      ],
+      "target_range_utf8": [
+        2891,
+        3075
+      ],
+      "source_sha256": "55c706321d58d8b3a8ab430f2c9873f0f5d42416004b9c297650f6b32bc71302",
+      "target_sha256": "eebdd0c509f9f3c0530e3e17be88fa5518f93762ed5ae25d424c749633530720",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B013",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        2323,
+        2458
+      ],
+      "target_range_utf8": [
+        3077,
+        3247
+      ],
+      "source_sha256": "17aba60cd9562c1f173960b11fc92b40844aada9556e8004e7271a85b01b67cc",
+      "target_sha256": "fdf35e4e660c2c15ea4f514c570046974eaf66224dfb26a1a2f41232c514d820",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B014",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        2460,
+        2983
+      ],
+      "target_range_utf8": [
+        3249,
+        3898
+      ],
+      "source_sha256": "2cdb61c7e2de19cc4b8ee2ebef5e0b34e49935de0dd90f97b58bbe59f578f4bb",
+      "target_sha256": "0d5fad851df695950fb3a7845e0dc5027bb0f5624e829556b56c47f5bafbad9c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B015",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        2985,
+        3158
+      ],
+      "target_range_utf8": [
+        3900,
+        4121
+      ],
+      "source_sha256": "1263ebde7b783d7b4741ce301935e6a86ab4ab6398aa4df18b72bf7b256f3295",
+      "target_sha256": "f00f373650f9d0cbf1fe8b8bf4d8aeda99ba1c3459e881bfa9f2caf546fe417d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B016",
+      "unit_id": "OLP-0092",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "source_range_utf8": [
+        3160,
+        3889
+      ],
+      "target_range_utf8": [
+        4123,
+        5015
+      ],
+      "source_sha256": "fefb3fb1c93d47c14775b0e2b1a3f0351c7bce541f54314d5e15ad6259adb32a",
+      "target_sha256": "a64e5263e29b9693d8039968bb5b754fa2172c3e0ae54ad792efaf2d0c3bd4ce",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B006",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        365,
+        437
+      ],
+      "target_range_utf8": [
+        365,
+        466
+      ],
+      "source_sha256": "a4600572c5e405be7d1e4648b7ab99922a340118a560981e1d16d94433928720",
+      "target_sha256": "231701fdeb7a3bf8ddd41ca0e5ac125829aef098a1dd684ae30f368c449f8adf",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B007",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        439,
+        796
+      ],
+      "target_range_utf8": [
+        468,
+        1087
+      ],
+      "source_sha256": "06428602ebb51a5cb8139261788dfe66831b886db6ec72ebc663ffe2bf8027bc",
+      "target_sha256": "41579caa97fd2107b984f99b1deb3417240dccc30abc8c0fac11f0fcee3246ed",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B008",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        798,
+        1074
+      ],
+      "target_range_utf8": [
+        1089,
+        1400
+      ],
+      "source_sha256": "9affa4f61c2f37b080d993b0419bcacb4a923479754bb9fb06bd5b31204d3feb",
+      "target_sha256": "b2b56217433fa15d61b9bdca038bbe52bb719e7aa42fad42f670295f9dc3e90d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B009",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        1076,
+        1598
+      ],
+      "target_range_utf8": [
+        1402,
+        2039
+      ],
+      "source_sha256": "82134c8c445d06e773d80db2e87746d1788e1ab25324108b4113491c734a490b",
+      "target_sha256": "6566382f697c5fcf5ffbd3a45efc49bda9df9980189c384800ec77e924c6ccdb",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B010",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        1601,
+        1816
+      ],
+      "target_range_utf8": [
+        2042,
+        2304
+      ],
+      "source_sha256": "7ea98c0612722405b9e458f60fcc412a27fc215ed57dbc2b58231c87ef9371d1",
+      "target_sha256": "2a91a9a90d4ffd80d7fa77344f6229df45c8e9d357fa0f1130ddfeae7f9230ec",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B011",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        1818,
+        2712
+      ],
+      "target_range_utf8": [
+        2306,
+        3288
+      ],
+      "source_sha256": "aeade8567eac396656849613ff779c234636ea8919aa73de7f41002c3299acad",
+      "target_sha256": "84dce930ffee7261729a7229a4f6b3d757f920dce2a9bfa71b1522384097e3dd",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B012",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        2714,
+        2992
+      ],
+      "target_range_utf8": [
+        3290,
+        3601
+      ],
+      "source_sha256": "0c52c98742b62937eb032be41d7b659d165389e0a64a1b1fe3347a6e6fed81ab",
+      "target_sha256": "49772504c98328f9c9e9a301493cbe2fc5183181d3dd4937c469d7c071926b4d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B013",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        2994,
+        3199
+      ],
+      "target_range_utf8": [
+        3603,
+        3869
+      ],
+      "source_sha256": "b69f435fd3ce750ee0423279112cd186d9ed5d605fa0030a1915d4e1d38a14b4",
+      "target_sha256": "21c623197533cdc2a9147df1a37c5cb6a298a4f4f71d1c2868281fa2d50c98bb",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B014",
+      "unit_id": "OLP-0093",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "source_range_utf8": [
+        3207,
+        3800
+      ],
+      "target_range_utf8": [
+        3873,
+        4588
+      ],
+      "source_sha256": "da76d918cff83de7f1d0724cfb93eb5dc42246e6690504202eb5534b7d067b8c",
+      "target_sha256": "2a64f952c0cff24e2068fa6a74c146cc394e0ca7f49efb9c5e39fc009ca90105",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0094-B006",
+      "unit_id": "OLP-0094",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_range_utf8": [
+        311,
+        369
+      ],
+      "target_range_utf8": [
+        311,
+        384
+      ],
+      "source_sha256": "af641799bf6e2f7f2c62ac85c75ed55190f03898bacaf1b8169cacaabe30d433",
+      "target_sha256": "377555ad02c92d32adb385a5dc30f8c7da978624d4b0087f71596e32948e9f9e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization keeps both freshness restrictions, and both quantifier derivability directions are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0094-B007",
+      "unit_id": "OLP-0094",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_range_utf8": [
+        371,
+        537
+      ],
+      "target_range_utf8": [
+        386,
+        693
+      ],
+      "source_sha256": "a3de96b3ab50e072842fcd611c60504b2e29a3d096514f7919781e2da9b6a1d6",
+      "target_sha256": "f32ad0fac3c05d9941d34954402d17466dbf631b88bf91cf5667f38814e7dbe8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization keeps both freshness restrictions, and both quantifier derivability directions are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0094-B008",
+      "unit_id": "OLP-0094",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_range_utf8": [
+        539,
+        724
+      ],
+      "target_range_utf8": [
+        695,
+        960
+      ],
+      "source_sha256": "f2c2ed9fb55c956438b4a71b91c99a8cb1b62fa9900cd44f177751f565773f24",
+      "target_sha256": "1f25f07feff8407643d32a815a25d943669d6e96b52251c57d18172cb22862c0",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization keeps both freshness restrictions, and both quantifier derivability directions are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0094-B009",
+      "unit_id": "OLP-0094",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_range_utf8": [
+        726,
+        992
+      ],
+      "target_range_utf8": [
+        962,
+        1329
+      ],
+      "source_sha256": "bbb9abf4929aebbfa2a81df77b6e82b60e7150c0e55689541dd3bd55b2551425",
+      "target_sha256": "065ab542915a1c303952d14fbf6f5d223a74f62808a156f9c0f281879a095512",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization keeps both freshness restrictions, and both quantifier derivability directions are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0094-B012",
+      "unit_id": "OLP-0094",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_range_utf8": [
+        1224,
+        1478
+      ],
+      "target_range_utf8": [
+        1561,
+        1850
+      ],
+      "source_sha256": "93261f8a0d76d66a2bb5de1537dc259acccdc1fd12f4136316c62f04ffb95e45",
+      "target_sha256": "4e7764bd901771a4e70dbfdcf4fd5feba94c43ae8fabdf4d9089fedbd49101de",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization keeps both freshness restrictions, and both quantifier derivability directions are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0094-B013",
+      "unit_id": "OLP-0094",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "source_range_utf8": [
+        1480,
+        1716
+      ],
+      "target_range_utf8": [
+        1852,
+        2123
+      ],
+      "source_sha256": "a597e9d750dca9276ef4c27a9b763d82ec91283002bd9bc2eec3644f85b272f6",
+      "target_sha256": "9e51cc774bc362cb8544bcc257e704ab20e23fc62755671b565832c35cf377f5",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization keeps both freshness restrictions, and both quantifier derivability directions are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B005",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        242,
+        263
+      ],
+      "target_range_utf8": [
+        236,
+        272
+      ],
+      "source_sha256": "6a622c1f67b0b1f78c617967434c93120d7a5e017d0a194285e61c1365da3980",
+      "target_sha256": "beccf4596efc564dce45606c666f37c9abdb47ab6d8ccbcf4ea660e019394ead",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B006",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        265,
+        1135
+      ],
+      "target_range_utf8": [
+        274,
+        1918
+      ],
+      "source_sha256": "af7029ea61df0a32deb2f5dfc2e9a1b51a86f8e800d3fbcf2c341b2e70f70bd0",
+      "target_sha256": "e35c7e3ce70c2311c023b1e868293d4f0ef61be2f145850c48f24cbb6ef441af",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B007",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        1137,
+        1293
+      ],
+      "target_range_utf8": [
+        1920,
+        2121
+      ],
+      "source_sha256": "68de0351011a5d77d841688edd4963b55de97f7bac25b70c829052301e6bbb4f",
+      "target_sha256": "1157bf04859690ccea64aa94c883d4efa5731810822ebba3e17475de4809d9ad",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B008",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        1295,
+        1414
+      ],
+      "target_range_utf8": [
+        2123,
+        2323
+      ],
+      "source_sha256": "4be4f94643aa5979661c63ee24aca5e73e595d8ce796c9a18e07a1125c9ac84f",
+      "target_sha256": "206319c5d4f1d869f66430d9738be52d8637df2fe854de36ce7369e040f2b495",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B009",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        1416,
+        1875
+      ],
+      "target_range_utf8": [
+        2325,
+        3113
+      ],
+      "source_sha256": "c824c3b96bd54481e347038f33c9802b5cdec0dbf41632fdb79dede21a0e0ab6",
+      "target_sha256": "c78a1c967fe62c2201f3a38acae5a0dd0958593dbb67ac70789309631479aca8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B010",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        1877,
+        2370
+      ],
+      "target_range_utf8": [
+        3115,
+        4038
+      ],
+      "source_sha256": "93a1d52d99f94cdbaf04ff1a22b2831ddb3a52cc0383af2d43ce48e4474e1d35",
+      "target_sha256": "4dada739f07c4acda1abced74908644124f9a057e1c1255f6acce1e00af25a29",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B011",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        2372,
+        2508
+      ],
+      "target_range_utf8": [
+        4040,
+        4320
+      ],
+      "source_sha256": "88f3c6556ae63701f70ba25a9e37346eac0b56b16bccd83298672f976db31fcc",
+      "target_sha256": "9dfe129e614f215f966dbb409d2615fe2a2adc0255d5e25710130ae1cc558792",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B012",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        2510,
+        3479
+      ],
+      "target_range_utf8": [
+        4322,
+        5592
+      ],
+      "source_sha256": "85edbaecbac1bcb2f5d6a038b463eb85d2b03fddd39ecfc989b1a574509afecf",
+      "target_sha256": "1fa90ce19bfc61c53ab7f13554f35ab63e277d6e6249ae8036765b26daf4a070",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B013",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        3481,
+        4548
+      ],
+      "target_range_utf8": [
+        5594,
+        7113
+      ],
+      "source_sha256": "5748c51d119e59e6246f62598b04e1b59dddbc7f62700b62a6185779dbc85468",
+      "target_sha256": "4f2d1061dd947afd628e05498469a2696fb9b8b6454d9b34690b5d9655e8beab",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B014",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        4552,
+        5537
+      ],
+      "target_range_utf8": [
+        7115,
+        8547
+      ],
+      "source_sha256": "147f2566c188fa5125ebe2163944f7b5704c96598a1b2778314847b988643bb8",
+      "target_sha256": "cec8eb30148237fbfb6cf1abe8b7a023b0c001b5b9f945105c0157e6b9e93942",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B015",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        5541,
+        6727
+      ],
+      "target_range_utf8": [
+        8549,
+        10230
+      ],
+      "source_sha256": "79aba6669c3300c435131f21efa5ff5811a735ea807ceb1318239843bc460bad",
+      "target_sha256": "a510a37c79ec536998f1d5f214cecd4124a105d758eec24f03b45139d4ccb432",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B016",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        6729,
+        7384
+      ],
+      "target_range_utf8": [
+        10232,
+        11119
+      ],
+      "source_sha256": "5b111418529ec8d746c2e4e27a43e8b23a0674def0df1ae2dd9b7181466ab332",
+      "target_sha256": "54a0b1d32a2ac4c10df51bde29eac7ab47b47aa0148865ccdef333a047c6d914",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B017",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        7386,
+        7433
+      ],
+      "target_range_utf8": [
+        11121,
+        11222
+      ],
+      "source_sha256": "5af1d3070a210d3c674f8b3585c79e022433bc83462c31484ab8790b1786ff97",
+      "target_sha256": "7352da50386d22b69af2f34bf795d4a402a5185ea2b15e7770275bb83b977df4",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B018",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        7435,
+        8939
+      ],
+      "target_range_utf8": [
+        11224,
+        13300
+      ],
+      "source_sha256": "b8d78d747eba2482c4bedacb844d1679703c3803ef89b1344b7df87b1886066d",
+      "target_sha256": "efd88887c2518b2b19f19e41177575fbd32f4fc18a7ace09a13a081b9f416ff4",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B019",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        8943,
+        8998
+      ],
+      "target_range_utf8": [
+        13302,
+        13411
+      ],
+      "source_sha256": "d3f0f44eb1f18492137c8c400f52889ad283f57388e475ea6dc13b891d2daa1a",
+      "target_sha256": "8756151ccb149d71aedec2a404aa8b57ad7caa16efb120365f6be3cb6af526e5",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B020",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        9000,
+        9073
+      ],
+      "target_range_utf8": [
+        13413,
+        13949
+      ],
+      "source_sha256": "a72bcba9f23b7489f1c3c799fe1a3828f99f123c5a7a0eda6c1f3de681ed078d",
+      "target_sha256": "af3aa19fd949455b067ccf4fd89bb1c8ddf052ef18de4b476a81febdbc4878dc",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B021",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        9075,
+        9252
+      ],
+      "target_range_utf8": [
+        13951,
+        14192
+      ],
+      "source_sha256": "848872f298971b944ace818926fc38e679c097f6b492097973ffd654cd531bea",
+      "target_sha256": "42ce04ddd358683e8a3abe2ed374aac0a120ee8d992d327ac7b2cc20eb4a521a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B022",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        9254,
+        10438
+      ],
+      "target_range_utf8": [
+        14194,
+        15692
+      ],
+      "source_sha256": "db52b4a304033e79c58cb3d529756d110c50ccb2530f4cfdd22b3dc83f024d1c",
+      "target_sha256": "f85c31ec27cf3e860f53dc929899498ed680a7fea5c3e96838d62a7dedbff506",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B023",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        10442,
+        10492
+      ],
+      "target_range_utf8": [
+        15694,
+        15798
+      ],
+      "source_sha256": "6dc708f2d503fe6d34dda7713041f36ff990db44ada8cc37a12f41da3a2633c3",
+      "target_sha256": "33d47a1523585599a8d6594d862589e8bc4435102950cc7c641a86f50bf5c7bc",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B024",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        10494,
+        11801
+      ],
+      "target_range_utf8": [
+        15800,
+        17493
+      ],
+      "source_sha256": "93e5a5ef73ac8c3de00567e4c481d110bd730786d0fc42dac379e44688e19ba2",
+      "target_sha256": "f359d75329505d32035c135bb799a9f048dffd383a78152d8d7b560fcdce6dcc",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B025",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        11803,
+        11854
+      ],
+      "target_range_utf8": [
+        17495,
+        17600
+      ],
+      "source_sha256": "536cdf0755f183ad208a0e4cbf4b0483e2a7f01498a2daef62f3d5b40a9396ed",
+      "target_sha256": "8dc0190192a44c89f9027c7e03f433d242716c323372c0d2cc240f213b0b1534",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B026",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        11858,
+        11951
+      ],
+      "target_range_utf8": [
+        17602,
+        17749
+      ],
+      "source_sha256": "69cfc4cf3a06381eb8afb53bdd7868d8e46a8793c25b6909e5e23f06db61c577",
+      "target_sha256": "9fcce126c2d355f6b9fae09795c1f4cb8e2886874d20fa2a1b0663c6e0f9d4ec",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B027",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        11953,
+        12062
+      ],
+      "target_range_utf8": [
+        17751,
+        17886
+      ],
+      "source_sha256": "9ff7dd12e81096bf3b8e3b458c9a2af9f07e677ecd56b29592827e8bd5dd3f79",
+      "target_sha256": "b67eeff9caf1f5c51c7ead686afa43c9a79ba4549a15231637d1b9b331201688",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B028",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        12064,
+        12175
+      ],
+      "target_range_utf8": [
+        17888,
+        18025
+      ],
+      "source_sha256": "c589e684060faf3c5b0fe7c895eb24dc3f544a886714b516c73b4bb468ff5e2e",
+      "target_sha256": "9058917a6975bd8c04fe8e1b2b484c13f0386eda1fafd6d466e709fd12396091",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B029",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        12177,
+        12290
+      ],
+      "target_range_utf8": [
+        18027,
+        18198
+      ],
+      "source_sha256": "777f6548b078516d4f7353e3897292d38762523c702841ea896aade2defdc578",
+      "target_sha256": "7c3c2e89d1f864a5c431e5eb745806b8cb7b05e23128a6e6bc3f97bba1904ddd",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B030",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        12292,
+        12400
+      ],
+      "target_range_utf8": [
+        18200,
+        18347
+      ],
+      "source_sha256": "a5c185cafd40fc5d3e8d1170584d20ebbaed91d9cc0d14c201ec05e1156950aa",
+      "target_sha256": "fb1b2658c3291681aee30235f2bbfacc74f9df3263d9423bf91d182f67e842bb",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B031",
+      "unit_id": "OLP-0095",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "source_range_utf8": [
+        12402,
+        12999
+      ],
+      "target_range_utf8": [
+        18349,
+        19244
+      ],
+      "source_sha256": "2d174c403fbcd8511a594de2242bc75ba95dd9a156db3468f0908b87b9f0ce9d",
+      "target_sha256": "fc6750296d6ef8453c85f8de51c4c9e37ec941266c081f48555215d193e66be0",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B005",
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "source_range_utf8": [
+        183,
+        247
+      ],
+      "target_range_utf8": [
+        183,
+        261
+      ],
+      "source_sha256": "57b6e3458d3dcc93441f08416b75808d10130056bd7a58f859a115b9f9e42bba",
+      "target_sha256": "ef356158181913cc432586dd6034af11ba3c92cc6c34d522ab36e3bffde56d03",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B006",
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "source_range_utf8": [
+        249,
+        319
+      ],
+      "target_range_utf8": [
+        263,
+        405
+      ],
+      "source_sha256": "327943f90919c1914f2c2d8e5c05cf7ed24093c22d4441da8a87b833f17d5202",
+      "target_sha256": "58bde53f1ad46f13c312e05323993fadba1245bf13382f29d8c48662a474afb8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B008",
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "source_range_utf8": [
+        681,
+        863
+      ],
+      "target_range_utf8": [
+        767,
+        1118
+      ],
+      "source_sha256": "963034a2aa1f1f30b65773fc8193f591a7667b53690c71b1d6377ec1b0aecd5b",
+      "target_sha256": "aebe6fe5fafe2ad5e3226497acb73d9951c2ebe9e89a4bbfbcce162ab25c3b8a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B009",
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "source_range_utf8": [
+        865,
+        1169
+      ],
+      "target_range_utf8": [
+        1120,
+        1624
+      ],
+      "source_sha256": "ef9ae26367633daf80764d78b420cd723db13dc75a8490342f2ebc078d32a88b",
+      "target_sha256": "9220973603dcd178277afc568de67ba7d0b58246b768c6c770ca2679f619a89d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B010",
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "source_range_utf8": [
+        1171,
+        1424
+      ],
+      "target_range_utf8": [
+        1626,
+        1954
+      ],
+      "source_sha256": "50f2a297e8b6404a0feec30cfa92ab2ece448934013c0a7ba7dd04445fba95ff",
+      "target_sha256": "9ac4512167ee8519fa327b88f4ac168007a80b43aa4b390bbd637fd4260de834",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B011",
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "source_range_utf8": [
+        1426,
+        3460
+      ],
+      "target_range_utf8": [
+        1956,
+        4400
+      ],
+      "source_sha256": "bc7fc6b446409f9ced2a1dd58f28c75ebe3b127f9f238f6f01eca4d3eec19019",
+      "target_sha256": "27cd649dc106c15f0a31ce57d98b77724e6ed821c35d27ef8db21773002b1739",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B012",
+      "unit_id": "OLP-0096",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "source_range_utf8": [
+        3462,
+        3812
+      ],
+      "target_range_utf8": [
+        4402,
+        4768
+      ],
+      "source_sha256": "d04c3a77cc077cb3ac9f8070f665fbc152e82c6e0e8de203a92104c952cd4327",
+      "target_sha256": "2937eb883f672d445743044342dd9243d1327cb5a6e6745f166e41f372b02c47",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0097-B005",
+      "unit_id": "OLP-0097",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "source_range_utf8": [
+        193,
+        242
+      ],
+      "target_range_utf8": [
+        193,
+        265
+      ],
+      "source_sha256": "ef64c5def19cab3f7a5605165d11736f7d7de61cf1826e780c6d4591d68a589e",
+      "target_sha256": "42eb0f43e04698ff54d988fe58a37422eb54b24161cdd33482cb920aa2ad26f3",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves closed-term scope, equality of term values and the extensionality transfer to A(t2).",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0097-B006",
+      "unit_id": "OLP-0097",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "source_range_utf8": [
+        244,
+        316
+      ],
+      "target_range_utf8": [
+        267,
+        424
+      ],
+      "source_sha256": "6c49a1875fecd86310f34b7f7bb3b8843bb46dce162dde144b3d011a57404ff1",
+      "target_sha256": "fa74259fc0ea8c51d8d59e213be82e916745d27c11869b1900654e302a3e45ff",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves closed-term scope, equality of term values and the extensionality transfer to A(t2).",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0097-B007",
+      "unit_id": "OLP-0097",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "source_range_utf8": [
+        318,
+        567
+      ],
+      "target_range_utf8": [
+        426,
+        887
+      ],
+      "source_sha256": "09314efe78a4ffdcf7df762a4c965e25459de1bbc097fafd97b5a1a01c50582f",
+      "target_sha256": "4664acaf54f08dac5301ae6b0ef113932b6f4fa638dd3d9534f995705ce7f73f",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves closed-term scope, equality of term values and the extensionality transfer to A(t2).",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0097-B008",
+      "unit_id": "OLP-0097",
+      "source_path": "upstream/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "source_range_utf8": [
+        569,
+        1589
+      ],
+      "target_range_utf8": [
+        889,
+        2401
+      ],
+      "source_sha256": "7746556d141b5717953e90dd2bda18c993005c67adcf8f3682428c6fafb0965d",
+      "target_sha256": "769668917101b9d01edf28f6abe31aa9c9bb01be7e7fca3023e22d6b93d46991",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves closed-term scope, equality of term values and the extensionality transfer to A(t2).",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ],
+  "samples": [
+    {
+      "segment_id": "OLP-0084-B005",
+      "unit_id": "OLP-0084",
+      "source_sha256": "f217f214cd722c5f0cc7c528e237676489fd68bf434c3098cd7e64a604308f23",
+      "target_sha256": "c7caff62d00641eb2c4c09c3329e9619f07a3d6e2167a97087779437ee720651",
+      "reverse_paraphrase": "The chapter presents natural deduction in the Gentzen/Prawitz tradition.",
+      "assessment": "Chapter identity, Gentzen/Prawitz scope and the prfND profile are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0085-B006",
+      "unit_id": "OLP-0085",
+      "source_sha256": "fb50c0acd744bd1d236ae061ad31e2ebd117edf7a44d16761edb737da8e3950b",
+      "target_sha256": "eb99880bc8034ff4e2a3473c03b92ad8753879f10a6c48bbfebfbbd6c06204f1",
+      "reverse_paraphrase": "Natural-deduction proofs start from assumptions, apply inference rules and may discharge assumptions under the designated rules.",
+      "assessment": "Assumptions, discharge permissions, rule premises and conclusions, and tree orientation are preserved after OLND-001.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0085-B008",
+      "unit_id": "OLP-0085",
+      "source_sha256": "af82e4c95a61820f0be8c8862666226597792bda8c1b9260ed5d4332941c15fe",
+      "target_sha256": "9d3e601460810121d4c00cdabcf1a8f805a1a5063c5f797b1d55238e7a7e58f8",
+      "reverse_paraphrase": "A natural-deduction derivation is a sentence tree whose lower sentence follows from one, two or three premise sentences by a correct rule; OLND-001 reads the copied word 'sequents' as 'sentences'.",
+      "assessment": "Assumptions, discharge permissions, rule premises and conclusions, and tree orientation are preserved after OLND-001.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B016",
+      "unit_id": "OLP-0086",
+      "source_sha256": "8b3fbffc1f23cc2aecdbf2c1360ea0a0389dcacfe361e26310c74c7a7136669b",
+      "target_sha256": "7b98632cc393b6c13b27a887945becb22138d33ad2411aa21ccd797ffe288f16",
+      "reverse_paraphrase": "Negation introduction concludes a negated sentence, whereas classical contradiction concludes a positive sentence, even though the rule shapes are similar.",
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0086-B017",
+      "unit_id": "OLP-0086",
+      "source_sha256": "e2d63c87aaf66a7995801cc8bce557d7dd03cfb830d8841ac61238b63267ac96",
+      "target_sha256": "5335af05b8b65c26f5fb358ea34353b2fba041d462c7c54635282147745f9178",
+      "reverse_paraphrase": "A rule's discharge annotation permits discharging any matching assumptions, including none; it does not require discharge.",
+      "assessment": "Every propositional introduction and elimination rule retains its connective, arity, discharge marker and classical or intuitionistic role.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B008",
+      "unit_id": "OLP-0087",
+      "source_sha256": "6fde341215c6b7687a9b09219bbbe808e7be5e7c388b6641c17eaa3dcd7e356c",
+      "target_sha256": "e37069dbeeaad2da95e244bccee17ab0057476086f81a8567401d52a1769f5ea",
+      "reverse_paraphrase": "Universal introduction uses a fresh constant absent from both its conclusion and every still-open assumption of the premise derivation.",
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B011",
+      "unit_id": "OLP-0087",
+      "source_sha256": "8dc67b53886c2636aed9c10d29d8493317517d0eb48255dcb28fd795410c5190",
+      "target_sha256": "295986fa54708b4da22a4a0a8814011e2c1d13f7cc8e48a7ee3d1301911015b3",
+      "reverse_paraphrase": "Existential elimination uses a fresh constant absent from the existential premise, the conclusion and all open assumptions except the temporary A(a) assumptions.",
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0087-B014",
+      "unit_id": "OLP-0087",
+      "source_sha256": "88f14765f2dbced96e6d108d9fc6a7f61b32f6c87260f3456cb599153e81cd1c",
+      "target_sha256": "0657c3dbe401567cf9d897082da2992da4926229a155d29a93d776d952988fa6",
+      "reverse_paraphrase": "Existential introduction and universal elimination accept arbitrary closed terms, while the two eigenvariable rules need freshness; dropping it yields the displayed invalid inference.",
+      "assessment": "Closed-term restrictions, eigenvariable freshness scope, substitution convention and the invalid counterexample are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B007",
+      "unit_id": "OLP-0088",
+      "source_sha256": "9ec49f8c2300a8a5f29502e0c7ea4518c0c65612bdbf3a9d844e981bd06ef857",
+      "target_sha256": "ae79694ff4bf0e4b468e0c18d0d944073927b262f3c1a4383c52a2244064ebf3",
+      "reverse_paraphrase": "A derivation from Gamma is a finite sentence tree whose leaves lie in Gamma or are discharged, whose root is the conclusion and whose internal steps instantiate rules correctly.",
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0088-B010",
+      "unit_id": "OLP-0088",
+      "source_sha256": "f701601096a89eb3c4abbc24f04958f6510657d86675c010e05505251862d2af",
+      "target_sha256": "865347c172350a95525faa9b2ddb3371248d9ae57ced2b4c3500a970c8813a1c",
+      "reverse_paraphrase": "Conditional introduction can discharge an occurrence of its antecedent assumption; the examples contrast which of C and D is discharged.",
+      "assessment": "The inductive and finite-tree definitions, open-assumption condition and optional nature of discharge are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B009",
+      "unit_id": "OLP-0089",
+      "source_sha256": "64ff0ac65415207eae3a64b9ab0ac722d25c206887bfa5bfde7283a6cdb6a773",
+      "target_sha256": "141d0c1f58972c815123a3e99e449b19a2ca9cca50e544ea701b4b65edaa315f",
+      "reverse_paraphrase": "The first worked proof eliminates the assumed conjunction to A and then introduces the conditional, discharging that conjunction assumption.",
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B013",
+      "unit_id": "OLP-0089",
+      "source_sha256": "bedd0b8452b0dcc6deeb89d0bfa15d72c8dc3f8c05e713e1962e619b0783debd",
+      "target_sha256": "726995f11c9b7af303dbb6a2b4c9d424a3d1ccfc534db196c86bf3789da3e221",
+      "reverse_paraphrase": "In the middle branch, A and not-A yield falsity by negation elimination, and falsity yields B before conditional introduction.",
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0089-B015",
+      "unit_id": "OLP-0089",
+      "source_sha256": "9d6eba6acd29d48ce3a176bde5427299a680bae24f5c1865ddc71c40e9725d73",
+      "target_sha256": "097e539e3fb82e9a2dd611ce3c2ed7e111ddbe5946fc2c80c57592ce6ca0778a",
+      "reverse_paraphrase": "Classical contradiction discharges a negated target and is the feature omitted by intuitionistic logic; the worked classical proofs use it where direct introduction rules cannot close the goal.",
+      "assessment": "Backward proof-search choices, branch dependencies, discharge labels and exercise formulas agree after OLND-002 and OLND-003.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B007",
+      "unit_id": "OLP-0090",
+      "source_sha256": "8c6cafbc40f86dbcc8eed63ce79117d45538ba0442f537757b2e1932cc58e33a",
+      "target_sha256": "d15ff6bf383d35f59a017b153139d6726586babac535f2282ed8dc724c01e689",
+      "reverse_paraphrase": "The quantified example derives not-forall A from exists not-A and then introduces the outer conditional; OLND-004 restores the missing negation in the existential premise.",
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B008",
+      "unit_id": "OLP-0090",
+      "source_sha256": "ec55a1423bb59c9c7aaf0f9c9ab8de83d6367d7527e52cc303d1e3ab9bd0a384",
+      "target_sha256": "ddac7debbff1d5d066deba4f8cb0b149776990dd8993ea05a75ff96b2f0c2dcf",
+      "reverse_paraphrase": "The eigenvariable check applies to existential elimination, and the chosen a occurs in none of the assumptions on which that inference depends; OLND-005 restores the defined rule macro.",
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0090-B012",
+      "unit_id": "OLP-0090",
+      "source_sha256": "ef924a8dc793120b5b6329277850d1ee466f5b1f0a241ef726feca8365692a48",
+      "target_sha256": "c1c088da17448dba9bd69abb037148b08f0704eefa13f2f1815446e952c83fcd",
+      "reverse_paraphrase": "Universal elimination instantiates the second premise at a, modus ponens obtains C(a,b), and existential introduction closes the subderivation needed by existential elimination.",
+      "assessment": "Quantifier proof order, eigenvariable dependencies and every displayed formula agree after OLND-004 and OLND-005.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B008",
+      "unit_id": "OLP-0091",
+      "source_sha256": "a8b0981c533669c6a7f90710dd697b187696e549b94d4a360fdf6980090e7580",
+      "target_sha256": "c5613eafc34e74dda3d55dfa6b4d645518a4de65ef85cf8f31a8270eeda2c2e7",
+      "reverse_paraphrase": "A theorem is a sentence with a natural-deduction derivation in which every assumption is discharged.",
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B009",
+      "unit_id": "OLP-0091",
+      "source_sha256": "302f43549a3912071c1335404326502c7665e44d093df83d0d2064f33c251f1b",
+      "target_sha256": "06580f9ab4ed76a19d6cd1c2ccb996754b54be74c4dfdd4e0fbee735b5aa8d50",
+      "reverse_paraphrase": "Gamma derives A when a derivation concludes A and every assumption is either discharged or belongs to Gamma.",
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B016",
+      "unit_id": "OLP-0091",
+      "source_sha256": "5f57b7907adc3dadc56dd1ccbe655f964af77166ed6dae1b817e85ff9fa997f1",
+      "target_sha256": "4f337289150b70c23d200da9d5e37d3010d7625f1ae86d741896a66dffdd5684",
+      "reverse_paraphrase": "Transitivity substitutes a derivation of A from Gamma into a derivation of B from A together with Delta, leaving open assumptions only in Gamma union Delta.",
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0091-B024",
+      "unit_id": "OLP-0091",
+      "source_sha256": "95ddd058dda38c178675ad48886c1371b7fa497ea52f04e0d975f360330f431e",
+      "target_sha256": "89c69f97320eb80cbca4c57b71ef56cb092db5f1c2d8b20f75457093f56de3a7",
+      "reverse_paraphrase": "Proof-theoretic compactness follows because each finite derivation has only finitely many open assumptions; inconsistency therefore has a finite witness.",
+      "assessment": "Theoremhood, derivability, consistency, structural properties, transitivity and compactness quantifiers are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B010",
+      "unit_id": "OLP-0092",
+      "source_sha256": "2d0e4bf9171f3e06ce424bec7278948cc2aea520a1370ecbf7bf9159d779a98f",
+      "target_sha256": "8925ab173aa33a862910c1e6d4e19c280b6d4feda24f9ecd9769ef119cd8d963",
+      "reverse_paraphrase": "If Gamma derives A, adjoining not-A yields falsity by negation elimination and hence inconsistency.",
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0092-B011",
+      "unit_id": "OLP-0092",
+      "source_sha256": "2815de01c1346792e2582f349db4167d7e74769f039bea386ac8f161bd039a4e",
+      "target_sha256": "36b75c30793db64e8f7b2746228612c3ac82c53a07981607590005472c801df0",
+      "reverse_paraphrase": "If Gamma together with not-A is inconsistent, classical contradiction discharges not-A and derives A from Gamma alone.",
+      "assessment": "All inconsistency equivalences and the directions of negation introduction, elimination and classical contradiction are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B011",
+      "unit_id": "OLP-0093",
+      "source_sha256": "aeade8567eac396656849613ff779c234636ea8919aa73de7f41002c3299acad",
+      "target_sha256": "84dce930ffee7261729a7229a4f6b3d757f920dce2a9bfa71b1522384097e3dd",
+      "reverse_paraphrase": "Disjunction elimination splits on A or B; each branch contradicts its matching negation and derives falsity, proving the three-premise set inconsistent.",
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0093-B014",
+      "unit_id": "OLP-0093",
+      "source_sha256": "da76d918cff83de7f1d0724cfb93eb5dc42246e6690504202eb5534b7d067b8c",
+      "target_sha256": "2a64f952c0cff24e2068fa6a74c146cc394e0ca7f49efb9c5e39fc009ca90105",
+      "reverse_paraphrase": "Not-A derives A-implies-B through falsity and explosion, while B derives the same conditional without using its temporary A assumption.",
+      "assessment": "Conjunction, disjunction and conditional derivability claims and their witnessing proof trees are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0094-B008",
+      "unit_id": "OLP-0094",
+      "source_sha256": "f2c2ed9fb55c956438b4a71b91c99a8cb1b62fa9900cd44f177751f565773f24",
+      "target_sha256": "1f25f07feff8407643d32a815a25d943669d6e96b52251c57d18172cb22862c0",
+      "reverse_paraphrase": "Strong generalization requires c to occur in neither Gamma nor A(x): a derivation of A(c) may then be followed by universal introduction.",
+      "assessment": "Strong generalization keeps both freshness restrictions, and both quantifier derivability directions are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B007",
+      "unit_id": "OLP-0095",
+      "source_sha256": "68de0351011a5d77d841688edd4963b55de97f7bac25b70c829052301e6bbb4f",
+      "target_sha256": "1157bf04859690ccea64aa94c883d4efa5731810822ebba3e17475de4809d9ad",
+      "reverse_paraphrase": "Soundness says that a conclusion derivable from open assumptions Gamma is a semantic consequence of Gamma.",
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B012",
+      "unit_id": "OLP-0095",
+      "source_sha256": "85edbaecbac1bcb2f5d6a038b463eb85d2b03fddd39ecfc989b1a574509afecf",
+      "target_sha256": "1fa90ce19bfc61c53ab7f13554f35ab63e277d6e6249ae8036765b26daf4a070",
+      "reverse_paraphrase": "For negation introduction, if Gamma and A semantically forced falsity, any model of Gamma must make A false and therefore make not-A true.",
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B018",
+      "unit_id": "OLP-0095",
+      "source_sha256": "b8d78d747eba2482c4bedacb844d1679703c3803ef89b1344b7df87b1886066d",
+      "target_sha256": "efd88887c2518b2b19f19e41177575fbd32f4fc18a7ace09a13a081b9f416ff4",
+      "reverse_paraphrase": "Universal introduction varies the fresh constant's interpretation to an arbitrary domain object; freshness keeps Gamma fixed and extensionality transfers A(a) to A(x).",
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B022",
+      "unit_id": "OLP-0095",
+      "source_sha256": "db52b4a304033e79c58cb3d529756d110c50ccb2530f4cfdd22b3dc83f024d1c",
+      "target_sha256": "f85c31ec27cf3e860f53dc929899498ed680a7fea5c3e96838d62a7dedbff506",
+      "reverse_paraphrase": "Conjunction introduction combines premise derivations from Gamma1 and Gamma2, so every model of their union satisfies both conjuncts and hence the conjunction.",
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B024",
+      "unit_id": "OLP-0095",
+      "source_sha256": "93e5a5ef73ac8c3de00567e4c481d110bd730786d0fc42dac379e44688e19ba2",
+      "target_sha256": "f359d75329505d32035c135bb799a9f048dffd383a78152d8d7b560fcdce6dcc",
+      "reverse_paraphrase": "Conditional elimination combines A-implies-B from Gamma1 with A from Gamma2, so a model of their union satisfies B.",
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0095-B031",
+      "unit_id": "OLP-0095",
+      "source_sha256": "2d174c403fbcd8511a594de2242bc75ba95dd9a156db3468f0908b87b9f0ce9d",
+      "target_sha256": "fc6750296d6ef8453c85f8de51c4c9e37ec941266c081f48555215d193e66be0",
+      "reverse_paraphrase": "The consistency corollary is contraposed: a derivation of falsity from Gamma would make any model of Gamma satisfy falsity, which no structure does.",
+      "assessment": "The induction measure, semantic polarity, assumption unions and checked rule cases preserve soundness after OLND-006.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B009",
+      "unit_id": "OLP-0096",
+      "source_sha256": "ef9ae26367633daf80764d78b420cd723db13dc75a8490342f2ebc078d32a88b",
+      "target_sha256": "9220973603dcd178277afc568de67ba7d0b58246b768c6c770ca2679f619a89d",
+      "reverse_paraphrase": "From s=t and A(s), equality elimination derives A(t), expressing substitutability of identicals or Leibniz's law.",
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0096-B011",
+      "unit_id": "OLP-0096",
+      "source_sha256": "bc7fc6b446409f9ced2a1dd58f28c75ebe3b127f9f238f6f01eca4d3eec19019",
+      "target_sha256": "27cd649dc106c15f0a31ce57d98b77724e6ed821c35d27ef8db21773002b1739",
+      "reverse_paraphrase": "The backwards derivation turns existence of an A-object identical to every A-object into the claim that any two A-objects are identical.",
+      "assessment": "Identity introduction, substitution of identicals, symmetry, transitivity and unique-existence reasoning are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0097-B008",
+      "unit_id": "OLP-0097",
+      "source_sha256": "7746556d141b5717953e90dd2bda18c993005c67adcf8f3682428c6fafb0965d",
+      "target_sha256": "769668917101b9d01edf28f6abe31aa9c9bb01be7e7fca3023e22d6b93d46991",
+      "reverse_paraphrase": "When equality elimination concludes A(t2), soundness uses equality of the term values and formula extensionality to transfer truth from A(t1) to A(t2).",
+      "assessment": "Identity soundness preserves closed-term scope, equality of term values and the extensionality transfer to A(t2).",
+      "status": "same_agent_reverse_paraphrase_passed"
+    }
+  ]
+}

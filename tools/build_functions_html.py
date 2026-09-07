@@ -4,9 +4,9 @@ import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus'}
-coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80}[edition]
-coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦'}[edition]
+assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction'}
+coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80,'natural-deduction':94}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦','natural-deduction':'૯૪'}[edition]
 title={
     'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
     'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
@@ -15,6 +15,7 @@ title={
     'propositional':'ગણો અને વિધાનાત્મક તર્કશાસ્ત્ર — ઓપન લોજિક ગુજરાતી',
     'proof-systems':'ગણો, વિધાનાત્મક તર્કશાસ્ત્ર અને નિષ્પત્તિ તંત્રો — ઓપન લોજિક ગુજરાતી',
     'sequent-calculus':'સિક્વન્ટ કલન સહિત ઓપન લોજિક ગુજરાતી',
+    'natural-deduction':'સ્વાભાવિક નિગમન સહિત ઓપન લોજિક ગુજરાતી',
 }[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
@@ -41,11 +42,11 @@ token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય'
              'derivation':'નિષ્પત્તિ','derivability':'નિષ્પન્નક્ષમતા',
              'identity':'તાદાત્મ્ય','tableau':'ટેબ્લો'}
 def token_value(namespace,key):
-    if edition in {'proof-systems','sequent-calculus'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
+    if edition in {'proof-systems','sequent-calculus','natural-deduction'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
     return token_words[key]
 body=command(body,'usetoken',2,token_value)
 body=command(body,'printtoken',2,token_value)
-if edition in {'propositional','proof-systems','sequent-calculus'}:
+if edition in {'propositional','proof-systems','sequent-calculus','natural-deduction'}:
     # Expand the two xparse-style constructs that Pandoc's LaTeX reader cannot
     # define through ordinary \newcommand declarations.  The prepared source
     # has already selected the frozen upstream default connective profile.
@@ -57,11 +58,12 @@ if edition in {'propositional','proof-systems','sequent-calculus'}:
     body=command(body,'pSat',2,lambda valuation,formula:
                  r'\mathfrak{'+valuation+r'}\vDash '+formula)
 proof_render_receipts=[]
-if edition in {'proof-systems','sequent-calculus'}:
+if edition in {'proof-systems','sequent-calculus','natural-deduction'}:
     proofs=re.findall(r'\\begin\{prooftree\}[\s\S]*?\\end\{prooftree\}',body)
     tableaux=re.findall(r'\\begin\{oltableau\}[\s\S]*?\\end\{oltableau\}',body)
     derivations=re.findall(r'\\begin\{derivation\}[\s\S]*?\\end\{derivation\}',body)
-    assert len(proofs)==(2 if edition=='proof-systems' else 60) and len(tableaux)==1 and len(derivations)==1
+    expected_proofs={'proof-systems':2,'sequent-calculus':60,'natural-deduction':123}[edition]
+    assert len(proofs)==expected_proofs and len(tableaux)==1 and len(derivations)==1
     rendered_proofs=[
         r'''\[
 \begin{array}{cl}
@@ -120,7 +122,7 @@ if edition in {'proof-systems','sequent-calculus'}:
     if edition=='proof-systems':
         assert not re.search(r'\\begin\{(?:prooftree|oltableau|derivation)\}',body)
 
-if edition=='sequent-calculus':
+if edition in {'sequent-calculus','natural-deduction'}:
     def bracket_arg(t,i):
         while i<len(t) and t[i].isspace():i+=1
         if i>=len(t) or t[i]!='[':return None,i
@@ -169,6 +171,8 @@ if edition=='sequent-calculus':
     body=expand_value(body)
     body=command(body,'varAssign',3,lambda new,old,var:new+r'\sim_{'+var+'}'+old)
     body=body.replace(r'\Proves/',r'\nvdash').replace(r'\Entails/',r'\nvDash')
+    body=command(body,'DischargeRule',2,lambda rule,index:
+                 r'\RightLabel{'+rule+r',\,'+index+'}')
 
     class ProofNode:
         def __init__(self,formula,children=(),label='',kind='axiom',double=False,empty=False):
@@ -184,32 +188,38 @@ if edition=='sequent-calculus':
         label=(r'\;'+node.label) if node.label else ''
         return r'\frac{'+upper+'}{'+node.formula+'}'+label
     def proof_region(source,kind):
-        command_pat=re.compile(r'\\(AxiomC|Axiom|Deduce|UnaryInf|BinaryInf|RightLabel|DisplayProof|bottomAlignProof|doubleLine|hfill|qquad|noindent)(?![A-Za-z])')
+        command_pat=re.compile(r'\\(AxiomC|Axiom|DeduceC|Deduce|UnaryInfC|UnaryInf|BinaryInfC|BinaryInf|TrinaryInfC|TrinaryInf|RightLabel|DisplayProof|bottomAlignProof|doubleLine|noLine|insertBetweenHyps|hfill|hspace|qquad|quad|noindent)(?![A-Za-z])')
         stack=[];trees=[];pending_label='';pending_double=False;pos=0
         counts={'axioms':0,'inferences':0,'deductions':0,'empty_premises':0,'double_lines':0}
         while (m:=command_pat.search(source,pos)):
             name=m[1];j=m.end()
             if name=='AxiomC':
-                formula,j=arg(source,j);empty=not formula.strip();stack.append(ProofNode(formula,empty=empty))
+                formula,j=arg(source,j);formula=formula.replace('$','');empty=not formula.strip();stack.append(ProofNode(formula,empty=empty))
                 counts['axioms']+=1;counts['empty_premises']+=int(empty)
-            elif name in {'Axiom','Deduce','UnaryInf','BinaryInf'}:
-                while j<len(source) and source[j].isspace():j+=1
-                assert j<len(source) and source[j]=='$',(kind,name,source[j:j+80])
-                end=source.find('$',j+1);assert end!=-1
-                formula=source[j+1:end];j=end+1
+            elif name in {'Axiom','DeduceC','Deduce','UnaryInfC','UnaryInf','BinaryInfC','BinaryInf','TrinaryInfC','TrinaryInf'}:
+                if name.endswith('C'):
+                    formula,j=arg(source,j)
+                    formula=formula.replace('$','')
+                else:
+                    while j<len(source) and source[j].isspace():j+=1
+                    assert j<len(source) and source[j]=='$',(kind,name,source[j:j+80])
+                    end=source.find('$',j+1);assert end!=-1
+                    formula=source[j+1:end];j=end+1
                 if name=='Axiom':
                     stack.append(ProofNode(formula));counts['axioms']+=1
                 else:
-                    arity=2 if name=='BinaryInf' else 1
+                    arity=3 if name.startswith('TrinaryInf') else 2 if name.startswith('BinaryInf') else 1
                     assert len(stack)>=arity,(kind,name,len(stack),formula)
                     children=stack[-arity:];del stack[-arity:]
-                    stack.append(ProofNode(formula,children,pending_label,'deduce' if name=='Deduce' else 'inference',pending_double))
-                    counts['inferences']+=1;counts['deductions']+=int(name=='Deduce')
+                    stack.append(ProofNode(formula,children,pending_label,'deduce' if name.startswith('Deduce') else 'inference',pending_double))
+                    counts['inferences']+=1;counts['deductions']+=int(name.startswith('Deduce'))
                     counts['double_lines']+=int(pending_double);pending_label='';pending_double=False
             elif name=='RightLabel':
                 pending_label,j=arg(source,j)
                 if pending_label.startswith('$') and pending_label.endswith('$'):pending_label=pending_label[1:-1]
             elif name=='doubleLine':pending_double=True
+            elif name in {'insertBetweenHyps','hspace'}:
+                _,j=arg(source,j)
             elif name=='DisplayProof':
                 assert len(stack)==1,(kind,'display',len(stack))
                 trees.append(stack.pop())
@@ -224,9 +234,12 @@ if edition=='sequent-calculus':
             representation='Recursive MathML inference fractions preserving every premise, conclusion, branch and rule label; dotted omissions remain vertical dots and open premises remain visually blank.',
         ))
         return '\n'+rendered+'\n'
-    body=re.sub(r'\\begin\{defish\}[\s\S]*?\\end\{defish\}',lambda m:proof_region(m[0],'sequent_rule_display'),body)
-    body=re.sub(r'\\begin\{prooftree\}[\s\S]*?\\end\{prooftree\}',lambda m:proof_region(m[0],'sequent_prooftree'),body)
-    assert not re.search(r'\\(?:AxiomC|Axiom|Deduce|UnaryInf|BinaryInf|RightLabel|DisplayProof)(?![A-Za-z])',body)
+    def proof_kind(source,display):
+        system='sequent' if r'\fCenter' in source else 'natural_deduction'
+        return system+('_rule_display' if display else '_prooftree')
+    body=re.sub(r'\\begin\{defish\}[\s\S]*?\\end\{defish\}',lambda m:proof_region(m[0],proof_kind(m[0],True)),body)
+    body=re.sub(r'\\begin\{prooftree\}[\s\S]*?\\end\{prooftree\}',lambda m:proof_region(m[0],proof_kind(m[0],False)),body)
+    assert not re.search(r'\\(?:AxiomC|Axiom|DeduceC|Deduce|UnaryInfC|UnaryInf|BinaryInfC|BinaryInf|TrinaryInfC|TrinaryInf|RightLabel|DisplayProof|DischargeRule)(?![A-Za-z])',body)
 authors={'Cantor1892':'કૅન્ટૉર','Frege1884':'ફ્રેગે','Potter2004':'પૉટર',
          'Benacerraf1965':'બેનાસેરાફ','Conway2006':'કૉનવે',
          'KatzKatz2012':'કૅટ્ઝ અને કૅટ્ઝ',
@@ -406,6 +419,7 @@ for prefix,block in section_text:
             'fol:syn:sem:prop:quant-terms':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex','મૂળ ગ્રંથનું પરિમાણક અને પદ અંગેનું વિધાન'),
             'fol:syn:ass:prop:sat-quant':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex','મૂળ ગ્રંથનું પરિમાણક-સંતોષ અંગેનું વિધાન'),
             'fol:syn:ass:prop:sentence-sat-true':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex','મૂળ ગ્રંથનું વાક્યના સંતોષ અંગેનું વિધાન'),
+            'fol:syn:sat:defn:satisfaction':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/satisfaction.tex','મૂળ ગ્રંથની સંતોષ અંગેની વ્યાખ્યા'),
             'fol:syn:ext:cor:extensionality-sent':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex','મૂળ ગ્રંથનું વાક્યની વિસ્તરણાત્મકતા અંગેનું ઉપસિદ્ધાંત'),
             'fol:syn:ext:prop:ext-formulas':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex','મૂળ ગ્રંથનું સૂત્રોની વિસ્તરણાત્મકતા અંગેનું વિધાન'),
             'fol:syn:ext:prop:extensionality':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex','મૂળ ગ્રંથનું વિસ્તરણાત્મકતા અંગેનું વિધાન'),
@@ -498,6 +512,7 @@ macros=r"""
 \newcommand{\Intro}[1]{#1\mathrm{Intro}}
 \newcommand{\Elim}[1]{#1\mathrm{Elim}}
 \newcommand{\FalseInt}{\bot_I}
+\newcommand{\FalseCl}{\bot_C}
 \newcommand{\Discharge}[2]{[#1]^{#2}}
 \newcommand{\sFmla}[2]{#1\,#2}
 \newcommand{\TRule}[2]{#2#1}
@@ -510,14 +525,14 @@ if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
-if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus'}:
+if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction'}:
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
                      +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
                      +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
                      +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
-if edition in {'infinite','propositional','proof-systems','sequent-calculus'}:
+if edition in {'infinite','propositional','proof-systems','sequent-calculus','natural-deduction'}:
     bibliography += (r'\label{bib:EwaldSieg2013}Hilbert, David. 2013. On the infinite. In \emph{David Hilbert’s Lectures on the Foundations of Arithmetic and Logic 1917–1933}.'+'\n'
                      +r'\label{bib:Dedekind1888}Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?}.'+'\n')
 src=B/f'{edition}-html.tex'
@@ -534,6 +549,8 @@ elif edition == 'proof-systems':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા નિષ્પત્તિ તંત્રોના પરિચય અને ચાર પદ્ધતિઓના પાંચ સર્વેક્ષણ-ખંડ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 elif edition == 'sequent-calculus':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમના LK સિક્વન્ટ કલનનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
+elif edition == 'natural-deduction':
+    notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમના સ્વાભાવિક નિગમનનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 else:
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope[edition]} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>{notice_text} <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
@@ -554,7 +571,7 @@ for box in soup.select('div.center'):
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13}[edition]
+expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13,'natural-deduction':13}[edition]
 assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.
