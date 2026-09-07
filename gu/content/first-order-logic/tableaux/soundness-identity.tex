@@ -1,0 +1,50 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: soundness-identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{sid}
+
+\olsection{\usetoken{S}{identity} સાથે યથાર્થતા}
+
+\begin{prop}
+તાદાત્મ્ય માટેના નિયમો ધરાવતા !!^{tableau}s યથાર્થ છે: કોઈ બંધ
+!!{tableau} સંતોષ્ય નથી.
+\end{prop}
+
+\begin{proof}
+પહેલાંની જેમ આપણે માત્ર એટલું દર્શાવવું છે કે જો !!a{tableau}માં
+સંતોષ્ય શાખા હોય, તો તેને~$\eq$ માટેના નિયમોમાંથી કોઈ એક લાગુ કરતાં
+મળતી શાખા પણ સંતોષ્ય છે. શાખા પરનાં ચિહ્નિત !!{formula}sનો ગણ
+$\Gamma$ હોય અને~$\Gamma$ને સંતોષતી !!a{structure} $\Struct{M}$ હોય.
+
+ધારો કે શાખાને~$\eq$ વાપરીને, એટલે કે ચિહ્નિત
+!!{formula}~$\sFmla{\True}{\eq[t][t]}$ ઉમેરીને, વિસ્તારીએ છીએ. દેખીતી
+રીતે $\Sat{M}{\eq[t][t]}$, તેથી $\Struct{M}$ એ
+$\Gamma \cup \{\sFmla{\True}{\eq[t][t]}\}$ને પણ સંતોષે છે.
+
+જો શાખાને $\TRule{\True}{\eq}$ વડે વિસ્તારીએ, તો ચિહ્નિત
+!!{formula}~$\sFmla{\True}{!A(t_2)}$ ઉમેરીએ છીએ, પરંતુ $\Gamma$માં
+$\sFmla{\True}{\eq[t_1][t_2]}$ અને $\sFmla{\True}{!A(t_1)}$ બંને છે.
+તેથી $\Sat{M}{\eq[t_1][t_2]}$ અને $\Sat{M}{!A(t_1)}$. એવી ચલ-સોંપણી
+$s$ લો કે $s(x) = \Value{t_1}{M}$.
+\olref[syn][ass]{prop:sentence-sat-true} મુજબ
+$\Sat{M}{!A(t_1)}[s]$. $\varAssign{s}{s}{x}$ હોવાથી
+\olref[syn][ext]{prop:ext-formulas} મુજબ $\Sat{M}{!A(x)}[s]$.
+$\Sat{M}{\eq[t_1][t_2]}$ હોવાથી
+$\Value{t_1}{M} = \Value{t_2}{M}$ અને તેથી
+$s(x) = \Value{t_2}{M}$. ફરીથી
+\olref[syn][ext]{prop:ext-formulas} લાગુ કરતાં
+$\Sat{M}{!A(t_2)}[s]$ પણ મળે છે.
+\olref[syn][ass]{prop:sentence-sat-true} મુજબ $\Sat{M}{!A(t_2)}$.
+$\TRule{\False}{\eq}$નો કિસ્સો એ જ રીતે સંભાળીએ છીએ.
+\sourcecorrection{OLTAB-012}{મૂળની \texttt{soundness-identity.tex},
+પંક્તિ~31માં $\TRule{\True}{\eq}$ના ફલિતનું ચિહ્ન અનિર્ધારિત~$S$
+લખાયું છે. પ્રદર્શિત નિયમ અને આ જ દલીલનાં બંને આધારવાક્યો મુજબ અહીં
+$\True$ પુનઃસ્થાપિત કર્યું છે.}
+\end{proof}
+
+\end{document}

@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-07T15:21:46.213323+00:00",
+  "checkpoint_utc": "2026-09-07T18:20:27.173556+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 94,
+  "translated_units": 108,
   "publicly_verified_release_units": 94,
   "publicly_verified_source_checkpoint_units": 94,
   "total_units": 722,
-  "aligned_linguistic_blocks": 1029,
-  "source_math_spans_verified": 5562,
+  "aligned_linguistic_blocks": 1161,
+  "source_math_spans_verified": 6151,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 1029,
-    "samples": 500,
+    "exact_block_reviews": 1161,
+    "samples": 535,
     "independent_native_certification": false,
-    "status": "passed_for_current_94_unit_scope"
+    "status": "passed_for_current_108_unit_scope"
   },
   "source_corrections": {
-    "count": 41,
+    "count": 53,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -59,57 +59,80 @@
       "OLND-003",
       "OLND-004",
       "OLND-005",
-      "OLND-006"
+      "OLND-006",
+      "OLTAB-001",
+      "OLTAB-002",
+      "OLTAB-003",
+      "OLTAB-004",
+      "OLTAB-005",
+      "OLTAB-006",
+      "OLTAB-007",
+      "OLTAB-008",
+      "OLTAB-009",
+      "OLTAB-010",
+      "OLTAB-011",
+      "OLTAB-012"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/natural-deduction.html",
-    "bytes": 2189523,
-    "sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052",
-    "source_units_covered": 94,
-    "natural_deduction_units_complete": 14,
-    "rendered_natural_deduction_sections": 13,
-    "logic_profile": "first-order natural deduction, including quantifier and identity rules",
-    "mathml_nodes": 5091,
-    "mathml_tables": 72,
-    "block_mathml_nodes": 303,
-    "proof_representation_entries": 144,
+    "path": "reader/tableaux.html",
+    "bytes": 2727340,
+    "sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c",
+    "source_units_covered": 108,
+    "tableaux_units_complete": 14,
+    "rendered_tableaux_sections": 13,
+    "logic_profile": "signed analytic first-order tableaux, including quantifier and identity rules",
+    "mathml_nodes": 5779,
+    "mathml_tables": 618,
+    "block_mathml_nodes": 389,
+    "proof_representation_entries": 203,
     "proof_representation_kinds": {
       "axiomatic_derivation": 1,
       "closed_tableau": 1,
-      "natural_deduction_prooftree": 63,
-      "natural_deduction_rule_display": 8,
+      "natural_deduction_prooftree": 64,
+      "natural_deduction_rule_display": 16,
       "prooftree": 2,
       "sequent_prooftree": 58,
-      "sequent_rule_display": 11
+      "sequent_rule_display": 11,
+      "signed_analytic_tableau": 50
     },
     "proof_structure_totals": {
-      "trees": 174,
-      "axioms": 262,
-      "inferences": 401,
+      "trees": 191,
+      "axioms": 279,
+      "inferences": 423,
       "deductions": 74,
-      "empty_premises": 49,
+      "empty_premises": 51,
       "double_lines": 2
+    },
+    "signed_analytic_tableau_totals": {
+      "nodes": 279,
+      "edges": 235,
+      "leaves": 80,
+      "empty_branches": 6,
+      "checked_nodes": 65,
+      "closed_nodes": 40,
+      "moved_nodes": 2,
+      "maximum_individual_depth": 9
     },
     "truth_tables": 5,
     "images": 13,
-    "unique_ids": 363,
+    "unique_ids": 427,
     "broken_internal_links": 0,
-    "natural_deduction_section_ids": [
-      "fol:ntd:rul:sec",
-      "fol:ntd:prl:sec",
-      "fol:ntd:qrl:sec",
-      "fol:ntd:der:sec",
-      "fol:ntd:pro:sec",
-      "fol:ntd:prq:sec",
-      "fol:ntd:ptn:sec",
-      "fol:ntd:prv:sec",
-      "fol:ntd:ppr:sec",
-      "fol:ntd:qpr:sec",
-      "fol:ntd:sou:sec",
-      "fol:ntd:ide:sec",
-      "fol:ntd:sid:sec"
+    "tableaux_section_ids": [
+      "fol:tab:rul:sec",
+      "fol:tab:prl:sec",
+      "fol:tab:qrl:sec",
+      "fol:tab:der:sec",
+      "fol:tab:pro:sec",
+      "fol:tab:prq:sec",
+      "fol:tab:ptn:sec",
+      "fol:tab:prv:sec",
+      "fol:tab:ppr:sec",
+      "fol:tab:qpr:sec",
+      "fol:tab:sou:sec",
+      "fol:tab:ide:sec",
+      "fol:tab:sid:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -152,43 +175,61 @@
       "OLND-003",
       "OLND-004",
       "OLND-005",
-      "OLND-006"
+      "OLND-006",
+      "OLTAB-001",
+      "OLTAB-002",
+      "OLTAB-003",
+      "OLTAB-004",
+      "OLTAB-005",
+      "OLTAB-006",
+      "OLTAB-007",
+      "OLTAB-008",
+      "OLTAB-009",
+      "OLTAB-011",
+      "OLTAB-010",
+      "OLTAB-012"
     ],
+    "literal_sFmla_correction_references": 2,
     "gujarati_character_inventory_preserved": true,
     "main_gujarati_character_sequence_preserved": true,
     "footnote_gujarati_character_sequence_preserved": true,
-    "footnotes": 11,
+    "footnotes": 12,
     "stylesheet": {
       "path": "reader/reader.css",
       "href": "reader.css?v=3",
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/natural-deduction-html-qa.json",
-      "sha256": "02cef2fca8b42025fb6486450457f51f23c267541f8c27fe76b22e100d481e83"
+      "path": "build/tableaux-html-qa.json",
+      "sha256": "422764595c64dc145e4bdf2f2de1692e1bf66b3cfeb643e94a4f479638f1ced2"
+    },
+    "prepared_tex": {
+      "path": "build/tableaux-html.tex",
+      "sha256": "6ff74f79b6aaeb7a27c327d708fa843ee63f882e10f08be513282d33cc700f41"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
     ],
-    "status": "passed_exact_dom_mathml_proof_link_asset_and_character_qa",
+    "status": "passed_exact_dom_mathml_proof_tableau_link_asset_and_character_qa",
     "browser_inspection": "passed_actual_live_browser_inspection",
-    "block_mathml_overflow_nodes": 0
+    "block_mathml_overflow_nodes": 0,
+    "intentionally_scrollable_block_mathml_nodes": 3
   },
   "pdf": {
-    "path": "build/gu-natural-deduction.pdf",
-    "bytes": 1127178,
-    "sha256": "9cf3db8b374373bdb0f37cefa8ecff9e59db0da5b4a91e5df8df9591cd3b31a3",
-    "pages": 121,
+    "path": "build/gu-tableaux.pdf",
+    "bytes": 1285438,
+    "sha256": "3bbc0dd6e7f3b31cefce2935f054e989e4145070492b4efed13331611fe8244a",
+    "pages": 144,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "સ્વાભાવિક નિગમન સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 121,
+    "nonempty_extracted_text_pages": 144,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_010.json",
+    "build_receipt": "BUILD_RECEIPT_011.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -253,9 +294,16 @@
       "math": 968,
       "semantic": 34,
       "exact_block_reviews": 142
+    },
+    "011": {
+      "units": 14,
+      "blocks": 132,
+      "math": 589,
+      "semantic": 35,
+      "exact_block_reviews": 132
     }
   },
-  "status": "94_unit_source_html_pdf_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "108_unit_source_html_pdf_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_94_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -298,14 +346,14 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "01944df2f5a201e81e46dad3a498162f93a3b2414788922c7dc72b8427197790",
+    "sha256": "2f221d201faf1cc600ace455837ede63e248e572db79b20555b2ee2c03a12dfe",
     "status": "passed",
     "coverage": {
-      "decisions": 167,
-      "occurrences": 175
+      "decisions": 179,
+      "occurrences": 187
     },
     "reader_locators": {
-      "available": 174,
+      "available": 186,
       "pending": 0,
       "not_applicable": 1
     }
@@ -351,5 +399,34 @@
     "html_qa": "HTML_QA_010.json",
     "pdf_qa": "PDF_QA_010.json",
     "cumulative_gate": "CUMULATIVE_QA_010.json"
+  },
+  "batch_011": {
+    "draft_units": 14,
+    "remaining_units": [],
+    "structural_parity": "passed_after_12_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLTAB-001",
+      "OLTAB-002",
+      "OLTAB-003",
+      "OLTAB-004",
+      "OLTAB-005",
+      "OLTAB-006",
+      "OLTAB-007",
+      "OLTAB-008",
+      "OLTAB-009",
+      "OLTAB-010",
+      "OLTAB-011",
+      "OLTAB-012"
+    ],
+    "linguistic_blocks": 132,
+    "math_spans": 589,
+    "semantic_samples": "passed_132_exact_block_reviews_and_35_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_tableau_link_asset_and_character_qa_plus_reproducible_144_page_pdf_all_page_visual_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_389_block_mathml_nodes; three wide tableaux are horizontally scrollable and none are clipped",
+    "untranslated_prose": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+    "translation_decisions": "passed_json_schema_and_186_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
+    "html_qa": "HTML_QA_011.json",
+    "pdf_qa": "PDF_QA_011.json",
+    "cumulative_gate": "CUMULATIVE_QA_011.json"
   }
 }

@@ -4,9 +4,9 @@ import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction'}
-coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80,'natural-deduction':94}[edition]
-coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦','natural-deduction':'૯૪'}[edition]
+assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}
+coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80,'natural-deduction':94,'tableaux':108}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦','natural-deduction':'૯૪','tableaux':'૧૦૮'}[edition]
 title={
     'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
     'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
@@ -16,6 +16,7 @@ title={
     'proof-systems':'ગણો, વિધાનાત્મક તર્કશાસ્ત્ર અને નિષ્પત્તિ તંત્રો — ઓપન લોજિક ગુજરાતી',
     'sequent-calculus':'સિક્વન્ટ કલન સહિત ઓપન લોજિક ગુજરાતી',
     'natural-deduction':'સ્વાભાવિક નિગમન સહિત ઓપન લોજિક ગુજરાતી',
+    'tableaux':'ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી',
 }[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
@@ -37,16 +38,20 @@ body=(B/f'{edition}-body.tex').read_text(encoding='utf-8')
 available=set(json.loads((B/f'{edition}-available-labels.json').read_text()))
 body=command(body,'oliflabeldef',3,lambda key,yes,no:yes if key in available else no)
 body=command(body,'sourcecorrection',2,lambda ident,note:'\n\n'+r'\begin{quote}\textbf{સ્રોત-સુધારો '+ident+'.} '+note+r'\end{quote}'+'\n\n')
+# Pandoc drops ``\string`` inside ``\texttt``.  Preserve the literal macro
+# name used by the OLTAB-006/007 correction disclosures without invoking the
+# argument-taking source macro.
+body=body.replace(r'\texttt{\string\sFmla}',r'\texttt{\textbackslash{}sFmla}')
 token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય',
              'formula':'સૂત્ર','valuation':'સત્યમૂલ્ય-નિયુક્તિ',
              'derivation':'નિષ્પત્તિ','derivability':'નિષ્પન્નક્ષમતા',
              'identity':'તાદાત્મ્ય','tableau':'ટેબ્લો'}
 def token_value(namespace,key):
-    if edition in {'proof-systems','sequent-calculus','natural-deduction'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
+    if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
     return token_words[key]
 body=command(body,'usetoken',2,token_value)
 body=command(body,'printtoken',2,token_value)
-if edition in {'propositional','proof-systems','sequent-calculus','natural-deduction'}:
+if edition in {'propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}:
     # Expand the two xparse-style constructs that Pandoc's LaTeX reader cannot
     # define through ordinary \newcommand declarations.  The prepared source
     # has already selected the frozen upstream default connective profile.
@@ -58,12 +63,13 @@ if edition in {'propositional','proof-systems','sequent-calculus','natural-deduc
     body=command(body,'pSat',2,lambda valuation,formula:
                  r'\mathfrak{'+valuation+r'}\vDash '+formula)
 proof_render_receipts=[]
-if edition in {'proof-systems','sequent-calculus','natural-deduction'}:
+if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux'}:
     proofs=re.findall(r'\\begin\{prooftree\}[\s\S]*?\\end\{prooftree\}',body)
     tableaux=re.findall(r'\\begin\{oltableau\}[\s\S]*?\\end\{oltableau\}',body)
     derivations=re.findall(r'\\begin\{derivation\}[\s\S]*?\\end\{derivation\}',body)
-    expected_proofs={'proof-systems':2,'sequent-calculus':60,'natural-deduction':123}[edition]
-    assert len(proofs)==expected_proofs and len(tableaux)==1 and len(derivations)==1
+    expected_proofs={'proof-systems':2,'sequent-calculus':60,'natural-deduction':123,'tableaux':124}[edition]
+    expected_tableaux=45 if edition=='tableaux' else 1
+    assert len(proofs)==expected_proofs and len(tableaux)==expected_tableaux and len(derivations)==1
     rendered_proofs=[
         r'''\[
 \begin{array}{cl}
@@ -122,7 +128,7 @@ if edition in {'proof-systems','sequent-calculus','natural-deduction'}:
     if edition=='proof-systems':
         assert not re.search(r'\\begin\{(?:prooftree|oltableau|derivation)\}',body)
 
-if edition in {'sequent-calculus','natural-deduction'}:
+if edition in {'sequent-calculus','natural-deduction','tableaux'}:
     def bracket_arg(t,i):
         while i<len(t) and t[i].isspace():i+=1
         if i>=len(t) or t[i]!='[':return None,i
@@ -173,6 +179,134 @@ if edition in {'sequent-calculus','natural-deduction'}:
     body=body.replace(r'\Proves/',r'\nvdash').replace(r'\Entails/',r'\nvDash')
     body=command(body,'DischargeRule',2,lambda rule,index:
                  r'\RightLabel{'+rule+r',\,'+index+'}')
+
+    class TableauNode:
+        def __init__(self,formula='',children=(),just='',checked=False,closed=False,move=''):
+            self.formula=formula.strip();self.children=list(children);self.just=just.strip()
+            self.checked=checked;self.closed=closed;self.move=move.strip();self.number=None
+    def split_tableau_fields(text):
+        fields=[];start=0;braces=brackets=0
+        for i,ch in enumerate(text):
+            escaped=i>0 and text[i-1]=='\\'
+            if ch=='{' and not escaped:braces+=1
+            elif ch=='}' and not escaped:braces-=1
+            elif ch=='[' and not escaped:brackets+=1
+            elif ch==']' and not escaped:brackets-=1
+            elif ch==',' and not braces and not brackets:
+                fields.append(text[start:i].strip());start=i+1
+        fields.append(text[start:].strip())
+        assert braces==brackets==0,(braces,brackets,text[:120])
+        return fields
+    def strip_outer_group(text):
+        text=text.strip()
+        if not text.startswith('{'):return text
+        value,end=arg(text,0)
+        return value.strip() if end==len(text) else text
+    def parse_tableau_node(text,pos=0):
+        while pos<len(text) and text[pos].isspace():pos+=1
+        assert pos<len(text) and text[pos]=='[',(pos,text[pos:pos+100])
+        pos+=1;start=pos;header=[];children=[];braces=0
+        while pos<len(text):
+            ch=text[pos];escaped=pos>0 and text[pos-1]=='\\'
+            if ch=='{' and not escaped:braces+=1;pos+=1;continue
+            if ch=='}' and not escaped:braces-=1;assert braces>=0;pos+=1;continue
+            if not braces and ch=='[':
+                reference=re.match(r'\[\s*\d+(?:\s*,\s*\d+)*\s*\]',text[pos:])
+                if reference:
+                    pos+=reference.end();continue
+                header.append(text[start:pos])
+                child,pos=parse_tableau_node(text,pos);children.append(child);start=pos
+                continue
+            if not braces and ch==']':
+                header.append(text[start:pos]);pos+=1;break
+            pos+=1
+        else:raise AssertionError(('unterminated tableau node',text[:160]))
+        fields=split_tableau_fields(''.join(header))
+        if len(fields)==1 and not fields[0]:return TableauNode(children=children),pos
+        formula=fields[0];just='';checked=closed=False;move='';unknown=[]
+        for option in fields[1:]:
+            option=option.strip()
+            if not option:continue
+            if option=='checked':checked=True
+            elif option=='close':closed=True
+            elif re.match(r'just\s*=',option):just=strip_outer_group(option.split('=',1)[1])
+            elif re.match(r'move by\s*=',option):move=option.split('=',1)[1].strip()
+            else:unknown.append(option)
+        assert not unknown,(unknown,formula)
+        return TableauNode(formula,children,just,checked,closed,move),pos
+    def tableau_stats(root):
+        rows=[]
+        def visit(node,depth):
+            rows.append((node,depth))
+            for child in node.children:visit(child,depth+1)
+        visit(root,1)
+        return dict(
+            nodes=sum(bool(node.formula) for node,_ in rows),
+            empty_branches=sum(not node.formula for node,_ in rows),
+            edges=sum(len(node.children) for node,_ in rows),
+            leaves=sum(not node.children for node,_ in rows),
+            max_depth=max(depth for _,depth in rows),
+            checked_nodes=sum(node.checked for node,_ in rows),
+            closed_nodes=sum(node.closed for node,_ in rows),
+            moved_nodes=sum(bool(node.move) for node,_ in rows),
+        )
+    def number_tableau(root,numbered):
+        counter=0
+        def visit(node):
+            nonlocal counter
+            if node.formula:
+                counter+=1;node.number=counter if numbered else None
+            for child in node.children:visit(child)
+        visit(root)
+        return counter
+    def tableau_math(node):
+        if not node.formula:
+            return r'\phantom{\sFmla{\True}{\varphi}}'
+        formula=node.formula.strip()
+        if formula.startswith('$') and formula.endswith('$'):formula=formula[1:-1]
+        if node.checked:formula+=r'\;{}^{\checkmark}'
+        just=node.just.replace(r'\TAss',r'\text{ધારણા}').strip()
+        if just.startswith('$') and just.endswith('$'):just=just[1:-1]
+        if node.closed:just+=(r'\quad ' if just else '')+r'\times'
+        number=(str(node.number)+'.') if node.number is not None else r'\phantom{0.}'
+        just_cell=(r'{\scriptstyle '+just+'}') if just else '{}'
+        line=r'\begin{array}{rcl}'+number+'&'+formula+'&'+just_cell+r'\end{array}'
+        if not node.children:return line
+        children=[tableau_math(child) for child in node.children]
+        if len(children)==1:
+            connector=r'\downarrow';lower=children[0]
+        else:
+            columns='c'*len(children)
+            arrows=[r'\swarrow',r'\searrow'] if len(children)==2 else [r'\downarrow']*len(children)
+            connector=r'\begin{array}{'+columns+'}'+'&'.join(arrows)+r'\end{array}'
+            lower=r'\begin{array}{'+columns+'}'+'&'.join(children)+r'\end{array}'
+        return r'\begin{array}{c}'+line+r'\\[-.35ex]'+connector+r'\\[-.35ex]'+lower+r'\end{array}'
+    def tableau_region(source,payload,numbered,kind):
+        payload=payload.lstrip()
+        if payload.startswith('{'):
+            options,end=arg(payload,0)
+            assert not options.strip(),options
+            payload=payload[end:]
+        root,pos=parse_tableau_node(payload)
+        assert not payload[pos:].strip(),payload[pos:pos+120]
+        count=number_tableau(root,numbered);stats=tableau_stats(root)
+        assert count==stats['nodes'] and count>0
+        proof_render_receipts.append(dict(
+            kind=kind,source_sha256=hashlib.sha256(source.encode('utf-8')).hexdigest(),
+            numbered=numbered,**stats,
+            representation='Recursive MathML signed-formula tree preserving node order, branch structure, justifications, checkmarks, closure marks and intentional empty branches.',
+        ))
+        return '\n\\['+tableau_math(root)+r'\]'+'\n'
+    if edition=='tableaux':
+        body=re.sub(
+            r'\\begin\{oltableau\}([\s\S]*?)\\end\{oltableau\}(?:\{\})?',
+            lambda m:tableau_region(m[0],m[1],True,'signed_analytic_tableau'),body,
+        )
+        body=re.sub(
+            r'\\begin\{tableau\}\{([^{}]*)\}([\s\S]*?)\\end\{tableau\}(?:\{\})?',
+            lambda m:tableau_region(m[0],m[2],m[1].strip()!='not line numbering','signed_analytic_tableau'),body,
+        )
+        assert not re.search(r'\\begin\{(?:oltableau|tableau)\}',body)
 
     class ProofNode:
         def __init__(self,formula,children=(),label='',kind='axiom',double=False,empty=False):
@@ -525,14 +659,14 @@ if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
-if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction'}:
+if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}:
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
                      +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
                      +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
                      +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
-if edition in {'infinite','propositional','proof-systems','sequent-calculus','natural-deduction'}:
+if edition in {'infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}:
     bibliography += (r'\label{bib:EwaldSieg2013}Hilbert, David. 2013. On the infinite. In \emph{David Hilbert’s Lectures on the Foundations of Arithmetic and Logic 1917–1933}.'+'\n'
                      +r'\label{bib:Dedekind1888}Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?}.'+'\n')
 src=B/f'{edition}-html.tex'
@@ -551,6 +685,8 @@ elif edition == 'sequent-calculus':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમના LK સિક્વન્ટ કલનનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 elif edition == 'natural-deduction':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમના સ્વાભાવિક નિગમનનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
+elif edition == 'tableaux':
+    notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમના ચિહ્નિત વિશ્લેષણાત્મક ટેબ્લોનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 else:
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope[edition]} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>{notice_text} <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
@@ -571,7 +707,7 @@ for box in soup.select('div.center'):
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13,'natural-deduction':13}[edition]
+expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13,'natural-deduction':13,'tableaux':13}[edition]
 assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.

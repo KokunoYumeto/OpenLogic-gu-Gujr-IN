@@ -1,0 +1,258 @@
+\input{build/foundations-preamble.tex}
+\usepackage[authoryear]{natbib}
+\usepackage{upstream/sty/bussproofs-extra}
+\renewenvironment{prooftree}
+  {\begin{center}\bottomAlignProof}
+  {\DisplayProof\end{center}}
+\usepackage[tableaux]{prooftrees}
+\newenvironment{oltableau}{\center\tableau{}}{\endtableau\endcenter}
+\newenvironment{defish}{\begin{quote}\noindent}{\end{quote}}
+\renewcommand{\refname}{સંદર્ભગ્રંથો}
+\renewcommand{\partname}{ભાગ}
+\newenvironment{intro}{}{}
+\newenvironment{derivation}{%
+  ~\begin{trivlist}\item\begin{tabular}[b]{@{}rll@{}}}
+  {\end{tabular}\end{trivlist}}
+\newcommand{\Id}[1]{\mathord{\mathrm{Id}_{#1}}}
+\newcommand{\equivrep}[2]{[#1]_{#2}}
+\newcommand{\equivclass}[2]{#1/_{\!{#2}}}
+\newcommand{\Intequiv}{\mathrel{\sim_{\Int}}}
+\newcommand{\Ratequiv}{\mathrel{\sim_{\Rat}}}
+\newcommand{\Realequiv}{\mathrel{\sim_{\Real}}}
+\newcommand{\funrestrictionto}[2]{#1\mathord{\restriction}_{#2}}
+\newcommand{\funimage}[2]{#1[#2]}
+\newcommand{\emptyseq}{\Lambda}
+\newcommand{\liff}{\mathbin{\leftrightarrow}}
+\newcommand{\dom}[1]{\mathrm{dom}(#1)}
+\newcommand{\ran}[1]{\mathrm{ran}(#1)}
+\newcommand{\comp}[2]{#2\circ #1}
+\newcommand{\pto}{\mathrel{\ooalign{\hfil$\mapstochar\mkern5mu$\hfil\cr$\to$}}}
+\newcommand{\fdefined}{\downarrow}
+\newcommand{\fundefined}{\uparrow}
+\newcommand{\True}{\mathbb{T}}
+\newcommand{\False}{\mathbb{F}}
+\newcommand{\lfalse}{\bot}
+\newcommand{\ltrue}{\top}
+\newcommand{\Obj}[1]{\mathsf{#1}}
+\newcommand{\Lang}[1]{\mathcal{#1}}
+\newcommand{\Log}[1]{\mathbf{#1}}
+\NewDocumentCommand{\Frm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Frm}}{\mathrm{Frm}(\Lang{#1})}}
+\newcommand{\PVar}{\mathrm{At}_0}
+\newcommand{\Struct}[1]{\mathfrak{#1}}
+\newcommand{\Atom}[2]{\mathord{#1}(#2)}
+\newcommand{\Assign}[2]{\mathord{#1^{\Struct{#2}}}}
+\NewDocumentCommand{\varAssign}{m m m o}{%
+  \IfNoValueTF{#4}{#1\sim_{#3}#2}{#1=#2[^{#4}/#3]}}
+\NewDocumentCommand{\Value}{m m o}{%
+  \IfNoValueTF{#3}{\mathrm{Val}^{\Struct{#2}}(#1)}{\mathrm{Val}^{\Struct{#2}}_{#3}(#1)}}
+\newcommand{\pAssign}[1]{\mathfrak{#1}}
+\newcommand{\pValue}[1]{\overline{\mathfrak{#1}}}
+\NewDocumentCommand{\Sat}{t{/} m m o}{%
+  \Struct{#2}\IfNoValueTF{#4}{}{,#4}\IfBooleanTF{#1}{\nvDash}{\vDash}#3}
+\NewDocumentCommand{\pSat}{t{/} m m}{%
+  \pAssign{#2}\IfBooleanTF{#1}{\nvDash}{\vDash}#3}
+\NewDocumentCommand{\Entails}{t{/} o}{%
+  \IfBooleanTF{#1}{\nvDash}{\vDash}\IfNoValueTF{#2}{}{_{#2}}}
+\NewDocumentCommand{\Proves}{t{/} o}{%
+  \IfBooleanTF{#1}{\nvdash}{\vdash}\IfNoValueTF{#2}{}{_{#2}}}
+\newcommand{\ident}{\equiv}
+\newcommand{\subst}[2]{#1/#2}
+\newcommand{\SSubst}[2]{#1[#2]}
+\newcommand{\Subst}[3]{#1[\subst{#2}{#3}]}
+\NewDocumentCommand{\lexists}{t{!} o o}{%
+  \exists\IfBooleanTF{#1}{!}{}\IfNoValueTF{#2}{}{#2}\IfNoValueTF{#3}{}{\,#3}}
+\NewDocumentCommand{\lforall}{o o}{%
+  \IfNoValueTF{#1}{\forall}{\forall #1}\IfNoValueTF{#2}{}{\,#2}}
+\NewDocumentCommand{\eq}{t{/} o o}{%
+  \IfNoValueTF{#3}{\IfBooleanTF{#1}{\ne}{=}}{\IfBooleanTF{#1}{#2\ne#3}{#2=#3}}}
+\newcommand{\indfrm}{}
+\newcommand{\indcase}[3]{\def\indfrm{#1}$#1\ident #2$: #3}
+\newcommand{\Sequent}{\Rightarrow}
+\renewcommand{\fCenter}{\ensuremath{\,\Sequent\,}}
+\newcommand{\LeftR}[1]{\ensuremath{{#1}\mathrm{L}}}
+\newcommand{\RightR}[1]{\ensuremath{{#1}\mathrm{R}}}
+\newcommand{\Weakening}{\ensuremath{\mathrm{W}}}
+\newcommand{\Contraction}{\ensuremath{\mathrm{C}}}
+\newcommand{\Exchange}{\ensuremath{\mathrm{X}}}
+\newcommand{\Cut}{\ensuremath{\mathrm{Cut}}}
+\NewDocumentCommand{\Intro}{m o}{%
+  \ensuremath{{#1}\mathrm{Intro}\IfNoValueTF{#2}{}{_{#2}}}}
+\NewDocumentCommand{\Elim}{m o}{%
+  \ensuremath{{#1}\mathrm{Elim}\IfNoValueTF{#2}{}{_{#2}}}}
+\newcommand{\FalseInt}{\ensuremath{\lfalse_I}}
+\newcommand{\FalseCl}{\ensuremath{\lfalse_C}}
+\NewDocumentCommand{\Discharge}{m m}{[#1]^{#2}}
+\NewDocumentCommand{\DischargeRule}{m m}{%
+  \RightLabel{#1}\LeftLabel{\scriptsize $#2$}}
+\NewDocumentCommand{\sFmla}{m m o}{%
+  \ensuremath{\IfNoValueTF{#3}{}{#3\,}\hbox to.8em{\ensuremath{#1}\hfil}#2}}
+\NewDocumentCommand{\TRule}{m m o}{%
+  \ensuremath{{#2}{#1}\IfNoValueTF{#3}{}{\,#3}}}
+\newcommand{\TAss}{ધારણા}
+\expandafter\def\csname guformula@A\endcsname{\varphi}
+\expandafter\def\csname guformula@B\endcsname{\psi}
+\newcommand{\formula}[1]{\csname guformula@#1\endcsname}
+\expandafter\def\csname gutoken@formula\endcsname{સૂત્ર}
+\expandafter\def\csname gutoken@valuation\endcsname{સત્યમૂલ્ય-નિયુક્તિ}
+\expandafter\def\csname gutoken@derivation\endcsname{નિષ્પત્તિ}
+\expandafter\def\csname gutoken@derivation@P\endcsname{નિષ્પત્તિઓ}
+\expandafter\def\csname gutoken@tableau\endcsname{ટેબ્લો}
+\expandafter\def\csname gutoken@tableau@P\endcsname{ટેબ્લો}
+\expandafter\def\csname gutoken@constant\endcsname{અચળ}
+\expandafter\def\csname gutoken@constant@P\endcsname{અચળો}
+\expandafter\def\csname gutoken@derivability\endcsname{નિષ્પન્નક્ષમતા}
+\expandafter\def\csname gutoken@derivability@P\endcsname{નિષ્પન્નક્ષમતાઓ}
+\expandafter\def\csname gutoken@derivable\endcsname{નિષ્પન્ન કરી શકાય એવું}
+\expandafter\def\csname gutoken@derivable@P\endcsname{નિષ્પન્ન કરી શકાય એવાં}
+\expandafter\def\csname gutoken@derive\endcsname{નિષ્પન્ન}
+\expandafter\def\csname gutoken@derive@P\endcsname{નિષ્પન્ન}
+\expandafter\def\csname gutoken@formula@P\endcsname{સૂત્રો}
+\expandafter\def\csname gutoken@identity\endcsname{તાદાત્મ્ય}
+\expandafter\def\csname gutoken@identity@P\endcsname{તાદાત્મ્યો}
+\expandafter\def\csname gutoken@main operator\endcsname{મુખ્ય કારક}
+\expandafter\def\csname gutoken@main operator@P\endcsname{મુખ્ય કારકો}
+\expandafter\def\csname gutoken@nonderivability\endcsname{અનિષ્પન્નક્ષમતા}
+\expandafter\def\csname gutoken@nonderivability@P\endcsname{અનિષ્પન્નક્ષમતાઓ}
+\expandafter\def\csname gutoken@operator\endcsname{કારક}
+\expandafter\def\csname gutoken@operator@P\endcsname{કારકો}
+\expandafter\def\csname gutoken@sentence\endcsname{વાક્ય}
+\expandafter\def\csname gutoken@sentence@P\endcsname{વાક્યો}
+\expandafter\def\csname gutoken@structure\endcsname{સંરચના}
+\expandafter\def\csname gutoken@structure@P\endcsname{સંરચનાઓ}
+\expandafter\def\csname gutoken@valuation@P\endcsname{સત્યમૂલ્ય-નિયુક્તિઓ}
+\expandafter\def\csname gutoken@variable\endcsname{ચલ}
+\expandafter\def\csname gutoken@variable@P\endcsname{ચલો}
+\RenewDocumentCommand{\usetoken}{m m}{%
+  \ifcsname gutoken@#2@#1\endcsname
+    \csname gutoken@#2@#1\endcsname
+  \else
+    \csname gutoken@#2\endcsname
+  \fi}
+\let\printtoken\usetoken
+\newcommand{\sourcecorrection}[2]{%
+  \leavevmode\par\smallskip\noindent
+  \fbox{\begin{minipage}{0.94\linewidth}\small
+    \textbf{સ્રોત-સુધારો #1.} #2
+  \end{minipage}}%
+  \par\smallskip}
+\definecolor{oldiagcolorD}{HTML}{1973ba}
+\newlength{\olphotowidth}
+\setlength{\olphotowidth}{.4\textwidth}
+\RenewDocumentCommand{\olasset}{O{\olphotowidth} m}{\centering\resizebox{#1}{!}{\input{upstream/#2}}}
+\input{build/tableaux-available-labels.tex}
+\renewcommand{\oliflabeldef}[3]{\ifcsname guavailable@#1\endcsname#2\else#3\fi}
+\let\guoriginalref\ref
+\expandafter\def\csname guexternalref@sfr:siz::chap\endcsname{\guoriginalref{sfr:siz:int:sec}}
+\expandafter\def\csname guexternalref@sfr:arith::chap\endcsname{\guoriginalref{sfr:arith:int:sec}}
+\expandafter\def\csname guexternalref@his:set:mythology:sec\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/history/set-theory/mythology.tex}{મૂળ ગ્રંથનો સંબંધિત ઐતિહાસિક વિભાગ}}
+\expandafter\def\csname guexternalref@his:set:limits:sec\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/history/set-theory/limits.tex}{મૂળ ગ્રંથનો લક્ષોનો વિભાગ}}
+\expandafter\def\csname guexternalref@sth:::part\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/set-theory}{મૂળ ગ્રંથનો ગણસિદ્ધાંત ભાગ}}
+\expandafter\def\csname guexternalref@sth:ord-arithmetic::chap\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/set-theory/ord-arithmetic}{મૂળ ગ્રંથનું ક્રમસંખ્યાઓના અંકગણિતનું પ્રકરણ}}
+\expandafter\def\csname guexternalref@fol:syn:sem:prop:quant-terms\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex}{મૂળ ગ્રંથનું પરિમાણક અને પદ અંગેનું વિધાન}}
+\expandafter\def\csname guexternalref@fol:syn:ass:prop:sat-quant\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex}{મૂળ ગ્રંથનું પરિમાણક-સંતોષ અંગેનું વિધાન}}
+\expandafter\def\csname guexternalref@fol:syn:ass:prop:sentence-sat-true\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex}{મૂળ ગ્રંથનું વાક્યના સંતોષ અંગેનું વિધાન}}
+\expandafter\def\csname guexternalref@fol:syn:sat:defn:satisfaction\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/satisfaction.tex}{મૂળ ગ્રંથની સંતોષ અંગેની વ્યાખ્યા}}
+\expandafter\def\csname guexternalref@fol:syn:ext:cor:extensionality-sent\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex}{મૂળ ગ્રંથનું વાક્યની વિસ્તરણાત્મકતા અંગેનું ઉપસિદ્ધાંત}}
+\expandafter\def\csname guexternalref@fol:syn:ext:prop:ext-formulas\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex}{મૂળ ગ્રંથનું સૂત્રોની વિસ્તરણાત્મકતા અંગેનું વિધાન}}
+\expandafter\def\csname guexternalref@fol:syn:ext:prop:extensionality\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/extensionality.tex}{મૂળ ગ્રંથનું વિસ્તરણાત્મકતા અંગેનું વિધાન}}
+\renewcommand{\ref}[1]{%
+  \ifcsname guexternalref@#1\endcsname
+    \csname guexternalref@#1\endcsname
+  \else
+    \guoriginalref{#1}%
+  \fi}
+\hypersetup{pdftitle={ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી}}
+\begin{document}
+\renewcommand{\ref}[1]{%
+  \ifcsname guexternalref@#1\endcsname
+    \csname guexternalref@#1\endcsname
+  \else
+    \guoriginalref{#1}%
+  \fi}
+\begin{titlepage}
+{\LARGE\bfseries ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન
+સ્વાભાવિક નિગમન અને ટેબ્લો\par}
+\vspace{1em}
+{\Large ઓપન લોજિક — ગુજરાતી\par}
+\vspace{2em}
+ઓપન લોજિક પ્રોજેક્ટના અંગ્રેજી મૂળનો ગુજરાતી અનુવાદ.\par
+\vspace{1em}
+આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે શાસ્ત્રીય પ્રથમ-ક્રમના તર્કશાસ્ત્ર
+માટે ચિહ્નિત વિશ્લેષણાત્મક ટેબ્લો ઉમેર્યાં છે. તેમાં વિધાનાત્મક અને
+પરિમાણક નિયમો, ખુલ્લી અને બંધ શાખાઓ, ટેબ્લો-રચના,
+સાબિતી-સૈદ્ધાંતિક ખ્યાલો, સુસંગતતા, યથાર્થતા અને તાદાત્મ્યનો સમાવેશ છે.\par
+\vfill
+આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.
+આ આવૃત્તિમાં મૂળનાં ૧૦૮ એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
+કેટલીક વિશિષ્ટ પરિભાષા કામચલાઉ છે. ચકાસણીની વિગતો અને
+મૂળ પાઠ વિશેની નોંધો સંપાદકીય માહિતીમાં આપેલી છે.\par
+\vspace{1em}
+\href{https://github.com/OpenLogicProject/OpenLogic}{Open Logic Project}
+\quad \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}\par
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{અનુવાદોનું કેન્દ્ર}\par
+\end{titlepage}
+\tableofcontents
+\clearpage
+\input{build/tableaux-body.tex}
+\clearpage
+\section*{સંપાદકીય નોંધો}
+\addcontentsline{toc}{section}{સંપાદકીય નોંધો}
+આ નોંધો મૂળ પાઠથી અલગ છે. મૂળની ગણિતીય નિશાનીઓ જાળવી છે.
+OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006 અને
+OLND-001થી OLND-006 અને OLTAB-001થી OLTAB-012 સુધીની ઓળખવાળી
+નોંધો સ્થિર અંગ્રેજી મૂળમાં મળેલી ખામીઓ અને ગુજરાતી પાઠમાં કરેલા
+મર્યાદિત સુધારા બાજુબાજુ દર્શાવે છે. દરેક સુધારાની ચોક્કસ જગ્યા,
+કારણ અને સૂત્રમાં થયેલો ફેરફાર નિર્ણય-અભિલેખમાં નોંધાયેલ છે.
+
+ટેબ્લોના નવા પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી
+પસંદ કરી છે. તેથી વિધાનાત્મક અને પરિમાણક નિયમો, આઇગનચલ-શરત,
+કટ નિયમ અને તાદાત્મ્ય સામેલ છે. ટેબ્લો, ચિહ્નિત સૂત્ર અને
+આઇગનચલ માટેનાં ગુજરાતી રૂપો કામચલાઉ છે અને નિષ્ણાત ચકાસણી માટે
+ચિહ્નિત છે.
+
+નિષ્પત્તિ, સ્વયંસિદ્ધિ, અનુમાન, સુસંગતતા, પૂર્ણતા અને સાબિતી જેવા
+પદો ગુજરાતી વિશ્વકોશ અને પાઠ્યસામગ્રીના તપાસેલા પ્રયોગો સાથે
+સરખાવ્યાં છે. સિક્વન્ટ કલન, ટેબ્લો અને સાબિતી-સૈદ્ધાંતિક અર્થવિચાર
+જેવા વિશિષ્ટ પદો અર્થ સાથે વ્યાખ્યાયિત કર્યા છે અને નિષ્ણાત સુધારા
+માટે ખુલ્લા છે.
+
+પરિભાષા, મૂળ સ્રોતો, પ્રત્યેક અનુવાદિત ખંડની સ્રોત-સંગતિ અને
+ચકાસણીની વધુ વિગતો આવૃત્તિની સાથેની ફાઇલોમાં છે.
+\begin{thebibliography}{9}
+\bibitem[Benacerraf(1965)]{Benacerraf1965}
+Benacerraf, Paul. 1965. \emph{What numbers could not be}.
+The Philosophical Review 74(1), 47--73.
+\bibitem[Cantor(1892)]{Cantor1892}
+Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.
+\bibitem[Frege(1884)]{Frege1884}
+Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.
+\bibitem[Potter(2004)]{Potter2004}
+Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.
+\bibitem[Conway(2006)]{Conway2006}
+Conway, John. 2006. \emph{The Power of Mathematics}.
+\bibitem[Katz and Katz(2012)]{KatzKatz2012}
+Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.
+\bibitem[O'Connor and Robertson(2005)]{OConnorRobertson:RN}
+O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert.
+\bibitem[Hilbert(2013)]{EwaldSieg2013}
+Hilbert, David. 2013. \emph{David Hilbert's Lectures on the Foundations of Arithmetic and Logic 1917--1933}.
+Edited by William Bragg Ewald and Wilfried Sieg. Springer.
+\bibitem[Dedekind(1888)]{Dedekind1888}
+Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?} Vieweg.
+\end{thebibliography}
+\end{document}

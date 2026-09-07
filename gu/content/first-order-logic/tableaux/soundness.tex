@@ -1,0 +1,241 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: soundness.tex
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{sou}}
+      {\olfileid{pl}{tab}{sou}}
+
+\olsection{યથાર્થતા}
+
+\begin{explain}
+ટેબ્લો જેવી !!^a{derivation} પ્રણાલી વાસ્તવમાં સાચી ન હોય તેવી બાબતો
+!!{derive} કરી ન શકે તો તે \emph{યથાર્થ} છે. તેથી યથાર્થતા
+!!{derivation} પ્રણાલીઓ માટે એક પ્રકારનો ખાતરીબદ્ધ સુરક્ષા-ગુણધર્મ છે.
+કયા સાબિતી-સૈદ્ધાંતિક ગુણધર્મની વાત છે તેના આધારે, દાખલા તરીકે, આપણે
+આ જાણવું ઇચ્છીએ છીએ કે
+\begin{enumerate}
+\item દરેક !!{derivable}~$!A$ \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે;
+\item જો !!a{sentence} બીજાં કેટલાક વાક્યોમાંથી !!{derivable} હોય, તો
+  તે તેમનું ફલિત પણ છે;
+\item જો !!{sentence}sનો ગણ અસુસંગત હોય, તો તે અસંતોષ્ય છે.
+\end{enumerate}
+આ !!a{derivation} પ્રણાલીના મહત્વના ગુણધર્મો છે. તેમાંથી કોઈ પણ ન સધાય
+તો !!{derivation} પ્રણાલી ખામીયુક્ત છે---તે અતિશય બાબતો !!{derive} કરશે.
+તેથી !!a{derivation} પ્રણાલીની યથાર્થતા સ્થાપિત કરવી અત્યંત મહત્વની છે.
+
+આ બધા સાબિતી-સૈદ્ધાંતિક ગુણધર્મો કોઈ ને કોઈ પ્રકારના બંધ
+!!{tableau}s વડે વ્યાખ્યાયિત હોવાથી ઉપરનાં (1)--(3) સાબિત કરવા માટે
+બંધ !!{tableau}sના અર્થાનુસારી ગુણધર્મો વિશે કંઈક સાબિત કરવું પડે છે.
+પહેલાં આપણે !!a{signed
+  formula}ને રચનામાં સંતોષવામાં આવે તેનો અર્થ
+વ્યાખ્યાયિત કરીશું અને પછી દર્શાવીશું કે !!{tableau} બંધ હોય તો કોઈ
+રચના તેની બધી ધારણાઓને સંતોષતી નથી. ત્યાર પછી આ પરિણામમાંથી (1)--(3)
+ઉપપ્રમેયો તરીકે ફલિત થશે.
+\end{explain}
+
+\begin{defn}
+\iftag{FOL}{!!^a{structure}}{!!^a{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+એ !!a{signed formula} $\sFmla{\True}{!A}$ને \emph{સંતોષે છે} જો અને
+માત્ર જો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$, અને તે
+$\sFmla{\False}{!A}$ને સંતોષે છે જો અને માત્ર જો
+$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$. $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+એ !!{signed formula}sના ગણ~$\Gamma$ને સંતોષે છે જો અને માત્ર જો તે
+દરેક $\sFmla{S}{!A} \in \Gamma$ને સંતોષે છે. તેને સંતોષતી
+\iftag{FOL}{!!a{structure}}{!!a{valuation}} હોય તો $\Gamma$
+\emph{સંતોષ્ય} છે અને અન્યથા \emph{અસંતોષ્ય} છે.
+\end{defn}
+
+\begin{thm}[યથાર્થતા]
+  \ollabel{thm:tableau-soundness}
+  જો $\Gamma$ માટે બંધ !!{tableau} હોય, તો $\Gamma$ અસંતોષ્ય છે.
+\end{thm}
+
+\begin{proof}
+!!a{tableau}ની કોઈ શાખા પરના !!{signed formula}sનો ગણ સંતોષ્ય હોય તો
+અને માત્ર તો એ શાખાને સંતોષ્ય કહીએ; અને !!a{tableau}માં ઓછામાં ઓછી એક
+સંતોષ્ય શાખા હોય તો તેને સંતોષ્ય કહીએ.
+
+આપણે નીચેનું દર્શાવીએ છીએ: સંતોષ્ય !!{tableau}ને અનુમાનના કોઈ એક નિયમ
+વડે વિસ્તારતાં હંમેશાં સંતોષ્ય !!{tableau} જ મળે છે. તેનાથી પ્રમેય
+સાબિત થશે: દરેક બંધ !!{tableau}, માત્ર~$\Gamma$માંથી લીધેલી ધારણાઓવાળા
+!!{tableau}ને અનુમાનના નિયમો લાગુ કરવાથી મળે છે. તેથી $\Gamma$ સંતોષ્ય
+હોત તો તેના માટેનો દરેક !!{tableau} સંતોષ્ય હોત. પરંતુ બંધ !!{tableau}
+દેખીતી રીતે સંતોષ્ય નથી: દરેક શાખામાં $\sFmla{\True}{!A}$ અને
+$\sFmla{\False}{!A}$ બંને હોય છે અને કોઈ રચના~$!A$ને સંતોષી અને ન
+સંતોષી બંને શકે નહીં.
+
+ધારો કે આપણી પાસે સંતોષ્ય !!{tableau} છે, એટલે કે ઓછામાં ઓછી એક
+સંતોષ્ય શાખાવાળો !!a{tableau} છે. અનુમાનનો નિયમ લાગુ કરવાથી કાં તો
+શાખામાં !!{signed formula}s ઉમેરાય છે અથવા શાખા બે ભાગમાં વહેંચાય છે.
+જો !!{tableau}માં એવી સંતોષ્ય શાખા હોય જેને સંબંધિત નિયમના ઉપયોગથી
+વિસ્તારવામાં ન આવી હોય, તો તે વિસ્તૃત !!{tableau}માં સંતોષ્ય શાખા જ
+રહે છે; તેથી વિસ્તૃત ટેબ્લો સંતોષ્ય છે. આમ, આપણે માત્ર એવો કિસ્સો
+ધ્યાનમાં લેવો પડે છે જેમાં નિયમ સંતોષ્ય શાખાને લાગુ થાય છે.
+
+એ શાખા પરના !!{signed formula}sનો ગણ $\Gamma$ અને નિયમ જેને લાગુ થાય
+તે !!{signed formula} $\sFmla{S}{!A} \in \Gamma$ હોય. જો નિયમથી શાખા
+વહેંચાતી ન હોય, તો આપણે દર્શાવવું પડે કે વિસ્તૃત શાખા, એટલે કે નિયમનાં
+ફલિતો સાથેનો $\Gamma$, હજી સંતોષ્ય છે. જો નિયમથી શાખા વહેંચાય, તો
+પરિણામે મળતી બે શાખાઓમાંથી ઓછામાં ઓછી એક સંતોષ્ય છે એમ દર્શાવવું પડે.
+
+પહેલાં શાખા ન વહેંચતા સંભવિત અનુમાનો ધ્યાનમાં લઈએ.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot !B} \in \Gamma$ને
+  $\TRule{\True}{\lnot}$ લાગુ કરીને શાખા વિસ્તારીએ. ત્યારે વિસ્તૃત
+  શાખામાં !!{signed formula}sનો ગણ $\Gamma \cup
+  \{\sFmla{\False}{!B}\}$ છે. ધારો કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$. ખાસ કરીને,
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !B}$. તેથી,
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$, એટલે કે
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ એ
+  $\sFmla{\False}{!B}$ને સંતોષે છે.
+\item $\sFmla{\False}{\lnot !B} \in \Gamma$ને
+  $\TRule{\False}{\lnot}$ લાગુ કરીને શાખા વિસ્તારીએ: અભ્યાસપ્રશ્ન.
+\item $\sFmla{\True}{!B \land !C} \in \Gamma$ને
+  $\TRule{\True}{\land}$ લાગુ કરીને શાખા વિસ્તારીએ; તેનાથી શાખામાં બે
+  નવાં !!{signed formula}s, $\sFmla{\True}{!B}$ અને
+  $\sFmla{\True}{!C}$, મળે છે. ધારો કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$; ખાસ કરીને
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B \land !C}$. ત્યારે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ અને
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. તેનો અર્થ એ થાય છે કે
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ એ
+  $\sFmla{\True}{!B}$ અને $\sFmla{\True}{!C}$ બંનેને સંતોષે છે.
+\item $\sFmla{\False}{!B \lor !C} \in \Gamma$ને
+  $\TRule{\False}{\lor}$ લાગુ કરીને શાખા વિસ્તારીએ: અભ્યાસપ્રશ્ન.
+\item $\sFmla{\False}{!B \lif !C} \in \Gamma$ને
+  $\TRule{\False}{\lif}$ લાગુ કરીને શાખા વિસ્તારીએ; તેનાથી શાખામાં બે
+  નવાં !!{signed formula}s, $\sFmla{\True}{!B}$ અને
+  $\sFmla{\False}{!C}$, મળે છે. ધારો કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$; ખાસ કરીને
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \lif !C}$. ત્યારે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ અને
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. તેનો અર્થ એ થાય છે કે
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ એ
+  $\sFmla{\True}{!B}$ અને $\sFmla{\False}{!C}$ બંનેને સંતોષે છે.
+
+\iftag{FOL}{%
+\item $\sFmla{\True}{\lforall[x][!A(x)]} \in \Gamma$ને
+  $\TRule{\True}{\lforall}$ લાગુ કરીને શાખા વિસ્તારીએ; તેનાથી શાખા પર
+  નવું !!{signed formula}~$\sFmla{\True}{!A(t)}$ મળે છે. ધારો કે
+  $\Sat{M}{\Gamma}$; ખાસ કરીને,
+  $\Sat{M}{\lforall[x][!A(x)]}$.
+  \olref[syn][sem]{prop:quant-terms} મુજબ $\Sat{M}{!A(t)}$. તેથી
+  $\Struct{M}$ એ $\sFmla{\True}{!A(t)}$ને સંતોષે છે.
+
+\item $\sFmla{\False}{\lforall[x][!A(x)]} \in \Gamma$ને
+  $\TRule{\False}{\lforall}$ લાગુ કરીને શાખા વિસ્તારીએ; તેનાથી શાખા
+  પર નવું !!{signed formula}~$\sFmla{\False}{!A(a)}$ મળે છે, જ્યાં $a$
+  એવો !!a{constant} છે જે~$\Gamma$માં આવતો નથી. $\Gamma$ સંતોષ્ય હોવાથી
+  એવી $\Struct{M}$ છે કે $\Sat{M}{\Gamma}$; ખાસ કરીને
+  $\Sat/{M}{\lforall[x][!A(x)]}$. આપણે દર્શાવવું છે કે
+  $\Gamma \cup \{\sFmla{\False}{!A(a)}\}$ સંતોષ્ય છે. એ માટે નીચે મુજબ
+  અનુકૂળ~$\Struct{M'}$ વ્યાખ્યાયિત કરીએ છીએ.
+
+  \olref[syn][ass]{prop:sat-quant} મુજબ
+  $\Sat/{M}{\lforall[x][!A(x)]}$ જો અને માત્ર જો કોઈ $s$ માટે
+  $\Sat/{M}{!A(x)}[s]$. હવે $\Struct{M'}$ એ $\Struct{M}$ જેવી જ હોય,
+  સિવાય કે $\Assign{a}{M'} = s(x)$. $a$ એ~$\Gamma$માં આવતો ન હોવાથી
+  \olref[syn][ext]{cor:extensionality-sent} મુજબ કોઈ પણ
+  $\sFmla{\True}{!C} \in \Gamma$ માટે $\Sat{M'}{!C}$ અને કોઈ પણ
+  $\sFmla{\False}{!C} \in \Gamma$ માટે $\Sat/{M'}{!C}$.
+
+  \olref[syn][ext]{prop:extensionality} મુજબ
+  $\Sat/{M'}{!A(x)}[s]$. \olref[syn][ext]{prop:ext-formulas} મુજબ
+  $\Sat/{M'}{!A(a)}[s]$. $!A(a)$ !!a{sentence} હોવાથી
+  \olref[syn][ass]{prop:sentence-sat-true} મુજબ $\Sat/{M'}{!A(a)}$;
+  એટલે કે $\Struct{M'}$ એ $\sFmla{\False}{!A(a)}$ને સંતોષે છે.
+\item $\sFmla{\True}{\lexists[x][!B(x)]} \in \Gamma$ને
+  $\TRule{\True}{\lexists}$ લાગુ કરીને શાખા વિસ્તારીએ: અભ્યાસપ્રશ્ન.
+\item $\sFmla{\False}{\lexists[x][!B(x)]} \in \Gamma$ને
+  $\TRule{\False}{\lexists}$ લાગુ કરીને શાખા વિસ્તારીએ: અભ્યાસપ્રશ્ન.}{}
+\end{enumerate}
+\sourcecorrection{OLTAB-009}{મૂળની \texttt{soundness.tex}, પંક્તિઓ
+128, 136, 140 અને 144--145માં પરિમાણિત સૂત્રને $!B(x)$ લખ્યું છે,
+જ્યારે એ જ બે નિયમ-પ્રકરણોનાં ફલિતો અને અનુગામી દલીલ સર્વત્ર $!A$
+વાપરે છે. બંને પ્રકરણોમાં પરિમાણિત સૂત્રને $!A(x)$ તરીકે પુનઃસ્થાપિત
+કર્યું છે.}
+હવે શાખા વહેંચતા સંભવિત અનુમાનો ધ્યાનમાં લઈએ.
+\begin{enumerate}
+\item $\sFmla{\False}{!B \land !C} \in \Gamma$ને
+  $\TRule{\False}{\land}$ લાગુ કરીને શાખા વિસ્તારીએ; તેનાથી બે શાખાઓ
+  મળે છે: ડાબી શાખા $\sFmla{\False}{!B}$માંથી અને જમણી શાખા
+  $\sFmla{\False}{!C}$માંથી આગળ વધે છે. ધારો કે
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$; ખાસ કરીને
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B \land !C}$. ત્યારે
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ અથવા
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. પહેલા કિસ્સામાં
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ એ
+  $\sFmla{\False}{!B}$ને સંતોષે છે, એટલે કે
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ ડાબી શાખા પરનાં સૂત્રોને
+  સંતોષે છે. બીજા કિસ્સામાં $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ એ
+  $\sFmla{\False}{!C}$ને સંતોષે છે, એટલે કે
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ જમણી શાખા પરનાં સૂત્રોને
+  સંતોષે છે.
+\item $\sFmla{\True}{!B \lor !C} \in \Gamma$ને
+  $\TRule{\True}{\lor}$ લાગુ કરીને શાખા વિસ્તારીએ: અભ્યાસપ્રશ્ન.
+\item $\sFmla{\True}{!B \lif !C} \in \Gamma$ને
+  $\TRule{\True}{\lif}$ લાગુ કરીને શાખા વિસ્તારીએ: અભ્યાસપ્રશ્ન.
+\item શાખાને \Cut વડે વિસ્તારીએ; તેનાથી બે શાખાઓ મળે છે, જેમાં એક
+  $\sFmla{\True}{!B}$ અને બીજી $\sFmla{\False}{!B}$ ધરાવે છે.
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ અને કાં તો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$ અથવા
+  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!B}$ હોવાથી
+  $\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ ડાબી અથવા જમણી શાખાને સંતોષે છે.
+\end{enumerate}
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][tab][sou]{thm:tableau-soundness}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][tab][sou]{thm:tableau-soundness}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+જો $\Proves !A$ હોય, તો $!A$ \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+જો $\Gamma \Proves !A$ હોય, તો $\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+  જો $\Gamma \Proves !A$ હોય, તો કેટલાંક $!B_1$, \dots,
+  $!B_n \in \Gamma$ માટે $\{\sFmla{\False}{!A},
+  \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}$નો બંધ
+  !!{tableau} છે. \olref{thm:tableau-soundness} મુજબ દરેક
+  \iftag{FOL}{!!{structure}}{!!{valuation}}~$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$
+  કાં તો કોઈ $!B_i$ને અસત્ય બનાવે છે અથવા $!A$ને સત્ય બનાવે છે. તેથી
+  જો $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$ હોય, તો
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ પણ હોય છે.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+જો $\Gamma$ સંતોષ્ય હોય, તો તે સુસંગત છે.
+\end{cor}
+
+\begin{proof}
+આપણે પ્રતિવિધાન સાબિત કરીએ છીએ. ધારો કે $\Gamma$ સુસંગત નથી. ત્યારે
+એવાં $!B_1$, \dots, $!B_n \in \Gamma$ અને
+$\{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}$ માટે બંધ
+!!{tableau} છે. \olref{thm:tableau-soundness} મુજબ એવી કોઈ
+$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$ નથી કે બધા $i=1$, \dots,~$n$
+માટે $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B_i}$. પરંતુ ત્યારે $\Gamma$
+સંતોષ્ય નથી.
+\end{proof}
+
+\end{document}

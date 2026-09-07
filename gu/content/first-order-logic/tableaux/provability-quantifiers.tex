@@ -1,0 +1,92 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: provability-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{qpr}
+\olsection{\usetoken{S}{derivability} અને પરિમાણકો}
+
+\begin{explain}
+  પૂર્ણતાના પ્રમેય માટે એ પણ જરૂરી છે કે ટેબ્લોના નિયમો આ વિભાગમાં
+  ~$\Proves$ વિશે સ્થાપિત કરેલી હકીકતો આપે.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} જો $c$ એવો અચળ હોય જે $\Gamma$ કે
+~$!A(x)$માં આવતો નથી અને $\Gamma \Proves !A(c)$ હોય, તો
+$\Gamma \Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+ધારો કે $\Gamma \Proves !A(c)$, એટલે કે એવાં $!B_1$, \dots,
+$!B_n \in \Gamma$ અને નીચેના ગણ માટે બંધ !!{tableau} છે:
+\begin{align*}
+\{ \sFmla{\False}{!A(c)}, &
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n} \}.
+\intertext{આપણે દર્શાવવાનું છે કે નીચેના ગણ માટે પણ બંધ !!{tableau} છે:}
+\{ \sFmla{\False}{\lforall[x][!A(x)]}, &
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n} \}.
+\end{align*}
+બંધ !!{tableau} લો, તેની પહેલી ધારણાને
+$\sFmla{\False}{\lforall[x][!A(x)]}$થી બદલો અને ધારણાઓ પછી
+$\sFmla{\False}{!A(c)}$ દાખલ કરો.
+\begin{center}
+\begin{tableau}{not line numbering}
+  [\sFmla{\False}{\formula{A}(c)}
+    [\sFmla{\True}{\formula{B}_1}
+      [\vdots
+      [\sFmla{\True}{\formula{B}_n},
+        [][][]]]]]
+\end{tableau}\qquad
+\begin{tableau}{not line numbering}
+  [\sFmla{\False}{\lforall[x][\formula{A}(x)]}
+    [\sFmla{\True}{\formula{B}_1}
+      [\vdots
+        [\sFmla{\True}{\formula{B}_n},
+          [\sFmla{\False}{\formula{A}(c)}
+        [][][]]]]]]
+\end{tableau}
+\end{center}
+ટેબ્લો હજી બંધ છે, કારણ કે પહેલાં ધારણાઓ તરીકે ઉપલબ્ધ બધાં
+!!{sentence}s હજી !!{tableau}ની ટોચે ઉપલબ્ધ છે. દાખલ કરેલી પંક્તિ
+$\TRule{\False}{\lforall}$ના યોગ્ય ઉપયોગનું પરિણામ છે, કારણ કે
+!!{constant}~$c$ એ $!B_1$, \dots, $!B_n$ કે
+$\lforall[x][!A(x)]$માં આવતો નથી; એટલે કે નવા !!{tableau}માં દાખલ
+કરેલી પંક્તિની ઉપર આવતો નથી.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\sFmla{\False}{\lexists[x][!A(x)]},
+  \sFmla{\True}{!A(t)}$ માટેનો બંધ !!{tableau} આ છે:
+  \begin{oltableau}
+    [\sFmla{\False}{\lexists[x][\formula{A}(x)]}, just = \TAss
+      [\sFmla{\True}{\formula{A}(t)}, just = \TAss
+        [\sFmla{\False}{\formula{A}(t)}, just = {\TRule{\False}{\lexists}[1]}, close]]]
+    \end{oltableau}}{}
+\tagitem{prvAll}{$\sFmla{\False}{\formula{A}(t)},
+  \sFmla{\True}{\lforall[x][!A(x)]}$ માટેનો બંધ !!{tableau} આ છે:
+  \begin{oltableau}
+    [\sFmla{\False}{\formula{A}(t)}, just = \TAss
+      [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just = \TAss
+        [\sFmla{\True}{\formula{A}(t)}, just = {\TRule{\True}{\lforall}[2]}, close]]]
+    \end{oltableau}}{}
+\end{tagenumerate}
+\sourcecorrection{OLTAB-008}{મૂળની
+\texttt{provability-quantifiers.tex}, પંક્તિ~79માં બીજા ચિહ્નિત સૂત્ર
+પછીનું અલ્પવિરામ ગણની ગણિતીય સીમાની અંદર મૂકાયું છે. અહીં એ વધારાનું
+અલ્પવિરામ દૂર કર્યું છે.}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,196 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{ptn}}
+      {\olfileid{pl}{tab}{ptn}}
+
+\olsection{સાબિતી-સૈદ્ધાંતિક ખ્યાલો}
+
+\begin{editorial}
+આ વિભાગ ટેબ્લો માટે સાબિત કરી શકાય તેવા હોવાના સંબંધ અને સુસંગતતાની
+વ્યાખ્યાઓ એકત્ર કરે છે.
+\end{editorial}
+
+\begin{explain}
+આપણે અનેક મહત્વના અર્થાનુસારી ખ્યાલો (પ્રામાણ્ય, ફલિતતા અને સંતોષ્યતા)
+વ્યાખ્યાયિત કર્યા છે; એ જ રીતે હવે તેમને અનુરૂપ \emph{સાબિતી-સૈદ્ધાંતિક
+ખ્યાલો} વ્યાખ્યાયિત કરીએ છીએ. આ ખ્યાલો !!{structure}sમાં
+!!{sentence}sના સંતોષનો આશરો લઈને નહિ, પરંતુ અમુક બંધ !!{tableau}xના
+અસ્તિત્વનો આશરો લઈને વ્યાખ્યાયિત થાય છે. આ બંને પ્રકારના ખ્યાલો મળી જાય
+છે એ એક મહત્વની શોધ હતી. તેઓ મળે છે તે જ \emph{યથાર્થતા} અને
+\emph{પૂર્ણતાના પ્રમેયો}નો વિષય છે.
+\end{explain}
+
+
+\begin{defn}[પ્રમેયો]
+$\sFmla{\False}{!A}$ માટે બંધ !!{tableau} હોય તો !!{sentence}~$!A$
+\emph{પ્રમેય} છે. $!A$ પ્રમેય હોય તો $\Proves !A$ અને ન હોય તો
+$\Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence} $!A$ એ !!{sentence}sના ગણ~$\Gamma$માંથી
+\emph{!!{derivable}} છે, $\Gamma \Proves !A$, જો અને માત્ર જો એવો સાન્ત
+ગણ $\{!B_1, \dots, !B_n\} \subseteq \Gamma$ અને નીચેના ગણ માટે બંધ
+!!{tableau} હોય:
+\[
+\{
+  \sFmla{\False}{!A},
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}
+  \}.
+\]
+$!A$ એ $\Gamma$માંથી !!{derivable} ન હોય તો $\Gamma \Proves/ !A$
+લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[સુસંગતતા]
+!!{sentence}sનો ગણ~$\Gamma$ \emph{અસુસંગત} છે જો અને માત્ર જો એવો સાન્ત
+ગણ $\{!B_1, \dots, !B_n\} \subseteq \Gamma$ અને નીચેના ગણ માટે બંધ
+!!{tableau} હોય:
+\[
+\{
+  \sFmla{\True}{!B_1}, \dots,
+  \sFmla{\True}{!B_n}
+  \}.
+\]
+$\Gamma$ અસુસંગત ન હોય તો તેને \emph{સુસંગત} કહીએ છીએ.
+\end{defn}
+
+\begin{prop}[સ્વવાચકતા]
+\ollabel{prop:reflexivity}
+જો $!A \in \Gamma$ હોય, તો $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+જો $!A \in \Gamma$ હોય, તો $\{!A\}$ એ~$\Gamma$નો સાન્ત ઉપગણ છે અને
+નીચેનો !!{tableau}
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}}, just = \TAss
+    [\sFmla{\True}{\formula{A}}, just = \TAss,close]
+  ]
+\end{oltableau}
+બંધ છે.
+\end{proof}
+
+
+\begin{prop}[એકદિશવર્ધિતા]
+\ollabel{prop:monotonicity}
+જો $\Gamma \subseteq \Delta$ અને $\Gamma \Proves !A$ હોય, તો
+$\Delta \Proves !A$.
+\end{prop}
+
+\begin{proof}
+~$\Gamma$નો દરેક સાન્ત ઉપગણ~$\Delta$નો પણ સાન્ત ઉપગણ છે.
+\end{proof}
+
+\begin{prop}[પરંપરિતતા]
+\ollabel{prop:transitivity}
+જો $\Gamma \Proves !A$ અને $\{!A\} \cup \Delta \Proves !B$ હોય, તો
+$\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+જો $\{!A\} \cup \Delta \Proves !B$ હોય, તો એવો સાન્ત ઉપગણ
+$\Delta_0 = \{!C_1, \dots, !C_n\} \subseteq \Delta$ છે કે
+\begin{align*}
+\{\sFmla{\False}{!B}, & \sFmla{\True}{!A}, \sFmla{\True}{!C_1},
+\dots, \sFmla{\True}{!C_n}\}
+\intertext{માટે બંધ !!{tableau} છે. જો $\Gamma \Proves !A$ હોય, તો એવો
+  સાન્ત ઉપગણ $\{!D_1, \dots, !D_m\} \subseteq \Gamma$ છે કે}
+\{\sFmla{\False}{!A}, & \sFmla{\True}{!D_1},
+\dots, \sFmla{\True}{!D_m}\}
+\end{align*}
+માટે બંધ !!{tableau} છે.
+
+હવે નીચેની ધારણાઓ ધરાવતો !!{tableau} લો:
+\[
+\sFmla{\False}{!B},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n},
+\sFmla{\True}{!D_1}, \dots, \sFmla{\True}{!D_m}.
+\]
+~$!A$ પર \Cut{} નિયમ લાગુ કરો. તેનાથી બે શાખાઓ બને છે: એકમાં
+$\sFmla{\True}{!A}$ અને બીજીમાં $\sFmla{\False}{!A}$ હોય છે. તેથી એક
+શાખામાં નીચેના બધા ઉપલબ્ધ છે:
+\[
+\{\sFmla{\False}{!B}, \sFmla{\True}{!A},
+\sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_n}\}
+\]
+આ ધારણાઓ માટે બંધ !!{tableau} હોવાથી તેને એ શાખા સાથે જોડી શકીએ છીએ;
+$\sFmla{\True}{!A}$માંથી પસાર થતી દરેક શાખા બંધ થાય છે. બીજી શાખામાં
+નીચેના બધા ઉપલબ્ધ છે:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!D_1}, \dots,
+\sFmla{\True}{!D_m}\}
+\]
+તેથી બીજી બાજુ પણ પૂરી કરીને બંધ !!{tableau} મેળવી શકીએ છીએ. આ
+$\Gamma \cup \Delta \Proves !B$ દર્શાવે છે.
+\sourcecorrection{OLTAB-003}{મૂળની \texttt{proof-theoretic-notions.tex},
+પંક્તિ~105માં અલગ વાક્યો $!D_1,\dots,!D_m$ને સીધાં
+``$\subseteq \Gamma$'' સાથે મૂક્યાં છે. સમાન વ્યાખ્યા અને તરત પછીના ગણ
+મુજબ અહીં સાન્ત ગણ $\{!D_1,\dots,!D_m\}\subseteq\Gamma$ પુનઃસ્થાપિત
+કર્યો છે.}
+\end{proof}
+
+નોંધો કે ખાસ કરીને તેનો અર્થ એવો થાય છે કે જો $\Gamma \Proves !A$ અને
+$!A \Proves !B$ હોય, તો $\Gamma \Proves !B$. વળી, જો
+$!A_1, \dots, !A_n \Proves !B$ અને દરેક~$i$ માટે
+$\Gamma \Proves !A_i$ હોય, તો $\Gamma \Proves !B$ એવું પણ ફલિત થાય છે.
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ અસુસંગત છે જો અને માત્ર જો દરેક !!{sentence}~$!A$ માટે
+$\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][tab][ptn]{prop:incons} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][tab][ptn]{prop:incons} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\begin{prop}[સઘનતા]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item જો $\Gamma \Proves !A$ હોય, તો એવો સાન્ત ઉપગણ
+    $\Gamma_0 \subseteq \Gamma$ છે કે $\Gamma_0 \Proves !A$.
+  \item જો $\Gamma$નો દરેક સાન્ત ઉપગણ સુસંગત હોય, તો $\Gamma$ સુસંગત છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item જો $\Gamma \Proves !A$ હોય, તો એવો સાન્ત ઉપગણ
+      $\Gamma_0 = \{!B_1, \dots, !B_n\}$ અને નીચેના ગણ માટે બંધ
+      !!{tableau} હોય છે:
+      \[
+      \{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      આ !!{tableau} $\Gamma_0 \Proves !A$ પણ દર્શાવે છે.
+    \item જો $\Gamma$ અસુસંગત હોય, તો કોઈ સાન્ત ઉપગણ
+      $\Gamma_0 = \{!B_1, \dots, !B_n\}$ માટે નીચેના ગણનો બંધ
+      !!{tableau} હોય છે:
+      \[
+      \{\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+      \]
+      આ બંધ !!{tableau} દર્શાવે છે કે $\Gamma_0$ અસુસંગત છે.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,244 @@
+{
+  "schema": "openlogic-gu-cumulative-qa/1",
+  "checked_at_utc": "2026-09-07T18:11:16.559422+00:00",
+  "cursor_sha256_at_check": "812cf78a1a00ea7309d07c060c5f464c497c5a875bf758faa2ec90b096a03360",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 108,
+    "total_units": 722,
+    "contiguous_units": "OLP-0004–0111",
+    "complete_edition": false
+  },
+  "totals": {
+    "aligned_linguistic_blocks": 1161,
+    "source_math_spans": 6151,
+    "reverse_paraphrase_samples": 535,
+    "exact_block_reviews": 1161,
+    "source_corrections": 53,
+    "canon_sources": 18,
+    "canon_passages": 77,
+    "term_decisions": 123,
+    "translation_decisions": 179,
+    "translation_decision_occurrences": 187
+  },
+  "batches": {
+    "001": {
+      "units": 7,
+      "blocks": 86,
+      "math": 327,
+      "semantic": 9,
+      "exact_block_reviews": 9,
+      "batch_sha256": "053e12fe77406cc236c539a3e247e9583c0881626da52c0fafc3e0cf6e38f6d6",
+      "parity_sha256": "18115805d2189fff36db3d4c98f144723e7d4201d8e4e3f5550e5c811a6273f6",
+      "semantic_sha256": "c76d641af5ee9202796a994079bf53ac28296eaf08fba3bb3512ff506b273aff"
+    },
+    "002": {
+      "units": 9,
+      "blocks": 104,
+      "math": 517,
+      "semantic": 13,
+      "exact_block_reviews": 13,
+      "batch_sha256": "43699cec18be506e8e72d29e9d44ca97dcd4dc212957bfb621839d554fd77a6c",
+      "parity_sha256": "4825236f13d436419faa724caf2aac995909a6df4a264c7e1937bf21390a0586",
+      "semantic_sha256": "0059e52457ffd3cce811ca30272ec4eea3489b6bc315fc479c10fe326c851a45"
+    },
+    "003": {
+      "units": 7,
+      "blocks": 87,
+      "math": 414,
+      "semantic": 18,
+      "exact_block_reviews": 18,
+      "batch_sha256": "15af2b6bf4599e44fc3dd30d4325c203f71b49ee13c8a918c7173406f08e930d",
+      "parity_sha256": "9142e425e04535ca5debb9763df67af69e0169167074d98433484cb235186037",
+      "semantic_sha256": "7d4df0c3e24df133c3f5347f01242c878d5969fe4bffda1fd8745e4cb54bd8c2"
+    },
+    "004": {
+      "units": 14,
+      "blocks": 187,
+      "math": 1139,
+      "semantic": 51,
+      "exact_block_reviews": 51,
+      "batch_sha256": "8ed01dba48548325beddb48a581381e597e2f4b9da1b8c296dec97b6e778e854",
+      "parity_sha256": "d3890eaf59ee88e8dc20d28599172d73eee0b6af38a2f295e36ffd0273ddf280",
+      "semantic_sha256": "d8463dcdb7c9943962e76199d322e7aa988c44ee213071a0af0b7232a89dd851"
+    },
+    "005": {
+      "units": 8,
+      "blocks": 103,
+      "math": 424,
+      "semantic": 55,
+      "exact_block_reviews": 55,
+      "batch_sha256": "5dafd3321afa5fd7e4a761d48af3053062e23cdb1e42910dabfa6b5a429dfc47",
+      "parity_sha256": "d0703fd8da38c18d66f9421ae3118d7bd3f4090d696b4ce8b4b8ac84a3ecfd02",
+      "semantic_sha256": "b3111a671d76eb989384577fda30cf71a61a3977a2d4df24695c852415ad06ac"
+    },
+    "006": {
+      "units": 6,
+      "blocks": 58,
+      "math": 207,
+      "semantic": 58,
+      "exact_block_reviews": 58,
+      "batch_sha256": "aa2f3e785bf02e19771d82babf254fd483c66152175d92a4dcce1299e6574fe9",
+      "parity_sha256": "58c769e5022ec6d333855d7d8ff552a4c8f8ec840aeb47fbce6464650fdca49b",
+      "semantic_sha256": "d444b369884edd6d9a311806a4e622b1b7149a5a9a4d9fbdfe1c5a5231589e58"
+    },
+    "007": {
+      "units": 8,
+      "blocks": 99,
+      "math": 426,
+      "semantic": 99,
+      "exact_block_reviews": 99,
+      "batch_sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de",
+      "parity_sha256": "fbc7a07f85f405ebf1fc527a90237d70fa7a927e40f6f0b1509cd192cf4f1ea4",
+      "semantic_sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
+    },
+    "008": {
+      "units": 6,
+      "blocks": 32,
+      "math": 137,
+      "semantic": 32,
+      "exact_block_reviews": 32,
+      "batch_sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649",
+      "parity_sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05",
+      "semantic_sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+    },
+    "009": {
+      "units": 15,
+      "blocks": 131,
+      "math": 1003,
+      "semantic": 131,
+      "exact_block_reviews": 131,
+      "batch_sha256": "f93547c6b6596cb30d0d6dacd1a68a42c132a76251537f7c09eed4e348651f63",
+      "parity_sha256": "b4d4e9c9f0713880284e433861baf6f1c280320b2ea12f9498919bc7b41480e7",
+      "semantic_sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b"
+    },
+    "010": {
+      "units": 14,
+      "blocks": 142,
+      "math": 968,
+      "semantic": 34,
+      "exact_block_reviews": 142,
+      "batch_sha256": "faab0957fd94b21971476b90acf0ebd7b26a8f590ed2b256fcdb044c033815ac",
+      "parity_sha256": "08ba538a84366be545f7d1491ffc05d7263ad530c0f6b1a5c6baf81f78f8651a",
+      "semantic_sha256": "fbf4f5ae26035d8c7c146bf95d8b89297d5ea31546637ee7692901f50df3e3ed"
+    },
+    "011": {
+      "units": 14,
+      "blocks": 132,
+      "math": 589,
+      "semantic": 35,
+      "exact_block_reviews": 132,
+      "batch_sha256": "c7b1b9c3facfef2275a79e5d7ed34fce767aaf917b6e83a04b33fb0b9dbe7d46",
+      "parity_sha256": "24cf315353f42d50d31c6323c1be342c582aa0b18b470fbafe13e2a8c491192c",
+      "semantic_sha256": "2cb3caea0b13a438e5f78b733b5c1bf3b72ce0dda591a78336cafde89a90a978"
+    }
+  },
+  "current_artifacts": {
+    "html": {
+      "path": "reader/tableaux.html",
+      "bytes": 2727340,
+      "sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c",
+      "mathml_nodes": 5779,
+      "proof_representations": 203,
+      "signed_analytic_tableaux": 50,
+      "status": "passed_exact_dom_mathml_proof_tableau_link_asset_and_character_qa"
+    },
+    "browser": {
+      "status": "passed_actual_live_browser_inspection",
+      "inspected_at_utc": "2026-09-07T17:55:43.094120+00:00",
+      "method": "Codex in-app Chromium browser served from the exact local repository; live navigation, DOM geometry inspection across every block MathML node, font and image-load checks, and viewport screenshots of representative rules, branching tableaux, corrections, soundness, identity, and end matter.",
+      "url": "http://127.0.0.1:8768/reader/tableaux.html?qa=011",
+      "viewport_px": [
+        1280,
+        720
+      ],
+      "viewed": [
+        "section 84 assumptions, rules, and OLTAB-001",
+        "section 88 worked branching tableaux, including the widest displays",
+        "section 89 quantified tableaux and deeper branches",
+        "section 92 propositional proof properties and OLTAB-006/OLTAB-007",
+        "section 94 soundness and OLTAB-009",
+        "section 95 identity rules and tableau",
+        "section 96 identity soundness with OLTAB-010/OLTAB-012 and editorial notes",
+        "final footnote and bibliography area at the document bottom"
+      ],
+      "computed_mathml_check": {
+        "selector": "math[display='block']",
+        "nodes_checked": 389,
+        "clipped_horizontal_nodes": 0,
+        "clipped_vertical_nodes": 0,
+        "intentionally_scrollable_nodes": 3,
+        "scrollable_node_indices_zero_based": [
+          333,
+          334,
+          335
+        ],
+        "scrollable_internal_overflow_px": [
+          50,
+          118,
+          69
+        ],
+        "maximum_internal_scroll_overflow_px": 118,
+        "body_scroll_width_px": 914,
+        "body_client_width_px": 914,
+        "document_scroll_width_px": 1265,
+        "document_client_width_px": 1265,
+        "overflow_x": "auto",
+        "overflow_y": "hidden",
+        "padding_block_px": 10.4
+      },
+      "runtime_checks": {
+        "fonts_status": "loaded",
+        "images_loaded_with_nonzero_intrinsic_dimensions": 13,
+        "console_errors_or_warnings": 0,
+        "content_unique_ids": 427,
+        "browser_ui_injected_nonbody_id_excluded": "codex-browser-sidebar-comments-root",
+        "literal_sFmla_occurrences": 2
+      },
+      "defects_found_and_repaired": [
+        "The HTML adapter renders all 50 signed analytic tableaux as recursive MathML trees preserving 279 nodes, 235 edges, branch structure, justifications, checkmarks, closure marks, moved marks, and intentional empty branches.",
+        "Pandoc discarded the literal macro name in OLTAB-006 and OLTAB-007; the adapter now converts the two text references to an explicit backslash before rendering, and both live notes visibly contain \\sFmla."
+      ],
+      "final_hash_binding": {
+        "html_sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c",
+        "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+        "stylesheet_href": "reader.css?v=3"
+      },
+      "pending": []
+    },
+    "pdf": {
+      "path": "build/gu-tableaux.pdf",
+      "bytes": 1285438,
+      "sha256": "3bbc0dd6e7f3b31cefce2935f054e989e4145070492b4efed13331611fe8244a",
+      "pages": 144,
+      "page_size": "A4",
+      "page_size_points": [
+        595.276,
+        841.89
+      ],
+      "title": "ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી",
+      "encrypted": false,
+      "nonempty_extracted_text_pages": 144,
+      "status": "passed_reproducible_build_and_all_page_visual_qa",
+      "all_pages_visually_inspected": true,
+      "three_passes_byte_identical": true
+    },
+    "untranslated_prose": {
+      "path": "state/UNTRANSLATED_SCAN_011.json",
+      "sha256": "3c873bba84076129f11da98cd1abe5ce0d05e44ee5a0ce88d13b7ea954af27ad",
+      "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity"
+    },
+    "translation_decisions": {
+      "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "sha256": "2f221d201faf1cc600ace455837ede63e248e572db79b20555b2ee2c03a12dfe",
+      "status": "passed",
+      "reader_locators": {
+        "available": 186,
+        "pending": 0,
+        "not_applicable": 1
+      }
+    }
+  },
+  "git_diff_check": "passed_scoped_paths",
+  "status": "passed_single_cumulative_108_unit_gate"
+}

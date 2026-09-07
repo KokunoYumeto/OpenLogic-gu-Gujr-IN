@@ -1,0 +1,153 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/11",
+  "checked_at_utc": "2026-09-07T18:03:59.062631+00:00",
+  "scope": "OLP-0098–OLP-0111 Gujarati tableaux source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, proof/tableau environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing only its keyed IDs, filenames, math and literal control names.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0098",
+      "path": "content/first-order-logic/tableaux/tableaux.tex",
+      "target_sha256": "a3e7ac8d0723cce7fe690054403a03f6be495a5a3cbf8f9a2f97f6ca0d378dc7",
+      "gujarati_characters": 250,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0099",
+      "path": "content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_sha256": "8786ebdd5c37b0a06601f43d1d12b6f01d69d355baaf377ee83cd278de4f4711",
+      "gujarati_characters": 1085,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0100",
+      "path": "content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_sha256": "afe086d6335d944e65dec9b850f68cc534314959bdbd5912cf1e155af0f51c9e",
+      "gujarati_characters": 270,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0101",
+      "path": "content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_sha256": "c657f990061b510daa793271728b18d0931dc3fa52e46b34cd97d8e786dfcf2f",
+      "gujarati_characters": 764,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0102",
+      "path": "content/first-order-logic/tableaux/derivations.tex",
+      "target_sha256": "ab3b0a870d525142eadb634782f17b4b02e16233a2fb7076e8364997fab6f249",
+      "gujarati_characters": 1098,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0103",
+      "path": "content/first-order-logic/tableaux/proving-things.tex",
+      "target_sha256": "18e0c01c0b070c994c9c640539da0ea31b7adb6fd014032213e0fea16033eb81",
+      "gujarati_characters": 2230,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0104",
+      "path": "content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_sha256": "507e1d84778eb6285d403ca60aefb5f0410f0416128a4218b915a9a71c49594a",
+      "gujarati_characters": 1616,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0105",
+      "path": "content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_sha256": "05a2f37ff1201fab781e5dd0faba149daa056a37869e04e36904057edebc4777",
+      "gujarati_characters": 1488,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0106",
+      "path": "content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_sha256": "06fb3b1be5d82522eaaab3e975f208e4884c05c5a67ba5d0d7e0b2aadabd50eb",
+      "gujarati_characters": 1977,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0107",
+      "path": "content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_sha256": "bc4f46f02a764209aa652aea1031be8fe0e2496f86cd5272b081896e20a56693",
+      "gujarati_characters": 570,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0108",
+      "path": "content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "target_sha256": "9786a809d09d6b8b12a92bd934667dd94b6caab9b1608be98abf75b7b16ae4dc",
+      "gujarati_characters": 533,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0109",
+      "path": "content/first-order-logic/tableaux/soundness.tex",
+      "target_sha256": "291222506a17a5547b8e8b90b0ead8de9b77c8c3b6153839ad28ce3173c3a9a3",
+      "gujarati_characters": 3513,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0110",
+      "path": "content/first-order-logic/tableaux/identity.tex",
+      "target_sha256": "b31dd806e3355a74f544de6d189bc6e67cca39c665e43369b7b95f265289276d",
+      "gujarati_characters": 746,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0111",
+      "path": "content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_sha256": "7a0cf8db202a3dbcb17fb8903f28a79a0f28c10900612b44868e7592d7f4a1c3",
+      "gujarati_characters": 555,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    }
+  ],
+  "totals": {
+    "units": 14,
+    "gujarati_characters": 16695,
+    "source_detector_ascii_tokens": 3806,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 12,
+    "quoted_frozen_source_literals": 1
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [
+    "natural deduction"
+  ],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}

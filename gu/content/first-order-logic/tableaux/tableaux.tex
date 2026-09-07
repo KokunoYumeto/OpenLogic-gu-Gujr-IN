@@ -1,0 +1,58 @@
+% Part: first-order-logic
+% Chapter: tableaux
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olchapter{fol}{tab}{ટેબ્લો}}
+      {\olchapter{pl}{tab}{ટેબ્લો}}
+
+\begin{editorial}
+આ પ્રકરણ ચિહ્નિત વિશ્લેષણાત્મક ટેબ્લો પ્રણાલી રજૂ કરે છે.
+
+ટેબ્લોને સાબિતી-પ્રણાલી તરીકે લગતી સામગ્રી સામેલ કરવા કે કાઢવા માટે
+``prfTab'' ટૅગ વાપરો.
+\sourcecorrection{OLTAB-001}{મૂળની \texttt{tableaux.tex}, પંક્તિ~15માં
+સાબિતી-પ્રણાલી તરીકે ``natural deduction'' લખાયું છે. પ્રકરણનું શીર્ષક,
+આખી સામગ્રી અને નિયામક \texttt{prfTab} ટૅગ બધા ટેબ્લો માટે છે; તેથી અહીં
+``ટેબ્લો'' પુનઃસ્થાપિત કર્યું છે.}
+\end{editorial}
+
+\olimport{rules-and-proofs}
+
+\olimport{propositional-rules}
+
+\iftag{FOL}{%
+  \olimport{quantifier-rules}
+}{}
+
+\olimport{derivations}
+
+\olimport{proving-things}
+
+\iftag{FOL}{%
+  \olimport{proving-things-quant}
+}{}
+
+\olimport{proof-theoretic-notions}
+
+\olimport{provability-consistency}
+
+\olimport{provability-propositional}
+
+\iftag{FOL}{%
+  \olimport{provability-quantifiers}
+}{}
+
+\olimport{soundness}
+
+\iftag{FOL}{%
+  \olimport{identity}
+  \olimport{soundness-identity}
+}{}
+
+\OLEndChapterHook
+
+\end{document}

@@ -1,0 +1,113 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{ide}
+
+\olsection{\usetoken{S}{identity} સાથેના \usetoken{P}{tableau}}
+
+!!{identity} ધરાવતા !!^{tableau}s માટે વધારાના અનુમાન-નિયમો જરૂરી છે.
+$\eq$ માટેના નિયમો આ છે ($t$, $t_1$ અને $t_2$ બંધ પદો છે):
+
+\begin{defish}
+\AxiomC{}
+\RightLabel{$\eq$}
+\UnaryInfC{\sFmla{\True}{\eq[t][t]}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\True}{!A(t_1)}}
+\RightLabel{$\TRule{\True}{\eq}$}
+\UnaryInfC{\sFmla{\True}{!A(t_2)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\False}{!A(t_1)}}
+\RightLabel{$\TRule{\False}{\eq}$}
+\UnaryInfC{\sFmla{\False}{!A(t_2)}}
+\DisplayProof
+\end{defish}
+નોંધો કે બીજા બધા નિયમોથી વિપરીત, $\TRule{\True}{\eq}$ અને
+$\TRule{\False}{\eq}$ માટે શાખા પર \emph{બે} ચિહ્નિત !!{formula}s
+પહેલેથી આવવાં જરૂરી છે: $\sFmla{\True}{\eq[t_1][t_2]}$ અને
+$\sFmla{S}{!A(t_1)}$ બંને.
+
+\begin{ex}
+જો $s$ અને $t$ બંધ પદો હોય, તો $\eq[s][t], !A(s) \Proves !A(t)$:
+\begin{oltableau}
+  [\sFmla{\False}{\formula{A}(t)}, just = \TAss
+    [\sFmla{\True}{\eq[s][t]}, just = \TAss
+      [\sFmla{\True}{\formula{A}(s)}, just = \TAss
+        [\sFmla{\True}{\formula{A}(t)}, just={\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+આ અભિન્ન વસ્તુઓની પ્રતિસ્થાપનીયતાના સિદ્ધાંત તરીકે, અથવા લાઇબ્નિત્સના
+નિયમ તરીકે, પરિચિત હોઈ શકે છે.
+
+!!^{tableau}s સાબિત કરે છે કે $\eq$ સંમિત છે, એટલે કે
+$\eq[s_1][s_2] \Proves \eq[s_2][s_1]$:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_2][s_1]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_1][s_1]}, just = {$\eq$}
+        [\sFmla{\True}{\eq[s_2][s_1]}, just = {\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+અહીં પંક્તિ $2$ એ $\TRule{\True}{\eq}$ માટે જરૂરી પહેલું
+!!{formula}~$\sFmla{\True}{\eq[s_1][s_2]}$ છે. પંક્તિ~$3$ એ
+$\sFmla{\True}{!A(s_1)}$ સ્વરૂપનું બીજું આવશ્યક સૂત્ર છે---$!A(x)$ને
+$\eq[x][s_1]$ તરીકે વિચારો; ત્યારે $!A(s_1)$ એ $\eq[s_1][s_1]$ અને
+$!A(s_2)$ એ $\eq[s_2][s_1]$ છે.
+\sourcecorrection{OLTAB-011}{મૂળની \texttt{identity.tex}, પંક્તિ~69માં
+નિયમ માટેનું બીજું આવશ્યક સૂત્ર $\sFmla{\True}{!A(s_2)}$ લખાયું છે.
+અહીં $t_1=s_1$, $t_2=s_2$ અને તરત પછીનું
+$!A(x)=\eq[x][s_1]$ હોવાથી આધારવાક્ય $!A(s_1)$ અને ફલિત $!A(s_2)$ છે;
+તેથી આધારવાક્યનો સૂચકાંક પુનઃસ્થાપિત કર્યો છે.}
+
+તેઓ એ પણ સાબિત કરે છે કે $\eq$ પરંપરિત છે, એટલે કે
+$\eq[s_1][s_2], \eq[s_2][s_3] \Proves \eq[s_1][s_3]$:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_1][s_3]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_2][s_3]}, just = \TAss
+        [\sFmla{\True}{\eq[s_1][s_3]}, just = {\TRule{\True}{\eq}[3, 2]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+આ !!{tableau}માં $\TRule{\True}{\eq}$ માટે જરૂરી પહેલું !!{formula}
+પંક્તિ~$3$ પરનું $\sFmla{\True}{\eq[s_2][s_3]}$ છે ($s_2$ એ~$t_1$ની
+અને $s_3$ એ~$t_2$ની ભૂમિકા ભજવે છે). $\sFmla{\True}{!A(s_2)}$
+સ્વરૂપનું બીજું આવશ્યક સૂત્ર પંક્તિ~$2$ છે. અહીં $!A(x)$ને
+$\eq[s_1][x]$ તરીકે વિચારો; તેથી $!A(s_2)$ એ $\eq[s_1][s_2]$ (એટલે
+કે પંક્તિ~$2$) અને $!A(s_3)$ એ ફલિતમાંનું !!{formula}
+~$\eq[s_1][s_3]$ બને છે.
+\sourcecorrection{OLTAB-010}{મૂળની \texttt{identity.tex}, પંક્તિ~89માં
+$!A(s_2)$ને $\eq[t_1][t_2]$ કહ્યું છે. અહીં નિર્ધારિત
+$!A(x)=\eq[s_1][x]$ અને પંક્તિ~2 મુજબ તે $\eq[s_1][s_2]$ છે; એ જ
+પુનઃસ્થાપિત કર્યું છે.}
+\end{ex}
+
+\begin{prob}
+નીચેના માટે બંધ !!{tableau}s આપો:
+\begin{enumerate}
+\item $\sFmla{\False}{\lforall[x][\lforall[y][((x = y \land !A(x))
+      \lif !A(y))]]}$
+\item $\sFmla{\False}{\lexists[x][(!A(x) \land
+    \lforall[y][(!A(y) \lif y = x)])]}$,\\
+  $\sFmla{\True}{\lexists[x][!A(x)] \land
+    \lforall[y][\lforall[z][((!A(y) \land !A(z)) \lif y = z)]]}$
+\end{enumerate}
+\end{prob}
+
+\end{document}

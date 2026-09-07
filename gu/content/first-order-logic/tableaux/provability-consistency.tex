@@ -1,0 +1,156 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{prv}}
+      {\olfileid{pl}{tab}{prv}}
+
+\olsection{\usetoken{S}{derivability} અને સુસંગતતા}
+
+હવે આપણે !!{derivability} સંબંધના કેટલાક ગુણધર્મો સ્થાપિત કરીશું. આ
+ગુણધર્મો સ્વતંત્ર રીતે રસપ્રદ છે, પરંતુ દરેક પૂર્ણતાના પ્રમેયની
+સાબિતીમાં ભૂમિકા ભજવશે.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  જો $\Gamma \Proves !A$ હોય અને $\Gamma \cup \{!A\}$ અસુસંગત હોય,
+  તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+એવા સાન્ત ગણ $\Gamma_0 = \{!B_1, \dots, !B_n\}$ અને $\Gamma_1
+  =\{!C_1, \dots, !C_m\} \subseteq \Gamma$ છે કે
+  \begin{align*}
+    \{\sFmla{\False}{!A}, &
+    \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} \\
+    \{\sFmla{\True}{!A}, &
+    \sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_m}\}
+  \end{align*}
+  માટે બંધ !!{tableau}s છે. $!A$ પર \Cut{} નિયમ વાપરીને આપણે તેમને એક
+  એવા બંધ !!{tableau}માં જોડી શકીએ છીએ જે દર્શાવે છે કે
+  $\Gamma_0 \cup \Gamma_1$ અસુસંગત છે. $\Gamma_0 \subseteq \Gamma$ અને
+  $\Gamma_1 \subseteq \Gamma$ હોવાથી $\Gamma_0 \cup \Gamma_1
+  \subseteq \Gamma$; તેથી $\Gamma$ અસુસંગત છે.
+  \sourcecorrection{OLTAB-004}{મૂળની
+  \texttt{provability-consistency.tex}, પંક્તિ~26માં બીજા સાન્ત ગણને
+  $\{!C_1,\dots,!C_n\}$ લખ્યો છે, પરંતુ તરત પછીનું પ્રદર્શન અને બાકીની
+  સાબિતી તેનો અંતિમ સૂચકાંક~$m$ રાખે છે. અહીં $\{!C_1,\dots,!C_m\}$
+  પુનઃસ્થાપિત કર્યો છે.}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ જો અને માત્ર જો $\Gamma \cup \{\lnot !A\}$
+અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+પહેલાં ધારો કે $\Gamma \Proves !A$, એટલે કે નીચેના ગણ માટે બંધ
+!!{tableau} છે:
+\[
+\{\sFmla{\False}{!A},
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+\]
+$\TRule{\True}{\lnot}$ નિયમ વાપરીને તેને નીચેના ગણ માટેના બંધ
+!!{tableau}માં ફેરવી શકાય છે:
+\[
+\{\sFmla{\True}{\lnot !A},
+\sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}.
+\]
+
+બીજી બાજુ, જો પછીના ગણ માટે બંધ !!{tableau} હોય, તો પહેલી
+ધારણા~$\sFmla{\True}{\lnot !A}$ અને એ ધારણાને
+\TRule{\True}{\lnot} લાગુ કરવાથી મળતું દરેક સૂત્ર દૂર કરીને, તથા ધારણા
+$\sFmla{\False}{!A}$ ઉમેરીને તેને પહેલા ગણના બંધ !!{tableau}માં ફેરવી
+શકીએ છીએ. ખરેખર, કોઈ શાખા પહેલાં $\sFmla{\True}{\lnot !A}$ને
+\TRule{\True}{\lnot} લાગુ કરવાના ફલિત $\sFmla{\False}{!A}$ને કારણે બંધ
+હોય, તો નવા !!{tableau}માં તેને અનુરૂપ શાખા પણ બંધ છે. જૂના ટેબ્લોમાં
+કોઈ શાખા ધારણા $\sFmla{\True}{\lnot !A}$ની સાથે
+$\sFmla{\False}{\lnot !A}$ ધરાવવાને કારણે બંધ હોય, તો
+$\sFmla{\False}{\lnot !A}$ને $\TRule{\False}{\lnot}$ લાગુ કરીને
+$\sFmla{\True}{!A}$ મેળવી તેને બંધ શાખામાં ફેરવી શકીએ છીએ. આપણે
+$\sFmla{\False}{!A}$ને ધારણા તરીકે ઉમેર્યું હોવાથી આ શાખા બંધ થાય છે.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ હોય જો અને માત્ર જો
+$\Gamma \cup \{!A\}$ અસુસંગત હોય, એ સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  જો $\Gamma \Proves !A$ અને $\lnot !A \in \Gamma$ હોય, તો $\Gamma$
+  અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+  ધારો કે $\Gamma \Proves !A$ અને $\lnot !A \in \Gamma$. ત્યારે એવાં
+  $!B_1$, \dots, $!B_n \in \Gamma$ છે કે
+  \[
+  \{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}
+  \]
+  માટે બંધ !!{tableau} છે. ધારણા \sFmla{\False}{!A}ને
+  \sFmla{\True}{\lnot !A}થી બદલો અને \sFmla{\True}{\lnot !A}ને
+  \TRule{\True}{\lnot} લાગુ કરવાનું ફલિત ધારણાઓ પછી દાખલ કરો. જૂના
+  !!{tableau}માં પંક્તિ~$1$ના આધારે સમર્થિત દરેક !!{sentence} હવે
+  પંક્તિ~$n+1$ના આધારે સમર્થિત છે. તેથી જૂનો !!{tableau} બંધ હોય તો
+  નવો પણ બંધ છે. બધી ધારણાઓ~$\Gamma$માં હોવાથી તે દર્શાવે છે કે
+  $\Gamma$ અસુસંગત છે.
+  \sourcecorrection{OLTAB-005}{મૂળની
+  \texttt{provability-consistency.tex}, પંક્તિ~93માં
+  $\TRule{\True}{\lnot}$ને $\sFmla{\False}{!A}$ પર લાગુ કરવાનું લખ્યું
+  છે. નિયમ અને પૂર્વવાક્ય મુજબ તેનું આધારવાક્ય
+  $\sFmla{\True}{\lnot !A}$ છે; અહીં એ જ પુનઃસ્થાપિત કર્યું છે.}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  જો $\Gamma \cup \{!A\}$ અને $\Gamma \cup \{\lnot !A\}$ બંને
+  અસુસંગત હોય, તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+  જો એવાં $!B_1$, \dots, $!B_n \in \Gamma$ અને $!C_1$, \dots,
+  $!C_m \in \Gamma$ હોય કે
+  \begin{align*}
+    \{\sFmla{\True}{!A}, &
+    \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\} \text{ અને}\\
+    \{\sFmla{\True}{\lnot !A}, &
+    \sFmla{\True}{!C_1}, \dots, \sFmla{\True}{!C_m}\}
+  \end{align*}
+  બંને માટે બંધ !!{tableau}s હોય, તો
+  $\sFmla{\True}{!B_1}$, \dots, $\sFmla{\True}{!B_n}$ની સાથે
+  $\sFmla{\True}{!C_1}$, \dots, $\sFmla{\True}{!C_m}$ને ધારણાઓ તરીકે
+  લઈને અને પછી \Cut{} નિયમ લાગુ કરીને એક જ સંયુક્ત !!{tableau} રચી
+  શકીએ છીએ, જે દર્શાવે છે કે $\Gamma$ અસુસંગત છે. તેનાથી બે શાખાઓ મળે
+  છે: એક $\sFmla{\True}{!A}$થી અને બીજી $\sFmla{\False}{!A}$થી શરૂ થાય
+  છે.
+
+  ડાબી બાજુએ પહેલા !!{tableau}નો તેની ધારણાઓની નીચેનો ભાગ ઉમેરો. અહીં
+  દરેક નિયમનો ઉપયોગ હજી યોગ્ય છે, કારણ કે પહેલા !!{tableau}ની
+  $\sFmla{\True}{!A}$ સહિતની દરેક ધારણા ઉપલબ્ધ છે. તેથી
+  $\sFmla{\True}{!A}$ની નીચેની દરેક શાખા બંધ થાય છે.
+
+  જમણી બાજુએ બીજા !!{tableau}નો તેની ધારણાઓની નીચેનો ભાગ ઉમેરો, પરંતુ
+  $\sFmla{\True}{\lnot !A}$ને~$\TRule{\True}{\lnot}$ લાગુ કરવાનાં બધાં
+  પરિણામો દૂર કરો. $\sFmla{\True}{\lnot !A}$ને
+  $\TRule{\True}{\lnot}$ લાગુ કરવાનું ફલિત $\sFmla{\False}{!A}$ છે; તે
+  છતાં ઉપલબ્ધ છે, કારણ કે તે સંયુક્ત !!{tableau}ની જમણી બાજુના \Cut{}
+  નિયમનું ફલિત છે.
+
+  બીજા ટેબ્લોમાં કોઈ શાખા ધારણા $\sFmla{\True}{\lnot !A}$ (જે હવે
+  સંયુક્ત !!{tableau}માં ધારણા તરીકે આવતી નથી) અને
+  $\sFmla{\False}{\lnot !A}$ બંને ધરાવવાને કારણે બંધ થઈ હોય, તો
+  $\sFmla{\False}{\lnot !A}$ને $\TRule{\False}{\lnot}$ લાગુ કરીને
+  $\sFmla{\True}{!A}$ મેળવી શકીએ છીએ. હવે સંયુક્ત !!{tableau}માં તેને
+  અનુરૂપ શાખા પણ બંધ થાય છે, કારણ કે તેમાં \Cut{} નિયમનું જમણી બાજુનું
+  ફલિત $\sFmla{\False}{!A}$ છે. બીજા !!{tableau}ની કોઈ શાખા અન્ય કોઈ
+  કારણે બંધ થઈ હોય, તો સંયુક્ત !!{tableau}માં તેને અનુરૂપ શાખા પણ બંધ
+  થાય છે, કારણ કે જૂના બીજા !!{tableau}ની શાખામાં આવતાં
+  $\sFmla{\True}{\lnot !A}$ સિવાયનાં બધાં !!{signed formula}s સંયુક્ત
+  !!{tableau}ની તેને અનુરૂપ શાખામાં પણ આવે છે.
+  \end{proof}
+
+\end{document}

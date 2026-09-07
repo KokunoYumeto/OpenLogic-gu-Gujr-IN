@@ -1,0 +1,216 @@
+{
+  "schema": "openlogic-gu-html-qa/11",
+  "html": {
+    "path": "reader/tableaux.html",
+    "bytes": 2727340,
+    "sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c",
+    "source_units_covered": 108,
+    "tableaux_units_complete": 14,
+    "rendered_tableaux_sections": 13,
+    "logic_profile": "signed analytic first-order tableaux, including quantifier and identity rules",
+    "mathml_nodes": 5779,
+    "mathml_tables": 618,
+    "block_mathml_nodes": 389,
+    "proof_representation_entries": 203,
+    "proof_representation_kinds": {
+      "axiomatic_derivation": 1,
+      "closed_tableau": 1,
+      "natural_deduction_prooftree": 64,
+      "natural_deduction_rule_display": 16,
+      "prooftree": 2,
+      "sequent_prooftree": 58,
+      "sequent_rule_display": 11,
+      "signed_analytic_tableau": 50
+    },
+    "proof_structure_totals": {
+      "trees": 191,
+      "axioms": 279,
+      "inferences": 423,
+      "deductions": 74,
+      "empty_premises": 51,
+      "double_lines": 2
+    },
+    "signed_analytic_tableau_totals": {
+      "nodes": 279,
+      "edges": 235,
+      "leaves": 80,
+      "empty_branches": 6,
+      "checked_nodes": 65,
+      "closed_nodes": 40,
+      "moved_nodes": 2,
+      "maximum_individual_depth": 9
+    },
+    "truth_tables": 5,
+    "images": 13,
+    "unique_ids": 427,
+    "broken_internal_links": 0,
+    "tableaux_section_ids": [
+      "fol:tab:rul:sec",
+      "fol:tab:prl:sec",
+      "fol:tab:qrl:sec",
+      "fol:tab:der:sec",
+      "fol:tab:pro:sec",
+      "fol:tab:prq:sec",
+      "fol:tab:ptn:sec",
+      "fol:tab:prv:sec",
+      "fol:tab:ppr:sec",
+      "fol:tab:qpr:sec",
+      "fol:tab:sou:sec",
+      "fol:tab:ide:sec",
+      "fol:tab:sid:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002",
+      "OLPL-001",
+      "OLPL-002",
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-004",
+      "OLPRF-003",
+      "OLSEQ-001",
+      "OLSEQ-002",
+      "OLSEQ-003",
+      "OLSEQ-004",
+      "OLSEQ-005",
+      "OLSEQ-006",
+      "OLND-001",
+      "OLND-002",
+      "OLND-003",
+      "OLND-004",
+      "OLND-005",
+      "OLND-006",
+      "OLTAB-001",
+      "OLTAB-002",
+      "OLTAB-003",
+      "OLTAB-004",
+      "OLTAB-005",
+      "OLTAB-006",
+      "OLTAB-007",
+      "OLTAB-008",
+      "OLTAB-009",
+      "OLTAB-011",
+      "OLTAB-010",
+      "OLTAB-012"
+    ],
+    "literal_sFmla_correction_references": 2,
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 12,
+    "stylesheet": {
+      "path": "reader/reader.css",
+      "href": "reader.css?v=3",
+      "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
+    },
+    "build_qa": {
+      "path": "build/tableaux-html-qa.json",
+      "sha256": "422764595c64dc145e4bdf2f2de1692e1bf66b3cfeb643e94a4f479638f1ced2"
+    },
+    "prepared_tex": {
+      "path": "build/tableaux-html.tex",
+      "sha256": "6ff74f79b6aaeb7a27c327d708fa843ee63f882e10f08be513282d33cc700f41"
+    },
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ],
+    "status": "passed_exact_dom_mathml_proof_tableau_link_asset_and_character_qa"
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-07T17:55:43.094120+00:00",
+    "method": "Codex in-app Chromium browser served from the exact local repository; live navigation, DOM geometry inspection across every block MathML node, font and image-load checks, and viewport screenshots of representative rules, branching tableaux, corrections, soundness, identity, and end matter.",
+    "url": "http://127.0.0.1:8768/reader/tableaux.html?qa=011",
+    "viewport_px": [
+      1280,
+      720
+    ],
+    "viewed": [
+      "section 84 assumptions, rules, and OLTAB-001",
+      "section 88 worked branching tableaux, including the widest displays",
+      "section 89 quantified tableaux and deeper branches",
+      "section 92 propositional proof properties and OLTAB-006/OLTAB-007",
+      "section 94 soundness and OLTAB-009",
+      "section 95 identity rules and tableau",
+      "section 96 identity soundness with OLTAB-010/OLTAB-012 and editorial notes",
+      "final footnote and bibliography area at the document bottom"
+    ],
+    "computed_mathml_check": {
+      "selector": "math[display='block']",
+      "nodes_checked": 389,
+      "clipped_horizontal_nodes": 0,
+      "clipped_vertical_nodes": 0,
+      "intentionally_scrollable_nodes": 3,
+      "scrollable_node_indices_zero_based": [
+        333,
+        334,
+        335
+      ],
+      "scrollable_internal_overflow_px": [
+        50,
+        118,
+        69
+      ],
+      "maximum_internal_scroll_overflow_px": 118,
+      "body_scroll_width_px": 914,
+      "body_client_width_px": 914,
+      "document_scroll_width_px": 1265,
+      "document_client_width_px": 1265,
+      "overflow_x": "auto",
+      "overflow_y": "hidden",
+      "padding_block_px": 10.4
+    },
+    "runtime_checks": {
+      "fonts_status": "loaded",
+      "images_loaded_with_nonzero_intrinsic_dimensions": 13,
+      "console_errors_or_warnings": 0,
+      "content_unique_ids": 427,
+      "browser_ui_injected_nonbody_id_excluded": "codex-browser-sidebar-comments-root",
+      "literal_sFmla_occurrences": 2
+    },
+    "defects_found_and_repaired": [
+      "The HTML adapter renders all 50 signed analytic tableaux as recursive MathML trees preserving 279 nodes, 235 edges, branch structure, justifications, checkmarks, closure marks, moved marks, and intentional empty branches.",
+      "Pandoc discarded the literal macro name in OLTAB-006 and OLTAB-007; the adapter now converts the two text references to an explicit backslash before rendering, and both live notes visibly contain \\sFmla."
+    ],
+    "final_hash_binding": {
+      "html_sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c",
+      "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "stylesheet_href": "reader.css?v=3"
+    },
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_011.json",
+    "sha256": "2cb3caea0b13a438e5f78b733b5c1bf3b72ce0dda591a78336cafde89a90a978",
+    "status": "passed_exact_block_review_and_reverse_paraphrase_sampling"
+  },
+  "pdf": {
+    "receipt": "PDF_QA_011.json",
+    "sha256": "670fdba5cfe98916922a2366a7739705a1073f54b0fb9073231402df78cb84e4",
+    "pdf_sha256": "3bbc0dd6e7f3b31cefce2935f054e989e4145070492b4efed13331611fe8244a",
+    "pages": 144,
+    "status": "passed_reproducible_build_and_all_page_visual_qa"
+  },
+  "full_corpus_complete": false
+}

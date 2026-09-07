@@ -1,0 +1,185 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: provability-propositional
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{tab}{ppr}}
+      {\olfileid{pl}{tab}{ppr}}
+
+\olsection{\usetoken{S}{derivability} અને વિધાનાત્મક સંયોજકો}
+
+\begin{explain}
+  આપણે સ્થાપિત કરીએ છીએ કે ટેબ્લોનો !!{derivability} સંબંધ~$\Proves$
+  વિધાનાત્મક સંયોજકો અંગેની કેટલીક પાયાની હકીકતો સ્થાપિત કરવા પૂરતો
+  સબળ છે; દાખલા તરીકે, $!A \land !B \Proves !A$ અને
+  $!A, !A \lif !B \Proves !B$ (મોડસ પોનેન્સ). પૂર્ણતાના પ્રમેયની
+  સાબિતી માટે આ હકીકતો જરૂરી છે.
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} $!A \land !B \Proves !A$
+    અને $!A \land !B \Proves !B$ બંને સધાય છે.
+  \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land !B$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\{\sFmla{\False}{!A}, \sFmla{\True}{!A \land !B}\}$ અને
+    $\{\sFmla{\False}{!B}, \sFmla{\True}{!A \land !B}\}$ બંને માટે
+    નીચેના બંધ !!{tableau}s છે:
+    \begin{oltableau}{}
+      [\sFmla{\False}{\formula{A}}, just=\TAss
+        [\sFmla{\True}{\formula{A} \land \formula{B}}, just=\TAss
+          [\sFmla{\True}{\formula{A}},just={\TRule{\True}{\land}[2]}
+            [\sFmla{\True}{\formula{B}},just={\TRule{\True}{\land}[2]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+    \begin{oltableau}{}
+      [\sFmla{\False}{\formula{B}}, just=\TAss
+        [\sFmla{\True}{\formula{A} \land \formula{B}}, just=\TAss
+          [\sFmla{\True}{\formula{A}},just={\TRule{\True}{\land}[2]}
+            [\sFmla{\True}{\formula{B}},just={\TRule{\True}{\land}[2]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+    \item $\{\sFmla{\True}{!A}, \sFmla{\True}{!B},
+      \sFmla{\False}{!A \land !B}\}$ માટેનો બંધ !!{tableau} આ રહ્યો:
+      \begin{oltableau}
+        [\sFmla{\False}{\formula{A} \land \formula{B}}, just = \TAss
+          [\sFmla{\True}{\formula{A}}, just = \TAss
+            [\sFmla{\True}{\formula{B}}, just=\TAss
+              [\sFmla{\False}{\formula{A}}, just = {\TRule{\False}{\land}[1]}, close]
+              [\sFmla{\False}{\formula{B}}, just = {\TRule{\False}{\land}[1]}, close]
+            ]
+          ]
+        ]
+      \end{oltableau}
+  \end{enumerate}
+  \sourcecorrection{OLTAB-006}{મૂળની
+  \texttt{provability-propositional.tex}, પંક્તિઓ 42--43 અને 52--53માં
+  \texttt{\string\sFmla}ના સત્ય-ચિહ્ન અને સૂત્રને અલગ દલીલો બનાવતી કૌંસો ખોટી જગ્યાએ
+  છે. પ્રકરણમાં વ્યાખ્યાયિત રૂપ $\sFmla{\True}{!A}$ મુજબ ચારેય
+  આવર્તનો પુનઃસ્થાપિત કર્યાં છે.}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $\{!A \lor !B, \lnot !A, \lnot !B\}$ અસુસંગત છે.
+  \item $!A \Proves !A \lor !B$ અને $!B \Proves !A \lor !B$ બંને
+    સધાય છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\{\sFmla{\True}{!A \lor !B}, \sFmla{\True}{\lnot !A},
+    \sFmla{\True}{\lnot !B}\}$ માટેનો બંધ !!{tableau} આપીએ છીએ:
+    \begin{oltableau}
+      [\sFmla{\True}{\formula{A} \lor \formula{B}}, just = \TAss
+        [\sFmla{\True}{\lnot \formula{A}}, just = \TAss
+          [\sFmla{\True}{\lnot \formula{B}}, just = \TAss
+            [\sFmla{\False}{\formula{A}}, just = {\TRule{\True}{\lnot}[2]}
+              [\sFmla{\False}{\formula{B}}, just = {\TRule{\True}{\lnot}[3]}
+                [\sFmla{\True}{\formula{A}}, just = {\TRule{\True}{\lor}[1]}, close]
+                [\sFmla{\True}{\formula{B}}, just = {\TRule{\True}{\lor}[1]}, close]
+              ]
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+  \item $\{\sFmla{\False}{!A \lor !B}, \sFmla{\True}{!A}\}$ અને
+    $\{\sFmla{\False}{!A \lor !B}, \sFmla{\True}{!B}\}$ બંને માટે
+    બંધ !!{tableau}s છે:
+    \begin{oltableau}{}
+      [\sFmla{\False}{\formula{A} \lor \formula{B}}, just=\TAss
+        [\sFmla{\True}{\formula{A}}, just=\TAss
+          [\sFmla{\False}{\formula{A}},just={\TRule{\False}{\lor}[1]}
+            [\sFmla{\False}{\formula{B}},just={\TRule{\False}{\lor}[1]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+    \begin{oltableau}{}
+      [\sFmla{\False}{\formula{A} \lor \formula{B}}, just=\TAss
+        [\sFmla{\True}{\formula{B}}, just=\TAss
+          [\sFmla{\False}{\formula{A}},just={\TRule{\False}{\lor}[1]}
+            [\sFmla{\False}{\formula{B}},just={\TRule{\False}{\lor}[1]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+  \end{enumerate}
+  \sourcecorrection{OLTAB-007}{મૂળની
+  \texttt{provability-propositional.tex}, પંક્તિઓ 105--106 અને
+  115--116માં \texttt{\string\sFmla}ના અસત્ય-ચિહ્ન અને સૂત્રને અલગ દલીલો બનાવતી
+  કૌંસો ખોટી જગ્યાએ છે. વ્યાખ્યાયિત રૂપ $\sFmla{\False}{!A}$ મુજબ
+  ચારેય આવર્તનો પુનઃસ્થાપિત કર્યાં છે.}
+\end{proof}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left} $!A, !A \lif !B \Proves !B$.
+  \item \ollabel{prop:provability-lif-right}
+    $\lnot !A \Proves !A \lif !B$ અને $!B \Proves !A \lif !B$ બંને સધાય છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\{\sFmla{\False}{!B}, \sFmla{\True}{!A \lif !B},
+      \sFmla{\True}{!A}\}$ માટે બંધ !!{tableau} છે:
+      \begin{oltableau}
+        [\sFmla{\False}{\formula{B}}, just=\TAss
+          [\sFmla{\True}{\formula{A} \lif \formula{B}}, just=\TAss
+            [\sFmla{\True}{\formula{A}}, just=\TAss
+              [\sFmla{\False}{\formula{A}}, just = {\TRule{\True}{\lif}[2]}, close]
+              [\sFmla{\True}{\formula{B}}, just = {\TRule{\True}{\lif}[2]}, close]
+            ]
+          ]
+        ]
+      \end{oltableau}
+    \item $\{\sFmla{\False}{!A \lif !B},
+      \sFmla{\True}{\lnot !A}\}$ અને $\{\sFmla{\False}{!A \lif !B},
+      \sFmla{\True}{!B}\}$ બંને માટે બંધ !!{tableau}s છે:
+      \begin{oltableau}
+        [\sFmla{\False}{\formula{A} \lif \formula{B}}, just = \TAss
+          [\sFmla{\True}{\lnot \formula{A}}, just = \TAss
+            [\sFmla{\True}{\formula{A}}, just = {\TRule{\False}{\lif}[1]}
+              [\sFmla{\False}{\formula{B}}, just = {\TRule{\False}{\lif}[1]}
+                [\sFmla{\False}{\formula{A}}, just = {\TRule{\True}{\lnot}[2]}, close]
+              ]
+            ]
+          ]
+        ]
+      \end{oltableau}
+      \begin{oltableau}
+        [\sFmla{\False}{\formula{A} \lif \formula{B}}, just = \TAss
+          [\sFmla{\True}{\formula{B}}, just = \TAss
+            [\sFmla{\True}{\formula{A}}, just = {\TRule{\False}{\lif}[1]}
+              [\sFmla{\False}{\formula{B}}, just = {\TRule{\False}{\lif}[1]},close
+              ]
+            ]
+          ]
+        ]
+      \end{oltableau}
+  \end{enumerate}
+\end{proof}
+
+\end{document}

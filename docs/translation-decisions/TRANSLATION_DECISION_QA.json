@@ -1,6 +1,6 @@
 {
   "schema": "openlogic-gu-translation-decision-qa/1",
-  "generated_utc": "2026-09-07T14:56:28.502358+00:00",
+  "generated_utc": "2026-09-07T18:07:00.382848+00:00",
   "status": "passed",
   "normative_schema": {
     "path": "docs/translation-decisions/translation-decision.schema.json",
@@ -9,13 +9,13 @@
     "upstream_revision": "811091d54be4989918864732073279a588340e6f"
   },
   "coverage": {
-    "source_units": 94,
+    "source_units": 108,
     "total_source_units": 722,
     "term_decisions": 123,
-    "source_correction_decisions": 41,
+    "source_correction_decisions": 53,
     "edition_scope_decisions": 3,
-    "all_decisions": 167,
-    "occurrences": 175
+    "all_decisions": 179,
+    "occurrences": 187
   },
   "checks": {
     "json_schema_valid": true,
@@ -32,7 +32,7 @@
     "unknown_reader_pages_are_explicitly_pending": true
   },
   "reader_locators": {
-    "available": 174,
+    "available": 186,
     "pending": 0,
     "not_applicable": 1
   },
@@ -53,24 +53,24 @@
   },
   "release_surfaces": {
     "START_HERE.md": {
-      "bytes": 829,
-      "sha256": "8267302273f31b4fb7ad6d9f49028493a45be5827df668ea44cca013cc235a58"
+      "bytes": 830,
+      "sha256": "590ccc54423906fca720302c63f1ce5bda7f399c849e41789bc497bf96d10058"
     },
     "TRANSLATION_DECISIONS_FULL.md": {
-      "bytes": 231606,
-      "sha256": "b7ca7bffeb1738d8f59863c5a5ea3833d434620a0f4459c7d8e7d89761a10d21"
+      "bytes": 246533,
+      "sha256": "ac57b4e265bbfb7b13d936d666de5cff585f37492bf0968c4d66dfb8a76f0f22"
     },
     "PRIORITY_REVIEW.md": {
       "bytes": 75930,
-      "sha256": "31c381d236e671c0e5dcc13930a38294bfea40731c9a82285e0bb3d5073eb576"
+      "sha256": "73e75023e12adbbfb795be8cd87a3994a06e7afd8cfd1e037c2caaadeef35675"
     },
     "DECISION_OCCURRENCES.csv": {
-      "bytes": 122243,
-      "sha256": "3a4443fd47850513d0bb5b2974bae5a9b02296c1bca62683be8ca3a249c6621a"
+      "bytes": 126695,
+      "sha256": "f1048a9b2ff5731166e0feb242475e003d33f8b28c5040d4e79a6526cef785ec"
     },
     "DECISIONS.json": {
-      "bytes": 1194129,
-      "sha256": "f39384c4dac1964dcef08e1a2d669347afb46dddbb3fe121bbfdf4a5c0db307f"
+      "bytes": 1273906,
+      "sha256": "6b64dfd2b52c953199ff9cf8968282c8bb6373f1103ec5c887e836f20f6636ae"
     },
     "translation-decision.schema.json": {
       "bytes": 10787,

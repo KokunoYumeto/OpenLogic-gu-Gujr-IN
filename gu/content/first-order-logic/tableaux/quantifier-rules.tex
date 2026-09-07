@@ -1,0 +1,107 @@
+% Part: first-order-logic
+% Chapter: tableaux
+% Section: quantifier-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{tab}{qrl}
+
+\olsection{પરિમાણક નિયમો}
+
+\subsection{$\lforall$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\forall}}
+\UnaryInfC{\sFmla{\True}{!A(t)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lforall[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lforall}}
+\UnaryInfC{\sFmla{\False}{!A(a)}}
+\DisplayProof
+\end{defish}
+
+\TRule{\True}{\lforall}માં $t$ બંધ પદ છે (એવું પદ જેમાં કોઈ ચલ નથી).
+\TRule{\False}{\lforall}માં $a$ એવો !!a{constant} છે જે
+\TRule{\False}{\lforall} નિયમની ઉપરની શાખામાં ક્યાંય આવવો ન જોઈએ.
+\TRule{\False}{\forall} અનુમાનના $a$ને આપણે \emph{આઇગનચલ} કહીએ
+છીએ.\footnote{ઉપરના નિયમમાં $a$ !!a{constant} હોવા છતાં આપણે
+``આઇગનચલ'' શબ્દ
+વાપરીએ છીએ. તેના ઐતિહાસિક કારણો છે.}
+
+\subsection{$\lexists$ માટેના નિયમો}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\True}{\lexists}}
+\UnaryInfC{\sFmla{\True}{!A(a)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lexists[x][!A(x)]}}
+\RightLabel{\TRule{\False}{\lexists}}
+\UnaryInfC{\sFmla{\False}{!A(t)}}
+\DisplayProof
+\end{defish}
+
+ફરીથી, $t$ બંધ પદ છે અને $a$ એવો !!a{constant} છે જે
+\TRule{\True}{\lexists} નિયમની ઉપરની શાખામાં આવતો નથી.
+\TRule{\True}{\lexists} અનુમાનના $a$ને આપણે \emph{આઇગનચલ} કહીએ છીએ.
+
+\TRule{\False}{\lforall} અથવા \TRule{\True}{\lexists} અનુમાનની ઉપરની
+શાખામાં આઇગનચલ ન આવે એવી શરતને \emph{આઇગનચલ-શરત} કહે છે.
+
+\begin{explain}
+યાદ કરો કે $!A$ એવા !!a{formula} હોય જેમાં !!{variable}~$x$ મુક્ત હોય,
+તો આપણે તેને~$!A(x)$ લખીને દર્શાવીએ છીએ. એ જ સંદર્ભમાં $!A(t)$ એ
+~$\Subst{!A}{t}{x}$નું સંક્ષિપ્ત રૂપ છે. તેથી
+\TRule{\False}{\lexists} નિયમને આ રીતે પણ લખી શકીએ:
+\begin{prooftree}
+  \AxiomC{\sFmla{\False}{\lexists[x][!A]}}
+  \RightLabel{\TRule{\False}{\lexists}}
+  \UnaryInfC{\sFmla{\False}{\Subst{!A}{t}{x}}}
+\end{prooftree}
+નોંધો કે $t$ કદાચ $!A$માં પહેલેથી આવતું હોય; દાખલા તરીકે, $!A$
+કદાચ~$\Atom{\Obj P}{t,x}$ હોય. તેથી
+$\sFmla{\False}{\lexists[x][\Atom{\Obj P}{t,x}]}$ પરથી
+$\sFmla{\False}{\Atom{\Obj P}{t,t}}$નું અનુમાન કરવું એ
+\TRule{\False}{\lexists}નો યોગ્ય ઉપયોગ છે. પરંતુ
+\TRule{\False}{\lforall} અને~\TRule{\True}{\lexists}ની
+આઇગનચલ-શરતો મુજબ !!{constant}~$a$ એ~$!A$માં ન આવવો જોઈએ. તેથી
+$\sFmla{\False}{\lforall[x][\Atom{\Obj P}{a,x}]}$ પરથી
+$\TRule{\False}{\lforall}$ વાપરીને
+$\sFmla{\False}{\Atom{\Obj P}{a,a}}$નું યોગ્ય અનુમાન કરી શકાતું નથી.
+\end{explain}
+
+\begin{explain}
+\TRule{\True}{\lforall} અને \TRule{\False}{\lexists}માં પદ~$t$ પર કોઈ
+નિયંત્રણ નથી. બીજી બાજુ, \TRule{\True}{\lexists} અને
+\TRule{\False}{\lforall} નિયમોમાં આઇગનચલ-શરત મુજબ !!{constant}~$a$ એ
+સંબંધિત અનુમાનની ઉપરની શાખાઓમાં ક્યાંય આવવો ન જોઈએ. તંત્ર યથાર્થ રહે
+તે માટે આ શરત જરૂરી છે. આ શરત વિના
+$\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]$ માટે
+નીચેનો બંધ !!{tableau} હોત:
+\begin{center}
+\begin{tableau}{}
+  [\sFmla{\False}{\lexists[x][\formula{A}(x)] \lif \lforall[x][\formula{A}(x)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][\formula{A}(x)]},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\lforall[x][\formula{A}(x)]},
+        just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\formula{A}(a)},
+          just={\TRule{\True}{\lexists}[2]}
+          [\sFmla{\False}{\formula{A}(a)},
+            just={\TRule{\False}{\lforall}[3]}, close]
+        ]
+      ]
+    ]
+  ]
+\end{tableau}
+\end{center}
+પરંતુ $\lexists[x][\formula{A}(x)] \lif
+\lforall[x][\formula{A}(x)]$ પ્રામાણ્ય નથી.
+\end{explain}
+
+\end{document}

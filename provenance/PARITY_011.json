@@ -1,0 +1,469 @@
+{
+  "schema": "openlogic-gu-parity/11",
+  "reports": [
+    {
+      "unit_id": "OLP-0098",
+      "path": "content/first-order-logic/tableaux/tableaux.tex",
+      "source_sha256": "1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6",
+      "target_sha256": "a3e7ac8d0723cce7fe690054403a03f6be495a5a3cbf8f9a2f97f6ca0d378dc7",
+      "math_source_count": 0,
+      "math_corrected_source_count": 0,
+      "math_target_count": 0,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-001",
+          "change": "Replaced a copied natural-deduction reference with tableaux, matching the chapter and prfTab tag."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-001"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0099",
+      "path": "content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_sha256": "312d16775a4a86acf5772c8d02db03233101014ef0ee9a77e3c39b5ca6815a8c",
+      "target_sha256": "8786ebdd5c37b0a06601f43d1d12b6f01d69d355baaf377ee83cd278de4f4711",
+      "math_source_count": 19,
+      "math_corrected_source_count": 19,
+      "math_target_count": 19,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0100",
+      "path": "content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_sha256": "dcf0dc5fbdbfd79a7cf8c4b07a3d3d51aedc9ac424416d205ee5a8fd0877a8f4",
+      "target_sha256": "afe086d6335d944e65dec9b850f68cc534314959bdbd5912cf1e155af0f51c9e",
+      "math_source_count": 10,
+      "math_corrected_source_count": 10,
+      "math_target_count": 10,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0101",
+      "path": "content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_sha256": "682b3f1de2569dc63657243b83a3daa8966cc1786fa44d5d2fa34da2658e2bb0",
+      "target_sha256": "c657f990061b510daa793271728b18d0931dc3fa52e46b34cd97d8e786dfcf2f",
+      "math_source_count": 29,
+      "math_corrected_source_count": 29,
+      "math_target_count": 29,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0102",
+      "path": "content/first-order-logic/tableaux/derivations.tex",
+      "source_sha256": "2cb9a2b6c144eb8b53c4a4d9c52daab60bcd3491dbc909cdd5ccf42300fe5452",
+      "target_sha256": "ab3b0a870d525142eadb634782f17b4b02e16233a2fb7076e8364997fab6f249",
+      "math_source_count": 22,
+      "math_corrected_source_count": 22,
+      "math_target_count": 22,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0103",
+      "path": "content/first-order-logic/tableaux/proving-things.tex",
+      "source_sha256": "6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90",
+      "target_sha256": "18e0c01c0b070c994c9c640539da0ea31b7adb6fd014032213e0fea16033eb81",
+      "math_source_count": 61,
+      "math_corrected_source_count": 61,
+      "math_target_count": 61,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-002",
+          "change": "Restored the negated formula as a separate true-signed assumption in the exercise."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-002"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0104",
+      "path": "content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_sha256": "253a81c3ef645fee728f66e385a86459773fa5d6a82e73740cb55497c598c234",
+      "target_sha256": "507e1d84778eb6285d403ca60aefb5f0410f0416128a4218b915a9a71c49594a",
+      "math_source_count": 53,
+      "math_corrected_source_count": 53,
+      "math_target_count": 53,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0105",
+      "path": "content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_sha256": "38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71",
+      "target_sha256": "05a2f37ff1201fab781e5dd0faba149daa056a37869e04e36904057edebc4777",
+      "math_source_count": 64,
+      "math_corrected_source_count": 64,
+      "math_target_count": 64,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-003",
+          "change": "Restored braces around the finite subset of Gamma."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-003"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 25,
+      "target_blocks": 25,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0106",
+      "path": "content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_sha256": "1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348",
+      "target_sha256": "06fb3b1be5d82522eaaab3e975f208e4884c05c5a67ba5d0d7e0b2aadabd50eb",
+      "math_source_count": 71,
+      "math_corrected_source_count": 71,
+      "math_target_count": 71,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-004",
+          "change": "Changed the second finite set's terminal index from n to m, matching its displayed members."
+        },
+        {
+          "finding_id": "OLTAB-005",
+          "change": "Restored the true-signed negation as the premise of the true-negation rule."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-004",
+        "OLTAB-005"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 20,
+      "target_blocks": 20,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0107",
+      "path": "content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_sha256": "342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13",
+      "target_sha256": "bc4f46f02a764209aa652aea1031be8fe0e2496f86cd5272b081896e20a56693",
+      "math_source_count": 21,
+      "math_corrected_source_count": 21,
+      "math_target_count": 21,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-006",
+          "change": "Restored the two arguments of four true-signed formula macros."
+        },
+        {
+          "finding_id": "OLTAB-007",
+          "change": "Restored the two arguments of four false-signed formula macros."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-006",
+        "OLTAB-007"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0108",
+      "path": "content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_sha256": "0087b4788815c95c714158f2f37438e351183f97d8388c0acde21c20a6e8aa0f",
+      "target_sha256": "9786a809d09d6b8b12a92bd934667dd94b6caab9b1608be98abf75b7b16ae4dc",
+      "math_source_count": 21,
+      "math_corrected_source_count": 21,
+      "math_target_count": 21,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-008",
+          "change": "Removed an extraneous comma from inside the displayed assumption set."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-008"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0109",
+      "path": "content/first-order-logic/tableaux/soundness.tex",
+      "source_sha256": "d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80",
+      "target_sha256": "291222506a17a5547b8e8b90b0ead8de9b77c8c3b6153839ad28ce3173c3a9a3",
+      "math_source_count": 142,
+      "math_corrected_source_count": 142,
+      "math_target_count": 142,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-009",
+          "change": "Used A consistently throughout the two quantified-rule cases, matching their conclusions and proofs."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-009"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 26,
+      "target_blocks": 26,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0110",
+      "path": "content/first-order-logic/tableaux/identity.tex",
+      "source_sha256": "3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d",
+      "target_sha256": "b31dd806e3355a74f544de6d189bc6e67cca39c665e43369b7b95f265289276d",
+      "math_source_count": 49,
+      "math_corrected_source_count": 49,
+      "math_target_count": 49,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-011",
+          "change": "Restored A(s1) as the second prerequisite in the symmetry tableau."
+        },
+        {
+          "finding_id": "OLTAB-010",
+          "change": "Restored the instantiated equality on line 2 in the transitivity explanation."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-011",
+        "OLTAB-010"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0111",
+      "path": "content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_sha256": "d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b",
+      "target_sha256": "7a0cf8db202a3dbcb17fb8903f28a79a0f28c10900612b44868e7592d7f4a1c3",
+      "math_source_count": 27,
+      "math_corrected_source_count": 27,
+      "math_target_count": 27,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLTAB-012",
+          "change": "Restored the true sign in the soundness case for the true-identity rule."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "source_correction_notes": [
+        "OLTAB-012"
+      ],
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "totals": {
+    "units": 14,
+    "source_math_spans": 589,
+    "corrected_source_math_spans": 589,
+    "documented_source_corrections": 12
+  },
+  "meaning": "Formula multisets, proof primitives and exact rule invocations are checked within every aligned blank-delimited block. Gujarati correction boxes are stripped; all corrected expected-source changes are explicit and keyed."
+}
