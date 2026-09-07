@@ -16,13 +16,18 @@
   },
   {
     "file": "docs/BUILD_CUMULATIVE.md",
-    "bytes": 1882,
-    "sha256": "600850a638a2992b9aaa56522d3ab235a1d3ef2e72ae7afad98b7a9492bdf1fb"
+    "bytes": 2100,
+    "sha256": "c405834f2201ec35d9d61833fd9fb8bb97ed63b4ab5119eef90cf637d8dfc17b"
   },
   {
     "file": "docs/EDITION_NOTES.md",
-    "bytes": 9119,
-    "sha256": "25b1b72f5097fdb7e50b474a686d76cab62de6ec724d2c1f9fd0048dbaf2969e"
+    "bytes": 11170,
+    "sha256": "0a4031e94c7f973e8c0d2e16bd647688caf180f027454e2d24d855c741af563d"
+  },
+  {
+    "file": "docs/GUJARATI_EDITION_SCOPE.md",
+    "bytes": 2380,
+    "sha256": "70484e2c5ee23ffa9dba0b3d1361bee402da94917f63d9ba0539ea8eb5d20bf6"
   },
   {
     "file": "docs/LICENSE_NOTES.md",
@@ -31,18 +36,53 @@
   },
   {
     "file": "docs/TERMINOLOGY_REVIEW_LOG.md",
-    "bytes": 212942,
-    "sha256": "fc7d86d63a94f2ead0acb7087f722b20b5f29954491d98dfcede899ddf4c908a"
+    "bytes": 277852,
+    "sha256": "fdfc7437cb784f49614be4061a8c17fad7277ad6423547f29f022b6c412addf3"
+  },
+  {
+    "file": "docs/translation-decisions/DECISION_OCCURRENCES.csv",
+    "bytes": 122243,
+    "sha256": "3a4443fd47850513d0bb5b2974bae5a9b02296c1bca62683be8ca3a249c6621a"
+  },
+  {
+    "file": "docs/translation-decisions/DECISIONS.json",
+    "bytes": 1194129,
+    "sha256": "f39384c4dac1964dcef08e1a2d669347afb46dddbb3fe121bbfdf4a5c0db307f"
+  },
+  {
+    "file": "docs/translation-decisions/PRIORITY_REVIEW.md",
+    "bytes": 75930,
+    "sha256": "31c381d236e671c0e5dcc13930a38294bfea40731c9a82285e0bb3d5073eb576"
+  },
+  {
+    "file": "docs/translation-decisions/START_HERE.md",
+    "bytes": 829,
+    "sha256": "8267302273f31b4fb7ad6d9f49028493a45be5827df668ea44cca013cc235a58"
+  },
+  {
+    "file": "docs/translation-decisions/translation-decision.schema.json",
+    "bytes": 10787,
+    "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+  },
+  {
+    "file": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+    "bytes": 2889,
+    "sha256": "01944df2f5a201e81e46dad3a498162f93a3b2414788922c7dc72b8427197790"
+  },
+  {
+    "file": "docs/translation-decisions/TRANSLATION_DECISIONS_FULL.md",
+    "bytes": 231606,
+    "sha256": "b7ca7bffeb1738d8f59863c5a5ea3833d434620a0f4459c7d8e7d89761a10d21"
   },
   {
     "file": "docs/TRANSLATION_DECISION_LOG_METADATA.json",
-    "bytes": 842,
-    "sha256": "e765d38dcdc42e19a52474d883ca4934b2e66fe615c07fd8de54a3e30bb5be81"
+    "bytes": 880,
+    "sha256": "3a2063472797dcfb499bd97ed2a4041cd4d66735f54c98d2050899fe93618bbb"
   },
   {
     "file": "docs/TRANSLATION_DECISIONS.jsonl",
-    "bytes": 351683,
-    "sha256": "23a3629b2de97cc6b8a125ab60d71055577b12701c1e05ef58ad3df7c7f362ae"
+    "bytes": 458467,
+    "sha256": "57521bba792f0a12a5fb5cca405df8b71cc90a7c67378f6866fcecee373aee2c"
   },
   {
     "file": "fonts/FONT_PROVENANCE.json",
@@ -68,6 +108,181 @@
     "file": "fonts/OFL.txt",
     "bytes": 4384,
     "sha256": "c0b88977aa18b5e4fd05d646d560da89fde61b6581fa4507cb00dd90bd1bf7d4"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+    "bytes": 5686,
+    "sha256": "74fa3a53b06ba3d36cb960f35c4a1401ed4b1ff13eac9cd702feb6ac17bc8de4"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/identity.tex",
+    "bytes": 4785,
+    "sha256": "5d1c6195378045cc4c0f62b5f10918b23de5b23e4921020d987ca5887daf32eb"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/natural-deduction.tex",
+    "bytes": 1313,
+    "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+    "bytes": 7560,
+    "sha256": "42280456f97a71e0a4892c6bcd91ae14ea3411607ef9dcf12156c07abe7cf43e"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+    "bytes": 2991,
+    "sha256": "cb8cefaed9c4454d89002d91ae598fc3038c607c39ef22eab86876018835f13a"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+    "bytes": 5032,
+    "sha256": "453fb54b8f57da9a8516aaebf205f28b1effccdae0ceaedb11daa241f61fdc05"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+    "bytes": 4605,
+    "sha256": "8718b537202685612cc38e0122f36eeafd3a716ba91712eda14442c0dd331607"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+    "bytes": 2140,
+    "sha256": "3b8cdbedfb4984e32ab5f88b349fc8ceb84fbc6f8f609a123439170e45016569"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+    "bytes": 14046,
+    "sha256": "d209af97317ad61cc26a4da1cd40366e592b982c6b7f429c77070ed698e7b81a"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+    "bytes": 15678,
+    "sha256": "ff8d304b76983fd480a52086a4c2fbf9f9f0f4659df28c8822ee743a803eadd3"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+    "bytes": 5889,
+    "sha256": "c6fc4e35e785a0c715e8787f3341ca7d0105800a3d9a4d5f1fc0758a315d314c"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+    "bytes": 4038,
+    "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/soundness-identity.tex",
+    "bytes": 2418,
+    "sha256": "805d1fd43db3d1652190cae1360265c8fcf66d4824d1f9ec99e626ab142ef857"
+  },
+  {
+    "file": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+    "bytes": 19261,
+    "sha256": "23055ad895028174f53f9061f2724fdd4f8df49941d2d085216c4bda6d32cbb8"
+  },
+  {
+    "file": "gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex",
+    "bytes": 8001,
+    "sha256": "83ee5b0f14053eaa0b81be7ff1c8d6a20f4993fb5a60f1c3c79db4114bae5937"
+  },
+  {
+    "file": "gu/content/first-order-logic/proof-systems/introduction.tex",
+    "bytes": 10755,
+    "sha256": "1b84a55e723ee46dbbc3703c635e010a63a12f7e1015b956874cab45e9385ad8"
+  },
+  {
+    "file": "gu/content/first-order-logic/proof-systems/natural-deduction.tex",
+    "bytes": 9331,
+    "sha256": "ef088e5f8594092cf8410502829ab7686231f9f7d7e44d7f42b5b124720ff356"
+  },
+  {
+    "file": "gu/content/first-order-logic/proof-systems/proof-systems.tex",
+    "bytes": 990,
+    "sha256": "9bedb80b99a48fe0030d908ede634330cb59c94d41c8fb1cdc9997505f7513f0"
+  },
+  {
+    "file": "gu/content/first-order-logic/proof-systems/sequent-calculus.tex",
+    "bytes": 5822,
+    "sha256": "91f89402c36aacf95aac325abee69ee78c588149b34c164023d9ceff86cb1581"
+  },
+  {
+    "file": "gu/content/first-order-logic/proof-systems/tableaux.tex",
+    "bytes": 8054,
+    "sha256": "90f2d849c025a41ac4dbc059ac423c60522c38990194c87bc9d1173df149219c"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/derivations.tex",
+    "bytes": 6395,
+    "sha256": "066aa7a3c19e60fe27b845d75b61470094d45476c33f5e98a536c15894802c9b"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/identity.tex",
+    "bytes": 3037,
+    "sha256": "b5ac3bb21297c57cf0ceac81ad9830660a405d8a7f0e85612203d140195de3ce"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+    "bytes": 9620,
+    "sha256": "4198b3cbe7c82641e4b723e334b3ec2c81ddc6d29242fd8638a2d0ec9ee81ec3"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/propositional-rules.tex",
+    "bytes": 2143,
+    "sha256": "5f59cd63806abff56da31387a7d0a60cd3fe8d9b886b2533b99f6dfb9e98e468"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/provability-consistency.tex",
+    "bytes": 5117,
+    "sha256": "6c4ee39e5ef9ca994b11aaae70f97ebf13321136fec92efb428306715564008b"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/provability-propositional.tex",
+    "bytes": 5224,
+    "sha256": "4dc62f514c7ec8c5fe250e15f069def17a88abdcf80b503d4df1ef3f8246bed1"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
+    "bytes": 2190,
+    "sha256": "cb829b91154ac68a4f7e54f84e846af00e592e5f8031d569563769b18a1e13e6"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/proving-things-quant.tex",
+    "bytes": 6303,
+    "sha256": "1b77230ef3f2f7530a831e883c765297673526b7e25634fba67444d0b1c05ddd"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/proving-things.tex",
+    "bytes": 17484,
+    "sha256": "547fbb9dc4bae7a4f347834882cefe4e784f17580d2213214ddb79a8d0d8102f"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex",
+    "bytes": 5437,
+    "sha256": "cf8a8004fb325e0683c5a988102e4c65286de06abee4bea50daba8780cb8f6da"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
+    "bytes": 5257,
+    "sha256": "e6005222aecfa0b29d7fd24bf05840a32be40ca629df36dc714e8f709172fb56"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/sequent-calculus.tex",
+    "bytes": 1538,
+    "sha256": "7d8589a109c7ad7a40c19893b4a81dcc50bf3476b0ff13c515b8f9ac69ae9cb1"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/soundness-identity.tex",
+    "bytes": 2772,
+    "sha256": "f8c0daf3e88c73edbf1a03893faab40e49b79d4dc5fa3dfaefa453b71a954d3c"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/soundness.tex",
+    "bytes": 28947,
+    "sha256": "4d11d1ccf5f7ab9f2382de0c6971a8405286ecfc3a9da004f4f19cd141fec441"
+  },
+  {
+    "file": "gu/content/first-order-logic/sequent-calculus/structural-rules.tex",
+    "bytes": 2972,
+    "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100"
   },
   {
     "file": "gu/content/propositional-logic/propositional-logic.tex",
@@ -385,9 +600,24 @@
     "sha256": "1b848de0e0983cd7c4d7b906284cec612c79f1d59f50a629adc2ad533fa6285e"
   },
   {
+    "file": "gu-natural-deduction.tex",
+    "bytes": 18081,
+    "sha256": "c5d3cc8eca851c39b7505e0ea387f3a2a317308050d1620e4a9fc8e30b7ca312"
+  },
+  {
+    "file": "gu-proof-systems.tex",
+    "bytes": 14442,
+    "sha256": "fb33996e9437f50b47a3c3adac8efbbced111dd3b83b5b9be93e20c075d39cf8"
+  },
+  {
     "file": "gu-propositional.tex",
     "bytes": 10372,
     "sha256": "bb2c54c695a1286c71cec877165e63ce6e07399e6a9e7b806c2e2d11753e4501"
+  },
+  {
+    "file": "gu-sequent-calculus.tex",
+    "bytes": 17403,
+    "sha256": "698b5062be72bef439ffbacce4f3b79b8ecd17e1fef659a0d65323c32caefac8"
   },
   {
     "file": "gu-sets.tex",
@@ -440,6 +670,21 @@
     "sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de"
   },
   {
+    "file": "provenance/BATCH_008.json",
+    "bytes": 4429,
+    "sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649"
+  },
+  {
+    "file": "provenance/BATCH_009.json",
+    "bytes": 8690,
+    "sha256": "f93547c6b6596cb30d0d6dacd1a68a42c132a76251537f7c09eed4e348651f63"
+  },
+  {
+    "file": "provenance/BATCH_010.json",
+    "bytes": 8116,
+    "sha256": "faab0957fd94b21971476b90acf0ebd7b26a8f590ed2b256fcdb044c033815ac"
+  },
+  {
     "file": "provenance/BUILD_RECEIPT_005.json",
     "bytes": 321,
     "sha256": "684cd45c681bcabd24de7d885b61add52d5f67f08dd30a1a9778339032b515fb"
@@ -455,14 +700,29 @@
     "sha256": "9aa7ea3a4ecada27d9e9bde657ffb6a380d5ad6d34f240395656a0923ce84b51"
   },
   {
+    "file": "provenance/BUILD_RECEIPT_008.json",
+    "bytes": 2287,
+    "sha256": "62684e96835b2ed75411fadc87c4c0266b1bf210b9dad0bb4aacf33cfed791ae"
+  },
+  {
+    "file": "provenance/BUILD_RECEIPT_009.json",
+    "bytes": 5491,
+    "sha256": "6596e47634f335cb648205e37fa125af47a83176209db29593168603aa13734c"
+  },
+  {
+    "file": "provenance/BUILD_RECEIPT_010.json",
+    "bytes": 8306,
+    "sha256": "2cb75087c375c72e339b2ad71f2c578d525983c9049a5233d07c88bcfd0c45ab"
+  },
+  {
     "file": "provenance/CANON_PASSAGE_SCHEMA.json",
     "bytes": 1384,
     "sha256": "544837e0f014324ea40110c932c6cf7e35355d31bfb8fbb01ce1d073e77be819"
   },
   {
     "file": "provenance/CANON_PASSAGES.jsonl",
-    "bytes": 65353,
-    "sha256": "285549f252282ae051c8ac4b5c1a7fcb329112be17ceac7cd5232c7c9784b0a9"
+    "bytes": 71758,
+    "sha256": "f571baa94a6ff02a2a4ef20c5641a6c5e6c23339d2c3cda1afaa044881242ffb"
   },
   {
     "file": "provenance/CANON_SOURCES.jsonl",
@@ -471,8 +731,23 @@
   },
   {
     "file": "provenance/COVERAGE.json",
-    "bytes": 186316,
-    "sha256": "828310a0fb4af8e5b9fa7dc78e51f727c5fcd6d89597659591186fae97311f58"
+    "bytes": 190743,
+    "sha256": "307bf06cbf85afca82bc0f579e806b2e4209d1ab6bad02b292f7ca0d2df5d8c1"
+  },
+  {
+    "file": "provenance/CUMULATIVE_QA_008.json",
+    "bytes": 5301,
+    "sha256": "8cc6c9654461887f4eb2f5b536e305884c42ed34cfc3b5bca366c2c87a2ac052"
+  },
+  {
+    "file": "provenance/CUMULATIVE_QA_009.json",
+    "bytes": 7308,
+    "sha256": "4b2f9c37261c93cc62237de184c2644d04a04a5c183fe9176b59ccf88b772794"
+  },
+  {
+    "file": "provenance/CUMULATIVE_QA_010.json",
+    "bytes": 8293,
+    "sha256": "2b36cdff1ccac83dea755bb49be8373478b9b14fd0f78b73b89c4fd1641396c3"
   },
   {
     "file": "provenance/FINAL_QA_002.json",
@@ -515,6 +790,21 @@
     "sha256": "00137d5323f29289482f6538c0e0aeb717c78910c023793feb818ad788a66568"
   },
   {
+    "file": "provenance/HTML_QA_008.json",
+    "bytes": 3625,
+    "sha256": "6c2d104293b44b99c9ac0d0edf35af41d516a49ef4c88accf7d347ada38480e8"
+  },
+  {
+    "file": "provenance/HTML_QA_009.json",
+    "bytes": 4983,
+    "sha256": "6ca31c21d52ef2df525a1b40c0c32a89ff2d0779c88ff3377b381cfaa8eaa75e"
+  },
+  {
+    "file": "provenance/HTML_QA_010.json",
+    "bytes": 5513,
+    "sha256": "7736a45375233fb2b90c78848749a09e3f03adac288b5f215ecc86f159997f15"
+  },
+  {
     "file": "provenance/LAPTOP_CANON_RECONCILIATION.json",
     "bytes": 7991,
     "sha256": "aa6d3f2924caed6c37b7c4052464fa99caa2781e4a289e3a0e2b490069f11967"
@@ -555,19 +845,49 @@
     "sha256": "faf2acf1362c7ef855cba69bf1cb7443a18643ffd28c3e2147acbaae015e431f"
   },
   {
+    "file": "provenance/PARITY_008.json",
+    "bytes": 7443,
+    "sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05"
+  },
+  {
+    "file": "provenance/PARITY_009.json",
+    "bytes": 18065,
+    "sha256": "b4d4e9c9f0713880284e433861baf6f1c280320b2ea12f9498919bc7b41480e7"
+  },
+  {
+    "file": "provenance/PARITY_010.json",
+    "bytes": 17065,
+    "sha256": "08ba538a84366be545f7d1491ffc05d7263ad530c0f6b1a5c6baf81f78f8651a"
+  },
+  {
     "file": "provenance/PDF_QA_007.json",
     "bytes": 15577,
     "sha256": "900b4f70732cbf31698ab8f800df0bf958f7cae43ce42c7960c2af2c313e35d7"
   },
   {
+    "file": "provenance/PDF_QA_008.json",
+    "bytes": 15950,
+    "sha256": "1bf08856f8daa9e789f22fbbdd96d28719089dac27b6b8aaab6f6ef969be8a63"
+  },
+  {
+    "file": "provenance/PDF_QA_009.json",
+    "bytes": 26778,
+    "sha256": "d797d209071e2067f1cda4411722aa954a1e5db9cfd713e390b6d0505ba0b644"
+  },
+  {
+    "file": "provenance/PDF_QA_010.json",
+    "bytes": 34427,
+    "sha256": "b4bbf27f44ceeb4c2551462d9d3c69f1654f59605896116d8fe8b51383a3741b"
+  },
+  {
     "file": "provenance/QA.json",
-    "bytes": 4714,
-    "sha256": "82dcbe2db4d79165029ae3dc4a2d2020530c5baaa4f157b2a7fae08753a0bb70"
+    "bytes": 10367,
+    "sha256": "cb9d0199855669441c7b740fd21ff10c6a17a1577afd603717323c5c6265d6c8"
   },
   {
     "file": "provenance/SEGMENT_CANON_USE.jsonl",
-    "bytes": 887259,
-    "sha256": "e05e4da95f5dccdee308c035def12d360b466539005b18381c1f8f2aa2821a4f"
+    "bytes": 1316249,
+    "sha256": "175dcccb7ec0745306e362199eb1a9429208f6597652603a6c7fb5ae0658df14"
   },
   {
     "file": "provenance/SEMANTIC_REVIEW_001.json",
@@ -605,6 +925,21 @@
     "sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
   },
   {
+    "file": "provenance/SEMANTIC_REVIEW_008.json",
+    "bytes": 28427,
+    "sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+  },
+  {
+    "file": "provenance/SEMANTIC_REVIEW_009.json",
+    "bytes": 107080,
+    "sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b"
+  },
+  {
+    "file": "provenance/SEMANTIC_REVIEW_010.json",
+    "bytes": 163320,
+    "sha256": "fbf4f5ae26035d8c7c146bf95d8b89297d5ea31546637ee7692901f50df3e3ed"
+  },
+  {
     "file": "provenance/SOURCE_CHECKPOINT_004.json",
     "bytes": 13352,
     "sha256": "832c98e28fd3409c217fbd55c29e8022839d426e44215a891d660386d131883c"
@@ -623,6 +958,21 @@
     "file": "provenance/SOURCE_CHECKPOINT_007.json",
     "bytes": 26098,
     "sha256": "90e4652dd92e1fd932d0e9c38ff25103c211e7cbf9701a9154f223dc194ef282"
+  },
+  {
+    "file": "provenance/SOURCE_CHECKPOINT_008.json",
+    "bytes": 29341,
+    "sha256": "f54b7f6486fc8e2ac32e5ee1ea7ce05d9c9744dfa6c4b118aad2dbd798c4c29b"
+  },
+  {
+    "file": "provenance/SOURCE_CHECKPOINT_009.json",
+    "bytes": 37379,
+    "sha256": "db7e8b2a59ef2907bb2ce45799aabdcb4049cc7dba01089945614e6e77da64d1"
+  },
+  {
+    "file": "provenance/SOURCE_CHECKPOINT_010.json",
+    "bytes": 41930,
+    "sha256": "ed5367021b020e3035b4544f4ad9158a12f9987d1bd3aefe87000a7e1d1de140"
   },
   {
     "file": "provenance/SOURCE_CORRECTIONS_003.json",
@@ -650,14 +1000,29 @@
     "sha256": "5384923fdaa5764b683d0712dd4fdf9996c6e4e14d17d171b14fe72feee4492f"
   },
   {
+    "file": "provenance/SOURCE_CORRECTIONS_008.json",
+    "bytes": 6663,
+    "sha256": "5723cbfd0c6f5ae4af7efab4784cadfd942d5033be7debc4a89c769a699d9606"
+  },
+  {
+    "file": "provenance/SOURCE_CORRECTIONS_009.json",
+    "bytes": 9873,
+    "sha256": "c3ce54f888bc1538e0e3589784df177e3e90d24f75779f5943745d92324542ab"
+  },
+  {
+    "file": "provenance/SOURCE_CORRECTIONS_010.json",
+    "bytes": 9025,
+    "sha256": "135afa2d01b588fd1ea05d8e002e0e611b4c7112df0c1a79169d786c59ae8a14"
+  },
+  {
     "file": "provenance/SOURCE_MANIFEST.jsonl",
     "bytes": 355745,
     "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
   },
   {
     "file": "provenance/TERM_DECISIONS.jsonl",
-    "bytes": 297163,
-    "sha256": "0ea1b4d205ed9d52c9f405f1dc3e33349da2ba40839b50477ba5c1c067a2976e"
+    "bytes": 381474,
+    "sha256": "af856b0b198e696c87dce31100bf3b23394186fb6e92560fe4174cc47fcf894f"
   },
   {
     "file": "reader/arithmetization.html",
@@ -745,14 +1110,29 @@
     "sha256": "0721d58b2164784b5de2b7a0c874108ae74552d0684b3ad5eafec82bd9ca5071"
   },
   {
+    "file": "reader/natural-deduction.html",
+    "bytes": 2189523,
+    "sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052"
+  },
+  {
+    "file": "reader/proof-systems.html",
+    "bytes": 1499731,
+    "sha256": "0faf4ffb805478f6d9f38ea745f3fe7e1d20126bd5ec3297e7eb5783ae6328cf"
+  },
+  {
     "file": "reader/propositional.html",
     "bytes": 1418425,
     "sha256": "e253b3271f95c155d7a2f1c6f607102137ed3d8dc93291c48b5641b5dad9d3d6"
   },
   {
     "file": "reader/reader.css",
-    "bytes": 944,
-    "sha256": "15ae2dce9e43eb654252ba7a2c18745095c47e9749e0253504e73ba9558843ad"
+    "bytes": 1020,
+    "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
+  },
+  {
+    "file": "reader/sequent-calculus.html",
+    "bytes": 1849265,
+    "sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479"
   },
   {
     "file": "reader/sets.html",
@@ -766,8 +1146,13 @@
   },
   {
     "file": "README.md",
-    "bytes": 3129,
-    "sha256": "62a0909770d7a8261fc80e643573a3ebbe2913e00863d2eab6310125545a3321"
+    "bytes": 3482,
+    "sha256": "ef5850f50d59cf672c6a42383a9059241d8ca30890a87819270712bc29487955"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Natural-Deduction.pdf",
+    "bytes": 1127178,
+    "sha256": "9cf3db8b374373bdb0f37cefa8ecff9e59db0da5b4a91e5df8df9591cd3b31a3"
   },
   {
     "file": "releases/OpenLogic-gu-Gujr-IN-Propositional-Syntax-Semantics.pdf",
@@ -796,18 +1181,23 @@
   },
   {
     "file": "tools/build_functions_html.py",
-    "bytes": 30398,
-    "sha256": "04f6d385e91b4b07808abe1db8698a37b8edb3672c5057a0eeaf52ddea4f6dd8"
+    "bytes": 46349,
+    "sha256": "95ebf70761cd60769694b8676186d00ec4285c66ef334e6c02b6212c1c2946be"
   },
   {
     "file": "tools/build_sets_guarded.ps1",
-    "bytes": 5035,
-    "sha256": "51d5504d98c3d388cd59ae16fa184f4d22ef3997fb4318522ba2e52b8c5cb9b1"
+    "bytes": 5244,
+    "sha256": "dde2d5125d8fdbd6073b5c79dbc3674c1c12fe525b0c4188c858b41047cf3ff4"
   },
   {
     "file": "tools/build_sets_html.py",
     "bytes": 8369,
     "sha256": "1e80beb25da705e1af4e9ab1507b66f97cd9ba7db46855d62f0d52182aa3e4be"
+  },
+  {
+    "file": "tools/build_translation_decisions.py",
+    "bytes": 57682,
+    "sha256": "a39bcc68371da8d28109cafd84f2a08ca1b2c3e52dccdb360a90e6efe795e8ae"
   },
   {
     "file": "tools/prepare_arithmetization.py",
@@ -830,9 +1220,24 @@
     "sha256": "8279457fdcbce9f989409d767cafd3418f78908c4e96cce410e3bb7ac185b9d7"
   },
   {
+    "file": "tools/prepare_natural_deduction.py",
+    "bytes": 7555,
+    "sha256": "fff60342fe9034c56813700abc0412134c93afbf692ffc4e03a02d50592a3812"
+  },
+  {
+    "file": "tools/prepare_proof_systems.py",
+    "bytes": 4919,
+    "sha256": "4848a606e8ea88adefb17b9ec68ae577c65ac7664877f3412d58d9d07f55958d"
+  },
+  {
     "file": "tools/prepare_propositional.py",
     "bytes": 8232,
     "sha256": "bf8343470d510e328f4f2112cece367b7bf1fa3ecba2c12cb81092235891bf1d"
+  },
+  {
+    "file": "tools/prepare_sequent_calculus.py",
+    "bytes": 6999,
+    "sha256": "3c2aa6a36b3e0386a7a1dbb698db0fd0511a2e63ade425334aad9cfc8b320c31"
   },
   {
     "file": "tools/prepare_sets.py",
