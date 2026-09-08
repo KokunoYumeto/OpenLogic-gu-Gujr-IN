@@ -10,7 +10,7 @@ Preparation covers all 122 aligned source units and writes the cumulative TeX bo
 
 The global mutex `Global\InterlanguageTeXSlotV1` is acquired with a bounded wait and remains held across all three owned LuaLaTeX passes and log checks. Failed acquisition starts no TeX process. Installer access and shell escape are disabled. Only the process captured by this script can be terminated after its timeout. The current axiomatic-deduction build completed all three passes; all three 158-page PDFs are byte-identical at SHA-256 `66379898ed8eb34bfb510d310275264102229928165e26f11a8fd7846e6265bc`. All 158 final pages were rendered with Poppler and visually inspected.
 
-The previously verified 144-page PDF remains published in the First-Order Tableaux v0.5.0 release and preserved as the human-readable preview for Zenodo DOI `10.5281/zenodo.22649735`. The 158-page axiomatic-deduction artifact is the current release candidate.
+The verified 158-page PDF is published in the First-Order Axiomatic Deduction v0.6.0 release and preserved as the human-readable preview for Zenodo DOI `10.5281/zenodo.22652047`.
 
 The same script can reproduce earlier cumulative stages with `-Edition sets`, `-Edition foundations`, `-Edition functions`, `-Edition size`, `-Edition arithmetization`, `-Edition infinite`, `-Edition propositional`, `-Edition proof-systems`, `-Edition sequent-calculus`, `-Edition natural-deduction`, or `-Edition tableaux`. The `axiomatic-deduction` edition is the current 122-unit target.
 

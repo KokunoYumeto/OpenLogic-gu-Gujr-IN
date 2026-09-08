@@ -1,11 +1,11 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-08T01:49:51.169620+00:00",
+  "checkpoint_utc": "2026-09-08T02:06:13.626341+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
   "translated_units": 122,
-  "publicly_verified_release_units": 108,
-  "publicly_verified_source_checkpoint_units": 108,
+  "publicly_verified_release_units": 122,
+  "publicly_verified_source_checkpoint_units": 122,
   "total_units": 722,
   "aligned_linguistic_blocks": 1281,
   "source_math_spans_verified": 6629,
@@ -354,7 +354,7 @@
       "exact_block_reviews": 120
     }
   },
-  "status": "122_unit_source_html_pdf_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_108_units; complete_corpus_in_progress",
+  "status": "122_unit_source_html_pdf_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -370,13 +370,13 @@
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/tableaux-v0.5.0",
-    "github_receipt": "PUBLICATION_RECEIPT_005.json",
-    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_011.json",
-    "zenodo_record": "https://zenodo.org/records/22649735",
-    "zenodo_doi": "10.5281/zenodo.22649735",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_005.json",
-    "status": "all_artifacts_and_pdf_preview_anonymously_verified"
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/axiomatic-deduction-v0.6.0",
+    "github_receipt": "PUBLICATION_RECEIPT_006.json",
+    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_012.json",
+    "zenodo_record": "https://zenodo.org/records/22652047",
+    "zenodo_doi": "10.5281/zenodo.22652047",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_006.json",
+    "status": "all_artifacts_anonymously_verified"
   },
   "batch_008": {
     "draft_units": 6,
