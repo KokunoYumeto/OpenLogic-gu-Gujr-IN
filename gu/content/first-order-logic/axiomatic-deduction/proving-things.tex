@@ -1,0 +1,129 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proving-things
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{pro}}
+      {\olfileid{pl}{axd}{pro}}
+
+\olsection{\usetoken{P}{derivation}નાં ઉદાહરણો}
+
+
+\begin{ex}
+ધારો કે આપણે $(\lnot !D \lor !E) \lif (!D \lif !E)$ સાબિત કરવા
+માગીએ છીએ. સ્પષ્ટ છે કે આ આપણી કોઈ સ્વયંસિદ્ધિનો દૃષ્ટાંત નથી, તેથી
+તેને !!{derive} કરવા આપણે \MP{} નિયમ વાપરવો પડશે. આપણો એકમાત્ર નિયમ
+MP છે; $!A$ અને $!A \lif !B$ આપેલાં હોય ત્યારે તે~$!B$ને પ્રમાણિત
+કરવા દે છે. એક યુક્તિ એ છે કે \olref[prp]{ax:lor3}માં $!A$ તરીકે
+$\lnot !D$, $!B$ તરીકે $!E$ અને $!C$ તરીકે $!D \lif !E$ લઈએ, એટલે કે
+નીચેનો દૃષ્ટાંત લઈએ:
+\[
+(\lnot !D \lif (!D \lif !E)) \lif ((!E \lif (!D \lif !E)) \lif ((\lnot
+!D \lor !E) \lif (!D \lif !E))).
+\]
+શા માટે? MPના બે ઉપયોગથી છેલ્લો ભાગ મળે છે અને આપણને એ જ જોઈએ છે.
+વળી, $\lnot !D \lif (!D \lif !E)$ એ \olref[prp]{ax:lnot2}નો અને
+$!E \lif (!D \lif !E)$ એ \olref[prp]{ax:lif1}નો દૃષ્ટાંત છે, તે
+સરળતાથી દેખાય છે. તેથી આપણી !!{derivation} આ છે:
+\begin{derivation}
+  1. &  $\lnot !D \lif (!D \lif !E)$ & \olref[prp]{ax:lnot2} \\
+  2. & $(\lnot !D \lif (!D \lif !E)) \lif {}$\\
+  &\qquad $((!E \lif (!D \lif !E)) \lif ((\lnot !D \lor !E) \lif (!D \lif !E)))$ & \olref[prp]{ax:lor3}\\
+  3. & $(!E \lif (!D \lif !E)) \lif ((\lnot !D \lor !E) \lif (!D \lif !E))$ & 1, 2, \MP\\
+  4. & $!E \lif (!D \lif !E)$ & \olref[prp]{ax:lif1}\\
+  5. & $(\lnot !D \lor !E) \lif (!D \lif !E)$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\ollabel{ex:identity}
+$!D \lif !D$ની !!a{derivation} શોધવાનો પ્રયત્ન કરીએ. તે કોઈ
+સ્વયંસિદ્ધિનો દૃષ્ટાંત નથી, તેથી તેને !!{derive} કરવા \MP{} વાપરવો
+પડશે. \olref[prp]{ax:lif1} એ~$!A \lif !B$ સ્વરૂપની એવી સ્વયંસિદ્ધિ
+છે જેના પર~\MP લાગુ કરી શકાય. તે ઉપયોગી થાય તે માટે આ કિસ્સામાં \MP{}
+જે $!B$ને યોગ્ય પગલા તરીકે પ્રમાણિત કરે તે~$!D \lif !D$ જ હોવું જોઈએ,
+કારણ કે આપણે આ જ !!{derive} કરવા માગીએ છીએ. તેથી $!A$ પણ $!D$ જ હોવું
+જોઈએ; એટલે આપણે \olref[prp]{ax:lif1}નો નીચેનો દૃષ્ટાંત જોઈ શકીએ:
+\[
+!D \lif (!D \lif !D)
+\]
+\MP લાગુ કરવા માટે તેની અનુરૂપ બીજી આધારવિધિ, એટલે~$!A$, પણ પ્રમાણિત
+કરવી પડે. આપણા કિસ્સામાં તે~$!D$ થાય, અને એકલા~$!D$ને આપણે
+!!{derive} કરી શકીશું નહિ. તેથી બીજી યુક્તિ જોઈએ.
+
+માત્ર~$\lif$ ધરાવતી બીજી સ્વયંસિદ્ધિ \olref[prp]{ax:lif2} છે, એટલે કે
+\[
+(!A \lif (!B \lif !C)) \lif ((!A \lif !B) \lif (!A \lif !C))
+\]
+\MP{}ને બે વાર લાગુ કરીને આપણે છેલ્લા અંતઃસ્થિત પ્રેરણ સુધી પહોંચી શકીએ.
+ફરી તેનો અર્થ એ થાય કે આપણને \olref[prp]{ax:lif2}નો એવો દૃષ્ટાંત જોઈએ
+જેમાં $!A \lif !C$ એ આપણું લક્ષ્ય !!{formula}~$!D \lif !D$ હોય. તેથી
+સ્વાભાવિક રીતે $!A$ અને $!C$ બંને~$!D$ છે. હવે~$!B$ કેવી રીતે પસંદ
+કરીએ જેથી $!A \lif (!B \lif !C)$ અને $!A \lif !B$, એટલે આપણા
+કિસ્સામાં $!D \lif (!B \lif !D)$ અને $!D \lif !B$, બંને પણ
+!!{derivable} હોય? $!B$ જે પણ લઈએ, તેમાંનું પહેલું સૂત્ર પહેલેથી જ
+\olref[prp]{ax:lif1}નો દૃષ્ટાંત છે. અને જો $!B$ને $(!D \lif !D)$ લઈએ,
+તો $!D \lif !B$ પણ \olref[prp]{ax:lif1}નો દૃષ્ટાંત થાય. તેથી આપણી
+!!{derivation} આ છે:
+\begin{derivation}
+  1. & $!D \lif ((!D \lif !D) \lif !D)$ & \olref[prp]{ax:lif1}\\
+  2. & $(!D \lif ((!D \lif !D) \lif !D)) \lif {}$\\
+  & \qquad $((!D \lif (!D \lif !D)) \lif (!D \lif !D))$ & \olref[prp]{ax:lif2}\\
+  3. & $(!D \lif (!D \lif !D)) \lif (!D \lif !D)$ & 1, 2, \MP\\
+  4. & $!D \lif (!D \lif !D)$ & \olref[prp]{ax:lif1}\\
+  5. & $!D \lif !D$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\ollabel{ex:chain}
+ક્યારેક આપણે બતાવવા માગીએ છીએ કે બીજા અમુક !!{formula}sના ગણ~$\Gamma$
+માંથી કોઈ !!{formula}ની !!a{derivation} છે. દાખલા તરીકે, બતાવીએ કે
+$\Gamma = \{!A \lif !B, !B \lif !C\}$માંથી $!A \lif !C$ને
+!!{derive} કરી શકાય છે.
+\begin{derivation}
+  1. & $!A \lif !B$ & \Hyp\\
+  2. & $!B \lif !C$ & \Hyp\\
+  3. & $(!B \lif !C) \lif (!A \lif (!B \lif !C))$ & \olref[prp]{ax:lif1} \\
+  4. & $!A \lif (!B \lif !C)$ & 2, 3, \MP\\
+  5. & $(!A \lif (!B \lif !C)) \lif {}$\\
+  & \qquad $((!A \lif !B) \lif (!A \lif !C))$ & \olref[prp]{ax:lif2}\\
+  6. & $((!A \lif !B) \lif (!A \lif !C))$ & 4, 5, \MP\\
+  7. & $!A \lif !C$ & 1, 6, \MP
+\end{derivation}
+``\Hyp'' (``પૂર્વધારણા'' માટે) લખેલી પંક્તિઓ દર્શાવે છે કે તે પંક્તિ
+પરનું !!{formula} એ~$\Gamma$નું !!a{element} છે.
+\end{ex}
+
+\begin{prop}
+  \ollabel{prop:chain} જો $\Gamma \Proves !A \lif !B$ અને $\Gamma
+  \Proves !B \lif !C$, તો $\Gamma \Proves !A \lif !C$.
+\end{prop}
+
+\begin{proof}
+  ધારો કે $\Gamma \Proves !A \lif !B$ અને $\Gamma \Proves !B \lif
+  !C$. તેથી~$\Gamma$માંથી $!A \lif !B$ની !!a{derivation} છે અને
+  $!B \lif !C$ની પણ~$\Gamma$માંથી !!a{derivation} છે. બંનેને એક પછી એક જોડીને એક
+  !!{derivation} બનાવો. હવે અગાઉના ઉદાહરણની !!{derivation}ની પંક્તિઓ
+  3--7 ઉમેરો. આ~$\Gamma$માંથી $!A \lif !C$ની !!a{derivation} છે;
+  આ સૂત્ર નવી !!{derivation}ની છેલ્લી પંક્તિ છે. ધ્યાન રાખો કે
+  પંક્તિ 4 અને~7નાં પ્રમાણન ત્યારે પણ માન્ય રહે છે જ્યારે પંક્તિ~1નો
+  સંદર્ભ $!A \lif !B$ની !!{derivation}ની છેલ્લી પંક્તિના સંદર્ભથી અને
+  પંક્તિ~2નો સંદર્ભ $!B \lif !C$ની !!{derivation}ની છેલ્લી પંક્તિના
+  સંદર્ભથી બદલી દઈએ.
+\end{proof}
+
+\begin{prob}
+સ્વયંસિદ્ધિઓમાંથી !!{derivation}s રજૂ કરીને બતાવો કે નીચેનું સાચું છે:
+\begin{enumerate}
+\item $(!A \land !B) \lif (!B \land !A)$
+\item $((!A \land !B) \lif !C) \lif (!A \lif (!B \lif !C))$
+\item $\lnot(!A \lor !B) \lif \lnot !A$
+\end{enumerate}
+\end{prob}
+
+
+
+\end{document}

@@ -1,0 +1,149 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proof-theoretic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ptn}}
+      {\olfileid{pl}{axd}{ptn}}
+
+\olsection{સાબિતી-સૈદ્ધાંતિક ખ્યાલો}
+
+\begin{explain}
+આપણે અનેક મહત્વના અર્થાનુસારી ખ્યાલો
+(\iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ}, ફલિતતા અને સંતોષ્યતા) વ્યાખ્યાયિત
+કર્યા છે; એ જ રીતે હવે તેમને અનુરૂપ \emph{સાબિતી-સૈદ્ધાંતિક ખ્યાલો}
+વ્યાખ્યાયિત કરીએ છીએ. આ ખ્યાલો !!{structure}sમાં !!{sentence}sના
+સંતોષનો આશરો લઈને નહિ, પરંતુ અમુક સૂત્રોની !!{derivability} અથવા
+!!{nonderivability}નો આશરો લઈને વ્યાખ્યાયિત થાય છે. આ બંને પ્રકારના
+ખ્યાલો મળી જાય છે એ એક મહત્વની શોધ હતી. તેઓ મળે છે તે જ
+\emph{યથાર્થતા} અને \emph{પૂર્ણતાના પ્રમેયો}નો વિષય છે.
+\end{explain}
+
+\begin{defn}[!!^{derivability}]
+જો~$\Gamma$માંથી મળતી એવી !!a{derivation} હોય જે~$!A$માં પૂરી થાય,
+તો !!^a{formula}~$!A$ એ~$\Gamma$માંથી \emph{!!{derivable}} છે; તેને
+$\Gamma \Proves !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[પ્રમેયો]
+ખાલી ગણમાંથી~$!A$ની !!a{derivation} હોય, તો !!^a{formula}~$!A$
+\emph{પ્રમેય} છે. $!A$ પ્રમેય હોય તો $\Proves !A$ અને ન હોય તો
+$\Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[સુસંગતતા]
+!!{formula}sનો ગણ~$\Gamma$ \emph{સુસંગત} છે જો અને માત્ર જો
+$\Gamma\Proves/ \lfalse$; નહિ તો તે \emph{અસુસંગત} છે.
+\end{defn}
+
+\begin{prop}[સ્વવાચકતા]
+\ollabel{prop:reflexivity}
+જો $!A \in \Gamma$ હોય, તો $\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+  એકલું !!{formula}~$!A$ એ~$\Gamma$માંથી $!A$ની !!a{derivation} છે.
+\end{proof}
+
+\begin{prop}[એકદિશવર્ધિતા]
+\ollabel{prop:monotonicity}
+જો $\Gamma \subseteq \Delta$ અને $\Gamma \Proves !A$ હોય, તો
+$\Delta \Proves !A$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$માંથી $!A$ની કોઈ પણ !!{derivation} એ~$\Delta$માંથી $!A$ની પણ
+!!a{derivation} છે.
+\end{proof}
+
+\begin{prop}[પરંપરિતતા]
+\ollabel{prop:transitivity}
+જો $\Gamma \Proves !A$ અને $\{!A\} \cup \Delta \Proves !B$ હોય, તો
+$\Gamma \cup \Delta \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  ધારો કે $\{!A\} \cup \Delta \Proves !B$. તેથી~$\{!A\} \cup
+  \Delta$માંથી એવી !!a{derivation} $!B_1$, \dots, $!B_l = !B$ છે.
+  એ !!{derivation}નાં અમુક પગલાં યોગ્ય હશે કારણ કે તેમનું પ્રમાણન
+  અગાઉની કોઈ પંક્તિ~$!B_i = !A$નો સંદર્ભ આપતા નિયમથી થાય છે. પૂર્વધારણા
+  મુજબ~$\Gamma$માંથી $!A$ની !!a{derivation} છે, એટલે એવી
+  !!a{derivation}~$!A_1$, \dots, $!A_k = !A$ છે જેમાં દરેક $!A_i$ કાં
+  તો સ્વયંસિદ્ધિ, કાં~$\Gamma$નું !!a{element}, અથવા અનુમાનના નિયમ વડે
+  યોગ્ય છે. હવે નીચેની શ્રેણી વિચારો:
+  \[
+  !A_1, \dots, !A_k = !A, !B_1, \dots, !B_l = !B.
+  \]
+  આ~$\Gamma \cup \Delta$માંથી $!B$ની યોગ્ય !!{derivation} છે, કારણ કે
+  દરેક $!B_i = !A$ હવે એ જ કારણથી પ્રમાણિત થાય છે જે~$!A_k = !A$ને
+  પ્રમાણિત કરે છે.
+\end{proof}
+
+\sourcecorrection{OLAX-004}{મૂળની
+\texttt{proof-theoretic-notions.tex}, પંક્તિઓ 82--83માં દરેક
+$!B_i=!A$ને એ જ ``નિયમ'' પ્રમાણિત કરે છે જે $!A_k=!A$ને પ્રમાણિત કરે છે
+એમ લખ્યું છે. $!A_k$ સ્વયંસિદ્ધિ અથવા~$\Gamma$નું ઘટક પણ હોઈ શકે છે,
+તેથી અહીં વધુ ચોક્કસ ``એ જ કારણ'' લખ્યું છે.}
+
+\sourcecorrection{OLAX-016}{મૂળની
+\texttt{proof-theoretic-notions.tex}, પંક્તિ~82માં સૂત્ર-ચલ~$B_i$
+પહેલાંનો આંતરિક \texttt{!} સંકેત ખૂટે છે, જ્યારે આ જ નિષ્પત્તિની
+અગાઉની બધી પંક્તિઓમાં $!B_i$ લખાયું છે. અહીં એ સંકેત પુનઃસ્થાપિત
+કર્યો છે.}
+
+નોંધો કે ખાસ કરીને તેનો અર્થ એવો થાય છે કે જો $\Gamma \Proves !A$ અને
+$!A \Proves !B$ હોય, તો $\Gamma \Proves !B$. વળી, જો
+$!A_1, \dots, !A_n \Proves !B$ અને દરેક~$i$ માટે
+$\Gamma \Proves !A_i$ હોય, તો $\Gamma \Proves !B$ એવું પણ ફલિત થાય છે.
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ અસુસંગત છે જો અને માત્ર જો દરેક~$!A$ માટે
+$\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+પ્રશ્ન.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][axd][ptn]{prop:incons} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][axd][ptn]{prop:incons} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\begin{prop}[સઘનતા]
+\ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item જો $\Gamma \Proves !A$, તો એવો સાન્ત ઉપગણ $\Gamma_0
+    \subseteq \Gamma$ છે કે $\Gamma_0 \Proves !A$.
+  \item જો~$\Gamma$નો દરેક સાન્ત ઉપગણ સુસંગત હોય, તો $\Gamma$
+    સુસંગત છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item જો $\Gamma \Proves !A$, તો !!{formula}sની એવી સાન્ત શ્રેણી
+      $!A_1$, \dots,~$!A_n$ છે કે $!A \ident !A_n$ અને દરેક $!A_i$
+      કાં તો તાર્કિક સ્વયંસિદ્ધિ, કાં~$\Gamma$નું !!a{element}, અથવા
+      અગાઉનાં !!{formula}sમાંથી મોડસ પોનેન્સ વડે મળતું સૂત્ર છે.
+      $\Gamma_0$ને એવા $!A_i$નો ગણ લો જે~$\Gamma$માં છે. ત્યારે એ
+      !!{derivation} એ~$\Gamma_0$માંથી પણ !!a{derivation} છે અને તેથી
+      $\Gamma_0 \Proves !A$.
+    \item $!A \ident \lfalse$ના વિશેષ કિસ્સામાં આ~(1)નું
+      પ્રતિપક્ષી વિધાન છે.
+\end{enumerate}
+\end{proof}
+
+\end{document}

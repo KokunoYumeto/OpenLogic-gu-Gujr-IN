@@ -1,0 +1,1407 @@
+{
+  "schema": "openlogic-gu-source-checkpoint/1",
+  "prepared_utc": "2026-09-08T01:49:51.789687+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated": 122,
+    "total": 722,
+    "public_release_verified": 108,
+    "previous_public_source_checkpoint_verified": 108,
+    "artifact_policy": "source_checkpoint_precedes_complete_chapter_artifact_release",
+    "pdf": "reproducible_158_pages_all_pages_visually_inspected"
+  },
+  "qa": {
+    "linguistic_blocks": 1281,
+    "source_math_spans": 6629,
+    "semantic_samples": 591,
+    "exact_block_reviews": 1281,
+    "source_corrections": 71,
+    "canon_sources": 18,
+    "canon_passages": 77,
+    "term_decisions": 126,
+    "translation_decisions": 200,
+    "translation_decision_occurrences": 208,
+    "reader_locators_available": 207,
+    "reader_locators_pending": 0,
+    "reader_locators_not_applicable": 1,
+    "html_sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7",
+    "html_browser_status": "passed_actual_live_browser_inspection",
+    "html_block_mathml_checked": 412,
+    "html_block_mathml_clipped": 0,
+    "html_block_mathml_scrollable": 3,
+    "reader_css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+    "pdf_sha256": "66379898ed8eb34bfb510d310275264102229928165e26f11a8fd7846e6265bc",
+    "pdf_pages": 158,
+    "untranslated_scan_sha256": "b742f51a4c670440b715002b67aa1e924dc2aa4d6b0f912c03be73f0a2800350",
+    "cumulative_qa_sha256": "52dc2f2c7d6b430e2b5ee0c94575628f8aff9dc1cc8ac489edb2e09691aa49bf",
+    "translation_decision_qa_sha256": "65802328bcbcaf6a5328fcc82d16dfc9cec3a233c3a34140a059dc2484135406",
+    "gu_prov_001_receipt_sha256": "214503a926eea1861f6217a04aac150d4580ed92cbf64b44b5f006937ea9295f"
+  },
+  "files": [
+    {
+      "path": "docs/BUILD_CUMULATIVE.md",
+      "bytes": 2570,
+      "sha256": "01be4394bfb8b046a0f5ca87e9881e60cdb130faa160b1b217eb6e972cf50e1e"
+    },
+    {
+      "path": "docs/EDITION_NOTES.md",
+      "bytes": 12898,
+      "sha256": "c87df1d09f9e3a96179f6ad4aff6989bb10f00430919328e534b703a022a11db"
+    },
+    {
+      "path": "docs/GUJARATI_EDITION_SCOPE.md",
+      "bytes": 2380,
+      "sha256": "70484e2c5ee23ffa9dba0b3d1361bee402da94917f63d9ba0539ea8eb5d20bf6"
+    },
+    {
+      "path": "docs/TERMINOLOGY_REVIEW_LOG.md",
+      "bytes": 333754,
+      "sha256": "208e6e892ff332eb34dbfaaf95cf1d62cc1d0dd5a42fad374129921d53c44af3"
+    },
+    {
+      "path": "docs/translation-decisions/DECISION_OCCURRENCES.csv",
+      "bytes": 145236,
+      "sha256": "d20140c9f90337bfda27893428f85d375c4267c58fe19c2936771d5995494959"
+    },
+    {
+      "path": "docs/translation-decisions/DECISIONS.json",
+      "bytes": 1435882,
+      "sha256": "a0bea15de6a1f412e4142368e2e93418dc2a8d7faf025582726ad73099ba8be8"
+    },
+    {
+      "path": "docs/translation-decisions/PRIORITY_REVIEW.md",
+      "bytes": 79579,
+      "sha256": "a2da5be06d9860a9cb8b1e0358d776c58590e76245814355a2bb926d49e73ffb"
+    },
+    {
+      "path": "docs/translation-decisions/START_HERE.md",
+      "bytes": 830,
+      "sha256": "a3e2426847aef068ffaa6b0200cac3affe64413edb15fd1ab4b25c1f82482c08"
+    },
+    {
+      "path": "docs/translation-decisions/translation-decision.schema.json",
+      "bytes": 10787,
+      "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+    },
+    {
+      "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "bytes": 2890,
+      "sha256": "65802328bcbcaf6a5328fcc82d16dfc9cec3a233c3a34140a059dc2484135406"
+    },
+    {
+      "path": "docs/translation-decisions/TRANSLATION_DECISIONS_FULL.md",
+      "bytes": 281028,
+      "sha256": "8c8c2ba7bba74e9f56cbc0cc4707fd1c5214041cb0b10b3696a2ed2b84a46dbb"
+    },
+    {
+      "path": "docs/TRANSLATION_DECISION_LOG_METADATA.json",
+      "bytes": 882,
+      "sha256": "3395ea5b034d32a08b3219a25c1e5342f904cee11a138eb57a0f98e7ee936cc6"
+    },
+    {
+      "path": "docs/TRANSLATION_DECISIONS.jsonl",
+      "bytes": 557231,
+      "sha256": "f018239fb070184474e9f33bc5d5df7cff9fe93d6181de9681eb4e1b6a2c91c2"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex",
+      "bytes": 1764,
+      "sha256": "a8beb5984b1b71cfc6211a53e7e30c657c14f7d7cf127af3cf30161d16e15d23"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex",
+      "bytes": 2304,
+      "sha256": "33c9a80b4a926e08c5a03e3f9eb8b32c0355fd61a6adeebf7e28e7b5a67655df"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex",
+      "bytes": 2877,
+      "sha256": "eae7c9239fdbbfc1de118279c2e6729d1570edc018a15641a14e16842ec86157"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+      "bytes": 4087,
+      "sha256": "161b3919783ad57e965b1c608e8b4b4847a9770ecce817b440b1dc2e3dac8463"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+      "bytes": 7954,
+      "sha256": "b557deada5a7da1e9a3f27f805c4df14a48521fb2bb5a6f87d7f2a8c0fff02ff"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/identity.tex",
+      "bytes": 2555,
+      "sha256": "376bfd806ca894c1b467ce19eee52d2c7eb80e11b7d3bad13d3635e80af34096"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+      "bytes": 7698,
+      "sha256": "8ddc8f4fb15873b3cc76d6ae3ab42aacc3cddea451f2f22cead67d87178189d3"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/provability-consistency.tex",
+      "bytes": 3842,
+      "sha256": "3a58b9b96caeabdb045993f712d8c8d8a3e2074e586c485ba97a650fa6fcd272"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex",
+      "bytes": 4649,
+      "sha256": "7a2a9e65285fe271a219bbbdcb5e4b332d1c926fee73bafb8ca7c97133a129b4"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex",
+      "bytes": 2917,
+      "sha256": "be284680373f418e0e888a7af7ea72e92cb6cf683d61854aaa4cfd0fb692758f"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/proving-things-quant.tex",
+      "bytes": 1914,
+      "sha256": "3103ce75fce8ac4d81d9df726c1b2b31ab67aab8c39d96314fb7cf129199a4a3"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/proving-things.tex",
+      "bytes": 8228,
+      "sha256": "459e8e6c3b50ae533741c28d15c49e42f4308395fff6f6e45e0668712838ce73"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/rules-and-proofs.tex",
+      "bytes": 6276,
+      "sha256": "ab7348dffd7001a526285e5d6a6d087576a2f90b4a7daf749695cb49a1a32148"
+    },
+    {
+      "path": "gu/content/first-order-logic/axiomatic-deduction/soundness.tex",
+      "bytes": 11641,
+      "sha256": "b6f1511cf1883217a4868139dceaa296731590635da137084f2e503073c98165"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/derivations.tex",
+      "bytes": 5686,
+      "sha256": "74fa3a53b06ba3d36cb960f35c4a1401ed4b1ff13eac9cd702feb6ac17bc8de4"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/identity.tex",
+      "bytes": 4785,
+      "sha256": "5d1c6195378045cc4c0f62b5f10918b23de5b23e4921020d987ca5887daf32eb"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/natural-deduction.tex",
+      "bytes": 1313,
+      "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "bytes": 7560,
+      "sha256": "42280456f97a71e0a4892c6bcd91ae14ea3411607ef9dcf12156c07abe7cf43e"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/propositional-rules.tex",
+      "bytes": 2991,
+      "sha256": "cb8cefaed9c4454d89002d91ae598fc3038c607c39ef22eab86876018835f13a"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/provability-consistency.tex",
+      "bytes": 5032,
+      "sha256": "453fb54b8f57da9a8516aaebf205f28b1effccdae0ceaedb11daa241f61fdc05"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/provability-propositional.tex",
+      "bytes": 4605,
+      "sha256": "8718b537202685612cc38e0122f36eeafd3a716ba91712eda14442c0dd331607"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/provability-quantifiers.tex",
+      "bytes": 2140,
+      "sha256": "3b8cdbedfb4984e32ab5f88b349fc8ceb84fbc6f8f609a123439170e45016569"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/proving-things-quant.tex",
+      "bytes": 14046,
+      "sha256": "d209af97317ad61cc26a4da1cd40366e592b982c6b7f429c77070ed698e7b81a"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/proving-things.tex",
+      "bytes": 15678,
+      "sha256": "ff8d304b76983fd480a52086a4c2fbf9f9f0f4659df28c8822ee743a803eadd3"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/quantifier-rules.tex",
+      "bytes": 5889,
+      "sha256": "c6fc4e35e785a0c715e8787f3341ca7d0105800a3d9a4d5f1fc0758a315d314c"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex",
+      "bytes": 4038,
+      "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/soundness-identity.tex",
+      "bytes": 2418,
+      "sha256": "805d1fd43db3d1652190cae1360265c8fcf66d4824d1f9ec99e626ab142ef857"
+    },
+    {
+      "path": "gu/content/first-order-logic/natural-deduction/soundness.tex",
+      "bytes": 19261,
+      "sha256": "23055ad895028174f53f9061f2724fdd4f8df49941d2d085216c4bda6d32cbb8"
+    },
+    {
+      "path": "gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex",
+      "bytes": 8001,
+      "sha256": "83ee5b0f14053eaa0b81be7ff1c8d6a20f4993fb5a60f1c3c79db4114bae5937"
+    },
+    {
+      "path": "gu/content/first-order-logic/proof-systems/introduction.tex",
+      "bytes": 10755,
+      "sha256": "1b84a55e723ee46dbbc3703c635e010a63a12f7e1015b956874cab45e9385ad8"
+    },
+    {
+      "path": "gu/content/first-order-logic/proof-systems/natural-deduction.tex",
+      "bytes": 9331,
+      "sha256": "ef088e5f8594092cf8410502829ab7686231f9f7d7e44d7f42b5b124720ff356"
+    },
+    {
+      "path": "gu/content/first-order-logic/proof-systems/proof-systems.tex",
+      "bytes": 990,
+      "sha256": "9bedb80b99a48fe0030d908ede634330cb59c94d41c8fb1cdc9997505f7513f0"
+    },
+    {
+      "path": "gu/content/first-order-logic/proof-systems/sequent-calculus.tex",
+      "bytes": 5822,
+      "sha256": "91f89402c36aacf95aac325abee69ee78c588149b34c164023d9ceff86cb1581"
+    },
+    {
+      "path": "gu/content/first-order-logic/proof-systems/tableaux.tex",
+      "bytes": 8054,
+      "sha256": "90f2d849c025a41ac4dbc059ac423c60522c38990194c87bc9d1173df149219c"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/derivations.tex",
+      "bytes": 6395,
+      "sha256": "066aa7a3c19e60fe27b845d75b61470094d45476c33f5e98a536c15894802c9b"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/identity.tex",
+      "bytes": 3037,
+      "sha256": "b5ac3bb21297c57cf0ceac81ad9830660a405d8a7f0e85612203d140195de3ce"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+      "bytes": 9620,
+      "sha256": "4198b3cbe7c82641e4b723e334b3ec2c81ddc6d29242fd8638a2d0ec9ee81ec3"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/propositional-rules.tex",
+      "bytes": 2143,
+      "sha256": "5f59cd63806abff56da31387a7d0a60cd3fe8d9b886b2533b99f6dfb9e98e468"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/provability-consistency.tex",
+      "bytes": 5117,
+      "sha256": "6c4ee39e5ef9ca994b11aaae70f97ebf13321136fec92efb428306715564008b"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/provability-propositional.tex",
+      "bytes": 5224,
+      "sha256": "4dc62f514c7ec8c5fe250e15f069def17a88abdcf80b503d4df1ef3f8246bed1"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/provability-quantifiers.tex",
+      "bytes": 2190,
+      "sha256": "cb829b91154ac68a4f7e54f84e846af00e592e5f8031d569563769b18a1e13e6"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/proving-things-quant.tex",
+      "bytes": 6303,
+      "sha256": "1b77230ef3f2f7530a831e883c765297673526b7e25634fba67444d0b1c05ddd"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/proving-things.tex",
+      "bytes": 17484,
+      "sha256": "547fbb9dc4bae7a4f347834882cefe4e784f17580d2213214ddb79a8d0d8102f"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex",
+      "bytes": 5437,
+      "sha256": "cf8a8004fb325e0683c5a988102e4c65286de06abee4bea50daba8780cb8f6da"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/rules-and-proofs.tex",
+      "bytes": 5257,
+      "sha256": "e6005222aecfa0b29d7fd24bf05840a32be40ca629df36dc714e8f709172fb56"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/sequent-calculus.tex",
+      "bytes": 1538,
+      "sha256": "7d8589a109c7ad7a40c19893b4a81dcc50bf3476b0ff13c515b8f9ac69ae9cb1"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/soundness-identity.tex",
+      "bytes": 2772,
+      "sha256": "f8c0daf3e88c73edbf1a03893faab40e49b79d4dc5fa3dfaefa453b71a954d3c"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/soundness.tex",
+      "bytes": 28947,
+      "sha256": "4d11d1ccf5f7ab9f2382de0c6971a8405286ecfc3a9da004f4f19cd141fec441"
+    },
+    {
+      "path": "gu/content/first-order-logic/sequent-calculus/structural-rules.tex",
+      "bytes": 2972,
+      "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/derivations.tex",
+      "bytes": 5758,
+      "sha256": "ab3b0a870d525142eadb634782f17b4b02e16233a2fb7076e8364997fab6f249"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "bytes": 5340,
+      "sha256": "b31dd806e3355a74f544de6d189bc6e67cca39c665e43369b7b95f265289276d"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "bytes": 8635,
+      "sha256": "05a2f37ff1201fab781e5dd0faba149daa056a37869e04e36904057edebc4777"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "bytes": 2812,
+      "sha256": "afe086d6335d944e65dec9b850f68cc534314959bdbd5912cf1e155af0f51c9e"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "bytes": 10035,
+      "sha256": "06fb3b1be5d82522eaaab3e975f208e4884c05c5a67ba5d0d7e0b2aadabd50eb"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "bytes": 7988,
+      "sha256": "bc4f46f02a764209aa652aea1031be8fe0e2496f86cd5272b081896e20a56693"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "bytes": 4215,
+      "sha256": "9786a809d09d6b8b12a92bd934667dd94b6caab9b1608be98abf75b7b16ae4dc"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "bytes": 16206,
+      "sha256": "507e1d84778eb6285d403ca60aefb5f0410f0416128a4218b915a9a71c49594a"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "bytes": 22616,
+      "sha256": "18e0c01c0b070c994c9c640539da0ea31b7adb6fd014032213e0fea16033eb81"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "bytes": 5095,
+      "sha256": "c657f990061b510daa793271728b18d0931dc3fa52e46b34cd97d8e786dfcf2f"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "bytes": 4549,
+      "sha256": "8786ebdd5c37b0a06601f43d1d12b6f01d69d355baaf377ee83cd278de4f4711"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/soundness-identity.tex",
+      "bytes": 2981,
+      "sha256": "7a0cf8db202a3dbcb17fb8903f28a79a0f28c10900612b44868e7592d7f4a1c3"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "bytes": 17611,
+      "sha256": "291222506a17a5547b8e8b90b0ead8de9b77c8c3b6153839ad28ce3173c3a9a3"
+    },
+    {
+      "path": "gu/content/first-order-logic/tableaux/tableaux.tex",
+      "bytes": 1658,
+      "sha256": "a3e7ac8d0723cce7fe690054403a03f6be495a5a3cbf8f9a2f97f6ca0d378dc7"
+    },
+    {
+      "path": "gu/content/propositional-logic/propositional-logic.tex",
+      "bytes": 2224,
+      "sha256": "697e72162149ae29919295d7c119fc39af34a2d30c9400fe953bf63177b29d0b"
+    },
+    {
+      "path": "gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex",
+      "bytes": 8898,
+      "sha256": "eb4cdbd2f1f8f7e1301dbedf18589ab7decf4da152b2454ad531fc462f98da23"
+    },
+    {
+      "path": "gu/content/propositional-logic/syntax-and-semantics/formulas.tex",
+      "bytes": 11750,
+      "sha256": "759ce2b24633dbdbbf798103b980025599bc741377792cad68c1f069a7c66701"
+    },
+    {
+      "path": "gu/content/propositional-logic/syntax-and-semantics/introduction.tex",
+      "bytes": 8384,
+      "sha256": "61450ada961d937f92f0cd8bb3172018e5d35a37203ed79a454b4d611b800556"
+    },
+    {
+      "path": "gu/content/propositional-logic/syntax-and-semantics/preliminaries.tex",
+      "bytes": 6306,
+      "sha256": "6e09c7fb6471727b1428cef8a3a2924baf47ad361c153244f3b11bdb0025e4e0"
+    },
+    {
+      "path": "gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex",
+      "bytes": 4252,
+      "sha256": "eee3e29aee65e0c560a6ab8f10de6f6c8bda20bc17bf6fc99533b0ee2d87b397"
+    },
+    {
+      "path": "gu/content/propositional-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "bytes": 821,
+      "sha256": "66d77e0969cb525423d6ffd7ef6b08916e99f26d4ab58eb876b757b9e5b01031"
+    },
+    {
+      "path": "gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex",
+      "bytes": 7533,
+      "sha256": "ee98b21402ea405ccc242b8a7b046ebb5105c437043b34fa3548380a97a9b03b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/arithmetization.tex",
+      "bytes": 767,
+      "sha256": "4209ef7f37bcc7515f27da3a5125c20ed5fa79ce2751a00a7fb42f8b1687ad6f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/cauchy.tex",
+      "bytes": 21263,
+      "sha256": "08fd34248ef36f5e12d234f75f76e88383e8b81eca37862d4f6788bc976e7d34"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/checking-details.tex",
+      "bytes": 14120,
+      "sha256": "77b13461dc42a8d952431a1987a8134c972df7d7b8f06c404e20343d7e9a440f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/cuts.tex",
+      "bytes": 10147,
+      "sha256": "4c561ba8bc656647400630dd331bc68ed1f4eb170eb9ab4cb7253303306b4565"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/integers.tex",
+      "bytes": 9515,
+      "sha256": "7d83ece86825d8835020a9b0bcf87788f04d4459bf1aa290e069f92118104bbf"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/rationals.tex",
+      "bytes": 6452,
+      "sha256": "3679f4a3d9a09466b28cfe9543479a720522cc1b38a6c935b09866c73200ee94"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/reals.tex",
+      "bytes": 8992,
+      "sha256": "aa1466013eb5df4e221b2ffe9ae79e66b1b159c52e351d3ad89d4950fcccf6ee"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/arithmetization/reflections.tex",
+      "bytes": 10711,
+      "sha256": "ef1c7039bc8d1ad4600447e349864b8fbe435b3c95d6b4dd232c5bf9521dfa8b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/composition.tex",
+      "bytes": 3920,
+      "sha256": "335ed06479d8ac82043ddb3fe3cfcf13a28fc060bcfb5812d6595bef832e3195"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/function-basics.tex",
+      "bytes": 11473,
+      "sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/function-kinds.tex",
+      "bytes": 6257,
+      "sha256": "3255e9aba2a04f71c6c86aefdb14438c345a8105b69c545220ccaf69fd397f7e"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/functions-relations.tex",
+      "bytes": 8136,
+      "sha256": "b348c926961347405fb3589274e0ad70c027d84e9c92f745e378734199b0c909"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/functions.tex",
+      "bytes": 408,
+      "sha256": "254a1e289685133893c599e379c0b5fc9d6bb747483a90ad30780e6e29ea7333"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/inverses.tex",
+      "bytes": 13244,
+      "sha256": "d782d6872d682641ec8ccd156efcfce26b78dc81d2ce0155297cb0e17c22de5c"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/functions/partial-functions.tex",
+      "bytes": 4566,
+      "sha256": "59a4c449acea7ed67a295bacded5a4d0d177ff5be56ec383ee1f55d3536330f8"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/card-sb.tex",
+      "bytes": 7312,
+      "sha256": "630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/dedekind-algebra.tex",
+      "bytes": 8942,
+      "sha256": "8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/dedekind-induction.tex",
+      "bytes": 5938,
+      "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/dedekinds-proof.tex",
+      "bytes": 12264,
+      "sha256": "c22dc425e4688da45ff2573876a7e4072e493f2cf411436fdb9567a46fa031d4"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/hilberts-hotel.tex",
+      "bytes": 4346,
+      "sha256": "4508359b21e4b13bb5340322aebb967117544ba82dcce95eba802d8cc8a7c904"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/infinite/infinite.tex",
+      "bytes": 548,
+      "sha256": "5583ad311e2f5003a5f46e9c59d0bcb2da3456aef710e50a3b629571ed666ff7"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/equivalence-relations.tex",
+      "bytes": 5531,
+      "sha256": "1ecb10dd8641f2237298cefbafa8100c07f2f8f06d558f538e5b6d32de1343b3"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/graphs.tex",
+      "bytes": 4858,
+      "sha256": "290b9c1f9ecd86be9b20ce20bd0160eba67008e083370b8c159e3fb24c2cd641"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/operations.tex",
+      "bytes": 3525,
+      "sha256": "8baad1e3ebf355a5c5195bab8f6a9060126934153bd3830b6d68fafa4306831b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/orders.tex",
+      "bytes": 10935,
+      "sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/reflections.tex",
+      "bytes": 8000,
+      "sha256": "65505e647ccb1492de0bc1d7c60bae8b1cc9d986221117daf91f3ab0d1c703ee"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/relations-as-sets.tex",
+      "bytes": 9236,
+      "sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/relations-complete.tex",
+      "bytes": 419,
+      "sha256": "f992858641a0783491b622b5f69eb3b78d7baf310687139a6edf6ec32f1cce5b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/special-properties.tex",
+      "bytes": 5670,
+      "sha256": "c738b8f1648d9f4aa32cb4efcad04e3ec3fbf2251c735abf508754abab82fb84"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/relations/trees.tex",
+      "bytes": 9388,
+      "sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/basics.tex",
+      "bytes": 8014,
+      "sha256": "2cd3cb8c290c5b1a9e969db7d41eb8e2eb451035ef3511cc8c0ae9bf02ff6de1"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/important-sets.tex",
+      "bytes": 4647,
+      "sha256": "04268d7451f2610594b244a9ba8b20c37a608c8c34b40ec6bac8892c3b5eeaee"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/pairs-and-products.tex",
+      "bytes": 7879,
+      "sha256": "aa9a7b740875860a3af42fb205b6cacc08d4c364487677797dcb197129585c64"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/russells-paradox.tex",
+      "bytes": 7713,
+      "sha256": "6946b2ff400e46866f64e91253e6d319c83c04c43d182c4dc701bf870965c002"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/sets.tex",
+      "bytes": 362,
+      "sha256": "75a3605b435b121adb3686240cb502c88dfb2f608bc241e4cf281b21722e45cd"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/subsets.tex",
+      "bytes": 6265,
+      "sha256": "782cca88ad1be7f99828292ce9f506716d3b0ba6ae8f7cc8ee45ac6731f0fb74"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/sets/unions-and-intersections.tex",
+      "bytes": 9550,
+      "sha256": "479a866032c9eae22230d376f546944bc9e67e7852575dd0dd39aa30fb335a81"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/comparing-size.tex",
+      "bytes": 12351,
+      "sha256": "cf50fcd95edeadb0e27343b90e92c238c4b53c6e8bc8bcbd65c53fe1ca4a51dd"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex",
+      "bytes": 8115,
+      "sha256": "5bea908c829dcd500d91810a033fcb46dd399e4a13cd28a144545b6687639002"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/enumerability.tex",
+      "bytes": 21372,
+      "sha256": "ae95ab24ac3c3306d59b0367ad1b3448883afe73a034510ca724ba59f0ee505d"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+      "bytes": 7082,
+      "sha256": "6fbd4a47047c24d9dc2f53b708812801075de97462a139f0ae6b7852a0bac85b"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/introduction.tex",
+      "bytes": 2111,
+      "sha256": "fb13e311d0f0ee0e624440a22c42d779b80ad6aa6e6269337ac48c517f607426"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "bytes": 12922,
+      "sha256": "bbf7f9fe3a894044e816432156c06a083dbf4e7aa5b8899e35c00cb28003520f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/non-enumerability.tex",
+      "bytes": 15720,
+      "sha256": "bce8320a7d3364019ba9f17a97611a5a0de943647cbc4ba845bf615ef26494b4"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex",
+      "bytes": 7239,
+      "sha256": "40904100170476dac400d273c4eceddc5750aacd22d4d383bffaed2604c9a9a8"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/pairing.tex",
+      "bytes": 7702,
+      "sha256": "d647d28c903c54c4a3aa2aefe711ad620b4b4a34249428234d50752edabf3ba6"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex",
+      "bytes": 10572,
+      "sha256": "1c0dd4b5ba5d8c82b6e9620c34080cd16728323f5dc44d74fab7c10f69d7c18d"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/reduction.tex",
+      "bytes": 10524,
+      "sha256": "f87e04b6c9b161fd013d69c12446a5de4a81cf9a2fbbb944c37a49e3c9fe7653"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
+      "bytes": 3667,
+      "sha256": "7f481c83f2e1e975c0935282cf02bbd2405b19672fd1e604301386a6c979f343"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex",
+      "bytes": 2445,
+      "sha256": "c9c72f5d8f757480b06cb58eacf53351395ab9ca09442d5273d7928a36f7162f"
+    },
+    {
+      "path": "gu/content/sets-functions-relations/size-of-sets/zig-zag.tex",
+      "bytes": 6079,
+      "sha256": "92267db5ab4560c2a1f3786ee174caeed444c59983cf2c63d0a452fb8a254923"
+    },
+    {
+      "path": "gu-arithmetization.tex",
+      "bytes": 7746,
+      "sha256": "ae3cfda284036d93a89bd7c9afba7ad233f3c0d39c9adc9902fef1cffe3a42f7"
+    },
+    {
+      "path": "gu-axiomatic-deduction.tex",
+      "bytes": 2766,
+      "sha256": "0e73923b705e9ffdfa339f3ae8bf80a1e60752a3ce837c006487515590b29f3b"
+    },
+    {
+      "path": "gu-foundations.tex",
+      "bytes": 4653,
+      "sha256": "691670e262141da47f6683035ea7649902fde840d2c1b90b5873bf38213bd5da"
+    },
+    {
+      "path": "gu-functions.tex",
+      "bytes": 7074,
+      "sha256": "7ebd25687f6ac55be9134ea4a13bca9dedecc0192ce441993a80ab705ff3b5cb"
+    },
+    {
+      "path": "gu-infinite.tex",
+      "bytes": 8236,
+      "sha256": "1b848de0e0983cd7c4d7b906284cec612c79f1d59f50a629adc2ad533fa6285e"
+    },
+    {
+      "path": "gu-natural-deduction.tex",
+      "bytes": 18081,
+      "sha256": "c5d3cc8eca851c39b7505e0ea387f3a2a317308050d1620e4a9fc8e30b7ca312"
+    },
+    {
+      "path": "gu-proof-systems.tex",
+      "bytes": 14442,
+      "sha256": "fb33996e9437f50b47a3c3adac8efbbced111dd3b83b5b9be93e20c075d39cf8"
+    },
+    {
+      "path": "gu-propositional.tex",
+      "bytes": 10372,
+      "sha256": "bb2c54c695a1286c71cec877165e63ce6e07399e6a9e7b806c2e2d11753e4501"
+    },
+    {
+      "path": "gu-sequent-calculus.tex",
+      "bytes": 17403,
+      "sha256": "698b5062be72bef439ffbacce4f3b79b8ecd17e1fef659a0d65323c32caefac8"
+    },
+    {
+      "path": "gu-sets.tex",
+      "bytes": 4951,
+      "sha256": "6625883496f6ae887fa8c3d60f137d2493f114eb6aa4f4d6b4f81ac5e49aa07f"
+    },
+    {
+      "path": "gu-size.tex",
+      "bytes": 5981,
+      "sha256": "d9d790c4afb8b0ee504373d31a8e16a32ba8eb2d74f9868f309af8006702c5a0"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 19132,
+      "sha256": "757be5720aa814f66e36126a39763ee2fc7e4abe4f1cc390f8bd1dbf6738d981"
+    },
+    {
+      "path": "provenance/BATCH_001.json",
+      "bytes": 2650,
+      "sha256": "0362c1e67e9889d36c875bc55f70130c98e51de68330cf86a03dc72c6cccd1b6"
+    },
+    {
+      "path": "provenance/BATCH_002.json",
+      "bytes": 4153,
+      "sha256": "dc3d0025b7a93b4acdc7d2b2ab88ad6450ee452a51c92cc0b8c88c4f52556168"
+    },
+    {
+      "path": "provenance/BATCH_003.json",
+      "bytes": 4463,
+      "sha256": "4894f329923a20e009047297eb0930445c21a4098f980025ebfde1f223f2759c"
+    },
+    {
+      "path": "provenance/BATCH_004.json",
+      "bytes": 8065,
+      "sha256": "9ace007e6d46b3000082822d36577a3e629c7a993bca4376c2cba1676b91587e"
+    },
+    {
+      "path": "provenance/BATCH_005.json",
+      "bytes": 4249,
+      "sha256": "ee7ec0329898479a8e1be2c94fa4a4ddfaed3d794ffb834c1207e19f3b711552"
+    },
+    {
+      "path": "provenance/BATCH_006.json",
+      "bytes": 3172,
+      "sha256": "2390cf50e41513de38e651d92516c5133cf9800b85d36a8e3fe92e00fa2443fb"
+    },
+    {
+      "path": "provenance/BATCH_007.json",
+      "bytes": 4395,
+      "sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de"
+    },
+    {
+      "path": "provenance/BATCH_008.json",
+      "bytes": 4429,
+      "sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649"
+    },
+    {
+      "path": "provenance/BATCH_009.json",
+      "bytes": 8690,
+      "sha256": "f93547c6b6596cb30d0d6dacd1a68a42c132a76251537f7c09eed4e348651f63"
+    },
+    {
+      "path": "provenance/BATCH_010.json",
+      "bytes": 8116,
+      "sha256": "faab0957fd94b21971476b90acf0ebd7b26a8f590ed2b256fcdb044c033815ac"
+    },
+    {
+      "path": "provenance/BATCH_011.json",
+      "bytes": 8928,
+      "sha256": "cb83e453c3f1385ef41ba4a23b3cce5b6d6f0717007f2e5b11bfb4e594080c96"
+    },
+    {
+      "path": "provenance/BATCH_012.json",
+      "bytes": 10073,
+      "sha256": "5d67145aa20c1ecef3679d80f6228cbbb8565617f8f0b7b2412e4775721c0f00"
+    },
+    {
+      "path": "provenance/BUILD_RECEIPT_007.json",
+      "bytes": 3040,
+      "sha256": "9aa7ea3a4ecada27d9e9bde657ffb6a380d5ad6d34f240395656a0923ce84b51"
+    },
+    {
+      "path": "provenance/BUILD_RECEIPT_008.json",
+      "bytes": 2287,
+      "sha256": "62684e96835b2ed75411fadc87c4c0266b1bf210b9dad0bb4aacf33cfed791ae"
+    },
+    {
+      "path": "provenance/BUILD_RECEIPT_009.json",
+      "bytes": 5491,
+      "sha256": "6596e47634f335cb648205e37fa125af47a83176209db29593168603aa13734c"
+    },
+    {
+      "path": "provenance/BUILD_RECEIPT_010.json",
+      "bytes": 8306,
+      "sha256": "2cb75087c375c72e339b2ad71f2c578d525983c9049a5233d07c88bcfd0c45ab"
+    },
+    {
+      "path": "provenance/BUILD_RECEIPT_011.json",
+      "bytes": 11689,
+      "sha256": "b2355a578211ae5750008b32b1262ce8f4333813dcd194b78983fca605269aca"
+    },
+    {
+      "path": "provenance/BUILD_RECEIPT_012.json",
+      "bytes": 13279,
+      "sha256": "fff026a1984184d53821d6581a53f31c3d2f131d96595cc226a11006a2e9dd70"
+    },
+    {
+      "path": "provenance/CANON_PASSAGE_SCHEMA.json",
+      "bytes": 1384,
+      "sha256": "544837e0f014324ea40110c932c6cf7e35355d31bfb8fbb01ce1d073e77be819"
+    },
+    {
+      "path": "provenance/CANON_PASSAGES.jsonl",
+      "bytes": 71758,
+      "sha256": "f571baa94a6ff02a2a4ef20c5641a6c5e6c23339d2c3cda1afaa044881242ffb"
+    },
+    {
+      "path": "provenance/CANON_SOURCES.jsonl",
+      "bytes": 12190,
+      "sha256": "5905aeac13fc02f2a4c1db5f09a6678c21f6b1895ebd38ec6fab48e0cd29a4f6"
+    },
+    {
+      "path": "provenance/COVERAGE.json",
+      "bytes": 194591,
+      "sha256": "60ab48dc492409711b3d096daf30ae12a5aaad1e4f7fa45dc329c5e8fc9ea817"
+    },
+    {
+      "path": "provenance/CUMULATIVE_QA_012.json",
+      "bytes": 10418,
+      "sha256": "52dc2f2c7d6b430e2b5ee0c94575628f8aff9dc1cc8ac489edb2e09691aa49bf"
+    },
+    {
+      "path": "provenance/GU_PROV_001_RECEIPT.json",
+      "bytes": 14059,
+      "sha256": "214503a926eea1861f6217a04aac150d4580ed92cbf64b44b5f006937ea9295f"
+    },
+    {
+      "path": "provenance/HTML_QA_003.json",
+      "bytes": 1629,
+      "sha256": "b27df06ee08408983d7ddea062918684797ab477fe208e8afd91090799095fa2"
+    },
+    {
+      "path": "provenance/HTML_QA_004.json",
+      "bytes": 2796,
+      "sha256": "7b4f1c3af298144cf08afae80cd272ed47335419843530362cf19f099e1415df"
+    },
+    {
+      "path": "provenance/HTML_QA_005.json",
+      "bytes": 3554,
+      "sha256": "c8521f34a98c2f3030018f8a72e85a5cc7ecbdd2afaad72c2dcdc842d4430bb4"
+    },
+    {
+      "path": "provenance/HTML_QA_006.json",
+      "bytes": 4092,
+      "sha256": "b2ac28e4f98703e2a3b0dbb83f6c37d3cdb966a6d18f70e0bc298ca16dc25ded"
+    },
+    {
+      "path": "provenance/HTML_QA_007.json",
+      "bytes": 3776,
+      "sha256": "00137d5323f29289482f6538c0e0aeb717c78910c023793feb818ad788a66568"
+    },
+    {
+      "path": "provenance/HTML_QA_008.json",
+      "bytes": 3625,
+      "sha256": "6c2d104293b44b99c9ac0d0edf35af41d516a49ef4c88accf7d347ada38480e8"
+    },
+    {
+      "path": "provenance/HTML_QA_009.json",
+      "bytes": 4983,
+      "sha256": "6ca31c21d52ef2df525a1b40c0c32a89ff2d0779c88ff3377b381cfaa8eaa75e"
+    },
+    {
+      "path": "provenance/HTML_QA_010.json",
+      "bytes": 5513,
+      "sha256": "7736a45375233fb2b90c78848749a09e3f03adac288b5f215ecc86f159997f15"
+    },
+    {
+      "path": "provenance/HTML_QA_011.json",
+      "bytes": 7096,
+      "sha256": "087f07b188bf5a9f88652fafdbcef9d2e5a906b7eb9a37cbed06f77c18baa9bc"
+    },
+    {
+      "path": "provenance/HTML_QA_012.json",
+      "bytes": 7630,
+      "sha256": "5fd2631a6cacbfec6880e385a7e19ff8be479348a06bad1bc25dd5762b44190d"
+    },
+    {
+      "path": "provenance/LAPTOP_CANON_RECONCILIATION.json",
+      "bytes": 7991,
+      "sha256": "aa6d3f2924caed6c37b7c4052464fa99caa2781e4a289e3a0e2b490069f11967"
+    },
+    {
+      "path": "provenance/PARITY_001.json",
+      "bytes": 3058,
+      "sha256": "8f5fdc6f9faadec7337aa8e0c3b405f260108b40067f7f740d9c8cdae1deccd6"
+    },
+    {
+      "path": "provenance/PARITY_002.json",
+      "bytes": 5532,
+      "sha256": "5d3582bf433f68e8b3ee7397a0a2aa39b4a7b3b2e57426092d62f35483e9336d"
+    },
+    {
+      "path": "provenance/PARITY_003.json",
+      "bytes": 5855,
+      "sha256": "fba5339c85f146b9270c42efc20b1a43ad90a7fa0f6231218eff0ea0708ffbd5"
+    },
+    {
+      "path": "provenance/PARITY_004.json",
+      "bytes": 12585,
+      "sha256": "00351652aff40be421b9289b71f1e364ccf46f32e177e481d35426e4f434de17"
+    },
+    {
+      "path": "provenance/PARITY_005.json",
+      "bytes": 8615,
+      "sha256": "31be605bce3851cd86cdfc94f4c9f668db8aa65b67f239dfba8fed215af2292a"
+    },
+    {
+      "path": "provenance/PARITY_006.json",
+      "bytes": 6340,
+      "sha256": "ebcd7baa93ec045d3d8155eaee098cc16c0e10be9f9b45418a1fc3cb75a9367d"
+    },
+    {
+      "path": "provenance/PARITY_007.json",
+      "bytes": 8189,
+      "sha256": "faf2acf1362c7ef855cba69bf1cb7443a18643ffd28c3e2147acbaae015e431f"
+    },
+    {
+      "path": "provenance/PARITY_008.json",
+      "bytes": 7443,
+      "sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05"
+    },
+    {
+      "path": "provenance/PARITY_009.json",
+      "bytes": 18065,
+      "sha256": "b4d4e9c9f0713880284e433861baf6f1c280320b2ea12f9498919bc7b41480e7"
+    },
+    {
+      "path": "provenance/PARITY_010.json",
+      "bytes": 17065,
+      "sha256": "08ba538a84366be545f7d1491ffc05d7263ad530c0f6b1a5c6baf81f78f8651a"
+    },
+    {
+      "path": "provenance/PARITY_011.json",
+      "bytes": 17919,
+      "sha256": "24cf315353f42d50d31c6323c1be342c582aa0b18b470fbafe13e2a8c491192c"
+    },
+    {
+      "path": "provenance/PARITY_012.json",
+      "bytes": 21794,
+      "sha256": "09cfe17255579f41feffe726c0c410442fce01415866992681a1933daa273e2e"
+    },
+    {
+      "path": "provenance/PDF_QA_007.json",
+      "bytes": 15577,
+      "sha256": "900b4f70732cbf31698ab8f800df0bf958f7cae43ce42c7960c2af2c313e35d7"
+    },
+    {
+      "path": "provenance/PDF_QA_008.json",
+      "bytes": 15950,
+      "sha256": "1bf08856f8daa9e789f22fbbdd96d28719089dac27b6b8aaab6f6ef969be8a63"
+    },
+    {
+      "path": "provenance/PDF_QA_009.json",
+      "bytes": 26778,
+      "sha256": "d797d209071e2067f1cda4411722aa954a1e5db9cfd713e390b6d0505ba0b644"
+    },
+    {
+      "path": "provenance/PDF_QA_010.json",
+      "bytes": 34427,
+      "sha256": "b4bbf27f44ceeb4c2551462d9d3c69f1654f59605896116d8fe8b51383a3741b"
+    },
+    {
+      "path": "provenance/PDF_QA_011.json",
+      "bytes": 39619,
+      "sha256": "670fdba5cfe98916922a2366a7739705a1073f54b0fb9073231402df78cb84e4"
+    },
+    {
+      "path": "provenance/PDF_QA_012.json",
+      "bytes": 42093,
+      "sha256": "8e6e0234bb3174494a1fa47bd6a8a1d48467e4a74940e5e93c310480651f860f"
+    },
+    {
+      "path": "provenance/QA.json",
+      "bytes": 14991,
+      "sha256": "635e06980946afd4a2e1fb4877cd4c1da322f49527e2df131b4ed421e874ad93"
+    },
+    {
+      "path": "provenance/SEGMENT_CANON_USE.jsonl",
+      "bytes": 1687539,
+      "sha256": "b8c25d9fc4107d74edc6fa59e5bf85751c35d60868ccefa153de374f18bcbca3"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_001.json",
+      "bytes": 5668,
+      "sha256": "6d29de6851c84b5aa33e954c48dc674fe397319249b6c1301077bcf39b026917"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_002.json",
+      "bytes": 7525,
+      "sha256": "86419dac52f5e806db19c36eea7c1460878938a2869bfbde975f43bcb8d42cf9"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_003.json",
+      "bytes": 9658,
+      "sha256": "ab2b8764e15310a401460f00a776a858d81a275f29a69029496e3a2d2c1c47b4"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_004.json",
+      "bytes": 37528,
+      "sha256": "63a3a4f0c4f61be0e485b3c7f639c2b0bb73266f83b42dc93ffaae5567982dc9"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_005.json",
+      "bytes": 40888,
+      "sha256": "71064f235df03e5242db1ccc6b4b6a89f0946d37e20a998c45e3e2ceb44a4ae7"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_006.json",
+      "bytes": 42023,
+      "sha256": "e4fa699abe99155e03f7023003226ca8f2db51542f3a5cf556f133a1f93d21b9"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_007.json",
+      "bytes": 76878,
+      "sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_008.json",
+      "bytes": 28427,
+      "sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_009.json",
+      "bytes": 107080,
+      "sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_010.json",
+      "bytes": 163320,
+      "sha256": "fbf4f5ae26035d8c7c146bf95d8b89297d5ea31546637ee7692901f50df3e3ed"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_011.json",
+      "bytes": 155018,
+      "sha256": "2cb3caea0b13a438e5f78b733b5c1bf3b72ce0dda591a78336cafde89a90a978"
+    },
+    {
+      "path": "provenance/SEMANTIC_REVIEW_012.json",
+      "bytes": 160710,
+      "sha256": "e7e53a369b6f86b1f92299eb7e4d54c758fdaa7b53c3794ce4a1d7bca30e97cc"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_003.json",
+      "bytes": 5552,
+      "sha256": "93e683b58425ded7b5eb22706a14ea5d9e90d24237a866d9571db4c9f7773201"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_004.json",
+      "bytes": 14985,
+      "sha256": "3f8f849229472aeec134e9724dd47cd9b9df210052916dcb79e23d2f254909cf"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_005.json",
+      "bytes": 5358,
+      "sha256": "253dbc3d4abe6b56c3b51bcd9a16a7bc9dd71ca75bfdf236c92deccc47ea7adb"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_006.json",
+      "bytes": 3278,
+      "sha256": "cbe80b51944232cabecc3c1107d1f000e9673b2adc2f5bd85d0572b482e2bb8c"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_007.json",
+      "bytes": 3421,
+      "sha256": "5384923fdaa5764b683d0712dd4fdf9996c6e4e14d17d171b14fe72feee4492f"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_008.json",
+      "bytes": 6663,
+      "sha256": "5723cbfd0c6f5ae4af7efab4784cadfd942d5033be7debc4a89c769a699d9606"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_009.json",
+      "bytes": 9873,
+      "sha256": "c3ce54f888bc1538e0e3589784df177e3e90d24f75779f5943745d92324542ab"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_010.json",
+      "bytes": 9025,
+      "sha256": "135afa2d01b588fd1ea05d8e002e0e611b4c7112df0c1a79169d786c59ae8a14"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_011.json",
+      "bytes": 16690,
+      "sha256": "9e3f0838c044d47bb2128932ba43e1bf24d3e9af2b2c91e71c6ad4e5cc36f6cd"
+    },
+    {
+      "path": "provenance/SOURCE_CORRECTIONS_012.json",
+      "bytes": 24918,
+      "sha256": "f4e4af08f14c2af23c8f71a4ce55ba93addcd107d7e90e9b9bf55b2fad728597"
+    },
+    {
+      "path": "provenance/SOURCE_MANIFEST.jsonl",
+      "bytes": 355745,
+      "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
+    },
+    {
+      "path": "provenance/TERM_DECISIONS.jsonl",
+      "bytes": 399976,
+      "sha256": "6e94bc62c3709b00be853943e15042739b12f7923d2521ae678329f74f36e3c0"
+    },
+    {
+      "path": "provenance/UNTRANSLATED_SCAN_012.json",
+      "bytes": 6617,
+      "sha256": "b742f51a4c670440b715002b67aa1e924dc2aa4d6b0f912c03be73f0a2800350"
+    },
+    {
+      "path": "reader/arithmetization.html",
+      "bytes": 1144911,
+      "sha256": "e8540d1d1304297d81f4a7da620e0a2f19c36e7df9a59df09dd728b565856933"
+    },
+    {
+      "path": "reader/assets/bijective.svg",
+      "bytes": 6740,
+      "sha256": "cd5cfda97623fa854df47209559573b9ca12f010e75aae9721611385ef100433"
+    },
+    {
+      "path": "reader/assets/composition.svg",
+      "bytes": 12008,
+      "sha256": "f0f8431a13617375441f69dad2d767fa8b63ad45c5f225613d07623dbadac5bc"
+    },
+    {
+      "path": "reader/assets/difference.svg",
+      "bytes": 3682,
+      "sha256": "96209f496ccbc15301e24b9be3e6bb0c6844c00e07d850d15853e2f7f78ae9c4"
+    },
+    {
+      "path": "reader/assets/function.svg",
+      "bytes": 8340,
+      "sha256": "18d2618a8bbbf547bdde6ea1b8daa6052f2e5b33fc5f8f68c0e92f0bc22ba258"
+    },
+    {
+      "path": "reader/assets/graph-four.svg",
+      "bytes": 1253,
+      "sha256": "1e4e7924276d2b3fe156ef036e679582b77020f82f326a74a6ebcf09b5f7d6d6"
+    },
+    {
+      "path": "reader/assets/graph-three.svg",
+      "bytes": 1108,
+      "sha256": "fa49eb769792ed0a18d728e25208ed0bd6e28129312bb14a16f1f7577cd67d10"
+    },
+    {
+      "path": "reader/assets/hilbert-hotel-shift.svg",
+      "bytes": 2966,
+      "sha256": "a53cc1d7cbd4dd70b985e0a8b3c9c51976f4441f156a377ee451738f7c0f9eb1"
+    },
+    {
+      "path": "reader/assets/injective.svg",
+      "bytes": 8252,
+      "sha256": "72cf1131c5427ffee18d76a27d4e77691f43220821cd5978563058d2aeb8c2aa"
+    },
+    {
+      "path": "reader/assets/intersection.svg",
+      "bytes": 3078,
+      "sha256": "39196746e170600adc196f1261a0dfec9b0e58c4dfcd637d3acaae77a4331aec"
+    },
+    {
+      "path": "reader/assets/sqrt-two-parity.svg",
+      "bytes": 982,
+      "sha256": "6bb543bee382bdfdfb8b3a41c9fdafce8aec5240ded1a4c1d2a90e3da080fc00"
+    },
+    {
+      "path": "reader/assets/surjective.svg",
+      "bytes": 6191,
+      "sha256": "a4ff73e8b763725bfad454a32f7e2b4ba51061a30ddf23cc5749db8dd834a6c1"
+    },
+    {
+      "path": "reader/assets/tree.svg",
+      "bytes": 1546,
+      "sha256": "579ff65e523d3a1ad418d47c782903fb26daab55feafe12cc47d14877939d096"
+    },
+    {
+      "path": "reader/assets/union.svg",
+      "bytes": 4024,
+      "sha256": "8fad36bc95d3926c8df64dae2d9dc5f178feb6836556c30647f3cc9e5c714c02"
+    },
+    {
+      "path": "reader/axiomatic-deduction.html",
+      "bytes": 2962710,
+      "sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7"
+    },
+    {
+      "path": "reader/foundations.html",
+      "bytes": 324023,
+      "sha256": "8982aae565eadc6d11ad95aa55a7a7fccf61d425d0ad02733788e0291bf5ed7f"
+    },
+    {
+      "path": "reader/functions.html",
+      "bytes": 478874,
+      "sha256": "03bb1c0e17d7926e20abbf3212a345d640ecaf1e5a0048e2e249e5ceba26c211"
+    },
+    {
+      "path": "reader/infinite.html",
+      "bytes": 1252499,
+      "sha256": "0721d58b2164784b5de2b7a0c874108ae74552d0684b3ad5eafec82bd9ca5071"
+    },
+    {
+      "path": "reader/natural-deduction.html",
+      "bytes": 2189523,
+      "sha256": "df41527257b7813cb03b6f4f267bff80eb32420f0ff656ebe1776fb366dbf052"
+    },
+    {
+      "path": "reader/proof-systems.html",
+      "bytes": 1499731,
+      "sha256": "0faf4ffb805478f6d9f38ea745f3fe7e1d20126bd5ec3297e7eb5783ae6328cf"
+    },
+    {
+      "path": "reader/propositional.html",
+      "bytes": 1418425,
+      "sha256": "e253b3271f95c155d7a2f1c6f607102137ed3d8dc93291c48b5641b5dad9d3d6"
+    },
+    {
+      "path": "reader/reader.css",
+      "bytes": 1020,
+      "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
+    },
+    {
+      "path": "reader/sequent-calculus.html",
+      "bytes": 1849265,
+      "sha256": "8a16454513e285806f986e67d7bb07b4d9e72af05e35280b086efb6a8b12b479"
+    },
+    {
+      "path": "reader/sets.html",
+      "bytes": 137495,
+      "sha256": "7cfbda46455bbbe19122bb9419dea461a47d6439febe4d0be58a1d256f7579ed"
+    },
+    {
+      "path": "reader/size.html",
+      "bytes": 917506,
+      "sha256": "f14fd54567b955e659d0cba1443f3ba67b5a2145669bb92f142deb88595fe4b0"
+    },
+    {
+      "path": "reader/tableaux.html",
+      "bytes": 2727340,
+      "sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3803,
+      "sha256": "f714412b0918d6c6f6e4a3abe76db553b17bdc3f1a8922394fd6563ec649bafb"
+    },
+    {
+      "path": "releases/OpenLogic-gu-Gujr-IN-Propositional-Syntax-Semantics.pdf",
+      "bytes": 794803,
+      "sha256": "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa"
+    },
+    {
+      "path": "tools/build_foundations_html.py",
+      "bytes": 12196,
+      "sha256": "ac626e6d4bb6f5d380d9a437fa4a429b41a65f1d9d879c76950b143f76538c2b"
+    },
+    {
+      "path": "tools/build_function_diagrams.py",
+      "bytes": 2841,
+      "sha256": "2a3a316b079006f413fd127de0a9867cd56818e195ce44c8765ec974e322cacf"
+    },
+    {
+      "path": "tools/build_functions_html.py",
+      "bytes": 59941,
+      "sha256": "68812d0ecb4a76b7cf9b34fae6b119060c260c068fb7c09edc5717771fd5ecf4"
+    },
+    {
+      "path": "tools/build_sets_guarded.ps1",
+      "bytes": 5368,
+      "sha256": "ab1cd440b49bc606247998478016fb1a76c88e12bc656292ee1b599204ec9e97"
+    },
+    {
+      "path": "tools/build_sets_html.py",
+      "bytes": 8369,
+      "sha256": "1e80beb25da705e1af4e9ab1507b66f97cd9ba7db46855d62f0d52182aa3e4be"
+    },
+    {
+      "path": "tools/build_translation_decisions.py",
+      "bytes": 57734,
+      "sha256": "a01c8e20b0aa3727c1dbc5a35d6e09e314026872177e1961df0b9732c29bbcbd"
+    },
+    {
+      "path": "tools/prepare_arithmetization.py",
+      "bytes": 3465,
+      "sha256": "5addeb39588e75c920f003eefa19f9709c64c93870305fd026b00f7da71aaaf6"
+    },
+    {
+      "path": "tools/prepare_axiomatic_deduction.py",
+      "bytes": 7682,
+      "sha256": "53ba53bbbb26fbfaeca1ccd2c6979cfa9b85e5128a95d1d1b4d68e48e20c94a9"
+    },
+    {
+      "path": "tools/prepare_foundations.py",
+      "bytes": 1721,
+      "sha256": "41f0ff039f37dede36dc9cac22736e10999d03cbecdd1988518b9ddee179abfd"
+    },
+    {
+      "path": "tools/prepare_functions.py",
+      "bytes": 2447,
+      "sha256": "4e7c5d9853f1e5dfccac09152bdd15f1a5ceac2b851ae951a4a118eb06368f1f"
+    },
+    {
+      "path": "tools/prepare_infinite.py",
+      "bytes": 3442,
+      "sha256": "8279457fdcbce9f989409d767cafd3418f78908c4e96cce410e3bb7ac185b9d7"
+    },
+    {
+      "path": "tools/prepare_natural_deduction.py",
+      "bytes": 7555,
+      "sha256": "fff60342fe9034c56813700abc0412134c93afbf692ffc4e03a02d50592a3812"
+    },
+    {
+      "path": "tools/prepare_proof_systems.py",
+      "bytes": 4919,
+      "sha256": "4848a606e8ea88adefb17b9ec68ae577c65ac7664877f3412d58d9d07f55958d"
+    },
+    {
+      "path": "tools/prepare_propositional.py",
+      "bytes": 8232,
+      "sha256": "bf8343470d510e328f4f2112cece367b7bf1fa3ecba2c12cb81092235891bf1d"
+    },
+    {
+      "path": "tools/prepare_sequent_calculus.py",
+      "bytes": 6999,
+      "sha256": "3c2aa6a36b3e0386a7a1dbb698db0fd0511a2e63ade425334aad9cfc8b320c31"
+    },
+    {
+      "path": "tools/prepare_sets.py",
+      "bytes": 1190,
+      "sha256": "c17b9fe7c13af05c4edc4753d93084128ec41b64edf2847dea4b645965c7c238"
+    },
+    {
+      "path": "tools/prepare_size.py",
+      "bytes": 3105,
+      "sha256": "6cb7acddd3d9fe73b8c35890816e07ad347e6cd9c4d7ccc00bf201fb855d9281"
+    },
+    {
+      "path": "tools/prepare_tableaux.py",
+      "bytes": 7777,
+      "sha256": "acf858d3c3190c771f8985cd2a6b1734da78da7dc1ac933bf1e67482ffea1951"
+    }
+  ]
+}

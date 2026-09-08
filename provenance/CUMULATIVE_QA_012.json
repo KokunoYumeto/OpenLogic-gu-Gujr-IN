@@ -1,0 +1,261 @@
+{
+  "schema": "openlogic-gu-cumulative-qa/1",
+  "checked_at_utc": "2026-09-08T01:49:51.092237+00:00",
+  "cursor_sha256_at_check": "58754479cb824351aed14b94d504a975a17af414347956239a6f7b6a6e9ae9ac",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 122,
+    "total_units": 722,
+    "contiguous_units": "OLP-0004–0125",
+    "complete_edition": false
+  },
+  "totals": {
+    "aligned_linguistic_blocks": 1281,
+    "source_math_spans": 6629,
+    "reverse_paraphrase_samples": 591,
+    "exact_block_reviews": 1281,
+    "source_corrections": 71,
+    "canon_sources": 18,
+    "canon_passages": 77,
+    "term_decisions": 126,
+    "translation_decisions": 200,
+    "translation_decision_occurrences": 208
+  },
+  "batches": {
+    "001": {
+      "units": 7,
+      "blocks": 86,
+      "math": 327,
+      "semantic": 9,
+      "exact_block_reviews": 9,
+      "batch_sha256": "053e12fe77406cc236c539a3e247e9583c0881626da52c0fafc3e0cf6e38f6d6",
+      "parity_sha256": "18115805d2189fff36db3d4c98f144723e7d4201d8e4e3f5550e5c811a6273f6",
+      "semantic_sha256": "c76d641af5ee9202796a994079bf53ac28296eaf08fba3bb3512ff506b273aff"
+    },
+    "002": {
+      "units": 9,
+      "blocks": 104,
+      "math": 517,
+      "semantic": 13,
+      "exact_block_reviews": 13,
+      "batch_sha256": "43699cec18be506e8e72d29e9d44ca97dcd4dc212957bfb621839d554fd77a6c",
+      "parity_sha256": "4825236f13d436419faa724caf2aac995909a6df4a264c7e1937bf21390a0586",
+      "semantic_sha256": "0059e52457ffd3cce811ca30272ec4eea3489b6bc315fc479c10fe326c851a45"
+    },
+    "003": {
+      "units": 7,
+      "blocks": 87,
+      "math": 414,
+      "semantic": 18,
+      "exact_block_reviews": 18,
+      "batch_sha256": "15af2b6bf4599e44fc3dd30d4325c203f71b49ee13c8a918c7173406f08e930d",
+      "parity_sha256": "9142e425e04535ca5debb9763df67af69e0169167074d98433484cb235186037",
+      "semantic_sha256": "7d4df0c3e24df133c3f5347f01242c878d5969fe4bffda1fd8745e4cb54bd8c2"
+    },
+    "004": {
+      "units": 14,
+      "blocks": 187,
+      "math": 1139,
+      "semantic": 51,
+      "exact_block_reviews": 51,
+      "batch_sha256": "8ed01dba48548325beddb48a581381e597e2f4b9da1b8c296dec97b6e778e854",
+      "parity_sha256": "d3890eaf59ee88e8dc20d28599172d73eee0b6af38a2f295e36ffd0273ddf280",
+      "semantic_sha256": "d8463dcdb7c9943962e76199d322e7aa988c44ee213071a0af0b7232a89dd851"
+    },
+    "005": {
+      "units": 8,
+      "blocks": 103,
+      "math": 424,
+      "semantic": 55,
+      "exact_block_reviews": 55,
+      "batch_sha256": "5dafd3321afa5fd7e4a761d48af3053062e23cdb1e42910dabfa6b5a429dfc47",
+      "parity_sha256": "d0703fd8da38c18d66f9421ae3118d7bd3f4090d696b4ce8b4b8ac84a3ecfd02",
+      "semantic_sha256": "b3111a671d76eb989384577fda30cf71a61a3977a2d4df24695c852415ad06ac"
+    },
+    "006": {
+      "units": 6,
+      "blocks": 58,
+      "math": 207,
+      "semantic": 58,
+      "exact_block_reviews": 58,
+      "batch_sha256": "aa2f3e785bf02e19771d82babf254fd483c66152175d92a4dcce1299e6574fe9",
+      "parity_sha256": "58c769e5022ec6d333855d7d8ff552a4c8f8ec840aeb47fbce6464650fdca49b",
+      "semantic_sha256": "d444b369884edd6d9a311806a4e622b1b7149a5a9a4d9fbdfe1c5a5231589e58"
+    },
+    "007": {
+      "units": 8,
+      "blocks": 99,
+      "math": 426,
+      "semantic": 99,
+      "exact_block_reviews": 99,
+      "batch_sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de",
+      "parity_sha256": "fbc7a07f85f405ebf1fc527a90237d70fa7a927e40f6f0b1509cd192cf4f1ea4",
+      "semantic_sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
+    },
+    "008": {
+      "units": 6,
+      "blocks": 32,
+      "math": 137,
+      "semantic": 32,
+      "exact_block_reviews": 32,
+      "batch_sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649",
+      "parity_sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05",
+      "semantic_sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+    },
+    "009": {
+      "units": 15,
+      "blocks": 131,
+      "math": 1003,
+      "semantic": 131,
+      "exact_block_reviews": 131,
+      "batch_sha256": "f93547c6b6596cb30d0d6dacd1a68a42c132a76251537f7c09eed4e348651f63",
+      "parity_sha256": "b4d4e9c9f0713880284e433861baf6f1c280320b2ea12f9498919bc7b41480e7",
+      "semantic_sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b"
+    },
+    "010": {
+      "units": 14,
+      "blocks": 142,
+      "math": 968,
+      "semantic": 34,
+      "exact_block_reviews": 142,
+      "batch_sha256": "faab0957fd94b21971476b90acf0ebd7b26a8f590ed2b256fcdb044c033815ac",
+      "parity_sha256": "08ba538a84366be545f7d1491ffc05d7263ad530c0f6b1a5c6baf81f78f8651a",
+      "semantic_sha256": "fbf4f5ae26035d8c7c146bf95d8b89297d5ea31546637ee7692901f50df3e3ed"
+    },
+    "011": {
+      "units": 14,
+      "blocks": 132,
+      "math": 589,
+      "semantic": 35,
+      "exact_block_reviews": 132,
+      "batch_sha256": "cb83e453c3f1385ef41ba4a23b3cce5b6d6f0717007f2e5b11bfb4e594080c96",
+      "parity_sha256": "24cf315353f42d50d31c6323c1be342c582aa0b18b470fbafe13e2a8c491192c",
+      "semantic_sha256": "2cb3caea0b13a438e5f78b733b5c1bf3b72ce0dda591a78336cafde89a90a978"
+    },
+    "012": {
+      "units": 14,
+      "blocks": 120,
+      "math": 478,
+      "semantic": 56,
+      "exact_block_reviews": 120,
+      "batch_sha256": "5d67145aa20c1ecef3679d80f6228cbbb8565617f8f0b7b2412e4775721c0f00",
+      "parity_sha256": "09cfe17255579f41feffe726c0c410442fce01415866992681a1933daa273e2e",
+      "semantic_sha256": "e7e53a369b6f86b1f92299eb7e4d54c758fdaa7b53c3794ce4a1d7bca30e97cc"
+    }
+  },
+  "current_artifacts": {
+    "html": {
+      "path": "reader/axiomatic-deduction.html",
+      "bytes": 2962710,
+      "sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7",
+      "mathml_nodes": 6309,
+      "proof_representations": 208,
+      "axiomatic_derivations": 6,
+      "status": "passed_exact_dom_mathml_proof_tableau_derivation_link_asset_and_character_qa"
+    },
+    "browser": {
+      "status": "passed_actual_live_browser_inspection",
+      "inspected_at_utc": "2026-09-08T00:46:25.266548+00:00",
+      "method": "Codex in-app Chromium served the exact local repository for live visual inspection; a separate Edge/Chromium runtime measured every block MathML node, loaded font and image, content id, and console event against the same SHA-256-bound artifact.",
+      "url": "http://127.0.0.1:8770/reader/axiomatic-deduction.html?qa=012",
+      "viewport_px": [
+        1280,
+        720
+      ],
+      "viewed": [
+        "title page, provenance panel and cumulative table of contents",
+        "section 97 axiomatic rules and derivation definition",
+        "section 98 propositional axiom schemas and OLAX-001",
+        "section 99 quantifier rules with OLAX-002 and OLAX-003",
+        "section 100 line-numbered axiomatic derivation tables",
+        "section 103 deduction theorem and proof table",
+        "section 108 soundness with OLAX-018 and formula displays",
+        "section 109 identity axioms and derivability statements",
+        "editorial notes and bibliography at the document end"
+      ],
+      "computed_mathml_check": {
+        "selector": "math[display='block']",
+        "nodes_checked": 412,
+        "clipped_horizontal_nodes": 0,
+        "clipped_vertical_nodes": 0,
+        "intentionally_scrollable_nodes": 3,
+        "scrollable_node_indices_zero_based": [
+          332,
+          333,
+          334
+        ],
+        "scrollable_internal_overflow_px": [
+          45,
+          116,
+          71
+        ],
+        "maximum_internal_scroll_overflow_px": 116,
+        "body_scroll_width_px": 914,
+        "body_client_width_px": 914,
+        "document_scroll_width_px": 1280,
+        "document_client_width_px": 1280,
+        "overflow_x": "auto",
+        "overflow_y": "hidden",
+        "padding_block_total_px": 20.8
+      },
+      "runtime_checks": {
+        "fonts_status": "loaded",
+        "images_loaded_with_nonzero_intrinsic_dimensions": 13,
+        "console_errors_or_warnings": 0,
+        "content_unique_ids": 507,
+        "literal_macro_occurrences": {
+          "sFmla": 2,
+          "item": 1,
+          "iftag": 1,
+          "top": 1
+        },
+        "runtime_receipt": "work/BROWSER_RUNTIME_012.json",
+        "runtime_receipt_sha256": "1cc260d600aac9d725fdab3cd5f67bcd3df06bf3819fe5fa56ffce4cbdd04615"
+      },
+      "defects_found_and_repaired": [
+        "The adapter preserves six axiomatic derivations as line-numbered HTML tables with 29 checked rows and formula-label anchors.",
+        "Literal source macros named by four correction notes remain visible as code while their mathematical uses render as MathML."
+      ],
+      "final_hash_binding": {
+        "html_sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7",
+        "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+        "stylesheet_href": "reader.css?v=3"
+      },
+      "pending": []
+    },
+    "pdf": {
+      "path": "build/gu-axiomatic-deduction.pdf",
+      "bytes": 1402796,
+      "sha256": "66379898ed8eb34bfb510d310275264102229928165e26f11a8fd7846e6265bc",
+      "pages": 158,
+      "page_size": "A4",
+      "page_size_points": [
+        595.276,
+        841.89
+      ],
+      "title": "સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ સહિત ઓપન લોજિક ગુજરાતી",
+      "encrypted": false,
+      "nonempty_extracted_text_pages": 158,
+      "status": "passed_reproducible_build_and_all_page_visual_qa",
+      "all_pages_visually_inspected": true,
+      "three_passes_byte_identical": true
+    },
+    "untranslated_prose": {
+      "path": "state/UNTRANSLATED_SCAN_012.json",
+      "sha256": "b742f51a4c670440b715002b67aa1e924dc2aa4d6b0f912c03be73f0a2800350",
+      "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity"
+    },
+    "translation_decisions": {
+      "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "sha256": "65802328bcbcaf6a5328fcc82d16dfc9cec3a233c3a34140a059dc2484135406",
+      "status": "passed",
+      "reader_locators": {
+        "available": 207,
+        "pending": 0,
+        "not_applicable": 1
+      }
+    }
+  },
+  "git_diff_check": "passed_scoped_paths",
+  "status": "passed_single_cumulative_122_unit_gate"
+}

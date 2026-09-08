@@ -1,0 +1,142 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: deduction-theorem
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ded}}
+      {\olfileid{pl}{axd}{ded}}
+
+\olsection{નિગમન પ્રમેય}
+
+આપણે જોયું તેમ, સ્વયંસિદ્ધિમૂલક તંત્રમાં !!{derivation}s આપવી કંટાળાજનક
+છે અને !!{derivation}s શોધવી પણ મુશ્કેલ હોઈ શકે છે. !!{formula}sની લાંબી
+યાદીઓ ખરેખર લખવાને બદલે, થોડાં સરળ પરિણામો વાપરીને એવી
+!!{derivation}sનું અસ્તિત્વ સ્થાપવું સામાન્ય રીતે સહેલું છે. એવાં ત્રણ
+પરિણામો આપણે પહેલેથી સ્થાપ્યાં છે: $!A \in \Gamma$ જાણતા હોઈએ ત્યારે
+$\Gamma \Proves !A$ કહી શકાય એવું \olref[ptn]{prop:reflexivity} કહે છે.
+જો $\Gamma \Proves !A$, તો $\Gamma \cup \{!B\} \Proves !A$ પણ થાય
+એવું \olref[ptn]{prop:monotonicity} કહે છે. અને જો
+$\Gamma \Proves !A$ તથા $!A \Proves !B$, તો $\Gamma \Proves !B$ એવું
+\olref[ptn]{prop:transitivity}માંથી ફલિત થાય છે. હવે મોડસ પોનેન્સનું
+``અધિ''-સ્વરૂપ આપતું બીજું સરળ પરિણામ જોઈએ:
+
+\begin{prop}
+  \ollabel{prop:mp} જો $\Gamma \Proves !A$ અને $\Gamma \Proves !A \lif
+  !B$, તો $\Gamma \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  આપણી પાસે $\{!A, !A \lif !B\} \Proves !B$ છે:
+  \begin{derivation}
+    1. & $!A$ & પૂર્વ.\\
+    2. & $!A \lif !B$ & પૂર્વ.\\
+    3. & $!B$ & 1, 2, \MP
+  \end{derivation}
+  \olref[ptn]{prop:transitivity} વડે $\Gamma \Proves !B$.
+\end{proof}
+
+આ સંદર્ભમાં આપણે વાપરીશું તે સૌથી મહત્વનું પરિણામ નિગમન પ્રમેય છે:
+
+\begin{thm}[નિગમન પ્રમેય]
+\ollabel{thm:deduction-thm} $\Gamma \cup \{!A\} \Proves !B$ જો અને
+માત્ર જો $\Gamma \Proves !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+``જો'' દિશા તરત મળે છે. જો $\Gamma \Proves !A \lif !B$, તો
+\olref[ptn]{prop:monotonicity} વડે $\Gamma \cup \{!A\} \Proves !A \lif
+!B$ પણ થાય. વળી, \olref[ptn]{prop:reflexivity} વડે
+$\Gamma \cup \{!A\} \Proves !A$. તેથી \olref{prop:mp} વડે
+$\Gamma \cup \{!A\} \Proves !B$.
+
+``માત્ર જો'' દિશા માટે આપણે~$\Gamma \cup \{!A\}$માંથી $!B$ની
+!!{derivation}ની લંબાઈ પર ગણિતીય અનુમાન કરીએ છીએ.
+
+આધાર-કિસ્સામાં આપણે લંબાઈ~$1$ની દરેક !!{derivation} માટે દાવો સાબિત
+કરીએ છીએ. $\Gamma \cup \{!A\}$માંથી $!B$ની લંબાઈ~$1$ની
+!!^a{derivation} માત્ર~$!B$થી બને છે; અને તે યોગ્ય હોય તો $!B$ કાં તો
+$\Gamma \cup \{!A\}$માં છે અથવા સ્વયંસિદ્ધિ છે. જો $!B \in \Gamma$
+અથવા સ્વયંસિદ્ધિ હોય, તો $\Gamma \Proves !B$. વળી,
+\olref[prp]{ax:lif1} વડે $\Gamma \Proves !B \lif (!A \lif !B)$ થાય,
+અને \olref{prop:mp}થી $\Gamma \Proves !A \lif !B$ મળે. જો
+$!B \in \{!A\}$, તો $\Gamma \Proves !A \lif !B$, કારણ કે છેલ્લું
+!!{sentence}~$!A \lif !B$ એ $!A \lif !A$ જ છે અને તેને આપણે
+\olref[pro]{ex:identity}માં !!{derive}d કર્યું છે.
+
+\sourcecorrection{OLAX-017}{મૂળની \texttt{deduction-theorem.tex},
+પંક્તિઓ 66--67માં સભ્યતા-ચિહ્નને તેના ડાબા પદાર્થ~$!B$થી જુદા
+ગણિતીય ખંડમાં મૂકી “$!B$ is either $\in\Gamma\cup\{!A\}$” લખાયું
+છે. અહીં સુનિર્ધારિત સભ્યતા-દાવો $!B\in\Gamma\cup\{!A\}$ વ્યક્ત કર્યો
+છે.}
+
+અનુમાનના પગલામાં ધારો કે~$\Gamma \cup \{!A\}$માંથી $!B$ની
+!!a{derivation}નું છેલ્લું પગલું~$!B$ મોડસ પોનેન્સ વડે પ્રમાણિત થાય છે.
+(જો તે મોડસ પોનેન્સ વડે પ્રમાણિત ન થતું હોય, તો $!B \in \Gamma$,
+$!B \ident !A$, અથવા $!B$ સ્વયંસિદ્ધિ છે અને આધાર-કિસ્સાનું એ જ તર્ક
+લાગુ પડે છે.) ત્યારે કોઈ !!{formula}~$!C$ માટે !!{derivation}નાં અગાઉનાં
+પગલાં $!C \lif !B$ અને $!C$ છે; એટલે
+$\Gamma \cup \{!A\} \Proves !C \lif !B$ અને
+$\Gamma \cup \{!A\} \Proves !C$. તેમની !!{derivation}s ટૂંકી હોવાથી
+તેમને અનુમાનની પૂર્વધારણા લાગુ પડે છે. તેથી આપણી પાસે બંને છે:
+\begin{align*}
+  & \Gamma \Proves !A \lif (!C \lif !B); \\
+  & \Gamma \Proves !A \lif !C.
+\end{align*}
+પરંતુ
+\[
+\Gamma \Proves (!A \lif (!C \lif !B)) \lif
+((!A\lif !C)  \lif (!A \lif !B)),
+\]
+એ પણ \olref[prp]{ax:lif2} વડે મળે છે; હવે \olref{prop:mp}ના બે ઉપયોગ
+જરૂર મુજબ $\Gamma \Proves !A \lif !B$ આપે છે.
+\end{proof}
+
+ધ્યાન આપો કે નિગમન પ્રમેય સાચું રહે તે માટે જ
+\olref[prp]{ax:lif1} અને \olref[prp]{ax:lif2}ની પસંદગી ચોક્કસ આ રીતે
+કરાઈ હતી.
+
+નીચેનાં !!{derivability} વિશેનાં કેટલાંક ઉપયોગી તથ્યો છે; તેમની
+સાબિતી પ્રશ્ન તરીકે રાખીએ છીએ.
+
+\begin{prop}
+  \ollabel{prop:derivfacts}
+\begin{enumerate}
+\item $\Proves (!A \lif !B) \lif ((!B \lif !C)
+  \lif (!A \lif !C))$; \ollabel{derivfacts:a}
+\item જો $\Gamma \cup \{ \lnot !A\}
+  \Proves \lnot !B$, તો $\Gamma \cup \{ !B\} \Proves
+  !A$ (પ્રતિપક્ષન); \ollabel{derivfacts:b}
+\item  $\{ !A, \lnot!A\} \Proves
+    !B$ (એક્સ ફાલ્સો ક્વોડલિબેટ, વિસ્ફોટ); \ollabel{derivfacts:c}
+\item  $\{ \lnot\lnot!A\} \Proves
+  !A$ (દ્વિ-નિષેધ નિકાલ);\ollabel{derivfacts:d}
+\item જો $\Gamma \Proves \lnot\lnot!A$, તો $\Gamma \Proves
+  !A$;\ollabel{derivfacts:e}
+\end{enumerate}
+\end{prop}
+
+\sourcecorrection{OLAX-005}{મૂળની \texttt{deduction-theorem.tex},
+પંક્તિઓ 106--107માં
+$\Proves (!A \lif !B) \lif ((!B \lif !C) \lif (!A \lif !C)$નું
+બાહ્ય જમણું કૌંસ ખૂટે છે. અહીં સંતુલિત સૂત્ર મેળવવા તે કૌંસ ઉમેર્યું છે.}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][ded]{prop:derivfacts} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][ded]{prop:derivfacts} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\end{document}

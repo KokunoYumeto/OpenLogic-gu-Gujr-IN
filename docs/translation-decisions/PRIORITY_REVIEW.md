@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-07T18:07:00.382848+00:00. This focused queue contains 82 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-08T01:12:00.084983+00:00. This focused queue contains 85 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -575,3 +575,24 @@ Generated 2026-09-07T18:07:00.382848+00:00. This focused queue contains 82 high-
 - **Question:** Please double-check whether ‘બંધ પદ / વાક્ય’ accurately expresses ‘closed term / sentence’ in Gujarati mathematical-logic prose with this scope: વાક્ય is directly supported in logical analysis. બંધ પદ is a transparent compositional rendering of a term with no free variable, and the source supplies that definition at first use. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27`
 - **Gujarati:** `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27`
+
+## GU-T124: deduction theorem → નિગમન પ્રમેય
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or proof-theoretic scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘નિગમન પ્રમેય’ accurately express ‘deduction theorem’ with the scope stated here: નિગમન is established in the edition for deduction and the checked canon directly supports formal consequence, derivation from assumptions, system-relative proof and rule-governed reasoning. The displayed biconditional fixes the metatheorem's exact syntactic scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83`
+- **Gujarati:** `gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84`
+
+## GU-T125: contraposition / ex falso quodlibet / explosion / double negation elimination → પ્રતિપક્ષન / એક્સ ફાલ્સો ક્વોડલિબેટ / વિસ્ફોટ / દ્વિ-નિષેધ નિકાલ
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or proof-theoretic scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રતિપક્ષન / એક્સ ફાલ્સો ક્વોડલિબેટ / વિસ્ફોટ / દ્વિ-નિષેધ નિકાલ’ accurately express ‘contraposition / ex falso quodlibet / explosion / double negation elimination’ with the scope stated here: The canon directly attests implication, negation, contradiction, finite proof and formal consequence. પ્રતિપક્ષન and દ્વિ-નિષેધ નિકાલ state the operations compositionally; the traditional Latin label is transliterated beside the descriptive વિસ્ફોટ, and every displayed formula controls the exact rule. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:110`
+- **Gujarati:** `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:115`
+
+## GU-T126: proof-theoretic notions / proof-theoretic property → સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ’ accurately express ‘proof-theoretic notions / proof-theoretic property’ with the scope stated here: સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18`
+- **Gujarati:** `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:23`

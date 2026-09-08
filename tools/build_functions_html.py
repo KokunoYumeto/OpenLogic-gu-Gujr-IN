@@ -4,9 +4,9 @@ import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}
-coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80,'natural-deduction':94,'tableaux':108}[edition]
-coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦','natural-deduction':'૯૪','tableaux':'૧૦૮'}[edition]
+assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction'}
+coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80,'natural-deduction':94,'tableaux':108,'axiomatic-deduction':122}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦','natural-deduction':'૯૪','tableaux':'૧૦૮','axiomatic-deduction':'૧૨૨'}[edition]
 title={
     'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
     'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
@@ -17,6 +17,7 @@ title={
     'sequent-calculus':'સિક્વન્ટ કલન સહિત ઓપન લોજિક ગુજરાતી',
     'natural-deduction':'સ્વાભાવિક નિગમન સહિત ઓપન લોજિક ગુજરાતી',
     'tableaux':'ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી',
+    'axiomatic-deduction':'સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ સહિત ઓપન લોજિક ગુજરાતી',
 }[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
@@ -41,17 +42,25 @@ body=command(body,'sourcecorrection',2,lambda ident,note:'\n\n'+r'\begin{quote}\
 # Pandoc drops ``\string`` inside ``\texttt``.  Preserve the literal macro
 # name used by the OLTAB-006/007 correction disclosures without invoking the
 # argument-taking source macro.
-body=body.replace(r'\texttt{\string\sFmla}',r'\texttt{\textbackslash{}sFmla}')
+for literal in ('sFmla','item','iftag','top'):
+    body=body.replace(
+        '\\texttt{\\string\\'+literal+'}',
+        '\\texttt{\\textbackslash{}'+literal+'}',
+    )
+body=body.replace(
+    r'\texttt{\string\iftag\{FOL\}}',
+    r'\texttt{\textbackslash{}iftag\{FOL\}}',
+)
 token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય',
              'formula':'સૂત્ર','valuation':'સત્યમૂલ્ય-નિયુક્તિ',
              'derivation':'નિષ્પત્તિ','derivability':'નિષ્પન્નક્ષમતા',
              'identity':'તાદાત્મ્ય','tableau':'ટેબ્લો'}
 def token_value(namespace,key):
-    if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
+    if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
     return token_words[key]
 body=command(body,'usetoken',2,token_value)
 body=command(body,'printtoken',2,token_value)
-if edition in {'propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}:
+if edition in {'propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction'}:
     # Expand the two xparse-style constructs that Pandoc's LaTeX reader cannot
     # define through ordinary \newcommand declarations.  The prepared source
     # has already selected the frozen upstream default connective profile.
@@ -63,13 +72,14 @@ if edition in {'propositional','proof-systems','sequent-calculus','natural-deduc
     body=command(body,'pSat',2,lambda valuation,formula:
                  r'\mathfrak{'+valuation+r'}\vDash '+formula)
 proof_render_receipts=[]
-if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux'}:
+if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction'}:
     proofs=re.findall(r'\\begin\{prooftree\}[\s\S]*?\\end\{prooftree\}',body)
     tableaux=re.findall(r'\\begin\{oltableau\}[\s\S]*?\\end\{oltableau\}',body)
     derivations=re.findall(r'\\begin\{derivation\}[\s\S]*?\\end\{derivation\}',body)
-    expected_proofs={'proof-systems':2,'sequent-calculus':60,'natural-deduction':123,'tableaux':124}[edition]
-    expected_tableaux=45 if edition=='tableaux' else 1
-    assert len(proofs)==expected_proofs and len(tableaux)==expected_tableaux and len(derivations)==1
+    expected_proofs={'proof-systems':2,'sequent-calculus':60,'natural-deduction':123,'tableaux':124,'axiomatic-deduction':124}[edition]
+    expected_tableaux=45 if edition in {'tableaux','axiomatic-deduction'} else 1
+    expected_derivations=6 if edition=='axiomatic-deduction' else 1
+    assert len(proofs)==expected_proofs and len(tableaux)==expected_tableaux and len(derivations)==expected_derivations
     rendered_proofs=[
         r'''\[
 \begin{array}{cl}
@@ -112,23 +122,25 @@ if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux'
         source_sha256=hashlib.sha256(tableaux[0].encode('utf-8')).hexdigest(),
         representation='MathML one-branch closed tableau preserving all five signed formulas, rule references and closure mark.',
     ))
-    rendered_derivation=r'''\[
-\begin{array}{rl}
-1.&\psi \lif (\psi \lor \varphi)\\
-2.&(\psi \lif (\psi \lor \varphi)) \lif (\varphi \lif (\psi \lif (\psi \lor \varphi)))\\
-3.&\varphi \lif (\psi \lif (\psi \lor \varphi))
-\end{array}
-\]'''
-    body=body.replace(derivations[0],rendered_derivation,1)
-    proof_render_receipts.append(dict(
-        kind='axiomatic_derivation',
-        source_sha256=hashlib.sha256(derivations[0].encode('utf-8')).hexdigest(),
-        representation='MathML numbered array preserving all three derivation lines.',
-    ))
+    for source in derivations:
+        payload=re.search(
+            r'\\begin\{derivation\}([\s\S]*?)\\end\{derivation\}',source
+        )[1]
+        rows=len(re.findall(r'(?m)^\s*(?:\d+\.|&)',payload))
+        assert rows>0 and '&' in payload
+        rendered=(r'\begin{center}\begin{tabular}{rll}' + payload
+                  + r'\end{tabular}\end{center}')
+        body=body.replace(source,rendered,1)
+        proof_render_receipts.append(dict(
+            kind='axiomatic_derivation',
+            source_sha256=hashlib.sha256(source.encode('utf-8')).hexdigest(),
+            table_rows=rows,
+            representation='HTML table preserving line numbers, formulas, continuation rows and justifications.',
+        ))
     if edition=='proof-systems':
         assert not re.search(r'\\begin\{(?:prooftree|oltableau|derivation)\}',body)
 
-if edition in {'sequent-calculus','natural-deduction','tableaux'}:
+if edition in {'sequent-calculus','natural-deduction','tableaux','axiomatic-deduction'}:
     def bracket_arg(t,i):
         while i<len(t) and t[i].isspace():i+=1
         if i>=len(t) or t[i]!='[':return None,i
@@ -172,7 +184,7 @@ if edition in {'sequent-calculus','natural-deduction','tableaux'}:
         return t
     body=expand_optional_command(body,'lforall',lambda _slash,a:r'\forall'+((' '+a[0]) if a else '')+((r' \, '+a[1]) if len(a)>1 else ''))
     body=expand_optional_command(body,'lexists',lambda unique,a:r'\exists'+('!' if unique else '')+((' '+a[0]) if a else '')+((r' \, '+a[1]) if len(a)>1 else ''))
-    body=expand_optional_command(body,'eq',lambda neg,a:((a[0]+(r'\ne ' if neg else '=')+a[1]) if len(a)>1 else (r'\ne ' if neg else '=')))
+    body=expand_optional_command(body,'eq',lambda neg,a:r'{}'+((a[0]+(r'\ne ' if neg else '=')+a[1]) if len(a)>1 else (r'\ne ' if neg else '=')))
     body=expand_sat(body)
     body=expand_value(body)
     body=command(body,'varAssign',3,lambda new,old,var:new+r'\sim_{'+var+'}'+old)
@@ -297,7 +309,7 @@ if edition in {'sequent-calculus','natural-deduction','tableaux'}:
             representation='Recursive MathML signed-formula tree preserving node order, branch structure, justifications, checkmarks, closure marks and intentional empty branches.',
         ))
         return '\n\\['+tableau_math(root)+r'\]'+'\n'
-    if edition=='tableaux':
+    if edition in {'tableaux','axiomatic-deduction'}:
         body=re.sub(
             r'\\begin\{oltableau\}([\s\S]*?)\\end\{oltableau\}(?:\{\})?',
             lambda m:tableau_region(m[0],m[1],True,'signed_analytic_tableau'),body,
@@ -551,6 +563,7 @@ for prefix,block in section_text:
             'sth:::part':('https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/set-theory','મૂળ ગ્રંથનો ગણસિદ્ધાંત ભાગ'),
             'sth:ord-arithmetic::chap':('https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/set-theory/ord-arithmetic','મૂળ ગ્રંથનું ક્રમસંખ્યાઓના અંકગણિતનું પ્રકરણ'),
             'fol:syn:sem:prop:quant-terms':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex','મૂળ ગ્રંથનું પરિમાણક અને પદ અંગેનું વિધાન'),
+            'fol:syn:sem:thm:sem-deduction':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex','મૂળ ગ્રંથનું અર્થવિચારી નિગમન પ્રમેય'),
             'fol:syn:ass:prop:sat-quant':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex','મૂળ ગ્રંથનું પરિમાણક-સંતોષ અંગેનું વિધાન'),
             'fol:syn:ass:prop:sentence-sat-true':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex','મૂળ ગ્રંથનું વાક્યના સંતોષ અંગેનું વિધાન'),
             'fol:syn:sat:defn:satisfaction':('https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/satisfaction.tex','મૂળ ગ્રંથની સંતોષ અંગેની વ્યાખ્યા'),
@@ -651,22 +664,55 @@ macros=r"""
 \newcommand{\sFmla}[2]{#1\,#2}
 \newcommand{\TRule}[2]{#2#1}
 \newcommand{\formula}[1]{#1}
+\newcommand{\MP}{\mathrm{MP}}
+\newcommand{\QR}{\mathrm{QR}}
+\newcommand{\Hyp}{\text{પૂર્વધારણા}}
+\newcommand{\PAx}{\mathrm{Ax}_0}
 """
-editorial=(R/f'gu-{edition}.tex').read_text(encoding='utf-8').split(r'\section*{સંપાદકીય નોંધો}',1)[1].split(r'\begin{thebibliography}',1)[0]
+editorial_path=(R/'gu-tableaux.tex') if edition=='axiomatic-deduction' else (R/f'gu-{edition}.tex')
+editorial=editorial_path.read_text(encoding='utf-8').split(r'\section*{સંપાદકીય નોંધો}',1)[1].split(r'\begin{thebibliography}',1)[0]
+if edition in {'tableaux','axiomatic-deduction'}:
+    correction_ids={
+        'tableaux':('OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, '
+                    'OLARI-001થી OLARI-004, OLINF-001થી OLINF-002, '
+                    'OLPL-001થી OLPL-002, OLPRF-001થી OLPRF-004, '
+                    'OLSEQ-001થી OLSEQ-006, OLND-001થી OLND-006 અને '
+                    'OLTAB-001થી OLTAB-012 સુધીની'),
+        'axiomatic-deduction':('OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, '
+                    'OLARI-001થી OLARI-004, OLINF-001થી OLINF-002, '
+                    'OLPL-001થી OLPL-002, OLPRF-001થી OLPRF-004, '
+                    'OLSEQ-001થી OLSEQ-006, OLND-001થી OLND-006, '
+                    'OLTAB-001થી OLTAB-012 અને OLAX-001થી OLAX-018 સુધીની'),
+    }[edition]
+    latest_editorial={
+        'tableaux':('ટેબ્લોના નવા પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ '
+                    'ગોઠવણી પસંદ કરી છે. તેથી વિધાનાત્મક અને પરિમાણક નિયમો, '
+                    'આઇગનચલ-શરત, કટ નિયમ અને તાદાત્મ્ય સામેલ છે. ટેબ્લો, '
+                    'ચિહ્નિત સૂત્ર અને આઇગનચલ માટેનાં ગુજરાતી રૂપો કામચલાઉ '
+                    'છે અને નિષ્ણાત ચકાસણી માટે ચિહ્નિત છે.'),
+        'axiomatic-deduction':('સ્વયંસિદ્ધિમૂલક નિષ્પત્તિના નવા પ્રકરણમાં સ્થિર '
+                    'મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી પસંદ કરી છે. તેથી '
+                    'વિધાનાત્મક અને પરિમાણક સ્વયંસિદ્ધિઓ, મોડસ પોનેન્સ, '
+                    'પરિમાણક-નિયમ અને તાદાત્મ્ય સામેલ છે. નિગમન પ્રમેય અને '
+                    'સાબિતી-સૈદ્ધાંતિક ગુણધર્મોની ચર્ચામાં મૂળ પાઠની અઢાર '
+                    'ઓળખેલી ખામીઓ પારદર્શક નોંધો સાથે મર્યાદિત રીતે સુધારી છે.'),
+    }[edition]
+    editorial=editorial.replace(r'\gueditioncorrectionids{}',correction_ids)
+    editorial=editorial.replace(r'\gueditioneditorial',latest_editorial)
 editorial=re.sub(r'\\addcontentsline\{toc\}\{section\}\{[^}]+\}','',editorial)
 bibliography=(r'\section*{સંદર્ભગ્રંથો}\label{bib:Benacerraf1965}'+'\nBenacerraf, Paul. 1965. '+r'\emph{What numbers could not be}'+'. The Philosophical Review 74(1), 47–73.\n')
 if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
-if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}:
+if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction'}:
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
                      +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
                      +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
                      +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
-if edition in {'infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux'}:
+if edition in {'infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction'}:
     bibliography += (r'\label{bib:EwaldSieg2013}Hilbert, David. 2013. On the infinite. In \emph{David Hilbert’s Lectures on the Foundations of Arithmetic and Logic 1917–1933}.'+'\n'
                      +r'\label{bib:Dedekind1888}Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?}.'+'\n')
 src=B/f'{edition}-html.tex'
@@ -687,6 +733,8 @@ elif edition == 'natural-deduction':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમના સ્વાભાવિક નિગમનનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 elif edition == 'tableaux':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમના ચિહ્નિત વિશ્લેષણાત્મક ટેબ્લોનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
+elif edition == 'axiomatic-deduction':
+    notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા શાસ્ત્રીય પ્રથમ-ક્રમની સ્વયંસિદ્ધિમૂલક નિષ્પત્તિનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 else:
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope[edition]} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>{notice_text} <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
@@ -704,10 +752,27 @@ for box in soup.select('div.center'):
         for child in list(para.contents):cap.append(child.extract())
         figure.append(cap)
     box.replace_with(figure)
+# Pandoc retains labels in display-math TeX annotations but does not emit DOM
+# anchors for them.  Bind aligned axiom labels to their corresponding MathML
+# rows; bind isolated display labels to the enclosing formula.
+for formula in soup.find_all('math'):
+    annotation=formula.find('annotation',attrs={'encoding':'application/x-tex'})
+    if annotation is None:continue
+    math_labels=re.findall(r'\\label\{([^}]+)\}',annotation.get_text())
+    if not math_labels:continue
+    rows=formula.find_all('mtr')
+    if len(rows)==len(math_labels):
+        for row,label in zip(rows,math_labels):row['id']=label
+    elif len(math_labels)==1:
+        formula['id']=math_labels[0]
+    else:
+        for label in math_labels:
+            anchor=soup.new_tag('span',id=label);anchor['class']='math-label-anchor'
+            formula.insert_before(anchor)
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13,'natural-deduction':13,'tableaux':13}[edition]
+expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13,'natural-deduction':13,'tableaux':13,'axiomatic-deduction':13}[edition]
 assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.

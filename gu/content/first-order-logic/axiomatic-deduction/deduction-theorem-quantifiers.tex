@@ -1,0 +1,70 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: deduction-theorem-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{ddq}
+
+\olsection{પરિમાણકો સાથે નિગમન પ્રમેય}
+
+\begin{thm}[નિગમન પ્રમેય]
+\ollabel{thm:deduction-thm-q} જો $\Gamma \cup \{!A\} \Proves !B$,
+તો $\Gamma \Proves !A \lif !B$.
+\end{thm}
+
+\begin{proof}
+ફરી આપણે~$\Gamma \cup \{!A\}$માંથી $!B$ની !!{derivation}ની લંબાઈ પર
+ગણિતીય અનુમાન કરીએ છીએ.
+
+અનુમાનના આધાર-કિસ્સાની સાબિતી~\olref[ded]{thm:deduction-thm}ની
+સાબિતીમાંની સાબિતી જેવી જ છે.
+
+અનુમાનના પગલા માટે ફરી ધારો કે~$\Gamma \cup \{!A\}$માંથી $!B$ની
+!!{derivation}નું છેલ્લું પગલું~$!B$ કોઈ અનુમાન-નિયમ વડે પ્રમાણિત થાય
+છે. અનુમાન-નિયમ મોડસ પોનેન્સ હોય તો આપણે
+\olref[ded]{thm:deduction-thm}ની સાબિતીની જેમ આગળ વધીએ. અનુમાન-નિયમ
+\QR{} હોય તો $!B \ident !C \lif \lforall[x][!D(x)]$ છે અને
+!!{derivation}માં અગાઉ $!C \lif !D(a)$ સ્વરૂપનું !!a{formula} આવે છે,
+જ્યાં $a$ એ~$!C$, $!A$ કે~$\Gamma$માં આવતું નથી. તેથી
+\begin{align*}
+  \Gamma \cup \{!A\} & \Proves !C \lif !D(a),\\
+  \intertext{અને અનુમાનની પૂર્વધારણા લાગુ પડે છે, એટલે આપણી પાસે}
+    \Gamma & \Proves !A \lif (!C \lif !D(a)).\\
+  \intertext{નીચેના પરિણામથી}
+  & \Proves (!A \lif (!C \lif !D(a))) \lif ((!A \land !C) \lif !D(a))\\
+  \intertext{અને મોડસ પોનેન્સ વડે મળે છે}
+  \Gamma & \Proves (!A \land !C) \lif !D(a).\\
+  \intertext{આઇગનચલ-શરત હજુ લાગુ પડતી હોવાથી, આ !!{derivation}માં \QR{} વડે પ્રમાણિત પગલું ઉમેરીને મળે છે}
+    \Gamma & \Proves (!A \land !C) \lif \lforall[x][!D(x)].\\
+    \intertext{વળી, આપણી પાસે}
+    & \Proves ((!A \land !C) \lif \lforall[x][!D(x)]) \lif (!A \lif (!C \lif \lforall[x][!D(x)])),\\
+    \intertext{તેથી મોડસ પોનેન્સ વડે}
+    \Gamma & \Proves !A \lif (!C \lif \lforall[x][!D(x)]),
+\end{align*}
+એટલે $\Gamma \Proves !A \lif !B$.
+
+$!B$ને \QR{} નિયમ વડે પ્રમાણિત કરવામાં આવે પરંતુ તેનું સ્વરૂપ
+$\lexists[x][!D(x)] \lif !C$ હોય તે કિસ્સો પ્રશ્ન તરીકે રાખીએ છીએ.
+\end{proof}
+
+\sourcecorrection{OLAX-006}{મૂળની
+\texttt{deduction-theorem-quantifiers.tex}, પંક્તિઓ 43--44માં
+$((!A\land !C)\lif\lforall[x][!D(x)])\lif
+(!A\lif(!C\lif\lforall[x][!D(x)]))$નું છેલ્લું જમણું કૌંસ ખૂટે છે.
+અહીં તે ઉમેર્યું છે.}
+
+\sourcecorrection{OLAX-007}{મૂળની
+\texttt{deduction-theorem-quantifiers.tex}, પંક્તિ~48માં અંતિમ પરિણામ
+$\Gamma\Proves !B$ લખાયું છે. પરંતુ અનુમાનના પગલાએ હમણાં જ
+$\Gamma\Proves !A\lif(!C\lif\lforall[x][!D(x)])$ સ્થાપ્યું છે અને
+$!B\ident !C\lif\lforall[x][!D(x)]$ છે; તેથી જરૂરી નિષ્કર્ષ
+$\Gamma\Proves !A\lif !B$ લખ્યો છે.}
+
+\begin{prob}
+  \olref[fol][axd][ddq]{thm:deduction-thm-q}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\end{document}

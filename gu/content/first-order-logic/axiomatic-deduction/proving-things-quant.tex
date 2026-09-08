@@ -1,0 +1,36 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: proving-things-quant
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{prq}
+
+\olsection{પરિમાણકોવાળી \usetoken{P}{derivation}}
+
+\begin{ex}
+$(\lforall[x][!A(x)] \land \lforall[y][!B(y)]) \lif
+\lforall[x][(!A(x) \land !B(x))]$ની !!a{derivation} આપીએ.
+
+પહેલાં ધ્યાન આપો કે
+\begin{align*}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][!A(x)]\\
+  \intertext{એ \olref[prp]{ax:land1}નો દૃષ્ટાંત છે, અને}
+  \lforall[x][!A(x)] & \lif !A(a) \\
+  \intertext{એ \olref[qua]{ax:q1}નો દૃષ્ટાંત છે. તેથી \olref[pro]{prop:chain} વડે જાણીએ છીએ કે}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !A(a) \\
+  \intertext{!!{derivable} છે. એ જ રીતે, કારણ કે}
+  (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[y][!B(y)] \qquad\text{અને}\\
+    \lforall[y][!B(y)] & \lif !B(a)\\
+    \intertext{અનુક્રમે \olref[prp]{ax:land2} અને \olref[qua]{ax:q1}ના દૃષ્ટાંતો છે,}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif !B(a)\\
+    \intertext{એ \olref[pro]{prop:chain} વડે નિષ્પન્ન કરી શકાય છે. \olref[prp]{ax:land3}નો યોગ્ય દૃષ્ટાંત અને~\MP{}ના બે ઉપયોગ લઈને દેખાય છે કે}
+    (\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif (!A(a) \land !B(a))\\
+    \intertext{નિષ્પન્ન કરી શકાય છે. હવે \QR{} લાગુ કરતાં મળે છે}
+(\lforall[x][!A(x)] \land \lforall[y][!B(y)]) & \lif \lforall[x][(!A(x) \land !B(x))].
+\end{align*}
+\end{ex}
+
+\end{document}

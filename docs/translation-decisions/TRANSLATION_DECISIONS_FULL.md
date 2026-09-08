@@ -1,6 +1,6 @@
 # Full Gujarati translation-decision register
 
-Generated 2026-09-07T18:07:00.382848+00:00. This register covers all 179 material decisions recorded for the current 108/722-unit working edition. Each occurrence has exact source and Gujarati line and UTF-8 byte evidence. Reader pages are reported only when deterministic alignment and SyncTeX agree; unresolved pages remain explicitly pending.
+Generated 2026-09-08T01:12:00.084983+00:00. This register covers all 200 material decisions recorded for the current 122/722-unit working edition. Each occurrence has exact source and Gujarati line and UTF-8 byte evidence. Reader pages are reported only when deterministic alignment and SyncTeX agree; unresolved pages remain explicitly pending.
 
 ## GU-T001: set → ગણ
 
@@ -13,7 +13,7 @@ Generated 2026-09-07T18:07:00.382848+00:00. This register covers all 179 materia
 
 Occurrences:
 
-- `GU-T001-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-tableaux.pdf assembled page 8.
+- `GU-T001-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-T002: element → ઘટક
 
@@ -26,7 +26,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T002-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:14` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-tableaux.pdf assembled page 8.
+- `GU-T002-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:14` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -40,7 +40,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T003-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:10` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-tableaux.pdf assembled page 8.
+- `GU-T003-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:10` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-T004: subset → ઉપગણ
 
@@ -52,7 +52,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T004-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:19` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-tableaux.pdf assembled page 9.
+- `GU-T004-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:19` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 10.
 
 ## GU-T005: proper subset → ઉચિત ઉપગણ
 
@@ -64,7 +64,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T005-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:24` → `gu/content/sets-functions-relations/sets/subsets.tex:23`; reader gu-tableaux.pdf assembled page 9.
+- `GU-T005-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:24` → `gu/content/sets-functions-relations/sets/subsets.tex:23`; reader gu-axiomatic-deduction.pdf assembled page 10.
 
 ## GU-T006: power set → ઘાતગણ
 
@@ -76,7 +76,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T006-O001` / `OLP-0006:B0015`: `upstream/content/sets-functions-relations/sets/subsets.tex:75` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-tableaux.pdf assembled page 9.
+- `GU-T006-O001` / `OLP-0006:B0015`: `upstream/content/sets-functions-relations/sets/subsets.tex:75` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 10.
 
 ## GU-T007: union → યોગગણ
 
@@ -88,7 +88,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T007-O001` / `OLP-0008:B0005`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:20` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-tableaux.pdf assembled page 10.
+- `GU-T007-O001` / `OLP-0008:B0005`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:20` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 11.
 
 ## GU-T008: intersection → છેદગણ
 
@@ -100,7 +100,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T008-O001` / `OLP-0008:B0013`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:62` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-tableaux.pdf assembled page 10.
+- `GU-T008-O001` / `OLP-0008:B0013`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:62` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 11.
 
 ## GU-T009: disjoint → અલગ ગણો
 
@@ -113,7 +113,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T009-O001` / `OLP-0008:B0014`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:77` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:77`; reader gu-tableaux.pdf assembled page 11.
+- `GU-T009-O001` / `OLP-0008:B0014`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:77` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:77`; reader gu-axiomatic-deduction.pdf assembled page 12.
 
 ## GU-T010: difference → તફાવત ગણ
 
@@ -125,7 +125,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T010-O001` / `OLP-0008:B0026`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:153` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:157`; reader gu-tableaux.pdf assembled page 13.
+- `GU-T010-O001` / `OLP-0008:B0026`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:153` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:157`; reader gu-axiomatic-deduction.pdf assembled page 14.
 
 ## GU-T011: Cartesian product → કાર્તેઝીય ગુણાકાર
 
@@ -137,7 +137,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T011-O001` / `OLP-0009:B0011`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:52` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-tableaux.pdf assembled page 13.
+- `GU-T011-O001` / `OLP-0009:B0011`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:52` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 14.
 
 ## GU-T012: ordered pair → ક્રમયુક્ત જોડ
 
@@ -149,7 +149,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T012-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:16` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:14`; reader gu-tableaux.pdf assembled page 13.
+- `GU-T012-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:16` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:14`; reader gu-axiomatic-deduction.pdf assembled page 14.
 
 ## GU-T013: perfect number → પૂર્ણ સંખ્યા
 
@@ -163,7 +163,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T013-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:73` → `gu/content/sets-functions-relations/sets/basics.tex:71`; reader gu-tableaux.pdf assembled page 8.
+- `GU-T013-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:73` → `gu/content/sets-functions-relations/sets/basics.tex:71`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-T014: string → પ્રતીકશ્રેણી
 
@@ -176,7 +176,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T014-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:49` → `gu/content/sets-functions-relations/sets/important-sets.tex:43`; reader gu-tableaux.pdf assembled page 10.
+- `GU-T014-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:49` → `gu/content/sets-functions-relations/sets/important-sets.tex:43`; reader gu-axiomatic-deduction.pdf assembled page 11.
 
 ## GU-T015: sequence → અનુક્રમ
 
@@ -189,7 +189,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T015-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:48` → `gu/content/sets-functions-relations/sets/important-sets.tex:45`; reader gu-tableaux.pdf assembled page 10.
+- `GU-T015-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:48` → `gu/content/sets-functions-relations/sets/important-sets.tex:45`; reader gu-axiomatic-deduction.pdf assembled page 11.
 
 ## GU-T016: tuple → બહુજોડ / ક્રમયુક્ત n-જોડ
 
@@ -203,7 +203,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T016-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:15` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-tableaux.pdf assembled page 13.
+- `GU-T016-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:15` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 14.
 
 ## GU-T017: continuum → સાતત્યક
 
@@ -217,7 +217,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T017-O001` / `OLP-0007:B0005`: `upstream/content/sets-functions-relations/sets/important-sets.tex:24` → `gu/content/sets-functions-relations/sets/important-sets.tex:23`; reader gu-tableaux.pdf assembled page 9.
+- `GU-T017-O001` / `OLP-0007:B0005`: `upstream/content/sets-functions-relations/sets/important-sets.tex:24` → `gu/content/sets-functions-relations/sets/important-sets.tex:23`; reader gu-axiomatic-deduction.pdf assembled page 10.
 
 ## GU-T018: comprehension → ગુણધર્મ વડે ગણરચના
 
@@ -230,7 +230,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T018-O001` / `OLP-0010:B0006`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:22` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:21`; reader gu-tableaux.pdf assembled page 14.
+- `GU-T018-O001` / `OLP-0010:B0006`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:22` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:21`; reader gu-axiomatic-deduction.pdf assembled page 15.
 
 ## GU-T019: paradox → વિરોધાભાસ
 
@@ -242,7 +242,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T019-O001` / `OLP-0010:B0004`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:11` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:11`; reader gu-tableaux.pdf assembled page 14.
+- `GU-T019-O001` / `OLP-0010:B0004`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:11` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 15.
 
 ## GU-T020: relation → સંબંધ
 
@@ -254,7 +254,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T020-O001` / `OLP-0011:B0004`: `upstream/content/sets-functions-relations/relations/relations-complete.tex:8` → `gu/content/sets-functions-relations/relations/relations-complete.tex:8`; reader gu-tableaux.pdf assembled page 15.
+- `GU-T020-O001` / `OLP-0011:B0004`: `upstream/content/sets-functions-relations/relations/relations-complete.tex:8` → `gu/content/sets-functions-relations/relations/relations-complete.tex:8`; reader gu-axiomatic-deduction.pdf assembled page 16.
 
 ## GU-T021: domain → પ્રદેશ
 
@@ -266,7 +266,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T021-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:15` → `gu/content/sets-functions-relations/relations/special-properties.tex:15`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T021-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:15` → `gu/content/sets-functions-relations/relations/special-properties.tex:15`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T022: reflexive → સ્વવાચક
 
@@ -278,7 +278,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T022-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-tableaux.pdf assembled page 16.
+- `GU-T022-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-axiomatic-deduction.pdf assembled page 17.
 
 ## GU-T023: symmetric → સંમિત
 
@@ -290,7 +290,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T023-O001` / `OLP-0014:B0008`: `upstream/content/sets-functions-relations/relations/special-properties.tex:34` → `gu/content/sets-functions-relations/relations/special-properties.tex:33`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T023-O001` / `OLP-0014:B0008`: `upstream/content/sets-functions-relations/relations/special-properties.tex:34` → `gu/content/sets-functions-relations/relations/special-properties.tex:33`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T024: transitive → પરંપરિત
 
@@ -302,7 +302,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T024-O001` / `OLP-0014:B0007`: `upstream/content/sets-functions-relations/relations/special-properties.tex:29` → `gu/content/sets-functions-relations/relations/special-properties.tex:28`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T024-O001` / `OLP-0014:B0007`: `upstream/content/sets-functions-relations/relations/special-properties.tex:29` → `gu/content/sets-functions-relations/relations/special-properties.tex:28`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T025: antisymmetric → વિસંમિત
 
@@ -314,7 +314,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T025-O001` / `OLP-0014:B0009`: `upstream/content/sets-functions-relations/relations/special-properties.tex:38` → `gu/content/sets-functions-relations/relations/special-properties.tex:38`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T025-O001` / `OLP-0014:B0009`: `upstream/content/sets-functions-relations/relations/special-properties.tex:38` → `gu/content/sets-functions-relations/relations/special-properties.tex:38`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T026: equivalence relation/class → સામ્ય સંબંધ / સામ્ય વર્ગ
 
@@ -326,7 +326,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T026-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:20` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T026-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:20` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T027: irreflexive → અસ્વવાચક
 
@@ -340,7 +340,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T027-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-tableaux.pdf assembled page 16.
+- `GU-T027-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-axiomatic-deduction.pdf assembled page 17.
 
 ## GU-T028: asymmetric → અસંમિત
 
@@ -354,7 +354,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T028-O001` / `OLP-0014:B0014`: `upstream/content/sets-functions-relations/relations/special-properties.tex:75` → `gu/content/sets-functions-relations/relations/special-properties.tex:77`; reader gu-tableaux.pdf assembled page 18.
+- `GU-T028-O001` / `OLP-0014:B0014`: `upstream/content/sets-functions-relations/relations/special-properties.tex:75` → `gu/content/sets-functions-relations/relations/special-properties.tex:77`; reader gu-axiomatic-deduction.pdf assembled page 19.
 
 ## GU-T029: connected relation → તુલનાયુક્ત સંબંધ
 
@@ -367,7 +367,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T029-O001` / `OLP-0047:B0015`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:107`; reader gu-tableaux.pdf assembled page 57.
+- `GU-T029-O001` / `OLP-0047:B0015`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:107`; reader gu-axiomatic-deduction.pdf assembled page 58.
 
 ## GU-T030: order/preorder/partial/linear/strict → ક્રમ / પૂર્વક્રમ / આંશિક ક્રમ / રેખીય ક્રમ / કડક ક્રમ
 
@@ -380,7 +380,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T030-O001` / `OLP-0005:B0006`: `upstream/content/sets-functions-relations/sets/basics.tex:21` → `gu/content/sets-functions-relations/sets/basics.tex:20`; reader gu-tableaux.pdf assembled page 8.
+- `GU-T030-O001` / `OLP-0005:B0006`: `upstream/content/sets-functions-relations/sets/basics.tex:21` → `gu/content/sets-functions-relations/sets/basics.tex:20`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-T031: predicate → વિધેય
 
@@ -394,7 +394,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T031-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:60` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T031-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:60` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T032: identity relation → તાદાત્મ્ય સંબંધ
 
@@ -407,7 +407,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T032-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:83` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:86`; reader gu-tableaux.pdf assembled page 16.
+- `GU-T032-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:83` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:86`; reader gu-axiomatic-deduction.pdf assembled page 17.
 
 ## GU-T033: quotient set → ભાગફળ ગણ
 
@@ -420,7 +420,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T033-O001` / `OLP-0015:B0009`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:31` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:33`; reader gu-tableaux.pdf assembled page 18.
+- `GU-T033-O001` / `OLP-0015:B0009`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:31` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:33`; reader gu-axiomatic-deduction.pdf assembled page 19.
 
 ## GU-T034: partition → વર્ગ વિભાજન
 
@@ -432,7 +432,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T034-O001` / `OLP-0015:B0008`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:25` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:38`; reader gu-tableaux.pdf assembled page 18.
+- `GU-T034-O001` / `OLP-0015:B0008`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:25` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:38`; reader gu-axiomatic-deduction.pdf assembled page 19.
 
 ## GU-T035: binary relation → દ્વિઘટકી સંબંધ
 
@@ -445,7 +445,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T035-O001` / `OLP-0012:B0009`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:55` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:57`; reader gu-tableaux.pdf assembled page 16.
+- `GU-T035-O001` / `OLP-0012:B0009`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:55` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:57`; reader gu-axiomatic-deduction.pdf assembled page 17.
 
 ## GU-T036: graph, vertex, edge → આલેખ, શિરોબિંદુ, ધાર
 
@@ -459,7 +459,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T036-O001` / `OLP-0017:B0005`: `upstream/content/sets-functions-relations/relations/graphs.tex:12` → `gu/content/sets-functions-relations/relations/graphs.tex:10`; reader gu-tableaux.pdf assembled page 20.
+- `GU-T036-O001` / `OLP-0017:B0005`: `upstream/content/sets-functions-relations/relations/graphs.tex:12` → `gu/content/sets-functions-relations/relations/graphs.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 21.
 
 ## GU-T037: tree/root/branch → વૃક્ષ / મૂળ / શાખા
 
@@ -472,7 +472,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T037-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:13` → `gu/content/sets-functions-relations/relations/trees.tex:10`; reader gu-tableaux.pdf assembled page 21.
+- `GU-T037-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:13` → `gu/content/sets-functions-relations/relations/trees.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 22.
 
 ## GU-T038: well-ordered / least / maximal chain → સુક્રમિત / લઘુતમ / સમાવેશની દૃષ્ટિએ મહત્તમ શૃંખલા
 
@@ -485,7 +485,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T038-O001` / `OLP-0018:B0009`: `upstream/content/sets-functions-relations/relations/trees.tex:46` → `gu/content/sets-functions-relations/relations/trees.tex:50`; reader gu-tableaux.pdf assembled page 21.
+- `GU-T038-O001` / `OLP-0018:B0009`: `upstream/content/sets-functions-relations/relations/trees.tex:46` → `gu/content/sets-functions-relations/relations/trees.tex:50`; reader gu-axiomatic-deduction.pdf assembled page 22.
 
 ## GU-T039: successor/predecessor → અનુગામી / પુરોગામી
 
@@ -498,7 +498,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T039-O001` / `OLP-0018:B0011`: `upstream/content/sets-functions-relations/relations/trees.tex:59` → `gu/content/sets-functions-relations/relations/trees.tex:61`; reader gu-tableaux.pdf assembled page 22.
+- `GU-T039-O001` / `OLP-0018:B0011`: `upstream/content/sets-functions-relations/relations/trees.tex:59` → `gu/content/sets-functions-relations/relations/trees.tex:61`; reader gu-axiomatic-deduction.pdf assembled page 23.
 
 ## GU-T040: inverse, restriction, relative product, transitive closure → વ્યસ્ત / મર્યાદન / સાપેક્ષ ગુણાકાર / પરંપરિત સંવરણ
 
@@ -512,7 +512,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T040-O001` / `OLP-0019:B0007`: `upstream/content/sets-functions-relations/relations/operations.tex:22` → `gu/content/sets-functions-relations/relations/operations.tex:23`; reader gu-tableaux.pdf assembled page 22.
+- `GU-T040-O001` / `OLP-0019:B0007`: `upstream/content/sets-functions-relations/relations/operations.tex:22` → `gu/content/sets-functions-relations/relations/operations.tex:23`; reader gu-axiomatic-deduction.pdf assembled page 23.
 
 ## GU-T041: computability, formula, derivation, completeness → સંગણનીયતા / સૂત્ર / નિષ્પત્તિ / પૂર્ણતા
 
@@ -525,7 +525,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T041-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-tableaux.pdf assembled page 22.
+- `GU-T041-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-axiomatic-deduction.pdf assembled page 23.
 
 ## GU-T042: function / domain / codomain / range → વિધેય / પ્રદેશ / સહપ્રદેશ / વિસ્તાર
 
@@ -538,7 +538,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T042-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:57` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T042-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:57` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T043: injective / injection → એક-એક / એક-એક વિધેય
 
@@ -550,7 +550,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T043-O001` / `OLP-0022:B0011`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:54` → `gu/content/sets-functions-relations/functions/function-kinds.tex:109`; reader gu-tableaux.pdf assembled page 26.
+- `GU-T043-O001` / `OLP-0022:B0011`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:54` → `gu/content/sets-functions-relations/functions/function-kinds.tex:109`; reader gu-axiomatic-deduction.pdf assembled page 27.
 
 ## GU-T044: surjective / surjection → વ્યાપ્ત / વ્યાપ્ત વિધેય
 
@@ -562,7 +562,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T044-O001` / `OLP-0034:B0008`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:38` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:39`; reader gu-tableaux.pdf assembled page 40.
+- `GU-T044-O001` / `OLP-0034:B0008`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:38` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:39`; reader gu-axiomatic-deduction.pdf assembled page 41.
 
 ## GU-T045: bijective / bijection → એક-એક અને વ્યાપ્ત / એક-એક વ્યાપ્ત વિધેય
 
@@ -574,7 +574,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T045-O001` / `OLP-0038:B0009`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:40` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39`; reader gu-tableaux.pdf assembled page 45.
+- `GU-T045-O001` / `OLP-0038:B0009`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:40` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39`; reader gu-axiomatic-deduction.pdf assembled page 46.
 
 ## GU-T046: composition → સંયોજન
 
@@ -588,7 +588,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T046-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:12` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T046-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:12` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T047: inverse function / left inverse / right inverse → પ્રતિવિધેય / ડાબી બાજુનો વ્યસ્ત / જમણી બાજુનો વ્યસ્ત
 
@@ -600,7 +600,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T047-O001` / `OLP-0024:B0011`: `upstream/content/sets-functions-relations/functions/inverses.tex:57` → `gu/content/sets-functions-relations/functions/inverses.tex:10`; reader gu-tableaux.pdf assembled page 27.
+- `GU-T047-O001` / `OLP-0024:B0011`: `upstream/content/sets-functions-relations/functions/inverses.tex:57` → `gu/content/sets-functions-relations/functions/inverses.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 28.
 
 ## GU-T048: identity function → તદેવ વિધેય
 
@@ -612,7 +612,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T048-O001` / `OLP-0022:B0015`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:80` → `gu/content/sets-functions-relations/functions/function-kinds.tex:85`; reader gu-tableaux.pdf assembled page 26.
+- `GU-T048-O001` / `OLP-0022:B0015`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:80` → `gu/content/sets-functions-relations/functions/function-kinds.tex:85`; reader gu-axiomatic-deduction.pdf assembled page 27.
 
 ## GU-T049: partial function / total function / defined / undefined → આંશિક વિધેય / સર્વત્ર વ્યાખ્યાયિત વિધેય / વ્યાખ્યાયિત / અવ્યાખ્યાયિત
 
@@ -626,7 +626,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T049-O001` / `OLP-0026:B0007`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:21` → `gu/content/sets-functions-relations/functions/partial-functions.tex:11`; reader gu-tableaux.pdf assembled page 30.
+- `GU-T049-O001` / `OLP-0026:B0007`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:21` → `gu/content/sets-functions-relations/functions/partial-functions.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 31.
 
 ## GU-T050: argument / value / input / output → દલીલ / કિંમત / આગત / નિર્ગત
 
@@ -639,7 +639,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T050-O001` / `OLP-0013:B0005`: `upstream/content/sets-functions-relations/relations/reflections.tex:37` → `gu/content/sets-functions-relations/relations/reflections.tex:40`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T050-O001` / `OLP-0013:B0005`: `upstream/content/sets-functions-relations/relations/reflections.tex:37` → `gu/content/sets-functions-relations/relations/reflections.tex:40`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T051: serial relation → સર્વાગત સંબંધ
 
@@ -652,7 +652,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T051-O001` / `OLP-0026:B0012`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:63` → `gu/content/sets-functions-relations/functions/partial-functions.tex:72`; reader gu-tableaux.pdf assembled page 31.
+- `GU-T051-O001` / `OLP-0026:B0012`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:63` → `gu/content/sets-functions-relations/functions/partial-functions.tex:72`; reader gu-axiomatic-deduction.pdf assembled page 32.
 
 ## GU-T052: enumeration → પરિગણના
 
@@ -665,7 +665,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T052-O001` / `OLP-0027:B0005`: `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11` → `gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11`; reader gu-tableaux.pdf assembled page 36.
+- `GU-T052-O001` / `OLP-0027:B0005`: `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11` → `gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 37.
 
 ## GU-T053: enumerable/countable; uncountable → ગણનીય; અગણનીય
 
@@ -679,7 +679,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T053-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-tableaux.pdf assembled page 22.
+- `GU-T053-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-axiomatic-deduction.pdf assembled page 23.
 
 ## GU-T054: equinumerous sets → સામ્ય ગણો
 
@@ -691,7 +691,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T054-O001` / `OLP-0035:B0007`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:29` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:28`; reader gu-tableaux.pdf assembled page 42.
+- `GU-T054-O001` / `OLP-0035:B0007`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:29` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:28`; reader gu-axiomatic-deduction.pdf assembled page 43.
 
 ## GU-T055: cardinality / size → ગણાંક / કદ
 
@@ -705,7 +705,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T055-O001` / `OLP-0027:B0004`: `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8` → `gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8`; reader gu-tableaux.pdf assembled page 31.
+- `GU-T055-O001` / `OLP-0027:B0004`: `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8` → `gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8`; reader gu-axiomatic-deduction.pdf assembled page 32.
 
 ## GU-T056: finite / infinite → સાન્ત / અનંત
 
@@ -717,7 +717,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T056-O001` / `OLP-0024:B0016`: `upstream/content/sets-functions-relations/functions/inverses.tex:109` → `gu/content/sets-functions-relations/functions/inverses.tex:142`; reader gu-tableaux.pdf assembled page 29.
+- `GU-T056-O001` / `OLP-0024:B0016`: `upstream/content/sets-functions-relations/functions/inverses.tex:109` → `gu/content/sets-functions-relations/functions/inverses.tex:142`; reader gu-axiomatic-deduction.pdf assembled page 30.
 
 ## GU-T057: ceiling function → ઊર્ધ્વ પૂર્ણાંક વિધેય
 
@@ -730,7 +730,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T057-O001` / `OLP-0040:B0017`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:100` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:98`; reader gu-tableaux.pdf assembled page 46.
+- `GU-T057-O001` / `OLP-0040:B0017`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:100` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:98`; reader gu-axiomatic-deduction.pdf assembled page 47.
 
 ## GU-T058: recursive definition / induction / initial segment → પુનરાવર્તી વ્યાખ્યા / અનુમાનપ્રવર્તન / આરંભખંડ
 
@@ -744,7 +744,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T058-O001` / `OLP-0009:B0013`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:72` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:74`; reader gu-tableaux.pdf assembled page 13.
+- `GU-T058-O001` / `OLP-0009:B0013`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:72` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:74`; reader gu-axiomatic-deduction.pdf assembled page 14.
 
 ## GU-T059: diagonalization / zig-zag / pairing function → વિકર્ણ પદ્ધતિ / આડીઅવળી રીત / જોડ-નિરૂપણ વિધેય
 
@@ -758,7 +758,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T059-O001` / `OLP-0033:B0020`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability.tex:40`; reader gu-tableaux.pdf assembled page 38.
+- `GU-T059-O001` / `OLP-0033:B0020`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability.tex:40`; reader gu-axiomatic-deduction.pdf assembled page 39.
 
 ## GU-T060: mathematical induction → ગાણિતિક અનુમાન
 
@@ -770,7 +770,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T060-O001` / `OLP-0009:B0018`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:110` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:114`; reader gu-tableaux.pdf assembled page 14.
+- `GU-T060-O001` / `OLP-0009:B0018`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:110` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:114`; reader gu-axiomatic-deduction.pdf assembled page 15.
 
 ## GU-T061: truth-functional / truth table → સત્યતાફલનલક્ષી / સત્યાર્થતા સારણી
 
@@ -797,7 +797,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T062-O001` / `OLP-0032:B0010`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:106` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:119`; reader gu-tableaux.pdf assembled page 38.
+- `GU-T062-O001` / `OLP-0032:B0010`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:106` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:119`; reader gu-axiomatic-deduction.pdf assembled page 39.
 
 ## GU-T063: cofinite → સહસાન્ત
 
@@ -811,7 +811,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T063-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:92` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:101`; reader gu-tableaux.pdf assembled page 36.
+- `GU-T063-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:92` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:101`; reader gu-axiomatic-deduction.pdf assembled page 37.
 
 ## GU-T064: array / row / column / triangular number → સરણિ / હાર / સ્તંભ / ત્રિકોણીય સંખ્યા
 
@@ -824,7 +824,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T064-O001` / `OLP-0030:B0006`: `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:39` → `gu/content/sets-functions-relations/size-of-sets/zig-zag.tex:22`; reader gu-tableaux.pdf assembled page 34.
+- `GU-T064-O001` / `OLP-0030:B0006`: `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:39` → `gu/content/sets-functions-relations/size-of-sets/zig-zag.tex:22`; reader gu-axiomatic-deduction.pdf assembled page 35.
 
 ## GU-T065: reduction / reduce one problem to another → ન્યૂનીકરણ / એક સમસ્યાનું બીજી સમસ્યામાં ન્યૂનીકરણ કરવું
 
@@ -837,7 +837,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T065-O001` / `OLP-0034:B0005`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:11` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:11`; reader gu-tableaux.pdf assembled page 40.
+- `GU-T065-O001` / `OLP-0034:B0005`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:11` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 41.
 
 ## GU-T066: equinumerosity → ગણસામ્ય
 
@@ -851,7 +851,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T066-O001` / `OLP-0035:B0005`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11`; reader gu-tableaux.pdf assembled page 42.
+- `GU-T066-O001` / `OLP-0035:B0005`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 43.
 
 ## GU-T067: no larger than / smaller than (cardinal comparison) → મોટો નથી / નાનો
 
@@ -865,7 +865,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T067-O001` / `OLP-0036:B0007`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:27` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:26`; reader gu-tableaux.pdf assembled page 43.
+- `GU-T067-O001` / `OLP-0036:B0007`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:27` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:26`; reader gu-axiomatic-deduction.pdf assembled page 44.
 
 ## GU-T068: Schroder-Bernstein theorem → શ્રેડર--બર્નસ્ટાઇન પ્રમેય
 
@@ -879,7 +879,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T068-O001` / `OLP-0037:B0005`: `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11` → `gu/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11`; reader gu-tableaux.pdf assembled page 44.
+- `GU-T068-O001` / `OLP-0037:B0005`: `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11` → `gu/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 45.
 
 ## GU-T069: arithmetization → અંકગણિતીકરણ
 
@@ -893,7 +893,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T069-O001` / `OLP-0041:B0004`: `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:8` → `gu/content/sets-functions-relations/arithmetization/arithmetization.tex:8`; reader gu-tableaux.pdf assembled page 49.
+- `GU-T069-O001` / `OLP-0041:B0004`: `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:8` → `gu/content/sets-functions-relations/arithmetization/arithmetization.tex:8`; reader gu-axiomatic-deduction.pdf assembled page 50.
 
 ## GU-T070: integer / rational / irrational / real number → પૂર્ણાંક / સંમેય / અસંમેય / વાસ્તવિક સંખ્યા
 
@@ -905,7 +905,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T070-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:79` → `gu/content/sets-functions-relations/sets/basics.tex:47`; reader gu-tableaux.pdf assembled page 8.
+- `GU-T070-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:79` → `gu/content/sets-functions-relations/sets/basics.tex:47`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-T071: ring / field → મંડળ / ક્ષેત્ર
 
@@ -918,7 +918,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T071-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-tableaux.pdf assembled page 56.
+- `GU-T071-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 57.
 
 ## GU-T072: commutative / commutative ring → સમક્રમી / સમક્રમી મંડળ
 
@@ -932,7 +932,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T072-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:20`; reader gu-tableaux.pdf assembled page 56.
+- `GU-T072-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:20`; reader gu-axiomatic-deduction.pdf assembled page 57.
 
 ## GU-T073: associativity / commutativity / distributivity → સંગઠિતતા / સમક્રમિતા / વિતરણાત્મકતા
 
@@ -946,7 +946,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T073-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:26` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:27`; reader gu-tableaux.pdf assembled page 56.
+- `GU-T073-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:26` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:27`; reader gu-axiomatic-deduction.pdf assembled page 57.
 
 ## GU-T074: ordered ring / ordered field / complete ordered field → ક્રમિત મંડળ / ક્રમિત ક્ષેત્ર / પૂર્ણ ક્રમિત ક્ષેત્ર
 
@@ -960,7 +960,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T074-O001` / `OLP-0047:B0016`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:112` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-tableaux.pdf assembled page 56.
+- `GU-T074-O001` / `OLP-0047:B0016`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:112` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 57.
 
 ## GU-T075: upper bound / lower bound / least upper bound / greatest lower bound → ઉચ્ચસીમા / અધઃસીમા / ન્યૂનતમ ઉચ્ચસીમા / મહત્તમ અધઃસીમા
 
@@ -974,7 +974,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T075-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-tableaux.pdf assembled page 53.
+- `GU-T075-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-axiomatic-deduction.pdf assembled page 54.
 
 ## GU-T076: completeness property → પૂર્ણતા ગુણધર્મ
 
@@ -988,7 +988,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T076-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-tableaux.pdf assembled page 53.
+- `GU-T076-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-axiomatic-deduction.pdf assembled page 54.
 
 ## GU-T077: Dedekind cut → ડેડેકિન્ડ કાપ
 
@@ -1002,7 +1002,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T077-O001` / `OLP-0046:B0006`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:18` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:17`; reader gu-tableaux.pdf assembled page 55.
+- `GU-T077-O001` / `OLP-0046:B0006`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:18` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:17`; reader gu-axiomatic-deduction.pdf assembled page 56.
 
 ## GU-T078: Cauchy sequence / convergence / limit → કોશી શ્રેણી / અભિસાર / લક્ષ
 
@@ -1015,7 +1015,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T078-O001` / `OLP-0048:B0008`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:73` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:11`; reader gu-tableaux.pdf assembled page 58.
+- `GU-T078-O001` / `OLP-0048:B0008`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:73` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 59.
 
 ## GU-T079: even / odd → યુગ્મ / અયુગ્મ
 
@@ -1029,7 +1029,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T079-O001` / `OLP-0006:B0007`: `upstream/content/sets-functions-relations/sets/subsets.tex:29` → `gu/content/sets-functions-relations/sets/subsets.tex:28`; reader gu-tableaux.pdf assembled page 9.
+- `GU-T079-O001` / `OLP-0006:B0007`: `upstream/content/sets-functions-relations/sets/subsets.tex:29` → `gu/content/sets-functions-relations/sets/subsets.tex:28`; reader gu-axiomatic-deduction.pdf assembled page 10.
 
 ## GU-T080: decimal expansion / rational approximation → દશાંશ વિસ્તરણ / સંમેય આસન્ન મૂલ્ય
 
@@ -1043,7 +1043,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T080-O001` / `OLP-0046:B0008`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:27` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:24`; reader gu-tableaux.pdf assembled page 55.
+- `GU-T080-O001` / `OLP-0046:B0008`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:27` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:24`; reader gu-axiomatic-deduction.pdf assembled page 56.
 
 ## GU-T081: additive inverse / multiplicative inverse / identity element → યોજક વ્યસ્ત / ગુણાકારી વ્યસ્ત / એકમ ઘટક
 
@@ -1057,7 +1057,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T081-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:32` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:33`; reader gu-tableaux.pdf assembled page 56.
+- `GU-T081-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:32` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:33`; reader gu-axiomatic-deduction.pdf assembled page 57.
 
 ## GU-T082: Dedekind infinite → ડેડેકિન્ડ-અનંત
 
@@ -1071,7 +1071,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T082-O001` / `OLP-0050:B0006`: `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:61` → `gu/content/sets-functions-relations/infinite/hilberts-hotel.tex:59`; reader gu-tableaux.pdf assembled page 62.
+- `GU-T082-O001` / `OLP-0050:B0006`: `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:61` → `gu/content/sets-functions-relations/infinite/hilberts-hotel.tex:59`; reader gu-axiomatic-deduction.pdf assembled page 63.
 
 ## GU-T083: closure / f-closed → સંવરણ / f-સંવૃત
 
@@ -1085,7 +1085,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T083-O001` / `OLP-0016:B0017`: `upstream/content/sets-functions-relations/relations/orders.tex:100` → `gu/content/sets-functions-relations/relations/orders.tex:102`; reader gu-tableaux.pdf assembled page 19.
+- `GU-T083-O001` / `OLP-0016:B0017`: `upstream/content/sets-functions-relations/relations/orders.tex:100` → `gu/content/sets-functions-relations/relations/orders.tex:102`; reader gu-axiomatic-deduction.pdf assembled page 20.
 
 ## GU-T084: Dedekind algebra → ડેડેકિન્ડ બીજગણિત
 
@@ -1099,7 +1099,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T084-O001` / `OLP-0051:B0013`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:82` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:10`; reader gu-tableaux.pdf assembled page 62.
+- `GU-T084-O001` / `OLP-0051:B0013`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:82` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 63.
 
 ## GU-T085: parameter → પ્રાચલ
 
@@ -1112,7 +1112,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T085-O001` / `OLP-0052:B0010`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:39` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:38`; reader gu-tableaux.pdf assembled page 64.
+- `GU-T085-O001` / `OLP-0052:B0010`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:39` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:38`; reader gu-axiomatic-deduction.pdf assembled page 65.
 
 ## GU-T086: free variable → મુક્ત ચલ
 
@@ -1126,7 +1126,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T086-O001` / `OLP-0052:B0012`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:55` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:55`; reader gu-tableaux.pdf assembled page 64.
+- `GU-T086-O001` / `OLP-0052:B0012`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:55` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:55`; reader gu-axiomatic-deduction.pdf assembled page 65.
 
 ## GU-T087: isomorphism / isomorphic → એકરૂપતા / એકરૂપ
 
@@ -1139,7 +1139,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T087-O001` / `OLP-0023:B0012`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:60` → `gu/content/sets-functions-relations/functions/functions-relations.tex:75`; reader gu-tableaux.pdf assembled page 27.
+- `GU-T087-O001` / `OLP-0023:B0012`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:60` → `gu/content/sets-functions-relations/functions/functions-relations.tex:75`; reader gu-axiomatic-deduction.pdf assembled page 28.
 
 ## GU-T088: structuralism / structuralist → સંરચનાવાદ / સંરચનાવાદી
 
@@ -1153,7 +1153,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T088-O001` / `OLP-0053:B0007`: `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:40` → `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:38`; reader gu-tableaux.pdf assembled page 65.
+- `GU-T088-O001` / `OLP-0053:B0007`: `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:40` → `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:38`; reader gu-axiomatic-deduction.pdf assembled page 66.
 
 ## GU-T089: propositional logic / propositional calculus → વિધાનાત્મક તર્કશાસ્ત્ર / વિધાનોનું કલન
 
@@ -1166,7 +1166,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T089-O001` / `OLP-0055:B0004`: `upstream/content/propositional-logic/propositional-logic.tex:7` → `gu/content/propositional-logic/propositional-logic.tex:7`; reader gu-tableaux.pdf assembled page 67.
+- `GU-T089-O001` / `OLP-0055:B0004`: `upstream/content/propositional-logic/propositional-logic.tex:7` → `gu/content/propositional-logic/propositional-logic.tex:7`; reader gu-axiomatic-deduction.pdf assembled page 68.
 
 ## GU-T090: propositional variable / atomic formula → વિધાનચલ / આણ્વિક સૂત્ર
 
@@ -1180,7 +1180,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T090-O001` / `OLP-0058:B0022`: `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:113` → `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:111`; reader gu-tableaux.pdf assembled page 69.
+- `GU-T090-O001` / `OLP-0058:B0022`: `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:113` → `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:111`; reader gu-axiomatic-deduction.pdf assembled page 70.
 
 ## GU-T091: syntax / semantics → વાક્યરચના / અર્થવિચાર
 
@@ -1194,7 +1194,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T091-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:15` → `gu/content/sets-functions-relations/relations/trees.tex:14`; reader gu-tableaux.pdf assembled page 21.
+- `GU-T091-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:15` → `gu/content/sets-functions-relations/relations/trees.tex:14`; reader gu-axiomatic-deduction.pdf assembled page 22.
 
 ## GU-T092: logical connective → તાર્કિક સંયોજક
 
@@ -1207,7 +1207,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T092-O001` / `OLP-0057:B0008`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:52` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:57`; reader gu-tableaux.pdf assembled page 68.
+- `GU-T092-O001` / `OLP-0057:B0008`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:52` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:57`; reader gu-axiomatic-deduction.pdf assembled page 69.
 
 ## GU-T093: negation / conjunction / disjunction / conditional / biconditional → નિષેધ / સંયોજન / વિયોજન / પ્રેરણ / દ્વિમુખી પ્રેરણ
 
@@ -1220,7 +1220,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T093-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:41` → `gu/content/sets-functions-relations/relations/reflections.tex:52`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T093-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:41` → `gu/content/sets-functions-relations/relations/reflections.tex:52`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T094: inductive definition / induction on formulas → અનુમાનાત્મક વ્યાખ્યા / સૂત્રો પર અનુમાન
 
@@ -1234,7 +1234,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T094-O001` / `OLP-0057:B0007`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:48` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:46`; reader gu-tableaux.pdf assembled page 68.
+- `GU-T094-O001` / `OLP-0057:B0007`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:48` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:46`; reader gu-axiomatic-deduction.pdf assembled page 69.
 
 ## GU-T095: unique readability / syntactic identity → એકમાત્ર વાચનીયતા / વાક્યરચનાત્મક અભિન્નતા
 
@@ -1248,7 +1248,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T095-O001` / `OLP-0059:B0012`: `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58` → `gu/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58`; reader gu-tableaux.pdf assembled page 70.
+- `GU-T095-O001` / `OLP-0059:B0012`: `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58` → `gu/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58`; reader gu-axiomatic-deduction.pdf assembled page 71.
 
 ## GU-T096: formation sequence / uniform substitution → રચના-શ્રેણી / એકરૂપ પ્રતિસ્થાપન
 
@@ -1262,7 +1262,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T096-O001` / `OLP-0060:B0006`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:18` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:11`; reader gu-tableaux.pdf assembled page 71.
+- `GU-T096-O001` / `OLP-0060:B0006`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:18` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:11`; reader gu-axiomatic-deduction.pdf assembled page 72.
 
 ## GU-T097: valuation / evaluation function → સત્યમૂલ્ય-નિયુક્તિ / મૂલ્યાંકન વિધેય
 
@@ -1276,7 +1276,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T097-O001` / `OLP-0061:B0007`: `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22` → `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22`; reader gu-tableaux.pdf assembled page 73.
+- `GU-T097-O001` / `OLP-0061:B0007`: `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22` → `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22`; reader gu-axiomatic-deduction.pdf assembled page 74.
 
 ## GU-T098: satisfaction / satisfiable / unsatisfiable → સંતોષ / સંતોષ્ય / અસંતોષ્ય
 
@@ -1290,7 +1290,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T098-O001` / `OLP-0016:B0027`: `upstream/content/sets-functions-relations/relations/orders.tex:152` → `gu/content/sets-functions-relations/relations/orders.tex:159`; reader gu-tableaux.pdf assembled page 20.
+- `GU-T098-O001` / `OLP-0016:B0027`: `upstream/content/sets-functions-relations/relations/orders.tex:152` → `gu/content/sets-functions-relations/relations/orders.tex:159`; reader gu-axiomatic-deduction.pdf assembled page 21.
 
 ## GU-T099: tautology / contingent / contradiction → પુનરુક્તિ / નિવાર્ય / વ્યાઘાત
 
@@ -1303,7 +1303,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T099-O001` / `OLP-0057:B0009`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:65` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:61`; reader gu-tableaux.pdf assembled page 68.
+- `GU-T099-O001` / `OLP-0057:B0009`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:65` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:61`; reader gu-axiomatic-deduction.pdf assembled page 69.
 
 ## GU-T100: entailment / semantic consequence → તાર્કિક ફલિતતા / અર્થાનુસારી ફલિતતા
 
@@ -1317,7 +1317,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T100-O001` / `OLP-0057:B0009`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:62`; reader gu-tableaux.pdf assembled page 68.
+- `GU-T100-O001` / `OLP-0057:B0009`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:62`; reader gu-axiomatic-deduction.pdf assembled page 69.
 
 ## GU-T101: local determination / semantic deduction theorem → સ્થાનિક નિર્ધારણ / અર્થાનુસારી નિગમન પ્રમેય
 
@@ -1331,7 +1331,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T101-O001` / `OLP-0061:B0010`: `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133` → `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134`; reader gu-tableaux.pdf assembled page 74.
+- `GU-T101-O001` / `OLP-0061:B0010`: `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133` → `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134`; reader gu-axiomatic-deduction.pdf assembled page 75.
 
 ## GU-T102: proof / derivation / derivation system / derivable → સાબિતી / નિષ્પત્તિ / નિષ્પત્તિ-તંત્ર / નિષ્પન્ન કરી શકાય એવું
 
@@ -1345,7 +1345,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T102-O001` / `OLP-0010:B0011`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:56` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:56`; reader gu-tableaux.pdf assembled page 15.
+- `GU-T102-O001` / `OLP-0010:B0011`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:56` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:56`; reader gu-axiomatic-deduction.pdf assembled page 16.
 
 ## GU-T103: axiom / axiomatic derivation / axiom schema / axiom system → સ્વયંસિદ્ધિ / સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ / સ્વયંસિદ્ધિ-પ્રરૂપ / સ્વયંસિદ્ધિ-તંત્ર
 
@@ -1359,7 +1359,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T103-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:52` → `gu/content/sets-functions-relations/relations/reflections.tex:57`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T103-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:52` → `gu/content/sets-functions-relations/relations/reflections.tex:57`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T104: inference rule / modus ponens → અનુમાન-નિયમ / મોડસ પોનેન્સ
 
@@ -1373,7 +1373,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T104-O001` / `OLP-0064:B0007`: `upstream/content/first-order-logic/proof-systems/introduction.tex:31` → `gu/content/first-order-logic/proof-systems/introduction.tex:30`; reader gu-tableaux.pdf assembled page 76.
+- `GU-T104-O001` / `OLP-0064:B0007`: `upstream/content/first-order-logic/proof-systems/introduction.tex:31` → `gu/content/first-order-logic/proof-systems/introduction.tex:30`; reader gu-axiomatic-deduction.pdf assembled page 77.
 
 ## GU-T105: soundness / sound / unsound → યથાર્થતા / યથાર્થ / અયથાર્થ
 
@@ -1387,7 +1387,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T105-O001` / `OLP-0064:B0009`: `upstream/content/first-order-logic/proof-systems/introduction.tex:66` → `gu/content/first-order-logic/proof-systems/introduction.tex:63`; reader gu-tableaux.pdf assembled page 76.
+- `GU-T105-O001` / `OLP-0064:B0009`: `upstream/content/first-order-logic/proof-systems/introduction.tex:66` → `gu/content/first-order-logic/proof-systems/introduction.tex:63`; reader gu-axiomatic-deduction.pdf assembled page 77.
 
 ## GU-T106: completeness / complete derivation system → પૂર્ણતા / પૂર્ણ નિષ્પત્તિ-તંત્ર
 
@@ -1401,7 +1401,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T106-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:18` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-tableaux.pdf assembled page 21.
+- `GU-T106-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:18` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-axiomatic-deduction.pdf assembled page 22.
 
 ## GU-T107: consistency / inconsistent / contradiction → સુસંગતતા / અસુસંગત / વ્યાઘાત
 
@@ -1414,7 +1414,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T107-O001` / `OLP-0064:B0011`: `upstream/content/first-order-logic/proof-systems/introduction.tex:83` → `gu/content/first-order-logic/proof-systems/introduction.tex:80`; reader gu-tableaux.pdf assembled page 76.
+- `GU-T107-O001` / `OLP-0064:B0011`: `upstream/content/first-order-logic/proof-systems/introduction.tex:83` → `gu/content/first-order-logic/proof-systems/introduction.tex:80`; reader gu-axiomatic-deduction.pdf assembled page 77.
 
 ## GU-T108: sequent / sequent calculus / initial sequent → સિક્વન્ટ / સિક્વન્ટ કલન / આરંભિક સિક્વન્ટ
 
@@ -1428,7 +1428,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T108-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:40`; reader gu-tableaux.pdf assembled page 76.
+- `GU-T108-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:40`; reader gu-axiomatic-deduction.pdf assembled page 77.
 
 ## GU-T109: natural deduction / introduction rule / elimination rule → સ્વાભાવિક નિગમન / પરિચય-નિયમ / નિવારણ-નિયમ
 
@@ -1442,7 +1442,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T109-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:38` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-tableaux.pdf assembled page 76.
+- `GU-T109-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:38` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-axiomatic-deduction.pdf assembled page 77.
 
 ## GU-T110: assumption / discharge / undischarged assumption → ધારણા / નિવૃત્ત કરવું / અનિવૃત્ત ધારણા
 
@@ -1456,7 +1456,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T110-O001` / `OLP-0010:B0012`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:64` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:66`; reader gu-tableaux.pdf assembled page 15.
+- `GU-T110-O001` / `OLP-0010:B0012`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:64` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:66`; reader gu-axiomatic-deduction.pdf assembled page 16.
 
 ## GU-T111: proof by cases / indirect proof / conditional proof → કિસ્સાવાર સાબિતી / પરોક્ષ સાબિતી / શરતી સાબિતી
 
@@ -1470,7 +1470,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T111-O001` / `OLP-0066:B0006`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:18` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:18`; reader gu-tableaux.pdf assembled page 77.
+- `GU-T111-O001` / `OLP-0066:B0006`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:18` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:18`; reader gu-axiomatic-deduction.pdf assembled page 78.
 
 ## GU-T112: tableau / truth tree / signed formula / closed tableau → ટેબ્લો / સત્ય-વૃક્ષ / ચિહ્નિત સૂત્ર / બંધ ટેબ્લો
 
@@ -1484,7 +1484,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T112-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-tableaux.pdf assembled page 76.
+- `GU-T112-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-axiomatic-deduction.pdf assembled page 77.
 
 ## GU-T113: theorem / provability → પ્રમેય / સાબિત કરી શકાય તેવું
 
@@ -1498,7 +1498,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T113-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:19` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-tableaux.pdf assembled page 21.
+- `GU-T113-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:19` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-axiomatic-deduction.pdf assembled page 22.
 
 ## GU-T114: proof-theoretic semantics → સાબિતી-સૈદ્ધાંતિક અર્થવિચાર
 
@@ -1512,7 +1512,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T114-O001` / `OLP-0066:B0010`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:88` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:85`; reader gu-tableaux.pdf assembled page 78.
+- `GU-T114-O001` / `OLP-0066:B0010`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:88` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:85`; reader gu-axiomatic-deduction.pdf assembled page 79.
 
 ## GU-T115: resolution method / resolution refutation → રિઝોલ્યૂશન પદ્ધતિ / રિઝોલ્યૂશન વડે ખંડન
 
@@ -1526,7 +1526,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T115-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:43` → `gu/content/first-order-logic/proof-systems/introduction.tex:53`; reader gu-tableaux.pdf assembled page 76.
+- `GU-T115-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:43` → `gu/content/first-order-logic/proof-systems/introduction.tex:53`; reader gu-axiomatic-deduction.pdf assembled page 77.
 
 ## GU-T116: antecedent / succedent → પૂર્વાંગ / ઉત્તરાંગ
 
@@ -1540,7 +1540,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T116-O001` / `OLP-0070:B0007`: `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:25` → `gu/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:24`; reader gu-tableaux.pdf assembled page 81.
+- `GU-T116-O001` / `OLP-0070:B0007`: `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:25` → `gu/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:24`; reader gu-axiomatic-deduction.pdf assembled page 82.
 
 ## GU-T117: premise / conclusion / end-sequent → આધાર-સિક્વન્ટ / ફલિત-સિક્વન્ટ / અંતિમ સિક્વન્ટ
 
@@ -1554,7 +1554,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T117-O001` / `OLP-0074:B0007`: `upstream/content/first-order-logic/sequent-calculus/derivations.tex:33` → `gu/content/first-order-logic/sequent-calculus/derivations.tex:29`; reader gu-tableaux.pdf assembled page 84.
+- `GU-T117-O001` / `OLP-0074:B0007`: `upstream/content/first-order-logic/sequent-calculus/derivations.tex:33` → `gu/content/first-order-logic/sequent-calculus/derivations.tex:29`; reader gu-axiomatic-deduction.pdf assembled page 85.
 
 ## GU-T118: eigenvariable / eigenvariable condition → આઇગનચલ / આઇગનચલ-શરત
 
@@ -1568,7 +1568,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T118-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30`; reader gu-tableaux.pdf assembled page 82.
+- `GU-T118-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30`; reader gu-axiomatic-deduction.pdf assembled page 83.
 
 ## GU-T119: weakening / contraction / exchange / cut → શિથિલીકરણ / સંકોચન / અદલાબદલી / કટ
 
@@ -1582,7 +1582,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T119-O001` / `OLP-0073:B0009`: `upstream/content/first-order-logic/sequent-calculus/structural-rules.tex:37` → `gu/content/first-order-logic/sequent-calculus/structural-rules.tex:22`; reader gu-tableaux.pdf assembled page 83.
+- `GU-T119-O001` / `OLP-0073:B0009`: `upstream/content/first-order-logic/sequent-calculus/structural-rules.tex:37` → `gu/content/first-order-logic/sequent-calculus/structural-rules.tex:22`; reader gu-axiomatic-deduction.pdf assembled page 84.
 
 ## GU-T120: reflexivity / monotonicity / transitivity / compactness → સ્વવાચકતા / એકદિશવર્ધિતા / પરંપરિતતા / સઘનતા
 
@@ -1596,7 +1596,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T120-O001` / `OLP-0014:B0006`: `upstream/content/sets-functions-relations/relations/special-properties.tex:23` → `gu/content/sets-functions-relations/relations/special-properties.tex:23`; reader gu-tableaux.pdf assembled page 17.
+- `GU-T120-O001` / `OLP-0014:B0006`: `upstream/content/sets-functions-relations/relations/special-properties.tex:23` → `gu/content/sets-functions-relations/relations/special-properties.tex:23`; reader gu-axiomatic-deduction.pdf assembled page 18.
 
 ## GU-T121: identity / substitutability of identicals / Leibniz's law → તાદાત્મ્ય / અભિન્ન વસ્તુઓની પ્રતિસ્થાપનીયતા / લાઇબ્નિત્સનો નિયમ
 
@@ -1610,7 +1610,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T121-O001` / `OLP-0012:B0005`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:12` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:17`; reader gu-tableaux.pdf assembled page 15.
+- `GU-T121-O001` / `OLP-0012:B0005`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:12` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:17`; reader gu-axiomatic-deduction.pdf assembled page 16.
 
 ## GU-T122: quantifier / universal quantifier / existential quantifier → પરિમાણક / સાર્વત્રિક પરિમાણક / અસ્તિત્વલક્ષી પરિમાણક
 
@@ -1623,7 +1623,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T122-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:35` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:36`; reader gu-tableaux.pdf assembled page 56.
+- `GU-T122-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:35` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:36`; reader gu-axiomatic-deduction.pdf assembled page 57.
 
 ## GU-T123: closed term / sentence → બંધ પદ / વાક્ય
 
@@ -1637,7 +1637,49 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T123-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27`; reader gu-tableaux.pdf assembled page 82.
+- `GU-T123-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27`; reader gu-axiomatic-deduction.pdf assembled page 83.
+
+## GU-T124: deduction theorem → નિગમન પ્રમેય
+
+- **Kind / mode:** terminology / contemporaneous
+- **Confidence / priority:** low / high; provisional: true
+- **Intended sense:** નિગમન is established in the edition for deduction and the checked canon directly supports formal consequence, derivation from assumptions, system-relative proof and rule-governed reasoning. The displayed biconditional fixes the metatheorem's exact syntactic scope.
+- **Rationale:** નિગમન is established in the edition for deduction and the checked canon directly supports formal consequence, derivation from assumptions, system-relative proof and rule-governed reasoning. The displayed biconditional fixes the metatheorem's exact syntactic scope.
+- **Authority:** GU-P070 (checked_context_only); GU-P072 (checked_context_only); GU-P074 (checked_context_only); GU-P076 (checked_context_only)
+- **Alternatives:** નિષ્પત્તિ પ્રમેય [rejected] — would blur the distinction between a derivation and the theorem that internalizes an added hypothesis.; અનુમાન પ્રમેય [rejected] — could be confused with an inference rule or mathematical induction.
+- **Please double-check:** Please double-check: In Gujarati mathematical-logic prose, does ‘નિગમન પ્રમેય’ accurately express ‘deduction theorem’ with the scope stated here: નિગમન is established in the edition for deduction and the checked canon directly supports formal consequence, derivation from assumptions, system-relative proof and rule-governed reasoning. The displayed biconditional fixes the metatheorem's exact syntactic scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+Occurrences:
+
+- `GU-T124-O001` / `OLP-0062:B0015`: `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83` → `gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84`; reader gu-axiomatic-deduction.pdf assembled page 76.
+
+## GU-T125: contraposition / ex falso quodlibet / explosion / double negation elimination → પ્રતિપક્ષન / એક્સ ફાલ્સો ક્વોડલિબેટ / વિસ્ફોટ / દ્વિ-નિષેધ નિકાલ
+
+- **Kind / mode:** terminology / contemporaneous
+- **Confidence / priority:** low / high; provisional: true
+- **Intended sense:** The canon directly attests implication, negation, contradiction, finite proof and formal consequence. પ્રતિપક્ષન and દ્વિ-નિષેધ નિકાલ state the operations compositionally; the traditional Latin label is transliterated beside the descriptive વિસ્ફોટ, and every displayed formula controls the exact rule.
+- **Rationale:** The canon directly attests implication, negation, contradiction, finite proof and formal consequence. પ્રતિપક્ષન and દ્વિ-નિષેધ નિકાલ state the operations compositionally; the traditional Latin label is transliterated beside the descriptive વિસ્ફોટ, and every displayed formula controls the exact rule.
+- **Authority:** GU-P065 (checked_context_only); GU-P070 (checked_context_only); GU-P071 (checked_context_only); GU-P073 (checked_context_only); GU-P076 (checked_context_only)
+- **Alternatives:** પ્રતિસ્થાપન [rejected] — rejected because it already denotes substitution rather than contraposition.; વિરોધાભાસમાંથી કંઈપણ [rejected] — accurate explanatory prose, but less suitable as the compact named rule beside the traditional label.
+- **Please double-check:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રતિપક્ષન / એક્સ ફાલ્સો ક્વોડલિબેટ / વિસ્ફોટ / દ્વિ-નિષેધ નિકાલ’ accurately express ‘contraposition / ex falso quodlibet / explosion / double negation elimination’ with the scope stated here: The canon directly attests implication, negation, contradiction, finite proof and formal consequence. પ્રતિપક્ષન and દ્વિ-નિષેધ નિકાલ state the operations compositionally; the traditional Latin label is transliterated beside the descriptive વિસ્ફોટ, and every displayed formula controls the exact rule. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+Occurrences:
+
+- `GU-T125-O001` / `OLP-0119:B0018`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:110` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:115`; reader gu-axiomatic-deduction.pdf assembled page 151.
+
+## GU-T126: proof-theoretic notions / proof-theoretic property → સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ
+
+- **Kind / mode:** terminology / contemporaneous
+- **Confidence / priority:** low / high; provisional: true
+- **Intended sense:** સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains.
+- **Rationale:** સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains.
+- **Authority:** GU-P072 (checked_context_only); GU-P073 (checked_context_only); GU-P074 (checked_context_only); GU-P075 (checked_context_only); GU-P076 (checked_context_only); GU-P077 (checked_context_only)
+- **Alternatives:** ઉપપત્તિશાસ્ત્રીય ખ્યાલ [viable_alternative] — a possible learned-register compound not found in the checked Gujarati sources.; સિદ્ધાંતાત્મક ગુણધર્મ [rejected] — too broad because it does not identify proof theory.
+- **Please double-check:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ’ accurately express ‘proof-theoretic notions / proof-theoretic property’ with the scope stated here: સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+Occurrences:
+
+- `GU-T126-O001` / `OLP-0077:B0006`: `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18` → `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:23`; reader gu-axiomatic-deduction.pdf assembled page 92.
 
 ## OLFUN-001: confirmed mathematical defect → Added the nonempty-domain hypothesis to the theorem and proof; disclosed the counterexample and exact general condition.
 
@@ -1651,7 +1693,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-001-O001` / `OLP-0024:B0012`: `upstream/content/sets-functions-relations/functions/inverses.tex:62` → `gu/content/sets-functions-relations/functions/inverses.tex:75`; reader gu-tableaux.pdf assembled page 28.
+- `OLFUN-001-O001` / `OLP-0024:B0012`: `upstream/content/sets-functions-relations/functions/inverses.tex:62` → `gu/content/sets-functions-relations/functions/inverses.tex:75`; reader gu-axiomatic-deduction.pdf assembled page 29.
 
 ## OLFUN-002: confirmed wording defect → Used nonnegative (principal) square root on the natural-number domain and disclosed the English adjective correction.
 
@@ -1665,7 +1707,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-002-O001` / `OLP-0021:B0014`: `upstream/content/sets-functions-relations/functions/function-basics.tex:64` → `gu/content/sets-functions-relations/functions/function-basics.tex:73`; reader gu-tableaux.pdf assembled page 23.
+- `OLFUN-002-O001` / `OLP-0021:B0014`: `upstream/content/sets-functions-relations/functions/function-basics.tex:64` → `gu/content/sets-functions-relations/functions/function-basics.tex:73`; reader gu-axiomatic-deduction.pdf assembled page 24.
 
 ## OLFUN-003: $n$ → $x$
 
@@ -1679,7 +1721,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-003-O001` / `OLP-0021:B0018`: `upstream/content/sets-functions-relations/functions/function-basics.tex:103` → `gu/content/sets-functions-relations/functions/function-basics.tex:115`; reader gu-tableaux.pdf assembled page 24.
+- `OLFUN-003-O001` / `OLP-0021:B0018`: `upstream/content/sets-functions-relations/functions/function-basics.tex:103` → `gu/content/sets-functions-relations/functions/function-basics.tex:115`; reader gu-axiomatic-deduction.pdf assembled page 25.
 
 ## OLFUN-004: confirmed terminology imprecision → Typed the graph as a relation contained in A times B and disclosed the source imprecision.
 
@@ -1693,7 +1735,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-004-O001` / `OLP-0023:B0007`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:24` → `gu/content/sets-functions-relations/functions/functions-relations.tex:67`; reader gu-tableaux.pdf assembled page 27.
+- `OLFUN-004-O001` / `OLP-0023:B0007`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:24` → `gu/content/sets-functions-relations/functions/functions-relations.tex:67`; reader gu-axiomatic-deduction.pdf assembled page 28.
 
 ## OLFUN-005: confirmed explanatory inconsistency explicit definition correct → Kept the correct domain-only function restriction and qualified its analogy with the earlier two-coordinate relation restriction.
 
@@ -1707,7 +1749,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-005-O001` / `OLP-0023:B0013`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:78` → `gu/content/sets-functions-relations/functions/functions-relations.tex:110`; reader gu-tableaux.pdf assembled page 27.
+- `OLFUN-005-O001` / `OLP-0023:B0013`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:78` → `gu/content/sets-functions-relations/functions/functions-relations.tex:110`; reader gu-axiomatic-deduction.pdf assembled page 28.
 
 ## OLSIZ-001: confirmed tabular value omission → Completed the Gujarati values row with -3 and added an adjacent keyed note.
 
@@ -1721,7 +1763,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-001-O001` / `OLP-0029:B0020`: `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/enumerability.tex:174`; reader gu-tableaux.pdf assembled page 33.
+- `OLSIZ-001-O001` / `OLP-0029:B0020`: `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/enumerability.tex:174`; reader gu-axiomatic-deduction.pdf assembled page 34.
 
 ## OLSIZ-002: confirmed grammatical defect clarified by following formula → Translated the formula-controlled meaning and added an adjacent keyed note.
 
@@ -1735,7 +1777,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-002-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:91` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:102`; reader gu-tableaux.pdf assembled page 36.
+- `OLSIZ-002-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:91` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:102`; reader gu-axiomatic-deduction.pdf assembled page 37.
 
 ## OLSIZ-003: $\tuple{2,m}$ → $\tuple{3,m}$
 
@@ -1749,7 +1791,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-003-O001` / `OLP-0032:B0006`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:39` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:42`; reader gu-tableaux.pdf assembled page 37.
+- `OLSIZ-003-O001` / `OLP-0032:B0006`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:39` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:42`; reader gu-axiomatic-deduction.pdf assembled page 38.
 
 ## OLSIZ-004: ["$s_{k}$", "$s_{k}(n) = 1$", "$s_k(n) = 0$"] → ["$s$", "$s(n) = 1$", "$s(n) = 0$"]
 
@@ -1763,7 +1805,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-004-O001` / `OLP-0034:B0011`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:51` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:55`; reader gu-tableaux.pdf assembled page 41.
+- `OLSIZ-004-O001` / `OLP-0034:B0011`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:51` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:55`; reader gu-axiomatic-deduction.pdf assembled page 42.
 
 ## OLSIZ-005: confirmed codomain error finite string used as infinite sequence → Appended an infinite tail of ones, producing a valid nonsurjective map into the intended codomain, and added an adjacent keyed note.
 
@@ -1777,7 +1819,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-005-O001` / `OLP-0034:B0015`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:85` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:103`; reader gu-tableaux.pdf assembled page 41.
+- `OLSIZ-005-O001` / `OLP-0034:B0015`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:85` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:103`; reader gu-axiomatic-deduction.pdf assembled page 42.
 
 ## OLSIZ-006: $g(x) = y$ → $f(x) = y$
 
@@ -1791,8 +1833,8 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-006-O001` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:74`; reader gu-tableaux.pdf assembled page 42.
-- `OLSIZ-006-O002` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:69` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:90`; reader gu-tableaux.pdf assembled page 42.
+- `OLSIZ-006-O001` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:74`; reader gu-axiomatic-deduction.pdf assembled page 43.
+- `OLSIZ-006-O002` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:69` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:90`; reader gu-axiomatic-deduction.pdf assembled page 43.
 
 ## OLSIZ-007: $x \in \overline{A}$ → $x \in A$
 
@@ -1806,7 +1848,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-007-O001` / `OLP-0036:B0014`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:91` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:89`; reader gu-tableaux.pdf assembled page 43.
+- `OLSIZ-007-O001` / `OLP-0036:B0014`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:91` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:89`; reader gu-axiomatic-deduction.pdf assembled page 44.
 
 ## OLSIZ-008: confirmed reversed index description vs array → Translated the indexing in the order fixed by the array and added an adjacent keyed note.
 
@@ -1820,7 +1862,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-008-O001` / `OLP-0039:B0011`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:59` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:68`; reader gu-tableaux.pdf assembled page 47.
+- `OLSIZ-008-O001` / `OLP-0039:B0011`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:59` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:68`; reader gu-axiomatic-deduction.pdf assembled page 48.
 
 ## OLSIZ-009: confirmed duplicated bit flip instruction → Restored the complementary 0-to-1 bit flip and added an adjacent keyed note.
 
@@ -1834,7 +1876,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-009-O001` / `OLP-0039:B0012`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:76` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:88`; reader gu-tableaux.pdf assembled page 47.
+- `OLSIZ-009-O001` / `OLP-0039:B0012`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:76` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:88`; reader gu-axiomatic-deduction.pdf assembled page 48.
 
 ## OLSIZ-010: ["$s_{k}$", "$s_{k}(n) = 1$", "$s_k(n) = 0$"] → ["$s$", "$s(n) = 1$", "$s(n) = 0$"]
 
@@ -1848,7 +1890,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-010-O001` / `OLP-0040:B0012`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:55`; reader gu-tableaux.pdf assembled page 48.
+- `OLSIZ-010-O001` / `OLP-0040:B0012`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:55`; reader gu-axiomatic-deduction.pdf assembled page 49.
 
 ## OLSIZ-011: confirmed malformed three argument conditional → Closed the positive footnote branch, supplied the empty negative branch, kept the following sentence outside the conditional, and added an adjacent keyed note.
 
@@ -1862,7 +1904,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-011-O001` / `OLP-0039:B0010`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:47` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:50`; reader gu-tableaux.pdf assembled page 46.
+- `OLSIZ-011-O001` / `OLP-0039:B0010`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:47` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:50`; reader gu-axiomatic-deduction.pdf assembled page 47.
 
 ## OLSIZ-012: confirmed duplicate cross section label → Changed only the target label section component from red to red-alt and added an adjacent keyed note.
 
@@ -1876,7 +1918,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-012-O001` / `OLP-0040:B0018`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:107` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:112`; reader gu-tableaux.pdf assembled page 49.
+- `OLSIZ-012-O001` / `OLP-0040:B0018`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:107` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:112`; reader gu-axiomatic-deduction.pdf assembled page 50.
 
 ## OLARI-001: $r - s$ → $s - r$
 
@@ -1890,7 +1932,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-001-O001` / `OLP-0043:B0006`: `upstream/content/sets-functions-relations/arithmetization/rationals.tex:53` → `gu/content/sets-functions-relations/arithmetization/rationals.tex:54`; reader gu-tableaux.pdf assembled page 52.
+- `OLARI-001-O001` / `OLP-0043:B0006`: `upstream/content/sets-functions-relations/arithmetization/rationals.tex:53` → `gu/content/sets-functions-relations/arithmetization/rationals.tex:54`; reader gu-axiomatic-deduction.pdf assembled page 53.
 
 ## OLARI-002: confirmed wrong premise for nonempty union → Invoked the stated nonemptiness premise and added an adjacent keyed note.
 
@@ -1904,7 +1946,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-002-O001` / `OLP-0045:B0010`: `upstream/content/sets-functions-relations/arithmetization/cuts.tex:61` → `gu/content/sets-functions-relations/arithmetization/cuts.tex:64`; reader gu-tableaux.pdf assembled page 54.
+- `OLARI-002-O001` / `OLP-0045:B0010`: `upstream/content/sets-functions-relations/arithmetization/cuts.tex:61` → `gu/content/sets-functions-relations/arithmetization/cuts.tex:64`; reader gu-axiomatic-deduction.pdf assembled page 55.
 
 ## OLARI-003: confirmed quotient object category errors → Named the equivalence classes in the construction, theorem and exercise and added one adjacent keyed note covering all three repairs.
 
@@ -1918,9 +1960,9 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-003-O001` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:84` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:101`; reader gu-tableaux.pdf assembled page 60.
-- `OLARI-003-O002` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:85` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:162`; reader gu-tableaux.pdf assembled page 60.
-- `OLARI-003-O003` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:86` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:170`; reader gu-tableaux.pdf assembled page 60.
+- `OLARI-003-O001` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:84` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:101`; reader gu-axiomatic-deduction.pdf assembled page 61.
+- `OLARI-003-O002` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:85` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:162`; reader gu-axiomatic-deduction.pdf assembled page 61.
+- `OLARI-003-O003` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:86` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:170`; reader gu-axiomatic-deduction.pdf assembled page 61.
 
 ## OLARI-004: $0_\Rat$ → $0_\Real$
 
@@ -1934,7 +1976,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-004-O001` / `OLP-0048:B0014`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:137` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:146`; reader gu-tableaux.pdf assembled page 60.
+- `OLARI-004-O001` / `OLP-0048:B0014`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:137` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:146`; reader gu-axiomatic-deduction.pdf assembled page 61.
 
 ## OLINF-001: confirmed unbound carrier and missing self map constraints → Made the carrier explicit throughout the controlling definition and lemma as f:A→A, X⊆A and o∈A, and added an adjacent keyed note.
 
@@ -1948,7 +1990,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLINF-001-O001` / `OLP-0051:B0006`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:41`; reader gu-tableaux.pdf assembled page 62.
+- `OLINF-001-O001` / `OLP-0051:B0006`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:41`; reader gu-axiomatic-deduction.pdf assembled page 63.
 
 ## OLINF-002: $\cardeq{\cardeq{A}{B}}{C}$ → $\cardeq{A}{B}$ and $\cardeq{B}{C}$
 
@@ -1962,7 +2004,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLINF-002-O001` / `OLP-0054:B0010`: `upstream/content/sets-functions-relations/infinite/card-sb.tex:49` → `gu/content/sets-functions-relations/infinite/card-sb.tex:51`; reader gu-tableaux.pdf assembled page 66.
+- `OLINF-002-O001` / `OLP-0054:B0010`: `upstream/content/sets-functions-relations/infinite/card-sb.tex:49` → `gu/content/sets-functions-relations/infinite/card-sb.tex:51`; reader gu-axiomatic-deduction.pdf assembled page 67.
 
 ## OLPL-001: $\lnot !A \lor !B)$ → $\lnot !A \lor !B$
 
@@ -1976,7 +2018,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPL-001-O001` / `OLP-0058:B0032`: `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158` → `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:155`; reader gu-tableaux.pdf assembled page 69.
+- `OLPL-001-O001` / `OLP-0058:B0032`: `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158` → `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:155`; reader gu-axiomatic-deduction.pdf assembled page 70.
 
 ## OLPL-002: $!A \equiv (!A_j \land !A_k)$ → $!A \ident (!A_j \land !A_k)$
 
@@ -1990,7 +2032,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPL-002-O001` / `OLP-0060:B0016`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:141` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:136`; reader gu-tableaux.pdf assembled page 72.
+- `OLPL-002-O001` / `OLP-0060:B0016`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:141` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:136`; reader gu-axiomatic-deduction.pdf assembled page 73.
 
 ## OLPRF-001: !A_1, \dots, !A_m \Sequent !B_1, \dots, !B_m, → !A_1, \dots, !A_m \Sequent !B_1, \dots, !B_n,
 
@@ -2004,7 +2046,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-001-O001` / `OLP-0065:B0006`: `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:19` → `gu/content/first-order-logic/proof-systems/sequent-calculus.tex:19`; reader gu-tableaux.pdf assembled page 77.
+- `OLPRF-001-O001` / `OLP-0065:B0006`: `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:19` → `gu/content/first-order-logic/proof-systems/sequent-calculus.tex:19`; reader gu-axiomatic-deduction.pdf assembled page 78.
 
 ## OLPRF-002: $\TRule{\False}{!A \land !B}$ → $\TRule{\False}{\land}$
 
@@ -2018,7 +2060,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-002-O001` / `OLP-0067:B0007`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:38` → `gu/content/first-order-logic/proof-systems/tableaux.tex:37`; reader gu-tableaux.pdf assembled page 79.
+- `OLPRF-002-O001` / `OLP-0067:B0007`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:38` → `gu/content/first-order-logic/proof-systems/tableaux.tex:37`; reader gu-axiomatic-deduction.pdf assembled page 80.
 
 ## OLPRF-003: for some $!B_i \in \Gamma$ → for every $i=1,\dots,n$, $!B_i\in\Gamma$
 
@@ -2032,7 +2074,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-003-O001` / `OLP-0067:B0009`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:70` → `gu/content/first-order-logic/proof-systems/tableaux.tex:76`; reader gu-tableaux.pdf assembled page 79.
+- `OLPRF-003-O001` / `OLP-0067:B0009`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:70` → `gu/content/first-order-logic/proof-systems/tableaux.tex:76`; reader gu-axiomatic-deduction.pdf assembled page 80.
 
 ## OLPRF-004: two occurrences of \TRule{\True}{\lif}[2] → two occurrences of \TRule{\True}{\land}[2]
 
@@ -2046,7 +2088,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-004-O001` / `OLP-0067:B0008`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:59` → `gu/content/first-order-logic/proof-systems/tableaux.tex:59`; reader gu-tableaux.pdf assembled page 79.
+- `OLPRF-004-O001` / `OLP-0067:B0008`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:59` → `gu/content/first-order-logic/proof-systems/tableaux.tex:59`; reader gu-axiomatic-deduction.pdf assembled page 80.
 
 ## OLSEQ-001: four occurrences of \RightLabel{\RightR{\Exchange}} → four occurrences of \RightLabel{\LeftR{\Exchange}}
 
@@ -2060,10 +2102,10 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-001-O001` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:86` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:80`; reader gu-tableaux.pdf assembled page 86.
-- `OLSEQ-001-O002` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:104` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:102`; reader gu-tableaux.pdf assembled page 86.
-- `OLSEQ-001-O003` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:125` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:123`; reader gu-tableaux.pdf assembled page 86.
-- `OLSEQ-001-O004` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:147` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:145`; reader gu-tableaux.pdf assembled page 86.
+- `OLSEQ-001-O001` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:86` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:80`; reader gu-axiomatic-deduction.pdf assembled page 87.
+- `OLSEQ-001-O002` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:104` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:102`; reader gu-axiomatic-deduction.pdf assembled page 87.
+- `OLSEQ-001-O003` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:125` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:123`; reader gu-axiomatic-deduction.pdf assembled page 87.
+- `OLSEQ-001-O004` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:147` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:145`; reader gu-axiomatic-deduction.pdf assembled page 87.
 
 ## OLSEQ-002: two prose occurrences of \lnot !A \lor !B → two prose occurrences of \lnot !A \lor \lnot !B
 
@@ -2077,8 +2119,8 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-002-O001` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:178` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:173`; reader gu-tableaux.pdf assembled page 87.
-- `OLSEQ-002-O002` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:179` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:174`; reader gu-tableaux.pdf assembled page 87.
+- `OLSEQ-002-O001` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:178` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:173`; reader gu-axiomatic-deduction.pdf assembled page 88.
+- `OLSEQ-002-O002` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:179` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:174`; reader gu-axiomatic-deduction.pdf assembled page 88.
 
 ## OLSEQ-003: natural deduction → sequent calculus
 
@@ -2092,7 +2134,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-003-O001` / `OLP-0077:B0004`: `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:11` → `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:10`; reader gu-tableaux.pdf assembled page 90.
+- `OLSEQ-003-O001` / `OLP-0077:B0004`: `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:11` → `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:10`; reader gu-axiomatic-deduction.pdf assembled page 91.
 
 ## OLSEQ-004: unqualified \Theta=!A,\Gamma while treating both rules → left: \Theta=!A,\Gamma and \Xi=\Delta; right: \Theta=\Gamma and \Xi=\Delta,!A
 
@@ -2106,8 +2148,8 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-004-O001` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:98` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:99`; reader gu-tableaux.pdf assembled page 96.
-- `OLSEQ-004-O002` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:99` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:104`; reader gu-tableaux.pdf assembled page 96.
+- `OLSEQ-004-O001` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:98` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:99`; reader gu-axiomatic-deduction.pdf assembled page 97.
+- `OLSEQ-004-O002` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:99` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:104`; reader gu-axiomatic-deduction.pdf assembled page 97.
 
 ## OLSEQ-005: \Gamma \Sequent \Delta → !A \land !B,\Gamma \Sequent \Delta
 
@@ -2121,7 +2163,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-005-O001` / `OLP-0081:B0016`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:158` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:168`; reader gu-tableaux.pdf assembled page 97.
+- `OLSEQ-005-O001` / `OLP-0081:B0016`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:158` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:168`; reader gu-axiomatic-deduction.pdf assembled page 98.
 
 ## OLSEQ-006: \Pi \setminus \Lambda → \Pi \Sequent \Lambda
 
@@ -2135,7 +2177,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-006-O001` / `OLP-0081:B0017`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:288` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:308`; reader gu-tableaux.pdf assembled page 98.
+- `OLSEQ-006-O001` / `OLP-0081:B0017`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:288` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:308`; reader gu-axiomatic-deduction.pdf assembled page 99.
 
 ## OLND-001: other sequents → other sentences
 
@@ -2149,7 +2191,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-001-O001` / `OLP-0085:B0008`: `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:33` → `gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex:32`; reader gu-tableaux.pdf assembled page 101.
+- `OLND-001-O001` / `OLP-0085:B0008`: `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:33` → `gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex:32`; reader gu-axiomatic-deduction.pdf assembled page 102.
 
 ## OLND-002: sentence in the end-sequent → sentence in the conclusion
 
@@ -2163,7 +2205,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-002-O001` / `OLP-0089:B0011`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:67` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:59`; reader gu-tableaux.pdf assembled page 105.
+- `OLND-002-O001` / `OLP-0089:B0011`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:67` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:59`; reader gu-axiomatic-deduction.pdf assembled page 106.
 
 ## OLND-003: \RightLabel{\Intro{\lfalse}} → \RightLabel{\Elim{\lnot}}
 
@@ -2177,7 +2219,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-003-O001` / `OLP-0089:B0013`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:133` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:125`; reader gu-tableaux.pdf assembled page 106.
+- `OLND-003-O001` / `OLP-0089:B0013`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:133` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:125`; reader gu-axiomatic-deduction.pdf assembled page 107.
 
 ## OLND-004: \lexists[x][!A(x)] → \lexists[x][\lnot !A(x)]
 
@@ -2191,7 +2233,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-004-O001` / `OLP-0090:B0007`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:39` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:35`; reader gu-tableaux.pdf assembled page 109.
+- `OLND-004-O001` / `OLP-0090:B0007`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:39` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:35`; reader gu-axiomatic-deduction.pdf assembled page 110.
 
 ## OLND-005: \Elim{\exists} → \Elim{\lexists}
 
@@ -2205,7 +2247,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-005-O001` / `OLP-0090:B0008`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:91` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:88`; reader gu-tableaux.pdf assembled page 110.
+- `OLND-005-O001` / `OLP-0090:B0008`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:91` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:88`; reader gu-axiomatic-deduction.pdf assembled page 111.
 
 ## OLND-006: \Elim{\forall} → \Elim{\lforall}
 
@@ -2219,7 +2261,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-006-O001` / `OLP-0095:B0020`: `upstream/content/first-order-logic/natural-deduction/soundness.tex:207` → `gu/content/first-order-logic/natural-deduction/soundness.tex:202`; reader gu-tableaux.pdf assembled page 119.
+- `OLND-006-O001` / `OLP-0095:B0020`: `upstream/content/first-order-logic/natural-deduction/soundness.tex:207` → `gu/content/first-order-logic/natural-deduction/soundness.tex:202`; reader gu-axiomatic-deduction.pdf assembled page 120.
 
 ## OLTAB-001: natural deduction → tableaux
 
@@ -2233,7 +2275,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-001-O001` / `OLP-0098:B0006`: `upstream/content/first-order-logic/tableaux/tableaux.tex:15` → `gu/content/first-order-logic/tableaux/tableaux.tex:15`; reader gu-tableaux.pdf assembled page 121.
+- `OLTAB-001-O001` / `OLP-0098:B0006`: `upstream/content/first-order-logic/tableaux/tableaux.tex:15` → `gu/content/first-order-logic/tableaux/tableaux.tex:15`; reader gu-axiomatic-deduction.pdf assembled page 122.
 
 ## OLTAB-002: \sFmla{\True}{!A \lor !B, \lnot !B} → \sFmla{\True}{!A \lor !B}, \sFmla{\True}{\lnot !B}
 
@@ -2247,7 +2289,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-002-O001` / `OLP-0103:B0016`: `upstream/content/first-order-logic/tableaux/proving-things.tex:439` → `gu/content/first-order-logic/tableaux/proving-things.tex:437`; reader gu-tableaux.pdf assembled page 129.
+- `OLTAB-002-O001` / `OLP-0103:B0016`: `upstream/content/first-order-logic/tableaux/proving-things.tex:439` → `gu/content/first-order-logic/tableaux/proving-things.tex:437`; reader gu-axiomatic-deduction.pdf assembled page 130.
 
 ## OLTAB-003: !D_1,\dots,!D_m\subseteq\Gamma → \{!D_1,\dots,!D_m\}\subseteq\Gamma
 
@@ -2261,7 +2303,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-003-O001` / `OLP-0105:B0016`: `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:105` → `gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex:106`; reader gu-tableaux.pdf assembled page 134.
+- `OLTAB-003-O001` / `OLP-0105:B0016`: `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:105` → `gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex:106`; reader gu-axiomatic-deduction.pdf assembled page 135.
 
 ## OLTAB-004: C_n → C_m
 
@@ -2275,7 +2317,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-004-O001` / `OLP-0106:B0008`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:26` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:26`; reader gu-tableaux.pdf assembled page 135.
+- `OLTAB-004-O001` / `OLP-0106:B0008`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:26` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:26`; reader gu-axiomatic-deduction.pdf assembled page 136.
 
 ## OLTAB-005: \sFmla{\False}{!A} → \sFmla{\True}{\lnot !A}
 
@@ -2289,7 +2331,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-005-O001` / `OLP-0106:B0014`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:92` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:96`; reader gu-tableaux.pdf assembled page 135.
+- `OLTAB-005-O001` / `OLP-0106:B0014`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:92` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:96`; reader gu-axiomatic-deduction.pdf assembled page 136.
 
 ## OLTAB-006: \sFmla{\True{\formula{X}}} → \sFmla{\True}{\formula{X}}
 
@@ -2303,7 +2345,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-006-O001` / `OLP-0107:B0009`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:43` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:63`; reader gu-tableaux.pdf assembled page 136.
+- `OLTAB-006-O001` / `OLP-0107:B0009`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:43` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:63`; reader gu-axiomatic-deduction.pdf assembled page 137.
 
 ## OLTAB-007: \sFmla{\False{\formula{X}}} → \sFmla{\False}{\formula{X}}
 
@@ -2317,7 +2359,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-007-O001` / `OLP-0107:B0011`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:106` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:121`; reader gu-tableaux.pdf assembled page 137.
+- `OLTAB-007-O001` / `OLP-0107:B0011`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:106` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:121`; reader gu-axiomatic-deduction.pdf assembled page 138.
 
 ## OLTAB-008: final in-math comma → none
 
@@ -2331,7 +2373,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-008-O001` / `OLP-0108:B0009`: `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:79` → `gu/content/first-order-logic/tableaux/provability-quantifiers.tex:79`; reader gu-tableaux.pdf assembled page 139.
+- `OLTAB-008-O001` / `OLP-0108:B0009`: `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:79` → `gu/content/first-order-logic/tableaux/provability-quantifiers.tex:79`; reader gu-axiomatic-deduction.pdf assembled page 140.
 
 ## OLTAB-009: B in five quantified-premise occurrences → A in the same occurrences
 
@@ -2345,7 +2387,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-009-O001` / `OLP-0109:B0015`: `upstream/content/first-order-logic/tableaux/soundness.tex:128` → `gu/content/first-order-logic/tableaux/soundness.tex:123`; reader gu-tableaux.pdf assembled page 141.
+- `OLTAB-009-O001` / `OLP-0109:B0015`: `upstream/content/first-order-logic/tableaux/soundness.tex:128` → `gu/content/first-order-logic/tableaux/soundness.tex:123`; reader gu-axiomatic-deduction.pdf assembled page 142.
 
 ## OLTAB-010: \eq[t_1][t_2] → \eq[s_1][s_2]
 
@@ -2359,7 +2401,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-010-O001` / `OLP-0110:B0010`: `upstream/content/first-order-logic/tableaux/identity.tex:89` → `gu/content/first-order-logic/tableaux/identity.tex:92`; reader gu-tableaux.pdf assembled page 143.
+- `OLTAB-010-O001` / `OLP-0110:B0010`: `upstream/content/first-order-logic/tableaux/identity.tex:89` → `gu/content/first-order-logic/tableaux/identity.tex:92`; reader gu-axiomatic-deduction.pdf assembled page 144.
 
 ## OLTAB-011: A(s2) as prerequisite → A(s1) as prerequisite
 
@@ -2373,7 +2415,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-011-O001` / `OLP-0110:B0009`: `upstream/content/first-order-logic/tableaux/identity.tex:69` → `gu/content/first-order-logic/tableaux/identity.tex:68`; reader gu-tableaux.pdf assembled page 142.
+- `OLTAB-011-O001` / `OLP-0110:B0009`: `upstream/content/first-order-logic/tableaux/identity.tex:69` → `gu/content/first-order-logic/tableaux/identity.tex:68`; reader gu-axiomatic-deduction.pdf assembled page 143.
 
 ## OLTAB-012: S → \True
 
@@ -2387,7 +2429,259 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-012-O001` / `OLP-0111:B0009`: `upstream/content/first-order-logic/tableaux/soundness-identity.tex:31` → `gu/content/first-order-logic/tableaux/soundness-identity.tex:30`; reader gu-tableaux.pdf assembled page 143.
+- `OLTAB-012-O001` / `OLP-0111:B0009`: `upstream/content/first-order-logic/tableaux/soundness-identity.tex:31` → `gu/content/first-order-logic/tableaux/soundness-identity.tex:30`; reader gu-axiomatic-deduction.pdf assembled page 144.
+
+## OLAX-001: of after PAx → none
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The definition says the set of PAx of axioms, with an extra preposition that obscures PAx as the set being defined.
+- **Rationale:** Stated directly that PAx is the set of axioms and added an adjacent keyed note. The following display enumerates precisely the members of PAx.
+- **Authority:** OLAX-001-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-001 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-001-O001` / `OLP-0114:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:16` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:16`; reader gu-axiomatic-deduction.pdf assembled page 145.
+
+## OLAX-002: two structurally orphaned item commands → enumerate wrapper
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** Both item commands in the quantifier-rule definition occur outside any list environment.
+- **Rationale:** Wrapped the two rules in an enumerate environment and added an adjacent keyed note. LaTeX item commands require a list environment, and the two parallel rules form one ordered list.
+- **Authority:** OLAX-002-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-002 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-002-O001` / `OLP-0115:B0007`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:24`; reader gu-axiomatic-deduction.pdf assembled page 147.
+
+## OLAX-003: a absent only from Gamma and B → a absent from Gamma, B, and A(x)
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** Both quantifier rules exclude the eigenconstant from Gamma and B but fail to exclude it from A(x).
+- **Rationale:** Added exclusion from A(x) to both rules and added an adjacent keyed note. Without the added condition, taking A(x) as x=a in a structure with more than one object licenses an invalid universalization; the later soundness proof also invokes absence from B(x).
+- **Authority:** OLAX-003-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-003 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-003-O001` / `OLP-0115:B0007`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:25` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:26`; reader gu-axiomatic-deduction.pdf assembled page 146.
+
+## OLAX-004: same rule → same reason
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The proof says every replacement occurrence is justified by the same rule as A_k, although A_k may instead be an axiom or a member of Gamma.
+- **Rationale:** Used the broader and exact phrase same reason and added an adjacent keyed note. The immediately preceding definition gives three possible reasons for A_k: axiom, hypothesis, or inference rule.
+- **Authority:** OLAX-004-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-004 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-004-O001` / `OLP-0118:B0015`: `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82` → `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82`; reader gu-axiomatic-deduction.pdf assembled page 149.
+
+## OLAX-005: unbalanced outer consequent → final closing parenthesis
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The first listed derivability fact lacks the closing parenthesis for its outer consequent.
+- **Rationale:** Restored the final closing parenthesis and added an adjacent keyed note. The intended schema composes A implies B with B implies C to obtain A implies C, and the displayed parentheses otherwise remain unbalanced.
+- **Authority:** OLAX-005-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-005 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-005-O001` / `OLP-0119:B0018`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:106` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:112`; reader gu-axiomatic-deduction.pdf assembled page 152.
+
+## OLAX-006: unbalanced consequent → final closing parenthesis
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** A displayed propositional theorem used in the quantified deduction proof lacks its final closing parenthesis.
+- **Rationale:** Restored the final closing parenthesis and added an adjacent keyed note. The theorem curries the conjunction antecedent, requiring two closing parentheses after the quantified consequent.
+- **Authority:** OLAX-006-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-006 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-006-O001` / `OLP-0120:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:44` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:43`; reader gu-axiomatic-deduction.pdf assembled page 152.
+
+## OLAX-007: \Gamma \Proves !B → \Gamma \Proves !A \lif !B
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The proof concludes Gamma proves B although the theorem and immediately preceding derivation require Gamma proves A implies B.
+- **Rationale:** Restored A implies B as the conclusion and added an adjacent keyed note. The theorem statement is the one-way deduction theorem, B is identified with C implies forall x D(x), and the preceding line proves A implies that formula.
+- **Authority:** OLAX-007-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-007 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-007-O001` / `OLP-0120:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:48` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:47`; reader gu-axiomatic-deduction.pdf assembled page 153.
+
+## OLAX-008: second reference ax:land1 → second reference ax:land2
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The proof cites the left-conjunction axiom for both conjunction projections.
+- **Rationale:** Cited the right-conjunction axiom for the second projection and added an adjacent keyed note. The axiom display labels the A projection ax:land1 and the B projection ax:land2.
+- **Authority:** OLAX-008-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-008 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-008-O001` / `OLP-0122:B0008`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:33` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:34`; reader gu-axiomatic-deduction.pdf assembled page 154.
+
+## OLAX-009: reference ax:lnot1 → reference ax:lnot2
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The proof attributes not-A implies A implies false to ax:lnot1, although it is the B=false instance of ax:lnot2.
+- **Rationale:** Cited ax:lnot2 and added an adjacent keyed note. The axiom display defines ax:lnot2 as not A implies A implies B.
+- **Authority:** OLAX-009-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-009 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-009-O001` / `OLP-0122:B0010`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:50` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:55`; reader gu-axiomatic-deduction.pdf assembled page 154.
+
+## OLAX-010: modus ponsens → modus ponens
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The rule name modus ponens is misspelled as modus ponsens.
+- **Rationale:** Used the established Gujarati form of modus ponens and added an adjacent keyed note. The rule is defined and abbreviated as modus ponens in the same chapter.
+- **Authority:** OLAX-010-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-010 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-010-O001` / `OLP-0122:B0010`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:58` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:34`; reader gu-axiomatic-deduction.pdf assembled page 154.
+
+## OLAX-011: \top → \ltrue
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The proof switches from the configured language symbol ltrue to a raw top symbol.
+- **Rationale:** Used ltrue consistently and added an adjacent keyed note. The preceding and following formulas and ax:ltrue all use the language macro ltrue.
+- **Authority:** OLAX-011-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-011 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-011-O001` / `OLP-0123:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:29` → `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:29`; reader gu-axiomatic-deduction.pdf assembled page 154.
+
+## OLAX-012: deduction theorem again → ltrue axiom plus modus ponens
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The final step from ltrue implies forall x A(x) to forall x A(x) is attributed to the deduction theorem again.
+- **Rationale:** Used the ltrue axiom and modus ponens as the actual final inference and added an adjacent keyed note. The premise ltrue is an axiom and modus ponens applied to it and the displayed implication yields the claimed result.
+- **Authority:** OLAX-012-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-012 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-012-O001` / `OLP-0123:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:30` → `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:31`; reader gu-axiomatic-deduction.pdf assembled page 155.
+
+## OLAX-013: B(x) or B(c) without marker → B(x) or B(c) with marker
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** Three formula-variable occurrences omit the source authoring marker before B.
+- **Rationale:** Restored the marker in all three occurrences and added an adjacent keyed note. Every neighbouring occurrence in the rule, substitution, satisfaction and extensionality argument uses the marked formula variable B.
+- **Authority:** OLAX-013-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-013 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-013-O001` / `OLP-0124:B0012`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:80` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:114`; reader gu-axiomatic-deduction.pdf assembled page 156.
+
+## OLAX-014: unstated remaining axiom cases → q2 substitution direction and propositional truth-table cases
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The proposition covers every axiom, but the first-order proof presents only q1 and leaves q2 and the propositional schemas unstated.
+- **Rationale:** Made explicit that q2 follows by the reverse substitution direction and that truth tables verify the propositional schemas, then added an adjacent keyed note. The chapter's axiom inventory consists of q1, q2 and the displayed propositional schemas.
+- **Authority:** OLAX-014-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-014 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-014-O001` / `OLP-0124:B0008`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:42` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:57`; reader gu-axiomatic-deduction.pdf assembled page 155.
+
+## OLAX-015: arbitrary terms t, t1 and t2 → closed terms t, t1 and t2
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** Two propositions are stated for arbitrary terms although the immediately governing identity axiom schemas are restricted to closed terms.
+- **Rationale:** Restricted both propositions to closed terms and added an adjacent keyed note. The displayed identity axiom definition explicitly quantifies only over closed terms, and the supplied proofs instantiate those axioms directly.
+- **Authority:** OLAX-015-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-015 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-015-O001` / `OLP-0125:B0011`: `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:39` → `gu/content/first-order-logic/axiomatic-deduction/identity.tex:43`; reader gu-axiomatic-deduction.pdf assembled page 157.
+
+## OLAX-016: B_i without marker → B_i with marker
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** One repeated occurrence of B_i lacks the source authoring marker used by every other formula variable in the derivation.
+- **Rationale:** Restored the marker and added an adjacent keyed note. The displayed concatenated derivation and every preceding reference identify the same sequence members as marked formula variables B_i.
+- **Authority:** OLAX-016-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-016 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-016-O001` / `OLP-0118:B0015`: `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82` → `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82`; reader gu-axiomatic-deduction.pdf assembled page 150.
+
+## OLAX-017: \in \Gamma \cup \{!A\} without a left operand → !B \in \Gamma \cup \{!A\}
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The membership symbol is isolated in a separate math span from its left operand B, leaving an ill-formed mathematical fragment.
+- **Rationale:** Expressed B as a member of Gamma union {A} in one coherent statement and added an adjacent keyed note. The induction basis has exactly the two cases B belongs to Gamma union {A}, or B is an axiom.
+- **Authority:** OLAX-017-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-017 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-017-O001` / `OLP-0119:B0014`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:67` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64`; reader gu-axiomatic-deduction.pdf assembled page 151.
+
+## OLAX-018: valid in both renderings → valid for FOL and tautological for PL
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The shared FOL and propositional chapter calls every derivable propositional formula valid instead of using the corresponding term tautology.
+- **Rationale:** Selected validity for FOL and tautologicity for the propositional rendering, with an adjacent keyed note. The same file already uses the identical FOL conditional distinction in the theorem proof and weak-soundness corollary.
+- **Authority:** OLAX-018-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLAX-018 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLAX-018-O001` / `OLP-0124:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:22` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:22`; reader gu-axiomatic-deduction.pdf assembled page 155.
 
 ## GU-SCRIPT-001: English Latin-script prose → ગુજરાતી લિપિ (Unicode NFC)
 
@@ -2399,7 +2693,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-SCRIPT-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-tableaux.pdf assembled page 8.
+- `GU-SCRIPT-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-REGISTER-001: Open Logic educational and scholarly exposition → સમકાલીન શૈક્ષણિક અને શાસ્ત્રીય ગુજરાતી
 
@@ -2411,7 +2705,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-REGISTER-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-tableaux.pdf assembled page 8.
+- `GU-REGISTER-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-axiomatic-deduction.pdf assembled page 9.
 
 ## GU-NOTATION-001: Latin and Greek variables, logical signs, and Arabic digits in formulas → આંતરરાષ્ટ્રીય ગણિતીય સંજ્ઞા; ગુજરાતી ગદ્યમાં ગુજરાતી અંકો સ્વીકાર્ય
 
@@ -2423,4 +2717,4 @@ Occurrences:
 
 Occurrences:
 
-- `GU-NOTATION-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-tableaux.pdf assembled page 8.
+- `GU-NOTATION-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-axiomatic-deduction.pdf assembled page 9.

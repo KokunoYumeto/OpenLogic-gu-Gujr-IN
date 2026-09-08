@@ -60,6 +60,10 @@
 \newcommand{\subst}[2]{#1/#2}
 \newcommand{\SSubst}[2]{#1[#2]}
 \newcommand{\Subst}[3]{#1[\subst{#2}{#3}]}
+\providecommand{\MP}{\textsc{mp}}
+\providecommand{\QR}{\textsc{qr}}
+\providecommand{\Hyp}{\textsc{Hyp}}
+\providecommand{\PAx}{\mathrm{Ax}_0}
 \NewDocumentCommand{\lexists}{t{!} o o}{%
   \exists\IfBooleanTF{#1}{!}{}\IfNoValueTF{#2}{}{#2}\IfNoValueTF{#3}{}{\,#3}}
 \NewDocumentCommand{\lforall}{o o}{%
@@ -140,7 +144,31 @@
 \newlength{\olphotowidth}
 \setlength{\olphotowidth}{.4\textwidth}
 \RenewDocumentCommand{\olasset}{O{\olphotowidth} m}{\centering\resizebox{#1}{!}{\input{upstream/#2}}}
-\input{build/tableaux-available-labels.tex}
+\providecommand{\gueditiontitle}{ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી}
+\providecommand{\gueditionheading}{%
+  ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+  અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન,
+  સ્વાભાવિક નિગમન અને ટેબ્લો}
+\providecommand{\gueditiondescription}{%
+  આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે શાસ્ત્રીય પ્રથમ-ક્રમના તર્કશાસ્ત્ર
+  માટે ચિહ્નિત વિશ્લેષણાત્મક ટેબ્લો ઉમેર્યાં છે. તેમાં વિધાનાત્મક અને
+  પરિમાણક નિયમો, ખુલ્લી અને બંધ શાખાઓ, ટેબ્લો-રચના,
+  સાબિતી-સૈદ્ધાંતિક ખ્યાલો, સુસંગતતા, યથાર્થતા અને તાદાત્મ્યનો સમાવેશ છે.}
+\providecommand{\gueditioncount}{૧૦૮}
+\providecommand{\gueditionbodyfile}{build/tableaux-body.tex}
+\providecommand{\gueditionlabelsfile}{build/tableaux-available-labels.tex}
+\providecommand{\gueditioncorrectionids}{%
+  OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+  OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+  OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006,
+  OLND-001થી OLND-006 અને OLTAB-001થી OLTAB-012 સુધીની}
+\providecommand{\gueditioneditorial}{%
+  ટેબ્લોના નવા પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી
+  પસંદ કરી છે. તેથી વિધાનાત્મક અને પરિમાણક નિયમો, આઇગનચલ-શરત,
+  કટ નિયમ અને તાદાત્મ્ય સામેલ છે. ટેબ્લો, ચિહ્નિત સૂત્ર અને
+  આઇગનચલ માટેનાં ગુજરાતી રૂપો કામચલાઉ છે અને નિષ્ણાત ચકાસણી માટે
+  ચિહ્નિત છે.}
+\input{\gueditionlabelsfile}
 \renewcommand{\oliflabeldef}[3]{\ifcsname guavailable@#1\endcsname#2\else#3\fi}
 \let\guoriginalref\ref
 \expandafter\def\csname guexternalref@sfr:siz::chap\endcsname{\guoriginalref{sfr:siz:int:sec}}
@@ -155,6 +183,8 @@
   \href{https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/set-theory/ord-arithmetic}{મૂળ ગ્રંથનું ક્રમસંખ્યાઓના અંકગણિતનું પ્રકરણ}}
 \expandafter\def\csname guexternalref@fol:syn:sem:prop:quant-terms\endcsname{%
   \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex}{મૂળ ગ્રંથનું પરિમાણક અને પદ અંગેનું વિધાન}}
+\expandafter\def\csname guexternalref@fol:syn:sem:thm:sem-deduction\endcsname{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/semantic-notions.tex}{મૂળ ગ્રંથનું અર્થવિચારી નિગમન પ્રમેય}}
 \expandafter\def\csname guexternalref@fol:syn:ass:prop:sat-quant\endcsname{%
   \href{https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/syntax-and-semantics/assignments.tex}{મૂળ ગ્રંથનું પરિમાણક-સંતોષ અંગેનું વિધાન}}
 \expandafter\def\csname guexternalref@fol:syn:ass:prop:sentence-sat-true\endcsname{%
@@ -173,7 +203,7 @@
   \else
     \guoriginalref{#1}%
   \fi}
-\hypersetup{pdftitle={ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી}}
+\hypersetup{pdftitle={\gueditiontitle}}
 \begin{document}
 \renewcommand{\ref}[1]{%
   \ifcsname guexternalref@#1\endcsname
@@ -182,21 +212,16 @@
     \guoriginalref{#1}%
   \fi}
 \begin{titlepage}
-{\LARGE\bfseries ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
-અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન
-સ્વાભાવિક નિગમન અને ટેબ્લો\par}
+{\LARGE\bfseries \gueditionheading\par}
 \vspace{1em}
 {\Large ઓપન લોજિક — ગુજરાતી\par}
 \vspace{2em}
 ઓપન લોજિક પ્રોજેક્ટના અંગ્રેજી મૂળનો ગુજરાતી અનુવાદ.\par
 \vspace{1em}
-આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે શાસ્ત્રીય પ્રથમ-ક્રમના તર્કશાસ્ત્ર
-માટે ચિહ્નિત વિશ્લેષણાત્મક ટેબ્લો ઉમેર્યાં છે. તેમાં વિધાનાત્મક અને
-પરિમાણક નિયમો, ખુલ્લી અને બંધ શાખાઓ, ટેબ્લો-રચના,
-સાબિતી-સૈદ્ધાંતિક ખ્યાલો, સુસંગતતા, યથાર્થતા અને તાદાત્મ્યનો સમાવેશ છે.\par
+\gueditiondescription\par
 \vfill
 આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.
-આ આવૃત્તિમાં મૂળનાં ૧૦૮ એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
+આ આવૃત્તિમાં મૂળનાં \gueditioncount{} એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
 કેટલીક વિશિષ્ટ પરિભાષા કામચલાઉ છે. ચકાસણીની વિગતો અને
 મૂળ પાઠ વિશેની નોંધો સંપાદકીય માહિતીમાં આપેલી છે.\par
 \vspace{1em}
@@ -206,24 +231,17 @@
 \end{titlepage}
 \tableofcontents
 \clearpage
-\input{build/tableaux-body.tex}
+\input{\gueditionbodyfile}
 \clearpage
 \section*{સંપાદકીય નોંધો}
 \addcontentsline{toc}{section}{સંપાદકીય નોંધો}
 આ નોંધો મૂળ પાઠથી અલગ છે. મૂળની ગણિતીય નિશાનીઓ જાળવી છે.
-OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
-OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
-OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006 અને
-OLND-001થી OLND-006 અને OLTAB-001થી OLTAB-012 સુધીની ઓળખવાળી
+\gueditioncorrectionids{} ઓળખવાળી
 નોંધો સ્થિર અંગ્રેજી મૂળમાં મળેલી ખામીઓ અને ગુજરાતી પાઠમાં કરેલા
 મર્યાદિત સુધારા બાજુબાજુ દર્શાવે છે. દરેક સુધારાની ચોક્કસ જગ્યા,
 કારણ અને સૂત્રમાં થયેલો ફેરફાર નિર્ણય-અભિલેખમાં નોંધાયેલ છે.
 
-ટેબ્લોના નવા પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી
-પસંદ કરી છે. તેથી વિધાનાત્મક અને પરિમાણક નિયમો, આઇગનચલ-શરત,
-કટ નિયમ અને તાદાત્મ્ય સામેલ છે. ટેબ્લો, ચિહ્નિત સૂત્ર અને
-આઇગનચલ માટેનાં ગુજરાતી રૂપો કામચલાઉ છે અને નિષ્ણાત ચકાસણી માટે
-ચિહ્નિત છે.
+\gueditioneditorial
 
 નિષ્પત્તિ, સ્વયંસિદ્ધિ, અનુમાન, સુસંગતતા, પૂર્ણતા અને સાબિતી જેવા
 પદો ગુજરાતી વિશ્વકોશ અને પાઠ્યસામગ્રીના તપાસેલા પ્રયોગો સાથે

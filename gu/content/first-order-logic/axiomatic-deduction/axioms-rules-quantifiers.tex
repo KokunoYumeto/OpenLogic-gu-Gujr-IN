@@ -1,0 +1,50 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: axioms-rules-quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{qua}
+
+\olsection{પરિમાણકો માટે સ્વયંસિદ્ધિઓ અને નિયમો}
+
+\begin{defn}[પરિમાણકો માટેની સ્વયંસિદ્ધિઓ]
+પરિમાણકોને નિયંત્રિત કરતી \emph{સ્વયંસિદ્ધિઓ} નીચેના સ્વરૂપોના બધા
+દૃષ્ટાંતો છે:
+\begin{align}
+\ollabel{ax:q1} & \lforall[x][!B] \lif !B(t), \\
+\ollabel{ax:q2} & !B(t) \lif \lexists[x][!B].
+\end{align}
+જ્યાં $t$ કોઈપણ બંધ પદ છે.
+\end{defn}
+
+\begin{defn}[પરિમાણકો માટેના નિયમો]
+\begin{enumerate}
+\item જો $!B \lif !A(a)$ પહેલેથી !!{derivation}માં આવતું હોય અને
+  $a$ એ~$\Gamma$, $!B$ કે~$!A(x)$માં ન આવતું હોય, તો $!B \lif
+  \lforall[x][!A(x)]$ યોગ્ય અનુમાન-પગલું છે.
+\item જો $!A(a) \lif !B$ પહેલેથી !!{derivation}માં આવતું હોય અને
+  $a$ એ~$\Gamma$, $!B$ કે~$!A(x)$માં ન આવતું હોય, તો
+  $\lexists[x][!A(x)] \lif
+  !B$ યોગ્ય અનુમાન-પગલું છે.
+\end{enumerate}
+\end{defn}
+
+\sourcecorrection{OLAX-002}{મૂળની
+\texttt{axioms-rules-quantifiers.tex}, પંક્તિઓ 23--30માં બંને
+\texttt{\string\item} કોઈ યાદી-પર્યાવરણ વિના મૂકવામાં આવ્યાં છે. અહીં
+બંને નિયમોને \texttt{enumerate}માં મૂકીને માન્ય લેટેક રચના કરી છે.}
+
+\sourcecorrection{OLAX-003}{મૂળની
+\texttt{axioms-rules-quantifiers.tex}, પંક્તિઓ 24--30ની બંને
+આઇગનચલ-શરતોમાં $a$ને~$\Gamma$ અને~$!B$માંથી જ બાકાત રાખ્યો છે, પરંતુ
+$!A(x)$માંથી નહિ. પછીની યથાર્થતાની સાબિતી માટે પણ આ વધારાની શરત જરૂરી
+છે; તેના વિના $!A(x)\ident\eq[x][a]$ લેવાથી બહુ-ઘટક સંરચનામાં અમાન્ય
+સર્વત્રીકરણ મળી શકે. તેથી બંને નિયમોમાં $a$ એ~$!A(x)$માં પણ ન આવે એ
+શરત ઉમેરી છે.}
+
+આ બંનેમાંથી કોઈપણ નિયમને આપણે ટૂંકમાં ``\QR'' લખીશું.
+
+\end{document}

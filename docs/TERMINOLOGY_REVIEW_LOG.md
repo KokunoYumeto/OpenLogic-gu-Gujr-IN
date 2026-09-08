@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-05T16:39:44.707795+00:00. This is a **complete decision log for the current 80/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 80/722 units with checkpoint 009. It contains all 123 terminology decisions from the durable ledger and all 35 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-08T01:09:47.091782+00:00. This is a **complete decision log for the current 122/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 108/722 units with checkpoint 011. It contains all 126 terminology decisions from the durable ledger and all 71 source corrections identified so far. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -1124,7 +1124,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted_derivation`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
 - **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
 - **English use:** `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:88` (OLP-0009, “proof”); `upstream/content/sets-functions-relations/relations/trees.tex:15` (OLP-0018, “derivation”); `upstream/content/first-order-logic/proof-systems/introduction.tex:53` (OLP-0064, “derivable”)
-- **Gujarati use:** `gu/content/sets-functions-relations/sets/russells-paradox.tex:56` (OLP-0010, “સાબિતી”); `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:54` (OLP-0053, “નિષ્પત્તિ”)
+- **Gujarati use:** `gu/content/sets-functions-relations/sets/russells-paradox.tex:56` (OLP-0010, “સાબિતી”); `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:54` (OLP-0053, “નિષ્પત્તિ”); `gu/content/first-order-logic/natural-deduction/quantifier-rules.tex:101` (OLP-0087, “નિષ્પન્ન કરી શકાય એવું”)
 - **Authorities actually checked:** `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The canon directly uses સાબિતી for finite proof and નિષ્પન્ન for derivation from primitive propositions. The noun નિષ્પત્તિ is already established in this edition; the system compound and modal phrase make the syntactic role explicit.
 - **Alternatives:** ઉપપત્તિ / વ્યુત્પત્તિ — possible learned-register alternatives, but neither was found in the checked Gujarati mathematical-logic passages.
@@ -1135,7 +1135,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or scope remains open to expert correction.
 - **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
 - **English use:** `upstream/content/sets-functions-relations/functions/inverses.tex:106` (OLP-0024, “axiom”); `upstream/content/first-order-logic/proof-systems/axiomatic-deduction.tex:67` (OLP-0068, “axiom system”)
-- **Gujarati use:** `gu/content/sets-functions-relations/relations/reflections.tex:57` (OLP-0013, “સ્વયંસિદ્ધિ”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:35` (OLP-0068, “સ્વયંસિદ્ધિ-તંત્ર”)
+- **Gujarati use:** `gu/content/sets-functions-relations/relations/reflections.tex:57` (OLP-0013, “સ્વયંસિદ્ધિ”); `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:16` (OLP-0122, “સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ”); `gu/content/first-order-logic/axiomatic-deduction/identity.tex:14` (OLP-0125, “સ્વયંસિદ્ધિ-પ્રરૂપ”); `gu/content/first-order-logic/proof-systems/axiomatic-deduction.tex:35` (OLP-0068, “સ્વયંસિદ્ધિ-તંત્ર”)
 - **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The canon discusses propositions satisfying axioms and a symbolic axiomatic approach; સ્વયંસિદ્ધિ is also already used for the axiom of choice in the edition. The schema compound is a transparent contextual extension.
 - **Alternatives:** પૂર્વધારણા / પૂર્વધારણાયુક્ત તંત્ર — directly attested as broader explanatory wording and retained in the rationale, while સ્વયંસિદ્ધિ distinguishes a formal axiom line in these sections.
@@ -1212,7 +1212,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
 - **English use:** `upstream/content/sets-functions-relations/sets/russells-paradox.tex:64` (OLP-0010, “assumption”); `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:49` (OLP-0066, “discharge”)
-- **Gujarati use:** `gu/content/sets-functions-relations/sets/russells-paradox.tex:66` (OLP-0010, “ધારણા”)
+- **Gujarati use:** `gu/content/sets-functions-relations/sets/russells-paradox.tex:66` (OLP-0010, “ધારણા”); `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:89` (OLP-0090, “અનિવૃત્ત ધારણા”)
 - **Authorities actually checked:** `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The temporary proof role is explained in full before the technical verb is used. નિવૃત્ત marks that the assumption's scope ends without suggesting that the formula is false.
 - **Alternatives:** ધારણા રદ કરવી / ધારણા છોડી દેવી — more conversational variants that can wrongly suggest rejection rather than scope closure.
@@ -1233,8 +1233,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `provisional_transliteration`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** contemporaneous_proof_systems_translation; `work/record_proof_systems_terms.py`.
-- **English use:** `upstream/content/first-order-logic/proof-systems/tableaux.tex:13` (OLP-0067, “tableau”); `upstream/content/first-order-logic/proof-systems/tableaux.tex:16` (OLP-0067, “signed formula”)
-- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “ટેબ્લો”); `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “સત્ય-વૃક્ષ”)
+- **English use:** `upstream/content/first-order-logic/proof-systems/tableaux.tex:13` (OLP-0067, “tableau”); `upstream/content/first-order-logic/proof-systems/tableaux.tex:16` (OLP-0067, “signed formula”); `upstream/content/first-order-logic/tableaux/provability-consistency.tex:90` (OLP-0106, “closed tableau”)
+- **Gujarati use:** `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “ટેબ્લો”); `gu/content/first-order-logic/proof-systems/introduction.tex:39` (OLP-0064, “સત્ય-વૃક્ષ”); `gu/content/first-order-logic/tableaux/provability-quantifiers.tex:87` (OLP-0108, “ચિહ્નિત સૂત્ર”); `gu/content/first-order-logic/tableaux/propositional-rules.tex:91` (OLP-0100, “બંધ ટેબ્લો”)
 - **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The checked Gujarati sources support truth, formula and finite proof but do not name this proof system. The technical name is transliterated and every structural term is defined in place.
 - **Alternatives:** સારણી / અર્થવૃક્ષ — rejected because સારણી is already used for truth table and the source system is conventionally called tableau.
@@ -1360,6 +1360,39 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Chosen sense and rationale:** વાક્ય is directly supported in logical analysis. બંધ પદ is a transparent compositional rendering of a term with no free variable, and the source supplies that definition at first use.
 - **Alternatives:** મુક્તચલવિહોણું પદ — an accurate explanatory expansion, retained in the in-place definition rather than used as the repeating term.
 - **Review question:** Please double-check whether ‘બંધ પદ / વાક્ય’ accurately expresses ‘closed term / sentence’ in Gujarati mathematical-logic prose with this scope: વાક્ય is directly supported in logical analysis. બંધ પદ is a transparent compositional rendering of a term with no free variable, and the source supplies that definition at first use. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T124: deduction theorem → નિગમન પ્રમેય
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or proof-theoretic scope remains open to expert correction.
+- **Record origin:** contemporaneous_axiomatic_deduction_translation; `work/add_axiomatic_terms.py`.
+- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83` (OLP-0062, “deduction theorem”)
+- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84` (OLP-0062, “નિગમન પ્રમેય”)
+- **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** નિગમન is established in the edition for deduction and the checked canon directly supports formal consequence, derivation from assumptions, system-relative proof and rule-governed reasoning. The displayed biconditional fixes the metatheorem's exact syntactic scope.
+- **Alternatives:** નિષ્પત્તિ પ્રમેય — would blur the distinction between a derivation and the theorem that internalizes an added hypothesis.; અનુમાન પ્રમેય — could be confused with an inference rule or mathematical induction.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘નિગમન પ્રમેય’ accurately express ‘deduction theorem’ with the scope stated here: નિગમન is established in the edition for deduction and the checked canon directly supports formal consequence, derivation from assumptions, system-relative proof and rule-governed reasoning. The displayed biconditional fixes the metatheorem's exact syntactic scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T125: contraposition / ex falso quodlibet / explosion / double negation elimination → પ્રતિપક્ષન / એક્સ ફાલ્સો ક્વોડલિબેટ / વિસ્ફોટ / દ્વિ-નિષેધ નિકાલ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or proof-theoretic scope remains open to expert correction.
+- **Record origin:** contemporaneous_axiomatic_deduction_translation; `work/add_axiomatic_terms.py`.
+- **English use:** `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:110` (OLP-0119, “contraposition”); `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:112` (OLP-0119, “ex falso quodlibet”); `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:112` (OLP-0119, “explosion”); `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:114` (OLP-0119, “double negation elimination”)
+- **Gujarati use:** `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:115` (OLP-0119, “પ્રતિપક્ષન”); `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:117` (OLP-0119, “એક્સ ફાલ્સો ક્વોડલિબેટ”); `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:117` (OLP-0119, “વિસ્ફોટ”); `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:119` (OLP-0119, “દ્વિ-નિષેધ નિકાલ”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P071` (GU-VK-WITTGENSTEIN, {"line_one_based": 20, "last_line_one_based": 20, "utf8_start": 24066, "utf8_end": 27691, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The canon directly attests implication, negation, contradiction, finite proof and formal consequence. પ્રતિપક્ષન and દ્વિ-નિષેધ નિકાલ state the operations compositionally; the traditional Latin label is transliterated beside the descriptive વિસ્ફોટ, and every displayed formula controls the exact rule.
+- **Alternatives:** પ્રતિસ્થાપન — rejected because it already denotes substitution rather than contraposition.; વિરોધાભાસમાંથી કંઈપણ — accurate explanatory prose, but less suitable as the compact named rule beside the traditional label.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રતિપક્ષન / એક્સ ફાલ્સો ક્વોડલિબેટ / વિસ્ફોટ / દ્વિ-નિષેધ નિકાલ’ accurately express ‘contraposition / ex falso quodlibet / explosion / double negation elimination’ with the scope stated here: The canon directly attests implication, negation, contradiction, finite proof and formal consequence. પ્રતિપક્ષન and દ્વિ-નિષેધ નિકાલ state the operations compositionally; the traditional Latin label is transliterated beside the descriptive વિસ્ફોટ, and every displayed formula controls the exact rule. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T126: proof-theoretic notions / proof-theoretic property → સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_axiomatic_deduction_translation; `work/add_axiomatic_terms.py`.
+- **English use:** `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18` (OLP-0077, “proof-theoretic notions”)
+- **Gujarati use:** `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:23` (OLP-0077, “સાબિતી-સૈદ્ધાંતિક ખ્યાલો”); `gu/content/first-order-logic/sequent-calculus/soundness.tex:19` (OLP-0081, “સાબિતી-સૈદ્ધાંતિક ગુણધર્મ”)
+- **Authorities actually checked:** `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains.
+- **Alternatives:** ઉપપત્તિશાસ્ત્રીય ખ્યાલ — a possible learned-register compound not found in the checked Gujarati sources.; સિદ્ધાંતાત્મક ગુણધર્મ — too broad because it does not identify proof theory.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ’ accurately express ‘proof-theoretic notions / proof-theoretic property’ with the scope stated here: સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains. If not, which attested form and inflection should replace it, and at which listed target locations?
 
 ## Difficult source-correction decisions
 
@@ -1712,3 +1745,363 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEQ-006 without changing any unaffected claim or formula?
+
+### OLND-001: confirmed_copied_sequent_term_in_sentence_tree
+
+- **Frozen source:** `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex` at `rules-and-proofs.tex:33`; SHA-256 `e6e8bed6816bd64ac24342fd4d591ca0e7c1ddf82fc056b452aa87c45d810506`.
+- **Gujarati target:** `gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex` body line(s) 32; adjacent note line 41; SHA-256 `31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee`.
+- **Chosen handling:** Read the copied term as ‘sentences’ and added an adjacent keyed note.
+- **Rationale:** The natural-deduction tree is explicitly a tree of sentences, but one copied phrase calls the nodes above a sentence ‘sequents’.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLND-001 without changing any unaffected claim or formula?
+
+### OLND-002: confirmed_copied_end_sequent_term_in_natural_deduction
+
+- **Frozen source:** `upstream/content/first-order-logic/natural-deduction/proving-things.tex` at `proving-things.tex:67`; SHA-256 `d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc`.
+- **Gujarati target:** `gu/content/first-order-logic/natural-deduction/proving-things.tex` body line(s) 59; adjacent note line 63; SHA-256 `ff8d304b76983fd480a52086a4c2fbf9f9f0f4659df28c8822ee743a803eadd3`.
+- **Chosen handling:** Referred to the sentence in the conclusion and added an adjacent keyed note.
+- **Rationale:** The prose calls the final natural-deduction sentence a sentence in the end-sequent, although no sequent occurs in this proof system or example.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLND-002 without changing any unaffected claim or formula?
+
+### OLND-003: confirmed_wrong_rule_label_on_contradiction_step
+
+- **Frozen source:** `upstream/content/first-order-logic/natural-deduction/proving-things.tex` at `proving-things.tex:133`; SHA-256 `d39069643439c576cb5813ef635725ac09ef83257571e380b92dfa223a801ecc`.
+- **Gujarati target:** `gu/content/first-order-logic/natural-deduction/proving-things.tex` body line(s) 125; adjacent note line 140; SHA-256 `ff8d304b76983fd480a52086a4c2fbf9f9f0f4659df28c8822ee743a803eadd3`.
+- **Chosen handling:** Relabelled the step as negation elimination and added an adjacent keyed note.
+- **Rationale:** A binary step from not-A and A to falsity is labelled falsity introduction, although the defined falsity-introduction rule is unary and derives an arbitrary formula from falsity.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLND-003 without changing any unaffected claim or formula?
+
+### OLND-004: confirmed_missing_negation_in_eigenvariable_check
+
+- **Frozen source:** `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex` at `proving-things-quant.tex:39`; SHA-256 `962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f`.
+- **Gujarati target:** `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex` body line(s) 35; adjacent note line 38; SHA-256 `d209af97317ad61cc26a4da1cd40366e592b982c6b7f429c77070ed698e7b81a`.
+- **Chosen handling:** Restored the negation in the prose premise and added an adjacent keyed note.
+- **Rationale:** The eigenvariable discussion drops the negation from the existential premise used throughout the declared goal and every adjacent proof tree.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLND-004 without changing any unaffected claim or formula?
+
+### OLND-005: confirmed_undefined_existential_elimination_operator
+
+- **Frozen source:** `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex` at `proving-things-quant.tex:91`; SHA-256 `962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f`.
+- **Gujarati target:** `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex` body line(s) 88; adjacent note line 91; SHA-256 `d209af97317ad61cc26a4da1cd40366e592b982c6b7f429c77070ed698e7b81a`.
+- **Chosen handling:** Used the defined existential-elimination operator consistently and added an adjacent keyed note.
+- **Rationale:** The final eigenvariable check uses the raw TeX existential symbol rather than the chapter's defined logical existential operator inside the elimination-rule macro.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLND-005 without changing any unaffected claim or formula?
+
+### OLND-006: confirmed_undefined_universal_elimination_operator
+
+- **Frozen source:** `upstream/content/first-order-logic/natural-deduction/soundness.tex` at `soundness.tex:207`; SHA-256 `8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9`.
+- **Gujarati target:** `gu/content/first-order-logic/natural-deduction/soundness.tex` body line(s) 202; adjacent note line 204; SHA-256 `23055ad895028174f53f9061f2724fdd4f8df49941d2d085216c4bda6d32cbb8`.
+- **Chosen handling:** Used the defined universal-elimination operator consistently and added an adjacent keyed note.
+- **Rationale:** One soundness case uses the raw TeX universal symbol rather than the chapter's defined logical universal operator inside the elimination-rule macro.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLND-006 without changing any unaffected claim or formula?
+
+### OLTAB-001: confirmed_copied_natural_deduction_name_in_tableaux_driver
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/tableaux.tex` at `tableaux.tex:15`; SHA-256 `1c6e7018e63cae3440e85d537303288261afd422b9e13bc455b99c2d206aa1b6`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/tableaux.tex` body line(s) 15; adjacent note line 17; SHA-256 `a3e7ac8d0723cce7fe690054403a03f6be495a5a3cbf8f9a2f97f6ca0d378dc7`.
+- **Chosen handling:** Referred to tableaux and added an adjacent keyed note.
+- **Rationale:** The tableaux chapter driver calls the proof system natural deduction although its chapter, imports and prfTab profile all concern tableaux.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-001 without changing any unaffected claim or formula?
+
+### OLTAB-002: confirmed_conflated_signed_assumptions_in_exercise
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/proving-things.tex` at `proving-things.tex:439`; SHA-256 `6940ff2f8466cfb9dc740a4e7aa2cf9551c9a3d3304aa8ebe93217d11e451e90`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/proving-things.tex` body line(s) 437; adjacent note line 443; SHA-256 `18e0c01c0b070c994c9c640539da0ea31b7adb6fd014032213e0fea16033eb81`.
+- **Chosen handling:** Restored the negated formula as a separate true-signed assumption and added an adjacent keyed note.
+- **Rationale:** An exercise places a comma and negated formula inside the first signed-formula argument, so it is not one well-formed signed formula.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-002 without changing any unaffected claim or formula?
+
+### OLTAB-003: confirmed_missing_finite_set_braces
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex` at `proof-theoretic-notions.tex:105`; SHA-256 `38a3260d51ba6fc9db22f6b40b1a57f5c46e80d2a008053beffbb7cf5eff7e71`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex` body line(s) 106; adjacent note line 134; SHA-256 `05a2f37ff1201fab781e5dd0faba149daa056a37869e04e36904057edebc4777`.
+- **Chosen handling:** Restored braces around the finite subset and added an adjacent keyed note.
+- **Rationale:** The transitivity proof applies the subset relation to an individual terminal sentence rather than to the finite collection of D-sentences.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-003 without changing any unaffected claim or formula?
+
+### OLTAB-004: confirmed_wrong_terminal_index_in_second_finite_set
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/provability-consistency.tex` at `provability-consistency.tex:26`; SHA-256 `1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/provability-consistency.tex` body line(s) 26; adjacent note line 38; SHA-256 `06fb3b1be5d82522eaaab3e975f208e4884c05c5a67ba5d0d7e0b2aadabd50eb`.
+- **Chosen handling:** Restored terminal index m and added an adjacent keyed note.
+- **Rationale:** The second finite subset ends at C_n although its immediately displayed members and the remainder of the proof end at C_m.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-004 without changing any unaffected claim or formula?
+
+### OLTAB-005: confirmed_wrong_premise_named_for_true_negation_rule
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/provability-consistency.tex` at `provability-consistency.tex:92`; SHA-256 `1e3cd1b98b0dae48850118a996aa37c04da92108c91d2096e51ac4a19025f348`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/provability-consistency.tex` body line(s) 96; adjacent note line 102; SHA-256 `06fb3b1be5d82522eaaab3e975f208e4884c05c5a67ba5d0d7e0b2aadabd50eb`.
+- **Chosen handling:** Restored true not-A as the rule premise and added an adjacent keyed note.
+- **Rationale:** The proof says the true-negation rule is applied to false A, although it has just replaced that assumption by true not-A.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-005 without changing any unaffected claim or formula?
+
+### OLTAB-006: confirmed_malformed_true_signed_formula_macros
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/provability-propositional.tex` at `provability-propositional.tex:43`; SHA-256 `342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/provability-propositional.tex` body line(s) 63; adjacent note line 72; SHA-256 `bc4f46f02a764209aa652aea1031be8fe0e2496f86cd5272b081896e20a56693`.
+- **Chosen handling:** Restored the two arguments in all four true-signed nodes and added an adjacent keyed note.
+- **Rationale:** Four proof-tree nodes nest each formula inside the truth-sign argument and omit the signed-formula macro's second argument.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-006 without changing any unaffected claim or formula?
+
+### OLTAB-007: confirmed_malformed_false_signed_formula_macros
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/provability-propositional.tex` at `provability-propositional.tex:106`; SHA-256 `342109e7ee29a08f322f02df997f40ca08aa60cc1388f150b7b23c0aaddd9f13`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/provability-propositional.tex` body line(s) 121; adjacent note line 129; SHA-256 `bc4f46f02a764209aa652aea1031be8fe0e2496f86cd5272b081896e20a56693`.
+- **Chosen handling:** Restored the two arguments in all four false-signed nodes and added an adjacent keyed note.
+- **Rationale:** Four proof-tree nodes nest each formula inside the falsity-sign argument and omit the signed-formula macro's second argument.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-007 without changing any unaffected claim or formula?
+
+### OLTAB-008: confirmed_extraneous_punctuation_inside_formula_span
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex` at `provability-quantifiers.tex:79`; SHA-256 `0087b4788815c95c714158f2f37438e351183f97d8388c0acde21c20a6e8aa0f`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/provability-quantifiers.tex` body line(s) 79; adjacent note line 86; SHA-256 `9786a809d09d6b8b12a92bd934667dd94b6caab9b1608be98abf75b7b16ae4dc`.
+- **Chosen handling:** Removed the extraneous comma and added an adjacent keyed note.
+- **Rationale:** An extraneous comma is placed inside the mathematical span after the final signed assumption.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-008 without changing any unaffected claim or formula?
+
+### OLTAB-009: confirmed_formula_letter_mismatch_in_quantified_soundness_cases
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/soundness.tex` at `soundness.tex:128`; SHA-256 `d08c0332f74466555414fa2463a0d32e8bcf40abdf7cab4016c1c48133166a80`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/soundness.tex` body line(s) 123; adjacent note line 158; SHA-256 `291222506a17a5547b8e8b90b0ead8de9b77c8c3b6153839ad28ce3173c3a9a3`.
+- **Chosen handling:** Used A consistently throughout both cases and added an adjacent keyed note.
+- **Rationale:** Two quantified soundness cases switch their quantified premise from A to B while their conclusions and the rest of each argument remain about A.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-009 without changing any unaffected claim or formula?
+
+### OLTAB-010: confirmed_wrong_instantiated_equality_in_transitivity_explanation
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/identity.tex` at `identity.tex:89`; SHA-256 `3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/identity.tex` body line(s) 92; adjacent note line 95; SHA-256 `b31dd806e3355a74f544de6d189bc6e67cca39c665e43369b7b95f265289276d`.
+- **Chosen handling:** Restored the instantiated equality s1=s2 and added an adjacent keyed note.
+- **Rationale:** The transitivity explanation calls line 2 the generic first equality t1=t2, although the declared predicate instance on that line is s1=s2.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-010 without changing any unaffected claim or formula?
+
+### OLTAB-011: confirmed_wrong_argument_in_symmetry_rule_prerequisite
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/identity.tex` at `identity.tex:69`; SHA-256 `3e088c34666999c12f7a9c60aee27e93d0a5e917b9af2afc47115c7c52ef4c1d`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/identity.tex` body line(s) 68; adjacent note line 71; SHA-256 `b31dd806e3355a74f544de6d189bc6e67cca39c665e43369b7b95f265289276d`.
+- **Chosen handling:** Restored A(s1) as the prerequisite and added an adjacent keyed note.
+- **Rationale:** The symmetry explanation names A(s2) as the second prerequisite although the rule instance needs A(s1) to infer A(s2).
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-011 without changing any unaffected claim or formula?
+
+### OLTAB-012: confirmed_undefined_sign_in_true_identity_soundness_case
+
+- **Frozen source:** `upstream/content/first-order-logic/tableaux/soundness-identity.tex` at `soundness-identity.tex:31`; SHA-256 `d86101dc8eb627b831cd3c1f637102f221e755df98c96fe8ba74170f4a60f58b`.
+- **Gujarati target:** `gu/content/first-order-logic/tableaux/soundness-identity.tex` body line(s) 30; adjacent note line 44; SHA-256 `7a0cf8db202a3dbcb17fb8903f28a79a0f28c10900612b44868e7592d7f4a1c3`.
+- **Chosen handling:** Restored the true sign and added an adjacent keyed note.
+- **Rationale:** The soundness case for the true-identity rule gives its conclusion an undefined generic sign S even though both premises and the displayed rule use the true sign.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLTAB-012 without changing any unaffected claim or formula?
+
+### OLAX-001: confirmed_duplicated_preposition_in_axiom_set_definition
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex` at `axioms-rules-propositional.tex:16`; SHA-256 `c6332d0af2635bb1c79d1f0e418f26472cdf1022ed23818ca51e9e1226889810`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex` body line(s) 16; adjacent note line 36; SHA-256 `33c9a80b4a926e08c5a03e3f9eb8b32c0355fd61a6adeebf7e28e7b5a67655df`.
+- **Chosen handling:** Stated directly that PAx is the set of axioms and added an adjacent keyed note.
+- **Rationale:** The definition says the set of PAx of axioms, with an extra preposition that obscures PAx as the set being defined.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-001 without changing any unaffected claim or formula?
+
+### OLAX-002: confirmed_item_commands_outside_list_environment
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex` at `axioms-rules-quantifiers.tex:23`; SHA-256 `fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex` body line(s) 24; adjacent note line 35; SHA-256 `eae7c9239fdbbfc1de118279c2e6729d1570edc018a15641a14e16842ec86157`.
+- **Chosen handling:** Wrapped the two rules in an enumerate environment and added an adjacent keyed note.
+- **Rationale:** Both item commands in the quantifier-rule definition occur outside any list environment.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-002 without changing any unaffected claim or formula?
+
+### OLAX-003: confirmed_incomplete_eigenconstant_conditions_in_both_quantifier_rules
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex` at `axioms-rules-quantifiers.tex:25`; SHA-256 `fa0af48f98b58f2c7b5df8aa80cf2e4981936e237594ddce342e826bbca2ddc8`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex` body line(s) 26; adjacent note line 40; SHA-256 `eae7c9239fdbbfc1de118279c2e6729d1570edc018a15641a14e16842ec86157`.
+- **Chosen handling:** Added exclusion from A(x) to both rules and added an adjacent keyed note.
+- **Rationale:** Both quantifier rules exclude the eigenconstant from Gamma and B but fail to exclude it from A(x).
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-003 without changing any unaffected claim or formula?
+
+### OLAX-004: confirmed_overstated_rule_justification_in_transitivity_proof
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex` at `proof-theoretic-notions.tex:82`; SHA-256 `0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex` body line(s) 82; adjacent note line 86; SHA-256 `8ddc8f4fb15873b3cc76d6ae3ab42aacc3cddea451f2f22cead67d87178189d3`.
+- **Chosen handling:** Used the broader and exact phrase same reason and added an adjacent keyed note.
+- **Rationale:** The proof says every replacement occurrence is justified by the same rule as A_k, although A_k may instead be an axiom or a member of Gamma.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-004 without changing any unaffected claim or formula?
+
+### OLAX-005: confirmed_missing_closing_parenthesis_in_derivability_fact
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex` at `deduction-theorem.tex:106`; SHA-256 `ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex` body line(s) 112; adjacent note line 125; SHA-256 `b557deada5a7da1e9a3f27f805c4df14a48521fb2bb5a6f87d7f2a8c0fff02ff`.
+- **Chosen handling:** Restored the final closing parenthesis and added an adjacent keyed note.
+- **Rationale:** The first listed derivability fact lacks the closing parenthesis for its outer consequent.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-005 without changing any unaffected claim or formula?
+
+### OLAX-006: confirmed_missing_closing_parenthesis_in_displayed_propositional_theorem
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex` at `deduction-theorem-quantifiers.tex:44`; SHA-256 `79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex` body line(s) 43; adjacent note line 53; SHA-256 `161b3919783ad57e965b1c608e8b4b4847a9770ecce817b440b1dc2e3dac8463`.
+- **Chosen handling:** Restored the final closing parenthesis and added an adjacent keyed note.
+- **Rationale:** A displayed propositional theorem used in the quantified deduction proof lacks its final closing parenthesis.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-006 without changing any unaffected claim or formula?
+
+### OLAX-007: confirmed_wrong_final_conclusion_in_quantified_deduction_proof
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex` at `deduction-theorem-quantifiers.tex:48`; SHA-256 `79f2ddf58916652493c2892078b01dd53ae1691a97e28cfed043cbe285d11888`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex` body line(s) 47; adjacent note line 59; SHA-256 `161b3919783ad57e965b1c608e8b4b4847a9770ecce817b440b1dc2e3dac8463`.
+- **Chosen handling:** Restored A implies B as the conclusion and added an adjacent keyed note.
+- **Rationale:** The proof concludes Gamma proves B although the theorem and immediately preceding derivation require Gamma proves A implies B.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-007 without changing any unaffected claim or formula?
+
+### OLAX-008: confirmed_repeated_left_conjunction_axiom_reference
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` at `provability-propositional.tex:33`; SHA-256 `25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` body line(s) 34; adjacent note line 39; SHA-256 `7a2a9e65285fe271a219bbbdcb5e4b332d1c926fee73bafb8ca7c97133a129b4`.
+- **Chosen handling:** Cited the right-conjunction axiom for the second projection and added an adjacent keyed note.
+- **Rationale:** The proof cites the left-conjunction axiom for both conjunction projections.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-008 without changing any unaffected claim or formula?
+
+### OLAX-009: confirmed_wrong_negation_axiom_reference
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` at `provability-propositional.tex:50`; SHA-256 `25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` body line(s) 55; adjacent note line 69; SHA-256 `7a2a9e65285fe271a219bbbdcb5e4b332d1c926fee73bafb8ca7c97133a129b4`.
+- **Chosen handling:** Cited ax:lnot2 and added an adjacent keyed note.
+- **Rationale:** The proof attributes not-A implies A implies false to ax:lnot1, although it is the B=false instance of ax:lnot2.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-009 without changing any unaffected claim or formula?
+
+### OLAX-010: confirmed_misspelled_modus_ponens
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` at `provability-propositional.tex:58`; SHA-256 `25274e10fe6d96292fe2c701b7af38291dd1d98de12a62ef385a5efd1c413007`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex` body line(s) 34; adjacent note line 75; SHA-256 `7a2a9e65285fe271a219bbbdcb5e4b332d1c926fee73bafb8ca7c97133a129b4`.
+- **Chosen handling:** Used the established Gujarati form of modus ponens and added an adjacent keyed note.
+- **Rationale:** The rule name modus ponens is misspelled as modus ponsens.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-010 without changing any unaffected claim or formula?
+
+### OLAX-011: confirmed_raw_top_symbol_instead_of_language_macro
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` at `provability-quantifiers.tex:29`; SHA-256 `07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` body line(s) 29; adjacent note line 35; SHA-256 `be284680373f418e0e888a7af7ea72e92cb6cf683d61854aaa4cfd0fb692758f`.
+- **Chosen handling:** Used ltrue consistently and added an adjacent keyed note.
+- **Rationale:** The proof switches from the configured language symbol ltrue to a raw top symbol.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-011 without changing any unaffected claim or formula?
+
+### OLAX-012: confirmed_wrong_final_rule_justification_in_strong_generalization
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` at `provability-quantifiers.tex:30`; SHA-256 `07225de499f34bd17eec7586fc9bcc59e98ea3cfa064172091fa66a336bf20b6`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex` body line(s) 31; adjacent note line 40; SHA-256 `be284680373f418e0e888a7af7ea72e92cb6cf683d61854aaa4cfd0fb692758f`.
+- **Chosen handling:** Used the ltrue axiom and modus ponens as the actual final inference and added an adjacent keyed note.
+- **Rationale:** The final step from ltrue implies forall x A(x) to forall x A(x) is attributed to the deduction theorem again.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-012 without changing any unaffected claim or formula?
+
+### OLAX-013: confirmed_missing_source_authoring_markers_in_quantified_soundness_case
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex` at `soundness.tex:80`; SHA-256 `b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/soundness.tex` body line(s) 114; adjacent note line 132; SHA-256 `b6f1511cf1883217a4868139dceaa296731590635da137084f2e503073c98165`.
+- **Chosen handling:** Restored the marker in all three occurrences and added an adjacent keyed note.
+- **Rationale:** Three formula-variable occurrences omit the source authoring marker before B.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-013 without changing any unaffected claim or formula?
+
+### OLAX-014: confirmed_incomplete_all_axioms_validity_argument
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex` at `soundness.tex:42`; SHA-256 `b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/soundness.tex` body line(s) 57; adjacent note line 62; SHA-256 `b6f1511cf1883217a4868139dceaa296731590635da137084f2e503073c98165`.
+- **Chosen handling:** Made explicit that q2 follows by the reverse substitution direction and that truth tables verify the propositional schemas, then added an adjacent keyed note.
+- **Rationale:** The proposition covers every axiom, but the first-order proof presents only q1 and leaves q2 and the propositional schemas unstated.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-014 without changing any unaffected claim or formula?
+
+### OLAX-015: confirmed_term_scope_exceeds_governing_identity_axioms
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/identity.tex` at `identity.tex:39`; SHA-256 `9a4f25fcf00baab5d8d5f05e7fe2315ca9f4ceaa39a67551489a5130b9b8a2d4`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/identity.tex` body line(s) 43; adjacent note line 47; SHA-256 `376bfd806ca894c1b467ce19eee52d2c7eb80e11b7d3bad13d3635e80af34096`.
+- **Chosen handling:** Restricted both propositions to closed terms and added an adjacent keyed note.
+- **Rationale:** Two propositions are stated for arbitrary terms although the immediately governing identity axiom schemas are restricted to closed terms.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-015 without changing any unaffected claim or formula?
+
+### OLAX-016: confirmed_missing_source_authoring_marker_before_repeated_formula_variable
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex` at `proof-theoretic-notions.tex:82`; SHA-256 `0afb9df4b5f0f5c1e892cf411d126f45acce94cfbdc9087e4bd37cb851cc370b`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex` body line(s) 82; adjacent note line 92; SHA-256 `8ddc8f4fb15873b3cc76d6ae3ab42aacc3cddea451f2f22cead67d87178189d3`.
+- **Chosen handling:** Restored the marker and added an adjacent keyed note.
+- **Rationale:** One repeated occurrence of B_i lacks the source authoring marker used by every other formula variable in the derivation.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-016 without changing any unaffected claim or formula?
+
+### OLAX-017: confirmed_membership_symbol_separated_from_left_operand
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex` at `deduction-theorem.tex:67`; SHA-256 `ef122fcfc1a8c24e89cf5abe30efa11bcd0a1cc3ed9fca2426618e9174481780`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex` body line(s) 64; adjacent note line 73; SHA-256 `b557deada5a7da1e9a3f27f805c4df14a48521fb2bb5a6f87d7f2a8c0fff02ff`.
+- **Chosen handling:** Expressed B as a member of Gamma union {A} in one coherent statement and added an adjacent keyed note.
+- **Rationale:** The membership symbol is isolated in a separate math span from its left operand B, leaving an ill-formed mathematical fragment.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-017 without changing any unaffected claim or formula?
+
+### OLAX-018: confirmed_shared_driver_uses_first_order_term_for_propositional_case
+
+- **Frozen source:** `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex` at `soundness.tex:22`; SHA-256 `b5a11dd6a46306a767149f694f099bd9f57396013b4dfe67965e68ccae411ecb`.
+- **Gujarati target:** `gu/content/first-order-logic/axiomatic-deduction/soundness.tex` body line(s) 22; adjacent note line 33; SHA-256 `b6f1511cf1883217a4868139dceaa296731590635da137084f2e503073c98165`.
+- **Chosen handling:** Selected validity for FOL and tautologicity for the propositional rendering, with an adjacent keyed note.
+- **Rationale:** The shared FOL and propositional chapter calls every derivable propositional formula valid instead of using the corresponding term tautology.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-018 without changing any unaffected claim or formula?

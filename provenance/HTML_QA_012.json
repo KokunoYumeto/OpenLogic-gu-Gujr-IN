@@ -1,0 +1,248 @@
+{
+  "schema": "openlogic-gu-html-qa/12",
+  "html": {
+    "path": "reader/axiomatic-deduction.html",
+    "bytes": 2962710,
+    "sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7",
+    "source_units_covered": 122,
+    "axiomatic_deduction_units_complete": 14,
+    "rendered_axiomatic_deduction_sections": 13,
+    "logic_profile": "classical first-order axiomatic deduction with identity",
+    "mathml_nodes": 6309,
+    "mathml_tables": 635,
+    "block_mathml_nodes": 412,
+    "proof_representation_entries": 208,
+    "proof_representation_kinds": {
+      "axiomatic_derivation": 6,
+      "closed_tableau": 1,
+      "natural_deduction_prooftree": 64,
+      "natural_deduction_rule_display": 16,
+      "prooftree": 2,
+      "sequent_prooftree": 58,
+      "sequent_rule_display": 11,
+      "signed_analytic_tableau": 50
+    },
+    "proof_structure_totals": {
+      "trees": 191,
+      "axioms": 279,
+      "inferences": 423,
+      "deductions": 74,
+      "empty_premises": 51,
+      "double_lines": 2
+    },
+    "axiomatic_derivation_rows": 29,
+    "signed_analytic_tableau_totals": {
+      "nodes": 279,
+      "edges": 235,
+      "leaves": 80,
+      "empty_branches": 6,
+      "checked_nodes": 65,
+      "closed_nodes": 40,
+      "moved_nodes": 2,
+      "maximum_individual_depth": 9
+    },
+    "truth_tables": 5,
+    "axiomatic_derivation_tables": 6,
+    "images": 13,
+    "unique_ids": 507,
+    "broken_internal_links": 0,
+    "axiomatic_deduction_section_ids": [
+      "fol:axd:rul:sec",
+      "fol:axd:prp:sec",
+      "fol:axd:qua:sec",
+      "fol:axd:pro:sec",
+      "fol:axd:prq:sec",
+      "fol:axd:ptn:sec",
+      "fol:axd:ded:sec",
+      "fol:axd:ddq:sec",
+      "fol:axd:prv:sec",
+      "fol:axd:ppr:sec",
+      "fol:axd:qpr:sec",
+      "fol:axd:sou:sec",
+      "fol:axd:ide:sec"
+    ],
+    "source_correction_notes": [
+      "OLFUN-002",
+      "OLFUN-003",
+      "OLFUN-004",
+      "OLFUN-005",
+      "OLFUN-001",
+      "OLSIZ-001",
+      "OLSIZ-002",
+      "OLSIZ-003",
+      "OLSIZ-004",
+      "OLSIZ-005",
+      "OLSIZ-006",
+      "OLSIZ-007",
+      "OLSIZ-011",
+      "OLSIZ-008",
+      "OLSIZ-009",
+      "OLSIZ-010",
+      "OLSIZ-012",
+      "OLARI-001",
+      "OLARI-002",
+      "OLARI-003",
+      "OLARI-004",
+      "OLINF-001",
+      "OLINF-002",
+      "OLPL-001",
+      "OLPL-002",
+      "OLPRF-001",
+      "OLPRF-002",
+      "OLPRF-004",
+      "OLPRF-003",
+      "OLSEQ-001",
+      "OLSEQ-002",
+      "OLSEQ-003",
+      "OLSEQ-004",
+      "OLSEQ-005",
+      "OLSEQ-006",
+      "OLND-001",
+      "OLND-002",
+      "OLND-003",
+      "OLND-004",
+      "OLND-005",
+      "OLND-006",
+      "OLTAB-001",
+      "OLTAB-002",
+      "OLTAB-003",
+      "OLTAB-004",
+      "OLTAB-005",
+      "OLTAB-006",
+      "OLTAB-007",
+      "OLTAB-008",
+      "OLTAB-009",
+      "OLTAB-011",
+      "OLTAB-010",
+      "OLTAB-012",
+      "OLAX-001",
+      "OLAX-002",
+      "OLAX-003",
+      "OLAX-004",
+      "OLAX-016",
+      "OLAX-017",
+      "OLAX-005",
+      "OLAX-006",
+      "OLAX-007",
+      "OLAX-008",
+      "OLAX-009",
+      "OLAX-010",
+      "OLAX-011",
+      "OLAX-012",
+      "OLAX-018",
+      "OLAX-014",
+      "OLAX-013",
+      "OLAX-015"
+    ],
+    "literal_macro_correction_references": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 1,
+      "top": 1
+    },
+    "gujarati_character_inventory_preserved": true,
+    "main_gujarati_character_sequence_preserved": true,
+    "footnote_gujarati_character_sequence_preserved": true,
+    "footnotes": 12,
+    "stylesheet": {
+      "path": "reader/reader.css",
+      "href": "reader.css?v=3",
+      "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
+    },
+    "build_qa": {
+      "path": "build/axiomatic-deduction-html-qa.json",
+      "sha256": "e9f3ccfc882ef9456d9107644e1d9269044a2c4e4bd1031222107d341701171c"
+    },
+    "prepared_tex": {
+      "path": "build/axiomatic-deduction-html.tex",
+      "sha256": "59752fac021244df3a9f49ed11fa4fa55845a12f7d8b7718b6bbf5f28bf32553"
+    },
+    "pandoc_warnings": [
+      "[WARNING] The term Abstract has no translation defined."
+    ],
+    "status": "passed_exact_dom_mathml_proof_tableau_derivation_link_asset_and_character_qa"
+  },
+  "browser_inspection": {
+    "status": "passed_actual_live_browser_inspection",
+    "inspected_at_utc": "2026-09-08T00:46:25.266548+00:00",
+    "method": "Codex in-app Chromium served the exact local repository for live visual inspection; a separate Edge/Chromium runtime measured every block MathML node, loaded font and image, content id, and console event against the same SHA-256-bound artifact.",
+    "url": "http://127.0.0.1:8770/reader/axiomatic-deduction.html?qa=012",
+    "viewport_px": [
+      1280,
+      720
+    ],
+    "viewed": [
+      "title page, provenance panel and cumulative table of contents",
+      "section 97 axiomatic rules and derivation definition",
+      "section 98 propositional axiom schemas and OLAX-001",
+      "section 99 quantifier rules with OLAX-002 and OLAX-003",
+      "section 100 line-numbered axiomatic derivation tables",
+      "section 103 deduction theorem and proof table",
+      "section 108 soundness with OLAX-018 and formula displays",
+      "section 109 identity axioms and derivability statements",
+      "editorial notes and bibliography at the document end"
+    ],
+    "computed_mathml_check": {
+      "selector": "math[display='block']",
+      "nodes_checked": 412,
+      "clipped_horizontal_nodes": 0,
+      "clipped_vertical_nodes": 0,
+      "intentionally_scrollable_nodes": 3,
+      "scrollable_node_indices_zero_based": [
+        332,
+        333,
+        334
+      ],
+      "scrollable_internal_overflow_px": [
+        45,
+        116,
+        71
+      ],
+      "maximum_internal_scroll_overflow_px": 116,
+      "body_scroll_width_px": 914,
+      "body_client_width_px": 914,
+      "document_scroll_width_px": 1280,
+      "document_client_width_px": 1280,
+      "overflow_x": "auto",
+      "overflow_y": "hidden",
+      "padding_block_total_px": 20.8
+    },
+    "runtime_checks": {
+      "fonts_status": "loaded",
+      "images_loaded_with_nonzero_intrinsic_dimensions": 13,
+      "console_errors_or_warnings": 0,
+      "content_unique_ids": 507,
+      "literal_macro_occurrences": {
+        "sFmla": 2,
+        "item": 1,
+        "iftag": 1,
+        "top": 1
+      },
+      "runtime_receipt": "work/BROWSER_RUNTIME_012.json",
+      "runtime_receipt_sha256": "1cc260d600aac9d725fdab3cd5f67bcd3df06bf3819fe5fa56ffce4cbdd04615"
+    },
+    "defects_found_and_repaired": [
+      "The adapter preserves six axiomatic derivations as line-numbered HTML tables with 29 checked rows and formula-label anchors.",
+      "Literal source macros named by four correction notes remain visible as code while their mathematical uses render as MathML."
+    ],
+    "final_hash_binding": {
+      "html_sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7",
+      "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "stylesheet_href": "reader.css?v=3"
+    },
+    "pending": []
+  },
+  "semantic_review": {
+    "receipt": "SEMANTIC_REVIEW_012.json",
+    "sha256": "e7e53a369b6f86b1f92299eb7e4d54c758fdaa7b53c3794ce4a1d7bca30e97cc",
+    "status": "passed_exact_block_review_and_reverse_paraphrase_sampling"
+  },
+  "pdf": {
+    "receipt": "PDF_QA_012.json",
+    "sha256": "8e6e0234bb3174494a1fa47bd6a8a1d48467e4a74940e5e93c310480651f860f",
+    "pdf_sha256": "66379898ed8eb34bfb510d310275264102229928165e26f11a8fd7846e6265bc",
+    "pages": 158,
+    "status": "passed_reproducible_build_and_all_page_visual_qa"
+  },
+  "full_corpus_complete": false
+}

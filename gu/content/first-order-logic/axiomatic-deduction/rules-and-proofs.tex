@@ -1,0 +1,93 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{rul}}
+      {\olfileid{pl}{axd}{rul}}
+
+\olsection{નિયમો અને \usetoken{P}{derivation}}
+
+\begin{explain}
+  સ્વયંસિદ્ધિમૂલક !!{derivation}s કદાચ તર્કશાસ્ત્ર માટેનું સૌથી સરળ
+  !!{derivation} તંત્ર છે. !!^a{derivation} માત્ર !!{formula}sની શ્રેણી
+  છે. કોઈ શ્રેણીને !!a{derivation} ગણવા માટે તેમાંનું દરેક !!{formula}
+  કાં તો કોઈ સ્વયંસિદ્ધિનો દૃષ્ટાંત હોવું જોઈએ, અથવા શ્રેણીમાં તેની
+  પહેલાં આવતાં એક કે વધુ !!{formula}sમાંથી અનુમાનના કોઈ નિયમ વડે
+  મળવું જોઈએ. !!^a{derivation} તેના છેલ્લા !!{formula}ને !!{derive}s કરે છે.
+\end{explain}
+
+\begin{defn}[!!^{derivability}]
+જો $\Gamma$ એ $\Lang L$નાં !!{formula}sનો ગણ હોય, તો~$\Gamma$માંથી
+\emph{!!{derivation}} એટલે !!{formula}sની એવી સાન્ત શ્રેણી $!A_1$,
+\dots,~$!A_n$ કે દરેક $i \le n$ માટે નીચેનામાંથી કોઈ એક શરત સાચી હોય:
+\begin{enumerate}
+\item $!A_i \in \Gamma$; અથવા
+\item $!A_i$ સ્વયંસિદ્ધિ છે; અથવા
+\item $j < i$ (અને $k < i$) હોય એવા કોઈ $!A_j$ (અને $!A_k$)માંથી
+  અનુમાનના કોઈ નિયમ વડે $!A_i$ મળે છે.
+\end{enumerate}
+\end{defn}
+
+કઈ !!{derivation} યોગ્ય ગણાય તે આપણે કયા અનુમાન-નિયમોને માન્ય રાખીએ
+(અને સ્વાભાવિક રીતે કયાં સૂત્રોને સ્વયંસિદ્ધિઓ માનીએ) તેના પર આધાર રાખે
+છે. અનુમાન-નિયમ એવું જો--તો વિધાન છે જે કહે છે કે અમુક શરતો હેઠળ
+!!a{derivation}નું પગલું~$A_i$ યોગ્ય અનુમાન-પગલું છે.
+
+\begin{defn}[અનુમાન-નિયમ]
+\emph{અનુમાન-નિયમ}~$\Gamma$માંથી મળતી !!a{derivation}માં કયું પગલું
+યોગ્ય અનુમાન-પગલું ગણાય તેની પૂરતી શરત આપે છે.
+\end{defn}
+
+દાખલા તરીકે, $!A \in \Gamma$ હોય ત્યારે એક જ ઘટકવાળી શ્રેણી~$!A$
+સહજ રીતે !!a{derivation} ગણાય છે, તેથી નીચેનું બહુ સરળ અનુમાન-નિયમ હોઈ
+શકે:
+\begin{quote}
+  જો $!A \in \Gamma$, તો~$\Gamma$માંથી મળતી કોઈપણ !!{derivation}માં
+  $!A$ હંમેશાં યોગ્ય અનુમાન-પગલું છે.
+\end{quote}
+એ જ રીતે, $!A$ સ્વયંસિદ્ધિઓમાંનું એક હોય, તો એકલું~$!A$ પણ
+!!a{derivation} છે; તેથી નીચેનું પણ અનુમાન-નિયમ છે:
+\begin{quote}
+  જો $!A$ સ્વયંસિદ્ધિ હોય, તો $!A$ યોગ્ય અનુમાન-પગલું છે.
+\end{quote}
+અનુમાન-નિયમ વિચારવામાં આવતા પગલાની પહેલાં આવતાં !!{formula}sનો આશરો
+લે ત્યારે વાત વધુ રસપ્રદ બને છે. નીચેના નિયમને \emph{મોડસ પોનેન્સ}
+કહે છે:
+\begin{quote}
+  જો $!B \lif !A$ અને $!B$ !!{derivation}માં ઉપર આવતાં હોય, તો~$!A$
+  યોગ્ય અનુમાન-પગલું છે.
+\end{quote}
+જો આ જ એકમાત્ર અનુમાન-નિયમ હોય, તો ઉપરની !!{derivation}ની વ્યાખ્યાનો
+અર્થ આ થાય: $!A_1$, \dots,~$!A_n$ એ !!a{derivation} છે જો અને માત્ર
+જો દરેક $i \le n$ માટે નીચેનામાંથી કોઈ એક શરત સાચી હોય:
+\begin{enumerate}
+\item $!A_i \in \Gamma$; અથવા
+\item $!A_i$ સ્વયંસિદ્ધિ છે; અથવા
+\item કોઈ $j < i$ માટે $!A_j$ એ $!B \lif !A_i$ છે અને કોઈ $k < i$
+  માટે $!A_k$ એ~$!B$ છે.
+\end{enumerate}
+છેલ્લી શરત કહે છે કે મોડસ પોનેન્સ વડે~$!A_j$ ($!B \lif !A_i$) અને
+$!A_k$ ($!B$)માંથી $!A_i$ મળે છે. જો આપણે $1$થી~$n$ સુધી જઈ શકીએ અને
+દર વખતે એવું !!a{formula}~$!A_i$ મળે જે કાં તો~$\Gamma$માં હોય, કાં
+સ્વયંસિદ્ધિ હોય, અથવા જેને અનુમાનનો કોઈ નિયમ યોગ્ય અનુમાન-પગલું ગણાવે,
+તો આખી શ્રેણી યોગ્ય !!{derivation} ગણાય છે.
+
+\begin{defn}[!!^{derivability}]
+જો~$\Gamma$માંથી મળતી એવી !!a{derivation} હોય જે $!A$માં પૂરી થાય,
+તો !!{formula}~$!A$ એ~$\Gamma$માંથી \emph{!!{derivable}} છે; તેને
+$\Gamma \Proves !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[પ્રમેયો]
+ખાલી ગણમાંથી~$!A$ની !!a{derivation} હોય, તો !!^a{formula}~$!A$
+\emph{પ્રમેય} છે. $!A$ પ્રમેય હોય તો $\Proves !A$ અને ન હોય તો
+$\Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+
+\end{document}

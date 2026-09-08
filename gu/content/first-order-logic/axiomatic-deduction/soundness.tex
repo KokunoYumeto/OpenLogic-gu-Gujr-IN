@@ -1,0 +1,167 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{sou}}
+      {\olfileid{pl}{axd}{sou}}
+
+\olsection{યથાર્થતા}
+
+\begin{explain}
+સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ જેવું !!^a{derivation} તંત્ર ખરેખર સાચી ન
+હોય એવી બાબતોને !!{derive} ન કરી શકે તો તે \emph{યથાર્થ} છે. આમ,
+યથાર્થતા એ !!{derivation} તંત્રો માટે એક પ્રકારનો ખાતરીપૂર્વકનો
+સલામતી-ગુણધર્મ છે. કયા સાબિતી-સૈદ્ધાંતિક ગુણધર્મની વાત છે તેના આધારે,
+દાખલા તરીકે આપણે જાણવા માગીએ છીએ કે
+\begin{enumerate}
+\item દરેક !!{derivable}~$!A$ \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે;
+\item જો $!A$ બીજા અમુક સૂત્રોના ગણ~$\Gamma$માંથી !!{derivable} હોય,
+  તો તે તેમનું ફલિત પણ છે;
+\item જો !!{formula}sનો ગણ~$\Gamma$ અસુસંગત હોય, તો તે અસંતોષ્ય છે.
+\end{enumerate}
+આ !!a{derivation} તંત્રના મહત્વના ગુણધર્મો છે. તેમાંનો કોઈ ગુણધર્મ
+સાચો ન હોય તો !!{derivation} તંત્રમાં ખામી છે---તે અતિશય બાબતોને
+!!{derive} કરશે. તેથી !!a{derivation} તંત્રની યથાર્થતા સ્થાપવી અત્યંત
+મહત્વની છે.
+\end{explain}
+
+\sourcecorrection{OLAX-018}{આ અધ્યાય પ્રથમ ક્રમ અને વિધાનાત્મક
+બંને વાંચનોમાં વહેંચાયેલો છે, પરંતુ મૂળની \texttt{soundness.tex},
+પંક્તિ~22માં બંને માટે માત્ર “valid” લખાયું છે. વિધાનાત્મક વાંચનમાં
+અનુરૂપ ખ્યાલ પુનરુક્તિ છે; તેથી અહીં
+\texttt{\string\iftag\{FOL\}} વડે બંને ખ્યાલોને અલગ રાખ્યા છે.}
+
+\begin{prop}
+  જો $!A$ સ્વયંસિદ્ધિ હોય, તો
+  \iftag{FOL}
+    {દરેક !!{structure}~$\Struct{M}$ અને નિયુક્તિ~$s$ માટે $\Sat{M}{!A}[s]$.}
+    {દરેક !!{valuation}~$\pAssign{v}$ માટે $\pSat{v}{!A}$.}
+\end{prop}
+
+\begin{proof}
+\iftag{FOL}{બધી સ્વયંસિદ્ધિઓ પ્રામાણ્ય છે તે ચકાસવું પડે. દાખલા તરીકે,
+  \olref[qua]{ax:q1}નો કિસ્સો આ પ્રમાણે છે: ધારો કે $t$ એ~$!A$માં
+  $x$ માટે !!{free for} છે અને $\Sat{M}{\lforall[x][!A]}[s]$. ત્યારે
+  સંતોષની વ્યાખ્યા મુજબ દરેક $\varAssign{s'}{s}{x}$ માટે
+  $\Sat{M}{!A}[s']$ પણ થાય છે; ખાસ કરીને
+  $s'(x) = \Value{t}{M}[s]$ હોય ત્યારે પણ. હવે
+  \olref[syn][ext]{prop:ext-formulas} વડે
+  $\Sat{M}{\Subst{!A}{t}{x}}[s]$. તેથી
+  $\Sat{M}{(\lforall[x][!A] \lif \Subst{!A}{t}{x})}[s]$. બીજી
+  પરિમાણક સ્વયંસિદ્ધિ એ જ પ્રતિસ્થાપન પરિણામની વિપરીત દિશાથી
+  પ્રામાણ્ય છે, અને વિધાનાત્મક સ્વયંસિદ્ધિઓની પ્રામાણ્યતા
+  સત્યતા-સારણીઓથી મળે છે.}{દરેક
+  સ્વયંસિદ્ધિ પુનરુક્તિ છે તે ચકાસવા તેની સત્યતા-સારણી બનાવો.}
+\end{proof}
+
+\sourcecorrection{OLAX-014}{મૂળની \texttt{soundness.tex}, પંક્તિઓ
+42--51માં બધી સ્વયંસિદ્ધિઓ પ્રામાણ્ય હોવાનો ઉપપ્રમેય કહેવામાં આવે છે,
+પરંતુ પ્રથમ પરિમાણક સ્વયંસિદ્ધિનો માત્ર એક કિસ્સો બતાવીને બાકીના
+કિસ્સા જણાવાતા નથી. અહીં બીજી પરિમાણક સ્વયંસિદ્ધિ માટે એ જ પ્રતિસ્થાપન
+પરિણામની વિપરીત દિશા અને વિધાનાત્મક સ્વયંસિદ્ધિઓ માટે સત્યતા-સારણીઓનું
+પ્રમાણન સ્પષ્ટ કર્યું છે.}
+
+\begin{thm}[યથાર્થતા]
+\ollabel{thm:soundness}
+જો $\Gamma \Proves !A$, તો $\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+~$\Gamma$માંથી $!A$ની !!{derivation}ની લંબાઈ પર ગણિતીય અનુમાન વડે.
+જો અનુમાન વડે પ્રમાણિત કોઈ પગલું ન હોય, તો !!{derivation}નાં બધાં
+!!{formula}s કાં તો સ્વયંસિદ્ધિઓના દૃષ્ટાંતો છે અથવા~$\Gamma$માં છે.
+અગાઉના ઉપપ્રમેય મુજબ બધી સ્વયંસિદ્ધિઓ
+\iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિઓ} છે; તેથી $!A$ સ્વયંસિદ્ધિ હોય તો
+$\Gamma \Entails !A$. જો $!A \in \Gamma$, તો સહજ રીતે
+$\Gamma \Entails !A$.
+
+જો~$!A$ની !!{derivation}નું છેલ્લું પગલું મોડસ પોનેન્સ વડે પ્રમાણિત
+થતું હોય, તો !!{derivation}માં !!{formula}s $!B$ અને $!B \lif !A$ છે.
+એ !!{formula}sમાં પૂરા થતા !!{derivation}ના ભાગોને અનુમાનની પૂર્વધારણા
+લાગુ પડે છે, કારણ કે તેમાં અનુમાન વડે પ્રમાણિત થયેલું ઓછામાં ઓછું એક
+પગલું ઓછું છે. તેથી અનુમાનની પૂર્વધારણા મુજબ
+$\Gamma \Entails !B$ અને $\Gamma \Entails !B \lif !A$. હવે નીચેના
+પરિણામ વડે $\Gamma \Entails !A$:
+\iftag{FOL}
+      {\olref[syn][sem]{thm:sem-deduction}}
+      {\olref[pl][syn][sem]{thm:sem-deduction}}.
+
+\iftag{FOL}{હવે ધારો કે છેલ્લું પગલું \QR{} વડે પ્રમાણિત થાય છે.
+ત્યારે એ પગલાનું સ્વરૂપ $!C \lif \lforall[x][!B(x)]$ છે અને અગાઉનું
+એક પગલું $!C \lif !B(c)$ છે, જ્યાં $c$ એ~$\Gamma$, $!C$ કે
+$\lforall[x][!B(x)]$માં આવતું નથી. અનુમાનની પૂર્વધારણા મુજબ
+$\Gamma \Entails !C \lif !B(c)$. હવે
+\olref[syn][sem]{thm:sem-deduction} વડે
+$\Gamma \cup \{!C\} \Entails !B(c)$.
+
+એવી કોઈ સંરચના~$\Struct{M}$ વિચારો કે
+$\Sat{M}{\Gamma \cup \{!C\}}$. આપણે
+$\Sat{M}{\lforall[x][!B(x)]}$ બતાવવું છે. કારણ કે
+$\lforall[x][!B(x)]$ !!a{sentence} છે, તેનો અર્થ એ કે દરેક ચલ-નિયુક્તિ
+$s$ માટે $\Sat{M}{!B(x)}[s]$ બતાવવું પડશે
+(\olref[syn][ass]{prop:sat-quant}). $\Gamma \cup \{!C\}$ સંપૂર્ણપણે
+વાક્યોથી બને છે, તેથી \olref[syn][sat]{defn:satisfaction} મુજબ દરેક
+$!D \in \Gamma$ માટે $\Sat{M}{!D}[s]$. હવે $\Struct{M'}$ને
+$\Struct{M}$ જેવું જ લો, માત્ર $\Assign{c}{M'} = s(x)$ રાખો. કારણ કે
+$c$ એ~$\Gamma$ કે~$!C$માં આવતું નથી,
+\olref[syn][ext]{cor:extensionality-sent} વડે
+$\Sat{M'}{\Gamma \cup \{!C\}}$. અને
+$\Gamma \cup \{!C\} \Entails !B(c)$ હોવાથી $\Sat{M'}{!B(c)}$.
+$!B(c)$ !!a{sentence} હોવાથી
+\olref[syn][ass]{prop:sentence-sat-true} વડે
+$\Sat{M'}{!B(c)}[s]$. વળી, $!B(c)$ એટલે
+$\Subst{!B(x)}{c}{x}$ જ છે, તેથી
+\olref[syn][ext]{prop:ext-formulas} વડે $\Sat{M'}{!B(x)}[s]$ જો અને
+માત્ર જો $\Sat{M'}{!B(c)}[s]$. આમ $\Sat{M'}{!B(x)}[s]$. કારણ કે $c$
+એ~$!B(x)$માં આવતું નથી, \olref[syn][ext]{prop:extensionality} વડે
+$\Sat{M}{!B(x)}[s]$. પરંતુ $s$ કોઈપણ ચલ-નિયુક્તિ હતી, તેથી
+$\Sat{M}{\lforall[x][!B(x)]}$. આમ
+$\Gamma \cup \{!C\} \Entails \lforall[x][!B(x)]$. હવે
+\olref[syn][sem]{thm:sem-deduction} વડે
+$\Gamma \Entails !C \lif \lforall[x][!B(x)]$.
+
+$!A$ને \QR{} વડે પ્રમાણિત કરવામાં આવે પરંતુ તેનું સ્વરૂપ
+$\lexists[x][!B(x)] \lif !C$ હોય તે કિસ્સો પ્રશ્ન તરીકે રાખ્યો છે.}{}
+\end{proof}
+
+\sourcecorrection{OLAX-013}{મૂળની \texttt{soundness.tex}, પંક્તિઓ
+80--81 અને~97માં સૂત્ર-ચલ~$B$ પહેલાંનો સ્ત્રોતનો આંતરિક
+\texttt{!} સંકેત ત્રણ વાર ખૂટે છે. પડોશી સૂત્રો અને એ જ દલીલ મુજબ અહીં
+ત્રણેય જગ્યાએ $!B(x)$ અથવા $!B(c)$નું સુસંગત સૂત્ર-ચિહ્નન રાખ્યું છે.}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][sou]{thm:soundness}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+જો $\Proves !A$ હોય, તો $!A$ \iftag{FOL}{પ્રામાણ્ય}{પુનરુક્તિ} છે.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:consistency-soundness}
+જો $\Gamma$ સંતોષ્ય હોય, તો તે સુસંગત છે.
+\end{cor}
+
+\begin{proof}
+પ્રતિપક્ષી વિધાન સાબિત કરીએ. ધારો કે $\Gamma$ સુસંગત નથી. ત્યારે
+$\Gamma \Proves \lfalse$, એટલે~$\Gamma$માંથી $\lfalse$ની
+!!a{derivation} છે. \olref{thm:soundness} મુજબ~$\Gamma$ને સંતોષતું
+કોઈપણ \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
+એ~$\lfalse$ને પણ સંતોષવું જોઈએ. પરંતુ
+\iftag{FOL}{દરેક !!{structure}~$\Struct{M}$ માટે
+$\Sat/{M}{\lfalse}$}{દરેક !!{valuation}~$\pAssign{v}$ માટે
+$\pSat/{v}{\lfalse}$}, તેથી કોઈ
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ~$\Gamma$ને સંતોષી શકતું નથી;
+એટલે $\Gamma$ સંતોષ્ય નથી.
+\end{proof}
+
+
+\end{document}

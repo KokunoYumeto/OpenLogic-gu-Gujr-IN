@@ -1,0 +1,101 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-propositional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{ppr}}
+      {\olfileid{pl}{axd}{ppr}}
+
+\olsection{\usetoken{S}{derivability} અને વિધાનાત્મક સંયોજકો}
+
+\begin{explain}
+  આપણે સ્થાપીએ છીએ કે સ્વયંસિદ્ધિમૂલક નિષ્પત્તિનો !!{derivability}
+  સંબંધ~$\Proves$ વિધાનાત્મક સંયોજકોને લગતાં કેટલાંક પાયાનાં તથ્યો
+  સ્થાપવા જેટલો પ્રબળ છે; દાખલા તરીકે, $!A \land !B \Proves !A$ અને
+  $!A, !A \lif !B \Proves !B$ (મોડસ પોનેન્સ). પૂર્ણતાના પ્રમેયની
+  સાબિતી માટે આ તથ્યો જરૂરી છે.
+\end{explain}
+
+\begin{prop}\ollabel{prop:provability-land}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-land-left} $!A \land !B \Proves !A$
+    અને $!A \land !B \Proves !B$ બંને સધાય છે.
+  \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land !B$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item અનુક્રમે \olref[prp]{ax:land1} અને
+      \olref[prp]{ax:land2}માંથી મોડસ પોનેન્સ વડે.
+  \item \olref[prp]{ax:land3}માંથી મોડસ પોનેન્સના બે ઉપયોગ વડે.
+  \end{enumerate}
+\end{proof}
+
+\sourcecorrection{OLAX-008}{મૂળની
+\texttt{provability-propositional.tex}, પંક્તિઓ 33--34માં
+$!A\land !B\Proves !A$ અને $!A\land !B\Proves !B$ બંને માટે
+\olref[prp]{ax:land1}નો સંદર્ભ પુનરાવર્તિત છે. બીજા પરિણામ માટે
+જમણા સંયોજ્યને આપતી \olref[prp]{ax:land2} વાપરી છે.}
+
+
+\begin{prop}\ollabel{prop:provability-lor}
+  \begin{enumerate}
+  \item $!A \lor !B, \lnot !A, \lnot !B$ અસુસંગત છે.
+  \item $!A \Proves !A \lor !B$ અને $!B \Proves !A \lor !B$ બંને સધાય છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item \olref[prp]{ax:lnot2}માંથી
+    $\Proves \lnot !A \lif (!A \lif \lfalse)$ અને
+    $\Proves \lnot !B \lif (!B \lif \lfalse)$ મળે છે. તેથી નિગમન
+    પ્રમેય વડે $\{\lnot !A\} \Proves !A \lif \lfalse$ અને
+    $\{\lnot !B\} \Proves !B \lif \lfalse$. હવે
+    \olref[prp]{ax:lor3}માંથી
+    $\{\lnot !A, \lnot !B\} \Proves (!A \lor !B) \lif \lfalse$ મળે
+    છે. નિગમન પ્રમેય વડે
+    $\{!A \lor !B, \lnot !A, \lnot !B\} \Proves \lfalse$.
+  \item અનુક્રમે \olref[prp]{ax:lor1} અને \olref[prp]{ax:lor2}માંથી
+    મોડસ પોનેન્સ વડે.
+  \end{enumerate}
+\end{proof}
+
+\sourcecorrection{OLAX-009}{મૂળની
+\texttt{provability-propositional.tex}, પંક્તિઓ 50--51માં
+$\lnot !A\lif(!A\lif\lfalse)$ને \olref[prp]{ax:lnot1}માંથી મળતું
+કહ્યું છે. આ તો~$!B\ident\lfalse$ સાથેની \olref[prp]{ax:lnot2}નો
+દૃષ્ટાંત છે; તેથી સંદર્ભ સુધાર્યો છે.}
+
+\sourcecorrection{OLAX-010}{મૂળની
+\texttt{provability-propositional.tex}, પંક્તિ~58માં ``modus ponsens''
+લખાયું છે. અહીં નિયમનું નામ ``મોડસ પોનેન્સ'' સાચી રીતે લખ્યું છે.}
+
+\begin{prop}\ollabel{prop:provability-lif}
+  \begin{enumerate}
+  \item \ollabel{prop:provability-lif-left} $!A, !A \lif !B \Proves !B$.
+  \item \ollabel{prop:provability-lif-right}
+    $\lnot !A \Proves !A \lif !B$ અને $!B \Proves !A \lif !B$ બંને સધાય છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item આપણે નીચે પ્રમાણે !!{derive} કરી શકીએ છીએ:
+    \begin{derivation}
+      1. & $!A$ & \Hyp\\
+      2. & $!A \lif !B$ & \Hyp\\
+      3. & $!B$ & 1, 2, \MP
+    \end{derivation}
+
+  \item અનુક્રમે \olref[prp]{ax:lnot2} અને \olref[prp]{ax:lif1} તથા
+    નિગમન પ્રમેય વડે.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

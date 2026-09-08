@@ -1,0 +1,100 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{\usetoken{S}{derivability} અને સુસંગતતા}
+
+હવે આપણે !!{derivability} સંબંધના કેટલાક ગુણધર્મો સ્થાપીએ છીએ. આ
+ગુણધર્મો સ્વતંત્ર રીતે રસપ્રદ છે, પરંતુ પૂર્ણતાના પ્રમેયની સાબિતીમાં
+દરેકની ભૂમિકા રહેશે.
+
+\begin{prop}\ollabel{prop:provability-contr}
+  જો $\Gamma \Proves !A$ હોય અને $\Gamma \cup \{!A\}$ અસુસંગત હોય,
+  તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+  જો $\Gamma \cup \{!A\}$ અસુસંગત હોય, તો
+  $\Gamma \cup \{!A\} \Proves \lfalse$. \olref[ptn]{prop:reflexivity}
+  વડે દરેક $!B \in \Gamma$ માટે $\Gamma \Proves !B$. પૂર્વધારણા
+  મુજબ $\Gamma \Proves !A$ પણ છે, તેથી દરેક
+  $!B \in \Gamma \cup \{!A\}$ માટે $\Gamma \Proves !B$.
+  \olref[ptn]{prop:transitivity} વડે $\Gamma \Proves \lfalse$, એટલે
+  $\Gamma$ અસુસંગત છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:prov-incons}
+$\Gamma \Proves !A$ જો અને માત્ર જો $\Gamma \cup \{\lnot !A\}$
+અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+પહેલાં ધારો કે $\Gamma \Proves !A$. ત્યારે
+\olref[ptn]{prop:monotonicity} વડે
+$\Gamma \cup \{\lnot !A\} \Proves !A$. વળી,
+\olref[ptn]{prop:reflexivity} વડે
+$\Gamma \cup \{\lnot !A\} \Proves \lnot !A$. આપણી પાસે
+\olref[prp]{ax:lnot2} વડે
+$\Proves \lnot !A \lif (!A \lif \lfalse)$ પણ છે. તેથી
+\olref[ded]{prop:mp}ના બે ઉપયોગથી
+$\Gamma \cup \{\lnot !A\} \Proves \lfalse$ મળે છે.
+
+હવે ધારો કે $\Gamma \cup \{\lnot !A\}$ અસુસંગત છે, એટલે
+$\Gamma \cup \{\lnot !A\} \Proves \lfalse$. નિગમન પ્રમેય વડે
+$\Gamma \Proves \lnot !A \lif \lfalse$. વળી,
+\olref[prp]{ax:lfalse2} વડે
+$\Gamma \Proves (\lnot !A \lif \lfalse) \lif \lnot\lnot !A$, તેથી
+\olref[ded]{prop:mp} વડે $\Gamma \Proves \lnot\lnot !A$. હવે
+$\Gamma \Proves \lnot\lnot !A \lif !A$ (\olref[prp]{ax:dne}) હોવાથી
+\olref[ded]{prop:mp} ફરી વાપરીને $\Gamma \Proves !A$ મળે છે.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot !A$ હોય જો અને માત્ર જો $\Gamma \cup \{!A\}$
+અસુસંગત હોય, એ સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:explicit-inc}
+  જો $\Gamma \Proves !A$ અને $\lnot !A \in \Gamma$, તો $\Gamma$
+  અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+  \olref[prp]{ax:lnot2} વડે
+  $\Gamma \Proves \lnot !A \lif (!A \lif \lfalse)$.
+  \olref[ded]{prop:mp}ના બે ઉપયોગથી $\Gamma \Proves \lfalse$.
+\end{proof}
+
+
+\begin{prop}\ollabel{prop:provability-exhaustive}
+  જો $\Gamma \cup \{!A\}$ અને $\Gamma \cup \{\lnot !A\}$ બંને
+  અસુસંગત હોય, તો $\Gamma$ અસુસંગત છે.
+\end{prop}
+
+\begin{proof}
+પ્રશ્ન.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+  \olref[fol][axd][prv]{prop:provability-exhaustive} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+  \olref[pl][axd][prv]{prop:provability-exhaustive} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+
+\end{document}

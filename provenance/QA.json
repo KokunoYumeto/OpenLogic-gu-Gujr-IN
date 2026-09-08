@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-07T20:10:16.304130+00:00",
+  "checkpoint_utc": "2026-09-08T01:49:51.169620+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 108,
+  "translated_units": 122,
   "publicly_verified_release_units": 108,
   "publicly_verified_source_checkpoint_units": 108,
   "total_units": 722,
-  "aligned_linguistic_blocks": 1161,
-  "source_math_spans_verified": 6151,
+  "aligned_linguistic_blocks": 1281,
+  "source_math_spans_verified": 6629,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 1161,
-    "samples": 535,
+    "exact_block_reviews": 1281,
+    "samples": 591,
     "independent_native_certification": false,
-    "status": "passed_for_current_108_unit_scope"
+    "status": "passed_for_current_122_unit_scope"
   },
   "source_corrections": {
-    "count": 53,
+    "count": 71,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -71,24 +71,42 @@
       "OLTAB-009",
       "OLTAB-010",
       "OLTAB-011",
-      "OLTAB-012"
+      "OLTAB-012",
+      "OLAX-001",
+      "OLAX-002",
+      "OLAX-003",
+      "OLAX-004",
+      "OLAX-005",
+      "OLAX-006",
+      "OLAX-007",
+      "OLAX-008",
+      "OLAX-009",
+      "OLAX-010",
+      "OLAX-011",
+      "OLAX-012",
+      "OLAX-013",
+      "OLAX-014",
+      "OLAX-015",
+      "OLAX-016",
+      "OLAX-017",
+      "OLAX-018"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/tableaux.html",
-    "bytes": 2727340,
-    "sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c",
-    "source_units_covered": 108,
-    "tableaux_units_complete": 14,
-    "rendered_tableaux_sections": 13,
-    "logic_profile": "signed analytic first-order tableaux, including quantifier and identity rules",
-    "mathml_nodes": 5779,
-    "mathml_tables": 618,
-    "block_mathml_nodes": 389,
-    "proof_representation_entries": 203,
+    "path": "reader/axiomatic-deduction.html",
+    "bytes": 2962710,
+    "sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7",
+    "source_units_covered": 122,
+    "axiomatic_deduction_units_complete": 14,
+    "rendered_axiomatic_deduction_sections": 13,
+    "logic_profile": "classical first-order axiomatic deduction with identity",
+    "mathml_nodes": 6309,
+    "mathml_tables": 635,
+    "block_mathml_nodes": 412,
+    "proof_representation_entries": 208,
     "proof_representation_kinds": {
-      "axiomatic_derivation": 1,
+      "axiomatic_derivation": 6,
       "closed_tableau": 1,
       "natural_deduction_prooftree": 64,
       "natural_deduction_rule_display": 16,
@@ -105,6 +123,7 @@
       "empty_premises": 51,
       "double_lines": 2
     },
+    "axiomatic_derivation_rows": 29,
     "signed_analytic_tableau_totals": {
       "nodes": 279,
       "edges": 235,
@@ -116,23 +135,24 @@
       "maximum_individual_depth": 9
     },
     "truth_tables": 5,
+    "axiomatic_derivation_tables": 6,
     "images": 13,
-    "unique_ids": 427,
+    "unique_ids": 507,
     "broken_internal_links": 0,
-    "tableaux_section_ids": [
-      "fol:tab:rul:sec",
-      "fol:tab:prl:sec",
-      "fol:tab:qrl:sec",
-      "fol:tab:der:sec",
-      "fol:tab:pro:sec",
-      "fol:tab:prq:sec",
-      "fol:tab:ptn:sec",
-      "fol:tab:prv:sec",
-      "fol:tab:ppr:sec",
-      "fol:tab:qpr:sec",
-      "fol:tab:sou:sec",
-      "fol:tab:ide:sec",
-      "fol:tab:sid:sec"
+    "axiomatic_deduction_section_ids": [
+      "fol:axd:rul:sec",
+      "fol:axd:prp:sec",
+      "fol:axd:qua:sec",
+      "fol:axd:pro:sec",
+      "fol:axd:prq:sec",
+      "fol:axd:ptn:sec",
+      "fol:axd:ded:sec",
+      "fol:axd:ddq:sec",
+      "fol:axd:prv:sec",
+      "fol:axd:ppr:sec",
+      "fol:axd:qpr:sec",
+      "fol:axd:sou:sec",
+      "fol:axd:ide:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -187,9 +207,32 @@
       "OLTAB-009",
       "OLTAB-011",
       "OLTAB-010",
-      "OLTAB-012"
+      "OLTAB-012",
+      "OLAX-001",
+      "OLAX-002",
+      "OLAX-003",
+      "OLAX-004",
+      "OLAX-016",
+      "OLAX-017",
+      "OLAX-005",
+      "OLAX-006",
+      "OLAX-007",
+      "OLAX-008",
+      "OLAX-009",
+      "OLAX-010",
+      "OLAX-011",
+      "OLAX-012",
+      "OLAX-018",
+      "OLAX-014",
+      "OLAX-013",
+      "OLAX-015"
     ],
-    "literal_sFmla_correction_references": 2,
+    "literal_macro_correction_references": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 1,
+      "top": 1
+    },
     "gujarati_character_inventory_preserved": true,
     "main_gujarati_character_sequence_preserved": true,
     "footnote_gujarati_character_sequence_preserved": true,
@@ -200,36 +243,36 @@
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/tableaux-html-qa.json",
-      "sha256": "422764595c64dc145e4bdf2f2de1692e1bf66b3cfeb643e94a4f479638f1ced2"
+      "path": "build/axiomatic-deduction-html-qa.json",
+      "sha256": "e9f3ccfc882ef9456d9107644e1d9269044a2c4e4bd1031222107d341701171c"
     },
     "prepared_tex": {
-      "path": "build/tableaux-html.tex",
-      "sha256": "6ff74f79b6aaeb7a27c327d708fa843ee63f882e10f08be513282d33cc700f41"
+      "path": "build/axiomatic-deduction-html.tex",
+      "sha256": "59752fac021244df3a9f49ed11fa4fa55845a12f7d8b7718b6bbf5f28bf32553"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
     ],
-    "status": "passed_exact_dom_mathml_proof_tableau_link_asset_and_character_qa",
+    "status": "passed_exact_dom_mathml_proof_tableau_derivation_link_asset_and_character_qa",
     "browser_inspection": "passed_actual_live_browser_inspection",
     "block_mathml_overflow_nodes": 0,
     "intentionally_scrollable_block_mathml_nodes": 3
   },
   "pdf": {
-    "path": "build/gu-tableaux.pdf",
-    "bytes": 1285438,
-    "sha256": "3bbc0dd6e7f3b31cefce2935f054e989e4145070492b4efed13331611fe8244a",
-    "pages": 144,
+    "path": "build/gu-axiomatic-deduction.pdf",
+    "bytes": 1402796,
+    "sha256": "66379898ed8eb34bfb510d310275264102229928165e26f11a8fd7846e6265bc",
+    "pages": 158,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "ટેબ્લો સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 144,
+    "nonempty_extracted_text_pages": 158,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_011.json",
+    "build_receipt": "BUILD_RECEIPT_012.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -301,9 +344,17 @@
       "math": 589,
       "semantic": 35,
       "exact_block_reviews": 132
+    },
+    "012": {
+      "units": 14,
+      "blocks": 120,
+      "math": 478,
+      "corrected_math": 483,
+      "semantic": 56,
+      "exact_block_reviews": 120
     }
   },
-  "status": "108_unit_source_html_pdf_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "122_unit_source_html_pdf_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_108_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -346,14 +397,14 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "2f221d201faf1cc600ace455837ede63e248e572db79b20555b2ee2c03a12dfe",
+    "sha256": "65802328bcbcaf6a5328fcc82d16dfc9cec3a233c3a34140a059dc2484135406",
     "status": "passed",
     "coverage": {
-      "decisions": 179,
-      "occurrences": 187
+      "decisions": 200,
+      "occurrences": 208
     },
     "reader_locators": {
-      "available": 186,
+      "available": 207,
       "pending": 0,
       "not_applicable": 1
     }
@@ -428,5 +479,41 @@
     "html_qa": "HTML_QA_011.json",
     "pdf_qa": "PDF_QA_011.json",
     "cumulative_gate": "CUMULATIVE_QA_011.json"
+  },
+  "batch_012": {
+    "draft_units": 14,
+    "remaining_units": [],
+    "structural_parity": "passed_after_18_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLAX-001",
+      "OLAX-002",
+      "OLAX-003",
+      "OLAX-004",
+      "OLAX-005",
+      "OLAX-006",
+      "OLAX-007",
+      "OLAX-008",
+      "OLAX-009",
+      "OLAX-010",
+      "OLAX-011",
+      "OLAX-012",
+      "OLAX-013",
+      "OLAX-014",
+      "OLAX-015",
+      "OLAX-016",
+      "OLAX-017",
+      "OLAX-018"
+    ],
+    "linguistic_blocks": 120,
+    "math_spans": 478,
+    "corrected_math_spans": 483,
+    "semantic_samples": "passed_120_exact_block_reviews_and_56_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_tableau_derivation_link_asset_and_character_qa_plus_reproducible_158_page_pdf_all_page_visual_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_412_block_mathml_nodes; three wide tableaux are horizontally scrollable and none are clipped",
+    "untranslated_prose": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+    "translation_decisions": "passed_json_schema_and_207_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
+    "html_qa": "HTML_QA_012.json",
+    "pdf_qa": "PDF_QA_012.json",
+    "cumulative_gate": "CUMULATIVE_QA_012.json"
   }
 }

@@ -1,0 +1,63 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability-quantifiers
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{axd}{qpr}
+
+\olsection{\usetoken{S}{derivability} અને પરિમાણકો}
+
+\begin{explain}
+  પૂર્ણતાના પ્રમેય માટે એ પણ જરૂરી છે કે સ્વયંસિદ્ધિમૂલક નિષ્પત્તિઓ
+  આ વિભાગમાં સ્થાપેલાં~$\Proves$ વિશેનાં તથ્યો આપે.
+\end{explain}
+
+\begin{thm}
+\ollabel{thm:strong-generalization} જો $c$ એ~$\Gamma$ કે $!A(x)$માં ન
+આવતું !!a{constant} હોય અને $\Gamma \Proves !A(c)$, તો
+$\Gamma \Proves \lforall[x][!A(x)]$.
+\end{thm}
+
+\begin{proof}
+નિગમન પ્રમેય વડે $\Gamma \Proves \ltrue \lif !A(c)$. કારણ કે $c$ એ
+$\Gamma$ કે~$\ltrue$માં આવતું નથી, તેથી
+$\Gamma \Proves \ltrue \lif \lforall[x][!A(x)]$ મળે છે. હવે
+$\ltrue$ સ્વયંસિદ્ધિ હોવાથી મોડસ પોનેન્સ વડે
+$\Gamma \Proves \lforall[x][!A(x)]$.
+\end{proof}
+
+\sourcecorrection{OLAX-011}{મૂળની
+\texttt{provability-quantifiers.tex}, પંક્તિ~29માં અગાઉ અને પછી વપરાતા
+ભાષા-ચિહ્ન~$\ltrue$ને બદલે કાચું \texttt{\string\top} લખાયું છે. અહીં
+એક જ સ્વયંસિદ્ધિ-ચિહ્ન~$\ltrue$ રાખ્યું છે.}
+
+\sourcecorrection{OLAX-012}{મૂળની
+\texttt{provability-quantifiers.tex}, પંક્તિઓ 30--31માં
+$\Gamma\Proves\ltrue\lif\lforall[x][!A(x)]$માંથી સર્વત્રીકૃત પરિણામને
+``નિગમન પ્રમેય ફરી'' વડે મેળવ્યું છે. જરૂરી પગલું એ છે કે $\ltrue$
+સ્વયંસિદ્ધિ હોવાથી તેને અને પ્રેરણને મોડસ પોનેન્સમાં વાપરવું; અહીં એ
+પ્રમાણન લખ્યું છે.}
+
+\begin{prop}
+\ollabel{prop:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
+
+\tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{\olref[qua]{ax:q2} અને નિગમન પ્રમેય વડે.}{}
+\tagitem{prvAll}{\olref[qua]{ax:q1} અને નિગમન પ્રમેય વડે.}{}
+\end{tagenumerate}
+\end{proof}
+
+\end{document}
