@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-12T15:39:55.741549+00:00. This is a **complete decision log for the current 145/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 145/722 units with checkpoint 014. It contains all 140 terminology decisions from the durable ledger and all 99 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-12T17:16:44.801305+00:00. This is a **complete decision log for the current 155/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 145/722 units with checkpoint 014. It contains all 145 terminology decisions from the durable ledger and all 106 source corrections identified so far. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -1548,6 +1548,61 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** ચલ-મૂલ્યનિર્ધારણ — explicit, but heavier than needed once the defining function is stated.; ચલ-મૂલ્યાંકન — risks conflating the assignment itself with evaluation under it.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિ’ accurately express ‘variable assignment’ with the scope stated here: ચલ is directly attested in the checked mathematical-variable passage and નિયુક્તિ matches the established edition treatment of valuation as an assignment. The nearby definition fixes the technical object as a total function from variables to elements of the structure's domain. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T141: first-order language / non-logical symbol / n-place → પ્રથમ-ક્રમ ભાષા / અતાર્કિક સંકેત / n-સ્થાની
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_syntax_translation; `work/add_syntax_terms.py`.
+- **English use:** `upstream/content/first-order-logic/introduction/formulas.tex:24` (OLP-0142, “first-order language”); `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:25` (OLP-0151, “non-logical symbols”)
+- **Gujarati use:** `gu/content/first-order-logic/introduction/formulas.tex:23` (OLP-0142, “પ્રથમ-ક્રમ ભાષા”); `gu/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:24` (OLP-0151, “અતાર્કિક સંકેતો”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked logic canon supports the native heads ભાષા, સંકેત and the first-order predicate-calculus register. પ્રથમ-ક્રમ marks logical order, અતાર્કિક distinguishes the signature-specific symbols from logical symbols, and n-સ્થાની states the exact number of argument places fixed by the accompanying definition.
+- **Alternatives:** પ્રથમ કક્ષાની ભાષા — understandable, but કક્ષા suggests rank or class more broadly than formal logical order.; તર્કેતર સંકેત — viable, though અતાર્કિક is the more direct counterpart used consistently throughout this chapter.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રથમ-ક્રમ ભાષા / અતાર્કિક સંકેત / n-સ્થાની’ accurately express ‘first-order language / non-logical symbol / n-place’ with the scope stated here: The checked logic canon supports the native heads ભાષા, સંકેત and the first-order predicate-calculus register. પ્રથમ-ક્રમ marks logical order, અતાર્કિક distinguishes the signature-specific symbols from logical symbols, and n-સ્થાની states the exact number of argument places fixed by the accompanying definition. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T142: term / formula / string of symbols → પદ / સૂત્ર / સંકેતશ્રેણી
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_syntax_translation; `work/add_syntax_terms.py`.
+- **English use:** `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:23` (OLP-0125, “terms”); `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:17` (OLP-0114, “formula”); `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:22` (OLP-0156, “string of symbols”)
+- **Gujarati use:** `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:20` (OLP-0115, “પદ”); `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:128` (OLP-0119, “સૂત્ર”); `gu/content/first-order-logic/introduction/first-order-logic.tex:20` (OLP-0140, “સંકેતશ્રેણી”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સૂત્ર and the surrounding formal-logic register are supported by the checked canon. પદ is the established edition word for a syntactically generated term, while સંકેતશ્રેણી transparently names an ordered string of symbols; the inductive definitions keep the three categories distinct.
+- **Alternatives:** અભિવ્યક્તિ for term — too broad because the chapter uses it for several syntactic categories.; ચિહ્નમાળા for string of symbols — concise, but સંકેતશ્રેણી matches the edition's established use of સંકેત and શ્રેણી.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પદ / સૂત્ર / સંકેતશ્રેણી’ accurately express ‘term / formula / string of symbols’ with the scope stated here: સૂત્ર and the surrounding formal-logic register are supported by the checked canon. પદ is the established edition word for a syntactically generated term, while સંકેતશ્રેણી transparently names an ordered string of symbols; the inductive definitions keep the three categories distinct. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T143: main operator / subformula / immediate or proper subformula → મુખ્ય કારક / ઉપસૂત્ર / તત્કાલિક અથવા ઉચિત ઉપસૂત્ર
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_syntax_translation; `work/add_syntax_terms.py`.
+- **English use:** `upstream/content/first-order-logic/natural-deduction/proving-things.tex:26` (OLP-0089, “main operator”); `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:254` (OLP-0156, “subformula”); `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:55` (OLP-0119, “immediate”); `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:204` (OLP-0156, “proper”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:15` (OLP-0154, “મુખ્ય કારક”); `gu/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:49` (OLP-0157, “ઉપસૂત્ર”); `gu/content/first-order-logic/syntax-and-semantics/subformulas.tex:20` (OLP-0155, “તત્કાલિક”); `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:205` (OLP-0156, “ઉચિત”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P069` (GU-VK-TRUTH, {"line_one_based": 96, "last_line_one_based": 101, "utf8_start": 36552, "utf8_end": 38930, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** કારક is already established for logical operators and સૂત્ર for formulas. ઉપસૂત્ર therefore names a constituent formula, મુખ્ય selects the outermost constructor, તત્કાલિક means one construction step below it, and ઉચિત excludes the formula itself.
+- **Alternatives:** મુખ્ય સંયોજક — too narrow because a quantifier can also be the main operator.; યથાર્થ ઉપસૂત્ર for proper subformula — less natural here than ઉચિત, whose exclusionary sense is fixed by the definition.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘મુખ્ય કારક / ઉપસૂત્ર / તત્કાલિક અથવા ઉચિત ઉપસૂત્ર’ accurately express ‘main operator / subformula / immediate or proper subformula’ with the scope stated here: કારક is already established for logical operators and સૂત્ર for formulas. ઉપસૂત્ર therefore names a constituent formula, મુખ્ય selects the outermost constructor, તત્કાલિક means one construction step below it, and ઉચિત excludes the formula itself. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T144: proper prefix / proper initial subsequence / minimal formation sequence → ઉચિત આરંભખંડ / ઉચિત આરંભ-ઉપશ્રેણી / ન્યૂનતમ રચના-શ્રેણી
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_first_order_syntax_translation; `work/add_syntax_terms.py`.
+- **English use:** `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:113` (OLP-0153, “proper prefix”); `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:204` (OLP-0156, “proper initial subsequences”); `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:239` (OLP-0156, “minimal formation sequence”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108` (OLP-0153, “ઉચિત આરંભખંડ”); `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:205` (OLP-0156, “ઉચિત આરંભ-ઉપશ્રેણીઓ”); `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:240` (OLP-0156, “ન્યૂનતમ રચના-શ્રેણી”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The compounds use established mathematical heads for beginning, part, subsequence, minimum and formation sequence. ઉચિત marks strict containment in both prefix notions, and ન્યૂનતમ identifies a formation sequence from which no repeated or irrelevant entry remains.
+- **Alternatives:** ખરો પૂર્વગ for proper prefix — compact but less transparent to general Gujarati readers.; લઘુતમ રચના-શ્રેણી — can suggest shortest length rather than the source's deletion-minimal condition.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ઉચિત આરંભખંડ / ઉચિત આરંભ-ઉપશ્રેણી / ન્યૂનતમ રચના-શ્રેણી’ accurately express ‘proper prefix / proper initial subsequence / minimal formation sequence’ with the scope stated here: The compounds use established mathematical heads for beginning, part, subsequence, minimum and formation sequence. ઉચિત marks strict containment in both prefix notions, and ન્યૂનતમ identifies a formation sequence from which no repeated or irrelevant entry remains. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T145: free occurrence / free for substitution / variable capture / instance → મુક્ત ઘટના / મુક્તપણે પ્રતિસ્થાપનીય / ચલનું પકડાવું / દૃષ્ટાંત
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_syntax_translation; `work/add_syntax_terms.py`.
+- **English use:** `upstream/content/first-order-logic/introduction/sentences.tex:42` (OLP-0144, “free occurrences”); `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:44` (OLP-0124, “free for”); `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:103` (OLP-0158, “captured”); `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:52` (OLP-0125, “instance”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:15` (OLP-0157, “મુક્ત ઘટનાઓ”); `gu/content/first-order-logic/syntax-and-semantics/substitution.tex:40` (OLP-0158, “મુક્તપણે પ્રતિસ્થાપનીય”); `gu/content/first-order-logic/syntax-and-semantics/substitution.tex:106` (OLP-0158, “પકડાઈ”); `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:15` (OLP-0115, “દૃષ્ટાંત”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** મુક્ત and ચલ follow the edition's established variable terminology. ઘટના identifies a particular syntactic occurrence, મુક્તપણે પ્રતિસ્થાપનીય states the capture-avoiding condition, the quoted verb પકડાવું preserves the source metaphor, and દૃષ્ટાંત names a substitution instance rather than an explanatory example.
+- **Alternatives:** સ્વતંત્ર આવર્તન — possible, but મુક્ત ઘટના aligns directly with the chapter's bound/free contrast.; ઉદાહરણ for instance — too broad because it does not distinguish a quantified formula's substitution instance from an ordinary example.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘મુક્ત ઘટના / મુક્તપણે પ્રતિસ્થાપનીય / ચલનું પકડાવું / દૃષ્ટાંત’ accurately express ‘free occurrence / free for substitution / variable capture / instance’ with the scope stated here: મુક્ત and ચલ follow the edition's established variable terminology. ઘટના identifies a particular syntactic occurrence, મુક્તપણે પ્રતિસ્થાપનીય states the capture-avoiding condition, the quoted verb પકડાવું preserves the source metaphor, and દૃષ્ટાંત names a substitution instance rather than an explanatory example. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -2539,3 +2594,73 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLFINT-006 without changing any unaffected claim or formula?
+
+### OLSYN-001: confirmed_malformed_nested_conditional_arguments
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` at `first-order-languages.tex:104`; SHA-256 `12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/first-order-languages.tex` body line(s) 103; adjacent note line 105; SHA-256 `fab083a270aae518e04239c6f040727f42ab72955e9428af35b9e144d2d78cff`.
+- **Chosen handling:** Supplied the inner conditional's empty third argument, then closed the outer conditional with its own empty third argument, and added an adjacent keyed note.
+- **Rationale:** The nested conditional for the defined truth symbol omits its empty third argument, so a closing brace is consumed by the surrounding conditional and the command nesting is malformed.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-001 without changing any unaffected claim or formula?
+
+### OLSYN-002: confirmed_extra_parenthesis_in_defined_implication
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` at `terms-formulas.tex:148`; SHA-256 `8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/terms-formulas.tex` body line(s) 143; adjacent note line 157; SHA-256 `7c87e4ab2bcb443f6382d127f75f5f030ce2dbd677c85afebb2400004e688115`.
+- **Chosen handling:** Removed the unmatched parenthesis, restored the well-formed disjunction, and added an adjacent keyed note.
+- **Rationale:** The disjunctive definition of implication contains an unmatched closing parenthesis inside the mathematical expression.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-002 without changing any unaffected claim or formula?
+
+### OLSYN-003: confirmed_math_environment_closed_before_formula_parenthesis
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex` at `main-operator.tex:90`; SHA-256 `788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex` body line(s) 95; adjacent note line 105; SHA-256 `752088dc1dbc16b4dbf9d9850d870f80ee74c07ee57b4edb26d96b433d9f6a1d`.
+- **Chosen handling:** Moved the final parenthesis inside math mode in the conjunction, disjunction and conditional rows and added one adjacent keyed note covering all three.
+- **Rationale:** Three main-operator table rows close math mode before the formula's final parenthesis, leaving that parenthesis outside the mathematical expression.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-003 without changing any unaffected claim or formula?
+
+### OLSYN-004: confirmed_k_ary_clause_given_k_plus_one_arguments
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` at `formation-sequences.tex:46`; SHA-256 `b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` body line(s) 44; adjacent note line 48; SHA-256 `42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a`.
+- **Chosen handling:** Indexed the arguments from 1 through k, preserving exactly k arguments, and added an adjacent keyed note.
+- **Rationale:** The term-formation clause indexes arguments from zero through k, giving k+1 arguments to a function explicitly declared k-ary.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-004 without changing any unaffected claim or formula?
+
+### OLSYN-005: confirmed_language_subscript_switch_in_general_proof
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` at `formation-sequences.tex:199`; SHA-256 `b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` body line(s) 201; adjacent note line 210; SHA-256 `42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a`.
+- **Chosen handling:** Restored L in both accidental L_0 occurrences and added an adjacent keyed note.
+- **Rationale:** A proof stated for an arbitrary language L switches twice to L_0 even though no language L_0 is introduced in the theorem or proof.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-005 without changing any unaffected claim or formula?
+
+### OLSYN-006: confirmed_semantic_equivalence_used_for_syntactic_case_split
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` at `formation-sequences.tex:200`; SHA-256 `b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex` body line(s) 193; adjacent note line 214; SHA-256 `42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a`.
+- **Chosen handling:** Replaced logical equivalence with syntactic identity and added an adjacent keyed note.
+- **Rationale:** The conjunction case in a proof about symbol strings uses logical equivalence where the formation-sequence definition requires syntactic identity.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-006 without changing any unaffected claim or formula?
+
+### OLSYN-007: confirmed_missing_third_conditional_argument
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex` at `main-operator.tex:77`; SHA-256 `788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex` body line(s) 78; adjacent note line 79; SHA-256 `752088dc1dbc16b4dbf9d9850d870f80ee74c07ee57b4edb26d96b433d9f6a1d`.
+- **Chosen handling:** Supplied the conditional's empty third argument and added an adjacent keyed note.
+- **Rationale:** The conditional that controls the reminder about defined operators has only its tag list and true branch; the required false branch is missing.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-007 without changing any unaffected claim or formula?

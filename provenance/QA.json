@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-12T15:38:59.194508+00:00",
+  "checkpoint_utc": "2026-09-12T17:18:54.684954+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 145,
+  "translated_units": 155,
   "publicly_verified_release_units": 145,
   "publicly_verified_source_checkpoint_units": 145,
   "total_units": 722,
-  "aligned_linguistic_blocks": 1485,
-  "source_math_spans_verified": 7916,
+  "aligned_linguistic_blocks": 1671,
+  "source_math_spans_verified": 8710,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 1485,
-    "samples": 707,
+    "exact_block_reviews": 1671,
+    "samples": 768,
     "independent_native_certification": false,
-    "status": "passed_for_current_145_unit_scope"
+    "status": "passed_for_current_155_unit_scope"
   },
   "source_corrections": {
-    "count": 99,
+    "count": 106,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -117,21 +117,28 @@
       "OLFINT-003",
       "OLFINT-004",
       "OLFINT-005",
-      "OLFINT-006"
+      "OLFINT-006",
+      "OLSYN-001",
+      "OLSYN-002",
+      "OLSYN-003",
+      "OLSYN-004",
+      "OLSYN-005",
+      "OLSYN-006",
+      "OLSYN-007"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/first-order-introduction.html",
-    "bytes": 3510018,
-    "sha256": "aa04f6b2e9eaac7152e5b5b31dff0f919b25293a67cf4dd85684089b57b99a8f",
-    "source_units_covered": 145,
-    "first_order_introduction_units_complete": 11,
-    "rendered_first_order_introduction_sections": 9,
-    "logic_profile": "classical first-order introduction after completeness",
-    "mathml_nodes": 7620,
-    "mathml_tables": 641,
-    "block_mathml_nodes": 431,
+    "path": "reader/first-order-syntax.html",
+    "bytes": 3783825,
+    "sha256": "9b0ae66bbd54096de90cae53ff7ff1dcae2ccc4c943ebac890056e8376cc54d4",
+    "source_units_covered": 155,
+    "first_order_syntax_units_complete": 10,
+    "rendered_first_order_syntax_sections": 9,
+    "logic_profile": "classical first-order syntax after introduction",
+    "mathml_nodes": 8426,
+    "mathml_tables": 642,
+    "block_mathml_nodes": 438,
     "proof_representation_entries": 208,
     "proof_representation_kinds": {
       "axiomatic_derivation": 6,
@@ -164,19 +171,20 @@
     },
     "truth_tables": 5,
     "axiomatic_derivation_tables": 6,
+    "main_operator_tables": 1,
     "images": 13,
-    "unique_ids": 583,
+    "unique_ids": 623,
     "broken_internal_links": 0,
-    "first_order_introduction_section_ids": [
-      "fol:int:fol:sec",
-      "fol:int:syn:sec",
-      "સતર",
-      "fol:int:sat:sec",
-      "fol:int:snt:sec",
-      "fol:int:sem:sec",
-      "fol:int:sub:sec",
-      "fol:int:mod:sec",
-      "fol:int:scp:sec"
+    "first_order_syntax_section_ids": [
+      "fol:syn:itx:sec",
+      "fol:syn:fol:sec",
+      "fol:syn:frm:sec",
+      "fol:syn:unq:sec",
+      "fol:syn:mai:sec",
+      "fol:syn:sbf:sec",
+      "fol:syn:fseq:sec",
+      "fol:syn:fvs:sec",
+      "fol:syn:sub:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -277,12 +285,19 @@
       "OLFINT-003",
       "OLFINT-004",
       "OLFINT-005",
-      "OLFINT-006"
+      "OLFINT-006",
+      "OLSYN-001",
+      "OLSYN-002",
+      "OLSYN-007",
+      "OLSYN-003",
+      "OLSYN-004",
+      "OLSYN-005",
+      "OLSYN-006"
     ],
     "literal_macro_correction_references": {
       "sFmla": 2,
       "item": 1,
-      "iftag": 4,
+      "iftag": 7,
       "top": 1
     },
     "gujarati_character_inventory_preserved": true,
@@ -295,12 +310,12 @@
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/first-order-introduction-html-qa.json",
-      "sha256": "551d38602396b272e493534b6b1cea096d506764201cceb71e21907d8d2fe0e5"
+      "path": "build/first-order-syntax-html-qa.json",
+      "sha256": "4e58e12f25c369ab93c32a8cada2bde237639f912b6bdb60d1313b00542b70ed"
     },
     "prepared_tex": {
-      "path": "build/first-order-introduction-html.tex",
-      "sha256": "5e579d08afc0828a409ddf3c83978cab2b5723ab5d67b6f46eac1703ac2b8c78"
+      "path": "build/first-order-syntax-html.tex",
+      "sha256": "446003f99e494ca681fdfb7f07f370bb96f95bcf34cac6aabe8685ba13f95971"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
@@ -311,20 +326,20 @@
     "intentionally_scrollable_block_mathml_nodes": 3
   },
   "pdf": {
-    "path": "build/gu-first-order-introduction.pdf",
-    "bytes": 1640179,
-    "sha256": "d7ebbe1041f551ef8f7a12aff97fab2729d0f5444e94ca6caac94a5b937f6ae7",
-    "pages": 183,
+    "path": "build/gu-first-order-syntax.pdf",
+    "bytes": 1762220,
+    "sha256": "2482f8fd54483808f6c390e5c24dbb23d81d247b3556152b80c2c5eae22cf7cc",
+    "pages": 196,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "પ્રથમ-ક્રમ પરિચય સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "પ્રથમ-ક્રમ વાક્યરચના સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 183,
+    "nonempty_extracted_text_pages": 196,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_014.json",
+    "build_receipt": "BUILD_RECEIPT_015.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -420,9 +435,17 @@
       "corrected_math": 334,
       "semantic": 39,
       "exact_block_reviews": 50
+    },
+    "015": {
+      "units": 10,
+      "blocks": 186,
+      "math": 794,
+      "corrected_math": 794,
+      "semantic": 61,
+      "exact_block_reviews": 186
     }
   },
-  "status": "145_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "155_unit_source_html_pdf_epub_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_145_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -466,14 +489,14 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "d24c4840119088cd4a996b2b0d1bc2c31ad35b0e7654db553038a97a64d92a5f",
+    "sha256": "185782f9ad0139c090c252191644d609818d0612120e4b3372cee1018443306d",
     "status": "passed",
     "coverage": {
-      "decisions": 242,
-      "occurrences": 250
+      "decisions": 254,
+      "occurrences": 262
     },
     "reader_locators": {
-      "available": 249,
+      "available": 261,
       "pending": 0,
       "not_applicable": 1
     }
@@ -628,17 +651,17 @@
     "epub_qa": "EPUB_QA_013.json"
   },
   "epub": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-First-Order-Introduction.epub",
-    "bytes": 461737,
-    "sha256": "a6ffe47ce1c76967bd9920a39b5dc3feb8308d80ede26169c32d79dabfd35e5a",
+    "path": "releases/OpenLogic-gu-Gujr-IN-First-Order-Syntax.epub",
+    "bytes": 482891,
+    "sha256": "71402df6b14f90d7d79497868f069f2a49ebec04a49152b4dd5ec4c4104045e2",
     "version": "EPUB 3.3",
     "layout": "reflowable",
     "language": "gu-IN",
     "direction": "ltr",
     "coverage": {
-      "translated": 145,
+      "translated": 155,
       "total": 722,
-      "units": "OLP-0004–0148"
+      "units": "OLP-0004–0158"
     },
     "complete_edition": false,
     "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa",
@@ -669,5 +692,31 @@
     "pdf_qa": "PDF_QA_014.json",
     "epub_qa": "EPUB_QA_014.json",
     "cumulative_gate": "CUMULATIVE_QA_014.json"
+  },
+  "batch_015": {
+    "draft_units": 10,
+    "remaining_units": [],
+    "structural_parity": "passed_after_7_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLSYN-001",
+      "OLSYN-002",
+      "OLSYN-003",
+      "OLSYN-004",
+      "OLSYN-005",
+      "OLSYN-006",
+      "OLSYN-007"
+    ],
+    "linguistic_blocks": 186,
+    "math_spans": 794,
+    "corrected_math_spans": 794,
+    "semantic_samples": "passed_186_exact_block_reviews_and_61_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_tableau_derivation_link_asset_and_character_qa_plus_reproducible_196_page_pdf_all_page_visual_qa_and_epub_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_438_block_mathml_nodes; three wide tableaux are horizontally scrollable and none are clipped",
+    "untranslated_prose": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+    "translation_decisions": "passed_json_schema_and_261_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
+    "html_qa": "HTML_QA_015.json",
+    "pdf_qa": "PDF_QA_015.json",
+    "epub_qa": "EPUB_QA_015.json",
+    "cumulative_gate": "CUMULATIVE_QA_015.json"
   }
 }

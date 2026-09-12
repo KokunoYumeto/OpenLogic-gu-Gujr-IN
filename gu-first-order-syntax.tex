@@ -1,0 +1,37 @@
+\def\gueditiontitle{પ્રથમ-ક્રમ વાક્યરચના સહિત ઓપન લોજિક ગુજરાતી}
+\def\gueditionheading{%
+  ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+  અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન,
+  સ્વાભાવિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ, પૂર્ણતા,
+  પ્રથમ-ક્રમ તર્કશાસ્ત્રનો પરિચય અને વાક્યરચના}
+\def\gueditiondescription{%
+  આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે પ્રથમ-ક્રમ તર્કશાસ્ત્રનું સંપૂર્ણ
+  વાક્યરચના-પ્રકરણ ઉમેર્યું છે. તેમાં પ્રથમ-ક્રમ ભાષાઓ, પદો અને સૂત્રો,
+  એકમાત્ર વાચનીયતા, મુખ્ય કારક, ઉપસૂત્રો, રચના-શ્રેણીઓ, મુક્ત તથા બદ્ધ
+  ચલો, વાક્યો અને પ્રતિસ્થાપનનો સમાવેશ છે.}
+\def\gueditioncount{૧૫૫}
+\newcommand{\guincludesyntaxbibliography}{}
+\def\gueditionbodyfile{build/first-order-syntax-body.tex}
+\def\gueditionlabelsfile{build/first-order-syntax-available-labels.tex}
+\def\gueditioncorrectionids{%
+  OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+  OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+  OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006,
+  OLND-001થી OLND-006, OLTAB-001થી OLTAB-012,
+  OLAX-001થી OLAX-018, OLCO-001થી OLCO-022,
+  OLFINT-001થી OLFINT-006 અને OLSYN-001થી OLSYN-007 સુધીની}
+\def\gueditioneditorial{%
+  નવા વાક્યરચના-પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી
+  પસંદ કરી છે. પદો અને સૂત્રોની અનુમાનાત્મક રચના, એકમાત્ર વાચનીયતા,
+  મુખ્ય કારક, ઉપસૂત્રો, રચના-શ્રેણીઓ, પરિમાણકનો વ્યાપ અને
+  પકડ ટાળતું પ્રતિસ્થાપન સામેલ છે. મૂળ પાઠની સાત ઓળખેલી ઔપચારિક
+  ખામીઓ પારદર્શક નોંધો સાથે મર્યાદિત રીતે સુધારી છે.}
+\providecommand{\Domain}[1]{\left|\mathfrak{#1}\right|}
+\ProvideDocumentCommand{\Trm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Trm}}{\mathrm{Trm}(\mathcal{#1})}}
+\providecommand{\num}[1]{\overline{#1}}
+\providecommand{\article}[1]{}
+\newenvironment{history}{%
+  \begin{quote}\textbf{ઇતિહાસ.}\ }{%
+  \end{quote}}
+\input{gu-tableaux.tex}

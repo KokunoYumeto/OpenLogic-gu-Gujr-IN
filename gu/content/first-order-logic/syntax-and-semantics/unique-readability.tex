@@ -1,0 +1,200 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: unique-readability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{unq}
+
+\olsection{એકમાત્ર વાચનીયતા}
+
+\begin{explain}
+આપણે જે રીતે !!{formula}s વ્યાખ્યાયિત કર્યાં છે તેનાથી દરેક
+!!{formula}નું \emph{એકમાત્ર વાંચન} હોવાની ખાતરી મળે છે; એટલે કે,
+!!{formula}s માટેના આપણા રચના-નિયમો અનુસાર તેને રચવાની મૂળભૂત રીતે
+માત્ર એક જ રીત અને તેનો ``અર્થઘટન'' કરવાની માત્ર એક જ રીત હોય છે. જો
+એમ ન હોત તો આપણી પાસે સંદિગ્ધ !!{formula}s હોત, એટલે કે એકથી વધુ
+વાંચન અથવા અર્થઘટન ધરાવતાં !!{formula}s---અને આપણે દેખીતી રીતે એ
+ટાળવા માગીએ છીએ. વધુ મહત્વની વાત એ છે કે આ ગુણધર્મ વિના આપણે આગળ
+આપવાની મોટા ભાગની વ્યાખ્યાઓ અને સાબિતીઓ કામ નહિ કરે.
+
+આ વાત કદાચ ત્યારે સૌથી સ્પષ્ટ થાય જ્યારે જોઈએ કે એકમાત્ર વાચનીયતાની
+ખાતરી ન આપતા !!{formula}sના ખરાબ રચના-નિયમો આપ્યા હોત તો શું થાત.
+દાખલા તરીકે, સંયોજકો માટેના રચના-નિયમોમાં કૌંસ મૂકવાનું ભૂલી ગયા હોત
+અને આવું માન્ય રાખ્યું હોત:
+\begin{quote}
+જો $!A$ અને $!B$ !!{formula}s હોય, તો $!A \lif !B$ પણ સૂત્ર છે.
+\end{quote}
+આણ્વિક સૂત્ર~$!D$થી શરૂ કરતાં આ નિયમ આપણને $!D\lif !D$ રચવા દે.
+તેમાંથી, $!D$ સાથે, $!D\lif !D\lif !D$ મળે. પરંતુ આ કરવાની બે રીતો છે:
+\begin{enumerate}
+\item આપણે $!D$ને $!A$ અને $!D\lif !D$ને $!B$ લઈએ.
+\item આપણે $!A$ને $!D\lif !D$ અને $!B$ને~$!D$ લઈએ.
+\end{enumerate}
+એને અનુરૂપ, !!{formula}~$!D\lif !D\lif !D$ને ``વાંચવાની'' પણ બે રીતો
+છે. તે $!B\lif !C$ સ્વરૂપનું છે, જ્યાં $!B$ એ $!D$ અને $!C$ એ
+$!D\lif !D$ છે; પરંતુ તે \emph{સાથે સાથે} $!B\lif !C$ સ્વરૂપનું એવું
+પણ છે જેમાં $!B$ એ $!D\lif !D$ અને $!C$ એ~$!D$ છે.
+
+આવું બને તો આપણી વ્યાખ્યાઓ હંમેશાં કામ કરશે નહિ. દાખલા તરીકે,
+સૂત્રનો !!{main operator} વ્યાખ્યાયિત કરતાં આપણે કહીએ છીએ:
+$!B\lif !C$ સ્વરૂપના સૂત્રમાં દર્શાવેલું~$\lif$નું આવર્તન
+!!{main operator} છે. પરંતુ $!D\lif !D\lif !D$ સૂત્રને ઉપર જણાવેલી બે
+જુદી રીતોથી $!B\lif !C$ સાથે મેળવો, તો એક કિસ્સામાં $\lif$નું પહેલું
+આવર્તન !!{main operator} બને અને બીજા કિસ્સામાં બીજું. જ્યારે આપણી
+મનશા એવી છે કે !!{main operator}, !!{formula}નું \emph{વિધેય}
+હોય; એટલે કે, દરેક !!{formula}માં !!{main
+  operator}નું બરાબર એક
+આવર્તન હોવું જોઈએ.
+\end{explain}
+
+\begin{lem}
+!!a{formula}~$!A$માં ડાબા અને જમણા કૌંસોની સંખ્યા સમાન હોય છે.
+\end{lem}
+
+\begin{proof}
+$!A$ જે રીતે રચાય છે તેના પર અનુમાન વડે આપણે આ સાબિત કરીએ છીએ.
+એ માટે બે વસ્તુઓ જોઈએ: (ક) પહેલાં બતાવવું પડે કે બધાં આણ્વિક સૂત્રોમાં
+આ ગુણધર્મ છે (અનુમાનનો આધાર). (ખ) પછી બતાવવું પડે કે આપેલાં
+સૂત્રોમાંથી નવાં સૂત્રો રચીએ ત્યારે, જૂનાં સૂત્રોમાં ગુણધર્મ હોય તો
+નવાંમાં પણ હોય છે.
+
+$l(!A)$ને~$!A$માંના ડાબા કૌંસોની સંખ્યા અને $r(!A)$ને જમણા
+કૌંસોની સંખ્યા કહો; એવી જ રીતે $l(t)$ અને $r(t)$ને પદ~$t$માંના
+અનુક્રમે ડાબા અને જમણા કૌંસોની સંખ્યા કહો.
+
+\begin{prob}
+    કોઈ પણ પદ~$t$ માટે $l(t)=r(t)$ સાબિત કરો.
+\end{prob}
+
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\indfrm$માં $0$ ડાબા અને
+    $0$ જમણા કૌંસ છે.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\indfrm$માં $0$ ડાબા અને
+    $0$ જમણા કૌંસ છે.}}{}
+
+\item \indcase{!A}{\Atom{R}{t_1,\dots,t_n}}{$l(\indfrm)=1+l(t_1)+
+  \dots+l(t_n)=1+r(t_1)+\dots+r(t_n)=r(\indfrm)$. અહીં આપણે
+  અભ્યાસપ્રશ્ન તરીકે છોડેલી હકીકત વાપરી છે કે દરેક પદ~$t$ માટે
+  $l(t)=r(t)$.}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$l(\indfrm)=l(t_1)+l(t_2)=
+  r(t_1)+r(t_2)=r(\indfrm)$.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{અનુમાન-પૂર્વધારણા મુજબ
+    $l(!B)=r(!B)$. તેથી $l(\indfrm)=l(!B)=r(!B)=r(\indfrm)$.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{અનુમાન-પૂર્વધારણા મુજબ $l(!B)=
+  r(!B)$ અને $l(!C)=r(!C)$. તેથી $l(\indfrm)=1+l(!B)+l(!C)=
+  1+r(!B)+r(!C)=r(\indfrm)$.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{અનુમાન-પૂર્વધારણા
+    મુજબ $l(!B)=r(!B)$. તેથી $l(\indfrm)=l(!B)=r(!B)=
+    r(\indfrm)$.}}{}
+
+% Print case for \lexists if prvEx and not prvAll
+\tagitem{prvAll,notprvEx}{}{\indcase{!A}{\lexists[x][!B]}{અનુમાન-પૂર્વધારણા
+    મુજબ $l(!B)=r(!B)$. તેથી $l(\indfrm)=l(!B)=r(!B)=
+    r(\indfrm)$.}}
+
+% Just say similarly if prvEx and prvAll
+\tagitem{notprvAll,notprvEx}{}{\indcase{!A}{\lexists[x][!B]}{એ જ રીતે.}}
+\end{enumerate}
+\end{proof}
+
+\begin{defn}[ઉચિત આરંભખંડ]
+સંકેતોની શ્રેણી~$!B$ને સંકેતોની શ્રેણી~$!A$નો \emph{ઉચિત આરંભખંડ}
+ત્યારે કહીએ જ્યારે $!B$ને કોઈ બિન-રિક્ત સંકેતશ્રેણી સાથે જોડવાથી
+$!A$ મળે.
+\end{defn}
+
+\begin{lem}\ollabel{lem:no-prefix}
+જો $!A$ !!a{formula} હોય અને $!B$, $!A$નો ઉચિત આરંભખંડ હોય, તો
+$!B$ !!a{formula} નથી.
+\end{lem}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][unq]{lem:no-prefix} સાબિત કરો.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:unique-atomic}
+જો $!A$ આણ્વિક !!{formula} હોય, તો તે નીચેનામાંથી એક અને માત્ર એક
+શરત સંતોષે છે.
+\begin{enumerate}
+\tagitem{prvFalse}{$!A \ident \lfalse$.}{}
+\tagitem{prvTrue}{$!A \ident \ltrue$.}{}
+\item $!A \ident \Atom{R}{t_1,\dots,t_n}$, જ્યાં $R$ કોઈ $n$-સ્થાની
+  !!{predicate}, $t_1$, \dots, $t_n$ પદો છે અને $R$, $t_1$, \dots,
+  $t_n$માંથી દરેક એકમાત્ર રીતે નિર્ધારિત છે.
+\item $!A \ident \eq[t_1][t_2]$, જ્યાં $t_1$ અને $t_2$ એકમાત્ર રીતે
+  નિર્ધારિત પદો છે.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][unq]{prop:unique-atomic} સાબિત કરો. (સંકેત: પદો માટે
+\olref[fol][syn][unq]{lem:no-prefix}નું રૂપ ઘડીને સાબિત કરો.)
+\end{prob}
+
+\begin{prop}[એકમાત્ર વાચનીયતા]
+દરેક !!{formula} નીચેનામાંથી એક અને માત્ર એક શરત સંતોષે છે.
+\begin{enumerate}
+\item $!A$ આણ્વિક છે.
+
+\tagitem{prvNot}{$!A$, $\lnot !B$ સ્વરૂપનું છે.}{}
+
+\tagitem{prvAnd}{$!A$, $(!B \land !C)$ સ્વરૂપનું છે.}{}
+
+\tagitem{prvOr}{$!A$, $(!B \lor !C)$ સ્વરૂપનું છે.}{}
+
+\tagitem{prvIf}{$!A$, $(!B \lif !C)$ સ્વરૂપનું છે.}{}
+
+\tagitem{prvIff}{$!A$, $(!B \liff !C)$ સ્વરૂપનું છે.}{}
+
+\tagitem{prvAll}{$!A$, $\lforall[x][!B]$ સ્વરૂપનું છે.}{}
+
+\tagitem{prvEx}{$!A$, $\lexists[x][!B]$ સ્વરૂપનું છે.}{}
+\end{enumerate}
+વળી, દરેક કિસ્સામાં $!B$, અથવા $!B$ અને $!C$, એકમાત્ર રીતે
+નિર્ધારિત છે. તેનો અર્થ, દાખલા તરીકે, એવા જુદા યુગ્મો $!B$, $!C$ અને
+$!B'$, $!C'$ નથી કે $!A$ બંને
+\iftag{prvIf}{$(!B \lif !C)$ અને $(!B' \lif !C')$ સ્વરૂપનું હોય.}{
+    \iftag{prvOr}{$(!B \lor !C)$ અને $(!B' \lor !C')$ સ્વરૂપનું હોય.}{
+      \iftag{prvAnd}{$(!B \land !C)$ અને $(!B' \land !C')$ સ્વરૂપનું હોય.}{}}}
+\end{prop}
+
+\begin{proof}
+રચના-નિયમો મુજબ કોઈ !!a{formula} આણ્વિક ન હોય તો તે આરંભકૌંસ~(,
+\iftag{prvNot}{$\lnot$,}{} અથવા કોઈ પરિમાણકથી શરૂ થવું જોઈએ. બીજી
+તરફ, નીચેના સંકેતોમાંથી કોઈથી શરૂ થતું દરેક !!{formula} આણ્વિક હોવું
+જોઈએ: !!a{predicate}, !!a{function}, !!a{constant}
+\iftag{prvFalse}{, $\lfalse$}{}\iftag{prvTrue}{, $\ltrue$}{}.
+
+તેથી ખરેખર આપણે માત્ર એટલું બતાવવાનું છે કે જો $!A$, $(!B\ast !C)$
+સ્વરૂપનું અને સાથે $(!B'\mathbin{\ast'}!C')$ સ્વરૂપનું હોય, તો
+$!B\ident !B'$, $!C\ident !C'$ અને $\ast={\ast'}$.
+
+ધારો કે $!A\ident(!B\ast !C)$ અને
+$!A\ident(!B'\mathbin{\ast'}!C')$ બંને છે. હવે કાં તો
+$!B\ident !B'$ અથવા નહિ. જો હોય તો સ્પષ્ટ છે કે $\ast={\ast'}$ અને
+$!C\ident !C'$, કારણ કે ત્યાર પછી એ $!A$ની એક જ જગ્યાએ શરૂ થતી અને
+સમાન લંબાઈ ધરાવતી ઉપશ્રેણીઓ છે. બીજો કિસ્સો $!B\not\ident !B'$ છે.
+$!B$ અને $!B'$ બંને $!A$ની એક જ જગ્યાએ શરૂ થતી ઉપશ્રેણીઓ હોવાથી
+એક બીજાનો ઉચિત આરંભખંડ હોવો જોઈએ. પરંતુ
+\olref{lem:no-prefix} મુજબ એ અશક્ય છે.
+\end{proof}
+
+
+\end{document}

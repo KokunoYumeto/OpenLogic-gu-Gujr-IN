@@ -1,0 +1,187 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-12T16:23:08.574556+00:00",
+  "audit_id": "GU-OLSYN-20260912",
+  "audit_method": "Same-agent exact comparison against the frozen source, the surrounding definitions, formula grammar and proof invariants within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLSYN-001",
+      "unit_id": "OLP-0151",
+      "classification": "confirmed_malformed_nested_conditional_arguments",
+      "finding": "The nested conditional for the defined truth symbol omits its empty third argument, so a closing brace is consumed by the surrounding conditional and the command nesting is malformed.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/first-order-languages.tex",
+      "source_locator": "first-order-languages.tex:104",
+      "source_bytes": 6720,
+      "source_sha256": "12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/first-order-languages.tex",
+      "target_bytes": 12048,
+      "target_sha256": "fab083a270aae518e04239c6f040727f42ab72955e9428af35b9e144d2d78cff",
+      "corrected_body_line": 103,
+      "adjacent_note_line": 105,
+      "handling": "Supplied the inner conditional's empty third argument, then closed the outer conditional with its own empty third argument, and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\iftag{defTrue}{\\ycomma !!{truth}~$\\ltrue$}}{}.",
+        "added": "\\iftag{defTrue}{\\ycomma !!{truth}~$\\ltrue$}{}. followed by the outer }{}"
+      },
+      "controlling_evidence": "Every neighboring inner conditional has three arguments, and the outer conditional opened before the paragraph requires its own closing third argument.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSYN-002",
+      "unit_id": "OLP-0152",
+      "classification": "confirmed_extra_parenthesis_in_defined_implication",
+      "finding": "The disjunctive definition of implication contains an unmatched closing parenthesis inside the mathematical expression.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "source_locator": "terms-formulas.tex:148",
+      "source_bytes": 8909,
+      "source_sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "target_bytes": 15033,
+      "target_sha256": "7c87e4ab2bcb443f6382d127f75f5f030ce2dbd677c85afebb2400004e688115",
+      "corrected_body_line": 143,
+      "adjacent_note_line": 157,
+      "handling": "Removed the unmatched parenthesis, restored the well-formed disjunction, and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lnot !A \\lor !B)",
+        "added": "\\lnot !A \\lor !B"
+      },
+      "controlling_evidence": "The definition says implication abbreviates a disjunction, and the expression has no corresponding opening parenthesis.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSYN-003",
+      "unit_id": "OLP-0154",
+      "classification": "confirmed_math_environment_closed_before_formula_parenthesis",
+      "finding": "Three main-operator table rows close math mode before the formula's final parenthesis, leaving that parenthesis outside the mathematical expression.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/main-operator.tex",
+      "source_locator": "main-operator.tex:90",
+      "source_bytes": 3627,
+      "source_sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/main-operator.tex",
+      "target_bytes": 6499,
+      "target_sha256": "752088dc1dbc16b4dbf9d9850d870f80ee74c07ee57b4edb26d96b433d9f6a1d",
+      "corrected_body_line": 95,
+      "adjacent_note_line": 105,
+      "handling": "Moved the final parenthesis inside math mode in the conjunction, disjunction and conditional rows and added one adjacent keyed note covering all three.",
+      "mathematical_delta": {
+        "removed": [
+          "$(!A \\land !B$)",
+          "$(!A \\lor !B$)",
+          "$(!A \\lif !B$)"
+        ],
+        "added": [
+          "$(!A \\land !B)$",
+          "$(!A \\lor !B)$",
+          "$(!A \\lif !B)$"
+        ]
+      },
+      "controlling_evidence": "Each table cell is an example of one complete binary formula, matching the well-formed biconditional example in the next row.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSYN-004",
+      "unit_id": "OLP-0156",
+      "classification": "confirmed_k_ary_clause_given_k_plus_one_arguments",
+      "finding": "The term-formation clause indexes arguments from zero through k, giving k+1 arguments to a function explicitly declared k-ary.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_locator": "formation-sequences.tex:46",
+      "source_bytes": 10074,
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_bytes": 17673,
+      "target_sha256": "42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a",
+      "corrected_body_line": 44,
+      "adjacent_note_line": 48,
+      "handling": "Indexed the arguments from 1 through k, preserving exactly k arguments, and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "m_0,\\dotsc,m_k and f(t_{m_0},\\dotsc,t_{m_k})",
+        "added": "m_1,\\dotsc,m_k and f(t_{m_1},\\dotsc,t_{m_k})"
+      },
+      "controlling_evidence": "A k-ary function application has exactly k argument terms; the corresponding formula-formation clause elsewhere uses indices 1 through k.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSYN-005",
+      "unit_id": "OLP-0156",
+      "classification": "confirmed_language_subscript_switch_in_general_proof",
+      "finding": "A proof stated for an arbitrary language L switches twice to L_0 even though no language L_0 is introduced in the theorem or proof.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_locator": "formation-sequences.tex:199",
+      "source_bytes": 10074,
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_bytes": 17673,
+      "target_sha256": "42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a",
+      "corrected_body_line": 201,
+      "adjacent_note_line": 210,
+      "handling": "Restored L in both accidental L_0 occurrences and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": [
+          "!A_n \\in \\Frm[L_0]",
+          "!A_j,!A_k \\in \\Frm[L_0]"
+        ],
+        "added": [
+          "!A_n \\in \\Frm[L]",
+          "!A_j,!A_k \\in \\Frm[L]"
+        ]
+      },
+      "controlling_evidence": "The theorem, the set F and the formation sequence are all fixed for the same arbitrary language L, so both induction conclusions must lie in Frm[L].",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSYN-006",
+      "unit_id": "OLP-0156",
+      "classification": "confirmed_semantic_equivalence_used_for_syntactic_case_split",
+      "finding": "The conjunction case in a proof about symbol strings uses logical equivalence where the formation-sequence definition requires syntactic identity.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "source_locator": "formation-sequences.tex:200",
+      "source_bytes": 10074,
+      "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "target_bytes": 17673,
+      "target_sha256": "42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a",
+      "corrected_body_line": 193,
+      "adjacent_note_line": 214,
+      "handling": "Replaced logical equivalence with syntactic identity and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\equiv",
+        "added": "\\ident"
+      },
+      "controlling_evidence": "The preceding exhaustive case list and the formation-sequence definition both state the constructor cases using syntactic identity.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSYN-007",
+      "unit_id": "OLP-0154",
+      "classification": "confirmed_missing_third_conditional_argument",
+      "finding": "The conditional that controls the reminder about defined operators has only its tag list and true branch; the required false branch is missing.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/main-operator.tex",
+      "source_locator": "main-operator.tex:77",
+      "source_bytes": 3627,
+      "source_sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/main-operator.tex",
+      "target_bytes": 6499,
+      "target_sha256": "752088dc1dbc16b4dbf9d9850d870f80ee74c07ee57b4edb26d96b433d9f6a1d",
+      "corrected_body_line": 78,
+      "adjacent_note_line": 79,
+      "handling": "Supplied the conditional's empty third argument and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "two-argument use of the three-argument iftag macro",
+        "added": "explicit empty false branch"
+      },
+      "controlling_evidence": "The macro is defined with three mandatory arguments in open-logic-selective.sty, and comparable optional reminders end with an explicit empty branch.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_015.json",
+  "status": "seven_repairs_applied_disclosed_and_structural_semantic_reader_qa_passed"
+}

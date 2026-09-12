@@ -1,0 +1,110 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: subformulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sbf}
+
+\olsection{\printtoken{P}{subformula}}
+
+\begin{explain}
+આપેલા !!{formula}ને ``બનાવતાં'' !!{formula}s વિશે વાત કરવી ઘણી વાર
+ઉપયોગી છે. આપણે તેમને તેનાં \emph{!!{subformula}s} કહીએ છીએ. દરેક
+!!{formula} પોતાનું !!a{subformula} ગણાય છે; $!A$થી જુદું એવું $!A$નું
+ઉપસૂત્ર \emph{ઉચિત !!{subformula}} કહેવાય છે.
+\end{explain}
+
+\begin{defn}[તત્કાલિક !!^{subformula}]
+જો $!A$ !!a{formula} હોય, તો $!A$નાં \emph{તત્કાલિક
+!!{subformula}s} નીચે પ્રમાણે અનુમાનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item આણ્વિક !!{formula}sનાં કોઈ તત્કાલિક !!{subformula}s નથી.
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$નું એકમાત્ર
+    તત્કાલિક !!{subformula}~$!B$ છે.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$નાં તત્કાલિક
+  !!{subformula}s $!B$ અને $!C$ છે ($\ast$ કોઈ પણ દ્વિસ્થાની સંયોજક
+  છે).}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$નું એકમાત્ર
+    તત્કાલિક !!{subformula}~$!B$ છે.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$નું એકમાત્ર
+    તત્કાલિક !!{subformula}~$!B$ છે.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[ઉચિત !!^{subformula}]
+જો $!A$ !!a{formula} હોય, તો $!A$નાં \emph{ઉચિત !!{subformula}s}
+નીચે પ્રમાણે પુનરાવર્તી રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item આણ્વિક !!{formula}sનાં કોઈ ઉચિત !!{subformula}s નથી.
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$નાં ઉચિત
+    !!{subformula}sમાં~$!B$ અને $!B$નાં બધાં ઉચિત !!{subformula}s
+    આવે છે.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$નાં ઉચિત !!{subformula}sમાં
+  $!B$, $!C$ તથા $!B$ અને $!C$નાં બધાં ઉચિત !!{subformula}s આવે છે.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$નાં ઉચિત
+    !!{subformula}sમાં~$!B$ અને $!B$નાં બધાં ઉચિત !!{subformula}s
+    આવે છે.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$નાં ઉચિત
+    !!{subformula}sમાં~$!B$ અને $!B$નાં બધાં ઉચિત !!{subformula}s
+    આવે છે.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[!!^{subformula}]
+$!A$નાં !!{subformula}s એટલે $!A$ પોતે અને તેનાં બધાં ઉચિત
+!!{subformula}s.
+\end{defn}
+
+\begin{explain}
+તત્કાલિક !!{subformula}s અને ઉચિત !!{subformula}s આપણે જે રીતે
+વ્યાખ્યાયિત કર્યાં છે તેમાં રહેલો સૂક્ષ્મ તફાવત નોંધો. પહેલા કિસ્સામાં
+દરેક શક્ય સ્વરૂપના સૂત્ર~$!A$ માટે આપણે $!A$નાં તત્કાલિક
+!!{subformula}s સીધાં વ્યાખ્યાયિત કર્યાં છે. આ કિસ્સાઓ દ્વારા આપેલી સ્પષ્ટ વ્યાખ્યા
+છે અને તેના કિસ્સા !!{formula}sના ગણની અનુમાનાત્મક વ્યાખ્યાને અનુસરે
+છે. બીજા કિસ્સામાં પણ બધાં !!{formula}sનો ગણ જે રીતે વ્યાખ્યાયિત થાય
+છે તેને અનુસર્યા છીએ, પણ દરેક કિસ્સામાં એ ઉચિત !!{subformula}sને પણ
+સમાવ્યાં છે જે નાનાં !!{formula}s $!B$, $!C$નાં છે; આ !!{formula}s
+પોતે તો સામેલ છે જ. તેનાથી
+વ્યાખ્યા \emph{પુનરાવર્તી} બને છે. સામાન્ય રીતે, અનુમાનાત્મક રીતે
+વ્યાખ્યાયિત ગણ પરના વિધેયની વ્યાખ્યા (અહીં !!{formula}s પરની)
+ત્યારે પુનરાવર્તી કહેવાય જ્યારે વિધેયની વ્યાખ્યાના કિસ્સાઓમાં વિધેયનો
+પોતાનો ઉપયોગ થતો હોય. જોકે વ્યાખ્યા સુવ્યાખ્યાયિત રહે એ માટે ખાતરી
+કરવી પડે કે આપણે હંમેશાં માત્ર એ દલીલો માટેનાં વિધેયનાં મૂલ્યો વાપરીએ
+છીએ જે વ્યાખ્યાયિત થતી દલીલની ``પહેલાં'' આવે છે---અહીં
+$(!B\ast !C)$નું ``ઉચિત !!{subformula}'' વ્યાખ્યાયિત કરતાં આપણે માત્ર
+ઉચિત !!{subformula}s વાપરીએ છીએ જે ``અગાઉનાં'' !!{formula}s $!B$ અને
+$!C$નાં છે.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:subfrm-trans}
+ધારો કે $!B$, $!A$નું ઉપસૂત્ર છે અને $!C$, $!B$નું ઉપસૂત્ર છે. તો
+$!C$, $!A$નું ઉપસૂત્ર છે. બીજા શબ્દોમાં, ઉપસૂત્ર-સંબંધ પરંપરિત છે.
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:subfrm-trans} સાબિત કરો.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:count-subfrms}
+ધારો કે $!A$ એ $n$ સંયોજકો અને પરિમાણકો ધરાવતું સૂત્ર છે. તો $!A$ને
+વધુમાં વધુ $2n+1$ ઉપસૂત્રો છે.
+\end{prop}
+
+\begin{prob}
+\olref[fol][syn][sbf]{prop:count-subfrms} સાબિત કરો.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,164 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: first-order-languages
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fol}
+
+\olsection{પ્રથમ-ક્રમ ભાષાઓ}
+
+
+પ્રથમ-ક્રમ તર્કશાસ્ત્રની અભિવ્યક્તિઓ, \emph{!!{variable}s},
+\emph{!!{constant}s}, \emph{!!{predicate}s} અને ક્યારેક
+\emph{!!{function}s} ધરાવતા પાયાના સંકેતભંડોળમાંથી રચાય છે. આ
+સંકેતોમાંથી તાર્કિક સંયોજકો, પરિમાણકો અને કૌંસ તથા અલ્પવિરામ જેવાં
+વિરામચિહ્નો સાથે મળીને \emph{પદો} અને \emph{!!{formula}s} રચાય છે.
+
+\begin{explain}
+અનૌપચારિક રીતે, !!{predicate}s ગુણધર્મો અને સંબંધોનાં નામ છે,
+!!{constant}s વ્યક્તિગત વસ્તુઓનાં નામ છે અને !!{function}s
+પ્રતિચિત્રણોનાં નામ છે. !!{identity}~$\eq$ને બાદ કરતાં આ બધાં
+\emph{અતાર્કિક સંકેતો} છે અને તે સાથે મળીને ભાષા બનાવે છે. કોઈ પણ
+પ્રથમ-ક્રમ ભાષા~$\Lang L$ તેના અતાર્કિક સંકેતોથી નિર્ધારિત થાય છે.
+સૌથી સામાન્ય કિસ્સામાં, $\Lang L$માં દરેક પ્રકારના અનંત સંખ્યામાં
+સંકેતો હોય છે.
+\end{explain}
+
+સામાન્ય કિસ્સામાં પ્રથમ-ક્રમ તર્કશાસ્ત્રમાં આપણે નીચેના સંકેતો
+વાપરીએ છીએ:
+
+\begin{enumerate}
+\item તાર્કિક સંકેતો
+\begin{enumerate}
+\item તાર્કિક સંયોજકો:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (નિષેધ)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (સંયોજન)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (વિયોજન)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{prvAll}{\ycomma $\lforall$ (સાર્વત્રિક પરિમાણક)}{}%
+  \iftag{prvEx}{\ycomma $\lexists$ (અસ્તિત્વલક્ષી પરિમાણક)}{}.
+\tagitem{prvFalse}{!!{falsity} માટેનો વિધાનાત્મક અચળ~$\lfalse$.}{}
+\tagitem{prvTrue}{!!{truth} માટેનો વિધાનાત્મક અચળ~$\ltrue$.}{}
+\item દ્વિસ્થાની !!{identity}~$\eq$.
+\item !!{variable}sનો !!{denumerable}s ગણ: $\Obj v_0$, $\Obj v_1$,
+  $\Obj v_2$, \dots
+\end{enumerate}
+\item પ્રથમ-ક્રમ તર્કશાસ્ત્રની \emph{પ્રમાણભૂત ભાષા} બનાવતા
+  અતાર્કિક સંકેતો
+\begin{enumerate}
+\item દરેક $n>0$ માટે $n$-સ્થાની !!{predicate}sનો !!{denumerable}s
+  ગણ: $\Obj A^n_0$, $\Obj A^n_1$, $\Obj A^n_2$, \dots
+\item !!{constant}sનો !!{denumerable}s ગણ: $\Obj c_0$, $\Obj c_1$,
+  $\Obj c_2$, \dots.
+\item દરેક $n>0$ માટે $n$-સ્થાની !!{function}sનો !!{denumerable}s
+  ગણ: $\Obj f^n_0$, $\Obj f^n_1$, $\Obj f^n_2$, \dots
+\end{enumerate}
+\item વિરામચિહ્નો: (, ) અને અલ્પવિરામ.
+\end{enumerate}
+
+આપણી મોટા ભાગની વ્યાખ્યાઓ અને પરિણામો પ્રથમ-ક્રમ તર્કશાસ્ત્રની
+સંપૂર્ણ પ્રમાણભૂત ભાષા માટે રજૂ થશે. જોકે ઉપયોગ અનુસાર આપણે ભાષાને
+માત્ર થોડાંક !!{predicate}s, !!{constant}s અને !!{function}s સુધી
+મર્યાદિત પણ કરી શકીએ છીએ.
+
+\begin{ex}
+અંકગણિતની ભાષા~$\Lang L_A$માં એક દ્વિસ્થાની !!{predicate}~$<$, એક
+!!{constant}~$\Obj 0$, એક એકસ્થાની !!{function}~$\prime$ અને બે
+દ્વિસ્થાની !!{function}s~$+$ તથા~$\times$ હોય છે.
+\end{ex}
+
+\begin{ex}
+ગણસિદ્ધાંતની ભાષા~$\Lang L_Z$માં માત્ર એક દ્વિસ્થાની
+!!{predicate}~$\in$ હોય છે.
+\end{ex}
+
+\begin{ex}
+ક્રમોની ભાષા~$\Lang L_\le$માં માત્ર દ્વિસ્થાની
+!!{predicate}~$\le$ હોય છે.
+\end{ex}
+
+ફરી યાદ રાખો કે આ પરંપરાઓ છે: સત્તાવાર રીતે આ માત્ર ઉપનામો છે;
+દાખલા તરીકે, $<$, $\in$ અને $\le$ એ $\Obj A^2_0$નાં ઉપનામો છે,
+$\Obj 0$ એ $\Obj c_0$નું, $\prime$ એ $\Obj f^1_0$નું, $+$ એ
+$\Obj f^2_0$નું અને $\times$ એ $\Obj f^2_1$નું ઉપનામ છે.
+
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+ઉપર રજૂ કરેલા મૂળભૂત સંયોજકો અને
+\iftag{notprvEx,notprvAll}{પરિમાણક}{પરિમાણકો} ઉપરાંત આપણે નીચેના
+\emph{વ્યાખ્યાયિત} સંકેતો પણ વાપરીએ છીએ:
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (નિષેધ)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (સંયોજન)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (વિયોજન)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defAll}{\ycomma $\lforall$ (સાર્વત્રિક પરિમાણક)}{}%
+  \iftag{defEx}{\ycomma $\lexists$ (અસ્તિત્વલક્ષી પરિમાણક)}{}%
+  \iftag{defFalse}{\ycomma !!{falsity}~$\lfalse$}{}%
+  \iftag{defTrue}{\ycomma !!{truth}~$\ltrue$}{}.
+}{}
+\sourcecorrection{OLSYN-001}{મૂળની
+\texttt{first-order-languages.tex}માં વ્યાખ્યાયિત $\ltrue$ માટેની
+અંદરની \texttt{\string\iftag} આજ્ઞાનો ત્રીજો દલીલખંડ છૂટી ગયો છે અને
+તેના સ્થાને આવેલું અંતકૌંસ બહારની \texttt{\string\iftag} આજ્ઞાનો
+બીજો દલીલખંડ અકાળે બંધ કરે છે. અહીં બંને આજ્ઞાઓનું સંતુલિત,
+ત્રણ-દલીલવાળું રૂપ પુનઃસ્થાપિત કર્યું છે.}
+
+\begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+\begin{explain}
+વ્યાખ્યાયિત સંકેત સત્તાવાર રીતે ભાષાનો ભાગ નથી, પણ અનૌપચારિક
+સંક્ષેપ તરીકે રજૂ થાય છે: માત્ર મૂળભૂત સંકેતો વાપરીએ તો ઘણાં લાંબાં
+થતાં સૂત્રોને તેના વડે ટૂંકાં લખી શકાય છે. આ દેખીતો લાભ છે. જોકે વધુ
+મોટો લાભ એ છે કે સાબિતીઓ ટૂંકી થાય છે. કોઈ સંકેત મૂળભૂત હોય તો
+સાબિતીઓમાં તેને અલગથી ધ્યાનમાં લેવો પડે. તેથી મૂળભૂત સંકેતો જેટલા
+વધુ, આપણી સાબિતીઓ એટલી લાંબી.
+\end{explain}
+\end{tagblock}
+
+% Alternate symbols
+
+\begin{intro}
+ઉપર આપણે વાપર્યાં તેનાથી જુદી પરિભાષા અને સંકેતોથી તમે પરિચિત હોઈ
+શકો. તર્કશાસ્ત્રનાં પુસ્તકો (અને શિક્ષકો) ``નિષેધ'' માટે સામાન્ય રીતે
+$\sim$, $\neg$ અથવા~! અને ``સંયોજન'' માટે $\wedge$, $\cdot$ અથવા
+$\&$ વાપરે છે. ``શરતી વિધાન'' અથવા ``પ્રેરણ'' માટે સામાન્ય રીતે
+$\rightarrow$, $\Rightarrow$ અને $\supset$ વપરાય છે.
+\iftag{prvIff,defIff}{``દ્વિશરતી વિધાન'', ``દ્વિમુખી પ્રેરણ'' અથવા
+  ``(સત્યમૂલ્યલક્ષી) સમતુલ્યતા'' માટેના સંકેતો $\leftrightarrow$,
+  $\Leftrightarrow$ અને $\equiv$ છે.}{}
+\iftag{prvFalse,defFalse}{$\lfalse$ સંકેતને જુદી જગ્યાએ ``અસત્યતા'',
+  ``ફાલ્સમ'', ``અસંગતિ'' અથવા ``તળિયું'' કહે છે.}{}
+\iftag{prvTrue,defTrue}{$\ltrue$ સંકેતને જુદી જગ્યાએ ``સત્ય'',
+  ``વેરમ'' અથવા ``ટોચ'' કહે છે.}{}
+
+લેટિન મૂળાક્ષરના આરંભનાં નાનાં અક્ષરો (દા.ત., $a$, $b$, $c$)
+!!{constant}s માટે (ક્યારેક તેમને નામો કહેવાય છે) અને અંતનાં નાનાં
+અક્ષરો (દા.ત., $x$, $y$, $z$) !!{variable}s માટે વાપરવાની પરંપરા
+છે. પરિમાણકો !!{variable}s સાથે જોડાય છે, જેમ કે~$x$; સાર્વત્રિક
+પરિમાણક માટે $\forall x$, $(\forall x)$, $(x)$, $\Pi x$,
+$\bigwedge_x$ અને અસ્તિત્વલક્ષી પરિમાણક માટે $\exists x$,
+$(\exists x)$, $(Ex)$, $\Sigma x$, $\bigvee_x$ જેવી સંકેત-ભિન્નતાઓ
+વપરાય છે.
+\end{intro}
+
+\begin{explain}
+આપણે બધા વિધાનાત્મક કારકો અને બંને પરિમાણકોને ભાષાના મૂળભૂત સંકેતો
+ગણી શકીએ. તેના બદલે મૂળભૂત સંકેતોનો નાનો ભંડાર પસંદ કરીને બીજા
+!!{operator}sને વ્યાખ્યાયિત પણ ગણી શકીએ. બૂલિયન કારકોના
+``સત્યતાફલનલક્ષી રીતે પૂર્ણ'' ગણોમાં $\{ \lnot, \lor \}$,
+$\{ \lnot, \land \}$ અને $\{ \lnot, \lif\}$નો સમાવેશ થાય છે;
+આમાંના કોઈ પણ ગણને કોઈ એક પરિમાણક સાથે જોડીને અભિવ્યક્તિક્ષમ રીતે
+પૂર્ણ પ્રથમ-ક્રમ ભાષા મળે છે.
+
+તમે બીજા બે !!{operator}sથી પણ પરિચિત હોઈ શકો: હેન્રી શેફરના નામ
+પરથી ઓળખાતો શેફર સ્ટ્રોક~$|$ અને ક્વાઇનના ડૅગર તરીકે પણ ઓળખાતો
+પિયર્સનો તીર~$\downarrow$. અનુક્રમે ``નૅન્ડ'' અને ``નૉર''ના તેમના
+સામાન્ય વાંચન હેઠળ આ દરેક કારક પોતે જ સત્યતાફલનલક્ષી રીતે પૂર્ણ છે.
+\end{explain}
+
+\end{document}

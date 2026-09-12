@@ -71,7 +71,10 @@
 \NewDocumentCommand{\eq}{t{/} o o}{%
   \IfNoValueTF{#3}{\IfBooleanTF{#1}{\ne}{=}}{\IfBooleanTF{#1}{#2\ne#3}{#2=#3}}}
 \newcommand{\indfrm}{}
-\newcommand{\indcase}[3]{\def\indfrm{#1}$#1\ident #2$: #3}
+\newcommand{\indfrmp}{}
+\NewDocumentCommand{\indcase}{s m m +m}{%
+  \def\indfrm{#2}\def\indfrmp{#2}%
+  \IfBooleanTF{#1}{$#2$ આણ્વિક છે: }{$#2\ident #3$: }#4}
 \newcommand{\Sequent}{\Rightarrow}
 \renewcommand{\fCenter}{\ensuremath{\,\Sequent\,}}
 \newcommand{\LeftR}[1]{\ensuremath{{#1}\mathrm{L}}}
@@ -279,5 +282,13 @@ Magnus, P. D., Tim Button, J. Robert Loftis, Aaron Thomas-Bolduc,
 Robert Trueman, and Richard Zach. 2021. \emph{forall x: Calgary: An
 Introduction to Formal Logic}. F21 ed. Open Logic Project.
 \url{https://forallx.openlogicproject.org/}.
+\ifdefined\guincludesyntaxbibliography
+\bibitem[Smullyan(1968)]{Smullyan1968}
+Smullyan, Raymond M. 1968. \emph{First-Order Logic}.
+New York, NY: Springer.
+\bibitem[Zuckerman(1973)]{Zuckerman1973}
+Zuckerman, Martin M. 1973. Formation sequences for propositional formulas.
+\emph{Notre Dame Journal of Formal Logic} 14(1), 134--138.
+\fi
 \end{thebibliography}
 \end{document}

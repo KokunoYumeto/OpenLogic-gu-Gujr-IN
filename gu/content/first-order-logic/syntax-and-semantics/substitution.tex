@@ -1,0 +1,129 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sub}
+
+\olsection{પ્રતિસ્થાપન}
+
+\begin{defn}[પદમાં પ્રતિસ્થાપન]
+$s$માંની $x$ની દરેક ઘટનાના સ્થાને $t$ \emph{પ્રતિસ્થાપિત કરવાથી}
+મળતું પરિણામ $\Subst{s}{t}{x}$ નીચે મુજબ પુનરાવર્તી રીતે વ્યાખ્યાયિત
+કરીએ છીએ:
+\begin{enumerate}
+\item \indcase{s}{c}{$\Subst{\indfrm}{t}{x}$ માત્ર $s$ જ છે.}
+
+\item \indcase{s}{y}{$\Subst{\indfrm}{t}{x}$ પણ માત્ર~$s$ જ છે,
+  જો $y$ ચલ હોય અને $y \not\ident x$ હોય.}
+
+\item \indcase{s}{x}{$\Subst{\indfrm}{t}{x}$ એ~$t$ છે.}
+
+\item\indcase{s}{\Atom{f}{t_1, \dots, t_n}}{$\Subst{\indfrmp}{t}{x}$ એ
+  $\Atom{f}{\Subst{t_1}{t}{x}, \dots, \Subst{t_n}{t}{x}}$ છે.}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+પદ~$t$, $!A$માં $x$ માટે \emph{!!{free for}} ત્યારે છે જ્યારે
+$!A$માંની $x$ની કોઈ પણ મુક્ત ઘટના એવા પરિમાણકના વ્યાપમાં ન આવે જે
+$t$માંના કોઈ ચલને બાંધે છે.
+\end{defn}
+
+\begin{ex} ~
+\begin{enumerate}
+\item $\Obj v_8$, $\lexists[\Obj
+  v_3]\Atom{\Obj A^2_4}{\Obj v_3,\Obj v_1}$માં $\Obj v_1$ માટે
+  મુક્તપણે પ્રતિસ્થાપનીય છે.
+
+\item $\Obj f^2_1(\Obj v_1, \Obj v_2)$,
+  $\lforall[\Obj v_2]\Atom{\Obj A^2_4}{\Obj v_0,\Obj v_2}$માં
+  $\Obj v_0$ માટે \emph{મુક્તપણે પ્રતિસ્થાપનીય નથી}.
+\end{enumerate}
+\end{ex}
+
+\begin{defn}[!!a{formula}માં પ્રતિસ્થાપન]
+જો $!A$ !!a{formula} હોય, $x$~!!a{variable} હોય અને $t$, $!A$માં
+$x$ માટે !!{free for} પદ હોય, તો $\Subst{!A}{t}{x}$ એ $!A$માંની
+$x$ની બધી મુક્ત ઘટનાઓના સ્થાને $t$ પ્રતિસ્થાપિત કરવાથી મળતું
+પરિણામ છે.
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\Subst{\indfrm}{t}{x}$ એ
+    $\lfalse$ છે.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\Subst{\indfrm}{t}{x}$ એ
+    $\ltrue$ છે.}}{}
+
+\item \indcase{!A}{\Atom{P}{t_1,\dots,
+    t_n}}{$\Subst{\indfrm}{t}{x}$ એ $\Atom{P}{\Subst{t_1}{t}{x},
+    \dots, \Subst{t_n}{t}{x}}$ છે.}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$\Subst{\indfrmp}{t}{x}$ એ
+  $\Subst{t_1}{t}{x} = \Subst{t_2}{t}{x}$ છે.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\Subst{\indfrmp}{t}{x}$ એ
+    $\lnot \Subst{!B}{t}{x}$ છે.}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land
+    !C)}{$\Subst{\indfrmp}{t}{x}$ એ $(\Subst{!B}{t}{x} \land
+    \Subst{!C}{t}{x})$ છે.}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor
+    !C)}{$\Subst{\indfrmp}{t}{x}$ એ $(\Subst{!B}{t}{x} \lor
+    \Subst{!C}{t}{x})$ છે.}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif
+    !C)}{$\Subst{\indfrmp}{t}{x}$ એ $(\Subst{!B}{t}{x} \lif
+    \Subst{!C}{t}{x})$ છે.}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff
+    !C)}{$\Subst{\indfrmp}{t}{x}$ એ $(\Subst{!B}{t}{x} \liff
+    \Subst{!C}{t}{x})$ છે.}}{}
+
+\tagitem{prvAll}{
+\indcase{!A}{\lforall[y][!B]}{$\Subst{\indfrmp}{t}{x}$ એ
+    $\lforall[y][\Subst{!B}{t}{x}]$ છે, જો $y$ ચલ હોય અને $x$થી
+    જુદો હોય; નહિ તો $\Subst{\indfrmp}{t}{x}$ માત્ર $\indfrm$ જ છે.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[y][!B]}{$\Subst{\indfrmp}{t}{x}$ એ
+    $\lexists[y][\Subst{!B}{t}{x}]$ છે, જો $y$ ચલ હોય અને $x$થી
+    જુદો હોય; નહિ તો $\Subst{\indfrmp}{t}{x}$ માત્ર $\indfrm$ જ છે.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+નોંધો કે પ્રતિસ્થાપન નિરર્થક પણ હોઈ શકે છે: જો $x$, $!A$માં
+જરાય ન આવતો હોય, તો $\Subst{!A}{t}{x}$ માત્ર~$!A$ જ છે.
+
+$t$, $!A$માં $x$ માટે !!{free for} હોવું જોઈએ એ પ્રતિબંધ નીચેના
+જેવા કિસ્સાઓને બાકાત રાખવા જરૂરી છે. જો
+$!A \ident \lexists[y][x < y]$ અને $t \ident y$ હોય, તો
+$\Subst{!A}{t}{x}$નું પરિણામ $\lexists[y][y < y]$ થાય. આ કિસ્સામાં
+મુક્ત ચલ~$y$ પ્રતિસ્થાપન વખતે પરિમાણક~$\lexists[y]$ દ્વારા
+``પકડાઈ'' જાય છે, જે ઇચ્છનીય નથી. ઉદાહરણ તરીકે, જ્યારે પણ
+$\lforall[x][!B]$ સાચું હોય ત્યારે $\Subst{!B}{t}{x}$ પણ સાચું હોય
+એવું આપણે ઇચ્છીએ. પરંતુ $\lforall[x][\lexists[y][x < y]]$ લો
+(અહીં $!B$ એ $\lexists[y][x < y]$ છે). આ વાક્ય, દાખલા તરીકે,
+પ્રાકૃતિક સંખ્યાઓ વિશે સાચું છે: દરેક સંખ્યા~$x$ માટે તેનાથી મોટી
+કોઈ સંખ્યા~$y$ હોય છે. જો આપણે $x$ના સ્થાને $y$નું પ્રતિસ્થાપન
+મંજૂર કરીએ, તો $\Subst{!B}{y}{x} \ident \lexists[y][y < y]$ મળે,
+જે અસત્ય છે. $t$માંનો કોઈ પણ મુક્ત ચલ $!A$માંના કોઈ પરિમાણક દ્વારા
+બદ્ધ ન થઈ જાય એવી શરત રાખીને આપણે આ અટકાવીએ છીએ.
+\end{explain}
+
+અટપટી સંકેતપદ્ધતિ ટાળવા આપણે ઘણી વાર નીચેનો રિવાજ વાપરીએ છીએ: જો
+$!A$ એવું !!a{formula} હોય જેમાં !!{variable}~$x$ મુક્ત આવી શકે, તો
+આ દર્શાવવા આપણે $!A(x)$ પણ લખીએ છીએ. કયા $!A$ અને~$x$ની વાત છે તે
+સ્પષ્ટ હોય અને $t$ પદ હોય ($!A(x)$માં $x$ માટે મુક્તપણે
+પ્રતિસ્થાપનીય હોવાનું ધારેલું), ત્યારે $\Subst{!A}{t}{x}$ માટે ટૂંકમાં
+$!A(t)$ લખીએ છીએ. તેથી, દાખલા તરીકે, આપણે ``$!A(t)$ને
+$\lforall[x][!A(x)]$નું દૃષ્ટાંત
+કહીએ છીએ'' એમ કહી શકીએ. આનો અર્થ એ છે કે જો $!A$ કોઈ !!{formula},
+$x$ કોઈ !!a{variable}, અને $t$, $!A$માં $x$ માટે મુક્તપણે
+પ્રતિસ્થાપનીય પદ હોય, તો $\Subst{!A}{t}{x}$ એ
+$\lforall[x][!A]$નું દૃષ્ટાંત છે.
+
+\end{document}

@@ -1,0 +1,110 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: main-operator
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{mai}
+
+\olsection{સૂત્રનો \printtoken{S}{main operator}}
+
+\begin{explain}
+!!a{formula}~$!A$ રચવામાં છેલ્લે વપરાયેલા કારક વિશે વાત કરવી ઘણી
+વાર ઉપયોગી બને છે. આ કારકને $!A$નો \emph{મુખ્ય કારક} કહેવાય છે.
+સહજ રીતે કહીએ તો તે $!A$નો ``સૌથી બહારનો'' કારક છે. દાખલા તરીકે,
+$\lnot !A$નો મુખ્ય કારક~$\lnot$, $(!A\lor !B)$નો મુખ્ય કારક~$\lor$,
+વગેરે છે.
+\end{explain}
+
+
+\begin{defn}[!!^{main operator}]
+\ollabel{def:main-op}
+!!a{formula}~$!A$નો \emph{!!{main operator}} નીચે પ્રમાણે
+વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item \indcase*{!A}{!A}{$\indfrm$નો કોઈ !!{main operator} નથી.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$નો !!{main operator}
+  $\lnot$ છે.}}{}
+
+\tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\indfrm$નો
+  !!{main operator} $\land$ છે.}}{}
+
+\tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\indfrm$નો
+  !!{main operator} $\lor$ છે.}}{}
+
+\tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\indfrm$નો
+  !!{main operator} $\lif$ છે.}}{}
+
+\tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\indfrm$નો
+  !!{main operator} $\liff$ છે.}}{}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$નો
+  !!{main operator} $\lforall$ છે.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$નો
+  !!{main operator} $\lexists$ છે.}}{}
+\end{enumerate}
+\end{defn}
+
+દરેક કિસ્સામાં આપણી મનશા સૂત્રમાં દર્શાવેલા !!{main operator}ના ચોક્કસ
+\emph{આવર્તન}ની છે. દાખલા તરીકે, સૂત્ર
+$((!D\lif !E)\lif(!E\lif !D))$, $(!B\lif !C)$ સ્વરૂપનું છે, જ્યાં
+$!B$ એ $(!D\lif !E)$ અને $!C$ એ $(!E\lif !D)$ છે; તેથી $\lif$નું
+બીજું આવર્તન !!{main operator} છે.
+
+\begin{explain}
+આ બધાં બિન-આણ્વિક !!{formula}sને તેમના !!{main operator}ના આવર્તન
+સાથે જોડતા વિધેયની \emph{પુનરાવર્તી} વ્યાખ્યા છે. આપણે
+!!{formula}sને જે રીતે અનુમાનાત્મક રીતે વ્યાખ્યાયિત કર્યાં છે તેને
+લીધે દરેક !!{formula}~$!A$, \olref{def:main-op}ના કોઈ એક કિસ્સાને
+સંતોષે છે. તેથી દરેક બિન-આણ્વિક !!{formula}~$!A$ માટે !!a{main
+  operator}નું અસ્તિત્વ સુનિશ્ચિત થાય છે. દરેક !!{formula} આ શરતોમાંથી
+માત્ર એકને સંતોષે છે અને દરેક કિસ્સામાં $!A$ જે નાનાં
+!!{formula}sમાંથી રચાય છે તે એકમાત્ર રીતે નિર્ધારિત છે; તેથી $!A$ના
+!!{main
+  operator}નું આવર્તન એકમાત્ર છે અને આમ આપણે વિધેય
+વ્યાખ્યાયિત કર્યું છે.
+\end{explain}
+
+!!{formula}sનો !!{main operator} જે સંકેત હોય તેના આધારે આપણે તેમને
+\olref{tab:main-op}માં આપેલાં નામોથી બોલાવીએ છીએ.
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}
+{ જોકે યાદ રાખો કે વ્યાખ્યાયિત કારકો સત્તાવાર રીતે !!{formula}sમાં
+આવતા નથી. તેઓ માત્ર સંક્ષિપ્ત રૂપો છે, એટલે સત્તાવાર રીતે તેઓ
+સૂત્રના મુખ્ય કારક હોઈ શકે નહિ. તેથી બધાં !!{formula}s અંગેની
+સાબિતીઓમાં તેમને અલગથી ધ્યાનમાં લેવાની જરૂર પડતી નથી.}{}
+\sourcecorrection{OLSYN-007}{મૂળની \texttt{main-operator.tex}માં
+વ્યાખ્યાયિત કારકો અંગેનું સ્મરણપત્ર નિયંત્રિત કરતી
+\texttt{\string\iftag} આજ્ઞાનો ત્રીજો દલીલખંડ છૂટી ગયો છે. અહીં ખાલી
+ત્રીજો દલીલખંડ પુનઃસ્થાપિત કર્યો છે.}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c | c | c}
+!!^{main operator} & !!{formula}નો પ્રકાર & દાખલો\\
+\hline
+કોઈ નહિ & આણ્વિક (!!{formula}) &
+\iftag{prvFalse}{$\lfalse$,}{}
+\iftag{prvTrue}{$\ltrue$,}{}
+$\Atom{R}{t_1, \dots, t_n}$,
+$\eq[t_1][t_2]$\\
+$\lnot$ & નિષેધ & $\lnot !A$ \\
+$\land$ & સંયોજન & $(!A \land !B)$ \\
+$\lor$ & વિયોજન & $(!A \lor !B)$ \\
+$\lif$ & !!{conditional} & $(!A \lif !B)$ \\
+$\liff$ & !!{biconditional} & $(!A \liff !B)$ \\
+$\lforall[][]$ & સાર્વત્રિક (!!{formula})& $\lforall[x][!A]$ \\
+$\lexists[][]$ & અસ્તિત્વલક્ષી (!!{formula})& $\lexists[x][!A]$
+\end{tabular}
+\caption{!!{formula}sના મુખ્ય કારક અને નામો}
+\ollabel{tab:main-op}
+\end{table}
+\sourcecorrection{OLSYN-003}{મૂળની \texttt{main-operator.tex}ની
+ત્રણ કોષ્ટક-પંક્તિઓમાં સંયોજન, વિયોજન અને શરતી વિધાનના દાખલાનું
+અંતકૌંસ ગણિત પર્યાવરણની બહાર મૂકાયું છે. અહીં ત્રણેય સંપૂર્ણ સૂત્રને
+પોતપોતાના એક ગણિત પર્યાવરણમાં પુનઃસ્થાપિત કર્યાં છે.}
+
+\end{document}

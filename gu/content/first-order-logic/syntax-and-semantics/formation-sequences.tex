@@ -1,0 +1,283 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: formation-sequences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fseq}
+
+\olsection{રચના-શ્રેણીઓ}
+
+અનુમાનાત્મક વ્યાખ્યા વડે !!{formula}s વ્યાખ્યાયિત કરવા અને તેની
+પૂરક રીત તરીકે અનુમાન વડે !!{formula}sના ગુણધર્મો સાબિત કરવા એ
+સુઘડ અને કાર્યક્ષમ અભિગમ છે. જોકે !!{formula}sની રચનાને નીચેથી ઉપર,
+ક્રમિક પગલાંમાં જોવી પણ ઉપયોગી થઈ શકે છે. અહીં આપણે \emph{રચના-શ્રેણી}
+એ ખ્યાલ વડે એમ કરીશું.
+%
+પદો અને !!{formula}sને તેમની અનુમાનાત્મક વ્યાખ્યાઓનો ઉલ્લેખ કર્યા વિના
+આ રીતે કેવી રીતે રજૂ કરી શકાય તે બતાવવા માટે, આપણે પહેલાં કોઈ
+ભાષા~$\Lang L$માંથી લેવાયેલા સંકેતોની મનસ્વી શ્રેણીનો ખ્યાલ રજૂ કરીએ.
+
+\begin{defn}[સંકેતશ્રેણીઓ]
+\ollabel{defn:string}
+ધારો કે $\Lang L$ પ્રથમ-ક્રમની ભાષા છે. \emph{$\Lang L$-સંકેતશ્રેણી}
+એ~$\Lang L$ના સંકેતોની સાન્ત શ્રેણી છે. જ્યારે ભાષા~$\Lang L$ સંદર્ભથી
+સ્પષ્ટ રીતે નિશ્ચિત હોય, ત્યારે આપણે ઘણી વાર $\Lang L$-સંકેતશ્રેણીને
+માત્ર \emph{સંકેતશ્રેણી} કહીશું.
+\end{defn}
+
+\begin{ex}
+કોઈ પણ પ્રથમ-ક્રમની ભાષા~$\Lang L$ માટે બધાં $\Lang L$-!!{formula}s
+$\Lang L$-સંકેતશ્રેણીઓ છે, પરંતુ તેનું પ્રતિલોમ સાચું નથી. ઉદાહરણ તરીકે,
+\[)(\Obj v_0\lif\lexists\]
+એ $\Lang L$-સંકેતશ્રેણી છે, પણ $\Lang L$-!!{formula} નથી.
+\end{ex}
+
+\begin{defn}[પદો માટેની રચના-શ્રેણીઓ]
+\ollabel{defn:fseq-trm}
+$\Lang L$-સંકેતશ્રેણીઓની સાન્ત શ્રેણી $\tuple{t_0,\dotsc,t_n}$ને પદ~$t$
+માટેની \emph{રચના-શ્રેણી} ત્યારે કહીએ જ્યારે $t \ident t_n$ હોય અને
+દરેક $i \leq n$ માટે કાં તો $t_i$ !!a{variable} અથવા !!a{constant} હોય,
+અથવા $\Lang L$માં કોઈ $k$-સ્થાનીય !!{function}~$f$ હોય અને એવાં
+$m_1,\dotsc,m_k < i$ હોય કે
+$t_i \ident f(t_{m_1},\dotsc,t_{m_k})$. જ્યારે ભેદ પાડવો જરૂરી હોય,
+ત્યારે પદો માટેની રચના-શ્રેણીઓને આપણે \emph{પદ-રચના-શ્રેણીઓ} કહીશું.
+\end{defn}
+\sourcecorrection{OLSYN-004}{મૂળની \texttt{formation-sequences.tex}માં
+$k$-સ્થાનીય વિધેય માટે $m_0,\dotsc,m_k$ અને
+$f(t_{m_0},\dotsc,t_{m_k})$ લખાયેલાં છે, જે $k+1$ દલીલો આપે છે. અહીં
+$k$ દલીલો સાથે સુસંગત $m_1,\dotsc,m_k$ અને
+$f(t_{m_1},\dotsc,t_{m_k})$ લખાણ પુનઃસ્થાપિત કર્યું છે.}
+
+\begin{ex}
+શ્રેણી
+\[
+    \tuple{\Obj c_0, \Obj v_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}
+\]
+એ પદ $\Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}$
+માટેની રચના-શ્રેણી છે; એવી જ રીતે
+\[
+    \tuple{\Obj v_0, \Obj c_0, \Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}, \Atom{\Obj f^1_0}{\Atom{\Obj f^2_0}{\Obj c_0, \Obj v_0}}}.
+\]
+પણ છે.
+\end{ex}
+
+\begin{defn}[સૂત્રો માટેની રચના-શ્રેણીઓ]
+\ollabel{defn:fseq-frm}
+$\Lang L$-સંકેતશ્રેણીઓની સાન્ત શ્રેણી $\tuple{!A_0,\dotsc,!A_n}$ને
+$!A$ માટેની \emph{રચના-શ્રેણી} ત્યારે કહીએ જ્યારે $!A \ident !A_n$
+હોય અને દરેક $i \leq n$ માટે કાં તો $!A_i$ આણ્વિક !!{formula} હોય,
+અથવા એવાં $j,k < i$ અને !!a{variable}~$x$ હોય કે નીચેનામાંથી કોઈ એક
+વાત સાચી હોય:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A_i \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A_i \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A_i \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A_i \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A_i \ident (!A_j \liff !A_k)$.}{}%
+    \tagitem{prvAll}{$!A_i \ident \lforall[x][!A_j]$.}{}%
+    \tagitem{prvEx}{$!A_i \ident \lexists[x][!A_j]$.}{}%
+\end{enumerate}
+જ્યારે ભેદ પાડવો જરૂરી હોય, ત્યારે સૂત્રો માટેની રચના-શ્રેણીઓને આપણે
+\emph{સૂત્ર-રચના-શ્રેણીઓ} કહીશું.
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}
+\]
+એ $\lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj
+A^1_0}{\Obj v_0})]$ માટેની રચના-શ્રેણી છે; એવી જ રીતે
+\begin{multline*}
+\tuple{
+    \Atom{\Obj A^1_0}{\Obj v_0},
+    \Atom{\Obj A^1_1}{\Obj c_1},
+    (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
+    \Atom{\Obj A^1_1}{\Obj c_1},\\
+    \lforall[\Obj v_1][\Atom{\Obj A^1_0}{\Obj v_0}],
+    \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
+}.
+\end{multline*}
+પણ છે.
+%
+બીજા ઉદાહરણ પરથી દેખાય છે તેમ, રચના-શ્રેણીમાં ``કચરો'' હોઈ શકે છે:
+એવાં !!{formula}s જે બિનજરૂરી હોય અથવા રચનામાં કોઈ ફાળો આપતાં ન હોય.
+\end{ex}
+
+\begin{prop}\ollabel{prop:formed}
+$\Frm[L]$ના દરેક !!{formula}~$!A$ માટે કોઈ રચના-શ્રેણી હોય છે.
+\end{prop}
+
+\begin{proof}
+ધારો કે $!A$ આણ્વિક છે. ત્યારે શ્રેણી~$\tuple{!A}$ એ $!A$ માટેની
+રચના-શ્રેણી છે.
+%
+હવે ધારો કે $!B$ અને~$!C$ માટે અનુક્રમે રચના-શ્રેણીઓ
+$\tuple{!B_0,\dotsc,!B_n}$ અને $\tuple{!C_0,\dotsc,!C_m}$ છે.
+%
+\begin{enumerate}
+  \tagitem{prvNot}{જો $!A \ident \lnot !B$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvAnd}{જો $!A \ident (!B \land !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvOr}{જો $!A \ident (!B \lor !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvIf}{જો $!A \ident (!B \lif !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvIff}{જો $!A \ident (!B \liff !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvAll}{જો $!A \ident \lforall[x][!B]$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,\lforall[x][!B_n]}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+  \tagitem{prvEx}{જો $!A \ident \lexists[x][!B]$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,\lexists[x][!B_n]}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.}{}
+\end{enumerate}
+!!{formula}s પર અનુમાનના સિદ્ધાંત મુજબ દરેક !!{formula} માટે
+રચના-શ્રેણી હોય છે.
+\end{proof}
+
+આપણે તેનું પ્રતિલોમ પણ સાબિત કરી શકીએ છીએ. આ મહત્વનું છે, કારણ કે
+તેનાથી સૂત્રો વ્યાખ્યાયિત કરવાની આપણી બંને રીતો સમતુલ્ય છે: એ બંને
+સરખાં પરિણામો આપે છે. તેનો અર્થ એ પણ થાય છે કે રચના-શ્રેણીઓની લંબાઈ
+પર સામાન્ય અનુમાન વાપરીને આપણે સૂત્રો વિશેનાં પ્રમેયો સાબિત કરી
+શકીએ છીએ.
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+ધારો કે $\tuple{!A_0,\dotsc,!A_n}$ એ~$!A_n$ માટેની રચના-શ્રેણી છે
+અને $k \leq n$. ત્યારે $\tuple{!A_0,\dotsc,!A_k}$ એ~$!A_k$ માટેની
+રચના-શ્રેણી છે.
+\end{lem}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{lem:fseq-init} સાબિત કરો.
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L]$ એ એવી બધી $\Lang L$-સંકેતશ્રેણીઓ~$!A$નો ગણ છે કે
+$!A$ માટે કોઈ સૂત્ર-રચના-શ્રેણી હોય.
+\end{thm}
+
+\begin{proof}
+ભાષા~$\Lang L$ની એવી બધી સંકેતશ્રેણીઓનો ગણ $F$ લો જેમની
+રચના-શ્રેણી હોય છે. \olref[fol][syn][fseq]{prop:formed}માં આપણે
+$\Frm[L] \subseteq F$ જોયું છે; તેથી હવે આપણે તેનું પ્રતિલોમ
+સાબિત કરીએ છીએ.
+
+ધારો કે $!A$ની રચના-શ્રેણી $\tuple{!A_0,\dotsc,!A_n}$ છે. $n$ પર
+પ્રબળ અનુમાનથી આપણે $!A \in \Frm[L]$ સાબિત કરીએ છીએ. આપણી
+અનુમાન-પૂર્વધારણા એ છે કે $m < n$ લંબાઈની રચના-શ્રેણી ધરાવતી દરેક
+સંકેતશ્રેણી $\Frm[L]$માં છે. રચના-શ્રેણીની વ્યાખ્યા મુજબ કાં તો
+$!A \ident !A_n$ આણ્વિક છે, અથવા એવાં $j,k < n$ હોવા જોઈએ કે
+નીચેનામાંથી કોઈ એક કિસ્સો બને:
+\begin{enumerate}
+    \tagitem{prvNot}{$!A \ident \lnot !A_j$.}{}%
+    \tagitem{prvAnd}{$!A \ident (!A_j \land !A_k)$.}{}%
+    \tagitem{prvOr}{$!A \ident (!A_j \lor !A_k)$.}{}%
+    \tagitem{prvIf}{$!A \ident (!A_j \lif !A_k)$.}{}%
+    \tagitem{prvIff}{$!A \ident (!A_j \liff !A_k)$.}{}%
+    \tagitem{prvAll}{$!A \ident \lforall[x][!A_j]$.}{}%
+    \tagitem{prvEx}{$!A \ident \lexists[x][!A_j]$.}{}%
+\end{enumerate}
+હવે આપણે કિસ્સાવાર વિચારીએ. જો $!A$ આણ્વિક હોય, તો
+$!A_n \in \Frm[L]$. તેના બદલે ધારો કે
+$!A \ident (!A_j \land !A_k)$. \olref[fol][syn][fseq]{lem:fseq-init}
+મુજબ $\tuple{!A_0,\dotsc,!A_j}$ અને $\tuple{!A_0,\dotsc,!A_k}$ અનુક્રમે
+$!A_j$ અને~$!A_k$ માટેની રચના-શ્રેણીઓ છે. આ બંને $!A$ની
+રચના-શ્રેણીની ઉચિત આરંભ-ઉપશ્રેણીઓ હોવાથી તેમની લંબાઈ~$n$થી ઓછી છે.
+તેથી અનુમાન-પૂર્વધારણા મુજબ $!A_j$ અને~$!A_k$, $\Frm[L]$માં છે;
+અને આમ !!a{formula}ની વ્યાખ્યા મુજબ $(!A_j \land !A_k)$ પણ તેમાં છે.
+બીજા કિસ્સા સમાંતર દલીલથી મળે છે.
+\end{proof}
+\sourcecorrection{OLSYN-005}{મૂળના આ સાબિતીમાં સામાન્ય
+$\Lang L$ અને $\Frm[L]$ વચ્ચે બે સ્થળે અચાનક $\Frm[L_0]$ આવે છે.
+પ્રમેયની ભાષા અને સમગ્ર દલીલ સાથે સુસંગત $\Frm[L]$ અહીં બંને
+સ્થળે પુનઃસ્થાપિત કર્યું છે.}
+\sourcecorrection{OLSYN-006}{મૂળના આ સાબિતીમાં સંયોજનના કિસ્સાની
+પૂર્વધારણા $!A\equiv(!A_j\land !A_k)$ લખાઈ છે. અહીં તાર્કિક
+સમતુલ્યતાની નહિ પણ સંકેતશ્રેણીની અભિન્નતાની જરૂર છે; વ્યાખ્યામાં
+અને આ જ સાબિતીના અગાઉના ખંડમાં વપરાયેલો $\ident$ સંકેત અહીં
+પુનઃસ્થાપિત કર્યો છે.}
+
+પદો માટેની રચના-શ્રેણીઓના ગુણધર્મો !!{formula}s માટેની
+રચના-શ્રેણીઓ જેવા જ છે.
+
+\begin{prop}
+\ollabel{prop:fseq-trm-equiv}
+$\Trm[L]$ એ એવી બધી $\Lang L$-સંકેતશ્રેણીઓ~$t$નો ગણ છે કે
+$t$ માટે કોઈ પદ-રચના-શ્રેણી હોય.
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:fseq-trm-equiv} સાબિત કરો.
+સંકેત: \olref[fol][syn][fseq]{thm:fseq-frm-equiv}ના સાબિતીમાં
+વાપરેલી રીત જેવી જ રીત વાપરો.
+\end{prob}
+
+રચના-શ્રેણીઓમાં બે પ્રકારનો ``કચરો'' આવી શકે છે: પુનરાવર્તિત ઘટકો
+અને સૂત્ર કે પદની રચના માટે અપ્રસ્તુત ઘટકો. ન્યૂનતમ રચના-શ્રેણીઓને
+જોવાથી આપણે બંનેને દૂર કરી શકીએ છીએ.
+
+\begin{defn}[ન્યૂનતમ રચના-શ્રેણીઓ]
+\ollabel{defn:minimal-fseq}
+સૂત્ર~$!A$ માટેની રચના-શ્રેણી $\tuple{!A_0, \ldots, !A_n}$ને
+$!A$ માટેની \emph{ન્યૂનતમ રચના-શ્રેણી} ત્યારે કહીએ જ્યારે $!A$ માટેની
+બીજી દરેક રચના-શ્રેણી~$s$ માટે $s$ની લંબાઈ $n+1$થી મોટી અથવા તેના
+બરાબર હોય.
+
+તે જ રીતે, પદ~$t$ માટેની રચના-શ્રેણી $\tuple{t_0, \ldots, t_n}$ને
+$t$ માટેની \emph{ન્યૂનતમ રચના-શ્રેણી} ત્યારે કહીએ જ્યારે $t$ માટેની
+બીજી દરેક રચના-શ્રેણી~$s$ માટે $s$ની લંબાઈ $n+1$થી મોટી અથવા તેના
+બરાબર હોય.
+\end{defn}
+
+ધ્યાન આપો કે કોઈ સૂત્ર કે પદને એક કરતાં વધુ ન્યૂનતમ રચના-શ્રેણીઓ
+હોઈ શકે છે, પરંતુ એમાં બરાબર એ જ સંકેતશ્રેણીઓ હશે.
+
+\begin{prop}
+\ollabel{prop:subformula-equivs}
+નીચેનાં વિધાનો સમતુલ્ય છે:
+\begin{enumerate}
+    \item $!B$ એ~$!A$નું ઉપ-!!{formula} છે.
+    \item $!B$, $!A$ની દરેક રચના-શ્રેણીમાં આવે છે.
+    \item $!B$, $!A$ની કોઈ ન્યૂનતમ રચના-શ્રેણીમાં આવે છે.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][fseq]{prop:subformula-equivs} સાબિત કરો.
+\end{prob}
+
+\begin{history}
+રેમન્ડ સ્મલ્યને તેમના પાઠ્યપુસ્તક \emph{First-Order Logic}
+\citep{Smullyan1968}માં રચના-શ્રેણીઓ રજૂ કરી હતી. રચના-શ્રેણીઓના
+વધારાના ગુણધર્મો \citet{Zuckerman1973}એ સ્થાપિત કર્યા હતા.
+\end{history}
+
+\end{document}

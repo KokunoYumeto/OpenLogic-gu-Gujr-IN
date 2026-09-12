@@ -1,0 +1,98 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: free-vars-sentences
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{fvs}
+
+\olsection{મુક્ત \printtoken{P}{variable} અને \printtoken{P}{sentence}}
+
+\begin{defn}[!!a{variable}ની મુક્ત ઘટનાઓ]
+\ollabel{defn:free-occ}
+!!a{formula}માં !!a{variable}ની \emph{મુક્ત} ઘટનાઓ નીચે મુજબ
+અનુમાનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item \indcase*{!A}{$!A$ આણ્વિક છે}{$\indfrm$માંની !!{variable}ની
+  બધી ઘટનાઓ મુક્ત છે.}
+
+\tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\indfrm$માંની !!{variable}ની
+  મુક્ત ઘટનાઓ બરાબર $!B$માંની મુક્ત ઘટનાઓ છે.}}{}
+
+\item \indcase{!A}{(!B \ast !C)}{$\indfrm$માંની !!{variable}ની
+  મુક્ત ઘટનાઓ $!B$માંની અને~$!C$માંની મુક્ત ઘટનાઓને એકસાથે લેવાથી
+  મળે છે.}
+
+\tagitem{prvAll}{\indcase{!A}{\lforall[x][!B]}{$\indfrm$માંની
+  !!{variable}ની મુક્ત ઘટનાઓ $!B$માંની બધી મુક્ત ઘટનાઓમાંથી
+  $x$ની ઘટનાઓ બાદ કરતાં મળે છે.}}{}
+
+\tagitem{prvEx}{\indcase{!A}{\lexists[x][!B]}{$\indfrm$માંની
+  !!{variable}ની મુક્ત ઘટનાઓ $!B$માંની બધી મુક્ત ઘટનાઓમાંથી
+  $x$ની ઘટનાઓ બાદ કરતાં મળે છે.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[બદ્ધ ચલો]
+સૂત્ર~$!A$માં !!a{variable}ની કોઈ ઘટના મુક્ત ન હોય તો તે
+\emph{બદ્ધ} છે.
+\end{defn}
+
+\begin{prob}
+\olref[fol][syn][fvs]{defn:free-occ}ની ઢબે બદ્ધ ચલ-ઘટનાઓની
+અનુમાનાત્મક વ્યાખ્યા આપો.
+\end{prob}
+
+\begin{defn}[વ્યાપ]
+\iftag{prvAll}{જો સૂત્ર~$!A$માં $\lforall[x][!B]$ કોઈ ઉપસૂત્રની ઘટના
+  હોય, તો $!A$માંની $!B$ની તેને અનુરૂપ ઘટનાને $\lforall[x]$ની તેને
+  અનુરૂપ ઘટનાનો \emph{વ્યાપ} કહેવાય છે. \iftag{prvEx}{આ જ રીતે
+  $\lexists[x]$ માટે પણ.}{}}{જો સૂત્ર~$!A$માં $\lexists[x][!B]$ કોઈ
+  ઉપસૂત્રની ઘટના હોય, તો $!A$માંની $!B$ની તેને અનુરૂપ ઘટનાને
+  $\lexists[x]$ની તેને અનુરૂપ ઘટનાનો \emph{વ્યાપ} કહેવાય છે.}
+
+જો $!B$, $!A$માં પરિમાણકની ઘટના
+\iftag{prvAll}{$\lforall[x]$\iftag{prvEx}{ અથવા
+    $\lexists[x]$}{}}{$\lexists[x]$}નો વ્યાપ હોય, તો $!B$માંની $x$ની
+મુક્ત ઘટનાઓ \iftag{prvAll}{$\lforall[x][!B]$\iftag{prvEx}{ અને
+$\lexists[x][!B]$}{}}{$\lexists[x][!B]$}માં બદ્ધ છે. આપણે કહીએ છીએ
+કે આ ઘટનાઓનો ઉલ્લેખિત પરિમાણક-ઘટના દ્વારા \emph{બંધન થાય છે}.
+\end{defn}
+
+\begin{ex}
+નીચેનું સૂત્ર જુઓ:
+\[
+\lexists[\Obj v_0][\underbrace{\Atom{\Obj A^2_0}{\Obj v_0,\Obj v_1}}_{!B}]
+\]
+$!B$, $\lexists[\Obj v_0]$નો વ્યાપ દર્શાવે છે. પરિમાણક $!B$માંની
+$\Obj v_0$ની ઘટનાને બાંધે છે, પરંતુ $\Obj v_1$ની ઘટનાને બાંધતો
+નથી. તેથી આ કિસ્સામાં $\Obj v_1$ મુક્ત ચલ છે.
+
+
+હવે આપણે વધુ જટિલ !!{formula}~$!A$માં આ કેવી રીતે કામ કરે છે તે
+જોઈ શકીએ છીએ:
+\[
+\lforall[\Obj v_0][\underbrace{(\Atom{\Obj A^1_0}{\Obj v_0} \lif
+    \Atom{\Obj A^2_0}{\Obj v_0, \Obj v_1})}_{!B}] \lif \lexists[\Obj
+  v_1][\underbrace{(\Atom{\Obj A^2_1}{\Obj v_0, \Obj v_1} \lor \lforall[\Obj v_0][\overbrace{\lnot \Atom{\Obj A^1_1}{\Obj v_0}}^{!D}])}_{!C}]
+\]
+$!B$ પહેલા $\lforall[\Obj v_0]$નો વ્યાપ છે, $!C$ એ
+$\lexists[\Obj v_1]$નો વ્યાપ છે, અને $!D$ બીજા
+$\lforall[\Obj v_0]$નો વ્યાપ છે. પહેલો $\lforall[\Obj v_0]$, $!B$માંની
+$\Obj v_0$ની ઘટનાઓને બાંધે છે; $\lexists[\Obj v_1]$, $!C$માંની
+$\Obj v_1$ની ઘટનાને બાંધે છે; અને બીજો $\lforall[\Obj v_0]$, $!D$માંની
+$\Obj v_0$ની ઘટનાને બાંધે છે. $\Obj v_1$ની પહેલી ઘટના અને
+$\Obj v_0$ની ચોથી ઘટના $!A$માં મુક્ત છે. $\Obj v_0$ની છેલ્લી ઘટના
+$!D$માં મુક્ત છે, પરંતુ $!C$ અને~$!A$માં બદ્ધ છે.
+\end{ex}
+
+\begin{defn}[વાક્ય]
+!!^a{formula}~$!A$માં !!{variable}sની કોઈ મુક્ત ઘટના ન હોય તો અને
+માત્ર તો તે \article{sentence} \emph{!!{sentence}} છે.
+\end{defn}
+
+% add examples!
+
+\end{document}

@@ -1,4 +1,4 @@
-"""Build the deterministic reflowable EPUB 3 FOL-introduction checkpoint.
+"""Build deterministic reflowable EPUB 3 first-order checkpoints.
 
 The accepted cumulative HTML is the semantic source.  This exporter preserves
 its Gujarati character stream, native MathML, anchors, tables and described SVG
@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+import sys
 import zipfile
 
 from lxml import etree, html
@@ -44,6 +45,53 @@ OPF = "http://www.idpf.org/2007/opf"
 DC = "http://purl.org/dc/elements/1.1/"
 CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 XML = "http://www.w3.org/XML/1998/namespace"
+
+EDITION = sys.argv[1] if len(sys.argv) > 1 else "first-order-introduction"
+require_editions = {"first-order-introduction", "first-order-syntax"}
+if EDITION not in require_editions:
+    raise SystemExit(f"edition must be one of {sorted(require_editions)}")
+
+NAVIGATION_ENTRIES = 154
+COVERAGE = "145/722 units; OLP-0004-0148"
+DESCRIPTION = "Partial Gujarati cumulative edition: 145 of 722 tracked source units, OLP-0004-0148."
+ABOUT_COVERAGE = (
+    "આ EPUB એક પ્રવાહી, લિપિઆકાર બદલાય એવું ગુજરાતી વાચન છે. તેમાં ૭૨૨ "
+    "મૂળ એકમોમાંથી ૧૪૫ એકમો, એટલે OLP-0004થી OLP-0148 સુધીનો સતત "
+    "આંશિક વિસ્તાર છે. સંપૂર્ણ ૭૨૨-એકમ આવૃત્તિનું કામ ચાલુ છે."
+)
+ABOUT_SCOPE = (
+    "આ સંગ્રહમાં ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ, અનંત ગણો, "
+    "વિધાનાત્મક તર્કશાસ્ત્ર તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રની સાબિતી-પદ્ધતિઓ, "
+    "સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય "
+    "અને પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય-પ્રકરણ સમાવિષ્ટ છે."
+)
+if EDITION == "first-order-syntax":
+    INPUT = ROOT / "reader" / "first-order-syntax.html"
+    OUTPUT = ROOT / "releases" / "OpenLogic-gu-Gujr-IN-First-Order-Syntax.epub"
+    REPLAY = ROOT / "build" / "OpenLogic-gu-Gujr-IN-First-Order-Syntax-replay.epub"
+    STAGE = ROOT / "build" / "epub015-stage"
+    REPLAY_STAGE = ROOT / "build" / "epub015-replay-stage"
+    RECEIPT = ROOT / "build" / "EPUB_BUILD_RECEIPT_015.json"
+    TITLE = "પ્રથમ-ક્રમ વાક્યરચના સહિત ઓપન લોજિક ગુજરાતી"
+    IDENTIFIER = (
+        "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/"
+        "releases/tag/first-order-syntax-v0.9.0"
+    )
+    NAVIGATION_ENTRIES = 163
+    COVERAGE = "155/722 units; OLP-0004-0158"
+    DESCRIPTION = "Partial Gujarati cumulative edition: 155 of 722 tracked source units, OLP-0004-0158."
+    ABOUT_COVERAGE = (
+        "આ EPUB એક પ્રવાહી, લિપિઆકાર બદલાય એવું ગુજરાતી વાચન છે. તેમાં ૭૨૨ "
+        "મૂળ એકમોમાંથી ૧૫૫ એકમો, એટલે OLP-0004થી OLP-0158 સુધીનો સતત "
+        "આંશિક વિસ્તાર છે. સંપૂર્ણ ૭૨૨-એકમ આવૃત્તિનું કામ ચાલુ છે."
+    )
+    ABOUT_SCOPE = (
+        "આ સંગ્રહમાં ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ, અનંત ગણો, "
+        "વિધાનાત્મક તર્કશાસ્ત્ર તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રની સાબિતી-પદ્ધતિઓ, "
+        "સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય, "
+        "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય-પ્રકરણ અને તેનું વાક્યરચના-પ્રકરણ "
+        "સમાવિષ્ટ છે."
+    )
 
 
 def require(condition: bool, message: str) -> None:
@@ -156,7 +204,10 @@ def make_content(source: html.HtmlElement) -> tuple[bytes, list[tuple[str, str]]
         label = text_without_annotations(anchor)
         require(label, "empty table-of-contents label")
         toc_links.append((anchor.get("href") or "", label))
-    require(len(toc_links) == 154, f"unexpected navigation-entry count: {len(toc_links)}")
+    require(
+        len(toc_links) == NAVIGATION_ENTRIES,
+        f"unexpected navigation-entry count: {len(toc_links)}",
+    )
     return serialize(document), toc_links
 
 
@@ -212,8 +263,8 @@ def make_about() -> bytes:
     main.set(f"{{{EPUB}}}type", "colophon")
     etree.SubElement(main, f"{{{XHTML}}}h1").text = "આ આવૃત્તિ વિશે"
     paragraphs = (
-        "આ EPUB એક પ્રવાહી, લિપિઆકાર બદલાય એવું ગુજરાતી વાચન છે. તેમાં ૭૨૨ મૂળ એકમોમાંથી ૧૪૫ એકમો, એટલે OLP-0004થી OLP-0148 સુધીનો સતત આંશિક વિસ્તાર છે. સંપૂર્ણ ૭૨૨-એકમ આવૃત્તિનું કામ ચાલુ છે.",
-        "આ સંગ્રહમાં ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ, અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રની સાબિતી-પદ્ધતિઓ, સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય અને પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય-પ્રકરણ સમાવિષ્ટ છે.",
+        ABOUT_COVERAGE,
+        ABOUT_SCOPE,
         "ગણિત native MathMLમાં છે. તેર આકૃતિઓમાં ગુજરાતી વૈકલ્પિક વર્ણન છે. આંતરિક કડીઓ અને વિષયસૂચિ EPUBમાં જ ચાલે છે. MathMLનું દૃશ્યરૂપ વાંચન-સોફ્ટવેર પ્રમાણે થોડું બદલાઈ શકે છે.",
         "આ યંત્ર દ્વારા કરેલો અનુવાદ છે, જેને મૂળ સાથેના રચનાત્મક અને અર્થલક્ષી સરખામણાં, ગુજરાતી શાસ્ત્રીય સ્રોતોની નોંધ, EPUBCheck અને પ્રતિનિધિ દૃશ્ય તપાસથી ચકાસવામાં આવ્યો છે. સ્વતંત્ર ગુજરાતી નિષ્ણાતનું પ્રમાણપત્ર મળ્યું નથી.",
     )
@@ -259,7 +310,7 @@ def make_package(asset_names: list[str]) -> bytes:
     dc("creator", "Open Logic Project; Gujarati machine translation")
     dc("source", f"https://github.com/OpenLogicProject/OpenLogic/tree/{SOURCE_REVISION}")
     dc("rights", "CC BY 4.0; bundled Noto Sans Gujarati fonts under SIL OFL 1.1")
-    dc("description", "Partial Gujarati cumulative edition: 145 of 722 tracked source units, OLP-0004–0148.")
+    dc("description", DESCRIPTION)
     meta("dcterms:modified", MODIFIED)
     meta("rendition:layout", "reflowable")
     meta("rendition:orientation", "auto")
@@ -401,7 +452,7 @@ def main() -> None:
         "schema": "openlogic-gu-epub-build/1",
         "source_revision": SOURCE_REVISION,
         "source": {
-            "path": "reader/first-order-introduction.html",
+            "path": INPUT.relative_to(ROOT).as_posix(),
             "bytes": INPUT.stat().st_size,
             "sha256": sha(INPUT),
         },
@@ -411,7 +462,7 @@ def main() -> None:
             "sha256": sha(OUTPUT),
             "format": "EPUB 3 reflowable",
             "language": LANGUAGE,
-            "coverage": "145/722 units; OLP-0004–0148",
+            "coverage": COVERAGE,
             "complete_edition": False,
         },
         "cold_replay": {

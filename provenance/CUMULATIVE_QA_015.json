@@ -1,0 +1,310 @@
+{
+  "schema": "openlogic-gu-cumulative-qa/1",
+  "checked_at_utc": "2026-09-12T17:18:54.592452+00:00",
+  "cursor_sha256_at_check": "7fe9504da26c6b99c01b5824fb674c352da17087a8c68728eafec859b81820f7",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_units": 155,
+    "total_units": 722,
+    "contiguous_units": "OLP-0004–0158",
+    "complete_edition": false
+  },
+  "totals": {
+    "aligned_linguistic_blocks": 1671,
+    "source_math_spans": 8710,
+    "reverse_paraphrase_samples": 768,
+    "exact_block_reviews": 1671,
+    "source_corrections": 106,
+    "canon_sources": 18,
+    "canon_passages": 77,
+    "term_decisions": 145,
+    "translation_decisions": 254,
+    "translation_decision_occurrences": 262
+  },
+  "batches": {
+    "001": {
+      "units": 7,
+      "blocks": 86,
+      "math": 327,
+      "semantic": 9,
+      "exact_block_reviews": 9,
+      "batch_sha256": "053e12fe77406cc236c539a3e247e9583c0881626da52c0fafc3e0cf6e38f6d6",
+      "parity_sha256": "18115805d2189fff36db3d4c98f144723e7d4201d8e4e3f5550e5c811a6273f6",
+      "semantic_sha256": "c76d641af5ee9202796a994079bf53ac28296eaf08fba3bb3512ff506b273aff"
+    },
+    "002": {
+      "units": 9,
+      "blocks": 104,
+      "math": 517,
+      "semantic": 13,
+      "exact_block_reviews": 13,
+      "batch_sha256": "43699cec18be506e8e72d29e9d44ca97dcd4dc212957bfb621839d554fd77a6c",
+      "parity_sha256": "4825236f13d436419faa724caf2aac995909a6df4a264c7e1937bf21390a0586",
+      "semantic_sha256": "0059e52457ffd3cce811ca30272ec4eea3489b6bc315fc479c10fe326c851a45"
+    },
+    "003": {
+      "units": 7,
+      "blocks": 87,
+      "math": 414,
+      "semantic": 18,
+      "exact_block_reviews": 18,
+      "batch_sha256": "15af2b6bf4599e44fc3dd30d4325c203f71b49ee13c8a918c7173406f08e930d",
+      "parity_sha256": "9142e425e04535ca5debb9763df67af69e0169167074d98433484cb235186037",
+      "semantic_sha256": "7d4df0c3e24df133c3f5347f01242c878d5969fe4bffda1fd8745e4cb54bd8c2"
+    },
+    "004": {
+      "units": 14,
+      "blocks": 187,
+      "math": 1139,
+      "semantic": 51,
+      "exact_block_reviews": 51,
+      "batch_sha256": "8ed01dba48548325beddb48a581381e597e2f4b9da1b8c296dec97b6e778e854",
+      "parity_sha256": "d3890eaf59ee88e8dc20d28599172d73eee0b6af38a2f295e36ffd0273ddf280",
+      "semantic_sha256": "d8463dcdb7c9943962e76199d322e7aa988c44ee213071a0af0b7232a89dd851"
+    },
+    "005": {
+      "units": 8,
+      "blocks": 103,
+      "math": 424,
+      "semantic": 55,
+      "exact_block_reviews": 55,
+      "batch_sha256": "5dafd3321afa5fd7e4a761d48af3053062e23cdb1e42910dabfa6b5a429dfc47",
+      "parity_sha256": "d0703fd8da38c18d66f9421ae3118d7bd3f4090d696b4ce8b4b8ac84a3ecfd02",
+      "semantic_sha256": "b3111a671d76eb989384577fda30cf71a61a3977a2d4df24695c852415ad06ac"
+    },
+    "006": {
+      "units": 6,
+      "blocks": 58,
+      "math": 207,
+      "semantic": 58,
+      "exact_block_reviews": 58,
+      "batch_sha256": "aa2f3e785bf02e19771d82babf254fd483c66152175d92a4dcce1299e6574fe9",
+      "parity_sha256": "58c769e5022ec6d333855d7d8ff552a4c8f8ec840aeb47fbce6464650fdca49b",
+      "semantic_sha256": "d444b369884edd6d9a311806a4e622b1b7149a5a9a4d9fbdfe1c5a5231589e58"
+    },
+    "007": {
+      "units": 8,
+      "blocks": 99,
+      "math": 426,
+      "semantic": 99,
+      "exact_block_reviews": 99,
+      "batch_sha256": "ec3e985138a528de1c3c0d33d32e2533f703e27f1eeaf3282b2266666e8802de",
+      "parity_sha256": "fbc7a07f85f405ebf1fc527a90237d70fa7a927e40f6f0b1509cd192cf4f1ea4",
+      "semantic_sha256": "23e338da7af2f4e4bbc95eb099af6b9815135eb732fd47e51ec29f50d43060ec"
+    },
+    "008": {
+      "units": 6,
+      "blocks": 32,
+      "math": 137,
+      "semantic": 32,
+      "exact_block_reviews": 32,
+      "batch_sha256": "44ed00f75e8fb1246ae2ef5bb092510bc810f9e3e9c8bae690b440b2fd87e649",
+      "parity_sha256": "0d3b7671932f0c3e7d54c82ac1efeb97de80ef927e9dbac596dac56eeadd5a05",
+      "semantic_sha256": "66b8df1b511f2ba92f5b80bcc79221add55be250dc28aeb86d136f846761bae7"
+    },
+    "009": {
+      "units": 15,
+      "blocks": 131,
+      "math": 1003,
+      "semantic": 131,
+      "exact_block_reviews": 131,
+      "batch_sha256": "f93547c6b6596cb30d0d6dacd1a68a42c132a76251537f7c09eed4e348651f63",
+      "parity_sha256": "b4d4e9c9f0713880284e433861baf6f1c280320b2ea12f9498919bc7b41480e7",
+      "semantic_sha256": "1bf7ba3a940c033cf138bc62d1149e455f1aa37c8bb81ad2f143fa13fb1be22b"
+    },
+    "010": {
+      "units": 14,
+      "blocks": 142,
+      "math": 968,
+      "semantic": 34,
+      "exact_block_reviews": 142,
+      "batch_sha256": "faab0957fd94b21971476b90acf0ebd7b26a8f590ed2b256fcdb044c033815ac",
+      "parity_sha256": "08ba538a84366be545f7d1491ffc05d7263ad530c0f6b1a5c6baf81f78f8651a",
+      "semantic_sha256": "fbf4f5ae26035d8c7c146bf95d8b89297d5ea31546637ee7692901f50df3e3ed"
+    },
+    "011": {
+      "units": 14,
+      "blocks": 132,
+      "math": 589,
+      "semantic": 35,
+      "exact_block_reviews": 132,
+      "batch_sha256": "cb83e453c3f1385ef41ba4a23b3cce5b6d6f0717007f2e5b11bfb4e594080c96",
+      "parity_sha256": "24cf315353f42d50d31c6323c1be342c582aa0b18b470fbafe13e2a8c491192c",
+      "semantic_sha256": "2cb3caea0b13a438e5f78b733b5c1bf3b72ce0dda591a78336cafde89a90a978"
+    },
+    "012": {
+      "units": 14,
+      "blocks": 120,
+      "math": 478,
+      "semantic": 56,
+      "exact_block_reviews": 120,
+      "batch_sha256": "5d67145aa20c1ecef3679d80f6228cbbb8565617f8f0b7b2412e4775721c0f00",
+      "parity_sha256": "09cfe17255579f41feffe726c0c410442fce01415866992681a1933daa273e2e",
+      "semantic_sha256": "e7e53a369b6f86b1f92299eb7e4d54c758fdaa7b53c3794ce4a1d7bca30e97cc"
+    },
+    "013": {
+      "units": 12,
+      "blocks": 154,
+      "math": 953,
+      "semantic": 77,
+      "exact_block_reviews": 154,
+      "batch_sha256": "7423f5d2ccd23e1b96824dcb78b3fc9b7eda51cc523071eae583c78b3daf2a30",
+      "parity_sha256": "2d70b1e1bb9ab52679b263cbd0faadf520dc3372279078034db5a2c589c2c64e",
+      "semantic_sha256": "c28c80e68d2acb2cfc910e151fc291af987d5aba5ed04403dd9fcd32190684fe"
+    },
+    "014": {
+      "units": 11,
+      "blocks": 50,
+      "math": 334,
+      "semantic": 39,
+      "exact_block_reviews": 50,
+      "batch_sha256": "e95beea3212cde2beaf6298f9d9afd890a4baf99f85b9c1974819392c0813ca6",
+      "parity_sha256": "28cb0a9ff8478d2968aca56a32ffe1b0502db67883b9e314ca604dbb03b969d1",
+      "semantic_sha256": "ebab245497a88b53bdbd840f0c7d91d87f4570d051dadfa9d8458467527c321b"
+    },
+    "015": {
+      "units": 10,
+      "blocks": 186,
+      "math": 794,
+      "semantic": 61,
+      "exact_block_reviews": 186,
+      "batch_sha256": "efd259a18df539d158f88ee1fd42a0cbafb16ce07974f9edf875bb6a0164c531",
+      "parity_sha256": "b993d3969ba48b7e880b016e792d9b0d9b8b7b5f4a0a1c3fadd8228338bc7992",
+      "semantic_sha256": "1369b69accbb7418712b541541aa0f09c00089e126fb9a77d9265c85a1f5b3c3"
+    }
+  },
+  "current_artifacts": {
+    "html": {
+      "path": "reader/first-order-syntax.html",
+      "bytes": 3783825,
+      "sha256": "9b0ae66bbd54096de90cae53ff7ff1dcae2ccc4c943ebac890056e8376cc54d4",
+      "mathml_nodes": 8426,
+      "proof_representations": 208,
+      "axiomatic_derivations": 6,
+      "status": "passed_exact_dom_mathml_proof_tableau_derivation_link_asset_and_character_qa"
+    },
+    "browser": {
+      "status": "passed_actual_live_browser_inspection",
+      "inspected_at_utc": "2026-09-12T16:57:02.632049+00:00",
+      "method": "The exact local repository was served to Edge/Chromium. Live visual inspection covered the title and representative new sections; the SHA-256-bound runtime measured every block MathML node, image, content id, font state, and console event.",
+      "url": "http://127.0.0.1:8770/reader/first-order-syntax.html?qa=015",
+      "viewport_px": [
+        1280,
+        720
+      ],
+      "viewed": [
+        "title page, provenance panel, and cumulative table of contents",
+        "sections 130-132: syntax introduction, languages, terms and formulas",
+        "sections 133-135: unique readability, main operator, and subformulas",
+        "sections 136-138 through the PDF-correlated visual review",
+        "editorial notes, bibliography, and all thirteen endnotes"
+      ],
+      "computed_mathml_check": {
+        "selector": "math[display='block']",
+        "nodes_checked": 438,
+        "clipped_horizontal_nodes": 0,
+        "clipped_vertical_nodes": 0,
+        "intentionally_scrollable_nodes": 3,
+        "scrollable_node_indices_zero_based": [
+          332,
+          333,
+          334
+        ],
+        "scrollable_internal_overflow_px": [
+          45,
+          116,
+          71
+        ],
+        "maximum_internal_scroll_overflow_px": 116,
+        "body_scroll_width_px": 914,
+        "body_client_width_px": 914,
+        "document_scroll_width_px": 1280,
+        "document_client_width_px": 1280,
+        "overflow_x": "auto",
+        "overflow_y": "hidden",
+        "padding_block_total_px": 20.8
+      },
+      "runtime_checks": {
+        "fonts_status": "loaded",
+        "images_loaded_with_nonzero_intrinsic_dimensions": 13,
+        "console_errors_or_warnings": 0,
+        "content_unique_ids": 623,
+        "literal_macro_occurrences": {
+          "sFmla": 2,
+          "item": 1,
+          "iftag": 7,
+          "top": 1
+        },
+        "runtime_receipt": "work/BROWSER_RUNTIME_015.json",
+        "runtime_receipt_sha256": "dc20c4293ea7267de55fd5269ca14d37e2306b0722a0990ff2059ed21eff6700"
+      },
+      "defects_found_and_repaired": [
+        "The history environment now renders as a labeled Gujarati note.",
+        "Starred induction cases and substitution's indfrmp alias render correctly.",
+        "The English article helper no longer leaks the word sentence into Gujarati prose.",
+        "Smullyan and Zuckerman citations resolve to complete bibliography entries."
+      ],
+      "final_hash_binding": {
+        "html_sha256": "9b0ae66bbd54096de90cae53ff7ff1dcae2ccc4c943ebac890056e8376cc54d4",
+        "css_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+        "stylesheet_href": "reader.css?v=3"
+      },
+      "pending": []
+    },
+    "pdf": {
+      "path": "build/gu-first-order-syntax.pdf",
+      "bytes": 1762220,
+      "sha256": "2482f8fd54483808f6c390e5c24dbb23d81d247b3556152b80c2c5eae22cf7cc",
+      "pages": 196,
+      "page_size": "A4",
+      "page_size_points": [
+        595.276,
+        841.89
+      ],
+      "title": "પ્રથમ-ક્રમ વાક્યરચના સહિત ઓપન લોજિક ગુજરાતી",
+      "encrypted": false,
+      "nonempty_extracted_text_pages": 196,
+      "status": "passed_reproducible_build_and_all_page_visual_qa",
+      "all_pages_visually_inspected": true,
+      "three_passes_byte_identical": true
+    },
+    "epub": {
+      "path": "releases/OpenLogic-gu-Gujr-IN-First-Order-Syntax.epub",
+      "bytes": 482891,
+      "sha256": "71402df6b14f90d7d79497868f069f2a49ebec04a49152b4dd5ec4c4104045e2",
+      "version": "EPUB 3.3",
+      "layout": "reflowable",
+      "language": "gu-IN",
+      "direction": "ltr",
+      "coverage": {
+        "translated": 155,
+        "total": 722,
+        "units": "OLP-0004–0158"
+      },
+      "complete_edition": false,
+      "native_mathml_nodes": 8426,
+      "navigation_links": 163,
+      "epubcheck_messages": 0,
+      "cold_replay_byte_identical": true,
+      "runtime_status": "passed_silent_exact_xhtml_runtime_inspection",
+      "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa"
+    },
+    "untranslated_prose": {
+      "path": "state/UNTRANSLATED_SCAN_015.json",
+      "sha256": "48ecb8300c172deb2faf52f0677fca64327fd08590674e43fb1423778e2aca85",
+      "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity"
+    },
+    "translation_decisions": {
+      "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "sha256": "185782f9ad0139c090c252191644d609818d0612120e4b3372cee1018443306d",
+      "status": "passed",
+      "reader_locators": {
+        "available": 261,
+        "pending": 0,
+        "not_applicable": 1
+      }
+    }
+  },
+  "git_diff_check": "passed_scoped_paths",
+  "status": "passed_single_cumulative_155_unit_html_pdf_epub_gate"
+}

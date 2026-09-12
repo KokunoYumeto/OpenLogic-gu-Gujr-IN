@@ -1,8 +1,8 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 145,
-  "working_scope": "Complete cumulative translation through the First-order Logic introduction, OLP-0004–0148",
+  "translated": 155,
+  "working_scope": "Complete cumulative translation through First-order Syntax, OLP-0004–0158",
   "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
   "public_release": {
     "tag": "first-order-introduction-v0.8.0",
@@ -13,7 +13,7 @@
   "public_source_checkpoint": {
     "commit": "1d3f5c8d127147cd09971d11143c806bd0debe37",
     "translated": 145,
-    "scope": "Anonymously verified source checkpoint through the First-order Logic introduction, OLP-0004–0148"
+    "scope": "Previous anonymously verified source checkpoint through the First-order Logic introduction, OLP-0004–0148; checkpoint 015 is represented by the commit containing this file"
   },
   "complete_edition": false,
   "units": [
@@ -1054,61 +1054,71 @@
       "unit_id": "OLP-0149",
       "source_path": "content/first-order-logic/syntax-and-semantics/syntax.tex",
       "source_sha256": "473e66c94338b8f5f597ded8a099bc240a6a5e7e2c47ff05faf7235b0055cbdb",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "d88af3c390ebbba04a2dbaec3028c589f153e5b3ebb5718345ffac5aa5495a8f"
     },
     {
       "unit_id": "OLP-0150",
       "source_path": "content/first-order-logic/syntax-and-semantics/intro-syntax.tex",
       "source_sha256": "471a1c986e2c701856bc6bec91cfe741242434d9a933420e279002792e2da1ec",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "90f6cb8e3a46b7038883cb93dc9cdc362443592fce7a4dcffe4ec21a346f1218"
     },
     {
       "unit_id": "OLP-0151",
       "source_path": "content/first-order-logic/syntax-and-semantics/first-order-languages.tex",
       "source_sha256": "12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "fab083a270aae518e04239c6f040727f42ab72955e9428af35b9e144d2d78cff"
     },
     {
       "unit_id": "OLP-0152",
       "source_path": "content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
       "source_sha256": "8a31bcb40fff1de629e4bb540c781a6b49d32c412cb87cb2bc5a29efd32461e3",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "7c87e4ab2bcb443f6382d127f75f5f030ce2dbd677c85afebb2400004e688115"
     },
     {
       "unit_id": "OLP-0153",
       "source_path": "content/first-order-logic/syntax-and-semantics/unique-readability.tex",
       "source_sha256": "6965d26327ea625a4697236ead340f76d3d83acdd087dc6cbe2bde3eebe33833",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "081d5bce6e8dea75c5fedfa33840376e644275484887d256dba8498cc32a5943"
     },
     {
       "unit_id": "OLP-0154",
       "source_path": "content/first-order-logic/syntax-and-semantics/main-operator.tex",
       "source_sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "752088dc1dbc16b4dbf9d9850d870f80ee74c07ee57b4edb26d96b433d9f6a1d"
     },
     {
       "unit_id": "OLP-0155",
       "source_path": "content/first-order-logic/syntax-and-semantics/subformulas.tex",
       "source_sha256": "6e287a941dee45c936517925a0db269918b5020ac24892a03342dc7678f6c938",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "19e1e70fe1218cbac396a445dff23b72868b422079589fde8716fbedd89f3784"
     },
     {
       "unit_id": "OLP-0156",
       "source_path": "content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
       "source_sha256": "b691c379c8dbebebf080199aa11279ab2666880334bf6b7818f385c4855eea01",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a"
     },
     {
       "unit_id": "OLP-0157",
       "source_path": "content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex",
       "source_sha256": "b04a358a03907e8e42caa4b1cee49c217db77e1ca2c742da21c6eb6d7051edde",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "faf8f8c98e7dbfa1afe8c66d3dda3959d34dc3accbbc96a6e4d7f29f4e298e53"
     },
     {
       "unit_id": "OLP-0158",
       "source_path": "content/first-order-logic/syntax-and-semantics/substitution.tex",
       "source_sha256": "3db5cd0e374edb0ba4cff9f6f849272190d5fc5420e5132e1237adcd64619fae",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "da62849f68414a8449bd60ab294cb99ee24eabf79188b73c93224d58aa03ec05"
     },
     {
       "unit_id": "OLP-0159",

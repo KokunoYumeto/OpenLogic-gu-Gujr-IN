@@ -1,0 +1,221 @@
+{
+  "schema": "openlogic-gu-epub-build/1",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source": {
+    "path": "reader/first-order-syntax.html",
+    "bytes": 3783825,
+    "sha256": "9b0ae66bbd54096de90cae53ff7ff1dcae2ccc4c943ebac890056e8376cc54d4"
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-First-Order-Syntax.epub",
+    "bytes": 482891,
+    "sha256": "71402df6b14f90d7d79497868f069f2a49ebec04a49152b4dd5ec4c4104045e2",
+    "format": "EPUB 3 reflowable",
+    "language": "gu-IN",
+    "coverage": "155/722 units; OLP-0004-0158",
+    "complete_edition": false
+  },
+  "cold_replay": {
+    "path": "build/OpenLogic-gu-Gujr-IN-First-Order-Syntax-replay.epub",
+    "bytes": 482891,
+    "sha256": "71402df6b14f90d7d79497868f069f2a49ebec04a49152b4dd5ec4c4104045e2",
+    "byte_identical": true
+  },
+  "navigation_links": 163,
+  "described_svg_figures": 13,
+  "archive_entries": 22,
+  "archive_inventory": [
+    {
+      "path": "mimetype",
+      "bytes": 20,
+      "sha256": "e468e350d1143eb648f60c7b0bd6031101ec0544a361ca74ecef256ac901f48b",
+      "compression": "stored"
+    },
+    {
+      "path": "META-INF/container.xml",
+      "bytes": 252,
+      "sha256": "d259eabf3c1e282e4c68489f01c2e607deccee946b065e203ce60ce757391725",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/about.xhtml",
+      "bytes": 2907,
+      "sha256": "e72545867bb4e176a50c6f559598a114c5ab5b5cfdba5c06f7036688e4dd2eec",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/bijective.svg",
+      "bytes": 6740,
+      "sha256": "cd5cfda97623fa854df47209559573b9ca12f010e75aae9721611385ef100433",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/composition.svg",
+      "bytes": 12008,
+      "sha256": "f0f8431a13617375441f69dad2d767fa8b63ad45c5f225613d07623dbadac5bc",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/difference.svg",
+      "bytes": 3682,
+      "sha256": "96209f496ccbc15301e24b9be3e6bb0c6844c00e07d850d15853e2f7f78ae9c4",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/function.svg",
+      "bytes": 8340,
+      "sha256": "18d2618a8bbbf547bdde6ea1b8daa6052f2e5b33fc5f8f68c0e92f0bc22ba258",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/graph-four.svg",
+      "bytes": 1253,
+      "sha256": "1e4e7924276d2b3fe156ef036e679582b77020f82f326a74a6ebcf09b5f7d6d6",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/graph-three.svg",
+      "bytes": 1108,
+      "sha256": "fa49eb769792ed0a18d728e25208ed0bd6e28129312bb14a16f1f7577cd67d10",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/hilbert-hotel-shift.svg",
+      "bytes": 2966,
+      "sha256": "a53cc1d7cbd4dd70b985e0a8b3c9c51976f4441f156a377ee451738f7c0f9eb1",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/injective.svg",
+      "bytes": 8252,
+      "sha256": "72cf1131c5427ffee18d76a27d4e77691f43220821cd5978563058d2aeb8c2aa",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/intersection.svg",
+      "bytes": 3078,
+      "sha256": "39196746e170600adc196f1261a0dfec9b0e58c4dfcd637d3acaae77a4331aec",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/sqrt-two-parity.svg",
+      "bytes": 982,
+      "sha256": "6bb543bee382bdfdfb8b3a41c9fdafce8aec5240ded1a4c1d2a90e3da080fc00",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/surjective.svg",
+      "bytes": 6191,
+      "sha256": "a4ff73e8b763725bfad454a32f7e2b4ba51061a30ddf23cc5749db8dd834a6c1",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/tree.svg",
+      "bytes": 1546,
+      "sha256": "579ff65e523d3a1ad418d47c782903fb26daab55feafe12cc47d14877939d096",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/assets/union.svg",
+      "bytes": 4024,
+      "sha256": "8fad36bc95d3926c8df64dae2d9dc5f178feb6836556c30647f3cc9e5c714c02",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/content.xhtml",
+      "bytes": 3763213,
+      "sha256": "2b1d5dad251d90f9a0be8d1824b6a76425a2dbfe968f3513d8e37ad85c872394",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/fonts/NotoSansGujarati-Bold.ttf",
+      "bytes": 179284,
+      "sha256": "27f78fb437fb059b23e12e94eb4acb5f139a052dcfb56dd4546245adcb7ae360",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/fonts/NotoSansGujarati-Regular.ttf",
+      "bytes": 179052,
+      "sha256": "ea8cf815fb81f9621e73777d6495510f8b94d962db851ae72882d953cf440492",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/nav.xhtml",
+      "bytes": 18584,
+      "sha256": "3d8ea4d23f96efe71444bed9018f1b8bbe37c55eec9273e33df15fd2d4986448",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/package.opf",
+      "bytes": 3973,
+      "sha256": "2df959b658369f50c78d905b465c906c3cfdc2621fea7737f654640ac9124dc1",
+      "compression": "deflated"
+    },
+    {
+      "path": "OEBPS/styles/reader.css",
+      "bytes": 1020,
+      "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "compression": "deflated"
+    }
+  ],
+  "status": "built_reproducibly_and_passed_epubcheck_structural_semantic_link_and_silent_runtime_qa",
+  "verification": {
+    "epubcheck": {
+      "version": "5.3.0",
+      "messages": 0,
+      "fatals": 0,
+      "errors": 0,
+      "warnings": 0,
+      "report": "build/EPUBCHECK_015.json",
+      "report_sha256": "6904209a72c4daf1e17fd1317fd6a878ee891ce7978f4b62c903d48c72a73af5"
+    },
+    "runtime": {
+      "inspected_at_utc": "2026-09-12T17:03:22.734159+00:00",
+      "method": "Silent in-app Chromium inspection of byte-identical XHTML copies served from localhost; only the preview filename suffix changed from .xhtml to .html.",
+      "exact_xhtml_binding": {
+        "content_xhtml_sha256": "2b1d5dad251d90f9a0be8d1824b6a76425a2dbfe968f3513d8e37ad85c872394",
+        "navigation_xhtml_sha256": "3d8ea4d23f96efe71444bed9018f1b8bbe37c55eec9273e33df15fd2d4986448",
+        "stylesheet_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+        "content_preview_byte_identical": true,
+        "navigation_preview_byte_identical": true
+      },
+      "viewport_css_pixels": [
+        1280,
+        720
+      ],
+      "representative_views": [
+        "title, scope disclosure, and opening navigation",
+        "163-entry navigation document and landmarks",
+        "first-order overview and introductory syntax",
+        "first-order languages, terms, formulas and unique readability",
+        "main operators, subformulas and formation sequences",
+        "free variables, sentences and substitution",
+        "editorial notes, bibliography and thirteen endnotes"
+      ],
+      "runtime_checks": {
+        "document_ready_state": "complete",
+        "fonts_status": "loaded",
+        "native_mathml_nodes": 8426,
+        "block_mathml_nodes_checked": 438,
+        "unhandled_clipped_block_mathml_nodes": 0,
+        "intentionally_horizontally_scrollable_tableaux": 3,
+        "document_horizontal_overflow": false,
+        "images_loaded": 13,
+        "images_with_nonempty_gujarati_alt": 13,
+        "tables": 12,
+        "browser_console_messages": 0,
+        "unique_content_ids": 623,
+        "runtime_receipt": "work/EPUB_BROWSER_RUNTIME_015.json",
+        "runtime_receipt_sha256": "01fd5142277582820987cfe971d0f58c1b0c125fbeb8887247a461072c7caffc"
+      },
+      "visual_findings": {
+        "gujarati_shaping": "passed",
+        "mathml_layout": "passed",
+        "diagram_and_caption_layout": "passed",
+        "navigation_and_end_matter": "passed",
+        "overlap_or_truncation": "none_observed"
+      },
+      "status": "passed_silent_exact_xhtml_runtime_inspection"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-12T15:30:31.734039+00:00. This focused queue contains 99 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-12T17:18:29.043272+00:00. This focused queue contains 104 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -694,3 +694,38 @@ Generated 2026-09-12T15:30:31.734039+00:00. This focused queue contains 99 high-
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિ’ accurately express ‘variable assignment’ with the scope stated here: ચલ is directly attested in the checked mathematical-variable passage and નિયુક્તિ matches the established edition treatment of valuation as an assignment. The nearby definition fixes the technical object as a total function from variables to elements of the structure's domain. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:90`
 - **Gujarati:** `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:42`
+
+## GU-T141: first-order language / non-logical symbol / n-place → પ્રથમ-ક્રમ ભાષા / અતાર્કિક સંકેત / n-સ્થાની
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રથમ-ક્રમ ભાષા / અતાર્કિક સંકેત / n-સ્થાની’ accurately express ‘first-order language / non-logical symbol / n-place’ with the scope stated here: The checked logic canon supports the native heads ભાષા, સંકેત and the first-order predicate-calculus register. પ્રથમ-ક્રમ marks logical order, અતાર્કિક distinguishes the signature-specific symbols from logical symbols, and n-સ્થાની states the exact number of argument places fixed by the accompanying definition. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/introduction/formulas.tex:24`
+- **Gujarati:** `gu/content/first-order-logic/introduction/formulas.tex:23`
+
+## GU-T142: term / formula / string of symbols → પદ / સૂત્ર / સંકેતશ્રેણી
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પદ / સૂત્ર / સંકેતશ્રેણી’ accurately express ‘term / formula / string of symbols’ with the scope stated here: સૂત્ર and the surrounding formal-logic register are supported by the checked canon. પદ is the established edition word for a syntactically generated term, while સંકેતશ્રેણી transparently names an ordered string of symbols; the inductive definitions keep the three categories distinct. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:20`
+- **Gujarati:** `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:20`
+
+## GU-T143: main operator / subformula / immediate or proper subformula → મુખ્ય કારક / ઉપસૂત્ર / તત્કાલિક અથવા ઉચિત ઉપસૂત્ર
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘મુખ્ય કારક / ઉપસૂત્ર / તત્કાલિક અથવા ઉચિત ઉપસૂત્ર’ accurately express ‘main operator / subformula / immediate or proper subformula’ with the scope stated here: કારક is already established for logical operators and સૂત્ર for formulas. ઉપસૂત્ર therefore names a constituent formula, મુખ્ય selects the outermost constructor, તત્કાલિક means one construction step below it, and ઉચિત excludes the formula itself. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:17`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:15`
+
+## GU-T144: proper prefix / proper initial subsequence / minimal formation sequence → ઉચિત આરંભખંડ / ઉચિત આરંભ-ઉપશ્રેણી / ન્યૂનતમ રચના-શ્રેણી
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ઉચિત આરંભખંડ / ઉચિત આરંભ-ઉપશ્રેણી / ન્યૂનતમ રચના-શ્રેણી’ accurately express ‘proper prefix / proper initial subsequence / minimal formation sequence’ with the scope stated here: The compounds use established mathematical heads for beginning, part, subsequence, minimum and formation sequence. ઉચિત marks strict containment in both prefix notions, and ન્યૂનતમ identifies a formation sequence from which no repeated or irrelevant entry remains. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:113`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108`
+
+## GU-T145: free occurrence / free for substitution / variable capture / instance → મુક્ત ઘટના / મુક્તપણે પ્રતિસ્થાપનીય / ચલનું પકડાવું / દૃષ્ટાંત
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘મુક્ત ઘટના / મુક્તપણે પ્રતિસ્થાપનીય / ચલનું પકડાવું / દૃષ્ટાંત’ accurately express ‘free occurrence / free for substitution / variable capture / instance’ with the scope stated here: મુક્ત and ચલ follow the edition's established variable terminology. ઘટના identifies a particular syntactic occurrence, મુક્તપણે પ્રતિસ્થાપનીય states the capture-avoiding condition, the quoted verb પકડાવું preserves the source metaphor, and દૃષ્ટાંત names a substitution instance rather than an explanatory example. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:15`
