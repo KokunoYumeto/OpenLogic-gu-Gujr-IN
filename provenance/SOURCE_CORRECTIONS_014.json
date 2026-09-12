@@ -1,0 +1,158 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-12T14:55:35.550378+00:00",
+  "audit_id": "GU-OLFINT-20260912",
+  "audit_method": "Same-agent exact comparison against the frozen source, the surrounding examples, formula grammar and semantic definitions within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLFINT-001",
+      "unit_id": "OLP-0140",
+      "classification": "confirmed_malformed_scope_in_entailment_example",
+      "finding": "The universal formula closes after the existential premise and the entailment conclusion, placing unintended material inside its scope.",
+      "source_path": "content/first-order-logic/introduction/first-order-logic.tex",
+      "source_locator": "first-order-logic.tex:51",
+      "source_bytes": 4685,
+      "source_sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_bytes": 11257,
+      "target_sha256": "638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820",
+      "corrected_body_line": 50,
+      "adjacent_note_line": 58,
+      "handling": "Closed the universal premise before the existential premise, removed the spurious final bracket, and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lforall[x][(!A(x) \\lif !B(x)), \\lexists[x][!A(x)] \\Entails \\lexists[x][!B(x)]]",
+        "added": "\\lforall[x][(!A(x) \\lif !B(x))], \\lexists[x][!A(x)] \\Entails \\lexists[x][!B(x)]"
+      },
+      "controlling_evidence": "The surrounding ant/insect example has two premises and one conclusion; the later natural-deduction paragraph names those same three formulas separately.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLFINT-002",
+      "unit_id": "OLP-0140",
+      "classification": "confirmed_malformed_brackets_in_derivation_example",
+      "finding": "The natural-deduction example omits the universal premise's closing bracket and adds an extra bracket to the conclusion.",
+      "source_path": "content/first-order-logic/introduction/first-order-logic.tex",
+      "source_locator": "first-order-logic.tex:69",
+      "source_bytes": 4685,
+      "source_sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_bytes": 11257,
+      "target_sha256": "638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820",
+      "corrected_body_line": 73,
+      "adjacent_note_line": 78,
+      "handling": "Completed the brackets of both formulas and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "one missing and one extra quantifier-closing bracket",
+        "added": "well-formed universal premise and existential conclusion"
+      },
+      "controlling_evidence": "Each displayed expression is named as one premise or the conclusion, and the immediately preceding entailment gives their well-formed intended versions.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLFINT-003",
+      "unit_id": "OLP-0140",
+      "classification": "confirmed_malformed_brackets_in_metalogical_biconditional",
+      "finding": "The metalogical equivalence repeats the missing universal bracket and the extra conclusion bracket.",
+      "source_path": "content/first-order-logic/introduction/first-order-logic.tex",
+      "source_locator": "first-order-logic.tex:82",
+      "source_bytes": 4685,
+      "source_sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_bytes": 11257,
+      "target_sha256": "638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820",
+      "corrected_body_line": 73,
+      "adjacent_note_line": 95,
+      "handling": "Restored all three formulas in the biconditional to the well-formed versions used by the argument and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "malformed universal premise and existential conclusion",
+        "added": "separately closed universal premise and existential conclusion"
+      },
+      "controlling_evidence": "The paragraph compares derivability from two premises with semantic entailment by those same premises; each must be a complete formula.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLFINT-004",
+      "unit_id": "OLP-0143",
+      "classification": "confirmed_wrong_symbol_class_for_argument_arity",
+      "finding": "The general-case description says constants can have more than one place, although constants denote single objects and predicates have argument places.",
+      "source_path": "content/first-order-logic/introduction/satisfaction.tex",
+      "source_locator": "satisfaction.tex:24",
+      "source_bytes": 5894,
+      "source_sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "target_bytes": 11700,
+      "target_sha256": "d39772b6726b4bb75279832c7e5654c4f55779411f1b9f20cdd191adf714dd6f",
+      "corrected_body_line": 25,
+      "adjacent_note_line": 27,
+      "handling": "Restored predicates as the symbols that can have more than one argument place and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "constants",
+        "added": "predicates"
+      },
+      "controlling_evidence": "The same paragraph assigns one domain element to the constant a and a set of tuples to the predicate P; later syntax gives functions their own separate role.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLFINT-005",
+      "unit_id": "OLP-0143",
+      "classification": "confirmed_assignment_values_outside_fixed_domain",
+      "finding": "The variable-assignment example lists 1, 2, 3 even though its fixed domain is {0,1,2}, so 3 lies outside the domain and 0 is omitted.",
+      "source_path": "content/first-order-logic/introduction/satisfaction.tex",
+      "source_locator": "satisfaction.tex:62",
+      "source_bytes": 5894,
+      "source_sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "target_bytes": 11700,
+      "target_sha256": "d39772b6726b4bb75279832c7e5654c4f55779411f1b9f20cdd191adf714dd6f",
+      "corrected_body_line": 67,
+      "adjacent_note_line": 73,
+      "handling": "Used exactly the three elements of the fixed domain and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": [
+          1,
+          2,
+          3
+        ],
+        "added": [
+          0,
+          1,
+          2
+        ]
+      },
+      "controlling_evidence": "The preceding example explicitly fixes the domain as {0,1,2}, and a variable assignment must map every variable into that domain.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLFINT-006",
+      "unit_id": "OLP-0146",
+      "classification": "confirmed_malformed_atom_argument_braces",
+      "finding": "The atom closes after the predicate argument, leaving the object variable outside the Atom macro.",
+      "source_path": "content/first-order-logic/introduction/substitution.tex",
+      "source_locator": "substitution.tex:16",
+      "source_bytes": 2288,
+      "source_sha256": "a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1",
+      "target_path": "gu/content/first-order-logic/introduction/substitution.tex",
+      "target_bytes": 4772,
+      "target_sha256": "7c40fdf6dfd413a2d6aa6897df890f5d9c62e2a48aff11ad7602dff21ec89091",
+      "corrected_body_line": 16,
+      "adjacent_note_line": 28,
+      "handling": "Moved the object variable into the atom's second argument and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lforall[\\Obj v_0][\\Atom{\\Obj P}]{\\Obj v_0}",
+        "added": "\\lforall[\\Obj v_0][\\Atom{\\Obj P}{\\Obj v_0}]"
+      },
+      "controlling_evidence": "The sentence says P(a) is derived from the universal generalization of P(v_0); Atom is defined with predicate and argument-list parameters.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_014.json",
+  "status": "six_repairs_applied_disclosed_and_structural_semantic_reader_qa_passed"
+}

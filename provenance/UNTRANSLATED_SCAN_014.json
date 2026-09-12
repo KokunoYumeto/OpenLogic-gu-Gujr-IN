@@ -1,0 +1,133 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/014",
+  "checked_at_utc": "2026-09-12T15:00:05.316773+00:00",
+  "scope": "OLP-0138–OLP-0148 Gujarati first-order introduction source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, derivation environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing keyed IDs, filenames, math, literal control names and explicitly quoted frozen-source fragments.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0138",
+      "path": "content/first-order-logic/first-order-logic.tex",
+      "target_sha256": "adf1e9379b114875102c9873d146c943be02badd631edb451ec7c22fea11df6b",
+      "gujarati_characters": 567,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0139",
+      "path": "content/first-order-logic/introduction/introduction.tex",
+      "target_sha256": "5e5e175d13bac483e32f4482f1fbc51e772723cda2ff15e6bda9a37084f0c4d3",
+      "gujarati_characters": 27,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0140",
+      "path": "content/first-order-logic/introduction/first-order-logic.tex",
+      "target_sha256": "638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820",
+      "gujarati_characters": 3050,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    },
+    {
+      "unit_id": "OLP-0141",
+      "path": "content/first-order-logic/introduction/syntax.tex",
+      "target_sha256": "94d10252d6dfb80975b6df2b820693bc65d2e591e7c421dfabf90e988c387dd0",
+      "gujarati_characters": 1422,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0142",
+      "path": "content/first-order-logic/introduction/formulas.tex",
+      "target_sha256": "244fe2d66d4707ed9bdcca442dd8b9e752618f1e51be5d2ae3484a272fdd4684",
+      "gujarati_characters": 1562,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0143",
+      "path": "content/first-order-logic/introduction/satisfaction.tex",
+      "target_sha256": "d39772b6726b4bb75279832c7e5654c4f55779411f1b9f20cdd191adf714dd6f",
+      "gujarati_characters": 2644,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0144",
+      "path": "content/first-order-logic/introduction/sentences.tex",
+      "target_sha256": "66c33a4eacac66fda3fd98b9df1416a9a8905c7994e9ed964cf06a0e0b454876",
+      "gujarati_characters": 1298,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0145",
+      "path": "content/first-order-logic/introduction/semantic-notions.tex",
+      "target_sha256": "d678dd993f8cbbf90c148692fe07b3720490a348dd0d6869dcc6499664c58ee1",
+      "gujarati_characters": 1294,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0146",
+      "path": "content/first-order-logic/introduction/substitution.tex",
+      "target_sha256": "7c40fdf6dfd413a2d6aa6897df890f5d9c62e2a48aff11ad7602dff21ec89091",
+      "gujarati_characters": 1199,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0147",
+      "path": "content/first-order-logic/introduction/models-theories.tex",
+      "target_sha256": "d4fbc874ad8e2591cf6eae8d8272cf81f7377f856b32d9d2ebd7e15a2dbc0441",
+      "gujarati_characters": 1892,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0148",
+      "path": "content/first-order-logic/introduction/soundness-completeness.tex",
+      "target_sha256": "cca25a6d4d68475a4e1c289aa822467f237b6fd9d89e8724829f226fbb700aa4",
+      "gujarati_characters": 1934,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    }
+  ],
+  "totals": {
+    "units": 11,
+    "gujarati_characters": 16889,
+    "source_detector_ascii_tokens": 3678,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 6,
+    "quoted_frozen_source_literals": 0
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "allowed_formal_abbreviations": [
+    "FOL",
+    "MP"
+  ],
+  "allowed_formal_literals": [
+    "FOL tag name",
+    "false tag value",
+    "forall x book title"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}

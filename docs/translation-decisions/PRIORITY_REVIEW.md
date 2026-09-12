@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-09T21:48:40.987988+00:00. This focused queue contains 95 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-12T15:30:31.734039+00:00. This focused queue contains 99 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -666,3 +666,31 @@ Generated 2026-09-09T21:48:40.987988+00:00. This focused queue contains 95 high-
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સ્વયંસિદ્ધીકરણીય / નિર્ણેય’ accurately express ‘axiomatizable / decidable’ with the scope stated here: The checked canon directly supports axiomatic systems, finite proof procedures and formal decision-oriented reasoning. The derived adjectives state respectively that a theory can be axiomatized and that sentence membership or truth is decidable; neither exact form is directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:30`
 - **Gujarati:** `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:29`
+
+## GU-T137: bound variable / quantifier scope → બદ્ધ ચલ / પરિમાણકનો વ્યાપ
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘બદ્ધ ચલ / પરિમાણકનો વ્યાપ’ accurately express ‘bound variable / quantifier scope’ with the scope stated here: ચલ is directly supported by the checked mathematical-variable passage. બદ્ધ and વ્યાપ give a compact native account of an occurrence governed by a quantifier and the subformula over which that quantifier operates; the displayed recursive clauses fix both senses exactly. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/introduction/first-order-logic.tex:33`
+- **Gujarati:** `gu/content/first-order-logic/introduction/first-order-logic.tex:53`
+
+## GU-T138: model theory / axiomatic method → નિદર્શસિદ્ધાંત / સ્વયંસિદ્ધિમૂલક પદ્ધતિ
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘નિદર્શસિદ્ધાંત / સ્વયંસિદ્ધિમૂલક પદ્ધતિ’ accurately express ‘model theory / axiomatic method’ with the scope stated here: નિદર્શ is the edition's established term for model and સિદ્ધાંત for theory; સ્વયંસિદ્ધિ and પદ્ધતિ are supported components in the checked formal-logic register. The compounds name, respectively, the study of model classes and the method of characterizing mathematical structures by sentences. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/introduction/models-theories.tex:26`
+- **Gujarati:** `gu/content/first-order-logic/introduction/models-theories.tex:25`
+
+## GU-T139: valid / validity / logically true → પ્રમાણભૂત / પ્રામાણ્ય / તાર્કિક રીતે સત્ય
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રમાણભૂત / પ્રામાણ્ય / તાર્કિક રીતે સત્ય’ accurately express ‘valid / validity / logically true’ with the scope stated here: The checked logic canon supports valid arguments, truth and logical consequence. પ્રમાણભૂત is used adjectivally, પ્રામાણ્ય names the semantic property, and તાર્કિક રીતે સત્ય transparently expands the introductory paraphrase; the definition that every structure satisfies the sentence controls the technical sense. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/compactness.tex:156`
+- **Gujarati:** `gu/content/first-order-logic/completeness/compactness.tex:170`
+
+## GU-T140: variable assignment → ચલ-નિયુક્તિ
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિ’ accurately express ‘variable assignment’ with the scope stated here: ચલ is directly attested in the checked mathematical-variable passage and નિયુક્તિ matches the established edition treatment of valuation as an assignment. The nearby definition fixes the technical object as a total function from variables to elements of the structure's domain. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:90`
+- **Gujarati:** `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:42`

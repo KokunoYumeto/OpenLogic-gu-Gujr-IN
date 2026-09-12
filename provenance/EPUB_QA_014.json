@@ -1,0 +1,107 @@
+{
+  "schema": "openlogic-gu-epub-qa/1",
+  "checked_at_utc": "2026-09-12T15:10:00.523033+00:00",
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-First-Order-Introduction.epub",
+    "bytes": 461737,
+    "sha256": "a6ffe47ce1c76967bd9920a39b5dc3feb8308d80ede26169c32d79dabfd35e5a",
+    "version": "EPUB 3.3",
+    "layout": "reflowable",
+    "language": "gu-IN",
+    "direction": "ltr",
+    "coverage": {
+      "translated": 145,
+      "total": 722,
+      "units": "OLP-0004–0148"
+    },
+    "complete_edition": false
+  },
+  "reuse": {
+    "pipeline": "Adapted deterministic XHTML namespace, OPF, navigation, cold-replay and EPUBCheck practices from the accepted Accessible Complete English EPUB pipeline.",
+    "source_task": "019ffc65-3d4d-7e21-a913-21cc33a9be4a"
+  },
+  "epubcheck": {
+    "version": "5.3.0",
+    "jar_sha256": "f7f96617c929371821609b88c8484d6dc9f24fe916499863c46094c5fb778a65",
+    "report": "build/EPUBCHECK_014.json",
+    "report_sha256": "034185e9d72224e7b0aa8668175b2035cf66c5b9f1dfd0b10c99b3f14d0a9878",
+    "messages": 0,
+    "fatals": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "reproducibility": {
+    "cold_replay_byte_identical": true,
+    "build_receipt": "build/EPUB_BUILD_RECEIPT_014.json",
+    "build_receipt_sha256": "085c3e99e9ac0504022296ff50bf67c12303c986626e527842052137ad5a4081"
+  },
+  "structural_and_semantic_checks": {
+    "archive_entries": 22,
+    "mimetype_first_and_uncompressed": true,
+    "native_mathml_nodes": 7620,
+    "mathml_subtrees_exact_after_namespace_normalization": true,
+    "tex_annotations_exact": 7620,
+    "gujarati_character_sequence_exact": true,
+    "content_ids_exact": 583,
+    "broken_internal_content_links": 0,
+    "navigation_links": 154,
+    "broken_navigation_links": 0,
+    "tables": 11,
+    "proof_representations": 208,
+    "footnotes": 13,
+    "described_svg_figures": 13,
+    "embedded_gujarati_fonts": 2,
+    "scripts": 0,
+    "all_99_source_correction_disclosures_preserved": true,
+    "honest_partial_scope_metadata": true
+  },
+  "runtime_inspection": {
+    "inspected_at_utc": "2026-09-12T15:10:00.523033+00:00",
+    "method": "Silent in-app Chromium inspection of byte-identical XHTML copies served from localhost; only the preview filename suffix changed from .xhtml to .html.",
+    "exact_xhtml_binding": {
+      "content_xhtml_sha256": "8dc8deaddac4520675d6a0bbd06efcc00cc8522e468338748c5c3463c6ee20e3",
+      "navigation_xhtml_sha256": "2469f679e0e051ad467b87c8ec1fd70612c0eaffd99f5f481a071da30c324fc0",
+      "stylesheet_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "content_preview_byte_identical": true,
+      "navigation_preview_byte_identical": true
+    },
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "representative_views": [
+      "title, scope disclosure, and opening navigation",
+      "154-entry navigation document and landmarks",
+      "first-order overview, syntax and formula construction",
+      "satisfaction, sentence and semantic-notion sections",
+      "substitution and models-and-theories sections",
+      "soundness-and-completeness discussion",
+      "editorial notes, bibliography and thirteen endnotes"
+    ],
+    "runtime_checks": {
+      "document_ready_state": "complete",
+      "fonts_status": "loaded",
+      "native_mathml_nodes": 7620,
+      "block_mathml_nodes_checked": 431,
+      "unhandled_clipped_block_mathml_nodes": 0,
+      "intentionally_horizontally_scrollable_tableaux": 3,
+      "document_horizontal_overflow": false,
+      "images_loaded": 13,
+      "images_with_nonempty_gujarati_alt": 13,
+      "tables": 11,
+      "browser_console_messages": 0,
+      "unique_content_ids": 583,
+      "runtime_receipt": "work/EPUB_BROWSER_RUNTIME_014.json",
+      "runtime_receipt_sha256": "717bd1dd468a69570b0b7fcbdf008e2d660e6036ca0353364d334c6a0924f7ac"
+    },
+    "visual_findings": {
+      "gujarati_shaping": "passed",
+      "mathml_layout": "passed",
+      "diagram_and_caption_layout": "passed",
+      "navigation_and_end_matter": "passed",
+      "overlap_or_truncation": "none_observed"
+    },
+    "status": "passed_silent_exact_xhtml_runtime_inspection"
+  },
+  "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa"
+}

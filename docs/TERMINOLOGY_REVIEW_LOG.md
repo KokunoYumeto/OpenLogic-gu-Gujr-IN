@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-12. This is a **complete decision log for the current 134/722-unit release**, while the translation corpus itself remains partial. Public source-checkpoint and artifact verification cover 134/722 units through checkpoint 013 and completeness-v0.7.0. It contains all 136 terminology decisions from the durable ledger and all 93 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-12T15:21:50.458045+00:00. This is a **complete decision log for the current 145/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 134/722 units with checkpoint 013. It contains all 140 terminology decisions from the durable ledger and all 99 source corrections identified so far. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -1504,6 +1504,50 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** સ્વયંસિદ્ધિગમ્ય / નિર્ણયક્ષમ — plausible shorter compounds, but their precise technical scope is less explicit.; ઍક્સિયોમેટાઇઝેબલ / ડિસાઇડેબલ — transparent transliterations, but less consistent with the Gujarati scholarly register used here.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘સ્વયંસિદ્ધીકરણીય / નિર્ણેય’ accurately express ‘axiomatizable / decidable’ with the scope stated here: The checked canon directly supports axiomatic systems, finite proof procedures and formal decision-oriented reasoning. The derived adjectives state respectively that a theory can be axiomatized and that sentence membership or truth is decidable; neither exact form is directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T137: bound variable / quantifier scope → બદ્ધ ચલ / પરિમાણકનો વ્યાપ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_introduction_translation; `work/add_introduction_terms.py`.
+- **English use:** `upstream/content/first-order-logic/introduction/formulas.tex:18` (OLP-0142, “bound”); `upstream/content/first-order-logic/introduction/sentences.tex:22` (OLP-0144, “scope”)
+- **Gujarati use:** `gu/content/first-order-logic/introduction/first-order-logic.tex:53` (OLP-0140, “બદ્ધ”); `gu/content/first-order-logic/completeness/compactness.tex:134` (OLP-0135, “વ્યાપ”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ચલ is directly supported by the checked mathematical-variable passage. બદ્ધ and વ્યાપ give a compact native account of an occurrence governed by a quantifier and the subformula over which that quantifier operates; the displayed recursive clauses fix both senses exactly.
+- **Alternatives:** પરિમાણિત ચલ — suggests a variable merely accompanied by a quantifier and does not identify which occurrences it binds.; કાર્યક્ષેત્ર — a general rendering of scope, but વ્યાપ is shorter and fits the formal recursive definition.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘બદ્ધ ચલ / પરિમાણકનો વ્યાપ’ accurately express ‘bound variable / quantifier scope’ with the scope stated here: ચલ is directly supported by the checked mathematical-variable passage. બદ્ધ and વ્યાપ give a compact native account of an occurrence governed by a quantifier and the subformula over which that quantifier operates; the displayed recursive clauses fix both senses exactly. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T138: model theory / axiomatic method → નિદર્શસિદ્ધાંત / સ્વયંસિદ્ધિમૂલક પદ્ધતિ
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_first_order_introduction_translation; `work/add_introduction_terms.py`.
+- **English use:** `upstream/content/first-order-logic/introduction/models-theories.tex:26` (OLP-0147, “model theory”); `upstream/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex:2` (OLP-0112, “axiomatic”)
+- **Gujarati use:** `gu/content/first-order-logic/introduction/models-theories.tex:25` (OLP-0147, “નિદર્શસિદ્ધાંત”); `gu/content/first-order-logic/introduction/models-theories.tex:26` (OLP-0147, “સ્વયંસિદ્ધિમૂલક પદ્ધતિ”)
+- **Authorities actually checked:** `GU-P025` (GU-VK-TRUTH, {"line_one_based": 128, "utf8_start": 44931, "utf8_end": 46011, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** નિદર્શ is the edition's established term for model and સિદ્ધાંત for theory; સ્વયંસિદ્ધિ and પદ્ધતિ are supported components in the checked formal-logic register. The compounds name, respectively, the study of model classes and the method of characterizing mathematical structures by sentences.
+- **Alternatives:** મૉડલ સિદ્ધાંત — immediately recognizable, but imports an English head where the edition already uses નિદર્શ.; સ્વયંસિદ્ધીય પદ્ધતિ — shorter, though સ્વયંસિદ્ધિમૂલક more clearly states that axioms provide the method's basis.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘નિદર્શસિદ્ધાંત / સ્વયંસિદ્ધિમૂલક પદ્ધતિ’ accurately express ‘model theory / axiomatic method’ with the scope stated here: નિદર્શ is the edition's established term for model and સિદ્ધાંત for theory; સ્વયંસિદ્ધિ and પદ્ધતિ are supported components in the checked formal-logic register. The compounds name, respectively, the study of model classes and the method of characterizing mathematical structures by sentences. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T139: valid / validity / logically true → પ્રમાણભૂત / પ્રામાણ્ય / તાર્કિક રીતે સત્ય
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_introduction_translation; `work/add_introduction_terms.py`.
+- **English use:** `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:27` (OLP-0125, “valid”); `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:17` (OLP-0118, “validity”); `upstream/content/first-order-logic/introduction/first-order-logic.tex:28` (OLP-0140, “logically true”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/compactness.tex:170` (OLP-0135, “પ્રમાણભૂત”); `gu/content/first-order-logic/axiomatic-deduction/identity.tex:27` (OLP-0125, “પ્રામાણ્ય”); `gu/content/first-order-logic/introduction/first-order-logic.tex:28` (OLP-0140, “તાર્કિક રીતે સત્ય”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P069` (GU-VK-TRUTH, {"line_one_based": 96, "last_line_one_based": 101, "utf8_start": 36552, "utf8_end": 38930, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked logic canon supports valid arguments, truth and logical consequence. પ્રમાણભૂત is used adjectivally, પ્રામાણ્ય names the semantic property, and તાર્કિક રીતે સત્ય transparently expands the introductory paraphrase; the definition that every structure satisfies the sentence controls the technical sense.
+- **Alternatives:** માન્ય / માન્યતા — idiomatic, but can also mean permitted or accepted and is less specific in this formal context.; તર્કસત્ય — concise compound, but less transparent for the introductory prose than તાર્કિક રીતે સત્ય.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રમાણભૂત / પ્રામાણ્ય / તાર્કિક રીતે સત્ય’ accurately express ‘valid / validity / logically true’ with the scope stated here: The checked logic canon supports valid arguments, truth and logical consequence. પ્રમાણભૂત is used adjectivally, પ્રામાણ્ય names the semantic property, and તાર્કિક રીતે સત્ય transparently expands the introductory paraphrase; the definition that every structure satisfies the sentence controls the technical sense. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T140: variable assignment → ચલ-નિયુક્તિ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_introduction_translation; `work/add_introduction_terms.py`.
+- **English use:** `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:90` (OLP-0124, “variable assignment”)
+- **Gujarati use:** `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:42` (OLP-0124, “નિયુક્તિ”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P069` (GU-VK-TRUTH, {"line_one_based": 96, "last_line_one_based": 101, "utf8_start": 36552, "utf8_end": 38930, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ચલ is directly attested in the checked mathematical-variable passage and નિયુક્તિ matches the established edition treatment of valuation as an assignment. The nearby definition fixes the technical object as a total function from variables to elements of the structure's domain.
+- **Alternatives:** ચલ-મૂલ્યનિર્ધારણ — explicit, but heavier than needed once the defining function is stated.; ચલ-મૂલ્યાંકન — risks conflating the assignment itself with evaluation under it.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિ’ accurately express ‘variable assignment’ with the scope stated here: ચલ is directly attested in the checked mathematical-variable passage and નિયુક્તિ matches the established edition treatment of valuation as an assignment. The nearby definition fixes the technical object as a total function from variables to elements of the structure's domain. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -2435,3 +2479,63 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-022 without changing any unaffected claim or formula?
+
+### OLFINT-001: confirmed_malformed_scope_in_entailment_example
+
+- **Frozen source:** `upstream/content/first-order-logic/introduction/first-order-logic.tex` at `first-order-logic.tex:51`; SHA-256 `04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2`.
+- **Gujarati target:** `gu/content/first-order-logic/introduction/first-order-logic.tex` body line(s) 50; adjacent note line 58; SHA-256 `638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820`.
+- **Chosen handling:** Closed the universal premise before the existential premise, removed the spurious final bracket, and added an adjacent keyed note.
+- **Rationale:** The universal formula closes after the existential premise and the entailment conclusion, placing unintended material inside its scope.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLFINT-001 without changing any unaffected claim or formula?
+
+### OLFINT-002: confirmed_malformed_brackets_in_derivation_example
+
+- **Frozen source:** `upstream/content/first-order-logic/introduction/first-order-logic.tex` at `first-order-logic.tex:69`; SHA-256 `04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2`.
+- **Gujarati target:** `gu/content/first-order-logic/introduction/first-order-logic.tex` body line(s) 73; adjacent note line 78; SHA-256 `638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820`.
+- **Chosen handling:** Completed the brackets of both formulas and added an adjacent keyed note.
+- **Rationale:** The natural-deduction example omits the universal premise's closing bracket and adds an extra bracket to the conclusion.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLFINT-002 without changing any unaffected claim or formula?
+
+### OLFINT-003: confirmed_malformed_brackets_in_metalogical_biconditional
+
+- **Frozen source:** `upstream/content/first-order-logic/introduction/first-order-logic.tex` at `first-order-logic.tex:82`; SHA-256 `04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2`.
+- **Gujarati target:** `gu/content/first-order-logic/introduction/first-order-logic.tex` body line(s) 73; adjacent note line 95; SHA-256 `638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820`.
+- **Chosen handling:** Restored all three formulas in the biconditional to the well-formed versions used by the argument and added an adjacent keyed note.
+- **Rationale:** The metalogical equivalence repeats the missing universal bracket and the extra conclusion bracket.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLFINT-003 without changing any unaffected claim or formula?
+
+### OLFINT-004: confirmed_wrong_symbol_class_for_argument_arity
+
+- **Frozen source:** `upstream/content/first-order-logic/introduction/satisfaction.tex` at `satisfaction.tex:24`; SHA-256 `01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18`.
+- **Gujarati target:** `gu/content/first-order-logic/introduction/satisfaction.tex` body line(s) 25; adjacent note line 27; SHA-256 `d39772b6726b4bb75279832c7e5654c4f55779411f1b9f20cdd191adf714dd6f`.
+- **Chosen handling:** Restored predicates as the symbols that can have more than one argument place and added an adjacent keyed note.
+- **Rationale:** The general-case description says constants can have more than one place, although constants denote single objects and predicates have argument places.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLFINT-004 without changing any unaffected claim or formula?
+
+### OLFINT-005: confirmed_assignment_values_outside_fixed_domain
+
+- **Frozen source:** `upstream/content/first-order-logic/introduction/satisfaction.tex` at `satisfaction.tex:62`; SHA-256 `01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18`.
+- **Gujarati target:** `gu/content/first-order-logic/introduction/satisfaction.tex` body line(s) 67; adjacent note line 73; SHA-256 `d39772b6726b4bb75279832c7e5654c4f55779411f1b9f20cdd191adf714dd6f`.
+- **Chosen handling:** Used exactly the three elements of the fixed domain and added an adjacent keyed note.
+- **Rationale:** The variable-assignment example lists 1, 2, 3 even though its fixed domain is {0,1,2}, so 3 lies outside the domain and 0 is omitted.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLFINT-005 without changing any unaffected claim or formula?
+
+### OLFINT-006: confirmed_malformed_atom_argument_braces
+
+- **Frozen source:** `upstream/content/first-order-logic/introduction/substitution.tex` at `substitution.tex:16`; SHA-256 `a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1`.
+- **Gujarati target:** `gu/content/first-order-logic/introduction/substitution.tex` body line(s) 16; adjacent note line 28; SHA-256 `7c40fdf6dfd413a2d6aa6897df890f5d9c62e2a48aff11ad7602dff21ec89091`.
+- **Chosen handling:** Moved the object variable into the atom's second argument and added an adjacent keyed note.
+- **Rationale:** The atom closes after the predicate argument, leaving the object variable outside the Atom macro.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLFINT-006 without changing any unaffected claim or formula?

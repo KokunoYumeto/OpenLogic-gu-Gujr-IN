@@ -1,0 +1,86 @@
+% Part: first-order-logic
+% Chapter: introduction
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{int}{fml}
+
+\section{\usetoken{P}{formula}}
+
+પ્રથમ-ક્રમ તર્કશાસ્ત્રનાં !!{sentence}sને કડક રીતે નિર્ધારિત કરવા અને
+!!{variable}sના ઉપયોગથી ઊભા થતા પ્રશ્નો સંભાળવા આપણે નીચેની રીત
+વાપરીશું. પહેલાં આપણે પદોનો એક \emph{જુદો} ગણ વ્યાખ્યાયિત કરીએ છીએ:
+!!{formula}s. એ કર્યા પછી તેમાં !!{variable}s શું ભૂમિકા ભજવે છે તે
+વિચારી શકીએ---અને ``મુક્ત'' તથા ``બદ્ધ'' !!{variable}sના બીજા બે
+ખ્યાલોના આધારે !!a{sentence}ની વ્યાખ્યા આપી શકીએ (એટલે કે, મુક્ત
+!!{variable}s વિનાનું !!a{formula}). આ માત્ર ``!!{sentence}''ની
+વ્યાખ્યા વધુ સુગમ બનાવવા માટે જ નથી કરતા; સંતોષના અર્થવિચારી ખ્યાલને
+જે રીતે વ્યાખ્યાયિત કરીશું તેમાં પણ આ વાત અનિવાર્ય બનશે.
+
+ચાલો, એક સાદી પ્રથમ-ક્રમ ભાષા માટે ``!!{formula}'' વ્યાખ્યાયિત કરીએ:
+એ ભાષામાં માત્ર એક !!{predicate}~$\Obj P$, એક !!{constant}~$\Obj a$
+અને માત્ર તાર્કિક સંકેતો $\lnot$, $\land$ અને~$\lexists$ છે. આપણી
+પૂર્ણ વ્યાખ્યાઓ ઘણી વધુ વ્યાપક હશે: આપણે અનંત સંખ્યામાં !!{predicate}s
+અને !!{constant}s લઈશું. હકીકતમાં, !!{constant}s અને !!{variable}s
+સાથે જોડીને ``પદો'' રચી શકાય એવાં !!{function}s પણ લઈશું. હાલ માટે
+$\Obj a$ અને ચલો જ આપણા પદો રહેશે. જોકે આપણને અનંત સંખ્યામાં
+!!{variable}sની જરૂર છે. સત્તાવાર રીતે આપણે $\Obj v_0$, $\Obj v_1$,
+\dots, સંકેતોને ચલો તરીકે વાપરીશું.
+
+\begin{defn}
+\emph{!!{formula}s}નો ગણ~$\Frm$ નીચે પ્રમાણે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item\ollabel{fmls-atom} $\Atom{\Obj P}{\Obj a}$ અને $\Atom{\Obj
+  P}{\Obj v_i}$ એ !!{formula}s છે ($i \in \Nat$).
+
+\tagitem{prvNot}{\ollabel{fmls-not}જો $!A$ !!a{formula} હોય, તો $\lnot !A$
+  પણ !!{formula} છે.}{}
+
+\tagitem{prvAnd}{જો $!A$ અને $!B$ !!{formula}s હોય, તો $(!A \land
+  !B)$ પણ !!a{formula} છે.}{}
+
+\tagitem{prvEx}{\ollabel{fmls-ex}જો $!A$ !!a{formula} અને $x$ !!a{variable}
+  હોય, તો $\lexists[x][!A]$ પણ !!a{formula} છે.}{}
+
+\tagitem{limitClause}{\ollabel{fmls-limit}બીજું કશું !!a{formula} નથી.}{}
+\end{enumerate}
+\end{defn}
+
+\olref{fmls-atom} મુજબ, કોઈ પણ $i \in \Nat$ માટે $\Atom{\Obj P}{\Obj
+a}$ અને $\Atom{\Obj P}{\Obj v_i}$ એ !!{formula}s છે. આ કહેવાતાં
+\emph{આણ્વિક} !!{formula}s છે. તે આપણને શરૂઆતનું સાધન આપે છે. બીજા
+કિસ્સાઓ, પહેલાંથી રચેલાં સૂત્રોમાંથી નવાં !!{formula}s રચવાની
+રીતો આપે છે. દાખલા તરીકે, $\Atom{\Obj P}{\Obj v_2}$ એ
+\olref{fmls-atom} મુજબ પહેલાંથી !!a{formula} છે, તેથી
+\olref{fmls-not} મુજબ $\lnot \Atom{\Obj P}{\Obj v_2}$ !!a{formula}
+મળે છે. પછી \olref{fmls-ex} મુજબ $\lexists[\Obj v_2][\lnot
+\Atom{\Obj P}{\Obj v_2}]$ પણ !!{formula} મળે છે, અને આમ આગળ.
+\olref{fmls-limit} કહે છે કે આ રીતે રચી શકાય એવી \emph{માત્ર}
+સંકેતશ્રેણીઓ જ !!{formula}s ગણાય છે. ખાસ કરીને,
+$\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]$ અને $\lexists[\Obj
+v_0][\lexists[\Obj v_0][\Atom{\Obj P}{\Obj a}]]$ !!{formula}s
+\emph{ગણાય} છે, જ્યારે $(\lnot \Atom{\Obj P}{\Obj a})$ ગણાતું નથી,
+કારણ કે તેની સૌથી બહારની કૌંસજોડી વધારાની છે.
+
+!!{formula}sને આ રીતે વ્યાખ્યાયિત કરવાની રીતને \emph{અનુમાનાત્મક
+વ્યાખ્યા} કહે છે. તે આપણને અનુમાન વડે સાબિતીના એક પ્રકાર---\emph{રચના
+પરના અનુમાન}---વાપરીને !!{formula}s વિશે વાતો સાબિત કરવા દે છે.
+આ પદ્ધતિઓની સામાન્ય ચર્ચા \olref[mth][ind][idf]{sec} અને
+\olref[mth][ind][sti]{sec}માં છે; આગળની સાબિતીઓમાં ઊંડા ઊતરો તે પહેલાં
+આ વિભાગો ફરી જોઈ લેવા જોઈએ. પાયાનો વિચાર આ છે: બધાં !!{formula}s માટે
+કંઈક સત્ય છે એ સાબિત કરવું હોય, તો પહેલાં બતાવો કે તે આણ્વિક
+!!{formula}s માટે સત્ય છે અને પછી બતાવો કે જો તે કોઈ પણ
+!!{formula}~$!A$ (અને~$!B$) માટે સત્ય હોય, તો $\lnot !A$, $(!A \land
+!B)$ અને $\lexists[x][!A]$ માટે પણ સત્ય છે. દાખલા તરીકે, આથી
+$\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$ માટે તે સત્ય છે
+એ સાબિત થાય છે: પહેલા ભાગમાંથી તે આણ્વિક !!{formula}~$\Atom{\Obj
+P}{\Obj v_2}$ માટે સત્ય છે. પછી બીજા ભાગમાંથી તે $\lnot \Atom{\Obj
+P}{\Obj v_2}$ માટે સત્ય મળે છે અને ફરી એ જ રીતે
+$\lexists[\Obj v_2][\lnot \Atom{\Obj P}{\Obj v_2}]$ માટે પણ સત્ય મળે
+છે. બધાં !!{formula}s આણ્વિક !!{formula}sમાંથી અનુમાનાત્મક રીતે રચાય
+છે, તેથી આ પદ્ધતિ તેમાંના કોઈ પણ સૂત્ર માટે કામ કરે છે.
+
+\end{document}

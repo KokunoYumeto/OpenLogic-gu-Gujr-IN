@@ -1,0 +1,57 @@
+% Part: first-order logic
+
+\documentclass[../../include/open-logic-part]{subfiles}
+
+\begin{document}
+
+\olpart{fol}{પ્રથમ-ક્રમ તર્કશાસ્ત્ર}
+
+\begin{editorial}
+  આ ભાગમાં પ્રથમ-ક્રમ તર્કશાસ્ત્રના અધિસિદ્ધાંતને પૂર્ણતા સુધી આવરી
+  લેવાયો છે. હાલ તે વિધાનાત્મક તર્કશાસ્ત્રની અલગ રજૂઆત પર આધાર રાખતો
+  નથી; બધું અહીં સાબિત કરવામાં આવે છે. જો ``FOL'' ટૅગ false હોય, તો
+  સ્રોત ફાઇલો પરિમાણકો વિશેની સામગ્રી કાઢી નાખશે (અને
+  ``!!{structure}''ને ``!!{valuation}'', $\Struct{M}$ને $\pAssign{v}$
+  વગેરેથી બદલશે). હકીકતમાં, વિધાનાત્મક તર્કશાસ્ત્રના ભાગની મોટાભાગની
+  સામગ્રી એ ``FOL'' ટૅગ બંધ રાખેલું પ્રથમ-ક્રમનું જ રૂપ છે.
+
+  વિધાનાત્મક તર્કશાસ્ત્રનો ભાગ સામેલ હોય, તો ઘણી સામગ્રીનું પુનરાવર્તન
+  થાય છે. જોકે આ ભાગ વિધાનાત્મક તર્કશાસ્ત્રમાં આવરી લેવાયેલી સામગ્રીને
+  ધ્યાનમાં લઈ શકે એવી વ્યવસ્થા કરવાની યોજના છે: પહેલેથી આવરી લેવાયેલી
+  સામગ્રી કાઢી શકાય અને સાબિતીઓને વિધાનાત્મક ભાગનાં સંબંધિત સ્થાનોના
+  સંદર્ભો આપીને ટૂંકાવી શકાય.
+\end{editorial}
+
+\olimport[introduction]{introduction}
+
+\olimport[syntax-and-semantics]{syntax}
+
+\olimport[syntax-and-semantics]{semantics}
+
+\olimport[models-theories]{models-theories}
+
+\olimport[proof-systems]{proof-systems}
+
+\iftag{prfSC}{%
+  \olimport[sequent-calculus]{sequent-calculus}
+}{}
+
+\iftag{prfND}{%
+  \olimport[natural-deduction]{natural-deduction}
+}{}
+
+\iftag{prfTab}{%
+  \olimport[tableaux]{tableaux}
+}{}
+
+\iftag{prfAX}{%
+  \olimport[axiomatic-deduction]{axiomatic-deduction}
+}{}
+
+\olimport[completeness]{completeness}
+
+\olimport[beyond]{beyond}
+
+\OLEndPartHook
+
+\end{document}

@@ -1,0 +1,36 @@
+\def\gueditiontitle{પ્રથમ-ક્રમ પરિચય સહિત ઓપન લોજિક ગુજરાતી}
+\def\gueditionheading{%
+  ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+  અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન,
+  સ્વાભાવિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ, પૂર્ણતા અને
+  પ્રથમ-ક્રમ તર્કશાસ્ત્રનો પરિચય}
+\def\gueditiondescription{%
+  આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે પ્રથમ-ક્રમ તર્કશાસ્ત્રનું સંપૂર્ણ
+  પરિચય-પ્રકરણ ઉમેર્યું છે. તેમાં વાક્યરચના, સૂત્રો, સંરચના અને સંતોષ,
+  મુક્ત તથા બદ્ધ ચલો, વાક્યો, પ્રામાણ્ય અને ફલિતતા, પ્રતિસ્થાપન,
+  નિદર્શો અને સિદ્ધાંતો તથા યથાર્થતા અને પૂર્ણતાનો સમાવેશ છે.}
+\def\gueditioncount{૧૪૫}
+\def\gueditionbodyfile{build/first-order-introduction-body.tex}
+\def\gueditionlabelsfile{build/first-order-introduction-available-labels.tex}
+\def\gueditioncorrectionids{%
+  OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+  OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+  OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006,
+  OLND-001થી OLND-006, OLTAB-001થી OLTAB-012,
+  OLAX-001થી OLAX-018, OLCO-001થી OLCO-022 અને
+  OLFINT-001થી OLFINT-006 સુધીની}
+\def\gueditioneditorial{%
+  નવા પરિચય-પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી પસંદ કરી
+  છે. સૂત્રોની અનુમાનાત્મક રચના, ચલ-નિયુક્તિ સાથેનો સંતોષ, પરિમાણકનો
+  વ્યાપ, પ્રતિસ્થાપન, નિદર્શસિદ્ધાંત અને યથાર્થતા--પૂર્ણતાની બંને દિશાઓ
+  સામેલ છે. મૂળ પાઠની છ ઓળખેલી ઔપચારિક અને અર્થલક્ષી ખામીઓ પારદર્શક
+  નોંધો સાથે મર્યાદિત રીતે સુધારી છે.}
+% Completeness uses a few first-order notation helpers that are not needed by
+% the preceding tableaux chapters.  Define them before the shared preamble is
+% loaded; the definitions are deliberately compatible with the upstream
+% notation profile.
+\providecommand{\Domain}[1]{\left|\mathfrak{#1}\right|}
+\ProvideDocumentCommand{\Trm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Trm}}{\mathrm{Trm}(\mathcal{#1})}}
+\providecommand{\num}[1]{\overline{#1}}
+\input{gu-tableaux.tex}
