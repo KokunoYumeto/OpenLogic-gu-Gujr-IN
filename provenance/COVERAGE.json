@@ -5,15 +5,15 @@
   "working_scope": "Complete cumulative translation through the First-order Logic introduction, OLP-0004–0148",
   "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
   "public_release": {
-    "tag": "completeness-v0.7.0",
-    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/completeness-v0.7.0",
-    "translated": 134,
-    "scope": "Complete cumulative artifact release through First-order Completeness, OLP-0004–0137"
+    "tag": "first-order-introduction-v0.8.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/first-order-introduction-v0.8.0",
+    "translated": 145,
+    "scope": "Complete cumulative artifact release through the First-order Logic introduction, OLP-0004–0148"
   },
   "public_source_checkpoint": {
-    "commit": "3af8c948c77af74ad4f53fb401aaf57d1f02f0cd",
-    "translated": 134,
-    "scope": "Previous anonymously verified source checkpoint through First-order Completeness, OLP-0004–0137; checkpoint 014 is represented by the commit containing this file"
+    "commit": "1d3f5c8d127147cd09971d11143c806bd0debe37",
+    "translated": 145,
+    "scope": "Anonymously verified source checkpoint through the First-order Logic introduction, OLP-0004–0148"
   },
   "complete_edition": false,
   "units": [
@@ -977,77 +977,77 @@
       "unit_id": "OLP-0138",
       "source_path": "content/first-order-logic/first-order-logic.tex",
       "source_sha256": "d3db70ccef0969cf026f4f67149b0cb6cde3a398935b6582f01e056b1904a41f",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "adf1e9379b114875102c9873d146c943be02badd631edb451ec7c22fea11df6b"
     },
     {
       "unit_id": "OLP-0139",
       "source_path": "content/first-order-logic/introduction/introduction.tex",
       "source_sha256": "05b3d4c1cfef57b0df901d96638381e3ac936560b37dfcbc10404f152a19d7d5",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "5e5e175d13bac483e32f4482f1fbc51e772723cda2ff15e6bda9a37084f0c4d3"
     },
     {
       "unit_id": "OLP-0140",
       "source_path": "content/first-order-logic/introduction/first-order-logic.tex",
       "source_sha256": "04bfc243ce8ec9263cc7f805971d4193f93c9667a595a8bdae8a1cd1931ca4b2",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "638c29d39dad39576f2bda0738fcebfd66092553238f6787294f4afeaf747820"
     },
     {
       "unit_id": "OLP-0141",
       "source_path": "content/first-order-logic/introduction/syntax.tex",
       "source_sha256": "13404c0d5539db8f9ec7ac2205560b802e61e18623610a74d945c21f64e71884",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "94d10252d6dfb80975b6df2b820693bc65d2e591e7c421dfabf90e988c387dd0"
     },
     {
       "unit_id": "OLP-0142",
       "source_path": "content/first-order-logic/introduction/formulas.tex",
       "source_sha256": "359d5608df5b55db1a6ec96c390c2baeecc87cd9fa20d026a827afbfe3cb1ff4",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "244fe2d66d4707ed9bdcca442dd8b9e752618f1e51be5d2ae3484a272fdd4684"
     },
     {
       "unit_id": "OLP-0143",
       "source_path": "content/first-order-logic/introduction/satisfaction.tex",
       "source_sha256": "01faa20f2f8d843d47cb7ca05e57a665ad3cd43f288b9504910a8e43bbad0c18",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "d39772b6726b4bb75279832c7e5654c4f55779411f1b9f20cdd191adf714dd6f"
     },
     {
       "unit_id": "OLP-0144",
       "source_path": "content/first-order-logic/introduction/sentences.tex",
       "source_sha256": "748e7d15fb2dbed01613a86005d52fdb1f3fe78bb8e3749b61e48cbd2a04a8d0",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "66c33a4eacac66fda3fd98b9df1416a9a8905c7994e9ed964cf06a0e0b454876"
     },
     {
       "unit_id": "OLP-0145",
       "source_path": "content/first-order-logic/introduction/semantic-notions.tex",
       "source_sha256": "9d04bf200004bd09dead1b4fcd8a97eca4c9e2d7886c07cb99122d0426d60aae",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "d678dd993f8cbbf90c148692fe07b3720490a348dd0d6869dcc6499664c58ee1"
     },
     {
       "unit_id": "OLP-0146",
       "source_path": "content/first-order-logic/introduction/substitution.tex",
       "source_sha256": "a874a9c9150455531a7d563ddf3e6bf35c86fc2134c324f9bf78135213d912f1",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "7c40fdf6dfd413a2d6aa6897df890f5d9c62e2a48aff11ad7602dff21ec89091"
     },
     {
       "unit_id": "OLP-0147",
       "source_path": "content/first-order-logic/introduction/models-theories.tex",
       "source_sha256": "36ee284caf12899709c6527a5e97cc191bb07fa6701d9b457a7191a1e803c59f",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "d4fbc874ad8e2591cf6eae8d8272cf81f7377f856b32d9d2ebd7e15a2dbc0441"
     },
     {
       "unit_id": "OLP-0148",
       "source_path": "content/first-order-logic/introduction/soundness-completeness.tex",
       "source_sha256": "05f6726f7479e800c0bba936fc241ba48814425b161a53c67b4cc5bf43aed773",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "cca25a6d4d68475a4e1c289aa822467f237b6fd9d89e8724829f226fbb700aa4"
     },
     {

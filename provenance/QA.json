@@ -1,11 +1,11 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-12T15:31:16.698170+00:00",
+  "checkpoint_utc": "2026-09-12T15:38:59.194508+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
   "translated_units": 145,
-  "publicly_verified_release_units": 134,
-  "publicly_verified_source_checkpoint_units": 134,
+  "publicly_verified_release_units": 145,
+  "publicly_verified_source_checkpoint_units": 145,
   "total_units": 722,
   "aligned_linguistic_blocks": 1485,
   "source_math_spans_verified": 7916,
@@ -422,7 +422,7 @@
       "exact_block_reviews": 50
     }
   },
-  "status": "145_unit_source_html_pdf_epub_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_134_units; complete_corpus_in_progress",
+  "status": "145_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -438,13 +438,13 @@
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/completeness-v0.7.0",
-    "github_receipt": "PUBLICATION_RECEIPT_007.json",
-    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_013.json",
-    "zenodo_record": "https://zenodo.org/records/22726447",
-    "zenodo_doi": "10.5281/zenodo.22726447",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_007.json",
-    "epub_download": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/completeness-v0.7.0/OpenLogic-gu-Gujr-IN-Completeness.epub",
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/first-order-introduction-v0.8.0",
+    "github_receipt": "PUBLICATION_RECEIPT_008.json",
+    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_014.json",
+    "zenodo_record": "https://zenodo.org/records/22727339",
+    "zenodo_doi": "10.5281/zenodo.22727339",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_008.json",
+    "epub_download": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/first-order-introduction-v0.8.0/OpenLogic-gu-Gujr-IN-First-Order-Introduction.epub",
     "status": "all_four_artifacts_and_pdf_preview_anonymously_verified"
   },
   "batch_008": {
