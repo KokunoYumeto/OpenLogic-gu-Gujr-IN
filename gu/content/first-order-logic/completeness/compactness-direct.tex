@@ -1,0 +1,196 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: compactness-direct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{cpd}}
+      {\olfileid{pl}{com}{cpd}}
+
+\olsection{સઘનતા પ્રમેયની સીધી સાબિતી}
+
+પૂર્ણતા પ્રમેયનો આશરો લીધા વિના, તેની સાબિતીમાંના વિચારો વાપરીને
+સઘનતા પ્રમેય સીધો સાબિત કરી શકાય છે. પૂર્ણતા પ્રમેયની સાબિતીમાં આપણે
+!!{sentence}sના સુસંગત ગણ~$\Gamma$થી શરૂ કરીને તેને !!{sentence}sના
+સુસંગત\iftag{FOL}{, સંતૃપ્ત}{} અને !!{complete} ગણ~$\Gamma^*$ સુધી
+વિસ્તાર્યો હતો. પછી~$\Gamma^*$માંથી રચેલા
+\iftag{FOL}{પદ-નિદર્શ~$\Struct{M(\Gamma^*)}$}{!!{valuation}
+~$\pAssign{v(\Gamma^*)}$}માં~$\Gamma$નાં બધાં !!{sentence}s સાચાં છે
+તેમ બતાવ્યું હતું; એટલે~$\Gamma$ સંતોષ્ય હતો.
+
+વાક્યોનો સાન્ત રીતે સંતોષ્ય ગણ સંતોષ્ય છે તેમ બતાવવા આ જ રીત વાપરી
+શકાય છે. સત્યતા સહાયક પ્રમેય સુધી લઈ જતાં પરિણામોનાં એવાં અનુરૂપ
+સ્વરૂપો જ સાબિત કરવાં પડશે જેમાં ``સુસંગત''ને બદલે ``સાન્ત રીતે
+સંતોષ્ય'' મૂકીએ.
+
+\begin{prop}
+\ollabel{prop:fsat-ccs}
+ધારો કે~$\Gamma$ !!{complete} અને સાન્ત રીતે સંતોષ્ય છે. ત્યારે:
+\begin{enumerate}
+\tagitem{prvAnd}{$(!A \land !B) \in \Gamma$ જો અને માત્ર જો
+  $!A \in \Gamma$ અને $!B \in \Gamma$ બંને.}{}
+
+\tagitem{prvOr}{$(!A \lor !B) \in \Gamma$ જો અને માત્ર જો કાં તો
+  $!A \in \Gamma$ અથવા $!B \in \Gamma$.}{}
+
+\tagitem{prvIf}{$(!A \lif !B) \in \Gamma$ જો અને માત્ર જો કાં તો
+  $!A \notin \Gamma$ અથવા $!B \in \Gamma$.}{}
+\end{enumerate}
+\end{prop}
+
+\tagprob{FOL}
+\begin{prob}
+~$\Proves$ વાપર્યા વિના \olref[fol][com][cpd]{prop:fsat-ccs}
+સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+~$\Proves$ વાપર્યા વિના \olref[pl][com][cpd]{prop:fsat-ccs}
+સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{lem}
+\ollabel{lem:fsat-henkin} દરેક સાન્ત રીતે સંતોષ્ય ગણ~$\Gamma$ને
+સંતૃપ્ત અને સાન્ત રીતે સંતોષ્ય ગણ~$\Gamma'$ સુધી વિસ્તારી શકાય છે.
+\end{lem}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-henkin} સાબિત કરો. (સંકેત: નિર્ણાયક
+પગલું !!{derivation}s અથવા સુસંગતતાનો જરાય આશરો લીધા વિના એ બતાવવાનું
+છે કે જો~$\Gamma_n$ સાન્ત રીતે સંતોષ્ય હોય, તો
+$\Gamma_n\cup\{!D_n\}$ પણ સાન્ત રીતે સંતોષ્ય છે.)
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{prop}\ollabel{prop:fsat-instances}
+ધારો કે~$\Gamma$ પૂર્ણ, સાન્ત રીતે સંતોષ્ય અને સંતૃપ્ત છે.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)]\in\Gamma$ જો અને માત્ર જો ઓછામાં
+  ઓછા એક બંધ પદ~$t$ માટે $!A(t)\in\Gamma$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)]\in\Gamma$ જો અને માત્ર જો દરેક
+  બંધ પદ~$t$ માટે $!A(t)\in\Gamma$.}{}
+\end{tagenumerate}
+\end{prop}
+}{}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{prop:fsat-instances} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\begin{lem}
+\ollabel{lem:fsat-lindenbaum} દરેક સાન્ત રીતે સંતોષ્ય ગણ~$\Gamma$ને
+!!a{complete} અને સાન્ત રીતે સંતોષ્ય ગણ~$\Gamma^*$ સુધી વિસ્તારી શકાય
+છે.
+\end{lem}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{lem:fsat-lindenbaum} સાબિત કરો. (સંકેત: નિર્ણાયક
+પગલું એ બતાવવાનું છે કે જો~$\Gamma_n$ સાન્ત રીતે સંતોષ્ય હોય, તો
+$\Gamma_n\cup\{!A_n\}$ અથવા $\Gamma_n\cup\{\lnot !A_n\}$માંથી કોઈ એક
+સાન્ત રીતે સંતોષ્ય છે.)
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{lem:fsat-lindenbaum} સાબિત કરો. (સંકેત: નિર્ણાયક
+પગલું એ બતાવવાનું છે કે જો~$\Gamma_n$ સાન્ત રીતે સંતોષ્ય હોય, તો
+$\Gamma_n\cup\{!A_n\}$ અથવા $\Gamma_n\cup\{\lnot !A_n\}$માંથી કોઈ એક
+સાન્ત રીતે સંતોષ્ય છે.)
+\end{prob}
+\tagendprob
+
+\begin{thm}[સઘનતા]
+\ollabel{thm:compactness-direct} $\Gamma$ સંતોષ્ય છે જો અને માત્ર જો તે
+સાન્ત રીતે સંતોષ્ય છે.
+\end{thm}
+
+\begin{proof}
+જો~$\Gamma$ સંતોષ્ય હોય, તો એવી
+\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+છે કે દરેક $!A\in\Gamma$ માટે
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. અલબત્ત, આ
+\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}~$\Gamma$ના દરેક સાન્ત ઉપગણને
+પણ સંતોષે છે, તેથી~$\Gamma$ સાન્ત રીતે સંતોષ્ય છે.
+
+હવે ધારો કે~$\Gamma$ સાન્ત રીતે સંતોષ્ય છે.\iftag{FOL}{
+  \olref{lem:fsat-henkin} મુજબ એવો સાન્ત રીતે સંતોષ્ય, સંતૃપ્ત ગણ
+  $\Gamma'\supseteq\Gamma$ છે.}{} \olref{lem:fsat-lindenbaum} મુજબ
+~$\iftag{FOL}{\Gamma'}{\Gamma}$ને !!a{complete} અને સાન્ત રીતે સંતોષ્ય
+ગણ~$\Gamma^*$ સુધી વિસ્તારી શકાય છે\iftag{FOL}{, અને~$\Gamma^*$ હજી
+સંતૃપ્ત છે}{}. \olref[mod]{defn:termmodel}માંની કલમો પ્રમાણે
+\iftag{FOL}{પદ-નિદર્શ~$\Struct{M(\Gamma^*)}$}{!!{valuation}
+~$\pAssign{v(\Gamma^*)}$} રચો.\iftag{FOL}{ નોંધો કે
+\olref[mod]{prop:quant-termmodel} એ~$\Gamma^*$ સુસંગત છે (કે તે
+!!{complete} અથવા સંતૃપ્ત છે) એ વાત પર આધાર રાખતો નહોતો; તે ફક્ત
+$\Struct{M(\Gamma^*)}$ આવૃત છે એ હકીકત પર આધાર રાખતો હતો.}{}
+સત્યતા સહાયક પ્રમેય (\olref[mod]{lem:truth})ની સાબિતી ત્યારે પણ ચાલે
+છે જ્યારે \olref[ccs]{prop:ccs}\iftag{FOL}{ અને
+\olref[hen]{prop:saturated-instances}ના સંદર્ભોને અનુક્રમે
+\olref{prop:fsat-ccs} અને \olref{prop:fsat-instances}ના સંદર્ભોથી}{}
+બદલીએ. જ્યાં મૂળ સાબિતી
+સુસંગતતાનો સીધો ઉપયોગ કરે છે ત્યાં સાન્ત સંતોષ્યતા એ જ જરૂરી હકીકતો
+આપે છે: $\lfalse\notin\Gamma^*$, $\ltrue\in\Gamma^*$, અને
+$\lnot !B\in\Gamma^*$ જો અને માત્ર જો $!B\notin\Gamma^*$; કારણ કે
+આમાંથી વિરુદ્ધ કિસ્સામાં એક અથવા બે સભ્યોનો અસંતોષ્ય સાન્ત ઉપગણ મળે.
+આથી~$\eq$ ન ધરાવતા દરેક $!A\in\Gamma$ને
+$\Struct{M(\Gamma^*)}$ સાચું બનાવે છે.
+
+\iftag{FOL}{જો~$\Gamma$માં~$\eq$ આવે, તો
+\olref[ide]{defn:term-model-factor}ની જેમ~$\Struct{M(\Gamma^*)}$નું
+ભાગફલ લો. જરૂરી સંબંધ~$\approx$ સ્વવાચક, સમમિત, પરંપરિત અને
+વિધેયો તથા વિધેયસંકેતો સાથે સુસંગત છે: દરેક નિષ્ફળતા પૂર્ણતાથી તેનો
+નિષેધ~$\Gamma^*$માં મૂકે અને પછી સાન્ત રીતે અસંતોષ્ય ઉપગણ આપે છે.
+તેથી ભાગફલ સુવ્યાખ્યાયિત છે અને \olref[ide]{lem:truth}ની અનુમાનાત્મક
+સાબિતી સાન્ત-સંતોષ્ય આવૃત્તિમાં પણ ચાલે છે. પરિણામે ભાગફલ નિદર્શ
+~$\Gamma$ના દરેક વાક્યને સાચું બનાવે છે.}{}
+\end{proof}
+
+\sourcecorrection{OLCO-018}{મૂળની \texttt{compactness-direct.tex},
+પંક્તિઓ~139--142માં સત્યતા સહાયક પ્રમેયમાંના ફક્ત બે સંદર્ભો બદલવાનું
+કહ્યું છે. પરંતુ મૂળ સાબિતીના અસત્યતા, સત્યતા અને નિષેધના કિસ્સા પણ
+સુસંગતતાનો સીધો ઉપયોગ કરે છે. અહીં એ ત્રણ ઉપયોગોને સાન્ત સંતોષ્યતાથી
+કેવી રીતે બદલવા તે સ્પષ્ટ કર્યું છે.}
+
+\sourcecorrection{OLCO-019}{મૂળની \texttt{compactness-direct.tex},
+પંક્તિઓ~133--142માં માત્ર સાદો પદ-નિદર્શ અને
+\olref[mod]{lem:truth} વપરાય છે, જ્યારે તે સત્યતા સહાયક પ્રમેય સ્પષ્ટ
+રીતે~$\eq$ ન ધરાવતા વાક્યો પૂરતું છે. સામાન્ય FOL નિવેદન માટે જરૂરી
+ભાગફલ પદ-નિદર્શનો કિસ્સો અહીં ઉમેર્યો છે; તેનો આધાર
+\olref[ide]{defn:term-model-factor} અને \olref[ide]{lem:truth} છે.}
+
+\sourcecorrection{OLCO-022}{મૂળની \texttt{compactness-direct.tex},
+પંક્તિઓ~140--142માં \texttt{\string\iftag}નો ફરજિયાત ત્રીજો દલીલ-ભાગ
+ખૂટે છે. અહીં પ્રથમ-ક્રમ શાખા પછી ખાલી ``ના'' શાખા~\texttt{\{\}}
+ઉમેરી છે.}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cpd]{thm:compactness-direct}ની સાબિતી માટે જરૂરી
+સ્વરૂપમાં સત્યતા સહાયક પ્રમેય
+(\olref[fol][com][mod]{lem:truth})ની સંપૂર્ણ સાબિતી લખો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cpd]{thm:compactness-direct}ની સાબિતી માટે જરૂરી
+સ્વરૂપમાં સત્યતા સહાયક પ્રમેય
+(\olref[pl][com][mod]{lem:truth})ની સંપૂર્ણ સાબિતી લખો.
+\end{prob}
+\tagendprob
+
+\end{document}

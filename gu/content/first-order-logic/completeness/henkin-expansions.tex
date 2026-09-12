@@ -1,0 +1,221 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: henkin-expansion
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{hen}
+
+\olsection{હેન્કિન વિસ્તાર}
+
+\begin{explain}
+પૂર્ણતા પ્રમેય સાબિત કરવાના પડકારનો એક ભાગ એ છે કે પૂર્ણ સુસંગત ગણ
+~$\Gamma$માંથી આપણે જે નિદર્શ રચીએ તે~$\Gamma$નાં બધાં પરિમાણિત
+!!{formula}sને સાચાં બનાવવું જોઈએ. તેની ખાતરી કરવા આપણે લિયોન હેન્કિનની
+એક યુક્તિ વાપરીએ છીએ. મૂળભૂત રીતે આ યુક્તિમાં ભાષાને અનંત સંખ્યામાં
+!!{constant}s વડે વિસ્તારીને, એક મુક્ત !!{variable} ધરાવતા દરેક
+!!{formula}~$!A(x)$ માટે આ સ્વરૂપનું સૂત્ર ઉમેરવામાં આવે છે:
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c)$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$},
+જ્યાં~$c$ નવા !!{constant}sમાંનો એક છે. જ્યારે આપણે~$\Gamma$ને
+સંતોષતી !!{structure} રચીશું, ત્યારે આથી દરેક
+\iftag{prvEx}
+{સાચા અસ્તિત્વવાચક વાક્યને સાક્ષી}
+{ખોટા સર્વવાચક વાક્યને પ્રતિદૃષ્ટાંત}
+નવા અચળોમાંથી મળશે તેની ખાતરી થશે.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:lang-exp}
+જો~$\Gamma$ એ~$\Lang L$માં સુસંગત હોય અને~$\Lang L$માં નવા
+!!{constant}s $\Obj d_0$, $\Obj d_1$, \dots{}નો !!a{denumerable} ગણ
+ઉમેરીને~$\Lang L'$ મળે, તો~$\Gamma$ એ~$\Lang L'$માં પણ સુસંગત છે.
+\end{prop}
+
+\begin{defn}[સંતૃપ્ત ગણ]
+ભાષા~$\Lang {L}$નાં !!{formula}sનો ગણ~$\Gamma$ \emph{સંતૃપ્ત} છે જો
+અને માત્ર જો એક મુક્ત !!{variable}~$x$ ધરાવતા દરેક !!{formula}
+~$!A(x) \in \Frm[L]$ માટે એવું !!a{constant}~$c \in \Lang{L}$
+હોય કે
+\iftag{prvEx}
+      {$\lexists[x][!A(x)] \lif !A(c) \in \Gamma$}
+      {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c) \in \Gamma$}.
+\end{defn}
+
+આગલા પ્રમેયની સાબિતીમાં નીચેની વ્યાખ્યા વપરાશે.
+
+\begin{defn}
+\ollabel{defn:henkin-exp}
+~$\Lang L'$ને \olref{prop:lang-exp}માંના જેવું લો. ~ $\Lang L'$નાં એવા
+બધાં !!{formula}s~$!A_i(x_i)$ની કોઈ નિશ્ચિત પરિગણના
+$!A_0(x_0)$, $!A_1(x_1)$, \dots{} લો, જેમાં એક ચલ~($x_i$) મુક્ત આવે
+છે. આપણે~$n$ પર અનુમાન વડે !!{sentence}s~$!D_n$ વ્યાખ્યાયિત કરીએ છીએ.
+
+~$\Lang{L}$માં ઉમેરેલા~$\Obj d_i$ પૈકી જે પહેલું !!{constant}
+~$!A_0(x_0)$માં ન આવતું હોય તેને~$c_0$ લો. ધારો કે $!D_0$, \dots,
+~$!D_{n-1}$ પહેલેથી વ્યાખ્યાયિત થઈ ગયાં છે. હવે નવા !!{constant}s
+~$\Obj d_i$ પૈકી જે પહેલું $!D_0$, \dots,~$!D_{n-1}$માં કે
+~$!A_n(x_n)$માં આવતું ન હોય તેને~$c_n$ લો.
+
+હવે~$!D_{n}$ને નીચેનું !!{formula} લો:
+\iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_{n})] \lif
+  !A_{n}(c_{n})$}{$\lnot\lforall[x_{n}][!A_{n}(x_{n})] \lif \lnot
+  !A_{n}(c_{n})$}.
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:henkin}
+દરેક સુસંગત ગણ~$\Gamma$ને સંતૃપ્ત સુસંગત ગણ~$\Gamma'$ સુધી વિસ્તારી
+શકાય છે.
+\end{lem}
+
+\begin{proof}
+ભાષા~$\Lang{L}$માંના વાક્યોનો સુસંગત ગણ~$\Gamma$ આપેલો હોય, ત્યારે
+નવા !!{constant}sનો !!a{denumerable} ગણ ઉમેરી ભાષાને વિસ્તારીને
+~$\Lang{L'}$ બનાવો. \olref{prop:lang-exp} મુજબ વધુ સમૃદ્ધ ભાષામાં પણ
+~$\Gamma$ સુસંગત રહે છે. આગળ, $!D_i$ને \olref{defn:henkin-exp}માંના
+જેવાં લો. મૂકો
+\begin{align*}
+\Gamma_0 & = \Gamma \\
+\Gamma_{n+1} & = \Gamma_n \cup \{!D_n \}
+\end{align*}
+એટલે કે $\Gamma_{n+1}=\Gamma\cup\{!D_0,\dots,!D_n\}$, અને
+$\Gamma'=\bigcup_{n}\Gamma_n$ લો. સ્પષ્ટ છે કે~$\Gamma'$ સંતૃપ્ત છે.
+
+જો~$\Gamma'$ અસુસંગત હોત, તો કોઈ~$n$ માટે~$\Gamma_n$ અસુસંગત હોત
+(પ્રશ્ન: શા માટે તે સમજાવો). તેથી~$\Gamma'$ સુસંગત છે તેમ બતાવવા
+~$n$ પર અનુમાન વડે દરેક ગણ~$\Gamma_n$ સુસંગત છે તેમ બતાવવું પૂરતું છે.
+
+અનુમાનનો આધાર $\Gamma_0=\Gamma$ સુસંગત છે એ દાવો જ છે, જે પ્રમેયની
+પૂર્વધારણા છે. અનુમાનના પગલા માટે ધારો કે~$\Gamma_{n}$ સુસંગત છે, પરંતુ
+$\Gamma_{n+1}=\Gamma_n\cup\{!D_n\}$ અસુસંગત છે. યાદ રાખો કે~$!D_n$ એ
+\iftag{prvEx}
+{$\lexists[x_{n}][!A_{n}(x_n)] \lif !A_{n}(c_{n})$}
+{$\lnot\lforall[x_{n}][!A_{n}(x_n)] \lif \lnot !A_{n}(c_{n})$},
+જ્યાં~$!A_n(x_n)$ એ~$\Lang{L'}$નું એવું !!a{formula} છે જેમાં માત્ર
+ચલ~$x_n$ મુક્ત છે. આપણે~$c_n$ જે રીતે પસંદ કર્યો છે તે મુજબ (જુઓ
+\olref{defn:henkin-exp}), $c_n$ એ~$!A_n(x_n)$માં કે~$\Gamma_n$માં
+આવતું નથી.
+
+જો $\Gamma_n\cup\{!D_n\}$ અસુસંગત હોય, તો $\Gamma_n\Proves\lnot
+!D_n$, અને તેથી નીચેના બંને દાવા સાચા છે:
+\iftag{prvEx}{
+\[
+\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves \lnot !A_n(c_n)
+\]}{
+\[
+\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]
+\qquad
+\Gamma_n \Proves !A_n(c_n)
+\]}
+~$c_n$ એ~$\Gamma_n$માં કે~$!A_n(x_n)$માં આવતું નથી, તેથી
+\tagrefs{prfAX/{fol:axd:qpr:thm:strong-generalization},prfSC/{fol:seq:qpr:thm:strong-generalization},prfND/{fol:ntd:qpr:thm:strong-generalization},prfTab/{fol:tab:qpr:thm:strong-generalization}}
+લાગુ પડે છે.
+\iftag{prvEx}
+{$\Gamma_n \Proves \lnot !A_n(c_n)$}
+{$\Gamma_n \Proves !A_n(c_n)$}
+માંથી આપણને
+\iftag{prvEx}
+{$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$}
+મળે છે. આમ, આપણી પાસે એકસાથે
+\iftag{prvEx}
+{$\Gamma_n \Proves \lexists[x_n][!A_n(x_n)]$ અને
+$\Gamma_n \Proves \lforall[x_n][\lnot !A_n(x_n)]$}
+{$\Gamma_n \Proves \lnot\lforall[x_n][!A_n(x_n)]$ અને
+$\Gamma_n \Proves \lforall[x_n][!A_n(x_n)]$}
+હોવાથી~$\Gamma_n$ પોતે જ અસુસંગત છે.
+\iftag{prvEx}
+{(નોંધો કે
+\iftag{prvAll}
+{$\lforall[x_n][\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}
+{$\lforall[x_n][\lnot !A_n(x_n)]$ને
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)]$ તરીકે વ્યાખ્યાયિત કરેલું
+  છે અને
+  $\lnot\lexists[x_n][\lnot\lnot !A_n(x_n)] \Proves
+  \lnot\lexists[x_n][!A_n(x_n)]$}.)}{}
+આ વિરોધાભાસ છે:~$\Gamma_n$ સુસંગત હોવાનું ધાર્યું હતું. તેથી
+$\Gamma_n\cup\{!D_n\}$ સુસંગત છે.
+\end{proof}
+
+\sourcecorrection{OLCO-006}{મૂળની \texttt{henkin-expansions.tex},
+પંક્તિ~145ની વિકલ્પી શાખામાં $\lforall[x_n][\lnot !A_n]$માં
+સૂત્ર-ચલનો દલીલ ભાગ~$(x_n)$ ખૂટે છે. તેની બાજુની વ્યાખ્યા અને આ જ
+પંક્તિની બીજી શાખા અનુસાર અહીં $!A_n(x_n)$ પુનઃસ્થાપિત કર્યું છે.}
+
+\begin{explain}
+હવે આપણે બતાવીશું કે સંતૃપ્ત એવા \emph{પૂર્ણ}, સુસંગત ગણોમાં આ ગુણધર્મ
+છે: \iftag{prvAll}{તેમાં સર્વવાચક રીતે પરિમાણિત !!{sentence} હોય જો
+  અને માત્ર જો તેના બધા દૃષ્ટાંતો તેમાં હોય}{}\iftag{defAll,defEx}{}{
+  અને }\iftag{prvEx}{તેમાં અસ્તિત્વવાચક રીતે પરિમાણિત !!{sentence}
+  હોય જો અને માત્ર જો તેનો ઓછામાં ઓછો એક દૃષ્ટાંત તેમાં હોય}{}.
+પૂર્ણ, સુસંગત અને સંતૃપ્ત ગણમાંથી આપણે જે !!{structure} બનાવીશું તે
+ગણનાં બધાં પરિમાણિત વાક્યોને સાચાં બનાવે છે તેમ બતાવવા આ ગુણધર્મ
+વાપરીશું.
+\end{explain}
+
+\sourcecorrection{OLCO-007}{મૂળની \texttt{henkin-expansions.tex},
+પંક્તિઓ~156--159માં અસ્તિત્વવાચક દૃષ્ટાંતોની કલમ પણ
+\texttt{prvAll}થી નિયંત્રિત થાય છે. નીચેના ઔપચારિક પરિણામમાં તે કલમ
+\texttt{prvEx}થી નિયંત્રિત છે; અહીં પણ એ જ યોગ્ય ટૅગ વાપર્યો છે.}
+
+\begin{prop}\ollabel{prop:saturated-instances}
+ધારો કે~$\Gamma$ પૂર્ણ, સુસંગત અને સંતૃપ્ત છે.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ જો અને માત્ર જો ઓછામાં
+  ઓછા એક બંધ પદ~$t$ માટે $!A(t) \in \Gamma$.}{}
+\tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ જો અને માત્ર જો
+  દરેક બંધ પદ~$t$ માટે $!A(t) \in \Gamma$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+  \tagitem{prvEx}{%
+    \iftag{probEx}{પ્રશ્ન.}{પહેલાં ધારો કે $\lexists[x][!A(x)]
+      \in \Gamma$. $\Gamma$ સંતૃપ્ત હોવાથી કોઈ !!{constant}~$c$ માટે
+      $(\lexists[x][!A(x)] \lif !A(c)) \in \Gamma$. હવે
+      \tagrefs{prfAX/{fol:axd:ppr:prop:provability-lif},prfSC/{fol:seq:ppr:prop:provability-lif},prfND/{fol:ntd:ppr:prop:provability-lif},prfTab/{fol:tab:ppr:prop:provability-lif}}, મુદ્દા~(1),
+      અને \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} મુજબ
+      $!A(c) \in \Gamma$.
+
+    બીજી દિશામાં સંતૃપ્તતા જરૂરી નથી: ધારો કે $!A(t) \in \Gamma$.
+    તો
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}}, મુદ્દા~(1) મુજબ
+    $\Gamma \Proves \lexists[x][!A(x)]$. હવે
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-prov-in} મુજબ
+    $\lexists[x][!A(x)] \in \Gamma$.}}{}
+  \tagitem{prvAll}{%
+    \iftag{probAll}{પ્રશ્ન.}{ધારો કે દરેક બંધ પદ~$t$ માટે $!A(t) \in
+      \Gamma$. વિરોધાભાસ મેળવવા ધારો કે $\lforall[x][!A(x)] \notin
+      \Gamma$. $\Gamma$ પૂર્ણ હોવાથી $\lnot\lforall[x][!A(x)] \in
+      \Gamma$. સંતૃપ્તતા મુજબ કોઈ !!{constant}~$c$ માટે
+      \iftag{prvEx}{$(\lexists[x][\lnot !A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}{$(\lnot\lforall[x][!A(x)] \lif \lnot !A(c)) \in
+        \Gamma$}. પૂર્વધારણા મુજબ~$c$ બંધ પદ હોવાથી $!A(c) \in
+      \Gamma$. પરંતુ તેનાથી~$\Gamma$ અસુસંગત બનશે. (પ્રશ્ન: નીચેનો
+      ગણ અસુસંગત છે તેમ બતાવતી !!{derivation} આપો:
+      \[
+      \lnot \lforall[x][!A(x)],
+      \iftag{prvEx}{\lexists[x][\lnot !A(x)] \lif \lnot
+        !A(c)}{\lnot\lforall[x][!A(x)] \lif \lnot
+        !A(c)}, !A(c)
+      \]
+      .)
+
+      ઊલટી દિશામાં સંતૃપ્તતા જરૂરી નથી: ધારો કે
+      $\lforall[x][!A(x)] \in \Gamma$. તો
+      \tagrefs{prfAX/{fol:axd:qpr:prop:provability-quantifiers},prfSC/{fol:seq:qpr:prop:provability-quantifiers},prfND/{fol:ntd:qpr:prop:provability-quantifiers},prfTab/{fol:tab:qpr:prop:provability-quantifiers}}, મુદ્દા~(2) મુજબ
+      $\Gamma \Proves !A(t)$. \olref[ccs]{prop:ccs} મુજબ
+      $!A(t) \in \Gamma$ મળે છે.}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\end{document}

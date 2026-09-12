@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-08T02:06:13.626341+00:00",
+  "checkpoint_utc": "2026-09-10T00:07:52.460610+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 122,
+  "translated_units": 134,
   "publicly_verified_release_units": 122,
   "publicly_verified_source_checkpoint_units": 122,
   "total_units": 722,
-  "aligned_linguistic_blocks": 1281,
-  "source_math_spans_verified": 6629,
+  "aligned_linguistic_blocks": 1435,
+  "source_math_spans_verified": 7582,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 1281,
-    "samples": 591,
+    "exact_block_reviews": 1435,
+    "samples": 668,
     "independent_native_certification": false,
-    "status": "passed_for_current_122_unit_scope"
+    "status": "passed_for_current_134_unit_scope"
   },
   "source_corrections": {
-    "count": 71,
+    "count": 93,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -89,21 +89,43 @@
       "OLAX-015",
       "OLAX-016",
       "OLAX-017",
-      "OLAX-018"
+      "OLAX-018",
+      "OLCO-001",
+      "OLCO-002",
+      "OLCO-003",
+      "OLCO-004",
+      "OLCO-005",
+      "OLCO-006",
+      "OLCO-007",
+      "OLCO-008",
+      "OLCO-009",
+      "OLCO-010",
+      "OLCO-011",
+      "OLCO-012",
+      "OLCO-013",
+      "OLCO-014",
+      "OLCO-015",
+      "OLCO-016",
+      "OLCO-017",
+      "OLCO-018",
+      "OLCO-019",
+      "OLCO-020",
+      "OLCO-021",
+      "OLCO-022"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/axiomatic-deduction.html",
-    "bytes": 2962710,
-    "sha256": "b147e450a13b39e804a80c18c6e8b4f0d882177d5d44935bb797f718d58ac3d7",
-    "source_units_covered": 122,
-    "axiomatic_deduction_units_complete": 14,
-    "rendered_axiomatic_deduction_sections": 13,
-    "logic_profile": "classical first-order axiomatic deduction with identity",
-    "mathml_nodes": 6309,
-    "mathml_tables": 635,
-    "block_mathml_nodes": 412,
+    "path": "reader/completeness.html",
+    "bytes": 3353740,
+    "sha256": "3270ff0f7b32d9ce6f0382cfa19f5758ec3b9abcd48a92f6812e55eb5739b2a9",
+    "source_units_covered": 134,
+    "completeness_units_complete": 12,
+    "rendered_completeness_sections": 11,
+    "logic_profile": "classical first-order completeness with identity",
+    "mathml_nodes": 7278,
+    "mathml_tables": 640,
+    "block_mathml_nodes": 430,
     "proof_representation_entries": 208,
     "proof_representation_kinds": {
       "axiomatic_derivation": 6,
@@ -137,22 +159,20 @@
     "truth_tables": 5,
     "axiomatic_derivation_tables": 6,
     "images": 13,
-    "unique_ids": 507,
+    "unique_ids": 558,
     "broken_internal_links": 0,
-    "axiomatic_deduction_section_ids": [
-      "fol:axd:rul:sec",
-      "fol:axd:prp:sec",
-      "fol:axd:qua:sec",
-      "fol:axd:pro:sec",
-      "fol:axd:prq:sec",
-      "fol:axd:ptn:sec",
-      "fol:axd:ded:sec",
-      "fol:axd:ddq:sec",
-      "fol:axd:prv:sec",
-      "fol:axd:ppr:sec",
-      "fol:axd:qpr:sec",
-      "fol:axd:sou:sec",
-      "fol:axd:ide:sec"
+    "completeness_section_ids": [
+      "fol:com:int:sec",
+      "fol:com:out:sec",
+      "fol:com:ccs:sec",
+      "fol:com:hen:sec",
+      "fol:com:lin:sec",
+      "fol:com:mod:sec",
+      "fol:com:ide:sec",
+      "fol:com:cth:sec",
+      "fol:com:com:sec",
+      "fol:com:cpd:sec",
+      "fol:com:dls:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -225,12 +245,34 @@
       "OLAX-018",
       "OLAX-014",
       "OLAX-013",
-      "OLAX-015"
+      "OLAX-015",
+      "OLCO-001",
+      "OLCO-002",
+      "OLCO-003",
+      "OLCO-004",
+      "OLCO-005",
+      "OLCO-006",
+      "OLCO-007",
+      "OLCO-008",
+      "OLCO-021",
+      "OLCO-009",
+      "OLCO-010",
+      "OLCO-011",
+      "OLCO-012",
+      "OLCO-013",
+      "OLCO-014",
+      "OLCO-015",
+      "OLCO-016",
+      "OLCO-017",
+      "OLCO-018",
+      "OLCO-019",
+      "OLCO-022",
+      "OLCO-020"
     ],
     "literal_macro_correction_references": {
       "sFmla": 2,
       "item": 1,
-      "iftag": 1,
+      "iftag": 4,
       "top": 1
     },
     "gujarati_character_inventory_preserved": true,
@@ -243,12 +285,12 @@
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/axiomatic-deduction-html-qa.json",
-      "sha256": "e9f3ccfc882ef9456d9107644e1d9269044a2c4e4bd1031222107d341701171c"
+      "path": "build/completeness-html-qa.json",
+      "sha256": "828750529ae2fbff78270be0ea777e3ba4412968f8a0cfd3235f49c2bc672dad"
     },
     "prepared_tex": {
-      "path": "build/axiomatic-deduction-html.tex",
-      "sha256": "59752fac021244df3a9f49ed11fa4fa55845a12f7d8b7718b6bbf5f28bf32553"
+      "path": "build/completeness-html.tex",
+      "sha256": "0e48c584ed999bacf12a749b1db917daae0778b8cd0e111a324967db308f82cd"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
@@ -259,20 +301,20 @@
     "intentionally_scrollable_block_mathml_nodes": 3
   },
   "pdf": {
-    "path": "build/gu-axiomatic-deduction.pdf",
-    "bytes": 1402796,
-    "sha256": "66379898ed8eb34bfb510d310275264102229928165e26f11a8fd7846e6265bc",
-    "pages": 158,
+    "path": "build/gu-completeness.pdf",
+    "bytes": 1571445,
+    "sha256": "004bce94570b7f986addad0188f6970d86e2a4f9b5ac3a256f4e96df194d3a6a",
+    "pages": 174,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "પૂર્ણતા પ્રમેય સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 158,
+    "nonempty_extracted_text_pages": 174,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_012.json",
+    "build_receipt": "BUILD_RECEIPT_013.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -352,9 +394,17 @@
       "corrected_math": 483,
       "semantic": 56,
       "exact_block_reviews": 120
+    },
+    "013": {
+      "units": 12,
+      "blocks": 154,
+      "math": 953,
+      "corrected_math": 970,
+      "semantic": 77,
+      "exact_block_reviews": 154
     }
   },
-  "status": "122_unit_source_html_pdf_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "134_unit_source_html_pdf_epub_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_122_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -397,14 +447,14 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "65802328bcbcaf6a5328fcc82d16dfc9cec3a233c3a34140a059dc2484135406",
+    "sha256": "4275d48bcd35a3935ab6734c1ce74eaf34bbaed4570218f93c1eee52a9f5df63",
     "status": "passed",
     "coverage": {
-      "decisions": 200,
-      "occurrences": 208
+      "decisions": 232,
+      "occurrences": 240
     },
     "reader_locators": {
-      "available": 207,
+      "available": 239,
       "pending": 0,
       "not_applicable": 1
     }
@@ -515,5 +565,69 @@
     "html_qa": "HTML_QA_012.json",
     "pdf_qa": "PDF_QA_012.json",
     "cumulative_gate": "CUMULATIVE_QA_012.json"
+  },
+  "batch_013": {
+    "draft_units": 12,
+    "remaining_units": [],
+    "structural_parity": "passed_after_22_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLCO-001",
+      "OLCO-002",
+      "OLCO-003",
+      "OLCO-004",
+      "OLCO-005",
+      "OLCO-006",
+      "OLCO-007",
+      "OLCO-008",
+      "OLCO-009",
+      "OLCO-010",
+      "OLCO-011",
+      "OLCO-012",
+      "OLCO-013",
+      "OLCO-014",
+      "OLCO-015",
+      "OLCO-016",
+      "OLCO-017",
+      "OLCO-018",
+      "OLCO-019",
+      "OLCO-020",
+      "OLCO-021",
+      "OLCO-022"
+    ],
+    "linguistic_blocks": 154,
+    "math_spans": 953,
+    "corrected_math_spans": 970,
+    "semantic_samples": "passed_154_exact_block_reviews_and_77_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_tableau_derivation_link_asset_and_character_qa_plus_reproducible_174_page_pdf_all_page_visual_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_430_block_mathml_nodes; three wide tableaux are horizontally scrollable and none are clipped",
+    "untranslated_prose": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+    "translation_decisions": "passed_json_schema_and_239_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
+    "html_qa": "HTML_QA_013.json",
+    "pdf_qa": "PDF_QA_013.json",
+    "cumulative_gate": "CUMULATIVE_QA_013.json",
+    "epub": "passed_reflowable_epub_3_3_with_7278_native_mathml_nodes_145_navigation_links_zero_epubcheck_messages_byte_identical_cold_replay_and_silent_runtime_qa",
+    "epub_qa": "EPUB_QA_013.json"
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Completeness.epub",
+    "bytes": 445804,
+    "sha256": "991e26b9df64a6c4afa18781935772ff20f2ae5f707765c01e5cd5609d052c6e",
+    "version": "EPUB 3.3",
+    "layout": "reflowable",
+    "language": "gu-IN",
+    "direction": "ltr",
+    "coverage": {
+      "translated": 134,
+      "total": 722,
+      "units": "OLP-0004–0137"
+    },
+    "complete_edition": false,
+    "native_mathml_nodes": 7278,
+    "navigation_links": 145,
+    "described_svg_figures": 13,
+    "epubcheck_messages": 0,
+    "cold_replay_byte_identical": true,
+    "runtime_status": "passed_silent_exact_xhtml_runtime_inspection",
+    "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa"
   }
 }

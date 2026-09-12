@@ -1,0 +1,103 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{lin}}
+      {\olfileid{pl}{com}{lin}}
+
+\olsection{લિન્ડનબાઉમનું સહાયક પ્રમેય}
+
+\begin{explain}
+હવે આપણે એવું સહાયક પ્રમેય સાબિત કરીશું જે બતાવે છે કે
+!!{sentence}sનો કોઈ પણ સુસંગત ગણ એવા કોઈ વાક્યગણમાં સમાયેલો છે જે
+માત્ર સુસંગત જ નહિ, પણ !!{complete} પણ છે. સાબિતીમાં એક સમયે એક
+!!{sentence} ઉમેરીને દરેક પગલે ગણ સુસંગત રહે તેની ખાતરી કરવામાં આવે
+છે. આ એવું કરીએ છીએ કે દરેક~$!A$ માટે કોઈક તબક્કે કાં તો~$!A$ અથવા
+$\lnot !A$ ઉમેરાય. પછી આ રચનાના બધા તબક્કાઓના સંઘમાં કાં તો~$!A$ અથવા
+તેનો નિષેધ~$\lnot !A$ હોય છે અને તેથી તે પૂર્ણ છે. તે સુસંગત પણ છે,
+કારણ કે દરેક તબક્કે અસુસંગતતા દાખલ ન થાય તેની આપણે ખાતરી કરીએ છીએ.
+\end{explain}
+
+\begin{lem}[લિન્ડનબાઉમનું સહાયક પ્રમેય]
+\ollabel{lem:lindenbaum} ભાષા~$\Lang{L}$ના દરેક સુસંગત ગણ~$\Gamma$ને
+!!a{complete} અને સુસંગત ગણ~$\Gamma^*$ સુધી વિસ્તારી શકાય છે.
+\end{lem}
+
+\begin{proof}
+ધારો કે~$\Gamma$ સુસંગત છે. ~ $\Lang L$નાં બધાં !!{sentence}sની
+કોઈ પરિગણના $!A_0$, $!A_1$, \dots{} લો. $\Gamma_0=\Gamma$ વ્યાખ્યાયિત
+કરીને મૂકો
+\[
+\Gamma_{n+1} =
+\begin{cases}
+\Gamma_n \cup \{ !A_n \} & \textrm{જો $\Gamma_n \cup \{!A_n\}$
+  સુસંગત હોય;} \\
+\Gamma_n \cup \{ \lnot !A_n \} & \textrm{અન્યથા.}
+\end{cases}
+\]
+અને $\Gamma^*=\bigcup_{n\geq 0}\Gamma_n$ લો.
+
+દરેક~$\Gamma_n$ સુસંગત છે: વ્યાખ્યા મુજબ~$\Gamma_0$ સુસંગત છે. જો
+$\Gamma_{n+1}=\Gamma_n\cup\{!A_n\}$ હોય, તો તેનું કારણ પાછળનો ગણ
+સુસંગત છે તે છે. જો તે સુસંગત ન હોય, તો
+$\Gamma_{n+1}=\Gamma_n\cup\{\lnot !A_n\}$. આપણે ચકાસવું પડશે કે
+$\Gamma_n\cup\{\lnot !A_n\}$ સુસંગત છે. ધારો કે તે સુસંગત નથી. તો
+$\Gamma_n\cup\{!A_n\}$ અને $\Gamma_n\cup\{\lnot !A_n\}$ \emph{બંને}
+અસુસંગત છે. આનો અર્થ નીચેના પરિણામ મુજબ~$\Gamma_n$ અસુસંગત થાય:
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:prv:prop:provability-exhaustive},
+    prfSC/{fol:seq:prv:prop:provability-exhaustive},
+    prfND/{fol:ntd:prv:prop:provability-exhaustive},
+    prfTab/{fol:tab:prv:prop:provability-exhaustive}}}{%
+  \tagrefs{prfAX/{pl:axd:prv:prop:provability-exhaustive},
+    prfSC/{pl:seq:prv:prop:provability-exhaustive},
+    prfND/{pl:ntd:prv:prop:provability-exhaustive},
+    prfTab/{pl:tab:prv:prop:provability-exhaustive}}},
+જે અનુમાનની પૂર્વધારણાનો વિરોધાભાસ છે.
+
+દરેક~$n$ અને દરેક $i<n$ માટે $\Gamma_i\subseteq\Gamma_n$. આ~$n$ પરના
+સરળ અનુમાનથી ફલિત થાય છે. $n=0$ માટે કોઈ $i<0$ નથી, તેથી દાવો આપોઆપ
+સાચો છે. અનુમાનના પગલા માટે ધારો કે તે~$n$ માટે સાચો છે. જો $i<n+1$
+હોય, તો $\Gamma_i\subseteq\Gamma_{n+1}$ એવું બતાવીએ. રચના મુજબ
+$\Gamma_{n+1}=\Gamma_n\cup\{!A_n\}$ અથવા
+$=\Gamma_n\cup\{\lnot !A_n\}$ છે. તેથી
+$\Gamma_n\subseteq\Gamma_{n+1}$. જો $i<n+1$, તો અનુમાનની પૂર્વધારણા
+મુજબ $i<n$ હોય ત્યારે $\Gamma_i\subseteq\Gamma_n$, અને $i=n$ હોય
+ત્યારે સ્વાભાવિક રીતે $\Gamma_n\subseteq\Gamma_n$. હવે~$\subseteq$ની
+પરંપરિતતા મુજબ $\Gamma_i\subseteq\Gamma_{n+1}$ મળે છે.
+
+આના પરથી~$\Gamma^*$ સુસંગત છે તેમ ફલિત થાય છે. તેનું કારણ આ છે:
+કોઈ સાન્ત $\Gamma'\subseteq\Gamma^*$ લો. જો~$\Gamma'$ ખાલી હોય, તો તે
+સુસંગત છે. અન્યથા, દરેક $!B\in\Gamma'$ કોઈક~$i$ માટે~$\Gamma_i$માં
+પણ હોય છે. આ સાન્ત સંખ્યામાં મળતા સૂચકોમાં સૌથી મોટો~$n$ લો. $i\le n$ હોય ત્યારે
+$\Gamma_i\subseteq\Gamma_n$ હોવાથી દરેક $!B\in\Gamma'$ પણ
+$\in\Gamma_n$, એટલે $\Gamma'\subseteq\Gamma_n$; અને~$\Gamma_n$
+સુસંગત છે. આમ, દરેક સાન્ત ઉપગણ $\Gamma'\subseteq\Gamma^*$ સુસંગત છે. હવે
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:ptn:prop:proves-compact},
+    prfSC/{fol:seq:ptn:prop:proves-compact},
+    prfND/{fol:ntd:ptn:prop:proves-compact},
+    prfTab/{fol:tab:ptn:prop:proves-compact}}}{%
+  \tagrefs{prfAX/{pl:axd:ptn:prop:proves-compact},
+    prfSC/{pl:seq:ptn:prop:proves-compact},
+    prfND/{pl:ntd:ptn:prop:proves-compact},
+    prfTab/{pl:tab:ptn:prop:proves-compact}}} મુજબ~$\Gamma^*$ સુસંગત
+છે.
+
+\sourcecorrection{OLCO-008}{મૂળની \texttt{lindenbaums-lemma.tex},
+પંક્તિઓ~82--84માં મનસ્વી સાન્ત~$\Gamma'$માંથી મળતા સૂચકોમાં સૌથી મોટો
+સૂચક લેવામાં આવે છે, પરંતુ ખાલી~$\Gamma'$ માટે એવો સૂચક હોતો નથી.
+અહીં ખાલી કિસ્સો અલગથી નોંધ્યો છે.}
+
+~$\Frm[L]$નું દરેક !!{sentence}~$\Gamma^*$ને વ્યાખ્યાયિત કરવા વપરાયેલી
+યાદીમાં આવે છે. જો $!A_n\notin\Gamma^*$ હોય, તો તેનું કારણ
+$\Gamma_n\cup\{!A_n\}$ અસુસંગત હતું એ છે. પરંતુ પછી $\lnot !A_n\in
+\Gamma^*$; તેથી~$\Gamma^*$ !!{complete} છે.
+\end{proof}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-08T01:12:00.084983+00:00. This focused queue contains 85 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-09T21:48:40.987988+00:00. This focused queue contains 95 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -377,8 +377,8 @@ Generated 2026-09-08T01:12:00.084983+00:00. This focused queue contains 85 high-
 
 - **Why prioritized:** The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does “વિધાનચલ / આણ્વિક સૂત્ર” express “propositional variable / atomic formula” with the scope stated in this rationale: The sources directly use p, q and r for propositions and આણ્વિક વિધાન for atomic proposition; the formula and variable compounds follow the edition's established સૂત્ર and ચલ. If not, which attested form and inflection should replace it, and at which listed target locations?
-- **Source:** `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:113`
-- **Gujarati:** `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:111`
+- **Source:** `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:40`
+- **Gujarati:** `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:39`
 
 ## GU-T091: syntax / semantics → વાક્યરચના / અર્થવિચાર
 
@@ -412,8 +412,8 @@ Generated 2026-09-08T01:12:00.084983+00:00. This focused queue contains 85 high-
 
 - **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does “સત્યમૂલ્ય-નિયુક્તિ / મૂલ્યાંકન વિધેય” express “valuation / evaluation function” with the scope stated in this rationale: The sources directly support truth values and truth-functional determination. These labels distinguish the initial assignment from its inductive extension. If not, which attested form and inflection should replace it, and at which listed target locations?
-- **Source:** `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22`
-- **Gujarati:** `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22`
+- **Source:** `upstream/content/first-order-logic/completeness/outline.tex:155`
+- **Gujarati:** `gu/content/first-order-logic/completeness/outline.tex:163`
 
 ## GU-T098: satisfaction / satisfiable / unsatisfiable → સંતોષ / સંતોષ્ય / અસંતોષ્ય
 
@@ -426,8 +426,8 @@ Generated 2026-09-08T01:12:00.084983+00:00. This focused queue contains 85 high-
 
 - **Why prioritized:** The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does “તાર્કિક ફલિતતા / અર્થાનુસારી ફલિતતા” express “entailment / semantic consequence” with the scope stated in this rationale: The exact passage describes what follows તાર્કિક રીતે from given propositions; અર્થાનુસારી marks the semantic relation when contrast is required. If not, which attested form and inflection should replace it, and at which listed target locations?
-- **Source:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66`
-- **Gujarati:** `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:62`
+- **Source:** `upstream/content/first-order-logic/completeness/introduction.tex:18`
+- **Gujarati:** `gu/content/first-order-logic/completeness/introduction.tex:17`
 
 ## GU-T101: local determination / semantic deduction theorem → સ્થાનિક નિર્ધારણ / અર્થાનુસારી નિગમન પ્રમેય
 
@@ -596,3 +596,73 @@ Generated 2026-09-08T01:12:00.084983+00:00. This focused queue contains 85 high-
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ’ accurately express ‘proof-theoretic notions / proof-theoretic property’ with the scope stated here: સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18`
 - **Gujarati:** `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:23`
+
+## GU-T127: model / model existence result → નિદર્શ / સંરચના-અસ્તિત્વનું પરિણામ
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘નિદર્શ / સંરચના-અસ્તિત્વનું પરિણામ’ accurately express ‘model / model existence result’ with the scope stated here: નિદર્શ is the established edition term for a structure satisfying a theory, while સંરચના is retained for the underlying interpretation. The checked canon supports logical consequence, formal systems and structure, though the exact model-theoretic compound is contextual rather than directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/compactness-direct.tex:22`
+- **Gujarati:** `gu/content/first-order-logic/completeness/compactness-direct.tex:20`
+
+## GU-T128: complete set → પૂર્ણ ગણ
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પૂર્ણ ગણ’ accurately express ‘complete set’ with the scope stated here: The canon directly uses પૂર્ણ for a formal system that leaves no sentence undecided. Here the displayed definition fixes the set-level sense: for every sentence, the set contains it or its negation. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/outline.tex:80`
+- **Gujarati:** `gu/content/first-order-logic/completeness/outline.tex:74`
+
+## GU-T129: saturated set / Henkin expansion / witness / counterexample → સંતૃપ્ત ગણ / હેન્કિન વિસ્તાર / સાક્ષી / પ્રતિદૃષ્ટાંત
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંતૃપ્ત ગણ / હેન્કિન વિસ્તાર / સાક્ષી / પ્રતિદૃષ્ટાંત’ accurately express ‘saturated set / Henkin expansion / witness / counterexample’ with the scope stated here: Quantifiers, formal derivation and finite proof steps are directly supported. સંતૃપ્ત and the Henkin name are contextual technical renderings; સાક્ષી is used for a true existential and પ્રતિદૃષ્ટાંત for a false universal, with the displayed Henkin implications controlling their exact roles. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/outline.tex:140`
+- **Gujarati:** `gu/content/first-order-logic/completeness/outline.tex:143`
+
+## GU-T130: Lindenbaum's Lemma → લિન્ડનબાઉમનું સહાયક પ્રમેય
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘લિન્ડનબાઉમનું સહાયક પ્રમેય’ accurately express ‘Lindenbaum's Lemma’ with the scope stated here: The personal name is transliterated and lemma is rendered with the edition's established સહાયક પ્રમેય. The checked canon supports theorem, proof and formal derivation register but does not directly attest the eponym. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:13`
+- **Gujarati:** `gu/content/first-order-logic/completeness/lindenbaums-lemma.tex:13`
+
+## GU-T131: term model / Truth Lemma → પદ-નિદર્શ / સત્યતા સહાયક પ્રમેય
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પદ-નિદર્શ / સત્યતા સહાયક પ્રમેય’ accurately express ‘term model / Truth Lemma’ with the scope stated here: પદ and નિદર્શ are established edition components; the exact compound names the model whose domain consists of closed terms. સત્યતા સહાયક પ્રમેય states the lemma's role, and its displayed biconditional fixes truth in the constructed model as equivalent to membership in the completed set. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/compactness-direct.tex:28`
+- **Gujarati:** `gu/content/first-order-logic/completeness/compactness-direct.tex:25`
+
+## GU-T132: factoring / representative / well defined → ભાગફલન / પ્રતિનિધિ / સુવ્યાખ્યાયિત
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ભાગફલન / પ્રતિનિધિ / સુવ્યાખ્યાયિત’ accurately express ‘factoring / representative / well defined’ with the scope stated here: The visually checked relation canon directly supports equivalence relations, and prior decision GU-T026 directly supports સામ્ય વર્ગ. These three forms describe forming the quotient, choosing a class representative and proving the resulting interpretations independent of that choice; the exact compounds remain open. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/identity.tex:23`
+- **Gujarati:** `gu/content/first-order-logic/completeness/identity.tex:21`
+
+## GU-T133: finitely satisfiable → સાન્ત રીતે સંતોષ્ય
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાન્ત રીતે સંતોષ્ય’ accurately express ‘finitely satisfiable’ with the scope stated here: સાન્ત is the established edition form for finite and સંતોષ્ય is governed by GU-T098. The adverbial construction keeps the definition distinct from saying that the whole set is finite: every finite subset is satisfiable. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/introduction.tex:59`
+- **Gujarati:** `gu/content/first-order-logic/completeness/introduction.tex:59`
+
+## GU-T134: L\"owenheim--Skolem theorem → લેવેનહાઇમ--સ્કોલેમ પ્રમેય
+
+- **Why prioritized:** The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘લેવેનહાઇમ--સ્કોલેમ પ્રમેય’ accurately express ‘L\"owenheim--Skolem theorem’ with the scope stated here: The theorem name is transliterated; ગણનીય and અગણનીય are directly attested in the checked canon and governed by GU-T053. The theorem statement itself keeps OpenLogic's enumerable scope explicit as finite or denumerable. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/introduction.tex:71`
+- **Gujarati:** `gu/content/first-order-logic/completeness/introduction.tex:66`
+
+## GU-T135: infinitesimal → અનંતસૂક્ષ્મ
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અનંતસૂક્ષ્મ’ accurately express ‘infinitesimal’ with the scope stated here: The compound expresses a nonzero magnitude smaller than every positive rational bound in the example. The checked mathematics passages support infinite, rational and real-number register, but do not directly attest this exact term. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/compactness.tex:132`
+- **Gujarati:** `gu/content/first-order-logic/completeness/compactness.tex:139`
+
+## GU-T136: axiomatizable / decidable → સ્વયંસિદ્ધીકરણીય / નિર્ણેય
+
+- **Why prioritized:** No checked authority fully settled this exact technical label; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સ્વયંસિદ્ધીકરણીય / નિર્ણેય’ accurately express ‘axiomatizable / decidable’ with the scope stated here: The checked canon directly supports axiomatic systems, finite proof procedures and formal decision-oriented reasoning. The derived adjectives state respectively that a theory can be axiomatized and that sentence membership or truth is decidable; neither exact form is directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:30`
+- **Gujarati:** `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:29`

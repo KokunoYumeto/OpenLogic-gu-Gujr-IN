@@ -1,0 +1,35 @@
+\def\gueditiontitle{પૂર્ણતા પ્રમેય સહિત ઓપન લોજિક ગુજરાતી}
+\def\gueditionheading{%
+  ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+  અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન,
+  સ્વાભાવિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ અને પૂર્ણતા}
+\def\gueditiondescription{%
+  આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે શાસ્ત્રીય પ્રથમ-ક્રમ તર્કશાસ્ત્રનું
+  સંપૂર્ણ પૂર્ણતા-પ્રકરણ ઉમેર્યું છે. તેમાં પૂર્ણ સુસંગત ગણો, હેન્કિન
+  વિસ્તાર, લિન્ડનબાઉમનું સહાયક પ્રમેય, પદ-નિદર્શ, તાદાત્મ્ય માટેનું
+  ભાગફલન, પૂર્ણતા અને સઘનતા પ્રમેયો તથા લેવેનહાઇમ--સ્કોલેમ પ્રમેયનો
+  સમાવેશ છે.}
+\def\gueditioncount{૧૩૪}
+\def\gueditionbodyfile{build/completeness-body.tex}
+\def\gueditionlabelsfile{build/completeness-available-labels.tex}
+\def\gueditioncorrectionids{%
+  OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+  OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+  OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006,
+  OLND-001થી OLND-006, OLTAB-001થી OLTAB-012,
+  OLAX-001થી OLAX-018 અને OLCO-001થી OLCO-022 સુધીની}
+\def\gueditioneditorial{%
+  પૂર્ણતાના નવા પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી
+  પસંદ કરી છે. પૂર્ણતા પ્રમેયના બંને નિરૂપણ, હેન્કિન અને લિન્ડનબાઉમ
+  રચનાઓ, સાદા તથા ભાગફલ પદ-નિદર્શો અને સઘનતાની બંને સાબિતીઓ સામેલ
+  છે. મૂળ પાઠની બાવીસ ઓળખેલી વ્યાકરણિક, ઔપચારિક અને સાબિતી-અવકાશની
+  ખામીઓ પારદર્શક નોંધો સાથે મર્યાદિત રીતે સુધારી છે.}
+% Completeness uses a few first-order notation helpers that are not needed by
+% the preceding tableaux chapters.  Define them before the shared preamble is
+% loaded; the definitions are deliberately compatible with the upstream
+% notation profile.
+\providecommand{\Domain}[1]{\left|\mathfrak{#1}\right|}
+\ProvideDocumentCommand{\Trm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Trm}}{\mathrm{Trm}(\mathcal{#1})}}
+\providecommand{\num}[1]{\overline{#1}}
+\input{gu-tableaux.tex}

@@ -1,0 +1,262 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-09T21:37:56.387354+00:00",
+  "boundary": "First-order Logic completeness OLP-0126–0137 under the complete classical first-order profile",
+  "units": [
+    {
+      "unit_id": "OLP-0126",
+      "source_sha256": "4d9dd7fc873888fde7d70bf45fa122465858092c4f7a979741067b3bda88eb18",
+      "target_sha256": "b407d8168a9b5166328c82df878299e2ae9042ae2a14a289b3c684c6cf492bb5",
+      "source_bytes": 653,
+      "target_bytes": 685,
+      "aligned_blocks": 17,
+      "raw_source_blocks": 17,
+      "linguistic_blocks": 1,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0127",
+      "source_sha256": "e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498",
+      "target_sha256": "9deed047b56ec031023874148b1cd98f81de7b783715e6c96fa85ed445b324fb",
+      "source_bytes": 3699,
+      "target_bytes": 7718,
+      "aligned_blocks": 10,
+      "raw_source_blocks": 10,
+      "linguistic_blocks": 5,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0128",
+      "source_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
+      "target_sha256": "5f9f5b5bc389566820a7a13c338771f5fd1614f5c19a9552aac872ea620cef64",
+      "source_bytes": 9362,
+      "target_bytes": 18022,
+      "aligned_blocks": 16,
+      "raw_source_blocks": 16,
+      "linguistic_blocks": 11,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0129",
+      "source_sha256": "6473c646a48e854478ef1388de877eb61bcd8b912179347703f86b655de0ae4f",
+      "target_sha256": "55fb93bd50013cb73cdafad6a06cdeab3d34509eec9d2a2826c833e46c4fe89a",
+      "source_bytes": 8902,
+      "target_bytes": 11790,
+      "aligned_blocks": 27,
+      "raw_source_blocks": 27,
+      "linguistic_blocks": 21,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0130",
+      "source_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
+      "target_sha256": "681a89524550a5b248a4821a8b9dfe5993ce283a229ce8b2bebcc60b4293a1d3",
+      "source_bytes": 8756,
+      "target_bytes": 13897,
+      "aligned_blocks": 23,
+      "raw_source_blocks": 23,
+      "linguistic_blocks": 18,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0131",
+      "source_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
+      "target_sha256": "f935fb4f466f9b2fecfaec834d7d4429cef602559072c463d694507ab6e11b69",
+      "source_bytes": 4187,
+      "target_bytes": 7084,
+      "aligned_blocks": 13,
+      "raw_source_blocks": 13,
+      "linguistic_blocks": 8,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0132",
+      "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+      "target_sha256": "b5b8005342e5e6c3e6605a5b43f8a64acf3f8e2355ee51c97708befa54196365",
+      "source_bytes": 11011,
+      "target_bytes": 17913,
+      "aligned_blocks": 30,
+      "raw_source_blocks": 30,
+      "linguistic_blocks": 21,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0133",
+      "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+      "target_sha256": "9fed54ac2824ca92bc5828157f54e8314961039ed8e7afc4eb98c3cb16d72a93",
+      "source_bytes": 7831,
+      "target_bytes": 12683,
+      "aligned_blocks": 21,
+      "raw_source_blocks": 21,
+      "linguistic_blocks": 17,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0134",
+      "source_sha256": "2e28c82c4787c75fc159295bf38adfb4aa5e1dff0025c237cd750bfc33964ecb",
+      "target_sha256": "9e809d33b143be7596c61d732e127fd4b4890df86619a8b19807a8a6236aae3c",
+      "source_bytes": 4643,
+      "target_bytes": 7132,
+      "aligned_blocks": 16,
+      "raw_source_blocks": 16,
+      "linguistic_blocks": 11,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0135",
+      "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+      "target_sha256": "fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858",
+      "source_bytes": 8852,
+      "target_bytes": 16322,
+      "aligned_blocks": 18,
+      "raw_source_blocks": 18,
+      "linguistic_blocks": 13,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0136",
+      "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
+      "target_sha256": "46656017e4ea4b32f5374388da42ede76b1796ac27f0dbb6088a46b3a3326319",
+      "source_bytes": 5397,
+      "target_bytes": 12115,
+      "aligned_blocks": 26,
+      "raw_source_blocks": 25,
+      "linguistic_blocks": 21,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0137",
+      "source_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
+      "target_sha256": "f10ba30be44d7dd4ca2da7dec80f9f23ab5a71117db2a6ecce1b515d66754549",
+      "source_bytes": 2595,
+      "target_bytes": 5446,
+      "aligned_blocks": 11,
+      "raw_source_blocks": 11,
+      "linguistic_blocks": 7,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 154,
+  "aligned_blocks": 228,
+  "source_math_spans": 953,
+  "corrected_source_math_spans": 970,
+  "source_corrections": [
+    {
+      "finding_id": "OLCO-001",
+      "unit_id": "OLP-0127",
+      "handling": "Removed the duplicated article in translation and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-002",
+      "unit_id": "OLP-0127",
+      "handling": "Rendered denumerable as an adjective modifying one structure and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-003",
+      "unit_id": "OLP-0128",
+      "handling": "Removed the atomic-only restriction so the outline matches the complete-set definition and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-004",
+      "unit_id": "OLP-0128",
+      "handling": "Used the intended plural phrase all sentences and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-005",
+      "unit_id": "OLP-0128",
+      "handling": "Used Gamma-star as the theory controlling equality classes and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-006",
+      "unit_id": "OLP-0130",
+      "handling": "Restored A_n(x_n), matching the adjacent branch and definition, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-007",
+      "unit_id": "OLP-0130",
+      "handling": "Changed the clause gate to prvEx, matching the formal proposition below, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-008",
+      "unit_id": "OLP-0131",
+      "handling": "Separated the empty subset case before selecting a largest index and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-009",
+      "unit_id": "OLP-0132",
+      "handling": "Restricted all four occurrences to closed terms and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-010",
+      "unit_id": "OLP-0132",
+      "handling": "Restored B as the quantified matrix and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-011",
+      "unit_id": "OLP-0133",
+      "handling": "Removed the stray comma and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-012",
+      "unit_id": "OLP-0133",
+      "handling": "Used R(t-prime) in the alternative-representative premise and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-013",
+      "unit_id": "OLP-0133",
+      "handling": "Cited the value lemma together with the identity interpretation and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-014",
+      "unit_id": "OLP-0135",
+      "handling": "Stated the two variable types explicitly and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-015",
+      "unit_id": "OLP-0135",
+      "handling": "Introduced a fresh structure N and separately stated that N satisfies Gamma union Delta, then added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-016",
+      "unit_id": "OLP-0135",
+      "handling": "Stated that every relevant sentence occurring in Delta-zero has index k below K and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-017",
+      "unit_id": "OLP-0135",
+      "handling": "Separated the empty Delta-prime case before selecting the maximum and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-018",
+      "unit_id": "OLP-0136",
+      "handling": "Added the finite-satisfiability arguments establishing false is absent, true is present and negation membership complements membership, then added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-019",
+      "unit_id": "OLP-0136",
+      "handling": "Added the quotient term-model case, including finite-satisfiability arguments for well-definedness, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-020",
+      "unit_id": "OLP-0137",
+      "handling": "Used the expanded language L-prime, whose term set remains countable, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-021",
+      "unit_id": "OLP-0132",
+      "handling": "Added the required empty false branch and an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLCO-022",
+      "unit_id": "OLP-0136",
+      "handling": "Added the required empty false branch and an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_013.json",
+  "semantic_review": "Exact-block review is recorded for all 154 aligned linguistic blocks; see SEMANTIC_REVIEW_013.json.",
+  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, untranslated-prose and reviewer-decision QA passed.",
+  "translation_decisions": "Reviewer package regenerated: 232 schema-valid decisions, 240 exact occurrences, 239 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and no pending locators.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
+}

@@ -1,0 +1,221 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: identity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{com}{ide}
+\olsection{તાદાત્મ્ય}
+
+\begin{explain}
+પાછલા વિભાગમાં આપેલી પદ-નિદર્શની રચના~$\eq$ ન ધરાવતા ગણો~$\Gamma$
+માટે પ્રથમ-ક્રમ તર્કશાસ્ત્રની પૂર્ણતા સ્થાપવા પૂરતી છે. પદ-નિદર્શ
+~$\eq$ ન ધરાવતા દરેક $!A \in \Gamma^*$ને સંતોષે છે (અને તેથી બધા
+$!A \in \Gamma$ને પણ). પરંતુ~$\eq$ હાજર હોય ત્યારે આ રીત કામ
+કરતી નથી. તેનું કારણ એ છે કે પછી~$\Gamma^*$માં કોઈ
+!!a{sentence}~$\eq[t][t']$ હોઈ શકે, જ્યારે પદ-નિદર્શમાં કોઈ પણ પદનું
+મૂલ્ય એ પદ પોતે જ છે. તેથી જો~$t$ અને~$t'$ જુદાં પદો હોય, તો
+પદ-નિદર્શમાં તેમનાં મૂલ્યો—અનુક્રમે~$t$ અને~$t'$—પણ જુદાં છે અને આમ
+$\eq[t][t']$ ખોટું છે. જોકે ``ભાગફલન'' તરીકે ઓળખાતી રચના વાપરીને આ
+સમસ્યા ઉકેલી શકાય છે.
+\end{explain}
+
+\begin{defn}
+  ધારો કે~$\Gamma^*$ એ~$\Lang L$નાં વાક્યોનો સુસંગત અને !!{complete}
+  ગણ છે. ~ $\Lang L$નાં બંધ પદોના ગણ પર સંબંધ~$\approx$ આ રીતે
+  વ્યાખ્યાયિત કરીએ છીએ:
+  \[
+  t \approx t' \text{\quad જો અને માત્ર જો \quad} \eq[t][t'] \in \Gamma^*
+  \]
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:approx-equiv}
+સંબંધ~$\approx$ને નીચેના ગુણધર્મો છે:
+\begin{enumerate}
+\item $\approx$ સ્વવાચક છે.
+\item $\approx$ સમમિત છે.
+\item $\approx$ પરંપરિત છે.
+\item જો $t\approx t'$, $f$ !!a{function} અને $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$ બંધ પદો હોય, તો
+\[
+\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n} \approx
+\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}.
+\]
+\item જો $t\approx t'$, $R$ !!a{predicate} અને $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$ બંધ પદો હોય, તો
+\begin{multline*}
+\Atom{R}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}\in\Gamma^*
+\text{ જો અને માત્ર જો } \\
+\Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}\in\Gamma^*.
+\end{multline*}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+~$\Gamma^*$ સુસંગત અને !!{complete} હોવાથી $\eq[t][t']\in\Gamma^*$ જો
+અને માત્ર જો $\Gamma^*\Proves\eq[t][t']$. તેથી નીચેનું બતાવવું પૂરતું
+છે:
+\begin{enumerate}
+\item દરેક બંધ પદ~$t$ માટે $\Gamma^*\Proves\eq[t][t]$.
+\item જો $\Gamma^*\Proves\eq[t][t']$, તો $\Gamma^*\Proves\eq[t'][t]$.
+\item જો $\Gamma^*\Proves\eq[t][t']$ અને $\Gamma^*\Proves
+  \eq[t'][t'']$, તો $\Gamma^*\Proves\eq[t][t'']$.
+\item જો $\Gamma^*\Proves\eq[t][t']$, તો
+\[
+\Gamma^* \Proves
+\eq[\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}][\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}]
+\]
+દરેક $n$-સ્થાનીય !!{function}~$f$ અને બંધ પદો $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$ માટે.
+\item જો $\Gamma^*\Proves\eq[t][t']$ અને
+$\Gamma^*\Proves\Atom{R}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}$,
+તો દરેક $n$-સ્થાનીય !!{predicate}~$R$ અને બંધ પદો $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$ માટે
+$\Gamma^*\Proves\Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}$.
+\end{enumerate}
+\end{proof}
+
+\sourcecorrection{OLCO-011}{મૂળની \texttt{identity.tex}, પંક્તિ~69માં
+પહેલા સંયુક્ત પદની દલીલ-યાદીમાં $t_{i+1}$ પછી વધારાનો અલ્પવિરામ છે.
+અહીં તે દૂર કર્યો છે.}
+
+\begin{prob}
+\olref[fol][com][ide]{prop:approx-equiv}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\begin{defn}
+ધારો કે~$\Gamma^*$ ભાષા~$\Lang L$નો સુસંગત અને !!{complete} ગણ છે,
+~$t$ બંધ પદ છે અને~$\approx$ પાછલી વ્યાખ્યામાંનો સંબંધ છે. ત્યારે:
+\[
+\equivrep{t}{\approx}=\Setabs{t'}{t'\in\Trm[L],t\approx t'}
+\]
+અને
+$\equivclass{\Trm[L]}{\approx}=\Setabs{\equivrep{t}{\approx}}{t\in\Trm[L]}$.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:term-model-factor}
+ધારો કે~$\Struct M=\Struct M(\Gamma^*)$ એ \olref[mod]{defn:termmodel}નો
+~$\Gamma^*$ માટેનો પદ-નિદર્શ છે. ત્યારે
+~$\Struct{\equivclass{M}{\approx}}$ નીચેની !!{structure} છે:
+\begin{enumerate}
+\item $\Domain{\equivclass{M}{\approx}}=\equivclass{\Trm[L]}{\approx}$.
+\item $\Assign{c}{\equivclass{M}{\approx}}=\equivrep{c}{\approx}$.
+\item $\Assign{f}{\equivclass{M}{\approx}}(\equivrep{t_1}{\approx},\dots,
+  \equivrep{t_n}{\approx})=\equivrep{\Atom{f}{t_1,\dots,t_n}}{\approx}$.
+\item $\tuple{\equivrep{t_1}{\approx},\dots,\equivrep{t_n}{\approx}}
+  \in\Assign{R}{\equivclass{M}{\approx}}$ જો અને માત્ર જો
+  $\Sat{M}{\Atom{R}{t_1,\dots,t_n}}$, એટલે કે, જો અને માત્ર જો
+  $\Atom{R}{t_1,\dots,t_n}\in\Gamma^*$.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+નોંધો કે આપણે~$\equivclass{\Trm[L]}{\approx}$નાં ઘટકો માટે
+$\Assign{f}{\equivclass{M}{\approx}}$ અને
+$\Assign{R}{\equivclass{M}{\approx}}$ને તેમનો ઉલ્લેખ
+$\equivrep{t}{\approx}$ તરીકે કરીને, એટલે કે \emph{પ્રતિનિધિઓ}
+~$t\in\equivrep{t}{\approx}$ દ્વારા વ્યાખ્યાયિત કર્યાં છે. આ વ્યાખ્યાઓ
+પ્રતિનિધિઓની પસંદગી પર આધાર રાખતી નથી તેની ખાતરી કરવી પડશે: એટલે કે,
+એ જ સામ્ય વર્ગો નક્કી કરતી બીજી કોઈ પસંદગીઓ~$t'$ માટે
+($\equivrep{t}{\approx}=\equivrep{t'}{\approx}$) વ્યાખ્યાઓ એ જ પરિણામ
+આપે છે. દાખલા તરીકે, જો~$R$ એક-સ્થાનીય !!{predicate} હોય, તો
+વ્યાખ્યાની છેલ્લી કલમ કહે છે કે $\equivrep{t}{\approx}\in
+\Assign{R}{\equivclass{M}{\approx}}$ જો અને માત્ર જો
+$\Sat{M}{\Atom{R}{t}}$. જો $t\approx t'$ હોય એવા બીજા કોઈ પદ~$t'$ માટે
+$\Sat/{M}{\Atom{R}{t'}}$, તો વ્યાખ્યા મુજબ
+$\equivrep{t'}{\approx}\notin\Assign{R}{\equivclass{M}{\approx}}$ હોવું
+પડે. જો $t\approx t'$, તો $\equivrep{t}{\approx}=
+\equivrep{t'}{\approx}$; પરંતુ એક જ સમયે $\equivrep{t}{\approx}\in
+\Assign{R}{\equivclass{M}{\approx}}$ અને $\equivrep{t}{\approx}\notin
+\Assign{R}{\equivclass{M}{\approx}}$ હોઈ શકે નહિ. જોકે
+\olref{prop:approx-equiv} ખાતરી આપે છે કે આવું બની શકતું નથી.
+\end{explain}
+
+\sourcecorrection{OLCO-012}{મૂળની \texttt{identity.tex}, પંક્તિ~134માં
+બીજા પ્રતિનિધિ~$t'$ની ચર્ચા છતાં અસંતોષનું સૂત્ર
+$\Sat/{M}{\Atom{R}{t}}$ લખાયું છે. દલીલને જોઈતું અને પછીના
+નિષ્કર્ષમાં વપરાતું સૂત્ર $\Sat/{M}{\Atom{R}{t'}}$ હોવાથી અહીં એ
+પુનઃસ્થાપિત કર્યું છે.}
+
+\begin{prop}
+~$\Struct{\equivclass{M}{\approx}}$ સુવ્યાખ્યાયિત છે; એટલે કે, જો
+$t_1$, \dots, $t_n$, $t_1'$, \dots, $t_n'$ બંધ પદો હોય અને દરેક સૂચક
+માટે $t_i\approx t_i'$ હોય, તો
+\begin{enumerate}
+\item $\equivrep{\Atom{f}{t_1,\dots,t_n}}{\approx}=
+    \equivrep{\Atom{f}{t_1',\dots,t_n'}}{\approx}$, એટલે કે,
+  \[
+  \Atom{f}{t_1,\dots,t_n}\approx\Atom{f}{t_1',\dots,t_n'}
+  \]
+  અને
+\item $\Sat{M}{\Atom{R}{t_1,\dots,t_n}}$ જો અને માત્ર જો
+  $\Sat{M}{\Atom{R}{t_1',\dots,t_n'}}$, એટલે કે,
+  \[
+    \Atom{R}{t_1,\dots,t_n}\in\Gamma^* \text{ જો અને માત્ર જો }
+    \Atom{R}{t_1',\dots,t_n'}\in\Gamma^*.
+  \]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+~$n$ પરના અનુમાન વડે \olref{prop:approx-equiv}માંથી ફલિત થાય છે.
+\end{proof}
+
+પદ-નિદર્શના કિસ્સાની જેમ, સત્યતા સહાયક પ્રમેય સાબિત કરતાં પહેલાં
+આગળનું સહાયક પ્રમેય જરૂરી છે.
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel-factored} ધારો કે
+$\Struct M=\Struct M(\Gamma^*)$. તો
+$\Value{t}{\equivclass{M}{\approx}}=\equivrep{t}{\approx}$.
+\end{lem}
+\begin{proof}
+સાબિતી \olref[mod]{lem:val-in-termmodel}ની સાબિતી જેવી જ છે.
+\end{proof}
+
+\begin{prob}
+\olref[fol][com][ide]{lem:val-in-termmodel-factored}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:truth}
+દરેક વાક્ય~$!A$ માટે $\Sat{\equivclass{M}{\approx}}{!A}$ જો અને માત્ર
+જો $!A\in\Gamma^*$.
+\end{lem}
+
+\begin{proof}
+~$!A$ પર અનુમાન વડે, \olref[mod]{lem:truth}ની સાબિતીમાં હતું તેમ જ.
+ફક્ત $!A\ident\eq[t][t']$ હોય તે કિસ્સા પર વધુ ધ્યાન આપવું પડે છે.
+\begin{align*}
+\Sat{\equivclass{M}{\approx}}{\eq[t][t']} & \text{ જો અને માત્ર જો }
+\equivrep{t}{\approx}=\equivrep{t'}{\approx}
+\text{ (\olref{lem:val-in-termmodel-factored} અને તાદાત્મ્યની વ્યાખ્યા મુજબ)}\\
+& \text{ જો અને માત્ર જો }t\approx t'
+\text{ ($\equivrep{t}{\approx}$ની વ્યાખ્યા મુજબ)}\\
+& \text{ જો અને માત્ર જો }\eq[t][t']\in\Gamma^*
+\text{ ($\approx$ની વ્યાખ્યા મુજબ).}
+\end{align*}
+\end{proof}
+
+\sourcecorrection{OLCO-013}{મૂળની \texttt{identity.tex}, પંક્તિ~188માં
+પહેલી સમતુલ્યતાને માત્ર ભાગફલ સંરચનાની વ્યાખ્યાથી મળતી કહે છે. પદોના
+મૂલ્યો તેમના સામ્ય વર્ગો છે એ માટે તરત પહેલાંનું
+\olref{lem:val-in-termmodel-factored} પણ જરૂરી છે; અહીં એ સંદર્ભ સ્પષ્ટ
+કર્યો છે.}
+
+\begin{digress}
+નોંધો કે~$\Struct{M(\Gamma^*)}$ હંમેશાં !!{enumerable} અને અનંત છે,
+પરંતુ~$\Struct{\equivclass{M}{\approx}}$ સાન્ત હોઈ શકે છે, કારણ કે
+સામ્ય વર્ગો~$\equivrep{t}{\approx}$ સાન્ત સંખ્યામાં જ હોવાનું બની શકે
+છે. આ અપેક્ષિત છે, કારણ કે~$\Gamma$માં એવાં !!{sentence}s હોઈ શકે જે
+તેમને સાચાં બનાવતી કોઈ પણ !!{structure} સાન્ત હોવી જરૂરી બનાવે. દાખલા
+તરીકે, $\lforall[x][\lforall[y][x=y]]$ સુસંગત !!{sentence} છે, પણ તે
+ફક્ત બરાબર એક !!{element} ધરાવતા !!a{domain}વાળી !!{structure}sમાં જ
+સંતોષાય છે.
+\end{digress}
+
+\end{document}

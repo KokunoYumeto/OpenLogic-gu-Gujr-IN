@@ -1,0 +1,103 @@
+{
+  "schema": "openlogic-gu-epub-qa/1",
+  "checked_at_utc": "2026-09-10T00:07:52.460610+00:00",
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Completeness.epub",
+    "bytes": 445804,
+    "sha256": "991e26b9df64a6c4afa18781935772ff20f2ae5f707765c01e5cd5609d052c6e",
+    "version": "EPUB 3.3",
+    "layout": "reflowable",
+    "language": "gu-IN",
+    "direction": "ltr",
+    "coverage": {
+      "translated": 134,
+      "total": 722,
+      "units": "OLP-0004–0137"
+    },
+    "complete_edition": false
+  },
+  "reuse": {
+    "pipeline": "Adapted deterministic XHTML namespace, OPF, navigation, cold-replay and EPUBCheck practices from the accepted Accessible Complete English EPUB pipeline.",
+    "source_task": "019ffc65-3d4d-7e21-a913-21cc33a9be4a"
+  },
+  "epubcheck": {
+    "version": "5.3.0",
+    "jar_sha256": "f7f96617c929371821609b88c8484d6dc9f24fe916499863c46094c5fb778a65",
+    "report": "build/EPUBCHECK_013.json",
+    "report_sha256": "eeff723355d21a689079287d76fdd60508acc7b46f32998ca67541a5d3f78702",
+    "messages": 0,
+    "fatals": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "reproducibility": {
+    "cold_replay_byte_identical": true,
+    "build_receipt": "build/EPUB_BUILD_RECEIPT_013.json",
+    "build_receipt_sha256": "dd1efb1cdafe678155947e01c07634ae0016ab169af9bf9aa80847df9ec8262c"
+  },
+  "structural_and_semantic_checks": {
+    "archive_entries": 22,
+    "mimetype_first_and_uncompressed": true,
+    "native_mathml_nodes": 7278,
+    "mathml_subtrees_exact_after_namespace_normalization": true,
+    "tex_annotations_exact": 7278,
+    "gujarati_character_sequence_exact": true,
+    "content_ids_exact": 558,
+    "broken_internal_content_links": 0,
+    "navigation_links": 145,
+    "broken_navigation_links": 0,
+    "tables": 11,
+    "proof_representations": 208,
+    "footnotes": 12,
+    "described_svg_figures": 13,
+    "embedded_gujarati_fonts": 2,
+    "scripts": 0,
+    "all_93_source_correction_disclosures_preserved": true,
+    "honest_partial_scope_metadata": true
+  },
+  "runtime_inspection": {
+    "inspected_at_utc": "2026-09-10T00:07:52.460610+00:00",
+    "method": "Silent in-app Chromium inspection of byte-identical XHTML copies served from localhost; only the preview filename suffix changed from .xhtml to .html.",
+    "exact_xhtml_binding": {
+      "content_xhtml_sha256": "5e457c9cbf8299ca1132b0fd4762ae00c8092e2c4add71db0219288ede060746",
+      "navigation_xhtml_sha256": "37d10c73ed76f7f128d94897c67c0b7e6be65628f0e5913199c93abe5e85dd09",
+      "stylesheet_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "content_preview_byte_identical": true,
+      "navigation_preview_byte_identical": true
+    },
+    "viewport_css_pixels": [
+      1265,
+      720
+    ],
+    "representative_views": [
+      "title, scope disclosure, and opening navigation",
+      "145-entry navigation document and landmarks",
+      "First-order completeness theorem and derivation prose",
+      "compactness theorem and native mathematical layout",
+      "described SVG function figure and caption",
+      "editorial notes and bibliography"
+    ],
+    "runtime_checks": {
+      "document_ready_state": "complete",
+      "fonts_status": "loaded",
+      "native_mathml_nodes": 7278,
+      "block_mathml_nodes_checked": 430,
+      "unhandled_clipped_block_mathml_nodes": 0,
+      "intentionally_horizontally_scrollable_tableaux": 3,
+      "document_horizontal_overflow": false,
+      "images_loaded": 13,
+      "images_with_nonempty_gujarati_alt": 13,
+      "tables": 11,
+      "browser_console_messages": 0
+    },
+    "visual_findings": {
+      "gujarati_shaping": "passed",
+      "mathml_layout": "passed",
+      "diagram_and_caption_layout": "passed",
+      "navigation_and_end_matter": "passed",
+      "overlap_or_truncation": "none_observed"
+    },
+    "status": "passed_silent_exact_xhtml_runtime_inspection"
+  },
+  "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa"
+}

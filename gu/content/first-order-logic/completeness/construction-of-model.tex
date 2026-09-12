@@ -1,0 +1,304 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: construction-of-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{mod}}
+      {\olfileid{pl}{com}{mod}}
+
+\olsection{નિદર્શની રચના}
+
+\begin{explain}
+\iftag{FOL}{અત્યારે આપણે~$\eq$ની ચિંતા કરતા નથી; એટલે કે,
+  ~ $\eq$ ન ધરાવતા !!{sentence}sના સુસંગત ગણ~$\Gamma$ને સંતોષ્ય
+  બતાવવો જ આપણો હેતુ છે. પહેલાં~$\Gamma$ને સુસંગત, !!{complete} અને
+  સંતૃપ્ત ગણ~$\Gamma^*$ સુધી વિસ્તારીએ. આ કિસ્સામાં
+  નિદર્શ~$\Struct{M(\Gamma^*)}$ની વ્યાખ્યા સરળ છે: ~ $\Lang{L'}$નાં
+  બંધ પદોના ગણને વ્યાપકક્ષેત્ર લઈએ. દરેક !!{constant}ને પોતાને જ
+  નિયુક્ત કરીએ અને વધુ સામાન્ય રીતે દરેક બંધ પદ~$t$ માટે
+  $\Value{t}{M(\Gamma^*)}=t$ થાય તેની ખાતરી કરીએ. !!{predicate}sને
+  એવા વિસ્તાર નિયુક્ત કરીએ કે પરમાણુક !!{sentence} એ
+  $\Struct{M(\Gamma^*)}$માં સાચું હોય જો અને માત્ર જો તે~$\Gamma^*$માં
+  હોય. સ્પષ્ટ છે કે આમ~$\Gamma^*$નાં બધાં પરમાણુક !!{sentence}s
+  $\Struct{M(\Gamma^*)}$માં સાચાં થશે. બાકીનાં વાક્યો પણ સાચાં થશે,
+  જો શરૂઆતનું~$\Gamma^*$ સુસંગત, પૂર્ણ અને સંતૃપ્ત હોય.}{હવે દરેક
+  $!A\in\Gamma$ને સાચું બનાવતી !!a{valuation} વ્યાખ્યાયિત કરવા આપણે
+  તૈયાર છીએ. તે માટે પહેલાં લિન્ડનબાઉમનું સહાયક પ્રમેય વાપરીને પૂર્ણ
+  સુસંગત $\Gamma^*\supseteq\Gamma$ મેળવીએ. ~ $\Gamma^*$માંના
+  !!{propositional variable}sને~$\pAssign v(\Gamma^*)$ નક્કી કરવા દઈએ.}
+\end{explain}
+
+\iftag{FOL}{%
+\begin{defn}[પદ-નિદર્શ]
+\ollabel{defn:termmodel}
+ધારો કે~$\Gamma^*$ એ ભાષા~$\Lang L$નાં !!{sentence}sનો !!a{complete},
+સુસંગત અને સંતૃપ્ત ગણ છે. ~ $\Gamma^*$નો \emph{પદ-નિદર્શ}
+~$\Struct M(\Gamma^*)$ નીચે પ્રમાણે વ્યાખ્યાયિત !!{structure} છે:
+\begin{enumerate}
+\item !!{domain}~$\Domain{M(\Gamma^*)}$ એ~$\Lang L$નાં બધાં બંધ પદોનો
+  ગણ છે.
+\item !!a{constant}~$c$નું અર્થઘટન~$c$ પોતે જ છે:
+  $\Assign{c}{M(\Gamma^*)}=c$.
+\item !!{function}~$f$ને એવું વિધેય નિયુક્ત થાય છે જે બંધ પદો
+  $t_1$, \dots, $t_n$ને દલીલો તરીકે લે ત્યારે બંધ પદ
+  $f(t_1,\dots,t_n)$ને મૂલ્ય તરીકે આપે છે:
+\[
+\Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) = f(t_1,\dots, t_n)
+\]
+\item જો~$R$ કોઈ $n$-સ્થાનીય !!{predicate} હોય, તો
+  \[
+  \tuple{t_1, \dots,
+  t_n} \in \Assign{R}{M(\Gamma^*)} \text{ જો અને માત્ર જો }
+  \Atom{R}{t_1, \dots,t_n} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{defn}
+}{%
+\begin{defn}
+\ollabel{defn:termmodel}
+ધારો કે~$\Gamma^*$ !!{formula}sનો પૂર્ણ સુસંગત ગણ છે. ત્યારે મૂકીએ
+\[
+\pAssign v(\Gamma^*)(p) = \begin{cases}
+  \True & \text{જો $p \in \Gamma^*$ હોય}\\
+  \False & \text{જો $p \notin \Gamma^*$ હોય}
+  \end{cases}
+\]
+\end{defn}
+}
+
+\iftag{FOL}{%
+હવે આપણે ચકાસીશું કે ખરેખર $\Value{t}{M(\Gamma^*)}=t$.
+
+\begin{lem}
+\ollabel{lem:val-in-termmodel} ધારો કે~$\Struct M(\Gamma^*)$ એ
+\olref{defn:termmodel}નો પદ-નિદર્શ છે. તો
+$\Value{t}{M(\Gamma^*)}=t$.
+\end{lem}
+\begin{proof}
+ સાબિતી~$t$ પર અનુમાનથી મળે છે. આધારના કિસ્સામાં~$t$ !!a{constant}
+ છે અને દાવો પદ-નિદર્શની વ્યાખ્યામાંથી સીધો ફલિત થાય છે. અનુમાનના
+ પગલા માટે ધારો કે $t_1,\ldots,t_n$ એવાં બંધ પદો છે કે
+ $\Value{t_i}{M(\Gamma^*)}=t_i$, અને~$f$ કોઈ $n$-સ્થાનીય
+ !!{function} છે. ત્યારે
+\begin{align*}
+\Value{f(t_1,\ldots,t_n)}{M(\Gamma^*)} &= \Assign{f}{M(\Gamma^*)}(\Value{t_1}
+ {M(\Gamma^*)},
+\ldots, \Value{t_n}{M(\Gamma^*)}) \\
+&= \Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) \\
+&= f(t_1,\dots, t_n),
+\end{align*}
+અને તેથી અનુમાન વડે આ દાવો દરેક બંધ પદ~$t$ માટે સાચો છે.
+\end{proof}
+}{}
+
+\sourcecorrection{OLCO-021}{મૂળની
+\texttt{construction-of-model.tex}, પંક્તિઓ~75--97માં
+\texttt{\string\iftag}નો ફરજિયાત ત્રીજો દલીલ-ભાગ ખૂટે છે. આથી આગળનું
+\texttt{\string\iftag} તેના ``ના'' વિકલ્પ તરીકે ગળી લેવાય છે. અહીં ખાલી
+ત્રીજો દલીલ-ભાગ~\texttt{\{\}} ઉમેર્યો છે.}
+
+\iftag{FOL}{%
+\begin{explain}
+  \iftag{prvEx}{કોઈ !!^a{structure}~$\Struct{M}$ અસ્તિત્વવાચક રીતે
+    પરિમાણિત !!{sentence}~$\lexists[x][!A(x)]$ને સાચું બનાવી શકે,
+    છતાં તે સાચું બનાવે એવો એકેય દૃષ્ટાંત~$!A(t)$ ન હોય.}{}
+  \iftag{prvAll}{કોઈ !!^a{structure}~$\Struct{M}$ સર્વવાચક રીતે
+    પરિમાણિત !!{sentence}~$\lforall[x][!A(x)]$ના બધા દૃષ્ટાંતો
+    $!A(t)$ને સાચાં બનાવી શકે, છતાં~$\lforall[x][!A(x)]$ને સાચું ન
+    બનાવે.}{} તેનું કારણ એ છે કે સામાન્ય રીતે~$\Domain{M}$નો દરેક
+  !!{element} કોઈ બંધ પદનું મૂલ્ય હોતો નથી (~$\Struct{M}$ આવૃત ન પણ
+  હોય). આ જ કારણથી સંતોષ-સંબંધ ચલ-નિયુક્તિઓ દ્વારા વ્યાખ્યાયિત થાય છે.
+  જોકે આપણા પદ-નિદર્શ~$\Struct{M(\Gamma^*)}$ માટે તેની જરૂર ન હોત,
+  કારણ કે તે આવૃત છે. આગલું પરિણામ આ જ વાત કહે છે.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:quant-termmodel}
+ધારો કે~$\Struct M(\Gamma^*)$ એ \olref{defn:termmodel}નો પદ-નિદર્શ છે.
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$ જો અને માત્ર જો
+  ઓછામાં ઓછા એક બંધ પદ~$t$ માટે $\Sat{M(\Gamma^*)}{!A(t)}$.}{}
+\tagitem{prvAll}{$\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$ જો અને માત્ર
+  જો દરેક બંધ પદ~$t$ માટે $\Sat{M(\Gamma^*)}{!A(t)}$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{%
+  \iftag{probEx}{પ્રશ્ન.}{\olref[syn][ass]{prop:sat-quant} મુજબ
+    $\Sat{M(\Gamma^*)}{\lexists[x][!A(x)]}$ જો અને માત્ર જો ઓછામાં ઓછી
+    એક ચલ-નિયુક્તિ~$s$ માટે $\Sat{M(\Gamma^*)}{!A(x)}[s]$.
+    $\Domain{M(\Gamma^*)}$ એ~$\Lang{L}$નાં બંધ પદોનો ગણ હોવાથી આ સાચું
+    હોય જો અને માત્ર જો એવું ઓછામાં ઓછું એક બંધ પદ~$t$ હોય કે
+    $s(x)=t$ અને $\Sat{M(\Gamma^*)}{!A(x)}[s]$. હવે
+    \olref[fol][syn][ext]{prop:ext-formulas} મુજબ, $s(x)=t$ હોય ત્યારે
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$ જો અને માત્ર જો
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$. અને $!A(t)$ વાક્ય હોવાથી
+    \olref[fol][syn][ass]{prop:sentence-sat-true} મુજબ
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$ જો અને માત્ર જો
+    $\Sat{M(\Gamma^*)}{!A(t)}$.}}{}
+\tagitem{prvAll}{%
+  \iftag{probAll}{પ્રશ્ન.}{\olref[syn][ass]{prop:sat-quant} મુજબ
+    $\Sat{M(\Gamma^*)}{\lforall[x][!A(x)]}$ જો અને માત્ર જો દરેક
+    ચલ-નિયુક્તિ~$s$ માટે $\Sat{M(\Gamma^*)}{!A(x)}[s]$.
+    $\Domain{M(\Gamma^*)}$ એ~$\Lang{L}$નાં બંધ પદોનો ગણ છે; તેથી દરેક
+    બંધ પદ~$t$ માટે $s(x)=t$ હોય એવી ચલ-નિયુક્તિ છે અને કોઈ પણ
+    ચલ-નિયુક્તિ માટે~$s(x)$ કોઈ બંધ પદ~$t$ છે. હવે
+    \olref[fol][syn][ext]{prop:ext-formulas} મુજબ, $s(x)=t$ હોય ત્યારે
+    $\Sat{M(\Gamma^*)}{!A(x)}[s]$ જો અને માત્ર જો
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$. અને $!A(t)$ વાક્ય હોવાથી
+    \olref[fol][syn][ass]{prop:sentence-sat-true} મુજબ
+    $\Sat{M(\Gamma^*)}{!A(t)}[s]$ જો અને માત્ર જો
+    $\Sat{M(\Gamma^*)}{!A(t)}$.}}{}
+\end{tagenumerate}
+\end{proof}
+}{}
+
+\tagprob[FOL]{probEx,probAll}
+\begin{prob}
+\olref[fol][com][mod]{prop:quant-termmodel}ની સાબિતી પૂરી કરો.
+\end{prob}
+\tagendprob
+
+\begin{lem}[સત્યતા સહાયક પ્રમેય]
+\ollabel{lem:truth} \iftag{FOL}{ધારો કે~$!A$માં~$\eq$ આવતું નથી. તો}{}
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ જો અને માત્ર
+જો $!A \in \Gamma^*$.
+\end{lem}
+
+\begin{proof}
+આપણે બંને દિશાઓ એકસાથે, અને~$!A$ પર અનુમાન વડે સાબિત કરીએ છીએ.
+\begin{enumerate}
+\tagitem{prvFalse}{\indcase{!A}{\lfalse}
+  {સંતોષની વ્યાખ્યા મુજબ
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{\lfalse}}{\pSat/{v(\Gamma^*)}{\lfalse}}$.
+    બીજી તરફ, $\Gamma^*$ સુસંગત હોવાથી $\lfalse\notin\Gamma^*$.}}{}
+
+\tagitem{prvTrue}{\indcase{!A}{\ltrue}
+  {સંતોષની વ્યાખ્યા મુજબ
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\ltrue}$.
+    બીજી તરફ, $\Gamma^*$ સુસંગત અને !!{complete} છે તથા
+    $\Gamma^*\Proves\ltrue$ હોવાથી $\ltrue\in\Gamma^*$.}}{}
+
+\tagitem{FOL}{\indcase{!A}{R(t_1, \dots, t_n)}
+  {$\Sat{M(\Gamma^*)}{\Atom{R}{t_1,\dots,t_n}}$ જો અને માત્ર જો
+    $\tuple{t_1,\dots,t_n}\in\Assign{R}{M(\Gamma^*)}$ (સંતોષની
+    વ્યાખ્યા મુજબ), જો અને માત્ર જો $R(t_1,\dots,t_n)\in\Gamma^*$
+    ($\Struct M(\Gamma^*)$ની રચના મુજબ).}}{\indcase{!A}{p}
+  {$\pSat{v(\Gamma^*)}{p}$ જો અને માત્ર જો
+    $\pAssign v(\Gamma^*)(p)=\True$ (સંતોષની વ્યાખ્યા મુજબ), જો અને
+    માત્ર જો $p\in\Gamma^*$ ($\pAssign v(\Gamma^*)$ની રચના મુજબ).}}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$ જો
+    અને માત્ર જો
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
+    (સંતોષની વ્યાખ્યા મુજબ). અનુમાનની પૂર્વધારણા મુજબ
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}{!B}}{\pSat/{v(\Gamma^*)}{!B}}$
+    જો અને માત્ર જો $!B\notin\Gamma^*$. ~ $\Gamma^*$ સુસંગત અને
+    !!{complete} હોવાથી $!B\notin\Gamma^*$ જો અને માત્ર જો
+    $\lnot !B\in\Gamma^*$.}}{}
+
+\tagitem{prvAnd}{%
+\iftag{probAnd}{%
+  \indcase!{!A}{!B \land !C}{}}{%
+  \indcase{!A}{!B \land !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$ જો
+    અને માત્ર જો
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$ અને
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$ બંને
+    (સંતોષની વ્યાખ્યા મુજબ), જો અને માત્ર જો $!B\in\Gamma^*$ અને
+    $!C\in\Gamma^*$ બંને (અનુમાનની પૂર્વધારણા મુજબ). હવે
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-and} મુજબ આ સાચું હોય જો
+    અને માત્ર જો $(!B\land !C)\in\Gamma^*$.}}}{}
+
+\tagitem{prvOr}{%
+\iftag{probOr}{%
+  \indcase!{!A}{!B \lor !C}{}}{%
+  \indcase{!A}{!B \lor !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$ જો
+    અને માત્ર જો
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!B}$ અથવા
+    $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$
+    (સંતોષની વ્યાખ્યા મુજબ), જો અને માત્ર જો $!B\in\Gamma^*$ અથવા
+    $!C\in\Gamma^*$ (અનુમાનની પૂર્વધારણા મુજબ). હવે
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-or} મુજબ આ સાચું હોય જો
+    અને માત્ર જો $(!B\lor !C)\in\Gamma^*$.}}}{}
+
+\tagitem{prvIf}{%
+\iftag{probIf}{%
+  \indcase!{!A}{!B \lif !C}{}}{%
+  \indcase{!A}{!B \lif !C}
+    {$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{\indfrm}$ જો
+    અને માત્ર જો
+    $\iftag{FOL}{\Sat/{M(\Gamma^*)}}{\pSat/{v(\Gamma^*)}}{!B}$ અથવા
+    $\iftag{FOL}{\Sat{M (\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!C}$
+    (સંતોષની વ્યાખ્યા મુજબ), જો અને માત્ર જો $!B\notin\Gamma^*$ અથવા
+    $!C\in\Gamma^*$ (અનુમાનની પૂર્વધારણા મુજબ). હવે
+    \olref[ccs]{prop:ccs}\olref[ccs]{prop:ccs-if} મુજબ આ સાચું હોય જો
+    અને માત્ર જો $(!B\lif !C)\in\Gamma^*$.}}}{}
+
+\iftag{FOL}{%
+\tagitem{prvAll}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B(x)]}{}}{%
+    \indcase{!A}{\lforall[x][!B(x)]}
+      {$\Sat{M(\Gamma^*)}{\indfrm}$ જો અને માત્ર જો દરેક બંધ પદ~$t$
+      માટે $\Sat{M(\Gamma^*)}{!B(t)}$
+      (\olref{prop:quant-termmodel}). અનુમાનની પૂર્વધારણા મુજબ આ સાચું
+      હોય જો અને માત્ર જો દરેક બંધ પદ~$t$ માટે $!B(t)\in\Gamma^*$;
+      અને \olref[hen]{prop:saturated-instances} મુજબ આ સાચું હોય જો અને
+      માત્ર જો $\lforall[x][!B(x)]\in\Gamma^*$.}}}{}
+
+\tagitem{prvEx}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B(x)]}{}}{%
+    \indcase{!A}{\lexists[x][!B(x)]}
+      {$\Sat{M(\Gamma^*)}{\indfrm}$ જો અને માત્ર જો ઓછામાં ઓછા એક બંધ
+      પદ~$t$ માટે $\Sat{M(\Gamma^*)}{!B(t)}$
+      (\olref{prop:quant-termmodel}). અનુમાનની પૂર્વધારણા મુજબ આ સાચું
+      હોય જો અને માત્ર જો ઓછામાં ઓછા એક બંધ પદ~$t$ માટે
+      $!B(t)\in\Gamma^*$. હવે \olref[hen]{prop:saturated-instances}
+      મુજબ આ સાચું હોય જો અને માત્ર જો
+      $\lexists[x][!B(x)]\in\Gamma^*$.}}}{}
+}{}
+\end{enumerate}
+\end{proof}
+
+\sourcecorrection{OLCO-009}{મૂળની
+\texttt{construction-of-model.tex}, પંક્તિઓ~243--255માં પરિમાણકના
+બંને કિસ્સામાં ``પદો'' કહેવામાં આવે છે, પરંતુ
+\olref{prop:quant-termmodel} અને
+\olref[hen]{prop:saturated-instances} બંને બંધ પદો અંગે છે અને
+$!B(t)$ વાક્ય રહે તે માટે પણ~$t$ બંધ હોવું જરૂરી છે. અહીં ચારેય
+જગ્યાએ ``બંધ પદ'' લખ્યું છે.}
+
+\sourcecorrection{OLCO-010}{મૂળની
+\texttt{construction-of-model.tex}, પંક્તિ~247માં સર્વવાચક કિસ્સાનો
+છેલ્લો સભ્ય $\lforall[x][!A(x)]$ છે, જ્યારે આ અનુમાન-કિસ્સામાં સૂત્ર
+$!A\ident\lforall[x][!B(x)]$ છે. અહીં યોગ્ય
+$\lforall[x][!B(x)]$ લખ્યું છે.}
+
+\tagprob[FOL]{probOr,probAnd,probIf,probEx,probAll}
+
+\begin{prob}
+\olref[fol][com][mod]{lem:truth}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\tagendprob
+
+\tagprob[notFOL]{probOr,probAnd,probIf}
+
+\begin{prob}
+\olref[pl][com][mod]{lem:truth}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\tagendprob
+
+\end{document}

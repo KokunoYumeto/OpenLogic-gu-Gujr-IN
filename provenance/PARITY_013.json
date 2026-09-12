@@ -1,0 +1,527 @@
+{
+  "schema": "openlogic-gu-parity/13",
+  "reports": [
+    {
+      "unit_id": "OLP-0126",
+      "path": "content/first-order-logic/completeness/completeness.tex",
+      "source_sha256": "4d9dd7fc873888fde7d70bf45fa122465858092c4f7a979741067b3bda88eb18",
+      "target_sha256": "b407d8168a9b5166328c82df878299e2ae9042ae2a14a289b3c684c6cf492bb5",
+      "math_source_count": 0,
+      "math_corrected_source_count": 0,
+      "math_target_count": 0,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 17,
+      "target_blocks": 17,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0127",
+      "path": "content/first-order-logic/completeness/introduction.tex",
+      "source_sha256": "e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498",
+      "target_sha256": "9deed047b56ec031023874148b1cd98f81de7b783715e6c96fa85ed445b324fb",
+      "math_source_count": 14,
+      "math_corrected_source_count": 14,
+      "math_target_count": 14,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-001",
+          "change": "Removed the duplicated definite article before the emphasized phrase."
+        },
+        {
+          "finding_id": "OLCO-002",
+          "change": "Removed the plural suffix from the adjectival token and made the article explicit."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-001",
+        "OLCO-002"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0128",
+      "path": "content/first-order-logic/completeness/outline.tex",
+      "source_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
+      "target_sha256": "5f9f5b5bc389566820a7a13c338771f5fd1614f5c19a9552aac872ea620cef64",
+      "math_source_count": 132,
+      "math_corrected_source_count": 132,
+      "math_target_count": 132,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-003",
+          "change": "Removed the atomic-only restriction from condition (b)."
+        },
+        {
+          "finding_id": "OLCO-004",
+          "change": "Corrected the singular noun after all to sentences."
+        },
+        {
+          "finding_id": "OLCO-005",
+          "change": "Made the equality classes depend on the completed extension Gamma-star."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-003",
+        "OLCO-004",
+        "OLCO-005"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0129",
+      "path": "content/first-order-logic/completeness/complete-consistent-sets.tex",
+      "source_sha256": "6473c646a48e854478ef1388de877eb61bcd8b912179347703f86b655de0ae4f",
+      "target_sha256": "55fb93bd50013cb73cdafad6a06cdeab3d34509eec9d2a2826c833e46c4fe89a",
+      "math_source_count": 88,
+      "math_corrected_source_count": 88,
+      "math_target_count": 88,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 27,
+      "target_blocks": 27,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0130",
+      "path": "content/first-order-logic/completeness/henkin-expansions.tex",
+      "source_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
+      "target_sha256": "681a89524550a5b248a4821a8b9dfe5993ce283a229ce8b2bebcc60b4293a1d3",
+      "math_source_count": 126,
+      "math_corrected_source_count": 126,
+      "math_target_count": 126,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-006",
+          "change": "Restored the omitted argument of the indexed formula variable."
+        },
+        {
+          "finding_id": "OLCO-007",
+          "change": "Changed the existential-instance clause gate from prvAll to prvEx."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-006",
+        "OLCO-007"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 23,
+      "target_blocks": 23,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0131",
+      "path": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
+      "source_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
+      "target_sha256": "f935fb4f466f9b2fecfaec834d7d4429cef602559072c463d694507ab6e11b69",
+      "math_source_count": 62,
+      "math_corrected_source_count": 63,
+      "math_target_count": 63,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-008",
+          "change": "Separated the empty finite-subset case before choosing a largest index."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-008"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 13,
+      "target_blocks": 13,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0132",
+      "path": "content/first-order-logic/completeness/construction-of-model.tex",
+      "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
+      "target_sha256": "b5b8005342e5e6c3e6605a5b43f8a64acf3f8e2355ee51c97708befa54196365",
+      "math_source_count": 151,
+      "math_corrected_source_count": 151,
+      "math_target_count": 151,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-009",
+          "change": "Restricted all four quantified term occurrences to closed terms."
+        },
+        {
+          "finding_id": "OLCO-010",
+          "change": "Restored B as the induction case's quantified matrix."
+        },
+        {
+          "finding_id": "OLCO-021",
+          "change": "Added the required empty third argument to the FOL-only conditional."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-021",
+        "OLCO-009",
+        "OLCO-010"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 30,
+      "target_blocks": 30,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0133",
+      "path": "content/first-order-logic/completeness/identity.tex",
+      "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
+      "target_sha256": "9fed54ac2824ca92bc5828157f54e8314961039ed8e7afc4eb98c3cb16d72a93",
+      "math_source_count": 121,
+      "math_corrected_source_count": 121,
+      "math_target_count": 121,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-011",
+          "change": "Removed the duplicated comma from the compound function term."
+        },
+        {
+          "finding_id": "OLCO-012",
+          "change": "Used the alternative representative t-prime in the non-satisfaction premise."
+        },
+        {
+          "finding_id": "OLCO-013",
+          "change": "Cited the value lemma needed for the first identity equivalence."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-011",
+        "OLCO-012",
+        "OLCO-013"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 21,
+      "target_blocks": 21,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0134",
+      "path": "content/first-order-logic/completeness/completeness-thm.tex",
+      "source_sha256": "2e28c82c4787c75fc159295bf38adfb4aa5e1dff0025c237cd750bfc33964ecb",
+      "target_sha256": "9e809d33b143be7596c61d732e127fd4b4890df86619a8b19807a8a6236aae3c",
+      "math_source_count": 41,
+      "math_corrected_source_count": 41,
+      "math_target_count": 41,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0135",
+      "path": "content/first-order-logic/completeness/compactness.tex",
+      "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
+      "target_sha256": "fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858",
+      "math_source_count": 142,
+      "math_corrected_source_count": 145,
+      "math_target_count": 145,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-014",
+          "change": "Clarified that Gamma is a set of sentences and A is a sentence."
+        },
+        {
+          "finding_id": "OLCO-015",
+          "change": "Separated the structure variable from its satisfaction claim and avoided shadowing M."
+        },
+        {
+          "finding_id": "OLCO-016",
+          "change": "Repaired the quantifier grammar so every listed sentence has index k below K."
+        },
+        {
+          "finding_id": "OLCO-017",
+          "change": "Separated the empty Delta-prime case before choosing a largest index."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-014",
+        "OLCO-015",
+        "OLCO-016",
+        "OLCO-017"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 18,
+      "target_blocks": 18,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0136",
+      "path": "content/first-order-logic/completeness/compactness-direct.tex",
+      "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
+      "target_sha256": "46656017e4ea4b32f5374388da42ede76b1796ac27f0dbb6088a46b3a3326319",
+      "math_source_count": 57,
+      "math_corrected_source_count": 70,
+      "math_target_count": 70,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-018",
+          "change": "Added the direct finite-satisfiability replacements for the truth, falsity, and negation cases."
+        },
+        {
+          "finding_id": "OLCO-019",
+          "change": "Added the missing quotient term-model argument for languages with identity."
+        },
+        {
+          "finding_id": "OLCO-022",
+          "change": "Added the required empty third argument to the FOL-only conditional."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-018",
+        "OLCO-019",
+        "OLCO-022"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 26,
+      "target_blocks": 26,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0137",
+      "path": "content/first-order-logic/completeness/downward-ls.tex",
+      "source_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
+      "target_sha256": "f10ba30be44d7dd4ca2da7dec80f9f23ab5a71117db2a6ecce1b515d66754549",
+      "math_source_count": 19,
+      "math_corrected_source_count": 19,
+      "math_target_count": 19,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLCO-020",
+          "change": "Used the Henkin-expanded language whose terms form the constructed domain."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLCO-020"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "totals": {
+    "units": 12,
+    "source_math_spans": 953,
+    "corrected_source_math_spans": 970,
+    "documented_source_corrections": 22,
+    "source_blocks": 228,
+    "target_blocks": 228
+  },
+  "meaning": "Formula multisets, named constructs, proof primitives, rule invocations, environments and tagged terminology tokens are checked within aligned blank-delimited blocks. Gujarati correction boxes are stripped; every corrected expected-source change is explicit and keyed."
+}

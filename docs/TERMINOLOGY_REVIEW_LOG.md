@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-08T01:09:47.091782+00:00. This is a **complete decision log for the current 122/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 108/722 units with checkpoint 011. It contains all 126 terminology decisions from the durable ledger and all 71 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-09T21:47:22.672463+00:00. This is a **complete decision log for the current 134/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 122/722 units with checkpoint 012. It contains all 136 terminology decisions from the durable ledger and all 93 source corrections identified so far. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -541,7 +541,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:49`.
 - **English use:** `upstream/content/sets-functions-relations/functions/partial-functions.tex:21` (OLP-0026, “partial function”); `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:16` (OLP-0008, “defined”); `upstream/content/sets-functions-relations/functions/partial-functions.tex:24` (OLP-0026, “undefined”)
-- **Gujarati use:** `gu/content/sets-functions-relations/functions/partial-functions.tex:11` (OLP-0026, “આંશિક વિધેય”); `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:16` (OLP-0008, “વ્યાખ્યાયિત”); `gu/content/sets-functions-relations/functions/partial-functions.tex:25` (OLP-0026, “અવ્યાખ્યાયિત”)
+- **Gujarati use:** `gu/content/sets-functions-relations/functions/partial-functions.tex:11` (OLP-0026, “આંશિક વિધેય”); `gu/content/first-order-logic/completeness/compactness.tex:143` (OLP-0135, “સર્વત્ર વ્યાખ્યાયિત વિધેય”); `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:16` (OLP-0008, “વ્યાખ્યાયિત”); `gu/content/sets-functions-relations/functions/partial-functions.tex:25` (OLP-0026, “અવ્યાખ્યાયિત”)
 - **Authorities actually checked:** `GU-P032` (GU-GSSTB-MATH11, {"pdf_page_one_based": 43, "printed_page": "31"}); `GU-P033` (GU-GSSTB-MATH11, {"pdf_page_one_based": 44, "printed_page": "32"})
 - **Chosen sense and rationale:** Only ordinary function terminology directly attested; partial/total computability senses governed by OpenLogic definitions.
 - **Alternatives:** પૂર્ણ વિધેય — avoided because “total” here means defined on every ambient input, not completeness.
@@ -992,7 +992,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `adopted_derivation`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:90`.
 - **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:14` (OLP-0057, “propositional variable”); `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:25` (OLP-0060, “atomic formula”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:111` (OLP-0058, “આણ્વિક સૂત્ર”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:39` (OLP-0129, “વિધાનચલ”); `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:111` (OLP-0058, “આણ્વિક સૂત્ર”)
 - **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The sources directly use p, q and r for propositions and આણ્વિક વિધાન for atomic proposition; the formula and variable compounds follow the edition's established સૂત્ર and ચલ.
 - **Alternatives:** પ્રસ્તાવચલ / પરમાણ્વીય સૂત્ર — possible alternatives; the adopted compounds preserve the directly checked વિધાન and આણ્વિક usage while matching the edition-wide ચલ and સૂત્ર.
@@ -1069,7 +1069,7 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:97`.
 - **English use:** `upstream/content/propositional-logic/propositional-logic.tex:18` (OLP-0055, “valuation”); `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22` (OLP-0061, “evaluation function”)
-- **Gujarati use:** `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22` (OLP-0061, “મૂલ્યાંકન વિધેય”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/outline.tex:163` (OLP-0128, “સત્યમૂલ્ય-નિયુક્તિ”); `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:22` (OLP-0061, “મૂલ્યાંકન વિધેય”)
 - **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P069` (GU-VK-TRUTH, {"line_one_based": 96, "last_line_one_based": 101, "utf8_start": 36552, "utf8_end": 38930, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The sources directly support truth values and truth-functional determination. These labels distinguish the initial assignment from its inductive extension.
 - **Alternatives:** મૂલ્યનિર્ધારણ / અર્થઘટન વિધેય — possible alternatives; the adopted pair explicitly distinguishes assignment from its recursively extended evaluation.
@@ -1101,8 +1101,8 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 
 - **Status and uncertainty:** `adopted_contextual`; medium. The head term is supported, but its derivation, context or scope needs expert confirmation.
 - **Record origin:** retrospective_reconstruction_from_prior_TERM_DECISIONS; `TERM_DECISIONS.jsonl:100`.
-- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66` (OLP-0057, “entailment”)
-- **Gujarati use:** No exact literal occurrence found in the current drafted units; see the usage-location note.
+- **English use:** `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:66` (OLP-0057, “entailment”); `upstream/content/first-order-logic/completeness/introduction.tex:18` (OLP-0127, “semantic consequence”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/introduction.tex:17` (OLP-0127, “અર્થાનુસારી ફલિતતા”)
 - **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"})
 - **Chosen sense and rationale:** The exact passage describes what follows તાર્કિક રીતે from given propositions; અર્થાનુસારી marks the semantic relation when contrast is required.
 - **Alternatives:** અનુસરણ / અર્થવિચારી પરિણામ — possible alternatives; ફલિતતા keeps the checked તાર્કિક રીતે ફલિત થવું construction visible.
@@ -1393,6 +1393,116 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Chosen sense and rationale:** સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains.
 - **Alternatives:** ઉપપત્તિશાસ્ત્રીય ખ્યાલ — a possible learned-register compound not found in the checked Gujarati sources.; સિદ્ધાંતાત્મક ગુણધર્મ — too broad because it does not identify proof theory.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ’ accurately express ‘proof-theoretic notions / proof-theoretic property’ with the scope stated here: સાબિતી, formal systems, derivation from premises and exact symbolic exposition are attested in the checked passages. The compound explicitly marks notions defined through derivability rather than satisfaction, as the surrounding paragraph explains. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T127: model / model existence result → નિદર્શ / સંરચના-અસ્તિત્વનું પરિણામ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/compactness-direct.tex:22` (OLP-0136, “model”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/compactness-direct.tex:20` (OLP-0136, “નિદર્શ”)
+- **Authorities actually checked:** `GU-P025` (GU-VK-TRUTH, {"line_one_based": 128, "utf8_start": 44931, "utf8_end": 46011, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** નિદર્શ is the established edition term for a structure satisfying a theory, while સંરચના is retained for the underlying interpretation. The checked canon supports logical consequence, formal systems and structure, though the exact model-theoretic compound is contextual rather than directly attested.
+- **Alternatives:** મૉડલ — a transparent transliteration, but less integrated with the edition's established Gujarati register.; નિદર્શ-અસ્તિત્વ પરિણામ — concise, but the translated passage deliberately foregrounds existence of a satisfying structure.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘નિદર્શ / સંરચના-અસ્તિત્વનું પરિણામ’ accurately express ‘model / model existence result’ with the scope stated here: નિદર્શ is the established edition term for a structure satisfying a theory, while સંરચના is retained for the underlying interpretation. The checked canon supports logical consequence, formal systems and structure, though the exact model-theoretic compound is contextual rather than directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T128: complete set → પૂર્ણ ગણ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/outline.tex:80` (OLP-0128, “complete set”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/outline.tex:74` (OLP-0128, “પૂર્ણ ગણ”)
+- **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The canon directly uses પૂર્ણ for a formal system that leaves no sentence undecided. Here the displayed definition fixes the set-level sense: for every sentence, the set contains it or its negation.
+- **Alternatives:** સંપૂર્ણ ગણ — possible fuller wording, but the checked formal-system source and established edition usage favor પૂર્ણ.; નિર્ણાયક ગણ — would blur completeness with decidability.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પૂર્ણ ગણ’ accurately express ‘complete set’ with the scope stated here: The canon directly uses પૂર્ણ for a formal system that leaves no sentence undecided. Here the displayed definition fixes the set-level sense: for every sentence, the set contains it or its negation. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T129: saturated set / Henkin expansion / witness / counterexample → સંતૃપ્ત ગણ / હેન્કિન વિસ્તાર / સાક્ષી / પ્રતિદૃષ્ટાંત
+
+- **Status and uncertainty:** `provisional_mixed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/outline.tex:140` (OLP-0128, “saturated set”); `upstream/content/first-order-logic/completeness/henkin-expansions.tex:11` (OLP-0130, “Henkin expansion”); `upstream/content/first-order-logic/completeness/henkin-expansions.tex:27` (OLP-0130, “witness”); `upstream/content/first-order-logic/completeness/henkin-expansions.tex:28` (OLP-0130, “counterexample”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/outline.tex:143` (OLP-0128, “સંતૃપ્ત ગણ”); `gu/content/first-order-logic/completeness/henkin-expansions.tex:11` (OLP-0130, “હેન્કિન વિસ્તાર”); `gu/content/first-order-logic/completeness/henkin-expansions.tex:26` (OLP-0130, “સાક્ષી”); `gu/content/first-order-logic/completeness/henkin-expansions.tex:27` (OLP-0130, “પ્રતિદૃષ્ટાંત”)
+- **Authorities actually checked:** `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** Quantifiers, formal derivation and finite proof steps are directly supported. સંતૃપ્ત and the Henkin name are contextual technical renderings; સાક્ષી is used for a true existential and પ્રતિદૃષ્ટાંત for a false universal, with the displayed Henkin implications controlling their exact roles.
+- **Alternatives:** પરિપૂર્ણ ગણ — risks collision with complete set, which has a different definition.; હેન્કિન પ્રસરણ — a possible rendering of expansion, but વિસ્તાર is already established for language and set extension in this edition.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સંતૃપ્ત ગણ / હેન્કિન વિસ્તાર / સાક્ષી / પ્રતિદૃષ્ટાંત’ accurately express ‘saturated set / Henkin expansion / witness / counterexample’ with the scope stated here: Quantifiers, formal derivation and finite proof steps are directly supported. સંતૃપ્ત and the Henkin name are contextual technical renderings; સાક્ષી is used for a true existential and પ્રતિદૃષ્ટાંત for a false universal, with the displayed Henkin implications controlling their exact roles. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T130: Lindenbaum's Lemma → લિન્ડનબાઉમનું સહાયક પ્રમેય
+
+- **Status and uncertainty:** `provisional_transliteration`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:13` (OLP-0131, “Lindenbaum's Lemma”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/lindenbaums-lemma.tex:13` (OLP-0131, “લિન્ડનબાઉમનું સહાયક પ્રમેય”)
+- **Authorities actually checked:** `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The personal name is transliterated and lemma is rendered with the edition's established સહાયક પ્રમેય. The checked canon supports theorem, proof and formal derivation register but does not directly attest the eponym.
+- **Alternatives:** લિન્ડેનબાઉમનું લેમા — closer to English sound and form, but retains an avoidable English technical noun.; લિન્ડનબાઉમ ઉપપ્રમેય — concise, but less consistent with existing edition terminology for lemma.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘લિન્ડનબાઉમનું સહાયક પ્રમેય’ accurately express ‘Lindenbaum's Lemma’ with the scope stated here: The personal name is transliterated and lemma is rendered with the edition's established સહાયક પ્રમેય. The checked canon supports theorem, proof and formal derivation register but does not directly attest the eponym. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T131: term model / Truth Lemma → પદ-નિદર્શ / સત્યતા સહાયક પ્રમેય
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/outline.tex:156` (OLP-0128, “term model”); `upstream/content/first-order-logic/completeness/construction-of-model.tex:163` (OLP-0132, “Truth Lemma”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/outline.tex:159` (OLP-0128, “પદ-નિદર્શ”); `gu/content/first-order-logic/completeness/construction-of-model.tex:168` (OLP-0132, “સત્યતા સહાયક પ્રમેય”)
+- **Authorities actually checked:** `GU-P025` (GU-VK-TRUTH, {"line_one_based": 128, "utf8_start": 44931, "utf8_end": 46011, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** પદ and નિદર્શ are established edition components; the exact compound names the model whose domain consists of closed terms. સત્યતા સહાયક પ્રમેય states the lemma's role, and its displayed biconditional fixes truth in the constructed model as equivalent to membership in the completed set.
+- **Alternatives:** ટર્મ મૉડલ / ટ્રુથ લેમા — recognizable transliterations, but they discard useful Gujarati composition.; સત્ય સહાયક પ્રમેય — shorter, while સત્યતા better denotes the semantic property used throughout the proof.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પદ-નિદર્શ / સત્યતા સહાયક પ્રમેય’ accurately express ‘term model / Truth Lemma’ with the scope stated here: પદ and નિદર્શ are established edition components; the exact compound names the model whose domain consists of closed terms. સત્યતા સહાયક પ્રમેય states the lemma's role, and its displayed biconditional fixes truth in the constructed model as equivalent to membership in the completed set. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T132: factoring / representative / well defined → ભાગફલન / પ્રતિનિધિ / સુવ્યાખ્યાયિત
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/identity.tex:23` (OLP-0133, “factoring”); `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:154` (OLP-0048, “representative”); `upstream/content/first-order-logic/completeness/identity.tex:136` (OLP-0133, “well defined”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/identity.tex:21` (OLP-0133, “ભાગફલન”); `gu/content/sets-functions-relations/arithmetization/cauchy.tex:149` (OLP-0048, “પ્રતિનિધિ”); `gu/content/sets-functions-relations/functions/functions-relations.tex:61` (OLP-0023, “સુવ્યાખ્યાયિત”)
+- **Authorities actually checked:** `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"}); `GU-P025` (GU-VK-TRUTH, {"line_one_based": 128, "utf8_start": 44931, "utf8_end": 46011, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The visually checked relation canon directly supports equivalence relations, and prior decision GU-T026 directly supports સામ્ય વર્ગ. These three forms describe forming the quotient, choosing a class representative and proving the resulting interpretations independent of that choice; the exact compounds remain open.
+- **Alternatives:** ભાગફળ રચના — clear prose alternative to ભાગફલન and used where the construction itself is emphasized.; સુનિર્ધારિત — a possible rendering of well defined, but can suggest uniqueness rather than representative independence.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ભાગફલન / પ્રતિનિધિ / સુવ્યાખ્યાયિત’ accurately express ‘factoring / representative / well defined’ with the scope stated here: The visually checked relation canon directly supports equivalence relations, and prior decision GU-T026 directly supports સામ્ય વર્ગ. These three forms describe forming the quotient, choosing a class representative and proving the resulting interpretations independent of that choice; the exact compounds remain open. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T133: finitely satisfiable → સાન્ત રીતે સંતોષ્ય
+
+- **Status and uncertainty:** `adopted_derivation`; medium. The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/compactness.tex:30` (OLP-0135, “finitely satisfiable”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/introduction.tex:59` (OLP-0127, “સાન્ત રીતે સંતોષ્ય”)
+- **Authorities actually checked:** `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P050` (GU-VK-MATH, {"line_one_based": 80, "last_line_one_based": 80, "utf8_start": 39535, "utf8_end": 40685, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સાન્ત is the established edition form for finite and સંતોષ્ય is governed by GU-T098. The adverbial construction keeps the definition distinct from saying that the whole set is finite: every finite subset is satisfiable.
+- **Alternatives:** દરેક સાન્ત ઉપગણે સંતોષ્ય — accurate expansion suitable in explanatory prose, but not a compact adjective.; સાન્ત-સંતોષ્ય — could be misread as a finite object that is satisfiable.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સાન્ત રીતે સંતોષ્ય’ accurately express ‘finitely satisfiable’ with the scope stated here: સાન્ત is the established edition form for finite and સંતોષ્ય is governed by GU-T098. The adverbial construction keeps the definition distinct from saying that the whole set is finite: every finite subset is satisfiable. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T134: L\"owenheim--Skolem theorem → લેવેનહાઇમ--સ્કોલેમ પ્રમેય
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The head term or its components are supported, but the exact compound or model-theoretic scope remains open to expert correction.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/introduction.tex:71` (OLP-0127, “L\"owenheim--Skolem theorem”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/introduction.tex:66` (OLP-0127, “લેવેનહાઇમ--સ્કોલેમ પ્રમેય”)
+- **Authorities actually checked:** `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P050` (GU-VK-MATH, {"line_one_based": 80, "last_line_one_based": 80, "utf8_start": 39535, "utf8_end": 40685, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The theorem name is transliterated; ગણનીય and અગણનીય are directly attested in the checked canon and governed by GU-T053. The theorem statement itself keeps OpenLogic's enumerable scope explicit as finite or denumerable.
+- **Alternatives:** લોવેનહાઇમ--સ્કોલેમ — a common spelling possibility; લેવેનહાઇમ more closely follows the pronunciation used for Löwenheim here.; અવરોહી લેવેનહાઇમ--સ્કોલેમ પ્રમેય — descriptive, but the section title follows the source's shorter theorem name.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘લેવેનહાઇમ--સ્કોલેમ પ્રમેય’ accurately express ‘L\"owenheim--Skolem theorem’ with the scope stated here: The theorem name is transliterated; ગણનીય and અગણનીય are directly attested in the checked canon and governed by GU-T053. The theorem statement itself keeps OpenLogic's enumerable scope explicit as finite or denumerable. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T135: infinitesimal → અનંતસૂક્ષ્મ
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/compactness.tex:132` (OLP-0135, “infinitesimal”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/compactness.tex:139` (OLP-0135, “અનંતસૂક્ષ્મ”)
+- **Authorities actually checked:** `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P050` (GU-VK-MATH, {"line_one_based": 80, "last_line_one_based": 80, "utf8_start": 39535, "utf8_end": 40685, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The compound expresses a nonzero magnitude smaller than every positive rational bound in the example. The checked mathematics passages support infinite, rational and real-number register, but do not directly attest this exact term.
+- **Alternatives:** અતિસૂક્ષ્મ — idiomatic but does not by itself encode the quantified smaller-than-every-standard-bound sense.; અનંતલઘુ — a possible learned-register form not found in the checked sources.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અનંતસૂક્ષ્મ’ accurately express ‘infinitesimal’ with the scope stated here: The compound expresses a nonzero magnitude smaller than every positive rational bound in the example. The checked mathematics passages support infinite, rational and real-number register, but do not directly attest this exact term. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T136: axiomatizable / decidable → સ્વયંસિદ્ધીકરણીય / નિર્ણેય
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical label; treat it as provisional.
+- **Record origin:** contemporaneous_completeness_translation; `work/add_completeness_terms.py`.
+- **English use:** `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:30` (OLP-0129, “axiomatizable”); `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:30` (OLP-0129, “decidable”)
+- **Gujarati use:** `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:29` (OLP-0129, “સ્વયંસિદ્ધીકરણીય”); `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:30` (OLP-0129, “નિર્ણેય”)
+- **Authorities actually checked:** `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The checked canon directly supports axiomatic systems, finite proof procedures and formal decision-oriented reasoning. The derived adjectives state respectively that a theory can be axiomatized and that sentence membership or truth is decidable; neither exact form is directly attested.
+- **Alternatives:** સ્વયંસિદ્ધિગમ્ય / નિર્ણયક્ષમ — plausible shorter compounds, but their precise technical scope is less explicit.; ઍક્સિયોમેટાઇઝેબલ / ડિસાઇડેબલ — transparent transliterations, but less consistent with the Gujarati scholarly register used here.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સ્વયંસિદ્ધીકરણીય / નિર્ણેય’ accurately express ‘axiomatizable / decidable’ with the scope stated here: The checked canon directly supports axiomatic systems, finite proof procedures and formal decision-oriented reasoning. The derived adjectives state respectively that a theory can be axiomatized and that sentence membership or truth is decidable; neither exact form is directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
 
 ## Difficult source-correction decisions
 
@@ -2105,3 +2215,223 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLAX-018 without changing any unaffected claim or formula?
+
+### OLCO-001: confirmed_duplicated_definite_article
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/introduction.tex` at `introduction.tex:61`; SHA-256 `e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/introduction.tex` body line(s) 55; adjacent note line 61; SHA-256 `9deed047b56ec031023874148b1cd98f81de7b783715e6c96fa85ed445b324fb`.
+- **Chosen handling:** Removed the duplicated article in translation and added an adjacent keyed note.
+- **Rationale:** The phrase the proof of is preceded by a second definite article.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-001 without changing any unaffected claim or formula?
+
+### OLCO-002: confirmed_plural_suffix_on_adjectival_term
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/introduction.tex` at `introduction.tex:70`; SHA-256 `e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/introduction.tex` body line(s) 65; adjacent note line 69; SHA-256 `9deed047b56ec031023874148b1cd98f81de7b783715e6c96fa85ed445b324fb`.
+- **Chosen handling:** Rendered denumerable as an adjective modifying one structure and added an adjacent keyed note.
+- **Rationale:** The adjectival token denumerable carries a plural suffix before singular model.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-002 without changing any unaffected claim or formula?
+
+### OLCO-003: confirmed_atomic_only_restriction_conflicts_with_completeness_definition
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/outline.tex` at `outline.tex:68`; SHA-256 `b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/outline.tex` body line(s) 63; adjacent note line 77; SHA-256 `5f9f5b5bc389566820a7a13c338771f5fd1614f5c19a9552aac872ea620cef64`.
+- **Chosen handling:** Removed the atomic-only restriction so the outline matches the complete-set definition and added an adjacent keyed note.
+- **Rationale:** Condition (b) requires a decision only for atomic sentences, while the definition immediately below requires a decision for every sentence.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-003 without changing any unaffected claim or formula?
+
+### OLCO-004: confirmed_singular_noun_after_all
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/outline.tex` at `outline.tex:76`; SHA-256 `b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/outline.tex` body line(s) 72; adjacent note line 82; SHA-256 `5f9f5b5bc389566820a7a13c338771f5fd1614f5c19a9552aac872ea620cef64`.
+- **Chosen handling:** Used the intended plural phrase all sentences and added an adjacent keyed note.
+- **Rationale:** The quantifier all is followed by singular sentence.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-004 without changing any unaffected claim or formula?
+
+### OLCO-005: confirmed_wrong_theory_in_identity_quotient_outline
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/outline.tex` at `outline.tex:126`; SHA-256 `b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/outline.tex` body line(s) 124; adjacent note line 132; SHA-256 `5f9f5b5bc389566820a7a13c338771f5fd1614f5c19a9552aac872ea620cef64`.
+- **Chosen handling:** Used Gamma-star as the theory controlling equality classes and added an adjacent keyed note.
+- **Rationale:** The quotient classes are said to collect terms that the original set Gamma requires equal, although the formal equivalence relation is defined from the completed extension Gamma-star.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-005 without changing any unaffected claim or formula?
+
+### OLCO-006: confirmed_missing_argument_on_formula_metavariable
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/henkin-expansions.tex` at `henkin-expansions.tex:141`; SHA-256 `353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/henkin-expansions.tex` body line(s) 139; adjacent note line 148; SHA-256 `681a89524550a5b248a4821a8b9dfe5993ce283a229ce8b2bebcc60b4293a1d3`.
+- **Chosen handling:** Restored A_n(x_n), matching the adjacent branch and definition, and added an adjacent keyed note.
+- **Rationale:** One branch omits the argument x_n from A_n inside a universal formula.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-006 without changing any unaffected claim or formula?
+
+### OLCO-007: confirmed_wrong_feature_gate_on_existential_clause
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/henkin-expansions.tex` at `henkin-expansions.tex:153`; SHA-256 `353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/henkin-expansions.tex` body line(s) 157; adjacent note line 164; SHA-256 `681a89524550a5b248a4821a8b9dfe5993ce283a229ce8b2bebcc60b4293a1d3`.
+- **Chosen handling:** Changed the clause gate to prvEx, matching the formal proposition below, and added an adjacent keyed note.
+- **Rationale:** The explanatory existential-instance clause is gated by prvAll rather than prvEx.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-007 without changing any unaffected claim or formula?
+
+### OLCO-008: confirmed_missing_empty_finite_subset_case
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex` at `lindenbaums-lemma.tex:78`; SHA-256 `096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/lindenbaums-lemma.tex` body line(s) 75; adjacent note line 92; SHA-256 `f935fb4f466f9b2fecfaec834d7d4429cef602559072c463d694507ab6e11b69`.
+- **Chosen handling:** Separated the empty subset case before selecting a largest index and added an adjacent keyed note.
+- **Rationale:** The proof selects the largest index contributed by an arbitrary finite subset without handling the empty subset, for which no such index exists.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-008 without changing any unaffected claim or formula?
+
+### OLCO-009: confirmed_quantifier_truth_lemma_requires_closed_terms
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/construction-of-model.tex` at `construction-of-model.tex:243`; SHA-256 `4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/construction-of-model.tex` body line(s) 22; adjacent note line 274; SHA-256 `b5b8005342e5e6c3e6605a5b43f8a64acf3f8e2355ee51c97708befa54196365`.
+- **Chosen handling:** Restricted all four occurrences to closed terms and added an adjacent keyed note.
+- **Rationale:** Four quantifier-case occurrences say terms without the closed-term restriction required by the cited term-model and saturation propositions.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-009 without changing any unaffected claim or formula?
+
+### OLCO-010: confirmed_wrong_matrix_metavariable_in_universal_induction_case
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/construction-of-model.tex` at `construction-of-model.tex:247`; SHA-256 `4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/construction-of-model.tex` body line(s) 257; adjacent note line 282; SHA-256 `b5b8005342e5e6c3e6605a5b43f8a64acf3f8e2355ee51c97708befa54196365`.
+- **Chosen handling:** Restored B as the quantified matrix and added an adjacent keyed note.
+- **Rationale:** The universal induction case ends with forall x A(x), though the case assumption identifies A with forall x B(x).
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-010 without changing any unaffected claim or formula?
+
+### OLCO-011: confirmed_duplicated_comma_in_function_term
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/identity.tex` at `identity.tex:69`; SHA-256 `bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/identity.tex` body line(s) 44; adjacent note line 81; SHA-256 `9fed54ac2824ca92bc5828157f54e8314961039ed8e7afc4eb98c3cb16d72a93`.
+- **Chosen handling:** Removed the stray comma and added an adjacent keyed note.
+- **Rationale:** The first compound function term contains a duplicated comma after t_{i+1}.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-011 without changing any unaffected claim or formula?
+
+### OLCO-012: confirmed_wrong_representative_in_well_definedness_countercase
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/identity.tex` at `identity.tex:126`; SHA-256 `bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/identity.tex` body line(s) 129; adjacent note line 138; SHA-256 `9fed54ac2824ca92bc5828157f54e8314961039ed8e7afc4eb98c3cb16d72a93`.
+- **Chosen handling:** Used R(t-prime) in the alternative-representative premise and added an adjacent keyed note.
+- **Rationale:** The discussion introduces an alternative representative t-prime but states non-satisfaction for R(t), repeating the original representative.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-012 without changing any unaffected claim or formula?
+
+### OLCO-013: confirmed_incomplete_justification_of_first_identity_truth_equivalence
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/identity.tex` at `identity.tex:187`; SHA-256 `bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/identity.tex` body line(s) 196; adjacent note line 204; SHA-256 `9fed54ac2824ca92bc5828157f54e8314961039ed8e7afc4eb98c3cb16d72a93`.
+- **Chosen handling:** Cited the value lemma together with the identity interpretation and added an adjacent keyed note.
+- **Rationale:** The first Truth Lemma equivalence is attributed only to the quotient-structure definition, omitting the lemma that computes term values as equivalence classes.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-013 without changing any unaffected claim or formula?
+
+### OLCO-014: confirmed_malformed_variable_types_in_compactness_statement
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/compactness.tex` at `compactness.tex:35`; SHA-256 `427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/compactness.tex` body line(s) 33; adjacent note line 42; SHA-256 `fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858`.
+- **Chosen handling:** Stated the two variable types explicitly and added an adjacent keyed note.
+- **Rationale:** The theorem calls both Gamma and A sentences, although Gamma is a set of sentences and A is one sentence.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-014 without changing any unaffected claim or formula?
+
+### OLCO-015: confirmed_malformed_model_existence_sentence_and_variable_shadowing
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/compactness.tex` at `compactness.tex:118`; SHA-256 `427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/compactness.tex` body line(s) 119; adjacent note line 125; SHA-256 `fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858`.
+- **Chosen handling:** Introduced a fresh structure N and separately stated that N satisfies Gamma union Delta, then added an adjacent keyed note.
+- **Rationale:** The sentence says there are models followed by a satisfaction formula rather than a structure, and it reuses M from the finite-subset construction.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-015 without changing any unaffected claim or formula?
+
+### OLCO-016: confirmed_malformed_quantifier_scope_in_infinitesimal_example
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/compactness.tex` at `compactness.tex:145`; SHA-256 `427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/compactness.tex` body line(s) 152; adjacent note line 163; SHA-256 `fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858`.
+- **Chosen handling:** Stated that every relevant sentence occurring in Delta-zero has index k below K and added an adjacent keyed note.
+- **Rationale:** The phrase for all the sentences ... have k<K is grammatically malformed and obscures the scope of the index bound.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-016 without changing any unaffected claim or formula?
+
+### OLCO-017: confirmed_missing_empty_delta_prime_case
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/compactness.tex` at `compactness.tex:190`; SHA-256 `427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/compactness.tex` body line(s) 199; adjacent note line 210; SHA-256 `fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858`.
+- **Chosen handling:** Separated the empty Delta-prime case before selecting the maximum and added an adjacent keyed note.
+- **Rationale:** The proof chooses the largest n represented in an arbitrary finite Delta-prime without handling the empty set.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-017 without changing any unaffected claim or formula?
+
+### OLCO-018: confirmed_incomplete_direct_truth_lemma_adaptation
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/compactness-direct.tex` at `compactness-direct.tex:139`; SHA-256 `7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/compactness-direct.tex` body line(s) 144; adjacent note line 162; SHA-256 `46656017e4ea4b32f5374388da42ede76b1796ac27f0dbb6088a46b3a3326319`.
+- **Chosen handling:** Added the finite-satisfiability arguments establishing false is absent, true is present and negation membership complements membership, then added an adjacent keyed note.
+- **Rationale:** The source says that changing two cited propositions makes the Truth Lemma proof go through, but its falsity, truth and negation cases also invoke consistency directly.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-018 without changing any unaffected claim or formula?
+
+### OLCO-019: confirmed_missing_identity_quotient_case_in_direct_compactness_proof
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/compactness-direct.tex` at `compactness-direct.tex:22`; SHA-256 `7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/compactness-direct.tex` body line(s) 152; adjacent note line 168; SHA-256 `46656017e4ea4b32f5374388da42ede76b1796ac27f0dbb6088a46b3a3326319`.
+- **Chosen handling:** Added the quotient term-model case, including finite-satisfiability arguments for well-definedness, and added an adjacent keyed note.
+- **Rationale:** The general first-order compactness proof constructs only the plain term model and cites a Truth Lemma explicitly restricted to formulas without identity.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-019 without changing any unaffected claim or formula?
+
+### OLCO-020: confirmed_wrong_language_scope_for_henkin_term_domain
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/downward-ls.tex` at `downward-ls.tex:29`; SHA-256 `31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/downward-ls.tex` body line(s) 27; adjacent note line 32; SHA-256 `f10ba30be44d7dd4ca2da7dec80f9f23ab5a71117db2a6ecce1b515d66754549`.
+- **Chosen handling:** Used the expanded language L-prime, whose term set remains countable, and added an adjacent keyed note.
+- **Rationale:** The proof bounds the constructed domain by terms of the original language L, although the completeness construction first adds Henkin constants and uses terms of the expanded language L-prime.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-020 without changing any unaffected claim or formula?
+
+### OLCO-021: confirmed_missing_third_argument_on_fol_conditional
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/construction-of-model.tex` at `construction-of-model.tex:75`; SHA-256 `4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/construction-of-model.tex` body line(s) 95; adjacent note line 98; SHA-256 `b5b8005342e5e6c3e6605a5b43f8a64acf3f8e2355ee51c97708befa54196365`.
+- **Chosen handling:** Added the required empty false branch and an adjacent keyed note.
+- **Rationale:** The FOL-only term-value block supplies only two of iftag's three required arguments.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-021 without changing any unaffected claim or formula?
+
+### OLCO-022: confirmed_missing_third_argument_on_fol_conditional
+
+- **Frozen source:** `upstream/content/first-order-logic/completeness/compactness-direct.tex` at `compactness-direct.tex:140`; SHA-256 `7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122`.
+- **Gujarati target:** `gu/content/first-order-logic/completeness/compactness-direct.tex` body line(s) 143; adjacent note line 175; SHA-256 `46656017e4ea4b32f5374388da42ede76b1796ac27f0dbb6088a46b3a3326319`.
+- **Chosen handling:** Added the required empty false branch and an adjacent keyed note.
+- **Rationale:** The FOL-only clause naming the saturation reference supplies no third argument to iftag.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLCO-022 without changing any unaffected claim or formula?

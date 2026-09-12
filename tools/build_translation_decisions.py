@@ -26,10 +26,10 @@ STATE = Path(r"C:\interlanguage-task-state\openlogic-gu-Gujr-IN")
 OUT = ROOT / "docs" / "translation-decisions"
 SCHEMA_PATH = OUT / "translation-decision.schema.json"
 SOURCE_REVISION = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
-BODY_PATH = ROOT / "build" / "axiomatic-deduction-body.tex"
-PDF_PATH = ROOT / "build" / "gu-axiomatic-deduction.pdf"
-SYNCTEX_PATH = ROOT / "build" / "gu-axiomatic-deduction.synctex.gz"
-BUILD_RECEIPT_PATH = ROOT / "build" / "BUILD_RECEIPT_012.json"
+BODY_PATH = ROOT / "build" / "completeness-body.tex"
+PDF_PATH = ROOT / "build" / "gu-completeness.pdf"
+SYNCTEX_PATH = ROOT / "build" / "gu-completeness.synctex.gz"
+BUILD_RECEIPT_PATH = STATE / "BUILD_RECEIPT_013.json"
 BT = chr(96)
 
 EDITION = {
@@ -80,6 +80,13 @@ MANUAL_OCCURRENCES = {
         "source_line": 100,
         "target_path": "gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex",
         "target_line": 98,
+    },
+    "GU-T131": {
+        "unit_id": "OLP-0136",
+        "source_path": "upstream/content/first-order-logic/completeness/compactness-direct.tex",
+        "source_line": 28,
+        "target_path": "gu/content/first-order-logic/completeness/compactness-direct.tex",
+        "target_line": 25,
     },
 }
 
@@ -902,14 +909,17 @@ def unique_token_aligned_line(
         overlap = len(words & gujarati_words(body_window))
         coverage = overlap / len(words)
         if overlap >= 2 and coverage >= 0.5:
-            scored.append((overlap, coverage, index + 1))
+            line_overlap = len(
+                exact_words & gujarati_words(body_lines[index])
+            )
+            scored.append((overlap, coverage, line_overlap, index + 1))
     if not scored:
         return None
     scored.sort(reverse=True)
     best = scored[0]
-    if len(scored) > 1 and scored[1][:2] == best[:2]:
+    if len(scored) > 1 and scored[1][:3] == best[:3]:
         return None
-    return best[2], "unique Gujarati-token window alignment"
+    return best[3], "unique Gujarati-token window alignment"
 
 
 def find_body_line(target: dict[str, Any], decision_id: str) -> tuple[int, str] | None:
@@ -918,7 +928,7 @@ def find_body_line(target: dict[str, Any], decision_id: str) -> tuple[int, str] 
     body_lines = BODY_PATH.read_text(encoding="utf-8").splitlines()
     target_path = repo_path(target["path"])
     target_lines = target_path.read_text(encoding="utf-8").splitlines()
-    if decision_id.startswith(("OLFUN-", "OLSIZ-", "OLARI-", "OLINF-", "OLPL-", "OLPRF-", "OLSEQ-", "OLND-", "OLTAB-", "OLAX-")):
+    if decision_id.startswith(("OLFUN-", "OLSIZ-", "OLARI-", "OLINF-", "OLPL-", "OLPRF-", "OLSEQ-", "OLND-", "OLTAB-", "OLAX-", "OLCO-")):
         note = r"\sourcecorrection{" + decision_id + "}"
         matches = [
             index + 1
@@ -986,9 +996,9 @@ def synctex_page(body_line: int) -> int | None:
         "synctex",
         "view",
         "-i",
-        f"{body_line}:1:build/axiomatic-deduction-body.tex",
+        f"{body_line}:1:build/completeness-body.tex",
         "-o",
-        "build/gu-axiomatic-deduction.pdf",
+        "build/gu-completeness.pdf",
     ]
     completed = subprocess.run(
         command,
@@ -1055,11 +1065,11 @@ def attach_reader_locators(decisions: list[dict[str, Any]]) -> dict[str, int]:
                     "status": "available",
                     "artifact_filename": PDF_PATH.name,
                     "artifact_sha256": pdf_hash,
-                    "profile": "cumulative Gujarati reader through OLP-0125; classical first-order axiomatic deduction with identity",
+                    "profile": "cumulative Gujarati reader through OLP-0137; classical first-order completeness with identity",
                     "printed_page": None,
                     "assembled_pdf_page": page,
                     "provenance": (
-                        f"SyncTeX forward query at build/axiomatic-deduction-body.tex:{body_line}; "
+                        f"SyncTeX forward query at build/completeness-body.tex:{body_line}; "
                         f"target mapping method: {method}. Printed page was not inferred."
                     ),
                 }
@@ -1082,7 +1092,7 @@ def markdown_full(decisions: list[dict[str, Any]], generated: str) -> str:
     lines = [
         "# Full Gujarati translation-decision register",
         "",
-        f"Generated {generated}. This register covers all {len(decisions)} material decisions recorded for the current 122/722-unit working edition. Each occurrence has exact source and Gujarati line and UTF-8 byte evidence. Reader pages are reported only when deterministic alignment and SyncTeX agree; unresolved pages remain explicitly pending.",
+        f"Generated {generated}. This register covers all {len(decisions)} material decisions recorded for the current 134/722-unit working edition. Each occurrence has exact source and Gujarati line and UTF-8 byte evidence. Reader pages are reported only when deterministic alignment and SyncTeX agree; unresolved pages remain explicitly pending.",
         "",
     ]
     for decision in decisions:
@@ -1175,7 +1185,7 @@ def markdown_start(
     )
     return f"""# Start here: Gujarati translation decisions
 
-This directory is the review entry point for the current 122/722-unit Gujarati
+This directory is the review entry point for the current 134/722-unit Gujarati
 working edition.
 
 - {BT}DECISIONS.json{BT} is the canonical schema-valid register.
@@ -1305,7 +1315,7 @@ def main() -> None:
         item["source_id"]: item
         for item in read_jsonl(STATE / "CANON_SOURCES.jsonl")
     }
-    assert len(terms) == 126
+    assert len(terms) == 136
     assert len(passages) == 77
 
     decisions = [
@@ -1319,7 +1329,7 @@ def main() -> None:
         for item in receipt["corrections"]:
             decisions.append(correction_decision(receipt_path, receipt, item))
             correction_count += 1
-    assert correction_count == 71
+    assert correction_count == 93
     decisions.extend(scope_decisions(passages, canon_sources))
 
     reader_counts = attach_reader_locators(decisions)
@@ -1333,9 +1343,9 @@ def main() -> None:
             "doi": None,
             "source_revision": SOURCE_REVISION,
             "coverage_state": "partial",
-            "source_units": 122,
+            "source_units": 134,
             "reader_units": (
-                122
+                134
                 if BUILD_RECEIPT_PATH.exists()
                 and json.loads(BUILD_RECEIPT_PATH.read_text(encoding="utf-8")).get(
                     "status"
@@ -1421,7 +1431,7 @@ def main() -> None:
             "upstream_revision": "811091d54be4989918864732073279a588340e6f",
         },
         "coverage": {
-            "source_units": 122,
+            "source_units": 134,
             "total_source_units": 722,
             "term_decisions": len(terms),
             "source_correction_decisions": correction_count,

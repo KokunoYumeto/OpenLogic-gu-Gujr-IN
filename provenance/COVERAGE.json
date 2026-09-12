@@ -1,9 +1,9 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 122,
-  "working_scope": "Complete cumulative translation through First-order Logic Axiomatic Deduction, OLP-0004–0125",
-  "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, and reviewer-decision-package QA passed",
+  "translated": 134,
+  "working_scope": "Complete cumulative translation through First-order Logic Completeness, OLP-0004–0137",
+  "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
   "public_release": {
     "tag": "axiomatic-deduction-v0.6.0",
     "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/axiomatic-deduction-v0.6.0",
@@ -13,7 +13,7 @@
   "public_source_checkpoint": {
     "commit": "fe70fbfdcb69eb2b4a08d4ade8dfc0113857fc96",
     "translated": 122,
-    "scope": "Anonymously verified source checkpoint through First-order Axiomatic Deduction, OLP-0004–0125"
+    "scope": "Previous anonymously verified source checkpoint through First-order Axiomatic Deduction, OLP-0004–0125; checkpoint 013 is represented by the commit containing this file"
   },
   "complete_edition": false,
   "units": [
@@ -893,73 +893,85 @@
       "unit_id": "OLP-0126",
       "source_path": "content/first-order-logic/completeness/completeness.tex",
       "source_sha256": "4d9dd7fc873888fde7d70bf45fa122465858092c4f7a979741067b3bda88eb18",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "b407d8168a9b5166328c82df878299e2ae9042ae2a14a289b3c684c6cf492bb5"
     },
     {
       "unit_id": "OLP-0127",
       "source_path": "content/first-order-logic/completeness/introduction.tex",
       "source_sha256": "e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "9deed047b56ec031023874148b1cd98f81de7b783715e6c96fa85ed445b324fb"
     },
     {
       "unit_id": "OLP-0128",
       "source_path": "content/first-order-logic/completeness/outline.tex",
       "source_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "5f9f5b5bc389566820a7a13c338771f5fd1614f5c19a9552aac872ea620cef64"
     },
     {
       "unit_id": "OLP-0129",
       "source_path": "content/first-order-logic/completeness/complete-consistent-sets.tex",
       "source_sha256": "6473c646a48e854478ef1388de877eb61bcd8b912179347703f86b655de0ae4f",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "55fb93bd50013cb73cdafad6a06cdeab3d34509eec9d2a2826c833e46c4fe89a"
     },
     {
       "unit_id": "OLP-0130",
       "source_path": "content/first-order-logic/completeness/henkin-expansions.tex",
       "source_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "681a89524550a5b248a4821a8b9dfe5993ce283a229ce8b2bebcc60b4293a1d3"
     },
     {
       "unit_id": "OLP-0131",
       "source_path": "content/first-order-logic/completeness/lindenbaums-lemma.tex",
       "source_sha256": "096a854cefe8f47251e7ad20747bda7e3832a0272a8e38ba71d732d913a9be47",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "f935fb4f466f9b2fecfaec834d7d4429cef602559072c463d694507ab6e11b69"
     },
     {
       "unit_id": "OLP-0132",
       "source_path": "content/first-order-logic/completeness/construction-of-model.tex",
       "source_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "b5b8005342e5e6c3e6605a5b43f8a64acf3f8e2355ee51c97708befa54196365"
     },
     {
       "unit_id": "OLP-0133",
       "source_path": "content/first-order-logic/completeness/identity.tex",
       "source_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "9fed54ac2824ca92bc5828157f54e8314961039ed8e7afc4eb98c3cb16d72a93"
     },
     {
       "unit_id": "OLP-0134",
       "source_path": "content/first-order-logic/completeness/completeness-thm.tex",
       "source_sha256": "2e28c82c4787c75fc159295bf38adfb4aa5e1dff0025c237cd750bfc33964ecb",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "9e809d33b143be7596c61d732e127fd4b4890df86619a8b19807a8a6236aae3c"
     },
     {
       "unit_id": "OLP-0135",
       "source_path": "content/first-order-logic/completeness/compactness.tex",
       "source_sha256": "427e195e6bab0024f56954406ec4d9303573e4c2c796e8bf7446c45fcf253407",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858"
     },
     {
       "unit_id": "OLP-0136",
       "source_path": "content/first-order-logic/completeness/compactness-direct.tex",
       "source_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "46656017e4ea4b32f5374388da42ede76b1796ac27f0dbb6088a46b3a3326319"
     },
     {
       "unit_id": "OLP-0137",
       "source_path": "content/first-order-logic/completeness/downward-ls.tex",
       "source_sha256": "31e60aefb151429d7af1e982f1d44a05c4a4b37b8ea03d8163016fdf6d6058d3",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "f10ba30be44d7dd4ca2da7dec80f9f23ab5a71117db2a6ecce1b515d66754549"
     },
     {
       "unit_id": "OLP-0138",

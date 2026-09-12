@@ -1,0 +1,215 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{com}}
+      {\olfileid{pl}{com}{com}}
+
+\olsection{સઘનતા પ્રમેય}
+
+પૂર્ણતા પ્રમેયનું એક મહત્વનું પરિણામ સઘનતા પ્રમેય છે. સઘનતા પ્રમેય
+કહે છે કે જો !!{sentence}sના ગણનો દરેક \emph{સાન્ત} ઉપગણ સંતોષ્ય હોય,
+તો આખો ગણ સંતોષ્ય છે—ભલે ગણ પોતે અનંત હોય. આ જરાય સ્પષ્ટ નથી. પહેલી
+નજરે તો એવું કશું દેખાતું નથી જે એવી સંભાવના નકારે કે !!{sentence}sના
+કેટલાક અનંત ગણ વિરોધાભાસી હોય, પરંતુ વિરોધાભાસ જાણે અનંત સંખ્યાને
+કારણે જ ઊભો થતો હોય. સઘનતા પ્રમેય કહે છે કે આવી પરિસ્થિતિ થઈ શકતી
+નથી: !!{sentence}sનો એવો કોઈ અસંતોષ્ય અનંત ગણ નથી જેનો દરેક સાન્ત ઉપગણ સંતોષ્ય
+હોય. પૂર્ણતા પ્રમેયની જેમ તેનું ફલિતતા સાથે જોડાયેલું નિરૂપણ પણ છે:
+જો !!{sentence}sનો અનંત ગણ કંઈક ફલિત કરે, તો તેનો કોઈ સાન્ત ઉપગણ તે
+પહેલેથી જ ફલિત કરે છે.
+
+\begin{defn}
+  !!{formula}sનો ગણ~$\Gamma$ \emph{સાન્ત રીતે સંતોષ્ય} છે જો અને માત્ર
+  જો દરેક સાન્ત $\Gamma_0\subseteq\Gamma$ સંતોષ્ય છે.
+\end{defn}
+
+\begin{thm}[સઘનતા પ્રમેય]
+\ollabel{thm:compactness}
+!!{sentence}sના કોઈ પણ ગણ~$\Gamma$ અને વાક્ય~$!A$ માટે નીચેના દાવા
+સાચા છે:
+\begin{enumerate}
+  \item $\Gamma\Entails !A$ જો અને માત્ર જો એવો સાન્ત
+    $\Gamma_0\subseteq\Gamma$ છે કે $\Gamma_0\Entails !A$.
+  \item $\Gamma$ સંતોષ્ય છે જો અને માત્ર જો તે સાન્ત રીતે સંતોષ્ય છે.
+\end{enumerate}
+\end{thm}
+
+\sourcecorrection{OLCO-014}{મૂળની \texttt{compactness.tex}, પંક્તિ~35માં
+``any sentences $\Gamma$ and $!A$'' લખ્યું છે, જોકે~$\Gamma$ વાક્ય
+નહિ પણ વાક્યોનો ગણ છે. અહીં ચલોનો પ્રકાર સ્પષ્ટ કર્યો છે.}
+
+\begin{proof}
+આપણે~(2) સાબિત કરીએ. જો~$\Gamma$ સંતોષ્ય હોય, તો એવી
+\iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
+છે કે દરેક $!A\in\Gamma$ માટે
+$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. અલબત્ત, આ
+$\iftag{FOL}{\Struct{M}}{\pAssign{v}}$~$\Gamma$ના દરેક સાન્ત ઉપગણને
+પણ સંતોષે છે, તેથી~$\Gamma$ સાન્ત રીતે સંતોષ્ય છે.
+
+હવે ધારો કે~$\Gamma$ સાન્ત રીતે સંતોષ્ય છે. તો દરેક સાન્ત ઉપગણ
+$\Gamma_0\subseteq\Gamma$ સંતોષ્ય છે. યથાર્થતા મુજબ
+(\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:sou:cor:consistency-soundness},
+    prfSC/{fol:seq:sou:cor:consistency-soundness},
+    prfND/{fol:ntd:sou:cor:consistency-soundness},
+    prfTab/{fol:tab:sou:cor:consistency-soundness}}}{%
+  \tagrefs{prfAX/{pl:axd:sou:cor:consistency-soundness},
+    prfSC/{pl:seq:sou:cor:consistency-soundness},
+    prfND/{pl:ntd:sou:cor:consistency-soundness},
+    prfTab/{pl:tab:sou:cor:consistency-soundness}}}),
+દરેક સાન્ત ઉપગણ સુસંગત છે. હવે
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:ptn:prop:proves-compact},
+    prfSC/{fol:seq:ptn:prop:proves-compact},
+    prfND/{fol:ntd:ptn:prop:proves-compact},
+    prfTab/{fol:tab:ptn:prop:proves-compact}}}{%
+  \tagrefs{prfAX/{pl:axd:ptn:prop:proves-compact},
+    prfSC/{pl:seq:ptn:prop:proves-compact},
+    prfND/{pl:ntd:ptn:prop:proves-compact},
+    prfTab/{pl:tab:ptn:prop:proves-compact}}}
+મુજબ~$\Gamma$ પોતે સુસંગત હોવો જ જોઈએ. પૂર્ણતા મુજબ
+(\olref[cth]{thm:completeness}), ~ $\Gamma$ સુસંગત હોવાથી તે સંતોષ્ય છે.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][com]{thm:compactness}નો~(1) સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][com]{thm:compactness}નો~(1) સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{ex}
+સિદ્ધાંત~$\Gamma$ના દરેક નિદર્શ~$\Struct{M}$માં દરેક પદ~$t$ અલબત્ત
+~$\Domain{M}$નો કોઈ !!a{element} નિર્દિષ્ટ કરે છે. શું આપણે એ પણ
+ખાતરી આપી શકીએ કે~$\Domain{M}$નો દરેક !!{element} કોઈ ને કોઈ પદથી
+નિર્દિષ્ટ થાય? બીજા શબ્દોમાં, શું એવા સિદ્ધાંતો~$\Gamma$ છે કે જેમના
+બધા નિદર્શો આવૃત હોય? સઘનતા પ્રમેય બતાવે છે કે જો~$\Gamma$ના અનંત
+નિદર્શો હોય, તો એવું નથી. આ જોવા માટે: ધારો કે~$\Struct{M}$ એ
+~$\Gamma$નો અનંત નિદર્શ છે અને~$c$ એવું !!a{constant} છે જે
+~$\Gamma$ની ભાષામાં નથી. ~ $\Gamma$ની ભાષા~$\Lang{L}$ના દરેક પદ~$t$
+માટે વાક્યો~$\eq/[c][t]$નો ગણ~$\Delta$ લો, એટલે કે
+  \[
+  \Delta = \Setabs{\eq/[c][t]}{t \in \Trm[L]}.
+  \]
+~$\Gamma\cup\Delta$નો કોઈ સાન્ત ઉપગણ $\Gamma'\cup\Delta'$ સ્વરૂપે
+લખી શકાય, જ્યાં $\Gamma'\subseteq\Gamma$ અને
+$\Delta'\subseteq\Delta$. ~ $\Delta'$ સાન્ત હોવાથી તેમાં સાન્ત
+સંખ્યામાં જ પદો આવી શકે. એવો $a \in \Domain{M}$ લો જે
+~$\Domain{M}$નો !!a{element} છે અને તેમાંથી કોઈ પદથી નિર્દિષ્ટ થતો ન
+હોય; અને એવી !!{structure}
+~$\Struct{M'}$ લો જે~$\Struct{M}$ જેવી જ છે, પણ જેમાં વધુમાં
+$\Assign{c}{M'}=a$. ~ $\Delta'$માં આવતા દરેક~$t$ માટે
+$a\neq\Value{t}{M}$ હોવાથી $\Sat{M'}{\Delta'}$. વળી
+$\Sat{M}{\Gamma}$, $\Gamma'\subseteq\Gamma$, અને~$c$ એ~$\Gamma$માં
+ન આવતું હોવાથી $\Sat{M'}{\Gamma'}$. તેથી
+$\Gamma\cup\Delta$ના દરેક સાન્ત ઉપગણ $\Gamma'\cup\Delta'$ માટે
+$\Sat{M'}{\Gamma'\cup\Delta'}$. આમ~$\Gamma\cup\Delta$નો દરેક સાન્ત
+ઉપગણ સંતોષ્ય છે. સઘનતા મુજબ~$\Gamma\cup\Delta$ પોતે સંતોષ્ય છે.
+તેથી એવી !!{structure}s~$\Struct{N}$ છે કે
+$\Sat{N}{\Gamma\cup\Delta}$. આવી દરેક~$\Struct{N}$ એ~$\Gamma$નો
+નિદર્શ છે, પરંતુ આવૃત નથી, કારણ કે~$\Lang{L}$ના દરેક પદ~$t$ માટે
+$\Value{c}{N}\neq\Value{t}{N}$.
+\end{ex}
+
+\sourcecorrection{OLCO-015}{મૂળની \texttt{compactness.tex}, પંક્તિ~120માં
+``there are models $\Sat{M}{\Gamma\cup\Delta}$''થી સંરચનાને સંતોષના
+સૂત્ર સાથે વ્યાકરણવિરુદ્ધ રીતે સરખાવવામાં આવી છે અને અગાઉના~$M$નો
+પુનઃઉપયોગ થાય છે. અહીં નવી સંરચના~$N$ માટે સંતોષ-દાવો સ્પષ્ટ કર્યો છે.}
+
+\begin{ex}
+એવી !!a{language}~$\Lang{L}$ વિચારો જેમાં !!{predicate}~$<$,
+!!{constant}s~$\Obj{0}$, $\Obj{1}$ અને !!{function}s $+$, $\times$ તથા
+$-$ છે. આ !!{language}માંનાં એવા બધાં !!{sentence}sનો ગણ~$\Gamma$ લો
+જે વ્યાપકક્ષેત્ર~$\Rat$ અને સ્વાભાવિક અર્થઘટનોવાળી
+!!{structure}~$\Struct{Q}$માં સાચાં છે. આમ~$\Gamma$ એ~$\Lang{L}$નાં
+સંમેય સંખ્યાઓ અંગે સાચાં બધાં !!{sentence}sનો ગણ છે. અલબત્ત,~$\Rat$માં
+(અને~$\Real$માં પણ) એવી કોઈ સંખ્યા~$r$ નથી જે~$0$ કરતાં મોટી, પરંતુ
+દરેક $k\in\PosInt$ માટે $1/k$ કરતાં નાની હોય. જો આવી સંખ્યા હોત, તો તે
+\emph{અનંતસૂક્ષ્મ} હોત: શૂન્યેતર, પરંતુ અનંત રીતે નાની. સઘનતા પ્રમેય
+વાપરીને બતાવી શકાય છે કે~$\Gamma$ના એવા નિદર્શો છે જેમાં અનંતસૂક્ષ્મો
+અસ્તિત્વ ધરાવે છે. આપણી ભાષામાં ભાગાકાર માટે !!a{function} નથી
+(શૂન્ય વડે ભાગાકાર અવ્યાખ્યાયિત છે, જ્યારે !!{function}sનું અર્થઘટન
+સર્વત્ર વ્યાખ્યાયિત વિધેયોથી કરવું પડે છે). તેમ છતાં $r<1/k$ વ્યક્ત
+કરી શકાય છે, કારણ કે આ સાચું હોય જો અને માત્ર જો $r\cdot k<1$. હવે
+~$c$ કોઈ નવું !!{constant} અને~$\Delta$ નીચેનો ગણ લો:
+\[
+\{\Obj{0}<c\}
+\cup \Setabs{c\times\num k<\Obj{1}}{k\in\PosInt}
+\]
+(જ્યાં $\num{k}=(\Obj{1}+(\Obj{1}+\dots+(\Obj{1}+\Obj{1})\dots))$માં
+$k$ વાર~$\Obj{1}$ આવે છે). ~ $\Delta$ના કોઈ પણ સાન્ત ઉપગણ
+~$\Delta_0$ માટે એવું~$K$ હોય છે કે~$\Delta_0$માં આવતાં બધા
+!!{sentence}s $c\times\num{k}<\Obj{1}$ માટે $k<K$. જો~$\Struct{Q}$ને
+$\Assign{c}{Q'}=1/K$ સાથે~$\Struct{Q'}$ સુધી વિસ્તારીએ, તો કોઈ પણ
+સાન્ત $\Gamma_0\subseteq\Gamma$ માટે
+$\Sat{Q'}{\Gamma_0\cup\Delta_0}$; અને તેથી~$\Gamma\cup\Delta$ સાન્ત
+રીતે સંતોષ્ય છે (પ્રશ્ન: આ વિગતવાર સાબિત કરો). સઘનતા મુજબ
+~$\Gamma\cup\Delta$ સંતોષ્ય છે. ~ $\Gamma\cup\Delta$ના કોઈ પણ નિદર્શ
+~$\Struct{S}$માં અનંતસૂક્ષ્મ છે, એટલે કે~$\Assign{c}{S}$.
+\end{ex}
+}{}
+
+\sourcecorrection{OLCO-016}{મૂળની \texttt{compactness.tex},
+પંક્તિઓ~157--158માં ``for all the sentences ... have'' એવી ખામીયુક્ત
+રચના છે. અહીં પરિમાણનો વ્યાપ સ્પષ્ટ કરીને દરેક સંબંધિત વાક્યનો સૂચક
+$k<K$ છે તેમ લખ્યું છે.}
+
+\tagprob{FOL}
+\begin{prob}
+અંકગણિતના પ્રમાણભૂત નિદર્શ~$\Struct{N}$માં એવો કોઈ
+!!{element}~$k\in\Domain{N}$ નથી જે દરેક સૂત્ર~$\num{n}<x$ને સંતોષે
+(જ્યાં~$\num{n}$ એ~$n$~$\prime$ ધરાવતું
+$\Obj{0}^{\prime\dots\prime}$ છે). સઘનતા પ્રમેય વાપરીને બતાવો કે
+અંકગણિતની ભાષાનાં પ્રમાણભૂત નિદર્શ~$\Struct{N}$માં સાચાં વાક્યો કોઈ
+એવી !!a{structure}~$\Struct{N'}$માં પણ સાચાં છે જેમાં દરેક સૂત્ર
+$\num{n}<x$ને સંતોષતો !!a{element} \emph{હોય છે}.
+\end{prob}
+\tagendprob
+
+\iftag{FOL}{%
+\begin{ex}
+આપણે જાણીએ છીએ કે !!{identity} ધરાવતું પ્રથમ-ક્રમ તર્કશાસ્ત્ર
+!!{domain}નું કદ ઓછામાં ઓછું અમુક કદનું હોવું જોઈએ તે વ્યક્ત કરી શકે
+છે: વાક્ય~$!A_{\ge n}$ (જે કહે છે કે ``ઓછામાં ઓછા~$n$ જુદા પદાર્થો
+છે'') ફક્ત એવી સંરચનાઓમાં સાચું છે જેમાં~$\Domain{M}$માં ઓછામાં ઓછા
+~$n$ પદાર્થો હોય. તેથી જો લઈએ
+  \[
+  \Delta = \Setabs{!A_{\ge n}}{n \ge 1}
+  \]
+તો~$\Delta$નો દરેક નિદર્શ અનંત હોવો જ જોઈએ. આમ કોઈ સિદ્ધાંતમાં
+~$\Delta$ ઉમેરીને ખાતરી કરી શકાય છે કે તેને માત્ર અનંત નિદર્શો જ હોય:
+~$\Gamma\cup\Delta$ના નિદર્શો બરાબર~$\Gamma$ના અનંત નિદર્શો છે.
+
+આમ પ્રથમ-ક્રમ તર્કશાસ્ત્ર અનંતતા વ્યક્ત કરી શકે છે. પરંતુ સઘનતા પ્રમેય
+બતાવે છે કે તે સાન્તતા વ્યક્ત કરી શકતું નથી. પ્રતિપક્ષે ધારો કે
+વાક્યોનો કોઈ ગણ~$\Lambda$ બધી અને માત્ર સાન્ત !!{structure}sમાં
+સંતોષાતો હોય. તો~$\Delta\cup\Lambda$ સાન્ત રીતે સંતોષ્ય છે. શા માટે?
+ધારો કે $\Delta'\cup\Lambda'\subseteq\Delta\cup\Lambda$ સાન્ત છે,
+જ્યાં $\Delta'\subseteq\Delta$ અને $\Lambda'\subseteq\Lambda$. જો
+~$\Delta'$ ખાલી હોય, તો કોઈ પણ સાન્ત !!{structure} તેને અને~$\Lambda'$ને
+સંતોષે છે. અન્યથા, $!A_{\ge n}\in\Delta'$ હોય એમાં સૌથી મોટી સંખ્યા
+~$n$ લો. ~ $\Lambda$ બધી સાન્ત સંરચનાઓમાં સંતોષાતો હોવાથી તેને સાન્ત,
+પરંતુ~$\ge n$ !!{element}sવાળો નિદર્શ~$\Struct{M}$ છે. પરંતુ
+પછી $\Sat{M}{\Delta'\cup\Lambda'}$. સઘનતા મુજબ
+~$\Delta\cup\Lambda$નો અનંત નિદર્શ છે, જે~$\Lambda$ માત્ર સાન્ત
+!!{structure}sમાં સંતોષાય છે એ પૂર્વધારણાનો વિરોધાભાસ છે.
+\end{ex}
+}{}
+
+\sourcecorrection{OLCO-017}{મૂળની \texttt{compactness.tex},
+પંક્તિઓ~209--211માં સાન્ત~$\Delta'$માંના સૂચકોમાં સૌથી મોટો~$n$ લેવામાં
+આવે છે, પરંતુ ખાલી~$\Delta'$ માટે એવો સૂચક નથી. અહીં ખાલી કિસ્સો
+અલગથી નોંધ્યો છે.}
+
+\end{document}

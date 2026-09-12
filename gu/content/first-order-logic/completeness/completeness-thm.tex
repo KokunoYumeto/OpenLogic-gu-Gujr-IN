@@ -1,0 +1,119 @@
+% Part: first-order-logic
+% Chapter: completeness
+% Section: completeness-theorem
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{com}{cth}}
+      {\olfileid{pl}{com}{cth}}
+
+\olsection{પૂર્ણતા પ્રમેય}
+
+\begin{explain}
+આપણાં પરિણામો હવે ભેગાં કરીએ: તેમાંથી પૂર્ણતા પ્રમેય મળે છે.
+\end{explain}
+
+\begin{thm}[પૂર્ણતા પ્રમેય]
+\ollabel{thm:completeness}
+ધારો કે~$\Gamma$ !!{sentence}sનો ગણ છે. જો~$\Gamma$ સુસંગત હોય, તો તે
+સંતોષ્ય છે.
+\end{thm}
+
+\begin{proof}
+ધારો કે~$\Gamma$ સુસંગત છે.\iftag{FOL}{ \olref[hen]{lem:henkin} મુજબ
+સંતૃપ્ત સુસંગત ગણ $\Gamma'\supseteq\Gamma$ છે.}{}
+\olref[lin]{lem:lindenbaum} મુજબ એવો
+$\Gamma^*\supseteq\iftag{FOL}{\Gamma'}{\Gamma}$ છે જે સુસંગત અને
+!!{complete} છે.
+\iftag{FOL}{%
+  $\Gamma'\subseteq\Gamma^*$ હોવાથી દરેક !!{formula}~$!A(x)$ માટે
+  ~ $\Gamma^*$માં આ સ્વરૂપનું !!a{sentence} હોય છે:
+  \iftag{prvEx}
+        {$\lexists[x][!A(x)] \lif !A(c)$}
+        {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}.
+  તેથી~$\Gamma^*$ સંતૃપ્ત છે. જો~$\Gamma$માં~$\eq$ ન આવતું હોય, તો}{તો}
+\olref[mod]{lem:truth} મુજબ
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ જો અને માત્ર
+જો $!A\in\Gamma^*$. ખાસ કરીને તેમાંથી દરેક $!A\in\Gamma$ માટે
+$\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ ફલિત થાય છે,
+તેથી~$\Gamma$ સંતોષ્ય છે.\iftag{FOL}{%
+  જો~$\Gamma$માં~$\eq$ આવતું હોય, તો \olref[ide]{lem:truth} મુજબ દરેક
+  !!{sentence}sમાંના~$!A$ માટે $\Sat{\equivclass{M}{\approx}}{!A}$ જો અને
+  માત્ર જો $!A\in\Gamma^*$. ખાસ કરીને દરેક $!A\in\Gamma$ માટે
+  $\Sat{\equivclass{M}{\approx}}{!A}$, તેથી~$\Gamma$ સંતોષ્ય છે.}{}
+\end{proof}
+
+\begin{cor}[પૂર્ણતા પ્રમેય, બીજું નિરૂપણ]
+\ollabel{cor:completeness}
+દરેક~$\Gamma$ અને !!{sentence}sમાંના~$!A$ માટે: જો $\Gamma\Entails !A$, તો
+$\Gamma\Proves !A$.
+\end{cor}
+
+\begin{proof}
+નોંધો કે \olref{cor:completeness} અને \olref{thm:completeness}માં
+~$\Gamma$ પર સર્વવાચક પરિમાણ છે. ગૂંચવણ ન થાય તે માટે
+\olref{thm:completeness}ને જુદા ચલથી ફરી કહીએ: !!{sentence}sના કોઈ પણ
+ગણ~$\Delta$ માટે, જો~$\Delta$ સુસંગત હોય, તો તે સંતોષ્ય છે.
+પ્રતિપક્ષન મુજબ, જો~$\Delta$ સંતોષ્ય ન હોય, તો~$\Delta$ અસુસંગત છે. આનો
+ઉપપ્રમેય સાબિત કરવા ઉપયોગ કરીશું.
+
+ધારો કે $\Gamma\Entails !A$. ત્યારે \olref[syn][sem]{prop:entails-unsat}
+મુજબ $\Gamma\cup\{\lnot !A\}$ અસંતોષ્ય છે. આપણા~$\Delta$ તરીકે
+$\Gamma\cup\{\lnot !A\}$ લઈએ, તો \olref{thm:completeness}નું પહેલું
+નિરૂપણ કહે છે કે $\Gamma\cup\{\lnot !A\}$ અસુસંગત છે. હવે
+\iftag{FOL}{%
+  \tagrefs{prfAX/{fol:axd:prv:prop:prov-incons},
+    prfSC/{fol:seq:prv:prop:prov-incons},
+    prfND/{fol:ntd:prv:prop:prov-incons},
+    prfTab/{fol:tab:prv:prop:prov-incons}}}{%
+  \tagrefs{prfAX/{pl:axd:prv:prop:prov-incons},
+    prfSC/{pl:seq:prv:prop:prov-incons},
+    prfND/{pl:ntd:prv:prop:prov-incons},
+    prfTab/{pl:tab:prv:prop:prov-incons}}}
+મુજબ $\Gamma\Proves !A$.
+\end{proof}
+
+\tagprob{FOL}
+\begin{prob}
+\olref[fol][com][cth]{cor:completeness} વાપરીને
+\olref[fol][com][cth]{thm:completeness} સાબિત કરો અને આ રીતે પૂર્ણતા
+પ્રમેયનાં બંને નિરૂપણ સમતુલ્ય છે તેમ બતાવો.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+\olref[pl][com][cth]{cor:completeness} વાપરીને
+\olref[pl][com][cth]{thm:completeness} સાબિત કરો અને આ રીતે પૂર્ણતા
+પ્રમેયનાં બંને નિરૂપણ સમતુલ્ય છે તેમ બતાવો.
+\end{prob}
+\tagendprob
+
+\tagprob{FOL}
+\begin{prob}
+કોઈ !!a{derivation} તંત્ર પૂર્ણ હોય તે માટે તેના નિયમો એટલા સમર્થ હોવા
+જોઈએ કે તે દરેક અસંતોષ્ય ગણને અસુસંગત સાબિત કરી શકે. પૂર્ણતા સાબિત કરવા
+!!{derivation}ના કયા નિયમો જરૂરી હતા? આમાંથી કોઈ નિયમ સાબિતીમાં ક્યાંય
+વપરાયો નથી? આ પ્રશ્નોના જવાબ માટે એવી યાદી અથવા આકૃતિ બનાવો જે બતાવે
+કે \olref[fol][com][cth]{thm:completeness}ની સાબિતી સુધી લઈ જતાં કયાં
+પરિણામોમાં !!{derivation}ના કયા નિયમો વપરાયા હતા. આ સાબિતીઓમાં નિયમોના
+કોઈ અવ્યક્ત ઉપયોગ પણ નોંધવાનું ભૂલશો નહિ.
+\end{prob}
+\tagendprob
+
+\tagprob{notFOL}
+\begin{prob}
+કોઈ !!a{derivation} તંત્ર પૂર્ણ હોય તે માટે તેના નિયમો એટલા સમર્થ હોવા
+જોઈએ કે તે દરેક અસંતોષ્ય ગણને અસુસંગત સાબિત કરી શકે. પૂર્ણતા સાબિત કરવા
+!!{derivation}ના કયા નિયમો જરૂરી હતા? આમાંથી કોઈ નિયમ સાબિતીમાં ક્યાંય
+વપરાયો નથી? આ પ્રશ્નોના જવાબ માટે એવી યાદી અથવા આકૃતિ બનાવો જે બતાવે
+કે \olref[pl][com][cth]{thm:completeness}ની સાબિતી સુધી લઈ જતાં કયાં
+પરિણામોમાં !!{derivation}ના કયા નિયમો વપરાયા હતા. આ સાબિતીઓમાં નિયમોના
+કોઈ અવ્યક્ત ઉપયોગ પણ નોંધવાનું ભૂલશો નહિ.
+\end{prob}
+\tagendprob
+
+\end{document}
