@@ -13,6 +13,8 @@ The global mutex `Global\InterlanguageTeXSlotV1` is acquired with a bounded wait
 
 The EPUB builder also performs a cold replay. The canonical and replay files are byte-identical at 445,804 bytes and SHA-256 `991e26b9df64a6c4afa18781935772ff20f2ae5f707765c01e5cd5609d052c6e`. EPUBCheck 5.3.0 reports zero fatal errors, errors, warnings, or informational messages. Exact structural QA verifies all 7,278 MathML subtrees and TeX annotations, the Gujarati character stream, 558 content IDs, 145 navigation links, 208 proof representations, 13 described SVG figures, 11 tables, 12 footnotes, and all 93 source-correction disclosures. Silent Chromium inspection of byte-identical XHTML checked representative navigation, theorem, MathML, figure, editorial-note, and bibliography views; fonts and all images loaded, no unhandled mathematical clipping occurred, and the console was clean.
 
+The verified PDF and EPUB are published in the [First-Order Completeness v0.7.0 release](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/completeness-v0.7.0) and preserved in the existing Zenodo lineage at [DOI 10.5281/zenodo.22726447](https://doi.org/10.5281/zenodo.22726447).
+
 To validate an EPUB independently with EPUBCheck 5.3.0 or later:
 
     java -jar path\to\epubcheck.jar releases\OpenLogic-gu-Gujr-IN-Completeness.epub --json build\EPUBCHECK.json
