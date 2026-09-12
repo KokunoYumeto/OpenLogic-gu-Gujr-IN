@@ -16,13 +16,13 @@
   },
   {
     "file": "docs/BUILD_CUMULATIVE.md",
-    "bytes": 3960,
-    "sha256": "46199534e793957214ac02e6f2eb0c68a1792ea0d995745aa4d9693982ae5464"
+    "bytes": 3959,
+    "sha256": "a5d26bcb062a67163f11e4e245fde8c5130113bd7b73c5e5916c747ecc3b7f71"
   },
   {
     "file": "docs/EDITION_NOTES.md",
-    "bytes": 14850,
-    "sha256": "7b172a48520b913c1b5d2a56337f5e3ef68ee0fa861124d90464c20fe6392bae"
+    "bytes": 15499,
+    "sha256": "54efa2f5e467f8572088e23ca1aeceaddd9cdf66724953d360c15dcfe78fe2f7"
   },
   {
     "file": "docs/GUJARATI_EDITION_SCOPE.md",
@@ -36,28 +36,28 @@
   },
   {
     "file": "docs/TERMINOLOGY_REVIEW_LOG.md",
-    "bytes": 410906,
-    "sha256": "97d186975ffa10905084c131e1365f946b134ddbbd5890e094cca1803cbdd027"
+    "bytes": 436733,
+    "sha256": "3e4513e06531c5bbb628f4c4cca401fc1d13c7c32f88665ee3599781bea5b892"
   },
   {
     "file": "docs/translation-decisions/DECISION_OCCURRENCES.csv",
-    "bytes": 176793,
-    "sha256": "cbc28022169be496ea1d64e5485a746e50807bffaa3aac3a2e1d0d51f03408bb"
+    "bytes": 182442,
+    "sha256": "91ecde27b418a72aa839f68b34de2cc41035b27ea9975e4f141cdbc4f9dfdb93"
   },
   {
     "file": "docs/translation-decisions/DECISIONS.json",
-    "bytes": 1784644,
-    "sha256": "038a55b25516d3ffbc41f87c296bbb7114f9872dd938fa4ab0f2620e700d9f3e"
+    "bytes": 1882490,
+    "sha256": "edec747a9a13875db1226687ab3c01499407cff740da209b98da1975780721ea"
   },
   {
     "file": "docs/translation-decisions/PRIORITY_REVIEW.md",
-    "bytes": 94330,
-    "sha256": "0979132a3b0039cfcee303f01e863d26a53882968332d4d5157303c5ddc7bfb7"
+    "bytes": 100736,
+    "sha256": "5d98fa6ab02c21e18b0f5b86e00a889326fae17e4d0ab631a0d6a6a4f04f2999"
   },
   {
     "file": "docs/translation-decisions/START_HERE.md",
-    "bytes": 830,
-    "sha256": "f016a02b8452c3e12c59d57351aa383a988e1f03ea888b58118063ad6e2ee9b7"
+    "bytes": 831,
+    "sha256": "ad0a276ee5effb3dda4f2d1b4d0bb9a1894e27a0ce3d990fd246f7b9f30af4db"
   },
   {
     "file": "docs/translation-decisions/translation-decision.schema.json",
@@ -66,23 +66,23 @@
   },
   {
     "file": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "bytes": 2890,
-    "sha256": "d24c4840119088cd4a996b2b0d1bc2c31ad35b0e7654db553038a97a64d92a5f"
+    "bytes": 2892,
+    "sha256": "185782f9ad0139c090c252191644d609818d0612120e4b3372cee1018443306d"
   },
   {
     "file": "docs/translation-decisions/TRANSLATION_DECISIONS_FULL.md",
-    "bytes": 353915,
-    "sha256": "6fdc9a932c8dd25c48fed78eb8f3d71c5736dbc273bc106333dffbed11811d3c"
+    "bytes": 375655,
+    "sha256": "1d8cdac6a7a74d9223f99a03f317ae59a81d2367343fc5794f2ae9b5ecee200e"
   },
   {
     "file": "docs/TRANSLATION_DECISION_LOG_METADATA.json",
-    "bytes": 882,
-    "sha256": "d7614dcdcf193d7b1c9d9eccc9d6c788f719c07feae58da9a35275ca3e956c87"
+    "bytes": 884,
+    "sha256": "7cae12b029e988c523ffb226992ae40c3a6cbb8362ecd52bd62bab3168c01de8"
   },
   {
     "file": "docs/TRANSLATION_DECISIONS.jsonl",
-    "bytes": 696680,
-    "sha256": "87a73c8740d55e4bb52334775d3a76123fdd0e10138d8e34844e7f22f17de1e0"
+    "bytes": 740452,
+    "sha256": "bcf08eec7398c1b2a7a2ffbb0eef01d9726623931e5ebe5ee10ba8e98adf458e"
   },
   {
     "file": "fonts/FONT_PROVENANCE.json",
@@ -470,6 +470,56 @@
     "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100"
   },
   {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/first-order-languages.tex",
+    "bytes": 12048,
+    "sha256": "fab083a270aae518e04239c6f040727f42ab72955e9428af35b9e144d2d78cff"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex",
+    "bytes": 17673,
+    "sha256": "42955a0b7f34bf67bd37bbce92db7d81bf35c1da7d69cdf965e2486319794d6a"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex",
+    "bytes": 5623,
+    "sha256": "faf8f8c98e7dbfa1afe8c66d3dda3959d34dc3accbbc96a6e4d7f29f4e298e53"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/intro-syntax.tex",
+    "bytes": 2838,
+    "sha256": "90f6cb8e3a46b7038883cb93dc9cdc362443592fce7a4dcffe4ec21a346f1218"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/main-operator.tex",
+    "bytes": 6499,
+    "sha256": "752088dc1dbc16b4dbf9d9850d870f80ee74c07ee57b4edb26d96b433d9f6a1d"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/subformulas.tex",
+    "bytes": 6649,
+    "sha256": "19e1e70fe1218cbac396a445dff23b72868b422079589fde8716fbedd89f3784"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/substitution.tex",
+    "bytes": 7328,
+    "sha256": "da62849f68414a8449bd60ab294cb99ee24eabf79188b73c93224d58aa03ec05"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/syntax.tex",
+    "bytes": 536,
+    "sha256": "d88af3c390ebbba04a2dbaec3028c589f153e5b3ebb5718345ffac5aa5495a8f"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/terms-formulas.tex",
+    "bytes": 15033,
+    "sha256": "7c87e4ab2bcb443f6382d127f75f5f030ce2dbd677c85afebb2400004e688115"
+  },
+  {
+    "file": "gu/content/first-order-logic/syntax-and-semantics/unique-readability.tex",
+    "bytes": 12313,
+    "sha256": "081d5bce6e8dea75c5fedfa33840376e644275484887d256dba8498cc32a5943"
+  },
+  {
     "file": "gu/content/first-order-logic/tableaux/derivations.tex",
     "bytes": 5758,
     "sha256": "ab3b0a870d525142eadb634782f17b4b02e16233a2fb7076e8364997fab6f249"
@@ -855,6 +905,11 @@
     "sha256": "1ce0c94775be553367a16fcda317f835cc0781e72efe61b7b9d20ad183cd83b0"
   },
   {
+    "file": "gu-first-order-syntax.tex",
+    "bytes": 3220,
+    "sha256": "60ca72ba9dbc7f326796edc21ff4994e696eb8919f8004864c7c8012963e920f"
+  },
+  {
     "file": "gu-foundations.tex",
     "bytes": 4653,
     "sha256": "691670e262141da47f6683035ea7649902fde840d2c1b90b5873bf38213bd5da"
@@ -901,8 +956,8 @@
   },
   {
     "file": "gu-tableaux.tex",
-    "bytes": 19810,
-    "sha256": "66cd608accde203cd39098e2a4173139956aeb2b63a7d909a79034cd219b686d"
+    "bytes": 20259,
+    "sha256": "6b39c8ceb2c30f45534670b49d3b0db2e463977000c08d5b255ab2399c74aaa4"
   },
   {
     "file": "LICENSE.md",
@@ -980,6 +1035,11 @@
     "sha256": "e95beea3212cde2beaf6298f9d9afd890a4baf99f85b9c1974819392c0813ca6"
   },
   {
+    "file": "provenance/BATCH_015.json",
+    "bytes": 7028,
+    "sha256": "efd259a18df539d158f88ee1fd42a0cbafb16ce07974f9edf875bb6a0164c531"
+  },
+  {
     "file": "provenance/BUILD_RECEIPT_005.json",
     "bytes": 321,
     "sha256": "684cd45c681bcabd24de7d885b61add52d5f67f08dd30a1a9778339032b515fb"
@@ -1030,6 +1090,11 @@
     "sha256": "4ab9e1b7e35fa812db1e89bcf8c149619cff8f226a0b8b5ada6dcc43752ab309"
   },
   {
+    "file": "provenance/BUILD_RECEIPT_015.json",
+    "bytes": 15849,
+    "sha256": "68cccf4d038d09c0b066328f96a3151dd249540a9bce4cd485856809bc9eb65a"
+  },
+  {
     "file": "provenance/CANON_PASSAGE_SCHEMA.json",
     "bytes": 1384,
     "sha256": "544837e0f014324ea40110c932c6cf7e35355d31bfb8fbb01ce1d073e77be819"
@@ -1046,8 +1111,8 @@
   },
   {
     "file": "provenance/COVERAGE.json",
-    "bytes": 197716,
-    "sha256": "e566c8d0f23b57c561a7140448c3a00bd3172af08e417163f9441b99a573ac05"
+    "bytes": 199074,
+    "sha256": "f7f481b33188685a17bf513d04d0282b051d92ccf140022d2c65b95a64405222"
   },
   {
     "file": "provenance/CUMULATIVE_QA_008.json",
@@ -1085,6 +1150,11 @@
     "sha256": "44499512887a4a61447ccca0d05c8d618f52ef4d8c9e83357821e3a55202c844"
   },
   {
+    "file": "provenance/CUMULATIVE_QA_015.json",
+    "bytes": 12245,
+    "sha256": "848733b8b6c2acbf273b972714c2e2be3ca500aaae39ce9a56f9ba3ad51d8198"
+  },
+  {
     "file": "provenance/EPUB_BUILD_RECEIPT_013.json",
     "bytes": 7514,
     "sha256": "dd1efb1cdafe678155947e01c07634ae0016ab169af9bf9aa80847df9ec8262c"
@@ -1093,6 +1163,11 @@
     "file": "provenance/EPUB_BUILD_RECEIPT_014.json",
     "bytes": 7825,
     "sha256": "085c3e99e9ac0504022296ff50bf67c12303c986626e527842052137ad5a4081"
+  },
+  {
+    "file": "provenance/EPUB_BUILD_RECEIPT_015.json",
+    "bytes": 7817,
+    "sha256": "4150677ab62bbf4cbe991a622d578d138ca63e2b66cd2aa0354465b60cf0ff4c"
   },
   {
     "file": "provenance/EPUB_QA_013.json",
@@ -1105,6 +1180,11 @@
     "sha256": "4d6eb3e0a9e523d6398ae4102fa296aa60fd26d47c0074716c8bba40ad970b20"
   },
   {
+    "file": "provenance/EPUB_QA_015.json",
+    "bytes": 4252,
+    "sha256": "cb4d488a58e33af7ed1be48029d429238245620c68b72d64fb76d995d96dcc4e"
+  },
+  {
     "file": "provenance/EPUBCHECK_013.json",
     "bytes": 35415,
     "sha256": "83db60984954abfcccd5c64747360dc42e0bfc78defb24eb945d0398952f1b6c"
@@ -1113,6 +1193,11 @@
     "file": "provenance/EPUBCHECK_014.json",
     "bytes": 36464,
     "sha256": "ed778627dd84df40fedaeff634dc5b31af8d9fda8914a5283e65d1c8d0188665"
+  },
+  {
+    "file": "provenance/EPUBCHECK_015.json",
+    "bytes": 37919,
+    "sha256": "9fffc553da7704633a0f48561a702f1a8a379e828692f847ce6dcf8674bb8f5d"
   },
   {
     "file": "provenance/FINAL_QA_002.json",
@@ -1190,6 +1275,11 @@
     "sha256": "18cab8c6b84d236e3bb7d88c771814c64b2bda8214748c3c93636bb240c6f3cb"
   },
   {
+    "file": "provenance/HTML_QA_015.json",
+    "bytes": 8047,
+    "sha256": "55627b8951d173e54b1bea402f6379be319ccea756bf1aae15315e360381d40a"
+  },
+  {
     "file": "provenance/LAPTOP_CANON_RECONCILIATION.json",
     "bytes": 7991,
     "sha256": "aa6d3f2924caed6c37b7c4052464fa99caa2781e4a289e3a0e2b490069f11967"
@@ -1265,6 +1355,11 @@
     "sha256": "28cb0a9ff8478d2968aca56a32ffe1b0502db67883b9e314ca604dbb03b969d1"
   },
   {
+    "file": "provenance/PARITY_015.json",
+    "bytes": 14682,
+    "sha256": "b993d3969ba48b7e880b016e792d9b0d9b8b7b5f4a0a1c3fadd8228338bc7992"
+  },
+  {
     "file": "provenance/PDF_QA_007.json",
     "bytes": 15577,
     "sha256": "900b4f70732cbf31698ab8f800df0bf958f7cae43ce42c7960c2af2c313e35d7"
@@ -1305,14 +1400,19 @@
     "sha256": "c352af78da6bcbfc1bc7877678b997fdb409b15ce7a9c80ff877c8b885ad178b"
   },
   {
+    "file": "provenance/PDF_QA_015.json",
+    "bytes": 50354,
+    "sha256": "ebd0122a7af5c573c4f8d3af8f1309908eff36d6aedb0a1806bedc0733c518c8"
+  },
+  {
     "file": "provenance/QA.json",
-    "bytes": 19837,
-    "sha256": "f03ae51d8da0800ee4ae80379e434211ca62d19167171c4c84c0a39aa650a7fb"
+    "bytes": 21513,
+    "sha256": "8f056753acc79ac016bd776f626ba5cf68063a766f6bde1bec61dbebbd843c7d"
   },
   {
     "file": "provenance/SEGMENT_CANON_USE.jsonl",
-    "bytes": 2000943,
-    "sha256": "23ab4addcbf4241855571f3a4a1138e9ef67d7e3ddc1ce1696a5310d89b64462"
+    "bytes": 2284980,
+    "sha256": "55cd6be88f77f141d0f17c296020afa9f5093fc20be4ad18f3e74123b3204f42"
   },
   {
     "file": "provenance/SEMANTIC_REVIEW_001.json",
@@ -1385,6 +1485,11 @@
     "sha256": "ebab245497a88b53bdbd840f0c7d91d87f4570d051dadfa9d8458467527c321b"
   },
   {
+    "file": "provenance/SEMANTIC_REVIEW_015.json",
+    "bytes": 251599,
+    "sha256": "1369b69accbb7418712b541541aa0f09c00089e126fb9a77d9265c85a1f5b3c3"
+  },
+  {
     "file": "provenance/SOURCE_CHECKPOINT_004.json",
     "bytes": 13352,
     "sha256": "832c98e28fd3409c217fbd55c29e8022839d426e44215a891d660386d131883c"
@@ -1438,6 +1543,11 @@
     "file": "provenance/SOURCE_CHECKPOINT_014.json",
     "bytes": 60455,
     "sha256": "03f92ed8352e68e5c7d4a74004c072aaaa78922c707fb3eff2b0876002a8a6a9"
+  },
+  {
+    "file": "provenance/SOURCE_CHECKPOINT_015.json",
+    "bytes": 64344,
+    "sha256": "300caff78cb161217c2fc335b8078ff84fbce54f48ede21275fcb6166179c675"
   },
   {
     "file": "provenance/SOURCE_CORRECTIONS_003.json",
@@ -1500,14 +1610,19 @@
     "sha256": "3c710fb5aa86209c2e719884c0e5d2eb4a20f011820268953b1eeb7731676c5d"
   },
   {
+    "file": "provenance/SOURCE_CORRECTIONS_015.json",
+    "bytes": 10924,
+    "sha256": "d6523b3ec5a4182e8a7459a446f9ad42b4cd3774cfcfddde6cb20fee6031c80c"
+  },
+  {
     "file": "provenance/SOURCE_MANIFEST.jsonl",
     "bytes": 355745,
     "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
   },
   {
     "file": "provenance/TERM_DECISIONS.jsonl",
-    "bytes": 477320,
-    "sha256": "579c01bc91e57d9b9b12df12e5d539f5334acd41c1a3bc830b250931a4df7e31"
+    "bytes": 505232,
+    "sha256": "0c2c64272787666acee9eca8b51a38e30668f0264e8f8b2c63f411ce18c2d1dc"
   },
   {
     "file": "provenance/UNTRANSLATED_SCAN_011.json",
@@ -1528,6 +1643,11 @@
     "file": "provenance/UNTRANSLATED_SCAN_014.json",
     "bytes": 5320,
     "sha256": "6495d2b2703e8848eb3d771e0752822627c2b1d674e6c6b8a17c8ab8847efce3"
+  },
+  {
+    "file": "provenance/UNTRANSLATED_SCAN_015.json",
+    "bytes": 5067,
+    "sha256": "48ecb8300c172deb2faf52f0677fca64327fd08590674e43fb1423778e2aca85"
   },
   {
     "file": "reader/arithmetization.html",
@@ -1615,6 +1735,11 @@
     "sha256": "aa04f6b2e9eaac7152e5b5b31dff0f919b25293a67cf4dd85684089b57b99a8f"
   },
   {
+    "file": "reader/first-order-syntax.html",
+    "bytes": 3783825,
+    "sha256": "9b0ae66bbd54096de90cae53ff7ff1dcae2ccc4c943ebac890056e8376cc54d4"
+  },
+  {
     "file": "reader/foundations.html",
     "bytes": 324023,
     "sha256": "8982aae565eadc6d11ad95aa55a7a7fccf61d425d0ad02733788e0291bf5ed7f"
@@ -1671,8 +1796,8 @@
   },
   {
     "file": "README.md",
-    "bytes": 4108,
-    "sha256": "507cc32c074447ed36807daade48fe38449ea7d52a4f1741130e67a523d309b1"
+    "bytes": 4169,
+    "sha256": "d669be1d41456b91e3756313679719691ef62fd1cc41c85c83395ebc6cdfde6a"
   },
   {
     "file": "releases/OpenLogic-gu-Gujr-IN-Axiomatic-Deduction.pdf",
@@ -1698,6 +1823,16 @@
     "file": "releases/OpenLogic-gu-Gujr-IN-First-Order-Introduction.pdf",
     "bytes": 1640179,
     "sha256": "d7ebbe1041f551ef8f7a12aff97fab2729d0f5444e94ca6caac94a5b937f6ae7"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-First-Order-Syntax.epub",
+    "bytes": 482891,
+    "sha256": "71402df6b14f90d7d79497868f069f2a49ebec04a49152b4dd5ec4c4104045e2"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-First-Order-Syntax.pdf",
+    "bytes": 1762220,
+    "sha256": "2482f8fd54483808f6c390e5c24dbb23d81d247b3556152b80c2c5eae22cf7cc"
   },
   {
     "file": "releases/OpenLogic-gu-Gujr-IN-Natural-Deduction.pdf",
@@ -1731,8 +1866,8 @@
   },
   {
     "file": "tools/build_first_order_introduction_epub.py",
-    "bytes": 19952,
-    "sha256": "068f54da676d0f31e2d74057eee41857741bd77c84c980b2b790a5a6c0aaa7f9"
+    "bytes": 22634,
+    "sha256": "bec8fa15f51dbd44404f35fa785cdb8ec28c5d41014bd426d7bf2fbfee4e49ef"
   },
   {
     "file": "tools/build_foundations_html.py",
@@ -1746,13 +1881,13 @@
   },
   {
     "file": "tools/build_functions_html.py",
-    "bytes": 66975,
-    "sha256": "f11f35be34e6b68f927688f60e69053feb00f8258e6d299707f9951a51ef28f5"
+    "bytes": 70617,
+    "sha256": "183de88bdfe1fd2c30a39c0a89d032d8d869b2c92951f50c61178f90346ea7e5"
   },
   {
     "file": "tools/build_sets_guarded.ps1",
-    "bytes": 5510,
-    "sha256": "04df5d91bd006fb87bff72186bd39f0d5dcf21be887d3aa0b9d9e157fa9f1671"
+    "bytes": 5581,
+    "sha256": "f5de9324ea314a88cac83b60267ca070b2b1fac860dd200c9ff48b1073c28e1b"
   },
   {
     "file": "tools/build_sets_html.py",
@@ -1768,6 +1903,11 @@
     "file": "tools/build_translation_decisions_first_order_introduction.py",
     "bytes": 58184,
     "sha256": "c74eb4435ca2e5c019c8c0409eec373d51efff665145432dc4b68a2bc61fd3d8"
+  },
+  {
+    "file": "tools/build_translation_decisions_first_order_syntax.py",
+    "bytes": 1834,
+    "sha256": "b60a328b3d11a72ed75e688dfd74472a1e060c0c6fa2eec34e1fe23026da3c46"
   },
   {
     "file": "tools/prepare_arithmetization.py",
@@ -1788,6 +1928,11 @@
     "file": "tools/prepare_first_order_introduction.py",
     "bytes": 11285,
     "sha256": "3161b6b8af5e534797963904016784963b536eec04a029e4caf809fc5cfaeaa4"
+  },
+  {
+    "file": "tools/prepare_first_order_syntax.py",
+    "bytes": 4515,
+    "sha256": "accbf068a270a462a90872d483f210e34941fa4cb9a20fb3c7b1630afb2a9ea4"
   },
   {
     "file": "tools/prepare_foundations.py",
