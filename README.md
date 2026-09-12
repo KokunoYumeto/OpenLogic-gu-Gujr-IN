@@ -9,7 +9,7 @@ Gujarati scholarly translation of the Open Logic Project. The full 722-unit edit
 - See [edition notes](docs/EDITION_NOTES.md), the [reviewer-oriented translation decisions](docs/translation-decisions/START_HERE.md), [coverage](provenance/COVERAGE.json), and [recovered canon reconciliation](provenance/LAPTOP_CANON_RECONCILIATION.json).
 - Visit the [international translations hub](https://github.com/KokunoYumeto/OpenLogic-translations).
 
-The latest publicly verified cumulative artifact release is [First-Order Logic Introduction v0.8.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/first-order-introduction-v0.8.0), covering 145/722 units. Its PDF, EPUB, source-reader archive, and checksums are also preserved in the existing Zenodo lineage at [DOI 10.5281/zenodo.22727339](https://doi.org/10.5281/zenodo.22727339), with the PDF as the human-readable preview.
+The latest publicly verified cumulative artifact release is [First-Order Syntax v0.9.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/first-order-syntax-v0.9.0), covering 155/722 units. Its PDF, EPUB, source-reader archive, and checksums are also preserved in the existing Zenodo lineage at [DOI 10.5281/zenodo.22728364](https://doi.org/10.5281/zenodo.22728364), with the PDF as the human-readable preview.
 
 This is an AI-authored translation grounded in actual Gujarati canon consultation, deterministic structural checks, same-agent semantic comparison, reverse-paraphrase samples, and visual inspection. It is not independently certified by native scholars. Provisional terms are identified, and every deliberate correction to the frozen English source is separately disclosed.
 

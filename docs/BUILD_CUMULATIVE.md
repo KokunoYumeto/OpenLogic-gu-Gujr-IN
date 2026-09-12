@@ -13,7 +13,7 @@ The global mutex `Global\InterlanguageTeXSlotV1` is acquired with a bounded wait
 
 The EPUB builder also performs a cold replay. The canonical and replay files are byte-identical at 482,891 bytes and SHA-256 `71402df6b14f90d7d79497868f069f2a49ebec04a49152b4dd5ec4c4104045e2`. EPUBCheck 5.3.0 reports zero fatal errors, errors, warnings, or informational messages. Exact structural QA verifies all 8,426 MathML subtrees and TeX annotations, the Gujarati character stream, 623 content IDs, 163 navigation links, 208 proof representations, 13 described SVG figures, 12 tables, 13 footnotes, and all 106 source-correction disclosures. Silent Chromium inspection of byte-identical XHTML checked every new first-order syntax section, navigation, mathematical displays, figures, editorial notes, and end matter; fonts and images loaded, no unhandled mathematical clipping occurred, and the console was clean.
 
-The most recently published PDF and EPUB remain in the [First-Order Logic Introduction v0.8.0 release](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/first-order-introduction-v0.8.0) and the existing Zenodo lineage at [DOI 10.5281/zenodo.22727339](https://doi.org/10.5281/zenodo.22727339). The verified 155-unit syntax artifacts are prepared for the next release checkpoint.
+The verified PDF and EPUB are published in the [First-Order Syntax v0.9.0 release](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/first-order-syntax-v0.9.0) and preserved in the existing Zenodo lineage at [DOI 10.5281/zenodo.22728364](https://doi.org/10.5281/zenodo.22728364), with the PDF as the human-readable preview.
 
 To validate an EPUB independently with EPUBCheck 5.3.0 or later:
 
