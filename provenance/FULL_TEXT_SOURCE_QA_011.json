@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/1",
+  "started_at_utc": "2026-09-19T21:56:35.0201398Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 60000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "input": {
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-First-Order-Models-Theories-Full-Text.tex",
+    "bytes": 1324291,
+    "sha256": "96963e9a580d4b2119613f8426dcf0714507a2968fe1dce4e11fa461c1170daa"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 51348,
+      "exit_code": 0,
+      "seconds": 21.8079985,
+      "pdf_bytes": 1824341,
+      "pdf_sha256": "4fc58db4834953f523fd118c604b3358cc01a135e95589f947ecdffc79c4f826",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 2,
+      "process_id": 51040,
+      "exit_code": 0,
+      "seconds": 20.9743488,
+      "pdf_bytes": 1954626,
+      "pdf_sha256": "1e2e04b4852fb333e5842bf96723fcb9ba016e8cc437ba965e97597f0cbac923",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 3,
+      "process_id": 53876,
+      "exit_code": 0,
+      "seconds": 20.8117945,
+      "pdf_bytes": 1954675,
+      "pdf_sha256": "0e3660cd6a1d01078d0bf127d07ed61cf47835cd008883f1b69b1d90e24ccf81",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 4,
+      "process_id": 51140,
+      "exit_code": 0,
+      "seconds": 21.4443389,
+      "pdf_bytes": 1954675,
+      "pdf_sha256": "0e3660cd6a1d01078d0bf127d07ed61cf47835cd008883f1b69b1d90e24ccf81",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 5,
+      "process_id": 23372,
+      "exit_code": 0,
+      "seconds": 20.6842212,
+      "pdf_bytes": 1954675,
+      "pdf_sha256": "0e3660cd6a1d01078d0bf127d07ed61cf47835cd008883f1b69b1d90e24ccf81",
+      "byte_identical_to_accepted_release_pdf": true
+    }
+  ],
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction",
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-First-Order-Models-Theories.pdf",
+    "bytes": 1954675,
+    "sha256": "0e3660cd6a1d01078d0bf127d07ed61cf47835cd008883f1b69b1d90e24ccf81"
+  },
+  "verification": {
+    "convergence_passes": 2,
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 170,
+    "total_units": 722
+  },
+  "ended_at_utc": "2026-09-19T21:58:20.7985803Z"
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-full-text-source-materialization/1",
+  "generated_at_utc": "2026-09-19T21:56:10.034697+00:00",
+  "release_tag": "models-theories-v0.11.0",
+  "coverage": {
+    "translated": 170,
+    "total": 722,
+    "complete_edition": false
+  },
+  "output": {
+    "filename": "OpenLogic-gu-Gujr-IN-First-Order-Models-Theories-Full-Text.tex",
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-First-Order-Models-Theories-Full-Text.tex",
+    "bytes": 1324291,
+    "sha256": "96963e9a580d4b2119613f8426dcf0714507a2968fe1dce4e11fa461c1170daa"
+  },
+  "materialized_components": [
+    {
+      "path": "gu-first-order-models-theories.tex",
+      "bytes": 4032,
+      "sha256": "c8e87f1a2620ec2f34962bca4b5b137597cb20ecb04147db8b098ff1933e9cda"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 20881,
+      "sha256": "3d40a43e0044b1e2d77aa1cc620ef3b4a8959cfb51405445a1972f5f1da77682"
+    },
+    {
+      "path": "build/foundations-preamble.tex",
+      "bytes": 3298,
+      "sha256": "accb9509b987796dbab2edad014bf729763f8736a8d46b8f0c621c5ad54b24ea"
+    },
+    {
+      "path": "build/first-order-models-theories-available-labels.tex",
+      "bytes": 31434,
+      "sha256": "9afb1c082e2ddb93772c1244b4c836eea156c837ba20f68c32322ef1dcb6bdec"
+    },
+    {
+      "path": "build/first-order-models-theories-body.tex",
+      "bytes": 1264073,
+      "sha256": "a0fa39737be65a514886525f63564d6eb3c1fd1ae3173394863b086947cb6179"
+    }
+  ],
+  "content_checks": {
+    "reader_body_embedded_exactly": true,
+    "label_index_embedded_exactly": true,
+    "base_driver_embedded": true,
+    "preamble_embedded": true,
+    "rendered_sections": 151,
+    "source_correction_disclosures": 122,
+    "unresolved_cumulative_body_inputs": 0
+  },
+  "dependency_note": "OpenLogic style files, fonts, bibliography support, and diagram assets remain external dependencies supplied by the companion complete source ZIP.",
+  "status": "materialized_pending_guarded_exact_reader_reproduction"
+}
