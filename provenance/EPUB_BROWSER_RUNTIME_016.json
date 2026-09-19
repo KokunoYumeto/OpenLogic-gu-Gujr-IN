@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-gu-epub-browser-runtime/1",
+  "checkpoint": "016",
+  "checked_utc": "2026-09-19T18:31:03.3117110Z",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8770/build/runtime-probe016.html?target=build%2Fepub016-stage%2FOEBPS%2Fcontent.xhtml",
+  "artifact": "build/epub016-stage/OEBPS/content.xhtml",
+  "artifact_sha256": "30ca74f07fb51de3905620d6f45c3941f8811b7d613c818448c71ecbee43ac2c",
+  "epub": "releases/OpenLogic-gu-Gujr-IN-First-Order-Semantics.epub",
+  "epub_sha256": "03ebbc4299b413685af345840d1002095c599a82cd1713b93135a628407c81e7",
+  "loading_method": "The exact XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative asset URLs.",
+  "viewport": [1280, 720],
+  "runtime": {
+    "title": "પ્રથમ-ક્રમ અર્થવિચાર સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 462,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [332, 333, 334],
+    "scrollableInternalOverflowPx": [50, 118, 69],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 654,
+    "uniqueIds": 654,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": [
+      {
+        "level": "error",
+        "timestamp": "2026-09-19T18:03:55.260Z",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "reason_excluded": "The entry predates this measurement, has no target URL, and remained unchanged across later navigations."
+      }
+    ]
+  },
+  "status": "passed"
+}

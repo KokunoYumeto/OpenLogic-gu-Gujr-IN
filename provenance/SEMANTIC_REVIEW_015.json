@@ -1,6 +1,6 @@
 {
   "schema": "openlogic-gu-semantic/1",
-  "reviewed_at_utc": "2026-09-12T16:23:10.684211+00:00",
+  "reviewed_at_utc": "2026-09-19T17:45:06.493478+00:00",
   "batch": "OLP-0149–0158 First-order Logic syntax under the complete classical first-order profile",
   "reviewer": "same translation agent",
   "independent_native_or_human_certification": false,
@@ -4970,7 +4970,7 @@
         4345
       ],
       "source_sha256": "12a40e0f15f6c6dc2bfac2cefab92a127446b993992dff798e45f038428a4dbc",
-      "target_sha256": "f447f7e7e0743a5a44ca9189969fc3637698993d9f55c8a51e4557232fda692d",
+      "target_sha256": "946ffbccf9f8fd5c7437d747960ee029a00f42f77412eeceef5a880d6f50abe1",
       "source_alignment": "same_ordinal_correction_aware_block",
       "consulted_passage_ids": [
         "GU-P063",
@@ -5568,7 +5568,7 @@
       "segment_id": "OLP-0158-B024",
       "unit_id": "OLP-0158",
       "source_sha256": "12a40e0f15f6c6dc2bfac2cefab92a127446b993992dff798e45f038428a4dbc",
-      "target_sha256": "f447f7e7e0743a5a44ca9189969fc3637698993d9f55c8a51e4557232fda692d",
+      "target_sha256": "946ffbccf9f8fd5c7437d747960ee029a00f42f77412eeceef5a880d6f50abe1",
       "reverse_paraphrase": "Substitution may be vacuous: if the selected variable does not occur, the formula remains unchanged.",
       "assessment": "The substitution section preserves recursive substitution on terms and formulas, the free-for condition, both examples, vacuous substitution, capture avoidance and the quantified-instance convention.",
       "status": "same_agent_reverse_paraphrase_passed"

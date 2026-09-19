@@ -1,0 +1,165 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Semantic Notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sem}
+\olsection{અર્થવિચારી ખ્યાલો}
+
+\begin{explain}
+પ્રથમ-ક્રમ ભાષાઓ માટેની !!{structure}sની વ્યાખ્યા આપ્યા પછી, આપણે
+વાક્યોના કેટલાક પાયાના અર્થવિચારી ગુણધર્મો અને વાક્યો વચ્ચેના સંબંધો
+વ્યાખ્યાયિત કરી શકીએ છીએ. એમાં સૌથી સરળ ખ્યાલ વાક્યના
+\emph{પ્રામાણ્ય}નો છે. કોઈ વાક્ય દરેક !!{structure}માં સંતોષાય તો તે
+પ્રમાણભૂત છે. પ્રમાણભૂત વાક્યો એવાં વાક્યો છે જે તેમાંના અતાર્કિક
+સંકેતોનું ગમે તે રીતે અર્થઘટન કરીએ તોપણ સંતોષાય છે. તેથી પ્રમાણભૂત
+વાક્યોને \emph{તાર્કિક સત્યો} પણ કહે છે---તે કોઈ પણ !!{structure}માં
+સત્ય, એટલે કે સંતોષાયેલાં, હોય છે; તેથી તેમની સત્યતા માત્ર તેમાં આવતા
+તાર્કિક સંકેતો અને તેમની વાક્યરચનાત્મક !!{structure} પર આધાર રાખે છે,
+અતાર્કિક સંકેતો કે તેમના અર્થઘટન પર નહિ.
+\end{explain}
+
+\begin{defn}[પ્રામાણ્ય]
+વાક્ય~$!A$ \emph{પ્રમાણભૂત}, $\Entails !A$, ત્યારે અને માત્ર ત્યારે
+જ્યારે દરેક !!{structure}~$\Struct M$ માટે $\Sat{M}{!A}$.
+\end{defn}
+
+\begin{defn}[ફલિતતા]
+વાક્યોનો ગણ~$\Gamma$, વાક્ય~$!A$ને \emph{ફલિત કરે} છે,
+$\Gamma\Entails !A$, ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Sat{M}{\Gamma}$ હોય એવી દરેક !!{structure}~$\Struct M$ માટે
+$\Sat{M}{!A}$.
+\end{defn}
+
+
+\begin{defn}[સંતોષ્યતા]
+વાક્યોનો ગણ~$\Gamma$ \emph{સંતોષ્ય} છે જો કોઈ !!{structure}
+~$\Struct M$ માટે $\Sat{M}{\Gamma}$. જો~$\Gamma$ સંતોષ્ય ન હોય, તો તેને
+\emph{અસંતોષ્ય} કહે છે.
+\end{defn}
+
+\begin{prop}
+વાક્ય~$!A$ પ્રમાણભૂત ત્યારે અને માત્ર ત્યારે જ્યારે વાક્યોના દરેક
+ગણ~$\Gamma$ માટે $\Gamma\Entails !A$.
+\end{prop}
+
+\begin{proof}
+આગળની દિશા માટે, $!A$ પ્રમાણભૂત હોય અને~$\Gamma$ વાક્યોનો ગણ હોય.
+$\Sat{M}{\Gamma}$ હોય એવી !!a{structure}~$\Struct M$ લો. $!A$
+પ્રમાણભૂત હોવાથી $\Sat{M}{!A}$, એટલે $\Gamma\Entails !A$.
+
+ઊલટી દિશાના પ્રતિનિષેધ માટે, $!A$ અપ્રમાણભૂત હોય; એટલે એવી
+!!a{structure}~$\Struct M$ છે કે $\Sat/{M}{!A}$. જ્યારે
+$\Gamma=\{\ltrue\}$, ત્યારે~$\ltrue$ પ્રમાણભૂત હોવાથી
+$\Sat{M}{\Gamma}$. તેથી એવી !!a{structure}~$\Struct M$ છે કે
+$\Sat{M}{\Gamma}$ પરંતુ $\Sat/{M}{!A}$; એટલે~$\Gamma$,~$!A$ને ફલિત
+કરતું નથી.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:entails-unsat}
+$\Gamma\Entails !A$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Gamma\cup\{\lnot !A\}$ અસંતોષ્ય છે.
+\end{prop}
+
+\begin{proof}
+આગળની દિશા માટે, ધારો કે $\Gamma\Entails !A$ અને, વિરુદ્ધતાની ખાતર,
+એવી !!a{structure}~$\Struct M$ છે કે
+$\Sat{M}{\Gamma\cup\{\lnot !A\}}$. $\Sat{M}{\Gamma}$ અને
+$\Gamma\Entails !A$ હોવાથી $\Sat{M}{!A}$. વળી,
+$\Sat{M}{\Gamma\cup\{\lnot !A\}}$ હોવાથી $\Sat{M}{\lnot !A}$; એટલે
+આપણને $\Sat{M}{!A}$ અને $\Sat/{M}{!A}$ બંને મળે છે, જે વિસંવાદ છે.
+તેથી આવી કોઈ !!{structure}~$\Struct M$ હોઈ શકે નહિ, એટલે
+$\Gamma\cup\{\lnot !A\}$ અસંતોષ્ય છે.
+
+ઊલટી દિશા માટે, ધારો કે $\Gamma\cup\{\lnot !A\}$ અસંતોષ્ય છે. તેથી
+દરેક !!{structure}~$\Struct M$ માટે કાં તો $\Sat/{M}{\Gamma}$ અથવા
+$\Sat{M}{!A}$. પરિણામે, $\Sat{M}{\Gamma}$ હોય એવી દરેક
+!!{structure}~$\Struct M$ માટે $\Sat{M}{!A}$; એટલે
+$\Gamma\Entails !A$.
+\end{proof}
+
+\begin{prob}
+\begin{enumerate}
+\item $\Gamma\Entails\bot$ ત્યારે અને માત્ર ત્યારે જ્યારે~$\Gamma$
+  અસંતોષ્ય છે, તે બતાવો.
+\item $\Gamma\cup\{!A\}\Entails\bot$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Gamma\Entails\lnot !A$, તે બતાવો.
+\item ધારો કે $c$,~$!A$ કે~$\Gamma$માં આવતું નથી. બતાવો કે
+  $\Gamma\Entails\lforall[x][!A]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Gamma\Entails\Subst{!A}{c}{x}$.
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+જો $\Gamma\subseteq\Gamma'$ અને $\Gamma\Entails !A$ હોય, તો
+$\Gamma'\Entails !A$.
+\end{prop}
+
+\begin{proof}
+ધારો કે $\Gamma\subseteq\Gamma'$ અને $\Gamma\Entails !A$.
+$\Sat{M}{\Gamma'}$ હોય એવી સંરચના~$\Struct M$ લો; ત્યારે
+$\Sat{M}{\Gamma}$, અને $\Gamma\Entails !A$ હોવાથી $\Sat{M}{!A}$.
+આથી જ્યારે પણ $\Sat{M}{\Gamma'}$, ત્યારે $\Sat{M}{!A}$; એટલે
+$\Gamma'\Entails !A$.
+\end{proof}
+
+
+\begin{thm}[અર્થાનુસારી નિગમન પ્રમેય]
+\ollabel{thm:sem-deduction}
+$\Gamma\cup\{!A\}\Entails !B$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Gamma\Entails !A\lif !B$.
+\end{thm}
+
+\begin{proof}
+આગળની દિશા માટે, $\Gamma\cup\{!A\}\Entails !B$ હોય અને
+$\Sat{M}{\Gamma}$ હોય એવી !!a{structure}~$\Struct M$ લો. જો
+$\Sat{M}{!A}$, તો $\Sat{M}{\Gamma\cup\{!A\}}$; અને
+$\Gamma\cup\{!A\}$,~$!B$ને ફલિત કરતું હોવાથી આપણને
+$\Sat{M}{!B}$ મળે છે. તેથી $\Sat{M}{!A\lif !B}$, એટલે
+$\Gamma\Entails !A\lif !B$.
+
+ઊલટી દિશા માટે, $\Gamma\Entails !A\lif !B$ હોય અને
+$\Sat{M}{\Gamma\cup\{!A\}}$ હોય એવી !!a{structure}~$\Struct M$ લો.
+ત્યારે $\Sat{M}{\Gamma}$, એટલે $\Sat{M}{!A\lif !B}$; અને
+$\Sat{M}{!A}$ હોવાથી $\Sat{M}{!B}$. આથી જ્યારે પણ
+$\Sat{M}{\Gamma\cup\{!A\}}$, ત્યારે $\Sat{M}{!B}$; એટલે
+$\Gamma\cup\{!A\}\Entails !B$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:quant-terms}
+  $\Struct{M}$ !!a{structure}, એક મુક્ત ચલ~$x$ ધરાવતું~$!A(x)$
+  !!a{formula} અને~$t$ બંધ પદ હોય. ત્યારે:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$!A(t)\Entails\lexists[x][!A(x)]$}{}
+    \tagitem{prvAll}{$\lforall[x][!A(x)]\Entails !A(t)$}{}
+  \end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{%
+      \iftag{probEx}{મહાવરો.}{ધારો કે $\Sat{M}{!A(t)}$. એવી
+        ચલ-નિયુક્તિ~$s$ લો કે $s(x)=\Value{t}{M}$. $!A(t)$
+        !!a{sentence} હોવાથી $\Sat{M}{!A(t)}[s]$. હવે
+        \olref[ext]{prop:ext-formulas}થી $\Sat{M}{!A(x)}[s]$.
+        \olref[ass]{prop:sat-quant}થી
+        $\Sat{M}{\lexists[x][!A(x)]}$.}}{}
+    \tagitem{prvAll}{%
+      \iftag{probAll}{મહાવરો.}{ધારો કે
+        $\Sat{M}{\lforall[x][!A(x)]}$. એવી ચલ-નિયુક્તિ~$s$ લો કે
+        $s(x)=\Value{t}{M}$. \olref[ass]{prop:sat-quant}થી
+        $\Sat{M}{!A(x)}[s]$. \olref[ext]{prop:ext-formulas}થી
+        $\Sat{M}{!A(t)}[s]$. $!A(t)$ !!a{sentence} હોવાથી
+        \olref[ass]{prop:sentence-sat-true}થી $\Sat{M}{!A(t)}$.}}{}
+  \end{tagenumerate}
+\end{proof}
+
+\begin{probtag}{probEx,probAll}
+  \olref[fol][syn][sem]{prop:quant-terms}ની સાબિતી પૂરી કરો.
+\end{probtag}
+
+\end{document}

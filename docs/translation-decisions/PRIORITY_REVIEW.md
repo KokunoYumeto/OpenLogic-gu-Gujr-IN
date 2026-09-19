@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-12T17:18:29.043272+00:00. This focused queue contains 104 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-19T18:49:50.009276+00:00. This focused queue contains 110 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -729,3 +729,45 @@ Generated 2026-09-12T17:18:29.043272+00:00. This focused queue contains 104 high
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘મુક્ત ઘટના / મુક્તપણે પ્રતિસ્થાપનીય / ચલનું પકડાવું / દૃષ્ટાંત’ accurately express ‘free occurrence / free for substitution / variable capture / instance’ with the scope stated here: મુક્ત and ચલ follow the edition's established variable terminology. ઘટના identifies a particular syntactic occurrence, મુક્તપણે પ્રતિસ્થાપનીય states the capture-avoiding condition, the quoted verb પકડાવું preserves the source metaphor, and દૃષ્ટાંત names a substitution instance rather than an explanatory example. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13`
 - **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:15`
+
+## GU-T146: domain of a structure or model (universe) → વ્યાપકક્ષેત્ર
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘વ્યાપકક્ષેત્ર’ accurately express ‘domain of a structure or model (universe)’ with the scope stated here: GU-P016 directly attests પ્રદેશ for a relation or function's domain. The edition already uses વ્યાપકક્ષેત્ર throughout its first-order introduction for the underlying set over which quantifiers range. This checkpoint preserves that model-theoretic distinction: વ્યાપકક્ષેત્ર names a structure's universe, while પ્રદેશ remains the attested term for the domain of a relation or function. The exact model-theoretic Gujarati noun is not directly attested in the checked canon. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:18`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/structures.tex:18`
+
+## GU-T147: covered structure / closed term / value of a term → આવૃત સંરચના / બંધ પદ / પદનું મૂલ્ય
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘આવૃત સંરચના / બંધ પદ / પદનું મૂલ્ય’ accurately express ‘covered structure / closed term / value of a term’ with the scope stated here: સંરચના, પદ and મૂલ્ય follow the established edition register. બંધ states that the term has no variables. આવૃત expresses the defining coverage condition: every element of the structure's universe is the value of some closed term. The displayed definition controls the technical sense because the exact compound is not attested in the checked canon. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11`
+
+## GU-T148: x-variant of a variable assignment → ચલ-નિયુક્તિનું x-રૂપાંતર
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિનું x-રૂપાંતર’ accurately express ‘x-variant of a variable assignment’ with the scope stated here: ચલ-નિયુક્તિ is governed by GU-T140. રૂપાંતર names the assignment obtained by changing at most the value of x; the adjacent definition fixes agreement on every other variable and permits the original assignment itself as a variant. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:70`
+
+## GU-T149: extensionality / relevance for first-order satisfaction → પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ / સંબંધિતતા
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ / સંબંધિતતા’ accurately express ‘extensionality / relevance for first-order satisfaction’ with the scope stated here: The theorem says satisfaction depends only on the common universe, the symbols actually occurring in the formula and their assignments. The descriptive heading states that dependence directly; સંબંધિતતા records the source's alternate name. GU-T003 remains reserved for set extensionality, whose equality-by-elements context is different from this semantic invariance principle. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:11`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/extensionality.tex:11`
+
+## GU-T150: satisfaction relative to a variable assignment → ચલ-નિયુક્તિ સાપેક્ષ સંતોષ
+
+- **Why prioritized:** The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિ સાપેક્ષ સંતોષ’ accurately express ‘satisfaction relative to a variable assignment’ with the scope stated here: GU-P068 attests satisfaction in predicate semantics, and GU-T140 governs ચલ-નિયુક્તિ. સાપેક્ષ keeps the semantic judgement explicitly dependent on the assignment until the sentence-independence theorem licenses omission of that parameter. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:104`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:34`
+
+## GU-T151: vacuous substitution (a substitution that makes no change) → પ્રતિસ્થાપનથી કોઈ ફેરફાર ન થાય
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રતિસ્થાપનથી કોઈ ફેરફાર ન થાય’ accurately express ‘vacuous substitution (a substitution that makes no change)’ with the scope stated here: The source immediately defines vacuity by the case where x does not occur and the result remains A. The explicit no-change wording preserves that sense without using નિરર્થક, which can be read as meaningless. No checked canon passage attests a fixed Gujarati technical adjective for vacuous substitution. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:97`
+- **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/substitution.tex:98`

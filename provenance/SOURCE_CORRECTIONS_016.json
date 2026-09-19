@@ -1,0 +1,271 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-19T17:46:35.964590+00:00",
+  "audit_id": "GU-OLSEM-20260919",
+  "audit_method": "Same-agent exact comparison against the frozen source, surrounding definitions, displayed examples and proof invariants within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLSEM-001",
+      "unit_id": "OLP-0161",
+      "classification": "confirmed_malformed_compound_for_two_place_relation",
+      "finding": "The source's compound 'single-two place relation' is malformed and obscures that the language needs one two-place relation.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+      "source_locator": "structures.tex:77",
+      "source_bytes": 4951,
+      "source_sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/structures.tex",
+      "target_bytes": 8821,
+      "target_sha256": "49404446fbf3e66d83cd9c52b9aa3d28502fc1cba0dddcc3e3e40ac979abc9a7",
+      "corrected_body_line": 77,
+      "adjacent_note_line": 82,
+      "handling": "Rendered the intended phrase as one two-place relation and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "single-two place relation",
+        "added": "single two-place relation"
+      },
+      "controlling_evidence": "The language of set theory described here has one binary membership relation, and the following examples interpret exactly one binary relation symbol.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-002",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_missing_satisfaction_clause_in_existential_branch",
+      "finding": "The existential branch stops after 'for at least one m in the domain' while only the universal branch contains the displayed satisfaction claim.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_locator": "satisfaction.tex:172",
+      "source_bytes": 16899,
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_bytes": 29356,
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "corrected_body_line": 173,
+      "adjacent_note_line": 179,
+      "handling": "Restored the deliberately informal satisfaction expression B(m) in both conditional branches and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "existential branch without Sat(M,B(m))",
+        "added": "existential branch with Sat(M,B(m))"
+      },
+      "controlling_evidence": "The surrounding paragraph contrasts the invalid B(m) paraphrase with assignment-relative satisfaction for both primitive quantifier profiles.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-003",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_assignment_suffix_attached_to_relation_interpretation",
+      "finding": "The assignment suffix [s] is attached to the interpreted relation instead of only to the satisfaction judgement.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_locator": "satisfaction.tex:213",
+      "source_bytes": 16899,
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_bytes": 29356,
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "corrected_body_line": 221,
+      "adjacent_note_line": 223,
+      "handling": "Removed [s] from the relation interpretation and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\Assign{R}{M}[s]",
+        "added": "\\Assign{R}{M}"
+      },
+      "controlling_evidence": "A structure alone fixes the interpretation of R; the assignment supplies values for variables in the atomic formula.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-004",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_unbalanced_parentheses_in_derived_existential_example",
+      "finding": "Two formulas open two parentheses after negation but close only one, making the displayed formulas unbalanced.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_locator": "satisfaction.tex:288",
+      "source_bytes": 16899,
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_bytes": 29356,
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "corrected_body_line": 302,
+      "adjacent_note_line": 305,
+      "handling": "Used one balanced parenthesis pair around the disjunction in both formulas and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lnot((R(b,x) \\lor R(x,b))",
+        "added": "\\lnot(R(b,x) \\lor R(x,b))"
+      },
+      "controlling_evidence": "Negation applies to the single parenthesized disjunction in the derived existential definition and in the immediately preceding line.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-005",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_stray_comma_inside_formula_argument",
+      "finding": "A prose comma is placed inside the existential formula's argument immediately before the satisfaction suffix.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_locator": "satisfaction.tex:292",
+      "source_bytes": 16899,
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_bytes": 29356,
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "corrected_body_line": 311,
+      "adjacent_note_line": 313,
+      "handling": "Removed the comma from the mathematical expression and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lexists[x][(R(b,x) \\land R(x,b))],",
+        "added": "\\lexists[x][(R(b,x) \\land R(x,b))]"
+      },
+      "controlling_evidence": "The comma is not part of the formula grammar and the displayed judgement is a complete sentence punctuated after [s].",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-006",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_wrong_atomic_antecedent_in_universal_example",
+      "finding": "For m=2,3,4 the source declares the consequent R(a,x) false, although at m=2 it is true; the intended false antecedent is R(x,a).",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_locator": "satisfaction.tex:309",
+      "source_bytes": 16899,
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_bytes": 29356,
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "corrected_body_line": 284,
+      "adjacent_note_line": 338,
+      "handling": "Restored the false antecedent R(x,a) and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "R(a,x)",
+        "added": "R(x,a)"
+      },
+      "controlling_evidence": "The implication is R(x,a) -> R(a,x), and the relation listed for the example makes its antecedent false at m=2,3,4.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-007",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_missing_variable_before_equality",
+      "finding": "The second interesting case is printed as '= 2' with its variable omitted.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_locator": "satisfaction.tex:331",
+      "source_bytes": 16899,
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_bytes": 29356,
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "corrected_body_line": 358,
+      "adjacent_note_line": 365,
+      "handling": "Restored m before the equality and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$ = 2$",
+        "added": "$m = 2$"
+      },
+      "controlling_evidence": "The outer universal quantifier is evaluated by m, and the next paragraph explicitly handles the m=2 assignment.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-008",
+      "unit_id": "OLP-0163",
+      "classification": "confirmed_outer_quantifier_metavariable_mismatch",
+      "finding": "The summary quantifies over n although both cases and the entire preceding outer-quantifier analysis use m.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "source_locator": "satisfaction.tex:347",
+      "source_bytes": 16899,
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_bytes": 29356,
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "corrected_body_line": 379,
+      "adjacent_note_line": 385,
+      "handling": "Changed the summary metavariable to m and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "for all n in Domain M",
+        "added": "for all m in Domain M"
+      },
+      "controlling_evidence": "m is the value assigned to the outer x, whereas n is used only for the inner y witness.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-009",
+      "unit_id": "OLP-0164",
+      "classification": "confirmed_free_index_in_relation_tuple",
+      "finding": "The concluding tuple starts at t_i, leaving i free instead of listing the components from t_1 through t_k.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "source_locator": "assignments.tex:91",
+      "source_bytes": 14133,
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "target_bytes": 23409,
+      "target_sha256": "96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992",
+      "corrected_body_line": 90,
+      "adjacent_note_line": 93,
+      "handling": "Restored t_1 as the tuple's first component and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "tuple beginning t_i",
+        "added": "tuple beginning t_1"
+      },
+      "controlling_evidence": "The preceding tuple and componentwise equality both range over all indices 1 through k.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-010",
+      "unit_id": "OLP-0164",
+      "classification": "confirmed_undefined_base_assignment_in_two_variants",
+      "finding": "Both variant assignments are constructed from an undefined s instead of from the two assignments s_1 and s_2 compared in the proof.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "source_locator": "assignments.tex:181",
+      "source_bytes": 14133,
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "target_bytes": 23409,
+      "target_sha256": "96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992",
+      "corrected_body_line": 189,
+      "adjacent_note_line": 200,
+      "handling": "Constructed s_1' from s_1 and s_2' from s_2, then added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": [
+          "Subst(s,m,x)",
+          "Subst(s,m,x)"
+        ],
+        "added": [
+          "Subst(s_1,m,x)",
+          "Subst(s_2,m,x)"
+        ]
+      },
+      "controlling_evidence": "The independence proof compares s_1 and s_2 and immediately calls the resulting assignments their respective x-variants.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLSEM-011",
+      "unit_id": "OLP-0164",
+      "classification": "confirmed_duplicated_gamma_after_noun_phrase",
+      "finding": "Gamma is printed twice in the opening noun phrase, once as the subject and again after 'set of sentences'.",
+      "source_path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "source_locator": "assignments.tex:241",
+      "source_bytes": 14133,
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "target_path": "gu/content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "target_bytes": 23409,
+      "target_sha256": "96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992",
+      "corrected_body_line": 255,
+      "adjacent_note_line": 260,
+      "handling": "Removed the redundant second occurrence and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "set of sentences Gamma Gamma",
+        "added": "Gamma is a set of sentences"
+      },
+      "controlling_evidence": "The definition introduces one set Gamma and the following clauses use that same set throughout.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_016.json",
+  "status": "eleven_repairs_applied_disclosed_and_structural_semantic_reader_qa_passed"
+}

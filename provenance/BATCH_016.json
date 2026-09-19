@@ -1,0 +1,163 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-19T18:48:10.696033+00:00",
+  "boundary": "First-order Logic semantics OLP-0159–0166 under the complete classical first-order profile",
+  "units": [
+    {
+      "unit_id": "OLP-0159",
+      "source_sha256": "9ece0259134346fe5dad884d12bfe4aaa88dab579e7d821a156115ee904e8f3b",
+      "target_sha256": "362627b6e4901d9e04dc19f57386f5c1294c62c6867a0436a669ed4522fc9910",
+      "source_bytes": 404,
+      "target_bytes": 470,
+      "aligned_blocks": 13,
+      "raw_source_blocks": 13,
+      "linguistic_blocks": 1,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0160",
+      "source_sha256": "0c17fd8bd7b0a2218229c8f217581bf09cde11ec08a602019f46b20f174a4722",
+      "target_sha256": "51d9700d5088838b6709763cba455bfc185b342af6d76bf68d79dae8e626c335",
+      "source_bytes": 2368,
+      "target_bytes": 4589,
+      "aligned_blocks": 8,
+      "raw_source_blocks": 8,
+      "linguistic_blocks": 3,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0161",
+      "source_sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf",
+      "target_sha256": "49404446fbf3e66d83cd9c52b9aa3d28502fc1cba0dddcc3e3e40ac979abc9a7",
+      "source_bytes": 4951,
+      "target_bytes": 8821,
+      "aligned_blocks": 14,
+      "raw_source_blocks": 14,
+      "linguistic_blocks": 9,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0162",
+      "source_sha256": "50975f7de07ff4167fcf30249770ab3a4eaac7df0ae1f38d0c8f15ca7f87d530",
+      "target_sha256": "8ecdb6ad83b0e5a87507ae519ce1905a092fb8f2ddb4d8c8dd34dbf152323817",
+      "source_bytes": 2646,
+      "target_bytes": 3639,
+      "aligned_blocks": 11,
+      "raw_source_blocks": 11,
+      "linguistic_blocks": 6,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0163",
+      "source_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "source_bytes": 16899,
+      "target_bytes": 29356,
+      "aligned_blocks": 48,
+      "raw_source_blocks": 48,
+      "linguistic_blocks": 42,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0164",
+      "source_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
+      "target_sha256": "96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992",
+      "source_bytes": 14133,
+      "target_bytes": 23409,
+      "aligned_blocks": 51,
+      "raw_source_blocks": 51,
+      "linguistic_blocks": 45,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0165",
+      "source_sha256": "50a329405f437b78605cafd811dbf3837efa0fde17069d1dee208bff49a20fda",
+      "target_sha256": "24fd9e51fb4635605230ba6e6defa14abdbe96d4e6a0c9184ea0598b2e35d43c",
+      "source_bytes": 5213,
+      "target_bytes": 7745,
+      "aligned_blocks": 23,
+      "raw_source_blocks": 23,
+      "linguistic_blocks": 18,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0166",
+      "source_sha256": "ac61c5166fa97ab754993ebbf8a126c389f530944132e0b633a75e34c9e08b2e",
+      "target_sha256": "119078fe67c6320208d6a8288fdd9e970ea925ca7e28721de34ab42bec986009",
+      "source_bytes": 6022,
+      "target_bytes": 9186,
+      "aligned_blocks": 24,
+      "raw_source_blocks": 24,
+      "linguistic_blocks": 20,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 144,
+  "aligned_blocks": 192,
+  "source_math_spans": 877,
+  "corrected_source_math_spans": 877,
+  "source_corrections": [
+    {
+      "finding_id": "OLSEM-001",
+      "unit_id": "OLP-0161",
+      "handling": "Rendered the intended phrase as one two-place relation and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-002",
+      "unit_id": "OLP-0163",
+      "handling": "Restored the deliberately informal satisfaction expression B(m) in both conditional branches and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-003",
+      "unit_id": "OLP-0163",
+      "handling": "Removed [s] from the relation interpretation and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-004",
+      "unit_id": "OLP-0163",
+      "handling": "Used one balanced parenthesis pair around the disjunction in both formulas and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-005",
+      "unit_id": "OLP-0163",
+      "handling": "Removed the comma from the mathematical expression and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-006",
+      "unit_id": "OLP-0163",
+      "handling": "Restored the false antecedent R(x,a) and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-007",
+      "unit_id": "OLP-0163",
+      "handling": "Restored m before the equality and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-008",
+      "unit_id": "OLP-0163",
+      "handling": "Changed the summary metavariable to m and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-009",
+      "unit_id": "OLP-0164",
+      "handling": "Restored t_1 as the tuple's first component and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-010",
+      "unit_id": "OLP-0164",
+      "handling": "Constructed s_1' from s_1 and s_2' from s_2, then added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLSEM-011",
+      "unit_id": "OLP-0164",
+      "handling": "Removed the redundant second occurrence and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_016.json",
+  "semantic_review": "Exact-block review is recorded for all 144 aligned linguistic blocks; see SEMANTIC_REVIEW_016.json.",
+  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, reflowable EPUB, EPUBCheck, EPUB runtime, untranslated-prose and reviewer-decision QA passed.",
+  "translation_decisions": "Reviewer package regenerated: 271 schema-valid decisions, 279 exact occurrences, 278 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and no pending locators.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
+}

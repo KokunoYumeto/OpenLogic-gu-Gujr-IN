@@ -72,9 +72,12 @@
   \IfNoValueTF{#3}{\IfBooleanTF{#1}{\ne}{=}}{\IfBooleanTF{#1}{#2\ne#3}{#2=#3}}}
 \newcommand{\indfrm}{}
 \newcommand{\indfrmp}{}
-\NewDocumentCommand{\indcase}{s m m +m}{%
-  \def\indfrm{#2}\def\indfrmp{#2}%
-  \IfBooleanTF{#1}{$#2$ આણ્વિક છે: }{$#2\ident #3$: }#4}
+\newcommand{\indcomplex}{}
+\NewDocumentCommand{\indcase}{s t{!} m m +m}{%
+  \def\indfrm{#3}\def\indfrmp{#3}\def\indcomplex{#4}%
+  \IfBooleanTF{#1}{$#3$ આણ્વિક છે: }{$#3\ident #4$: }%
+  \IfBooleanTF{#2}{કસરત.}{#5}}
+\newenvironment{probtag}[1]{\begin{prob}}{\end{prob}}
 \newcommand{\Sequent}{\Rightarrow}
 \renewcommand{\fCenter}{\ensuremath{\,\Sequent\,}}
 \newcommand{\LeftR}[1]{\ensuremath{{#1}\mathrm{L}}}
@@ -174,6 +177,16 @@
 \input{\gueditionlabelsfile}
 \renewcommand{\oliflabeldef}[3]{\ifcsname guavailable@#1\endcsname#2\else#3\fi}
 \let\guoriginalref\ref
+\makeatletter
+\newcommand{\gucreflist}[1]{%
+  \def\gurefseparator{}%
+  \@for\gureflabel:=#1\do{%
+    \gurefseparator\ref{\gureflabel}%
+    \def\gurefseparator{ અને~}}}
+\makeatother
+\renewcommand{\cref}[1]{વિધાનો~\gucreflist{#1}}
+\providecommand{\Cref}[1]{}
+\renewcommand{\Cref}[1]{વિધાનો~\gucreflist{#1}}
 \expandafter\def\csname guexternalref@sfr:siz::chap\endcsname{\guoriginalref{sfr:siz:int:sec}}
 \expandafter\def\csname guexternalref@sfr:arith::chap\endcsname{\guoriginalref{sfr:arith:int:sec}}
 \expandafter\def\csname guexternalref@his:set:mythology:sec\endcsname{%

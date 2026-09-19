@@ -1,0 +1,110 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/016",
+  "checked_at_utc": "2026-09-19T17:43:18.075460+00:00",
+  "scope": "OLP-0138–OLP-0148 Gujarati first-order introduction source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, derivation environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing keyed IDs, filenames, math, literal control names and explicitly quoted frozen-source fragments.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0159",
+      "path": "content/first-order-logic/syntax-and-semantics/semantics.tex",
+      "target_sha256": "362627b6e4901d9e04dc19f57386f5c1294c62c6867a0436a669ed4522fc9910",
+      "gujarati_characters": 31,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0160",
+      "path": "content/first-order-logic/syntax-and-semantics/intro-semantics.tex",
+      "target_sha256": "51d9700d5088838b6709763cba455bfc185b342af6d76bf68d79dae8e626c335",
+      "gujarati_characters": 1172,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0161",
+      "path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+      "target_sha256": "49404446fbf3e66d83cd9c52b9aa3d28502fc1cba0dddcc3e3e40ac979abc9a7",
+      "gujarati_characters": 1934,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0162",
+      "path": "content/first-order-logic/syntax-and-semantics/covered-structures.tex",
+      "target_sha256": "8ecdb6ad83b0e5a87507ae519ce1905a092fb8f2ddb4d8c8dd34dbf152323817",
+      "gujarati_characters": 529,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0163",
+      "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "target_sha256": "865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b",
+      "gujarati_characters": 5502,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 7
+    },
+    {
+      "unit_id": "OLP-0164",
+      "path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
+      "target_sha256": "96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992",
+      "gujarati_characters": 4207,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    },
+    {
+      "unit_id": "OLP-0165",
+      "path": "content/first-order-logic/syntax-and-semantics/extensionality.tex",
+      "target_sha256": "24fd9e51fb4635605230ba6e6defa14abdbe96d4e6a0c9184ea0598b2e35d43c",
+      "gujarati_characters": 1348,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0166",
+      "path": "content/first-order-logic/syntax-and-semantics/semantic-notions.tex",
+      "target_sha256": "119078fe67c6320208d6a8288fdd9e970ea925ca7e28721de34ab42bec986009",
+      "gujarati_characters": 1663,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    }
+  ],
+  "totals": {
+    "units": 8,
+    "gujarati_characters": 16386,
+    "source_detector_ascii_tokens": 3122,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 11,
+    "quoted_frozen_source_literals": 3
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "allowed_formal_abbreviations": [
+    "FOL",
+    "MP"
+  ],
+  "allowed_formal_literals": [
+    "FOL tag name",
+    "false tag value",
+    "forall x book title"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [
+    "``ઓછામાં ઓછા એક~$m$ માટે''",
+    "``દરેક~$m$ માટે''",
+    "``વાક્યોનો ગણ~$\\Gamma$''"
+  ],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}

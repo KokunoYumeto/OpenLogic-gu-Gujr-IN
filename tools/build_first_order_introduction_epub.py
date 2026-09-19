@@ -47,7 +47,7 @@ CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 XML = "http://www.w3.org/XML/1998/namespace"
 
 EDITION = sys.argv[1] if len(sys.argv) > 1 else "first-order-introduction"
-require_editions = {"first-order-introduction", "first-order-syntax"}
+require_editions = {"first-order-introduction", "first-order-syntax", "first-order-semantics"}
 if EDITION not in require_editions:
     raise SystemExit(f"edition must be one of {sorted(require_editions)}")
 
@@ -91,6 +91,35 @@ if EDITION == "first-order-syntax":
         "સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય, "
         "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય-પ્રકરણ અને તેનું વાક્યરચના-પ્રકરણ "
         "સમાવિષ્ટ છે."
+    )
+elif EDITION == "first-order-semantics":
+    INPUT = ROOT / "reader" / "first-order-semantics.html"
+    OUTPUT = ROOT / "releases" / "OpenLogic-gu-Gujr-IN-First-Order-Semantics.epub"
+    REPLAY = ROOT / "build" / "OpenLogic-gu-Gujr-IN-First-Order-Semantics-replay.epub"
+    STAGE = ROOT / "build" / "epub016-stage"
+    REPLAY_STAGE = ROOT / "build" / "epub016-replay-stage"
+    RECEIPT = ROOT / "build" / "EPUB_BUILD_RECEIPT_016.json"
+    TITLE = "પ્રથમ-ક્રમ અર્થવિચાર સહિત ઓપન લોજિક ગુજરાતી"
+    IDENTIFIER = (
+        "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/"
+        "releases/tag/first-order-semantics-v0.10.0"
+    )
+    MODIFIED = "2026-09-19T00:00:00Z"
+    ZIP_TIME = (2026, 9, 19, 0, 0, 0)
+    NAVIGATION_ENTRIES = 171
+    COVERAGE = "163/722 units; OLP-0004-0166"
+    DESCRIPTION = "Partial Gujarati cumulative edition: 163 of 722 tracked source units, OLP-0004-0166."
+    ABOUT_COVERAGE = (
+        "આ EPUB એક પ્રવાહી, લિપિઆકાર બદલાય એવું ગુજરાતી વાચન છે. તેમાં ૭૨૨ "
+        "મૂળ એકમોમાંથી ૧૬૩ એકમો, એટલે OLP-0004થી OLP-0166 સુધીનો સતત "
+        "આંશિક વિસ્તાર છે. સંપૂર્ણ ૭૨૨-એકમ આવૃત્તિનું કામ ચાલુ છે."
+    )
+    ABOUT_SCOPE = (
+        "આ સંગ્રહમાં ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ, અનંત ગણો, "
+        "વિધાનાત્મક તર્કશાસ્ત્ર તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રની સાબિતી-પદ્ધતિઓ, "
+        "સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય, "
+        "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય-પ્રકરણ, વાક્યરચના-પ્રકરણ અને "
+        "અર્થવિચાર-પ્રકરણ સમાવિષ્ટ છે."
     )
 
 

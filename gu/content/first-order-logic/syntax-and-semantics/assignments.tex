@@ -1,0 +1,385 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: assignments
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ass}
+
+\olsection{ચલ-નિયુક્તિઓ}
+
+\begin{explain}
+!!{variable} નિયુક્તિ~$s$ \emph{દરેક} ચલને મૂલ્ય આપે છે---અને ચલો
+અનંત સંખ્યામાં છે. અલબત્ત, આ જરૂરી નથી. આપણે !!{variable}
+નિયુક્તિઓને બધાં !!{variable}s માટે મૂલ્યો નિયુક્ત કરવાનું માત્ર એટલા
+માટે કહીએ છીએ કે તેનાથી બાબતો ઘણી સરળ બને છે. પદ~$t$નું મૂલ્ય અને
+!!a{formula}~$!A$,~!!a{structure}માં~$s$ સાપેક્ષ સંતોષાય છે કે નહિ,
+માત્ર~$t$માંના !!{variable}sને અને~$!A$ના મુક્ત !!{variable}sને~$s$
+કરેલી નિયુક્તિઓ પર આધાર રાખે છે. આગળનાં બે વિધાનો આ જ કહે છે.
+``આધાર રાખે છે'' એ વિચાર ચોક્કસ કરવા આપણે બતાવીએ છીએ કે~$t$માંના બધા
+ચલો પર સંમત થતી કોઈ પણ બે ચલ-નિયુક્તિઓ સરખું મૂલ્ય આપે છે; અને જો બે
+ચલ-નિયુક્તિઓ~$!A$ના બધા મુક્ત ચલો પર સંમત હોય, તો~$!A$ એક નિયુક્તિ
+સાપેક્ષ સંતોષાય ત્યારે અને માત્ર ત્યારે બીજી નિયુક્તિ સાપેક્ષ સંતોષાય.
+\end{explain}
+
+\begin{prop}\ollabel{prop:valindep}
+જો પદ~$t$માંના !!{variable}s $x_1$, \dots,~$x_n$માંના હોય અને
+$i=1$, \dots,~$n$ માટે $s_1(x_i)=s_2(x_i)$ હોય, તો
+$\Value{t}{M}[s_1]=\Value{t}{M}[s_2]$.
+\end{prop}
+
+\begin{proof}
+~$t$ની સંકુલતા પર અનુમાન વડે. પાયાના કિસ્સામાં~$t$ !!a{constant}
+અથવા $x_1$, \dots,~$x_n$માંથી કોઈ એક ચલ હોઈ શકે. જો $t=c$ હોય, તો
+$\Value{t}{M}[s_1]=\Assign{c}{M}=\Value{t}{M}[s_2]$. જો $t=x_i$ હોય,
+તો વિધાનની પૂર્વધારણાથી $s_1(x_i)=s_2(x_i)$, અને તેથી
+$\Value{t}{M}[s_1]=s_1(x_i)=s_2(x_i)=\Value{t}{M}[s_2]$.
+
+અનુમાનાત્મક પગલા માટે ધારો કે $t=\Atom{f}{t_1,\dots,t_k}$ અને દાવો
+$t_1$, \dots,~$t_k$ માટે સાચો છે. ત્યારે
+\begin{align*}
+  \Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]).
+\intertext{$j=1$, \dots,~$k$ માટે~$t_j$ના !!{variable}s
+    $x_1$, \dots,~$x_n$માંના છે. અનુમાનાત્મક પૂર્વધારણાથી
+    $\Value{t_j}{M}[s_1]=\Value{t_j}{M}[s_2]$. તેથી,}
+\Value{t}{M}[s_1] & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_1] \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_1], \dots, \Value{t_k}{M}[s_1]) \\
+  & = \Assign{f}{M}(\Value{t_1}{M}[s_2], \dots, \Value{t_k}{M}[s_2]) \\
+  & = \Value{\Atom{f}{t_1, \dots, t_k}}{M}[s_2] = \Value{t}{M}[s_2].
+\end{align*}
+\end{proof}
+
+\begin{prop}\ollabel{prop:satindep}
+જો~$!A$ના મુક્ત !!{variable}s $x_1$, \dots,~$x_n$માંના હોય અને
+$i=1$, \dots,~$n$ માટે $s_1(x_i)=s_2(x_i)$ હોય, તો
+$\Sat{M}{!A}[s_1]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Sat{M}{!A}[s_2]$.
+\end{prop}
+
+\begin{proof}
+આપણે~$!A$ની સંકુલતા પર અનુમાન વાપરીએ છીએ. પાયાના કિસ્સામાં, જ્યાં
+$!A$ આણ્વિક છે, ત્યાં~$!A$ આમાંથી કોઈ હોઈ શકે:
+\iftag{prvTrue}{$\ltrue$,}{}
+\iftag{prvFalse}{$\lfalse$,}{}
+$k$-સ્થાની વિધેય~$R$ અને પદો $t_1$, \dots,~$t_k$ માટે
+$\Atom{R}{t_1,\dots,t_k}$, અથવા પદો $t_1$ અને~$t_2$ માટે
+$\eq[t_1][t_2]$. છેલ્લા બે કિસ્સામાં આપણે !!{biconditional}ની માત્ર આગળની દિશા
+બતાવીએ છીએ, કારણ કે ઊલટી દિશાની સાબિતી સમમિત છે.
+
+\begin{enumerate}
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Sat{M}{\indfrm}[s_1]$ અને
+    $\Sat{M}{\indfrm}[s_2]$ બંને.}}{}
+
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Sat/{M}{!A}[s_1]$ અને
+    $\Sat/{M}{!A}[s_2]$ બંને.}}{}
+
+\item
+  \indcase{!A}{\Atom{R}{t_1, \ldots, t_k}}{ધારો કે
+    $\Sat{M}{\indfrm}[s_1]$. ત્યારે
+    \[
+    \langle \Value{t_1}{M}[s_1], \ldots, \Value{t_k}{M}[s_1] \rangle
+    \in \Assign{R}{M}.
+    \]
+    $i=1$, \dots,~$k$ માટે \olref{prop:valindep}થી
+    $\Value{t_i}{M}[s_1]=\Value{t_i}{M}[s_2]$. તેથી આપણને
+    $\langle \Value{t_1}{M}[s_2], \ldots, \Value{t_k}{M}[s_2] \rangle
+    \in \Assign{R}{M}$ પણ મળે છે, અને તેથી
+    $\Sat{M}{\indfrm}[s_2]$.}
+\sourcecorrection{OLSEM-009}{મૂળની \texttt{assignments.tex},
+પંક્તિ~91માં અંતિમ યુગ્મનું પ્રથમ સ્થાન~$t_i$ છે, જેથી એક મુક્ત
+સૂચકચલ રહી જાય છે અને યુગ્મના પહેલા પદથી શરૂ થતી યાદી મળતી નથી.
+ઘટકવાર સમાનતા લાગુ કર્યા પછીનું યુગ્મ $t_1$થી~$t_k$ સુધીનું જ છે;
+તેથી પહેલા સ્થાનમાં~$t_1$ પુનઃસ્થાપિત કર્યું છે.}
+\item
+  \indcase{!A}{\eq[t_1][t_2]}{ધારો કે $\Sat{M}{\indfrm}[s_1]$.
+    ત્યારે $\Value{t_1}{M}[s_1]=\Value{t_2}{M}[s_1]$. તેથી,
+    \begin{align*}
+      \Value{t_1}{M}[s_2] & = \Value{t_1}{M}[s_1]
+      & \text{(\olref{prop:valindep}થી)} \\
+      & = \Value{t_2}{M}[s_1]
+      & \text{($\Sat{M}{\eq[t_1][t_2]}[s_1]$ હોવાથી)}\\
+      &= \Value{t_2}{M}[s_2]
+      & \text{(\olref{prop:valindep}થી),}
+    \end{align*}
+    તેથી $\Sat{M}{\eq[t_1][t_2]}[s_2]$.}
+\end{enumerate}
+
+હવે~$!A$ કરતાં ઓછી સંકુલતા ધરાવતા બધા !!{formula}s~$!B$ માટે
+$\Sat{M}{!B}[s_1]$ ત્યારે અને માત્ર ત્યારે જ્યારે $\Sat{M}{!B}[s_2]$
+એમ ધારો. અનુમાનાત્મક પગલું~$!A$ના મુખ્ય સંક્રિયકથી નક્કી થતા કિસ્સાઓ
+પ્રમાણે આગળ વધે છે. દરેક કિસ્સામાં આપણે !!{biconditional}ની માત્ર આગળની દિશા
+બતાવીએ છીએ; ઊલટી દિશાની સાબિતી સમમિત છે. પરિમાણકોના કિસ્સા સિવાયના
+બધા કિસ્સામાં આપણે~$!A$નાં ઉપ-!!{formula}s~$!B$ને અનુમાનાત્મક
+પૂર્વધારણા લાગુ કરીએ છીએ.~$!B$ના મુક્ત ચલો~$!A$ના મુક્ત ચલોમાંના છે.
+તેથી જો $s_1$ અને~$s_2$,~$!A$ના મુક્ત ચલો પર સંમત હોય, તો તે~$!B$ના
+મુક્ત ચલો પર પણ સંમત છે અને અનુમાનાત્મક પૂર્વધારણા~$!B$ને લાગુ પડે છે.
+
+\begin{enumerate}
+\tagitem{defNot}{}{%
+  \iftag{probNot}{%
+    \indcase!{!A}{\lnot !B}{}}{%
+    \indcase{!A}{\lnot !B}{જો $\Sat{M}{\indfrm}[s_1]$, તો
+      $\Sat/{M}{!B}[s_1]$; તેથી અનુમાનાત્મક પૂર્વધારણાથી
+      $\Sat/{M}{!B}[s_2]$, અને પરિણામે $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defAnd}{}{%
+  \iftag{probAnd}{%
+    \indcase!{!A}{!B \land !C}{}}{%
+    \indcase{!A}{!B \land !C}{જો $\Sat{M}{\indfrm}[s_1]$, તો
+      $\Sat{M}{!B}[s_1]$ અને $\Sat{M}{!C}[s_1]$; તેથી અનુમાનાત્મક
+      પૂર્વધારણાથી $\Sat{M}{!B}[s_2]$ અને $\Sat{M}{!C}[s_2]$.
+      પરિણામે $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defOr}{}{%
+  \iftag{probOr}{%
+    \indcase!{!A}{!B \lor !C}{}}{%
+    \indcase{!A}{!B \lor !C}{જો $\Sat{M}{\indfrm}[s_1]$, તો
+      $\Sat{M}{!B}[s_1]$ અથવા $\Sat{M}{!C}[s_1]$. અનુમાનાત્મક
+      પૂર્વધારણાથી $\Sat{M}{!B}[s_2]$ અથવા $\Sat{M}{!C}[s_2]$;
+      તેથી $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defIf}{}{%
+  \iftag{probIf}{%
+    \indcase!{!A}{!B \lif !C}{}}{%
+    \indcase{!A}{!B \lif !C}{જો $\Sat{M}{\indfrm}[s_1]$, તો
+    $\Sat/{M}{!B}[s_1]$ અથવા $\Sat{M}{!C}[s_1]$. અનુમાનાત્મક
+    પૂર્વધારણાથી $\Sat/{M}{!B}[s_2]$ અથવા $\Sat{M}{!C}[s_2]$;
+    તેથી $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defIff}{}{%
+  \iftag{probIff}{%
+    \indcase!{!A}{!B \liff !C}{}}{%
+    \indcase{!A}{!B \liff !C}{જો $\Sat{M}{\indfrm}[s_1]$, તો કાં તો
+      $\Sat{M}{!B}[s_1]$ અને $\Sat{M}{!C}[s_1]$, અથવા
+      $\Sat/{M}{!B}[s_1]$ અને $\Sat/{M}{!C}[s_1]$. અનુમાનાત્મક
+      પૂર્વધારણાથી કાં તો $\Sat{M}{!B}[s_2]$ અને $\Sat{M}{!C}[s_2]$,
+      અથવા $\Sat/{M}{!B}[s_2]$ અને $\Sat/{M}{!C}[s_2]$. બંને કિસ્સામાં
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defEx}{}{%
+  \iftag{probEx}{%
+    \indcase!{!A}{\lexists[x][!B]}{}}{%
+    \indcase{!A}{\lexists[x][!B]}{જો $\Sat{M}{\indfrm}[s_1]$, તો
+      એવો $m \in \Domain{M}$ છે કે
+      $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$. હવે
+      $s_1'=\Subst{s_1}{m}{x}$ અને $s_2'=\Subst{s_2}{m}{x}$ રાખો.
+      ~$!B$ના મુક્ત ચલો $x_1$, \dots, $x_n$ અને~$x$માંના છે.
+      $s_1'$ અને~$s_2'$, અનુક્રમે $s_1$ અને~$s_2$નાં $x$-રૂપાંતરો છે
+      અને પૂર્વધારણાથી $s_1(x_i)=s_2(x_i)$ હોવાથી
+      $s_1'(x_i)=s_2'(x_i)$. $s_1'$ અને~$s_2'$ની વ્યાખ્યાથી
+      $s_1'(x)=s_2'(x)=m$. ત્યારે અનુમાનાત્મક પૂર્વધારણા~$!B$ તથા
+      $s_1'$,~$s_2'$ને લાગુ પડે છે, તેથી $\Sat{M}{!B}[s_2']$.
+      $s_2'=\Subst{s_2}{m}{x}$ હોવાથી એવો $m \in \Domain{M}$ છે કે
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$, અને તેથી
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+
+\tagitem{defAll}{}{%
+  \iftag{probAll}{%
+    \indcase!{!A}{\lforall[x][!B]}{}}{%
+    \indcase{!A}{\lforall[x][!B]}{જો $\Sat{M}{\indfrm}[s_1]$, તો
+      દરેક $m \in \Domain{M}$ માટે
+      $\Sat{M}{!B}[\Subst{s_1}{m}{x}]$. આપણે બતાવવું છે કે દરેક
+      $m \in \Domain{M}$ માટે $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$ પણ.
+      તેથી મનસ્વી $m \in \Domain{M}$ લો અને
+      $s_1'=\Subst{s_1}{m}{x}$ તથા $s_2'=\Subst{s_2}{m}{x}$ વિચારો.
+      આપણને $\Sat{M}{!B}[s_1']$ મળે છે. ~$!B$ના મુક્ત ચલો
+      $x_1$, \dots, $x_n$ અને~$x$માંના છે. $s_1'$ અને~$s_2'$, અનુક્રમે
+      $s_1$ અને~$s_2$નાં $x$-રૂપાંતરો છે અને પૂર્વધારણાથી
+      $s_1(x_i)=s_2(x_i)$ હોવાથી $s_1'(x_i)=s_2'(x_i)$.
+      $s_1'$ અને~$s_2'$ની વ્યાખ્યાથી $s_1'(x)=s_2'(x)=m$. ત્યારે
+      અનુમાનાત્મક પૂર્વધારણા~$!B$ તથા $s_1'$,~$s_2'$ને લાગુ પડે છે અને
+      આપણને $\Sat{M}{!B}[s_2']$ મળે છે. આ દરેક $m \in \Domain{M}$ને
+      લાગુ પડે છે, એટલે બધા $m \in \Domain{M}$ માટે
+      $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$; તેથી
+      $\Sat{M}{\indfrm}[s_2]$.}}}
+\sourcecorrection{OLSEM-010}{મૂળની \texttt{assignments.tex},
+પંક્તિઓ~181--182માં $s_1'$ અને~$s_2'$ બંનેને અવ્યાખ્યાયિત~$s$માંથી
+બનાવ્યાં છે. આ સાબિતી બે નિયુક્તિઓ~$s_1$ અને~$s_2$ સરખાવે છે;
+તેથી અનુક્રમે $\Subst{s_1}{m}{x}$ અને $\Subst{s_2}{m}{x}$
+પુનઃસ્થાપિત કર્યાં છે.}
+\end{enumerate}
+અનુમાનથી આપણને મળે છે કે જ્યારે~$!A$ના મુક્ત !!{variable}s
+$x_1$, \dots, $x_n$માંના હોય અને $i=1$, \dots,~$n$ માટે
+$s_1(x_i)=s_2(x_i)$ હોય, ત્યારે $\Sat{M}{!A}[s_1]$ ત્યારે અને માત્ર
+ત્યારે જ્યારે $\Sat{M}{!A}[s_2]$.
+\end{proof}
+
+\begin{probtag}{probNot,probOr,probAnd,probIf,probIff,probEx,probAll}
+\olref[fol][syn][ass]{prop:satindep}ની સાબિતી પૂરી કરો.
+\end{probtag}
+
+\begin{explain}
+!!^{sentence}sમાં મુક્ત ચલો નથી; તેથી કોઈ પણ બે ચલ-નિયુક્તિઓ કોઈ પણ
+વાક્યના બધા (શૂન્ય) મુક્ત ચલોને એ જ વસ્તુઓ નિયુક્ત કરે છે. હમણાં
+સાબિત કરેલા વિધાનનો અર્થ પછી એ થાય છે કે !!a{sentence} કોઈ સંરચનામાં
+ચલ-નિયુક્તિ સાપેક્ષ સંતોષાય છે કે નહિ તે નિયુક્તિથી સંપૂર્ણપણે
+સ્વતંત્ર છે. આ હકીકત નોંધી લઈએ. તે આગળ આવતી, ચલ-નિયુક્તિનો ઉલ્લેખ
+કર્યા વિનાની, !!a{structure}માં !!a{sentence}ના સંતોષની વ્યાખ્યાને
+યોગ્ય ઠેરવે છે.
+\end{explain}
+
+\begin{cor}
+\ollabel{cor:sat-sentence}
+જો $!A$ !!a{sentence} હોય અને~$s$ ચલ-નિયુક્તિ હોય, તો દરેક
+ચલ-નિયુક્તિ~$s'$ માટે $\Sat{M}{!A}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Sat{M}{!A}[s']$.
+\end{cor}
+
+\begin{proof}
+  કોઈ પણ ચલ-નિયુક્તિ~$s'$ લો. $!A$ !!a{sentence} હોવાથી તેમાં મુક્ત
+  ચલો નથી; તેથી દરેક ચલ-નિયુક્તિ~$s'$,~$!A$ના બધા મુક્ત ચલોને
+  તુચ્છપણે એ જ વસ્તુઓ નિયુક્ત કરે છે જે~$s$ કરે છે. તેથી
+  \olref{prop:satindep}ની શરત સંતોષાય છે અને આપણને
+  $\Sat{M}{!A}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Sat{M}{!A}[s']$ મળે છે.
+\end{proof}
+
+\begin{defn}
+\ollabel{defn:satisfaction}
+જો $!A$ !!a{sentence} હોય, તો આપણે કહીએ છીએ કે !!a{structure}
+~$\Struct M$,~$!A$ને \emph{સંતોષે} છે, $\Sat{M}{!A}$, ત્યારે અને માત્ર
+ત્યારે જ્યારે બધી ચલ-નિયુક્તિઓ~$s$ માટે $\Sat{M}{!A}[s]$.
+\end{defn}
+
+જો $\Sat{M}{!A}$ હોય, તો સાદી રીતે \emph{$!A$,~$\Struct{M}$માં સત્ય
+છે} એમ પણ કહીએ છીએ. સંતોષનો ખ્યાલ વ્યક્તિગત !!{sentence}sમાંથી
+!!{sentence}sના ગણ સુધી સ્વાભાવિક રીતે વિસ્તરે છે.
+
+\begin{defn}
+\ollabel{defn:sat}
+જો $\Gamma$ !!{sentence}sનો ગણ હોય, તો આપણે કહીએ છીએ કે
+!!a{structure}~$\Struct M$,~$\Gamma$ને \emph{સંતોષે} છે,
+$\Sat{M}{\Gamma}$, ત્યારે અને માત્ર ત્યારે જ્યારે બધા
+$!A \in \Gamma$ માટે $\Sat{M}{!A}$.
+\end{defn}
+\sourcecorrection{OLSEM-011}{મૂળની \texttt{assignments.tex},
+પંક્તિ~241માં ``વાક્યોનો ગણ~$\Gamma$'' પછી~$\Gamma$ બીજી વાર લખાયું
+છે. તે કોઈ નવી શરત કે અભિવ્યક્તિ નથી; અતિરિક્ત પુનરાવર્તન દૂર કર્યું
+છે.}
+
+\begin{prop}\ollabel{prop:sentence-sat-true}
+  $\Struct{M}$ !!a{structure},~$!A$ !!a{sentence} અને~$s$ ચલ-નિયુક્તિ
+  હોય. $\Sat{M}{!A}$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Sat{M}{!A}[s]$.
+\end{prop}
+
+\begin{proof}
+મહાવરો.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sentence-sat-true} સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:sat-quant}
+  ધારો કે $!A(x)$માં માત્ર~$x$ મુક્ત આવે છે અને $\Struct M$
+  !!a{structure} છે. ત્યારે:
+  \begin{tagenumerate}{prvEx,prvAll}
+    \tagitem{prvEx}{$\Sat{M}{\lexists[x][!A(x)]}$ ત્યારે અને માત્ર
+      ત્યારે જ્યારે ઓછામાં ઓછી એક ચલ-નિયુક્તિ~$s$ માટે
+      $\Sat{M}{!A(x)}[s]$.}{}
+    \tagitem{prvAll}{$\Sat{M}{\lforall[x][!A(x)]}$ ત્યારે અને માત્ર
+      ત્યારે જ્યારે બધી ચલ-નિયુક્તિઓ~$s$ માટે
+      $\Sat{M}{!A(x)}[s]$.}{}
+\end{tagenumerate}
+\end{prop}
+
+\begin{proof}
+મહાવરો.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ass]{prop:sat-quant} સાબિત કરો.
+\end{prob}
+
+\begin{prob}
+\DeclareRobustCommand{\VDash}{\mathrel{||}\joinrel\Relbar}
+ધારો કે $\Lang L$ !!{function}s વિનાની ભાષા છે. !!{structure}
+~$\Struct M$,~!!a{constant}~$c$ અને $a \in \Domain M$ આપેલાં હોય,
+ત્યારે $\Struct M[a/c]$ને~$\Struct M$ જેવી જ !!{structure} તરીકે
+વ્યાખ્યાયિત કરો, માત્ર $\Assign{c}{M[a/c]}=a$ રાખો.
+!!{sentence}s~$!A$ માટે $\Struct M \VDash !A$ આ રીતે વ્યાખ્યાયિત કરો:
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Struct{M} \VDash \indfrm$ નહિ.}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Struct{M} \VDash \indfrm$.}}{}
+
+\item \indcase{!A}{\Atom{R}{d_1, \dots, d_n}}{$\Struct M \VDash \indfrm$
+  ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\langle \Assign{d_1}{M}, \dots, \Assign{d_n}{M} \rangle \in
+  \Assign{R}{M}$.}
+
+\item \indcase{!A}{\eq[d_1][d_2]}{$\Struct M \VDash \indfrm$ ત્યારે
+  અને માત્ર ત્યારે જ્યારે $\Assign{d_1}{M}=\Assign{d_2}{M}$.}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\Struct{M} \VDash \indfrm$ ત્યારે અને માત્ર
+    ત્યારે જ્યારે $\Struct{M} \VDash {!B}$ નહિ.}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\Struct{M} \VDash \indfrm$ ત્યારે અને
+    માત્ર ત્યારે જ્યારે $\Struct{M} \VDash!B$ અને
+    $\Struct{M} \VDash !C$.}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\Struct{M} \VDash \indfrm$ ત્યારે અને
+    માત્ર ત્યારે જ્યારે $\Struct{M} \VDash !B$ અથવા
+    $\Struct{M} \VDash !C$ (અથવા બંને).}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\Struct{M} \VDash \indfrm$ ત્યારે અને
+    માત્ર ત્યારે જ્યારે $\Struct {M} \VDash !B$ નહિ અથવા
+    $\Struct M \VDash !C$ (અથવા બંને).}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\Struct{M} \VDash {\indfrm}$ ત્યારે
+    અને માત્ર ત્યારે જ્યારે $\Struct{M} \VDash {!B}$ અને
+    $\Struct{M} \VDash {!C}$ બંને, અથવા $\Struct{M} \VDash {!B}$ પણ
+    નહિ અને $\Struct{M} \VDash {!C}$ પણ નહિ.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[x][!B]}{$\Struct{M} \VDash {\indfrm}$ ત્યારે
+    અને માત્ર ત્યારે જ્યારે બધા $a \in \Domain{M}$ માટે
+    $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$, જો~$c$,~$!B$માં આવતું
+    ન હોય.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[x][!B]}{$\Struct{M} \VDash {\indfrm}$ ત્યારે
+    અને માત્ર ત્યારે જ્યારે એવું $a \in \Domain M$ હોય કે
+    $\Struct{M[a/c]} \VDash \Subst{!B}{c}{x}$, જો~$c$,~$!B$માં આવતું
+    ન હોય.}}{}
+\end{enumerate}
+~$!A$માંના બધા મુક્ત !!{variable}s $x_1$, \dots,~$x_n$,~$!A$માં ન
+આવતા અચળસંકેતો $c_1$, \dots,~$c_n$,~$a_1$, \dots,
+$a_n \in \Domain M$ અને $s(x_i)=a_i$ હોય.
+
+આ બતાવો:
+$\Sat{M}{!A}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Struct M[a_1/c_1,\dots,a_n/c_n]
+\VDash \Subst{\Subst{!A}{c_1}{x_1}\dots}{c_n}{x_n}$.
+
+(આ પ્રશ્ન બતાવે છે કે ચલ-નિયુક્તિઓ વિનાનો પ્રથમ-ક્રમ તર્કશાસ્ત્રનો
+અર્થવિચાર આપી શકાય છે.)
+\end{prob}
+
+\begin{prob}
+ધારો કે $f$ એ~$!A(x,y)$માં ન આવતો વિધેયસંકેત છે. બતાવો કે એવી
+!!a{structure}~$\Struct{M}$ છે કે
+$\Sat{M}{\lforall[x][\lexists[y][!A(x,y)]]}$ ત્યારે અને માત્ર ત્યારે
+જ્યારે એવી~$\Struct M'$ છે કે
+$\Sat{M'}{\lforall[x][!A(x,f(x))]}$.
+
+(આ પ્રશ્ન સ્કોલેમના પ્રમેય તરીકે જાણીતા પરિણામનો એક ખાસ કિસ્સો છે;
+$\lforall[x][!A(x,f(x))]$ને
+$\lforall[x][\lexists[y][!A(x,y)]]$નું \emph{સ્કોલેમ સામાન્ય સ્વરૂપ}
+કહે છે.)
+\end{prob}
+
+\end{document}

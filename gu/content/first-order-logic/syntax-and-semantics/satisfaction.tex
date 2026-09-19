@@ -1,0 +1,457 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: satisfaction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{sat}
+
+\olsection{\article{structure} \printtoken{S}{structure}માં
+  \article{formula} \printtoken{S}{formula}નો સંતોષ}
+
+\begin{explain}
+એક તરફ પદો અને !!{formula}s જેવી અભિવ્યક્તિઓને અને બીજી તરફ
+!!{structure}sને જોડતા પાયાના ખ્યાલો પદના \emph{!!{value}} અને
+!!a{formula}ના \emph{સંતોષ}ના છે. અનૌપચારિક રીતે, પદનું !!{value}
+એટલે !!a{structure}નો !!{element}---જો પદ માત્ર અચળ હોય તો તેનું
+!!{value}, !!{structure}એ અચળને નિયુક્ત કરેલી વસ્તુ છે; અને જો પદ
+!!{function}s વાપરીને રચાયું હોય તો તેનું !!{value}, પદમાંનાં અચળોનાં
+!!{value}s અને વિધેયસંકેતોને નિયુક્ત કરેલાં વિધેયોમાંથી ગણાય છે.
+!!^a{formula} કોઈ !!a{structure}માં ત્યારે \emph{સંતોષાય} છે જ્યારે
+વિધેયોને આપેલું અર્થઘટન !!{structure}ના વ્યાપકક્ષેત્રમાં !!{formula}ને સત્ય
+બનાવે. સંતોષનો આ ખ્યાલ અનુમાનાત્મક રીતે નિર્દિષ્ટ થાય છે:
+!!{structure}નું નિર્દિષ્ટીકરણ આણ્વિક !!{formula}s ક્યારે સંતોષાય છે તે
+સીધું કહે છે; અને કોઈ સંકુલ !!{formula} ક્યારે સંતોષાય છે તે આપણે તેના
+મુખ્ય સંયોજક કે પરિમાણક અને તેનાં તત્કાલ !!{subformula}s સંતોષાય છે કે
+નથી તેના આધારે વ્યાખ્યાયિત કરીએ છીએ.
+
+અહીં પરિમાણકોનો કિસ્સો થોડો મુશ્કેલ છે, કારણ કે પરિમાણિત
+!!{formula}ના તત્કાલ !!{subformula}માં મુક્ત !!{variable} હોય છે અને
+!!{structure}s, !!{variable}sનાં !!{value}s નિર્દિષ્ટ કરતી નથી. આ
+મુશ્કેલી સંભાળવા આપણે \emph{ચલ-નિયુક્તિઓ} પણ દાખલ કરીએ છીએ અને સંતોષને
+માત્ર !!a{structure} સાપેક્ષ નહિ, પણ !!a{structure} તથા
+!!a{variable} નિયુક્તિ સાપેક્ષ વ્યાખ્યાયિત કરીએ છીએ.
+\end{explain}
+
+\begin{defn}[ચલ-નિયુક્તિ]
+!!a{structure}~$\Struct{M}$ માટેની \emph{ચલ-નિયુક્તિ}~$s$ એટલે દરેક
+!!{variable}નું~$\Domain M$ના !!a{element}માં પ્રતિચિત્રણ કરતું વિધેય,
+એટલે કે $s\colon \Var \to \Domain M$.
+\end{defn}
+
+\begin{explain}
+!!^a{structure} દરેક !!{constant}ને અને ચલ-નિયુક્તિ દરેક ચલને
+!!a{value} નિયુક્ત કરે છે. પરંતુ આપણે તેમાંથી બનેલાં પદો વડે પણ
+!!{domain}ના !!{element}sને નામ આપવા માગીએ છીએ. એ માટે આપણે પદોનું
+!!{value} અનુમાનાત્મક રીતે વ્યાખ્યાયિત કરીએ છીએ. !!{constant}s અને
+ચલો માટે મૂલ્ય, અનુક્રમે !!{structure} અથવા ચલ-નિયુક્તિ નિર્દિષ્ટ કરે
+તે જ છે; વધુ સંકુલ પદો માટે તે !!{structure}એ !!{function}sને નિયુક્ત
+કરેલાં વિધેયો વાપરીને આવર્તક રીતે ગણાય છે.
+\end{explain}
+
+\begin{defn}[પદોનું !!^{value}]
+જો $t$, ભાષા~$\Lang L$નું પદ હોય, $\Struct M$,~$\Lang L$ માટેની
+!!{structure} હોય અને $s$,~$\Struct M$ માટેની !!a{variable} નિયુક્તિ
+હોય, તો \emph{!!{value}}~$\Value{t}{M}[s]$ નીચે પ્રમાણે વ્યાખ્યાયિત
+થાય છે:
+\begin{enumerate}
+\item \indcase{t}{c}{$\Value{\indfrm}{M}[s] = \Assign{\indcomplex}{M}$.}
+\item \indcase{t}{x}{$\Value{\indfrm}{M}[s] = s(\indcomplex)$.}
+\item \indcase{t}{\Atom{f}{t_1, \ldots, t_n}}{
+\[
+\Value{\indfrm}{M}[s] = \Assign{f}{M}(\Value{t_1}{M}[s], \ldots,
+\Value{t_n}{M}[s]).
+\]}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[$x$-રૂપાંતર]
+જો $s$,~!!a{structure}~$\Struct M$ માટેની !!a{variable} નિયુક્તિ હોય,
+તો~$\Struct M$ માટેની એવી કોઈ પણ !!{variable} નિયુક્તિ~$s'$ જે~$s$થી
+વધુમાં વધુ~$x$ને કરેલી નિયુક્તિમાં જુદી પડે તેને~$s$નું
+\emph{$x$-રૂપાંતર} કહે છે. જો $s'$,~$s$નું $x$-રૂપાંતર હોય, તો
+$\varAssign{s'}{s}{x}$ લખીએ છીએ.
+\end{defn}
+
+\begin{explain}
+નોંધો કે નિયુક્તિ~$s$ના $x$-રૂપાંતરે~$x$ને કંઈક જુદું નિયુક્ત કરવું
+\emph{જ} પડે એવું નથી. હકીકતમાં, દરેક નિયુક્તિ પોતાનું જ
+$x$-રૂપાંતર ગણાય છે.
+\end{explain}
+
+\begin{defn}
+  જો $s$,~!!a{structure}~$\Struct M$ માટેની !!a{variable} નિયુક્તિ હોય
+  અને $m \in \Domain{M}$ હોય, તો નિયુક્તિ~$\Subst{s}{m}{x}$ આ રીતે
+  વ્યાખ્યાયિત થયેલી ચલ-નિયુક્તિ છે:
+  \[\Subst{s}{m}{x}(y) = \begin{cases}
+    m & \text{જો } y \ident x\\
+    s(y) & \text{અન્યથા}.
+  \end{cases}\]
+\end{defn}
+
+બીજા શબ્દોમાં, $\Subst{s}{m}{x}$ એ~$s$નું એવું ખાસ $x$-રૂપાંતર છે
+જે વ્યાપકક્ષેત્રનો !!{element}~$m$,~$x$ને નિયુક્ત કરે છે અને~$x$ સિવાયના
+!!{variable}sને એ જ વસ્તુઓ નિયુક્ત કરે છે જે~$s$ કરે છે.
+
+\begin{defn}[સંતોષ]
+\ollabel{defn:satisfaction}
+!!a{structure}~$\Struct M$માં !!a{variable} નિયુક્તિ~$s$ સાપેક્ષ
+!!a{formula}~$!A$નો સંતોષ, સંકેતમાં $\Sat{M}{!A}[s]$, નીચે પ્રમાણે
+આવર્તક રીતે વ્યાખ્યાયિત થાય છે. (``$\Sat{M}{!A}[s]$ નથી'' દર્શાવવા
+આપણે $\Sat/{M}{!A}[s]$ લખીએ છીએ.)
+\begin{enumerate}
+\tagitem{prvFalse}{%
+  \indcase{!A}{\lfalse}{$\Sat/{M}{\indfrm}[s]$.}}{}
+
+\tagitem{prvTrue}{%
+  \indcase{!A}{\ltrue}{$\Sat{M}{\indfrm}[s]$.}}{}
+
+\item \indcase{!A}{\Atom{R}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
+  ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\langle \Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s] \rangle \in
+  \Assign{R}{M}$.}
+
+\item \indcase{!A}{\eq[t_1][t_2]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
+  માત્ર ત્યારે જ્યારે $\Value{t_1}{M}[s] = \Value{t_2}{M}[s]$.}
+
+\tagitem{prvNot}{%
+  \indcase{!A}{\lnot !B}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને માત્ર
+    ત્યારે જ્યારે $\Sat/{M}{!B}[s]$.}}{}
+
+\tagitem{prvAnd}{%
+  \indcase{!A}{(!B \land !C)}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને માત્ર
+    ત્યારે જ્યારે $\Sat{M}{!B}[s]$ અને $\Sat{M}{!C}[s]$.}}{}
+
+\tagitem{prvOr}{%
+  \indcase{!A}{(!B \lor !C)}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને માત્ર
+    ત્યારે જ્યારે $\Sat{M}{!B}[s]$ અથવા $\Sat{M}{!C}[s]$ (અથવા
+    બંને).}}{}
+
+\tagitem{prvIf}{%
+  \indcase{!A}{(!B \lif !C)}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને માત્ર
+    ત્યારે જ્યારે $\Sat/{M}{!B}[s]$ અથવા $\Sat{M}{!C}[s]$ (અથવા
+    બંને).}}{}
+
+\tagitem{prvIff}{%
+  \indcase{!A}{(!B \liff !C)}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને માત્ર
+    ત્યારે જ્યારે $\Sat{M}{!B}[s]$ અને $\Sat{M}{!C}[s]$ બંને હોય,
+    અથવા $\Sat{M}{!B}[s]$ પણ નહિ અને $\Sat{M}{!C}[s]$ પણ નહિ.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[x][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને માત્ર
+    ત્યારે જ્યારે દરેક !!{element}~$m \in \Domain M$ માટે
+    $\Sat{M}{!B}[\Subst{s}{m}{x}]$.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[x][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને માત્ર
+  ત્યારે જ્યારે ઓછામાં ઓછા એક !!{element}~$m \in \Domain M$ માટે
+  $\Sat{M}{!B}[\Subst{s}{m}{x}]$.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+છેલ્લી \iftag{notprvEx,notprvAll}{કલમમાં}{બે કલમોમાં} ચલ-નિયુક્તિઓ
+મહત્ત્વની છે.\iftag{prvAll}{ આપણે $\lforall[x][!B(x)]$નો સંતોષ
+``બધા $m \in \Domain{M}$ માટે $\Sat{M}{!B(m)}$'' એમ વ્યાખ્યાયિત કરી
+શકતા નથી.}{}\iftag{prvEx}{ આપણે $\lexists[x][!B(x)]$નો સંતોષ
+``ઓછામાં ઓછા એક $m \in \Domain{M}$ માટે $\Sat{M}{!B(m)}$'' એમ
+વ્યાખ્યાયિત કરી શકતા નથી.}{} કારણ એ છે કે જો $m \in \Domain M$ હોય,
+તો તે ભાષાનો સંકેત નથી અને તેથી~$!B(m)$ !!a{formula} નથી (એટલે
+$\Subst{!B}{m}{x}$ અવ્યાખ્યાયિત છે). દરેક !!{element}~$\Struct{M}$ને
+નામ આપતા !!{constant}s કે પદો આપણી પાસે છે એમ પણ માની ન શકાય, કારણ
+કે !!{structure}sની વ્યાખ્યામાં એવી કોઈ શરત નથી. પ્રમાણભૂત ભાષામાં
+!!{constant}sનો ગણ !!{denumerable} છે, તેથી જો $\Domain{M}$
+!!{enumerable} ન હોય તો દરેક વસ્તુને નામ આપવા પૂરતાં !!{constant}s પણ
+નથી.
+
+!!{variable} નિયુક્તિઓ દાખલ કરીને આપણે આ પ્રશ્ન ઉકેલીએ છીએ; તે ચલોને વ્યાપકક્ષેત્રના
+!!{element}s સાથે સીધા જોડવા દે છે. પછી, દાખલા તરીકે,
+\iftag{prvEx}{$\lexists[x][!B(x)]$}{$\lforall[x][!B(x)]$},~$\Struct M$માં
+ત્યારે અને માત્ર ત્યારે સંતોષાય જ્યારે
+\iftag{prvEx}{ઓછામાં ઓછા એક $m \in \Domain{M}$ માટે
+$\Sat{M}{!B(m)}$}{બધા $m \in \Domain{M}$ માટે
+$\Sat{M}{!B(m)}$} એમ કહેવાને બદલે, આપણે કહીએ છીએ કે તે~$\Struct M$માં
+~$s$ \emph{સાપેક્ષ} ત્યારે અને માત્ર ત્યારે સંતોષાય જ્યારે
+$!B(x)$,~$\Subst{s}{m}{x}$ સાપેક્ષ \iftag{prvEx}{ઓછામાં ઓછા
+એક}{દરેક} $m \in \Domain M$ માટે સંતોષાય.
+\sourcecorrection{OLSEM-002}{મૂળની \texttt{satisfaction.tex},
+પંક્તિઓ~171--174માં અસ્તિત્વવાચક શાખા ``ઓછામાં ઓછા એક~$m$ માટે'' પર
+અધૂરી અટકે છે અને માત્ર સાર્વત્રિક શાખા સંતોષવાચક સૂત્ર ધરાવે છે.
+બંને શાખાઓમાં ચર્ચાતું, જાણીજોઈને અવૈધ,~$\Sat{M}{!B(m)}$નું સ્વરૂપ
+પુનઃસ્થાપિત કર્યું છે.}
+\end{explain}
+
+\begin{ex}
+$a$ અને~$b$ !!{constant}s,~$f$ દ્વિસ્થાની !!{function} અને~$R$
+દ્વિસ્થાની !!{predicate} હોય એવી $\Lang{L} = \{a, b, f, R\}$ લો.
+આ રીતે વ્યાખ્યાયિત !!{structure}~$\Struct{M}$ વિચારો:
+\begin{enumerate}
+\item $\Domain M = \{1, 2, 3, 4\}$
+\item $\Assign{a}{M} = 1$
+\item $\Assign{b}{M} = 2$
+\item $\Assign{f}{M}(x, y) = x+y$ જો $x+y \le 3$ હોય, અને અન્યથા
+  $=3$.
+\item $\Assign{R}{M} = \{\tuple{1, 1}, \tuple{1, 2}, \tuple{2, 3}, \tuple{2, 4}\}$
+\end{enumerate}
+દરેક !!{variable}ને $1 \in \Domain{M}$ નિયુક્ત કરતું વિધેય
+$s(x)=1$,~$\Struct{M}$ માટેની ચલ-નિયુક્તિ છે.
+
+ત્યારે
+\begin{align*}
+\Value{f(a,b)}{M}[s] & = \Assign{f}{M}(\Value{a}{M}[s], \Value{b}{M}[s]).
+\intertext{$a$ અને~$b$ !!{constant}s હોવાથી $\Value{a}{M}[s]
+  = \Assign{a}{M} = 1$ અને $\Value{b}{M}[s] = \Assign{b}{M} = 2$. તેથી}
+\Value{f(a,b)}{M}[s] & = \Assign{f}{M}(1, 2) = 1+2 = 3.
+\intertext{$f(f(a,b),a)$નું મૂલ્ય ગણવા આપણે આ વિચારવું પડે છે:}
+\Value{f(f(a,b),a)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
+\Value{a}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\intertext{કારણ કે $3+1 > 3$. $s(x) = 1$ અને $\Value{x}{M}[s] =
+  s(x)$ હોવાથી આપણને આ પણ મળે છે:}
+\Value{f(f(a,b),x)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
+\Value{x}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\end{align*}
+
+આણ્વિક !!{formula}~$R(t_1,t_2)$ ત્યારે સંતોષાય છે જ્યારે તેની
+દલીલોનાં મૂલ્યોનું યુગ્મ, એટલે કે $\tuple{\Value{t_1}{M}[s],
+  \Value{t_2}{M}[s]}$,~$\Assign{R}{M}$નો !!a{element} હોય. તેથી,
+દાખલા તરીકે, $\tuple{\Value{b}{M}, \Value{f(a,b)}{M}} = \tuple{2,3}
+\in \Assign{R}{M}$ હોવાથી $\Sat{M}{R(b,f(a,b))}[s]$, પરંતુ
+$\tuple{1,3}\notin\Assign{R}{M}$ હોવાથી
+$\Sat/{M}{R(x,f(a,b))}[s]$.
+\sourcecorrection{OLSEM-003}{મૂળની \texttt{satisfaction.tex},
+પંક્તિ~213માં ચલ-નિયુક્તિનો દોર~\texttt{[s]} સંબંધના અર્થઘટન
+$\Assign{R}{M}$ને ભૂલથી જોડાયો છે. ચલ-નિયુક્તિ આણ્વિક સૂત્રના સંતોષને
+લાગુ પડે છે; સંબંધનું અર્થઘટન માત્ર સંરચનાથી નક્કી થાય છે. તેથી
+અતિરિક્ત~\texttt{[s]} દૂર કર્યો છે.}
+
+બિન-આણ્વિક સૂત્ર~$!A$ સંતોષાય છે કે નહિ તે નક્કી કરવા અનુમાનાત્મક
+વ્યાખ્યામાંથી તેના મુખ્ય સંયોજકને લાગુ પડતી કલમ વાપરો. દાખલા તરીકે,
+$R(a,a) \lif (R(b,x) \lor R(x,b))$નો મુખ્ય સંયોજક~$\lif$ છે અને
+\begin{align*}
+  & \Sat{M}{R(a, a) \lif (R(b, x) \lor R(x, b))}[s] \text{ ત્યારે અને માત્ર ત્યારે જ્યારે }\\
+  & \qquad
+  \Sat/{M}{R(a,a)}[s] \text{ અથવા } \Sat{M}{R(b, x) \lor R(x, b)}[s]
+  \intertext{$\tuple{1,1}\in\Assign{R}{M}$ હોવાથી
+    $\Sat{M}{R(a,a)}[s]$ છે; તેથી જવાબ હજી નક્કી થતો નથી અને પહેલાં
+    $\Sat{M}{R(b,x)\lor R(x,b)}[s]$ છે કે નહિ તે શોધવું પડે છે:}
+  & \Sat{M}{R(b, x) \lor R(x, b)}[s] \text{ ત્યારે અને માત્ર ત્યારે જ્યારે }\\
+  & \qquad \Sat{M}{R(b,x)}[s] \text{ અથવા } \Sat{M}{R(x, b)}[s]
+  \intertext{અને આ સાચું છે, કારણ કે $\tuple{1,2}\in\Assign{R}{M}$
+    હોવાથી $\Sat{M}{R(x,b)}[s]$.}
+\end{align*}
+
+યાદ કરો કે~$s$નું $x$-રૂપાંતર એવી ચલ-નિયુક્તિ છે જે~$s$થી વધુમાં વધુ
+~$x$ને કરેલી નિયુક્તિમાં જુદી પડે છે. $\Domain{M}$ના દરેક !!{element}
+માટે~$s$નું એક $x$-રૂપાંતર છે:
+\begin{align*}
+  s_1 & = \Subst{s}{1}{x}, &
+  s_2 & = \Subst{s}{2}{x},\\
+  s_3 & = \Subst{s}{3}{x}, &
+  s_4 & = \Subst{s}{4}{x}.
+\end{align*}
+તેથી, દાખલા તરીકે, $s_2(x)=2$ અને~$x$ સિવાયના દરેક ચલ~$y$ માટે
+$s_2(y)=s(y)=1$. $\Domain{M}=\{1,2,3,4\}$ હોવાથી આ~$\Struct{M}$
+માટેનાં~$s$નાં બધાં $x$-રૂપાંતરો છે. ખાસ કરીને નોંધો કે $s_1=s$
+(~$s$ હંમેશાં પોતાનું જ $x$-રૂપાંતર છે).
+
+\iftag{prvEx}{અસ્તિત્વવાચક પરિમાણિત !!{formula}
+  $\lexists[x][!A(x)]$ સંતોષાય છે કે નહિ તે નક્કી કરવા, ઓછામાં ઓછા એક
+  $m \in \Domain M$ માટે $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ છે કે નહિ
+  તે નક્કી કરવું પડે છે. તેથી,
+  \[
+  \Sat{M}{\lexists[x][(R(b,x) \lor R(x,b))]}[s],
+  \]
+  કારણ કે $\Sat{M}{R(b,x) \lor R(x, b)}[\Subst{s}{1}{x}]$
+  (~$\Subst{s}{3}{x}$ પણ કામ કરે). પરંતુ,
+  \[
+  \Sat/{M}{\lexists[x][(R(b,x) \land R(x,b))]}[s]
+  \]
+  કારણ કે ગમે તે $m \in \Domain{M}$ પસંદ કરીએ,
+  $\Sat/{M}{R(b,x) \land R(x,b)}[\Subst{s}{m}{x}]$.}{}
+
+\iftag{prvAll}{સાર્વત્રિક પરિમાણિત !!{formula}
+  $\lforall[x][!A(x)]$ સંતોષાય છે કે નહિ તે નક્કી કરવા, બધા
+  $m \in \Domain M$ માટે $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$ છે કે નહિ
+  તે નક્કી કરવું પડે છે. તેથી,
+  \[
+  \Sat{M}{\lforall[x][(R(x,a) \lif R(a,x))]}[s],
+  \]
+  કારણ કે બધા $m \in \Domain M$ માટે
+  $\Sat{M}{R(x,a) \lif R(a,x)}[\Subst{s}{m}{x}]$. $m=1$ માટે
+  $\Sat{M}{R(a,x)}[\Subst{s}{1}{x}]$, એટલે અનુગામી સત્ય છે;
+  $m=2$, $3$ અને~$4$ માટે $\Sat/{M}{R(x,a)}[\Subst{s}{m}{x}]$, એટલે
+  પૂર્વગામી અસત્ય છે. પરંતુ,
+  \[
+  \Sat/{M}{\lforall[x][(R(a,x) \lif R(x,a))]}[s]
+  \]
+  કારણ કે $\Sat/{M}{R(a,x) \lif R(x,a)}[\Subst{s}{2}{x}]$
+  (કારણ કે $\Sat{M}{R(a,x)}[\Subst{s}{2}{x}]$ અને
+  $\Sat/{M}{R(x,a)}[\Subst{s}{2}{x}]$).}{}
+
+\iftag{defEx}{અસ્તિત્વવાચક પરિમાણિત !!{formula}
+  $\lexists[x][!A(x)]$ સંતોષાય છે કે નહિ તે નક્કી કરવા,
+  $\Sat{M}{\lnot \lforall[x][\lnot !A(x)]}[s]$ છે કે નહિ તે નક્કી
+  કરવું પડે છે. દાખલા તરીકે,
+  \[
+  \Sat{M}{\lexists[x][(R(b,x) \lor R(x,b))]}[s].
+  \]
+  પહેલાં, $\Sat{M}{R(b,x) \lor R(x,b)}[\Subst{s}{1}{x}]$
+  (~$\Subst{s}{3}{x}$ પણ કામ કરે). તેથી
+  $\Sat/{M}{\lnot(R(b,x) \lor R(x,b))}[\Subst{s}{1}{x}]$, એટલે
+  $\Sat/{M}{\lforall[x][\lnot(R(b,x) \lor R(x,b))]}[s]$, અને તેથી
+  $\Sat{M}{\lnot\lforall[x][\lnot(R(b,x) \lor R(x,b))]}[s]$.
+  \sourcecorrection{OLSEM-004}{મૂળની \texttt{satisfaction.tex},
+  પંક્તિઓ~288--290માં આ બે સૂત્રોમાં નકાર પછી બે આરંભક કૌંસ પરંતુ
+  માત્ર એક સમાપક કૌંસ છે. બંને સ્થળે વિયોજનને ઘેરતું એક જ સુમેળવાળું
+  કૌંસયુગ્મ રાખ્યું છે.}
+  બીજી તરફ,
+  \[
+  \Sat/{M}{\lexists[x][(R(b,x) \land R(x,b))]}[s].
+  \]
+  \sourcecorrection{OLSEM-005}{મૂળની \texttt{satisfaction.tex},
+  પંક્તિ~292માં અલ્પવિરામ અસ્તિત્વવાચક સૂત્રના દલીલ-કૌંસની અંદર ઘૂસી
+  ગયો છે. તે સૂત્રનો ભાગ નથી; તેથી તેને દૂર કર્યો છે.}
+  કારણ કે $\Sat{M}{\lforall[x][\lnot(R(b,x) \land R(x,b))]}[s]$,
+  કેમ કે એક પણ $m \in \Domain M$ માટે
+  $\Sat{M}{R(b,x) \land R(x,b)}[\Subst{s}{m}{x}]$ નથી. આ દાખલાઓથી
+  તમે કદાચ અનુમાની શકો કે $\Sat{M}{\lexists[x][!A(x)]}[s]$ ત્યારે અને
+  માત્ર ત્યારે જ્યારે ઓછામાં ઓછા એક $m \in \Domain M$ માટે
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$.}{}
+
+\iftag{defAll}{સાર્વત્રિક પરિમાણિત !!{formula}
+  $\lforall[x][!A(x)]$ સંતોષાય છે કે નહિ તે નક્કી કરવા,
+  $\Sat{M}{\lnot\lexists[x][\lnot !A(x)]}[s]$ છે કે નહિ તે નક્કી કરવું
+  પડે છે. દાખલા તરીકે,
+  \[
+  \Sat{M}{\lforall[x][(R(x,a) \lif R(a,x))]}[s],
+  \]
+  પહેલાં, બધા $m \in \Domain M$ માટે
+  $\Sat{M}{R(x,a) \lif R(a,x)}[\Subst{s}{m}{x}]$
+  (~$\Sat{M}{R(a,x)}[\Subst{s}{1}{x}]$ અને $m=2$, $3$ અથવા~$4$ માટે
+  $\Sat/{M}{R(x,a)}[\Subst{s}{m}{x}]$). તેથી એવું કોઈ
+  $m \in \Domain M$ નથી કે
+  $\Sat{M}{\lnot(R(x,a) \lif R(a,x))}[\Subst{s}{m}{x}]$, અને પરિણામે
+  $\Sat/{M}{\lexists[x][\lnot(R(x,a) \lif R(a,x))]}[s]$. તેથી
+  $\Sat{M}{\lnot\lexists[x][\lnot(R(x,a) \lif R(a,x))]}[s]$.
+  \sourcecorrection{OLSEM-006}{મૂળની \texttt{satisfaction.tex},
+  પંક્તિ~309માં $m=2,3,4$ માટે પૂર્વગામી~$R(x,a)$ અસત્ય હોવો જોઈએ,
+  પરંતુ મૂળમાં અનુગામી~$R(a,x)$ લખાયો છે; $m=2$ માટે તે અનુગામી
+  વાસ્તવમાં સત્ય છે. અહીં પૂર્વગામી પુનઃસ્થાપિત કર્યો છે.}
+  બીજી તરફ,
+  \[
+  \Sat/{M}{\lforall[x][(R(a,x) \lif R(x,a))]}[s],
+  \]
+  કારણ કે $\Sat/{M}{R(a,x) \lif R(x,a)}[\Subst{s}{2}{x}]$, અને તેથી
+  $\Sat{M}{\lexists[x][\lnot(R(a,x) \lif R(x,a))]}[s]$. આ દાખલાઓથી
+  તમે કદાચ અનુમાની શકો કે $\Sat{M}{\lforall[x][!A(x)]}[s]$ ત્યારે અને
+  માત્ર ત્યારે જ્યારે દરેક $m \in \Domain M$ માટે
+  $\Sat{M}{!A(x)}[\Subst{s}{m}{x}]$.}{}
+
+હવે વધુ સંકુલ કિસ્સો વિચારો:
+\[
+\lforall[x][(R(a,x) \lif \lexists[y][R(x,y)])].
+\]
+$\Sat/{M}{R(a,x)}[\Subst{s}{3}{x}]$ અને
+$\Sat/{M}{R(a,x)}[\Subst{s}{4}{x}]$ હોવાથી, શરતી સૂત્રના અનુગામીની
+ચિંતા કરવી પડે એવા રસપ્રદ કિસ્સા માત્ર $m=1$ અને $m=2$ છે. શું
+$\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{1}{x}]$ છે? જો ઓછામાં ઓછો એક
+$n \in \Domain M$ એવો હોય કે
+$\Sat{M}{R(x,y)}[\Subst{\Subst{s}{1}{x}}{n}{y}]$, તો છે. હકીકતમાં,
+$n=1$ લઈએ તો $\Subst{\Subst{s}{1}{x}}{n}{y}=\Subst{s}{1}{y}=s$.
+$s(x)=1$, $s(y)=1$ અને $\tuple{1,1}\in\Assign{R}{M}$ હોવાથી જવાબ હા
+છે.
+\sourcecorrection{OLSEM-007}{મૂળની \texttt{satisfaction.tex},
+પંક્તિ~331માં બીજા રસપ્રદ કિસ્સામાં સમાનચિહ્ન પહેલાં ચલ ગાયબ છે.
+સંદર્ભ અનુસાર તે~$m=2$ છે; અહીં~$m$ પુનઃસ્થાપિત કર્યો છે.}
+
+$\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{2}{x}]$ છે કે નહિ તે નક્કી
+કરવા, આપણે !!{variable} નિયુક્તિઓ
+$\Subst{\Subst{s}{2}{x}}{n}{y}$ જોવી પડે. અહીં $n=1$ માટે આ નિયુક્તિ
+$s_2=\Subst{s}{2}{x}$ છે, જે $R(x,y)$ને સંતોષતી નથી ($s_2(x)=2$,
+$s_2(y)=1$ અને $\tuple{2,1}\notin\Assign{R}{M}$). પરંતુ
+$\Subst{\Subst{s}{2}{x}}{3}{y}=\Subst{s_2}{3}{y}$ વિચારો.
+$\tuple{2,3}\in\Assign{R}{M}$ હોવાથી
+$\Sat{M}{R(x,y)}[\Subst{s_2}{3}{y}]$, અને તેથી
+$\Sat{M}{\lexists[y][R(x,y)]}[s_2]$.
+
+તેથી, દરેક $m \in \Domain M$ માટે કાં તો
+$\Sat/{M}{R(a,x)}[\Subst{s}{m}{x}]$ (જો $m=3$,~$4$) અથવા
+$\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{m}{x}]$ (જો $m=1$,~$2$), અને તેથી
+\[
+\Sat{M}{\lforall[x][(R(a,x) \lif \lexists[y][R(x,y)])]}[s].
+\]
+\sourcecorrection{OLSEM-008}{મૂળની \texttt{satisfaction.tex},
+પંક્તિ~347માં બહારના સાર્વત્રિક પરિમાણકનો દાખલો $n$ કહે છે, પરંતુ
+બંને અનુગામી કલમો અને આખું પૂર્વવર્તી વિશ્લેષણ બહારના ચલનું મૂલ્ય~$m$
+વાપરે છે. તેથી અહીં ``દરેક~$m$ માટે'' રાખ્યું છે.}
+બીજી તરફ,
+\[
+\Sat/{M}{\lexists[x][(R(a,x) \land \lforall[y][R(x,y)])]}[s].
+\]
+માત્ર $m=1$ અને $m=2$ માટે
+$\Sat{M}{R(a,x)}[\Subst{s}{m}{x}]$. પરંતુ~$m$નાં આ બંને મૂલ્યો માટે
+ફરી કોઈ $n \in \Domain M$, એટલે કે $n=4$, એવો છે કે
+$\Sat/{M}{R(x,y)}[\Subst{\Subst{s}{m}{x}}{n}{y}]$; તેથી $m=1$ અને
+$m=2$ માટે $\Sat/{M}{\lforall[y][R(x,y)]}[\Subst{s}{m}{x}]$. આમ, એવું
+કોઈ $m \in \Domain M$ નથી કે
+$\Sat{M}{R(a,x) \land \lforall[y][R(x,y)]}[\Subst{s}{m}{x}]$.
+\end{ex}
+
+\iftag{defEx}{%
+\begin{prop}\ollabel{prop:sat-ex}
+$\Sat{M}{\lexists[x][!B(x)]}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે~$s$નું
+એવું $x$-રૂપાંતર~$s'$ હોય કે $\Sat{M}{!B(x)}[s']$.
+\end{prop}
+
+\begin{proof}
+  મહાવરો.
+\end{proof}
+}{}
+
+\tagprob{defEx}
+\begin{prob}
+  \olref[fol][syn][sat]{prop:sat-ex} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\iftag{defAll}{%
+\begin{prop}\ollabel{prop:sat-all}
+$\Sat{M}{\lforall[x][!B(x)]}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે~$s$ના
+દરેક $x$-રૂપાંતર~$s'$ માટે $\Sat{M}{!B(x)}[s']$.
+\end{prop}
+
+\begin{proof}
+  મહાવરો.
+\end{proof}
+}{}
+
+\tagprob{defAll}
+\begin{prob}
+  \olref[fol][syn][sat]{prop:sat-all} સાબિત કરો.
+\end{prob}
+\tagendprob
+
+\begin{prob}
+એક !!{constant}, એક એકસ્થાની !!{function} અને એક દ્વિસ્થાની
+!!{predicate} ધરાવતી $\Lang L=\{c,f,A\}$ લો અને !!{structure}
+~$\Struct{M}$ આ રીતે આપેલી હોય:
+\begin{enumerate}
+\item $\Domain M = \{1, 2, 3\}$
+\item $\Assign{c}{M} = 3$
+\item $\Assign{f}{M}(1) = 2, \Assign{f}{M}(2) = 3, \Assign{f}{M}(3) = 2$
+\item $\Assign{A}{M} = \{\tuple{1, 2}, \tuple{2, 3}, \tuple{3, 3}\}$
+\end{enumerate}
+(a) બધા !!{variable}s~$v$ માટે $s(v)=1$ રાખો. આ છે કે નહિ તે શોધો:
+\[
+\Sat{M}{\lexists[x][(A(f(z), c) \lif \lforall[y][(A(y, x) \lor A(f(y),
+      x))])]}[s]
+\]
+શા માટે છે અથવા નથી તે સમજાવો.
+
+(b) એવી બીજી સંરચના અને !!{variable} નિયુક્તિ આપો જેમાં આ !!{formula}
+સંતોષાતું ન હોય.
+\end{prob}
+
+\end{document}

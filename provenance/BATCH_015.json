@@ -1,6 +1,6 @@
 {
   "schema": "openlogic-gu-batch/2",
-  "updated_at_utc": "2026-09-12T17:18:36.392726+00:00",
+  "updated_at_utc": "2026-09-19T17:45:06.387130+00:00",
   "boundary": "First-order Logic syntax OLP-0149–0158 under the complete classical first-order profile",
   "units": [
     {
@@ -12,7 +12,7 @@
       "aligned_blocks": 15,
       "raw_source_blocks": 15,
       "linguistic_blocks": 1,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0150",
@@ -23,7 +23,7 @@
       "aligned_blocks": 7,
       "raw_source_blocks": 7,
       "linguistic_blocks": 2,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0151",
@@ -34,7 +34,7 @@
       "aligned_blocks": 22,
       "raw_source_blocks": 22,
       "linguistic_blocks": 16,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0152",
@@ -45,7 +45,7 @@
       "aligned_blocks": 43,
       "raw_source_blocks": 43,
       "linguistic_blocks": 37,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0153",
@@ -56,7 +56,7 @@
       "aligned_blocks": 40,
       "raw_source_blocks": 40,
       "linguistic_blocks": 34,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0154",
@@ -67,7 +67,7 @@
       "aligned_blocks": 19,
       "raw_source_blocks": 19,
       "linguistic_blocks": 14,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0155",
@@ -78,7 +78,7 @@
       "aligned_blocks": 23,
       "raw_source_blocks": 23,
       "linguistic_blocks": 18,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0156",
@@ -89,7 +89,7 @@
       "aligned_blocks": 34,
       "raw_source_blocks": 34,
       "linguistic_blocks": 29,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0157",
@@ -100,18 +100,18 @@
       "aligned_blocks": 19,
       "raw_source_blocks": 19,
       "linguistic_blocks": 13,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     },
     {
       "unit_id": "OLP-0158",
       "source_sha256": "3db5cd0e374edb0ba4cff9f6f849272190d5fc5420e5132e1237adcd64619fae",
-      "target_sha256": "da62849f68414a8449bd60ab294cb99ee24eabf79188b73c93224d58aa03ec05",
+      "target_sha256": "4aeaa92097737f7730b525310c5fbb4fa1586eafbe5537f95b08718e0298d01a",
       "source_bytes": 4709,
       "target_bytes": 7328,
       "aligned_blocks": 27,
       "raw_source_blocks": 27,
       "linguistic_blocks": 22,
-      "status": "translated_structural_semantic_and_reader_qa_passed"
+      "status": "translated_structural_and_semantic_qa_passed_reader_qa_pending"
     }
   ],
   "remaining_units": [],
@@ -159,7 +159,7 @@
   ],
   "source_corrections_receipt": "SOURCE_CORRECTIONS_015.json",
   "semantic_review": "Exact-block review is recorded for all 186 aligned linguistic blocks; see SEMANTIC_REVIEW_015.json.",
-  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, reflowable EPUB, EPUBCheck, EPUB runtime, untranslated-prose and reviewer-decision QA passed.",
-  "translation_decisions": "Reviewer package regenerated: 254 schema-valid decisions, 262 exact occurrences, 261 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and no pending locators.",
+  "reader_integration": "Pending cumulative reader build and HTML/PDF visual QA.",
+  "translation_decisions": "Established canonical terms for functions, predicates, connectives, quantifiers, inductive definition, unique readability, formation sequences, syntactic identity, bound variables and quantifier scope were reused. Batch-specific decisions cover first-order language signatures, terms and symbol strings, main operators and subformulas, strict prefixes, and capture-avoiding substitution.",
   "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
 }

@@ -1,0 +1,136 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{ext}
+
+\olsection{પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ}
+
+\begin{explain}
+પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણને ક્યારેક સંબંધિતતા કહે છે અને તેને
+અનૌપચારિક રીતે આમ વ્યક્ત કરી શકાય: !!a{structure}~$\Struct M$માં
+!!a{variable} નિયુક્તિ~$s$ સાપેક્ષ !!{formula}~$!A$ના સંતોષને અસર કરતાં
+એકમાત્ર પરિબળો !!{domain}નું કદ અને~$!A$માં ખરેખર આવતા ભાષાના ઘટકોને
+~$\Struct M$ તથા~$s$ કરેલી નિયુક્તિઓ છે.
+
+આનો એક તાત્કાલિક પરિણામ એ છે કે જ્યાં બે !!{structure}s~$\Struct M$
+અને~$\Struct M'$નું વ્યાપકક્ષેત્ર સરખું હોય અને તે વાક્ય~$!A$માં આવતા
+ભાષાના બધા ઘટકો પર સંમત હોય, ત્યાં~$!A$ પોતે સત્ય છે કે નહિ એ બાબતે
+પણ~$\Struct M$ અને~$\Struct M'$ સંમત હોવી જ જોઈએ.
+\end{explain}
+
+\begin{prop}[પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ]
+  \ollabel{prop:extensionality}
+  $!A$ !!a{formula} હોય;~$\Struct M_1$ અને~$\Struct M_2$ એવી
+  !!{structure}s હોય કે $\Domain{M_1}=\Domain{M_2}$; અને~$s$ એ
+  $\Domain{M_1}=\Domain{M_2}$ પરની ચલ-નિયુક્તિ હોય. જો~$!A$માં આવતા
+  દરેક !!{constant}~$c$, સંબંધસંકેત~$R$ અને !!{function}~$f$ માટે
+  $\Assign{c}{M_1}=\Assign{c}{M_2}$,
+  $\Assign{R}{M_1}=\Assign{R}{M_2}$ અને
+  $\Assign{f}{M_1}=\Assign{f}{M_2}$ હોય, તો
+  $\Sat{M_1}{!A}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Sat{M_2}{!A}[s]$.
+\end{prop}
+
+\begin{proof}
+  પહેલાં~$t$ પરના અનુમાન વડે સાબિત કરો કે દરેક પદ માટે
+  $\Value{t}{M_1}[s]=\Value{t}{M_2}[s]$. પછી હમણાં સાબિત કરેલા દાવાનો
+  અનુમાનના પાયામાં (જ્યાં~$!A$ આણ્વિક છે) ઉપયોગ કરીને~$!A$ પરના
+  અનુમાન વડે વિધાન સાબિત કરો.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ext]{prop:extensionality}ની સાબિતી વિગતે પૂરી કરો.
+\end{prob}
+
+\begin{cor}[!!^{sentence}s માટે પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ]
+  \ollabel{cor:extensionality-sent}
+  $!A$ !!a{sentence} હોય અને~$\Struct{M_1}$, $\Struct{M_2}$
+  \olref{prop:extensionality}માં હોય તેવાં હોય. ત્યારે
+  $\Sat{M_1}{!A}$ ત્યારે અને માત્ર ત્યારે જ્યારે $\Sat{M_2}{!A}$.
+\end{cor}
+
+\begin{proof}
+\olref{prop:extensionality} અને \olref[ass]{cor:sat-sentence}માંથી મળે છે.
+\end{proof}
+
+વધુમાં, કોઈ પદનું મૂલ્ય અને કોઈ !!a{structure} કોઈ !!a{formula}ને
+સંતોષે છે કે નહિ, માત્ર તેના ઉપપદોનાં મૂલ્યો પર આધાર રાખે છે.
+
+\begin{prop}\ollabel{prop:ext-terms}
+$\Struct M$ !!a{structure},~$t$ અને~$t'$ પદો અને~$s$ ચલ-નિયુક્તિ હોય.
+ત્યારે $\Value{\Subst{t}{t'}{x}}{M}[s] =
+\Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+\end{prop}
+
+\begin{proof}
+~$t$ પરના અનુમાન વડે.
+\begin{enumerate}
+\item જો $t$ અચળ હોય, કહો કે $t\ident c$, તો $\Subst{t}{t'}{x}=c$,
+  અને $\Value{c}{M}[s]=\Assign{c}{M}=
+  \Value{c}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+
+\item જો $t$,~$x$ સિવાયનો કોઈ ચલ હોય, કહો કે $t\ident y$, તો
+  $\Subst{t}{t'}{x}=y$, અને
+  $\varAssign{s}{\Subst{s}{\Value{t'}{M}[s]}{x}}{x}$ હોવાથી
+  $\Value{y}{M}[s]=
+  \Value{y}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+
+\item જો $t\ident x$, તો $\Subst{t}{t'}{x}=t'$. પરંતુ
+  $\Subst{s}{\Value{t'}{M}[s]}{x}$ની વ્યાખ્યાથી
+  $\Value{x}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]=\Value{t'}{M}[s]$.
+
+\item જો $t\ident\Atom{f}{t_1,\dots,t_n}$ હોય, તો:
+\begin{multline*}
+  \Value{\Subst{t}{t'}{x}}{M}[s]  = \\
+  \begin{aligned}[b]
+& = \Value{\Atom{f}{\Subst{t_1}{t'}{x}, \dots, \Subst{t_n}{t'}{x}}}{M}[s]\\
+& \qquad    \text{$\Subst{t}{t'}{x}$ની વ્યાખ્યાથી}\\
+& = \Assign{f}{M}(\Value{\Subst{t_1}{t'}{x}}{M}[s], \dots,
+    \Value{\Subst{t_n}{t'}{x}}{M}[s])\\
+& \qquad  \text{$\Value{\Atom{f}{\dots}}{M}[s]$ની વ્યાખ્યાથી}\\
+& = \Assign{f}{M}(\Value{t_1}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}], \dots,
+   \Value{t_n}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}])\\
+& \qquad    \text{અનુમાનાત્મક પૂર્વધારણાથી}\\
+& = \Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]
+    \text{ $\Value{\Atom{f}{\dots}}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$ની વ્યાખ્યાથી}
+  \end{aligned}
+\end{multline*}
+\end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:ext-formulas} $\Struct M$ !!a{structure},
+$!A$ !!a{formula},~$t'$ પદ અને~$s$ ચલ-નિયુક્તિ હોય. ત્યારે
+$\Sat{M}{\Subst{!A}{t'}{x}}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Sat{M}{!A}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
+\end{prop}
+
+\begin{proof}
+મહાવરો.
+\end{proof}
+
+\begin{prob}
+\olref[fol][syn][ext]{prop:ext-formulas} સાબિત કરો.
+\end{prob}
+
+\begin{explain}
+  \cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas}નો
+  મુદ્દો આ છે. ધારો કે આપણી પાસે પદ~$t$ અથવા !!a{formula}~$!A$ અને કોઈ
+  પદ~$t'$ છે અને આપણે $\Subst{t}{t'}{x}$નું મૂલ્ય, અથવા
+  $\Subst{!A}{t'}{x}$,~!!a{structure}~$\Struct M$માં !!a{variable}
+  નિયુક્તિ~$s$ સાપેક્ષ સંતોષાય છે કે નહિ, જાણવા માગીએ છીએ. ત્યારે
+  પહેલાં પ્રતિસ્થાપન કરીને પછી~$\Struct{M}$ અને~$s$ સાપેક્ષ મૂલ્ય કે
+  સંતોષ વિચારી શકીએ; અથવા પહેલાં~$\Struct{M}$માં~$s$ સાપેક્ષ~$t'$નું
+  મૂલ્ય $m=\Value{t'}{M}[s]$ નક્કી કરી, !!{variable} નિયુક્તિને
+  $\Subst{s}{m}{x}$માં બદલીને પછી~$\Struct{M}$ અને
+  $\Subst{s}{m}{x}$ સાપેક્ષ~$t$નું મૂલ્ય, અથવા
+  $\Sat{M}{!A}[\Subst{s}{m}{x}]$ છે કે નહિ, વિચારી શકીએ.
+  \Cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas}
+  ખાતરી આપે છે કે આપણે ગમે તે રીત અપનાવીએ, જવાબ સરખો જ આવશે.
+\end{explain}
+
+\end{document}

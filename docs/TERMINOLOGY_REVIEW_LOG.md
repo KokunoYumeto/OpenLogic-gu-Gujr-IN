@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-12T17:31:42.372831+00:00. This is a **complete decision log for the current 155/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 155/722 units with checkpoint 015. It contains all 145 terminology decisions from the durable ledger and all 106 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-19T18:48:22.713473+00:00. This is a **complete decision log for the current 163/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 155/722 units with checkpoint 015. It contains all 151 terminology decisions from the durable ledger and all 117 source corrections identified so far. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -1603,6 +1603,72 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** સ્વતંત્ર આવર્તન — possible, but મુક્ત ઘટના aligns directly with the chapter's bound/free contrast.; ઉદાહરણ for instance — too broad because it does not distinguish a quantified formula's substitution instance from an ordinary example.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘મુક્ત ઘટના / મુક્તપણે પ્રતિસ્થાપનીય / ચલનું પકડાવું / દૃષ્ટાંત’ accurately express ‘free occurrence / free for substitution / variable capture / instance’ with the scope stated here: મુક્ત and ચલ follow the edition's established variable terminology. ઘટના identifies a particular syntactic occurrence, મુક્તપણે પ્રતિસ્થાપનીય states the capture-avoiding condition, the quoted verb પકડાવું preserves the source metaphor, and દૃષ્ટાંત names a substitution instance rather than an explanatory example. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T146: domain of a structure or model (universe) → વ્યાપકક્ષેત્ર
+
+- **Status and uncertainty:** `provisional_contextual_distinction`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_first_order_semantics_translation; `work/add_semantics_terms.py`.
+- **English use:** `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:18` (OLP-0161, “domain”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/structures.tex:18` (OLP-0161, “વ્યાપકક્ષેત્ર”)
+- **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** GU-P016 directly attests પ્રદેશ for a relation or function's domain. The edition already uses વ્યાપકક્ષેત્ર throughout its first-order introduction for the underlying set over which quantifiers range. This checkpoint preserves that model-theoretic distinction: વ્યાપકક્ષેત્ર names a structure's universe, while પ્રદેશ remains the attested term for the domain of a relation or function. The exact model-theoretic Gujarati noun is not directly attested in the checked canon.
+- **Alternatives:** પ્રદેશ — directly attested for relations and functions, but would collapse the edition's established contextual distinction.; વિશ્વ — a possible literal rendering of universe, but no checked passage attests it in this model-theoretic sense.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘વ્યાપકક્ષેત્ર’ accurately express ‘domain of a structure or model (universe)’ with the scope stated here: GU-P016 directly attests પ્રદેશ for a relation or function's domain. The edition already uses વ્યાપકક્ષેત્ર throughout its first-order introduction for the underlying set over which quantifiers range. This checkpoint preserves that model-theoretic distinction: વ્યાપકક્ષેત્ર names a structure's universe, while પ્રદેશ remains the attested term for the domain of a relation or function. The exact model-theoretic Gujarati noun is not directly attested in the checked canon. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T147: covered structure / closed term / value of a term → આવૃત સંરચના / બંધ પદ / પદનું મૂલ્ય
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_first_order_semantics_translation; `work/add_semantics_terms.py`.
+- **English use:** `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:3` (OLP-0162, “covered”); `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17` (OLP-0162, “closed term”); `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17` (OLP-0162, “value”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11` (OLP-0162, “આવૃત”); `gu/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17` (OLP-0162, “બંધ પદ”); `gu/content/first-order-logic/syntax-and-semantics/covered-structures.tex:48` (OLP-0162, “મૂલ્ય”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સંરચના, પદ and મૂલ્ય follow the established edition register. બંધ states that the term has no variables. આવૃત expresses the defining coverage condition: every element of the structure's universe is the value of some closed term. The displayed definition controls the technical sense because the exact compound is not attested in the checked canon.
+- **Alternatives:** આચ્છાદિત સંરચના — possible, but heavier and no better attested.; ચલરહિત પદ — transparent explanatory wording, while બંધ પદ matches the edition's established open/closed contrast.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘આવૃત સંરચના / બંધ પદ / પદનું મૂલ્ય’ accurately express ‘covered structure / closed term / value of a term’ with the scope stated here: સંરચના, પદ and મૂલ્ય follow the established edition register. બંધ states that the term has no variables. આવૃત expresses the defining coverage condition: every element of the structure's universe is the value of some closed term. The displayed definition controls the technical sense because the exact compound is not attested in the checked canon. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T148: x-variant of a variable assignment → ચલ-નિયુક્તિનું x-રૂપાંતર
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_first_order_semantics_translation; `work/add_semantics_terms.py`.
+- **English use:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74` (OLP-0163, “variant”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:70` (OLP-0163, “રૂપાંતર”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ચલ-નિયુક્તિ is governed by GU-T140. રૂપાંતર names the assignment obtained by changing at most the value of x; the adjacent definition fixes agreement on every other variable and permits the original assignment itself as a variant.
+- **Alternatives:** x-ભિન્નરૂપ — compact, but may suggest it must differ even though an assignment is its own x-variant.; x-પરિવર્તન — possible, though રૂપાંતર reads more naturally as the resulting assignment rather than the operation.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિનું x-રૂપાંતર’ accurately express ‘x-variant of a variable assignment’ with the scope stated here: ચલ-નિયુક્તિ is governed by GU-T140. રૂપાંતર names the assignment obtained by changing at most the value of x; the adjacent definition fixes agreement on every other variable and permits the original assignment itself as a variant. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T149: extensionality / relevance for first-order satisfaction → પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ / સંબંધિતતા
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_first_order_semantics_translation; `work/add_semantics_terms.py`.
+- **English use:** `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:11` (OLP-0165, “extensionality”); `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:14` (OLP-0165, “relevance”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/extensionality.tex:11` (OLP-0165, “પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ”); `gu/content/first-order-logic/syntax-and-semantics/extensionality.tex:14` (OLP-0165, “સંબંધિતતા”)
+- **Authorities actually checked:** `GU-P002` (GU-GSSTB-MATH11, {"pdf_page_one_based": 20, "printed_page": "8"}); `GU-P013` (GU-VK-SETS, {"line_one_based": 36, "utf8_start": 3637, "utf8_end": 4684, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The theorem says satisfaction depends only on the common universe, the symbols actually occurring in the formula and their assignments. The descriptive heading states that dependence directly; સંબંધિતતા records the source's alternate name. GU-T003 remains reserved for set extensionality, whose equality-by-elements context is different from this semantic invariance principle.
+- **Alternatives:** ઘટકો દ્વારા નિર્ધારિત સમાનતા — retained for set extensionality and too equality-specific here.; વિસ્તરણાત્મકતા — concise loan formation, but not attested by the checked Gujarati sources.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ / સંબંધિતતા’ accurately express ‘extensionality / relevance for first-order satisfaction’ with the scope stated here: The theorem says satisfaction depends only on the common universe, the symbols actually occurring in the formula and their assignments. The descriptive heading states that dependence directly; સંબંધિતતા records the source's alternate name. GU-T003 remains reserved for set extensionality, whose equality-by-elements context is different from this semantic invariance principle. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T150: satisfaction relative to a variable assignment → ચલ-નિયુક્તિ સાપેક્ષ સંતોષ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_first_order_semantics_translation; `work/add_semantics_terms.py`.
+- **English use:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:104` (OLP-0163, “relative to”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:34` (OLP-0163, “સાપેક્ષ”)
+- **Authorities actually checked:** `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P069` (GU-VK-TRUTH, {"line_one_based": 96, "last_line_one_based": 101, "utf8_start": 36552, "utf8_end": 38930, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** GU-P068 attests satisfaction in predicate semantics, and GU-T140 governs ચલ-નિયુક્તિ. સાપેક્ષ keeps the semantic judgement explicitly dependent on the assignment until the sentence-independence theorem licenses omission of that parameter.
+- **Alternatives:** ચલ-નિયુક્તિ અનુસાર સંતોષ — accurate expansion, but less compact in repeated formal prose.; નિયુક્તિ-આધારિત સંતોષ — can overstate dependency where the formula is a sentence.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ચલ-નિયુક્તિ સાપેક્ષ સંતોષ’ accurately express ‘satisfaction relative to a variable assignment’ with the scope stated here: GU-P068 attests satisfaction in predicate semantics, and GU-T140 governs ચલ-નિયુક્તિ. સાપેક્ષ keeps the semantic judgement explicitly dependent on the assignment until the sentence-independence theorem licenses omission of that parameter. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T151: vacuous substitution (a substitution that makes no change) → પ્રતિસ્થાપનથી કોઈ ફેરફાર ન થાય
+
+- **Status and uncertainty:** `provisional_explicit_paraphrase`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_first_order_semantics_translation; `work/add_semantics_terms.py`.
+- **English use:** `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:97` (OLP-0158, “vacuous”)
+- **Gujarati use:** `gu/content/first-order-logic/syntax-and-semantics/substitution.tex:98` (OLP-0158, “કોઈ ફેરફાર ન”)
+- **Authorities actually checked:** `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The source immediately defines vacuity by the case where x does not occur and the result remains A. The explicit no-change wording preserves that sense without using નિરર્થક, which can be read as meaningless. No checked canon passage attests a fixed Gujarati technical adjective for vacuous substitution.
+- **Alternatives:** નિરર્થક પ્રતિસ્થાપન — rejected after bounded replay because it can imply that the operation lacks meaning rather than merely having no effect.; રિક્ત પ્રતિસ્થાપન — concise, but can suggest an empty syntactic object rather than an unchanged result.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રતિસ્થાપનથી કોઈ ફેરફાર ન થાય’ accurately express ‘vacuous substitution (a substitution that makes no change)’ with the scope stated here: The source immediately defines vacuity by the case where x does not occur and the result remains A. The explicit no-change wording preserves that sense without using નિરર્થક, which can be read as meaningless. No checked canon passage attests a fixed Gujarati technical adjective for vacuous substitution. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -2664,3 +2730,113 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSYN-007 without changing any unaffected claim or formula?
+
+### OLSEM-001: confirmed_malformed_compound_for_two_place_relation
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/structures.tex` at `structures.tex:77`; SHA-256 `7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/structures.tex` body line(s) 77; adjacent note line 82; SHA-256 `49404446fbf3e66d83cd9c52b9aa3d28502fc1cba0dddcc3e3e40ac979abc9a7`.
+- **Chosen handling:** Rendered the intended phrase as one two-place relation and added an adjacent keyed note.
+- **Rationale:** The source's compound 'single-two place relation' is malformed and obscures that the language needs one two-place relation.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-001 without changing any unaffected claim or formula?
+
+### OLSEM-002: confirmed_missing_satisfaction_clause_in_existential_branch
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex` at `satisfaction.tex:172`; SHA-256 `1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex` body line(s) 173; adjacent note line 179; SHA-256 `865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b`.
+- **Chosen handling:** Restored the deliberately informal satisfaction expression B(m) in both conditional branches and added an adjacent keyed note.
+- **Rationale:** The existential branch stops after 'for at least one m in the domain' while only the universal branch contains the displayed satisfaction claim.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-002 without changing any unaffected claim or formula?
+
+### OLSEM-003: confirmed_assignment_suffix_attached_to_relation_interpretation
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex` at `satisfaction.tex:213`; SHA-256 `1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex` body line(s) 221; adjacent note line 223; SHA-256 `865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b`.
+- **Chosen handling:** Removed [s] from the relation interpretation and added an adjacent keyed note.
+- **Rationale:** The assignment suffix [s] is attached to the interpreted relation instead of only to the satisfaction judgement.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-003 without changing any unaffected claim or formula?
+
+### OLSEM-004: confirmed_unbalanced_parentheses_in_derived_existential_example
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex` at `satisfaction.tex:288`; SHA-256 `1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex` body line(s) 302; adjacent note line 305; SHA-256 `865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b`.
+- **Chosen handling:** Used one balanced parenthesis pair around the disjunction in both formulas and added an adjacent keyed note.
+- **Rationale:** Two formulas open two parentheses after negation but close only one, making the displayed formulas unbalanced.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-004 without changing any unaffected claim or formula?
+
+### OLSEM-005: confirmed_stray_comma_inside_formula_argument
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex` at `satisfaction.tex:292`; SHA-256 `1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex` body line(s) 311; adjacent note line 313; SHA-256 `865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b`.
+- **Chosen handling:** Removed the comma from the mathematical expression and added an adjacent keyed note.
+- **Rationale:** A prose comma is placed inside the existential formula's argument immediately before the satisfaction suffix.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-005 without changing any unaffected claim or formula?
+
+### OLSEM-006: confirmed_wrong_atomic_antecedent_in_universal_example
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex` at `satisfaction.tex:309`; SHA-256 `1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex` body line(s) 284; adjacent note line 338; SHA-256 `865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b`.
+- **Chosen handling:** Restored the false antecedent R(x,a) and added an adjacent keyed note.
+- **Rationale:** For m=2,3,4 the source declares the consequent R(a,x) false, although at m=2 it is true; the intended false antecedent is R(x,a).
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-006 without changing any unaffected claim or formula?
+
+### OLSEM-007: confirmed_missing_variable_before_equality
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex` at `satisfaction.tex:331`; SHA-256 `1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex` body line(s) 358; adjacent note line 365; SHA-256 `865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b`.
+- **Chosen handling:** Restored m before the equality and added an adjacent keyed note.
+- **Rationale:** The second interesting case is printed as '= 2' with its variable omitted.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-007 without changing any unaffected claim or formula?
+
+### OLSEM-008: confirmed_outer_quantifier_metavariable_mismatch
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex` at `satisfaction.tex:347`; SHA-256 `1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex` body line(s) 379; adjacent note line 385; SHA-256 `865ead56dc83483378679acef2b1bdd182c1fa149f51d7dd155c7d240353534b`.
+- **Chosen handling:** Changed the summary metavariable to m and added an adjacent keyed note.
+- **Rationale:** The summary quantifies over n although both cases and the entire preceding outer-quantifier analysis use m.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-008 without changing any unaffected claim or formula?
+
+### OLSEM-009: confirmed_free_index_in_relation_tuple
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex` at `assignments.tex:91`; SHA-256 `761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/assignments.tex` body line(s) 90; adjacent note line 93; SHA-256 `96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992`.
+- **Chosen handling:** Restored t_1 as the tuple's first component and added an adjacent keyed note.
+- **Rationale:** The concluding tuple starts at t_i, leaving i free instead of listing the components from t_1 through t_k.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-009 without changing any unaffected claim or formula?
+
+### OLSEM-010: confirmed_undefined_base_assignment_in_two_variants
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex` at `assignments.tex:181`; SHA-256 `761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/assignments.tex` body line(s) 189; adjacent note line 200; SHA-256 `96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992`.
+- **Chosen handling:** Constructed s_1' from s_1 and s_2' from s_2, then added an adjacent keyed note.
+- **Rationale:** Both variant assignments are constructed from an undefined s instead of from the two assignments s_1 and s_2 compared in the proof.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-010 without changing any unaffected claim or formula?
+
+### OLSEM-011: confirmed_duplicated_gamma_after_noun_phrase
+
+- **Frozen source:** `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex` at `assignments.tex:241`; SHA-256 `761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1`.
+- **Gujarati target:** `gu/content/first-order-logic/syntax-and-semantics/assignments.tex` body line(s) 255; adjacent note line 260; SHA-256 `96e62c8e7a23006ed4addb731efe8480f9bfec11b86aa77288487f11ff7ef992`.
+- **Chosen handling:** Removed the redundant second occurrence and added an adjacent keyed note.
+- **Rationale:** Gamma is printed twice in the opening noun phrase, once as the subject and again after 'set of sentences'.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-011 without changing any unaffected claim or formula?

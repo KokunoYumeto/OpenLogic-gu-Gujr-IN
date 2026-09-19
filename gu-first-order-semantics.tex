@@ -1,0 +1,41 @@
+\def\gueditiontitle{પ્રથમ-ક્રમ અર્થવિચાર સહિત ઓપન લોજિક ગુજરાતી}
+\def\gueditionheading{%
+  ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+  અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન,
+  સ્વાભાવિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ, પૂર્ણતા,
+  પ્રથમ-ક્રમ તર્કશાસ્ત્રનો પરિચય, વાક્યરચના અને અર્થવિચાર}
+\def\gueditiondescription{%
+  આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે પ્રથમ-ક્રમ તર્કશાસ્ત્રનું સંપૂર્ણ
+  અર્થવિચાર-પ્રકરણ ઉમેર્યું છે. તેમાં સંરચનાઓ અને વ્યાપકક્ષેત્રો, બંધ
+  પદોનાં મૂલ્યો, ચલ-નિયુક્તિઓ, સંતોષની અનુમાનાત્મક વ્યાખ્યા,
+  નિયુક્તિથી સ્વતંત્રતા, પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ, પ્રતિસ્થાપન,
+  પ્રામાણ્ય, ફલિતતા અને સંતોષ્યતાનો સમાવેશ છે.}
+\def\gueditioncount{૧૬૩}
+\newcommand{\guincludesyntaxbibliography}{}
+\def\gueditionbodyfile{build/first-order-semantics-body.tex}
+\def\gueditionlabelsfile{build/first-order-semantics-available-labels.tex}
+\def\gueditioncorrectionids{%
+  OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+  OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+  OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006,
+  OLND-001થી OLND-006, OLTAB-001થી OLTAB-012,
+  OLAX-001થી OLAX-018, OLCO-001થી OLCO-022,
+  OLFINT-001થી OLFINT-006, OLSYN-001થી OLSYN-007 અને
+  OLSEM-001થી OLSEM-011 સુધીની}
+\def\gueditioneditorial{%
+  નવા અર્થવિચાર-પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ ગોઠવણી
+  પસંદ કરી છે. સંરચનાઓ, પદોનાં મૂલ્યો, ચલ-નિયુક્તિઓ, સંતોષ,
+  નિયુક્તિથી સ્વતંત્રતા, પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ અને પાયાના
+  અર્થવિચારી ખ્યાલો સામેલ છે. મૂળ પાઠની અગિયાર ઓળખેલી ઔપચારિક અને
+  અર્થલક્ષી ખામીઓ પારદર્શક નોંધો સાથે મર્યાદિત રીતે સુધારી છે.}
+\providecommand{\Domain}[1]{\left|\mathfrak{#1}\right|}
+\ProvideDocumentCommand{\Trm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Trm}}{\mathrm{Trm}(\mathcal{#1})}}
+\providecommand{\num}[1]{\overline{#1}}
+\providecommand{\Var}{\mathrm{Var}}
+\providecommand{\article}[1]{}
+\providecommand{\Article}[1]{}
+\newenvironment{history}{%
+  \begin{quote}\textbf{ઇતિહાસ.}\ }{%
+  \end{quote}}
+\input{gu-tableaux.tex}

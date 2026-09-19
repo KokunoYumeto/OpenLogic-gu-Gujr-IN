@@ -1,0 +1,113 @@
+% Part: first-order-logic
+% Chapter: syntax-and-semantics
+% Section: Structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{syn}{str}
+
+\olsection{પ્રથમ-ક્રમ ભાષાઓ માટેની \printtoken{P}{structure}}
+
+\begin{explain}
+પ્રથમ-ક્રમ ભાષાઓ પોતે
+\emph{અર્થઘટનરહિત} હોય છે: !!{constant}s, !!{function}s અને
+!!{predicate}s સાથે કોઈ ચોક્કસ અર્થ જોડાયેલો હોતો નથી. અર્થ
+\article{structure} \emph{!!{structure}} નિર્દિષ્ટ કરીને આપવામાં આવે
+છે. તે \emph{વ્યાપકક્ષેત્ર}, એટલે કે !!{constant}s જે વસ્તુઓને નિર્દેશે છે,
+!!{function}s જે વસ્તુઓ પર કાર્ય કરે છે અને પરિમાણકો જેના પર વ્યાપ્ત
+થાય છે તે વસ્તુઓ, નિર્દિષ્ટ કરે છે. તે ઉપરાંત, કયાં !!{constant}s કઈ
+વસ્તુઓને નિર્દેશે છે, !!a{function} વસ્તુઓનું વસ્તુઓમાં કેવી રીતે
+પ્રતિચિત્રણ કરે છે અને !!{predicate}s કઈ વસ્તુઓને લાગુ પડે છે તે પણ
+નિર્દિષ્ટ કરે છે. !!^{structure}s તર્કશાસ્ત્રમાં અર્થવિચારી ખ્યાલો,
+જેમ કે ફલિતતા, પ્રામાણ્ય અને સંતોષ્યતાના ખ્યાલોનો પાયો છે. સાહિત્યમાં
+તેમને જુદી જુદી રીતે ``સંરચનાઓ'', ``અર્થઘટનો'' અથવા ``નિદર્શો'' કહે
+છે.
+\end{explain}
+
+\begin{defn}[!!^{structure}s]
+પ્રથમ-ક્રમ તર્કશાસ્ત્રની ભાષા~$\Lang{L}$ માટેની \Article{structure}
+\emph{!!{structure}}~$\Struct M$ નીચેના ઘટકોની બનેલી હોય છે:
+\begin{enumerate}
+\item \emph{વ્યાપકક્ષેત્ર:} અરિક્ત ગણ~$\Domain M$
+\item \emph{!!{constant}sનું અર્થઘટન:} $\Lang{L}$ના દરેક
+  !!{constant}~$c$ માટે !!a{element}~$\Assign{c}{M} \in \Domain M$
+\item \emph{!!{predicate}sનું અર્થઘટન:} $\Lang{L}$ના દરેક $n$-સ્થાની
+  !!{predicate}~$R$ માટે ($\eq$ સિવાય) $n$-સ્થાની સંબંધ
+  $\Assign{R}{M} \subseteq \Domain{M}^n$
+\item \emph{!!{function}sનું અર્થઘટન:} $\Lang{L}$ના દરેક $n$-સ્થાની
+  !!{function}~$f$ માટે $n$-સ્થાની વિધેય
+  $\Assign{f}{M} \colon \Domain{M}^n \to \Domain{M}$
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+અંકગણિતની ભાષા માટેની !!^a{structure}~$\Struct M$માં એક ગણ,
+!!{constant}~$\Obj 0$ના અર્થઘટન તરીકે $\Domain M$નો એક ઘટક
+$\Assign{\Obj 0}{M}$, એકસ્થાની વિધેય
+$\Assign{\Obj \prime}{M} \colon \Domain{M} \to \Domain M$, બે
+દ્વિસ્થાની વિધેયો $\Assign{\Obj +}{M}$ અને $\Assign{\Obj
+  \times}{M}$ (બંને $\Domain M^2 \to \Domain M$) અને દ્વિસ્થાની
+સંબંધ $\Assign{\Obj <}{M} \subseteq \Domain{M}^2$ હોય છે.
+
+આવી સંરચનાનો એક સ્વાભાવિક દાખલો આ છે:
+\begin{enumerate}
+\item $\Domain N = \Nat$
+\item $\Assign{\Obj 0}{N} = 0$
+\item દરેક $n \in \Nat$ માટે $\Assign{\Obj \prime}{N}(n) = n + 1$
+\item દરેક $n, m \in \Nat$ માટે $\Assign{\Obj +}{N}(n, m) = n + m$
+\item દરેક $n, m \in \Nat$ માટે $\Assign{\Obj \times}{N}(n, m) = n\cdot m$
+\item $\Assign{\Obj <}{N} = \Setabs{\tuple{n, m}}{n \in \Nat, m \in
+  \Nat, n < m}$
+\end{enumerate}
+આ રીતે વ્યાખ્યાયિત~$\Lang L_A$ માટેની સંરચના~$\Struct N$ને
+\emph{અંકગણિતનો પ્રમાણભૂત નિદર્શ} કહે છે, કારણ કે તે~$\Lang L_A$ના
+અતાર્કિક અચળોનું આપણે અપેક્ષા રાખીએ એ જ રીતે અર્થઘટન કરે છે.
+
+તેમ છતાં,~$\Lang L_A$ માટે બીજી ઘણી !!{structure}s શક્ય છે. દાખલા
+તરીકે, વ્યાપકક્ષેત્ર તરીકે~$\Nat$ને બદલે પૂર્ણાંકોનો ગણ~$\Int$ લઈ શકીએ અને
+$\Obj 0$, $\Obj \prime$, $\Obj +$, $\Obj \times$, $\Obj <$નાં
+અર્થઘટનો તે મુજબ વ્યાખ્યાયિત કરી શકીએ. પરંતુ~$\Lang L_A$ માટે એવી
+સંરચનાઓ પણ વ્યાખ્યાયિત કરી શકીએ જેને સંખ્યાઓ સાથે દૂરનો પણ સંબંધ ન
+હોય.
+\end{ex}
+
+\begin{ex}
+ગણસિદ્ધાંતની ભાષા~$\Lang L_Z$ માટેની સંરચના~$\Struct M$ને માત્ર એક
+ગણ અને એક દ્વિસ્થાની સંબંધની જરૂર પડે છે. તેથી, તાંત્રિક રીતે, લોકોનો
+ગણ અને ``$x$,~$y$ કરતાં મોટી ઉંમરનું છે'' એ સંબંધ, અથવા~$\Nat$ સાથે
+$n, m \in \Nat$ માટે $n \ge m$,~$\Lang L_Z$ માટે !!a{structure}
+તરીકે વાપરી શકાય.
+\sourcecorrection{OLSEM-001}{મૂળની \texttt{structures.tex},
+પંક્તિ~91માં \texttt{single-two place relation} એવો વિકૃત સંયુક્ત
+પ્રયોગ છે. ભાષાને માત્ર એક દ્વિસ્થાની સંબંધ જોઈએ છે; તેથી અહીં
+\texttt{single two-place relation}નો અર્થ પુનઃસ્થાપિત કર્યો છે.}
+
+$\Lang L_Z$ માટેની એક ખાસ રસપ્રદ !!{structure}, જેમાં વ્યાપકક્ષેત્રના
+!!{element}s ખરેખર ગણો છે અને $\Obj \in$નું અર્થઘટન ખરેખર ``$x$ એ
+~$y$નો !!a{element} છે'' એ સંબંધ છે, તે \emph{આનુવંશિક રીતે સાન્ત
+ગણો}ની !!{structure}~$\Struct{{HF}}$ છે:
+\begin{enumerate}
+\item $\Domain{{{HF}}} = \emptyset \cup \Pow{\emptyset} \cup
+  \Pow{\Pow{\emptyset}} \cup \Pow{\Pow{\Pow{\emptyset}}} \cup \dots$;
+\item $\Assign{\Obj \in}{{{HF}}} = \Setabs{\tuple{x, y}}{x, y \in
+  \Domain{{{HF}}}, x \in y}$.
+\end{enumerate}
+\end{ex}
+
+\begin{digress}
+!!a{structure} તરીકે શું ગણાય તે વિશેની આપણી શરતો આપણા તર્કશાસ્ત્રને
+અસર કરે છે. દાખલા તરીકે, ખાલી વ્યાપકક્ષેત્રો ન સ્વીકારવાની પસંદગી એ સુનિશ્ચિત
+કરે છે કે પરિમાણિત વાક્યો માટેના સામાન્ય સંતોષવિવરણ (અથવા
+સત્યતાવિવરણ) હેઠળ $\lexists[x][(!A(x) \lor \lnot !A(x))]$
+પ્રમાણભૂત---એટલે કે તાર્કિક સત્ય---છે. અને બધાં !!{constant}s વ્યાપકક્ષેત્રની
+કોઈ વસ્તુને નિર્દેશે જ એવી શરત અસ્તિત્વવાચક વ્યાપકીકરણને અનુમાનનો
+સુદૃઢ ઢાંચો બનાવે છે: $!A(a)$, તેથી $\lexists[x][!A(x)]$. જો આપણે
+નામોને વ્યાપકક્ષેત્ર બહારની વસ્તુ નિર્દેશવા અથવા કશું ન નિર્દેશવા દઈએ, તો
+આપણે એવા \emph{મુક્ત તર્કશાસ્ત્ર} તરફ જઈએ જેમાં અસ્તિત્વવાચક
+વ્યાપકીકરણ માટે વધારાનું આધારવિધાન જોઈએ: $!A(a)$ અને
+$\lexists[x][\eq[x][a]]$, તેથી $\lexists[x][!A(x)]$.
+\end{digress}
+
+\end{document}
