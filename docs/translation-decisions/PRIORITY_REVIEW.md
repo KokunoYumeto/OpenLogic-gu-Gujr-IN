@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-19T21:35:29.470587+00:00. This focused queue contains 116 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-19T23:53:40.806524+00:00. This focused queue contains 127 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -813,3 +813,80 @@ Generated 2026-09-19T21:35:29.470587+00:00. This focused queue contains 116 high
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સહજ ગુણધર્મ-ગણરચના પ્રરૂપ / ગુણધર્મ-ગણરચના સિદ્ધાંત / પૃથક્કરણ સિદ્ધાંત’ accurately express ‘naive comprehension scheme / comprehension principle / separation principle’ with the scope stated here: GU-T018 governs ગુણધર્મ વડે ગણરચના for comprehension. The present forms extend that decision: પ્રરૂપ marks the unrestricted formula schema, સિદ્ધાંત names the corresponding principle and પૃથક્કરણ names the restricted ZFC principle selecting elements from an existing set. સહજ renders the source's warning label naive without implying simplicity of proof. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/models-theories/theories.tex:91`
 - **Gujarati:** `gu/content/first-order-logic/models-theories/theories.tex:93`
+
+## GU-T158: many-sorted logic / sort / typed → બહુ-પ્રકાર તર્કશાસ્ત્ર / પ્રકાર / પ્રકારિત
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘બહુ-પ્રકાર તર્કશાસ્ત્ર / પ્રકાર / પ્રકારિત’ accurately express ‘many-sorted logic / sort / typed’ with the scope stated here: પ્રકાર transparently classifies objects into distinct ranges, and પ્રકારિત marks the argument-sort constraints on functions and relations. બહુ-પ્રકાર therefore keeps the formal distinction from a single-domain first-order language. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:11`
+- **Gujarati:** `gu/content/first-order-logic/beyond/many-sorted-logic.tex:11`
+
+## GU-T159: second-order logic / higher-order logic → દ્વિતીય-ક્રમ તર્કશાસ્ત્ર / ઉચ્ચ-ક્રમ તર્કશાસ્ત્ર
+
+- **Why prioritized:** The components and formal scope are supported, but the exact specialist compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘દ્વિતીય-ક્રમ તર્કશાસ્ત્ર / ઉચ્ચ-ક્રમ તર્કશાસ્ત્ર’ accurately express ‘second-order logic / higher-order logic’ with the scope stated here: ક્રમ continues the edition's established પ્રથમ-ક્રમ family. દ્વિતીય marks quantification over relations, while ઉચ્ચ covers the iterated hierarchy of relation and function types without misreading order as an ordering relation. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/second-order-logic.tex:11`
+- **Gujarati:** `gu/content/first-order-logic/beyond/second-order-logic.tex:11`
+
+## GU-T160: full or weak semantics / categorical description → પૂર્ણ અથવા દુર્બળ અર્થવિજ્ઞાન / એકરૂપતા સુધીનું અનન્ય વર્ણન
+
+- **Why prioritized:** The components and formal scope are supported, but the exact specialist compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પૂર્ણ અથવા દુર્બળ અર્થવિજ્ઞાન / એકરૂપતા સુધીનું અનન્ય વર્ણન’ accurately express ‘full or weak semantics / categorical description’ with the scope stated here: પૂર્ણ ranges over all relations or functions of the required type, whereas દુર્બળ permits a selected second-order or higher-type domain. The descriptive phrase for categorical explicitly states uniqueness up to isomorphism and avoids the ordinary classificatory sense of categorical. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/second-order-logic.tex:123`
+- **Gujarati:** `gu/content/first-order-logic/beyond/second-order-logic.tex:120`
+
+## GU-T161: comprehension schema / impredicative / predicative → ગુણધર્મ-ગણરચના પ્રરૂપ / અપ્રેડિકેટિવ / પ્રેડિકેટિવ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ગુણધર્મ-ગણરચના પ્રરૂપ / અપ્રેડિકેટિવ / પ્રેડિકેટિવ’ accurately express ‘comprehension schema / impredicative / predicative’ with the scope stated here: GU-T157 already governs ગુણધર્મ-ગણરચના for set comprehension. Here the same transparent head creates relations defined by formulas. The transliterated predicative contrast is fixed by the prose: અપ્રેડિકેટિવ permits second-order quantifiers over a range containing the relation being defined; પ્રેડિકેટિવ forbids them. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/second-order-logic.tex:57`
+- **Gujarati:** `gu/content/first-order-logic/beyond/second-order-logic.tex:55`
+
+## GU-T162: finite type / functional → સાન્ત પ્રકાર / વિધેયક
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાન્ત પ્રકાર / વિધેયક’ accurately express ‘finite type / functional’ with the scope stated here: સાન્ત is the edition's established finite term and પ્રકાર identifies a type in the inductively generated hierarchy. વિધેયક distinguishes a higher-type object that maps functions to numbers from an ordinary first-order વિધેય. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/higher-order-logic.tex:27`
+- **Gujarati:** `gu/content/first-order-logic/beyond/higher-order-logic.tex:27`
+
+## GU-T163: intuitionistic / classical / constructive logic → સ્ફુરણાવાદી / પ્રશિષ્ટ / રચનાત્મક તર્કશાસ્ત્ર
+
+- **Why prioritized:** The components and formal scope are supported, but the exact specialist compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સ્ફુરણાવાદી / પ્રશિષ્ટ / રચનાત્મક તર્કશાસ્ત્ર’ accurately express ‘intuitionistic / classical / constructive logic’ with the scope stated here: GU-P073 directly supports સ્ફુરણાવાદ for intuitionism and its finite proof conception. પ્રશિષ્ટ distinguishes classical logic from merely traditional prose, and રચનાત્મક retains the witness-and-procedure content fixed by the examples and BHK clauses. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:11`
+- **Gujarati:** `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:11`
+
+## GU-T164: BHK interpretation / law of excluded middle / double-negation translation → BHK અર્થઘટન / વર્જિત મધ્યનો નિયમ / દ્વિનિષેધ અનુવાદ
+
+- **Why prioritized:** The components and formal scope are supported, but the exact specialist compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘BHK અર્થઘટન / વર્જિત મધ્યનો નિયમ / દ્વિનિષેધ અનુવાદ’ accurately express ‘BHK interpretation / law of excluded middle / double-negation translation’ with the scope stated here: The initials remain the standard names of Brouwer, Heyting and Kolmogorov, while અર્થઘટન states the proof interpretation. વર્જિત મધ્ય names the excluded alternative, and દ્વિનિષેધ composes the edition's established negation term; the displayed clauses control the translation exactly. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:98`
+- **Gujarati:** `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:87`
+
+## GU-T165: Kripke structure / forcing relation / monotone assignment → ક્રિપ્કે સંરચના / બાધન-સંબંધ / એકદિશવર્ધી નિયુક્તિ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ક્રિપ્કે સંરચના / બાધન-સંબંધ / એકદિશવર્ધી નિયુક્તિ’ accurately express ‘Kripke structure / forcing relation / monotone assignment’ with the scope stated here: The eponym is transliterated and સંરચના follows the established structure term. બાધન names forcing without confusing it with ordinary truth at one world, while એકદિશવર્ધી states persistence upward in the information order; the five clauses and order condition fix both technical senses. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:196`
+- **Gujarati:** `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:180`
+
+## GU-T166: modal / intensional / extensional logic; accessibility; possible world → મોડલ / અંતર્લક્ષી / વિસ્તારલક્ષી તર્કશાસ્ત્ર; સુલભતા; શક્ય જગત
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘મોડલ / અંતર્લક્ષી / વિસ્તારલક્ષી તર્કશાસ્ત્ર; સુલભતા; શક્ય જગત’ accurately express ‘modal / intensional / extensional logic; accessibility; possible world’ with the scope stated here: મોડલ preserves the recognized specialist label. અંતર્લક્ષી and વિસ્તારલક્ષી mark dependence on intensional content versus extension. સુલભતા describes the world-to-world relation, and શક્ય જગત retains the explicitly modal rather than temporal reading fixed by the surrounding semantics. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/modal-logics.tex:11`
+- **Gujarati:** `gu/content/first-order-logic/beyond/modal-logics.tex:11`
+
+## GU-T167: provability / epistemic / temporal logic → સાબિતીયોગ્યતા / જ્ઞાનમીમાંસક / કાલિક તર્કશાસ્ત્ર
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાબિતીયોગ્યતા / જ્ઞાનમીમાંસક / કાલિક તર્કશાસ્ત્ર’ accurately express ‘provability / epistemic / temporal logic’ with the scope stated here: Each compound names the interpretation of the modal operators: being provable, being known or believed, and holding always or sometimes in time. The adjacent box and diamond readings prevent these labels from drifting into broader philosophy. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/modal-logics.tex:59`
+- **Gujarati:** `gu/content/first-order-logic/beyond/modal-logics.tex:61`
+
+## GU-T168: fuzzy, probabilistic, default, nonmonotonic, defeasible, causal and deontic logic → અસ્પષ્ટ, સંભાવ્યતા, ડિફૉલ્ટ, અ-એકદિશવર્ધી, પરાજેય, કારણાત્મક અને કર્તવ્યલક્ષી તર્કશાસ્ત્ર
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અસ્પષ્ટ, સંભાવ્યતા, ડિફૉલ્ટ, અ-એકદિશવર્ધી, પરાજેય, કારણાત્મક અને કર્તવ્યલક્ષી તર્કશાસ્ત્ર’ accurately express ‘fuzzy, probabilistic, default, nonmonotonic, defeasible, causal and deontic logic’ with the scope stated here: The forms follow the source's explicit explanatory scopes: vagueness, probability, defaults, withdrawal under new information, causation and obligation. અ-એકદિશવર્ધી contrasts directly with the established monotonic-growth family, and પરાજેય marks an inference that can be defeated rather than a false or invalid inference. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/beyond/other-logics.tex:23`
+- **Gujarati:** `gu/content/first-order-logic/beyond/other-logics.tex:22`

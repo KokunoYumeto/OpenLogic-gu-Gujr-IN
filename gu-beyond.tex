@@ -1,0 +1,53 @@
+\def\gueditiontitle{પ્રથમ-ક્રમ તર્કશાસ્ત્રથી આગળ સહિત ઓપન લોજિક ગુજરાતી}
+\def\gueditionheading{%
+  ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+  અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન,
+  સ્વાભાવિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ, પૂર્ણતા,
+  પ્રથમ-ક્રમ તર્કશાસ્ત્રનો પરિચય, વાક્યરચના, અર્થવિચાર,
+  નિદર્શો અને સિદ્ધાંતો તથા પ્રથમ-ક્રમથી આગળનાં તર્કશાસ્ત્રો}
+\def\gueditiondescription{%
+  આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે પ્રથમ-ક્રમ તર્કશાસ્ત્રથી આગળના
+  તર્કશાસ્ત્રોનું સંપૂર્ણ પ્રકરણ ઉમેર્યું છે. તેમાં બહુ-પ્રકાર,
+  દ્વિતીય-ક્રમ, ઉચ્ચ-ક્રમ, સ્ફુરણાવાદી અને મોડલ તર્કશાસ્ત્રો તથા બીજા
+  વિધિવત્ તાર્કિક તંત્રોની સંક્ષિપ્ત ઝાંખી સામેલ છે.}
+\def\gueditioncount{૧૭૮}
+\newcommand{\guincludesyntaxbibliography}{}
+\def\gueditionbodyfile{build/beyond-body.tex}
+\def\gueditionlabelsfile{build/beyond-available-labels.tex}
+\def\gueditioncorrectionids{%
+  OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+  OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+  OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006,
+  OLND-001થી OLND-006, OLTAB-001થી OLTAB-012,
+  OLAX-001થી OLAX-018, OLCO-001થી OLCO-022,
+  OLFINT-001થી OLFINT-006, OLSYN-001થી OLSYN-007,
+  OLSEM-001થી OLSEM-011, OLMAT-001થી OLMAT-005 અને
+  OLBYD-001થી OLBYD-006 સુધીની}
+\def\gueditioneditorial{%
+  નવા પ્રકરણમાં બહુ-પ્રકારથી મોડલ તર્કશાસ્ત્ર સુધીનાં ઔપચારિક તંત્રો
+  અને તેમના અર્થવિજ્ઞાનનાં મુખ્ય ભેદો જાળવ્યા છે. સ્થિર મૂળની છ ઓળખેલી
+  વાક્યરચનાત્મક અથવા સંકેતલક્ષી ખામીઓ પારદર્શક નોંધો સાથે મર્યાદિત રીતે
+  સુધારી છે. OLINF-002નું મૂળ-ખામી તરીકેનું ઐતિહાસિક વર્ગીકરણ પાછું
+  ખેંચાયું છે: ગૂંથાયેલું \texttt{\string\cardeq} લખાણ માન્ય રીતે
+  $A\approx B\approx C$માં વિસ્તરે છે, અને ગુજરાતી મુખ્ય પાઠનું સ્પષ્ટ
+  સંયોજન તેની સમકક્ષ રજૂઆત છે.}
+\providecommand{\Domain}[1]{\left|\mathfrak{#1}\right|}
+\ProvideDocumentCommand{\Trm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Trm}}{\mathrm{Trm}(\mathcal{#1})}}
+\providecommand{\num}[1]{\overline{#1}}
+\providecommand{\Var}{\mathrm{Var}}
+\providecommand{\Part}[2]{\Atom{\Obj P}{#1, #2}}
+\ProvideDocumentCommand{\lambd}{o o}{%
+  \IfNoValueTF{#1}{\lambda}{\lambda #1}%
+  \IfNoValueTF{#2}{\relax}{.\, #2}}
+\ProvideDocumentCommand{\mModel}{m}{\mathfrak{#1}}
+\ProvideDocumentCommand{\mSat}{t{/} m m o}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#4}{\mModel{#2}\nVdash #3}{\mModel{#2},#4\nVdash #3}}{%
+    \IfNoValueTF{#4}{\mModel{#2}\Vdash #3}{\mModel{#2},#4\Vdash #3}}}
+\providecommand{\article}[1]{}
+\providecommand{\Article}[1]{}
+\newenvironment{history}{%
+  \begin{quote}\textbf{ઇતિહાસ.}\ }{%
+  \end{quote}}
+\input{gu-tableaux.tex}

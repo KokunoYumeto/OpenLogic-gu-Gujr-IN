@@ -1,0 +1,86 @@
+{
+  "schema": "openlogic-gu-browser-runtime/1",
+  "checkpoint": "018",
+  "checked_utc": "2026-09-19T23:44:00.047603+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8772/build/runtime-probe017.html?target=reader%2Fbeyond.html&final=1",
+  "artifact": "reader/beyond.html",
+  "artifact_sha256": "f443ea30874e76cb0df3e280564c23ef78ba4384628763ca29a68df526d0ab5c",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "પ્રથમ-ક્રમ તર્કશાસ્ત્રથી આગળ સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 509,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 680,
+    "uniqueIds": 680,
+    "excludedBrowserUiIds": [
+      "codex-browser-sidebar-comments-root"
+    ],
+    "tocLinks": 184,
+    "tables": 12,
+    "mathmlNodes": 10000,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, scope disclosure, and cumulative table of contents",
+      "Beyond First-order Logic overview and many-sorted logic opening",
+      "second-order logic and its quantified-relation formulas",
+      "higher-order logic with OLBYD-006 disclosure and type formulas",
+      "intuitionistic logic example and proof",
+      "modal logic notation and explanatory prose",
+      "other logics, all OLBYD correction disclosures, and editorial notes",
+      "bibliography and endnotes"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": [
+      {
+        "source": "earlier runtime-probe host page",
+        "message": "MutationObserver target was absent before the iframe load",
+        "excluded_reason": "A clean direct-reader tab reported no warning or error entries."
+      }
+    ]
+  },
+  "status": "passed"
+}

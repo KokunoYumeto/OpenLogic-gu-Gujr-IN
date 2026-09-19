@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-gu-epub-browser-runtime/1",
+  "checkpoint": "018",
+  "checked_utc": "2026-09-19T23:49:08.876465+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8772/build/runtime-probe017.html?target=build%2Fepub018-stage%2FOEBPS%2Fcontent.xhtml&final=1",
+  "artifact": "build/epub018-stage/OEBPS/content.xhtml",
+  "artifact_sha256": "81b69a0e75d95587cdeb581e10f68d1ce8a4240fcdeb002da213d2a1b949ba31",
+  "epub": "releases/OpenLogic-gu-Gujr-IN-Beyond.epub",
+  "epub_sha256": "f69b056e0883707286a44772e999e47c51b7488e258ddd3924ec8ecfbfb81d41",
+  "loading_method": "The exact XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative asset URLs.",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "પ્રથમ-ક્રમ તર્કશાસ્ત્રથી આગળ સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 509,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 680,
+    "uniqueIds": 680,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, scope disclosure, and cumulative table of contents",
+      "second-order formulas in the exact packaged XHTML",
+      "higher-order types and OLBYD-006 correction disclosure",
+      "intuitionistic proof and modal-logic notation",
+      "editorial notes with OLBYD-001 through OLBYD-006",
+      "bibliography and endnotes"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": [
+      {
+        "source": "earlier runtime-probe host page",
+        "message": "MutationObserver target was absent before the iframe load",
+        "excluded_reason": "It predates this inspection and a clean exact-XHTML visual frame reported no warning or error entries."
+      }
+    ]
+  },
+  "status": "passed"
+}

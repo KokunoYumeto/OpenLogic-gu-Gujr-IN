@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-19T22:29:45.504858+00:00",
+  "checkpoint_utc": "2026-09-19T23:56:55.693752+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 170,
+  "translated_units": 178,
   "publicly_verified_release_units": 170,
   "publicly_verified_source_checkpoint_units": 170,
   "total_units": 722,
-  "aligned_linguistic_blocks": 1869,
-  "source_math_spans_verified": 9897,
+  "aligned_linguistic_blocks": 1941,
+  "source_math_spans_verified": 10230,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 1869,
-    "samples": 869,
+    "exact_block_reviews": 1941,
+    "samples": 925,
     "independent_native_certification": false,
-    "status": "passed_for_current_170_unit_scope"
+    "status": "passed_for_current_178_unit_scope"
   },
   "source_corrections": {
-    "count": 122,
+    "count": 128,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -140,21 +140,27 @@
       "OLMAT-002",
       "OLMAT-003",
       "OLMAT-004",
-      "OLMAT-005"
+      "OLMAT-005",
+      "OLBYD-001",
+      "OLBYD-002",
+      "OLBYD-006",
+      "OLBYD-003",
+      "OLBYD-004",
+      "OLBYD-005"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/first-order-models-theories.html",
-    "bytes": 4313795,
-    "sha256": "9c010445a772174d98bed54808981f77e2643ec52e47c8c5901c59ee8e5b4031",
-    "source_units_covered": 170,
-    "models_theories_units_complete": 7,
-    "rendered_models_theories_sections": 6,
-    "logic_profile": "classical first-order theories, structures, relations, set theory, and structure size",
-    "mathml_nodes": 9653,
-    "mathml_tables": 669,
-    "block_mathml_nodes": 490,
+    "path": "reader/beyond.html",
+    "bytes": 4492090,
+    "sha256": "f443ea30874e76cb0df3e280564c23ef78ba4384628763ca29a68df526d0ab5c",
+    "source_units_covered": 178,
+    "beyond_units_complete": 8,
+    "rendered_beyond_sections": 7,
+    "logic_profile": "many-sorted, second-order, higher-order, intuitionistic, modal, and other nonclassical logics",
+    "mathml_nodes": 10000,
+    "mathml_tables": 673,
+    "block_mathml_nodes": 509,
     "proof_representation_entries": 208,
     "proof_representation_kinds": {
       "axiomatic_derivation": 6,
@@ -178,16 +184,17 @@
     "axiomatic_derivation_tables": 6,
     "main_operator_tables": 1,
     "images": 13,
-    "unique_ids": 666,
+    "unique_ids": 680,
     "table_of_contents_links": 177,
     "broken_internal_links": 0,
-    "models_theories_section_ids": [
-      "fol:mat:int:sec",
-      "fol:mat:exs:sec",
-      "fol:mat:the:sec",
-      "fol:mat:exr:sec",
-      "fol:mat:set:sec",
-      "fol:mat:siz:sec"
+    "beyond_section_ids": [
+      "fol:byd:int:sec",
+      "fol:byd:msl:sec",
+      "fol:byd:sol:sec",
+      "fol:byd:hol:sec",
+      "fol:byd:il:sec",
+      "fol:byd:mod:sec",
+      "fol:byd:oth:sec"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -311,7 +318,13 @@
       "OLMAT-002",
       "OLMAT-003",
       "OLMAT-004",
-      "OLMAT-005"
+      "OLMAT-005",
+      "OLBYD-001",
+      "OLBYD-002",
+      "OLBYD-006",
+      "OLBYD-003",
+      "OLBYD-004",
+      "OLBYD-005"
     ],
     "literal_macro_correction_references": {
       "sFmla": 2,
@@ -329,12 +342,12 @@
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/first-order-models-theories-html-qa.json",
-      "sha256": "5674c18ca7a79fb8f239af67345bbbfd6bf5e41d6f07f2b37aa707913b73a0dd"
+      "path": "build/beyond-html-qa.json",
+      "sha256": "3da0353b43c9780df8a417e9d6bf4841545ccc5b4f293df6174c3640fde96e3a"
     },
     "prepared_tex": {
-      "path": "build/first-order-models-theories-html.tex",
-      "sha256": "871632abe4f3134178e22b4a89297f46b6dd09bb1158623dc9c4911f67fb7462"
+      "path": "build/beyond-html.tex",
+      "sha256": "aeacc6c0f6197c630dfb3819255943f67bd3634036f164d9b5adcfb76d8bd7d6"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
@@ -345,20 +358,20 @@
     "intentionally_scrollable_block_mathml_nodes": 3
   },
   "pdf": {
-    "path": "build/gu-first-order-models-theories.pdf",
-    "bytes": 1954675,
-    "sha256": "0e3660cd6a1d01078d0bf127d07ed61cf47835cd008883f1b69b1d90e24ccf81",
-    "pages": 219,
+    "path": "build/gu-beyond.pdf",
+    "bytes": 2044815,
+    "sha256": "3d1bada274079b4c3b573bb431a467cf8ab41b695f0b2cdfe57bf68d0c259ed0",
+    "pages": 231,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "પ્રથમ-ક્રમ નિદર્શો અને સિદ્ધાંતો સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "પ્રથમ-ક્રમ તર્કશાસ્ત્રથી આગળ સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 219,
+    "nonempty_extracted_text_pages": 231,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_017.json",
+    "build_receipt": "BUILD_RECEIPT_018.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -478,9 +491,17 @@
       "corrected_math": 310,
       "semantic": 40,
       "exact_block_reviews": 54
+    },
+    "018": {
+      "units": 8,
+      "blocks": 72,
+      "math": 333,
+      "corrected_math": 333,
+      "semantic": 56,
+      "exact_block_reviews": 72
     }
   },
-  "status": "170_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "178_unit_source_html_pdf_epub_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_170_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -543,14 +564,14 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "134c82876fb822130a74cc6aeabd40fea8df2260be0b092e0244233b72f70858",
+    "sha256": "e1d038b8472641e3812362461e5a84be2d786fdc1bab757e35e98bfc102bef2c",
     "status": "passed",
     "coverage": {
-      "decisions": 282,
-      "occurrences": 290
+      "decisions": 299,
+      "occurrences": 307
     },
     "reader_locators": {
-      "available": 289,
+      "available": 306,
       "pending": 0,
       "not_applicable": 1
     }
@@ -705,17 +726,17 @@
     "epub_qa": "EPUB_QA_013.json"
   },
   "epub": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-First-Order-Models-Theories.epub",
-    "bytes": 524276,
-    "sha256": "ab63ff6142fca4329d92d178834417892764c6a16724e0064395309cc98a655b",
+    "path": "releases/OpenLogic-gu-Gujr-IN-Beyond.epub",
+    "bytes": 545538,
+    "sha256": "f69b056e0883707286a44772e999e47c51b7488e258ddd3924ec8ecfbfb81d41",
     "version": "EPUB 3.3",
     "layout": "reflowable",
     "language": "gu-IN",
     "direction": "ltr",
     "coverage": {
-      "translated": 170,
+      "translated": 178,
       "total": 722,
-      "units": "OLP-0004–0173"
+      "units": "OLP-0004–0181"
     },
     "complete_edition": false,
     "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa",
@@ -833,5 +854,30 @@
       "OLINF-002-Q1"
     ],
     "status": "historical_false_positive_classification_withdrawn"
+  },
+  "batch_018": {
+    "draft_units": 8,
+    "remaining_units": [],
+    "structural_parity": "passed_after_6_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLBYD-001",
+      "OLBYD-002",
+      "OLBYD-006",
+      "OLBYD-003",
+      "OLBYD-004",
+      "OLBYD-005"
+    ],
+    "linguistic_blocks": 72,
+    "math_spans": 333,
+    "corrected_math_spans": 333,
+    "semantic_samples": "passed_72_exact_block_reviews_and_56_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_link_asset_and_character_qa_plus_reproducible_231_page_pdf_all_page_visual_qa_and_epub_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_509_block_mathml_nodes; three wide tableaux are horizontally scrollable and none are clipped",
+    "untranslated_prose": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+    "translation_decisions": "passed_json_schema_and_306_available_reader_locators_with_1_explicitly_not_applicable_and_0_pending",
+    "html_qa": "HTML_QA_018.json",
+    "pdf_qa": "PDF_QA_018.json",
+    "epub_qa": "EPUB_QA_018.json",
+    "cumulative_gate": "CUMULATIVE_QA_018.json"
   }
 }

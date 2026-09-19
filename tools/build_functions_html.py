@@ -4,9 +4,9 @@ import re,json,subprocess,html,hashlib,sys
 from bs4 import BeautifulSoup
 R=Path(__file__).resolve().parents[1];B=R/'build';O=R/'reader'
 edition=sys.argv[1] if len(sys.argv)>1 else 'functions'
-assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}
-coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80,'natural-deduction':94,'tableaux':108,'axiomatic-deduction':122,'completeness':134,'first-order-introduction':145,'first-order-syntax':155,'first-order-semantics':163,'first-order-models-theories':170}[edition]
-coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦','natural-deduction':'૯૪','tableaux':'૧૦૮','axiomatic-deduction':'૧૨૨','completeness':'૧૩૪','first-order-introduction':'૧૪૫','first-order-syntax':'૧૫૫','first-order-semantics':'૧૬૩','first-order-models-theories':'૧૭૦'}[edition]
+assert edition in {'functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}
+coverage={'functions':23,'size':37,'arithmetization':45,'infinite':51,'propositional':59,'proof-systems':65,'sequent-calculus':80,'natural-deduction':94,'tableaux':108,'axiomatic-deduction':122,'completeness':134,'first-order-introduction':145,'first-order-syntax':155,'first-order-semantics':163,'first-order-models-theories':170,'beyond':178}[edition]
+coverage_gu={'functions':'૨૩','size':'૩૭','arithmetization':'૪૫','infinite':'૫૧','propositional':'૫૯','proof-systems':'૬૫','sequent-calculus':'૮૦','natural-deduction':'૯૪','tableaux':'૧૦૮','axiomatic-deduction':'૧૨૨','completeness':'૧૩૪','first-order-introduction':'૧૪૫','first-order-syntax':'૧૫૫','first-order-semantics':'૧૬૩','first-order-models-theories':'૧૭૦','beyond':'૧૭૮'}[edition]
 title={
     'functions':'ગણો, સંબંધો અને વિધેયો — ઓપન લોજિક ગુજરાતી',
     'size':'ગણો, સંબંધો, વિધેયો અને ગણોનું કદ — ઓપન લોજિક ગુજરાતી',
@@ -23,6 +23,7 @@ title={
     'first-order-syntax':'પ્રથમ-ક્રમ વાક્યરચના સહિત ઓપન લોજિક ગુજરાતી',
     'first-order-semantics':'પ્રથમ-ક્રમ અર્થવિચાર સહિત ઓપન લોજિક ગુજરાતી',
     'first-order-models-theories':'પ્રથમ-ક્રમ નિદર્શો અને સિદ્ધાંતો સહિત ઓપન લોજિક ગુજરાતી',
+    'beyond':'પ્રથમ-ક્રમ તર્કશાસ્ત્રથી આગળ સહિત ઓપન લોજિક ગુજરાતી',
 }[edition]
 def arg(t,i):
     while t[i].isspace():i+=1
@@ -56,6 +57,7 @@ body=body.replace(
     r'\texttt{\string\iftag\{FOL\}}',
     r'\texttt{\textbackslash{}iftag\{FOL\}}',
 )
+body=body.replace(r'\string!', '!')
 token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય',
              'formula':'સૂત્ર','valuation':'સત્યમૂલ્ય-નિયુક્તિ',
              'derivation':'નિષ્પત્તિ','derivability':'નિષ્પન્નક્ષમતા',
@@ -63,13 +65,13 @@ token_words={'enumerable':'ગણનીય','nonenumerable':'અગણનીય'
              'main operator':'મુખ્ય કારક','subformula':'ઉપસૂત્ર','variable':'ચલ',
              'structure':'સંરચના'}
 def token_value(namespace,key):
-    if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
+    if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'} and namespace=='P' and key=='derivation':return 'નિષ્પત્તિઓ'
     return token_words[key]
 body=command(body,'usetoken',2,token_value)
 body=command(body,'printtoken',2,token_value)
 body=command(body,'article',1,lambda _value:'')
 body=command(body,'Article',1,lambda _value:'')
-if edition in {'propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     # Expand the two xparse-style constructs that Pandoc's LaTeX reader cannot
     # define through ordinary \newcommand declarations.  The prepared source
     # has already selected the frozen upstream default connective profile.
@@ -84,13 +86,13 @@ if edition in {'propositional','proof-systems','sequent-calculus','natural-deduc
     body=command(body,'pSat',2,lambda valuation,formula:
                  r'\mathfrak{'+valuation+r'}\vDash '+formula)
 proof_render_receipts=[]
-if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     proofs=re.findall(r'\\begin\{prooftree\}[\s\S]*?\\end\{prooftree\}',body)
     tableaux=re.findall(r'\\begin\{oltableau\}[\s\S]*?\\end\{oltableau\}',body)
     derivations=re.findall(r'\\begin\{derivation\}[\s\S]*?\\end\{derivation\}',body)
-    expected_proofs={'proof-systems':2,'sequent-calculus':60,'natural-deduction':123,'tableaux':124,'axiomatic-deduction':124,'completeness':124,'first-order-introduction':124,'first-order-syntax':124,'first-order-semantics':124,'first-order-models-theories':124}[edition]
-    expected_tableaux=45 if edition in {'tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'} else 1
-    expected_derivations=6 if edition in {'axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'} else 1
+    expected_proofs={'proof-systems':2,'sequent-calculus':60,'natural-deduction':123,'tableaux':124,'axiomatic-deduction':124,'completeness':124,'first-order-introduction':124,'first-order-syntax':124,'first-order-semantics':124,'first-order-models-theories':124,'beyond':124}[edition]
+    expected_tableaux=45 if edition in {'tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'} else 1
+    expected_derivations=6 if edition in {'axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'} else 1
     assert (len(proofs)==expected_proofs and len(tableaux)==expected_tableaux and len(derivations)==expected_derivations), (len(proofs), len(tableaux), len(derivations), expected_proofs, expected_tableaux, expected_derivations)
     rendered_proofs=[
         r'''\[
@@ -152,7 +154,7 @@ if edition in {'proof-systems','sequent-calculus','natural-deduction','tableaux'
     if edition=='proof-systems':
         assert not re.search(r'\\begin\{(?:prooftree|oltableau|derivation)\}',body)
 
-if edition in {'sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     def bracket_arg(t,i):
         while i<len(t) and t[i].isspace():i+=1
         if i>=len(t) or t[i]!='[':return None,i
@@ -194,11 +196,26 @@ if edition in {'sequent-calculus','natural-deduction','tableaux','axiomatic-dedu
             repl=r'\mathrm{Val}^{\mathfrak{'+structure+'}}'+(('_{'+assignment+'}') if assignment is not None else '')+'('+term+')'
             t=t[:m.start()]+repl+t[j:];pos=m.start()
         return t
+    def expand_modal_sat(t):
+        pat=re.compile(r'\\mSat(?![A-Za-z])');pos=0
+        while (m:=pat.search(t,pos)):
+            j=m.end();neg=False
+            if j<len(t) and t[j]=='/':neg=True;j+=1
+            model,j=arg(t,j);formula,j=arg(t,j);world,end=bracket_arg(t,j)
+            if world is not None:j=end
+            repl=(r'\mathfrak{'+model+'}'+((','+world) if world is not None else '')
+                  +(r'\nVdash ' if neg else r'\Vdash ')+formula)
+            t=t[:m.start()]+repl+t[j:];pos=m.start()
+        return t
     body=expand_optional_command(body,'lforall',lambda _slash,a:r'\forall'+((' '+a[0]) if a else '')+((r' \, '+a[1]) if len(a)>1 else ''))
     body=expand_optional_command(body,'lexists',lambda unique,a:r'\exists'+('!' if unique else '')+((' '+a[0]) if a else '')+((r' \, '+a[1]) if len(a)>1 else ''))
     body=expand_optional_command(body,'eq',lambda neg,a:r'{}'+((a[0]+(r'\ne ' if neg else '=')+a[1]) if len(a)>1 else (r'\ne ' if neg else '=')))
+    body=expand_optional_command(body,'lambd',lambda _slash,a:r'\lambda'+((' '+a[0]) if a else '')+((r'.\, '+a[1]) if len(a)>1 else ''))
     body=expand_sat(body)
     body=expand_value(body)
+    body=expand_modal_sat(body)
+    body=re.sub(r'\\mModel\s+([A-Za-z])',r'\\mathfrak{\1}',body)
+    body=command(body,'mModel',1,lambda model:r'\mathfrak{'+model+'}')
     body=command(body,'varAssign',3,lambda new,old,var:new+r'\sim_{'+var+'}'+old)
     body=body.replace(r'\Proves/',r'\nvdash').replace(r'\Entails/',r'\nvDash')
     body=body.replace(r'\DeclareRobustCommand{\VDash}{\mathrel{||}\joinrel\Relbar}', '')
@@ -323,7 +340,7 @@ if edition in {'sequent-calculus','natural-deduction','tableaux','axiomatic-dedu
             representation='Recursive MathML signed-formula tree preserving node order, branch structure, justifications, checkmarks, closure marks and intentional empty branches.',
         ))
         return '\n\\['+tableau_math(root)+r'\]'+'\n'
-    if edition in {'tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+    if edition in {'tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
         body=re.sub(
             r'\\begin\{oltableau\}([\s\S]*?)\\end\{oltableau\}(?:\{\})?',
             lambda m:tableau_region(m[0],m[1],True,'signed_analytic_tableau'),body,
@@ -719,9 +736,9 @@ macros=r"""
 \newcommand{\PAx}{\mathrm{Ax}_0}
 \newcommand{\Part}[2]{\Atom{\Obj P}{#1, #2}}
 """
-editorial_path=(R/'gu-tableaux.tex') if edition in {'axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'} else (R/f'gu-{edition}.tex')
+editorial_path=(R/'gu-tableaux.tex') if edition in {'axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'} else (R/f'gu-{edition}.tex')
 editorial=editorial_path.read_text(encoding='utf-8').split(r'\section*{સંપાદકીય નોંધો}',1)[1].split(r'\begin{thebibliography}',1)[0]
-if edition in {'tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     correction_ids={
         'tableaux':('OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, '
                     'OLARI-001થી OLARI-004, OLINF-001થી OLINF-002, '
@@ -767,6 +784,14 @@ if edition in {'tableaux','axiomatic-deduction','completeness','first-order-intr
                     'OLCO-001થી OLCO-022, OLFINT-001થી OLFINT-006, '
                     'OLSYN-001થી OLSYN-007, OLSEM-001થી OLSEM-011 અને '
                     'OLMAT-001થી OLMAT-005 સુધીની'),
+        'beyond':('OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, '
+                    'OLARI-001થી OLARI-004, OLINF-001થી OLINF-002, '
+                    'OLPL-001થી OLPL-002, OLPRF-001થી OLPRF-004, '
+                    'OLSEQ-001થી OLSEQ-006, OLND-001થી OLND-006, '
+                    'OLTAB-001થી OLTAB-012, OLAX-001થી OLAX-018, '
+                    'OLCO-001થી OLCO-022, OLFINT-001થી OLFINT-006, '
+                    'OLSYN-001થી OLSYN-007, OLSEM-001થી OLSEM-011, '
+                    'OLMAT-001થી OLMAT-005 અને OLBYD-001થી OLBYD-006 સુધીની'),
     }[edition]
     latest_editorial={
         'tableaux':('ટેબ્લોના નવા પ્રકરણમાં સ્થિર મૂળની શાસ્ત્રીય પ્રથમ-ક્રમ '
@@ -812,6 +837,13 @@ if edition in {'tableaux','axiomatic-deduction','completeness','first-order-intr
                     'પાછું ખેંચાયું છે: ગૂંથાયેલું cardeq લખાણ માન્ય રીતે '
                     'A≈B≈Cમાં વિસ્તરે છે, અને ગુજરાતી મુખ્ય પાઠનું સ્પષ્ટ સંયોજન '
                     'તેની સમકક્ષ રજૂઆત છે.'),
+        'beyond':('નવા પ્રકરણમાં બહુ-પ્રકારથી મોડલ તર્કશાસ્ત્ર સુધીનાં ઔપચારિક '
+                    'તંત્રો અને તેમના અર્થવિજ્ઞાનનાં મુખ્ય ભેદો જાળવ્યા છે. સ્થિર '
+                    'મૂળની છ ઓળખેલી વાક્યરચનાત્મક અથવા સંકેતલક્ષી ખામીઓ પારદર્શક '
+                    'નોંધો સાથે મર્યાદિત રીતે સુધારી છે. OLINF-002નું મૂળ-ખામી '
+                    'તરીકેનું ઐતિહાસિક વર્ગીકરણ પાછું ખેંચાયું છે: ગૂંથાયેલું '
+                    'cardeq લખાણ માન્ય રીતે A≈B≈Cમાં વિસ્તરે છે, અને ગુજરાતી '
+                    'મુખ્ય પાઠનું સ્પષ્ટ સંયોજન તેની સમકક્ષ રજૂઆત છે.'),
     }[edition]
     editorial=editorial.replace(r'\gueditioncorrectionids{}',correction_ids)
     editorial=editorial.replace(r'\gueditioneditorial',latest_editorial)
@@ -821,19 +853,19 @@ if edition=='size':
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n')
-if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     bibliography += (r'\label{bib:Cantor1892}Cantor, Georg. 1892. Über eine elementare Frage der Mannigfaltigkeitslehre.'+'\n'
                      +r'\label{bib:Frege1884}Frege, Gottlob. 1884. \emph{Die Grundlagen der Arithmetik}.'+'\n'
                      +r'\label{bib:Potter2004}Potter, Michael. 2004. \emph{Set Theory and Its Philosophy}.'+'\n'
                      +r'\label{bib:Conway2006}Conway, John. 2006. \emph{The Power of Mathematics}.'+'\n'
                      +r'\label{bib:KatzKatz2012}Katz, Karin Usadi and Mikhail G. Katz. 2012. Stevin Numbers and Reality.'+'\n'
                      +r"\label{bib:OConnorRobertson:RN}O'Connor, John J. and Edmund F. Robertson. 2005. The real numbers: Stevin to Hilbert."+'\n')
-if edition in {'infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     bibliography += (r'\label{bib:EwaldSieg2013}Hilbert, David. 2013. On the infinite. In \emph{David Hilbert’s Lectures on the Foundations of Arithmetic and Logic 1917–1933}.'+'\n'
                      +r'\label{bib:Dedekind1888}Dedekind, Richard. 1888. \emph{Was sind und was sollen die Zahlen?}.'+'\n')
-if edition in {'first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     bibliography += (r'\label{bib:Magnus2021}Magnus, P. D., Tim Button, J. Robert Loftis, Aaron Thomas-Bolduc, Robert Trueman, and Richard Zach. 2021. \emph{forall x: Calgary: An Introduction to Formal Logic}. F21 ed. Open Logic Project.'+'\n')
-if edition in {'first-order-syntax','first-order-semantics','first-order-models-theories'}:
+if edition in {'first-order-syntax','first-order-semantics','first-order-models-theories','beyond'}:
     bibliography += (r'\label{bib:Smullyan1968}Smullyan, Raymond M. 1968. \emph{First-Order Logic}. New York, NY: Springer.'+'\n'
                      +r'\label{bib:Zuckerman1973}Zuckerman, Martin M. 1973. Formation sequences for propositional formulas. \emph{Notre Dame Journal of Formal Logic} 14(1), 134--138.'+'\n')
 src=B/f'{edition}-html.tex'
@@ -868,6 +900,8 @@ elif edition == 'first-order-semantics':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રનું સંપૂર્ણ અર્થવિચાર-પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 elif edition == 'first-order-models-theories':
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રનું નિદર્શો અને સિદ્ધાંતોનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
+elif edition == 'beyond':
+    notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં અગાઉના સંપૂર્ણ પ્રકરણો તથા પ્રથમ-ક્રમથી આગળનાં તર્કશાસ્ત્રોનું સંપૂર્ણ પ્રકરણ છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 else:
     notice_text = f'આ યંત્ર દ્વારા કરેલો અનુવાદ છે. આ આવૃત્તિમાં {scope[edition]} સંપૂર્ણ પ્રકરણો છે: ૭૨૨માંથી {coverage_gu} મૂળ એકમો. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.'
 notice=BeautifulSoup(f'<aside aria-label="આવૃત્તિ વિશે"><p>{notice_text} <a href="../docs/EDITION_NOTES.md">પરિભાષા અને ચકાસણીની વિગતો</a>.</p><p>મૂળ: <a href="https://github.com/OpenLogicProject/OpenLogic">Open Logic Project</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">અનુવાદોનું કેન્દ્ર</a>.</p></aside>','html.parser')
@@ -905,7 +939,7 @@ for formula in soup.find_all('math'):
 ids={e['id'] for e in soup.select('[id]')}
 broken=[a['href'] for a in soup.select('a[href^="#"]') if a['href'][1:] not in ids]
 assert not broken,broken
-expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13,'natural-deduction':13,'tableaux':13,'axiomatic-deduction':13,'completeness':13,'first-order-introduction':13,'first-order-syntax':13,'first-order-semantics':13,'first-order-models-theories':13}[edition]
+expected_images={'functions':11,'size':11,'arithmetization':12,'infinite':13,'propositional':13,'proof-systems':13,'sequent-calculus':13,'natural-deduction':13,'tableaux':13,'axiomatic-deduction':13,'completeness':13,'first-order-introduction':13,'first-order-syntax':13,'first-order-semantics':13,'first-order-models-theories':13,'beyond':13}[edition]
 assert len(soup.find_all('img'))==expected_images
 assert not soup.select('span.math'), 'Pandoc math conversion fell back to source TeX'
 # Source pto is an arrow with an interior vertical stroke, not an ordinary total-function arrow.

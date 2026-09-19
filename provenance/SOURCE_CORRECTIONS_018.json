@@ -1,0 +1,156 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-19T23:42:32.279064+00:00",
+  "audit_id": "GU-OLBYD-20260920",
+  "audit_method": "Same-agent exact comparison against the frozen source, adjacent prose, declared notation, logical macro grammar and glossary token syntax within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLBYD-001",
+      "unit_id": "OLP-0176",
+      "classification": "confirmed_missing_quantifier_argument_bracket",
+      "finding": "The inner sorted universal quantifier lacks the opening square bracket required by the logical macro.",
+      "source_path": "content/first-order-logic/beyond/many-sorted-logic.tex",
+      "source_locator": "many-sorted-logic.tex:38",
+      "source_bytes": 3202,
+      "source_sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
+      "target_path": "gu/content/first-order-logic/beyond/many-sorted-logic.tex",
+      "target_bytes": 7126,
+      "target_sha256": "9920603f0eb8afde13e3657e2d4b4a9adacdc4997cf36a61ace114ab7e87a27d",
+      "corrected_body_line": 36,
+      "adjacent_note_line": 42,
+      "handling": "Restored the bracketed argument of the inner quantifier and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lforall x][(",
+        "added": "\\lforall[x][("
+      },
+      "controlling_evidence": "The surrounding quantifier and every other use of the same macro pass the bound variable in a square-bracket argument.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLBYD-002",
+      "unit_id": "OLP-0177",
+      "classification": "confirmed_inconsistent_successor_notation",
+      "finding": "The successor-injectivity axiom uses an undeclared s notation although the language has just declared prime as its successor symbol.",
+      "source_path": "content/first-order-logic/beyond/second-order-logic.tex",
+      "source_locator": "second-order-logic.tex:142",
+      "source_bytes": 12410,
+      "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
+      "target_path": "gu/content/first-order-logic/beyond/second-order-logic.tex",
+      "target_bytes": 25079,
+      "target_sha256": "9f2c786f7696c28e4f20769ae4f0955aeb67d22d1d0e47f3b483c5556481dfc0",
+      "corrected_body_line": 137,
+      "adjacent_note_line": 144,
+      "handling": "Used the declared prime successor notation consistently and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "s(x) = s(y)",
+        "added": "x' = y'"
+      },
+      "controlling_evidence": "The immediately preceding language declaration and every neighboring arithmetic axiom use the prime symbol for successor.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLBYD-006",
+      "unit_id": "OLP-0178",
+      "classification": "confirmed_glossary_token_embedded_in_verb_inflection",
+      "finding": "Noun glossary markup is embedded inside the English verb formulated, leaving an invalid tokenized inflection.",
+      "source_path": "content/first-order-logic/beyond/higher-order-logic.tex",
+      "source_locator": "higher-order-logic.tex:21",
+      "source_bytes": 6173,
+      "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+      "target_path": "gu/content/first-order-logic/beyond/higher-order-logic.tex",
+      "target_bytes": 14535,
+      "target_sha256": "51c2a9807d461ce61555ddd2684cbc8b713cfe95526dca04f38698a107c2e08b",
+      "corrected_body_line": 21,
+      "adjacent_note_line": 30,
+      "handling": "Translated the coherent verb without noun glossary markup and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "!!{formula}ted",
+        "added": "formulated"
+      },
+      "controlling_evidence": "The clause requires the English verb formulated; the glossary token denotes the mathematical noun formula and cannot carry the suffix ted.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLBYD-003",
+      "unit_id": "OLP-0178",
+      "classification": "confirmed_lambda_bound_variable_type_mismatch",
+      "finding": "The explanatory sentence assigns x type sigma, contrary to the preceding formation clause where x has type tau and the abstraction has type tau to sigma.",
+      "source_path": "content/first-order-logic/beyond/higher-order-logic.tex",
+      "source_locator": "higher-order-logic.tex:87",
+      "source_bytes": 6173,
+      "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+      "target_path": "gu/content/first-order-logic/beyond/higher-order-logic.tex",
+      "target_bytes": 14535,
+      "target_sha256": "51c2a9807d461ce61555ddd2684cbc8b713cfe95526dca04f38698a107c2e08b",
+      "corrected_body_line": 95,
+      "adjacent_note_line": 98,
+      "handling": "Restored tau as the bound variable's type and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "$\\sigma$",
+        "added": "$\\tau$"
+      },
+      "controlling_evidence": "Formation item (6) explicitly gives x type tau and lambda x.s type tau to sigma.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLBYD-004",
+      "unit_id": "OLP-0178",
+      "classification": "confirmed_malformed_glossary_token",
+      "finding": "The glossary markup for formulas contains a stray caret and therefore does not match the project's token syntax.",
+      "source_path": "content/first-order-logic/beyond/higher-order-logic.tex",
+      "source_locator": "higher-order-logic.tex:89",
+      "source_bytes": 6173,
+      "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
+      "target_path": "gu/content/first-order-logic/beyond/higher-order-logic.tex",
+      "target_bytes": 14535,
+      "target_sha256": "51c2a9807d461ce61555ddd2684cbc8b713cfe95526dca04f38698a107c2e08b",
+      "corrected_body_line": 103,
+      "adjacent_note_line": 108,
+      "handling": "Restored the standard plural formula token and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "!!^{formula}s",
+        "added": "!!{formula}s"
+      },
+      "controlling_evidence": "The same term is marked with the standard !!{formula} token throughout the surrounding chapters.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLBYD-005",
+      "unit_id": "OLP-0180",
+      "classification": "confirmed_glossary_token_embedded_in_verb_inflection",
+      "finding": "Noun glossary markup is embedded inside two English verb forms, producing invalid tokenized inflections rather than the intended verbs.",
+      "source_path": "content/first-order-logic/beyond/modal-logics.tex",
+      "source_locator": "modal-logics.tex:54",
+      "source_bytes": 4288,
+      "source_sha256": "8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881",
+      "target_path": "gu/content/first-order-logic/beyond/modal-logics.tex",
+      "target_bytes": 9591,
+      "target_sha256": "bb7d9bdac9c60f94d48ef092c1823064fc9a00a93e56baa9f336ea2f08ff941c",
+      "corrected_body_line": 50,
+      "adjacent_note_line": 54,
+      "handling": "Translated both coherent verb uses without noun glossary markup and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": [
+          "!!{structure}ing",
+          "!!{structure}"
+        ],
+        "added": [
+          "structuring",
+          "structure"
+        ]
+      },
+      "controlling_evidence": "Both clauses require the English verb structure; the glossary token denotes the mathematical noun and cannot carry English inflection.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_018.json",
+  "status": "six_repairs_applied_disclosed_and_structural_semantic_reader_qa_passed"
+}
