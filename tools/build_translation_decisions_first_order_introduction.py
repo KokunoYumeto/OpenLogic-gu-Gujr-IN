@@ -30,6 +30,7 @@ BODY_PATH = ROOT / "build" / "first-order-introduction-body.tex"
 PDF_PATH = ROOT / "build" / "gu-first-order-introduction.pdf"
 SYNCTEX_PATH = ROOT / "build" / "gu-first-order-introduction.synctex.gz"
 BUILD_RECEIPT_PATH = STATE / "BUILD_RECEIPT_014.json"
+QUALIFICATIONS_PATH = ROOT / "provenance" / "SOURCE_CLAIM_QUALIFICATIONS.jsonl"
 BT = chr(96)
 
 EDITION = {
@@ -737,6 +738,162 @@ def correction_decision(
     }
 
 
+def apply_source_claim_qualifications(
+    decisions: list[dict[str, Any]],
+) -> list[str]:
+    """Replace superseded correction claims with their reviewed disposition.
+
+    Historical correction receipts remain immutable audit evidence.  A later
+    qualification therefore updates the reviewer-facing decision in memory,
+    while preserving the original receipt among the occurrence evidence.
+    """
+
+    qualifications = read_jsonl(QUALIFICATIONS_PATH)
+    decisions_by_id = {decision["decision_id"]: decision for decision in decisions}
+    applied: list[str] = []
+    for qualification in qualifications:
+        decision_id = qualification["supersedes_claim_id"]
+        decision = decisions_by_id[decision_id]
+        assert qualification["classification"] == (
+            "rejected_false_positive_source_correction_classification"
+        )
+        assert decision["record_kind"] == "source_correction"
+        assert len(decision["occurrences"]) == 1
+
+        occurrence = decision["occurrences"][0]
+        source_evidence = qualification["exact_source_location"]
+        target_evidence = qualification["exact_target_location"]
+        configuration = qualification["configuration_evidence"]
+        equivalence = qualification["mathematical_equivalence"]
+        assert occurrence["source"]["path"] == source_evidence["path"]
+        assert occurrence["source"]["file_sha256"] == source_evidence["sha256"]
+        assert occurrence["target"]["path"] == target_evidence["path"]
+        assert occurrence["target"]["file_sha256"] == target_evidence["sha256"]
+        configuration_path = repo_path(configuration["path"])
+        assert configuration_path.stat().st_size == configuration["bytes"]
+        assert sha256_path(configuration_path) == configuration["sha256"]
+
+        intended_sense = (
+            "The two-argument macro expands the nested source expression to "
+            "A ≈ B ≈ C, so the source statement is well formed and has no "
+            "mathematical defect at this location."
+        )
+        chosen_rendering = (
+            r"\cardeq{A}{B} and \cardeq{B}{C} (an equivalent explicit "
+            "pair retained for readability)"
+        )
+        qualified_source_line = parse_locator_lines(source_evidence["locator"])[0]
+        occurrence["source"] = text_locator(
+            source_evidence["path"],
+            qualified_source_line,
+            source_evidence["expression"],
+            intended_sense,
+            "Valid frozen-source macro expression; historical false-positive locus.",
+        )
+        assert occurrence["source"]["file_sha256"] == source_evidence["sha256"]
+        decision.update(
+            {
+                "recording_mode": "retrospective",
+                "recorded_utc": qualification["recorded_at_utc"],
+                "source_term_or_construction": source_evidence["expression"],
+                "intended_sense": intended_sense,
+                "chosen_rendering": chosen_rendering,
+                "rationale": (
+                    "Independent review withdrew the earlier source-error "
+                    "classification. The macro definition takes two arguments, "
+                    "and literal substitution yields A ≈ B ≈ C. The Gujarati "
+                    "edition keeps the equivalent pairwise form as a readability "
+                    "choice; this retained decision ID documents the superseded "
+                    "classification rather than an active correction."
+                ),
+                "authorities_checked": [
+                    {
+                        "authority_id": f"{decision_id}-QUALIFICATION",
+                        "citation": "Open Logic frozen-source macro definition",
+                        "passage_id": qualification["qualification_id"],
+                        "locator": (
+                            f"{configuration['path']}:{configuration['line']}"
+                        ),
+                        "source_sha256": configuration["sha256"],
+                        "passage_sha256": sha256_text(configuration["definition"]),
+                        "status": "checked_adverse",
+                        "note": (
+                            f"{configuration['definition']} expands the expression "
+                            f"as {configuration['literal_expansion']}; this evidence "
+                            "contradicts the historical defect classification."
+                        ),
+                    }
+                ],
+                "alternatives": [
+                    {
+                        "rendering": "Treat the nested expression as a malformed source formula",
+                        "disposition": "superseded",
+                        "reason": (
+                            "The macro definition and literal expansion show that "
+                            "the historical classification was a false positive."
+                        ),
+                    },
+                    {
+                        "rendering": source_evidence["expression"],
+                        "disposition": "viable_alternative",
+                        "reason": (
+                            "Literal preservation is valid because the macro "
+                            "expands to the intended chain of comparisons."
+                        ),
+                    },
+                    {
+                        "rendering": equivalence["target_rendering"],
+                        "disposition": "viable_alternative",
+                        "reason": (
+                            "This is the equivalent explicit pairwise statement "
+                            "retained in Gujarati for readability."
+                        ),
+                    },
+                ],
+                "confidence": "high",
+                "confidence_reason": (
+                    "The frozen macro definition, literal expansion, source proof, "
+                    "target statement, and independent review disposition agree."
+                ),
+                "provisional": False,
+                "review_priority": "low",
+                "expert_review_useful": True,
+                "expert_review_reason": (
+                    "A reviewer may verify that the chained comparison and the "
+                    "explicit pairwise rendering are mathematically equivalent."
+                ),
+                "please_double_check_question": (
+                    "Please confirm that the nested macro expands to A ≈ B ≈ C "
+                    "and that the explicit Gujarati pair states the same comparisons."
+                ),
+            }
+        )
+
+        occurrence["target"].update(
+            {
+                "term": equivalence["target_rendering"],
+                "intended_sense": intended_sense,
+                "context": "Equivalent explicit Gujarati rendering retained for readability.",
+            }
+        )
+        for path in (QUALIFICATIONS_PATH, configuration_path):
+            evidence_ref = {
+                "path_or_uri": rel(path),
+                "bytes": path.stat().st_size,
+                "sha256": sha256_path(path),
+            }
+            if evidence_ref["path_or_uri"].startswith("upstream/"):
+                evidence_ref["version_or_ref"] = SOURCE_REVISION
+            if not any(
+                item["path_or_uri"] == evidence_ref["path_or_uri"]
+                for item in occurrence["evidence_refs"]
+            ):
+                occurrence["evidence_refs"].append(evidence_ref)
+        applied.append(qualification["qualification_id"])
+
+    return applied
+
+
 def scope_decisions(
     passages: dict[str, dict[str, Any]],
     canon_sources: dict[str, dict[str, Any]],
@@ -1330,6 +1487,8 @@ def main() -> None:
             decisions.append(correction_decision(receipt_path, receipt, item))
             correction_count += 1
     assert correction_count == 99
+    applied_qualifications = apply_source_claim_qualifications(decisions)
+    assert applied_qualifications == ["OLINF-002-Q1"]
     decisions.extend(scope_decisions(passages, canon_sources))
 
     reader_counts = attach_reader_locators(decisions)
@@ -1435,6 +1594,9 @@ def main() -> None:
             "total_source_units": 722,
             "term_decisions": len(terms),
             "source_correction_decisions": correction_count,
+            "qualified_historical_source_correction_records": len(
+                applied_qualifications
+            ),
             "edition_scope_decisions": 3,
             "all_decisions": len(decisions),
             "occurrences": occurrence_count,
@@ -1451,6 +1613,7 @@ def main() -> None:
             "full_markdown_contains_every_decision": True,
             "priority_markdown_matches_high_priority_set": True,
             "chosen_renderings_have_no_devanagari": True,
+            "historical_false_positive_classifications_qualified": True,
             "unknown_reader_pages_are_explicitly_pending": True,
         },
         "reader_locators": reader_counts,
@@ -1467,6 +1630,10 @@ def main() -> None:
             "GUJARATI_EDITION_SCOPE.md": {
                 "bytes": (ROOT / "docs" / "GUJARATI_EDITION_SCOPE.md").stat().st_size,
                 "sha256": sha256_path(ROOT / "docs" / "GUJARATI_EDITION_SCOPE.md"),
+            },
+            "SOURCE_CLAIM_QUALIFICATIONS.jsonl": {
+                "bytes": QUALIFICATIONS_PATH.stat().st_size,
+                "sha256": sha256_path(QUALIFICATIONS_PATH),
             },
         },
         "release_surfaces": {

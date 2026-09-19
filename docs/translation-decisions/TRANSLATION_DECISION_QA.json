@@ -1,6 +1,6 @@
 {
   "schema": "openlogic-gu-translation-decision-qa/1",
-  "generated_utc": "2026-09-19T18:49:50.009276+00:00",
+  "generated_utc": "2026-09-19T21:35:29.470587+00:00",
   "status": "passed",
   "normative_schema": {
     "path": "docs/translation-decisions/translation-decision.schema.json",
@@ -9,13 +9,14 @@
     "upstream_revision": "811091d54be4989918864732073279a588340e6f"
   },
   "coverage": {
-    "source_units": 163,
+    "source_units": 170,
     "total_source_units": 722,
-    "term_decisions": 151,
-    "source_correction_decisions": 117,
+    "term_decisions": 157,
+    "source_correction_decisions": 122,
+    "qualified_historical_source_correction_records": 1,
     "edition_scope_decisions": 3,
-    "all_decisions": 271,
-    "occurrences": 279
+    "all_decisions": 282,
+    "occurrences": 290
   },
   "checks": {
     "json_schema_valid": true,
@@ -29,18 +30,19 @@
     "full_markdown_contains_every_decision": true,
     "priority_markdown_matches_high_priority_set": true,
     "chosen_renderings_have_no_devanagari": true,
+    "historical_false_positive_classifications_qualified": true,
     "unknown_reader_pages_are_explicitly_pending": true
   },
   "reader_locators": {
-    "available": 278,
+    "available": 289,
     "pending": 0,
     "not_applicable": 1
   },
   "reader_locator_policy": "Available only after a unique deterministic target-to-assembled-body alignment and successful SyncTeX forward query. Printed-page fields remain null unless independently established. Pending pages are never guessed.",
   "input_artifacts": {
     "TERM_DECISIONS.jsonl": {
-      "bytes": 533674,
-      "sha256": "8f3f16ade7511872820eb28d415ae3171057e4acbb5f015f9dbec633817d45e6"
+      "bytes": 568315,
+      "sha256": "b43112f05a0b033bad4b2eddd6b6a5ceef3fa862d0c23c2377b33115c17e4866"
     },
     "CANON_PASSAGES.jsonl": {
       "bytes": 71758,
@@ -49,28 +51,32 @@
     "GUJARATI_EDITION_SCOPE.md": {
       "bytes": 2380,
       "sha256": "70484e2c5ee23ffa9dba0b3d1361bee402da94917f63d9ba0539ea8eb5d20bf6"
+    },
+    "SOURCE_CLAIM_QUALIFICATIONS.jsonl": {
+      "bytes": 2928,
+      "sha256": "dfe1bc92c89d35866ea007c0d61cbc3630a6b020a8404df7625b16b5be8f7a19"
     }
   },
   "release_surfaces": {
     "START_HERE.md": {
       "bytes": 831,
-      "sha256": "b5c4477364ee978abbcaa890d1f51e67aa25b2a13e63c1acc2aaea9c0a894f3e"
+      "sha256": "7103f37cfd90ccb24f54691344998341136d444908ab2f7b5f30eeaa7705a7ee"
     },
     "TRANSLATION_DECISIONS_FULL.md": {
-      "bytes": 406708,
-      "sha256": "83d45a2cdfe1a8a2aeb9a7cc46059f1dc53c4beb75a1d7fb3b39ca2602b09a4d"
+      "bytes": 431000,
+      "sha256": "2c320bbc1b5e29c0310af5d4e8d13357362181f9c32ef06cb356af8d13858aac"
     },
     "PRIORITY_REVIEW.md": {
-      "bytes": 107752,
-      "sha256": "c7a5036084cebbe3ef9a122762f57ede901b7d4316768d656e940954fd9ba983"
+      "bytes": 115121,
+      "sha256": "faab0833ec8d46b50d25dfdbea7b0cc400a5e02bbeee95da003d1d95a4376a75"
     },
     "DECISION_OCCURRENCES.csv": {
-      "bytes": 195813,
-      "sha256": "36e8c21639cf036a82da876c236a966f774b5cdd15a17ee866ae5f99e9fae10f"
+      "bytes": 207425,
+      "sha256": "8fc311ca32eeb13aab089daef6a5be3da050c0d735caa5c1b05aa09c2861289f"
     },
     "DECISIONS.json": {
-      "bytes": 2021443,
-      "sha256": "59c0d0e7cbf78744240e62c11c55d0f9f27674add51cee42ad51e765106ce5a0"
+      "bytes": 2127268,
+      "sha256": "2c7cf9935b965b441c03d14f033abf58a923c1a2cb6ff23bd43700aff2cf523b"
     },
     "translation-decision.schema.json": {
       "bytes": 10787,

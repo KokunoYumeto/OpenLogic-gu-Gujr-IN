@@ -1,6 +1,6 @@
 {
   "schema": "openlogic-gu-batch/2",
-  "updated_at_utc": "2026-09-04T21:46:31.879162+00:00",
+  "updated_at_utc": "2026-09-19T21:41:55.352790+00:00",
   "boundary": "Infinite OLP-0049–0054",
   "units": [
     {
@@ -51,9 +51,9 @@
     {
       "unit_id": "OLP-0054",
       "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
-      "target_sha256": "630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b",
+      "target_sha256": "dc576fc74ba0150f94668edf1a2f02bf94c3f51440645ff8fcc4774c2f10be51",
       "source_bytes": 4143,
-      "target_bytes": 7312,
+      "target_bytes": 7581,
       "aligned_blocks": 18,
       "status": "translated_draft_structural_parity_passed"
     }
@@ -71,9 +71,13 @@
     {
       "finding_id": "OLINF-002",
       "unit_id": "OLP-0054",
-      "handling": "Stated the two cardinality equalities actually established by the proof and added an adjacent keyed note."
+      "handling": "The historical source-error classification is withdrawn by OLINF-002-Q1. The explicit pair A≈B and B≈C remains as an equivalent readability choice.",
+      "qualification_id": "OLINF-002-Q1"
     }
   ],
   "source_corrections_receipt": "SOURCE_CORRECTIONS_006.json",
-  "reader_integration": "Passed cumulative 51-unit HTML QA and actual live browser inspection with both Infinite source-correction notes exposed; see HTML_QA_006.json."
+  "reader_integration": "Passed cumulative 51-unit HTML QA and actual live browser inspection with both Infinite source-correction notes exposed; see HTML_QA_006.json.",
+  "source_claim_qualifications": [
+    "OLINF-002-Q1"
+  ]
 }

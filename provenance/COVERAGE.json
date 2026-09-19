@@ -1,25 +1,19 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 163,
-  "working_scope": "Complete cumulative translation through First-order Semantics, OLP-0004–0166",
+  "translated": 170,
+  "working_scope": "Complete cumulative translation through First-order Models and Theories, OLP-0004–0173",
   "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
   "public_release": {
     "tag": "first-order-semantics-v0.10.0",
     "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/first-order-semantics-v0.10.0",
     "translated": 163,
-    "scope": "Complete cumulative artifact release through First-order Semantics, OLP-0004–0166",
-    "pdf": "OpenLogic-gu-Gujr-IN-First-Order-Semantics.pdf",
-    "tex": "OpenLogic-gu-Gujr-IN-First-Order-Semantics.tex",
-    "source_zip": "OpenLogic-gu-Gujr-IN-First-Order-Semantics-source.zip",
-    "epub": "OpenLogic-gu-Gujr-IN-First-Order-Semantics.epub",
-    "html": "OpenLogic-gu-Gujr-IN-First-Order-Semantics.html",
-    "zenodo_doi": "10.5281/zenodo.22848970"
+    "scope": "Complete cumulative artifact release through First-order Semantics, OLP-0004–0166"
   },
   "public_source_checkpoint": {
     "commit": "46469a10ef960bec266268a6379516b6784cec8e",
     "translated": 163,
-    "scope": "Anonymously verified source checkpoint through First-order Semantics, OLP-0004–0166"
+    "scope": "Previous anonymously verified source checkpoint through First-order Semantics, OLP-0004–0166; checkpoint 017 is represented by the commit containing this file"
   },
   "complete_edition": false,
   "units": [
@@ -396,7 +390,7 @@
       "source_path": "content/sets-functions-relations/infinite/card-sb.tex",
       "source_sha256": "88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9",
       "status": "translated_cumulative_artifact_release_qa_passed",
-      "translation_sha256": "630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b"
+      "translation_sha256": "dc576fc74ba0150f94668edf1a2f02bf94c3f51440645ff8fcc4774c2f10be51"
     },
     {
       "unit_id": "OLP-0055",
@@ -1186,43 +1180,50 @@
       "unit_id": "OLP-0167",
       "source_path": "content/first-order-logic/models-theories/models-theories.tex",
       "source_sha256": "be635957198b3c2fcfee43dff67ce462f827c6cb051af468fd45feb3858ea9a7",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "587bcb96dc07b51ff03970df9b4250d97d9f7844e1aa00d64674804606303f72"
     },
     {
       "unit_id": "OLP-0168",
       "source_path": "content/first-order-logic/models-theories/introduction.tex",
       "source_sha256": "af9e91c4a4e19debfa137b696a280723e3de5779d7b65cc32ff0d0bcbac377a1",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "b795ff6ca5d3357bc52790ff1f7250688e60224565c4742ff7982c692012c261"
     },
     {
       "unit_id": "OLP-0169",
       "source_path": "content/first-order-logic/models-theories/expressing-props-of-structures.tex",
       "source_sha256": "feb12b7951795d4ad220ee97941e52fef3469bcfe363ec6a3660992225154f9e",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "0fb059fc8e304e337169124bbbdfb6a4ba93701682e2bed3ec130183bcc882b4"
     },
     {
       "unit_id": "OLP-0170",
       "source_path": "content/first-order-logic/models-theories/theories.tex",
       "source_sha256": "5ce32448dbe95d0b37477a6c343ae3a976bb299c955f50ae206b0f150f09ccd5",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "e8bf84fc01f801463e642131fe67d544635c8ce03287128731a06e6cd984e08b"
     },
     {
       "unit_id": "OLP-0171",
       "source_path": "content/first-order-logic/models-theories/expressing-relations.tex",
       "source_sha256": "37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "a2c20ebe9ab017c16a8c5ae02c69855c72230f40a279a3cc67ad312f620e85a9"
     },
     {
       "unit_id": "OLP-0172",
       "source_path": "content/first-order-logic/models-theories/set-theory.tex",
       "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48"
     },
     {
       "unit_id": "OLP-0173",
       "source_path": "content/first-order-logic/models-theories/size-of-structures.tex",
       "source_sha256": "8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "08c61b02387ae1ee1823d1bec71a8d901995aff1d144babcbb10414e48600e8a"
     },
     {
       "unit_id": "OLP-0174",

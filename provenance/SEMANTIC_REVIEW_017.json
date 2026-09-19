@@ -1,0 +1,1871 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewed_at_utc": "2026-09-19T19:57:26.245925+00:00",
+  "batch": "OLP-0167–0173 First-order Models and Theories under the complete classical first-order profile",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with independently worded reverse paraphrases for 40 representative substantive blocks. The review focuses on axiomatic theories and closure, model classes, definability, strict orders, groups, arithmetic, pure sets, mereology, expressed relations, first-order set constructions, cardinality conditions and all five adjacent disclosed source repairs.",
+  "all_drafted_blocks_directly_compared_during_translation": 54,
+  "reverse_paraphrase_samples": 40,
+  "blocks": [
+    {
+      "segment_id": "OLP-0167-B001",
+      "unit_id": "OLP-0167",
+      "source_path": "upstream/content/first-order-logic/models-theories/models-theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/models-theories.tex",
+      "source_range_utf8": [
+        0,
+        52
+      ],
+      "target_range_utf8": [
+        0,
+        68
+      ],
+      "source_sha256": "489b769fbe956ea040e527f8ab2823ca2ccce5da7bac109148e9918abb62fcdf",
+      "target_sha256": "954c957c3bc8dfbab1c2f1c5afbbc52d4031ade91d7b564f802d70e3fe39e740",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The chapter driver preserves the frozen section order and identifies the chapter as theories and their models.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0167-B004",
+      "unit_id": "OLP-0167",
+      "source_path": "upstream/content/first-order-logic/models-theories/models-theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/models-theories.tex",
+      "source_range_utf8": [
+        135,
+        182
+      ],
+      "target_range_utf8": [
+        151,
+        248
+      ],
+      "source_sha256": "b12cd9c264c5d3d48fc65a2f2594e544dd14ebcaff1e5e625684be657cbc03b4",
+      "target_sha256": "ca128faf048676a518b9c81c31884caa053ee98cf93b642f558fdb82a8f5d09c",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The chapter driver preserves the frozen section order and identifies the chapter as theories and their models.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B001",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        0,
+        76
+      ],
+      "target_range_utf8": [
+        0,
+        100
+      ],
+      "source_sha256": "4ba1163b8e33d4b51c1f335307db36927d14bf910d0d7d2edd9d7d9b15090f32",
+      "target_sha256": "2095804f71170376cf29f13b02444c48c1e542babf7d74803fc09123d5fbb1ba",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B004",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        159,
+        208
+      ],
+      "target_range_utf8": [
+        183,
+        235
+      ],
+      "source_sha256": "d9be04c4be698e71cacdcad383d55b1ee0b56eeb67226d424f47c18fc4086fc4",
+      "target_sha256": "d4ce8a78383aa265c29358e2b19797551bf732544ffd266f3077c13a0be53317",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B005",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        210,
+        685
+      ],
+      "target_range_utf8": [
+        237,
+        1343
+      ],
+      "source_sha256": "6a8f8490c3aace7c8b2afab571d0e050370fb151dffcf51d4cbae2215d1e99d4",
+      "target_sha256": "109fa1dbc70b6ec320e168c684597eeec619dbaeb29a2451a4d9c40083909abd",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B006",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        687,
+        993
+      ],
+      "target_range_utf8": [
+        1345,
+        2147
+      ],
+      "source_sha256": "875d998ce524a3056397256ea5f96125a80636c3a7b487ae3a098e2a7d22b52f",
+      "target_sha256": "f3c1776983b022b9df92719f7860e65e2a440886c6a0566ba777f12ee64870e4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B007",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        995,
+        1206
+      ],
+      "target_range_utf8": [
+        2149,
+        2486
+      ],
+      "source_sha256": "771ec32b6f321272cd8e81db2d774cfd9411ce5e8942398486b293a96bc7a4df",
+      "target_sha256": "3e39e57b10a07b9c529dfab43d9cf6c30167f6c04f5ad5eed509b0d58b6d86ca",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B008",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        1208,
+        1332
+      ],
+      "target_range_utf8": [
+        2488,
+        2733
+      ],
+      "source_sha256": "9bd0f449ddc3925b6b267054d9889ba42a6828745756e9b78ed996808d923dd8",
+      "target_sha256": "0ee672961e5bbcca1000ebcf4f73246921be2f3a123e2c549ba6462b80d276d9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B009",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        1334,
+        1997
+      ],
+      "target_range_utf8": [
+        2735,
+        4311
+      ],
+      "source_sha256": "a5db72de24867918f558f466d05d572f103e850f878e8f89ca31c63a04e031af",
+      "target_sha256": "b8f3352a8fd70488c8fb2105bb122c8f85da5ec9aac7c8aa4b257e72bdbd160d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B010",
+      "unit_id": "OLP-0168",
+      "source_path": "upstream/content/first-order-logic/models-theories/introduction.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/introduction.tex",
+      "source_range_utf8": [
+        1999,
+        5096
+      ],
+      "target_range_utf8": [
+        4313,
+        11005
+      ],
+      "source_sha256": "624856b0037c7811913f1a455fa32bcf3944256a0f13fa9ce7d9a3756ef8d1d5",
+      "target_sha256": "edb24df39e69785fe0b55261ecd2c947a83f0cab273babdac44edf44d448e2ee",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B001",
+      "unit_id": "OLP-0169",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "source_range_utf8": [
+        0,
+        94
+      ],
+      "target_range_utf8": [
+        0,
+        118
+      ],
+      "source_sha256": "5028166e52de3f5bd9d9cb4d659147dbc030826261a54aa30e3cca1725620e8c",
+      "target_sha256": "530bd1e384967c39d3963e38833721c2f42234c5638ba88c940c5597c84003f0",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B005",
+      "unit_id": "OLP-0169",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "source_range_utf8": [
+        203,
+        265
+      ],
+      "target_range_utf8": [
+        227,
+        327
+      ],
+      "source_sha256": "a961905158a72cc2eae5dd339a165d342eae0c37a5edb0550cae1448fc10f0d5",
+      "target_sha256": "fe3d3eab0b71ecdf7f75a43dc123b15ce6770fa235dea11cdffbe22e81977ed1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B006",
+      "unit_id": "OLP-0169",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "source_range_utf8": [
+        267,
+        1769
+      ],
+      "target_range_utf8": [
+        329,
+        3345
+      ],
+      "source_sha256": "150d29b86c0af31fbb5e0f5a07fd3b40e86747695435c849b8389939801cbaee",
+      "target_sha256": "c82b8db506941277296a051b78067f06bd9322626ce1c93167f48f773dcd91d8",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B007",
+      "unit_id": "OLP-0169",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "source_range_utf8": [
+        1771,
+        1986
+      ],
+      "target_range_utf8": [
+        3347,
+        3668
+      ],
+      "source_sha256": "f48155539cbf7277ade8f718fbe064e9efe6befa73490ec1a2ff8f56775f5a04",
+      "target_sha256": "3e2e1332c13934ae56e0b5ce7eb20c3cf9dd1fccbf7137f83cbd125deca91e11",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B008",
+      "unit_id": "OLP-0169",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "source_range_utf8": [
+        1988,
+        2885
+      ],
+      "target_range_utf8": [
+        3670,
+        5185
+      ],
+      "source_sha256": "231d8d29ec163cfc1f61f4ab239d88c303c923ac679dfd51fcfe3cc78eb0e9ef",
+      "target_sha256": "4e07e4710687ee1a1c2ffeb29d803c3544b565c9b8131a1379354e7537c54e2f",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B001",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        0,
+        72
+      ],
+      "target_range_utf8": [
+        0,
+        96
+      ],
+      "source_sha256": "546a549fe28a327ef668614710c52e7a90ed0b7b963a4211c6c3bc9299d63d55",
+      "target_sha256": "dfdbf4e460fe2f8ce5d3eabed45ba9bf21afd4f49bfc6f3b29bd55da55b2ffd9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B005",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        181,
+        225
+      ],
+      "target_range_utf8": [
+        205,
+        304
+      ],
+      "source_sha256": "92484b8437f5081b60f2c5ea379e903905430eeb9dffacc797eb3ce8462b0091",
+      "target_sha256": "18f02dbe0b6b8ee3fac19a183856a34549615a207702b2655d7ae1eb2157cf3c",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B006",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        227,
+        828
+      ],
+      "target_range_utf8": [
+        306,
+        1266
+      ],
+      "source_sha256": "13d8dc1079cbfd00c470893718d511f112d3cf7530335b4ebdc713286b7cda2f",
+      "target_sha256": "95f67e66eec593667bc6ea33259904a75ccc21c7db5aac1d65c049ca93e4f5f1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B007",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        830,
+        1188
+      ],
+      "target_range_utf8": [
+        1268,
+        1785
+      ],
+      "source_sha256": "d63cfa1b602380db239c4e74cf7d56eccf8740c78cb8b33301b36e0552a6872a",
+      "target_sha256": "8730b0f96286f82fe32809f4d5b44799bc98445c3de7e5c7dbaa88e61c0e0e07",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B008",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        1190,
+        2070
+      ],
+      "target_range_utf8": [
+        1787,
+        3164
+      ],
+      "source_sha256": "54a4a2c2e1512600f795fc379fe9392966518bf9873c6319fe226a6f5ad18ec0",
+      "target_sha256": "39bb4e03ae29495cc8a5058729826d43d192d37e2fcd38cf5b33f8fb50c84184",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B009",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        2072,
+        2136
+      ],
+      "target_range_utf8": [
+        3166,
+        3299
+      ],
+      "source_sha256": "6470cf816667fcfcff24464798fdc6e132e4515ee79b02eae2a2f8c3a9060e9d",
+      "target_sha256": "5b938753201c1e18913e1d27ed2d53a259cc9d91920b2ce2cc0018fb3f8b9eae",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B010",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        2138,
+        2572
+      ],
+      "target_range_utf8": [
+        3301,
+        4285
+      ],
+      "source_sha256": "f3da3e7f0a7adde74f88ee194221e4d674f89e2e080f2019a30ad2692099d1f5",
+      "target_sha256": "6753fa3c801a41fed595fa550f6309e4551535a977fac2573302e0b9a1e9c808",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B011",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        2574,
+        3420
+      ],
+      "target_range_utf8": [
+        4287,
+        6332
+      ],
+      "source_sha256": "39727f0fb7f295262615186654dfa06840d0f7f81185a7ddc0dd52a8ffb6d544",
+      "target_sha256": "8e012aeafe95190bacd8887fa61985bc0b7e24cf8e46c1d1e1c8330f3332e7b1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B012",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        3422,
+        3954
+      ],
+      "target_range_utf8": [
+        6334,
+        7327
+      ],
+      "source_sha256": "573364b610501de7e069c09f921fe85f491e8f50de6ac2249f2cd61b71cfec15",
+      "target_sha256": "63d68d1b878e86faed2af697bc174ead660f08af4ae374b40a46ac558be06ef4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B013",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        3956,
+        4196
+      ],
+      "target_range_utf8": [
+        7329,
+        7808
+      ],
+      "source_sha256": "c9fd8d1d606145147d4f5980ef22353ebf5a324a51f2b0526b8affcf6969a5be",
+      "target_sha256": "6232bc392e070a22de7ce31f3515856f62e819323ce400a819f78653bad5dac4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B014",
+      "unit_id": "OLP-0170",
+      "source_path": "upstream/content/first-order-logic/models-theories/theories.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "source_range_utf8": [
+        4198,
+        6093
+      ],
+      "target_range_utf8": [
+        7810,
+        11400
+      ],
+      "source_sha256": "65e60e8914bb3872aee67087adf3f44cc47197dbb0a272d01824212b27cfd8d1",
+      "target_sha256": "b6ee955c4b325fb23ab6a02e6975a11c7baeccda63e97ae1a40ba47126186493",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B001",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        0,
+        84
+      ],
+      "target_range_utf8": [
+        0,
+        108
+      ],
+      "source_sha256": "907864c0bed74f8f5b5432561cc5a99374aebdf2bd545db4dc4a772e6d4ebc2b",
+      "target_sha256": "8f6a2605b18f7a96bc69a80ee5f2dc2c5885901a6d08aaa2aec56368c54aaf62",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B005",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        193,
+        276
+      ],
+      "target_range_utf8": [
+        217,
+        333
+      ],
+      "source_sha256": "0b4d046a75e668151400abb6b0c7391e97a8f5283b962728e4d7082491feb5bd",
+      "target_sha256": "1e830726c2726d1d71780ffb71764d8982b7c6918a6d6bd4f6a33c43348bed15",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B006",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        278,
+        1380
+      ],
+      "target_range_utf8": [
+        335,
+        2246
+      ],
+      "source_sha256": "deb9142455fdd9d92723df6125eea21f317d90350fcf4f21dd3a9e921d49b9aa",
+      "target_sha256": "cafb99f7820d9ca9e303513a10980e3d9e32e21fd133ab8db77602ab1bb9dec9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B007",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        1382,
+        1716
+      ],
+      "target_range_utf8": [
+        2248,
+        2977
+      ],
+      "source_sha256": "a8e457f7c259d874a7854ca253ee3afb70482463d40b366d43d24e045dd2aa0f",
+      "target_sha256": "fbb0b7f3b904aebc63dd65b53f3634fdb3f0789f212d2537c1312432b3d5a562",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B008",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        1718,
+        2176
+      ],
+      "target_range_utf8": [
+        2979,
+        3749
+      ],
+      "source_sha256": "b9b80cf7ac38cfadb1a5bbeaece151e9c985290d353f1394d8106cd2baccafa6",
+      "target_sha256": "b7da512d8d7347ecc060203f10af3d4b1917e9b264d750970675c1e17d67fd35",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B009",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        2178,
+        2920
+      ],
+      "target_range_utf8": [
+        3751,
+        4966
+      ],
+      "source_sha256": "ba90f71f70949fd46012f47fd1acd4dfecae9f25f474ef1b91a5c8f0707af74b",
+      "target_sha256": "7a042b4760551685f98d38d11030233173761ed1cef43f661a800675bde85d34",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B010",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        2922,
+        3479
+      ],
+      "target_range_utf8": [
+        5569,
+        6920
+      ],
+      "source_sha256": "b774385f1e76cf4ac0537bff3f6c40cfeeea13799838033f0ee70285773f65c7",
+      "target_sha256": "9f10f9aacca7c6f625ce73529e3ce8bb5a1eafe59f491e98da2249cd6771ae1d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B011",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        3481,
+        3797
+      ],
+      "target_range_utf8": [
+        6922,
+        7507
+      ],
+      "source_sha256": "d81d0827fb1710db9ff548a87ec13fe0d147f0b2742aaf198d9b508469172901",
+      "target_sha256": "2c508e2cfb0fd59c60c74e4567faeb35bc6de6c25ab3e9708f3848f93d49d0d1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B012",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        3799,
+        4176
+      ],
+      "target_range_utf8": [
+        7509,
+        8104
+      ],
+      "source_sha256": "41ab85908e1b77c4368519395884175e3dc8039e6d65d79111a90322f5ef29f3",
+      "target_sha256": "e74f34944ecf0fefeb611bd294a5b7131c40847271cf83e4d31801bb8d1e27ba",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B013",
+      "unit_id": "OLP-0171",
+      "source_path": "upstream/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_range_utf8": [
+        4178,
+        4980
+      ],
+      "target_range_utf8": [
+        8106,
+        9396
+      ],
+      "source_sha256": "3b98af8d2750135179545dbade5d9ec426b14667bdb5f4dc168d69cc0d194ffc",
+      "target_sha256": "231d5202b22772063bc7c1f899c838c6329e70190525c357f48daee56c1c9845",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P016",
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B001",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        0,
+        74
+      ],
+      "target_range_utf8": [
+        0,
+        98
+      ],
+      "source_sha256": "21400121e8a7074cbbe3850e5559d85cfa6283a688d3908aa3d7fb8250746f48",
+      "target_sha256": "cb7ac4e5eba4317c8bfbca2326249e232bea42a54a12e7dcc775064cce1787f1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B005",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        183,
+        213
+      ],
+      "target_range_utf8": [
+        207,
+        259
+      ],
+      "source_sha256": "864a19145f1b0caef58843a51e196cb0ca6636d58226afbd41c0f956ab5e7795",
+      "target_sha256": "cf69cb6df8b2bec0826cab4c01299f7f7aa7b8afe8493992db122c3bffe42b96",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B006",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        215,
+        1291
+      ],
+      "target_range_utf8": [
+        261,
+        2748
+      ],
+      "source_sha256": "fa998b6b212f034421a2009271db5d6ec0d9e81c4288642e817c4dcd539fe669",
+      "target_sha256": "fad8eee7ee96f83513fb0e89c03c6f02c353c259b352c4721274628502c214db",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B007",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        1293,
+        2545
+      ],
+      "target_range_utf8": [
+        2750,
+        5259
+      ],
+      "source_sha256": "3f83e20b6bf6c8711f26bb17a34dca12eafa5d2795ed8fdaffe98f177c909c1e",
+      "target_sha256": "8ceebd339cac6b78120e885ef3946cb3602f3166bfbc7833d3068f4ab110eb21",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B008",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        2547,
+        3283
+      ],
+      "target_range_utf8": [
+        5261,
+        6570
+      ],
+      "source_sha256": "5766ada3acc18d32600d38a930116e004ab0bc9a671ba58a779f3dcbbb38fc60",
+      "target_sha256": "6cf57aafac805a32cedc3f3f4800d758e4ef72b9bcf6bbc0566ccf91058e3f3f",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B009",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        3285,
+        4279
+      ],
+      "target_range_utf8": [
+        6572,
+        8288
+      ],
+      "source_sha256": "bfd5f24c513c80a1e87f8af308645a3597d2f932b24ebcdc711bd3cfbbfe510d",
+      "target_sha256": "c01d340dd5075b3a246b167c17094b1645eadea3c46ee09a366674505b5d28c0",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B010",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        4281,
+        5246
+      ],
+      "target_range_utf8": [
+        8290,
+        9870
+      ],
+      "source_sha256": "a878accfe22421453c1bb1f5d2612e9fef254cff589b48bae5831bc523d8c6ff",
+      "target_sha256": "14d2ff8974150a8a0d6cf013909f325dabe00f7a845a6b0f23e33939021748a0",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B011",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        5248,
+        6279
+      ],
+      "target_range_utf8": [
+        9872,
+        12290
+      ],
+      "source_sha256": "9669530295516f186439b75b527615b188b7351c559656c35861a02dfb4bd98b",
+      "target_sha256": "90f7efc159c2f4151e69e298c6294e5546b0d59a713414f157e49acf07ebfbef",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B012",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        6281,
+        7023
+      ],
+      "target_range_utf8": [
+        12292,
+        13952
+      ],
+      "source_sha256": "221af1818da7a548822c8f7b9890331a3bc62de0d736feaf20426283f94877a3",
+      "target_sha256": "18539fe8f973146c3d98aa00ac04e819173221ff45c40617b163e053031c8ef5",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B013",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        7025,
+        8015
+      ],
+      "target_range_utf8": [
+        13954,
+        15709
+      ],
+      "source_sha256": "87b0abf547c6843d9f2d173992584ef35dacdecee5ffebe1de1f9dc59f75bff2",
+      "target_sha256": "b4be31b601b103f7de2c66705d6ba36fecd658015b00ebe96bd68fbf63744558",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B014",
+      "unit_id": "OLP-0172",
+      "source_path": "upstream/content/first-order-logic/models-theories/set-theory.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "source_range_utf8": [
+        8017,
+        8308
+      ],
+      "target_range_utf8": [
+        16214,
+        16651
+      ],
+      "source_sha256": "7261ce3c354c07352c2e5d12a59e1fffb6ac493e3336fbebb510a388acfb8fb7",
+      "target_sha256": "f3ae9e656e6bef71bf3afdd6573d73ce3724896c056fad22a4db573db8c50dfb",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P002",
+        "GU-P013",
+        "GU-P016",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B001",
+      "unit_id": "OLP-0173",
+      "source_path": "upstream/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_range_utf8": [
+        0,
+        82
+      ],
+      "target_range_utf8": [
+        0,
+        106
+      ],
+      "source_sha256": "6153e985ed846d23c0322c8a81564681a958c2a1625e05c6477d3dfc2156ad79",
+      "target_sha256": "e311327eb2d8db1d249297ba46bc5964ebdf452f591625b5ae80657f8f994f4d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B005",
+      "unit_id": "OLP-0173",
+      "source_path": "upstream/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_range_utf8": [
+        191,
+        251
+      ],
+      "target_range_utf8": [
+        215,
+        303
+      ],
+      "source_sha256": "3cac3381a676826ca99ecf69ac30394e676d84335bec87b819039c36add7d881",
+      "target_sha256": "268b41df18be03c27f27fc9f43ac27f6dad961d44800311757280978bf18db00",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B006",
+      "unit_id": "OLP-0173",
+      "source_path": "upstream/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_range_utf8": [
+        253,
+        579
+      ],
+      "target_range_utf8": [
+        305,
+        979
+      ],
+      "source_sha256": "e17196087862ce71522229d167621b97b65fda95d272066212cfa307d8f692c0",
+      "target_sha256": "7a323127d585d1332f8ff56cae67f8754970f02a0fa8d814af3d5c9b82395882",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B007",
+      "unit_id": "OLP-0173",
+      "source_path": "upstream/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_range_utf8": [
+        581,
+        1158
+      ],
+      "target_range_utf8": [
+        981,
+        1800
+      ],
+      "source_sha256": "1459b46030da7e30479ca74abc071cd5405a360d8ce5a1dc432841ca87269e11",
+      "target_sha256": "72e68a6fe0164ad78ef5605e9ad58f1debc626c1a3db07b5664f90e9e9dd1a6b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B009",
+      "unit_id": "OLP-0173",
+      "source_path": "upstream/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_range_utf8": [
+        1172,
+        1726
+      ],
+      "target_range_utf8": [
+        1814,
+        2482
+      ],
+      "source_sha256": "e345785f26f918dc5ae37fe6f4c6525d57b9829c0703f62beede4d28c197e12f",
+      "target_sha256": "93b94dc029cf55ea97dd8965dd2c6281e93df3b61b493b62cdec083a1628efab",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B010",
+      "unit_id": "OLP-0173",
+      "source_path": "upstream/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_range_utf8": [
+        1728,
+        1854
+      ],
+      "target_range_utf8": [
+        2484,
+        2747
+      ],
+      "source_sha256": "8757feb7ea2c56b5047392e75f932bc5efb3eb980b594f16cabf0c0ac6002101",
+      "target_sha256": "9a52c2b57e442ddba88471490ecea2ca757372ebb2e125d78d00ce32d9246472",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B011",
+      "unit_id": "OLP-0173",
+      "source_path": "upstream/content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_path": "gu/content/first-order-logic/models-theories/size-of-structures.tex",
+      "source_range_utf8": [
+        1856,
+        2359
+      ],
+      "target_range_utf8": [
+        2749,
+        3781
+      ],
+      "source_sha256": "fc387998e446f77bde0737a960a98e92560a0ab96b37fdea95caaa1203b5b74f",
+      "target_sha256": "90c011d54a7dc108831b4a43cb00e9f9dce9a7f7890daf2f4a64b47ca373a6d7",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ],
+  "samples": [
+    {
+      "segment_id": "OLP-0168-B005",
+      "unit_id": "OLP-0168",
+      "source_sha256": "6a8f8490c3aace7c8b2afab571d0e050370fb151dffcf51d4cbae2215d1e99d4",
+      "target_sha256": "109fa1dbc70b6ec320e168c684597eeec619dbaeb29a2451a4d9c40083909abd",
+      "reverse_paraphrase": "The axiomatic method develops a field from undefined basic notions and accepted basic truths, requiring the field's subject, concepts, definitions and governing laws to be made explicit.",
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B006",
+      "unit_id": "OLP-0168",
+      "source_sha256": "875d998ce524a3056397256ea5f96125a80636c3a7b487ae3a098e2a7d22b52f",
+      "target_sha256": "f3c1776983b022b9df92719f7860e65e2a440886c6a0566ba777f12ee64870e4",
+      "reverse_paraphrase": "Formal logic supplies tools to formulate axiomatic theories, prove theorems from axioms and study all systems satisfying those axioms.",
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B007",
+      "unit_id": "OLP-0168",
+      "source_sha256": "771ec32b6f321272cd8e81db2d774cfd9411ce5e8942398486b293a96bc7a4df",
+      "target_sha256": "3e39e57b10a07b9c529dfab43d9cf6c30167f6c04f5ad5eed509b0d58b6d86ca",
+      "reverse_paraphrase": "A sentence set is closed when it contains every sentence it entails; the closure of Gamma is the set of all its semantic consequences.",
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B008",
+      "unit_id": "OLP-0168",
+      "source_sha256": "9bd0f449ddc3925b6b267054d9889ba42a6828745756e9b78ed996808d923dd8",
+      "target_sha256": "0ee672961e5bbcca1000ebcf4f73246921be2f3a123e2c549ba6462b80d276d9",
+      "reverse_paraphrase": "Gamma is axiomatized by Delta exactly when Gamma is Delta's closure.",
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B009",
+      "unit_id": "OLP-0168",
+      "source_sha256": "a5db72de24867918f558f466d05d572f103e850f878e8f89ca31c63a04e031af",
+      "target_sha256": "b8f3352a8fd70488c8fb2105bb122c8f85da5ec9aac7c8aa4b257e72bdbd160d",
+      "reverse_paraphrase": "An axiomatic theory can be viewed as all language sentences entailed by its axioms, from simple order theories to complex physical theories.",
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0168-B010",
+      "unit_id": "OLP-0168",
+      "source_sha256": "624856b0037c7811913f1a455fa32bcf3944256a0f13fa9ce7d9a3756ef8d1d5",
+      "target_sha256": "edb24df39e69785fe0b55261ecd2c947a83f0cab273babdac44edf44d448e2ee",
+      "reverse_paraphrase": "Model classes test whether axioms capture intended structures; models also test consistency and independence, while definability decides which notions need primitive symbols.",
+      "assessment": "The introduction preserves the role of the axiomatic method, the definitions of closure and axiomatization, and the model-theoretic questions of adequacy, consistency, independence and definability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B006",
+      "unit_id": "OLP-0169",
+      "source_sha256": "150d29b86c0af31fbb5e0f5a07fd3b40e86747695435c849b8389939801cbaee",
+      "target_sha256": "c82b8db506941277296a051b78067f06bd9322626ce1c93167f48f773dcd91d8",
+      "reverse_paraphrase": "Some structural conditions can be expressed by one sentence or a set of sentences, while others, such as having exactly the natural numbers as universe, cannot be so expressed.",
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B007",
+      "unit_id": "OLP-0169",
+      "source_sha256": "f48155539cbf7277ade8f718fbe064e9efe6befa73490ec1a2ff8f56775f5a04",
+      "target_sha256": "3e2e1332c13934ae56e0b5ce7eb20c3cf9dd1fccbf7137f83cbd125deca91e11",
+      "reverse_paraphrase": "A structure is a model of Gamma when it satisfies every sentence in Gamma.",
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0169-B008",
+      "unit_id": "OLP-0169",
+      "source_sha256": "231d8d29ec163cfc1f61f4ab239d88c303c923ac679dfd51fcfe3cc78eb0e9ef",
+      "target_sha256": "4e07e4710687ee1a1c2ffeb29d803c3544b565c9b8131a1379354e7537c54e2f",
+      "reverse_paraphrase": "The three displayed sentences force reflexivity, antisymmetry and transitivity, so their models are exactly partial orders.",
+      "assessment": "The section preserves the distinction between intended structures and properties expressible by sentences, the definition of a model of a sentence set, and the partial-order example.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B006",
+      "unit_id": "OLP-0170",
+      "source_sha256": "13d8dc1079cbfd00c470893718d511f112d3cf7530335b4ebdc713286b7cda2f",
+      "target_sha256": "95f67e66eec593667bc6ea33259904a75ccc21c7db5aac1d65c049ca93e4f5f1",
+      "reverse_paraphrase": "Irreflexivity, comparability and transitivity axiomatize strict linear orders and capture exactly the intended structures.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B007",
+      "unit_id": "OLP-0170",
+      "source_sha256": "d63cfa1b602380db239c4e74cf7d56eccf8740c78cb8b33301b36e0552a6872a",
+      "target_sha256": "8730b0f96286f82fe32809f4d5b44799bc98445c3de7e5c7dbaa88e61c0e0e07",
+      "reverse_paraphrase": "The displayed identity, associativity and inverse sentences axiomatize groups.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B008",
+      "unit_id": "OLP-0170",
+      "source_sha256": "54a4a2c2e1512600f795fc379fe9392966518bf9873c6319fe226a6f5ad18ec0",
+      "target_sha256": "39bb4e03ae29495cc8a5058729826d43d192d37e2fcd38cf5b33f8fb50c84184",
+      "reverse_paraphrase": "The Peano axioms include successor, zero, addition, multiplication, order and every instance of the induction schema.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B009",
+      "unit_id": "OLP-0170",
+      "source_sha256": "6470cf816667fcfcff24464798fdc6e132e4515ee79b02eae2a2f8c3a9060e9d",
+      "target_sha256": "5b938753201c1e18913e1d27ed2d53a259cc9d91920b2ce2cc0018fb3f8b9eae",
+      "reverse_paraphrase": "The final Peano axiom explicitly defines the strict-order symbol.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B010",
+      "unit_id": "OLP-0170",
+      "source_sha256": "f3da3e7f0a7adde74f88ee194221e4d674f89e2e080f2019a30ad2692099d1f5",
+      "target_sha256": "6753fa3c801a41fed595fa550f6309e4551535a977fac2573302e0b9a1e9c808",
+      "reverse_paraphrase": "Pure sets are built only from the empty set and other pure sets, with no urelements among their members.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B011",
+      "unit_id": "OLP-0170",
+      "source_sha256": "39727f0fb7f295262615186654dfa06840d0f7f81185a7ddc0dd52a8ffb6d544",
+      "target_sha256": "8e012aeafe95190bacd8887fa61985bc0b7e24cf8e46c1d1e1c8330f3332e7b1",
+      "reverse_paraphrase": "The proposed pure-set theory states empty-set existence, extensionality, pairing, union and every instance of unrestricted comprehension; OLMAT-001 restores extensionality's quantified scope.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B012",
+      "unit_id": "OLP-0170",
+      "source_sha256": "573364b610501de7e069c09f921fe85f491e8f50de6ac2249f2cd61b71cfec15",
+      "target_sha256": "63d68d1b878e86faed2af697bc174ead660f08af4ae374b40a46ac558be06ef4",
+      "reverse_paraphrase": "Naive comprehension asserts a set for every condition, but choosing non-self-membership yields an unsatisfiable sentence.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B013",
+      "unit_id": "OLP-0170",
+      "source_sha256": "c9fd8d1d606145147d4f5980ef22353ebf5a324a51f2b0526b8affcf6969a5be",
+      "target_sha256": "6232bc392e070a22de7ce31f3515856f62e819323ce400a819f78653bad5dac4",
+      "reverse_paraphrase": "Mereology treats parthood as fundamental and allows competing axiom systems for different interpretations of that relation.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0170-B014",
+      "unit_id": "OLP-0170",
+      "source_sha256": "65e60e8914bb3872aee67087adf3f44cc47197dbb0a272d01824212b27cfd8d1",
+      "target_sha256": "b6ee955c4b325fb23ab6a02e6975a11c7baeccda63e97ae1a40ba47126186493",
+      "reverse_paraphrase": "Parthood is axiomatized as a partial order and supplemented by the existence of mereological sums; stronger principles require defined relations such as proper part and fusion.",
+      "assessment": "Every example retains its intended theory and axiom content: strict linear orders, groups, Peano arithmetic, pure sets with naive comprehension, and mereological parthood and sums. OLMAT-001 repairs only the malformed quantifier argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B006",
+      "unit_id": "OLP-0171",
+      "source_sha256": "deb9142455fdd9d92723df6125eea21f317d90350fcf4f21dd3a9e921d49b9aa",
+      "target_sha256": "cafb99f7820d9ca9e303513a10980e3d9e32e21fd133ab8db77602ab1bb9dec9",
+      "reverse_paraphrase": "A primitive predicate directly expresses its interpreted relation when variables are assigned the corresponding domain objects; object names cannot replace assignments when those objects are not language symbols.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B007",
+      "unit_id": "OLP-0171",
+      "source_sha256": "a8e457f7c259d874a7854ca253ee3afb70482463d40b366d43d24e045dd2aa0f",
+      "target_sha256": "fbb0b7f3b904aebc63dd65b53f3634fdb3f0789f212d2537c1312432b3d5a562",
+      "reverse_paraphrase": "Logical connectives and quantifiers let complex formulas define relations that are not primitive in the structure.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B008",
+      "unit_id": "OLP-0171",
+      "source_sha256": "b9b80cf7ac38cfadb1a5bbeaece151e9c985290d353f1394d8106cd2baccafa6",
+      "target_sha256": "b7da512d8d7347ecc060203f10af3d4b1917e9b264d750970675c1e17d67fd35",
+      "reverse_paraphrase": "A formula with free variables v1 through vn expresses R exactly when its satisfaction under every matching assignment agrees with membership in R.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B009",
+      "unit_id": "OLP-0171",
+      "source_sha256": "ba90f71f70949fd46012f47fd1acd4dfecae9f25f474ef1b91a5c8f0707af74b",
+      "target_sha256": "7a042b4760551685f98d38d11030233173761ed1cef43f661a800675bde85d34",
+      "reverse_paraphrase": "Arithmetic formulas define non-strict order, successor, predecessor and strict order, showing that the primitive strict-order symbol is dispensable.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B010",
+      "unit_id": "OLP-0171",
+      "source_sha256": "b774385f1e76cf4ac0537bff3f6c40cfeeea13799838033f0ee70285773f65c7",
+      "target_sha256": "9f10f9aacca7c6f625ce73529e3ce8bb5a1eafe59f491e98da2249cd6771ae1d",
+      "reverse_paraphrase": "In a theory, nonprimitive relations are definable when formulas express them systematically from the interpretations of primitive predicates.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B011",
+      "unit_id": "OLP-0171",
+      "source_sha256": "d81d0827fb1710db9ff548a87ec13fe0d147f0b2742aaf198d9b508469172901",
+      "target_sha256": "2c508e2cfb0fd59c60c74e4567faeb35bc6de6c25ab3e9708f3848f93d49d0d1",
+      "reverse_paraphrase": "The exercise asks for arithmetic formulas defining betweenness, divisibility and primality.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B012",
+      "unit_id": "OLP-0171",
+      "source_sha256": "41ab85908e1b77c4368519395884175e3dc8039e6d65d79111a90322f5ef29f3",
+      "target_sha256": "e74f34944ecf0fefeb611bd294a5b7131c40847271cf83e4d31801bb8d1e27ba",
+      "reverse_paraphrase": "Given a formula defining R, the exercise asks for formulas defining its inverse and relative product and asks whether its transitive closure is definable.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0171-B013",
+      "unit_id": "OLP-0171",
+      "source_sha256": "3b98af8d2750135179545dbade5d9ec426b14667bdb5f4dc168d69cc0d194ffc",
+      "target_sha256": "231d5202b22772063bc7c1f899c838c6329e70190525c357f48daee56c1c9845",
+      "reverse_paraphrase": "In the natural-number order structure, the exercise asks for definitions of each singleton, every finite subset and every cofinite subset.",
+      "assessment": "The definition of an expressed relation preserves assignment-relative satisfaction, the arithmetic examples and all exercise targets; OLMAT-002 restores only the missing object-language marker.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B006",
+      "unit_id": "OLP-0172",
+      "source_sha256": "fa998b6b212f034421a2009271db5d6ec0d9e81c4288642e817c4dcd539fe669",
+      "target_sha256": "fad8eee7ee96f83513fb0e89c03c6f02c353c259b352c4721274628502c214db",
+      "reverse_paraphrase": "Developing mathematics in set theory requires axioms for membership and ways to express particular sets, set operations, relations and functions without primitive constants or function symbols.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B007",
+      "unit_id": "OLP-0172",
+      "source_sha256": "3f83e20b6bf6c8711f26bb17a34dca12eafa5d2795ed8fdaffe98f177c909c1e",
+      "target_sha256": "8ceebd339cac6b78120e885ef3946cb3602f3166bfbc7833d3068f4ab110eb21",
+      "reverse_paraphrase": "Subset is defined by universal membership implication, and substituting that definition yields the extensionality axiom.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B008",
+      "unit_id": "OLP-0172",
+      "source_sha256": "5766ada3acc18d32600d38a930116e004ab0bc9a671ba58a779f3dcbbb38fc60",
+      "target_sha256": "6cf57aafac805a32cedc3f3f4800d758e4ef72b9bcf6bbc0566ccf91058e3f3f",
+      "reverse_paraphrase": "The empty set is expressed by having no members; its existence and its being a subset of every set can therefore be stated without a constant.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B009",
+      "unit_id": "OLP-0172",
+      "source_sha256": "bfd5f24c513c80a1e87f8af308645a3597d2f932b24ebcdc711bd3cfbbfe510d",
+      "target_sha256": "c01d340dd5075b3a246b167c17094b1645eadea3c46ee09a366674505b5d28c0",
+      "reverse_paraphrase": "Union and power-set relations are definable by membership conditions, while separate axioms are still needed to guarantee the relevant sets exist.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B010",
+      "unit_id": "OLP-0172",
+      "source_sha256": "a878accfe22421453c1bb1f5d2612e9fef254cff589b48bae5831bc523d8c6ff",
+      "target_sha256": "14d2ff8974150a8a0d6cf013909f325dabe00f7a845a6b0f23e33939021748a0",
+      "reverse_paraphrase": "An ordered pair is represented as a set of a singleton and a pair, which allows the Cartesian-product relation to be defined in membership language.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B011",
+      "unit_id": "OLP-0172",
+      "source_sha256": "9669530295516f186439b75b527615b188b7351c559656c35861a02dfb4bd98b",
+      "target_sha256": "90f7efc159c2f4151e69e298c6294e5546b0d59a713414f157e49acf07ebfbef",
+      "reverse_paraphrase": "A set is a function from X to Y when all its members are pairs from X and Y and every x in X is mapped to exactly one y in Y; OLMAT-003 restores both scopes.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B012",
+      "unit_id": "OLP-0172",
+      "source_sha256": "221af1818da7a548822c8f7b9890331a3bc62de0d736feaf20426283f94877a3",
+      "target_sha256": "18539fe8f973146c3d98aa00ac04e819173221ff45c40617b163e053031c8ef5",
+      "reverse_paraphrase": "Injectivity says two domain elements sharing a value are equal, and that definition lets set theory state that no injection maps the power set into X.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B013",
+      "unit_id": "OLP-0172",
+      "source_sha256": "87b0abf547c6843d9f2d173992584ef35dacdecee5ffebe1de1f9dc59f75bff2",
+      "target_sha256": "b4be31b601b103f7de2c66705d6ba36fecd658015b00ebe96bd68fbf63744558",
+      "reverse_paraphrase": "Unrestricted comprehension produces Russell's paradox, whereas ZFC uses the restricted separation principle to select members from an existing set.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0172-B014",
+      "unit_id": "OLP-0172",
+      "source_sha256": "7261ce3c354c07352c2e5d12a59e1fffb6ac493e3336fbebb510a388acfb8fb7",
+      "target_sha256": "f3ae9e656e6bef71bf3afdd6573d73ce3724896c056fad22a4db573db8c50dfb",
+      "reverse_paraphrase": "The exercise asks for a derivation of contradiction from the Russell-set instance of unrestricted comprehension.",
+      "assessment": "The set-theory development preserves definitions of subset, the empty set, union, power set, ordered pair, function and injection, Cantor's theorem, naive comprehension, Russell's paradox and separation. OLMAT-003 through OLMAT-005 repair only formula scope and punctuation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B006",
+      "unit_id": "OLP-0173",
+      "source_sha256": "e17196087862ce71522229d167621b97b65fda95d272066212cfa307d8f692c0",
+      "target_sha256": "7a323127d585d1332f8ff56cae67f8754970f02a0fa8d814af3d5c9b82395882",
+      "reverse_paraphrase": "Purely logical sentences can express that a structure's universe has at least, at most or exactly a fixed finite number of elements.",
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B007",
+      "unit_id": "OLP-0173",
+      "source_sha256": "1459b46030da7e30479ca74abc071cd5405a360d8ce5a1dc432841ca87269e11",
+      "target_sha256": "72e68a6fe0164ad78ef5605e9ad58f1debc626c1a3db07b5664f90e9e9dd1a6b",
+      "reverse_paraphrase": "The displayed existential sentence is true exactly when at least n pairwise distinct universe elements exist; negating the n-plus-one case expresses at most n.",
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B009",
+      "unit_id": "OLP-0173",
+      "source_sha256": "e345785f26f918dc5ae37fe6f4c6525d57b9829c0703f62beede4d28c197e12f",
+      "target_sha256": "93b94dc029cf55ea97dd8965dd2c6281e93df3b61b493b62cdec083a1628efab",
+      "reverse_paraphrase": "The exact-n sentence asserts n pairwise distinct witnesses and requires every universe element to equal one of them.",
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B010",
+      "unit_id": "OLP-0173",
+      "source_sha256": "8757feb7ea2c56b5047392e75f932bc5efb3eb980b594f16cabf0c0ac6002101",
+      "target_sha256": "9a52c2b57e442ddba88471490ecea2ca757372ebb2e125d78d00ce32d9246472",
+      "reverse_paraphrase": "A structure is infinite exactly when it satisfies every finite lower-bound sentence A at-least n.",
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0173-B011",
+      "unit_id": "OLP-0173",
+      "source_sha256": "fc387998e446f77bde0737a960a98e92560a0ab96b37fdea95caaa1203b5b74f",
+      "target_sha256": "90c011d54a7dc108831b4a43cb00e9f9dce9a7f7890daf2f4a64b47ca373a6d7",
+      "reverse_paraphrase": "No single pure logical sentence expresses infinitude; finite and nonenumerable universes cannot even be characterized by an infinite sentence set, as later compactness and Lowenheim-Skolem results show.",
+      "assessment": "The formulas for at least n and exactly n elements retain their quantifier force, the infinite-model characterization is preserved, and the stated non-expressibility consequences remain distinct.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    }
+  ]
+}

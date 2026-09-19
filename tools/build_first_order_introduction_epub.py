@@ -47,7 +47,7 @@ CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 XML = "http://www.w3.org/XML/1998/namespace"
 
 EDITION = sys.argv[1] if len(sys.argv) > 1 else "first-order-introduction"
-require_editions = {"first-order-introduction", "first-order-syntax", "first-order-semantics"}
+require_editions = {"first-order-introduction", "first-order-syntax", "first-order-semantics", "first-order-models-theories"}
 if EDITION not in require_editions:
     raise SystemExit(f"edition must be one of {sorted(require_editions)}")
 
@@ -120,6 +120,35 @@ elif EDITION == "first-order-semantics":
         "સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય, "
         "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય-પ્રકરણ, વાક્યરચના-પ્રકરણ અને "
         "અર્થવિચાર-પ્રકરણ સમાવિષ્ટ છે."
+    )
+elif EDITION == "first-order-models-theories":
+    INPUT = ROOT / "reader" / "first-order-models-theories.html"
+    OUTPUT = ROOT / "releases" / "OpenLogic-gu-Gujr-IN-First-Order-Models-Theories.epub"
+    REPLAY = ROOT / "build" / "OpenLogic-gu-Gujr-IN-First-Order-Models-Theories-replay.epub"
+    STAGE = ROOT / "build" / "epub017-stage"
+    REPLAY_STAGE = ROOT / "build" / "epub017-replay-stage"
+    RECEIPT = ROOT / "build" / "EPUB_BUILD_RECEIPT_017.json"
+    TITLE = "પ્રથમ-ક્રમ નિદર્શો અને સિદ્ધાંતો સહિત ઓપન લોજિક ગુજરાતી"
+    IDENTIFIER = (
+        "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/"
+        "releases/tag/first-order-models-theories-v0.11.0"
+    )
+    MODIFIED = "2026-09-19T00:00:00Z"
+    ZIP_TIME = (2026, 9, 19, 0, 0, 0)
+    NAVIGATION_ENTRIES = 177
+    COVERAGE = "170/722 units; OLP-0004-0173"
+    DESCRIPTION = "Partial Gujarati cumulative edition: 170 of 722 tracked source units, OLP-0004-0173."
+    ABOUT_COVERAGE = (
+        "આ EPUB એક પ્રવાહી, લિપિઆકાર બદલાય એવું ગુજરાતી વાચન છે. તેમાં ૭૨૨ "
+        "મૂળ એકમોમાંથી ૧૭૦ એકમો, એટલે OLP-0004થી OLP-0173 સુધીનો સતત "
+        "આંશિક વિસ્તાર છે. સંપૂર્ણ ૭૨૨-એકમ આવૃત્તિનું કામ ચાલુ છે."
+    )
+    ABOUT_SCOPE = (
+        "આ સંગ્રહમાં ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ, અનંત ગણો, "
+        "વિધાનાત્મક તર્કશાસ્ત્ર તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રની સાબિતી-પદ્ધતિઓ, "
+        "સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય, "
+        "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય, વાક્યરચના, અર્થવિચાર અને નિદર્શો તથા "
+        "સિદ્ધાંતોનું પ્રકરણ સમાવિષ્ટ છે."
     )
 
 

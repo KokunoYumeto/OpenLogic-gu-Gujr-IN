@@ -127,7 +127,7 @@
       "unit_id": "OLP-0054",
       "path": "content/sets-functions-relations/infinite/card-sb.tex",
       "source_sha256": "d1b9a660b6b67872444bcb2c3bd4caf78c3e693d4a95c1e1e62114b5392c7b0d",
-      "target_sha256": "630473ca6541f5695021d114c57f55a360532ade6ac7a261d21f639b43a16c6b",
+      "target_sha256": "dc576fc74ba0150f94668edf1a2f02bf94c3f51440645ff8fcc4774c2f10be51",
       "math_source_count": 78,
       "math_target_count": 79,
       "raw_math_equal_except_translated_text": false,
@@ -135,7 +135,7 @@
       "documented_source_corrections": [
         {
           "finding_id": "OLINF-002",
-          "change": "Replaced the malformed nested cardinal-equality macro with the two cardinal equalities actually established by the proof."
+          "change": "Historical classification withdrawn: the nested macro validly expands to A≈B≈C; the explicit pair is retained as an equivalent readability rendering."
         }
       ],
       "block_math_deltas": [],
@@ -151,9 +151,16 @@
       "devanagari_characters": 0,
       "source_blocks": 18,
       "target_blocks": 18,
-      "pass": true
+      "pass": true,
+      "source_claim_qualification_ids": [
+        "OLINF-002-Q1"
+      ],
+      "parity_normalization_note": "For token-level comparison only, the valid nested macro expansion is normalized to the equivalent explicit pair; this is not an active source correction."
     }
   ],
   "all_pass": true,
-  "meaning": "Formula multisets are checked within every aligned blank-delimited block. Gujarati source-correction boxes are stripped for parity; all corrected expected source changes are explicit and keyed."
+  "meaning": "Formula multisets are checked within every aligned blank-delimited block. Gujarati source-correction boxes are stripped for parity. OLINF-002 is retained as historical audit evidence but qualified as a false positive; its pairwise form is used only as an equivalent parity normalization.",
+  "source_claim_qualifications": [
+    "OLINF-002-Q1"
+  ]
 }

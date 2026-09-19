@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-gu-browser-runtime/1",
+  "checkpoint": "017",
+  "checked_utc": "2026-09-19T21:19:47.968952+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8772/reader/first-order-models-theories.html?qa=017-final",
+  "artifact": "reader/first-order-models-theories.html",
+  "artifact_sha256": "9c010445a772174d98bed54808981f77e2643ec52e47c8c5901c59ee8e5b4031",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "પ્રથમ-ક્રમ નિદર્શો અને સિદ્ધાંતો સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 490,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 666,
+    "uniqueIds": 666,
+    "excludedBrowserUiIds": [
+      "codex-browser-sidebar-comments-root"
+    ],
+    "tocLinks": 177,
+    "tables": 12,
+    "mathmlNodes": 9653,
+    "rawProblemTagLeaks": 0,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, scope disclosure, and cumulative table of contents",
+      "new models-and-theories chapter introduction",
+      "OLMAT-001 correction disclosure and adjacent set-theory formulas",
+      "OLMAT-005 correction disclosure and structure-size formulas",
+      "repaired tagged exercise wrapper rendered as સ્વાધ્યાય 145.2 without internal tag leakage",
+      "editorial qualification of historical OLINF-002 classification",
+      "bibliography and end matter"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": []
+  },
+  "status": "passed"
+}

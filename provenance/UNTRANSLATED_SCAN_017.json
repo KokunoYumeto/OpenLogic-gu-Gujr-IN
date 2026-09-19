@@ -1,0 +1,97 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/017",
+  "checked_at_utc": "2026-09-19T19:57:26.520747+00:00",
+  "scope": "OLP-0167–OLP-0173 Gujarati First-order Models and Theories source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, derivation environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing keyed IDs, filenames, math, literal control names and explicitly quoted frozen-source fragments.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0167",
+      "path": "content/first-order-logic/models-theories/models-theories.tex",
+      "target_sha256": "587bcb96dc07b51ff03970df9b4250d97d9f7844e1aa00d64674804606303f72",
+      "gujarati_characters": 33,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0168",
+      "path": "content/first-order-logic/models-theories/introduction.tex",
+      "target_sha256": "b795ff6ca5d3357bc52790ff1f7250688e60224565c4742ff7982c692012c261",
+      "gujarati_characters": 3109,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0169",
+      "path": "content/first-order-logic/models-theories/expressing-props-of-structures.tex",
+      "target_sha256": "0fb059fc8e304e337169124bbbdfb6a4ba93701682e2bed3ec130183bcc882b4",
+      "gujarati_characters": 1207,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0170",
+      "path": "content/first-order-logic/models-theories/theories.tex",
+      "target_sha256": "e8bf84fc01f801463e642131fe67d544635c8ce03287128731a06e6cd984e08b",
+      "gujarati_characters": 2679,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0171",
+      "path": "content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_sha256": "a2c20ebe9ab017c16a8c5ae02c69855c72230f40a279a3cc67ad312f620e85a9",
+      "gujarati_characters": 2129,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0172",
+      "path": "content/first-order-logic/models-theories/set-theory.tex",
+      "target_sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48",
+      "gujarati_characters": 4018,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    },
+    {
+      "unit_id": "OLP-0173",
+      "path": "content/first-order-logic/models-theories/size-of-structures.tex",
+      "target_sha256": "08c61b02387ae1ee1823d1bec71a8d901995aff1d144babcbb10414e48600e8a",
+      "gujarati_characters": 694,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    }
+  ],
+  "totals": {
+    "units": 7,
+    "gujarati_characters": 13869,
+    "source_detector_ascii_tokens": 2914,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 5,
+    "quoted_frozen_source_literals": 0
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "allowed_formal_abbreviations": [
+    "FOL",
+    "MP"
+  ],
+  "allowed_formal_literals": [
+    "FOL tag name",
+    "false tag value",
+    "forall x book title"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}

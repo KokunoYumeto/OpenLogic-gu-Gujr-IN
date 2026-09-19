@@ -1,0 +1,122 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-19T21:36:45.081772+00:00",
+  "boundary": "First-order Models and Theories chapter OLP-0167–0173 under the complete classical first-order profile",
+  "units": [
+    {
+      "unit_id": "OLP-0167",
+      "source_sha256": "be635957198b3c2fcfee43dff67ce462f827c6cb051af468fd45feb3858ea9a7",
+      "target_sha256": "587bcb96dc07b51ff03970df9b4250d97d9f7844e1aa00d64674804606303f72",
+      "source_bytes": 394,
+      "target_bytes": 460,
+      "aligned_blocks": 12,
+      "raw_source_blocks": 12,
+      "linguistic_blocks": 2,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0168",
+      "source_sha256": "af9e91c4a4e19debfa137b696a280723e3de5779d7b65cc32ff0d0bcbac377a1",
+      "target_sha256": "b795ff6ca5d3357bc52790ff1f7250688e60224565c4742ff7982c692012c261",
+      "source_bytes": 5114,
+      "target_bytes": 11023,
+      "aligned_blocks": 11,
+      "raw_source_blocks": 11,
+      "linguistic_blocks": 8,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0169",
+      "source_sha256": "feb12b7951795d4ad220ee97941e52fef3469bcfe363ec6a3660992225154f9e",
+      "target_sha256": "0fb059fc8e304e337169124bbbdfb6a4ba93701682e2bed3ec130183bcc882b4",
+      "source_bytes": 2902,
+      "target_bytes": 5202,
+      "aligned_blocks": 9,
+      "raw_source_blocks": 9,
+      "linguistic_blocks": 5,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0170",
+      "source_sha256": "5ce32448dbe95d0b37477a6c343ae3a976bb299c955f50ae206b0f150f09ccd5",
+      "target_sha256": "e8bf84fc01f801463e642131fe67d544635c8ce03287128731a06e6cd984e08b",
+      "source_bytes": 6110,
+      "target_bytes": 11417,
+      "aligned_blocks": 15,
+      "raw_source_blocks": 15,
+      "linguistic_blocks": 11,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0171",
+      "source_sha256": "37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b",
+      "target_sha256": "a2c20ebe9ab017c16a8c5ae02c69855c72230f40a279a3cc67ad312f620e85a9",
+      "source_bytes": 4998,
+      "target_bytes": 9414,
+      "aligned_blocks": 14,
+      "raw_source_blocks": 14,
+      "linguistic_blocks": 10,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0172",
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "target_sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48",
+      "source_bytes": 8308,
+      "target_bytes": 16651,
+      "aligned_blocks": 14,
+      "raw_source_blocks": 14,
+      "linguistic_blocks": 11,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0173",
+      "source_sha256": "8b7238c293db0a3717f1fcf3ad2420e093cd65593237c26faaaf36d7b131e934",
+      "target_sha256": "08c61b02387ae1ee1823d1bec71a8d901995aff1d144babcbb10414e48600e8a",
+      "source_bytes": 2376,
+      "target_bytes": 3798,
+      "aligned_blocks": 12,
+      "raw_source_blocks": 12,
+      "linguistic_blocks": 7,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 54,
+  "aligned_blocks": 87,
+  "source_math_spans": 310,
+  "corrected_source_math_spans": 310,
+  "source_corrections": [
+    {
+      "finding_id": "OLMAT-001",
+      "unit_id": "OLP-0170",
+      "handling": "Restored the quantified argument as a bracketed formula and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAT-002",
+      "unit_id": "OLP-0171",
+      "handling": "Restored the object-language marker on v_2 and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAT-003",
+      "unit_id": "OLP-0172",
+      "handling": "Moved both implication consequents into their universal quantifier scopes and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAT-004",
+      "unit_id": "OLP-0172",
+      "handling": "Kept the entire conditional inside both universal quantifiers, restored their closing brackets and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAT-005",
+      "unit_id": "OLP-0172",
+      "handling": "Added the missing closing parenthesis to the biconditional and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_017.json",
+  "semantic_review": "Exact-block review is recorded for all 54 aligned linguistic blocks; see SEMANTIC_REVIEW_017.json.",
+  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, reflowable EPUB, EPUBCheck, EPUB runtime, untranslated-prose and reviewer-decision QA passed.",
+  "translation_decisions": "Reviewer package regenerated: 282 schema-valid decisions, 290 exact occurrences, 289 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and no pending locators. The OLINF-002 historical false-positive classification is explicitly qualified.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
+}

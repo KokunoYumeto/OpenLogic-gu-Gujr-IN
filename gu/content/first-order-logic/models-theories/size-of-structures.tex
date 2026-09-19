@@ -1,0 +1,73 @@
+% ભાગ: first-order-logic
+% પ્રકરણ: models-theories
+% વિભાગ: size-of-structures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{fol}{mat}{siz}
+
+\olsection{\printtoken{P}{structure}નું કદ વ્યક્ત કરવું}
+
+\begin{explain}
+સંરચનાઓના કેટલાક ગુણધર્મો ભાષાના અતાર્કિક સંકેતો વાપર્યા વિના પણ
+વ્યક્ત કરી શકીએ છીએ. દાખલા તરીકે, એવાં !!{sentence}s છે જે
+!!a{structure}માં ત્યારે અને માત્ર ત્યારે સત્ય હોય જ્યારે
+!!{structure}ના !!{domain}માં ઓછામાં ઓછા, વધુમાં વધુ, અથવા ચોક્કસ
+આપેલી સંખ્યા~$n$ જેટલા !!{element}s હોય.
+\end{explain}
+
+\begin{prop}
+!!{sentence}
+\begin{multline*}
+  !A_{\ge n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{}]]]\\
+  \begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n])
+\end{aligned}
+\end{multline*}
+!!a{structure}~$\Struct M$માં ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
+$\Domain M$માં ઓછામાં ઓછા~$n$ !!{element}s હોય. પરિણામે,
+$\Sat{M}{\lnot !A_{\ge n+1}}$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\Domain M$માં વધુમાં વધુ~$n$ !!{element}s હોય.
+
+\end{prop}
+
+\begin{prop}
+!!{sentence}
+\begin{multline*}
+!A_{= n} \ident \lexists[x_1][\lexists[x_2][\dots\lexists[x_n][{}]]] \\
+\begin{aligned}
+  (\eq/[x_1][x_2] \land {}
+  \eq/[x_1][x_3] \land \eq/[x_1][x_4] \land \dots \land \eq/[x_1][x_n] \land {}\\
+\eq/[x_2][x_3] \land \eq/[x_2][x_4] \land \dots \land {} \eq/[x_2][x_n] \land {} \\
+\vdots\\
+\eq/[x_{n-1}][x_n] \land {} \\
+\lforall[y][(\eq[y][x_1] \lor \dots \lor \eq[y][x_n]]))
+\end{aligned}
+\end{multline*}
+!!a{structure}~$\Struct M$માં ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
+$\Domain M$માં ચોક્કસ~$n$ !!{element}s હોય.
+\end{prop}
+
+\begin{prop}
+!!{structure} નીચેના ગણનું નિદર્શ ત્યારે અને માત્ર ત્યારે છે જ્યારે
+તે અનંત છે:
+\[
+\{!A_{\ge 1}, !A_{\ge 2}, !A_{\ge 3}, \dots \}.
+\]
+\end{prop}
+
+એવું કોઈ એક શુદ્ધ તાર્કિક વાક્ય નથી જે~$\Struct M$માં ત્યારે અને માત્ર
+ત્યારે સત્ય હોય જ્યારે~$\Domain M$ અનંત હોય. જોકે અતાર્કિક
+!!{predicate}s ધરાવતાં એવાં !!{sentence}s આપી શકાય છે જેમનાં નિદર્શો
+માત્ર અનંત હોય (ભલે દરેક અનંત !!{structure} તેમનું નિદર્શ ન હોય).
+સાન્ત સંરચના હોવાનો ગુણધર્મ અને !!{nonenumerable} સંરચના હોવાનો ગુણધર્મ તો
+!!{sentence}sના અનંત ગણ વડે પણ વ્યક્ત કરી શકાતા નથી. આ હકીકતો સઘનતા
+અને લેવેનહાઇમ--સ્કોલેમ પ્રમેયોમાંથી ફલિત થાય છે.
+
+\end{document}

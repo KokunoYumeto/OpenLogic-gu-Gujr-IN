@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-gu-epub-browser-runtime/1",
+  "checkpoint": "017",
+  "checked_utc": "2026-09-19T21:22:41.418742+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8772/build/runtime-probe017.html?target=build%2Fepub017-stage%2FOEBPS%2Fcontent.xhtml&final=1",
+  "artifact": "build/epub017-stage/OEBPS/content.xhtml",
+  "artifact_sha256": "27cd2f0eb1a63b346b722ed037e3c8bd9024755412074683e10e50f390b961cc",
+  "epub": "releases/OpenLogic-gu-Gujr-IN-First-Order-Models-Theories.epub",
+  "epub_sha256": "ab63ff6142fca4329d92d178834417892764c6a16724e0064395309cc98a655b",
+  "loading_method": "The exact XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative asset URLs.",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "પ્રથમ-ક્રમ નિદર્શો અને સિદ્ધાંતો સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 490,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 666,
+    "uniqueIds": 666,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, scope disclosure, and cumulative table of contents",
+      "repaired સ્વાધ્યાય 145.2 exercise wrapper and models-and-theories opening",
+      "OLMAT-005 correction disclosure and adjacent formulas",
+      "editorial notes and OLINF-002 historical-classification withdrawal"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": []
+  },
+  "status": "passed"
+}

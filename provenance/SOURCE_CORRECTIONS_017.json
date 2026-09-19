@@ -1,0 +1,127 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-19T19:57:25.502472+00:00",
+  "audit_id": "GU-OLMAT-20260919",
+  "audit_method": "Same-agent exact comparison against the frozen source, adjacent prose, logical macro grammar and formula scope within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLMAT-001",
+      "unit_id": "OLP-0170",
+      "classification": "confirmed_missing_quantifier_argument_bracket",
+      "finding": "The extensionality axiom opens the quantified argument with a parenthesis instead of the square bracket required by the logical macro.",
+      "source_path": "content/first-order-logic/models-theories/theories.tex",
+      "source_locator": "theories.tex:75",
+      "source_bytes": 6110,
+      "source_sha256": "5ce32448dbe95d0b37477a6c343ae3a976bb299c955f50ae206b0f150f09ccd5",
+      "target_path": "gu/content/first-order-logic/models-theories/theories.tex",
+      "target_bytes": 11417,
+      "target_sha256": "e8bf84fc01f801463e642131fe67d544635c8ce03287128731a06e6cd984e08b",
+      "corrected_body_line": 72,
+      "adjacent_note_line": 81,
+      "handling": "Restored the quantified argument as a bracketed formula and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lforall[z](z \\in x \\liff z \\in y)",
+        "added": "\\lforall[z][(z \\in x \\liff z \\in y)]"
+      },
+      "controlling_evidence": "Every neighboring universal quantifier in the axiom system uses the macro's bracketed argument, and extensionality requires the biconditional to remain in z's scope.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMAT-002",
+      "unit_id": "OLP-0171",
+      "classification": "confirmed_missing_object_language_marker",
+      "finding": "The right side of the second strict-order definition omits the object-language marker on v_2.",
+      "source_path": "content/first-order-logic/models-theories/expressing-relations.tex",
+      "source_locator": "expressing-relations.tex:64",
+      "source_bytes": 4998,
+      "source_sha256": "37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b",
+      "target_path": "gu/content/first-order-logic/models-theories/expressing-relations.tex",
+      "target_bytes": 9414,
+      "target_sha256": "a2c20ebe9ab017c16a8c5ae02c69855c72230f40a279a3cc67ad312f620e85a9",
+      "corrected_body_line": 65,
+      "adjacent_note_line": 69,
+      "handling": "Restored the object-language marker on v_2 and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "v_2",
+        "added": "\\Obj v_2"
+      },
+      "controlling_evidence": "All variables in the two displayed object-language formulas carry the same object-language marker.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMAT-003",
+      "unit_id": "OLP-0172",
+      "classification": "confirmed_implication_consequents_outside_quantifier_scope",
+      "finding": "Both universal formulas defining a function close their quantified arguments immediately after the implication symbol, leaving each consequent outside its quantifier scope.",
+      "source_path": "content/first-order-logic/models-theories/set-theory.tex",
+      "source_locator": "set-theory.tex:121",
+      "source_bytes": 8308,
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "target_bytes": 16651,
+      "target_sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48",
+      "corrected_body_line": 118,
+      "adjacent_note_line": 126,
+      "handling": "Moved both implication consequents into their universal quantifier scopes and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "two universal scopes closed before their implication consequents",
+        "added": "both implication consequents enclosed by their respective universal quantifiers"
+      },
+      "controlling_evidence": "The prose requires every member of f to be an ordered pair from X and Y and every x in X to have one unique y in Y; both are universally quantified conditions.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMAT-004",
+      "unit_id": "OLP-0172",
+      "classification": "confirmed_injectivity_scope_and_bracket_error",
+      "finding": "The injectivity formula closes both universal quantifiers before the existential antecedent and omits their closing brackets at the end.",
+      "source_path": "content/first-order-logic/models-theories/set-theory.tex",
+      "source_locator": "set-theory.tex:135",
+      "source_bytes": 8308,
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "target_bytes": 16651,
+      "target_sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48",
+      "corrected_body_line": 139,
+      "adjacent_note_line": 143,
+      "handling": "Kept the entire conditional inside both universal quantifiers, restored their closing brackets and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "premature ]] before the existential condition and no ]] after the consequent",
+        "added": "the existential condition and equality consequent inside both universal scopes"
+      },
+      "controlling_evidence": "Injectivity quantifies over both x and x' and asserts their equality whenever they share a value.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMAT-005",
+      "unit_id": "OLP-0172",
+      "classification": "confirmed_missing_closing_parenthesis_in_separation",
+      "finding": "The separation formula closes the conjunction and A(x) but not the outer biconditional before closing its quantifiers.",
+      "source_path": "content/first-order-logic/models-theories/set-theory.tex",
+      "source_locator": "set-theory.tex:170",
+      "source_bytes": 8308,
+      "source_sha256": "e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf",
+      "target_path": "gu/content/first-order-logic/models-theories/set-theory.tex",
+      "target_bytes": 16651,
+      "target_sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48",
+      "corrected_body_line": 177,
+      "adjacent_note_line": 179,
+      "handling": "Added the missing closing parenthesis to the biconditional and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "!A(x))]]]",
+        "added": "!A(x)))]]]"
+      },
+      "controlling_evidence": "The membership biconditional has an outer opening parenthesis in addition to the inner conjunction.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "structural_receipt": "PARITY_017.json",
+  "status": "five_repairs_applied_disclosed_and_structural_semantic_reader_qa_passed"
+}

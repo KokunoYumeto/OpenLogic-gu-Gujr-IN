@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-19T18:49:50.009276+00:00. This focused queue contains 110 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-19T21:35:29.470587+00:00. This focused queue contains 116 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -771,3 +771,45 @@ Generated 2026-09-19T18:49:50.009276+00:00. This focused queue contains 110 high
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રતિસ્થાપનથી કોઈ ફેરફાર ન થાય’ accurately express ‘vacuous substitution (a substitution that makes no change)’ with the scope stated here: The source immediately defines vacuity by the case where x does not occur and the result remains A. The explicit no-change wording preserves that sense without using નિરર્થક, which can be read as meaningless. No checked canon passage attests a fixed Gujarati technical adjective for vacuous substitution. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:97`
 - **Gujarati:** `gu/content/first-order-logic/syntax-and-semantics/substitution.tex:98`
+
+## GU-T152: theory / first-order theory → સિદ્ધાંત / પ્રથમ-ક્રમ સિદ્ધાંત
+
+- **Why prioritized:** The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સિદ્ધાંત / પ્રથમ-ક્રમ સિદ્ધાંત’ accurately express ‘theory / first-order theory’ with the scope stated here: સિદ્ધાંત is the established Gujarati scholarly head for a theory. પ્રથમ-ક્રમ composes that head with the edition's established term for first order. The chapter's definitions fix the technical sense as a sentence set closed under semantic consequence or presented by axioms. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/models-theories/introduction.tex:38`
+- **Gujarati:** `gu/content/first-order-logic/models-theories/introduction.tex:22`
+
+## GU-T153: axiomatized by / sententially closed / closure of a sentence set → સ્વયંસિદ્ધીકૃત / સંવૃત / વાક્યગણનું સંવરણ
+
+- **Why prioritized:** The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સ્વયંસિદ્ધીકૃત / સંવૃત / વાક્યગણનું સંવરણ’ accurately express ‘axiomatized by / sententially closed / closure of a sentence set’ with the scope stated here: સ્વયંસિદ્ધિ is governed by GU-T103, so સ્વયંસિદ્ધીકૃત states presentation by axioms. સંવરણ and સંવૃત reuse GU-T083's general closure family; here the adjacent definition narrows it to closure of a sentence set under semantic consequence. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/models-theories/introduction.tex:33`
+- **Gujarati:** `gu/content/first-order-logic/models-theories/introduction.tex:35`
+
+## GU-T154: definability / definable / express a relation → વ્યાખ્યેયતા / વ્યાખ્યેય / સંબંધ વ્યક્ત કરવો
+
+- **Why prioritized:** The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘વ્યાખ્યેયતા / વ્યાખ્યેય / સંબંધ વ્યક્ત કરવો’ accurately express ‘definability / definable / express a relation’ with the scope stated here: વ્યાખ્યા is established mathematical prose, and the suffixes distinguish the property વ્યાખ્યેયતા from the adjective વ્યાખ્યેય. વ્યક્ત કરવું is retained for a formula's semantic relation to the set of tuples it defines, as fixed by the assignment-relative biconditional. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/models-theories/introduction.tex:86`
+- **Gujarati:** `gu/content/first-order-logic/models-theories/introduction.tex:85`
+
+## GU-T155: mereology / parthood / proper part / mereological sum / fusion → અંશસિદ્ધાંત / અંશતા / યથાર્થ અંશ / અંશસિદ્ધાંતિક યોગ / સંલયન
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અંશસિદ્ધાંત / અંશતા / યથાર્થ અંશ / અંશસિદ્ધાંતિક યોગ / સંલયન’ accurately express ‘mereology / parthood / proper part / mereological sum / fusion’ with the scope stated here: અંશ is ordinary Gujarati for part and supports a transparent family: અંશસિદ્ધાંત for the theory, અંશતા for the relation and યથાર્થ અંશ for proper part. યોગ and સંલયન distinguish the least common whole from the broader operation of fusion. No checked canon passage directly attests this full mereological family. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/models-theories/theories.tex:103`
+- **Gujarati:** `gu/content/first-order-logic/models-theories/theories.tex:106`
+
+## GU-T156: pure set / urelement → શુદ્ધ ગણ / અગણ મૂળઘટક
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘શુદ્ધ ગણ / અગણ મૂળઘટક’ accurately express ‘pure set / urelement’ with the scope stated here: ગણ is the edition's established set term. શુદ્ધ preserves the recursive condition that every member is itself a pure set. અગણ મૂળઘટક explicitly marks an urelement as a primitive object that is not a set; the prose definition controls the scope because the compound is not directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/models-theories/theories.tex:63`
+- **Gujarati:** `gu/content/first-order-logic/models-theories/theories.tex:62`
+
+## GU-T157: naive comprehension scheme / comprehension principle / separation principle → સહજ ગુણધર્મ-ગણરચના પ્રરૂપ / ગુણધર્મ-ગણરચના સિદ્ધાંત / પૃથક્કરણ સિદ્ધાંત
+
+- **Why prioritized:** No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સહજ ગુણધર્મ-ગણરચના પ્રરૂપ / ગુણધર્મ-ગણરચના સિદ્ધાંત / પૃથક્કરણ સિદ્ધાંત’ accurately express ‘naive comprehension scheme / comprehension principle / separation principle’ with the scope stated here: GU-T018 governs ગુણધર્મ વડે ગણરચના for comprehension. The present forms extend that decision: પ્રરૂપ marks the unrestricted formula schema, સિદ્ધાંત names the corresponding principle and પૃથક્કરણ names the restricted ZFC principle selecting elements from an existing set. સહજ renders the source's warning label naive without implying simplicity of proof. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/first-order-logic/models-theories/theories.tex:91`
+- **Gujarati:** `gu/content/first-order-logic/models-theories/theories.tex:93`

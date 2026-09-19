@@ -4,7 +4,7 @@
   "batch": "OLP-0049–0054 Infinite",
   "reviewer": "same translation agent",
   "independent_native_or_human_certification": false,
-  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with reverse paraphrases focused on function direction, closure minimality, induction quantifiers, philosophical qualifications, citation scope, the Schröder–Bernstein construction and both disclosed source repairs.",
+  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with reverse paraphrases focused on function direction, closure minimality, induction quantifiers, philosophical qualifications, citation scope, the Schröder–Bernstein construction, OLINF-001, and the reviewed OLINF-002 qualification.",
   "all_drafted_blocks_directly_compared_during_translation": 58,
   "samples": [
     {
@@ -574,9 +574,9 @@
       "source_path": "upstream/content/sets-functions-relations/infinite/card-sb.tex",
       "target_path": "gu/content/sets-functions-relations/infinite/card-sb.tex",
       "source_sha256": "d8abdc5aedecfcda4b5348745c69f4400541bcb8bf29753f331f14449ff74806",
-      "target_sha256": "d7ca20039c15d6cd9d365dbc0a95d493f3e4b4e43738ee528e9f3430dece11c3",
+      "target_sha256": "d6b383612fc4dadd3d1fd7270c89739d4df4edc698db54a3b902362432e00e04",
       "reverse_paraphrase": "If A⊆B⊆C and A≈C, then A≈B and B≈C.",
-      "assessment": "OLINF-002 replaces the malformed nesting with exactly the two equalities established below.",
+      "assessment": "The source macro expands to the same two comparisons. The Gujarati pair is an equivalent readability rendering, and OLINF-002-Q1 withdraws the historical defect classification.",
       "status": "same_agent_semantic_comparison_passed"
     },
     {
@@ -645,5 +645,8 @@
       "assessment": "Every image, inclusion, composition direction and helper application is preserved.",
       "status": "same_agent_semantic_comparison_passed"
     }
+  ],
+  "source_claim_qualifications": [
+    "OLINF-002-Q1"
   ]
 }

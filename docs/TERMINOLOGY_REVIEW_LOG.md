@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-19T18:48:22.713473+00:00. This is a **complete decision log for the current 163/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 155/722 units with checkpoint 015. It contains all 151 terminology decisions from the durable ledger and all 117 source corrections identified so far. It must grow with the translation.
+Updated 2026-09-19T20:12:58.975140+00:00. This is a **complete decision log for the current 170/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 163/722 units with checkpoint 016. It contains all 157 terminology decisions from the durable ledger and all 122 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -1669,6 +1669,72 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** નિરર્થક પ્રતિસ્થાપન — rejected after bounded replay because it can imply that the operation lacks meaning rather than merely having no effect.; રિક્ત પ્રતિસ્થાપન — concise, but can suggest an empty syntactic object rather than an unchanged result.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રતિસ્થાપનથી કોઈ ફેરફાર ન થાય’ accurately express ‘vacuous substitution (a substitution that makes no change)’ with the scope stated here: The source immediately defines vacuity by the case where x does not occur and the result remains A. The explicit no-change wording preserves that sense without using નિરર્થક, which can be read as meaningless. No checked canon passage attests a fixed Gujarati technical adjective for vacuous substitution. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T152: theory / first-order theory → સિદ્ધાંત / પ્રથમ-ક્રમ સિદ્ધાંત
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_models_theories_translation; `work/add_models_theories_terms.py`.
+- **English use:** `upstream/content/first-order-logic/models-theories/introduction.tex:38` (OLP-0168, “axiomatic theory”); `upstream/content/first-order-logic/models-theories/theories.tex:11` (OLP-0170, “First-Order Theories”)
+- **Gujarati use:** `gu/content/first-order-logic/models-theories/introduction.tex:22` (OLP-0168, “સ્વયંસિદ્ધિમૂલક સિદ્ધાંત”); `gu/content/first-order-logic/models-theories/theories.tex:11` (OLP-0170, “પ્રથમ-ક્રમ સિદ્ધાંતો”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સિદ્ધાંત is the established Gujarati scholarly head for a theory. પ્રથમ-ક્રમ composes that head with the edition's established term for first order. The chapter's definitions fix the technical sense as a sentence set closed under semantic consequence or presented by axioms.
+- **Alternatives:** વાદ — too broad and can suggest a doctrine or argumentative position.; પ્રથમ-સ્તરીય સિદ્ધાંત — possible literal formation, but inconsistent with the edition's established પ્રથમ-ક્રમ language.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સિદ્ધાંત / પ્રથમ-ક્રમ સિદ્ધાંત’ accurately express ‘theory / first-order theory’ with the scope stated here: સિદ્ધાંત is the established Gujarati scholarly head for a theory. પ્રથમ-ક્રમ composes that head with the edition's established term for first order. The chapter's definitions fix the technical sense as a sentence set closed under semantic consequence or presented by axioms. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T153: axiomatized by / sententially closed / closure of a sentence set → સ્વયંસિદ્ધીકૃત / સંવૃત / વાક્યગણનું સંવરણ
+
+- **Status and uncertainty:** `adopted_contextual_reuse`; medium. The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_models_theories_translation; `work/add_models_theories_terms.py`.
+- **English use:** `upstream/content/first-order-logic/models-theories/introduction.tex:33` (OLP-0168, “axiomatized by”); `upstream/content/first-order-logic/models-theories/introduction.tex:29` (OLP-0168, “closed”); `upstream/content/first-order-logic/models-theories/introduction.tex:30` (OLP-0168, “closure”)
+- **Gujarati use:** `gu/content/first-order-logic/models-theories/introduction.tex:35` (OLP-0168, “સ્વયંસિદ્ધીકૃત”); `gu/content/first-order-logic/models-theories/introduction.tex:29` (OLP-0168, “સંવૃત”); `gu/content/first-order-logic/models-theories/introduction.tex:31` (OLP-0168, “સંવરણ”)
+- **Authorities actually checked:** `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સ્વયંસિદ્ધિ is governed by GU-T103, so સ્વયંસિદ્ધીકૃત states presentation by axioms. સંવરણ and સંવૃત reuse GU-T083's general closure family; here the adjacent definition narrows it to closure of a sentence set under semantic consequence.
+- **Alternatives:** અક્ષયીકૃત — a Sanskritic alternative that is not used by this edition's established axiom terminology.; પૂર્ણ — would blur deductive closure with the distinct technical property of completeness.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સ્વયંસિદ્ધીકૃત / સંવૃત / વાક્યગણનું સંવરણ’ accurately express ‘axiomatized by / sententially closed / closure of a sentence set’ with the scope stated here: સ્વયંસિદ્ધિ is governed by GU-T103, so સ્વયંસિદ્ધીકૃત states presentation by axioms. સંવરણ and સંવૃત reuse GU-T083's general closure family; here the adjacent definition narrows it to closure of a sentence set under semantic consequence. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T154: definability / definable / express a relation → વ્યાખ્યેયતા / વ્યાખ્યેય / સંબંધ વ્યક્ત કરવો
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The component terms are supported, but the exact technical scope remains open to expert correction.
+- **Record origin:** contemporaneous_models_theories_translation; `work/add_models_theories_terms.py`.
+- **English use:** `upstream/content/first-order-logic/models-theories/introduction.tex:86` (OLP-0168, “definability”); `upstream/content/first-order-logic/models-theories/expressing-relations.tex:108` (OLP-0171, “definable”); `upstream/content/first-order-logic/models-theories/expressing-relations.tex:46` (OLP-0171, “expresses the relation”)
+- **Gujarati use:** `gu/content/first-order-logic/models-theories/introduction.tex:85` (OLP-0168, “વ્યાખ્યેયતા”); `gu/content/first-order-logic/models-theories/expressing-relations.tex:113` (OLP-0171, “વ્યાખ્યેય છે”); `gu/content/first-order-logic/models-theories/expressing-relations.tex:23` (OLP-0171, “વ્યક્ત કરે છે”)
+- **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P063` (GU-VK-VARIABLE, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 4865, "utf8_end": 5737, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** વ્યાખ્યા is established mathematical prose, and the suffixes distinguish the property વ્યાખ્યેયતા from the adjective વ્યાખ્યેય. વ્યક્ત કરવું is retained for a formula's semantic relation to the set of tuples it defines, as fixed by the assignment-relative biconditional.
+- **Alternatives:** વ્યાખ્યાત્મકતા — possible, but less direct for the property of being definable.; સંબંધ દર્શાવવો — readable, but weaker than the exact satisfaction biconditional that defines expression here.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘વ્યાખ્યેયતા / વ્યાખ્યેય / સંબંધ વ્યક્ત કરવો’ accurately express ‘definability / definable / express a relation’ with the scope stated here: વ્યાખ્યા is established mathematical prose, and the suffixes distinguish the property વ્યાખ્યેયતા from the adjective વ્યાખ્યેય. વ્યક્ત કરવું is retained for a formula's semantic relation to the set of tuples it defines, as fixed by the assignment-relative biconditional. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T155: mereology / parthood / proper part / mereological sum / fusion → અંશસિદ્ધાંત / અંશતા / યથાર્થ અંશ / અંશસિદ્ધાંતિક યોગ / સંલયન
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_theories_translation; `work/add_models_theories_terms.py`.
+- **English use:** `upstream/content/first-order-logic/models-theories/theories.tex:103` (OLP-0170, “mereology”); `upstream/content/first-order-logic/models-theories/theories.tex:103` (OLP-0170, “parthood”); `upstream/content/first-order-logic/models-theories/theories.tex:138` (OLP-0170, “proper part”); `upstream/content/first-order-logic/models-theories/theories.tex:128` (OLP-0170, “mereological sum”); `upstream/content/first-order-logic/models-theories/theories.tex:139` (OLP-0170, “fusion”)
+- **Gujarati use:** `gu/content/first-order-logic/models-theories/theories.tex:106` (OLP-0170, “અંશસિદ્ધાંત”); `gu/content/first-order-logic/models-theories/theories.tex:106` (OLP-0170, “અંશતા”); `gu/content/first-order-logic/models-theories/theories.tex:137` (OLP-0170, “યથાર્થ અંશ”); `gu/content/first-order-logic/models-theories/theories.tex:128` (OLP-0170, “અંશસિદ્ધાંતિક યોગ”); `gu/content/first-order-logic/models-theories/theories.tex:139` (OLP-0170, “સંલયન”)
+- **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** અંશ is ordinary Gujarati for part and supports a transparent family: અંશસિદ્ધાંત for the theory, અંશતા for the relation and યથાર્થ અંશ for proper part. યોગ and સંલયન distinguish the least common whole from the broader operation of fusion. No checked canon passage directly attests this full mereological family.
+- **Alternatives:** ભાગસિદ્ધાંત / ભાગતા — possible, but ભાગ also strongly suggests arithmetic division.; મેરિયોલોજી — a direct transliteration with less explanatory value for readers.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અંશસિદ્ધાંત / અંશતા / યથાર્થ અંશ / અંશસિદ્ધાંતિક યોગ / સંલયન’ accurately express ‘mereology / parthood / proper part / mereological sum / fusion’ with the scope stated here: અંશ is ordinary Gujarati for part and supports a transparent family: અંશસિદ્ધાંત for the theory, અંશતા for the relation and યથાર્થ અંશ for proper part. યોગ and સંલયન distinguish the least common whole from the broader operation of fusion. No checked canon passage directly attests this full mereological family. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T156: pure set / urelement → શુદ્ધ ગણ / અગણ મૂળઘટક
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_theories_translation; `work/add_models_theories_terms.py`.
+- **English use:** `upstream/content/first-order-logic/models-theories/theories.tex:63` (OLP-0170, “pure sets”); `upstream/content/first-order-logic/models-theories/theories.tex:68` (OLP-0170, “urelements”)
+- **Gujarati use:** `gu/content/first-order-logic/models-theories/theories.tex:62` (OLP-0170, “શુદ્ધ ગણો”); `gu/content/first-order-logic/models-theories/theories.tex:66` (OLP-0170, “અગણ મૂળઘટક”)
+- **Authorities actually checked:** `GU-P002` (GU-GSSTB-MATH11, {"pdf_page_one_based": 20, "printed_page": "8"}); `GU-P013` (GU-VK-SETS, {"line_one_based": 36, "utf8_start": 3637, "utf8_end": 4684, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ગણ is the edition's established set term. શુદ્ધ preserves the recursive condition that every member is itself a pure set. અગણ મૂળઘટક explicitly marks an urelement as a primitive object that is not a set; the prose definition controls the scope because the compound is not directly attested.
+- **Alternatives:** મૂળતત્ત્વ — compact, but does not state the defining contrast with sets.; યૂરિલિમેન્ટ — recognizable internationally, but opaque without the supplied definition.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘શુદ્ધ ગણ / અગણ મૂળઘટક’ accurately express ‘pure set / urelement’ with the scope stated here: ગણ is the edition's established set term. શુદ્ધ preserves the recursive condition that every member is itself a pure set. અગણ મૂળઘટક explicitly marks an urelement as a primitive object that is not a set; the prose definition controls the scope because the compound is not directly attested. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T157: naive comprehension scheme / comprehension principle / separation principle → સહજ ગુણધર્મ-ગણરચના પ્રરૂપ / ગુણધર્મ-ગણરચના સિદ્ધાંત / પૃથક્કરણ સિદ્ધાંત
+
+- **Status and uncertainty:** `provisional_contextual_extension`; open. No checked authority fully settled this exact technical expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_theories_translation; `work/add_models_theories_terms.py`.
+- **English use:** `upstream/content/first-order-logic/models-theories/theories.tex:91` (OLP-0170, “naive comprehension scheme”); `upstream/content/first-order-logic/models-theories/set-theory.tex:158` (OLP-0172, “comprehension principle”); `upstream/content/first-order-logic/models-theories/set-theory.tex:167` (OLP-0172, “separation principle”)
+- **Gujarati use:** `gu/content/first-order-logic/models-theories/theories.tex:93` (OLP-0170, “સહજ ગુણધર્મ-ગણરચના”); `gu/content/first-order-logic/models-theories/set-theory.tex:166` (OLP-0172, “ગુણધર્મ-ગણરચના સિદ્ધાંત”); `gu/content/first-order-logic/models-theories/set-theory.tex:174` (OLP-0172, “પૃથક્કરણ સિદ્ધાંત”)
+- **Authorities actually checked:** `GU-P002` (GU-GSSTB-MATH11, {"pdf_page_one_based": 20, "printed_page": "8"}); `GU-P013` (GU-VK-SETS, {"line_one_based": 36, "utf8_start": 3637, "utf8_end": 4684, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** GU-T018 governs ગુણધર્મ વડે ગણરચના for comprehension. The present forms extend that decision: પ્રરૂપ marks the unrestricted formula schema, સિદ્ધાંત names the corresponding principle and પૃથક્કરણ names the restricted ZFC principle selecting elements from an existing set. સહજ renders the source's warning label naive without implying simplicity of proof.
+- **Alternatives:** સહજ બોધ-પ્રરૂપ — closer to a literal philosophical gloss, but obscures the set-forming operation.; વિભાજન સિદ્ધાંત — can suggest partition into disjoint pieces rather than restricted set selection.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સહજ ગુણધર્મ-ગણરચના પ્રરૂપ / ગુણધર્મ-ગણરચના સિદ્ધાંત / પૃથક્કરણ સિદ્ધાંત’ accurately express ‘naive comprehension scheme / comprehension principle / separation principle’ with the scope stated here: GU-T018 governs ગુણધર્મ વડે ગણરચના for comprehension. The present forms extend that decision: પ્રરૂપ marks the unrestricted formula schema, સિદ્ધાંત names the corresponding principle and પૃથક્કરણ names the restricted ZFC principle selecting elements from an existing set. સહજ renders the source's warning label naive without implying simplicity of proof. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -2840,3 +2906,66 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLSEM-011 without changing any unaffected claim or formula?
+
+### OLMAT-001: confirmed_missing_quantifier_argument_bracket
+
+- **Frozen source:** `upstream/content/first-order-logic/models-theories/theories.tex` at `theories.tex:75`; SHA-256 `5ce32448dbe95d0b37477a6c343ae3a976bb299c955f50ae206b0f150f09ccd5`.
+- **Gujarati target:** `gu/content/first-order-logic/models-theories/theories.tex` body line(s) 72; adjacent note line 81; SHA-256 `e8bf84fc01f801463e642131fe67d544635c8ce03287128731a06e6cd984e08b`.
+- **Chosen handling:** Restored the quantified argument as a bracketed formula and added an adjacent keyed note.
+- **Rationale:** The extensionality axiom opens the quantified argument with a parenthesis instead of the square bracket required by the logical macro.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAT-001 without changing any unaffected claim or formula?
+
+### OLMAT-002: confirmed_missing_object_language_marker
+
+- **Frozen source:** `upstream/content/first-order-logic/models-theories/expressing-relations.tex` at `expressing-relations.tex:64`; SHA-256 `37f0dcfda647cea12a9e3182a4e868092993f1d928faca29225f8e6efb82f87b`.
+- **Gujarati target:** `gu/content/first-order-logic/models-theories/expressing-relations.tex` body line(s) 65; adjacent note line 69; SHA-256 `a2c20ebe9ab017c16a8c5ae02c69855c72230f40a279a3cc67ad312f620e85a9`.
+- **Chosen handling:** Restored the object-language marker on v_2 and added an adjacent keyed note.
+- **Rationale:** The right side of the second strict-order definition omits the object-language marker on v_2.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAT-002 without changing any unaffected claim or formula?
+
+### OLMAT-003: confirmed_implication_consequents_outside_quantifier_scope
+
+- **Frozen source:** `upstream/content/first-order-logic/models-theories/set-theory.tex` at `set-theory.tex:121`; SHA-256 `e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf`.
+- **Gujarati target:** `gu/content/first-order-logic/models-theories/set-theory.tex` body line(s) 118; adjacent note line 126; SHA-256 `1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48`.
+- **Chosen handling:** Moved both implication consequents into their universal quantifier scopes and added an adjacent keyed note.
+- **Rationale:** Both universal formulas defining a function close their quantified arguments immediately after the implication symbol, leaving each consequent outside its quantifier scope.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAT-003 without changing any unaffected claim or formula?
+
+### OLMAT-004: confirmed_injectivity_scope_and_bracket_error
+
+- **Frozen source:** `upstream/content/first-order-logic/models-theories/set-theory.tex` at `set-theory.tex:135`; SHA-256 `e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf`.
+- **Gujarati target:** `gu/content/first-order-logic/models-theories/set-theory.tex` body line(s) 139; adjacent note line 143; SHA-256 `1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48`.
+- **Chosen handling:** Kept the entire conditional inside both universal quantifiers, restored their closing brackets and added an adjacent keyed note.
+- **Rationale:** The injectivity formula closes both universal quantifiers before the existential antecedent and omits their closing brackets at the end.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAT-004 without changing any unaffected claim or formula?
+
+### OLMAT-005: confirmed_missing_closing_parenthesis_in_separation
+
+- **Frozen source:** `upstream/content/first-order-logic/models-theories/set-theory.tex` at `set-theory.tex:170`; SHA-256 `e85d5beac63c3e6a5c44bec12aabbfe05e0b2af8f2604d6d79bb5220587eaeaf`.
+- **Gujarati target:** `gu/content/first-order-logic/models-theories/set-theory.tex` body line(s) 177; adjacent note line 179; SHA-256 `1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48`.
+- **Chosen handling:** Added the missing closing parenthesis to the biconditional and added an adjacent keyed note.
+- **Rationale:** The separation formula closes the conjunction and A(x) but not the outer biconditional before closing its quantifiers.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAT-005 without changing any unaffected claim or formula?
+
+## Source-claim qualifications
+
+### OLINF-002-Q1: OLINF-002 classification withdrawn
+
+- **Disposition:** `rejected_false_positive_source_correction_classification`; independent disposition `OLP0054-CARDEQ-NOT-AN-ERROR-20260919`.
+- **Frozen source:** `upstream/content/sets-functions-relations/infinite/card-sb.tex` at `card-sb.tex:52`; SHA-256 `88534a3f2be736a704ab31343e45933edb9712fa5b4411eb102c0f4a12d656e9`.
+- **Configuration evidence:** `upstream/open-logic-config.sty` line 956 defines a two-argument macro; literal expansion is `A \approx B \approx C`.
+- **Historical record:** `SOURCE_CORRECTIONS_006.json` is retained for audit history, but its source-error classification is superseded by this record.
+- **Gujarati target:** `gu/content/sets-functions-relations/infinite/card-sb.tex` body line 51; adjacent qualification note line 53; SHA-256 `dc576fc74ba0150f94668edf1a2f02bf94c3f51440645ff8fcc4774c2f10be51`.
+- **Chosen handling:** Retained the Gujarati proposition's explicit conjunction of A≈B and B≈C as an equivalent readability choice, and rewrote the adjacent note to withdraw the earlier source-error classification.
+- **Rationale:** The frozen source macro takes two arguments. Literal TeX substitution expands the nested expression to A≈B≈C, and the proof establishes both comparisons in that chain. The source therefore has no arity, typing, or mathematical defect at this location.
+- **Upstream contact:** None; `upstream_message_sent` is false.
