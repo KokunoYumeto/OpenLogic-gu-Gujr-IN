@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-source-checkpoint-publication/1",
+  "verified_at_utc": "2026-09-19T18:59:53.877004+00:00",
+  "commit": "46469a10ef960bec266268a6379516b6784cec8e",
+  "commit_url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/commit/46469a10ef960bec266268a6379516b6784cec8e",
+  "codeload_url": "https://codeload.github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/zip/46469a10ef960bec266268a6379516b6784cec8e",
+  "archive": {
+    "bytes": 18860552,
+    "sha256": "911038c1d79b4156f13fcc5d269e5055d05ece2ecd467c79b432530eb60d65b2"
+  },
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "coverage": {
+    "current_public_source_checkpoint_units": 163,
+    "total_units": 722,
+    "public_artifact_release_units": 155,
+    "complete_edition": false
+  },
+  "checkpoint": {
+    "path": "provenance/SOURCE_CHECKPOINT_016.json",
+    "bytes": 68174,
+    "sha256": "0bf9bfe32fb55b4ab2d579e8fe9410e9d0f29ff46cc3ca8a4e5aa8345f900e18",
+    "inventory_files_verified": 365,
+    "mismatches": []
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-First-Order-Semantics.epub",
+    "bytes": 507586,
+    "sha256": "03ebbc4299b413685af345840d1002095c599a82cd1713b93135a628407c81e7",
+    "anonymous_exact_commit_readback": true
+  },
+  "status": "passed_anonymous_exact_commit_readback"
+}
