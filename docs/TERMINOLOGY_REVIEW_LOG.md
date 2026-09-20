@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-20T02:06:34.385577+00:00. This is a **complete decision log for the current 187/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 178/722 units with checkpoint 018. It contains all 179 terminology decisions from the durable ledger and all 136 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
+Updated 2026-09-20T02:06:34.385577+00:00. This is a **complete decision log for the current 187/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint and artifact verification cover 187/722 units with checkpoint 019 and release v0.13.0. It contains all 179 terminology decisions from the durable ledger and all 136 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 

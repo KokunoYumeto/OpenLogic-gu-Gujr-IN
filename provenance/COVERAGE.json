@@ -5,15 +5,15 @@
   "working_scope": "Complete cumulative translation through Model Theory Basics, OLP-0004–0190",
   "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
   "public_release": {
-    "tag": "beyond-v0.12.0",
-    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/beyond-v0.12.0",
-    "translated": 178,
-    "scope": "Complete cumulative artifact release through Beyond First-order Logic, OLP-0004–0181"
+    "tag": "model-theory-basics-v0.13.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/model-theory-basics-v0.13.0",
+    "translated": 187,
+    "scope": "Complete cumulative artifact release through Model Theory Basics, OLP-0004–0190"
   },
   "public_source_checkpoint": {
-    "commit": "49f73e558a53510032adad34dc562260dbf62538",
-    "translated": 178,
-    "scope": "Previous anonymously verified source checkpoint through Beyond First-order Logic, OLP-0004–0181; checkpoint 019 is represented by the commit containing this file"
+    "commit": "721c2112fcaa0ec0a1f1299f50af184e9ad7c70a",
+    "translated": 187,
+    "scope": "Anonymously verified source checkpoint through Model Theory Basics, OLP-0004–0190"
   },
   "complete_edition": false,
   "units": [
@@ -1285,63 +1285,63 @@
       "unit_id": "OLP-0182",
       "source_path": "content/model-theory/model-theory.tex",
       "source_sha256": "b003b16803f9b40df8da5a6664ff8ee5198559f77e88616aea9911323b757abf",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "fa75208fea7abeccce45a4cf7fcce795e4bc12ef1dd5b2c0294c496493b54c04"
     },
     {
       "unit_id": "OLP-0183",
       "source_path": "content/model-theory/basics/basics.tex",
       "source_sha256": "cc084be5f263daff1704017021244d4927bdd9fa4d1d808ed186265ff4e75495",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "697c3bc26eed60a4ba358af401aa47ce9090a7b3461e790bdfe2220e4dda9094"
     },
     {
       "unit_id": "OLP-0184",
       "source_path": "content/model-theory/basics/reducts-and-expansions.tex",
       "source_sha256": "8ba69b70aa9f9ce0d2cdd1e468906bd1f2d06ab97e5dd448a9e062edc3822205",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "4e91eaca76b92935da1c93ca6cc19a1ffe4d5aadabd4f90191aa0fa64bb9e9d8"
     },
     {
       "unit_id": "OLP-0185",
       "source_path": "content/model-theory/basics/substructures.tex",
       "source_sha256": "7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "f679dd2331b3dc04f808d044d58b91908392df44c5e60766a13ed5aa2bf1cac0"
     },
     {
       "unit_id": "OLP-0186",
       "source_path": "content/model-theory/basics/overspill.tex",
       "source_sha256": "e45ee9f5556ac6d7e9c55c8be3d568a03a6cdbce8d1969d7c8b025bea058e99a",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "bfa997c52575ce5a534b7403b111a467548d259d70673546f02873dedbfe3159"
     },
     {
       "unit_id": "OLP-0187",
       "source_path": "content/model-theory/basics/isomorphism.tex",
       "source_sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c"
     },
     {
       "unit_id": "OLP-0188",
       "source_path": "content/model-theory/basics/theory-of-m.tex",
       "source_sha256": "c88232929eb2391b9b24b6f95ed5c85ef44238988e15c186f9def62488913cd0",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "e5c6f3c3aa03dcd05d302a40bab06c34183a31525a863bb7f63a8ed08dbad2ed"
     },
     {
       "unit_id": "OLP-0189",
       "source_path": "content/model-theory/basics/partial-iso.tex",
       "source_sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573"
     },
     {
       "unit_id": "OLP-0190",
       "source_path": "content/model-theory/basics/dlo.tex",
       "source_sha256": "9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "a06e126a73cdb2c499d9f3711e43f640f47dd0c8621d7a8e105ea1b602148d3a"
     },
     {
