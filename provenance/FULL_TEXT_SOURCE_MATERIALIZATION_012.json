@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-full-text-source-materialization/1",
+  "generated_at_utc": "2026-09-20T00:02:25.305974+00:00",
+  "release_tag": "beyond-v0.12.0",
+  "coverage": {
+    "translated": 178,
+    "total": 722,
+    "complete_edition": false
+  },
+  "output": {
+    "filename": "OpenLogic-gu-Gujr-IN-Beyond-Full-Text.tex",
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Beyond-Full-Text.tex",
+    "bytes": 1414574,
+    "sha256": "74580f2cdc294a3f1d0a39c4c7a93cdf0faff0e317dcff6797c7c64a89f24447"
+  },
+  "materialized_components": [
+    {
+      "path": "gu-beyond.tex",
+      "bytes": 4268,
+      "sha256": "b5470efacc210cce6176ba5c930af8a26f1f0715ed3777a31824512594e7a5dd"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 20881,
+      "sha256": "3d40a43e0044b1e2d77aa1cc620ef3b4a8959cfb51405445a1972f5f1da77682"
+    },
+    {
+      "path": "build/foundations-preamble.tex",
+      "bytes": 3298,
+      "sha256": "accb9509b987796dbab2edad014bf729763f8736a8d46b8f0c621c5ad54b24ea"
+    },
+    {
+      "path": "build/beyond-available-labels.tex",
+      "bytes": 31888,
+      "sha256": "65eb0261020da3851d468b7ef08170b8cf0cbfafc6dfecfee4940c7c8aaeef70"
+    },
+    {
+      "path": "build/beyond-body.tex",
+      "bytes": 1353675,
+      "sha256": "a111db20976f8f0072b4394a4b46c12d759e4b5becf440a225d1d7346ce74ef0"
+    }
+  ],
+  "content_checks": {
+    "reader_body_embedded_exactly": true,
+    "label_index_embedded_exactly": true,
+    "base_driver_embedded": true,
+    "preamble_embedded": true,
+    "rendered_sections": 158,
+    "source_correction_disclosures": 128,
+    "unresolved_cumulative_body_inputs": 0
+  },
+  "dependency_note": "OpenLogic style files, fonts, bibliography support, and diagram assets remain external dependencies supplied by the companion complete source ZIP.",
+  "status": "materialized_pending_guarded_exact_reader_reproduction"
+}

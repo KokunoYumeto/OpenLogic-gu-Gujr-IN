@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-source-checkpoint-publication/1",
+  "verified_at_utc": "2026-09-20T00:00:42.693705+00:00",
+  "commit": "49f73e558a53510032adad34dc562260dbf62538",
+  "commit_url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/commit/49f73e558a53510032adad34dc562260dbf62538",
+  "codeload_url": "https://codeload.github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/zip/49f73e558a53510032adad34dc562260dbf62538",
+  "archive": {
+    "bytes": 24365779,
+    "sha256": "c88f279bc99e27d3900e5894846544055946d2a8dadc4496986d68607fe2eb59"
+  },
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "coverage": {
+    "current_public_source_checkpoint_units": 178,
+    "total_units": 722,
+    "public_artifact_release_units": 170,
+    "complete_edition": false
+  },
+  "checkpoint": {
+    "path": "provenance/SOURCE_CHECKPOINT_018.json",
+    "bytes": 74967,
+    "sha256": "2137c10ac1d3fedc31f23e0f4b7fc652f38e915e26679aff4d1aa868ea7ca48d",
+    "inventory_files_verified": 403,
+    "mismatches": []
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Beyond.epub",
+    "bytes": 545538,
+    "sha256": "f69b056e0883707286a44772e999e47c51b7488e258ddd3924ec8ecfbfb81d41",
+    "anonymous_exact_commit_readback": true
+  },
+  "status": "passed_anonymous_exact_commit_readback"
+}

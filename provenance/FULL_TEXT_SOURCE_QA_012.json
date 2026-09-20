@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/1",
+  "started_at_utc": "2026-09-20T00:09:57.2147642Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 300000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "input": {
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Beyond-Full-Text.tex",
+    "bytes": 1414574,
+    "sha256": "74580f2cdc294a3f1d0a39c4c7a93cdf0faff0e317dcff6797c7c64a89f24447"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 50780,
+      "exit_code": 0,
+      "seconds": 22.6308839,
+      "pdf_bytes": 1911503,
+      "pdf_sha256": "4dab1d48c748fc90a10281f8fc2072c8439ecbccbc2ca04f00f488a60858943d",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 2,
+      "process_id": 43644,
+      "exit_code": 0,
+      "seconds": 21.3741585,
+      "pdf_bytes": 2044752,
+      "pdf_sha256": "05092bd99c876182d4c4d38845a31e60b7f6932d8c8848329cdad0970c841308",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 3,
+      "process_id": 46420,
+      "exit_code": 0,
+      "seconds": 21.4469382,
+      "pdf_bytes": 2044815,
+      "pdf_sha256": "3d1bada274079b4c3b573bb431a467cf8ab41b695f0b2cdfe57bf68d0c259ed0",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 4,
+      "process_id": 49328,
+      "exit_code": 0,
+      "seconds": 21.1063135,
+      "pdf_bytes": 2044815,
+      "pdf_sha256": "3d1bada274079b4c3b573bb431a467cf8ab41b695f0b2cdfe57bf68d0c259ed0",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 5,
+      "process_id": 49492,
+      "exit_code": 0,
+      "seconds": 19.814015,
+      "pdf_bytes": 2044815,
+      "pdf_sha256": "3d1bada274079b4c3b573bb431a467cf8ab41b695f0b2cdfe57bf68d0c259ed0",
+      "byte_identical_to_accepted_release_pdf": true
+    }
+  ],
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction",
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Beyond.pdf",
+    "bytes": 2044815,
+    "sha256": "3d1bada274079b4c3b573bb431a467cf8ab41b695f0b2cdfe57bf68d0c259ed0"
+  },
+  "verification": {
+    "convergence_passes": 2,
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 178,
+    "total_units": 722
+  },
+  "ended_at_utc": "2026-09-20T00:15:33.3773820Z"
+}
