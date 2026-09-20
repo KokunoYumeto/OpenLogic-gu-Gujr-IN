@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-full-text-source-materialization/1",
+  "generated_at_utc": "2026-09-20T02:25:33.083437+00:00",
+  "release_tag": "model-theory-basics-v0.13.0",
+  "coverage": {
+    "translated": 187,
+    "total": 722,
+    "complete_edition": false
+  },
+  "output": {
+    "filename": "OpenLogic-gu-Gujr-IN-Model-Theory-Basics-Full-Text.tex",
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Model-Theory-Basics-Full-Text.tex",
+    "bytes": 1464430,
+    "sha256": "9b73fa67fd94285fd83598f87b9075ee6e029d5cb6db6a28012a45e116e52514"
+  },
+  "materialized_components": [
+    {
+      "path": "gu-model-theory-basics.tex",
+      "bytes": 5442,
+      "sha256": "460021952da938da9517b849da78f9ba7116787ce335f3976194b115e417a70a"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 20881,
+      "sha256": "3d40a43e0044b1e2d77aa1cc620ef3b4a8959cfb51405445a1972f5f1da77682"
+    },
+    {
+      "path": "build/foundations-preamble.tex",
+      "bytes": 3336,
+      "sha256": "fad2d6f5d88df7344cadc2e30148075594c903f3b626e32b0a0a8895e354fee8"
+    },
+    {
+      "path": "build/model-theory-basics-available-labels.tex",
+      "bytes": 34031,
+      "sha256": "848747bc44bf70ae3937c8eb83547f13b3ab6722fe602b9bb79949327e33caaa"
+    },
+    {
+      "path": "build/model-theory-basics-body.tex",
+      "bytes": 1400163,
+      "sha256": "ad3da46ab3927f282e4805274357558ce2c88c7ebf9745e3ea467a90b46bbeef"
+    }
+  ],
+  "content_checks": {
+    "reader_body_embedded_exactly": true,
+    "label_index_embedded_exactly": true,
+    "base_driver_embedded": true,
+    "preamble_embedded": true,
+    "rendered_sections": 165,
+    "source_correction_disclosures": 136,
+    "unresolved_cumulative_body_inputs": 0
+  },
+  "dependency_note": "OpenLogic style files, fonts, bibliography support, and diagram assets remain external dependencies supplied by the companion complete source ZIP.",
+  "status": "materialized_pending_guarded_exact_reader_reproduction"
+}

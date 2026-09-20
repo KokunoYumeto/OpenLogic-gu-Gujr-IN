@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/1",
+  "started_at_utc": "2026-09-20T02:25:51.9281843Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 60000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "input": {
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Model-Theory-Basics-Full-Text.tex",
+    "bytes": 1464430,
+    "sha256": "9b73fa67fd94285fd83598f87b9075ee6e029d5cb6db6a28012a45e116e52514"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 54900,
+      "exit_code": 0,
+      "seconds": 25.1573567,
+      "pdf_bytes": 1985363,
+      "pdf_sha256": "9c484740cecebf00d66c0813a039253b066f4d3cf7d2f4a8d90e14f47fd4e58c",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 2,
+      "process_id": 54436,
+      "exit_code": 0,
+      "seconds": 22.4052794,
+      "pdf_bytes": 2125332,
+      "pdf_sha256": "1d4f5e31906ce0c5d4c94c7f4895c084dddfda06f8319eeb376e45065916fa21",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 3,
+      "process_id": 21328,
+      "exit_code": 0,
+      "seconds": 28.4180852,
+      "pdf_bytes": 2125396,
+      "pdf_sha256": "2601984ffd377d3a44c86598485cb6e02e0aac04b7dcd3d328da94c967c6f09a",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 4,
+      "process_id": 11288,
+      "exit_code": 0,
+      "seconds": 29.5818567,
+      "pdf_bytes": 2125396,
+      "pdf_sha256": "2601984ffd377d3a44c86598485cb6e02e0aac04b7dcd3d328da94c967c6f09a",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 5,
+      "process_id": 40836,
+      "exit_code": 0,
+      "seconds": 30.5841121,
+      "pdf_bytes": 2125396,
+      "pdf_sha256": "2601984ffd377d3a44c86598485cb6e02e0aac04b7dcd3d328da94c967c6f09a",
+      "byte_identical_to_accepted_release_pdf": true
+    }
+  ],
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction",
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Model-Theory-Basics.pdf",
+    "bytes": 2125396,
+    "sha256": "2601984ffd377d3a44c86598485cb6e02e0aac04b7dcd3d328da94c967c6f09a"
+  },
+  "verification": {
+    "convergence_passes": 2,
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 187,
+    "total_units": 722
+  },
+  "ended_at_utc": "2026-09-20T02:28:08.1282457Z"
+}

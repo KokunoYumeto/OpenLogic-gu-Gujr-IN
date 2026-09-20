@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-source-checkpoint-publication/1",
+  "verified_at_utc": "2026-09-20T02:23:33.485707+00:00",
+  "commit": "721c2112fcaa0ec0a1f1299f50af184e9ad7c70a",
+  "commit_url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/commit/721c2112fcaa0ec0a1f1299f50af184e9ad7c70a",
+  "codeload_url": "https://codeload.github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/zip/721c2112fcaa0ec0a1f1299f50af184e9ad7c70a",
+  "archive": {
+    "bytes": 27405380,
+    "sha256": "e9e07f1c0ea0208cf64474cf5d22a4b9c6beccae36cdc92d256f3dbd18f49e8b"
+  },
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "coverage": {
+    "current_public_source_checkpoint_units": 187,
+    "total_units": 722,
+    "public_artifact_release_units": 178,
+    "complete_edition": false
+  },
+  "checkpoint": {
+    "path": "provenance/SOURCE_CHECKPOINT_019.json",
+    "bytes": 78136,
+    "sha256": "d937c9f6baac205bf28e288f053005ed97ff234cac86bcf0c77b57176faafb3a",
+    "inventory_files_verified": 421,
+    "mismatches": []
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.epub",
+    "bytes": 560795,
+    "sha256": "c76190ae589df8f032a3856c83eff94877cae1eb72e20302a3bac461d469876b",
+    "anonymous_exact_commit_readback": true
+  },
+  "status": "passed_anonymous_exact_commit_readback"
+}
