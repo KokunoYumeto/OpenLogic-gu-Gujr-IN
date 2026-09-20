@@ -1,10 +1,10 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-20T15:04:05.519469+00:00",
+  "checkpoint_utc": "2026-09-20T15:34:11.151489+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
   "translated_units": 194,
-  "publicly_verified_release_units": 187,
+  "publicly_verified_release_units": 194,
   "publicly_verified_source_checkpoint_units": 194,
   "total_units": 722,
   "aligned_linguistic_blocks": 2093,
@@ -574,7 +574,7 @@
       "exact_block_reviews": 84
     }
   },
-  "status": "194_unit_source_checkpoint_anonymously_verified; artifact_release_remains_187_units; complete_corpus_in_progress",
+  "status": "194_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -590,33 +590,33 @@
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/model-theory-basics-v0.13.0",
-    "github_receipt": "PUBLICATION_RECEIPT_013.json",
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/models-arithmetic-v0.14.0",
+    "github_receipt": "PUBLICATION_RECEIPT_014.json",
     "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_020.json",
-    "zenodo_record": "https://zenodo.org/records/22851934",
-    "zenodo_doi": "10.5281/zenodo.22851934",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_013.json",
+    "zenodo_record": "https://zenodo.org/records/22859970",
+    "zenodo_doi": "10.5281/zenodo.22859970",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_014.json",
     "artifact_order": [
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.pdf",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics-source.zip",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.tex",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.epub",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.html",
-      "SHA256SUMS-model-theory-basics.txt",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics-QA.json"
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.pdf",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-source.zip",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.tex",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.html",
+      "SHA256SUMS-models-arithmetic.txt",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-QA.json"
     ],
     "downloads": {
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.pdf",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/OpenLogic-gu-Gujr-IN-Model-Theory-Basics-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/OpenLogic-gu-Gujr-IN-Model-Theory-Basics-source.zip",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.tex",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.epub",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.html",
-      "SHA256SUMS-model-theory-basics.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/SHA256SUMS-model-theory-basics.txt",
-      "OpenLogic-gu-Gujr-IN-Model-Theory-Basics-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/model-theory-basics-v0.13.0/OpenLogic-gu-Gujr-IN-Model-Theory-Basics-QA.json"
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.pdf",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-source.zip",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.tex",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.html",
+      "SHA256SUMS-models-arithmetic.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/SHA256SUMS-models-arithmetic.txt",
+      "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-QA.json"
     },
-    "status": "current_source_checkpoint_and_preserved_artifact_release_anonymously_verified"
+    "status": "all_eight_ordered_artifacts_full_text_source_inventory_and_pdf_preview_anonymously_verified"
   },
   "batch_008": {
     "draft_units": 6,
