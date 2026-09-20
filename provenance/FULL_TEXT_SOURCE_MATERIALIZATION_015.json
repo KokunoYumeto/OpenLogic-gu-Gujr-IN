@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-full-text-source-materialization/1",
+  "generated_at_utc": "2026-09-20T22:18:12.473453+00:00",
+  "release_tag": "interpolation-v0.15.0",
+  "coverage": {
+    "translated": 199,
+    "total": 722,
+    "complete_edition": false
+  },
+  "output": {
+    "filename": "OpenLogic-gu-Gujr-IN-Interpolation-Full-Text.tex",
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Interpolation-Full-Text.tex",
+    "bytes": 1576404,
+    "sha256": "5382ba4055cf34cdc605fda202fd3399c270026db449008a6a0b951d583738a9"
+  },
+  "materialized_components": [
+    {
+      "path": "gu-interpolation.tex",
+      "bytes": 5240,
+      "sha256": "dff1fad1b707100ce1198d81c6a749ef783e54222cbd36d16b7aa91bcc111aab"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 20933,
+      "sha256": "268e3fcd2b5f96c750d4d83c39d5e9448d860a85ee5cb0c8fe0a8d0770e13b8a"
+    },
+    {
+      "path": "build/foundations-preamble.tex",
+      "bytes": 3336,
+      "sha256": "fad2d6f5d88df7344cadc2e30148075594c903f3b626e32b0a0a8895e354fee8"
+    },
+    {
+      "path": "build/interpolation-available-labels.tex",
+      "bytes": 35729,
+      "sha256": "b2378bfd6e53bf9c9f214b75b6379654b8326326ff45477ae63d7d5e7398c6e8"
+    },
+    {
+      "path": "build/interpolation-body.tex",
+      "bytes": 1510596,
+      "sha256": "d8b311e09799baef802a317e227b40e327ec633f345fb2e6492959307389a7dd"
+    }
+  ],
+  "content_checks": {
+    "reader_body_embedded_exactly": true,
+    "label_index_embedded_exactly": true,
+    "base_driver_embedded": true,
+    "preamble_embedded": true,
+    "rendered_sections": 175,
+    "source_correction_disclosures": 162,
+    "unresolved_cumulative_body_inputs": 0
+  },
+  "dependency_note": "OpenLogic style files, fonts, bibliography support, and diagram assets remain external dependencies supplied by the companion complete source ZIP.",
+  "status": "materialized_pending_guarded_exact_reader_reproduction"
+}

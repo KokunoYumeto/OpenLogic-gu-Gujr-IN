@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/1",
+  "started_at_utc": "2026-09-20T22:18:46.4439437Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 600000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "input": {
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Interpolation-Full-Text.tex",
+    "bytes": 1576404,
+    "sha256": "5382ba4055cf34cdc605fda202fd3399c270026db449008a6a0b951d583738a9"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 12216,
+      "exit_code": 0,
+      "seconds": 26.8619144,
+      "pdf_bytes": 2145353,
+      "pdf_sha256": "d5c91a63c11a807f70b1c9a24d78207b7c313de7c4280ad3214ad3096a1f2c6a",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 2,
+      "process_id": 23408,
+      "exit_code": 0,
+      "seconds": 31.9672125,
+      "pdf_bytes": 2295273,
+      "pdf_sha256": "84ae4f1e4b5822364e2c75a162e0e5aa31cec88e3775960cdceb8746c6adccba",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 3,
+      "process_id": 35920,
+      "exit_code": 0,
+      "seconds": 30.8011467,
+      "pdf_bytes": 2295335,
+      "pdf_sha256": "3e42c61a77ce9987e8c04e000fc81f19ea5bf4d8bf5e1fe19e0fba6f3d604729",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 4,
+      "process_id": 5368,
+      "exit_code": 0,
+      "seconds": 30.0829841,
+      "pdf_bytes": 2295335,
+      "pdf_sha256": "3e42c61a77ce9987e8c04e000fc81f19ea5bf4d8bf5e1fe19e0fba6f3d604729",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 5,
+      "process_id": 51968,
+      "exit_code": 0,
+      "seconds": 30.4758942,
+      "pdf_bytes": 2295335,
+      "pdf_sha256": "3e42c61a77ce9987e8c04e000fc81f19ea5bf4d8bf5e1fe19e0fba6f3d604729",
+      "byte_identical_to_accepted_release_pdf": true
+    }
+  ],
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction",
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Interpolation.pdf",
+    "bytes": 2295335,
+    "sha256": "3e42c61a77ce9987e8c04e000fc81f19ea5bf4d8bf5e1fe19e0fba6f3d604729"
+  },
+  "verification": {
+    "convergence_passes": 2,
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 199,
+    "total_units": 722
+  },
+  "ended_at_utc": "2026-09-20T22:22:22.1676726Z"
+}

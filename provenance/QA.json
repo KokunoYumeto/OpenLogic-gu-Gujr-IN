@@ -5,7 +5,7 @@
   "source_units_verified": 722,
   "translated_units": 199,
   "publicly_verified_release_units": 194,
-  "publicly_verified_source_checkpoint_units": 194,
+  "publicly_verified_source_checkpoint_units": 199,
   "total_units": 722,
   "aligned_linguistic_blocks": 2125,
   "source_math_spans_verified": 11871,
@@ -610,7 +610,7 @@
       "exact_block_reviews": 32
     }
   },
-  "status": "199_unit_source_html_pdf_epub_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_194_units; complete_corpus_in_progress",
+  "status": "199_unit_source_checkpoint_anonymously_verified; artifact_release_remains_194_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -628,7 +628,7 @@
   "publication": {
     "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/models-arithmetic-v0.14.0",
     "github_receipt": "PUBLICATION_RECEIPT_014.json",
-    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_020.json",
+    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_021.json",
     "zenodo_record": "https://zenodo.org/records/22859970",
     "zenodo_doi": "10.5281/zenodo.22859970",
     "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_014.json",
@@ -652,7 +652,7 @@
       "SHA256SUMS-models-arithmetic.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/SHA256SUMS-models-arithmetic.txt",
       "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/models-arithmetic-v0.14.0/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-QA.json"
     },
-    "status": "all_eight_ordered_artifacts_full_text_source_inventory_and_pdf_preview_anonymously_verified"
+    "status": "current_source_checkpoint_and_preserved_artifact_release_anonymously_verified"
   },
   "batch_008": {
     "draft_units": 6,
