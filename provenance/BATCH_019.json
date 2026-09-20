@@ -1,0 +1,159 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-20T02:17:30.583958+00:00",
+  "boundary": "Model Theory Basics OLP-0182–0190 under the cumulative Model Theory profile",
+  "units": [
+    {
+      "unit_id": "OLP-0182",
+      "source_sha256": "b003b16803f9b40df8da5a6664ff8ee5198559f77e88616aea9911323b757abf",
+      "target_sha256": "fa75208fea7abeccce45a4cf7fcce795e4bc12ef1dd5b2c0294c496493b54c04",
+      "source_bytes": 792,
+      "target_bytes": 1872,
+      "aligned_blocks": 11,
+      "raw_source_blocks": 11,
+      "linguistic_blocks": 2,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0183",
+      "source_sha256": "cc084be5f263daff1704017021244d4927bdd9fa4d1d808ed186265ff4e75495",
+      "target_sha256": "697c3bc26eed60a4ba358af401aa47ce9090a7b3461e790bdfe2220e4dda9094",
+      "source_bytes": 408,
+      "target_bytes": 447,
+      "aligned_blocks": 14,
+      "raw_source_blocks": 14,
+      "linguistic_blocks": 1,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0184",
+      "source_sha256": "8ba69b70aa9f9ce0d2cdd1e468906bd1f2d06ab97e5dd448a9e062edc3822205",
+      "target_sha256": "4e91eaca76b92935da1c93ca6cc19a1ffe4d5aadabd4f90191aa0fa64bb9e9d8",
+      "source_bytes": 2275,
+      "target_bytes": 3417,
+      "aligned_blocks": 11,
+      "raw_source_blocks": 11,
+      "linguistic_blocks": 7,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0185",
+      "source_sha256": "7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904",
+      "target_sha256": "f679dd2331b3dc04f808d044d58b91908392df44c5e60766a13ed5aa2bf1cac0",
+      "source_bytes": 1760,
+      "target_bytes": 3199,
+      "aligned_blocks": 9,
+      "raw_source_blocks": 9,
+      "linguistic_blocks": 4,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0186",
+      "source_sha256": "e45ee9f5556ac6d7e9c55c8be3d568a03a6cdbce8d1969d7c8b025bea058e99a",
+      "target_sha256": "bfa997c52575ce5a534b7403b111a467548d259d70673546f02873dedbfe3159",
+      "source_bytes": 1426,
+      "target_bytes": 2445,
+      "aligned_blocks": 9,
+      "raw_source_blocks": 9,
+      "linguistic_blocks": 5,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0187",
+      "source_sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+      "target_sha256": "8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c",
+      "source_bytes": 5185,
+      "target_bytes": 8594,
+      "aligned_blocks": 14,
+      "raw_source_blocks": 14,
+      "linguistic_blocks": 10,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0188",
+      "source_sha256": "c88232929eb2391b9b24b6f95ed5c85ef44238988e15c186f9def62488913cd0",
+      "target_sha256": "e5c6f3c3aa03dcd05d302a40bab06c34183a31525a863bb7f63a8ed08dbad2ed",
+      "source_bytes": 2258,
+      "target_bytes": 3717,
+      "aligned_blocks": 14,
+      "raw_source_blocks": 14,
+      "linguistic_blocks": 9,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0189",
+      "source_sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+      "target_sha256": "af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573",
+      "source_bytes": 9479,
+      "target_bytes": 17909,
+      "aligned_blocks": 27,
+      "raw_source_blocks": 27,
+      "linguistic_blocks": 23,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0190",
+      "source_sha256": "9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531",
+      "target_sha256": "a06e126a73cdb2c499d9f3711e43f640f47dd0c8621d7a8e105ea1b602148d3a",
+      "source_bytes": 3509,
+      "target_bytes": 5963,
+      "aligned_blocks": 10,
+      "raw_source_blocks": 10,
+      "linguistic_blocks": 7,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 68,
+  "aligned_blocks": 119,
+  "source_math_spans": 480,
+  "corrected_source_math_spans": 486,
+  "source_corrections": [
+    {
+      "finding_id": "OLMTB-001",
+      "unit_id": "OLP-0182",
+      "handling": "Translated the contextually clear ‘is planning’ reading and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMTB-002",
+      "unit_id": "OLP-0185",
+      "handling": "Required N to be nonempty and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMTB-003",
+      "unit_id": "OLP-0187",
+      "handling": "Replaced the mistaken M by M' in that equation and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMTB-004",
+      "unit_id": "OLP-0187",
+      "handling": "Restored the closing parenthesis and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMTB-005",
+      "unit_id": "OLP-0189",
+      "handling": "Made the later parenthetical agree with the earlier explicit definition and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMTB-006",
+      "unit_id": "OLP-0189",
+      "handling": "Named the common sequence length k and indexed its variables through x_k, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMTB-007",
+      "unit_id": "OLP-0189",
+      "handling": "Used one representative from each satisfied equivalence class and their finite conjunction, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMTB-008",
+      "unit_id": "OLP-0190",
+      "handling": "Added the empty-map and already-mapped cases before the remaining order-position cases, with an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_019.json",
+  "semantic_review": "Exact-block review is recorded for all 68 aligned linguistic blocks; see SEMANTIC_REVIEW_019.json.",
+  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, reflowable EPUB, EPUBCheck, EPUB runtime, untranslated-prose and reviewer-decision QA passed.",
+  "translation_decisions": "Reviewer package regenerated: 318 effective schema-valid decisions, 326 exact occurrences, 325 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and no pending locators. The OLINF-002 historical false-positive classification remains explicitly qualified.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
+}

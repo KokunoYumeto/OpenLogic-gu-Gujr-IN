@@ -1,0 +1,239 @@
+% Part: model-theory
+% Chapter: basics
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{pis}
+\section{આંશિક એકરૂપતાઓ}
+
+\begin{defn}
+  બે !!{structure}s $\Struct{M}$ અને $\Struct{N}$ આપેલી હોય ત્યારે
+  $\Struct{M}$થી $\Struct{N}$ તરફની \emph{આંશિક એકરૂપતા} એ
+  $\Domain M$માં દલીલો લઈને $\Domain N$માં મૂલ્યો આપતું સાન્ત આંશિક
+  વિધેય $p$ છે, જે પોતાના પ્રદેશ પર
+  \olref[iso]{defn:isomorphism}ની એકરૂપતા-શરતો સંતોષે છે:
+  \begin{enumerate}
+  \item $p$ !!{injective} છે;
+  \item દરેક !!{constant}~$c$ માટે: જો $p(\Assign{c}{M})$
+    વ્યાખ્યાયિત હોય, તો $p(\Assign{c}{M}) = \Assign{c}{N}$;
+  \item દરેક $n$-સ્થાની !!{predicate} $P$ માટે: જો $a_1$, \dots,
+    $a_n$, $p$ના પ્રદેશમાં હોય, તો $\langle a_1, \dots, a_n\rangle
+    \in \Assign P M$ ત્યારે અને માત્ર ત્યારે જ્યારે
+    $\langle p(a_1), \dots, p(a_n) \rangle \in \Assign P N$;
+  \item દરેક $n$-સ્થાની !!{function} $f$ માટે: જો $a_1$, \dots,
+    $a_n$, $p$ના પ્રદેશમાં હોય, તો $p(\Assign f M (a_1, \dots,a_n))
+    = \Assign f N (p(a_1), \dots, p(a_n))$.
+  \end{enumerate}
+  $p$ સાન્ત છે તેનો અર્થ એ છે કે $\dom{p}$ સાન્ત છે.
+\end{defn}
+
+નોંધો કે ખાલી વિધેય~$\emptyset$ કોઈ પણ બે !!{structure}s વચ્ચે હંમેશાં
+આંશિક એકરૂપતા છે.
+
+\begin{defn}\ollabel{defn:partialisom}
+  બે !!{structure}s $\Struct{M}$ અને $\Struct{N}$ આપેલી હોય ત્યારે,
+  $\Struct{M}$ અને $\Struct{N}$ વચ્ચેની આંશિક એકરૂપતાઓનો નીચેનો
+  \emph{આગળ-પાછળ} ગુણધર્મ સંતોષતો કોઈ અરિક્ત ગણ $I$ હોય તો અને માત્ર
+  તો તેમને \emph{આંશિક રીતે એકરૂપ} કહીએ છીએ અને
+  $\Struct{M} \iso[p] \Struct{N}$ લખીએ છીએ:
+  \begin{enumerate}
+  \item (\emph{આગળ}) દરેક $p \in I$ અને $a \in \Domain M$ માટે એવું
+    $q \in I$ છે કે $p \subseteq q$ અને $a$, $q$ના પ્રદેશમાં છે;
+  \item (\emph{પાછળ}) દરેક $p \in I$ અને $b \in \Domain N$ માટે એવું
+    $q \in I$ છે કે $p \subseteq q$ અને $b$, $q$ના વિસ્તારમાં છે.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:p-isom1}
+  જો $\Struct{M} \iso[p] \Struct{N}$ અને $\Struct{M}$ તથા
+  $\Struct{N}$ !!{enumerable} હોય, તો $\Struct{M} \iso \Struct{N}$.
+\end{thm}
+
+\begin{proof}
+  $\Struct{M}$ અને $\Struct{N}$ !!{enumerable} હોવાથી ધારો કે
+  $\Domain{M} = \{a_0, a_1, \ldots \}$ અને $\Domain{N} =
+  \{b_0, b_1, \ldots \}$. કોઈ પણ $p_0 \in I$થી શરૂ કરીને આપણે આંશિક
+  એકરૂપતાઓની વર્ધમાન શ્રેણી $p_0 \subseteq p_1 \subseteq p_2
+  \subseteq \cdots$ નીચે પ્રમાણે વ્યાખ્યાયિત કરીએ છીએ:
+  \begin{enumerate}
+  \item જો $n+1$ વિષમ હોય, એટલે કે $n = 2r$, તો આગળના ગુણધર્મથી એવું
+    $p_{n+1} \in I$ શોધો કે $p_n \subseteq p_{n+1}$ અને $a_r$,
+    $p_{n+1}$ના પ્રદેશમાં હોય;
+  \item જો $n+1$ સમ હોય, એટલે કે $n+1 =2r$, તો પાછળના ગુણધર્મથી એવું
+    $p_{n+1} \in I$ શોધો કે $p_n \subseteq p_{n+1}$ અને $b_r$,
+    $p_{n+1}$ના વિસ્તારમાં હોય.
+  \end{enumerate}
+હવે જો આપણે
+\[
+p = \bigcup_{n\ge 0} p_n,
+\]
+મૂકીએ, તો $p$, $\Struct{M}$ અને $\Struct{N}$ વચ્ચેની એકરૂપતા છે.
+\end{proof}
+
+\begin{prob}
+  \olref[mod][bas][pis]{thm:p-isom1}માં વ્યાખ્યાયિત $p$ ખરેખર એકરૂપતા
+  છે તે વિગતે બતાવો.
+\end{prob}
+
+\begin{thm}\ollabel{thm:p-isom2}
+  ધારો કે $\Struct{M}$ અને $\Struct{N}$ શુદ્ધ સંબંધાત્મક
+  !!{language} માટેની !!{structure}s છે (!!a{language} જેમાં માત્ર
+  !!{predicate}s હોય અને કોઈ !!{function}s કે અચળ ન હોય). જો
+  $\Struct{M} \iso[p] \Struct{N}$, તો $\Struct{M} \elemequiv
+  \Struct{N}$ પણ.
+\end{thm}
+
+\begin{proof}
+  !!{formula}s પરના આગમનથી બતાવી શકાય છે કે જો $a_1$, \dots, $a_n$ અને
+  $b_1$, \dots, $b_n$ એવા હોય કે દરેક $a_i$ને $b_i$ પર મોકલતી આંશિક
+  એકરૂપતા $p$ હોય અને $s_1(x_i) =a_i$ તથા $s_2(x_i) =b_i$
+  ($i =1$, \dots,~$n$ માટે), તો $\Sat{M}{!A}[s_1]$ ત્યારે અને માત્ર
+  ત્યારે જ્યારે $\Sat{N}{!A}[s_2]$. $n=0$નો કિસ્સો
+  $\Struct{M} \elemequiv \Struct{N}$ આપે છે.
+\end{proof}
+
+\begin{rem}
+જો !!{function}s હાજર હોય, તો અગાઉનું પરિણામ હજી પણ સત્ય છે, પરંતુ
+$a_1$, \dots, $a_n$ વડે જનિત $\Struct{M}$ની ઉપ!!{structure} અને
+$b_1$, \dots, $b_n$ વડે જનિત $\Struct{N}$ની ઉપ!!{structure} વચ્ચે
+$p$થી પ્રેરિત એકરૂપતા વિચારવી પડે છે.
+\end{rem}
+
+અગાઉના પરિણામને !!a{formula}માં એકબીજાની અંદર આવેલા પરિમાણકોની સંખ્યા
+અને સંબંધિત આંશિક એકરૂપતાઓને કેટલી વાર વિસ્તારી શકાય છે એ વચ્ચે સંબંધ
+સ્થાપીને તબક્કાઓમાં ``વિભાજિત'' કરી શકાય છે.
+
+\begin{defn}
+  કોઈ પણ !!{formula}~$!A$ માટે $!A$નો \emph{પરિમાણક-ક્રમ}, જેને
+  $\QuantRank{!A} \in \Nat$થી દર્શાવીએ છીએ, $!A$માં એકબીજાની અંદર
+  આવેલા પરિમાણકોની મહત્તમ સંખ્યા તરીકે આવર્ત રીતે વ્યાખ્યાયિત થાય છે.
+  બે !!{structure}s $\Struct{M}$ અને $\Struct{N}$ પરિમાણક-ક્રમ વધુમાં
+  વધુ~$n$ હોય તેવાં બધાં વાક્યો પર સંમત હોય, તો તેમને
+  \emph{$n$-સમકક્ષ} કહીએ છીએ અને $\Struct{M} \elemequiv[n]
+  \Struct{N}$ લખીએ છીએ.
+\end{defn}
+
+\begin{prop}\ollabel{prop:qr-finite}
+  ધારો કે $\Lang{L}$ એ સાન્ત શુદ્ધ સંબંધાત્મક !!{language} છે, એટલે કે
+  એવી !!{language} જે સાન્ત સંખ્યામાં !!{predicate}s ધરાવે છે અને કોઈ
+  !!{function}s કે અચળ ધરાવતી નથી. ત્યારે દરેક $n \in \Nat$ માટે તાર્કિક સમકક્ષતા
+  સુધી !!{language}~$\Lang{L}$માં પરિમાણક-ક્રમ વધુમાં વધુ $n$ ધરાવતાં માત્ર સાન્ત
+  સંખ્યામાં પ્રથમ-ક્રમ !!{sentence}s હોય છે.
+  \sourcecorrection{OLMTB-005}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{partial-iso.tex}, પંક્તિઓ~123--125માં ``purely relational''
+    ભાષાનું વર્ણન સાન્ત સંખ્યામાં વિધેયો અને અચળો ધરાવતી ભાષા તરીકે થાય
+    છે, જ્યારે એ જ ફાઇલની પંક્તિઓ~86--89માં આ શબ્દનો અર્થ માત્ર
+    વિધેય-સંકેતો ધરાવતી અને વિધેયો તથા અચળો વિનાની ભાષા તરીકે નક્કી
+    કરાયો છે. અહીં અગાઉની સ્પષ્ટ વ્યાખ્યા સાથે સુસંગત વર્ણન રાખ્યું છે.}
+\end{prop}
+
+\begin{proof}
+  $n$ પરના આગમનથી.
+\end{proof}
+
+\begin{defn}
+  !!a{structure}~$\Struct{M}$ આપેલી હોય ત્યારે $\Domain M^{<\omega}$ને
+  $\Domain{M}$ પરની બધી સાન્ત શ્રેણીઓનો ગણ કહીએ. ઘટકોની સાન્ત
+  શ્રેણીઓ પર વ્યાપ્ત થવા આપણે $\mathbf{a}, \mathbf{b}, \mathbf{c},
+  \ldots$ વાપરીએ છીએ. જો $\mathbf{a} \in \Domain{M}^{<\omega}$ અને
+  $a \in \Domain{M}$, તો $\mathbf{a}a$, $\mathbf{a}$ સાથે $a$નું
+  \emph{જોડાણ} દર્શાવે છે.
+\end{defn}
+
+\begin{defn}
+  !!{structure}s $\Struct{M}$ અને $\Struct{N}$ આપેલી હોય ત્યારે સમાન
+  લંબાઈની શ્રેણીઓ વચ્ચેના સંબંધો $I_n \subseteq \Domain M^{<\omega}
+  \times \Domain N^{<\omega}$ને $n$ પરના આવર્તનથી નીચે પ્રમાણે
+  વ્યાખ્યાયિત કરીએ છીએ:
+   \begin{enumerate}
+   \item $I_0(\mathbf{a},\mathbf{b})$ ત્યારે અને માત્ર ત્યારે જ્યારે
+     $\mathbf{a}$ અને $\mathbf{b}$, $\Struct{M}$ અને $\Struct{N}$માં
+     એ જ આણ્વિક !!{formula}s સંતોષે. વધુ ચોક્કસ રીતે, તેમની સામાન્ય
+     લંબાઈ $k$ હોય, $s_1(x_i) = a_i$ અને $s_2(x_i) = b_i$ હોય અને
+     $!A$ એવું આણ્વિક સૂત્ર હોય જેના બધા !!{variable}s $x_1$, \dots,
+     $x_k$માંના હોય, તો $\Sat{M}{!A}[s_1]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+     $\Sat{N}{!A}[s_2]$.
+   \item $I_{n+1} (\mathbf{a},\mathbf{b})$ ત્યારે અને માત્ર ત્યારે
+     જ્યારે દરેક $a\in \Domain M$ માટે એવું $b\in \Domain N$ હોય કે
+     $I_n(\mathbf{a}a,\mathbf{b}b)$, અને ઊલટું પણ.
+   \end{enumerate}
+  \sourcecorrection{OLMTB-006}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{partial-iso.tex}, પંક્તિઓ~145--153માં સંબંધનો ક્રમ~$n$ અને
+    શ્રેણીઓની લંબાઈ માટે એ જ~$n$ વપરાય છે, જ્યારે આ બે સંખ્યાઓ સ્વતંત્ર
+    છે. અહીં સામાન્ય શ્રેણી-લંબાઈને~$k$ નામ આપીને તેના ચલો
+    $x_1,\dots,x_k$ કર્યા છે.}
+\end{defn}
+
+
+\begin{defn}
+  $\Struct{M}$ અને $\Struct{N}$ માટે
+  $I_n(\emptyseq,\emptyseq)$ સત્ય હોય, તો $\Struct{M} \approx_n
+  \Struct{N}$ લખીએ છીએ (અહીં $\emptyseq$ ખાલી શ્રેણી છે).
+\end{defn}
+
+\begin{thm}\ollabel{thm:b-n-f}
+  ધારો કે $\Lang{L}$ શુદ્ધ સંબંધાત્મક !!{language} છે. ત્યારે
+  $I_n(\mathbf{a},\mathbf{b})$માંથી એ ફલિત થાય છે કે
+  $\QuantRank{!A} \le n$ હોય તેવા દરેક $!A$ માટે
+  $\Sat{M}{!A}[\mathbf{a}]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Sat{N}{!A}[\mathbf{b}]$ (અહીં પણ, $s(x_i) = a_i$ હોય એવી કોઈ પણ
+  $s$, $!A$ને સંતોષે તો $\mathbf{a}$, $!A$ને સંતોષે છે). વધુમાં, જો
+  $\Lang{L}$ સાન્ત હોય, તો તેનું વ્યસ્ત પણ સત્ય છે.
+\end{thm}
+
+\begin{proof}
+  $I_n(\mathbf{a},\mathbf{b})$માંથી $\mathbf{a}$ અને $\mathbf{b}$
+  પરિમાણક-ક્રમ વધુમાં વધુ $n$ ધરાવતાં એ જ !!{formula}s સંતોષે છે તે
+  $!A$ પરના સરળ આગમનથી સાબિત થાય છે. વ્યસ્ત માટે આપણે $n$ પર આગમન
+  કરીએ છીએ અને \olref{prop:qr-finite} વાપરીએ છીએ; તે સુનિશ્ચિત કરે છે
+  કે દરેક $n$ માટે એ પરિમાણક-ક્રમનાં તાર્કિક રીતે અસમાન !!{formula}sના વધુમાં
+  વધુ સાન્ત વર્ગો છે.
+
+  $n=0$ માટે $\mathbf{a}$ અને $\mathbf{b}$ એ જ પરિમાણકવિહીન
+  !!{formula}s સંતોષે છે એવી પરિકલ્પનામાંથી તેઓ એ જ આણ્વિક સૂત્રો
+  સંતોષે છે, તેથી $I_0(\mathbf{a},\mathbf{b})$.
+
+  $n+1$ના કિસ્સા માટે ધારો કે $\mathbf{a}$ અને $\mathbf{b}$
+  પરિમાણક-ક્રમ વધુમાં વધુ $n+1$ ધરાવતાં એ જ !!{formula}s સંતોષે છે.
+  $I_{n+1}(\mathbf{a},\mathbf{b})$ બતાવવા માટે દરેક $a \in \Domain M$
+  માટે એવું $b \in \Domain N$ છે કે $I_n(\mathbf{a}a,\mathbf{b}b)$
+  બતાવવું પૂરતું છે; અને આગમન પરિકલ્પના મુજબ દરેક $a \in \Domain M$
+  માટે એવું $b \in \Domain N$ છે કે $\mathbf{a}a$ અને $\mathbf{b}b$
+  પરિમાણક-ક્રમ વધુમાં વધુ $n$ ધરાવતાં એ જ !!{formula}s સંતોષે છે તે
+  બતાવવું ફરી પૂરતું છે.
+
+  આપેલા $a \in \Domain M$ માટે પરિમાણક-ક્રમ વધુમાં વધુ $n$ ધરાવતાં
+  અને $\Struct{M}$માં $\mathbf{a}a$ વડે સંતોષાતાં
+  !!{formula}s~$!B(x,\mathbf{y})$ના દરેક તાર્કિક સમકક્ષતા-વર્ગમાંથી એક
+  પ્રતિનિધિ લો અને તેમના સંયોજનને $!T^a_n$ કહો. એવા વર્ગો સાન્ત હોવાથી
+  $!T^a_n$ એક જ પ્રથમ-ક્રમ !!{formula} છે. તેમાંથી $\mathbf{a}$,
+  $\lexists[x][!T^a_n(x,\mathbf{y})]$ને સંતોષે છે અને આ સૂત્રનો
+  પરિમાણક-ક્રમ વધુમાં વધુ $n+1$ છે. પરિકલ્પના મુજબ $\Struct{N}$માં
+  $\mathbf{b}$ એ જ !!{formula} સંતોષે છે; તેથી એવું $b \in \Domain N$
+  છે કે $\mathbf{b}b$, $!T^a_n$ને સંતોષે છે. ખાસ કરીને
+  $\mathbf{b}b$, $\mathbf{a}a$ જેટલાં જ પરિમાણક-ક્રમ વધુમાં વધુ $n$
+  ધરાવતાં !!{formula}s સંતોષે છે. એવી જ રીતે દરેક $b \in \Domain N$
+  માટે એવું $a\in \Domain M$ છે કે $\mathbf{a}a$ અને $\mathbf{b}b$
+  પરિમાણક-ક્રમ વધુમાં વધુ $n$ ધરાવતાં એ જ !!{formula}s સંતોષે છે; આથી
+  સાબિતી પૂરી થાય છે.
+  \sourcecorrection{OLMTB-007}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{partial-iso.tex}, પંક્તિઓ~199--203માં બધા સંતોષાતા
+    સૂત્રોના ગણને શાબ્દિક રીતે સાન્ત કહીને પછી તેને એક સૂત્ર માનવામાં
+    આવે છે. \olref{prop:qr-finite} માત્ર તાર્કિક સમકક્ષતા સુધી સાન્તતા
+    આપે છે. અહીં દરેક સંતોષાતા સમકક્ષતા-વર્ગમાંથી એક પ્રતિનિધિ લઈને
+    તેમના સાન્ત સંયોજનનો આશય સ્પષ્ટ કર્યો છે.}
+\end{proof}
+
+\begin{cor}\ollabel{cor:b-n-f}
+  જો $\Struct{M}$ અને $\Struct{N}$ સાન્ત !!{language}માંની શુદ્ધ
+  સંબંધાત્મક !!{structure}s હોય, તો $\Struct{M} \approx_n\Struct{N}$
+  ત્યારે અને માત્ર ત્યારે જ્યારે $\Struct{M} \elemequiv[n]
+  \Struct{N}$. ખાસ કરીને, $\Struct{M} \elemequiv \Struct{N}$ ત્યારે
+  અને માત્ર ત્યારે જ્યારે દરેક $n$ માટે $\Struct{M} \approx_n
+  \Struct{N}$.
+\end{cor}
+
+\end{document}

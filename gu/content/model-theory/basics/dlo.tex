@@ -1,0 +1,87 @@
+% Part: model-theory
+% Chapter: basics
+% Section: partial-iso
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{dlo}
+\section{સઘન રેખીય ક્રમો}
+
+\begin{defn}
+  \emph{અંતબિંદુવિહીન સઘન રેખીય ક્રમ} એ માત્ર એક 2-સ્થાની
+  !!{predicate}~$<$ ધરાવતી !!{language} માટેની એવી !!a{structure}
+  $\Struct{M}$ છે જે નીચેના વાક્યો સંતોષે છે:
+  \begin{enumerate}
+  \item $\lforall[x][\lnot x < x]$;
+  \item $\lforall[x][\lforall[y][\lforall[z][(x < y \lif (y < z \lif x
+    <z ))]]]$;
+  \item $\lforall[x][\lforall[y][(x< y \lor \eq[x][y] \lor y < x)]]$;
+  \item $\lforall[x][\lexists[y][x < y]]$;
+  \item $\lforall[x][\lexists[y][y < x]]$;
+  \item $\lforall[x][\lforall[y][(x < y \lif \lexists[z][(x < z \land
+        z < y))]]]$.
+ \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:cantorQ}
+  કોઈ પણ બે !!{enumerable} અંતબિંદુવિહીન સઘન રેખીય ક્રમો એકરૂપ હોય છે.
+\end{thm}
+
+\begin{proof}
+  ધારો કે $\Struct{M_1}$ અને $\Struct{M_2}$ !!{enumerable}
+  અંતબિંદુવિહીન સઘન રેખીય ક્રમો છે, જ્યાં ${<_1} = \Assign{<}{M_1}$ અને
+  ${<_2} = \Assign{<}{M_2}$, અને તેમની વચ્ચેની બધી આંશિક એકરૂપતાઓનો
+  ગણ $\PIso{I}$ છે. ઓછામાં ઓછું $\emptyset \in \PIso{I}$ હોવાથી
+  $\PIso{I}$ અરિક્ત છે. આપણે બતાવીએ કે $\PIso{I}$ આગળ-પાછળ ગુણધર્મ
+  સંતોષે છે. પછી $\Struct{M_1} \iso[p] \Struct{M_2}$ અને
+  \olref[pis]{thm:p-isom1}થી પ્રમેય ફલિત થાય છે.
+
+  $\PIso{I}$ આગળનો ગુણધર્મ સંતોષે છે તે બતાવવા $p \in \PIso{I}$ લો,
+  $i = 1$, \dots,~$n$ માટે $p(a_i) = b_i$ ધારો અને વ્યાપકતા ગુમાવ્યા
+  વિના $a_1 <_1 a_2 <_1 \cdots <_1 a_n$ ધારો. આપેલા
+  $a \in \Domain{M_1}$ માટે નીચે પ્રમાણે $b \in \Domain{M_2}$ શોધો.
+  જો $n=0$, તો કોઈ પણ $b \in \Domain{M_2}$ લો. જો કોઈ~$i$ માટે
+  $a=a_i$, તો $b=b_i$ લો. બાકીના કિસ્સાઓમાં:
+  \begin{enumerate}
+  \item જો $a <_1 a_1$, તો એવું $b \in \Domain{M_2}$ લો કે
+    $b <_2 b_1$;
+  \item જો $a_n <_1 a$, તો એવું $b \in \Domain{M_2}$ લો કે
+    $b_n <_2 b$;
+ \item જો કોઈ $i$ માટે $a_i <_1 a <_1 a_{i+1}$, તો એવું
+   $b \in \Domain{M_2}$ લો કે $b_i <_2 b <_2 b_{i+1}$.
+  \end{enumerate}
+  $\Struct{M_2}$ અંતબિંદુવિહીન સઘન રેખીય ક્રમ હોવાથી ઇચ્છિત ગુણધર્મ
+  ધરાવતું $b$ હંમેશાં મળી શકે છે. $q = p \cup \{ \langle a, b \rangle \}$
+  વ્યાખ્યાયિત કરો; ત્યારે $q \in \PIso{I}$ એ $p$નું ઇચ્છિત વિસ્તરણ છે.
+  આ આગળનો ગુણધર્મ સ્થાપિત કરે છે. પાછળનો ગુણધર્મ સમાન છે. તેથી
+  $\Struct{M_1} \iso[p] \Struct{M_2}$; \olref[pis]{thm:p-isom1} મુજબ
+  $\Struct{M_1} \iso \Struct{M_2}$.
+  \sourcecorrection{OLMTB-008}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{dlo.tex}, પંક્તિઓ~42--53માં આગળના ગુણધર્મ માટેની કેસ-યાદી
+    $a$ પહેલેથી $p$ના પ્રદેશમાં હોય તે કિસ્સો અને $p$ ખાલી હોય તે
+    શરૂઆતનો કિસ્સો છોડે છે. અહીં અનુક્રમે $b=p(a)$ લેવા અને ખાલી
+    પ્રદેશમાં કોઈ પણ $b$ લેવા એ બે કિસ્સા સ્પષ્ટ ઉમેર્યા છે.}
+\end{proof}
+
+\begin{prob}
+  $\PIso{I}$ પાછળનો ગુણધર્મ સંતોષે છે તે ચકાસીને
+  \olref[mod][bas][dlo]{thm:cantorQ}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\begin{rem}
+  ધારો કે $\Struct{S}$ કોઈ પણ !!{enumerable} અંતબિંદુવિહીન સઘન રેખીય
+  ક્રમ છે. ત્યારે (\olref{thm:cantorQ} મુજબ) $\Struct{S} \iso
+  \Struct{Q}$, જ્યાં $\Struct{Q} = (\Rat, <)$ એ !!{enumerable} સઘન
+  રેખીય ક્રમ છે જેનું વ્યાપકક્ષેત્ર સંમેય સંખ્યાઓનો ગણ $\Rat$ છે. હવે
+  \olref[thm]{remark:R}ની !!{structure}~$\Struct{R} = (\Real, <)$ ફરી
+  વિચારો. આપણે જોયું કે એવી !!a{enumerable} !!{structure}~$\Struct{S}$
+  છે કે $\Struct{R} \elemequiv \Struct{S}$. પરંતુ $\Struct{S}$
+  !!a{enumerable} અંતબિંદુવિહીન સઘન રેખીય ક્રમ છે, તેથી તે
+  !!{structure}~$\Struct{Q}$ની એકરૂપ (અને પરિણામે પ્રાથમિક રીતે સમકક્ષ)
+  છે. પ્રાથમિક સમકક્ષતાની પરંપરિતતા મુજબ $\Struct{R} \elemequiv
+  \Struct{Q}$. (એ જ આગળ-પાછળ દલીલથી $\Struct{R} \iso[p]
+  \Struct{Q}$ સ્થાપીને આપણે આ સીધું પણ બતાવી શક્યા હોત.)
+\end{rem}
+\end{document}

@@ -1,0 +1,205 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-20T00:51:25.859466+00:00",
+  "audit_id": "GU-OLMTB-20260920",
+  "audit_method": "Same-agent exact comparison against the frozen source, adjacent definitions, formal notation and macro declarations within that revision. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLMTB-001",
+      "unit_id": "OLP-0182",
+      "classification": "confirmed_intrusive_preposition_in_editorial_sentence",
+      "finding": "The editorial sentence contains the malformed phrase ‘is at planning’.",
+      "source_path": "content/model-theory/model-theory.tex",
+      "source_locator": "model-theory.tex:15",
+      "source_bytes": 792,
+      "source_sha256": "b003b16803f9b40df8da5a6664ff8ee5198559f77e88616aea9911323b757abf",
+      "target_path": "gu/content/model-theory/model-theory.tex",
+      "target_bytes": 1872,
+      "target_sha256": "fa75208fea7abeccce45a4cf7fcce795e4bc12ef1dd5b2c0294c496493b54c04",
+      "corrected_body_line": 15,
+      "adjacent_note_line": 17,
+      "handling": "Translated the contextually clear ‘is planning’ reading and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "controlling_evidence": "The subject, infinitival complement and issue reference make the intended present-progressive planning statement unambiguous.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMTB-002",
+      "unit_id": "OLP-0185",
+      "classification": "confirmed_missing_nonempty_domain_condition",
+      "finding": "The remark allows the empty subset even though structures in this edition have nonempty domains.",
+      "source_path": "content/model-theory/basics/substructures.tex",
+      "source_locator": "substructures.tex:41",
+      "source_bytes": 1760,
+      "source_sha256": "7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904",
+      "target_path": "gu/content/model-theory/basics/substructures.tex",
+      "target_bytes": 3199,
+      "target_sha256": "f679dd2331b3dc04f808d044d58b91908392df44c5e60766a13ed5aa2bf1cac0",
+      "corrected_body_line": 42,
+      "adjacent_note_line": 46,
+      "handling": "Required N to be nonempty and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "added_hypothesis": "N is nonempty"
+      },
+      "controlling_evidence": "The edition's first-order structures require a nonempty domain; the induced relational structure construction otherwise works unchanged.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMTB-003",
+      "unit_id": "OLP-0187",
+      "classification": "confirmed_wrong_structure_in_target_term_value_clause",
+      "finding": "The target term-value equation uses the source structure's interpretation of f instead of the target structure's interpretation.",
+      "source_path": "content/model-theory/basics/isomorphism.tex",
+      "source_locator": "isomorphism.tex:89",
+      "source_bytes": 5185,
+      "source_sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "target_bytes": 8594,
+      "target_sha256": "8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c",
+      "corrected_body_line": 87,
+      "adjacent_note_line": 103,
+      "handling": "Replaced the mistaken M by M' in that equation and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\\\Assign{f}{M}",
+        "added": "\\\\Assign{f}{M'}"
+      },
+      "controlling_evidence": "The equation defines the value of t in M', and the following derivation also uses the M' interpretation.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMTB-004",
+      "unit_id": "OLP-0187",
+      "classification": "confirmed_missing_closing_parenthesis",
+      "finding": "The displayed derivation omits the closing parenthesis of the outer h application.",
+      "source_path": "content/model-theory/basics/isomorphism.tex",
+      "source_locator": "isomorphism.tex:96",
+      "source_bytes": 5185,
+      "source_sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "target_bytes": 8594,
+      "target_sha256": "8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c",
+      "corrected_body_line": 94,
+      "adjacent_note_line": 108,
+      "handling": "Restored the closing parenthesis and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": ") \\\\notag\\\\",
+        "added": ")) \\\\notag\\\\"
+      },
+      "controlling_evidence": "The left side and following line both require h to apply to the complete interpreted function value.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMTB-005",
+      "unit_id": "OLP-0189",
+      "classification": "confirmed_inconsistent_definition_of_purely_relational_language",
+      "finding": "A later parenthetical allows constants although the same file explicitly defines purely relational languages as having predicates only, with neither functions nor constants.",
+      "source_path": "content/model-theory/basics/partial-iso.tex",
+      "source_locator": "partial-iso.tex:123",
+      "source_bytes": 9479,
+      "source_sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "target_bytes": 17909,
+      "target_sha256": "af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573",
+      "corrected_body_line": 121,
+      "adjacent_note_line": 125,
+      "handling": "Made the later parenthetical agree with the earlier explicit definition and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "finitely many predicates and constants, and no functions",
+        "added": "finitely many predicates, and no functions or constants"
+      },
+      "controlling_evidence": "The theorem immediately above gives the governing in-file definition and the later proposition reuses the same technical phrase.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMTB-006",
+      "unit_id": "OLP-0189",
+      "classification": "confirmed_collision_between_rank_and_tuple_length_variables",
+      "finding": "The definition reuses n both for the back-and-forth rank and for the independent common sequence length.",
+      "source_path": "content/model-theory/basics/partial-iso.tex",
+      "source_locator": "partial-iso.tex:150",
+      "source_bytes": 9479,
+      "source_sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "target_bytes": 17909,
+      "target_sha256": "af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573",
+      "corrected_body_line": 154,
+      "adjacent_note_line": 163,
+      "handling": "Named the common sequence length k and indexed its variables through x_k, with an adjacent keyed note.",
+      "mathematical_delta": {
+        "tuple_length_variable": {
+          "removed": "n",
+          "added": "k"
+        }
+      },
+      "controlling_evidence": "I_n is defined for sequences of any equal finite length, so their length cannot be fixed to the recursion index n.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMTB-007",
+      "unit_id": "OLP-0189",
+      "classification": "confirmed_finiteness_claim_only_valid_modulo_logical_equivalence",
+      "finding": "The proof calls the syntactic set of all satisfied bounded-rank formulas finite, while the preceding result gives finiteness only up to logical equivalence.",
+      "source_path": "content/model-theory/basics/partial-iso.tex",
+      "source_locator": "partial-iso.tex:199",
+      "source_bytes": 9479,
+      "source_sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "target_bytes": 17909,
+      "target_sha256": "af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573",
+      "corrected_body_line": 210,
+      "adjacent_note_line": 222,
+      "handling": "Used one representative from each satisfied equivalence class and their finite conjunction, with an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "the set of all such formulas is finite",
+        "added": "a finite conjunction of equivalence-class representatives"
+      },
+      "controlling_evidence": "Arbitrarily many syntactically distinct repetitions remain possible at fixed rank; the finite-equivalence-class result supplies exactly the needed finite conjunction.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLMTB-008",
+      "unit_id": "OLP-0190",
+      "classification": "confirmed_incomplete_case_split_in_back_and_forth_proof",
+      "finding": "The Forth case split omits both the empty partial map and an element already in the map's domain.",
+      "source_path": "content/model-theory/basics/dlo.tex",
+      "source_locator": "dlo.tex:45",
+      "source_bytes": 3509,
+      "source_sha256": "9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "target_bytes": 5963,
+      "target_sha256": "a06e126a73cdb2c499d9f3711e43f640f47dd0c8621d7a8e105ea1b602148d3a",
+      "corrected_body_line": 45,
+      "adjacent_note_line": 61,
+      "handling": "Added the empty-map and already-mapped cases before the remaining order-position cases, with an adjacent keyed note.",
+      "mathematical_delta": {
+        "added_cases": [
+          "n = 0",
+          "a = a_i for some i"
+        ]
+      },
+      "controlling_evidence": "The listed below-first, above-last and strictly-between cases require a nonempty map and do not cover equality with an existing domain element.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "rejected_correction_candidates": [
+    {
+      "unit_id": "OLP-0188",
+      "source_path": "content/model-theory/basics/theory-of-m.tex",
+      "candidate": "Treat \\\\Sat/ as a stray slash.",
+      "resolution": "Rejected: upstream/open-logic-config.sty declares \\\\Sat with a slash Boolean and explicitly documents \\\\Sat/ as negated satisfaction. The source notation is preserved exactly.",
+      "status": "no_source_correction"
+    }
+  ],
+  "structural_receipt": "PARITY_019.json",
+  "status": "eight_repairs_applied_disclosed_and_structural_semantic_reader_qa_passed"
+}

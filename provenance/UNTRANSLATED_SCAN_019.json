@@ -1,0 +1,120 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/019",
+  "checked_at_utc": "2026-09-20T01:00:00.972243+00:00",
+  "scope": "OLP-0182–OLP-0190 Gujarati Model Theory Basics source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, derivation environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing keyed IDs, filenames, math, literal control names and explicitly quoted frozen-source fragments.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0182",
+      "path": "content/model-theory/model-theory.tex",
+      "target_sha256": "fa75208fea7abeccce45a4cf7fcce795e4bc12ef1dd5b2c0294c496493b54c04",
+      "gujarati_characters": 434,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0183",
+      "path": "content/model-theory/basics/basics.tex",
+      "target_sha256": "697c3bc26eed60a4ba358af401aa47ce9090a7b3461e790bdfe2220e4dda9094",
+      "gujarati_characters": 20,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0184",
+      "path": "content/model-theory/basics/reducts-and-expansions.tex",
+      "target_sha256": "4e91eaca76b92935da1c93ca6cc19a1ffe4d5aadabd4f90191aa0fa64bb9e9d8",
+      "gujarati_characters": 615,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0185",
+      "path": "content/model-theory/basics/substructures.tex",
+      "target_sha256": "f679dd2331b3dc04f808d044d58b91908392df44c5e60766a13ed5aa2bf1cac0",
+      "gujarati_characters": 546,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0186",
+      "path": "content/model-theory/basics/overspill.tex",
+      "target_sha256": "bfa997c52575ce5a534b7403b111a467548d259d70673546f02873dedbfe3159",
+      "gujarati_characters": 544,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0187",
+      "path": "content/model-theory/basics/isomorphism.tex",
+      "target_sha256": "8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c",
+      "gujarati_characters": 1571,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0188",
+      "path": "content/model-theory/basics/theory-of-m.tex",
+      "target_sha256": "e5c6f3c3aa03dcd05d302a40bab06c34183a31525a863bb7f63a8ed08dbad2ed",
+      "gujarati_characters": 718,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0189",
+      "path": "content/model-theory/basics/partial-iso.tex",
+      "target_sha256": "af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573",
+      "gujarati_characters": 3781,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    },
+    {
+      "unit_id": "OLP-0190",
+      "path": "content/model-theory/basics/dlo.tex",
+      "target_sha256": "a06e126a73cdb2c499d9f3711e43f640f47dd0c8621d7a8e105ea1b602148d3a",
+      "gujarati_characters": 1139,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    }
+  ],
+  "totals": {
+    "units": 9,
+    "gujarati_characters": 9368,
+    "source_detector_ascii_tokens": 1870,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 8,
+    "quoted_frozen_source_literals": 4
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "allowed_formal_abbreviations": [
+    "FOL",
+    "MP"
+  ],
+  "allowed_formal_literals": [
+    "FOL tag name",
+    "false tag value",
+    "forall x book title"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [
+    "``Andy Arana is at planning''",
+    "``is planning''",
+    "``any $N \\subseteq \\Domain{M}$''",
+    "``purely relational''"
+  ],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}

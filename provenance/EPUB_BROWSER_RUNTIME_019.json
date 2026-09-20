@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-epub-browser-runtime/1",
+  "checkpoint": "019",
+  "checked_utc": "2026-09-20T02:04:26.832850+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8767/build/runtime-probe019.html?target=build%2Fepub019-stage%2FOEBPS%2Fcontent.xhtml&qa=019-current-c76190",
+  "artifact": "build/epub019-stage/OEBPS/content.xhtml",
+  "artifact_sha256": "3fe8c3af2af627ecdbe8beadbe0bc2113329591296603711968a3db4034ffa15",
+  "epub": "releases/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.epub",
+  "epub_sha256": "c76190ae589df8f032a3856c83eff94877cae1eb72e20302a3bac461d469876b",
+  "loading_method": "The exact XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative asset URLs.",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "નિદર્શસિદ્ધાંતના પાયા સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 515,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 721,
+    "uniqueIds": 721,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title and partial-edition disclosure in the exact packaged XHTML",
+      "Model Theory part and Basics chapter hierarchy",
+      "substructure conditions with the OLMTB-002 disclosure",
+      "structure theory with native MathML satisfaction notation",
+      "partial-isomorphism definitions and back-and-forth theorem",
+      "dense-order proof with the OLMTB-008 repair disclosure",
+      "editorial notes, bibliography, and endnotes"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": []
+  },
+  "status": "passed"
+}

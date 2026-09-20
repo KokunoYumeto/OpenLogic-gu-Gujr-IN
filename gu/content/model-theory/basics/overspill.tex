@@ -1,0 +1,42 @@
+% Part: model-theory
+% Chapter: basics
+% Section: overspill
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{ove}
+\olsection{અતિપ્રવાહ}
+
+\begin{thm}
+\ollabel{overspill} જો વાક્યોના ગણ $\Gamma$ને ગમે તેટલા મોટા સાન્ત
+નિદર્શો હોય, તો તેને અનંત નિદર્શ હોય છે.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ની ભાષામાં ગણનીય સંખ્યામાં નવા અચળો $c_0$, $c_1$, \dots
+ઉમેરીને તેનો વિસ્તાર કરો અને ગણ $\Gamma \cup \{c_i \neq c_j :
+i \neq j\}$ વિચારો. $\Gamma$ને ગમે તેટલા મોટા સાન્ત નિદર્શો છે એમ
+કહેવાનો અર્થ એ છે કે દરેક $m >0$ માટે એવું $n\ge m$ મળે છે કે
+$\Gamma$ને ગણાંક~$n$નું નિદર્શ હોય. આમાંથી $\Gamma \cup \{c_i \neq
+c_j : i \neq j\}$ સાન્ત રીતે સંતોષ્ય છે તેમ ફલિત થાય છે. સઘનતા મુજબ,
+$\Gamma \cup \{c_i \neq c_j : i \neq j\}$ને નિદર્શ $\Struct M$ છે;
+તે બધી અસમાનતાઓ $c_i \neq c_j$ સંતોષતું હોવાથી તેનું વ્યાપકક્ષેત્ર
+અનંત હોવું જ જોઈએ.
+\end{proof}
+
+\begin{prop}
+\ollabel{inf-not-fo}
+કોઈ પણ પ્રથમ-ક્રમ ભાષાનું એવું કોઈ વાક્ય $!A$ નથી જે
+!!a{structure}~$\Struct M$માં ત્યારે અને માત્ર ત્યારે જ સત્ય હોય જ્યારે
+એ !!{structure}નું વ્યાપકક્ષેત્ર $\Domain{M}$ અનંત હોય.
+\end{prop}
+
+\begin{proof}
+જો આવું $!A$ હોત, તો તેનો નિષેધ $\lnot !A$ બધી અને માત્ર સાન્ત
+!!{structure}sમાં સત્ય હોત. તેથી તેને ગમે તેટલા મોટા સાન્ત નિદર્શો હોત,
+પણ કોઈ અનંત નિદર્શ ન હોત; આ \olref{overspill}નો વિરોધાભાસ છે.
+\end{proof}
+
+\end{document}

@@ -89,6 +89,13 @@ MANUAL_OCCURRENCES = {
         "target_path": "gu/content/first-order-logic/completeness/compactness-direct.tex",
         "target_line": 25,
     },
+    "GU-T179": {
+        "unit_id": "OLP-0190",
+        "source_path": "upstream/content/model-theory/basics/dlo.tex",
+        "source_line": 13,
+        "target_path": "gu/content/model-theory/basics/dlo.tex",
+        "target_line": 13,
+    },
 }
 
 

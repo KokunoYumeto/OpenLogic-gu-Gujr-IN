@@ -1,0 +1,66 @@
+% Part: model-theory
+% Chapter: basics
+% Section: reducts-and-expansions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{red}
+\section{ન્યૂનરૂપો અને વિસ્તારો}
+
+સામાન્ય સંકેતો ધરાવતી ભાષાઓની અને એ ભાષાઓ માટેની !!{structure}sની
+સરખામણી કરવી ઘણી વાર ઉપયોગી અથવા જરૂરી હોય છે. સૌથી સામાન્ય કિસ્સામાં
+!!a{language}~$\Lang{L}$ના બધા સંકેતો !!a{language}~$\Lang{L'}$ના પણ
+ભાગ હોય છે, એટલે કે $\Lang{L} \subseteq \Lang{L'}$. ત્યારે વધારાના
+સંકેતોનાં અર્થઘટનો ઉમેરીને અને સામાન્ય સંકેતોનાં અર્થઘટનો યથાવત રાખીને
+$\Lang{L}$-!!{structure}~$\Struct{M}$ને હંમેશાં
+$\Lang{L'}$-!!{structure}માં વિસ્તારી શકાય છે. બીજી તરફ,
+$\Lang{L'}$-સંરચના~$\Struct{M'}$માંથી~$\Lang{L}$માં ન આવતા સંકેતોનાં
+અર્થઘટનોને માત્ર ``ભૂલી જઈને'' આપણે $\Lang{L}$-સંરચના મેળવી શકીએ છીએ.
+
+\begin{defn}
+\ollabel{defn:reduct}
+ધારો કે $\Lang L \subseteq \Lang L'$, $\Struct M$ એ
+$\Lang L$-!!{structure} છે અને $\Struct M'$ એ
+$\Lang L'$-!!{structure} છે. નીચેની શરતો સંતોષાય તો અને માત્ર તો
+$\Struct M$ને $\Lang L$ પરનું $\Struct M'$નું \emph{ન્યૂનરૂપ} અને
+$\Struct M'$ને $\Lang L'$ સુધીનો $\Struct M$નો \emph{વિસ્તાર} કહીએ:
+\begin{enumerate}
+\item $\Domain{M} = \Domain{M'}$
+\item દરેક !!{constant}~$c \in \Lang L$ માટે $\Assign{c}{M} =
+  \Assign{c}{M'}$.
+\item દરેક !!{function}~$f \in \Lang L$ માટે $\Assign{f}{M} =
+  \Assign{f}{M'}$.
+\item દરેક !!{predicate}~$P \in \Lang L$ માટે $\Assign{P}{M} =
+  \Assign{P}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:reduct}
+જો $\Lang{L}$-!!{structure}~$\Struct{M}$ એ
+$\Lang{L'}$-!!{structure}~$\Struct{M'}$નું ન્યૂનરૂપ હોય, તો બધા
+$\Lang{L}$-!!{sentence}s~$!A$ માટે
+\[
+\Sat{M}{!A} \text{ ત્યારે અને માત્ર ત્યારે, જ્યારે } \Sat{M'}{!A}.
+\]
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[mod][bas][red]{prop:reduct} સાબિત કરો.
+\end{prob}
+
+\begin{defn}
+આપણી પાસે $\Lang{L}$-સંરચના $\Struct{M}$ હોય, એક જ $n$-સ્થાની
+!!{predicate}~$P$ ઉમેરીને મળતો $\Lang{L}$નો વિસ્તાર $\Lang{L'} =
+\Lang{L} \cup \{P\}$ હોય અને $R \subseteq \Domain{M}^n$ એ
+$n$-સ્થાની સંબંધ હોય, ત્યારે $\Assign{P}{M'} = R$ ધરાવતા
+$\Struct{M}$ના વિસ્તાર~$\Struct{M'}$ માટે આપણે $\Expan{M}{R}$ લખીએ છીએ.
+\end{defn}
+
+\end{document}

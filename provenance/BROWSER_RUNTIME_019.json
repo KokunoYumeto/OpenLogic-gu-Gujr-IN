@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-gu-browser-runtime/1",
+  "checkpoint": "019",
+  "checked_utc": "2026-09-20T02:04:26.657710+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8767/build/runtime-probe019.html?target=reader%2Fmodel-theory-basics.html&qa=019-current-c76190",
+  "direct_reader_url": "http://127.0.0.1:8767/reader/model-theory-basics.html?qa=019-direct-current-c76190",
+  "artifact": "reader/model-theory-basics.html",
+  "artifact_sha256": "3e405a5afa6bac7f64c6d49a4519347b6c6f053024653ea0b3f118edb63cb9de",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "નિદર્શસિદ્ધાંતના પાયા સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 515,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 721,
+    "uniqueIds": 721,
+    "excludedBrowserUiIds": [
+      "codex-browser-sidebar-comments-root"
+    ],
+    "tocLinks": 193,
+    "tables": 12,
+    "mathmlNodes": 10503,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, 187/722 scope disclosure, and cumulative table of contents",
+      "Model Theory part, Basics chapter, and nested section hierarchy",
+      "reduct and expansion definitions with structure notation",
+      "substructure conditions and OLMTB-002 disclosure",
+      "theory of a structure with positive and negated satisfaction",
+      "partial isomorphism and back-and-forth definitions",
+      "dense linear orders, repaired case analysis, and OLMTB-008 disclosure",
+      "editorial notes, bibliography, and endnotes"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": [
+      {
+        "source": "earlier runtime-probe host page",
+        "message": "MutationObserver target was absent before the iframe load",
+        "excluded_reason": "A clean direct-reader tab reported no warning or error entries."
+      }
+    ]
+  },
+  "status": "passed"
+}

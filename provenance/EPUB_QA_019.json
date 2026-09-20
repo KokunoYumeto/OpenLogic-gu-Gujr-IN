@@ -1,0 +1,113 @@
+{
+  "schema": "openlogic-gu-epub-qa/1",
+  "checked_at_utc": "2026-09-20T02:04:26.832850+00:00",
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.epub",
+    "bytes": 560795,
+    "sha256": "c76190ae589df8f032a3856c83eff94877cae1eb72e20302a3bac461d469876b",
+    "version": "EPUB 3.3",
+    "layout": "reflowable",
+    "language": "gu-IN",
+    "direction": "ltr",
+    "coverage": {
+      "translated": 187,
+      "total": 722,
+      "units": "OLP-0004–0190"
+    },
+    "complete_edition": false
+  },
+  "reuse": {
+    "pipeline": "Adapted deterministic XHTML namespace, OPF, navigation, cold-replay and EPUBCheck practices from the accepted Accessible Complete English EPUB pipeline.",
+    "source_task": "019ffc65-3d4d-7e21-a913-21cc33a9be4a"
+  },
+  "epubcheck": {
+    "version": "5.3.0",
+    "jar_sha256": "f7f96617c929371821609b88c8484d6dc9f24fe916499863c46094c5fb778a65",
+    "report": "build/EPUBCHECK_019.json",
+    "report_sha256": "1fa14ad95c056871ff8ccbb6e7fade72481420308d7cbda2958572085dfe2e38",
+    "messages": 0,
+    "fatals": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "reproducibility": {
+    "cold_replay_byte_identical": true,
+    "build_receipt": "build/EPUB_BUILD_RECEIPT_019.json",
+    "build_receipt_sha256": "b59903b494e045a848f5789e55c072b3d542566d70e4d6545718fa75ea2d7124"
+  },
+  "structural_and_semantic_checks": {
+    "archive_entries": 22,
+    "mimetype_first_and_uncompressed": true,
+    "native_mathml_nodes": 10503,
+    "block_mathml_nodes": 515,
+    "mathml_subtrees_exact_after_namespace_normalization": true,
+    "tex_annotations_exact": 10503,
+    "gujarati_character_sequence_exact": true,
+    "content_ids_exact": 721,
+    "broken_internal_content_links": 0,
+    "navigation_links": 193,
+    "broken_navigation_links": 0,
+    "tables": 12,
+    "proof_representations": 208,
+    "footnotes": 13,
+    "described_svg_figures": 13,
+    "embedded_gujarati_fonts": 2,
+    "scripts": 0,
+    "all_136_source_correction_disclosures_preserved": true,
+    "olinf_002_historical_classification_withdrawal_preserved": true,
+    "honest_partial_scope_metadata": true
+  },
+  "runtime_inspection": {
+    "inspected_at_utc": "2026-09-20T02:04:26.832850+00:00",
+    "method": "The exact XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative asset URLs.",
+    "exact_xhtml_binding": {
+      "content_xhtml_sha256": "3fe8c3af2af627ecdbe8beadbe0bc2113329591296603711968a3db4034ffa15",
+      "navigation_xhtml_sha256": "4d2f48aff78f870b7f7471be4f44265b24ed5625d2b09152814ee94efbf2623e",
+      "stylesheet_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "archive_content_byte_identical_to_stage": true,
+      "archive_navigation_byte_identical_to_stage": true,
+      "archive_stylesheet_byte_identical_to_stage": true
+    },
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "representative_views": [
+      "title and partial-edition disclosure in the exact packaged XHTML",
+      "Model Theory part and Basics chapter hierarchy",
+      "substructure conditions with the OLMTB-002 disclosure",
+      "structure theory with native MathML satisfaction notation",
+      "partial-isomorphism definitions and back-and-forth theorem",
+      "dense-order proof with the OLMTB-008 repair disclosure",
+      "editorial notes, bibliography, and endnotes"
+    ],
+    "runtime_checks": {
+      "document_ready_state": "complete",
+      "fonts_status": "loaded",
+      "native_mathml_nodes": 10503,
+      "block_mathml_nodes_checked": 515,
+      "unhandled_clipped_block_mathml_nodes": 0,
+      "intentionally_horizontally_scrollable_tableaux": 3,
+      "document_horizontal_overflow": false,
+      "images_loaded": 13,
+      "images_with_nonempty_gujarati_alt": 13,
+      "tables": 12,
+      "raw_problem_tag_leaks": 0,
+      "repaired_tagged_exercise_occurrences": 1,
+      "target_browser_console_messages": 0,
+      "excluded_stale_session_entries": 0,
+      "unique_content_ids": 721,
+      "runtime_receipt": "work/EPUB_BROWSER_RUNTIME_019.json",
+      "runtime_receipt_sha256": "7c8766ea0ed253ed86bea24f4e063756fddd5120107437ae014af812f71847c3"
+    },
+    "visual_findings": {
+      "gujarati_shaping": "passed",
+      "mathml_layout": "passed",
+      "diagram_and_caption_layout": "passed",
+      "navigation_and_end_matter": "passed",
+      "overlap_or_truncation": "none_observed"
+    },
+    "status": "passed_silent_exact_xhtml_runtime_inspection"
+  },
+  "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa"
+}

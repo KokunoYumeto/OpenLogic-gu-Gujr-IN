@@ -1,0 +1,136 @@
+% Part: model-theory
+% Chapter: basics
+% Section: isomorphism
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{iso}
+\olsection{એકરૂપ સંરચનાઓ}
+
+પ્રથમ-ક્રમ !!{structure}s બે રીતે એકસરખી હોઈ શકે છે. એક રીતે તેઓ
+એકસરખી હોય છે જો તેઓ એ જ !!{sentence}sને સત્ય બનાવે. આવી
+!!{structure}sને આપણે \emph{પ્રાથમિક રીતે સમકક્ષ} કહીએ છીએ. પરંતુ બહુ
+જુદી સંરચનાઓ પણ એ જ !!{sentence}sને સત્ય બનાવી શકે છે---દાખલા તરીકે,
+એક !!{enumerable} હોઈ શકે અને બીજી નહિ. તેનું કારણ એ છે કે
+!!a{structure}નાં ઘણાં લક્ષણો પ્રથમ-ક્રમ ભાષાઓમાં વ્યક્ત કરી શકાતાં નથી;
+કાં તો ભાષા પૂરતી સમૃદ્ધ નથી અથવા લેવેનહાઇમ--સ્કોલેમ પ્રમેય જેવી
+પ્રથમ-ક્રમ તર્કશાસ્ત્રની મૂળભૂત મર્યાદાઓ તેને રોકે છે. તેથી
+!!{structure}s વધુ ચુસ્ત અર્થમાં પણ એકસરખી હોઈ શકે છે: તેમને બનાવતી
+વસ્તુઓ જ જુદી હોય, પણ તેમનાં સંરચનાત્મક લક્ષણો જુદાં ન હોય. આ વિચારને
+ચોક્કસ બનાવવાની એક રીત \emph{એકરૂપતા}નો ખ્યાલ છે.
+
+\begin{defn}
+\ollabel{defn:elem-equiv}
+એક જ !!{language}~$\Lang{L}$ માટેની બે !!{structure}s $\Struct{M}$ અને
+$\Struct M'$ આપેલી હોય ત્યારે, $\Lang{L}$ના દરેક !!{sentence}~$!A$ માટે
+$\Sat{M}{!A}$ ત્યારે અને માત્ર ત્યારે જ્યારે $\Sat{M'}{!A}$ હોય, તો અને
+માત્ર તો $\Struct{M}$ને $\Struct M'$ની \emph{પ્રાથમિક રીતે સમકક્ષ}
+કહીએ છીએ અને $\Struct{M} \equiv \Struct M'$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:isomorphism} એક જ !!{language}~$\Lang L$ માટેની બે
+!!{structure}s $\Struct{M}$ અને $\Struct M'$ આપેલી હોય ત્યારે, નીચેની
+શરતો સંતોષતું વિધેય $h \colon \Domain{M} \to \Domain{M'}$ હોય તો અને
+માત્ર તો $\Struct{M}$ને~$\Struct M'$ની \emph{એકરૂપ} કહીએ છીએ અને
+$\Struct{M} \simeq \Struct M'$ લખીએ છીએ:
+\begin{enumerate}
+\item $h$ !!{injective} છે: જો $h(x) = h(y)$, તો $x = y$;
+\item $h$ !!{surjective} છે: દરેક $y \in \Domain{M'}$ માટે એવો
+  $x \in \Domain{M}$ છે કે $h(x) = y$;
+\item \ollabel{defn:iso-const}દરેક !!{constant} $c$ માટે:
+  $h(\Assign{c}{M}) = \Assign{c}{M'}$;
+\item \ollabel{defn:iso-pred}દરેક $n$-સ્થાની !!{predicate}~$P$ માટે:
+  \[
+  \tuple{a_1, \dots, a_n}\in \Assign{P}{M} \quad\text{ત્યારે અને માત્ર ત્યારે}\quad
+  \tuple{h(a_1), \dots, h(a_n)} \in \Assign{P}{M'};
+  \]
+\item \ollabel{defn:iso-func}દરેક $n$-સ્થાની !!{function} $f$ માટે:
+  \[
+  h(\Assign{f}{M}(a_1, \dots, a_n)) =
+  \Assign{f}{M'}(h(a_1), \dots, h(a_n)).
+  \]
+\end{enumerate}
+\end{defn}
+
+\begin{thm}
+\ollabel{thm:isom}
+જો $\Struct{M} \iso \Struct M'$, તો $\Struct{M} \elemequiv
+\Struct{M'}$.
+\end{thm}
+
+\begin{proof}
+ધારો કે $h$ એ $\Struct{M}$થી $\Struct M'$ પરની એકરૂપતા છે. કોઈ પણ
+નિયુક્તિ~$s$ માટે $h \circ s$ એ $h$ અને $s$નું સંયોજન છે, એટલે કે
+$\Struct{M'}$માં એવી નિયુક્તિ કે $(h \circ s)(x) = h(s(x))$.
+$t$ અને $!A$ પરના આગમનથી નીચેના વધુ પ્રબળ દાવા સાબિત કરી શકાય છે:
+\begin{enumerate}
+  \item[a.] $h(\Value{t}{M}[s]) = \Value{t}{M'}[h\circ s]$.
+  \item[b.] $\Sat{M}{!A}[s]$ ત્યારે અને માત્ર ત્યારે જ્યારે
+    $\Sat{M'}{!A}[h \circ s]$.
+\end{enumerate}
+પહેલો દાવો~$t$ની જટિલતા પરના આગમનથી સાબિત થાય છે.
+\begin{enumerate}
+\item જો $t \ident c$, તો $\Value{c}{M}[s] = \Assign{c}{M}$ અને
+  $\Value{c}{M'}[h \circ s] = \Assign{c}{M'}$. તેથી
+  $h(\Value{t}{M}[s]) = h(\Assign{c}{M}) = \Assign{c}{M'}$
+  (\olref{defn:isomorphism}ની \olref{defn:iso-const} મુજબ) $=
+  \Value{t}{M'}[h \circ s]$.
+\item જો $t \ident x$, તો $\Value{x}{M}[s] = s(x)$ અને
+  $\Value{x}{M'}[h \circ s] = h(s(x))$. તેથી
+  $h(\Value{x}{M}[s]) = h(s(x)) = \Value{x}{M'}[h \circ s]$.
+\item જો $t \ident f(t_1, \dots, t_n)$, તો
+  \begin{align*}
+    \Value{t}{M}[s] & = \Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s]) \quad\text{અને}\\
+  \Value{t}{M'}[h \circ s] & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ
+    s], \dots, \Value{t_n}{M'}[h \circ s]).
+  \end{align*}
+  આગમન પરિકલ્પના મુજબ દરેક $i$ માટે $h(\Value{t_i}{M}[s])
+  = \Value{t_i}{M'}[h\circ s]$. તેથી
+  \begin{align}
+    h(\Value{t}{M}[s])
+    & = h(\Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s])) \notag\\
+    & = \Assign{f}{M'}(h(\Value{t_1}{M}[s]), \dots,
+    h(\Value{t_n}{M}[s])) \ollabel{iso-1}\\
+    & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ s], \dots,
+    \Value{t_n}{M'}[h \circ s]) \ollabel{iso-2}\\
+    & = \Value{t}{M'}[h\circ s] \notag
+  \end{align}
+  અહીં \olref{iso-1}, \olref{defn:isomorphism}ની
+  \olref{defn:iso-func}માંથી અને \olref{iso-2} આગમન પરિકલ્પનામાંથી ફલિત થાય છે.
+  \sourcecorrection{OLMTB-003}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{isomorphism.tex}, પંક્તિઓ~89--90માં
+    $\Value{t}{M'}[h\circ s]$ની વ્યાખ્યામાં વિધેયનું અર્થઘટન ભૂલથી
+    $\Assign{f}{M}$ લખાયું છે. અહીં લક્ષ્ય સંરચનાનું
+    $\Assign{f}{M'}$ પુનઃસ્થાપિત કર્યું છે.}
+  \sourcecorrection{OLMTB-004}{એ જ મૂળની પંક્તિ~96માં
+    $h(\Assign{f}{M}(\dots))$નું બહારનું જમણું કૌંસ ગાયબ છે. અહીં તે
+    કૌંસ પુનઃસ્થાપિત કર્યું છે.}
+\end{enumerate}
+ભાગ~(b)ની સાબિતી અભ્યાસપ્રશ્ન તરીકે છોડી છે.
+
+જો $!A$ વાક્ય હોય, તો નિયુક્તિઓ~$s$ અને $h \circ s$ અપ્રસ્તુત છે અને
+આપણે $\Sat{M}{!A}$ ત્યારે અને માત્ર ત્યારે જ્યારે $\Sat{M'}{!A}$ મેળવીએ છીએ.
+\end{proof}
+
+\begin{prob}
+\olref[mod][bas][iso]{thm:isom}ના ભાગ~(b)ની સાબિતી વિગતે પૂરી કરો.
+\olref[mod][bas][iso]{defn:isomorphism}માં એકરૂપતાઓને લક્ષણિત કરતા પાંચ
+ગુણધર્મોમાંથી દરેકનો ઉપયોગ ક્યાં થાય છે તે ખાસ નોંધો.
+\end{prob}
+
+\begin{defn}
+સંરચના $\Struct{M}$ની પોતાના પરની એકરૂપતાને $\Struct{M}$ની
+\emph{સ્વ-એકરૂપતા} કહીએ છીએ.
+\end{defn}
+
+\begin{prob}
+બતાવો કે કોઈ પણ સંરચના $\Struct{M}$ માટે, જો $X$ એ $\Struct{M}$નો
+વ્યાખ્યેય ઉપગણ હોય અને $h$ એ $\Struct{M}$ની સ્વ-એકરૂપતા હોય, તો
+$X = \Setabs{h(x)}{x \in X}$ (એટલે કે $X$, $h$ હેઠળ સ્થિર છે).
+\end{prob}
+
+
+\end{document}

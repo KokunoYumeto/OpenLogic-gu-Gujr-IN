@@ -1,19 +1,19 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 178,
-  "working_scope": "Complete cumulative translation through Beyond First-order Logic, OLP-0004–0181",
+  "translated": 187,
+  "working_scope": "Complete cumulative translation through Model Theory Basics, OLP-0004–0190",
   "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
   "public_release": {
-    "tag": "models-theories-v0.11.0",
-    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/models-theories-v0.11.0",
-    "translated": 170,
-    "scope": "Complete cumulative artifact release through First-order Models and Theories, OLP-0004–0173"
+    "tag": "beyond-v0.12.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/beyond-v0.12.0",
+    "translated": 178,
+    "scope": "Complete cumulative artifact release through Beyond First-order Logic, OLP-0004–0181"
   },
   "public_source_checkpoint": {
-    "commit": "9413b6815271858d5a5a18b2d2085854f0e0d57e",
-    "translated": 170,
-    "scope": "Previous anonymously verified source checkpoint through First-order Models and Theories, OLP-0004–0173; checkpoint 018 is represented by the commit containing this file"
+    "commit": "49f73e558a53510032adad34dc562260dbf62538",
+    "translated": 178,
+    "scope": "Previous anonymously verified source checkpoint through Beyond First-order Logic, OLP-0004–0181; checkpoint 019 is represented by the commit containing this file"
   },
   "complete_edition": false,
   "units": [
@@ -1229,111 +1229,120 @@
       "unit_id": "OLP-0174",
       "source_path": "content/first-order-logic/beyond/beyond.tex",
       "source_sha256": "59901c1d2af5fb520f86537ed3bfe163adc9ce43cad347b1ce2808f3c79f9d15",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "691481c96c91d853350e8f7af3141790d9108f317d571cf4badd54cac868b074"
     },
     {
       "unit_id": "OLP-0175",
       "source_path": "content/first-order-logic/beyond/introduction.tex",
       "source_sha256": "859471ff2e16efdd444f4d4158f8a6c1600aae949d4d5b8f2362bac945bbf769",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "b79e6bdb4554cea8371f7f31d1ac9e4e7aa1dd6449951885aaf60cfd68b37330"
     },
     {
       "unit_id": "OLP-0176",
       "source_path": "content/first-order-logic/beyond/many-sorted-logic.tex",
       "source_sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "9920603f0eb8afde13e3657e2d4b4a9adacdc4997cf36a61ace114ab7e87a27d"
     },
     {
       "unit_id": "OLP-0177",
       "source_path": "content/first-order-logic/beyond/second-order-logic.tex",
       "source_sha256": "944e224c99309c16e3303d6688fe0bf070e9ad8a68a1207ef6b8d6add08fe16d",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "9f2c786f7696c28e4f20769ae4f0955aeb67d22d1d0e47f3b483c5556481dfc0"
     },
     {
       "unit_id": "OLP-0178",
       "source_path": "content/first-order-logic/beyond/higher-order-logic.tex",
       "source_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "51c2a9807d461ce61555ddd2684cbc8b713cfe95526dca04f38698a107c2e08b"
     },
     {
       "unit_id": "OLP-0179",
       "source_path": "content/first-order-logic/beyond/intuitionistic-logic.tex",
       "source_sha256": "063ba3b9be092a262c09554ac0377b8f2a74d4042736588b30435c95a4740e98",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "fd369c9e308320685df49c6027c50adbd26fccb849db6a8246ca5405761cf33a"
     },
     {
       "unit_id": "OLP-0180",
       "source_path": "content/first-order-logic/beyond/modal-logics.tex",
       "source_sha256": "8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "bb7d9bdac9c60f94d48ef092c1823064fc9a00a93e56baa9f336ea2f08ff941c"
     },
     {
       "unit_id": "OLP-0181",
       "source_path": "content/first-order-logic/beyond/other-logics.tex",
       "source_sha256": "025f94f3d087242ea1cf63543ab32c653ca6960c89ea7c321f9805a3b14f3350",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "716c7d8e4c14fb36e2fd0af3ab2632b463a07a6479fe2b6c1e123cf4415f9c2b"
     },
     {
       "unit_id": "OLP-0182",
       "source_path": "content/model-theory/model-theory.tex",
       "source_sha256": "b003b16803f9b40df8da5a6664ff8ee5198559f77e88616aea9911323b757abf",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "fa75208fea7abeccce45a4cf7fcce795e4bc12ef1dd5b2c0294c496493b54c04"
     },
     {
       "unit_id": "OLP-0183",
       "source_path": "content/model-theory/basics/basics.tex",
       "source_sha256": "cc084be5f263daff1704017021244d4927bdd9fa4d1d808ed186265ff4e75495",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "697c3bc26eed60a4ba358af401aa47ce9090a7b3461e790bdfe2220e4dda9094"
     },
     {
       "unit_id": "OLP-0184",
       "source_path": "content/model-theory/basics/reducts-and-expansions.tex",
       "source_sha256": "8ba69b70aa9f9ce0d2cdd1e468906bd1f2d06ab97e5dd448a9e062edc3822205",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "4e91eaca76b92935da1c93ca6cc19a1ffe4d5aadabd4f90191aa0fa64bb9e9d8"
     },
     {
       "unit_id": "OLP-0185",
       "source_path": "content/model-theory/basics/substructures.tex",
       "source_sha256": "7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "f679dd2331b3dc04f808d044d58b91908392df44c5e60766a13ed5aa2bf1cac0"
     },
     {
       "unit_id": "OLP-0186",
       "source_path": "content/model-theory/basics/overspill.tex",
       "source_sha256": "e45ee9f5556ac6d7e9c55c8be3d568a03a6cdbce8d1969d7c8b025bea058e99a",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "bfa997c52575ce5a534b7403b111a467548d259d70673546f02873dedbfe3159"
     },
     {
       "unit_id": "OLP-0187",
       "source_path": "content/model-theory/basics/isomorphism.tex",
       "source_sha256": "bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c"
     },
     {
       "unit_id": "OLP-0188",
       "source_path": "content/model-theory/basics/theory-of-m.tex",
       "source_sha256": "c88232929eb2391b9b24b6f95ed5c85ef44238988e15c186f9def62488913cd0",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "e5c6f3c3aa03dcd05d302a40bab06c34183a31525a863bb7f63a8ed08dbad2ed"
     },
     {
       "unit_id": "OLP-0189",
       "source_path": "content/model-theory/basics/partial-iso.tex",
       "source_sha256": "ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573"
     },
     {
       "unit_id": "OLP-0190",
       "source_path": "content/model-theory/basics/dlo.tex",
       "source_sha256": "9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "a06e126a73cdb2c499d9f3711e43f640f47dd0c8621d7a8e105ea1b602148d3a"
     },
     {
       "unit_id": "OLP-0191",

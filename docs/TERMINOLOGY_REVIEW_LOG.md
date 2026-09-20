@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-19T23:51:29.326523+00:00. This is a **complete decision log for the current 178/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 170/722 units with checkpoint 017. It contains all 168 terminology decisions from the durable ledger and all 128 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
+Updated 2026-09-20T02:06:34.385577+00:00. This is a **complete decision log for the current 187/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 178/722 units with checkpoint 018. It contains all 179 terminology decisions from the durable ledger and all 136 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -1856,6 +1856,127 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** ધૂંધળું તર્કશાસ્ત્ર — clear prose for fuzzy but less stable as a field name.; અપરંપરાગત for nonmonotonic — incorrect because the defining issue is loss of monotonicity, not novelty.; નૈતિક તર્કશાસ્ત્ર for deontic — too broad; the source specifically concerns duties and obligations.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘અસ્પષ્ટ, સંભાવ્યતા, ડિફૉલ્ટ, અ-એકદિશવર્ધી, પરાજેય, કારણાત્મક અને કર્તવ્યલક્ષી તર્કશાસ્ત્ર’ accurately express ‘fuzzy, probabilistic, default, nonmonotonic, defeasible, causal and deontic logic’ with the scope stated here: The forms follow the source's explicit explanatory scopes: vagueness, probability, defaults, withdrawal under new information, causation and obligation. અ-એકદિશવર્ધી contrasts directly with the established monotonic-growth family, and પરાજેય marks an inference that can be defeated rather than a false or invalid inference. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T169: reduct / expansion of a structure → સંરચનાનું ન્યૂનરૂપ / વિસ્તાર
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/reducts-and-expansions.tex:10` (OLP-0184, “Reducts and Expansions”); `upstream/content/model-theory/basics/reducts-and-expansions.tex:28` (OLP-0184, “\emph{reduct}”)
+- **Gujarati use:** `gu/content/model-theory/basics/reducts-and-expansions.tex:10` (OLP-0184, “ન્યૂનરૂપો અને વિસ્તારો”); `gu/content/model-theory/basics/reducts-and-expansions.tex:10` (OLP-0184, “ન્યૂનરૂપ”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ન્યૂનરૂપ names the structure obtained by retaining interpretations only for a smaller language, while વિસ્તાર names the same-domain structure obtained by adding interpretations. The pair remains distinct from ન્યૂનીકરણ of problems and from વિસ્તરણ of a domain.
+- **Alternatives:** અપચય / વિસ્તૃત સંરચના — the first is less transparent in mathematical prose.; ઘટાડેલું રૂપ / વધારેલું રૂપ — readable paraphrases but less compact as paired technical nouns.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સંરચનાનું ન્યૂનરૂપ / વિસ્તાર’ accurately express ‘reduct / expansion of a structure’ with the scope stated here: ન્યૂનરૂપ names the structure obtained by retaining interpretations only for a smaller language, while વિસ્તાર names the same-domain structure obtained by adding interpretations. The pair remains distinct from ન્યૂનીકરણ of problems and from વિસ્તરણ of a domain. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T170: substructure / extension / generated substructure → ઉપસંરચના / વિસ્તરણ / જનિત ઉપસંરચના
+
+- **Status and uncertainty:** `provisional_contextual`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/substructures.tex:22` (OLP-0185, “sub!!{structure}”); `upstream/content/model-theory/basics/substructures.tex:23` (OLP-0185, “extension”); `upstream/content/model-theory/basics/partial-iso.tex:105` (OLP-0189, “generated by”)
+- **Gujarati use:** `gu/content/model-theory/basics/substructures.tex:23` (OLP-0185, “ઉપ!!{structure}”); `gu/content/model-theory/basics/substructures.tex:24` (OLP-0185, “વિસ્તરણ”); `gu/content/model-theory/basics/partial-iso.tex:100` (OLP-0189, “વડે જનિત”)
+- **Authorities actually checked:** `GU-P003` (GU-GSSTB-MATH11, {"pdf_page_one_based": 22, "printed_page": "10"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ઉપ- carries the checked subset relation into the structure-preserving setting. વિસ્તરણ denotes enlargement of the domain while preserving old interpretations, and જનિત marks the smallest substructure closed under the named generators.
+- **Alternatives:** અવસંરચના — compact but not supported by the checked Gujarati sources.; પ્રસાર for extension — does not clearly express inclusion of the original structure.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ઉપસંરચના / વિસ્તરણ / જનિત ઉપસંરચના’ accurately express ‘substructure / extension / generated substructure’ with the scope stated here: ઉપ- carries the checked subset relation into the structure-preserving setting. વિસ્તરણ denotes enlargement of the domain while preserving old interpretations, and જનિત marks the smallest substructure closed under the named generators. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T171: overspill / arbitrarily large finite models → અતિપ્રવાહ / ગમે તેટલા મોટા સાન્ત નિદર્શો
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/overspill.tex:3` (OLP-0186, “Overspill”); `upstream/content/model-theory/basics/overspill.tex:13` (OLP-0186, “arbitrarily”)
+- **Gujarati use:** `gu/content/model-theory/basics/overspill.tex:10` (OLP-0186, “અતિપ્રવાહ”); `gu/content/model-theory/basics/overspill.tex:13` (OLP-0186, “ગમે તેટલા મોટા સાન્ત”)
+- **Authorities actually checked:** `GU-P004` (GU-GSSTB-MATH11, {"pdf_page_one_based": 19, "printed_page": "7"}); `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P049` (GU-VK-SETS, {"line_one_based": 46, "last_line_one_based": 46, "utf8_start": 6583, "utf8_end": 9817, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P050` (GU-VK-MATH, {"line_one_based": 80, "last_line_one_based": 80, "utf8_start": 39535, "utf8_end": 40685, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** અતિપ્રવાહ is a compact compositional field label for the passage from models of unbounded finite size to an infinite model. The explanatory phrase explicitly retains the quantifier pattern: for every bound, a finite model at least that large.
+- **Alternatives:** અધિપ્રવાહ — possible literal compound but less transparent to a general reader.; અસીમિત સાન્ત નિદર્શો — can be misread as infinitely many models rather than unbounded sizes.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અતિપ્રવાહ / ગમે તેટલા મોટા સાન્ત નિદર્શો’ accurately express ‘overspill / arbitrarily large finite models’ with the scope stated here: અતિપ્રવાહ is a compact compositional field label for the passage from models of unbounded finite size to an infinite model. The explanatory phrase explicitly retains the quantifier pattern: for every bound, a finite model at least that large. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T172: elementary equivalence / elementarily equivalent → પ્રાથમિક સમકક્ષતા / પ્રાથમિક રીતે સમકક્ષ
+
+- **Status and uncertainty:** `provisional_contextual_extension`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/isomorphism.tex:14` (OLP-0187, “elementarily equivalent”)
+- **Gujarati use:** `gu/content/model-theory/basics/isomorphism.tex:14` (OLP-0187, “પ્રાથમિક રીતે સમકક્ષ”)
+- **Authorities actually checked:** `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P066` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 6, "last_line_one_based": 6, "utf8_start": 8867, "utf8_end": 10292, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સમકક્ષતા follows the checked logical-equivalence register. પ્રાથમિક here marks agreement on every first-order sentence, and the surrounding definition prevents the ordinary educational sense of elementary from controlling the term.
+- **Alternatives:** મૂળભૂત રીતે સમકક્ષ — readable, but suggests general structural sameness rather than first-order agreement.; પ્રથમ-ક્રમ સમકક્ષ — maximally explicit, though it hides the standard elementary family used later.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રાથમિક સમકક્ષતા / પ્રાથમિક રીતે સમકક્ષ’ accurately express ‘elementary equivalence / elementarily equivalent’ with the scope stated here: સમકક્ષતા follows the checked logical-equivalence register. પ્રાથમિક here marks agreement on every first-order sentence, and the surrounding definition prevents the ordinary educational sense of elementary from controlling the term. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T173: automorphism / fixed under an automorphism → સ્વ-એકરૂપતા / સ્વ-એકરૂપતા હેઠળ સ્થિર
+
+- **Status and uncertainty:** `provisional_contextual_extension`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/isomorphism.tex:120` (OLP-0187, “automorphism”); `upstream/content/model-theory/basics/isomorphism.tex:127` (OLP-0187, “fixed under”)
+- **Gujarati use:** `gu/content/model-theory/basics/isomorphism.tex:126` (OLP-0187, “સ્વ-એકરૂપતા”); `gu/content/model-theory/basics/isomorphism.tex:132` (OLP-0187, “હેઠળ સ્થિર”)
+- **Authorities actually checked:** `GU-P035` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 15, "printed_page": "9"}); `GU-P040` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 20, "printed_page": "14"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** GU-P064 directly supports એકરૂપતા. The સ્વ- prefix states that source and target are the same structure, and હેઠળ સ્થિર preserves invariance of the definable subset under the resulting self-map.
+- **Alternatives:** આત્મએકરૂપતા — possible Sanskritic compound but less natural in the checked register.; સ્વરૂપાંતરણ — can mean a general transformation and loses preservation of structure.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સ્વ-એકરૂપતા / સ્વ-એકરૂપતા હેઠળ સ્થિર’ accurately express ‘automorphism / fixed under an automorphism’ with the scope stated here: GU-P064 directly supports એકરૂપતા. The સ્વ- prefix states that source and target are the same structure, and હેઠળ સ્થિર preserves invariance of the definable subset under the resulting self-map. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T174: partial isomorphism / back-and-forth property → આંશિક એકરૂપતા / આગળ-પાછળ ગુણધર્મ
+
+- **Status and uncertainty:** `provisional_contextual_extension`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/partial-iso.tex:10` (OLP-0189, “Partial Isomorphisms”); `upstream/content/model-theory/basics/partial-iso.tex:41` (OLP-0189, “back-and-forth”)
+- **Gujarati use:** `gu/content/model-theory/basics/partial-iso.tex:10` (OLP-0189, “આંશિક એકરૂપતાઓ”); `gu/content/model-theory/basics/partial-iso.tex:39` (OLP-0189, “આગળ-પાછળ”)
+- **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P049` (GU-VK-SETS, {"line_one_based": 46, "last_line_one_based": 46, "utf8_start": 6583, "utf8_end": 9817, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** આંશિક is already used for a function defined on only part of a domain, and એકરૂપતા is directly attested. આગળ-પાછળ mirrors the two extension clauses: add a chosen source element, then add a chosen target element.
+- **Alternatives:** અંશતઃ એકરૂપતા — accurate prose but less compact as a repeated noun phrase.; આગમન-પ્રતિગમન ગુણધર્મ — formal-sounding but obscures the simple paired construction.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘આંશિક એકરૂપતા / આગળ-પાછળ ગુણધર્મ’ accurately express ‘partial isomorphism / back-and-forth property’ with the scope stated here: આંશિક is already used for a function defined on only part of a domain, and એકરૂપતા is directly attested. આગળ-પાછળ mirrors the two extension clauses: add a chosen source element, then add a chosen target element. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T175: purely relational language → શુદ્ધ સંબંધાત્મક ભાષા
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/partial-iso.tex:87` (OLP-0189, “purely relational”)
+- **Gujarati use:** `gu/content/model-theory/basics/partial-iso.tex:82` (OLP-0189, “શુદ્ધ સંબંધાત્મક”)
+- **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P017` (GU-GSSTB-MATH11, {"pdf_page_one_based": 42, "printed_page": "30"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સંબંધાત્મક identifies a vocabulary whose nonlogical symbols are predicates, while શુદ્ધ excludes function and constant symbols. The adjacent parenthetical definition controls the exact scope.
+- **Alternatives:** માત્ર-સંબંધ ભાષા — transparent expansion but less suitable as an adjective.; નિર્મળ સંબંધાત્મક ભાષા — ordinary-language purity is less precise here.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘શુદ્ધ સંબંધાત્મક ભાષા’ accurately express ‘purely relational language’ with the scope stated here: સંબંધાત્મક identifies a vocabulary whose nonlogical symbols are predicates, while શુદ્ધ excludes function and constant symbols. The adjacent parenthetical definition controls the exact scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T176: quantifier rank / n-equivalent → પરિમાણક-ક્રમ / n-સમકક્ષ
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/partial-iso.tex:114` (OLP-0189, “quantifier rank”); `upstream/content/model-theory/basics/partial-iso.tex:117` (OLP-0189, “$n$-equivalent”)
+- **Gujarati use:** `gu/content/model-theory/basics/partial-iso.tex:110` (OLP-0189, “પરિમાણક-ક્રમ”); `gu/content/model-theory/basics/partial-iso.tex:115` (OLP-0189, “$n$-સમકક્ષ”)
+- **Authorities actually checked:** `GU-P054` (GU-GSSTB-MATH11-2021, {"pdf_page_one_based": 319, "printed_page": "309"}); `GU-P065` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 5, "last_line_one_based": 5, "utf8_start": 6117, "utf8_end": 8867, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** પરિમાણક is the edition's established quantifier head and ક્રમ records maximum nesting depth. n-સમકક્ષ then states agreement on all sentences through that rank, with the displayed definition fixing the parameter's scope.
+- **Alternatives:** પરિમાણક ઊંડાઈ — intuitive, but rank is used throughout the formal recursion.; n-સમતુલ્ય — possible synonym, though સમકક્ષ matches the established equivalence family.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પરિમાણક-ક્રમ / n-સમકક્ષ’ accurately express ‘quantifier rank / n-equivalent’ with the scope stated here: પરિમાણક is the edition's established quantifier head and ક્રમ records maximum nesting depth. n-સમકક્ષ then states agreement on all sentences through that rank, with the displayed definition fixing the parameter's scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T177: finite sequence / concatenation / empty sequence → સાન્ત શ્રેણી / જોડાણ / ખાલી શ્રેણી
+
+- **Status and uncertainty:** `provisional_contextual`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/partial-iso.tex:137` (OLP-0189, “finite sequences”); `upstream/content/model-theory/basics/partial-iso.tex:140` (OLP-0189, “concatenation”); `upstream/content/model-theory/basics/partial-iso.tex:164` (OLP-0189, “empty sequence”)
+- **Gujarati use:** `gu/content/model-theory/basics/partial-iso.tex:139` (OLP-0189, “સાન્ત શ્રેણીઓ”); `gu/content/model-theory/basics/partial-iso.tex:143` (OLP-0189, “જોડાણ”); `gu/content/model-theory/basics/partial-iso.tex:174` (OLP-0189, “ખાલી શ્રેણી”)
+- **Authorities actually checked:** `GU-P008` (GU-GSSTB-MATH11, {"pdf_page_one_based": 38, "printed_page": "26"}); `GU-P049` (GU-VK-SETS, {"line_one_based": 46, "last_line_one_based": 46, "utf8_start": 6583, "utf8_end": 9817, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P062` (GU-VK-CAUCHY, {"line_one_based": 3, "last_line_one_based": 3, "utf8_start": 4658, "utf8_end": 6713, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** શ્રેણી follows the edition's logic-register use for finite ordered strings and formation sequences; સાન્ત and ખાલી state the length conditions. જોડાણ names appending an element to the right without suggesting numerical addition.
+- **Alternatives:** સાન્ત અનુક્રમ — supported as a general ordered sequence and remains a viable expert correction.; સળંગ જોડાણ — useful where two full sequences are concatenated, but heavier for appending one element.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સાન્ત શ્રેણી / જોડાણ / ખાલી શ્રેણી’ accurately express ‘finite sequence / concatenation / empty sequence’ with the scope stated here: શ્રેણી follows the edition's logic-register use for finite ordered strings and formation sequences; સાન્ત and ખાલી state the length conditions. જોડાણ names appending an element to the right without suggesting numerical addition. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T178: theory of a structure / complete theory → સંરચનાનો સિદ્ધાંત / પૂર્ણ સિદ્ધાંત
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The established components and formal scope support this choice; the exact model-theoretic compound remains open to expert correction.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/theory-of-m.tex:11` (OLP-0188, “The Theory of a”); `upstream/content/model-theory/basics/theory-of-m.tex:30` (OLP-0188, “is complete”)
+- **Gujarati use:** `gu/content/model-theory/basics/theory-of-m.tex:11` (OLP-0188, “નો સિદ્ધાંત”); `gu/content/model-theory/basics/theory-of-m.tex:30` (OLP-0188, “પૂર્ણ છે”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સિદ્ધાંત is the established first-order-theory term. The possessive construction selects exactly the sentences true in one structure, and પૂર્ણ keeps the formal property that each sentence or its negation belongs to that theory.
+- **Alternatives:** સંરચનાનું સત્યસંગ્રહ — explanatory but abandons the established theory family.; નિર્ણીત સિદ્ધાંત for complete — can suggest decidability rather than sentence-by-sentence completeness.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સંરચનાનો સિદ્ધાંત / પૂર્ણ સિદ્ધાંત’ accurately express ‘theory of a structure / complete theory’ with the scope stated here: સિદ્ધાંત is the established first-order-theory term. The possessive construction selects exactly the sentences true in one structure, and પૂર્ણ keeps the formal property that each sentence or its negation belongs to that theory. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T179: dense linear ordering without endpoints → અંતબિંદુવિહીન સઘન રેખીય ક્રમ
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_model_theory_basics_translation; `work/add_model_theory_basics_terms.py`.
+- **English use:** `upstream/content/model-theory/basics/dlo.tex:10` (OLP-0190, “Dense Linear Orders”); `upstream/content/model-theory/basics/dlo.tex:13` (OLP-0190, “dense linear ordering without endpoints”)
+- **Gujarati use:** `gu/content/model-theory/basics/dlo.tex:10` (OLP-0190, “સઘન રેખીય ક્રમો”); `gu/content/model-theory/basics/dlo.tex:13` (OLP-0190, “અંતબિંદુવિહીન સઘન રેખીય ક્રમ”)
+- **Authorities actually checked:** `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"}); `GU-P022` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 11, "printed_page": "5"}); `GU-P031` (GU-SSA-STD6-WEEK1, {"pdf_page_one_based": 16, "printed_page": "34"}); `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** રેખીય ક્રમ continues the established order family, સઘન states that a point lies strictly between any two ordered points, and અંતબિંદુવિહીન states the independent absence of least and greatest endpoints. The six displayed axioms fix every component.
+- **Alternatives:** અંતવિહીન ઘન પૂર્ણક્રમ — risks both changing the chosen dense term and suggesting order completeness.; છેડાવિહીન — plainer, but અંતબિંદુ matches the mathematical endpoint concept more exactly.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અંતબિંદુવિહીન સઘન રેખીય ક્રમ’ accurately express ‘dense linear ordering without endpoints’ with the scope stated here: રેખીય ક્રમ continues the established order family, સઘન states that a point lies strictly between any two ordered points, and અંતબિંદુવિહીન states the independent absence of least and greatest endpoints. The six displayed axioms fix every component. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -3137,6 +3258,86 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLBYD-005 without changing any unaffected claim or formula?
+
+### OLMTB-001: confirmed_intrusive_preposition_in_editorial_sentence
+
+- **Frozen source:** `upstream/content/model-theory/model-theory.tex` at `model-theory.tex:15`; SHA-256 `b003b16803f9b40df8da5a6664ff8ee5198559f77e88616aea9911323b757abf`.
+- **Gujarati target:** `gu/content/model-theory/model-theory.tex` body line(s) 15; adjacent note line 17; SHA-256 `fa75208fea7abeccce45a4cf7fcce795e4bc12ef1dd5b2c0294c496493b54c04`.
+- **Chosen handling:** Translated the contextually clear ‘is planning’ reading and added an adjacent keyed note.
+- **Rationale:** The editorial sentence contains the malformed phrase ‘is at planning’.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-001 without changing any unaffected claim or formula?
+
+### OLMTB-002: confirmed_missing_nonempty_domain_condition
+
+- **Frozen source:** `upstream/content/model-theory/basics/substructures.tex` at `substructures.tex:41`; SHA-256 `7e887827ad7a38da3e8c86043ea0cf6d94ddb1512241c44f4c4cdd3f3db61904`.
+- **Gujarati target:** `gu/content/model-theory/basics/substructures.tex` body line(s) 42; adjacent note line 46; SHA-256 `f679dd2331b3dc04f808d044d58b91908392df44c5e60766a13ed5aa2bf1cac0`.
+- **Chosen handling:** Required N to be nonempty and added an adjacent keyed note.
+- **Rationale:** The remark allows the empty subset even though structures in this edition have nonempty domains.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-002 without changing any unaffected claim or formula?
+
+### OLMTB-003: confirmed_wrong_structure_in_target_term_value_clause
+
+- **Frozen source:** `upstream/content/model-theory/basics/isomorphism.tex` at `isomorphism.tex:89`; SHA-256 `bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f`.
+- **Gujarati target:** `gu/content/model-theory/basics/isomorphism.tex` body line(s) 87; adjacent note line 103; SHA-256 `8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c`.
+- **Chosen handling:** Replaced the mistaken M by M' in that equation and added an adjacent keyed note.
+- **Rationale:** The target term-value equation uses the source structure's interpretation of f instead of the target structure's interpretation.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-003 without changing any unaffected claim or formula?
+
+### OLMTB-004: confirmed_missing_closing_parenthesis
+
+- **Frozen source:** `upstream/content/model-theory/basics/isomorphism.tex` at `isomorphism.tex:96`; SHA-256 `bc20c7ae117da49ae395fe60f41be8baa408de9f1e0ccb78bb4356b40626861f`.
+- **Gujarati target:** `gu/content/model-theory/basics/isomorphism.tex` body line(s) 94; adjacent note line 108; SHA-256 `8568a81ebadd49ee3e8f33a5c5177142166d0ec06c91ae64b6a6c292014df38c`.
+- **Chosen handling:** Restored the closing parenthesis and added an adjacent keyed note.
+- **Rationale:** The displayed derivation omits the closing parenthesis of the outer h application.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-004 without changing any unaffected claim or formula?
+
+### OLMTB-005: confirmed_inconsistent_definition_of_purely_relational_language
+
+- **Frozen source:** `upstream/content/model-theory/basics/partial-iso.tex` at `partial-iso.tex:123`; SHA-256 `ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d`.
+- **Gujarati target:** `gu/content/model-theory/basics/partial-iso.tex` body line(s) 121; adjacent note line 125; SHA-256 `af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573`.
+- **Chosen handling:** Made the later parenthetical agree with the earlier explicit definition and added an adjacent keyed note.
+- **Rationale:** A later parenthetical allows constants although the same file explicitly defines purely relational languages as having predicates only, with neither functions nor constants.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-005 without changing any unaffected claim or formula?
+
+### OLMTB-006: confirmed_collision_between_rank_and_tuple_length_variables
+
+- **Frozen source:** `upstream/content/model-theory/basics/partial-iso.tex` at `partial-iso.tex:150`; SHA-256 `ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d`.
+- **Gujarati target:** `gu/content/model-theory/basics/partial-iso.tex` body line(s) 154; adjacent note line 163; SHA-256 `af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573`.
+- **Chosen handling:** Named the common sequence length k and indexed its variables through x_k, with an adjacent keyed note.
+- **Rationale:** The definition reuses n both for the back-and-forth rank and for the independent common sequence length.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-006 without changing any unaffected claim or formula?
+
+### OLMTB-007: confirmed_finiteness_claim_only_valid_modulo_logical_equivalence
+
+- **Frozen source:** `upstream/content/model-theory/basics/partial-iso.tex` at `partial-iso.tex:199`; SHA-256 `ff448c61f49d8375e1fcd7835e1ba9e8f2697e23c2e046336c78a02da280965d`.
+- **Gujarati target:** `gu/content/model-theory/basics/partial-iso.tex` body line(s) 210; adjacent note line 222; SHA-256 `af67d47e00b7a5bb64d93553ac6698c265c8d7c6c0676dbcb649eeaa557d4573`.
+- **Chosen handling:** Used one representative from each satisfied equivalence class and their finite conjunction, with an adjacent keyed note.
+- **Rationale:** The proof calls the syntactic set of all satisfied bounded-rank formulas finite, while the preceding result gives finiteness only up to logical equivalence.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-007 without changing any unaffected claim or formula?
+
+### OLMTB-008: confirmed_incomplete_case_split_in_back_and_forth_proof
+
+- **Frozen source:** `upstream/content/model-theory/basics/dlo.tex` at `dlo.tex:45`; SHA-256 `9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531`.
+- **Gujarati target:** `gu/content/model-theory/basics/dlo.tex` body line(s) 45; adjacent note line 61; SHA-256 `a06e126a73cdb2c499d9f3711e43f640f47dd0c8621d7a8e105ea1b602148d3a`.
+- **Chosen handling:** Added the empty-map and already-mapped cases before the remaining order-position cases, with an adjacent keyed note.
+- **Rationale:** The Forth case split omits both the empty partial map and an element already in the map's domain.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-008 without changing any unaffected claim or formula?
 
 ## Source-claim qualifications
 

@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-19T23:53:40.806524+00:00. This focused queue contains 127 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-20T02:12:57.611257+00:00. This focused queue contains 138 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -890,3 +890,80 @@ Generated 2026-09-19T23:53:40.806524+00:00. This focused queue contains 127 high
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અસ્પષ્ટ, સંભાવ્યતા, ડિફૉલ્ટ, અ-એકદિશવર્ધી, પરાજેય, કારણાત્મક અને કર્તવ્યલક્ષી તર્કશાસ્ત્ર’ accurately express ‘fuzzy, probabilistic, default, nonmonotonic, defeasible, causal and deontic logic’ with the scope stated here: The forms follow the source's explicit explanatory scopes: vagueness, probability, defaults, withdrawal under new information, causation and obligation. અ-એકદિશવર્ધી contrasts directly with the established monotonic-growth family, and પરાજેય marks an inference that can be defeated rather than a false or invalid inference. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/first-order-logic/beyond/other-logics.tex:23`
 - **Gujarati:** `gu/content/first-order-logic/beyond/other-logics.tex:22`
+
+## GU-T169: reduct / expansion of a structure → સંરચનાનું ન્યૂનરૂપ / વિસ્તાર
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંરચનાનું ન્યૂનરૂપ / વિસ્તાર’ accurately express ‘reduct / expansion of a structure’ with the scope stated here: ન્યૂનરૂપ names the structure obtained by retaining interpretations only for a smaller language, while વિસ્તાર names the same-domain structure obtained by adding interpretations. The pair remains distinct from ન્યૂનીકરણ of problems and from વિસ્તરણ of a domain. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/reducts-and-expansions.tex:10`
+- **Gujarati:** `gu/content/model-theory/basics/reducts-and-expansions.tex:10`
+
+## GU-T170: substructure / extension / generated substructure → ઉપસંરચના / વિસ્તરણ / જનિત ઉપસંરચના
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ઉપસંરચના / વિસ્તરણ / જનિત ઉપસંરચના’ accurately express ‘substructure / extension / generated substructure’ with the scope stated here: ઉપ- carries the checked subset relation into the structure-preserving setting. વિસ્તરણ denotes enlargement of the domain while preserving old interpretations, and જનિત marks the smallest substructure closed under the named generators. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/substructures.tex:22`
+- **Gujarati:** `gu/content/model-theory/basics/substructures.tex:23`
+
+## GU-T171: overspill / arbitrarily large finite models → અતિપ્રવાહ / ગમે તેટલા મોટા સાન્ત નિદર્શો
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અતિપ્રવાહ / ગમે તેટલા મોટા સાન્ત નિદર્શો’ accurately express ‘overspill / arbitrarily large finite models’ with the scope stated here: અતિપ્રવાહ is a compact compositional field label for the passage from models of unbounded finite size to an infinite model. The explanatory phrase explicitly retains the quantifier pattern: for every bound, a finite model at least that large. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/overspill.tex:20`
+- **Gujarati:** `gu/content/model-theory/basics/overspill.tex:10`
+
+## GU-T172: elementary equivalence / elementarily equivalent → પ્રાથમિક સમકક્ષતા / પ્રાથમિક રીતે સમકક્ષ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રાથમિક સમકક્ષતા / પ્રાથમિક રીતે સમકક્ષ’ accurately express ‘elementary equivalence / elementarily equivalent’ with the scope stated here: સમકક્ષતા follows the checked logical-equivalence register. પ્રાથમિક here marks agreement on every first-order sentence, and the surrounding definition prevents the ordinary educational sense of elementary from controlling the term. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/isomorphism.tex:14`
+- **Gujarati:** `gu/content/model-theory/basics/isomorphism.tex:14`
+
+## GU-T173: automorphism / fixed under an automorphism → સ્વ-એકરૂપતા / સ્વ-એકરૂપતા હેઠળ સ્થિર
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સ્વ-એકરૂપતા / સ્વ-એકરૂપતા હેઠળ સ્થિર’ accurately express ‘automorphism / fixed under an automorphism’ with the scope stated here: GU-P064 directly supports એકરૂપતા. The સ્વ- prefix states that source and target are the same structure, and હેઠળ સ્થિર preserves invariance of the definable subset under the resulting self-map. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/isomorphism.tex:120`
+- **Gujarati:** `gu/content/model-theory/basics/isomorphism.tex:126`
+
+## GU-T174: partial isomorphism / back-and-forth property → આંશિક એકરૂપતા / આગળ-પાછળ ગુણધર્મ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘આંશિક એકરૂપતા / આગળ-પાછળ ગુણધર્મ’ accurately express ‘partial isomorphism / back-and-forth property’ with the scope stated here: આંશિક is already used for a function defined on only part of a domain, and એકરૂપતા is directly attested. આગળ-પાછળ mirrors the two extension clauses: add a chosen source element, then add a chosen target element. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/partial-iso.tex:10`
+- **Gujarati:** `gu/content/model-theory/basics/partial-iso.tex:10`
+
+## GU-T175: purely relational language → શુદ્ધ સંબંધાત્મક ભાષા
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘શુદ્ધ સંબંધાત્મક ભાષા’ accurately express ‘purely relational language’ with the scope stated here: સંબંધાત્મક identifies a vocabulary whose nonlogical symbols are predicates, while શુદ્ધ excludes function and constant symbols. The adjacent parenthetical definition controls the exact scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/partial-iso.tex:87`
+- **Gujarati:** `gu/content/model-theory/basics/partial-iso.tex:82`
+
+## GU-T176: quantifier rank / n-equivalent → પરિમાણક-ક્રમ / n-સમકક્ષ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પરિમાણક-ક્રમ / n-સમકક્ષ’ accurately express ‘quantifier rank / n-equivalent’ with the scope stated here: પરિમાણક is the edition's established quantifier head and ક્રમ records maximum nesting depth. n-સમકક્ષ then states agreement on all sentences through that rank, with the displayed definition fixing the parameter's scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/partial-iso.tex:114`
+- **Gujarati:** `gu/content/model-theory/basics/partial-iso.tex:110`
+
+## GU-T177: finite sequence / concatenation / empty sequence → સાન્ત શ્રેણી / જોડાણ / ખાલી શ્રેણી
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાન્ત શ્રેણી / જોડાણ / ખાલી શ્રેણી’ accurately express ‘finite sequence / concatenation / empty sequence’ with the scope stated here: શ્રેણી follows the edition's logic-register use for finite ordered strings and formation sequences; સાન્ત and ખાલી state the length conditions. જોડાણ names appending an element to the right without suggesting numerical addition. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/partial-iso.tex:137`
+- **Gujarati:** `gu/content/model-theory/basics/partial-iso.tex:139`
+
+## GU-T178: theory of a structure / complete theory → સંરચનાનો સિદ્ધાંત / પૂર્ણ સિદ્ધાંત
+
+- **Why prioritized:** The established components and formal scope support this choice; the exact model-theoretic compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંરચનાનો સિદ્ધાંત / પૂર્ણ સિદ્ધાંત’ accurately express ‘theory of a structure / complete theory’ with the scope stated here: સિદ્ધાંત is the established first-order-theory term. The possessive construction selects exactly the sentences true in one structure, and પૂર્ણ keeps the formal property that each sentence or its negation belongs to that theory. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/theory-of-m.tex:11`
+- **Gujarati:** `gu/content/model-theory/basics/theory-of-m.tex:11`
+
+## GU-T179: dense linear ordering without endpoints → અંતબિંદુવિહીન સઘન રેખીય ક્રમ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અંતબિંદુવિહીન સઘન રેખીય ક્રમ’ accurately express ‘dense linear ordering without endpoints’ with the scope stated here: રેખીય ક્રમ continues the established order family, સઘન states that a point lies strictly between any two ordered points, and અંતબિંદુવિહીન states the independent absence of least and greatest endpoints. The six displayed axioms fix every component. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/basics/dlo.tex:13`
+- **Gujarati:** `gu/content/model-theory/basics/dlo.tex:13`

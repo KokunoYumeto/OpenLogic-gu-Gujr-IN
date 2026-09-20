@@ -1,0 +1,64 @@
+% Part: model-theory
+% Chapter: basics
+% Section: theory-of-m
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{thm}
+
+\section{\printtoken{S}{structure}નો સિદ્ધાંત}
+
+દરેક !!{structure}~$\Struct{M}$ કેટલાક !!{sentence}sને સત્ય અને
+કેટલાકને અસત્ય બનાવે છે. તે જે બધાં !!{sentence}sને સત્ય બનાવે છે
+તેમના ગણને તેનો \emph{સિદ્ધાંત} કહે છે. આ ગણ ખરેખર સિદ્ધાંત છે, કારણ કે
+તેમાંથી અર્થાનુસારી રીતે ફલિત થતી દરેક વસ્તુ તેના બધાં નિદર્શોમાં,
+અને તેથી~$\Struct{M}$માં પણ, સત્ય હોવી જોઈએ.
+
+\begin{defn}
+  !!a{structure}~$\Struct M$ આપેલી હોય ત્યારે $\Struct{M}$માં સત્ય
+  હોય તેવા !!{sentence}sના ગણ $\Theory{M}$ને $\Struct{M}$નો
+  \emph{સિદ્ધાંત} કહીએ છીએ; એટલે કે $\Theory{M} =
+  \Setabs{!A}{\Sat{M}{!A}}$.
+\end{defn}
+
+નિગમન હેઠળ સંવૃત હોય કે ન હોય, આશયિત અર્થઘટન ધરાવતા
+!!{sentence}sના ગણો માટે પણ આપણે અનૌપચારિક રીતે ``સિદ્ધાંત'' શબ્દ વાપરીએ છીએ.
+
+\begin{prop}
+દરેક $\Struct{M}$ માટે $\Theory{M}$ પૂર્ણ છે.
+\end{prop}
+
+\begin{proof}
+દરેક !!{sentence}~$!A$ માટે કાં તો $\Sat{M}{!A}$ અથવા
+$\Sat{M}{\lnot !A}$; તેથી કાં તો $!A \in \Theory{M}$ અથવા
+$\lnot !A \in \Theory{M}$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:equiv}
+  જો દરેક $!A \in \Theory{M}$ માટે $\Struct{N} \models !A$, તો
+  $\Struct{M} \elemequiv \Struct{N}$.
+\end{prop}
+
+\begin{proof}
+બધા $!A \in \Theory{M}$ માટે $\Sat{N}{!A}$ હોવાથી $\Theory{M}
+\subseteq \Theory{N}$. જો $\Sat{N}{!A}$, તો
+$\Sat/{N}{\lnot !A}$; તેથી $\lnot !A \notin \Theory{M}$. કારણ કે
+$\Theory{M}$ પૂર્ણ છે, $!A \in \Theory{M}$. આમ $\Theory{N}
+\subseteq \Theory{M}$ અને તેથી $\Struct{M} \elemequiv \Struct{N}$.
+\end{proof}
+
+\begin{rem}\ollabel{remark:R}
+  !!{structure}~$\Struct{R} = \langle\Real, <\rangle$ વિચારો: તેનું
+  વ્યાપકક્ષેત્ર વાસ્તવિક સંખ્યાઓનો ગણ $\Real$ છે અને તેની !!{language}માં માત્ર એક
+  2-સ્થાની !!{predicate} છે, જેનું અર્થઘટન વાસ્તવિક સંખ્યાઓ પરના
+  સંબંધ~$<$ તરીકે થાય છે. સ્પષ્ટ છે કે $\Struct{R}$ !!{nonenumerable}
+  છે; પરંતુ $\Theory{R}$ દેખીતી રીતે સુસંગત હોવાથી લેવેનહાઇમ--સ્કોલેમ
+  પ્રમેય મુજબ તેને કોઈ !!a{enumerable} નિદર્શ, ધારો કે $\Struct{S}$,
+  છે; અને \olref{prop:equiv} મુજબ $\Struct{R} \equiv \Struct{S}$.
+  વધુમાં, $\Struct{R}$ અને $\Struct{S}$ એકરૂપ નથી, તેથી આ બતાવે છે કે
+  \olref[iso]{thm:isom}નું વ્યસ્ત સામાન્ય રીતે નિષ્ફળ જાય છે.
+\end{rem}
+
+\end{document}

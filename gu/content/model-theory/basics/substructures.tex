@@ -1,0 +1,55 @@
+% Part: model-theory
+% Chapter: basics
+% Section: substructures
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{bas}{sub}
+\olsection{ઉપ\printtoken{p}{structure}}
+
+!!a{structure}~$\Struct{M}$નું !!{domain} બીજી સંરચના~$\Struct{M'}$ના
+વ્યાપકક્ષેત્રનો ઉપગણ હોઈ શકે છે. પરંતુ $\Struct{M}$ને $\Struct{M'}$નો
+``ભાગ'' આપણે ત્યારે જ માનવો જોઈએ જ્યારે માત્ર $\Domain{M} \subseteq
+\Domain{M'}$ જ નહિ, પણ ભાષાના સંકેતોનું અર્થઘટન કરવાની રીતમાં પણ
+$\Struct{M}$ અને $\Struct{M'}$ ઓછામાં ઓછા તેમના સામાન્ય
+ભાગ~$\Domain{M}$ પર ``સંમત'' હોય.
+
+\begin{defn}
+\ollabel{defn:substructure}
+એક જ ભાષા~$\Lang L$ માટેની !!{structure}s $\Struct M$ અને
+$\Struct M'$ આપેલી હોય ત્યારે નીચેની શરતો સંતોષાય તો અને માત્ર તો
+$\Struct M$ને $\Struct M'$ની \emph{ઉપ!!{structure}} અને
+$\Struct M'$ને $\Struct M$નું \emph{વિસ્તરણ} કહીએ છીએ અને
+$\Struct M \substruct \Struct M'$ લખીએ છીએ:
+\begin{enumerate}
+\item $\Domain{M} \subseteq \Domain{M'}$,
+\item દરેક અચળ $c \in \Lang L$ માટે $\Assign{c}{M} =
+    \Assign{c}{M'}$;
+\item દરેક $n$-સ્થાની !!{function} $f \in \Lang L$ માટે અને બધા
+  $a_1$, \dots, $a_n \in \Domain{M}$ માટે
+  $\Assign{f}{M}(a_1, \dots, a_n) = \Assign{f}{M'}(a_1, \dots, a_n)$.
+\item દરેક $n$-સ્થાની !!{predicate} $R \in \Lang L$ માટે અને બધા
+  $a_1$, \dots, $a_n \in \Domain{M}$ માટે $\langle
+  a_1, \dots, a_n\rangle \in \Assign{R}{M}$ ત્યારે અને માત્ર ત્યારે,
+  જ્યારે $\langle a_1, \dots, a_n\rangle \in \Assign{R}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{rem}
+\ollabel{rem:substructure}
+જો ભાષામાં અચળ કે !!{function}s ન હોય, તો દરેક અરિક્ત
+$N \subseteq \Domain{M}$ એ !!{domain}~$\Domain{N} = N$ અને
+$\Assign{R}{N} = \Assign{R}{M} \cap N^n$ મૂકીને $\Struct M$ની
+ઉપ!!{structure}~$\Struct{N}$ નિર્ધારિત કરે છે.
+\sourcecorrection{OLMTB-002}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{substructures.tex}, પંક્તિઓ~41--44માં ``any
+  $N \subseteq \Domain{M}$'' લખતાં $N=\emptyset$ પણ સામેલ થાય છે,
+  જ્યારે આ આવૃત્તિની પ્રથમ-ક્રમ સંરચનાઓનું વ્યાપકક્ષેત્ર અરિક્ત હોવું
+  જરૂરી છે. અહીં $N$ અરિક્ત હોવાની શરત સ્પષ્ટ કરી છે.}
+\end{rem}
+
+% prove something about this? Examples?
+
+\end{document}
