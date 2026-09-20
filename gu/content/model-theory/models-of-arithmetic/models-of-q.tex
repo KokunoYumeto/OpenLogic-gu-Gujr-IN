@@ -1,0 +1,223 @@
+% Part: model-theory
+% Chapter: models-of-arithmetic
+% Section: non-standard-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{mdq}
+\section{$\Th{Q}$ના નિદર્શો}
+
+\begin{explain}
+આપણે જાણીએ છીએ કે એવી અપ્રમાણભૂત !!{structure}s છે જે
+$\Struct{N}$ જેટલાં જ !!{sentence}sને સત્ય બનાવે છે, એટલે કે જે
+$\Th{TA}$ના નિદર્શો છે. $\Sat{N}{\Th{Q}}$ હોવાથી $\Th{TA}$નો દરેક
+નિદર્શ $\Th{Q}$નો પણ નિદર્શ છે. $\Th{Q}$, $\Th{TA}$ કરતાં ઘણો
+નિર્બળ છે; દાખલા તરીકે,
+$\Th{Q}\Proves/\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$.
+નિર્બળ સિદ્ધાંતોને સંતોષવા વધુ સહેલા છે: તેમને વધુ નિદર્શો હોય છે.
+દાખલા તરીકે, $\Th{Q}$ને એવા નિદર્શો છે જે
+$\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$ને અસત્ય બનાવે છે, પરંતુ
+એ નિદર્શો $\Th{TA}$ના કે $\Th{PA}$ના નિદર્શો પણ હોઈ શકે નહિ.
+$\Th{Q}$ના નિદર્શો સાપેક્ષ રીતે સરળ પણ છે: આપણે તેમને સ્પષ્ટપણે
+નિર્દિષ્ટ કરી શકીએ છીએ.
+\end{explain}
+
+\begin{ex}
+\ollabel{ex:model-K-of-Q}
+$\Domain{K}=\Nat\cup\{a\}$ અને નીચેનાં અર્થઘટનો ધરાવતી
+!!{structure}~$\Struct{K}$ વિચારો:
+\begin{align*}
+  \Assign{\Obj{0}}{K} & = 0\\
+  \Assign{\prime}{K}(x) & =
+  \begin{cases}
+    x+1 & \text{જો $x\in\Nat$}\\
+    a & \text{જો $x=a$}
+  \end{cases}\\
+  \Assign{+}{K}(x,y) & =
+  \begin{cases}
+    x+y & \text{જો $x$, $y\in\Nat$}\\
+    a & \text{અન્યથા}
+  \end{cases}\\
+  \Assign{\times}{K}(x,y) & =
+  \begin{cases}
+    xy & \text{જો $x$, $y\in\Nat$}\\
+    0 & \text{જો $x=0$ અથવા $y=0$}\\
+    a & \text{અન્યથા}\\
+  \end{cases}\\
+  \Assign{<}{K} & =
+  \Setabs{\tuple{x,y}}{x,y\in\Nat\text{ અને }x<y}\cup
+  \Setabs{\tuple{x,a}}{x\in\Domain{K}}
+\end{align*}
+$\Sat{K}{\Th{Q}}$ બતાવવા $\Th{Q}$ની બધી સ્વયંસિદ્ધિઓ
+$\Struct{K}$માં સત્ય છે તે ચકાસવું પડે. સગવડ માટે
+$\Assign{\prime}{K}(x)$ને $x^\nssucc$ ($\Struct{K}$માં $x$નો
+``ઉત્તરગામી''), $\Assign{+}{K}(x,y)$ને $x\nsplus y$
+($\Struct{K}$માં $x$ અને~$y$નો ``સરવાળો''),
+$\Assign{\times}{K}(x,y)$ને $x\nstimes y$ ($\Struct{K}$માં $x$ અને
+~$y$નો ``ગુણાકાર''), અને
+$\tuple{x,y}\in\Assign{<}{K}$ને $x\nsless y$ લખીએ. આ સંક્ષેપો વડે
+$\Struct{K}$ની ક્રિયાઓ વધુ સ્પષ્ટ રીતે આ પ્રમાણે આપી શકાય છે:
+\sourcecorrection{OLMAR-007}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{models-of-q.tex}, પંક્તિઓ~55--57માં $x\nsplus y$ના
+  ``sum''વાળા કૌંસને બંધ કર્યા વિના જ $x\nstimes y$ની નવી સમજ શરૂ થાય
+  છે. અહીં સરવાળાની સમજ પછી ગાયબ જમણું કૌંસ પુનઃસ્થાપિત કર્યું છે.}
+\[
+\begin{array}{c|c}
+  x & x^\nssucc \\
+  \hline
+  n & n+1 \\
+  a & a
+\end{array}
+\qquad
+\begin{array}{c|ccc}
+  x \nsplus y & 0 & m & a \\
+  \hline
+  0 & 0 & m & a \\
+  n & n & n+m & a \\
+  a & a & a & a \\
+\end{array}
+\qquad
+\begin{array}{c|ccc}
+  x \nstimes y & 0 & m & a \\
+  \hline
+  0 & 0 & 0 & 0 \\
+  n & 0 & nm & a \\
+  a & 0 & a & a \\
+\end{array}
+\]
+$n$, $m\in\Nat$ માટે $n\nsless m$ ત્યારે અને માત્ર ત્યારે જ્યારે $n<m$,
+અને દરેક $x\in\Domain{K}$ માટે $x\nsless a$.
+
+$\nssucc$ !!{injective} હોવાથી
+$\Sat{K}{\lforall[x][\lforall[y][(\eq[x'][y']\lif\eq[x][y])]]}$.
+$\Struct{K}$માં $0$ કોઈ $\nssucc$-ઉત્તરગામી નથી, તેથી
+$\Sat{K}{\lforall[x][\eq/[\Obj 0][x']]}$. દરેક $n>0$ માટે
+$n=(n-1)^\nssucc$ અને $a=a^\nssucc$ હોવાથી
+$\Sat{K}{\lforall[x][(\eq[x][\Obj 0]\lor
+\lexists[y][\eq[x][y']])]}$.
+
+$n\nsplus0=n+0=n$ અને $\nsplus$ની વ્યાખ્યાથી $a\nsplus0=a$ હોવાથી
+$\Sat{K}{\lforall[x][\eq[(x+\Obj 0)][x]]}$. વિધાન
+$\Sat{K}{\lforall[x][\lforall[y][\eq[(x+y')][(x+y)']]]}$ થોડું વધુ
+કઠિન છે. જો $n$, $m$ બંને પ્રમાણભૂત હોય, તો
+\begin{align*}
+(n\nsplus m^\nssucc)&=(n+(m+1))=(n+m)+1=(n\nsplus m)^\nssucc
+\intertext{કારણ કે પ્રમાણભૂત સંખ્યાઓ પર $\nsplus$ અને $^\nssucc$,
+  $+$ અને $\prime$ સાથે સહમત થાય છે. હવે $x\in\Domain{K}$ ધારો. ત્યારે}
+(x\nsplus a^\nssucc)&=(x\nsplus a)=a=a^\nssucc=(x\nsplus a)^\nssucc
+\intertext{બાકીનો કિસ્સો $y\in\Domain{K}$ અને $x=a$ હોય ત્યારે છે.
+  અહીં પણ $y=n$ પ્રમાણભૂત છે કે $y=a$ છે તે પ્રમાણે કિસ્સા પાડવા પડે:}
+(a\nsplus n^\nssucc)&=(a\nsplus(n+1))=a=a^\nssucc=(a\nsplus n)^\nssucc\\
+(a\nsplus a^\nssucc)&=(a\nsplus a)=a=a^\nssucc=(a\nsplus a)^\nssucc
+\end{align*}
+\sourcecorrection{OLMAR-008}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{models-of-q.tex}, પંક્તિ~105માં $\Domain{K}=\Nat\cup\{a\}$
+  હોવા છતાં બીજા કિસ્સામાં $y=b$ લખાયું છે. આ સંરચનામાં~$b$ નથી;
+  અહીં કોષ્ટક અને તરત પછીની ગણતરી મુજબ $y=a$ પુનઃસ્થાપિત કર્યું છે.}
+આ વિગત અલબત્ત જરૂર કરતાં વધારે છે. દાખલા તરીકે, $z$ ગમે તે હોય
+$a\nsplus z=a$ હોવાથી તરત $a\nsplus a^\nssucc=a$ કહી શકાય. બાકીની
+સ્વયંસિદ્ધિઓ પણ આ જ રીતે ચકાસી શકાય છે.
+
+આથી $\Struct{K}$, $\Th{Q}$નો નિદર્શ છે. તેનો ``સરવાળો''~$\nsplus$
+ક્રમવિનિમેય પણ છે. પરંતુ $\Struct{N}$માં સત્ય અને $\Struct{K}$માં
+અસત્ય એવા બીજા વાક્યો છે, અને ઊલટું પણ. દાખલા તરીકે, $a\nsless a$,
+તેથી $\Sat{K}{\lexists[x][x<x]}$ અને
+$\Sat/{K}{\lforall[x][\lnot x<x]}$. આ બતાવે છે કે
+$\Th{Q}\Proves/\lforall[x][\lnot x<x]$.
+\end{ex}
+
+\begin{prob}
+\olref[mod][mar][mdq]{ex:model-K-of-Q}ની $\Struct{K}$, $\Th{Q}$ની
+બાકીની સ્વયંસિદ્ધિઓ
+\begin{align*}
+  & \lforall[x][\eq[(x \times \Obj 0)][\Obj 0]] \tag{$!Q_6$}\\
+  & \lforall[x][\lforall[y][\eq[(x \times y')][((x \times y) + x)]]] \tag{$!Q_7$}\\
+  & \lforall[x][\lforall[y][(x < y \liff \lexists[z][\eq[(z' + x)][y]])]] \tag{$!Q_8$}
+\end{align*}
+સંતોષે છે તે સાબિત કરો. માત્ર $\prime$ આવતું હોય એવું
+$\Struct{N}$માં સત્ય પરંતુ $\Struct{K}$માં અસત્ય !!a{sentence} શોધો.
+\end{prob}
+
+\begin{ex}
+\ollabel{ex:model-L-of-Q} $\Domain{L}=\Nat\cup\{a,b\}$ અને નીચેના
+કોષ્ટકોથી આપેલાં અર્થઘટનો $\Assign{\prime}{L}=\nssucc$,
+$\Assign{+}{L}=\nsplus$ ધરાવતી !!{structure}~$\Struct{L}$ વિચારો:
+\[
+\begin{array}{c|c}
+  x & x^\nssucc \\
+  \hline
+  n & n+1 \\
+  a & a\\
+  b & b
+\end{array}
+\qquad
+\begin{array}{c|ccc}
+  x \nsplus y & m & a & b\\
+  \hline
+  n & n+m & b & a\\
+  a & a & b & a\\
+  b & b & b & a
+\end{array}
+\]
+$\nssucc$ !!{injective} છે, $0$ તેના પરાસમાં નથી અને
+$0$ સિવાયનો દરેક $x\in\Domain{L}$ તેના પરાસમાં છે; તેથી
+$!Q_1$--$!Q_3$, $\Struct{L}$માં સત્ય છે. દરેક~$x$ માટે
+$x\nsplus0=x$, તેથી $!Q_4$ પણ સત્ય છે. $!Q_5$ માટે
+$x\nsplus y^\nssucc$ અને $(x\nsplus y)^\nssucc$ વિચારો. જો $x$ અને
+$y$ બંને પ્રમાણભૂત હોય, તો તેઓ સમાન છે, કારણ કે ત્યારે $\nssucc$ અને
+$\nsplus$, $\prime$ અને~$+$ સાથે સહમત થાય છે. જો $x$ અપ્રમાણભૂત અને
+$y$ પ્રમાણભૂત હોય, તો
+$x\nsplus y^\nssucc=x=x^\nssucc=(x\nsplus y)^\nssucc$. જો $x$ અને
+$y$ બંને અપ્રમાણભૂત હોય, તો ચાર કિસ્સા છે:
+\begin{align*}
+& a\nsplus a^\nssucc=b=b^\nssucc=(a\nsplus a)^\nssucc\\
+& b\nsplus b^\nssucc=a=a^\nssucc=(b\nsplus b)^\nssucc\\
+& b\nsplus a^\nssucc=b=b^\nssucc=(b\nsplus a)^\nssucc\\
+& a\nsplus b^\nssucc=a=a^\nssucc=(a\nsplus b)^\nssucc\\
+\intertext{જો $x$ પ્રમાણભૂત પરંતુ $y$ અપ્રમાણભૂત હોય, તો}
+& n\nsplus a^\nssucc=n\nsplus a=b=b^\nssucc=(n\nsplus a)^\nssucc\\
+& n\nsplus b^\nssucc=n\nsplus b=a=a^\nssucc=(n\nsplus b)^\nssucc
+\end{align*}
+\sourcecorrection{OLMAR-009}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{models-of-q.tex}, પંક્તિ~166માં $b\nsplus a^\nssucc$ના
+  જમણા પક્ષે અચાનક $(b\nsplus y)^\nssucc$ આવે છે, જોકે આ કિસ્સામાં
+  $y=a$ છે. અહીં કોષ્ટક અને સમીકરણના ડાબા પક્ષ મુજબ
+  $(b\nsplus a)^\nssucc$ પુનઃસ્થાપિત કર્યું છે.}
+તેથી $\Sat{L}{!Q_5}$. પરંતુ $a\nsplus0\neq0\nsplus a$, તેથી
+$\Sat/{L}{\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]}$.
+\end{ex}
+
+\begin{prob}
+\olref[mod][mar][mdq]{ex:model-L-of-Q}ની $\Struct{L}$માં $\times$
+અને~$<$નું અર્થઘટન કરતાં $\nstimes$ અને $\nsless$ ઉમેરીને તેને
+વિસ્તારો. તમારી સંરચના $\Th{Q}$ની બાકીની સ્વયંસિદ્ધિઓ
+\begin{align*}
+& \lforall[x][\eq[(x \times \Obj 0)][\Obj 0]] \tag{$!Q_6$}\\ &
+  \lforall[x][\lforall[y][\eq[(x \times y')][((x \times y) + x)]]]
+  \tag{$!Q_7$}\\ & \lforall[x][\lforall[y][(x < y \liff \lexists[z][\eq[(z'+x)][y]])]] \tag{$!Q_8$}
+\end{align*}
+સંતોષે છે તે બતાવો.
+\end{prob}
+
+\begin{prob}
+\olref[mod][mar][mdq]{ex:model-L-of-Q}ની $\Struct{L}$માં
+$a^\nssucc=a$ અને $b^\nssucc=b$. શું $\Th{Q}$નો એવો નિદર્શ છે જેમાં
+$a^\nssucc=b$ અને $b^\nssucc=a$?
+\end{prob}
+
+\begin{explain}
+આપણે $\Th{Q}$ના એવા નિદર્શો સ્પષ્ટપણે રચ્યા છે જેમાં અપ્રમાણભૂત
+!!{element}s પ્રમાણભૂત ઘટકોની ``પાર'' રહે છે. હકીકતમાં, સ્વયંસિદ્ધિઓ
+આટલું તો માગે જ છે. અપ્રમાણભૂત !!{element}~$x$, ${}\nsless0$ હોઈ શકે
+નહિ, કારણ કે $\Th{Q}\Proves\lforall[x][\lnot x<0]$
+(\olref[inc][req][min]{lem:less-zero} જુઓ). વળી, દરેક~$n$ માટે
+$\Th{Q}\Proves\lforall[x][(x<\num{n}'\lif
+(\eq[x][\num{0}]\lor\eq[x][\num{1}]\lor\dots\lor
+\eq[x][\num{n}]))]$
+(\olref[inc][req][min]{lem:less-nsucc}); તેથી કોઈ પણ $n>0$ માટે
+$a\nsless n$ હોઈ શકે નહિ.
+\end{explain}
+
+\end{document}

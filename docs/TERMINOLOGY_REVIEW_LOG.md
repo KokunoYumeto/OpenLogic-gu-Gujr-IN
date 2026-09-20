@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-20T02:06:34.385577+00:00. This is a **complete decision log for the current 187/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint and artifact verification cover 187/722 units with checkpoint 019 and release v0.13.0. It contains all 179 terminology decisions from the durable ledger and all 136 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
+Updated 2026-09-20T15:09:02.699378+00:00. This is a **complete decision log for the current 194/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 187/722 units with checkpoint 019. It contains all 187 terminology decisions from the durable ledger and all 152 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -1977,6 +1977,94 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** અંતવિહીન ઘન પૂર્ણક્રમ — risks both changing the chosen dense term and suggesting order completeness.; છેડાવિહીન — plainer, but અંતબિંદુ matches the mathematical endpoint concept more exactly.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘અંતબિંદુવિહીન સઘન રેખીય ક્રમ’ accurately express ‘dense linear ordering without endpoints’ with the scope stated here: રેખીય ક્રમ continues the established order family, સઘન states that a point lies strictly between any two ordered points, and અંતબિંદુવિહીન states the independent absence of least and greatest endpoints. The six displayed axioms fix every component. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T180: models of arithmetic → અંકગણિતના નિદર્શો
+
+- **Status and uncertainty:** `adopted_contextual`; medium. Established components and explicit formal scope support this choice; the exact compound remains open to expert correction.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8` (OLP-0191, “Models of Arithmetic”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8` (OLP-0191, “અંકગણિતના નિદર્શો”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** અંકગણિત is the established subject label and નિદર્શ is the edition's established model-theoretic term. The possessive construction covers structures satisfying arithmetical theories without conflating them with the underlying interpretive structures.
+- **Alternatives:** અંકગણિતના મૉડલો — transparent, but less consistent with the edition's established નિદર્શ terminology.; અંકગણિતીય નિદર્શો — possible adjective, though the source title directly means models of arithmetic.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અંકગણિતના નિદર્શો’ accurately express ‘models of arithmetic’ with the scope stated here: અંકગણિત is the established subject label and નિદર્શ is the edition's established model-theoretic term. The possessive construction covers structures satisfying arithmetical theories without conflating them with the underlying interpretive structures. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T181: standard/non-standard model; standard/non-standard number → પ્રમાણભૂત/અપ્રમાણભૂત નિદર્શ; પ્રમાણભૂત/અપ્રમાણભૂત સંખ્યા
+
+- **Status and uncertainty:** `provisional_contextual_extension`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12` (OLP-0192, “standard model”); `upstream/content/model-theory/models-of-arithmetic/introduction.tex:51` (OLP-0192, “non-standard models”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/introduction.tex:12` (OLP-0192, “પ્રમાણભૂત નિદર્શ”); `gu/content/model-theory/models-of-arithmetic/introduction.tex:61` (OLP-0192, “અપ્રમાણભૂત નિદર્શોમાં”)
+- **Authorities actually checked:** `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** પ્રમાણભૂત marks the model isomorphic to the intended natural-number structure and the elements named by ordinary numerals; the transparent negative prefix અ- marks the complementary model and element notions. Adjacent definitions fix the scope.
+- **Alternatives:** માનક/અમાનક — concise Hindi-influenced forms, but less natural in the checked Gujarati register.; રૂઢ/બિનરૂઢ — risks suggesting mere convention rather than isomorphism to N.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રમાણભૂત/અપ્રમાણભૂત નિદર્શ; પ્રમાણભૂત/અપ્રમાણભૂત સંખ્યા’ accurately express ‘standard/non-standard model; standard/non-standard number’ with the scope stated here: પ્રમાણભૂત marks the model isomorphic to the intended natural-number structure and the elements named by ordinary numerals; the transparent negative prefix અ- marks the complementary model and element notions. Adjacent definitions fix the scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T182: standard numeral → પ્રમાણભૂત આંકિક પદ
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:27` (OLP-0193, “standard numerals”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/standard-models.tex:27` (OLP-0193, “પ્રમાણભૂત આંકિક પદો”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** આંકિક પદ explicitly identifies a numeral as a formal term rather than as its number value, while પ્રમાણભૂત restricts it to the iterated-successor terms naming the ordinary natural numbers.
+- **Alternatives:** પ્રમાણભૂત અંક — too easily read as the number or digit rather than the formal term.; માનક સંખ્યાપદ — possible compact compound, but less transparent in the current edition register.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પ્રમાણભૂત આંકિક પદ’ accurately express ‘standard numeral’ with the scope stated here: આંકિક પદ explicitly identifies a numeral as a formal term rather than as its number value, while પ્રમાણભૂત restricts it to the iterated-successor terms naming the ordinary natural numbers. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T183: successor/predecessor in arithmetic → ઉત્તરગામી / પૂર્વગામી
+
+- **Status and uncertainty:** `provisional_contextual_refinement`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/introduction.tex:15` (OLP-0192, “successor”); `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:65` (OLP-0196, “predecessor”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/introduction.tex:15` (OLP-0192, “ઉત્તરગામી વિધેય”); `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:73` (OLP-0196, “પૂર્વગામી”)
+- **Authorities actually checked:** `GU-P018` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 7, "printed_page": "1"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ઉત્તરગામી and પૂર્વગામી form the arithmetic-direction pair already used in the edition's first-order arithmetic material. This contextual choice distinguishes the model-theoretic number operation from GU-T039's broader tree/order pair અનુગામી/પુરોગામી; expert unification remains welcome.
+- **Alternatives:** અનુગામી/પુરોગામી — established elsewhere in the edition for functions and tree relations, but the arithmetic chapters already use the present pair.; પછીની/પહેલાની સંખ્યા — explanatory, but not compact enough for repeated formal use.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ઉત્તરગામી / પૂર્વગામી’ accurately express ‘successor/predecessor in arithmetic’ with the scope stated here: ઉત્તરગામી and પૂર્વગામી form the arithmetic-direction pair already used in the edition's first-order arithmetic material. This contextual choice distinguishes the model-theoretic number operation from GU-T039's broader tree/order pair અનુગામી/પુરોગામી; expert unification remains welcome. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T184: block of a non-standard element → અપ્રમાણભૂત ઘટકનો ખંડ
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:104` (OLP-0196, “block of~$x$”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:117` (OLP-0196, “$x$નો ખંડ”)
+- **Authorities actually checked:** `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"}); `GU-P022` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 11, "printed_page": "5"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** ખંડ names the bi-infinite successor/predecessor component containing the element. The displayed definition and subsequent quotient-like ordering prevent the ordinary geometric sense of block from controlling the term.
+- **Alternatives:** ઘટક — mathematically plausible, but already used broadly for an element and would obscure the partition notion here.; શ્રેણીખંડ — more explicit, but suggests a finite interval rather than the full integer-like chain.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અપ્રમાણભૂત ઘટકનો ખંડ’ accurately express ‘block of a non-standard element’ with the scope stated here: ખંડ names the bi-infinite successor/predecessor component containing the element. The displayed definition and subsequent quotient-like ordering prevent the ordinary geometric sense of block from controlling the term. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T185: computable structure/model/function; decidable relation → સંગણનીય સંરચના/નિદર્શ/વિધેય; નિર્ણેય સંબંધ
+
+- **Status and uncertainty:** `provisional_contextual_extension`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:10` (OLP-0197, “Computable Models of Arithmetic”); `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:39` (OLP-0197, “decidable relation”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex:10` (OLP-0197, “અંકગણિતના સંગણનીય નિદર્શો”); `gu/content/model-theory/models-of-arithmetic/computable-models.tex:38` (OLP-0197, “નિર્ણેય સંબંધ”)
+- **Authorities actually checked:** `GU-P024` (GU-VK-TRUTH, {"line_one_based": 126, "utf8_start": 43654, "utf8_end": 44439, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P026` (GU-VK-TRUTH, {"line_one_based": 152, "utf8_start": 54422, "utf8_end": 55596, "byte_basis": "normalized_extract_identity bytes", "normalization_id": "crlf-to-lf-v1"}); `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સંગણનીય extends GU-T041's established computability head to functions and whole structures on N. નિર્ણેય extends GU-T136 to the characteristic decision problem for the interpreted relation. The definition states the exact effective content.
+- **Alternatives:** ગણનક્ષમ / નિર્ણયક્ષમ — transparent alternatives, but they would split the established edition term families.; કમ્પ્યુટેબલ / ડિસાઇડેબલ — recognizable transliterations, though less integrated with the native scholarly register.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સંગણનીય સંરચના/નિદર્શ/વિધેય; નિર્ણેય સંબંધ’ accurately express ‘computable structure/model/function; decidable relation’ with the scope stated here: સંગણનીય extends GU-T041's established computability head to functions and whole structures on N. નિર્ણેય extends GU-T136 to the characteristic decision problem for the interpreted relation. The definition states the exact effective content. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T186: true arithmetic / consistency statement → સાચું અંકગણિત / સુસંગતતા-વિધાન
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:243` (OLP-0196, “true arithmetic”); `upstream/content/model-theory/models-of-arithmetic/introduction.tex:58` (OLP-0192, “statement for Peano arithmetic”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:260` (OLP-0196, “સાચા અંકગણિત”); `gu/content/model-theory/models-of-arithmetic/introduction.tex:67` (OLP-0192, “સુસંગતતા-વિધાન”)
+- **Authorities actually checked:** `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સાચું અંકગણિત denotes the complete theory of sentences true in the standard model, not a competing proof calculus. સુસંગતતા-વિધાન combines the established consistency term with the sentence asserting absence of a proof of contradiction.
+- **Alternatives:** સત્ય અંકગણિત — closer word-for-word, but can sound like a contrast with false arithmetic rather than a theory name.; સુસંગતતા-કથન — readable, though વિધાન better matches the edition's formal sentence register.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સાચું અંકગણિત / સુસંગતતા-વિધાન’ accurately express ‘true arithmetic / consistency statement’ with the scope stated here: સાચું અંકગણિત denotes the complete theory of sentences true in the standard model, not a competing proof calculus. સુસંગતતા-વિધાન combines the established consistency term with the sentence asserting absence of a proof of contradiction. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T187: primitive recursion → આદિમ પુનરાવર્તન
+
+- **Status and uncertainty:** `provisional_constructed`; open. No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_models_of_arithmetic_translation; `work/add_models_arithmetic_terms.py`.
+- **English use:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:21` (OLP-0197, “primitive”)
+- **Gujarati use:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex:20` (OLP-0197, “આદિમ”)
+- **Authorities actually checked:** `GU-P041` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 21, "printed_page": "15"}); `GU-P057` (GU-VK-MATH, {"line_one_based": 60, "last_line_one_based": 60, "utf8_start": 29622, "utf8_end": 31947, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P072` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 9, "last_line_one_based": 9, "utf8_start": 13274, "utf8_end": 15728, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P073` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 17833, "utf8_end": 19671, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** પુનરાવર્તન continues the edition's recursive-definition family, while આદિમ marks the restricted recursion scheme used to define the effective numerical functions. The nearby Turing-machine gloss fixes the intended computability context.
+- **Alternatives:** પ્રાથમિક પુનરાવર્તન — plausible, but પ્રાથમિક is already heavily used for elementary model-theoretic notions.; પ્રિમિટિવ રિકર્શન — recognizable transliteration, though less consistent with the edition's Gujarati composition.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘આદિમ પુનરાવર્તન’ accurately express ‘primitive recursion’ with the scope stated here: પુનરાવર્તન continues the edition's recursive-definition family, while આદિમ marks the restricted recursion scheme used to define the effective numerical functions. The nearby Turing-machine gloss fixes the intended computability context. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -3338,6 +3426,166 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMTB-008 without changing any unaffected claim or formula?
+
+### OLMAR-001: confirmed_ill_typed_operation_arguments
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/introduction.tex` at `introduction.tex:32`; SHA-256 `b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/introduction.tex` body line(s) 32; adjacent note line 41; SHA-256 `d5f9007a45a62d1d8dbf298408346884cb36bf8bb5e2f0b660fd16d7f025ebe2`.
+- **Chosen handling:** Used the actual string-domain elements a^n and a^m as the arguments of addition and multiplication, with an adjacent keyed note.
+- **Rationale:** The string presentation applies its operations to natural-number exponents rather than to elements of the stated string domain.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-001 without changing any unaffected claim or formula?
+
+### OLMAR-002: confirmed_omitted_relation_interpretation
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/introduction.tex` at `introduction.tex:33`; SHA-256 `b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/introduction.tex` body line(s) 34; adjacent note line 46; SHA-256 `d5f9007a45a62d1d8dbf298408346884cb36bf8bb5e2f0b660fd16d7f025ebe2`.
+- **Chosen handling:** Added the transported order relation a^n<a^m iff n<m and disclosed the addition in an adjacent keyed note.
+- **Rationale:** The example omits an interpretation for < even though it purports to give an L_A-structure isomorphic to the standard model.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-002 without changing any unaffected claim or formula?
+
+### OLMAR-003: confirmed_missing_bound_argument
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/introduction.tex` at `introduction.tex:67`; SHA-256 `b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/introduction.tex` body line(s) 69; adjacent note line 83; SHA-256 `d5f9007a45a62d1d8dbf298408346884cb36bf8bb5e2f0b660fd16d7f025ebe2`.
+- **Chosen handling:** Restored x as the first proof-predicate argument and added an adjacent keyed note.
+- **Rationale:** The existentially bound witness x is missing from the binary proof predicate in the displayed inconsistency claim.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-003 without changing any unaffected claim or formula?
+
+### OLMAR-004: confirmed_domain_range_confusion
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/standard-models.tex` at `standard-models.tex:167`; SHA-256 `8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/standard-models.tex` body line(s) 176; adjacent note line 179; SHA-256 `f34d504a973dac50e18a22f45f30e02f10bb633245864aca7e9dee98babe246c`.
+- **Chosen handling:** Used range rather than domain and added an adjacent keyed note.
+- **Rationale:** The surjectivity explanation says that an omitted element is outside the domain of s, although s is defined on all of M.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-004 without changing any unaffected claim or formula?
+
+### OLMAR-005: confirmed_empty_finite_fragment_gap
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex` at `non-standard-models.tex:104`; SHA-256 `2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/non-standard-models.tex` body line(s) 106; adjacent note line 116; SHA-256 `3a5a3e752691df8f2f5b54b328e13c6ec4ce3b91111d8fae1a447fda8ebe4b03`.
+- **Chosen handling:** Chose an index larger than every one occurring and explicitly used m=0 when the index set is empty, with an adjacent keyed note.
+- **Rationale:** The compactness proof chooses the greatest indexed disequality in a finite fragment without handling a fragment containing none.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-005 without changing any unaffected claim or formula?
+
+### OLMAR-006: confirmed_unproved_enumerability_claim
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex` at `non-standard-models.tex:111`; SHA-256 `2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/non-standard-models.tex` body line(s) 113; adjacent note line 122; SHA-256 `3a5a3e752691df8f2f5b54b328e13c6ec4ce3b91111d8fae1a447fda8ebe4b03`.
+- **Chosen handling:** Applied the earlier downward Löwenheim–Skolem theorem to choose an enumerable model and added an adjacent keyed note.
+- **Rationale:** Compactness supplies a model but the proposition specifically claims an enumerable non-standard model.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-006 without changing any unaffected claim or formula?
+
+### OLMAR-007: confirmed_missing_closing_parenthesis
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex` at `models-of-q.tex:55`; SHA-256 `09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/models-of-q.tex` body line(s) 57; adjacent note line 62; SHA-256 `ad5d3c73ca100611f9c65ecfe69b7f91913849608e06a4c390a63e78f0da74f7`.
+- **Chosen handling:** Closed the sum gloss before introducing multiplication and added an adjacent keyed note.
+- **Rationale:** The parenthetical gloss of the transported sum is not closed before multiplication is introduced.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-007 without changing any unaffected claim or formula?
+
+### OLMAR-008: confirmed_nonexistent_domain_element
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex` at `models-of-q.tex:105`; SHA-256 `09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/models-of-q.tex` body line(s) 111; adjacent note line 115; SHA-256 `ad5d3c73ca100611f9c65ecfe69b7f91913849608e06a4c390a63e78f0da74f7`.
+- **Chosen handling:** Used a, as required by the domain and the following calculation, and added an adjacent keyed note.
+- **Rationale:** A case in the K example uses b even though the domain has only the one added element a.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-008 without changing any unaffected claim or formula?
+
+### OLMAR-009: confirmed_unbound_variable_in_case_equation
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex` at `models-of-q.tex:166`; SHA-256 `09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/models-of-q.tex` body line(s) 177; adjacent note line 183; SHA-256 `ad5d3c73ca100611f9c65ecfe69b7f91913849608e06a4c390a63e78f0da74f7`.
+- **Chosen handling:** Replaced y by a in the final term and added an adjacent keyed note.
+- **Rationale:** The a-case ends with b plus an unbound y rather than with b plus a.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-009 without changing any unaffected claim or formula?
+
+### OLMAR-010: confirmed_unbalanced_formula_delimiters
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex` at `models-of-pa.tex:56`; SHA-256 `1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex` body line(s) 58; adjacent note line 60; SHA-256 `c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4`.
+- **Chosen handling:** Balanced the formula delimiters and added an adjacent keyed note.
+- **Rationale:** The linearity formula has one extra closing parenthesis and one extra closing bracket.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-010 without changing any unaffected claim or formula?
+
+### OLMAR-011: confirmed_false_universal_predecessor_claim
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex` at `models-of-pa.tex:64`; SHA-256 `1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex` body line(s) 71; adjacent note line 74; SHA-256 `c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4`.
+- **Chosen handling:** Excluded zero and restricted the later block proof to non-standard elements, with an adjacent keyed note.
+- **Rationale:** The proposition gives every element a predecessor, contradicting Q_2 at zero.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-011 without changing any unaffected claim or formula?
+
+### OLMAR-012: confirmed_undeclared_operation_symbol
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex` at `models-of-pa.tex:225`; SHA-256 `1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex` body line(s) 239; adjacent note line 242; SHA-256 `c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4`.
+- **Chosen handling:** Used nsplus in all four positions and added an adjacent keyed note.
+- **Rationale:** The averaging proof abruptly uses an undeclared op-plus symbol instead of the model-addition notation fixed for the section.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-012 without changing any unaffected claim or formula?
+
+### OLMAR-013: confirmed_missing_countability_hypothesis
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex` at `models-of-pa.tex:239`; SHA-256 `1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex` body line(s) 257; adjacent note line 277; SHA-256 `c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4`.
+- **Chosen handling:** Added the needed enumerability hypothesis while preserving the following comparison of two enumerable models, with an adjacent keyed note.
+- **Rationale:** The explanation calls the block order denumerable without assuming that the model is enumerable.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-013 without changing any unaffected claim or formula?
+
+### OLMAR-014: confirmed_unbound_comprehension_variable
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex` at `computable-models.tex:66`; SHA-256 `f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex` body line(s) 64; adjacent note line 66; SHA-256 `a9d7fe765c55bb16f71c89eb50e13e0cf2e9a9ecaea613984537b5ee1f0656bd`.
+- **Chosen handling:** Bound x, matching the ordered pair and the earlier definition of K, with an adjacent keyed note.
+- **Rationale:** The second relation comprehension forms pairs with x but binds an unrelated n.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-014 without changing any unaffected claim or formula?
+
+### OLMAR-015: confirmed_non_bijective_relabeling_map
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex` at `computable-models.tex:70`; SHA-256 `f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex` body line(s) 72; adjacent note line 78; SHA-256 `a9d7fe765c55bb16f71c89eb50e13e0cf2e9a9ecaea613984537b5ee1f0656bd`.
+- **Chosen handling:** Used g(n)=n−1 for n>0, which is the bijection required by all following transported interpretations, and added an adjacent keyed note.
+- **Rationale:** The claimed bijection sends positive n to n+1 and therefore omits 0 and 1 from its range.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-015 without changing any unaffected claim or formula?
+
+### OLMAR-016: confirmed_overstated_structural_uniqueness
+
+- **Frozen source:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex` at `computable-models.tex:120`; SHA-256 `f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89`.
+- **Gujarati target:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex` body line(s) 126; adjacent note line 128; SHA-256 `a9d7fe765c55bb16f71c89eb50e13e0cf2e9a9ecaea613984537b5ee1f0656bd`.
+- **Chosen handling:** Stated that every computable PA model is standard, hence isomorphic to N, and added an adjacent keyed note.
+- **Rationale:** Tennenbaum's theorem is stated as literal uniqueness of N rather than uniqueness up to isomorphism.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-016 without changing any unaffected claim or formula?
 
 ## Source-claim qualifications
 

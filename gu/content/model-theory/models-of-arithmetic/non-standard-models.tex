@@ -1,0 +1,129 @@
+% Part: model-theory
+% Chapter: models-of-arithmetic
+% Section: non-standard-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{nst}
+\section{અપ્રમાણભૂત નિદર્શો}
+
+\begin{explain}
+$\Lang{L_A}$ માટેની !!a{structure}, $\Struct{N}$ને એકરૂપ હોય તો તેને
+પ્રમાણભૂત કહીએ છીએ. કોઈ !!a{structure}, $\Struct{N}$ને એકરૂપ ન હોય,
+તો તેને અપ્રમાણભૂત કહે છે.
+\end{explain}
+
+\begin{defn}
+$\Lang{L_A}$ માટેની !!{structure}~$\Struct{M}$, $\Struct{N}$ને એકરૂપ
+ન હોય, તો તે \emph{અપ્રમાણભૂત} છે. એવા
+!!{element}s $x\in\Domain{M}$, જે કોઈ $n\in\Nat$ માટે
+$\Value{\num{n}}{M}$ને સમાન હોય, તેમને ($\Struct{M}$ની)
+\emph{પ્રમાણભૂત સંખ્યાઓ} કહે છે અને જે એવા ન હોય તેમને
+\emph{અપ્રમાણભૂત સંખ્યાઓ} કહે છે.
+\end{defn}
+
+\begin{explain}
+\olref[stm]{prop:standard-domain} મુજબ $\Lang{L_A}$ માટેની કોઈ પણ
+પ્રમાણભૂત !!{structure}માં માત્ર પ્રમાણભૂત !!{element}s હોય છે. તેથી
+અપ્રમાણભૂત !!{structure}માં ઓછામાં ઓછો એક અપ્રમાણભૂત ઘટક હોવો જ પડે.
+હકીકતમાં, અપ્રમાણભૂત !!{element}નું અસ્તિત્વ !!{structure} અપ્રમાણભૂત હોવાની
+ખાતરી આપે છે.
+\end{explain}
+
+\begin{prop}
+જો $\Lang{L_A}$ માટેની !!a{structure}~$\Struct{M}$માં અપ્રમાણભૂત
+સંખ્યા હોય, તો $\Struct{M}$ અપ્રમાણભૂત છે.
+\end{prop}
+
+\begin{proof}
+તેનાથી ઊલટું ધારો: $\Struct{M}$ પ્રમાણભૂત છે, પરંતુ તેમાં અપ્રમાણભૂત
+સંખ્યા~$x$ છે. $g\colon\Nat\to\Domain{M}$ એકરૂપતા હોય. $n$ પરના
+આગમનથી સહેલાઈથી જોઈ શકાય છે કે
+$g(\Value{\num{n}}{N})=\Value{\num{n}}{M}$. બીજા શબ્દોમાં, $g$,
+$\Struct{N}$ની પ્રમાણભૂત સંખ્યાઓને $\Struct{M}$ની પ્રમાણભૂત
+સંખ્યાઓમાં મોકલે છે. જો $\Struct{M}$માં અપ્રમાણભૂત સંખ્યા હોય, તો
+$g$ !!{surjective} હોઈ શકે નહિ, જે પરિકલ્પનાની વિરુદ્ધ છે.
+\end{proof}
+
+\begin{prob}
+યાદ કરો કે $\Th{Q}$માં સ્વયંસિદ્ધિઓ
+\begin{align*}
+& \lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]] \tag{$!Q_1$}\\
+& \lforall[x][\eq/[\Obj 0][x']] \tag{$!Q_2$}\\
+& \lforall[x][(\eq[x][\Obj 0] \lor \lexists[y][\eq[x][y']])] \tag{$!Q_3$}
+\end{align*}
+આવે છે. એવી !!{structure}s~$\Struct{M_1}$, $\Struct{M_2}$,
+$\Struct{M_3}$ આપો કે
+\begin{enumerate}
+\item $\Sat{M_1}{!Q_1}$, $\Sat{M_1}{!Q_2}$, $\Sat/{M_1}{!Q_3}$;
+\item $\Sat{M_2}{!Q_1}$, $\Sat/{M_2}{!Q_2}$, $\Sat{M_2}{!Q_3}$; અને
+\item $\Sat/{M_3}{!Q_1}$, $\Sat{M_3}{!Q_2}$, $\Sat{M_3}{!Q_3}$.
+\end{enumerate}
+સ્પષ્ટ છે કે દરેક માટે માત્ર $\Assign{\Obj{0}}{M_i}$ અને
+$\Assign{\prime}{M_i}$ નિર્દિષ્ટ કરવાનાં છે.
+\end{prob}
+
+\begin{explain}
+$\Lang{L_A}$ માટે અપ્રમાણભૂત !!{structure}s નિર્દિષ્ટ કરવી સહેલી છે.
+દાખલા તરીકે, !!{domain}~$\Int$ ધરાવતી સંરચના લો અને બધા અતાર્કિક
+સંકેતોનું સામાન્ય રીતે અર્થઘટન કરો. ઋણ સંખ્યાઓ કોઈ પણ~$n$ માટે
+$\num{n}$નાં મૂલ્યો નથી, તેથી આ સંરચના અપ્રમાણભૂત છે. અલબત્ત, તે
+$\Struct{N}$ જેટલાં જ વાક્યોને સત્ય બનાવે છે એ અર્થમાં અંકગણિતનો
+\emph{નિદર્શ} નહિ હોય. દાખલા તરીકે,
+$\lforall[x][\eq/[x'][\Obj{0}]]$ અસત્ય છે. તેમ છતાં, સઘનતા પ્રમેયથી
+અંકગણિતના અપ્રમાણભૂત નિદર્શોનું અસ્તિત્વ સહેલાઈથી સાબિત કરી શકાય છે.
+\end{explain}
+
+\begin{prop}
+$\Th{TA}=\Setabs{!A}{\Sat{N}{!A}}$ એ $\Struct{N}$નો સિદ્ધાંત હોય.
+$\Th{TA}$ને !!a{enumerable} અપ્રમાણભૂત નિદર્શ છે.
+\end{prop}
+
+\begin{proof}
+$\Lang{L_A}$ને નવા !!{constant}~$c$થી વિસ્તારો અને !!{sentence}sનો ગણ
+\[
+\Gamma=\Th{TA}\cup\{\eq/[c][\num{0}],\eq/[c][\num{1}],
+\eq/[c][\num{2}],\dots\}
+\]
+વિચારો. $\Gamma$ના કોઈ પણ નિદર્શ~$\Struct{M^c}$માં
+$x=\Assign{c}{M}$ એવો !!a{element} હોય જે અપ્રમાણભૂત છે, કારણ કે
+દરેક $n\in\Nat$ માટે $x\neq\Value{\num{n}}{M}$. વળી,
+$\Th{TA}\subseteq\Gamma$ હોવાથી સ્પષ્ટપણે
+$\Sat{M^c}{\Th{TA}}$. $c$ને ભૂલી જઈને $\Struct{M^c}$ને
+$\Lang{L_A}$ માટેની !!a{structure}~$\Struct{M}$ બનાવીએ, તોપણ તેના
+વ્યાપકક્ષેત્રમાં અપ્રમાણભૂત~$x$ રહે છે અને
+$\Sat{M}{\Th{TA}}$ પણ રહે છે. છેલ્લી વાતની ખાતરી એથી મળે છે કે
+$\Th{TA}$માં $c$ આવતું નથી. તેથી $\Gamma$ને નિદર્શ છે એટલું બતાવવું
+પૂરતું છે.
+
+$\Gamma$ને નિદર્શ છે તે બતાવવા સઘનતા પ્રમેય વાપરીએ. જો $\Gamma$નો
+દરેક સાન્ત ઉપગણ સંતોષ્ય હોય, તો $\Gamma$ પણ સંતોષ્ય છે. કોઈ પણ સાન્ત
+ઉપગણ $\Gamma_0\subseteq\Gamma$ લો. $\Gamma_0$માં $\Th{TA}$નાં કેટલાંક
+!!{sentence}s અને $\eq/[c][\num{n}]$ સ્વરૂપનાં સાન્ત સંખ્યામાં વાક્યો
+આવે છે. આ છેલ્લાં વાક્યોમાં આવતા દરેક~$n$ કરતાં મોટું $m\in\Nat$
+પસંદ કરો; જો આવું એક પણ વાક્ય ન હોય તો $m=0$ લો. $\Struct{N}$ને
+$\Assign{c}{N_m}=m$ વડે વિસ્તારીને $\Struct{N_m}$ વ્યાખ્યાયિત કરો.
+ત્યારે $\Sat{N_m}{\Gamma_0}$: જો $!A\in\Th{TA}$, તો $\Struct{N_m}$,
+$c$ સિવાય દરેક રીતે $\Struct{N}$ જેવું છે અને $!A$માં $c$ આવતું નથી,
+તેથી $\Sat{N_m}{!A}$. અને જો
+$\eq/[c][\num{n}]\in\Gamma_0$, તો $n<m=\Value{c}{N_m}$ હોવાથી
+$\Sat{N_m}{\eq/[c][\num{n}]}$. તેથી $\Gamma$નો દરેક સાન્ત ઉપગણ
+સંતોષ્ય છે. ઉપરાંત, \olref[fol][com][dls]{thm:downward-ls} મુજબ $\Gamma$ને
+!!a{enumerable} નિદર્શ પસંદ કરી શકાય છે; તેનો મૂળ ભાષા સુધીનો અવશેષ
+ઉપર વર્ણવેલો ઇચ્છિત ગણનીય અપ્રમાણભૂત નિદર્શ છે.
+\sourcecorrection{OLMAR-005}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{non-standard-models.tex}, પંક્તિઓ~103--107માં
+  $\Gamma_0$માં $c\neq\num{n}$ સ્વરૂપનું ઓછામાં ઓછું એક વાક્ય હશે એવું
+  માનીને સૌથી મોટું~$k$ પસંદ થાય છે. ખાલી કિસ્સામાં આવું~$k$ હોતું નથી.
+  અહીં આવતા સૂચકો કરતાં મોટું~$m$ પસંદ કરીને અને સૂચક-ગણ ખાલી હોય ત્યારે
+  $m=0$ લઈને બંને કિસ્સા આવરી લીધા છે.}
+\sourcecorrection{OLMAR-006}{એ જ મૂળની પંક્તિઓ~100--112 સઘનતાથી
+  $\Gamma$ને કોઈ નિદર્શ છે એટલું જ સ્થાપે છે, જ્યારે પ્રસ્તાવને
+  !!a{enumerable} નિદર્શ જોઈએ છે. અહીં અગાઉ સાબિત થયેલા
+  લેવેનહાઇમ--સ્કોલેમ પ્રમેયનો સ્પષ્ટ ઉપયોગ કરીને ગણનીયતાનો નિષ્કર્ષ
+  સ્થાપ્યો છે.}
+\end{proof}
+
+\end{document}

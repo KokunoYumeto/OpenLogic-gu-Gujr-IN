@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-gu-epub-browser-runtime/1",
+  "checkpoint": "020",
+  "checked_utc": "2026-09-20T03:55:06.387315+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8768/build/runtime-probe019.html?target=build%2Fepub020-stage%2FOEBPS%2Fcontent.xhtml&qa=020-current",
+  "artifact": "build/epub020-stage/OEBPS/content.xhtml",
+  "artifact_sha256": "d91db4574fd1d31c894a1823f7af22d63e668ce55e321697165828254bad0bff",
+  "epub": "releases/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub",
+  "epub_sha256": "f37aeff33831e876354615c7cdd3b026b7aae3dabc6acafada7f5bc6e1f88dde",
+  "loading_method": "The exact XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative asset URLs.",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "અંકગણિતના નિદર્શો સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 535,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 743,
+    "uniqueIds": 743,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title and 194/722 partial-edition disclosure in the exact packaged XHTML",
+      "Model Theory part with the nested Models of Arithmetic chapter",
+      "arithmetic-model interpretations, native MathML, and OLMAR-001 disclosure",
+      "Tennenbaum theorem, OLMAR-016 qualification, and editorial notes"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": []
+  },
+  "status": "passed"
+}

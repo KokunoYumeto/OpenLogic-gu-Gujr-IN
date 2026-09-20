@@ -1,0 +1,187 @@
+% Part: model-theory
+% Chapter: models-of-arithmetic
+% Section: standard-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{stm}
+\olsection{અંકગણિતના પ્રમાણભૂત નિદર્શો}
+
+અંકગણિતની ભાષા~$\Lang{L_A}$નો હેતુ દેખીતી રીતે સંખ્યાઓ વિશે,
+ખાસ કરીને પ્રાકૃતિક સંખ્યાઓ વિશે વાત કરવાનો છે. તેથી ``આ'' પ્રમાણભૂત
+નિદર્શ~$\Struct{N}$ ખાસ છે: આપણે જે નિદર્શ વિશે વાત કરવા માગીએ છીએ
+તે આ છે. પરંતુ તર્કશાસ્ત્રમાં આપણને ઘણી વાર માત્ર સંરચનાત્મક
+ગુણધર્મોમાં રસ હોય છે, અને કોઈ પણ બે એકરૂપ !!{structure}s એ ગુણધર્મો
+સમાન રીતે ધરાવે છે. તેથી આપણે થોડા વધુ ઉદાર બનીને $\Struct{N}$ને
+એકરૂપ કોઈ પણ !!{structure}ને ``પ્રમાણભૂત'' ગણી શકીએ છીએ.
+
+\begin{defn}
+$\Lang{L_A}$ માટેની !!{structure}, $\Struct{N}$ને એકરૂપ હોય તો તેને
+\emph{પ્રમાણભૂત} કહે છે.
+\end{defn}
+
+\begin{prop}
+\ollabel{prop:standard-domain} જો !!a{structure}~$\Struct{M}$
+પ્રમાણભૂત હોય, તો તેનું વ્યાપકક્ષેત્ર પ્રમાણભૂત આંકિક પદોનાં મૂલ્યોનો
+ગણ છે, એટલે કે
+\[
+\Domain{M} = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}
+\]
+\end{prop}
+
+\begin{proof}
+સ્પષ્ટ છે કે દરેક $\Value{\num{n}}{M}\in\Domain{M}$. હવે માત્ર એ
+બતાવવાનું છે કે દરેક $x\in\Domain{M}$ કોઈ~$n$ માટે
+$\Value{\num{n}}{M}$ને સમાન છે. $\Struct{M}$ પ્રમાણભૂત હોવાથી તે
+$\Struct{N}$ને એકરૂપ છે. ધારો કે $g\colon\Nat\to\Domain{M}$ એકરૂપતા
+છે. ત્યારે
+$g(n)=g(\Value{\num{n}}{N})=\Value{\num{n}}{M}$. પરંતુ $g$
+!!{surjective} હોવાથી દરેક $x\in\Domain{M}$ માટે એવો $n\in\Nat$ છે
+કે $g(n)=x$.
+\end{proof}
+
+\begin{explain}
+જો $\Lang{L_A}$ માટેની સંરચના~$\Struct{M}$ પ્રમાણભૂત હોય, તો તેના
+!!{domain}ના બધા ઘટકોને પ્રમાણભૂત આંકિક પદો $\num{0}$, $\num{1}$,
+$\num{2}$, \dots, એટલે કે $\Obj{0}$, $\Obj{0}'$, $\Obj{0}''$ વગેરે
+પદોથી નામ આપી શકાય છે. અલબત્ત, તેનો અર્થ એવો નથી કે
+$\Domain{M}$ના !!{element}s પોતે સંખ્યાઓ જ છે; એટલું જ કે
+$\Domain{N}$ની સંખ્યાઓને જેમ અલગ ઓળખી શકીએ છીએ તેમ તેમને પણ ઓળખી
+શકીએ છીએ.
+\end{explain}
+
+\begin{prob}
+બતાવો કે \olref[mod][mar][stm]{prop:standard-domain}નું વ્યસ્ત અસત્ય છે;
+એટલે એવી !!a{structure}~$\Struct{M}$નું ઉદાહરણ આપો કે
+$\Domain{M}=\Setabs{\Value{\num{n}}{M}}{n\in\Nat}$ હોય, પરંતુ
+$\Struct{N}$ને એકરૂપ ન હોય.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:thq-standard}
+જો $\Sat{M}{\Th{Q}}$ અને
+$\Domain{M}=\Setabs{\Value{\num{n}}{M}}{n\in\Nat}$, તો
+$\Struct{M}$ પ્રમાણભૂત છે.
+\end{prop}
+
+\begin{proof}
+આપણે બતાવવાનું છે કે $\Struct{M}$, $\Struct{N}$ને એકરૂપ છે.
+$g(n)=\Value{\num{n}}{M}$ વડે વ્યાખ્યાયિત વિધેય
+$g\colon\Nat\to\Domain{M}$ વિચારો. પરિકલ્પનાથી $g$ !!{surjective}
+છે. તે !!{injective} પણ છે: જ્યારે $n\neq m$ હોય ત્યારે
+$\Th{Q}\Proves\eq/[\num{n}][\num{m}]$. તેથી
+$\Sat{M}{\Th{Q}}$ હોવાથી જ્યારે $n\neq m$ હોય ત્યારે
+$\Sat{M}{\eq/[\num{n}][\num{m}]}$. એટલે $n\neq m$ હોય તો
+$\Value{\num{n}}{M}\neq\Value{\num{m}}{M}$, અર્થાત્ $g(n)\neq g(m)$.
+
+$g$ એકરૂપતા છે એ પણ ચકાસવાનું છે.
+\begin{enumerate}
+\item $\Assign{\Obj{0}}{N}=0$ હોવાથી
+  $g(\Assign{\Obj{0}}{N})=g(0)$. $g$ની વ્યાખ્યાથી
+  $g(0)=\Value{\num{0}}{M}$. પરંતુ $\num{0}$ એ માત્ર $\Obj{0}$ છે,
+  અને જે પદ !!a{constant} હોય તેનું મૂલ્ય !!{structure} એ
+  !!{constant}ને જે મૂલ્ય આપે છે તે હોય છે, એટલે
+  $\Value{\Obj{0}}{M}=\Assign{\Obj{0}}{M}$. તેથી ઇચ્છ્યા મુજબ
+  $g(\Assign{\Obj{0}}{N})=\Assign{\Obj{0}}{M}$.
+\item $\Struct{N}$માં $\prime$, $\Nat$ પરનું ઉત્તરગામી વિધેય હોવાથી
+  $g(\Assign{\prime}{N}(n))=g(n+1)$. પછી $g$ની વ્યાખ્યાથી
+  $g(n+1)=\Value{\num{n+1}}{M}$. પરંતુ $\num{n+1}$ અને
+  $\num{n}'$ એ એક જ પદ છે, તેથી
+  $\Value{\num{n+1}}{M}=\Value{\num{n}'}{M}$. મૂલ્ય-વિધેયની
+  વ્યાખ્યા મુજબ આ
+  $=\Assign{\prime}{M}(\Value{\num{n}}{M})$ છે. વળી
+  $\Value{\num{n}}{M}=g(n)$, તેથી
+  $g(\Assign{\prime}{N}(n))=\Assign{\prime}{M}(g(n))$.
+\item $\Struct{N}$માં $+$, $\Nat$ પરનું સરવાળા-વિધેય હોવાથી
+  $g(\Assign{+}{N}(n,m))=g(n+m)$. પછી $g$ની વ્યાખ્યાથી
+  $g(n+m)=\Value{\num{n+m}}{M}$. પરંતુ
+  $\Th{Q}\Proves\num{n+m}=(\num{n}+\num{m})$, તેથી
+  $\Value{\num{n+m}}{M}=\Value{\num{n}+\num{m}}{M}$. મૂલ્ય-વિધેયની
+  વ્યાખ્યા મુજબ આ
+  $=\Assign{+}{M}(\Value{\num{n}}{M},\Value{\num{m}}{M})$ છે.
+  $\Value{\num{n}}{M}=g(n)$ અને $\Value{\num{m}}{M}=g(m)$ હોવાથી
+  $g(\Assign{+}{N}(n,m))=\Assign{+}{M}(g(n),g(m))$.
+\item $g(\Assign{\times}{N}(n,m))=
+  \Assign{\times}{M}(g(n),g(m))$: અભ્યાસપ્રશ્ન.
+\item $\tuple{n,m}\in\Assign{<}{N}$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $n<m$. જો $n<m$, તો $\Th{Q}\Proves\num{n}<\num{m}$ અને
+  $\Sat{M}{\num{n}<\num{m}}$ પણ. તેથી
+  $\tuple{\Value{\num{n}}{M},\Value{\num{m}}{M}}\in\Assign{<}{M}$,
+  એટલે $\tuple{g(n),g(m)}\in\Assign{<}{M}$. જો $n\not<m$, તો
+  $\Th{Q}\Proves\lnot\num{n}<\num{m}$ અને પરિણામે
+  $\Sat/{M}{\num{n}<\num{m}}$. તેથી પહેલાની જેમ
+  $\tuple{g(n),g(m)}\notin\Assign{<}{M}$. બંનેને સાથે લેતાં,
+  $\tuple{n,m}\in\Assign{<}{N}$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\tuple{g(n),g(m)}\in\Assign{<}{M}$.
+\end{enumerate}
+\end{proof}
+
+\begin{explain}
+$\Lang{L_A}$ માટેની કોઈ પણ બીજી !!{structure}~$\Struct{M}$ના
+વ્યાપકક્ષેત્રમાં $\Nat$થી પ્રતિચિત્રણ વ્યાખ્યાયિત કરવાની સૌથી સ્વાભાવિક
+રીત વિધેય~$g$ છે, કારણ કે દરેક એવી $\Struct{M}$માં $\num{0}$,
+$\num{1}$, $\num{2}$ વગેરે નામ ધરાવતા !!{element}s હોય છે. તેથી
+$\Struct{M}$ આ $\num{n}$ વિશેનાં ઓછામાં ઓછાં કેટલાંક મૂળભૂત વિધાનોને
+$\Struct{N}$ની જેમ સત્ય બનાવે અને $g$ દ્વિએક-વ્યાપ્ત પણ હોય, તો $g$
+એકરૂપતા બને એ આશ્ચર્યજનક નથી. હકીકતમાં, $\Domain{M}$માં આ
+$\num{n}$ જે ઘટકોને નામ આપે છે તે સિવાય કોઈ !!{element}s ન હોય, તો આ
+એકરૂપતા એકમાત્ર છે.
+\end{explain}
+
+\begin{prop}
+\ollabel{prop:thq-unique-iso} જો $\Struct{M}$ પ્રમાણભૂત હોય, તો
+\olref{prop:thq-standard}ની સાબિતીનું $g$, $\Struct{N}$થી
+$\Struct{M}$ પરની એકમાત્ર એકરૂપતા છે.
+\end{prop}
+
+\begin{proof}
+ધારો કે $h\colon\Nat\to\Domain{M}$ એ $\Struct{N}$ અને $\Struct{M}$
+વચ્ચેની એકરૂપતા છે. $n$ પરના આગમનથી આપણે $g=h$ બતાવીએ છીએ. જો
+$n=0$, તો $g$ની વ્યાખ્યાથી $g(0)=\Assign{\Obj{0}}{M}$. પરંતુ $h$
+એકરૂપતા હોવાથી
+$h(0)=h(\Assign{\Obj{0}}{N})=\Assign{\Obj{0}}{M}$, તેથી $g(0)=h(0)$.
+
+હવે $n+1$નો કિસ્સો વિચારો. આપણને
+\begin{align*}
+  g(n+1) & = \Value{\num{n+1}}{M} \text{$g$ની વ્યાખ્યાથી}\\
+  & = \Value{\num{n}'}{M} \text{$\num{n+1}\ident\num{n}'$ હોવાથી}\\
+  & = \Assign{\prime}{M}(\Value{\num{n}}{M})
+    \text{$\Value{t'}{M}$ની વ્યાખ્યાથી}\\
+  & = \Assign{\prime}{M}(g(n)) \text{$g$ની વ્યાખ્યાથી}\\
+  & = \Assign{\prime}{M}(h(n)) \text{આગમન પરિકલ્પનાથી}\\
+  & = h(\Assign{\prime}{N}(n)) \text{$h$ એકરૂપતા હોવાથી}\\
+  & = h(n+1)
+\end{align*}
+મળે છે.
+\end{proof}
+
+\begin{explain}
+કોઈ પણ !!{denumerable} ગણ~$M$ માટે $\Nat$ અને~$M$ વચ્ચે
+!!a{bijection} હોય છે, તેથી દરેક એવો ગણ~$M$ પ્રમાણભૂત
+નિદર્શ~$\Struct{M}$નું સંભવિત !!{domain} છે. હકીકતમાં,
+$z\in M$ વસ્તુ અને યોગ્ય વિધેય~$s$ને અનુક્રમે
+$\Assign{\Obj{0}}{M}$ અને $\Assign{\prime}{M}$ તરીકે પસંદ કર્યા પછી
+$+$, $\times$ અને~$<$નાં અર્થઘટનો પહેલેથી નક્કી થઈ જાય છે. માત્ર એવા
+વિધેયો $s\colon M\to M\setminus\{z\}$, જે !!{injective} અને
+!!{surjective} બંને હોય, પ્રમાણભૂત નિદર્શમાં $\Assign{\prime}{M}$
+તરીકે યોગ્ય છે. $s$ના પરાસમાં~$z$ આવી શકે નહિ, નહિ તો
+$\lforall[x][\eq/[\Obj 0][x']]$ અસત્ય થાય. આ !!{sentence}
+$\Struct{N}$માં સત્ય છે, તેથી $\Struct{M}$એ પણ તેને સત્ય બનાવવું
+પડે. આ વિધેય !!{injective} હોવું પડે, કારણ કે $\Struct{N}$નું
+ઉત્તરગામી વિધેય $\Assign{\prime}{N}$ એવું છે અને
+$\Assign{\prime}{N}$ !!{injective} છે એ વાત $\Struct{N}$માં સત્ય એવા
+!!a{sentence}થી વ્યક્ત થાય છે. $s$ !!{surjective} પણ હોવું પડે, નહિ
+તો એવો કોઈ $x\in M\setminus\{z\}$ હોય જે $s$ના પરાસમાં ન હોય; એટલે
+!!{sentence} $\lforall[x][(\eq[x][\Obj 0]\lor\lexists[y][\eq[y'][x]])]$
+$\Struct{M}$માં અસત્ય થાય—જ્યારે તે $\Struct{N}$માં સત્ય છે.
+\sourcecorrection{OLMAR-004}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{standard-models.tex}, પંક્તિઓ~166--169માં $s$ વ્યાપ્ત ન હોય
+  ત્યારે છૂટી જતો ઘટક $s$ના ``domain''માં નથી એમ કહેવામાં આવ્યું છે.
+  પરંતુ $s\colon M\to M\setminus\{z\}$નું ક્ષેત્ર આખું~$M$ છે;
+  વ્યાપ્તિ માટે જરૂરી અને અહીં પુનઃસ્થાપિત કરેલો શબ્દ ``range''
+  (પરાસ) છે.}
+\end{explain}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-20T02:12:57.611257+00:00. This focused queue contains 138 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-20T04:12:20.999572+00:00. This focused queue contains 146 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -967,3 +967,59 @@ Generated 2026-09-20T02:12:57.611257+00:00. This focused queue contains 138 high
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અંતબિંદુવિહીન સઘન રેખીય ક્રમ’ accurately express ‘dense linear ordering without endpoints’ with the scope stated here: રેખીય ક્રમ continues the established order family, સઘન states that a point lies strictly between any two ordered points, and અંતબિંદુવિહીન states the independent absence of least and greatest endpoints. The six displayed axioms fix every component. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/model-theory/basics/dlo.tex:13`
 - **Gujarati:** `gu/content/model-theory/basics/dlo.tex:13`
+
+## GU-T180: models of arithmetic → અંકગણિતના નિદર્શો
+
+- **Why prioritized:** Established components and explicit formal scope support this choice; the exact compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અંકગણિતના નિદર્શો’ accurately express ‘models of arithmetic’ with the scope stated here: અંકગણિત is the established subject label and નિદર્શ is the edition's established model-theoretic term. The possessive construction covers structures satisfying arithmetical theories without conflating them with the underlying interpretive structures. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8`
+
+## GU-T181: standard/non-standard model; standard/non-standard number → પ્રમાણભૂત/અપ્રમાણભૂત નિદર્શ; પ્રમાણભૂત/અપ્રમાણભૂત સંખ્યા
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રમાણભૂત/અપ્રમાણભૂત નિદર્શ; પ્રમાણભૂત/અપ્રમાણભૂત સંખ્યા’ accurately express ‘standard/non-standard model; standard/non-standard number’ with the scope stated here: પ્રમાણભૂત marks the model isomorphic to the intended natural-number structure and the elements named by ordinary numerals; the transparent negative prefix અ- marks the complementary model and element notions. Adjacent definitions fix the scope. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/introduction.tex:12`
+
+## GU-T182: standard numeral → પ્રમાણભૂત આંકિક પદ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પ્રમાણભૂત આંકિક પદ’ accurately express ‘standard numeral’ with the scope stated here: આંકિક પદ explicitly identifies a numeral as a formal term rather than as its number value, while પ્રમાણભૂત restricts it to the iterated-successor terms naming the ordinary natural numbers. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:27`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/standard-models.tex:27`
+
+## GU-T183: successor/predecessor in arithmetic → ઉત્તરગામી / પૂર્વગામી
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ઉત્તરગામી / પૂર્વગામી’ accurately express ‘successor/predecessor in arithmetic’ with the scope stated here: ઉત્તરગામી and પૂર્વગામી form the arithmetic-direction pair already used in the edition's first-order arithmetic material. This contextual choice distinguishes the model-theoretic number operation from GU-T039's broader tree/order pair અનુગામી/પુરોગામી; expert unification remains welcome. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/introduction.tex:15`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/introduction.tex:15`
+
+## GU-T184: block of a non-standard element → અપ્રમાણભૂત ઘટકનો ખંડ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અપ્રમાણભૂત ઘટકનો ખંડ’ accurately express ‘block of a non-standard element’ with the scope stated here: ખંડ names the bi-infinite successor/predecessor component containing the element. The displayed definition and subsequent quotient-like ordering prevent the ordinary geometric sense of block from controlling the term. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:104`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:117`
+
+## GU-T185: computable structure/model/function; decidable relation → સંગણનીય સંરચના/નિદર્શ/વિધેય; નિર્ણેય સંબંધ
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંગણનીય સંરચના/નિદર્શ/વિધેય; નિર્ણેય સંબંધ’ accurately express ‘computable structure/model/function; decidable relation’ with the scope stated here: સંગણનીય extends GU-T041's established computability head to functions and whole structures on N. નિર્ણેય extends GU-T136 to the characteristic decision problem for the interpreted relation. The definition states the exact effective content. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:10`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex:10`
+
+## GU-T186: true arithmetic / consistency statement → સાચું અંકગણિત / સુસંગતતા-વિધાન
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સાચું અંકગણિત / સુસંગતતા-વિધાન’ accurately express ‘true arithmetic / consistency statement’ with the scope stated here: સાચું અંકગણિત denotes the complete theory of sentences true in the standard model, not a competing proof calculus. સુસંગતતા-વિધાન combines the established consistency term with the sentence asserting absence of a proof of contradiction. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:243`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:260`
+
+## GU-T187: primitive recursion → આદિમ પુનરાવર્તન
+
+- **Why prioritized:** No checked authority fully settled this exact specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘આદિમ પુનરાવર્તન’ accurately express ‘primitive recursion’ with the scope stated here: પુનરાવર્તન continues the edition's recursive-definition family, while આદિમ marks the restricted recursion scheme used to define the effective numerical functions. The nearby Turing-machine gloss fixes the intended computability context. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:21`
+- **Gujarati:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex:20`

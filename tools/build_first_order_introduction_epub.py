@@ -47,7 +47,7 @@ CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 XML = "http://www.w3.org/XML/1998/namespace"
 
 EDITION = sys.argv[1] if len(sys.argv) > 1 else "first-order-introduction"
-require_editions = {"first-order-introduction", "first-order-syntax", "first-order-semantics", "first-order-models-theories", "beyond", "model-theory-basics"}
+require_editions = {"first-order-introduction", "first-order-syntax", "first-order-semantics", "first-order-models-theories", "beyond", "model-theory-basics", "models-arithmetic"}
 if EDITION not in require_editions:
     raise SystemExit(f"edition must be one of {sorted(require_editions)}")
 
@@ -208,6 +208,36 @@ elif EDITION == "model-theory-basics":
         "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય, વાક્યરચના, અર્થવિચાર, નિદર્શો અને "
         "સિદ્ધાંતો, પ્રથમ-ક્રમથી આગળનાં તર્કશાસ્ત્રો અને નિદર્શસિદ્ધાંતના પાયા "
         "સમાવિષ્ટ છે."
+    )
+elif EDITION == "models-arithmetic":
+    INPUT = ROOT / "reader" / "models-arithmetic.html"
+    OUTPUT = ROOT / "releases" / "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub"
+    REPLAY = ROOT / "build" / "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-replay.epub"
+    STAGE = ROOT / "build" / "epub020-stage"
+    REPLAY_STAGE = ROOT / "build" / "epub020-replay-stage"
+    RECEIPT = ROOT / "build" / "EPUB_BUILD_RECEIPT_020.json"
+    TITLE = "અંકગણિતના નિદર્શો સહિત ઓપન લોજિક ગુજરાતી"
+    IDENTIFIER = (
+        "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/"
+        "releases/tag/models-arithmetic-v0.14.0"
+    )
+    MODIFIED = "2026-09-20T00:00:00Z"
+    ZIP_TIME = (2026, 9, 20, 0, 0, 0)
+    NAVIGATION_ENTRIES = 200
+    COVERAGE = "194/722 units; OLP-0004-0197"
+    DESCRIPTION = "Partial Gujarati cumulative edition: 194 of 722 tracked source units, OLP-0004-0197."
+    ABOUT_COVERAGE = (
+        "આ EPUB એક પ્રવાહી, લિપિઆકાર બદલાય એવું ગુજરાતી વાચન છે. તેમાં ૭૨૨ "
+        "મૂળ એકમોમાંથી ૧૯૪ એકમો, એટલે OLP-0004થી OLP-0197 સુધીનો સતત "
+        "આંશિક વિસ્તાર છે. સંપૂર્ણ ૭૨૨-એકમ આવૃત્તિનું કામ ચાલુ છે."
+    )
+    ABOUT_SCOPE = (
+        "આ સંગ્રહમાં ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ, અનંત ગણો, "
+        "વિધાનાત્મક તર્કશાસ્ત્ર તથા પ્રથમ-ક્રમ તર્કશાસ્ત્રની સાબિતી-પદ્ધતિઓ, "
+        "સિક્વન્ટ કલન, પ્રાકૃતિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધ નિગમન, પૂર્ણતા પ્રમેય, "
+        "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય, વાક્યરચના, અર્થવિચાર, નિદર્શો અને "
+        "સિદ્ધાંતો, પ્રથમ-ક્રમથી આગળનાં તર્કશાસ્ત્રો, નિદર્શસિદ્ધાંતના પાયા અને "
+        "અંકગણિતના નિદર્શોનું પ્રકરણ સમાવિષ્ટ છે."
     )
 
 

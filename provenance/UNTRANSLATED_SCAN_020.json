@@ -1,0 +1,101 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/020",
+  "checked_at_utc": "2026-09-20T04:18:33.422615+00:00",
+  "scope": "OLP-0191–OLP-0197 Gujarati Models of Arithmetic source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, derivation environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing keyed IDs, filenames, math, literal control names and explicitly quoted frozen-source fragments.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0191",
+      "path": "content/model-theory/models-of-arithmetic/models-of-arithmetic.tex",
+      "target_sha256": "ee0208f105fd457d9c80d1ddd319c99c93303e62f0d558501e7777c82c6388a4",
+      "gujarati_characters": 16,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0192",
+      "path": "content/model-theory/models-of-arithmetic/introduction.tex",
+      "target_sha256": "d5f9007a45a62d1d8dbf298408346884cb36bf8bb5e2f0b660fd16d7f025ebe2",
+      "gujarati_characters": 1619,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    },
+    {
+      "unit_id": "OLP-0193",
+      "path": "content/model-theory/models-of-arithmetic/standard-models.tex",
+      "target_sha256": "f34d504a973dac50e18a22f45f30e02f10bb633245864aca7e9dee98babe246c",
+      "gujarati_characters": 2462,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0194",
+      "path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+      "target_sha256": "3a5a3e752691df8f2f5b54b328e13c6ec4ce3b91111d8fae1a447fda8ebe4b03",
+      "gujarati_characters": 2055,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0195",
+      "path": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+      "target_sha256": "ad5d3c73ca100611f9c65ecfe69b7f91913849608e06a4c390a63e78f0da74f7",
+      "gujarati_characters": 2059,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    },
+    {
+      "unit_id": "OLP-0196",
+      "path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "target_sha256": "c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4",
+      "gujarati_characters": 4212,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 4
+    },
+    {
+      "unit_id": "OLP-0197",
+      "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "target_sha256": "a9d7fe765c55bb16f71c89eb50e13e0cf2e9a9ecaea613984537b5ee1f0656bd",
+      "gujarati_characters": 2287,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    }
+  ],
+  "totals": {
+    "units": 7,
+    "gujarati_characters": 14710,
+    "source_detector_ascii_tokens": 2721,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 16,
+    "quoted_frozen_source_literals": 3
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "allowed_formal_abbreviations": [
+    "FOL",
+    "MP"
+  ],
+  "allowed_formal_literals": [
+    "FOL tag name",
+    "false tag value",
+    "forall x book title"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [
+    "``domain''",
+    "``range''",
+    "``sum''"
+  ],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}

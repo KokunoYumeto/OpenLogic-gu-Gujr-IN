@@ -1,0 +1,110 @@
+{
+  "schema": "openlogic-gu-epub-qa/1",
+  "checked_at_utc": "2026-09-20T03:55:06.387315+00:00",
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub",
+    "bytes": 585940,
+    "sha256": "f37aeff33831e876354615c7cdd3b026b7aae3dabc6acafada7f5bc6e1f88dde",
+    "version": "EPUB 3.3",
+    "layout": "reflowable",
+    "language": "gu-IN",
+    "direction": "ltr",
+    "coverage": {
+      "translated": 194,
+      "total": 722,
+      "units": "OLP-0004–0197"
+    },
+    "complete_edition": false
+  },
+  "reuse": {
+    "pipeline": "Adapted deterministic XHTML namespace, OPF, navigation, cold-replay and EPUBCheck practices from the accepted Accessible Complete English EPUB pipeline.",
+    "source_task": "019ffc65-3d4d-7e21-a913-21cc33a9be4a"
+  },
+  "epubcheck": {
+    "version": "5.3.0",
+    "jar_sha256": "f7f96617c929371821609b88c8484d6dc9f24fe916499863c46094c5fb778a65",
+    "report": "build/EPUBCHECK_020.json",
+    "report_sha256": "5c1e5c826ae5d7c793fd9a2eaf5f599774f986dfd38e314c88e46b572e9fe4b5",
+    "messages": 0,
+    "fatals": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "reproducibility": {
+    "cold_replay_byte_identical": true,
+    "build_receipt": "build/EPUB_BUILD_RECEIPT_020.json",
+    "build_receipt_sha256": "6d5d520db0792a6a5e0c5d72460378e98b837bbcca3cb667b99297da165e342f"
+  },
+  "structural_and_semantic_checks": {
+    "archive_entries": 22,
+    "mimetype_first_and_uncompressed": true,
+    "native_mathml_nodes": 11324,
+    "block_mathml_nodes": 535,
+    "mathml_subtrees_exact_after_namespace_normalization": true,
+    "tex_annotations_exact": 11324,
+    "gujarati_character_sequence_exact": true,
+    "content_ids_exact": 743,
+    "broken_internal_content_links": 0,
+    "navigation_links": 200,
+    "broken_navigation_links": 0,
+    "tables": 12,
+    "proof_representations": 208,
+    "footnotes": 13,
+    "described_svg_figures": 13,
+    "embedded_gujarati_fonts": 2,
+    "scripts": 0,
+    "all_152_source_correction_disclosures_preserved": true,
+    "olinf_002_historical_classification_withdrawal_preserved": true,
+    "honest_partial_scope_metadata": true
+  },
+  "runtime_inspection": {
+    "inspected_at_utc": "2026-09-20T03:55:06.387315+00:00",
+    "method": "The exact XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative asset URLs.",
+    "exact_xhtml_binding": {
+      "content_xhtml_sha256": "d91db4574fd1d31c894a1823f7af22d63e668ce55e321697165828254bad0bff",
+      "navigation_xhtml_sha256": "d54be2bba6bb24faaaa8506fc72995775d28929dbb03b6f89fd52ee9f2e9536d",
+      "stylesheet_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "archive_content_byte_identical_to_stage": true,
+      "archive_navigation_byte_identical_to_stage": true,
+      "archive_stylesheet_byte_identical_to_stage": true
+    },
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "representative_views": [
+      "title and 194/722 partial-edition disclosure in the exact packaged XHTML",
+      "Model Theory part with the nested Models of Arithmetic chapter",
+      "arithmetic-model interpretations, native MathML, and OLMAR-001 disclosure",
+      "Tennenbaum theorem, OLMAR-016 qualification, and editorial notes"
+    ],
+    "runtime_checks": {
+      "document_ready_state": "complete",
+      "fonts_status": "loaded",
+      "native_mathml_nodes": 11324,
+      "block_mathml_nodes_checked": 535,
+      "unhandled_clipped_block_mathml_nodes": 0,
+      "intentionally_horizontally_scrollable_tableaux": 3,
+      "document_horizontal_overflow": false,
+      "images_loaded": 13,
+      "images_with_nonempty_gujarati_alt": 13,
+      "tables": 12,
+      "raw_problem_tag_leaks": 0,
+      "repaired_tagged_exercise_occurrences": 1,
+      "target_browser_console_messages": 0,
+      "excluded_stale_session_entries": 0,
+      "unique_content_ids": 743,
+      "runtime_receipt": "work/EPUB_BROWSER_RUNTIME_020.json",
+      "runtime_receipt_sha256": "33759a0839bf8ba6cc4e38213c44245634b439ff531440fd6f26e7c77fc76588"
+    },
+    "visual_findings": {
+      "gujarati_shaping": "passed",
+      "mathml_layout": "passed",
+      "diagram_and_caption_layout": "passed",
+      "navigation_and_end_matter": "passed",
+      "overlap_or_truncation": "none_observed"
+    },
+    "status": "passed_silent_exact_xhtml_runtime_inspection"
+  },
+  "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa"
+}

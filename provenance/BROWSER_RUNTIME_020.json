@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-gu-browser-runtime/1",
+  "checkpoint": "020",
+  "checked_utc": "2026-09-20T03:55:05.027522+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8768/build/runtime-probe019.html?target=reader%2Fmodels-arithmetic.html&qa=020-current",
+  "direct_reader_url": "http://127.0.0.1:8768/reader/models-arithmetic.html?qa=020-clean-direct",
+  "artifact": "reader/models-arithmetic.html",
+  "artifact_sha256": "4630bc1f1ea7817b479a875d9dfd7fa98818f76c8390c9529c68414d8d2ebf2c",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "અંકગણિતના નિદર્શો સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 535,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 13,
+    "loadedImages": 13,
+    "contentIds": 743,
+    "uniqueIds": 743,
+    "excludedBrowserUiIds": [
+      "codex-browser-sidebar-comments-root"
+    ],
+    "tocLinks": 200,
+    "tables": 12,
+    "mathmlNodes": 11324,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, 194/722 scope disclosure, and cumulative table of contents",
+      "Model Theory part with its Basics and Models of Arithmetic chapter hierarchy",
+      "arithmetic-model introduction, formal interpretations, and OLMAR-001 disclosure",
+      "Robinson arithmetic model construction and OLMAR-007 disclosure",
+      "Peano arithmetic models, order properties, and block structure",
+      "computable models and the OLMAR-015 bijection repair",
+      "Tennenbaum theorem, OLMAR-016 qualification, and editorial notes",
+      "bibliography and endnotes"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": [
+      {
+        "source": "earlier runtime-probe host page",
+        "message": "MutationObserver target was absent before the iframe load",
+        "excluded_reason": "A clean direct-reader tab reported no warning or error entries."
+      }
+    ]
+  },
+  "status": "passed"
+}

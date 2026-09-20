@@ -1,0 +1,331 @@
+{
+  "schema": "openlogic-gu-parity/20",
+  "reports": [
+    {
+      "unit_id": "OLP-0191",
+      "path": "content/model-theory/models-of-arithmetic/models-of-arithmetic.tex",
+      "source_sha256": "dc1c37f2e7064a33be5080bfa2682a2e527c7dfc2aa8a82d23362604dcb2522c",
+      "target_sha256": "ee0208f105fd457d9c80d1ddd319c99c93303e62f0d558501e7777c82c6388a4",
+      "math_source_count": 0,
+      "math_corrected_source_count": 0,
+      "math_target_count": 0,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 12,
+      "target_blocks": 12,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0192",
+      "path": "content/model-theory/models-of-arithmetic/introduction.tex",
+      "source_sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+      "target_sha256": "d5f9007a45a62d1d8dbf298408346884cb36bf8bb5e2f0b660fd16d7f025ebe2",
+      "math_source_count": 49,
+      "math_corrected_source_count": 49,
+      "math_target_count": 49,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLMAR-001",
+          "change": "Used the actual string-domain elements a^n and a^m as the arguments of addition and multiplication."
+        },
+        {
+          "finding_id": "OLMAR-002",
+          "change": "Added the omitted interpretation of the order relation in the string presentation."
+        },
+        {
+          "finding_id": "OLMAR-003",
+          "change": "Restored the bound witness as the first argument of the binary proof predicate."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLMAR-001",
+        "OLMAR-002",
+        "OLMAR-003"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 8,
+      "target_blocks": 8,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0193",
+      "path": "content/model-theory/models-of-arithmetic/standard-models.tex",
+      "source_sha256": "8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8",
+      "target_sha256": "f34d504a973dac50e18a22f45f30e02f10bb633245864aca7e9dee98babe246c",
+      "math_source_count": 156,
+      "math_corrected_source_count": 156,
+      "math_target_count": 156,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLMAR-004",
+          "change": "Used range rather than domain in the surjectivity explanation."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLMAR-004"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 19,
+      "target_blocks": 19,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0194",
+      "path": "content/model-theory/models-of-arithmetic/non-standard-models.tex",
+      "source_sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+      "target_sha256": "3a5a3e752691df8f2f5b54b328e13c6ec4ce3b91111d8fae1a447fda8ebe4b03",
+      "math_source_count": 92,
+      "math_corrected_source_count": 94,
+      "math_target_count": 94,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLMAR-005",
+          "change": "Handled the finite subset containing no added disequality before selecting a fresh interpretation for c."
+        },
+        {
+          "finding_id": "OLMAR-006",
+          "change": "Applied downward Loewenheim--Skolem to establish the enumerable-model claim left open by compactness alone."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLMAR-005",
+        "OLMAR-006"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0195",
+      "path": "content/model-theory/models-of-arithmetic/models-of-q.tex",
+      "source_sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+      "target_sha256": "ad5d3c73ca100611f9c65ecfe69b7f91913849608e06a4c390a63e78f0da74f7",
+      "math_source_count": 134,
+      "math_corrected_source_count": 134,
+      "math_target_count": 134,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLMAR-007",
+          "change": "Closed the parenthetical gloss of the transported sum before introducing multiplication."
+        },
+        {
+          "finding_id": "OLMAR-008",
+          "change": "Used the only non-standard element a of K rather than the nonexistent b."
+        },
+        {
+          "finding_id": "OLMAR-009",
+          "change": "Made the final term in the a-case use a rather than an unbound y."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLMAR-007",
+        "OLMAR-008",
+        "OLMAR-009"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0196",
+      "path": "content/model-theory/models-of-arithmetic/models-of-pa.tex",
+      "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+      "target_sha256": "c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4",
+      "math_source_count": 246,
+      "math_corrected_source_count": 247,
+      "math_target_count": 247,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLMAR-010",
+          "change": "Removed the extra closing parenthesis and bracket from the linearity formula."
+        },
+        {
+          "finding_id": "OLMAR-011",
+          "change": "Excluded zero from the predecessor claim and restricted the block proof to non-standard elements."
+        },
+        {
+          "finding_id": "OLMAR-012",
+          "change": "Used the declared non-standard addition symbol throughout the averaging equation."
+        },
+        {
+          "finding_id": "OLMAR-013",
+          "change": "Added the countability hypothesis required for the block order to be denumerable."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLMAR-010",
+        "OLMAR-011",
+        "OLMAR-012",
+        "OLMAR-013"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 35,
+      "target_blocks": 35,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0197",
+      "path": "content/model-theory/models-of-arithmetic/computable-models.tex",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "target_sha256": "a9d7fe765c55bb16f71c89eb50e13e0cf2e9a9ecaea613984537b5ee1f0656bd",
+      "math_source_count": 71,
+      "math_corrected_source_count": 71,
+      "math_target_count": 71,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLMAR-014",
+          "change": "Bound x, the variable occurring in the ordered pair, in the second relation comprehension."
+        },
+        {
+          "finding_id": "OLMAR-015",
+          "change": "Used the bijection that maps positive n to the preceding natural number."
+        },
+        {
+          "finding_id": "OLMAR-016",
+          "change": "Stated Tennenbaum's theorem up to isomorphism rather than as literal structural identity."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLMAR-014",
+        "OLMAR-015",
+        "OLMAR-016"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 14,
+      "target_blocks": 14,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "totals": {
+    "units": 7,
+    "source_math_spans": 748,
+    "corrected_source_math_spans": 751,
+    "documented_source_corrections": 16,
+    "source_blocks": 118,
+    "target_blocks": 118
+  },
+  "meaning": "Formula multisets, named constructs, proof primitives, rule invocations, environments and tagged terminology tokens are checked within aligned blank-delimited blocks. Gujarati correction boxes are stripped; every corrected expected-source change is explicit and keyed."
+}

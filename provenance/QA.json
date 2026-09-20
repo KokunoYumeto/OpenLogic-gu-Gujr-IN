@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-20T02:36:12.074765+00:00",
+  "checkpoint_utc": "2026-09-20T15:04:05.519469+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 187,
+  "translated_units": 194,
   "publicly_verified_release_units": 187,
   "publicly_verified_source_checkpoint_units": 187,
   "total_units": 722,
-  "aligned_linguistic_blocks": 2009,
-  "source_math_spans_verified": 10710,
+  "aligned_linguistic_blocks": 2093,
+  "source_math_spans_verified": 11458,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 2009,
-    "samples": 984,
+    "exact_block_reviews": 2093,
+    "samples": 1061,
     "independent_native_certification": false,
-    "status": "passed_for_current_187_unit_scope"
+    "status": "passed_for_current_194_unit_scope"
   },
   "source_corrections": {
-    "count": 136,
+    "count": 152,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -154,21 +154,37 @@
       "OLMTB-005",
       "OLMTB-006",
       "OLMTB-007",
-      "OLMTB-008"
+      "OLMTB-008",
+      "OLMAR-001",
+      "OLMAR-002",
+      "OLMAR-003",
+      "OLMAR-004",
+      "OLMAR-005",
+      "OLMAR-006",
+      "OLMAR-007",
+      "OLMAR-008",
+      "OLMAR-009",
+      "OLMAR-010",
+      "OLMAR-011",
+      "OLMAR-012",
+      "OLMAR-013",
+      "OLMAR-014",
+      "OLMAR-015",
+      "OLMAR-016"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/model-theory-basics.html",
-    "bytes": 4676473,
-    "sha256": "3e405a5afa6bac7f64c6d49a4519347b6c6f053024653ea0b3f118edb63cb9de",
-    "source_units_covered": 187,
-    "model_theory_basics_units_complete": 9,
-    "rendered_model_theory_hierarchy_headings": 9,
-    "logic_profile": "reducts, expansions, substructures, overspill, isomorphism, structure theories, partial isomorphisms, and dense linear orders",
-    "mathml_nodes": 10503,
-    "mathml_tables": 675,
-    "block_mathml_nodes": 515,
+    "path": "reader/models-arithmetic.html",
+    "bytes": 4995705,
+    "sha256": "4630bc1f1ea7817b479a875d9dfd7fa98818f76c8390c9529c68414d8d2ebf2c",
+    "source_units_covered": 194,
+    "models_of_arithmetic_units_complete": 7,
+    "rendered_model_theory_hierarchy_headings": 16,
+    "logic_profile": "model-theory basics followed by standard and non-standard arithmetic models, Robinson Q, Peano arithmetic, and computable models",
+    "mathml_nodes": 11324,
+    "mathml_tables": 702,
+    "block_mathml_nodes": 535,
     "proof_representation_entries": 208,
     "proof_representation_kinds": {
       "axiomatic_derivation": 6,
@@ -192,10 +208,10 @@
     "axiomatic_derivation_tables": 6,
     "main_operator_tables": 1,
     "images": 13,
-    "unique_ids": 721,
-    "table_of_contents_links": 193,
+    "unique_ids": 743,
+    "table_of_contents_links": 200,
     "broken_internal_links": 0,
-    "model_theory_hierarchy_ids": [
+    "model_theory_and_arithmetic_hierarchy_ids": [
       "નદરશસદધત",
       "નદરશસદધતન-પય",
       "નયનરપ-અન-વસતર",
@@ -204,7 +220,14 @@
       "એકરપ-સરચનઓ",
       "સરચનન-સદધત",
       "આશક-એકરપતઓ",
-      "સઘન-રખય-કરમ"
+      "સઘન-રખય-કરમ",
+      "અકગણતન-નદરશ",
+      "પરચય",
+      "અકગણતન-પરમણભત-નદરશ",
+      "અપરમણભત-નદરશ",
+      "mathbfqન-નદરશ",
+      "mathbfpaન-નદરશ",
+      "અકગણતન-સગણનય-નદરશ"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -342,7 +365,23 @@
       "OLMTB-005",
       "OLMTB-006",
       "OLMTB-007",
-      "OLMTB-008"
+      "OLMTB-008",
+      "OLMAR-001",
+      "OLMAR-002",
+      "OLMAR-003",
+      "OLMAR-004",
+      "OLMAR-005",
+      "OLMAR-006",
+      "OLMAR-007",
+      "OLMAR-008",
+      "OLMAR-009",
+      "OLMAR-010",
+      "OLMAR-011",
+      "OLMAR-012",
+      "OLMAR-013",
+      "OLMAR-014",
+      "OLMAR-015",
+      "OLMAR-016"
     ],
     "literal_macro_correction_references": {
       "sFmla": 2,
@@ -360,12 +399,12 @@
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/model-theory-basics-html-qa.json",
-      "sha256": "7f14d3e5e3f4c8713521e6d9205714655f0d9b668ed233b8412bc81c34249341"
+      "path": "build/models-arithmetic-html-qa.json",
+      "sha256": "61f931200eb45289fb38a132d06e678fdc12ee2c0665dce7748ae528e35d5b9c"
     },
     "prepared_tex": {
-      "path": "build/model-theory-basics-html.tex",
-      "sha256": "8761a1c085a3e845d53439ae999b571cc595e47634993ae7e2904b2ba1e4475c"
+      "path": "build/models-arithmetic-html.tex",
+      "sha256": "856779eff68d565f8f2d8007402eb63c552844a456f8fbab89a4b16cf74c4e84"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
@@ -376,20 +415,20 @@
     "intentionally_scrollable_block_mathml_nodes": 3
   },
   "pdf": {
-    "path": "build/gu-model-theory-basics.pdf",
-    "bytes": 2125396,
-    "sha256": "2601984ffd377d3a44c86598485cb6e02e0aac04b7dcd3d328da94c967c6f09a",
-    "pages": 240,
+    "path": "build/gu-models-arithmetic.pdf",
+    "bytes": 2223679,
+    "sha256": "b89dfb3d89f3dcdbf206b03056a38f31811bae351c44249854b27ff940693765",
+    "pages": 250,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "નિદર્શસિદ્ધાંતના પાયા સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "અંકગણિતના નિદર્શો સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 240,
+    "nonempty_extracted_text_pages": 250,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_019.json",
+    "build_receipt": "BUILD_RECEIPT_020.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -525,9 +564,17 @@
       "corrected_math": 486,
       "semantic": 59,
       "exact_block_reviews": 68
+    },
+    "020": {
+      "units": 7,
+      "blocks": 84,
+      "math": 748,
+      "corrected_math": 751,
+      "semantic": 77,
+      "exact_block_reviews": 84
     }
   },
-  "status": "187_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "194_unit_source_html_pdf_epub_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_187_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -590,15 +637,15 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "1f0277ba2e1c29fee3352fe4c9443239950796f0ccb8c285c10c98d2000bea90",
+    "sha256": "251c8ed0faa8d2d367217175519a2d4ae3c290b26392e0bfa8da758e51cb3eef",
     "status": "passed",
     "coverage": {
-      "decisions": 318,
-      "occurrences": 326
+      "decisions": 342,
+      "occurrences": 350
     },
     "reader_locators": {
-      "available": 325,
-      "pending": 0,
+      "available": 348,
+      "pending": 1,
       "not_applicable": 1
     }
   },
@@ -752,17 +799,17 @@
     "epub_qa": "EPUB_QA_013.json"
   },
   "epub": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-Model-Theory-Basics.epub",
-    "bytes": 560795,
-    "sha256": "c76190ae589df8f032a3856c83eff94877cae1eb72e20302a3bac461d469876b",
+    "path": "releases/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub",
+    "bytes": 585940,
+    "sha256": "f37aeff33831e876354615c7cdd3b026b7aae3dabc6acafada7f5bc6e1f88dde",
     "version": "EPUB 3.3",
     "layout": "reflowable",
     "language": "gu-IN",
     "direction": "ltr",
     "coverage": {
-      "translated": 187,
+      "translated": 194,
       "total": 722,
-      "units": "OLP-0004–0190"
+      "units": "OLP-0004–0197"
     },
     "complete_edition": false,
     "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa",
@@ -932,5 +979,40 @@
     "pdf_qa": "PDF_QA_019.json",
     "epub_qa": "EPUB_QA_019.json",
     "cumulative_gate": "CUMULATIVE_QA_019.json"
+  },
+  "batch_020": {
+    "draft_units": 7,
+    "remaining_units": [],
+    "structural_parity": "passed_after_16_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLMAR-001",
+      "OLMAR-002",
+      "OLMAR-003",
+      "OLMAR-004",
+      "OLMAR-005",
+      "OLMAR-006",
+      "OLMAR-007",
+      "OLMAR-008",
+      "OLMAR-009",
+      "OLMAR-010",
+      "OLMAR-011",
+      "OLMAR-012",
+      "OLMAR-013",
+      "OLMAR-014",
+      "OLMAR-015",
+      "OLMAR-016"
+    ],
+    "linguistic_blocks": 84,
+    "math_spans": 748,
+    "corrected_math_spans": 751,
+    "semantic_samples": "passed_84_exact_block_reviews_and_77_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_link_asset_and_character_qa_plus_reproducible_250_page_pdf_all_page_visual_qa_and_epub_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_535_block_mathml_nodes; three wide tableaux are horizontally scrollable and none are clipped",
+    "untranslated_prose": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+    "translation_decisions": "passed_json_schema_with_348_available_and_1_explicitly_pending_reader_locator_with_1_explicitly_not_applicable_and_0_pending",
+    "html_qa": "HTML_QA_020.json",
+    "pdf_qa": "PDF_QA_020.json",
+    "epub_qa": "EPUB_QA_020.json",
+    "cumulative_gate": "CUMULATIVE_QA_020.json"
   }
 }

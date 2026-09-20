@@ -1,0 +1,284 @@
+% Part: first-order-logic
+% Chapter: models-of-arithmetic
+% Section: models-of-pa
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{mar}{mpa}
+\section{$\Th{PA}$ના નિદર્શો}
+
+\begin{explain}
+$\Th{TA}$નો દરેક અપ્રમાણભૂત નિદર્શ $\Th{PA}$નો પણ અપ્રમાણભૂત નિદર્શ
+છે. આપણે જાણીએ છીએ કે $\Th{TA}$ના અને તેથી $\Th{PA}$ના અપ્રમાણભૂત
+નિદર્શો અસ્તિત્વ ધરાવે છે. આપણે એ પણ જાણીએ છીએ કે આવા અપ્રમાણભૂત
+નિદર્શોમાં અપ્રમાણભૂત ``સંખ્યાઓ'' હોય છે, એટલે કે વ્યાપકક્ષેત્રના એવા
+!!{element}s જે બધી પ્રમાણભૂત ``સંખ્યાઓ''ની ``પાર'' હોય છે. પરંતુ
+તેઓ કેવી રીતે ગોઠવાયેલા છે? કેટલા છે? આપણે જોયું છે કે નિર્બળ
+સિદ્ધાંત~$\Th{Q}$ના નિદર્શમાં માત્ર એક અપ્રમાણભૂત સંખ્યા પણ હોઈ શકે
+છે. પરંતુ આવી સરળ !!{structure}s, $\Th{PA}$ કે $\Th{TA}$ના નિદર્શો
+નથી.
+
+$\Th{PA}$ કે $\Th{TA}$ના નિદર્શોની સંરચના સમજવાની ચાવી એ જોવામાં છે
+કે આ સિદ્ધાંતોમાં કઈ હકીકતો !!{derivable} છે. દાખલા તરીકે, પહેલેથી
+$\Th{PA}$, $\lforall[x][\eq/[x][x']]$ અને
+$\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$ સાબિત કરે છે; તેથી જે
+સરળ સંરચનાઓમાં આ !!{sentence}s અસત્ય છે તે $\Th{PA}$ના નિદર્શો બની
+શકતી નથી.
+
+ધારો કે $\Struct{M}$ એ $\Th{PA}$નો નિદર્શ છે. પછી જો
+$\Th{PA}\Proves !A$, તો $\Sat{M}{!A}$. ફરી
+$\Assign{\Obj{0}}{M}$ માટે $\nszero$, $\Assign{\prime}{M}$ માટે
+$\nssucc$, $\Assign{+}{M}$ માટે $\nsplus$,
+$\Assign{\times}{M}$ માટે $\nstimes$ અને $\Assign{<}{M}$ માટે
+$\nsless$ વાપરીએ. ત્યારે કોઈ પણ !!{sentence}~$!A$, $\nszero$,
+$\nssucc$, $\nsplus$, $\nstimes$ અને $\nsless$ વિશે કોઈ શરત કહે છે,
+અને $\Sat{M}{!A}$ હોય તો એ શરત સંતોષાવી જોઈએ. દાખલા તરીકે, જો
+$\Sat{M}{!Q_1}$, એટલે કે
+$\Sat{M}{\lforall[x][\lforall[y][(\eq[x'][y']\lif\eq[x][y])]]}$,
+તો $\nssucc$ !!{injective} હોવું જોઈએ.
+\end{explain}
+
+\begin{prop}
+$\Struct{M}$માં $\nsless$ રેખીય કડક ક્રમ છે, એટલે તે નીચેની શરતો
+સંતોષે છે:
+\begin{enumerate}
+\item કોઈ પણ $x\in\Domain{M}$ માટે $x\nsless x$ નહિ.
+\item જો $x\nsless y$ અને $y\nsless z$, તો $x\nsless z$.
+\item કોઈ પણ $x\neq y$ માટે $x\nsless y$ અથવા $y\nsless x$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\Th{PA}$ નીચેના વાક્યો સાબિત કરે છે:
+\begin{enumerate}
+\item $\lforall[x][\lnot x < x]$
+\item $\lforall[x][\lforall[y][\lforall[z][((x < y \land y < z) \lif x < z)]]]$
+\item $\lforall[x][\lforall[y][((x < y \lor y < x) \lor \eq[x][y])]]$
+\end{enumerate}
+\sourcecorrection{OLMAR-010}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{models-of-pa.tex}, પંક્તિ~56માં રેખીયતાના ત્રીજા સૂત્રના
+  અંતે એક વધારાનું જમણું કૌંસ અને એક વધારું જમણું ચોરસ કૌંસ છે. અહીં
+  બે પરિમાણક અને સૂત્રના બહારના એક કૌંસને બરાબર બંધ કરતાં સંતુલિત
+  સૂત્રને પુનઃસ્થાપિત કર્યું છે.}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:M-discrete} $\nszero$, $\nsless$-ક્રમમાં
+$\Domain{M}$નો લઘુતમ !!{element} છે. દરેક~$x$ માટે
+$x\nsless x^\nssucc$, અને $x^\nssucc$ આ ગુણધર્મ ધરાવતો
+$\nsless$-લઘુતમ !!{element} છે. દરેક $x\neq\nszero$ માટે એવો એકમાત્ર
+$y$ છે કે $y^\nssucc=x$. (આપણે $y$ને $\Struct{M}$માં $x$નો
+``પૂર્વગામી'' કહીએ છીએ અને તેને $^\nssucc x$થી દર્શાવીએ છીએ.)
+\sourcecorrection{OLMAR-011}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{models-of-pa.tex}, પંક્તિઓ~64--66 દરેક~$x$ને પૂર્વગામી છે
+  એવો દાવો કરે છે, પરંતુ એ જ સિદ્ધાંતની $!Q_2$ સ્વયંસિદ્ધિ કહે છે કે
+  $\nszero$ કોઈ ઉત્તરગામી નથી. અહીં દાવાને $x\neq\nszero$ સુધી મર્યાદિત
+  કર્યો છે; નીચે પંક્તિઓ~111--113માં ખંડ બનાવતી વખતે પણ સાચી જરૂરી શરત,
+  એટલે દરેક અપ્રમાણભૂત ઘટકને પૂર્વગામી છે, સ્પષ્ટ કરી છે.}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+$\Th{PA}$માં !!{derivable} (અને તેથી $\Struct{N}$માં સત્ય) એવાં
+$\Lang{L_A}$નાં !!{sentence}s શોધો જે
+\olref[mod][mar][mpa]{prop:M-discrete}માં $\nszero$, $\nssucc$ અને
+$\nsless$ માટે આપેલા ગુણધર્મોની ખાતરી આપે.
+\end{prob}
+
+\begin{prop}
+$\Struct{M}$ના બધા પ્રમાણભૂત !!{element}s, બધા અપ્રમાણભૂત
+!!{element}s કરતાં ($\nsless$ મુજબ) નાના છે.
+\end{prop}
+
+\begin{proof}
+$\Struct{M}$ના પ્રમાણભૂત !!{element}~$\Value{\num{n}}{M}$ માટે આપણે
+ટૂંકમાં $n$ લખીશું. પહેલેથી $\Th{Q}$ દરેક $n\in\Nat$ માટે
+$\lforall[x][(x<\num{n}'\lif(\eq[x][\num{0}]\lor
+\eq[x][\num{1}]\lor\dots\lor\eq[x][\num{n}]))]$ સાબિત કરે છે.
+$\nsless\nszero$ હોય એવા કોઈ !!{element}s નથી. તેથી જો $n$
+પ્રમાણભૂત અને $x$ અપ્રમાણભૂત હોય, તો $x\nsless n$ હોઈ શકે નહિ.
+વ્યાખ્યા મુજબ અપ્રમાણભૂત ઘટક કોઈ પણ $n\in\Nat$ માટે
+$\Value{\num{n}}{M}$ હોતો નથી, તેથી $x\neq n$ પણ. $\nsless$ રેખીય
+ક્રમ હોવાથી $n\nsless x$ હોવું જ પડે.
+\end{proof}
+
+\begin{prop}
+$\Domain{M}$નો દરેક અપ્રમાણભૂત !!{element}~$x$ નીચેના ઉપગણનો ઘટક છે:
+\[
+\dots ^{\nssucc\nssucc\nssucc}x \nsless ^{\nssucc\nssucc}x \nsless
+^{\nssucc}x \nsless x \nsless x^{\nssucc} \nsless x^{\nssucc\nssucc}
+\nsless x^{\nssucc\nssucc\nssucc} \nsless \dots
+\]
+આ ઉપગણને \emph{$x$નો ખંડ} કહીએ છીએ અને $[x]$ લખીએ છીએ. તેને લઘુતમ
+કે મહત્તમ !!{element} નથી. તેને એવા $y\in\Domain{M}$ના ગણ તરીકે
+લક્ષણિત કરી શકાય છે કે કોઈ પ્રમાણભૂત~$n$ માટે
+$x\nsplus n=y$ અથવા $y\nsplus n=x$.
+\end{prop}
+
+\begin{proof}
+આવો ગણ~$[x]$ હંમેશાં અસ્તિત્વ ધરાવે છે, કારણ કે દરેક અપ્રમાણભૂત
+!!{element}~$y$ને $\Domain{M}$માં એકમાત્ર ઉત્તરગામી $y^\nssucc$ અને
+એકમાત્ર પૂર્વગામી $^\nssucc y$ હોય છે. ક્રમિક !!{element}s $y$,
+$y^\nssucc$ માટે
+$y\nsless y^\nssucc$, અને $y^\nssucc$ એવો $\Domain{M}$નો
+$\nsless$-લઘુતમ !!{element} છે કે $y$ તેનાથી $\nsless$-નાનો છે.
+હંમેશાં $^\nssucc y\nsless y$ અને $y\nsless y^\nssucc$ હોવાથી
+$[x]$ને લઘુતમ કે મહત્તમ !!{element} નથી. જો $y\in[x]$, તો
+$x\in[y]$, કારણ કે ત્યારે કાં તો $y^{\nssucc\dots\nssucc}=x$ અથવા
+$x^{\nssucc\dots\nssucc}=y$. જો $n$ $\nssucc$ સંકેતો સાથે
+$y^{\nssucc\dots\nssucc}=x$, તો $y\nsplus n=x$, અને ઊલટું પણ,
+કારણ કે $n$ એ $\prime$ સંકેતોની સંખ્યા હોય ત્યારે
+$\Th{PA}\Proves\lforall[x][\eq[x^{\prime\dots\prime}][(x+\num{n})]]$.
+\end{proof}
+
+\begin{prop}
+જો $[x]\neq[y]$ અને $x\nsless y$, તો દરેક $u\in[x]$ અને દરેક
+$v\in[y]$ માટે $u\nsless v$.
+\end{prop}
+
+\begin{proof}
+નોંધો કે
+$\Th{PA}\Proves\lforall[x][\lforall[y][(x<y\lif(x'<y\lor x'=y))]]$.
+તેથી જો $u\nsless v$ અને $[u]\neq[v]$, તો દરેક~$n$ માટે
+$u\nsplus n^\nssucc\nsless v$ પણ.
+
+દરેક $u\in[x]$ એ $\nsless y$ છે: પરિકલ્પનાથી $x\nsless y$. જો
+$u\nsless x$, તો પરંપરિતતાથી $u\nsless y$. અને જો $x\nsless u$ અને
+$u\in[x]$, તો કોઈ~$n$ માટે $u=x\nsplus n^\nssucc$, તેથી હમણાં સાબિત
+કરેલી હકીકતથી $u\nsless y$.
+
+હવે ધારો કે $v\in[y]$ એ $\nsless y$ છે, એટલે કોઈ પ્રમાણભૂત~$m$ માટે
+$v\nsplus m^\nssucc=y$. ત્યારે $v\nsless x$ હોઈ શકે નહિ, નહિ તો
+$y=v\nsplus m^\nssucc\nsless x$. સ્પષ્ટપણે $x\neq v$ પણ, નહિ તો
+$x\nsplus m^\nssucc=v\nsplus m^\nssucc=y$ અને $[x]=[y]$ થાય. તેથી
+$x\nsless v$. પરંતુ પછી દરેક~$n$ માટે
+$x\nsplus n^\nssucc\nsless v$ પણ. આથી જો $x\nsless u$ અને
+$u\in[x]$, તો $u\nsless v$. જો $u\nsless x$, તો પરંપરિતતાથી
+$u\nsless v$.
+
+છેલ્લે, જો $y\nsless v$, તો આપણે બતાવ્યું તેમ $u\nsless y$ અને
+$y\nsless v$, તેથી $u\nsless v$.
+\end{proof}
+
+\begin{cor}
+જો $[x]\neq[y]$, તો $[x]\cap[y]=\emptyset$.
+\end{cor}
+
+\begin{proof}
+ધારો કે $z\in[x]$ અને $x\nsless y$. ત્યારે દરેક $u\in[y]$ માટે
+$z\nsless u$. જો $z\in[y]$ હોત, તો $z\nsless z$ થાત. $y\nsless x$
+હોય ત્યારે પણ એવી જ દલીલ લાગુ પડે છે.
+\end{proof}
+
+\begin{explain}
+આનો અર્થ એ છે કે ખંડોને પોતાને $\nsless$ સાથે સુસંગત રીતે ક્રમ આપી
+શકાય: $[x]\nsless[y]$ ત્યારે અને માત્ર ત્યારે જ્યારે $x\nsless y$;
+અથવા સમકક્ષ રીતે, દરેક $u\in[x]$ અને $v\in[y]$ માટે $u\nsless v$.
+સ્પષ્ટ છે કે પ્રમાણભૂત ખંડ~$[0]$ લઘુતમ ખંડ છે. તે કોઈ અપ્રમાણભૂત
+ખંડને છેદતો નથી અને કોઈ બે અપ્રમાણભૂત ખંડો પણ એકબીજાને છેદતા નથી.
+ખાસ કરીને, વારંવાર ઉત્તરગામી કે પૂર્વગામી લઈને જુદા ખંડ સુધી
+``પહોંચી'' શકાય નહિ.
+\end{explain}
+
+\begin{prop}
+જો $x$ અને $y$ અપ્રમાણભૂત હોય, તો $x\nsless x\nsplus y$ અને
+$x\nsplus y\notin[x]$.
+\end{prop}
+
+\begin{proof}
+$y$ અપ્રમાણભૂત હોય, તો $y\neq\nszero$.
+$\Th{PA}\Proves\lforall[x][(y\neq\Obj{0}\lif x<(x+y))]$. હવે ધારો
+કે $x\nsplus y\in[x]$. $x\nsless x\nsplus y$ હોવાથી
+$x\nsplus n^\nssucc=x\nsplus y$ થાત. પરંતુ સરવાળાના રદ્દીકરણ નિયમ અનુસાર
+$\Th{PA}\Proves\lforall[x][\lforall[y][\lforall[z][(\eq[(x+y)][(x+z)]\lif y=z)]]]$.
+તેથી કોઈ પ્રમાણભૂત~$n$ માટે $y=n^\nssucc$ થાત, જ્યારે
+$y$ અપ્રમાણભૂત હોવાનું ધાર્યું છે.
+\end{proof}
+
+\begin{prop}
+લઘુતમ અપ્રમાણભૂત ખંડ નથી.
+\end{prop}
+
+\begin{proof}
+$\Th{PA}\Proves\lforall[x][\lexists[y][(\eq[(y+y)][x]\lor
+\eq[(y+y)'][x])]]$, એટલે દરેક~$x$ને~$2$ વડે ભાગી શકાય છે (સંભવતઃ
+શેષ~$1$ સાથે). જો $x$ અપ્રમાણભૂત હોય, તો $y$ પણ અપ્રમાણભૂત છે. અગાઉના
+પ્રસ્તાવથી $y\nsless y\nsplus y$ અને $y\nsplus y\notin[y]$. પછી
+$y\nsless(y\nsplus y)^\nssucc$ અને
+$(y\nsplus y)^\nssucc\notin[y]$ પણ. પરંતુ
+$x=y\nsplus y$ અથવા $x=(y\nsplus y)^\nssucc$, તેથી $y\nsless x$ અને
+$y\notin[x]$.
+\end{proof}
+
+\begin{prop}
+મહત્તમ ખંડ નથી.
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+$\Th{PA}$ના અપ્રમાણભૂત નિદર્શમાં મહત્તમ ખંડ નથી તે બતાવો.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:blocks-dense}
+ખંડોનો ક્રમ સઘન છે. એટલે જો $x\nsless y$ અને $[x]\neq[y]$, તો બંનેથી
+જુદો એવો તેમની વચ્ચેનો કોઈ ખંડ~$[z]$ છે.
+\end{prop}
+
+\begin{proof}
+ધારો કે $x\nsless y$. અગાઉની જેમ $x\nsplus y$ને બે વડે ભાગી શકાય છે
+(સંભવતઃ શેષ સાથે): એવો $z\in\Domain{M}$ છે કે કાં તો
+$x\nsplus y=z\nsplus z$ અથવા
+$x\nsplus y=(z\nsplus z)^\nssucc$. ઘટક~$z$, $x$ અને~$y$ની
+``સરેરાશ'' છે, અને $x\nsless z$ તથા $z\nsless y$.
+\sourcecorrection{OLMAR-012}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{models-of-pa.tex}, પંક્તિઓ~225--226માં આખા વિભાગ માટે
+  જાહેર કરેલા નિદર્શ-સરવાળા $\nsplus$ને બદલે અજાહેર $\oplus$ અચાનક
+  વપરાય છે. અહીં આ જ સાબિતીની આગલી પંક્તિ અને અગાઉની બધી સંજ્ઞા મુજબ
+  ચારેય જગ્યાએ $\nsplus$ પુનઃસ્થાપિત કર્યું છે.}
+\end{proof}
+
+\begin{prob}
+\olref[mod][mar][mpa]{prop:blocks-dense}ની વિગતવાર સાબિતી લખો.
+$z$ના અસ્તિત્વની ખાતરી આપવા $\Th{PA}$એ કયું !!{sentence} !!{derive}
+કરવું જોઈએ? $x\nsless z$ અને $z\nsless y$ શા માટે, અને
+$[x]\neq[z]$ તથા $[z]\neq[y]$ શા માટે?
+\end{prob}
+
+\begin{explain}
+જો $\Struct{M}$ !!{enumerable} હોય, તો તેના અપ્રમાણભૂત ખંડો સંમેય
+સંખ્યાઓની જેમ ક્રમબદ્ધ હોય છે: તેઓ અંતબિંદુવિહીન !!a{denumerable}
+સઘન રેખીય ક્રમ બનાવે છે. બતાવી શકાય છે કે આવા કોઈ પણ બે
+!!{denumerable} ક્રમો એકરૂપ છે. તેથી સાચા અંકગણિતના કોઈ પણ બે
+!!{enumerable} અપ્રમાણભૂત નિદર્શો $\Struct{M}_1$ અને
+$\Struct{M_2}$ના માત્ર $<$ અને~$=$ ધરાવતી ભાષા સુધીના અવશેષો એકરૂપ
+છે. ખરેખર, એકરૂપતા~$h$ આ પ્રમાણે વ્યાખ્યાયિત કરી શકાય: $\Struct{M_1}$
+અને $\Struct{M_2}$ના પ્રમાણભૂત ભાગો પ્રમાણભૂત નિદર્શ~$\Struct{N}$ને,
+અને તેથી એકબીજાને, એકરૂપ છે. અપ્રમાણભૂત ભાગ બનાવતા ખંડો પોતે સંમેય
+સંખ્યાઓની જેમ ક્રમબદ્ધ છે અને તેથી એકરૂપ છે; ખંડોની એકરૂપતાને દરેક
+ખંડની \emph{અંદર}ની એકરૂપતા સુધી વિસ્તારી શકાય—દરેક જોડીના ખંડોમાં
+મનસ્વી ઘટકોને સામસામે ગોઠવો અને પછી $\Struct{M_1}$માં $x$ના
+ઉત્તરગામીનું પ્રતિબિંબ, $\Struct{M_2}$માં $x$ના પ્રતિબિંબના ઉત્તરગામી
+તરીકે લો. એમાંથી $\mathfrak{M}_1$ અને $\mathfrak{M}_2$ અંકગણિતની
+પૂર્ણ ભાષામાં એકરૂપ છે એવું \emph{ફલિત થતું નથી} (વાસ્તવમાં,
+એકરૂપતા હંમેશાં કોઈ !!a{language} સાપેક્ષ હોય છે), કારણ કે
+$\Domain{M_1}$ અને $\Domain{M_2}$ પર સરવાળો અને ગુણાકાર વ્યાખ્યાયિત
+કરવાની પરસ્પર બિનએકરૂપ રીતો છે. (વૉટના એક પ્રસિદ્ધ પ્રમેયમાંથી પણ આ
+ફલિત થાય છે: કોઈ પૂર્ણ સિદ્ધાંતના ગણનીય નિદર્શોની સંખ્યા~2 હોઈ શકે
+નહિ.)
+\sourcecorrection{OLMAR-013}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{models-of-pa.tex}, પંક્તિઓ~238--242માં કોઈ ગણનીયતા-પરિકલ્પના
+  વિના બધા અપ્રમાણભૂત ખંડોનો ક્રમ !!{denumerable} કહેવાયો છે. મનસ્વી
+  નિદર્શ અગણનીય હોઈ શકે છે. અહીં આ દાવા માટે જરૂરી
+  $\Struct{M}$ !!{enumerable} હોવાની શરત સ્પષ્ટ ઉમેરી છે; ત્યાર પછીનો
+  બે !!{enumerable} નિદર્શો વિશેનો નિષ્કર્ષ યથાવત્ રહે છે.}
+\end{explain}
+\end{document}

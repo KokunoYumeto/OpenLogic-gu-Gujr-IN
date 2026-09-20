@@ -1,0 +1,177 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-20T15:01:44.285745+00:00",
+  "boundary": "Models of Arithmetic OLP-0191–0197 under the cumulative Model Theory profile",
+  "units": [
+    {
+      "unit_id": "OLP-0191",
+      "source_sha256": "dc1c37f2e7064a33be5080bfa2682a2e527c7dfc2aa8a82d23362604dcb2522c",
+      "target_sha256": "ee0208f105fd457d9c80d1ddd319c99c93303e62f0d558501e7777c82c6388a4",
+      "source_bytes": 377,
+      "target_bytes": 406,
+      "aligned_blocks": 12,
+      "raw_source_blocks": 12,
+      "linguistic_blocks": 1,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0192",
+      "source_sha256": "b574af9c4ae632a5a5b121e4a404fd16d43fc60450162fe8b8bc9d0ca70ed9f6",
+      "target_sha256": "d5f9007a45a62d1d8dbf298408346884cb36bf8bb5e2f0b660fd16d7f025ebe2",
+      "source_bytes": 3184,
+      "target_bytes": 7152,
+      "aligned_blocks": 8,
+      "raw_source_blocks": 8,
+      "linguistic_blocks": 4,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0193",
+      "source_sha256": "8042692c33d15f357d7099f1a247f5055734446d951eabc2d337a3ca19d629b8",
+      "target_sha256": "f34d504a973dac50e18a22f45f30e02f10bb633245864aca7e9dee98babe246c",
+      "source_bytes": 7853,
+      "target_bytes": 12661,
+      "aligned_blocks": 19,
+      "raw_source_blocks": 19,
+      "linguistic_blocks": 15,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0194",
+      "source_sha256": "2780ea77577e4e5b2430c282fd0cef5f4a017823036dbed116474bccf600cea1",
+      "target_sha256": "3a5a3e752691df8f2f5b54b328e13c6ec4ce3b91111d8fae1a447fda8ebe4b03",
+      "source_bytes": 4664,
+      "target_bytes": 9423,
+      "aligned_blocks": 15,
+      "raw_source_blocks": 15,
+      "linguistic_blocks": 11,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0195",
+      "source_sha256": "09bdaf0730f142d22d7f8fcc6c3155cb76d851f550a90bd70b04b2de1a9855fc",
+      "target_sha256": "ad5d3c73ca100611f9c65ecfe69b7f91913849608e06a4c390a63e78f0da74f7",
+      "source_bytes": 7842,
+      "target_bytes": 12366,
+      "aligned_blocks": 15,
+      "raw_source_blocks": 15,
+      "linguistic_blocks": 11,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0196",
+      "source_sha256": "1aedec586a50a24471318214a8a7d0e8f3a3caa62733e2259c951efe927873a4",
+      "target_sha256": "c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4",
+      "source_bytes": 10487,
+      "target_bytes": 19608,
+      "aligned_blocks": 35,
+      "raw_source_blocks": 35,
+      "linguistic_blocks": 32,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0197",
+      "source_sha256": "f1c4b345068d3e682305016ad13ac443c498c95d0cae14dca0c07322ca970b89",
+      "target_sha256": "a9d7fe765c55bb16f71c89eb50e13e0cf2e9a9ecaea613984537b5ee1f0656bd",
+      "source_bytes": 4636,
+      "target_bytes": 10038,
+      "aligned_blocks": 14,
+      "raw_source_blocks": 14,
+      "linguistic_blocks": 10,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 84,
+  "aligned_blocks": 118,
+  "source_math_spans": 748,
+  "corrected_source_math_spans": 751,
+  "source_corrections": [
+    {
+      "finding_id": "OLMAR-001",
+      "unit_id": "OLP-0192",
+      "handling": "Used the actual string-domain elements a^n and a^m as the arguments of addition and multiplication, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-002",
+      "unit_id": "OLP-0192",
+      "handling": "Added the transported order relation a^n<a^m iff n<m and disclosed the addition in an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-003",
+      "unit_id": "OLP-0192",
+      "handling": "Restored x as the first proof-predicate argument and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-004",
+      "unit_id": "OLP-0193",
+      "handling": "Used range rather than domain and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-005",
+      "unit_id": "OLP-0194",
+      "handling": "Chose an index larger than every one occurring and explicitly used m=0 when the index set is empty, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-006",
+      "unit_id": "OLP-0194",
+      "handling": "Applied the earlier downward Löwenheim–Skolem theorem to choose an enumerable model and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-007",
+      "unit_id": "OLP-0195",
+      "handling": "Closed the sum gloss before introducing multiplication and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-008",
+      "unit_id": "OLP-0195",
+      "handling": "Used a, as required by the domain and the following calculation, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-009",
+      "unit_id": "OLP-0195",
+      "handling": "Replaced y by a in the final term and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-010",
+      "unit_id": "OLP-0196",
+      "handling": "Balanced the formula delimiters and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-011",
+      "unit_id": "OLP-0196",
+      "handling": "Excluded zero and restricted the later block proof to non-standard elements, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-012",
+      "unit_id": "OLP-0196",
+      "handling": "Used nsplus in all four positions and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-013",
+      "unit_id": "OLP-0196",
+      "handling": "Added the needed enumerability hypothesis while preserving the following comparison of two enumerable models, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-014",
+      "unit_id": "OLP-0197",
+      "handling": "Bound x, matching the ordered pair and the earlier definition of K, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-015",
+      "unit_id": "OLP-0197",
+      "handling": "Used g(n)=n−1 for n>0, which is the bijection required by all following transported interpretations, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLMAR-016",
+      "unit_id": "OLP-0197",
+      "handling": "Stated that every computable PA model is standard, hence isomorphic to N, and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_020.json",
+  "semantic_review": "Exact-block review is recorded for all 84 aligned linguistic blocks; see SEMANTIC_REVIEW_020.json.",
+  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, reflowable EPUB, EPUBCheck, EPUB runtime, untranslated-prose and reviewer-decision QA passed.",
+  "translation_decisions": "Reviewer package regenerated: 342 effective schema-valid decisions, 350 exact occurrences, 348 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and one explicitly pending locator. The OLINF-002 historical false-positive classification remains explicitly qualified.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
+}
