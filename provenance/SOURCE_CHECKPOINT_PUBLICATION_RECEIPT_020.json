@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-source-checkpoint-publication/1",
+  "verified_at_utc": "2026-09-20T15:18:07.151278+00:00",
+  "commit": "c00ce25eb8c6814ae0d9df11a6e947febf207042",
+  "commit_url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/commit/c00ce25eb8c6814ae0d9df11a6e947febf207042",
+  "codeload_url": "https://codeload.github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/zip/c00ce25eb8c6814ae0d9df11a6e947febf207042",
+  "archive": {
+    "bytes": 30632387,
+    "sha256": "62f55bebc011fbcde9ce5ff7fe172710703ad1ff75e521328fe7a852eac74b7b"
+  },
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "coverage": {
+    "current_public_source_checkpoint_units": 194,
+    "total_units": 722,
+    "public_artifact_release_units": 187,
+    "complete_edition": false
+  },
+  "checkpoint": {
+    "path": "provenance/SOURCE_CHECKPOINT_020.json",
+    "bytes": 81713,
+    "sha256": "265ee166da93f494ad56f9196fd6377e0771031f4cc0e27c5c4fe4bbac07e5ca",
+    "inventory_files_verified": 441,
+    "mismatches": []
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.epub",
+    "bytes": 585940,
+    "sha256": "f37aeff33831e876354615c7cdd3b026b7aae3dabc6acafada7f5bc6e1f88dde",
+    "anonymous_exact_commit_readback": true
+  },
+  "status": "passed_anonymous_exact_commit_readback"
+}

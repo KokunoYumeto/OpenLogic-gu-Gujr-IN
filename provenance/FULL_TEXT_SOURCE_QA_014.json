@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/1",
+  "started_at_utc": "2026-09-20T15:21:43.3526862Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 60000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "input": {
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-Full-Text.tex",
+    "bytes": 1536628,
+    "sha256": "fa867359dcf364be25f86a6b24a7ff54133b5765ec32f70d1ffcf31cb93ed278"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 16440,
+      "exit_code": 0,
+      "seconds": 22.4206985,
+      "pdf_bytes": 2078670,
+      "pdf_sha256": "ecf79049b101c4e81fd6b6328e816f13379ea9a343241c16bc39927a6109d0dc",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 2,
+      "process_id": 36436,
+      "exit_code": 0,
+      "seconds": 21.8078534,
+      "pdf_bytes": 2223614,
+      "pdf_sha256": "3f4f9f397830f20638d77e403786e66d3765ec4ce04d923d8738cfa05a61aeec",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 3,
+      "process_id": 7844,
+      "exit_code": 0,
+      "seconds": 22.5171038,
+      "pdf_bytes": 2223679,
+      "pdf_sha256": "b89dfb3d89f3dcdbf206b03056a38f31811bae351c44249854b27ff940693765",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 4,
+      "process_id": 6424,
+      "exit_code": 0,
+      "seconds": 24.0881841,
+      "pdf_bytes": 2223679,
+      "pdf_sha256": "b89dfb3d89f3dcdbf206b03056a38f31811bae351c44249854b27ff940693765",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 5,
+      "process_id": 34992,
+      "exit_code": 0,
+      "seconds": 23.3353898,
+      "pdf_bytes": 2223679,
+      "pdf_sha256": "b89dfb3d89f3dcdbf206b03056a38f31811bae351c44249854b27ff940693765",
+      "byte_identical_to_accepted_release_pdf": true
+    }
+  ],
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction",
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Models-of-Arithmetic.pdf",
+    "bytes": 2223679,
+    "sha256": "b89dfb3d89f3dcdbf206b03056a38f31811bae351c44249854b27ff940693765"
+  },
+  "verification": {
+    "convergence_passes": 2,
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 194,
+    "total_units": 722
+  },
+  "ended_at_utc": "2026-09-20T15:23:37.5779082Z"
+}

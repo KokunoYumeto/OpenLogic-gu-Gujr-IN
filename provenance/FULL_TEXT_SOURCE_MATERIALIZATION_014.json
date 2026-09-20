@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-full-text-source-materialization/1",
+  "generated_at_utc": "2026-09-20T15:20:42.326128+00:00",
+  "release_tag": "models-arithmetic-v0.14.0",
+  "coverage": {
+    "translated": 194,
+    "total": 722,
+    "complete_edition": false
+  },
+  "output": {
+    "filename": "OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-Full-Text.tex",
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Models-of-Arithmetic-Full-Text.tex",
+    "bytes": 1536628,
+    "sha256": "fa867359dcf364be25f86a6b24a7ff54133b5765ec32f70d1ffcf31cb93ed278"
+  },
+  "materialized_components": [
+    {
+      "path": "gu-models-arithmetic.tex",
+      "bytes": 5229,
+      "sha256": "e9031d97ab9f06a9d04e866403ee84301fa11eb916d672284206bbbe6259d435"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 20881,
+      "sha256": "3d40a43e0044b1e2d77aa1cc620ef3b4a8959cfb51405445a1972f5f1da77682"
+    },
+    {
+      "path": "build/foundations-preamble.tex",
+      "bytes": 3336,
+      "sha256": "fad2d6f5d88df7344cadc2e30148075594c903f3b626e32b0a0a8895e354fee8"
+    },
+    {
+      "path": "build/models-arithmetic-available-labels.tex",
+      "bytes": 35050,
+      "sha256": "fa7b73643b287d7d74e985869ded9a464fb1a0380c168d640b3d5adfa378175c"
+    },
+    {
+      "path": "build/models-arithmetic-body.tex",
+      "bytes": 1471558,
+      "sha256": "44ae7c19dea2a3b22aa858d2d529ef090fa476b9cf377a974103d2797159b785"
+    }
+  ],
+  "content_checks": {
+    "reader_body_embedded_exactly": true,
+    "label_index_embedded_exactly": true,
+    "base_driver_embedded": true,
+    "preamble_embedded": true,
+    "rendered_sections": 171,
+    "source_correction_disclosures": 152,
+    "unresolved_cumulative_body_inputs": 0
+  },
+  "dependency_note": "OpenLogic style files, fonts, bibliography support, and diagram assets remain external dependencies supplied by the companion complete source ZIP.",
+  "status": "materialized_pending_guarded_exact_reader_reproduction"
+}
