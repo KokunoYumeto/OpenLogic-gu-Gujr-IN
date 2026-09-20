@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/021",
+  "checked_at_utc": "2026-09-20T21:06:35.661243+00:00",
+  "scope": "OLP-0198–OLP-0202 Gujarati Interpolation source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, derivation environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing keyed IDs, filenames, math, literal control names and explicitly quoted frozen-source fragments.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0198",
+      "path": "content/model-theory/interpolation/interpolation.tex",
+      "target_sha256": "7dd62b03c63f9f0175793987db951d805c52758cb54ef37a968f771c9cfcd90f",
+      "gujarati_characters": 15,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0199",
+      "path": "content/model-theory/interpolation/introduction.tex",
+      "target_sha256": "5cdff6e7f1d49484d76f8e74cba3603ea1af6907f745a1b1008756cb814776ae",
+      "gujarati_characters": 377,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0200",
+      "path": "content/model-theory/interpolation/separation.tex",
+      "target_sha256": "eb0f38a40ccd42be7e767043069a95c91454d0b0bc0403c3b617aaaf2a619579",
+      "gujarati_characters": 1571,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0201",
+      "path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "target_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+      "gujarati_characters": 3868,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 5
+    },
+    {
+      "unit_id": "OLP-0202",
+      "path": "content/model-theory/interpolation/definability.tex",
+      "target_sha256": "fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764",
+      "gujarati_characters": 1914,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    }
+  ],
+  "totals": {
+    "units": 5,
+    "gujarati_characters": 7745,
+    "source_detector_ascii_tokens": 1366,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 10,
+    "quoted_frozen_source_literals": 2
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "allowed_formal_abbreviations": [
+    "FOL",
+    "MP"
+  ],
+  "allowed_formal_literals": [
+    "FOL tag name",
+    "false tag value",
+    "forall x book title"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [
+    "``if and only if''",
+    "``if''"
+  ],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}

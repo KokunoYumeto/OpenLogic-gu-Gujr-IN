@@ -47,7 +47,7 @@ CONTAINER = "urn:oasis:names:tc:opendocument:xmlns:container"
 XML = "http://www.w3.org/XML/1998/namespace"
 
 EDITION = sys.argv[1] if len(sys.argv) > 1 else "first-order-introduction"
-require_editions = {"first-order-introduction", "first-order-syntax", "first-order-semantics", "first-order-models-theories", "beyond", "model-theory-basics", "models-arithmetic"}
+require_editions = {"first-order-introduction", "first-order-syntax", "first-order-semantics", "first-order-models-theories", "beyond", "model-theory-basics", "models-arithmetic", "interpolation"}
 if EDITION not in require_editions:
     raise SystemExit(f"edition must be one of {sorted(require_editions)}")
 
@@ -238,6 +238,36 @@ elif EDITION == "models-arithmetic":
         "પ્રથમ-ક્રમ તર્કશાસ્ત્રનું પરિચય, વાક્યરચના, અર્થવિચાર, નિદર્શો અને "
         "સિદ્ધાંતો, પ્રથમ-ક્રમથી આગળનાં તર્કશાસ્ત્રો, નિદર્શસિદ્ધાંતના પાયા અને "
         "અંકગણિતના નિદર્શોનું પ્રકરણ સમાવિષ્ટ છે."
+    )
+elif EDITION == "interpolation":
+    INPUT = ROOT / "reader" / "interpolation.html"
+    OUTPUT = ROOT / "releases" / "OpenLogic-gu-Gujr-IN-Interpolation.epub"
+    REPLAY = ROOT / "build" / "OpenLogic-gu-Gujr-IN-Interpolation-replay.epub"
+    STAGE = ROOT / "build" / "epub021-stage"
+    REPLAY_STAGE = ROOT / "build" / "epub021-replay-stage"
+    RECEIPT = ROOT / "build" / "EPUB_BUILD_RECEIPT_021.json"
+    TITLE = "અંતર્વેશન પ્રમેય સહિત ઓપન લોજિક ગુજરાતી"
+    IDENTIFIER = (
+        "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/"
+        "releases/tag/interpolation-v0.15.0"
+    )
+    MODIFIED = "2026-09-20T00:00:00Z"
+    ZIP_TIME = (2026, 9, 20, 0, 0, 0)
+    NAVIGATION_ENTRIES = 205
+    COVERAGE = "199/722 units; OLP-0004-0202"
+    DESCRIPTION = "Partial Gujarati cumulative edition: 199 of 722 tracked source units, OLP-0004-0202."
+    ABOUT_COVERAGE = (
+        "આ EPUB એક પ્રવાહી, લિપિઆકાર બદલાય એવું ગુજરાતી વાચન છે. તેમાં ૭૨૨ "
+        "મૂળ એકમોમાંથી ૧૯૯ એકમો, એટલે OLP-0004થી OLP-0202 સુધીનો સતત "
+        "આંશિક વિસ્તાર છે. સંપૂર્ણ ૭૨૨-એકમ આવૃત્તિનું કામ ચાલુ છે."
+    )
+    ABOUT_SCOPE = (
+        "આ સંગ્રહમાં ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ, અનંત ગણો, "
+        "વિધાનાત્મક તથા પ્રથમ-ક્રમ તર્કશાસ્ત્ર, તેની સાબિતી-પદ્ધતિઓ અને પૂર્ણતા, "
+        "પ્રથમ-ક્રમના નિદર્શો અને સિદ્ધાંતો, પ્રથમ-ક્રમથી આગળનાં તર્કશાસ્ત્રો, "
+        "નિદર્શસિદ્ધાંતના પાયા, અંકગણિતના "
+        "નિદર્શો, વાક્યનું પૃથક્કરણ, ક્રેગનું અંતર્વેશન પ્રમેય અને બેથનું "
+        "વ્યાખ્યેયતા પ્રમેય સમાવિષ્ટ છે."
     )
 
 
@@ -544,7 +574,11 @@ def stage_book(stage: Path) -> dict[str, object]:
     for name in ("NotoSansGujarati-Regular.ttf", "NotoSansGujarati-Bold.ttf"):
         shutil.copyfile(FONTS / name, stage / "OEBPS" / "fonts" / name)
     asset_names = sorted(path.name for path in ASSETS.glob("*.svg"))
-    require(len(asset_names) == 13, "expected thirteen described diagrams")
+    expected_assets = 14 if EDITION == "interpolation" else 13
+    require(
+        len(asset_names) == expected_assets,
+        f"expected {expected_assets} described diagrams",
+    )
     for name in asset_names:
         shutil.copyfile(ASSETS / name, stage / "OEBPS" / "assets" / name)
     (stage / "OEBPS" / "package.opf").write_bytes(make_package(asset_names))

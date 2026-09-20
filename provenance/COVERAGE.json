@@ -1,8 +1,8 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 194,
-  "working_scope": "Complete cumulative translation through Models of Arithmetic, OLP-0004–0197",
+  "translated": 199,
+  "working_scope": "Complete cumulative translation through Interpolation, OLP-0004–0202",
   "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
   "public_release": {
     "tag": "models-arithmetic-v0.14.0",
@@ -13,7 +13,7 @@
   "public_source_checkpoint": {
     "commit": "c00ce25eb8c6814ae0d9df11a6e947febf207042",
     "translated": 194,
-    "scope": "Anonymously verified source checkpoint through Models of Arithmetic, OLP-0004–0197"
+    "scope": "Previous anonymously verified source checkpoint through Models of Arithmetic, OLP-0004–0197; checkpoint 021 is represented by the commit containing this file"
   },
   "complete_edition": false,
   "units": [
@@ -1397,31 +1397,36 @@
       "unit_id": "OLP-0198",
       "source_path": "content/model-theory/interpolation/interpolation.tex",
       "source_sha256": "5de1f03dcb4be6160c64ed31326b49ded46646aed4c04277aa37da33bbf8d4e9",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "7dd62b03c63f9f0175793987db951d805c52758cb54ef37a968f771c9cfcd90f"
     },
     {
       "unit_id": "OLP-0199",
       "source_path": "content/model-theory/interpolation/introduction.tex",
       "source_sha256": "dc7041742d24a32a13406867779feaaf6dd21db030f78d94a3e9621778846882",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "5cdff6e7f1d49484d76f8e74cba3603ea1af6907f745a1b1008756cb814776ae"
     },
     {
       "unit_id": "OLP-0200",
       "source_path": "content/model-theory/interpolation/separation.tex",
       "source_sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "eb0f38a40ccd42be7e767043069a95c91454d0b0bc0403c3b617aaaf2a619579"
     },
     {
       "unit_id": "OLP-0201",
       "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
       "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff"
     },
     {
       "unit_id": "OLP-0202",
       "source_path": "content/model-theory/interpolation/definability.tex",
       "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
-      "status": "untranslated"
+      "status": "translated_source_checkpoint_qa_passed",
+      "translation_sha256": "fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764"
     },
     {
       "unit_id": "OLP-0203",

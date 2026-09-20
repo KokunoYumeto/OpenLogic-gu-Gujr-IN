@@ -1,6 +1,6 @@
 # Full Gujarati translation-decision register
 
-Generated 2026-09-20T04:12:20.999572+00:00. This register covers all 342 material decisions recorded for the current 194/722-unit working edition. Each occurrence has exact source and Gujarati line and UTF-8 byte evidence. Reader pages are reported only when deterministic alignment and SyncTeX agree; unresolved pages remain explicitly pending.
+Generated 2026-09-20T22:04:57.156139+00:00. This register covers all 356 material decisions recorded for the current 199/722-unit working edition. Each occurrence has exact source and Gujarati line and UTF-8 byte evidence. Reader pages are reported only when deterministic alignment and SyncTeX agree; unresolved pages remain explicitly pending.
 
 ## GU-T001: set → ગણ
 
@@ -13,7 +13,7 @@ Generated 2026-09-20T04:12:20.999572+00:00. This register covers all 342 materia
 
 Occurrences:
 
-- `GU-T001-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-T001-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-T002: element → ઘટક
 
@@ -26,7 +26,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T002-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:14` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-T002-O001` / `OLP-0005:B0005`: `upstream/content/sets-functions-relations/sets/basics.tex:14` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -40,7 +40,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T003-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:10` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-T003-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:10` → `gu/content/sets-functions-relations/sets/basics.tex:10`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-T004: subset → ઉપગણ
 
@@ -52,7 +52,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T004-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:19` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-models-arithmetic.pdf assembled page 13.
+- `GU-T004-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:19` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-interpolation.pdf assembled page 13.
 
 ## GU-T005: proper subset → ઉચિત ઉપગણ
 
@@ -64,7 +64,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T005-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:24` → `gu/content/sets-functions-relations/sets/subsets.tex:23`; reader gu-models-arithmetic.pdf assembled page 13.
+- `GU-T005-O001` / `OLP-0006:B0006`: `upstream/content/sets-functions-relations/sets/subsets.tex:24` → `gu/content/sets-functions-relations/sets/subsets.tex:23`; reader gu-interpolation.pdf assembled page 13.
 
 ## GU-T006: power set → ઘાતગણ
 
@@ -76,7 +76,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T006-O001` / `OLP-0006:B0015`: `upstream/content/sets-functions-relations/sets/subsets.tex:75` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-models-arithmetic.pdf assembled page 13.
+- `GU-T006-O001` / `OLP-0006:B0015`: `upstream/content/sets-functions-relations/sets/subsets.tex:75` → `gu/content/sets-functions-relations/sets/subsets.tex:10`; reader gu-interpolation.pdf assembled page 13.
 
 ## GU-T007: union → યોગગણ
 
@@ -88,7 +88,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T007-O001` / `OLP-0008:B0005`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:20` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-models-arithmetic.pdf assembled page 14.
+- `GU-T007-O001` / `OLP-0008:B0005`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:20` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-interpolation.pdf assembled page 14.
 
 ## GU-T008: intersection → છેદગણ
 
@@ -100,7 +100,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T008-O001` / `OLP-0008:B0013`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:62` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-models-arithmetic.pdf assembled page 14.
+- `GU-T008-O001` / `OLP-0008:B0013`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:62` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:10`; reader gu-interpolation.pdf assembled page 14.
 
 ## GU-T009: disjoint → અલગ ગણો
 
@@ -113,7 +113,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T009-O001` / `OLP-0008:B0014`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:77` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:77`; reader gu-models-arithmetic.pdf assembled page 15.
+- `GU-T009-O001` / `OLP-0008:B0014`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:77` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:77`; reader gu-interpolation.pdf assembled page 15.
 
 ## GU-T010: difference → તફાવત ગણ
 
@@ -125,7 +125,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T010-O001` / `OLP-0008:B0026`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:153` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:157`; reader gu-models-arithmetic.pdf assembled page 17.
+- `GU-T010-O001` / `OLP-0008:B0026`: `upstream/content/sets-functions-relations/sets/unions-and-intersections.tex:153` → `gu/content/sets-functions-relations/sets/unions-and-intersections.tex:157`; reader gu-interpolation.pdf assembled page 17.
 
 ## GU-T011: Cartesian product → કાર્તેઝીય ગુણાકાર
 
@@ -137,7 +137,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T011-O001` / `OLP-0009:B0011`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:52` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-models-arithmetic.pdf assembled page 17.
+- `GU-T011-O001` / `OLP-0009:B0011`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:52` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-interpolation.pdf assembled page 17.
 
 ## GU-T012: ordered pair → ક્રમયુક્ત જોડ
 
@@ -149,7 +149,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T012-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:16` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:14`; reader gu-models-arithmetic.pdf assembled page 17.
+- `GU-T012-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:16` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:14`; reader gu-interpolation.pdf assembled page 17.
 
 ## GU-T013: perfect number → પૂર્ણ સંખ્યા
 
@@ -163,7 +163,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T013-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:73` → `gu/content/sets-functions-relations/sets/basics.tex:71`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-T013-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:73` → `gu/content/sets-functions-relations/sets/basics.tex:71`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-T014: string → પ્રતીકશ્રેણી
 
@@ -176,7 +176,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T014-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:49` → `gu/content/sets-functions-relations/sets/important-sets.tex:43`; reader gu-models-arithmetic.pdf assembled page 14.
+- `GU-T014-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:49` → `gu/content/sets-functions-relations/sets/important-sets.tex:43`; reader gu-interpolation.pdf assembled page 14.
 
 ## GU-T015: sequence → અનુક્રમ
 
@@ -189,7 +189,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T015-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:48` → `gu/content/sets-functions-relations/sets/important-sets.tex:45`; reader gu-models-arithmetic.pdf assembled page 14.
+- `GU-T015-O001` / `OLP-0007:B0008`: `upstream/content/sets-functions-relations/sets/important-sets.tex:48` → `gu/content/sets-functions-relations/sets/important-sets.tex:45`; reader gu-interpolation.pdf assembled page 14.
 
 ## GU-T016: tuple → બહુજોડ / ક્રમયુક્ત n-જોડ
 
@@ -203,7 +203,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T016-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:15` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-models-arithmetic.pdf assembled page 17.
+- `GU-T016-O001` / `OLP-0009:B0005`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:15` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:10`; reader gu-interpolation.pdf assembled page 17.
 
 ## GU-T017: continuum → સાતત્યક
 
@@ -217,7 +217,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T017-O001` / `OLP-0007:B0005`: `upstream/content/sets-functions-relations/sets/important-sets.tex:24` → `gu/content/sets-functions-relations/sets/important-sets.tex:23`; reader gu-models-arithmetic.pdf assembled page 13.
+- `GU-T017-O001` / `OLP-0007:B0005`: `upstream/content/sets-functions-relations/sets/important-sets.tex:24` → `gu/content/sets-functions-relations/sets/important-sets.tex:23`; reader gu-interpolation.pdf assembled page 13.
 
 ## GU-T018: comprehension → ગુણધર્મ વડે ગણરચના
 
@@ -230,7 +230,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T018-O001` / `OLP-0010:B0006`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:22` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:21`; reader gu-models-arithmetic.pdf assembled page 18.
+- `GU-T018-O001` / `OLP-0010:B0006`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:22` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:21`; reader gu-interpolation.pdf assembled page 18.
 
 ## GU-T019: paradox → વિરોધાભાસ
 
@@ -242,7 +242,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T019-O001` / `OLP-0010:B0004`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:11` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:11`; reader gu-models-arithmetic.pdf assembled page 18.
+- `GU-T019-O001` / `OLP-0010:B0004`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:11` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:11`; reader gu-interpolation.pdf assembled page 18.
 
 ## GU-T020: relation → સંબંધ
 
@@ -254,7 +254,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T020-O001` / `OLP-0011:B0004`: `upstream/content/sets-functions-relations/relations/relations-complete.tex:8` → `gu/content/sets-functions-relations/relations/relations-complete.tex:8`; reader gu-models-arithmetic.pdf assembled page 19.
+- `GU-T020-O001` / `OLP-0011:B0004`: `upstream/content/sets-functions-relations/relations/relations-complete.tex:8` → `gu/content/sets-functions-relations/relations/relations-complete.tex:8`; reader gu-interpolation.pdf assembled page 19.
 
 ## GU-T021: domain → પ્રદેશ
 
@@ -266,7 +266,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T021-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:15` → `gu/content/sets-functions-relations/relations/special-properties.tex:15`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T021-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:15` → `gu/content/sets-functions-relations/relations/special-properties.tex:15`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T022: reflexive → સ્વવાચક
 
@@ -278,7 +278,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T022-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-models-arithmetic.pdf assembled page 20.
+- `GU-T022-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-interpolation.pdf assembled page 20.
 
 ## GU-T023: symmetric → સંમિત
 
@@ -290,7 +290,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T023-O001` / `OLP-0014:B0008`: `upstream/content/sets-functions-relations/relations/special-properties.tex:34` → `gu/content/sets-functions-relations/relations/special-properties.tex:33`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T023-O001` / `OLP-0014:B0008`: `upstream/content/sets-functions-relations/relations/special-properties.tex:34` → `gu/content/sets-functions-relations/relations/special-properties.tex:33`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T024: transitive → પરંપરિત
 
@@ -302,7 +302,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T024-O001` / `OLP-0014:B0007`: `upstream/content/sets-functions-relations/relations/special-properties.tex:29` → `gu/content/sets-functions-relations/relations/special-properties.tex:28`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T024-O001` / `OLP-0014:B0007`: `upstream/content/sets-functions-relations/relations/special-properties.tex:29` → `gu/content/sets-functions-relations/relations/special-properties.tex:28`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T025: antisymmetric → વિસંમિત
 
@@ -314,7 +314,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T025-O001` / `OLP-0014:B0009`: `upstream/content/sets-functions-relations/relations/special-properties.tex:38` → `gu/content/sets-functions-relations/relations/special-properties.tex:38`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T025-O001` / `OLP-0014:B0009`: `upstream/content/sets-functions-relations/relations/special-properties.tex:38` → `gu/content/sets-functions-relations/relations/special-properties.tex:38`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T026: equivalence relation/class → સામ્ય સંબંધ / સામ્ય વર્ગ
 
@@ -326,7 +326,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T026-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:20` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T026-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:20` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T027: irreflexive → અસ્વવાચક
 
@@ -340,7 +340,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T027-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-models-arithmetic.pdf assembled page 20.
+- `GU-T027-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:104` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:109`; reader gu-interpolation.pdf assembled page 20.
 
 ## GU-T028: asymmetric → અસંમિત
 
@@ -354,7 +354,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T028-O001` / `OLP-0014:B0014`: `upstream/content/sets-functions-relations/relations/special-properties.tex:75` → `gu/content/sets-functions-relations/relations/special-properties.tex:77`; reader gu-models-arithmetic.pdf assembled page 22.
+- `GU-T028-O001` / `OLP-0014:B0014`: `upstream/content/sets-functions-relations/relations/special-properties.tex:75` → `gu/content/sets-functions-relations/relations/special-properties.tex:77`; reader gu-interpolation.pdf assembled page 22.
 
 ## GU-T029: connected relation → તુલનાયુક્ત સંબંધ
 
@@ -367,7 +367,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T029-O001` / `OLP-0047:B0015`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:107`; reader gu-models-arithmetic.pdf assembled page 61.
+- `GU-T029-O001` / `OLP-0047:B0015`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:101` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:107`; reader gu-interpolation.pdf assembled page 61.
 
 ## GU-T030: order/preorder/partial/linear/strict → ક્રમ / પૂર્વક્રમ / આંશિક ક્રમ / રેખીય ક્રમ / કડક ક્રમ
 
@@ -380,7 +380,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T030-O001` / `OLP-0005:B0006`: `upstream/content/sets-functions-relations/sets/basics.tex:21` → `gu/content/sets-functions-relations/sets/basics.tex:20`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-T030-O001` / `OLP-0005:B0006`: `upstream/content/sets-functions-relations/sets/basics.tex:21` → `gu/content/sets-functions-relations/sets/basics.tex:20`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-T031: predicate → વિધેય
 
@@ -394,7 +394,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T031-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:60` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T031-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:60` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T032: identity relation → તાદાત્મ્ય સંબંધ
 
@@ -407,7 +407,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T032-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:83` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:86`; reader gu-models-arithmetic.pdf assembled page 20.
+- `GU-T032-O001` / `OLP-0012:B0010`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:83` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:86`; reader gu-interpolation.pdf assembled page 20.
 
 ## GU-T033: quotient set → ભાગફળ ગણ
 
@@ -420,7 +420,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T033-O001` / `OLP-0015:B0009`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:31` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:33`; reader gu-models-arithmetic.pdf assembled page 22.
+- `GU-T033-O001` / `OLP-0015:B0009`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:31` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:33`; reader gu-interpolation.pdf assembled page 22.
 
 ## GU-T034: partition → વર્ગ વિભાજન
 
@@ -432,7 +432,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T034-O001` / `OLP-0015:B0008`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:25` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:38`; reader gu-models-arithmetic.pdf assembled page 22.
+- `GU-T034-O001` / `OLP-0015:B0008`: `upstream/content/sets-functions-relations/relations/equivalence-relations.tex:25` → `gu/content/sets-functions-relations/relations/equivalence-relations.tex:38`; reader gu-interpolation.pdf assembled page 22.
 
 ## GU-T035: binary relation → દ્વિઘટકી સંબંધ
 
@@ -445,7 +445,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T035-O001` / `OLP-0012:B0009`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:55` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:57`; reader gu-models-arithmetic.pdf assembled page 20.
+- `GU-T035-O001` / `OLP-0012:B0009`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:55` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:57`; reader gu-interpolation.pdf assembled page 20.
 
 ## GU-T036: graph, vertex, edge → આલેખ, શિરોબિંદુ, ધાર
 
@@ -459,7 +459,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T036-O001` / `OLP-0017:B0005`: `upstream/content/sets-functions-relations/relations/graphs.tex:12` → `gu/content/sets-functions-relations/relations/graphs.tex:10`; reader gu-models-arithmetic.pdf assembled page 24.
+- `GU-T036-O001` / `OLP-0017:B0005`: `upstream/content/sets-functions-relations/relations/graphs.tex:12` → `gu/content/sets-functions-relations/relations/graphs.tex:10`; reader gu-interpolation.pdf assembled page 24.
 
 ## GU-T037: tree/root/branch → વૃક્ષ / મૂળ / શાખા
 
@@ -472,7 +472,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T037-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:13` → `gu/content/sets-functions-relations/relations/trees.tex:10`; reader gu-models-arithmetic.pdf assembled page 25.
+- `GU-T037-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:13` → `gu/content/sets-functions-relations/relations/trees.tex:10`; reader gu-interpolation.pdf assembled page 25.
 
 ## GU-T038: well-ordered / least / maximal chain → સુક્રમિત / લઘુતમ / સમાવેશની દૃષ્ટિએ મહત્તમ શૃંખલા
 
@@ -485,7 +485,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T038-O001` / `OLP-0018:B0009`: `upstream/content/sets-functions-relations/relations/trees.tex:46` → `gu/content/sets-functions-relations/relations/trees.tex:50`; reader gu-models-arithmetic.pdf assembled page 25.
+- `GU-T038-O001` / `OLP-0018:B0009`: `upstream/content/sets-functions-relations/relations/trees.tex:46` → `gu/content/sets-functions-relations/relations/trees.tex:50`; reader gu-interpolation.pdf assembled page 25.
 
 ## GU-T039: successor/predecessor → અનુગામી / પુરોગામી
 
@@ -498,7 +498,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T039-O001` / `OLP-0018:B0011`: `upstream/content/sets-functions-relations/relations/trees.tex:59` → `gu/content/sets-functions-relations/relations/trees.tex:61`; reader gu-models-arithmetic.pdf assembled page 26.
+- `GU-T039-O001` / `OLP-0018:B0011`: `upstream/content/sets-functions-relations/relations/trees.tex:59` → `gu/content/sets-functions-relations/relations/trees.tex:61`; reader gu-interpolation.pdf assembled page 26.
 
 ## GU-T040: inverse, restriction, relative product, transitive closure → વ્યસ્ત / મર્યાદન / સાપેક્ષ ગુણાકાર / પરંપરિત સંવરણ
 
@@ -512,7 +512,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T040-O001` / `OLP-0019:B0007`: `upstream/content/sets-functions-relations/relations/operations.tex:22` → `gu/content/sets-functions-relations/relations/operations.tex:23`; reader gu-models-arithmetic.pdf assembled page 26.
+- `GU-T040-O001` / `OLP-0019:B0007`: `upstream/content/sets-functions-relations/relations/operations.tex:22` → `gu/content/sets-functions-relations/relations/operations.tex:23`; reader gu-interpolation.pdf assembled page 26.
 
 ## GU-T041: computability, formula, derivation, completeness → સંગણનીયતા / સૂત્ર / નિષ્પત્તિ / પૂર્ણતા
 
@@ -525,7 +525,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T041-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-models-arithmetic.pdf assembled page 26.
+- `GU-T041-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-interpolation.pdf assembled page 26.
 
 ## GU-T042: function / domain / codomain / range → વિધેય / પ્રદેશ / સહપ્રદેશ / વિસ્તાર
 
@@ -538,7 +538,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T042-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:57` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T042-O001` / `OLP-0013:B0007`: `upstream/content/sets-functions-relations/relations/reflections.tex:57` → `gu/content/sets-functions-relations/relations/reflections.tex:64`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T043: injective / injection → એક-એક / એક-એક વિધેય
 
@@ -550,7 +550,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T043-O001` / `OLP-0022:B0011`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:54` → `gu/content/sets-functions-relations/functions/function-kinds.tex:109`; reader gu-models-arithmetic.pdf assembled page 30.
+- `GU-T043-O001` / `OLP-0022:B0011`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:54` → `gu/content/sets-functions-relations/functions/function-kinds.tex:109`; reader gu-interpolation.pdf assembled page 30.
 
 ## GU-T044: surjective / surjection → વ્યાપ્ત / વ્યાપ્ત વિધેય
 
@@ -562,7 +562,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T044-O001` / `OLP-0034:B0008`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:38` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:39`; reader gu-models-arithmetic.pdf assembled page 44.
+- `GU-T044-O001` / `OLP-0034:B0008`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:38` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:39`; reader gu-interpolation.pdf assembled page 44.
 
 ## GU-T045: bijective / bijection → એક-એક અને વ્યાપ્ત / એક-એક વ્યાપ્ત વિધેય
 
@@ -574,7 +574,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T045-O001` / `OLP-0038:B0009`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:40` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39`; reader gu-models-arithmetic.pdf assembled page 49.
+- `GU-T045-O001` / `OLP-0038:B0009`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:40` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:39`; reader gu-interpolation.pdf assembled page 49.
 
 ## GU-T046: composition → સંયોજન
 
@@ -588,7 +588,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T046-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:12` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T046-O001` / `OLP-0014:B0005`: `upstream/content/sets-functions-relations/relations/special-properties.tex:12` → `gu/content/sets-functions-relations/relations/special-properties.tex:20`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T047: inverse function / left inverse / right inverse → પ્રતિવિધેય / ડાબી બાજુનો વ્યસ્ત / જમણી બાજુનો વ્યસ્ત
 
@@ -600,7 +600,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T047-O001` / `OLP-0024:B0011`: `upstream/content/sets-functions-relations/functions/inverses.tex:57` → `gu/content/sets-functions-relations/functions/inverses.tex:10`; reader gu-models-arithmetic.pdf assembled page 31.
+- `GU-T047-O001` / `OLP-0024:B0011`: `upstream/content/sets-functions-relations/functions/inverses.tex:57` → `gu/content/sets-functions-relations/functions/inverses.tex:10`; reader gu-interpolation.pdf assembled page 31.
 
 ## GU-T048: identity function → તદેવ વિધેય
 
@@ -612,7 +612,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T048-O001` / `OLP-0022:B0015`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:80` → `gu/content/sets-functions-relations/functions/function-kinds.tex:85`; reader gu-models-arithmetic.pdf assembled page 30.
+- `GU-T048-O001` / `OLP-0022:B0015`: `upstream/content/sets-functions-relations/functions/function-kinds.tex:80` → `gu/content/sets-functions-relations/functions/function-kinds.tex:85`; reader gu-interpolation.pdf assembled page 30.
 
 ## GU-T049: partial function / total function / defined / undefined → આંશિક વિધેય / સર્વત્ર વ્યાખ્યાયિત વિધેય / વ્યાખ્યાયિત / અવ્યાખ્યાયિત
 
@@ -626,7 +626,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T049-O001` / `OLP-0026:B0007`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:21` → `gu/content/sets-functions-relations/functions/partial-functions.tex:11`; reader gu-models-arithmetic.pdf assembled page 34.
+- `GU-T049-O001` / `OLP-0026:B0007`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:21` → `gu/content/sets-functions-relations/functions/partial-functions.tex:11`; reader gu-interpolation.pdf assembled page 34.
 
 ## GU-T050: argument / value / input / output → દલીલ / કિંમત / આગત / નિર્ગત
 
@@ -639,7 +639,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T050-O001` / `OLP-0013:B0005`: `upstream/content/sets-functions-relations/relations/reflections.tex:37` → `gu/content/sets-functions-relations/relations/reflections.tex:40`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T050-O001` / `OLP-0013:B0005`: `upstream/content/sets-functions-relations/relations/reflections.tex:37` → `gu/content/sets-functions-relations/relations/reflections.tex:40`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T051: serial relation → સર્વાગત સંબંધ
 
@@ -652,7 +652,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T051-O001` / `OLP-0026:B0012`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:63` → `gu/content/sets-functions-relations/functions/partial-functions.tex:72`; reader gu-models-arithmetic.pdf assembled page 35.
+- `GU-T051-O001` / `OLP-0026:B0012`: `upstream/content/sets-functions-relations/functions/partial-functions.tex:63` → `gu/content/sets-functions-relations/functions/partial-functions.tex:72`; reader gu-interpolation.pdf assembled page 35.
 
 ## GU-T052: enumeration → પરિગણના
 
@@ -679,7 +679,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T053-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-models-arithmetic.pdf assembled page 26.
+- `GU-T053-O001` / `OLP-0018:B0020`: `upstream/content/sets-functions-relations/relations/trees.tex:126` → `gu/content/sets-functions-relations/relations/trees.tex:138`; reader gu-interpolation.pdf assembled page 26.
 
 ## GU-T054: equinumerous sets → સામ્ય ગણો
 
@@ -691,7 +691,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T054-O001` / `OLP-0035:B0007`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:29` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:28`; reader gu-models-arithmetic.pdf assembled page 46.
+- `GU-T054-O001` / `OLP-0035:B0007`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:29` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:28`; reader gu-interpolation.pdf assembled page 46.
 
 ## GU-T055: cardinality / size → ગણાંક / કદ
 
@@ -705,7 +705,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T055-O001` / `OLP-0027:B0004`: `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8` → `gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8`; reader gu-models-arithmetic.pdf assembled page 35.
+- `GU-T055-O001` / `OLP-0027:B0004`: `upstream/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8` → `gu/content/sets-functions-relations/size-of-sets/size-of-sets-complete.tex:8`; reader gu-interpolation.pdf assembled page 35.
 
 ## GU-T056: finite / infinite → સાન્ત / અનંત
 
@@ -717,7 +717,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T056-O001` / `OLP-0024:B0016`: `upstream/content/sets-functions-relations/functions/inverses.tex:109` → `gu/content/sets-functions-relations/functions/inverses.tex:142`; reader gu-models-arithmetic.pdf assembled page 33.
+- `GU-T056-O001` / `OLP-0024:B0016`: `upstream/content/sets-functions-relations/functions/inverses.tex:109` → `gu/content/sets-functions-relations/functions/inverses.tex:142`; reader gu-interpolation.pdf assembled page 33.
 
 ## GU-T057: ceiling function → ઊર્ધ્વ પૂર્ણાંક વિધેય
 
@@ -730,7 +730,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T057-O001` / `OLP-0040:B0017`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:100` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:98`; reader gu-models-arithmetic.pdf assembled page 50.
+- `GU-T057-O001` / `OLP-0040:B0017`: `upstream/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:100` → `gu/content/sets-functions-relations/size-of-sets/enumerability-alt.tex:98`; reader gu-interpolation.pdf assembled page 50.
 
 ## GU-T058: recursive definition / induction / initial segment → પુનરાવર્તી વ્યાખ્યા / અનુમાનપ્રવર્તન / આરંભખંડ
 
@@ -744,7 +744,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T058-O001` / `OLP-0009:B0013`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:72` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:74`; reader gu-models-arithmetic.pdf assembled page 17.
+- `GU-T058-O001` / `OLP-0009:B0013`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:72` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:74`; reader gu-interpolation.pdf assembled page 17.
 
 ## GU-T059: diagonalization / zig-zag / pairing function → વિકર્ણ પદ્ધતિ / આડીઅવળી રીત / જોડ-નિરૂપણ વિધેય
 
@@ -758,7 +758,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T059-O001` / `OLP-0033:B0020`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability.tex:40`; reader gu-models-arithmetic.pdf assembled page 42.
+- `GU-T059-O001` / `OLP-0033:B0020`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability.tex:40`; reader gu-interpolation.pdf assembled page 42.
 
 ## GU-T060: mathematical induction → ગાણિતિક અનુમાન
 
@@ -770,7 +770,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T060-O001` / `OLP-0009:B0018`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:110` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:114`; reader gu-models-arithmetic.pdf assembled page 18.
+- `GU-T060-O001` / `OLP-0009:B0018`: `upstream/content/sets-functions-relations/sets/pairs-and-products.tex:110` → `gu/content/sets-functions-relations/sets/pairs-and-products.tex:114`; reader gu-interpolation.pdf assembled page 18.
 
 ## GU-T061: truth-functional / truth table → સત્યતાફલનલક્ષી / સત્યાર્થતા સારણી
 
@@ -797,7 +797,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T062-O001` / `OLP-0032:B0010`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:106` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:119`; reader gu-models-arithmetic.pdf assembled page 42.
+- `GU-T062-O001` / `OLP-0032:B0010`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:106` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:119`; reader gu-interpolation.pdf assembled page 42.
 
 ## GU-T063: cofinite → સહસાન્ત
 
@@ -811,7 +811,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T063-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:92` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:101`; reader gu-models-arithmetic.pdf assembled page 40.
+- `GU-T063-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:92` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:101`; reader gu-interpolation.pdf assembled page 40.
 
 ## GU-T064: array / row / column / triangular number → સરણિ / હાર / સ્તંભ / ત્રિકોણીય સંખ્યા
 
@@ -824,7 +824,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T064-O001` / `OLP-0030:B0006`: `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:39` → `gu/content/sets-functions-relations/size-of-sets/zig-zag.tex:22`; reader gu-models-arithmetic.pdf assembled page 38.
+- `GU-T064-O001` / `OLP-0030:B0006`: `upstream/content/sets-functions-relations/size-of-sets/zig-zag.tex:39` → `gu/content/sets-functions-relations/size-of-sets/zig-zag.tex:22`; reader gu-interpolation.pdf assembled page 38.
 
 ## GU-T065: reduction / reduce one problem to another → ન્યૂનીકરણ / એક સમસ્યાનું બીજી સમસ્યામાં ન્યૂનીકરણ કરવું
 
@@ -837,7 +837,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T065-O001` / `OLP-0034:B0005`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:11` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:11`; reader gu-models-arithmetic.pdf assembled page 44.
+- `GU-T065-O001` / `OLP-0034:B0005`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:11` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:11`; reader gu-interpolation.pdf assembled page 44.
 
 ## GU-T066: equinumerosity → ગણસામ્ય
 
@@ -851,7 +851,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T066-O001` / `OLP-0035:B0005`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11`; reader gu-models-arithmetic.pdf assembled page 46.
+- `GU-T066-O001` / `OLP-0035:B0005`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:11`; reader gu-interpolation.pdf assembled page 46.
 
 ## GU-T067: no larger than / smaller than (cardinal comparison) → મોટો નથી / નાનો
 
@@ -865,7 +865,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T067-O001` / `OLP-0036:B0007`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:27` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:26`; reader gu-models-arithmetic.pdf assembled page 47.
+- `GU-T067-O001` / `OLP-0036:B0007`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:27` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:26`; reader gu-interpolation.pdf assembled page 47.
 
 ## GU-T068: Schroder-Bernstein theorem → શ્રેડર--બર્નસ્ટાઇન પ્રમેય
 
@@ -879,7 +879,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T068-O001` / `OLP-0037:B0005`: `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11` → `gu/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11`; reader gu-models-arithmetic.pdf assembled page 48.
+- `GU-T068-O001` / `OLP-0037:B0005`: `upstream/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11` → `gu/content/sets-functions-relations/size-of-sets/schroder-bernstein.tex:11`; reader gu-interpolation.pdf assembled page 48.
 
 ## GU-T069: arithmetization → અંકગણિતીકરણ
 
@@ -893,7 +893,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T069-O001` / `OLP-0041:B0004`: `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:8` → `gu/content/sets-functions-relations/arithmetization/arithmetization.tex:8`; reader gu-models-arithmetic.pdf assembled page 53.
+- `GU-T069-O001` / `OLP-0041:B0004`: `upstream/content/sets-functions-relations/arithmetization/arithmetization.tex:8` → `gu/content/sets-functions-relations/arithmetization/arithmetization.tex:8`; reader gu-interpolation.pdf assembled page 53.
 
 ## GU-T070: integer / rational / irrational / real number → પૂર્ણાંક / સંમેય / અસંમેય / વાસ્તવિક સંખ્યા
 
@@ -905,7 +905,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T070-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:79` → `gu/content/sets-functions-relations/sets/basics.tex:47`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-T070-O001` / `OLP-0005:B0012`: `upstream/content/sets-functions-relations/sets/basics.tex:79` → `gu/content/sets-functions-relations/sets/basics.tex:47`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-T071: ring / field → મંડળ / ક્ષેત્ર
 
@@ -918,7 +918,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T071-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-models-arithmetic.pdf assembled page 60.
+- `GU-T071-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-interpolation.pdf assembled page 60.
 
 ## GU-T072: commutative / commutative ring → સમક્રમી / સમક્રમી મંડળ
 
@@ -932,7 +932,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T072-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:20`; reader gu-models-arithmetic.pdf assembled page 60.
+- `GU-T072-O001` / `OLP-0047:B0005`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:21` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:20`; reader gu-interpolation.pdf assembled page 60.
 
 ## GU-T073: associativity / commutativity / distributivity → સંગઠિતતા / સમક્રમિતા / વિતરણાત્મકતા
 
@@ -946,7 +946,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T073-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:26` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:27`; reader gu-models-arithmetic.pdf assembled page 60.
+- `GU-T073-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:26` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:27`; reader gu-interpolation.pdf assembled page 60.
 
 ## GU-T074: ordered ring / ordered field / complete ordered field → ક્રમિત મંડળ / ક્રમિત ક્ષેત્ર / પૂર્ણ ક્રમિત ક્ષેત્ર
 
@@ -960,7 +960,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T074-O001` / `OLP-0047:B0016`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:112` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-models-arithmetic.pdf assembled page 60.
+- `GU-T074-O001` / `OLP-0047:B0016`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:112` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:11`; reader gu-interpolation.pdf assembled page 60.
 
 ## GU-T075: upper bound / lower bound / least upper bound / greatest lower bound → ઉચ્ચસીમા / અધઃસીમા / ન્યૂનતમ ઉચ્ચસીમા / મહત્તમ અધઃસીમા
 
@@ -974,7 +974,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T075-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-models-arithmetic.pdf assembled page 57.
+- `GU-T075-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-interpolation.pdf assembled page 57.
 
 ## GU-T076: completeness property → પૂર્ણતા ગુણધર્મ
 
@@ -988,7 +988,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T076-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-models-arithmetic.pdf assembled page 57.
+- `GU-T076-O001` / `OLP-0044:B0011`: `upstream/content/sets-functions-relations/arithmetization/reals.tex:74` → `gu/content/sets-functions-relations/arithmetization/reals.tex:80`; reader gu-interpolation.pdf assembled page 57.
 
 ## GU-T077: Dedekind cut → ડેડેકિન્ડ કાપ
 
@@ -1002,7 +1002,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T077-O001` / `OLP-0046:B0006`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:18` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:17`; reader gu-models-arithmetic.pdf assembled page 59.
+- `GU-T077-O001` / `OLP-0046:B0006`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:18` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:17`; reader gu-interpolation.pdf assembled page 59.
 
 ## GU-T078: Cauchy sequence / convergence / limit → કોશી શ્રેણી / અભિસાર / લક્ષ
 
@@ -1015,7 +1015,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T078-O001` / `OLP-0048:B0008`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:73` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:11`; reader gu-models-arithmetic.pdf assembled page 62.
+- `GU-T078-O001` / `OLP-0048:B0008`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:73` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:11`; reader gu-interpolation.pdf assembled page 62.
 
 ## GU-T079: even / odd → યુગ્મ / અયુગ્મ
 
@@ -1029,7 +1029,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T079-O001` / `OLP-0006:B0007`: `upstream/content/sets-functions-relations/sets/subsets.tex:29` → `gu/content/sets-functions-relations/sets/subsets.tex:28`; reader gu-models-arithmetic.pdf assembled page 13.
+- `GU-T079-O001` / `OLP-0006:B0007`: `upstream/content/sets-functions-relations/sets/subsets.tex:29` → `gu/content/sets-functions-relations/sets/subsets.tex:28`; reader gu-interpolation.pdf assembled page 13.
 
 ## GU-T080: decimal expansion / rational approximation → દશાંશ વિસ્તરણ / સંમેય આસન્ન મૂલ્ય
 
@@ -1043,7 +1043,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T080-O001` / `OLP-0046:B0008`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:27` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:24`; reader gu-models-arithmetic.pdf assembled page 59.
+- `GU-T080-O001` / `OLP-0046:B0008`: `upstream/content/sets-functions-relations/arithmetization/reflections.tex:27` → `gu/content/sets-functions-relations/arithmetization/reflections.tex:24`; reader gu-interpolation.pdf assembled page 59.
 
 ## GU-T081: additive inverse / multiplicative inverse / identity element → યોજક વ્યસ્ત / ગુણાકારી વ્યસ્ત / એકમ ઘટક
 
@@ -1057,7 +1057,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T081-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:32` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:33`; reader gu-models-arithmetic.pdf assembled page 60.
+- `GU-T081-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:32` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:33`; reader gu-interpolation.pdf assembled page 60.
 
 ## GU-T082: Dedekind infinite → ડેડેકિન્ડ-અનંત
 
@@ -1071,7 +1071,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T082-O001` / `OLP-0050:B0006`: `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:61` → `gu/content/sets-functions-relations/infinite/hilberts-hotel.tex:59`; reader gu-models-arithmetic.pdf assembled page 66.
+- `GU-T082-O001` / `OLP-0050:B0006`: `upstream/content/sets-functions-relations/infinite/hilberts-hotel.tex:61` → `gu/content/sets-functions-relations/infinite/hilberts-hotel.tex:59`; reader gu-interpolation.pdf assembled page 66.
 
 ## GU-T083: closure / f-closed → સંવરણ / f-સંવૃત
 
@@ -1085,7 +1085,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T083-O001` / `OLP-0016:B0017`: `upstream/content/sets-functions-relations/relations/orders.tex:100` → `gu/content/sets-functions-relations/relations/orders.tex:102`; reader gu-models-arithmetic.pdf assembled page 23.
+- `GU-T083-O001` / `OLP-0016:B0017`: `upstream/content/sets-functions-relations/relations/orders.tex:100` → `gu/content/sets-functions-relations/relations/orders.tex:102`; reader gu-interpolation.pdf assembled page 23.
 
 ## GU-T084: Dedekind algebra → ડેડેકિન્ડ બીજગણિત
 
@@ -1099,7 +1099,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T084-O001` / `OLP-0051:B0013`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:82` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:10`; reader gu-models-arithmetic.pdf assembled page 66.
+- `GU-T084-O001` / `OLP-0051:B0013`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:82` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:10`; reader gu-interpolation.pdf assembled page 66.
 
 ## GU-T085: parameter → પ્રાચલ
 
@@ -1112,7 +1112,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T085-O001` / `OLP-0052:B0010`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:39` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:38`; reader gu-models-arithmetic.pdf assembled page 68.
+- `GU-T085-O001` / `OLP-0052:B0010`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:39` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:38`; reader gu-interpolation.pdf assembled page 68.
 
 ## GU-T086: free variable → મુક્ત ચલ
 
@@ -1126,7 +1126,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T086-O001` / `OLP-0052:B0012`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:55` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:55`; reader gu-models-arithmetic.pdf assembled page 68.
+- `GU-T086-O001` / `OLP-0052:B0012`: `upstream/content/sets-functions-relations/infinite/dedekind-induction.tex:55` → `gu/content/sets-functions-relations/infinite/dedekind-induction.tex:55`; reader gu-interpolation.pdf assembled page 68.
 
 ## GU-T087: isomorphism / isomorphic → એકરૂપતા / એકરૂપ
 
@@ -1139,7 +1139,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T087-O001` / `OLP-0023:B0012`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:60` → `gu/content/sets-functions-relations/functions/functions-relations.tex:75`; reader gu-models-arithmetic.pdf assembled page 31.
+- `GU-T087-O001` / `OLP-0023:B0012`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:60` → `gu/content/sets-functions-relations/functions/functions-relations.tex:75`; reader gu-interpolation.pdf assembled page 31.
 
 ## GU-T088: structuralism / structuralist → સંરચનાવાદ / સંરચનાવાદી
 
@@ -1153,7 +1153,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T088-O001` / `OLP-0053:B0007`: `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:40` → `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:38`; reader gu-models-arithmetic.pdf assembled page 69.
+- `GU-T088-O001` / `OLP-0053:B0007`: `upstream/content/sets-functions-relations/infinite/dedekinds-proof.tex:40` → `gu/content/sets-functions-relations/infinite/dedekinds-proof.tex:38`; reader gu-interpolation.pdf assembled page 69.
 
 ## GU-T089: propositional logic / propositional calculus → વિધાનાત્મક તર્કશાસ્ત્ર / વિધાનોનું કલન
 
@@ -1166,7 +1166,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T089-O001` / `OLP-0055:B0004`: `upstream/content/propositional-logic/propositional-logic.tex:7` → `gu/content/propositional-logic/propositional-logic.tex:7`; reader gu-models-arithmetic.pdf assembled page 71.
+- `GU-T089-O001` / `OLP-0055:B0004`: `upstream/content/propositional-logic/propositional-logic.tex:7` → `gu/content/propositional-logic/propositional-logic.tex:7`; reader gu-interpolation.pdf assembled page 71.
 
 ## GU-T090: propositional variable / atomic formula → વિધાનચલ / આણ્વિક સૂત્ર
 
@@ -1180,7 +1180,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T090-O001` / `OLP-0129:B0009`: `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:40` → `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:39`; reader gu-models-arithmetic.pdf assembled page 163.
+- `GU-T090-O001` / `OLP-0129:B0009`: `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:40` → `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:39`; reader gu-interpolation.pdf assembled page 163.
 
 ## GU-T091: syntax / semantics → વાક્યરચના / અર્થવિચાર
 
@@ -1194,7 +1194,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T091-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:15` → `gu/content/sets-functions-relations/relations/trees.tex:14`; reader gu-models-arithmetic.pdf assembled page 25.
+- `GU-T091-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:15` → `gu/content/sets-functions-relations/relations/trees.tex:14`; reader gu-interpolation.pdf assembled page 25.
 
 ## GU-T092: logical connective → તાર્કિક સંયોજક
 
@@ -1207,7 +1207,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T092-O001` / `OLP-0057:B0008`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:52` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:57`; reader gu-models-arithmetic.pdf assembled page 72.
+- `GU-T092-O001` / `OLP-0057:B0008`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:52` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:57`; reader gu-interpolation.pdf assembled page 72.
 
 ## GU-T093: negation / conjunction / disjunction / conditional / biconditional → નિષેધ / સંયોજન / વિયોજન / પ્રેરણ / દ્વિમુખી પ્રેરણ
 
@@ -1220,7 +1220,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T093-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:41` → `gu/content/sets-functions-relations/relations/reflections.tex:52`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T093-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:41` → `gu/content/sets-functions-relations/relations/reflections.tex:52`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T094: inductive definition / induction on formulas → અનુમાનાત્મક વ્યાખ્યા / સૂત્રો પર અનુમાન
 
@@ -1234,7 +1234,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T094-O001` / `OLP-0057:B0007`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:48` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:46`; reader gu-models-arithmetic.pdf assembled page 72.
+- `GU-T094-O001` / `OLP-0057:B0007`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:48` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:46`; reader gu-interpolation.pdf assembled page 72.
 
 ## GU-T095: unique readability / syntactic identity → એકમાત્ર વાચનીયતા / વાક્યરચનાત્મક અભિન્નતા
 
@@ -1248,7 +1248,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T095-O001` / `OLP-0059:B0012`: `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58` → `gu/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58`; reader gu-models-arithmetic.pdf assembled page 74.
+- `GU-T095-O001` / `OLP-0059:B0012`: `upstream/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58` → `gu/content/propositional-logic/syntax-and-semantics/preliminaries.tex:58`; reader gu-interpolation.pdf assembled page 74.
 
 ## GU-T096: formation sequence / uniform substitution → રચના-શ્રેણી / એકરૂપ પ્રતિસ્થાપન
 
@@ -1262,7 +1262,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T096-O001` / `OLP-0060:B0006`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:18` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:11`; reader gu-models-arithmetic.pdf assembled page 75.
+- `GU-T096-O001` / `OLP-0060:B0006`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:18` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:11`; reader gu-interpolation.pdf assembled page 75.
 
 ## GU-T097: valuation / evaluation function → સત્યમૂલ્ય-નિયુક્તિ / મૂલ્યાંકન વિધેય
 
@@ -1276,7 +1276,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T097-O001` / `OLP-0128:B0015`: `upstream/content/first-order-logic/completeness/outline.tex:155` → `gu/content/first-order-logic/completeness/outline.tex:163`; reader gu-models-arithmetic.pdf assembled page 161.
+- `GU-T097-O001` / `OLP-0128:B0015`: `upstream/content/first-order-logic/completeness/outline.tex:155` → `gu/content/first-order-logic/completeness/outline.tex:163`; reader gu-interpolation.pdf assembled page 161.
 
 ## GU-T098: satisfaction / satisfiable / unsatisfiable → સંતોષ / સંતોષ્ય / અસંતોષ્ય
 
@@ -1290,7 +1290,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T098-O001` / `OLP-0016:B0027`: `upstream/content/sets-functions-relations/relations/orders.tex:152` → `gu/content/sets-functions-relations/relations/orders.tex:159`; reader gu-models-arithmetic.pdf assembled page 24.
+- `GU-T098-O001` / `OLP-0016:B0027`: `upstream/content/sets-functions-relations/relations/orders.tex:152` → `gu/content/sets-functions-relations/relations/orders.tex:159`; reader gu-interpolation.pdf assembled page 24.
 
 ## GU-T099: tautology / contingent / contradiction → પુનરુક્તિ / નિવાર્ય / વ્યાઘાત
 
@@ -1303,7 +1303,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T099-O001` / `OLP-0057:B0009`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:65` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:61`; reader gu-models-arithmetic.pdf assembled page 72.
+- `GU-T099-O001` / `OLP-0057:B0009`: `upstream/content/propositional-logic/syntax-and-semantics/introduction.tex:65` → `gu/content/propositional-logic/syntax-and-semantics/introduction.tex:61`; reader gu-interpolation.pdf assembled page 72.
 
 ## GU-T100: entailment / semantic consequence → તાર્કિક ફલિતતા / અર્થાનુસારી ફલિતતા
 
@@ -1317,7 +1317,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T100-O001` / `OLP-0127:B0006`: `upstream/content/first-order-logic/completeness/introduction.tex:18` → `gu/content/first-order-logic/completeness/introduction.tex:17`; reader gu-models-arithmetic.pdf assembled page 160.
+- `GU-T100-O001` / `OLP-0127:B0006`: `upstream/content/first-order-logic/completeness/introduction.tex:18` → `gu/content/first-order-logic/completeness/introduction.tex:17`; reader gu-interpolation.pdf assembled page 160.
 
 ## GU-T101: local determination / semantic deduction theorem → સ્થાનિક નિર્ધારણ / અર્થાનુસારી નિગમન પ્રમેય
 
@@ -1331,7 +1331,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T101-O001` / `OLP-0061:B0010`: `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133` → `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134`; reader gu-models-arithmetic.pdf assembled page 78.
+- `GU-T101-O001` / `OLP-0061:B0010`: `upstream/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:133` → `gu/content/propositional-logic/syntax-and-semantics/valuations-sat.tex:134`; reader gu-interpolation.pdf assembled page 78.
 
 ## GU-T102: proof / derivation / derivation system / derivable → સાબિતી / નિષ્પત્તિ / નિષ્પત્તિ-તંત્ર / નિષ્પન્ન કરી શકાય એવું
 
@@ -1345,7 +1345,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T102-O001` / `OLP-0010:B0011`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:56` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:56`; reader gu-models-arithmetic.pdf assembled page 19.
+- `GU-T102-O001` / `OLP-0010:B0011`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:56` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:56`; reader gu-interpolation.pdf assembled page 19.
 
 ## GU-T103: axiom / axiomatic derivation / axiom schema / axiom system → સ્વયંસિદ્ધિ / સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ / સ્વયંસિદ્ધિ-પ્રરૂપ / સ્વયંસિદ્ધિ-તંત્ર
 
@@ -1359,7 +1359,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T103-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:52` → `gu/content/sets-functions-relations/relations/reflections.tex:57`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T103-O001` / `OLP-0013:B0006`: `upstream/content/sets-functions-relations/relations/reflections.tex:52` → `gu/content/sets-functions-relations/relations/reflections.tex:57`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T104: inference rule / modus ponens → અનુમાન-નિયમ / મોડસ પોનેન્સ
 
@@ -1373,7 +1373,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T104-O001` / `OLP-0064:B0007`: `upstream/content/first-order-logic/proof-systems/introduction.tex:31` → `gu/content/first-order-logic/proof-systems/introduction.tex:30`; reader gu-models-arithmetic.pdf assembled page 80.
+- `GU-T104-O001` / `OLP-0064:B0007`: `upstream/content/first-order-logic/proof-systems/introduction.tex:31` → `gu/content/first-order-logic/proof-systems/introduction.tex:30`; reader gu-interpolation.pdf assembled page 80.
 
 ## GU-T105: soundness / sound / unsound → યથાર્થતા / યથાર્થ / અયથાર્થ
 
@@ -1387,7 +1387,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T105-O001` / `OLP-0064:B0009`: `upstream/content/first-order-logic/proof-systems/introduction.tex:66` → `gu/content/first-order-logic/proof-systems/introduction.tex:63`; reader gu-models-arithmetic.pdf assembled page 80.
+- `GU-T105-O001` / `OLP-0064:B0009`: `upstream/content/first-order-logic/proof-systems/introduction.tex:66` → `gu/content/first-order-logic/proof-systems/introduction.tex:63`; reader gu-interpolation.pdf assembled page 80.
 
 ## GU-T106: completeness / complete derivation system → પૂર્ણતા / પૂર્ણ નિષ્પત્તિ-તંત્ર
 
@@ -1401,7 +1401,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T106-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:18` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-models-arithmetic.pdf assembled page 25.
+- `GU-T106-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:18` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-interpolation.pdf assembled page 25.
 
 ## GU-T107: consistency / inconsistent / contradiction → સુસંગતતા / અસુસંગત / વ્યાઘાત
 
@@ -1414,7 +1414,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T107-O001` / `OLP-0064:B0011`: `upstream/content/first-order-logic/proof-systems/introduction.tex:83` → `gu/content/first-order-logic/proof-systems/introduction.tex:80`; reader gu-models-arithmetic.pdf assembled page 80.
+- `GU-T107-O001` / `OLP-0064:B0011`: `upstream/content/first-order-logic/proof-systems/introduction.tex:83` → `gu/content/first-order-logic/proof-systems/introduction.tex:80`; reader gu-interpolation.pdf assembled page 80.
 
 ## GU-T108: sequent / sequent calculus / initial sequent → સિક્વન્ટ / સિક્વન્ટ કલન / આરંભિક સિક્વન્ટ
 
@@ -1428,7 +1428,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T108-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:40`; reader gu-models-arithmetic.pdf assembled page 80.
+- `GU-T108-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:40`; reader gu-interpolation.pdf assembled page 80.
 
 ## GU-T109: natural deduction / introduction rule / elimination rule → સ્વાભાવિક નિગમન / પરિચય-નિયમ / નિવારણ-નિયમ
 
@@ -1442,7 +1442,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T109-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:38` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-models-arithmetic.pdf assembled page 80.
+- `GU-T109-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:38` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-interpolation.pdf assembled page 80.
 
 ## GU-T110: assumption / discharge / undischarged assumption → ધારણા / નિવૃત્ત કરવું / અનિવૃત્ત ધારણા
 
@@ -1456,7 +1456,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T110-O001` / `OLP-0010:B0012`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:64` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:66`; reader gu-models-arithmetic.pdf assembled page 19.
+- `GU-T110-O001` / `OLP-0010:B0012`: `upstream/content/sets-functions-relations/sets/russells-paradox.tex:64` → `gu/content/sets-functions-relations/sets/russells-paradox.tex:66`; reader gu-interpolation.pdf assembled page 19.
 
 ## GU-T111: proof by cases / indirect proof / conditional proof → કિસ્સાવાર સાબિતી / પરોક્ષ સાબિતી / શરતી સાબિતી
 
@@ -1470,7 +1470,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T111-O001` / `OLP-0066:B0006`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:18` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:18`; reader gu-models-arithmetic.pdf assembled page 81.
+- `GU-T111-O001` / `OLP-0066:B0006`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:18` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:18`; reader gu-interpolation.pdf assembled page 81.
 
 ## GU-T112: tableau / truth tree / signed formula / closed tableau → ટેબ્લો / સત્ય-વૃક્ષ / ચિહ્નિત સૂત્ર / બંધ ટેબ્લો
 
@@ -1484,7 +1484,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T112-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-models-arithmetic.pdf assembled page 80.
+- `GU-T112-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:41` → `gu/content/first-order-logic/proof-systems/introduction.tex:39`; reader gu-interpolation.pdf assembled page 80.
 
 ## GU-T113: theorem / provability → પ્રમેય / સાબિત કરી શકાય તેવું
 
@@ -1498,7 +1498,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T113-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:19` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-models-arithmetic.pdf assembled page 25.
+- `GU-T113-O001` / `OLP-0018:B0005`: `upstream/content/sets-functions-relations/relations/trees.tex:19` → `gu/content/sets-functions-relations/relations/trees.tex:19`; reader gu-interpolation.pdf assembled page 25.
 
 ## GU-T114: proof-theoretic semantics → સાબિતી-સૈદ્ધાંતિક અર્થવિચાર
 
@@ -1512,7 +1512,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T114-O001` / `OLP-0066:B0010`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:88` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:85`; reader gu-models-arithmetic.pdf assembled page 82.
+- `GU-T114-O001` / `OLP-0066:B0010`: `upstream/content/first-order-logic/proof-systems/natural-deduction.tex:88` → `gu/content/first-order-logic/proof-systems/natural-deduction.tex:85`; reader gu-interpolation.pdf assembled page 82.
 
 ## GU-T115: resolution method / resolution refutation → રિઝોલ્યૂશન પદ્ધતિ / રિઝોલ્યૂશન વડે ખંડન
 
@@ -1526,7 +1526,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T115-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:43` → `gu/content/first-order-logic/proof-systems/introduction.tex:53`; reader gu-models-arithmetic.pdf assembled page 80.
+- `GU-T115-O001` / `OLP-0064:B0008`: `upstream/content/first-order-logic/proof-systems/introduction.tex:43` → `gu/content/first-order-logic/proof-systems/introduction.tex:53`; reader gu-interpolation.pdf assembled page 80.
 
 ## GU-T116: antecedent / succedent → પૂર્વાંગ / ઉત્તરાંગ
 
@@ -1540,7 +1540,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T116-O001` / `OLP-0070:B0007`: `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:25` → `gu/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:24`; reader gu-models-arithmetic.pdf assembled page 85.
+- `GU-T116-O001` / `OLP-0070:B0007`: `upstream/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:25` → `gu/content/first-order-logic/sequent-calculus/rules-and-proofs.tex:24`; reader gu-interpolation.pdf assembled page 85.
 
 ## GU-T117: premise / conclusion / end-sequent → આધાર-સિક્વન્ટ / ફલિત-સિક્વન્ટ / અંતિમ સિક્વન્ટ
 
@@ -1554,7 +1554,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T117-O001` / `OLP-0074:B0007`: `upstream/content/first-order-logic/sequent-calculus/derivations.tex:33` → `gu/content/first-order-logic/sequent-calculus/derivations.tex:29`; reader gu-models-arithmetic.pdf assembled page 88.
+- `GU-T117-O001` / `OLP-0074:B0007`: `upstream/content/first-order-logic/sequent-calculus/derivations.tex:33` → `gu/content/first-order-logic/sequent-calculus/derivations.tex:29`; reader gu-interpolation.pdf assembled page 88.
 
 ## GU-T118: eigenvariable / eigenvariable condition → આઇગનચલ / આઇગનચલ-શરત
 
@@ -1568,7 +1568,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T118-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30`; reader gu-models-arithmetic.pdf assembled page 86.
+- `GU-T118-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:30`; reader gu-interpolation.pdf assembled page 86.
 
 ## GU-T119: weakening / contraction / exchange / cut → શિથિલીકરણ / સંકોચન / અદલાબદલી / કટ
 
@@ -1582,7 +1582,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T119-O001` / `OLP-0073:B0009`: `upstream/content/first-order-logic/sequent-calculus/structural-rules.tex:37` → `gu/content/first-order-logic/sequent-calculus/structural-rules.tex:22`; reader gu-models-arithmetic.pdf assembled page 87.
+- `GU-T119-O001` / `OLP-0073:B0009`: `upstream/content/first-order-logic/sequent-calculus/structural-rules.tex:37` → `gu/content/first-order-logic/sequent-calculus/structural-rules.tex:22`; reader gu-interpolation.pdf assembled page 87.
 
 ## GU-T120: reflexivity / monotonicity / transitivity / compactness → સ્વવાચકતા / એકદિશવર્ધિતા / પરંપરિતતા / સઘનતા
 
@@ -1596,7 +1596,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T120-O001` / `OLP-0014:B0006`: `upstream/content/sets-functions-relations/relations/special-properties.tex:23` → `gu/content/sets-functions-relations/relations/special-properties.tex:23`; reader gu-models-arithmetic.pdf assembled page 21.
+- `GU-T120-O001` / `OLP-0014:B0006`: `upstream/content/sets-functions-relations/relations/special-properties.tex:23` → `gu/content/sets-functions-relations/relations/special-properties.tex:23`; reader gu-interpolation.pdf assembled page 21.
 
 ## GU-T121: identity / substitutability of identicals / Leibniz's law → તાદાત્મ્ય / અભિન્ન વસ્તુઓની પ્રતિસ્થાપનીયતા / લાઇબ્નિત્સનો નિયમ
 
@@ -1610,7 +1610,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T121-O001` / `OLP-0012:B0005`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:12` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:17`; reader gu-models-arithmetic.pdf assembled page 19.
+- `GU-T121-O001` / `OLP-0012:B0005`: `upstream/content/sets-functions-relations/relations/relations-as-sets.tex:12` → `gu/content/sets-functions-relations/relations/relations-as-sets.tex:17`; reader gu-interpolation.pdf assembled page 19.
 
 ## GU-T122: quantifier / universal quantifier / existential quantifier → પરિમાણક / સાર્વત્રિક પરિમાણક / અસ્તિત્વલક્ષી પરિમાણક
 
@@ -1623,7 +1623,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T122-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:35` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:36`; reader gu-models-arithmetic.pdf assembled page 60.
+- `GU-T122-O001` / `OLP-0047:B0006`: `upstream/content/sets-functions-relations/arithmetization/checking-details.tex:35` → `gu/content/sets-functions-relations/arithmetization/checking-details.tex:36`; reader gu-interpolation.pdf assembled page 60.
 
 ## GU-T123: closed term / sentence → બંધ પદ / વાક્ય
 
@@ -1637,7 +1637,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T123-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27`; reader gu-models-arithmetic.pdf assembled page 86.
+- `GU-T123-O001` / `OLP-0072:B0008`: `upstream/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27` → `gu/content/first-order-logic/sequent-calculus/quantifier-rules.tex:27`; reader gu-interpolation.pdf assembled page 86.
 
 ## GU-T124: deduction theorem → નિગમન પ્રમેય
 
@@ -1651,7 +1651,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T124-O001` / `OLP-0062:B0015`: `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83` → `gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84`; reader gu-models-arithmetic.pdf assembled page 79.
+- `GU-T124-O001` / `OLP-0062:B0015`: `upstream/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:83` → `gu/content/propositional-logic/syntax-and-semantics/semantic-notions.tex:84`; reader gu-interpolation.pdf assembled page 79.
 
 ## GU-T125: contraposition / ex falso quodlibet / explosion / double negation elimination → પ્રતિપક્ષન / એક્સ ફાલ્સો ક્વોડલિબેટ / વિસ્ફોટ / દ્વિ-નિષેધ નિકાલ
 
@@ -1665,7 +1665,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T125-O001` / `OLP-0119:B0018`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:110` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:115`; reader gu-models-arithmetic.pdf assembled page 154.
+- `GU-T125-O001` / `OLP-0119:B0018`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:110` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:115`; reader gu-interpolation.pdf assembled page 154.
 
 ## GU-T126: proof-theoretic notions / proof-theoretic property → સાબિતી-સૈદ્ધાંતિક ખ્યાલો / સાબિતી-સૈદ્ધાંતિક ગુણધર્મ
 
@@ -1679,7 +1679,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T126-O001` / `OLP-0077:B0006`: `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18` → `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:23`; reader gu-models-arithmetic.pdf assembled page 95.
+- `GU-T126-O001` / `OLP-0077:B0006`: `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:18` → `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:23`; reader gu-interpolation.pdf assembled page 95.
 
 ## GU-T127: model / model existence result → નિદર્શ / સંરચના-અસ્તિત્વનું પરિણામ
 
@@ -1693,7 +1693,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T127-O001` / `OLP-0136:B0006`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:22` → `gu/content/first-order-logic/completeness/compactness-direct.tex:20`; reader gu-models-arithmetic.pdf assembled page 174.
+- `GU-T127-O001` / `OLP-0136:B0006`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:22` → `gu/content/first-order-logic/completeness/compactness-direct.tex:20`; reader gu-interpolation.pdf assembled page 174.
 
 ## GU-T128: complete set → પૂર્ણ ગણ
 
@@ -1707,7 +1707,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T128-O001` / `OLP-0128:B0010`: `upstream/content/first-order-logic/completeness/outline.tex:80` → `gu/content/first-order-logic/completeness/outline.tex:74`; reader gu-models-arithmetic.pdf assembled page 162.
+- `GU-T128-O001` / `OLP-0128:B0010`: `upstream/content/first-order-logic/completeness/outline.tex:80` → `gu/content/first-order-logic/completeness/outline.tex:74`; reader gu-interpolation.pdf assembled page 162.
 
 ## GU-T129: saturated set / Henkin expansion / witness / counterexample → સંતૃપ્ત ગણ / હેન્કિન વિસ્તાર / સાક્ષી / પ્રતિદૃષ્ટાંત
 
@@ -1721,7 +1721,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T129-O001` / `OLP-0128:B0015`: `upstream/content/first-order-logic/completeness/outline.tex:140` → `gu/content/first-order-logic/completeness/outline.tex:143`; reader gu-models-arithmetic.pdf assembled page 163.
+- `GU-T129-O001` / `OLP-0128:B0015`: `upstream/content/first-order-logic/completeness/outline.tex:140` → `gu/content/first-order-logic/completeness/outline.tex:143`; reader gu-interpolation.pdf assembled page 163.
 
 ## GU-T130: Lindenbaum's Lemma → લિન્ડનબાઉમનું સહાયક પ્રમેય
 
@@ -1735,7 +1735,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T130-O001` / `OLP-0131:B0005`: `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:13` → `gu/content/first-order-logic/completeness/lindenbaums-lemma.tex:13`; reader gu-models-arithmetic.pdf assembled page 166.
+- `GU-T130-O001` / `OLP-0131:B0005`: `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:13` → `gu/content/first-order-logic/completeness/lindenbaums-lemma.tex:13`; reader gu-interpolation.pdf assembled page 166.
 
 ## GU-T131: term model / Truth Lemma → પદ-નિદર્શ / સત્યતા સહાયક પ્રમેય
 
@@ -1749,7 +1749,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T131-O001` / `OLP-0136:B0007`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:28` → `gu/content/first-order-logic/completeness/compactness-direct.tex:25`; reader gu-models-arithmetic.pdf assembled page 175.
+- `GU-T131-O001` / `OLP-0136:B0007`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:28` → `gu/content/first-order-logic/completeness/compactness-direct.tex:25`; reader gu-interpolation.pdf assembled page 175.
 
 ## GU-T132: factoring / representative / well defined → ભાગફલન / પ્રતિનિધિ / સુવ્યાખ્યાયિત
 
@@ -1763,7 +1763,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T132-O001` / `OLP-0133:B0005`: `upstream/content/first-order-logic/completeness/identity.tex:23` → `gu/content/first-order-logic/completeness/identity.tex:21`; reader gu-models-arithmetic.pdf assembled page 169.
+- `GU-T132-O001` / `OLP-0133:B0005`: `upstream/content/first-order-logic/completeness/identity.tex:23` → `gu/content/first-order-logic/completeness/identity.tex:21`; reader gu-interpolation.pdf assembled page 169.
 
 ## GU-T133: finitely satisfiable → સાન્ત રીતે સંતોષ્ય
 
@@ -1777,7 +1777,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T133-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:59` → `gu/content/first-order-logic/completeness/introduction.tex:59`; reader gu-models-arithmetic.pdf assembled page 161.
+- `GU-T133-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:59` → `gu/content/first-order-logic/completeness/introduction.tex:59`; reader gu-interpolation.pdf assembled page 161.
 
 ## GU-T134: L\"owenheim--Skolem theorem → લેવેનહાઇમ--સ્કોલેમ પ્રમેય
 
@@ -1791,7 +1791,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T134-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:71` → `gu/content/first-order-logic/completeness/introduction.tex:66`; reader gu-models-arithmetic.pdf assembled page 161.
+- `GU-T134-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:71` → `gu/content/first-order-logic/completeness/introduction.tex:66`; reader gu-interpolation.pdf assembled page 161.
 
 ## GU-T135: infinitesimal → અનંતસૂક્ષ્મ
 
@@ -1805,7 +1805,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T135-O001` / `OLP-0135:B0014`: `upstream/content/first-order-logic/completeness/compactness.tex:132` → `gu/content/first-order-logic/completeness/compactness.tex:139`; reader gu-models-arithmetic.pdf assembled page 174.
+- `GU-T135-O001` / `OLP-0135:B0014`: `upstream/content/first-order-logic/completeness/compactness.tex:132` → `gu/content/first-order-logic/completeness/compactness.tex:139`; reader gu-interpolation.pdf assembled page 174.
 
 ## GU-T136: axiomatizable / decidable → સ્વયંસિદ્ધીકરણીય / નિર્ણેય
 
@@ -1819,7 +1819,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T136-O001` / `OLP-0129:B0008`: `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:30` → `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:29`; reader gu-models-arithmetic.pdf assembled page 163.
+- `GU-T136-O001` / `OLP-0129:B0008`: `upstream/content/first-order-logic/completeness/complete-consistent-sets.tex:30` → `gu/content/first-order-logic/completeness/complete-consistent-sets.tex:29`; reader gu-interpolation.pdf assembled page 163.
 
 ## GU-T137: bound variable / quantifier scope → બદ્ધ ચલ / પરિમાણકનો વ્યાપ
 
@@ -1833,7 +1833,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T137-O001` / `OLP-0140:B0007`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:33` → `gu/content/first-order-logic/introduction/first-order-logic.tex:53`; reader gu-models-arithmetic.pdf assembled page 177.
+- `GU-T137-O001` / `OLP-0140:B0007`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:33` → `gu/content/first-order-logic/introduction/first-order-logic.tex:53`; reader gu-interpolation.pdf assembled page 177.
 
 ## GU-T138: model theory / axiomatic method → નિદર્શસિદ્ધાંત / સ્વયંસિદ્ધિમૂલક પદ્ધતિ
 
@@ -1847,7 +1847,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T138-O001` / `OLP-0147:B0006`: `upstream/content/first-order-logic/introduction/models-theories.tex:26` → `gu/content/first-order-logic/introduction/models-theories.tex:25`; reader gu-models-arithmetic.pdf assembled page 183.
+- `GU-T138-O001` / `OLP-0147:B0006`: `upstream/content/first-order-logic/introduction/models-theories.tex:26` → `gu/content/first-order-logic/introduction/models-theories.tex:25`; reader gu-interpolation.pdf assembled page 183.
 
 ## GU-T139: valid / validity / logically true → પ્રમાણભૂત / પ્રામાણ્ય / તાર્કિક રીતે સત્ય
 
@@ -1861,7 +1861,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T139-O001` / `OLP-0135:B0015`: `upstream/content/first-order-logic/completeness/compactness.tex:156` → `gu/content/first-order-logic/completeness/compactness.tex:170`; reader gu-models-arithmetic.pdf assembled page 174.
+- `GU-T139-O001` / `OLP-0135:B0015`: `upstream/content/first-order-logic/completeness/compactness.tex:156` → `gu/content/first-order-logic/completeness/compactness.tex:170`; reader gu-interpolation.pdf assembled page 174.
 
 ## GU-T140: variable assignment → ચલ-નિયુક્તિ
 
@@ -1875,7 +1875,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T140-O001` / `OLP-0124:B0013`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:90` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:42`; reader gu-models-arithmetic.pdf assembled page 159.
+- `GU-T140-O001` / `OLP-0124:B0013`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:90` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:42`; reader gu-interpolation.pdf assembled page 159.
 
 ## GU-T141: first-order language / non-logical symbol / n-place → પ્રથમ-ક્રમ ભાષા / અતાર્કિક સંકેત / n-સ્થાની
 
@@ -1889,7 +1889,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T141-O001` / `OLP-0142:B0007`: `upstream/content/first-order-logic/introduction/formulas.tex:24` → `gu/content/first-order-logic/introduction/formulas.tex:23`; reader gu-models-arithmetic.pdf assembled page 179.
+- `GU-T141-O001` / `OLP-0142:B0007`: `upstream/content/first-order-logic/introduction/formulas.tex:24` → `gu/content/first-order-logic/introduction/formulas.tex:23`; reader gu-interpolation.pdf assembled page 179.
 
 ## GU-T142: term / formula / string of symbols → પદ / સૂત્ર / સંકેતશ્રેણી
 
@@ -1903,7 +1903,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T142-O001` / `OLP-0115:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:20` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:20`; reader gu-models-arithmetic.pdf assembled page 149.
+- `GU-T142-O001` / `OLP-0115:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:20` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:20`; reader gu-interpolation.pdf assembled page 149.
 
 ## GU-T143: main operator / subformula / immediate or proper subformula → મુખ્ય કારક / ઉપસૂત્ર / તત્કાલિક અથવા ઉચિત ઉપસૂત્ર
 
@@ -1917,7 +1917,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T143-O001` / `OLP-0154:B0006`: `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:17` → `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:15`; reader gu-models-arithmetic.pdf assembled page 190.
+- `GU-T143-O001` / `OLP-0154:B0006`: `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:17` → `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:15`; reader gu-interpolation.pdf assembled page 190.
 
 ## GU-T144: proper prefix / proper initial subsequence / minimal formation sequence → ઉચિત આરંભખંડ / ઉચિત આરંભ-ઉપશ્રેણી / ન્યૂનતમ રચના-શ્રેણી
 
@@ -1931,7 +1931,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T144-O001` / `OLP-0153:B0022`: `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:113` → `gu/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108`; reader gu-models-arithmetic.pdf assembled page 189.
+- `GU-T144-O001` / `OLP-0153:B0022`: `upstream/content/first-order-logic/syntax-and-semantics/unique-readability.tex:113` → `gu/content/first-order-logic/syntax-and-semantics/unique-readability.tex:108`; reader gu-interpolation.pdf assembled page 189.
 
 ## GU-T145: free occurrence / free for substitution / variable capture / instance → મુક્ત ઘટના / મુક્તપણે પ્રતિસ્થાપનીય / ચલનું પકડાવું / દૃષ્ટાંત
 
@@ -1945,7 +1945,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T145-O001` / `OLP-0157:B0006`: `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13` → `gu/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:15`; reader gu-models-arithmetic.pdf assembled page 195.
+- `GU-T145-O001` / `OLP-0157:B0006`: `upstream/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:13` → `gu/content/first-order-logic/syntax-and-semantics/free-vars-sentences.tex:15`; reader gu-interpolation.pdf assembled page 195.
 
 ## GU-T146: domain of a structure or model (universe) → વ્યાપકક્ષેત્ર
 
@@ -1959,7 +1959,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T146-O001` / `OLP-0161:B0006`: `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:18` → `gu/content/first-order-logic/syntax-and-semantics/structures.tex:18`; reader gu-models-arithmetic.pdf assembled page 198.
+- `GU-T146-O001` / `OLP-0161:B0006`: `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:18` → `gu/content/first-order-logic/syntax-and-semantics/structures.tex:18`; reader gu-interpolation.pdf assembled page 198.
 
 ## GU-T147: covered structure / closed term / value of a term → આવૃત સંરચના / બંધ પદ / પદનું મૂલ્ય
 
@@ -1973,7 +1973,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T147-O001` / `OLP-0162:B0007`: `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17` → `gu/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11`; reader gu-models-arithmetic.pdf assembled page 199.
+- `GU-T147-O001` / `OLP-0162:B0007`: `upstream/content/first-order-logic/syntax-and-semantics/covered-structures.tex:17` → `gu/content/first-order-logic/syntax-and-semantics/covered-structures.tex:11`; reader gu-interpolation.pdf assembled page 199.
 
 ## GU-T148: x-variant of a variable assignment → ચલ-નિયુક્તિનું x-રૂપાંતર
 
@@ -1987,7 +1987,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T148-O001` / `OLP-0163:B0011`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:70`; reader gu-models-arithmetic.pdf assembled page 201.
+- `GU-T148-O001` / `OLP-0163:B0011`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:74` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:70`; reader gu-interpolation.pdf assembled page 201.
 
 ## GU-T149: extensionality / relevance for first-order satisfaction → પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ / સંબંધિતતા
 
@@ -2001,7 +2001,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T149-O001` / `OLP-0165:B0005`: `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:11` → `gu/content/first-order-logic/syntax-and-semantics/extensionality.tex:11`; reader gu-models-arithmetic.pdf assembled page 209.
+- `GU-T149-O001` / `OLP-0165:B0005`: `upstream/content/first-order-logic/syntax-and-semantics/extensionality.tex:11` → `gu/content/first-order-logic/syntax-and-semantics/extensionality.tex:11`; reader gu-interpolation.pdf assembled page 209.
 
 ## GU-T150: satisfaction relative to a variable assignment → ચલ-નિયુક્તિ સાપેક્ષ સંતોષ
 
@@ -2015,7 +2015,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T150-O001` / `OLP-0163:B0015`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:104` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:34`; reader gu-models-arithmetic.pdf assembled page 200.
+- `GU-T150-O001` / `OLP-0163:B0015`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:104` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:34`; reader gu-interpolation.pdf assembled page 200.
 
 ## GU-T151: vacuous substitution (a substitution that makes no change) → પ્રતિસ્થાપનથી કોઈ ફેરફાર ન થાય
 
@@ -2029,7 +2029,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T151-O001` / `OLP-0158:B0024`: `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:97` → `gu/content/first-order-logic/syntax-and-semantics/substitution.tex:98`; reader gu-models-arithmetic.pdf assembled page 197.
+- `GU-T151-O001` / `OLP-0158:B0024`: `upstream/content/first-order-logic/syntax-and-semantics/substitution.tex:97` → `gu/content/first-order-logic/syntax-and-semantics/substitution.tex:98`; reader gu-interpolation.pdf assembled page 197.
 
 ## GU-T152: theory / first-order theory → સિદ્ધાંત / પ્રથમ-ક્રમ સિદ્ધાંત
 
@@ -2043,7 +2043,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T152-O001` / `OLP-0168:B0009`: `upstream/content/first-order-logic/models-theories/introduction.tex:38` → `gu/content/first-order-logic/models-theories/introduction.tex:22`; reader gu-models-arithmetic.pdf assembled page 211.
+- `GU-T152-O001` / `OLP-0168:B0009`: `upstream/content/first-order-logic/models-theories/introduction.tex:38` → `gu/content/first-order-logic/models-theories/introduction.tex:22`; reader gu-interpolation.pdf assembled page 211.
 
 ## GU-T153: axiomatized by / sententially closed / closure of a sentence set → સ્વયંસિદ્ધીકૃત / સંવૃત / વાક્યગણનું સંવરણ
 
@@ -2057,7 +2057,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T153-O001` / `OLP-0168:B0008`: `upstream/content/first-order-logic/models-theories/introduction.tex:33` → `gu/content/first-order-logic/models-theories/introduction.tex:35`; reader gu-models-arithmetic.pdf assembled page 212.
+- `GU-T153-O001` / `OLP-0168:B0008`: `upstream/content/first-order-logic/models-theories/introduction.tex:33` → `gu/content/first-order-logic/models-theories/introduction.tex:35`; reader gu-interpolation.pdf assembled page 212.
 
 ## GU-T154: definability / definable / express a relation → વ્યાખ્યેયતા / વ્યાખ્યેય / સંબંધ વ્યક્ત કરવો
 
@@ -2071,7 +2071,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T154-O001` / `OLP-0168:B0010`: `upstream/content/first-order-logic/models-theories/introduction.tex:86` → `gu/content/first-order-logic/models-theories/introduction.tex:85`; reader gu-models-arithmetic.pdf assembled page 212.
+- `GU-T154-O001` / `OLP-0168:B0010`: `upstream/content/first-order-logic/models-theories/introduction.tex:86` → `gu/content/first-order-logic/models-theories/introduction.tex:85`; reader gu-interpolation.pdf assembled page 212.
 
 ## GU-T155: mereology / parthood / proper part / mereological sum / fusion → અંશસિદ્ધાંત / અંશતા / યથાર્થ અંશ / અંશસિદ્ધાંતિક યોગ / સંલયન
 
@@ -2085,7 +2085,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T155-O001` / `OLP-0170:B0013`: `upstream/content/first-order-logic/models-theories/theories.tex:103` → `gu/content/first-order-logic/models-theories/theories.tex:106`; reader gu-models-arithmetic.pdf assembled page 215.
+- `GU-T155-O001` / `OLP-0170:B0013`: `upstream/content/first-order-logic/models-theories/theories.tex:103` → `gu/content/first-order-logic/models-theories/theories.tex:106`; reader gu-interpolation.pdf assembled page 215.
 
 ## GU-T156: pure set / urelement → શુદ્ધ ગણ / અગણ મૂળઘટક
 
@@ -2099,7 +2099,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T156-O001` / `OLP-0170:B0010`: `upstream/content/first-order-logic/models-theories/theories.tex:63` → `gu/content/first-order-logic/models-theories/theories.tex:62`; reader gu-models-arithmetic.pdf assembled page 214.
+- `GU-T156-O001` / `OLP-0170:B0010`: `upstream/content/first-order-logic/models-theories/theories.tex:63` → `gu/content/first-order-logic/models-theories/theories.tex:62`; reader gu-interpolation.pdf assembled page 214.
 
 ## GU-T157: naive comprehension scheme / comprehension principle / separation principle → સહજ ગુણધર્મ-ગણરચના પ્રરૂપ / ગુણધર્મ-ગણરચના સિદ્ધાંત / પૃથક્કરણ સિદ્ધાંત
 
@@ -2113,7 +2113,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T157-O001` / `OLP-0170:B0012`: `upstream/content/first-order-logic/models-theories/theories.tex:91` → `gu/content/first-order-logic/models-theories/theories.tex:93`; reader gu-models-arithmetic.pdf assembled page 214.
+- `GU-T157-O001` / `OLP-0170:B0012`: `upstream/content/first-order-logic/models-theories/theories.tex:91` → `gu/content/first-order-logic/models-theories/theories.tex:93`; reader gu-interpolation.pdf assembled page 214.
 
 ## GU-T158: many-sorted logic / sort / typed → બહુ-પ્રકાર તર્કશાસ્ત્ર / પ્રકાર / પ્રકારિત
 
@@ -2127,7 +2127,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T158-O001` / `OLP-0176:B0005`: `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:11` → `gu/content/first-order-logic/beyond/many-sorted-logic.tex:11`; reader gu-models-arithmetic.pdf assembled page 220.
+- `GU-T158-O001` / `OLP-0176:B0005`: `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:11` → `gu/content/first-order-logic/beyond/many-sorted-logic.tex:11`; reader gu-interpolation.pdf assembled page 220.
 
 ## GU-T159: second-order logic / higher-order logic → દ્વિતીય-ક્રમ તર્કશાસ્ત્ર / ઉચ્ચ-ક્રમ તર્કશાસ્ત્ર
 
@@ -2141,7 +2141,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T159-O001` / `OLP-0177:B0005`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:11` → `gu/content/first-order-logic/beyond/second-order-logic.tex:11`; reader gu-models-arithmetic.pdf assembled page 221.
+- `GU-T159-O001` / `OLP-0177:B0005`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:11` → `gu/content/first-order-logic/beyond/second-order-logic.tex:11`; reader gu-interpolation.pdf assembled page 221.
 
 ## GU-T160: full or weak semantics / categorical description → પૂર્ણ અથવા દુર્બળ અર્થવિજ્ઞાન / એકરૂપતા સુધીનું અનન્ય વર્ણન
 
@@ -2155,7 +2155,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T160-O001` / `OLP-0177:B0010`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:123` → `gu/content/first-order-logic/beyond/second-order-logic.tex:120`; reader gu-models-arithmetic.pdf assembled page 223.
+- `GU-T160-O001` / `OLP-0177:B0010`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:123` → `gu/content/first-order-logic/beyond/second-order-logic.tex:120`; reader gu-interpolation.pdf assembled page 223.
 
 ## GU-T161: comprehension schema / impredicative / predicative → ગુણધર્મ-ગણરચના પ્રરૂપ / અપ્રેડિકેટિવ / પ્રેડિકેટિવ
 
@@ -2169,7 +2169,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T161-O001` / `OLP-0177:B0007`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:57` → `gu/content/first-order-logic/beyond/second-order-logic.tex:55`; reader gu-models-arithmetic.pdf assembled page 222.
+- `GU-T161-O001` / `OLP-0177:B0007`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:57` → `gu/content/first-order-logic/beyond/second-order-logic.tex:55`; reader gu-interpolation.pdf assembled page 222.
 
 ## GU-T162: finite type / functional → સાન્ત પ્રકાર / વિધેયક
 
@@ -2183,7 +2183,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T162-O001` / `OLP-0178:B0007`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:27` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:27`; reader gu-models-arithmetic.pdf assembled page 224.
+- `GU-T162-O001` / `OLP-0178:B0007`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:27` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:27`; reader gu-interpolation.pdf assembled page 224.
 
 ## GU-T163: intuitionistic / classical / constructive logic → સ્ફુરણાવાદી / પ્રશિષ્ટ / રચનાત્મક તર્કશાસ્ત્ર
 
@@ -2197,7 +2197,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T163-O001` / `OLP-0179:B0005`: `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:11` → `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:11`; reader gu-models-arithmetic.pdf assembled page 226.
+- `GU-T163-O001` / `OLP-0179:B0005`: `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:11` → `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:11`; reader gu-interpolation.pdf assembled page 226.
 
 ## GU-T164: BHK interpretation / law of excluded middle / double-negation translation → BHK અર્થઘટન / વર્જિત મધ્યનો નિયમ / દ્વિનિષેધ અનુવાદ
 
@@ -2211,7 +2211,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T164-O001` / `OLP-0179:B0016`: `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:98` → `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:87`; reader gu-models-arithmetic.pdf assembled page 227.
+- `GU-T164-O001` / `OLP-0179:B0016`: `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:98` → `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:87`; reader gu-interpolation.pdf assembled page 227.
 
 ## GU-T165: Kripke structure / forcing relation / monotone assignment → ક્રિપ્કે સંરચના / બાધન-સંબંધ / એકદિશવર્ધી નિયુક્તિ
 
@@ -2225,7 +2225,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T165-O001` / `OLP-0179:B0026`: `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:196` → `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:180`; reader gu-models-arithmetic.pdf assembled page 228.
+- `GU-T165-O001` / `OLP-0179:B0026`: `upstream/content/first-order-logic/beyond/intuitionistic-logic.tex:196` → `gu/content/first-order-logic/beyond/intuitionistic-logic.tex:180`; reader gu-interpolation.pdf assembled page 228.
 
 ## GU-T166: modal / intensional / extensional logic; accessibility; possible world → મોડલ / અંતર્લક્ષી / વિસ્તારલક્ષી તર્કશાસ્ત્ર; સુલભતા; શક્ય જગત
 
@@ -2239,7 +2239,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T166-O001` / `OLP-0180:B0005`: `upstream/content/first-order-logic/beyond/modal-logics.tex:11` → `gu/content/first-order-logic/beyond/modal-logics.tex:11`; reader gu-models-arithmetic.pdf assembled page 229.
+- `GU-T166-O001` / `OLP-0180:B0005`: `upstream/content/first-order-logic/beyond/modal-logics.tex:11` → `gu/content/first-order-logic/beyond/modal-logics.tex:11`; reader gu-interpolation.pdf assembled page 229.
 
 ## GU-T167: provability / epistemic / temporal logic → સાબિતીયોગ્યતા / જ્ઞાનમીમાંસક / કાલિક તર્કશાસ્ત્ર
 
@@ -2253,7 +2253,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T167-O001` / `OLP-0180:B0009`: `upstream/content/first-order-logic/beyond/modal-logics.tex:59` → `gu/content/first-order-logic/beyond/modal-logics.tex:61`; reader gu-models-arithmetic.pdf assembled page 230.
+- `GU-T167-O001` / `OLP-0180:B0009`: `upstream/content/first-order-logic/beyond/modal-logics.tex:59` → `gu/content/first-order-logic/beyond/modal-logics.tex:61`; reader gu-interpolation.pdf assembled page 230.
 
 ## GU-T168: fuzzy, probabilistic, default, nonmonotonic, defeasible, causal and deontic logic → અસ્પષ્ટ, સંભાવ્યતા, ડિફૉલ્ટ, અ-એકદિશવર્ધી, પરાજેય, કારણાત્મક અને કર્તવ્યલક્ષી તર્કશાસ્ત્ર
 
@@ -2267,7 +2267,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T168-O001` / `OLP-0181:B0007`: `upstream/content/first-order-logic/beyond/other-logics.tex:23` → `gu/content/first-order-logic/beyond/other-logics.tex:22`; reader gu-models-arithmetic.pdf assembled page 230.
+- `GU-T168-O001` / `OLP-0181:B0007`: `upstream/content/first-order-logic/beyond/other-logics.tex:23` → `gu/content/first-order-logic/beyond/other-logics.tex:22`; reader gu-interpolation.pdf assembled page 230.
 
 ## GU-T169: reduct / expansion of a structure → સંરચનાનું ન્યૂનરૂપ / વિસ્તાર
 
@@ -2281,7 +2281,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T169-O001` / `OLP-0184:B0004`: `upstream/content/model-theory/basics/reducts-and-expansions.tex:10` → `gu/content/model-theory/basics/reducts-and-expansions.tex:10`; reader gu-models-arithmetic.pdf assembled page 231.
+- `GU-T169-O001` / `OLP-0184:B0004`: `upstream/content/model-theory/basics/reducts-and-expansions.tex:10` → `gu/content/model-theory/basics/reducts-and-expansions.tex:10`; reader gu-interpolation.pdf assembled page 231.
 
 ## GU-T170: substructure / extension / generated substructure → ઉપસંરચના / વિસ્તરણ / જનિત ઉપસંરચના
 
@@ -2295,7 +2295,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T170-O001` / `OLP-0185:B0006`: `upstream/content/model-theory/basics/substructures.tex:22` → `gu/content/model-theory/basics/substructures.tex:23`; reader gu-models-arithmetic.pdf assembled page 232.
+- `GU-T170-O001` / `OLP-0185:B0006`: `upstream/content/model-theory/basics/substructures.tex:22` → `gu/content/model-theory/basics/substructures.tex:23`; reader gu-interpolation.pdf assembled page 232.
 
 ## GU-T171: overspill / arbitrarily large finite models → અતિપ્રવાહ / ગમે તેટલા મોટા સાન્ત નિદર્શો
 
@@ -2309,7 +2309,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T171-O001` / `OLP-0186:B0006`: `upstream/content/model-theory/basics/overspill.tex:20` → `gu/content/model-theory/basics/overspill.tex:10`; reader gu-models-arithmetic.pdf assembled page 232.
+- `GU-T171-O001` / `OLP-0186:B0006`: `upstream/content/model-theory/basics/overspill.tex:20` → `gu/content/model-theory/basics/overspill.tex:10`; reader gu-interpolation.pdf assembled page 232.
 
 ## GU-T172: elementary equivalence / elementarily equivalent → પ્રાથમિક સમકક્ષતા / પ્રાથમિક રીતે સમકક્ષ
 
@@ -2323,7 +2323,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T172-O001` / `OLP-0187:B0005`: `upstream/content/model-theory/basics/isomorphism.tex:14` → `gu/content/model-theory/basics/isomorphism.tex:14`; reader gu-models-arithmetic.pdf assembled page 232.
+- `GU-T172-O001` / `OLP-0187:B0005`: `upstream/content/model-theory/basics/isomorphism.tex:14` → `gu/content/model-theory/basics/isomorphism.tex:14`; reader gu-interpolation.pdf assembled page 232.
 
 ## GU-T173: automorphism / fixed under an automorphism → સ્વ-એકરૂપતા / સ્વ-એકરૂપતા હેઠળ સ્થિર
 
@@ -2337,7 +2337,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T173-O001` / `OLP-0187:B0012`: `upstream/content/model-theory/basics/isomorphism.tex:120` → `gu/content/model-theory/basics/isomorphism.tex:126`; reader gu-models-arithmetic.pdf assembled page 234.
+- `GU-T173-O001` / `OLP-0187:B0012`: `upstream/content/model-theory/basics/isomorphism.tex:120` → `gu/content/model-theory/basics/isomorphism.tex:126`; reader gu-interpolation.pdf assembled page 234.
 
 ## GU-T174: partial isomorphism / back-and-forth property → આંશિક એકરૂપતા / આગળ-પાછળ ગુણધર્મ
 
@@ -2351,7 +2351,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T174-O001` / `OLP-0189:B0004`: `upstream/content/model-theory/basics/partial-iso.tex:10` → `gu/content/model-theory/basics/partial-iso.tex:10`; reader gu-models-arithmetic.pdf assembled page 235.
+- `GU-T174-O001` / `OLP-0189:B0004`: `upstream/content/model-theory/basics/partial-iso.tex:10` → `gu/content/model-theory/basics/partial-iso.tex:10`; reader gu-interpolation.pdf assembled page 235.
 
 ## GU-T175: purely relational language → શુદ્ધ સંબંધાત્મક ભાષા
 
@@ -2365,7 +2365,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T175-O001` / `OLP-0189:B0011`: `upstream/content/model-theory/basics/partial-iso.tex:87` → `gu/content/model-theory/basics/partial-iso.tex:82`; reader gu-models-arithmetic.pdf assembled page 235.
+- `GU-T175-O001` / `OLP-0189:B0011`: `upstream/content/model-theory/basics/partial-iso.tex:87` → `gu/content/model-theory/basics/partial-iso.tex:82`; reader gu-interpolation.pdf assembled page 235.
 
 ## GU-T176: quantifier rank / n-equivalent → પરિમાણક-ક્રમ / n-સમકક્ષ
 
@@ -2379,7 +2379,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T176-O001` / `OLP-0189:B0015`: `upstream/content/model-theory/basics/partial-iso.tex:114` → `gu/content/model-theory/basics/partial-iso.tex:110`; reader gu-models-arithmetic.pdf assembled page 236.
+- `GU-T176-O001` / `OLP-0189:B0015`: `upstream/content/model-theory/basics/partial-iso.tex:114` → `gu/content/model-theory/basics/partial-iso.tex:110`; reader gu-interpolation.pdf assembled page 236.
 
 ## GU-T177: finite sequence / concatenation / empty sequence → સાન્ત શ્રેણી / જોડાણ / ખાલી શ્રેણી
 
@@ -2393,7 +2393,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T177-O001` / `OLP-0189:B0018`: `upstream/content/model-theory/basics/partial-iso.tex:137` → `gu/content/model-theory/basics/partial-iso.tex:139`; reader gu-models-arithmetic.pdf assembled page 236.
+- `GU-T177-O001` / `OLP-0189:B0018`: `upstream/content/model-theory/basics/partial-iso.tex:137` → `gu/content/model-theory/basics/partial-iso.tex:139`; reader gu-interpolation.pdf assembled page 236.
 
 ## GU-T178: theory of a structure / complete theory → સંરચનાનો સિદ્ધાંત / પૂર્ણ સિદ્ધાંત
 
@@ -2407,7 +2407,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T178-O001` / `OLP-0188:B0005`: `upstream/content/model-theory/basics/theory-of-m.tex:11` → `gu/content/model-theory/basics/theory-of-m.tex:11`; reader gu-models-arithmetic.pdf assembled page 234.
+- `GU-T178-O001` / `OLP-0188:B0005`: `upstream/content/model-theory/basics/theory-of-m.tex:11` → `gu/content/model-theory/basics/theory-of-m.tex:11`; reader gu-interpolation.pdf assembled page 234.
 
 ## GU-T179: dense linear ordering without endpoints → અંતબિંદુવિહીન સઘન રેખીય ક્રમ
 
@@ -2421,7 +2421,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T179-O001` / `OLP-0190:B0005`: `upstream/content/model-theory/basics/dlo.tex:13` → `gu/content/model-theory/basics/dlo.tex:13`; reader gu-models-arithmetic.pdf assembled page 237.
+- `GU-T179-O001` / `OLP-0190:B0005`: `upstream/content/model-theory/basics/dlo.tex:13` → `gu/content/model-theory/basics/dlo.tex:13`; reader gu-interpolation.pdf assembled page 237.
 
 ## GU-T180: models of arithmetic → અંકગણિતના નિદર્શો
 
@@ -2435,7 +2435,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T180-O001` / `OLP-0191:B0004`: `upstream/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8` → `gu/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8`; reader gu-models-arithmetic.pdf assembled page 238.
+- `GU-T180-O001` / `OLP-0191:B0004`: `upstream/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8` → `gu/content/model-theory/models-of-arithmetic/models-of-arithmetic.tex:8`; reader gu-interpolation.pdf assembled page 238.
 
 ## GU-T181: standard/non-standard model; standard/non-standard number → પ્રમાણભૂત/અપ્રમાણભૂત નિદર્શ; પ્રમાણભૂત/અપ્રમાણભૂત સંખ્યા
 
@@ -2449,7 +2449,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T181-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:12`; reader gu-models-arithmetic.pdf assembled page 238.
+- `GU-T181-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:12` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:12`; reader gu-interpolation.pdf assembled page 238.
 
 ## GU-T182: standard numeral → પ્રમાણભૂત આંકિક પદ
 
@@ -2463,7 +2463,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T182-O001` / `OLP-0193:B0007`: `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:27` → `gu/content/model-theory/models-of-arithmetic/standard-models.tex:27`; reader gu-models-arithmetic.pdf assembled page 239.
+- `GU-T182-O001` / `OLP-0193:B0007`: `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:27` → `gu/content/model-theory/models-of-arithmetic/standard-models.tex:27`; reader gu-interpolation.pdf assembled page 239.
 
 ## GU-T183: successor/predecessor in arithmetic → ઉત્તરગામી / પૂર્વગામી
 
@@ -2477,7 +2477,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T183-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:15` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:15`; reader gu-models-arithmetic.pdf assembled page 238.
+- `GU-T183-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:15` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:15`; reader gu-interpolation.pdf assembled page 238.
 
 ## GU-T184: block of a non-standard element → અપ્રમાણભૂત ઘટકનો ખંડ
 
@@ -2491,7 +2491,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T184-O001` / `OLP-0196:B0015`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:104` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:117`; reader gu-models-arithmetic.pdf assembled page 246.
+- `GU-T184-O001` / `OLP-0196:B0015`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:104` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:117`; reader gu-interpolation.pdf assembled page 246.
 
 ## GU-T185: computable structure/model/function; decidable relation → સંગણનીય સંરચના/નિદર્શ/વિધેય; નિર્ણેય સંબંધ
 
@@ -2505,7 +2505,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T185-O001` / `OLP-0197:B0004`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:10` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:10`; reader gu-models-arithmetic.pdf assembled page 248.
+- `GU-T185-O001` / `OLP-0197:B0004`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:10` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:10`; reader gu-interpolation.pdf assembled page 248.
 
 ## GU-T186: true arithmetic / consistency statement → સાચું અંકગણિત / સુસંગતતા-વિધાન
 
@@ -2519,7 +2519,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T186-O001` / `OLP-0196:B0035`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:243` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:260`; reader gu-models-arithmetic.pdf assembled page 247.
+- `GU-T186-O001` / `OLP-0196:B0035`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:243` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:260`; reader gu-interpolation.pdf assembled page 247.
 
 ## GU-T187: primitive recursion → આદિમ પુનરાવર્તન
 
@@ -2533,7 +2533,63 @@ Occurrences:
 
 Occurrences:
 
-- `GU-T187-O001` / `OLP-0197:B0005`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:21` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:20`; reader gu-models-arithmetic.pdf assembled page 248.
+- `GU-T187-O001` / `OLP-0197:B0005`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:21` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:20`; reader gu-interpolation.pdf assembled page 248.
+
+## GU-T188: interpolation theorem / interpolant → અંતર્વેશન પ્રમેય / અંતર્વેશક
+
+- **Kind / mode:** terminology / contemporaneous
+- **Confidence / priority:** low / high; provisional: true
+- **Intended sense:** The official CSTT mathematics glossary directly attests અંતર્વેશન for interpolation and અંતર્વેશન સૂત્ર for interpolation formula. પ્રમેય is the edition's established theorem term. અંતર્વેશક derives transparently from the attested process noun for the sentence occupying the intermediate entailment position; the displayed theorem fixes its exact logical role.
+- **Rationale:** The official CSTT mathematics glossary directly attests અંતર્વેશન for interpolation and અંતર્વેશન સૂત્ર for interpolation formula. પ્રમેય is the edition's established theorem term. અંતર્વેશક derives transparently from the attested process noun for the sentence occupying the intermediate entailment position; the displayed theorem fixes its exact logical role.
+- **Authority:** GU-P078 (checked_context_only); GU-P075 (checked_context_only); GU-P077 (checked_context_only)
+- **Alternatives:** મધ્યસ્થાપન / મધ્યવર્તી વિધાન [rejected] — explanatory, but would discard the directly attested official term.; ઇન્ટરપોલન્ટ [rejected] — recognizable transliteration, though the official glossary supports a native derivative family.
+- **Please double-check:** Please double-check: In Gujarati mathematical-logic prose, does ‘અંતર્વેશન પ્રમેય / અંતર્વેશક’ accurately express ‘interpolation theorem / interpolant’ with the scope stated here: The official CSTT mathematics glossary directly attests અંતર્વેશન for interpolation and અંતર્વેશન સૂત્ર for interpolation formula. પ્રમેય is the edition's established theorem term. અંતર્વેશક derives transparently from the attested process noun for the sentence occupying the intermediate entailment position; the displayed theorem fixes its exact logical role. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+Occurrences:
+
+- `GU-T188-O001` / `OLP-0199:B0006`: `upstream/content/model-theory/interpolation/introduction.tex:13` → `gu/content/model-theory/interpolation/introduction.tex:13`; reader gu-interpolation.pdf assembled page 249.
+
+## GU-T189: separate / inseparable sets of sentences → પૃથક કરવું / વાક્યોના અપૃથક્કરણીય ગણો
+
+- **Kind / mode:** terminology / contemporaneous
+- **Confidence / priority:** low / high; provisional: true
+- **Intended sense:** The Gujarati dictionary directly analyzes અપૃથક્કરણીય as something that cannot be separated, while the official glossary attests context-sensitive mathematical forms for separation. Here the adjacent definition fixes the specialist sense: no sentence has the two required consequence relations. The verb phrase પૃથક કરવું preserves that direction without importing topological separability.
+- **Rationale:** The Gujarati dictionary directly analyzes અપૃથક્કરણીય as something that cannot be separated, while the official glossary attests context-sensitive mathematical forms for separation. Here the adjacent definition fixes the specialist sense: no sentence has the two required consequence relations. The verb phrase પૃથક કરવું preserves that direction without importing topological separability.
+- **Authority:** GU-P081 (checked_context_only); GU-P082 (checked_context_only); GU-P070 (checked_context_only); GU-P077 (checked_context_only)
+- **Alternatives:** વિયોજિત કરવું / અવિયોજનીય [rejected] — established in other mathematical contexts, but risks suggesting algebraic decomposition rather than separation by a sentence.; અલગ કરવું / અલગ ન કરી શકાય એવા [rejected] — clear prose, but less compact and less suited to the repeated technical predicate.
+- **Please double-check:** Please double-check: In Gujarati mathematical-logic prose, does ‘પૃથક કરવું / વાક્યોના અપૃથક્કરણીય ગણો’ accurately express ‘separate / inseparable sets of sentences’ with the scope stated here: The Gujarati dictionary directly analyzes અપૃથક્કરણીય as something that cannot be separated, while the official glossary attests context-sensitive mathematical forms for separation. Here the adjacent definition fixes the specialist sense: no sentence has the two required consequence relations. The verb phrase પૃથક કરવું preserves that direction without importing topological separability. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+Occurrences:
+
+- `GU-T189-O001` / `OLP-0200:B0007`: `upstream/content/model-theory/interpolation/separation.tex:24` → `gu/content/model-theory/interpolation/separation.tex:18`; reader gu-interpolation.pdf assembled page 249.
+
+## GU-T190: explicitly/implicitly define a predicate → વિધેયને સ્પષ્ટ રીતે / ગૂઢ રીતે વ્યાખ્યાયિત કરવું
+
+- **Kind / mode:** terminology / contemporaneous
+- **Confidence / priority:** low / high; provisional: true
+- **Intended sense:** The official glossary directly uses સ્પષ્ટ for explicit equations, forms and functions, and ગૂઢ for implicit and implicit function. GU-T154 already governs વ્યાખ્યેયતા and વ્યાખ્યેય. The two formal definitions distinguish a displayed defining formula from uniqueness of the predicate interpretation across expansions.
+- **Rationale:** The official glossary directly uses સ્પષ્ટ for explicit equations, forms and functions, and ગૂઢ for implicit and implicit function. GU-T154 already governs વ્યાખ્યેયતા and વ્યાખ્યેય. The two formal definitions distinguish a displayed defining formula from uniqueness of the predicate interpretation across expansions.
+- **Authority:** GU-P079 (checked_context_only); GU-P080 (checked_context_only); GU-P075 (checked_context_only); GU-P077 (checked_context_only)
+- **Alternatives:** પ્રગટ / અંતર્નિહિત વ્યાખ્યા [rejected] — readable philosophical prose, but less aligned with the directly attested mathematical modifiers.; એક્સ્પ્લિસિટ / ઇમ્પ્લિસિટ વ્યાખ્યા [rejected] — transparent to specialists, though unnecessary given the official Gujarati forms.
+- **Please double-check:** Please double-check: In Gujarati mathematical-logic prose, does ‘વિધેયને સ્પષ્ટ રીતે / ગૂઢ રીતે વ્યાખ્યાયિત કરવું’ accurately express ‘explicitly/implicitly define a predicate’ with the scope stated here: The official glossary directly uses સ્પષ્ટ for explicit equations, forms and functions, and ગૂઢ for implicit and implicit function. GU-T154 already governs વ્યાખ્યેયતા and વ્યાખ્યેય. The two formal definitions distinguish a displayed defining formula from uniqueness of the predicate interpretation across expansions. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+Occurrences:
+
+- `GU-T190-O001` / `OLP-0202:B0006`: `upstream/content/model-theory/interpolation/definability.tex:32` → `gu/content/model-theory/interpolation/definability.tex:18`; reader gu-interpolation.pdf assembled page 253.
+
+## GU-T191: joint consistency theorem → સંયુક્ત સુસંગતતા પ્રમેય
+
+- **Kind / mode:** terminology / contemporaneous
+- **Confidence / priority:** low / high; provisional: true
+- **Intended sense:** સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name.
+- **Rationale:** સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name.
+- **Authority:** GU-P074 (checked_context_only); GU-P075 (checked_context_only); GU-P077 (checked_context_only)
+- **Alternatives:** સહસુસંગતતા પ્રમેય [rejected] — compact, but can imply pairwise compatibility rather than consistency of the union.; જોડાણ-સુસંગતતા પ્રમેય [rejected] — explanatory, though less natural as a fixed theorem title.
+- **Please double-check:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંયુક્ત સુસંગતતા પ્રમેય’ accurately express ‘joint consistency theorem’ with the scope stated here: સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+Occurrences:
+
+- `GU-T191-O001` / `OLP-0199:B0007`: `upstream/content/model-theory/interpolation/introduction.tex:25` → `gu/content/model-theory/interpolation/introduction.tex:24`; reader gu-interpolation.pdf assembled page 249.
 
 ## OLFUN-001: confirmed mathematical defect → Added the nonempty-domain hypothesis to the theorem and proof; disclosed the counterexample and exact general condition.
 
@@ -2547,7 +2603,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-001-O001` / `OLP-0024:B0012`: `upstream/content/sets-functions-relations/functions/inverses.tex:62` → `gu/content/sets-functions-relations/functions/inverses.tex:75`; reader gu-models-arithmetic.pdf assembled page 32.
+- `OLFUN-001-O001` / `OLP-0024:B0012`: `upstream/content/sets-functions-relations/functions/inverses.tex:62` → `gu/content/sets-functions-relations/functions/inverses.tex:75`; reader gu-interpolation.pdf assembled page 32.
 
 ## OLFUN-002: confirmed wording defect → Used nonnegative (principal) square root on the natural-number domain and disclosed the English adjective correction.
 
@@ -2561,7 +2617,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-002-O001` / `OLP-0021:B0014`: `upstream/content/sets-functions-relations/functions/function-basics.tex:64` → `gu/content/sets-functions-relations/functions/function-basics.tex:73`; reader gu-models-arithmetic.pdf assembled page 27.
+- `OLFUN-002-O001` / `OLP-0021:B0014`: `upstream/content/sets-functions-relations/functions/function-basics.tex:64` → `gu/content/sets-functions-relations/functions/function-basics.tex:73`; reader gu-interpolation.pdf assembled page 27.
 
 ## OLFUN-003: $n$ → $x$
 
@@ -2575,7 +2631,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-003-O001` / `OLP-0021:B0018`: `upstream/content/sets-functions-relations/functions/function-basics.tex:103` → `gu/content/sets-functions-relations/functions/function-basics.tex:115`; reader gu-models-arithmetic.pdf assembled page 28.
+- `OLFUN-003-O001` / `OLP-0021:B0018`: `upstream/content/sets-functions-relations/functions/function-basics.tex:103` → `gu/content/sets-functions-relations/functions/function-basics.tex:115`; reader gu-interpolation.pdf assembled page 28.
 
 ## OLFUN-004: confirmed terminology imprecision → Typed the graph as a relation contained in A times B and disclosed the source imprecision.
 
@@ -2589,7 +2645,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-004-O001` / `OLP-0023:B0007`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:24` → `gu/content/sets-functions-relations/functions/functions-relations.tex:67`; reader gu-models-arithmetic.pdf assembled page 31.
+- `OLFUN-004-O001` / `OLP-0023:B0007`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:24` → `gu/content/sets-functions-relations/functions/functions-relations.tex:67`; reader gu-interpolation.pdf assembled page 31.
 
 ## OLFUN-005: confirmed explanatory inconsistency explicit definition correct → Kept the correct domain-only function restriction and qualified its analogy with the earlier two-coordinate relation restriction.
 
@@ -2603,7 +2659,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFUN-005-O001` / `OLP-0023:B0013`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:78` → `gu/content/sets-functions-relations/functions/functions-relations.tex:110`; reader gu-models-arithmetic.pdf assembled page 31.
+- `OLFUN-005-O001` / `OLP-0023:B0013`: `upstream/content/sets-functions-relations/functions/functions-relations.tex:78` → `gu/content/sets-functions-relations/functions/functions-relations.tex:110`; reader gu-interpolation.pdf assembled page 31.
 
 ## OLSIZ-001: confirmed tabular value omission → Completed the Gujarati values row with -3 and added an adjacent keyed note.
 
@@ -2617,7 +2673,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-001-O001` / `OLP-0029:B0020`: `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/enumerability.tex:174`; reader gu-models-arithmetic.pdf assembled page 37.
+- `OLSIZ-001-O001` / `OLP-0029:B0020`: `upstream/content/sets-functions-relations/size-of-sets/enumerability.tex:140` → `gu/content/sets-functions-relations/size-of-sets/enumerability.tex:174`; reader gu-interpolation.pdf assembled page 37.
 
 ## OLSIZ-002: confirmed grammatical defect clarified by following formula → Translated the formula-controlled meaning and added an adjacent keyed note.
 
@@ -2631,7 +2687,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-002-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:91` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:102`; reader gu-models-arithmetic.pdf assembled page 40.
+- `OLSIZ-002-O001` / `OLP-0031:B0015`: `upstream/content/sets-functions-relations/size-of-sets/pairing.tex:91` → `gu/content/sets-functions-relations/size-of-sets/pairing.tex:102`; reader gu-interpolation.pdf assembled page 40.
 
 ## OLSIZ-003: $\tuple{2,m}$ → $\tuple{3,m}$
 
@@ -2645,7 +2701,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-003-O001` / `OLP-0032:B0006`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:39` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:42`; reader gu-models-arithmetic.pdf assembled page 41.
+- `OLSIZ-003-O001` / `OLP-0032:B0006`: `upstream/content/sets-functions-relations/size-of-sets/pairing-alt.tex:39` → `gu/content/sets-functions-relations/size-of-sets/pairing-alt.tex:42`; reader gu-interpolation.pdf assembled page 41.
 
 ## OLSIZ-004: ["$s_{k}$", "$s_{k}(n) = 1$", "$s_k(n) = 0$"] → ["$s$", "$s(n) = 1$", "$s(n) = 0$"]
 
@@ -2659,7 +2715,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-004-O001` / `OLP-0034:B0011`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:51` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:55`; reader gu-models-arithmetic.pdf assembled page 45.
+- `OLSIZ-004-O001` / `OLP-0034:B0011`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:51` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:55`; reader gu-interpolation.pdf assembled page 45.
 
 ## OLSIZ-005: confirmed codomain error finite string used as infinite sequence → Appended an infinite tail of ones, producing a valid nonsurjective map into the intended codomain, and added an adjacent keyed note.
 
@@ -2673,7 +2729,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-005-O001` / `OLP-0034:B0015`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:85` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:103`; reader gu-models-arithmetic.pdf assembled page 45.
+- `OLSIZ-005-O001` / `OLP-0034:B0015`: `upstream/content/sets-functions-relations/size-of-sets/reduction.tex:85` → `gu/content/sets-functions-relations/size-of-sets/reduction.tex:103`; reader gu-interpolation.pdf assembled page 45.
 
 ## OLSIZ-006: $g(x) = y$ → $f(x) = y$
 
@@ -2687,8 +2743,8 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-006-O001` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:74`; reader gu-models-arithmetic.pdf assembled page 46.
-- `OLSIZ-006-O002` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:69` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:90`; reader gu-models-arithmetic.pdf assembled page 46.
+- `OLSIZ-006-O001` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:68` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:74`; reader gu-interpolation.pdf assembled page 46.
+- `OLSIZ-006-O002` / `OLP-0035:B0015`: `upstream/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:69` → `gu/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex:90`; reader gu-interpolation.pdf assembled page 46.
 
 ## OLSIZ-007: $x \in \overline{A}$ → $x \in A$
 
@@ -2702,7 +2758,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-007-O001` / `OLP-0036:B0014`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:91` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:89`; reader gu-models-arithmetic.pdf assembled page 47.
+- `OLSIZ-007-O001` / `OLP-0036:B0014`: `upstream/content/sets-functions-relations/size-of-sets/comparing-size.tex:91` → `gu/content/sets-functions-relations/size-of-sets/comparing-size.tex:89`; reader gu-interpolation.pdf assembled page 47.
 
 ## OLSIZ-008: confirmed reversed index description vs array → Translated the indexing in the order fixed by the array and added an adjacent keyed note.
 
@@ -2716,7 +2772,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-008-O001` / `OLP-0039:B0011`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:59` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:68`; reader gu-models-arithmetic.pdf assembled page 51.
+- `OLSIZ-008-O001` / `OLP-0039:B0011`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:59` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:68`; reader gu-interpolation.pdf assembled page 51.
 
 ## OLSIZ-009: confirmed duplicated bit flip instruction → Restored the complementary 0-to-1 bit flip and added an adjacent keyed note.
 
@@ -2730,7 +2786,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-009-O001` / `OLP-0039:B0012`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:76` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:88`; reader gu-models-arithmetic.pdf assembled page 51.
+- `OLSIZ-009-O001` / `OLP-0039:B0012`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:76` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:88`; reader gu-interpolation.pdf assembled page 51.
 
 ## OLSIZ-010: ["$s_{k}$", "$s_{k}(n) = 1$", "$s_k(n) = 0$"] → ["$s$", "$s(n) = 1$", "$s(n) = 0$"]
 
@@ -2744,7 +2800,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-010-O001` / `OLP-0040:B0012`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:55`; reader gu-models-arithmetic.pdf assembled page 52.
+- `OLSIZ-010-O001` / `OLP-0040:B0012`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:53` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:55`; reader gu-interpolation.pdf assembled page 52.
 
 ## OLSIZ-011: confirmed malformed three argument conditional → Closed the positive footnote branch, supplied the empty negative branch, kept the following sentence outside the conditional, and added an adjacent keyed note.
 
@@ -2758,7 +2814,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-011-O001` / `OLP-0039:B0010`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:47` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:50`; reader gu-models-arithmetic.pdf assembled page 50.
+- `OLSIZ-011-O001` / `OLP-0039:B0010`: `upstream/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:47` → `gu/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex:50`; reader gu-interpolation.pdf assembled page 50.
 
 ## OLSIZ-012: confirmed duplicate cross section label → Changed only the target label section component from red to red-alt and added an adjacent keyed note.
 
@@ -2772,7 +2828,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSIZ-012-O001` / `OLP-0040:B0018`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:107` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:112`; reader gu-models-arithmetic.pdf assembled page 53.
+- `OLSIZ-012-O001` / `OLP-0040:B0018`: `upstream/content/sets-functions-relations/size-of-sets/reduction-alt.tex:107` → `gu/content/sets-functions-relations/size-of-sets/reduction-alt.tex:112`; reader gu-interpolation.pdf assembled page 53.
 
 ## OLARI-001: $r - s$ → $s - r$
 
@@ -2786,7 +2842,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-001-O001` / `OLP-0043:B0006`: `upstream/content/sets-functions-relations/arithmetization/rationals.tex:53` → `gu/content/sets-functions-relations/arithmetization/rationals.tex:54`; reader gu-models-arithmetic.pdf assembled page 56.
+- `OLARI-001-O001` / `OLP-0043:B0006`: `upstream/content/sets-functions-relations/arithmetization/rationals.tex:53` → `gu/content/sets-functions-relations/arithmetization/rationals.tex:54`; reader gu-interpolation.pdf assembled page 56.
 
 ## OLARI-002: confirmed wrong premise for nonempty union → Invoked the stated nonemptiness premise and added an adjacent keyed note.
 
@@ -2800,7 +2856,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-002-O001` / `OLP-0045:B0010`: `upstream/content/sets-functions-relations/arithmetization/cuts.tex:61` → `gu/content/sets-functions-relations/arithmetization/cuts.tex:64`; reader gu-models-arithmetic.pdf assembled page 58.
+- `OLARI-002-O001` / `OLP-0045:B0010`: `upstream/content/sets-functions-relations/arithmetization/cuts.tex:61` → `gu/content/sets-functions-relations/arithmetization/cuts.tex:64`; reader gu-interpolation.pdf assembled page 58.
 
 ## OLARI-003: confirmed quotient object category errors → Named the equivalence classes in the construction, theorem and exercise and added one adjacent keyed note covering all three repairs.
 
@@ -2814,9 +2870,9 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-003-O001` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:84` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:101`; reader gu-models-arithmetic.pdf assembled page 64.
-- `OLARI-003-O002` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:85` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:162`; reader gu-models-arithmetic.pdf assembled page 64.
-- `OLARI-003-O003` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:86` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:170`; reader gu-models-arithmetic.pdf assembled page 64.
+- `OLARI-003-O001` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:84` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:101`; reader gu-interpolation.pdf assembled page 64.
+- `OLARI-003-O002` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:85` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:162`; reader gu-interpolation.pdf assembled page 64.
+- `OLARI-003-O003` / `OLP-0048:B0009`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:86` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:170`; reader gu-interpolation.pdf assembled page 64.
 
 ## OLARI-004: $0_\Rat$ → $0_\Real$
 
@@ -2830,7 +2886,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLARI-004-O001` / `OLP-0048:B0014`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:137` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:146`; reader gu-models-arithmetic.pdf assembled page 64.
+- `OLARI-004-O001` / `OLP-0048:B0014`: `upstream/content/sets-functions-relations/arithmetization/cauchy.tex:137` → `gu/content/sets-functions-relations/arithmetization/cauchy.tex:146`; reader gu-interpolation.pdf assembled page 64.
 
 ## OLINF-001: confirmed unbound carrier and missing self map constraints → Made the carrier explicit throughout the controlling definition and lemma as f:A→A, X⊆A and o∈A, and added an adjacent keyed note.
 
@@ -2844,7 +2900,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLINF-001-O001` / `OLP-0051:B0006`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:41`; reader gu-models-arithmetic.pdf assembled page 66.
+- `OLINF-001-O001` / `OLP-0051:B0006`: `upstream/content/sets-functions-relations/infinite/dedekind-algebra.tex:41` → `gu/content/sets-functions-relations/infinite/dedekind-algebra.tex:41`; reader gu-interpolation.pdf assembled page 66.
 
 ## OLINF-002: \cardeq{\cardeq{A}{B}}{C} → \cardeq{A}{B} and \cardeq{B}{C} (an equivalent explicit pair retained for readability)
 
@@ -2858,7 +2914,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLINF-002-O001` / `OLP-0054:B0010`: `upstream/content/sets-functions-relations/infinite/card-sb.tex:52` → `gu/content/sets-functions-relations/infinite/card-sb.tex:51`; reader gu-models-arithmetic.pdf assembled page 70.
+- `OLINF-002-O001` / `OLP-0054:B0010`: `upstream/content/sets-functions-relations/infinite/card-sb.tex:52` → `gu/content/sets-functions-relations/infinite/card-sb.tex:51`; reader gu-interpolation.pdf assembled page 70.
 
 ## OLPL-001: $\lnot !A \lor !B)$ → $\lnot !A \lor !B$
 
@@ -2872,7 +2928,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPL-001-O001` / `OLP-0058:B0032`: `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158` → `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:155`; reader gu-models-arithmetic.pdf assembled page 73.
+- `OLPL-001-O001` / `OLP-0058:B0032`: `upstream/content/propositional-logic/syntax-and-semantics/formulas.tex:158` → `gu/content/propositional-logic/syntax-and-semantics/formulas.tex:155`; reader gu-interpolation.pdf assembled page 73.
 
 ## OLPL-002: $!A \equiv (!A_j \land !A_k)$ → $!A \ident (!A_j \land !A_k)$
 
@@ -2886,7 +2942,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPL-002-O001` / `OLP-0060:B0016`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:141` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:136`; reader gu-models-arithmetic.pdf assembled page 76.
+- `OLPL-002-O001` / `OLP-0060:B0016`: `upstream/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:141` → `gu/content/propositional-logic/syntax-and-semantics/formation-sequences.tex:136`; reader gu-interpolation.pdf assembled page 76.
 
 ## OLPRF-001: !A_1, \dots, !A_m \Sequent !B_1, \dots, !B_m, → !A_1, \dots, !A_m \Sequent !B_1, \dots, !B_n,
 
@@ -2900,7 +2956,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-001-O001` / `OLP-0065:B0006`: `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:19` → `gu/content/first-order-logic/proof-systems/sequent-calculus.tex:19`; reader gu-models-arithmetic.pdf assembled page 81.
+- `OLPRF-001-O001` / `OLP-0065:B0006`: `upstream/content/first-order-logic/proof-systems/sequent-calculus.tex:19` → `gu/content/first-order-logic/proof-systems/sequent-calculus.tex:19`; reader gu-interpolation.pdf assembled page 81.
 
 ## OLPRF-002: $\TRule{\False}{!A \land !B}$ → $\TRule{\False}{\land}$
 
@@ -2914,7 +2970,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-002-O001` / `OLP-0067:B0007`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:38` → `gu/content/first-order-logic/proof-systems/tableaux.tex:37`; reader gu-models-arithmetic.pdf assembled page 83.
+- `OLPRF-002-O001` / `OLP-0067:B0007`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:38` → `gu/content/first-order-logic/proof-systems/tableaux.tex:37`; reader gu-interpolation.pdf assembled page 83.
 
 ## OLPRF-003: for some $!B_i \in \Gamma$ → for every $i=1,\dots,n$, $!B_i\in\Gamma$
 
@@ -2928,7 +2984,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-003-O001` / `OLP-0067:B0009`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:70` → `gu/content/first-order-logic/proof-systems/tableaux.tex:76`; reader gu-models-arithmetic.pdf assembled page 83.
+- `OLPRF-003-O001` / `OLP-0067:B0009`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:70` → `gu/content/first-order-logic/proof-systems/tableaux.tex:76`; reader gu-interpolation.pdf assembled page 83.
 
 ## OLPRF-004: two occurrences of \TRule{\True}{\lif}[2] → two occurrences of \TRule{\True}{\land}[2]
 
@@ -2942,7 +2998,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLPRF-004-O001` / `OLP-0067:B0008`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:59` → `gu/content/first-order-logic/proof-systems/tableaux.tex:59`; reader gu-models-arithmetic.pdf assembled page 83.
+- `OLPRF-004-O001` / `OLP-0067:B0008`: `upstream/content/first-order-logic/proof-systems/tableaux.tex:59` → `gu/content/first-order-logic/proof-systems/tableaux.tex:59`; reader gu-interpolation.pdf assembled page 83.
 
 ## OLSEQ-001: four occurrences of \RightLabel{\RightR{\Exchange}} → four occurrences of \RightLabel{\LeftR{\Exchange}}
 
@@ -2956,10 +3012,10 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-001-O001` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:86` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:80`; reader gu-models-arithmetic.pdf assembled page 90.
-- `OLSEQ-001-O002` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:104` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:102`; reader gu-models-arithmetic.pdf assembled page 90.
-- `OLSEQ-001-O003` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:125` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:123`; reader gu-models-arithmetic.pdf assembled page 90.
-- `OLSEQ-001-O004` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:147` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:145`; reader gu-models-arithmetic.pdf assembled page 90.
+- `OLSEQ-001-O001` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:86` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:80`; reader gu-interpolation.pdf assembled page 90.
+- `OLSEQ-001-O002` / `OLP-0075:B0010`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:104` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:102`; reader gu-interpolation.pdf assembled page 90.
+- `OLSEQ-001-O003` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:125` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:123`; reader gu-interpolation.pdf assembled page 90.
+- `OLSEQ-001-O004` / `OLP-0075:B0011`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:147` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:145`; reader gu-interpolation.pdf assembled page 90.
 
 ## OLSEQ-002: two prose occurrences of \lnot !A \lor !B → two prose occurrences of \lnot !A \lor \lnot !B
 
@@ -2973,8 +3029,8 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-002-O001` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:178` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:173`; reader gu-models-arithmetic.pdf assembled page 91.
-- `OLSEQ-002-O002` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:179` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:174`; reader gu-models-arithmetic.pdf assembled page 91.
+- `OLSEQ-002-O001` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:178` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:173`; reader gu-interpolation.pdf assembled page 91.
+- `OLSEQ-002-O002` / `OLP-0075:B0013`: `upstream/content/first-order-logic/sequent-calculus/proving-things.tex:179` → `gu/content/first-order-logic/sequent-calculus/proving-things.tex:174`; reader gu-interpolation.pdf assembled page 91.
 
 ## OLSEQ-003: natural deduction → sequent calculus
 
@@ -2988,7 +3044,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-003-O001` / `OLP-0077:B0004`: `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:11` → `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:10`; reader gu-models-arithmetic.pdf assembled page 94.
+- `OLSEQ-003-O001` / `OLP-0077:B0004`: `upstream/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:11` → `gu/content/first-order-logic/sequent-calculus/proof-theoretic-notions.tex:10`; reader gu-interpolation.pdf assembled page 94.
 
 ## OLSEQ-004: unqualified \Theta=!A,\Gamma while treating both rules → left: \Theta=!A,\Gamma and \Xi=\Delta; right: \Theta=\Gamma and \Xi=\Delta,!A
 
@@ -3002,8 +3058,8 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-004-O001` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:98` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:99`; reader gu-models-arithmetic.pdf assembled page 100.
-- `OLSEQ-004-O002` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:99` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:104`; reader gu-models-arithmetic.pdf assembled page 100.
+- `OLSEQ-004-O001` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:98` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:99`; reader gu-interpolation.pdf assembled page 100.
+- `OLSEQ-004-O002` / `OLP-0081:B0015`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:99` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:104`; reader gu-interpolation.pdf assembled page 100.
 
 ## OLSEQ-005: \Gamma \Sequent \Delta → !A \land !B,\Gamma \Sequent \Delta
 
@@ -3017,7 +3073,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-005-O001` / `OLP-0081:B0016`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:158` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:168`; reader gu-models-arithmetic.pdf assembled page 101.
+- `OLSEQ-005-O001` / `OLP-0081:B0016`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:158` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:168`; reader gu-interpolation.pdf assembled page 101.
 
 ## OLSEQ-006: \Pi \setminus \Lambda → \Pi \Sequent \Lambda
 
@@ -3031,7 +3087,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEQ-006-O001` / `OLP-0081:B0017`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:288` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:308`; reader gu-models-arithmetic.pdf assembled page 102.
+- `OLSEQ-006-O001` / `OLP-0081:B0017`: `upstream/content/first-order-logic/sequent-calculus/soundness.tex:288` → `gu/content/first-order-logic/sequent-calculus/soundness.tex:308`; reader gu-interpolation.pdf assembled page 102.
 
 ## OLND-001: other sequents → other sentences
 
@@ -3045,7 +3101,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-001-O001` / `OLP-0085:B0008`: `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:33` → `gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex:32`; reader gu-models-arithmetic.pdf assembled page 105.
+- `OLND-001-O001` / `OLP-0085:B0008`: `upstream/content/first-order-logic/natural-deduction/rules-and-proofs.tex:33` → `gu/content/first-order-logic/natural-deduction/rules-and-proofs.tex:32`; reader gu-interpolation.pdf assembled page 105.
 
 ## OLND-002: sentence in the end-sequent → sentence in the conclusion
 
@@ -3059,7 +3115,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-002-O001` / `OLP-0089:B0011`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:67` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:59`; reader gu-models-arithmetic.pdf assembled page 109.
+- `OLND-002-O001` / `OLP-0089:B0011`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:67` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:59`; reader gu-interpolation.pdf assembled page 109.
 
 ## OLND-003: \RightLabel{\Intro{\lfalse}} → \RightLabel{\Elim{\lnot}}
 
@@ -3073,7 +3129,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-003-O001` / `OLP-0089:B0013`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:133` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:125`; reader gu-models-arithmetic.pdf assembled page 110.
+- `OLND-003-O001` / `OLP-0089:B0013`: `upstream/content/first-order-logic/natural-deduction/proving-things.tex:133` → `gu/content/first-order-logic/natural-deduction/proving-things.tex:125`; reader gu-interpolation.pdf assembled page 110.
 
 ## OLND-004: \lexists[x][!A(x)] → \lexists[x][\lnot !A(x)]
 
@@ -3087,7 +3143,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-004-O001` / `OLP-0090:B0007`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:39` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:35`; reader gu-models-arithmetic.pdf assembled page 113.
+- `OLND-004-O001` / `OLP-0090:B0007`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:39` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:35`; reader gu-interpolation.pdf assembled page 113.
 
 ## OLND-005: \Elim{\exists} → \Elim{\lexists}
 
@@ -3101,7 +3157,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-005-O001` / `OLP-0090:B0008`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:91` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:88`; reader gu-models-arithmetic.pdf assembled page 114.
+- `OLND-005-O001` / `OLP-0090:B0008`: `upstream/content/first-order-logic/natural-deduction/proving-things-quant.tex:91` → `gu/content/first-order-logic/natural-deduction/proving-things-quant.tex:88`; reader gu-interpolation.pdf assembled page 114.
 
 ## OLND-006: \Elim{\forall} → \Elim{\lforall}
 
@@ -3115,7 +3171,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLND-006-O001` / `OLP-0095:B0020`: `upstream/content/first-order-logic/natural-deduction/soundness.tex:207` → `gu/content/first-order-logic/natural-deduction/soundness.tex:202`; reader gu-models-arithmetic.pdf assembled page 123.
+- `OLND-006-O001` / `OLP-0095:B0020`: `upstream/content/first-order-logic/natural-deduction/soundness.tex:207` → `gu/content/first-order-logic/natural-deduction/soundness.tex:202`; reader gu-interpolation.pdf assembled page 123.
 
 ## OLTAB-001: natural deduction → tableaux
 
@@ -3129,7 +3185,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-001-O001` / `OLP-0098:B0006`: `upstream/content/first-order-logic/tableaux/tableaux.tex:15` → `gu/content/first-order-logic/tableaux/tableaux.tex:15`; reader gu-models-arithmetic.pdf assembled page 125.
+- `OLTAB-001-O001` / `OLP-0098:B0006`: `upstream/content/first-order-logic/tableaux/tableaux.tex:15` → `gu/content/first-order-logic/tableaux/tableaux.tex:15`; reader gu-interpolation.pdf assembled page 125.
 
 ## OLTAB-002: \sFmla{\True}{!A \lor !B, \lnot !B} → \sFmla{\True}{!A \lor !B}, \sFmla{\True}{\lnot !B}
 
@@ -3143,7 +3199,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-002-O001` / `OLP-0103:B0016`: `upstream/content/first-order-logic/tableaux/proving-things.tex:439` → `gu/content/first-order-logic/tableaux/proving-things.tex:437`; reader gu-models-arithmetic.pdf assembled page 133.
+- `OLTAB-002-O001` / `OLP-0103:B0016`: `upstream/content/first-order-logic/tableaux/proving-things.tex:439` → `gu/content/first-order-logic/tableaux/proving-things.tex:437`; reader gu-interpolation.pdf assembled page 133.
 
 ## OLTAB-003: !D_1,\dots,!D_m\subseteq\Gamma → \{!D_1,\dots,!D_m\}\subseteq\Gamma
 
@@ -3157,7 +3213,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-003-O001` / `OLP-0105:B0016`: `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:105` → `gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex:106`; reader gu-models-arithmetic.pdf assembled page 138.
+- `OLTAB-003-O001` / `OLP-0105:B0016`: `upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex:105` → `gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex:106`; reader gu-interpolation.pdf assembled page 138.
 
 ## OLTAB-004: C_n → C_m
 
@@ -3171,7 +3227,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-004-O001` / `OLP-0106:B0008`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:26` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:26`; reader gu-models-arithmetic.pdf assembled page 139.
+- `OLTAB-004-O001` / `OLP-0106:B0008`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:26` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:26`; reader gu-interpolation.pdf assembled page 139.
 
 ## OLTAB-005: \sFmla{\False}{!A} → \sFmla{\True}{\lnot !A}
 
@@ -3185,7 +3241,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-005-O001` / `OLP-0106:B0014`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:92` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:96`; reader gu-models-arithmetic.pdf assembled page 139.
+- `OLTAB-005-O001` / `OLP-0106:B0014`: `upstream/content/first-order-logic/tableaux/provability-consistency.tex:92` → `gu/content/first-order-logic/tableaux/provability-consistency.tex:96`; reader gu-interpolation.pdf assembled page 139.
 
 ## OLTAB-006: \sFmla{\True{\formula{X}}} → \sFmla{\True}{\formula{X}}
 
@@ -3199,7 +3255,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-006-O001` / `OLP-0107:B0009`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:43` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:63`; reader gu-models-arithmetic.pdf assembled page 140.
+- `OLTAB-006-O001` / `OLP-0107:B0009`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:43` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:63`; reader gu-interpolation.pdf assembled page 140.
 
 ## OLTAB-007: \sFmla{\False{\formula{X}}} → \sFmla{\False}{\formula{X}}
 
@@ -3213,7 +3269,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-007-O001` / `OLP-0107:B0011`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:106` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:121`; reader gu-models-arithmetic.pdf assembled page 141.
+- `OLTAB-007-O001` / `OLP-0107:B0011`: `upstream/content/first-order-logic/tableaux/provability-propositional.tex:106` → `gu/content/first-order-logic/tableaux/provability-propositional.tex:121`; reader gu-interpolation.pdf assembled page 141.
 
 ## OLTAB-008: final in-math comma → none
 
@@ -3227,7 +3283,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-008-O001` / `OLP-0108:B0009`: `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:79` → `gu/content/first-order-logic/tableaux/provability-quantifiers.tex:79`; reader gu-models-arithmetic.pdf assembled page 143.
+- `OLTAB-008-O001` / `OLP-0108:B0009`: `upstream/content/first-order-logic/tableaux/provability-quantifiers.tex:79` → `gu/content/first-order-logic/tableaux/provability-quantifiers.tex:79`; reader gu-interpolation.pdf assembled page 143.
 
 ## OLTAB-009: B in five quantified-premise occurrences → A in the same occurrences
 
@@ -3241,7 +3297,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-009-O001` / `OLP-0109:B0015`: `upstream/content/first-order-logic/tableaux/soundness.tex:128` → `gu/content/first-order-logic/tableaux/soundness.tex:123`; reader gu-models-arithmetic.pdf assembled page 145.
+- `OLTAB-009-O001` / `OLP-0109:B0015`: `upstream/content/first-order-logic/tableaux/soundness.tex:128` → `gu/content/first-order-logic/tableaux/soundness.tex:123`; reader gu-interpolation.pdf assembled page 145.
 
 ## OLTAB-010: \eq[t_1][t_2] → \eq[s_1][s_2]
 
@@ -3255,7 +3311,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-010-O001` / `OLP-0110:B0010`: `upstream/content/first-order-logic/tableaux/identity.tex:89` → `gu/content/first-order-logic/tableaux/identity.tex:92`; reader gu-models-arithmetic.pdf assembled page 147.
+- `OLTAB-010-O001` / `OLP-0110:B0010`: `upstream/content/first-order-logic/tableaux/identity.tex:89` → `gu/content/first-order-logic/tableaux/identity.tex:92`; reader gu-interpolation.pdf assembled page 147.
 
 ## OLTAB-011: A(s2) as prerequisite → A(s1) as prerequisite
 
@@ -3269,7 +3325,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-011-O001` / `OLP-0110:B0009`: `upstream/content/first-order-logic/tableaux/identity.tex:69` → `gu/content/first-order-logic/tableaux/identity.tex:68`; reader gu-models-arithmetic.pdf assembled page 146.
+- `OLTAB-011-O001` / `OLP-0110:B0009`: `upstream/content/first-order-logic/tableaux/identity.tex:69` → `gu/content/first-order-logic/tableaux/identity.tex:68`; reader gu-interpolation.pdf assembled page 146.
 
 ## OLTAB-012: S → \True
 
@@ -3283,7 +3339,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLTAB-012-O001` / `OLP-0111:B0009`: `upstream/content/first-order-logic/tableaux/soundness-identity.tex:31` → `gu/content/first-order-logic/tableaux/soundness-identity.tex:30`; reader gu-models-arithmetic.pdf assembled page 147.
+- `OLTAB-012-O001` / `OLP-0111:B0009`: `upstream/content/first-order-logic/tableaux/soundness-identity.tex:31` → `gu/content/first-order-logic/tableaux/soundness-identity.tex:30`; reader gu-interpolation.pdf assembled page 147.
 
 ## OLAX-001: of after PAx → none
 
@@ -3297,7 +3353,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-001-O001` / `OLP-0114:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:16` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:16`; reader gu-models-arithmetic.pdf assembled page 148.
+- `OLAX-001-O001` / `OLP-0114:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:16` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-propositional.tex:16`; reader gu-interpolation.pdf assembled page 148.
 
 ## OLAX-002: two structurally orphaned item commands → enumerate wrapper
 
@@ -3311,7 +3367,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-002-O001` / `OLP-0115:B0007`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:24`; reader gu-models-arithmetic.pdf assembled page 150.
+- `OLAX-002-O001` / `OLP-0115:B0007`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:23` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:24`; reader gu-interpolation.pdf assembled page 150.
 
 ## OLAX-003: a absent only from Gamma and B → a absent from Gamma, B, and A(x)
 
@@ -3325,7 +3381,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-003-O001` / `OLP-0115:B0007`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:25` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:26`; reader gu-models-arithmetic.pdf assembled page 149.
+- `OLAX-003-O001` / `OLP-0115:B0007`: `upstream/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:25` → `gu/content/first-order-logic/axiomatic-deduction/axioms-rules-quantifiers.tex:26`; reader gu-interpolation.pdf assembled page 149.
 
 ## OLAX-004: same rule → same reason
 
@@ -3339,7 +3395,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-004-O001` / `OLP-0118:B0015`: `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82` → `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82`; reader gu-models-arithmetic.pdf assembled page 152.
+- `OLAX-004-O001` / `OLP-0118:B0015`: `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82` → `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82`; reader gu-interpolation.pdf assembled page 152.
 
 ## OLAX-005: unbalanced outer consequent → final closing parenthesis
 
@@ -3353,7 +3409,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-005-O001` / `OLP-0119:B0018`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:106` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:112`; reader gu-models-arithmetic.pdf assembled page 155.
+- `OLAX-005-O001` / `OLP-0119:B0018`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:106` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:112`; reader gu-interpolation.pdf assembled page 155.
 
 ## OLAX-006: unbalanced consequent → final closing parenthesis
 
@@ -3367,7 +3423,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-006-O001` / `OLP-0120:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:44` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:43`; reader gu-models-arithmetic.pdf assembled page 155.
+- `OLAX-006-O001` / `OLP-0120:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:44` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:43`; reader gu-interpolation.pdf assembled page 155.
 
 ## OLAX-007: \Gamma \Proves !B → \Gamma \Proves !A \lif !B
 
@@ -3381,7 +3437,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-007-O001` / `OLP-0120:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:48` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:47`; reader gu-models-arithmetic.pdf assembled page 156.
+- `OLAX-007-O001` / `OLP-0120:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:48` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex:47`; reader gu-interpolation.pdf assembled page 156.
 
 ## OLAX-008: second reference ax:land1 → second reference ax:land2
 
@@ -3395,7 +3451,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-008-O001` / `OLP-0122:B0008`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:33` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:34`; reader gu-models-arithmetic.pdf assembled page 157.
+- `OLAX-008-O001` / `OLP-0122:B0008`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:33` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:34`; reader gu-interpolation.pdf assembled page 157.
 
 ## OLAX-009: reference ax:lnot1 → reference ax:lnot2
 
@@ -3409,7 +3465,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-009-O001` / `OLP-0122:B0010`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:50` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:55`; reader gu-models-arithmetic.pdf assembled page 157.
+- `OLAX-009-O001` / `OLP-0122:B0010`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:50` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:55`; reader gu-interpolation.pdf assembled page 157.
 
 ## OLAX-010: modus ponsens → modus ponens
 
@@ -3423,7 +3479,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-010-O001` / `OLP-0122:B0010`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:58` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:34`; reader gu-models-arithmetic.pdf assembled page 157.
+- `OLAX-010-O001` / `OLP-0122:B0010`: `upstream/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:58` → `gu/content/first-order-logic/axiomatic-deduction/provability-propositional.tex:34`; reader gu-interpolation.pdf assembled page 157.
 
 ## OLAX-011: \top → \ltrue
 
@@ -3437,7 +3493,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-011-O001` / `OLP-0123:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:29` → `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:29`; reader gu-models-arithmetic.pdf assembled page 157.
+- `OLAX-011-O001` / `OLP-0123:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:29` → `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:29`; reader gu-interpolation.pdf assembled page 157.
 
 ## OLAX-012: deduction theorem again → ltrue axiom plus modus ponens
 
@@ -3451,7 +3507,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-012-O001` / `OLP-0123:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:30` → `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:31`; reader gu-models-arithmetic.pdf assembled page 158.
+- `OLAX-012-O001` / `OLP-0123:B0009`: `upstream/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:30` → `gu/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex:31`; reader gu-interpolation.pdf assembled page 158.
 
 ## OLAX-013: B(x) or B(c) without marker → B(x) or B(c) with marker
 
@@ -3465,7 +3521,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-013-O001` / `OLP-0124:B0012`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:80` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:114`; reader gu-models-arithmetic.pdf assembled page 159.
+- `OLAX-013-O001` / `OLP-0124:B0012`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:80` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:114`; reader gu-interpolation.pdf assembled page 159.
 
 ## OLAX-014: unstated remaining axiom cases → q2 substitution direction and propositional truth-table cases
 
@@ -3479,7 +3535,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-014-O001` / `OLP-0124:B0008`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:42` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:57`; reader gu-models-arithmetic.pdf assembled page 158.
+- `OLAX-014-O001` / `OLP-0124:B0008`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:42` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:57`; reader gu-interpolation.pdf assembled page 158.
 
 ## OLAX-015: arbitrary terms t, t1 and t2 → closed terms t, t1 and t2
 
@@ -3493,7 +3549,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-015-O001` / `OLP-0125:B0011`: `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:39` → `gu/content/first-order-logic/axiomatic-deduction/identity.tex:43`; reader gu-models-arithmetic.pdf assembled page 160.
+- `OLAX-015-O001` / `OLP-0125:B0011`: `upstream/content/first-order-logic/axiomatic-deduction/identity.tex:39` → `gu/content/first-order-logic/axiomatic-deduction/identity.tex:43`; reader gu-interpolation.pdf assembled page 160.
 
 ## OLAX-016: B_i without marker → B_i with marker
 
@@ -3507,7 +3563,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-016-O001` / `OLP-0118:B0015`: `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82` → `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82`; reader gu-models-arithmetic.pdf assembled page 153.
+- `OLAX-016-O001` / `OLP-0118:B0015`: `upstream/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82` → `gu/content/first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex:82`; reader gu-interpolation.pdf assembled page 153.
 
 ## OLAX-017: \in \Gamma \cup \{!A\} without a left operand → !B \in \Gamma \cup \{!A\}
 
@@ -3521,7 +3577,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-017-O001` / `OLP-0119:B0014`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:67` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64`; reader gu-models-arithmetic.pdf assembled page 154.
+- `OLAX-017-O001` / `OLP-0119:B0014`: `upstream/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:67` → `gu/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex:64`; reader gu-interpolation.pdf assembled page 154.
 
 ## OLAX-018: valid in both renderings → valid for FOL and tautological for PL
 
@@ -3535,7 +3591,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLAX-018-O001` / `OLP-0124:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:22` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:22`; reader gu-models-arithmetic.pdf assembled page 158.
+- `OLAX-018-O001` / `OLP-0124:B0006`: `upstream/content/first-order-logic/axiomatic-deduction/soundness.tex:22` → `gu/content/first-order-logic/axiomatic-deduction/soundness.tex:22`; reader gu-interpolation.pdf assembled page 158.
 
 ## OLCO-001: duplicated definite article → none
 
@@ -3549,7 +3605,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-001-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:61` → `gu/content/first-order-logic/completeness/introduction.tex:55`; reader gu-models-arithmetic.pdf assembled page 161.
+- `OLCO-001-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:61` → `gu/content/first-order-logic/completeness/introduction.tex:55`; reader gu-interpolation.pdf assembled page 161.
 
 ## OLCO-002: plural suffix after denumerable → explicit singular head noun
 
@@ -3563,7 +3619,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-002-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:70` → `gu/content/first-order-logic/completeness/introduction.tex:65`; reader gu-models-arithmetic.pdf assembled page 161.
+- `OLCO-002-O001` / `OLP-0127:B0009`: `upstream/content/first-order-logic/completeness/introduction.tex:70` → `gu/content/first-order-logic/completeness/introduction.tex:65`; reader gu-interpolation.pdf assembled page 161.
 
 ## OLCO-003: atomic sentence restriction → all sentences
 
@@ -3577,7 +3633,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-003-O001` / `OLP-0128:B0010`: `upstream/content/first-order-logic/completeness/outline.tex:68` → `gu/content/first-order-logic/completeness/outline.tex:63`; reader gu-models-arithmetic.pdf assembled page 162.
+- `OLCO-003-O001` / `OLP-0128:B0010`: `upstream/content/first-order-logic/completeness/outline.tex:68` → `gu/content/first-order-logic/completeness/outline.tex:63`; reader gu-interpolation.pdf assembled page 162.
 
 ## OLCO-004: singular sentence → plural sentences
 
@@ -3591,7 +3647,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-004-O001` / `OLP-0128:B0010`: `upstream/content/first-order-logic/completeness/outline.tex:76` → `gu/content/first-order-logic/completeness/outline.tex:72`; reader gu-models-arithmetic.pdf assembled page 162.
+- `OLCO-004-O001` / `OLP-0128:B0010`: `upstream/content/first-order-logic/completeness/outline.tex:76` → `gu/content/first-order-logic/completeness/outline.tex:72`; reader gu-interpolation.pdf assembled page 162.
 
 ## OLCO-005: \Gamma → \Gamma^*
 
@@ -3605,7 +3661,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-005-O001` / `OLP-0128:B0014`: `upstream/content/first-order-logic/completeness/outline.tex:126` → `gu/content/first-order-logic/completeness/outline.tex:124`; reader gu-models-arithmetic.pdf assembled page 162.
+- `OLCO-005-O001` / `OLP-0128:B0014`: `upstream/content/first-order-logic/completeness/outline.tex:126` → `gu/content/first-order-logic/completeness/outline.tex:124`; reader gu-interpolation.pdf assembled page 162.
 
 ## OLCO-006: !A_n → !A_n(x_n)
 
@@ -3619,7 +3675,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-006-O001` / `OLP-0130:B0017`: `upstream/content/first-order-logic/completeness/henkin-expansions.tex:141` → `gu/content/first-order-logic/completeness/henkin-expansions.tex:139`; reader gu-models-arithmetic.pdf assembled page 165.
+- `OLCO-006-O001` / `OLP-0130:B0017`: `upstream/content/first-order-logic/completeness/henkin-expansions.tex:141` → `gu/content/first-order-logic/completeness/henkin-expansions.tex:139`; reader gu-interpolation.pdf assembled page 165.
 
 ## OLCO-007: prvAll gate → prvEx gate
 
@@ -3633,7 +3689,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-007-O001` / `OLP-0130:B0018`: `upstream/content/first-order-logic/completeness/henkin-expansions.tex:153` → `gu/content/first-order-logic/completeness/henkin-expansions.tex:157`; reader gu-models-arithmetic.pdf assembled page 165.
+- `OLCO-007-O001` / `OLP-0130:B0018`: `upstream/content/first-order-logic/completeness/henkin-expansions.tex:153` → `gu/content/first-order-logic/completeness/henkin-expansions.tex:157`; reader gu-interpolation.pdf assembled page 165.
 
 ## OLCO-008: unconditional maximum selection → empty-case split before maximum selection
 
@@ -3647,7 +3703,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-008-O001` / `OLP-0131:B0011`: `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:78` → `gu/content/first-order-logic/completeness/lindenbaums-lemma.tex:75`; reader gu-models-arithmetic.pdf assembled page 167.
+- `OLCO-008-O001` / `OLP-0131:B0011`: `upstream/content/first-order-logic/completeness/lindenbaums-lemma.tex:78` → `gu/content/first-order-logic/completeness/lindenbaums-lemma.tex:75`; reader gu-interpolation.pdf assembled page 167.
 
 ## OLCO-009: terms → closed terms
 
@@ -3661,7 +3717,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-009-O001` / `OLP-0132:B0022`: `upstream/content/first-order-logic/completeness/construction-of-model.tex:243` → `gu/content/first-order-logic/completeness/construction-of-model.tex:22`; reader gu-models-arithmetic.pdf assembled page 169.
+- `OLCO-009-O001` / `OLP-0132:B0022`: `upstream/content/first-order-logic/completeness/construction-of-model.tex:243` → `gu/content/first-order-logic/completeness/construction-of-model.tex:22`; reader gu-interpolation.pdf assembled page 169.
 
 ## OLCO-010: \lforall[x][!A(x)] → \lforall[x][!B(x)]
 
@@ -3675,7 +3731,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-010-O001` / `OLP-0132:B0022`: `upstream/content/first-order-logic/completeness/construction-of-model.tex:247` → `gu/content/first-order-logic/completeness/construction-of-model.tex:257`; reader gu-models-arithmetic.pdf assembled page 169.
+- `OLCO-010-O001` / `OLP-0132:B0022`: `upstream/content/first-order-logic/completeness/construction-of-model.tex:247` → `gu/content/first-order-logic/completeness/construction-of-model.tex:257`; reader gu-interpolation.pdf assembled page 169.
 
 ## OLCO-011: extra comma → none
 
@@ -3689,7 +3745,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-011-O001` / `OLP-0133:B0008`: `upstream/content/first-order-logic/completeness/identity.tex:69` → `gu/content/first-order-logic/completeness/identity.tex:44`; reader gu-models-arithmetic.pdf assembled page 170.
+- `OLCO-011-O001` / `OLP-0133:B0008`: `upstream/content/first-order-logic/completeness/identity.tex:69` → `gu/content/first-order-logic/completeness/identity.tex:44`; reader gu-interpolation.pdf assembled page 170.
 
 ## OLCO-012: \Sat/{M}{\Atom{R}{t}} → \Sat/{M}{\Atom{R}{t'}}
 
@@ -3703,7 +3759,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-012-O001` / `OLP-0133:B0012`: `upstream/content/first-order-logic/completeness/identity.tex:126` → `gu/content/first-order-logic/completeness/identity.tex:129`; reader gu-models-arithmetic.pdf assembled page 171.
+- `OLCO-012-O001` / `OLP-0133:B0012`: `upstream/content/first-order-logic/completeness/identity.tex:126` → `gu/content/first-order-logic/completeness/identity.tex:129`; reader gu-interpolation.pdf assembled page 171.
 
 ## OLCO-013: quotient definition as sole justification → value lemma plus identity definition
 
@@ -3717,7 +3773,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-013-O001` / `OLP-0133:B0019`: `upstream/content/first-order-logic/completeness/identity.tex:187` → `gu/content/first-order-logic/completeness/identity.tex:196`; reader gu-models-arithmetic.pdf assembled page 171.
+- `OLCO-013-O001` / `OLP-0133:B0019`: `upstream/content/first-order-logic/completeness/identity.tex:187` → `gu/content/first-order-logic/completeness/identity.tex:196`; reader gu-interpolation.pdf assembled page 171.
 
 ## OLCO-014: Gamma and A both typed as sentences → Gamma a sentence set; A a sentence
 
@@ -3731,7 +3787,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-014-O001` / `OLP-0135:B0008`: `upstream/content/first-order-logic/completeness/compactness.tex:35` → `gu/content/first-order-logic/completeness/compactness.tex:33`; reader gu-models-arithmetic.pdf assembled page 173.
+- `OLCO-014-O001` / `OLP-0135:B0008`: `upstream/content/first-order-logic/completeness/compactness.tex:35` → `gu/content/first-order-logic/completeness/compactness.tex:33`; reader gu-interpolation.pdf assembled page 173.
 
 ## OLCO-015: models \Sat{M}{\Gamma\cup\Delta} → a structure \Struct{N} with \Sat{N}{\Gamma\cup\Delta}
 
@@ -3745,7 +3801,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-015-O001` / `OLP-0135:B0013`: `upstream/content/first-order-logic/completeness/compactness.tex:118` → `gu/content/first-order-logic/completeness/compactness.tex:119`; reader gu-models-arithmetic.pdf assembled page 173.
+- `OLCO-015-O001` / `OLP-0135:B0013`: `upstream/content/first-order-logic/completeness/compactness.tex:118` → `gu/content/first-order-logic/completeness/compactness.tex:119`; reader gu-interpolation.pdf assembled page 173.
 
 ## OLCO-016: malformed universal phrase → explicit universal scope over members of Delta-zero
 
@@ -3759,7 +3815,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-016-O001` / `OLP-0135:B0014`: `upstream/content/first-order-logic/completeness/compactness.tex:145` → `gu/content/first-order-logic/completeness/compactness.tex:152`; reader gu-models-arithmetic.pdf assembled page 174.
+- `OLCO-016-O001` / `OLP-0135:B0014`: `upstream/content/first-order-logic/completeness/compactness.tex:145` → `gu/content/first-order-logic/completeness/compactness.tex:152`; reader gu-interpolation.pdf assembled page 174.
 
 ## OLCO-017: unconditional maximum selection → empty-case split before maximum selection
 
@@ -3773,7 +3829,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-017-O001` / `OLP-0135:B0017`: `upstream/content/first-order-logic/completeness/compactness.tex:190` → `gu/content/first-order-logic/completeness/compactness.tex:199`; reader gu-models-arithmetic.pdf assembled page 174.
+- `OLCO-017-O001` / `OLP-0135:B0017`: `upstream/content/first-order-logic/completeness/compactness.tex:190` → `gu/content/first-order-logic/completeness/compactness.tex:199`; reader gu-interpolation.pdf assembled page 174.
 
 ## OLCO-018: claim that two citation substitutions suffice → finite-satisfiability replacements in three direct-consistency cases
 
@@ -3787,7 +3843,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-018-O001` / `OLP-0136:B0022`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:139` → `gu/content/first-order-logic/completeness/compactness-direct.tex:144`; reader gu-models-arithmetic.pdf assembled page 175.
+- `OLCO-018-O001` / `OLP-0136:B0022`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:139` → `gu/content/first-order-logic/completeness/compactness-direct.tex:144`; reader gu-interpolation.pdf assembled page 175.
 
 ## OLCO-019: identity case omitted → quotient term model and identity Truth Lemma adaptation
 
@@ -3801,7 +3857,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-019-O001` / `OLP-0136:B0006`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:22` → `gu/content/first-order-logic/completeness/compactness-direct.tex:152`; reader gu-models-arithmetic.pdf assembled page 175.
+- `OLCO-019-O001` / `OLP-0136:B0006`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:22` → `gu/content/first-order-logic/completeness/compactness-direct.tex:152`; reader gu-interpolation.pdf assembled page 175.
 
 ## OLCO-020: terms of \Lang L → terms of \Lang L'
 
@@ -3815,7 +3871,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-020-O001` / `OLP-0137:B0007`: `upstream/content/first-order-logic/completeness/downward-ls.tex:29` → `gu/content/first-order-logic/completeness/downward-ls.tex:27`; reader gu-models-arithmetic.pdf assembled page 176.
+- `OLCO-020-O001` / `OLP-0137:B0007`: `upstream/content/first-order-logic/completeness/downward-ls.tex:29` → `gu/content/first-order-logic/completeness/downward-ls.tex:27`; reader gu-interpolation.pdf assembled page 176.
 
 ## OLCO-021: missing false-branch argument → empty third argument {}
 
@@ -3829,7 +3885,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-021-O001` / `OLP-0132:B0008`: `upstream/content/first-order-logic/completeness/construction-of-model.tex:75` → `gu/content/first-order-logic/completeness/construction-of-model.tex:95`; reader gu-models-arithmetic.pdf assembled page 168.
+- `OLCO-021-O001` / `OLP-0132:B0008`: `upstream/content/first-order-logic/completeness/construction-of-model.tex:75` → `gu/content/first-order-logic/completeness/construction-of-model.tex:95`; reader gu-interpolation.pdf assembled page 168.
 
 ## OLCO-022: missing false-branch argument → empty third argument {}
 
@@ -3843,7 +3899,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLCO-022-O001` / `OLP-0136:B0022`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:140` → `gu/content/first-order-logic/completeness/compactness-direct.tex:143`; reader gu-models-arithmetic.pdf assembled page 175.
+- `OLCO-022-O001` / `OLP-0136:B0022`: `upstream/content/first-order-logic/completeness/compactness-direct.tex:140` → `gu/content/first-order-logic/completeness/compactness-direct.tex:143`; reader gu-interpolation.pdf assembled page 175.
 
 ## OLFINT-001: \lforall[x][(!A(x) \lif !B(x)), \lexists[x][!A(x)] \Entails \lexists[x][!B(x)]] → \lforall[x][(!A(x) \lif !B(x))], \lexists[x][!A(x)] \Entails \lexists[x][!B(x)]
 
@@ -3857,7 +3913,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFINT-001-O001` / `OLP-0140:B0007`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:51` → `gu/content/first-order-logic/introduction/first-order-logic.tex:50`; reader gu-models-arithmetic.pdf assembled page 177.
+- `OLFINT-001-O001` / `OLP-0140:B0007`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:51` → `gu/content/first-order-logic/introduction/first-order-logic.tex:50`; reader gu-interpolation.pdf assembled page 177.
 
 ## OLFINT-002: one missing and one extra quantifier-closing bracket → well-formed universal premise and existential conclusion
 
@@ -3871,7 +3927,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFINT-002-O001` / `OLP-0140:B0008`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:69` → `gu/content/first-order-logic/introduction/first-order-logic.tex:73`; reader gu-models-arithmetic.pdf assembled page 178.
+- `OLFINT-002-O001` / `OLP-0140:B0008`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:69` → `gu/content/first-order-logic/introduction/first-order-logic.tex:73`; reader gu-interpolation.pdf assembled page 178.
 
 ## OLFINT-003: malformed universal premise and existential conclusion → separately closed universal premise and existential conclusion
 
@@ -3885,7 +3941,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFINT-003-O001` / `OLP-0140:B0009`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:82` → `gu/content/first-order-logic/introduction/first-order-logic.tex:73`; reader gu-models-arithmetic.pdf assembled page 178.
+- `OLFINT-003-O001` / `OLP-0140:B0009`: `upstream/content/first-order-logic/introduction/first-order-logic.tex:82` → `gu/content/first-order-logic/introduction/first-order-logic.tex:73`; reader gu-interpolation.pdf assembled page 178.
 
 ## OLFINT-004: constants → predicates
 
@@ -3899,7 +3955,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFINT-004-O001` / `OLP-0143:B0006`: `upstream/content/first-order-logic/introduction/satisfaction.tex:24` → `gu/content/first-order-logic/introduction/satisfaction.tex:25`; reader gu-models-arithmetic.pdf assembled page 180.
+- `OLFINT-004-O001` / `OLP-0143:B0006`: `upstream/content/first-order-logic/introduction/satisfaction.tex:24` → `gu/content/first-order-logic/introduction/satisfaction.tex:25`; reader gu-interpolation.pdf assembled page 180.
 
 ## OLFINT-005: [1, 2, 3] → [0, 1, 2]
 
@@ -3913,7 +3969,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFINT-005-O001` / `OLP-0143:B0008`: `upstream/content/first-order-logic/introduction/satisfaction.tex:62` → `gu/content/first-order-logic/introduction/satisfaction.tex:67`; reader gu-models-arithmetic.pdf assembled page 180.
+- `OLFINT-005-O001` / `OLP-0143:B0008`: `upstream/content/first-order-logic/introduction/satisfaction.tex:62` → `gu/content/first-order-logic/introduction/satisfaction.tex:67`; reader gu-interpolation.pdf assembled page 180.
 
 ## OLFINT-006: \lforall[\Obj v_0][\Atom{\Obj P}]{\Obj v_0} → \lforall[\Obj v_0][\Atom{\Obj P}{\Obj v_0}]
 
@@ -3927,7 +3983,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLFINT-006-O001` / `OLP-0146:B0006`: `upstream/content/first-order-logic/introduction/substitution.tex:16` → `gu/content/first-order-logic/introduction/substitution.tex:16`; reader gu-models-arithmetic.pdf assembled page 182.
+- `OLFINT-006-O001` / `OLP-0146:B0006`: `upstream/content/first-order-logic/introduction/substitution.tex:16` → `gu/content/first-order-logic/introduction/substitution.tex:16`; reader gu-interpolation.pdf assembled page 182.
 
 ## OLSYN-001: \iftag{defTrue}{\ycomma !!{truth}~$\ltrue$}}{}. → \iftag{defTrue}{\ycomma !!{truth}~$\ltrue$}{}. followed by the outer }{}
 
@@ -3941,7 +3997,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSYN-001-O001` / `OLP-0151:B0015`: `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:104` → `gu/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:103`; reader gu-models-arithmetic.pdf assembled page 185.
+- `OLSYN-001-O001` / `OLP-0151:B0015`: `upstream/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:104` → `gu/content/first-order-logic/syntax-and-semantics/first-order-languages.tex:103`; reader gu-interpolation.pdf assembled page 185.
 
 ## OLSYN-002: \lnot !A \lor !B) → \lnot !A \lor !B
 
@@ -3955,7 +4011,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSYN-002-O001` / `OLP-0152:B0032`: `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:148` → `gu/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143`; reader gu-models-arithmetic.pdf assembled page 187.
+- `OLSYN-002-O001` / `OLP-0152:B0032`: `upstream/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:148` → `gu/content/first-order-logic/syntax-and-semantics/terms-formulas.tex:143`; reader gu-interpolation.pdf assembled page 187.
 
 ## OLSYN-003: ["$(!A \\land !B$)", "$(!A \\lor !B$)", "$(!A \\lif !B$)"] → ["$(!A \\land !B)$", "$(!A \\lor !B)$", "$(!A \\lif !B)$"]
 
@@ -3969,7 +4025,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSYN-003-O001` / `OLP-0154:B0018`: `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:90` → `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:95`; reader gu-models-arithmetic.pdf assembled page 191.
+- `OLSYN-003-O001` / `OLP-0154:B0018`: `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:90` → `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:95`; reader gu-interpolation.pdf assembled page 191.
 
 ## OLSYN-004: m_0,\dotsc,m_k and f(t_{m_0},\dotsc,t_{m_k}) → m_1,\dotsc,m_k and f(t_{m_1},\dotsc,t_{m_k})
 
@@ -3983,7 +4039,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSYN-004-O001` / `OLP-0156:B0009`: `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:46` → `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:44`; reader gu-models-arithmetic.pdf assembled page 192.
+- `OLSYN-004-O001` / `OLP-0156:B0009`: `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:46` → `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:44`; reader gu-interpolation.pdf assembled page 192.
 
 ## OLSYN-005: ["!A_n \\in \\Frm[L_0]", "!A_j,!A_k \\in \\Frm[L_0]"] → ["!A_n \\in \\Frm[L]", "!A_j,!A_k \\in \\Frm[L]"]
 
@@ -3997,7 +4053,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSYN-005-O001` / `OLP-0156:B0021`: `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199` → `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:201`; reader gu-models-arithmetic.pdf assembled page 194.
+- `OLSYN-005-O001` / `OLP-0156:B0021`: `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:199` → `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:201`; reader gu-interpolation.pdf assembled page 194.
 
 ## OLSYN-006: \equiv → \ident
 
@@ -4011,7 +4067,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSYN-006-O001` / `OLP-0156:B0021`: `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:200` → `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:193`; reader gu-models-arithmetic.pdf assembled page 195.
+- `OLSYN-006-O001` / `OLP-0156:B0021`: `upstream/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:200` → `gu/content/first-order-logic/syntax-and-semantics/formation-sequences.tex:193`; reader gu-interpolation.pdf assembled page 195.
 
 ## OLSYN-007: two-argument use of the three-argument iftag macro → explicit empty false branch
 
@@ -4025,7 +4081,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSYN-007-O001` / `OLP-0154:B0017`: `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:77` → `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:78`; reader gu-models-arithmetic.pdf assembled page 191.
+- `OLSYN-007-O001` / `OLP-0154:B0017`: `upstream/content/first-order-logic/syntax-and-semantics/main-operator.tex:77` → `gu/content/first-order-logic/syntax-and-semantics/main-operator.tex:78`; reader gu-interpolation.pdf assembled page 191.
 
 ## OLSEM-001: single-two place relation → single two-place relation
 
@@ -4039,7 +4095,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-001-O001` / `OLP-0161:B0011`: `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:77` → `gu/content/first-order-logic/syntax-and-semantics/structures.tex:77`; reader gu-models-arithmetic.pdf assembled page 199.
+- `OLSEM-001-O001` / `OLP-0161:B0011`: `upstream/content/first-order-logic/syntax-and-semantics/structures.tex:77` → `gu/content/first-order-logic/syntax-and-semantics/structures.tex:77`; reader gu-interpolation.pdf assembled page 199.
 
 ## OLSEM-002: existential branch without Sat(M,B(m)) → existential branch with Sat(M,B(m))
 
@@ -4053,7 +4109,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-002-O001` / `OLP-0163:B0027`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:172` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:173`; reader gu-models-arithmetic.pdf assembled page 202.
+- `OLSEM-002-O001` / `OLP-0163:B0027`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:172` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:173`; reader gu-interpolation.pdf assembled page 202.
 
 ## OLSEM-003: \Assign{R}{M}[s] → \Assign{R}{M}
 
@@ -4067,7 +4123,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-003-O001` / `OLP-0163:B0030`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:221`; reader gu-models-arithmetic.pdf assembled page 202.
+- `OLSEM-003-O001` / `OLP-0163:B0030`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:213` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:221`; reader gu-interpolation.pdf assembled page 202.
 
 ## OLSEM-004: \lnot((R(b,x) \lor R(x,b)) → \lnot(R(b,x) \lor R(x,b))
 
@@ -4081,7 +4137,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-004-O001` / `OLP-0163:B0035`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:288` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:302`; reader gu-models-arithmetic.pdf assembled page 204.
+- `OLSEM-004-O001` / `OLP-0163:B0035`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:288` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:302`; reader gu-interpolation.pdf assembled page 204.
 
 ## OLSEM-005: \lexists[x][(R(b,x) \land R(x,b))], → \lexists[x][(R(b,x) \land R(x,b))]
 
@@ -4095,7 +4151,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-005-O001` / `OLP-0163:B0035`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:292` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:311`; reader gu-models-arithmetic.pdf assembled page 204.
+- `OLSEM-005-O001` / `OLP-0163:B0035`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:292` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:311`; reader gu-interpolation.pdf assembled page 204.
 
 ## OLSEM-006: R(a,x) → R(x,a)
 
@@ -4109,7 +4165,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-006-O001` / `OLP-0163:B0036`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:309` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:284`; reader gu-models-arithmetic.pdf assembled page 204.
+- `OLSEM-006-O001` / `OLP-0163:B0036`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:309` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:284`; reader gu-interpolation.pdf assembled page 204.
 
 ## OLSEM-007: $ = 2$ → $m = 2$
 
@@ -4123,7 +4179,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-007-O001` / `OLP-0163:B0037`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:331` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:358`; reader gu-models-arithmetic.pdf assembled page 203.
+- `OLSEM-007-O001` / `OLP-0163:B0037`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:331` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:358`; reader gu-interpolation.pdf assembled page 203.
 
 ## OLSEM-008: for all n in Domain M → for all m in Domain M
 
@@ -4137,7 +4193,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-008-O001` / `OLP-0163:B0039`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:379`; reader gu-models-arithmetic.pdf assembled page 204.
+- `OLSEM-008-O001` / `OLP-0163:B0039`: `upstream/content/first-order-logic/syntax-and-semantics/satisfaction.tex:347` → `gu/content/first-order-logic/syntax-and-semantics/satisfaction.tex:379`; reader gu-interpolation.pdf assembled page 204.
 
 ## OLSEM-009: tuple beginning t_i → tuple beginning t_1
 
@@ -4151,7 +4207,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-009-O001` / `OLP-0164:B0014`: `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:91` → `gu/content/first-order-logic/syntax-and-semantics/assignments.tex:90`; reader gu-models-arithmetic.pdf assembled page 206.
+- `OLSEM-009-O001` / `OLP-0164:B0014`: `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:91` → `gu/content/first-order-logic/syntax-and-semantics/assignments.tex:90`; reader gu-interpolation.pdf assembled page 206.
 
 ## OLSEM-010: ["Subst(s,m,x)", "Subst(s,m,x)"] → ["Subst(s_1,m,x)", "Subst(s_2,m,x)"]
 
@@ -4165,7 +4221,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-010-O001` / `OLP-0164:B0022`: `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:181` → `gu/content/first-order-logic/syntax-and-semantics/assignments.tex:189`; reader gu-models-arithmetic.pdf assembled page 207.
+- `OLSEM-010-O001` / `OLP-0164:B0022`: `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:181` → `gu/content/first-order-logic/syntax-and-semantics/assignments.tex:189`; reader gu-interpolation.pdf assembled page 207.
 
 ## OLSEM-011: set of sentences Gamma Gamma → Gamma is a set of sentences
 
@@ -4179,7 +4235,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLSEM-011-O001` / `OLP-0164:B0029`: `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:241` → `gu/content/first-order-logic/syntax-and-semantics/assignments.tex:255`; reader gu-models-arithmetic.pdf assembled page 207.
+- `OLSEM-011-O001` / `OLP-0164:B0029`: `upstream/content/first-order-logic/syntax-and-semantics/assignments.tex:241` → `gu/content/first-order-logic/syntax-and-semantics/assignments.tex:255`; reader gu-interpolation.pdf assembled page 207.
 
 ## OLMAT-001: \lforall[z](z \in x \liff z \in y) → \lforall[z][(z \in x \liff z \in y)]
 
@@ -4193,7 +4249,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAT-001-O001` / `OLP-0170:B0011`: `upstream/content/first-order-logic/models-theories/theories.tex:75` → `gu/content/first-order-logic/models-theories/theories.tex:72`; reader gu-models-arithmetic.pdf assembled page 214.
+- `OLMAT-001-O001` / `OLP-0170:B0011`: `upstream/content/first-order-logic/models-theories/theories.tex:75` → `gu/content/first-order-logic/models-theories/theories.tex:72`; reader gu-interpolation.pdf assembled page 214.
 
 ## OLMAT-002: v_2 → \Obj v_2
 
@@ -4207,7 +4263,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAT-002-O001` / `OLP-0171:B0009`: `upstream/content/first-order-logic/models-theories/expressing-relations.tex:64` → `gu/content/first-order-logic/models-theories/expressing-relations.tex:65`; reader gu-models-arithmetic.pdf assembled page 215.
+- `OLMAT-002-O001` / `OLP-0171:B0009`: `upstream/content/first-order-logic/models-theories/expressing-relations.tex:64` → `gu/content/first-order-logic/models-theories/expressing-relations.tex:65`; reader gu-interpolation.pdf assembled page 215.
 
 ## OLMAT-003: two universal scopes closed before their implication consequents → both implication consequents enclosed by their respective universal quantifiers
 
@@ -4221,7 +4277,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAT-003-O001` / `OLP-0172:B0011`: `upstream/content/first-order-logic/models-theories/set-theory.tex:121` → `gu/content/first-order-logic/models-theories/set-theory.tex:118`; reader gu-models-arithmetic.pdf assembled page 218.
+- `OLMAT-003-O001` / `OLP-0172:B0011`: `upstream/content/first-order-logic/models-theories/set-theory.tex:121` → `gu/content/first-order-logic/models-theories/set-theory.tex:118`; reader gu-interpolation.pdf assembled page 218.
 
 ## OLMAT-004: premature ]] before the existential condition and no ]] after the consequent → the existential condition and equality consequent inside both universal scopes
 
@@ -4235,7 +4291,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAT-004-O001` / `OLP-0172:B0012`: `upstream/content/first-order-logic/models-theories/set-theory.tex:135` → `gu/content/first-order-logic/models-theories/set-theory.tex:139`; reader gu-models-arithmetic.pdf assembled page 218.
+- `OLMAT-004-O001` / `OLP-0172:B0012`: `upstream/content/first-order-logic/models-theories/set-theory.tex:135` → `gu/content/first-order-logic/models-theories/set-theory.tex:139`; reader gu-interpolation.pdf assembled page 218.
 
 ## OLMAT-005: !A(x))]]] → !A(x)))]]]
 
@@ -4249,7 +4305,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAT-005-O001` / `OLP-0172:B0013`: `upstream/content/first-order-logic/models-theories/set-theory.tex:170` → `gu/content/first-order-logic/models-theories/set-theory.tex:177`; reader gu-models-arithmetic.pdf assembled page 218.
+- `OLMAT-005-O001` / `OLP-0172:B0013`: `upstream/content/first-order-logic/models-theories/set-theory.tex:170` → `gu/content/first-order-logic/models-theories/set-theory.tex:177`; reader gu-interpolation.pdf assembled page 218.
 
 ## OLBYD-001: \lforall x][( → \lforall[x][(
 
@@ -4263,7 +4319,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLBYD-001-O001` / `OLP-0176:B0008`: `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:38` → `gu/content/first-order-logic/beyond/many-sorted-logic.tex:36`; reader gu-models-arithmetic.pdf assembled page 221.
+- `OLBYD-001-O001` / `OLP-0176:B0008`: `upstream/content/first-order-logic/beyond/many-sorted-logic.tex:38` → `gu/content/first-order-logic/beyond/many-sorted-logic.tex:36`; reader gu-interpolation.pdf assembled page 221.
 
 ## OLBYD-002: s(x) = s(y) → x' = y'
 
@@ -4277,7 +4333,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLBYD-002-O001` / `OLP-0177:B0011`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:142` → `gu/content/first-order-logic/beyond/second-order-logic.tex:137`; reader gu-models-arithmetic.pdf assembled page 223.
+- `OLBYD-002-O001` / `OLP-0177:B0011`: `upstream/content/first-order-logic/beyond/second-order-logic.tex:142` → `gu/content/first-order-logic/beyond/second-order-logic.tex:137`; reader gu-interpolation.pdf assembled page 223.
 
 ## OLBYD-006: !!{formula}ted → formulated
 
@@ -4291,7 +4347,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLBYD-006-O001` / `OLP-0178:B0007`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:21` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:21`; reader gu-models-arithmetic.pdf assembled page 224.
+- `OLBYD-006-O001` / `OLP-0178:B0007`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:21` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:21`; reader gu-interpolation.pdf assembled page 224.
 
 ## OLBYD-003: $\sigma$ → $\tau$
 
@@ -4305,7 +4361,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLBYD-003-O001` / `OLP-0178:B0008`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:87` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:95`; reader gu-models-arithmetic.pdf assembled page 226.
+- `OLBYD-003-O001` / `OLP-0178:B0008`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:87` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:95`; reader gu-interpolation.pdf assembled page 226.
 
 ## OLBYD-004: !!^{formula}s → !!{formula}s
 
@@ -4319,7 +4375,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLBYD-004-O001` / `OLP-0178:B0008`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:89` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:103`; reader gu-models-arithmetic.pdf assembled page 226.
+- `OLBYD-004-O001` / `OLP-0178:B0008`: `upstream/content/first-order-logic/beyond/higher-order-logic.tex:89` → `gu/content/first-order-logic/beyond/higher-order-logic.tex:103`; reader gu-interpolation.pdf assembled page 226.
 
 ## OLBYD-005: ["!!{structure}ing", "!!{structure}"] → ["structuring", "structure"]
 
@@ -4333,7 +4389,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLBYD-005-O001` / `OLP-0180:B0009`: `upstream/content/first-order-logic/beyond/modal-logics.tex:54` → `gu/content/first-order-logic/beyond/modal-logics.tex:50`; reader gu-models-arithmetic.pdf assembled page 229.
+- `OLBYD-005-O001` / `OLP-0180:B0009`: `upstream/content/first-order-logic/beyond/modal-logics.tex:54` → `gu/content/first-order-logic/beyond/modal-logics.tex:50`; reader gu-interpolation.pdf assembled page 229.
 
 ## OLMTB-001: confirmed intrusive preposition in editorial sentence → Translated the contextually clear ‘is planning’ reading and added an adjacent keyed note.
 
@@ -4347,7 +4403,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-001-O001` / `OLP-0182:B0005`: `upstream/content/model-theory/model-theory.tex:15` → `gu/content/model-theory/model-theory.tex:15`; reader gu-models-arithmetic.pdf assembled page 231.
+- `OLMTB-001-O001` / `OLP-0182:B0005`: `upstream/content/model-theory/model-theory.tex:15` → `gu/content/model-theory/model-theory.tex:15`; reader gu-interpolation.pdf assembled page 231.
 
 ## OLMTB-002: confirmed missing nonempty domain condition → Required N to be nonempty and added an adjacent keyed note.
 
@@ -4361,7 +4417,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-002-O001` / `OLP-0185:B0007`: `upstream/content/model-theory/basics/substructures.tex:41` → `gu/content/model-theory/basics/substructures.tex:42`; reader gu-models-arithmetic.pdf assembled page 232.
+- `OLMTB-002-O001` / `OLP-0185:B0007`: `upstream/content/model-theory/basics/substructures.tex:41` → `gu/content/model-theory/basics/substructures.tex:42`; reader gu-interpolation.pdf assembled page 232.
 
 ## OLMTB-003: \\Assign{f}{M} → \\Assign{f}{M'}
 
@@ -4375,7 +4431,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-003-O001` / `OLP-0187:B0009`: `upstream/content/model-theory/basics/isomorphism.tex:89` → `gu/content/model-theory/basics/isomorphism.tex:87`; reader gu-models-arithmetic.pdf assembled page 234.
+- `OLMTB-003-O001` / `OLP-0187:B0009`: `upstream/content/model-theory/basics/isomorphism.tex:89` → `gu/content/model-theory/basics/isomorphism.tex:87`; reader gu-interpolation.pdf assembled page 234.
 
 ## OLMTB-004: ) \\notag\\ → )) \\notag\\
 
@@ -4389,7 +4445,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-004-O001` / `OLP-0187:B0009`: `upstream/content/model-theory/basics/isomorphism.tex:96` → `gu/content/model-theory/basics/isomorphism.tex:94`; reader gu-models-arithmetic.pdf assembled page 234.
+- `OLMTB-004-O001` / `OLP-0187:B0009`: `upstream/content/model-theory/basics/isomorphism.tex:96` → `gu/content/model-theory/basics/isomorphism.tex:94`; reader gu-interpolation.pdf assembled page 234.
 
 ## OLMTB-005: finitely many predicates and constants, and no functions → finitely many predicates, and no functions or constants
 
@@ -4403,7 +4459,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-005-O001` / `OLP-0189:B0016`: `upstream/content/model-theory/basics/partial-iso.tex:123` → `gu/content/model-theory/basics/partial-iso.tex:121`; reader gu-models-arithmetic.pdf assembled page 236.
+- `OLMTB-005-O001` / `OLP-0189:B0016`: `upstream/content/model-theory/basics/partial-iso.tex:123` → `gu/content/model-theory/basics/partial-iso.tex:121`; reader gu-interpolation.pdf assembled page 236.
 
 ## OLMTB-006: confirmed collision between rank and tuple length variables → Named the common sequence length k and indexed its variables through x_k, with an adjacent keyed note.
 
@@ -4417,7 +4473,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-006-O001` / `OLP-0189:B0019`: `upstream/content/model-theory/basics/partial-iso.tex:150` → `gu/content/model-theory/basics/partial-iso.tex:154`; reader gu-models-arithmetic.pdf assembled page 236.
+- `OLMTB-006-O001` / `OLP-0189:B0019`: `upstream/content/model-theory/basics/partial-iso.tex:150` → `gu/content/model-theory/basics/partial-iso.tex:154`; reader gu-interpolation.pdf assembled page 236.
 
 ## OLMTB-007: the set of all such formulas is finite → a finite conjunction of equivalence-class representatives
 
@@ -4431,7 +4487,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-007-O001` / `OLP-0189:B0025`: `upstream/content/model-theory/basics/partial-iso.tex:199` → `gu/content/model-theory/basics/partial-iso.tex:210`; reader gu-models-arithmetic.pdf assembled page 237.
+- `OLMTB-007-O001` / `OLP-0189:B0025`: `upstream/content/model-theory/basics/partial-iso.tex:199` → `gu/content/model-theory/basics/partial-iso.tex:210`; reader gu-interpolation.pdf assembled page 237.
 
 ## OLMTB-008: confirmed incomplete case split in back and forth proof → Added the empty-map and already-mapped cases before the remaining order-position cases, with an adjacent keyed note.
 
@@ -4445,7 +4501,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMTB-008-O001` / `OLP-0190:B0008`: `upstream/content/model-theory/basics/dlo.tex:45` → `gu/content/model-theory/basics/dlo.tex:45`; reader gu-models-arithmetic.pdf assembled page 238.
+- `OLMTB-008-O001` / `OLP-0190:B0008`: `upstream/content/model-theory/basics/dlo.tex:45` → `gu/content/model-theory/basics/dlo.tex:45`; reader gu-interpolation.pdf assembled page 238.
 
 ## OLMAR-001: confirmed ill typed operation arguments → Used the actual string-domain elements a^n and a^m as the arguments of addition and multiplication, with an adjacent keyed note.
 
@@ -4459,7 +4515,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-001-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:32` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:32`; reader gu-models-arithmetic.pdf assembled page 238.
+- `OLMAR-001-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:32` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:32`; reader gu-interpolation.pdf assembled page 238.
 
 ## OLMAR-002: confirmed omitted relation interpretation → Added the transported order relation a^n<a^m iff n<m and disclosed the addition in an adjacent keyed note.
 
@@ -4473,7 +4529,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-002-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:33` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:34`; reader gu-models-arithmetic.pdf assembled page 238.
+- `OLMAR-002-O001` / `OLP-0192:B0005`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:33` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:34`; reader gu-interpolation.pdf assembled page 238.
 
 ## OLMAR-003: confirmed missing bound argument → Restored x as the first proof-predicate argument and added an adjacent keyed note.
 
@@ -4487,7 +4543,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-003-O001` / `OLP-0192:B0007`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:67` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:69`; reader gu-models-arithmetic.pdf assembled page 239.
+- `OLMAR-003-O001` / `OLP-0192:B0007`: `upstream/content/model-theory/models-of-arithmetic/introduction.tex:67` → `gu/content/model-theory/models-of-arithmetic/introduction.tex:69`; reader gu-interpolation.pdf assembled page 239.
 
 ## OLMAR-004: domain → range
 
@@ -4501,7 +4557,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-004-O001` / `OLP-0193:B0018`: `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:167` → `gu/content/model-theory/models-of-arithmetic/standard-models.tex:176`; reader gu-models-arithmetic.pdf assembled page 241.
+- `OLMAR-004-O001` / `OLP-0193:B0018`: `upstream/content/model-theory/models-of-arithmetic/standard-models.tex:167` → `gu/content/model-theory/models-of-arithmetic/standard-models.tex:176`; reader gu-interpolation.pdf assembled page 241.
 
 ## OLMAR-005: confirmed empty finite fragment gap → Chose an index larger than every one occurring and explicitly used m=0 when the index set is empty, with an adjacent keyed note.
 
@@ -4515,7 +4571,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-005-O001` / `OLP-0194:B0014`: `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:104` → `gu/content/model-theory/models-of-arithmetic/non-standard-models.tex:106`; reader gu-models-arithmetic.pdf assembled page 242.
+- `OLMAR-005-O001` / `OLP-0194:B0014`: `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:104` → `gu/content/model-theory/models-of-arithmetic/non-standard-models.tex:106`; reader gu-interpolation.pdf assembled page 242.
 
 ## OLMAR-006: confirmed unproved enumerability claim → Applied the earlier downward Löwenheim–Skolem theorem to choose an enumerable model and added an adjacent keyed note.
 
@@ -4529,7 +4585,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-006-O001` / `OLP-0194:B0014`: `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:111` → `gu/content/model-theory/models-of-arithmetic/non-standard-models.tex:113`; reader gu-models-arithmetic.pdf assembled page 242.
+- `OLMAR-006-O001` / `OLP-0194:B0014`: `upstream/content/model-theory/models-of-arithmetic/non-standard-models.tex:111` → `gu/content/model-theory/models-of-arithmetic/non-standard-models.tex:113`; reader gu-interpolation.pdf assembled page 242.
 
 ## OLMAR-007: confirmed missing closing parenthesis → Closed the sum gloss before introducing multiplication and added an adjacent keyed note.
 
@@ -4543,7 +4599,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-007-O001` / `OLP-0195:B0006`: `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:55` → `gu/content/model-theory/models-of-arithmetic/models-of-q.tex:57`; reader gu-models-arithmetic.pdf assembled page 243.
+- `OLMAR-007-O001` / `OLP-0195:B0006`: `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:55` → `gu/content/model-theory/models-of-arithmetic/models-of-q.tex:57`; reader gu-interpolation.pdf assembled page 243.
 
 ## OLMAR-008: y=b → y=a
 
@@ -4557,7 +4613,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-008-O001` / `OLP-0195:B0008`: `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:105` → `gu/content/model-theory/models-of-arithmetic/models-of-q.tex:111`; reader gu-models-arithmetic.pdf assembled page 243.
+- `OLMAR-008-O001` / `OLP-0195:B0008`: `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:105` → `gu/content/model-theory/models-of-arithmetic/models-of-q.tex:111`; reader gu-interpolation.pdf assembled page 243.
 
 ## OLMAR-009: y → a
 
@@ -4571,7 +4627,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-009-O001` / `OLP-0195:B0011`: `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:166` → `gu/content/model-theory/models-of-arithmetic/models-of-q.tex:177`; reader gu-models-arithmetic.pdf assembled page 244.
+- `OLMAR-009-O001` / `OLP-0195:B0011`: `upstream/content/model-theory/models-of-arithmetic/models-of-q.tex:166` → `gu/content/model-theory/models-of-arithmetic/models-of-q.tex:177`; reader gu-interpolation.pdf assembled page 244.
 
 ## OLMAR-010: one ) and one ] → Balanced the formula delimiters and added an adjacent keyed note.
 
@@ -4585,7 +4641,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-010-O001` / `OLP-0196:B0009`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:56` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:58`; reader gu-models-arithmetic.pdf assembled page 245.
+- `OLMAR-010-O001` / `OLP-0196:B0009`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:56` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:58`; reader gu-interpolation.pdf assembled page 245.
 
 ## OLMAR-011: confirmed false universal predecessor claim → Excluded zero and restricted the later block proof to non-standard elements, with an adjacent keyed note.
 
@@ -4599,7 +4655,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-011-O001` / `OLP-0196:B0010`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:64` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:71`; reader gu-models-arithmetic.pdf assembled page 245.
+- `OLMAR-011-O001` / `OLP-0196:B0010`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:64` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:71`; reader gu-interpolation.pdf assembled page 245.
 
 ## OLMAR-012: oplus → nsplus
 
@@ -4613,7 +4669,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-012-O001` / `OLP-0196:B0033`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:225` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:239`; reader gu-models-arithmetic.pdf assembled page 247.
+- `OLMAR-012-O001` / `OLP-0196:B0033`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:225` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:239`; reader gu-interpolation.pdf assembled page 247.
 
 ## OLMAR-013: confirmed missing countability hypothesis → Added the needed enumerability hypothesis while preserving the following comparison of two enumerable models, with an adjacent keyed note.
 
@@ -4627,7 +4683,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-013-O001` / `OLP-0196:B0035`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:239` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:257`; reader gu-models-arithmetic.pdf assembled page 247.
+- `OLMAR-013-O001` / `OLP-0196:B0035`: `upstream/content/model-theory/models-of-arithmetic/models-of-pa.tex:239` → `gu/content/model-theory/models-of-arithmetic/models-of-pa.tex:257`; reader gu-interpolation.pdf assembled page 247.
 
 ## OLMAR-014: n → x
 
@@ -4641,7 +4697,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-014-O001` / `OLP-0197:B0008`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:66` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:64`; reader gu-models-arithmetic.pdf assembled page 248.
+- `OLMAR-014-O001` / `OLP-0197:B0008`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:66` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:64`; reader gu-interpolation.pdf assembled page 248.
 
 ## OLMAR-015: g(n)=n+1 → g(n)=n−1
 
@@ -4655,7 +4711,7 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-015-O001` / `OLP-0197:B0008`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:70` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:72`; reader gu-models-arithmetic.pdf assembled page 248.
+- `OLMAR-015-O001` / `OLP-0197:B0008`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:70` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:72`; reader gu-interpolation.pdf assembled page 248.
 
 ## OLMAR-016: literal equality/uniqueness → standardness up to isomorphism
 
@@ -4669,7 +4725,147 @@ Occurrences:
 
 Occurrences:
 
-- `OLMAR-016-O001` / `OLP-0197:B0013`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:120` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:126`; reader gu-models-arithmetic.pdf assembled page 249.
+- `OLMAR-016-O001` / `OLP-0197:B0013`: `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:120` → `gu/content/model-theory/models-of-arithmetic/computable-models.tex:126`; reader gu-interpolation.pdf assembled page 249.
+
+## OLINT-001: \delta → !H
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The first separation lemma concludes not-delta even though delta is nowhere defined and the contraposition step concerns H.
+- **Rationale:** Restored not-H in the conclusion and added an adjacent keyed note. The immediately preceding entailment has consequent not-H, and the following contraposition derives H entails not-forall-C.
+- **Authority:** OLINT-001-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-001 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-001-O001` / `OLP-0200:B0010`: `upstream/content/model-theory/interpolation/separation.tex:75` → `gu/content/model-theory/interpolation/separation.tex:74`; reader gu-interpolation.pdf assembled page 250.
+
+## OLINT-002: \lexists[x]{!S} → \lexists[x][!S]
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** One existential occurrence puts its scope in braces rather than the macro's second optional argument, so the formula is not typeset as the quantifier scope.
+- **Rationale:** Used the required second optional argument and added an adjacent keyed note. The macro declaration takes two optional arguments and every parallel occurrence in the lemma uses the bracketed scope form.
+- **Authority:** OLINT-002-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-002 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-002-O001` / `OLP-0200:B0012`: `upstream/content/model-theory/interpolation/separation.tex:95` → `gu/content/model-theory/interpolation/separation.tex:98`; reader gu-interpolation.pdf assembled page 250.
+
+## OLINT-003: ["L_1", "L_2"] → ["L'_1", "L'_2"]
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The construction enumerates only the original-language sentences but later claims completeness in the languages expanded by the new constants.
+- **Rationale:** Enumerated the sentences of L-prime-1 and L-prime-2 and added an adjacent keyed note. Completeness in each expanded language requires deciding every sentence containing the newly added constants; the construction and Henkin models otherwise use those expanded languages throughout.
+- **Authority:** OLINT-003-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-003 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-003-O001` / `OLP-0201:B0010`: `upstream/content/model-theory/interpolation/interpolation-proof.tex:41` → `gu/content/model-theory/interpolation/interpolation-proof.tex:39`; reader gu-interpolation.pdf assembled page 251.
+
+## OLINT-004: confirmed witness formula omitted from inductive case equalities → Separated admission of each existential sentence from the subsequent witness addition and explicitly applied the preservation lemma to the completed set, with an adjacent keyed note.
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The induction step states equalities omitting the witness formula that the construction also adds when the admitted sentence is existential.
+- **Rationale:** Separated admission of each existential sentence from the subsequent witness addition and explicitly applied the preservation lemma to the completed set, with an adjacent keyed note. The construction at the start of the proof explicitly adds both the existential sentence and a fresh-constant instance; Lemma sep2 is exactly the cited result preserving inseparability after that second addition.
+- **Authority:** OLINT-004-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-004 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-004-O001` / `OLP-0201:B0010`: `upstream/content/model-theory/interpolation/interpolation-proof.tex:88` → `gu/content/model-theory/interpolation/interpolation-proof.tex:94`; reader gu-interpolation.pdf assembled page 252.
+
+## OLINT-005: confirmed category error in compactness sentence → Named both the separating L-prime-0 sentence and the stage containing its finite supports, with an adjacent keyed note.
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The compactness sentence says that a natural-number stage separates two sets, although separation is performed by a sentence.
+- **Rationale:** Named both the separating L-prime-0 sentence and the stage containing its finite supports, with an adjacent keyed note. The chapter definition makes a sentence C the separator; compactness supplies finite subsets that are contained in some common stage n.
+- **Authority:** OLINT-005-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-005 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-005-O001` / `OLP-0201:B0011`: `upstream/content/model-theory/interpolation/interpolation-proof.tex:101` → `gu/content/model-theory/interpolation/interpolation-proof.tex:119`; reader gu-interpolation.pdf assembled page 252.
+
+## OLINT-006: M'_2 → M'_1
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** For a predicate exclusive to L1, the combined-model definition transports an interpretation from M-prime-2, which need not interpret that predicate and is not in h's domain.
+- **Rationale:** Transported the interpretation from M-prime-1 and added an adjacent keyed note. The following iff clause already uses the P-interpretation in M-prime-1, while h maps the common-language reduct M1 to M2.
+- **Authority:** OLINT-006-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-006 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-006-O001` / `OLP-0201:B0016`: `upstream/content/model-theory/interpolation/interpolation-proof.tex:173` → `gu/content/model-theory/interpolation/interpolation-proof.tex:195`; reader gu-interpolation.pdf assembled page 253.
+
+## OLINT-007: confirmed undefined expanded language satisfaction claim → Stated the required agreement only between original-language reducts and derived preservation of A and not-B, with an adjacent keyed note.
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The final paragraph claims that M agrees on formulas in expanded languages and satisfies Gamma-star union Delta-star even though M was defined only for the original union language and does not interpret the added constants.
+- **Rationale:** Stated the required agreement only between original-language reducts and derived preservation of A and not-B, with an adjacent keyed note. A belongs to the original L1 and not-B to the original L2, so reduct agreement is sufficient for the countermodel; no interpretation of the new constants in M is required.
+- **Authority:** OLINT-007-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-007 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-007-O001` / `OLP-0201:B0017`: `upstream/content/model-theory/interpolation/interpolation-proof.tex:186` → `gu/content/model-theory/interpolation/interpolation-proof.tex:219`; reader gu-interpolation.pdf assembled page 253.
+
+## OLINT-008: confirmed syntactic category inconsistency → Used sentences, matching both definitions and the proof, and added an adjacent keyed note.
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** Beth's theorem calls Sigma(P) a set of formulas although both preceding definitions require sentences and the proof forms conjunctions of sentences from finite subsets.
+- **Rationale:** Used sentences, matching both definitions and the proof, and added an adjacent keyed note. The explicit and implicit definability definitions both quantify over sets of sentences, and the compactness proof explicitly selects and conjoins sentences.
+- **Authority:** OLINT-008-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-008 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-008-O001` / `OLP-0202:B0010`: `upstream/content/model-theory/interpolation/definability.tex:67` → `gu/content/model-theory/interpolation/definability.tex:35`; reader gu-interpolation.pdf assembled page 253.
+
+## OLINT-009: confirmed missing word in biconditional → Restored the complete biconditional and added an adjacent keyed note.
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** The theorem's 'if and only if' phrase omits its final if.
+- **Rationale:** Restored the complete biconditional and added an adjacent keyed note. The theorem states equivalence and the proof treats both directions.
+- **Authority:** OLINT-009-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-009 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-009-O001` / `OLP-0202:B0010`: `upstream/content/model-theory/interpolation/definability.tex:67` → `gu/content/model-theory/interpolation/definability.tex:68`; reader gu-interpolation.pdf assembled page 254.
+
+## OLINT-010: P'c_1…c_n → Atom(P'; c_1,…,c_n)
+
+- **Kind / mode:** source_correction / contemporaneous
+- **Confidence / priority:** high / normal; provisional: false
+- **Intended sense:** One occurrence writes the P-prime atom as an unstructured character string rather than using the atomic-formula notation used everywhere around it.
+- **Rationale:** Used the edition's Atom macro with the n arguments and added an adjacent keyed note. The entailment immediately before and the rearranged entailment immediately after display the same P-prime atom using the Atom macro.
+- **Authority:** OLINT-010-SOURCE-CONTROL (checked_supports)
+- **Alternatives:** Literal preservation of the defective source [rejected] — It would reproduce the identified defect in Gujarati.; Silent correction [rejected] — It would make the inherited source defect untraceable.; Corrected body with an adjacent keyed disclosure [viable_alternative] — Adopted because it restores the intended claim and preserves auditability.
+- **Please double-check:** Please double-check whether OLINT-010 is fully repaired by the listed Gujarati handling without changing an unaffected claim or formula.
+
+Occurrences:
+
+- `OLINT-010-O001` / `OLP-0202:B0011`: `upstream/content/model-theory/interpolation/definability.tex:96` → `gu/content/model-theory/interpolation/definability.tex:107`; reader gu-interpolation.pdf assembled page 254.
 
 ## GU-SCRIPT-001: English Latin-script prose → ગુજરાતી લિપિ (Unicode NFC)
 
@@ -4681,7 +4877,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-SCRIPT-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-SCRIPT-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-REGISTER-001: Open Logic educational and scholarly exposition → સમકાલીન શૈક્ષણિક અને શાસ્ત્રીય ગુજરાતી
 
@@ -4693,7 +4889,7 @@ Occurrences:
 
 Occurrences:
 
-- `GU-REGISTER-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-REGISTER-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-interpolation.pdf assembled page 12.
 
 ## GU-NOTATION-001: Latin and Greek variables, logical signs, and Arabic digits in formulas → આંતરરાષ્ટ્રીય ગણિતીય સંજ્ઞા; ગુજરાતી ગદ્યમાં ગુજરાતી અંકો સ્વીકાર્ય
 
@@ -4705,4 +4901,4 @@ Occurrences:
 
 Occurrences:
 
-- `GU-NOTATION-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-models-arithmetic.pdf assembled page 12.
+- `GU-NOTATION-001-O001` / `OLP-0005:B0004`: `upstream/content/sets-functions-relations/sets/basics.tex:12` → `gu/content/sets-functions-relations/sets/basics.tex:12`; reader gu-interpolation.pdf assembled page 12.

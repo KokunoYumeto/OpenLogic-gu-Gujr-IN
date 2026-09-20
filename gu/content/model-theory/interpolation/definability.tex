@@ -1,0 +1,146 @@
+% Part: model-theory
+% Chapter: interpolation
+% Section: definability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{int}{def}
+
+\section{વ્યાખ્યેયતા પ્રમેય}
+
+અંતર્વેશન પ્રમેયનો એક મહત્વનો ઉપયોગ બેથનું વ્યાખ્યેયતા પ્રમેય છે.
+$n$-સ્થાની સંબંધ~$R$ને વ્યાખ્યાયિત કરવા માટે આપણે $R$ ન આવતો હોય
+અને $n$ મુક્ત !!{variable}s ધરાવતો કોઈ !!a{formula}~$!C$ આપી શકીએ
+છીએ. આ $!C$ દ્વારા $R$ની \emph{સ્પષ્ટ} વ્યાખ્યા થાય. પછી આપણે એમ
+પણ કહી શકીએ કે $n$-સ્થાની !!{predicate}~$P$ ધરાવતી કોઈ !!{language}માં
+સિદ્ધાંત~$\Sigma(P)$, $P$ને સ્પષ્ટ રીતે વ્યાખ્યાયિત કરે છે જો તેમાં
+ઔપચારિક કરેલી સ્પષ્ટ વ્યાખ્યા હોય (અથવા ઓછામાં ઓછું તેમાંથી ફલિત થતી
+હોય), એટલે કે,
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+પરંતુ સંબંધને વ્યાખ્યાયિત કરવાનો---તેને સંપૂર્ણપણે નિશ્ચિત કરવાના
+અર્થમાં---સ્પષ્ટ વ્યાખ્યા માત્ર એક માર્ગ છે. સિદ્ધાંત એવો પણ હોઈ શકે
+કે કોઈ પણ નિદર્શમાં !!{language}ના બાકીના ભાગના અર્થઘટનથી $P$નું
+અર્થઘટન નિશ્ચિત થાય. વ્યાખ્યેયતા પ્રમેય કહે છે કે જ્યારે પણ સિદ્ધાંત
+$P$નું અર્થઘટન આ રીતે નિશ્ચિત કરે---જ્યારે તે $P$ને \emph{ગૂઢ રીતે
+વ્યાખ્યાયિત કરે}---ત્યારે તે તેને સ્પષ્ટ રીતે પણ વ્યાખ્યાયિત કરે છે.
+
+\begin{defn}
+ધારો કે $\Lang{L}$ એવી !!a{language} છે જેમાં !!{predicate}~$P$ નથી.
+$\Lang{L}\cup\{P\}$નાં !!{sentence}sનો ગણ~$\Sigma(P)$, $P$ને ત્યારે
+અને માત્ર ત્યારે \emph{સ્પષ્ટ રીતે વ્યાખ્યાયિત કરે છે} જ્યારે
+$\Lang{L}$નું એવું !!a{formula}~$!C(x_1,\dots,x_n)$ છે કે
+\[
+\Sigma(P) \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1, \dots,
+    x_n))]].
+\]
+\end{defn}
+
+\begin{defn}
+ધારો કે $\Lang{L}$ એવી !!a{language} છે જેમાં !!{predicate}s $P$
+અને~$P'$ નથી. $\Lang{L}\cup\{P\}$નાં !!{sentence}sનો ગણ~$\Sigma(P)$,
+$P$ને ત્યારે અને માત્ર ત્યારે \emph{ગૂઢ રીતે વ્યાખ્યાયિત કરે છે}
+જ્યારે
+\[
+\Sigma(P) \cup \Sigma(P') \Entails \lforall[x_1][\dots
+  \lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff \Atom{P'}{x_1,\dots,
+      x_n})]],
+\]
+જ્યાં $\Sigma(P')$ એ $\Sigma(P)$માં $P$ને સર્વત્ર $P'$થી બદલીને
+મળતું પરિણામ છે.
+\end{defn}
+
+બીજા શબ્દોમાં, કોઈ પણ નિદર્શ~$\Struct{M}$ અને $R,R'\subseteq
+\Domain{M}^n$ માટે, જો $\Expan{M}{R}\Entails\Sigma(P)$ અને
+$\Expan{M}{R'}\Entails\Sigma(P')$ બંને, તો $R=R'$; અહીં
+$\Expan{M}{R}$ એ $\Lang{L}$ના $\Lang{L}\cup\{P\}$ સુધીના વિસ્તાર
+માટેની એવી !!{structure}~$\Struct{M'}$ છે કે $\Assign{P}{M'}=R$, અને
+$\Expan{M}{R'}$ માટે પણ એ જ રીતે.
+
+\begin{thm}[બેથનું વ્યાખ્યેયતા પ્રમેય]
+$\Lang{L}\cup\{P\}$નાં !!{sentence}sનો ગણ~$\Sigma(P)$, $P$ને ગૂઢ
+રીતે વ્યાખ્યાયિત કરે છે જો અને માત્ર જો $\Sigma(P)$, $P$ને સ્પષ્ટ
+રીતે વ્યાખ્યાયિત કરે છે.
+\end{thm}
+\sourcecorrection{OLINT-008}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{definability.tex}, પંક્તિઓ~66--68માં પ્રમેય $\Sigma(P)$ને
+  સૂત્રોનો ગણ કહે છે, જ્યારે તરત અગાઉની બંને વ્યાખ્યાઓ તેને
+  વાક્યોનો ગણ કહે છે અને નીચેની સાબિતી પણ સાન્ત ઉપગણનાં
+  વાક્યોના સંયોજન પર ચાલે છે. અહીં વ્યાખ્યાઓ અને સાબિતી મુજબ
+  વાક્યો પુનઃસ્થાપિત કર્યાં છે.}
+\sourcecorrection{OLINT-009}{એ જ મૂળની પંક્તિ~67માં દ્વિમુખી શરતના
+  ``if and only if''માંથી છેલ્લું ``if'' છૂટી ગયું છે. અહીં સંપૂર્ણ
+  દ્વિમુખી શરત પુનઃસ્થાપિત કરી છે.}
+
+\begin{proof}
+જો $\Sigma(P)$, $P$ને સ્પષ્ટ રીતે વ્યાખ્યાયિત કરે, તો આ બંને સાચાં
+છે:
+\begin{align*}
+  \Sigma(P) & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]\\
+  \Sigma(P') & \Entails & \lforall[x_1][\dots \lforall[x_n]
+    [(\Atom{P'}{x_1,\dots, x_n} \liff !C(x_1,\dots,x_n))]]
+\end{align*}
+અને નિષ્કર્ષ ફલિત થાય છે. વ્યસ્ત દિશા માટે ધારો કે $\Sigma(P)$,
+$P$ને ગૂઢ રીતે વ્યાખ્યાયિત કરે છે. પહેલા $\Lang{L}$માં !!{constant}s
+$c_1$,~\dots,~$c_n$ ઉમેરીએ. ત્યારે
+\[
+\Sigma(P) \cup \Sigma(P') \Entails
+\Atom{P}{c_1, \dots, c_n} \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+સઘનતાથી એવા સાન્ત ગણો $\Delta_0\subseteq\Sigma(P)$ અને
+$\Delta_1\subseteq\Sigma(P')$ છે કે
+\[
+\Delta_0 \cup \Delta_1 \Entails
+\Atom{P}{c_1, \dots, c_n} \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+એવા બધા !!{sentence}s~$!A(P)$નું સંયોજન~$!D(P)$ કહો કે કાં તો
+$!A(P)\in\Delta_0$ અથવા $!A(P')\in\Delta_1$, અને એવા બધા
+!!{sentence}s~$!A(P')$નું સંયોજન~$!D(P')$ કહો કે કાં તો
+$!A(P)\in\Delta_0$ અથવા $!A(P')\in\Delta_1$. ત્યારે
+$!D(P)\land !D(P')\Entails\Atom{P}{c_1,\dots,c_n}\to
+\Atom{P'}{c_1,\dots,c_n}$. આને એવી રીતે ફરી ગોઠવી શકાય કે દરેક
+!!{predicate}, $\Entails$ની એક બાજુ જ આવે:
+\sourcecorrection{OLINT-010}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{definability.tex}, પંક્તિ~96માં જમણી બાજુનું પરમાણુક સૂત્ર
+  આસપાસનાં બધાં દાખલાથી જુદું $P'c_1\dots c_n$ લખાયું છે. અહીં એ જ
+  $n$-સ્થાની પરમાણુક સૂત્ર માટેનું આવૃત્તિ-સુસંગત
+  \texttt{\string\Atom\{P'\}\{c\_1,\string\dots,c\_n\}} સ્વરૂપ વાપર્યું
+  છે.}
+\[
+!D(P) \land \Atom{P}{c_1, \dots, c_n} \Entails
+!D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\]
+ક્રેગના અંતર્વેશન પ્રમેય મુજબ $P$ કે~$P'$ ન ધરાવતું એવું
+!!a{sentence}~$!C(c_1,\dots,c_n)$ છે કે
+\begin{align*}
+  !D(P) \land \Atom{P}{c_1, \dots, c_n} & \Entails !C(c_1,\dots, c_n); \\
+  !C(c_1,\dots, c_n) & \Entails !D(P') \to \Atom{P'}{c_1, \dots, c_n}.
+\end{align*}
+આ બે ફલિતતાઓમાંથી પહેલામાંથી મળે છે: $!D(P)\Entails
+\Atom{P}{c_1,\dots,c_n}\lif !C(c_1,\dots,c_n)$. અને બીજામાંથી,
+કારણ કે કોઈ $\Lang{L}\cup\{P\}$-નિદર્શ $\Expan{M}{R}\Entails
+!A(P)$ જો અને માત્ર જો તેને અનુરૂપ $\Lang{L}\cup\{P'\}$-નિદર્શ
+$\Expan{M}{R}\models !A(P')$, આપણને
+$!C(c_1,\dots,c_n)\Entails !D(P)\lif\Atom{P}{c_1,\dots,c_n}$ મળે છે,
+અને તેમાંથી
+\[
+!D(P) \Entails !C(c_1,\dots,c_n) \to \Atom{P}{c_1,\dots, c_n}.
+\]
+બંનેને સાથે મૂકતાં $!D(P)\Entails\Atom{P}{c_1,\dots,c_n}\liff
+!C(c_1,\dots,c_n)$ મળે છે, અને એકદિશવર્ધિતા તથા સર્વત્રીકરણથી આ પણ
+મળે છે:
+\[
+\Sigma(P) \Entails
+\lforall[x_1][\dots\lforall[x_n][(\Atom{P}{x_1,\dots, x_n} \liff
+    !C(x_1,\dots, x_n))]].
+\]
+\end{proof}
+
+\end{document}

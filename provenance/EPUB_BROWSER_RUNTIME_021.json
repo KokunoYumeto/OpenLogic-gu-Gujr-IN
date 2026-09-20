@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-gu-epub-browser-runtime/1",
+  "checkpoint": "021",
+  "checked_utc": "2026-09-20T21:24:53.679072+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8768/build/runtime-probe019.html?target=build%2Fepub021-stage%2FOEBPS%2Fcontent.xhtml&qa=021-epub-current",
+  "visual_url": "http://127.0.0.1:8768/build/epub021-visual.html?qa=021-epub-visual",
+  "artifact": "build/epub021-stage/OEBPS/content.xhtml",
+  "artifact_sha256": "4152c8206c4adce477024820f7b4080e702e00518646c17049b2ba28e9c319c9",
+  "epub": "releases/OpenLogic-gu-Gujr-IN-Interpolation.epub",
+  "epub_sha256": "4d43cbc0402e8b95d80308aae60b5249f6953b672fa831555228c5b7aa3f9370",
+  "loading_method": "The exact packaged XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative assets.",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "અંતર્વેશન પ્રમેય સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 551,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 14,
+    "loadedImages": 14,
+    "contentIds": 759,
+    "uniqueIds": 759,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1,
+      "lexists": 1,
+      "Atom": 1,
+      "dots": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title and cumulative table of contents in the exact packaged XHTML",
+      "Interpolation chapter introduction and sentence-separation definition",
+      "separation diagram, fresh-constant lemma, native MathML, and OLINT-001 disclosure",
+      "explicit and implicit definability definitions",
+      "Beth definability theorem, proof formulas, and OLINT-008/009 disclosures"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "separation_svg_geometry_and_labels": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": []
+  },
+  "status": "passed"
+}

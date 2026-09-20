@@ -1,0 +1,1135 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewed_at_utc": "2026-09-20T21:06:26.189985+00:00",
+  "batch": "OLP-0198–0202 Interpolation under the cumulative Model Theory profile",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with independently worded reverse paraphrases for every substantive block. The review covers separation, the maximal inseparable-pair proof of Craig interpolation, explicit and implicit definability, Beth's theorem and all ten adjacent disclosed source repairs. Four rejected correction candidates were separately recorded and preserved.",
+  "all_drafted_blocks_directly_compared_during_translation": 32,
+  "reverse_paraphrase_samples": 27,
+  "blocks": [
+    {
+      "segment_id": "OLP-0198-B004",
+      "unit_id": "OLP-0198",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation.tex",
+      "source_range_utf8": [
+        128,
+        175
+      ],
+      "target_range_utf8": [
+        128,
+        196
+      ],
+      "source_sha256": "f3b8c766e88fc63384e0c810171bbcf31e6888c7d1d8b2a172cfd9743e932379",
+      "target_sha256": "d760ff3f510a722c66aa59602f786c8fdc605f791f354b355b1a9d907d04a389",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P082",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The chapter driver preserves the four-section sequence: introduction, separation, Craig's interpolation proof and Beth definability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0199-B005",
+      "unit_id": "OLP-0199",
+      "source_path": "upstream/content/model-theory/interpolation/introduction.tex",
+      "target_path": "gu/content/model-theory/interpolation/introduction.tex",
+      "source_range_utf8": [
+        178,
+        202
+      ],
+      "target_range_utf8": [
+        178,
+        203
+      ],
+      "source_sha256": "dd637b2b47197e563e84aa912ca0ad44c30d2e803be00ed0bdfc5fd8ddb3d86c",
+      "target_sha256": "8be6e5a511ea6549e4da39a8bce982b6435a0a1d00f645c4d0617e75649346af",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the entailment conditions for an interpolant, its restriction to vocabulary shared by A and B, and the Beth definability and Robinson joint-consistency applications.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0199-B006",
+      "unit_id": "OLP-0199",
+      "source_path": "upstream/content/model-theory/interpolation/introduction.tex",
+      "target_path": "gu/content/model-theory/interpolation/introduction.tex",
+      "source_range_utf8": [
+        204,
+        569
+      ],
+      "target_range_utf8": [
+        205,
+        746
+      ],
+      "source_sha256": "9e6927527b4203ec0ade902ecf02c19c8c07ba9d0689fe9bf80d4acaaee5c082",
+      "target_sha256": "a1401387120af5bf637f3abab9f2d01d7c1cf2d1452f7399a555f15e906383b2",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the entailment conditions for an interpolant, its restriction to vocabulary shared by A and B, and the Beth definability and Robinson joint-consistency applications.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0199-B007",
+      "unit_id": "OLP-0199",
+      "source_path": "upstream/content/model-theory/interpolation/introduction.tex",
+      "target_path": "gu/content/model-theory/interpolation/introduction.tex",
+      "source_range_utf8": [
+        571,
+        947
+      ],
+      "target_range_utf8": [
+        748,
+        1591
+      ],
+      "source_sha256": "dcaf18683b36e3165e6db2d06f4e67aeb960ead98c67c0d01521420f96587391",
+      "target_sha256": "aeedf515c6d4de21a670f07ef77ad2a9d6e2494d92dc3734090184b5b84f2553",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The introduction preserves the entailment conditions for an interpolant, its restriction to vocabulary shared by A and B, and the Beth definability and Robinson joint-consistency applications.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B005",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        176,
+        226
+      ],
+      "target_range_utf8": [
+        176,
+        244
+      ],
+      "source_sha256": "bca2faf192770edcfb94df6a3e21bdbe19bfe620f93ea697779aa78e4f449eab",
+      "target_sha256": "2aacdb7ba84d900760950efb5d9ba90e6f99b1e61fdafbf9b228131fb145b81e",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B006",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        228,
+        822
+      ],
+      "target_range_utf8": [
+        246,
+        1420
+      ],
+      "source_sha256": "458ea414cf96b9aebef9f57c58d8b1da5a5bffedbaf6cf38b3c4370368d247f4",
+      "target_sha256": "5189023a73d795aad6fe5a81cfd200969ea64dfcb900da84b8dab227f574698d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B007",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        824,
+        1071
+      ],
+      "target_range_utf8": [
+        1422,
+        1857
+      ],
+      "source_sha256": "9ff5cd4d0e15e2ee757297bc6850bf492d6e3c8676c3e6fb4ca37d97a6f2cfee",
+      "target_sha256": "0b2f5a151c7bb205e086661a1e32c5ae850eec87d595b2623591cf596aa82b00",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B008",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        1073,
+        1783
+      ],
+      "target_range_utf8": [
+        1859,
+        2685
+      ],
+      "source_sha256": "0c615ca6f5528fa12bfa5bc873cb84d161a455377610b5b298eaca6ef35eb0cb",
+      "target_sha256": "e2441169494e044e2142180362eee9ec16788c80a57d17dcaa6bff77b6573d73",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B009",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        1786,
+        2216
+      ],
+      "target_range_utf8": [
+        2688,
+        3327
+      ],
+      "source_sha256": "cb02e23f19fade7690493dda885d95178529689713b3c2a9b67c1e9751296b56",
+      "target_sha256": "ceef16600da3abc19c5d93f6d4457a9c303c4be1ab842f6c89e25a9e7d8a1b70",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B010",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        2218,
+        3477
+      ],
+      "target_range_utf8": [
+        3329,
+        5659
+      ],
+      "source_sha256": "6a5a782fc4439f32f013d797a885f8233acbf20a24af600b92ede81e520a4163",
+      "target_sha256": "ce6176f6fd9678eaa07ef82ce79aa4581fc3fe15b9d18ad0181bad6dc5b2fb99",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B011",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        3479,
+        3757
+      ],
+      "target_range_utf8": [
+        5661,
+        6071
+      ],
+      "source_sha256": "b1d794d9f1628f50aeb9df6c69b8a77954dceec3c1dd3f75c8fad7d29f87d0ab",
+      "target_sha256": "36b5f88f7349a42b7b8842864c5462c432b3885139ae22c2135d008567826d25",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B012",
+      "unit_id": "OLP-0200",
+      "source_path": "upstream/content/model-theory/interpolation/separation.tex",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "source_range_utf8": [
+        3759,
+        4985
+      ],
+      "target_range_utf8": [
+        6073,
+        8433
+      ],
+      "source_sha256": "4db80b4a05b1961ecf6fdfd1d3fe47317720400dfe1debd181448c99488b3fcb",
+      "target_sha256": "f96cbe3397326177c604c6bd29a2d3e0bd74a9a011793769f6f89c6f24bf6906",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P081",
+        "GU-P082",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B005",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        185,
+        226
+      ],
+      "target_range_utf8": [
+        185,
+        266
+      ],
+      "source_sha256": "638162c6590a4646acf478c474fdaf856d2008b13e2bfc791c9ef28a67f15959",
+      "target_sha256": "786b2ca0e4b8e6ef3723f8a3650741d81f7fdb1a2cdd36009c6060103171a6a6",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B006",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        228,
+        607
+      ],
+      "target_range_utf8": [
+        268,
+        817
+      ],
+      "source_sha256": "bcbde4c491fdb8a0f3fe1559882576d8d926c1c3d7d7b5197de88730880dc577",
+      "target_sha256": "31af38b4fffd4388fcbde9feb7c215e4c0ad529c80274102a1c83a359913161f",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B007",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        609,
+        923
+      ],
+      "target_range_utf8": [
+        819,
+        1207
+      ],
+      "source_sha256": "8ce4994d1c1c02841aa4653053f60d1f79278cf2a3bb788f9093b2945a188b83",
+      "target_sha256": "d77bbe4fc2b77b72e33a85a017695fd5bcab17ee751151347a4ee5a4612a8e64",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B008",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        925,
+        1166
+      ],
+      "target_range_utf8": [
+        1209,
+        1660
+      ],
+      "source_sha256": "85c4da5ae28a99f2154509bfde090ca562b85894d11ed43d8a68a1a316e1b0b4",
+      "target_sha256": "356ad27e69931016b173e8fa2028e2532b196126afdfcd6a67bf5fbe207a3c51",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B009",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        1168,
+        1378
+      ],
+      "target_range_utf8": [
+        1662,
+        2069
+      ],
+      "source_sha256": "727bd65c7354019f401a31141fbce63769fd47e2d05ea2839a6ad8d29920675c",
+      "target_sha256": "06104d70ed29dd05fac3db855f6d31f1131f080ece5f5a3f8a5706d430a57fff",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B010",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        1380,
+        4646
+      ],
+      "target_range_utf8": [
+        2071,
+        8378
+      ],
+      "source_sha256": "97017a1fdea1a0537c1a54d5b71ce72a0d172788ef7245dd6d9d2f2e29f85a4b",
+      "target_sha256": "3a4030cec4d45040d4044851d74223e3a624a63c1d08c40f869138e1d90683a4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B011",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        4648,
+        5019
+      ],
+      "target_range_utf8": [
+        9226,
+        9921
+      ],
+      "source_sha256": "c0ddbca97cc844ea051d08566b67066630af4f2885029da66f482f620d417e2e",
+      "target_sha256": "6709ea3e4bd3904a8682827a4755833f0e9ad096111a4c1b154857bd02711f44",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B012",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        5021,
+        5887
+      ],
+      "target_range_utf8": [
+        10621,
+        11899
+      ],
+      "source_sha256": "19a5585325c9bfdce2c6f4a34776f138c5bca2c93b3d0ec23709b4ff12bf7bb6",
+      "target_sha256": "3409924012fb1072368d8f7fb6d086f52791b08472674a9e93d7d2a9ab9f7041",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B013",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        5889,
+        6718
+      ],
+      "target_range_utf8": [
+        11901,
+        13042
+      ],
+      "source_sha256": "40307a286b00013ebde2bef43092bbf62f8808443f4c31a8841abce45b1ead27",
+      "target_sha256": "f4e63653c9ccf30f61e279b23fe9c4bd9c846df60fe54342868d0ec80467d8a4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B014",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        6720,
+        7163
+      ],
+      "target_range_utf8": [
+        13044,
+        13760
+      ],
+      "source_sha256": "c7daf780e7b53f3d9a97095eccb65d46f682219a245c54ec114d556b5f64c8d0",
+      "target_sha256": "f075a0ef9959a2575b89b61d57f47a32d0748b26258684cb68926b2b302f4d5b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B015",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        7165,
+        7957
+      ],
+      "target_range_utf8": [
+        13762,
+        15041
+      ],
+      "source_sha256": "05986f0825fbd7b1f4df388346dad0b667e2f42d5155b2bf62eeaa24f9baf5f4",
+      "target_sha256": "aaa70daf293a2165399c3a2fba87f494dc62999e199a915258555bacf7415482",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B016",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        7959,
+        8821
+      ],
+      "target_range_utf8": [
+        15043,
+        16191
+      ],
+      "source_sha256": "981e396cf2f5c90985d4305aa637fa0f617dfb3a0c9af8d68f89780a90315eb4",
+      "target_sha256": "d592f12df285f5b903b7f8511c3d1d4a35bc5378b3656de6a0750d896f2523d0",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B017",
+      "unit_id": "OLP-0201",
+      "source_path": "upstream/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "source_range_utf8": [
+        8823,
+        9246
+      ],
+      "target_range_utf8": [
+        16902,
+        19036
+      ],
+      "source_sha256": "db539c07b3e39270f2d42d45dcd4ba730f0183b6c6275f48a18f6693689bff6f",
+      "target_sha256": "8da98fe2c6d5840e33f601baddae10ce396bed7f49d8b9ab0b03a94de3b26c70",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P082",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B005",
+      "unit_id": "OLP-0202",
+      "source_path": "upstream/content/model-theory/interpolation/definability.tex",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "source_range_utf8": [
+        178,
+        214
+      ],
+      "target_range_utf8": [
+        178,
+        240
+      ],
+      "source_sha256": "17e32a18c15e76f5fff5440fe2db1c9322f19c8bcbcec999c92ebb90cb675489",
+      "target_sha256": "8b670971ea0b5ec5bafcbc9a6e1bb0c7d253a1205645cb05ef6be2873fc555e8",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B006",
+      "unit_id": "OLP-0202",
+      "source_path": "upstream/content/model-theory/interpolation/definability.tex",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "source_range_utf8": [
+        216,
+        1251
+      ],
+      "target_range_utf8": [
+        242,
+        2460
+      ],
+      "source_sha256": "aaf16a5db37558f5182c4815637576abbe1605799ad370ee089c73398d728544",
+      "target_sha256": "576d93f873a28c8cb3d0c9f6b1a5ca1a086f1f6e31f2c051d2824afcde408177",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B007",
+      "unit_id": "OLP-0202",
+      "source_path": "upstream/content/model-theory/interpolation/definability.tex",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "source_range_utf8": [
+        1253,
+        1645
+      ],
+      "target_range_utf8": [
+        2462,
+        3045
+      ],
+      "source_sha256": "a7ee927901d187b02cdb60343e0a4d3eb17c79083e27e626e3c42a10e3a85d47",
+      "target_sha256": "99bf2b1ec188c9639f1e09cda5667bcfed8a4bfea8cd9f8286ecbccd464c80e5",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B008",
+      "unit_id": "OLP-0202",
+      "source_path": "upstream/content/model-theory/interpolation/definability.tex",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "source_range_utf8": [
+        1647,
+        2091
+      ],
+      "target_range_utf8": [
+        3047,
+        3740
+      ],
+      "source_sha256": "2af31f87499f94e70464db82b66f766d913c5ad2ff7f955028815d9bf75f5668",
+      "target_sha256": "7a7ab3e9524890d6f286078ccc19a6671b6a3fe0e2ab6cccbdfbc82675366dc8",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B009",
+      "unit_id": "OLP-0202",
+      "source_path": "upstream/content/model-theory/interpolation/definability.tex",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "source_range_utf8": [
+        2093,
+        2447
+      ],
+      "target_range_utf8": [
+        3742,
+        4263
+      ],
+      "source_sha256": "ed68b1a833ac18097fb3eaa0b151fe87328113dcf9870275c422c6065d817e43",
+      "target_sha256": "7d445f8be0fe780a825e93332d4e84abba5b08f1ae007b50b60619e279975c49",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B010",
+      "unit_id": "OLP-0202",
+      "source_path": "upstream/content/model-theory/interpolation/definability.tex",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "source_range_utf8": [
+        2449,
+        2627
+      ],
+      "target_range_utf8": [
+        4265,
+        4659
+      ],
+      "source_sha256": "6e5acd3c728d109d7a937c66b4419b5b7fff480407950831c99acd9a530280f2",
+      "target_sha256": "a518d8176ee11515b1be94bad233e7487ad4e96cdb565b12242eb03ea1887347",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B011",
+      "unit_id": "OLP-0202",
+      "source_path": "upstream/content/model-theory/interpolation/definability.tex",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "source_range_utf8": [
+        2629,
+        4949
+      ],
+      "target_range_utf8": [
+        5738,
+        9516
+      ],
+      "source_sha256": "f98acd029b5e1827b9ac8019ba8f5d89b0fcb5c70b0a9f4a05d7769064e0d8ec",
+      "target_sha256": "2f53fe2c9aa9e66d33994a8ebe440f401df8a9658b2de5c23cafa10c07425376",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P078",
+        "GU-P079",
+        "GU-P080",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ],
+  "samples": [
+    {
+      "segment_id": "OLP-0199-B006",
+      "unit_id": "OLP-0199",
+      "source_sha256": "9e6927527b4203ec0ade902ecf02c19c8c07ba9d0689fe9bf80d4acaaee5c082",
+      "target_sha256": "a1401387120af5bf637f3abab9f2d01d7c1cf2d1452f7399a555f15e906383b2",
+      "reverse_paraphrase": "If A entails B, there is a sentence C such that A entails C and C entails B, and every nonidentity constant, function and predicate in C occurs in both A and B. Such a C is their interpolant.",
+      "assessment": "The introduction preserves the entailment conditions for an interpolant, its restriction to vocabulary shared by A and B, and the Beth definability and Robinson joint-consistency applications.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0199-B007",
+      "unit_id": "OLP-0199",
+      "source_sha256": "dcaf18683b36e3165e6db2d06f4e67aeb960ead98c67c0d01521420f96587391",
+      "target_sha256": "aeedf515c6d4de21a670f07ef77ad2a9d6e2494d92dc3734090184b5b84f2553",
+      "reverse_paraphrase": "Beyond its intrinsic interest, interpolation proves results about definability and about when combining two consistent theories preserves consistency; these are Beth's and Robinson's theorems.",
+      "assessment": "The introduction preserves the entailment conditions for an interpolant, its restriction to vocabulary shared by A and B, and the Beth definability and Robinson joint-consistency applications.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B006",
+      "unit_id": "OLP-0200",
+      "source_sha256": "458ea414cf96b9aebef9f57c58d8b1da5a5bffedbaf6cf38b3c4370368d247f4",
+      "target_sha256": "5189023a73d795aad6fe5a81cfd200969ea64dfcb900da84b8dab227f574698d",
+      "reverse_paraphrase": "An interpolant C for A and B is equivalently a sentence separating A from not-B, because C entails B exactly when not-B entails not-C. The proof therefore generalizes separation from two sentences to two sets of sentences.",
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B007",
+      "unit_id": "OLP-0200",
+      "source_sha256": "9ff5cd4d0e15e2ee757297bc6850bf492d6e3c8676c3e6fb4ca37d97a6f2cfee",
+      "target_sha256": "0b2f5a151c7bb205e086661a1e32c5ae850eec87d595b2623591cf596aa82b00",
+      "reverse_paraphrase": "C separates Gamma and Delta exactly when Gamma entails C and Delta entails not-C; if no such sentence exists, the two sets are inseparable.",
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B008",
+      "unit_id": "OLP-0200",
+      "source_sha256": "0c615ca6f5528fa12bfa5bc873cb84d161a455377610b5b298eaca6ef35eb0cb",
+      "target_sha256": "e2441169494e044e2142180362eee9ec16788c80a57d17dcaa6bff77b6573d73",
+      "reverse_paraphrase": "The diagram places every Gamma-model inside the C region and every Delta-model inside the not-C region, visually expressing the two entailments in the definition of separation.",
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B009",
+      "unit_id": "OLP-0200",
+      "source_sha256": "cb02e23f19fade7690493dda885d95178529689713b3c2a9b67c1e9751296b56",
+      "target_sha256": "ceef16600da3abc19c5d93f6d4457a9c303c4be1ab842f6c89e25a9e7d8a1b70",
+      "reverse_paraphrase": "If the common language contains precisely the nonidentity symbols shared by Gamma and Delta, adjoining infinitely many fresh constants does not make an inseparable pair separable.",
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B010",
+      "unit_id": "OLP-0200",
+      "source_sha256": "6a5a782fc4439f32f013d797a885f8233acbf20a24af600b92ede81e520a4163",
+      "target_sha256": "ce6176f6fd9678eaa07ef82ce79aa4581fc3fe15b9d18ad0181bad6dc5b2fb99",
+      "reverse_paraphrase": "Assuming a separator that uses a fresh constant, compactness reduces both entailments to finite conjunctions. Generalization removes that constant and contraposition yields a common-language universal sentence separating the original sets. The repaired conclusion is not-H, the consequent required by the preceding entailment.",
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B011",
+      "unit_id": "OLP-0200",
+      "source_sha256": "b1d794d9f1628f50aeb9df6c69b8a77954dceec3c1dd3f75c8fad7d29f87d0ab",
+      "target_sha256": "36b5f88f7349a42b7b8842864c5462c432b3885139ae22c2135d008567826d25",
+      "reverse_paraphrase": "When Gamma together with an existential sentence is inseparable from Delta, adding a fresh constant as a witness for that existential sentence preserves inseparability.",
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0200-B012",
+      "unit_id": "OLP-0200",
+      "source_sha256": "4db80b4a05b1961ecf6fdfd1d3fe47317720400dfe1debd181448c99488b3fcb",
+      "target_sha256": "f96cbe3397326177c604c6bd29a2d3e0bd74a9a011793769f6f89c6f24bf6906",
+      "reverse_paraphrase": "If a supposed separator omits the witness constant, satisfiability survives adding the witness; if it contains the constant, deduction and generalization produce an existential common-language separator. Either case contradicts the original inseparability, with the existential scope written in the repaired bracket form.",
+      "assessment": "The section preserves separation as the contraposed form of interpolation, inseparability, the model-class diagram and both fresh-constant lemmas. OLINT-001 restores H in the contraposition argument and OLINT-002 restores the existential macro's scope.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B006",
+      "unit_id": "OLP-0201",
+      "source_sha256": "bcbde4c491fdb8a0f3fe1559882576d8d926c1c3d7d7b5197de88730880dc577",
+      "target_sha256": "31af38b4fffd4388fcbde9feb7c215e4c0ad529c80274102a1c83a359913161f",
+      "reverse_paraphrase": "Craig's theorem inserts an interpolant C between a valid implication A to B while restricting C's nonlogical vocabulary to symbols occurring in both endpoints.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B007",
+      "unit_id": "OLP-0201",
+      "source_sha256": "8ce4994d1c1c02841aa4653053f60d1f79278cf2a3bb788f9093b2945a188b83",
+      "target_sha256": "d77bbe4fc2b77b72e33a85a017695fd5bcab17ee751151347a4ee5a4612a8e64",
+      "reverse_paraphrase": "Let L1 and L2 be the languages of A and B, take their intersection L0, and expand each of L0, L1 and L2 with the same infinite stock of fresh constants.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B008",
+      "unit_id": "OLP-0201",
+      "source_sha256": "85c4da5ae28a99f2154509bfde090ca562b85894d11ed43d8a68a1a316e1b0b4",
+      "target_sha256": "356ad27e69931016b173e8fa2028e2532b196126afdfcd6a67bf5fbe207a3c51",
+      "reverse_paraphrase": "If A is unsatisfiable or not-B is unsatisfiable, a false or true identity sentence supplies an immediate interpolant; hence the main argument may assume both A and not-B satisfiable.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B009",
+      "unit_id": "OLP-0201",
+      "source_sha256": "727bd65c7354019f401a31141fbce63769fd47e2d05ea2839a6ad8d29920675c",
+      "target_sha256": "06104d70ed29dd05fac3db855f6d31f1131f080ece5f5a3f8a5706d430a57fff",
+      "reverse_paraphrase": "To prove the contrapositive, assume there is no interpolant, equivalently that the singleton sets containing A and not-B are inseparable in their common language.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B010",
+      "unit_id": "OLP-0201",
+      "source_sha256": "97017a1fdea1a0537c1a54d5b71ce72a0d172788ef7245dd6d9d2f2e29f85a4b",
+      "target_sha256": "3a4030cec4d45040d4044851d74223e3a624a63c1d08c40f869138e1d90683a4",
+      "reverse_paraphrase": "Enumerate every sentence of the two expanded languages, grow Gamma and Delta only when each proposed sentence preserves inseparability, and add fresh witnesses for admitted existentials. Simultaneous induction using the two separation lemmas shows both intermediate pairs remain inseparable; the repairs include the expanded-language enumerations and the witness-bearing cases.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B011",
+      "unit_id": "OLP-0201",
+      "source_sha256": "c0ddbca97cc844ea051d08566b67066630af4f2885029da66f482f620d417e2e",
+      "target_sha256": "6709ea3e4bd3904a8682827a4755833f0e9ad096111a4c1b154857bd02711f44",
+      "reverse_paraphrase": "The unions Gamma-star and Delta-star remain inseparable because any separator would, by compactness, already separate some finite stage. They are therefore each consistent, since an inconsistent side would be separated by an identity truth or falsehood; the repaired compactness statement names both a separating sentence and a stage.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B012",
+      "unit_id": "OLP-0201",
+      "source_sha256": "19a5585325c9bfdce2c6f4a34776f138c5bca2c93b3d0ec23709b4ff12bf7bb6",
+      "target_sha256": "3409924012fb1072368d8f7fb6d086f52791b08472674a9e93d7d2a9ab9f7041",
+      "reverse_paraphrase": "Gamma-star is complete and consistent in expanded L1, and Delta-star likewise in expanded L2: if neither a sentence nor its negation had been admitted, the two resulting separators could be joined propositionally into a separator of the final pair.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B013",
+      "unit_id": "OLP-0201",
+      "source_sha256": "40307a286b00013ebde2bef43092bbf62f8808443f4c31a8841abce45b1ead27",
+      "target_sha256": "f4e63653c9ccf30f61e279b23fe9c4bd9c846df60fe54342868d0ec80467d8a4",
+      "reverse_paraphrase": "The intersection of the two final sets is maximally consistent in the common expanded language. Each common sentence is decided by both maximal sets, and opposite decisions would themselves separate the pair.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B014",
+      "unit_id": "OLP-0201",
+      "source_sha256": "c7daf780e7b53f3d9a97095eccb65d46f682219a245c54ec114d556b5f64c8d0",
+      "target_sha256": "f075a0ef9959a2575b89b61d57f47a32d0748b26258684cb68926b2b302f4d5b",
+      "reverse_paraphrase": "Henkin completeness supplies a model of each maximal consistent set whose domain consists exactly of elements named by the added constants.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B015",
+      "unit_id": "OLP-0201",
+      "source_sha256": "05986f0825fbd7b1f4df388346dad0b667e2f42d5155b2bf62eeaa24f9baf5f4",
+      "target_sha256": "aaa70daf293a2165399c3a2fba87f494dc62999e199a915258555bacf7415482",
+      "reverse_paraphrase": "After reducing both Henkin models to the common expanded language, the map sending the value of each named constant in the first model to its value in the second is an isomorphism, as the shared maximal theory makes all atomic and corresponding structural facts agree.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B016",
+      "unit_id": "OLP-0201",
+      "source_sha256": "981e396cf2f5c90985d4305aa637fa0f617dfb3a0c9af8d68f89780a90315eb4",
+      "target_sha256": "d592f12df285f5b903b7f8511c3d1d4a35bc5378b3656de6a0750d896f2523d0",
+      "reverse_paraphrase": "Build a union-language model on the second domain: keep symbols exclusive to L2, transport symbols exclusive to L1 through the isomorphism from the first model, use the common interpretation for shared symbols and treat functions and constants analogously. The repair correctly transports an L1-only predicate from M-prime-1.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0201-B017",
+      "unit_id": "OLP-0201",
+      "source_sha256": "db539c07b3e39270f2d42d45dcd4ba730f0183b6c6275f48a18f6693689bff6f",
+      "target_sha256": "8da98fe2c6d5840e33f601baddae10ce396bed7f49d8b9ab0b03a94de3b26c70",
+      "reverse_paraphrase": "Induction on formulas gives satisfaction agreement for the original-language reducts. Since the two Henkin models satisfy Gamma-star and Delta-star, the combined model satisfies A and not-B, refuting validity of A to B and completing the contrapositive. The repair avoids claiming satisfaction for un-interpreted fresh constants.",
+      "assessment": "The proof preserves the maximal-inseparable-pair construction, Henkin witnesses, maximal consistent extensions, named-element models, common-language isomorphism and the combined countermodel. OLINT-003 through OLINT-007 repair the expanded-language enumeration, witness cases, compactness separator, transported predicate and final reduct claim.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B006",
+      "unit_id": "OLP-0202",
+      "source_sha256": "aaf16a5db37558f5182c4815637576abbe1605799ad370ee089c73398d728544",
+      "target_sha256": "576d93f873a28c8cb3d0c9f6b1a5ca1a086f1f6e31f2c051d2824afcde408177",
+      "reverse_paraphrase": "An explicit definition gives an L-formula C equivalent to the new predicate P, while an implicit definition fixes P's interpretation once every other symbol is interpreted. Beth's theorem says implicit determination always yields an explicit definition.",
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B007",
+      "unit_id": "OLP-0202",
+      "source_sha256": "a7ee927901d187b02cdb60343e0a4d3eb17c79083e27e626e3c42a10e3a85d47",
+      "target_sha256": "99bf2b1ec188c9639f1e09cda5667bcfed8a4bfea8cd9f8286ecbccd464c80e5",
+      "reverse_paraphrase": "A theory in L plus P explicitly defines P when it entails a universal biconditional between P of its arguments and an L-formula C with those free variables.",
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B008",
+      "unit_id": "OLP-0202",
+      "source_sha256": "2af31f87499f94e70464db82b66f766d913c5ad2ff7f955028815d9bf75f5668",
+      "target_sha256": "7a7ab3e9524890d6f286078ccc19a6671b6a3fe0e2ab6cccbdfbc82675366dc8",
+      "reverse_paraphrase": "A theory implicitly defines P when combining it with a uniformly P-prime-renamed copy entails that P and P-prime agree on every tuple.",
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B009",
+      "unit_id": "OLP-0202",
+      "source_sha256": "ed68b1a833ac18097fb3eaa0b151fe87328113dcf9870275c422c6065d817e43",
+      "target_sha256": "7d445f8be0fe780a825e93332d4e84abba5b08f1ae007b50b60619e279975c49",
+      "reverse_paraphrase": "Semantically, two relations R and R-prime on the same L-structure must be equal whenever the corresponding P and P-prime expansions satisfy the two renamed copies of the theory.",
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B010",
+      "unit_id": "OLP-0202",
+      "source_sha256": "6e5acd3c728d109d7a937c66b4419b5b7fff480407950831c99acd9a530280f2",
+      "target_sha256": "a518d8176ee11515b1be94bad233e7487ad4e96cdb565b12242eb03ea1887347",
+      "reverse_paraphrase": "Beth's theorem states, for a set of sentences in L plus P, that implicit definability of P holds exactly when explicit definability holds; the repaired statement restores both the sentence category and the full if-and-only-if.",
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0202-B011",
+      "unit_id": "OLP-0202",
+      "source_sha256": "f98acd029b5e1827b9ac8019ba8f5d89b0fcb5c70b0a9f4a05d7769064e0d8ec",
+      "target_sha256": "2f53fe2c9aa9e66d33994a8ebe440f401df8a9658b2de5c23cafa10c07425376",
+      "reverse_paraphrase": "Explicit definability immediately forces the two renamed predicates to agree. Conversely, implicit definability and compactness give finite theory fragments; their conjunctions can be rearranged so Craig interpolation supplies a P-free and P-prime-free formula C. The two entailments yield both directions of P iff C, and monotonicity plus generalization gives the required explicit definition. The repaired intermediate entailment uses the proper P-prime atom.",
+      "assessment": "The section preserves explicit and implicit definability, corresponding expansions and both directions of Beth's theorem via compactness and Craig interpolation. OLINT-008 through OLINT-010 restore the sentence category, biconditional wording and P-prime atom.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    }
+  ]
+}

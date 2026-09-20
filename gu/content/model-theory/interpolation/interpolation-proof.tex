@@ -1,0 +1,236 @@
+% Part: model-theory
+% Chapter: interpolation
+% Section: interpolation-proof
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{int}{prf}
+
+\section{ક્રેગનું અંતર્વેશન પ્રમેય}
+
+\begin{thm}[ક્રેગનું અંતર્વેશન પ્રમેય]
+\ollabel{thm:interpol}
+જો $\Entails !A \lif !B$, તો એવું !!a{sentence}~$!C$ છે કે
+$\Entails !A \lif !C$ અને $\Entails !C \lif !B$, અને $!C$માં આવતો
+દરેક !!{constant}, !!{function} અને !!{predicate} ($\eq$ સિવાયનો)
+$!A$ અને~$!B$ બંનેમાં આવે છે. !!{sentence}~$!C$ને $!A$ અને~$!B$નો
+\emph{અંતર્વેશક} કહે છે.
+\end{thm}
+
+\begin{proof}
+ધારો કે $\Lang{L}_1$, $!A$ની ભાષા છે અને $\Lang{L}_2$, $!B$ની ભાષા
+છે. $\Lang{L}_0 = \Lang{L}_1 \cap \Lang{L}_2$ રાખો. દરેક $i \in
+\{0, 1, 2 \}$ માટે, $\Lang{L}_i$માં અનંત નવા !!{constant}s
+$\Obj c_0, \Obj c_1, \Obj c_2, \dots$ ઉમેરીને $\Lang{L}'_i$ મેળવો.
+
+જો $!A$ અસંતોષ્ય હોય, તો $\lexists[x][\eq/[x][x]]$ અંતર્વેશક છે.
+જો $\lnot !B$ અસંતોષ્ય હોય (અને તેથી $!B$ પ્રામાણ્ય હોય), તો
+$\lexists[x][\eq[x][x]]$ અંતર્વેશક છે. તેથી આપણે $!A$ અને
+$\lnot !B$ બંને સંતોષ્ય છે એમ પણ ધારી શકીએ છીએ.
+
+અંતર્વેશન પ્રમેયનું પ્રતિપક્ષી સ્વરૂપ સાબિત કરવા માટે ધારો કે $!A$
+અને~$!B$ માટે કોઈ અંતર્વેશક નથી. બીજા શબ્દોમાં, ધારો કે $\{!A\}$ અને
+$\{\lnot !B\}$, $\Lang{L}_0$માં અપૃથક્કરણીય છે.
+
+આપણો ઉદ્દેશ જોડ $(\{ !A \}, \{\lnot!B\})$ને કોઈ મહત્તમ
+અપૃથક્કરણીય જોડ $(\Gamma^*, \Delta^*)$ સુધી વિસ્તારવાનો છે.
+$!A_0$, $!A_1$, $!A_2$,~\dots એ $\Lang{L}'_1$નાં !!{sentence}sની
+ગણના અને $!B_0$, $!B_1$, $!B_2$,~\dots એ $\Lang{L}'_2$નાં
+!!{sentence}sની ગણના હોય. નીચે પ્રમાણે $n\ge0$ માટે !!{sentence}sના
+ગણોની બે વધતી શ્રેણીઓ $(\Gamma_n,\Delta_n)$ વ્યાખ્યાયિત કરીએ. $\Gamma_0
+= \{!A\}$ અને $\Delta_0=\{\lnot !B\}$ રાખો. $(\Gamma_n,\Delta_n)$
+પહેલેથી વ્યાખ્યાયિત છે એમ ધારીને, $\Gamma_{n+1}$ અને
+$\Delta_{n+1}$ને આ પ્રમાણે વ્યાખ્યાયિત કરો:
+\sourcecorrection{OLINT-003}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{interpolation-proof.tex}, પંક્તિઓ~41--43માં $!A_n$ અને
+  $!B_n$ને અનુક્રમે $\Lang{L}_1$ અને $\Lang{L}_2$નાં વાક્યોની ગણના
+  કહેવાય છે. પરંતુ પછીની પંક્તિઓ~107--108માં રચાયેલા ગણો
+  $\Lang{L}'_1$ અને $\Lang{L}'_2$માં પૂર્ણ સુસંગત હોવાનો દાવો થાય છે,
+  જેના માટે નવા અચળો ધરાવતાં વાક્યોની પણ ગણના જરૂરી છે. અહીં બંને
+  વિસ્તૃત ભાષાઓ પર ગણના પુનઃસ્થાપિત કરી છે.}
+\begin{enumerate}
+\item જો $\Gamma_n \cup \{!A_n \}$ અને~$\Delta_n$, $\Lang{L}'_0$માં
+  અપૃથક્કરણીય હોય, તો $!A_n$ને $\Gamma_{n+1}$માં મૂકો. વધુમાં, જો
+  $!A_n$ કોઈ અસ્તિત્વવાચક !!{formula}~$\lexists[x][!S]$ હોય, તો
+  $\Gamma_n$, $\Delta_n$, $!A_n$ કે~$!B_n$માં ન આવતો નવો
+  !!{constant}~$c$ પસંદ કરીને $\Subst{!S}{c}{x}$ને
+  $\Gamma_{n+1}$માં મૂકો.
+\item જો $\Gamma_{n+1}$ અને $\Delta_n \cup \{!B_n \}$,
+  $\Lang{L}'_0$માં અપૃથક્કરણીય હોય, તો $!B_n$ને $\Delta_{n+1}$માં
+  મૂકો. વધુમાં, જો $!B_n$ કોઈ અસ્તિત્વવાચક
+  !!{formula}~$\lexists[x][!S]$ હોય, તો $\Gamma_{n+1}$, $\Delta_n$,
+  $!A_n$ કે~$!B_n$માં ન આવતો નવો !!{constant}~$c$ પસંદ કરીને
+  $\Subst{!S}{c}{x}$ને $\Delta_{n+1}$માં મૂકો.
+\end{enumerate}
+છેવટે, આ પ્રમાણે વ્યાખ્યા કરો:
+\begin{align*}
+  \Gamma^* & = \bigcup_{n\ge 0} \Gamma_n, &
+  \Delta^* & = \bigcup_{n\ge 0} \Delta_n.
+\end{align*}
+હવે $n$ પરના સમકાલીન આગમનથી આપણે નીચેના દાવા સાબિત કરી શકીએ છીએ:
+\begin{enumerate}
+\item\ollabel{part-a} $\Gamma_n$ અને~$\Delta_n$, $\Lang{L}'_0$માં
+  અપૃથક્કરણીય છે;
+\item\ollabel{part-b} $\Gamma_{n+1}$ અને~$\Delta_n$,
+  $\Lang{L}'_0$માં અપૃથક્કરણીય છે.
+\end{enumerate}
+\olref{part-a}નો આધાર \olref[sep]{lem:sep1} આપે છે. ભાગ
+\olref{part-b} માટે આપણે ત્રણ કિસ્સા પાડવા પડે છે:
+\begin{enumerate}
+\item જો $\Gamma_0 \cup \{!A_0 \}$ અને~$\Delta_0$ પૃથક્કરણીય હોય,
+  તો $\Gamma_1=\Gamma_0$ અને \olref{part-b}, \olref{part-a} જ છે;
+\item જો $\Gamma_1 = \Gamma_0 \cup\{!A_0\}$, તો રચના મુજબ
+  $\Gamma_1$ અને~$\Delta_0$ અપૃથક્કરણીય છે.
+\item હવે માત્ર $!A_0$ અસ્તિત્વવાચક હોય તે કિસ્સો બાકી રહે છે, જેમાં
+  $\Gamma_1 = \Gamma_0 \cup \{ \lexists[x][!S], \Subst{!S}{c}{x}
+  \}$. રચના મુજબ $\Gamma_0 \cup \{ \lexists[x][!S]\}$ અને
+  $\Delta_0$ અપૃથક્કરણીય છે, તેથી \olref[sep]{lem:sep2} મુજબ
+  $\Gamma_0 \cup \{ \lexists[x][!S], \Subst{!S}{c}{x} \}$ અને
+  $\Delta_0$ પણ અપૃથક્કરણીય છે.
+\end{enumerate}
+આથી ઉપરના \olref{part-a} અને \olref{part-b} માટે આગમનનો આધાર પૂરો
+થાય છે. હવે આગમન-પગલું લઈએ. \olref{part-a} માટે, જો $!B_n$ને
+$\Delta_{n+1}$માં મૂકવામાં આવે, તો રચના મુજબ $\Gamma_{n+1}$ અને
+$\Delta_n\cup\{!B_n\}$ અપૃથક્કરણીય છે; અને જો $!B_n$ અસ્તિત્વવાચક
+હોય, તો સાક્ષી ઉમેર્યા પછીનો $\Delta_{n+1}$ પણ
+\olref[sep]{lem:sep2} મુજબ અપૃથક્કરણીય રહે છે. જો
+$\Delta_{n+1}=\Delta_n$ (કારણ કે $\Gamma_{n+1}$ અને
+$\Delta_n\cup\{!B_n\}$ પૃથક્કરણીય છે), તો \olref{part-b} માટેની
+આગમન-પરિકલ્પના વાપરીએ. \olref{part-b}ના આગમન-પગલા માટે, જો
+$!A_{n+1}$ને $\Gamma_{n+2}$માં મૂકવામાં આવે, તો રચના મુજબ
+$\Gamma_{n+1}\cup\{!A_{n+1}\}$ અને~$\Delta_{n+1}$ અપૃથક્કરણીય છે;
+અને જો $!A_{n+1}$ અસ્તિત્વવાચક હોય, તો સાક્ષી ઉમેર્યા પછીનો
+$\Gamma_{n+2}$ પણ \olref[sep]{lem:sep2} મુજબ અપૃથક્કરણીય રહે છે. જો
+$\Gamma_{n+2}=\Gamma_{n+1}$, તો હમણાં જ સાબિત કરેલો
+\olref{part-a}નો આગમન-કિસ્સો વાપરીએ. આથી \olref{part-a} અને
+\olref{part-b} પરનું આગમન પૂરું થાય છે.
+\sourcecorrection{OLINT-004}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{interpolation-proof.tex}, પંક્તિઓ~88--96માં અસ્તિત્વવાચક
+  $!B_n$ કે $!A_{n+1}$ સ્વીકારાય ત્યારે સાક્ષી-સૂત્ર પણ ઉમેરવાની
+  અગાઉની સૂચના હોવા છતાં અનુક્રમે
+  $\Delta_{n+1}=\Delta_n\cup\{!B_n\}$ અને
+  $\Gamma_{n+2}=\Gamma_{n+1}\cup\{!A_{n+1}\}$ લખાયું છે. અહીં
+  સ્વીકારેલો વિધાન અને પછી ઉમેરાતો સાક્ષી અલગ કરીને, લેમા
+  \olref[sep]{lem:sep2}નો ઉપયોગ બંને પૂર્ણ ગણો પર સ્પષ્ટ કર્યો છે.}
+
+આમાંથી ફલિત થાય છે કે $\Gamma^*$ અને~$\Delta^*$ અપૃથક્કરણીય છે;
+નહિતર સઘનતાથી એવું $n\ge0$ અને એવું $\Lang{L}'_0$-વિધાન મળે જે
+$\Gamma_n$ અને~$\Delta_n$ને પૃથક કરે, જે \olref{part-a}ની વિરુદ્ધ
+છે. ખાસ કરીને, $\Gamma^*$ અને~$\Delta^*$ સુસંગત છે: કારણ કે પહેલો
+અથવા બીજો અસુસંગત હોય, તો અનુક્રમે $\lexists[x][\eq/[x][x]]$ અથવા
+$\lforall[x][\eq[x][x]]$ તેમને પૃથક કરે.
+\sourcecorrection{OLINT-005}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{interpolation-proof.tex}, પંક્તિઓ~100--102માં કોઈ
+  $n\ge0$ પોતે $\Gamma_n$ અને $\Delta_n$ને પૃથક કરે છે તેમ લખાયું
+  છે. પૃથક્કર્તા વિધાન હોય છે; સઘનતા માત્ર એવું એક જ~$n$ આપે છે જેમાં
+  તેના માટે જરૂરી બંને સાન્ત ઉપગણો આવી જાય. અહીં એ વિધાન અને~$n$ની
+  જુદી ભૂમિકાઓ સ્પષ્ટ કરી છે.}
+
+હવે આપણે બતાવીએ કે $\Gamma^*$, $\Lang{L}'_1$માં પૂર્ણ સુસંગત છે અને
+એ જ રીતે $\Delta^*$, $\Lang{L}'_2$માં પૂર્ણ સુસંગત છે. પહેલા માટે,
+ધારો કે કોઈ $n\ge0$ માટે $!A_n\notin\Gamma^*$ અને $\lnot !A_n
+\notin\Gamma^*$. જો $!A_n\notin\Gamma^*$, તો $\Gamma_n\cup\{!A_n\}$
+$\Delta_n$થી પૃથક્કરણીય છે, તેથી એવું $!C\in\Lang{L}'_0$ છે કે આ
+બંને વાતો સાચી છે:
+\begin{align*}
+  \Gamma^* & \Entails !A_n \lif !C, &
+  \Delta^* & \Entails \lnot !C.
+\end{align*}
+એ જ રીતે, જો $\lnot !A_n\notin\Gamma^*$, તો એવું $!C'\in
+\Lang{L}'_0$ છે કે આ બંને વાતો સાચી છે:
+\begin{align*}
+  \Gamma^* & \Entails \lnot !A_n \lif !C', &
+  \Delta^* & \Entails \lnot !C'.
+\end{align*}
+વિધાનાત્મક તર્કશાસ્ત્રથી $\Gamma^*\Entails !C\lor !C'$ અને
+$\Delta^*\Entails\lnot(!C\lor !C')$, તેથી $!C\lor !C'$,
+$\Gamma^*$ અને~$\Delta^*$ને પૃથક કરે છે. સમાન દલીલથી $\Delta^*$ પૂર્ણ
+છે.
+
+છેવટે, આપણે બતાવીએ કે $\Gamma^*\cap\Delta^*$, $\Lang{L}'_0$માં પૂર્ણ
+સુસંગત છે. તે સુસંગત ગણોનો છેદ હોવાથી દેખીતી રીતે સુસંગત છે. પૂર્ણતા
+બતાવવા $!S\in\Lang{L}'_0$ લો. હવે $\Gamma^*$, $\Lang{L'_1}
+\supseteq\Lang{L'_0}$માં પૂર્ણ છે અને એ જ રીતે $\Delta^*$,
+$\Lang{L'_2}\supseteq\Lang{L'_0}$માં પૂર્ણ છે. તેથી કાં તો
+$!S\in\Gamma^*$ અથવા $\lnot !S\in\Gamma^*$, અને કાં તો
+$!S\in\Delta^*$ અથવા $\lnot !S\in\Delta^*$. જો $!S\in\Gamma^*$ અને
+$\lnot !S\in\Delta^*$, તો $!S$, $\Gamma^*$ અને~$\Delta^*$ને પૃથક
+કરે; અને જો $\lnot !S\in\Gamma^*$ અને $!S\in\Delta^*$, તો
+$\Gamma^*$ અને~$\Delta^*$ને $\lnot !S$ પૃથક કરે. આથી, કાં તો
+$!S\in\Gamma^*\cap\Delta^*$
+અથવા $\lnot !S\in\Gamma^*\cap\Delta^*$, અને
+$\Gamma^*\cap\Delta^*$ પૂર્ણ છે.
+
+$\Gamma^*$ પૂર્ણ સુસંગત હોવાથી તેને એવો નિદર્શ $\Struct{M}'_1$ મળે
+છે જેનું !!{domain}~$\Domain{M'_1}$, !!{constant}sનાં અર્થઘટનો
+$\Assign{c}{M'_1}$ એવા અને માત્ર એવા ઘટકોનું બનેલું છે---પૂર્ણતા
+પ્રમેયની સાબિતીની જેમ (\olref[fol][com][cth]{thm:completeness}). એ જ
+રીતે, $\Delta^*$ને એવો નિદર્શ~$\Struct{M}'_2$ મળે છે જેનું
+!!{domain}~$\Domain{M'_2}$, !!{constant}sનાં અર્થઘટનો
+$\Assign{c}{M'_2}$થી બનેલું છે.
+
+$\Struct{M'_1}$માંથી $\Lang{L'_1}\setminus\Lang{L'_0}$માંના
+!!{constant}s, !!{function}s અને !!{predicate}sનાં અર્થઘટનો કાઢીને
+$\Struct{M_1}$ મેળવો, અને $\Struct{M_2}$ પણ એ જ રીતે મેળવો. ત્યારે
+$h(\Assign{c}{M'_1})=\Assign{c}{M'_2}$થી વ્યાખ્યાયિત કરેલો નકશો
+$h\colon M_1\to M_2$, $\Lang{L}'_0$માં એકરૂપતા છે, કારણ કે બતાવ્યા
+પ્રમાણે $\Gamma^*\cap\Delta^*$, $\Lang{L}'_0$માં પૂર્ણ સુસંગત છે.
+આનું કારણ એ છે કે કોઈ પણ $\Lang{L}'_0$-!!{sentence} કાં તો $\Gamma^*$
+અને~$\Delta^*$ બંનેમાં આવે છે અથવા એકેયમાં આવતું નથી: તેથી
+$\Assign{c}{M'_1}\in\Assign{P}{M'_1}$ જો અને માત્ર જો
+$\Atom{P}{c}\in\Gamma^*$, જો અને માત્ર જો $\Atom{P}{c}\in\Delta^*$,
+જો અને માત્ર જો $\Assign{c}{M'_2}\in\Assign{P}{M'_2}$. એકરૂપતાની
+બીજી શરતો પણ એ જ રીતે સ્થાપિત કરી શકાય છે.
+
+હવે !!{language}~$\Lang{L_1}\cup\Lang{L_2}$ માટેનો નિદર્શ
+$\Struct{M}$ આ પ્રમાણે વ્યાખ્યાયિત કરીએ:
+\begin{enumerate}
+\item !!{domain}~$\Domain{M}$ એ $\Domain{M_2}$ જ છે, એટલે બધા
+  ઘટકો~$\Assign{c}{M'_2}$નો ગણ;
+\item જો કોઈ !!a{predicate}~$P$, $\Lang{L_2}\setminus\Lang{L_1}$માં
+  હોય, તો $\Assign{P}{M}=\Assign{P}{M'_2}$;
+\item જો કોઈ વિધેય-સંકેત~$P$, $\Lang{L}_1\setminus\Lang{L}_2$માં હોય, તો
+  $\Assign{P}{M}=h(\Assign{P}{M'_1})$, એટલે
+  $\tuple{\Assign{c_1}{M'_2},\dots,\Assign{c_n}{M'_2}}\in
+  \Assign{P}{M}$ જો અને માત્ર જો
+  $\tuple{\Assign{c_1}{M'_1},\dots,\Assign{c_n}{M'_1}}\in
+  \Assign{P}{M'_1}$.
+\item જો કોઈ !!a{predicate}~$P$, $\Lang{L}_0$માં હોય, તો
+  $\Assign{P}{M}=\Assign{P}{M'_2}=h(\Assign{P}{M'_1})$.
+\item !!^{function}sને, જેમાં !!{constant}s પણ સામેલ છે,
+  $\Lang{L}_1\cup\Lang{L}_2$ પર એ જ રીતે સંભાળો.
+\end{enumerate}
+\sourcecorrection{OLINT-006}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{interpolation-proof.tex}, પંક્તિ~173માં
+  $P\in\Lang{L}_1\setminus\Lang{L}_2$ હોવા છતાં તેના અર્થઘટનને
+  $\Struct{M'_2}$માંથી લઈ $h$ લગાડવામાં આવ્યું છે. $\Struct{M'_2}$
+  પાસે $P$નું અર્થઘટન હોવું જરૂરી નથી અને $h$નું ક્ષેત્ર પણ
+  $M_1$ છે. તરત પછી આપેલી ``એટલે'' શરત મુજબ અહીં
+  $h(\Assign{P}{M'_1})$ પુનઃસ્થાપિત કર્યું છે.}
+
+છેવટે, !!{formula}s પરના આગમનથી બતાવી શકાય છે કે $\Lang{L}_1$નાં
+બધાં !!{formula}s માટે $\Struct{M'_1}$ના $\Lang{L}_1$-ન્યૂનરૂપમાં
+સંતોષ, $h$ મારફતે $\Struct{M}$ના $\Lang{L}_1$-ન્યૂનરૂપમાં સંતોષને
+બરાબર અનુરૂપ છે, અને $\Lang{L}_2$નાં બધાં !!{formula}s માટે
+$\Struct{M}$ તથા $\Struct{M'_2}$નાં $\Lang{L}_2$-ન્યૂનરૂપોમાં સંતોષ
+સંમત થાય છે. ખાસ કરીને,
+$\Struct{M'_1}\Entails\Gamma^*$ તથા $!A\in\Gamma^*$, અને
+$\Struct{M'_2}\Entails\Delta^*$ તથા $\lnot !B\in\Delta^*$ હોવાથી
+$\Struct{M}\Entails !A$ અને $\Struct{M}\Entails\lnot !B$. તેથી
+$\not\Entails !A\lif !B$. આથી ક્રેગના અંતર્વેશન પ્રમેયની સાબિતી
+પૂરી થાય છે.
+\sourcecorrection{OLINT-007}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{interpolation-proof.tex}, પંક્તિઓ~183--187માં
+  $\Struct{M}$ને માત્ર $\Lang{L}_1\cup\Lang{L}_2$ માટે વ્યાખ્યાયિત
+  કર્યા પછી તે નવા અચળો ધરાવતી વિસ્તૃત ભાષાઓ $\Lang{L}'_1$ અને
+  $\Lang{L}'_2$નાં બધાં સૂત્રો પર સંમત થાય છે અને
+  $\Gamma^*\cup\Delta^*$ને સંતોષે છે એવો અપરિભાષિત દાવો થાય છે.
+  અહીં જરૂરી અને પર્યાપ્ત ન્યૂનરૂપ-દાવો મૂક્યો છે: $h$ પહેલા નિદર્શના
+  $\Lang{L}_1$-ભાગને પરિવહિત કરે છે અને બીજાનો
+  $\Lang{L}_2$-ભાગ યથાવત્ રહે છે; તેથી મૂળ વાક્યો $!A$ અને
+  $\lnot !B$ સાચાં રહે છે.}
+\end{proof}
+
+\end{document}

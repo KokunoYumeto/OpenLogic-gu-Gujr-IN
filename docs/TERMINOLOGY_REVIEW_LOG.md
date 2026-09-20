@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-20T15:35:17.284203+00:00. This is a **complete decision log for the current 194/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint and artifact-release verification cover 194/722 units through checkpoint 020 and v0.14.0. It contains all 187 terminology decisions from the durable ledger and all 152 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
+Updated 2026-09-20T22:01:57.906650+00:00. This is a **complete decision log for the current 199/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 194/722 units with checkpoint 020. It contains all 191 terminology decisions from the durable ledger and all 162 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -2065,6 +2065,50 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** પ્રાથમિક પુનરાવર્તન — plausible, but પ્રાથમિક is already heavily used for elementary model-theoretic notions.; પ્રિમિટિવ રિકર્શન — recognizable transliteration, though less consistent with the edition's Gujarati composition.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘આદિમ પુનરાવર્તન’ accurately express ‘primitive recursion’ with the scope stated here: પુનરાવર્તન continues the edition's recursive-definition family, while આદિમ marks the restricted recursion scheme used to define the effective numerical functions. The nearby Turing-machine gloss fixes the intended computability context. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T188: interpolation theorem / interpolant → અંતર્વેશન પ્રમેય / અંતર્વેશક
+
+- **Status and uncertainty:** `adopted_direct_head_contextual_derivative`; low_to_medium. The head or modifiers are directly attested; the specialist compound or derivative remains open to expert correction.
+- **Record origin:** contemporaneous_interpolation_translation; `work/add_interpolation_terms.py`.
+- **English use:** `upstream/content/model-theory/interpolation/introduction.tex:13` (OLP-0199, “interpolation theorem”); `upstream/content/model-theory/interpolation/introduction.tex:18` (OLP-0199, “interpolant”)
+- **Gujarati use:** `gu/content/model-theory/interpolation/introduction.tex:13` (OLP-0199, “અંતર્વેશન પ્રમેય”); `gu/content/model-theory/interpolation/introduction.tex:18` (OLP-0199, “અંતર્વેશક”)
+- **Authorities actually checked:** `GU-P078` (GU-CSTT-MATH, {"pdf_page_one_based": 118, "printed_page": "93"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The official CSTT mathematics glossary directly attests અંતર્વેશન for interpolation and અંતર્વેશન સૂત્ર for interpolation formula. પ્રમેય is the edition's established theorem term. અંતર્વેશક derives transparently from the attested process noun for the sentence occupying the intermediate entailment position; the displayed theorem fixes its exact logical role.
+- **Alternatives:** મધ્યસ્થાપન / મધ્યવર્તી વિધાન — explanatory, but would discard the directly attested official term.; ઇન્ટરપોલન્ટ — recognizable transliteration, though the official glossary supports a native derivative family.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અંતર્વેશન પ્રમેય / અંતર્વેશક’ accurately express ‘interpolation theorem / interpolant’ with the scope stated here: The official CSTT mathematics glossary directly attests અંતર્વેશન for interpolation and અંતર્વેશન સૂત્ર for interpolation formula. પ્રમેય is the edition's established theorem term. અંતર્વેશક derives transparently from the attested process noun for the sentence occupying the intermediate entailment position; the displayed theorem fixes its exact logical role. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T189: separate / inseparable sets of sentences → પૃથક કરવું / વાક્યોના અપૃથક્કરણીય ગણો
+
+- **Status and uncertainty:** `adopted_lexical_contextual`; medium. Native lexical evidence and an explicit formal definition support this choice; specialist preference remains open to correction.
+- **Record origin:** contemporaneous_interpolation_translation; `work/add_interpolation_terms.py`.
+- **English use:** `upstream/content/model-theory/interpolation/separation.tex:24` (OLP-0200, “separates} sets”); `upstream/content/model-theory/interpolation/separation.tex:27` (OLP-0200, “inseparable”)
+- **Gujarati use:** `gu/content/model-theory/interpolation/separation.tex:18` (OLP-0200, “પૃથક કરે છે”); `gu/content/model-theory/interpolation/separation.tex:27` (OLP-0200, “અપૃથક્કરણીય”)
+- **Authorities actually checked:** `GU-P081` (GU-CSTT-MATH, {"pdf_page_one_based": 180, "printed_page": "155"}); `GU-P082` (GU-GL-INSEPARABLE, {"line_one_based": 210, "last_line_one_based": 217, "utf8_start": 3553, "utf8_end": 3915, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P070` (GU-VK-TRUTH, {"line_one_based": 110, "last_line_one_based": 110, "utf8_start": 39315, "utf8_end": 40735, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The Gujarati dictionary directly analyzes અપૃથક્કરણીય as something that cannot be separated, while the official glossary attests context-sensitive mathematical forms for separation. Here the adjacent definition fixes the specialist sense: no sentence has the two required consequence relations. The verb phrase પૃથક કરવું preserves that direction without importing topological separability.
+- **Alternatives:** વિયોજિત કરવું / અવિયોજનીય — established in other mathematical contexts, but risks suggesting algebraic decomposition rather than separation by a sentence.; અલગ કરવું / અલગ ન કરી શકાય એવા — clear prose, but less compact and less suited to the repeated technical predicate.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘પૃથક કરવું / વાક્યોના અપૃથક્કરણીય ગણો’ accurately express ‘separate / inseparable sets of sentences’ with the scope stated here: The Gujarati dictionary directly analyzes અપૃથક્કરણીય as something that cannot be separated, while the official glossary attests context-sensitive mathematical forms for separation. Here the adjacent definition fixes the specialist sense: no sentence has the two required consequence relations. The verb phrase પૃથક કરવું preserves that direction without importing topological separability. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T190: explicitly/implicitly define a predicate → વિધેયને સ્પષ્ટ રીતે / ગૂઢ રીતે વ્યાખ્યાયિત કરવું
+
+- **Status and uncertainty:** `adopted_direct_modifiers_contextual_compound`; low_to_medium. The head or modifiers are directly attested; the specialist compound or derivative remains open to expert correction.
+- **Record origin:** contemporaneous_interpolation_translation; `work/add_interpolation_terms.py`.
+- **English use:** `upstream/content/model-theory/interpolation/definability.tex:32` (OLP-0202, “explicitly defines”); `upstream/content/model-theory/interpolation/definability.tex:31` (OLP-0202, “implicitly defines”)
+- **Gujarati use:** `gu/content/model-theory/interpolation/definability.tex:18` (OLP-0202, “સ્પષ્ટ રીતે વ્યાખ્યાયિત”); `gu/content/model-theory/interpolation/definability.tex:48` (OLP-0202, “ગૂઢ રીતે વ્યાખ્યાયિત”)
+- **Authorities actually checked:** `GU-P079` (GU-CSTT-MATH, {"pdf_page_one_based": 87, "printed_page": "62"}); `GU-P080` (GU-CSTT-MATH, {"pdf_page_one_based": 108, "printed_page": "83"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The official glossary directly uses સ્પષ્ટ for explicit equations, forms and functions, and ગૂઢ for implicit and implicit function. GU-T154 already governs વ્યાખ્યેયતા and વ્યાખ્યેય. The two formal definitions distinguish a displayed defining formula from uniqueness of the predicate interpretation across expansions.
+- **Alternatives:** પ્રગટ / અંતર્નિહિત વ્યાખ્યા — readable philosophical prose, but less aligned with the directly attested mathematical modifiers.; એક્સ્પ્લિસિટ / ઇમ્પ્લિસિટ વ્યાખ્યા — transparent to specialists, though unnecessary given the official Gujarati forms.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘વિધેયને સ્પષ્ટ રીતે / ગૂઢ રીતે વ્યાખ્યાયિત કરવું’ accurately express ‘explicitly/implicitly define a predicate’ with the scope stated here: The official glossary directly uses સ્પષ્ટ for explicit equations, forms and functions, and ગૂઢ for implicit and implicit function. GU-T154 already governs વ્યાખ્યેયતા and વ્યાખ્યેય. The two formal definitions distinguish a displayed defining formula from uniqueness of the predicate interpretation across expansions. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T191: joint consistency theorem → સંયુક્ત સુસંગતતા પ્રમેય
+
+- **Status and uncertainty:** `provisional_transparent_compound`; open. No checked authority directly attests the full specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_interpolation_translation; `work/add_interpolation_terms.py`.
+- **English use:** `upstream/content/model-theory/interpolation/introduction.tex:25` (OLP-0199, “joint consistency theorem”)
+- **Gujarati use:** `gu/content/model-theory/interpolation/introduction.tex:24` (OLP-0199, “સંયુક્ત સુસંગતતા પ્રમેય”)
+- **Authorities actually checked:** `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name.
+- **Alternatives:** સહસુસંગતતા પ્રમેય — compact, but can imply pairwise compatibility rather than consistency of the union.; જોડાણ-સુસંગતતા પ્રમેય — explanatory, though less natural as a fixed theorem title.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સંયુક્ત સુસંગતતા પ્રમેય’ accurately express ‘joint consistency theorem’ with the scope stated here: સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -3586,6 +3630,106 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLMAR-016 without changing any unaffected claim or formula?
+
+### OLINT-001: confirmed_undefined_metavariable
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/separation.tex` at `separation.tex:75`; SHA-256 `169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/separation.tex` body line(s) 74; adjacent note line 82; SHA-256 `eb0f38a40ccd42be7e767043069a95c91454d0b0bc0403c3b617aaaf2a619579`.
+- **Chosen handling:** Restored not-H in the conclusion and added an adjacent keyed note.
+- **Rationale:** The first separation lemma concludes not-delta even though delta is nowhere defined and the contraposition step concerns H.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-001 without changing any unaffected claim or formula?
+
+### OLINT-002: confirmed_malformed_quantifier_macro_invocation
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/separation.tex` at `separation.tex:95`; SHA-256 `169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/separation.tex` body line(s) 98; adjacent note line 100; SHA-256 `eb0f38a40ccd42be7e767043069a95c91454d0b0bc0403c3b617aaaf2a619579`.
+- **Chosen handling:** Used the required second optional argument and added an adjacent keyed note.
+- **Rationale:** One existential occurrence puts its scope in braces rather than the macro's second optional argument, so the formula is not typeset as the quantifier scope.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-002 without changing any unaffected claim or formula?
+
+### OLINT-003: confirmed_wrong_language_enumeration
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/interpolation-proof.tex` at `interpolation-proof.tex:41`; SHA-256 `702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/interpolation-proof.tex` body line(s) 39; adjacent note line 46; SHA-256 `2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff`.
+- **Chosen handling:** Enumerated the sentences of L-prime-1 and L-prime-2 and added an adjacent keyed note.
+- **Rationale:** The construction enumerates only the original-language sentences but later claims completeness in the languages expanded by the new constants.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-003 without changing any unaffected claim or formula?
+
+### OLINT-004: confirmed_witness_formula_omitted_from_inductive_case_equalities
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/interpolation-proof.tex` at `interpolation-proof.tex:88`; SHA-256 `702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/interpolation-proof.tex` body line(s) 94; adjacent note line 109; SHA-256 `2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff`.
+- **Chosen handling:** Separated admission of each existential sentence from the subsequent witness addition and explicitly applied the preservation lemma to the completed set, with an adjacent keyed note.
+- **Rationale:** The induction step states equalities omitting the witness formula that the construction also adds when the admitted sentence is existential.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-004 without changing any unaffected claim or formula?
+
+### OLINT-005: confirmed_category_error_in_compactness_sentence
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/interpolation-proof.tex` at `interpolation-proof.tex:101`; SHA-256 `702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/interpolation-proof.tex` body line(s) 119; adjacent note line 124; SHA-256 `2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff`.
+- **Chosen handling:** Named both the separating L-prime-0 sentence and the stage containing its finite supports, with an adjacent keyed note.
+- **Rationale:** The compactness sentence says that a natural-number stage separates two sets, although separation is performed by a sentence.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-005 without changing any unaffected claim or formula?
+
+### OLINT-006: confirmed_wrong_structure_in_transport
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/interpolation-proof.tex` at `interpolation-proof.tex:173`; SHA-256 `702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/interpolation-proof.tex` body line(s) 195; adjacent note line 205; SHA-256 `2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff`.
+- **Chosen handling:** Transported the interpretation from M-prime-1 and added an adjacent keyed note.
+- **Rationale:** For a predicate exclusive to L1, the combined-model definition transports an interpretation from M-prime-2, which need not interpret that predicate and is not in h's domain.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-006 without changing any unaffected claim or formula?
+
+### OLINT-007: confirmed_undefined_expanded_language_satisfaction_claim
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/interpolation-proof.tex` at `interpolation-proof.tex:186`; SHA-256 `702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/interpolation-proof.tex` body line(s) 219; adjacent note line 224; SHA-256 `2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff`.
+- **Chosen handling:** Stated the required agreement only between original-language reducts and derived preservation of A and not-B, with an adjacent keyed note.
+- **Rationale:** The final paragraph claims that M agrees on formulas in expanded languages and satisfies Gamma-star union Delta-star even though M was defined only for the original union language and does not interpret the added constants.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-007 without changing any unaffected claim or formula?
+
+### OLINT-008: confirmed_syntactic_category_inconsistency
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/definability.tex` at `definability.tex:67`; SHA-256 `9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/definability.tex` body line(s) 35; adjacent note line 71; SHA-256 `fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764`.
+- **Chosen handling:** Used sentences, matching both definitions and the proof, and added an adjacent keyed note.
+- **Rationale:** Beth's theorem calls Sigma(P) a set of formulas although both preceding definitions require sentences and the proof forms conjunctions of sentences from finite subsets.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-008 without changing any unaffected claim or formula?
+
+### OLINT-009: confirmed_missing_word_in_biconditional
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/definability.tex` at `definability.tex:67`; SHA-256 `9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/definability.tex` body line(s) 68; adjacent note line 77; SHA-256 `fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764`.
+- **Chosen handling:** Restored the complete biconditional and added an adjacent keyed note.
+- **Rationale:** The theorem's 'if and only if' phrase omits its final if.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-009 without changing any unaffected claim or formula?
+
+### OLINT-010: confirmed_malformed_atomic_formula_notation
+
+- **Frozen source:** `upstream/content/model-theory/interpolation/definability.tex` at `definability.tex:96`; SHA-256 `9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29`.
+- **Gujarati target:** `gu/content/model-theory/interpolation/definability.tex` body line(s) 107; adjacent note line 110; SHA-256 `fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764`.
+- **Chosen handling:** Used the edition's Atom macro with the n arguments and added an adjacent keyed note.
+- **Rationale:** One occurrence writes the P-prime atom as an unstructured character string rather than using the atomic-formula notation used everywhere around it.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-010 without changing any unaffected claim or formula?
 
 ## Source-claim qualifications
 

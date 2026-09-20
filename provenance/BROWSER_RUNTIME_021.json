@@ -1,0 +1,93 @@
+{
+  "schema": "openlogic-gu-browser-runtime/1",
+  "checkpoint": "021",
+  "checked_utc": "2026-09-20T21:02:31.642537+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8768/build/runtime-probe019.html?target=reader%2Finterpolation.html&qa=021-current",
+  "direct_reader_url": "http://127.0.0.1:8768/reader/interpolation.html?qa=021-clean-direct",
+  "artifact": "reader/interpolation.html",
+  "artifact_sha256": "a8bc1c57a7da77a065f4bacb24157856019379a8aa1f1d25b089b833cf866bdf",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "અંતર્વેશન પ્રમેય સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 551,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 14,
+    "loadedImages": 14,
+    "contentIds": 759,
+    "uniqueIds": 759,
+    "excludedBrowserUiIds": [
+      "codex-browser-sidebar-comments-root"
+    ],
+    "tocLinks": 205,
+    "tables": 12,
+    "mathmlNodes": 11786,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1,
+      "lexists": 1,
+      "Atom": 1,
+      "dots": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, 199/722 scope disclosure, and cumulative table of contents",
+      "Model Theory hierarchy with Basics, Models of Arithmetic, and Interpolation chapters",
+      "interpolation introduction, separator definition, and model-class diagram",
+      "fresh-constant separation lemmas and OLINT-001/002 disclosures",
+      "Craig theorem and maximal-inseparable-pair construction",
+      "induction cases, internal item references, and OLINT-004 disclosure",
+      "combined-model construction and OLINT-006/007 disclosures",
+      "explicit and implicit definability, Beth theorem, and OLINT-008/009 disclosures",
+      "cumulative correction disclosure, bibliography, and end matter"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "separation_svg_geometry_and_labels": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "clean_direct_reader_entries": [],
+    "stale_session_entries": [
+      {
+        "source": "earlier runtime-probe host page",
+        "message": "MutationObserver target was absent before the iframe load",
+        "excluded_reason": "A newly created clean direct-reader tab completed font and image loading and reported no warning or error entries."
+      }
+    ]
+  },
+  "status": "passed"
+}

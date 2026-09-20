@@ -1,0 +1,275 @@
+{
+  "schema": "openlogic-gu-source-corrections/1",
+  "recorded_at_utc": "2026-09-20T21:06:13.395131+00:00",
+  "audit_id": "GU-OLINT-20260920",
+  "audit_method": "Same-agent exact comparison against the frozen source, macro declarations, adjacent definitions, formal notation and the proof's required constructions. No claim about current upstream master is made.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "corrections": [
+    {
+      "finding_id": "OLINT-001",
+      "unit_id": "OLP-0200",
+      "classification": "confirmed_undefined_metavariable",
+      "finding": "The first separation lemma concludes not-delta even though delta is nowhere defined and the contraposition step concerns H.",
+      "source_path": "content/model-theory/interpolation/separation.tex",
+      "source_locator": "separation.tex:75",
+      "source_bytes": 5002,
+      "source_sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "target_bytes": 8450,
+      "target_sha256": "eb0f38a40ccd42be7e767043069a95c91454d0b0bc0403c3b617aaaf2a619579",
+      "corrected_body_line": 74,
+      "adjacent_note_line": 82,
+      "handling": "Restored not-H in the conclusion and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\delta",
+        "added": "!H"
+      },
+      "controlling_evidence": "The immediately preceding entailment has consequent not-H, and the following contraposition derives H entails not-forall-C.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-002",
+      "unit_id": "OLP-0200",
+      "classification": "confirmed_malformed_quantifier_macro_invocation",
+      "finding": "One existential occurrence puts its scope in braces rather than the macro's second optional argument, so the formula is not typeset as the quantifier scope.",
+      "source_path": "content/model-theory/interpolation/separation.tex",
+      "source_locator": "separation.tex:95",
+      "source_bytes": 5002,
+      "source_sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+      "target_path": "gu/content/model-theory/interpolation/separation.tex",
+      "target_bytes": 8450,
+      "target_sha256": "eb0f38a40ccd42be7e767043069a95c91454d0b0bc0403c3b617aaaf2a619579",
+      "corrected_body_line": 98,
+      "adjacent_note_line": 100,
+      "handling": "Used the required second optional argument and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "\\lexists[x]{!S}",
+        "added": "\\lexists[x][!S]"
+      },
+      "controlling_evidence": "The macro declaration takes two optional arguments and every parallel occurrence in the lemma uses the bracketed scope form.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-003",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_wrong_language_enumeration",
+      "finding": "The construction enumerates only the original-language sentences but later claims completeness in the languages expanded by the new constants.",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_locator": "interpolation-proof.tex:41",
+      "source_bytes": 9263,
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_bytes": 19053,
+      "target_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+      "corrected_body_line": 39,
+      "adjacent_note_line": 46,
+      "handling": "Enumerated the sentences of L-prime-1 and L-prime-2 and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": [
+          "L_1",
+          "L_2"
+        ],
+        "added": [
+          "L'_1",
+          "L'_2"
+        ]
+      },
+      "controlling_evidence": "Completeness in each expanded language requires deciding every sentence containing the newly added constants; the construction and Henkin models otherwise use those expanded languages throughout.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-004",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_witness_formula_omitted_from_inductive_case_equalities",
+      "finding": "The induction step states equalities omitting the witness formula that the construction also adds when the admitted sentence is existential.",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_locator": "interpolation-proof.tex:88",
+      "source_bytes": 9263,
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_bytes": 19053,
+      "target_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+      "corrected_body_line": 94,
+      "adjacent_note_line": 109,
+      "handling": "Separated admission of each existential sentence from the subsequent witness addition and explicitly applied the preservation lemma to the completed set, with an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed_equalities": [
+          "Delta_(n+1)=Delta_n∪{B_n}",
+          "Gamma_(n+2)=Gamma_(n+1)∪{A_(n+1)}"
+        ],
+        "added_case_split": "sentence admitted, then witness added under Lemma sep2 when existential"
+      },
+      "controlling_evidence": "The construction at the start of the proof explicitly adds both the existential sentence and a fresh-constant instance; Lemma sep2 is exactly the cited result preserving inseparability after that second addition.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-005",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_category_error_in_compactness_sentence",
+      "finding": "The compactness sentence says that a natural-number stage separates two sets, although separation is performed by a sentence.",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_locator": "interpolation-proof.tex:101",
+      "source_bytes": 9263,
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_bytes": 19053,
+      "target_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+      "corrected_body_line": 119,
+      "adjacent_note_line": 124,
+      "handling": "Named both the separating L-prime-0 sentence and the stage containing its finite supports, with an adjacent keyed note.",
+      "mathematical_delta": {
+        "added_object": "an L'_0-sentence serving as separator"
+      },
+      "controlling_evidence": "The chapter definition makes a sentence C the separator; compactness supplies finite subsets that are contained in some common stage n.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-006",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_wrong_structure_in_transport",
+      "finding": "For a predicate exclusive to L1, the combined-model definition transports an interpretation from M-prime-2, which need not interpret that predicate and is not in h's domain.",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_locator": "interpolation-proof.tex:173",
+      "source_bytes": 9263,
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_bytes": 19053,
+      "target_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+      "corrected_body_line": 195,
+      "adjacent_note_line": 205,
+      "handling": "Transported the interpretation from M-prime-1 and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "M'_2",
+        "added": "M'_1"
+      },
+      "controlling_evidence": "The following iff clause already uses the P-interpretation in M-prime-1, while h maps the common-language reduct M1 to M2.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-007",
+      "unit_id": "OLP-0201",
+      "classification": "confirmed_undefined_expanded_language_satisfaction_claim",
+      "finding": "The final paragraph claims that M agrees on formulas in expanded languages and satisfies Gamma-star union Delta-star even though M was defined only for the original union language and does not interpret the added constants.",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "source_locator": "interpolation-proof.tex:186",
+      "source_bytes": 9263,
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "target_path": "gu/content/model-theory/interpolation/interpolation-proof.tex",
+      "target_bytes": 19053,
+      "target_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+      "corrected_body_line": 219,
+      "adjacent_note_line": 224,
+      "handling": "Stated the required agreement only between original-language reducts and derived preservation of A and not-B, with an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed_claim": "M satisfies Gamma* union Delta* in expanded languages",
+        "added_claim": "the original-language reducts preserve A and not-B"
+      },
+      "controlling_evidence": "A belongs to the original L1 and not-B to the original L2, so reduct agreement is sufficient for the countermodel; no interpretation of the new constants in M is required.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-008",
+      "unit_id": "OLP-0202",
+      "classification": "confirmed_syntactic_category_inconsistency",
+      "finding": "Beth's theorem calls Sigma(P) a set of formulas although both preceding definitions require sentences and the proof forms conjunctions of sentences from finite subsets.",
+      "source_path": "content/model-theory/interpolation/definability.tex",
+      "source_locator": "definability.tex:67",
+      "source_bytes": 4967,
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "target_bytes": 9533,
+      "target_sha256": "fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764",
+      "corrected_body_line": 35,
+      "adjacent_note_line": 71,
+      "handling": "Used sentences, matching both definitions and the proof, and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "controlling_evidence": "The explicit and implicit definability definitions both quantify over sets of sentences, and the compactness proof explicitly selects and conjoins sentences.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-009",
+      "unit_id": "OLP-0202",
+      "classification": "confirmed_missing_word_in_biconditional",
+      "finding": "The theorem's 'if and only if' phrase omits its final if.",
+      "source_path": "content/model-theory/interpolation/definability.tex",
+      "source_locator": "definability.tex:67",
+      "source_bytes": 4967,
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "target_bytes": 9533,
+      "target_sha256": "fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764",
+      "corrected_body_line": 68,
+      "adjacent_note_line": 77,
+      "handling": "Restored the complete biconditional and added an adjacent keyed note.",
+      "mathematical_delta": null,
+      "controlling_evidence": "The theorem states equivalence and the proof treats both directions.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "finding_id": "OLINT-010",
+      "unit_id": "OLP-0202",
+      "classification": "confirmed_malformed_atomic_formula_notation",
+      "finding": "One occurrence writes the P-prime atom as an unstructured character string rather than using the atomic-formula notation used everywhere around it.",
+      "source_path": "content/model-theory/interpolation/definability.tex",
+      "source_locator": "definability.tex:96",
+      "source_bytes": 4967,
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "target_path": "gu/content/model-theory/interpolation/definability.tex",
+      "target_bytes": 9533,
+      "target_sha256": "fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764",
+      "corrected_body_line": 107,
+      "adjacent_note_line": 110,
+      "handling": "Used the edition's Atom macro with the n arguments and added an adjacent keyed note.",
+      "mathematical_delta": {
+        "removed": "P'c_1…c_n",
+        "added": "Atom(P'; c_1,…,c_n)"
+      },
+      "controlling_evidence": "The entailment immediately before and the rearranged entailment immediately after display the same P-prime atom using the Atom macro.",
+      "current_upstream_master_checked": false,
+      "status": "applied_disclosed_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "rejected_correction_candidates": [
+    {
+      "unit_id": "OLP-0201",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "candidate": "Treat the notation \\eq/[x][x] as an accidental slash.",
+      "resolution": "Rejected: slash is the configured negated-identity variant and the two opening cases deliberately contrast false and true identity sentences.",
+      "status": "no_source_correction"
+    },
+    {
+      "unit_id": "OLP-0201",
+      "source_path": "content/model-theory/interpolation/interpolation-proof.tex",
+      "candidate": "Normalize every \\Lang{L'_i} occurrence to \\Lang{L}'_i.",
+      "resolution": "Rejected as a source correction: applytofirst makes both notations render the intended calligraphic L with prime and subscript; this is harmless notation variation rather than a mathematical defect.",
+      "status": "no_source_correction"
+    },
+    {
+      "unit_id": "OLP-0202",
+      "source_path": "content/model-theory/interpolation/definability.tex",
+      "candidate": "Replace the single satisfaction symbol models by semantic entailment Entails in the corresponding-expansion sentence.",
+      "resolution": "Rejected: the clause compares satisfaction of one sentence by corresponding structures, so models is semantically appropriate; the surrounding entailment claim is at a different level.",
+      "status": "no_source_correction"
+    },
+    {
+      "unit_id": "OLP-0200",
+      "source_path": "content/model-theory/interpolation/separation.tex",
+      "candidate": "Rewrite the meta-notation C(c/x) in the first separation lemma as an object-language formula with an explicit free variable.",
+      "resolution": "Rejected: the surrounding substitution notation and fresh-constant explanation make the intended abstraction unambiguous, and no false inference depends on the stylistic shorthand.",
+      "status": "no_source_correction"
+    }
+  ],
+  "structural_receipt": "PARITY_021.json",
+  "status": "ten_repairs_applied_disclosed_and_structural_semantic_reader_qa_passed",
+  "semantic_receipt": "SEMANTIC_REVIEW_021.json"
+}

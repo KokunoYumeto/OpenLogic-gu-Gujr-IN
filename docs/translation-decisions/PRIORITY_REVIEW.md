@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-20T04:12:20.999572+00:00. This focused queue contains 146 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-20T22:04:57.156139+00:00. This focused queue contains 150 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -1023,3 +1023,31 @@ Generated 2026-09-20T04:12:20.999572+00:00. This focused queue contains 146 high
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘આદિમ પુનરાવર્તન’ accurately express ‘primitive recursion’ with the scope stated here: પુનરાવર્તન continues the edition's recursive-definition family, while આદિમ marks the restricted recursion scheme used to define the effective numerical functions. The nearby Turing-machine gloss fixes the intended computability context. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/model-theory/models-of-arithmetic/computable-models.tex:21`
 - **Gujarati:** `gu/content/model-theory/models-of-arithmetic/computable-models.tex:20`
+
+## GU-T188: interpolation theorem / interpolant → અંતર્વેશન પ્રમેય / અંતર્વેશક
+
+- **Why prioritized:** The head or modifiers are directly attested; the specialist compound or derivative remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અંતર્વેશન પ્રમેય / અંતર્વેશક’ accurately express ‘interpolation theorem / interpolant’ with the scope stated here: The official CSTT mathematics glossary directly attests અંતર્વેશન for interpolation and અંતર્વેશન સૂત્ર for interpolation formula. પ્રમેય is the edition's established theorem term. અંતર્વેશક derives transparently from the attested process noun for the sentence occupying the intermediate entailment position; the displayed theorem fixes its exact logical role. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/interpolation/introduction.tex:13`
+- **Gujarati:** `gu/content/model-theory/interpolation/introduction.tex:13`
+
+## GU-T189: separate / inseparable sets of sentences → પૃથક કરવું / વાક્યોના અપૃથક્કરણીય ગણો
+
+- **Why prioritized:** Native lexical evidence and an explicit formal definition support this choice; specialist preference remains open to correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘પૃથક કરવું / વાક્યોના અપૃથક્કરણીય ગણો’ accurately express ‘separate / inseparable sets of sentences’ with the scope stated here: The Gujarati dictionary directly analyzes અપૃથક્કરણીય as something that cannot be separated, while the official glossary attests context-sensitive mathematical forms for separation. Here the adjacent definition fixes the specialist sense: no sentence has the two required consequence relations. The verb phrase પૃથક કરવું preserves that direction without importing topological separability. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/interpolation/separation.tex:24`
+- **Gujarati:** `gu/content/model-theory/interpolation/separation.tex:18`
+
+## GU-T190: explicitly/implicitly define a predicate → વિધેયને સ્પષ્ટ રીતે / ગૂઢ રીતે વ્યાખ્યાયિત કરવું
+
+- **Why prioritized:** The head or modifiers are directly attested; the specialist compound or derivative remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘વિધેયને સ્પષ્ટ રીતે / ગૂઢ રીતે વ્યાખ્યાયિત કરવું’ accurately express ‘explicitly/implicitly define a predicate’ with the scope stated here: The official glossary directly uses સ્પષ્ટ for explicit equations, forms and functions, and ગૂઢ for implicit and implicit function. GU-T154 already governs વ્યાખ્યેયતા and વ્યાખ્યેય. The two formal definitions distinguish a displayed defining formula from uniqueness of the predicate interpretation across expansions. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/interpolation/definability.tex:32`
+- **Gujarati:** `gu/content/model-theory/interpolation/definability.tex:18`
+
+## GU-T191: joint consistency theorem → સંયુક્ત સુસંગતતા પ્રમેય
+
+- **Why prioritized:** No checked authority directly attests the full specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંયુક્ત સુસંગતતા પ્રમેય’ accurately express ‘joint consistency theorem’ with the scope stated here: સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/interpolation/introduction.tex:25`
+- **Gujarati:** `gu/content/model-theory/interpolation/introduction.tex:24`

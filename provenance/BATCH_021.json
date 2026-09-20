@@ -1,0 +1,125 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-20T22:01:31.306454+00:00",
+  "boundary": "Interpolation OLP-0198–0202 under the cumulative Model Theory profile",
+  "units": [
+    {
+      "unit_id": "OLP-0198",
+      "source_sha256": "5de1f03dcb4be6160c64ed31326b49ded46646aed4c04277aa37da33bbf8d4e9",
+      "target_sha256": "7dd62b03c63f9f0175793987db951d805c52758cb54ef37a968f771c9cfcd90f",
+      "source_bytes": 316,
+      "target_bytes": 337,
+      "aligned_blocks": 10,
+      "raw_source_blocks": 10,
+      "linguistic_blocks": 1,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0199",
+      "source_sha256": "dc7041742d24a32a13406867779feaaf6dd21db030f78d94a3e9621778846882",
+      "target_sha256": "5cdff6e7f1d49484d76f8e74cba3603ea1af6907f745a1b1008756cb814776ae",
+      "source_bytes": 964,
+      "target_bytes": 1608,
+      "aligned_blocks": 8,
+      "raw_source_blocks": 8,
+      "linguistic_blocks": 3,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0200",
+      "source_sha256": "169acacd363892790848d7a4c51119a3f123f6e997e137f584fe88eea1062a6d",
+      "target_sha256": "eb0f38a40ccd42be7e767043069a95c91454d0b0bc0403c3b617aaaf2a619579",
+      "source_bytes": 5002,
+      "target_bytes": 8450,
+      "aligned_blocks": 13,
+      "raw_source_blocks": 13,
+      "linguistic_blocks": 8,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0201",
+      "source_sha256": "702a67f4ca1d4cc9f9e7de64621e6a73a9fdda40c8976d452493a98e2d87a931",
+      "target_sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+      "source_bytes": 9263,
+      "target_bytes": 19053,
+      "aligned_blocks": 18,
+      "raw_source_blocks": 18,
+      "linguistic_blocks": 13,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0202",
+      "source_sha256": "9e62aced717792940ae792b2c6af8ab5a57802f60ebc911276e9065847184c29",
+      "target_sha256": "fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764",
+      "source_bytes": 4967,
+      "target_bytes": 9533,
+      "aligned_blocks": 12,
+      "raw_source_blocks": 12,
+      "linguistic_blocks": 7,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 32,
+  "aligned_blocks": 61,
+  "source_math_spans": 413,
+  "corrected_source_math_spans": 426,
+  "source_corrections": [
+    {
+      "finding_id": "OLINT-001",
+      "unit_id": "OLP-0200",
+      "handling": "Restored not-H in the conclusion and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-002",
+      "unit_id": "OLP-0200",
+      "handling": "Used the required second optional argument and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-003",
+      "unit_id": "OLP-0201",
+      "handling": "Enumerated the sentences of L-prime-1 and L-prime-2 and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-004",
+      "unit_id": "OLP-0201",
+      "handling": "Separated admission of each existential sentence from the subsequent witness addition and explicitly applied the preservation lemma to the completed set, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-005",
+      "unit_id": "OLP-0201",
+      "handling": "Named both the separating L-prime-0 sentence and the stage containing its finite supports, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-006",
+      "unit_id": "OLP-0201",
+      "handling": "Transported the interpretation from M-prime-1 and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-007",
+      "unit_id": "OLP-0201",
+      "handling": "Stated the required agreement only between original-language reducts and derived preservation of A and not-B, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-008",
+      "unit_id": "OLP-0202",
+      "handling": "Used sentences, matching both definitions and the proof, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-009",
+      "unit_id": "OLP-0202",
+      "handling": "Restored the complete biconditional and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLINT-010",
+      "unit_id": "OLP-0202",
+      "handling": "Used the edition's Atom macro with the n arguments and added an adjacent keyed note."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_021.json",
+  "semantic_review": "Exact-block review is recorded for all 32 aligned linguistic blocks; see SEMANTIC_REVIEW_021.json.",
+  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, reflowable EPUB, EPUBCheck, EPUB runtime, untranslated-prose and reviewer-decision QA passed.",
+  "translation_decisions": "Reviewer package regenerated: 356 effective schema-valid decisions, 364 exact occurrences, 362 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and one explicitly pending locator. The OLINF-002 historical false-positive classification remains explicitly qualified.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
+}
