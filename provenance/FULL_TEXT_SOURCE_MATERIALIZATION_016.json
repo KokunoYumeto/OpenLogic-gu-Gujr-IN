@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-full-text-source-materialization/1",
+  "generated_at_utc": "2026-09-21T00:39:12.735685+00:00",
+  "release_tag": "lindstrom-v0.16.0",
+  "coverage": {
+    "translated": 204,
+    "total": 722,
+    "complete_edition": false
+  },
+  "output": {
+    "filename": "OpenLogic-gu-Gujr-IN-Lindstrom-Full-Text.tex",
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Lindstrom-Full-Text.tex",
+    "bytes": 1617796,
+    "sha256": "9c982b16c2db6906b2014a28056e6066cb6d77f793d241817a42f4f87263661b"
+  },
+  "materialized_components": [
+    {
+      "path": "gu-lindstrom.tex",
+      "bytes": 5624,
+      "sha256": "4288ebacd474e96fa1bd9ed4eaf184b69970ffa39ad65f83cc700424ab39e4cb"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 20957,
+      "sha256": "7b84b143bbee7b6c33aee897f7a5dc32b1cab81585c3038520519dce60d82e7f"
+    },
+    {
+      "path": "build/foundations-preamble.tex",
+      "bytes": 3336,
+      "sha256": "fad2d6f5d88df7344cadc2e30148075594c903f3b626e32b0a0a8895e354fee8"
+    },
+    {
+      "path": "build/lindstrom-available-labels.tex",
+      "bytes": 36220,
+      "sha256": "6ea68b959046364343ecc4c22ef4f772c4b6eaca72ffa328a292da46b7dec23a"
+    },
+    {
+      "path": "build/lindstrom-body.tex",
+      "bytes": 1551093,
+      "sha256": "207e948b6238449e3a4169afd6a4f5b11ef4548233b26fc58d906e34e238c4f7"
+    }
+  ],
+  "content_checks": {
+    "reader_body_embedded_exactly": true,
+    "label_index_embedded_exactly": true,
+    "base_driver_embedded": true,
+    "preamble_embedded": true,
+    "rendered_sections": 179,
+    "source_correction_disclosures": 175,
+    "unresolved_cumulative_body_inputs": 0
+  },
+  "dependency_note": "OpenLogic style files, fonts, bibliography support, and diagram assets remain external dependencies supplied by the companion complete source ZIP.",
+  "status": "materialized_pending_guarded_exact_reader_reproduction"
+}

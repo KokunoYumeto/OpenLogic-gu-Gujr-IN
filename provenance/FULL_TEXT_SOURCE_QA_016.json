@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/1",
+  "started_at_utc": "2026-09-21T00:39:33.7419320Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 60000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "input": {
+    "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\OpenLogic-gu-Gujr-IN-Lindstrom-Full-Text.tex",
+    "bytes": 1617796,
+    "sha256": "9c982b16c2db6906b2014a28056e6066cb6d77f793d241817a42f4f87263661b"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 11460,
+      "exit_code": 0,
+      "seconds": 28.3153071,
+      "pdf_bytes": 2192473,
+      "pdf_sha256": "9f14a64e3d354fa8d030bdb536c1f53960426795ca6ac545f7cbfe3906f36921",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 2,
+      "process_id": 46832,
+      "exit_code": 0,
+      "seconds": 28.0802987,
+      "pdf_bytes": 2346237,
+      "pdf_sha256": "604f52ca0406900838685e1c6b90102dde915b5733210361ac8f6fbfad3d5e72",
+      "byte_identical_to_accepted_release_pdf": false
+    },
+    {
+      "pass": 3,
+      "process_id": 63088,
+      "exit_code": 0,
+      "seconds": 30.2592154,
+      "pdf_bytes": 2346298,
+      "pdf_sha256": "129753a75224434ad65ea0a40356e868084eaec414b9da43b5e9aec392bfeb73",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 4,
+      "process_id": 23896,
+      "exit_code": 0,
+      "seconds": 27.8456609,
+      "pdf_bytes": 2346298,
+      "pdf_sha256": "129753a75224434ad65ea0a40356e868084eaec414b9da43b5e9aec392bfeb73",
+      "byte_identical_to_accepted_release_pdf": true
+    },
+    {
+      "pass": 5,
+      "process_id": 7776,
+      "exit_code": 0,
+      "seconds": 28.2715136,
+      "pdf_bytes": 2346298,
+      "pdf_sha256": "129753a75224434ad65ea0a40356e868084eaec414b9da43b5e9aec392bfeb73",
+      "byte_identical_to_accepted_release_pdf": true
+    }
+  ],
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction",
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Lindstrom.pdf",
+    "bytes": 2346298,
+    "sha256": "129753a75224434ad65ea0a40356e868084eaec414b9da43b5e9aec392bfeb73"
+  },
+  "verification": {
+    "convergence_passes": 2,
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 204,
+    "total_units": 722
+  },
+  "ended_at_utc": "2026-09-21T00:42:39.9649007Z"
+}

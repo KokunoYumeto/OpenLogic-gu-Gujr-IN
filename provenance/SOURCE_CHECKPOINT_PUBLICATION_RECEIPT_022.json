@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-source-checkpoint-publication/1",
+  "verified_at_utc": "2026-09-21T00:35:34.089282+00:00",
+  "commit": "fe2c110fdb9febdaeb0ba0342f8462adbe888965",
+  "commit_url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/commit/fe2c110fdb9febdaeb0ba0342f8462adbe888965",
+  "codeload_url": "https://codeload.github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/zip/fe2c110fdb9febdaeb0ba0342f8462adbe888965",
+  "archive": {
+    "bytes": 37251039,
+    "sha256": "f2859c1116830a1fef998e9c40a458326dbe1067a12fbca5ebdefee9f0f0faca"
+  },
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "coverage": {
+    "current_public_source_checkpoint_units": 204,
+    "total_units": 722,
+    "public_artifact_release_units": 199,
+    "complete_edition": false
+  },
+  "checkpoint": {
+    "path": "provenance/SOURCE_CHECKPOINT_022.json",
+    "bytes": 87896,
+    "sha256": "7d9d67bef7198ec0c76585560a445821c13dd8f24e2e323f1cbf4e430a3c937b",
+    "inventory_files_verified": 477,
+    "mismatches": []
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Lindstrom.epub",
+    "bytes": 611382,
+    "sha256": "6276bc4a9b650a397ebc285ac79acd9769db98af86017e91eb68fbf6416da146",
+    "anonymous_exact_commit_readback": true
+  },
+  "status": "passed_anonymous_exact_commit_readback"
+}
