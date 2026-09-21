@@ -1,0 +1,80 @@
+{
+  "schema": "openlogic-gu-epub-browser-runtime/1",
+  "checkpoint": "022",
+  "checked_utc": "2026-09-20T23:56:59.616828+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8768/build/runtime-probe019.html?target=build%2Fepub022-stage%2FOEBPS%2Fcontent.xhtml&qa=022-epub-current",
+  "visual_url": "http://127.0.0.1:8768/build/epub022-visual.html?qa=022-epub-visual",
+  "artifact": "build/epub022-stage/OEBPS/content.xhtml",
+  "artifact_sha256": "e61561dd55ffa891dd189ff179b8c58291eba2746088cedb881cc10784691a26",
+  "epub": "releases/OpenLogic-gu-Gujr-IN-Lindstrom.epub",
+  "epub_sha256": "6276bc4a9b650a397ebc285ac79acd9769db98af86017e91eb68fbf6416da146",
+  "loading_method": "The exact packaged XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative assets.",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "લિન્ડસ્ટ્રોમનું પ્રમેય સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 555,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 15,
+    "loadedImages": 15,
+    "contentIds": 772,
+    "uniqueIds": 772,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1,
+      "lexists": 1,
+      "Atom": 1,
+      "dots": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title and cumulative table of contents in the exact packaged XHTML",
+      "Lindstrom chapter opening and abstract-logic definition",
+      "compactness and downward Loewenheim-Skolem definitions",
+      "partial-isomorphism SVG, caption, and OLLIN-005/006 disclosures",
+      "Lindstrom theorem and proof formulas",
+      "fresh-constant compactness argument and OLLIN-012/013 disclosures"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "partial_isomorphism_svg_geometry_and_labels": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "stale_session_entries": []
+  },
+  "status": "passed"
+}

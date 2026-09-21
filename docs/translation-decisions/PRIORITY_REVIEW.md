@@ -1,6 +1,6 @@
 # Priority Gujarati review
 
-Generated 2026-09-20T22:04:57.156139+00:00. This focused queue contains 150 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
+Generated 2026-09-21T00:21:14.572857+00:00. This focused queue contains 157 high-priority decisions from the complete register. Review can proceed asynchronously from the exact source and target locators.
 
 ## GU-T003: extensionality → ઘટકો દ્વારા નિર્ધારિત સમાનતા
 
@@ -1051,3 +1051,52 @@ Generated 2026-09-20T22:04:57.156139+00:00. This focused queue contains 150 high
 - **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંયુક્ત સુસંગતતા પ્રમેય’ accurately express ‘joint consistency theorem’ with the scope stated here: સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name. If not, which attested form and inflection should replace it, and at which listed target locations?
 - **Source:** `upstream/content/model-theory/interpolation/introduction.tex:25`
 - **Gujarati:** `gu/content/model-theory/interpolation/introduction.tex:24`
+
+## GU-T192: Lindström's theorem → લિન્ડસ્ટ્રોમનું પ્રમેય
+
+- **Why prioritized:** No checked authority directly attests the complete specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘લિન્ડસ્ટ્રોમનું પ્રમેય’ accurately express ‘Lindström's theorem’ with the scope stated here: The mathematician's surname is transliterated and the established edition term પ્રમેય names the theorem. The displayed result fixes the exact characterization: among normal abstract logics, Compactness and Downward Löwenheim--Skolem force no more expressive power than first-order logic. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:11`
+- **Gujarati:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex:11`
+
+## GU-T193: abstract logic / normal abstract logic → અમૂર્ત તર્કશાસ્ત્ર / સામાન્ય અમૂર્ત તર્કશાસ્ત્ર
+
+- **Why prioritized:** Direct authority supports the components; the specialist compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘અમૂર્ત તર્કશાસ્ત્ર / સામાન્ય અમૂર્ત તર્કશાસ્ત્ર’ accurately express ‘abstract logic / normal abstract logic’ with the scope stated here: The official mathematics glossary directly uses અમૂર્ત for abstract algebra and abstract group theory, and lists સામાન્ય as a context-sensitive equivalent of normal. તર્કશાસ્ત્ર is established in the checked Gujarati logic prose. The adjacent seven-property definition prevents સામાન્ય from carrying only its everyday sense. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/lindstrom/abstract-logics.tex:10`
+- **Gujarati:** `gu/content/model-theory/lindstrom/abstract-logics.tex:10`
+
+## GU-T194: normality properties of an abstract logic → $L$-એકદિશવર્ધિતા / વિસ્તાર / એકરૂપતા / પુનઃનામકરણ / બૂલીય / પરિમાણક / સાપેક્ષીકરણ ગુણધર્મો
+
+- **Why prioritized:** The components and formal definition support the choice; specialist preference remains open to correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘$L$-એકદિશવર્ધિતા / વિસ્તાર / એકરૂપતા / પુનઃનામકરણ / બૂલીય / પરિમાણક / સાપેક્ષીકરણ ગુણધર્મો’ accurately express ‘normality properties of an abstract logic’ with the scope stated here: The official glossary directly attests બૂલીય for Boolean algebra. Existing edition decisions govern monotonicity, structure expansion, isomorphism and quantifiers; પુનઃનામકરણ and સાપેક્ષીકરણ transparently describe the two formally stated operations. Each label is immediately followed by its exact semantic condition. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/lindstrom/abstract-logics.tex:52`
+- **Gujarati:** `gu/content/model-theory/lindstrom/abstract-logics.tex:58`
+
+## GU-T195: at least as expressive / equivalent logics → ઓછામાં ઓછું એટલું અભિવ્યક્તિશીલ / સમકક્ષ તર્કશાસ્ત્રો
+
+- **Why prioritized:** No checked authority directly attests the complete specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘ઓછામાં ઓછું એટલું અભિવ્યક્તિશીલ / સમકક્ષ તર્કશાસ્ત્રો’ accurately express ‘at least as expressive / equivalent logics’ with the scope stated here: અભિવ્યક્તિશીલ is already used in the edition for the capacity of a formal logic to express classes of structures. The displayed preorder defines the comparison by exact equality of model classes, while સમકક્ષ records both preorder directions. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/lindstrom/abstract-logics.tex:111`
+- **Gujarati:** `gu/content/model-theory/lindstrom/abstract-logics.tex:130`
+
+## GU-T196: Compactness Property / Downward Löwenheim--Skolem property → સઘનતા ગુણધર્મ / અધોગામી લેવેનહાઇમ--સ્કોલેમ ગુણધર્મ
+
+- **Why prioritized:** The components and formal definition support the choice; specialist preference remains open to correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સઘનતા ગુણધર્મ / અધોગામી લેવેનહાઇમ--સ્કોલેમ ગુણધર્મ’ accurately express ‘Compactness Property / Downward Löwenheim--Skolem property’ with the scope stated here: સઘનતા and the Löwenheim--Skolem name are established edition terms. અધોગામી marks the model-size direction, and each adjacent definition fixes the abstract-logic property: finite satisfiability for the first and an enumerable model for the second. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/lindstrom/ls-property.tex:11`
+- **Gujarati:** `gu/content/model-theory/lindstrom/ls-property.tex:11`
+
+## GU-T197: relational language → સંબંધાત્મક ભાષા
+
+- **Why prioritized:** No checked authority directly attests the complete specialist expression; treat it as provisional.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘સંબંધાત્મક ભાષા’ accurately express ‘relational language’ with the scope stated here: સંબંધ is directly attested and સંબંધાત્મક marks a language whose positive-arity nonlogical vocabulary consists of predicates. The chapter's explicit parenthesis allows individual constants but excludes function symbols, distinguishing this occurrence from the earlier, stricter phrase શુદ્ધ સંબંધાત્મક ભાષા. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/lindstrom/introduction.tex:19`
+- **Gujarati:** `gu/content/model-theory/lindstrom/introduction.tex:19`
+
+## GU-T198: discrete linear order → વિકિર્ણ સુરેખ ક્રમ
+
+- **Why prioritized:** Direct authority supports the components; the specialist compound remains open to expert correction.
+- **Question:** Please double-check: In Gujarati mathematical-logic prose, does ‘વિકિર્ણ સુરેખ ક્રમ’ accurately express ‘discrete linear order’ with the scope stated here: The official mathematics glossary directly attests discrete as વિકિર્ણ and linear order as સુરેખ ક્રમ. Their composition names the first-order coded order whose elements have successive finite distances, with a first but no last element. If not, which attested form and inflection should replace it, and at which listed target locations?
+- **Source:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:101`
+- **Gujarati:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex:116`

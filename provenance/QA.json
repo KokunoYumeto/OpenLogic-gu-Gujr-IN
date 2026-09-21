@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-20T22:33:43.253450+00:00",
+  "checkpoint_utc": "2026-09-21T00:31:11.378958+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 199,
+  "translated_units": 204,
   "publicly_verified_release_units": 199,
   "publicly_verified_source_checkpoint_units": 199,
   "total_units": 722,
-  "aligned_linguistic_blocks": 2125,
-  "source_math_spans_verified": 11871,
+  "aligned_linguistic_blocks": 2156,
+  "source_math_spans_verified": 12217,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 2125,
-    "samples": 1088,
+    "exact_block_reviews": 2156,
+    "samples": 1114,
     "independent_native_certification": false,
-    "status": "passed_for_current_199_unit_scope"
+    "status": "passed_for_current_204_unit_scope"
   },
   "source_corrections": {
-    "count": 162,
+    "count": 175,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -180,21 +180,34 @@
       "OLINT-007",
       "OLINT-008",
       "OLINT-009",
-      "OLINT-010"
+      "OLINT-010",
+      "OLLIN-001",
+      "OLLIN-002",
+      "OLLIN-003",
+      "OLLIN-004",
+      "OLLIN-005",
+      "OLLIN-006",
+      "OLLIN-007",
+      "OLLIN-008",
+      "OLLIN-009",
+      "OLLIN-010",
+      "OLLIN-011",
+      "OLLIN-012",
+      "OLLIN-013"
     ],
     "status": "disclosed_and_correction_aware_parity_passed"
   },
   "html": {
-    "path": "reader/interpolation.html",
-    "bytes": 5161847,
-    "sha256": "a8bc1c57a7da77a065f4bacb24157856019379a8aa1f1d25b089b833cf866bdf",
-    "source_units_covered": 199,
-    "interpolation_units_complete": 5,
-    "rendered_model_theory_hierarchy_headings": 21,
-    "logic_profile": "model-theory basics and arithmetic models followed by sentence separation, Craig interpolation, and Beth definability",
-    "mathml_nodes": 11786,
-    "mathml_tables": 709,
-    "block_mathml_nodes": 551,
+    "path": "reader/lindstrom.html",
+    "bytes": 5306185,
+    "sha256": "66891de19fbd62e317c9f7014fc579b6de216869a9f15ea9216c66222147bb50",
+    "source_units_covered": 204,
+    "lindstrom_units_complete": 5,
+    "rendered_model_theory_hierarchy_headings": 26,
+    "logic_profile": "model-theory basics, arithmetic models, interpolation and definability, followed by abstract logics and Lindstrom's characterization theorem",
+    "mathml_nodes": 12178,
+    "mathml_tables": 710,
+    "block_mathml_nodes": 555,
     "proof_representation_entries": 208,
     "proof_representation_kinds": {
       "axiomatic_derivation": 6,
@@ -217,11 +230,11 @@
     "truth_tables": 5,
     "axiomatic_derivation_tables": 6,
     "main_operator_tables": 1,
-    "images": 14,
-    "unique_ids": 759,
-    "table_of_contents_links": 205,
+    "images": 15,
+    "unique_ids": 772,
+    "table_of_contents_links": 210,
     "broken_internal_links": 0,
-    "model_theory_arithmetic_and_interpolation_hierarchy_ids": [
+    "model_theory_through_lindstrom_hierarchy_ids": [
       "નદરશસદધત",
       "નદરશસદધતન-પય",
       "નયનરપ-અન-વસતર",
@@ -242,7 +255,12 @@
       "પરચય-1",
       "વકયન-પથકકરણ",
       "કરગન-અતરવશન-પરમય",
-      "વયખયયત-પરમય"
+      "વયખયયત-પરમય",
+      "લનડસટરમન-પરમય",
+      "પરચય-2",
+      "અમરત-તરકશસતર",
+      "સઘનત-અન-લવનહઇમસકલમ-ગણધરમ",
+      "લનડસટરમન-પરમય-1"
     ],
     "source_correction_notes": [
       "OLFUN-002",
@@ -406,7 +424,20 @@
       "OLINT-007",
       "OLINT-008",
       "OLINT-009",
-      "OLINT-010"
+      "OLINT-010",
+      "OLLIN-001",
+      "OLLIN-002",
+      "OLLIN-003",
+      "OLLIN-004",
+      "OLLIN-005",
+      "OLLIN-006",
+      "OLLIN-007",
+      "OLLIN-008",
+      "OLLIN-009",
+      "OLLIN-010",
+      "OLLIN-011",
+      "OLLIN-012",
+      "OLLIN-013"
     ],
     "literal_macro_correction_references": {
       "sFmla": 2,
@@ -427,12 +458,12 @@
       "sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93"
     },
     "build_qa": {
-      "path": "build/interpolation-html-qa.json",
-      "sha256": "148a4c7372da33452c4102cb70b6b50ee86801a1a53e3daea3cce038c8982bba"
+      "path": "build/lindstrom-html-qa.json",
+      "sha256": "14e75a81cd48476f2cb844f7ace72c1c95303d84fa4566db199f8bdaccf0408b"
     },
     "prepared_tex": {
-      "path": "build/interpolation-html.tex",
-      "sha256": "47f5884c57c927a9756c637c6e66c238cbf23f864d1b187455379e8e85e5dcd7"
+      "path": "build/lindstrom-html.tex",
+      "sha256": "10d6bc6a46e1937ad3377f71fd347a21ce1ab3cddbc6f2a44d71ff0b6bab4a29"
     },
     "pandoc_warnings": [
       "[WARNING] The term Abstract has no translation defined."
@@ -443,20 +474,20 @@
     "intentionally_scrollable_block_mathml_nodes": 3
   },
   "pdf": {
-    "path": "build/gu-interpolation.pdf",
-    "bytes": 2295335,
-    "sha256": "3e42c61a77ce9987e8c04e000fc81f19ea5bf4d8bf5e1fe19e0fba6f3d604729",
-    "pages": 255,
+    "path": "build/gu-lindstrom.pdf",
+    "bytes": 2346298,
+    "sha256": "129753a75224434ad65ea0a40356e868084eaec414b9da43b5e9aec392bfeb73",
+    "pages": 260,
     "page_size": "A4",
     "page_size_points": [
       595.276,
       841.89
     ],
-    "title": "અંતર્વેશન પ્રમેય સહિત ઓપન લોજિક ગુજરાતી",
+    "title": "લિન્ડસ્ટ્રોમનું પ્રમેય સહિત ઓપન લોજિક ગુજરાતી",
     "encrypted": false,
-    "nonempty_extracted_text_pages": 255,
+    "nonempty_extracted_text_pages": 260,
     "status": "passed_reproducible_build_and_all_page_visual_qa",
-    "build_receipt": "BUILD_RECEIPT_021.json",
+    "build_receipt": "BUILD_RECEIPT_022.json",
     "three_passes_byte_identical": true,
     "all_pages_visually_inspected": true
   },
@@ -608,9 +639,17 @@
       "corrected_math": 426,
       "semantic": 27,
       "exact_block_reviews": 32
+    },
+    "022": {
+      "units": 5,
+      "blocks": 31,
+      "math": 346,
+      "corrected_math": 358,
+      "semantic": 26,
+      "exact_block_reviews": 31
     }
   },
-  "status": "199_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "204_unit_source_html_pdf_epub_and_cumulative_qa_passed; public_github_and_zenodo_release_remains_199_units; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -673,14 +712,14 @@
   },
   "translation_decisions": {
     "path": "docs/translation-decisions/TRANSLATION_DECISION_QA.json",
-    "sha256": "2bee2eb29f5d4acb06f541ab021ea4a32ebe5db439df9649ff9557c687762b1f",
+    "sha256": "2b6667708c0305124243d9a80a9c9c614da5f150ea510c34fa8e060a907e299d",
     "status": "passed",
     "coverage": {
-      "decisions": 356,
-      "occurrences": 364
+      "decisions": 376,
+      "occurrences": 384
     },
     "reader_locators": {
-      "available": 362,
+      "available": 382,
       "pending": 1,
       "not_applicable": 1
     }
@@ -835,17 +874,17 @@
     "epub_qa": "EPUB_QA_013.json"
   },
   "epub": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-Interpolation.epub",
-    "bytes": 598724,
-    "sha256": "4d43cbc0402e8b95d80308aae60b5249f6953b672fa831555228c5b7aa3f9370",
+    "path": "releases/OpenLogic-gu-Gujr-IN-Lindstrom.epub",
+    "bytes": 611382,
+    "sha256": "6276bc4a9b650a397ebc285ac79acd9769db98af86017e91eb68fbf6416da146",
     "version": "EPUB 3.3",
     "layout": "reflowable",
     "language": "gu-IN",
     "direction": "ltr",
     "coverage": {
-      "translated": 199,
+      "translated": 204,
       "total": 722,
-      "units": "OLP-0004–0202"
+      "units": "OLP-0004–0207"
     },
     "complete_edition": false,
     "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa",
@@ -1079,5 +1118,37 @@
     "pdf_qa": "PDF_QA_021.json",
     "epub_qa": "EPUB_QA_021.json",
     "cumulative_gate": "CUMULATIVE_QA_021.json"
+  },
+  "batch_022": {
+    "draft_units": 5,
+    "remaining_units": [],
+    "structural_parity": "passed_after_13_disclosed_source_corrections",
+    "source_correction_ids": [
+      "OLLIN-001",
+      "OLLIN-002",
+      "OLLIN-003",
+      "OLLIN-004",
+      "OLLIN-005",
+      "OLLIN-006",
+      "OLLIN-007",
+      "OLLIN-008",
+      "OLLIN-009",
+      "OLLIN-010",
+      "OLLIN-011",
+      "OLLIN-012",
+      "OLLIN-013"
+    ],
+    "linguistic_blocks": 31,
+    "math_spans": 346,
+    "corrected_math_spans": 358,
+    "semantic_samples": "passed_31_exact_block_reviews_and_26_reverse_paraphrase_samples",
+    "render": "passed_cumulative_exact_html_dom_mathml_proof_link_asset_and_character_qa_plus_reproducible_260_page_pdf_all_page_visual_qa_and_epub_qa",
+    "browser": "passed_live_browser_inspection_and_geometry_check_of_all_555_block_mathml_nodes; three wide tableaux are horizontally scrollable and none are clipped",
+    "untranslated_prose": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+    "translation_decisions": "passed_json_schema_with_382_available_1_explicitly_pending_and_1_explicitly_not_applicable_reader_locator",
+    "html_qa": "HTML_QA_022.json",
+    "pdf_qa": "PDF_QA_022.json",
+    "epub_qa": "EPUB_QA_022.json",
+    "cumulative_gate": "CUMULATIVE_QA_022.json"
   }
 }

@@ -1,0 +1,159 @@
+% Part: first-order-logic
+% Chapter: lindstrom
+% Section: lindstrom-proof
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{lin}{prf}
+
+\olsection{લિન્ડસ્ટ્રોમનું પ્રમેય}
+
+\begin{lem}
+\ollabel{lem:lindstrom}
+ધારો કે $\Lang{L}$ સાન્ત છે, $!E \in L(\Lang{L})$, અને એવું
+$n \in \Nat$ પણ છે કે કોઈ પણ બે !!{structure}s $\Struct{M}$ અને
+$\Struct{N}$ માટે, જો $\Struct{M} \equiv_n \Struct{N}$ અને
+$\Struct{M} \models_L !E$, તો $\Struct{N} \models_L !E$ પણ. ત્યારે
+$!E$ કોઈ પ્રથમ-ક્રમ !!{sentence}ને સમકક્ષ છે; એટલે કે, એવું પ્રથમ-ક્રમ
+$!D$ છે કે $\Mod(L){!E} = \Mod(L){!D}$.
+\end{lem}
+
+\begin{proof}
+એવું $n$ લો કે કોઈ પણ બે $n$-સમકક્ષ !!{structure}s $\Struct{M}$ અને
+$\Struct{N}$, $!E$ને આપાતા સત્યમૂલ્ય પર સંમત હોય.
+\olref[bas][pis]{prop:qr-finite} યાદ કરો: સાન્ત !!{language}માં
+પરિમાણક-ક્રમ વધુમાં વધુ~$n$ હોય એવાં પ્રથમ-ક્રમ !!{sentence}s તાર્કિક
+સમકક્ષતા સુધી માત્ર સાન્ત સંખ્યામાં છે. હવે દરેક નિશ્ચિત
+!!{structure}~$\Struct{M}$ માટે $!D_{\Struct{M}}$ને $\Struct{M}$માં
+સાચાં અને $\QuantRank{!A} \le n$ ધરાવતાં બધાં પ્રથમ-ક્રમ
+!!{sentence}s~$!A$નું સંયોજન ગણો (તાર્કિક સમકક્ષતા સુધી આ સંયોજન
+સાન્ત છે), જેથી $\Struct{N} \models !D_{\Struct{M}}$ ત્યારે અને માત્ર
+ત્યારે જ્યારે $\Struct{N} \equiv_n \Struct{M}$. પછી
+$!D = \textstyle\bigvee
+\Setabs{!D_{\Struct{M}}}{\Struct{M} \models_L !E}$ મૂકો; આ વિયોજન પણ
+તાર્કિક સમકક્ષતા સુધી સાન્ત છે.
+\sourcecorrection{OLLIN-009}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{lindstrom-proof.tex}, પંક્તિઓ~30--32માં નિશ્ચિત અમૂર્ત વાક્ય
+  $!E$ જ ફરીથી સંયોજનમાં વ્યાપ્ત પ્રથમ-ક્રમ વાક્ય માટે વપરાય છે. અંદરના
+  બંધ ચલને $!A$ કરીને નિશ્ચિત $!E$થી અલગ રાખ્યો છે.}
+
+$\Mod(L){!E} = \Mod(L){!D}$નો નિષ્કર્ષ હવે મળે છે. ખરેખર, જો
+$\Struct{N} \models_L !D$, તો કોઈ $\Struct{M} \models_L !E$ માટે
+$\Struct{N} \models !D_{\Struct{M}}$; તેથી લેમાની પરિકલ્પનાથી
+$\Struct{N} \models_L !E$ પણ. ઊલટું, જો $\Struct{N} \models_L !E$,
+તો $!D_\Struct{N}$ એ $!D$માંનો એક વિયોજ્ય છે, અને $\Struct{N}
+\models !D_\Struct{N}$ હોવાથી $\Struct{N} \models_L !D$ પણ.
+\end{proof}
+
+\begin{thm}[લિન્ડસ્ટ્રોમનું પ્રમેય]
+  \ollabel{thm:lindstrom} ધારો કે $\tuple{L, \models_L}$ એ સઘનતા અને
+  લેવેનહાઇમ--સ્કોલેમ ગુણધર્મો ધરાવતું સામાન્ય તર્કશાસ્ત્ર છે. ત્યારે
+  $\tuple{L, \models_L} \le \tuple{F, \models}$ (આથી
+  $\tuple{L, \models_L}$ પ્રથમ-ક્રમ તર્કશાસ્ત્રને સમકક્ષ છે).
+  \sourcecorrection{OLLIN-010}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{lindstrom-proof.tex}, પંક્તિઓ~47--51ના પ્રમેયમાં
+    સામાન્યતા-પરિકલ્પના છૂટી ગઈ છે, જોકે સાબિતીમાં એકરૂપતા, વિસ્તાર,
+    બૂલીય અને સાપેક્ષીકરણ ગુણધર્મો વપરાય છે અને સમકક્ષતાનો ઊલટો ક્રમ
+    પણ સામાન્યતા પરથી આવે છે. અહીં આવશ્યક પરિકલ્પના સ્પષ્ટ કરી છે.}
+\end{thm}
+
+\begin{proof}
+\olref{lem:lindstrom} મુજબ એટલું બતાવવું પૂરતું છે કે સાન્ત
+$\Lang{L}$ માટેના દરેક $!E \in L(\Lang{L})$ માટે એવું $n \in \Nat$
+છે કે કોઈ પણ બે !!{structure}s $\Struct{M}$ અને $\Struct{N}$ માટે: જો
+$\Struct{M} \equiv_n \Struct{N}$, તો $\Struct{M}$ અને $\Struct{N}$
+$!E$ પર સંમત હોય. કારણ કે ત્યારે $!E$ પ્રથમ-ક્રમ !!{sentence}ને સમકક્ષ
+હશે અને તેમાંથી $\tuple{L, \models_L} \le \tuple{F, \models}$
+ફલિત થાય છે. આપણે સાન્ત, શુદ્ધ સંબંધાત્મક !!{language}માં કામ કરીએ
+છીએ, તેથી \olref[bas][pis]{thm:b-n-f}થી $\Struct{M} \equiv_n
+\Struct{N}$ને અનુરૂપ બીજગણિતીય વિધાન $I_n(\emptyset,\emptyset)$થી
+બદલી શકીએ છીએ.
+
+$!E$ આપેલું હોય ત્યારે વિરોધાભાસ માટે ધારો કે દરેક $n$ માટે એવી
+!!{structure}s $\Struct{M}_n$ અને $\Struct{N}_n$ છે કે
+$I_n(\emptyset, \emptyset)$, પણ (ધારો કે) $\Struct{M}_n \models_L !E$
+જ્યારે $\Struct{N}_n \not\models_L !E$. એકરૂપતા ગુણધર્મથી આપણે માની
+શકીએ છીએ કે બધી $\Struct{M}_n$ ભાષાનાં અચળોનું સમાન પદાર્થો તરીકે
+અર્થઘટન કરે છે. વધુમાં, ભાષામાં માત્ર સાન્ત સંખ્યામાં આણ્વિક
+!!{sentence}s હોવાથી તેઓ એ જ આણ્વિક !!{sentence}s સંતોષે છે એમ પણ
+માની શકીએ છીએ (નહિતર $\Struct{M}$ની શ્રેણીમાંથી ઉપશ્રેણી લઈ શકાય).
+$\Struct{M}$ને બધી $\Struct{M}_n$નો સંઘ ગણો, એટલે કે દરેક
+$\Struct{M}_n$ને ઉપસંરચના તરીકે ધરાવતી અદ્વિતીય લઘુતમ !!{structure}.
+\olref[lsp]{thm:abstract-p-isom}ની સાબિતીની જેમ $\Struct{M}^*$ને
+$\Domain{M} \cup \Domain{M}^{<\omega}$ !!{domain} ધરાવતો અને જોડાણ
+વિધેયો $P$ અને $Q$ ધરાવતી વિસ્તૃત !!{language}માંનો
+$\Struct{M}$નો વિસ્તાર ગણો.
+
+$\Struct{N}_n$, $\Struct{N}$ અને $\Struct{N}^*$ને એ જ રીતે વ્યાખ્યાયિત
+કરો. હવે $\Struct{A}$ને એવી !!{structure} ગણો જેના !!{domain}માં
+$\Struct{M}^*$ અને $\Struct{N}^*$નાં !!{domain}s ઉપરાંત પ્રાકૃતિક
+સંખ્યાઓ~$\Nat$ તથા તેમનો સ્વાભાવિક ક્રમ~$\le$ આવે છે. એની
+!!{language}માં !!{domain}s $\Domain{M}$, $\Domain{N}$,
+$\Domain{M}^{<\omega}$ અને $\Domain{N}^{<\omega}$ દર્શાવતાં વધારાનાં
+વિધેયો છે, તેમજ નીચેના અર્થમાં $\Struct{M}_n$ અને
+$\Struct{N}_n$નાં વ્યાપકક્ષેત્રોને સાંકેતિક રીતે રજૂ કરતાં
+વિધેયો છે:
+\begin{align*}
+  \Domain{M_n} & = \Setabs{a \in \Domain{M}}{R(a, n)}; &
+  \Domain{N_n} & = \Setabs{a \in \Domain{N}}{S(a,n)}; \\
+  \Domain{M}^{<\omega}_n & = \Setabs{a \in \Domain{M}^{<\omega}}{R(a,n)}; &
+  \Domain{N}^{<\omega}_n & = \Setabs{a \in \Domain{N}^{<\omega}}{S(a,n)}.
+\end{align*}
+!!{structure}~$\Struct{A}$માં એવો ત્રિસ્થાની સંબંધ $J$ પણ છે કે
+$J(n, \mathbf{a}, \mathbf{b})$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$I_n(\mathbf{a}, \mathbf{b})$.
+\sourcecorrection{OLLIN-011}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{lindstrom-proof.tex}, પંક્તિઓ~74--98માં સંઘ
+  $\Struct M$ને વ્યાખ્યાયિત કર્યા પછી પ્રાકૃતિક સંખ્યાઓ અને બંને તારકિત
+  સંરચનાઓ ધરાવતી વધુ મોટી સંરચનાને પણ ફરી $\Struct M$ કહેવામાં આવી છે.
+  વ્યાપક સંરચના માટે $\Struct A$ રાખીને બધા અનુગામી સંદર્ભો અલગ કર્યા
+  છે.}
+
+હવે $R$, $S$, $J$ વગેરે વડે વિસ્તૃત !!{language}~$\Lang{L}$માં એવું
+!!a{sentence}~$!D$ છે જે કહે છે કે $\le$ એ પ્રથમ પરંતુ અંતિમ ઘટક વિનાનો
+વિકિર્ણ સુરેખ ક્રમ છે, $\Struct{M}_n \models_L !E$ અને
+$\Struct{N}_n \not\models_L !E$, અને ક્રમના દરેક $n$ માટે
+$J(n, \mathbf{a}, \mathbf{b})$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$I_n(\mathbf{a}, \mathbf{b})$.
+\sourcecorrection{OLLIN-012}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{lindstrom-proof.tex}, પંક્તિઓ~100--105માં અમૂર્ત વાક્ય
+  $!E$ માટે $\models$ લખાયું છે. $!E\in L(\Lang L)$ હોવાથી અહીં
+  સંતોષ-સંબંધ $\models_L$ અને તેનો નિષેધ જરૂરી છે; બંને મૂક્યાં છે.}
+
+એક નવું અચળ $c$ ઉમેરો અને દરેક પ્રમાણભૂત $m\in\Nat$ માટે
+$!B_m(c)$ને એવું પ્રથમ-ક્રમ !!{sentence} ગણો જે કહે છે કે ક્રમમાં
+$c$ પહેલાં ઓછામાં ઓછા $m$ ઘટકો છે. ગણ
+\[
+  \{!D\} \cup \Setabs{!B_m(c)}{m\in\Nat}
+\]
+નો દરેક સાન્ત ઉપગણ $\Struct{A}$માં $c$નું અર્થઘટન પૂરતી મોટી પ્રાકૃતિક
+સંખ્યા તરીકે કરીને સંતોષી શકાય છે. સઘનતા ગુણધર્મથી સમગ્ર ગણને સંતોષતું
+નિદર્શ $\Struct{A}^*$ મળે છે. જો $n^*=\Assign{c}{A^*}$, તો દરેક
+પ્રમાણભૂત $m$ માટે $n^*$ પહેલાં ઓછામાં ઓછા $m$ ઘટકો છે; તેથી $n^*$
+અપ્રમાણભૂત ઘટક છે.
+\sourcecorrection{OLLIN-013}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{lindstrom-proof.tex}, પંક્તિઓ~107--108માં એકલા $!D$ પર
+  સઘનતા લાગુ કરીને અપ્રમાણભૂત ઘટકવાળું નિદર્શ મળતું હોવાનું કહેવાયું
+  છે. $!D$નું પ્રમાણભૂત પ્રાકૃતિક-ક્રમવાળું નિદર્શ પણ છે, તેથી એ
+  નિષ્કર્ષ માટે નવું અચળ અને દરેક પ્રમાણભૂત સાન્ત ઊંચાઈને વટાવતાં
+  વાક્યોનો પ્રકાર જરૂરી છે. દરેક સાન્ત ભાગની સંતોષ્યતા અને ત્યાર પછીની
+  સઘનતા અહીં સ્પષ્ટ કરી છે; મળતા વ્યાપક નિદર્શને અગાઉના
+  $\Struct M^*$થી ભિન્ન $\Struct A^*$ નામ પણ આપ્યું છે.}
+ખાસ કરીને, $\Struct{A^*}$માં એવી ઉપ!!{structure}s
+$\Struct{M_{n^*}}$ અને $\Struct{N_{n^*}}$ હશે કે
+$\Struct{M_{n^*}} \models_L !E$ અને $\Struct{N_{n^*}}
+\not\models_L !E$. હવે $\Domain{M_{n^*}}$ અને
+$\Domain{N_{n^*}}$ની $k$-યુગ્મકોનાં યુગ્મોનો ગણ $\mathcal{I}$ એ રીતે
+વ્યાખ્યાયિત કરી શકીએ કે
+$\tuple{\mathbf{a}, \mathbf{b}} \in \mathcal{I}$ ત્યારે અને માત્ર
+ત્યારે જ્યારે $J(n^*-k, \mathbf{a}, \mathbf{b})$, જ્યાં $k$ એ
+$\mathbf{a}$ અને $\mathbf{b}$ની લંબાઈ છે. $n^*$ અપ્રમાણભૂત હોવાથી
+દરેક પ્રમાણભૂત $k$ માટે $n^* - k >0$, અને ગણ $\mathcal{I}$ એ હકીકતનો
+સાક્ષી છે કે $\Struct{M_{n^*}} \simeq_p \Struct{N_{n^*}}$. પરંતુ
+\olref[lsp]{thm:abstract-p-isom}થી $\Struct{M_{n^*}}$ અને
+$\Struct{N_{n^*}}$ $L$-સમકક્ષ છે, જે વિરોધાભાસ છે.
+\end{proof}
+
+\end{document}

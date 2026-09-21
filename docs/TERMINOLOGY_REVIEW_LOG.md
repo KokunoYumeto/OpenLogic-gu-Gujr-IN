@@ -1,6 +1,6 @@
 # Gujarati terminology and translation review log
 
-Updated 2026-09-20T22:34:54.654229+00:00. This is a **complete decision log for the current 199/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint and artifact-release verification cover 199/722 units through checkpoint 021 and v0.15.0. It contains all 191 terminology decisions from the durable ledger and all 162 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
+Updated 2026-09-21T00:21:55.367357+00:00. This is a **complete decision log for the current 204/722-unit draft**, while the translation corpus itself remains partial. Public source-checkpoint verification covers 199/722 units with checkpoint 021. It contains all 198 terminology decisions from the durable ledger and all 175 source corrections identified so far, plus 1 independently reviewed source-claim qualification. It must grow with the translation.
 
 Every term entry names the wording and sense, exact current English/Gujarati use locations where a literal form exists, the Gujarati authorities actually checked, recoverable alternatives, rationale, uncertainty and a question an expert can answer asynchronously. “Retrospective” means the explanation was reconstructed from earlier durable records; it does not claim an unrecorded search or consultation. Provisional entries are open corrections and do not stop the full-corpus workflow.
 
@@ -2109,6 +2109,83 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** સહસુસંગતતા પ્રમેય — compact, but can imply pairwise compatibility rather than consistency of the union.; જોડાણ-સુસંગતતા પ્રમેય — explanatory, though less natural as a fixed theorem title.
 - **Review question:** In Gujarati mathematical-logic prose, does ‘સંયુક્ત સુસંગતતા પ્રમેય’ accurately express ‘joint consistency theorem’ with the scope stated here: સુસંગતતા and પ્રમેય are established edition terms with direct canon support. સંયુક્ત marks that the theorem concerns consistency after combining two theories. The chapter's introductory explanation controls this exact scope; no checked source directly attests the full eponymous theorem name. If not, which attested form and inflection should replace it, and at which listed target locations?
 
+### GU-T192: Lindström's theorem → લિન્ડસ્ટ્રોમનું પ્રમેય
+
+- **Status and uncertainty:** `provisional_transliteration`; open. No checked authority directly attests the complete specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_lindstrom_translation; `work/add_lindstrom_terms.py`.
+- **English use:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:11` (OLP-0207, “Lindstr\"om's Theorem”)
+- **Gujarati use:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex:11` (OLP-0207, “લિન્ડસ્ટ્રોમનું પ્રમેય”)
+- **Authorities actually checked:** `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The mathematician's surname is transliterated and the established edition term પ્રમેય names the theorem. The displayed result fixes the exact characterization: among normal abstract logics, Compactness and Downward Löwenheim--Skolem force no more expressive power than first-order logic.
+- **Alternatives:** લિન્ડસ્ટ્રૉમનું પ્રમેય — a possible vowel-marking variant; the adopted spelling is simpler and remains recognizable.; લિન્ડસ્ટ્રોમ લક્ષણન પ્રમેય — more explanatory, but longer than the source title.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘લિન્ડસ્ટ્રોમનું પ્રમેય’ accurately express ‘Lindström's theorem’ with the scope stated here: The mathematician's surname is transliterated and the established edition term પ્રમેય names the theorem. The displayed result fixes the exact characterization: among normal abstract logics, Compactness and Downward Löwenheim--Skolem force no more expressive power than first-order logic. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T193: abstract logic / normal abstract logic → અમૂર્ત તર્કશાસ્ત્ર / સામાન્ય અમૂર્ત તર્કશાસ્ત્ર
+
+- **Status and uncertainty:** `adopted_direct_modifiers_contextual_compound`; low_to_medium. Direct authority supports the components; the specialist compound remains open to expert correction.
+- **Record origin:** contemporaneous_lindstrom_translation; `work/add_lindstrom_terms.py`.
+- **English use:** `upstream/content/model-theory/lindstrom/abstract-logics.tex:10` (OLP-0205, “abstract logic”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:50` (OLP-0205, “is \emph{normal}”)
+- **Gujarati use:** `gu/content/model-theory/lindstrom/abstract-logics.tex:10` (OLP-0205, “અમૂર્ત તર્કશાસ્ત્ર”); `gu/content/model-theory/lindstrom/abstract-logics.tex:56` (OLP-0205, “\emph{સામાન્ય}”)
+- **Authorities actually checked:** `GU-P083` (GU-CSTT-MATH, {"pdf_page_one_based": 26, "printed_page": "1"}); `GU-P087` (GU-CSTT-MATH, {"pdf_page_one_based": 141, "printed_page": "116"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The official mathematics glossary directly uses અમૂર્ત for abstract algebra and abstract group theory, and lists સામાન્ય as a context-sensitive equivalent of normal. તર્કશાસ્ત્ર is established in the checked Gujarati logic prose. The adjacent seven-property definition prevents સામાન્ય from carrying only its everyday sense.
+- **Alternatives:** અમૂર્ત તર્ક / સામાન્ય અમૂર્ત તર્ક — shorter, but the edition consistently uses તર્કશાસ્ત્ર for a logic as a formal subject.; નિયમિત અમૂર્ત તર્કશાસ્ત્ર — would emphasize rule-governed behavior, but it is less faithful to the source label and lacks direct attestation here.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘અમૂર્ત તર્કશાસ્ત્ર / સામાન્ય અમૂર્ત તર્કશાસ્ત્ર’ accurately express ‘abstract logic / normal abstract logic’ with the scope stated here: The official mathematics glossary directly uses અમૂર્ત for abstract algebra and abstract group theory, and lists સામાન્ય as a context-sensitive equivalent of normal. તર્કશાસ્ત્ર is established in the checked Gujarati logic prose. The adjacent seven-property definition prevents સામાન્ય from carrying only its everyday sense. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T194: normality properties of an abstract logic → $L$-એકદિશવર્ધિતા / વિસ્તાર / એકરૂપતા / પુનઃનામકરણ / બૂલીય / પરિમાણક / સાપેક્ષીકરણ ગુણધર્મો
+
+- **Status and uncertainty:** `adopted_componentwise_contextual`; medium. The components and formal definition support the choice; specialist preference remains open to correction.
+- **Record origin:** contemporaneous_lindstrom_translation; `work/add_lindstrom_terms.py`.
+- **English use:** `upstream/content/model-theory/lindstrom/abstract-logics.tex:52` (OLP-0205, “$L$-Monotonicity”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:55` (OLP-0205, “Expansion Property”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:61` (OLP-0205, “Isomorphism Property”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:64` (OLP-0205, “Renaming Property”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:72` (OLP-0205, “Boolean Property”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:80` (OLP-0205, “Quantifier Property”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:90` (OLP-0205, “Relativization Property”)
+- **Gujarati use:** `gu/content/model-theory/lindstrom/abstract-logics.tex:58` (OLP-0205, “$L$-એકદિશવર્ધિતા”); `gu/content/model-theory/lindstrom/abstract-logics.tex:61` (OLP-0205, “વિસ્તાર ગુણધર્મ”); `gu/content/model-theory/lindstrom/abstract-logics.tex:67` (OLP-0205, “એકરૂપતા ગુણધર્મ”); `gu/content/model-theory/lindstrom/abstract-logics.tex:69` (OLP-0205, “પુનઃનામકરણ ગુણધર્મ”); `gu/content/model-theory/lindstrom/abstract-logics.tex:83` (OLP-0205, “બૂલીય ગુણધર્મ”); `gu/content/model-theory/lindstrom/abstract-logics.tex:90` (OLP-0205, “પરિમાણક ગુણધર્મ”); `gu/content/model-theory/lindstrom/abstract-logics.tex:104` (OLP-0205, “સાપેક્ષીકરણ ગુણધર્મ”)
+- **Authorities actually checked:** `GU-P084` (GU-CSTT-MATH, {"pdf_page_one_based": 40, "printed_page": "15"}); `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"}); `GU-P064` (GU-VK-ALGEBRA, {"line_one_based": 104, "last_line_one_based": 104, "utf8_start": 78692, "utf8_end": 80312, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P068` (GU-VK-TRUTH, {"line_one_based": 82, "last_line_one_based": 83, "utf8_start": 32344, "utf8_end": 34738, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The official glossary directly attests બૂલીય for Boolean algebra. Existing edition decisions govern monotonicity, structure expansion, isomorphism and quantifiers; પુનઃનામકરણ and સાપેક્ષીકરણ transparently describe the two formally stated operations. Each label is immediately followed by its exact semantic condition.
+- **Alternatives:** નામપરિવર્તન for renaming — clear, but પુનઃનામકરણ more directly names systematic replacement by fresh names.; સાપેક્ષીકૃતિ for relativization — compact, though સાપેક્ષીકરણ more clearly names the operation.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘$L$-એકદિશવર્ધિતા / વિસ્તાર / એકરૂપતા / પુનઃનામકરણ / બૂલીય / પરિમાણક / સાપેક્ષીકરણ ગુણધર્મો’ accurately express ‘normality properties of an abstract logic’ with the scope stated here: The official glossary directly attests બૂલીય for Boolean algebra. Existing edition decisions govern monotonicity, structure expansion, isomorphism and quantifiers; પુનઃનામકરણ and સાપેક્ષીકરણ transparently describe the two formally stated operations. Each label is immediately followed by its exact semantic condition. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T195: at least as expressive / equivalent logics → ઓછામાં ઓછું એટલું અભિવ્યક્તિશીલ / સમકક્ષ તર્કશાસ્ત્રો
+
+- **Status and uncertainty:** `provisional_contextual`; open. No checked authority directly attests the complete specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_lindstrom_translation; `work/add_lindstrom_terms.py`.
+- **English use:** `upstream/content/model-theory/lindstrom/abstract-logics.tex:111` (OLP-0205, “as expressive”); `upstream/content/model-theory/lindstrom/abstract-logics.tex:116` (OLP-0205, “are \emph{equivalent}”)
+- **Gujarati use:** `gu/content/model-theory/lindstrom/abstract-logics.tex:130` (OLP-0205, “અભિવ્યક્તિશીલ”); `gu/content/model-theory/lindstrom/abstract-logics.tex:135` (OLP-0205, “\emph{સમકક્ષ}”)
+- **Authorities actually checked:** `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** અભિવ્યક્તિશીલ is already used in the edition for the capacity of a formal logic to express classes of structures. The displayed preorder defines the comparison by exact equality of model classes, while સમકક્ષ records both preorder directions.
+- **Alternatives:** અભિવ્યંજનક્ષમ — possible Sanskritic formation, but less consistent with the existing second-order-logic prose.; વ્યક્તિશક્તિવાળું — explanatory, though awkward under repeated comparative use.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘ઓછામાં ઓછું એટલું અભિવ્યક્તિશીલ / સમકક્ષ તર્કશાસ્ત્રો’ accurately express ‘at least as expressive / equivalent logics’ with the scope stated here: અભિવ્યક્તિશીલ is already used in the edition for the capacity of a formal logic to express classes of structures. The displayed preorder defines the comparison by exact equality of model classes, while સમકક્ષ records both preorder directions. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T196: Compactness Property / Downward Löwenheim--Skolem property → સઘનતા ગુણધર્મ / અધોગામી લેવેનહાઇમ--સ્કોલેમ ગુણધર્મ
+
+- **Status and uncertainty:** `adopted_contextual`; medium. The components and formal definition support the choice; specialist preference remains open to correction.
+- **Record origin:** contemporaneous_lindstrom_translation; `work/add_lindstrom_terms.py`.
+- **English use:** `upstream/content/model-theory/lindstrom/ls-property.tex:11` (OLP-0206, “Compactness”); `upstream/content/model-theory/lindstrom/ls-property.tex:24` (OLP-0206, “Downward L\"owenheim--Skolem”)
+- **Gujarati use:** `gu/content/model-theory/lindstrom/ls-property.tex:11` (OLP-0206, “સઘનતા”); `gu/content/model-theory/lindstrom/ls-property.tex:24` (OLP-0206, “અધોગામી લેવેનહાઇમ--સ્કોલેમ”)
+- **Authorities actually checked:** `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"}); `GU-P046` (GU-VK-COUNT, {"line_one_based": 42, "last_line_one_based": 50, "utf8_start": 4564, "utf8_end": 6197, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P050` (GU-VK-MATH, {"line_one_based": 80, "last_line_one_based": 80, "utf8_start": 39535, "utf8_end": 40685, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P074` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 12, "last_line_one_based": 12, "utf8_start": 19671, "utf8_end": 21872, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P076` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 1, "last_line_one_based": 1, "utf8_start": 0, "utf8_end": 1405, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સઘનતા and the Löwenheim--Skolem name are established edition terms. અધોગામી marks the model-size direction, and each adjacent definition fixes the abstract-logic property: finite satisfiability for the first and an enumerable model for the second.
+- **Alternatives:** અવરોહી લેવેનહાઇમ--સ્કોલેમ ગુણધર્મ — a viable directional synonym, but અધોગામી states the cardinal descent more directly in this register.; સંક્ષિપ્તતા ગુણધર્મ — could suggest brevity rather than finite satisfiability.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સઘનતા ગુણધર્મ / અધોગામી લેવેનહાઇમ--સ્કોલેમ ગુણધર્મ’ accurately express ‘Compactness Property / Downward Löwenheim--Skolem property’ with the scope stated here: સઘનતા and the Löwenheim--Skolem name are established edition terms. અધોગામી marks the model-size direction, and each adjacent definition fixes the abstract-logic property: finite satisfiability for the first and an enumerable model for the second. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T197: relational language → સંબંધાત્મક ભાષા
+
+- **Status and uncertainty:** `provisional_descriptive`; open. No checked authority directly attests the complete specialist expression; treat it as provisional.
+- **Record origin:** contemporaneous_lindstrom_translation; `work/add_lindstrom_terms.py`.
+- **English use:** `upstream/content/model-theory/lindstrom/introduction.tex:19` (OLP-0204, “relational} languages”)
+- **Gujarati use:** `gu/content/model-theory/lindstrom/introduction.tex:19` (OLP-0204, “સંબંધાત્મક”)
+- **Authorities actually checked:** `GU-P016` (GU-GSSTB-MATH11, {"pdf_page_one_based": 41, "printed_page": "29"}); `GU-P017` (GU-GSSTB-MATH11, {"pdf_page_one_based": 42, "printed_page": "30"}); `GU-P067` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 7, "last_line_one_based": 7, "utf8_start": 10292, "utf8_end": 12844, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P075` (GU-VK-WITTGENSTEIN, {"line_one_based": 11, "last_line_one_based": 11, "utf8_start": 14904, "utf8_end": 17212, "byte_basis": "UTF-8 raw extract bytes"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** સંબંધ is directly attested and સંબંધાત્મક marks a language whose positive-arity nonlogical vocabulary consists of predicates. The chapter's explicit parenthesis allows individual constants but excludes function symbols, distinguishing this occurrence from the earlier, stricter phrase શુદ્ધ સંબંધાત્મક ભાષા.
+- **Alternatives:** સંબંધ-ભાષા — transparent but less natural as a repeated adjective.; માત્ર-વિધેયાત્મક ભાષા — would obscure the explicitly allowed individual constants.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘સંબંધાત્મક ભાષા’ accurately express ‘relational language’ with the scope stated here: સંબંધ is directly attested and સંબંધાત્મક marks a language whose positive-arity nonlogical vocabulary consists of predicates. The chapter's explicit parenthesis allows individual constants but excludes function symbols, distinguishing this occurrence from the earlier, stricter phrase શુદ્ધ સંબંધાત્મક ભાષા. If not, which attested form and inflection should replace it, and at which listed target locations?
+
+### GU-T198: discrete linear order → વિકિર્ણ સુરેખ ક્રમ
+
+- **Status and uncertainty:** `adopted_direct_component_compound`; low_to_medium. Direct authority supports the components; the specialist compound remains open to expert correction.
+- **Record origin:** contemporaneous_lindstrom_translation; `work/add_lindstrom_terms.py`.
+- **English use:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex:101` (OLP-0207, “discrete linear ordering”)
+- **Gujarati use:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex:116` (OLP-0207, “વિકિર્ણ સુરેખ ક્રમ”)
+- **Authorities actually checked:** `GU-P085` (GU-CSTT-MATH, {"pdf_page_one_based": 75, "printed_page": "50"}); `GU-P086` (GU-CSTT-MATH, {"pdf_page_one_based": 127, "printed_page": "102"}); `GU-P019` (GU-GSSTB-MATH12-SEM3, {"pdf_page_one_based": 8, "printed_page": "2"}); `GU-P077` (GU-VK-MATHEMATICAL-LOGIC, {"line_one_based": 2, "last_line_one_based": 2, "utf8_start": 1405, "utf8_end": 3561, "byte_basis": "UTF-8 raw extract bytes"})
+- **Chosen sense and rationale:** The official mathematics glossary directly attests discrete as વિકિર્ણ and linear order as સુરેખ ક્રમ. Their composition names the first-order coded order whose elements have successive finite distances, with a first but no last element.
+- **Alternatives:** અસતત રૈખિક ક્રમ — understandable, but the official glossary directly favors both વિકિર્ણ and સુરેખ ક્રમ.; વિવિક્ત સુરેખ ક્રમ — a common-looking Sanskritic variant without the checked direct attestation available here.
+- **Review question:** In Gujarati mathematical-logic prose, does ‘વિકિર્ણ સુરેખ ક્રમ’ accurately express ‘discrete linear order’ with the scope stated here: The official mathematics glossary directly attests discrete as વિકિર્ણ and linear order as સુરેખ ક્રમ. Their composition names the first-order coded order whose elements have successive finite distances, with a first but no last element. If not, which attested form and inflection should replace it, and at which listed target locations?
+
 ## Difficult source-correction decisions
 
 ### OLFUN-001: confirmed_mathematical_defect
@@ -3730,6 +3807,136 @@ The machine-readable companion is [`TRANSLATION_DECISIONS.jsonl`](TRANSLATION_DE
 - **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
 - **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
 - **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLINT-010 without changing any unaffected claim or formula?
+
+### OLLIN-001: confirmed_incomplete_first_order_alphabet
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/abstract-logics.tex` at `abstract-logics.tex:20`; SHA-256 `5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/abstract-logics.tex` body line(s) 19; adjacent note line 22; SHA-256 `daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d`.
+- **Chosen handling:** Replaced constants by all symbols of the language and added an adjacent keyed note.
+- **Rationale:** The definition says that first-order sentences are built from the constants of the language, omitting its predicate and function symbols.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-001 without changing any unaffected claim or formula?
+
+### OLLIN-002: confirmed_wrong_correspondent_under_renaming
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/abstract-logics.tex` at `abstract-logics.tex:70`; SHA-256 `5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/abstract-logics.tex` body line(s) 75; adjacent note line 77; SHA-256 `daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d`.
+- **Chosen handling:** Made M-prime correspond to M and added an adjacent keyed note.
+- **Rationale:** The renamed structure M-prime is said to correspond to the language L rather than to the original structure M.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-002 without changing any unaffected claim or formula?
+
+### OLLIN-003: confirmed_wrong_sentence_language_after_quantification
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/abstract-logics.tex` at `abstract-logics.tex:81`; SHA-256 `5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/abstract-logics.tex` body line(s) 91; adjacent note line 99; SHA-256 `daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d`.
+- **Chosen handling:** Placed F in L(L-prime) and added an adjacent keyed note.
+- **Rationale:** The Quantifier Property places F in L(L), although its displayed model class consists of structures for L-prime after removal of c.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-003 without changing any unaffected claim or formula?
+
+### OLLIN-004: confirmed_incomplete_partial_isomorphism_signature
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/ls-property.tex` at `ls-property.tex:32`; SHA-256 `ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/ls-property.tex` body line(s) 31; adjacent note line 39; SHA-256 `5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20`.
+- **Chosen handling:** Referred to all nonlogical symbols and added an adjacent keyed note.
+- **Rationale:** The text calls partial isomorphism algebraic because it depends only on constants, although its definition also preserves predicates and functions.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-004 without changing any unaffected claim or formula?
+
+### OLLIN-005: confirmed_structure_name_collision
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/ls-property.tex` at `ls-property.tex:80`; SHA-256 `ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/ls-property.tex` body line(s) 85; adjacent note line 91; SHA-256 `5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20`.
+- **Chosen handling:** Renamed the ambient structure A throughout the paragraph, figure, caption and subsequent proof, with an adjacent keyed note.
+- **Rationale:** The proof reuses M for the ambient union structure while M remains one of its internal structures.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-005 without changing any unaffected claim or formula?
+
+### OLLIN-006: confirmed_missing_exponent_marker
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/ls-property.tex` at `ls-property.tex:86`; SHA-256 `ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/ls-property.tex` body line(s) 89; adjacent note line 96; SHA-256 `5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20`.
+- **Chosen handling:** Changed Domain(N)* to Domain(N)^* and added an adjacent keyed note.
+- **Rationale:** The star following Domain(N) is not placed in exponent position.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-006 without changing any unaffected claim or formula?
+
+### OLLIN-007: confirmed_wrong_sentence_category
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/ls-property.tex` at `ls-property.tex:110`; SHA-256 `ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/ls-property.tex` body line(s) 122; adjacent note line 127; SHA-256 `5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20`.
+- **Chosen handling:** Classified D1 as an L-sentence while retaining D2 as first-order, and added an adjacent keyed note.
+- **Rationale:** D1 internalizes satisfaction of an arbitrary abstract L-sentence under relativization but is classified as first-order.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-007 without changing any unaffected claim or formula?
+
+### OLLIN-008: confirmed_countable_model_name_collision
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/ls-property.tex` at `ls-property.tex:116`; SHA-256 `ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/ls-property.tex` body line(s) 134; adjacent note line 137; SHA-256 `5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20`.
+- **Chosen handling:** Named the ambient countable model A-zero and retained M-zero and N-zero for its internal substructures, with an adjacent keyed note.
+- **Rationale:** The countable ambient model and one of its two internal substructures are both named M-zero.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-008 without changing any unaffected claim or formula?
+
+### OLLIN-009: confirmed_bound_formula_name_collision
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex` at `lindstrom-proof.tex:31`; SHA-256 `a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex` body line(s) 31; adjacent note line 37; SHA-256 `cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc`.
+- **Chosen handling:** Renamed the bound first-order sentence A in both its binder and quantifier-rank condition, with an adjacent keyed note.
+- **Rationale:** The proof reuses E, already fixed as the abstract sentence, as the bound first-order sentence in a conjunction.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-009 without changing any unaffected claim or formula?
+
+### OLLIN-010: confirmed_missing_theorem_hypothesis
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex` at `lindstrom-proof.tex:48`; SHA-256 `a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex` body line(s) 52; adjacent note line 55; SHA-256 `cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc`.
+- **Chosen handling:** Restored the normality hypothesis and added an adjacent keyed note.
+- **Rationale:** The theorem omits normality although its proof invokes the normal-logic properties and its claimed equivalence needs first-order logic to embed into L.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-010 without changing any unaffected claim or formula?
+
+### OLLIN-011: confirmed_structure_name_collision
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex` at `lindstrom-proof.tex:83`; SHA-256 `a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex` body line(s) 90; adjacent note line 107; SHA-256 `cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc`.
+- **Chosen handling:** Renamed the larger coding structure A and updated its later reference, with an adjacent keyed note.
+- **Rationale:** After defining M as a union structure, the proof reuses M for a larger coding structure containing M-star, N-star and the natural-number order.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-011 without changing any unaffected claim or formula?
+
+### OLLIN-012: confirmed_wrong_satisfaction_relation
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex` at `lindstrom-proof.tex:102`; SHA-256 `a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex` body line(s) 116; adjacent note line 120; SHA-256 `cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc`.
+- **Chosen handling:** Used models-L and not-models-L for E and added an adjacent keyed note.
+- **Rationale:** The sentence D uses ordinary first-order satisfaction symbols for the fixed abstract sentence E.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-012 without changing any unaffected claim or formula?
+
+### OLLIN-013: confirmed_invalid_compactness_inference
+
+- **Frozen source:** `upstream/content/model-theory/lindstrom/lindstrom-proof.tex` at `lindstrom-proof.tex:107`; SHA-256 `a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9`.
+- **Gujarati target:** `gu/content/model-theory/lindstrom/lindstrom-proof.tex` body line(s) 125; adjacent note line 136; SHA-256 `cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc`.
+- **Chosen handling:** Added a fresh constant c and the finitely satisfiable type saying that at least m elements precede c for every standard m; compactness then yields an ambient model A-star whose c-value is nonstandard. An adjacent keyed note discloses the repair.
+- **Rationale:** Compactness is applied to the single sentence D to assert a nonstandard order element, but D itself has the standard natural-order model and no type forcing such an element is supplied.
+- **Alternatives:** Preserve the false or imprecise English wording literally — rejected. Correct silently — rejected because the inherited source defect must remain traceable. Correct the Gujarati body and add an adjacent keyed note — adopted.
+- **Uncertainty:** The correction is applied, but mathematical and editorial review remains welcome.
+- **Review question:** Does the Gujarati handling at the listed body and note lines fully and accurately repair OLLIN-013 without changing any unaffected claim or formula?
 
 ## Source-claim qualifications
 

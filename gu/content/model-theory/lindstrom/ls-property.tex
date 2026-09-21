@@ -1,0 +1,147 @@
+% Part: first-order-logic
+% Chapter: lindstrom
+% Section: ls-property
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{lin}{lsp}
+
+\olsection{સઘનતા અને લેવેનહાઇમ--સ્કોલેમ ગુણધર્મો}
+
+હવે આપણે સઘનતા અને લેવેનહાઇમ--સ્કોલેમને અમૂર્ત તર્કશાસ્ત્રોના કિસ્સા
+સુધીના સીધા વિસ્તારો આપીએ છીએ.
+
+\begin{defn}
+અમૂર્ત તર્કશાસ્ત્ર $\tuple{L, \models_L}$ પાસે \emph{સઘનતા
+  ગુણધર્મ} છે, જો $L(\Lang{L})$-!!{sentence}sનો દરેક ગણ $\Gamma$ તેના
+દરેક સાન્ત ઉપગણ $\Gamma_0 \subseteq \Gamma$ સંતોષ્ય હોય ત્યારે સંતોષ્ય
+હોય.
+\end{defn}
+
+\begin{defn}
+$\tuple{L, \models_L}$ પાસે \emph{અધોગામી લેવેનહાઇમ--સ્કોલેમ
+  ગુણધર્મ} છે, જો દરેક સંતોષ્ય $\Gamma$ને !!a{enumerable} નિદર્શ હોય.
+\end{defn}
+
+
+\olref[bas][pis]{defn:partialisom}માંની આંશિક એકરૂપતાની વિભાવના તદ્દન
+``બીજગણિતીય'' છે (એટલે કે, ભાષાનાં !!{sentence}sનો સંદર્ભ લીધા વિના,
+માત્ર !!{structure}sની !!{language}~$\Lang{L}$ આપતા બિનતાર્કિક સંકેતો
+વડે અપાયેલી છે), તેથી એ અમૂર્ત તર્કશાસ્ત્રોના કિસ્સામાં પણ લાગુ પડે છે.
+પ્રથમ-ક્રમ તર્કશાસ્ત્રના કિસ્સામાં આપણે
+\olref[bas][pis]{thm:p-isom2}થી જાણીએ છીએ કે બે !!{structure}s આંશિક
+રીતે એકરૂપ હોય, તો તેઓ પ્રાથમિક રીતે સમકક્ષ છે. એ સાબિતી અમૂર્ત
+તર્કશાસ્ત્રો સુધી ચાલતી નથી, કારણ કે મનસ્વી $!E \in L(\Lang{L})$ માટે
+!!{formula}s પરનું આગમન ઉપલબ્ધ હોવું જરૂરી નથી. છતાં લેવેનહાઇમ--સ્કોલેમ
+ગુણધર્મ હોય તો આ પ્રમેય સત્ય છે.
+\sourcecorrection{OLLIN-004}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{ls-property.tex}, પંક્તિઓ~29--33માં આંશિક એકરૂપતા ભાષાનાં
+  માત્ર અચળો પર આધાર રાખે છે એમ કહેવાયું છે. એની વ્યાખ્યામાં અચળો ઉપરાંત
+  વિધેયો અને વિધેય-સંકેતોની શરતો પણ આવે છે; અહીં ``બિનતાર્કિક સંકેતો''
+  કહીને યોગ્ય વ્યાપ રાખ્યો છે.}
+
+\begin{thm}
+\ollabel{thm:abstract-p-isom}
+ધારો કે $\tuple{L, \models_L}$ એ લેવેનહાઇમ--સ્કોલેમ ગુણધર્મ ધરાવતું
+સામાન્ય તર્કશાસ્ત્ર છે. ત્યારે કોઈ પણ બે આંશિક રીતે એકરૂપ
+!!{structure}s $\tuple{L, \models_L}$માં પ્રાથમિક રીતે સમકક્ષ છે.
+\end{thm}
+
+\begin{proof}
+ધારો કે $\Struct{M} \simeq_p \Struct{N}$, પણ કોઈ $!E$ માટે
+$\Struct{M} \models_L !E$ જ્યારે $\Struct{N} \not\models_L !E$ પણ છે.
+એકરૂપતા ગુણધર્મથી આપણે માની શકીએ છીએ કે $\Domain{M}$ અને $\Domain{N}$
+અસંયુક્ત છે, અને વિસ્તાર ગુણધર્મથી માની શકીએ છીએ કે કોઈ સાન્ત
+!!{language}~$\Lang{L}$ માટે $!E \in L(\Lang{L})$. $\Struct{M}$ અને
+$\Struct{N}$ વચ્ચેની આંશિક એકરૂપતાઓનો ગણ $\mathcal{I}$ લો; અને કોઈ
+સામાન્યતા ગુમાવ્યા વિના એમ પણ ધારો કે $p \in \mathcal{I}$ અને $q
+\subseteq p$ હોય, તો $q \in \mathcal{I}$ પણ.
+
+$\Domain{M}^{<\omega}$ એ $\Domain{M}$ના !!{element}sની બધી સાન્ત
+શ્રેણીઓનો ગણ છે. $S$ને $\Domain{M}^{<\omega}$ પરનો જોડાણ દર્શાવતો
+ત્રિસ્થાની સંબંધ ગણો; એટલે કે, $\mathbf{a}, \mathbf{b}, \mathbf{c}
+\in \Domain{M}^{<\omega}$ હોય, તો $S(\mathbf{a}, \mathbf{b},
+\mathbf{c})$ ત્યારે અને માત્ર ત્યારે જ્યારે $\mathbf{c}$ એ
+$\mathbf{a}$ અને $\mathbf{b}$નું જોડાણ હોય. અને $T$ એવો ત્રિસ્થાની
+સંબંધ ગણો કે $b \in M$ તથા $\mathbf{a}, \mathbf{c} \in
+\Domain{M}^{<\omega}$ માટે $T(\mathbf{a}, b, \mathbf{c})$ ત્યારે અને
+માત્ર ત્યારે જ્યારે $\mathbf{a} = a_1, \dots a_n$ અને
+$\mathbf{c} = a_1, \dots a_n, b$. નવાં ત્રિસ્થાની !!{predicate}s
+$P$ અને $Q$ લો અને એવી !!{structure} $\Struct{M}^*$ બનાવો જેનું
+વ્યાપકક્ષેત્ર $\Domain{M} \cup \Domain{M}^{<\omega}$ છે, જેમાં
+$\Struct{M}$ ઉપસંરચના છે અને જે $P$ તથા $Q$નું અર્થઘટન અનુક્રમે
+જોડાણ-સંબંધો $S$ તથા $T$ તરીકે કરે છે (આથી $\Struct{M}^*$ !!{language}
+$\Lang{L} \cup \{ P, Q\}$માં છે).
+
+$\Domain{N}^{<\omega}$, $S'$, $T'$, $P'$, $Q'$ અને
+$\Struct{N}^*$ને એ જ રીતે વ્યાખ્યાયિત કરો. પરિકલ્પનાથી $\Struct{M}
+\simeq_p \Struct{N}$ હોવાથી $\Domain{M}^{<\omega}$ અને
+$\Domain{N}^{<\omega}$ વચ્ચે એવો સંબંધ $I$ છે કે
+$I(\mathbf{a}, \mathbf{b})$ ત્યારે અને માત્ર ત્યારે જ્યારે
+$\mathbf{a}$ અને $\mathbf{b}$ એકરૂપ હોય અને
+\olref[bas][pis]{defn:partialisom}નો આગળ-પાછળ ગુણધર્મ સંતોષે. હવે
+$\Struct{A}$ને એવી !!{structure} ગણો જેનું !!{domain}
+$\Struct{M}^*$ અને $\Struct{N}^*$નાં !!{domain}sનો સંઘ છે, જેમાં
+$\Struct{M}^*$ અને $\Struct{N}^*$ ઉપ!!{structure}s છે, અને જેની
+!!{language}માં એક વધારાનું દ્વિસ્થાની !!{predicate}~$R$ છે જેનું
+અર્થઘટન સંબંધ~$I$ છે તથા !!{domain}s $\Domain{M}^*$ અને $\Domain{N}^*$ દર્શાવતાં
+!!{predicate}s છે.
+\sourcecorrection{OLLIN-005}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{ls-property.tex}, પંક્તિઓ~80--86માં નવી વ્યાપક સંરચનાને ફરી
+  $\Struct M$ નામ અપાયું છે, જોકે એ જ અનુચ્છેદોમાં $\Struct M$ મૂળ
+  આંતરિક સંરચના છે. નવી સંરચના માટે $\Struct A$ રાખીને બંને સંદર્ભો
+  અલગ કર્યા છે; આ સુધારો આકૃતિ અને આગળની સાબિતીમાં પણ લાગુ પડે છે.}
+\sourcecorrection{OLLIN-006}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{ls-property.tex}, પંક્તિ~86માં $\Domain{N}*$ લખવાથી તારક
+  ઘાતમાં રહેતો નથી. અહીં સમાંતર $\Domain{M}^*$ પ્રમાણે
+  $\Domain{N}^*$ લખ્યું છે.}
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[node distance=2cm, auto, thick, >=stealth']
+    \draw [rounded corners] (0,0) -- (8,0) -- (8,4) -- (0,4) --  cycle;
+    \draw (2,2) circle (0.5cm);
+    \draw (2,2) circle (1.25cm);
+    \draw (6,2) circle (0.5cm);
+    \draw (6,2) circle (1.25cm);
+    \path node at (0.75,3.5) {\large $\Struct{A}$};
+    \path node at (2,2) {\large $\Struct{M}$};
+    \path node at (6,2) {\large $\Struct{N}$};
+    \path node at (3.5,1) {\large $\Struct{M}^*$};
+    \path node at (7.5,1) {\large $\Struct{N}^*$};
+    \node (Idom) at (2.8,2) {};
+    \node (Irng) at (5.2,2) {};
+    \draw[<->, bend left] (Idom) to node {\large $I$} (Irng) ;
+  \end{tikzpicture}
+  \caption{આંતરિક આંશિક એકરૂપતા ધરાવતી !!{structure}~$\Struct{A}$.}
+\end{figure}
+
+નિર્ણાયક અવલોકન એ છે કે !!{structure}~$\Struct{A}$ની !!{language}માં
+એવું $L$-!!{sentence} $!D_1$ છે જે $\Struct{A}$માં સાચું છે અને કહે છે
+કે $\Struct{M} \models_L !E$ તથા $\Struct{N} \not\models_L !E$ (આમાં
+સાપેક્ષીકરણ અને બૂલીય ગુણધર્મો જરૂરી છે); અને એવું પ્રથમ-ક્રમ
+!!{sentence} $!D_2$ પણ છે જે $\Struct{A}$માં સાચું છે અને કહે છે કે
+આંશિક એકરૂપતા~$I$ દ્વારા $\Struct{M} \simeq_p \Struct{N}$.
+\sourcecorrection{OLLIN-007}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{ls-property.tex}, પંક્તિઓ~109--115માં $!D_1$ને પ્રથમ-ક્રમ
+  વાક્ય કહેવામાં આવ્યું છે. મનસ્વી અમૂર્ત વાક્ય $!E$નો આંતરિક
+  સંરચનાઓ પર સંતોષ સાપેક્ષીકરણથી $L$-વાક્ય તરીકે વ્યક્ત થાય છે;
+  $!D_2$ પ્રથમ-ક્રમ વાક્ય છે અને સામાન્યતા પરથી $L$માં પણ આવે છે.
+  અહીં આ પ્રકારભેદ સ્પષ્ટ કર્યો છે.}
+લેવેનહાઇમ--સ્કોલેમ ગુણધર્મથી $!D_1$ અને $!D_2$ કોઈ
+!!a{enumerable} નિદર્શ $\Struct{A}_0$માં એકસાથે સાચાં છે. તેમાં એવી
+આંશિક રીતે એકરૂપ ઉપસંરચનાઓ $\Struct{M}_0$ અને $\Struct{N}_0$ છે કે
+$\Struct{M}_0 \models_L !E$ અને $\Struct{N}_0 \not\models_L !E$.
+\sourcecorrection{OLLIN-008}{સ્થિર અંગ્રેજી મૂળની
+  \texttt{ls-property.tex}, પંક્તિઓ~115--118માં ગણનીય વ્યાપક નિદર્શ અને
+  એની એક આંતરિક ઉપસંરચના બંનેને $\Struct M_0$ કહેવામાં આવ્યાં છે.
+  વ્યાપક નિદર્શ માટે $\Struct A_0$ અને અંદરની બે સંરચનાઓ માટે
+  $\Struct M_0,\Struct N_0$ રાખ્યાં છે.}
+પરંતુ !!{enumerable} આંશિક રીતે એકરૂપ !!{structure}s વાસ્તવમાં
+\olref[bas][pis]{thm:p-isom1}થી એકરૂપ છે, જે સામાન્ય અમૂર્ત
+તર્કશાસ્ત્રોના એકરૂપતા ગુણધર્મનો વિરોધ કરે છે.
+\end{proof}
+
+\end{document}

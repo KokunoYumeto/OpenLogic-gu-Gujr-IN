@@ -1,0 +1,85 @@
+{
+  "schema": "openlogic-gu-browser-runtime/1",
+  "checkpoint": "022",
+  "checked_utc": "2026-09-20T23:50:49.075682+00:00",
+  "tool": "Codex in-app browser via unified computer use",
+  "url": "http://127.0.0.1:8768/reader/lindstrom.html?qa=022-direct",
+  "direct_reader_url": "http://127.0.0.1:8768/reader/lindstrom.html?qa=022-direct",
+  "artifact": "reader/lindstrom.html",
+  "artifact_sha256": "66891de19fbd62e317c9f7014fc579b6de216869a9f15ea9216c66222147bb50",
+  "viewport": [
+    1280,
+    720
+  ],
+  "runtime": {
+    "title": "લિન્ડસ્ટ્રોમનું પ્રમેય સહિત ઓપન લોજિક ગુજરાતી",
+    "blockMathmlNodes": 555,
+    "clippedHorizontalNodes": 0,
+    "clippedVerticalNodes": 0,
+    "clippedHorizontalIndices": [],
+    "clippedVerticalIndices": [],
+    "intentionallyScrollableNodes": 3,
+    "scrollableNodeIndices": [
+      332,
+      333,
+      334
+    ],
+    "scrollableInternalOverflowPx": [
+      50,
+      118,
+      69
+    ],
+    "maximumInternalScrollOverflowPx": 118,
+    "bodyScrollWidthPx": 914,
+    "bodyClientWidthPx": 914,
+    "documentScrollWidthPx": 1265,
+    "documentClientWidthPx": 1265,
+    "overflowX": "auto",
+    "overflowY": "hidden",
+    "paddingBlockPx": 20.8,
+    "fontsStatus": "loaded",
+    "images": 15,
+    "loadedImages": 15,
+    "contentIds": 772,
+    "uniqueIds": 772,
+    "excludedBrowserUiIds": [
+      "codex-browser-sidebar-comments-root"
+    ],
+    "tocLinks": 210,
+    "tables": 12,
+    "mathmlNodes": 12178,
+    "rawProblemTagLeaks": 0,
+    "fixedExerciseOccurrences": 1,
+    "literalCounts": {
+      "sFmla": 2,
+      "item": 1,
+      "iftag": 7,
+      "top": 1,
+      "lexists": 1,
+      "Atom": 1,
+      "dots": 1
+    }
+  },
+  "visual_inspection": {
+    "views": [
+      "title, 204/722 scope disclosure, and cumulative table of contents",
+      "Lindstrom chapter opening and abstract-logic definition",
+      "normality, compactness, and downward Loewenheim-Skolem properties",
+      "partial-isomorphism theorem, SVG geometry, labels, and OLLIN-005/006 disclosures",
+      "Lindstrom theorem, proof formulas, and OLLIN-010 disclosure",
+      "fresh-constant compactness argument and OLLIN-012/013 disclosures",
+      "cumulative correction disclosure, bibliography, and end matter"
+    ],
+    "gujarati_shaping": "passed",
+    "mathml_layout": "passed",
+    "partial_isomorphism_svg_geometry_and_labels": "passed",
+    "overlap_or_truncation": "none_observed"
+  },
+  "console": {
+    "target_warnings": [],
+    "target_errors": [],
+    "clean_direct_reader_entries": [],
+    "stale_session_entries": []
+  },
+  "status": "passed"
+}

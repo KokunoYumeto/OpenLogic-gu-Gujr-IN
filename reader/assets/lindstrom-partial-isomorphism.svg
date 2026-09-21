@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img">
+<defs><marker id="lin-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#222"/></marker></defs>
+<rect x="10" y="10" width="780" height="380" rx="14" fill="none" stroke="#222" stroke-width="3"/>
+<circle cx="200" cy="200" r="125" fill="none" stroke="#222" stroke-width="3"/>
+<circle cx="200" cy="200" r="50" fill="none" stroke="#222" stroke-width="3"/>
+<circle cx="600" cy="200" r="125" fill="none" stroke="#222" stroke-width="3"/>
+<circle cx="600" cy="200" r="50" fill="none" stroke="#222" stroke-width="3"/>
+<path d="M325,200 L475,200" fill="none" stroke="#222" stroke-width="3" marker-start="url(#lin-arrow)" marker-end="url(#lin-arrow)"/>
+<g font-family="Noto Serif, serif" font-size="34" text-anchor="middle">
+<text x="75" y="62">𝔄</text><text x="200" y="212">𝔐</text><text x="600" y="212">𝔑</text>
+<text x="200" y="330">𝔐*</text><text x="600" y="330">𝔑*</text><text x="400" y="185">I</text>
+</g></svg>

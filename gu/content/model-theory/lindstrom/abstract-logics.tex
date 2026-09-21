@@ -1,0 +1,153 @@
+% Part: first-order-logic
+% Chapter: lindstrom
+% Section: abstract-logics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mod}{lin}{alg}
+\olsection{અમૂર્ત તર્કશાસ્ત્રો}
+
+\begin{defn}
+  \emph{અમૂર્ત તર્કશાસ્ત્ર} એ યુગ્મ $\tuple{L, \models_L}$ છે, જ્યાં
+  $L$ એવું વિધેય છે જે દરેક !!{language}~$\Lang{L}$ને
+  !!{sentence}sનો ગણ $L(\Lang{L})$ નિયુક્ત કરે છે, અને $\models_L$ એ
+  !!{language}~$\Lang{L}$ માટેની !!{structure}s તથા $L(\Lang{L})$ના
+  !!{element}s વચ્ચેનો સંબંધ છે. ખાસ કરીને, $\tuple{F, \models}$ એ
+  સામાન્ય પ્રથમ-ક્રમ તર્કશાસ્ત્ર છે; એટલે કે, $F$ એવું વિધેય છે જે
+  !!{language}~$\Lang{L}$ને $\Lang{L}$ના સંકેતોમાંથી બનેલાં પ્રથમ-ક્રમ
+  !!{sentence}sનો ગણ નિયુક્ત કરે છે, અને $\models$ એ પ્રથમ-ક્રમ
+  તર્કશાસ્ત્રનો સંતોષ-સંબંધ છે.
+  \sourcecorrection{OLLIN-001}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{abstract-logics.tex}, પંક્તિઓ~18--20માં પ્રથમ-ક્રમનાં વાક્યો
+    ભાષાના માત્ર અચળોમાંથી બને છે એમ કહેવાયું છે, જેથી વિધેય-સંકેતો
+    છૂટી જાય છે. $F(\Lang L)$માં ભાષાના બધા સંકેતો વડે બનેલાં
+    પ્રથમ-ક્રમ વાક્યો આવે છે; અહીં એ વ્યાપ રાખ્યો છે.}
+\end{defn}
+
+નોંધો કે આપેલી !!{language} માટે આપણે હજી પણ પ્રથમ-ક્રમ તર્કશાસ્ત્રમાં
+હોય એ જ !!{structure}ની વિભાવના વાપરીએ છીએ. પરંતુ આપણે એવું પૂર્વધારતા
+નથી કે !!{sentence}s સામાન્ય રીતે $\Lang{L}$ના મૂળભૂત સંકેતોમાંથી
+બનાવાય છે, કે $\models_L$ સંબંધ પણ પ્રથમ-ક્રમ તર્કશાસ્ત્રની જેમ જ
+આવર્ત રીતે વ્યાખ્યાયિત થાય છે. તેથી, દાખલા તરીકે, આ તદ્દન સામાન્ય
+વ્યાખ્યાનો આશય એવા કિસ્સાઓને પણ આવરી લેવાનો છે જેમાં
+$\tuple{L,\models_L}$નાં !!{sentence}s અનંત લાંબાં સંયોજનો કે વિયોજનો,
+$\lexists$ અને $\lforall$ સિવાયના પરિમાણકો (જેમ કે ``એવા અનંત ઘણા
+$x$ છે કે \dots''), અથવા કદાચ અનંત લાંબા પરિમાણક-ઉપસર્ગો ધરાવે.
+$L(\Lang{L})$નાં ``!!{sentence}s'' પ્રથમ-ક્રમ તર્કશાસ્ત્રનાં સામાન્ય
+!!{sentence}s હોવાં જરૂરી નથી એ પર ભાર મૂકવા આ પ્રકરણમાં તેમના માટે
+!!{variable}s $!E$, $!F$,~\dots વાપરીએ છીએ અને સામાન્ય પ્રથમ-ક્રમ
+!!{formula}s માટે $!A$, $!B$,~\dots અનામત રાખીએ છીએ.
+
+\begin{defn}
+  વર્ગ $\Setabs{\Struct{M}}{\Struct{M} \models_L !E}$ને
+  $\Mod(L){!E}$થી દર્શાવીએ. !!{language} સ્પષ્ટ કરવી જરૂરી હોય તો
+  $\Mod[L](L){!E}$ લખીએ. $\Lang{L}$ માટેની બે !!{structure}s
+  $\Struct{M}$ અને $\Struct{N}$માં $L(\Lang{L})$નાં એ જ
+  !!{sentence}s સાચાં હોય તો તેમને $\tuple{L, \models_L}$માં
+  \emph{પ્રાથમિક રીતે સમકક્ષ} કહીએ છીએ અને $\Struct{M}
+  \elemequiv[L] \Struct{N}$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}
+  !!{language}~$\Lang{L}$ માટેનું અમૂર્ત તર્કશાસ્ત્ર
+  $\tuple{L,\models_L}$
+  નીચેના ગુણધર્મો સંતોષે તો તેને \emph{સામાન્ય} કહીએ છીએ:
+\begin{enumerate}
+\item (\emph{$L$-એકદિશવર્ધિતા}) !!{language}s $\Lang{L}$ અને
+  $\Lang{L'}$ માટે જો $\Lang{L} \subseteq \Lang{L'}$, તો
+  $L(\Lang{L}) \subseteq L(\Lang{L'})$.
+\item (\emph{વિસ્તાર ગુણધર્મ}) દરેક $!E \in L(\Lang{L})$ માટે
+  $\Lang{L}$નો એવો \emph{સાન્ત} ઉપગણ $\Lang{L'}$ છે કે
+  $\Struct{M} \models_L !E$ સંબંધ $\Struct{M}$ના $\Lang{L'}$ પરના
+  ન્યૂનરૂપ પર જ આધાર રાખે; એટલે કે, $\Struct{M}$ અને $\Struct{N}$નાં
+  $\Lang{L'}$ પરનાં ન્યૂનરૂપો સરખાં હોય, તો $\Struct{M} \models_L !E$
+  ત્યારે અને માત્ર ત્યારે જ્યારે $\Struct{N} \models_L !E$.
+\item (\emph{એકરૂપતા ગુણધર્મ}) જો $\Struct{M} \models_L !E$ અને
+  $\Struct{M} \simeq \Struct{N}$, તો $\Struct{N} \models_L !E$ પણ.
+\item (\emph{પુનઃનામકરણ ગુણધર્મ}) $\models_L$ સંબંધ પુનઃનામકરણ હેઠળ
+  જળવાય છે: જો !!{language}~$\Lang{L}'$, $\Lang{L}$ના દરેક સંકેત
+  $P$ને એ જ સ્થાનકતાવાળા સંકેત $P'$થી અને દરેક અચળ $c$ને ભિન્ન અચળ
+  $c'$થી બદલીને મળે, તો દરેક !!{structure}~$\Struct{M}$ અને
+  !!{sentence}~$!E$ માટે $\Struct{M} \models_L !E$ ત્યારે અને માત્ર
+  ત્યારે જ્યારે $\Struct{M}' \models_L !E'$, જ્યાં $\Struct{M}'$ એ
+  $\Struct{M}$ને અનુરૂપ $\Lang{L}'$-!!{structure} છે અને $!E' \in
+  L(\Lang{L}')$.
+  \sourcecorrection{OLLIN-002}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{abstract-logics.tex}, પંક્તિઓ~69--71માં
+    $\Struct{M}'$ને $\Lang L$ને અનુરૂપ સંરચના કહેવામાં આવી છે. ભાષાના
+    પુનઃનામકરણ હેઠળ $\Lang L'$ ભાષા $\Lang L$ને અનુરૂપ છે, જ્યારે
+    $\Struct{M}'$ સંરચના $\Struct M$ને અનુરૂપ છે; અહીં બીજો, યોગ્ય
+    સંદર્ભ મૂક્યો છે.}
+\item (\emph{બૂલીય ગુણધર્મ}) અમૂર્ત તર્કશાસ્ત્ર
+  $\tuple{L,\models_L}$ બૂલીય સંયોજકો હેઠળ એ અર્થમાં બંધ છે કે દરેક
+  $!E \in L(\Lang{L})$ માટે એવું $!F \in L(\Lang{L})$ છે કે
+  $\Struct{M} \models_L !F$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Struct{M} \not\models_L !E$; અને દરેક $!E$ તથા $!F$ માટે એવું
+  $!G$ છે કે $\Mod(L){!G} = \Mod(L){!E} \cap \Mod(L){!F}$. આણ્વિક
+  !!{formula}s અને બીજા સંયોજકો માટે પણ એ જ રીતે.
+\item (\emph{પરિમાણક ગુણધર્મ}) $\Lang{L}$ના દરેક અચળ $c$ અને
+  $!E \in L(\Lang{L})$ માટે એવું $!F \in L(\Lang{L'})$ છે કે
+  \[
+  \Mod[L'](L){!F} = \Setabs{\Struct{M}}{\Expan{M}{a} \in
+  \Mod[L](L){!E} \text{ કોઈક } a \in \Domain{M}},
+  \]
+  જ્યાં $\Lang{L'} = \Lang{L} \setminus \{c\}$ અને
+  $\Expan{M}{a}$ એ $c$ને $a$ નિયુક્ત કરતો $\Struct{M}$નો
+  $\Lang{L}$ સુધીનો વિસ્તાર છે.
+  \sourcecorrection{OLLIN-003}{સ્થિર અંગ્રેજી મૂળની
+    \texttt{abstract-logics.tex}, પંક્તિઓ~80--87માં $!F$ને
+    $L(\Lang L)$માં મૂકવામાં આવ્યું છે, પરંતુ એની નિદર્શ-શ્રેણી
+    $\Lang L'=\Lang L\setminus\{c\}$ની સંરચનાઓની છે. તેથી $!F$ એ
+    $L(\Lang L')$નું વાક્ય હોવું જોઈએ; અહીં આ પ્રકાર સુધાર્યો છે.}
+\item (\emph{સાપેક્ષીકરણ ગુણધર્મ}) !!a{sentence} $!E \in
+  L(\Lang{L})$ અને $\Lang{L}$માં ન હોય એવા સંકેતો $R$, $c_1$,
+  \dots, $c_n$ આપેલા હોય ત્યારે એવું !!a{sentence} $!F \in
+  L(\Lang{L} \cup \{R,c_1,\ldots,c_n\})$ છે, જેને $!E$નું
+  $\Atom{R}{x, c_1, \dots c_n}$ને \emph{સાપેક્ષીકરણ} કહીએ છીએ, કે
+  દરેક !!{structure}~$\Struct{M}$ માટે:
+  \[
+  \Expan{M}{X, b_1, \ldots, b_n} \models_L !F \text{ ત્યારે અને
+    માત્ર ત્યારે જ્યારે } \Struct{N} \models_L !E,
+  \]
+  જ્યાં $\Struct{N}$ એ $\Struct{M}$ની એવી ઉપસંરચના છે જેનું
+  !!{domain}
+  $\Domain{N} = \Setabs{a\in \Domain{M}}{\Assign{R}{M}(a, b_1,
+  \dots, b_n)}$ છે (જુઓ \olref[bas][sub]{rem:substructure}), અને
+  $\Expan{M}{X, b_1, \ldots, b_n}$ એ $R$, $c_1$, \dots, $c_n$નું
+  અનુક્રમે $X$, $b_1,$ \dots, $b_n$ તરીકે અર્થઘટન કરતો
+  $\Struct{M}$નો વિસ્તાર છે (જ્યાં $X \subseteq M^{n+1}$).
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+બે અમૂર્ત તર્કશાસ્ત્રો $\tuple{L_1, \models_{L_1}}$ અને
+$\tuple{L_2, \models_{L_2}}$ આપેલાં હોય ત્યારે, દરેક !!{language}
+$\Lang{L}$ અને !!{sentence} $!E \in L_1(\Lang{L})$ માટે એવું
+!!a{sentence} $!F \in L_2(\Lang{L})$ હોય કે
+$\Mod[L](L_1){!E} = \Mod[L](L_2){!F}$, તો બીજું તર્કશાસ્ત્ર પહેલા
+જેટલું ઓછામાં ઓછું \emph{અભિવ્યક્તિશીલ} છે એમ કહીએ છીએ અને
+$\tuple{L_1, \models_{L_1}} \leq \tuple{L_2, \models_{L_2}}$ લખીએ
+છીએ. જો $\tuple{L_1, \models_{L_1}} \leq \tuple{L_2,
+\models_{L_2}}$ અને $\tuple{L_2, \models_{L_2}} \leq \tuple{L_1,
+\models_{L_1}}$, તો તર્કશાસ્ત્રો $\tuple{L_1, \models_{L_1}}$ અને
+$\tuple{L_2, \models_{L_2}}$ \emph{સમકક્ષ} છે.
+\end{defn}
+
+\begin{rem}
+  પ્રથમ-ક્રમ તર્કશાસ્ત્ર, એટલે કે અમૂર્ત તર્કશાસ્ત્ર
+  $\tuple{F, \models}$, સામાન્ય છે. વાસ્તવમાં ઉપરના ગુણધર્મો
+  પ્રથમ-ક્રમ તર્કશાસ્ત્ર માટે મોટે ભાગે સીધા છે. આપણે માત્ર એટલું
+  નોંધીએ કે વિસ્તાર ગુણધર્મ પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ સુધી આવે છે,
+  અને !!a{sentence} $!E$નું $\Atom{R}{x, c_1, \dots, c_n}$ને
+  સાપેક્ષીકરણ દરેક !!{subformula} $\lforall[x][!F]$ને
+  $\lforall[x][(\Atom{R}{x, c_1, \dots, c_n} \lif \ !F)]$થી બદલીને
+  મળે છે. વધુમાં, જો $\tuple{L, \models_L}$ સામાન્ય હોય, તો
+  $\tuple{F, \models} \leq \tuple{L, \models_{L}}$; આ પ્રથમ-ક્રમ
+  !!{formula}s પરના આગમનથી બતાવી શકાય છે. તેથી કોઈ સામાન્યતા ગુમાવ્યા
+  વિના આપણે માની શકીએ છીએ કે દરેક પ્રથમ-ક્રમ !!{sentence} દરેક સામાન્ય
+  તર્કશાસ્ત્રમાં આવે છે.
+\end{rem}
+
+\end{document}

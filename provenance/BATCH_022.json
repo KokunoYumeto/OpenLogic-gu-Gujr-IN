@@ -1,0 +1,140 @@
+{
+  "schema": "openlogic-gu-batch/2",
+  "updated_at_utc": "2026-09-21T00:22:24.744871+00:00",
+  "boundary": "Lindström OLP-0203–0207 under the cumulative Model Theory profile",
+  "units": [
+    {
+      "unit_id": "OLP-0203",
+      "source_sha256": "a3cc84f5789bc27838d0c2461c67438d5029d1071b7f94c4a4fd3b4910cd6310",
+      "target_sha256": "d48af8cafb10cde39c44dfa64abd1a7ee46f38158b854cf580bcc2792c04bd73",
+      "source_bytes": 308,
+      "target_bytes": 351,
+      "aligned_blocks": 10,
+      "raw_source_blocks": 10,
+      "linguistic_blocks": 1,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0204",
+      "source_sha256": "1e014424519199e2ca2760dfe343dbc6756c6972c56e17174587e9aacf913ed0",
+      "target_sha256": "06522fe45c8e3f4a5a97a75413f53714043342468a4ebbd55f58a4cba5856b97",
+      "source_bytes": 786,
+      "target_bytes": 1535,
+      "aligned_blocks": 6,
+      "raw_source_blocks": 6,
+      "linguistic_blocks": 2,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0205",
+      "source_sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+      "target_sha256": "daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d",
+      "source_bytes": 6670,
+      "target_bytes": 12756,
+      "aligned_blocks": 11,
+      "raw_source_blocks": 11,
+      "linguistic_blocks": 7,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0206",
+      "source_sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+      "target_sha256": "5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20",
+      "source_bytes": 5656,
+      "target_bytes": 12054,
+      "aligned_blocks": 16,
+      "raw_source_blocks": 16,
+      "linguistic_blocks": 11,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    },
+    {
+      "unit_id": "OLP-0207",
+      "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "target_sha256": "cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc",
+      "source_bytes": 6045,
+      "target_bytes": 13774,
+      "aligned_blocks": 15,
+      "raw_source_blocks": 15,
+      "linguistic_blocks": 10,
+      "status": "translated_structural_semantic_and_reader_qa_passed"
+    }
+  ],
+  "remaining_units": [],
+  "complete_batch": true,
+  "translated_linguistic_blocks": 31,
+  "aligned_blocks": 58,
+  "source_math_spans": 346,
+  "corrected_source_math_spans": 358,
+  "source_corrections": [
+    {
+      "finding_id": "OLLIN-001",
+      "unit_id": "OLP-0205",
+      "handling": "Replaced constants by all symbols of the language and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-002",
+      "unit_id": "OLP-0205",
+      "handling": "Made M-prime correspond to M and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-003",
+      "unit_id": "OLP-0205",
+      "handling": "Placed F in L(L-prime) and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-004",
+      "unit_id": "OLP-0206",
+      "handling": "Referred to all nonlogical symbols and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-005",
+      "unit_id": "OLP-0206",
+      "handling": "Renamed the ambient structure A throughout the paragraph, figure, caption and subsequent proof, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-006",
+      "unit_id": "OLP-0206",
+      "handling": "Changed Domain(N)* to Domain(N)^* and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-007",
+      "unit_id": "OLP-0206",
+      "handling": "Classified D1 as an L-sentence while retaining D2 as first-order, and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-008",
+      "unit_id": "OLP-0206",
+      "handling": "Named the ambient countable model A-zero and retained M-zero and N-zero for its internal substructures, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-009",
+      "unit_id": "OLP-0207",
+      "handling": "Renamed the bound first-order sentence A in both its binder and quantifier-rank condition, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-010",
+      "unit_id": "OLP-0207",
+      "handling": "Restored the normality hypothesis and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-011",
+      "unit_id": "OLP-0207",
+      "handling": "Renamed the larger coding structure A and updated its later reference, with an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-012",
+      "unit_id": "OLP-0207",
+      "handling": "Used models-L and not-models-L for E and added an adjacent keyed note."
+    },
+    {
+      "finding_id": "OLLIN-013",
+      "unit_id": "OLP-0207",
+      "handling": "Added a fresh constant c and the finitely satisfiable type saying that at least m elements precede c for every standard m; compactness then yields an ambient model A-star whose c-value is nonstandard. An adjacent keyed note discloses the repair."
+    }
+  ],
+  "source_corrections_receipt": "SOURCE_CORRECTIONS_022.json",
+  "semantic_review": "Exact-block review is recorded for all 31 aligned linguistic blocks; see SEMANTIC_REVIEW_022.json.",
+  "reader_integration": "Cumulative HTML, live-browser, reproducible PDF, all-page visual, reflowable EPUB, EPUBCheck, EPUB runtime, untranslated-prose and reviewer-decision QA passed.",
+  "translation_decisions": "Reviewer package regenerated: 376 effective schema-valid decisions, 384 exact occurrences, 382 SyncTeX-verified PDF locators, one intentionally unrendered occurrence and one explicitly pending locator. The OLINF-002 historical false-positive classification remains explicitly qualified.",
+  "editorial_scope_constraint": "Faithful 722-unit source coverage remains the controlling deliverable. Completion percentages report contiguous translated source units only."
+}

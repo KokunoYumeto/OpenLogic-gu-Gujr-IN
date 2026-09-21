@@ -1,0 +1,86 @@
+\def\gueditiontitle{લિન્ડસ્ટ્રોમનું પ્રમેય સહિત ઓપન લોજિક ગુજરાતી}
+\def\gueditionheading{%
+  ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+  અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો, સિક્વન્ટ કલન,
+  સ્વાભાવિક નિગમન, ટેબ્લો, સ્વયંસિદ્ધિમૂલક નિષ્પત્તિ, પૂર્ણતા,
+  પ્રથમ-ક્રમ તર્કશાસ્ત્રનો પરિચય, વાક્યરચના, અર્થવિચાર,
+  નિદર્શો અને સિદ્ધાંતો, પ્રથમ-ક્રમથી આગળનાં તર્કશાસ્ત્રો,
+  નિદર્શસિદ્ધાંતના પાયા, અંકગણિતના નિદર્શો, અંતર્વેશન પ્રમેય તથા
+  લિન્ડસ્ટ્રોમનું પ્રમેય}
+\def\gueditiondescription{%
+  આ આવૃત્તિમાં અગાઉના પ્રકરણો સાથે લિન્ડસ્ટ્રોમના પ્રમેયનું સંપૂર્ણ
+  પ્રકરણ ઉમેર્યું છે. તેમાં અમૂર્ત તર્કશાસ્ત્રો, સામાન્યતાના ગુણધર્મો,
+  સઘનતા, અધોગામી લેવેનહાઇમ--સ્કોલેમ, આંશિક એકરૂપતા અને પ્રથમ-ક્રમ
+  તર્કશાસ્ત્રના અભિવ્યક્તિશીલ મહત્તમત્વની સાબિતી સામેલ છે.}
+\def\gueditioncount{૨૦૪}
+\newcommand{\guincludesyntaxbibliography}{}
+\def\gueditionbodyfile{build/lindstrom-body.tex}
+\def\gueditionlabelsfile{build/lindstrom-available-labels.tex}
+\def\gueditioncorrectionids{%
+  OLFUN-001થી OLFUN-005, OLSIZ-001થી OLSIZ-012, OLARI-001થી
+  OLARI-004, OLINF-001થી OLINF-002, OLPL-001થી OLPL-002,
+  OLPRF-001થી OLPRF-004, OLSEQ-001થી OLSEQ-006,
+  OLND-001થી OLND-006, OLTAB-001થી OLTAB-012,
+  OLAX-001થી OLAX-018, OLCO-001થી OLCO-022,
+  OLFINT-001થી OLFINT-006, OLSYN-001થી OLSYN-007,
+  OLSEM-001થી OLSEM-011, OLMAT-001થી OLMAT-005,
+  OLBYD-001થી OLBYD-006, OLMTB-001થી OLMTB-008,
+  OLMAR-001થી OLMAR-016, OLINT-001થી OLINT-010 અને
+  OLLIN-001થી OLLIN-013 સુધીની}
+\def\gueditioneditorial{%
+  લિન્ડસ્ટ્રોમના નવા પ્રકરણમાં અમૂર્ત તર્કશાસ્ત્ર, સામાન્યતા, સઘનતા,
+  અધોગામી લેવેનહાઇમ--સ્કોલેમ અને પ્રથમ-ક્રમ તર્કશાસ્ત્રના મહત્તમત્વની
+  સાબિતી સામેલ છે. સ્થિર મૂળની તેર ઓળખેલી પાઠ્ય, ઔપચારિક અથવા અર્થલક્ષી
+  ખામીઓ પારદર્શક નોંધો સાથે મર્યાદિત રીતે સુધારી છે.}
+\providecommand{\Domain}[1]{\left|\mathfrak{#1}\right|}
+\ProvideDocumentCommand{\Trm}{o}{%
+  \IfNoValueTF{#1}{\mathrm{Trm}}{\mathrm{Trm}(\mathcal{#1})}}
+\providecommand{\num}[1]{\overline{#1}}
+\providecommand{\Var}{\mathrm{Var}}
+\providecommand{\Part}[2]{\Atom{\Obj P}{#1, #2}}
+\ProvideDocumentCommand{\lambd}{o o}{%
+  \IfNoValueTF{#1}{\lambda}{\lambda #1}%
+  \IfNoValueTF{#2}{\relax}{.\, #2}}
+\ProvideDocumentCommand{\mModel}{m}{\mathfrak{#1}}
+\ProvideDocumentCommand{\mSat}{t{/} m m o}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#4}{\mModel{#2}\nVdash #3}{\mModel{#2},#4\nVdash #3}}{%
+    \IfNoValueTF{#4}{\mModel{#2}\Vdash #3}{\mModel{#2},#4\Vdash #3}}}
+\providecommand{\substruct}{\subseteq}
+\providecommand{\Theory}[1]{\mathrm{Th}(\Struct{#1})}
+\DeclareDocumentCommand{\Mod}{o d() m}{%
+  \IfNoValueTF{#2}{%
+    \IfNoValueTF{#1}{\mathrm{Mod}(#3)}{\mathrm{Mod}^{\Lang{#1}}(#3)}}{%
+    \IfNoValueTF{#1}{\mathrm{Mod}_{#2}(#3)}{\mathrm{Mod}_{#2}^{\Lang{#1}}(#3)}}}
+\ProvideDocumentCommand{\elemequiv}{t{/} o}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#2}{\not\equiv}{\not\equiv_{#2}}}{%
+    \IfNoValueTF{#2}{\equiv}{\equiv_{#2}}}}
+\ProvideDocumentCommand{\iso}{t{/} o}{%
+  \IfBooleanTF{#1}{%
+    \IfNoValueTF{#2}{\not\simeq}{\not\simeq_{#2}}}{%
+    \IfNoValueTF{#2}{\simeq}{\simeq_{#2}}}}
+\providecommand{\QuantRank}[1]{\mathrm{qr}(#1)}
+\providecommand{\Expan}[2]{(\Struct{#1}, #2)}
+\providecommand{\PIso}[1]{\mathcal{#1}}
+\providecommand{\Th}[1]{\mathbf{#1}}
+\ProvideDocumentCommand{\OCon}{o}{%
+  \mathsf{Con}\IfNoValueTF{#1}{}{_{#1}}}
+\ProvideDocumentCommand{\OPrf}{o}{%
+  \mathsf{Prf}\IfNoValueTF{#1}{}{_{#1}}}
+\providecommand{\gn}[1]{\ulcorner #1\urcorner}
+\providecommand{\concat}{\frown}
+\providecommand{\nszero}{\mathbf{z}}
+\providecommand{\nssucc}{*}
+\providecommand{\nsplus}{\oplus}
+\providecommand{\nstimes}{\otimes}
+\providecommand{\nsless}{\mathrel{\lessdot}}
+\providecommand{\Olref}{\olref}
+\providecommand{\gitissue}[1]{%
+  \href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{GitHub મુદ્દો \##1}}
+\providecommand{\article}[1]{}
+\providecommand{\Article}[1]{}
+\newenvironment{history}{%
+  \begin{quote}\textbf{ઇતિહાસ.}\ }{%
+  \end{quote}}
+\input{gu-tableaux.tex}

@@ -1,16 +1,16 @@
 # Start here: Gujarati translation decisions
 
-This directory is the review entry point for the current 199/722-unit Gujarati
+This directory is the review entry point for the current 204/722-unit Gujarati
 working edition.
 
 - `DECISIONS.json` is the canonical schema-valid register.
-- `TRANSLATION_DECISIONS_FULL.md` presents all 356 decisions in readable form.
-- `PRIORITY_REVIEW.md` isolates 150 urgent or high-priority items.
-- `DECISION_OCCURRENCES.csv` flattens all 364 exact source/target occurrence records.
+- `TRANSLATION_DECISIONS_FULL.md` presents all 376 decisions in readable form.
+- `PRIORITY_REVIEW.md` isolates 157 urgent or high-priority items.
+- `DECISION_OCCURRENCES.csv` flattens all 384 exact source/target occurrence records.
 - `TRANSLATION_DECISION_QA.json` records schema, hash, locator, and cross-surface checks.
 - `translation-decision.schema.json` is the frozen normative schema.
 - `../GUJARATI_EDITION_SCOPE.md` states the script, register, notation, and variant policy.
 
-Reader locations currently include 362 verified PDF
+Reader locations currently include 382 verified PDF
 pages and 1 explicitly pending pages. A pending page is
 never an inferred or estimated page.

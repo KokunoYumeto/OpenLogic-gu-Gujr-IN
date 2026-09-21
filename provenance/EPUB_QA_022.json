@@ -1,0 +1,112 @@
+{
+  "schema": "openlogic-gu-epub-qa/1",
+  "checked_at_utc": "2026-09-20T23:56:59.616828+00:00",
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Lindstrom.epub",
+    "bytes": 611382,
+    "sha256": "6276bc4a9b650a397ebc285ac79acd9769db98af86017e91eb68fbf6416da146",
+    "version": "EPUB 3.3",
+    "layout": "reflowable",
+    "language": "gu-IN",
+    "direction": "ltr",
+    "coverage": {
+      "translated": 204,
+      "total": 722,
+      "units": "OLP-0004–0207"
+    },
+    "complete_edition": false
+  },
+  "reuse": {
+    "pipeline": "Adapted deterministic XHTML namespace, OPF, navigation, cold-replay and EPUBCheck practices from the accepted Accessible Complete English EPUB pipeline.",
+    "source_task": "019ffc65-3d4d-7e21-a913-21cc33a9be4a"
+  },
+  "epubcheck": {
+    "version": "5.3.0",
+    "jar_sha256": "f7f96617c929371821609b88c8484d6dc9f24fe916499863c46094c5fb778a65",
+    "report": "build/EPUBCHECK_022.json",
+    "report_sha256": "05e64c97c4e45fc0935724e96837744d166fc65681e7489d3a1c6ef95c1a4c93",
+    "messages": 0,
+    "fatals": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "reproducibility": {
+    "cold_replay_byte_identical": true,
+    "build_receipt": "build/EPUB_BUILD_RECEIPT_022.json",
+    "build_receipt_sha256": "adbd4e3701aaca01b72eb57c8ab3d36967e38dc5e931246898befe63ceca40ac"
+  },
+  "structural_and_semantic_checks": {
+    "archive_entries": 24,
+    "mimetype_first_and_uncompressed": true,
+    "native_mathml_nodes": 12178,
+    "block_mathml_nodes": 555,
+    "mathml_subtrees_exact_after_namespace_normalization": true,
+    "tex_annotations_exact": 12178,
+    "gujarati_character_sequence_exact": true,
+    "content_ids_exact": 772,
+    "broken_internal_content_links": 0,
+    "navigation_links": 210,
+    "broken_navigation_links": 0,
+    "tables": 12,
+    "proof_representations": 208,
+    "footnotes": 13,
+    "described_svg_figures": 15,
+    "embedded_gujarati_fonts": 2,
+    "scripts": 0,
+    "all_175_source_correction_disclosures_preserved": true,
+    "olinf_002_historical_classification_withdrawal_preserved": true,
+    "honest_partial_scope_metadata": true
+  },
+  "runtime_inspection": {
+    "inspected_at_utc": "2026-09-20T23:56:59.616828+00:00",
+    "method": "The exact packaged XHTML bytes were fetched locally and loaded into an HTML srcdoc frame because the in-app browser blocks direct application/xhtml+xml navigation. A base element preserved the EPUB rendition's relative assets.",
+    "exact_xhtml_binding": {
+      "content_xhtml_sha256": "e61561dd55ffa891dd189ff179b8c58291eba2746088cedb881cc10784691a26",
+      "navigation_xhtml_sha256": "9b3c33cfeb7f1222aa7396e1d7c4b3ef33dddd44d77036341256a7cfd507463e",
+      "stylesheet_sha256": "533c677e1de5d743083368429b99c9cb05d9a9feb96846ebb511227382feea93",
+      "archive_content_byte_identical_to_stage": true,
+      "archive_navigation_byte_identical_to_stage": true,
+      "archive_stylesheet_byte_identical_to_stage": true
+    },
+    "viewport_css_pixels": [
+      1280,
+      720
+    ],
+    "representative_views": [
+      "title and cumulative table of contents in the exact packaged XHTML",
+      "Lindstrom chapter opening and abstract-logic definition",
+      "compactness and downward Loewenheim-Skolem definitions",
+      "partial-isomorphism SVG, caption, and OLLIN-005/006 disclosures",
+      "Lindstrom theorem and proof formulas",
+      "fresh-constant compactness argument and OLLIN-012/013 disclosures"
+    ],
+    "runtime_checks": {
+      "document_ready_state": "complete",
+      "fonts_status": "loaded",
+      "native_mathml_nodes": 12178,
+      "block_mathml_nodes_checked": 555,
+      "unhandled_clipped_block_mathml_nodes": 0,
+      "intentionally_horizontally_scrollable_tableaux": 3,
+      "document_horizontal_overflow": false,
+      "images_loaded": 15,
+      "images_with_nonempty_gujarati_alt": 15,
+      "tables": 12,
+      "raw_problem_tag_leaks": 0,
+      "repaired_tagged_exercise_occurrences": 1,
+      "target_browser_console_messages": 0,
+      "excluded_stale_session_entries": 0,
+      "unique_content_ids": 772,
+      "runtime_receipt": "work/EPUB_BROWSER_RUNTIME_022.json",
+      "runtime_receipt_sha256": "71154b7961af7d139a888bb72cd7eb879e56afca9d2d99a4c1431a862b590d66"
+    },
+    "visual_findings": {
+      "gujarati_shaping": "passed",
+      "mathml_layout": "passed",
+      "diagram_and_caption_layout": "passed",
+      "navigation_and_end_matter": "passed",
+      "overlap_or_truncation": "none_observed"
+    },
+    "status": "passed_silent_exact_xhtml_runtime_inspection"
+  },
+  "status": "passed_epubcheck_structural_math_source_coverage_link_and_silent_runtime_qa"
+}

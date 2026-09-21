@@ -1138,13 +1138,42 @@ def find_body_line(target: dict[str, Any], decision_id: str) -> tuple[int, str] 
     title_match = re.search(r"\{([\u0A80-\u0AFF][^{}]*)\}\s*$", raw_line)
     if title_match:
         title = title_match.group(1)
+        source_level = re.search(
+            r"\\(olpart|olchapter|olsection|olsubsection)\{", raw_line
+        )
+        transformed_level = (
+            {
+                "olpart": "part",
+                "olchapter": "section",
+                "olsection": "subsection",
+                "olsubsection": "subsubsection",
+            }[source_level.group(1)]
+            if source_level
+            else None
+        )
         title_matches = [
             index + 1
             for index, line in enumerate(body_lines)
-            if title in line and re.search(r"\\(?:part|chapter|section)\{", line)
+            if title in line
+            and re.search(
+                r"\\(?:part|chapter|section|subsection|subsubsection)\{", line
+            )
         ]
         if len(title_matches) == 1:
             return title_matches[0], "unique transformed Gujarati driver title"
+        if len(title_matches) > 1 and transformed_level:
+            level_matches = [
+                line_number
+                for line_number in title_matches
+                if re.search(
+                    rf"\\{transformed_level}\{{", body_lines[line_number - 1]
+                )
+            ]
+            if len(level_matches) == 1:
+                return (
+                    level_matches[0],
+                    "unique transformed Gujarati driver title at matching hierarchy level",
+                )
 
     return unique_token_aligned_line(
         body_lines,

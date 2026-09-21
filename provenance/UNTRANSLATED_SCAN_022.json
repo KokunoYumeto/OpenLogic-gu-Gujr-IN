@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/022",
+  "checked_at_utc": "2026-09-20T23:22:12.614002+00:00",
+  "scope": "OLP-0203–OLP-0207 Gujarati Lindström source files",
+  "method": "Scanned prose surfaces after removing comments, mathematical displays, inline math, derivation environments, labels, references, paths, citations and TeX control words. Source-correction prose was scanned separately after removing keyed IDs, filenames, math, literal control names and explicitly quoted frozen-source fragments.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0203",
+      "path": "content/model-theory/lindstrom/lindstrom.tex",
+      "target_sha256": "d48af8cafb10cde39c44dfa64abd1a7ee46f38158b854cf580bcc2792c04bd73",
+      "gujarati_characters": 21,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0204",
+      "path": "content/model-theory/lindstrom/introduction.tex",
+      "target_sha256": "06522fe45c8e3f4a5a97a75413f53714043342468a4ebbd55f58a4cba5856b97",
+      "gujarati_characters": 378,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0205",
+      "path": "content/model-theory/lindstrom/abstract-logics.tex",
+      "target_sha256": "daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d",
+      "gujarati_characters": 2659,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 3
+    },
+    {
+      "unit_id": "OLP-0206",
+      "path": "content/model-theory/lindstrom/ls-property.tex",
+      "target_sha256": "5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20",
+      "gujarati_characters": 2598,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 5
+    },
+    {
+      "unit_id": "OLP-0207",
+      "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "target_sha256": "cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc",
+      "gujarati_characters": 3012,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 5
+    }
+  ],
+  "totals": {
+    "units": 5,
+    "gujarati_characters": 8668,
+    "source_detector_ascii_tokens": 1414,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 13,
+    "quoted_frozen_source_literals": 0
+  },
+  "detector_sensitivity": "The same prose-surface detector found more than 500 ASCII prose tokens in the frozen English source, while finding none in the Gujarati target.",
+  "allowed_formal_abbreviations": [
+    "FOL",
+    "MP"
+  ],
+  "allowed_formal_literals": [
+    "FOL tag name",
+    "false tag value",
+    "forall x book title"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "quoted_frozen_source_literals": [],
+  "tagged_token_mismatches": [],
+  "status": "passed_zero_untranslated_ordinary_prose_and_exact_tagged_token_parity",
+  "full_corpus_complete": false
+}
