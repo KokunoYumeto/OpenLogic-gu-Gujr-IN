@@ -3,12 +3,12 @@
   "total": 722,
   "translated": 248,
   "working_scope": "સંગણનીયતા સિદ્ધાંત સુધીનું સ્થાનિક સંચિત ગુજરાતી ભાષાંતર, OLP-0004–0251",
-  "working_status": "૨૪૮ એકમોના HTML/PDF/EPUB, પૂર્ણ-લખાણની ચોક્કસ PDF પુનઃરચના અને જાહેર સ્રોત-ચેકપોઇન્ટનું અનામી પાછું-વાંચન પસાર; સંચિત પ્રકાશન બાકી",
+  "working_status": "248 એકમોના સ્રોત, HTML/MathML, EPUB, PDF, પૂર્ણ-લખાણ અને GitHub/Zenodoની આઠ ફાઇલો તથા PDF પૂર્વદર્શનનું અનામી પાછું-વાંચન પસાર થયું; સંપૂર્ણ 722 એકમોની આવૃત્તિ હજી ચાલુ છે",
   "public_release": {
-    "tag": "lindstrom-v0.16.0",
-    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/lindstrom-v0.16.0",
-    "translated": 204,
-    "scope": "લિન્ડસ્ટ્રોમ સુધીની સંપૂર્ણ સંચિત પ્રકાશિત આવૃત્તિ, OLP-0004–0207"
+    "tag": "computability-theory-v0.18.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/computability-theory-v0.18.0",
+    "translated": 248,
+    "scope": "પુનરાવર્તી વિધેયો અને સંગણનીયતા સિદ્ધાંત સુધીની સંપૂર્ણ સંચિત પ્રકાશિત આવૃત્તિ, OLP-0004–0251"
   },
   "public_source_checkpoint": {
     "commit": "48587542d242bb371a711fce60589dcb9b192ce6",
@@ -1467,308 +1467,308 @@
       "unit_id": "OLP-0208",
       "source_path": "content/computability/computability.tex",
       "source_sha256": "06bd974e1fdd20c55d488082a40cd9d22f95868f3e1a748300cab90330546932",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "0ae8c5693979c343a1ddea62b9d32962cbd6bff2eeddf287ab220b4b652abe73"
     },
     {
       "unit_id": "OLP-0209",
       "source_path": "content/computability/recursive-functions/recursive-functions.tex",
       "source_sha256": "343dbc5ce104e887d62cce98c05eb92653e7f03392e289442c3cc7332307a206",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "a994f76db812c6196fc73a9e35b49fff0fc96ea72f7457e5816e8b714c01c64c"
     },
     {
       "unit_id": "OLP-0210",
       "source_path": "content/computability/recursive-functions/introduction.tex",
       "source_sha256": "5c4a5e794bb772c06d8e3fe7463f696763ab8f2c9f5a377afe229d7e7b05ea83",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "c30e681e691c687b21c20fb280a031749cb6f5cfd4b89acccac4db0cc4dc7758"
     },
     {
       "unit_id": "OLP-0211",
       "source_path": "content/computability/recursive-functions/primitive-recursion.tex",
       "source_sha256": "97d3f46ebb20b4b14aea28616d16869c138c56b6a2b4128e378f8f35cef806af",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "4747870d40c5f46eea308bd9f4d5f85b9977732f3f9370b895ef328cfb7d358c"
     },
     {
       "unit_id": "OLP-0212",
       "source_path": "content/computability/recursive-functions/composition.tex",
       "source_sha256": "a9cd5dc0f4ae4fa06879d81b829b0ae4b57473bc00b801ba6532a98dbdb1dc4a",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "2afb6f6105efe40844369c7e7aa540f934941a88bd84b876fd20b2d0e1d2bd38"
     },
     {
       "unit_id": "OLP-0213",
       "source_path": "content/computability/recursive-functions/pr-functions.tex",
       "source_sha256": "893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "c4bd201c5dfd11bddc6246781d00ff1f946e70e389375a2aa667f3b72151b2bb"
     },
     {
       "unit_id": "OLP-0214",
       "source_path": "content/computability/recursive-functions/notation-pr-functions.tex",
       "source_sha256": "8e10b20204065445cbf26871cb999e37664b46af04a7bb7233f880c9404f4a5f",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "726aa98b9c1c9281bfc3b7444d7f54ac58e99fa55a0e877abde1c2f43548e31e"
     },
     {
       "unit_id": "OLP-0215",
       "source_path": "content/computability/recursive-functions/pr-functions-computable.tex",
       "source_sha256": "3e21459528e5bc5a33625412ccc06cef21f44bc6c1a32b3f05bbf7d320731b3a",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "20eeb1263f2365941c1ed466fd9417dc23e5756ddd8b10b42fe3e55ad9cb1f00"
     },
     {
       "unit_id": "OLP-0216",
       "source_path": "content/computability/recursive-functions/examples.tex",
       "source_sha256": "d76450ea38acccc3c51ca125104c6e09b6b02ecbc33c11e31cfa9ce190d29c26",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "d01b294f8b6e3561b09e1d9ccf0366e92e719f07b971f561b7f4524402f502b4"
     },
     {
       "unit_id": "OLP-0217",
       "source_path": "content/computability/recursive-functions/pr-relations.tex",
       "source_sha256": "9ab1255a55ef04404aadcde303e86a6d245f8d92c42f096de134658aebf82f97",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "16d27a6d8db5902929e7ffeb3be997f8188036276f234df389ff7ca752e0912f"
     },
     {
       "unit_id": "OLP-0218",
       "source_path": "content/computability/recursive-functions/bounded-minimization.tex",
       "source_sha256": "682737f7312e08999a21f07a0a6859e4e0b4ed81ec5c9094789f774f1596bda6",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "d316747abc39f69e1b15daa19a11c7bf1ededf03086ab802281c77e8401a31c8"
     },
     {
       "unit_id": "OLP-0219",
       "source_path": "content/computability/recursive-functions/primes.tex",
       "source_sha256": "76fc5fb7d628c14a52d6a8b0e9fbad24fe15fa49f170e89f8982d79043daa1b4",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "88a732aee36e78b3fec0ee4eeb8150fba7bea1ab4ba398f5cf6bfc5c7eec5619"
     },
     {
       "unit_id": "OLP-0220",
       "source_path": "content/computability/recursive-functions/sequences.tex",
       "source_sha256": "044570a5499177a994d08baaa6109db5db40c6d69dda2d8961909cdce945b8ae",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "162f110023a1c829d752d41263efab9ca51bd560d50cc23462c183db53245d63"
     },
     {
       "unit_id": "OLP-0221",
       "source_path": "content/computability/recursive-functions/trees.tex",
       "source_sha256": "a6e3ba54bc944e81c1db72ae00f56f1dc27b3ed05c57de110585810927569277",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "942be8b8d2cb73806bc4c2aa724338fea51a37b8d2444fe0f9fe4cfa79af5894"
     },
     {
       "unit_id": "OLP-0222",
       "source_path": "content/computability/recursive-functions/other-recursions.tex",
       "source_sha256": "ecd3dc5f6ffbfcbf812e75ed5b87ed9b1f9aa49b779a9e3a6c3a6f491d691400",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "e7d53ee3c06562d39a6b5d25ef18060c01854b40bf85b87d51066377980eab04"
     },
     {
       "unit_id": "OLP-0223",
       "source_path": "content/computability/recursive-functions/non-pr-functions.tex",
       "source_sha256": "7993ec35fabf2bf885ef199ea208a5d5fc0557ad61ea5a10fd8a90eaaf1e1567",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "755b7a1c1d1092fa03b50f1609b07e11c6263660dec8a2ddaebe6990c6b75128"
     },
     {
       "unit_id": "OLP-0224",
       "source_path": "content/computability/recursive-functions/partial-functions.tex",
       "source_sha256": "a30626b08ef610b2da04defc5b41f53ff48c62da6a30587a048278625d5f318d",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "eaea837a28244d57675a72150ef632d8d80456fae6ec54fb2753e0b84d448531"
     },
     {
       "unit_id": "OLP-0225",
       "source_path": "content/computability/recursive-functions/normal-form.tex",
       "source_sha256": "b8c31bf729df2372640c16b1b3eb4e64256b0b59e2caaf9a7e3bb6a4f2fe93db",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "a8cea91621295d5e83a5fdf773c58939644464f659a274e62b98e98d5eeef2ef"
     },
     {
       "unit_id": "OLP-0226",
       "source_path": "content/computability/recursive-functions/halting-problem.tex",
       "source_sha256": "08569f88dbc93bf89320bc9e7ea3224dabcfc2d0af8125edf9dd22f37220483e",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "bfbd9f6cd534ef80ef132a9485b1d690c38bcc84a7f134f7aa99b6455648a92b"
     },
     {
       "unit_id": "OLP-0227",
       "source_path": "content/computability/recursive-functions/general-recursive-functions.tex",
       "source_sha256": "e055df19289a2f5db360cc644656c3f6269a026cb26f9a62853a23a9ace7afcf",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "5038174067a2620203fc60f94cef96e443a582412da23a3f76b733f3911f441b"
     },
     {
       "unit_id": "OLP-0228",
       "source_path": "content/computability/computability-theory/computability-theory.tex",
       "source_sha256": "de85020d2628f48f4e3f76cdcc1e31630f9a1e4a5f6581312c6ee4711ad3bcba",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "2764a3569f94d7086a2d8c71f6003c0fdcf89e72127d55c49ae487ab6c111996"
     },
     {
       "unit_id": "OLP-0229",
       "source_path": "content/computability/computability-theory/introduction.tex",
       "source_sha256": "685a46820c472f602c8cb6fb72595377355a1cbbeb9d07cf2b98f86405086127",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "3270904426057dceb83abade40b167511b6216ceba41799afe4ed54bfd3b91ce"
     },
     {
       "unit_id": "OLP-0230",
       "source_path": "content/computability/computability-theory/coding-computations.tex",
       "source_sha256": "ee3787973d947bd45363fb67b4ad1ab1843c67c6d489d13f66fd5cec592f057e",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "0795c587798367be11b0c98cc6e0fbf06bb7d68adb60e54f7fa1bb2e2d2e4dbb"
     },
     {
       "unit_id": "OLP-0231",
       "source_path": "content/computability/computability-theory/normal-form.tex",
       "source_sha256": "284d55b8904baa230dce3fb9f00c04412d17988b67682157a0da65bdce8bd348",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "0f50ed62e471f258f75558af704faaf8dde1dc595e59d2078908b5894132cf17"
     },
     {
       "unit_id": "OLP-0232",
       "source_path": "content/computability/computability-theory/s-m-n.tex",
       "source_sha256": "24f3238689ed3251d63da8eb5e2daaa5cd99c8f2c29afb114d3b99183e555efc",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "30ddcbe5b93406654cba2393f9a09c3b23b707e35b01d1899f7405950c9433e8"
     },
     {
       "unit_id": "OLP-0233",
       "source_path": "content/computability/computability-theory/universal-part-function.tex",
       "source_sha256": "ebea87bb478e1b3f401702e1ae9d4636e6823c5df78894ad09c8ee0b7fee8e49",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "c8f70eb0902a376ec443690ddae13c059b737ecf466f0fdaf5c7fc76fd83797f"
     },
     {
       "unit_id": "OLP-0234",
       "source_path": "content/computability/computability-theory/no-universal-function.tex",
       "source_sha256": "b0d4d93239c8276120c26d25bb5caa43e9a71001ccbd1246860cb35bf9a6ebcb",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "e8b95ec66369a1810647070fc69c8c7d9fcb44cf22593df8e2c833ce41012503"
     },
     {
       "unit_id": "OLP-0235",
       "source_path": "content/computability/computability-theory/halting-problem.tex",
       "source_sha256": "7bd566448fde580f1a32b27cd9382544c05535009656f0710b2ea41135799cd7",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "f181215141f198d439e53ed22ad7f1676b37e3aedcd7a4338c67b3c139e4452c"
     },
     {
       "unit_id": "OLP-0236",
       "source_path": "content/computability/computability-theory/russells-paradox.tex",
       "source_sha256": "eb1fc81105316b076e39d9a9737473da60dcbec63583615813773d5c0649b98b",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "8854ab21a0ef37cea543f0a0f5a5df3c3d82876e6f65d24e31a00930b0e4b837"
     },
     {
       "unit_id": "OLP-0237",
       "source_path": "content/computability/computability-theory/computable-sets.tex",
       "source_sha256": "d35d7afbe6eebe0a25dcd22c5b2c82b07baacb432183d0685950902900799cbe",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "9b24b7d74b7ed4935b072fb436f167bdd0406461140feeac5d59ddd1290c4f29"
     },
     {
       "unit_id": "OLP-0238",
       "source_path": "content/computability/computability-theory/ce-sets.tex",
       "source_sha256": "a4cb50deceb3d948ebf79dc5f5aad48801a5a58e633c98e7caf834098a3402a8",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "5344ab43cb5048911159c69581dba03f23b49895ea033689da55b948353f2dd4"
     },
     {
       "unit_id": "OLP-0239",
       "source_path": "content/computability/computability-theory/equiv-ce-defs.tex",
       "source_sha256": "d997e01b3f6cae024d43895694771f165f9bff070b5b3b7469ddd827e2777d51",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "b40421aa888a657dccf4f367da63f2a32fa1ddd166f3048e48b626f4d2f84706"
     },
     {
       "unit_id": "OLP-0240",
       "source_path": "content/computability/computability-theory/non-comp-set.tex",
       "source_sha256": "d6104b2bdb7763c1360dfda3f360b4db8ac8e2356315269b02664517918e4eca",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "210e8081fe348577b9d7428780a9c801de590958c76e1273b5e71935febb2e83"
     },
     {
       "unit_id": "OLP-0241",
       "source_path": "content/computability/computability-theory/ce-closed-cup-cap.tex",
       "source_sha256": "392c55f9b3a78a7c396fe53bcfe80e60af85d1f0ffe1e527619d2eb7c54e5e2e",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "9651152a89d638fdbc3691ab1029d142c2b453a8994f2322d842cd7c73fe1aa3"
     },
     {
       "unit_id": "OLP-0242",
       "source_path": "content/computability/computability-theory/complement-ce.tex",
       "source_sha256": "9bc0f9cc61b6f4e68b6e95079d2966b0e05ed3c0ed1128710532e2f76258208f",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "ed01119d6b927b5b355714758301a5e761b3ce4609a537ab9fa22486bd95406f"
     },
     {
       "unit_id": "OLP-0243",
       "source_path": "content/computability/computability-theory/reducibility.tex",
       "source_sha256": "f8797ad4502fbd9611f45780b5f706c1cf9b9c0ee49f44b05a9cc535bf201b1a",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "495c4d33bf3d58be58a5c097afa2b8b9f5b90985089a77306ab69f06d9f2c508"
     },
     {
       "unit_id": "OLP-0244",
       "source_path": "content/computability/computability-theory/prop-reduce.tex",
       "source_sha256": "20795f49f8764c1062416ecda88edb34ad983a8f3643cb0878ccf64f08ede5e8",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "01abf947dc18c37314253983ecc16844755c1fec7b012514d6e2b73a5574700e"
     },
     {
       "unit_id": "OLP-0245",
       "source_path": "content/computability/computability-theory/complete-ce-sets.tex",
       "source_sha256": "8df21b8f708dbf50a1929c42788669af2c7e6b5ab1841eab1c4c328dc9e62030",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "624bf4fa274fedebebb8c39047cf7318f30067ebeb84a197311c18d79d31675a"
     },
     {
       "unit_id": "OLP-0246",
       "source_path": "content/computability/computability-theory/k-1.tex",
       "source_sha256": "a2ddcee4c073868a4768ebc44c9b9634b48b4ade9fd31f37450df159f336a35a",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "918ccdd85eb5bdba935c6b31f9311cfded78e5ca5e36a22884a63f1ab93d1593"
     },
     {
       "unit_id": "OLP-0247",
       "source_path": "content/computability/computability-theory/total.tex",
       "source_sha256": "020737f92a1de1a6ce8664bcf1037021d0dc8454049e5afa6732305015c345ca",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "96daa0bc2eabd65b205153943cb8f3df000de5fd8d1c63400457c605dcc5f418"
     },
     {
       "unit_id": "OLP-0248",
       "source_path": "content/computability/computability-theory/rice-theorem.tex",
       "source_sha256": "6d6ff6b882375fb44ebb79ee1ef6b2c5e5b6f0d783e8110ce23a681c6afb4b80",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "fa4987bca14ecf8fc3d544af0b53b2a3403a4067b03865e8b59f8d2243f2b83f"
     },
     {
       "unit_id": "OLP-0249",
       "source_path": "content/computability/computability-theory/fixed-point-thm.tex",
       "source_sha256": "53820e9ac9bab541de29bbd3f329cd4b7d42b63c7be76f186ad0a118019e51c6",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "4da41a5627aeee2d20f980ae3b25a4ddd3b17e078141058983180b5d7b717fe7"
     },
     {
       "unit_id": "OLP-0250",
       "source_path": "content/computability/computability-theory/application-fixed-point.tex",
       "source_sha256": "4bdbdec16af8ee62d1cf0af9b3e4b79a01a5f404c826076a10e59fe8b4228696",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "5c6cf00273f1b508b6b80359be3a5436f0245596ebc02b75ac7352a6756bafd8"
     },
     {
       "unit_id": "OLP-0251",
       "source_path": "content/computability/computability-theory/def-functions-self-reference.tex",
       "source_sha256": "eba836e27cd1df6c051372ce7b15a85236dd9b7e601c2db9a6e1583914481e37",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "fdfdd82cc8fb0f3ebf96cb847d428af169da80101d8de08a93f614380bafac09"
     },
     {
