@@ -1,0 +1,61 @@
+% Part: computability
+% Chapter: computability-theory
+% Section: total
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{thy}{tot}
+\olsection{સંપૂર્ણતા અનિર્ણેય છે}
+
+કોઈ વસ્તુ અસંગણનીય છે તે બતાવવા $s$-$m$-$n$ પ્રમેયનો
+વધુ એક ઉપયોગ જોઈએ. $\fn{Tot}$ એ સંપૂર્ણ સંગણનીય વિધેયોના
+સૂચકોનો ગણ હોય, એટલે
+\[
+\fn{Tot} = \Setabs{x}{\text{દરેક $y$ માટે, $\cfind{x}(y)\fdefined$}}.
+\]
+
+\begin{prop}
+\ollabel{prop:total}
+$\fn{Tot}$ સંગણનીય નથી.
+\end{prop}
+
+\begin{proof}
+$\fn{Tot}$ સંગણનીય નથી તે જોવા $K$ને તેમાં ઘટાડી
+શકાય છે એવું બતાવવું પૂરતું છે. $h(x,y)$ને આમ વ્યાખ્યાયિત કરો:
+\[
+h(x,y) \simeq
+\begin{cases}
+0 & \text{જો $x \in K$} \\
+\fundefined & \text{અન્યથા}
+\end{cases}
+\]
+નોંધો કે $h(x,y)$, $y$ પર જરાય આધાર રાખતું નથી.
+$h$ આંશિક સંગણનીય છે તે સમજવું મુશ્કેલ નથી: ઇનપુટ $x, y$
+પર~$h$ ગણવા પહેલાં ઇનપુટ~$x$ પર વિધેય~$\cfind{x}$નું
+અનુકરણ કરીએ; તે સંગણના થંભે, તો $h(x,y)$, $0$ આપે અને
+થંભે. આમ $h(x,y)$ એ $\Zero(\umin{s}{T(x,x,s)})$ જ છે,
+જ્યાં $\Zero$ અચળ શૂન્ય વિધેય છે.
+
+$s$-$m$-$n$ પ્રમેયથી એવું આદિમ પુનરાવર્તી વિધેય~$k(x)$
+છે કે દરેક $x$ અને~$y$ માટે
+\[
+\cfind{k(x)}(y) =
+\begin{cases}
+0 & \text{જો $x \in K$} \\
+\fundefined & \text{અન્યથા}
+\end{cases}
+\]
+તેથી $x \in K$ હોય તો $\cfind{k(x)}$ સંપૂર્ણ છે અને
+અન્યથા અનિર્ધારિત છે. આમ $k$, $K$નું~$\fn{Tot}$માં
+ન્યૂનીકરણ છે.
+\end{proof}
+
+\begin{digress}
+હકીકતમાં $\fn{Tot}$ સંગણકીય રીતે પરિગણનીય પણ નથી---
+તેની જટિલતા ``અંકગણિતીય પદાનુક્રમ''માં વધુ ઊંચે આવે છે.
+પરંતુ અહીં આ વધુ મજબૂત પરિણામની ચિંતા કરીશું નહીં.
+\end{digress}
+
+\end{document}

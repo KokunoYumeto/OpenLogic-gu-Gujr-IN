@@ -153,7 +153,8 @@ new_editorial_tail = old_editorial_tail + """        'lindstrom':('લિન્�
 assert code.count(old_editorial_tail) == 1
 code = code.replace(old_editorial_tail, new_editorial_tail)
 
-generated = ROOT / "tools" / "build_lindstrom_html_expanded.py"
-generated.write_text(code, encoding="utf-8", newline="\n")
-sys.argv = [sys.argv[0], "lindstrom"]
-exec(compile(code, str(generated), "exec"), {"__name__": "__main__", "__file__": str(template)})
+if __name__ == "__main__":
+    generated = ROOT / "tools" / "build_lindstrom_html_expanded.py"
+    generated.write_text(code, encoding="utf-8", newline="\n")
+    sys.argv = [sys.argv[0], "lindstrom"]
+    exec(compile(code, str(generated), "exec"), {"__name__": "__main__", "__file__": str(template)})

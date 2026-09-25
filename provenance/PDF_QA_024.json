@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-gu-pdf-qa/24",
+  "checked_at_utc": "2026-09-25T04:39:03.018798+00:00",
+  "path": "releases/OpenLogic-gu-Gujr-IN-Computability-Theory.pdf",
+  "bytes": 2678201,
+  "sha256": "9f994774f7d1d54b6da10d41c56d64377116efbfec34afab1c28eac89bde3ca1",
+  "coverage": "248/722; OLP-0004–0251",
+  "pages": 304,
+  "source_correction_disclosures_new": 12,
+  "guarded_build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "convergence_and_replay_passes": 3,
+    "all_three_passes_byte_identical": true,
+    "receipt_sha256": "6ad595b14c1abfa7a3055d96ba7db67455730d8a7f3a4f1b44ebab84b324cff3"
+  },
+  "visual_inspection": {
+    "new_pages_rendered": 44,
+    "new_pages_visually_inspected_in_contact_sheets": true,
+    "representative_pages_inspected_at_1500px": [
+      1,
+      284,
+      285,
+      299,
+      300,
+      304
+    ],
+    "boundary_check_sha256": "96161e84a59b6638ceba702cd8acde046ed1910753f4212325bd43766c7a0047",
+    "contact_sheet_sha256": {
+      "contact-01.png": "a1de75521ab5673649c8269c1aac166c8b0bfea19a0f4054334b36291e63a626",
+      "contact-02.png": "d6d3828887f907da006f334666a6d4028fde9a3291bfbcfc7842bf5413fc38b8",
+      "contact-03.png": "794202f038a417845916987280e8bb48af6dc0e38bbdebb8f4a48d0b4e769fec",
+      "contact-04.png": "5b681b2fa1e3a8cb4121ee9a7dfa1b3f808a54aba69aba6c4bda70144150096f",
+      "contact-05.png": "aa3bde607115ca4e5fce51c78cb590b5ed98bb09844ac72011b30385c9b5fde4",
+      "contact-06.png": "f4ea65bcce554a366aa1aa846b9aa3e3cd02f564f1f6ceb745b0961e05ee8740",
+      "contact-07.png": "974f2f0f22c89e21c6ffecc8c545423dfdd134ae25f470723c0f51b0f2a14748",
+      "contact-08.png": "42b27b7977cd8b9717698983a176c7be88ce81c98d14f6ba70a9f85807347e68",
+      "contact-09.png": "dfe2c4c148457b2f9a169d28c317a49442365383ee039ec64b4627727ad486e3",
+      "contact-10.png": "a7591a6405eed49842d4b36b950510f6083996191592b9b96830c05602931733",
+      "contact-11.png": "2faa328002d6e98094902ba60e6f927d33367277fa00208645044b613538cfdb"
+    },
+    "sample_sha256": {
+      "PDF024_title.png": "9dcac63998b7dffd3d09f633e523475a17f01f454f457ec29db0959d76e22fd7",
+      "PDF024_theory.png": "5636c978d0bd31b169f185d9c511a2457fb1958d1fa7a5b3c13c2a6cedf95a35",
+      "PDF024_normal_form.png": "08a6e05e049206685be1e3081f033dc8253b81085a92810fb389969179532a63",
+      "PDF024_rice.png": "447fc447d647d972321f60eddadea97d25afd91376dec2c050c528a5104d5af2",
+      "PDF024_fixed_point.png": "0849b60b43da28d0748e2bc92744c1b6ec1a52478842f8e24b87241c664e593b",
+      "PDF024_editorial.png": "33d22aaaaaabce66cecc84f9009058cafd5a49f2bac7b58ff6fb4af956d4fa7d"
+    },
+    "result": "Gujarati shaping, diagrams, formulas, correction boxes, hierarchy and bibliography legible; no overlap, cutoff or blank pages observed in the 44 new pages."
+  },
+  "status": "passed_reproducible_build_and_all_new_page_visual_qa"
+}

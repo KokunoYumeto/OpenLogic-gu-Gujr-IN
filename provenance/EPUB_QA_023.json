@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-epub-qa/23",
+  "checked_at_utc": "2026-09-25T03:35:46.444708+00:00",
+  "path": "releases/OpenLogic-gu-Gujr-IN-Recursive-Functions.epub",
+  "bytes": 650225,
+  "sha256": "8b5d11fffa9050e28e0694ed0b226de0c3b76bdea0483f5b432da9dc2aeabbe3",
+  "coverage": "224/722; OLP-0004–0227",
+  "epubcheck": {
+    "version": "5.3.0",
+    "messages": 0,
+    "report_sha256": "c12614d5de402a40d35fdb9247c0836456a7b7529db4662b3d2e932e428fe498"
+  },
+  "cold_replay_byte_identical": true,
+  "native_mathml_nodes_exact_against_html": 13200,
+  "tex_annotations_exact_against_html": 13200,
+  "gujarati_character_sequence_exact_against_html": true,
+  "content_ids": 822,
+  "broken_internal_content_links": 0,
+  "navigation_links": 230,
+  "described_svg_figures": 15,
+  "all_ten_new_source_corrections_preserved": true,
+  "exact_ai_attribution_in_about_and_metadata": true,
+  "runtime_visual_inspection": "passed_exact_xhtml_runtime_and_representative_visual_inspection",
+  "runtime_receipt_sha256": "b403db5fe683b920c9ef3f2160dd19a91bbed62a657c40a4d5bb0acfb2441791",
+  "status": "passed_structural_epubcheck_runtime_and_visual_inspection"
+}

@@ -1,4 +1,7 @@
 \input{build/foundations-preamble.tex}
+\ifdefined\gucomputabilitymathdots
+  \usepackage{mathdots}
+\fi
 \usetikzlibrary{arrows}
 \usepackage[authoryear]{natbib}
 \usepackage{upstream/sty/bussproofs-extra}
@@ -176,6 +179,8 @@
   કટ નિયમ અને તાદાત્મ્ય સામેલ છે. ટેબ્લો, ચિહ્નિત સૂત્ર અને
   આઇગનચલ માટેનાં ગુજરાતી રૂપો કામચલાઉ છે અને નિષ્ણાત ચકાસણી માટે
   ચિહ્નિત છે.}
+\providecommand{\gueditionainotice}{%
+  આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.}
 \input{\gueditionlabelsfile}
 \renewcommand{\oliflabeldef}[3]{\ifcsname guavailable@#1\endcsname#2\else#3\fi}
 \let\guoriginalref\ref
@@ -240,7 +245,7 @@
 \vspace{1em}
 \gueditiondescription\par
 \vfill
-આ યંત્ર દ્વારા કરેલો અનુવાદ છે. સંપૂર્ણ ગ્રંથનું કામ ચાલુ છે.
+\gueditionainotice
 આ આવૃત્તિમાં મૂળનાં \gueditioncount{} એકમોનો સમાવેશ છે; કુલ ૭૨૨ એકમો છે.
 કેટલીક વિશિષ્ટ પરિભાષા કામચલાઉ છે. ચકાસણીની વિગતો અને
 મૂળ પાઠ વિશેની નોંધો સંપાદકીય માહિતીમાં આપેલી છે.\par

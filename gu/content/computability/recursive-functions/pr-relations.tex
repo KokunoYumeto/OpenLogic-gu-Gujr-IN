@@ -1,0 +1,176 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: pr-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{prr}
+\olsection{આદિમ પુનરાવર્તી સંબંધો}
+
+
+\begin{defn}
+સંબંધ $R(\vec x)$નું લક્ષણ વિધેય
+\[
+\Char{R}(\vec x) = \left\{
+  \begin{array}{ll}
+  1 & \mbox{જો $R(\vec x)$ લાગુ પડે} \\
+  0 & \mbox{અન્યથા}
+  \end{array}
+\right.
+\]
+આદિમ પુનરાવર્તી હોય, તો આ સંબંધને આદિમ પુનરાવર્તી
+કહેવાય છે.
+\end{defn}
+
+બીજા શબ્દોમાં, આદિમ પુનરાવર્તી સંબંધ $R(\vec x)$ કહીએ ત્યારે
+$\Char{R}(\vec x) = 1$ સ્વરૂપના સંબંધની વાત કરીએ છીએ. અહીં
+$\Char{R}$ એવું આદિમ પુનરાવર્તી વિધેય છે જે કોઈ પણ ઇનપુટ પર
+1 અથવા 0 આપે છે. દાખલા તરીકે, $x = 0$ હોય ત્યારે અને માત્ર
+ત્યારે જ લાગુ પડતો સંબંધ $\fn{IsZero}(x)$, નીચેના આદિમ
+પુનરાવર્તનથી વ્યાખ્યાયિત વિધેય $\Char{\fn{IsZero}}$ને અનુરૂપ છે:
+\begin{align*}
+\Char{\fn{IsZero}}(0) & = 1,\\
+\Char{\fn{IsZero}}(x+1) & = 0.
+\end{align*}
+
+સંબંધોનું અન્ય આદિમ પુનરાવર્તી વિધેયો સાથે સંયોજન પણ કરી શકાય છે.
+તેથી નીચેના સંબંધો પણ આદિમ પુનરાવર્તી છે:
+\begin{enumerate}
+\item સમાનતાનો સંબંધ $x = y$, જેને $\fn{IsZero}(\left|x -
+  y\right|)$થી વ્યાખ્યાયિત કરીએ છીએ.
+\item નાનું અથવા સમાન હોવાનો સંબંધ $x \leq y$, જેને
+  $\fn{IsZero}(x \tsub y)$થી વ્યાખ્યાયિત કરીએ છીએ.
+\end{enumerate}
+
+\sourcecorrection{OLCMP-003}{સ્થિર અંગ્રેજી મૂળમાં બીજા મુદ્દાને
+``less-than relation'' કહે છે, પરંતુ આપેલું સૂત્ર $x \leq y$ અને
+$\fn{IsZero}(x \tsub y)$ બન્ને ``નાનું અથવા સમાન'' દર્શાવે છે.
+ગુજરાતી નામમાં સૂત્ર પ્રમાણે સમાનતાનો સમાવેશ રાખ્યો છે.}
+
+\begin{prop}
+  આદિમ પુનરાવર્તી સંબંધોનો ગણ બુલિયન ક્રિયાઓ હેઠળ બંધ છે. એટલે
+  જો $P(\vec x)$ અને $Q(\vec x)$ આદિમ પુનરાવર્તી હોય, તો નીચેના
+  સંબંધો પણ એવા જ છે:
+  \begin{enumerate}
+  \item $\lnot P(\vec x)$
+  \item $P(\vec x) \land Q(\vec x)$
+  \item $P(\vec x) \lor Q(\vec x)$
+  \item $P(\vec x) \lif Q(\vec x)$
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  ધારો કે $P(\vec x)$ અને $Q(\vec x)$ આદિમ પુનરાવર્તી છે, એટલે
+  તેમનાં લક્ષણ વિધેયો $\Char{P}$ અને $\Char{Q}$ આદિમ પુનરાવર્તી છે.
+  આપણે $\lnot P(\vec x)$ વગેરેના લક્ષણ વિધેયો પણ આદિમ પુનરાવર્તી છે
+  તે બતાવવાનું છે.
+  \[
+  \Char{\lnot P}(\vec x) = \begin{cases}
+    0 & \text{જો $\Char{P}(\vec x) = 1$ હોય}\\
+    1 & \text{અન્યથા}
+  \end{cases}
+  \]
+  $\Char{\lnot P}(\vec x)$ને $1 \tsub \Char{P}(\vec x)$ તરીકે
+  વ્યાખ્યાયિત કરી શકીએ.
+  \[
+  \Char{P \land Q}(\vec x) = \begin{cases}
+    1 & \text{જો $\Char{P}(\vec x) = \Char{Q}(\vec x) = 1$ હોય}\\
+    0 & \text{અન્યથા}
+  \end{cases}
+  \]
+  $\Char{P \land Q}(\vec x)$ને $\Char{P}(\vec x) \cdot
+  \Char{Q}(\vec x)$ અથવા $\fn{min}(\Char{P}(\vec x), \Char{Q}(\vec
+  x))$ તરીકે વ્યાખ્યાયિત કરી શકીએ. એ જ રીતે,
+  \begin{align*}
+    \Char{P \lor Q}(\vec x) & = \fn{max}(\Char{P}(\vec x), \Char{Q}(\vec x)) \text{ અને}\\
+    \Char{P \lif Q}(\vec x) & = \fn{max}(1 \tsub
+  \Char{P}(\vec x), \Char{Q}(\vec x)).
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+  આદિમ પુનરાવર્તી સંબંધોનો ગણ સીમિત પરિમાણીકરણ હેઠળ બંધ છે. એટલે
+  જો $R(\vec x, z)$ આદિમ પુનરાવર્તી સંબંધ હોય, તો નીચેના સંબંધો
+  પણ એવા જ છે:
+  \begin{align*}
+    & \bforall{z < y}{R(\vec x, z)} \text{ અને}\\
+    & \bexists{z < y}{R(\vec x, z)}.
+  \end{align*}
+  $\bforall{z < y}{R(\vec x, z)}$ એ $\vec x$ અને $y$ માટે ત્યારે
+  અને માત્ર ત્યારે જ લાગુ પડે જ્યારે $y$થી નાની દરેક~$z$ માટે
+  $R(\vec x, z)$ લાગુ પડે; $\bexists{z < y}{R(\vec x, z)}$ માટે પણ
+  અનુરૂપ અર્થ છે.
+\end{prop}
+
+\begin{proof}
+  રૂઢિ પ્રમાણે $\bforall{z < 0}{R(\vec x, z)}$ને સત્ય માનીએ છીએ
+  (કારણ કે $0$થી નાની કોઈ $z$ છે જ નહીં) અને
+  $\bexists{z < 0}{R(\vec x, z)}$ને અસત્ય માનીએ છીએ. સીમિત
+  સર્વપરિમાણક સાન્ત ગુણાકાર અથવા ક્રમિક લઘુત્તમની જેમ કામ કરે છે.
+  એટલે $P(\vec x, y) \defiff \bforall{z <
+  y}{R(\vec x, z)}$ હોય તો $\Char{P}(\vec x, y)$ને આમ વ્યાખ્યાયિત
+  કરી શકાય:
+  \begin{align*}
+    \Char{P}(\vec x, 0) & = 1\\
+    \Char{P}(\vec x, y+1) & =
+    \fn{min}(\Char{P}(\vec x, y), \Char{R}(\vec x, y)).
+  \end{align*}
+  સીમિત અસ્તિત્વપરિમાણીકરણને એ જ રીતે $\fn{max}$ વડે વ્યાખ્યાયિત
+  કરી શકાય. અથવા તેને
+  $\bexists{z < y}{R(\vec x, z)}
+  \liff \lnot \bforall{z < y}{\lnot R(\vec x, z)}$ સમકક્ષતા
+  વાપરીને સીમિત સર્વપરિમાણીકરણમાંથી મેળવી શકાય. નોંધો કે,
+  દાખલા તરીકે, $\bexists{x \leq y}{\dots
+  x\dots}$ સ્વરૂપનો સીમિત પરિમાણક
+  $\bexists{x < y+1}{\dots x \dots}$ને સમકક્ષ છે.
+\end{proof}
+
+\begin{prob}
+  ત્રણ આર્ગ્યુમેન્ટવાળો સંબંધ $x \equiv y \mod n$ (મોડ્યુલો~$n$
+  મુજબ સર્વાંગસમતા) આદિમ પુનરાવર્તી છે એવું બતાવો.
+\end{prob}
+
+બીજું ઉપયોગી આદિમ પુનરાવર્તી વિધેય શરતી વિધેય
+$\fn{cond}(x,y,z)$ છે, જે આમ વ્યાખ્યાયિત છે:
+\begin{align*}
+  \fn{cond}(x,y,z) & = \begin{cases}
+  y & \text{જો $x = 0$ હોય} \\
+  z & \text{અન્યથા}.
+\end{cases}
+\intertext{આ વિધેયને પુનરાવર્તી રીતે આમ વ્યાખ્યાયિત કરીએ:}
+\fn{cond}(0,y,z) & = y,\\
+\fn{cond}(x+1,y,z) & = z.
+\end{align*}
+આનો ઉપયોગ કરીને આદિમ પુનરાવર્તી સંબંધોના આધારે કિસ્સાવાર
+વ્યાખ્યાયિત વિધેયોનું સમર્થન કરી શકીએ:
+
+\begin{prop}
+જો $g_0(\vec x)$, \dots,~$g_m(\vec x)$ આદિમ પુનરાવર્તી વિધેયો
+હોય અને $R_0(\vec
+x)$, \dots, $R_{m-1}(\vec x)$ આદિમ પુનરાવર્તી સંબંધો હોય, તો
+નીચે મુજબ વ્યાખ્યાયિત વિધેય $f$ પણ આદિમ પુનરાવર્તી છે:
+\[
+f(\vec x) = \begin{cases}
+    g_0(\vec x) & \text{જો $R_0(\vec{x})$ લાગુ પડે} \\
+    g_1(\vec x) & \text{જો $R_1(\vec{x})$ લાગુ પડે અને $R_0(\vec{x})$ ન પડે} \\
+    \vdots & \\
+    g_{m-1}(\vec x) & \text{જો $R_{m-1}(\vec{x})$ લાગુ પડે અને અગાઉના
+      કોઈ ન પડે}
+    \\
+    g_m(\vec x) & \mbox{અન્યથા}
+\end{cases}
+\]
+\end{prop}
+
+\begin{proof}
+  $m = 1$ હોય ત્યારે આ માત્ર નીચે મુજબ વ્યાખ્યાયિત વિધેય છે:
+  \[
+  f(\vec x) = \fn{cond}(\Char{\lnot R_0}(\vec x),g_0(\vec x),g_1(\vec
+  x)).
+  \]
+  $m$ એ $1$થી મોટું હોય ત્યારે આ સ્વરૂપની વ્યાખ્યાઓનું સંયોજન
+  કરી શકાય છે.
+\end{proof}
+\end{document}

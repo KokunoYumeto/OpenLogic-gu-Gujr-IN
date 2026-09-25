@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-gu-cumulative-reader-qa/24",
+  "checked_at_utc": "2026-09-25T04:45:51.881659+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "working_coverage": {
+    "translated": 248,
+    "total": 722,
+    "units": "OLP-0004–0251"
+  },
+  "public_release_verified_at_check": 204,
+  "public_source_checkpoint_verified_at_check": 204,
+  "new_batches": [
+    {
+      "batch": 23,
+      "units": 20,
+      "linguistic_blocks": 156,
+      "math_spans": 958,
+      "same_agent_reverse_samples": 44,
+      "source_corrections": 10,
+      "batch_sha256": "9912611cfc6de0650b167205019e21be29f33c98fdd36a4db7b298d01fe8f689",
+      "parity_sha256": "eabbaaff98bd6dfa1a07e40bef0261de0308844171e800fd32bdd61509cb2058",
+      "semantic_sha256": "3c2041e55af74d5768053410b20d3ef756066cdc95f4f983e0f4ae1616140301"
+    },
+    {
+      "batch": 24,
+      "units": 24,
+      "linguistic_blocks": 186,
+      "math_spans": 1028,
+      "same_agent_reverse_samples": 35,
+      "source_corrections": 12,
+      "batch_sha256": "cccf7ce8d97d5368b195c230ffbf9b3b8292d57529222d048410f85f1f27ac5d",
+      "parity_sha256": "622bfab03d703cada26374fda7745e8072f2d114d2677101e3b3e4107977ddc1",
+      "semantic_sha256": "50083b07ed8bbe3604250c08c2f0b4792bce723adb58470be5179a44dfc9aee8"
+    }
+  ],
+  "cumulative_evidence": {
+    "linguistic_blocks": 2498,
+    "source_math_spans": 14203,
+    "same_agent_reverse_samples": 1193,
+    "source_corrections": 197,
+    "term_decisions": 224,
+    "input_receipts": 244,
+    "rendered_sections": 220
+  },
+  "artifacts": {
+    "html_sha256": "b50d092bfde23db11c32b760afe9461370d9c7032e5980a6b627056aa5a4044e",
+    "mathml": 14210,
+    "pdf_sha256": "9f994774f7d1d54b6da10d41c56d64377116efbfec34afab1c28eac89bde3ca1",
+    "pdf_pages": 304,
+    "epub_sha256": "4dc645a7edd9c4ed7b7effa495c4f2a4a21bfcd82990a74570f91cd1d84e5e1c",
+    "epubcheck_messages": 0
+  },
+  "limits": "Same-agent bilingual and mathematical review; no independent Gujarati specialist certification. Public coverage changes only after exact anonymous publication readback.",
+  "status": "passed_local_248_unit_html_pdf_epub_gate_pending_source_package_and_publication"
+}

@@ -1,0 +1,2367 @@
+{
+  "schema": "openlogic-gu-semantic/23",
+  "reviewed_at_utc": "2026-09-25T03:10:30.873680+00:00",
+  "batch": "OLP-0208–0227 Computability part driver and Recursive Functions chapter",
+  "reviewer": "same translation agent, OpenAI Codex GPT-6 Sol Ultra effort",
+  "independent_native_or_human_certification": false,
+  "method": "Each frozen-English block was read against its Gujarati draft while translating. This receipt binds the exact current byte slices, unit-level semantic assessments and independently worded reverse-paraphrase samples for the most consequential definitions, proofs and ten disclosed source corrections. It does not certify independent human review or a rendered reader.",
+  "all_drafted_blocks_directly_compared_during_translation": 156,
+  "reverse_paraphrase_samples": 44,
+  "blocks": [
+    {
+      "segment_id": "OLP-0208-B004",
+      "unit_id": "OLP-0208",
+      "source_sha256": "f6116efe6355d1658c332d9feb8fd2429b57737d225a5bd01f49a305014d48f8",
+      "target_sha256": "1d3b6677549dbef490ec9f8fb38674ad5e6378e9aa836f7f4543b786a545344b",
+      "consulted_passage_ids": [
+        "GU-P088"
+      ],
+      "unit_assessment": "Computability part driver retains its chapter imports and Gujarati part title.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0208-B005",
+      "unit_id": "OLP-0208",
+      "source_sha256": "6e3c74f871e0861e0581d02497232b354071b866c6e2b9e3525ce784238fdec2",
+      "target_sha256": "0d0796cdebb2a26308f312b5743536834d316e7075224c3517fec91f656fe24f",
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P090",
+        "GU-P077"
+      ],
+      "unit_assessment": "Computability part driver retains its chapter imports and Gujarati part title.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0209-B004",
+      "unit_id": "OLP-0209",
+      "source_sha256": "56b81462172a90383bb82dc51cf690043398b1e5631d145f472b33ab4e69569b",
+      "target_sha256": "f47f1636521a0f5db093436ecb6d0e9ddb3d889ae8c110d2fec22219e02a8754",
+      "consulted_passage_ids": [
+        "GU-P090",
+        "GU-P040"
+      ],
+      "unit_assessment": "Recursive Functions driver retains the chapter order and imports every translated section exactly once.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0209-B005",
+      "unit_id": "OLP-0209",
+      "source_sha256": "35b3f86f3913bdc0d2c5865b0057d175f8d30b24edb212d358036a7946f25154",
+      "target_sha256": "1c6ef4d1edc3196b44d4f3e1299fefa3f7da7de2ba5aa9e612d714c99f9a5d99",
+      "consulted_passage_ids": [
+        "GU-P090",
+        "GU-P072",
+        "GU-P077"
+      ],
+      "unit_assessment": "Recursive Functions driver retains the chapter order and imports every translated section exactly once.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0210-B004",
+      "unit_id": "OLP-0210",
+      "source_sha256": "131d0261f100c74a317e24ea2f466af84c801bc290bf59656ce9858b75b163c5",
+      "target_sha256": "4b70b36b731e618069fef7e90ff0b433699f7bb5f47dac65a4c5dfe93877b969",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Introduction distinguishes historical numerical calculation, modern symbolic computers, computable membership for sets and relations, and partial versus total recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0210-B005",
+      "unit_id": "OLP-0210",
+      "source_sha256": "65af1e277981a4fd84c430571b2cecbbe9c4922aad912529a7c14c39bcd9fe57",
+      "target_sha256": "d6eb63ee2cfcb23d66b91bd907f271a467e30df5124708e283246468d7a1e191",
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P089",
+        "GU-P090",
+        "GU-P072",
+        "GU-P077"
+      ],
+      "unit_assessment": "Introduction distinguishes historical numerical calculation, modern symbolic computers, computable membership for sets and relations, and partial versus total recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0210-B006",
+      "unit_id": "OLP-0210",
+      "source_sha256": "00e79fc70d0b3367c9614c067dac4b8e2b2047af39ae66d4567681a2e688d689",
+      "target_sha256": "6f5495e74f6480b4045773e10048383e9532c60a4cea5f1f7fd0cc41bcb5f6bb",
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P073",
+        "GU-P077"
+      ],
+      "unit_assessment": "Introduction distinguishes historical numerical calculation, modern symbolic computers, computable membership for sets and relations, and partial versus total recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0210-B007",
+      "unit_id": "OLP-0210",
+      "source_sha256": "a8cef45d882bbda092b1183ff9a2c290c50ae8940a9033f6ca1303f6a236a191",
+      "target_sha256": "4759b8ed66b91a05fbb3ff81b2431c2948fb12ba6d2713310d96ddc50492a1cb",
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P089",
+        "GU-P090",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "unit_assessment": "Introduction distinguishes historical numerical calculation, modern symbolic computers, computable membership for sets and relations, and partial versus total recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B004",
+      "unit_id": "OLP-0211",
+      "source_sha256": "5d288a0caafaf63a28bc3670225b55fe67e74f7c3bb1b7bcd4b89cd400031333",
+      "target_sha256": "6e96a990de2b35ca868e1aaf99f5386f469a2323d362daf40686a4317fb8f2b7",
+      "consulted_passage_ids": [
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Primitive recursion proceeds from h(x) to h(x+1); addition and multiplication examples keep the fixed parameter, preceding value, and argument roles. OLCMP-001 discloses the reversed source sentence.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B005",
+      "unit_id": "OLP-0211",
+      "source_sha256": "a19fcd92db95d477a6e86dc34110f461de714c9e4d1880eff070ae9366191b03",
+      "target_sha256": "90910963a11769a4d2e3f4541ec7290f28a08a2dce354c510d0c6a98d848b0bc",
+      "consulted_passage_ids": [
+        "GU-P090",
+        "GU-P041",
+        "GU-P077"
+      ],
+      "unit_assessment": "Primitive recursion proceeds from h(x) to h(x+1); addition and multiplication examples keep the fixed parameter, preceding value, and argument roles. OLCMP-001 discloses the reversed source sentence.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B006",
+      "unit_id": "OLP-0211",
+      "source_sha256": "fff49f45f2ebd4e7939c8fe7c0010984acf5bf14ac5b36519353e05af87d275b",
+      "target_sha256": "9ad5414f2afe3a21defcaf87d852da56bd00cab00fea6308b0389229888abe25",
+      "consulted_passage_ids": [
+        "GU-P090",
+        "GU-P041"
+      ],
+      "unit_assessment": "Primitive recursion proceeds from h(x) to h(x+1); addition and multiplication examples keep the fixed parameter, preceding value, and argument roles. OLCMP-001 discloses the reversed source sentence.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B007",
+      "unit_id": "OLP-0211",
+      "source_sha256": "eb5feddc15e10429546cd87a5ee1ca69e758f102a80c43d1a07c8376c4b91d2c",
+      "target_sha256": "ac75d06bbe1fd7e947422243c705ba64da71c7b3a3696bc97518115066facf43",
+      "consulted_passage_ids": [
+        "GU-P089",
+        "GU-P090",
+        "GU-P072"
+      ],
+      "unit_assessment": "Primitive recursion proceeds from h(x) to h(x+1); addition and multiplication examples keep the fixed parameter, preceding value, and argument roles. OLCMP-001 discloses the reversed source sentence.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B008",
+      "unit_id": "OLP-0211",
+      "source_sha256": "52065095f98ea129ea7a3e99124ef3929b8d9ebafb67c35a633871d63772d847",
+      "target_sha256": "95275d1b1322fbb652d29396b92f9c1094bd6d031898b73acf391afcc248a23d",
+      "consulted_passage_ids": [
+        "GU-P090",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "Primitive recursion proceeds from h(x) to h(x+1); addition and multiplication examples keep the fixed parameter, preceding value, and argument roles. OLCMP-001 discloses the reversed source sentence.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B009",
+      "unit_id": "OLP-0211",
+      "source_sha256": "16e58e9d11fb9154c5c4588aa482e84afdd5036ab3230b330fa4eab7425d8c8d",
+      "target_sha256": "a80dc15c89c4e49a42fb67aee7d39a145413a32932a9f9f3ccb4040759f66e64",
+      "consulted_passage_ids": [
+        "GU-P090",
+        "GU-P041"
+      ],
+      "unit_assessment": "Primitive recursion proceeds from h(x) to h(x+1); addition and multiplication examples keep the fixed parameter, preceding value, and argument roles. OLCMP-001 discloses the reversed source sentence.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B010",
+      "unit_id": "OLP-0211",
+      "source_sha256": "a676595c78793d4eeafb18cbbafb5c07a7932d0a4a9e358b52483db6ae5c8fd6",
+      "target_sha256": "536294d526e184e074bef75c1a12d708d1833d44e8686a17e68b07c4021489e0",
+      "consulted_passage_ids": [
+        "GU-P089",
+        "GU-P090",
+        "GU-P041"
+      ],
+      "unit_assessment": "Primitive recursion proceeds from h(x) to h(x+1); addition and multiplication examples keep the fixed parameter, preceding value, and argument roles. OLCMP-001 discloses the reversed source sentence.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B004",
+      "unit_id": "OLP-0212",
+      "source_sha256": "62bb3eb0321b8125ff58753a8a1421c905fdbd97a067e73fbe09592433e408b5",
+      "target_sha256": "e81547ed1413867808b69e9d27fd2cf40855b02c6c2c15f859f5d982c7902afc",
+      "consulted_passage_ids": [
+        "GU-P040"
+      ],
+      "unit_assessment": "Composition preserves n inputs of h and k intermediate outputs of f; projections select, repeat, discard or reorder arguments. OLCMP-002 corrects the source's left-side index.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B005",
+      "unit_id": "OLP-0212",
+      "source_sha256": "2eea221d6972c4040993cfb506ba164b6cc56bb4fc93d733ba5e89bc0afc92bf",
+      "target_sha256": "e57d68255fa57d7c7871d8bca4768ea9ff0479244d7f6013c78c10f97358e88b",
+      "consulted_passage_ids": [
+        "GU-P040"
+      ],
+      "unit_assessment": "Composition preserves n inputs of h and k intermediate outputs of f; projections select, repeat, discard or reorder arguments. OLCMP-002 corrects the source's left-side index.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B006",
+      "unit_id": "OLP-0212",
+      "source_sha256": "363f59c740aa57ac8a176732356da1b6f357b19f05434c242d806d18325db086",
+      "target_sha256": "d140e92b050afda389cefc731eebd25ba1cb8045b8605e189119703ff9d99d48",
+      "consulted_passage_ids": [
+        "GU-P040",
+        "GU-P088"
+      ],
+      "unit_assessment": "Composition preserves n inputs of h and k intermediate outputs of f; projections select, repeat, discard or reorder arguments. OLCMP-002 corrects the source's left-side index.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B007",
+      "unit_id": "OLP-0212",
+      "source_sha256": "7ed33b7b9f2e469f53ae35fbf2e7d7fef08717058f45b4d2ae3738285acd358c",
+      "target_sha256": "46ed3a69c21cf37056ec7eb1a7ef2a054ef81b0d96bc7d7809908124c3242205",
+      "consulted_passage_ids": [
+        "GU-P091",
+        "GU-P040"
+      ],
+      "unit_assessment": "Composition preserves n inputs of h and k intermediate outputs of f; projections select, repeat, discard or reorder arguments. OLCMP-002 corrects the source's left-side index.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B008",
+      "unit_id": "OLP-0212",
+      "source_sha256": "c3f54d10fc4ae0200c73e8e61250b43189c157021e4e7d861ab1056d14ba086d",
+      "target_sha256": "f3073195ecdced01bac5b88858ae8f61abb25bc0d8ed69ecb00ed65e7ae0eaff",
+      "consulted_passage_ids": [
+        "GU-P091",
+        "GU-P040"
+      ],
+      "unit_assessment": "Composition preserves n inputs of h and k intermediate outputs of f; projections select, repeat, discard or reorder arguments. OLCMP-002 corrects the source's left-side index.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B009",
+      "unit_id": "OLP-0212",
+      "source_sha256": "e157a2d7cef025abd852f6074c705dbbdeec397214f2e1127a1efe9dcb4f9952",
+      "target_sha256": "3c5628c4040372d2179d30a0bac7e6fef82bd7b1e4c5e63bc85c8ceee26323bc",
+      "consulted_passage_ids": [
+        "GU-P091",
+        "GU-P040"
+      ],
+      "unit_assessment": "Composition preserves n inputs of h and k intermediate outputs of f; projections select, repeat, discard or reorder arguments. OLCMP-002 corrects the source's left-side index.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B010",
+      "unit_id": "OLP-0212",
+      "source_sha256": "3bde1ff69603be683a24361322b9716961adcf3f73b3bf3a1399fb5d6e5f58ab",
+      "target_sha256": "7d587c10e3d2590b6d65e200dfe051a2646eaddd323a7e2306d9256121ad01f4",
+      "consulted_passage_ids": [
+        "GU-P091",
+        "GU-P040",
+        "GU-P077"
+      ],
+      "unit_assessment": "Composition preserves n inputs of h and k intermediate outputs of f; projections select, repeat, discard or reorder arguments. OLCMP-002 corrects the source's left-side index.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B004",
+      "unit_id": "OLP-0213",
+      "source_sha256": "c8ac68cb753e123fb4e5fa884df868c12bb811e7e12adc840858403af7d09982",
+      "target_sha256": "fcc20e6e933faca351c966cbd0c4019145b97ae47ab85e82dda7d54db2e03f36",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B005",
+      "unit_id": "OLP-0213",
+      "source_sha256": "804d161b3cb75e16ee1b311eb0d194883cd99f8d0a16307e55d12232217cfe87",
+      "target_sha256": "aa2d9ddd28d955536eb71631b3508150674db3d606afdbb9a0e9d4a1da22ae84",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B006",
+      "unit_id": "OLP-0213",
+      "source_sha256": "862a5465e83f614f93a7a92a05e61483433e7ebe81ad8cf204cef86b7ccbe495",
+      "target_sha256": "78ddd3a85acea761eec8ce9f3f276a8377974c839c05fa1f607ae53588fb031e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B007",
+      "unit_id": "OLP-0213",
+      "source_sha256": "ad7837d59821fee3479100fea4171324eb11cff4825619cf1cfe1ee169ecb403",
+      "target_sha256": "8eda51ffd70c9f6d0ce78d3b9fe8e32d1e5966c1aa80c11aad7e4863dd763d59",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B008",
+      "unit_id": "OLP-0213",
+      "source_sha256": "8a28d1a52bd2014a524d86aba0caa83b45204596919a8f81dc87a95c4b5e1372",
+      "target_sha256": "19935b4f307b3e83457d19027d0fca98479deb0b2c114095b00478a2de00532c",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P091"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B009",
+      "unit_id": "OLP-0213",
+      "source_sha256": "117807945af63638a784f884fba2df05247d977ac9bbe26b994fa72659387092",
+      "target_sha256": "afc6dc2f2c5ecb998c8b4322842a7648f896136d9f998d68eaa5d5a544b684be",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B010",
+      "unit_id": "OLP-0213",
+      "source_sha256": "7e008481b37af58055d847d81539dc535f9b51f49c4f6d83e3cf789e76ce7596",
+      "target_sha256": "9aaa21b82cd5fa664c081d0ea9423332b3773128519792b949f4cf649d4da84f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B011",
+      "unit_id": "OLP-0213",
+      "source_sha256": "307dcdbe210f48bdd0a4cc57196db0389d844f01b48c57dc8324d1dca83b9c0d",
+      "target_sha256": "80413fcfa2baf39a914ed927d0574ff3b304c3b4f90d8c2fdc3bd0fe03fc83d2",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B012",
+      "unit_id": "OLP-0213",
+      "source_sha256": "e5125da71ccffee31d14595c1780481a991f2d70a7096b6d665bcc1c1337a764",
+      "target_sha256": "89b53f7a79932aa25c7e3bab2ca20c3e3e7b069ea51ddf58fd6e58c7df43e001",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B013",
+      "unit_id": "OLP-0213",
+      "source_sha256": "34c0409373c7a8e82fc1f87296ba4d0ad25ebc4510aef9c7dc3f084a4313b3e6",
+      "target_sha256": "f4d3eb10d6dcf7f7e37e4618fb47d94afdaac5cd9588b36f2c89a4d351588a2b",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B014",
+      "unit_id": "OLP-0213",
+      "source_sha256": "ca572c37e0bea1812903b8ebbe55059bd0770b68450776ee4702163d4dbb799c",
+      "target_sha256": "2984af9e6ecd6c1a4cc498032eed93b2f1ba14ac9cffcae16454e371e1adb02a",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B015",
+      "unit_id": "OLP-0213",
+      "source_sha256": "fc9981e6ec4465850915ebc06c4338f71d51fdb0d006b49dbf7797dc65385e29",
+      "target_sha256": "120dae143aac1cb1e55a5511acdbd58b47bc517f1e9271e771e636f06153c5df",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B016",
+      "unit_id": "OLP-0213",
+      "source_sha256": "5c1629f4abdb1fa4d97a4d38d8df34d4d015cb746bb0ca99ded7e8572d0f7000",
+      "target_sha256": "03b51da964d4d68dabde8f290df383992b155bd8a43a6e26f7ddc37e80a51ec4",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B017",
+      "unit_id": "OLP-0213",
+      "source_sha256": "11831fe48af0a80a3dae36285af6ef3727a2a97d32e0382d2c5799a71960bc69",
+      "target_sha256": "662dc31139cf32a0867a8f78fa0926cd5222b9f2539eb09a0b911a9d7fa18429",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B018",
+      "unit_id": "OLP-0213",
+      "source_sha256": "99548bdea7215dd333218a67a9d40f689709642af7f00c2e8e6776292a39e5c3",
+      "target_sha256": "1f5c9b27075a0e6cbf4ec2c97ce25ed3892c773c118718b8cd573c4281cef24d",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "The formal inductive class contains zero, successor, projections and closure under composition and primitive recursion. Addition proof uses the three-place projection; the multiplication proof remains an exercise; the dummy-argument example is preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0214-B004",
+      "unit_id": "OLP-0214",
+      "source_sha256": "974267b3b59656c6c7ee1f0030d7908bb734b993ef228e399fb97f74a62b0d52",
+      "target_sha256": "6f6faa8c52619f659b46d3c313b48f419483be7df833a47e45373e9db0e05756",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P090"
+      ],
+      "unit_assessment": "Comp and Rec notation records arities and the source functions' assigned names, culminating in the notation for addition and a problem for multiplication.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0214-B005",
+      "unit_id": "OLP-0214",
+      "source_sha256": "c8bbe65e30ac9245e06228b0ef1fbb4f56b744140b7bb9cc12a4809fab050e10",
+      "target_sha256": "7b2e8dda3c5bf79bb4d7d6d6a3526f340d36c0d45d7dabbb734fdbaa8293bf9e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P090",
+        "GU-P040",
+        "GU-P091"
+      ],
+      "unit_assessment": "Comp and Rec notation records arities and the source functions' assigned names, culminating in the notation for addition and a problem for multiplication.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0214-B006",
+      "unit_id": "OLP-0214",
+      "source_sha256": "a3401529040be0d5588e5311a70f393e81d13bce8ccbe65f47241845e3953a5e",
+      "target_sha256": "5f9a610d46d04d4bbf4239ac1f66cd7f8dbdb798d28adbda0b0226c720d698f6",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P090"
+      ],
+      "unit_assessment": "Comp and Rec notation records arities and the source functions' assigned names, culminating in the notation for addition and a problem for multiplication.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0214-B007",
+      "unit_id": "OLP-0214",
+      "source_sha256": "06593540ae1d9c56b2f804a54422bac3e324e1c1b6ee373529cd9b37222cdeee",
+      "target_sha256": "b9092c73d08f84ea715c6b3c5a4c743f2a7744a1d11cbe9ecf5486d738e1ced1",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P090",
+        "GU-P040",
+        "GU-P091"
+      ],
+      "unit_assessment": "Comp and Rec notation records arities and the source functions' assigned names, culminating in the notation for addition and a problem for multiplication.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0214-B008",
+      "unit_id": "OLP-0214",
+      "source_sha256": "1fda45a10b0ebe238b0c41ab60952a405ed0b2fddf8a1f5a6c2b9410eae740e1",
+      "target_sha256": "e4d35baab9a44132a7e7c580b5273b8f18c19f9e754e85f5d8d6c815f2fa888c",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P090"
+      ],
+      "unit_assessment": "Comp and Rec notation records arities and the source functions' assigned names, culminating in the notation for addition and a problem for multiplication.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0215-B004",
+      "unit_id": "OLP-0215",
+      "source_sha256": "df1eda682d3a117e4a28b111ff5db3d6accd4492437952dac00b149040519fd4",
+      "target_sha256": "56a813d4f43ab0a9c31320ad4385f1448aeef52c27ae5e44e36d7fb2ca0a0e80",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Computability of primitive recursion follows by computing finitely many successive values; computability of composition and the base functions gives the closure conclusion.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0215-B005",
+      "unit_id": "OLP-0215",
+      "source_sha256": "71cdf95c142d98d00e439a4083a8be2973c6ae3cf8433d245ba52881494163e0",
+      "target_sha256": "ab257f028aa1d57d83e4a308e564a15d80d6daafc88ad85f3143f4c399a0ca9c",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Computability of primitive recursion follows by computing finitely many successive values; computability of composition and the base functions gives the closure conclusion.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0215-B006",
+      "unit_id": "OLP-0215",
+      "source_sha256": "8ea912e5ed9657778a246a38d31dd345cafd5c9551fd9d855ab9e4ebc0cb689f",
+      "target_sha256": "53281130c73ca48cd52d949d56f4f54fdf953296e7c7ff593586daaaaf6f764b",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Computability of primitive recursion follows by computing finitely many successive values; computability of composition and the base functions gives the closure conclusion.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0215-B007",
+      "unit_id": "OLP-0215",
+      "source_sha256": "0f3edc95fe954108794787ac307be86add43789cb82fdd41a66ab703ccb07d46",
+      "target_sha256": "596d06226bce520015dc4cd54289af4c649c7f902a48fe64451fc52b41b8dfad",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Computability of primitive recursion follows by computing finitely many successive values; computability of composition and the base functions gives the closure conclusion.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B004",
+      "unit_id": "OLP-0216",
+      "source_sha256": "fb9250ed1ce29a9775d6bcb9422d607db4d6a710cc4e3fd87a5ea7fdd906fa53",
+      "target_sha256": "60164ae57dcf8c5f490e4b6150762ca5b97ba9fee17109eeeee57a059f8a3642",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B005",
+      "unit_id": "OLP-0216",
+      "source_sha256": "8619a23080967f7fe7ca4aa32ac7c28167140979cbfab2500f031eef75401d67",
+      "target_sha256": "bd759d3fd3fdf6f9ad20c4cac24c7ca75fc459e6e2a5623471471f71af3f7554",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B006",
+      "unit_id": "OLP-0216",
+      "source_sha256": "c6e0e096c5de8c9e31bdc9c1b836d45829c89848704ef0bb137404d3af323ac4",
+      "target_sha256": "7dae5b66e0732f09134fc081cc0db79b684232f98d7d11a158ae2250c09fdd1b",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B007",
+      "unit_id": "OLP-0216",
+      "source_sha256": "9edb5d1f8defc760d6654a0efc22689f8125070aa5c689f0a49fe217603b4059",
+      "target_sha256": "5103d195681a6a607798a0918a332cc3b28581d4b4a46e18d5b1dbd93437ab80",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B008",
+      "unit_id": "OLP-0216",
+      "source_sha256": "e330e1e29cef80766f573e65c90cdd16179b5a35a9f01920c86f1a75ef9ca80f",
+      "target_sha256": "ce6a27c66969e49e5d713599b048613f8afa8560a4a04c6ae0d3334052ed08ae",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B009",
+      "unit_id": "OLP-0216",
+      "source_sha256": "76e4ce7f428b0983f1cfa334747689d1de9290603adb7c610e86e27c3df077f6",
+      "target_sha256": "5909ca1fd8920a8db0792085e7f16a0a40e0240f09fe6c4fe910277f3c0b106d",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B010",
+      "unit_id": "OLP-0216",
+      "source_sha256": "9a281451de9a72e7a03b14fbfcf3adf40a0ecd4091caaffc5aa0af27f4f960dc",
+      "target_sha256": "5d953f0a2a6cf86fb7b2e41184256929a8335dff0f627cc9b5db178871703360",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P093"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B011",
+      "unit_id": "OLP-0216",
+      "source_sha256": "5b727147fc781e22a5f291be29b67539abd16cdd91c58462ca9ad921e2c60980",
+      "target_sha256": "f462c4eec269ed18cfe6048c500909d01f49c4ed5a54a9576aa6dabd6bbecde8",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P093",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B012",
+      "unit_id": "OLP-0216",
+      "source_sha256": "1668662a62cc338d7409fda9f4e683af4dd1aad5d6ba4119af7a635d4bea1536",
+      "target_sha256": "325266db411112d3dc3d542f03259bfd7ba666bec6da02d06b1c5c90c21395f6",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P094"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B013",
+      "unit_id": "OLP-0216",
+      "source_sha256": "3c8b084dbfc46f7ca8c4694d2f23a10858f218457a3ff79f00f708ebc67da5a1",
+      "target_sha256": "329bc0211bd628d5ac7a1e6e82589be6fbbc4fa50f49e7d7bc2c09d5c2804d1f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P094"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B014",
+      "unit_id": "OLP-0216",
+      "source_sha256": "49fcd3e6040e8dfa1cf92a456f9fe174768c1c36f821fe7841ee065f15d56fef",
+      "target_sha256": "0272e709b1f63258fd47e7d86ecbd58bf00aed6f220da6f77932b8631158ba53",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B015",
+      "unit_id": "OLP-0216",
+      "source_sha256": "852e9b6b5963db9d1a73483afd91e728568675efcae32f2cd2893cd6b408ac9d",
+      "target_sha256": "496832b837654e8210a29eb5021ea852f4e0138f6f068dee47e8fd0feff4d130",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P094",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B016",
+      "unit_id": "OLP-0216",
+      "source_sha256": "f6be3401da2a9d876ee8208e6dd7115c4516c4e3659a6a6dcb5907768acc015c",
+      "target_sha256": "0b1f9a7173cb6a7d7af4a9e33c5e7d6b04f2cf3d58e5e3fc276057c684006ad5",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B017",
+      "unit_id": "OLP-0216",
+      "source_sha256": "d01a80d8ac372b7d9b62d956107ac9793a6a6bd384a09f613f5eb681fc90db60",
+      "target_sha256": "2fb8adc969f4cd6f53ae75555d47f2af3cc27becc575581683d1ae7ca31d8f88",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090",
+        "GU-P094",
+        "GU-P040",
+        "GU-P041"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B018",
+      "unit_id": "OLP-0216",
+      "source_sha256": "e4ec7b55aba84a29e49870c8054201f79d4396e37a651b5454129305858f1872",
+      "target_sha256": "a0ac97dd9c778b666b1b1749205ebf8e10f3be1a3e4190da50e26f27b566ce9b",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B019",
+      "unit_id": "OLP-0216",
+      "source_sha256": "5c1629f4abdb1fa4d97a4d38d8df34d4d015cb746bb0ca99ded7e8572d0f7000",
+      "target_sha256": "03b51da964d4d68dabde8f290df383992b155bd8a43a6e26f7ddc37e80a51ec4",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B020",
+      "unit_id": "OLP-0216",
+      "source_sha256": "b24ef01c7be49cfd076fafe6064b7105cb0b708890da7651e878473739730a5c",
+      "target_sha256": "0c08f76807be0de6fdf722b24a6846c20446263bd58e87fbf9419f1d7e99db1a",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B021",
+      "unit_id": "OLP-0216",
+      "source_sha256": "1a01af5b6f68757f48baee1b4f7e5d36b72db47587d600dd2b8a2c889da3c4e8",
+      "target_sha256": "9e524a39fa32e29bcbcec637bb4cc0e7d015ec92c725098dfd7dd0fa483a46d7",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B022",
+      "unit_id": "OLP-0216",
+      "source_sha256": "583dc301965888bb46dc8209d10e42e838db41b6d2c5f9f2531a93293a1bb347",
+      "target_sha256": "7050232e66401310059b1f5585fb5db3350ec9f232a95b08120debe1e4968869",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B023",
+      "unit_id": "OLP-0216",
+      "source_sha256": "01d983e1c1911bc24f029a155c98e008cb37ed33e487ffc6abc5269399f58719",
+      "target_sha256": "7c1004bf2de1873f12db1edca0738a16356304aa1a71eab95551e67435650323",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B024",
+      "unit_id": "OLP-0216",
+      "source_sha256": "d461e05b251c97cabfba54b6c81c4d6f1bd319252a8dce1c92693d0358ccdf7c",
+      "target_sha256": "cd5fd07ea24c242edacdddd84f1561de28ebb367878c089dfa89484a235dc529",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Examples cover constants, exponentiation, predecessor, factorial, truncated subtraction, distance, max/min, integer division problem, and finite sums/products with formulas preserved.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B004",
+      "unit_id": "OLP-0217",
+      "source_sha256": "20cf51459b2c0eeb94513a8928ca689d40c4420571f9e75c8115b62543af9ad3",
+      "target_sha256": "48d3b8ad7f6f1cee8e11600f437e6b5d4a7e2869cd96e79e60dc8192dcdaa323",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B005",
+      "unit_id": "OLP-0217",
+      "source_sha256": "26e34846ddf8161eec80d78b32f9a2e9fc8301502df78bea13197c83554e5ba1",
+      "target_sha256": "dd5507bf3ca3a8e670828539056c9e4083b690509ad98a3d74004e35d5009886",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B006",
+      "unit_id": "OLP-0217",
+      "source_sha256": "44ddf1c382d1efdfd461e5e4d619035b9e69ab5dd208204f72ecfe10bd81c0e6",
+      "target_sha256": "06aacbdf6a65d0c698a56d87f05b0462be2d027cb8a6b63519ccf0d82fde6b4e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B007",
+      "unit_id": "OLP-0217",
+      "source_sha256": "c0292f42bd8069d61dcd3cb4c84acd6d6f2ee55d2c330c22af467a351866363f",
+      "target_sha256": "811436d7d28024a232965007343435d8b9e1728755c18814b8368b3a3613902f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B008",
+      "unit_id": "OLP-0217",
+      "source_sha256": "5a48adb1bf7452aef7cbdd5b0942f453784fbb9954a9ce987a9ae3c0c8e55743",
+      "target_sha256": "95febca80f4d1bed29180f2abc181f0461ac78cd6a5c1449ed17f2b4cdacda3e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B009",
+      "unit_id": "OLP-0217",
+      "source_sha256": "63155e4f863b30771b9acab31f03d595c4fb6582505b7658cdc39480fa79abb2",
+      "target_sha256": "53d302544ef38ae8c56064f39b11954e03413bf2776f84b119b7a8f5b2e1cfa7",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B010",
+      "unit_id": "OLP-0217",
+      "source_sha256": "071265cd86d4187a230e63db08daa84f6492115f611a148ded78520c5181bc03",
+      "target_sha256": "10770ba6eb2842a643ccf88e298c8cc43e7f7d07a74003598906e04862e5fd81",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B011",
+      "unit_id": "OLP-0217",
+      "source_sha256": "2f7df26c5310998ecebed1661e2b04a91cc65a153f6d8313a39cbe85ac42f6f4",
+      "target_sha256": "9261f6de165576be48a8ae5887ed090bcba1864e6730d6b7084d8dde9e68dd2e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B012",
+      "unit_id": "OLP-0217",
+      "source_sha256": "032b85e453c2eaf129c196b9ed05418d29347c1eb8b3803f2f747a1364dbf707",
+      "target_sha256": "f5f55dc2795998defde6749cf8c8a542b2b68dafe9363b782aa0385bfa61201f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B013",
+      "unit_id": "OLP-0217",
+      "source_sha256": "5277a27f5d695bf10d7ec8dd0ec2a0d8cc7cd7f9eeb3fb9af3257931993014d5",
+      "target_sha256": "eeac89d0f906f3cad29ae01b57c5013bd6c0751e9946be6aa610a10929177fd6",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B014",
+      "unit_id": "OLP-0217",
+      "source_sha256": "79399db2fa8dcff40176e29849b2449fc8bbf12242685d4821f3b713285feb2f",
+      "target_sha256": "e895d66390bfe6fc72cfd0bf565cf35230de2417e79deb2b40935bd9af44c587",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B015",
+      "unit_id": "OLP-0217",
+      "source_sha256": "078301275a88a78fea1a57f6b7b05b6811cc728e6c9fe0ba8b85e4434544849e",
+      "target_sha256": "bb513f39940d8ebf65c22581396dbb7d8cabe73e404e486702e6245e3d47f675",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P090"
+      ],
+      "unit_assessment": "Characteristic functions give 0/1 relations; Boolean operations and bounded quantifiers remain total and primitive recursive; conditional cases retain their priority. OLCMP-003 names the non-strict order correctly.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0218-B004",
+      "unit_id": "OLP-0218",
+      "source_sha256": "b30994d4352c1ea83c4a3a06926748246752d3047c6e1a09db88aa00940600c4",
+      "target_sha256": "8872a8dc92c2dadec9e307a9f1a8e3659167da3a0e3056c340df1b274718b7ea",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P092",
+        "GU-P090"
+      ],
+      "unit_assessment": "Bounded minimization returns the least witness below y or y if absent; the three successor cases and final recurrence preserve this convention. OLCMP-004 keeps the input vector x.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0218-B005",
+      "unit_id": "OLP-0218",
+      "source_sha256": "dda47ad9938c3796a1edf1c19b224651479ccabd5100187ff74f000cdefd7b8a",
+      "target_sha256": "2c530fab02b4571b7d546f94ae17393077dd5f4ac5ca69fa0736dc13f30b6774",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P092",
+        "GU-P090"
+      ],
+      "unit_assessment": "Bounded minimization returns the least witness below y or y if absent; the three successor cases and final recurrence preserve this convention. OLCMP-004 keeps the input vector x.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0218-B006",
+      "unit_id": "OLP-0218",
+      "source_sha256": "e9ced633f4847ea58dedc8fd531269b6f32cb0379545356a68f51742ce76c0d5",
+      "target_sha256": "46f5e333938b006afc89e2fcd9982ca83a3278168227b781b0c7a8414f6ed1ec",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P092",
+        "GU-P090"
+      ],
+      "unit_assessment": "Bounded minimization returns the least witness below y or y if absent; the three successor cases and final recurrence preserve this convention. OLCMP-004 keeps the input vector x.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0218-B007",
+      "unit_id": "OLP-0218",
+      "source_sha256": "3f1e89723709f9b2261c072b213b0b0eaff2d322da3051525ec4fed3de2b153c",
+      "target_sha256": "723db88134e93de542afcc844c17bee7924be38e1ca0298b86afdcbad5f586a5",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P092",
+        "GU-P090"
+      ],
+      "unit_assessment": "Bounded minimization returns the least witness below y or y if absent; the three successor cases and final recurrence preserve this convention. OLCMP-004 keeps the input vector x.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0218-B008",
+      "unit_id": "OLP-0218",
+      "source_sha256": "aab2927664bebf1592344c6d4ba4d2a355b254fe7af2fcf8bb0ddfbb59d1f142",
+      "target_sha256": "ce79e3e55b032e7a9074d634129c282234ead5d71922a9ad196b553ff24af37f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P092",
+        "GU-P090"
+      ],
+      "unit_assessment": "Bounded minimization returns the least witness below y or y if absent; the three successor cases and final recurrence preserve this convention. OLCMP-004 keeps the input vector x.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0218-B009",
+      "unit_id": "OLP-0218",
+      "source_sha256": "bc2753cba7ab4f9e7c4a8bcea8a42e48cb94552fe146eba0e58038f6c17d2ea7",
+      "target_sha256": "7522f2ad7ce1fc0387cf7f5aaa0a27efce24135d304cc29bbe267edf506eb24b",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P092",
+        "GU-P090"
+      ],
+      "unit_assessment": "Bounded minimization returns the least witness below y or y if absent; the three successor cases and final recurrence preserve this convention. OLCMP-004 keeps the input vector x.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B004",
+      "unit_id": "OLP-0219",
+      "source_sha256": "f4789dae7a4ea5d464f4798dd4fdf86644c01f08a9a07ee25f7c62a4010b4dca",
+      "target_sha256": "53c763e418ed06f5b79413d855a4e7cad5470e814f08e507453fc9a7cc80472f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089"
+      ],
+      "unit_assessment": "Divisibility, prime testing, prime enumeration and Euclid's bound remain distinct. OLCMP-005 fixes division direction and zero-divisor prose; OLCMP-006 asks only for a bounded witness.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B005",
+      "unit_id": "OLP-0219",
+      "source_sha256": "a82e5c18ac5f892c76d1d281baebee90fff3ed6d5be39f34e95a238f9df9edf1",
+      "target_sha256": "e9348fc1bf969c683cd87146fd0f6461b11693070739062a0e73acbf6d0e37e9",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P092"
+      ],
+      "unit_assessment": "Divisibility, prime testing, prime enumeration and Euclid's bound remain distinct. OLCMP-005 fixes division direction and zero-divisor prose; OLCMP-006 asks only for a bounded witness.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B006",
+      "unit_id": "OLP-0219",
+      "source_sha256": "fb93f27ce30740e96f80c357d35fe540dacc1f38e439c098f30a9b2b297e46b4",
+      "target_sha256": "3ed6cd5e8eeb153cfd63b55f4b6ff224f6568619ff4216fb1cb354a926c941d0",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089"
+      ],
+      "unit_assessment": "Divisibility, prime testing, prime enumeration and Euclid's bound remain distinct. OLCMP-005 fixes division direction and zero-divisor prose; OLCMP-006 asks only for a bounded witness.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B007",
+      "unit_id": "OLP-0219",
+      "source_sha256": "dd51816b9d2ee0b0f79c2e257f4dcfa75cb8c889a427ac5cae6c1b306d4a9521",
+      "target_sha256": "551180ae82f4eee003f9b7eebbff10795b853ac77b34535454fcbb11c63a565c",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089"
+      ],
+      "unit_assessment": "Divisibility, prime testing, prime enumeration and Euclid's bound remain distinct. OLCMP-005 fixes division direction and zero-divisor prose; OLCMP-006 asks only for a bounded witness.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B008",
+      "unit_id": "OLP-0219",
+      "source_sha256": "8468143d15560b00809e98647cd5e71d3df39983eb1d2fab6c1d273e4f31b27f",
+      "target_sha256": "efe53475c8b3603823eb57533399a59a9ae9bb3f2177bf9cd8f4c6a7e4841996",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P092",
+        "GU-P093"
+      ],
+      "unit_assessment": "Divisibility, prime testing, prime enumeration and Euclid's bound remain distinct. OLCMP-005 fixes division direction and zero-divisor prose; OLCMP-006 asks only for a bounded witness.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B009",
+      "unit_id": "OLP-0219",
+      "source_sha256": "16d7e7e46eea6eeb856c14340beb2b75f611bdb30b59d42225a08e67a551b66a",
+      "target_sha256": "202e829af6a0aed9582bf7d1f2bdb8a6c0da27fff149400ae2d823ac913e2ddd",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P093"
+      ],
+      "unit_assessment": "Divisibility, prime testing, prime enumeration and Euclid's bound remain distinct. OLCMP-005 fixes division direction and zero-divisor prose; OLCMP-006 asks only for a bounded witness.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B010",
+      "unit_id": "OLP-0219",
+      "source_sha256": "04ace2e87da44028bbdc98eb9e687d98b6076c4aee7202718f4b24a45dcfe526",
+      "target_sha256": "3fe13beb1903eff157ca4c2a8c31ca7ef8c7d8cd312e3e0478e9afc364bb4de1",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P092"
+      ],
+      "unit_assessment": "Divisibility, prime testing, prime enumeration and Euclid's bound remain distinct. OLCMP-005 fixes division direction and zero-divisor prose; OLCMP-006 asks only for a bounded witness.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B004",
+      "unit_id": "OLP-0220",
+      "source_sha256": "af921dcbba2e6eda5cd856ccf4080e33994ada2ac4275e013903cd817de23892",
+      "target_sha256": "7333dc7ed8ecab163e9fad7d08b4fe6328e48e493049fff0a02788f172a2c953",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B005",
+      "unit_id": "OLP-0220",
+      "source_sha256": "7418d5a76b7206cdabced27a0936da4914af56284054021314414b1a68c092f0",
+      "target_sha256": "03ac03b75db9b3ade741b16057167d38e7b7b5c17ba992c1a8a218cad44ef3c5",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P049"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B006",
+      "unit_id": "OLP-0220",
+      "source_sha256": "fb431f52871d7f031d28639ff78cb83da028e5b0379958c1c8a089591314f221",
+      "target_sha256": "320d6886e8f7c18ac659f6fa48c936018595a8fc2880926a9bf41afda8582493",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B007",
+      "unit_id": "OLP-0220",
+      "source_sha256": "e89c36e4b582810533b65eee181fdb7ac5e5c42c051efd11bd942062e1b72244",
+      "target_sha256": "5e5632f325b0d222248f23f83ceba2c0d1345dc237230dcd972c6a653c4c6b3d",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B008",
+      "unit_id": "OLP-0220",
+      "source_sha256": "9b1bfb5db3649e346c3707f06afbeb096a9125d61b7f3eff48b43cdb32790f30",
+      "target_sha256": "55140c0fbbe9f1a01d62c0b2021da57bb88bfc81bc4def67e0ea80f03c863f40",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B009",
+      "unit_id": "OLP-0220",
+      "source_sha256": "506ea15574201d4568c93d432366f0431c8c7f68c56bf8bbeba56da0a2923241",
+      "target_sha256": "ab65656fca46beb013e69b5e54811458c211ce140d70c911cc2b133afd430f7c",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B010",
+      "unit_id": "OLP-0220",
+      "source_sha256": "746514166ee70a33abdd3e34f3d107ccb8525224f7a5d6401fc1550d16b76128",
+      "target_sha256": "fd0641ed2d7f689ba615ae76a12c455637feb9283ee468c330911de0631f7bbc",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B011",
+      "unit_id": "OLP-0220",
+      "source_sha256": "c317e6353227c9971a9babd9d3d9350d28bc53de675c50bf2ce26d7dcb76da87",
+      "target_sha256": "54c286c14055a8c3248508c3db7a507ee02b9d83cecb193704038779c2bd9c85",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B012",
+      "unit_id": "OLP-0220",
+      "source_sha256": "e167cfeadae8dd5061c0bf95f2c90d5c9de58d3e1a6f088d4e1f8f13383535fb",
+      "target_sha256": "bf1715fa9962664ee680d05009eae352b8218d0c58ca6dfd484381b865f4de9d",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B013",
+      "unit_id": "OLP-0220",
+      "source_sha256": "5258d3275214e246a316c80512b3cdc4f1b4c3297c3f6e763fd7df45f751a15a",
+      "target_sha256": "f59cc3b9b50ffc1e14053f5bf977c0d89e2ec28149846a56abad25674344a38c",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B014",
+      "unit_id": "OLP-0220",
+      "source_sha256": "9f4d88a11771d236d064635bda1dde20941203647f366609f824a1b390f4bf42",
+      "target_sha256": "5d91a4ef789a05c553a38016701aac352d313d6ddd3ca9643bcd8be41fc5895c",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B015",
+      "unit_id": "OLP-0220",
+      "source_sha256": "20e75f3fa9a1917d5ad53c315092e60c2cdacc1c11c0116b880b83a388d501b3",
+      "target_sha256": "35d32e89b7a6596ca41f9fcc473ce3352d356c46c4df0095e79521961dae56f2",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B016",
+      "unit_id": "OLP-0220",
+      "source_sha256": "ac14db15aceb438443a65be9033473fa1339c994cf03406994007dec732be5f6",
+      "target_sha256": "809834ba5d1c41ce5d459583286ac4f3e2517c82ed8557760952c405a47dc1c9",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B017",
+      "unit_id": "OLP-0220",
+      "source_sha256": "4f854e64d9cacef4b8fbd10bbe3ccd71b3ca48461ed55f74338351743437dc49",
+      "target_sha256": "6f088701ae72226ed25ab4a78980ed2a1755551d99553f3f3959627378c61f40",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B018",
+      "unit_id": "OLP-0220",
+      "source_sha256": "f25c3ed0cf730a6e335583859f81e4a8b317b3717a319d86feb57ccb3497fd78",
+      "target_sha256": "8842cd2d2f476869a63d55e0423d313db3626c7c4a2e1e38f951bb31c24b6d6e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B019",
+      "unit_id": "OLP-0220",
+      "source_sha256": "217475531c66671de644e84d9384b47a58df79c44309230274813cb63cf69611",
+      "target_sha256": "57b961995d0861688fea2055c65e00c387d60b27ff4aec738191a81d9773364e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P089",
+        "GU-P040"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B020",
+      "unit_id": "OLP-0220",
+      "source_sha256": "a6082e4456d264e1f62bdc0d3681f0fc83b2b5ce81dc36eedcfa6b30d2e3492e",
+      "target_sha256": "1b997838648b73339c7c2b6d31101847179de209bed29ebb8f6700d40812afc1",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B021",
+      "unit_id": "OLP-0220",
+      "source_sha256": "91c00be102a822b419f83f4fa57533f464c1f9931078b23dcc10d0671932998a",
+      "target_sha256": "96b992f7f64c1ecd17a405aa1f15b64c9c89fc5654acc7e90b54b8cf4844a0ad",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B022",
+      "unit_id": "OLP-0220",
+      "source_sha256": "22a867e836040c6a7d2f2dd33459efc17d17d745d157f1aedadf934c49e3f6a2",
+      "target_sha256": "873a2623e842df41eb2df056e672c4c1146901a09d14175d766eaad077e81286",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B023",
+      "unit_id": "OLP-0220",
+      "source_sha256": "5c1629f4abdb1fa4d97a4d38d8df34d4d015cb746bb0ca99ded7e8572d0f7000",
+      "target_sha256": "03b51da964d4d68dabde8f290df383992b155bd8a43a6e26f7ddc37e80a51ec4",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B024",
+      "unit_id": "OLP-0220",
+      "source_sha256": "2104e8fb4104e0eb5e984e28aaa125da26b8d643a7a4ed36dde143914bbd9119",
+      "target_sha256": "9437c127f573f7dc4551e552469469c1f482d46257142eb578f32774b02086e4",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Prime-power sequence codes distinguish trailing zeros; length, append, element, concat and subsequence operations preserve their formulas. OLCMP-007 supplies the missing empty-sequence bound convention.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B004",
+      "unit_id": "OLP-0221",
+      "source_sha256": "f77e26555c785d3b09855551e2578b4e283c93e3a65afb459a5b3b70c096c349",
+      "target_sha256": "990606d52e73bfcbd7153916cf6c858084a545204031d13f03f80be4b648a6f6",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Tree codes list immediate subtree codes and optional labels. The helper counts the first k elements with an empty base case, and the accumulator includes all levels up to n, as disclosed in OLCMP-008–009.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B005",
+      "unit_id": "OLP-0221",
+      "source_sha256": "60aff31a5ad37e77ddae8b9eb178ba5519090c497b57d67600e5d460cf777694",
+      "target_sha256": "80e445ec85b57d06a21a6b96c5cd8f3c467e300a9c33f4b8f051a768a055d0da",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Tree codes list immediate subtree codes and optional labels. The helper counts the first k elements with an empty base case, and the accumulator includes all levels up to n, as disclosed in OLCMP-008–009.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B006",
+      "unit_id": "OLP-0221",
+      "source_sha256": "b07b06c8882bb27a0669db75c9c383602e4ef334276bddbdc28d5e1f0c4910f8",
+      "target_sha256": "cb7c67020c31b9241112817c609a941e060cb34c4388537eafef483e98aa1cd0",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Tree codes list immediate subtree codes and optional labels. The helper counts the first k elements with an empty base case, and the accumulator includes all levels up to n, as disclosed in OLCMP-008–009.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B007",
+      "unit_id": "OLP-0221",
+      "source_sha256": "1aa6eb4fe60e2d4d5e7e3925a919f80bad5b6b20a4826f5fb88a84b08918cb4c",
+      "target_sha256": "46b82d4e6e46552c17ff229e90222a130301332524acd28e76065ba8458f84ef",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Tree codes list immediate subtree codes and optional labels. The helper counts the first k elements with an empty base case, and the accumulator includes all levels up to n, as disclosed in OLCMP-008–009.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B008",
+      "unit_id": "OLP-0221",
+      "source_sha256": "af69b659ffe76ed80fd0edc0ac89e3d2178a5ff62771e477bcdf7ddede5293dd",
+      "target_sha256": "3860a5240ff7db7e7deeb8b4a2163fd450ac973479c0c80ef029271cccdc0bd2",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040",
+        "GU-P090"
+      ],
+      "unit_assessment": "Tree codes list immediate subtree codes and optional labels. The helper counts the first k elements with an empty base case, and the accumulator includes all levels up to n, as disclosed in OLCMP-008–009.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B009",
+      "unit_id": "OLP-0221",
+      "source_sha256": "2ff6204200780e724d492be9100bc6bf71afb1083e1bd6a46789970e9b30a7d9",
+      "target_sha256": "9171e83120440b2a06707c86e51507f62b1c51109a161e7ca7d56a6d0af0a3a4",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "unit_assessment": "Tree codes list immediate subtree codes and optional labels. The helper counts the first k elements with an empty base case, and the accumulator includes all levels up to n, as disclosed in OLCMP-008–009.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0222-B004",
+      "unit_id": "OLP-0222",
+      "source_sha256": "1b585a4df70b07fd1cf87296fa4c6b9c7a5ae268dbabe8cc77d3b88b9773ad02",
+      "target_sha256": "b18e7a16b59e9ae50df6b66b29144b3a037f069e2c9b1bfa279c313610b486b6",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040",
+        "GU-P090"
+      ],
+      "unit_assessment": "Simultaneous recursion, course-of-values recursion, and changing parameters remain three distinct schemes; the remainder exercise and backward-unwinding hint are retained.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0222-B005",
+      "unit_id": "OLP-0222",
+      "source_sha256": "57f57c582446c507ade92157607d66d81acee173e85f72340ed67a47eef882dc",
+      "target_sha256": "838f928eada739c3a9b5a4f618fd92558bde4e6b9abb7b308c615213e5d98dd8",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040",
+        "GU-P090"
+      ],
+      "unit_assessment": "Simultaneous recursion, course-of-values recursion, and changing parameters remain three distinct schemes; the remainder exercise and backward-unwinding hint are retained.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0222-B006",
+      "unit_id": "OLP-0222",
+      "source_sha256": "9981152752379077e9d089320624f8e61ecbd4dc82ea6068e2054c1a404599bd",
+      "target_sha256": "e592b6d14d065ba7e86df3ef0e5df2d768759107230313c476648ebf767b8f93",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040",
+        "GU-P090"
+      ],
+      "unit_assessment": "Simultaneous recursion, course-of-values recursion, and changing parameters remain three distinct schemes; the remainder exercise and backward-unwinding hint are retained.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0222-B007",
+      "unit_id": "OLP-0222",
+      "source_sha256": "00aeeaa933e41c23440cc018220ab5b0f069a9270cabca51893c7e84d0fabc6b",
+      "target_sha256": "5d6dab9e50d2e9f2d979980f8e38ddea8b13c8cb0582cdb6a55073374c450d67",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040",
+        "GU-P090"
+      ],
+      "unit_assessment": "Simultaneous recursion, course-of-values recursion, and changing parameters remain three distinct schemes; the remainder exercise and backward-unwinding hint are retained.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B004",
+      "unit_id": "OLP-0223",
+      "source_sha256": "3dbb1ab4ee1d71112527f86b54db1ea923dd4f9d85c38071721c09835744b829",
+      "target_sha256": "c535091a2a28d6baa754e4f5a0691fa789b3699b66640b9444c712e83736b817",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B005",
+      "unit_id": "OLP-0223",
+      "source_sha256": "28b4c83b5a4ccc106e07e37d557d15ef8d68fee0293b0a14a6950594ad9ef2fd",
+      "target_sha256": "06dc1262181f1ca457ab90fae88e5f21065c88b3be3604ef2ae00536cb7c65dd",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B006",
+      "unit_id": "OLP-0223",
+      "source_sha256": "3e7348548baae65b28590cfd3a4bd72579ea1389c09c50edc9d9f800ae2cb03e",
+      "target_sha256": "63d189c7880b36caaaf78ea4b7802bff160edc110d82ab0e2cef8d0e9abdd56c",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B007",
+      "unit_id": "OLP-0223",
+      "source_sha256": "eae45be2738d80908805a04f14d4b54044e7c4e296bc1e1f360a92c12df4591c",
+      "target_sha256": "9f791a1ecc98e750826a26fad36defc0ae9917754952296edadbbf54b78ea6f9",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B008",
+      "unit_id": "OLP-0223",
+      "source_sha256": "70c15e3f63ccd130f9b1b7189d1fe349cb6a55a55a6d2ca79ddc05a6cc2f2160",
+      "target_sha256": "07cdd8e9372d6961a820c67d70d9de676fdcd948f6d368087a6be45630f2fbd1",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B009",
+      "unit_id": "OLP-0223",
+      "source_sha256": "4a1f2f05365c41f92073edd1407ccdedcd58a62f34cad333180ff12d48734e30",
+      "target_sha256": "cf8fa2ab8b4d03afced15f9c75dbb4d04e53e5a15164d3bbc4ff87d9e1e6fc7d",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B010",
+      "unit_id": "OLP-0223",
+      "source_sha256": "959df7d72dd87b5feeae15d03473c47511ce08bc1fbba0869d5dd5987dfef494",
+      "target_sha256": "8a4e8605116ec6a3c6776f216beec69fbc9a0c7a8cf50b9b81432deebbc04cfc",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B011",
+      "unit_id": "OLP-0223",
+      "source_sha256": "0501234d134362115e56cb009011e8710394cbf6b428cb4ea6ca9ea8cf4b881d",
+      "target_sha256": "ee1136323a319f69ec96516055183f81c4de4e5e2ba12f6d5649e1eaf3a2b5ac",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Effective enumeration of unary primitive recursive functions supports a diagonal computable non-primitive-recursive function. Ackermann–Péter growth, notation coding, repeated codes, and the tagged Church–Turing digression remain scoped.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B004",
+      "unit_id": "OLP-0224",
+      "source_sha256": "38c2dc5e677b3b23fad3a3d2cfdad3953e4bc7ea788c3837bdbaa90c3f16c62d",
+      "target_sha256": "c00e5f25e47461a86c3e8dd8f43e8c7cc71c5bc826a8651f7e105d6acb3259bf",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B005",
+      "unit_id": "OLP-0224",
+      "source_sha256": "6ef1ce1d46f6e71a60f008af75d63be264b7685336fa6d9d421f3bf975459167",
+      "target_sha256": "1abe9eb7d710bc1cf3e55b8e38faa36fd81026403de00f7eb755f99f9b61c619",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B006",
+      "unit_id": "OLP-0224",
+      "source_sha256": "78e5cbf538b94cc2601dbc1e14661795e69052cd91dc175495923fb17819f045",
+      "target_sha256": "28f9a8d8d5aead01e00c2c6a8c8b36ee5728875e85a95a2186cb30df46951bac",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B007",
+      "unit_id": "OLP-0224",
+      "source_sha256": "aedb91739333d1c9a58e54417fe304dde7bd84ebf4c09b3f5bca9c623ad6a034",
+      "target_sha256": "cd941a0c720b7e1fcf5928bb35c9b60b9fbf9e8307dc0fc42fdc1fb64fe71eef",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B008",
+      "unit_id": "OLP-0224",
+      "source_sha256": "50792defa1723679cfb420bd47d46c428591d5f3e3576224b3752dbdf680a852",
+      "target_sha256": "17c4a1e6880d9963bff0a0d452d3d57b468a39983959d494981c086bc11a1619",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090",
+        "GU-P032"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B009",
+      "unit_id": "OLP-0224",
+      "source_sha256": "d4a38e3e742dda778f5b10cd66f7fa4157ea995ae997d6f54fb95dc084fdcc7f",
+      "target_sha256": "ad2a9f1b644f44538ac16e976e168723d00a2fc6a17f2998ffef5908d33bf37f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090",
+        "GU-P032"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B010",
+      "unit_id": "OLP-0224",
+      "source_sha256": "d55d14b5783659307afbdfff95b74e181738dc306773a956f0aab6f34341e7ff",
+      "target_sha256": "a6f9874c65eda07d24b10bb3ab80d8ce19d457717c6a7b612ee42960ce0354b5",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B011",
+      "unit_id": "OLP-0224",
+      "source_sha256": "d912d82621078b0bd579f09769d3c38569f5e662ace592bac75dac5b11024de6",
+      "target_sha256": "40eddeb9ac90d9319147755179f25b04e438b44520d6f01725650a2ef5e7a3a8",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090",
+        "GU-P032"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B012",
+      "unit_id": "OLP-0224",
+      "source_sha256": "14be7b84465421dddae173a4540fbff62e22f37d9435b9a929823cffe5749df7",
+      "target_sha256": "9e930c265b7d9a571f2febbb865a8c9942fb7301944e1d254ee45a4e8b26982a",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090",
+        "GU-P032"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B013",
+      "unit_id": "OLP-0224",
+      "source_sha256": "b2fd095459be886be8a861411eedcd4a41bf65b38387782ce211c283ecd7a420",
+      "target_sha256": "2bc4b0a1a80c8e8680ba69ca89412a09add17c08a19fc1133bbd427f8567de8e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B014",
+      "unit_id": "OLP-0224",
+      "source_sha256": "d2d62f6dd5cc5eda0436e70197fe86e1ff345e1e62e9baba084f90625acb5627",
+      "target_sha256": "96e0b1fa410919fc1b5f75a4389bb4d142c9100b4c36270bf0f2bdd8e7f470f1",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090",
+        "GU-P032"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B015",
+      "unit_id": "OLP-0224",
+      "source_sha256": "f0ae8279bfe1c3e9dde544096811da38cf0430b6c58852374a37e04815c87b54",
+      "target_sha256": "975b8123848c76fd050e54bf89bb91e56132d711d3b0d183f09d6910271c9308",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "The diagonal obstacle concerns total enumerations with computable evaluation; admitting partiality allows enumeration. Weak equality, strict composition, µ-search requiring all earlier values defined, and total recursive functions are kept distinct.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0225-B004",
+      "unit_id": "OLP-0225",
+      "source_sha256": "e22d43ef99ee3fef15a043f47cd16a06ec6dacfcefbd6c1b69a8acdf4eddb2ba",
+      "target_sha256": "fc9c8826d66c00d19e23ab0eea8327df14153d999cdfb877dac0bd2825a95b3b",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P087",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Kleene normal form uses primitive recursive T and U plus one unbounded search and an index e. OLCMP-010 explicitly scopes the displayed formula to unary functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0225-B005",
+      "unit_id": "OLP-0225",
+      "source_sha256": "a97e07252c46aed86ccbe48907f80f8d7dd0356c465d4149f8e35642584b0e82",
+      "target_sha256": "dddedef128bb84cc6c1f6990989c8a86e5ec7800367903bde0fa3e2a4459d106",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P087",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Kleene normal form uses primitive recursive T and U plus one unbounded search and an index e. OLCMP-010 explicitly scopes the displayed formula to unary functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0225-B006",
+      "unit_id": "OLP-0225",
+      "source_sha256": "f938f6a105aa0dc824ba50251c17ecdf399dc9d233399d06da0e3f79c9f0cb3d",
+      "target_sha256": "109c90ee3518042e92970c5fe1a8b5f0421814df9bc201715ea295850ebfdc7f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P087",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Kleene normal form uses primitive recursive T and U plus one unbounded search and an index e. OLCMP-010 explicitly scopes the displayed formula to unary functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0225-B007",
+      "unit_id": "OLP-0225",
+      "source_sha256": "48c98bfa049fea265feab660179a540965c7645b8691949078ea54870ee34075",
+      "target_sha256": "7433b897917aa455acb2418532109e74682eb030da8efa2444769859ef9d7810",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P087",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Kleene normal form uses primitive recursive T and U plus one unbounded search and an index e. OLCMP-010 explicitly scopes the displayed formula to unary functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0226-B004",
+      "unit_id": "OLP-0226",
+      "source_sha256": "0566a2a0097cd8d61b1c78b0b2d1e81212cc81219da778c972e5d29012f2418b",
+      "target_sha256": "410cf7cfdcb017bd4f03cb019c942802037b782f56e7fbe185e01dd9dc56873d",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "unit_assessment": "The halting function is total but not partial recursive. The diagonal function is undefined exactly in the opposite definedness case, producing the index contradiction.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0226-B005",
+      "unit_id": "OLP-0226",
+      "source_sha256": "7385a57eee77deb9cf332101ab21bf4864ff26a9febc38a9511e8960d75335b7",
+      "target_sha256": "61ed58a0d3a553768c46db1abef0ab84d9d1d9b86d5ea388e15bd4cd8fa1224a",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "unit_assessment": "The halting function is total but not partial recursive. The diagonal function is undefined exactly in the opposite definedness case, producing the index contradiction.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0226-B006",
+      "unit_id": "OLP-0226",
+      "source_sha256": "fbc28847ff3612c1f1c5cbe12f369c4678ee04accada821302c4648e5b6900d9",
+      "target_sha256": "2106059f6335da4a206ff50e461c2f258a2e0c322af8f63ee023c063aea1c78f",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "unit_assessment": "The halting function is total but not partial recursive. The diagonal function is undefined exactly in the opposite definedness case, producing the index contradiction.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0226-B007",
+      "unit_id": "OLP-0226",
+      "source_sha256": "affb29e7b0cd840ca1b1df5539d47fba38cab76ce63349b8e1512b5aa22f0b24",
+      "target_sha256": "4ccd930686b0cd5c498966377cb5dc282d5fa3d126353da7e431a9c635488477",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "unit_assessment": "The halting function is total but not partial recursive. The diagonal function is undefined exactly in the opposite definedness case, producing the index contradiction.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0226-B008",
+      "unit_id": "OLP-0226",
+      "source_sha256": "0f204e4e651232d282f1cadc8fc1b33a0ae716d0b4ede24525730819a7ce23b7",
+      "target_sha256": "bd8122aeeeff7dcb23e615cb0da93e46a91b42d58367f2a3375030320cb5a4d6",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "unit_assessment": "The halting function is total but not partial recursive. The diagonal function is undefined exactly in the opposite definedness case, producing the index contradiction.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0227-B004",
+      "unit_id": "OLP-0227",
+      "source_sha256": "427b2b9465ec5bcad007687a5810c7b9b99d5702f14ab21ccf46673d4f5596cb",
+      "target_sha256": "aaa7ffada38a039ccf1aaa665fa6050d0823387213a18f0c0ebcf0ee82724f17",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Regular total functions have a zero for each parameter tuple; restricting search to them yields total general recursive functions, extensionally equal to the total partial recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0227-B005",
+      "unit_id": "OLP-0227",
+      "source_sha256": "cf3e3b85cb79a0b05bd63e48dbe3ffa973840ad0016519b59373c2d9c9d9e383",
+      "target_sha256": "ab68b435df8f6acf89fbbad43e35c3a425fcf8093712e2a69f0d9e0c2cbdf71e",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Regular total functions have a zero for each parameter tuple; restricting search to them yields total general recursive functions, extensionally equal to the total partial recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0227-B006",
+      "unit_id": "OLP-0227",
+      "source_sha256": "e37f25941220c8fad460ba9c17a94fbe87780e7dfd092dca9c6a77e04fef4b91",
+      "target_sha256": "323389ded5612a223e860b03143780690da41472fc1f9f91cc83f7b09abed855",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Regular total functions have a zero for each parameter tuple; restricting search to them yields total general recursive functions, extensionally equal to the total partial recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    },
+    {
+      "segment_id": "OLP-0227-B007",
+      "unit_id": "OLP-0227",
+      "source_sha256": "884a6b0093863aa3d8f62ae2d63b18a555868c286c51b8475ea533dc408250b4",
+      "target_sha256": "d1a0c7518fca928b80dce1f314b85b114f66fff4e5a1f1ee8d6603ec3b4fb1cc",
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "unit_assessment": "Regular total functions have a zero for each parameter tuple; restricting search to them yields total general recursive functions, extensionally equal to the total partial recursive functions.",
+      "status": "same_agent_source_target_comparison_during_drafting_and_structural_parity_passed"
+    }
+  ],
+  "samples": [
+    {
+      "segment_id": "OLP-0210-B005",
+      "unit_id": "OLP-0210",
+      "source_sha256": "65af1e277981a4fd84c430571b2cecbbe9c4922aad912529a7c14c39bcd9fe57",
+      "target_sha256": "d6eb63ee2cfcb23d66b91bd907f271a467e30df5124708e283246468d7a1e191",
+      "reverse_paraphrase": "The numerical-computation ideal is historical; modern computers' symbol manipulation is mentioned separately before formal models are compared.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0210-B006",
+      "unit_id": "OLP-0210",
+      "source_sha256": "00e79fc70d0b3367c9614c067dac4b8e2b2047af39ae66d4567681a2e688d689",
+      "target_sha256": "6f5495e74f6480b4045773e10048383e9532c60a4cea5f1f7fd0cc41bcb5f6bb",
+      "reverse_paraphrase": "A set or k-ary relation is computable when membership of a number or tuple is decidable, via its characteristic function.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0210-B007",
+      "unit_id": "OLP-0210",
+      "source_sha256": "a8cef45d882bbda092b1183ff9a2c290c50ae8940a9033f6ca1303f6a236a191",
+      "target_sha256": "4759b8ed66b91a05fbb3ff81b2431c2948fb12ba6d2713310d96ddc50492a1cb",
+      "reverse_paraphrase": "Partial recursive functions can be undefined; general recursive functions are the total functions among the partial recursive ones.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B005",
+      "unit_id": "OLP-0211",
+      "source_sha256": "a19fcd92db95d477a6e86dc34110f461de714c9e4d1880eff070ae9366191b03",
+      "target_sha256": "90910963a11769a4d2e3f4541ec7290f28a08a2dce354c510d0c6a98d848b0bc",
+      "reverse_paraphrase": "Start at h(0), then use the already known h(x) to calculate h(x+1); the source sentence with reversed direction is corrected and disclosed.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0211-B010",
+      "unit_id": "OLP-0211",
+      "source_sha256": "a676595c78793d4eeafb18cbbafb5c07a7932d0a4a9e358b52483db6ae5c8fd6",
+      "target_sha256": "536294d526e184e074bef75c1a12d708d1833d44e8686a17e68b07c4021489e0",
+      "reverse_paraphrase": "For the general primitive-recursion scheme, f gives the base value without h and g uses the parameters, y and only the immediately preceding h-value.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B006",
+      "unit_id": "OLP-0212",
+      "source_sha256": "363f59c740aa57ac8a176732356da1b6f357b19f05434c242d806d18325db086",
+      "target_sha256": "d140e92b050afda389cefc731eebd25ba1cb8045b8605e189119703ff9d99d48",
+      "reverse_paraphrase": "The composite h takes n original arguments; f receives k outputs from the g_i; the source's k-1 left index is corrected to n-1.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0212-B010",
+      "unit_id": "OLP-0212",
+      "source_sha256": "3bde1ff69603be683a24361322b9716961adcf3f73b3bf3a1399fb5d6e5f58ab",
+      "target_sha256": "7d587c10e3d2590b6d65e200dfe051a2646eaddd323a7e2306d9256121ad01f4",
+      "reverse_paraphrase": "Projections let a composition ignore, repeat, or permute arguments and nest an l-place inner composition.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B009",
+      "unit_id": "OLP-0213",
+      "source_sha256": "117807945af63638a784f884fba2df05247d977ac9bbe26b994fa72659387092",
+      "target_sha256": "afc6dc2f2c5ecb998c8b4322842a7648f896136d9f998d68eaa5d5a544b684be",
+      "reverse_paraphrase": "The inductive class starts from zero, successor and all projections, then closes under composition and primitive recursion of the stated arities.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B014",
+      "unit_id": "OLP-0213",
+      "source_sha256": "ca572c37e0bea1812903b8ebbe55059bd0770b68450776ee4702163d4dbb799c",
+      "target_sha256": "2984af9e6ecd6c1a4cc498032eed93b2f1ba14ac9cffcae16454e371e1adb02a",
+      "reverse_paraphrase": "Addition is primitive recursive only after g(x0,y,z)=Succ(z) is represented as Succ(Proj_2^3(x0,y,z)); one-place and three-place functions are not identified.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0213-B018",
+      "unit_id": "OLP-0213",
+      "source_sha256": "99548bdea7215dd333218a67a9d40f689709642af7f00c2e8e6776292a39e5c3",
+      "target_sha256": "1f5c9b27075a0e6cbf4ec2c97ce25ed3892c773c118718b8cd573c4281cef24d",
+      "reverse_paraphrase": "A dummy argument first adapts a unary recursive example to the stipulated k>=1 scheme; constants and multiplication are built from base functions.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0214-B007",
+      "unit_id": "OLP-0214",
+      "source_sha256": "06593540ae1d9c56b2f804a54422bac3e324e1c1b6ee373529cd9b37222cdeee",
+      "target_sha256": "b9092c73d08f84ea715c6b3c5a4c743f2a7744a1d11cbe9ecf5486d738e1ced1",
+      "reverse_paraphrase": "Addition's notation is Rec_1[Proj_0^1, Comp_{1,3}[Succ,Proj_2^3]], with all arity parameters unchanged.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0215-B005",
+      "unit_id": "OLP-0215",
+      "source_sha256": "71cdf95c142d98d00e439a4083a8be2973c6ae3cf8433d245ba52881494163e0",
+      "target_sha256": "ab257f028aa1d57d83e4a308e564a15d80d6daafc88ad85f3143f4c399a0ca9c",
+      "reverse_paraphrase": "Computing h(x,y) requires finitely many successive evaluations from 0 through y when f and g are computable.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B007",
+      "unit_id": "OLP-0216",
+      "source_sha256": "9edb5d1f8defc760d6654a0efc22689f8125070aa5c689f0a49fe217603b4059",
+      "target_sha256": "5103d195681a6a607798a0918a332cc3b28581d4b4a46e18d5b1dbd93437ab80",
+      "reverse_paraphrase": "Exponentiation's informal recurrence is converted to formal primitive recursion using a constant-one f and projections inside multiplication g.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B009",
+      "unit_id": "OLP-0216",
+      "source_sha256": "76e4ce7f428b0983f1cfa334747689d1de9290603adb7c610e86e27c3df077f6",
+      "target_sha256": "5909ca1fd8920a8db0792085e7f16a0a40e0240f09fe6c4fe910277f3c0b106d",
+      "reverse_paraphrase": "Predecessor needs a dummy x argument; its successor clause selects y with Proj_1^3 and need not use the prior predecessor value.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B011",
+      "unit_id": "OLP-0216",
+      "source_sha256": "5b727147fc781e22a5f291be29b67539abd16cdd91c58462ca9ad921e2c60980",
+      "target_sha256": "f462c4eec269ed18cfe6048c500909d01f49c4ed5a54a9576aa6dabd6bbecde8",
+      "reverse_paraphrase": "Factorial is formalized using a two-place h with constant-one base and multiplication by successor of y.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B012",
+      "unit_id": "OLP-0216",
+      "source_sha256": "1668662a62cc338d7409fda9f4e683af4dd1aad5d6ba4119af7a635d4bea1536",
+      "target_sha256": "325266db411112d3dc3d542f03259bfd7ba666bec6da02d06b1c5c90c21395f6",
+      "reverse_paraphrase": "Truncated subtraction gives zero when x<y and x-y otherwise; its recurrence applies predecessor after each subtraction step.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0216-B023",
+      "unit_id": "OLP-0216",
+      "source_sha256": "01d983e1c1911bc24f029a155c98e008cb37ed33e487ffc6abc5269399f58719",
+      "target_sha256": "7c1004bf2de1873f12db1edca0738a16356304aa1a71eab95551e67435650323",
+      "reverse_paraphrase": "Finite sums and finite products are closure operations, and the displayed proof gives the recurrence only for sums.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B007",
+      "unit_id": "OLP-0217",
+      "source_sha256": "c0292f42bd8069d61dcd3cb4c84acd6d6f2ee55d2c330c22af467a351866363f",
+      "target_sha256": "811436d7d28024a232965007343435d8b9e1728755c18814b8368b3a3613902f",
+      "reverse_paraphrase": "The non-strict order x<=y is IsZero(x truncated-minus y), so the Gujarati name includes equality.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B011",
+      "unit_id": "OLP-0217",
+      "source_sha256": "2f7df26c5310998ecebed1661e2b04a91cc65a153f6d8313a39cbe85ac42f6f4",
+      "target_sha256": "9261f6de165576be48a8ae5887ed090bcba1864e6730d6b7084d8dde9e68dd2e",
+      "reverse_paraphrase": "Bounded universal quantification begins true at y=0 and combines the next relation value by minimum; bounded existential uses maximum or De Morgan duality.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0217-B014",
+      "unit_id": "OLP-0217",
+      "source_sha256": "79399db2fa8dcff40176e29849b2449fc8bbf12242685d4821f3b713285feb2f",
+      "target_sha256": "e895d66390bfe6fc72cfd0bf565cf35230de2417e79deb2b40935bd9af44c587",
+      "reverse_paraphrase": "Case-defined primitive recursive functions choose the first applicable R_i, falling back to g_m when none apply.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0218-B008",
+      "unit_id": "OLP-0218",
+      "source_sha256": "aab2927664bebf1592344c6d4ba4d2a355b254fe7af2fcf8bb0ddfbb59d1f142",
+      "target_sha256": "ce79e3e55b032e7a9074d634129c282234ead5d71922a9ad196b553ff24af37f",
+      "reverse_paraphrase": "If a witness already exists below y, retain it; otherwise inspect R at y and return y or y+1. The third case uses input vector x.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B005",
+      "unit_id": "OLP-0219",
+      "source_sha256": "a82e5c18ac5f892c76d1d281baebee90fff3ed6d5be39f34e95a238f9df9edf1",
+      "target_sha256": "e9348fc1bf969c683cd87146fd0f6461b11693070739062a0e73acbf6d0e37e9",
+      "reverse_paraphrase": "The relation x|y means y is a multiple of x; even for x=y=0 a bounded witness exists, though not every witness is bounded.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0219-B008",
+      "unit_id": "OLP-0219",
+      "source_sha256": "8468143d15560b00809e98647cd5e71d3df39983eb1d2fab6c1d273e4f31b27f",
+      "target_sha256": "efe53475c8b3603823eb57533399a59a9ae9bb3f2177bf9cd8f4c6a7e4841996",
+      "reverse_paraphrase": "The next prime can be found by bounded minimization up to factorial(x)+1 using Euclid's result, hence the prime enumerator is primitive recursive.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B005",
+      "unit_id": "OLP-0220",
+      "source_sha256": "7418d5a76b7206cdabced27a0936da4914af56284054021314414b1a68c092f0",
+      "target_sha256": "03ac03b75db9b3ade741b16057167d38e7b7b5c17ba992c1a8a218cad44ef3c5",
+      "reverse_paraphrase": "Adding one to each exponent makes a trailing zero change the sequence code; zero is selected as the empty-sequence code.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B009",
+      "unit_id": "OLP-0220",
+      "source_sha256": "506ea15574201d4568c93d432366f0431c8c7f68c56bf8bbeba56da0a2923241",
+      "target_sha256": "ab65656fca46beb013e69b5e54811458c211ce140d70c911cc2b133afd430f7c",
+      "reverse_paraphrase": "The unique largest prime divisor p_i of a valid nonempty sequence code identifies its final position i and length i+1.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B013",
+      "unit_id": "OLP-0220",
+      "source_sha256": "5258d3275214e246a316c80512b3cdc4f1b4c3297c3f6e763fd7df45f751a15a",
+      "target_sha256": "f59cc3b9b50ffc1e14053f5bf977c0d89e2ec28149846a56abad25674344a38c",
+      "reverse_paraphrase": "The ith element is the least a for which p_i^(a+2) fails to divide the code, with zero returned past the length.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0220-B018",
+      "unit_id": "OLP-0220",
+      "source_sha256": "f25c3ed0cf730a6e335583859f81e4a8b317b3717a319d86feb57ccb3497fd78",
+      "target_sha256": "8842cd2d2f476869a63d55e0423d313db3626c7c4a2e1e38f951bb31c24b6d6e",
+      "reverse_paraphrase": "The sequence-code upper bound is stated for k>=1; the adjacent note gives value 1 for k=0 so the empty code is below it.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B006",
+      "unit_id": "OLP-0221",
+      "source_sha256": "b07b06c8882bb27a0669db75c9c383602e4ef334276bddbdc28d5e1f0c4910f8",
+      "target_sha256": "cb7c67020c31b9241112817c609a941e060cb34c4388537eafef483e98aa1cd0",
+      "reverse_paraphrase": "A tree code begins with the count of immediate subtrees, then their codes and an optional node label; the two-child example retains its nested tuple.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0221-B008",
+      "unit_id": "OLP-0221",
+      "source_sha256": "af69b659ffe76ed80fd0edc0ac89e3d2178a5ff62771e477bcdf7ddede5293dd",
+      "target_sha256": "3860a5240ff7db7e7deeb8b4a2163fd450ac973479c0c80ef029271cccdc0bd2",
+      "reverse_paraphrase": "The helper concatenates f applied to the first k elements, starting with an empty sequence; the subtree accumulator retains levels through n rather than just level n.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0222-B005",
+      "unit_id": "OLP-0222",
+      "source_sha256": "57f57c582446c507ade92157607d66d81acee173e85f72340ed67a47eef882dc",
+      "target_sha256": "838f928eada739c3a9b5a4f618fd92558bde4e6b9abb7b308c615213e5d98dd8",
+      "reverse_paraphrase": "Simultaneous recursion updates two functions together, while course-of-values recursion may inspect the full history of earlier values.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0222-B007",
+      "unit_id": "OLP-0222",
+      "source_sha256": "00aeeaa933e41c23440cc018220ab5b0f069a9270cabca51893c7e84d0fabc6b",
+      "target_sha256": "5d6dab9e50d2e9f2d979980f8e38ddea8b13c8cb0582cdb6a55073374c450d67",
+      "reverse_paraphrase": "Changing side parameters along a recursion is another scheme simulated by ordinary primitive recursion, with no detailed derivation supplied.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B005",
+      "unit_id": "OLP-0223",
+      "source_sha256": "28b4c83b5a4ccc106e07e37d557d15ef8d68fee0293b0a14a6950594ad9ef2fd",
+      "target_sha256": "06dc1262181f1ca457ab90fae88e5f21065c88b3be3604ef2ae00536cb7c65dd",
+      "reverse_paraphrase": "Given effective evaluation of an enumeration f_x, h(x)=f_x(x)+1 is computable but differs from each enumerated unary primitive recursive function on its own index.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B006",
+      "unit_id": "OLP-0223",
+      "source_sha256": "3e7348548baae65b28590cfd3a4bd72579ea1389c09c50edc9d9f800ae2cb03e",
+      "target_sha256": "63d189c7880b36caaaf78ea4b7802bff160edc110d82ab0e2cef8d0e9abdd56c",
+      "reverse_paraphrase": "Successive g_n grow quickly; the Ackermann–Péter diagonal G(x)=g_x(x) outgrows every primitive recursive function.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0223-B007",
+      "unit_id": "OLP-0223",
+      "source_sha256": "eae45be2738d80908805a04f14d4b54044e7c4e296bc1e1f360a92c12df4591c",
+      "target_sha256": "9f791a1ecc98e750826a26fad36defc0ae9917754952296edadbbf54b78ea6f9",
+      "reverse_paraphrase": "Recursive notation coding enumerates unary primitive recursive functions, assigning a constant zero function to numbers that do not code a suitable notation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B005",
+      "unit_id": "OLP-0224",
+      "source_sha256": "6ef1ce1d46f6e71a60f008af75d63be264b7685336fa6d9d421f3bf975459167",
+      "target_sha256": "1abe9eb7d710bc1cf3e55b8e38faa36fd81026403de00f7eb755f99f9b61c619",
+      "reverse_paraphrase": "The diagonal argument applies to any enumerable total class whose indexed evaluation is computable, motivating the addition of partial functions.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B008",
+      "unit_id": "OLP-0224",
+      "source_sha256": "50792defa1723679cfb420bd47d46c428591d5f3e3576224b3752dbdf680a852",
+      "target_sha256": "17c4a1e6880d9963bff0a0d452d3d57b468a39983959d494981c086bc11a1619",
+      "reverse_paraphrase": "Weak equality means both undefined or both equal and defined; composition is defined only when all inner terms and the outer value are defined.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B009",
+      "unit_id": "OLP-0224",
+      "source_sha256": "d4a38e3e742dda778f5b10cd66f7fa4157ea995ae997d6f54fb95dc084fdcc7f",
+      "target_sha256": "ad2a9f1b644f44538ac16e976e168723d00a2fc6a17f2998ffef5908d33bf37f",
+      "reverse_paraphrase": "Unbounded minimization finds the least zero only if all earlier partial computations terminate; otherwise the result remains undefined.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0224-B014",
+      "unit_id": "OLP-0224",
+      "source_sha256": "d2d62f6dd5cc5eda0436e70197fe86e1ff345e1e62e9baba084f90625acb5627",
+      "target_sha256": "96e0b1fa410919fc1b5f75a4389bb4d142c9100b4c36270bf0f2bdd8e7f470f1",
+      "reverse_paraphrase": "Recursive functions are exactly the total members of the partial recursive class.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0225-B005",
+      "unit_id": "OLP-0225",
+      "source_sha256": "a97e07252c46aed86ccbe48907f80f8d7dd0356c465d4149f8e35642584b0e82",
+      "target_sha256": "dddedef128bb84cc6c1f6990989c8a86e5ec7800367903bde0fa3e2a4459d106",
+      "reverse_paraphrase": "The unary normal-form equation uses primitive recursive T and U and a single µ-search for a program index e.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0225-B006",
+      "unit_id": "OLP-0225",
+      "source_sha256": "f938f6a105aa0dc824ba50251c17ecdf399dc9d233399d06da0e3f79c9f0cb3d",
+      "target_sha256": "109c90ee3518042e92970c5fe1a8b5f0421814df9bc201715ea295850ebfdc7f",
+      "reverse_paraphrase": "T checks a coded computation from input x and index e; U extracts its resulting value from the code s.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0226-B006",
+      "unit_id": "OLP-0226",
+      "source_sha256": "fbc28847ff3612c1f1c5cbe12f369c4678ee04accada821302c4648e5b6900d9",
+      "target_sha256": "2106059f6335da4a206ff50e461c2f258a2e0c322af8f63ee023c063aea1c78f",
+      "reverse_paraphrase": "The halting characteristic function returns 1 for defined indexed computations and 0 for undefined or invalid indices.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0226-B008",
+      "unit_id": "OLP-0226",
+      "source_sha256": "0f204e4e651232d282f1cadc8fc1b33a0ae716d0b4ede24525730819a7ce23b7",
+      "target_sha256": "bd8122aeeeff7dcb23e615cb0da93e46a91b42d58367f2a3375030320cb5a4d6",
+      "reverse_paraphrase": "Assuming halting were partial recursive would give a diagonal d whose definedness at its own index contradicts the halting answer.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0227-B005",
+      "unit_id": "OLP-0227",
+      "source_sha256": "cf3e3b85cb79a0b05bd63e48dbe3ffa973840ad0016519b59373c2d9c9d9e383",
+      "target_sha256": "ab68b435df8f6acf89fbbad43e35c3a425fcf8093712e2a69f0d9e0c2cbdf71e",
+      "reverse_paraphrase": "A regular total function has some zero for every fixed tuple of side parameters, making its µ-search total.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0227-B007",
+      "unit_id": "OLP-0227",
+      "source_sha256": "884a6b0093863aa3d8f62ae2d63b18a555868c286c51b8475ea533dc408250b4",
+      "target_sha256": "d1a0c7518fca928b80dce1f314b85b114f66fff4e5a1f1ee8d6603ec3b4fb1cc",
+      "reverse_paraphrase": "The apparently narrower general-recursive definition and the total partial-recursive definition have the same extension.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    }
+  ],
+  "reader_qa": "pending"
+}

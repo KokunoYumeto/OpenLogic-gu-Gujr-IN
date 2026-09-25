@@ -1,4 +1,17 @@
-# લિન્ડસ્ટ્રોમ સુધીની સંચિત આવૃત્તિ કેવી રીતે બનાવવી
+# સંગણનીયતા સિદ્ધાંત સુધીની સંચિત આવૃત્તિ કેવી રીતે બનાવવી
+
+OLP-0004–0251ના 248/722 એકમો માટે સંગ્રહની મુખ્ય નિર્દેશિકામાંથી નીચેના આદેશ ચલાવો:
+
+```powershell
+python tools/prepare_computability_theory.py
+python tools/build_computability_theory_html.py
+.\tools\build_sets_guarded.ps1 -Edition computability-theory -TimeoutMs 60000
+python tools/build_computability_theory_epub.py
+```
+
+HTML વાચક `reader/computability-theory.html`, PDF `build/gu-computability-theory.pdf` અને EPUB `releases/OpenLogic-gu-Gujr-IN-Computability-Theory.epub`માં મળે છે. સંચિત પૂર્ણ-લખાણની સીધી TeX ફાઇલ `releases/OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex` છે. સાથેની સંપૂર્ણ સ્રોત ZIPના ફોન્ટ, શૈલી, આકૃતિ અને ગ્રંથસૂચિ આધાર સાથે તેનો ચોક્કસ PDF ફરી બનાવવા `-InputFile releases\OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex` ઉમેરો. ત્રણ નિયંત્રિત પાસના બાઇટ્સ સ્વીકૃત 304-પાનાના PDF સાથે સમાન મળ્યા. [પૂર્ણ સ્રોતની તપાસ](../provenance/FULL_TEXT_SOURCE_QA_024.json), [સંચિત ગુણવત્તા નોંધ](../provenance/CUMULATIVE_QA_024.json) અને [નવી સમીક્ષા](COMPUTABILITY_REVIEW.md) વિગતો આપે છે.
+
+## અગાઉની લિન્ડસ્ટ્રોમ આવૃત્તિ
 
 સંગ્રહની મુખ્ય નિર્દેશિકામાંથી નીચેના આદેશ આ ક્રમમાં ચલાવો:
 

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-epub-qa/24",
+  "checked_at_utc": "2026-09-25T04:35:30.792044+00:00",
+  "path": "releases/OpenLogic-gu-Gujr-IN-Computability-Theory.epub",
+  "bytes": 683046,
+  "sha256": "4dc645a7edd9c4ed7b7effa495c4f2a4a21bfcd82990a74570f91cd1d84e5e1c",
+  "coverage": "248/722; OLP-0004–0251",
+  "epubcheck": {
+    "version": "5.3.0",
+    "messages": 0,
+    "report_sha256": "63759cf067c54dc867b3995d1a7d319d5c263adc1d108e98606ee8f1ae3e4f22"
+  },
+  "cold_replay_byte_identical": true,
+  "native_mathml_nodes_exact_against_html": 14210,
+  "tex_annotations_exact_against_html": 14210,
+  "gujarati_character_sequence_exact_against_html": true,
+  "content_ids": 890,
+  "broken_internal_content_links": 0,
+  "navigation_links": 254,
+  "described_svg_figures": 15,
+  "all_twelve_new_source_corrections_preserved": true,
+  "exact_ai_attribution_in_about_and_metadata": true,
+  "runtime_visual_inspection": "passed_exact_xhtml_runtime_and_representative_visual_inspection",
+  "runtime_receipt_sha256": "d2ed0e3ee62b1dad52892f307f7bfa892ed301e40397b5939378c9e66d471dcd",
+  "status": "passed_structural_epubcheck_runtime_and_visual_inspection"
+}

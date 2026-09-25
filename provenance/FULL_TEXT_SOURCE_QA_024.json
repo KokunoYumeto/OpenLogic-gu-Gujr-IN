@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/24",
+  "checked_at_utc": "2026-09-25T04:50:35.655878+00:00",
+  "input": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex",
+    "bytes": 1871078,
+    "sha256": "4bb9a3ef59b987394af2a55ccf0c7733f451e316bac1d05fedb405b9d1b6041b"
+  },
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Computability-Theory.pdf",
+    "bytes": 2678201,
+    "sha256": "9f994774f7d1d54b6da10d41c56d64377116efbfec34afab1c28eac89bde3ca1"
+  },
+  "guarded_receipt_sha256": "393e53ff48c0e8141974280ae7d315536540896235ca18b171c97dca98d572e9",
+  "verification": {
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 248,
+    "total_units": 722
+  },
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction"
+}

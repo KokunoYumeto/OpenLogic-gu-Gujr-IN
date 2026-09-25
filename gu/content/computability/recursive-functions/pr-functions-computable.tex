@@ -1,0 +1,42 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: pr-functions-computable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{cmp}
+\olsection{આદિમ પુનરાવર્તી વિધેયો સંગણનીય છે}
+
+ધારો કે વિધેય $h$ આદિમ પુનરાવર્તનથી આ રીતે વ્યાખ્યાયિત છે:
+\begin{eqnarray*}
+h(\vec x, 0)     & = & f(\vec x) \\
+h(\vec x, y + 1) & = & g(\vec x, y, h(\vec x, y))
+\end{eqnarray*}
+અને ધારો કે $f$ તથા $g$ સંગણનીય વિધેયો છે. (અહીં $x_0$,
+\dots, $x_{k-1}$ના સંક્ષેપ તરીકે $\vec x$ વાપરીએ છીએ.) ત્યારે
+$h(\vec x, 0)$ સ્પષ્ટ રીતે ગણી શકાય છે, કારણ કે તે માત્ર
+$f(\vec x)$ છે, જે સંગણનીય છે એવું ધાર્યું છે. પછી $h(\vec x, 1)$
+પણ ગણી શકાય: $1 = 0 + 1$ હોવાથી $h(\vec x, 1)$ માત્ર નીચેનું મૂલ્ય છે:
+\begin{align*}
+ h(\vec x, 1) & = g(\vec x, 0, h(\vec x, 0)) =  g(\vec x, 0, f(\vec x)).
+\intertext{આ જ રીતે આગળ વધીને આપણે ગણી શકીએ છીએ:}
+h(\vec x, 2) & = g(\vec x, 1, h(\vec x, 1)) = g(\vec x, 1, g(\vec x, 0, f(\vec x)))\\
+h(\vec x, 3) & = g(\vec x, 2, h(\vec x, 2)) = g(\vec x, 2, g(\vec x, 1, g(\vec x, 0, f(\vec x))))\\
+h(\vec x, 4) & = g(\vec x, 3, h(\vec x, 3)) = g(\vec x, 3, g(\vec x, 2, g(\vec x, 1, g(\vec x, 0, f(\vec x)))))\\
+& \vdots
+\end{align*}
+તેથી સામાન્ય રીતે $h(\vec x, y)$ ગણવા માટે ક્રમે
+$h(\vec x, 0)$, $h(\vec x, 1)$, \dots, ગણીએ અને
+$h(\vec x, y)$ સુધી પહોંચીએ.
+
+આથી $f$ અને $g$ સંગણનીય હોય, તો આદિમ પુનરાવર્તી વ્યાખ્યા નવું
+સંગણનીય વિધેય આપે છે. એ જ રીતે, $f$ અને $g_i$ સંગણનીય હોય, તો
+તેમના સંયોજનથી મળતું વિધેય પણ સંગણનીય છે.
+
+મૂળભૂત વિધેયો $\Zero$, $\Succ$ અને $\Proj{n}{i}$ સંગણનીય છે, તથા
+સંગણનીય વિધેયોના સંયોજન અને આદિમ પુનરાવર્તનથી ફરી સંગણનીય વિધેયો
+મળે છે. તેથી દરેક આદિમ પુનરાવર્તી વિધેય સંગણનીય છે.
+
+\end{document}

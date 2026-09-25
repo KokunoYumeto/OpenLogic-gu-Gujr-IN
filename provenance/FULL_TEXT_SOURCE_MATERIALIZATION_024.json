@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-gu-full-text-source-materialization/1",
+  "generated_at_utc": "2026-09-25T04:40:05.767517+00:00",
+  "release_tag": "computability-theory-v0.18.0",
+  "coverage": {
+    "translated": 248,
+    "total": 722,
+    "complete_edition": false
+  },
+  "output": {
+    "filename": "OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex",
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex",
+    "bytes": 1871078,
+    "sha256": "4bb9a3ef59b987394af2a55ccf0c7733f451e316bac1d05fedb405b9d1b6041b"
+  },
+  "materialized_components": [
+    {
+      "path": "gu-computability-theory.tex",
+      "bytes": 53,
+      "sha256": "1d35f3f27a50a02702fc748a625d95c3f7cdaf34201c97563e918d9ebc6ef86e"
+    },
+    {
+      "path": "gu-computability.tex",
+      "bytes": 10585,
+      "sha256": "0234d08532ecf50ffd8d3c74ee8aaba6e30414f6e0f460a57c8c1562e2076928"
+    },
+    {
+      "path": "gu-tableaux.tex",
+      "bytes": 21080,
+      "sha256": "1e2b8cb34b696052882187a3388f0ead5059be5882e0bf22a3302793ffc58e9b"
+    },
+    {
+      "path": "build/foundations-preamble.tex",
+      "bytes": 3336,
+      "sha256": "fad2d6f5d88df7344cadc2e30148075594c903f3b626e32b0a0a8895e354fee8"
+    },
+    {
+      "path": "build/computability-theory-available-labels.tex",
+      "bytes": 41132,
+      "sha256": "4217e2a3fdc21b9e3c9eb1e2b29e5073c08f48de5aff05c6d4ff999813fb509a"
+    },
+    {
+      "path": "build/computability-theory-body.tex",
+      "bytes": 1794343,
+      "sha256": "3eec1747cd2c393e90b5339206b737933562f24cee9a1ccfad0138bb457ce7d8"
+    }
+  ],
+  "content_checks": {
+    "reader_body_embedded_exactly": true,
+    "label_index_embedded_exactly": true,
+    "drivers_and_preamble_embedded": true,
+    "rendered_sections": 220,
+    "source_correction_disclosures": 197,
+    "unresolved_cumulative_body_inputs": 0
+  },
+  "dependency_note": "OpenLogic styles, fonts, bibliography support and diagram assets remain external dependencies supplied by the companion complete source ZIP.",
+  "status": "passed_guarded_exact_reader_reproduction",
+  "reproduction_qa_sha256": "8a325f6f7cf16f90f495d39219be26c1e9ecbaf640a66cfc79f279c1118f1a14"
+}

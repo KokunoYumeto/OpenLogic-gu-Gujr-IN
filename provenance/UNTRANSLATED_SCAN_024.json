@@ -1,0 +1,252 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/024",
+  "checked_at_utc": "2026-09-25T04:15:41.529780+00:00",
+  "scope": "OLP-0228–0251 Gujarati Computability Theory draft",
+  "method": "Scanned prose after stripping TeX comments, mathematical displays and inline math, structural IDs, references, paths, citations and control words; inspected correction prose separately. Programming-language names, formal symbols, quoted code and exact verbatim examples are recorded as non-prose exceptions.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0228",
+      "path": "content/computability/computability-theory/computability-theory.tex",
+      "target_sha256": "2764a3569f94d7086a2d8c71f6003c0fdcf89e72127d55c49ae487ab6c111996",
+      "gujarati_characters": 94,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0229",
+      "path": "content/computability/computability-theory/introduction.tex",
+      "target_sha256": "3270904426057dceb83abade40b167511b6216ceba41799afe4ed54bfd3b91ce",
+      "gujarati_characters": 1643,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0230",
+      "path": "content/computability/computability-theory/coding-computations.tex",
+      "target_sha256": "0795c587798367be11b0c98cc6e0fbf06bb7d68adb60e54f7fa1bb2e2d2e4dbb",
+      "gujarati_characters": 1113,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0231",
+      "path": "content/computability/computability-theory/normal-form.tex",
+      "target_sha256": "0f50ed62e471f258f75558af704faaf8dde1dc595e59d2078908b5894132cf17",
+      "gujarati_characters": 2189,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0232",
+      "path": "content/computability/computability-theory/s-m-n.tex",
+      "target_sha256": "30ddcbe5b93406654cba2393f9a09c3b23b707e35b01d1899f7405950c9433e8",
+      "gujarati_characters": 661,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0233",
+      "path": "content/computability/computability-theory/universal-part-function.tex",
+      "target_sha256": "c8f70eb0902a376ec443690ddae13c059b737ecf466f0fdaf5c7fc76fd83797f",
+      "gujarati_characters": 628,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0234",
+      "path": "content/computability/computability-theory/no-universal-function.tex",
+      "target_sha256": "e8b95ec66369a1810647070fc69c8c7d9fcb44cf22593df8e2c833ce41012503",
+      "gujarati_characters": 725,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0235",
+      "path": "content/computability/computability-theory/halting-problem.tex",
+      "target_sha256": "f181215141f198d439e53ed22ad7f1676b37e3aedcd7a4338c67b3c139e4452c",
+      "gujarati_characters": 1618,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0236",
+      "path": "content/computability/computability-theory/russells-paradox.tex",
+      "target_sha256": "8854ab21a0ef37cea543f0a0f5a5df3c3d82876e6f65d24e31a00930b0e4b837",
+      "gujarati_characters": 1426,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0237",
+      "path": "content/computability/computability-theory/computable-sets.tex",
+      "target_sha256": "9b24b7d74b7ed4935b072fb436f167bdd0406461140feeac5d59ddd1290c4f29",
+      "gujarati_characters": 561,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0238",
+      "path": "content/computability/computability-theory/ce-sets.tex",
+      "target_sha256": "5344ab43cb5048911159c69581dba03f23b49895ea033689da55b948353f2dd4",
+      "gujarati_characters": 694,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0239",
+      "path": "content/computability/computability-theory/equiv-ce-defs.tex",
+      "target_sha256": "b40421aa888a657dccf4f367da63f2a32fa1ddd166f3048e48b626f4d2f84706",
+      "gujarati_characters": 2919,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0240",
+      "path": "content/computability/computability-theory/non-comp-set.tex",
+      "target_sha256": "210e8081fe348577b9d7428780a9c801de590958c76e1273b5e71935febb2e83",
+      "gujarati_characters": 730,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0241",
+      "path": "content/computability/computability-theory/ce-closed-cup-cap.tex",
+      "target_sha256": "9651152a89d638fdbc3691ab1029d142c2b453a8994f2322d842cd7c73fe1aa3",
+      "gujarati_characters": 1328,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0242",
+      "path": "content/computability/computability-theory/complement-ce.tex",
+      "target_sha256": "ed01119d6b927b5b355714758301a5e761b3ce4609a537ab9fa22486bd95406f",
+      "gujarati_characters": 1060,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0243",
+      "path": "content/computability/computability-theory/reducibility.tex",
+      "target_sha256": "495c4d33bf3d58be58a5c097afa2b8b9f5b90985089a77306ab69f06d9f2c508",
+      "gujarati_characters": 1605,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0244",
+      "path": "content/computability/computability-theory/prop-reduce.tex",
+      "target_sha256": "01abf947dc18c37314253983ecc16844755c1fec7b012514d6e2b73a5574700e",
+      "gujarati_characters": 1807,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0245",
+      "path": "content/computability/computability-theory/complete-ce-sets.tex",
+      "target_sha256": "624bf4fa274fedebebb8c39047cf7318f30067ebeb84a197311c18d79d31675a",
+      "gujarati_characters": 1068,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0246",
+      "path": "content/computability/computability-theory/k-1.tex",
+      "target_sha256": "918ccdd85eb5bdba935c6b31f9311cfded78e5ca5e36a22884a63f1ab93d1593",
+      "gujarati_characters": 1019,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0247",
+      "path": "content/computability/computability-theory/total.tex",
+      "target_sha256": "96daa0bc2eabd65b205153943cb8f3df000de5fd8d1c63400457c605dcc5f418",
+      "gujarati_characters": 581,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0248",
+      "path": "content/computability/computability-theory/rice-theorem.tex",
+      "target_sha256": "fa4987bca14ecf8fc3d544af0b53b2a3403a4067b03865e8b59f8d2243f2b83f",
+      "gujarati_characters": 2583,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0249",
+      "path": "content/computability/computability-theory/fixed-point-thm.tex",
+      "target_sha256": "4da41a5627aeee2d20f980ae3b25a4ddd3b17e078141058983180b5d7b717fe7",
+      "gujarati_characters": 3156,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0250",
+      "path": "content/computability/computability-theory/application-fixed-point.tex",
+      "target_sha256": "5c6cf00273f1b508b6b80359be3a5436f0245596ebc02b75ac7352a6756bafd8",
+      "gujarati_characters": 1308,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0251",
+      "path": "content/computability/computability-theory/def-functions-self-reference.tex",
+      "target_sha256": "fdfdd82cc8fb0f3ebf96cb847d428af169da80101d8de08a93f614380bafac09",
+      "gujarati_characters": 842,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    }
+  ],
+  "totals": {
+    "units": 24,
+    "gujarati_characters": 31358,
+    "source_detector_ascii_tokens": 7123,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 12
+  },
+  "allowed_proper_names": [
+    "Java",
+    "NP",
+    "hello",
+    "print",
+    "while",
+    "world"
+  ],
+  "other_nonprose_exceptions": [
+    "cmp part ID",
+    "TMs and lambda conditional tags",
+    "unchanged executable verbatim examples",
+    "quoted programming-language names and string literals"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "tagged_token_mismatches": [],
+  "status": "passed",
+  "full_corpus_complete": false
+}

@@ -1,7 +1,8 @@
 param(
  [int]$TimeoutMs = 1000,
- [ValidateSet('sets','foundations','functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond','model-theory-basics','models-arithmetic','interpolation','lindstrom')][string]$Edition = 'sets',
- [string]$StateDirectory = $env:INTERLANGUAGE_STATE_DIR
+ [ValidateSet('sets','foundations','functions','size','arithmetization','infinite','propositional','proof-systems','sequent-calculus','natural-deduction','tableaux','axiomatic-deduction','completeness','first-order-introduction','first-order-syntax','first-order-semantics','first-order-models-theories','beyond','model-theory-basics','models-arithmetic','interpolation','lindstrom','computability','computability-theory')][string]$Edition = 'sets',
+ [string]$StateDirectory = $env:INTERLANGUAGE_STATE_DIR,
+ [string]$InputFile = ''
 )
 $ErrorActionPreference = 'Stop'
 $GuRepo = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
@@ -12,14 +13,26 @@ $GuState = if ([string]::IsNullOrWhiteSpace($StateDirectory)) {
 }
 [void](New-Item -ItemType Directory -Force -Path $GuState)
 $GuJob = "gu-$Edition"
-$GuReceiptName = switch ($Edition) { 'sets' { 'BUILD_RECEIPT.json' } 'foundations' { 'BUILD_RECEIPT_002.json' } 'functions' { 'BUILD_RECEIPT_003.json' } 'size' { 'BUILD_RECEIPT_004.json' } 'arithmetization' { 'BUILD_RECEIPT_005.json' } 'infinite' { 'BUILD_RECEIPT_006.json' } 'propositional' { 'BUILD_RECEIPT_007.json' } 'proof-systems' { 'BUILD_RECEIPT_008.json' } 'sequent-calculus' { 'BUILD_RECEIPT_009.json' } 'natural-deduction' { 'BUILD_RECEIPT_010.json' } 'tableaux' { 'BUILD_RECEIPT_011.json' } 'axiomatic-deduction' { 'BUILD_RECEIPT_012.json' } 'completeness' { 'BUILD_RECEIPT_013.json' } 'first-order-introduction' { 'BUILD_RECEIPT_014.json' } 'first-order-syntax' { 'BUILD_RECEIPT_015.json' } 'first-order-semantics' { 'BUILD_RECEIPT_016.json' } 'first-order-models-theories' { 'BUILD_RECEIPT_017.json' } 'beyond' { 'BUILD_RECEIPT_018.json' } 'model-theory-basics' { 'BUILD_RECEIPT_019.json' } 'models-arithmetic' { 'BUILD_RECEIPT_020.json' } 'interpolation' { 'BUILD_RECEIPT_021.json' } 'lindstrom' { 'BUILD_RECEIPT_022.json' } }
+$GuInput = if ([string]::IsNullOrWhiteSpace($InputFile)) {
+ "$GuJob.tex"
+} else {
+ $GuCandidate = [System.IO.Path]::GetFullPath((Join-Path $GuRepo $InputFile))
+ if (-not $GuCandidate.StartsWith($GuRepo + [System.IO.Path]::DirectorySeparatorChar, [System.StringComparison]::OrdinalIgnoreCase)) {
+  throw 'TeX input path must stay inside the Gujarati repository.'
+ }
+ if ([System.IO.Path]::GetExtension($GuCandidate) -ne '.tex' -or -not (Test-Path -LiteralPath $GuCandidate)) {
+  throw 'TeX input must be an existing .tex file.'
+ }
+ $GuCandidate
+}
+$GuReceiptName = switch ($Edition) { 'sets' { 'BUILD_RECEIPT.json' } 'foundations' { 'BUILD_RECEIPT_002.json' } 'functions' { 'BUILD_RECEIPT_003.json' } 'size' { 'BUILD_RECEIPT_004.json' } 'arithmetization' { 'BUILD_RECEIPT_005.json' } 'infinite' { 'BUILD_RECEIPT_006.json' } 'propositional' { 'BUILD_RECEIPT_007.json' } 'proof-systems' { 'BUILD_RECEIPT_008.json' } 'sequent-calculus' { 'BUILD_RECEIPT_009.json' } 'natural-deduction' { 'BUILD_RECEIPT_010.json' } 'tableaux' { 'BUILD_RECEIPT_011.json' } 'axiomatic-deduction' { 'BUILD_RECEIPT_012.json' } 'completeness' { 'BUILD_RECEIPT_013.json' } 'first-order-introduction' { 'BUILD_RECEIPT_014.json' } 'first-order-syntax' { 'BUILD_RECEIPT_015.json' } 'first-order-semantics' { 'BUILD_RECEIPT_016.json' } 'first-order-models-theories' { 'BUILD_RECEIPT_017.json' } 'beyond' { 'BUILD_RECEIPT_018.json' } 'model-theory-basics' { 'BUILD_RECEIPT_019.json' } 'models-arithmetic' { 'BUILD_RECEIPT_020.json' } 'interpolation' { 'BUILD_RECEIPT_021.json' } 'lindstrom' { 'BUILD_RECEIPT_022.json' } 'computability' { 'BUILD_RECEIPT_023.json' } 'computability-theory' { 'BUILD_RECEIPT_024.json' } }
 $GuLogPrefix = if ($Edition -eq 'sets') { 'pass' } else { "$Edition-pass" }
 $GuMutex = [System.Threading.Mutex]::new($false, 'Global\InterlanguageTeXSlotV1')
 $GuAcquired = $false
 $GuAbandoned = $false
 $GuReceipt = [ordered]@{
  schema='openlogic-gu-guarded-tex/1'; started_utc=[DateTime]::UtcNow.ToString('o')
- mutex='Global\InterlanguageTeXSlotV1'; timeout_ms=$TimeoutMs; acquired=$false
+ mutex='Global\InterlanguageTeXSlotV1'; timeout_ms=$TimeoutMs; input_file=$GuInput; acquired=$false
  abandoned_recovery=$false; passes=@(); status='starting'
 }
 try {
@@ -39,7 +52,7 @@ try {
    $GuStart=[DateTime]::UtcNow
    $GuInfo=[System.Diagnostics.ProcessStartInfo]::new()
    $GuInfo.FileName='lualatex.exe'
-   $GuInfo.Arguments="--disable-installer --no-shell-escape --synctex=1 --interaction=nonstopmode --halt-on-error --output-directory=build $GuJob.tex"
+   $GuInfo.Arguments="--disable-installer --no-shell-escape --synctex=1 --interaction=nonstopmode --halt-on-error --jobname=$GuJob --output-directory=build `"$GuInput`""
    $GuInfo.WorkingDirectory=$GuRepo
    $GuInfo.UseShellExecute=$false
    $GuInfo.CreateNoWindow=$true

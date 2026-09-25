@@ -1,0 +1,215 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/023",
+  "checked_at_utc": "2026-09-25T03:12:23.481507+00:00",
+  "scope": "OLP-0208–0227 Gujarati Computability and Recursive Functions draft",
+  "method": "Scanned prose after stripping TeX comments, mathematical displays and inline math, structural IDs, references, paths, citations and control words; inspected correction prose separately. Exact source attribution names, the programming-language name Java, formal symbols, and an explicitly quoted frozen-source error are recorded as non-prose exceptions.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0208",
+      "path": "content/computability/computability.tex",
+      "target_sha256": "0ae8c5693979c343a1ddea62b9d32962cbd6bff2eeddf287ab220b4b652abe73",
+      "gujarati_characters": 160,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0209",
+      "path": "content/computability/recursive-functions/recursive-functions.tex",
+      "target_sha256": "a994f76db812c6196fc73a9e35b49fff0fc96ea72f7457e5816e8b714c01c64c",
+      "gujarati_characters": 169,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0210",
+      "path": "content/computability/recursive-functions/introduction.tex",
+      "target_sha256": "c30e681e691c687b21c20fb280a031749cb6f5cfd4b89acccac4db0cc4dc7758",
+      "gujarati_characters": 1771,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0211",
+      "path": "content/computability/recursive-functions/primitive-recursion.tex",
+      "target_sha256": "4747870d40c5f46eea308bd9f4d5f85b9977732f3f9370b895ef328cfb7d358c",
+      "gujarati_characters": 2489,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0212",
+      "path": "content/computability/recursive-functions/composition.tex",
+      "target_sha256": "2afb6f6105efe40844369c7e7aa540f934941a88bd84b876fd20b2d0e1d2bd38",
+      "gujarati_characters": 1663,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0213",
+      "path": "content/computability/recursive-functions/pr-functions.tex",
+      "target_sha256": "c4bd201c5dfd11bddc6246781d00ff1f946e70e389375a2aa667f3b72151b2bb",
+      "gujarati_characters": 2500,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0214",
+      "path": "content/computability/recursive-functions/notation-pr-functions.tex",
+      "target_sha256": "726aa98b9c1c9281bfc3b7444d7f54ac58e99fa55a0e877abde1c2f43548e31e",
+      "gujarati_characters": 969,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0215",
+      "path": "content/computability/recursive-functions/pr-functions-computable.tex",
+      "target_sha256": "20eeb1263f2365941c1ed466fd9417dc23e5756ddd8b10b42fe3e55ad9cb1f00",
+      "gujarati_characters": 543,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0216",
+      "path": "content/computability/recursive-functions/examples.tex",
+      "target_sha256": "d01b294f8b6e3561b09e1d9ccf0366e92e719f07b971f561b7f4524402f502b4",
+      "gujarati_characters": 1967,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0217",
+      "path": "content/computability/recursive-functions/pr-relations.tex",
+      "target_sha256": "16d27a6d8db5902929e7ffeb3be997f8188036276f234df389ff7ca752e0912f",
+      "gujarati_characters": 1913,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0218",
+      "path": "content/computability/recursive-functions/bounded-minimization.tex",
+      "target_sha256": "d316747abc39f69e1b15daa19a11c7bf1ededf03086ab802281c77e8401a31c8",
+      "gujarati_characters": 1161,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0219",
+      "path": "content/computability/recursive-functions/primes.tex",
+      "target_sha256": "88a732aee36e78b3fec0ee4eeb8150fba7bea1ab4ba398f5cf6bfc5c7eec5619",
+      "gujarati_characters": 2004,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0220",
+      "path": "content/computability/recursive-functions/sequences.tex",
+      "target_sha256": "162f110023a1c829d752d41263efab9ca51bd560d50cc23462c183db53245d63",
+      "gujarati_characters": 2535,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0221",
+      "path": "content/computability/recursive-functions/trees.tex",
+      "target_sha256": "942be8b8d2cb73806bc4c2aa724338fea51a37b8d2444fe0f9fe4cfa79af5894",
+      "gujarati_characters": 2020,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0222",
+      "path": "content/computability/recursive-functions/other-recursions.tex",
+      "target_sha256": "e7d53ee3c06562d39a6b5d25ef18060c01854b40bf85b87d51066377980eab04",
+      "gujarati_characters": 1072,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0223",
+      "path": "content/computability/recursive-functions/non-pr-functions.tex",
+      "target_sha256": "755b7a1c1d1092fa03b50f1609b07e11c6263660dec8a2ddaebe6990c6b75128",
+      "gujarati_characters": 2274,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0224",
+      "path": "content/computability/recursive-functions/partial-functions.tex",
+      "target_sha256": "eaea837a28244d57675a72150ef632d8d80456fae6ec54fb2753e0b84d448531",
+      "gujarati_characters": 2820,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0225",
+      "path": "content/computability/recursive-functions/normal-form.tex",
+      "target_sha256": "a8cea91621295d5e83a5fdf773c58939644464f659a274e62b98e98d5eeef2ef",
+      "gujarati_characters": 1204,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0226",
+      "path": "content/computability/recursive-functions/halting-problem.tex",
+      "target_sha256": "bfbd9f6cd534ef80ef132a9485b1d690c38bcc84a7f134f7aa99b6455648a92b",
+      "gujarati_characters": 1424,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0227",
+      "path": "content/computability/recursive-functions/general-recursive-functions.tex",
+      "target_sha256": "5038174067a2620203fc60f94cef96e443a582412da23a3f76b733f3911f441b",
+      "gujarati_characters": 896,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    }
+  ],
+  "totals": {
+    "units": 20,
+    "gujarati_characters": 31554,
+    "source_detector_ascii_tokens": 6470,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 10
+  },
+  "allowed_proper_names": [
+    "Avigad",
+    "Java",
+    "Jeremy",
+    "Richard",
+    "Zach"
+  ],
+  "other_nonprose_exceptions": [
+    "cmp part ID",
+    "TMs conditional tag",
+    "Comp and Rec symbols inside an eqnarray display",
+    "the quoted frozen-source phrase less-than relation in OLCMP-003"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "tagged_token_mismatches": [],
+  "status": "passed",
+  "full_corpus_complete": false
+}

@@ -1,0 +1,68 @@
+% Part: computability
+% Chapter: computability-theory
+% Section: non-comp-set
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{thy}{ncp}
+\olsection{અસંગણનીય ગણો અસ્તિત્વમાં છે}
+
+
+ઉપર જોયું કે દરેક સંગણનીય ગણ સંગણકીય રીતે પરિગણનીય છે. શું
+વિરુદ્ધ દાવો પણ સાચો છે? આગળનું પ્રમેય બતાવે છે કે સામાન્ય રીતે
+તે સાચો નથી.
+
+\begin{thm}\ollabel{thm:K-0}
+$K_0$ એ ગણ $\Setabs{\tuple{e, x}}{\cfind{e}(x) \fdefined}$ હોય.
+તો $K_0$ સંગણકીય રીતે પરિગણનીય છે, પરંતુ સંગણનીય નથી.
+\end{thm}
+
+\begin{proof}
+$K_0$ સંગણકીય રીતે પરિગણનીય છે તે જોવા, નોંધો કે તે નીચેના
+વિધેય~$f$નો પ્રદેશ છે:
+\[
+f(z) = \umin{y}{(\len{z} = 2 \land T((z)_0, (z)_1, y))}.
+\]
+કારણ કે $\cfind{e}(x)$ વ્યાખ્યાયિત હોય તો
+$f(\tuple{e, x})$ થંભતી સંગણનાનો અનુક્રમ શોધે છે; જો
+$\cfind{e}(x)$ અનિર્ધારિત હોય, તો $f(\tuple{e, x})$ પણ
+અનિર્ધારિત છે; અને $z$ જોડીનો કોડ પણ ન હોય, તો $f(z)$ પણ
+અનિર્ધારિત છે.
+
+$K_0$ સંગણનીય નથી એ હકીકત અટકવાની સમસ્યાની અનિર્ણેયતા,
+\olref[hlt]{thm:halting-problem}, જ છે.
+\end{proof}
+
+ગણ $K_0$ એ એવી જોડીઓ $\tuple{e,x}$નો ગણ છે કે
+$\cfind{e}(x) \fdefined$; એટલે $\tuple{e,x} \in K_0$ ત્યારે
+અને માત્ર ત્યારે જ્યારે $\cfind{e}$ ઇનપુટ~$x$ પર વ્યાખ્યાયિત
+હોય, અર્થાત્ અટકે. તેથી તેને ``અટકવાનો ગણ'' પણ કહે છે.
+ગણ $K = \Setabs{e}{\cfind{e}(e) \fdefined}$ એ
+``સ્વ-અટકવાનો ગણ'' છે. તેને ઘણી વાર પ્રમાણભૂત અનિર્ણેય ગણ
+તરીકે વાપરાય છે.
+
+\begin{thm}\ollabel{thm:K}
+સ્વ-અટકવાનો ગણ $K = \Setabs{e}{\cfind{e}(e) \fdefined}$
+!!{c.e.} છે, પરંતુ નિર્ણેય નથી.
+\end{thm}
+
+\begin{proof}
+  માનો કે $K$ નિર્ણેય છે, એટલે તેનું લક્ષણ વિધેય
+  $\Char{K}$ સંગણનીય છે. માનો કે
+  \[d(e) = \begin{cases}
+  1 & \text{જો\/ $\Char{K}(e) = 0$}\\
+  \fundefined & \text{અન્યથા.}
+  \end{cases}
+  \]
+  $k$, $d$નો સૂચક હોય, એટલે $d \simeq \cfind{k}$.
+  તો $d(k) \simeq \cfind{k}(k)$. પરંતુ $d$ની વ્યાખ્યા મુજબ
+  $d(k) \fdefined$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\cfind{k}(k) \fundefined$; આ વિરોધાભાસ છે.
+
+  $K$, $f(x) = \umin{y}{T(x,x,y)}$નો પ્રદેશ છે અને તેથી
+  !!{c.e.} છે.
+\end{proof}
+
+\end{document}

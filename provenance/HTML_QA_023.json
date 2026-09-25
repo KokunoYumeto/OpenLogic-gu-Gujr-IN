@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-gu-html-qa/23",
+  "checked_at_utc": "2026-09-25T03:39:32.714572+00:00",
+  "path": "reader/computability.html",
+  "bytes": 5803326,
+  "sha256": "9066c1530b8656ff54ab85ed2836e6ba00b63645f02752baa8e6910dbb1feaf9",
+  "source_units_covered": 224,
+  "new_units": "OLP-0208–0227",
+  "rendered_section_entries": 197,
+  "new_part_chapter_section_heading_levels": [
+    "h2",
+    "h3",
+    "h4"
+  ],
+  "mathml_nodes": 13200,
+  "images_with_gujarati_alt": 15,
+  "unique_content_ids": 822,
+  "broken_internal_links": 0,
+  "ten_new_correction_disclosures": [
+    "OLCMP-001",
+    "OLCMP-002",
+    "OLCMP-003",
+    "OLCMP-004",
+    "OLCMP-005",
+    "OLCMP-006",
+    "OLCMP-007",
+    "OLCMP-008",
+    "OLCMP-009",
+    "OLCMP-010"
+  ],
+  "reader_only_formula_presentation": "The iterated-exponent exercise retains its y-copies-of-2 meaning. HTML/EPUB replace the source's unsupported inverse-diagonal-dots/right-brace TeX with a MathML-renderable diagonal-dots/underbrace schematic; the editable Gujarati TeX and PDF source expression remain unchanged.",
+  "exact_ai_attribution": true,
+  "runtime_receipt_sha256": "ed7838169dab3a5250546ff4e2de2f26c9489095e2b8da24ddfb7f535e53800f",
+  "runtime_visual_inspection": "passed_runtime_and_representative_visual_inspection",
+  "status": "passed_dom_mathml_links_assets_attribution_and_representative_runtime_visual_qa"
+}

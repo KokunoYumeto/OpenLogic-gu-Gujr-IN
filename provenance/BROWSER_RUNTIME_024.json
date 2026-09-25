@@ -1,0 +1,346 @@
+{
+  "schema": "openlogic-gu-browser-runtime/24",
+  "checked_at_utc": "2026-09-25T04:32:10.793230+00:00",
+  "html_sha256": "b50d092bfde23db11c32b760afe9461370d9c7032e5980a6b627056aa5a4044e",
+  "browser": "Chrome headless",
+  "viewport_css_pixels": [
+    1280,
+    800
+  ],
+  "metrics": {
+    "ready": "complete",
+    "fonts": "loaded",
+    "mathml": 14210,
+    "images": [
+      {
+        "loaded": true,
+        "alt": "બંને ગણોના બધા ઘટકો દર્શાવતો યોગગણ",
+        "src": "assets/union.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "બંને ગણોમાં સામાન્ય ઘટકો દર્શાવતો છેદગણ",
+        "src": "assets/intersection.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "પહેલા ગણમાં હોય અને બીજા ગણમાં ન હોય તેવા ઘટકો",
+        "src": "assets/difference.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "દિશાયુક્ત આલેખ: 1થી 1, 2 અને 3 તરફ ધારો; 2થી 3 તરફ ધાર. 4 છૂટું શિરોબિંદુ છે.",
+        "src": "assets/graph-four.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "દિશાયુક્ત આલેખ: 1થી 1, 2 અને 3 તરફ ધારો; 2થી 3 તરફ ધાર.",
+        "src": "assets/graph-three.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "મૂળ rથી સંતાન a અને b; aનાં સંતાન c, d અને e. મૂળ નીચે અને સંતાનો ઉપર છે.",
+        "src": "assets/tree.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "ડાબા ગણના દરેક ઘટકથી જમણા ગણમાં એક જ તીર; બે આગતોની કિંમત એક જ હોઈ શકે છે.",
+        "src": "assets/function.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "સહપ્રદેશના દરેક ઘટક સુધી ઓછામાં ઓછું એક તીર પહોંચે છે.",
+        "src": "assets/surjective.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "જુદા આગતોનાં તીરો જુદી કિંમતો સુધી પહોંચે છે.",
+        "src": "assets/injective.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "પ્રદેશ અને સહપ્રદેશના ઘટકો વચ્ચે પરસ્પર એક-એક સંગતતા.",
+        "src": "assets/bijective.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "ત્રણ ગણો: પહેલાં f વડે ડાબેથી મધ્યમાં, પછી g વડે મધ્યથી જમણે. તૂટક તીરો સીધું પહેલાં f અને પછી gનું સંયોજન દર્શાવે છે.",
+        "src": "assets/composition.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "બાજુ mવાળો મોટો ચોરસ; તેની અંદર બાજુ nવાળા બે સરખા, એકબીજા પર ચઢતા ચોરસ. નારંગી છેદનું ક્ષેત્રફળ બંને ઢાંકાયા વિનાના ખૂણાના ચોરસોના કુલ ક્ષેત્રફળ જેટલું છે.",
+        "src": "assets/sqrt-two-parity.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "ઉપરની હારમાં જૂના મહેમાનો 1થી 9 અને આગળ; દરેક તીર મહેમાન nને નીચેની હારમાં ઓરડા n+1માં ખસેડે છે. નીચેનો ઓરડો 1 વર્તુળથી ખાલી દર્શાવ્યો છે.",
+        "src": "assets/hilbert-hotel-shift.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "આયતાકાર નિદર્શ-વિસ્તારમાં ડાબે Γનો વર્ગ Cના ભાગમાં અને જમણે Δનો વર્ગ ¬Cના ભાગમાં છે; વક્ર સીમા C અને ¬Cને જુદા પાડે છે.",
+        "src": "assets/interpolation-separation.svg"
+      },
+      {
+        "loaded": true,
+        "alt": "મોટા આયતથી દર્શાવેલી વ્યાપક સંરચના Aમાં ડાબે M-તારક અને જમણે N-તારકના વર્તુળો છે; એમની અંદર અનુક્રમે M અને N છે, અને બંને તરફ વચ્ચેનો દ્વિમુખી તીર આંશિક એકરૂપતા I દર્શાવે છે.",
+        "src": "assets/lindstrom-partial-isomorphism.svg"
+      }
+    ],
+    "horizontalOverflow": false,
+    "headings": [
+      {
+        "tag": "H2",
+        "id": "સગણનયત",
+        "text": "2 સંગણનીયતા"
+      },
+      {
+        "tag": "H3",
+        "id": "પનરવરત-વધય",
+        "text": "2.1 પુનરાવર્તી વિધેયો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:int:sec",
+        "text": "2.1.1 પરિચય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:pre:sec",
+        "text": "2.1.2 આદિમ પુનરાવર્તન"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:com:sec",
+        "text": "2.1.3 સંયોજન"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:prf:sec",
+        "text": "2.1.4 આદિમ પુનરાવર્તી વિધેયો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:not:sec",
+        "text": "2.1.5 આદિમ પુનરાવર્તી વિધેયોનાં\nસંકેતન"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:cmp:sec",
+        "text": "2.1.6 આદિમ પુનરાવર્તી વિધેયો સંગણનીય\nછે"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:exa:sec",
+        "text": "2.1.7 આદિમ પુનરાવર્તી વિધેયોનાં\nઉદાહરણો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:prr:sec",
+        "text": "2.1.8 આદિમ પુનરાવર્તી સંબંધો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:bmi:sec",
+        "text": "2.1.9 સીમાબદ્ધ લઘુત્તમીકરણ"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:pri:sec",
+        "text": "2.1.10 અવિભાજ્ય સંખ્યાઓ"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:seq:sec",
+        "text": "2.1.11 અનુક્રમો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:tre:sec",
+        "text": "2.1.12 વૃક્ષો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:ore:sec",
+        "text": "2.1.13 પુનરાવર્તનનાં અન્ય સ્વરૂપો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:npr:sec",
+        "text": "2.1.14 આદિમ પુનરાવર્તી ન હોય તેવાં\nવિધેયો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:par:sec",
+        "text": "2.1.15 આંશિક પુનરાવર્તી વિધેયો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:nft:sec",
+        "text": "2.1.16 સામાન્ય સ્વરૂપ પ્રમેય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:hlt:sec",
+        "text": "2.1.17 અટકવાની સમસ્યા"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:rec:gen:sec",
+        "text": "2.1.18 સામાન્ય પુનરાવર્તી વિધેયો"
+      },
+      {
+        "tag": "H3",
+        "id": "સગણનયત-સદધત",
+        "text": "2.2 સંગણનીયતા સિદ્ધાંત"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:int:sec",
+        "text": "2.2.1 પરિચય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:cod:sec",
+        "text": "2.2.2 સંગણનોનું સંકેતીકરણ"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:nfm:sec",
+        "text": "2.2.3 સામાન્ય સ્વરૂપ પ્રમેય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:smn:sec",
+        "text": "2.2.4\nss-mm-nn\nપ્રમેય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:uni:sec",
+        "text": "2.2.5 સર્વવ્યાપી આંશિક સંગણનીય\nવિધેય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:nou:sec",
+        "text": "2.2.6 કોઈ સર્વવ્યાપી સંપૂર્ણ સંગણનીય વિધેય\nનથી"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:hlt:sec",
+        "text": "2.2.7 અટકવાની સમસ્યા"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:rus:sec",
+        "text": "2.2.8 રસેલના વિરોધાભાસ સાથે\nસરખામણી"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:cps:sec",
+        "text": "2.2.9 સંગણનીય ગણો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:ces:sec",
+        "text": "2.2.10 સંગણકીય રીતે પરિગણનીય ગણો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:eqc:sec",
+        "text": "2.2.11 સંગણકીય રીતે પરિગણનીય ગણોની\nસમકક્ષ વ્યાખ્યાઓ"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:ncp:sec",
+        "text": "2.2.12 અસંગણનીય ગણો અસ્તિત્વમાં છે"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:clo:sec",
+        "text": "2.2.13 સંગણકીય રીતે પરિગણનીય ગણો\nયોગગણ અને છેદગણ હેઠળ બંધ છે"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:cmp:sec",
+        "text": "2.2.14 સંગણકીય રીતે પરિગણનીય ગણો પૂરક\nહેઠળ બંધ નથી"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:red:sec",
+        "text": "2.2.15 ન્યૂનીકરણક્ષમતા"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:ppr:sec",
+        "text": "2.2.16 ન્યૂનીકરણક્ષમતાના ગુણધર્મો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:cce:sec",
+        "text": "2.2.17 પૂર્ણ સંગણકીય રીતે પરિગણનીય\nગણો"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:k1:sec",
+        "text": "2.2.18 ન્યૂનીકરણક્ષમતાનું એક ઉદાહરણ"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:tot:sec",
+        "text": "2.2.19 સંપૂર્ણતા અનિર્ણેય છે"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:rce:sec",
+        "text": "2.2.20 રાઇસનું પ્રમેય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:fix:sec",
+        "text": "2.2.21 નિશ્ચિત-બિંદુનું પ્રમેય"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:apf:sec",
+        "text": "2.2.22 નિશ્ચિત-બિંદુના પ્રમેયનો\nઉપયોગ"
+      },
+      {
+        "tag": "H4",
+        "id": "cmp:thy:slf:sec",
+        "text": "2.2.23 સ્વ-સંદર્ભ વડે વિધેયોની\nવ્યાખ્યા"
+      }
+    ],
+    "corrections": 19
+  },
+  "console_warnings_or_errors": [],
+  "page_errors": [],
+  "screenshots": {
+    "title": {
+      "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML024_title.png",
+      "sha256": "947f08c5a78fd3c45a7723ca88cd519d4cddc273bf4450913eb9febf7d52df1b"
+    },
+    "theory_chapter": {
+      "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML024_theory_chapter.png",
+      "sha256": "04cdf00776c46e413c486586fb717beb84c3f7eff91d07f8a2d2c19adaacbbad"
+    },
+    "normal_form": {
+      "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML024_normal_form.png",
+      "sha256": "3dde68e3f47697d5fabbf8295b58c515d00ba4c529bb4226bae294887a564e93"
+    },
+    "ce_sets": {
+      "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML024_ce_sets.png",
+      "sha256": "3dc0e89a85da715894cc69dd88e4bee6fa5e6e2b9adbc9b5bd0a1e20a3d33bfd"
+    },
+    "rice": {
+      "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML024_rice.png",
+      "sha256": "3a3e85153e9b4c10db8cda5012518e9e6ba0cb9361dd02a0501ef446eb984b2b"
+    },
+    "fixed_point": {
+      "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML024_fixed_point.png",
+      "sha256": "6824833f4e1875a781bc74be3df801a49a9ae325892ea45858c1f4f863f21d98"
+    }
+  },
+  "visual_inspection": "Directly inspected all six screenshots: Gujarati shaping, heading hierarchy, mathematical notation and representative proofs are legible; no overlap or clipping observed.",
+  "status": "passed_runtime_and_representative_visual_inspection"
+}

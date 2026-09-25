@@ -1,0 +1,198 @@
+% Part: computability
+% Chapter: recursive-functions
+% Section: examples
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cmp}{rec}{exa}
+\olsection{આદિમ પુનરાવર્તી વિધેયોનાં ઉદાહરણો}
+
+
+આદિમ પુનરાવર્તી વિધેયોનાં કેટલાંક ઉદાહરણો આપણી પાસે છે: સરવાળા
+અને ગુણાકારનાં વિધેયો~$\Add$ અને $\Mult$. તદેવ વિધેય
+$\fn{id}(x) = x$ આદિમ પુનરાવર્તી છે, કારણ કે તે માત્ર
+$\Proj{1}{0}$ છે. અચળ વિધેયો $\fn{const}_n(x) = n$ પણ આદિમ
+પુનરાવર્તી છે, કારણ કે $\Zero$ અને $\Succ$ના ક્રમિક સંયોજનથી
+તેમને વ્યાખ્યાયિત કરી શકાય છે. આદિમ પુનરાવર્તી વ્યાખ્યાઓમાં અચળ
+મૂલ્યો વાપરવા હોય ત્યારે આ ઉપયોગી છે. દાખલા તરીકે,
+$f(x) = 2 \cdot x$ વ્યાખ્યાયિત કરવું હોય તો $\fn{const}_n(x)$ અને
+ગુણાકારના સંયોજનથી $f(x) =
+\Mult(\fn{const}_2(x), \Proj{1}{0}(x))$ મળે છે. હવે પછી આ રીત
+વાપરતા રહીશું.
+
+\begin{prop}
+  ઘાતાંકનું વિધેય $\fn{exp}(x, y) = x^y$ આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  $\fn{exp}$ને આદિમ પુનરાવર્તનથી આમ વ્યાખ્યાયિત કરી શકીએ:
+  \begin{align*}
+    \fn{exp}(x, 0) & = 1\\
+    \fn{exp}(x, y+1) & = \Mult(x, \fn{exp}(x,y)).
+    \intertext{ચોક્કસ કહીએ તો, આ આદિમ પુનરાવર્તી વિધેયોમાંથી
+      બનેલી પુનરાવર્તી વ્યાખ્યા હજી નથી. ઔપચારિક રીતે, જોકે,
+      આપણે આ રીતે લખીએ:}
+    \fn{exp}(x, 0) & = f(x)\\
+    \fn{exp}(x, y+1) & = g(x, y, \fn{exp}(x,y)).
+    \intertext{અહીં}
+    f(x) & = \Succ(\Zero(x)) = 1\\
+    g(x, y, z) & = \Mult(\Proj{3}{0}(x, y, z), \Proj{3}{2}(x, y, z)) = x \cdot z
+  \end{align*}
+  તેથી $f$ અને $g$ આદિમ પુનરાવર્તી વિધેયોના સંયોજનથી વ્યાખ્યાયિત
+  થાય છે.
+\end{proof}
+
+\begin{prop}
+  નીચે મુજબ વ્યાખ્યાયિત પૂર્વગામી વિધેય $\fn{pred}(y)$ આદિમ
+  પુનરાવર્તી છે:
+  \[
+  \fn{pred}(y) = \begin{cases}
+    0 & \text{જો $y=0$ હોય}\\
+    y-1 & \text{અન્યથા}
+  \end{cases}
+  \]
+\end{prop}
+
+\begin{proof}
+ નોંધો કે
+ \begin{align*}
+   \fn{pred}(0) & = 0 \text{ અને}\\
+   \fn{pred}(y+1) & = y.
+ \end{align*}
+ આ લગભગ આદિમ પુનરાવર્તી વ્યાખ્યા છે. ચોક્કસ રીતે જોઈએ તો તે આદિમ
+ પુનરાવર્તનની વ્યાખ્યાના માળખામાં બંધબેસતું નથી, કારણ કે એમાં ઓછામાં
+ ઓછું એક વધારાનું આર્ગ્યુમેન્ટ~$x$ જરૂરી છે. વળી,
+ $\fn{pred}(y+1)$ વ્યાખ્યાયિત કરતાં ખરેખર $\fn{pred}(y)$ વપરાતું જ
+ નથી. પરંતુ પહેલાં $\fn{pred}'(x, y)$ને આમ વ્યાખ્યાયિત કરી શકીએ:
+ \begin{align*}
+   \fn{pred}'(x, 0) & = \Zero(x) = 0,\\
+   \fn{pred}'(x, y+1) & = \Proj{3}{1}(x, y, \fn{pred'}(x, y)) = y.
+ \end{align*}
+અને પછી સંયોજનથી $\fn{pred}$ વ્યાખ્યાયિત કરી શકીએ; દાખલા તરીકે,
+$\fn{pred}(x) = \fn{pred}'(\Zero(x), \Proj{1}{0}(x))$.
+\end{proof}
+
+\begin{prop}
+  ક્રમગુણિતનું વિધેય $\fn{fac}(x) = \fact{x} = 1 \cdot 2 \cdot 3
+  \cdot \dots \cdot x$ આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  સ્પષ્ટ દેખાતી આદિમ પુનરાવર્તી વ્યાખ્યા આ છે:
+  \begin{align*}
+    \fn{fac}(0) &= 1\\
+    \fn{fac}(y+1) & = \fn{fac}(y) \cdot (y+1).
+    \intertext{ઔપચારિક રીતે પહેલાં બે આર્ગ્યુમેન્ટવાળું વિધેય $h$
+      વ્યાખ્યાયિત કરવું પડે:}
+    h(x, 0) & = \fn{const}_1(x)\\
+    h(x, y+1) & = g(x, y, h(x, y))
+    \intertext{અહીં $g(x, y, z) = \Mult(\Proj{3}{2}(x, y, z),
+      \Succ(\Proj{3}{1}(x, y, z)))$ છે; પછી રાખીએ:}
+    \fn{fac}(y) & = h(\Proj{1}{0}(y), \Proj{1}{0}(y)) = h(y,y).
+  \end{align*}
+  હવે પછી આપણે આ બાબતમાં થોડા ઉદાર રહીશું અને સંયોજન તથા આદિમ
+  પુનરાવર્તન વડે મળતી ઔપચારિક વ્યાખ્યાઓ દરેક વખતે આપીશું નહીં.
+\end{proof}
+
+\begin{prop}
+  શૂન્યે અટકતી બાદબાકી $x \tsub y$, જે આ રીતે વ્યાખ્યાયિત છે,
+  આદિમ પુનરાવર્તી છે:
+  \[
+  x \tsub y = \begin{cases}
+    0 & \text{જો $x < y$ હોય}\\
+    x-y & \text{અન્યથા}
+  \end{cases}
+  \]
+\end{prop}
+
+\begin{proof}
+  આપણી પાસે આ સમીકરણો છે:
+  \begin{align*}
+    x \tsub 0 & = x\\
+    x \tsub (y+1) & = \fn{pred}(x \tsub y)
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+ $x$ અને $y$ વચ્ચેનું અંતર $\left|x-y\right|$ આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  $\left| x-y \right| = (x \tsub y) + (y \tsub x)$ છે. તેથી અંતરને
+  સરવાળા~$+$ અને શૂન્યે અટકતી બાદબાકી~$\tsub$ના સંયોજનથી
+  વ્યાખ્યાયિત કરી શકાય છે; બંને આદિમ પુનરાવર્તી છે.
+\end{proof}
+
+\begin{prop}
+  $x$ અને $y$માંથી મોટામાં મોટું મૂલ્ય $\fn{max}(x,y)$ આદિમ
+  પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  $+$ અને $\tsub$ના સંયોજનથી $\fn{max}(x,y)$ને આમ વ્યાખ્યાયિત
+  કરી શકાય:
+  \[
+  \fn{max}(x,y) \defis x + (y \tsub x).
+  \]
+  જો $x$ મોટામાં મોટું હોય, એટલે $x \ge y$, તો $y \tsub x = 0$;
+  તેથી $x + (y \tsub x) = x + 0 = x$. જો $y$ મોટામાં મોટું હોય,
+  તો $y \tsub x = y - x$; તેથી $x + (y \tsub x) = x + (y - x) = y$.
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:min-pr}
+  $x$ અને $y$માંથી નાનામાં નાનું મૂલ્ય $\fn{min}(x,y)$ આદિમ
+  પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસ માટે.
+\end{proof}
+
+\begin{prob}
+  \olref[cmp][rec][exa]{prop:min-pr} સાબિત કરો.
+\end{prob}
+
+\begin{prob}
+નીચેનું વિધેય આદિમ પુનરાવર્તી છે એવું બતાવો: \[
+f(x, y) =
+2^{(2^{\iddots^{2^{x}}})}\raisebox{1ex}{\bigg\rbrace}
+\raisebox{1ex}{\text {$y$ વખત $2$}}\]
+\end{prob}
+
+\begin{prob}
+પૂર્ણાંક ભાગાકાર $d(x, y) = \lfloor x/y \rfloor$ (એટલે કે ભાગફળના
+દશાંશ બિંદુ પછીનો ભાગ અવગણીને મળતો ભાગાકાર) આદિમ પુનરાવર્તી છે
+એવું બતાવો. $y = 0$ હોય ત્યારે આપણે $d(x, y) = 0$ નક્કી કરીએ છીએ.
+આદિમ પુનરાવર્તન અને સંયોજન વાપરીને~$d$ની સ્પષ્ટ વ્યાખ્યા આપો.
+\end{prob}
+
+\begin{prop}
+આદિમ પુનરાવર્તી વિધેયોનો ગણ નીચેની બે ક્રિયાઓ હેઠળ બંધ છે:
+\begin{enumerate}
+\item સાન્ત સરવાળા: જો $f(\vec x, z)$ આદિમ પુનરાવર્તી હોય, તો
+આ વિધેય પણ આદિમ પુનરાવર્તી છે:
+\[
+g(\vec x, y) \defis \sum_{z = 0}^y f(\vec x, z).
+\]
+\item સાન્ત ગુણાકાર: જો $f(\vec x, z)$ આદિમ પુનરાવર્તી હોય, તો
+આ વિધેય પણ આદિમ પુનરાવર્તી છે:
+\[
+h(\vec x, y) \defis \prod_{z = 0}^y f(\vec x, z).
+\]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+દાખલા તરીકે, સાન્ત સરવાળાઓને નીચેના સમીકરણોથી પુનરાવર્તી રીતે
+વ્યાખ્યાયિત કરીએ છીએ:
+\begin{align*}
+  g(\vec x, 0) & = f(\vec x, 0)\\
+  g(\vec x, y+1) & = g(\vec x, y) + f(\vec x, y+1).
+\end{align*}
+\end{proof}
+
+
+\end{document}
