@@ -16,18 +16,23 @@
   },
   {
     "file": "docs/BUILD_CUMULATIVE.md",
-    "bytes": 4263,
-    "sha256": "e4834ba76442899f100f952b6993959c495eb8ec0eea3845f89079c8e3d748d4"
+    "bytes": 7768,
+    "sha256": "f89386d261ca7ba3289e8909cee92d5069995c138f4d2929579d0cca6ab9412f"
+  },
+  {
+    "file": "docs/COMPUTABILITY_REVIEW.md",
+    "bytes": 5715,
+    "sha256": "3a716c5b2d42b02588bb0005a194987db42deaaff6eb2317ddf6484b9870cf9d"
   },
   {
     "file": "docs/EDITION_NOTES.md",
-    "bytes": 22397,
-    "sha256": "f53fc8467f8b5cfd0583da1dbd09d5bf27005eab7de88d43b016e4b194506177"
+    "bytes": 21842,
+    "sha256": "07dac7cf3ecd2fa86d36851ba5179b69aea9cabde5b6aa84eb79b23df6279621"
   },
   {
     "file": "docs/GUJARATI_EDITION_SCOPE.md",
-    "bytes": 2380,
-    "sha256": "70484e2c5ee23ffa9dba0b3d1361bee402da94917f63d9ba0539ea8eb5d20bf6"
+    "bytes": 5444,
+    "sha256": "d08e374ba04e5e472dd43d7221402a7e30e96ef1f2b4728b39c03204ea8aa490"
   },
   {
     "file": "docs/LICENSE_NOTES.md",
@@ -35,9 +40,24 @@
     "sha256": "9910b36cd15bc087714eb2717cbe2771d183e7cd17a288dbd1d340e4082fea4d"
   },
   {
+    "file": "docs/REVIEW_023.gu.md",
+    "bytes": 10168,
+    "sha256": "6821b905e98390d0ba385f563d3333b898d93b50ba231899c405990fbfae6e41"
+  },
+  {
+    "file": "docs/REVIEW_024.gu.md",
+    "bytes": 8627,
+    "sha256": "5d56a112e180ccb92f678351850348a41db1eff2fe4202bb59123105e72b3820"
+  },
+  {
     "file": "docs/TERMINOLOGY_REVIEW_LOG.md",
-    "bytes": 683901,
-    "sha256": "1dae67d90c600a189ef228544ff6acea2402fdcb9a2a1d2f5ccac4ee6cb491ce"
+    "bytes": 683936,
+    "sha256": "036659cf71a7b577cd11594ae3ac3781bd5bed359a068a10204072ed16328751"
+  },
+  {
+    "file": "docs/translation-decisions/COMPUTABILITY_OCCURRENCES.csv",
+    "bytes": 68690,
+    "sha256": "176f2b686884d970cfff0d6ac8b7a898b72c2cb84528c97614a1bfa9dd25cd86"
   },
   {
     "file": "docs/translation-decisions/DECISION_OCCURRENCES.csv",
@@ -56,8 +76,8 @@
   },
   {
     "file": "docs/translation-decisions/START_HERE.md",
-    "bytes": 831,
-    "sha256": "be7b66c37b9541720b1ed66acb31f5552294b12be66235c97d9b4a53236976f6"
+    "bytes": 4938,
+    "sha256": "c8387a3c9c67aa02169bd86a1d3fbe2ec7edf6facb46dc75b3adf8d020234353"
   },
   {
     "file": "docs/translation-decisions/translation-decision.schema.json",
@@ -76,8 +96,8 @@
   },
   {
     "file": "docs/TRANSLATION_DECISION_LOG_METADATA.json",
-    "bytes": 953,
-    "sha256": "7f2d72187430d8dfc0772900762337e3483ae3a930836d202d7192c85fabc306"
+    "bytes": 1213,
+    "sha256": "81178da6461a9f07e70f6d449f403e5f73c95e63026f485301a2f0cfd3f1679a"
   },
   {
     "file": "docs/TRANSLATION_DECISIONS.jsonl",
@@ -108,6 +128,226 @@
     "file": "fonts/OFL.txt",
     "bytes": 4384,
     "sha256": "c0b88977aa18b5e4fd05d646d560da89fde61b6581fa4507cb00dd90bd1bf7d4"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/application-fixed-point.tex",
+    "bytes": 5168,
+    "sha256": "5c6cf00273f1b508b6b80359be3a5436f0245596ebc02b75ac7352a6756bafd8"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/ce-closed-cup-cap.tex",
+    "bytes": 5477,
+    "sha256": "9651152a89d638fdbc3691ab1029d142c2b453a8994f2322d842cd7c73fe1aa3"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/ce-sets.tex",
+    "bytes": 2827,
+    "sha256": "5344ab43cb5048911159c69581dba03f23b49895ea033689da55b948353f2dd4"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/coding-computations.tex",
+    "bytes": 3917,
+    "sha256": "0795c587798367be11b0c98cc6e0fbf06bb7d68adb60e54f7fa1bb2e2d2e4dbb"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/complement-ce.tex",
+    "bytes": 4560,
+    "sha256": "ed01119d6b927b5b355714758301a5e761b3ce4609a537ab9fa22486bd95406f"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/complete-ce-sets.tex",
+    "bytes": 4214,
+    "sha256": "624bf4fa274fedebebb8c39047cf7318f30067ebeb84a197311c18d79d31675a"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/computability-theory.tex",
+    "bytes": 1158,
+    "sha256": "2764a3569f94d7086a2d8c71f6003c0fdcf89e72127d55c49ae487ab6c111996"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/computable-sets.tex",
+    "bytes": 2273,
+    "sha256": "9b24b7d74b7ed4935b072fb436f167bdd0406461140feeac5d59ddd1290c4f29"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/def-functions-self-reference.tex",
+    "bytes": 3394,
+    "sha256": "fdfdd82cc8fb0f3ebf96cb847d428af169da80101d8de08a93f614380bafac09"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/equiv-ce-defs.tex",
+    "bytes": 11898,
+    "sha256": "b40421aa888a657dccf4f367da63f2a32fa1ddd166f3048e48b626f4d2f84706"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/fixed-point-thm.tex",
+    "bytes": 13510,
+    "sha256": "4da41a5627aeee2d20f980ae3b25a4ddd3b17e078141058983180b5d7b717fe7"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/halting-problem.tex",
+    "bytes": 6562,
+    "sha256": "f181215141f198d439e53ed22ad7f1676b37e3aedcd7a4338c67b3c139e4452c"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/introduction.tex",
+    "bytes": 6077,
+    "sha256": "3270904426057dceb83abade40b167511b6216ceba41799afe4ed54bfd3b91ce"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/k-1.tex",
+    "bytes": 4378,
+    "sha256": "918ccdd85eb5bdba935c6b31f9311cfded78e5ca5e36a22884a63f1ab93d1593"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/no-universal-function.tex",
+    "bytes": 3007,
+    "sha256": "e8b95ec66369a1810647070fc69c8c7d9fcb44cf22593df8e2c833ce41012503"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/non-comp-set.tex",
+    "bytes": 3456,
+    "sha256": "210e8081fe348577b9d7428780a9c801de590958c76e1273b5e71935febb2e83"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/normal-form.tex",
+    "bytes": 7949,
+    "sha256": "0f50ed62e471f258f75558af704faaf8dde1dc595e59d2078908b5894132cf17"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/prop-reduce.tex",
+    "bytes": 7196,
+    "sha256": "01abf947dc18c37314253983ecc16844755c1fec7b012514d6e2b73a5574700e"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/reducibility.tex",
+    "bytes": 6174,
+    "sha256": "495c4d33bf3d58be58a5c097afa2b8b9f5b90985089a77306ab69f06d9f2c508"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/rice-theorem.tex",
+    "bytes": 10103,
+    "sha256": "fa4987bca14ecf8fc3d544af0b53b2a3403a4067b03865e8b59f8d2243f2b83f"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/russells-paradox.tex",
+    "bytes": 5507,
+    "sha256": "8854ab21a0ef37cea543f0a0f5a5df3c3d82876e6f65d24e31a00930b0e4b837"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/s-m-n.tex",
+    "bytes": 2928,
+    "sha256": "30ddcbe5b93406654cba2393f9a09c3b23b707e35b01d1899f7405950c9433e8"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/total.tex",
+    "bytes": 2704,
+    "sha256": "96daa0bc2eabd65b205153943cb8f3df000de5fd8d1c63400457c605dcc5f418"
+  },
+  {
+    "file": "gu/content/computability/computability-theory/universal-part-function.tex",
+    "bytes": 2698,
+    "sha256": "c8f70eb0902a376ec443690ddae13c059b737ecf466f0fdaf5c7fc76fd83797f"
+  },
+  {
+    "file": "gu/content/computability/computability.tex",
+    "bytes": 823,
+    "sha256": "0ae8c5693979c343a1ddea62b9d32962cbd6bff2eeddf287ab220b4b652abe73"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/bounded-minimization.tex",
+    "bytes": 5035,
+    "sha256": "d316747abc39f69e1b15daa19a11c7bf1ededf03086ab802281c77e8401a31c8"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/composition.tex",
+    "bytes": 6946,
+    "sha256": "2afb6f6105efe40844369c7e7aa540f934941a88bd84b876fd20b2d0e1d2bd38"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/examples.tex",
+    "bytes": 9609,
+    "sha256": "d01b294f8b6e3561b09e1d9ccf0366e92e719f07b971f561b7f4524402f502b4"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/general-recursive-functions.tex",
+    "bytes": 3373,
+    "sha256": "5038174067a2620203fc60f94cef96e443a582412da23a3f76b733f3911f441b"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/halting-problem.tex",
+    "bytes": 5999,
+    "sha256": "bfbd9f6cd534ef80ef132a9485b1d690c38bcc84a7f134f7aa99b6455648a92b"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/introduction.tex",
+    "bytes": 6036,
+    "sha256": "c30e681e691c687b21c20fb280a031749cb6f5cfd4b89acccac4db0cc4dc7758"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/non-pr-functions.tex",
+    "bytes": 8479,
+    "sha256": "755b7a1c1d1092fa03b50f1609b07e11c6263660dec8a2ddaebe6990c6b75128"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/normal-form.tex",
+    "bytes": 4428,
+    "sha256": "a8cea91621295d5e83a5fdf773c58939644464f659a274e62b98e98d5eeef2ef"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/notation-pr-functions.tex",
+    "bytes": 3936,
+    "sha256": "726aa98b9c1c9281bfc3b7444d7f54ac58e99fa55a0e877abde1c2f43548e31e"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/other-recursions.tex",
+    "bytes": 4649,
+    "sha256": "e7d53ee3c06562d39a6b5d25ef18060c01854b40bf85b87d51066377980eab04"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/partial-functions.tex",
+    "bytes": 10336,
+    "sha256": "eaea837a28244d57675a72150ef632d8d80456fae6ec54fb2753e0b84d448531"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/pr-functions-computable.tex",
+    "bytes": 2771,
+    "sha256": "20eeb1263f2365941c1ed466fd9417dc23e5756ddd8b10b42fe3e55ad9cb1f00"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/pr-functions.tex",
+    "bytes": 10584,
+    "sha256": "c4bd201c5dfd11bddc6246781d00ff1f946e70e389375a2aa667f3b72151b2bb"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/pr-relations.tex",
+    "bytes": 9455,
+    "sha256": "16d27a6d8db5902929e7ffeb3be997f8188036276f234df389ff7ca752e0912f"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/primes.tex",
+    "bytes": 7972,
+    "sha256": "88a732aee36e78b3fec0ee4eeb8150fba7bea1ab4ba398f5cf6bfc5c7eec5619"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/primitive-recursion.tex",
+    "bytes": 10385,
+    "sha256": "4747870d40c5f46eea308bd9f4d5f85b9977732f3f9370b895ef328cfb7d358c"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/recursive-functions.tex",
+    "bytes": 1296,
+    "sha256": "a994f76db812c6196fc73a9e35b49fff0fc96ea72f7457e5816e8b714c01c64c"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/sequences.tex",
+    "bytes": 11456,
+    "sha256": "162f110023a1c829d752d41263efab9ca51bd560d50cc23462c183db53245d63"
+  },
+  {
+    "file": "gu/content/computability/recursive-functions/trees.tex",
+    "bytes": 7945,
+    "sha256": "942be8b8d2cb73806bc4c2aa724338fea51a37b8d2444fe0f9fe4cfa79af5894"
   },
   {
     "file": "gu/content/first-order-logic/axiomatic-deduction/axiomatic-deduction.tex",
@@ -1150,6 +1390,16 @@
     "sha256": "a80ce16c015f32c3145adea0fb74763a416d8748a964309f471f707149b322b0"
   },
   {
+    "file": "gu-computability-theory.tex",
+    "bytes": 53,
+    "sha256": "1d35f3f27a50a02702fc748a625d95c3f7cdaf34201c97563e918d9ebc6ef86e"
+  },
+  {
+    "file": "gu-computability.tex",
+    "bytes": 10585,
+    "sha256": "0234d08532ecf50ffd8d3c74ee8aaba6e30414f6e0f460a57c8c1562e2076928"
+  },
+  {
     "file": "gu-first-order-introduction.tex",
     "bytes": 3307,
     "sha256": "1ce0c94775be553367a16fcda317f835cc0781e72efe61b7b9d20ad183cd83b0"
@@ -1236,8 +1486,8 @@
   },
   {
     "file": "gu-tableaux.tex",
-    "bytes": 20957,
-    "sha256": "7b84b143bbee7b6c33aee897f7a5dc32b1cab81585c3038520519dce60d82e7f"
+    "bytes": 21080,
+    "sha256": "1e2b8cb34b696052882187a3388f0ead5059be5882e0bf22a3302793ffc58e9b"
   },
   {
     "file": "LICENSE.md",
@@ -1355,6 +1605,16 @@
     "sha256": "b06f972353e2ee7fed4852cec269ea0aefa876d04f8b1d3239677cf413027a2e"
   },
   {
+    "file": "provenance/BATCH_023.json",
+    "bytes": 9157,
+    "sha256": "9912611cfc6de0650b167205019e21be29f33c98fdd36a4db7b298d01fe8f689"
+  },
+  {
+    "file": "provenance/BATCH_024.json",
+    "bytes": 10816,
+    "sha256": "cccf7ce8d97d5368b195c230ffbf9b3b8292d57529222d048410f85f1f27ac5d"
+  },
+  {
     "file": "provenance/BROWSER_RUNTIME_016.json",
     "bytes": 1506,
     "sha256": "2861ef3f84b2202bfaccb45238d4ffc5d820b8d542cdd94371629a60522d5b4d"
@@ -1388,6 +1648,16 @@
     "file": "provenance/BROWSER_RUNTIME_022.json",
     "bytes": 2653,
     "sha256": "9ebd31ef69216d8add4d0f1e22c389d25e7de5f95e3788267fcdb86da7e63f79"
+  },
+  {
+    "file": "provenance/BROWSER_RUNTIME_023.json",
+    "bytes": 9753,
+    "sha256": "ed7838169dab3a5250546ff4e2de2f26c9489095e2b8da24ddfb7f535e53800f"
+  },
+  {
+    "file": "provenance/BROWSER_RUNTIME_024.json",
+    "bytes": 13789,
+    "sha256": "0f21aef6f9bf27a483e67c83371653ca44596e9a0542eb6724ca2367791e87e3"
   },
   {
     "file": "provenance/BUILD_RECEIPT_005.json",
@@ -1480,14 +1750,19 @@
     "sha256": "62da6a6f73750a442acefd72a76ef84d5538eabbe9776d9df0ed89bab420b47b"
   },
   {
+    "file": "provenance/BUILD_RECEIPT_024.json",
+    "bytes": 35917,
+    "sha256": "6ad595b14c1abfa7a3055d96ba7db67455730d8a7f3a4f1b44ebab84b324cff3"
+  },
+  {
     "file": "provenance/CANON_PASSAGE_SCHEMA.json",
     "bytes": 1384,
     "sha256": "544837e0f014324ea40110c932c6cf7e35355d31bfb8fbb01ce1d073e77be819"
   },
   {
     "file": "provenance/CANON_PASSAGES.jsonl",
-    "bytes": 80343,
-    "sha256": "537176a2ad9fca537df55415b5c866d3fbdaab202cc37edadf0a4241f2d7ab48"
+    "bytes": 87165,
+    "sha256": "2215bd18ec2528ae5d5b38da1c7468db6db3d28fda2ae3ca6957331cba5ac0c8"
   },
   {
     "file": "provenance/CANON_SOURCES.jsonl",
@@ -1495,9 +1770,19 @@
     "sha256": "4bac4a7f2ebabfeeb382a3e6ea562d698bcdf6afbe2cbf318a19f77f7b032a63"
   },
   {
+    "file": "provenance/CHOICES_023.json",
+    "bytes": 30337,
+    "sha256": "907daf0662d7456bf2a1dab12addad3c15be38f07e63ca149feb0f0bfdbfb9e6"
+  },
+  {
+    "file": "provenance/CHOICES_024.json",
+    "bytes": 12063,
+    "sha256": "7be93a1c4cf8eeb8dd9a0a293033faee7174a8035121ac02ac05dd018258c7c2"
+  },
+  {
     "file": "provenance/COVERAGE.json",
-    "bytes": 205522,
-    "sha256": "410624b4636d1982f024edbb568450d3c33625333ceb47bf9456933a62e92419"
+    "bytes": 212464,
+    "sha256": "50d8ea3a233ca16f6697a878362fdc8c89b4c9cd66f73a62ae5892b891e71b3d"
   },
   {
     "file": "provenance/CUMULATIVE_QA_008.json",
@@ -1575,6 +1860,11 @@
     "sha256": "aad182d51cdd61285f5c1ed3d39ada7f6497e2217307235cdecf734cc3e32855"
   },
   {
+    "file": "provenance/CUMULATIVE_QA_024.json",
+    "bytes": 2184,
+    "sha256": "bd84c67a9f75d849a26e3a8f21b97eed96a94324499118cbb585815e7f52726d"
+  },
+  {
     "file": "provenance/EPUB_BROWSER_RUNTIME_016.json",
     "bytes": 2277,
     "sha256": "d887d3139b6890dcea945e4ab351e4f698aebbb75e347596e0dee526be47c252"
@@ -1608,6 +1898,16 @@
     "file": "provenance/EPUB_BROWSER_RUNTIME_022.json",
     "bytes": 2829,
     "sha256": "71154b7961af7d139a888bb72cd7eb879e56afca9d2d99a4c1431a862b590d66"
+  },
+  {
+    "file": "provenance/EPUB_BROWSER_RUNTIME_023.json",
+    "bytes": 5557,
+    "sha256": "b403db5fe683b920c9ef3f2160dd19a91bbed62a657c40a4d5bb0acfb2441791"
+  },
+  {
+    "file": "provenance/EPUB_BROWSER_RUNTIME_024.json",
+    "bytes": 5796,
+    "sha256": "d2ed0e3ee62b1dad52892f307f7bfa892ed301e40397b5939378c9e66d471dcd"
   },
   {
     "file": "provenance/EPUB_BUILD_RECEIPT_013.json",
@@ -1710,6 +2010,16 @@
     "sha256": "73046fe36d5e7c67075046b84bc1b9611b5d38f70f4e394092eb0ea7d5d60fa0"
   },
   {
+    "file": "provenance/EPUB_QA_023.json",
+    "bytes": 1145,
+    "sha256": "7632b2cb983e40bfe9251f611a9b6e24ba77b25368ae4f4a4141dfce6d3b6c36"
+  },
+  {
+    "file": "provenance/EPUB_QA_024.json",
+    "bytes": 1149,
+    "sha256": "7de2d9c0a843072936fc9b21abee557576dbf333bc5d5baeb9428c1d4a5e77a6"
+  },
+  {
     "file": "provenance/EPUBCHECK_013.json",
     "bytes": 35415,
     "sha256": "83db60984954abfcccd5c64747360dc42e0bfc78defb24eb945d0398952f1b6c"
@@ -1760,6 +2070,11 @@
     "sha256": "976b8765ce5f8151ea19bdfe9eb2ec2bab474747e803cf4fa2fa0fc2eb5715b8"
   },
   {
+    "file": "provenance/EPUBCHECK_024.json",
+    "bytes": 55166,
+    "sha256": "63759cf067c54dc867b3995d1a7d319d5c263adc1d108e98606ee8f1ae3e4f22"
+  },
+  {
     "file": "provenance/FINAL_QA_002.json",
     "bytes": 4068,
     "sha256": "0094321971adcc623103977ebc11e10c9902e6d9ce051ea310767be163e0dfb4"
@@ -1795,6 +2110,11 @@
     "sha256": "d71e7bc7ee73e7144c6ee536f855b088f58a1f2343d8b2eaee91b3a24f7de406"
   },
   {
+    "file": "provenance/FULL_TEXT_SOURCE_MATERIALIZATION_024.json",
+    "bytes": 2210,
+    "sha256": "606b189131ebc3ead256e9e50ebdaff82677ea2fa4ff31645e1e442f6b22def3"
+  },
+  {
     "file": "provenance/FULL_TEXT_SOURCE_QA_011.json",
     "bytes": 2552,
     "sha256": "bfc389e4a9fa3e572bc36b4e8ddb774ac52d6e80040d9f52d867f082f8f7740d"
@@ -1823,6 +2143,11 @@
     "file": "provenance/FULL_TEXT_SOURCE_QA_016.json",
     "bytes": 2515,
     "sha256": "2aa0544c3f2c1d4ec7daacfe5b313f309a78ace50f7db43aedd13e2509b0a853"
+  },
+  {
+    "file": "provenance/FULL_TEXT_SOURCE_QA_024.json",
+    "bytes": 1046,
+    "sha256": "8a325f6f7cf16f90f495d39219be26c1e9ecbaf640a66cfc79f279c1118f1a14"
   },
   {
     "file": "provenance/GU_PROV_001_RECEIPT.json",
@@ -1933,6 +2258,16 @@
     "file": "provenance/HTML_QA_022.json",
     "bytes": 9989,
     "sha256": "5d0169c8d254b81d0d64c2e525defdd50cf25f5a3969ff0b72c0ae0e82545f46"
+  },
+  {
+    "file": "provenance/HTML_QA_023.json",
+    "bytes": 1376,
+    "sha256": "ef2a96afbc91584ee60301d62d95b5374057077edc25b728401a1a121c8291fb"
+  },
+  {
+    "file": "provenance/HTML_QA_024.json",
+    "bytes": 1082,
+    "sha256": "cc7fd168e6551515443e876b8fbb3f7378a53b42d970d97ddedf1dcbf6770de3"
   },
   {
     "file": "provenance/LAPTOP_CANON_RECONCILIATION.json",
@@ -2050,6 +2385,16 @@
     "sha256": "d5dc1310ed07080eded9a4f3c47f4ec577c16575bd019805eb908ac078427f97"
   },
   {
+    "file": "provenance/PARITY_023.json",
+    "bytes": 28245,
+    "sha256": "eabbaaff98bd6dfa1a07e40bef0261de0308844171e800fd32bdd61509cb2058"
+  },
+  {
+    "file": "provenance/PARITY_024.json",
+    "bytes": 33768,
+    "sha256": "622bfab03d703cada26374fda7745e8072f2d114d2677101e3b3e4107977ddc1"
+  },
+  {
     "file": "provenance/PDF_QA_007.json",
     "bytes": 15577,
     "sha256": "900b4f70732cbf31698ab8f800df0bf958f7cae43ce42c7960c2af2c313e35d7"
@@ -2130,14 +2475,29 @@
     "sha256": "d6a21e29f2ad6b9bfcee5fd4b4c25bf9ca31f92b44e5311aebaa2f69e993948c"
   },
   {
+    "file": "provenance/PDF_QA_024.json",
+    "bytes": 2847,
+    "sha256": "3a0cc0dbdd5d76f7e5965cb2f8a19c461b48a4df24927c5ef519a7952c6cb0aa"
+  },
+  {
     "file": "provenance/QA.json",
-    "bytes": 36653,
-    "sha256": "96cfeee537baa58a4a40ca21053baab828476e47645dd66826044742d4428676"
+    "bytes": 36517,
+    "sha256": "9a46830006818af233abf6a1cd855d05b7a34bb89bb2b77279802e361a409fb3"
   },
   {
     "file": "provenance/SEGMENT_CANON_USE.jsonl",
-    "bytes": 3010742,
-    "sha256": "2b31bedcdf1d3be4f7f9d96eb7a087eadcc75210bc9a5a668bc122af513e043d"
+    "bytes": 3436463,
+    "sha256": "56a713f337875144a074e864adb439d8438b8c6be0541570e76103168f564fb4"
+  },
+  {
+    "file": "provenance/SEGMENT_CANON_USE_023.jsonl",
+    "bytes": 204479,
+    "sha256": "75bddcb8cbf15ea7f282e3b767bf0c1665412b4f828c61eaf17a3f2464ca88ac"
+  },
+  {
+    "file": "provenance/SEGMENT_CANON_USE_024.jsonl",
+    "bytes": 221242,
+    "sha256": "5fb478e586b435b1c6db76c3003baad5e4bb22b6803c048f2b0ca1cbf023c880"
   },
   {
     "file": "provenance/SEMANTIC_REVIEW_001.json",
@@ -2250,6 +2610,16 @@
     "sha256": "851a983ee2093ab063918a66dea9d9ff6fd12d88cff821b1a99589f7516576ac"
   },
   {
+    "file": "provenance/SEMANTIC_REVIEW_023.json",
+    "bytes": 128352,
+    "sha256": "3c2041e55af74d5768053410b20d3ef756066cdc95f4f983e0f4ae1616140301"
+  },
+  {
+    "file": "provenance/SEMANTIC_REVIEW_024.json",
+    "bytes": 131851,
+    "sha256": "50083b07ed8bbe3604250c08c2f0b4792bce723adb58470be5179a44dfc9aee8"
+  },
+  {
     "file": "provenance/SOURCE_CHECKPOINT_004.json",
     "bytes": 13352,
     "sha256": "832c98e28fd3409c217fbd55c29e8022839d426e44215a891d660386d131883c"
@@ -2345,6 +2715,11 @@
     "sha256": "7d9d67bef7198ec0c76585560a445821c13dd8f24e2e323f1cbf4e430a3c937b"
   },
   {
+    "file": "provenance/SOURCE_CHECKPOINT_024.json",
+    "bytes": 286532,
+    "sha256": "2fefe863dfe4a81a5c73790d9012d014641a080d73e2f27dd39774bf61128cd8"
+  },
+  {
     "file": "provenance/SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_016.json",
     "bytes": 1348,
     "sha256": "b6e393f23809dfd7388958f5805882c40fe96be4744f049020f6334cfafb34ec"
@@ -2378,6 +2753,11 @@
     "file": "provenance/SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_022.json",
     "bytes": 1336,
     "sha256": "75cb65ffaaca42a223f636b244661d09d9db97081249cb549259bb1a78be48c7"
+  },
+  {
+    "file": "provenance/SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_024.json",
+    "bytes": 1115,
+    "sha256": "d86ed8fbf0cf079f20f26d0a25bff3621ee868e016ca6c48f41c0b5c1e5733f0"
   },
   {
     "file": "provenance/SOURCE_CLAIM_QUALIFICATIONS.jsonl",
@@ -2485,14 +2865,24 @@
     "sha256": "a08a588eae3fd649cf8bcbcba674735c9517920c97b231d8d79e8047ea33cad7"
   },
   {
+    "file": "provenance/SOURCE_CORRECTIONS_023.json",
+    "bytes": 15243,
+    "sha256": "6cd5d6cfc8c395a6a0d6d35338a16b538ca87fbd0b9b02bdcfecf8775e29e464"
+  },
+  {
+    "file": "provenance/SOURCE_CORRECTIONS_024.json",
+    "bytes": 16361,
+    "sha256": "c47c06fbe849adca6e22b4fe159617bf83c058ec5e6c597a773adc5146067c23"
+  },
+  {
     "file": "provenance/SOURCE_MANIFEST.jsonl",
     "bytes": 355745,
     "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
   },
   {
     "file": "provenance/TERM_DECISIONS.jsonl",
-    "bytes": 791877,
-    "sha256": "4c79bbd48b5d2df7ab0dd0cd192de751a392abf6816baa516f47c411b4bbffa5"
+    "bytes": 934876,
+    "sha256": "baaa5be617486795551ce39979374af6876d5406d717ba1a0929d88b983229ad"
   },
   {
     "file": "provenance/UNTRANSLATED_SCAN_011.json",
@@ -2553,6 +2943,16 @@
     "file": "provenance/UNTRANSLATED_SCAN_022.json",
     "bytes": 3160,
     "sha256": "23fe1771adf24f6d085be8cb3b7b3290c9af49ffdc1a52e72bd2446ce4cf0b1f"
+  },
+  {
+    "file": "provenance/UNTRANSLATED_SCAN_023.json",
+    "bytes": 8423,
+    "sha256": "6f42bfe242846c60387567a73ebce5155de0eb1a6cea334f7cb2ed0efb65aea9"
+  },
+  {
+    "file": "provenance/UNTRANSLATED_SCAN_024.json",
+    "bytes": 9820,
+    "sha256": "5b877ad93c0b44946b19fde48609559e1ee7c79168d95a25dbf4af84b01b6c61"
   },
   {
     "file": "reader/arithmetization.html",
@@ -2648,6 +3048,16 @@
     "file": "reader/completeness.html",
     "bytes": 3353740,
     "sha256": "3270ff0f7b32d9ce6f0382cfa19f5758ec3b9abcd48a92f6812e55eb5739b2a9"
+  },
+  {
+    "file": "reader/computability-theory.html",
+    "bytes": 6187705,
+    "sha256": "b50d092bfde23db11c32b760afe9461370d9c7032e5980a6b627056aa5a4044e"
+  },
+  {
+    "file": "reader/computability.html",
+    "bytes": 5803326,
+    "sha256": "9066c1530b8656ff54ab85ed2836e6ba00b63645f02752baa8e6910dbb1feaf9"
   },
   {
     "file": "reader/first-order-introduction.html",
@@ -2746,8 +3156,8 @@
   },
   {
     "file": "README.md",
-    "bytes": 4427,
-    "sha256": "44cbfc29645ecc19fa7fa86c9817b8078d9f2d040c85dc2d827ee39ea37884e7"
+    "bytes": 9085,
+    "sha256": "bbdf4575dcd954b202767fc688b48f4f557565f87e4bf1426e1a42abb87fbd3a"
   },
   {
     "file": "releases/OpenLogic-gu-Gujr-IN-Axiomatic-Deduction.pdf",
@@ -2778,6 +3188,21 @@
     "file": "releases/OpenLogic-gu-Gujr-IN-Completeness.pdf",
     "bytes": 1571445,
     "sha256": "004bce94570b7f986addad0188f6970d86e2a4f9b5ac3a256f4e96df194d3a6a"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex",
+    "bytes": 1871078,
+    "sha256": "4bb9a3ef59b987394af2a55ccf0c7733f451e316bac1d05fedb405b9d1b6041b"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Computability-Theory.epub",
+    "bytes": 683046,
+    "sha256": "4dc645a7edd9c4ed7b7effa495c4f2a4a21bfcd82990a74570f91cd1d84e5e1c"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Computability-Theory.pdf",
+    "bytes": 2678201,
+    "sha256": "9f994774f7d1d54b6da10d41c56d64377116efbfec34afab1c28eac89bde3ca1"
   },
   {
     "file": "releases/OpenLogic-gu-Gujr-IN-First-Order-Introduction.epub",
@@ -2895,6 +3320,11 @@
     "sha256": "2dded6e59f70bfd61b6d0361bca269c5d3c8f37911a9352ab0cc6b61e4422ffa"
   },
   {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Recursive-Functions.epub",
+    "bytes": 650225,
+    "sha256": "8b5d11fffa9050e28e0694ed0b226de0c3b76bdea0483f5b432da9dc2aeabbe3"
+  },
+  {
     "file": "releases/OpenLogic-gu-Gujr-IN-Sets-Relations.pdf",
     "bytes": 266608,
     "sha256": "c4235f6bdc210ca4e0763a4c6d4c067cad755076984dc2b040b333b7c39b4698"
@@ -2908,6 +3338,31 @@
     "file": "releases/OpenLogic-gu-Gujr-IN-Tableaux.pdf",
     "bytes": 1285438,
     "sha256": "3bbc0dd6e7f3b31cefce2935f054e989e4145070492b4efed13331611fe8244a"
+  },
+  {
+    "file": "tools/build_computability_decision_locators.py",
+    "bytes": 5458,
+    "sha256": "7f0e038528f91bdad9f0cf2dc16e325e4e095ce909c20982d3f3f664669158f9"
+  },
+  {
+    "file": "tools/build_computability_epub.py",
+    "bytes": 5376,
+    "sha256": "c5c2c327ef326bf5e1e95963bac62bd1702a49299ade003f807642ec9319fe50"
+  },
+  {
+    "file": "tools/build_computability_html.py",
+    "bytes": 7928,
+    "sha256": "7d189cb0a3ea3fc5c64bc296496147af0a6bf2932242f6d3b7aef284b3eac188"
+  },
+  {
+    "file": "tools/build_computability_theory_epub.py",
+    "bytes": 3885,
+    "sha256": "449230acae4fbd9a91bb5ca4b843c2cfb390fc704e5da1ca7105ba98267adbe3"
+  },
+  {
+    "file": "tools/build_computability_theory_html.py",
+    "bytes": 4149,
+    "sha256": "4d4c38704f239447bfd2b382cdfe0c4199ee637dec449e680ac1fd5e44af6e7e"
   },
   {
     "file": "tools/build_epub.py",
@@ -2936,18 +3391,18 @@
   },
   {
     "file": "tools/build_lindstrom_epub.py",
-    "bytes": 4520,
-    "sha256": "f9b4e8942b010481dcf8a1cb395109b93e55de4b792b293d84541b6ba8549690"
+    "bytes": 4563,
+    "sha256": "1eb454288000fe6ac06bd662b8684cce321a5e6ac5e93d6f8b0ed4c11766625a"
   },
   {
     "file": "tools/build_lindstrom_html.py",
-    "bytes": 11885,
-    "sha256": "d7901f15a0fdf36562fe71bed2a123046a1afc7bb35c58cb19993a7131e9a2d7"
+    "bytes": 11928,
+    "sha256": "1e4eae8a346bf0634a190fd4218d345b65e06582afdef1bceb6a5bc7a331aeba"
   },
   {
     "file": "tools/build_sets_guarded.ps1",
-    "bytes": 6050,
-    "sha256": "87d2217e54f82dd6395ac4523ac7a01b0f0e2edec4cb5db58477a51192d064b7"
+    "bytes": 6798,
+    "sha256": "8b471f91bee23342991d1f9ee6c939f668e2862f162c48636ebf41be7758185e"
   },
   {
     "file": "tools/build_sets_html.py",
@@ -3023,6 +3478,21 @@
     "file": "tools/prepare_completeness.py",
     "bytes": 8912,
     "sha256": "8ca34819933dfc888c11ec23d1286668e76b12d074547402070feec6036049d1"
+  },
+  {
+    "file": "tools/prepare_computability.py",
+    "bytes": 4965,
+    "sha256": "f749751efc30d05860b921b4df04379a2b219d187986f4a2863f39e7ddec4c2b"
+  },
+  {
+    "file": "tools/prepare_computability_theory.py",
+    "bytes": 5849,
+    "sha256": "7c838d26288005260b5885e77cbb367c50bf761f6d7339db86be6477bf1a02ab"
+  },
+  {
+    "file": "tools/prepare_computability_theory_checkpoint.py",
+    "bytes": 5079,
+    "sha256": "9e6a106f60e17e17fc853e96d2ffe5d12267d80667d639e34d2dece5288afb5c"
   },
   {
     "file": "tools/prepare_first_order_introduction.py",
@@ -3113,6 +3583,11 @@
     "file": "tools/prepare_tableaux.py",
     "bytes": 7777,
     "sha256": "acf858d3c3190c771f8985cd2a6b1734da78da7dc1ac933bf1e67482ffea1951"
+  },
+  {
+    "file": "tools/verify_computability_theory_full_text.py",
+    "bytes": 2689,
+    "sha256": "7dfcbeda0f7205c3d1d86ea793e759b4a9d15345538be3a29ed78cfcda59b9fc"
   },
   {
     "file": "upstream/.github/ISSUE_TEMPLATE/typo.md",
