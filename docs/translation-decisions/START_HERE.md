@@ -1,16 +1,15 @@
-# Start here: Gujarati translation decisions
+# અહીંથી શરૂ કરો: ગુજરાતી ભાષાંતરના નિર્ણયો
 
-This directory is the review entry point for the current 204/722-unit Gujarati
-working edition.
+આ નિર્દેશિકા હાલની **204/722 એકમોની ગુજરાતી કાર્યરત આવૃત્તિ**ના ભાષાંતર-નિર્ણયો તપાસવાનો પ્રવેશદ્વાર છે. દરેક નિર્ણયમાં મૂળ અને ગુજરાતી લખાણ, વપરાયેલા સ્રોત-ઉતારા, કારણ, અનિશ્ચિતતા અને તપાસનું સ્થાન જોડાય છે. કોઈ નોંધને સ્વતંત્ર માનવીય મંજૂરી સમજવી નહીં.
 
-- `DECISIONS.json` is the canonical schema-valid register.
-- `TRANSLATION_DECISIONS_FULL.md` presents all 376 decisions in readable form.
-- `PRIORITY_REVIEW.md` isolates 157 urgent or high-priority items.
-- `DECISION_OCCURRENCES.csv` flattens all 384 exact source/target occurrence records.
-- `TRANSLATION_DECISION_QA.json` records schema, hash, locator, and cross-surface checks.
-- `translation-decision.schema.json` is the frozen normative schema.
-- `../GUJARATI_EDITION_SCOPE.md` states the script, register, notation, and variant policy.
+- [`DECISIONS.json`](DECISIONS.json): માન્ય બંધારણ ધરાવતી અધિકૃત યંત્રવાચ્ય નિર્ણય-નોંધ.
+- [`TRANSLATION_DECISIONS_FULL.md`](TRANSLATION_DECISIONS_FULL.md): 376 નિર્ણયોનું વાંચવા યોગ્ય વિગતવાર સ્વરૂપ.
+- [`PRIORITY_REVIEW.md`](PRIORITY_REVIEW.md): વધુ ધ્યાન માગતી 157 બાબતો.
+- [`DECISION_OCCURRENCES.csv`](DECISION_OCCURRENCES.csv): મૂળ અને ગુજરાતી લખાણ સાથે જોડાયેલા 384 ચોક્કસ પ્રસંગો.
+- [`TRANSLATION_DECISION_QA.json`](TRANSLATION_DECISION_QA.json): બંધારણ, હૅશ, સ્થાન અને જુદી આવૃત્તિઓ વચ્ચેની સરખામણીની યંત્રવાચ્ય નોંધ.
+- [`translation-decision.schema.json`](translation-decision.schema.json): અચળ નિયમાત્મક માળખું.
+- [ગુજરાતી આવૃત્તિનો વ્યાપ અને સ્વરૂપની નીતિ](../GUJARATI_EDITION_SCOPE.md).
 
-Reader locations currently include 382 verified PDF
-pages and 1 explicitly pending pages. A pending page is
-never an inferred or estimated page.
+હાલ 382 PDF પાનાંના સ્થાનો ચકાસાયેલા છે, એક સ્થાન સ્પષ્ટ રીતે બાકી છે અને એક સ્થાન લાગુ પડતું નથી. બાકી સ્થાનનો પાનાં નંબર અનુમાનથી ભરવામાં આવતો નથી. સુધારો સૂચવતાં સંબંધિત નિર્ણય-ઓળખ, સ્રોત અને ગુજરાતી ખંડ, તથા કારણ જણાવવાથી સમીક્ષા સરળ બને છે.
+
+આ નિર્ણય-નોંધ અને તેની એજન્ટ-આધારિત તપાસ OpenAI Codex — GPT-5.6 Sol, Ultra effort દ્વારા તૈયાર થઈ હતી; આ ગુજરાતી માર્ગદર્શિકાનું સંપાદન OpenAI Codex — GPT-6 Sol, Ultra effort દ્વારા થયું. સ્વતંત્ર ગુજરાતી વિદ્વાન કે માનવીય પ્રમાણિત સમીક્ષા થયેલી નથી.

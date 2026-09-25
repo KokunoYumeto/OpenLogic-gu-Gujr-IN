@@ -2,18 +2,18 @@
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
   "translated": 204,
-  "working_scope": "Complete cumulative translation through Lindström, OLP-0004–0207",
-  "working_status": "structural, semantic, untranslated-prose, exact HTML DOM/MathML/proof/tableau/derivation/link/asset, live-browser, reproducible guarded PDF, all-page visual, reflowable EPUB 3.3, EPUBCheck, EPUB runtime, and reviewer-decision-package QA passed",
+  "working_scope": "લિન્ડસ્ટ્રોમ સુધીનું સંપૂર્ણ સંચિત ગુજરાતી ભાષાંતર, OLP-0004–0207",
+  "working_status": "રચના, અર્થ, અંગ્રેજી ગદ્ય બાકી ન હોવું, HTML DOM/MathML/પુરાવા/ટેબ્લો/નિષ્પત્તિ/કડીઓ/ફાઇલો, જીવંત બ્રાઉઝર, પુનઃઉત્પાદિત નિયંત્રિત PDF, બધા પાનાંની દૃશ્ય તપાસ, EPUB 3.3, EPUBCheck, EPUB ચલાવવાની તપાસ અને સમીક્ષક-નિર્ણય નોંધની ગુણવત્તા તપાસ પસાર થઈ",
   "public_release": {
-    "tag": "interpolation-v0.15.0",
-    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/interpolation-v0.15.0",
-    "translated": 199,
-    "scope": "Complete cumulative artifact release through Interpolation, OLP-0004–0202"
+    "tag": "lindstrom-v0.16.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/lindstrom-v0.16.0",
+    "translated": 204,
+    "scope": "લિન્ડસ્ટ્રોમ સુધીની સંપૂર્ણ સંચિત પ્રકાશિત આવૃત્તિ, OLP-0004–0207"
   },
   "public_source_checkpoint": {
-    "commit": "0f29fa37700e03d648a8eaae2af20ce067d7aaf8",
-    "translated": 199,
-    "scope": "Previous anonymously verified source checkpoint through Interpolation, OLP-0004–0202; checkpoint 022 is represented by the commit containing this file"
+    "commit": "fe2c110fdb9febdaeb0ba0342f8462adbe888965",
+    "translated": 204,
+    "scope": "લિન્ડસ્ટ્રોમ સુધીનો અનામી રીતે ચકાસાયેલો સ્રોત-ચેકપોઇન્ટ, OLP-0004–0207"
   },
   "complete_edition": false,
   "units": [
@@ -1432,35 +1432,35 @@
       "unit_id": "OLP-0203",
       "source_path": "content/model-theory/lindstrom/lindstrom.tex",
       "source_sha256": "a3cc84f5789bc27838d0c2461c67438d5029d1071b7f94c4a4fd3b4910cd6310",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "d48af8cafb10cde39c44dfa64abd1a7ee46f38158b854cf580bcc2792c04bd73"
     },
     {
       "unit_id": "OLP-0204",
       "source_path": "content/model-theory/lindstrom/introduction.tex",
       "source_sha256": "1e014424519199e2ca2760dfe343dbc6756c6972c56e17174587e9aacf913ed0",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "06522fe45c8e3f4a5a97a75413f53714043342468a4ebbd55f58a4cba5856b97"
     },
     {
       "unit_id": "OLP-0205",
       "source_path": "content/model-theory/lindstrom/abstract-logics.tex",
       "source_sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d"
     },
     {
       "unit_id": "OLP-0206",
       "source_path": "content/model-theory/lindstrom/ls-property.tex",
       "source_sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20"
     },
     {
       "unit_id": "OLP-0207",
       "source_path": "content/model-theory/lindstrom/lindstrom-proof.tex",
       "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
-      "status": "translated_source_checkpoint_qa_passed",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc"
     },
     {

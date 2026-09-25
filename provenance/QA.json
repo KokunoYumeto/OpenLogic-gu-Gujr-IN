@@ -1,10 +1,10 @@
 {
   "schema": "openlogic-gu-qa/2",
-  "checkpoint_utc": "2026-09-21T00:31:11.378958+00:00",
+  "checkpoint_utc": "2026-09-21T00:53:24.360913+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
   "translated_units": 204,
-  "publicly_verified_release_units": 199,
+  "publicly_verified_release_units": 204,
   "publicly_verified_source_checkpoint_units": 204,
   "total_units": 722,
   "aligned_linguistic_blocks": 2156,
@@ -649,7 +649,7 @@
       "exact_block_reviews": 31
     }
   },
-  "status": "204_unit_source_checkpoint_anonymously_verified; artifact_release_remains_199_units; complete_corpus_in_progress",
+  "status": "204_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -665,33 +665,33 @@
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/interpolation-v0.15.0",
-    "github_receipt": "PUBLICATION_RECEIPT_015.json",
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/lindstrom-v0.16.0",
+    "github_receipt": "PUBLICATION_RECEIPT_016.json",
     "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_022.json",
-    "zenodo_record": "https://zenodo.org/records/22865077",
-    "zenodo_doi": "10.5281/zenodo.22865077",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_015.json",
+    "zenodo_record": "https://zenodo.org/records/22865986",
+    "zenodo_doi": "10.5281/zenodo.22865986",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_016.json",
     "artifact_order": [
-      "OpenLogic-gu-Gujr-IN-Interpolation.pdf",
-      "OpenLogic-gu-Gujr-IN-Interpolation-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Interpolation-source.zip",
-      "OpenLogic-gu-Gujr-IN-Interpolation.tex",
-      "OpenLogic-gu-Gujr-IN-Interpolation.epub",
-      "OpenLogic-gu-Gujr-IN-Interpolation.html",
-      "SHA256SUMS-interpolation.txt",
-      "OpenLogic-gu-Gujr-IN-Interpolation-QA.json"
+      "OpenLogic-gu-Gujr-IN-Lindstrom.pdf",
+      "OpenLogic-gu-Gujr-IN-Lindstrom-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Lindstrom-source.zip",
+      "OpenLogic-gu-Gujr-IN-Lindstrom.tex",
+      "OpenLogic-gu-Gujr-IN-Lindstrom.epub",
+      "OpenLogic-gu-Gujr-IN-Lindstrom.html",
+      "SHA256SUMS-lindstrom.txt",
+      "OpenLogic-gu-Gujr-IN-Lindstrom-QA.json"
     ],
     "downloads": {
-      "OpenLogic-gu-Gujr-IN-Interpolation.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/OpenLogic-gu-Gujr-IN-Interpolation.pdf",
-      "OpenLogic-gu-Gujr-IN-Interpolation-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/OpenLogic-gu-Gujr-IN-Interpolation-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Interpolation-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/OpenLogic-gu-Gujr-IN-Interpolation-source.zip",
-      "OpenLogic-gu-Gujr-IN-Interpolation.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/OpenLogic-gu-Gujr-IN-Interpolation.tex",
-      "OpenLogic-gu-Gujr-IN-Interpolation.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/OpenLogic-gu-Gujr-IN-Interpolation.epub",
-      "OpenLogic-gu-Gujr-IN-Interpolation.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/OpenLogic-gu-Gujr-IN-Interpolation.html",
-      "SHA256SUMS-interpolation.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/SHA256SUMS-interpolation.txt",
-      "OpenLogic-gu-Gujr-IN-Interpolation-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/interpolation-v0.15.0/OpenLogic-gu-Gujr-IN-Interpolation-QA.json"
+      "OpenLogic-gu-Gujr-IN-Lindstrom.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/OpenLogic-gu-Gujr-IN-Lindstrom.pdf",
+      "OpenLogic-gu-Gujr-IN-Lindstrom-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/OpenLogic-gu-Gujr-IN-Lindstrom-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Lindstrom-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/OpenLogic-gu-Gujr-IN-Lindstrom-source.zip",
+      "OpenLogic-gu-Gujr-IN-Lindstrom.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/OpenLogic-gu-Gujr-IN-Lindstrom.tex",
+      "OpenLogic-gu-Gujr-IN-Lindstrom.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/OpenLogic-gu-Gujr-IN-Lindstrom.epub",
+      "OpenLogic-gu-Gujr-IN-Lindstrom.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/OpenLogic-gu-Gujr-IN-Lindstrom.html",
+      "SHA256SUMS-lindstrom.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/SHA256SUMS-lindstrom.txt",
+      "OpenLogic-gu-Gujr-IN-Lindstrom-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/lindstrom-v0.16.0/OpenLogic-gu-Gujr-IN-Lindstrom-QA.json"
     },
-    "status": "current_source_checkpoint_and_preserved_artifact_release_anonymously_verified"
+    "status": "all_eight_ordered_artifacts_full_text_source_inventory_and_pdf_preview_anonymously_verified"
   },
   "batch_008": {
     "draft_units": 6,

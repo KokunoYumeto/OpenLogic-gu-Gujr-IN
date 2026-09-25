@@ -1,40 +1,15 @@
-# Gujarati edition scope and variant policy
+# ગુજરાતી આવૃત્તિનો વ્યાપ અને સ્વરૂપની નીતિ
 
-This repository publishes one semantic Gujarati edition identified as
-`gu-Gujr-IN`. Its script subtag is `Gujr`, its territory subtag is `IN`, and its
-text direction is left to right. The edition uses the standard contemporary
-Gujarati script throughout prose. It does not currently define separate
-regional, community, or register variants.
+આ સંગ્રહમાં એક જ અર્થલક્ષી ગુજરાતી આવૃત્તિ છે, જેનું ઓળખચિહ્ન `gu-Gujr-IN` છે. `Gujr` ગુજરાતી લિપિ અને `IN` ભારતનો વિસ્તાર દર્શાવે છે. લખાણ ડાબેથી જમણે વાંચવાનું છે. ગદ્ય માટે આજની પ્રમાણભૂત ગુજરાતી લિપિ વપરાય છે. હાલ અલગ પ્રાદેશિક, સમુદાય-વિશેષ કે શૈલી-વિશેષ આવૃત્તિ બનાવવામાં આવી નથી.
 
-The prose register is educational and scholarly Gujarati suited to a logic
-textbook. Terminology decisions draw on locally inspected Gujarati State School
-Textbook Board mathematics books and Gujarati Vishwakosh mathematical and
-logical writing. The frozen English Open Logic source controls each formal
-claim. The authority passages support vocabulary and expository register; they
-are not treated as substitute sources for the mathematics.
+ગદ્યનો સ્વર તર્કશાસ્ત્રના પાઠ્યગ્રંથને યોગ્ય શૈક્ષણિક અને વિદ્વત્તાપૂર્ણ ગુજરાતી છે. શબ્દપ્રયોગ માટે ખરેખર વાંચેલા ગુજરાત રાજ્ય શાળા પાઠ્યપુસ્તક મંડળના ગણિતના પુસ્તકો તથા ગુજરાતી વિશ્વકોશનાં ગણિત અને તર્કશાસ્ત્રના લેખોનું માર્ગદર્શન લેવાય છે. દરેક ઔપચારિક ગણિતીય દાવા માટે સ્થિર અંગ્રેજી Open Logic સ્રોત જ અધિકૃત છે; ગુજરાતી ગ્રંથોના ઉતારા પરિભાષા અને સમજાવટની શૈલીને આધાર આપે છે, ગણિતીય સાબિતીના બદલે નથી.
 
-Mathematical displays retain the source's international notation, including
-Latin and Greek variables, logical signs, and Arabic digits inside formulas.
-Gujarati digits may appear in Gujarati prose and reader-interface counts. This
-is one notation profile within the semantic edition, rather than a second
-translation layer.
+ગણિતીય સૂત્રોમાં મૂળની આંતરરાષ્ટ્રીય સંજ્ઞાઓ, લૅટિન અને ગ્રીક ચલ, તર્કચિહ્નો અને અરબી અંકો જાળવવામાં આવે છે. ગુજરાતી ગદ્ય અને વાચકના આંકડામાં ગુજરાતી અંકો પણ આવી શકે છે. આ એક જ આવૃત્તિની સંજ્ઞા-પદ્ધતિ છે, બીજું ભાષાંતર સ્તર નથી.
 
-All authored Gujarati text is stored as Unicode and checked in NFC. Reader PDFs
-embed Noto Sans Gujarati, while the HTML reader ships the corresponding local
-webfonts. Names and specialist terms for which the checked authorities provide
-no exact Gujarati form may be transliterated into Gujarati script. Such choices
-are marked provisional or prioritized for expert review in
-[`translation-decisions/PRIORITY_REVIEW.md`](translation-decisions/PRIORITY_REVIEW.md).
+બધું રચાયેલું ગુજરાતી લખાણ Unicodeમાં અને NFC સ્વરૂપમાં સચવાય છે. PDFમાં Noto Sans Gujarati ફોન્ટ સમાયેલો છે; HTML વાચક તેની સ્થાનિક વેબ-ફોન્ટ ફાઇલો સાથે આવે છે. તપાસેલા સ્રોતોમાં કોઈ નિષ્ણાત શબ્દ કે નામનું ચોક્કસ ગુજરાતી સ્વરૂપ ન મળે તો ગુજરાતી લિપિમાં લિપ્યંતર થઈ શકે છે. આવા નિર્ણયોને તાત્કાલિક ગણવામાં આવે છે અને [પ્રાધાન્યવાળી સમીક્ષાની નોંધ](translation-decisions/PRIORITY_REVIEW.md)માં ચિહ્નિત કરવામાં આવે છે.
 
-No deterministic script projection is needed because Gujarati has a single
-standard script for this edition. A separate regional adaptation would be
-warranted only after evidence of a materially different terminology or register
-requirement. A pronunciation or accessibility companion could be added later as
-a child layer, but it would not change the semantic Gujarati text. The current
-release therefore records one `semantic_translation` layer and does not invent
-unsupported variants.
+આ આવૃત્તિ માટે ગુજરાતી લિપિનું અલગ યાંત્રિક રૂપાંતર જરૂરી નથી. અલગ પ્રાદેશિક સ્વરૂપ માટે પરિભાષા કે શૈલીમાં પદ્ધતિસરનો વાસ્તવિક તફાવત દર્શાવતું પ્રમાણ જોઈએ. પછીથી ઉચ્ચાર અથવા સુલભતા માટે સહાયક આવરણ બને તો પણ તે મૂળ ગુજરાતી અર્થલક્ષી લખાણને બદલતું નથી. તેથી હાલ માત્ર એક `semantic_translation` સ્તર નોંધાયું છે; પુરાવા વિના વધારાનાં સ્વરૂપો કલ્પવામાં આવ્યાં નથી.
 
-The policy is reviewable rather than prescriptive: corrections supported by
-Gujarati mathematical usage can update the decision register and every linked
-occurrence without creating a new variant unless the correction establishes a
-systematic audience-specific layer.
+આ નીતિ સુધારા માટે ખુલ્લી છે. ગુજરાતી ગણિતીય વપરાશથી સમર્થિત સુધારો નિર્ણય-નોંધમાં અને તેના દરેક જોડાયેલા પ્રસંગે લાગુ કરી શકાય છે. માત્ર એક સુધારા માટે નવી આવૃત્તિ-શાખા બનતી નથી, સિવાય કે તે કોઈ ચોક્કસ વાચકવર્ગ માટે પદ્ધતિસરનું સ્વરૂપ સાબિત કરે.
+
+આ નીતિ અને તેના ભાષાકીય સંપાદનનું AI કાર્ય OpenAI Codex — GPT-5.6 Sol, Ultra effort અને હાલના ગુજરાતી સુધારામાં OpenAI Codex — GPT-6 Sol, Ultra effort દ્વારા થયું છે; તે માનવીય પ્રમાણિત સમીક્ષા નથી.
