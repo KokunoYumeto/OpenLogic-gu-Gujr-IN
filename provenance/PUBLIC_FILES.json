@@ -16,18 +16,18 @@
   },
   {
     "file": "docs/BUILD_CUMULATIVE.md",
-    "bytes": 7768,
-    "sha256": "f89386d261ca7ba3289e8909cee92d5069995c138f4d2929579d0cca6ab9412f"
+    "bytes": 7951,
+    "sha256": "06844b1d9ad8d5f9637614214cfad7d255e703f4ee737f9bbea6cb1b26157dfc"
   },
   {
     "file": "docs/COMPUTABILITY_REVIEW.md",
-    "bytes": 5715,
-    "sha256": "3a716c5b2d42b02588bb0005a194987db42deaaff6eb2317ddf6484b9870cf9d"
+    "bytes": 5826,
+    "sha256": "3313291933c6b369372d69e25c09d0817bd890b170f9faec2fbba9dc951b8ad8"
   },
   {
     "file": "docs/EDITION_NOTES.md",
-    "bytes": 21842,
-    "sha256": "07dac7cf3ecd2fa86d36851ba5179b69aea9cabde5b6aa84eb79b23df6279621"
+    "bytes": 22124,
+    "sha256": "49d9ce21eea2b60cfb178da0f368b4978d6ee33d2bf45fe8175e2948d022df8a"
   },
   {
     "file": "docs/GUJARATI_EDITION_SCOPE.md",
@@ -76,8 +76,8 @@
   },
   {
     "file": "docs/translation-decisions/START_HERE.md",
-    "bytes": 4938,
-    "sha256": "c8387a3c9c67aa02169bd86a1d3fbe2ec7edf6facb46dc75b3adf8d020234353"
+    "bytes": 6018,
+    "sha256": "c80d78777cdf1366ec422ad8f9957114bdea3930286a576f352a6e46df527b1d"
   },
   {
     "file": "docs/translation-decisions/translation-decision.schema.json",
@@ -95,6 +95,11 @@
     "sha256": "237a0f1251aca9d8aee44745c37a3ebed819d61e61906eb04defcd12eeb7ffc5"
   },
   {
+    "file": "docs/translation-decisions/TURING_MACHINES_OCCURRENCES.csv",
+    "bytes": 42533,
+    "sha256": "d28709ece1c85eea52d734ddaefca62e6f26ecdb20363ba292e1555d1a61ac81"
+  },
+  {
     "file": "docs/TRANSLATION_DECISION_LOG_METADATA.json",
     "bytes": 1213,
     "sha256": "81178da6461a9f07e70f6d449f403e5f73c95e63026f485301a2f0cfd3f1679a"
@@ -103,6 +108,11 @@
     "file": "docs/TRANSLATION_DECISIONS.jsonl",
     "bytes": 1179745,
     "sha256": "3223e50f6eb636c7dc017ca45a746bd7f610d48a39357ec1684a62f8861bafb7"
+  },
+  {
+    "file": "docs/TURING_MACHINES_REVIEW.md",
+    "bytes": 7893,
+    "sha256": "341b25687fb12eb3598a05b00682c9be1cb666ddd4f198724871b9447bdbca98"
   },
   {
     "file": "fonts/FONT_PROVENANCE.json",
@@ -1370,6 +1380,66 @@
     "sha256": "92267db5ab4560c2a1f3786ee174caeed444c59983cf2c63d0a452fb8a254923"
   },
   {
+    "file": "gu/content/turing-machines/machines-computations/church-turing-thesis.tex",
+    "bytes": 4306,
+    "sha256": "3dbb12df7b2ee100787dc1e9861e78c48868f88a6a4a0a41b7574cdff41207f5"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/combining-machines.tex",
+    "bytes": 12518,
+    "sha256": "98cbf8470eb3d843103561f951ee84d648a80484aed7a476be7c00c85e237331"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/configuration.tex",
+    "bytes": 8662,
+    "sha256": "370ed40fa0cf23b144845a7c98bc3b4d4ad462584351e2969972c221d31fb1a9"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/disciplined-machines.tex",
+    "bytes": 6771,
+    "sha256": "f0ff39f57fa911fd99cd20519f6d4d1597e0c8e1fd803487f96066433dfa66d9"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/halting-states.tex",
+    "bytes": 4814,
+    "sha256": "86c40b6cbe68742ce78f2403ec26ddcc5976e49ee56ac5f379806d85cefa336e"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/introduction.tex",
+    "bytes": 13739,
+    "sha256": "11e627ef77211891ac4264125fdc5bb81860aa2a89513594b65de194cb33cb11"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/machines-computations.tex",
+    "bytes": 541,
+    "sha256": "a97b5b3214eafff8b922e6bf3211a50a3c559db72b499a72a8a9af06d971bdf5"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/representing-tms.tex",
+    "bytes": 19789,
+    "sha256": "fd3c8d6524d658a1152dada3e6e5b397f1fd9fe1e2cadb5eabe8da72452e520f"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/turing-machines.tex",
+    "bytes": 3909,
+    "sha256": "077b284b91a33f905c32eda27498a17593ca0323c3ae2490bcb21788406fde10"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/unary-numbers.tex",
+    "bytes": 15427,
+    "sha256": "c081613e9b357c179ff66e9d031dd8855ffab1a6a840cfcf9d5bb852c7efa1bd"
+  },
+  {
+    "file": "gu/content/turing-machines/machines-computations/variants.tex",
+    "bytes": 9245,
+    "sha256": "115a5c926a34676c690b78ef81b8791b20d51bf6c2f1ae1a8a161f20b8f2d483"
+  },
+  {
+    "file": "gu/content/turing-machines/turing-machines.tex",
+    "bytes": 287,
+    "sha256": "49c18343e4d50eceb7b8e60dfce0da7590e879845752d00d333cdbce9e316539"
+  },
+  {
     "file": "gu-arithmetization.tex",
     "bytes": 7746,
     "sha256": "ae3cfda284036d93a89bd7c9afba7ad233f3c0d39c9adc9902fef1cffe3a42f7"
@@ -1396,8 +1466,8 @@
   },
   {
     "file": "gu-computability.tex",
-    "bytes": 10585,
-    "sha256": "0234d08532ecf50ffd8d3c74ee8aaba6e30414f6e0f460a57c8c1562e2076928"
+    "bytes": 13919,
+    "sha256": "37bb78fc80b1fa20d302eb98d4078c4f73f20b7d4a8f05dac7b8f002adbeb498"
   },
   {
     "file": "gu-first-order-introduction.tex",
@@ -1486,8 +1556,13 @@
   },
   {
     "file": "gu-tableaux.tex",
-    "bytes": 21080,
-    "sha256": "1e2b8cb34b696052882187a3388f0ead5059be5882e0bf22a3302793ffc58e9b"
+    "bytes": 21281,
+    "sha256": "3d04f239e8873a6e9b4157988e93b9ed7fecf929439063989bd42d5533e58d62"
+  },
+  {
+    "file": "gu-turing-machines.tex",
+    "bytes": 77,
+    "sha256": "7ef4548d0bad0d6077b3d677500e97e749b7e1f6824930889bcdad017051304e"
   },
   {
     "file": "LICENSE.md",
@@ -1615,6 +1690,11 @@
     "sha256": "cccf7ce8d97d5368b195c230ffbf9b3b8292d57529222d048410f85f1f27ac5d"
   },
   {
+    "file": "provenance/BATCH_025.json",
+    "bytes": 5483,
+    "sha256": "bf32c4cffad19d83eaaee99c8e1e8442040b09dc4fb765b59c8dd260ed61d096"
+  },
+  {
     "file": "provenance/BROWSER_RUNTIME_016.json",
     "bytes": 1506,
     "sha256": "2861ef3f84b2202bfaccb45238d4ffc5d820b8d542cdd94371629a60522d5b4d"
@@ -1658,6 +1738,11 @@
     "file": "provenance/BROWSER_RUNTIME_024.json",
     "bytes": 13789,
     "sha256": "0f21aef6f9bf27a483e67c83371653ca44596e9a0542eb6724ca2367791e87e3"
+  },
+  {
+    "file": "provenance/BROWSER_RUNTIME_025.json",
+    "bytes": 27380,
+    "sha256": "f9ddebf357e9857d00190ea49c95c57d33ca5326e45bf321880fd3c42d2ccecd"
   },
   {
     "file": "provenance/BUILD_RECEIPT_005.json",
@@ -1755,14 +1840,19 @@
     "sha256": "6ad595b14c1abfa7a3055d96ba7db67455730d8a7f3a4f1b44ebab84b324cff3"
   },
   {
+    "file": "provenance/BUILD_RECEIPT_025.json",
+    "bytes": 18373,
+    "sha256": "9f1a71fb1f105a29e0b6adc24af014f5662514b122e3d1f60f6fec25d92ef05a"
+  },
+  {
     "file": "provenance/CANON_PASSAGE_SCHEMA.json",
     "bytes": 1384,
     "sha256": "544837e0f014324ea40110c932c6cf7e35355d31bfb8fbb01ce1d073e77be819"
   },
   {
     "file": "provenance/CANON_PASSAGES.jsonl",
-    "bytes": 87165,
-    "sha256": "2215bd18ec2528ae5d5b38da1c7468db6db3d28fda2ae3ca6957331cba5ac0c8"
+    "bytes": 91401,
+    "sha256": "fb2f0ed773fcd99e98833e20111df4392fd88d0dbab02fe126f0762e209858d9"
   },
   {
     "file": "provenance/CANON_SOURCES.jsonl",
@@ -1780,9 +1870,14 @@
     "sha256": "7be93a1c4cf8eeb8dd9a0a293033faee7174a8035121ac02ac05dd018258c7c2"
   },
   {
+    "file": "provenance/CHOICES_025.json",
+    "bytes": 26715,
+    "sha256": "8581ac3905ec69b916a99fa4f9c644a1c72283160297856831d58828acd02179"
+  },
+  {
     "file": "provenance/COVERAGE.json",
-    "bytes": 212464,
-    "sha256": "50d8ea3a233ca16f6697a878362fdc8c89b4c9cd66f73a62ae5892b891e71b3d"
+    "bytes": 213644,
+    "sha256": "89cae92265a8dcc365cb763eeb68c9113833ffc1d6d5dd00b4971d71aea79c95"
   },
   {
     "file": "provenance/CUMULATIVE_QA_008.json",
@@ -1863,6 +1958,16 @@
     "file": "provenance/CUMULATIVE_QA_024.json",
     "bytes": 2184,
     "sha256": "bd84c67a9f75d849a26e3a8f21b97eed96a94324499118cbb585815e7f52726d"
+  },
+  {
+    "file": "provenance/CUMULATIVE_QA_025.json",
+    "bytes": 1884,
+    "sha256": "fe184f473c781a3dd3b59a51d4161e9f7ed0f1dcf89b3fe95c2ed335dbbe10a4"
+  },
+  {
+    "file": "provenance/DECISION_OCCURRENCES_QA_025.json",
+    "bytes": 663,
+    "sha256": "851617567ebc91cfdac2372ff49035501204be7e2e9c3af21e10c1aa0711fb88"
   },
   {
     "file": "provenance/EPUB_BROWSER_RUNTIME_016.json",
@@ -2020,6 +2125,11 @@
     "sha256": "7de2d9c0a843072936fc9b21abee557576dbf333bc5d5baeb9428c1d4a5e77a6"
   },
   {
+    "file": "provenance/EPUB_QA_025.json",
+    "bytes": 1130,
+    "sha256": "2505207c742088155954233ca19e02cbb2fd1f877973719b287ccff4f5924cad"
+  },
+  {
     "file": "provenance/EPUBCHECK_013.json",
     "bytes": 35415,
     "sha256": "83db60984954abfcccd5c64747360dc42e0bfc78defb24eb945d0398952f1b6c"
@@ -2075,9 +2185,19 @@
     "sha256": "63759cf067c54dc867b3995d1a7d319d5c263adc1d108e98606ee8f1ae3e4f22"
   },
   {
+    "file": "provenance/EPUBCHECK_025.json",
+    "bytes": 65470,
+    "sha256": "1656504e0fc39e619902791169856972ae8e1a79face9547f33749b365fbbbe4"
+  },
+  {
     "file": "provenance/FINAL_QA_002.json",
     "bytes": 4068,
     "sha256": "0094321971adcc623103977ebc11e10c9902e6d9ce051ea310767be163e0dfb4"
+  },
+  {
+    "file": "provenance/FORMULA_TEXT_LOCALIZATIONS_025.json",
+    "bytes": 5582,
+    "sha256": "744a1ecda03bd9793b7788dbe877a4a86bc6757c9a4647fa445a92f503bea158"
   },
   {
     "file": "provenance/FULL_TEXT_SOURCE_MATERIALIZATION_011.json",
@@ -2115,6 +2235,11 @@
     "sha256": "606b189131ebc3ead256e9e50ebdaff82677ea2fa4ff31645e1e442f6b22def3"
   },
   {
+    "file": "provenance/FULL_TEXT_SOURCE_MATERIALIZATION_025.json",
+    "bytes": 2180,
+    "sha256": "6129e810e4479a2fc88eaa2285f9c4ca92d90a900af2e2f942c19614beb62028"
+  },
+  {
     "file": "provenance/FULL_TEXT_SOURCE_QA_011.json",
     "bytes": 2552,
     "sha256": "bfc389e4a9fa3e572bc36b4e8ddb774ac52d6e80040d9f52d867f082f8f7740d"
@@ -2148,6 +2273,11 @@
     "file": "provenance/FULL_TEXT_SOURCE_QA_024.json",
     "bytes": 1046,
     "sha256": "8a325f6f7cf16f90f495d39219be26c1e9ecbaf640a66cfc79f279c1118f1a14"
+  },
+  {
+    "file": "provenance/FULL_TEXT_SOURCE_QA_025.json",
+    "bytes": 1036,
+    "sha256": "3d5d4a9215142e64e72e14f826dc7b4e0ce9dfcfcab294081fd8b761ca77a2cc"
   },
   {
     "file": "provenance/GU_PROV_001_RECEIPT.json",
@@ -2268,6 +2398,11 @@
     "file": "provenance/HTML_QA_024.json",
     "bytes": 1082,
     "sha256": "cc7fd168e6551515443e876b8fbb3f7378a53b42d970d97ddedf1dcbf6770de3"
+  },
+  {
+    "file": "provenance/HTML_QA_025.json",
+    "bytes": 1016,
+    "sha256": "caeac95399ac97f11e661640fbefde1d8c0c60ed74c5e4fc758d894f4ace0fa8"
   },
   {
     "file": "provenance/LAPTOP_CANON_RECONCILIATION.json",
@@ -2395,6 +2530,11 @@
     "sha256": "622bfab03d703cada26374fda7745e8072f2d114d2677101e3b3e4107977ddc1"
   },
   {
+    "file": "provenance/PARITY_025.json",
+    "bytes": 16920,
+    "sha256": "99e503d3137d6468103a1d0e7ce73e21f39b7638abd5b7560dcb5ed4e84a04c7"
+  },
+  {
     "file": "provenance/PDF_QA_007.json",
     "bytes": 15577,
     "sha256": "900b4f70732cbf31698ab8f800df0bf958f7cae43ce42c7960c2af2c313e35d7"
@@ -2480,14 +2620,24 @@
     "sha256": "3a0cc0dbdd5d76f7e5965cb2f8a19c461b48a4df24927c5ef519a7952c6cb0aa"
   },
   {
+    "file": "provenance/PDF_QA_025.json",
+    "bytes": 3337,
+    "sha256": "224d67a1f46a70816308d78a1d6b5bb0d5080232f662ae07e73419d2d95549dd"
+  },
+  {
+    "file": "provenance/PUBLICATION_RECEIPT_018.json",
+    "bytes": 5315,
+    "sha256": "9407ba37070d3e8622a9ee172dde816dee8b3ac2a3dd37175dda48d9e36bfcdb"
+  },
+  {
     "file": "provenance/QA.json",
-    "bytes": 36517,
-    "sha256": "9a46830006818af233abf6a1cd855d05b7a34bb89bb2b77279802e361a409fb3"
+    "bytes": 32355,
+    "sha256": "7521ec837bccfe3cb3f86c0a12ef9588e47396bff8f132cdaf9d4fde9b7ed042"
   },
   {
     "file": "provenance/SEGMENT_CANON_USE.jsonl",
-    "bytes": 3436463,
-    "sha256": "56a713f337875144a074e864adb439d8438b8c6be0541570e76103168f564fb4"
+    "bytes": 3558996,
+    "sha256": "b443b147d833d39a40aa60e2d63932c903f072cebb6b2d55219af749959e122b"
   },
   {
     "file": "provenance/SEGMENT_CANON_USE_023.jsonl",
@@ -2498,6 +2648,11 @@
     "file": "provenance/SEGMENT_CANON_USE_024.jsonl",
     "bytes": 221242,
     "sha256": "5fb478e586b435b1c6db76c3003baad5e4bb22b6803c048f2b0ca1cbf023c880"
+  },
+  {
+    "file": "provenance/SEGMENT_CANON_USE_025.jsonl",
+    "bytes": 122533,
+    "sha256": "161de65b003352fda5e2a418bdcac98874ed7833ac92204c2b95f5cf11ea6cda"
   },
   {
     "file": "provenance/SEMANTIC_REVIEW_001.json",
@@ -2620,6 +2775,11 @@
     "sha256": "50083b07ed8bbe3604250c08c2f0b4792bce723adb58470be5179a44dfc9aee8"
   },
   {
+    "file": "provenance/SEMANTIC_REVIEW_025.json",
+    "bytes": 88198,
+    "sha256": "ef26337b2e5d4699250b6afa60a516d3e71f522bed1fb4a78fe50585091f73d7"
+  },
+  {
     "file": "provenance/SOURCE_CHECKPOINT_004.json",
     "bytes": 13352,
     "sha256": "832c98e28fd3409c217fbd55c29e8022839d426e44215a891d660386d131883c"
@@ -2720,6 +2880,11 @@
     "sha256": "2fefe863dfe4a81a5c73790d9012d014641a080d73e2f27dd39774bf61128cd8"
   },
   {
+    "file": "provenance/SOURCE_CHECKPOINT_025.json",
+    "bytes": 297715,
+    "sha256": "2931308dee7997a8278373f1609250d41e934cc330a116f6827d33312ba874bb"
+  },
+  {
     "file": "provenance/SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_016.json",
     "bytes": 1348,
     "sha256": "b6e393f23809dfd7388958f5805882c40fe96be4744f049020f6334cfafb34ec"
@@ -2758,6 +2923,11 @@
     "file": "provenance/SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_024.json",
     "bytes": 1115,
     "sha256": "d86ed8fbf0cf079f20f26d0a25bff3621ee868e016ca6c48f41c0b5c1e5733f0"
+  },
+  {
+    "file": "provenance/SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_025.json",
+    "bytes": 1115,
+    "sha256": "b51ccb25641fd7d663a821a938c42bca225bbd5c709c29e4fbd453492dc3dc42"
   },
   {
     "file": "provenance/SOURCE_CLAIM_QUALIFICATIONS.jsonl",
@@ -2875,14 +3045,19 @@
     "sha256": "c47c06fbe849adca6e22b4fe159617bf83c058ec5e6c597a773adc5146067c23"
   },
   {
+    "file": "provenance/SOURCE_CORRECTIONS_025.json",
+    "bytes": 6436,
+    "sha256": "44d746b7d82bb5d1058adfc9da2f8f8b5fc4f9b02ac361a090492cfdb2a45982"
+  },
+  {
     "file": "provenance/SOURCE_MANIFEST.jsonl",
     "bytes": 355745,
     "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
   },
   {
     "file": "provenance/TERM_DECISIONS.jsonl",
-    "bytes": 934876,
-    "sha256": "baaa5be617486795551ce39979374af6876d5406d717ba1a0929d88b983229ad"
+    "bytes": 1039155,
+    "sha256": "2388cafaefed5e699b5102b963eb74db99ae92709c3ee366047ba29b2054116d"
   },
   {
     "file": "provenance/UNTRANSLATED_SCAN_011.json",
@@ -2953,6 +3128,16 @@
     "file": "provenance/UNTRANSLATED_SCAN_024.json",
     "bytes": 9820,
     "sha256": "5b877ad93c0b44946b19fde48609559e1ee7c79168d95a25dbf4af84b01b6c61"
+  },
+  {
+    "file": "provenance/UNTRANSLATED_SCAN_025.json",
+    "bytes": 5731,
+    "sha256": "0f01e53a85bbcfd141583513e51b9446c7e29c3f088d10454420f23eeb087757"
+  },
+  {
+    "file": "provenance/ZENODO_PUBLICATION_RECEIPT_018.json",
+    "bytes": 5779,
+    "sha256": "fea2c6720798aa24c812ccab36b07a2575eadef1aa7bb8402b376a3e7fea43ee"
   },
   {
     "file": "reader/arithmetization.html",
@@ -3028,6 +3213,76 @@
     "file": "reader/assets/tree.svg",
     "bytes": 1546,
     "sha256": "579ff65e523d3a1ad418d47c782903fb26daab55feafe12cc47d14877939d096"
+  },
+  {
+    "file": "reader/assets/turing-machine-01.svg",
+    "bytes": 1451,
+    "sha256": "280944962ebf5e7700c2960e7629b28b78f79fe25c744513c91fdf54a9a89d40"
+  },
+  {
+    "file": "reader/assets/turing-machine-02.svg",
+    "bytes": 2071,
+    "sha256": "52643273d3bec75ce3c5a7b301aeae5992f4898b03b456f7f9bb6dec24f4d403"
+  },
+  {
+    "file": "reader/assets/turing-machine-03.svg",
+    "bytes": 2369,
+    "sha256": "2486e4c6aea286b438f5a188efdab783d4979be5cb619ef67363ab19b75c1b66"
+  },
+  {
+    "file": "reader/assets/turing-machine-04.svg",
+    "bytes": 5320,
+    "sha256": "236865d1e9ffab1e771adeba6094b0d8b35b53d6654322d9b32f20033e6d5767"
+  },
+  {
+    "file": "reader/assets/turing-machine-05.svg",
+    "bytes": 2863,
+    "sha256": "df3ea2e5da20aebec9d7f5ea80c65bd9b66f32e76844bf5d3d0a52d6c8889a1c"
+  },
+  {
+    "file": "reader/assets/turing-machine-06.svg",
+    "bytes": 7163,
+    "sha256": "34749845f0f3dc87aa9bcee171cc70b575f7b05a50eb7cac0b1f9193213f0a34"
+  },
+  {
+    "file": "reader/assets/turing-machine-07.svg",
+    "bytes": 7103,
+    "sha256": "30781d1828151d296ace109fc6d1d366eba230d060e2a977536b6190ba90ae41"
+  },
+  {
+    "file": "reader/assets/turing-machine-08.svg",
+    "bytes": 2579,
+    "sha256": "d76286b99887ca096c4f0f518869385d19ca69fc8fc8cc8b0373d8a4b268577a"
+  },
+  {
+    "file": "reader/assets/turing-machine-09.svg",
+    "bytes": 2787,
+    "sha256": "256e559ccabfb8af2003cb57c7579fa72382e519daec34cb5a55445640f16d6b"
+  },
+  {
+    "file": "reader/assets/turing-machine-10.svg",
+    "bytes": 3905,
+    "sha256": "6b73dc47f6fc3399cd0f2a2c0b45c7ac26956f339186ab32518ee5df12ce94e9"
+  },
+  {
+    "file": "reader/assets/turing-machine-11.svg",
+    "bytes": 2864,
+    "sha256": "956f4dd74e5baa1b9e088d0824eb8435814aa04ed9cfe80d4bb24dd9a2e5c351"
+  },
+  {
+    "file": "reader/assets/turing-machine-12.svg",
+    "bytes": 3906,
+    "sha256": "a73ce2f46e07dd01a5c574bf76052c3690ca92a782be53c59c912ecdfc5cdb9a"
+  },
+  {
+    "file": "reader/assets/turing-machine-13.svg",
+    "bytes": 8303,
+    "sha256": "fb0c7309f36fb39ce3ce89857b67ca1ffe1c0afa56d603d5c2f3b3cc9f51e668"
+  },
+  {
+    "file": "reader/assets/turing-machine.svg",
+    "bytes": 2503,
+    "sha256": "3e28061243605cfc0b13521618710ea98853df0cf345eb377417362ffb0a94eb"
   },
   {
     "file": "reader/assets/union.svg",
@@ -3155,9 +3410,19 @@
     "sha256": "0c4aa7d15c12b4b241a787ef66a6652c2c81d0367bde4582105bb3a8e329402c"
   },
   {
+    "file": "reader/turing-machines.css",
+    "bytes": 1443,
+    "sha256": "2da2417e6137fc84e2ebc2cc1d37dfbbc439d3afcdf04445c199723cc047894b"
+  },
+  {
+    "file": "reader/turing-machines.html",
+    "bytes": 6378353,
+    "sha256": "b463347bcef451a0acf5e727d74bbd5042488a95401045753860037972c4d5b4"
+  },
+  {
     "file": "README.md",
-    "bytes": 9085,
-    "sha256": "bbdf4575dcd954b202767fc688b48f4f557565f87e4bf1426e1a42abb87fbd3a"
+    "bytes": 10816,
+    "sha256": "04fd14c509cb3be361f283ee37579cf4fcc33674a398407544e75e54da5be976"
   },
   {
     "file": "releases/OpenLogic-gu-Gujr-IN-Axiomatic-Deduction.pdf",
@@ -3340,6 +3605,21 @@
     "sha256": "3bbc0dd6e7f3b31cefce2935f054e989e4145070492b4efed13331611fe8244a"
   },
   {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex",
+    "bytes": 1974134,
+    "sha256": "e8cb896d7a1ba5701ea590f511042432500a0deeea59cd983275c1ac84c8b63c"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
+    "bytes": 720401,
+    "sha256": "869041d2770dedbc8ca7fd269ac982e30cca9a04804c9dcd9fedfb8ba179290a"
+  },
+  {
+    "file": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
+    "bytes": 2802746,
+    "sha256": "f2faf1b0362beb92374e00cd8471daa91311f47c0404c28bd1c90823cddd1ffb"
+  },
+  {
     "file": "tools/build_computability_decision_locators.py",
     "bytes": 5458,
     "sha256": "7f0e038528f91bdad9f0cf2dc16e325e4e095ce909c20982d3f3f664669158f9"
@@ -3356,13 +3636,13 @@
   },
   {
     "file": "tools/build_computability_theory_epub.py",
-    "bytes": 3885,
-    "sha256": "449230acae4fbd9a91bb5ca4b843c2cfb390fc704e5da1ca7105ba98267adbe3"
+    "bytes": 3932,
+    "sha256": "bc8f836f3f849d024e1a2efa1a64be31ae5694957abc39993e25dcb7da4a5d6a"
   },
   {
     "file": "tools/build_computability_theory_html.py",
-    "bytes": 4149,
-    "sha256": "4d4c38704f239447bfd2b382cdfe0c4199ee637dec449e680ac1fd5e44af6e7e"
+    "bytes": 4196,
+    "sha256": "42d6966e57a3d5783f01b4e1587b9dbe31402e0e56763c55e8086c30bb2a6232"
   },
   {
     "file": "tools/build_epub.py",
@@ -3371,8 +3651,8 @@
   },
   {
     "file": "tools/build_first_order_introduction_epub.py",
-    "bytes": 37521,
-    "sha256": "6f30785a5a40bdbf508559e26f625c02f73fb282ea883333dca437e43bc247a1"
+    "bytes": 38139,
+    "sha256": "0c995d1c1b7d9e64e9d9b26dcc85a1d2263778f6ee011a8ef35d506335f17b1c"
   },
   {
     "file": "tools/build_foundations_html.py",
@@ -3401,8 +3681,8 @@
   },
   {
     "file": "tools/build_sets_guarded.ps1",
-    "bytes": 6798,
-    "sha256": "8b471f91bee23342991d1f9ee6c939f668e2862f162c48636ebf41be7758185e"
+    "bytes": 6863,
+    "sha256": "d161a5bc6fe9d566d540c1e1e27c5db28ae5df5fcd2a54c86842894719b5d5c6"
   },
   {
     "file": "tools/build_sets_html.py",
@@ -3458,6 +3738,21 @@
     "file": "tools/build_translation_decisions_models_arithmetic.py",
     "bytes": 2007,
     "sha256": "7cffb75fe7187fa41d8e981e87f3f884bc684afa1dddea1a24787c12bf6f1236"
+  },
+  {
+    "file": "tools/build_turing_machines_epub.py",
+    "bytes": 4357,
+    "sha256": "89be0a780e7a33a3c5e321907c69f09644df9b0ae5f0b8447e25fa8694236011"
+  },
+  {
+    "file": "tools/build_turing_machines_html.py",
+    "bytes": 9021,
+    "sha256": "d2a9bfbf4c834bd176b7d797a74efa51606046861d77c881d1ce829aecbc6b99"
+  },
+  {
+    "file": "tools/link_turing_machines_occurrences.py",
+    "bytes": 4794,
+    "sha256": "ba4c5e8dd67b7a19ba8ad87b1bb89569bd4a5c5363cc0fac237b03d3d14a7697"
   },
   {
     "file": "tools/prepare_arithmetization.py",
@@ -3585,9 +3880,29 @@
     "sha256": "acf858d3c3190c771f8985cd2a6b1734da78da7dc1ac933bf1e67482ffea1951"
   },
   {
+    "file": "tools/prepare_turing_machines.py",
+    "bytes": 5653,
+    "sha256": "ff04cc0a12c1e7e3d6e82806a013e6977d77c28052d1f53d1e45d880014e85f8"
+  },
+  {
+    "file": "tools/prepare_turing_machines_checkpoint.py",
+    "bytes": 5972,
+    "sha256": "0018d33f1a5b4e37231ae407faf5a56a6eb5400a9defc18fe2a0b2bdd893fecd"
+  },
+  {
+    "file": "tools/render_turing_graphs.py",
+    "bytes": 12520,
+    "sha256": "f676915b311a8a425ed1caa735ff18cddd007d235b15220fd57fc767843d97eb"
+  },
+  {
     "file": "tools/verify_computability_theory_full_text.py",
     "bytes": 2689,
     "sha256": "7dfcbeda0f7205c3d1d86ea793e759b4a9d15345538be3a29ed78cfcda59b9fc"
+  },
+  {
+    "file": "tools/verify_turing_machines_full_text.py",
+    "bytes": 2720,
+    "sha256": "2706017262c4e77514915e1597d259d7a9637176f5c1a26a79d7ac713c8691b0"
   },
   {
     "file": "upstream/.github/ISSUE_TEMPLATE/typo.md",
