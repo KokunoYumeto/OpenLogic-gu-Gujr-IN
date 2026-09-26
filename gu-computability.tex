@@ -144,6 +144,44 @@
     પૂરક, બહુ-એક ન્યૂનીકરણ, પૂર્ણતા, રાઇસનું પ્રમેય અને સ્થિર-બિંદુ
     પ્રમેય સામેલ છે. સ્થિર અંગ્રેજી મૂળની બાર ઓળખેલી પાઠ્ય અથવા
     અર્થલક્ષી ખામીઓ પારદર્શક નોંધો સાથે સુધારી છે.}
+  \ifdefined\guturingedition
+    \def\gueditiontitle{ટ્યુરિંગ મશીનો સહિત ઓપન લોજિક ગુજરાતી}
+    \def\gueditionheading{%
+      ગણો, સંબંધો, વિધેયો, ગણોનું કદ, અંકગણિતીકરણ,
+      અનંત ગણો, વિધાનાત્મક તર્કશાસ્ત્ર, નિષ્પત્તિ તંત્રો,
+      પ્રથમ-ક્રમ તર્કશાસ્ત્ર, નિદર્શસિદ્ધાંત,
+      સંગણનીયતા સિદ્ધાંત અને ટ્યુરિંગ મશીનની સંગણનાઓ}
+    \def\gueditiondescription{%
+      આ સંચિત આવૃત્તિમાં ટ્યુરિંગ મશીનોના ભાગનું પ્રથમ સંપૂર્ણ પ્રકરણ
+      ઉમેર્યું છે. મશીનોનું નિરૂપણ, સંરૂપણો, એક-પ્રતીકી સંખ્યાઓ,
+      થંભવાની અવસ્થાઓ, મશીનોનું સંયોજન, વિવિધ સ્વરૂપો અને
+      ચર્ચ--ટ્યુરિંગ માન્યતા સામેલ છે.}
+    \def\gueditioncount{૨૬૦}
+    \def\gueditionainotice{%
+      આ ગુજરાતી યંત્ર-અનુવાદ છે. અગાઉનાં ૨૦૪ એકમો OpenAI Codex GPT-5.6 Sol,
+      Ultra effort વડે અને નવા ૫૬ એકમો OpenAI Codex GPT-6 Sol, Ultra effort વડે
+      તૈયાર થયા છે. મૂળ સાથે આ જ એજન્ટની સરખામણી થઈ છે; સ્વતંત્ર ગુજરાતી
+      નિષ્ણાતનું પ્રમાણપત્ર મળેલું નથી. સંપૂર્ણ ૭૨૨-એકમ ગ્રંથનું કામ ચાલુ છે.}
+    \def\gueditionbodyfile{build/turing-machines-body.tex}
+    \def\gueditionlabelsfile{build/turing-machines-available-labels.tex}
+    \def\gueditioncorrectionids{%
+      અગાઉના OLFUN, OLSIZ, OLARI, OLINF, OLPL, OLPRF, OLSEQ,
+      OLND, OLTAB, OLAX, OLCO, OLFINT, OLSYN, OLSEM, OLMAT,
+      OLBYD, OLMTB, OLMAR, OLINT, OLLIN, OLCMP અને OLCT નોંધ-સમૂહો
+      તથા OLTM-001થી OLTM-004 સુધીની}
+    \def\gueditioneditorial{%
+      ટ્યુરિંગ મશીનની સંગણનાઓના નવા પ્રકરણમાં મશીનનાં અવસ્થાચિત્રો,
+      સંરૂપણો, સંખ્યાઓનું એક-પ્રતીકી નિરૂપણ અને મશીનોનું સંયોજન છે.
+      સ્થિર અંગ્રેજી મૂળની ચાર ઓળખેલી ખામીઓ દેખાતી નોંધો સાથે
+      મર્યાદિત રીતે સુધારી છે.}
+    \providecommand{\TMendtape}{\triangleright}
+    \providecommand{\TMblank}{0}
+    \providecommand{\TMstroke}{1}
+    \providecommand{\TMright}{R}
+    \providecommand{\TMleft}{L}
+    \providecommand{\TMstay}{N}
+    \providecommand{\TMtrans}[3]{\ensuremath{#1, #2, #3}}
+  \fi
 \fi
 \def\gucomputabilitymathdots{1}
 \input{gu-tableaux.tex}

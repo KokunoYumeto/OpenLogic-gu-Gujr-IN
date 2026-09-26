@@ -1,8 +1,12 @@
 \input{build/foundations-preamble.tex}
+\usepackage{tocloft}
 \ifdefined\gucomputabilitymathdots
   \usepackage{mathdots}
 \fi
 \usetikzlibrary{arrows}
+\ifdefined\guturingedition
+  \usetikzlibrary{automata,positioning}
+\fi
 \usepackage[authoryear]{natbib}
 \usepackage{upstream/sty/bussproofs-extra}
 \renewenvironment{prooftree}
@@ -254,6 +258,9 @@
 \quad \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}\par
 \href{https://github.com/KokunoYumeto/OpenLogic-translations}{અનુવાદોનું કેન્દ્ર}\par
 \end{titlepage}
+\setlength{\cftpartnumwidth}{3.2em}
+\setlength{\cftsecnumwidth}{3.6em}
+\setlength{\cftsubsecnumwidth}{4.4em}
 \tableofcontents
 \clearpage
 \input{\gueditionbodyfile}

@@ -1,0 +1,259 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: unary-numbers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{una}
+\olsection{સંખ્યાઓનું એક-પ્રતીકી નિરૂપણ}
+
+\begin{explain}
+ટ્યુરિંગ મશીનો પોતાની ટેપ પર લખાયેલા પ્રતીકોના અનુક્રમો
+પર કામ કરે છે. ટ્યુરિંગ મશીન કઈ વર્ણમાળા વાપરે છે તેના
+આધારે આ અનુક્રમો જુદા જુદા ઇનપુટ અને આઉટપુટ દર્શાવી
+શકે છે. ખાસ રસ, અલબત્ત, \emph{અંકગણિતીય} વિધેયો,
+એટલે પ્રાકૃતિક સંખ્યાઓનાં વિધેયો ગણતા ટ્યુરિંગ મશીનોમાં
+છે. ધન પૂર્ણાંકો દર્શાવવાની સરળ રીત તેમને એક જ
+પ્રતીક~$\TMstroke$ના અનુક્રમ તરીકે સંકેતિત કરવાની છે.
+$n \in \Nat$ હોય, તો $n = 0$ માટે $\TMstroke^n$
+ખાલી અનુક્રમ અને અન્યથા બરાબર $n$ $\TMstroke$ ધરાવતો
+અનુક્રમ છે.
+\end{explain}
+
+\begin{defn}[સંગણના]
+ટ્યુરિંગ મશીન~$M$ વિધેય $f\colon \Nat^k \to \Nat$
+\emph{ગણે છે} ત્યારે અને ત્યારે જ જ્યારે $M$ ઇનપુટ
+\[
+\TMstroke^{n_1} \TMblank \TMstroke^{n_2} \TMblank \dots \TMblank \TMstroke^{n_k}
+\]
+પર થંભે અને આઉટપુટ $\TMstroke^{f(n_1, \dots, n_k)}$
+આપે.
+\end{defn}
+
+\begin{prob}
+  ટ્યુરિંગ મશીન~$M$ વિધેય $f\colon \Nat^k \to \Nat^m$
+  ક્યારે ગણે છે તેની વ્યાખ્યા આપો.
+\end{prob}
+
+\begin{ex}\ollabel{ex:adder}
+\emph{સરવાળો:}
+ચાલો $f(n,m) = n + m$ વિધેય ગણતું મશીન બનાવીએ.
+તે માટે ટેપ પર $n$ અને~$m$ લંબાઈના $\TMstroke$ના
+બે સમૂહો લઈને શરૂ થતું અને $n+m$~$\TMstroke$ના એક
+સમૂહ સાથે થંભતું મશીન જોઈએ. ઇનપુટના બે $\TMstroke$
+સમૂહોને એક~$\TMblank$ અલગ કરે છે. તેથી એક રીત
+$\TMblank$ ધરાવતા ખાનામાં સ્ટ્રોક લખી અને છેલ્લો
+$\TMstroke$ ભૂંસી નાખવાની છે.
+\begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]\caption{$f(x,y) = x+y$ ગણતું મશીન}
+\ollabel{fig:adder}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+ઇનપુટ~$\tuple{3,2}$ માટે
+\olref[tur][mac][una]{ex:adder}માંના મશીનનાં સંરૂપણોનો
+ક્રમ અનુસરો. મશીન $0+0$ ગણે ત્યારે શું થાય છે?
+\end{prob}
+
+\begin{explain}
+\olref[rep]{ex:doubler}માં આપણે એવું ટ્યુરિંગ મશીન
+જોયું હતું જે ઇનપુટ તરીકે $\TMstroke$નો અનુક્રમ લે છે
+અને ટેપ પર તેનાથી બમણા $\TMstroke$ના અનુક્રમ સાથે
+થંભે છે---બમણું કરનાર મશીન. પરંતુ બમણા કરેલા
+$\TMstroke$ના સમૂહની ડાબે આઉટપુટમાં $\TMblank$ રહે
+છે. તેથી, તમે કદાચ ધાર્યું હોય તેમ, તે મશીન ખરેખર
+$f(x) = 2x$ વિધેય ગણતું નથી. આ ખામી દૂર કરવાની
+બે રીતો આપણે વર્ણવીશું.
+\end{explain}
+
+\begin{ex}
+\olref{fig:doubler-disc}માંનું મશીન $f(x) = 2x$ વિધેય
+ગણે છે. \olref[rep]{ex:doubler}માંનું મશીન ઇનપુટ
+ભૂંસીને તેના દરેક $\TMstroke$ માટે છેક જમણે બે
+$\TMstroke$ લખે છે; તેના બદલે આ મશીન ઇનપુટના
+દરેક $\TMstroke$ માટે જમણે એક જ $\TMstroke$ ઉમેરે
+છે. ઇનપુટ ક્યાં પૂરું થાય છે તેનો હિસાબ તેને રાખવો
+પડે છે. તેથી તે ઇનપુટ અને ઉમેરેલા સ્ટ્રોક વચ્ચે એક
+$\TMblank$ રાખે છે, જેને છેવટે $\TMstroke$થી ભરે
+છે. આપણે ઇનપુટમાં ક્યાં છીએ તે પણ ``યાદ'' રાખવું
+પડે છે, એટલે ઇનપુટના સમૂહમાંના એક $\TMstroke$ને
+કામચલાઉ રીતે $\TMblank$થી બદલીએ છીએ.
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (0)              {$q_0$};
+  \node[state]         (1) [above of=0] {$q_1$};
+  \node[state]         (2) [above of=1] {$q_2$};
+  \node[state]         (3) [right of=2] {$q_3$};
+  \node[state]         (4) [below of=3] {$q_4$};
+  \node[state]         (5) [below of=4] {$q_5$};
+  \node[state]         (6) [above right of=4] {$q_6$};
+  \node[state]         (7) [below of=6] {$q_7$};
+  \node[state]         (8) [below of=7] {$q_8$};
+
+  \path (0) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (1)
+%    (0) edge node {\TMtrans{\TMblank}{\TMblank}{\TMstay}} (h)
+    (1) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (1)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (3)
+        edge node[left] {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (4)
+    (4) edge        node[left] {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (0)
+    (4) edge      node[sloped] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (6)
+    (6) edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (7)
+    (7) edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (7)
+        edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (8)
+    (8) edge [loop right] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (8);
+    \end{tikzpicture}
+\]
+\caption{$f(x) = 2x$ ગણતું મશીન}
+\ollabel{fig:doubler-disc}
+\end{figure}
+\end{ex}
+
+\begin{ex}\ollabel{ex:mover}
+$f(x) = 2x$ ગણવાની બીજી રીત મૂળ બમણું કરનાર મશીન
+રાખીને છેવટે બમણા સ્ટ્રોકના સમૂહને ટેપની છેક ડાબે
+લઈ જતી અવસ્થાઓ અને સૂચનાઓ ઉમેરવાની છે.
+\olref{fig:mover}માંનું મશીન આ છેલ્લો ભાગ જ કરે છે:
+$\TMblank$ના સમૂહ પછી $\TMstroke$નો સમૂહ હોય
+એવી ટેપ પર (અને હેડ $\TMblank$ના સમૂહમાં ગમે ત્યાં
+હોય) તેને શરૂ કરીએ, તો તે એક પછી એક $\TMstroke$
+ભૂંસીને ટેપની શરૂઆતમાં લખે છે. કામ પૂરું થયું છે તે
+ઓળખી શકાય એ માટે તે પહેલાં $\TMstroke$ના સમૂહનો
+છેડો $\TMendtape$ પ્રતીક વડે ચિહ્નિત કરે છે; છેવટે
+આ પ્રતીક ભૂંસાઈ જાય છે. આપણે અવસ્થાઓને~$q_6$થી
+ક્રમ આપવાનું શરૂ કર્યું છે, જેથી તેને બમણું કરનાર મશીનમાં
+ઉમેરી શકાય. તમારે વધારાની સૂચના
+$\delta(q_0, \TMblank) = \tuple{q_6,\TMblank,\TMstay}$,
+એટલે~$q_0$થી~$q_6$ સુધીનું
+$\TMtrans{\TMblank}{\TMblank}{\TMstay}$ ચિહ્નવાળું તીર,
+ઉમેરવાનું છે. (એક સૂક્ષ્મ સમસ્યા છે: મળેલું મશીન
+ઇનપુટ~$x=0$ માટે કામ કરતું નથી. તેને આપણે અભ્યાસપ્રશ્ન
+તરીકે રાખીએ છીએ.)
+\begin{figure}
+  \[
+  \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                      semithick]
+    \tikzstyle{every state}=[fill=none,draw=black,text=black]
+    \node[initial,state] (6)              {$q_6$};
+    \node[state]         (7) [right of=6] {$q_7$};
+    \node[state]         (8) [right of=7] {$q_8$};
+    \node[state]         (9) [below of=8] {$q_9$};
+    \node[state]         (10) [left of=9] {$q_{10}$};
+    \node[state]         (11) [left of=10]  {$q_{11}$};
+    \node[state]         (12) [below of=11]  {$q_{12}$};
+    \node[state]         (13) [right of=12] {$q_{13}$};
+    \node[state]         (14) [right of=13] {$q_{14}$};
+    \path
+    (6)  edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+    (7)  edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+         edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+    (8)  edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+         edge node {\TMtrans{\TMblank}{\TMendtape}{\TMleft}} (9)
+    (9)  edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (9)
+         edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (10)
+    (10) edge node[above] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (11) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (11)
+         edge node[left] {\begin{tabular}{@{}l@{}}
+          \TMtrans{\TMendtape}{\TMendtape}{\TMright}\\
+          \TMtrans{\TMstroke}{\TMstroke}{\TMright}
+         \end{tabular}} (12)
+    (12) edge node[] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (13)
+    (13) edge [loop below] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (13)
+         edge node[sloped] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (13) edge node {\TMtrans{\TMendtape}{\TMblank}{\TMstay}} (14);
+  \end{tikzpicture}
+  \]
+  \caption{$\TMstroke$ના સમૂહને ડાબે ખસેડવું}
+  \ollabel{fig:mover}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+\olref[tur][mac][una]{ex:mover}માં આપણે
+\olref[rep]{ex:doubler}માંના બમણું કરનાર મશીન અને
+\olref[tur][mac][una]{fig:mover}માંના ખસેડનાર મશીનને
+જોડીને બનેલા મશીનનું વર્ણન કર્યું. આ સંયુક્ત મશીનને
+ઇનપુટ~$x=0$, એટલે ખાલી ટેપ, પર શરૂ કરીએ તો શું
+થાય છે? આ કિસ્સામાં મશીન આઉટપુટ~$2x=0$ સાથે
+થંભે એ માટે તેને કેવી રીતે સુધારશો? (એક અવસ્થા અને
+એક સંક્રમણ ઉમેરીને આ કરી શકવું જોઈએ.)
+\end{prob}
+
+\sourcecorrection{OLTM-003}{સ્થિર અંગ્રેજી મૂળના આ પ્રશ્નમાં
+બમણું કરનાર મશીન માટે $f(x)=2x$ આપતી
+\olref[tur][mac][una]{fig:doubler-disc} આકૃતિનો સંદર્ભ છે.
+પરંતુ તરત અગાઉનું વર્ણન મૂળ
+\olref[rep]{ex:doubler} મશીનને
+\olref[tur][mac][una]{fig:mover} સાથે જોડે છે; પ્રશ્નમાં
+તે જ મૂળ મશીનનો સંદર્ભ આપ્યો છે.}
+
+\begin{prob}
+\emph{બાદબાકી:} $n$ અને~$m$ લંબાઈની બે ખાલી ન હોય
+એવી સ્ટ્રોકની શબ્દમાળાઓ ઇનપુટ તરીકે મળે, જ્યાં
+$n > m$ હોય, ત્યારે $f(n,m) = n - m$ વિધેય ગણતું
+ટ્યુરિંગ મશીન રચો.
+\end{prob}
+
+\begin{prob}
+\emph{સમાનતા:} નીચેનું વિધેય ગણતું ટ્યુરિંગ મશીન રચો:
+\[
+\fn{equality}(n,m) =
+\begin{cases}
+  \text{1} & \text{જો~$n = m$ હોય} \\
+  \text{0} & \text{જો~$n \neq m$ હોય}
+\end{cases}
+\]
+અહીં~$n$ અને~$m \in \PosInt$ છે.
+\end{prob}
+
+\begin{prob}
+$x$ અને $y$ ધન પૂર્ણાંકોને ટેપ પર $\TMblank$થી
+અલગ કરેલી $\TMstroke$ની શબ્દમાળાઓ વડે દર્શાવ્યા હોય,
+ત્યારે $\min(x,y)$ વિધેય ગણતું ટ્યુરિંગ મશીન રચો.
+મશીનની વર્ણમાળામાં વધારાનાં પ્રતીકો વાપરી શકો છો.
+
+વિધેય $\min$ તેના આર્ગ્યુમેન્ટોમાંથી સૌથી નાનું મૂલ્ય
+પસંદ કરે છે: તેથી $\min(3,5)=3$, $\min(20,16)=16$
+અને $\min(4,4)=4$ વગેરે.
+\end{prob}
+
+\begin{defn}
+  ટ્યુરિંગ મશીન~$M$ આંશિક વિધેય $f\colon \Nat^k
+  \pto \Nat$ ગણે છે ત્યારે અને ત્યારે જ જ્યારે
+  \begin{enumerate}
+    \item $f(n_1, \dots, n_k) = m$ હોય તો $M$ ઇનપુટ
+    $\TMstroke^{n_1}\concat\TMblank\concat
+    \dots \concat\TMblank\concat\TMstroke^{n_k}$ પર
+    આઉટપુટ $\TMstroke^{m}$ સાથે થંભે છે.
+    \item $f(n_1, \dots, n_k)$ અવ્યાખ્યાયિત હોય તો
+    $M$ થંભતું જ નથી, અથવા $\TMstroke$ના એક જ
+    સમૂહથી ન બનેલા આઉટપુટ સાથે થંભે છે.
+  \end{enumerate}
+\end{defn}
+
+\end{document}

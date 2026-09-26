@@ -573,7 +573,16 @@ def stage_book(stage: Path) -> dict[str, object]:
     shutil.copyfile(CSS, stage / "OEBPS" / "styles" / "reader.css")
     for name in ("NotoSansGujarati-Regular.ttf", "NotoSansGujarati-Bold.ttf"):
         shutil.copyfile(FONTS / name, stage / "OEBPS" / "fonts" / name)
-    asset_names = sorted(path.name for path in ASSETS.glob("*.svg"))
+    # Package exactly the SVGs referenced by this edition.  Later cumulative
+    # readers may leave additional assets in the shared directory.
+    content_document = etree.fromstring(content, parser=etree.XMLParser(
+        resolve_entities=False, no_network=True, huge_tree=True))
+    image_sources = [node.get("src") for node in content_document.xpath(
+        ".//*[local-name()='img']")]
+    require(all(source and source.startswith("assets/") and source.endswith(".svg")
+                and Path(source).name == source[len("assets/"):]
+                for source in image_sources), "unexpected image path")
+    asset_names = sorted({Path(source).name for source in image_sources})
     expected_assets = 14 if EDITION == "interpolation" else 13
     require(
         len(asset_names) == expected_assets,

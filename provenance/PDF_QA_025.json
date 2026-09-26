@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-gu-pdf-qa/25",
+  "checked_at_utc": "2026-09-26T03:01:54.647102+00:00",
+  "path": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
+  "bytes": 2802746,
+  "sha256": "f2faf1b0362beb92374e00cd8471daa91311f47c0404c28bd1c90823cddd1ffb",
+  "coverage": "260/722; OLP-0004–0263",
+  "pages": 316,
+  "source_correction_disclosures_new": 4,
+  "guarded_build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "convergence_and_replay_passes": 3,
+    "all_three_passes_byte_identical": true,
+    "receipt_sha256": "9f1a71fb1f105a29e0b6adc24af014f5662514b122e3d1f60f6fec25d92ef05a"
+  },
+  "visual_inspection": {
+    "first_new_content_page": 301,
+    "new_pages_rendered": 16,
+    "new_pages_visually_inspected_in_contact_sheets": true,
+    "all_new_pages_rendered_at_1500px": true,
+    "title_and_toc_inspected_at_1500px": [
+      1,
+      11
+    ],
+    "boundary_check_sha256": "023fb9c4752eab8810d5753eed800bbf8172cb1ae41cbbb33c41acf4d8894d44",
+    "contact_sheet_sha256": {
+      "contact-01.png": "e980be8f140b882069b775aa15548e68f9372e88f852ff10937c0da2f7bc3265",
+      "contact-02.png": "21e7eca48539687749f684f500432d5a1dce89c0df3f6777fa3ff67a2046736c",
+      "contact-03.png": "09d40c1c19ddc2465c2bff5682d6c4b1a28ec0af11775b1fc3cf57f28408b654",
+      "contact-04.png": "3b0097a4260e9a151d9a303244dcac37987871f28a6da4d64d4cd2ef5a6f6e79"
+    },
+    "full_page_sha256": {
+      "detail-301.png": "3d9a82ec2fa660bf31734cbaae30ca42def5f4066bc9976f78e11b64d2b285da",
+      "detail-302.png": "27d173bbb4970503311d1ddee6ddbadca0b2b3ae19512d8ec455e43d564b71ba",
+      "detail-303.png": "814bccaba398158e1d49a5a23b23fcf6da7c3e47e9cc4862f9c40adc4a28928c",
+      "detail-304.png": "c40e02da09d259492c76c9f51a5d799d1a5d86fbb4b1a3c2a9802eb230da93fd",
+      "detail-305.png": "438c7f0c2efa8a968883ab1cc092b632a9beea2f203b8dbb4bf3431106d5c49e",
+      "detail-306.png": "f5c9bc3f3941f72a50501f303086f7da853708b5220b5ba7b4cad54244d448da",
+      "detail-307.png": "02c53420118598ff92740609b705e4c8668d8b0cd5c95d11c43bb27df6acc663",
+      "detail-308.png": "eb898070c23cc433f2382ebcbd1c02bfb7228d761c5bf06a4462f5ba10b845b4",
+      "detail-309.png": "fe7ab7151c63cda528bb7bb2391f99e44a64f49726af77bfaf76df59f0455776",
+      "detail-310.png": "06e4bfdde28a775e41fcbc08f1e553619dc6777be1a00deac3acaaf909c4b416",
+      "detail-311.png": "34328768636986f9756d004a284226fd949aaa457faf9720e5fc8c69427815a3",
+      "detail-312.png": "aeb21c1b1534fbec137571acd0156f0d6803db4341b476e934f0e84a3e50bd4e",
+      "detail-313.png": "d8bddf0ad03bb4bea6e43550437f62a2ccabb02c940fd4111ab10e1264c7cc84",
+      "detail-314.png": "409555aff9012df1c90cef1ec668e4266d81bba12c246af529ce398442ff513f",
+      "detail-315.png": "40c415fab42c3569f1f186d09ce89527233e6ceae0a0ff698d797354b192f5b1",
+      "detail-316.png": "fb113d93c72b6517d4c1c8fd0369fd127c89f52c7d8dbfdae82759f17806803c"
+    },
+    "sample_sha256": {
+      "PDF025_title.png": "fd3c46f2b8aa3d1ccc703b9c6d0406565f3054a9006c9641e92a99a41c81505c",
+      "PDF025_toc.png": "9fb12d873f90fb8ba09fcd24de30502b4ab71cbd572c4e2be7acb678ed3a84ee"
+    },
+    "result": "Gujarati shaping, diagrams, formulas, correction boxes, hierarchy and bibliography legible; no overlap, cutoff or blank pages observed in new-content pages."
+  },
+  "status": "passed_reproducible_build_and_all_new_page_visual_qa"
+}

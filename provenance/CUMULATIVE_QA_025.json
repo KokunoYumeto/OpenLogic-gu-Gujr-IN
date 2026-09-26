@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-gu-cumulative-reader-qa/25",
+  "checked_at_utc": "2026-09-26T03:05:50.416137+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "working_coverage": {
+    "translated": 260,
+    "total": 722,
+    "units": "OLP-0004–0263"
+  },
+  "public_release_verified_at_check": 248,
+  "public_source_checkpoint_verified_at_check": 248,
+  "new_batch": {
+    "batch": 25,
+    "units": 12,
+    "linguistic_blocks": 99,
+    "math_spans": 439,
+    "same_agent_reverse_samples": 44,
+    "source_corrections": 4,
+    "batch_sha256": "bf32c4cffad19d83eaaee99c8e1e8442040b09dc4fb765b59c8dd260ed61d096",
+    "parity_sha256": "99e503d3137d6468103a1d0e7ce73e21f39b7638abd5b7560dcb5ed4e84a04c7",
+    "semantic_sha256": "ef26337b2e5d4699250b6afa60a516d3e71f522bed1fb4a78fe50585091f73d7"
+  },
+  "cumulative_evidence": {
+    "linguistic_blocks": 2597,
+    "source_math_spans": 14642,
+    "same_agent_reverse_samples": 1237,
+    "source_corrections": 201,
+    "term_decisions": 241,
+    "input_receipts": 256,
+    "rendered_sections": 230,
+    "new_html_anchored_decision_occurrences": 72
+  },
+  "artifacts": {
+    "html_sha256": "b463347bcef451a0acf5e727d74bbd5042488a95401045753860037972c4d5b4",
+    "mathml": 14646,
+    "pdf_sha256": "f2faf1b0362beb92374e00cd8471daa91311f47c0404c28bd1c90823cddd1ffb",
+    "pdf_pages": 316,
+    "epub_sha256": "869041d2770dedbc8ca7fd269ac982e30cca9a04804c9dcd9fedfb8ba179290a",
+    "epubcheck_messages": 0,
+    "full_text_sha256": "e8cb896d7a1ba5701ea590f511042432500a0deeea59cd983275c1ac84c8b63c",
+    "full_text_exact_pdf_reproduction": true
+  },
+  "limits": "Same-agent bilingual and mathematical review; no independent Gujarati specialist certification. Public coverage changes only after exact anonymous publication readback.",
+  "status": "passed_local_260_unit_html_pdf_epub_gate_pending_source_package_and_publication"
+}

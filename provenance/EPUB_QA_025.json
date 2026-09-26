@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-epub-qa/25",
+  "checked_at_utc": "2026-09-26T02:29:05.878622+00:00",
+  "coverage": "260/722; OLP-0004–0263",
+  "runtime_receipt_sha256": "f9ddebf357e9857d00190ea49c95c57d33ca5326e45bf321880fd3c42d2ccecd",
+  "runtime_visual_inspection": "passed_runtime_and_representative_visual_inspection",
+  "path": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
+  "bytes": 720401,
+  "sha256": "869041d2770dedbc8ca7fd269ac982e30cca9a04804c9dcd9fedfb8ba179290a",
+  "epubcheck": {
+    "version": "5.3.0",
+    "messages": 0,
+    "report_sha256": "1656504e0fc39e619902791169856972ae8e1a79face9547f33749b365fbbbe4"
+  },
+  "cold_replay_byte_identical": true,
+  "native_mathml_nodes_exact_against_html": 14646,
+  "tex_annotations_exact_against_html": 14641,
+  "gujarati_character_sequence_exact_against_html": true,
+  "content_ids": 931,
+  "broken_internal_content_links": 0,
+  "navigation_links": 266,
+  "described_svg_figures": 29,
+  "all_four_new_source_corrections_preserved": true,
+  "exact_ai_attribution_in_about_and_metadata": true,
+  "status": "passed_structural_epubcheck_runtime_and_visual_inspection"
+}

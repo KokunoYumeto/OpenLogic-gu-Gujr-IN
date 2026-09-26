@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-labelledby="tm-title tm-desc">
+<title id="tm-title">ટ્યુરિંગ મશીનનું અવસ્થાચિત્ર 2</title>
+<desc id="tm-desc">અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R</desc>
+<defs><marker id="tm-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#17233b" stroke-width="1.5"/></marker></defs>
+<g fill="none" stroke="#17233b" stroke-width="2.2" marker-end="url(#tm-arrow)">
+<path d="M136.0,120.0 Q198.5,82.0 261.0,120.0"/>
+<path d="M274,100 C234,52 346,52 306,100"/>
+<path d="M264.0,120.0 Q201.5,158.0 139.0,120.0"/>
+</g>
+<rect x="162.5" y="74.0" width="72" height="28" rx="4" fill="white" fill-opacity="0.93"/>
+<text x="198.5" y="93.0" text-anchor="middle" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" fill="#17233b">1, 1, R</text>
+<rect x="254.0" y="46.0" width="72" height="28" rx="4" fill="white" fill-opacity="0.93"/>
+<text x="290.0" y="65.0" text-anchor="middle" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" fill="#17233b">0, 0, R</text>
+<rect x="165.5" y="112.0" width="72" height="28" rx="4" fill="white" fill-opacity="0.93"/>
+<text x="201.5" y="131.0" text-anchor="middle" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" fill="#17233b">1, 1, R</text>
+<path d="M40,120 L83,120" fill="none" stroke="#17233b" stroke-width="2.2" marker-end="url(#tm-arrow)"/>
+<circle cx="110" cy="120" r="26" fill="white" stroke="#17233b" stroke-width="2.2"/>
+<text x="110" y="126" text-anchor="middle" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" fill="#17233b">q₀</text>
+<circle cx="290" cy="120" r="26" fill="white" stroke="#17233b" stroke-width="2.2"/>
+<text x="290" y="126" text-anchor="middle" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" fill="#17233b">q₁</text>
+</svg>

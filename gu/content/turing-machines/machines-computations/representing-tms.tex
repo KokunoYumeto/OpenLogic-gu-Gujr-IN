@@ -1,0 +1,301 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: representing-tms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{rep}
+\olsection{ટ્યુરિંગ મશીનોનું નિરૂપણ}
+
+\begin{explain}
+ટ્યુરિંગ મશીનોને \emph{અવસ્થા-આલેખો} વડે ચિત્રરૂપે દર્શાવી
+શકાય છે. આવા આલેખોમાં તીરોથી જોડાયેલાં અવસ્થાનાં ખાનાં હોય
+છે. દરેક અવસ્થાનું ખાનું મશીનની એક અવસ્થા દર્શાવે છે. દરેક
+તીર તે અવસ્થામાંથી અમલમાં મૂકી શકાય એવી એક સૂચના દર્શાવે છે;
+તે સૂચનાની વિગતો સંબંધિત તીરની ઉપર અથવા નીચે લખેલી હોય
+છે. નીચેના મશીનમાં માત્ર બે આંતરિક અવસ્થાઓ, $q_0$ અને
+$q_1$, તથા એક સૂચના છે:
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]   (A)              {$q_0$};
+  \node[state]   (B) [right of=A] {$q_1$};
+
+  \path (A) edge  node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (B);
+\end{tikzpicture}
+\]
+યાદ કરો કે ટ્યુરિંગ મશીન પાસે વાંચન-લેખન હેડ અને તેના પર
+ઇનપુટ લખેલી ટેપ હોય છે. આ સૂચનાનો અર્થ છે: \emph{અવસ્થા
+$q_0$માં $\TMblank$ વાંચતા હો, તો $\TMstroke$ લખો, જમણે ખસો
+અને અવસ્થા $q_1$માં જાઓ}. આ વાત સંક્રમણ વિધેયમાં
+$\tuple{q_0, \TMblank}$ને $\tuple{q_1, \TMstroke,
+\TMright}$ સાથે જોડવા સમકક્ષ છે.
+\end{explain}
+
+\begin{ex}
+\emph{સમ મશીન}: ટેપ પર $\TMstroke$ની સંખ્યા સમ હોય ત્યારે
+અને ત્યારે જ નીચેનું ટ્યુરિંગ મશીન થંભે છે (એવી ધારણા હેઠળ કે
+ટેપ પરના બધા $\TMstroke$ પ્રથમ $\TMblank$ પહેલાં આવે છે).
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+
+આ અવસ્થા-આલેખને નીચેનું સંક્રમણ વિધેય અનુરૂપ છે:
+\begin{align*}
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}
+\end{align*}
+\end{ex}
+
+\begin{explain}
+ઉપરનું મશીન ઇનપુટમાં સ્ટ્રોકની સંખ્યા સમ હોય ત્યારે
+જ થંભે છે. નહીંતર મશીન (સૈદ્ધાંતિક રીતે) અનંત સમય સુધી
+ચાલુ રહે છે. કોઈ પણ મશીન અને ઇનપુટ માટે આઉટપુટ નક્કી
+કરવા મશીનની \emph{સંરૂપણો}નો ક્રમ અનુસરવો શક્ય છે.
+સંરૂપણની ઔપચારિક વ્યાખ્યા આપણે આગળ આપીશું. હાલ પૂરતું,
+મશીન ચાલે ત્યારે જુદા જુદા સમયે તેની સ્થિતિ દર્શાવતા આલેખોની
+શ્રેણી તરીકે સંરૂપણોને સહજ રીતે સમજી શકાય. સંરૂપણમાં ટેપની
+સામગ્રી, મશીનની અવસ્થા અને વાંચન-લેખન હેડનું સ્થાન દેખાય છે.
+
+ચાર $\TMstroke$નું ઇનપુટ આપીએ ત્યારે સમ મશીનનાં સંરૂપણો
+ક્રમશઃ જોઈએ. આ કિસ્સામાં મશીન થંભશે એવી આપણી અપેક્ષા
+છે. પછી તેને ત્રણ $\TMstroke$નું ઇનપુટ આપીશું; ત્યારે તે
+હંમેશાં ચાલતું રહેશે.
+
+મશીન અવસ્થા~$q_0$માં શરૂ થાય છે અને સૌથી ડાબો
+$\TMstroke$ વાંચે છે. મશીનની આ પ્રારંભિક સ્થિતિ આ રીતે
+દર્શાવી શકાય:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMstroke \TMblank \ldots
+\]
+ઉપરનું સંરૂપણ સમજવું સહેલું છે. મશીન પ્રથમ અવસ્થામાં
+સૌથી ડાબો $\TMstroke$ વાંચતાં શરૂ થાય છે. પ્રથમ
+$\TMstroke$ને અવસ્થાના નામનો નિમ્નસૂચક લગાવીને આ દર્શાવ્યું
+છે. આ સમયે લાગુ પડતી સૂચના
+$\delta(q_0, \TMstroke) = \tuple{q_1, \TMstroke, \TMright}$
+છે. તેથી મશીન ટેપ પર જમણે ખસે છે અને અવસ્થા~$q_1$માં
+જાય છે.
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMstroke \TMblank \ldots
+\]
+હવે મશીન અવસ્થા~$q_1$માં $\TMstroke$ વાંચતું હોવાથી,
+આપણે સૂચના $\delta(q_1, \TMstroke) = \tuple{q_0,
+  \TMstroke, \TMright}$ને ``અનુસરવી'' પડશે. પરિણામે આ
+સંરૂપણ મળે છે:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMstroke \TMblank \ldots
+\]
+મશીન આગળ ચાલે છે ત્યારે આ જ ક્રમમાં નિયમો ફરી લાગુ પડે
+છે અને નીચેના બે સંરૂપણો મળે છે:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke_1 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke \TMblank_0 \ldots
+\]
+હવે મશીન અવસ્થા~$q_0$માં $\TMblank$ વાંચે છે. સંક્રમણ
+આલેખ પરથી સહેલાઈથી દેખાય છે કે હવે અમલમાં મૂકવા માટે કોઈ
+સૂચના નથી, એટલે મશીન થંભી ગયું છે. તેનો અર્થ છે કે
+ઇનપુટ સ્વીકારાયું છે.
+
+હવે ધારો કે મશીનને ત્રણ $\TMstroke$નું ઇનપુટ આપીએ.
+ટેપ પરના ઇનપુટમાં નાનો તફાવત હોવા છતાં એ જ સૂચનાઓ લાગુ
+પડતી હોવાથી શરૂઆતનાં કેટલાંક સંરૂપણો સરખાં હોય છે:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMblank_1 \ldots
+\]
+મશીન હવે બધા $\TMstroke$ વટાવી ચૂક્યું છે અને
+અવસ્થા~$q_1$માં $\TMblank$ વાંચે છે. આલેખમાં બતાવ્યા
+પ્રમાણે, અહીં $\delta(q_1, \TMblank) =\tuple{q_1,
+\TMblank, \TMright}$ સ્વરૂપની સૂચના છે. ટેપ જમણી તરફ
+અનંત સુધી $\TMblank$થી ભરેલી હોવાથી, મશીન
+અવસ્થા~$q_1$માં રહીને વધુ ને વધુ જમણે ખસતું આ સૂચના
+\emph{હંમેશાં} ચલાવશે. મશીન ક્યારેય થંભશે નહીં અને ઇનપુટ
+સ્વીકારશે નહીં.
+\end{explain}
+
+\begin{explain}
+દરેક મશીન થંભતું નથી, એ નોંધવું અગત્યનું છે. થંભવાનો અર્થ
+અમલમાં મૂકવા માટેની સૂચનાઓ ખૂટી જવી એવો હોય, તો દરેક
+અવસ્થામાં દરેક પ્રતીક માટે બહાર જતું તીર છે તેની ખાતરી
+કરીને ક્યારેય ન થંભે એવું મશીન બનાવી શકાય. અવસ્થા~$q_0$માં
+$\TMblank$ વાંચવા માટેની સૂચના ઉમેરીને સમ મશીનને અનંત સમય
+સુધી ચાલે એવું બનાવી શકાય.
+\end{explain}
+
+\begin{ex}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path
+  (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+      edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (A)
+  (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+      edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+ટ્યુરિંગ મશીનો દર્શાવવાની બીજી રીત \emph{મશીન-કોષ્ટકો}
+છે. કોષ્ટકની $x$-અક્ષ પર ટેપની વર્ણમાળા અને $y$-અક્ષ પર
+મશીનની અવસ્થાઓનો ગણ દર્શાવાય છે. દરેક અવસ્થા અને પ્રતીકના
+છેદે સૂચનાનો બાકીનો ભાગ---નવી અવસ્થા, નવું પ્રતીક અને ખસવાની
+દિશા---લખાય છે. કઈ અવસ્થામાં અને કયું પ્રતીક વાંચતાં મશીન
+થંભે છે તે કોષ્ટકથી સહેલાઈથી જાણી શકાય છે. કોષ્ટકમાં કોઈ
+ખાનું ખાલી હોય, તો ત્યાં મશીન થંભી શકે છે. અવસ્થા-આલેખો
+અને સૂચનાના ગણમાં મશીન ક્યાં થંભે છે તે હંમેશાં તરત દેખાતું
+નથી; મશીન-કોષ્ટકમાં ખાલી ખાનાં જોઈને આ બિંદુઓ તરત ઓળખી
+શકાય છે.
+\end{explain}
+
+\begin{ex}
+સમ મશીનનું મશીન-કોષ્ટક આ છે:
+\[
+\centering
+\begin{tabular}{lllll}
+\cline{2-4}
+\multicolumn{1}{l|}{}      & \multicolumn{1}{c|}{$\TMblank$}
+& \multicolumn{1}{c|}{$\TMstroke$}     & \multicolumn{1}{c|}{$\TMendtape$}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_0$} & \multicolumn{1}{l|}{}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_1}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_1$} & \multicolumn{1}{l|}{\TMtrans{\TMblank}{q_1}{\TMright}}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_0}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\end{tabular}
+\]
+જેમ જોઈ શકાય છે, મશીન અવસ્થા~$q_0$માં $\TMblank$
+વાંચે ત્યારે થંભે છે.
+\end{ex}
+
+\begin{explain}
+અત્યાર સુધી આપણે ઇનપુટ વાંચીને સ્વીકારતાં મશીનો જ જોયાં
+છે. પરંતુ ટ્યુરિંગ મશીન વાંચી પણ શકે છે અને લખી પણ શકે
+છે. આવા મશીનનું એક ઉદાહરણ (જોકે આવાં ઘણાં ઉદાહરણો છે)
+\emph{બમણું કરનાર મશીન} છે. ટેપ પર $n$ $\TMstroke$નો
+એક સળંગ સમૂહ આપીને શરૂ કરીએ, તો તે $2n$ $\TMstroke$નો
+સમૂહ આઉટપુટ તરીકે આપે છે.
+\end{explain}
+
+\begin{ex}
+  \ollabel{ex:doubler} બમણું કરનાર મશીન બનાવતાં પહેલાં સમસ્યા
+  ઉકેલવાની \emph{રીત} નક્કી કરવી જરૂરી છે. મશીન (આપણે તેને
+  જેમ ઘડ્યું છે તે મુજબ) કેટલા $\TMstroke$ વાંચ્યા છે તે યાદ
+  રાખી શકતું નથી. તેથી ટેપ પરના બધા $\TMstroke$નો હિસાબ
+  રાખવાની રીત શોધવી પડશે. એક રીત ઇનપુટને આઉટપુટથી
+  એક $\TMblank$ વડે અલગ કરવાની છે. પછી મશીન ઇનપુટમાંથી
+  પ્રથમ $\TMstroke$ ભૂંસી શકે, બાકીના ઇનપુટને વટાવી શકે,
+  એક $\TMblank$ છોડી શકે અને બે નવા $\TMstroke$ લખી
+  શકે. ત્યાર પછી મશીન પાછું જઈ ઇનપુટનો બીજો $\TMstroke$
+  શોધશે અને તેને પણ બમણો કરશે. ઇનપુટના દરેક એક
+  $\TMstroke$ માટે તે આઉટપુટમાં બે $\TMstroke$ લખશે.
+  મશીન આગળ વધે તેમ ઇનપુટ ભૂંસવાથી કોઈ $\TMstroke$ છૂટી
+  ન જાય કે બે વાર બમણો ન થાય તેની ખાતરી કરી શકાય. આખું
+  ઇનપુટ ભૂંસાઈ જાય ત્યારે ટેપ પર $2n$ $\TMstroke$ બાકી
+  હશે. મળેલા ટ્યુરિંગ મશીનનો અવસ્થા-આલેખ
+  \olref{fig:doubler}માં દર્શાવ્યો છે.
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (1)              {$q_0$};
+  \node[state]         (2) [right of=1] {$q_1$};
+  \node[state]         (3) [right of=2] {$q_2$};
+  \node[state]         (4) [below of=3] {$q_3$};
+  \node[state]         (5) [left of=4]  {$q_4$};
+  \node[state]         (6) [left of=5]  {$q_5$};
+
+  \path (1) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (1);
+\end{tikzpicture}
+\]
+\caption{બમણું કરનાર મશીન}
+\ollabel{fig:doubler}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+કોઈ પણ એક ઇનપુટ પસંદ કરો અને \olref[tur][mac][rep]{ex:doubler}માંના
+બમણું કરનાર મશીનનાં સંરૂપણોનો ક્રમ અનુસરો.
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ વર્ણમાળા ધરાવતું એવું
+ટ્યુરિંગ મશીન રચો કે જેમાં $A$ અને $B$ની સંખ્યા સરખી
+હોય \emph{અને} બધા $A$, બધા $B$ પહેલાં આવતા હોય,
+એવી $A$ અને $B$ની કોઈ પણ શબ્દમાળા તે સ્વીકારે,
+એટલે તેના પર થંભે; અને $A$ની સંખ્યા $B$ની સંખ્યા
+જેટલી ન હોય અથવા બધા $A$ બધા $B$ પહેલાં ન આવતા
+હોય એવી શબ્દમાળા તે નકારે, એટલે તેના પર ન થંભે.
+(દાખલા તરીકે, મશીને $AABB$ અને $AAABBB$ સ્વીકારવાં,
+પણ $AAB$ અને $AABBAABB$ બંને નકારવાં જોઈએ.)
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ વર્ણમાળા ધરાવતું એવું
+ટ્યુરિંગ મશીન રચો કે જે $A$ અને $B$ની કોઈ પણ
+શબ્દમાળા~$\alpha$ ઇનપુટ તરીકે લે અને તેની નકલ કરીને
+$\alpha\alpha$ સ્વરૂપનું આઉટપુટ આપે. (દાખલા તરીકે,
+ઇનપુટ $ABBA$નું આઉટપુટ $ABBAABBA$ થવું જોઈએ.)
+\end{prob}
+
+\begin{prob}
+\emph{વર્ણક્રમમાં?:} $\{\TMendtape,\TMblank, A, B\}$ વર્ણમાળા
+ધરાવતું એવું ટ્યુરિંગ મશીન રચો કે જેને $A$ અને $B$નો
+સાન્ત અનુક્રમ ઇનપુટ તરીકે આપતાં બધા $A$, બધા $B$ની
+ડાબે આવે છે કે નહીં તે તપાસે. મશીને ઇનપુટ શબ્દમાળા ટેપ
+પર જ રાખવી જોઈએ અને શબ્દમાળા ``વર્ણક્રમમાં'' હોય તો
+થંભવું, નહીંતર હંમેશાં ચક્રમાં ચાલવું જોઈએ.
+\end{prob}
+
+\begin{prob}
+\emph{વર્ણક્રમમાં ગોઠવનાર:} $\{\TMendtape,\TMblank, A, B\}$
+વર્ણમાળા ધરાવતું એવું ટ્યુરિંગ મશીન રચો કે જે $A$ અને
+$B$ના સાન્ત અનુક્રમને ઇનપુટ તરીકે લઈ તેમને ફરી ગોઠવે,
+જેથી બધા $A$, બધા~$B$ની ડાબે હોય. (દાખલા તરીકે,
+$BABAA$ અનુક્રમ $AAABB$ બનવો જોઈએ અને $ABBABB$
+અનુક્રમ $AABBBB$ બનવો જોઈએ.)
+\end{prob}
+
+\end{document}

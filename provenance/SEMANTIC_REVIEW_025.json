@@ -1,0 +1,901 @@
+{
+  "schema": "openlogic-gu-same-agent-semantic-review/25",
+  "reviewed_at_utc": "2026-09-26T02:00:49.082490+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0252–0263 only; the ten-section chapter is complete as a source draft",
+  "reviewed_segments": [
+    {
+      "segment_id": "OLP-0252-B004",
+      "source_segment_sha256": "399d2c7d713bc6a959afdcd4aabb78329c86157bdc1e39771d3728f02671b8e7",
+      "target_segment_sha256": "bfd41bc53ec7183b7f2ebc6c4b88b6d6159e7f50948b476814199c62bf4ea7be",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The part title is translated; the chapter and undecidability imports remain in source order. The latter is outside this incomplete chapter draft.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0253-B004",
+      "source_segment_sha256": "6d25cf18d2d336f5adfc0d411c3fe5d4c141d808360c3646fd2cbab5a5d31151",
+      "target_segment_sha256": "0f981d033df4a1337ce3149a798cd6c76d5ff81c6fb0811d3ef50ebc9fdb7bc0",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The chapter title is translated and its ten source section imports remain in order. Only the first two sections have been drafted so far.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0254-B004",
+      "source_segment_sha256": "862270b442ea635723c946bbe27f8978f92c8ce208234437f64103e61696febf",
+      "target_segment_sha256": "4880069c162641d33900cb0b601f040c2f436732ba87b1a36c000fe4866a16e8",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The introduction retains the one-way-infinite tape, finite alphabet, partial transition function, q1/q2/q3 worked example, undefined transition as halt, three intuition arguments, and source historical chronology. The source's repeated state-symbol input tuple is present twice in Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0254-B005",
+      "source_segment_sha256": "6e067868088ee46e3119140a73563df8b214b0a890a7b27fd41903a27a667b6e",
+      "target_segment_sha256": "8babc6d09d51cf89af95b0299f6e4eec6d8db4c02876b64f6cca460e3bcc0235",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The introduction retains the one-way-infinite tape, finite alphabet, partial transition function, q1/q2/q3 worked example, undefined transition as halt, three intuition arguments, and source historical chronology. The source's repeated state-symbol input tuple is present twice in Gujarati.",
+      "reverse_paraphrase_english": "A function N to N is computable if a Turing machine can compute it; the model is mathematical and has unbounded idealized time and memory.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0254-B006",
+      "source_segment_sha256": "8a1202273042e740d8a7f48814d251b7851c5128fbeb231ab5d0f070ee305061",
+      "target_segment_sha256": "8d5803c63650d1a0b54bc44a4ec64a08760248ee7c8ed3bbcdf7b3b7eb5959c5",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The introduction retains the one-way-infinite tape, finite alphabet, partial transition function, q1/q2/q3 worked example, undefined transition as halt, three intuition arguments, and source historical chronology. The source's repeated state-symbol input tuple is present twice in Gujarati.",
+      "reverse_paraphrase_english": "The right-infinite tape has finitely many alphabet symbols; the partial program maps a state and scanned symbol to a new state, replacement symbol, and head direction.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0254-B007",
+      "source_segment_sha256": "a6409781d9a1afa6452b3b29857c4b65cad20fd138e689cbf545a936505cbb49",
+      "target_segment_sha256": "c019eb1ce6e0b95005355c8c19ba9c2c2c87cbe6ff3941c5703db6af241ccfce",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The introduction retains the one-way-infinite tape, finite alphabet, partial transition function, q1/q2/q3 worked example, undefined transition as halt, three intuition arguments, and source historical chronology. The source's repeated state-symbol input tuple is present twice in Gujarati.",
+      "reverse_paraphrase_english": "In the illustrated run, q1 reading 1 writes 0 and stays in q2; q2 reading 0 writes 0, moves right, and enters q3.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0254-B008",
+      "source_segment_sha256": "7d17eadcbaf0b9d7a81ce1f4b2210fd18e646fc2db5f9ce2f8fadf8eda7c08d9",
+      "target_segment_sha256": "a70fe1ad7e1c8ed5b5dcae1e015066d7b740fc40c022ac07f9b86aa4f3f12fbc",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The introduction retains the one-way-infinite tape, finite alphabet, partial transition function, q1/q2/q3 worked example, undefined transition as halt, three intuition arguments, and source historical chronology. The source's repeated state-symbol input tuple is present twice in Gujarati.",
+      "reverse_paraphrase_english": "The machine halts if its transition function is undefined for the encountered state-symbol pair; the same pair is explicitly given twice.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0254-B009",
+      "source_segment_sha256": "8f8929b28646b82cc6d817c78751fc3d1fd44d28978be6ddb4e9228dfa96821d",
+      "target_segment_sha256": "77eef774cd701c85961a6d346e4559a359b81adbb83aa6870b91e5ea6177f8f5",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The introduction retains the one-way-infinite tape, finite alphabet, partial transition function, q1/q2/q3 worked example, undefined transition as halt, three intuition arguments, and source historical chronology. The source's repeated state-symbol input tuple is present twice in Gujarati.",
+      "reverse_paraphrase_english": "Turing argues that the formal definition captures intuitive computability by three routes: direct intuition, equivalence to another definition, and broad examples.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0254-B010",
+      "source_segment_sha256": "aff2819f0a6e39888946787ab3624ac6a72acf1b03d451a2f33d2e6371b516f7",
+      "target_segment_sha256": "2dc72a1398206c9a5ce0d7e6d1407550b04d5b482cf2cbceb5c191d28185c500",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The introduction retains the one-way-infinite tape, finite alphabet, partial transition function, q1/q2/q3 worked example, undefined transition as halt, three intuition arguments, and source historical chronology. The source's repeated state-symbol input tuple is present twice in Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B004",
+      "source_segment_sha256": "a2823f268889d32574aeb734e4583d5072625fce19c812f7754cfe724e873f0e",
+      "target_segment_sha256": "b65ab7e0c54e66de8352422eb0e7650320f9bec6b3a1eaa68595781555c04c95",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B005",
+      "source_segment_sha256": "3d28e61d416b39e87445ca96cca86f94d841f050b1184dfdb90b618b30ca95b5",
+      "target_segment_sha256": "8bef26eda9792b1ff2f50ef3c06e2a4b61c67ece06220d101ea0ca28b0c09ee6",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "A state diagram's cells represent states, arrows represent instructions, and the single arrow writes a stroke when q0 reads blank before moving right to q1.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B007",
+      "source_segment_sha256": "094dbd926118ebabf318369f89daf53478fb1f65cc1656bb0a5455fbb8134ed2",
+      "target_segment_sha256": "76f87336fe7e2af2dcdc7a47f36fadfd7e4b99f28df323d6207394b02aa26c80",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B008",
+      "source_segment_sha256": "08779b4ef86694b250627d181c9cf14873e9b8944612678b73d882b291a47635",
+      "target_segment_sha256": "38a28f366b1d032b86def13b53155635305c780d384f34472aaa4991693f4d01",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "The even machine halts exactly for an even number of initial strokes, assuming they precede the first blank.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B011",
+      "source_segment_sha256": "7097451b667044001a1dc33fb73cf85d1fd33e1bb7895a2538cfbcc221a10989",
+      "target_segment_sha256": "81a3e18d414a1068f830f21a2829cd8bfcfc0f5b8fc564b54e4e3f770451791d",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B012",
+      "source_segment_sha256": "32deb2190ed8626e81a0e53b9d0a9631cd5770b1f9cf2c217260edc10964d542",
+      "target_segment_sha256": "556f4cfcb0532c264f017e21886799689081a0ec4fb37ed6c03df57bb5714610",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B013",
+      "source_segment_sha256": "ad075ef9c9a9e7cbd587c42d76e44b5fd34dc4df0382111eceb8a5ee002fecbe",
+      "target_segment_sha256": "afc317d7bfc4b33c288547599dd4322ad7ec8c628b02f6b5e95ad54382e05d09",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "With four strokes the state alternates while moving right and then halts in q0 on blank; with three it reaches q1 on blank and loops to the right forever.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B014",
+      "source_segment_sha256": "6ef18dc34538fea69884f0c51b032e10e29574259d7e101135eb6feb09f6afa4",
+      "target_segment_sha256": "37188e8c53e3050244c06ec657ff5e8cfc0bc7b968bd94634fd6f49b4f6809ce",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B015",
+      "source_segment_sha256": "6a6b51974130b9c15680a08700e936e7099be13f90745b84407617eb85044245",
+      "target_segment_sha256": "05ec567e75d9aefd234239628dc17ba0f45429b0789b597b71ab2b8e41bcd8ad",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B016",
+      "source_segment_sha256": "3d7097ba44dd4c495bcf69abd675a4b7d2cf7f7100680978c88be3226ff6c4a9",
+      "target_segment_sha256": "f8229c4435dae159079bfbecb569c529139aec5f0c658c6245bbbf5468b093b2",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B020",
+      "source_segment_sha256": "a026cafe8c418ad5cf5418aad26a471930b27d735f5d08c2958dde47c7ba2be3",
+      "target_segment_sha256": "c4266d7e23383d72d05455f94f7def013419488b44a014d51a64304cdfef40d1",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "A machine table has symbols along x, states along y, and a missing state-symbol entry marks a possible halt.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B021",
+      "source_segment_sha256": "9a6da98f1ae32cb9680738b74858211b5375c831316a4fbc9d5775fd8cd12f8a",
+      "target_segment_sha256": "798dcade12f99dcfd39c4cc9f05351b454645cd70f0859528a6c53b4fda88d51",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B022",
+      "source_segment_sha256": "bd2942a7b1559ce0e6d42a51fa01823ad884bf7da3302f2c180d466f04b28317",
+      "target_segment_sha256": "d4faab9c602a72cefb912f3dc63613ec7fc069ff4776a2d153b56d4730d2f88f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B023",
+      "source_segment_sha256": "125c4cbc295b73c265c8c6cc8efa223590f71f5bf48f62534d5549de1222c88a",
+      "target_segment_sha256": "6d3ffdeec70932249a6c92d1e433ea3c1c5432132907afb2d5939898f8138a05",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "The proposed doubler erases one input stroke at a time and writes two output strokes, leaving 2n after all input strokes are erased.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B025",
+      "source_segment_sha256": "34fc3c4d93c30a62d735919424f27f8734781b7abbe1e25fe211c881d8a97804",
+      "target_segment_sha256": "a958ddb2a3b7c8d13a11c3c7a56040d8e1a6fedf8de13c8ca6ed4dcb9b54da86",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B026",
+      "source_segment_sha256": "10ad4807f7c56737090f56525a1416d835d6fc92022d034bc12700b86b64175d",
+      "target_segment_sha256": "c8b6b981b33d6bee9aee75e792c3277e455ba394d484a21422ad91083d016294",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B027",
+      "source_segment_sha256": "94a09050f16c37a8f235e20489787e9c5ad69fff62dd85566864701785b5c39e",
+      "target_segment_sha256": "c6677cc202be90114bbe5ebf2c72e215700089f66524fad8d361610fecc08c0e",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "The first construction problem accepts only strings A^n B^n by halting; unequal counts or an A after a B must lead to nonhalting.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B028",
+      "source_segment_sha256": "da3f31ce247149f9a628257322a81a089b8e91c4a3aac5903588ab406fc3cd96",
+      "target_segment_sha256": "4b2edd0cc4a47843c66c9512d9b1b29ffbf8c43255621cb7c403ccaafc9544aa",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "The next problem requires duplicating an arbitrary A/B string α into αα, preserving order.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B029",
+      "source_segment_sha256": "7e01654a04c2f34bc1ff2f3ee6ea75951e32de88d839b42417ede6069cae48d2",
+      "target_segment_sha256": "a240117726df50b1e794ebc16a880524240cb190cb17ef671761ceb5bacc9816",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "The alphabetical checker must preserve the input and halt exactly when all A symbols precede all B symbols.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0255-B030",
+      "source_segment_sha256": "64762a0b1222ab956863be74f6d436e143f832c3a6cc0bb0465fa0929587298a",
+      "target_segment_sha256": "90b9c0ac636441cfc5977eca3e5e084488562c60137699e6185a3b90b12c227f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "State-diagram arrows, three explicit transition equations, even/odd stroke traces, nonhalting blank loop, machine table, doubler diagram, and all five exercises retain the source's formal tokens and acceptance conditions. The source's informal 'state one' wording is rendered as first state, consistent with the adjacent q0 diagram.",
+      "reverse_paraphrase_english": "The alphabetizer must reorder a finite A/B input with every A to the left of every B; the given examples keep the same counts.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0256-B004",
+      "source_segment_sha256": "7ab997fe6bc055bf675cd26dbd3bdca80efbcc733bcc2261d101f2834b3b6fe3",
+      "target_segment_sha256": "23853440191942c593a72210dfa1cbf105dba5853d0eddc58fa4a2190165a206",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The machine quadruple retains finite state and alphabet sets, distinguished end/blank symbols, initial state, and partial transition map. The end marker may be overwritten under the source's convention; the even-machine equations are exact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0256-B005",
+      "source_segment_sha256": "1d9e56466b62061e957e0cda78582e3e5986800f3d75b4314c7eef9e24ca2ee9",
+      "target_segment_sha256": "d3134b687cda0f4d657950117cf6eabe49fa4bfdbc5cdaa9693dad7f263b5e09",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The machine quadruple retains finite state and alphabet sets, distinguished end/blank symbols, initial state, and partial transition map. The end marker may be overwritten under the source's convention; the even-machine equations are exact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0256-B006",
+      "source_segment_sha256": "603b4623c4e779306e5bbc8e6c4ece4af8124efef957f4816b6e4af1c3500670",
+      "target_segment_sha256": "ed70b44cf1fed1bbe434fd32ec483e425fdea9b66421302a7767873ac6ac991c",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The machine quadruple retains finite state and alphabet sets, distinguished end/blank symbols, initial state, and partial transition map. The end marker may be overwritten under the source's convention; the even-machine equations are exact.",
+      "reverse_paraphrase_english": "A Turing machine is a quadruple of a finite state set, finite alphabet containing end and blank, designated initial state, and partial instruction function into state-symbol-direction triples.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0256-B007",
+      "source_segment_sha256": "59967d9550e9fb57d6beeca85e86de80363b1780d397b37752e8f93619e684a7",
+      "target_segment_sha256": "e9abf13f5b7e6fd9596129506698fa9fe9e64597b904b30cd63bc371f36b840b",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The machine quadruple retains finite state and alphabet sets, distinguished end/blank symbols, initial state, and partial transition map. The end marker may be overwritten under the source's convention; the even-machine equations are exact.",
+      "reverse_paraphrase_english": "The left-end marker helps the program detect the tape edge, but this edition does not forbid overwriting it.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0256-B008",
+      "source_segment_sha256": "fe018343a49cbaebbac0a235fdc27d5eba766cfa5856df45086fa5f0824d9537",
+      "target_segment_sha256": "a8c004a4e18535c30dd422905b3e8aea7faad5b79bf55d1ce4ed4d87813a0ff5",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The machine quadruple retains finite state and alphabet sets, distinguished end/blank symbols, initial state, and partial transition map. The end marker may be overwritten under the source's convention; the even-machine equations are exact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B004",
+      "source_segment_sha256": "1a114857dbb2d3d66c7cd3867f7b2bfef9341b4f4883136632878b3a7ea2dc71",
+      "target_segment_sha256": "f204e45e74507c86129fd250f3db23f1cee4378c1a07cc117a6302feefeaaaf9",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B005",
+      "source_segment_sha256": "7220340e1d4659098e8346d7c15989bb9bdb5732287add5dd30cdbf42df0312b",
+      "target_segment_sha256": "bb352a6bf370b9a0e19d1ff59182cbf31c2e5631b1dae2429d715fefeff08929",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B006",
+      "source_segment_sha256": "95665212faf0fb094cd930c735ce302ba15b45734869eee0c07d58d296f228f7",
+      "target_segment_sha256": "e655205413b5f9a00e7b03b018603d58504ef2ca9d3e16a4a5dee0c3f6fd5c17",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": "A configuration (C,m,q) has a finite tape-symbol sequence C, a valid scanned-square index m<len(C), and current state q.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B007",
+      "source_segment_sha256": "d349458aeb3f13809de329f5bd6fdc90f8291febdd21e3c3f0b9bd47680f579a",
+      "target_segment_sha256": "2f9dcd539cefe43bf73f27f15223fa91e90fb1b10fd3deb25e8b3dfdc46a2c89",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B008",
+      "source_segment_sha256": "0b81d3b6ecbe9662e3eb3af7a67a0dad9fca3027685d434a4e283e82e50b8e89",
+      "target_segment_sha256": "3f869be6ea3dd99933141992f7a1495328e47a4e1f5f9546cb5fb67824cdb740",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": "The formal initial configuration is (end marker concatenated with input I, head index 1, initial state q0); a visible note flags the introduction's contradictory index 0 wording.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B009",
+      "source_segment_sha256": "4adef3a03291a19477fd77bb22d023f64122ef7d73d462f93e0c2e53a432a58f",
+      "target_segment_sha256": "92982c95669727b8ce8ade3d7db1a87540bb0727ba7cb118134298d5b8a2c98f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": "The frown symbol concatenates the end marker and input; the input is immediately to its right, correcting the source's erroneous 'left' with a visible note.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B010",
+      "source_segment_sha256": "87b5e23a06aa7f13b862a0a615429199b3e3eede8edd00f98f16cd3ec865f0c5",
+      "target_segment_sha256": "5261608597add735f671c32b3bb89abb92486d7a22d3fb48e9326e600574804b",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": "In one step the scanned symbol changes, the head moves left with boundary clamp, right, or stays; moving past C appends one blank; all other old symbols remain.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B011",
+      "source_segment_sha256": "3326bfc96fb159bdaa57f068551bee96a236222bd336e3376f80b63af237d7a4",
+      "target_segment_sha256": "75628b2e1e6c3019b651611f7e7b29de0ee80b39ee8a16da4bd71a876cc62a56",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B012",
+      "source_segment_sha256": "dafe71e0c03ed38abe04df032c650432e0295f7e83f92b36438a475b4b3ce5a0",
+      "target_segment_sha256": "7dafaf356d3699fefded81e355c4e58c4b020b15aeb81261d197e25b7c518c26",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": "M halts after k steps when the transition at the scanned pair is undefined; output O excludes trailing blanks from C=end-marker+O+blank^j.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0257-B013",
+      "source_segment_sha256": "04d4e97fe2ed9c27629d1bbb48113ff5096bd9dc688ccae695532de5d725f747",
+      "target_segment_sha256": "1a889f71ae53178ab75fcf5075eeedd62bb7723b477d3f7acb2f8fea9acbc3db",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Configuration is C,m,q with finite C, m<len(C), q in Q; the initial configuration has end marker concatenated with input and m=1. One-step rules preserve all source cases, and the halting-output rule strips trailing blanks. OLTM-001 and OLTM-002 visibly disclose source prose conflicts while keeping the frozen source unchanged.",
+      "reverse_paraphrase_english": "If only blanks remain after the end marker, the output string is empty; otherwise it ends in a nonblank symbol.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B004",
+      "source_segment_sha256": "8adaa13ce17ce9ff9258e1c3be3d114d6e11295139b76dd4d84fd6a6e12d810f",
+      "target_segment_sha256": "810d9f3e8a3b67de940ba527d9c90fedcf3905944a5b685b5db86a3d095733fc",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B005",
+      "source_segment_sha256": "d21a6b2877c0a8ec49d06111f33f7def3acfb5bec6d68f3ac914b3498a7d8b57",
+      "target_segment_sha256": "c37aac744db822618458fdbd4ef059133c321361e50fad4b5735f012135c6422",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "A unary code represents zero by the empty stroke string and positive n by exactly n strokes.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B006",
+      "source_segment_sha256": "4dbacee19ed712245db608b05d3fbfebde1ee00843c25711f53d474d0a1d9f40",
+      "target_segment_sha256": "c2f0fcd8c5d2cb5e1a9a9a77c0bc5ef6a0a6f29f2a0d3ad80b6de96d92fa9a7f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "For a total k-ary numerical function, k unary input blocks separated by blanks must halt with one block of f(n1,...,nk) strokes.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B007",
+      "source_segment_sha256": "8fa612d9944f102a9ba07bdb8b4ca2df8ec2761d107acaaaa869382520dcbe08",
+      "target_segment_sha256": "65ef7373a552ea3fbd58027c782bae932d9ca14488f47ea68d532a9b430d8ca0",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B008",
+      "source_segment_sha256": "726bc35b053e8f187aab17829806814384771427e8a52a66aedd488c043f8fce",
+      "target_segment_sha256": "35b0765726287bcb89104c70599f6309faaa0eec21c0af1087b2414c43b3fbe3",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "The adder merges two stroke blocks by filling their separating blank and removing the last stroke.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B010",
+      "source_segment_sha256": "a8eb26c0c7499c00ed48eaaf82279f380bd3466e43504cd321a5a8e3e18d7a98",
+      "target_segment_sha256": "db58662e9a5c705e1b69492ab48a23b239d995fc5247bdf781a2d8e75a190145",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B011",
+      "source_segment_sha256": "c280f4f9e6adfbd5de8b77bdf0d00089f32d7b75e4db5fced5c7f813ccfcaa81",
+      "target_segment_sha256": "11a6951eed1929a61f0601a1feb125c0a0b0ff02940a1fe698e0537ef7b65bf6",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B012",
+      "source_segment_sha256": "6040440252d90f971f537f9a601081fabdb862b56c737a07c57762ebc7fd8976",
+      "target_segment_sha256": "81199d88821b5a15ebdc363062e20d2092405bdb8bf9a7d3aafc11a9d8f88ceb",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "The earlier doubler leaves blanks to the left of its output, so its raw output is not the unary code for 2x under the current definition.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B013",
+      "source_segment_sha256": "4b55f7be7477baf7112a8ea49e153c2401e107a336047edb5480ca30719832a9",
+      "target_segment_sha256": "c9f2e81f2d5ef4d7b585fa09fe4e2e66d43a813112b8284dfdf04f63af3bd14b",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "The revised doubler appends one stroke for each input stroke, temporarily marking the input with a blank and later filling the separator.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B015",
+      "source_segment_sha256": "089255ed960b03de8bb95927eefebaa334587b97c0e2124412197a5d15aa0cef",
+      "target_segment_sha256": "2346ab20998596fe4b1ef8fae802999c904135e4b987569d70cdfdd218fb1e58",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B016",
+      "source_segment_sha256": "a1b41b10c3761725a6a11c385369c608dfa818cf435b0e4a9f0d61740352cac8",
+      "target_segment_sha256": "cc96dc7732125c4a6ea4aad9f0776c5df2c51f152d17e77d7318f66c01dfb03f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "The alternative keeps the original doubler and adds states that move the output block to the left; input zero remains an exercise.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B017",
+      "source_segment_sha256": "69608171f82d65e7c39ddd278c055b8aa02444d615e42328a3f2baa14b5bde02",
+      "target_segment_sha256": "6b019019de5f7c0f5344555dbf94830080ca96a770a5804c3ad024170be314ce",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "The mover exercise refers to the original doubler, correcting the source's already-revised-doubler reference with a visible note.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B018",
+      "source_segment_sha256": "4a68fe69b46a12759be05ae006c0317ae5c4b6cc79fb3df5154899dd13241a14",
+      "target_segment_sha256": "467e8788c2f59da0bfa4f9e08e5f06cccb3572b457003adf20d4325388848a14",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B019",
+      "source_segment_sha256": "8715954af411cc6e1ac4cb9082d7d164c5a887e4ae5ff85ec5db26085db0c40a",
+      "target_segment_sha256": "68a97090430f558e6a9efd207a6e44ed9fbff33bd4fa7b404202434f8c25789c",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "The equality machine must output 1 for equal positive n,m and 0 otherwise; the formula's English if labels are translated.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B020",
+      "source_segment_sha256": "c79271ad45cb91b02502f00dec6703938da37ae438f03d3d962941ae981c61a6",
+      "target_segment_sha256": "51e923570b5bd8288056165ff11342214a60ca3afbda65aec7c0451127458bff",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B021",
+      "source_segment_sha256": "43177a01776dddda1609fb23957c4292d955d0d10a6a2d3182b6d6804c7d87bb",
+      "target_segment_sha256": "0f85e57b4f4d4587b33595ef101b0fa27050e90bede613b3185f190fa13e9fb2",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0258-B022",
+      "source_segment_sha256": "fce82fefe804ac0e6e533292adf30fc3f2272cacd7a6c882fa3312172594b53f",
+      "target_segment_sha256": "58d7d32a39768cacf8281e5fdeffebe9c44650b246c7ce8c6e614481ad4f27ed",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Unary coding makes stroke^0 empty and separates k input blocks with blanks. The addition and two doubler strategies, zero-input exercise, equality/minimum exercises, and total-versus-partial computation rule are preserved. OLTM-003 repairs the source's wrong original-doubler cross-reference; two English formula conditions are localized into Gujarati.",
+      "reverse_paraphrase_english": "For a partial numerical function, defined inputs halt with a unary output; undefined inputs may run forever or halt with a non-unary output.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0259-B004",
+      "source_segment_sha256": "fe51883fc06eeb2d37f5f2e74e9e62c9853da62db9f758ce5011070e1c048c60",
+      "target_segment_sha256": "0ec375696c82b1de4e51dc2569e75dc0c8979597e4e79c25503d6c424b1bd965",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The optional accepting halt state h and rejecting state r are distinguished from the chapter's default undefined-transition halt rule; both state diagrams are preserved.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0259-B005",
+      "source_segment_sha256": "9f7d9315f0b86fd6d9cd541b0ea2ad7d1d864b060f799cd13042243e500dfc47",
+      "target_segment_sha256": "d18e0b9a2f4437fade46c59afe623f8a309aa54f11cb81761bd847290cec660b",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The optional accepting halt state h and rejecting state r are distinguished from the chapter's default undefined-transition halt rule; both state diagrams are preserved.",
+      "reverse_paraphrase_english": "A designated h state provides an alternative representation of halting to missing instructions.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0259-B006",
+      "source_segment_sha256": "c078c3e3fd75b601c71897558eff79c099ccdd1bcad404902cdf0afd576e495f",
+      "target_segment_sha256": "506ff54eef5eaed34a8703af7489cf8125cd59139d553ce2fa6e9310864f768d",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The optional accepting halt state h and rejecting state r are distinguished from the chapter's default undefined-transition halt rule; both state diagrams are preserved.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0259-B007",
+      "source_segment_sha256": "7bd2cd8e7ec0033a1dcad94dcee3144f439082187fff337806fced54feeef113",
+      "target_segment_sha256": "b1cea34f5ef1e8c282c687a5a14458571c1561d74e4262f9939ebb632cb28174",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The optional accepting halt state h and rejecting state r are distinguished from the chapter's default undefined-transition halt rule; both state diagrams are preserved.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0259-B010",
+      "source_segment_sha256": "ac4e48e4ef606d9804fb6d6cc5579661a307ffabfbaf8232da29856a5a464d67",
+      "target_segment_sha256": "c5959dcee03af351a0fb2efd324f264ceb0893a9c8fc4fd09ff85a876dd66a9e",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The optional accepting halt state h and rejecting state r are distinguished from the chapter's default undefined-transition halt rule; both state diagrams are preserved.",
+      "reverse_paraphrase_english": "Replacing the odd-input blank loop with a transition to r gives a separate rejection halt state.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0259-B013",
+      "source_segment_sha256": "a69593fa938d60efa8aa6b5f1925ff46d6828dbd4d0d1c1d1139b9b3af544cfb",
+      "target_segment_sha256": "e3bb4ec9e40166a015eedf5f5e86b3a0b142801da0264bcee1f2aeae6989e71e",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The optional accepting halt state h and rejecting state r are distinguished from the chapter's default undefined-transition halt rule; both state diagrams are preserved.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B004",
+      "source_segment_sha256": "f2deee497a9a38ee068e2c66661db3f44ba3d78c55301b60ca80e4841baddcd7",
+      "target_segment_sha256": "590bd7e3a708a45a807c3c3377dee6688e3bf314ae8e8dd07c44516a2c91d3a9",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B005",
+      "source_segment_sha256": "f6a2e04dc3a6c492c23531f7422cc2756954f215c7c59026bcbb62cc0c510b9f",
+      "target_segment_sha256": "3d624386c37d66837c6c0aac2033d9a9e9877ec69434a71edad3fc22f17fca3c",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B006",
+      "source_segment_sha256": "1422e4854e25a611a255cfb9fe36b4856efaadb319e2316dab91bb3d75b17c56",
+      "target_segment_sha256": "de281bd31fe4a38bcffdb3cc2d2ed35acbeb624d677b3009126df9625a0d9476",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": "Disciplined requires designated h, halt at square 1, no end-marker erasure at square 0, and no left move from square 0.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B007",
+      "source_segment_sha256": "c889f79d863f463741b683428ac5aecfceca88111db4e790462bc6b3eab27e93",
+      "target_segment_sha256": "fa4d464f087c72b3c4da83c115b007dc633f80648fd9a5bacb23b6055df610ac",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B008",
+      "source_segment_sha256": "a97291878e978c4e6f4fca425c32cbb2908551f11f841a510e55669c33dbb145",
+      "target_segment_sha256": "6d223aefc4748d054b9b36b45496e6530d47c88adbf34b547e07d115bd3eccd2",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B010",
+      "source_segment_sha256": "c11f513d335ba0018585ab6bb944a03aa47a2bc3633b7d426195e2c44b032557",
+      "target_segment_sha256": "ac4f4666beacc989212c8411e10621b76a3a9112697f7cc7dce5afbb4c914876",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B011",
+      "source_segment_sha256": "e537660b2f2fab65e728ee4757787918c81167406946b737cfb9b441011daca9",
+      "target_segment_sha256": "cf82b41076159d9120cc56b52a3edb8c11a12f2c8506428c8fd2c1e45264c7e3",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": "Every machine can be simulated by a disciplined machine with identical halting outputs and nonhalting inputs.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B012",
+      "source_segment_sha256": "306c7a123af5169b7ae678c41993997d53ec226bed468eb0353992ba8ec15186",
+      "target_segment_sha256": "bb318d51dc4db83dc85aded05acfe8ba20817654213c6bfcc5e1b53aab11cc4d",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0260-B013",
+      "source_segment_sha256": "0304717cc06ad745abaaa26e933fafa25fcd8b5d0ed8be0122b8d1eaf88fca45",
+      "target_segment_sha256": "ce35b280f5ea231296c34d58a1a68a1e8c945a0916fcb1a02c96f0f73efe4198",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Disciplined machines require one designated halt state, halt scanning square 1, preserve the end marker on square 0, and avoid moving left from 0. The addition diagram, behavior-preservation proposition, and successor/copier problems remain intact.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B004",
+      "source_segment_sha256": "03ddff8dd3e2525879f052d5671e22ca057baff1f9937d5cbf95fd5aa4876f40",
+      "target_segment_sha256": "3a327bb2d9c69dc867d010268b2bd6885bbb675cfd92aa6c518b3d8c98d9460d",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B005",
+      "source_segment_sha256": "973d9c950945ef05f6806187821e579fa1b30ca7053af46e57c09cbda8030262",
+      "target_segment_sha256": "46435b3a26eaa1f08126573f6fd1cad7d658d8f1f12eb5ed8ba9c86a066ddb4f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B006",
+      "source_segment_sha256": "aed916eb8197f6e6a5593f14e39dfdd6ffd05fa9178076eff09f5302e9ce1088",
+      "target_segment_sha256": "7b29ba5684eae43c129b75eb891be626a26e39a8df9ef915abeb1a346553abf4",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": "Machine states are made disjoint, alphabets united, q0 retained; M's undefined transition hands control to M' without changing tape or head. The first case requires M's transition to be defined.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B007",
+      "source_segment_sha256": "8a9ae9e669d6db8faf20927721eaee4c09d679f275099ba8018bda92b068449b",
+      "target_segment_sha256": "65ed0870a8a0887325068e46c682b9035d0906b478c44307a62125cfdcde66a6",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": "Without disciplined M, its halt head need not be on square 1, so a naive sequential composition may start M' at the wrong place.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B008",
+      "source_segment_sha256": "4c0c16128fed788328b7aead132faff070301a15610b2a3704cfee44db2617b5",
+      "target_segment_sha256": "0bee66473dcb94231deae1827ebdb1ca7956913b7a4f0e8eb20e9d739b572ba7",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B010",
+      "source_segment_sha256": "bb073c1a5e6d15915c89562acc6a37f579c39524dc2dc7ee7fc713509082bad8",
+      "target_segment_sha256": "a80de2dcc11cd6c906a0be16e2e1ae61193923f4bd4df671f107ee84f6481b1a",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B012",
+      "source_segment_sha256": "4dbb223dc97c98f8406eda18f02d59374c19badf23875597e583be0fa9257d3d",
+      "target_segment_sha256": "29efeb9abdd217fca385d2e6455c9f3e8bfe90b87066bc84a4bc8a824b487193",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B013",
+      "source_segment_sha256": "4cf8f024b6a81e383902a0745fbeb164c4e7b5630020c03963d9aadde70b09e3",
+      "target_segment_sha256": "e9dcaad8b0d2b1b813e55435f615cfb0729749cb8024066182ab623fab84dd9f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B014",
+      "source_segment_sha256": "6718be2758b19903b7548fa946769ac1ad729d264b565ee24385739b7fea3d01",
+      "target_segment_sha256": "5f10856cc0125ff52c90666f8ae629fdd6bda2ca569ff407c4d9f6de99b09254",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": "Disciplined M and M' compute f and f'; their combination computes the stated composition and remains disciplined.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B015",
+      "source_segment_sha256": "283f65ba6be3491be04019f9801ebc0fd9fcc17fabbbd8e4892af6a59d36e9b8",
+      "target_segment_sha256": "5f5240c40f51ea612a8c38189a662fff1675f66df48076cae793ad4e7a78c863",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0261-B016",
+      "source_segment_sha256": "007e2ccb974be68e2fc609936dbf13492dafcf9f3de9662169e27838f0f998a5",
+      "target_segment_sha256": "5e9245032a5bb4abb2617a2caa231dbc0b931dab2eef3adb4952300d3ec2756f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "The disjoint-state machine combination, alphabet union, start state and three-way transition rule are retained. OLTM-004 explicitly guards the first case by definedness so the undefined-case handoff is reachable; three English formula labels are localized. The proof uses disciplined head position 1 and computes f'(f(inputs)).",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0262-B004",
+      "source_segment_sha256": "3da2830d180fc823f473c362643dd41867552776115f337048ee0fdbb6df75d2",
+      "target_segment_sha256": "f8afee5455bb7aaa3c579127ebbd370993b8000fb0cbe629fb311e82c5a53959",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Variants distinguish finite alphabets, simultaneous writing/moving, stay, two-way or multiple tapes, and nondeterministic transition relations. The square-0 footnote caveat and even/odd tape coding sketch remain qualified as in source.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0262-B005",
+      "source_segment_sha256": "9483b9b97122393f7f12f300a5f2c8ba9d926bd21436aeb69ab6ab9b542b7f05",
+      "target_segment_sha256": "1fbcea3e5ede72954f39e71c68203d9e8d906eb8ed8a8959a2e927fd0ca70769",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Variants distinguish finite alphabets, simultaneous writing/moving, stay, two-way or multiple tapes, and nondeterministic transition relations. The square-0 footnote caveat and even/odd tape coding sketch remain qualified as in source.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0262-B006",
+      "source_segment_sha256": "3d2aee55bb708347c96981cc301a1da74340520af2c8b344f0614fbdccf40f9e",
+      "target_segment_sha256": "7cb4dc44f2ef82376d12c6852d29c2d8cb239da3ffd7d5b852f7062c6c01167f",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Variants distinguish finite alphabets, simultaneous writing/moving, stay, two-way or multiple tapes, and nondeterministic transition relations. The square-0 footnote caveat and even/odd tape coding sketch remain qualified as in source.",
+      "reverse_paraphrase_english": "A transition relation can offer two distinct next triples for one current state-symbol pair; this is nondeterminism, not an undefined transition.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0262-B007",
+      "source_segment_sha256": "890220ceb58a27c7e3729c1839c61f923f355477027cc51e96532112634359b2",
+      "target_segment_sha256": "c05cd4299c7c51e947793d75d719985b81ca25676266eaa381463c7396f939fe",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Variants distinguish finite alphabets, simultaneous writing/moving, stay, two-way or multiple tapes, and nondeterministic transition relations. The square-0 footnote caveat and even/odd tape coding sketch remain qualified as in source.",
+      "reverse_paraphrase_english": "Deleting a left-moving end-marker transition only simulates boundary halting if the marker cannot occur elsewhere; the source footnote supplies a second marker workaround.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0262-B008",
+      "source_segment_sha256": "7003cd85eb30f49ebae54b7310e2e94e1547fcf9a68b467db07f944383bec403",
+      "target_segment_sha256": "20bf5f9e877f4df383c68f5fecede66c303f55253f7f02b883feaf1576b1202c",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Variants distinguish finite alphabets, simultaneous writing/moving, stay, two-way or multiple tapes, and nondeterministic transition relations. The square-0 footnote caveat and even/odd tape coding sketch remain qualified as in source.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0262-B009",
+      "source_segment_sha256": "2125246addf00488e7648cecc0d893c57e25776fdd57caeac42b3245ba4f265c",
+      "target_segment_sha256": "78546dc91ef6e1212c75bb5db0ec14d75c14b968bcd0bd559affd4f5e1a575b1",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Variants distinguish finite alphabets, simultaneous writing/moving, stay, two-way or multiple tapes, and nondeterministic transition relations. The square-0 footnote caveat and even/odd tape coding sketch remain qualified as in source.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0262-B010",
+      "source_segment_sha256": "9e84a204abdc616b16e450e1fa4350f26b4f88c755fea804f6ffa05c112f4074",
+      "target_segment_sha256": "e45a1c6377fad48b1e570ba450b5b59293da02bd29a402c98bfe087165339efa",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Variants distinguish finite alphabets, simultaneous writing/moving, stay, two-way or multiple tapes, and nondeterministic transition relations. The square-0 footnote caveat and even/odd tape coding sketch remain qualified as in source.",
+      "reverse_paraphrase_english": "A one-way tape can encode two tapes or a two-way tape by interleaving even and odd squares, with extra states and instructions.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0263-B004",
+      "source_segment_sha256": "7c1de4c421238206fdaaa4d26727a2c6cfba514d4e63648e48a23938f6aec1e3",
+      "target_segment_sha256": "f27703afb5854e50bafdfd407736cd18d8454c34341b244799cc3e45776660c1",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Church–Turing is presented as a thesis linking effective procedures and Turing computability, with the convenience use and philosophical noncomputability inference separated.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0263-B005",
+      "source_segment_sha256": "ed137483ea9882dc33e818c4a8934f5b0ac71fc9ecfde64c9b9274107406027d",
+      "target_segment_sha256": "be700c68ea490bc612808059850133b504de711ce3747f391760e69d2bc52983",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Church–Turing is presented as a thesis linking effective procedures and Turing computability, with the convenience use and philosophical noncomputability inference separated.",
+      "reverse_paraphrase_english": null,
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0263-B006",
+      "source_segment_sha256": "197916d595054e80e34de0815bd0c39c0e791bb1be9073c931ead0964cc15e39",
+      "target_segment_sha256": "b84bdb622149bbc74721bfb5c16ba3d39d1cd3245f317d361544f0afdd340b3b",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Church–Turing is presented as a thesis linking effective procedures and Turing computability, with the convenience use and philosophical noncomputability inference separated.",
+      "reverse_paraphrase_english": "The Church–Turing thesis identifies effective-procedure computability with Turing computability as a thesis, rather than a formal theorem from the definitions alone.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0263-B007",
+      "source_segment_sha256": "d6dfb521ddedefb7ab556e4b793dabe6a12e4f51f95ce33c28a42cbfc8d0547f",
+      "target_segment_sha256": "4558a6aa63a87729e1ba42f35f8f16bc6ce6092948a1decc567d031671fe0c26",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Church–Turing is presented as a thesis linking effective procedures and Turing computability, with the convenience use and philosophical noncomputability inference separated.",
+      "reverse_paraphrase_english": "An effective pseudocode procedure can justify existence of a Turing machine without constructing it, by appeal to the thesis.",
+      "result": "draft_review_passed_reader_build_pending"
+    },
+    {
+      "segment_id": "OLP-0263-B008",
+      "source_segment_sha256": "4235c1273e4da06cdc6bee6bbee1ef294fdc99cf03121a2ea5bba2571d06b317",
+      "target_segment_sha256": "1992d77b89e78b60f03f1fa0f8a7e053349fa7164d8ff21645ea523ee8261bf1",
+      "review": "Source and target compared by the drafting agent; formal parity checked mechanically. This is not independent native-speaker certification.",
+      "unit_assessment": "Church–Turing is presented as a thesis linking effective procedures and Turing computability, with the convenience use and philosophical noncomputability inference separated.",
+      "reverse_paraphrase_english": "If no Turing machine computes a function, then the thesis rules out any effective procedure for it; the halting problem is the cited application.",
+      "result": "draft_review_passed_reader_build_pending"
+    }
+  ],
+  "reverse_paraphrase_samples": 44,
+  "limitation": "Same-agent draft review. Independent Gujarati specialist review and rendered reader QA remain open; no completed 260-unit reader is claimed."
+}

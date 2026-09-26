@@ -1,0 +1,81 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: halting-states
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{hal}
+\olsection{થંભવાની અવસ્થાઓ}
+
+\begin{explain}
+આપણે મશીનને એવી રીતે વ્યાખ્યાયિત કર્યું છે કે અમલમાં મૂકવા
+કોઈ સૂચના ન હોય ત્યારે જ તે થંભે. જોકે ટ્યુરિંગ મશીનનાં
+સામાન્ય નિરૂપણોમાં એક ખાસ \emph{થંભવાની અવસ્થા}~$h$
+હોય છે, જેમાં $h \in Q$.
+
+થંભવાની અવસ્થા પાછળનો વિચાર સરળ છે: મશીનનું કામ પૂરું
+થાય (તે ઇનપુટ સ્વીકારવા તૈયાર થાય અથવા આઉટપુટ
+લખવાનું પૂરું કરે), ત્યારે તે અવસ્થા~$h$માં જઈને થંભે.
+કેટલાંક મશીનોમાં થંભવાની બે અવસ્થાઓ હોય છે: એક
+ઇનપુટ સ્વીકારવા માટે અને બીજી ઇનપુટ નકારવા માટે.
+\end{explain}
+
+\begin{ex}\emph{થંભવાની અવસ્થાઓ}.
+આ વિચાર સ્પષ્ટ કરવા પહેલાં સમ મશીનમાં ફેરફાર કરીએ.
+ઇનપુટ સમ હોય ત્યારે મશીન અવસ્થા~$q_0$માં થંભે તે
+બદલે, તેને થંભવાની અવસ્થામાં મોકલતી સૂચના ઉમેરી
+શકીએ છીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial, state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+      edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{R}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+
+હવે ઉદાહરણને વધુ વિસ્તૃત કરીએ. ઇનપુટ વિષમ છે એવું
+મશીન નક્કી કરે ત્યારે તે ક્યારેય થંભતું નથી. આ
+ચક્રમાં ચાલવાની સૂચનાને નકારવાની અવસ્થા~$r$માં જવાની
+સૂચનાથી બદલીને મશીનમાં \emph{નકારવાની} અવસ્થા
+ઉમેરી શકીએ છીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+  \node[state]         (D) [below of=B] {$r$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+      edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge node {\TMtrans{\TMblank}{\TMblank}{N}} (D)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+આવા કિસ્સામાં ખાસ થંભવાની અવસ્થા ઉમેરવી લાભકારક છે:
+મશીન કયા ઇનપુટ સ્વીકારે કે નકારે છે તે સ્પષ્ટ થાય છે.
+પરંતુ ખાસ થંભવાની અવસ્થા ઉમેરવાથી મશીનની સંગણનશક્તિ
+વધતી નથી એ નોંધવું જરૂરી છે. એવી જ રીતે, થંભવાનો
+ઓછો ઔપચારિક ખ્યાલ પણ પોતાના લાભ ધરાવે છે. આ
+પ્રકરણમાં અત્યાર સુધી વપરાયેલી થંભવાની વ્યાખ્યા
+\emph{અટકવાની સમસ્યા}ની સાબિતી સહજ અને રજૂ કરવામાં
+સરળ બનાવે છે. તેથી આપણે આપણી મૂળ વ્યાખ્યા જ
+ચાલુ રાખીએ છીએ.
+\end{explain}
+
+\end{document}

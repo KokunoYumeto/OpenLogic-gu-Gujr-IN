@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390" width="920" height="390" role="img" aria-labelledby="tm-schematic-title tm-schematic-description">
+  <title id="tm-schematic-title">ટ્યુરિંગ મશીન: ટેપ, વાંચન-લેખન હેડ અને નિયંત્રણ</title>
+  <desc id="tm-schematic-description">ડાબી સીમાના ચિહ્નથી શરૂ થતી ખાના-ખાનાવાળી ટેપ છે. એક ખાનાની સામે વાંચન-લેખન હેડ છે; તેની સાથે સીમિત અવસ્થાઓનું નિયંત્રણ જોડાયેલું છે. ચિત્ર સામાન્ય રચનાનું યોજનાત્મક નિરૂપણ છે.</desc>
+  <defs>
+    <marker id="tm-schematic-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#17233b" stroke-width="1.7"/></marker>
+  </defs>
+  <g font-family="Noto Sans Gujarati, sans-serif" fill="#17233b">
+    <text x="42" y="38" font-size="24" font-weight="700">ટેપ</text>
+    <path d="M42 65 H853 L885 103 L853 141 H42 Z" fill="#f5f8ff" stroke="#17233b" stroke-width="2.5"/>
+    <g stroke="#17233b" stroke-width="1.8">
+      <path d="M123 65 V141 M204 65 V141 M285 65 V141 M366 65 V141 M447 65 V141 M528 65 V141 M609 65 V141 M690 65 V141 M771 65 V141 M852 65 V141"/>
+    </g>
+    <g font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="34" text-anchor="middle">
+      <text x="82" y="115">▷</text><text x="164" y="115">1</text><text x="245" y="115">1</text>
+      <text x="326" y="115">1</text><text x="407" y="115">0</text><text x="488" y="115">0</text>
+      <text x="569" y="115">0</text><text x="650" y="115">0</text><text x="731" y="115">0</text>
+      <text x="812" y="115">⋯</text>
+    </g>
+    <path d="M326 209 V156" fill="none" stroke="#17233b" stroke-width="3" marker-end="url(#tm-schematic-arrow)"/>
+    <text x="349" y="196" font-size="21">વાંચન-લેખન હેડ</text>
+    <path d="M326 226 V269" fill="none" stroke="#17233b" stroke-width="3"/>
+    <rect x="137" y="268" width="378" height="81" rx="14" fill="#e7efff" stroke="#17233b" stroke-width="2.5"/>
+    <text x="326" y="318" text-anchor="middle" font-size="25">સાન્ત અવસ્થા ધરાવતું નિયંત્રણ</text>
+  </g>
+</svg>

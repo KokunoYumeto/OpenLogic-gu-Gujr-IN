@@ -67,8 +67,9 @@ replace_once(
     "    body=body.replace(r'\\/', '')\n",
 )
 
-generated = ROOT / "tools" / "build_computability_theory_html_expanded.py"
-generated.write_text(code, encoding="utf-8", newline="\n")
-sys.argv = [sys.argv[0], "computability-theory"]
-exec(compile(code, str(generated), "exec"),
-     {"__name__": "__main__", "__file__": str(generated)})
+if __name__ == "__main__":
+    generated = ROOT / "tools" / "build_computability_theory_html_expanded.py"
+    generated.write_text(code, encoding="utf-8", newline="\n")
+    sys.argv = [sys.argv[0], "computability-theory"]
+    exec(compile(code, str(generated), "exec"),
+         {"__name__": "__main__", "__file__": str(generated)})

@@ -1,0 +1,153 @@
+{
+  "schema": "openlogic-gu-untranslated-scan/25",
+  "checked_at_utc": "2026-09-26T02:00:38.443568+00:00",
+  "scope": "OLP-0252–0263 Gujarati Turing Machines complete chapter draft",
+  "method": "Scanned prose after stripping TeX comments, mathematical displays and inline math, structural IDs, references, paths, citations and control words; inspected correction prose separately. Exact historical names and the English paper title, machine acronyms, and formal symbols are recorded as non-prose exceptions.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0252",
+      "path": "content/turing-machines/turing-machines.tex",
+      "target_sha256": "49c18343e4d50eceb7b8e60dfce0da7590e879845752d00d333cdbce9e316539",
+      "gujarati_characters": 13,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0253",
+      "path": "content/turing-machines/machines-computations/machines-computations.tex",
+      "target_sha256": "a97b5b3214eafff8b922e6bf3211a50a3c559db72b499a72a8a9af06d971bdf5",
+      "gujarati_characters": 21,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0254",
+      "path": "content/turing-machines/machines-computations/introduction.tex",
+      "target_sha256": "11e627ef77211891ac4264125fdc5bb81860aa2a89513594b65de194cb33cb11",
+      "gujarati_characters": 3899,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0255",
+      "path": "content/turing-machines/machines-computations/representing-tms.tex",
+      "target_sha256": "fd3c8d6524d658a1152dada3e6e5b397f1fd9fe1e2cadb5eabe8da72452e520f",
+      "gujarati_characters": 4201,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0256",
+      "path": "content/turing-machines/machines-computations/turing-machines.tex",
+      "target_sha256": "077b284b91a33f905c32eda27498a17593ca0323c3ae2490bcb21788406fde10",
+      "gujarati_characters": 872,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0257",
+      "path": "content/turing-machines/machines-computations/configuration.tex",
+      "target_sha256": "370ed40fa0cf23b144845a7c98bc3b4d4ad462584351e2969972c221d31fb1a9",
+      "gujarati_characters": 2167,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 2
+    },
+    {
+      "unit_id": "OLP-0258",
+      "path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "target_sha256": "c081613e9b357c179ff66e9d031dd8855ffab1a6a840cfcf9d5bb852c7efa1bd",
+      "gujarati_characters": 2648,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0259",
+      "path": "content/turing-machines/machines-computations/halting-states.tex",
+      "target_sha256": "86c40b6cbe68742ce78f2403ec26ddcc5976e49ee56ac5f379806d85cefa336e",
+      "gujarati_characters": 980,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0260",
+      "path": "content/turing-machines/machines-computations/disciplined-machines.tex",
+      "target_sha256": "f0ff39f57fa911fd99cd20519f6d4d1597e0c8e1fd803487f96066433dfa66d9",
+      "gujarati_characters": 1471,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0261",
+      "path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "target_sha256": "98cbf8470eb3d843103561f951ee84d648a80484aed7a476be7c00c85e237331",
+      "gujarati_characters": 2251,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0262",
+      "path": "content/turing-machines/machines-computations/variants.tex",
+      "target_sha256": "115a5c926a34676c690b78ef81b8791b20d51bf6c2f1ae1a8a161f20b8f2d483",
+      "gujarati_characters": 2659,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0263",
+      "path": "content/turing-machines/machines-computations/church-turing-thesis.tex",
+      "target_sha256": "3dbb12df7b2ee100787dc1e9861e78c48868f88a6a4a0a41b7574cdff41207f5",
+      "gujarati_characters": 1249,
+      "untranslated_prose_findings": 0,
+      "tagged_token_parity": true,
+      "source_correction_notes": 0
+    }
+  ],
+  "totals": {
+    "units": 12,
+    "gujarati_characters": 22431,
+    "source_detector_ascii_tokens": 5365,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 4
+  },
+  "allowed_proper_names": [
+    "A",
+    "Alan",
+    "B",
+    "BINAC",
+    "Colossus",
+    "ENIAC",
+    "Experimental",
+    "L",
+    "Machine",
+    "Manchester",
+    "N",
+    "R",
+    "SSEM",
+    "Small-Scale",
+    "Turing"
+  ],
+  "other_nonprose_exceptions": [
+    "source historical proper names and paper title",
+    "diagram code and formal state symbols",
+    "OLTM-001–004 adjacent Gujarati correction notes",
+    "five formula-text localizations"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "tagged_token_mismatches": [],
+  "status": "passed",
+  "full_corpus_complete": false
+}

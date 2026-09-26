@@ -1,0 +1,106 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: well-behaved-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{dis}
+\olsection{શિસ્તબદ્ધ મશીનો}
+
+\begin{explain}
+\olref[hal]{sec} વિભાગમાં આપણે એવી ટ્યુરિંગ મશીનો
+જોઈ હતી જેમાં એક જ નિર્ધારિત થંભવાની અવસ્થા~$h$
+હોય છે---આવાં મશીનો થંભે તો અવસ્થા~$h$માં જ થંભે
+તેની ખાતરી હોય છે. આ રીતે, એક જ થંભવાની અવસ્થાવાળાં
+મશીનો સામાન્ય ટ્યુરિંગ મશીનોને આપણે આપેલી છૂટ કરતાં
+વધુ ``શિસ્તબદ્ધ'' છે. ટ્યુરિંગ મશીનોના વર્તન પર બીજી
+શરતો પણ મૂકી શકીએ. દાખલા તરીકે, મશીન ખાનું~$0$માંનું
+ટેપના છેડાનું ચિહ્ન ક્યારેય ભૂંસે નહીં અથવા ખાનું~$0$માંથી
+ડાબે જવાનો પ્રયત્ન ન કરે એવી મનાઈ આપણે મૂકી નથી.
+(આવા કિસ્સામાં હેડ ખાનું~$0$માં જ રહે છે એમ આપણી
+વ્યાખ્યા કહે છે; બીજી વ્યાખ્યાઓમાં મશીન થંભે છે.)
+એવી જ રીતે, ટ્યુરિંગ મશીન થંભે તો ખાનું~$1$ વાંચતાં
+થંભે એવી ધારણા કરી શકાય તે ક્યારેક ઇચ્છનીય છે.
+\end{explain}
+
+\begin{defn}\ollabel{defn:disciplined}
+ટ્યુરિંગ મશીન~$M$ \emph{શિસ્તબદ્ધ} છે ત્યારે અને
+ત્યારે જ જ્યારે
+\begin{enumerate}
+    \item તેમાં એક જ નિર્ધારિત થંભવાની અવસ્થા~$h$ છે,
+    \item તે થંભે તો ખાનું~$1$ વાંચતાં થંભે છે,
+    \item તે ખાનું~$0$માંનું $\TMendtape$ પ્રતીક ક્યારેય
+    ભૂંસતું નથી, અને
+    \item તે ખાનું~$0$માંથી ડાબે જવાનો પ્રયત્ન ક્યારેય
+    કરતું નથી.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+આપણે અગાઉ ચર્ચ્યું છે કે કોઈ પણ ટ્યુરિંગ મશીનને એ જ
+વર્તન ધરાવતું પરંતુ નિર્ધારિત થંભવાની અવસ્થાવાળું મશીન
+બનાવી શકાય છે. આ માટે માત્ર નવી અવસ્થા~$h$ ઉમેરીને
+મૂળ $\delta$ જે જોડી $\tuple{q,\sigma}$ પર અવ્યાખ્યાયિત
+હોય તે દરેક માટે સૂચના
+$\delta(q, \sigma) = \tuple{h, \sigma, N}$ ઉમેરવી પડે.
+સાબિતી કંટાળાજનક હોવા છતાં એ સાચું છે કે કોઈ પણ
+ટ્યુરિંગ મશીન~$M$ને એવા શિસ્તબદ્ધ ટ્યુરિંગ મશીન~$M'$
+માં ફેરવી શકાય છે જે એ જ ઇનપુટ પર થંભે છે અને એ જ
+આઉટપુટ આપે છે. દાખલા તરીકે, ટ્યુરિંગ મશીન થંભે અને
+તે ખાનું~$1$ પર ન હોય, તો હેડ ટેપના છેડાનું ચિહ્ન
+મળે ત્યાં સુધી ડાબે ખસે, પછી એક ખાનું જમણે ખસે અને
+પછી થંભે એવી સૂચનાઓ ઉમેરી શકાય. બીજી શરતો કેવી
+રીતે પૂરી કરી શકાય તે તમે વિચારો.
+\end{explain}
+
+\begin{ex}
+    \olref{fig:adder-disc}માં આપણે
+    \olref[una]{ex:adder}ના સરવાળાના મશીનને શિસ્તબદ્ધ
+    મશીનમાં ફેરવીએ છીએ.
+    \begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (H) [left of=D] {$h$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+        edge node {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (H);
+\end{tikzpicture}
+\]\caption{શિસ્તબદ્ધ સરવાળાનું મશીન}
+\ollabel{fig:adder-disc}
+\end{figure}
+\end{ex}
+
+\begin{prop}\ollabel{prop:disciplined} દરેક ટ્યુરિંગ
+મશીન~$M$ માટે એવું શિસ્તબદ્ધ ટ્યુરિંગ મશીન~$M'$
+છે કે $M$ આઉટપુટ~$O$ સાથે થંભે તો તે પણ
+આઉટપુટ~$O$ સાથે થંભે, અને $M$ ન થંભે તો તે
+પણ ન થંભે. ખાસ કરીને, ટ્યુરિંગ મશીન વડે સંગણનીય
+દરેક વિધેય $f\colon\Nat^n \to \Nat$ શિસ્તબદ્ધ
+ટ્યુરિંગ મશીન વડે પણ સંગણનીય છે.
+\end{prop}
+
+\begin{prob}\label{tur:mac:dis:prob:disc-succ}
+$f(x) = x+1$ ગણતું શિસ્તબદ્ધ મશીન આપો.
+\end{prob}
+
+
+\begin{prob}\label{tur:mac:dis:prob:copier}
+ઇનપુટ $\TMstroke^n$ પર શરૂ કરતાં આઉટપુટ
+$\TMstroke^n \concat \TMblank \concat \TMstroke^n$
+આપે એવું શિસ્તબદ્ધ મશીન શોધો.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,64 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: turing-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{tur}
+\olsection{ટ્યુરિંગ મશીનો}
+
+\begin{explain}
+ટ્યુરિંગ મશીનની ઔપચારિક વ્યાખ્યા અમૂર્ત લાગે છે, પણ ખરેખર
+સરળ છે: ટ્યુરિંગ મશીન કેવી રીતે કામ કરે છે તે નિર્દિષ્ટ કરવા
+જરૂરી બધી માહિતી તે એક જ ગણિતીય રચનામાં સમાવે છે. તેમાં
+(1) મશીન કઈ અવસ્થાઓમાં હોઈ શકે, (2) ટેપ પર કયાં પ્રતીકોને
+મંજૂરી છે, (3) મશીન કઈ અવસ્થામાં શરૂ થવું જોઈએ અને
+(4) મશીનનો સૂચનાઓનો ગણ શું છે, એ બધું આવે છે.
+\end{explain}
+
+\begin{defn}[ટ્યુરિંગ મશીન]
+\emph{ટ્યુરિંગ મશીન} $M$ એ નીચેની વસ્તુઓનું બનેલું ચતુષ્ટય
+$\langle Q, \Sigma, q_0, \delta\rangle$ છે:
+\begin{enumerate}
+\item \emph{અવસ્થાઓ}નો સાન્ત ગણ~$Q$,
+\item $\TMendtape$ અને $\TMblank$ ધરાવતી સાન્ત \emph{વર્ણમાળા}
+  $\Sigma$,
+\item \emph{પ્રારંભિક અવસ્થા}~$q_0 \in Q$,
+\item સાન્ત \emph{સૂચનાઓનો ગણ}~$\delta\colon Q \times \Sigma
+  \pto Q \times \Sigma \times \{\TMleft, \TMright, \TMstay\}$.
+\end{enumerate}
+આંશિક વિધેય~$\delta$ને $M$નું \emph{સંક્રમણ વિધેય}
+પણ કહે છે.
+\end{defn}
+
+\begin{explain}
+આપણે ધારીએ છીએ કે ટેપ માત્ર એક દિશામાં અનંત છે.
+તેથી ટેપના ડાબા છેડાને ચિહ્નિત કરવા માટે વિશિષ્ટ
+પ્રતીક~$\TMendtape$ રાખવું ઉપયોગી છે. તેનાથી ટ્યુરિંગ
+મશીનના પ્રોગ્રામને ટેપની બહાર નીકળી જવાનો ``ભય'' ક્યારે
+છે તે ઓળખવાનું સરળ બને છે. આપણે એમ ધારી શકીએ કે આ
+પ્રતીક ક્યારેય બદલવામાં આવતું નથી, એટલે
+$\delta(q,\TMendtape)$ વ્યાખ્યાયિત હોય તો
+$\delta(q,\TMendtape) = \tuple{q', \TMendtape, x}$.
+કેટલાંક પાઠ્યપુસ્તકો આવી ધારણા કરે છે; આપણે કરતા નથી.
+તમે તમારું ટ્યુરિંગ મશીન ઘડતી વખતે તે ક્યારેય
+$\TMendtape$ને બદલે નહીં તેની કાળજી રાખી શકો છો.
+ઉપરાંત, કેટલીક પરિસ્થિતિમાં આ પ્રતીક બદલવાની છૂટ
+આપવાથી ઉપયોગી લવચીકતા મળે છે.
+\end{explain}
+
+\begin{ex}
+\emph{સમ મશીન:} ઔપચારિક રીતે સમ મશીન એ ચતુષ્ટય
+$\tuple{Q, \Sigma, q_0, \delta}$ છે, જ્યાં
+\begin{align*}
+Q & = \{ q_0, q_1 \} \\
+\Sigma & = \{ \TMendtape, \TMblank, \TMstroke \}, \\
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}.
+\end{align*}
+\end{ex}
+
+\end{document}

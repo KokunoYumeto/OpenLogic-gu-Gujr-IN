@@ -1,9 +1,9 @@
 {
   "revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "total": 722,
-  "translated": 248,
-  "working_scope": "સંગણનીયતા સિદ્ધાંત સુધીનું સ્થાનિક સંચિત ગુજરાતી ભાષાંતર, OLP-0004–0251",
-  "working_status": "248 એકમોના સ્રોત, HTML/MathML, EPUB, PDF, પૂર્ણ-લખાણ અને GitHub/Zenodoની આઠ ફાઇલો તથા PDF પૂર્વદર્શનનું અનામી પાછું-વાંચન પસાર થયું; સંપૂર્ણ 722 એકમોની આવૃત્તિ હજી ચાલુ છે",
+  "translated": 260,
+  "working_scope": "ટ્યુરિંગ મશીનોના પ્રથમ પ્રકરણ સુધીનું સ્થાનિક સંચિત ગુજરાતી ભાષાંતર, OLP-0004–0263",
+  "working_status": "૨૬૦ એકમોની રચના, એ જ એજન્ટની અર્થ-સરખામણી, શૂન્ય બાકી અંગ્રેજી ગદ્ય, HTML/MathML અને Chrome દૃશ્ય તપાસ, EPUB 3.3 અને EPUBCheck, પુનઃઉત્પાદિત PDF અને નવા પાનાંની દૃશ્ય તપાસ, તથા પૂર્ણ-લખાણની ચોક્કસ PDF પુનઃરચના પસાર; જાહેર પ્રકાશન-ચકાસણી બાકી છે",
   "public_release": {
     "tag": "computability-theory-v0.18.0",
     "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/computability-theory-v0.18.0",
@@ -1775,73 +1775,85 @@
       "unit_id": "OLP-0252",
       "source_path": "content/turing-machines/turing-machines.tex",
       "source_sha256": "6180cf9de2eefc91d202d374a0f24e3003f5df485a8a7567e48cf50b45c0d8fd",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "49c18343e4d50eceb7b8e60dfce0da7590e879845752d00d333cdbce9e316539"
     },
     {
       "unit_id": "OLP-0253",
       "source_path": "content/turing-machines/machines-computations/machines-computations.tex",
       "source_sha256": "332d13fb67f673b5deab98c30a94f50bfb7152187a2e9ab6b6e8d438174415c1",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "a97b5b3214eafff8b922e6bf3211a50a3c559db72b499a72a8a9af06d971bdf5"
     },
     {
       "unit_id": "OLP-0254",
       "source_path": "content/turing-machines/machines-computations/introduction.tex",
       "source_sha256": "659e790a468190fba86918ca1d865510a30e7ab97b629aed7e5491b8cfac75b3",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "11e627ef77211891ac4264125fdc5bb81860aa2a89513594b65de194cb33cb11"
     },
     {
       "unit_id": "OLP-0255",
       "source_path": "content/turing-machines/machines-computations/representing-tms.tex",
       "source_sha256": "099ee6e5370880ce3164bdeeb6fe36a06d2387228fa2ce4df943cb88ed6f3afd",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "fd3c8d6524d658a1152dada3e6e5b397f1fd9fe1e2cadb5eabe8da72452e520f"
     },
     {
       "unit_id": "OLP-0256",
       "source_path": "content/turing-machines/machines-computations/turing-machines.tex",
       "source_sha256": "20d13655358fa780af8f9a2e4994c101c1495ecce098512c28a60293ee239a65",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "077b284b91a33f905c32eda27498a17593ca0323c3ae2490bcb21788406fde10"
     },
     {
       "unit_id": "OLP-0257",
       "source_path": "content/turing-machines/machines-computations/configuration.tex",
       "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "370ed40fa0cf23b144845a7c98bc3b4d4ad462584351e2969972c221d31fb1a9"
     },
     {
       "unit_id": "OLP-0258",
       "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
       "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "c081613e9b357c179ff66e9d031dd8855ffab1a6a840cfcf9d5bb852c7efa1bd"
     },
     {
       "unit_id": "OLP-0259",
       "source_path": "content/turing-machines/machines-computations/halting-states.tex",
       "source_sha256": "bc10eb130811dbd6f527c85e683a03b97f771c7f5ff0f64d5a39f040144799bf",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "86c40b6cbe68742ce78f2403ec26ddcc5976e49ee56ac5f379806d85cefa336e"
     },
     {
       "unit_id": "OLP-0260",
       "source_path": "content/turing-machines/machines-computations/disciplined-machines.tex",
       "source_sha256": "b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "f0ff39f57fa911fd99cd20519f6d4d1597e0c8e1fd803487f96066433dfa66d9"
     },
     {
       "unit_id": "OLP-0261",
       "source_path": "content/turing-machines/machines-computations/combining-machines.tex",
       "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "98cbf8470eb3d843103561f951ee84d648a80484aed7a476be7c00c85e237331"
     },
     {
       "unit_id": "OLP-0262",
       "source_path": "content/turing-machines/machines-computations/variants.tex",
       "source_sha256": "d751ce8370fa72e3d98762ecf2f928e19b9bf1c94cc17505221da0eec922d35e",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "115a5c926a34676c690b78ef81b8791b20d51bf6c2f1ae1a8a161f20b8f2d483"
     },
     {
       "unit_id": "OLP-0263",
       "source_path": "content/turing-machines/machines-computations/church-turing-thesis.tex",
       "source_sha256": "a9073c7499f26e2ae151d434d24aa8e4a9789f84f65a43568a75aab78d49a421",
-      "status": "untranslated"
+      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "translation_sha256": "3dbb12df7b2ee100787dc1e9861e78c48868f88a6a4a0a41b7574cdff41207f5"
     },
     {
       "unit_id": "OLP-0264",

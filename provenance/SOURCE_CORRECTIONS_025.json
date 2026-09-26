@@ -1,0 +1,109 @@
+{
+  "schema": "openlogic-gu-source-corrections/25",
+  "updated_at_utc": "2026-09-26T02:00:46.013929+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "frozen_source_preserved": true,
+  "scope": "OLP-0252–0263 Turing Machines chapter, four visible source differences",
+  "corrections": [
+    {
+      "finding_id": "OLTM-001",
+      "classification": "initial_head_position_conflict",
+      "source_path": "content/turing-machines/machines-computations/introduction.tex",
+      "source_line": 42,
+      "source_excerpt": "At the outset, the head scans the leftmost square",
+      "source_range_utf8": [
+        2082,
+        2131
+      ],
+      "source_excerpt_sha256": "1373be484b300f48071253768a0881c91cb1357f4262477482a179ad6fd62cb0",
+      "source_bytes": 6669,
+      "source_sha256": "659e790a468190fba86918ca1d865510a30e7ab97b629aed7e5491b8cfac75b3",
+      "target_path": "gu/content/turing-machines/machines-computations/configuration.tex",
+      "adjacent_note_line": 60,
+      "adjacent_note_range_utf8": [
+        4278,
+        4305
+      ],
+      "target_bytes": 8662,
+      "target_sha256": "370ed40fa0cf23b144845a7c98bc3b4d4ad462584351e2969972c221d31fb1a9",
+      "controlling_evidence_gu": "પરિચય હેડને ટેપના ડાબા છેડે મૂકે છે; ઔપચારિક પ્રારંભિક સંરૂપણ m=1 મુજબ તેને ઇનપુટના પ્રથમ ખાનામાં મૂકે છે.",
+      "handling": "ગુજરાતી વાચક-પાઠમાં બાજુની કી-વાળી નોંધ મૂળનો ભેદ જણાવે છે; સ્થિર અંગ્રેજી મૂળ બદલ્યું નથી.",
+      "status": "applied_disclosed_structural_and_same_agent_semantic_qa_passed_reader_qa_pending"
+    },
+    {
+      "finding_id": "OLTM-002",
+      "classification": "input_side_of_end_marker",
+      "source_path": "content/turing-machines/machines-computations/configuration.tex",
+      "source_line": 60,
+      "source_excerpt": "begins immediately to the left end marker.",
+      "source_range_utf8": [
+        2380,
+        2422
+      ],
+      "source_excerpt_sha256": "8a64d2e0ce0c85d201766412dbe18e049925dd8490b1fc40a1a181d4fc992740",
+      "source_bytes": 4110,
+      "source_sha256": "8596ba7be3af54cf8eff3993ca931ba11f3664431eb2378f7fda47a2cf446b0b",
+      "target_path": "gu/content/turing-machines/machines-computations/configuration.tex",
+      "adjacent_note_line": 71,
+      "adjacent_note_range_utf8": [
+        5241,
+        5268
+      ],
+      "target_bytes": 8662,
+      "target_sha256": "370ed40fa0cf23b144845a7c98bc3b4d4ad462584351e2969972c221d31fb1a9",
+      "controlling_evidence_gu": "બાજુનું $\\TMendtape \\frown I$ ઇનપુટને છેડાના ચિહ્નની જમણે મૂકે છે, ડાબે નહીં.",
+      "handling": "ગુજરાતી વાચક-પાઠમાં બાજુની કી-વાળી નોંધ મૂળનો ભેદ જણાવે છે; સ્થિર અંગ્રેજી મૂળ બદલ્યું નથી.",
+      "status": "applied_disclosed_structural_and_same_agent_semantic_qa_passed_reader_qa_pending"
+    },
+    {
+      "finding_id": "OLTM-003",
+      "classification": "wrong_original_doubler_cross_reference",
+      "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_line": 190,
+      "source_excerpt": "\\olref[tur][mac][una]{fig:doubler-disc}",
+      "source_range_utf8": [
+        8844,
+        8883
+      ],
+      "source_excerpt_sha256": "95b71821712c339872b539e9f9f386eb9d7273bb9839e35a529d0d5d857257aa",
+      "source_bytes": 10550,
+      "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "target_path": "gu/content/turing-machines/machines-computations/unary-numbers.tex",
+      "adjacent_note_line": 207,
+      "adjacent_note_range_utf8": [
+        12579,
+        12606
+      ],
+      "target_bytes": 15427,
+      "target_sha256": "c081613e9b357c179ff66e9d031dd8855ffab1a6a840cfcf9d5bb852c7efa1bd",
+      "controlling_evidence_gu": "શૂન્ય-ઇનપુટનો અભ્યાસપ્રશ્ન મૂળ બમણું કરનાર મશીન અને ખસેડનાર મશીનના સંયોજનનો છે; અગાઉનું ગદ્ય મૂળ માટે ex:doubler બતાવે છે.",
+      "handling": "ગુજરાતી વાચક-પાઠમાં બાજુની કી-વાળી નોંધ મૂળનો ભેદ જણાવે છે; સ્થિર અંગ્રેજી મૂળ બદલ્યું નથી.",
+      "status": "applied_disclosed_structural_and_same_agent_semantic_qa_passed_reader_qa_pending"
+    },
+    {
+      "finding_id": "OLTM-004",
+      "classification": "undefined_transition_case_shadowed",
+      "source_path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_line": 39,
+      "source_excerpt": "\\delta(q,\\sigma) & \\text{if $q \\in Q$}",
+      "source_range_utf8": [
+        1724,
+        1762
+      ],
+      "source_excerpt_sha256": "4763e3cf39fc684739622b7be488799734b2b2403d00957e2e409c0b5ebb02b0",
+      "source_bytes": 8221,
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "target_path": "gu/content/turing-machines/machines-computations/combining-machines.tex",
+      "adjacent_note_line": 53,
+      "adjacent_note_range_utf8": [
+        4099,
+        4126
+      ],
+      "target_bytes": 12518,
+      "target_sha256": "98cbf8470eb3d843103561f951ee84d648a80484aed7a476be7c00c85e237331",
+      "controlling_evidence_gu": "પ્રથમ caseમાં $\\delta(q,\\sigma)$ વ્યાખ્યાયિત હોવાની શરત વગર ત્રીજો, મશીન બદલી આપતો case ઢંકાઈ જાય છે.",
+      "handling": "ગુજરાતી વાચક-પાઠમાં બાજુની કી-વાળી નોંધ મૂળનો ભેદ જણાવે છે; સ્થિર અંગ્રેજી મૂળ બદલ્યું નથી.",
+      "status": "applied_disclosed_structural_and_same_agent_semantic_qa_passed_reader_qa_pending"
+    }
+  ]
+}

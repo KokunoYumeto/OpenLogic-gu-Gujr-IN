@@ -1,0 +1,188 @@
+% Part: turing-machines
+% Chapter: machines-computations
+% Section: combining-machines
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{mac}{cmb}
+\olsection{ટ્યુરિંગ મશીનોનું સંયોજન}
+
+\begin{explain}
+અત્યાર સુધી આપણે જોયેલાં ટ્યુરિંગ મશીનો સ્વરૂપે ઘણાં
+સરળ હતાં. પરંતુ હકીકતમાં, કોઈ પણ આધુનિક પ્રોગ્રામિંગ
+ભાષામાં ઉકેલી શકાય તેવી સમસ્યા ટ્યુરિંગ મશીનોથી પણ
+ઉકેલી શકાય છે. વધુ જટિલ ટ્યુરિંગ મશીનો બનાવવા માટે
+તેમને જોડવાનું શક્ય છે તે સમજવું જરૂરી છે. એમ હોય તો
+પ્રક્રિયાને સરળ ભાગોમાં વહેંચીને વધુ જટિલ સમસ્યાઓ
+ઉકેલતાં મશીનો બનાવી શકીએ. જટિલ સમસ્યાને તેના
+ઘટક ભાગોમાં વહેંચવાની સ્વાભાવિક રીત મળે, તો અનેક
+સરળ ટ્યુરિંગ મશીનો બનાવીને તેમને એક મશીનમાં જોડતાં
+સમસ્યાને કેટલાંક તબક્કામાં ઉકેલી શકીએ. આગળના વિભાગમાં
+અટકવાની સમસ્યા હાથ ધરતી વખતે આ વાત ખાસ અગત્યની છે.
+
+ટ્યુરિંગ મશીનો $M = \tuple{Q, \Sigma, q_0, \delta}$
+અને~$M' = \tuple{Q', \Sigma', q_0', \delta'}$ને કેવી રીતે
+જોડીએ? હવે $M$ થંભે તે પછી ટેપનું સંરૂપણ મશીન~$M'$
+ના ચલનના ઇનપુટ સંરૂપણ તરીકે વાપરીએ. આ કામ કરતું
+એક ટ્યુરિંગ મશીન $M \frown M'$ મેળવવા માટે આવું કરો:
+\begin{enumerate}
+    \item $M'$ની બધી અવસ્થાઓ~$Q'$ના ક્રમાંક (અથવા નામ)
+    ફરી ગોઠવો, જેથી $M$ અને~$M'$ની કોઈ અવસ્થા
+    સમાન ન હોય ($Q \cap Q' = \emptyset$).
+    \item $M \frown M'$ની અવસ્થાઓ $Q \cup Q'$ છે.
+    \item ટેપની વર્ણમાળા $\Sigma \cup \Sigma'$ છે.
+    \item પ્રારંભિક અવસ્થા~$q_0$ છે.
+    \item સંક્રમણ વિધેય નીચે આપેલું વિધેય $\delta''$ છે:
+    \[\delta''(q,\sigma) =
+    \begin{cases}
+      \delta(q,\sigma) & \text{જો $q \in Q$ અને $\delta(q,\sigma)$ વ્યાખ્યાયિત હોય}\\
+      \delta'(q,\sigma) & \text{જો $q \in Q'$ હોય}\\
+      \tuple{q_0', \sigma, \TMstay} & \text{જો $q \in Q$ હોય અને
+      $\delta(q,\sigma)$ અવ્યાખ્યાયિત હોય}
+    \end{cases}\]
+\end{enumerate}
+મળેલું મશીન અવસ્થા $q \in Q$માં હોય ત્યારે~$M$ની
+સૂચનાઓ અને અવસ્થા~$q \in Q'$માં હોય ત્યારે~$M'$
+ની સૂચનાઓ વાપરે છે. તે અવસ્થા $q \in Q$માં હોય
+અને એવું પ્રતીક~$\sigma$ વાંચે કે જેના માટે $M$માં
+સંક્રમણ નથી (એટલે $M$ થંભ્યું હોત), ત્યારે તે~$M'$
+ની પ્રારંભિક અવસ્થામાં જાય છે (અને ટેપની સામગ્રી તથા
+હેડનું સ્થાન યથાવત્ રાખે છે).
+\sourcecorrection{OLTM-004}{સ્થિર અંગ્રેજી મૂળના પ્રથમ
+કિસ્સામાં માત્ર $q\in Q$ લખ્યું છે, તેથી $\delta(q,\sigma)$
+અવ્યાખ્યાયિત હોય ત્યારે પણ પહેલો કિસ્સો લાગુ પડે અને
+ત્રીજો કિસ્સો ઢંકાઈ જાય. ગુજરાતી સૂત્રના પહેલા કિસ્સામાં
+$\delta(q,\sigma)$ વ્યાખ્યાયિત હોવાની શરત સ્પષ્ટ કરી છે;
+થંભેલા $M$માંથી $M'$માં જવાનું બાજુનું વર્ણન આ અર્થ
+નક્કી કરે છે.}
+
+નોંધો કે મશીન~$M$ શિસ્તબદ્ધ ન હોય, તો $M$ થંભે
+ત્યારે ટેપનો હેડ ક્યાં હશે તે આપણે જાણતા નથી; તેથી
+$M$ના થંભવાના સંરૂપણમાં હેડ ખાનું~$1$ વાંચતો હોય
+એવું જરૂરી નથી. મશીનો જોડતી વખતે આ વાત ધ્યાનમાં
+રાખવી અગત્યની છે.
+\end{explain}
+
+\begin{ex}
+\emph{મશીનોનું સંયોજન:} એવું મશીન રચીશું કે તેને ઇનપુટ
+તરીકે $n$ અને~$m$ લંબાઈના $\TMstroke$ના બે સમૂહો
+આપીએ, તો તે ટેપ પર $2(m+n)$ $\TMstroke$ના એક
+જ સમૂહ સાથે થંભે. તેને બનાવવા આપણે પહેલેથી જાણીએ
+છીએ એવાં બે મશીનો---સરવાળાનું મશીન અને બમણું કરનાર
+મશીન---જોડી શકીએ. પહેલાં સરવાળાના મશીનનો અવસ્થા-આલેખ
+દોરીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]
+અવસ્થા~$q_2$માં થંભવાને બદલે, આઉટપુટ બમણું કરવા
+મશીન આગળ ચાલે એવું જોઈએ. યાદ કરો કે બમણું કરનાર
+મશીન ઇનપુટનો પ્રથમ સ્ટ્રોક ભૂંસીને અલગ આઉટપુટમાં
+બે સ્ટ્રોક લખે છે. ટેપનો હેડ સરવાળાના મશીનના
+આઉટપુટનો પ્રથમ સ્ટ્રોક વાંચે તેની ખાતરી કરતી સૂચના
+ઉમેરીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E);
+\end{tikzpicture}
+\]
+હવે ઇનપુટ બમણું કરવું સહેલું છે---બમણું કરનાર મશીનને
+અવસ્થા~$q_4$ સાથે જોડવાનું જ બાકી છે. એ માટે
+બમણું કરનાર મશીનની અવસ્થાઓનાં નામ બદલવાં પડે,
+જેથી તે~$q_0$ને બદલે~$q_4$થી શરૂ થાય---આ રીતે
+બે પ્રારંભિક અવસ્થાઓ ઊભી થતી નથી. આખરી આલેખ
+\olref{fig:combined} જેવો હોવો જોઈએ.
+\begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+  \node[state]         (2) [right of=E] {$q_5$};
+  \node[state]         (3) [right of=2] {$q_6$};
+  \node[state]         (4) [below of=3] {$q_7$};
+  \node[state]         (5) [left of=4]  {$q_8$};
+  \node[state]         (6) [left of=5]  {$q_9$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E)
+    (E) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (E);
+\end{tikzpicture}
+\]
+\caption{સરવાળાનું અને બમણું કરનાર મશીન જોડવાં}
+\ollabel{fig:combined}
+\end{figure}
+\end{ex}
+
+\begin{prop}
+    $M$ અને $M'$ શિસ્તબદ્ધ હોય અને અનુક્રમે
+    $f\colon \Nat^k \to \Nat$ અને
+    $f'\colon \Nat \to \Nat$ વિધેયો ગણતા હોય, તો
+    $M \frown M'$ પણ શિસ્તબદ્ધ છે અને
+    $\comp{f}{f'}$ ગણે છે.
+\end{prop}
+
+\begin{proof}
+    $M$ શિસ્તબદ્ધ હોવાથી તે
+    આઉટપુટ~$f(n_1,\dots,n_k) = m$ સાથે થંભે ત્યારે
+    હેડ ખાનું~$1$ વાંચે છે. હવે~$M'$ની પ્રારંભિક
+    અવસ્થામાં જઈએ, તો મશીન આઉટપુટ $f'(m)$ સાથે,
+    ફરી ખાનું~$1$ વાંચતાં, થંભશે.
+    \olref[dis]{defn:disciplined}ની બીજી શરતો પણ
+    પૂરી થાય છે.
+\end{proof}
+
+\begin{prob}
+    \cref{tur:mac:dis:prob:disc-succ}નું મશીન~$M$
+    લઈને અને $M \frown M$ રચીને $f(x) = x+2$
+    ગણતું શિસ્તબદ્ધ ટ્યુરિંગ મશીન આપો.
+\end{prob}
+\end{document}

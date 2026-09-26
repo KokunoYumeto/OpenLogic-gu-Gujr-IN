@@ -1,0 +1,114 @@
+{
+  "schema": "openlogic-gu-formula-text-localization/25",
+  "updated_at_utc": "2026-09-26T02:00:45.617532+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "English conditional words inside displayed math in OLP-0258 and OLP-0261",
+  "localizations": [
+    {
+      "locator_id": "OLTM-TXT-001",
+      "unit_id": "OLP-0258",
+      "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_file_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "source_range_utf8": [
+        9556,
+        9573
+      ],
+      "source_excerpt_sha256": "cd1c853b4a4aa7d0969af323b55303b4d786e7459dedf046a7f7bf35cf1dfacd",
+      "source_excerpt": "\\text{if~$n = m$}",
+      "target_path": "gu/content/turing-machines/machines-computations/unary-numbers.tex",
+      "target_file_sha256": "c081613e9b357c179ff66e9d031dd8855ffab1a6a840cfcf9d5bb852c7efa1bd",
+      "target_range_utf8": [
+        13747,
+        13778
+      ],
+      "target_excerpt_sha256": "4605f63877786b82236148a13fdcd8d30ac35cb85424c585213227824c08f13e",
+      "target_excerpt": "\\text{જો~$n = m$ હોય}",
+      "role": "English conditional text localized; formal equality unchanged"
+    },
+    {
+      "locator_id": "OLTM-TXT-002",
+      "unit_id": "OLP-0258",
+      "source_path": "content/turing-machines/machines-computations/unary-numbers.tex",
+      "source_file_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "source_range_utf8": [
+        9590,
+        9610
+      ],
+      "source_excerpt_sha256": "ca1748ec8e77b34097cbd125869462b595a1f7f36168ebf0c57203ed05b08e7f",
+      "source_excerpt": "\\text{if~$n \\neq m$}",
+      "target_path": "gu/content/turing-machines/machines-computations/unary-numbers.tex",
+      "target_file_sha256": "c081613e9b357c179ff66e9d031dd8855ffab1a6a840cfcf9d5bb852c7efa1bd",
+      "target_range_utf8": [
+        13795,
+        13829
+      ],
+      "target_excerpt_sha256": "b0c8f3ea2de050926736701b84a63598e936142c67e719c7a4a69867adf1cc00",
+      "target_excerpt": "\\text{જો~$n \\neq m$ હોય}",
+      "role": "English conditional text localized; formal inequality unchanged"
+    },
+    {
+      "locator_id": "OLTM-TXT-003",
+      "unit_id": "OLP-0261",
+      "source_path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_file_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "source_range_utf8": [
+        1743,
+        1762
+      ],
+      "source_excerpt_sha256": "8e39e7e102d32244c81d96d34c394352ee0e5f20f9502874728ff3f1a1c8b037",
+      "source_excerpt": "\\text{if $q \\in Q$}",
+      "target_path": "gu/content/turing-machines/machines-computations/combining-machines.tex",
+      "target_file_sha256": "98cbf8470eb3d843103561f951ee84d648a80484aed7a476be7c00c85e237331",
+      "target_range_utf8": [
+        2990,
+        3086
+      ],
+      "target_excerpt_sha256": "db1cb424f98318d35c69deaf21122e3fea6045a739285ea23b8ae0ee456fbf73",
+      "target_excerpt": "\\text{જો $q \\in Q$ અને $\\delta(q,\\sigma)$ વ્યાખ્યાયિત હોય}",
+      "role": "English conditional text localized and OLTM-004 definedness repair made explicit"
+    },
+    {
+      "locator_id": "OLTM-TXT-004",
+      "unit_id": "OLP-0261",
+      "source_path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_file_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "source_range_utf8": [
+        1791,
+        1811
+      ],
+      "source_excerpt_sha256": "ba53d641c96e022df584bb8baa8dc909ac07a05ac89170d20ccc72c1df7b7e7d",
+      "source_excerpt": "\\text{if $q \\in Q'$}",
+      "target_path": "gu/content/turing-machines/machines-computations/combining-machines.tex",
+      "target_file_sha256": "98cbf8470eb3d843103561f951ee84d648a80484aed7a476be7c00c85e237331",
+      "target_range_utf8": [
+        3115,
+        3149
+      ],
+      "target_excerpt_sha256": "d85ca8ba65ecb22643f5a26c11e58d5dd7b4d388500e5782f1f14e99e1345acc",
+      "target_excerpt": "\\text{જો $q \\in Q'$ હોય}",
+      "role": "English conditional text localized; state-set condition unchanged"
+    },
+    {
+      "locator_id": "OLTM-TXT-005",
+      "unit_id": "OLP-0261",
+      "source_path": "content/turing-machines/machines-computations/combining-machines.tex",
+      "source_file_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "source_range_utf8": [
+        1852,
+        1913
+      ],
+      "source_excerpt_sha256": "03ad48a59945291247e351774adf8b00e01f0da44a2d9f9246284b492ee62c1d",
+      "source_excerpt": "\\text{if $q \\in Q$ and\n      $\\delta(q,\\sigma)$ is undefined}",
+      "target_path": "gu/content/turing-machines/machines-computations/combining-machines.tex",
+      "target_file_sha256": "98cbf8470eb3d843103561f951ee84d648a80484aed7a476be7c00c85e237331",
+      "target_range_utf8": [
+        3190,
+        3305
+      ],
+      "target_excerpt_sha256": "3307c283e93e762a0d60282c9931f873ec4811e05c1c707233fca84797fa7117",
+      "target_excerpt": "\\text{જો $q \\in Q$ હોય અને\n      $\\delta(q,\\sigma)$ અવ્યાખ્યાયિત હોય}",
+      "role": "English conditional text localized; undefined-transition handoff condition unchanged"
+    }
+  ],
+  "note": "These are Gujarati text localizations inside math displays, separately recorded from the four keyed frozen-source corrections. OLTM-TXT-003 also implements OLTM-004."
+}

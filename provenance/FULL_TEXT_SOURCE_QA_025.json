@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/25",
+  "checked_at_utc": "2026-09-26T03:03:40.635983+00:00",
+  "input": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex",
+    "bytes": 1974134,
+    "sha256": "e8cb896d7a1ba5701ea590f511042432500a0deeea59cd983275c1ac84c8b63c"
+  },
+  "accepted_release_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
+    "bytes": 2802746,
+    "sha256": "f2faf1b0362beb92374e00cd8471daa91311f47c0404c28bd1c90823cddd1ffb"
+  },
+  "guarded_receipt_sha256": "67b02b43bead8200a2386f9770b93a09a25692ece8beae8b4c2633fe54f75f33",
+  "verification": {
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 260,
+    "total_units": 722
+  },
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction"
+}
