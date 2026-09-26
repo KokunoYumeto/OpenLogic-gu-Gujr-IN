@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/3",
-  "checkpoint_utc": "2026-09-25T05:09:13.318464+00:00",
+  "checkpoint_utc": "2026-09-26T03:17:21.465145+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 248,
-  "publicly_verified_release_units": 248,
-  "publicly_verified_source_checkpoint_units": 248,
+  "translated_units": 260,
+  "publicly_verified_release_units": 260,
+  "publicly_verified_source_checkpoint_units": 260,
   "total_units": 722,
-  "aligned_linguistic_blocks": 2498,
-  "source_math_spans_verified": 14203,
+  "aligned_linguistic_blocks": 2597,
+  "source_math_spans_verified": 14642,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 2498,
-    "samples": 1193,
+    "exact_block_reviews": 2597,
+    "samples": 1237,
     "independent_native_certification": false,
-    "status": "passed_for_current_248_unit_scope"
+    "status": "passed_for_current_260_unit_scope"
   },
   "source_corrections": {
-    "count": 197,
+    "count": 201,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -215,33 +215,40 @@
       "OLCT-009",
       "OLCT-010",
       "OLCT-011",
-      "OLCT-012"
+      "OLCT-012",
+      "OLTM-001",
+      "OLTM-002",
+      "OLTM-003",
+      "OLTM-004"
     ],
-    "status": "197_historical_and_current_keyed_disclosures_in_248_unit_reader; OLINF-002 historical false-positive classification withdrawn"
+    "status": "201_historical_and_current_keyed_disclosures_in_260_unit_reader; OLINF-002 historical false-positive classification withdrawn"
   },
   "html": {
-    "path": "reader/computability-theory.html",
-    "bytes": 6187705,
-    "sha256": "b50d092bfde23db11c32b760afe9461370d9c7032e5980a6b627056aa5a4044e",
-    "source_units_covered": 248,
-    "mathml_nodes": 14210,
-    "images": 15,
-    "unique_ids": 890,
+    "path": "reader/turing-machines.html",
+    "bytes": 6378353,
+    "sha256": "b463347bcef451a0acf5e727d74bbd5042488a95401045753860037972c4d5b4",
+    "source_units_covered": 260,
+    "mathml_nodes": 14646,
+    "images": 29,
+    "unique_ids": 931,
     "broken_internal_links": 0,
-    "browser_inspection": "passed_exact_live_chrome_runtime_and_representative_visual_qa",
-    "qa_receipt": "HTML_QA_024.json"
+    "browser_inspection": "passed_runtime_and_representative_visual_inspection",
+    "qa_receipt": "HTML_QA_025.json"
   },
   "pdf": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-Computability-Theory.pdf",
-    "bytes": 2678201,
-    "sha256": "9f994774f7d1d54b6da10d41c56d64377116efbfec34afab1c28eac89bde3ca1",
-    "pages": 304,
+    "path": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
+    "bytes": 2802746,
+    "sha256": "f2faf1b0362beb92374e00cd8471daa91311f47c0404c28bd1c90823cddd1ffb",
+    "pages": 316,
     "page_size": "A4",
     "three_passes_byte_identical": true,
-    "previous_pages_visually_inspected": 260,
-    "new_pages_visually_inspected": 44,
+    "new_pages_visually_inspected": 16,
+    "title_and_toc_visually_inspected": [
+      1,
+      11
+    ],
     "full_text_source_exact_reproduction": true,
-    "qa_receipt": "PDF_QA_024.json"
+    "qa_receipt": "PDF_QA_025.json"
   },
   "batches": {
     "001": {
@@ -413,9 +420,17 @@
       "math": 1028,
       "semantic": 35,
       "exact_block_reviews": 186
+    },
+    "025": {
+      "units": 12,
+      "blocks": 99,
+      "math": 439,
+      "semantic": 44,
+      "aligned_blocks": 176,
+      "exact_block_reviews": 99
     }
   },
-  "status": "248_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "260_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -431,31 +446,31 @@
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/computability-theory-v0.18.0",
-    "github_receipt": "PUBLICATION_RECEIPT_018.json",
-    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_024.json",
-    "zenodo_record": "https://zenodo.org/records/22951232",
-    "zenodo_doi": "10.5281/zenodo.22951232",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_018.json",
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/turing-machines-v0.19.0",
+    "github_receipt": "PUBLICATION_RECEIPT_019.json",
+    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_025.json",
+    "zenodo_record": "https://zenodo.org/records/22970545",
+    "zenodo_doi": "10.5281/zenodo.22970545",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_019.json",
     "artifact_order": [
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.pdf",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory-source.zip",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.tex",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.epub",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.html",
-      "SHA256SUMS-computability-theory.txt",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory-QA.json"
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines-source.zip",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.tex",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.html",
+      "SHA256SUMS-turing-machines.txt",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines-QA.json"
     ],
     "downloads": {
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/OpenLogic-gu-Gujr-IN-Computability-Theory.pdf",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/OpenLogic-gu-Gujr-IN-Computability-Theory-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/OpenLogic-gu-Gujr-IN-Computability-Theory-source.zip",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/OpenLogic-gu-Gujr-IN-Computability-Theory.tex",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/OpenLogic-gu-Gujr-IN-Computability-Theory.epub",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/OpenLogic-gu-Gujr-IN-Computability-Theory.html",
-      "SHA256SUMS-computability-theory.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/SHA256SUMS-computability-theory.txt",
-      "OpenLogic-gu-Gujr-IN-Computability-Theory-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/computability-theory-v0.18.0/OpenLogic-gu-Gujr-IN-Computability-Theory-QA.json"
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines-source.zip",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.tex",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.html",
+      "SHA256SUMS-turing-machines.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/SHA256SUMS-turing-machines.txt",
+      "OpenLogic-gu-Gujr-IN-Turing-Machines-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines-QA.json"
     },
     "status": "all_eight_ordered_artifacts_full_text_source_inventory_and_pdf_preview_anonymously_verified"
   },
@@ -494,6 +509,12 @@
       "html_anchored_occurrences": 133,
       "correction_disclosures": 22,
       "path": "docs/translation-decisions/COMPUTABILITY_OCCURRENCES.csv"
+    },
+    "supplemental_turing_machines": {
+      "term_decisions": 17,
+      "html_anchored_occurrences": 72,
+      "correction_disclosures": 4,
+      "path": "docs/translation-decisions/TURING_MACHINES_OCCURRENCES.csv"
     }
   },
   "batch_009": {
@@ -646,21 +667,21 @@
     "epub_qa": "EPUB_QA_013.json"
   },
   "epub": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-Computability-Theory.epub",
-    "bytes": 683046,
-    "sha256": "4dc645a7edd9c4ed7b7effa495c4f2a4a21bfcd82990a74570f91cd1d84e5e1c",
+    "path": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
+    "bytes": 720401,
+    "sha256": "869041d2770dedbc8ca7fd269ac982e30cca9a04804c9dcd9fedfb8ba179290a",
     "version": "EPUB 3.3",
     "layout": "reflowable",
     "language": "gu-IN",
     "coverage": {
-      "translated": 248,
+      "translated": 260,
       "total": 722,
-      "units": "OLP-0004–0251"
+      "units": "OLP-0004–0263"
     },
     "complete_edition": false,
     "epubcheck_messages": 0,
     "cold_replay_byte_identical": true,
-    "qa_receipt": "EPUB_QA_024.json"
+    "qa_receipt": "EPUB_QA_025.json"
   },
   "batch_014": {
     "draft_units": 11,
@@ -966,6 +987,22 @@
     "math_spans": 1028,
     "semantic_samples": 35,
     "render": "passed_cumulative_248_unit_html_pdf_epub_and_full_text_reproduction_qa",
+    "publication": "passed_anonymous_github_and_zenodo_readback"
+  },
+  "batch_025": {
+    "draft_units": 12,
+    "remaining_units": [],
+    "structural_parity": "passed_with_adjacent_keyed_source_corrections",
+    "source_correction_ids": [
+      "OLTM-001",
+      "OLTM-002",
+      "OLTM-003",
+      "OLTM-004"
+    ],
+    "linguistic_blocks": 99,
+    "math_spans": 439,
+    "semantic_samples": 44,
+    "render": "passed_cumulative_260_unit_html_pdf_epub_and_full_text_reproduction_qa",
     "publication": "passed_anonymous_github_and_zenodo_readback"
   }
 }

@@ -1,4 +1,17 @@
-# સંગણનીયતા સિદ્ધાંત સુધીની સંચિત આવૃત્તિ કેવી રીતે બનાવવી
+# સંચિત ગુજરાતી આવૃત્તિ કેવી રીતે બનાવવી
+
+OLP-0004–0263ના હાલના 260/722 એકમો માટે સંગ્રહની મુખ્ય નિર્દેશિકામાંથી નીચેના આદેશ ચલાવો:
+
+```powershell
+python tools/prepare_turing_machines.py
+python tools/build_turing_machines_html.py
+.\tools\build_sets_guarded.ps1 -Edition turing-machines -TimeoutMs 60000
+python tools/build_turing_machines_epub.py
+```
+
+HTML વાચક `reader/turing-machines.html`, PDF `build/gu-turing-machines.pdf` અને EPUB `releases/OpenLogic-gu-Gujr-IN-Turing-Machines.epub`માં મળે છે. સંપૂર્ણ સંચિત લખાણની સીધી TeX ફાઇલ `releases/OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex` છે. સંપૂર્ણ સ્રોત ZIPના ફોન્ટ, શૈલી, આકૃતિ અને ગ્રંથસૂચિ આધાર સાથે તેમાંથી PDF ફરી બનાવવા નિયંત્રિત બિલ્ડમાં `-InputFile releases\OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex` ઉમેરો. સ્વીકૃત 316-પાનાના PDF સાથે ત્રણેય પાસના બાઇટ્સ સમાન મળ્યા. [પૂર્ણ સ્રોતની તપાસ](../provenance/FULL_TEXT_SOURCE_QA_025.json), [સંચિત ગુણવત્તા નોંધ](../provenance/CUMULATIVE_QA_025.json), [પ્રકરણની સમીક્ષા](TURING_MACHINES_REVIEW.md), [GitHub આવૃત્તિ](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/turing-machines-v0.19.0) અને [Zenodo DOI](https://doi.org/10.5281/zenodo.22970545) વિગતો આપે છે.
+
+## અગાઉની સંગણનીયતા સિદ્ધાંત આવૃત્તિ
 
 OLP-0004–0251ના 248/722 એકમો માટે સંગ્રહની મુખ્ય નિર્દેશિકામાંથી નીચેના આદેશ ચલાવો:
 
@@ -34,6 +47,6 @@ EPUBને સ્વતંત્ર રીતે તપાસવા માટે
 java -jar path\to\epubcheck.jar releases\OpenLogic-gu-Gujr-IN-Lindstrom.epub --json build\EPUBCHECK.json
 ```
 
-અગાઉની સંચિત આવૃત્તિઓ માટે એ જ નિયંત્રિત TeX સ્ક્રિપ્ટમાં લાગુ પડતું `-Edition` નામ આપી શકાય છે. હાલનું પ્રકાશન લક્ષ્ય `lindstrom` છે. ગુણવત્તા-તપાસની વિગત `provenance/PDF_QA_022.json`, `provenance/EPUB_QA_022.json` અને `provenance/CUMULATIVE_QA_022.json`માં છે. પ્રકાશિત [v0.16.0 આવૃત્તિ](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/lindstrom-v0.16.0) અને [Zenodo DOI](https://doi.org/10.5281/zenodo.22865986) પરથી આઠેય ફાઇલો અનામી રીતે પાછી વાંચીને સરખાવાઈ છે. પરિભાષા માટે વાંચેલા તૃતીય-પક્ષના મૂળ PDF સ્થાનિક સંશોધન પુરાવા છે; પ્રકાશિત ફાઇલોમાં તેમનો સમાવેશ થતો નથી.
+અગાઉની સંચિત આવૃત્તિઓ માટે એ જ નિયંત્રિત TeX સ્ક્રિપ્ટમાં લાગુ પડતું `-Edition` નામ આપી શકાય છે. અહીં વર્ણવાયેલું અગાઉનું પ્રકાશન લક્ષ્ય `lindstrom` હતું. ગુણવત્તા-તપાસની વિગત `provenance/PDF_QA_022.json`, `provenance/EPUB_QA_022.json` અને `provenance/CUMULATIVE_QA_022.json`માં છે. પ્રકાશિત [v0.16.0 આવૃત્તિ](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/lindstrom-v0.16.0) અને [Zenodo DOI](https://doi.org/10.5281/zenodo.22865986) પરથી આઠેય ફાઇલો અનામી રીતે પાછી વાંચીને સરખાવાઈ છે. પરિભાષા માટે વાંચેલા તૃતીય-પક્ષના મૂળ PDF સ્થાનિક સંશોધન પુરાવા છે; પ્રકાશિત ફાઇલોમાં તેમનો સમાવેશ થતો નથી.
 
 આ આવૃત્તિની રચના, ભાષાંતર, ગણિતીય સુધારા અને મૂળ ચકાસણીઓનું AI કાર્ય OpenAI Codex — GPT-5.6 Sol, Ultra effort દ્વારા થયું. આ ગુજરાતી બિલ્ડ-માર્ગદર્શિકાનું સંપાદન OpenAI Codex — GPT-6 Sol, Ultra effort દ્વારા થયું; સ્વતંત્ર માનવીય પ્રમાણિત સમીક્ષા થયેલી નથી.
