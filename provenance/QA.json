@@ -496,24 +496,32 @@
     "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/second-order-logic-v0.21.0",
     "github_receipt": "PUBLICATION_RECEIPT_021.json",
     "source_checkpoint_receipt": "SECOND_ORDER_SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_021.json",
-    "zenodo_record": "https://zenodo.org/records/22990575",
-    "zenodo_doi": "10.5281/zenodo.22990575",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_021.json",
+    "zenodo_record": "https://zenodo.org/records/22991323",
+    "zenodo_doi": "10.5281/zenodo.22991323",
+    "zenodo_receipt": "SOURCE_COMPANION_REPAIR_021.json",
     "artifact_order": [
       "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
       "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
       "OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
       "SHA256SUMS-second-order.txt",
-      "OpenLogic-gu-Gujr-IN-Second-Order-QA.json"
+      "OpenLogic-gu-Gujr-IN-Second-Order-QA.json",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Part-Source.tex",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Part-Extraction.py",
+      "SHA256SUMS-second-order-source-companions.txt"
     ],
     "downloads": {
       "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
       "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
       "OpenLogic-gu-Gujr-IN-Second-Order-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
       "SHA256SUMS-second-order.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/SHA256SUMS-second-order.txt",
-      "OpenLogic-gu-Gujr-IN-Second-Order-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-QA.json"
+      "OpenLogic-gu-Gujr-IN-Second-Order-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-QA.json",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Cumulative-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Part-Source.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Part-Source.tex",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Part-Extraction.py": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Part-Extraction.py",
+      "SHA256SUMS-second-order-source-companions.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/SHA256SUMS-second-order-source-companions.txt"
     },
-    "status": "all_five_assets_source_inventory_and_part_pdf_preview_anonymously_verified"
+    "status": "all_nine_assets_source_inventory_and_part_pdf_default_preview_anonymously_verified; original_five_preserved; direct_full_text_tex_replay_pending"
   },
   "batch_008": {
     "draft_units": 6,
@@ -1097,7 +1105,7 @@
     "bytes": 332634,
     "sha256": "899667d2a1a5c7744fe9195756b31c9c3ea66200ed2fdefbc6dd4223f032a90f",
     "pages": 17,
-    "zenodo_preview": "https://zenodo.org/records/22990575/preview/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf"
+    "zenodo_preview": "https://zenodo.org/records/22991323/preview/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf"
   },
   "second_order_part": {
     "units": 19,

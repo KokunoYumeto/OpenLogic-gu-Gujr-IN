@@ -1,6 +1,6 @@
 # Building and checking the second-order readers
 
-The v0.21.0 release covers earlier OLP-0004–0273 and the new OLP-0322–0340 part. OLP-0274–0321 is absent from the cumulative reader.
+The v0.21.0 release covers earlier OLP-0004–0273 and the new OLP-0322–0340 part. The same-lineage Zenodo v0.21.1 correction adds direct source companions without changing the PDFs or translated coverage. OLP-0274–0321 is absent from the cumulative reader.
 
 `OpenLogic-gu-Gujr-IN-Second-Order-Cumulative-Full-Text.tex` contains the complete text, label index, preamble and reader drivers for the 349-page PDF. Unpack the companion source ZIP at the same root to supply Open Logic styles, fonts, diagrams and bibliography support. Run LuaLaTeX on that TeX file three times from the archive root, with job name `gu-second-order-part` and shell escape disabled. The accepted cumulative PDF is `OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf`.
 

@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-gu-second-order-source-companion-public-receipt/1",
+  "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/second-order-logic-v0.21.0",
+  "zenodo_record": "https://zenodo.org/records/22991323",
+  "zenodo_doi": "10.5281/zenodo.22991323",
+  "zenodo_conceptrecid": "22308101",
+  "previous_zenodo_record": "https://zenodo.org/records/22990575",
+  "public_translated_units": 289,
+  "total_units": 722,
+  "reader_gap": "OLP-0274–0321",
+  "new_translated_units_in_correction": 0,
+  "original_five_assets_preserved_byte_identically": true,
+  "new_direct_assets": [
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative-Full-Text.tex",
+      "bytes": 2210059,
+      "sha256": "1f347c2965fbce23d03e23afd408f60a618b4ef697bbbaf220e7e7f8441953a0"
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Part-Source.tex",
+      "bytes": 105376,
+      "sha256": "7b97cfaa2fd901557ab623bc60e4f85526ee74b30ec48f9381caf10d1020afd8"
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Part-Extraction.py",
+      "bytes": 1745,
+      "sha256": "2f46928611858a3e257124f3b502b0bb4ea49a2f6b7631004bdc77ed257e7424"
+    },
+    {
+      "filename": "SHA256SUMS-second-order-source-companions.txt",
+      "bytes": 360,
+      "sha256": "3be85f97668ac3efbbc1d45131dd3bb8f09f0785c3a31ff1b68f2b2c9643ffc4"
+    }
+  ],
+  "github_and_zenodo_nine_asset_anonymous_sha256_readback": "passed",
+  "source_zip_1644_entry_inventory_anonymous_readback": "passed",
+  "zenodo_default_preview": "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+  "part_pdf_extraction_byte_identical": true,
+  "cumulative_direct_tex_independent_pdf_replay": "pending_after_bounded_occupied_tex_slot",
+  "build_guide": "docs/BUILD_SECOND_ORDER_SOURCE.md"
+}
