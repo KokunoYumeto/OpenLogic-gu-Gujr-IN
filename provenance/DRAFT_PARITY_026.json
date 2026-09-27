@@ -1,0 +1,339 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/26",
+  "checked_at_utc": "2026-09-26T22:32:27.962698+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0264–0273; source parity for the 270-unit local reader candidate",
+  "reports": [
+    {
+      "unit_id": "OLP-0264",
+      "source_path": "content/turing-machines/undecidability/undecidability.tex",
+      "source_bytes": 461,
+      "source_sha256": "99eca564cdccc46d4c9bf724df75ab3f206d7c9dccc66c7df7eb1fc4d20120ae",
+      "draft_bytes": 477,
+      "draft_sha256": "3f754ab5f8925204a91b5b1ef6f1c777ebceb30d098af205a3ee392490288996",
+      "aligned_blocks": 15,
+      "source_math_spans": 0,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [],
+      "keyed_inline_math_corrections": [],
+      "correction_notes": [],
+      "target_path": "gu/content/turing-machines/undecidability/undecidability.tex"
+    },
+    {
+      "unit_id": "OLP-0265",
+      "source_path": "content/turing-machines/undecidability/introduction.tex",
+      "source_bytes": 5095,
+      "source_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+      "draft_bytes": 11021,
+      "draft_sha256": "52e351d132450e546bcea04caae94dfdbe5ef5fc711c767c46eb7ba4c4843950",
+      "aligned_blocks": 12,
+      "source_math_spans": 22,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [],
+      "keyed_inline_math_corrections": [],
+      "correction_notes": [],
+      "target_path": "gu/content/turing-machines/undecidability/introduction.tex"
+    },
+    {
+      "unit_id": "OLP-0266",
+      "source_path": "content/turing-machines/undecidability/enumerating-tms.tex",
+      "source_bytes": 6946,
+      "source_sha256": "4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1",
+      "draft_bytes": 12021,
+      "draft_sha256": "47556a31b44b6150c82cd76418635877a2ebdc6edef56b4b8b55a89ca76543bc",
+      "aligned_blocks": 19,
+      "source_math_spans": 71,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [],
+      "keyed_inline_math_corrections": [],
+      "correction_notes": [
+        "OLUN-004"
+      ],
+      "target_path": "gu/content/turing-machines/undecidability/enumerating-tms.tex"
+    },
+    {
+      "unit_id": "OLP-0267",
+      "source_path": "content/turing-machines/undecidability/universal-tm.tex",
+      "source_bytes": 6859,
+      "source_sha256": "aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6",
+      "draft_bytes": 12632,
+      "draft_sha256": "fe552fe9296a9b7f521721eb4ef9bdd5cd3fb7ac0f2017a21d379c85cb12886e",
+      "aligned_blocks": 17,
+      "source_math_spans": 101,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [],
+      "keyed_inline_math_corrections": [],
+      "correction_notes": [],
+      "target_path": "gu/content/turing-machines/undecidability/universal-tm.tex"
+    },
+    {
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_bytes": 5801,
+      "source_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "draft_bytes": 10846,
+      "draft_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "aligned_blocks": 20,
+      "source_math_spans": 85,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [],
+      "keyed_inline_math_corrections": [],
+      "correction_notes": [],
+      "target_path": "gu/content/turing-machines/undecidability/halting-problem.tex"
+    },
+    {
+      "unit_id": "OLP-0269",
+      "source_path": "content/turing-machines/undecidability/decision-problem.tex",
+      "source_bytes": 2262,
+      "source_sha256": "e55cc5610483e274125f4d5caa00965ecee3b77e819218f7cb6f59e879e9bdd3",
+      "draft_bytes": 4648,
+      "draft_sha256": "b8323db81b22049f90eeac15fc4797ed127f5970cfc2f89dcf4375849ffa79f3",
+      "aligned_blocks": 9,
+      "source_math_spans": 24,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [],
+      "keyed_inline_math_corrections": [],
+      "correction_notes": [],
+      "target_path": "gu/content/turing-machines/undecidability/decision-problem.tex"
+    },
+    {
+      "unit_id": "OLP-0270",
+      "source_path": "content/turing-machines/undecidability/representing-tms.tex",
+      "source_bytes": 8046,
+      "source_sha256": "9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5",
+      "draft_bytes": 13322,
+      "draft_sha256": "4fd1ca58eec7a22b65409038adb984c28a1ebd0ecd1abe1890b3395f582ec833",
+      "aligned_blocks": 21,
+      "source_math_spans": 125,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [
+        {
+          "id": "OLUN-002",
+          "source_display_sha256": "b99f5f96edc6aa66f81dcc9016586f4da4da7aebc8b52ce5cd958767977b29f8",
+          "draft_display_sha256": "986e620f2965f542ab4f25922a04d471fb8e14c729e6f56550700f1707b98c21",
+          "only_listed_token_replacements": true,
+          "semantic_and_tex_build_verified": false
+        }
+      ],
+      "keyed_inline_math_corrections": [],
+      "correction_notes": [
+        "OLUN-002"
+      ],
+      "target_path": "gu/content/turing-machines/undecidability/representing-tms.tex"
+    },
+    {
+      "unit_id": "OLP-0271",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_bytes": 13991,
+      "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "draft_bytes": 26893,
+      "draft_sha256": "9d287e6115bb9f0b500dbffb3a088fd359de4840a69c638e6da244c4ee4a45b0",
+      "aligned_blocks": 36,
+      "source_math_spans": 237,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [
+        {
+          "id": "OLUN-022",
+          "source_display_sha256": "ead01e7d66e365fa9f0b796cc75b71a68e3e1baf0fc8c31a74191e6517f784c1",
+          "draft_display_sha256": "2b5bb5990f608bf891e4ee1305eca6cc92b3fbdb092b2be2e1652bcf4cb46d73",
+          "only_listed_token_replacements": true,
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-011+OLUN-023",
+          "source_display_sha256": "e18a6a1aef52b2bdd8a101bc95975963b1cf7d6e5055738c6e244599d4714412",
+          "draft_display_sha256": "0647ab0f9f3b50852b5769bd14fb8cb3b91821fe73a5d54c6ad7f135a9708d27",
+          "only_listed_token_replacements": true,
+          "semantic_and_tex_build_verified": false
+        }
+      ],
+      "keyed_inline_math_corrections": [
+        {
+          "id": "OLUN-006",
+          "source_math_sha256": "727641f98b24c49596dfffb6de8f734861ea69dd101ad385a583581c32d3ce96",
+          "draft_math_sha256": "25bc2557b1ad630c006db9f96366d2f52ed51f34caa1c350bdd697b4145ed485",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-007",
+          "source_math_sha256": "cd15d3a571b67c26cfa4d135c0beb323c631d85844625699d123761440301d5d",
+          "draft_math_sha256": "29742240025756815de7b4dc24b2f1de69b9148b4ec37f961ccb4d9b4836ab30",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-008",
+          "source_math_sha256": "7b6a3c25e761f72b670c47270e42e709292c67071ffc47ec4b8f0eb60b18376c",
+          "draft_math_sha256": "a81f7d0e7bd11193bee45f09d94cb69068a4c3034e3085c9ea1c0efbc6e8cb03",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-010",
+          "source_math_sha256": "a047df7bf07f65e4996e30b1dd1a6e486419e7b30d2e3cc25afb3f2ea8c2fa92",
+          "draft_math_sha256": "9f77e35aebc5ad946f9ef5677d343dce55121142d631bc080437b0e32d720bd7",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-008",
+          "source_math_sha256": "4b8616022a9954466fb1352316b017bf4e2beabd84480d7061668c97761a265d",
+          "draft_math_sha256": "35c0a840b872509b8070d86c1092cc3b6ac3826f1139f9b417c2628189341bff",
+          "semantic_and_tex_build_verified": false
+        }
+      ],
+      "correction_notes": [
+        "OLUN-006",
+        "OLUN-007",
+        "OLUN-008",
+        "OLUN-009",
+        "OLUN-024",
+        "OLUN-010",
+        "OLUN-022",
+        "OLUN-011",
+        "OLUN-023",
+        "OLUN-012"
+      ],
+      "target_path": "gu/content/turing-machines/undecidability/verification.tex"
+    },
+    {
+      "unit_id": "OLP-0272",
+      "source_path": "content/turing-machines/undecidability/unsolvability-decision-problem.tex",
+      "source_bytes": 4010,
+      "source_sha256": "c609e9a9a9dce039d6ef7063d2e604269790462b6c226eec82329128873eab6e",
+      "draft_bytes": 8060,
+      "draft_sha256": "0884e1ca3cc12a3459ecc40e62e5c2cae06089e6039d5e03c204d44902ce94ad",
+      "aligned_blocks": 14,
+      "source_math_spans": 71,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [],
+      "keyed_inline_math_corrections": [
+        {
+          "id": "OLUN-005",
+          "source_math": "$B$",
+          "draft_math": "$!B$",
+          "semantic_and_tex_build_verified": false
+        }
+      ],
+      "correction_notes": [
+        "OLUN-005"
+      ],
+      "target_path": "gu/content/turing-machines/undecidability/unsolvability-decision-problem.tex"
+    },
+    {
+      "unit_id": "OLP-0273",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_bytes": 10991,
+      "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "draft_bytes": 22260,
+      "draft_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "aligned_blocks": 24,
+      "source_math_spans": 155,
+      "named_constructs_equal": true,
+      "noncorrection_environments_equal": true,
+      "noncorrection_math_equal": true,
+      "keyed_formula_corrections": [
+        {
+          "id": "OLUN-016",
+          "source_display_sha256": "2c1748044581a1947f9977acc0ef3747caf880884a0decd8e7c2d0c0b8c7d64d",
+          "draft_display_sha256": "7211c6976194aac21459487c416cc7ab31ab2c65b378af448f1babb30b8ad18c",
+          "only_listed_token_replacements": true,
+          "semantic_and_tex_build_verified": false
+        }
+      ],
+      "keyed_inline_math_corrections": [
+        {
+          "id": "OLUN-013",
+          "source_math_sha256": "2725b2d0fc640cb2728a1834f8c41d47e601a7313494a3c35628268f485f3a5f",
+          "draft_math_sha256": "93de1517a3635412802281e275b4427a4870b555d704f799120e253557eb78d5",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-015",
+          "source_math_sha256": "c88dbcc28c6e9aaac81ba447ffbccb78d7978a8ba6ef157822f3291d369caa0e",
+          "draft_math_sha256": "aa80c41a9433979e3d6a54f15585f8ef6eefa98506e2d1b179c891f165537b42",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-015",
+          "source_math_sha256": "a73249cf44f374ecbb0e87d33d45bc0c20517e8b9c95a91ac7a375f26591474d",
+          "draft_math_sha256": "0d35237fceb03d5229206b4c6a10c3704fec4a7225f023aece4693a2aaa50abf",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-014",
+          "source_math_sha256": "41bbebbac8fb185f73174d230577c0cd4cf47fd9d150a5899b137950d88e7874",
+          "draft_math_sha256": "dfce4f7453f67602168b6c5f2e48dbb9c2987ec712c7100f847a3e5388fb0127",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-017",
+          "source_math_sha256": "fdbd663417d474df1f224e03134c9e140fdd7cfe16523db2d5693c066fb6ffaa",
+          "draft_math_sha256": "26d166d89849fbd587b4d3fdb5c5a33c299850f14542a6627f97e46251630aa6",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-018",
+          "source_math_sha256": "95143f266c6b045693ad4a0a2deadf66eac47a93751f63f66854be52ef3de33a",
+          "draft_math_sha256": "26d166d89849fbd587b4d3fdb5c5a33c299850f14542a6627f97e46251630aa6",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-019",
+          "source_math_sha256": "5c4ea779ec8a6ff13e052f798b9d08bba1eb35a3ce7d88e0c3e1e645443e12d0",
+          "draft_math_sha256": "82dc20d4cd389b751c3174e13e06ce9a7605ea714a3818e72f5842b7688d7c00",
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-020",
+          "source_math_sha256": null,
+          "draft_math_sha256": "8efa522276a9ee30e569a6a21ac4a9844e4840b34096e27ab41a2d427058885d",
+          "source_math_absent_for_keyed_explanation": true,
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-020",
+          "source_math_sha256": null,
+          "draft_math_sha256": "3fd1e210660340eeda587a3f486c233e7a4135acfad60537b8ff6cda88a87dcc",
+          "source_math_absent_for_keyed_explanation": true,
+          "semantic_and_tex_build_verified": false
+        },
+        {
+          "id": "OLUN-021",
+          "source_math_sha256": null,
+          "draft_math_sha256": "8efa522276a9ee30e569a6a21ac4a9844e4840b34096e27ab41a2d427058885d",
+          "source_math_absent_for_keyed_explanation": true,
+          "semantic_and_tex_build_verified": false
+        }
+      ],
+      "correction_notes": [
+        "OLUN-013",
+        "OLUN-015",
+        "OLUN-016",
+        "OLUN-014",
+        "OLUN-017",
+        "OLUN-018",
+        "OLUN-019",
+        "OLUN-020",
+        "OLUN-021"
+      ],
+      "target_path": "gu/content/turing-machines/undecidability/trakhtenbrot.tex"
+    }
+  ],
+  "status": "partial_draft_noncorrection_structural_parity_passed_semantic_canon_and_tex_review_pending"
+}

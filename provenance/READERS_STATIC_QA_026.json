@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-gu-local-reader-static-qa/26",
+  "checked_at_utc": "2026-09-26T23:25:54.766929+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": "270/722 local candidate; public coverage 260/722",
+  "html": {
+    "path": "reader/undecidability.html",
+    "bytes": 6774221,
+    "sha256": "8d0220721eea223c02b6e1dd6ca5857f2afbb414f116e222c73407a162a5ec08",
+    "mathml": 15608,
+    "images": 32,
+    "unique_ids": 982
+  },
+  "epub": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Undecidability.epub",
+    "bytes": 756874,
+    "sha256": "d250b6a61994a55e2f50081dbbb2a6e5d19c9f9123fc9c588f8c666bcf29b9a9",
+    "mathml_exact_against_html": 15608,
+    "navigation_links": 276,
+    "epubcheck_messages": 0
+  },
+  "new_source_correction_notes": 22,
+  "status": "static_html_epub_gate_passed_runtime_visual_and_tex_pending"
+}

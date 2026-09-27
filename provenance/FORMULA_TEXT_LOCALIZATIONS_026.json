@@ -1,0 +1,428 @@
+{
+  "schema": "openlogic-gu-formula-text-localization/26-partial",
+  "checked_at_utc": "2026-09-26T22:32:34.020129+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0265, OLP-0268, OLP-0271 and OLP-0273 state-only drafts",
+  "text_occurrences_checked": 24,
+  "localizations": [
+    {
+      "locator_id": "OLUN-TXT-001",
+      "unit_id": "OLP-0265",
+      "source_path": "content/turing-machines/undecidability/introduction.tex",
+      "source_file_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+      "source_range_utf8": [
+        1742,
+        1764
+      ],
+      "source_excerpt_sha256": "dc7d3b7cf078c28fa0e9bbaa32b0268d2ea3e19254464e046c194f55a19ff05d",
+      "source_excerpt": "\\text{if $n$ is prime}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\introduction.tex",
+      "draft_file_sha256": "52e351d132450e546bcea04caae94dfdbe5ef5fc711c767c46eb7ba4c4843950",
+      "draft_range_utf8": [
+        3647,
+        3699
+      ],
+      "draft_excerpt_sha256": "93f540c59f475b8c92ad588a73611bfd86dd22ade5ae3eaa2054dc4acfdbc082",
+      "draft_excerpt": "\\text{જો $n$ અવિભાજ્ય હોય}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-002",
+      "unit_id": "OLP-0265",
+      "source_path": "content/turing-machines/undecidability/introduction.tex",
+      "source_file_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
+      "source_range_utf8": [
+        1773,
+        1790
+      ],
+      "source_excerpt_sha256": "791c96a83516d934e9f7f693eefaf105eb26c396d68222d6aadbd0ea93b08108",
+      "source_excerpt": "\\text{otherwise.}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\introduction.tex",
+      "draft_file_sha256": "52e351d132450e546bcea04caae94dfdbe5ef5fc711c767c46eb7ba4c4843950",
+      "draft_range_utf8": [
+        3708,
+        3734
+      ],
+      "draft_excerpt_sha256": "f93568e7cae18f472a03b227ddbd821b1c9e126040113aa43c62c49a099e10df",
+      "draft_excerpt": "\\text{અન્યથા.}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-003",
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_file_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "source_range_utf8": [
+        915,
+        966
+      ],
+      "source_excerpt_sha256": "681e02284cdbf785027a11714eb2fb1e47ea753d077252dbcc9cc2d2697c3b65",
+      "source_excerpt": "\\text{if machine~$M_e$ does not halt for input $n$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\halting-problem.tex",
+      "draft_file_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "draft_range_utf8": [
+        1616,
+        1692
+      ],
+      "draft_excerpt_sha256": "51b8367a473ac5e7abf4ddd9026f53c96ed4fd91c0d560521e99dd4d3f514697",
+      "draft_excerpt": "\\text{જો મશીન~$M_e$ ઇનપુટ $n$ પર ન અટકે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-004",
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_file_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "source_range_utf8": [
+        983,
+        1026
+      ],
+      "source_excerpt_sha256": "b6201a6ec40ed672d991dad52d93c839da0799aa726b1594c01797b4c8fb4c96",
+      "source_excerpt": "\\text{if machine~$M_e$ halts for input $n$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\halting-problem.tex",
+      "draft_file_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "draft_range_utf8": [
+        1709,
+        1781
+      ],
+      "draft_excerpt_sha256": "456051a20b912b9700bdc151e4ba70448d58a0102c36659d349ad071e6e1bfc9",
+      "draft_excerpt": "\\text{જો મશીન~$M_e$ ઇનપુટ $n$ પર અટકે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-005",
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_file_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "source_range_utf8": [
+        1732,
+        1783
+      ],
+      "source_excerpt_sha256": "5c4c3147248a2fc40510a1b3c76f1e34fb765a53e0fca72f37e6d563dfcec847",
+      "source_excerpt": "\\text{if machine~$M_e$ does not halt for input $e$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\halting-problem.tex",
+      "draft_file_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "draft_range_utf8": [
+        3107,
+        3183
+      ],
+      "draft_excerpt_sha256": "46b1801434742be04461cdd15254fdcd73223f071a9b7dc948af548b2d2d7771",
+      "draft_excerpt": "\\text{જો મશીન~$M_e$ ઇનપુટ $e$ પર ન અટકે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-006",
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_file_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "source_range_utf8": [
+        1800,
+        1843
+      ],
+      "source_excerpt_sha256": "f3864374cdfad9e8de8cc6ad511d06ee0acf9fb11f1e9a0400ead6756124370d",
+      "source_excerpt": "\\text{if machine~$M_e$ halts for input $e$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\halting-problem.tex",
+      "draft_file_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "draft_range_utf8": [
+        3200,
+        3272
+      ],
+      "draft_excerpt_sha256": "fad2683d26ae98a9cbeb82ea20461504cc0cdcf4e573793bfaecbd2f716a8c31",
+      "draft_excerpt": "\\text{જો મશીન~$M_e$ ઇનપુટ $e$ પર અટકે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-007",
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_file_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "source_range_utf8": [
+        5603,
+        5646
+      ],
+      "source_excerpt_sha256": "f3864374cdfad9e8de8cc6ad511d06ee0acf9fb11f1e9a0400ead6756124370d",
+      "source_excerpt": "\\text{if machine~$M_e$ halts for input $e$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\halting-problem.tex",
+      "draft_file_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "draft_range_utf8": [
+        10598,
+        10670
+      ],
+      "draft_excerpt_sha256": "fad2683d26ae98a9cbeb82ea20461504cc0cdcf4e573793bfaecbd2f716a8c31",
+      "draft_excerpt": "\\text{જો મશીન~$M_e$ ઇનપુટ $e$ પર અટકે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-008",
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_file_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "source_range_utf8": [
+        5653,
+        5669
+      ],
+      "source_excerpt_sha256": "c6244d5a50efefe9dea9744b42fd9306f5ca5ab9f8067770f94353868e42b412",
+      "source_excerpt": "\\text{undefined}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\halting-problem.tex",
+      "draft_file_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "draft_range_utf8": [
+        10677,
+        10720
+      ],
+      "draft_excerpt_sha256": "cb09240492acbd763e99a858fd82b609f80429a8076b1b0107ab19c1dd42d32a",
+      "draft_excerpt": "\\text{અવ્યાખ્યાયિત}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-009",
+      "unit_id": "OLP-0268",
+      "source_path": "content/turing-machines/undecidability/halting-problem.tex",
+      "source_file_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
+      "source_range_utf8": [
+        5672,
+        5723
+      ],
+      "source_excerpt_sha256": "5c4c3147248a2fc40510a1b3c76f1e34fb765a53e0fca72f37e6d563dfcec847",
+      "source_excerpt": "\\text{if machine~$M_e$ does not halt for input $e$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\halting-problem.tex",
+      "draft_file_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "draft_range_utf8": [
+        10723,
+        10799
+      ],
+      "draft_excerpt_sha256": "46b1801434742be04461cdd15254fdcd73223f071a9b7dc948af548b2d2d7771",
+      "draft_excerpt": "\\text{જો મશીન~$M_e$ ઇનપુટ $e$ પર ન અટકે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-010",
+      "unit_id": "OLP-0271",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_file_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_range_utf8": [
+        12887,
+        12926
+      ],
+      "source_excerpt_sha256": "265d460557805c3a64ca741e3955976cb44028a90535906e770b137818e40f9c",
+      "source_excerpt": "\\text{started on~$w$, after~$n$ steps,}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\verification.tex",
+      "draft_file_sha256": "9d287e6115bb9f0b500dbffb3a088fd359de4840a69c638e6da244c4ee4a45b0",
+      "draft_range_utf8": [
+        25154,
+        25245
+      ],
+      "draft_excerpt_sha256": "af33327c6439063714a6c009279dec592049b77d43b6bee2617fb175fbc70937",
+      "draft_excerpt": "\\text{ઇનપુટ~$w$ પર શરૂ કરતાં,~$n$ પગલાં પછી,}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-011",
+      "unit_id": "OLP-0271",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_file_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_range_utf8": [
+        12929,
+        12977
+      ],
+      "source_excerpt_sha256": "b15f2800f3786ff6354b231afb57dd2cd19592402b63975aba1b308a707fe56e",
+      "source_excerpt": "\\text{$M$ is in state $q$\n  scanning square~$m$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\verification.tex",
+      "draft_file_sha256": "9d287e6115bb9f0b500dbffb3a088fd359de4840a69c638e6da244c4ee4a45b0",
+      "draft_range_utf8": [
+        25248,
+        25335
+      ],
+      "draft_excerpt_sha256": "924526e88d56431f53c326320f2fbb3bc09d59ba8b83c7eb095079addd7d1b6b",
+      "draft_excerpt": "\\text{$M$ અવસ્થા~$q$માં\n  ખાનું~$m$ વાંચે છે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-012",
+      "unit_id": "OLP-0271",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_file_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_range_utf8": [
+        13063,
+        13102
+      ],
+      "source_excerpt_sha256": "68cb18e033ddb40156e49f26fbde000ed94cb03a93875df77d7b36cf5e027942",
+      "source_excerpt": "\\text{started on~$w$, after $n$ steps,}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\verification.tex",
+      "draft_file_sha256": "9d287e6115bb9f0b500dbffb3a088fd359de4840a69c638e6da244c4ee4a45b0",
+      "draft_range_utf8": [
+        25423,
+        25514
+      ],
+      "draft_excerpt_sha256": "af33327c6439063714a6c009279dec592049b77d43b6bee2617fb175fbc70937",
+      "draft_excerpt": "\\text{ઇનપુટ~$w$ પર શરૂ કરતાં,~$n$ પગલાં પછી,}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-013",
+      "unit_id": "OLP-0271",
+      "source_path": "content/turing-machines/undecidability/verification.tex",
+      "source_file_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
+      "source_range_utf8": [
+        13105,
+        13156
+      ],
+      "source_excerpt_sha256": "16e997936736359da5b79f38b2808fe0cb4b11494232e39f04afe4fefd497b44",
+      "source_excerpt": "\\text{square~$m$ of $M$ contains\n  symbol~$\\sigma$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\verification.tex",
+      "draft_file_sha256": "9d287e6115bb9f0b500dbffb3a088fd359de4840a69c638e6da244c4ee4a45b0",
+      "draft_range_utf8": [
+        25517,
+        25593
+      ],
+      "draft_excerpt_sha256": "f0a693709c50d1da5edec9094e9db44d4887ccb873f25b6cb7108c8aad3cfb72",
+      "draft_excerpt": "\\text{$M$ના ખાના~$m$માં\n  ચિહ્ન~$\\sigma$ છે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-014",
+      "unit_id": "OLP-0273",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_file_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_range_utf8": [
+        1751,
+        1768
+      ],
+      "source_excerpt_sha256": "0d60748741fc4fd92038925257acfb8fa10e32eae14ff1f14ea8144119876378",
+      "source_excerpt": "\\text{if $x < n$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\trakhtenbrot.tex",
+      "draft_file_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "draft_range_utf8": [
+        3943,
+        3974
+      ],
+      "draft_excerpt_sha256": "9fa5e4e89de65a656c5d1f3c5801121a29414a42832c26c626222770eb9d0b10",
+      "draft_excerpt": "\\text{જો $x < n$ હોય}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-015",
+      "unit_id": "OLP-0273",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_file_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_range_utf8": [
+        1780,
+        1797
+      ],
+      "source_excerpt_sha256": "6a2c53a951ce4ec2b01d0fb96eaef0a27d90abb270412ddd80982135ab542c43",
+      "source_excerpt": "\\text{otherwise,}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\trakhtenbrot.tex",
+      "draft_file_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "draft_range_utf8": [
+        3986,
+        4012
+      ],
+      "draft_excerpt_sha256": "fa5bff9796e0daa93c121658dc0b847892b787acc04184b8255fa76f737e4c69",
+      "draft_excerpt": "\\text{અન્યથા,}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-016",
+      "unit_id": "OLP-0273",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_file_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_range_utf8": [
+        3983,
+        4016
+      ],
+      "source_excerpt_sha256": "bb2eed3d85f1e565b17aa72b8cd99925b5c408e68a7272b2305d997d2a735839",
+      "source_excerpt": "\\text{\\quad for all $n \\in \\Nat$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\trakhtenbrot.tex",
+      "draft_file_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "draft_range_utf8": [
+        7977,
+        8028
+      ],
+      "draft_excerpt_sha256": "b57bacbb507b66502ef4e70f7c04268cf17b03fc6513fd7da8216c635253e06a",
+      "draft_excerpt": "\\text{\\quad બધાં $n \\in \\Nat$ માટે}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-017",
+      "unit_id": "OLP-0273",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_file_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_range_utf8": [
+        7695,
+        7712
+      ],
+      "source_excerpt_sha256": "0d60748741fc4fd92038925257acfb8fa10e32eae14ff1f14ea8144119876378",
+      "source_excerpt": "\\text{if $x < n$}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\trakhtenbrot.tex",
+      "draft_file_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "draft_range_utf8": [
+        13581,
+        13612
+      ],
+      "draft_excerpt_sha256": "9fa5e4e89de65a656c5d1f3c5801121a29414a42832c26c626222770eb9d0b10",
+      "draft_excerpt": "\\text{જો $x < n$ હોય}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-018",
+      "unit_id": "OLP-0273",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_file_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_range_utf8": [
+        7724,
+        7741
+      ],
+      "source_excerpt_sha256": "6a2c53a951ce4ec2b01d0fb96eaef0a27d90abb270412ddd80982135ab542c43",
+      "source_excerpt": "\\text{otherwise,}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\trakhtenbrot.tex",
+      "draft_file_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "draft_range_utf8": [
+        13624,
+        13650
+      ],
+      "draft_excerpt_sha256": "fa5bff9796e0daa93c121658dc0b847892b787acc04184b8255fa76f737e4c69",
+      "draft_excerpt": "\\text{અન્યથા,}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    },
+    {
+      "locator_id": "OLUN-TXT-019",
+      "unit_id": "OLP-0273",
+      "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
+      "source_file_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
+      "source_range_utf8": [
+        7797,
+        7831
+      ],
+      "source_excerpt_sha256": "3469e30e03dee5a0643d1722fcf1944dd8e6739fed0a3b27dc428999dd8d5043",
+      "source_excerpt": "\\text{iff $x < y$ or $x = y = n$,}",
+      "draft_path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\batch026_draft\\trakhtenbrot.tex",
+      "draft_file_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "draft_range_utf8": [
+        13706,
+        13829
+      ],
+      "draft_excerpt_sha256": "0263a48367b49d61ce13a702194fc16350799dfc44fa10930cc0ebebac0644f1",
+      "draft_excerpt": "\\text{ત્યારે અને માત્ર ત્યારે જ્યારે $x < y$ અથવા $x = y = n$,}",
+      "embedded_math_equal": true,
+      "role_gujarati": "ગણિતીય પ્રદર્શનમાં માનવવાંચનીય અંગ્રેજી શબ્દોનું ગુજરાતી રૂપાંતર; અંદરનાં ગણિતીય ચિહ્નો યથાવત્ છે."
+    }
+  ],
+  "status": "draft_formula_text_localizations_byte_bound_reader_render_pending"
+}

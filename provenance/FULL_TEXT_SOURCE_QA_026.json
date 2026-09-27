@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-full-text-source-qa/26",
+  "started_at_utc": "2026-09-27T01:59:08.2145191Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 1000,
+  "acquired": true,
+  "abandoned_recovery": false,
+  "input": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
+    "bytes": 2100224,
+    "sha256": "64a490f20eab090f7e0a09ceb187bdcf3c35d0292eaff933c86f9570e789ef1c"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "process_id": 69512,
+      "exit_code": 0,
+      "seconds": 29.5138953,
+      "pdf_bytes": 2756028,
+      "pdf_sha256": "520ae4ae54ab7e3583b441b944228bef0132c4b78cff1331a9baf3addf99dbc7",
+      "byte_identical_to_accepted_pdf": false
+    },
+    {
+      "pass": 2,
+      "process_id": 8588,
+      "exit_code": 0,
+      "seconds": 28.8269608,
+      "pdf_bytes": 2949707,
+      "pdf_sha256": "29db5d345b7201a34757afcda5b53e64991faab76a05d23c746de56e76ba3aed",
+      "byte_identical_to_accepted_pdf": false
+    },
+    {
+      "pass": 3,
+      "process_id": 79288,
+      "exit_code": 0,
+      "seconds": 27.9423288,
+      "pdf_bytes": 2949752,
+      "pdf_sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517",
+      "byte_identical_to_accepted_pdf": true
+    },
+    {
+      "pass": 4,
+      "process_id": 15412,
+      "exit_code": 0,
+      "seconds": 32.1729711,
+      "pdf_bytes": 2949752,
+      "pdf_sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517",
+      "byte_identical_to_accepted_pdf": true
+    },
+    {
+      "pass": 5,
+      "process_id": 87696,
+      "exit_code": 0,
+      "seconds": 31.0866143,
+      "pdf_bytes": 2949752,
+      "pdf_sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517",
+      "byte_identical_to_accepted_pdf": true
+    }
+  ],
+  "status": "passed_materialized_full_text_and_exact_reader_reproduction",
+  "accepted_pdf": {
+    "path": "C:\\interlanguage-production\\openlogic-gu-Gujr-IN\\repo\\releases\\OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+    "bytes": 2949752,
+    "sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517"
+  },
+  "verification": {
+    "convergence_passes": 2,
+    "verification_passes": 3,
+    "all_three_verification_passes_byte_identical": true,
+    "exact_reader_reproduction": true,
+    "accepted_pdf_byte_identity": true,
+    "source_units": 270,
+    "total_units": 722
+  },
+  "ended_at_utc": "2026-09-27T02:01:37.8839949Z"
+}

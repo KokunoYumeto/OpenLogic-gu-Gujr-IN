@@ -1,0 +1,657 @@
+{
+  "schema": "openlogic-gu-contextual-choices/26",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0264–0273; 270-unit local reader candidate",
+  "choices": [
+    {
+      "choice_id": "GU-T253",
+      "english": "function / arithmetical function",
+      "gujarati": "વિધેય / અંકગણિતીય વિધેય",
+      "segment_ids": [
+        "OLP-0265-B005",
+        "OLP-0265-B006",
+        "OLP-0265-B007",
+        "OLP-0265-B008",
+        "OLP-0265-B009",
+        "OLP-0269-B006",
+        "OLP-0269-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P032",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P032 વિધેયનું ગણિતીય ગુજરાતી ગદ્ય આપે છે; અંકગણિતીય વિશેષણનો ચોક્કસ વ્યાપ મૂળ અને અગાઉની આવૃત્તિએ નક્કી કર્યો છે.",
+      "alternatives_considered_gujarati": "ફંક્શન — અર્થ ઓળખાય, પણ અહીં મૂળ ગુજરાતી ગણિતીય ગદ્યથી ઓછું સુસંગત.",
+      "uncertainty_gujarati": "અંકગણિતીય વિધેયના પૂર્ણ સંયોજનનું સીધું પ્રમાણ અહીં નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T254",
+      "english": "computable / effective decision",
+      "gujarati": "સંગણનીય / અસરકારક રીતે નિર્ણય",
+      "segment_ids": [
+        "OLP-0265-B005",
+        "OLP-0265-B006",
+        "OLP-0265-B007",
+        "OLP-0265-B008",
+        "OLP-0265-B009",
+        "OLP-0265-B010",
+        "OLP-0265-B011",
+        "OLP-0269-B005",
+        "OLP-0269-B006",
+        "OLP-0269-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P088 સંગણનાનો મૂળ ઘટક આપે છે; મશીન/અસરકારક પ્રક્રિયાનો ઔપચારિક વ્યાપ મૂળ વ્યાખ્યાઓ અને ચર્ચ–ટ્યુરિંગ માન્યતામાં છે.",
+      "alternatives_considered_gujarati": "માત્ર ગણતરીયોગ્ય — પરિણામ સંખ્યા ગણવાની સામાન્ય ક્રિયા સાથે ગૂંચવે.",
+      "uncertainty_gujarati": "સંગણનીય શબ્દનું આખું સ્વતંત્ર ગુજરાતી પ્રમાણ અહીં નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T255",
+      "english": "countable / nonenumerable",
+      "gujarati": "ગણનીય / અગણનીય; પરિગણનીય / અપરિગણનીય",
+      "segment_ids": [
+        "OLP-0265-B009"
+      ],
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P050"
+      ],
+      "rationale_gujarati": "મૂળ અવતરણો $N$ સાથેની એક-એક સંગતતાથી ગણનીય/અગણનીયનો ભેદ આપે છે. મશીનોની અસરકારક યાદી માટે આવૃત્તિનું પરિગણના ક્રિયાપદ રાખ્યું છે; બે અર્થો સમાન ગણ્યા નથી.",
+      "alternatives_considered_gujarati": "માત્ર યાદી કરી શકાય એવું — ગણાંક-દલીલના સમુચ્ચય-અર્થને ઢાંકે.",
+      "uncertainty_gujarati": "પરિગણનીય/અપરિગણનીયના સંપૂર્ણ તકનીકી પ્રયોગનું સીધું અવતરણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T256",
+      "english": "prime",
+      "gujarati": "અવિભાજ્ય",
+      "segment_ids": [
+        "OLP-0265-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P089"
+      ],
+      "rationale_gujarati": "અધિકૃત ગણિતીય શબ્દકોશમાં prime માટે અવિભાજ્ય છે; હા/ના વિધેયની શરત મૂળ સૂત્ર જ નક્કી કરે છે.",
+      "alternatives_considered_gujarati": "મૂળ સંખ્યા — અહીં અવિભાજ્યતાનો અર્થ ઓગળે.",
+      "uncertainty_gujarati": "અલગ અનિશ્ચિતતા નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T257",
+      "english": "validity / decision problem",
+      "gujarati": "પ્રામાણ્ય / નિર્ણય સમસ્યા",
+      "segment_ids": [
+        "OLP-0265-B011",
+        "OLP-0269-B004",
+        "OLP-0269-B005",
+        "OLP-0269-B006",
+        "OLP-0269-B008"
+      ],
+      "consulted_passage_ids": [
+        "GU-P070",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P070 પ્રામાણ્યને એક વિધાનના હકીકતી સત્યથી જુદું કરે છે; નિર્ણય સમસ્યાની મશીન-શરત મૂળથી લેવામાં આવી છે.",
+      "alternatives_considered_gujarati": "સત્યતા સમસ્યા — પ્રામાણ્યને એક નિદર્શના સત્ય સાથે ભેળવે.",
+      "uncertainty_gujarati": "નિર્ણય સમસ્યાના ઐતિહાસિક નામનું સીધું ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T258",
+      "english": "enumerable / denumerable",
+      "gujarati": "પરિગણનીય / ગણનીય",
+      "segment_ids": [
+        "OLP-0266-B004",
+        "OLP-0266-B005",
+        "OLP-0266-B013",
+        "OLP-0266-B015",
+        "OLP-0266-B016",
+        "OLP-0266-B017",
+        "OLP-0267-B005"
+      ],
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P050"
+      ],
+      "rationale_gujarati": "મૂળ ગુજરાતી અવતરણો $N$ સાથેના ગણનીય ગણનો અર્થ આપે છે; મશીનનાં અસરકારક વર્ણનોની પરિગણના આ અધ્યાયનું વધારાનું બાંધકામ છે.",
+      "alternatives_considered_gujarati": "માત્ર સૂચિબદ્ધ — ગણાંક અને ગણતરી-પ્રક્રિયાનો ભેદ ઓગળે.",
+      "uncertainty_gujarati": "પરિગણનીયનું સંપૂર્ણ સ્વતંત્ર તકનીકી અવતરણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T259",
+      "english": "ordered 5-tuple / argument pair",
+      "gujarati": "$5$ ઘટકોવાળી ક્રમયુક્ત શ્રેણી / નિવેશ-જોડી",
+      "segment_ids": [
+        "OLP-0266-B005",
+        "OLP-0266-B013"
+      ],
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P032",
+        "GU-P095"
+      ],
+      "rationale_gujarati": "GU-P008 ક્રમયુક્ત જોડની ક્રમ-આધારિત રીત, GU-P032 વિધેય અને GU-P095 નિવેશનો ઘટક આપે છે. પાંચ-ઘટકવાળી શ્રેણી મૂળના પાંચ સ્થાન પરથી સ્પષ્ટ વર્ણવી છે; પાંચ-જોડ ખોટું હતું.",
+      "alternatives_considered_gujarati": "પાંચ-જોડ — બે ઘટકવાળા જોડ સાથે ગણિતીય ગૂંચવણ કરે.",
+      "uncertainty_gujarati": "પાંચ-ઘટકીય ટપલનો ટૂંકો સીધો ગુજરાતી અવતરણ અહીં નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T260",
+      "english": "standard machine",
+      "gujarati": "માનક મશીન",
+      "segment_ids": [
+        "OLP-0266-B013",
+        "OLP-0266-B018"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "rationale_gujarati": "મૂળ પોતે આ નામ માનક પરિભાષા નથી એમ નોંધે છે; આવૃત્તિનું સ્પષ્ટ સ્થાનિક નામ અને ટિપ્પણી બંને જાળવ્યાં છે.",
+      "alternatives_considered_gujarati": "પ્રમાણભૂત મશીન — પ્રમાણભૂતતાનો અનાવશ્યક નિયમાત્મક અર્થ લાવે.",
+      "uncertainty_gujarati": "નામનું મૂળ ગુજરાતી સ્વતંત્ર પ્રમાણ નથી; આ જ પાઠની સ્થાનિક વ્યાખ્યા છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T261",
+      "english": "index / universal Turing machine",
+      "gujarati": "સૂચક / સર્વવ્યાપી ટ્યુરિંગ મશીન",
+      "segment_ids": [
+        "OLP-0267-B004",
+        "OLP-0267-B005",
+        "OLP-0267-B006",
+        "OLP-0267-B007",
+        "OLP-0267-B008",
+        "OLP-0267-B009",
+        "OLP-0267-B010",
+        "OLP-0267-B011",
+        "OLP-0267-B012",
+        "OLP-0267-B013",
+        "OLP-0267-B014",
+        "OLP-0267-B015",
+        "OLP-0267-B016"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "GU-P088 સંગણનનો ઘટક આપે છે; સૂચકની ચોક્કસ વ્યાખ્યા અને સર્વવ્યાપી મશીનનું અનુકરણ મૂળ ગણિતીય વાક્યોમાં છે. અગાઉની આવૃત્તિના નામો જાળવ્યા છે.",
+      "alternatives_considered_gujarati": "સામાન્ય મશીન — અનુકરણની સર્વવ્યાપકતા સ્પષ્ટ નથી કરતું.",
+      "uncertainty_gujarati": "બંને પૂર્ણ નિષ્ણાત નામનું સીધું ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T262",
+      "english": "halting function / halting problem",
+      "gujarati": "અટકવાનું વિધેય / અટકવાની સમસ્યા",
+      "segment_ids": [
+        "OLP-0268-B004",
+        "OLP-0268-B005",
+        "OLP-0268-B006",
+        "OLP-0268-B007",
+        "OLP-0268-B008",
+        "OLP-0268-B009",
+        "OLP-0268-B010",
+        "OLP-0268-B011",
+        "OLP-0268-B012",
+        "OLP-0268-B013",
+        "OLP-0268-B014",
+        "OLP-0268-B015",
+        "OLP-0268-B016",
+        "OLP-0268-B017",
+        "OLP-0268-B018",
+        "OLP-0268-B019"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088"
+      ],
+      "rationale_gujarati": "મૂળ સંગણનના પ્રમાણ સાથે અગાઉની આવૃત્તિમાં સ્થાપિત નામ જાળવ્યા; 0/1 અને અટકવાની ચોક્કસ શરતો મૂળ સૂત્રો પરથી લેવામાં આવી.",
+      "alternatives_considered_gujarati": "વિરામ સમસ્યા — મશીનનું ઔપચારિક અટકવું ઓછું સ્પષ્ટ કરે.",
+      "uncertainty_gujarati": "પૂર્ણ નિષ્ણાત નામનું સીધું સ્વતંત્ર ગુજરાતી પ્રમાણ નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T263",
+      "english": "input / output",
+      "gujarati": "ઇનપુટ / આઉટપુટ",
+      "segment_ids": [
+        "OLP-0268-B007",
+        "OLP-0268-B010",
+        "OLP-0268-B012",
+        "OLP-0268-B013",
+        "OLP-0268-B015",
+        "OLP-0268-B019"
+      ],
+      "consulted_passage_ids": [
+        "GU-P095",
+        "GU-P096"
+      ],
+      "rationale_gujarati": "અધિકૃત શબ્દકોશ નિવેશ/નિર્ગમ આપે છે; અગાઉના મશીન-ગદ્યમાં ઓળખાય તેવા લોનવર્ડ રાખ્યા છે અને 0/1 મૂલ્યો સ્પષ્ટ છે.",
+      "alternatives_considered_gujarati": "નિવેશ / નિર્ગમ — સાચા વિકલ્પો, પણ આ આવૃત્તિમાં અચાનક નામફેર કરે.",
+      "uncertainty_gujarati": "લોનવર્ડની નિષ્ણાત ગુજરાતી ગદ્યમાં યોગ્યતા ખુલ્લી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T264",
+      "english": "diagonal function / disciplined composition",
+      "gujarati": "વિકર્ણ વિધેય / શિસ્તબદ્ધ મશીનનું સંયોજન",
+      "segment_ids": [
+        "OLP-0268-B009",
+        "OLP-0268-B010",
+        "OLP-0268-B011",
+        "OLP-0268-B012",
+        "OLP-0268-B013",
+        "OLP-0268-B015",
+        "OLP-0268-B019"
+      ],
+      "consulted_passage_ids": [
+        "GU-P032",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P032 વિધેયનો ઘટક અને GU-P077 ચોક્કસ દલીલ-ગદ્યનો આધાર આપે છે. વિકર્ણ/સંયોજનના ખાસ નિષ્કર્ષો પહેલાંના મૂળ ટ્યુરિંગ વિભાગથી આવે છે.",
+      "alternatives_considered_gujarati": "માત્ર પોતાનાં પર ચલાવવું — $e=e$ વિકર્ણ શરતનો તર્ક અસ્પષ્ટ રહે.",
+      "uncertainty_gujarati": "આખા ખાસ સંયોજનનું સીધું ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T265",
+      "english": "representation / configuration",
+      "gujarati": "નિરૂપણ / સંરૂપણ",
+      "segment_ids": [
+        "OLP-0270-B004",
+        "OLP-0270-B005",
+        "OLP-0270-B008",
+        "OLP-0270-B010",
+        "OLP-0270-B011",
+        "OLP-0270-B012"
+      ],
+      "consulted_passage_ids": [
+        "GU-P075",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P075 સંરચનાના ઘટક પ્રયોગને અને GU-P077 ચોક્કસ તર્ક-ગદ્યને આધાર આપે છે; નિરૂપણ અને સંરૂપણનો વિશેષ તફાવત અગાઉના મશીન અધ્યાયમાં વ્યાખ્યાયિત છે.",
+      "alternatives_considered_gujarati": "માત્ર સ્થિતિ — આખી ટેપ/હેડ/અવસ્થા માહિતી ઓછી સ્પષ્ટ કરે.",
+      "uncertainty_gujarati": "બન્ને નિષ્ણાત નામનું સીધું સ્વતંત્ર ગુજરાતી અવતરણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T266",
+      "english": "tape symbol / transition",
+      "gujarati": "ટેપ-ચિહ્ન / સંક્રમણ",
+      "segment_ids": [
+        "OLP-0270-B006",
+        "OLP-0270-B011",
+        "OLP-0270-B012",
+        "OLP-0270-B013",
+        "OLP-0270-B014"
+      ],
+      "consulted_passage_ids": [
+        "GU-P097",
+        "GU-P098",
+        "GU-P099"
+      ],
+      "rationale_gujarati": "અધિકૃત શબ્દકોશ ચિહ્ન, ટેપ અને સંક્રમણના ઘટક શબ્દો આપે છે; આ પાઠના ગણિતીય ચિહ્નો તે ઘટકોના ખાસ ઔપચારિક અર્થ આપે છે.",
+      "alternatives_considered_gujarati": "માત્ર અક્ષર / બદલાવ — ટેપ અને મશીન-ચલનની ખાસ શરત ઓછી સ્પષ્ટ કરે.",
+      "uncertainty_gujarati": "પૂર્ણ ટ્યુરિંગ સંક્રમણ નામનું સીધું મૂળ ગુજરાતી પ્રમાણ નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T267",
+      "english": "logical entailment / induction",
+      "gujarati": "ફલિત થવું / આગમન",
+      "segment_ids": [
+        "OLP-0270-B018",
+        "OLP-0270-B019",
+        "OLP-0270-B020"
+      ],
+      "consulted_passage_ids": [
+        "GU-P073"
+      ],
+      "rationale_gujarati": "GU-P073 સાન્ત પગલાંવાળી સાબિતીનું ગદ્ય આપે છે; $m<k$નો તાર્કિક ફલિત મૂળ ક્રમ-સ્વયંસિદ્ધ વાક્ય પરથી નક્કી છે.",
+      "alternatives_considered_gujarati": "માત્ર પરિણામ — ધારણાથી ફલિતનો સંબંધ ઢાંકે.",
+      "uncertainty_gujarati": "આ પાઠના ચોક્કસ આગમન-સૂત્રનું ગુજરાતી પ્રમાણ મૂળ નથી; ઔપચારિક સૂત્ર જ અર્થ નક્કી કરે છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T268",
+      "english": "validity / entailment / derivation",
+      "gujarati": "પ્રામાણ્ય / ફલિત થવું / વ્યૂત્પત્તિ",
+      "segment_ids": [
+        "OLP-0271-B005",
+        "OLP-0271-B006",
+        "OLP-0271-B007",
+        "OLP-0271-B008",
+        "OLP-0271-B010",
+        "OLP-0271-B011",
+        "OLP-0271-B012",
+        "OLP-0271-B013",
+        "OLP-0271-B021",
+        "OLP-0271-B022",
+        "OLP-0271-B023",
+        "OLP-0271-B024",
+        "OLP-0271-B025",
+        "OLP-0271-B026",
+        "OLP-0271-B027",
+        "OLP-0271-B031",
+        "OLP-0271-B032",
+        "OLP-0271-B033",
+        "OLP-0271-B034",
+        "OLP-0271-B035"
+      ],
+      "consulted_passage_ids": [
+        "GU-P070",
+        "GU-P073",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P070 પ્રામાણ્યને હકીકતી સત્યથી જુદું કરે છે, GU-P073 સાબિતીનું ગદ્ય આપે છે, GU-P077 ચોક્કસ તર્ક-ગદ્યને આધાર આપે છે; મૂળના દરેક ફલિત-સૂત્રે સાચી દિશા નક્કી કરી છે.",
+      "alternatives_considered_gujarati": "માત્ર સાચું — દરેક નિદર્શમાં પ્રામાણ્ય અને વ્યૂત્પત્તિના ભેદને ઢાંકે.",
+      "uncertainty_gujarati": "વ્યૂત્પત્તિના ચોક્કસ તકનીકી શબ્દનું સીધું મૂળ ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T269",
+      "english": "configuration / actual-run structure",
+      "gujarati": "સંરૂપણ / વાસ્તવિક-ચાલની સંરચના",
+      "segment_ids": [
+        "OLP-0271-B008",
+        "OLP-0271-B009",
+        "OLP-0271-B035"
+      ],
+      "consulted_passage_ids": [
+        "GU-P075",
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "GU-P075 સંરચનાનો અને GU-P088 સંગણનનો ઘટક આપે છે; Q/Sનો વાસ્તવિક-ચાલ અર્થ મૂળ વ્યાખ્યા અને અગાઉના મશીન વિભાગથી લેવાયો છે.",
+      "alternatives_considered_gujarati": "માત્ર સ્થિતિ — ટેપ, હેડ અને સમયનો આખો અર્થ ઓગળે.",
+      "uncertainty_gujarati": "પૂર્ણ સંયોજનનું સ્વતંત્ર ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T270",
+      "english": "transition / written-square frame",
+      "gujarati": "સંક્રમણ / લખાયેલા ખાના સિવાય યથાવત્ ટેપ",
+      "segment_ids": [
+        "OLP-0271-B014",
+        "OLP-0271-B015",
+        "OLP-0271-B016",
+        "OLP-0271-B017",
+        "OLP-0271-B018",
+        "OLP-0271-B019",
+        "OLP-0271-B020",
+        "OLP-0271-B021",
+        "OLP-0271-B022",
+        "OLP-0271-B023",
+        "OLP-0271-B024",
+        "OLP-0271-B025",
+        "OLP-0271-B026",
+        "OLP-0271-B027"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P099"
+      ],
+      "rationale_gujarati": "GU-P099 સંક્રમણ અને GU-P088 સંગણનના ઘટક શબ્દો આપે છે; મસદ્દાની બે યાદીઓમાં લખાયેલું ખાનું બાકાત રાખવાનો અર્થ મૂળના ગદ્ય અને ઔપચારિક સંરૂપણ પરથી નક્કી છે.",
+      "alternatives_considered_gujarati": "બધી ટેપ યથાવત્ — લખાયેલા ખાને નવું ચિહ્ન આવી શકે તે ખોટું કરે.",
+      "uncertainty_gujarati": "ફ્રેમ-શરતનું પૂર્ણ નિષ્ણાત નામ અહીં સીધું પ્રમાણિત નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T242",
+      "english": "validity",
+      "gujarati": "પ્રામાણ્ય / પ્રમાણભૂત",
+      "segment_ids": [
+        "OLP-0272-B005",
+        "OLP-0272-B006",
+        "OLP-0272-B010",
+        "OLP-0272-B011",
+        "OLP-0272-B012",
+        "OLP-0272-B013"
+      ],
+      "consulted_passage_ids": [
+        "GU-P070",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P070 દલીલના પ્રામાણ્યને આધારવિધાનના હકીકતી સત્યથી જુદું રાખે છે; અહીં પ્રથમ-ક્રમના વાક્ય માટે અગાઉની આવૃત્તિની જ વ્યાખ્યા અનુસરાય છે.",
+      "alternatives_considered_gujarati": "માત્ર સાચું — કોઈ એક નિદર્શમાં સત્ય સાથે ગૂંચવણ કરે છે.",
+      "uncertainty_gujarati": "પ્રથમ-ક્રમના પ્રામાણ્યનું અલગ સીધું મૂળ ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T243",
+      "english": "computation / Turing machine",
+      "gujarati": "સંગણના / ટ્યુરિંગ મશીન",
+      "segment_ids": [
+        "OLP-0272-B005",
+        "OLP-0272-B006",
+        "OLP-0272-B008",
+        "OLP-0272-B009",
+        "OLP-0272-B010",
+        "OLP-0272-B011",
+        "OLP-0272-B012",
+        "OLP-0272-B013"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "GU-P088 સંગણનનો ઘટક આપે છે; ટ્યુરિંગ મશીન માટે આ આવૃત્તિમાં પહેલેથી સ્પષ્ટ કરેલો લિપ્યાંતર યથાવત્ છે.",
+      "alternatives_considered_gujarati": "ગણક યંત્ર — ટ્યુરિંગના ખાસ ઔપચારિક નિદર્શને સામાન્ય ગણક સાથે ભેળવે છે.",
+      "uncertainty_gujarati": "ટ્યુરિંગ મશીન માટે સીધું સ્વતંત્ર ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T244",
+      "english": "input / output",
+      "gujarati": "ઇનપુટ / આઉટપુટ",
+      "segment_ids": [
+        "OLP-0272-B005",
+        "OLP-0272-B006",
+        "OLP-0272-B008",
+        "OLP-0272-B009",
+        "OLP-0272-B010",
+        "OLP-0272-B012",
+        "OLP-0272-B013"
+      ],
+      "consulted_passage_ids": [
+        "GU-P095",
+        "GU-P096",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "અધિકૃત શબ્દકોશમાં નિવેશ અને નિર્ગમ/ઉત્પાદન છે. અગાઉની ટેપ-આધારિત આવૃત્તિની ઓળખાય તેવી ઇનપુટ/આઉટપુટ ભાષા અહીં રાખી છે; શબ્દકોશ આ અંગ્રેજી લોનવર્ડને સીધું સમર્થન આપતો નથી.",
+      "alternatives_considered_gujarati": "નિવેશ / નિર્ગમ — સાચા વિકલ્પો, પરંતુ અગાઉનાં મશીન વર્ણનથી અચાનક વિચ્છેદ થાય.",
+      "uncertainty_gujarati": "વિદ્યાપીઠના ગુજરાતી સંગણન-ગદ્યમાં લોનવર્ડની યોગ્યતાની નિષ્ણાત સમીક્ષા ખુલ્લી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T245",
+      "english": "satisfiability",
+      "gujarati": "સંતોષ્યતા / સંતોષ્ય",
+      "segment_ids": [
+        "OLP-0272-B007",
+        "OLP-0272-B008",
+        "OLP-0272-B009",
+        "OLP-0272-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P070",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "મૂળ અંગ્રેજી અને પ્રથમ-ક્રમની પહેલેથી અનુવાદિત ઔપચારિક વ્યાખ્યા પરથી નિદર્શમાં સંતોષાઈ શકે એવો અર્થ રાખ્યો છે; યાદીબદ્ધ મૂળ ગુજરાતી અવતરણ આ ચોક્કસ શબ્દને સીધું પ્રમાણ આપતાં નથી.",
+      "alternatives_considered_gujarati": "સંભવનીયતા — માત્ર સંભાવના એવો ખોટો અર્થ થવાની શક્યતા.",
+      "uncertainty_gujarati": "સંતોષ્યતા માટે સ્વતંત્ર ગુજરાતી ગણિતીય અવતરણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T246",
+      "english": "semi-decidable",
+      "gujarati": "અર્ધનિર્ણેય",
+      "segment_ids": [
+        "OLP-0272-B011",
+        "OLP-0272-B012",
+        "OLP-0272-B013"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "પહેલાની સંગણકીય પરિગણનીયતા આવૃત્તિમાં આ નામ વપરાયું છે; અહીં પ્રમેયમાં એક-તરફી અટકવાની શરત ખુલ્લી કહેવામાં આવી છે. પરામર્શિત મૂળ ગુજરાતી અવતરણમાં પૂર્ણ તકનીકી નામ નથી.",
+      "alternatives_considered_gujarati": "અર્ધ-નિર્ણયક્ષમ — શક્ય, પણ આવૃત્તિમાં સ્થાપિત ટૂંકા નામથી અસંગત.",
+      "uncertainty_gujarati": "અર્ધનિર્ણેય શબ્દની સ્વતંત્ર પરિભાષાકીય પુષ્ટિ ખુલ્લી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T247",
+      "english": "soundness / completeness",
+      "gujarati": "યથાર્થતા / પૂર્ણતા",
+      "segment_ids": [
+        "OLP-0272-B011",
+        "OLP-0272-B013"
+      ],
+      "consulted_passage_ids": [
+        "GU-P070",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "અગાઉની પ્રથમ-ક્રમની આવૃત્તિના પ્રમેયનામોને જાળવ્યા છે; મૂળ સાબિતીમાં એક દિશા ખોટા હા-જવાબને રોકે અને બીજી દિશા સાચા હા-જવાબને શોધે છે.",
+      "alternatives_considered_gujarati": "શુદ્ધતા / સંપૂર્ણતા — અર્થની નજીક, પણ અગાઉની ઔપચારિક વ્યાખ્યા સાથે અસંગત.",
+      "uncertainty_gujarati": "આ બે નિર્દિષ્ટ પ્રમેયનામ માટે સીધું મૂળ ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T248",
+      "english": "finite model / finitely satisfiable",
+      "gujarati": "સાન્ત નિદર્શ / સાન્ત નિદર્શમાં સંતોષ્ય",
+      "segment_ids": [
+        "OLP-0273-B006",
+        "OLP-0273-B007",
+        "OLP-0273-B008",
+        "OLP-0273-B009",
+        "OLP-0273-B012",
+        "OLP-0273-B013",
+        "OLP-0273-B015",
+        "OLP-0273-B016",
+        "OLP-0273-B017",
+        "OLP-0273-B019",
+        "OLP-0273-B020",
+        "OLP-0273-B021",
+        "OLP-0273-B023"
+      ],
+      "consulted_passage_ids": [
+        "GU-P049",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P049 સાન્ત ગણના ઘટકોની સંખ્યાનો અર્થ આપે છે. નિદર્શમાં સાન્તપણું તેના પ્રદેશનું છે; સાન્ત સંતોષ્યતા દરેક સાન્ત ઉપસંગ્રહની સંતોષ્યતા નથી.",
+      "alternatives_considered_gujarati": "સીમિત નિદર્શ — પર્યાય, પણ આવૃત્તિના સાન્ત શબ્દ અને પરામર્શિત ગદ્યથી ઓછો સુસંગત.",
+      "uncertainty_gujarati": "આખા તકનીકી સંયોજનનું સીધું સ્વતંત્ર ગુજરાતી અવતરણ મળ્યું નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T249",
+      "english": "validity / finite validity",
+      "gujarati": "પ્રામાણ્ય / સાન્ત નિદર્શોમાં પ્રામાણ્ય",
+      "segment_ids": [
+        "OLP-0273-B005",
+        "OLP-0273-B006",
+        "OLP-0273-B019",
+        "OLP-0273-B021",
+        "OLP-0273-B023"
+      ],
+      "consulted_passage_ids": [
+        "GU-P070",
+        "GU-P075"
+      ],
+      "rationale_gujarati": "પ્રામાણ્યને એક નિદર્શમાં સત્યથી જુદું રાખ્યું; સાન્ત પ્રામાણ્યમાં સર્વ સાન્ત નિદર્શોનો અર્થ વાક્યમાં જ ખુલ્લો છે.",
+      "alternatives_considered_gujarati": "સત્યતા — એક નિદર્શમાં સત્ય સાથે ગૂંચવણ કરે.",
+      "uncertainty_gujarati": "પ્રથમ-ક્રમના સાન્ત પ્રામાણ્યનું સીધું ગુજરાતી પ્રમાણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T250",
+      "english": "Turing machine / computation / transition",
+      "gujarati": "ટ્યુરિંગ મશીન / સંગણના / સંક્રમણ",
+      "segment_ids": [
+        "OLP-0273-B005",
+        "OLP-0273-B007",
+        "OLP-0273-B008",
+        "OLP-0273-B009",
+        "OLP-0273-B010",
+        "OLP-0273-B011",
+        "OLP-0273-B019",
+        "OLP-0273-B020"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P099",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P088 સંગણન અને GU-P099 સંક્રમણના ઘટક શબ્દો સીધા આપે છે; ટ્યુરિંગ મશીનનું નામ અને ખાસ સંક્રમણ-નિયમ અગાઉની આવૃત્તિ પ્રમાણે છે.",
+      "alternatives_considered_gujarati": "ગણક — વિશિષ્ટ ઔપચારિક મશીનને સામાન્ય ઉપકરણમાં ભેળવે.",
+      "uncertainty_gujarati": "ટ્યુરિંગ મશીનનું પૂર્ણ નામ આ બે અવતરણમાં સીધું નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T251",
+      "english": "proof / entailment / contrapositive",
+      "gujarati": "સાબિતી / ફલિત થવું / પ્રતિનિષેધ",
+      "segment_ids": [
+        "OLP-0273-B005",
+        "OLP-0273-B007",
+        "OLP-0273-B012",
+        "OLP-0273-B013",
+        "OLP-0273-B014",
+        "OLP-0273-B015",
+        "OLP-0273-B016",
+        "OLP-0273-B017",
+        "OLP-0273-B018",
+        "OLP-0273-B020",
+        "OLP-0273-B021",
+        "OLP-0273-B022",
+        "OLP-0273-B023"
+      ],
+      "consulted_passage_ids": [
+        "GU-P070",
+        "GU-P073",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P070 તાર્કિક ફલિત અને પ્રામાણ્યનો ભેદ આપે છે; GU-P073 સાબિતીનું સાહિત્યિક ગદ્ય આપે છે; ચોક્કસ નિષ્કર્ષો મૂળ સૂત્રો પરથી જ નક્કી છે.",
+      "alternatives_considered_gujarati": "સામાન્ય અનુમાન — સંદર્ભમાં ચોક્કસ ફલિત સંબંધને નબળો કરે.",
+      "uncertainty_gujarati": "પ્રતિનિષેધનો ચોક્કસ ગુજરાતી શબ્દ અહીં સીધો પ્રમાણિત નથી.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T252",
+      "english": "model / structure",
+      "gujarati": "નિદર્શ / સંરચના",
+      "segment_ids": [
+        "OLP-0273-B006",
+        "OLP-0273-B007",
+        "OLP-0273-B008",
+        "OLP-0273-B009",
+        "OLP-0273-B012",
+        "OLP-0273-B013",
+        "OLP-0273-B015",
+        "OLP-0273-B016",
+        "OLP-0273-B017",
+        "OLP-0273-B019",
+        "OLP-0273-B020",
+        "OLP-0273-B021",
+        "OLP-0273-B023"
+      ],
+      "consulted_passage_ids": [
+        "GU-P075",
+        "GU-P077"
+      ],
+      "rationale_gujarati": "GU-P075 સંરચના ઘટક આપે છે; નિદર્શ પહેલેથી આવૃત્તિમાં વ્યાખ્યાયિત ઔપચારિક અર્થમાં વપરાય છે, આ અવતરણ તેનું સીધું પ્રમાણ નથી.",
+      "alternatives_considered_gujarati": "માત્ર આકાર — અર્થઘટન અને સંતોષ સંબંધ છુપાવે.",
+      "uncertainty_gujarati": "નિદર્શ માટે સ્વતંત્ર ગુજરાતી મોડેલ-સિદ્ધાંતીય અવતરણ બાકી છે.",
+      "status": "draft_contextual_choice_open_for_asynchronous_expert_correction"
+    }
+  ],
+  "independent_expert_certification": false
+}

@@ -1,0 +1,166 @@
+% Part: turing-machines
+% Chapter: undecidability
+% Section: enumerating-tms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{und}{enu}
+\olsection{ટ્યુરિંગ મશીનોની પરિગણના}
+
+\begin{explain}
+બધાં ટ્યુરિંગ મશીનોનો ગણ !!{enumerable} છે એ આપણે બતાવી શકીએ.
+દરેક ટ્યુરિંગ મશીનનું સાન્ત વર્ણન આપી શકાય છે, તેમાંથી આ
+વાત ફલિત થાય છે. અવસ્થાઓનો ગણ અને ટેપની વર્ણમાળા સાન્ત
+ગણો છે. સંક્રમણ વિધેય એ $Q \times \Sigma$થી
+$Q \times \Sigma \times \{\TMleft, \TMright, \TMstay\}$માં
+જતું આંશિક વિધેય છે; તેથી જે સાન્ત સંખ્યામાં નિવેશ-જોડીઓ માટે તે
+વ્યાખ્યાયિત છે, તેમનાં મૂલ્યોની યાદી આપીને તેને પણ
+નિર્દિષ્ટ કરી શકાય છે.
+
+અત્યાર સુધીની વાત સાચી છે, છતાં અહીં એક સૂક્ષ્મ ભેદ છે.
+ટ્યુરિંગ મશીનની વ્યાખ્યાએ અવસ્થાઓના ગણ અને ટેપની
+વર્ણમાળામાં કેવા !!{element}s હોઈ શકે તેના પર કોઈ
+પ્રતિબંધ મૂક્યો નથી. તેથી, દાખલા તરીકે, દરેક વાસ્તવિક
+સંખ્યા માટે તકનીકી અર્થમાં એવું ટ્યુરિંગ મશીન છે જે તે
+સંખ્યાને અવસ્થા તરીકે વાપરે છે. જોકે મશીનનું \emph{વર્તન}
+કયા પદાર્થો અવસ્થાઓ અને ચિહ્નો તરીકે કામ કરે છે તેના પર
+આધારિત નથી. \olref{fig:variants}નાં બે ટ્યુરિંગ મશીનો જુઓ.
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}\\
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+  semithick]
+\tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+\node[initial,state]         (A)              {$s$};
+\node[state]         (B) [right of=A] {$h$};
+
+\path (A) edge [bend left] node {\TMtrans{A}{A}{\TMright}} (B)
+(B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+edge [bend left] node {\TMtrans{A}{A}{\TMright}} (A);
+\end{tikzpicture}
+\end{center}
+\caption{\emph{સમ} મશીનનાં બે રૂપ}
+\ollabel{fig:variants}
+\end{figure}
+આ બે આલેખ બે મશીનોને અનુરૂપ છે: $M$ની ટેપ-વર્ણમાળા
+$\Sigma = \{\TMendtape,\TMblank,\TMstroke\}$ અને અવસ્થાઓનો
+ગણ $\{q_0,q_1\}$ છે, જ્યારે $M'$ની વર્ણમાળા $\Sigma' =
+\{\TMendtape,\TMblank,A\}$ અને અવસ્થાઓનો ગણ $\{s,h\}$
+છે. પરંતુ તેમની બાકીની સૂચનાઓ સમાન છે: $n$ સંખ્યાના
+$\TMstroke$ના ક્રમ પર $M$ ત્યારે અને માત્ર ત્યારે અટકે છે
+જ્યારે $n$ સમ હોય; અને $n$ સંખ્યાના $A$ના ક્રમ પર $M'$
+પણ ત્યારે અને માત્ર ત્યારે અટકે છે જ્યારે $n$ સમ હોય.
+આપણે માત્ર $\TMstroke$નું નામ~$A$, $q_0$નું નામ~$s$ અને
+$q_1$નું નામ~$h$ રાખ્યાં છે. આ દાખલાને સામાન્ય બનાવી
+શકાય: ચિહ્નો અને અવસ્થાઓનાં આવાં નામ બદલવાથી એકમાંથી
+બીજું મળે તો ટ્યુરિંગ મશીનોને સમાન માની શકીએ. હકીકતમાં,
+આપણે મશીનનાં ચિહ્નો અને અવસ્થાઓને સીધાં ધન પૂર્ણાંકો
+જ માની શકીએ: $\sigma_0$ને બદલે~$1$, $\sigma_1$ને
+બદલે~$2$ વગેરે; $\TMendtape$ એ~$1$, $\TMblank$ એ~$2$
+વગેરે. આ રીતે \emph{સમ} મશીન \olref{fig:standard-even}માં
+દર્શાવેલું મશીન બને છે.
+\begin{figure}
+\[\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+  semithick]
+\tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+\node[initial,state]         (A)              {$1$};
+\node[state]         (B) [right of=A] {$2$};
+
+\path (A) edge [bend left] node {\TMtrans{3}{3}{\TMright}} (B)
+(B) edge [loop above] node {\TMtrans{2}{2}{\TMright}} (B)
+edge [bend left] node {\TMtrans{3}{3}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\caption{માનક \emph{સમ} મશીન}
+\ollabel{fig:standard-even}
+\end{figure}
+જે ટ્યુરિંગ મશીનની અવસ્થાઓ અને ચિહ્નો ધન પૂર્ણાંકો છે
+તેને \emph{માનક} મશીન કહી શકીએ અને હવે પછી માત્ર માનક
+મશીનો જ વિચારીએ.\footnote{``માનક મશીન'' પરિભાષા
+સ્વયં માનક નથી.}
+
+આપણે ટ્યુરિંગ મશીનોનો ગણ !!{enumerable} છે તે બતાવવું
+હતું; ઉપરની ચર્ચા મુજબ માનક ટ્યુરિંગ મશીનોનો ગણ
+!!{enumerable} છે તે બતાવવું પૂરતું છે. ધારો કે માનક
+ટ્યુરિંગ મશીન $M = \tuple{Q, \Sigma, q_0, \delta}$
+આપેલું છે. ધન પૂર્ણાંકોની સાન્ત શ્રેણી વડે તેનું વર્ણન
+કેવી રીતે કરીએ? પહેલાં અવસ્થાઓની સંખ્યા, પછી અવસ્થાઓ,
+ચિહ્નોની સંખ્યા, ચિહ્નો અને પ્રારંભિક અવસ્થાની યાદી આપીએ.
+($M$ માનક હોવાથી આ બધાં ધન પૂર્ણાંકો છે એ યાદ રાખો.)
+હવે~$\delta$નું શું? શક્ય દલીલોનો ગણ, એટલે કે
+$\tuple{q,\sigma}$ જોડો, સાન્ત છે, કારણ કે $Q$ અને
+~$\Sigma$ સાન્ત છે. તેથી~$\delta$માં રહેલી માહિતી એ
+એવી બધી $5$ ઘટકોવાળી ક્રમયુક્ત શ્રેણીઓ
+$\tuple{q, \sigma, q', \sigma', d}$ની
+સાન્ત યાદી છે, જેમના માટે
+$\delta(q,\sigma) = \tuple{q', \sigma', D}$; અહીં $d$
+દિશા~$D$નો સંકેત આપતો અંક છે (જેમ કે~$\TMleft$ માટે
+$1$,~$\TMright$ માટે $2$ અને~$\TMstay$ માટે $3$).
+
+આ રીતે દરેક માનક ટ્યુરિંગ મશીનને ધન પૂર્ણાંકોની સાન્ત
+યાદી વડે, એટલે કે શ્રેણી $s_M \in (\PosInt)^*$ વડે,
+વર્ણવી શકાય છે. દાખલા તરીકે, માનક \emph{સમ} મશીનનો
+સંકેત આ શ્રેણી છે:
+\[
+2, \underbrace{1, 2}_Q, 3, \overbrace{1, 2, 3}^\Sigma, 1, \underbrace{1, 3, 2, 3, 2}_{\delta(1,3) = \tuple{2,3,R}},
+\overbrace{2, 2, 2, 2, 2}^{\delta(2,2) = \tuple{2,2,R}},
+\underbrace{2, 3, 1, 3, 2}_{\delta(2,3) = \tuple{1,3,R}}.
+\]
+\end{explain}
+
+\begin{thm}
+$\Nat$થી~$\Nat$માં જતાં કેટલાંક વિધેયો ટ્યુરિંગ-સંગણનીય
+નથી.
+\end{thm}
+
+\begin{proof}
+ધન પૂર્ણાંકોની સાન્ત શ્રેણીઓનો ગણ~$(\PosInt)^*$
+!!{enumerable} છે એ આપણે જાણીએ છીએ
+(\cref{sfr:siz:zigzag:prob:posint-star}). તેથી માનક
+ટ્યુરિંગ મશીનોનાં વર્ણનોનો ગણ, $(\PosInt)^*$નો ઉપગણ
+હોવાથી, પોતે પણ પરિગણનીય છે. $\Nat$થી~$\Nat$માં જતું
+દરેક ટ્યુરિંગ-સંગણનીય વિધેય કોઈ ટ્યુરિંગ મશીન વડે
+(હકીકતમાં, અનેક મશીનો વડે) ગણાય છે. તેની અવસ્થાઓ અને
+ચિહ્નોનાં નામ ધન પૂર્ણાંકો વડે બદલીને (ખાસ કરીને
+$\TMendtape$ને~$1$, $\TMblank$ને~$2$ અને
+$\TMstroke$ને~$3$ રાખીને) જોઈ શકાય છે કે દરેક
+ટ્યુરિંગ-સંગણનીય વિધેય કોઈ માનક ટ્યુરિંગ મશીન વડે
+ગણાય છે. એટલે $\Nat$થી~$\Nat$માં જતાં બધાં
+ટ્યુરિંગ-સંગણનીય વિધેયોનો ગણ પણ પરિગણનીય છે.
+
+બીજી તરફ, $\Nat$થી~$\Nat$માં જતાં બધાં વિધેયોનો
+ગણ !!{enumerable} નથી (\cref{sfr:siz:red:prob:nat-nat}).
+જો દરેક વિધેય કોઈ ટ્યુરિંગ મશીન વડે સંગણનીય હોત,
+તો તેમનું સંગણન કરતાં મશીનોનાં બધાં વર્ણનોની યાદી
+આપીને બધાં વિધેયોની પરિગણના કરી શકાત. તેથી કેટલાંક
+વિધેયો ટ્યુરિંગ-સંગણનીય નથી.
+\end{proof}
+
+\begin{prob}
+  અવસ્થાઓ અને વર્ણમાળાનાં ચિહ્નોની સ્પષ્ટ યાદી આપવી ન
+  પડે એ રીતે ટ્યુરિંગ મશીનોનું વર્ણન કેવી રીતે આપી શકાય
+  તે વિચારો. ``માનક'' મશીનની તમારી પોતાની વ્યાખ્યા આપી
+  શકો છો; પરંતુ તમારા નવા અર્થમાં દરેક ટ્યુરિંગ મશીન
+  જે વિધેય ગણે છે તે કોઈ ``માનક'' મશીન પણ કેમ ગણી
+  શકે તે વિશે કંઈક કહો.
+  \sourcecorrection{OLUN-004}{સ્થિર અંગ્રેજી મૂળમાં
+  મશીનની જ સંગણના કરવાની વાત છે; અહીં અર્થ તેના
+  અવસ્થા અને ચિહ્નોનાં નામ બદલીને સમાન સંગણન
+  કરતું માનક મશીન મેળવવાનો છે.}
+\end{prob}
+
+\end{document}

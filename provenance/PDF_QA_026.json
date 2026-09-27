@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-gu-pdf-qa/26",
+  "checked_at_utc": "2026-09-26T23:52:07.354103+00:00",
+  "path": "build/gu-undecidability.pdf",
+  "bytes": 2949752,
+  "sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517",
+  "coverage": "270/722; OLP-0004–0273",
+  "pages": 333,
+  "source_correction_disclosures_new": 22,
+  "guarded_build": {
+    "mutex": "Global\\InterlanguageTeXSlotV1",
+    "three_passes_byte_identical": true,
+    "receipt_sha256": "86c9d4171820467f66fc9c4135b38df0c6717e75035c33c18ba5f0d6afeb1558"
+  },
+  "text_and_structure": {
+    "title_count_correct": true,
+    "all_new_correction_ids_present": true,
+    "withdrawn_ids_absent": true,
+    "no_missing_characters_or_unresolved_references": true
+  },
+  "visual_inspection": {
+    "first_new_content_page": 315,
+    "new_pages_inspected": 19,
+    "all_new_pages_seen_in_page_render_or_contact_sheets": true,
+    "title_and_toc_inspected_at_1500px": [
+      1,
+      11
+    ],
+    "representative_new_pages_inspected_at_1500px": [
+      315,
+      317,
+      323,
+      326,
+      331,
+      332
+    ],
+    "boundary_check_sha256": "8478d132ce4a8e922920d9c44a0ccdfdfddec38400811bdf2cf98e3c1ffca902",
+    "contact_sheet_sha256": {
+      "contact-01.png": "dd1c7b1ec4efdb0fb555ecc5f9c6d22647c45de7191aadf937a58b38cc149fa0",
+      "contact-02.png": "fe813124dff949a933c6664bae5dac540238f4de6ba6fd62b012bfd7d82beea7",
+      "contact-03.png": "64517db630f9c975a42e3f1be3a00b2b4a62239859ef2734471d4f3f9395bd4c",
+      "contact-04.png": "73de71b86ad608a8a0d350408b91f91d6f99f68cae2a894a83b63f4936bfd79b",
+      "contact-05.png": "4e028f08d6b51ebb601e1621492f066ce0556a8a42cb2067ff6986959a3eced4"
+    },
+    "detail_sha256": {
+      "page-315.png": "aa722e4f851b508902269c38d092279389ef6f6af1eacace2caac47f9b4a95a3",
+      "detail-317.png": "515b25744e2ac947f74c5d963223f5c0f892074267f08a2da57c7f5d6ed9ebad",
+      "detail-323.png": "54a939cab040740c259b9aae59b200dca925f270dd4880da2c754958200a9b41",
+      "detail-326.png": "d4626e05dd93b80253e14db89deedf412f9de0a8ea3c1c6d6144d200b8aeeeef",
+      "detail-331.png": "81a003fc14aae1d9fab4b5eb4a576633aeba02491f9d9ee8b751f28553fa2ce2",
+      "detail-332.png": "2c8bfc223589d5af0bb71567c4d273ee07047b1b1120b38cd6291c028fe3d221"
+    },
+    "sample_sha256": {
+      "PDF026_title.png": "bbc89e10d7b135192c9d1785c8d9cc47493b6320fba36f66974e9097a67ee941",
+      "PDF026_toc.png": "b0517b65732e3e9e6f4cbcbf7d83ac7442ff600aeaf63efd6e414a7389bb1cbe"
+    },
+    "result": "Gujarati shaping, formulas, SVG-derived machine diagrams, correction boxes, headings, margins, page numbers and bibliography legible; no overlap, cutoff, blank content page or missing glyph observed."
+  },
+  "status": "passed_reproducible_build_and_new_page_visual_qa"
+}

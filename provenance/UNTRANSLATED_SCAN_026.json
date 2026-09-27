@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-gu-untranslated-draft-scan/26",
+  "checked_at_utc": "2026-09-26T22:32:41.340926+00:00",
+  "scope": "OLP-0264–0273 state-only undecidability drafts",
+  "method": "ASCII prose scan after erasing TeX comments, mathematical displays, inline math, diagram code, structural IDs, links, and control words; correction-note prose inspected separately. Frozen-source ASCII must be detected for a meaningful scan.",
+  "files_checked": [
+    {
+      "unit_id": "OLP-0264",
+      "draft_sha256": "3f754ab5f8925204a91b5b1ef6f1c777ebceb30d098af205a3ee392490288996",
+      "gujarati_characters": 10,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0265",
+      "draft_sha256": "52e351d132450e546bcea04caae94dfdbe5ef5fc711c767c46eb7ba4c4843950",
+      "gujarati_characters": 3251,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0266",
+      "draft_sha256": "47556a31b44b6150c82cd76418635877a2ebdc6edef56b4b8b55a89ca76543bc",
+      "gujarati_characters": 2723,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0267",
+      "draft_sha256": "fe552fe9296a9b7f521721eb4ef9bdd5cd3fb7ac0f2017a21d379c85cb12886e",
+      "gujarati_characters": 3388,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0268",
+      "draft_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10",
+      "gujarati_characters": 2817,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0269",
+      "draft_sha256": "b8323db81b22049f90eeac15fc4797ed127f5970cfc2f89dcf4375849ffa79f3",
+      "gujarati_characters": 1272,
+      "source_correction_notes": 0
+    },
+    {
+      "unit_id": "OLP-0270",
+      "draft_sha256": "4fd1ca58eec7a22b65409038adb984c28a1ebd0ecd1abe1890b3395f582ec833",
+      "gujarati_characters": 2873,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0271",
+      "draft_sha256": "9d287e6115bb9f0b500dbffb3a088fd359de4840a69c638e6da244c4ee4a45b0",
+      "gujarati_characters": 5581,
+      "source_correction_notes": 10
+    },
+    {
+      "unit_id": "OLP-0272",
+      "draft_sha256": "0884e1ca3cc12a3459ecc40e62e5c2cae06089e6039d5e03c204d44902ce94ad",
+      "gujarati_characters": 2039,
+      "source_correction_notes": 1
+    },
+    {
+      "unit_id": "OLP-0273",
+      "draft_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf",
+      "gujarati_characters": 4705,
+      "source_correction_notes": 9
+    }
+  ],
+  "totals": {
+    "units": 10,
+    "gujarati_characters": 28659,
+    "source_detector_ascii_tokens": 5994,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "tagged_token_mismatches": 0,
+    "source_correction_notes": 22
+  },
+  "allowed_proper_names": [
+    "Alan",
+    "Church",
+    "Hilbert",
+    "Trakhtenbrot",
+    "Turing"
+  ],
+  "findings": [],
+  "source_correction_findings": [],
+  "tagged_token_mismatches": [],
+  "status": "draft_scan_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

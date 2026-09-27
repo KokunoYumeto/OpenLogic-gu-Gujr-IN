@@ -1,0 +1,442 @@
+% Part: turing-machines
+% Chapter: undecidability
+% Section: verification
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{tur}{und}{ver}
+\olsection{નિરૂપણની ચકાસણી}
+
+\begin{explain}
+આપણું નિરૂપણ કામ કરે છે તેની ચકાસણી માટે બે વાત
+સાબિત કરવી પડશે. પ્રથમ, $M$ ઇનપુટ~$w$ પર અટકે,
+તો $!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે છે તે
+બતાવવું પડશે. પછી ઊલટી દિશા: જો
+$!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે, તો
+ઇનપુટ~$w$ પર ચલાવતાં $M$ ખરેખર છેવટે અટકે છે.
+
+આ બે પરિણામો સાબિત કરવાની રીતો એકદમ જુદી છે.
+પહેલા પરિણામ માટે પ્રથમ-ક્રમના તર્કનું !!a{sentence}
+(એટલે $!T(M, w) \lif !E(M, w)$) પ્રામાણ્ય ધરાવે છે
+તે બતાવવું છે. તેનો સૌથી સરળ રસ્તો !!a{derivation}
+આપવાનો છે. પરંતુ આપણી સાબિતી બધાં~$M$ અને~$w$
+માટે કામ કરવી જોઈએ; એટલે એક જ !!{sentence}ની
+!!a{derivation} આપવાની નથી, અસંખ્ય વાક્યો માટે
+આપવાની છે. તેથી $M$ અને~$w$ ગમે તે હોય અને
+ઇનપુટ~$w$ પર અટકતાં~$M$ને ગમે તેટલાં પગલાં લાગતાં
+હોય, $!T(M, w) \lif !E(M, w)$ની !!a{derivation}
+મળશે એવું આગમનથી સાબિત કરી શકીએ.
+
+સ્વાભાવિક રીતે આગમનનો આધાર~$M$ અટકવાના સંરૂપણ
+સુધી પહોંચે તે પહેલાંના પગલાંની સંખ્યા હશે. આ
+સાબિતીમાં આપણે સ્થાપીશું કે ઇનપુટ~$w$ પરના~$M$ના
+સંગણનના દરેક પગલા~$n$ માટે
+$!T(M, w) \Entails !C(M, w, n)$, જ્યાં
+$!C(M, w, n)$ એ ઇનપુટ~$w$ પર ચાલતા~$M$નું
+$n$ પગલાં પછીનું સંરૂપણ યોગ્ય રીતે વર્ણવે છે.
+હવે માનો કે $M$ ઇનપુટ~$w$
+પર~$n$ પગલાં પછી અટકે છે. ત્યારે
+$!C(M, w, n)$ અટકવાનું સંરૂપણ વર્ણવશે. જ્યારે
+$!C(M, w, n)$ અટકવાનું સંરૂપણ વર્ણવે, ત્યારે
+$!C(M, w, n) \Entails !E(M, w)$ પણ બતાવીશું.
+  એટલે $M$ ઇનપુટ~$w$ પર અટકે, તો કોઈ~$n$ માટે
+$n$ પગલાં પછી~$M$ અટકવાના સંરૂપણમાં હશે. તેથી
+$!T(M, w) \Entails !C(M, w, n)$, જ્યાં
+$!C(M, w, n)$ એવું સંરૂપણ વર્ણવે છે; અને એ કિસ્સામાં
+$!C(M, w, n) \Entails !E(M, w)$ હોવાથી
+$!T(M, w) \Entails !E(M, w)$ મળે છે, એટલે
+$\Entails !T(M, w) \lif !E(M, w)$.
+\sourcecorrection{OLUN-006}{સ્થિર અંગ્રેજી મૂળની આ
+છેલ્લી ફલિતતા-પંક્તિમાં વ્યાખ્યાયિત $!T(M,w)$ને
+બદલે $T(M,w)$ છપાયું છે; અહીં વ્યાખ્યાયિત
+વાક્યનું ચિહ્ન જાળવ્યું છે.}
+
+ઊલટી દિશાની રીત તદ્દન જુદી છે. અહીં આપણે
+$\Entails !T(M, w) \lif !E(M, w)$ માનીને
+$M$ ઇનપુટ~$w$ પર અટકે છે તે સાબિત કરવાનું છે.
+ધારણામાંથી $!T(M, w) \Entails !E(M, w)$ મળે છે:
+એટલે જ્યાં $!T(M, w)$ સત્ય છે એવી દરેક
+!!{structure}માં $!E(M, w)$ પણ સત્ય છે. તેથી
+જેમાં $!T(M, w)$ સત્ય છે એવી
+!!a{structure}~$\Struct{M}$ વર્ણવીશું. તેનો પ્રદેશ
+$\Nat$ હશે; બધાં $\Obj Q_q$ અને $\Obj S_\sigma$
+નું અર્થઘટન ઇનપુટ~$w$ પર ચાલતા~$M$નાં
+સંરૂપણો પરથી નક્કી થશે. દાખલા તરીકે,
+$\Sat{M}{\Obj Q_q(\num{m}, \num{n})}$ ત્યારે અને માત્ર
+ત્યારે જ્યારે~$M$ ઇનપુટ~$w$ પર~$n$ પગલાં ચાલ્યા
+પછી અવસ્થા~$q$માં હોય અને ખાનું~$m$ વાંચતું હોય.
+\sourcecorrection{OLUN-007}{સ્થિર અંગ્રેજી મૂળના આ
+દાખલામાં ચાલતા મશીનને $T$ લખ્યું છે; સંદર્ભમાં તે
+$M$ છે, જ્યારે $!T(M,w)$ મશીનનું વર્ણન કરતું વાક્ય છે.}
+હવે ધારણા મુજબ $!T(M, w) \Entails !E(M, w)$,
+અને રચના મુજબ $\Sat{M}{!T(M, w)}$;
+તેથી $\Sat{M}{!E(M, w)}$. પરંતુ
+$\Sat{M}{!E(M, w)}$ ત્યારે અને માત્ર ત્યારે જ્યારે
+કોઈ $n \in \Domain{M} = \Nat$ માટે ઇનપુટ~$w$
+પર ચાલતું~$M$,~$n$ પગલાં પછી અટકવાના
+સંરૂપણમાં હોય.
+\end{explain}
+
+\begin{defn}
+$!C(M, w, n)$ એ નીચેનું !!{sentence} માનો:
+\[
+\Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land
+\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]
+\]
+અહીં~$q$, સમય~$n$ પર~$M$ની અવસ્થા છે;
+સમય~$n$ પર~$M$ ખાનું~$m$ વાંચે છે;
+$0 \le i \le k$ માટે ખાનું~$i$ સમય~$n$ પર
+ચિહ્ન~$\sigma_i$ ધરાવે છે;
+અને~$k$ એ સમય~$0$ પરની ટેપનું સૌથી જમણું ખાલી
+ન હોય એવું ખાનું તથા~$n$ પગલાં પછી હેડે મુલાકાત
+લીધેલું સૌથી જમણું ખાનું—આ બેમાંથી વધુ જમણાં
+ખાનાનો સૂચક છે.
+\end{defn}
+
+\begin{lem}\ollabel{lem:halt-config-implies-halt}
+ઇનપુટ~$w$ પર ચાલતું~$M$,~$n$ પગલાં પછી
+અટકવાના સંરૂપણમાં હોય, તો
+$!C(M, w, n) \Entails !E(M, w)$.
+\end{lem}
+
+\begin{proof}
+માનો કે ઇનપુટ~$w$ પર~$M$,~$n$ પગલાં પછી અટકે છે.
+કોઈ અવસ્થા~$q$, ખાનું~$m$ અને ચિહ્ન~$\sigma$
+એવાં છે કે:
+\begin{enumerate}
+\item $n$ પગલાં પછી~$M$ અવસ્થા~$q$માં ખાનું~$m$
+  વાંચે છે, અને તે ખાનામાં~$\sigma$ છે.
+\item સંક્રમણ વિધેય~$\delta(q, \sigma)$ અવ્યાખ્યાયિત છે.
+\end{enumerate}
+$!C(M, w, n)$ આ સંરૂપણનું વર્ણન છે અને તેમાં
+$\Obj Q_{q}(\num{m}, \num{n})$ તથા
+$\Obj S_{\sigma}(\num{m}, \num{n})$ ખંડો હશે.
+આ બંને ખંડો મળીને~$!E(M, w)$ ફલિત કરે છે:
+\[
+\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]
+\]
+કારણ કે $\tuple{q,\sigma} \in X$ હોવાથી
+$\Obj Q_q(\num{m}, \num{n}) \land
+\Obj S_{\sigma}(\num{m}, \num{n}) \Entails
+\bigvee_{\tuple{q, \sigma} \in X}
+(\Obj Q_q(\num{m}, \num{n}) \land
+\Obj S_{\sigma}(\num{m}, \num{n}))$.
+\sourcecorrection{OLUN-008}{સ્થિર અંગ્રેજી મૂળની
+આ ફલિતતા-પંક્તિમાં પહેલાના પસંદ કરેલા $q,\sigma$
+બદલે અચાનક $q',\sigma'$ આવે છે અને એક
+$S$-વિધેય આગળનો વસ્તુભાષાનો અક્ષરપ્રકાર આપતો આદેશ છૂટી ગયો છે. અહીં
+અગાઉના જ $q,\sigma$ અને પૂરો વિધેય-સંકેત રાખ્યો છે.}
+\end{proof}
+
+\begin{explain}
+એટલે $M$ ઇનપુટ~$w$ પર અટકે, તો કોઈ~$n$ માટે
+$!C(M, w, n) \Entails !E(M,w)$. હવે આપણે
+બતાવીશું કે કોઈ પણ સમય~$n$ માટે
+$!T(M, w) \Entails !C(M, w, n)$.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:config}
+દરેક~$n$ માટે, $M$ જો~$n$ પગલાં પૂરાં થાય તે
+પહેલાં અટક્યું ન હોય, તો
+$!T(M, w) \Entails !C(M, w, n)$.
+\sourcecorrection{OLUN-009}{સ્થિર અંગ્રેજી મૂળનું
+``$n$ પગલાં પછી અટક્યું ન હોય'' વિધાન~$n$મા
+પગલે જ અટકવાનું સંરૂપણ બાકાત કરે છે, છતાં નીચેનો
+પ્રામાણ્યનો પુરાવો એ જ સંરૂપણ માટે આ ઉપપ્રમેય
+વાપરે છે. અહીં~$n$ પગલાં પૂરાં થતાં પહેલાં ન
+અટકવાની જરૂરી શરત સ્પષ્ટ કરી છે.}
+\end{lem}
+
+\begin{proof}
+આગમનનો આધાર: $n = 0$ હોય, તો
+$!C(M, w, 0)$ના સંયોજકો~$!T(M,w)$નાં
+પ્રારંભિક સંરૂપણ અને સંખ્યાનાં સ્વયંસિદ્ધ વાક્યોમાંથી
+ફલિત થાય છે. ખાલી ઇનપુટમાં શરૂઆતથી વાંચાતું
+ખાનું ખાલી છે, અને તેની જમણી બાજુનાં બધાં
+ખાનાં પણ ખાલી છે, તે ખાલી-ટેપની શરત અને
+અનુગામીના સ્વયંસિદ્ધ વાક્યથી મળે છે.
+\sourcecorrection{OLUN-024}{સ્થિર અંગ્રેજી મૂળ
+આધારકિસ્સાના બધા સંયોજકો~$!T(M,w)$માં
+સીધા જ છે એમ કહે છે. ખાલી ઇનપુટ હોય ત્યારે
+માથું શરૂઆતમાં પહેલું ખાનું વાંચે છે, એટલે
+તે ખાનું ખાલી હોવાનું અને તેની આગળની
+ખાલી-ટેપ શરતનું અનુમાન પણ કરવું પડે છે.}
+
+આગમનની ધારણા: $M$ જો~$n$મા પગલા પહેલાં
+અટક્યું ન હોય, તો $!T(M,w) \Entails !C(M, w, n)$.
+હવે બતાવવું છે કે, $!C(M, w, n)$ અટકવાનું સંરૂપણ
+વર્ણવતું ન હોય તો,
+$!T(M, w) \Entails !C(M, w, n+1)$.
+
+માનો કે $n \ge 0$ અને ઇનપુટ~$w$ પર શરૂ થયેલું
+$M$,~$n$ પગલાં પછી અવસ્થા~$q$માં ખાનું~$m$
+વાંચે છે. $M$,~$n$ પગલાં પછી અટકતું ન હોવાથી
+~$M$ના કાર્યક્રમમાં નીચેના ત્રણ સ્વરૂપોમાંની કોઈ એક
+સૂચના હોવી જોઈએ:
+\sourcecorrection{OLUN-010}{સ્થિર અંગ્રેજી મૂળ આ
+આગમન-પગલામાં $n>0$ ધારે છે, જેથી આધાર પછીનું
+$n=0$થી $n+1$ પગલું છૂટી જાય છે. એ જ વિચાર
+$n=0$ માટે પણ લાગુ પડે છે, તેથી અહીં $n\ge0$ છે.}
+
+\begin{enumerate}
+\item \ollabel{right} $\delta(q, \sigma) = \tuple{q', \sigma', \TMright}$
+
+\item \ollabel{left} $\delta(q, \sigma) = \tuple{q', \sigma', \TMleft}$
+
+\item \ollabel{stay} $\delta(q, \sigma) = \tuple{q', \sigma', \TMstay}$
+\end{enumerate}
+
+આ ત્રણેય કિસ્સા અનુક્રમે જોઈએ.
+
+\begin{enumerate}
+\item માનો કે સૂચના~\olref{right}ના સ્વરૂપની છે.
+  \olref[rep]{defn:tm-descr}\olref[rep]{rep-right}
+  મુજબ આનો અર્થ છે કે
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x,
+  y) \land \Obj S_\sigma(x, y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x',
+  y') \land \Obj S_{\sigma'}(x, y') \land !A(x, y)))
+\intertext{એ $!T(M,w)$નો એક સંયોજક છે. તેથી
+  સર્વપરિમાણકના ઉદાહરણથી (અહીં~$x$ માટે
+  $\num{m}$ અને~$y$ માટે $\num{n}$ મૂકીને)
+  નીચેનું !!{sentence} ફલિત થાય છે:}
+& (\Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+\num{n})) \lif {}\\
+& \qquad (\Obj Q_{q'}(\num{m}', \num{n}') \land
+\Obj S_{\sigma'}(\num{m}, \num{n}') \land !A(\num{m}, \num{n})).
+\intertext{આગમનની ધારણા મુજબ $!T(M, w) \Entails !C(M, w, n)$,
+  એટલે કે:}
+& \Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land \\
+& \qquad\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]\\
+\intertext{$n$ પગલાં પછી ખાનું~$m$ ચિહ્ન~$\sigma$
+  ધરાવે છે, તેથી અનુરૂપ સંયોજક
+  $\Obj S_\sigma(\num{m}, \num{n})$ છે; એટલે
+  તેમાંથી આ ફલિત થાય છે:}
+& \Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+   \num{n})
+\intertext{હવે આપણને મળે છે:}
+& \Obj Q_{q'}(\num{m}', \num{n}') \land \Obj S_{\sigma'}(\num{m},
+  \num{n}') \land {}\\
+& \qquad\bigwedge_{\substack{0\le i\le k\\i\ne m}}
+  \Obj S_{\sigma_i}(\num{i}, \num{n}') \land {}\\
+& \qquad \lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}'))]
+\end{align*}
+\sourcecorrection{OLUN-022}{સ્થિર અંગ્રેજી મૂળના
+જમણી-ચાલના પરિણામમાં બદલાયેલા ખાના~$m$નું
+નવું ચિહ્ન પહેલેથી અલગ આપેલું છે, છતાં પછીની
+યાદી દેખીતી રીતે $0$થી~$k$ સુધીના બધા
+જૂનાં ચિહ્નો ફરી જોડે છે. મૂળનું જ ગદ્ય~$m$નો
+બાકાત રાખે છે; અહીં એ બાકાત સ્પષ્ટ લખ્યો છે.}
+આ રીતે: પહેલી પંક્તિ અગાઉના શરતી વાક્યના
+અનુગામીમાંથી સીધી, મોડસ પોનેન્સથી મળે છે.
+વચ્ચેની પંક્તિનો દરેક સંયોજક—જેમાં
+$S_{\sigma_m}(\num{m},\num{n}')$નો સમાવેશ નથી—
+$!C(M, w, n)$ના અનુરૂપ સંયોજક તથા
+$!A(\num{m}, \num{n})$માંથી ફલિત થાય છે.
+
+$m < k$ હોય, તો $!T(M,w) \Proves \num{m} < \num {k}$
+(\olref[rep]{prop:mlessk}); અને~$<$ની સંક્રામકતાથી
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$
+મળે છે. $m = k$ હોય, તો એ જ વાક્ય
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$
+માત્ર તર્કથી મળે છે. તેથી છેલ્લી પંક્તિ
+$!C(M, w, n)$ના અનુરૂપ સંયોજક,
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$,
+અને $!A(\num{m}, \num{n})$માંથી ફલિત થાય છે.
+$m<k$ હોય, તો આ જ $!C(M, w, n+1)$ છે.
+
+હવે માનો કે $m=k$. ત્યારે $n+1$ પગલાં પછી
+ટેપ-હેડે ખાનું~$k+1$ પણ મુલાકાત લીધું હશે;
+તે હવે મુલાકાત લેવાયેલું સૌથી જમણું ખાનું છે.
+એટલે $!C(M, w, n+1)$માં નવો સંયોજક
+$\Obj S_\TMblank(\num{k}',\num{n}')$ છે, અને
+છેલ્લો સંયોજક
+$\lforall[x][(\num{k}' < x \lif \Obj S_\TMblank(x, \num{n}'))]$
+છે. આ બે !!{sentence}s પણ ફલિત થાય છે તે
+ચકાસવું પડશે.
+
+આપણી પાસે પહેલેથી
+$\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x,
+  \num{n}'))]$ છે. ખાસ કરીને તેમાંથી
+$\num{k} < \num{k}' \lif
+\Obj S_\TMblank(\num{k}', \num{n}')$ મળે છે.
+સ્વયંસિદ્ધ વાક્ય $\lforall[x][x < x']$માંથી
+$\num{k} < \num{k}'$ મળે છે. મોડસ પોનેન્સથી
+$\Obj S_\TMblank(\num{k}',\num{n}')$ ફલિત થાય છે.
+
+વળી, $!T(M,w) \Proves \num{k} < \num{k}'$
+હોવાથી~$<$ની સંક્રામકતાના સ્વયંસિદ્ધ વાક્યથી
+$\lforall[x][(\num{k}' < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$ મળે છે. (આ
+ચકાસણી કસરત તરીકે છોડી છે.)
+
+\item માનો કે સૂચના~\olref{left}ના સ્વરૂપની છે.
+  તો \olref[rep]{defn:tm-descr}\olref[rep]{rep-left}
+  મુજબ:
+\sourcecorrection{OLUN-011}{સ્થિર અંગ્રેજી મૂળના
+આ ડાબે-ચાલ કિસ્સામાં લખાતું ખાનું~$x'$ અને
+ઉદાહરણમાં~$l+1$ છે, પરંતુ યથાવત્-ખાનાંની
+શરત અનુક્રમે $!A(x,y)$ અને $!A(\num{l},\num{n})$
+લખાઈ છે. ઉપરાંત શૂન્ય-ખાનાની શાખામાં અહીં
+પસંદ કરેલા $q,q'$ને બદલે જૂનાં $q_i,q_j$ છે.
+નીચે લખાતું ખાનું બાકાત રાખ્યું છે અને
+અવસ્થા-ચિહ્નો એકરૂપ કર્યા છે.}
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x', y) \land \Obj
+    S_{\sigma}(x', y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x, y') \land \Obj
+  S_{\sigma'}(x', y') \land !A(x', y))) \land {}\\
+& \lforall[y][((\Obj Q_{q}(\num{0}, y) \land \Obj S_{\sigma}(\num{0},
+    y)) \lif {}]\\
+& \qquad (\Obj Q_{q'}(\num{0}, y') \land \Obj S_{\sigma'}(\num{0}, y')
+  \land !A(\num{0}, y)))
+\intertext{એ $!T(M,w)$નો એક સંયોજક છે. $m>0$
+  હોય, તો $l = m - 1$ લો (એટલે $m = l+1$).
+  ઉપરના !!{sentence}ના પહેલા સંયોજકમાંથી
+  નીચેનું ફલિત થાય છે:}
+& (\Obj Q_{q}(\num{l}', \num{n}) \land \Obj S_{\sigma}(\num{l}', \num{n}))
+\lif {} \\
+& \qquad (\Obj Q_{q'}(\num{l}, \num{n}') \land \Obj S_{\sigma'}(\num{l}',
+\num{n}') \land !A(\num{l}', \num{n}))
+\intertext{અન્યથા $l = m = 0$ લો અને બીજા
+  સંયોજકમાંથી ફલિત થતું નીચેનું !!{sentence}
+  જુઓ:}
+& ((\Obj Q_{q}(\num{0}, \num{n}) \land \Obj S_{\sigma}(\num{0}, \num{n})) \lif {}\\
+& \qquad   (\Obj Q_{q'}(\num{0}, \num{n}') \land \Obj S_{\sigma'}(\num{0}, \num{n}') \land
+!A(\num{0}, \num{n})))
+\intertext{બંનેમાંથી જે લાગુ પડે તેમાંથી
+નીચેનું ફલિત થાય છે:}
+&  \Obj Q_{q'}(\num{l}, \num{n}') \land \Obj S_{\sigma'}(\num{m},
+  \num{n}') \land {}\\
+&\qquad  \bigwedge_{\substack{0\le i\le k\\i\ne m}}
+  \Obj S_{\sigma_i}(\num{i}, \num{n}') \land {} \\
+&\qquad  \lforall[x][(\num{k} < x
+  \lif \Obj S_\TMblank(x, \num{n}'))]
+\end{align*}
+\sourcecorrection{OLUN-023}{સ્થિર અંગ્રેજી મૂળના
+ડાબી-ચાલના પરિણામમાં પણ લખાયેલું ખાનું~$m$
+અલગ નવા ચિહ્ન સાથે આવે છે; પછીની જૂનાં
+ચિહ્નોની યાદીમાં તેને ફરી સામેલ કરવાથી
+સંરૂપણ ખોટું થાય. અહીં તે ખાનું સ્પષ્ટ બાકાત છે.}
+અગાઉની જેમ. (પહેલા કિસ્સામાં
+$\num{l}' \ident \num{l+1} \ident \num{m}$
+અને બીજા કિસ્સામાં $\num{l} \ident \num{0}$
+એ નોંધો.) પરંતુ આ તો $!C(M, w, n+1)$ જ છે.
+
+\item \olref{stay} કિસ્સો કસરત તરીકે છોડી છે.
+\end{enumerate}
+આપણે બતાવ્યું કે આવા દરેક~$n$ માટે
+$!T(M, w) \Entails !C(M, w, n)$.
+\end{proof}
+
+\begin{prob}
+\olref[tur][und][ver]{lem:config}ની સાબિતીમાં
+કિસ્સો~\olref[tur][und][ver]{stay} પૂર્ણ કરો.
+\end{prob}
+
+\begin{prob}
+$\Obj S_{\sigma_i}(\num{i}, \num{n})$ અને
+$!A(m, n)$માંથી
+$\Obj S_{\sigma_i}(\num{i}, \num{n}')$ની
+!!a{derivation} આપો (ધારો કે $i \neq m$,
+એટલે $i < m$ અથવા $m < i$).
+\end{prob}
+
+\begin{prob}
+$\lforall[x][(\num{k} < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$,
+$\lforall[x][x < x']$ અને
+$\lforall[x][\lforall[y][\lforall[z][ ((x < y \land y < z) \lif x <
+      z)]]]$માંથી
+$\lforall[x][(\num{k}' < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$ની
+!!a{derivation} આપો.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:valid-if-halt}
+$M$ ઇનપુટ~$w$ પર અટકે, તો
+$!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે છે.
+\end{lem}
+
+\begin{proof}
+\olref{lem:config}થી જાણીએ છીએ કે પ્રથમ
+અટકવાના સમય સુધીનાં દરેક~$n$ માટે
+સમય~$n$ પરનાં~$M$ના સંરૂપણનું
+વર્ણન~$!C(M, w, n)$,
+$!T(M, w)$માંથી ફલિત થાય છે.
+\sourcecorrection{OLUN-012}{સ્થિર અંગ્રેજી મૂળ
+અહીં ``કોઈ પણ સમય~$n$'' કહે છે, છતાં મશીન
+અટક્યા પછીનું સંરૂપણ તેની વ્યાખ્યા મુજબ આપેલું
+નથી. OLUN-009ના સુધારેલા ઉપપ્રમેયને પ્રથમ
+અટકવાના સમય સુધી જ વાપર્યો છે.}
+માનો કે $M$,~$k$ પગલાં પછી અટકે છે. તે સમયે
+તે કોઈ~$m \in \Nat$ માટે ખાનું~$m$ વાંચતું હશે.
+તેથી $!C(M, w, k)$ એ~$M$ના અટકવાના
+સંરૂપણનું વર્ણન છે: તેમાં
+$\Obj Q_q(\num{m}, \num{k})$ તથા
+$\Obj S_\sigma(\num{m}, \num{k})$ બંને સંયોજકો છે,
+અને $\delta(q,\sigma)$ અવ્યાખ્યાયિત છે. તેથી
+\olref{lem:halt-config-implies-halt} મુજબ
+$!C(M, w, k) \Entails !E(M, w)$. વળી
+$!T(M, w) \Entails !C(M, w, k)$ હોવાથી
+$!T(M, w) \Entails !E(M, w)$; એટલે
+$!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે છે.
+\end{proof}
+
+\begin{explain}
+આપણો દાવો ચકાસવાનું પૂરું કરવા ઊલટી દિશા પણ
+સ્થાપવી પડશે: $!T(M, w) \lif !E(M, w)$
+પ્રામાણ્ય ધરાવે, તો ઇનપુટ~$w$ પર શરૂ કરતાં
+$M$ ખરેખર અટકે છે.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:halt-if-valid}
+$\Entails !T(M, w) \lif !E(M, w)$ હોય, તો
+$M$ ઇનપુટ~$w$ પર અટકે છે.
+\end{lem}
+
+\begin{proof}
+પ્રદેશ~$\Nat$ ધરાવતું $\Lang L_M$-!!{structure}
+$\Struct M$ લો. તેમાં $\Obj 0$નું અર્થઘટન~$0$,
+$\prime$નું અનુગામી વિધેય અને~$<$નું નાની-કરતાં
+સંબંધ તરીકે કરીએ છીએ. વિધાનો $\Obj Q_q$ અને
+$\Obj S_\sigma$નું અર્થઘટન આ પ્રમાણે છે:
+\begin{align*}
+  \Assign{\Obj Q_q}{M} & =
+\Setabs{\tuple{m, n}}{\begin{array}{ll}\text{ઇનપુટ~$w$ પર શરૂ કરતાં,~$n$ પગલાં પછી,}\\ \text{$M$ અવસ્થા~$q$માં
+  ખાનું~$m$ વાંચે છે}\end{array}} \\
+  \Assign{\Obj S_\sigma}{M} & = \Setabs{\tuple{m, n}}{\begin{array}{ll}
+\text{ઇનપુટ~$w$ પર શરૂ કરતાં,~$n$ પગલાં પછી,}\\ \text{$M$ના ખાના~$m$માં
+  ચિહ્ન~$\sigma$ છે}\end{array}}
+\end{align*}
+બીજા શબ્દોમાં, ઇનપુટ~$w$ પર શરૂ થયેલું~$M$
+હકીકતમાં પગલે પગલે શું કરે છે તેનું વર્ણન કરે
+એવું !!{structure}~$\Struct{M}$ રચીએ છીએ. સ્પષ્ટપણે
+$\Sat{M}{!T(M, w)}$. જો
+$\Entails !T(M, w) \lif !E(M, w)$, તો
+$\Sat{M}{!E(M, w)}$ પણ; એટલે:
+\[
+\Sat{M}{\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]}.
+\]
+$\Domain{M} = \Nat$ હોવાથી કોઈ
+$m$, $n \in \Nat$ તથા એવાં~$q$ અને~$\sigma$
+છે કે $\Sat{M}{\Obj Q_q(\num{m}, \num{n}) \land
+\Obj S_\sigma(\num{m}, \num{n})}$ અને
+$\delta(q, \sigma)$ અવ્યાખ્યાયિત છે.
+$\Struct M$ની વ્યાખ્યા મુજબ તેનો અર્થ એ છે કે
+ઇનપુટ~$w$ પર શરૂ થયેલું~$M$,~$n$ પગલાં પછી
+અવસ્થા~$q$માં છે અને ચિહ્ન~$\sigma$ વાંચે છે;
+સંક્રમણ વિધેય અવ્યાખ્યાયિત છે, એટલે~$M$ અટક્યું છે.
+\end{proof}
+
+\end{document}

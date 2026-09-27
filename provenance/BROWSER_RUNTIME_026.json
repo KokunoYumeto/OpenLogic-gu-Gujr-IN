@@ -1,0 +1,584 @@
+{
+  "schema": "openlogic-gu-reader-browser-runtime/26",
+  "checked_at_utc": "2026-09-26T23:50:35.639548+00:00",
+  "html_sha256": "8d0220721eea223c02b6e1dd6ca5857f2afbb414f116e222c73407a162a5ec08",
+  "epub_sha256": "d250b6a61994a55e2f50081dbbb2a6e5d19c9f9123fc9c588f8c666bcf29b9a9",
+  "content_xhtml_sha256": "4453dc576d5e2d6d755e88656cb5d4d648fd81670db17abf7420741cc3747035",
+  "archive_content_navigation_stylesheet_byte_identical_to_stage": true,
+  "browser": "Chrome headless",
+  "viewport_css_pixels": [
+    1280,
+    800
+  ],
+  "html": {
+    "metrics": {
+      "ready": "complete",
+      "fonts": "loaded",
+      "mathml": 15608,
+      "images": [
+        {
+          "loaded": true,
+          "alt": "બંને ગણોના બધા ઘટકો દર્શાવતો યોગગણ",
+          "src": "assets/union.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "બંને ગણોમાં સામાન્ય ઘટકો દર્શાવતો છેદગણ",
+          "src": "assets/intersection.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "પહેલા ગણમાં હોય અને બીજા ગણમાં ન હોય તેવા ઘટકો",
+          "src": "assets/difference.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "દિશાયુક્ત આલેખ: 1થી 1, 2 અને 3 તરફ ધારો; 2થી 3 તરફ ધાર. 4 છૂટું શિરોબિંદુ છે.",
+          "src": "assets/graph-four.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "દિશાયુક્ત આલેખ: 1થી 1, 2 અને 3 તરફ ધારો; 2થી 3 તરફ ધાર.",
+          "src": "assets/graph-three.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "મૂળ rથી સંતાન a અને b; aનાં સંતાન c, d અને e. મૂળ નીચે અને સંતાનો ઉપર છે.",
+          "src": "assets/tree.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ડાબા ગણના દરેક ઘટકથી જમણા ગણમાં એક જ તીર; બે આગતોની કિંમત એક જ હોઈ શકે છે.",
+          "src": "assets/function.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "સહપ્રદેશના દરેક ઘટક સુધી ઓછામાં ઓછું એક તીર પહોંચે છે.",
+          "src": "assets/surjective.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "જુદા આગતોનાં તીરો જુદી કિંમતો સુધી પહોંચે છે.",
+          "src": "assets/injective.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "પ્રદેશ અને સહપ્રદેશના ઘટકો વચ્ચે પરસ્પર એક-એક સંગતતા.",
+          "src": "assets/bijective.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ત્રણ ગણો: પહેલાં f વડે ડાબેથી મધ્યમાં, પછી g વડે મધ્યથી જમણે. તૂટક તીરો સીધું પહેલાં f અને પછી gનું સંયોજન દર્શાવે છે.",
+          "src": "assets/composition.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "બાજુ mવાળો મોટો ચોરસ; તેની અંદર બાજુ nવાળા બે સરખા, એકબીજા પર ચઢતા ચોરસ. નારંગી છેદનું ક્ષેત્રફળ બંને ઢાંકાયા વિનાના ખૂણાના ચોરસોના કુલ ક્ષેત્રફળ જેટલું છે.",
+          "src": "assets/sqrt-two-parity.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ઉપરની હારમાં જૂના મહેમાનો 1થી 9 અને આગળ; દરેક તીર મહેમાન nને નીચેની હારમાં ઓરડા n+1માં ખસેડે છે. નીચેનો ઓરડો 1 વર્તુળથી ખાલી દર્શાવ્યો છે.",
+          "src": "assets/hilbert-hotel-shift.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "આયતાકાર નિદર્શ-વિસ્તારમાં ડાબે Γનો વર્ગ Cના ભાગમાં અને જમણે Δનો વર્ગ ¬Cના ભાગમાં છે; વક્ર સીમા C અને ¬Cને જુદા પાડે છે.",
+          "src": "assets/interpolation-separation.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "મોટા આયતથી દર્શાવેલી વ્યાપક સંરચના Aમાં ડાબે M-તારક અને જમણે N-તારકના વર્તુળો છે; એમની અંદર અનુક્રમે M અને N છે, અને બંને તરફ વચ્ચેનો દ્વિમુખી તીર આંશિક એકરૂપતા I દર્શાવે છે.",
+          "src": "assets/lindstrom-partial-isomorphism.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ટ્યુરિંગ મશીનનું યોજનાત્મક ચિત્ર: ડાબી સીમાથી શરૂ થતી ટેપ, એક ખાનાં સામેનો વાંચન-લેખન હેડ અને તેની સાથે જોડાયેલું સાન્ત નિયંત્રણ.",
+          "src": "assets/turing-machine.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, R",
+          "src": "assets/turing-machine-01.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-02.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₀ થી q₀: 0, 0, R; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-03.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 0, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, R; q₂ થી q₂: 1, 1, R; q₂ થી q₃: 0, 1, R; q₃ થી q₃: 0, 1, L; q₃ થી q₄: 1, 1, L; q₄ થી q₄: 1, 1, L; q₄ થી q₅: 0, 0, L; q₅ થી q₅: 1, 1, L; q₅ થી q₀: 0, 0, R",
+          "src": "assets/turing-machine-04.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₂: 1, 0, N",
+          "src": "assets/turing-machine-05.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 0, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, R; q₂ થી q₂: 1, 1, R; q₂ થી q₃: 0, 1, L; q₃ થી q₃: 1, 1, L; q₃ થી q₄: 0, 0, L; q₄ થી q₅: 1, 1, L; q₅ થી q₅: 1, 1, L; q₅ થી q₀: 0, 1, R; q₄ થી q₆: 0, 1, R; q₆ થી q₇: 0, 1, R; q₇ થી q₇: 1, 1, R; q₇ થી q₈: 0, 0, L; q₈ થી q₈: 1, 0, N",
+          "src": "assets/turing-machine-06.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₆ થી q₇: 0, 0, R; q₇ થી q₇: 0, 0, R; q₇ થી q₈: 1, 1, R; q₈ થી q₈: 1, 1, R; q₈ થી q₉: 0, ▷, L; q₉ થી q₉: 1, 1, L; q₉ થી q₁₀: 0, 0, R; q₁₀ થી q₁₁: 1, 0, L; q₁₁ થી q₁₁: 0, 0, L; q₁₁ થી q₁₂: ▷, ▷, R અથવા 1, 1, R; q₁₂ થી q₁₃: 0, 1, R; q₁₃ થી q₁₃: 0, 0, R; q₁₃ થી q₁₁: 1, 0, L; q₁₃ થી q₁₄: ▷, 0, N",
+          "src": "assets/turing-machine-07.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₀ થી h: 0, 0, N; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-08.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₀ થી h: 0, 0, N; q₁ થી r: 0, 0, N; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-09.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₃: 1, 0, L; q₃ થી q₃: 1, 1, L; q₃ થી h: ▷, ▷, R",
+          "src": "assets/turing-machine-10.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₂: 1, 0, N",
+          "src": "assets/turing-machine-11.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₃: 1, 0, L; q₃ થી q₃: 1, 1, L; q₃ થી q₄: ▷, ▷, R",
+          "src": "assets/turing-machine-12.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₃: 1, 0, L; q₃ થી q₃: 1, 1, L; q₃ થી q₄: ▷, ▷, R; q₄ થી q₅: 1, 0, R; q₅ થી q₅: 1, 1, R; q₅ થી q₆: 0, 0, R; q₆ થી q₆: 1, 1, R; q₆ થી q₇: 0, 1, R; q₇ થી q₇: 0, 1, L; q₇ થી q₈: 1, 1, L; q₈ થી q₈: 1, 1, L; q₈ થી q₉: 0, 0, L; q₉ થી q₉: 1, 1, L; q₉ થી q₄: 0, 0, R",
+          "src": "assets/turing-machine-13.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-14.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: s થી h: A, A, R; h થી h: 0, 0, R; h થી s: A, A, R",
+          "src": "assets/turing-machine-15.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: 1 થી 2: 3, 3, R; 2 થી 2: 2, 2, R; 2 થી 1: 3, 3, R",
+          "src": "assets/turing-machine-16.svg"
+        }
+      ],
+      "horizontalOverflow": false,
+      "machineTables": 1,
+      "newHeadings": [
+        {
+          "tag": "H4",
+          "id": "tur:und:int:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:enu:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:uni:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:hal:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:dec:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:rep:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:ver:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:uns:sec"
+        },
+        {
+          "tag": "H4",
+          "id": "tur:und:tra:sec"
+        }
+      ],
+      "correctionIds": [
+        "OLUN-002",
+        "OLUN-004",
+        "OLUN-005",
+        "OLUN-006",
+        "OLUN-007",
+        "OLUN-008",
+        "OLUN-009",
+        "OLUN-010",
+        "OLUN-011",
+        "OLUN-012",
+        "OLUN-013",
+        "OLUN-014",
+        "OLUN-015",
+        "OLUN-016",
+        "OLUN-017",
+        "OLUN-018",
+        "OLUN-019",
+        "OLUN-020",
+        "OLUN-021",
+        "OLUN-022",
+        "OLUN-023",
+        "OLUN-024"
+      ]
+    },
+    "console_warnings_or_errors": [],
+    "page_errors": [],
+    "screenshots": {
+      "title": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_title.png",
+        "sha256": "264fb44497b1df766a898a07dbabe18d86803f157924c8123ec4e7ceb609289e"
+      },
+      "chapter": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_chapter.png",
+        "sha256": "0842443cc8c331119ec08a49d9458867c8a852b0b3de88e0c3f32d5a4c3e7d78"
+      },
+      "variants_first": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_variants_first.png",
+        "sha256": "ef9e2e489ea03d898f4629a1f0dd5b8b7c2e25b7ee962de87ac12589dd055a1c"
+      },
+      "variants_second": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_variants_second.png",
+        "sha256": "ef9e2e489ea03d898f4629a1f0dd5b8b7c2e25b7ee962de87ac12589dd055a1c"
+      },
+      "standard_even": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_standard_even.png",
+        "sha256": "173c1c752c5af29d918b847ea3b66cc39bbf147157feb46cbe577de1e0a088a3"
+      },
+      "verification": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_verification.png",
+        "sha256": "34cd8282a270ff5e773d9323e83cc442e818012c12383a242cdf39f352ff7c53"
+      },
+      "proof_correction": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_proof_correction.png",
+        "sha256": "56dad0b08f52bc02a0e018610fc383ead4516551cb6c6d726c076be22e8fa5c6"
+      },
+      "finite_model": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_finite_model.png",
+        "sha256": "2a8d07a1c2a11423c0582ffb4f3124a8ddc1dde9512d70fc4f7a2c61c80025d2"
+      },
+      "variants_first_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_variants_first_detail.png",
+        "sha256": "9ec96c3e0fc2578400b05d6ced014a14d69efbaa0fd47ea97bf05daed63173c2"
+      },
+      "variants_second_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_variants_second_detail.png",
+        "sha256": "18267e2d7cab2a5053dd612caa756174c2636fb3278bdb83e2ed40aa4858b2bb"
+      },
+      "standard_even_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_standard_even_detail.png",
+        "sha256": "d5c6e0242aca16908f7aba585e5987d265a614da0a597de8b03125fbf249b54d"
+      },
+      "proof_correction_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\HTML026_proof_correction_detail.png",
+        "sha256": "91a27c2d7b85b5cb7d83c075216d7aa83bf9cacf39028bde2138db0774877cab"
+      }
+    }
+  },
+  "epub": {
+    "metrics": {
+      "ready": "complete",
+      "fonts": "loaded",
+      "mathml": 15608,
+      "images": [
+        {
+          "loaded": true,
+          "alt": "બંને ગણોના બધા ઘટકો દર્શાવતો યોગગણ",
+          "src": "assets/union.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "બંને ગણોમાં સામાન્ય ઘટકો દર્શાવતો છેદગણ",
+          "src": "assets/intersection.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "પહેલા ગણમાં હોય અને બીજા ગણમાં ન હોય તેવા ઘટકો",
+          "src": "assets/difference.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "દિશાયુક્ત આલેખ: 1થી 1, 2 અને 3 તરફ ધારો; 2થી 3 તરફ ધાર. 4 છૂટું શિરોબિંદુ છે.",
+          "src": "assets/graph-four.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "દિશાયુક્ત આલેખ: 1થી 1, 2 અને 3 તરફ ધારો; 2થી 3 તરફ ધાર.",
+          "src": "assets/graph-three.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "મૂળ rથી સંતાન a અને b; aનાં સંતાન c, d અને e. મૂળ નીચે અને સંતાનો ઉપર છે.",
+          "src": "assets/tree.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ડાબા ગણના દરેક ઘટકથી જમણા ગણમાં એક જ તીર; બે આગતોની કિંમત એક જ હોઈ શકે છે.",
+          "src": "assets/function.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "સહપ્રદેશના દરેક ઘટક સુધી ઓછામાં ઓછું એક તીર પહોંચે છે.",
+          "src": "assets/surjective.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "જુદા આગતોનાં તીરો જુદી કિંમતો સુધી પહોંચે છે.",
+          "src": "assets/injective.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "પ્રદેશ અને સહપ્રદેશના ઘટકો વચ્ચે પરસ્પર એક-એક સંગતતા.",
+          "src": "assets/bijective.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ત્રણ ગણો: પહેલાં f વડે ડાબેથી મધ્યમાં, પછી g વડે મધ્યથી જમણે. તૂટક તીરો સીધું પહેલાં f અને પછી gનું સંયોજન દર્શાવે છે.",
+          "src": "assets/composition.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "બાજુ mવાળો મોટો ચોરસ; તેની અંદર બાજુ nવાળા બે સરખા, એકબીજા પર ચઢતા ચોરસ. નારંગી છેદનું ક્ષેત્રફળ બંને ઢાંકાયા વિનાના ખૂણાના ચોરસોના કુલ ક્ષેત્રફળ જેટલું છે.",
+          "src": "assets/sqrt-two-parity.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ઉપરની હારમાં જૂના મહેમાનો 1થી 9 અને આગળ; દરેક તીર મહેમાન nને નીચેની હારમાં ઓરડા n+1માં ખસેડે છે. નીચેનો ઓરડો 1 વર્તુળથી ખાલી દર્શાવ્યો છે.",
+          "src": "assets/hilbert-hotel-shift.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "આયતાકાર નિદર્શ-વિસ્તારમાં ડાબે Γનો વર્ગ Cના ભાગમાં અને જમણે Δનો વર્ગ ¬Cના ભાગમાં છે; વક્ર સીમા C અને ¬Cને જુદા પાડે છે.",
+          "src": "assets/interpolation-separation.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "મોટા આયતથી દર્શાવેલી વ્યાપક સંરચના Aમાં ડાબે M-તારક અને જમણે N-તારકના વર્તુળો છે; એમની અંદર અનુક્રમે M અને N છે, અને બંને તરફ વચ્ચેનો દ્વિમુખી તીર આંશિક એકરૂપતા I દર્શાવે છે.",
+          "src": "assets/lindstrom-partial-isomorphism.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "ટ્યુરિંગ મશીનનું યોજનાત્મક ચિત્ર: ડાબી સીમાથી શરૂ થતી ટેપ, એક ખાનાં સામેનો વાંચન-લેખન હેડ અને તેની સાથે જોડાયેલું સાન્ત નિયંત્રણ.",
+          "src": "assets/turing-machine.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, R",
+          "src": "assets/turing-machine-01.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-02.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₀ થી q₀: 0, 0, R; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-03.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 0, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, R; q₂ થી q₂: 1, 1, R; q₂ થી q₃: 0, 1, R; q₃ થી q₃: 0, 1, L; q₃ થી q₄: 1, 1, L; q₄ થી q₄: 1, 1, L; q₄ થી q₅: 0, 0, L; q₅ થી q₅: 1, 1, L; q₅ થી q₀: 0, 0, R",
+          "src": "assets/turing-machine-04.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₂: 1, 0, N",
+          "src": "assets/turing-machine-05.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 0, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, R; q₂ થી q₂: 1, 1, R; q₂ થી q₃: 0, 1, L; q₃ થી q₃: 1, 1, L; q₃ થી q₄: 0, 0, L; q₄ થી q₅: 1, 1, L; q₅ થી q₅: 1, 1, L; q₅ થી q₀: 0, 1, R; q₄ થી q₆: 0, 1, R; q₆ થી q₇: 0, 1, R; q₇ થી q₇: 1, 1, R; q₇ થી q₈: 0, 0, L; q₈ થી q₈: 1, 0, N",
+          "src": "assets/turing-machine-06.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₆ થી q₇: 0, 0, R; q₇ થી q₇: 0, 0, R; q₇ થી q₈: 1, 1, R; q₈ થી q₈: 1, 1, R; q₈ થી q₉: 0, ▷, L; q₉ થી q₉: 1, 1, L; q₉ થી q₁₀: 0, 0, R; q₁₀ થી q₁₁: 1, 0, L; q₁₁ થી q₁₁: 0, 0, L; q₁₁ થી q₁₂: ▷, ▷, R અથવા 1, 1, R; q₁₂ થી q₁₃: 0, 1, R; q₁₃ થી q₁₃: 0, 0, R; q₁₃ થી q₁₁: 1, 0, L; q₁₃ થી q₁₄: ▷, 0, N",
+          "src": "assets/turing-machine-07.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₀ થી h: 0, 0, N; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-08.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₀ થી h: 0, 0, N; q₁ થી r: 0, 0, N; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-09.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₃: 1, 0, L; q₃ થી q₃: 1, 1, L; q₃ થી h: ▷, ▷, R",
+          "src": "assets/turing-machine-10.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₂: 1, 0, N",
+          "src": "assets/turing-machine-11.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₃: 1, 0, L; q₃ થી q₃: 1, 1, L; q₃ થી q₄: ▷, ▷, R",
+          "src": "assets/turing-machine-12.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 0, 1, N; q₀ થી q₁: 1, 1, R; q₁ થી q₁: 1, 1, R; q₁ થી q₂: 0, 0, L; q₂ થી q₃: 1, 0, L; q₃ થી q₃: 1, 1, L; q₃ થી q₄: ▷, ▷, R; q₄ થી q₅: 1, 0, R; q₅ થી q₅: 1, 1, R; q₅ થી q₆: 0, 0, R; q₆ થી q₆: 1, 1, R; q₆ થી q₇: 0, 1, R; q₇ થી q₇: 0, 1, L; q₇ થી q₈: 1, 1, L; q₈ થી q₈: 1, 1, L; q₈ થી q₉: 0, 0, L; q₉ થી q₉: 1, 1, L; q₉ થી q₄: 0, 0, R",
+          "src": "assets/turing-machine-13.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: q₀ થી q₁: 1, 1, R; q₁ થી q₁: 0, 0, R; q₁ થી q₀: 1, 1, R",
+          "src": "assets/turing-machine-14.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: s થી h: A, A, R; h થી h: 0, 0, R; h થી s: A, A, R",
+          "src": "assets/turing-machine-15.svg"
+        },
+        {
+          "loaded": true,
+          "alt": "અવસ્થાચિત્ર: 1 થી 2: 3, 3, R; 2 થી 2: 2, 2, R; 2 થી 1: 3, 3, R",
+          "src": "assets/turing-machine-16.svg"
+        }
+      ],
+      "horizontalOverflow": false,
+      "machineTables": 1,
+      "newHeadings": [
+        {
+          "tag": "h4",
+          "id": "tur:und:int:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:enu:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:uni:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:hal:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:dec:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:rep:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:ver:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:uns:sec"
+        },
+        {
+          "tag": "h4",
+          "id": "tur:und:tra:sec"
+        }
+      ],
+      "correctionIds": [
+        "OLUN-002",
+        "OLUN-004",
+        "OLUN-005",
+        "OLUN-006",
+        "OLUN-007",
+        "OLUN-008",
+        "OLUN-009",
+        "OLUN-010",
+        "OLUN-011",
+        "OLUN-012",
+        "OLUN-013",
+        "OLUN-014",
+        "OLUN-015",
+        "OLUN-016",
+        "OLUN-017",
+        "OLUN-018",
+        "OLUN-019",
+        "OLUN-020",
+        "OLUN-021",
+        "OLUN-022",
+        "OLUN-023",
+        "OLUN-024"
+      ]
+    },
+    "console_warnings_or_errors": [],
+    "page_errors": [],
+    "screenshots": {
+      "title": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_title.png",
+        "sha256": "264fb44497b1df766a898a07dbabe18d86803f157924c8123ec4e7ceb609289e"
+      },
+      "chapter": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_chapter.png",
+        "sha256": "0842443cc8c331119ec08a49d9458867c8a852b0b3de88e0c3f32d5a4c3e7d78"
+      },
+      "variants_first": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_variants_first.png",
+        "sha256": "ef9e2e489ea03d898f4629a1f0dd5b8b7c2e25b7ee962de87ac12589dd055a1c"
+      },
+      "variants_second": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_variants_second.png",
+        "sha256": "ef9e2e489ea03d898f4629a1f0dd5b8b7c2e25b7ee962de87ac12589dd055a1c"
+      },
+      "standard_even": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_standard_even.png",
+        "sha256": "173c1c752c5af29d918b847ea3b66cc39bbf147157feb46cbe577de1e0a088a3"
+      },
+      "verification": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_verification.png",
+        "sha256": "34cd8282a270ff5e773d9323e83cc442e818012c12383a242cdf39f352ff7c53"
+      },
+      "proof_correction": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_proof_correction.png",
+        "sha256": "56dad0b08f52bc02a0e018610fc383ead4516551cb6c6d726c076be22e8fa5c6"
+      },
+      "finite_model": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_finite_model.png",
+        "sha256": "2a8d07a1c2a11423c0582ffb4f3124a8ddc1dde9512d70fc4f7a2c61c80025d2"
+      },
+      "variants_first_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_variants_first_detail.png",
+        "sha256": "9ec96c3e0fc2578400b05d6ced014a14d69efbaa0fd47ea97bf05daed63173c2"
+      },
+      "variants_second_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_variants_second_detail.png",
+        "sha256": "18267e2d7cab2a5053dd612caa756174c2636fb3278bdb83e2ed40aa4858b2bb"
+      },
+      "standard_even_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_standard_even_detail.png",
+        "sha256": "d5c6e0242aca16908f7aba585e5987d265a614da0a597de8b03125fbf249b54d"
+      },
+      "proof_correction_detail": {
+        "path": "C:\\interlanguage-task-state\\openlogic-gu-Gujr-IN\\work\\EPUB026_proof_correction_detail.png",
+        "sha256": "91a27c2d7b85b5cb7d83c075216d7aa83bf9cacf39028bde2138db0774877cab"
+      }
+    }
+  },
+  "status": "passed_runtime_pending_manual_visual_inspection"
+}

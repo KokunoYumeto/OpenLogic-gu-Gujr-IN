@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-gu-undecidability-draft-checkpoint/26",
+  "checked_at_utc": "2026-09-26T22:32:37.728791+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0264–0273; local 270-unit reader and source verification complete, publication pending",
+  "totals": {
+    "units": 10,
+    "aligned_blocks": 187,
+    "linguistic_blocks_reviewed": 131,
+    "nonlinguistic_blocks": 56,
+    "source_math_spans": 891,
+    "contextual_choices": 29,
+    "consulted_canon_passages": 17,
+    "formula_text_occurrences": 24,
+    "localized_formula_text_occurrences": 19,
+    "reverse_paraphrase_samples": 46,
+    "correction_notes": 22
+  },
+  "nonlinguistic_block_exceptions": "The 56 other blocks are TeX headers/wrappers, OLP-0264 imports, and OLP-0266 diagram-only blocks 7–12; all align in the parity receipt.",
+  "status": "passed_local_canon_semantic_parity_reader_and_exact_full_text_pdf_reproduction",
+  "public_coverage_unchanged": 260,
+  "full_corpus_complete": false,
+  "reader_qa": {
+    "receipt": "READERS_FINAL_QA_026.json",
+    "sha256": "d8f7edd8d2daa22cc38d0d869036d483da441aac88b9c4650beff856ebff86d1"
+  },
+  "full_text_qa": {
+    "receipt": "FULL_TEXT_SOURCE_QA_026.json",
+    "sha256": "e02896ba742b421f1e12c1b4e75fb4c0a0ae1279fda9d26650b2f08a70f2a953"
+  }
+}
