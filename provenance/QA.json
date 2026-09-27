@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/3",
-  "checkpoint_utc": "2026-09-27T02:32:53.259039+00:00",
+  "checkpoint_utc": "2026-09-27T07:32:17.459928+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 270,
-  "publicly_verified_release_units": 270,
-  "publicly_verified_source_checkpoint_units": 270,
+  "translated_units": 289,
+  "publicly_verified_release_units": 289,
+  "publicly_verified_source_checkpoint_units": 289,
   "total_units": 722,
-  "aligned_linguistic_blocks": 2728,
-  "source_math_spans_verified": 15533,
+  "aligned_linguistic_blocks": 2859,
+  "source_math_spans_verified": 16242,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 2728,
-    "samples": 1283,
+    "exact_block_reviews": 2859,
+    "samples": 1361,
     "independent_native_certification": false,
-    "status": "passed_for_current_270_unit_scope"
+    "status": "passed_for_current_289_noncontiguous_unit_scope_same_agent_review"
   },
   "source_corrections": {
-    "count": 223,
+    "count": 243,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -241,9 +241,29 @@
       "OLUN-021",
       "OLUN-022",
       "OLUN-023",
-      "OLUN-024"
+      "OLUN-024",
+      "OLSOL-001",
+      "OLSOL-002",
+      "OLSOL-003",
+      "OLSOL-004",
+      "OLSOL-005",
+      "OLSOL-006",
+      "OLSOL-007",
+      "OLSOL-008",
+      "OLSOL-009",
+      "OLSOL-010",
+      "OLSOL-011",
+      "OLSOL-012",
+      "OLSOL-013",
+      "OLSOL-014",
+      "OLSOL-015",
+      "OLSOL-016",
+      "OLSOL-017",
+      "OLSOL-018",
+      "OLSOL-019",
+      "OLSOL-020"
     ],
-    "status": "223_historical_and_current_keyed_disclosures_in_270_unit_reader; OLUN-001_and_OLUN-003_withdrawn"
+    "status": "243_historical_and_current_keyed_disclosures_in_289_unit_reader; OLUN-001_and_OLUN-003_withdrawn"
   },
   "html": {
     "path": "reader/undecidability.html",
@@ -258,19 +278,16 @@
     "qa_receipt": "READERS_FINAL_QA_026.json"
   },
   "pdf": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-Undecidability.pdf",
-    "bytes": 2949752,
-    "sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517",
-    "pages": 333,
+    "path": "releases/OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+    "bytes": 3083385,
+    "sha256": "67ff7f586e3c19c3d9a673ad3139b5ad9c94e36cf1e2af2a2fa34ea1cc36d6a5",
+    "pages": 349,
     "page_size": "A4",
-    "three_passes_byte_identical": true,
-    "new_pages_visually_inspected": 19,
-    "title_and_toc_visually_inspected": [
-      1,
-      11
-    ],
-    "full_text_source_exact_reproduction": true,
-    "qa_receipt": "PDF_QA_026.json"
+    "lualatex_passes": 3,
+    "new_content_pages_visually_inspected": 16,
+    "corrected_cover_visually_inspected": true,
+    "full_text_source_exact_reproduction": null,
+    "qa_receipt": "SECOND_ORDER_RELEASE_QA.json"
   },
   "batches": {
     "001": {
@@ -460,7 +477,7 @@
       "exact_block_reviews": 131
     }
   },
-  "status": "270_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "289_noncontiguous_unit_source_pdf_github_and_zenodo_checkpoint_passed; html_epub_remain_at_270; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -476,33 +493,27 @@
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/undecidability-v0.20.0",
-    "github_receipt": "PUBLICATION_RECEIPT_020.json",
-    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_026.json",
-    "zenodo_record": "https://zenodo.org/records/22985707",
-    "zenodo_doi": "10.5281/zenodo.22985707",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_020.json",
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/second-order-logic-v0.21.0",
+    "github_receipt": "PUBLICATION_RECEIPT_021.json",
+    "source_checkpoint_receipt": "SECOND_ORDER_SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_021.json",
+    "zenodo_record": "https://zenodo.org/records/22990575",
+    "zenodo_doi": "10.5281/zenodo.22990575",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_021.json",
     "artifact_order": [
-      "OpenLogic-gu-Gujr-IN-Undecidability.pdf",
-      "OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Undecidability-source.zip",
-      "OpenLogic-gu-Gujr-IN-Undecidability.tex",
-      "OpenLogic-gu-Gujr-IN-Undecidability.epub",
-      "OpenLogic-gu-Gujr-IN-Undecidability.html",
-      "SHA256SUMS-undecidability.txt",
-      "OpenLogic-gu-Gujr-IN-Undecidability-QA.json"
+      "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+      "OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+      "SHA256SUMS-second-order.txt",
+      "OpenLogic-gu-Gujr-IN-Second-Order-QA.json"
     ],
     "downloads": {
-      "OpenLogic-gu-Gujr-IN-Undecidability.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.pdf",
-      "OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Undecidability-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability-source.zip",
-      "OpenLogic-gu-Gujr-IN-Undecidability.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.tex",
-      "OpenLogic-gu-Gujr-IN-Undecidability.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.epub",
-      "OpenLogic-gu-Gujr-IN-Undecidability.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.html",
-      "SHA256SUMS-undecidability.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/SHA256SUMS-undecidability.txt",
-      "OpenLogic-gu-Gujr-IN-Undecidability-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability-QA.json"
+      "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+      "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+      "OpenLogic-gu-Gujr-IN-Second-Order-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+      "SHA256SUMS-second-order.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/SHA256SUMS-second-order.txt",
+      "OpenLogic-gu-Gujr-IN-Second-Order-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-QA.json"
     },
-    "status": "all_eight_ordered_artifacts_full_text_source_inventory_and_pdf_preview_anonymously_verified"
+    "status": "all_five_assets_source_inventory_and_part_pdf_preview_anonymously_verified"
   },
   "batch_008": {
     "draft_units": 6,
@@ -551,6 +562,12 @@
       "segment_decision_evidence": 131,
       "correction_disclosures": 22,
       "path": "provenance/UNDECIDABILITY_CHOICES_026.json"
+    },
+    "supplemental_second_order": {
+      "term_decisions": 22,
+      "path": "provenance/SECOND_ORDER_CHOICES.json",
+      "source_corrections": 20,
+      "correction_path": "provenance/SECOND_ORDER_SOURCE_CORRECTIONS.json"
     }
   },
   "batch_009": {
@@ -1074,5 +1091,25 @@
     "semantic_samples": 46,
     "render": "passed_cumulative_270_unit_html_pdf_epub_and_full_text_reproduction_qa",
     "publication": "passed_anonymous_github_and_zenodo_readback"
+  },
+  "second_order_part_pdf": {
+    "path": "releases/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+    "bytes": 332634,
+    "sha256": "899667d2a1a5c7744fe9195756b31c9c3ea66200ed2fdefbc6dd4223f032a90f",
+    "pages": 17,
+    "zenodo_preview": "https://zenodo.org/records/22990575/preview/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf"
+  },
+  "second_order_part": {
+    "units": 19,
+    "unit_range": "OLP-0322–0340",
+    "source_gap": "OLP-0274–0321",
+    "draft_receipt": "SECOND_ORDER_PART_DRAFT.json",
+    "aligned_blocks": 241,
+    "linguistic_blocks_reviewed": 131,
+    "source_math_spans": 709,
+    "glossary_markers": 252,
+    "source_correction_notes": 20,
+    "model_disclosure": "OpenAI Codex GPT-6 Sol, Ultra effort",
+    "status": "github_and_zenodo_release_anonymously_verified"
   }
 }

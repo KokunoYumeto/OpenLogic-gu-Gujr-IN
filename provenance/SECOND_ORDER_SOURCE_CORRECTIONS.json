@@ -1,0 +1,168 @@
+{
+  "schema": "openlogic-gu-second-order-source-corrections/1",
+  "assembled_at_utc": "2026-09-27T07:32:17.459928+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_unit_range": "OLP-0322–0340",
+  "corrections": [
+    {
+      "correction_id": "OLSOL-002",
+      "unit_id": "OLP-0326",
+      "segment_id": "OLP-0326-B008",
+      "source_problem": "The explanatory sentence lists values for object and function variables, omitting the relation-variable assignments defined immediately above.",
+      "target_action": "The Gujarati explanation names all three assigned kinds, with an adjacent sourcecorrection note.",
+      "status": "draft_visible_keyed_explanatory_completion_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-003",
+      "unit_id": "OLP-0326",
+      "segment_id": "OLP-0326-B017",
+      "source_problem": "The prose's reciprocal nonmembership wording states only disjointness, while the displayed biconditional requires the two relations to be complements over the whole domain.",
+      "target_action": "The Gujarati explanation states the all-domain biconditional and complement relation, with an adjacent sourcecorrection note.",
+      "status": "draft_visible_keyed_semantic_clarification_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-004",
+      "unit_id": "OLP-0329",
+      "segment_id": "OLP-0329-B009",
+      "source_problem": "The prose initially defines enumerable for an arbitrary set but its m0 and z∈M characterization requires a nonempty set; standard structures here have nonempty domains.",
+      "target_action": "The Gujarati local definition explicitly scopes the argument to a nonempty set with an adjacent note.",
+      "status": "draft_visible_keyed_domain_qualification_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-005",
+      "unit_id": "OLP-0329",
+      "segment_id": "OLP-0329-B009",
+      "source_problem": "A finite orbit under f repeats its last fixed member although the listed enumeration is stated without repetitions; the forward proof also omits f's value on the last finite member.",
+      "target_action": "The Gujarati text takes distinct orbit members and explicitly fixes the final finite member in the forward proof, with an adjacent note.",
+      "status": "draft_visible_keyed_finite_case_clarification_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-001",
+      "unit_id": "OLP-0324",
+      "segment_id": "OLP-0324-B007",
+      "source_problem": "The final formula writes its bound object variable once as \\Obj v_0 and once as unadorned v_0.",
+      "target_action": "Both occurrences visibly use the established bound-variable notation \\Obj{v_0}; the adjacent Gujarati sourcecorrection explains the departure.",
+      "status": "draft_visible_keyed_notation_correction_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-006",
+      "unit_id": "OLP-0332",
+      "segment_id": "OLP-0332-B015",
+      "source_problem": "The first two successor axioms plus full induction characterize the zero-successor reduct but do not constrain arbitrary preinterpreted +, ×, or ≤ symbols.",
+      "target_action": "The Gujarati proposition explicitly speaks of formulas defining the standard operations in the successor-only basis, with a visible adjacent note.",
+      "status": "draft_visible_keyed_scope_clarification_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-007",
+      "unit_id": "OLP-0332",
+      "segment_id": "OLP-0332-B017",
+      "source_problem": "The displayed addition formula binds w but writes u(x′)=u(x)′ in the recursion clause, leaving w unused and failing to express the required all-input recursion.",
+      "target_action": "The Gujarati displayed formula writes u(w′)=u(w)′, and the adjacent note identifies the frozen-source defect.",
+      "status": "draft_visible_keyed_formula_correction_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-008",
+      "unit_id": "OLP-0333",
+      "segment_id": "OLP-0333-B008",
+      "source_problem": "Without an effectivity condition, the set of all valid SOL sentences itself supplies a trivially sound and complete but noncomputable axiom set.",
+      "target_action": "The theorem says no effectively specified sound complete derivation system exists, with a visible adjacent note.",
+      "status": "draft_visible_keyed_effectivity_qualification_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-009",
+      "unit_id": "OLP-0333",
+      "segment_id": "OLP-0333-B009",
+      "source_problem": "In the displayed satisfaction expression the closing brace for Sat's second argument falls outside math mode, and the intended all-structures scope is implicit.",
+      "target_action": "The Gujarati formula places the brace inside math mode and explicitly says every structure, with an adjacent note.",
+      "status": "draft_visible_keyed_tex_and_scope_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-010",
+      "unit_id": "OLP-0333",
+      "segment_id": "OLP-0333-B009",
+      "source_problem": "The step from an enumeration of sentences to a first-order definable truth set leaves the Gödel coding of sentence outputs implicit.",
+      "target_action": "The Gujarati explanation identifies y as a sentence Gödel number and records that coding in an adjacent note.",
+      "status": "draft_visible_keyed_coding_clarification_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-011",
+      "unit_id": "OLP-0334",
+      "segment_id": "OLP-0334-B008",
+      "source_problem": "The compactness theorem reuses thm:sol-undecidable, already assigned to the preceding undecidability theorem.",
+      "target_action": "The Gujarati theorem has the distinct label thm:sol-not-compact, with an adjacent note.",
+      "status": "draft_visible_keyed_duplicate_label_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-012",
+      "unit_id": "OLP-0334",
+      "segment_id": "OLP-0334-B009",
+      "source_problem": "In the finite-subset proof, the claim that no A^{≥n} with n>k occurs in the full Γ is false: Γ contains every such sentence.",
+      "target_action": "The Gujarati argument bounds only the chosen finite Γ0 and handles a subset without size demands by taking k≥1, with an adjacent note.",
+      "status": "draft_visible_keyed_finite_subset_proof_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-013",
+      "unit_id": "OLP-0338",
+      "segment_id": "OLP-0338-B010",
+      "source_problem": "The no-larger-than formula requires u to be injective on the full domain, although only u restricted to X is needed to witness an injection X→Y.",
+      "target_action": "The Gujarati formula restricts the injectivity antecedent to x,y∈X, with an adjacent note.",
+      "status": "draft_visible_keyed_formula_scope_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-014",
+      "unit_id": "OLP-0338",
+      "segment_id": "OLP-0338-B012",
+      "source_problem": "The equinumerosity formula requires u to be globally injective. If X is a proper subset of an infinite domain M and Y=M while X≈Y, a bijection X→Y cannot extend to a globally injective u:M→M.",
+      "target_action": "The Gujarati formula requires injectivity only for arguments in X, with an adjacent note.",
+      "status": "draft_visible_keyed_equinumerosity_formula_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-015",
+      "unit_id": "OLP-0339",
+      "segment_id": "OLP-0339-B007",
+      "source_problem": "Inf(X) omits closure u[X]⊆X and a final closing parenthesis. A two-element domain with singleton X and a swap permutation satisfies the source formula although X is finite.",
+      "target_action": "The Gujarati formula adds closure on X, the closing parenthesis and an adjacent counterexample note.",
+      "status": "draft_visible_keyed_inf_formula_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-016",
+      "unit_id": "OLP-0339",
+      "segment_id": "OLP-0339-B008",
+      "source_problem": "Count(X) concludes X=Y for every u-closed Y containing z; choosing Y as the whole domain forces X to be the whole domain, contrary to the stated subset characterization. The original also excludes the empty subset.",
+      "target_action": "The Gujarati formula concludes X⊆Y and adds an empty-set disjunct, with an adjacent note.",
+      "status": "draft_visible_keyed_count_formula_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-017",
+      "unit_id": "OLP-0339",
+      "segment_id": "OLP-0339-B009",
+      "source_problem": "The proposed Aleph_1 criterion says every subset Y⊆X is finite or Aleph_0, yet Y=X and X is claimed uncountable; it is contradictory. The macro subscript is also inconsistent with Aleph_0.",
+      "target_action": "The Gujarati text characterizes minimal uncountable size by requiring every uncountable subset of X to be equinumerous with X, and normalizes the macro subscript, with an adjacent note.",
+      "status": "draft_visible_keyed_aleph1_formula_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-018",
+      "unit_id": "OLP-0340",
+      "segment_id": "OLP-0340-B010",
+      "source_problem": "The second conjunct of Pow(Y,R,X) lacks a closing parenthesis for the implication beginning Y(x), leaving the displayed formula's round delimiters unbalanced.",
+      "target_action": "The Gujarati display adds the missing closing parenthesis and an adjacent note.",
+      "status": "draft_visible_keyed_pow_parenthesis_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-019",
+      "unit_id": "OLP-0340",
+      "segment_id": "OLP-0340-B015",
+      "source_problem": "The proof's final line mentions subsets of s(Z), although Z is not the fixed countably infinite set; the intended set is s(X). It also contains an English typo.",
+      "target_action": "The Gujarati proof uses s(X), with an adjacent note.",
+      "status": "draft_visible_keyed_proof_reference_repair_reader_qa_pending"
+    },
+    {
+      "correction_id": "OLSOL-020",
+      "unit_id": "OLP-0340",
+      "segment_id": "OLP-0340-B016",
+      "source_problem": "The claimed domain-continuum formula only requires a power-set code set Y to lie in the range of an injective domain self-map. The identity map makes the range condition trivial; duplicate codes also remain possible, so domains larger than the continuum can satisfy it.",
+      "target_action": "The Gujarati formula requires Cont(Y) and requires Y to equal the range of an injective total u:Domain(M)→Domain(M), with an adjacent note.",
+      "status": "draft_visible_keyed_domain_cardinality_formula_repair_reader_qa_pending"
+    }
+  ]
+}

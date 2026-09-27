@@ -1,0 +1,267 @@
+{
+  "schema": "openlogic-gu-second-order-terminology-decisions/1",
+  "assembled_at_utc": "2026-09-27T07:32:17.459928+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_unit_range": "OLP-0322–0340",
+  "decisions": [
+    {
+      "source_term": "second-order logic",
+      "target_term": "દ્વિતીય-ક્રમ તર્કશાસ્ત્ર",
+      "source_segment_id": "OLP-0322-B004",
+      "edition_term_decision_id": "GU-T159",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the edition-wide choice already published in OLP-0177; the checked passage supports precise symbolic prose, not direct attestation of the full specialist name.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "satisfaction relative to a variable assignment",
+      "target_term": "ચલ-નિયુક્તિ સાપેક્ષ સંતોષ",
+      "source_segment_id": "OLP-0324-B006",
+      "edition_term_decision_id": "GU-T150",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the earlier contextual choice; the checked passages support logical terminology and symbolic exposition rather than directly attesting the full specialist compound.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "denumerable",
+      "target_term": "ગણનીય",
+      "source_segment_id": "OLP-0325-B007",
+      "edition_term_decision_id": "GU-T258",
+      "consulted_passage_ids": [
+        "GU-P058",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the edition's established countability token and technical choice; the checked passages support set language and symbolic exposition rather than directly attesting every specialist contrast.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "x-variant",
+      "target_term": "x-રૂપાંતર",
+      "source_segment_id": "OLP-0326-B010",
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "evidence_scope": "Descriptive contextual compound for an assignment differing at most on x; the checked canon passage supports symbolic precision, not direct attestation of this whole specialist label.",
+      "status": "provisional_descriptive_pending_specialist_usage_check"
+    },
+    {
+      "source_term": "variable assignment / satisfaction",
+      "target_term": "ચલ-નિયુક્તિ / સંતોષ",
+      "source_segment_id": "OLP-0326-B006",
+      "edition_term_decision_ids": [
+        "GU-T098",
+        "GU-T150"
+      ],
+      "consulted_passage_ids": [
+        "GU-P067",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses established edition choices; consulted passages support logic and symbolic terminology but do not directly attest the complete specialized compound.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "definable",
+      "target_term": "વ્યાખ્યેય",
+      "source_segment_id": "OLP-0328-B006",
+      "edition_term_decision_id": "GU-T154",
+      "consulted_passage_ids": [
+        "GU-P058",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the established contextual specialist choice; checked passages support set/symbolic language, not direct attestation of the whole definition.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "transitive closure",
+      "target_term": "પરંપરિત સંવરણ",
+      "source_segment_id": "OLP-0328-B009",
+      "edition_term_decision_id": "GU-T040",
+      "consulted_passage_ids": [
+        "GU-P058",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the edition's earlier provisional contextual choice; checked passages attest component set/symbolic style rather than the complete specialist phrase.",
+      "status": "reused_provisional_with_attestation_limits"
+    },
+    {
+      "source_term": "enumerable / denumerable",
+      "target_term": "પરિગણનીય / ગણનીય",
+      "source_segment_id": "OLP-0329-B009",
+      "edition_term_decision_id": "GU-T258",
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P050"
+      ],
+      "evidence_scope": "GU-P046 and GU-P050 directly attest ગણનીય for countably infinite sets. The edition uses contextual પરિગણનીય for the source's finite-or-countable enumerable distinction; that full specialist contrast remains provisional.",
+      "status": "reused_contextual_with_explicit_scope_distinction"
+    },
+    {
+      "source_term": "axiomatizable / decidable",
+      "target_term": "સ્વયંસિદ્ધીકરણીય / નિર્ણેય",
+      "source_segment_id": "OLP-0331-B006",
+      "edition_term_decision_id": "GU-T136",
+      "consulted_passage_ids": [
+        "GU-P074"
+      ],
+      "evidence_scope": "Reuses the edition's contextual technical pairing; GU-P074 supports formal systems and incompleteness but does not directly attest the complete pairing.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "computably enumerable",
+      "target_term": "સંગણકીય રીતે પરિગણનીય",
+      "source_segment_id": "OLP-0331-B006",
+      "edition_term_decision_id": "GU-T219",
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P074"
+      ],
+      "evidence_scope": "Reuses the edition's specialist choice; GU-P046 directly attests ગણનીય for a countably infinite set, not the complete computable-enumeration term.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "Compactness / Löwenheim–Skolem theorem",
+      "target_term": "સઘનતા / લેવેનહાઇમ--સ્કોલેમ પ્રમેય",
+      "source_segment_id": "OLP-0331-B007",
+      "edition_term_decision_id": "GU-T196",
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the established edition terms; the checked passages support countability and exact symbolic prose, not direct attestation of the complete theorem name.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "axiom schema of induction / second-order induction axiom",
+      "target_term": "આગમનનું સ્વયંસિદ્ધિ-પ્રરૂપ / દ્વિતીય-ક્રમ આગમનનું સ્વયંસિદ્ધિ",
+      "source_segment_id": "OLP-0332-B006",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P074"
+      ],
+      "evidence_scope": "GU-P057 attests arithmetic operations and axiomatic algebra; GU-P074 attests formal systems. Neither directly attests the whole induction-schema specialist phrase, so the edition's descriptive compound remains provisional.",
+      "status": "provisional_descriptive_pending_specialist_usage_check"
+    },
+    {
+      "source_term": "definable in second-order arithmetic from successor",
+      "target_term": "અનુગામી-માત્ર પાયામાં વ્યાખ્યાયિત",
+      "source_segment_id": "OLP-0332-B015",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P077"
+      ],
+      "evidence_scope": "This clarifies mathematical scope of the source proposition: operations are introduced by formulas over zero and successor, not fixed as arbitrary preinterpreted symbols by two axioms. Canon supports component arithmetic and symbolic language, not the full specialist construction.",
+      "status": "provisional_descriptive_with_keyed_source_clarification"
+    },
+    {
+      "source_term": "sound and complete effective derivation system",
+      "target_term": "અસરકારક રીતે આપેલું યથાર્થ અને પૂર્ણ નિષ્પત્તિ-તંત્ર",
+      "source_segment_id": "OLP-0333-B008",
+      "consulted_passage_ids": [
+        "GU-P073",
+        "GU-P074"
+      ],
+      "evidence_scope": "The effectivity qualification is required by the mathematical claim and the proof's computable-enumeration contradiction; the checked Gujarati passages support formal system/proof vocabulary but not direct attestation of the whole compound.",
+      "status": "provisional_descriptive_with_keyed_source_qualification"
+    },
+    {
+      "source_term": "compactness / finitely satisfiable",
+      "target_term": "સઘનતા / સાન્ત રીતે સંતોષ્ય",
+      "source_segment_id": "OLP-0334-B006",
+      "edition_term_decision_id": "GU-T196",
+      "consulted_passage_ids": [
+        "GU-P067",
+        "GU-P074"
+      ],
+      "evidence_scope": "Reuses the edition's compactness term; checked passages support entailment and formal-system components, not direct attestation of the complete specialist pairing.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "Downward / Upward Löwenheim–Skolem Theorem",
+      "target_term": "અધોગામી / ઊર્ધ્વગામી લેવેનહાઇમ--સ્કોલેમ પ્રમેય",
+      "source_segment_id": "OLP-0335-B006",
+      "edition_term_decision_id": "GU-T196",
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P050",
+        "GU-P074"
+      ],
+      "evidence_scope": "Reuses the edition's theorem name with directional modifiers; canon passages support countability and proof terminology, not the full specialist name.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "enumerable / denumerable / nonenumerable",
+      "target_term": "પરિગણનીય / ગણનીય / અપરિગણનીય",
+      "source_segment_id": "OLP-0335-B008",
+      "edition_term_decision_id": "GU-T258",
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P050"
+      ],
+      "evidence_scope": "GU-P046/P050 directly attest ગણનીય for countably infinite sets. The edition's finite-or-countable પરિગણનીય and its negation અપરિગણનીય are contextual extensions preserved by the glossary markers.",
+      "status": "reused_contextual_with_explicit_scope_distinction"
+    },
+    {
+      "source_term": "set theory / power set",
+      "target_term": "ગણસિદ્ધાંત / શક્તિસમૂહ",
+      "source_segment_id": "OLP-0336-B005",
+      "consulted_passage_ids": [
+        "GU-P058"
+      ],
+      "evidence_scope": "Reuses the edition's set-theory vocabulary; checked Gujarati set passage supports the components, not all second-order coding claims.",
+      "status": "reused_contextual_with_attestation_limits"
+    },
+    {
+      "source_term": "continuum / cardinality of continuum",
+      "target_term": "સાતત્યક / સાતત્યકનું કાર્ડિનલ કદ",
+      "source_segment_id": "OLP-0340-B013",
+      "consulted_passage_ids": [
+        "GU-P050",
+        "GU-P058"
+      ],
+      "evidence_scope": "The existing Gujarati edition directly uses સાતત્યક for the reals; canon passages support set and size language, not the complete compound.",
+      "status": "reused_edition_term_with_attestation_limits",
+      "prior_draft_reference": "important-sets.tex"
+    },
+    {
+      "source_term": "equinumerous / no larger than",
+      "target_term": "સામ્ય / મોટો નથી",
+      "source_segment_id": "OLP-0338-B011",
+      "consulted_passage_ids": [
+        "GU-P058",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the existing edition's Schröder–Bernstein vocabulary and exact cardeq/cardle notation; both formula claims have visible scope corrections.",
+      "status": "reused_edition_term_with_keyed_formula_corrections",
+      "prior_draft_reference": "schroder-bernstein.tex"
+    },
+    {
+      "source_term": "enumerable / denumerable / nonenumerable",
+      "target_term": "પરિગણનીય / ગણનીય / અપરિગણનીય",
+      "source_segment_id": "OLP-0339-B006",
+      "consulted_passage_ids": [
+        "GU-P046",
+        "GU-P050"
+      ],
+      "evidence_scope": "GU-P046/P050 attest ગણનીય for countably infinite sets; finite-or-countable પરિગણનીય and its negation are contextual edition terms. The subset Count formula now includes the empty set.",
+      "status": "reused_contextual_with_explicit_scope_distinction"
+    },
+    {
+      "source_term": "Cantor's Theorem / Continuum Hypothesis",
+      "target_term": "કૅન્ટૉરનો પ્રમેય / સાતત્યક પરિકલ્પના",
+      "source_segment_id": "OLP-0340-B017",
+      "consulted_passage_ids": [
+        "GU-P058",
+        "GU-P077"
+      ],
+      "evidence_scope": "Reuses the edition's Gujarati spelling કૅન્ટૉર and contextual mathematical wording; the checked canon passages do not directly attest the complete Continuum Hypothesis phrase.",
+      "status": "reused_edition_name_and_provisional_compound",
+      "prior_draft_reference": "schroder-bernstein.tex"
+    }
+  ],
+  "review_limitation": "Contextual choices checked against frozen source and consulted Gujarati passages by the same agent; no independent specialist certification."
+}

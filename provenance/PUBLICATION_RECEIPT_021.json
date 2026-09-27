@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-gu-github-publication/21",
+  "verified_at_utc": "2026-09-27T07:24:18.101104+00:00",
+  "release_url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/second-order-logic-v0.21.0",
+  "tag": "second-order-logic-v0.21.0",
+  "commit": "3569518dc5b4614053fd4a94d27a273cac9ccd4f",
+  "title": "ઓપન લોજિક — ગુજરાતી: દ્વિતીય-ક્રમ તર્કશાસ્ત્ર, 289/722 એકમો",
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "coverage": {
+    "previous_public": 270,
+    "new_units": 19,
+    "new_public_after_verification": 289,
+    "noncontiguous_gap": "OLP-0274–0321",
+    "total": 722
+  },
+  "artifact_order": [
+    "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+    "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+    "OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+    "SHA256SUMS-second-order.txt",
+    "OpenLogic-gu-Gujr-IN-Second-Order-QA.json"
+  ],
+  "asset_creation_times_utc": {
+    "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf": "2026-09-27T07:22:49Z",
+    "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf": "2026-09-27T07:22:44Z",
+    "OpenLogic-gu-Gujr-IN-Second-Order-QA.json": "2026-09-27T07:23:11Z",
+    "OpenLogic-gu-Gujr-IN-Second-Order-source.zip": "2026-09-27T07:22:55Z",
+    "SHA256SUMS-second-order.txt": "2026-09-27T07:23:06Z"
+  },
+  "artifacts": [
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+      "bytes": 332634,
+      "sha256": "899667d2a1a5c7744fe9195756b31c9c3ea66200ed2fdefbc6dd4223f032a90f",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+      "bytes": 3083385,
+      "sha256": "67ff7f586e3c19c3d9a673ad3139b5ad9c94e36cf1e2af2a2fa34ea1cc36d6a5",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+      "bytes": 54214649,
+      "sha256": "f651b19a227b97c001957a3afe5d07b0088677d03bf0e8e0ff5dc9e056e34ab9",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "SHA256SUMS-second-order.txt",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/SHA256SUMS-second-order.txt",
+      "bytes": 443,
+      "sha256": "f2b1c9f617adfbc08a33f0926bc00a571545290ac7e28ab905b8b5c3f8eddc8a",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-QA.json",
+      "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/second-order-logic-v0.21.0/OpenLogic-gu-Gujr-IN-Second-Order-QA.json",
+      "bytes": 2231,
+      "sha256": "c7642d9290be8a3c9d6da58a8526a4463dd95a21cf92500d201f788d3bcaea3a",
+      "anonymous_verified": true
+    }
+  ],
+  "source_inventory": {
+    "archive_entries": 1646,
+    "inventory_entries": 1644,
+    "all_filename_size_sha256_entries_verified": true,
+    "part_and_cumulative_pdfs_match_direct_downloads": true
+  },
+  "status": "passed_anonymous_release_order_filename_size_sha256_and_source_inventory_readback"
+}

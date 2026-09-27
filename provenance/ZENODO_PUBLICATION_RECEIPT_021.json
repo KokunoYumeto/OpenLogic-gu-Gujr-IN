@@ -1,0 +1,97 @@
+{
+  "schema": "openlogic-gu-zenodo-anonymous-receipt/21",
+  "verified_at_utc": "2026-09-27T07:28:23.115090+00:00",
+  "record_id": 22990575,
+  "record_url": "https://zenodo.org/records/22990575",
+  "doi": "10.5281/zenodo.22990575",
+  "conceptrecid": "22308101",
+  "conceptdoi": "10.5281/zenodo.22308101",
+  "title": "ઓપન લોજિક — ગુજરાતી (gu-Gujr-IN): દ્વિતીય-ક્રમ તર્કશાસ્ત્રનો ભાગ, આવૃત્તિ v0.21.0",
+  "version": "second-order-logic-v0.21.0",
+  "access_right": "open",
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "review_order": [
+    "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+    "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+    "OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+    "SHA256SUMS-second-order.txt",
+    "OpenLogic-gu-Gujr-IN-Second-Order-QA.json"
+  ],
+  "zenodo_api_file_order": [
+    "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+    "OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+    "SHA256SUMS-second-order.txt",
+    "OpenLogic-gu-Gujr-IN-Second-Order-QA.json",
+    "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf"
+  ],
+  "artifacts": [
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+      "role": "human_readable_17_page_part_pdf_preview",
+      "url": "https://zenodo.org/api/records/22990575/files/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf/content",
+      "bytes": 332634,
+      "sha256": "899667d2a1a5c7744fe9195756b31c9c3ea66200ed2fdefbc6dd4223f032a90f",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+      "role": "349_page_noncontiguous_cumulative_pdf",
+      "url": "https://zenodo.org/api/records/22990575/files/OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf/content",
+      "bytes": 3083385,
+      "sha256": "67ff7f586e3c19c3d9a673ad3139b5ad9c94e36cf1e2af2a2fa34ea1cc36d6a5",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-source.zip",
+      "role": "complete_modular_source_and_build_inputs_zip",
+      "url": "https://zenodo.org/api/records/22990575/files/OpenLogic-gu-Gujr-IN-Second-Order-source.zip/content",
+      "bytes": 54214649,
+      "sha256": "f651b19a227b97c001957a3afe5d07b0088677d03bf0e8e0ff5dc9e056e34ab9",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "SHA256SUMS-second-order.txt",
+      "role": "sha256_manifest",
+      "url": "https://zenodo.org/api/records/22990575/files/SHA256SUMS-second-order.txt/content",
+      "bytes": 443,
+      "sha256": "f2b1c9f617adfbc08a33f0926bc00a571545290ac7e28ab905b8b5c3f8eddc8a",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-QA.json",
+      "role": "machine_readable_qa",
+      "url": "https://zenodo.org/api/records/22990575/files/OpenLogic-gu-Gujr-IN-Second-Order-QA.json/content",
+      "bytes": 2231,
+      "sha256": "c7642d9290be8a3c9d6da58a8526a4463dd95a21cf92500d201f788d3bcaea3a",
+      "anonymous_verified": true
+    }
+  ],
+  "source_inventory": {
+    "archive_entries": 1646,
+    "inventory_entries": 1644,
+    "all_filename_size_sha256_entries_verified": true,
+    "part_and_cumulative_pdfs_match_direct_downloads": true
+  },
+  "preview": {
+    "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+    "url": "https://zenodo.org/records/22990575/preview/OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+    "uploaded_first": true,
+    "record_page_preview_link_verified": true,
+    "preview_page_anonymously_verified": true
+  },
+  "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/second-order-logic-v0.21.0",
+  "coverage": {
+    "previous_public": 270,
+    "new_units": 19,
+    "new_public_after_verification": 289,
+    "noncontiguous_gap": "OLP-0274–0321",
+    "total": 722
+  },
+  "lineage": {
+    "conceptrecid": "22308101",
+    "previous_record": "https://zenodo.org/records/22985707",
+    "previous_doi": "10.5281/zenodo.22985707",
+    "status": "new_version_in_existing_concept"
+  },
+  "status": "passed_all_five_files_part_pdf_preview_and_source_inventory_readback"
+}
