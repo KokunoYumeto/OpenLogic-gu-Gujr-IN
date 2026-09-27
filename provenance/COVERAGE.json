@@ -3,12 +3,12 @@
   "total": 722,
   "translated": 270,
   "working_scope": "અનિર્ણેયતા પ્રકરણ સુધીનું સંચિત ગુજરાતી ભાષાંતર, OLP-0004–0273",
-  "working_status": "૨૭૦ એકમોના HTML/PDF/EPUB, પૂર્ણ-લખાણની ચોક્કસ PDF પુનઃરચના અને જાહેર સ્રોત-ચેકપોઇન્ટનું અનામી પાછું-વાંચન પસાર; સંચિત પ્રકાશન બાકી",
+  "working_status": "૨૭૦ એકમોના સ્રોત, HTML/MathML, EPUB, ૩૩૩ પાનાંનો PDF, પૂર્ણ-લખાણ અને GitHub/Zenodoની આઠ ફાઇલો તથા PDF પૂર્વદર્શનનું અનામી પાછું-વાંચન પસાર; સંપૂર્ણ ૭૨૨ એકમોની આવૃત્તિ હજી ચાલુ છે",
   "public_release": {
-    "tag": "turing-machines-v0.19.0",
-    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/turing-machines-v0.19.0",
-    "translated": 260,
-    "scope": "ટ્યુરિંગ મશીનો અને તેમની સંગણનાઓના પ્રથમ પૂર્ણ પ્રકરણ સુધીની સંચિત પ્રકાશિત આવૃત્તિ, OLP-0004–0263"
+    "tag": "undecidability-v0.20.0",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/undecidability-v0.20.0",
+    "translated": 270,
+    "scope": "અનિર્ણેયતા પ્રકરણ સુધીની સંચિત પ્રકાશિત આવૃત્તિ, OLP-0004–0273"
   },
   "public_source_checkpoint": {
     "commit": "72d28a582c67a4efb92c19516d06e7a58f765b8b",
@@ -1859,70 +1859,70 @@
       "unit_id": "OLP-0264",
       "source_path": "content/turing-machines/undecidability/undecidability.tex",
       "source_sha256": "99eca564cdccc46d4c9bf724df75ab3f206d7c9dccc66c7df7eb1fc4d20120ae",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "3f754ab5f8925204a91b5b1ef6f1c777ebceb30d098af205a3ee392490288996"
     },
     {
       "unit_id": "OLP-0265",
       "source_path": "content/turing-machines/undecidability/introduction.tex",
       "source_sha256": "93d2253ac6e586e10383a07e5851584833964c1fbcffaedef10a806a09023334",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "52e351d132450e546bcea04caae94dfdbe5ef5fc711c767c46eb7ba4c4843950"
     },
     {
       "unit_id": "OLP-0266",
       "source_path": "content/turing-machines/undecidability/enumerating-tms.tex",
       "source_sha256": "4c8ce821f6a0585dcd5a20f4d7d1082b439c2a21b1450cc967155a5a548f62c1",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "47556a31b44b6150c82cd76418635877a2ebdc6edef56b4b8b55a89ca76543bc"
     },
     {
       "unit_id": "OLP-0267",
       "source_path": "content/turing-machines/undecidability/universal-tm.tex",
       "source_sha256": "aa4bdd1cf46621152e74cecfe49f34398c6e9f29ac92473bc2835c7acfcf9ed6",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "fe552fe9296a9b7f521721eb4ef9bdd5cd3fb7ac0f2017a21d379c85cb12886e"
     },
     {
       "unit_id": "OLP-0268",
       "source_path": "content/turing-machines/undecidability/halting-problem.tex",
       "source_sha256": "0ddd299c7af03bdd5bb5b0e8d723caa0d1347ba41977e52429f5d43d7850be71",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "29553801885aee34eef089c8efc111af0f79bc272112d56ac096fac267c4bf10"
     },
     {
       "unit_id": "OLP-0269",
       "source_path": "content/turing-machines/undecidability/decision-problem.tex",
       "source_sha256": "e55cc5610483e274125f4d5caa00965ecee3b77e819218f7cb6f59e879e9bdd3",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "b8323db81b22049f90eeac15fc4797ed127f5970cfc2f89dcf4375849ffa79f3"
     },
     {
       "unit_id": "OLP-0270",
       "source_path": "content/turing-machines/undecidability/representing-tms.tex",
       "source_sha256": "9b07ae3b7dc8802daae69390c7c6ca17b1550a0c99b8d38a16732406b28a58c5",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "4fd1ca58eec7a22b65409038adb984c28a1ebd0ecd1abe1890b3395f582ec833"
     },
     {
       "unit_id": "OLP-0271",
       "source_path": "content/turing-machines/undecidability/verification.tex",
       "source_sha256": "4d63cccc4113d567d9f0c874bc0690fa99330705b9a840a344a20ebdcd8a2660",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "9d287e6115bb9f0b500dbffb3a088fd359de4840a69c638e6da244c4ee4a45b0"
     },
     {
       "unit_id": "OLP-0272",
       "source_path": "content/turing-machines/undecidability/unsolvability-decision-problem.tex",
       "source_sha256": "c609e9a9a9dce039d6ef7063d2e604269790462b6c226eec82329128873eab6e",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "0884e1ca3cc12a3459ecc40e62e5c2cae06089e6039d5e03c204d44902ce94ad"
     },
     {
       "unit_id": "OLP-0273",
       "source_path": "content/turing-machines/undecidability/trakhtenbrot.tex",
       "source_sha256": "bd1a1c362c23d954d78610dbb7dcde85e7a3aff378b80eb51607c26cd718e802",
-      "status": "translated_cumulative_artifact_local_qa_passed_publication_pending",
+      "status": "translated_cumulative_artifact_release_qa_passed",
       "translation_sha256": "333b5e1c1457542ecc2155ea76701b565632c5a44bbd3d4b41bb251431aeffcf"
     },
     {

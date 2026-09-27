@@ -1,0 +1,127 @@
+{
+  "schema": "openlogic-gu-zenodo-anonymous-receipt/20",
+  "verified_at_utc": "2026-09-27T02:29:57.037999+00:00",
+  "record_id": 22985707,
+  "record_url": "https://zenodo.org/records/22985707",
+  "doi": "10.5281/zenodo.22985707",
+  "conceptrecid": "22308101",
+  "conceptdoi": "10.5281/zenodo.22308101",
+  "title": "ઓપન લોજિક — ગુજરાતી (gu-Gujr-IN): અનિર્ણેયતા સુધીની સંચિત આવૃત્તિ v0.20.0",
+  "version": "undecidability-v0.20.0",
+  "access_right": "open",
+  "auth": "Anonymous requests session with trust_env disabled; no token loaded or authorization headers",
+  "review_order": [
+    "OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+    "OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
+    "OpenLogic-gu-Gujr-IN-Undecidability-source.zip",
+    "OpenLogic-gu-Gujr-IN-Undecidability.tex",
+    "OpenLogic-gu-Gujr-IN-Undecidability.epub",
+    "OpenLogic-gu-Gujr-IN-Undecidability.html",
+    "SHA256SUMS-undecidability.txt",
+    "OpenLogic-gu-Gujr-IN-Undecidability-QA.json"
+  ],
+  "zenodo_api_file_order": [
+    "OpenLogic-gu-Gujr-IN-Undecidability.html",
+    "OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+    "OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
+    "OpenLogic-gu-Gujr-IN-Undecidability-source.zip",
+    "OpenLogic-gu-Gujr-IN-Undecidability.epub",
+    "OpenLogic-gu-Gujr-IN-Undecidability.tex",
+    "OpenLogic-gu-Gujr-IN-Undecidability-QA.json",
+    "SHA256SUMS-undecidability.txt"
+  ],
+  "artifacts": [
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+      "role": "human_readable_pdf_preview",
+      "url": "https://zenodo.org/api/records/22985707/files/OpenLogic-gu-Gujr-IN-Undecidability.pdf/content",
+      "bytes": 2949752,
+      "sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
+      "role": "complete_cumulative_full_text_latex",
+      "url": "https://zenodo.org/api/records/22985707/files/OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex/content",
+      "bytes": 2100224,
+      "sha256": "64a490f20eab090f7e0a09ceb187bdcf3c35d0292eaff933c86f9570e789ef1c",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Undecidability-source.zip",
+      "role": "complete_modular_source_zip",
+      "url": "https://zenodo.org/api/records/22985707/files/OpenLogic-gu-Gujr-IN-Undecidability-source.zip/content",
+      "bytes": 50923029,
+      "sha256": "6690de8135ec67733c6294d86607fd8a9cbbc27dddcd5c7fe544b9f614cd01b3",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Undecidability.tex",
+      "role": "thin_build_master_latex_requiring_source_zip",
+      "url": "https://zenodo.org/api/records/22985707/files/OpenLogic-gu-Gujr-IN-Undecidability.tex/content",
+      "bytes": 109,
+      "sha256": "270eae753beb2580f58bad73f4268ad35024a9639d37b27de2b0501ec73f50c5",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Undecidability.epub",
+      "role": "reflowable_epub",
+      "url": "https://zenodo.org/api/records/22985707/files/OpenLogic-gu-Gujr-IN-Undecidability.epub/content",
+      "bytes": 756874,
+      "sha256": "d250b6a61994a55e2f50081dbbb2a6e5d19c9f9123fc9c588f8c666bcf29b9a9",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Undecidability.html",
+      "role": "offline_html_mathml_reader",
+      "url": "https://zenodo.org/api/records/22985707/files/OpenLogic-gu-Gujr-IN-Undecidability.html/content",
+      "bytes": 6774221,
+      "sha256": "8d0220721eea223c02b6e1dd6ca5857f2afbb414f116e222c73407a162a5ec08",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "SHA256SUMS-undecidability.txt",
+      "role": "sha256_manifest",
+      "url": "https://zenodo.org/api/records/22985707/files/SHA256SUMS-undecidability.txt/content",
+      "bytes": 765,
+      "sha256": "80003adbbae56bed50d1a9a26d535bfe137b31aff3f92a105fe5787144f4a249",
+      "anonymous_verified": true
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Undecidability-QA.json",
+      "role": "machine_readable_qa",
+      "url": "https://zenodo.org/api/records/22985707/files/OpenLogic-gu-Gujr-IN-Undecidability-QA.json/content",
+      "bytes": 2151,
+      "sha256": "231e86341750f6b8d835f6793285ef826a7934643cf862b09fd203b5c2f46ffd",
+      "anonymous_verified": true
+    }
+  ],
+  "source_inventory": {
+    "archive_entries": 1613,
+    "inventory_entries": 1612,
+    "all_filename_size_sha256_entries_verified": true,
+    "full_text_matches_direct_download": true,
+    "thin_master_matches_direct_download": true
+  },
+  "preview": {
+    "filename": "OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+    "url": "https://zenodo.org/records/22985707/preview/OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+    "only_pdf_in_record": true,
+    "uploaded_first": true,
+    "record_page_preview_link_verified": true,
+    "preview_page_anonymously_verified": true
+  },
+  "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/undecidability-v0.20.0",
+  "coverage": {
+    "translated": 270,
+    "total": 722,
+    "complete_edition": false
+  },
+  "lineage": {
+    "conceptrecid": "22308101",
+    "previous_record": "https://zenodo.org/records/22970545",
+    "previous_doi": "10.5281/zenodo.22970545",
+    "status": "new_version_in_existing_concept"
+  },
+  "status": "passed_all_eight_files_preview_full_text_and_source_inventory_readback"
+}

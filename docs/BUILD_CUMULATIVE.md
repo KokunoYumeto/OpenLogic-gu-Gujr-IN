@@ -1,6 +1,6 @@
 # સંચિત ગુજરાતી આવૃત્તિ કેવી રીતે બનાવવી
 
-OLP-0004–0273ના સ્થાનિક 270/722 એકમો માટે સંગ્રહની મુખ્ય નિર્દેશિકામાંથી આદેશો ચલાવો:
+OLP-0004–0273ના હાલના 270/722 એકમો માટે સંગ્રહની મુખ્ય નિર્દેશિકામાંથી આદેશો ચલાવો:
 
 ```powershell
 python tools/prepare_undecidability.py
@@ -9,7 +9,7 @@ python tools/build_undecidability_html.py
 python tools/build_undecidability_epub.py
 ```
 
-HTML `reader/undecidability.html`, PDF `build/gu-undecidability.pdf` અને EPUB `releases/OpenLogic-gu-Gujr-IN-Undecidability.epub`માં મળે છે. સીધી પૂર્ણ-લખાણ TeX `releases/OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex`ને સંપૂર્ણ સ્રોત ZIP સાથે `-InputFile releases\OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex` આપીને નિયંત્રિત TeX બિલ્ડમાં વાપરો. છેલ્લાં ત્રણ પાસમાં સ્વીકૃત 333-પાનાંના PDFના ચોક્કસ બાઇટ્સ ફરી મળ્યા. [પૂર્ણ સ્રોતની તપાસ](../provenance/FULL_TEXT_SOURCE_QA_026.json), [સંચિત ગુણવત્તા નોંધ](../provenance/CUMULATIVE_QA_026.json) અને [અનિર્ણેયતાની સમીક્ષા](UNDECIDABILITY_REVIEW.gu.md) જુઓ. જાહેર 270-એકમની આવૃત્તિનું અનામી પાછું-વાંચન બાકી છે.
+HTML `reader/undecidability.html`, PDF `build/gu-undecidability.pdf` અને EPUB `releases/OpenLogic-gu-Gujr-IN-Undecidability.epub`માં મળે છે. સીધી પૂર્ણ-લખાણ TeX `releases/OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex`ને સંપૂર્ણ સ્રોત ZIP સાથે `-InputFile releases\OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex` આપીને નિયંત્રિત TeX બિલ્ડમાં વાપરો. છેલ્લાં ત્રણ પાસમાં સ્વીકૃત 333-પાનાંના PDFના ચોક્કસ બાઇટ્સ ફરી મળ્યા. [પૂર્ણ સ્રોતની તપાસ](../provenance/FULL_TEXT_SOURCE_QA_026.json), [સંચિત ગુણવત્તા નોંધ](../provenance/CUMULATIVE_QA_026.json), [અનિર્ણેયતાની સમીક્ષા](UNDECIDABILITY_REVIEW.gu.md), [GitHub આવૃત્તિ](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/undecidability-v0.20.0) અને [Zenodo DOI](https://doi.org/10.5281/zenodo.22985707) જુઓ. આઠેય પ્રકાશિત ફાઇલો અને PDF પૂર્વદર્શન અનામી રીતે ચકાસ્યાં છે.
 
 ## અગાઉ પ્રકાશિત ટ્યુરિંગ મશીનોની આવૃત્તિ
 

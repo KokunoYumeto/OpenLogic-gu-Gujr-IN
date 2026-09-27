@@ -1,23 +1,23 @@
 {
   "schema": "openlogic-gu-qa/3",
-  "checkpoint_utc": "2026-09-26T03:17:21.465145+00:00",
+  "checkpoint_utc": "2026-09-27T02:32:53.259039+00:00",
   "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
   "source_units_verified": 722,
-  "translated_units": 260,
-  "publicly_verified_release_units": 260,
-  "publicly_verified_source_checkpoint_units": 260,
+  "translated_units": 270,
+  "publicly_verified_release_units": 270,
+  "publicly_verified_source_checkpoint_units": 270,
   "total_units": 722,
-  "aligned_linguistic_blocks": 2597,
-  "source_math_spans_verified": 14642,
+  "aligned_linguistic_blocks": 2728,
+  "source_math_spans_verified": 15533,
   "semantic_review": {
     "method": "same-agent exact-block source comparison and reverse paraphrase",
-    "exact_block_reviews": 2597,
-    "samples": 1237,
+    "exact_block_reviews": 2728,
+    "samples": 1283,
     "independent_native_certification": false,
-    "status": "passed_for_current_260_unit_scope"
+    "status": "passed_for_current_270_unit_scope"
   },
   "source_corrections": {
-    "count": 201,
+    "count": 223,
     "ids": [
       "OLFUN-001",
       "OLFUN-002",
@@ -219,36 +219,58 @@
       "OLTM-001",
       "OLTM-002",
       "OLTM-003",
-      "OLTM-004"
+      "OLTM-004",
+      "OLUN-002",
+      "OLUN-004",
+      "OLUN-005",
+      "OLUN-006",
+      "OLUN-007",
+      "OLUN-008",
+      "OLUN-009",
+      "OLUN-010",
+      "OLUN-011",
+      "OLUN-012",
+      "OLUN-013",
+      "OLUN-014",
+      "OLUN-015",
+      "OLUN-016",
+      "OLUN-017",
+      "OLUN-018",
+      "OLUN-019",
+      "OLUN-020",
+      "OLUN-021",
+      "OLUN-022",
+      "OLUN-023",
+      "OLUN-024"
     ],
-    "status": "201_historical_and_current_keyed_disclosures_in_260_unit_reader; OLINF-002 historical false-positive classification withdrawn"
+    "status": "223_historical_and_current_keyed_disclosures_in_270_unit_reader; OLUN-001_and_OLUN-003_withdrawn"
   },
   "html": {
-    "path": "reader/turing-machines.html",
-    "bytes": 6378353,
-    "sha256": "b463347bcef451a0acf5e727d74bbd5042488a95401045753860037972c4d5b4",
-    "source_units_covered": 260,
-    "mathml_nodes": 14646,
-    "images": 29,
-    "unique_ids": 931,
+    "path": "reader/undecidability.html",
+    "bytes": 6774221,
+    "sha256": "8d0220721eea223c02b6e1dd6ca5857f2afbb414f116e222c73407a162a5ec08",
+    "source_units_covered": 270,
+    "mathml_nodes": 15608,
+    "images": 32,
+    "unique_ids": 982,
     "broken_internal_links": 0,
     "browser_inspection": "passed_runtime_and_representative_visual_inspection",
-    "qa_receipt": "HTML_QA_025.json"
+    "qa_receipt": "READERS_FINAL_QA_026.json"
   },
   "pdf": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
-    "bytes": 2802746,
-    "sha256": "f2faf1b0362beb92374e00cd8471daa91311f47c0404c28bd1c90823cddd1ffb",
-    "pages": 316,
+    "path": "releases/OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+    "bytes": 2949752,
+    "sha256": "e048b1d89c2417573d76a07f4624e482a0216db363a9e3815b615e113de2b517",
+    "pages": 333,
     "page_size": "A4",
     "three_passes_byte_identical": true,
-    "new_pages_visually_inspected": 16,
+    "new_pages_visually_inspected": 19,
     "title_and_toc_visually_inspected": [
       1,
       11
     ],
     "full_text_source_exact_reproduction": true,
-    "qa_receipt": "PDF_QA_025.json"
+    "qa_receipt": "PDF_QA_026.json"
   },
   "batches": {
     "001": {
@@ -428,9 +450,17 @@
       "semantic": 44,
       "aligned_blocks": 176,
       "exact_block_reviews": 99
+    },
+    "026": {
+      "units": 10,
+      "blocks": 131,
+      "math": 891,
+      "semantic": 46,
+      "aligned_blocks": 187,
+      "exact_block_reviews": 131
     }
   },
-  "status": "260_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
+  "status": "270_unit_source_html_pdf_epub_github_and_zenodo_checkpoint_passed; complete_corpus_in_progress",
   "full_corpus_complete": false,
   "batch_007": {
     "draft_units": 8,
@@ -446,31 +476,31 @@
     "render": "passed_cumulative_html_live_browser_and_reproducible_73_page_pdf_all_page_visual_qa"
   },
   "publication": {
-    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/turing-machines-v0.19.0",
-    "github_receipt": "PUBLICATION_RECEIPT_019.json",
-    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_025.json",
-    "zenodo_record": "https://zenodo.org/records/22970545",
-    "zenodo_doi": "10.5281/zenodo.22970545",
-    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_019.json",
+    "github_release": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/undecidability-v0.20.0",
+    "github_receipt": "PUBLICATION_RECEIPT_020.json",
+    "source_checkpoint_receipt": "SOURCE_CHECKPOINT_PUBLICATION_RECEIPT_026.json",
+    "zenodo_record": "https://zenodo.org/records/22985707",
+    "zenodo_doi": "10.5281/zenodo.22985707",
+    "zenodo_receipt": "ZENODO_PUBLICATION_RECEIPT_020.json",
     "artifact_order": [
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines-source.zip",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.tex",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.html",
-      "SHA256SUMS-turing-machines.txt",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines-QA.json"
+      "OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+      "OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Undecidability-source.zip",
+      "OpenLogic-gu-Gujr-IN-Undecidability.tex",
+      "OpenLogic-gu-Gujr-IN-Undecidability.epub",
+      "OpenLogic-gu-Gujr-IN-Undecidability.html",
+      "SHA256SUMS-undecidability.txt",
+      "OpenLogic-gu-Gujr-IN-Undecidability-QA.json"
     ],
     "downloads": {
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.pdf",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines-Full-Text.tex",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines-source.zip",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.tex",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines.html",
-      "SHA256SUMS-turing-machines.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/SHA256SUMS-turing-machines.txt",
-      "OpenLogic-gu-Gujr-IN-Turing-Machines-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/turing-machines-v0.19.0/OpenLogic-gu-Gujr-IN-Turing-Machines-QA.json"
+      "OpenLogic-gu-Gujr-IN-Undecidability.pdf": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.pdf",
+      "OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability-Full-Text.tex",
+      "OpenLogic-gu-Gujr-IN-Undecidability-source.zip": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability-source.zip",
+      "OpenLogic-gu-Gujr-IN-Undecidability.tex": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.tex",
+      "OpenLogic-gu-Gujr-IN-Undecidability.epub": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.epub",
+      "OpenLogic-gu-Gujr-IN-Undecidability.html": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability.html",
+      "SHA256SUMS-undecidability.txt": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/SHA256SUMS-undecidability.txt",
+      "OpenLogic-gu-Gujr-IN-Undecidability-QA.json": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/undecidability-v0.20.0/OpenLogic-gu-Gujr-IN-Undecidability-QA.json"
     },
     "status": "all_eight_ordered_artifacts_full_text_source_inventory_and_pdf_preview_anonymously_verified"
   },
@@ -515,6 +545,12 @@
       "html_anchored_occurrences": 72,
       "correction_disclosures": 4,
       "path": "docs/translation-decisions/TURING_MACHINES_OCCURRENCES.csv"
+    },
+    "supplemental_undecidability": {
+      "term_decisions": 29,
+      "segment_decision_evidence": 131,
+      "correction_disclosures": 22,
+      "path": "provenance/UNDECIDABILITY_CHOICES_026.json"
     }
   },
   "batch_009": {
@@ -667,21 +703,21 @@
     "epub_qa": "EPUB_QA_013.json"
   },
   "epub": {
-    "path": "releases/OpenLogic-gu-Gujr-IN-Turing-Machines.epub",
-    "bytes": 720401,
-    "sha256": "869041d2770dedbc8ca7fd269ac982e30cca9a04804c9dcd9fedfb8ba179290a",
+    "path": "releases/OpenLogic-gu-Gujr-IN-Undecidability.epub",
+    "bytes": 756874,
+    "sha256": "d250b6a61994a55e2f50081dbbb2a6e5d19c9f9123fc9c588f8c666bcf29b9a9",
     "version": "EPUB 3.3",
     "layout": "reflowable",
     "language": "gu-IN",
     "coverage": {
-      "translated": 260,
+      "translated": 270,
       "total": 722,
-      "units": "OLP-0004–0263"
+      "units": "OLP-0004–0273"
     },
     "complete_edition": false,
     "epubcheck_messages": 0,
     "cold_replay_byte_identical": true,
-    "qa_receipt": "EPUB_QA_025.json"
+    "qa_receipt": "READERS_FINAL_QA_026.json"
   },
   "batch_014": {
     "draft_units": 11,
@@ -1003,6 +1039,40 @@
     "math_spans": 439,
     "semantic_samples": 44,
     "render": "passed_cumulative_260_unit_html_pdf_epub_and_full_text_reproduction_qa",
+    "publication": "passed_anonymous_github_and_zenodo_readback"
+  },
+  "batch_026": {
+    "draft_units": 10,
+    "remaining_units": [],
+    "structural_parity": "passed_with_adjacent_keyed_source_corrections",
+    "source_correction_ids": [
+      "OLUN-002",
+      "OLUN-004",
+      "OLUN-005",
+      "OLUN-006",
+      "OLUN-007",
+      "OLUN-008",
+      "OLUN-009",
+      "OLUN-010",
+      "OLUN-011",
+      "OLUN-012",
+      "OLUN-013",
+      "OLUN-014",
+      "OLUN-015",
+      "OLUN-016",
+      "OLUN-017",
+      "OLUN-018",
+      "OLUN-019",
+      "OLUN-020",
+      "OLUN-021",
+      "OLUN-022",
+      "OLUN-023",
+      "OLUN-024"
+    ],
+    "linguistic_blocks": 131,
+    "math_spans": 891,
+    "semantic_samples": 46,
+    "render": "passed_cumulative_270_unit_html_pdf_epub_and_full_text_reproduction_qa",
     "publication": "passed_anonymous_github_and_zenodo_readback"
   }
 }
