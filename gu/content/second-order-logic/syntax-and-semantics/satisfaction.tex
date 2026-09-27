@@ -1,0 +1,234 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: satisfaction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{sat}
+
+\olsection{સંતોષ}
+
+\begin{explain}
+દ્વિતીય-ક્રમ !!{formula}s માટે સંતોષ-સંબંધ~$\Sat{M}{!A}[s]$
+વ્યાખ્યાયિત કરવા માટે આપણે દ્વિતીય-ક્રમ !!{variable}sને પણ આવરી લે
+એ રીતે અગાઉની વ્યાખ્યાઓ વિસ્તૃત કરવી પડે. !!a{structure}નો ખ્યાલ
+દ્વિતીય-ક્રમ અને પ્રથમ-ક્રમ તર્કશાસ્ત્રમાં એકસરખો છે. ફરક માત્ર
+ચલ-નિયુક્તિઓ~$s$માં છે: હવે તેમણે પ્રથમ-ક્રમ !!{variable}s ઉપરાંત
+દ્વિતીય-ક્રમ !!{variable}sને પણ મૂલ્યો આપવા પડે.
+\end{explain}
+
+\begin{defn}[ચલ-નિયુક્તિ]
+!!a{structure}~$\Struct{M}$ માટેની \emph{ચલ-નિયુક્તિ}~$s$ એવું
+વિધેય છે જે દરેક
+\begin{enumerate}
+\item વસ્તુ-!!{variable}~$\Obj{v_i}$ને~$\Domain M$નો ઘટક આપે છે,
+  એટલે $s(\Obj{v_i}) \in \Domain{M}$;
+\item $n$-સ્થાની સંબંધ-ચલ~$\Obj{V_i^n}$ને~$\Domain{M}$ પરનો
+  $n$-સ્થાની સંબંધ આપે છે, એટલે
+  $s(\Obj{V_i^n}) \subseteq \Domain{M}^n$;
+\item $n$-સ્થાની વિધેય-ચલ~$\Obj{u_i^n}$ને $\Domain{M}$માંથી
+  $\Domain{M}$માં જતું $n$-સ્થાની વિધેય આપે છે, એટલે
+  $s(\Obj{u_i^n})\colon \Domain{M}^n \to \Domain{M}$.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+!!^a{structure} દરેક !!{constant} અને !!{function}ને !!a{value}
+આપે છે; દ્વિતીય-ક્રમ ચલ-નિયુક્તિ દરેક વસ્તુ-ચલને વસ્તુ, દરેક
+વિધેય-ચલને વિધેય અને દરેક સંબંધ-ચલને સંબંધ આપે છે. આ બંને સાથે
+મળીને દરેક પદનું મૂલ્ય નક્કી કરી શકાય છે.
+\sourcecorrection{OLSOL-002}{સ્થિર અંગ્રેજી મૂળની આ સમજણમાં
+ચલ-નિયુક્તિ દ્વારા વસ્તુ-ચલો અને વિધેય-ચલોને મળતા મૂલ્યો જણાવ્યાં
+છે, પરંતુ ઉપરની વ્યાખ્યામાં આવરી લીધેલા સંબંધ-ચલોને મળતા સંબંધોનો
+ઉલ્લેખ રહી ગયો છે. અહીં તે ત્રીજો પ્રકાર પણ સ્પષ્ટ કર્યો છે.}
+\end{explain}
+
+\begin{defn}[પદનું \usetoken{S}{value}]
+જો~$t$ ભાષા~$\Lang L$નું પદ હોય, $\Struct M$ એ~$\Lang L$ માટેની
+!!a{structure} હોય અને~$s$ એ~$\Struct M$ માટેની !!a{variable}
+નિયુક્તિ હોય, તો \emph{!!{value}}~$\Value{t}{M}[s]$ પ્રથમ-ક્રમ
+પદોની જેમ જ, નીચેની વધારાની કલમ સાથે વ્યાખ્યાયિત થાય છે:
+\begin{quote}
+\indcase{t}{\Atom{u}{t_1, \ldots, t_n}}{
+\[
+\Value{\indfrm}{M}[s] = s(u)(\Value{t_1}{M}[s], \ldots,
+\Value{t_n}{M}[s]).
+\]}
+\end{quote}
+\end{defn}
+
+\begin{defn}[$x$-રૂપાંતર]
+જો~$s$ એ !!a{structure}~$\Struct M$ માટેની !!a{variable} નિયુક્તિ
+હોય, તો~$\Struct M$ માટેની એવી કોઈપણ !!{variable} નિયુક્તિ~$s'$,
+જે~$s$થી વધુમાં વધુ~$x$ને આપેલા મૂલ્યમાં જ જુદી હોય, તેને~$s$નું
+\emph{$x$-રૂપાંતર} કહે છે. $s'$ એ~$s$નું $x$-રૂપાંતર હોય તો
+$\varAssign{s'}{s}{x}$ લખીએ છીએ. (દ્વિતીય-ક્રમ ચલો~$X$ અથવા~$u$
+માટે પણ આવું જ છે.)
+\end{defn}
+
+\begin{defn}
+  જો~$s$ એ !!a{structure}~$\Struct M$ માટેની !!a{variable} નિયુક્તિ
+  હોય અને~$m \in \Domain{M}$ હોય, તો~$\Subst{s}{m}{x}$ નીચે મુજબ
+  વ્યાખ્યાયિત !!{variable} નિયુક્તિ છે:
+  \[\Subst{s}{m}{y} = \begin{cases}
+    m & \text{જો } y \ident x\\
+    s(y) & \text{અન્યથા},
+  \end{cases}\]
+  જો~$X$ એ $n$-સ્થાની સંબંધ-!!{variable} હોય અને $M \subseteq
+  \Domain{M}^n$ હોય, તો~$\Subst{s}{M}{X}$ નીચે મુજબ વ્યાખ્યાયિત
+  !!{variable} નિયુક્તિ છે:
+  \[\Subst{s}{M}{y} = \begin{cases}
+    M & \text{જો } y \ident X\\
+    s(y) & \text{અન્યથા}.
+  \end{cases}\]
+  જો~$u$ એ $n$-સ્થાની વિધેય-!!{variable} હોય અને $f\colon \Domain{M}^n
+  \to \Domain{M}$ હોય, તો~$\Subst{s}{f}{u}$ નીચે મુજબ વ્યાખ્યાયિત
+  !!{variable} નિયુક્તિ છે:
+  \[\Subst{s}{f}{y} = \begin{cases}
+    f & \text{જો } y \ident u\\
+    s(y) & \text{અન્યથા}.
+  \end{cases}\]
+  દરેક કિસ્સામાં~$y$ કોઈપણ પ્રથમ-ક્રમ અથવા દ્વિતીય-ક્રમ !!{variable}
+  હોઈ શકે છે.
+\end{defn}
+
+\begin{defn}[સંતોષ]
+દ્વિતીય-ક્રમ !!{formula}s~$!A$ માટે સંતોષની વ્યાખ્યા
+\olref[fol][syn][sat]{defn:satisfaction} જેવી જ છે, પરંતુ તેમાં
+નીચેની કલમો ઉમેરાય છે:
+\begin{enumerate}
+\item \indcase{!A}{\Atom{X^n}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
+  ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $\langle \Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s] \rangle \in
+  s(X^n)$.}
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[X][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
+  માત્ર ત્યારે જ જ્યારે દરેક $M \subseteq \Domain{M}^n$ માટે
+  $\Sat{M}{!B}[\Subst{s}{M}{X}]$.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[X][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
+  માત્ર ત્યારે જ જ્યારે ઓછામાં ઓછા એક $M \subseteq \Domain{M}^n$
+  માટે $\Sat{M}{!B}[\Subst{s}{M}{X}]$.}}{}
+
+\tagitem{prvAll}{%
+  \indcase{!A}{\lforall[u][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
+  માત્ર ત્યારે જ જ્યારે દરેક
+  $f\colon \Domain{M}^n \to \Domain{M}$ માટે
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$.}}{}
+
+\tagitem{prvEx}{%
+  \indcase{!A}{\lexists[u][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
+  માત્ર ત્યારે જ જ્યારે ઓછામાં ઓછા એક
+  $f\colon \Domain{M}^n \to \Domain{M}$ માટે
+  $\Sat{M}{!B}[\Subst{s}{f}{u}]$.}}{}
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+  !!{formula}~$\lforall[z][(\Atom{X}{z} \liff \lnot
+    \Atom{Y}{z})]$ વિચારો. તેમાં દ્વિતીય-ક્રમ પરિમાણકો નથી, પરંતુ
+  દ્વિતીય-ક્રમ !!{variable}s~$X$ અને~$Y$ છે (અહીં બંને એકસ્થાની
+  સમજવાના છે). તેને અનુરૂપ પ્રથમ-ક્રમ !!{sentence}
+  $\lforall[z][(\Atom{P}{z} \liff \lnot \Atom{R}{z})]$ કહે છે કે
+  જે કશું~$P$ના અર્થઘટનમાં આવે છે તે~$R$ના અર્થઘટનમાં આવતું નથી,
+  અને ઊલટું પણ. કોઈ !!a{structure}માં !!a{predicate}~$P$નું અર્થઘટન
+  $\Assign{P}{M}$ વડે મળે છે. પરંતુ~$X$ અને~$Y$ જેવા દ્વિતીય-ક્રમ
+  !!{variable}sનું અર્થઘટન !!{structure} પોતે નહિ, પરંતુ
+  !!a{variable} નિયુક્તિ આપે છે. આ દ્વિતીય-ક્રમ !!{formula},
+  !!a{sentence} નથી (તેમાં મુક્ત !!{variable}s~$X$ અને~$Y$ છે), તેથી
+  તેનો સંતોષ !!a{structure}~$\Struct{M}$ અને તેની સાથેની
+  !!a{variable} નિયુક્તિ~$s$ને સાપેક્ષ જ નક્કી થાય છે.
+
+  વ્યાપકક્ષેત્રના બધા ઘટકોને ધ્યાનમાં લઈએ તો, $s(X)$ના !!{element}s
+  ચોક્કસ એ જ છે જે $s(Y)$ના !!{element}s નથી; એટલે દરેક ઘટક માટે આ
+  દ્વિમુખી શરત સાચી હોય,
+  ત્યારે $\Sat{M}{\lforall[z][(\Atom{X}{z} \liff \lnot
+  \Atom{Y}{z})]}[s]$ સાચું છે; એટલે તે ત્યારે અને માત્ર ત્યારે જ
+  જ્યારે $s(Y) = \Domain{M} \setminus s(X)$.
+  \sourcecorrection{OLSOL-003}{સ્થિર અંગ્રેજી મૂળ અહીં બંને ગણોના
+  ઘટકો એકબીજામાં નથી એવું કહે છે, જે માત્ર વિચ્છેદતા બતાવે છે;
+  સૂત્રની દ્વિમુખી શરત મુજબ બંને ગણ પરસ્પર પૂરક હોવા જરૂરી છે.
+  અહીં દરેક ઘટક માટે તે શરત સ્પષ્ટ કરી છે.}
+  દાખલા તરીકે,
+  $\Domain{M} = \{1, 2, 3\}$ લો. અહીં કોઈ !!{predicate}s,
+  !!{function}s કે !!{constant}s આવતાં નથી, એટલે
+  $\Struct{M}$નું વ્યાપકક્ષેત્ર જ સંબંધિત છે. હવે
+  $s_1(X) = \{1, 2\}$ અને $s_1(Y) = \{3\}$ માટે
+  $\Sat{M}{\lforall[z][(\Atom{X}{z}
+      \liff \lnot \Atom{Y}{z})]}[s_1]$ મળે છે.
+
+  બીજી તરફ, જો $s_2(X) = \{1, 2\}$ અને $s_2(Y) = \{2, 3\}$ હોય,
+  તો $\Sat/{M}{\lforall[z][(\Atom{X}{z} \liff \lnot
+      \Atom{Y}{z})]}[s_2]$. કારણ કે
+  $\Sat{M}{\Atom{X}{z}}[\Subst{s_2}{2}{z}]$ ($2 \in \Subst{s_2}{2}{z}(X)$ હોવાથી),
+  પરંતુ $\Sat/{M}{\lnot \Atom{Y}{z}}[\Subst{s_2}{2}{z}]$
+  (કારણ કે $2 \in \Subst{s_2}{2}{z}(Y)$ પણ છે).
+\end{ex}
+
+\begin{ex}
+  કોઈ $N \subseteq \Domain{M}$ માટે
+  $\Sat{M}{(\lexists[y][\Atom{Y}{y}] \land \lforall[z][(\Atom{X}{z}
+  \liff \lnot \Atom{Y}{z})])}[\Subst{s}{N}{Y}]$ હોય, તો
+  $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$ હોય છે.
+  આ માટે $N \neq \emptyset$ હોવું પડે (જેથી
+  $\Sat{M}{\lexists[y][\Atom{Y}{y}]}[\Subst{s}{N}{Y}]$ થાય) અને
+  અગાઉના ઉદાહરણની જેમ $N = \Domain{M} \setminus s(X)$ હોવું પડે.
+  બીજા શબ્દોમાં,
+  $\Sat{M}{\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+  \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]}[s]$
+  ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Domain{M} \setminus s(X)$
+  અરિક્ત હોય, એટલે $s(X) \neq \Domain{M}$. આમ,
+  $\Domain{M} = \{1, 2, 3\}$ અને $s(X) = \{1, 2\}$ હોય તો આ
+  !!{formula} સંતોષાય છે, પરંતુ $s(X) = \{1, 2, 3\} = \Domain{M}$
+  હોય તો સંતોષાતું નથી.
+
+  $s(X) = \Domain{M}$ હોય ત્યારે આ !!{formula} સંતોષાતું નથી, તેથી
+  !!{sentence}
+  \[
+  \lforall[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  ક્યારેય સંતોષાતું નથી: કોઈપણ !!{structure}~$\Struct{M}$ માટે
+  $s(X) = \Domain{M}$ એવી નિયુક્તિ !!{sentence}ને અસત્ય બનાવશે.
+  બીજી બાજુ, વાક્ય
+  \[
+  \lexists[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
+      \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
+  \]
+  કોઈપણ નિયુક્તિ~$s$ને સાપેક્ષ સંતોષાય છે, કારણ કે હંમેશાં
+  $M \subseteq \Domain{M}$ અને $M \neq \Domain{M}$ એવો ઉપગણ મળી
+  શકે છે (દાખલા તરીકે $M = \emptyset$).
+\end{ex}
+
+\begin{ex}
+  દ્વિતીય-ક્રમ !!{sentence}~$\lforall[X][\lforall[y][X(y)]]$ કહે છે
+  કે દરેક $1$-સ્થાની સંબંધ, એટલે દરેક ગુણધર્મ, દરેક વસ્તુને લાગુ પડે
+  છે. તે સ્પષ્ટપણે ક્યારેય સાચું નથી: દરેક~$\Struct{M}$માં
+  $s(X) = \emptyset$ અને $s(y) = a \in \Domain{M}$ એવી
+  ચલ-નિયુક્તિ~$s$ માટે $\Sat/{M}{X(y)}[s]$ છે. આથી દ્વિતીય-ક્રમ
+  તર્કશાસ્ત્રમાં $!A \lif \lforall[X][\lforall[y][X(y)]]$ એ
+  $\lnot !A$ને સમકક્ષ છે, એટલે
+  $\Sat{M}{!A \lif
+  \lforall[X][\lforall[y][X(y)]]}$ ત્યારે અને માત્ર ત્યારે જ
+  જ્યારે $\Sat{M}{\lnot !A}$. બીજા શબ્દોમાં, દ્વિતીય-ક્રમ
+  તર્કશાસ્ત્રમાં $\lforall$ અને~$\lif$ વડે $\lnot$ વ્યાખ્યાયિત
+  કરી શકાય છે.
+\end{ex}
+
+\begin{prob}
+  બતાવો કે દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં $\lforall$ અને~$\lif$ વડે
+  બીજા સંયોજકો વ્યાખ્યાયિત કરી શકાય છે:
+  \begin{enumerate}
+    \item સાબિત કરો કે દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં $!A \land !B$ એ
+    $\lforall[X][(!A \lif (!B \lif \lforall[x][X(x)])\lif
+    \lforall[x][X(x)])]$ને સમકક્ષ છે.
+    \item માત્ર $\lforall$ અને $\lif$ વાપરીને $!A \lor !B$ને
+    સમકક્ષ દ્વિતીય-ક્રમ સૂત્ર શોધો.
+  \end{enumerate}
+\end{prob}
+
+\end{document}

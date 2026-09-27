@@ -1,0 +1,183 @@
+{
+  "schema": "openlogic-gu-second-order-production-source-integration/1",
+  "checked_at_utc": "2026-09-27T05:30:50.162430+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "unit_ids": [
+    "OLP-0322",
+    "OLP-0323",
+    "OLP-0324",
+    "OLP-0325",
+    "OLP-0326",
+    "OLP-0327",
+    "OLP-0328",
+    "OLP-0329",
+    "OLP-0330",
+    "OLP-0331",
+    "OLP-0332",
+    "OLP-0333",
+    "OLP-0334",
+    "OLP-0335",
+    "OLP-0336",
+    "OLP-0337",
+    "OLP-0338",
+    "OLP-0339",
+    "OLP-0340"
+  ],
+  "draft_receipt": "SECOND_ORDER_PART_DRAFT.json",
+  "files": [
+    {
+      "unit_id": "OLP-0322",
+      "source_path": "content/second-order-logic/second-order-logic.tex",
+      "production_path": "gu/content/second-order-logic/second-order-logic.tex",
+      "parity_receipt": "DRAFT_PARITY_032_OPENING.json",
+      "bytes": 513,
+      "sha256": "fd0f653db0a85f59f82e1c92d22a2c52ddd368ecd4b6d946a14886d1d7979d02"
+    },
+    {
+      "unit_id": "OLP-0323",
+      "source_path": "content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "production_path": "gu/content/second-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+      "parity_receipt": "DRAFT_PARITY_032_OPENING.json",
+      "bytes": 1218,
+      "sha256": "1157cc6213c52dcb207057724fc3979ab0b29d5b131ac8e9c45a585a16e9ec7b"
+    },
+    {
+      "unit_id": "OLP-0324",
+      "source_path": "content/second-order-logic/syntax-and-semantics/introduction.tex",
+      "production_path": "gu/content/second-order-logic/syntax-and-semantics/introduction.tex",
+      "parity_receipt": "DRAFT_PARITY_032_OPENING.json",
+      "bytes": 6015,
+      "sha256": "f1ddbdc2b6e1ef1bc943692d6eff901c48712bec0363aa9e6c2403ed32ab3e61"
+    },
+    {
+      "unit_id": "OLP-0325",
+      "source_path": "content/second-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "production_path": "gu/content/second-order-logic/syntax-and-semantics/terms-formulas.tex",
+      "parity_receipt": "DRAFT_PARITY_032_0325.json",
+      "bytes": 6255,
+      "sha256": "b3f9517f4ba2d706f54fd1ed6ccf7cc8cec85af592e28c82e668ee095c1e0396"
+    },
+    {
+      "unit_id": "OLP-0326",
+      "source_path": "content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+      "production_path": "gu/content/second-order-logic/syntax-and-semantics/satisfaction.tex",
+      "parity_receipt": "DRAFT_PARITY_032_0326.json",
+      "bytes": 15105,
+      "sha256": "fc72a90083f2cbe18bf0a0e21e63c79840e0b51d973fbac0a86ffb791e82b173"
+    },
+    {
+      "unit_id": "OLP-0327",
+      "source_path": "content/second-order-logic/syntax-and-semantics/semantic-notions.tex",
+      "production_path": "gu/content/second-order-logic/syntax-and-semantics/semantic-notions.tex",
+      "parity_receipt": "DRAFT_PARITY_032_0327.json",
+      "bytes": 2096,
+      "sha256": "c3b4b485d7cd0648b22e0fcafa98cc6c18e254deddfea25356cac77ac6642297"
+    },
+    {
+      "unit_id": "OLP-0328",
+      "source_path": "content/second-order-logic/syntax-and-semantics/expressive-power.tex",
+      "production_path": "gu/content/second-order-logic/syntax-and-semantics/expressive-power.tex",
+      "parity_receipt": "DRAFT_PARITY_032_0328.json",
+      "bytes": 8057,
+      "sha256": "abf01bf50e7acb0e4b3c58aa297c2a818a835276d1cf1ed9d23ffe6056dd0dcb"
+    },
+    {
+      "unit_id": "OLP-0329",
+      "source_path": "content/second-order-logic/syntax-and-semantics/inf-count.tex",
+      "production_path": "gu/content/second-order-logic/syntax-and-semantics/inf-count.tex",
+      "parity_receipt": "DRAFT_PARITY_032_0329.json",
+      "bytes": 10931,
+      "sha256": "9913b3153d939a18c91bbffdb7ac65172ffd8e469aea736ba4eff6e87bef07a6"
+    },
+    {
+      "unit_id": "OLP-0330",
+      "source_path": "content/second-order-logic/metatheory/metatheory.tex",
+      "production_path": "gu/content/second-order-logic/metatheory/metatheory.tex",
+      "parity_receipt": "DRAFT_PARITY_033_OPENING.json",
+      "bytes": 460,
+      "sha256": "dcadd06149d21701135886b71b6f59cf3068d955882cfd28d9d9d71431b073f0"
+    },
+    {
+      "unit_id": "OLP-0331",
+      "source_path": "content/second-order-logic/metatheory/introduction.tex",
+      "production_path": "gu/content/second-order-logic/metatheory/introduction.tex",
+      "parity_receipt": "DRAFT_PARITY_033_OPENING.json",
+      "bytes": 4054,
+      "sha256": "42834334f5795bac949928b6fbf3e1d9a9e46100c164055225b37606281c63e5"
+    },
+    {
+      "unit_id": "OLP-0332",
+      "source_path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "production_path": "gu/content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "parity_receipt": "DRAFT_PARITY_033_0332.json",
+      "bytes": 9749,
+      "sha256": "5277ec579b21ca2917d593ff27cab27edc6de0ff1f1663b02de93b5cdd49a4d8"
+    },
+    {
+      "unit_id": "OLP-0333",
+      "source_path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "production_path": "gu/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "parity_receipt": "DRAFT_PARITY_033_0333.json",
+      "bytes": 6217,
+      "sha256": "8e8aee6ef92eb43a92e34d9e41767155ad99224e103baefdb8f38506e15e1c02"
+    },
+    {
+      "unit_id": "OLP-0334",
+      "source_path": "content/second-order-logic/metatheory/compactness.tex",
+      "production_path": "gu/content/second-order-logic/metatheory/compactness.tex",
+      "parity_receipt": "DRAFT_PARITY_033_0334.json",
+      "bytes": 5362,
+      "sha256": "e293c696b2c89fc4eb5fe0426e2352821b6da1590c7ef054b9f9a9f42e2664db"
+    },
+    {
+      "unit_id": "OLP-0335",
+      "source_path": "content/second-order-logic/metatheory/loewenheim-skolem.tex",
+      "production_path": "gu/content/second-order-logic/metatheory/loewenheim-skolem.tex",
+      "parity_receipt": "DRAFT_PARITY_033_0335.json",
+      "bytes": 3230,
+      "sha256": "5fb8cb10b50a4b833b83c54a3ead9acee7d288543f1e0120b469612803bf89aa"
+    },
+    {
+      "unit_id": "OLP-0336",
+      "source_path": "content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex",
+      "production_path": "gu/content/second-order-logic/sol-and-set-theory/sol-and-set-theory.tex",
+      "parity_receipt": "DRAFT_PARITY_034_OPENING.json",
+      "bytes": 1173,
+      "sha256": "48d55a982550f8b06f5ae95172c01bfb426ecd438d693da93bc3138f0de42bd5"
+    },
+    {
+      "unit_id": "OLP-0337",
+      "source_path": "content/second-order-logic/sol-and-set-theory/introduction.tex",
+      "production_path": "gu/content/second-order-logic/sol-and-set-theory/introduction.tex",
+      "parity_receipt": "DRAFT_PARITY_034_OPENING.json",
+      "bytes": 1693,
+      "sha256": "6448c66afe932b12b44575d4fcbda65f184f6269644d812641f5924befa07bdd"
+    },
+    {
+      "unit_id": "OLP-0338",
+      "source_path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "production_path": "gu/content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "parity_receipt": "DRAFT_PARITY_034_0338.json",
+      "bytes": 5724,
+      "sha256": "e8b3c3859a6e277e58e83ca570b0c61ab573b3dac508fd6c15dbb0b9d4c21a89"
+    },
+    {
+      "unit_id": "OLP-0339",
+      "source_path": "content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "production_path": "gu/content/second-order-logic/sol-and-set-theory/cardinalities.tex",
+      "parity_receipt": "DRAFT_PARITY_034_0339.json",
+      "bytes": 6658,
+      "sha256": "0befc8ba09e838eb17981b1ebe201d47184e40360cdce8381f72122967d377de"
+    },
+    {
+      "unit_id": "OLP-0340",
+      "source_path": "content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "production_path": "gu/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex",
+      "parity_receipt": "DRAFT_PARITY_034_0340.json",
+      "bytes": 12660,
+      "sha256": "4e58fbdf9babda3e4702213763d8e75bc0a090aae98039f2a06ed2b741a54884"
+    }
+  ],
+  "status": "nineteen_reviewed_sources_materialized_reader_and_tex_qa_pending",
+  "public_coverage_unchanged": 270
+}

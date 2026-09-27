@@ -1,0 +1,59 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: loewenheim-skolem
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{lst}
+
+\olsection{દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં લેવેનહાઇમ--સ્કોલેમ પ્રમેય નિષ્ફળ જાય છે}
+
+\begin{explain}
+(અધોગામી) લેવેનહાઇમ--સ્કોલેમ પ્રમેય કહે છે કે !!{sentence}sના જે
+ગણને અનંત નિદર્શ હોય, તેને !!a{enumerable} નિદર્શ પણ હોય છે. આ
+પ્રમેય પણ પૂર્ણતા પ્રમેયનું પરિણામ છે: પૂર્ણતાની સાબિતી
+!!{sentence}sના કોઈપણ સુસંગત ગણ માટે નિદર્શ રચે છે, અને તે નિદર્શ
+!!{enumerable} હોય છે. ઊર્ધ્વગામી લેવેનહાઇમ--સ્કોલેમ પ્રમેય પણ છે;
+તે ખાતરી આપે છે કે !!{sentence}sના ગણને !!a{denumerable} નિદર્શ
+હોય તો તેને !!a{nonenumerable} નિદર્શ પણ હોય છે. દ્વિતીય-ક્રમ
+તર્કશાસ્ત્રમાં બંને પ્રમેયો નિષ્ફળ જાય છે.
+\end{explain}
+
+
+\begin{thm}
+\ollabel{thm:sol-no-ls} દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં લેવેનહાઇમ--સ્કોલેમ
+પ્રમેય નિષ્ફળ જાય છે: એવા !!{sentence}s છે જેમને અનંત નિદર્શો છે,
+પણ કોઈ !!{enumerable} નિદર્શ નથી.
+\end{thm}
+
+\begin{proof}
+યાદ કરો કે
+\[
+\fn{Count} \ident \lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+!!a{structure}~$\Struct{M}$માં ત્યારે અને માત્ર ત્યારે જ સાચું છે
+જ્યારે~$\Domain{M}$ !!{enumerable} હોય. તેથી
+$\lnot\fn{Count}$ એ~$\Struct{M}$માં ત્યારે અને માત્ર ત્યારે જ
+સાચું છે જ્યારે~$\Domain{M}$ !!{nonenumerable} હોય. આવી
+!!{structure}s છે: કોઈપણ !!{nonenumerable} ગણને !!{domain} લો,
+દાખલા તરીકે $\Pow{\Nat}$ અથવા~$\Real$. આથી
+$\lnot \fn{Count}$ને અનંત નિદર્શો છે, પરંતુ કોઈ
+!!{enumerable} નિદર્શ નથી.
+\end{proof}
+
+\begin{thm}
+એવા !!{sentence}s છે જેમને !!{denumerable} નિદર્શો છે,
+પણ કોઈ !!{nonenumerable} નિદર્શ નથી.
+\end{thm}
+
+\begin{proof}
+$\fn{Count} \land \fn{Inf}$ એ~$\Nat$માં સાચું છે, પરંતુ
+જે !!{structure}~$\Struct{M}$ માટે~$\Domain{M}$
+!!{nonenumerable} હોય તેમાં સાચું નથી.
+\end{proof}
+
+
+\end{document}

@@ -1,0 +1,147 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: second-order-arithmetic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{spa}
+
+\olsection{દ્વિતીય-ક્રમ અંકગણિત}
+
+યાદ કરો કે પેયાનો અંકગણિતના સિદ્ધાંત~$\Th{PA}$માં~$\Th{Q}$નાં આઠ
+સ્વયંસિદ્ધિઓ,
+\begin{align*}
+& \lforall[x][\eq/[x'][\Obj 0]]\\
+& \lforall[x][\lforall[y][(\eq[x'][y'] \lif \eq[x][y])]]\\
+& \lforall[x][(\eq[x][\Obj 0] \lor \lexists[y][\eq[x][y']])]\\
+& \lforall[x][\eq[(x + \Obj 0)][x]]\\
+& \lforall[x][\lforall[y][\eq[(x + y')][(x + y)']]]\\
+& \lforall[x][\eq[(x \times \Obj 0)][\Obj 0]]\\
+& \lforall[x][\lforall[y][\eq[(x \times y')][((x \times y) + x)]]]\\
+& \lforall[x][\lforall[y][(x < y \liff \lexists[z][\eq[(z' + x)][y]])]]\\
+\intertext{અને આ સ્વરૂપનાં બધાં વાક્યો સામેલ છે:}
+& (!A(\Obj 0) \land \lforall[x][(!A(x) \lif !A(x'))]) \lif \lforall[x][!A(x)].
+\end{align*}
+છેલ્લું ``પ્રરૂપ'' છે, એટલે અંકગણિતની ભાષાના દરેક
+!!{formula}~$!A(x)$ માટે એક, એમ અનંત સંખ્યામાં !!{sentence}s
+ઉત્પન્ન કરતું માળખું. આ પ્રરૂપને (પ્રથમ-ક્રમ) \emph{આગમનનું
+સ્વયંસિદ્ધિ-પ્રરૂપ} કહીએ છીએ.
+\emph{દ્વિતીય-ક્રમ} પેયાનો અંકગણિત~$\Th{PA^2}$માં આગમનને એક જ
+વાક્યથી વ્યક્ત કરી શકાય છે. $\Th{PA^2}$ ઉપરની પ્રથમ આઠ સ્વયંસિદ્ધિઓ
+અને (દ્વિતીય-ક્રમ) \emph{આગમનના સ્વયંસિદ્ધિ}થી બને છે:
+\[
+\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif \lforall[x][X(x)])].
+\]
+તે કહે છે: !!{domain}નો ઉપગણ~$X$ જો~$\Assign{\Obj{0}}{M}$ને સમાવે
+અને કોઈપણ~$x \in \Domain{M}$ સાથે~$\Assign{\prime}{M}(x)$ને પણ
+સમાવે (એટલે કે તે ``અનુગામી હેઠળ બંધ'' હોય), તો તે આખું
+!!{domain} સમાવે (એટલે $X =
+\Domain{M})$.
+
+આગમનનું સ્વયંસિદ્ધિ ખાતરી આપે છે કે તેને સંતોષતી કોઈપણ !!{structure}ના
+$\Domain{M}$માં સ્વયંસિદ્ધિઓથી હોવા જરૂરી હોય એવા !!{element}s જ છે,
+એટલે $n \in \Nat$ માટે~$\num{n}$નાં મૂલ્યો. $\Th{PA^2}$ના
+નિદર્શમાં કોઈ અપ્રમાણભૂત સંખ્યાઓ નથી.
+
+\begin{thm}
+\ollabel{thm:sol-pa-standard}
+જો $\Sat{M}{\Th{PA^2}}$ હોય, તો $\Domain{M} =
+\Setabs{\Value{\num{n}}{M}}{n \in \Nat}$.
+\end{thm}
+
+\begin{proof}
+$N = \Setabs{\Value{\num{n}}{M}}{n \in \Nat}$ લો અને
+$\Sat{M}{\Th{PA^2}}$ માનો. દરેક $n \in \Nat$ માટે
+$\Value{\num{n}}{M} \in \Domain{M}$ છે જ; તેથી
+$N \subseteq \Domain{M}$.
+
+હવે બીજી દિશાનો સમાવેશ બતાવીએ. $s(X) = N$ એવી ચલ-નિયુક્તિ~$s$
+વિચારો. ધારણા મુજબ,
+\begin{align*}
+\Sat{M}{\lforall[X][((X(\Obj 0) \land \lforall[x][(X(x)
+      \lif X(x'))]) \lif \lforall[x][X(x)])]}, & \text{ તેથી}\\
+\Sat{M}{(X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]) \lif
+  \lforall[x][X(x)]}[s]. &
+\end{align*}
+આ શરતી વિધાનનો પૂર્વપક્ષ વિચારો. $\Value{\Obj{0}}{M} \in
+N$ છે; તેથી $\Sat{M}{X(\Obj{0})}[s]$. બીજો સંયોજક,
+$\lforall[x][(X(x) \lif X(x'))]$, પણ સંતોષાય છે. કારણ કે
+$x \in N$ હોય એમ માનો. $N$ની વ્યાખ્યા મુજબ કોઈ~$n$ માટે
+$x = \Value{\num{n}}{M}$. તેથી
+$\Assign{\prime}{M}(x) = \Value{\num{n+1}}{M} \in N$. આમ,
+$\Assign{\prime}{M}(x) \in N$.
+
+આથી $\Sat{M}{X(\Obj 0) \land \lforall[x][(X(x) \lif X(x'))]}[s]$.
+પરિણામે $\Sat{M}{\lforall[x][X(x)]}[s]$. પરંતુ તેનો અર્થ એ છે કે
+દરેક $x \in \Domain{M}$ માટે $x \in s(X) = N$. તેથી
+$\Domain{M} \subseteq N$.
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:sol-pa-categorical}
+$\Th{PA^2}$નાં કોઈપણ બે નિદર્શો એકરૂપ છે.
+\end{cor}
+
+\begin{proof}
+\olref{thm:sol-pa-standard} મુજબ $\Th{PA^2}$ના કોઈપણ નિદર્શનું
+વ્યાપકક્ષેત્ર $\Value{\num{n}}{M}$નાં મૂલ્યોથી પૂરું થાય છે. આવું
+દરેક નિદર્શ~$\Th{Q}$નું નિદર્શ પણ છે.
+\olref[mod][mar][stm]{prop:thq-standard} મુજબ આવું દરેક નિદર્શ
+પ્રમાણભૂત છે, એટલે~$\Struct{N}$ને એકરૂપ છે.
+\end{proof}
+
+ઉપર આપણે~$\Th{PA^2}$ને પ્રથમ આઠ અંકગણિતીય સ્વયંસિદ્ધિઓ તથા
+દ્વિતીય-ક્રમ આગમનનું સ્વયંસિદ્ધિ ધરાવતા સિદ્ધાંત તરીકે વ્યાખ્યાયિત
+કર્યો. હકીકતમાં દ્વિતીય-ક્રમ તર્કશાસ્ત્રની અભિવ્યક્તિની શક્તિને
+કારણે દ્વિતીય-ક્રમ પેયાનો અંકગણિત માટે અંકગણિતીય સ્વયંસિદ્ધિઓમાંથી
+માત્ર \emph{પ્રથમ બે} અને આગમન પૂરતાં છે.
+
+\begin{prop}\ollabel{prop:sol-pa-definable}
+$\Th{PA^{2\dagger}}$ એ પ્રથમ બે અંકગણિતીય સ્વયંસિદ્ધિઓ (અનુગામી
+વિશેની સ્વયંસિદ્ધિઓ) અને દ્વિતીય-ક્રમ આગમનનું સ્વયંસિદ્ધિ ધરાવતો
+દ્વિતીય-ક્રમ સિદ્ધાંત હોય. ત્યારે $\le$, $+$ અને $\times$
+$\Th{PA^{2\dagger}}$ના અનુગામી-માત્ર પાયામાં વ્યાખ્યાયિત કરી શકાય છે.
+\end{prop}
+\sourcecorrection{OLSOL-006}{સ્થિર અંગ્રેજી મૂળમાં આ ક્રિયાઓ
+``સિદ્ધાંતમાં વ્યાખ્યેય'' છે એમ કહેવાયું છે. અર્થ એવો છે કે
+અનુગામી અને શૂન્ય ધરાવતા પાયામાં દ્વિતીય-ક્રમ સૂત્રો વડે પ્રમાણભૂત
+ક્રમ, સરવાળો અને ગુણાકારના સંબંધો નિર્ધારિત કરી શકાય છે. પ્રથમ બે
+સ્વયંસિદ્ધિઓ મનસ્વી રીતે પહેલેથી અર્થઘટિત $+$ કે $\times$ને
+નિયંત્રિત કરતી નથી.}
+
+\begin{proof}
+$\le$ વ્યાખ્યાયિત છે એમ બતાવવા એવું સૂત્ર~$!A_\le(x, y)$ શોધવું
+પડે કે $\Sat{N}{!A_\le(\num n, \num m)}$ ત્યારે અને માત્ર ત્યારે જ
+જ્યારે $n \le m$. આ સૂત્ર વિચારો:
+\[
+!B(x, Y) \ident Y(x) \land \lforall[y][(Y(y) \lif Y(y'))]
+\]
+સ્પષ્ટ છે કે $!B(\num n, Y)$ કોઈ ગણ $Y \subseteq \Nat$થી ત્યારે
+અને માત્ર ત્યારે જ સંતોષાય જ્યારે $\Setabs{m}{n \le m} \subseteq Y$.
+તેથી $!A_\le(x, y) \ident
+\lforall[Y][(!B(x, Y) \lif Y(y))]$ લઈ શકાય.
+
+સરવાળો વ્યાખ્યાયિત છે એ જોવા નોંધો કે $k+l=m$ ત્યારે અને માત્ર ત્યારે
+જ જ્યારે એવું વિધેય~$u$ હોય કે $u(0)=k$, બધા~$n$ માટે
+$u(n')=u(n)'$ અને $m = u(l)$. આ સમકક્ષતા વાપરીને
+$\Th{PA^{2\dagger}}$માં સરવાળો નીચેના સૂત્ર વડે વ્યાખ્યાયિત કરી
+શકાય:
+\[
+!A_+(x,y,z) \ident \lexists[u][(u(\Obj 0)=x \land \lforall[w][u(w')=u
+ (w)'] \land u(y)=z)]
+\]
+હવે $\Sat{N}{!A_+(\num k, \num l, \num m)}$ ત્યારે અને માત્ર
+ત્યારે જ જ્યારે $k+l=m$ એ સ્પષ્ટ હોવું જોઈએ.
+\sourcecorrection{OLSOL-007}{સ્થિર અંગ્રેજી મૂળ સરવાળાના સૂત્રમાં
+$\lforall[w]$ લખે છે, પરંતુ તેની અંદર પુનરાવર્તન માટે $u(x')=u(x)'$
+લખે છે. તેથી $w$ વપરાતો નથી અને જરૂરી સર્વવાચી પુનરાવર્તન મળતું
+નથી. અહીં $u(w')=u(w)'$ કર્યું છે.}
+\end{proof}
+
+\begin{prob}
+\olref[sol][met][spa]{prop:sol-pa-definable}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\end{document}

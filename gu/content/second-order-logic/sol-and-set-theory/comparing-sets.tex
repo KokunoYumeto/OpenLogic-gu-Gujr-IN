@@ -1,0 +1,93 @@
+% Part: second-order-logic
+% Chapter: sol-and-set-theory
+% Section: comparing-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{set}{cmp}
+
+\olsection{ગણોની સરખામણી}
+
+\begin{prop}
+!!{formula}~$\lforall[x][(X(x) \lif Y(x))]$ ઉપગણ-સંબંધ
+વ્યાખ્યાયિત કરે છે: $\Sat{M}{\lforall[x][(X(x) \lif Y(x))]}[s]$
+ત્યારે અને માત્ર ત્યારે જ જ્યારે $s(X) \subseteq s(Y)$.
+\end{prop}
+
+\begin{prop}
+!!{formula}~$\lforall[x][(X(x) \liff Y(x))]$ ગણો પરનો
+તાદાત્મ્ય-સંબંધ વ્યાખ્યાયિત કરે છે: $\Sat{M}{\lforall[x][(X(x)
+\liff Y(x))]}[s]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $s(X) = s(Y)$.
+\end{prop}
+
+\begin{prop}
+!!{formula}~$\lexists[x][X(x)]$ અરિક્ત હોવાનો ગુણધર્મ વ્યાખ્યાયિત
+કરે છે: $\Sat{M}{\lexists[x][X(x)]}[s]$ ત્યારે અને માત્ર ત્યારે જ
+જ્યારે $s(X) \neq \emptyset$.
+\end{prop}
+
+ગણ~$X$ એ ગણ~$Y$ કરતાં મોટો નથી, $\cardle{X}{Y}$, ત્યારે અને માત્ર
+ત્યારે જ જ્યારે કોઈ !!a{injective} વિધેય $f\colon X \to Y$ હોય.
+આપણે વિધેય એક-એક છે અને~$X$ના ઘટકો પર તેનાં મૂલ્યો~$Y$માં છે એવું
+વ્યક્ત કરી શકીએ છીએ. તેથી વ્યાપકક્ષેત્રના ઉપગણો વચ્ચે ``મોટો નથી''
+સંબંધ પણ વ્યાખ્યાયિત કરી શકીએ છીએ.
+
+\begin{prop}
+નીચેનું સૂત્ર
+\[
+\lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land \lforall[x][\lforall[y][((X(x) \land X(y) \land \eq[u(x)][u(y)]) \lif
+      \eq[x][y])]])]
+\]
+``મોટો નથી'' સંબંધ વ્યાખ્યાયિત કરે છે.
+\end{prop}
+\sourcecorrection{OLSOL-013}{સ્થિર અંગ્રેજી મૂળ અહીં~$u$ આખા
+વ્યાપકક્ષેત્ર પર એક-એક હોવાની શરત મૂકે છે, જ્યારે સરખામણી માટે તેની
+$X$ પરની મર્યાદા એક-એક હોય એટલું જ જરૂરી છે. અહીં પૂર્વપક્ષમાં
+$X(x)$ અને $X(y)$ ઉમેર્યાં છે, જેથી સૂત્ર સીધું~$X$માંથી~$Y$માં
+એક-એક વિધેયનું અસ્તિત્વ વ્યક્ત કરે છે.}
+
+બે ગણો સમાન કદના અથવા ``સામ્ય'' છે, $\cardeq{X}{Y}$, ત્યારે અને
+માત્ર ત્યારે જ જ્યારે કોઈ !!a{bijective} વિધેય~$f\colon X \to Y$
+હોય.
+
+\begin{prop}
+નીચેનું સૂત્ર
+\begin{multline*}
+  \lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land {}\\
+    \lforall[x][\lforall[y][((X(x) \land X(y) \land \eq[u(x)][u(y)]) \lif \eq[x][y])]]
+  \land {} \\\lforall[y][(Y(y) \lif \lexists[x][(X(x)
+      \land \eq[y][u(x)])])])]
+\end{multline*}
+સામ્ય-સંબંધ વ્યાખ્યાયિત કરે છે.
+\end{prop}
+\sourcecorrection{OLSOL-014}{સ્થિર અંગ્રેજી મૂળનું સૂત્ર~$u$ને આખા
+વ્યાપકક્ષેત્ર પર એક-એક માગે છે. પરંતુ અનંત વ્યાપકક્ષેત્રમાં જો~$X$ તેનો ઉચિત
+ઉપગણ અને~$Y$ આખું વ્યાપકક્ષેત્ર હોય, તો~$X$ તથા~$Y$ સામ્ય હોવા
+છતાં~$X$ પરથી~$Y$ પરનું વ્યાપ્ત એક-એક વિધેય બહારના ઘટકો સુધી
+આખા વ્યાપકક્ષેત્ર પર એક-એક રીતે વિસ્તારી શકાતું નથી. અહીં
+એક-એકતાની શરત~$X$ પર જ મૂકી છે.}
+
+આ !!{formula}sને અનુક્રમે $X \subseteq Y$, $X = Y$, $X \neq
+\emptyset$, $\cardle{X}{Y}$ અને $\cardeq{X}{Y}$ એમ સંક્ષેપમાં
+લખીશું. (આથી થોડો ગૂંચવાડો થઈ શકે છે: ગણો~$X$ અને~$Y$ વિશે
+અનૌપચારિક રીતે બોલતાં પણ આ જ સંકેતો વાપરીએ છીએ. અહીં, જોકે, આ
+સંકેતો એકસ્થાની સંબંધ-ચલો~$X$ અને~$Y$ ધરાવતાં દ્વિતીય-ક્રમ
+!!{formula}sના સંક્ષેપો છે.)
+
+\begin{prop}
+!!{sentence}~$\lforall[X][\lforall[Y][((\cardle{X}{Y} \land
+    \cardle{Y}{X}) \lif \cardeq{X}{Y})]]$ પ્રમાણભૂત છે.
+\end{prop}
+
+\begin{proof}
+!!a{structure}~$\Struct{M}$માં આ !!{sentence} ત્યારે સંતોષાય જ્યારે
+કોઈપણ ઉપગણો $X \subseteq \Domain{M}$ અને $Y \subseteq
+\Domain{M}$ માટે $\cardle{X}{Y}$ તથા $\cardle{Y}{X}$ હોય તો
+$\cardeq{X}{Y}$ હોય. પરંતુ આ વાત \emph{કોઈપણ} ગણો~$X$ અને~$Y$
+માટે સાચી છે: તે શ્રેડર--બર્નસ્ટાઇન પ્રમેય છે.
+\end{proof}
+
+
+\end{document}

@@ -1,0 +1,158 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: size-of-domain
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{siz}
+
+\olsection{અનંત અને \usetoken{S}{enumerable}
+  \usetoken{P}{domain}નું વર્ણન}
+
+ગણ~$M$ (ડેડેકિન્ડના અર્થમાં) અનંત ત્યારે અને માત્ર ત્યારે જ હોય જ્યારે
+એવું !!a{injective} વિધેય~$f\colon M
+\to M$ હોય જે !!{surjective} ન હોય, એટલે $\ran{f} \neq M$. પ્રથમ-ક્રમ
+તર્કશાસ્ત્રમાં એકસ્થાની !!{function}~$f$ લઈ શકાય અને
+!!a{structure}~$\Struct{M}$માં તેને અપાયેલું વિધેય~$\Assign{f}{M}$
+!!{injective} છે તથા $\ran{f} \neq
+\Domain{M}$ છે એમ કહી શકાય:
+\[
+\lforall[x][\lforall[y][(\eq[f(x)][f(y)] \to \eq[x][y])]] \land
+\lexists[y][\lforall[x][\eq/[y][f(x)]]].
+\]
+જો~$\Struct{M}$ આ !!{sentence}ને સંતોષે, તો
+$\Assign{f}{M}:
+\Domain{M} \to \Domain{M}$ !!{injective} છે અને તેથી~$\Domain{M}$
+અનંત હોવું જોઈએ. જો~$\Domain{M}$ અનંત હોય અને તેથી આવું વિધેય
+અસ્તિત્વમાં હોય, તો~$\Assign{f}{M}$ને તે વિધેય લઈએ; ત્યારે
+$\Struct{M}$ આ !!{sentence}ને સંતોષશે. પરંતુ આ માટે આપણા હેતુનો
+અતાર્કિક સંકેત~$f$ ભાષામાં હોવો જરૂરી છે. દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં
+આવું વિધેય \emph{અસ્તિત્વમાં છે} એમ સીધું કહી શકાય છે. ત્યારે~$f$ની
+જરૂર રહેતી નથી અને શુદ્ધ દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં આ !!{sentence}
+મળે છે:
+\[
+\fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
+      \lif \eq[x][y])]] \land \lexists[y][\lforall[x][\eq/[y][u(x)]]])].
+\]
+$\Sat{M}{\fn{Inf}}$ ત્યારે અને માત્ર ત્યારે જ જ્યારે~$\Domain{M}$
+અનંત હોય. પછી $\fn{Fin} \ident \lnot \fn{Inf}$ વ્યાખ્યાયિત કરી
+શકાય; $\Sat{M}{\fn{Fin}}$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+$\Domain{M}$ સાન્ત હોય. શુદ્ધ પ્રથમ-ક્રમ તર્કશાસ્ત્રનું એક પણ એકલું
+!!{sentence} !!{domain} અનંત છે એવું વ્યક્ત કરી શકતું નથી, જોકે
+આવાં વાક્યોનો અનંત ગણ તે વ્યક્ત કરી શકે છે. શુદ્ધ પ્રથમ-ક્રમ
+તર્કશાસ્ત્રનાં !!{sentence}sનો એવો કોઈ ગણ નથી જે કોઈ
+!!a{structure}માં ત્યારે અને માત્ર ત્યારે જ સંતોષાય જ્યારે તેનું
+વ્યાપકક્ષેત્ર સાન્ત હોય.
+
+\begin{prop}
+$\Sat{M}{\fn{Inf}}$ ત્યારે અને માત્ર ત્યારે જ જ્યારે~$\Domain{M}$
+અનંત હોય.
+\end{prop}
+
+\begin{proof}
+$\Sat{M}{\fn{Inf}}$ ત્યારે અને માત્ર ત્યારે જ જ્યારે અમુક~$s$
+માટે
+  $\Sat{M}{\lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+    \land \lexists[y][\lforall[x][\eq/[y][u(x)]]]}[s]$.
+  એવું હોય તો~$s(u)$ !!a{injective} વિધેય છે અને અમુક $y
+  \in \Domain{M}$ એ~$s(u)$ના મૂલ્યસમૂહમાં નથી. ઊલટું, જો એવું
+  !!a{injective} $f\colon \Domain{M} \to \Domain{M}$ હોય કે
+  $\ran{f} \neq \Domain{M}$, તો~$s(u) = f$ એવી ચલ-નિયુક્તિ જરૂરી
+  શરત પૂરી કરે છે.
+\end{proof}
+
+અહીં અરિક્ત ગણ~$M$ને !!{enumerable} કહીએ છીએ જો તેના !!{element}sની
+આવી પરિગણના હોય:
+\[
+m_0, m_1, m_2, \dots
+\]
+તેમાં પુનરાવર્તન નથી, પરંતુ પરિગણના સાન્ત હોઈ શકે છે.
+\sourcecorrection{OLSOL-004}{સ્થિર અંગ્રેજી મૂળ અહીં મનસ્વી ગણને
+પરિગણનીય કહે છે, પણ તરત પછી $m_0$ અને $z\in M$ માગે છે.
+રિક્ત ગણ માટે આ શક્ય નથી. સંરચનાનાં વ્યાપકક્ષેત્રો અરિક્ત હોય છે,
+અને અહીં જરૂરી અરિક્તતાની શરત સ્પષ્ટ કરી છે.}
+આવી પરિગણના ત્યારે અને માત્ર ત્યારે જ મળે જ્યારે !!a{element}
+$z \in M$ અને વિધેય $f\colon M \to M$ એવાં હોય કે $z$, $f(z)$,
+$f(f(z))$, \dots, ના જુદા જુદા ઘટકો જ~$M$ના બધા !!{element}s હોય.
+કારણ કે જો પરિગણના હોય, તો $z = m_0$ અને $f(m_k) = m_{k+1}$
+(અથવા~$m_k$ પરિગણનાનો છેલ્લો !!{element} હોય તો
+$f(m_k) = m_k$) જરૂરી !!{element} અને વિધેય આપે છે. બીજી બાજુ,
+આવાં~$z$ અને~$f$ હોય તો $z$, $f(z)$, $f(f(z))$, \dots, માંથી
+પુનરાવર્તિત ઘટકો કાઢતાં~$M$ની પરિગણના મળે છે અને~$M$
+!!{enumerable} છે. આ~$z$ અને~$f$નું અસ્તિત્વ દ્વિતીય-ક્રમ
+તર્કશાસ્ત્રમાં વ્યક્ત કરીને એવું !!{sentence} બનાવી શકાય છે જે
+!!a{structure}માં ત્યારે અને માત્ર ત્યારે જ સાચું હોય જ્યારે તે
+!!{structure} !!{enumerable} હોય:
+\[
+\fn{Count} \ident
+\lexists[z][\lexists[u][\lforall[X][((X(z) \land
+      \lforall[x][(X(x) \lif X(u(x)))]) \lif \lforall[x][X(x)])]]]
+\]
+\sourcecorrection{OLSOL-005}{સ્થિર અંગ્રેજી મૂળમાં પરિગણના
+પુનરાવર્તન વિનાની કહેવાઈ છે, પણ સાન્ત પરિગણનાના છેલ્લા ઘટક પર
+વિધેય સ્થિર થાય ત્યારે તેની આગળની કક્ષા એ ઘટકને વારંવાર આપે છે.
+અહીં કક્ષાના જુદા ઘટકો પરિગણના બનાવે છે એમ સ્પષ્ટ કર્યું છે;
+નીચેની સાબિતીમાં પણ છેલ્લા ઘટકનું વિધેય-મૂલ્ય સ્પષ્ટ કરાયું છે.}
+
+\begin{prop}
+$\Sat{M}{\fn{Count}}$ ત્યારે અને માત્ર ત્યારે જ જ્યારે~$\Domain{M}$
+!!{enumerable} હોય.
+\end{prop}
+
+\begin{proof}
+માનો કે~$\Domain{M}$ !!{enumerable} છે અને $m_0$, $m_1$, \dots,
+તેની પરિગણના છે. પુનરાવર્તનો દૂર કરીને કોઈ~$m_k$ બે વાર ન આવે તેની
+ખાતરી કરી શકાય છે. $f(m_k) = m_{k+1}$ વ્યાખ્યાયિત કરો (સાન્ત
+પરિગણનાના છેલ્લા ઘટકને પોતાને જ મોકલો) અને $s(z) = m_0$ તથા
+$s(u) = f$ લો. આપણે બતાવીએ કે
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+માનો કે $M \subseteq \Domain{M}$ મનસ્વી છે. વધુમાં માનો કે
+$\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif
+X(u(x)))])}[\Subst{s}{M}{X}]$. ત્યારે
+$\Subst{s}{M}{X}(z) \in M$ અને જ્યારે પણ $x \in M$, ત્યારે
+$(\Subst{s}{M}{X}(u))(x) \in M$ પણ. બીજા શબ્દોમાં,
+$\varAssign{\Subst{s}{M}{X}}{s}{X}$ હોવાથી, $m_0 \in M$ અને
+$x \in M$ હોય તો $f(x) \in M$. તેથી $m_0 \in M$,
+$m_1 = f(m_0) \in M$, $m_2 = f(f(m_0)) \in M$ વગેરે. આમ,
+$M = \Domain{M}$ અને તેથી
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{M}{X}]$. $M \subseteq
+\Domain{M}$ મનસ્વી હોવાથી સાબિતી પૂરી થાય છે:
+$\Sat{M}{\fn{Count}}$.
+
+હવે માનો કે $\Sat{M}{\fn{Count}}$, એટલે અમુક~$s$ માટે
+\[
+\Sat{M}{\lforall[X][((X(z) \land \lforall[x][(X(x) \lif X(u(x)))])
+    \lif \lforall[x][X(x)])]}[s]
+\]
+$m = s(z)$ અને $f = s(u)$ લો તથા
+$M = \{m,
+f(m), f(f(m)), \dots\}$ વિચારો. પુનરાવર્તિત ઘટકો કાઢીએ તો
+આ~$M$ !!{enumerable} છે. ત્યારે ધારણા પરથી
+\[
+\Sat{M}{(X(z) \land \lforall[x][(X(x) \lif X(u(x)))] )
+    \lif \lforall[x][X(x)]}[\Subst{s}{M}{X}]
+\]
+મળે છે. વળી $M \ni m =
+\Subst{s}{M}{X}(z)$ હોવાથી $\Sat{M}{X(z)}[\Subst{s}{M}{X}]$,
+અને $x \in M$ હોય ત્યારે $f(x) \in
+M$ હોવાથી $\Sat{M}{\lforall[x][(X(x) \lif
+X(u(x)))]}[\Subst{s}{M}{X}]$ પણ મળે છે. આમ, પૂર્વપક્ષ અને
+શરતી વિધાન બંને સંતોષાય છે, તેથી ઉત્તરપક્ષ પણ સંતોષાવો જોઈએ:
+$\Sat{M}{\lforall[x][X(x)]}[\Subst{s}{M}{X}]$. પરંતુ તેનો અર્થ
+$M = \Domain{M}$; અને~$M$ વ્યાખ્યા મુજબ પરિગણનીય હોવાથી
+$\Domain{M}$ પણ !!{enumerable} છે.
+\end{proof}
+
+\begin{prob}
+!!{sentence}~$\fn{Inf} \land \fn{Count}$ બધા અને માત્ર
+!!{denumerable} વ્યાપકક્ષેત્રોમાં સાચું છે. $\fn{Count}$ની વ્યાખ્યા
+એવી બદલો કે નવું !!{sentence} વ્યાપકક્ષેત્ર !!{denumerable} છે એવું
+સીધું વ્યક્ત કરે, અને તે કરે છે એમ સાબિત કરો.
+\end{prob}
+
+\end{document}

@@ -215,4 +215,38 @@
   \fi
 \fi
 \def\gucomputabilitymathdots{1}
+\ifdefined\gusecondorderpartedition
+  \def\gueditiontitle{દ્વિતીય-ક્રમ તર્કશાસ્ત્ર સહિત ઓપન લોજિક ગુજરાતી}
+  \def\gueditionheading{%
+    ગણો, વિધેયો, વિધાનાત્મક અને પ્રથમ-ક્રમ તર્કશાસ્ત્ર,
+    નિદર્શસિદ્ધાંત, સંગણનીયતા, ટ્યુરિંગ મશીનો, અનિર્ણેયતા
+    અને દ્વિતીય-ક્રમ તર્કશાસ્ત્ર}
+  \def\gueditiondescription{%
+    આ સંચિત પરીક્ષણ-વાચકમાં અગાઉના ૨૭૦ એકમો અને દ્વિતીય-ક્રમ
+    તર્કશાસ્ત્રના ૧૯ એકમો છે. વચ્ચેના OLP-0274–0321 એકમો
+    હજી આ વાચકમાં સમાવવામાં આવ્યા નથી; તેમની ગુજરાતી મસદ્દા
+    તૈયાર છે અને સંકલન ચાલુ છે.}
+  \def\gueditioncount{૨૮૯}
+  \def\gueditionainotice{%
+    આ ગુજરાતી યંત્ર-અનુવાદ છે. અગાઉના ૨૦૪ એકમો OpenAI Codex
+    GPT-5.6 Sol, Ultra effort વડે અને બીજા ૬૬ એકમો OpenAI Codex
+    GPT-6 Sol, Ultra effort વડે તૈયાર થયા હતા. દ્વિતીય-ક્રમના
+    ૧૯ નવા એકમો OpenAI Codex GPT-6 Sol, Ultra effort વડે તૈયાર થયા છે.
+    મૂળ સાથે આ જ એજન્ટની સરખામણી થઈ છે; સ્વતંત્ર ગુજરાતી નિષ્ણાતનું
+    પ્રમાણપત્ર મળેલું નથી. સંપૂર્ણ ૭૨૨-એકમ ગ્રંથનું કામ ચાલુ છે.}
+  \def\gueditionbodyfile{build/second-order-part-cumulative-body.tex}
+  \def\gueditionlabelsfile{build/second-order-part-cumulative-available-labels.tex}
+  \def\gueditioncorrectionids{અગાઉની નોંધો અને OLSOL-001થી OLSOL-020 સુધીની}
+  \def\gueditioneditorial{%
+    નવા ભાગમાં દ્વિતીય-ક્રમ તર્કશાસ્ત્રની વાક્યરચના, અર્થવિચાર,
+    અધિતર્કસિદ્ધાંત અને ગણસિદ્ધાંત સામેલ છે. સ્થિર મૂળ પોતે આ
+    ભાગને પ્રારંભિક અને અધૂરો કહે છે; ઓળખેલી વીસ ખામીઓના
+    મર્યાદિત સુધારા દેખાતી નોંધો સાથે મૂક્યા છે.}
+  \ProvideDocumentCommand{\TrmSOL}{o}{%
+    \IfNoValueTF{#1}{\mathrm{Trm}^2}{\mathrm{Trm}^2(\Lang{#1})}}
+  \ProvideDocumentCommand{\FrmSOL}{o}{%
+    \IfNoValueTF{#1}{\mathrm{Frm}^2}{\mathrm{Frm}^2(\Lang{#1})}}
+  \ProvideDocumentCommand{\Sent}{o}{%
+    \IfNoValueTF{#1}{\mathrm{Sent}}{\mathrm{Sent}(\Lang{#1})}}
+\fi
 \input{gu-tableaux.tex}

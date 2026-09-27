@@ -1,0 +1,81 @@
+% Part: second-order-logic
+% Chapter: metatheory
+% Section: compactness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{met}{com}
+
+\olsection{દ્વિતીય-ક્રમ તર્કશાસ્ત્ર સઘન નથી}
+
+\begin{explain}
+વાક્યોનો ગણ~$\Gamma$ \emph{સાન્ત રીતે સંતોષ્ય} ત્યારે કહેવાય જ્યારે
+તેનો દરેક સાન્ત ઉપગણ સંતોષ્ય હોય. પ્રથમ-ક્રમ તર્કશાસ્ત્રમાં ગુણધર્મ છે
+કે !!{sentence}sનો ગણ~$\Gamma$ સાન્ત રીતે સંતોષ્ય હોય તો તે પોતે
+સંતોષ્ય છે. આ ગુણધર્મને \emph{સઘનતા} કહે છે. ફલિતતા દ્વારા તેનું
+સમકક્ષ સ્વરૂપ છે: $\Gamma \Entails !A$ હોય તો કોઈ સાન્ત ઉપગણ
+$\Gamma_0 \subseteq \Gamma$ માટે પણ $\Gamma_0 \Entails
+!A$. આ સ્વરૂપમાં તે પૂર્ણતા પ્રમેયનું તત્કાલ અનુસિદ્ધાંત છે: જો
+$\Gamma \Entails !A$, તો પૂર્ણતા મુજબ $\Gamma \Proves !A$. પરંતુ
+!!{derivation},~$\Gamma$નાં માત્ર સાન્ત સંખ્યામાં !!{sentence}sનો
+ઉપયોગ કરી શકે છે.
+
+દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં સઘનતા સાચી નથી. દ્વિતીય-ક્રમ
+!!{sentence}sના એવા ગણો છે જે સાન્ત રીતે સંતોષ્ય છે પરંતુ પોતે
+સંતોષ્ય નથી; અને એવા ગણો પણ છે જે અમુક~$!A$ને ફલિત કરે છે,
+પરંતુ તેમનો કોઈ સાન્ત ઉપગણ~$!A$ને ફલિત કરતો નથી.
+\end{explain}
+
+
+\begin{thm}
+\ollabel{thm:sol-not-compact}
+દ્વિતીય-ક્રમ તર્કશાસ્ત્ર સઘન નથી.
+\end{thm}
+\sourcecorrection{OLSOL-011}{સ્થિર અંગ્રેજી મૂળમાં આ પ્રમેયનું
+\texttt{thm:sol-undecidable} લેબલ અગાઉના અનિર્ણેયતા પ્રમેયનું લેબલ
+જ ફરી વાપરે છે. બે અલગ પરિણામોને એક જ લેબલ ન રહે તે માટે અહીં
+\texttt{thm:sol-not-compact} આપ્યું છે.}
+
+\begin{proof}
+યાદ કરો કે
+\[
+\fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
+      \lif \eq[x][y])]] \land \lexists[y][\lforall[x][\eq/[y][u(x)]]])]
+\]
+એવું વાક્ય છે જે !!a{structure}માં ત્યારે અને માત્ર ત્યારે જ
+સંતોષાય જ્યારે તેનું વ્યાપકક્ષેત્ર અનંત હોય. $!A^{\ge n}$ એવું
+વાક્ય હોય જે વ્યાપકક્ષેત્રમાં ઓછામાં ઓછા $n$ !!{element}s છે એમ કહે;
+દાખલા તરીકે,
+\[
+!A^{\ge n} \ident \lexists[x_1][\dots\lexists[x_n][(\eq/[x_1][x_2]
+    \land \eq/[x_1][x_3] \land \dots \land \eq/[x_{n-1}][x_n])]].
+\]
+આ !!{sentence}sનો ગણ વિચારો:
+\[
+\Gamma = \{\lnot \fn{Inf}, !A^{\ge 1}, !A^{\ge 2}, !A^{\ge 3}, \dots\}.
+\]
+તે સાન્ત રીતે સંતોષ્ય છે: મનસ્વી સાન્ત ઉપગણ~$\Gamma_0
+\subseteq \Gamma$ માટે ઓછામાં ઓછો એક $k$ એવો પસંદ કરી શકાય કે
+$!A^{\ge k} \in \Gamma$ અને $n>k$ માટે પસંદ કરેલા સાન્ત ઉપગણમાં
+કોઈ $!A^{\ge n}
+\in \Gamma_0$ ન હોય. જો $\Domain{M}$માં $k$ !!{element}s હોય,
+તો $\Sat{M}{\Gamma_0}$. પરંતુ~$\Gamma$ સંતોષ્ય નથી: જો
+$\Sat{M}{\lnot \fn{Inf}}$, તો~$\Domain{M}$ સાન્ત હોવું જોઈએ;
+માનો તેનું કદ~$k$ છે. ત્યારે $\Sat/{M}{!A^{\ge k+1}}$.
+\sourcecorrection{OLSOL-012}{સ્થિર અંગ્રેજી મૂળ સાન્ત ઉપગણની
+દલીલમાં $n>k$ માટે $!A^{\ge n}$ આખા $\Gamma$માં નથી એમ કહે છે,
+પરંતુ એ બધા વાક્યો $\Gamma$માં છે. અહીં તે શરત પસંદ કરેલા સાન્ત
+ઉપગણ~$\Gamma_0$ માટે મૂકી છે. તેમાં કદની એક પણ શરત ન હોય તો
+ઓછામાં ઓછું એક ઘટક ધરાવતું નિદર્શ લેવા $k$ને એક લઈ શકાય છે.}
+\end{proof}
+
+\begin{prob}
+એવો ગણ~$\Gamma$ અને !!a{sentence}~$!A$નું ઉદાહરણ આપો કે
+$\Gamma \Entails !A$, પરંતુ દરેક સાન્ત ઉપગણ~$\Gamma_0 \subseteq
+\Gamma$ માટે $\Gamma_0 \Entails/ !A$.
+\end{prob}
+
+
+\end{document}

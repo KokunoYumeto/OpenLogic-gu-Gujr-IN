@@ -1,0 +1,39 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{sem}
+\olsection{અર્થવિચારી ખ્યાલો}
+
+\begin{explain}
+\emph{પ્રામાણ્ય}, \emph{ફલિતતા} અને \emph{સંતોષ્યતા}ના કેન્દ્રીય
+તાર્કિક ખ્યાલો દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં પ્રથમ-ક્રમ તર્કશાસ્ત્રની
+જેમ જ વ્યાખ્યાયિત થાય છે; માત્ર તેમનો પાયાનો સંતોષ-સંબંધ હવે
+દ્વિતીય-ક્રમ !!{formula}s માટેનો છે. અલબત્ત, દ્વિતીય-ક્રમ
+!!{sentence} એવું !!a{formula} છે જેમાં વિધેયધર્મ-ચલો અને
+વિધેય-ચલો સહિત બધા ચલો બદ્ધ હોય છે.
+\end{explain}
+
+\begin{defn}[પ્રામાણ્ય]
+વાક્ય~$!A$ \emph{પ્રમાણભૂત}, $\Entails !A$, ત્યારે અને માત્ર ત્યારે જ
+જ્યારે દરેક !!{structure}~$\Struct M$ માટે $\Sat{M}{!A}$.
+\end{defn}
+
+\begin{defn}[ફલિતતા]
+વાક્યોનો ગણ~$\Gamma$, વાક્ય~$!A$ને \emph{ફલિત કરે} છે,
+$\Gamma \Entails !A$, ત્યારે અને માત્ર ત્યારે જ જ્યારે
+$\Sat{M}{\Gamma}$ હોય એવી દરેક !!{structure}~$\Struct M$ માટે
+$\Sat{M}{!A}$.
+\end{defn}
+
+\begin{defn}[સંતોષ્યતા]
+વાક્યોનો ગણ~$\Gamma$ \emph{સંતોષ્ય} છે જો કોઈ !!{structure}~$\Struct M$
+માટે $\Sat{M}{\Gamma}$. જો~$\Gamma$ સંતોષ્ય ન હોય, તો તેને
+\emph{અસંતોષ્ય} કહે છે.
+\end{defn}
+
+\end{document}

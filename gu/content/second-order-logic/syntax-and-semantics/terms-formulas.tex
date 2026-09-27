@@ -1,0 +1,88 @@
+% Part: second-order-logic
+% Chapter: syntax-and-semantics
+% Section: terms-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sol}{syn}{frm}
+
+\olsection{પદો અને \printtoken{P}{formula}}
+
+પ્રથમ-ક્રમ તર્કશાસ્ત્રની જેમ જ દ્વિતીય-ક્રમ તર્કશાસ્ત્રની અભિવ્યક્તિઓ
+પાયાના એવા સંકેતભંડોળમાંથી બને છે જેમાં \emph{!!{variable}s},
+\emph{!!{constant}s}, \emph{!!{predicate}s} અને ક્યારેક
+\emph{!!{function}s} હોય છે. તેમની સાથે તાર્કિક સંયોજકો, પરિમાણકો
+અને કૌંસ તથા અલ્પવિરામ જેવા વિરામસંકેતો જોડીને \emph{પદો} અને
+\emph{!!{formula}s} રચાય છે. ફરક એ છે કે વસ્તુઓ માટેના ચલો ઉપરાંત
+દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં સંબંધો અને વિધેયો માટેના ચલો પણ હોય છે,
+અને તેમના પર પરિમાણીકરણ કરી શકાય છે. આમ, દ્વિતીય-ક્રમ તર્કશાસ્ત્રના
+તાર્કિક સંકેતોમાં પ્રથમ-ક્રમ તર્કશાસ્ત્રના સંકેતો ઉપરાંત આનો સમાવેશ થાય છે:
+
+\begin{enumerate}
+\item દરેક સ્થાનસંખ્યા~$n$ માટે દ્વિતીય-ક્રમ સંબંધ-!!{variable}sનો
+  !!{denumerable}s ગણ: $\Obj V_0^n$, $\Obj V_1^n$, $\Obj V_2^n$, \dots
+\item દ્વિતીય-ક્રમ વિધેય-!!{variable}sનો !!{denumerable}s ગણ:
+  $\Obj u_0^n$, $\Obj u_1^n$, $\Obj u_2^n$, \dots
+\end{enumerate}
+
+જેમ આપણે પ્રથમ-ક્રમ ચલો~$\Obj v_i$ માટે $x$, $y$, $z$ને પરાચલો
+તરીકે વાપરીએ છીએ, તેમ~$\Obj V_i^n$ માટે $X$, $Y$, $Z$ વગેરે અને
+$\Obj u_i^n$ માટે $u$, $v$ વગેરે પરાચલો તરીકે વાપરીશું.
+
+\begin{explain}
+દ્વિતીય-ક્રમ ભાષાના અતાર્કિક સંકેતો પ્રથમ-ક્રમ ભાષાની જેમ જ, તેના
+!!{constant}s, !!{function}s અને !!{predicate}sની યાદી દ્વારા
+નિર્દિષ્ટ થાય છે.
+
+પ્રથમ-ક્રમ તર્કશાસ્ત્રમાં સામાન્ય રીતે !!{identity}~$\eq$નો પણ સમાવેશ
+કરવામાં આવે છે. પ્રથમ-ક્રમ તર્કશાસ્ત્રમાં કંઈ રસપ્રદ વ્યક્ત કરી શકાય
+તે માટે ભાષા~$\Lang{L}$ના અતાર્કિક સંકેતો બહુ મહત્વના છે. અલબત્ત,
+અતાર્કિક સંકેત વિના પણ કેટલાંક !!{sentence}s હોય છે, પરંતુ માત્ર~$\eq$
+વડે કંઈ રસપ્રદ કહેવું મુશ્કેલ છે. દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં સંબંધો
+અને વિધેયો માટે અનિયંત્રિત સંખ્યામાં ચલો હોવાથી, અતાર્કિક સંકેતોનો
+વિશેષ ભંડાર ન હોય તો પણ પ્રથમ-ક્રમ ભાષામાં કહી શકાય એવી વાતો કહી
+શકાય છે.
+\end{explain}
+
+\begin{defn}[દ્વિતીય-ક્રમ પદો]
+ભાષા~$\Lang L$નાં \emph{દ્વિતીય-ક્રમ પદો}નો ગણ~$\TrmSOL[L]$
+\olref[fol][syn][frm]{defn:terms}માં નીચેની કલમ ઉમેરવાથી વ્યાખ્યાયિત
+થાય છે:
+\begin{enumerate}
+\item જો $u$ કોઈ $n$-સ્થાની વિધેય-ચલ હોય અને $t_1$, \dots, $t_n$
+  પદો હોય, તો $\Atom{u}{t_1, \ldots, t_n}$ પદ છે.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+આમ, દ્વિતીય-ક્રમ પદ પ્રથમ-ક્રમ પદ જેવું જ હોય છે, સિવાય કે પ્રથમ-ક્રમ
+પદમાં જ્યાં !!a{function}~$\Obj{f^n_i}$ હોય ત્યાં દ્વિતીય-ક્રમ પદમાં
+તેના સ્થાને વિધેય-ચલ~$\Obj{u^n_i}$ હોઈ શકે.
+\end{explain}
+
+\begin{defn}[દ્વિતીય-ક્રમ \usetoken{s}{formula}]
+ભાષા~$\Lang L$નાં \emph{દ્વિતીય-ક્રમ !!{formula}s}નો
+ગણ~$\FrmSOL[L]$, \olref[fol][syn][frm]{defn:formulas}માં નીચેની કલમો
+ઉમેરવાથી વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item જો $X$ કોઈ $n$-સ્થાની વિધેયધર્મ-ચલ હોય અને $t_1$, \dots,
+  $t_n$ ભાષા~$\Lang L$નાં દ્વિતીય-ક્રમ પદો હોય, તો
+  $\Atom{X}{t_1,\ldots, t_n}$ આણ્વિક !!{formula} છે.
+
+\tagitem{prvAll}{જો $!A$ !!a{formula} હોય અને $u$ વિધેય-ચલ હોય,
+  તો $\lforall[u][!A]$ !!a{formula} છે.}{}
+
+\tagitem{prvAll}{જો $!A$ !!a{formula} હોય અને $X$ વિધેયધર્મ-ચલ હોય,
+  તો $\lforall[X][!A]$ !!a{formula} છે.}{}
+
+\tagitem{prvEx}{જો $!A$ !!a{formula} હોય અને $u$ વિધેય-ચલ હોય,
+  તો $\lexists[u][!A]$ !!a{formula} છે.}{}
+
+\tagitem{prvEx}{જો $!A$ !!a{formula} હોય અને $X$ વિધેયધર્મ-ચલ હોય,
+  તો $\lexists[X][!A]$ !!a{formula} છે.}{}
+\end{enumerate}
+\end{defn}
+
+\end{document}

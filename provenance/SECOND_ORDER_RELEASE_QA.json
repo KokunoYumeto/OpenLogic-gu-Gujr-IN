@@ -1,0 +1,64 @@
+{
+  "schema": "openlogic-gu-second-order-part-release-qa/1",
+  "checked_at_utc": "2026-09-27T07:19:00.211087+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_scope": "OLP-0322–0340 (19 new units); cumulative reader also contains OLP-0004–0273; OLP-0274–0321 absent",
+  "full_corpus_complete": false,
+  "public_coverage_before_release": 270,
+  "new_part": {
+    "units": 19,
+    "aligned_blocks": 241,
+    "linguistic_blocks_reviewed": 131,
+    "source_math_spans": 709,
+    "glossary_markers": 252,
+    "source_correction_notes": 20,
+    "untranslated_ordinary_prose_findings": 0
+  },
+  "pdfs": [
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Part.pdf",
+      "role": "human_readable_part_preview",
+      "bytes": 332634,
+      "sha256": "899667d2a1a5c7744fe9195756b31c9c3ea66200ed2fdefbc6dd4223f032a90f",
+      "pages": 17,
+      "page_selection_from_cumulative_one_based": [
+        1,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349
+      ]
+    },
+    {
+      "filename": "OpenLogic-gu-Gujr-IN-Second-Order-Cumulative.pdf",
+      "role": "noncontiguous_cumulative_reader",
+      "bytes": 3083385,
+      "sha256": "67ff7f586e3c19c3d9a673ad3139b5ad9c94e36cf1e2af2a2fa34ea1cc36d6a5",
+      "pages": 349
+    }
+  ],
+  "tex": {
+    "passes": 3,
+    "errors": 0,
+    "missing_glyphs": 0,
+    "undefined_references": 0,
+    "new_part_overfull_hboxes": 0
+  },
+  "font": "NotoSansGujarati-Regular embedded",
+  "visual_qa": "corrected cover and all 16 new content pages inspected; no observed clipping or overlap",
+  "model_disclosure": "OpenAI Codex GPT-6 Sol, Ultra effort for all 19 new units",
+  "review_limitation": "Same-agent source/canon and semantic review; no independent Gujarati specialist certification",
+  "status": "new_part_source_and_pdf_qa_passed_publication_pending"
+}
