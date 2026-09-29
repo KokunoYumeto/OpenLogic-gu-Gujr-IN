@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0642",
+  "checked_at_utc": "2026-09-28T16:21:05.054700+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0642 Fraktur alphabet reference table; state-only draft",
+  "report": {
+    "unit_id": "OLP-0642",
+    "source_path": "content/reference/fraktur-alphabet/fraktur-alphabet.tex",
+    "source_sha256": "1d7fdf353e1d5a1bc8ad310f7674e55e711e6979d7395558ba7f92a213d8550b",
+    "draft_path": "private-state\\work\\batch044_draft\\fraktur-alphabet.tex",
+    "draft_sha256": "124b8bf1c725b4986bbd84c5970107f1ad7ab1dab6b901e7350c356dd2512ed7",
+    "aligned_blocks": 6,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 52,
+    "target_math_spans_after_corrections": 52,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 5,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "llll@{\\qquad}llll",
+        "count": 1,
+        "reason": "Exact TeX column-layout specification, retained from the frozen source."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0572",
+  "checked_at_utc": "2026-09-28T02:02:14.223950+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0572 Reflection in ZF and Weak-Reflection implying Replacement over Z; state-only draft",
+  "report": {
+    "unit_id": "OLP-0572",
+    "source_path": "content/set-theory/replacement/refproofs.tex",
+    "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+    "draft_path": "private-state\\work\\batch044_draft\\replacement-refproofs.tex",
+    "draft_sha256": "59ffa777cf0c76bd7e19f108264661fabf8aeb08f95007fe18de0d5e18d78ff8",
+    "aligned_blocks": 19,
+    "linguistic_blocks": 16,
+    "source_math_spans_correction_aware": 113,
+    "target_math_spans_after_corrections": 113,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-121",
+      "OLMD-122",
+      "OLMD-123",
+      "OLMD-124"
+    ],
+    "source_detector_ascii_tokens": 523,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\phi_i(\\overline{a}_i, x))\n\\]",
+        "\\phi_i(\\overline{a}_i, x)\n\\]"
+      ],
+      [
+        "S &= \\bigcup_{m < \\omega} S_n.",
+        "S &= \\bigcup_{m < \\omega} S_m."
+      ],
+      [
+        "an apparently\nweaker formulation of Replacement",
+        "an apparently\nweaker formulation of Reflection"
+      ],
+      [
+        "$\\Setabs{y}{(\\exists x \\in A)\\phi(x,y}$",
+        "$\\Setabs{y}{(\\exists x \\in A)\\phi(x,y)}$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-ref.tex",
+        "sha256": "a30e46ee74ad749a3b8b6649bdd41678caef7a7eac88c5e417a13a2af7b8c5a1",
+        "terms": [
+          "\\ollabel{reflectionschema}",
+          "પ્રતિબિંબનનું પ્રરૂપ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-strength.tex",
+        "sha256": "03f286c59d3b3c75a84b22f1a0dc200e6cb82bbf5ee4354bcd801a8a48cca94a",
+        "terms": [
+          "\\ollabel{formularelativization}",
+          "સાપેક્ષીકરણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-foundation.tex",
+        "sha256": "ac0d027ab6f44ed014fe53f57a5851673abbf5cd3e9552848b7495f6eb50e0f1",
+        "terms": [
+          "પરંપરિત",
+          "નિયમિતતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-recursion.tex",
+        "sha256": "aeb5abe00df7192c8e56b9ed2a8dfef17660d4e5ef647f113090239df415f777",
+        "terms": [
+          "અનંતાતીત પુનરાવર્તન",
+          "\\ollabel{transrecursionfun}"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "OLMD-121 removes one unmatched closing parenthesis from the mu conditional; OLMD-122 replaces the free S_n by bound S_m in the omega-indexed union.",
+      "OLMD-123 corrects the prose subject from a weaker Replacement to a weaker Reflection principle; OLMD-124 closes phi(x,y) in the theorem's image set.",
+      "The source citation locators for Levy Theorem 2 and Theorem 6 are preserved as exact structural metadata, including their English locator words.",
+      "English connective and reason words inside inherited TeX align displays remain exact source formula annotations, not untranslated running prose.",
+      "The proof of simultaneous reflection relies on z=0 and z=1 being absolute in the transitive witness set, then separates cases because 0 and 1 differ.",
+      "A enters S as a parameter of psi via A=A; transitivity yields A subseteq S; the final Separation step uses the unique output already shown to lie in S."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citet[first\npart of Theorem 2]{Levy1960}",
+        "count": 1,
+        "reason": "Exact frozen citation locator and key for Levy's Theorem 2; citation metadata is preserved."
+      },
+      {
+        "literal": "\\citet[Theorem 6]{Levy1960}",
+        "count": 1,
+        "reason": "Exact frozen citation locator and key for Levy's Theorem 6; citation metadata is preserved."
+      },
+      {
+        "literal": "\\label{thm:replacement}",
+        "count": 1,
+        "reason": "The frozen theorem label is a structural cross-reference key, not English prose."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

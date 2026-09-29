@@ -1,0 +1,424 @@
+{
+  "schema": "openlogic-gu-contextual-choices/23",
+  "scope": "Complete Computability / Recursive Functions batch OLP-0208–0227; exact segment links and attestation limits",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "confidence_note": "Editorial confidence is qualitative and has not been calibrated as probability.",
+  "choices": [
+    {
+      "choice_id": "GU-T199",
+      "source_concept": "computation / computing / computability / computable",
+      "target_forms": "સંગણના / સંગણનીયતા / સંગણનીય",
+      "source_excerpt": "Computability; numerical computation; computable function",
+      "target_excerpt": "સંગણનીયતા; સંખ્યાત્મક ગણતરી; સંગણનીય વિધેય",
+      "segment_ids": [
+        "OLP-0208-B004",
+        "OLP-0210-B005",
+        "OLP-0210-B006",
+        "OLP-0210-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P077"
+      ],
+      "rationale": "સરકારી ગણિત પરિભાષા GU-P088 computation તથા computing માટે સંગણના સીધું આપે છે. આવૃત્તિમાં પહેલેથી ચાલતો સંગણનીયતા/સંગણનીય શબ્દકુટુંબ એ જ મૂળ પરથી ક્ષમતા અને વિધેયના ગુણ માટે વિસ્તરે છે. સ્રોતનું ઔપચારિક વર્ણન ગણિતીય અર્થ નક્કી કરે છે.",
+      "alternatives_considered": [
+        "ગણનક્ષમતા — ગણતરીની ક્ષમતા સમજાવે છે, પરંતુ આવૃત્તિના સ્થાપિત સંગણન શબ્દકુટુંબથી તૂટે છે."
+      ],
+      "uncertainty": "medium: સંગણના સીધું પ્રમાણિત છે; સંગણનીયતા તેનો સંદર્ભાધારિત વિસ્તાર છે",
+      "review_question": "સંગણનીયતા અને સંગણનીય વિધેય માટે આ શબ્દકુટુંબ ગુજરાતી ગણિતીય તર્કમાં યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T200",
+      "source_concept": "recursive functions / primitive recursion",
+      "target_forms": "પુનરાવર્તી વિધેયો / આદિમ પુનરાવર્તન",
+      "source_excerpt": "Recursive Functions; Primitive Recursion; recursion formula",
+      "target_excerpt": "પુનરાવર્તી વિધેયો; આદિમ પુનરાવર્તન; પુનરાવર્તન સૂત્ર",
+      "segment_ids": [
+        "OLP-0209-B004",
+        "OLP-0210-B005",
+        "OLP-0211-B004",
+        "OLP-0211-B005",
+        "OLP-0211-B007",
+        "OLP-0211-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P089",
+        "GU-P090",
+        "GU-P072"
+      ],
+      "rationale": "GU-P089 primitive માટે આદિમ અને GU-P090 recursion formula માટે પુનરાવર્તન સૂત્ર સીધું આપે છે. GU-P072નું ગણિતીય ગદ્ય પુનરાવર્તનનો વપરાશ દર્શાવે છે. આદિમ પુનરાવર્તન પૂરું તકનીકી સંયોજન સીધું મળ્યું નથી; જોડેની બે વ્યાખ્યાકારક સમીકરણો તેનો ચોક્કસ અર્થ નક્કી કરે છે.",
+      "alternatives_considered": [
+        "પ્રાથમિક પુનરાવર્તન — અર્થગ્રાહ્ય, પરંતુ તપાસેલી સરકારી નોંધ primitive માટે આદિમ આપે છે.",
+        "પુનરાવર્તનશીલ વિધેયો — શક્ય લાંબું સ્વરૂપ; હાલની આવૃત્તિના પુનરાવર્તી વ્યાખ્યા કુટુંબથી ઓછું સુસંગત."
+      ],
+      "uncertainty": "medium: ઘટકોને સીધો આધાર, સંપૂર્ણ specialist compound તાત્કાલિક",
+      "review_question": "આદિમ પુનરાવર્તનનું આ સંયુક્ત નામ ઔપચારિક બે-સમીકરણવાળી પદ્ધતિ માટે યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T201",
+      "source_concept": "composition / projection function",
+      "target_forms": "સંયોજન / પ્રક્ષેપ વિધેય",
+      "source_excerpt": "Composition; projection functions",
+      "target_excerpt": "સંયોજન; પ્રક્ષેપ વિધેયો",
+      "segment_ids": [
+        "OLP-0212-B004",
+        "OLP-0212-B005",
+        "OLP-0212-B007",
+        "OLP-0212-B008",
+        "OLP-0212-B009",
+        "OLP-0212-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P040",
+        "GU-P091"
+      ],
+      "rationale": "GU-P040 સંયોજિત વિધેય અને સંયોજનનો ક્રમ સ્પષ્ટ કરે છે. GU-P091 projection માટે પ્રક્ષેપ/પ્રક્ષેપણ અને યામાવકાશનું પ્રક્ષેપ આપે છે; આર્ગ્યુમેન્ટ પસંદ કરતું પ્રક્ષેપ વિધેય પારદર્શક વિસ્તાર છે. મૂળનું $\\Proj{n}{i}$ સમીકરણ ચોક્કસ કાર્ય નક્કી કરે છે.",
+      "alternatives_considered": [
+        "પ્રક્ષેપણ વિધેય — GU-P091માં પ્રક્ષેપણ પણ છે; વારંવાર વપરાતું નામ ટૂંકું રાખવા પ્રક્ષેપ પસંદ થયું."
+      ],
+      "uncertainty": "medium: સંયોજન સીધું અને projectionનો મૂળ શબ્દ સીધો; પૂર્ણ પ્રક્ષેપ વિધેય સંયોજન સંદર્ભાધારિત",
+      "review_question": "આર્ગ્યુમેન્ટ પસંદ કરનારા $\\Proj{n}{i}$ માટે પ્રક્ષેપ વિધેય યોગ્ય ગુજરાતી નામ છે?"
+    },
+    {
+      "choice_id": "GU-T202",
+      "source_concept": "arity / n-place function",
+      "target_forms": "આર્ગ્યુમેન્ટ-સંખ્યા / $n$-આર્ગ્યુમેન્ટવાળું વિધેય",
+      "source_excerpt": "the arity of a function is the number of arguments",
+      "target_excerpt": "વિધેયની આર્ગ્યુમેન્ટ-સંખ્યા એટલે તેના આર્ગ્યુમેન્ટોની સંખ્યા",
+      "segment_ids": [
+        "OLP-0212-B006",
+        "OLP-0212-B007",
+        "OLP-0212-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077"
+      ],
+      "rationale": "સ્રોત arityને તરત જ number of arguments તરીકે વ્યાખ્યાયિત કરે છે. ગુજરાતી સંયોજન એ જ અર્થને ખુલ્લો રાખે છે; GU-P077 ગાણિતિક તર્કમાં ચોકસાઈ અને સ્પષ્ટતા ધરાવતા ગદ્યનું ઉદાહરણ છે, આ ચોક્કસ શબ્દનું પ્રમાણ નથી.",
+      "alternatives_considered": [
+        "સ્થાનસંખ્યા — ટૂંકું, પણ અહીં વિધેયના આર્ગ્યુમેન્ટો ગણાય છે તે તાત્કાલિક સ્પષ્ટ થતું નથી."
+      ],
+      "uncertainty": "open: ચોક્કસ ગુજરાતી specialist labelનું સીધું પ્રમાણ મળ્યું નથી",
+      "review_question": "વિધેયની arity માટે આર્ગ્યુમેન્ટ-સંખ્યા યોગ્ય છે કે વધુ પ્રમાણિત શબ્દ છે?"
+    },
+    {
+      "choice_id": "GU-T203",
+      "source_concept": "unbounded search / partial recursive / general recursive",
+      "target_forms": "અનિયત મર્યાદા સુધીની શોધ / આંશિક પુનરાવર્તી / સામાન્ય પુનરાવર્તી",
+      "source_excerpt": "unbounded search; partial recursive functions; general recursive functions",
+      "target_excerpt": "અનિયત મર્યાદા સુધીની શોધ; આંશિક પુનરાવર્તી વિધેયો; સામાન્ય પુનરાવર્તી વિધેયો",
+      "segment_ids": [
+        "OLP-0210-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P089",
+        "GU-P090",
+        "GU-P074"
+      ],
+      "rationale": "શોધ માટે પૂર્વનિર્ધારિત સીમા ન હોવાનો અર્થ અનિયત મર્યાદા સુધીની શોધ દ્વારા સમજાવ્યો છે; તેનો અર્થ અનંત પગલાં પૂર્ણ કરવો એવો નથી. આંશિકનું મૂળ વિધેયને કેટલાક ઇનપુટ પર જ મૂલ્ય હોય તે દર્શાવે છે. GU-P088–090 ગણતરી અને પુનરાવર્તનના ઘટક શબ્દોને જ આધાર આપે છે; પૂર્ણ specialist નામો મૂળની વ્યાખ્યા પરથી રચાયા છે.",
+      "alternatives_considered": [
+        "અમર્યાદિત શોધ — ટૂંકું છે, પણ અનંત પ્રક્રિયા હંમેશાં પૂર્ણ થાય એવો ખોટો સંકેત આપી શકે છે."
+      ],
+      "uncertainty": "open: પૂર્ણ તકનીકી સંયોજનો માટે સીધું ગુજરાતી પ્રમાણ મળ્યું નથી",
+      "review_question": "આંશિક અને સામાન્ય પુનરાવર્તી વિધેયો તથા unbounded searchના આ નામો ગણિતીય રીતે સ્પષ્ટ છે?"
+    },
+    {
+      "choice_id": "GU-T204",
+      "source_concept": "characteristic function of a set or relation",
+      "target_forms": "ગણ અથવા સંબંધનું લક્ષણ વિધેય",
+      "source_excerpt": "characteristic function of a set or relation",
+      "target_excerpt": "ગણ અથવા સંબંધના લક્ષણ વિધેય",
+      "segment_ids": [
+        "OLP-0210-B006"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P077"
+      ],
+      "rationale": "મૂળના બાજુના વાક્યો આ વિધેયને સભ્યપદના હા/ના નિર્ણય સાથે જોડે છે. લક્ષણ એ ગણ કે સંબંધની સભ્યતા દર્શાવતું ગુણ ઓળખાવે છે; તપાસેલા ગુજરાતી ઉતારા આ આખું specialist નામ સીધું આપતા નથી.",
+      "alternatives_considered": [
+        "સૂચક વિધેય — ઉપયોગી સમકક્ષ હોઈ શકે છે, પણ હાલના તપાસેલા ઉતારામાં આ ચોક્કસ અર્થ માટે સીધું પ્રમાણ મળ્યું નથી."
+      ],
+      "uncertainty": "open: ચોક્કસ ગુજરાતી નામનું સીધું પ્રમાણ બાકી છે",
+      "review_question": "characteristic function માટે લક્ષણ વિધેય યોગ્ય છે કે સૂચક વિધેય વધારે સ્થાપિત છે?"
+    },
+    {
+      "choice_id": "GU-T205",
+      "source_concept": "primitive recursive functions / closure under composition and primitive recursion",
+      "target_forms": "આદિમ પુનરાવર્તી વિધેયો / સંયોજન અને આદિમ પુનરાવર્તન હેઠળ બંધ",
+      "segment_ids": [
+        "OLP-0213-B006",
+        "OLP-0213-B009",
+        "OLP-0213-B010",
+        "OLP-0213-B014"
+      ],
+      "consulted_passage_ids": [
+        "GU-P089",
+        "GU-P090",
+        "GU-P040"
+      ],
+      "rationale": "GU-P089 આદિમ અને GU-P090 પુનરાવર્તન સૂત્રને સીધો આધાર આપે છે; બે વ્યાખ્યાકારક સમીકરણો અને પાંચ બંધતા-શરતો પૂર્ણ તકનીકી અર્થ નક્કી કરે છે. GU-P040 વિધેય-સંયોજનની ગુજરાતી રજૂઆત આપે છે.",
+      "alternatives_considered": [
+        "પ્રાથમિક પુનરાવર્તી વિધેયો — ઘટક primitive માટે તપાસેલી સરકારી નોંધ આદિમ આપે છે."
+      ],
+      "uncertainty": "medium: ઘટકો સીધા પ્રમાણિત, પૂરું તકનીકી નામ સંદર્ભાધારિત",
+      "review_question": "આદિમ પુનરાવર્તી વિધેયો specialist ગુજરાતી વપરાશમાં યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T206",
+      "source_concept": "notation for primitive recursive functions",
+      "target_forms": "આદિમ પુનરાવર્તી વિધેયોનાં સંકેતન",
+      "segment_ids": [
+        "OLP-0214-B004",
+        "OLP-0214-B005",
+        "OLP-0214-B006",
+        "OLP-0214-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P090"
+      ],
+      "rationale": "GU-P077 સંકેતીકરણનું ગદ્ય આપે છે; મૂળના Comp અને Rec બંધારણો દરેક વિધેયને મળતું ઔપચારિક સંકેતન નક્કી કરે છે.",
+      "alternatives_considered": [
+        "નોટેશન — ઓળખાય છે, પરંતુ ગુજરાતી ગદ્યમાં સંકેતન વધુ પારદર્શક છે."
+      ],
+      "uncertainty": "medium: સંકેતીકરણનો ઘટક પ્રમાણિત, ચોક્કસ compound ખુલ્લું",
+      "review_question": "વિધેયના ઔપચારિક notation માટે સંકેતન યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T207",
+      "source_concept": "factorial / prime factorization",
+      "target_forms": "ક્રમગુણિત / અવિભાજ્ય અવયવીકરણ",
+      "segment_ids": [
+        "OLP-0216-B010",
+        "OLP-0216-B011",
+        "OLP-0219-B008",
+        "OLP-0220-B005"
+      ],
+      "consulted_passage_ids": [
+        "GU-P093",
+        "GU-P089"
+      ],
+      "rationale": "GU-P093માં factorial માટે ક્રમગુણિત અને factorization માટે અવયવીકરણ સીધું છે; GU-P089 prime માટે અવિભાજ્ય આપે છે.",
+      "alternatives_considered": [
+        "ફૅક્ટોરિયલ — મૂળ ઉચ્ચાર જાળવે છે પરંતુ સીધો પ્રમાણિત ગુજરાતી શબ્દ ઉપલબ્ધ છે."
+      ],
+      "uncertainty": "low: મુખ્ય ઘટકો સરકારી યાદીમાં સીધા",
+      "review_question": "અવિભાજ્ય અવયવીકરણનો સંયુક્ત પ્રયોગ યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T208",
+      "source_concept": "truncated subtraction",
+      "target_forms": "શૂન્યે અટકતી બાદબાકી",
+      "segment_ids": [
+        "OLP-0216-B012",
+        "OLP-0216-B013",
+        "OLP-0216-B015",
+        "OLP-0216-B017"
+      ],
+      "consulted_passage_ids": [
+        "GU-P094",
+        "GU-P077"
+      ],
+      "rationale": "GU-P094 truncated માટે છિન્ન આપે છે, પણ આ ખાસ બાદબાકીને નામ આપતું નથી. શૂન્યે અટકતી બાદબાકી એ બાજુના casesમાં x<y હોય ત્યારે 0 આપવાનો નિયમ સીધો કહે છે.",
+      "alternatives_considered": [
+        "છિન્ન બાદબાકી — glossary ઘટક અનુસરે છે, પરંતુ અહીં શૂન્યે અટકવાની ક્રિયા તરત સ્પષ્ટ કરતું નથી."
+      ],
+      "uncertainty": "open: પૂર્ણ તકનીકી નામનું સીધું પ્રમાણ મળ્યું નથી",
+      "review_question": "truncated subtraction માટે શૂન્યે અટકતી બાદબાકી યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T209",
+      "source_concept": "bounded minimization / bounded quantification",
+      "target_forms": "સીમાબદ્ધ લઘુત્તમીકરણ / સીમિત પરિમાણીકરણ",
+      "segment_ids": [
+        "OLP-0217-B010",
+        "OLP-0217-B011",
+        "OLP-0218-B004",
+        "OLP-0218-B005",
+        "OLP-0218-B006",
+        "OLP-0218-B008",
+        "OLP-0219-B005"
+      ],
+      "consulted_passage_ids": [
+        "GU-P092",
+        "GU-P090",
+        "GU-P077"
+      ],
+      "rationale": "GU-P092 bounded function/setમાં સીમિત આપે છે, આખાં specialist નામો નહીં. અહીં શોધની સ્વતંત્ર ઉપરની સીમા અને પરિમાણકનું z<y ક્ષેત્ર મૂળનાં સૂત્રોથી ચોક્કસ થાય છે.",
+      "alternatives_considered": [
+        "પરિબદ્ધ લઘુત્તમીકરણ — શક્ય વિકલ્પ, પરંતુ વર્તમાન ગદ્યમાં સીમાબદ્ધ ઉપરની સીમા વધુ સ્પષ્ટ કરે છે."
+      ],
+      "uncertainty": "open: બંને સંપૂર્ણ compound માટે સીધું પ્રમાણ નથી",
+      "review_question": "bounded minimization અને bounded quantification માટે આ જુદાં ગુજરાતી વિશેષણો યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T210",
+      "source_concept": "prime number / divisibility",
+      "target_forms": "અવિભાજ્ય સંખ્યા / અવયવ હોવો",
+      "segment_ids": [
+        "OLP-0219-B004",
+        "OLP-0219-B005",
+        "OLP-0219-B006",
+        "OLP-0219-B008",
+        "OLP-0219-B009"
+      ],
+      "consulted_passage_ids": [
+        "GU-P089",
+        "GU-P093"
+      ],
+      "rationale": "GU-P089 prime માટે અવિભાજ્ય અને GU-P093 factor માટે અવયવ સીધું આપે છે. x|yનું અસ્તિત્વવાળું સમીકરણ ભાગ્યતા નક્કી કરે છે; બે મૂળ-ભૂલો OLCMP-005–006માં બતાવેલી છે.",
+      "alternatives_considered": [
+        "મૂળ સંખ્યા — સામાન્ય બોલચાલમાં ગૂંચવાય; તપાસેલી ગણિત પરિભાષા અવિભાજ્ય આપે છે."
+      ],
+      "uncertainty": "low for component terms; divisibility prose context-controlled",
+      "review_question": "prime અને divides માટે આ શબ્દપ્રયોગ વિધેયોની પરિગણના સાથે સુસંગત છે?"
+    },
+    {
+      "choice_id": "GU-T211",
+      "source_concept": "finite sequence coding and concatenation",
+      "target_forms": "સાન્ત અનુક્રમનું સંકેતીકરણ / અનુક્રમોનું જોડાણ",
+      "segment_ids": [
+        "OLP-0220-B005",
+        "OLP-0220-B006",
+        "OLP-0220-B009",
+        "OLP-0220-B014",
+        "OLP-0220-B016",
+        "OLP-0220-B018",
+        "OLP-0220-B019"
+      ],
+      "consulted_passage_ids": [
+        "GU-P049",
+        "GU-P089",
+        "GU-P077",
+        "GU-P040"
+      ],
+      "rationale": "સાન્ત અને અવિભાજ્ય ઘટકોને તપાસેલા ગુજરાતી સ્ત્રોત આધાર આપે છે; કોડનું prime-power સૂત્ર અને append/concat સમીકરણો ચોક્કસ અર્થ નક્કી કરે છે. ખાલી અનુક્રમની સીમા OLCMP-007માં ખુલ્લી બતાવી છે.",
+      "alternatives_considered": [
+        "શ્રેણી — કેટલીક જગ્યાએ વપરાય છે, પરંતુ અગાઉની આવૃત્તિમાં ક્રમબદ્ધ ઘટકો માટે અનુક્રમ સ્થાપિત છે."
+      ],
+      "uncertainty": "medium: નામનો specialist compound સીધો મળ્યો નથી",
+      "review_question": "sequence concatenation માટે અનુક્રમોનું જોડાણ યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T212",
+      "source_concept": "tree, root, immediate subtree",
+      "target_forms": "વૃક્ષ, મૂળ, તત્કાલ ઉપવૃક્ષ",
+      "segment_ids": [
+        "OLP-0221-B004",
+        "OLP-0221-B005",
+        "OLP-0221-B006",
+        "OLP-0221-B007",
+        "OLP-0221-B008"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P040"
+      ],
+      "rationale": "તપાસેલા ઉતારા ચોક્કસ tree શબ્દાવલી સીધી આપતા નથી; મૂળ પોતે એક ગાંઠ અને તેના તત્કાલ ઉપવૃક્ષો વડે વૃક્ષનું પુનરાવર્તી નિરૂપણ કરે છે. GU-P077 ગણિતીય ગદ્ય અને GU-P040 વિધેય-રચનાની શૈલી આપે છે.",
+      "alternatives_considered": [
+        "નોડ / રૂટ — જાણીતા અંગ્રેજી લિપ્યાંતર, પરંતુ ગુજરાતી ગદ્યમાં ગાંઠ / મૂળ સ્પષ્ટ છે."
+      ],
+      "uncertainty": "open: ચોક્કસ specialist tree terminology માટે સીધું પ્રમાણ બાકી",
+      "review_question": "ઔપચારિક વૃક્ષ માટે ગાંઠ, મૂળ અને તત્કાલ ઉપવૃક્ષ યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T213",
+      "source_concept": "simultaneous and course-of-values recursion",
+      "target_forms": "એકસાથે પુનરાવર્તન / અગાઉનાં બધાં મૂલ્યો પર આધારિત પુનરાવર્તન",
+      "segment_ids": [
+        "OLP-0222-B004",
+        "OLP-0222-B005",
+        "OLP-0222-B006",
+        "OLP-0222-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P090",
+        "GU-P040",
+        "GU-P077"
+      ],
+      "rationale": "GU-P090 પુનરાવર્તન સૂત્રનો ઘટક આપે છે. પ્રથમ displayed scheme બે વિધેયોને એકસાથે નક્કી કરે છે; બીજીમાં અગાઉનાં મૂલ્યોનો પૂરો tuple ઉપલબ્ધ છે. લાંબું ગુજરાતી નામ એ ભેદ ખુલ્લો રાખે છે.",
+      "alternatives_considered": [
+        "મૂલ્ય-અનુક્રમી પુનરાવર્તન — ટૂંકું, પણ બધાં અગાઉના મૂલ્યો ઉપલબ્ધ છે તે ઓછું સ્પષ્ટ કરે છે."
+      ],
+      "uncertainty": "open: પૂર્ણ specialist નામ સીધું પ્રમાણિત નથી",
+      "review_question": "course-of-values recursion માટે ટૂંકું પ્રમાણિત ગુજરાતી નામ છે?"
+    },
+    {
+      "choice_id": "GU-T214",
+      "source_concept": "partial recursive function and unbounded search",
+      "target_forms": "આંશિક પુનરાવર્તી વિધેય / અનિયત મર્યાદા સુધીની શોધ",
+      "segment_ids": [
+        "OLP-0224-B004",
+        "OLP-0224-B005",
+        "OLP-0224-B008",
+        "OLP-0224-B009",
+        "OLP-0224-B010",
+        "OLP-0224-B011",
+        "OLP-0224-B012",
+        "OLP-0224-B014"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P090",
+        "GU-P032",
+        "GU-P077"
+      ],
+      "rationale": "સંગણના અને પુનરાવર્તનનાં ઘટકો પ્રમાણિત છે; આંશિક વિધેયનો પ્રદેશ અને µ-શોધમાં દરેક અગાઉનું મૂલ્ય વ્યાખ્યાયિત હોવાની શરત મૂળ વ્યાખ્યા નિયંત્રિત કરે છે.",
+      "alternatives_considered": [
+        "અમર્યાદિત શોધ — ટૂંકું, પણ દરેક ગણતરી અટકે એવો ગેરઅર્થ થઈ શકે છે."
+      ],
+      "uncertainty": "medium: ઘટકો પ્રમાણિત, સંપૂર્ણ specialist labels સંદર્ભાધારિત",
+      "review_question": "µ-શોધ અને આંશિક વિધેયોનો આ અનુવાદ પ્રોગ્રામના ન અટકવાના કિસ્સાને સ્પષ્ટ કરે છે?"
+    },
+    {
+      "choice_id": "GU-T215",
+      "source_concept": "Kleene normal form and index",
+      "target_forms": "ક્લીનીનું સામાન્ય સ્વરૂપ / સૂચક",
+      "segment_ids": [
+        "OLP-0225-B004",
+        "OLP-0225-B005",
+        "OLP-0225-B006",
+        "OLP-0225-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P087",
+        "GU-P088",
+        "GU-P077"
+      ],
+      "rationale": "GU-P087 normal માટે સામાન્ય સહિતનાં સ્વરૂપો આપે છે; આખું normal-form theorem સીધું નથી. સૂત્ર T(e,x,s), U(s) અને ગણતરીના કોડ તરીકે eની ભૂમિકા સૂચકનો અર્થ નક્કી કરે છે.",
+      "alternatives_considered": [
+        "પ્રમાણભૂત સ્વરૂપ — contextમાં શક્ય, પણ તપાસેલી normal નોંધમાં સામાન્ય પણ છે."
+      ],
+      "uncertainty": "open: eponymous theorem compoundનું સીધું પ્રમાણ નથી",
+      "review_question": "normal form theorem અને program index માટે આ શબ્દો યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T216",
+      "source_concept": "halting problem / regular function / general recursive",
+      "target_forms": "અટકવાની સમસ્યા / નિયમિત વિધેય / સામાન્ય પુનરાવર્તી વિધેય",
+      "segment_ids": [
+        "OLP-0226-B004",
+        "OLP-0226-B005",
+        "OLP-0226-B006",
+        "OLP-0226-B007",
+        "OLP-0226-B008",
+        "OLP-0227-B005",
+        "OLP-0227-B006",
+        "OLP-0227-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P088",
+        "GU-P090",
+        "GU-P077"
+      ],
+      "rationale": "મૂળની h(e,x) વ્યાખ્યા ગણતરી અટકવાનો હા/ના નિર્ણય અને વિકર્ણ-વિરોધાભાસ નક્કી કરે છે. નિયમિત વિધેયનું દરેક પ્રાચલ-અનુક્રમ માટે શૂન્ય મળવું અને સામાન્ય પુનરાવર્તી ગણનો સંપૂર્ણતા-દાવો બાજુની વ્યાખ્યાથી નિયંત્રિત છે; તપાસેલા ઉતારા પૂર્ણ નામો આપતા નથી.",
+      "alternatives_considered": [
+        "હાલ્ટિંગ સમસ્યા — specialist માટે ઓળખાય, પણ અટકવાની સમસ્યા અર્થ તરત ખોલે છે."
+      ],
+      "uncertainty": "open: સંપૂર્ણ specialist labels માટે સીધું પ્રમાણ બાકી",
+      "review_question": "અટકવાની સમસ્યા અને નિયમિત વિધેય ગણિતીય તર્કના ગુજરાતી વાચક માટે યોગ્ય છે?"
+    }
+  ],
+  "status": "complete_draft_choices_same_agent_semantic_review_passed_reader_qa_pending"
+}

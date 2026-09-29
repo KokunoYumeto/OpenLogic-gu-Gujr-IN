@@ -1,0 +1,200 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: schemas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sch}
+
+\olsection{સૂત્ર-ઢાંચા અને માન્યતા}
+
+\begin{defn}
+  \emph{સૂત્ર-ઢાંચો} એ !!{formula}sનો એવો ગણ છે જેમાં
+  કોઈ મોડલ !!{formula}~$!C$ના બધા અને માત્ર બધા
+  પ્રતિસ્થાપન દૃષ્ટાંતો હોય; એટલે કે,
+  \[
+  \Setabs{!B}{\lexists[!D_1], \dots, \lexists[!D_n] \left(!B =
+  \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \right) }.
+  \]
+  !!{formula}~$!C$ને આ સૂત્ર-ઢાંચાનું \emph{લક્ષણરૂપ}
+  !!{formula} કહે છે; !!{propositional
+  variable}sનાં નામ બદલવા સિવાય તે અનન્ય છે.
+  !!^a{formula}~$!A$ આ ગણનું સભ્ય હોય તો તેને
+  સૂત્ર-ઢાંચાનો \emph{દૃષ્ટાંત} કહે છે.
+\end{defn}
+
+અણુ-ઘટકોને બદલે `$!A$', `$!B$',~\dots{} મૂકી
+$!C$માંથી મળતી અધિભાષાકીય અભિવ્યક્તિ વડે
+સૂત્ર-ઢાંચો દર્શાવવો અનુકૂળ છે. તેથી, દાખલા તરીકે,
+`$!A$', `$!A \lif \Box!A$', `$!A \lif (!B \lif !A)$'
+નીચેના સૂત્ર-ઢાંચા દર્શાવે છે. તેમનાં લક્ષણરૂપ
+!!{formula}s અનુક્રમે $p$, $p \lif \Box p$, $p \lif (q
+\lif p)$ છે. `$!A$' સૂત્ર-ઢાંચો \emph{બધાં}
+!!{formula}sનો ગણ દર્શાવે છે.
+
+\begin{defn}
+  સૂત્ર-ઢાંચો તેના બધા દૃષ્ટાંતો નિદર્શનમાં સત્ય હોય
+  ત્યારે અને માત્ર ત્યારે જ તે નિદર્શનમાં \emph{સત્ય} છે;
+  અને તે દરેક નિદર્શનમાં સત્ય હોય ત્યારે અને માત્ર
+  ત્યારે જ \emph{માન્ય} છે.
+\end{defn}
+
+\begin{prop}\ollabel{prop:Kvalid}
+  નીચેનો સૂત્ર-ઢાંચો \Ax{K} માન્ય છે:
+  \begin{equation*}
+  \Box(!A \lif !B) \lif (\Box !A \lif \Box !B). \tag{\Ax{K}}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  સૂત્ર-ઢાંચાના બધા દૃષ્ટાંતો દરેક નિદર્શનના દરેક
+  જગતમાં સત્ય છે તે બતાવવું છે. તેથી કોઈપણ
+  $\mModel{M} = \tuple{W,R,V}$ અને $w \in
+  W$ લો. શરતી વિધાન જગતમાં સત્ય છે તે બતાવવા,
+  તેનો પૂર્વપક્ષ સત્ય માની તેનો ઉત્તરપક્ષ પણ સત્ય
+  છે તે બતાવીએ. અહીં $\mSat{M}{\Box(!A \lif !B)}[w]$
+  અને $\mSat{M}{\Box !A}[w]$ માનો. હવે
+  $\mSat{M}{\Box !B}[w]$ બતાવવું છે. તો $Rww'$
+  ધરાવતું કોઈપણ $w'$ લો. પ્રથમ ધારણા મુજબ
+  $\mSat{M}{!A \lif !B}[w']$ અને બીજી મુજબ
+  $\mSat{M}{!A}[w']$. તેથી $\mSat{M}{!B}[w']$.
+  $w'$ ગમે તે હતું, તેથી $\mSat{M}{\Box !B}[w]$.
+\end{proof}
+
+\begin{prop}\ollabel{prop:Dual-valid}
+  નીચેનો સૂત્ર-ઢાંચો \Dual{} માન્ય છે:
+  \begin{equation*}
+  \Diamond !A \liff \lnot\Box\lnot !A. \tag{\Dual}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][syn][sch]{prop:Dual-valid} સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:soundMP}
+  કોઈ નિદર્શનના એક જગતમાં $!A$ અને $!A \lif !B$
+  સત્ય હોય તો $!B$ પણ ત્યાં સત્ય છે. તેથી માન્ય
+  !!{formula}s મોડસ પોનેન્સ હેઠળ બંધ છે.
+\end{prop}
+
+\begin{prop}\ollabel{prop:valid-instances}
+  !!^a{formula}~$!A$ ત્યારે અને માત્ર ત્યારે જ માન્ય છે
+  જ્યારે તેના બધા પ્રતિસ્થાપન દૃષ્ટાંતો માન્ય હોય.
+  બીજા શબ્દોમાં, સૂત્ર-ઢાંચો ત્યારે અને માત્ર ત્યારે જ
+  માન્ય છે જ્યારે તેનું લક્ષણરૂપ !!{formula} માન્ય હોય.
+\end{prop}
+
+\begin{proof}
+  ``જો'' દિશા સ્પષ્ટ છે, કારણ કે $!A$ પોતાનો જ
+  પ્રતિસ્થાપન દૃષ્ટાંત છે.
+
+  ``માત્ર જો'' દિશા સાબિત કરવા નીચેનું બતાવીએ. માનો કે
+  $\mModel{M} = \tuple{W, R, V}$ મોડલ નિદર્શન છે,
+  અને $!B \ident
+  \SSubst{!A}{\subst{!D_1}{p_1},\dots,\subst{!D_n}{p_n}}$
+  એ~$!A$નો પ્રતિસ્થાપન દૃષ્ટાંત છે. $V'(p_i) =
+  \Setabs{w}{\mSat{M}{!D_i}[w]}$ મૂકી $\mModel{M'} = \tuple{W, R,
+    V'}$ વ્યાખ્યાયિત કરો. ત્યારે કોઈપણ~$w \in W$ માટે
+  $\mSat{M}{!B}[w]$ જો અને માત્ર જો $\mSat{M'}{!A}[w]$.
+  (આ દાવાનું પ્રમાણ અભ્યાસપ્રશ્ન તરીકે છોડીએ છીએ.)
+  હવે માનો કે $!A$ માન્ય છે, પણ તેનો કોઈ પ્રતિસ્થાપન
+  દૃષ્ટાંત $!B$ એ~$!A$નો હોવા છતાં માન્ય નથી. તો કોઈ $\mModel{M} =
+  \tuple{W, R, V}$ અને કોઈ $w \in W$ માટે
+  $\mSat/{M}{!B}[w]$. પરંતુ દાવા મુજબ ત્યારે
+  $\mSat/{M'}{!A}[w]$, એટલે $!A$ માન્ય નથી;
+  આ વિરોધાભાસ છે.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][syn][sch]{prop:valid-instances}ના પ્રમાણની
+  ``માત્ર જો'' દિશામાંનો દાવો સાબિત કરો. (સૂચન:
+  $!A$ પર આગમન વાપરો.)
+\end{prob}
+
+જોકે, સૂત્ર-ઢાંચો કોઈ નિદર્શનમાં સત્ય હોય ત્યારે
+અને માત્ર ત્યારે જ તેનું લક્ષણરૂપ સૂત્ર ત્યાં સત્ય
+હોય એવું સાચું નથી. ``માત્ર જો'' દિશા અલબત્ત સાચી છે:
+જો $!A$નો દરેક દૃષ્ટાંત~$\mModel{M}$માં સત્ય હોય,
+તો $!A$~પોતે પણ~$\mModel{M}$માં સત્ય છે. પરંતુ
+$!A$ એ~$\mModel{M}$માં સત્ય હોય છતાં $!A$નો કોઈ દૃષ્ટાંત
+$\mModel{M}$ના કોઈ જગતમાં અસત્ય હોઈ શકે છે. સરળ
+વિરોધી દૃષ્ટાંત માટે~$p$ લો અને માત્ર એક જગત~$w$ અને
+$V(p) = \{w\}$ ધરાવતું નિદર્શન લો; તેમાં $p$
+એ~$w$માં સત્ય છે. પરંતુ $\lfalse$ એ~$p$નો
+દૃષ્ટાંત છે અને~$w$માં સત્ય નથી.
+
+\begin{prob}
+  નીચેના !!{formula}sમાંથી એકેય માન્ય નથી તે બતાવો:
+  \begin{enumerate}
+    \item[\Ax{D}:] \quad $\Box p \lif \Diamond p$;
+    \item[\Ax{T}:] \quad $\Box p \lif p$;
+    \item[\Ax{B}:] \quad $p \lif \Box\Diamond p$;
+    \item[\Ax{4}:] \quad $\Box p \lif \Box \Box p$;
+    \item[\Ax{5}:] \quad $\Diamond p \lif \Box \Diamond
+      p$.
+  \end{enumerate}
+\end{prob}
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{માન્ય સૂત્ર-ઢાંચા}} & {\emph{અમાન્ય સૂત્ર-ઢાંચા}} \\
+      \hline\hline
+      $\Box(!A \lif !B) \lif (\Diamond !A \lif \Diamond !B)$
+      & $\Box (!A \lor !B) \lif (\Box !A \lor \Box !B)$ \\
+      $\Diamond (!A \lif !B) \lif (\Box !A \lif \Diamond
+      !B)$
+      & $(\Diamond !A \land \Diamond !B) \lif \Diamond (!A
+      \land !B)$\\
+      $\Box (!A \land !B) \liff (\Box !A \land \Box !B)$
+      & $!A \lif \Box !A$ \\
+      $\Box !A \lif \Box (!B \lif !A)$
+      & $\Box \Diamond !A \lif !B$ \\
+      $\lnot \Diamond !A \lif \Box (!A \lif !B)$
+      & $\Box \Box !A \lif \Box !A$ \\
+      $\Diamond (!A \lor !B) \liff (\Diamond !A \lor
+      \Diamond !B)$
+      & $\Box \Diamond !A \lif \Diamond \Box !A$. \\
+      \hline
+    \end{tabular}
+    \caption{માન્ય અને અમાન્ય સૂત્ર-ઢાંચા.}
+    \ollabel{tab:valid-invalidSchemas}
+\end{table}
+\sourcecorrection{OLMD-010}{સ્થિર અંગ્રેજી મૂળના કોષ્ટક-શીર્ષકમાં
+``and (or?) invalid'' એવો અનિર્ણીત સંપાદકીય કૌંસ છે.
+બંને સ્તંભની માન્યતા અને અમાન્યતા સાન્ત વિરોધી
+નિદર્શનો સામે તપાસીને ગુજરાતી શીર્ષકમાં તે કૌંસ દૂર કર્યો છે.}
+
+\begin{prob}%\ollabel{ex:in/validSchemas}
+  \olref[nml][syn][sch]{tab:valid-invalidSchemas}ના
+  પ્રથમ સ્તંભના સૂત્ર-ઢાંચા માન્ય છે અને બીજા સ્તંભના
+  સૂત્ર-ઢાંચા માન્ય નથી તે સાબિત કરો.
+\end{prob}
+
+\begin{prob}
+  નીચેના સૂત્ર-ઢાંચા માન્ય છે કે અમાન્ય, તે નક્કી કરો:
+  \begin{enumerate}
+  \item $(\Diamond !A \lif \Box !B) \lif (\Box !A \lif \Box
+    !B)$;
+  \item $\Diamond(!A \lif !B) \lor \Box(!B \lif !A)$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  નીચેના દરેક સૂત્ર-ઢાંચા માટે એવું નિદર્શન $\mModel{M}$
+  શોધો કે $\mModel{M}$માં તે !!{formula}નો દરેક દૃષ્ટાંત સત્ય હોય:
+  \begin{enumerate}
+  \item $p \lif \Diamond\Diamond p$;
+  \item $\Diamond p \lif \Box p$.
+  \end{enumerate}
+\end{prob}
+
+\end{document}

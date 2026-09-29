@@ -1,0 +1,191 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representable-comp
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rpc}
+\olsection{$\Th{Q}$માં નિરૂપ્ય વિધેયો સંગણનીય છે}
+
+$\Th{Q}$માં નિરૂપ્ય દરેક વિધેય
+સંગણનીય છે તે સાબિત કરીશું.
+પહેલાં~$\Th{Q}$માં નિરૂપ્ય વિધેયો
+વિશે એક લેમ્મા સ્થાપવો પડશે.
+
+\begin{lem}\ollabel{lem:rep-q}
+  $f(x_0,
+  \dots, x_k)$ વિધેય~$\Th{Q}$માં
+  નિરૂપ્ય હોય, તો એવું
+  !!a{formula}~$!A_f(x_0, \dots, x_k, y)$
+  છે કે
+  \sourcecorrection{OLINC-022}{સ્થિર અંગ્રેજી
+  મૂળના આ વાક્યમાં સૂત્રનું નામ
+  $!A$ લખાયું છે, પરંતુ અગાઉની
+  વ્યાખ્યા અને આ લેમ્માના તરત
+  પછીના વિધાનમાં તે $!A_f$ છે.
+  અહીં એ જ નામ સતત રાખ્યું છે.}
+  \[
+  \Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{m})
+  \quad\text{ત્યારે અને માત્ર ત્યારે}\quad m = f(n_0, \dots, n_k).
+  \]
+\end{lem}
+
+\begin{proof}
+  ``જો'' દિશા
+  \olref[int]{defn:representable-fn}\olref[int]{defn:rep:a}
+  પરથી મળે છે. ``માત્ર જો'' દિશા
+  આ પ્રમાણે મળે: માનો કે
+  $\Th{Q} \Proves !A_f(\num{n_0},
+  \dots, \num{n_k}, \num{m})$,
+  પરંતુ $m \neq f(n_0, \dots, n_k)$.
+  $l = f(n_0, \dots, n_k)$ લો.
+  \olref[int]{defn:representable-fn}\olref[int]{defn:rep:a}
+  પ્રમાણે $\Th{Q}
+  \Proves !A_f(\num{n_0}, \dots,
+  \num{n_k}, \num{l})$.
+  \olref[int]{defn:representable-fn}\olref[int]{defn:rep:b}
+  પ્રમાણે
+  $\lforall[y][(!A_f(\num{n_0}, \dots,
+  \num{n_k}, y) \lif \num{l} =
+  y)]$. તર્કના નિયમો અને
+  $\Th{Q} \Proves
+  !A_f(\num{n_0}, \dots,
+  \num{n_k}, \num{m})$ની ધારણા વડે
+  $\Th{Q} \Proves
+  \eq[\num{l}][\num{m}]$ મળે છે.
+  બીજી તરફ,
+  \olref[bre]{lem:q-proves-neq} પ્રમાણે
+  $\Th{Q} \Proves
+  \eq/[\num{l}][\num{m}]$.
+  એટલે $\Th{Q}$ અસંગત થાય.
+  પરંતુ એવું શક્ય નથી, કારણ કે
+  પ્રમાણભૂત નિદર્શ $\Th{Q}$ને સંતોષે
+  છે (જુઓ
+  \olref[int][def]{def:standard-model}),
+  $\Sat{N}{\Th{Q}}$; અને યથાર્થતા
+  પ્રમેય પ્રમાણે સંતોષી શકાય એવો
+  સિદ્ધાંત હંમેશાં સુસંગત હોય છે
+  (\tagrefs{prfAX/{fol:axd:sou:cor:consistency-soundness},
+  prfSC/{fol:seq:sou:cor:consistency-soundness},
+  prfND/{fol:ntd:sou:cor:consistency-soundness},
+  prfTab/{fol:tab:sou:cor:consistency-soundness}}).
+\end{proof}
+
+\begin{lem}
+$\Th{Q}$માં નિરૂપ્ય દરેક વિધેય
+સંગણનીય છે.
+\end{lem}
+
+\begin{proof}
+આ દાવો સાચો કેમ છે તેનો પહેલાં
+સહજ વિચાર જોઈએ. $f$ ગણવા માટે
+આ પ્રમાણે કરીએ. અંકગણિતની
+ભાષામાં શક્ય બધી
+!!{derivation}s~$\delta$ની યાદી
+બનાવીએ. આ યાંત્રિક રીતે શક્ય છે.
+દરેક માટે તપાસીએ કે તે
+$!A_f(\num{n_0}, \dots,
+\num{n_k}, \num{m})$ સ્વરૂપના
+!!a{formula}ની !!a{derivation}
+છે કે નહીં ($\Th{Q}$માં~$f$નું
+નિરૂપણ કરતું આ !!{formula}
+\olref{lem:rep-q}માંથી મળે છે).
+એવું હોય, તો \olref{lem:rep-q}
+પ્રમાણે $m = f(n_0, \dots, n_k)$
+અને~$f$નું મૂલ્ય મળી ગયું.
+શોધ પૂરી થાય છે, કારણ કે
+$\Th{Q} \Proves
+!A_f(\num{n_0}, \dots,
+\num{n_k}, \num{f(n_0, \dots,
+n_k)})$; તેથી આખરે યોગ્ય
+$\delta$ મળી જ રહેશે.
+
+આ દલીલ હજી સંપૂર્ણ ચોક્કસ નથી:
+આપણી પ્રક્રિયા માત્ર સંખ્યાઓને
+બદલે !!{derivation}s અને
+!!{formula}s પર કામ કરે છે;
+વળી ``શક્ય બધી !!{derivation}sની
+યાદી'' યાંત્રિક રીતે બનાવી
+શકાય તે પણ હજી સમજાવ્યું નથી.
+પરંતુ પદો, !!{formula}s અને
+!!{derivation}sને ગડેલ-સંખ્યાઓ
+આપી શકાય છે તે આપણે જોયું છે.
+સંગણનાનું ચોક્કસ નિદર્શ—સામાન્ય
+પુનરાવર્તી વિધેયો—પણ રજૂ કર્યું છે.
+અને $\Prf[\Th{Q}](d,y)$ સંબંધ,
+જે ત્યારે અને માત્ર ત્યારે સત્ય છે
+જ્યારે $d$ એ~$\Th{Q}$નાં
+સ્વયંસિદ્ધ વાક્યોમાંથી ગડેલ-સંખ્યા~$y$
+ધરાવતા !!{formula}ની
+!!a{derivation}ની ગડેલ-સંખ્યા
+હોય, (આદિમ) પુનરાવર્તી છે તે પણ
+જોયું છે. આગળ જરૂરી અન્ય આદિમ
+પુનરાવર્તી વિધેયો $\fn{num}$
+(\olref[art][trm]{prop:num-primrec})
+અને $\fn{Subst}$
+(\olref[art][sub]{prop:subst-primrec}) છે.
+આમાંથી લઘુત્તમીકરણ વડે~$f$
+વ્યાખ્યાયિત કરી શકાય; તેથી~$f$
+પુનરાવર્તી છે.
+
+પહેલાં આ વ્યાખ્યા આપો:
+\begin{multline*}
+  A(n_0, \dots, n_k, m) = \\
+  \fn{Subst}(\fn{Subst}(\dots\fn{Subst}(\Gn{!A_f}, \fn{num}(n_0), \Gn{x_0}),\\ \dots),
+  \fn{num}(n_k),  \Gn{x_k}), \fn{num}(m), \Gn{y})
+\end{multline*}
+આ જટિલ દેખાય છે, પરંતુ તે માત્ર
+$A(n_0, \dots, n_k,
+m) = \Gn{!A_f(\num{n_0}, \dots,
+\num{n_k}, \num{m})}$ વિધેય છે.
+
+હવે $R(n_0, \dots, n_k, s)$
+સંબંધ લો. $(s)_0$ એ
+$\Th{Q}$માંથી
+$!A_f(\num{n_0}, \dots,
+\num{n_k}, \num{(s)_1})$ની
+!!a{derivation}ની ગડેલ-સંખ્યા
+હોય ત્યારે આ સંબંધ સત્ય છે:
+\[
+R(n_0, \dots, n_k, s) \quad\text{ત્યારે અને માત્ર ત્યારે}\quad \Prf[\Th{Q}]((s)_0, A(n_0,
+\dots, n_k, (s)_1))
+\]
+$R(n_0, \dots, n_k, s)$ સત્ય થાય
+એવું~$s$ શોધીએ, તો સંખ્યાઓની
+જોડ~$(s)_0$ અને~$(s)_1$ મળે છે,
+જેમાં $(s)_0$ એ
+$A_f(\num{n_0}, \dots,
+\num{n_k}, \num{(s)_1})$ની
+!!a{derivation}ની ગડેલ-સંખ્યા છે.
+\sourcecorrection{OLINC-023}{સ્થિર અંગ્રેજી મૂળના
+આ ગદ્યમાં છેલ્લી દલીલ
+$(s)_1$ લખાઈ છે, જ્યારે તેના
+પહેલાંનું વિધાન અને સંબંધ બંનેમાં
+સૂત્રની અંદર અંકનિરૂપણ
+$\num{(s)_1}$ જરૂરી છે.
+અહીં ગદ્યને એ જ સૂત્ર સાથે
+મેળમાં કર્યું છે.}
+આમ~$s$ શોધવું એ અનૌપચારિક
+સાબિતીમાં~$d$ અને~$m$ની જોડ
+શોધવા જેવું છે. એવું~$s$
+``શોધતું'' સંગણનીય વિધેય નિયમિત
+લઘુત્તમીકરણ વડે વ્યાખ્યાયિત થાય.
+યાદ રાખો કે $R$ નિયમિત છે:
+દરેક $n_0$, \dots, $n_k$
+માટે $\Th{Q} \Proves
+!A_f(\num{n_0}, \dots,
+\num{n_k}, \num{f(n_0, \dots,
+n_k)})$નું કોઈ
+!!a{derivation}~$\delta$ છે;
+તેથી $s = \tuple{\Gn{\delta},
+f(n_0, \dots, n_k)}$ માટે
+$R(n_0, \dots, n_k, s)$ સત્ય છે.
+એટલે $f$ને આ પ્રમાણે લખી શકીએ:
+\[
+f(n_0,\dots,n_{k}) = (\umin{s}{R(n_0, \dots, n_k, s)})_1.
+\]
+\end{proof}
+
+\end{document}

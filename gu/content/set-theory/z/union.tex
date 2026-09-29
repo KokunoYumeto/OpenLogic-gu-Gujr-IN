@@ -1,0 +1,28 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{z}{union}
+\olsection{યોગગણ}
+
+\olref[sth][z][sep]{prop:intersectionsexist}માંથી આપણને છેદગણો
+મળ્યા. પરંતુ મનસ્વી યોગગણો અસ્તિત્વ ધરાવે એવું ઇચ્છીએ, તો
+બીજી સ્વયંસિદ્ધિ આપવી પડે:
+
+\begin{axiom}[યોગગણ]
+કોઈ પણ ગણ $A$ માટે ગણ $\bigcup A =
+\Setabs{x}{(\exists b \in A) x \in b}$ અસ્તિત્વ ધરાવે છે.
+\[
+\forall A \exists U \forall x(x \in U \liff (\exists b \in A)x \in b)
+\]
+\end{axiom}
+
+આ સ્વયંસિદ્ધિ પણ સંચયી-પુનરાવર્તી કલ્પનાથી યોગ્ય ઠરે છે.
+$A$ને ગણ લો; તેથી $A$ કોઈ તબક્કા $S$ પર રચાય છે
+(\stageshier પ્રમાણે). $A$નો દરેક સભ્ય $S$ની \emph{પહેલાં}
+રચાયો હતો (\stagesacc પ્રમાણે); તેથી એ જ રીતે વિચારતાં
+$A$ના દરેક સભ્યનો દરેક સભ્ય $S$ પહેલાં રચાયો હતો.
+આથી \emph{તે બધા} ગણો $S$ પહેલાં ઉપલબ્ધ છે, જેથી
+$S$ પર તેમનો ગણ રચી શકાય. અને તે ગણ બરાબર $\bigcup A$ છે.
+
+\end{document}

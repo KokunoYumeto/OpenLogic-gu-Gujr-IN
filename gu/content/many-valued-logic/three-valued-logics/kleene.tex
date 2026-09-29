@@ -1,0 +1,201 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: kleene
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{skl}
+
+\olsection{ક્લીની તર્કશાસ્ત્રો}
+
+સ્ટીફન ક્લીનીએ બે ત્રિમૂલ્ય તર્કશાસ્ત્રો રજૂ કર્યાં. તેમની પ્રેરણા
+એવા તર્કશાસ્ત્રમાંથી આવી જેમાં સત્યમૂલ્યોને સંગણનાત્મક પ્રક્રિયાઓના
+પરિણામો માનવામાં આવે છે: કોઈ પ્રક્રિયા $\True$ અથવા $\False$ આપી
+શકે, પણ તે અટકે જ નહિ એવું પણ બને. ત્યારે તેને અનુરૂપ સત્યમૂલ્ય
+અવ્યાખ્યાયિત હોય છે અને તેને~$\Undef$ વડે દર્શાવીએ છીએ.
+
+વિધાન~$!A$નો નિષેધ ગણવા માટે પહેલાં~$!A$નું મૂલ્ય ગણવું પડે અને
+પછી તેનું વિપરીત મૂલ્ય આપવું પડે. જો $!A$ની ગણતરી અટકે નહિ, તો
+આખી પ્રક્રિયા પણ અટકતી નથી; તેથી $\Undef$નો નિષેધ $\Undef$ છે.
+
+સંયોજન $!A \land !B$ ગણવાની બે રીતો છે. પહેલાં~$!A$ અને પછી
+$!B$ ગણીએ, તો બંનેનાં પરિણામ~$\True$ હોય ત્યારે જવાબ $\True$,
+અન્યથા $\False$ મળે. બેમાંથી એક પણ ગણતરી અટકે નહિ, તો આખી
+પ્રક્રિયા પણ અટકતી નથી. તેથી આ પદ્ધતિમાં એક ઘટક અવ્યાખ્યાયિત
+હોય, તો સંયોજન પણ અવ્યાખ્યાયિત છે. વિયોજન માટે પણ એવું જ છે.
+
+પરંતુ $!A$ અને $!B$ને સમાંતરે ગણાવી શકીએ તો વધુ સારું થાય.
+બેમાંથી એક પ્રક્રિયા અટકી $\False$ આપે, તો આપણે અટકી શકીએ,
+કારણ કે જવાબ ખોટો જ હશે. એટલે આ કિસ્સામાં એક ઘટક ખોટો હોય
+તો બીજો અવ્યાખ્યાયિત હોવા છતાં સંયોજન ખોટું છે. એવી જ રીતે,
+વિયોજન સમાંતરે ગણતાં કોઈ એક ઘટક સાચો નીકળે એટલે અટકી શકાય:
+વિયોજન સાચું જ હશે. આમ એક ઘટક અવ્યાખ્યાયિત હોય તોપણ સંયુક્ત
+વિધાનનું પરિણામ જાણી શકાય છે. આ અર્થઘટનમાં $\Undef$ને
+``અવ્યાખ્યાયિત'' કરતાં ``અજ્ઞાત'' તરીકે વાંચી શકીએ.
+
+આ બે અર્થઘટનોમાંથી ક્લીનીનાં પ્રબળ અને દુર્બળ તર્કશાસ્ત્રો મળે છે.
+પ્રેરણ સંયોજકને $\lnot !A \lor !B$ની સમકક્ષ તરીકે વ્યાખ્યાયિત કરીએ છીએ.
+
+\begin{defn}
+\emph{પ્રબળ ક્લીની તર્કશાસ્ત્ર}~$\LogKs$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી અને
+  અસત્ય-અચલ વિનાની પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$ની ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $\True$ છે; એટલે $V^+ = \{\True\}$.
+  \item સત્યવિધેયો નીચેની સારણીઓ વડે અપાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+\emph{દુર્બળ ક્લીની તર્કશાસ્ત્ર}~$\LogKw$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી અને
+  અસત્ય-અચલ વિનાની પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$ની ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $\True$ છે; એટલે $V^+ = \{\True\}$.
+  \item સત્યવિધેયો નીચેની સારણીઓ વડે અપાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$\\
+      $\False$ & $\False$ & $\Undef$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\True$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\sourcecorrection{OLMV-007}{સ્થિર અંગ્રેજી મૂળ બંને
+શ્રેણિકોમાં આખી પ્રમાણભૂત ભાષા~$\Lang L_0$ કહે છે;
+પરંતુ અગાઉ તેની અંદર અસત્ય-અચલ પણ છે, જ્યારે અહીં
+તેનું સત્યવિધેય અપાયું નથી. તેને અસત્ય મૂલ્ય આપીએ
+તોપણ તેના નિષેધથી પુનરુક્તિ મળે છે અને નીચેનું
+પ્રમેય ખોટું પડે છે. તેથી બંને શ્રેણિકોને અહીં
+ચોક્કસ ચાર-સંયોજક, અચલ વિનાની ઉપભાષા સુધી
+મર્યાદિત કરી છે.}
+
+\begin{prop}
+  $\LogKs$ અને $\LogKw$માં કોઈ પુનરુક્તિ નથી.
+\end{prop}
+
+\begin{proof}
+  બધાં !!{propositional variable}s~$p$ માટે જો
+  $\pAssign v(p) = \Undef$, તો કોઈ પણ સૂત્ર~$!A$નું સત્યમૂલ્ય
+  $\pValue v(!A) = \Undef$ હશે, કારણ કે બંને તર્કશાસ્ત્રોમાં
+  \[
+    \tf{\lnot}(\Undef) = \tf{\lor}(\Undef, \Undef) = \tf{\land}(\Undef,
+  \Undef) = \tf{\lif}(\Undef, \Undef) = \Undef
+  \]
+  અને $\LogKs$ કે $\LogKw$માંથી કોઈ પણ તર્કશાસ્ત્રમાં
+  $\Undef \notin V^+$.
+  તેથી આ !!{valuation} હેઠળ $!A$ નિર્દિષ્ટ નથી.
+\end{proof}
+
+પ્રબળ અને દુર્બળ ક્લીની તર્કશાસ્ત્રોમાં પુનરુક્તિ ન હોવા છતાં
+તેમના ફલિતતા-સંબંધો ગૌણ નથી.
+
+\begin{prob}
+  નીચેનામાંથી કયા સંબંધો (a)~પ્રબળ અને (b)~દુર્બળ ક્લીની
+  તર્કશાસ્ત્રમાં સાચા છે? દરેક માટે સત્યતાસારણી આપો.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+દિમિત્રી બોચ્વારે $\Undef$નો અર્થ ``નિરર્થક'' લીધો અને
+જૂઠ્ઠાણાના વિરોધાભાસ જેવા વિરોધાભાસો ઉકેલવા માટે વિરોધાભાસી
+વિધાનોને~$\Undef$ મૂલ્ય આપવાની દરખાસ્ત કરી. તેણે એવો તર્કશાસ્ત્ર
+રજૂ કર્યો જે મૂળભૂત રીતે વધારાના સંયોજકો સાથેનું દુર્બળ ક્લીની
+તર્કશાસ્ત્ર છે. એમાંથી બે ``બાહ્ય નિષેધ'' અને ``અવ્યાખ્યાયિત છે''
+કારક છે:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\sim}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\True$
+  \end{tabular}
+\quad
+  \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+
+\begin{prob}
+  બોચ્વારના તર્કશાસ્ત્રમાં $\lnot$ અને~$+$ વડે $\sim$ વ્યાખ્યાયિત
+  કરી શકાય છે? એટલે માત્ર !!{propositional
+  variable}~$p$ ધરાવતું અને $\sim$ વિનાનું એવું !!a{formula}
+  શોધો જેનું સત્યમૂલ્ય હંમેશાં~$\mathord{\sim}p$ જેટલું જ હોય.
+  તમારો જવાબ સાચો છે તે દર્શાવવા સત્યતાસારણી આપો.
+\end{prob}
+
+\end{document}

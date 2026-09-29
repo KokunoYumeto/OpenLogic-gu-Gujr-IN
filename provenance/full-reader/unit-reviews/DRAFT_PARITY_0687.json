@@ -1,0 +1,125 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0687",
+  "checked_at_utc": "2026-09-28T22:36:46.850360+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0687 Typed proof-term normalization and disclosed source proof gaps; state-only draft",
+  "report": {
+    "unit_id": "OLP-0687",
+    "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+    "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+    "draft_path": "private-state\\work\\batch044_draft\\propositions-as-types-normalization.tex",
+    "draft_sha256": "a47a68181954a2d4ca789dbef88c8815ed073cb79525961562af9117347b82e8",
+    "aligned_blocks": 24,
+    "linguistic_blocks": 19,
+    "source_math_spans_correction_aware": 205,
+    "target_math_spans_after_corrections": 205,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-280",
+      "OLMD-286",
+      "OLMD-281",
+      "OLMD-282",
+      "OLMD-283",
+      "OLPG-0687-SUBST",
+      "OLPG-0687-COPIED",
+      "OLPG-0687-CONTEXT",
+      "OLPG-0687-STRONG",
+      "OLMD-284",
+      "OLPG-0687-LOCAL",
+      "OLMD-285",
+      "OLPG-0687-NEWMAN"
+    ],
+    "source_detector_ascii_tokens": 1071,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "{\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}} &=\n  \\len{!A} + \\len{!B} + 1",
+        "{\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}} &=\n  \\len{!A_1} + \\len{!A_2} + 1"
+      ],
+      [
+        "\\maxrank{M} = \\max \\{\\cutrank{N} | N \\text{ is a sub term of } M \\text{\n    and is redex}\\}",
+        "\\maxrank{M} = \\max \\bigl(\\{0\\} \\cup \\{\\cutrank{N} | N \\text{ is a sub term of } M \\text{\n    and is redex}\\}\\bigr)"
+      ],
+      [
+        "$\\ore{i}{x_1}{P_1}{x_2}{P_2}$",
+        "$\\ore{x}{x_1}{P_1}{x_2}{P_2}$"
+      ],
+      [
+        "$\\cutrank{\\Subst{M}{N}{x}} = \\len{!A})$",
+        "$\\cutrank{\\Subst{M}{N}{x}} = \\len{!A}$"
+      ],
+      [
+        "Its cut rank is equal to\n        $\\cutrank{x}$, which is $\\len{!A}$.",
+        "Its cut rank is the type length $\\len{!A}$."
+      ],
+      [
+        "this reduces also to~$O_2$.",
+        "this reduces also to~$O_1'$."
+      ],
+      [
+        "N & = N_1' \\redone N_2'",
+        "N & = N_0' \\redone N_1'"
+      ],
+      [
+        "N & = N_1'' \\redone N_2''",
+        "N & = N_0'' \\redone N_1''"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ce-largest.tex",
+        "sha256": "ae78e79c4ea90271b0d4b62058cb04896efa8eb75c431dc1ababb1a6661db3e4",
+        "terms": [
+          "કટ-ક્રમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\propositions-as-types-introduction.tex",
+        "sha256": "155186e0b61e8569c20bafe561749675307dfaea18b9a0244e407fc91a6389e8",
+        "terms": [
+          "પ્રકારિત",
+          "સામાન્ય"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Seven visible formula or indexing repairs; six visible source proof-gap disclosures are retained in the translation.",
+      "Weak normalization is distinguished from the separately asserted strong normalization property.",
+      "Source proof gaps remain open; translation production and downstream chapters continue."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ is a sub term of }",
+        "target": "\\text{ એ }",
+        "count": 1
+      },
+      {
+        "source": "\\text{\n    and is redex}",
+        "target": "\\text{\n    નું સંકોચ્ય ઉપપદ છે}",
+        "count": 1
+      },
+      {
+        "source": "\\text{ and}",
+        "target": "\\text{ અને}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [
+      {
+        "path": "work/SOURCE_GAPS_048_0687.json",
+        "sha256": "f47267fc68d506eeed068c43a9e624b50fb4f87a963a2e5d6c879f4b43fcac5e"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 3
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

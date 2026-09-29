@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/35-0349-0350",
+  "checked_at_utc": "2026-09-27T04:31:39.495179+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0349–0350 two λ-computability directions; state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0349",
+      "source_path": "content/lambda-calculus/introduction/lambda-computable.tex",
+      "source_sha256": "20e9d844a65445b937ae3cf5547d1a336428f25a1fcc69813dcb186101918a5b",
+      "draft_path": "private-state\\work\\batch035_draft\\lambda-computable.tex",
+      "draft_sha256": "40ee0fcd30c885d16a3b80ce03d04fce4cd257decba42d0a584928b9fedcac64",
+      "aligned_blocks": 8,
+      "linguistic_blocks": 4,
+      "source_math_spans_correction_aware": 14,
+      "glossary_tokens": 2,
+      "source_correction_notes": [
+        "OLLAM-005"
+      ],
+      "source_detector_ascii_tokens": 158,
+      "target_untranslated_prose_findings": 0,
+      "math_structure_and_glossary_equal_after_keyed_correction": true
+    },
+    {
+      "unit_id": "OLP-0350",
+      "source_path": "content/lambda-calculus/introduction/computable-lambda.tex",
+      "source_sha256": "dc8ed2fba6b292e6a4e46bd081300c14b388a8109cbe617cee7a4e513d73743c",
+      "draft_path": "private-state\\work\\batch035_draft\\computable-lambda.tex",
+      "draft_sha256": "84f7704f2700d3e935ddcee5be7eca1e42a0b19e8507ea0f2364b6d9ccfb0930",
+      "aligned_blocks": 8,
+      "linguistic_blocks": 4,
+      "source_math_spans_correction_aware": 12,
+      "glossary_tokens": 7,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 178,
+      "target_untranslated_prose_findings": 0,
+      "math_structure_and_glossary_equal_after_keyed_correction": true
+    }
+  ],
+  "status": "draft_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

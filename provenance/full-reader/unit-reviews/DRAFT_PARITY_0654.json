@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0654",
+  "checked_at_utc": "2026-09-28T18:30:54.688492+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0654 Normal modal logics, closure rules, and K/Dual schemes; state-only draft",
+  "report": {
+    "unit_id": "OLP-0654",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/normal-modal-logics.tex",
+    "source_sha256": "a48f8fbe50c76b8ff8f0dfac091ee98f8e4a9e893637364e66c589945e4a8474",
+    "draft_path": "private-state\\work\\batch044_draft\\normal-modal-logics.tex",
+    "draft_sha256": "d9dd5059418b76df20b3a2dda852bbe69fb5beca5c24f452d17e7b9670805c7f",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 8,
+    "target_math_spans_after_corrections": 8,
+    "glossary_tokens": 11,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 234,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\propositional-logic\\syntax-and-semantics\\preliminaries.tex",
+        "sha256": "6e09c7fb6471727b1428cef8a3a2924baf47ad361c153244f3b11bdb0025e4e0",
+        "terms": [
+          "એકરૂપ પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\propositional-logic\\syntax-and-semantics\\semantic-notions.tex",
+        "sha256": "eee3e29aee65e0c560a6ab8f10de6f6c8bda20bc17bf6fc99533b0ee2d87b397",
+        "terms": [
+          "પુનરુક્તિ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "{defn:normal-modal-logic}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 1
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0588",
+  "checked_at_utc": "2026-09-28T03:13:58.503991+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0588 canonical pair ordering and simplification of infinite cardinal sums and products; state-only draft",
+  "report": {
+    "unit_id": "OLP-0588",
+    "source_path": "content/set-theory/card-arithmetic/simp.tex",
+    "source_sha256": "a606bab065a11c689b655ff8053e3e77894decb42b88e70605a981c129148da0",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-simp.tex",
+    "draft_sha256": "4f217a5c40f0d10bea591b7daaf9f2627651a24e4aadffac57024b6ca9f8aea3",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 16,
+    "source_math_spans_correction_aware": 70,
+    "target_math_spans_after_corrections": 70,
+    "glossary_tokens": 2,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 275,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "\\text{, by \\olref[ord-arithmetic][using-addition]{ordinfinitycharacter} and \r\n\t\\olref{simplecardproduct}}",
+        "\\text{, \\olref[ord-arithmetic][using-addition]{ordinfinitycharacter} અને \n\t\\olref{simplecardproduct} મુજબ}"
+      ],
+      [
+        "\\text{, by the induction hypothesis}",
+        "\\text{, અનુમાનની ધારણા મુજબ}"
+      ],
+      [
+        "\\text{, since $\\alpha$ is a cardinal}",
+        "\\text{, કારણ કે $\\alpha$ ગણાંક છે}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-opps.tex",
+        "sha256": "ce48855cdaaf5535f30cc6368c29f00d3970e99a82e008493858bcb36466feef",
+        "terms": [
+          "\\cardplus",
+          "\\cardtimes",
+          "\\ollabel{cardplustimescommute}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-using-addition.tex",
+        "sha256": "54c52a27923fcfb6fa3e156586066d9efc5232ab4df6ba4f70bca737d92e4210",
+        "terms": [
+          "\\ollabel{ordinfinitycharacter}",
+          "ડેડેકિન્ડ-અનંત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+        "sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+        "terms": [
+          "\\ollabel{lem:CardinalsBehaveRight}",
+          "ગણાંક"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\zig-zag.tex",
+        "sha256": "92267db5ab4560c2a1f3786ee174caeed444c59983cf2c63d0a452fb8a254923",
+        "terms": [
+          "\\ollabel{natsquaredenumerable}",
+          "\\Nat"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The canonical order is not ordinary lexicographic order: its primary key is max of the pair, followed by first and second coordinates.",
+      "The least-counterexample proof uses omega squared enumerable and then proves the counterexample cardinal; it does not assume every ordinal is a cardinal.",
+      "The displayed segment-size chain, including inherited English inside text annotations, is formula-exact.",
+      "The union proof chooses an injection for each beta; the cited later Countable Choice section also discusses this more general use of full Choice, and the current proof is in the ZFC background.",
+      "Reader-facing English explanations inside displayed mathematics are localized to Gujarati; variables, citations and mathematical relations retain their source meaning."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

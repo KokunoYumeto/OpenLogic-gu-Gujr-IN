@@ -1,0 +1,449 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: ce-largest
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{inv}
+
+\olsection{સર્વોચ્ચ ક્રમના કટ દૂર કરવાં}
+
+\olref[seq][inv]{lem:G3c-invert}ની સાબિતી બતાવે છે કે જો
+\Log{G3c} કોઈ તાર્કિક નિયમના નિષ્કર્ષને !!{prove}s
+(\RightR{\lexists} અને \LeftR{\lforall} સિવાય), તો તે
+સાબિતીની !!{height} વધાર્યા વિના તે નિયમનાં દરેક આધારવિધાનને
+પણ !!{prove}s. આથી વધુ બતાવી શકાય છે: આ વાત
+$\Log{G3c} + \CutCS$ માટે પણ સાચી છે.
+
+અગાઉની જેમ, \CutCS{} અનુમાનનો \emph{કટ-ક્રમ} તેના
+કટ !!{formula}ની ઊંડાઈ ગણીએ છીએ.
+
+\begin{lem}\ollabel{lem:inv-G3c-cut}
+જો $R$ એ \RightR{\lexists} કે \LeftR{\lforall}
+સિવાયનો તાર્કિક નિયમ હોય અને
+$\Log{G3c} + \CutCS$ !!a{proof}~$\pi$ વડે તેના
+નિષ્કર્ષને !!{prove}s, તો તે તેના દરેક આધારવિધાનને પણ
+!!{proof}~$\pi'$ વડે !!{prove}s (નિયમને બે
+આધારવિધાનો હોય તો !!{proof}s~$\pi'$ અને~$\pi''$ વડે).
+વધુમાં, (a)~$\pheight{\pi'}\le\pheight{\pi}$
+(અને $\pheight{\pi''}\le\pheight{\pi}$) તથા
+(b)~$\pi'$માં (અને $\pi''$માં) \CutCS{} અનુમાનોની
+સંખ્યા તેમજ તેમના ક્રમો~$\pi$માં જેટલાં જ હોય છે.
+\end{lem}
+
+\begin{proof}
+\cref{pt:seq:inv:lem:G3c-invert,pt:seq:inv:lem:invert-quant}ની
+સાબિતીઓ તપાસવાથી આ મળે છે. ત્યાં
+સાબિતી~$\pheight{\pi}$ પર આગમનથી હતી. આધારકિસ્સામાં
+એક સ્વયંસિદ્ધને બીજા સ્વયંસિદ્ધથી બદલ્યું હતું.
+આથી (a) અને~(b) સ્પષ્ટ રીતે સાચાં છે.
+જો~$\pi$નો છેલ્લો નિયમ~$R$ હોય, તો તેની તત્કાળ
+ઉપ-!!{proof}s જ જોઈતી !!{proof}s~$\pi_i$ છે,
+અને (a) તથા~(b) બંને સાચાં છે. બીજા બધા
+કિસ્સાઓમાં~$\pi$ની તત્કાળ ઉપ-!!{proof}s,
+એટલે છેલ્લા અનુમાન~$R$નાં આધારવિધાનો તરફ દોરી જતી
+ઉપસાબિતીઓ, પર આગમન-પૂર્વધારણા લગાવી
+અને પરિણામો પર એ જ નિયમ~$R$ ફરી લગાવ્યો.
+નવી સાબિતીની તત્કાળ ઉપ-!!{proof}s માટે (a) અને~(b)
+સાચાં છે, તેથી સમગ્ર સાબિતી માટે પણ સાચાં છે.
+છેલ્લું અનુમાન~\CutCS{} હોય તે કિસ્સો ચકાસવાનો રહે છે.
+અહીં ફરી માત્ર એક ઉદાહરણ લઈએ: માનો કે
+$\pi$ એ \LeftR{\land}ના નિષ્કર્ષ
+$!B \land !C, \Gamma \Sequent \Delta$ની
+!!a{proof} છે અને તેનો અંત~\CutCS{}થી થાય છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, !B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+આગમન-પૂર્વધારણા $\pi_1$ અને~$\pi_2$ પર લાગુ પડે છે
+(તેઓ પણ $\LeftR{\land}$ના નિષ્કર્ષનાં દૃષ્ટાંતોની
+!!{proof}s છે). તે અનુક્રમે
+$!B, !C, \Gamma \fCenter \Delta, !A$ અને
+$!A, !B, !C, \Gamma \fCenter \Delta$ની
+!!{proof}s~$\pi_1'$ અને~$\pi_2'$ આપે છે.
+તેમને \CutCS{} વડે જોડતાં~$\pi'$ મળે છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!A, !B, !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+અહીં (a) અને~(b) સ્પષ્ટ રીતે સચવાય છે.
+\end{proof}
+
+ધ્યાન આપો કે \CutCS{}ને બદલે \Cut{} વાપર્યું હોત
+તો આ રીત ચાલત નહીં. ત્યારે છેલ્લી !!{proof}ના
+નિષ્કર્ષના પૂર્વાંગમાં $!B, !C, \Gamma$ની બે નકલો
+અને ઉત્તરાંગમાં $\Delta$ની બે નકલો હોત.
+સંકોચનની સ્વીકાર્યતા લેવી પડત, પરંતુ
+\olref[seq][inv]{prop:G3c-cont-adm}ની સાબિતી
+ઉલટાવી શકવાની ઉપપ્રમેયનો ઉપયોગ કરે છે.
+એટલે દલીલ ચક્રીય બની જાય.
+
+\cref{pt:cut:inv:lem:inv-G3c-cut} વડે કટ-નિરાકરણની
+વૈકલ્પિક સાબિતી આપી શકાય. તેમાં \CutCS{}
+અનુમાનોના સૌથી ઉપરના દૃષ્ટાંતોને એક પછી એક
+દૂર કરવાને બદલે, સર્વોચ્ચ ક્રમનાં \CutCS{}
+અનુમાનોને દૂર કરીએ છીએ. એટલે,
+$\Log{G3c} + \CutCS$માં !!a{proof}~$\pi$ લઈને
+તેમાં ક્યાંય પણ રહેલો કટ દૂર કરીએ
+(કદાચ તેના સ્થાને નીચા ક્રમના કટ આવે)
+અને કટ ન રહે ત્યાં સુધી આ પ્રક્રિયા ચાલુ રાખીએ.
+માત્ર એટલી શરત છે કે જે કટને લઈએ તેની ઉપર
+સમાન કે વધુ ક્રમનો કોઈ કટ ન હોય.
+
+\begin{lem}\ollabel{lem:max-cut-red-G3c}
+જો $\pi$ એ $n$ ક્રમના~\CutCS{} અનુમાનથી પૂરી થતી
+$\Log{G3c}+\CutCS$ની !!a{proof} હોય, અને તે ઉપરાંત
+માત્ર~$\Log{G3c}$ના નિયમો તથા $<n$ ક્રમનાં
+\CutCS{} અનુમાનો વાપરતી હોય, તો એ જ અંતિમ
+સિક્વન્ટની એવી સાબિતી~$\pi'$ પણ
+$\Log{G3c} + \CutCS$માં છે જેમાં દરેક
+\CutCS{} અનુમાનનો ક્રમ~$<n$ છે.
+\end{lem}
+
+\begin{proof}
+!!{proof}~$\pi$નો અંત આ રીતે થાય છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+હવે~$!A$ના સ્વરૂપ પ્રમાણે કિસ્સા જુદા પાડીએ.
+
+માનો કે~$!A$ પરમાણ્વીય છે. શરત મુજબ
+~$\pi_1$ અને $\pi_2$માંનાં બધાં \CutCS{} અનુમાનોના
+ક્રમ $<\depth{!A} = 0$ હોવા જોઈએ;
+આથી~$\pi_1$ કે~$\pi_2$માં \CutCS{} અનુમાન હોઈ જ શકે નહીં.
+$\pheight{\pi_2}$ પર આગમનથી બતાવીએ કે
+$\Gamma \Sequent \Delta$ની કટ-મુક્ત સાબિતી છે.
+જો $\pheight{\pi_2} = 0$, તો
+$!A,\Gamma \Sequent \Delta$ સ્વયંસિદ્ધ છે.
+જો~$!A$ મુખ્ય ન હોય, તો કોઈ પરમાણ્વીય
+$!C$ એ~$\Gamma$ તથા $\Delta$ બંનેનું
+!!a{element} છે, એટલે
+$\Gamma \Sequent \Delta$ પોતે સ્વયંસિદ્ધ છે.
+જો~$!A$ મુખ્ય હોય, તો
+$\Delta = \Delta', !A$.
+\sourcecorrection{OLMD-196}{મૂળમાં $\Delta = \Delta, !A$ છે; અહીં બાકીના ઉત્તરાંગ માટે $\Delta'$ જરૂરી છે.}
+આ કિસ્સામાં~$\pi_1$નો અંત
+$\Gamma \Sequent \Delta', !A, !A$થી થાય છે.
+\olref[seq][inv]{prop:G3c-cont-adm}
+(સંકોચનની સ્વીકાર્યતા) લગાવીને
+$\Gamma \Sequent \Delta', !A$ની
+કટ-મુક્ત સાબિતી મળે છે.
+જો $\pheight{\pi_2} > 0$, તો તેનો અંત
+કોઈ નિયમ~$R$થી થાય છે. તે નિયમનું એક
+આધારવિધાન લો: તેનું સ્વરૂપ
+$!A, \Gamma',\Pi \Sequent \Delta',\Lambda$
+છે, જ્યાં $\Pi$ અને $\Lambda$ એ~$R$નાં
+સક્રિય !!{formula}s છે.
+\olref[seq][adm]{prop:weak-G3c-adm}ને
+~$\pi_1$ અને~$\pi_2$નાં યોગ્ય તત્કાળ
+ઉપ-સાબિતીઓ પર લગાવતાં
+$\Gamma,\Gamma',\Pi \Sequent
+\Delta,\Delta',\Lambda,!A$ અને
+$!A,\Gamma,\Gamma',\Pi \Sequent
+\Delta,\Delta',\Lambda$ની !!{proof}s મળે છે.
+\sourcecorrection{OLMD-197}{મૂળ લખાણ $\pi_2$ પર સીધું શિથિલીકરણ કહે છે; નિયમના આધારવિધાન સુધી પહોંચવા તેની યોગ્ય તત્કાળ ઉપ-સાબિતી જોઈએ.}
+તેના પર આગમન-પૂર્વધારણા લાગુ કરતાં
+~$R$ના દરેક આધારવિધાન માટે
+$\Gamma,\Gamma',\Pi \Sequent
+\Delta,\Delta',\Lambda$ની !!a{proof} મળે છે.
+પછી~$R$ લગાવતાં
+$\Gamma,\Gamma \Sequent \Delta,\Delta$ મળે છે;
+\olref[seq][inv]{prop:G3c-cont-adm} વડે
+$\Gamma \Sequent \Delta$ની કટ-મુક્ત
+સાબિતી મળે છે.
+
+જો~$!A$ પરમાણ્વીય ન હોય, તો તેના
+!!{main
+operator} પ્રમાણે~$!A$ના કિસ્સા જુદા પાડીએ.
+દરેક કિસ્સામાં \olref{lem:inv-G3c-cut}
+લગાવીને, $!A$ મુખ્ય સૂત્ર હોય તેવા
+ડાબા અને જમણા નિયમોના આધારવિધાનોની
+!!{proof}s મેળવીએ. પછી
+\olref[top]{lem:cut-adm-G3c}ની સાબિતીના
+કિસ્સા~E મુજબ આગળ વધીએ.
+\begin{enumerate}
+  \item $!A \ident \lnot !B$. !!{proof}s $\pi_1$ અને $\pi_2$નો
+  અંત $\Gamma \Sequent \Delta, \lnot !B$ અને
+  $\lnot !B, \Gamma \Sequent \Delta$થી થાય છે.
+  \olref{lem:inv-G3c-cut} મુજબ
+  $!B, \Gamma \Sequent \Delta$ અને
+  $\Gamma \Sequent \Delta, !B$ની
+  !!{proof}s $\pi_1'$ અને $\pi_2'$ છે.
+  !!{proof}~$\pi'$ આ છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \lor !C)$. !!{proof}s $\pi_1$ અને $\pi_2$નો
+  અંત $\Gamma \Sequent \Delta, !B \lor !C$ અને
+  $!B \lor !C, \Gamma \Sequent \Delta$થી થાય છે.
+  \olref{lem:inv-G3c-cut} વડે
+  ~$\pi_1$ પર \RightR{\lor}નું ઉલટાવવું
+  લગાવતાં $\Gamma \Sequent \Delta, !B, !C$ની
+  !!a{proof}~$\pi_1'$ મળે છે.
+  \olref{lem:inv-G3c-cut} વડે~$\pi_2$ પર
+  \LeftR{\lor}નું ઉલટાવવું લગાવતાં
+  $!B, \Gamma \Sequent \Delta$ની
+  !!a{proof}~$\pi_2'$ અને
+  $!C, \Gamma \Sequent \Delta$ની
+  !!a{proof}~$\pi_2''$ મળે છે.
+  $\pi_2''$ પર
+  \olref[seq][adm]{prop:weak-G3c-adm}
+  લગાવતાં $!C, \Gamma \Sequent \Delta, !B$ની
+  !!a{proof}~$\pi_2'''$ પણ મળે છે.
+  !!{proof}~$\pi'$ આ છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta, !B, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, \Gamma \fCenter \Delta, !B$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \land !C)$. કસરત.
+  \item $!A \ident (!B \lif !C)$. !!{proof}s $\pi_1$ અને $\pi_2$નો
+  અંત $\Gamma \Sequent \Delta, !B \lif !C$ અને
+  $!B \lif !C, \Gamma \Sequent \Delta$થી થાય છે.
+  \olref{lem:inv-G3c-cut} વડે
+  ~$\pi_1$ પર \RightR{\lif}નું ઉલટાવવું
+  લગાવતાં $!B, \Gamma \Sequent \Delta, !C$ની
+  !!a{proof}~$\pi_1'$ મળે છે.
+  \olref{lem:inv-G3c-cut} વડે~$\pi_2$ પર
+  \LeftR{\lif}નું ઉલટાવવું લગાવતાં
+  $\Gamma \Sequent \Delta, !B$ની
+  !!a{proof}~$\pi_2'$ અને
+  $!C, \Gamma \Sequent \Delta$ની
+  !!a{proof}~$\pi_2''$ મળે છે.
+  $\pi_2''$ પર
+  \olref[seq][adm]{prop:weak-G3c-adm}
+  લગાવતાં $!C, !B, \Gamma \Sequent \Delta$ની
+  !!a{proof}~$\pi_2'''$ પણ મળે છે.
+  !!{proof}~$\pi'$ આ છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident \lforall[x][!B(x)]$. !!{proof}s $\pi_1$ અને
+  $\pi_2$નો અંત $\Gamma \Sequent \Delta, \lforall[x][!B(x)]$
+  અને $\lforall[x][!B(x)], \Gamma \Sequent \Delta$થી થાય છે.
+  \olref{lem:inv-G3c-cut} મુજબ
+  $\Gamma \Sequent \Delta, !B(c)$ની
+  !!a{proof}~$\pi_1'$ છે.
+
+  હવે !!{proof}~$\pi_2$ લો. તેનો અંત
+  $\lforall[x][!B(x)], \Gamma \Sequent \Delta$થી
+  થાય છે. $\pi_2$ના અંતિમ સિક્વન્ટથી ઉપરની તરફ
+  જતાં, સિક્વન્ટની ડાબી બાજુ રહેલા
+  $\lforall[x][!B(x)]$ના એવા દરેક દૃષ્ટાંતને
+  ચિહ્નિત કરો જે $\pi_2$ના અંતિમ સિક્વન્ટમાં
+  એ જ $\lforall[x][!B(x)]$ના દૃષ્ટાંત સુધી પહોંચે છે. એટલે:
+  (a)~$\pi_2$ના અંતિમ સિક્વન્ટમાં
+  $\lforall[x][!B(x)]$ ચિહ્નિત કરો.
+  (b)~નિયમના નિષ્કર્ષના સંદર્ભમાં
+  $\lforall[x][!B(x)]$
+  ચિહ્નિત હોય તો તેના આધારવિધાનમાં અનુરૂપ
+  દૃષ્ટાંત ચિહ્નિત કરો. (c)~\LeftR{\lforall}
+  નિયમના નિષ્કર્ષમાં $\lforall[x][!B(x)]$
+  મુખ્ય અને ચિહ્નિત હોય, તો આધારવિધાનમાં
+  $\lforall[x][!B(x)]$ તથા $!B(t)$ના
+  અનુરૂપ સક્રિય દૃષ્ટાંતો ચિહ્નિત કરો.
+  
+  હવે $\lforall[x][!B(x)]$ના આ બધા
+  ચિહ્નિત દૃષ્ટાંતો લો. \LeftR{\lforall}
+  સિવાયના કોઈ નિયમમાં તેઓ સક્રિય નથી
+  (ચિહ્નિત થનારા સક્રિય !!{formula}s
+  માત્ર \LeftR{\lforall}નાં છે).
+  $\pi_2$માંથી $\lforall[x][!B(x)]$ના
+  બધા ચિહ્નિત દૃષ્ટાંતો કાઢી નાખો.
+  જો મળેલું લખાણ સાચી !!{proof} હોય,
+  તો $\lforall[x][!B(x)]$ના ચિહ્નિત
+  દૃષ્ટાંતો કદી સક્રિય નહોતા;
+  તેઓ બધા સીધા સ્વયંસિદ્ધોમાંથી આવ્યા હતા.
+  !!{proof}નો અંત~$\Gamma \Sequent \Delta$થી
+  થાય છે, તેથી~$\pi$ને તેનાથી બદલી શકાય.
+  આમ સર્વોચ્ચ ક્રમનો એક કટ દૂર થયો.
+
+  અન્યથા, મળેલું લખાણ સાચી સાબિતી નથી,
+  કારણ કે કેટલીક \LeftR{\lforall} નિષ્પત્તિઓમાં
+  સક્રિય રહેલાં $\lforall[x][!B(x)]$
+  !!{formula}s કાઢી નાખ્યાં છે.
+  તેથી તે નિષ્પત્તિઓ આ સ્વરૂપની
+  ``નિષ્પત્તિઓ'' બની છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_t$}
+  \Deduce$!B(t), \Pi \fCenter \Lambda$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\Pi \fCenter \Lambda$
+  \DisplayProof
+  \]
+  આવા સૌથી ઉપરના દરેક ``અનુમાન''ને
+  આથી બદલો:
+  \[
+  \AxiomC{}
+  \RightLabel{$\Subst{\pi_1'}{t}{c}[\Pi \Sequent \Lambda]$}
+  \Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B(t)$
+  \AxiomC{}
+  \RightLabel{$\pi_t[\Gamma \Sequent \Delta]$}
+  \Deduce$!B(t), \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \DisplayProof
+  \]
+  અને તેની નીચેના દરેક સિક્વન્ટની ડાબે
+  $\Gamma$ તથા જમણે $\Delta$ ઉમેરો.
+  આધારવિધાનમાં ચિહ્નિત $!B(t)$ ધરાવતાં
+  બધા \LeftR{\lforall} ``અનુમાનો''ને
+  કોઈ~$!B(t)$ પરના \CutCS{} અનુમાનથી
+  બદલી ન દેવાય ત્યાં સુધી આ દોહરાવો.
+  મળેલી !!{proof}નો અંતિમ સિક્વન્ટ
+  (અને હવે તે સાચી !!{proof} છે)
+  $\Gamma, \dots, \Gamma \Sequent
+  \Delta, \dots, \Delta$ સ્વરૂપનો છે.
+  સંકોચનની સ્વીકાર્યતા લગાવી તેને
+  $\Gamma \Sequent \Delta$ની !!a{proof}માં
+  ફેરવો અને~$\pi$ને તેનાથી બદલો.
+  $\lforall[x][!B(x)]$ પરના એક કટને
+  $!B(t)$ પરના (કદાચ ઘણા) કટથી બદલ્યો છે,
+  પણ તે બધા નીચા ક્રમના છે.
+  $\pi_1$ કે $\pi_2$માં પહેલેથી રહેલા
+  બધા કટ પણ રહે છે, અને તે પણ
+  નીચા ક્રમના જ છે.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref{lem:max-cut-red-G3c}ની સાબિતીમાં
+$!A \ident (!B \land !C)$નો કિસ્સો ચકાસો.
+\sourcecorrection{OLMD-198}{મૂળ કસરત ઉલટાવવાના ઉપપ્રમેયનો સંદર્ભ આપે છે; અહીં ચર્ચાતો કિસ્સો મહત્તમ-ક્રમના કટ ઘટાડવાના ઉપપ્રમેયનો છે.}
+અર્થાત્, જો અંતમાં
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+ધરાવતી !!a{proof}~$\pi$ હોય અને
+$\pi_1$ તથા $\pi_2$માં
+$<\depth{!B \land !C}$ ક્રમના કટ જ હોય,
+તો $\Gamma \Sequent \Delta$ની એવી
+!!a{proof}~$\pi'$ છે જેમાં પણ
+$<\depth{!B \land !C}$ ક્રમના કટ જ છે,
+એ બતાવો.
+\end{prob}
+
+% \begin{prob}
+% Verify the case where $!A \ident \lexists[x][!B(x)]$ in the proof of
+% \olref{lem:inv-G3c-cut}.
+% \end{prob}
+
+
+\olref{lem:max-cut-red-G3c} બતાવે છે કે
+!!a{proof}માં સર્વોચ્ચ ક્રમના \CutCS{}
+અનુમાનને નીચા ક્રમનાં \CutCS{} અનુમાનોથી
+બદલી શકાય.
+\sourcecorrection{OLMD-199}{મૂળ અનુચ્છેદ અગાઉના બીજા ઉપપ્રમેય તરફ નિર્દેશ કરે છે; અહીં જરૂરી પરિણામ આ વિભાગનું મહત્તમ-ક્રમના કટ ઘટાડવાનું ઉપપ્રમેય છે.}
+આ ઉપપ્રમેય ફરી લગાવી,
+સર્વોચ્ચ ક્રમના~\CutCS{} પર સમાપ્ત
+થતી સૌથી ઉપરની ઉપ-!!{proof}s પર
+ક્રમશઃ પ્રક્રિયા કરીને, કોઈ પણ
+!!a{proof}માંથી ગમે તેટલા \CutCS{}
+અનુમાનો દૂર કરી શકાય છે.
+
+\begin{thm}\ollabel{thm:cut-elim-G3c-largest}
+$\Log{G3c} + \CutCS$ની કોઈ પણ
+!!{proof}~$\pi$ને~\Log{G3c}ની
+સાબિતીમાં ફેરવી શકાય છે.
+\end{thm}
+
+\begin{proof}
+  પહેલાં બતાવીએ કે~$\pi$માંના સર્વોચ્ચ
+  ક્રમના બધા કટ દૂર કરી શકાય છે.
+  માનો કે~$d$ એ~$\pi$માંના કટનો
+  મહત્તમ ક્રમ છે અને~$n$ એ~$d$
+  ક્રમના કટની સંખ્યા છે. સાબિતી
+  ~$n$ પર આગમનથી છે.
+  જો $n=0$, તો કશું કરવાનું નથી.
+  જો $n>0$, તો~$d$ ક્રમનો
+  સૌથી ઉપરનો કટ પસંદ કરો અને
+  તેમાં પૂરી થતી ઉપ-!!{proof}ને
+  $\pi_1$ કહો.
+  \olref{lem:max-cut-red-G3c} મુજબ
+  એ જ અંતિમ સિક્વન્ટની એવી
+  !!a{proof}~$\pi_1'$ છે જેમાં
+  બધા કટનો ક્રમ $<d$ છે.
+  $\pi$માં $\pi_1$ને $\pi_1'$થી
+  બદલો. મળેલી !!a{proof}માં
+  $d$ ક્રમના $n-1$ કટ રહે છે,
+  તેથી આગમન-પૂર્વધારણા લાગુ પડે છે.
+
+  હવે~$d$ પર આગમનથી પરિણામ મળે છે.
+  જો $d=0$, તો બધા કટ પરમાણ્વીય છે
+  અને અગાઉના પરિણામથી તે બધા
+  દૂર કરી શકાય છે. જો $d>0$,
+  તો અગાઉનું પરિણામ એવી સાબિતી આપે
+  છે જેમાં $d$ ક્રમના બધા કટ
+  $<d$ ક્રમના કટથી બદલાયા છે.
+  કારણ કે~$d$ એ~$\pi$માંના કટનો
+  મહત્તમ ક્રમ હતો, મળેલી સાબિતીમાં
+  કટનો મહત્તમ ક્રમ $<d$ છે,
+  અને આગમન-પૂર્વધારણા લાગુ પડે છે.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0616",
+  "checked_at_utc": "2026-09-28T14:56:53.621394+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0616 strong induction and the vacuous base instance; state-only draft",
+  "report": {
+    "unit_id": "OLP-0616",
+    "source_path": "content/methods/induction/strong-induction.tex",
+    "source_sha256": "0cec55c0265daa331a4b473daad197d39ef0aaddaa518ae051d3230c1df2560f",
+    "draft_path": "private-state\\work\\batch044_draft\\induction-strong-induction.tex",
+    "draft_sha256": "3f85812f6ed1c1c76cd530c4c97e8ee563ef42b29bde15cc165b5ca390d3d305",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 57,
+    "target_math_spans_after_corrections": 57,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-164"
+    ],
+    "source_detector_ascii_tokens": 314,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$l<0$, $P(0)$",
+        "$l<0$, $P(l)$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\model-theory\\interpolation\\interpolation-proof.tex",
+        "sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+        "terms": [
+          "આગમનનો આધાર",
+          "આગમન-પગલું",
+          "આગમન-પરિકલ્પના"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\induction-induction-on-N.tex",
+        "sha256": "c46d9788251e82d66c33cf2fd1a3ee97558b1d96ca182578b26df4004c8eed1f",
+        "terms": [
+          "આગમન",
+          "પૂર્વપદ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

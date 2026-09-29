@@ -1,0 +1,120 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{foundation}
+
+\olsection{આધાર}
+
+આપણે માત્ર \emph{લગભગ} પૂર્ણ થયા છીએ, \emph{સંપૂર્ણપણે}
+નહીં: $\ZFminus$માં એવું કશું નથી જે ખાતરી આપે કે
+\emph{દરેક} ગણ કોઈ $V_\alpha$માં છે, એટલે કે દરેક ગણ કોઈક
+તબક્કે રચાય છે.
+
+ગણિતની દૃષ્ટિએ પદાનુક્રમની બહાર ગણો હોય કે નહીં તેની આપણે
+\emph{ચિંતા કરવાની જરૂર નથી} એમ કહી શકાય. (હોય તો તેમને
+અવગણી શકીએ.) પરંતુ દરેક ગણ કોઈક તબક્કે રચાય છે એવા વિચારથી
+આપણે ગણની \emph{સંકલ્પના}ને પ્રેરિત કરી છે
+(\olref[z][story]{sec}માં \stageshier{} જુઓ). તેથી
+પદાનુક્રમની બહાર ગણો હોવાની શક્યતા દૂર કરવી છે. એ માટે
+દરેક ગણ પદાનુક્રમમાં ક્યાંક આવે તેની ખાતરી આપતું નવું
+સ્વયંસિદ્ધિ ઉમેરવું પડશે.
+
+$V_\alpha$ આપણા તબક્કાઓ હોવાથી નીચેનું સીધું જ સ્વયંસિદ્ધિ
+તરીકે ઉમેરી શકાય એમ વિચારીએ:
+
+\begin{defish}
+\emph{નિયમિતતા.} $\forall A \exists \alpha\, A \subseteq V_\alpha$
+\end{defish}
+
+આ રીત સંપૂર્ણપણે વાજબી હોત. પરંતુ આગળના વિભાગમાં સમજાવાનાં
+કારણોસર આપણે તેને બદલે બીજું સ્વયંસિદ્ધિ લઈશું:
+
+\begin{axiom}[આધાર]
+$(\forall A \neq \emptyset)(\exists B \in A)A \cap B = \emptyset$.
+\end{axiom}
+
+થોડો પ્રયત્ન કરીને $\ZFminus$માં બતાવી શકાય કે આધારથી
+નિયમિતતા મળે છે:
+\begin{defn}
+દરેક ગણ $A$ માટે લો:
+\begin{align*}
+	\text{cl}_0(A) &= A,\\
+	\text{cl}_{n+1}(A) &= \bigcup \text{cl}_n(A),\\
+	\text{trcl}(A) &= \bigcup_{n < \omega} \text{cl}_{n}(A).
+\end{align*}
+$\text{trcl}(A)$ને $A$નું \emph{પરંપરિત સંવરણ} કહીએ.
+\end{defn}
+\noindent
+``પરંપરિત સંવરણ'' નામ યોગ્ય છે:
+\begin{prop}\ollabel{subsetoftrcl}
+$A \subseteq \trcl{A}$ અને $\trcl{A}$ પરંપરિત ગણ છે.
+\end{prop}
+
+\begin{proof}
+સ્પષ્ટ છે કે $A = \text{cl}_0(A) \subseteq \text{trcl}(A)$.
+વળી $x
+\in b \in \trcl{A}$ હોય, તો કોઈ $n$ માટે
+$b \in \text{cl}_n(A)$, તેથી $x
+\in \text{cl}_{n+1}(A) \subseteq \text{trcl}(A)$.
+\end{proof}
+
+\begin{lem}\ollabel{lem:TransitiveWellFounded}
+જો $A$ પરંપરિત ગણ હોય, તો કોઈ $\alpha$ માટે $A
+\subseteq V_\alpha$.
+\end{lem}
+
+\begin{proof}
+\olref[ordinals][opps]{defsupstrict}માંની
+``$\supstrict(X)$''ની વ્યાખ્યા યાદ કરીને બે ગણો વ્યાખ્યાયિત કરો:
+\begin{align*}
+	D  &= \Setabs{x \in A}{\forall \delta\ x \nsubseteq V_\delta}\\
+	\alpha &= \supstrict\Setabs{\delta}{(\exists x \in A)
+	(x \subseteq V_\delta \land (\forall \gamma \in \delta)x \nsubseteq V_\gamma)}
+\end{align*}
+ધારો કે $D = \emptyset$. તેથી $x \in A$ હોય, તો એવું કોઈ
+$\delta$ છે કે $x \subseteq V_\delta$ અને ક્રમવાચક સંખ્યાઓના
+સુક્રમથી $(\forall \gamma \in \delta)x \nsubseteq V_\gamma$;
+આથી $\delta \in \alpha$, અને
+\olref[spine][Valphabasic]{Valphabasicprops} મુજબ
+$x \in V_\alpha$. તેથી જોઈતું $A \subseteq
+V_{\alpha}$ મળે છે.
+
+તેથી $D = \emptyset$ બતાવવું પૂરતું છે. વિરોધાભાસ માટે ધારો કે
+એવું નથી. આધાર મુજબ એવું $B \in D \subseteq A$ છે કે $D \cap B
+= \emptyset$. જો $x \in B$ હોય, તો $A$ પરંપરિત હોવાથી
+$x \in A$; અને $x \notin D$ હોવાથી
+$\exists \delta\ x \subseteq
+V_\delta$. તેથી હવે લો:
+\[
+	\beta = \supstrict\Setabs{\delta}{(\exists x \in B)(x \subseteq V_\delta \land (\forall \gamma < \delta)x \nsubseteq V_\gamma)}.
+\]
+\sourcecorrection{OLMD-119}{મૂળના આ સૂત્રમાં $b$ લખાયું છે,
+પણ અહીં એવો કોઈ ચલ પસંદ કરાયો નથી; અગાઉ પસંદ કરેલો ગણ $B$
+છે. તેથી મર્યાદિત અસ્તિત્વ-પરિમાણકમાં $b$ના સ્થાને $B$
+મૂક્યું છે.}
+અગાઉની જેમ $B \subseteq V_\beta$ મળે છે, જે $B \in
+D$ સાથે વિરોધાભાસ છે.
+\end{proof}
+
+\begin{thm}\ollabel{zfentailsregularity}
+નિયમિતતા સાચી છે.
+\end{thm}
+
+\begin{proof}
+$A$ નિશ્ચિત લો. \olref{subsetoftrcl} મુજબ
+$A \subseteq \trcl{A}$ અને આ સંવરણ પરંપરિત છે. તેથી
+\olref{lem:TransitiveWellFounded} મુજબ કોઈ $\alpha$ માટે
+$A \subseteq \trcl{A} \subseteq V_\alpha$.
+\end{proof}
+
+આ પરિણામો બતાવે છે કે $\ZFminus$માં શરતી વિધાન
+$\emph{Foundation}\Rightarrow\emph{Regularity}$ સાબિત થાય છે.
+\olref[spine][rank]{zfminusregularityfoundation}માં બતાવીશું કે
+$\ZFminus$માં $\emph{Regularity}\Rightarrow\emph{Foundation}$
+પણ સાબિત થાય છે. તેથી $\ZFminus$ના સંદર્ભમાં આધાર અને
+નિયમિતતા \emph{સમકક્ષ} છે. એટલે $\ZFminus$ સ્વીકાર્યા પછી,
+આધારનું ઔચિત્ય નિયમિતતા સાથેની સમકક્ષતાથી મળે છે; અને
+નિયમિતતાનું ઔચિત્ય \stageshier{} પરથી સીધું મળે છે.
+
+\end{document}

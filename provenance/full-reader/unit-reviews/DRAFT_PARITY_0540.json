@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0540",
+  "checked_at_utc": "2026-09-27T23:49:30.247991+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0540 union axiom; state-only draft",
+  "report": {
+    "unit_id": "OLP-0540",
+    "source_path": "content/set-theory/z/union.tex",
+    "source_sha256": "5cd50b70d0d606fa557040cfa94f3b34303bd1f5ac56c1ed03cb23ed4520fdc4",
+    "draft_path": "private-state\\work\\batch044_draft\\union.tex",
+    "draft_sha256": "8cf83b4f062e7d0efa953119a6a5461180d1fc433271318394aa88b8745d203f",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 13,
+    "target_math_spans_after_corrections": 13,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 83,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\sets\\unions-and-intersections.tex",
+        "sha256": "479a866032c9eae22230d376f546944bc9e67e7852575dd0dd39aa30fb335a81",
+        "terms": [
+          "યોગગણ",
+          "છેદગણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\separation.tex",
+        "sha256": "b69123900add155945875e833da784adb7a6719fce6464f0db893bb2ddd0c1a8",
+        "terms": [
+          "prop:intersectionsexist",
+          "પૃથક્કરણ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The witness b lies in A and x lies in b; these membership directions are unchanged.",
+      "The stage argument uses transitivity of the source's ordering and availability of every relevant member before S.",
+      "The axiom includes the case A empty; no nonempty-family restriction is imported from the intersection theorem."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

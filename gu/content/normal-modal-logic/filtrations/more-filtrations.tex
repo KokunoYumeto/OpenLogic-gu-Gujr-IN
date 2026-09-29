@@ -1,0 +1,145 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: more-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{acc}
+
+\olsection{ફિલ્ટ્રેશનો અને પ્રાપ્યતાના ગુણધર્મો}
+
+જણાવ્યા મુજબ, સાર્વત્રિક, સિરિયલ અને સ્વવાચક નિદર્શનોનાં
+ફિલ્ટ્રેશનો પણ હંમેશા અનુક્રમે સાર્વત્રિક, સિરિયલ અથવા સ્વવાચક
+હોય છે. પરંતુ સંમિત અથવા પરંપરિત નિદર્શનનું દરેક ફિલ્ટ્રેશન
+અનુક્રમે સંમિત અથવા પરંપરિત હોતું નથી. છતાં, કેટલાક કિસ્સામાં
+આ ગુણધર્મ જળવાય તે રીતે ફિલ્ટ્રેશન વ્યાખ્યાયિત કરી શકાય છે.
+એ માટે આપણે સૌથી સ્થૂલ ફિલ્ટ્રેશનની વ્યાખ્યા જેવી રીત લઈએ છીએ,
+પણ~$R^*$ની વ્યાખ્યામાં વધારાની શરતો ઉમેરીએ છીએ. $\Gamma$
+ઉપ-!!{formula}s હેઠળ બંધ માનો. નિદર્શન
+$\mModel{M} =\tuple{W, R, V}$નાં જગતો $u$, $v$ વચ્ચેના
+\olref{tab:Cn-filtrations}માંના સંબંધો~$C_i(u,v)$ જુઓ.
+આ શરતોના સંયોજનો પરથી $R^*[u][v]$ વ્યાખ્યાયિત કરી શકાય છે.
+દાખલા તરીકે, $R^*[u][v]$ જો અને માત્ર જો $C_1(u,v)$ હોય એવી
+શરત રાખીએ, તો બરાબર સૌથી સ્થૂલ ફિલ્ટ્રેશન મળે છે. જો
+$R^*[u][v]$ જો અને માત્ર જો $C_1(u,v)$ અને $C_2(u, v)$ બંને
+હોય એમ રાખીએ, તો જુદું ફિલ્ટ્રેશન મળે છે. તે સૌથી સ્થૂલ
+ફિલ્ટ્રેશન કરતાં ``વધુ સૂક્ષ્મ'' છે, કારણ કે એકલા $C_1(u,v)$
+કરતાં $C_1(u,v)$ અને $C_2(u,v)$ બંનેને ઓછાં જગત-યુગ્મો
+સંતોષે છે.
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|ll|}
+    \hline
+    \multirow{2}{*}{$C_1(u,v)$:}
+    \iftag{prvBox}{&
+      જો $\Box!A \in \Gamma$ અને $\mSat{M}{\Box!A}[u]$ હોય,
+      તો $\mSat{M}{!A}[v]$;\iftag{prvDiamond}{ અને}{}\\}{}
+    \iftag{prvDiamond}{&
+      જો $\Diamond!A \in \Gamma$ અને $\mSat{M}{!A}[v]$ હોય,
+      તો $\mSat{M}{\Diamond!A}[u]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_2(u,v)$:}
+    \iftag{prvBox}{&
+      જો $\Box!A \in \Gamma$ અને $\mSat{M}{\Box!A}[v]$ હોય,
+      તો $\mSat{M}{!A}[u]$;\iftag{prvDiamond}{ અને}{}\\}{}
+    \iftag{prvDiamond}{&
+      જો $\Diamond!A \in \Gamma$ અને $\mSat{M}{!A}[u]$ હોય,
+      તો $\mSat{M}{\Diamond!A}[v]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_3(u,v)$:}
+    \iftag{prvBox}{&
+      જો $\Box!A \in \Gamma$ અને $\mSat{M}{\Box!A}[u]$ હોય,
+      તો $\mSat{M}{\Box!A}[v]$;\iftag{prvDiamond}{ અને}{}\\}{}
+    \iftag{prvDiamond}{&
+      જો $\Diamond!A \in \Gamma$ અને $\mSat{M}{\Diamond!A}[v]$ હોય,
+      તો $\mSat{M}{\Diamond!A}[u]$; \\}{}
+    \hline
+    \multirow{2}{*}{$C_4(u,v)$:}
+    \iftag{prvBox}{&
+      જો $\Box!A \in \Gamma$ અને $\mSat{M}{\Box!A}[v]$ હોય,
+      તો $\mSat{M}{\Box!A}[u]$;\iftag{prvDiamond}{ અને}{}\\}{}
+    \iftag{prvDiamond}{&
+      જો $\Diamond!A \in \Gamma$ અને $\mSat{M}{\Diamond!A}[u]$ હોય,
+      તો $\mSat{M}{\Diamond!A}[v]$; \\}{}
+    \hline
+    \end{tabular}
+  \caption{ફિલ્ટ્રેશનો વ્યાખ્યાયિત કરવા માટે જગતો પરની શરતો.}
+  \ollabel{tab:Cn-filtrations}
+\end{table}
+
+\begin{thm}\ollabel{thm:more-filtrations}
+  $\mModel{M} =\tuple{W,R,V}$ નિદર્શન હોય, $\Gamma$ ઉપ-!!{formula}s
+  હેઠળ બંધ હોય અને $W^*$ તથા $V^*$ની વ્યાખ્યા
+  \olref[fil]{defn:filtration} મુજબ હોય. ત્યારે:
+  \begin{enumerate}
+  \item ધારો કે $R^*[u][v]$ જો અને માત્ર જો $C_1(u, v) \land
+    C_2(u,v)$. ત્યારે $R^*$ સંમિત છે; અને $\mModel{M}$ સંમિત હોય
+    તો $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ ફિલ્ટ્રેશન છે.
+  \item ધારો કે $R^*[u][v]$ જો અને માત્ર જો $C_1(u, v)
+    \land C_3(u,v)$. ત્યારે $R^*$ પરંપરિત છે; અને
+    $\mModel{M}$ પરંપરિત હોય તો
+    $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ ફિલ્ટ્રેશન છે.
+  \item ધારો કે $R^*[u][v]$ જો અને માત્ર જો $C_1(u, v) \land C_2(u,v)
+    \land C_3(u,v) \land C_4(u,v)$. ત્યારે $R^*$ સંમિત અને
+    પરંપરિત છે; અને $\mModel{M}$ સંમિત તથા પરંપરિત હોય તો
+    $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ ફિલ્ટ્રેશન છે.
+  \item ધારો કે $R^*$ એ રીતે વ્યાખ્યાયિત છે કે $R^*[u][v]$ જો
+    અને માત્ર જો $C_1(u,
+    v) \land C_3(u,v) \land C_4(u,v)$. ત્યારે $R^*$ પરંપરિત
+    અને યુક્લિડિયન છે; અને $\mModel{M}$ પરંપરિત તથા યુક્લિડિયન
+    હોય તો $\mModel{M^*}=\tuple{W^*,R^*,V^*}$ ફિલ્ટ્રેશન છે.
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $R^*$ સંમિત છે તે તરત જ દેખાય છે, કારણ કે $C_1(u,v)
+      \Leftrightarrow C_2(v,u)$ અને $C_2(u,v) \Leftrightarrow
+      C_1(v,u)$. તેથી $\mModel{M}$ સંમિત હોય તો
+      $\mModel{M^*}$ એ~$\Gamma$ દ્વારા ફિલ્ટ્રેશન છે તે
+      બતાવવાનું રહે છે. $C_1(u,v)$ શરતથી
+      \iftag{prvBox}{%
+        \iftag{prvDiamond}{%
+          \olref[fil]{defn:filtration-R2} અને
+          \olref[fil]{defn:filtration-R3}, એટલે
+          \olref[fil]{defn:filtration}ની શરતો}{%
+          \olref[fil]{defn:filtration}%
+          \olref[fil]{defn:filtration-R2} શરત}}{%
+        \olref[fil]{defn:filtration}%
+        \olref[fil]{defn:filtration-R3} શરત}
+      પૂરી થાય છે. આમ માત્ર
+      \olref[fil]{defn:filtration}%
+      \olref[fil]{defn:filtration-R1} ચકાસવી રહે છે, એટલે કે
+      $Ruv$ હોય તો $R^*[u][v]$.
+
+      $Ruv$ ધારો. $R^*[u][v]$ બતાવવા $C_1(u,v)$ અને
+      $C_2(u,v)$ સ્થાપિત કરવાં પડે. $C_1$ માટે:
+      \iftag{prvBox}{જો $\Box!A
+        \in\Gamma$ અને $\mSat{M}{\Box!A}[u]$ હોય, તો
+        $\mSat{M}{!A}[v]$ પણ (કારણ કે $Ruv$).
+        \iftag{prvDiamond}{તેવી જ રીતે, }{}}{}%
+      \iftag{prvDiamond}{જો $\Diamond!A \in \Gamma$ અને
+        $\mSat{M}{!A}[v]$ હોય, તો $Ruv$ હોવાથી
+        $\mSat{M}{\Diamond!A}[u]$.}{}
+      $C_2$ માટે:
+      \iftag{prvBox}{જો $\Box!A \in \Gamma$ અને
+        $\mSat{M}{\Box!A}[v]$ હોય, તો સંમિતતાથી $Ruv$માંથી
+        $Rvu$ મળે છે; એટલે $\mSat{M}{!A}[u]$.
+        \iftag{prvDiamond}{તેવી જ રીતે, }{}}{}%
+      \iftag{prvDiamond}{જો $\Diamond!A \in\Gamma$ અને
+        $\mSat{M}{!A}[u]$ હોય, તો $\mSat{M}{\Diamond!A}[v]$
+        (કારણ કે સંમિતતાથી $Rvu$).}{}
+    \item અભ્યાસ માટે છોડ્યું છે.
+    \item અભ્યાસ માટે છોડ્યું છે.
+    \item અભ્યાસ માટે છોડ્યું છે.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][acc]{thm:more-filtrations}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\end{document}

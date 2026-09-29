@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0406",
+  "checked_at_utc": "2026-09-27T10:01:12.604459+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0406 selected many-valued propositional sequent rules; state-only draft",
+  "report": {
+    "unit_id": "OLP-0406",
+    "source_path": "content/many-valued-logic/sequent-calculus/propositional-rules.tex",
+    "source_sha256": "7ec37019c2bc225b2cd247dbee140a3ba8e39b319c8e5c49e5b635dc669659e7",
+    "draft_path": "private-state\\work\\batch039_draft\\sequent-propositional-rules.tex",
+    "draft_sha256": "018a59129d0f80e59cb04136e6addd1b7e77adc6e0aec45f826b59b52b9ff6d7",
+    "aligned_blocks": 27,
+    "linguistic_blocks": 22,
+    "source_math_spans_correction_aware": 110,
+    "target_math_spans_after_corrections": 110,
+    "glossary_tokens": 1,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 147,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [],
+    "seven_rule_displays_byte_exact": true,
+    "sideways_figure_proof_body_byte_exact": true,
+    "truth_rule_conditions_exhaustively_verified": true,
+    "source_comment_part_typo_fixed": true
+  },
+  "status": "draft_linguistic_math_rule_figure_and_truth_function_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

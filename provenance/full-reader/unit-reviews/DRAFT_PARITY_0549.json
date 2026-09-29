@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0549",
+  "checked_at_utc": "2026-09-28T00:39:36.970678+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0549 intuitive ordinal orderings; state-only draft",
+  "report": {
+    "unit_id": "OLP-0549",
+    "source_path": "content/set-theory/ordinals/idea.tex",
+    "source_sha256": "69629365d22ecab6b74fa4d3896d24ad71371c5f9c079fc79ac18f4655c63c11",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-idea.tex",
+    "draft_sha256": "3c6aec7a0807659af5a151a6569ed2680de6e189752b1c629cd5394063de9598",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 29,
+    "target_math_spans_after_corrections": 29,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 187,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\LEXICAL_CONSULTATION_044_0547.json",
+        "sha256": "1216550acbd6cb6501ecfd96b0900a130233b79bcd373875eac03ad70686369c",
+        "terms": [
+          "ક્રમવાચક (સંખ્યા)"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\trees.tex",
+        "sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b",
+        "terms": [
+          "અનુક્રમો",
+          "સુક્રમિત"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The last object in the second picture is the existing number zero, not a new natural number greater in the usual arithmetic order.",
+      "The first omega block in the final example includes zero among the evens.",
+      "All three inherited TikZ spans, including coordinates, labels, foreach lists and raw CRLFs, are exact. Visual QA is pending.",
+      "The official glossary evidence is verified by its rendered-page hash, since its Gujarati PDF extraction is garbled."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [
+      {
+        "path": "work/ORDINAL_DIAGRAM_PARITY_044_0549.json",
+        "sha256": "b03d10f2d125b3fccee7398a482897c0415f6ffa597b120c749adb88c40c5ae3"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 3,
+    "inherited_diagrams_visual_qa": "pending",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

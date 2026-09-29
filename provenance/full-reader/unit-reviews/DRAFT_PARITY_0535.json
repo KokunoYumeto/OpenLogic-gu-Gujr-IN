@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0535",
+  "checked_at_utc": "2026-09-27T23:24:04.204358+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0535 urelements or not; state-only draft",
+  "report": {
+    "unit_id": "OLP-0535",
+    "source_path": "content/set-theory/story/urelements.tex",
+    "source_sha256": "61419cd0dbc03cdf569c7350b028da4daac493e5815f8bf43381544758587b31",
+    "draft_path": "private-state\\work\\batch044_draft\\urelements.tex",
+    "draft_sha256": "f93a8be6325029b7673377cc62745accd4f4c1be818facb74952e7280a40c5a7",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 7,
+    "target_math_spans_after_corrections": 7,
+    "glossary_tokens": 1,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 440,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cumulative-approach.tex",
+        "sha256": "406d630c98b96fba4eb2edf4ed84703d9e58fa92ec4c71cf643ba90bd11f56ee",
+        "terms": [
+          "સંચયી-પુનરાવર્તી",
+          "તબક્કા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Urelements are not identified with empty sets or ordinary sets.",
+      "The source's philosophical claims are preserved as its arguments, not presented as mathematical impossibility of encodings.",
+      "The inherited diagram is byte-exact; visual rendering QA is pending."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citealt[pp.~vi, 24, 50--1]{Potter2004}",
+        "count": 1,
+        "reason": "Original bibliography key and page locator retained with whitespace-only line wrapping normalized."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 1,
+    "inherited_diagrams_visual_qa": "pending",
+    "math_parser": "double-dollar-aware"
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

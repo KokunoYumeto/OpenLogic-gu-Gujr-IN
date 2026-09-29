@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0416",
+  "checked_at_utc": "2026-09-27T10:37:37.765865+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0416 tautological instances; state-only draft",
+  "report": {
+    "unit_id": "OLP-0416",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/tautological-instances.tex",
+    "source_sha256": "d951c14acce27168cd66ef02bdecd76610bb803879b399ec08e82183aa8732aa",
+    "draft_path": "private-state\\work\\batch040_draft\\tautological-instances.tex",
+    "draft_sha256": "c47236b50e21b6561a6c589cf242be718da3776c7632bba8df374acaa43ae9fd",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 44,
+    "target_math_spans_after_corrections": 44,
+    "glossary_tokens": 8,
+    "source_correction_notes": [
+      "OLMD-007",
+      "OLMD-008",
+      "OLMD-009"
+    ],
+    "source_detector_ascii_tokens": 164,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      9
+    ],
+    "truth_function_cases_checked": 4448,
+    "tautologies_enumerated": 271
+  },
+  "status": "draft_linguistic_proof_math_and_visible_source_correction_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

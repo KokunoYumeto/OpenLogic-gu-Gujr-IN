@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0685",
+  "checked_at_utc": "2026-09-28T21:00:08.398544+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0685 Proof Theory part driver and editorial notice; state-only draft",
+  "report": {
+    "unit_id": "OLP-0685",
+    "source_path": "content/proof-theory/proof-theory.tex",
+    "source_sha256": "6f46b6346fc37b3a75a4f98c56351c46458c2f54f8cdca151da015261c0fd92f",
+    "draft_path": "private-state\\work\\batch044_draft\\proof-theory.tex",
+    "draft_sha256": "d47c62cd19581a6a68f4c3c7bb992648754851fd1dab28c3bcb6741e91b0599b",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 20,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\natural-deduction-introduction.tex",
+        "sha256": "bed9868a3afe599a17b1ad11aeb4566fe4b2d8a6154f33809fe52f10a0b77744",
+        "terms": [
+          "સાબિતી-સિદ્ધાંતમાં"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [
+      {
+        "literal": "PDF",
+        "count": 1
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

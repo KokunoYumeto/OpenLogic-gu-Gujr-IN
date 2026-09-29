@@ -1,0 +1,80 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: canonical-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{mod}
+
+\olsection{કૅનોનિકલ નિદર્શ}
+
+આપણા નિદર્શનાં જગતો પ્રાકૃતિક સંખ્યાઓની સાન્ત
+શ્રેણીઓ~$\sigma$ હશે, એટલે $\sigma \in \Nat^*$.
+નોંધો કે $\Nat^*$ને આગમનાત્મક રીતે આ પ્રમાણે વ્યાખ્યાયિત
+કરીએ છીએ:
+\begin{enumerate}
+\item $\emptyseq \in \Nat^*$.
+\item જો $\sigma \in \Nat^*$ અને $n \in \Nat$ હોય,
+  તો $\sigma.n \in \Nat^*$ (અહીં $\sigma.n$ એ
+  $\sigma \concat \tuple{n}$ છે અને $\sigma \concat \sigma'$
+  એ $\sigma$ તથા $\sigma'$નું જોડાણ છે).
+\item $\Nat^*$માં બીજું કશું નથી.
+\end{enumerate}
+તેથી આગમનાત્મક વ્યાખ્યાઓ આપવા $\Nat^*$ વાપરી શકીએ છીએ.
+
+$\tuple{!B_1, !C_1}$, $\tuple{!B_2, !C_2}$, \dots,
+એ !!{formula}sની બધી જોડીઓની પરિગણના હોય.
+!!{formula}sનો ગણ~$\Delta$ આપેલો હોય, તો
+$\Delta(\sigma)$ને નીચે મુજબ આગમનાત્મક રીતે
+વ્યાખ્યાયિત કરીએ છીએ:
+\begin{enumerate}
+\item $\Delta(\emptyseq) = \Delta$
+\item $\Delta(\sigma.n) = {}$
+  \[
+  \begin{cases}
+    (\Delta(\sigma) \cup \{!B_n\})^* &
+    \text{જો $\Delta(\sigma) \cup \{!B_n\} \Proves/ !C_n$ હોય} \\
+    \Delta(\sigma) & \text{અન્યથા}
+  \end{cases}
+  \]
+\end{enumerate}
+અહીં $(\Delta(\sigma) \cup \{!B_n\})^*$નો અર્થ
+!!{formula}sનો એવો અભાજ્ય ગણ છે, જે
+$\Delta(\sigma) \cup \{!B_n\}$ અને !!{formula}~$!C_n$
+પર \olref[lin]{lem:lindenbaum} લાગુ કરતાં મળે છે.
+આ વ્યાખ્યા મુજબ જો $\Delta(\sigma) \cup \{!B_n\}
+\Proves/ !C_n$ હોય, તો $\Delta(\sigma.n)
+\Proves !B_n$ અને $\Delta(\sigma.n) \Proves/ !C_n$.
+એ પણ નોંધો કે કોઈ પણ~$n$ માટે
+$\Delta(\sigma) \subseteq \Delta(\sigma.n)$.
+જો $\Delta$ અભાજ્ય હોય, તો દરેક~$\sigma$ માટે
+$\Delta(\sigma)$ અભાજ્ય હોય છે.
+
+\begin{defn}\ollabel{defn:canonical-model}
+  ધારો કે $\Delta$ અભાજ્ય છે. ત્યારે $\Delta$ માટેનું
+  \emph{કૅનોનિકલ નિદર્શ} $\mModel{M(\Delta)}$ આ પ્રમાણે
+  વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+  \item $W = \Nat^*$, એટલે પ્રાકૃતિક સંખ્યાઓની સાન્ત
+    શ્રેણીઓનો ગણ.
+  \item $R$ એવો આંશિક ક્રમ છે કે $R\sigma\sigma'$
+    ત્યારે અને માત્ર ત્યારે જ જ્યારે $\sigma$ એ~$\sigma'$નો
+    પ્રારંભિક ખંડ હોય (એટલે કોઈ શ્રેણી~$\sigma''$ માટે
+    $\sigma' = \sigma \concat \sigma''$ હોય).
+  \item $V(p) = \Setabs{\sigma}{p \in \Delta(\sigma)}$.
+  \end{enumerate}
+\end{defn}
+
+$R$ ખરેખર આંશિક ક્રમ છે તે સહેલાઈથી ચકાસી શકાય છે.
+$V$ માટેની એકદિશવર્ધિતાની શરત પણ સંતોષાય છે.
+$\Delta(\sigma) \subseteq \Delta(\sigma.n)$ હોવાથી
+$R\sigma\sigma'$ હોય ત્યારે $\sigma$ પછી જોડાતા ભાગની
+લંબાઈ પર આગમન કરીને
+$\Delta(\sigma) \subseteq \Delta(\sigma')$ મળે છે.
+\sourcecorrection{OLMD-095}{મૂળ આ છેલ્લું આગમન
+$\sigma$ પર કહે છે; $\sigma$ સ્થિર રાખીને તેના પછી
+જોડાતી સાન્ત શ્રેણીની લંબાઈ પર આગમન જોઈએ.}
+
+\end{document}

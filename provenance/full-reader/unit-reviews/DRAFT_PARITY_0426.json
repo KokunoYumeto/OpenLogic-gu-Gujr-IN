@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0426",
+  "checked_at_utc": "2026-09-27T11:20:38.548280+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0426 second-order definability; state-only draft",
+  "report": {
+    "unit_id": "OLP-0426",
+    "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+    "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+    "draft_path": "private-state\\work\\batch040_draft\\second-order-definability.tex",
+    "draft_sha256": "190229f6459e34cad26cbbb544dcc8760f7671ce04785fbb63d23481627ff7ff",
+    "aligned_blocks": 19,
+    "linguistic_blocks": 14,
+    "source_math_spans_correction_aware": 102,
+    "target_math_spans_after_corrections": 102,
+    "glossary_tokens": 24,
+    "source_correction_notes": [
+      "OLMD-019",
+      "OLMD-020",
+      "OLMD-021"
+    ],
+    "source_detector_ascii_tokens": 447,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7,
+      12,
+      16
+    ],
+    "finite_box_diamond_cases_checked": 12420,
+    "stale_source_comment_normalized": true
+  },
+  "status": "draft_linguistic_math_standard_translation_and_visible_source_repair_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

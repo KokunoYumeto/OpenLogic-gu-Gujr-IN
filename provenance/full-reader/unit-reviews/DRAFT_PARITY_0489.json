@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0489",
+  "checked_at_utc": "2026-09-27T20:18:34.668429+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0489 public-announcement language; state-only draft",
+  "report": {
+    "unit_id": "OLP-0489",
+    "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.tex",
+    "source_sha256": "9f39c9626584c27c3ce6509b5f4cb49db0c501e6fb9852598e66892db400beee",
+    "draft_path": "private-state\\work\\batch041_draft\\epistemic-public-announcement-logic-lang.tex",
+    "draft_sha256": "bf5b893b1307da888f1bf2967fdc607eec29ca396d54377389276945f2ee39ab",
+    "aligned_blocks": 21,
+    "linguistic_blocks": 16,
+    "source_math_spans_correction_aware": 42,
+    "target_math_spans_after_corrections": 42,
+    "glossary_tokens": 27,
+    "source_correction_notes": [
+      "OLMD-080"
+    ],
+    "source_detector_ascii_tokens": 228,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_after_logged_repair": true,
+    "public_announcement_formation_rule_checked": true
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0584",
+  "checked_at_utc": "2026-09-28T02:43:38.950645+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0584 finite, enumerable and nonenumerable cardinals; no largest cardinal; state-only draft",
+  "report": {
+    "unit_id": "OLP-0584",
+    "source_path": "content/set-theory/cardinals/classing.tex",
+    "source_sha256": "facf3eb5d19661a660d1c6441f09c0acc909f944253f4c7fe129048f8ea35bc6",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinals-classing.tex",
+    "draft_sha256": "20e65b4282ccaf9667608ff33ce6677e8cbf50f88bba69ddb9230e835147255d",
+    "aligned_blocks": 31,
+    "linguistic_blocks": 28,
+    "source_math_spans_correction_aware": 81,
+    "target_math_spans_after_corrections": 81,
+    "glossary_tokens": 12,
+    "source_correction_notes": [
+      "OLMD-135",
+      "OLMD-136"
+    ],
+    "source_detector_ascii_tokens": 489,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$A$ is not a natural number",
+        "$\\card{A}$ is not a natural number"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+        "sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+        "terms": [
+          "\\ollabel{lem:CardinalsExist}",
+          "\\ollabel{lem:CardinalsBehaveRight}",
+          "સુક્રમિતતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-using-addition.tex",
+        "sha256": "54c52a27923fcfb6fa3e156586066d9efc5232ab4df6ba4f70bca737d92e4210",
+        "terms": [
+          "\\ollabel{ordinfinitycharacter}",
+          "ડેડેકિન્ડ-અનંત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\infinity-again.tex",
+        "sha256": "8f1e1364dd675967c7c95deb9c84e11bde16937375f65b77ef8107380dcbf798",
+        "terms": [
+          "\\ollabel{naturalnumbersarentinfinite}",
+          "\\ollabel{defnomega}"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\enumerability-alt.tex",
+        "sha256": "5bea908c829dcd500d91810a033fcb46dd399e4a13cd28a144545b6687639002",
+        "terms": [
+          "\\ollabel{defn:enumerable}",
+          "\\usetoken{S}{enumerable}"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\comparing-size.tex",
+        "sha256": "cf50fcd95edeadb0e27343b90e92c238c4b53c6e8bc8bcbd65c53fe1ca4a51dd",
+        "terms": [
+          "\\ollabel{thm:cantor}",
+          "કૅન્ટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "OLMD-135 changes only the first theorem item's explanatory inline operand from A to card(A); the displayed condition itself is source-exact.",
+      "OLMD-136 repairs the predecessor-infinitude warrant without changing the ordinal equations or silently dropping the original citation.",
+      "The formal finite definition is explicitly under ZFC; it does not claim that finite versus Dedekind-infinite exhausts sets without Choice.",
+      "The enumerability proof retains all three cases, and the no-largest and no-set arguments use different conclusions."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

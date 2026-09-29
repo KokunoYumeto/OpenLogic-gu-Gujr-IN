@@ -1,0 +1,295 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: sequents
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{seq}
+
+\olsection{સિક્વન્ટો સાથેનું સ્વાભાવિક નિગમન: \Log{N2c} અને~\Log{N2i}}
+
+\Log{N1c} અથવા~\Log{N1i}માંની
+!!^a{proof}~$\delta$
+બતાવે છે કે તેનું
+અંતિમ-!!{formula}~$!A$
+તેની ખુલ્લી ધારણાઓમાંથી
+ફલિત થાય છે.
+\sourcecorrection{OLMD-237}{મૂળમાં અહીં G1c/G1i લખાયું છે, પણ ખુલ્લી ધારણાવાળી સૂત્ર-સાબિતીઓની ચર્ચા N1c/N1i અંગે છે; G1 તંત્ર સિક્વન્ટ-કલનનાં છે.}
+જો~$\Gamma$ એવા
+!!{formula}s~$!B$નો
+ગણ હોય કે~$!B^x$
+એ~$\delta$માં
+ખુલ્લી ધારણા હોય,
+તો આને
+$\delta \Proves \Gamma
+\Sequent !A$ એમ
+લખી શકાય.
+આથી સિક્વન્ટો માટે
+પણ સ્વાભાવિક નિગમનનું
+તંત્ર ઘડી શકાય એવું
+સૂઝે છે.
+આવા તંત્રમાં દરેક
+સિક્વન્ટ જણાવે છે કે
+જમણી બાજુનું !!{formula}
+કઈ ખુલ્લી ધારણાઓ
+પર આધારિત છે,
+એટલે એ સિક્વન્ટમાં
+પૂરી થતી ઉપ-!!{proof}માં
+કઈ ધારણાઓ ખુલ્લી છે.
+આ સિક્વન્ટો સાથેનું,
+અથવા ``સિક્વન્ટ-શૈલીનું'',
+સ્વાભાવિક નિગમન છે;
+મળતાં તંત્રોને
+\Log{N2c} અને~\Log{N2i}
+કહીએ છીએ.
+
+\Log{N1} અને~\Log{N2}
+વચ્ચેનો અનુરૂપ સંબંધ
+વધુ સીધો બનાવવા
+ડાબી બાજુના ગણો~$\Gamma$
+ચિહ્નિત
+!!{formula}s~$x:!B$
+ધરાવે એમ લઈએ.
+\Log{N1}ના નિયમો
+આધારવાક્યોનાં
+!!{formula}s પર,
+એટલે તાત્કાલિક
+ઉપ-!!{proof}sના
+અંતિમ-!!{formula}s પર,
+જ કામ કરે છે;
+તેથી~\Log{N2}ના
+નિયમો સિક્વન્ટના
+ઉત્તરાંગ પર જ
+કામ કરે છે.
+આથી સિક્વન્ટની
+ડાબી બાજુનાં
+ચિહ્નિત સૂત્રોને
+ફક્ત \emph{સંદર્ભ}
+કહી શકાય.
+
+\Log{N2}ની સાબિતીઓમાં
+ધારણાઓને બદલે
+સૌથી ઉપર
+આ સ્વરૂપનાં
+સ્વયંસિદ્ધ સિક્વન્ટો છે:
+\[x:!A \Sequent !A.\]
+આ નિયમો~\Log{N1}ના
+નિયમોને ચોક્કસ અનુરૂપ
+છે અને
+\olref{tab:N2}માં
+આપેલા છે.
+
+\subfile{rules-N2}
+
+\Log{N1c} અને~\Log{N1i}ની
+જેમ અહીં પણ
+\Intro{\lif}, \Intro{\lnot},
+\Elim{\lor} અને
+\Elim{\lexists} નિયમો
+ધારણાઓ મુક્ત કરી
+શકે, પણ એમ કરવું
+જરૂરી ન હોય,
+એવી છૂટ જોઈએ.
+તેથી~\Log{N2c}
+અને~\Log{N2i}માં
+સંબંધિત આધારવાક્યના
+સંદર્ભમાં અનુરૂપ
+!!{formula}s~$!A$,
+$!B$ અને~$!A(a)$
+હાજર ન હોય તોપણ
+એ નિયમો યોગ્ય રીતે
+લાગુ પાડી શકાય છે.
+
+\begin{prop}
+જો~$\delta$ એ~$!A$ની
+\Log{N1c} અથવા~\Log{N1i}માંની
+!!a{proof} હોય,
+તો~\Log{N2c}
+(\Log{N2i})માં
+$\Gamma \Sequent !A$ની
+!!a{proof}~$\delta'$
+છે. અહીં~$\Gamma$
+એ એવા બધા~$x:!B$નો
+ગણ છે કે~$!B^x$
+એ~$\delta$ની
+ખુલ્લી ધારણા છે.
+\end{prop}
+
+\begin{proof}
+  $n=\pheight{\delta}$
+  પર આગમન કરીએ.
+  જો~$n=0$, તો~$\delta$
+  એક જ ખુલ્લી
+  ધારણા~$!A^x$ છે.
+  ત્યારે~$\Gamma = \{x:!A\}$
+  અને~$\Gamma
+  \Sequent !A$ એ
+  \Log{N2c} અથવા~\Log{N2i}
+  નું સ્વયંસિદ્ધ છે.
+
+  જો~$n>0$, તો~$\delta$ના
+  છેલ્લા અનુમાન પ્રમાણે
+  કિસ્સા જુદા પાડીએ.
+  અહીં માત્ર એક
+  કિસ્સો જોઈએ;
+  બાકીના કસરત
+  તરીકે રાખીએ છીએ.
+
+  માનો કે છેલ્લું
+  અનુમાન~$\Intro{\lif}$
+  છે. ત્યારે~$\delta$નો
+  અંત આ રીતે થાય છે:
+  \[
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પનાથી
+  \Log{N2c} (\Log{N2i})માં
+  $\Gamma' \Sequent !C$ની
+  !!a{proof}~$\delta_1'$
+  છે, જ્યાં~$\Gamma'$
+  એ~$\delta_1$માં
+  ખુલ્લી ચિહ્નિત
+  ધારણાઓનો ગણ છે.
+  જો~$!B^x$,
+  $\delta_1$ની ખુલ્લી
+  ધારણા હોય, તો
+  \Intro{\lif} અનુમાન
+  તેને મુક્ત કરે છે,
+  અને~$\delta$ની
+  ખુલ્લી ધારણાઓ
+  $\Gamma =
+  \Gamma' \setminus \{x:!B\}$
+  છે. એટલે~$\delta_1'$
+  એ~$x:!B, \Gamma \Sequent !C$ની
+  !!a{proof} છે,
+  અને~$\delta'$ને
+  આ રીતે લઈ શકાય:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  \sourcecorrection{OLMD-238}{મૂળના આ N2 વૃક્ષમાં પૂર્વાંગમાં $x:B$ લખાયું છે; તરતની દલીલ અને ચિહ્નિત સૂત્રની વ્યાખ્યા પ્રમાણે $x:!B$ જોઈએ.}
+  જો~$!B^x$,
+  $\delta_1$ની ખુલ્લી
+  ધારણા ન હોય,
+  તો~\Intro{\lif}
+  કોઈ ધારણા મુક્ત
+  કરતું નથી, અને
+  $\delta$ તથા~$\delta_1$ની
+  ખુલ્લી ધારણાઓ સમાન છે.
+  \Log{N2c} તથા~\Log{N2i}માં
+  \Intro{\lif}ના
+  આધારવાક્યના સંદર્ભમાં
+  $x:!B$ હાજર હોવું
+  જરૂરી ન હોવાથી,
+  $\delta'$ આ રીતે
+  લઈ શકાય:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+
+  $\delta$નો અંત બીજા
+  કોઈ નિયમમાં થાય
+  તે કિસ્સા સમાન છે.
+\end{proof}
+
+\begin{prop}
+જો~$\delta$ એ
+\Log{N2c} અથવા~\Log{N2i}માં
+$\Gamma \Sequent !A$ની
+!!a{proof} હોય,
+તો~\Log{N1c} (\Log{N1i})
+માં એવી
+!!a{proof}~$\delta'$
+છે જેનું
+અંતિમ-!!{formula}~$!A$
+છે અને
+દરેક
+$x:!B \in \Gamma$
+માટે~$!B^x$ તેની
+ખુલ્લી ધારણા છે.
+\end{prop}
+
+\begin{proof}
+  ફરી~$\delta$ની
+  !!{height}~$n$ પર
+  આગમન કરીએ.
+  જો~$n=0$,
+  તો~$\delta$ એ
+  સ્વયંસિદ્ધ
+  $x:!A \Sequent !A$ છે.
+  !!{proof}~$\delta'$
+  એ ધારણા~$!A^x$ છે.
+
+  જો~$n>0$, તો~$\delta$ના
+  છેલ્લા અનુમાન પ્રમાણે
+  કિસ્સા જુદા પાડીએ.
+  દાખલા તરીકે, અનુમાન
+  $\Intro{\lif}$ હોય,
+  તો~$\delta$નો અંત
+  આ બેમાંથી એક રીતે થાય છે:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \quad\text{ અથવા }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પનાથી
+  \Log{N1c} (\Log{N1i})
+  માં~$!C$ની
+  !!a{proof}~$\delta_1'$
+  છે. પહેલા કિસ્સામાં
+  $!B^x$ એ તેની
+  ખુલ્લી ધારણા છે;
+  બીજામાં નથી.
+  !!{proof}~$\delta'$ને
+  આ રીતે લઈ શકાય:
+  \[
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \quad\text{ અથવા }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \RightLabel{\Intro{\lif}}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+  અનુક્રમે.
+  \sourcecorrection{OLMD-239}{મૂળના અંતિમ બે N1 વૃક્ષોમાં $\delta_1$ લખાયું છે, જે N2 ઉપસાબિતી છે; આગમનથી મળતી N1 સાબિતી $\delta_1'$ છે. પહેલીમાં $!B^x$ ખુલ્લું છે તે પણ એ જ ઉપસાબિતી માટે કહેવાય છે.}
+\end{proof}
+
+\end{document}

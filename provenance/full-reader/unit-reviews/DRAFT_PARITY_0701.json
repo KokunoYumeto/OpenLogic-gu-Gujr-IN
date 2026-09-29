@@ -1,0 +1,130 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0701",
+  "checked_at_utc": "2026-09-28T23:41:48.397751+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0701 Height-preserving invertibility and contraction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0701",
+    "source_path": "content/proof-theory/sequent-calculus/invertibility.tex",
+    "source_sha256": "08233bea6d0d9dedcf1d7ed436524c5d36d87a89ba9ea28226f2caefe8c08023",
+    "draft_path": "private-state\\work\\batch044_draft\\proof-sequent-invertibility.tex",
+    "draft_sha256": "3009c44769ce5c5f91ba44bd5ce7932278546f35a59d5a8ddff0fa8047415ca0",
+    "aligned_blocks": 29,
+    "linguistic_blocks": 24,
+    "source_math_spans_correction_aware": 246,
+    "target_math_spans_after_corrections": 246,
+    "glossary_tokens": 63,
+    "source_correction_notes": [
+      "OLMD-308",
+      "OLMD-309",
+      "OLMD-310",
+      "OLMD-311",
+      "OLMD-312",
+      "OLMD-313",
+      "OLMD-314"
+    ],
+    "source_detector_ascii_tokens": 904,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$S_n$",
+        "$S_k$"
+      ],
+      [
+        "\\Proves[h_i] S_i",
+        "\\Proves S_i"
+      ],
+      [
+        "for $i = 1$, \\dots,~$n$.",
+        "for $i = 1$, \\dots,~$k$."
+      ],
+      [
+        "\\Proves_n S",
+        "\\Proves[n] S"
+      ],
+      [
+        "for $i =\n1$, \\dots,~$n$.",
+        "for $i =\n1$, \\dots,~$k$."
+      ],
+      [
+        "$!A \\land !B, \\Gamma' \\Sequent \\Delta, !C$",
+        "$!A, !B, \\Gamma' \\Sequent \\Delta, !C$"
+      ],
+      [
+        "$!A \\land !B, \\Gamma',\n!D \\Sequent \\Delta$",
+        "$!A, !B, \\Gamma',\n!D \\Sequent \\Delta$"
+      ],
+      [
+        "\\intertext{by definition, and}",
+        "\\intertext{વ્યાખ્યા મુજબ, અને}"
+      ],
+      [
+        "\\intertext{by inductive hypothesis. So,}",
+        "\\intertext{આગમન-ધારણા મુજબ. એટલે,}"
+      ],
+      [
+        "\\Deduce$\\Gamma \\fCenter \\Delta, \\lforall[x][!B(x)], !B(a)$\n\\RightLabel{\\RightR{\\lexists}}",
+        "\\Deduce$\\Gamma \\fCenter \\Delta, \\lforall[x][!B(x)], !B(a)$\n\\RightLabel{\\RightR{\\lforall}}"
+      ],
+      [
+        "$\\Gamma \\Sequent \\Delta, \\lexists[x][!B(x)],\n!B$",
+        "$\\Gamma \\Sequent \\Delta, \\lexists[x][!B(x)],\n!B(t)$"
+      ],
+      [
+        "\\Deduce$\\Gamma \\fCenter \\Delta,  \\lexists[x][!B(x)], !B$",
+        "\\Deduce$\\Gamma \\fCenter \\Delta,  \\lexists[x][!B(x)], !B(t)$"
+      ],
+      [
+        "!!a{proof}s~$\\pi_1'$",
+        "!!a{proof}~$\\pi_1'$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "આઇગનચલ",
+          "સંકોચન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\admissible-derivable.tex",
+        "sha256": "9d7fc09c1a6d36bb895db6a81bfb1469d5fb651b5f6f937ee1715690856c3a29",
+        "terms": [
+          "સ્વીકાર્ય"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\intertext{by definition, and}",
+        "target": "\\intertext{વ્યાખ્યા મુજબ, અને}",
+        "count": 1
+      },
+      {
+        "source": "\\intertext{by inductive hypothesis. So,}",
+        "target": "\\intertext{આગમન-ધારણા મુજબ. એટલે,}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\Olref{lem:G3c-invert}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 1
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

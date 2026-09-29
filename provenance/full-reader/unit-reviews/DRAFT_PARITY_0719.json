@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0719",
+  "checked_at_utc": "2026-09-29T00:32:05.454954+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0719 Elementary relations chapter driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0719",
+    "source_path": "content/sets-functions-relations/relations/relations.tex",
+    "source_sha256": "1c11d0ef727a94d20108024eb994e3707e39198c656882a2120457fa29f7f3b8",
+    "draft_path": "private-state\\work\\batch044_draft\\legacy-relations-driver.tex",
+    "draft_sha256": "4e389258d1eef42f9622b323d5dac1de0b49734f457679124f3d3bd3b5201a74",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 1,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "સંબંધ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

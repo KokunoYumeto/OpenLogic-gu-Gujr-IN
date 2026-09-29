@@ -1,0 +1,302 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{basic}
+\olsection{ક્રમવાચક સંખ્યાઓના મૂળભૂત ગુણધર્મો}
+
+આપણે જોયું કે શરૂઆતની કેટલીક ક્રમવાચક સંખ્યાઓ
+પ્રાકૃતિક સંખ્યાઓ જ છે. ક્રમવાચક સંખ્યાઓનો સિદ્ધાંત
+વિકસાવવાનું મુખ્ય કારણ પ્રાકૃતિક સંખ્યાઓ પર સાચા
+અનુમાનના સિદ્ધાંતને આગળ વિસ્તારવાનું છે. પ્રાથમિક
+પરિણામોની શ્રેણીથી આપણે ત્યાં સુધી પહોંચીશું.
+
+\begin{lem}\ollabel{ordmemberord}
+ક્રમવાચક સંખ્યાનો દરેક !!{element} પણ ક્રમવાચક
+સંખ્યા છે.
+\end{lem}
+
+\begin{proof}
+$\alpha$ ક્રમવાચક સંખ્યા હોય અને $b \in \alpha$ હોય.
+$\alpha$ પરંપરિત હોવાથી $b \subseteq \alpha$.
+તેથી $\in$ એ $b$ને સુક્રમિત કરે છે, કારણ કે
+$\in$ એ $\alpha$ને સુક્રમિત કરે છે.
+
+$b$ પરંપરિત છે તે જોવા માટે ધારો કે $x \in c \in b$.
+$b
+\subseteq \alpha$ હોવાથી $c \in \alpha$.
+ફરી $\alpha$ પરંપરિત હોવાથી $c \subseteq
+\alpha$, એટલે $x \in \alpha$.
+આમ $x, c, b \in \alpha$.
+પણ $\in$ એ $\alpha$ને સુક્રમિત કરે છે, તેથી
+\olref[sth][ordinals][wo]{wo:strictorder} મુજબ
+$\alpha$ પરનો $\in$ સંબંધ પરંપરિત છે.
+એટલે $x
+\in c \in b$ હોવાથી $x \in b$.
+સામાન્ય રીતે, $c \subseteq b$.
+\end{proof}
+
+\begin{cor}\ollabel{ordissetofsmallerord}
+કોઈ પણ ક્રમવાચક સંખ્યા~$\alpha$ માટે
+$\alpha = \Setabs{\beta \in \alpha}{\beta \text{ ક્રમવાચક સંખ્યા છે}}$.
+\end{cor}
+
+\begin{proof}
+\olref{ordmemberord}થી સીધું મળે છે.
+\end{proof}
+
+આગળનાં બે મુખ્ય પરિણામો,
+\olref{ordinductionschema} અને
+\olref{ordtrichotomy}, આશરે એ કહે છે કે
+ક્રમવાચક સંખ્યાઓ પોતે સભ્યતા-સંબંધથી સુક્રમિત છે:
+
+\begin{thm}[અનંતાતીત અનુમાન]\ollabel{ordinductionschema}
+કોઈ પણ સૂત્ર $\phi(x)$ માટે:
+\[
+	\text{જો }\exists \alpha \phi(\alpha)\text{, તો }\exists \alpha(\phi(\alpha)
+	\land  (\forall \beta \in \alpha) \lnot \phi(\beta))
+\]
+અહીં દર્શાવેલા પરિમાણકો પરોક્ષ રીતે ક્રમવાચક
+સંખ્યાઓ સુધી મર્યાદિત છે.
+\end{thm}
+
+\begin{proof}
+%\olref{ordinductionschema1}. 
+ધારો કે કોઈ ક્રમવાચક સંખ્યા $\alpha$ માટે
+$\phi(\alpha)$ છે. જો
+$ (\forall \beta
+\in \alpha) \lnot \phi(\beta)$ હોય, તો કામ પૂરું.
+નહિતર $\alpha$ના એવા સભ્યોમાંથી, જેમના માટે
+$\phi$ સાચું છે, $\in$ મુજબ લઘુતમ !!{element}
+પસંદ કરો. આપેલો ગણ ક્રમવાચક સંખ્યા હોવાથી
+આવો સભ્ય છે અને તે \olref{ordmemberord}
+મુજબ ક્રમવાચક સંખ્યા પણ છે.
+\sourcecorrection{OLMD-116}{મૂળમાં માત્ર $\alpha$ને
+કોઈ $\in$-લઘુતમ સભ્ય છે “જે $\phi$ છે”
+એમ કહેવાયું છે. જરૂરી પસંદગી આખા $\alpha$માંથી
+નહીં, પણ $\phi$ સંતોષતા તેના સભ્યોના અરિક્ત
+ઉપગણમાંથી કરવી પડે: પહેલેથી $\phi(\alpha)$
+હોય અને તે ઉપગણ ખાલી હોય તો $\alpha$ સાક્ષી છે;
+નહિતર ઉપગણનો લઘુતમ સભ્ય સાક્ષી છે.}
+%	\olref{ordinductionschema2}. Suppose there is some ordinal
+%	$\gamma$ such that $\lnot\phi(\gamma)$. Then by
+%	\olref{ordinductionschema1}, there is an $\in$-minimal ordinal
+%	$\alpha$ for which $\lnot\phi(\alpha)$. So $(\forall \beta <
+%	\alpha) \phi(\beta)$, rendering the antecedent of the conditional
+%	false.
+\end{proof}
+\noindent
+નોંધો કે \olref{ordinductionschema}ને સમકક્ષ રીતે
+આ પ્રરૂપ તરીકે પણ વ્યક્ત કરી શકાય:
+\[
+\text{જો }\forall \alpha((\forall \beta \in \alpha)\phi(\beta) \lif
+\phi(\alpha))\text{, તો }\forall \alpha\phi(\alpha)
+\]
+\olref{ordinductionschema}માં
+$\lnot\phi(\alpha)$ મૂકીને અને પછી પ્રાથમિક
+તાર્કિક ફેરફારો કરીને આ મળે છે.
+
+\begin{thm}[ત્રિવિકલ્પતા]\ollabel{ordtrichotomy}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha$ અને $\beta$ માટે
+$\alpha \in \beta \lor \alpha = \beta \lor \beta \in \alpha$.
+\end{thm}
+
+\begin{proof}
+સાબિતી બે વાર અનુમાનથી છે, એટલે કે
+\olref{ordinductionschema} બે વાર વાપરીશું.
+$x$ એ $y$ સાથે \emph{તુલનીય} છે એમ કહીએ
+જો અને ફક્ત જો
+$x \in y \lor x = y \lor y \in x$.
+
+અનુમાન માટે ધારો કે~$\alpha$માંની દરેક
+ક્રમવાચક સંખ્યા \emph{દરેક} ક્રમવાચક
+સંખ્યા સાથે તુલનીય છે.
+બીજા અનુમાન માટે ધારો કે
+$\alpha$ એ~$\beta$માંની દરેક ક્રમવાચક
+સંખ્યા સાથે તુલનીય છે.
+આપણે $\alpha$ અને~$\beta$ તુલનીય છે તે
+બતાવીશું. પછી~$\beta$ પરના અનુમાનથી
+$\alpha$ દરેક ક્રમવાચક સંખ્યા સાથે
+તુલનીય છે; અને ત્યાર બાદ~$\alpha$ પરના
+અનુમાનથી \emph{દરેક} ક્રમવાચક સંખ્યા
+\emph{દરેક} ક્રમવાચક સંખ્યા સાથે તુલનીય
+છે, જેમ જોઈએ છે.
+$\alpha \notin \beta$ અને
+$\beta \notin
+\alpha$ ધારીને $\alpha = \beta$ બતાવવું પૂરતું છે.
+
+$\alpha \subseteq \beta$ બતાવવા કોઈ
+$\gamma \in \alpha$ લો; \olref{ordmemberord}
+મુજબ તે ક્રમવાચક સંખ્યા છે.
+તેથી પહેલી અનુમાન-ધારણા મુજબ
+$\gamma$ એ $\beta$ સાથે તુલનીય છે.
+પણ જો $\gamma
+= \beta$ અથવા $\beta \in \gamma$ હોય,
+તો (જરૂર પડે ત્યાં $\alpha$ પરંપરિત છે તે
+વાપરીને) $\beta \in \alpha$ થશે, જે
+આપણી ધારણાની વિરુદ્ધ છે; તેથી
+$\gamma \in \beta$. સામાન્ય રીતે,
+$\alpha \subseteq
+\beta$.
+
+એ જ પ્રકારની દલીલ બીજી અનુમાન-ધારણા
+વાપરીને $\beta \subseteq \alpha$ બતાવે છે.
+તેથી $\alpha = \beta$.
+\end{proof}\noindent તેથી આપણે ક્યારેક
+$\alpha \in \beta$ને બદલે $\alpha <\beta$
+લખીશું, કારણ કે $\in$ અહીં ક્રમસંબંધ
+જેવો વ્યવહાર કરે છે. પરિચિતપણું અને
+$\alpha \in
+\beta \lor \alpha = \beta$ કરતાં
+$\alpha \leq \beta$ લખવું સરળ હોવું
+એ સિવાય આ માટે કોઈ ગહન કારણ નથી.\footnote{
+આપણે $\alpha
+\mathrel{\underline{\in}} \beta$ લખી શકીએ,
+પણ તે તદ્દન અપ્રચલિત સંકેત થશે.}
+
+આ છેલ્લાં પરિણામોનાં બે ટૂંકાં ફલિતાર્થો
+આ છે; પહેલું આપણા નવા સંકેતનો ઉપયોગ કરે છે:
+
+\begin{cor}\ollabel{ordordered}
+જો $\exists \alpha\phi(\alpha)$ હોય, તો
+$\exists \alpha(\phi(\alpha)
+\land \forall \beta(\phi(\beta) \lif \alpha \leq \beta))$.
+વધુમાં, કોઈ પણ ક્રમવાચક સંખ્યાઓ
+$\alpha, \beta, \gamma$ માટે
+$\alpha
+\notin \alpha$ અને
+$\alpha \in \beta \in \gamma \lif \alpha \in
+\gamma$ બંને સાચાં છે.
+\end{cor}
+
+\begin{proof}
+\olref[wo]{wo:strictorder} જેવી જ દલીલ.
+\end{proof}
+
+\begin{prob}
+\olref[sth][ordinals][basic]{ordtrichotomy}ની
+સાબિતીમાં “એ જ પ્રકારની દલીલ” પૂરી કરો.
+\end{prob}
+
+\begin{cor}\ollabel{corordtransitiveord}
+$A$ ક્રમવાચક સંખ્યા હોય જો અને ફક્ત જો
+$A$ એ ક્રમવાચક સંખ્યાઓનો પરંપરિત ગણ હોય.
+\end{cor}
+
+\begin{proof}
+\emph{ડાબેથી જમણે.} \olref{ordmemberord} મુજબ.
+\emph{જમણેથી ડાબે.}
+જો $A$ ક્રમવાચક સંખ્યાઓનો પરંપરિત
+ગણ હોય, તો
+\olref{ordinductionschema} અને
+\olref{ordtrichotomy} મુજબ
+$\in$ એ $A$ને સુક્રમિત કરે છે.
+\end{proof}
+
+હમણાં આપણે \olref{ordinductionschema}
+અને \olref{ordtrichotomy}નો સાર એ રીતે
+કહ્યો કે $\in$ ક્રમવાચક સંખ્યાઓને
+સુક્રમિત કરે છે. જોકે આગળના પરિણામને
+લીધે આવા દાવા અંગે આપણે \emph{ખૂબ સાવચેત}
+રહેવું જોઈએ:
+
+\begin{thm}[બુરાલી–ફૉર્ટીનો વિરોધાભાસ]\ollabel{buraliforti}
+બધી ક્રમવાચક સંખ્યાઓનો ગણ નથી.
+\end{thm}
+
+\begin{proof}
+વિરોધાભાસ માટે ધારો કે $O$ બધી
+ક્રમવાચક સંખ્યાઓનો ગણ છે.
+જો $\alpha \in
+\beta \in O$ હોય, તો
+\olref{ordmemberord} મુજબ $\alpha$
+ક્રમવાચક સંખ્યા છે, તેથી
+$\alpha \in O$.
+આમ $O$ પરંપરિત છે અને તેથી
+\olref{corordtransitiveord} મુજબ
+$O$ ક્રમવાચક સંખ્યા છે.
+એટલે $O \in O$, જે
+\olref{ordordered} સાથે વિરોધાભાસ કરે છે.
+\end{proof}
+\noindent
+આ પરિણામનું નામ \citeauthor{Burali-Forti1897}
+પરથી પડ્યું છે. પરંતુ 1899માં ડેડેકિન્ડને
+લખેલા પત્રમાં કૅન્ટૉરે બધી ક્રમવાચક
+સંખ્યાઓનો ગણ માનતાં ઊભો થતો
+\emph{વિરોધાભાસ} પહેલી વાર સ્પષ્ટ રીતે
+જોયો હતો. વાન હેયેનૉર્ટ સમજાવે છે તેમ:
+\begin{quote}
+  બુરાલી–ફૉર્ટીએ પોતે વિરોધાભાસને
+  \emph{વિરોધાભાસ વડે સાબિતી}થી
+  એવું પરિણામ મળ્યું હોવાનું માન્યું કે
+  ક્રમવાચક સંખ્યાઓનો સ્વાભાવિક ક્રમ
+  માત્ર આંશિક ક્રમ છે.
+  \citep[p.~105]{Heijenoort1967}
+\end{quote}
+બુરાલી–ફૉર્ટીની ભૂલને બાજુએ રાખીને
+અત્યાર સુધીની વાત આ રીતે કહી શકીએ:
+ક્રમવાચક સંખ્યાઓ એવા ગણો છે જે
+અલગ અલગ રીતે સભ્યતા-સંબંધથી
+સુક્રમિત છે, અને સામૂહિક રીતે પણ
+સભ્યતા-સંબંધથી સુક્રમિત છે
+(પણ એ બધી મળીને ગણ બનતી નથી).
+
+છેલ્લે, ક્રમવાચક સંખ્યાઓના
+\olref{ordinductionschema} અને
+\olref{ordtrichotomy}માંથી મળતાં
+કેટલાક વધુ મૂળભૂત ગુણધર્મો આ છે.
+
+\begin{prop}
+ક્રમવાચક સંખ્યાઓનો કોઈ પણ કડક
+ઊતરતો અનુક્રમ સાન્ત હોય છે.
+\end{prop}
+
+\begin{proof}
+ક્રમવાચક સંખ્યાઓના કોઈ અનંત કડક
+ઊતરતા અનુક્રમ
+$\alpha_0 > \alpha_1 > \alpha_2 > \ldots$માં
+$<$ મુજબ ન્યૂનતમ સભ્ય નથી;
+આ \olref{ordinductionschema}ની
+વિરુદ્ધ છે.
+\end{proof}
+
+\begin{prop}\ollabel{ordinalsaresubsets}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ
+$\alpha, \beta$ માટે
+$\alpha \subseteq \beta \lor \beta \subseteq \alpha$.
+\end{prop}
+
+\begin{proof}
+જો $\alpha \in \beta$, તો $\beta$
+પરંપરિત હોવાથી $\alpha \subseteq \beta$.
+એ જ રીતે, જો $\beta \in \alpha$,
+તો $\beta \subseteq
+\alpha$. અને જો $\alpha = \beta$,
+તો $\alpha \subseteq \beta$ અને
+$\beta \subseteq \alpha$.
+તેથી \olref{ordtrichotomy} મુજબ
+દલીલ પૂરી થાય છે.
+\end{proof}
+
+\begin{prop}\ollabel{ordisoidentity}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ
+$\alpha, \beta$ માટે
+$\alpha = \beta$ તો અને ફક્ત તો
+$\ordeq{\alpha}{\beta}$.
+\end{prop}
+
+\begin{proof}
+ક્રમવાચક સંખ્યાઓ સુક્રમો છે;
+તેથી ત્રિવિકલ્પતા
+(\olref[basic]{ordtrichotomy}) અને
+\olref[iso]{wellordnotinitial}થી
+આ સીધું મળે છે.
+\end{proof}
+
+\begin{prob}\ollabel{probunionordinalsordinal}
+જો $X$નો દરેક સભ્ય ક્રમવાચક
+સંખ્યા હોય, તો $\bigcup X$
+ક્રમવાચક સંખ્યા છે તે સાબિત કરો.
+\end{prob}
+
+\end{document}

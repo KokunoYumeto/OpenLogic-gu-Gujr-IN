@@ -1,0 +1,84 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0569",
+  "checked_at_utc": "2026-09-28T01:50:36.686151+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0569 limitation-of-size as an intrinsic warrant for Replacement and its difficulty; state-only draft",
+  "report": {
+    "unit_id": "OLP-0569",
+    "source_path": "content/set-theory/replacement/limofsize.tex",
+    "source_sha256": "579ce35979a90771bcf225ff54b688aa34c19a88bd46fd5b51256f5ab2e68d49",
+    "draft_path": "private-state\\work\\batch044_draft\\replacement-limofsize.tex",
+    "draft_sha256": "eabcaafc3c34ee1ba04ad510d3457f9c7fa43998b7f2e622282c14370cb6538c",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 5,
+    "target_math_spans_after_corrections": 5,
+    "glossary_tokens": 1,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 422,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-introduction.tex",
+        "sha256": "90ada58ffd3a8f6a9320170d03e6c0c24a4374ede71508794addb7b78423da8c",
+        "terms": [
+          "બાહ્ય",
+          "આંતરિક",
+          "પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-replacement.tex",
+        "sha256": "26a05b92c09a1ba8edfcde66d51a841858744b476bae38a81d1999d3ac26c1ef",
+        "terms": [
+          "\\Setabs{\\tau(x)}{x \\in A}",
+          "પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cumulative-approach.tex",
+        "sha256": "406d630c98b96fba4eb2edf4ed84703d9e58fa92ec4c71cf643ba90bd11f56ee",
+        "terms": [
+          "સંચયી-પુનરાવર્તી",
+          "તબક્કા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\russells-paradox-again.tex",
+        "sha256": "e62b2d165b604d47921965045523cd4eba48b62c886d197f1d8d8b7079f440f8",
+        "terms": [
+          "રસેલનો વિરોધાભાસ",
+          "સહજ ગણરચના"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The source-coined display macro \\limofsize remains structurally unchanged while its English expansion is localized by a separate binding and source-style receipt.",
+      "The exact cardinal formula is retained; it applies to a term image from a set A, without inferring that all arbitrary collections have a cardinality.",
+      "The Russell pug example means no pug has precisely the self-non-sniffing pugs as its sniffing targets; the Gujarati preserves the negative existential and exactly qualification.",
+      "The section critiques rather than adopts the limitation-of-size principle; the translation does not suggest it followed from the earlier iterative account."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\crefrange{sth:story::chap}{sth:z::chap}",
+        "count": 1,
+        "reason": "Frozen cross-chapter reference keys are identifiers rather than English prose."
+      }
+    ],
+    "supporting_receipts": [
+      {
+        "path": "work/STAGE_LABEL_LOCALIZATION_044_0569.json",
+        "sha256": "45b3a2e258075b669266d266e4a288dbc838ee3a55a83a02ec115af5212c1167"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

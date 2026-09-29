@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0386",
+  "checked_at_utc": "2026-09-27T08:47:39.955050+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0386 many-valued language connectives; state-only draft",
+  "report": {
+    "unit_id": "OLP-0386",
+    "source_path": "content/many-valued-logic/syntax-and-semantics/connectives.tex",
+    "source_sha256": "5eab2399773774dcc0ad724bf710775b247fa781eddca68a814f39537880ff30",
+    "draft_path": "private-state\\work\\batch039_draft\\connectives.tex",
+    "draft_sha256": "07e7ff070eee18beffcbe15a37fdf1af6884badfbf016aebca926906df862954",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 36,
+    "target_math_spans_after_corrections": 36,
+    "glossary_tokens": 8,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 211,
+    "target_untranslated_prose_findings": 0,
+    "prose_scan_structural_tag_exception": "one parity-verified defTrue iftag identifier neutralized in scan input",
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": []
+  },
+  "status": "draft_linguistic_structure_and_math_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,144 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+	
+\olfileid{sth}{replacement}{finiteaxiomatizability}
+\olsection{પરિશિષ્ટ: સીમિત સ્વયંસિદ્ધીકરણ}
+પ્રતિસ્થાપનમાંથી કેટલાંક પરિણામો મેળવી આ પ્રકરણ પૂરું
+કરીએ. પહેલું પરિણામ \citet{Montague1961}નું છે; ધ્યાન
+આપો કે આ $\ZF$ની \emph{અંદર} અપાતી સાબિતી નહીં,
+પણ $\ZF$ \emph{વિશે}ની સાબિતી છે:
+\begin{thm}\ollabel{zfnotfinitely}
+	$\ZF$નું સીમિત સ્વયંસિદ્ધીકરણ શક્ય નથી. વધુ સામાન્ય રીતે:
+	જો $\Th{T}$ સીમિત હોય અને $\Th{T} \Proves \ZF$ હોય,
+	તો $\Th{T}$ અસુસંગત છે.
+	
+	(અહીં આપણે અપ્રગટ રીતે માત્ર એવાં પ્રથમ-ક્રમનાં
+	વિધાનો લઈએ છીએ જેમની એકમાત્ર અતાર્કિક મૂળભૂત
+	સંજ્ઞા $\in$ છે; અને $\Th{T} \Proves \ZF$નો
+	અર્થ દરેક $\phi \in \ZF$ માટે
+	$\Th{T} \Proves \phi$ એવો કરીએ છીએ.)
+\end{thm}
+\begin{proof}
+	$\Th{T} \Proves \ZF$ થાય એવો સીમિત $\Th{T}$
+	નક્કી કરો. તેથી $\Th{T}$ પ્રતિબિંબન, એટલે કે
+	\olref[sth][replacement][ref]{reflectionschema}, સાબિત
+	કરે છે. $\Th{T}$ સીમિત હોવાથી તેને એક જ સંયોજન
+	$\theta$ તરીકે ફરી લખી શકીએ. આ સૂત્રને પ્રતિબિંબિત
+	કરીને $\Th{T} \Proves \exists \beta(\theta \liff \theta^{V_\beta})$
+	મળે છે. સ્પષ્ટપણે $\Th{T} \Proves \theta$ હોવાથી,
+	$\Th{T} \Proves \exists \beta\ \theta^{V_\beta}$ મળે છે.
+	
+	હવે $\psi(X)$ નીચેનું ટૂંકું લખાણ હોય:
+	\[
+		\theta^X \land X\text{ is transitive} \land (\forall Y \in X)(Y\text{ is transitive}\lif \lnot \theta^{Y})
+	\]
+	આશરે તેનો અર્થ એ છે કે $X$ એ $\theta$નો પરંપરિત
+	નિદર્શ છે અને આ બાબતમાં $\in$-લઘુતમ છે. હવે
+	$\Th{T} \Proves \exists \beta\ \theta^{V_\beta}$
+	યાદ રાખીને, $\ZF$માં અને તેથી $\Th{T}$માં
+	સ્તરાંકો વિશેનાં મૂળભૂત તથ્યો વડે મળે છે:
+	\begin{equation}
+		\Th{T} \Proves \exists M \psi(M). \tag{*}\label{Mpsi}
+	\end{equation}
+	$\psi(X)$ના પહેલા સંયોજકનો ઉપયોગ કરીએ તો,
+	જ્યારે પણ $\Th{T} \Proves \sigma$ હોય, ત્યારે
+	$\Th{T} \Proves \forall X(\psi(X) \lif \sigma^X)$
+	થાય છે. તેથી \eqref{Mpsi} મુજબ:
+	\begin{align*}
+		\Th{T} &\Proves \forall X(\psi(X) \lif (\exists N \psi(N))^X)\\
+	\intertext{Using this, and \eqref{Mpsi} again:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \psi(N))^M)
+	\intertext{In particular, then:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)((N\text{ is transitive})^M \land (\theta^N)^M))
+	\intertext{So, by elementary reasoning concerning transitivity:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)(N\text{ is transitive} \land \theta^N))
+	\end{align*}
+	\sourcecorrection{OLMD-125}{મૂળની ત્રીજી પંક્તિમાં
+	$N$ની પરંપરિતતા પરનું સાપેક્ષીકરણ ભૂલથી $N$ સુધી
+	કરાયું છે. અહીં બહારના પ્રતિબિંબિત નિદર્શ $M$
+	સુધી કર્યું છે. $M$ પરંપરિત અને $N\in M$ હોવાથી
+	પછીની પંક્તિમાં નિરપેક્ષતા વાપરી શકાય છે.}
+	આથી $\Th{T}$ અસુસંગત છે.\footnote{આ ``મૂળભૂત
+	દલીલ''માં પરંપરિત ગણો માટે નિરપેક્ષતાનાં અમુક
+	તથ્યો સાબિત કરવાનાં આવે છે.}
+\end{proof}
+
+આવું જ એક પરિણામ \citet[223]{Potter2004}એ નોંધ્યું છે:
+
+\begin{prop}\ollabel{finiteextensionofZ}
+	ધારો કે $\Th{T}$ એ $\Z$માં સીમિત સંખ્યાનાં નવાં
+	સ્વયંસિદ્ધિઓ ઉમેરીને મળતો સિદ્ધાંત છે. જો
+	$\Th{T} \Proves \ZF$ હોય, તો $\Th{T}$ અસુસંગત
+	છે. (અહીં \olref{zfnotfinitely} જેવી જ અપ્રગટ
+	મર્યાદાઓ લાગુ પડે છે.)
+\end{prop}
+\begin{proof}
+	પૃથક્કરણના (અસંખ્ય) કિસ્સાઓ સિવાય $\Th{T}$ની બધી
+	સ્વયંસિદ્ધિઓનું સંયોજન $\theta$ લો. \olref{zfnotfinitely}ની
+	જેમ $\theta$માંથી $\psi$ વ્યાખ્યાયિત કરીને
+	$\Th{T} \Proves \exists M \psi(M)$ બતાવી શકીએ છીએ.
+	
+	\olref{zfnotfinitely}ની જેમ એવો પ્રરૂપ સ્થાપી
+	શકીએ કે જ્યારે પણ $\Th{T} \Proves \sigma$ હોય,
+	ત્યારે $\Th{T} \Proves \forall X(\psi(X) \lif \sigma^X)$.
+	પછી બરાબર \olref{zfnotfinitely}ની જેમ સાબિતી પૂરી થાય છે.
+	
+	પરંતુ આ પ્રરૂપ સ્થાપવામાં \olref{zfnotfinitely} કરતાં
+	થોડું વધુ કામ છે. પૃથક્કરણના કિસ્સાઓ $\Th{T}$માં
+	છે, પણ $\theta$ના સંયોજકો નથી. જોકે મૂળ અહીં
+	દાવો કરે છે કે દરેક પૃથક્કરણ-કિસ્સા $\sigma$ માટે
+	$\Th{T} \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$
+	સાબિત કરીને આ અવરોધ દૂર કરી શકીએ. આ વાચક માટે
+	છોડેલું છે.
+	\sourcecorrection{OLMD-126}{આ દાવો જણાવેલા સ્વરૂપમાં
+	ખોટો છે. દાખલા તરીકે પરંપરિત ગણ $X=\omega$ લો.
+	$A=3$ માટે ``$x=0$ અથવા $x=2$'' સૂત્રથી
+	મળતો ઉપગણ $\{0,2\}$ એ $X$નો સભ્ય નથી; તેથી
+	પૃથક્કરણનો એ કિસ્સો $X$માં નિષ્ફળ જાય છે. માત્ર
+	પરંપરિતતા પરથી દરેક પૃથક્કરણ-કિસ્સાનું
+	સાપેક્ષીકરણ મળતું નથી. નીચેનો સ્વાધ્યાય અને આ
+	આધારવાળી બીજી સાબિતી મૂળમાં અપૂર્ણ રહે છે; અહીં
+	તેને સ્થાપિત પરિણામ ગણ્યું નથી.}
+\end{proof}
+\begin{prob}
+	બતાવો કે દરેક પૃથક્કરણ-કિસ્સા $\sigma$ માટે
+	$\Z \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$.
+	(આ પ્રરૂપ \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ}માં
+	વાપર્યું હતું.)
+\end{prob}
+\begin{prob}
+	બતાવો કે દરેક $\phi \in \Z$ માટે
+	$\ZF \Proves \phi^{V_{\omega+\omega}}$.
+\end{prob}
+\begin{prob}
+	\olref[sth][replacement][finiteaxiomatizability]{zfnotfinitely}
+	અને \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ}ની
+	સાબિતીઓમાં વપરાયેલાં બાકીનાં પ્રરૂપાત્મક પરિણામો ચકાસો.
+\end{prob}
+
+\olref[sth][replacement][absinf]{sec}માં જણાવ્યા મુજબ,
+આ બતાવે છે કે પ્રતિસ્થાપન
+\olref[ordinals][ordtype]{thmOrdinalRepresentation} કરતાં
+કડક રીતે વધુ શક્તિશાળી છે. અથવા, થોડું વધુ ચોક્કસ રીતે:
+જો $\Z$ + ``દરેક સુક્રમ અનન્ય ક્રમવાચક સંખ્યા સાથે
+ક્રમ-એકરૂપ છે'' સુસંગત હોય, તો તે પ્રતિસ્થાપનનો
+કોઈક કિસ્સો સાબિત કરી શકતું નથી.
+\sourcecorrection{OLMD-127}{મૂળનો આ કડક-શક્તિનો
+નિષ્કર્ષ અગાઉના સીમિત-$\Z$-વિસ્તરણના પરિણામ પર
+આધારિત છે. OLMD-126માં નોંધેલી ખામી દૂર કર્યા વિના
+આ વિભાગની આપેલી સાબિતીથી તે નિષ્કર્ષ સ્થાપિત
+થતો નથી; દાવાની સ્વતંત્ર સાચાઈ અહીં નક્કી કરાતી નથી.}
+
+
+	%	By assumption, $\psi^{V_\alpha}$ has the form: 
+	%	\[
+	%		(\forall A \in V_\alpha)(\exists S \in V_\alpha)(\forall x \in V_\alpha)(x \in S \liff (\phi^{V_\alpha}(x) \land x \in A))
+	%	\]
+	%	To establish this holds, fix $A \in V_\alpha$. Using Separation, obtain: 
+	%	\[
+	%		S = \Setabs{x \in A}{\phi^{V_\alpha}(x)}
+	%	\]
+	%	Now $S \in V_\alpha$, since $S \subseteq A \in V_\alpha$, and clearly $(\forall x \in V_\alpha)(x \in S \liff (\phi^{V_\alpha}(x) \land x \in A)$.
+
+\end{document}

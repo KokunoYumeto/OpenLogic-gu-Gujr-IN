@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0376",
+  "checked_at_utc": "2026-09-27T07:36:46.573235+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0376 pairs and predecessor; state-only draft",
+  "report": {
+    "unit_id": "OLP-0376",
+    "source_path": "content/lambda-calculus/lambda-definability/pairs.tex",
+    "source_sha256": "4d2fd1df669f4a9a40328ebd0a7fcea1e38576e6b32acc5a5692626b934032cb",
+    "draft_path": "private-state\\work\\batch038_draft\\pairs.tex",
+    "draft_sha256": "674db5a66a5c9a12e5168d27d40f366d53893a4dec1084fa69c5d06e2ef53611",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 24,
+    "target_math_spans_after_corrections": 24,
+    "glossary_tokens": 1,
+    "source_correction_notes": [
+      "OLLAM-052"
+    ],
+    "source_detector_ascii_tokens": 146,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      8
+    ]
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

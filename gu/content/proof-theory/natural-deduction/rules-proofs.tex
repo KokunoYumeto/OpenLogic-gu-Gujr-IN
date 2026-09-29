@@ -1,0 +1,535 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: rules-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{rp}
+
+\olsection{નિયમો અને \usetoken{P}{proof}}
+
+પહેલાં કેટલીક વ્યાખ્યાઓ
+અને પરિભાષા નક્કી કરીએ.
+
+\Log{N1c} અને~\Log{N1i}માંના
+$!A \lif !B$ ધરાવતા
+બે નિયમો જુઓ.
+\[
+\bottomAlignProof
+\AxiomC{$\Discharge{!A}{x}$}
+\shortDeduce
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$!A \lif !B$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+\Elim{\lif} નિયમ સમજવો
+સહેલો છે. રેખાની
+ઉપરનાં !!{formula}s
+\emph{આધારવાક્યો} છે.
+ડાબી બાજુનું !!{formula}
+એ \emph{મુખ્ય}
+!!{formula}~$!A \lif !B$
+છે. દરેક
+!!{elimination} નિયમમાં
+આવું એક આધારવાક્ય હોય છે,
+હંમેશાં સૌથી ડાબે.
+તેને અનુમાનનું
+\emph{મુખ્ય} આધારવાક્ય
+કહે છે. આ કિસ્સાની
+જેમ બીજાં આધારવાક્યો
+હોય, તો તેમને
+\emph{ગૌણ} આધારવાક્યો
+કહે છે.
+!!{introduction} નિયમોનાં
+આધારવાક્યો પણ મુખ્ય
+આધારવાક્યો કહેવાય છે.
+રેખાની નીચેનું
+!!{formula} એ
+\emph{ફલિતવાક્ય} છે.
+
+\Intro{\lif} નિયમને
+માત્ર એક આધારવાક્ય છે,
+અને અહીં ફલિતવાક્ય
+એ મુખ્ય સૂત્ર~$!A \lif !B$
+છે. બધાં
+!!{introduction} નિયમો
+આવા છે: ફલિતવાક્ય
+મુખ્ય સૂત્ર હોય છે
+અને તેનો મુખ્ય સંક્રિયક
+``દાખલ'' થાય છે.
+
+સંજ્ઞા~$\Discharge{!A}{x}$નો
+અર્થ આ છે. કોઈ
+!!a{proof}માં
+\Intro{\lif} અનુમાન
+આધારવાક્યરૂપે
+!!a{formula}~$!B$ને
+લાગુ પડે છે.
+$!B$માં પૂરી થતી
+ઉપ-!!{proof}માં
+શરૂઆતનાં કેટલાંક
+!!{formula}s હોય છે;
+તેમને \emph{ધારણાઓ}
+કહે છે.
+$!A$ સ્વરૂપની એક
+કે વધુ ધારણાઓમાંથી
+$!B$ની !!^a{proof}
+એ~$!A$માંથી~$!B$
+ફલિત થાય છે તેની
+!!a{proof} છે.
+\Intro{\lif} નિયમ
+લગાવીએ ત્યારે
+$!A \lif !B$
+તારવીએ છીએ,
+અને ફલિતવાક્ય
+હવે ધારણા~$!A$
+પર આધારિત રહેતું નથી.
+તે બતાવવા~\Intro{\lif}
+અનુમાન ધરાવતી
+!!{proof}માંનાં
+$!A$ સ્વરૂપનાં
+ધારણાઓને \emph{મુક્ત}
+અથવા \emph{બંધ}
+કહીએ છીએ.
+કઈ ધારણાઓ મુક્ત થઈ
+શકે તે નિયમ જણાવે છે.
+નિષ્કર્ષ~$!A \lif !B$
+ધરાવતા~\Intro{\lif}
+માટે એ~$!A$ સ્વરૂપની,
+એટલે અનુસરણના પૂર્વપદ
+સાથે મળતી, ધારણાઓ છે.
+કઈ ધારણા કયા નિયમથી
+મુક્ત થાય છે તે
+બતાવવું ક્યારેક જરૂરી
+હોય છે; તે માટે
+મુક્તિ-ચિહ્ન~$x$
+વાપરીએ છીએ.
+પરંતુ ધારણા મુક્ત
+કરતો નિયમ જરૂરી
+સ્વરૂપની \emph{બધી}
+ધારણાઓ, કે એકેય
+ધારણા, મુક્ત કરે
+તે \emph{જરૂરી નથી}.
+દાખલા તરીકે,
+પહેલું~\Intro{\lif}
+કોઈ ધારણા મુક્ત ન
+કરે તોપણ નીચેની
+સાબિતી યોગ્ય છે:
+\[
+\AxiomC{$\Discharge{!A}{y}$}
+\RightLabel{\Intro{\lif}}
+\UnaryInfC{$!B \lif !A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$!A \lif (!B \lif !A)$}
+\DisplayProof
+\]
+\sourcecorrection{OLMD-231}{મૂળ વૃક્ષના પ્રથમ અનુસરણ-પરિચય પર $x$ મુક્તિ-ચિહ્ન મૂકાયું છે, જ્યારે તે કોઈ ધારણા મુક્ત કરતું નથી અને તરતનું ગદ્ય ચિહ્ન છોડવાનું કહે છે; અહીં તે લેબલ કાઢ્યું છે.}
+કોઈ નિયમ એકેય ધારણા
+મુક્ત ન કરે ત્યારે
+મુક્તિ-ચિહ્ન છોડીએ છીએ
+(જેમ અહીં કર્યું છે).
+
+આ !!{proof}માં
+\[
+\AxiomC{$\Discharge{!A}{x}$}
+\AxiomC{$\Discharge{!A}{y}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !A$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$!A \lif (!A \lif !A)$}
+\DisplayProof
+\]
+પહેલું~\Intro{\lif}
+અનુમાન ડાબી
+ધારણા~$!A^x$ને,
+અને બીજું જમણી
+ધારણા~$!A^y$ને
+મુક્ત કરે છે.
+એટલે~$x$ ચિહ્નવાળી
+બધી ધારણાઓને
+$x$ ચિહ્નવાળું
+\Intro{\lif} મુક્ત કરે છે,
+અને~$y$ ચિહ્નવાળીઓને
+$y$ ચિહ્નવાળું અનુમાન.
+આ રીતે કામ કરવા
+એક જ ચિહ્નવાળી
+બધી ધારણાઓનું
+!!{formula} પણ એક
+જ હોવું જરૂરી છે.
+
+પરિમાણકોના નિયમો
+થોડા વધુ જટિલ છે.
+દાખલા તરીકે,
+\Log{N1i}માં
+$\lexists$ના નિયમો આ છે:
+\[
+\bottomAlignProof
+\AxiomC{$!A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A(x)]$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$\lexists[x][!A(x)]$} 
+\AxiomC{$\Discharge{!A(c)}{x}$}
+\shortDeduce
+\DeduceC{$!B$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$!B$} \DisplayProof 
+\bottomAlignProof
+\]
+\Intro{\lexists} નિયમમાં
+આધારવાક્ય~$!A(t)$ છે,
+જ્યાં~$t$ બંધ પદ છે,
+અર્થાત્ ચલ વિનાનું પદ.
+આવું અનુમાન ત્યારે યોગ્ય
+છે, એટલે કે
+\Intro{\lexists}ના
+યોજનાત્મક નિયમને
+ત્યારે અનુરૂપ છે,
+જ્યારે કોઈ
+!!{formula}~$!A$,
+કોઈ ચલ~$x$
+અને કોઈ બંધ પદ~$t$
+માટે નિષ્કર્ષ
+$\lexists[x][!A]$
+અને આધારવાક્ય
+$\Subst{!A}{t}{x}$
+હોય.
+\Elim{\lexists}થી
+$!A(c)$ સ્વરૂપની
+ધારણાઓ મુક્ત કરી
+શકાય છે:
+દરેક અનુમાન માટે
+કોઈ !!{constant}~$c$
+હોય છે અને
+$\Subst{!A}{c}{x}$
+સ્વરૂપની ધારણાઓ
+મુક્ત કરી શકાય છે.
+એક અનુમાનમાં
+મુક્ત થતી બધી
+ધારણાઓમાં એ જ~$c$
+વપરાવો જોઈએ.
+આ અચળને
+\Elim{\lexists}
+અનુમાનનો
+\emph{સ્વનિર્ધારક ચલ}
+કહે છે.
+આ અનુમાન માત્ર ત્યારે
+યોગ્ય છે જ્યારે~$c$
+મુક્ત થતી~$!A(c)$
+સિવાયની કોઈ ખુલ્લી
+ધારણામાં, $!B$માં
+કે~$!A$માં ન આવતો હોય.
+આને \emph{સ્વનિર્ધારક
+ચલની શરત} કહે છે.
+
+\Log{N1c} અને~\Log{N1i}માંની
+!!^{proof}s એ
+સૂત્રોનાં સાન્ત વૃક્ષો છે, જે
+સ્વયંસિદ્ધો અને
+અનુમાન-નિયમોથી
+આગમનાત્મક રીતે બને છે.
+\sourcecorrection{OLMD-232}{મૂળના આ વાક્યમાં N1-સાબિતીઓને સિક્વન્ટોનાં વૃક્ષો કહેવાય છે, પણ આગળની વ્યાખ્યા અને N1 નિયમ-તકતી પ્રમાણે તે સૂત્રોનાં વૃક્ષો છે; સિક્વન્ટો N2 તંત્રમાં આવે છે.}
+દરેક અંતિમ ડાળી
+ધારણા છે; તેને
+મુક્તિ-ચિહ્ન
+લાગેલું હોઈ શકે.
+બીજું દરેક
+!!{formula}
+તેની તરત ઉપરનાં
+!!{formula}sમાંથી
+તંત્રના કોઈ
+અનુમાન-નિયમથી
+મળે છે.
+વૃક્ષમાં કોઈ
+અનુમાનની ઉપર
+ધારણા તરીકે આવતા
+!!{formula}ને
+તેની ઉપરના અનુમાનથી
+મુક્ત ન કરાયું હોય,
+તો તે અનુમાન સાપેક્ષે
+\emph{ખુલ્લું} કહેવાય છે.
+
+\begin{defn}\ollabel{defn:proof}
+\Log{N1c} અને~\Log{N1i}માં
+\emph{!!^{proof}s} એ
+!!{formula}sનાં
+સાન્ત વૃક્ષો છે,
+જે આગમનાત્મક રીતે
+આ પ્રમાણે બને છે:
+\begin{enumerate}
+  \item\ollabel{defn:prf:assumption}
+  $x$ અથવા~$y$ જેવા
+  મુક્તિ-ચિહ્નથી ચિહ્નિત
+  દરેક !!{formula} પોતે
+  !!a{proof} છે.
+  માત્ર એક !!{formula}
+  ધરાવતી !!a{proof}માં
+  એ !!{formula} ખુલ્લી
+  ધારણા ગણાય છે.
+  \item\ollabel{defn:prf:one-prem}
+  જો~$R$ એ એક, બે
+  અથવા ત્રણ આધારવાક્યો
+  $!A_1$, $!A_2$, $!A_3$
+  અને ફલિતવાક્ય~$!A$
+  ધરાવતો નિયમ હોય,
+  અને~$\delta_1$,
+  $\delta_2$, $\delta_3$
+  અનુક્રમે~$!A_1$,
+  $!A_2$, $!A_3$માં
+  પૂરી થતી !!{proof}s
+  હોય, તો અનુક્રમે
+  નીચેનાં વૃક્ષો
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$!A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$!A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \DeduceC{$!A_3$}
+  \RightLabel{$R$}
+  \TrinaryInfC{$!A$}
+  \DisplayProof
+  \]
+  !!a{proof} છે, જો
+  તેમને રચતી !!{proof}sની
+  ધારણાઓનાં
+  ચિહ્નો સુસંગત હોય
+  (બે જુદાં !!{formula}sને
+  એક જ મુક્તિ-ચિહ્ન
+  ન અપાયું હોય)
+  અને અનુમાનો~$R$નો
+  યોગ્ય ઉપયોગ હોય.
+  \sourcecorrection{OLMD-233}{મૂળના ત્રણ આધારવાક્યવાળા વૃક્ષમાં $\delta_3$નું નિષ્કર્ષ $!A_2$ લખાયું છે; ઉપર આપેલી અનુક્રમણીકા પ્રમાણે તે $!A_3$ છે.}
+  \item નવી !!{proof}માં
+  સૌથી ઉપર આવતાં
+  !!{formula}નાં સ્થાનો
+  $\delta_1$, $\delta_2$
+  અથવા~$\delta_3$માં
+  ખુલ્લી ધારણા હોય તો
+  નવી !!{proof}ની
+  \emph{ખુલ્લી ધારણાઓ}
+  ગણાય છે, પરંતુ
+  નિયમથી મુક્ત થયેલાં
+  સ્થાનોને છોડીને.
+  જો નિયમ પર~$x$
+  (અથવા~$x\, y$)
+  ચિહ્ન હોય,
+  તો~\Intro{\lif}
+  અને~\Intro{\lnot} માટે
+  $\delta_1$માંનાં
+  $x$ ચિહ્નવાળાં બધાં
+  ખુલ્લાં ધારણાસ્થાનો
+  મુક્ત થાય છે;
+  \Elim{\lexists} માટે
+  $\delta_2$માંનાં
+  $x$ ચિહ્નવાળાં બધાં,
+  અને~\Elim{\lor} માટે
+  $\delta_2$માંનાં
+  $x$ ચિહ્નવાળાં તથા
+  $\delta_3$માંનાં
+  $y$ ચિહ્નવાળાં બધાં
+  ખુલ્લાં ધારણાસ્થાનો
+  મુક્ત થાય છે.
+\end{enumerate}
+\end{defn}
+
+!!a{proof}ની
+આગમનાત્મક રચનામાં
+વપરાતી !!{proof}sને
+તેની \emph{ઉપ-!!{proof}s}
+કહે છે.
+અનુમાનનાં આધારવાક્યોમાં
+પૂરી થતી
+ઉપ-!!{proof}sને
+તે અનુમાનની
+\emph{તાત્કાલિક
+ઉપ-!!{proof}s}
+કહે છે.
+\Log{N1c} અને~\Log{N1i}
+ના નિયમો
+\olref{tab:N1}માં છે.
+\sourcecorrection{OLMD-234}{મૂળમાં N2c/N2iના નિયમો tab:N1માં છે એમ કહેવાયું છે; નીચે આયાત થતી N1 નિયમ-તકતી અને અહીંની N1 વ્યાખ્યા પ્રમાણે તંત્રોનાં નામ N1c/N1i છે.}
+
+\subfile{rules-N1}
+
+\begin{defn}
+!!a{proof}~$\delta$ની
+\emph{!!{height}}~$\pheight{\delta}$
+આગમનાત્મક રીતે આ
+પ્રમાણે વ્યાખ્યાયિત થાય છે.
+\begin{enumerate}
+  \item જો~$\delta$માં માત્ર
+  એક ધારણા હોય, તો
+  $\pheight{\delta} = 0$.
+  \item જો~$\delta$નો અંત
+  એક આધારવાક્યવાળા અનુમાનમાં
+  થાય અને તેની તાત્કાલિક
+  ઉપ-!!{proof}~$\delta_1$ હોય,
+  તો $\pheight{\delta} = \pheight{\delta_1} + 1$.
+  \item જો~$\delta$નો અંત
+  બે આધારવાક્યવાળા અનુમાનમાં
+  થાય અને તેની તાત્કાલિક
+  ઉપ-!!{proof}s~$\delta_1$
+  અને~$\delta_2$ હોય, તો
+  $\pheight{\delta} =
+  \max(\pheight{\delta_1}, \pheight{\delta_2}) + 1$.
+  \item જો~$\delta$નો અંત
+  \Elim{\lor}માં થાય
+  અને તેની તાત્કાલિક
+  ઉપ-!!{proof}s~$\delta_1$,
+  $\delta_2$ અને~$\delta_3$
+  હોય, તો
+  $\pheight{\delta} =
+  \max(\pheight{\delta_1}, \pheight{\delta_2}, \pheight{\delta_3}) + 1$.
+\end{enumerate}
+જો સિક્વન્ટ~$S$ની
+ઊંચાઈ~$\le n$ ધરાવતી
+!!a{proof} હોય, તો
+$\Proves[n] S$ લખીએ છીએ.
+\end{defn}
+
+\begin{ex}
+\Log{N1i}માં
+કોઈ પણ !!{formula}
+પોતે ખુલ્લી ધારણા
+હોઈ પોતાની
+!!a{proof} ગણાય છે.
+એટલે
+\[
+\Discharge{!A \land !B}{x}
+\]
+એ~!!a{proof}~$\delta_1$
+છે. તેની ઊંચાઈ~$0$ છે.
+$\delta_1$માંથી
+\Elim{\land}નાં બે
+રૂપોમાંથી એકેક લગાવી
+બે !!{proof}s~$\delta_2$
+અને~$\delta_3$ મળે છે:
+\[
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\qquad
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\DisplayProof
+\]
+\sourcecorrection{OLMD-235}{મૂળના આરંભિક અને અનુગામી વૃક્ષોમાં $!A \land !B^x$ લખવાથી $x$ માત્ર $!B$ સાથે જોડાય છે; અહીં ધારણા આખા $!A \land !B$ સૂત્રની હોવાથી તેને એક જ મુક્તિ-ચિહ્નથી દર્શાવ્યું છે.}
+$\delta_2$ અને~$\delta_3$ના
+છેલ્લા અનુમાનની તાત્કાલિક
+ઉપ-!!{proof}s સમાન છે:
+$!A \land !B$.
+બંને !!{proof}sમાં
+$!A\land !B$નું
+સ્થાન ખુલ્લી ધારણા છે.
+આપણે
+$\pheight{\delta_2} = \pheight{\delta_3} = 1$
+મેળવીએ છીએ.
+\sourcecorrection{OLMD-236}{મૂળમાં $\delta_1$ની ઊંચાઈ એક જ વાક્યમાં $0$ અને પછી $1$ કહેવાઈ છે; અહીં એક પગલું ધરાવતી $\delta_2$ તથા $\delta_3$ની ઊંચાઈ $1$ બતાવી છે.}
+
+\Intro{\land} નિયમથી
+$!B \land !A$ સ્વરૂપનું
+ફલિતવાક્ય મેળવવા
+$!B$ અને~$!A$
+સ્વરૂપનાં બે આધારવાક્યો
+જોઈએ. તેથી નીચેનું
+!!a{proof}~$\delta_4$ છે:
+\[
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !A$}
+\DisplayProof
+\]
+તેની ઊંચાઈ
+$\pheight{\delta_4} = \max(\pheight{\delta_2},
+\pheight{\delta_3})+1 = \max(1,1) + 1 = 2$ છે.
+તેમાં~$!A \land !B$
+ધારણા તરીકે બે વાર
+આવે છે અને બંને
+સ્થાનો ખુલ્લાં છે.
+
+છેલ્લે~\Intro{\lif}
+લગાવી~$\delta_5$
+મેળવી શકાય છે:
+\[
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$(!A \land !B) \lif (!B \land !A)$}
+\DisplayProof
+\]
+તેની ઊંચાઈ
+$\pheight{\delta_4} + 1 = 3$ છે.
+\Intro{\lif} અનુમાન
+$x$ ચિહ્નવાળી
+$!A \land !B$
+સ્વરૂપની ધારણાઓનાં
+બધાં સ્થાનો મુક્ત કરે છે;
+અર્થાત્ તાત્કાલિક
+ઉપસાબિતીમાં પહેલાં
+ખુલ્લાં રહેલાં બંને
+સ્થાનો મુક્ત થાય છે.
+$\delta_5$ની એ જ
+ધારણાઓ હોવાથી તેમાં
+હવે કોઈ ખુલ્લી
+ધારણા નથી.
+આથી તે પોતાના
+અંતિમ-!!{formula}
+$(!A \land !B) \lif (!B \land !A)$ની
+!!a{proof} છે.
+\end{ex}
+
+\end{document}

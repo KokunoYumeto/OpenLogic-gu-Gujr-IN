@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0436",
+  "checked_at_utc": "2026-09-27T11:39:25.758222+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0436 soundness theorem; state-only draft",
+  "report": {
+    "unit_id": "OLP-0436",
+    "source_path": "content/normal-modal-logic/axioms-systems/soundness.tex",
+    "source_sha256": "ff44b1e495e2dca06b0c6e7fed1c5dab9971288a8c3bef061f00f7f025f61d17",
+    "draft_path": "private-state\\work\\batch040_draft\\soundness.tex",
+    "draft_sha256": "3ca083c24ed064dafa6c1a74245d2f26cd7484fc4865022daaada0cac9dc2062",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 43,
+    "target_math_spans_after_corrections": 43,
+    "glossary_tokens": 6,
+    "source_correction_notes": [
+      "OLMD-027"
+    ],
+    "source_detector_ascii_tokens": 211,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "finite_frames_checked": 530,
+    "finite_model_cases_checked": 33032,
+    "all_axiom_cases_in_induction_preserved": true
+  },
+  "status": "draft_linguistic_math_soundness_induction_and_source_gap_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

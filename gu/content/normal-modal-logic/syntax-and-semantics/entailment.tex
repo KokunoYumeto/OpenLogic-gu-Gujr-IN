@@ -1,0 +1,109 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: entailment
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{ent}
+
+\olsection{ફલિતતા}
+
+\begin{explain}
+  જગતમાં સત્યતાની વ્યાખ્યાના આધારે આપણે
+  !!{formula}s વચ્ચે ફલિતતાનો સંબંધ વ્યાખ્યાયિત કરી
+  શકીએ. !!^a{formula}~$!B$માંથી~$!A$ ત્યારે અને માત્ર
+  ત્યારે જ ફલિત થાય છે જ્યારે $!B$ સત્ય હોય તે દરેક
+  સંજોગમાં $!A$ પણ સત્ય હોય. અહીં ``દરેક સંજોગમાં''નો
+  અર્થ ``આપણે ગમે તે નિદર્શન લઈએ'' અને ``તે
+  નિદર્શનનું ગમે તે જગત લઈએ'' બંને છે.
+\end{explain}
+
+\begin{defn}
+  જો $\Gamma$ એ !!{formula}sનો ગણ હોય અને $!A$
+  !!a{formula} હોય, તો $\Gamma$માંથી~$!A$
+  \emph{ફલિત થાય છે}, સંકેતમાં $\Gamma \Entails !A$,
+  ત્યારે અને માત્ર ત્યારે જ જ્યારે દરેક નિદર્શન
+  $\mModel{M} = \tuple{W, R, V}$ અને જગત $w \in W$
+  માટે, દરેક $!B \in \Gamma$ માટે $\mSat{M}{!B}[w]$
+  હોય તો $\mSat{M}{!A}[w]$ હોય. જો $\Gamma$માં એક જ
+  !!{formula}~$!B$ હોય, તો $!B \Entails !A$ લખીએ.
+\end{defn}
+
+\begin{ex}
+  એક !!a{formula}માંથી બીજું ફલિત થાય છે તે બતાવવા
+  $\mSat{M}{}[w]$ની વ્યાખ્યા વાપરી બધાં નિદર્શનો
+  વિશે વિચારવું પડે. દાખલા તરીકે,
+  $p \lif \Diamond p \Entails \Box\lnot p \lif \lnot p$
+  બતાવવા આ રીતે દલીલ કરી શકાય: નિદર્શન
+  $\mModel{M} = \tuple{W, R,
+    V}$ અને $w \in W$ લો, અને $\mSat{M}{p \lif \Diamond
+    p}[w]$ માનો. $\mSat{M}{\Box\lnot p \lif \lnot
+    p}[w]$ બતાવવું છે. તે ખોટું છે એમ માનો. તો
+  $\mSat{M}{\Box\lnot p}[w]$ અને
+  $\mSat/{M}{\lnot p}[w]$. $\mSat/{M}{\lnot p}[w]$
+  હોવાથી $\mSat{M}{p}[w]$. ધારણા મુજબ
+  $\mSat{M}{p \lif \Diamond p}[w]$ હોવાથી
+  $\mSat{M}{\Diamond p}[w]$. $\mSat{M}{\Diamond
+    p}[w]$ની વ્યાખ્યા મુજબ $Rww'$ ધરાવતું એવું કોઈ
+  $w'$ છે કે $\mSat{M}{p}[w']$. પરંતુ
+  $\mSat{M}{\Box \lnot p}[w]$ પણ હોવાથી
+  $\mSat{M}{\lnot p}[w']$; આ વિરોધાભાસ છે.
+
+  કોઈ !!a{formula}~$!B$માંથી બીજું~$!A$ ફલિત થતું
+  નથી તે બતાવવા વિરોધી દૃષ્ટાંત આપવો પડે: એવું
+  નિદર્શન $\mModel{M} = \tuple{W, R,
+    V}$, જેમાં કોઈ જગત~$w \in W$ પર $\mSat{M}{!B}[w]$
+  હોય પણ $\mSat/{M}{!A}[w]$ હોય. હવે બતાવીએ કે
+  $p \lif \Diamond p \Entails/
+  \Box p \lif p$. \olref{fig:counterex}નું નિદર્શન લો.
+  તેમાં $\mSat{M}{\Diamond p}[w_1]$ અને તેથી
+  $\mSat{M}{p \lif
+    \Diamond p}[w_1]$. પરંતુ $\mSat{M}{\Box p}[w_1]$
+  હોવા છતાં $\mSat/{M}{p}[w_1]$, તેથી
+  $\mSat/{M}{\Box p \lif p}[w_1]$.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label=right:\mFalse{p}]{$w_1$}; 
+      \node[world] (w2) [label=right:\mTrue{p}, above left=of w1]{$w_2$}; 
+      \node[world] (w3) [label=right:\mTrue{p}, above right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$p \lif \Diamond p \Entails \Box p \lif p$નો વિરોધી દૃષ્ટાંત.}
+  \ollabel{fig:counterex}
+  \end{figure}
+
+  ઘણીવાર બહુ સરળ વિરોધી દૃષ્ટાંત પૂરતો હોય છે.
+  $W' = \{w\}$, $R' = \emptyset$ અને $V'(p) =
+  \emptyset$ ધરાવતું નિદર્શન $\mModel{M'} =
+  \tuple{W', R', V'}$ પણ વિરોધી દૃષ્ટાંત છે:
+  $\mSat/{M'}{p}[w]$ હોવાથી
+  $\mSat{M'}{p \lif \Diamond p}[w]$. જગત~$w$માંથી
+  કોઈ જગત સુલભ નથી, તેથી $\mSat{M'}{\Box p}[w]$;
+  અને આમ $\mSat/{M'}{\Box p
+    \lif p}[w]$.
+\end{ex}
+\sourcecorrection{OLMD-011}{સ્થિર અંગ્રેજી મૂળમાં
+એક-જગત નિદર્શનને ત્રિકને બદલે ગણ-કૌંસમાં
+લખાયું છે; નિદર્શનની વ્યાખ્યા પ્રમાણે ક્રમિત
+ત્રિકનો સંકેત મૂક્યો છે.}
+\sourcecorrection{OLMD-012}{અગાઉ મૂળ શીર્ષકમાં
+ફલિતતાનું નિષેધ-ચિહ્ન ખૂટે છે એવું ખોટું માન્યું હતું.
+મૂળનું ``ફલિતતાનો વિરોધી દૃષ્ટાંત'' શીર્ષક સાચું છે;
+અહીં મૂળનું નિષેધ-ચિહ્ન વિનાનું સૂત્ર ફરી મૂક્યું છે.
+આ મૂળની ભૂલ નહિ, અગાઉની સંપાદકીય ભૂલની પાછી ખેંચણી છે.}
+
+\begin{prob}
+  $\Box (!A \land !B) \Entails \Box !A$ બતાવો.
+\end{prob}
+
+\begin{prob}
+  $\Box (p \lif q) \Entails/ p \lif \Box q$ અને $p \lif \Box
+  q \Entails/\Box (p \lif q)$ બતાવો.
+\end{prob}
+
+\end{document}

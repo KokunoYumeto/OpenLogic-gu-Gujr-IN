@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0601",
+  "checked_at_utc": "2026-09-28T04:00:28.298859+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0601 Methods part title and editorial overview; state-only draft",
+  "report": {
+    "unit_id": "OLP-0601",
+    "source_path": "content/methods/methods.tex",
+    "source_sha256": "e3fef82eff1e663d6b27e1e1c9007372cb3873a7a295eb3cac441e57927bbcf9",
+    "draft_path": "private-state\\work\\batch044_draft\\methods.tex",
+    "draft_sha256": "100e4087c74e7f5be19ea5c63e733128e5b26889be7e960bc394ce4ea2fa6ebf",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 48,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\second-order-logic\\metatheory\\introduction.tex",
+        "sha256": "42834334f5795bac949928b6fbf3e1d9a9e46100c164055225b37606281c63e5",
+        "terms": [
+          "સાબિતી-તંત્ર",
+          "સાબિતી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-countablechoice.tex",
+        "sha256": "a2ac92d03c41565089fe068ad094b4b543462188a50f4a144254fbba26eef795",
+        "terms": [
+          "પસંદગી",
+          "પુરાવો"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

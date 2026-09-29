@@ -1,0 +1,77 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0609",
+  "checked_at_utc": "2026-09-28T14:29:37.229938+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0609 proof by contradiction with negative and classical positive conclusions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0609",
+    "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+    "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-proof-by-contradiction.tex",
+    "draft_sha256": "a2afc0f886d45bd2fd88c2ca550751a7d38d77164ab58ad0e111ca21afbcfab8",
+    "aligned_blocks": 22,
+    "linguistic_blocks": 17,
+    "source_math_spans_correction_aware": 172,
+    "target_math_spans_after_corrections": 172,
+    "glossary_tokens": 13,
+    "source_correction_notes": [
+      "OLMD-159",
+      "OLMD-160"
+    ],
+    "source_detector_ascii_tokens": 1072,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\emph{some}~$x \\in A$ that is $\\notin C$",
+        "\\emph{some}~$x \\in A$ that is $\\notin A \\cup B$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\beyond\\intuitionistic-logic.tex",
+        "sha256": "fd369c9e308320685df49c6027c50adbd26fccb849db6a8246ca5405761cf33a",
+        "terms": [
+          "સ્ફુરણાવાદી",
+          "વર્જિત",
+          "મધ્યનો નિયમ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\completeness\\complete-consistent-sets.tex",
+        "sha256": "55fb93bd50013cb73cdafad6a06cdeab3d34509eec9d2a2826c833e46c4fe89a",
+        "terms": [
+          "પૂર્વધારણાનો વિરોધાભાસ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-inference-patterns.tex",
+        "sha256": "62dbb8b704e7d8e489df4649d9c2b71bf52425461895204a6a89a94941a8c3eb",
+        "terms": [
+          "કિસ્સાવાર સાબિતી",
+          "પૂર્વધારણા",
+          "વિયોજન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "To prove negative not-p by contradiction, assume p as an additional premise and derive a conflict with accepted assumptions. The first example uses A subseteq B, B empty and a hypothetical x in A.",
+      "The equivalence p iff not-not-p and the indirect derivation of positive p are scoped visibly to classical logic; no intuitionistic generality is claimed.",
+      "The second example negates A subseteq A union B as an existential x in A but not in A union B. The source's stray C is repaired visibly in that quoted explanation.",
+      "The exercise asks for an indirect proof that A intersection B is included in A, preserving emphasis on indirectly.",
+      "The third example derives x in C from x in A through A subseteq B and B subseteq C, contradicting x notin C.",
+      "The final example negates A=B as A not subseteq B or B not subseteq A, and both cases conflict with A union B equals A intersection B. The two witnesses x and y remain distinct."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

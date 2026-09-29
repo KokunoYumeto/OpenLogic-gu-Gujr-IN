@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0556",
+  "checked_at_utc": "2026-09-28T01:12:18.840039+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0556 unique ordinal representation of well-orders and order-type comparison; state-only draft",
+  "report": {
+    "unit_id": "OLP-0556",
+    "source_path": "content/set-theory/ordinals/ordtype.tex",
+    "source_sha256": "9a123198cbfcd0000eb27804a39148d5ee5fb7ad41cf7cff04ad78ea320dfcd6",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+    "draft_sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 38,
+    "target_math_spans_after_corrections": 38,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-117"
+    ],
+    "source_detector_ascii_tokens": 211,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-iso.tex",
+        "sha256": "4f6a241b7fd72994f3a93087e2ed6525dbbcf74f02e8576330be1c61a41b657f",
+        "terms": [
+          "ક્રમ-એકરૂપતા",
+          "ઉચિત આરંભિક ખંડ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-vn.tex",
+        "sha256": "d634e926539b703109c4034ef9abc68986efe47f9aedc4a2bffa993b704f1d25",
+        "terms": [
+          "ક્રમપ્રકાર",
+          "ક્રમવાચક સંખ્યા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-replacement.tex",
+        "sha256": "26a05b92c09a1ba8edfcde66d51a841858744b476bae38a81d1999d3ac26c1ef",
+        "terms": [
+          "પ્રતિસ્થાપન",
+          "પ્રરૂપ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-basic.tex",
+        "sha256": "04651b060194f7d1566c1b81a0f5ab73b80a6d025107ba0db0a280141af07554",
+        "terms": [
+          "પરંપરિત",
+          "ક્રમવાચક સંખ્યા"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\function-basics.tex",
+        "sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+        "terms": [
+          "વિધેય",
+          "વિસ્તાર"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The representation proof does not use Choice or Foundation; its new set of ordinal-position pairs is supplied by Replacement.",
+      "The construction chooses the least bad proper initial segment only when one exists; otherwise B=A.",
+      "The source's final proof uses f(alpha) when alpha may be outside dom(f)=beta. OLMD-117 visibly supplies the missing domain qualification and clarifies the ordered-target notation, without changing any of the 38 original math spans.",
+      "The source's two iff statements retain their exact original formula text inside align*; no inequivalent claim is introduced."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

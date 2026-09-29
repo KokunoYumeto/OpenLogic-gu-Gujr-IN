@@ -1,0 +1,91 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0542",
+  "checked_at_utc": "2026-09-28T00:01:35.405894+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0542 power sets and Cartesian products; state-only draft",
+  "report": {
+    "unit_id": "OLP-0542",
+    "source_path": "content/set-theory/z/powerset.tex",
+    "source_sha256": "e4189963f1fa098226ec3ae72a660f56882350d3d8be819b6c5232663261e722",
+    "draft_path": "private-state\\work\\batch044_draft\\powerset.tex",
+    "draft_sha256": "ee742257beedeb291d2a5fb4f2120dbc2ce81cb9f05d5ddb707fa91651099215",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 34,
+    "target_math_spans_after_corrections": 34,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 208,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\sets\\subsets.tex",
+        "sha256": "782cca88ad1be7f99828292ce9f506716d3b0ba6ae8f7cc8ee45ac6731f0fb74",
+        "terms": [
+          "ઘાતગણ",
+          "ઉપગણ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\relations-as-sets.tex",
+        "sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495",
+        "terms": [
+          "કાર્તેઝીય ગુણાકાર",
+          "ક્રમયુક્ત જોડ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\equivalence-relations.tex",
+        "sha256": "1ecb10dd8641f2237298cefbafa8100c07f2f8f06d558f538e5b6d32de1343b3",
+        "terms": [
+          "સામ્ય સંબંધ",
+          "સામ્ય વર્ગ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\function-basics.tex",
+        "sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+        "terms": [
+          "પ્રદેશ",
+          "સહપ્રદેશ",
+          "વિસ્તાર"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-successor-044.tex",
+        "sha256": "c5b610cae7356f658e68cbf69597f7db7c60b1586a54ff7a1ef4a4aa5ec0810b",
+        "terms": [
+          "તબક્કાઓ આગળ વધતા રહે છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "An ordered pair {{x},{x,y}} is a subset of Pow(A union B), so it belongs to the double power set used as the separation bound.",
+      "The relation exercise preserves actual range B; it is not silently rewritten as codomain B.",
+      "The function exercise asks for maps into B and does not require surjectivity.",
+      "The raw global label thm:Products is kept exactly, not changed to a scoped label."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\label{thm:Products}",
+        "count": 1,
+        "reason": "Protected global mathematical label; no ordinary untranslated prose."
+      },
+      {
+        "literal": "(ii)",
+        "count": 1,
+        "reason": "Original Roman enumeration label in the exercise."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

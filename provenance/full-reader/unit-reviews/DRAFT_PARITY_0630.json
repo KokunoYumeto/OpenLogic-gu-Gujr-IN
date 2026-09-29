@@ -1,0 +1,64 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0630",
+  "checked_at_utc": "2026-09-28T15:37:13.303589+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0630 Alfred Tarski biography, logical consequence and truth; state-only draft",
+  "report": {
+    "unit_id": "OLP-0630",
+    "source_path": "content/history/biographies/alfred-tarski.tex",
+    "source_sha256": "216dca1713254d519d4f75b7f2f80cdf13dd614341b45631f6addefc26850688",
+    "draft_path": "private-state\\work\\batch044_draft\\alfred-tarski.tex",
+    "draft_sha256": "bbd4bb20c0f26b206a8cfc3c895974eb97b9a788d3f6a0eecd91daea9b9624a6",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 324,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\second-order-logic\\metatheory\\undecidability-and-axiomatizability.tex",
+        "sha256": "8e8aee6ef92eb43a92e34d9e41767155ad99224e103baefdb8f38506e15e1c02",
+        "terms": [
+          "ટાર્સ્કીના"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\syntax-and-semantics\\semantic-notions.tex",
+        "sha256": "119078fe67c6320208d6a8288fdd9e970ea925ca7e28721de34ab42bec986009",
+        "terms": [
+          "ફલિતતા",
+          "તાર્કિક સત્યો"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Alfred Tarski: Life\n  and Logic",
+        "count": 1,
+        "reason": "Exact English proper title of the cited biography."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "tarski-alfred",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

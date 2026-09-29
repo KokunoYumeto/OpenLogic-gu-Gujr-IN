@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0516",
+  "checked_at_utc": "2026-09-27T22:15:55.364186+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0516 counterfactual part_driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0516",
+    "source_path": "content/counterfactuals/counterfactuals.tex",
+    "source_sha256": "506d0c7ca33935c373fb7a04a0529d2f5944a8bdab154c277b6a6d4b5d2c3c38",
+    "draft_path": "private-state\\work\\batch043_draft\\counterfactuals.tex",
+    "draft_sha256": "7223b790111b5f9aadae787439e82c8f873858aa2e3f2030d32e2d78cbaabba4",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 2,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "active_imports_preserved": 2,
+    "structural_scan_exclusions": [
+      {
+        "token": "cnt",
+        "count": 1,
+        "reason": "part identifier"
+      }
+    ]
+  },
+  "status": "draft_linguistic_and_import_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

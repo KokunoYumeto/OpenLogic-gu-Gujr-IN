@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0430",
+  "checked_at_utc": "2026-09-27T11:23:04.809910+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0430 modal-system derivability and minimal-logic equality; state-only draft",
+  "report": {
+    "unit_id": "OLP-0430",
+    "source_path": "content/normal-modal-logic/axioms-systems/logics-proofs.tex",
+    "source_sha256": "bf3926886e2d6d2740ceb631fc5c5618fe300fb0d6813fe2b30367072c45d66a",
+    "draft_path": "private-state\\work\\batch040_draft\\logics-proofs.tex",
+    "draft_sha256": "9478413cfc64cd21cd0693837e967fac189c7e74fbef31094dc76d7caf8518e6",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 66,
+    "target_math_spans_after_corrections": 66,
+    "glossary_tokens": 24,
+    "source_correction_notes": [
+      "OLMD-024"
+    ],
+    "source_detector_ascii_tokens": 369,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_equal_after_visible_repair": true,
+    "five_closure_checks_preserved": true
+  },
+  "status": "draft_linguistic_derivation_induction_and_source_notation_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0444",
+  "checked_at_utc": "2026-09-27T12:07:08.060641+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0444 modal Lindenbaum lemma; state-only draft",
+  "report": {
+    "unit_id": "OLP-0444",
+    "source_path": "content/normal-modal-logic/completeness/lindenbaums-lemma.tex",
+    "source_sha256": "1708ac2baa1773893a9bff57d63c9201aaea7c990213c76478fb4065a269196b",
+    "draft_path": "private-state\\work\\batch040_draft\\lindenbaums-lemma.tex",
+    "draft_sha256": "c64436df4c2ead29672ea42932c636e03a786997de1d8dfb4e5ef788998f8053",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 114,
+    "target_math_spans_after_corrections": 114,
+    "glossary_tokens": 5,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 378,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "finite_support_and_induction_steps_reviewed": true,
+    "corollary_both_directions_reviewed": true
+  },
+  "status": "draft_linguistic_math_and_proof_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

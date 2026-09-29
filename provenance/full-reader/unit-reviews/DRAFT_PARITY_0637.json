@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0637",
+  "checked_at_utc": "2026-09-28T16:04:12.038395+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0637 Historical myths about Cantor's reaction and geometric intuition; state-only draft",
+  "report": {
+    "unit_id": "OLP-0637",
+    "source_path": "content/history/set-theory/mythology.tex",
+    "source_sha256": "2ffceffef7cc6445f66391a252c598448190642ea60f60a748c6fe5e6a1ec55e",
+    "draft_path": "private-state\\work\\batch044_draft\\mythology.tex",
+    "draft_sha256": "dda4b4f6ca9250a4bbcc100e6a22e1bf4f7e8b8524825d2f98d4d4f5da4d9e23",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 311,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\pathologies.tex",
+        "sha256": "4c671e232324f151fe24fcdda7eb13e3dc25a1892bc6d16d9980623447e76573",
+        "terms": [
+          "અવકાશ ભરતી વક્રરેખા",
+          "ભૌમિતિક સહજજ્ઞાન",
+          "કૅન્ટૉર"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "je le vois, mais je ne le crois pas",
+        "count": 2,
+        "reason": "Cantor's French wording is retained in its short citation and the extended quoted context; its sense is already supplied in the preceding Gujarati unit."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0396",
+  "checked_at_utc": "2026-09-27T09:24:51.773024+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0396 three-valued Gödel logic; state-only draft",
+  "report": {
+    "unit_id": "OLP-0396",
+    "source_path": "content/many-valued-logic/three-valued-logics/goedel.tex",
+    "source_sha256": "1075b4d66085bb613bcaf0ef498cf8b3705b84d9dfd3dfedf648847b39be9542",
+    "draft_path": "private-state\\work\\batch039_draft\\goedel.tex",
+    "draft_sha256": "2d0097e0df512e13bafc3c95ba90b6ab63fdd802b49c32bf71bea3a1eeb29fb2",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 92,
+    "target_math_spans_after_corrections": 92,
+    "glossary_tokens": 1,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 203,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [],
+    "four_truth_tables_cell_and_order_exact": true,
+    "prose_scan_tabular_exception": "four parity-verified tables removed from prose scan; their column codes are structural TeX"
+  },
+  "status": "draft_linguistic_structure_math_and_truth_table_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

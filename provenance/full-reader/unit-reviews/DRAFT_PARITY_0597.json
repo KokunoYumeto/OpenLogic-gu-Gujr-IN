@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0597",
+  "checked_at_utc": "2026-09-28T03:34:34.537960+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0597 countable choice, hidden uses, and philosophical justification; state-only draft",
+  "report": {
+    "unit_id": "OLP-0597",
+    "source_path": "content/set-theory/choice/countablechoice.tex",
+    "source_sha256": "37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994",
+    "draft_path": "private-state\\work\\batch044_draft\\choice-countablechoice.tex",
+    "draft_sha256": "a2ac92d03c41565089fe068ad094b4b543462188a50f4a144254fbba26eef795",
+    "aligned_blocks": 22,
+    "linguistic_blocks": 19,
+    "source_math_spans_correction_aware": 69,
+    "target_math_spans_after_corrections": 69,
+    "glossary_tokens": 3,
+    "source_correction_notes": [
+      "OLMD-149"
+    ],
+    "source_detector_ascii_tokens": 795,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\card{\\bigcup_{i < n}A_n}",
+        "\\card{\\bigcup_{i < n}A_i}"
+      ],
+      [
+        "\\text{Countable Choice}$]\r\nFor any",
+        "\\text{ગણનીય પસંદગી}$]\r\nFor any"
+      ],
+      [
+        "\\text{Countable Choice}$]\r\nIf $A_n$",
+        "\\text{ગણનીય પસંદગી}$]\r\nIf $A_n$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-wellorderingproblem.tex",
+        "sha256": "7b4f2088cb139fe6b6b8e10dbd117f6b6305a9dad9f9b2c17e238170a11ffc38",
+        "terms": [
+          "\\begin{axiom}[પસંદગી]",
+          "પસંદગી વિધેય"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-classing.tex",
+        "sha256": "20e65b4282ccaf9667608ff33ce6677e8cbf50f88bba69ddb9230e835147255d",
+        "terms": [
+          "\\ollabel{generalinfinitycharacter}",
+          "ગણનીય"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-simp.tex",
+        "sha256": "4f217a5c40f0d10bea591b7daaf9f2627651a24e4aadffac57024b6ca9f8aea3",
+        "terms": [
+          "\\ollabel{kappaunionkappasize}",
+          "ગણાંક"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\zig-zag.tex",
+        "sha256": "92267db5ab4560c2a1f3786ee174caeed444c59983cf2c63d0a452fb8a254923",
+        "terms": [
+          "\\ollabel{natsquaredenumerable}",
+          "\\Nat"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "OLMD-149 changes only the first finite-union bound from repeated A_n to indexed A_i, consistent with the displayed subsequent sum.",
+      "The two theorem environments localize Countable Choice inside text-in-math while retaining the Z-minus symbol and all formal statements.",
+      "Russell's quoted contrast keeps right/left boots, indistinguishable socks, the multiplicative axiom bracket, two aleph-zero pair counts, and the page citation."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

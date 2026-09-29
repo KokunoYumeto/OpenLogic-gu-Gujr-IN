@@ -1,0 +1,68 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0688",
+  "checked_at_utc": "2026-09-28T22:41:06.247857+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0688 Proof terms, constructors and destructors; state-only draft",
+  "report": {
+    "unit_id": "OLP-0688",
+    "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+    "source_sha256": "efeb3a9e0573794a31ef1cc56221cfb9f52c166ed73b4408118d0e9a2357aa66",
+    "draft_path": "private-state\\work\\batch044_draft\\proof-terms.tex",
+    "draft_sha256": "04a94a8e5015bcd50bd4827a2b6e0e46a9781ceb8422bf643e107220a74c6a9c",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 72,
+    "target_math_spans_after_corrections": 72,
+    "glossary_tokens": 18,
+    "source_correction_notes": [
+      "OLMD-287",
+      "OLMD-288",
+      "OLMD-289"
+    ],
+    "source_detector_ascii_tokens": 587,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "c^\\land(N, m)",
+        "c^\\land(N, M)"
+      ],
+      [
+        "c^{\\lor{!B}}_1:!A",
+        "c^{\\lor{!B}}_1(N):!A"
+      ],
+      [
+        "$\\inj[!A]{i}{!M}$",
+        "$\\inj[!A]{i}{N}$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\propositions-as-types-introduction.tex",
+        "sha256": "155186e0b61e8569c20bafe561749675307dfaea18b9a0244e407fc91a6389e8",
+        "terms": [
+          "પ્રકારિત લૅમ્બડા-કલન",
+          "સાબિતી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\subfile{rules-tN2}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

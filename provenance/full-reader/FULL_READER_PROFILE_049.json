@@ -1,0 +1,8661 @@
+{
+  "schema": "openlogic-gu-frozen-reader-profile-materialization/1",
+  "checked_at_utc": "2026-09-29T02:36:50.329428+00:00",
+  "original": {
+    "path": "private-state\\work\\full-corpus-body-049.tex",
+    "sha256": "40a20407e17a86e55a1e03df49caaac35b166bcce1f8f4da02d01299d36617f9"
+  },
+  "resolved": {
+    "path": "private-state\\work\\full-corpus-body-049.resolved.tex",
+    "bytes": 5154203,
+    "sha256": "d16049ab1a99898b36028d6af12e6931c2b02f5e1fbce107f57175e4aec8dfcc"
+  },
+  "unit_count": 722,
+  "all_units_retained_once": true,
+  "decisions": [
+    {
+      "command": "tagblock",
+      "condition": "novice",
+      "true_branch": true,
+      "position_char": 4673
+    },
+    {
+      "command": "tagblock",
+      "condition": "novice",
+      "true_branch": true,
+      "position_char": 5447
+    },
+    {
+      "command": "tagblock",
+      "condition": "math",
+      "true_branch": true,
+      "position_char": 5624
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:arith:real:realline",
+      "true_branch": false,
+      "position_char": 11606
+    },
+    {
+      "command": "tagblock",
+      "condition": "compsci",
+      "true_branch": true,
+      "position_char": 11870
+    },
+    {
+      "command": "tagblock",
+      "condition": "novice",
+      "true_branch": true,
+      "position_char": 24306
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "cumul:::part",
+      "true_branch": false,
+      "position_char": 25801
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "cumul:::part",
+      "true_branch": false,
+      "position_char": 37059
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:rel:ref:sec",
+      "true_branch": true,
+      "position_char": 71057
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:rel:ops:sec",
+      "true_branch": true,
+      "position_char": 72331
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sth:choice::chap",
+      "true_branch": true,
+      "position_char": 77534
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:fun:inv:sec",
+      "true_branch": true,
+      "position_char": 80123
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:rel:ops:sec",
+      "true_branch": true,
+      "position_char": 80517
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:set:pai:sec",
+      "true_branch": true,
+      "position_char": 98862
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:siz:enm:defn:enumerable",
+      "true_branch": true,
+      "position_char": 126791
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:siz:nen-alt:thm:nonenum-pownat",
+      "true_branch": true,
+      "position_char": 130155
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:siz:nen:sec",
+      "true_branch": true,
+      "position_char": 131002
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:siz:nen:thm:nonenum-pownat",
+      "true_branch": true,
+      "position_char": 133078
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:siz:nen-alt:thm:nonenum-pownat",
+      "true_branch": true,
+      "position_char": 134102
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:cardinals:card-sb:sec",
+      "true_branch": false,
+      "position_char": 136341
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "sfr:card-arithmetic:card-opps:sec",
+      "true_branch": false,
+      "position_char": 143690
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 229366
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 229383
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 229437
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 229453
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 229639
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 229700
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 229802
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 229847
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 229893
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 229937
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 229981
+    },
+    {
+      "command": "iftag",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 230158
+    },
+    {
+      "command": "tagblock",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 230669
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff,defIff",
+      "true_branch": true,
+      "position_char": 231497
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse,defFalse",
+      "true_branch": true,
+      "position_char": 231667
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue,defTrue",
+      "true_branch": true,
+      "position_char": 231788
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 232068
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 232120
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 232227
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 232296
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 232380
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 232462
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 232544
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 232628
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 232935
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 232966
+    },
+    {
+      "command": "tagblock",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 233605
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 236020
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 236103
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 236200
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 236295
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 236390
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 237427
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 237461
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 237542
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 237595
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 237663
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 237729
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 237795
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 240336
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 240387
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 240445
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 240501
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 240557
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 241463
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 241597
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 241760
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 241920
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 242080
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 243571
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 243622
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 243680
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 243736
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 243792
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 245406
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 245465
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 245576
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 245745
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 246013
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 246279
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 246545
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 246868
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 247044
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 247325
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvNot,notprvAnd,notprvOr,notprvIf",
+      "true_branch": false,
+      "position_char": 247603
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 247660
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 247937
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 249375
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 249447
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 249618
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 249724
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 249853
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 249993
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 250134
+    },
+    {
+      "command": "iftag",
+      "condition": "prfSC",
+      "true_branch": true,
+      "position_char": 259617
+    },
+    {
+      "command": "iftag",
+      "condition": "prfND",
+      "true_branch": true,
+      "position_char": 259714
+    },
+    {
+      "command": "iftag",
+      "condition": "prfTab",
+      "true_branch": true,
+      "position_char": 259811
+    },
+    {
+      "command": "iftag",
+      "condition": "prfAX",
+      "true_branch": true,
+      "position_char": 259909
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 270186
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 270273
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 270357
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 270460
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 294293
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 294338
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 294384
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 294428
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 294472
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 294527
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 294588
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 294649
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 294710
+    },
+    {
+      "command": "iftag",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 296111
+    },
+    {
+      "command": "tagblock",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 297132
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff,defIff",
+      "true_branch": true,
+      "position_char": 297949
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse,defFalse",
+      "true_branch": true,
+      "position_char": 298122
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue,defTrue",
+      "true_branch": true,
+      "position_char": 298243
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 300160
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 300742
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 300792
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 301080
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 301149
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 301233
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 301315
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 301397
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 301481
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 301568
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 301654
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 301983
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 302014
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 302941
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvEx,notprvAll",
+      "true_branch": false,
+      "position_char": 302978
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 303014
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvEx,notprvAll",
+      "true_branch": false,
+      "position_char": 303055
+    },
+    {
+      "command": "tagblock",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 303215
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 306863
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 306961
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 307073
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 307183
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 307293
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 307405
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 307509
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 310392
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 310486
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 310876
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 311160
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll,notprvEx",
+      "true_branch": true,
+      "position_char": 311301
+    },
+    {
+      "command": "tagitem",
+      "condition": "notprvAll,notprvEx",
+      "true_branch": false,
+      "position_char": 311451
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 312100
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 312143
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 312796
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 312848
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 312905
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 312960
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 313015
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 313072
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 313131
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 313362
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 313662
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 313813
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 313844
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 315193
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 315275
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 315362
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 315446
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 315530
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 315617
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 315709
+    },
+    {
+      "command": "iftag",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 316756
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 317415
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 317446
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 318808
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 319029
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 319132
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 319453
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 319706
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 319840
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 324391
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 324442
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 324500
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 324556
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 324612
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 324670
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 324728
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 326120
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 326254
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 326417
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 326577
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 326737
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 326900
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 327048
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 328604
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 328653
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 328709
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 328763
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 328817
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 328873
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 328929
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 332267
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 332509
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 332658
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 333060
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 333236
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 333483
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 333511
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 333612
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 333644
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 336566
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 336656
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 336993
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 337098
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 337231
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 337361
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 337491
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 337624
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 337836
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 354674
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 354748
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 355139
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 355264
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 355414
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 355579
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 355745
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 355966
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 356147
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvEx,notprvAll",
+      "true_branch": false,
+      "position_char": 356382
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 356455
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 356585
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 357219
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 357332
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 357594
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 361199
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 361733
+    },
+    {
+      "command": "iftag",
+      "condition": "defEx",
+      "true_branch": false,
+      "position_char": 362459
+    },
+    {
+      "command": "iftag",
+      "condition": "defAll",
+      "true_branch": false,
+      "position_char": 363822
+    },
+    {
+      "command": "iftag",
+      "condition": "defEx",
+      "true_branch": false,
+      "position_char": 367272
+    },
+    {
+      "command": "tagprob",
+      "condition": "defEx",
+      "true_branch": false,
+      "position_char": 367497
+    },
+    {
+      "command": "iftag",
+      "condition": "defAll",
+      "true_branch": false,
+      "position_char": 367598
+    },
+    {
+      "command": "tagprob",
+      "condition": "defAll",
+      "true_branch": false,
+      "position_char": 367822
+    },
+    {
+      "command": "iftag",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 371040
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 371069
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 371356
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 371466
+    },
+    {
+      "command": "tagitem",
+      "condition": "defNot",
+      "true_branch": false,
+      "position_char": 373418
+    },
+    {
+      "command": "iftag",
+      "condition": "probNot",
+      "true_branch": false,
+      "position_char": 373441
+    },
+    {
+      "command": "tagitem",
+      "condition": "defAnd",
+      "true_branch": false,
+      "position_char": 373675
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 373698
+    },
+    {
+      "command": "tagitem",
+      "condition": "defOr",
+      "true_branch": false,
+      "position_char": 373984
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 374006
+    },
+    {
+      "command": "tagitem",
+      "condition": "defIf",
+      "true_branch": false,
+      "position_char": 374283
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 374305
+    },
+    {
+      "command": "tagitem",
+      "condition": "defIff",
+      "true_branch": false,
+      "position_char": 374578
+    },
+    {
+      "command": "iftag",
+      "condition": "probIff",
+      "true_branch": false,
+      "position_char": 374601
+    },
+    {
+      "command": "tagitem",
+      "condition": "defEx",
+      "true_branch": false,
+      "position_char": 375015
+    },
+    {
+      "command": "iftag",
+      "condition": "probEx",
+      "true_branch": false,
+      "position_char": 375037
+    },
+    {
+      "command": "tagitem",
+      "condition": "defAll",
+      "true_branch": false,
+      "position_char": 375823
+    },
+    {
+      "command": "iftag",
+      "condition": "probAll",
+      "true_branch": false,
+      "position_char": 375846
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 379703
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 379855
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 379664
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 380500
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 380583
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 380980
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 381122
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 381293
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 381476
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 381663
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 381924
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 382153
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 392720
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 392777
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 392681
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 392920
+    },
+    {
+      "command": "iftag",
+      "condition": "probEx",
+      "true_branch": false,
+      "position_char": 392944
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 393250
+    },
+    {
+      "command": "iftag",
+      "condition": "probAll",
+      "true_branch": false,
+      "position_char": 393275
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 392881
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 426084
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 426560
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 431195
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 434123
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 438173
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 442412
+    },
+    {
+      "command": "iftag",
+      "condition": "prfSC",
+      "true_branch": true,
+      "position_char": 446162
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 446262
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 446811
+    },
+    {
+      "command": "iftag",
+      "condition": "prvFalse,prvTrue",
+      "true_branch": true,
+      "position_char": 448497
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 448623
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 448672
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 449543
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 451452
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 455058
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 457034
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 461034
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 472898
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 477474
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 483017
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 486859
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 491060
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 491998
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 492053
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 491963
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 492189
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 492439
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 492154
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 492833
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 493342
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 494189
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 494350
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 494423
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 494470
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 495030
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 495083
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 495127
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 496179
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 496294
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 496372
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 496443
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 496622
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 496705
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 496873
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 497734
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 497821
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 497897
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 497946
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 498056
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 498171
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 498281
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 498356
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 498403
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 498509
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499112
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499264
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499342
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499418
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499472
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499581
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499664
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499776
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499881
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 499980
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 500902
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501035
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501109
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501185
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501239
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501330
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501413
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501470
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 501601
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502174
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502331
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502377
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502447
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502523
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502585
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502683
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502762
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502845
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502899
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 502998
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 503110
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 506557
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 506691
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 506774
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 506823
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 506912
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 507098
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 507193
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 507825
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 507900
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 508107
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 508205
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 508250
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 508670
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 508754
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 508862
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 508927
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 509161
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 509245
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 509292
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 509389
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 509504
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 509691
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 510023
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 510168
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 510217
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 510632
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 510734
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 510850
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 510983
+    },
+    {
+      "command": "iftag",
+      "condition": "prfND",
+      "true_branch": true,
+      "position_char": 515032
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 515132
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 515600
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 516027
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvNot,notprvAnd,notprvOr,notprvIf",
+      "true_branch": false,
+      "position_char": 517184
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 517476
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 519711
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 523218
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 526458
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 537006
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 546317
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 549986
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 550083
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 551052
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 554670
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 558193
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 559040
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 559096
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 559005
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 559232
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 559430
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 559197
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 559771
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 560258
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 561210
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562189
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562266
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562317
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562403
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562453
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562509
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562556
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 562660
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563154
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563205
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563256
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563322
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563420
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563483
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563551
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 563594
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 564147
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 564224
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 564275
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 564349
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 564441
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 564486
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 565076
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 565324
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 565399
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 565448
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 565503
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 565546
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 565656
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 566081
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 566127
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 566174
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 566230
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 566412
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 568226
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 568955
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 569033
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 569093
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 569176
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 569220
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 569303
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 569353
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 569987
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570064
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570131
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570190
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570297
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570382
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570432
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570490
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570539
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570585
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570644
+    },
+    {
+      "command": "tagitem",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570757
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 570852
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 570959
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 571138
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 571518
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 571618
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 571691
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 571745
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 571885
+    },
+    {
+      "command": "iftag",
+      "condition": "prfTab",
+      "true_branch": true,
+      "position_char": 577130
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 577231
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 577897
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 580106
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 582243
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 585819
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 589198
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 607065
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 619993
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 624299
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 624396
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 625515
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 631428
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 638002
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 639925
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 639980
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 639890
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 640116
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 640462
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 640081
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 641160
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 641650
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 642480
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 642521
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 642631
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 642725
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 642765
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 642923
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 644852
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 644907
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 644959
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 645009
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 645405
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 645459
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 645515
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 645558
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 645620
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 646046
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 646100
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 646157
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 646200
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 646264
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 646370
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 648777
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 648831
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 648889
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 648935
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 648993
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649080
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649172
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649259
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649690
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649744
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649788
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649836
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 649936
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 650051
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 650238
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 650630
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 650671
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 650784
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 650835
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 651238
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 651311
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 651424
+    },
+    {
+      "command": "iftag",
+      "condition": "prfAX",
+      "true_branch": true,
+      "position_char": 657036
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 657136
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 657765
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 660997
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 662547
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 664252
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 669312
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 670847
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 671057
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 674256
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 674353
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 675398
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 679954
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 680057
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 680188
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 682839
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 685289
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 685404
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 685629
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 688803
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 690235
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 690291
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 690200
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 690427
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 690487
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 690392
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 690692
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 691194
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 691969
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 692143
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 693572
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 694112
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 694218
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 696239
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 696418
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 696771
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 696876
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 697014
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 697152
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 698981
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 700010
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 700197
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 700335
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 700474
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 700614
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 700744
+    },
+    {
+      "command": "tagitem",
+      "condition": "defOr",
+      "true_branch": false,
+      "position_char": 702748
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 702767
+    },
+    {
+      "command": "tagitem",
+      "condition": "defOr",
+      "true_branch": false,
+      "position_char": 702798
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 702817
+    },
+    {
+      "command": "tagitem",
+      "condition": "defAnd",
+      "true_branch": false,
+      "position_char": 703134
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 703154
+    },
+    {
+      "command": "tagitem",
+      "condition": "defAnd",
+      "true_branch": false,
+      "position_char": 703653
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 703672
+    },
+    {
+      "command": "tagitem",
+      "condition": "defIf",
+      "true_branch": false,
+      "position_char": 703704
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 703723
+    },
+    {
+      "command": "tagitem",
+      "condition": "defIf",
+      "true_branch": false,
+      "position_char": 704254
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 704272
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 710585
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 710674
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 710549
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 710845
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 710870
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 710809
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 711331
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 711578
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 712424
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 712472
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 713288
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 714445
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 715041
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 715948
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 715984
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 716050
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 716178
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 716259
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 716399
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 717004
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 717281
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 717332
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 717377
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 718229
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 719074
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 722231
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 722614
+    },
+    {
+      "command": "iftag",
+      "condition": "defEx,defAll",
+      "true_branch": false,
+      "position_char": 722719
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 722750
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 722913
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 722948
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 722995
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 723154
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 723281
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 723438
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 723505
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 723653
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 723714
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 724033
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 724964
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 725021
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 725100
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 725159
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 725240
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 725325
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 725783
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 726190
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 726319
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 726448
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 726867
+    },
+    {
+      "command": "tagitem",
+      "condition": "defAnd",
+      "true_branch": false,
+      "position_char": 727377
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 727398
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 727562
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 728179
+    },
+    {
+      "command": "tagitem",
+      "condition": "defOr",
+      "true_branch": false,
+      "position_char": 728696
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 728716
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 728989
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 729554
+    },
+    {
+      "command": "tagitem",
+      "condition": "defIf",
+      "true_branch": false,
+      "position_char": 730078
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 730098
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 730304
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 730961
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 731528
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 732063
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 732165
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 732295
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 732869
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 733068
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 733620
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 734409
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 735586
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 736026
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 736484
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 736578
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 736719
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 736969
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 736994
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 737749
+    },
+    {
+      "command": "iftag",
+      "condition": "defAll,defEx",
+      "true_branch": false,
+      "position_char": 737852
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 737883
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 738533
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 738652
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 738498
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 738847
+    },
+    {
+      "command": "iftag",
+      "condition": "probEx",
+      "true_branch": false,
+      "position_char": 738869
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 739782
+    },
+    {
+      "command": "iftag",
+      "condition": "probAll",
+      "true_branch": false,
+      "position_char": 739805
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 740056
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 740407
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 738810
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 741108
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 742784
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 744361
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 745366
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 745527
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 746580
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 747662
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 748727
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 748759
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 748936
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 749592
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 749727
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 749557
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 749934
+    },
+    {
+      "command": "iftag",
+      "condition": "probEx",
+      "true_branch": false,
+      "position_char": 749954
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 750653
+    },
+    {
+      "command": "iftag",
+      "condition": "probAll",
+      "true_branch": false,
+      "position_char": 750674
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 749899
+    },
+    {
+      "command": "tagprob",
+      "condition": "probEx,probAll",
+      "true_branch": false,
+      "position_char": 751400
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 751583
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 751635
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 751832
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 751903
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 752045
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 752114
+    },
+    {
+      "command": "tagitem",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 752285
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 752764
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 752814
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 752900
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 753021
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 753231
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 753250
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 753336
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 753422
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 753487
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 753791
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 753809
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 753892
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 753978
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 754044
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 754337
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 754355
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 754438
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 754524
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 754592
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 754889
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 754903
+    },
+    {
+      "command": "iftag",
+      "condition": "probAll",
+      "true_branch": false,
+      "position_char": 754924
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 755392
+    },
+    {
+      "command": "iftag",
+      "condition": "probEx",
+      "true_branch": false,
+      "position_char": 755412
+    },
+    {
+      "command": "tagprob",
+      "condition": "probOr,probAnd,probIf,probEx,probAll",
+      "true_branch": false,
+      "position_char": 756521
+    },
+    {
+      "command": "tagprob",
+      "condition": "probOr,probAnd,probIf",
+      "true_branch": false,
+      "position_char": 756664
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 756820
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 765032
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 765452
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 765599
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 765656
+    },
+    {
+      "command": "iftag",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 765776
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 765987
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 766119
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 766213
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 767301
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 767705
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 767917
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 768130
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 768631
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 769242
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 770764
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 770862
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 770910
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 771145
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 771616
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 772144
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 772251
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 772360
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 776073
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 776506
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 778219
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 778571
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 778667
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 779168
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 779276
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 779385
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 779524
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 779647
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 779772
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 779944
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 780224
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 780374
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 780489
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvEx,prvAll",
+      "true_branch": true,
+      "position_char": 780339
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 780631
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 780893
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 781173
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 781626
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 781724
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 781771
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 781936
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 782084
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 782180
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 782274
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 782369
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 782674
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 783184
+    },
+    {
+      "command": "tagprob",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 784575
+    },
+    {
+      "command": "tagprob",
+      "condition": "notFOL",
+      "true_branch": false,
+      "position_char": 784779
+    },
+    {
+      "command": "iftag",
+      "condition": "FOL",
+      "true_branch": true,
+      "position_char": 785010
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 789622
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 789753
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 789884
+    },
+    {
+      "command": "tagitem",
+      "condition": "defAnd",
+      "true_branch": false,
+      "position_char": 791203
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 791224
+    },
+    {
+      "command": "tagitem",
+      "condition": "defOr",
+      "true_branch": false,
+      "position_char": 791973
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 791993
+    },
+    {
+      "command": "tagitem",
+      "condition": "defIf",
+      "true_branch": false,
+      "position_char": 792852
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 792872
+    },
+    {
+      "command": "tagblock",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1014824
+    },
+    {
+      "command": "iftag",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1016331
+    },
+    {
+      "command": "iftag",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1018459
+    },
+    {
+      "command": "iftag",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1036400
+    },
+    {
+      "command": "tagblock",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1042185
+    },
+    {
+      "command": "iftag",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1046454
+    },
+    {
+      "command": "iftag",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1050359
+    },
+    {
+      "command": "iftag",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1052266
+    },
+    {
+      "command": "iftag",
+      "condition": "TMs",
+      "true_branch": true,
+      "position_char": 1052999
+    },
+    {
+      "command": "tagblock",
+      "condition": "lambda",
+      "true_branch": true,
+      "position_char": 1084860
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 1255515
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 1255559
+    },
+    {
+      "command": "iftag",
+      "condition": "prfSC",
+      "true_branch": true,
+      "position_char": 1259139
+    },
+    {
+      "command": "iftag",
+      "condition": "prfND",
+      "true_branch": true,
+      "position_char": 1271733
+    },
+    {
+      "command": "iftag",
+      "condition": "prfAX",
+      "true_branch": true,
+      "position_char": 1287422
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 1435232
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 1435326
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 1435424
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 1435517
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 1439181
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 1439365
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAll",
+      "true_branch": true,
+      "position_char": 1439557
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvEx",
+      "true_branch": true,
+      "position_char": 1439754
+    },
+    {
+      "command": "oliflabeldef",
+      "condition": "fol:seq::chap",
+      "true_branch": true,
+      "position_char": 1626431
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 1983307
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 1983368
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 1983470
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 1983515
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 1983561
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 1983605
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 1983649
+    },
+    {
+      "command": "iftag",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll",
+      "true_branch": false,
+      "position_char": 1983718
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 1986124
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2066375
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2066438
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2066625
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2066670
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2066716
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2066760
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2066804
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2066859
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2066899
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2067086
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2067138
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2067247
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2067318
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2067403
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2067486
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2067569
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2067654
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2067724
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 2067802
+    },
+    {
+      "command": "tagblock",
+      "condition": "defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defBox,defDiamond",
+      "true_branch": false,
+      "position_char": 2067876
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2070315
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2070464
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2070891
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2071092
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2071378
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2071663
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2071948
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2072236
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2072443
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2077206
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2077290
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2077437
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2077563
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2077715
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2077878
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2078030
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2078259
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2078457
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2081272
+    },
+    {
+      "command": "tagblock",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2080119
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2090594
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2090711
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2091317
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2091858
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2092558
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2093246
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2093943
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2138922
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2138997
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2139135
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2139217
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2139322
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2139424
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2139526
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2139631
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2139746
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvDiamond",
+      "true_branch": false,
+      "position_char": 2147218
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2149348
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2149369
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2149403
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2150192
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2150680
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2153825
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2154431
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2155117
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2157308
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2160931
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2161083
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2161098
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2164755
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2167716
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2169955
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2170039
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2180021
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2180367
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2197812
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2197891
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2198062
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2198194
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2198324
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2198457
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2199110
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2199246
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2199725
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 2199742
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2200218
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 2200234
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2200950
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 2200966
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2201552
+    },
+    {
+      "command": "iftag",
+      "condition": "probIff",
+      "true_branch": false,
+      "position_char": 2201569
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2208220
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2208681
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2208866
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2208959
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2209246
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2210190
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2210282
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2210337
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2212424
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2216224
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2216243
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2217549
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2218804
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2219899
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2220141
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2220617
+    },
+    {
+      "command": "iftag",
+      "condition": "probNot",
+      "true_branch": false,
+      "position_char": 2220667
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2221044
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 2221097
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2221569
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 2221620
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2222080
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 2222131
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2222595
+    },
+    {
+      "command": "iftag",
+      "condition": "probIff",
+      "true_branch": false,
+      "position_char": 2222648
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2223294
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2223343
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2224499
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2224556
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2224950
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2225765
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2230686
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2231370
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2231717
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2231976
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2232279
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2232955
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2233088
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2233190
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2235388
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2236627
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2236728
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2250341
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2250515
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2251781
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2251913
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2252554
+    },
+    {
+      "command": "iftag",
+      "condition": "probNot",
+      "true_branch": false,
+      "position_char": 2252571
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2252910
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 2252927
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2253407
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 2253423
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2253893
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 2253909
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2254381
+    },
+    {
+      "command": "iftag",
+      "condition": "probIff",
+      "true_branch": false,
+      "position_char": 2254398
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2255026
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2255043
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2255769
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2255790
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2258554
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2258569
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2259080
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2259099
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2259904
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2260041
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2260167
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2260197
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvBox,prvDiamond",
+      "true_branch": true,
+      "position_char": 2259999
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2260581
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2260695
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2260776
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2260896
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2274870
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2274974
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2275010
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2275181
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2275285
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2275321
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2275492
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2275600
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2275636
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2275815
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2275923
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2275959
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2277670
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2277695
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2278296
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2278429
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2278475
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2278634
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2278789
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2278835
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2284009
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2284299
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2286709
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2286730
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2290851
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2290866
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2290910
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2291130
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2291270
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2291310
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2291466
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2291650
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2291793
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2291833
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2291991
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2292327
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2292741
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2293279
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2293436
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2295215
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2295344
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2297176
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2298491
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2306755
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2306877
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2307473
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2308665
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2308799
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2310108
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2313447
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2313562
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2313722
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2313763
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2313960
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2314128
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2314169
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2314370
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2314532
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2314573
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2314772
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2314938
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2314979
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2315170
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2315322
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2315489
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2315530
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2316116
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2316149
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2316194
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2316288
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2316321
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2316366
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2316451
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2316484
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2316529
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2316626
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2316659
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2316704
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2316762
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2316795
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2316840
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2316938
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2316971
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2317016
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2317077
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2317110
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2317155
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2317254
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2317287
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2317332
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2317394
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2317427
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2317472
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2317537
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2317571
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2317616
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2319721
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2319755
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2319799
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2319840
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2319986
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2320088
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2320426
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2320541
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvBox,prvDiamond",
+      "true_branch": true,
+      "position_char": 2319946
+    },
+    {
+      "command": "tagprob",
+      "condition": "probBox,probDiamond",
+      "true_branch": false,
+      "position_char": 2320923
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2321098
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2321132
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2321176
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2321217
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2321362
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2321469
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2321871
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2321991
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvBox,prvDiamond",
+      "true_branch": true,
+      "position_char": 2321322
+    },
+    {
+      "command": "tagprob",
+      "condition": "probBox,probDiamond",
+      "true_branch": false,
+      "position_char": 2322426
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2322601
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2322635
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2322679
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2322720
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2322864
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2322973
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2323442
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2323564
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvBox,prvDiamond",
+      "true_branch": true,
+      "position_char": 2322824
+    },
+    {
+      "command": "tagprob",
+      "condition": "probBox,probDiamond",
+      "true_branch": false,
+      "position_char": 2324082
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2324257
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2324291
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2324335
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2324376
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2324522
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2324629
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2325215
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2325335
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvBox,prvDiamond",
+      "true_branch": true,
+      "position_char": 2324482
+    },
+    {
+      "command": "tagprob",
+      "condition": "probBox,probDiamond",
+      "true_branch": false,
+      "position_char": 2325983
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2326159
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2326194
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2326238
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2326280
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2326600
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2326710
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2327261
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2327384
+    },
+    {
+      "command": "tagenumerate",
+      "condition": "prvBox,prvDiamond",
+      "true_branch": true,
+      "position_char": 2326560
+    },
+    {
+      "command": "tagprob",
+      "condition": "probBox,probDiamond",
+      "true_branch": false,
+      "position_char": 2328213
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2329633
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2330009
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2333394
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2333513
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2333611
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2333769
+    },
+    {
+      "command": "iftag",
+      "condition": "probNot",
+      "true_branch": false,
+      "position_char": 2337562
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 2338093
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 2338972
+    },
+    {
+      "command": "iftag",
+      "condition": "probIf",
+      "true_branch": false,
+      "position_char": 2339855
+    },
+    {
+      "command": "iftag",
+      "condition": "probBox",
+      "true_branch": false,
+      "position_char": 2340739
+    },
+    {
+      "command": "iftag",
+      "condition": "probDiamond",
+      "true_branch": false,
+      "position_char": 2341569
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2343761
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2343801
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2343845
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2343895
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2344021
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2344060
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2344104
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2344155
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2344777
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2356375
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2356396
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2356428
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2356558
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2356573
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2357947
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2357962
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2358006
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2358060
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2358114
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2358129
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2358743
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2358854
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2358884
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvDiamond",
+      "true_branch": false,
+      "position_char": 2359012
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox",
+      "true_branch": false,
+      "position_char": 2359115
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2359218
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359241
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359271
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2359354
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359381
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359411
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2359467
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359498
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359528
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2359625
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359685
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2359716
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2359837
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2360159
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2360205
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2360637
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2360679
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2360871
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2360940
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2360971
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2361127
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2361493
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2361537
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2361924
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2361995
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2362337
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2363384
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2364599
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2366502
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2366517
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2370739
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2370772
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2370817
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2370919
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2370944
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2371048
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2371082
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2371127
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2371232
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2371265
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2371310
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2371368
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2371401
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2371446
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2371552
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2371585
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2371630
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2371690
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2371723
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2371768
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2371874
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2371907
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2371952
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2372013
+    },
+    {
+      "command": "iftag",
+      "condition": "notprvBox,notprvDiamond",
+      "true_branch": false,
+      "position_char": 2372046
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2372091
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2372298
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2373074
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2373089
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2374792
+    },
+    {
+      "command": "iftag",
+      "condition": "prvBox",
+      "true_branch": true,
+      "position_char": 2374968
+    },
+    {
+      "command": "iftag",
+      "condition": "prvDiamond",
+      "true_branch": true,
+      "position_char": 2374983
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2380039
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2380105
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2380295
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2380340
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2380386
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2380430
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2380474
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2380839
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2380890
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2380996
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2381067
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2381153
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2381237
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2381321
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 2381664
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2383075
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2383159
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2383305
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2383431
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2383583
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2383746
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2383898
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2394821
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2394887
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2395077
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2395122
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2395168
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2395212
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2395256
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2395665
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2395716
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2395822
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2395893
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2395979
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2396063
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2396147
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 2396311
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2399648
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2399732
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2399878
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2400004
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2400156
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2400319
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2400471
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2411663
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2411729
+    },
+    {
+      "command": "iftag",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2411919
+    },
+    {
+      "command": "iftag",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2411964
+    },
+    {
+      "command": "iftag",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2412010
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2412054
+    },
+    {
+      "command": "iftag",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2412260
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2412684
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2412737
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2412847
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2412920
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2413008
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2413094
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2413180
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 2413418
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvFalse",
+      "true_branch": true,
+      "position_char": 2414306
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvTrue",
+      "true_branch": true,
+      "position_char": 2414390
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvNot",
+      "true_branch": true,
+      "position_char": 2414536
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvAnd",
+      "true_branch": true,
+      "position_char": 2414662
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvOr",
+      "true_branch": true,
+      "position_char": 2414814
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIf",
+      "true_branch": true,
+      "position_char": 2414977
+    },
+    {
+      "command": "tagitem",
+      "condition": "prvIff",
+      "true_branch": true,
+      "position_char": 2415129
+    },
+    {
+      "command": "tagitem",
+      "condition": "limitClause",
+      "true_branch": true,
+      "position_char": 2425346
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 2461645
+    },
+    {
+      "command": "iftag",
+      "condition": "probAnd",
+      "true_branch": false,
+      "position_char": 2462501
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 2463032
+    },
+    {
+      "command": "iftag",
+      "condition": "probOr",
+      "true_branch": false,
+      "position_char": 2463535
+    }
+  ],
+  "synthetic_paragraph_boundary_repairs": [
+    {
+      "command": "begin",
+      "position_char": 4673,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 5447,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 5624,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 11870,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 24306,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "oliflabeldef",
+      "position_char": 126791,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 246868,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 247044,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 247325,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 247660,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 247937,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 259617,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 259714,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 259811,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 259909,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 426084,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 446262,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 451452,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 472898,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 491060,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 503110,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 509389,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 510983,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 446162,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 515132,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 519711,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 537006,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 549986,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 558193,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 566412,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 570852,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 571885,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 515032,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 577231,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 582243,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 607065,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 624299,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 638002,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 649936,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 651424,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 577130,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 657136,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 662547,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 669312,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 674256,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 679954,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 680188,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 685289,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 688803,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 696239,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 697152,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 657036,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 711331,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 732063,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 736026,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 732295,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 746580,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 747662,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 748727,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 754889,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 756820,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 767705,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 768130,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 772144,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 772360,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 776073,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 776506,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 779524,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 779772,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 779944,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 780224,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 780631,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 780893,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "tagprob",
+      "position_char": 784575,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 785010,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 1014824,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 1042185,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 1084860,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 1259139,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 1271733,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 1287422,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "begin",
+      "position_char": 2080119,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2161083,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2167716,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2212424,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2216224,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2292327,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2292741,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2293436,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2295344,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2297176,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2298491,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2306755,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2308665,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2313562,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2313763,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2313960,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2314169,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2314370,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2314573,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2314772,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2314979,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2315322,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2315530,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2329633,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2330009,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2344777,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2356558,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2358114,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2359837,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2360205,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2361127,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2361537,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": false
+    },
+    {
+      "command": "iftag",
+      "position_char": 2362337,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2363384,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2364599,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2366502,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2372298,
+      "leading_newline_removed": true,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2373074,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    },
+    {
+      "command": "iftag",
+      "position_char": 2374968,
+      "leading_newline_removed": false,
+      "trailing_newline_removed": true
+    }
+  ],
+  "purpose": "Frozen comment-based environments cannot scan source lines after imported chapters have been inlined inside already-tokenized conditional arguments. Resolve the same frozen tag profile before TeX tokenization; retain every translated conditional variant in the exact modular sources and uncollapsed reader body.",
+  "status": "configured_full_text_materialized_all_722_unit_markers_preserved"
+}

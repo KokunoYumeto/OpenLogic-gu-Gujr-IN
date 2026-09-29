@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0411",
+  "checked_at_utc": "2026-09-27T10:17:46.944949+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0411 simultaneous modal substitution; state-only draft",
+  "report": {
+    "unit_id": "OLP-0411",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/substitution.tex",
+    "source_sha256": "c06b8018d76c34c2242503d94f209cc4c6c731542e9eab27a099b2e794fa30ff",
+    "draft_path": "private-state\\work\\batch040_draft\\substitution.tex",
+    "draft_sha256": "f12bd7c0c7f8967fdb12983e5eaf4c1f88de19e6c2c887221e995ee19e2ce085",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 47,
+    "target_math_spans_after_corrections": 47,
+    "glossary_tokens": 9,
+    "source_correction_notes": [
+      "OLMD-002",
+      "OLMD-003"
+    ],
+    "source_detector_ascii_tokens": 96,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [],
+    "conditional_tag_scope_repairs_exact": true,
+    "four_example_results_source_exact": true
+  },
+  "status": "draft_linguistic_math_induction_example_and_visible_tag_scope_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

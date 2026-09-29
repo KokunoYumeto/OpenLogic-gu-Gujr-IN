@@ -1,0 +1,67 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0541",
+  "checked_at_utc": "2026-09-27T23:56:16.133012+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0541 pairing and no last stage; state-only draft",
+  "report": {
+    "unit_id": "OLP-0541",
+    "source_path": "content/set-theory/z/pairs.tex",
+    "source_sha256": "6e386f6c7bb1e2a08dd198e5ad421083df93eb4273efa9370d92b5432d11843f",
+    "draft_path": "private-state\\work\\batch044_draft\\pairs.tex",
+    "draft_sha256": "66ef1a50a74378def8a422f29ac0251e689627503dc3cac73452372572d42f28",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 34,
+    "target_math_spans_after_corrections": 34,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 234,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\relations-as-sets.tex",
+        "sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495",
+        "terms": [
+          "અક્રમયુક્ત જોડ",
+          "ક્રમયુક્ત જોડ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\extensionality.tex",
+        "sha256": "be103783e4ba30e4118344fb25be3383732bda255321d36b38e47c01e08cf6b5",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત સમાનતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-successor-044.tex",
+        "sha256": "c5b610cae7356f658e68cbf69597f7db7c60b1586a54ff7a1ef4a4aa5ec0810b",
+        "terms": [
+          "તબક્કાઓ આગળ વધતા રહે છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The pairing axiom allows a=b; it is not restricted to two distinct members.",
+      "The construction of the ordered pair is distinguished from the unordered pair axiom.",
+      "The no-last-stage principle is explicitly additional.",
+      "One inactive commented proof is retained byte-exact, so the raw begin-proof count includes it. The exercises remain exercises, without added solutions."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [
+      {
+        "path": "work/STAGE_LABEL_LOCALIZATION_044_0541.json",
+        "sha256": "9ddff7d5aec7c0cff4c702778c2e68f570d0241967734e2c6dd3d8010ae6a795"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

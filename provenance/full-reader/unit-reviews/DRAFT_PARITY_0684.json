@@ -1,0 +1,85 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0684",
+  "checked_at_utc": "2026-09-28T20:54:44.371887+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0684 Signed tableaux, fair proof search, and G3c translation; state-only draft",
+  "report": {
+    "unit_id": "OLP-0684",
+    "source_path": "content/proof-theory/proof-search/tableaux.tex",
+    "source_sha256": "593c823ad413a4db7c58f783d612a3fb14cc8fbaa790c50c26d0f7709b6a8d14",
+    "draft_path": "private-state\\work\\batch044_draft\\tableaux.tex",
+    "draft_sha256": "3a7cebc4065ded745d1c86e5aba8950f8edd5f65a4dd0ad54e0fecbe65c6406e",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 46,
+    "target_math_spans_after_corrections": 46,
+    "glossary_tokens": 28,
+    "source_correction_notes": [
+      "OLMD-278",
+      "OLMD-279"
+    ],
+    "source_detector_ascii_tokens": 657,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\sFmla{\\True}{!D}",
+        "\\sFmla{\\False}{!D}"
+      ],
+      [
+        "clause tableau",
+        "closed tableau"
+      ],
+      [
+        "\\text{ on the branch}",
+        "\\text{ શાખા પર}",
+        2
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન",
+          "સાબિતી-તંત્ર"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ on the branch}",
+        "target": "\\text{ શાખા પર}",
+        "count": 2
+      }
+    ],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\Log{Tc}",
+        "count": 1
+      },
+      {
+        "literal": "\\subfile{rules-Tc}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

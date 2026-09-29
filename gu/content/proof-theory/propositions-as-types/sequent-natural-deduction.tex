@@ -1,0 +1,146 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: sequent-natural-deduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{snd}
+
+\olsection{સિક્વન્ટ-શૈલીનું સ્વાભાવિક નિગમન}
+
+સ્વાભાવિક નિગમનની એવી !!{derivation} હોય
+કે તેની !!{undischarged} ધારણાઓ~$\Gamma$
+અને નિષ્કર્ષ~$!A$ હોય, તો
+$\Gamma \Sequent !A$ લખીએ;
+$\Gamma$ ખાલી હોય, તો $\Sequent !A$ લખીએ.
+
+$\Gamma \cup \{!A_1, \dots, !A_n\}$ માટે
+$\Gamma, !A_1, \dots, !A_n$ અને
+$\Gamma \cup \Delta$ માટે $\Gamma, \Delta$ લખીએ.
+
+નોંધો કે $\Gamma \Sequent !A \land !B$ હોય,
+એટલે !!{undischarged} ધારણાઓ~$\Gamma$ અને
+અંતિમ !!{formula}~$!A \land !B$ ધરાવતી
+!!a{derivation} હોય, તો સૌથી નીચે
+$\Elim{\land}$ લાગુ કરીને એ જ
+!!{undischarged} ધારણાઓ અને નિષ્કર્ષ~$!A$
+ધરાવતી !!a{derivation} મળે છે.
+એટલે $\Gamma \Sequent !A \land !B$
+હોય, તો $\Gamma \Sequent !A$ છે.
+\sourcecorrection{OLMD-295}{મૂળ આ ખુલાસાની શરૂઆતમાં બંને સંયોજ્યો $!A$ લખે છે, પરંતુ સારવાક્ય અને નિયમવૃક્ષમાં $!A$ તથા $!B$ છે. ખુલાસાના બંને સ્થાનોને એ જ સામાન્ય સંયોજન સાથે સુસંગત કર્યા છે.}
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof\qquad\bottomAlignProof
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !B$
+\end{prooftree}
+$\Elim{\land}$ ચિહ્ન સ્વાભાવિક નિગમનના
+એ જ નામના નિયમ સાથેનો સંબંધ સૂચવે છે.
+
+એ જ રીતે $\Gamma, !A \Sequent !B$ હોય,
+એટલે !!{undischarged} ધારણાઓ $\Gamma, !A$
+અને અંતિમ !!{formula}~$!B$ ધરાવતી
+!!a{derivation} હોય એમ ધારો.
+$\Intro{\lif}$ નિયમ લગાવીએ, તો
+!!{undischarged} ધારણાઓ~$\Gamma$
+અને અંતિમ !!{formula}~$!A \lif !B$
+ધરાવતી !!a{derivation} મળે છે,
+એટલે $\Gamma \Sequent !A \lif !B$.
+આ રીતે ધારણાઓની !!{discharge}
+વધુ સ્પષ્ટ થાય છે તે નોંધો.
+\begin{prooftree}
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+\end{prooftree}
+
+બીજા નિયમોમાંથી પણ આ રીતે નિષ્કર્ષો
+મેળવી શકીએ. તે આમ સ્પષ્ટ થાય છે:
+\begin{gather*}
+  \Axiom $\Gamma \fCenter !A$
+  \Axiom $\Delta \fCenter !B$
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInf $\Gamma,\Delta \fCenter !A \land !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_1$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+  \qquad
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_2$}
+  \UnaryInf $\Gamma \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Intro{\lor}_1$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\qquad
+  \Axiom $\Gamma \fCenter !B$
+  \RightLabel{$\Intro{\lor}_2$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \lor !B$
+  \Axiom $\Delta, !A \fCenter !C$
+  \Axiom $\Delta', !B \fCenter !C$
+  \RightLabel{$\Elim{\lor}$}
+  \TrinaryInf $\Gamma, \Delta, \Delta' \fCenter !C$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+  \DisplayProof
+  \qquad
+  \Axiom $\Delta \fCenter !A \lif !B$
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInf $\Gamma, \Delta \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter \lfalse$
+  \RightLabel{$\FalseInt$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+\end{gather*}
+
+કોઈ પણ ધારણા પોતે~$!A$માંથી $!A$ની
+!!a{derivation} છે; એટલે હંમેશાં
+$!A \Sequent !A$ છે.
+
+\begin{prooftree}
+  \AxiomC{$ $}
+  \UnaryInfC{$!A \fCenter !A$}
+\end{prooftree}
+
+આ બધા નિયમોને સ્વાભાવિક નિગમનની કઈ
+!!{derivation}s અસ્તિત્વ ધરાવે છે તે
+વિશેનું કલન ગણી શકાય. તેને સ્વાભાવિક
+નિગમનની નોંધની વૈકલ્પિક રીત પણ
+ગણી શકાય, જેમાં દરેક પગલે ફક્ત
+!!{derive}d થયેલું !!{formula} જ
+નહીં, પણ જે !!{undischarged} ધારણાઓમાંથી
+તે !!{derive}d થયું હોય તે પણ નોંધાય છે.
+
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \UnaryInf $!A \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom $!B \fCenter !B$
+  \BinaryInf$!A, !B \fCenter \lfalse$
+  \UnaryInf$!B \fCenter !A \lif \lfalse$
+  \UnaryInf$!B \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom$!B \fCenter !B$
+  \BinaryInf$!B \fCenter \lfalse$
+  \UnaryInf$\fCenter !B \lif \lfalse$
+\end{prooftree}
+અહીં $!B$ એ
+$(!A \lor (!A \lif \lfalse))\lif \lfalse$નું
+ટૂંકું રૂપ છે.
+\sourcecorrection{OLMD-296}{મૂળના અંતિમ વૃક્ષમાં પૂર્વાંગના સૂત્ર $!B$ પછી એક વધારાનો અનુસરણ-સંયોજક તથા ચાર વધારાના ખુલ્લા કૌંસ છે. તેમને કાઢ્યાં છે; તેથી દરેક પગલાનો સંદર્ભ આપેલી $!B$ ધારણા છે અને અંતિમ નિષ્કર્ષ એ ધારણાથી અસત્ય મળે છે તે જ કહે છે.}
+
+\end{document}

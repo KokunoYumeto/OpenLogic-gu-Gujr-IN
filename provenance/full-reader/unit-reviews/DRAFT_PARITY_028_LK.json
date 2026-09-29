@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/28-lk",
+  "checked_at_utc": "2026-09-26T23:02:36.575900+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0286 state-only LK proof coding draft",
+  "report": {
+    "unit_id": "OLP-0286",
+    "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-lk.tex",
+    "source_sha256": "841537ac9e922a29d77bcdc56665413533d40831e7b19d9053644ceccdf6b64b",
+    "draft_path": "private-state\\work\\batch028_draft\\proofs-in-lk.tex",
+    "draft_sha256": "799a7c9ad83bda41e13b2c0153289966f67ea835e546f147d0af11fc9878f6d5",
+    "aligned_blocks": 25,
+    "linguistic_blocks": 19,
+    "source_math_spans": 173,
+    "glossary_tokens": 34,
+    "correction_notes": [
+      "OLINC-006",
+      "OLINC-007",
+      "OLINC-008",
+      "OLINC-009",
+      "OLINC-010"
+    ],
+    "correction_aware_math_and_structure_equal": true
+  },
+  "status": "draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0553",
+  "checked_at_utc": "2026-09-28T01:02:42.661417+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0553 basic ordinal properties and transfinite induction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0553",
+    "source_path": "content/set-theory/ordinals/basic.tex",
+    "source_sha256": "7a9d1d198227e2de1a2af719417ae7d81ffc2c727e6da7d992b194f44a7f19c1",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-basic.tex",
+    "draft_sha256": "04651b060194f7d1566c1b81a0f5ab73b80a6d025107ba0db0a280141af07554",
+    "aligned_blocks": 35,
+    "linguistic_blocks": 32,
+    "source_math_spans_correction_aware": 111,
+    "target_math_spans_after_corrections": 111,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-116"
+    ],
+    "source_detector_ascii_tokens": 646,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "it has some",
+        "its satisfying subset has some"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\arithmetization\\checking-details.tex",
+        "sha256": "77b13461dc42a8d952431a1987a8134c972df7d7b8f06c404e20343d7e9a440f",
+        "terms": [
+          "ત્રિવિકલ્પતા",
+          "ઉચિત આરંભિક ખંડ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\trees.tex",
+        "sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b",
+        "terms": [
+          "સુક્રમિત",
+          "લઘુતમ ઘટક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-vn.tex",
+        "sha256": "d634e926539b703109c4034ef9abc68986efe47f9aedc4a2bffa993b704f1d25",
+        "terms": [
+          "ક્રમવાચક સંખ્યા",
+          "પરંપરિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-wo.tex",
+        "sha256": "c101c7813ca2cfbc30ae058966bc0cd22c520f7d37e99e5f7d7e1f279af035df",
+        "terms": [
+          "અસ્વવાચક",
+          "પરંપરિત"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The source's induction proof omitted the satisfying-subset qualification. OLMD-116 is visible, prose-only; all 111 original formula spans remain exact after removing correction notes.",
+      "The induction theorem quantifiers are stated as restricted to ordinals; the explanatory prose does not silently convert a proper class into a set.",
+      "ત્રિવિકલ્પતા is directly attested in the published Gujarati arithmetic discussion, rather than introduced as an unattested translation.",
+      "The Burali-Forti quote is translated, while its exact Heijenoort page locator and both citation keys remain intact. The Cantor 1899 priority claim is reported as a source claim, not newly verified.",
+      "The descending-sequence proof is retained as the source's concise argument and the union-of-ordinals result remains an exercise."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

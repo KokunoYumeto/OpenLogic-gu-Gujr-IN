@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0486",
+  "checked_at_utc": "2026-09-27T20:04:29.274722+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0486 epistemic truth and common knowledge; state-only draft",
+  "report": {
+    "unit_id": "OLP-0486",
+    "source_path": "content/applied-modal-logic/epistemic-logic/truth-at-w.tex",
+    "source_sha256": "d1a57861965ea7a83ae4e6a37a6fcb19f5fce14c1a16336f551f6a0101060abc",
+    "draft_path": "private-state\\work\\batch041_draft\\epistemic-truth-at-w.tex",
+    "draft_sha256": "0a4f9e0e900305224f76dd56d37f4af01a9f7a1bd37cb9b87aec1c130557ac11",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 65,
+    "target_math_spans_after_corrections": 65,
+    "glossary_tokens": 4,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 370,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "eight_inductive_truth_cases_checked": true,
+    "tikz_figure_byte_exact": true,
+    "closure_display_only_prose_localized": true,
+    "structural_scan_exclusions": [
+      {
+        "kind": "TikZ syntax",
+        "finding_lines": 11,
+        "reason": "diagram directives and option names are code, not ordinary prose"
+      }
+    ],
+    "nonstandard_source_power_indexing_preserved": "The source uses R^0=R; public Gujarati relations chapter starts with R^1=R. Both yield R+ but the source convention is retained."
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

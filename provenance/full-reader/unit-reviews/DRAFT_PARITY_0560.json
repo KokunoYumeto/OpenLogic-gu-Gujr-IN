@@ -1,0 +1,84 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0560",
+  "checked_at_utc": "2026-09-28T01:24:30.456262+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0560 bounded, general, and simple transfinite recursion with a visible missing-zero-case repair; state-only draft",
+  "report": {
+    "unit_id": "OLP-0560",
+    "source_path": "content/set-theory/spine/recursion.tex",
+    "source_sha256": "e9b5fe7b4ab133bc97d234aabd8dae2412e91bbeeb9c785b4a8112ba1e1a0510",
+    "draft_path": "private-state\\work\\batch044_draft\\spine-recursion.tex",
+    "draft_sha256": "aeb5abe00df7192c8e56b9ed2a8dfef17660d4e5ef647f113090239df415f777",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 20,
+    "source_math_spans_correction_aware": 76,
+    "target_math_spans_after_corrections": 76,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-118"
+    ],
+    "source_detector_ascii_tokens": 392,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-idea.tex",
+        "sha256": "0e754ebf889a7583c9fdc1e27df41a53e46cf4989d628f28653470d12ccfc801",
+        "terms": [
+          "અનંતાતીત પુનરાવર્તન",
+          "તબક્કાઓ",
+          "વ્યાખ્યા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-basic.tex",
+        "sha256": "04651b060194f7d1566c1b81a0f5ab73b80a6d025107ba0db0a280141af07554",
+        "terms": [
+          "અનંતાતીત અનુમાન",
+          "બુરાલી–ફૉર્ટી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+        "sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+        "terms": [
+          "સરળ અનંતાતીત અનુમાન",
+          "સીમા ક્રમવાચક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-replacement.tex",
+        "sha256": "26a05b92c09a1ba8edfcde66d51a841858744b476bae38a81d1999d3ac26c1ef",
+        "terms": [
+          "પ્રતિસ્થાપન",
+          "પદ",
+          "પ્રરૂપ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-induction.tex",
+        "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945",
+        "terms": [
+          "પુનરાવર્તી વ્યાખ્યા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The source's xi case display omits the empty function, whose ordinal domain is zero. OLMD-118 records the corrected first-case reading visibly; all original formula spans remain untouched after note removal.",
+      "The general sigma is a term or definitional schema, never asserted to be a set-function with all ordinals as its domain.",
+      "At a limit, the family of unique earlier approximations can be collected using Replacement before its union is taken; the translated prose does not claim a proper-class union is a set.",
+      "The final V-alpha instantiation keeps base empty set, successor power set, and limit union as distinct clauses.",
+      "The inherited inactive source comments near xi remain raw source comments; they do not modify the formal proof display."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

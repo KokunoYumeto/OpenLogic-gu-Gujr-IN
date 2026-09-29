@@ -1,0 +1,199 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{ch}
+
+\olsection{સાતત્યક પરિકલ્પના}
+
+અગાઉનું પરિણામ (યોગ્ય રીતે) સૂચવે છે કે અનંત
+ગણાંકો $2$ની ઘાત સાથે, એટલે કે
+\olref[opps]{lem:SizePowerset2Exp} મુજબ ઘાતગણ
+લેવાની ક્રિયા સાથે, ``સીધી રીતે'' વર્તે તેની ખાતરી
+હોય, તો ગણાંક ઘાતક્રિયા બહુ \emph{સહેલી} થાય.
+પરંતુ અનંત ગણાંકો ઘાતગણ સાથે ખરેખર \emph{એમ}
+વર્તે છે એવું માની શકાતું નથી.
+
+આ વાત સમજવા પહેલાં કેટલીક ઉપયોગી સંજ્ઞાઓ
+રજૂ કરીએ.
+
+\begin{defn}
+$\cardsucc{\cardfont{a}}$ એ $\cardfont{a}$ કરતાં
+કડક મોટો લઘુતમ ગણાંક હોય, તો બે અનંત અનુક્રમો
+આમ વ્યાખ્યાયિત કરીએ:
+\begin{align*}
+	\aleph_{0} &\defis \omega & 		
+	\beth_{0} &\defis \omega\\
+	\aleph_{\alpha \ordplus 1} &\defis \cardsucc{(\aleph_{\alpha})} &
+	\beth_{\alpha+1} &\defis \cardexpo{2}{\beth_{\alpha}}\\
+	\aleph_{\alpha} &\defis \bigcup_{\beta< \alpha} \aleph_{\beta} &
+	\beth_{\alpha} &\defis \bigcup_{\beta < \alpha}\beth_{\beta} & \text{જ્યારે $\alpha$ સીમા ક્રમવાચક સંખ્યા હોય}.
+	\end{align*}
+\end{defn}
+
+$\cardsucc{\cardfont{a}}$ની વ્યાખ્યા યોગ્ય છે,
+કારણ કે \olref[cardinals][classing]{lem:NoLargestCardinal}
+મુજબ દરેક ગણાંક $\cardfont{a}$ માટે
+$\cardfont{a}$ કરતાં મોટો કોઈ ગણાંક છે, અને
+અનંતાતીત અનુમાનથી $\cardfont{a}$ કરતાં મોટા
+ગણાંકોમાં \emph{લઘુતમ} ગણાંક મળે છે. આલેફ અને બેથના
+અનુક્રમોની બાકીની વ્યાખ્યાઓ અનંતાતીત
+પુનરાવર્તનથી મળે છે.
+\sourcecorrection{OLMD-140}{મૂળનું છેલ્લું વાક્ય
+``$\cardfont{a}$ની બાકીની વ્યાખ્યા'' કહે છે,
+જોકે ઉપર વ્યાખ્યાયિત થતી વસ્તુઓ આલેફ અને બેથના
+અનુક્રમો છે. અહીં એ વિષયને સ્પષ્ટ કર્યો છે;
+ગણિતીય પુનરાવર્તી સૂત્રો બદલ્યાં નથી.}
+
+કૅન્ટરે ``$\aleph$'' સંજ્ઞા રજૂ કરી હતી;
+તે \emph{આલેફ} છે, હિબ્રુ મૂળાક્ષરનો પહેલો
+અક્ષર અને ``અનંત'' માટેના હિબ્રુ શબ્દનો પહેલો
+અક્ષર. પિર્સે ``$\beth$'' સંજ્ઞા રજૂ કરી હતી;
+તે \emph{બેથ} છે, હિબ્રુ મૂળાક્ષરનો બીજો
+અક્ષર.\footnote{પિર્સે ડિસેમ્બર 1900માં કૅન્ટરને
+લખેલા પત્રમાં આ સંજ્ઞા વાપરી હતી. કમનસીબે
+ત્યાં તેમણે $\alpha \geq \omega$ માટે
+$\beth_\alpha$ અસ્તિત્વમાં નથી એવી ખોટી દલીલ
+પણ આપી હતી.} હવે આ સંજ્ઞાઓ અનંત ગણાંકો આપે છે.
+
+\begin{prop}
+દરેક ક્રમવાચક સંખ્યા $\alpha$ માટે
+$\aleph_\alpha$ અને $\beth_\alpha$ ગણાંકો છે.
+\end{prop}
+
+\begin{proof}
+બંને પરિણામો સરળ અનંતાતીત અનુમાનથી મળે છે.
+$\aleph_0 = \beth_0 = \omega$ ગણાંક છે,
+\olref[cardinals][classing]{omegaisacardinal} મુજબ.
+$\aleph_\alpha$ અને $\beth_\alpha$ બંને ગણાંકો
+છે એમ ધારીએ, તો $\aleph_{\alpha+1}$ અને
+$\beth_{\alpha+1}$ વ્યાખ્યાથી જ ગણાંકો છે.
+અને ગણાંકોના ગણનો યોગગણ પણ ગણાંક છે,
+\olref[cardinals][classing]{unioncardinalscardinal} મુજબ.
+\end{proof}
+\noindent
+વળી દરેક અનંત ગણાંક કોઈ $\aleph$ છે:
+
+\begin{prop}
+જો $\cardfont{a}$ અનંત ગણાંક હોય, તો કોઈ અનન્ય
+$\gamma$ માટે $\cardfont{a} = \aleph_\gamma$.
+\end{prop}
+
+\begin{proof}
+અનંત ગણાંકો પર અનંતાતીત અનુમાન કરો. આધાર
+કિસ્સામાં લઘુતમ અનંત ગણાંક આલેફ-શૂન્ય છે.
+અનુમાન-ધારણા એવી લો કે અનંત
+$\cardfont{b} < \cardfont{a}$ હોય,
+તો $\cardfont{b} = \aleph_{\gamma_\cardfont{b}}$.
+કોઈ $\cardfont{b}$ માટે
+$\cardfont{a} = \cardsucc{\cardfont{b}}$ હોય, તો
+$\cardfont{a} = \cardsucc{(\aleph_{\gamma_\cardfont{b}})}=
+\aleph_{\gamma_\cardfont{b}+1}$. જો $\cardfont{a}$
+કોઈ ગણાંકનો અનુગામી ન હોય, તો ગણાંકો ક્રમવાચક
+સંખ્યાઓ હોવાથી
+$\cardfont{a} = \bigcup_{\omega \leq \cardfont{b} < \cardfont{a}} \cardfont{b} =
+\bigcup_{\omega \leq \cardfont{b} < \cardfont{a}}{\aleph_{\gamma_\cardfont{b}}}$;
+તેથી $\gamma = \bigcup_{\omega \leq \cardfont{b} <
+\cardfont{a}}\gamma_\cardfont{b}$ લઈએ, તો
+$\cardfont{a} = \aleph_\gamma$. આ અનુક્રમ કડક
+વધતો હોવાથી સૂચક અનન્ય છે.
+\sourcecorrection{OLMD-141}{મૂળની અનુમાન-ધારણા
+દરેક નાના ગણાંક માટે આલેફ-સૂચક માને છે;
+પરંતુ સાન્ત ગણાંકો આલેફ નથી. લઘુતમ અનંત ગણાંકને
+અલગ આધાર કિસ્સો લઈને અને સીમા-કિસ્સાના
+યોગગણોમાં ફક્ત અનંત ગણાંકો રાખીને દલીલને
+સુગઠિત કરી છે. અનન્યતા માટે અનુક્રમની કડક
+વૃદ્ધિ પણ સ્પષ્ટ કરી છે.}
+\end{proof}
+
+દરેક અનંત ગણાંક કોઈ $\aleph$ છે, તેથી પ્રશ્ન થાય:
+શું દરેક અનંત ગણાંક કોઈ~$\beth$ પણ છે? જો
+\emph{એવું} હોય, તો અનંત ગણાંકો ઘાતગણ લેવાની
+ક્રિયા સાથે ``સીધી રીતે'' વર્તે. ખરેખર નીચેનું
+મળે:
+
+\begin{defish}
+\emph{સામાન્યીકૃત સાતત્યક પરિકલ્પના} (GCH).
+બધા $\alpha$ માટે $\aleph_\alpha  = \beth_\alpha$.
+\end{defish}
+
+વળી GCH સાચી હોય, તો ગણાંક ઘાતક્રિયાનાં ઘણાં
+સરળીકરણો કરી શકીએ. ખાસ કરીને મોટો ગણાંક અનંત
+હોય અને
+$0<\cardfont{b} < \cardfont{a}$ હોય ત્યારે
+$\cardexpo{\cardfont{a}}{\cardfont{b}}$નું મૂલ્ય
+$\cardfont{a}\leq \cardexpo{\cardfont{a}}{\cardfont{b}} \leq
+\cardsucc{\cardfont{a}}$ વચ્ચે બંધાય છે તે
+બતાવી શકીએ. પછી આ બેમાંથી કઈ શક્યતા મળે છે
+તે નક્કી કરતી ચોક્કસ શરતો આપી શકીએ
+(એટલે $\cardfont{a} =
+\cardexpo{\cardfont{a}}{\cardfont{b}}$ કે
+$\cardexpo{\cardfont{a}}{\cardfont{b}} =
+\cardsucc{\cardfont{a}}$).\footnote{આ શરત
+\emph{સહઅંતિમતા}થી નક્કી થાય છે.}
+\sourcecorrection{OLMD-142}{મૂળમાં માત્ર
+$\cardfont{b}<\cardfont{a}$ શરત છે, પરંતુ
+$\cardfont{b}=0$ હોય ત્યારે
+$\cardexpo{\cardfont{a}}{0}=1$ અને અનંત
+$\cardfont{a}$ માટે દર્શાવેલી નીચેની ઉચ્ચસીમા
+$\cardfont{a}\leq 1$ ખોટી પડે છે. તેથી આ
+મર્યાદિત દાવામાં $\cardfont{b}>0$ ઉમેર્યું છે.
+મોટો ગણાંક અનંત હોવાની સંદર્ભ-શરત પણ સ્પષ્ટ કરી છે;
+સાન્ત $\cardfont{a}=3$, $\cardfont{b}=2$ હોય તો
+$3^2=9>4=\cardsucc{3}$ મળે છે.}
+
+પરંતુ GCH એ \emph{પરિકલ્પના} છે,
+\emph{પ્રમેય} નથી. ખરેખર \citet{Godel1938}એ
+સાબિત કર્યું કે $\ZFC$ સુસંગત હોય, તો
+$\ZFC + \text{GCH}$ પણ સુસંગત છે. પણ પછી
+ખબર પડી કે $\ZFC$માં $\lnot$GCH પણ એ જ રીતે
+ઉમેરી શકીએ. ખરેખર GCHનો સૌથી સરળ બિનતુચ્છ
+\emph{દાખલો} જુઓ:
+
+\begin{defish}
+\emph{સાતત્યક પરિકલ્પના} (CH).
+$\aleph_1 = \beth_1$.
+\end{defish}
+
+\citet{Cohen1963}એ સાબિત કર્યું કે $\ZFC$
+સુસંગત હોય, તો $\ZFC + \lnot\text{CH}$ પણ
+સુસંગત છે. તેથી સાતત્યક પરિકલ્પના $\ZFC$થી
+સ્વતંત્ર છે.
+
+આ પરિકલ્પનાને સાતત્યક પરિકલ્પના કહે છે, કારણ કે
+``સાતત્યક'' એ વાસ્તવિક રેખા $\Real$નું બીજું નામ છે.
+\olref[opps]{continuumis2aleph0} કહે છે કે
+$\card{\Real} = \beth_1$. એટલે સાતત્યક
+પરિકલ્પનાનું વિધાન છે કે પ્રાકૃતિક સંખ્યાઓના ગણાંક
+$\aleph_0 = \beth_0$ અને સાતત્યકના ગણાંક
+$\beth_1$ વચ્ચે કોઈ ગણાંક નથી.
+
+$\ZFC$થી (G)CHની \emph{સ્વતંત્રતા} હોય, તો
+તેની \emph{સત્યતા} વિશે શું કહેવું? ઘણું કહી શકાય.
+ખરેખર ગણસિદ્ધાંતમાં તાજેતરનું ઘણું ફળદાયી કામ
+આ પ્રશ્નોની તપાસમાં થયું છે. પરંતુ બે ટૂંકા મુદ્દા
+અવશ્ય ભારપૂર્વક કહેવા જેવા છે.
+
+પહેલું: આ ઔપચારિક સ્વતંત્રતાનાં પરિણામોથી GCH
+કે CHનું સત્યમૂલ્ય \emph{અનિર્ધારિત} છે એવું
+\emph{તરત} અનુસરતું નથી. કદાચ આપણને સ્વાભાવિક
+લાગતી વધુ સ્વયંસિદ્ધિઓ ઉમેરવી પડે અને તે પ્રશ્નને
+એક રીતે કે બીજી રીતે નક્કી કરે. ગેડલે પોતે આ
+પ્રતિભાવ યોગ્ય હોવાનું સૂચવ્યું હતું.
+
+બીજું: $\ZFC$થી CHની સ્વતંત્રતા નિઃસંદેહ
+\emph{આશ્ચર્યજનક} છે, પણ શાબ્દિક અર્થમાં
+\emph{અવિશ્વસનીય} નથી. મુદ્દો એટલો જ છે કે
+$\ZFC$ જે કહે છે તેમાં ગણાંકથી તેના અનુગામી
+ગણાંક સુધી પહોંચવાની રીત ફક્ત ઘાતગણ લેવાની
+બળજબરીભરી રીત જ હોવી જરૂરી નથી.
+ %The operation of taking powersets moves us from one stage of the
+ %hierarchy to its successor stage (from $V_{\alpha}$ to
+ %$V_{\alpha+1}$).
+
+આ બે અવલોકનો પછી વધુ જાણવા માટે તમારે આ
+ચર્ચામાં રસ ધરાવતા વિવિધ તત્ત્વજ્ઞાનીઓ અને
+ગણિતજ્ઞો તરફ વળવું પડશે.\footnote{શરૂઆત માટે
+\citet[\S15.6]{Potter2004} વાંચી શકો છો.}
+
+\end{document}

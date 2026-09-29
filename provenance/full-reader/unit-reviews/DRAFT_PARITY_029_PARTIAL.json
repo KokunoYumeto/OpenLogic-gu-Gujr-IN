@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/29",
+  "checked_at_utc": "2026-09-26T23:29:24.697065+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0289–0290 state-only Robinson-Q chapter opening drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0289",
+      "source_path": "content/incompleteness/representability-in-q/representability-in-q.tex",
+      "source_sha256": "6715dd11caaa6921c31b7cc305ac46ff98763c3a924626870473543ab5551100",
+      "draft_path": "private-state\\work\\batch029_draft\\representability-in-q.tex",
+      "draft_sha256": "641a20b7d9a1b348c378acc4dbfaac4c3437c361a807e54a3955bbbc377d0bb1",
+      "aligned_blocks": 17,
+      "linguistic_blocks": 1,
+      "source_math_spans": 1,
+      "glossary_tokens": 0,
+      "structure_math_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0290",
+      "source_path": "content/incompleteness/representability-in-q/introduction.tex",
+      "source_sha256": "de4ec980306a8c0b24fe5389b6c5b090facca2bd20f23305425d70d6ecff4721",
+      "draft_path": "private-state\\work\\batch029_draft\\introduction.tex",
+      "draft_sha256": "c86226c3eacab9c6680d7e8fc746ad73c77f107aa98365573c95fd404caad4a7",
+      "aligned_blocks": 14,
+      "linguistic_blocks": 10,
+      "source_math_spans": 52,
+      "glossary_tokens": 5,
+      "structure_math_and_glossary_equal": true
+    }
+  ],
+  "status": "partial_draft_structure_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

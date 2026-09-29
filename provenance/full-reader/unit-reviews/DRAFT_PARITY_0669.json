@@ -1,0 +1,92 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0669",
+  "checked_at_utc": "2026-09-28T19:49:03.592844+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0669 N1 and N2 natural-deduction sequent correspondence; state-only draft",
+  "report": {
+    "unit_id": "OLP-0669",
+    "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+    "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+    "draft_path": "private-state\\work\\batch044_draft\\sequents.tex",
+    "draft_sha256": "ac04e585a3cad99c9884160c8cd62635f0bd303e93e26c7a3c40a8783c2b2815",
+    "aligned_blocks": 19,
+    "linguistic_blocks": 13,
+    "source_math_spans_correction_aware": 75,
+    "target_math_spans_after_corrections": 75,
+    "glossary_tokens": 21,
+    "source_correction_notes": [
+      "OLMD-237",
+      "OLMD-238",
+      "OLMD-239"
+    ],
+    "source_detector_ascii_tokens": 465,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "in \\Log{G1c} or \\Log{G1i}",
+        "in \\Log{N1c} or \\Log{N1i}"
+      ],
+      [
+        "\\Deduce$x:B, \\Gamma \\fCenter !C$",
+        "\\Deduce$x:!B, \\Gamma \\fCenter !C$"
+      ],
+      [
+        "assumption of~$\\delta'$; in the second",
+        "assumption of~$\\delta_1'$; in the second"
+      ],
+      [
+        "\\bottomAlignProof\n  \\AxiomC{$\\Discharge{!B}{x}$}\n  \\RightLabel{$\\delta_1$}\n  \\DeduceC{$!C$}",
+        "\\bottomAlignProof\n  \\AxiomC{$\\Discharge{!B}{x}$}\n  \\RightLabel{$\\delta_1'$}\n  \\DeduceC{$!C$}"
+      ],
+      [
+        "\\AxiomC{}\n  \\RightLabel{$\\delta_1$}\n  \\DeduceC{$!C$}",
+        "\\AxiomC{}\n  \\RightLabel{$\\delta_1'$}\n  \\DeduceC{$!C$}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "ધારણાઓ",
+          "આધારવાક્યો",
+          "ફલિતવાક્ય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ or }",
+        "target": "\\text{ અથવા }",
+        "count": 2
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0550",
+  "checked_at_utc": "2026-09-28T00:51:05.297654+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0550 well-orderings and well-order induction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0550",
+    "source_path": "content/set-theory/ordinals/wo.tex",
+    "source_sha256": "31ff99cf24d9c18e905626855bdb8c9bfeb7c2a5c2814387a6c36ccf54df0313",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-wo.tex",
+    "draft_sha256": "c101c7813ca2cfbc30ae058966bc0cd22c520f7d37e99e5f7d7e1f279af035df",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 48,
+    "target_math_spans_after_corrections": 48,
+    "glossary_tokens": 6,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 175,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\trees.tex",
+        "sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b",
+        "terms": [
+          "સુક્રમિત",
+          "લઘુતમ ઘટક"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\special-properties.tex",
+        "sha256": "c738b8f1648d9f4aa32cb4efcad04e3ec3fbf2251c735abf508754abab82fb84",
+        "terms": [
+          "તુલનાયુક્ત",
+          "અસ્વવાચક",
+          "અસંમિત",
+          "પરંપરિત"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\orders.tex",
+        "sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c",
+        "terms": [
+          "ક્રમ",
+          "આરંભિક ખંડ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\proof-theoretic-notions.tex",
+        "sha256": "42280456f97a71e0a4892c6bcd91ae14ea3411607ef9dcf12156c07abe7cf43e",
+        "terms": [
+          "પ્રતિવિધાન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Minimal and least are rendered distinctly as ન્યૂનતમ and લઘુતમ; published trees use લઘુતમ for least.",
+      "Asymmetric is not confused with antisymmetric (વિસંમિત) in published relation terminology.",
+      "The source's unusual capitalized Olref macro is retained byte-for-byte.",
+      "The published proof's compressed transitivity sentence is translated as written; no new formal proof step or theorem claim is silently inserted.",
+      "All four glossary element markers and the inline math prose translation remain parity-checked."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\Olref[sth][ordinals][idea]{sec}",
+        "count": 1,
+        "reason": "Source-specific capitalized reference macro with structural identifiers, retained exactly; no ordinary prose."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

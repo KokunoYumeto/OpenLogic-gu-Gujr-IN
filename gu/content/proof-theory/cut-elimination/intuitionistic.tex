@@ -1,0 +1,87 @@
+જો $!A \ident (!B \lif !C)$ હોય,
+તો~$\pi$નો અંત આ રીતે થાય છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B \lif !C, \Pi \fCenter \Lambda, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Pi \fCenter \Lambda$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Pi \fCenter \Lambda$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\Cut{}માં પૂરી થતી આ !!{proof} લો:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B \lif !C, \Pi \fCenter \Lambda, !B$
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
+\DisplayProof
+\]
+તેની કટ-!!{height}~$\pi$ કરતાં
+ઓછી છે. આગમન-પૂર્વધારણા
+$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$ની
+!!a{proof}~$\pi_1''$ આપે છે.
+હવે \Cut{}માં પૂરી થતી આ !!{proof} લો:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Pi \fCenter \Lambda$
+\RightLabel{\Cut}
+\BinaryInf$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-215}{મૂળ ત્રીજા વૃક્ષમાં સૂત્ર $B!$ લખાયું છે; સમગ્ર કિસ્સામાં તે $!B$ છે.}
+તેનો કટ-ક્રમ અને કટની !!{height}
+બંને~$\pi$ના કટ-ક્રમ અને
+કટની !!{height} કરતાં
+ઓછાં છે. તેથી આગમન-પૂર્વધારણાથી
+$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$ની
+\Log{G3c}-!!{proof}~$\pi_2'''$ મળે છે.
+\sourcecorrection{OLMD-216}{મૂળ આગમન-નિષ્કર્ષમાં $\Pi$ અને $\Lambda$ની વધારાની નકલો લખાઈ છે; ત્રીજા વૃક્ષનો નિષ્કર્ષ એક-એક નકલવાળો છે.}
+હવે \Cut{}માં પૂરી થતી આ !!{proof}
+પર આગમન-પૂર્વધારણા લગાવો:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Gamma, \Pi, \Pi \fCenter \Delta, \Delta, \Lambda, \Lambda$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-217}{મૂળ અંતિમ વૃક્ષનું જમણું આધારવિધાન અગાઉના આગમન-નિષ્કર્ષથી જુદું હતું; અહીં $\pi_2'''$નું એ જ સિક્વન્ટ મૂક્યું છે.}
+\sourcecorrection{OLMD-218}{મૂળ અંતિમ વૃક્ષનો નિષ્કર્ષ કટ-નિયમના સંદર્ભ-સંયોજન સાથે બંધબેસતો નથી; બંને બાજુની સંદર્ભ-નકલો સ્પષ્ટ કરી છે.}
+(તેનો કટ-ક્રમ $< \cutrank{\pi}$ છે.)
+\sourcecorrection{OLMD-219}{મૂળમાં અપરિભાષિત $\cutr{\pi}$ છે; અગાઉના વિભાગની વ્યાખ્યા પ્રમાણે $\cutrank{\pi}$ છે.}
+તેથી
+$\Gamma, \Gamma, \Pi, \Pi
+\fCenter \Delta, \Delta, \Lambda, \Lambda$ની
+!!a{proof} મળે છે.
+\sourcecorrection{OLMD-220}{મૂળ વર્ણનમાં ત્રણ $\Pi$, ત્રણ $\Lambda$ અને એક $\Delta$ હતાં; સુધારેલા કટ-વૃક્ષના નિષ્કર્ષમાં દરેક સંદર્ભની બે નકલો છે.}
+\olref[seq][inv]{prop:G3c-cont-adm}
+લગાવતાં
+$\Gamma, \Pi \fCenter \Delta, \Lambda$ની
+!!{proof}~$\pi'$ મળે છે.

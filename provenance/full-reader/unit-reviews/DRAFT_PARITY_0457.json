@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0457",
+  "checked_at_utc": "2026-09-27T12:53:26.666475+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0457 S5 decidability; state-only draft",
+  "report": {
+    "unit_id": "OLP-0457",
+    "source_path": "content/normal-modal-logic/filtrations/S5-decidable.tex",
+    "source_sha256": "f6f07c518a0df3bdcff427979834a918256085715f1353b5b35cc6dafe75d1b1",
+    "draft_path": "private-state\\work\\batch040_draft\\S5-decidable.tex",
+    "draft_sha256": "4ce32244c19cb37ff1233a4dea84648420e9b9af259e06d218d23553719f187f",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 12,
+    "target_math_spans_after_corrections": 12,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-047"
+    ],
+    "source_detector_ascii_tokens": 146,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "parallel_proof_and_universal_countermodel_enumeration_reviewed": true
+  },
+  "status": "draft_linguistic_math_and_decision_proof_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

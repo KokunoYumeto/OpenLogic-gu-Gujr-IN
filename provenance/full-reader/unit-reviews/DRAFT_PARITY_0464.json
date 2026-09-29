@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0464",
+  "checked_at_utc": "2026-09-27T18:33:27.186974+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0464 modal tableau soundness; state-only draft",
+  "report": {
+    "unit_id": "OLP-0464",
+    "source_path": "content/normal-modal-logic/tableaux/soundness.tex",
+    "source_sha256": "337485e1de3eaba7bdffdc6dddd9e9b4e0fe569bc9eaed470f7af27088492100",
+    "draft_path": "private-state\\work\\batch040_draft\\tableaux-soundness.tex",
+    "draft_sha256": "bdab601b1689cf4bbd069d4c0c5632f213a9b8448df1ea6153ca126461786590",
+    "aligned_blocks": 28,
+    "linguistic_blocks": 23,
+    "source_math_spans_correction_aware": 226,
+    "target_math_spans_after_corrections": 226,
+    "glossary_tokens": 37,
+    "source_correction_notes": [
+      "OLMD-052",
+      "OLMD-053",
+      "OLMD-054",
+      "OLMD-055",
+      "OLMD-056",
+      "OLMD-057",
+      "OLMD-058",
+      "OLMD-059"
+    ],
+    "source_detector_ascii_tokens": 977,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "four_modal_rules_and_branching_soundness_reviewed": true
+  },
+  "status": "draft_linguistic_math_and_proof_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/30-later",
+  "checked_at_utc": "2026-09-27T00:54:34.821508+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0305–0306 consistent extensions and computable axiomatizability state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0305",
+      "source_path": "content/incompleteness/theories-computability/extensions-of-q-not-decidable.tex",
+      "source_sha256": "d81d5befab583c377a6a51acfffda6e2c4db3ba39aef1852fda6a88443c8547b",
+      "draft_path": "private-state\\work\\batch030_draft\\extensions-of-q-not-decidable.tex",
+      "draft_sha256": "e49611b358362ba834dbc4697279fc03e7aad82fcacd0ca4a2f410716d1e1d94",
+      "aligned_blocks": 15,
+      "linguistic_blocks": 9,
+      "source_math_spans": 47,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 265,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0306",
+      "source_path": "content/incompleteness/theories-computability/computably-axiomatizable.tex",
+      "source_sha256": "cefc4b7c268be41dd32831fc2258102ef090194ef6bb7df234ad618b0ddda19d",
+      "draft_path": "private-state\\work\\batch030_draft\\computably-axiomatizable.tex",
+      "draft_sha256": "dae6471319cc43c2fcec555bd5f3662dfd956ea19e3e63ff4624c9007ec4ba74",
+      "aligned_blocks": 10,
+      "linguistic_blocks": 5,
+      "source_math_spans": 17,
+      "glossary_tokens": 7,
+      "source_correction_notes": [
+        "OLINC-040"
+      ],
+      "source_detector_ascii_tokens": 107,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    }
+  ],
+  "status": "partial_draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

@@ -1,11 +1,15 @@
-# Attribution and component licenses
+# મૂળનો શ્રેય અને ઘટકોના પરવાના
 
-The frozen English text and Gujarati translation are based on the Open Logic Project, revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`, under Creative Commons Attribution 4.0 International. The translation is an adaptation; it does not imply upstream endorsement. Upstream authorship and contributor notices remain in the pristine source tree.
+સ્થિર અંગ્રેજી પાઠ અને ગુજરાતી અનુવાદ Open Logic Projectના revision `9620cc73f9c8e0ad003c514a5d3748f29611c4c0` પર આધારિત છે. લખાણ Creative Commons Attribution 4.0 International હેઠળ છે. આ અનુવાદ અનુરૂપ રચના છે; તે મૂળ પ્રોજેક્ટની મંજૂરી કે સમર્થન સૂચવતો નથી. મૂળ લેખકો અને સહયોગીઓનો શ્રેય અપરિવર્તિત સ્રોતમાં જાળવ્યો છે.
 
-The root license covers the Open Logic text and this translation. It does not erase upstream asset exceptions. In particular, upstream cover-illustration notices specify CC BY-NC 4.0; these notices remain with the source and those illustrations are not used on this edition's cover. Other component notices remain effective as distributed upstream.
+મુખ્ય પરવાનો Open Logicના પાઠ અને આ અનુવાદને લાગુ પડે છે. મૂળ ચિત્રો અને અન્ય ઘટકોની અલગ શરતો પણ લાગુ રહે છે. ખાસ કરીને મૂળ મુખપૃષ્ઠનાં ચિત્રોની નોંધ CC BY-NC 4.0 કહે છે; તે નોંધો સ્રોતમાં યથાવત્ છે. તે ચિત્રો આ ગુજરાતી આવૃત્તિના મુખપૃષ્ઠ પર વપરાયાં નથી. અન્ય ઘટકોની મૂળ નોંધો પણ યથાવત્ રાખી છે.
 
-The first chapter's three diagrams derive from upstream `assets/diagrams/union.tikz`, `intersection.tikz`, and `difference.tikz`. Their original files are included. HTML SVGs preserve the paths and colors; translated captions identify their mathematical content.
+પ્રથમ પ્રકરણની ત્રણ આકૃતિઓ મૂળની `assets/diagrams/union.tikz`, `intersection.tikz` અને `difference.tikz` પરથી છે. તેમની મૂળ ફાઇલો સામેલ છે. અગાઉના HTML વાચકોમાં SVG આકૃતિઓના પથ અને રંગો જાળવ્યા છે અને ગુજરાતી વર્ણનો તેમનો ગણિતીય અર્થ આપે છે. સંપૂર્ણ PDFનાં અન્ય ચિત્રો અને રેખાંકનો પણ તેમના સ્રોત સાથે જાળવ્યાં છે.
 
-Noto Sans Gujarati and the generated static font instances retain the SIL Open Font License in `fonts/OFL.txt`, with provenance in `fonts/FONT_PROVENANCE.json`.
+Noto Sans Gujarati અને તેના સ્થિર ફોન્ટરૂપો માટેનો SIL Open Font License `fonts/OFL.txt`માં અને મૂળની નોંધ `fonts/FONT_PROVENANCE.json`માં છે. ગ્રંથસૂચિ માટે વપરાયેલા Latin Modernના નિયમિત, ત્રાંસા, ઘાટા અને ઘાટા-ત્રાંસા ફોન્ટ તથા GUST Font License `fonts/latin-modern`માં છે. ફોન્ટોના મૂળ કાનૂની પરવાના બદલ્યા નથી.
 
-Third-party Gujarati canon sources are cited as language evidence. Their original PDFs, HTML captures and full extracts are local research materials and are not included in this public edition. Citation and short term attestation do not assert permission to redistribute those sources.
+ફોટોગ્રાફોની શરતો ફોટોગ્રાફ પ્રમાણે જુદી છે. Open Logic Projectને મળેલી પરવાનગી તેના પાઠ પરથી બનેલી બિનવાણિજ્યિક શિક્ષણ સામગ્રીમાં આ ચિત્રો સામેલ કરવા માટે છે. સંપૂર્ણ મૂળ શ્રેય-પાઠ ગ્રંથના ફોટોગ્રાફ-શ્રેય વિભાગમાં અને દરેક `-credits.tex` ફાઇલમાં છે. અન્ય ઉપયોગ, જેમાં વાણિજ્યિક ઉપયોગ પણ આવે છે, માટે સંબંધિત મૂળ અથવા હકધારકની પરવાનગી જોઈએ. ચોક્કસ મૂળ શરતો `upstream/assets/photos/README.md`માં યથાવત્ છે.
+
+અન્ય પ્રકાશકોના ગુજરાતી કૅનન ગ્રંથો ભાષાના સાક્ષ્ય તરીકે ઉલ્લેખાય છે. તેમના મૂળ PDF, HTML નકલો અને સંપૂર્ણ ઉતારા સ્થાનિક સંશોધન સામગ્રી છે; આ જાહેર આવૃત્તિમાં સામેલ નથી. ઉલ્લેખ અને ટૂંકા શબ્દ-પ્રમાણથી તે મૂળ ગ્રંથો ફરી વહેંચવાની પરવાનગી હોવાનો દાવો થતો નથી.
+
+આ ગુજરાતી પરવાના-સમજૂતી OpenAI Codex — GPT-6 Sol, Ultra effort દ્વારા મૂળ પરવાના-નોંધ અને ફોટોગ્રાફની ચોક્કસ શરતો સાથે સરખાવીને લખાઈ છે. તે મૂળ કાનૂની પાઠનું સ્થાન લેતી નથી. અનુવાદના અન્ય ભાગોમાં GPT-5.6 Sol અને GPT-6 Sol, Ultra effort વપરાયા છે; સ્વતંત્ર માનવીય પ્રમાણનનો દાવો નથી.

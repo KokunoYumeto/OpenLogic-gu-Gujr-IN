@@ -1,0 +1,3206 @@
+% આ ભાગનો પૂર્ણ સંપાદનીય પાઠ છે. શૈલી, ફોન્ટ, ચિત્રો અને પ્રકરણસંદર્ભ માટે સંપૂર્ણ સ્રોત ZIP તથા reader/full-reader.tex જુઓ. આ એકલી સ્વતંત્ર કમ્પાઇલ થતી મુખ્ય ફાઇલ નથી.
+
+% BEGIN OLP-0252
+\olpart{tur}{ટ્યુરિંગ મશીનો}
+\phantomsection\label{guunit:OLP-0252}
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0253
+\olchapter{tur}{mac}{ટ્યુરિંગ મશીનની સંગણનાઓ}
+\olchapterid{tur}{mac}
+\phantomsection\label{guunit:OLP-0253}
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0254
+\olfileid{tur}{mac}{int}
+\olsection{પરિચય}
+\phantomsection\label{guunit:OLP-0254}
+
+
+ઉદાહરણ તરીકે $\Nat$થી $\Nat$માં જતું કોઈ વિધેય \emph{સંગણનીય}
+હોવાનો અર્થ શું? શરૂઆતના જવાબોમાંનો એક, અને સૌથી જાણીતો જવાબ,
+એ છે કે કોઈ વિધેય ટ્યુરિંગ મશીન વડે ગણી શકાય તો તે સંગણનીય છે.
+એલન ટ્યુરિંગે 1936માં આ કલ્પના રજૂ કરી. ટ્યુરિંગ મશીન
+\emph{સંગણનના નિદર્શ}નું એક ઉદાહરણ છે---એ ``સંગણન પ્રક્રિયા''નો
+વિચાર ગણિતીય રીતે ચોક્કસ વ્યાખ્યાયિત કરવાની રીત છે. આ વિચારનો
+ચોક્કસ અર્થ શું છે તે ચર્ચાનો વિષય છે, પરંતુ ટ્યુરિંગ મશીનો
+સંગણન પ્રક્રિયા નિર્દિષ્ટ કરવાની એક રીત છે એ બાબતે વ્યાપક સહમતિ
+છે. ``ટ્યુરિંગ મશીન'' શબ્દથી ચાલતા ભાગો ધરાવતા ભૌતિક મશીનની
+છબી ઊભી થાય છે, પરંતુ કડક અર્થમાં ટ્યુરિંગ મશીન શુદ્ધ ગણિતીય
+રચના છે; તેથી તે સંગણન પ્રક્રિયાના વિચારનું આદર્શીકરણ કરે છે.
+ઉદાહરણ તરીકે, આપણે ટ્યુરિંગ મશીનને લાગતા સમય કે સ્મૃતિની
+જરૂરિયાત પર કોઈ મર્યાદા મૂકતા નથી: સંગણના માટે બ્રહ્માંડના
+પરમાણુઓની સંખ્યા કરતાં વધુ સંગ્રહસ્થાન અથવા વધુ પગલાં જોઈએ
+તોપણ ટ્યુરિંગ મશીન તે ગણતરી કરી શકે છે.
+
+\begin{explain}
+ટ્યુરિંગ મશીનને કોઈ વિશિષ્ટ પ્રકારના કલ્પિત ઉપકરણના પ્રોગ્રામ
+તરીકે સમજવું કદાચ સૌથી યોગ્ય છે. આ ઉપકરણમાં એક \emph{ટેપ} અને
+એક \emph{વાંચન-લેખન હેડ} હોય છે. ટ્યુરિંગ મશીનની આપણી આવૃત્તિમાં
+ટેપ એક દિશામાં (જમણી તરફ) અનંત હોય છે અને \emph{ખાનાં}માં
+વહેંચાયેલી હોય છે. દરેક ખાનામાં મર્યાદિત \emph{વર્ણમાળા}માંથી
+એક પ્રતીક હોઈ શકે છે. આવી વર્ણમાળામાં સાન્ત સંખ્યાનાં ગમે તેટલાં જુદાં પ્રતીકો
+હોઈ શકે, પરંતુ આપણે મુખ્યત્વે ત્રણથી કામ ચલાવીશું:
+$\TMendtape$, $\TMblank$ અને $\TMstroke$. ઉપકરણ શરૂ થાય ત્યારે
+ટેપ ખાલી હોય છે (એટલે દરેક ખાનામાં $\TMblank$ હોય છે), સિવાય કે
+સૌથી ડાબા ખાનામાં $\TMendtape$ અને સાન્ત સંખ્યામાં અન્ય ખાનાંમાં
+\emph{ઇનપુટ} હોય છે. કોઈ પણ સમયે ઉપકરણ સાન્ત સંખ્યાની
+\emph{અવસ્થાઓ}માંથી એક અવસ્થામાં હોય છે. શરૂઆતમાં હેડ સૌથી
+ડાબું ખાનું વાંચે છે અને ઉપકરણ નિર્દિષ્ટ \emph{પ્રારંભિક અવસ્થા}માં
+હોય છે. ઉપકરણના ચાલવાના દરેક પગલે, હાલમાં હેડ જે ખાનું વાંચે
+છે તેની સામગ્રી અને ઉપકરણની અવસ્થા મળીને, ટ્યુરિંગ મશીનના
+પ્રોગ્રામ મુજબ આગળ શું થશે તે નક્કી કરે છે. ટ્યુરિંગ મશીનનો
+પ્રોગ્રામ એક આંશિક વિધેય વડે અપાય છે: તે અવસ્થા~$q$ અને
+પ્રતીક~$\sigma$ ઇનપુટ તરીકે લે છે અને ત્રિક
+$\tuple{q', \sigma', D}$ આપે છે. ઉપકરણ અવસ્થા~$q$માં હોય અને
+પ્રતીક~$\sigma$ વાંચે ત્યારે તે હાલના ખાનામાંનું પ્રતીક
+$\sigma'$થી બદલે છે; $D$ અનુક્રમે $\TMleft$, $\TMright$ કે
+$\TMstay$ હોય તે મુજબ હેડ ડાબે, જમણે કે એ જ સ્થાને જાય છે;
+અને ઉપકરણ અવસ્થા~$q'$માં પ્રવેશે છે.
+
+ઉદાહરણ તરીકે, \olref{fig:tm}માં દર્શાવેલી સ્થિતિ જુઓ.
+\begin{figure}
+  \olasset{\olpath/assets/diagrams/turing-machine.tikz}
+  \caption{પોતાનો પ્રોગ્રામ ચલાવતું ટ્યુરિંગ મશીન.}
+  \ollabel{fig:tm}
+\end{figure}
+ટ્યુરિંગ મશીનની ટેપનો દેખાતો ભાગ સૌથી ડાબા ખાનામાં ટેપના
+છેડાનું પ્રતીક~$\TMendtape$ ધરાવે છે. ત્યાર પછી ત્રણ $1$,
+એક $0$ અને બીજા ચાર $1$ છે. હેડ ડાબેથી ત્રીજું ખાનું વાંચે
+છે, જેમાં $1$ છે, અને મશીન અવસ્થા~$q_1$માં છે---અપણે કહીએ
+કે ``મશીન અવસ્થા~$q_1$માં $1$ વાંચે છે.'' જો ટ્યુરિંગ મશીનનો
+પ્રોગ્રામ ઇનપુટ~$\tuple{q_1, 1}$ માટે ત્રિક
+$\tuple{q_2, 0, \TMstay}$ આપે, તો મશીન હવે ત્રીજા ખાનાનો
+$1$ બદલીને $0$ લખશે, વાંચન-લેખન હેડને એ જ સ્થાને રાખશે અને
+અવસ્થા~$q_2$માં જશે. પછી જો પ્રોગ્રામ ઇનપુટ~$\tuple{q_2, 0}$
+માટે $\tuple{q_3, 0, \TMright}$ આપે, તો મશીન હવે તે $0$ પર
+ફરી $0$ લખશે (એટલે હેડની નીચેની ટેપની સામગ્રી હકીકતમાં
+બદલાશે નહીં), એક ખાનું જમણે ખસશે અને અવસ્થા~$q_3$માં
+પ્રવેશશે. આ રીતે આગળ ચાલે છે.
+
+મશીન કોઈ અવસ્થા~$q_n$ અને પ્રતીક~$\sigma$ની એવી જોડી પાસે
+પહોંચે કે જેના માટે $\tuple{q_n, \sigma}$ને અનુરૂપ કોઈ સૂચના
+ન હોય---એટલે ઇનપુટ $\tuple{q_n,\sigma}$ પર સંક્રમણ વિધેય
+અવ્યાખ્યાયિત હોય---
+ત્યારે આપણે કહીએ છીએ કે મશીન \emph{થંભે} છે. બીજા શબ્દોમાં,
+મશીન પાસે કરવા માટે કોઈ સૂચના રહેતી નથી અને તે બિંદુએ તેની
+ક્રિયા બંધ થાય છે. થંભવું ક્યારેક વિશિષ્ટ થંભવાની
+અવસ્થા~$h$થી દર્શાવાય છે. આ બાબત આગળ વધુ વિગતે બતાવીશું.
+\end{explain}
+
+\begin{digress}
+ટ્યુરિંગના ``સંગણનીય સંખ્યાઓ અંગે'' (``On computable numbers'') લેખની
+વિશેષતા એ છે કે તેમાં
+માત્ર ઔપચારિક વ્યાખ્યા જ નથી, પરંતુ એ વ્યાખ્યા સંગણનીયતાની
+સહજ કલ્પનાને પકડે છે એવી દલીલ પણ છે. વ્યાખ્યામાંથી એ સ્પષ્ટ
+થવું જોઈએ કે ટ્યુરિંગ મશીન વડે સંગણનીય દરેક વિધેય સહજ અર્થમાં
+સંગણનીય છે. ટ્યુરિંગે ઊલટી દિશા માટે---એટલે જેને આપણે
+સ્વાભાવિક રીતે સંગણનીય ગણીએ એવું દરેક વિધેય આવા મશીન વડે
+ગણી શકાય છે તે માટે---ત્રણ પ્રકારની દલીલો આપી. તેમના પોતાના
+શબ્દોમાં તે આ પ્રમાણે છે:
+\begin{enumerate}
+\item સહજ સમજને સીધી અપીલ.
+\item બે વ્યાખ્યાઓ સમકક્ષ છે તેની સાબિતી (નવી વ્યાખ્યા સહજ
+  સમજને વધુ ગમે એવી હોય ત્યારે).
+\item સંગણનીય સંખ્યાઓના મોટા વર્ગોનાં ઉદાહરણો આપવાં.
+\end{enumerate}
+આપણો હેતુ સંગણનીયતાને ``સૈદ્ધાંતિક રીતે'' વ્યાખ્યાયિત કરવાનો
+છે, એટલે સમય અને સ્થાનની વ્યવહારુ મર્યાદાઓ ધ્યાનમાં લીધા
+વિના. અલબત્ત, સંગણનીયતાની વ્યાપકતમ વ્યાખ્યા હાથવગી થયા
+પછી મર્યાદિત સંસાધનો સાથેના સંગણનનો પણ અભ્યાસ કરી શકાય;
+તે ``સંગણકીય જટિલતા'' તરીકે ઓળખાતા વિષયનું કેન્દ્ર છે.
+\end{digress}
+
+\begin{history}
+એલન ટ્યુરિંગે 1936માં ટ્યુરિંગ મશીનોની શોધ કરી. તે સમયે તેમનો
+રસ પ્રથમ ક્રમના તર્કશાસ્ત્રની નિર્ણેયતામાં હતો, છતાં તેમના
+લેખને કમ્પ્યુટરની રચનાના પાયા અંગેનો નિર્ણાયક લેખ કહેવામાં
+આવ્યો છે. તેમાં ટ્યુરિંગ સંગણનીય વાસ્તવિક સંખ્યાઓ પર ધ્યાન
+આપે છે, એટલે એવી વાસ્તવિક સંખ્યાઓ કે જેના દશાંશ વિસ્તરણો
+ગણી શકાય; પરંતુ તેઓ નોંધે છે કે પ્રાકૃતિક સંખ્યાઓ પરનાં
+સંગણનીય વિધેયો વગેરે માટે પણ આ વિચારોને અનુકૂળ બનાવવાનું
+અઘરું નથી. નોંધો કે પ્રથમ કાર્યરત સામાન્ય હેતુનો કમ્પ્યુટર
+1941માં બનાવાયો તેના પૂરા પાંચ વર્ષ પહેલાંની આ વાત છે
+(જર્મન કોનરાડ ઝૂઝેએ પોતાના માતાપિતાના ઘરના બેઠકખંડમાં તે
+બનાવ્યો હતો); બ્લેચલી પાર્કમાં ટ્યુરિંગ અને તેમના સાથીઓએ
+સંકેત ઉકેલતું કોલોસસ બનાવ્યું (1943) તેના સાત વર્ષ પહેલાં;
+અમેરિકન ENIAC (1945)ના નવ વર્ષ પહેલાં; મૅન્ચેસ્ટરમાં પ્રથમ
+બ્રિટિશ સામાન્ય હેતુનો કમ્પ્યુટર---Manchester Small-Scale
+Experimental Machine---બન્યો (1948) તેના બાર વર્ષ પહેલાં;
+અને અમેરિકનોએ BINAC (1949)નું પ્રથમ પરીક્ષણ કર્યું તેના તેર
+વર્ષ પહેલાં. Manchester SSEM પ્રથમ સંગ્રહિત-પ્રોગ્રામવાળો
+કમ્પ્યુટર હતો---અગાઉનાં મશીનોને દરેક નવા કામ માટે હાથેથી
+ફરી તાર જોડવા પડતા હતા.
+\end{history}
+% END OLP-0254
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0255
+\olfileid{tur}{mac}{rep}
+\olsection{ટ્યુરિંગ મશીનોનું નિરૂપણ}
+\phantomsection\label{guunit:OLP-0255}
+
+
+\begin{explain}
+ટ્યુરિંગ મશીનોને \emph{અવસ્થા-આલેખો} વડે ચિત્રરૂપે દર્શાવી
+શકાય છે. આવા આલેખોમાં તીરોથી જોડાયેલાં અવસ્થાનાં ખાનાં હોય
+છે. દરેક અવસ્થાનું ખાનું મશીનની એક અવસ્થા દર્શાવે છે. દરેક
+તીર તે અવસ્થામાંથી અમલમાં મૂકી શકાય એવી એક સૂચના દર્શાવે છે;
+તે સૂચનાની વિગતો સંબંધિત તીરની ઉપર અથવા નીચે લખેલી હોય
+છે. નીચેના મશીનમાં માત્ર બે આંતરિક અવસ્થાઓ, $q_0$ અને
+$q_1$, તથા એક સૂચના છે:
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]   (A)              {$q_0$};
+  \node[state]   (B) [right of=A] {$q_1$};
+
+  \path (A) edge  node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (B);
+\end{tikzpicture}
+\]
+યાદ કરો કે ટ્યુરિંગ મશીન પાસે વાંચન-લેખન હેડ અને તેના પર
+ઇનપુટ લખેલી ટેપ હોય છે. આ સૂચનાનો અર્થ છે: \emph{અવસ્થા
+$q_0$માં $\TMblank$ વાંચતા હો, તો $\TMstroke$ લખો, જમણે ખસો
+અને અવસ્થા $q_1$માં જાઓ}. આ વાત સંક્રમણ વિધેયમાં
+$\tuple{q_0, \TMblank}$ને $\tuple{q_1, \TMstroke,
+\TMright}$ સાથે જોડવા સમકક્ષ છે.
+\end{explain}
+
+\begin{ex}
+\emph{સમ મશીન}: ટેપ પર $\TMstroke$ની સંખ્યા સમ હોય ત્યારે
+અને ત્યારે જ નીચેનું ટ્યુરિંગ મશીન થંભે છે (એવી ધારણા હેઠળ કે
+ટેપ પરના બધા $\TMstroke$ પ્રથમ $\TMblank$ પહેલાં આવે છે).
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+
+આ અવસ્થા-આલેખને નીચેનું સંક્રમણ વિધેય અનુરૂપ છે:
+\begin{align*}
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}
+\end{align*}
+\end{ex}
+
+\begin{explain}
+ઉપરનું મશીન ઇનપુટમાં સ્ટ્રોકની સંખ્યા સમ હોય ત્યારે
+જ થંભે છે. નહીંતર મશીન (સૈદ્ધાંતિક રીતે) અનંત સમય સુધી
+ચાલુ રહે છે. કોઈ પણ મશીન અને ઇનપુટ માટે આઉટપુટ નક્કી
+કરવા મશીનની \emph{સંરૂપણો}નો ક્રમ અનુસરવો શક્ય છે.
+સંરૂપણની ઔપચારિક વ્યાખ્યા આપણે આગળ આપીશું. હાલ પૂરતું,
+મશીન ચાલે ત્યારે જુદા જુદા સમયે તેની સ્થિતિ દર્શાવતા આલેખોની
+શ્રેણી તરીકે સંરૂપણોને સહજ રીતે સમજી શકાય. સંરૂપણમાં ટેપની
+સામગ્રી, મશીનની અવસ્થા અને વાંચન-લેખન હેડનું સ્થાન દેખાય છે.
+
+ચાર $\TMstroke$નું ઇનપુટ આપીએ ત્યારે સમ મશીનનાં સંરૂપણો
+ક્રમશઃ જોઈએ. આ કિસ્સામાં મશીન થંભશે એવી આપણી અપેક્ષા
+છે. પછી તેને ત્રણ $\TMstroke$નું ઇનપુટ આપીશું; ત્યારે તે
+હંમેશાં ચાલતું રહેશે.
+
+મશીન અવસ્થા~$q_0$માં શરૂ થાય છે અને સૌથી ડાબો
+$\TMstroke$ વાંચે છે. મશીનની આ પ્રારંભિક સ્થિતિ આ રીતે
+દર્શાવી શકાય:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMstroke \TMblank \ldots
+\]
+ઉપરનું સંરૂપણ સમજવું સહેલું છે. મશીન પ્રથમ અવસ્થામાં
+સૌથી ડાબો $\TMstroke$ વાંચતાં શરૂ થાય છે. પ્રથમ
+$\TMstroke$ને અવસ્થાના નામનો નિમ્નસૂચક લગાવીને આ દર્શાવ્યું
+છે. આ સમયે લાગુ પડતી સૂચના
+$\delta(q_0, \TMstroke) = \tuple{q_1, \TMstroke, \TMright}$
+છે. તેથી મશીન ટેપ પર જમણે ખસે છે અને અવસ્થા~$q_1$માં
+જાય છે.
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMstroke \TMblank \ldots
+\]
+હવે મશીન અવસ્થા~$q_1$માં $\TMstroke$ વાંચતું હોવાથી,
+આપણે સૂચના $\delta(q_1, \TMstroke) = \tuple{q_0,
+  \TMstroke, \TMright}$ને ``અનુસરવી'' પડશે. પરિણામે આ
+સંરૂપણ મળે છે:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMstroke \TMblank \ldots
+\]
+મશીન આગળ ચાલે છે ત્યારે આ જ ક્રમમાં નિયમો ફરી લાગુ પડે
+છે અને નીચેના બે સંરૂપણો મળે છે:
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke_1 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMstroke \TMblank_0 \ldots
+\]
+હવે મશીન અવસ્થા~$q_0$માં $\TMblank$ વાંચે છે. સંક્રમણ
+આલેખ પરથી સહેલાઈથી દેખાય છે કે હવે અમલમાં મૂકવા માટે કોઈ
+સૂચના નથી, એટલે મશીન થંભી ગયું છે. તેનો અર્થ છે કે
+ઇનપુટ સ્વીકારાયું છે.
+
+હવે ધારો કે મશીનને ત્રણ $\TMstroke$નું ઇનપુટ આપીએ.
+ટેપ પરના ઇનપુટમાં નાનો તફાવત હોવા છતાં એ જ સૂચનાઓ લાગુ
+પડતી હોવાથી શરૂઆતનાં કેટલાંક સંરૂપણો સરખાં હોય છે:
+\[
+\TMendtape \TMstroke_0 \TMstroke \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke_1 \TMstroke \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke_0 \TMblank \ldots
+\]
+\[
+\TMendtape \TMstroke \TMstroke \TMstroke \TMblank_1 \ldots
+\]
+મશીન હવે બધા $\TMstroke$ વટાવી ચૂક્યું છે અને
+અવસ્થા~$q_1$માં $\TMblank$ વાંચે છે. આલેખમાં બતાવ્યા
+પ્રમાણે, અહીં $\delta(q_1, \TMblank) =\tuple{q_1,
+\TMblank, \TMright}$ સ્વરૂપની સૂચના છે. ટેપ જમણી તરફ
+અનંત સુધી $\TMblank$થી ભરેલી હોવાથી, મશીન
+અવસ્થા~$q_1$માં રહીને વધુ ને વધુ જમણે ખસતું આ સૂચના
+\emph{હંમેશાં} ચલાવશે. મશીન ક્યારેય થંભશે નહીં અને ઇનપુટ
+સ્વીકારશે નહીં.
+\end{explain}
+
+\begin{explain}
+દરેક મશીન થંભતું નથી, એ નોંધવું અગત્યનું છે. થંભવાનો અર્થ
+અમલમાં મૂકવા માટેની સૂચનાઓ ખૂટી જવી એવો હોય, તો દરેક
+અવસ્થામાં દરેક પ્રતીક માટે બહાર જતું તીર છે તેની ખાતરી
+કરીને ક્યારેય ન થંભે એવું મશીન બનાવી શકાય. અવસ્થા~$q_0$માં
+$\TMblank$ વાંચવા માટેની સૂચના ઉમેરીને સમ મશીનને અનંત સમય
+સુધી ચાલે એવું બનાવી શકાય.
+\end{explain}
+
+\begin{ex}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path
+  (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+      edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (A)
+  (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+      edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+ટ્યુરિંગ મશીનો દર્શાવવાની બીજી રીત \emph{મશીન-કોષ્ટકો}
+છે. કોષ્ટકની $x$-અક્ષ પર ટેપની વર્ણમાળા અને $y$-અક્ષ પર
+મશીનની અવસ્થાઓનો ગણ દર્શાવાય છે. દરેક અવસ્થા અને પ્રતીકના
+છેદે સૂચનાનો બાકીનો ભાગ---નવી અવસ્થા, નવું પ્રતીક અને ખસવાની
+દિશા---લખાય છે. કઈ અવસ્થામાં અને કયું પ્રતીક વાંચતાં મશીન
+થંભે છે તે કોષ્ટકથી સહેલાઈથી જાણી શકાય છે. કોષ્ટકમાં કોઈ
+ખાનું ખાલી હોય, તો ત્યાં મશીન થંભી શકે છે. અવસ્થા-આલેખો
+અને સૂચનાના ગણમાં મશીન ક્યાં થંભે છે તે હંમેશાં તરત દેખાતું
+નથી; મશીન-કોષ્ટકમાં ખાલી ખાનાં જોઈને આ બિંદુઓ તરત ઓળખી
+શકાય છે.
+\end{explain}
+
+\begin{ex}
+સમ મશીનનું મશીન-કોષ્ટક આ છે:
+\[
+\centering
+\begin{tabular}{lllll}
+\cline{2-4}
+\multicolumn{1}{l|}{}      & \multicolumn{1}{c|}{$\TMblank$}
+& \multicolumn{1}{c|}{$\TMstroke$}     & \multicolumn{1}{c|}{$\TMendtape$}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_0$} & \multicolumn{1}{l|}{}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_1}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{$q_1$} & \multicolumn{1}{l|}{\TMtrans{\TMblank}{q_1}{\TMright}}
+& \multicolumn{1}{l|}{\TMtrans{\TMstroke}{q_0}{\TMright}} &
+\multicolumn{1}{l|}{\phantom{\TMtrans{\TMstroke}{q_1}{\TMright}}} &  \\ \cline{1-4}
+\end{tabular}
+\]
+જેમ જોઈ શકાય છે, મશીન અવસ્થા~$q_0$માં $\TMblank$
+વાંચે ત્યારે થંભે છે.
+\end{ex}
+
+\begin{explain}
+અત્યાર સુધી આપણે ઇનપુટ વાંચીને સ્વીકારતાં મશીનો જ જોયાં
+છે. પરંતુ ટ્યુરિંગ મશીન વાંચી પણ શકે છે અને લખી પણ શકે
+છે. આવા મશીનનું એક ઉદાહરણ (જોકે આવાં ઘણાં ઉદાહરણો છે)
+\emph{બમણું કરનાર મશીન} છે. ટેપ પર $n$ $\TMstroke$નો
+એક સળંગ સમૂહ આપીને શરૂ કરીએ, તો તે $2n$ $\TMstroke$નો
+સમૂહ આઉટપુટ તરીકે આપે છે.
+\end{explain}
+
+\begin{ex}
+  \ollabel{ex:doubler} બમણું કરનાર મશીન બનાવતાં પહેલાં સમસ્યા
+  ઉકેલવાની \emph{રીત} નક્કી કરવી જરૂરી છે. મશીન (આપણે તેને
+  જેમ ઘડ્યું છે તે મુજબ) કેટલા $\TMstroke$ વાંચ્યા છે તે યાદ
+  રાખી શકતું નથી. તેથી ટેપ પરના બધા $\TMstroke$નો હિસાબ
+  રાખવાની રીત શોધવી પડશે. એક રીત ઇનપુટને આઉટપુટથી
+  એક $\TMblank$ વડે અલગ કરવાની છે. પછી મશીન ઇનપુટમાંથી
+  પ્રથમ $\TMstroke$ ભૂંસી શકે, બાકીના ઇનપુટને વટાવી શકે,
+  એક $\TMblank$ છોડી શકે અને બે નવા $\TMstroke$ લખી
+  શકે. ત્યાર પછી મશીન પાછું જઈ ઇનપુટનો બીજો $\TMstroke$
+  શોધશે અને તેને પણ બમણો કરશે. ઇનપુટના દરેક એક
+  $\TMstroke$ માટે તે આઉટપુટમાં બે $\TMstroke$ લખશે.
+  મશીન આગળ વધે તેમ ઇનપુટ ભૂંસવાથી કોઈ $\TMstroke$ છૂટી
+  ન જાય કે બે વાર બમણો ન થાય તેની ખાતરી કરી શકાય. આખું
+  ઇનપુટ ભૂંસાઈ જાય ત્યારે ટેપ પર $2n$ $\TMstroke$ બાકી
+  હશે. મળેલા ટ્યુરિંગ મશીનનો અવસ્થા-આલેખ
+  \olref{fig:doubler}માં દર્શાવ્યો છે.
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (1)              {$q_0$};
+  \node[state]         (2) [right of=1] {$q_1$};
+  \node[state]         (3) [right of=2] {$q_2$};
+  \node[state]         (4) [below of=3] {$q_3$};
+  \node[state]         (5) [left of=4]  {$q_4$};
+  \node[state]         (6) [left of=5]  {$q_5$};
+
+  \path (1) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (1);
+\end{tikzpicture}
+\]
+\caption{બમણું કરનાર મશીન}
+\ollabel{fig:doubler}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+કોઈ પણ એક ઇનપુટ પસંદ કરો અને \olref[tur][mac][rep]{ex:doubler}માંના
+બમણું કરનાર મશીનનાં સંરૂપણોનો ક્રમ અનુસરો.
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ વર્ણમાળા ધરાવતું એવું
+ટ્યુરિંગ મશીન રચો કે જેમાં $A$ અને $B$ની સંખ્યા સરખી
+હોય \emph{અને} બધા $A$, બધા $B$ પહેલાં આવતા હોય,
+એવી $A$ અને $B$ની કોઈ પણ શબ્દમાળા તે સ્વીકારે,
+એટલે તેના પર થંભે; અને $A$ની સંખ્યા $B$ની સંખ્યા
+જેટલી ન હોય અથવા બધા $A$ બધા $B$ પહેલાં ન આવતા
+હોય એવી શબ્દમાળા તે નકારે, એટલે તેના પર ન થંભે.
+(દાખલા તરીકે, મશીને $AABB$ અને $AAABBB$ સ્વીકારવાં,
+પણ $AAB$ અને $AABBAABB$ બંને નકારવાં જોઈએ.)
+\end{prob}
+
+\begin{prob}
+$\{\TMendtape,\TMblank, A, B\}$ વર્ણમાળા ધરાવતું એવું
+ટ્યુરિંગ મશીન રચો કે જે $A$ અને $B$ની કોઈ પણ
+શબ્દમાળા~$\alpha$ ઇનપુટ તરીકે લે અને તેની નકલ કરીને
+$\alpha\alpha$ સ્વરૂપનું આઉટપુટ આપે. (દાખલા તરીકે,
+ઇનપુટ $ABBA$નું આઉટપુટ $ABBAABBA$ થવું જોઈએ.)
+\end{prob}
+
+\begin{prob}
+\emph{વર્ણક્રમમાં?:} $\{\TMendtape,\TMblank, A, B\}$ વર્ણમાળા
+ધરાવતું એવું ટ્યુરિંગ મશીન રચો કે જેને $A$ અને $B$નો
+સાન્ત અનુક્રમ ઇનપુટ તરીકે આપતાં બધા $A$, બધા $B$ની
+ડાબે આવે છે કે નહીં તે તપાસે. મશીને ઇનપુટ શબ્દમાળા ટેપ
+પર જ રાખવી જોઈએ અને શબ્દમાળા ``વર્ણક્રમમાં'' હોય તો
+થંભવું, નહીંતર હંમેશાં ચક્રમાં ચાલવું જોઈએ.
+\end{prob}
+
+\begin{prob}
+\emph{વર્ણક્રમમાં ગોઠવનાર:} $\{\TMendtape,\TMblank, A, B\}$
+વર્ણમાળા ધરાવતું એવું ટ્યુરિંગ મશીન રચો કે જે $A$ અને
+$B$ના સાન્ત અનુક્રમને ઇનપુટ તરીકે લઈ તેમને ફરી ગોઠવે,
+જેથી બધા $A$, બધા~$B$ની ડાબે હોય. (દાખલા તરીકે,
+$BABAA$ અનુક્રમ $AAABB$ બનવો જોઈએ અને $ABBABB$
+અનુક્રમ $AABBBB$ બનવો જોઈએ.)
+\end{prob}
+% END OLP-0255
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0256
+\olfileid{tur}{mac}{tur}
+\olsection{ટ્યુરિંગ મશીનો}
+\phantomsection\label{guunit:OLP-0256}
+
+
+\begin{explain}
+ટ્યુરિંગ મશીનની ઔપચારિક વ્યાખ્યા અમૂર્ત લાગે છે, પણ ખરેખર
+સરળ છે: ટ્યુરિંગ મશીન કેવી રીતે કામ કરે છે તે નિર્દિષ્ટ કરવા
+જરૂરી બધી માહિતી તે એક જ ગણિતીય રચનામાં સમાવે છે. તેમાં
+(1) મશીન કઈ અવસ્થાઓમાં હોઈ શકે, (2) ટેપ પર કયાં પ્રતીકોને
+મંજૂરી છે, (3) મશીન કઈ અવસ્થામાં શરૂ થવું જોઈએ અને
+(4) મશીનનો સૂચનાઓનો ગણ શું છે, એ બધું આવે છે.
+\end{explain}
+
+\begin{defn}[ટ્યુરિંગ મશીન]
+\emph{ટ્યુરિંગ મશીન} $M$ એ નીચેની વસ્તુઓનું બનેલું ચતુષ્ટય
+$\langle Q, \Sigma, q_0, \delta\rangle$ છે:
+\begin{enumerate}
+\item \emph{અવસ્થાઓ}નો સાન્ત ગણ~$Q$,
+\item $\TMendtape$ અને $\TMblank$ ધરાવતી સાન્ત \emph{વર્ણમાળા}
+  $\Sigma$,
+\item \emph{પ્રારંભિક અવસ્થા}~$q_0 \in Q$,
+\item સાન્ત \emph{સૂચનાઓનો ગણ}~$\delta\colon Q \times \Sigma
+  \pto Q \times \Sigma \times \{\TMleft, \TMright, \TMstay\}$.
+\end{enumerate}
+આંશિક વિધેય~$\delta$ને $M$નું \emph{સંક્રમણ વિધેય}
+પણ કહે છે.
+\end{defn}
+
+\begin{explain}
+આપણે ધારીએ છીએ કે ટેપ માત્ર એક દિશામાં અનંત છે.
+તેથી ટેપના ડાબા છેડાને ચિહ્નિત કરવા માટે વિશિષ્ટ
+પ્રતીક~$\TMendtape$ રાખવું ઉપયોગી છે. તેનાથી ટ્યુરિંગ
+મશીનના પ્રોગ્રામને ટેપની બહાર નીકળી જવાનો ``ભય'' ક્યારે
+છે તે ઓળખવાનું સરળ બને છે. આપણે એમ ધારી શકીએ કે આ
+પ્રતીક ક્યારેય બદલવામાં આવતું નથી, એટલે
+$\delta(q,\TMendtape)$ વ્યાખ્યાયિત હોય તો
+$\delta(q,\TMendtape) = \tuple{q', \TMendtape, x}$.
+કેટલાંક પાઠ્યપુસ્તકો આવી ધારણા કરે છે; આપણે કરતા નથી.
+તમે તમારું ટ્યુરિંગ મશીન ઘડતી વખતે તે ક્યારેય
+$\TMendtape$ને બદલે નહીં તેની કાળજી રાખી શકો છો.
+ઉપરાંત, કેટલીક પરિસ્થિતિમાં આ પ્રતીક બદલવાની છૂટ
+આપવાથી ઉપયોગી લવચીકતા મળે છે.
+\end{explain}
+
+\begin{ex}
+\emph{સમ મશીન:} ઔપચારિક રીતે સમ મશીન એ ચતુષ્ટય
+$\tuple{Q, \Sigma, q_0, \delta}$ છે, જ્યાં
+\begin{align*}
+Q & = \{ q_0, q_1 \} \\
+\Sigma & = \{ \TMendtape, \TMblank, \TMstroke \}, \\
+\delta(q_0, \TMstroke) & = \tuple{q_1, \TMstroke, \TMright},\\
+\delta(q_1, \TMstroke) & = \tuple{q_0, \TMstroke, \TMright},\\
+\delta(q_1, \TMblank)  & = \tuple{q_1, \TMblank, \TMright}.
+\end{align*}
+\end{ex}
+% END OLP-0256
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0257
+\olfileid{cmp}{tur}{con}
+\olsection{સંરૂપણો અને સંગણનાઓ}
+\phantomsection\label{guunit:OLP-0257}
+
+
+\begin{explain}
+અગાઉ આપણે સમ મશીનનાં સંરૂપણોનો ક્રમ અનુસર્યો હતો તે યાદ
+કરો. ટેપ, વાંચન-લેખન હેડ અને ટ્યુરિંગ મશીનના પ્રોગ્રામથી
+બનેલું કલ્પિત ઉપકરણ ખરેખર ટ્યુરિંગ મશીનની સંગણના શું છે
+તેની સહજ ચિત્રાત્મક સમજ આપવાની રીત છે. ઔપચારિક રીતે,
+આપેલા ઇનપુટ પર ટ્યુરિંગ મશીનની સંગણનાને
+\emph{સંરૂપણો}ના અનુક્રમ તરીકે વ્યાખ્યાયિત કરી શકાય છે.
+સંરૂપણ પોતે પ્રતીકોનો અનુક્રમ (સંગણનાના કોઈ સમયે ટેપ
+પર શું લખેલું છે તે દર્શાવતો), વાંચન-લેખન હેડનું સ્થાન
+જણાવતી સંખ્યા અને એક અવસ્થા છે. આ બધાની મદદથી આપણે
+આપેલા ઇનપુટ પર ટ્યુરિંગ મશીન~$M$ શું ગણે છે તે
+વ્યાખ્યાયિત કરી શકીએ છીએ.
+\end{explain}
+
+\begin{defn}[સંરૂપણ]
+ટ્યુરિંગ મશીન $M = \tuple{Q, \Sigma, q_0,
+\delta}$નું \emph{સંરૂપણ} એ $\tuple{C, m, q}$ ત્રિક છે, જ્યાં
+\begin{enumerate}
+\item $C \in \Sigma^*$ એ $\Sigma$નાં પ્રતીકોનો સાન્ત અનુક્રમ છે,
+\item $m \in \Nat$ એ $< \len{C}$ એવી સંખ્યા છે, અને
+\item $q \in Q$ છે.
+\end{enumerate}
+સહજ રીતે, અનુક્રમ~$C$ ટેપની સામગ્રી છે (સૌથી ડાબા
+ખાનાથી માંડીને છેલ્લાં ખાલી ન હોય અથવા અગાઉ મુલાકાત
+લીધેલાં ખાનાં સુધીનાં પ્રતીકો); $m$ વાંચન-લેખન હેડ જે
+ખાનું વાંચે છે તેનો ક્રમાંક છે (સૌથી ડાબા ખાનાનો ક્રમાંક
+$0$ રાખીને), અને $q$ મશીનની વર્તમાન અવસ્થા છે.
+\end{defn}
+
+\begin{explain}
+ટ્યુરિંગ મશીનનું સંભવિત ઇનપુટ પ્રતીકોનો અનુક્રમ હોય છે,
+સામાન્ય રીતે કોઈ સ્વરૂપમાં એક સંખ્યાનું સંકેતીકરણ કરતો
+અનુક્રમ. ટ્યુરિંગ મશીનનું પ્રારંભિક સંરૂપણ એ સંરૂપણ છે જેમાં
+મશીનને તે ઇનપુટ પર કામ કરવા શરૂ કરીએ છીએ: ટેપ પર પહેલાં
+ટેપના છેડાનું ચિહ્ન હોય છે અને તેની તરત જમણેનાં ખાનાંમાં
+ઇનપુટ લખેલું હોય છે; વાંચન-લેખન હેડ ઇનપુટનું સૌથી ડાબું
+ખાનું (એટલે છેડાના ચિહ્નની જમણેનું ખાનું) વાંચે છે; અને
+ઉપકરણ નિર્દિષ્ટ પ્રારંભિક અવસ્થા~$q_0$માં હોય છે.
+\end{explain}
+
+\begin{defn}[પ્રારંભિક સંરૂપણ]
+ઇનપુટ $I \in \Sigma^*$ માટે $M$નું \emph{પ્રારંભિક સંરૂપણ}
+આ છે:
+\[
+\tuple{\TMendtape \frown I, 1, q_0}.
+\]
+\end{defn}
+
+\sourcecorrection{OLTM-001}{સ્થિર અંગ્રેજી મૂળનો પરિચય
+શરૂઆતમાં હેડ ટેપનું સૌથી ડાબું ખાનું વાંચે છે એમ કહે છે;
+અહીંની ઔપચારિક વ્યાખ્યા અને $m=1$નું સૂત્ર હેડને
+ઇનપુટના પ્રથમ ખાનામાં, છેડાના ચિહ્નની જમણે, મૂકે છે.
+આ વિભાગમાં પ્રારંભિક સંરૂપણ માટે ઔપચારિક સૂત્ર અનુસર્યું છે.}
+
+\begin{explain}
+ચિહ્ન~$\frown$ \emph{અનુક્રમોનું જોડાણ} દર્શાવે છે---ઇનપુટ
+શબ્દમાળા ડાબા છેડાના ચિહ્નની તરત જમણે શરૂ થાય છે.
+\end{explain}
+
+\sourcecorrection{OLTM-002}{સ્થિર અંગ્રેજી મૂળ આ વાક્યમાં
+ઇનપુટ છેડાના ચિહ્નની તરત ``ડાબે'' શરૂ થાય છે એમ કહે છે.
+પરંતુ બાજુનું $\TMendtape \frown I$ સૂત્ર અને અગાઉનું
+ટેપનું વર્ણન ઇનપુટને તેની જમણે મૂકે છે; ગુજરાતી ગદ્યમાં
+તે મુજબ દિશા સ્પષ્ટ કરી છે.}
+
+\begin{defn}
+અપણે કહીએ છીએ કે (મશીન~$M$ મુજબ) સંરૂપણ
+$\tuple{C, m, q}$ \emph{એક પગલામાં સંરૂપણ
+$\tuple{C', m', q'}$ આપે છે}, ત્યારે અને ત્યારે જ જ્યારે
+\begin{enumerate}
+\item $C$નું $m$-મું પ્રતીક $\sigma$ છે,
+\item $M$નો સૂચનાઓનો ગણ $\delta(q, \sigma) =
+  \tuple{q', \sigma', D}$ નિર્દિષ્ટ કરે છે,
+\item $C'$નું $m$-મું પ્રતીક $\sigma'$ છે, અને
+\item
+\begin{enumerate}
+\item $D = L$ હોય, અને એ કિસ્સામાં $m>0$ હોય તો
+  $m' = m - 1$, નહીંતર $m'=0$; અથવા
+\item $D = R$ હોય અને $m' = m + 1$ હોય, અથવા
+\item $D = N$ હોય અને $m' = m$ હોય,
+\end{enumerate}
+\item $m' = \len{C}$ હોય તો $\len{C'} = \len{C} + 1$ છે
+  અને $C'$નું $m'$-મું પ્રતીક~$\TMblank$ છે. નહીંતર
+  $\len{C'}=\len{C}$ છે.
+\item $i < \len{C}$ અને $i \neq m$ એવા દરેક $i$ માટે
+  $C'(i) = C(i)$ છે,
+\end{enumerate}
+\end{defn}
+
+\begin{defn}\ollabel{defn:run-output}
+\emph{ઇનપુટ~$I$ પર $M$નું ચલન} એ $M$નાં સંરૂપણોનો
+અનુક્રમ $C_i$ છે, જેમાં $C_0$ એ ઇનપુટ~$I$ માટે
+$M$નું પ્રારંભિક સંરૂપણ છે અને દરેક $C_i$ એક પગલામાં
+$C_{i+1}$ આપે છે.
+
+જો $C_k = \tuple{C, m, q}$ હોય, $C$નું $m$-મું
+પ્રતીક~$\sigma$ હોય અને $\delta(q, \sigma)$ અવ્યાખ્યાયિત
+હોય, તો આપણે કહીએ છીએ કે $M$ \emph{ઇનપુટ $I$ પર
+$k$ પગલાં પછી થંભે છે}. એ કિસ્સામાં, ઇનપુટ~$I$ માટે
+$M$નું \emph{આઉટપુટ} $O$ છે, જ્યાં $O$ એ
+$\TMblank$માં પૂરું ન થતું એવું પ્રતીકોનું શબ્દમાળા છે કે
+કોઈ~$j \in \Nat$ માટે
+$C = \TMendtape \concat O \concat \TMblank^j$.
+($\TMblank^j$ એ $j$ $\TMblank$નો અનુક્રમ છે.)
+\end{defn}
+
+\begin{explain}
+આ વ્યાખ્યા મુજબ $M$નું આઉટપુટ~$O$ હંમેશાં
+$\TMblank$ સિવાયના પ્રતીકમાં પૂરું થાય છે; અથવા
+સમય~$k$ પર આખી ટેપ $\TMblank$થી ભરેલી હોય
+(સૌથી ડાબા $\TMendtape$ સિવાય), તો $O$ ખાલી
+શબ્દમાળા છે.
+\end{explain}
+% END OLP-0257
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0258
+\olfileid{tur}{mac}{una}
+\olsection{સંખ્યાઓનું એક-પ્રતીકી નિરૂપણ}
+\phantomsection\label{guunit:OLP-0258}
+
+
+\begin{explain}
+ટ્યુરિંગ મશીનો પોતાની ટેપ પર લખાયેલા પ્રતીકોના અનુક્રમો
+પર કામ કરે છે. ટ્યુરિંગ મશીન કઈ વર્ણમાળા વાપરે છે તેના
+આધારે આ અનુક્રમો જુદા જુદા ઇનપુટ અને આઉટપુટ દર્શાવી
+શકે છે. ખાસ રસ, અલબત્ત, \emph{અંકગણિતીય} વિધેયો,
+એટલે પ્રાકૃતિક સંખ્યાઓનાં વિધેયો ગણતા ટ્યુરિંગ મશીનોમાં
+છે. ધન પૂર્ણાંકો દર્શાવવાની સરળ રીત તેમને એક જ
+પ્રતીક~$\TMstroke$ના અનુક્રમ તરીકે સંકેતિત કરવાની છે.
+$n \in \Nat$ હોય, તો $n = 0$ માટે $\TMstroke^n$
+ખાલી અનુક્રમ અને અન્યથા બરાબર $n$ $\TMstroke$ ધરાવતો
+અનુક્રમ છે.
+\end{explain}
+
+\begin{defn}[સંગણના]
+ટ્યુરિંગ મશીન~$M$ વિધેય $f\colon \Nat^k \to \Nat$
+\emph{ગણે છે} ત્યારે અને ત્યારે જ જ્યારે $M$ ઇનપુટ
+\[
+\TMstroke^{n_1} \TMblank \TMstroke^{n_2} \TMblank \dots \TMblank \TMstroke^{n_k}
+\]
+પર થંભે અને આઉટપુટ $\TMstroke^{f(n_1, \dots, n_k)}$
+આપે.
+\end{defn}
+
+\begin{prob}
+  ટ્યુરિંગ મશીન~$M$ વિધેય $f\colon \Nat^k \to \Nat^m$
+  ક્યારે ગણે છે તેની વ્યાખ્યા આપો.
+\end{prob}
+
+\begin{ex}\ollabel{ex:adder}
+\emph{સરવાળો:}
+ચાલો $f(n,m) = n + m$ વિધેય ગણતું મશીન બનાવીએ.
+તે માટે ટેપ પર $n$ અને~$m$ લંબાઈના $\TMstroke$ના
+બે સમૂહો લઈને શરૂ થતું અને $n+m$~$\TMstroke$ના એક
+સમૂહ સાથે થંભતું મશીન જોઈએ. ઇનપુટના બે $\TMstroke$
+સમૂહોને એક~$\TMblank$ અલગ કરે છે. તેથી એક રીત
+$\TMblank$ ધરાવતા ખાનામાં સ્ટ્રોક લખી અને છેલ્લો
+$\TMstroke$ ભૂંસી નાખવાની છે.
+\begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]\caption{$f(x,y) = x+y$ ગણતું મશીન}
+\ollabel{fig:adder}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+ઇનપુટ~$\tuple{3,2}$ માટે
+\olref[tur][mac][una]{ex:adder}માંના મશીનનાં સંરૂપણોનો
+ક્રમ અનુસરો. મશીન $0+0$ ગણે ત્યારે શું થાય છે?
+\end{prob}
+
+\begin{explain}
+\olref[rep]{ex:doubler}માં આપણે એવું ટ્યુરિંગ મશીન
+જોયું હતું જે ઇનપુટ તરીકે $\TMstroke$નો અનુક્રમ લે છે
+અને ટેપ પર તેનાથી બમણા $\TMstroke$ના અનુક્રમ સાથે
+થંભે છે---બમણું કરનાર મશીન. પરંતુ બમણા કરેલા
+$\TMstroke$ના સમૂહની ડાબે આઉટપુટમાં $\TMblank$ રહે
+છે. તેથી, તમે કદાચ ધાર્યું હોય તેમ, તે મશીન ખરેખર
+$f(x) = 2x$ વિધેય ગણતું નથી. આ ખામી દૂર કરવાની
+બે રીતો આપણે વર્ણવીશું.
+\end{explain}
+
+\begin{ex}
+\olref{fig:doubler-disc}માંનું મશીન $f(x) = 2x$ વિધેય
+ગણે છે. \olref[rep]{ex:doubler}માંનું મશીન ઇનપુટ
+ભૂંસીને તેના દરેક $\TMstroke$ માટે છેક જમણે બે
+$\TMstroke$ લખે છે; તેના બદલે આ મશીન ઇનપુટના
+દરેક $\TMstroke$ માટે જમણે એક જ $\TMstroke$ ઉમેરે
+છે. ઇનપુટ ક્યાં પૂરું થાય છે તેનો હિસાબ તેને રાખવો
+પડે છે. તેથી તે ઇનપુટ અને ઉમેરેલા સ્ટ્રોક વચ્ચે એક
+$\TMblank$ રાખે છે, જેને છેવટે $\TMstroke$થી ભરે
+છે. આપણે ઇનપુટમાં ક્યાં છીએ તે પણ ``યાદ'' રાખવું
+પડે છે, એટલે ઇનપુટના સમૂહમાંના એક $\TMstroke$ને
+કામચલાઉ રીતે $\TMblank$થી બદલીએ છીએ.
+  \begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (0)              {$q_0$};
+  \node[state]         (1) [above of=0] {$q_1$};
+  \node[state]         (2) [above of=1] {$q_2$};
+  \node[state]         (3) [right of=2] {$q_3$};
+  \node[state]         (4) [below of=3] {$q_4$};
+  \node[state]         (5) [below of=4] {$q_5$};
+  \node[state]         (6) [above right of=4] {$q_6$};
+  \node[state]         (7) [below of=6] {$q_7$};
+  \node[state]         (8) [below of=7] {$q_8$};
+
+  \path (0) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (1)
+    (1) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (1)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (3)
+        edge node[left] {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (4)
+    (4) edge        node[left] {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (0)
+    (4) edge      node[sloped] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (6)
+    (6) edge              node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (7)
+    (7) edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (7)
+        edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (8)
+    (8) edge [loop right] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (8);
+    \end{tikzpicture}
+\]
+\caption{$f(x) = 2x$ ગણતું મશીન}
+\ollabel{fig:doubler-disc}
+\end{figure}
+\end{ex}
+
+\begin{ex}\ollabel{ex:mover}
+$f(x) = 2x$ ગણવાની બીજી રીત મૂળ બમણું કરનાર મશીન
+રાખીને છેવટે બમણા સ્ટ્રોકના સમૂહને ટેપની છેક ડાબે
+લઈ જતી અવસ્થાઓ અને સૂચનાઓ ઉમેરવાની છે.
+\olref{fig:mover}માંનું મશીન આ છેલ્લો ભાગ જ કરે છે:
+$\TMblank$ના સમૂહ પછી $\TMstroke$નો સમૂહ હોય
+એવી ટેપ પર (અને હેડ $\TMblank$ના સમૂહમાં ગમે ત્યાં
+હોય) તેને શરૂ કરીએ, તો તે એક પછી એક $\TMstroke$
+ભૂંસીને ટેપની શરૂઆતમાં લખે છે. કામ પૂરું થયું છે તે
+ઓળખી શકાય એ માટે તે પહેલાં $\TMstroke$ના સમૂહનો
+છેડો $\TMendtape$ પ્રતીક વડે ચિહ્નિત કરે છે; છેવટે
+આ પ્રતીક ભૂંસાઈ જાય છે. આપણે અવસ્થાઓને~$q_6$થી
+ક્રમ આપવાનું શરૂ કર્યું છે, જેથી તેને બમણું કરનાર મશીનમાં
+ઉમેરી શકાય. તમારે વધારાની સૂચના
+$\delta(q_0, \TMblank) = \tuple{q_6,\TMblank,\TMstay}$,
+એટલે~$q_0$થી~$q_6$ સુધીનું
+$\TMtrans{\TMblank}{\TMblank}{\TMstay}$ ચિહ્નવાળું તીર,
+ઉમેરવાનું છે. (એક સૂક્ષ્મ સમસ્યા છે: મળેલું મશીન
+ઇનપુટ~$x=0$ માટે કામ કરતું નથી. તેને આપણે અભ્યાસપ્રશ્ન
+તરીકે રાખીએ છીએ.)
+\begin{figure}
+  \[
+  \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                      semithick]
+    \tikzstyle{every state}=[fill=none,draw=black,text=black]
+    \node[initial,state] (6)              {$q_6$};
+    \node[state]         (7) [right of=6] {$q_7$};
+    \node[state]         (8) [right of=7] {$q_8$};
+    \node[state]         (9) [below of=8] {$q_9$};
+    \node[state]         (10) [left of=9] {$q_{10}$};
+    \node[state]         (11) [left of=10]  {$q_{11}$};
+    \node[state]         (12) [below of=11]  {$q_{12}$};
+    \node[state]         (13) [right of=12] {$q_{13}$};
+    \node[state]         (14) [right of=13] {$q_{14}$};
+    \path
+    (6)  edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+    (7)  edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (7)
+         edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+    (8)  edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (8)
+         edge node {\TMtrans{\TMblank}{\TMendtape}{\TMleft}} (9)
+    (9)  edge [loop right] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (9)
+         edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (10)
+    (10) edge node[above] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (11) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (11)
+         edge node[left] {\begin{tabular}{@{}l@{}}
+          \TMtrans{\TMendtape}{\TMendtape}{\TMright}\\
+          \TMtrans{\TMstroke}{\TMstroke}{\TMright}
+         \end{tabular}} (12)
+    (12) edge node[] {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (13)
+    (13) edge [loop below] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (13)
+         edge node[sloped] {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (11)
+    (13) edge node {\TMtrans{\TMendtape}{\TMblank}{\TMstay}} (14);
+  \end{tikzpicture}
+  \]
+  \caption{$\TMstroke$ના સમૂહને ડાબે ખસેડવું}
+  \ollabel{fig:mover}
+\end{figure}
+\end{ex}
+
+\begin{prob}
+\olref[tur][mac][una]{ex:mover}માં આપણે
+\olref[rep]{ex:doubler}માંના બમણું કરનાર મશીન અને
+\olref[tur][mac][una]{fig:mover}માંના ખસેડનાર મશીનને
+જોડીને બનેલા મશીનનું વર્ણન કર્યું. આ સંયુક્ત મશીનને
+ઇનપુટ~$x=0$, એટલે ખાલી ટેપ, પર શરૂ કરીએ તો શું
+થાય છે? આ કિસ્સામાં મશીન આઉટપુટ~$2x=0$ સાથે
+થંભે એ માટે તેને કેવી રીતે સુધારશો? (એક અવસ્થા અને
+એક સંક્રમણ ઉમેરીને આ કરી શકવું જોઈએ.)
+\end{prob}
+
+\sourcecorrection{OLTM-003}{સ્થિર અંગ્રેજી મૂળના આ પ્રશ્નમાં
+બમણું કરનાર મશીન માટે $f(x)=2x$ આપતી
+\olref[tur][mac][una]{fig:doubler-disc} આકૃતિનો સંદર્ભ છે.
+પરંતુ તરત અગાઉનું વર્ણન મૂળ
+\olref[rep]{ex:doubler} મશીનને
+\olref[tur][mac][una]{fig:mover} સાથે જોડે છે; પ્રશ્નમાં
+તે જ મૂળ મશીનનો સંદર્ભ આપ્યો છે.}
+
+\begin{prob}
+\emph{બાદબાકી:} $n$ અને~$m$ લંબાઈની બે ખાલી ન હોય
+એવી સ્ટ્રોકની શબ્દમાળાઓ ઇનપુટ તરીકે મળે, જ્યાં
+$n > m$ હોય, ત્યારે $f(n,m) = n - m$ વિધેય ગણતું
+ટ્યુરિંગ મશીન રચો.
+\end{prob}
+
+\begin{prob}
+\emph{સમાનતા:} નીચેનું વિધેય ગણતું ટ્યુરિંગ મશીન રચો:
+\[
+\fn{equality}(n,m) =
+\begin{cases}
+  \text{1} & \text{જો~$n = m$ હોય} \\
+  \text{0} & \text{જો~$n \neq m$ હોય}
+\end{cases}
+\]
+અહીં~$n$ અને~$m \in \PosInt$ છે.
+\end{prob}
+
+\begin{prob}
+$x$ અને $y$ ધન પૂર્ણાંકોને ટેપ પર $\TMblank$થી
+અલગ કરેલી $\TMstroke$ની શબ્દમાળાઓ વડે દર્શાવ્યા હોય,
+ત્યારે $\min(x,y)$ વિધેય ગણતું ટ્યુરિંગ મશીન રચો.
+મશીનની વર્ણમાળામાં વધારાનાં પ્રતીકો વાપરી શકો છો.
+
+વિધેય $\min$ તેના આર્ગ્યુમેન્ટોમાંથી સૌથી નાનું મૂલ્ય
+પસંદ કરે છે: તેથી $\min(3,5)=3$, $\min(20,16)=16$
+અને $\min(4,4)=4$ વગેરે.
+\end{prob}
+
+\begin{defn}
+  ટ્યુરિંગ મશીન~$M$ આંશિક વિધેય $f\colon \Nat^k
+  \pto \Nat$ ગણે છે ત્યારે અને ત્યારે જ જ્યારે
+  \begin{enumerate}
+    \item $f(n_1, \dots, n_k) = m$ હોય તો $M$ ઇનપુટ
+    $\TMstroke^{n_1}\concat\TMblank\concat
+    \dots \concat\TMblank\concat\TMstroke^{n_k}$ પર
+    આઉટપુટ $\TMstroke^{m}$ સાથે થંભે છે.
+    \item $f(n_1, \dots, n_k)$ અવ્યાખ્યાયિત હોય તો
+    $M$ થંભતું જ નથી, અથવા $\TMstroke$ના એક જ
+    સમૂહથી ન બનેલા આઉટપુટ સાથે થંભે છે.
+  \end{enumerate}
+\end{defn}
+% END OLP-0258
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0259
+\olfileid{tur}{mac}{hal}
+\olsection{થંભવાની અવસ્થાઓ}
+\phantomsection\label{guunit:OLP-0259}
+
+
+\begin{explain}
+આપણે મશીનને એવી રીતે વ્યાખ્યાયિત કર્યું છે કે અમલમાં મૂકવા
+કોઈ સૂચના ન હોય ત્યારે જ તે થંભે. જોકે ટ્યુરિંગ મશીનનાં
+સામાન્ય નિરૂપણોમાં એક ખાસ \emph{થંભવાની અવસ્થા}~$h$
+હોય છે, જેમાં $h \in Q$.
+
+થંભવાની અવસ્થા પાછળનો વિચાર સરળ છે: મશીનનું કામ પૂરું
+થાય (તે ઇનપુટ સ્વીકારવા તૈયાર થાય અથવા આઉટપુટ
+લખવાનું પૂરું કરે), ત્યારે તે અવસ્થા~$h$માં જઈને થંભે.
+કેટલાંક મશીનોમાં થંભવાની બે અવસ્થાઓ હોય છે: એક
+ઇનપુટ સ્વીકારવા માટે અને બીજી ઇનપુટ નકારવા માટે.
+\end{explain}
+
+\begin{ex}\emph{થંભવાની અવસ્થાઓ}.
+આ વિચાર સ્પષ્ટ કરવા પહેલાં સમ મશીનમાં ફેરફાર કરીએ.
+ઇનપુટ સમ હોય ત્યારે મશીન અવસ્થા~$q_0$માં થંભે તે
+બદલે, તેને થંભવાની અવસ્થામાં મોકલતી સૂચના ઉમેરી
+શકીએ છીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial, state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+      edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{R}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+
+હવે ઉદાહરણને વધુ વિસ્તૃત કરીએ. ઇનપુટ વિષમ છે એવું
+મશીન નક્કી કરે ત્યારે તે ક્યારેય થંભતું નથી. આ
+ચક્રમાં ચાલવાની સૂચનાને નકારવાની અવસ્થા~$r$માં જવાની
+સૂચનાથી બદલીને મશીનમાં \emph{નકારવાની} અવસ્થા
+ઉમેરી શકીએ છીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)                     {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below of=A] {$h$};
+  \node[state]         (D) [below of=B] {$r$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (B)
+      edge node {\TMtrans{\TMblank}{\TMblank}{N}} (C)
+        (B) edge node {\TMtrans{\TMblank}{\TMblank}{N}} (D)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{R}} (A);
+\end{tikzpicture}
+\]
+\end{ex}
+
+\begin{explain}
+આવા કિસ્સામાં ખાસ થંભવાની અવસ્થા ઉમેરવી લાભકારક છે:
+મશીન કયા ઇનપુટ સ્વીકારે કે નકારે છે તે સ્પષ્ટ થાય છે.
+પરંતુ ખાસ થંભવાની અવસ્થા ઉમેરવાથી મશીનની સંગણનશક્તિ
+વધતી નથી એ નોંધવું જરૂરી છે. એવી જ રીતે, થંભવાનો
+ઓછો ઔપચારિક ખ્યાલ પણ પોતાના લાભ ધરાવે છે. આ
+પ્રકરણમાં અત્યાર સુધી વપરાયેલી થંભવાની વ્યાખ્યા
+\emph{અટકવાની સમસ્યા}ની સાબિતી સહજ અને રજૂ કરવામાં
+સરળ બનાવે છે. તેથી આપણે આપણી મૂળ વ્યાખ્યા જ
+ચાલુ રાખીએ છીએ.
+\end{explain}
+% END OLP-0259
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0260
+\olfileid{tur}{mac}{dis}
+\olsection{શિસ્તબદ્ધ મશીનો}
+\phantomsection\label{guunit:OLP-0260}
+
+
+\begin{explain}
+\olref[hal]{sec} વિભાગમાં આપણે એવી ટ્યુરિંગ મશીનો
+જોઈ હતી જેમાં એક જ નિર્ધારિત થંભવાની અવસ્થા~$h$
+હોય છે---આવાં મશીનો થંભે તો અવસ્થા~$h$માં જ થંભે
+તેની ખાતરી હોય છે. આ રીતે, એક જ થંભવાની અવસ્થાવાળાં
+મશીનો સામાન્ય ટ્યુરિંગ મશીનોને આપણે આપેલી છૂટ કરતાં
+વધુ ``શિસ્તબદ્ધ'' છે. ટ્યુરિંગ મશીનોના વર્તન પર બીજી
+શરતો પણ મૂકી શકીએ. દાખલા તરીકે, મશીન ખાનું~$0$માંનું
+ટેપના છેડાનું ચિહ્ન ક્યારેય ભૂંસે નહીં અથવા ખાનું~$0$માંથી
+ડાબે જવાનો પ્રયત્ન ન કરે એવી મનાઈ આપણે મૂકી નથી.
+(આવા કિસ્સામાં હેડ ખાનું~$0$માં જ રહે છે એમ આપણી
+વ્યાખ્યા કહે છે; બીજી વ્યાખ્યાઓમાં મશીન થંભે છે.)
+એવી જ રીતે, ટ્યુરિંગ મશીન થંભે તો ખાનું~$1$ વાંચતાં
+થંભે એવી ધારણા કરી શકાય તે ક્યારેક ઇચ્છનીય છે.
+\end{explain}
+
+\begin{defn}\ollabel{defn:disciplined}
+ટ્યુરિંગ મશીન~$M$ \emph{શિસ્તબદ્ધ} છે ત્યારે અને
+ત્યારે જ જ્યારે
+\begin{enumerate}
+    \item તેમાં એક જ નિર્ધારિત થંભવાની અવસ્થા~$h$ છે,
+    \item તે થંભે તો ખાનું~$1$ વાંચતાં થંભે છે,
+    \item તે ખાનું~$0$માંનું $\TMendtape$ પ્રતીક ક્યારેય
+    ભૂંસતું નથી, અને
+    \item તે ખાનું~$0$માંથી ડાબે જવાનો પ્રયત્ન ક્યારેય
+    કરતું નથી.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+આપણે અગાઉ ચર્ચ્યું છે કે કોઈ પણ ટ્યુરિંગ મશીનને એ જ
+વર્તન ધરાવતું પરંતુ નિર્ધારિત થંભવાની અવસ્થાવાળું મશીન
+બનાવી શકાય છે. આ માટે માત્ર નવી અવસ્થા~$h$ ઉમેરીને
+મૂળ $\delta$ જે જોડી $\tuple{q,\sigma}$ પર અવ્યાખ્યાયિત
+હોય તે દરેક માટે સૂચના
+$\delta(q, \sigma) = \tuple{h, \sigma, N}$ ઉમેરવી પડે.
+સાબિતી કંટાળાજનક હોવા છતાં એ સાચું છે કે કોઈ પણ
+ટ્યુરિંગ મશીન~$M$ને એવા શિસ્તબદ્ધ ટ્યુરિંગ મશીન~$M'$
+માં ફેરવી શકાય છે જે એ જ ઇનપુટ પર થંભે છે અને એ જ
+આઉટપુટ આપે છે. દાખલા તરીકે, ટ્યુરિંગ મશીન થંભે અને
+તે ખાનું~$1$ પર ન હોય, તો હેડ ટેપના છેડાનું ચિહ્ન
+મળે ત્યાં સુધી ડાબે ખસે, પછી એક ખાનું જમણે ખસે અને
+પછી થંભે એવી સૂચનાઓ ઉમેરી શકાય. બીજી શરતો કેવી
+રીતે પૂરી કરી શકાય તે તમે વિચારો.
+\end{explain}
+
+\begin{ex}
+    \olref{fig:adder-disc}માં આપણે
+    \olref[una]{ex:adder}ના સરવાળાના મશીનને શિસ્તબદ્ધ
+    મશીનમાં ફેરવીએ છીએ.
+    \begin{figure}\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [below right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (H) [left of=D] {$h$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+           edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+        edge node {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (H);
+\end{tikzpicture}
+\]\caption{શિસ્તબદ્ધ સરવાળાનું મશીન}
+\ollabel{fig:adder-disc}
+\end{figure}
+\end{ex}
+
+\begin{prop}\ollabel{prop:disciplined} દરેક ટ્યુરિંગ
+મશીન~$M$ માટે એવું શિસ્તબદ્ધ ટ્યુરિંગ મશીન~$M'$
+છે કે $M$ આઉટપુટ~$O$ સાથે થંભે તો તે પણ
+આઉટપુટ~$O$ સાથે થંભે, અને $M$ ન થંભે તો તે
+પણ ન થંભે. ખાસ કરીને, ટ્યુરિંગ મશીન વડે સંગણનીય
+દરેક વિધેય $f\colon\Nat^n \to \Nat$ શિસ્તબદ્ધ
+ટ્યુરિંગ મશીન વડે પણ સંગણનીય છે.
+\end{prop}
+
+\begin{prob}\label{tur:mac:dis:prob:disc-succ}
+$f(x) = x+1$ ગણતું શિસ્તબદ્ધ મશીન આપો.
+\end{prob}
+
+
+\begin{prob}\label{tur:mac:dis:prob:copier}
+ઇનપુટ $\TMstroke^n$ પર શરૂ કરતાં આઉટપુટ
+$\TMstroke^n \concat \TMblank \concat \TMstroke^n$
+આપે એવું શિસ્તબદ્ધ મશીન શોધો.
+\end{prob}
+% END OLP-0260
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0261
+\olfileid{tur}{mac}{cmb}
+\olsection{ટ્યુરિંગ મશીનોનું સંયોજન}
+\phantomsection\label{guunit:OLP-0261}
+
+
+\begin{explain}
+અત્યાર સુધી આપણે જોયેલાં ટ્યુરિંગ મશીનો સ્વરૂપે ઘણાં
+સરળ હતાં. પરંતુ હકીકતમાં, કોઈ પણ આધુનિક પ્રોગ્રામિંગ
+ભાષામાં ઉકેલી શકાય તેવી સમસ્યા ટ્યુરિંગ મશીનોથી પણ
+ઉકેલી શકાય છે. વધુ જટિલ ટ્યુરિંગ મશીનો બનાવવા માટે
+તેમને જોડવાનું શક્ય છે તે સમજવું જરૂરી છે. એમ હોય તો
+પ્રક્રિયાને સરળ ભાગોમાં વહેંચીને વધુ જટિલ સમસ્યાઓ
+ઉકેલતાં મશીનો બનાવી શકીએ. જટિલ સમસ્યાને તેના
+ઘટક ભાગોમાં વહેંચવાની સ્વાભાવિક રીત મળે, તો અનેક
+સરળ ટ્યુરિંગ મશીનો બનાવીને તેમને એક મશીનમાં જોડતાં
+સમસ્યાને કેટલાંક તબક્કામાં ઉકેલી શકીએ. આગળના વિભાગમાં
+અટકવાની સમસ્યા હાથ ધરતી વખતે આ વાત ખાસ અગત્યની છે.
+
+ટ્યુરિંગ મશીનો $M = \tuple{Q, \Sigma, q_0, \delta}$
+અને~$M' = \tuple{Q', \Sigma', q_0', \delta'}$ને કેવી રીતે
+જોડીએ? હવે $M$ થંભે તે પછી ટેપનું સંરૂપણ મશીન~$M'$
+ના ચલનના ઇનપુટ સંરૂપણ તરીકે વાપરીએ. આ કામ કરતું
+એક ટ્યુરિંગ મશીન $M \frown M'$ મેળવવા માટે આવું કરો:
+\begin{enumerate}
+    \item $M'$ની બધી અવસ્થાઓ~$Q'$ના ક્રમાંક (અથવા નામ)
+    ફરી ગોઠવો, જેથી $M$ અને~$M'$ની કોઈ અવસ્થા
+    સમાન ન હોય ($Q \cap Q' = \emptyset$).
+    \item $M \frown M'$ની અવસ્થાઓ $Q \cup Q'$ છે.
+    \item ટેપની વર્ણમાળા $\Sigma \cup \Sigma'$ છે.
+    \item પ્રારંભિક અવસ્થા~$q_0$ છે.
+    \item સંક્રમણ વિધેય નીચે આપેલું વિધેય $\delta''$ છે:
+    \[\delta''(q,\sigma) =
+    \begin{cases}
+      \delta(q,\sigma) & \text{જો $q \in Q$ અને $\delta(q,\sigma)$ વ્યાખ્યાયિત હોય}\\
+      \delta'(q,\sigma) & \text{જો $q \in Q'$ હોય}\\
+      \tuple{q_0', \sigma, \TMstay} & \text{જો $q \in Q$ હોય અને
+      $\delta(q,\sigma)$ અવ્યાખ્યાયિત હોય}
+    \end{cases}\]
+\end{enumerate}
+મળેલું મશીન અવસ્થા $q \in Q$માં હોય ત્યારે~$M$ની
+સૂચનાઓ અને અવસ્થા~$q \in Q'$માં હોય ત્યારે~$M'$
+ની સૂચનાઓ વાપરે છે. તે અવસ્થા $q \in Q$માં હોય
+અને એવું પ્રતીક~$\sigma$ વાંચે કે જેના માટે $M$માં
+સંક્રમણ નથી (એટલે $M$ થંભ્યું હોત), ત્યારે તે~$M'$
+ની પ્રારંભિક અવસ્થામાં જાય છે (અને ટેપની સામગ્રી તથા
+હેડનું સ્થાન યથાવત્ રાખે છે).
+\sourcecorrection{OLTM-004}{સ્થિર અંગ્રેજી મૂળના પ્રથમ
+કિસ્સામાં માત્ર $q\in Q$ લખ્યું છે, તેથી $\delta(q,\sigma)$
+અવ્યાખ્યાયિત હોય ત્યારે પણ પહેલો કિસ્સો લાગુ પડે અને
+ત્રીજો કિસ્સો ઢંકાઈ જાય. ગુજરાતી સૂત્રના પહેલા કિસ્સામાં
+$\delta(q,\sigma)$ વ્યાખ્યાયિત હોવાની શરત સ્પષ્ટ કરી છે;
+થંભેલા $M$માંથી $M'$માં જવાનું બાજુનું વર્ણન આ અર્થ
+નક્કી કરે છે.}
+
+નોંધો કે મશીન~$M$ શિસ્તબદ્ધ ન હોય, તો $M$ થંભે
+ત્યારે ટેપનો હેડ ક્યાં હશે તે આપણે જાણતા નથી; તેથી
+$M$ના થંભવાના સંરૂપણમાં હેડ ખાનું~$1$ વાંચતો હોય
+એવું જરૂરી નથી. મશીનો જોડતી વખતે આ વાત ધ્યાનમાં
+રાખવી અગત્યની છે.
+\end{explain}
+
+\begin{ex}
+\emph{મશીનોનું સંયોજન:} એવું મશીન રચીશું કે તેને ઇનપુટ
+તરીકે $n$ અને~$m$ લંબાઈના $\TMstroke$ના બે સમૂહો
+આપીએ, તો તે ટેપ પર $2(m+n)$ $\TMstroke$ના એક
+જ સમૂહ સાથે થંભે. તેને બનાવવા આપણે પહેલેથી જાણીએ
+છીએ એવાં બે મશીનો---સરવાળાનું મશીન અને બમણું કરનાર
+મશીન---જોડી શકીએ. પહેલાં સરવાળાના મશીનનો અવસ્થા-આલેખ
+દોરીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
+\end{tikzpicture}
+\]
+અવસ્થા~$q_2$માં થંભવાને બદલે, આઉટપુટ બમણું કરવા
+મશીન આગળ ચાલે એવું જોઈએ. યાદ કરો કે બમણું કરનાર
+મશીન ઇનપુટનો પ્રથમ સ્ટ્રોક ભૂંસીને અલગ આઉટપુટમાં
+બે સ્ટ્રોક લખે છે. ટેપનો હેડ સરવાળાના મશીનના
+આઉટપુટનો પ્રથમ સ્ટ્રોક વાંચે તેની ખાતરી કરતી સૂચના
+ઉમેરીએ.
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E);
+\end{tikzpicture}
+\]
+હવે ઇનપુટ બમણું કરવું સહેલું છે---બમણું કરનાર મશીનને
+અવસ્થા~$q_4$ સાથે જોડવાનું જ બાકી છે. એ માટે
+બમણું કરનાર મશીનની અવસ્થાઓનાં નામ બદલવાં પડે,
+જેથી તે~$q_0$ને બદલે~$q_4$થી શરૂ થાય---આ રીતે
+બે પ્રારંભિક અવસ્થાઓ ઊભી થતી નથી. આખરી આલેખ
+\olref{fig:combined} જેવો હોવો જોઈએ.
+\begin{figure}
+\[
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+  \node[initial,state] (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+  \node[state]         (C) [right of=B] {$q_2$};
+  \node[state]         (D) [below left of=C] {$q_3$};
+  \node[state]         (E) [below left of=D] {$q_4$};
+  \node[state]         (2) [right of=E] {$q_5$};
+  \node[state]         (3) [right of=2] {$q_6$};
+  \node[state]         (4) [below of=3] {$q_7$};
+  \node[state]         (5) [left of=4]  {$q_8$};
+  \node[state]         (6) [left of=5]  {$q_9$};
+
+  \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
+        (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
+        (D) edge [loop left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (D)
+            edge node[left, xshift=-2mm] {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (E)
+    (E) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMright}} (2)
+    (2) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (2)
+      edge node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (3)
+    (3) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (3)
+        edge node {\TMtrans{\TMblank}{\TMstroke}{\TMright}} (4)
+    (4) edge [loop below] node {\TMtrans{\TMblank}{\TMstroke}{\TMleft}} (4)
+        edge node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+    (5) edge [loop below]  node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (5)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (6)
+    (6) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMleft}} (6)
+        edge              node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (E);
+\end{tikzpicture}
+\]
+\caption{સરવાળાનું અને બમણું કરનાર મશીન જોડવાં}
+\ollabel{fig:combined}
+\end{figure}
+\end{ex}
+
+\begin{prop}
+    $M$ અને $M'$ શિસ્તબદ્ધ હોય અને અનુક્રમે
+    $f\colon \Nat^k \to \Nat$ અને
+    $f'\colon \Nat \to \Nat$ વિધેયો ગણતા હોય, તો
+    $M \frown M'$ પણ શિસ્તબદ્ધ છે અને
+    $\comp{f}{f'}$ ગણે છે.
+\end{prop}
+
+\begin{proof}
+    $M$ શિસ્તબદ્ધ હોવાથી તે
+    આઉટપુટ~$f(n_1,\dots,n_k) = m$ સાથે થંભે ત્યારે
+    હેડ ખાનું~$1$ વાંચે છે. હવે~$M'$ની પ્રારંભિક
+    અવસ્થામાં જઈએ, તો મશીન આઉટપુટ $f'(m)$ સાથે,
+    ફરી ખાનું~$1$ વાંચતાં, થંભશે.
+    \olref[dis]{defn:disciplined}ની બીજી શરતો પણ
+    પૂરી થાય છે.
+\end{proof}
+
+\begin{prob}
+    \cref{tur:mac:dis:prob:disc-succ}નું મશીન~$M$
+    લઈને અને $M \frown M$ રચીને $f(x) = x+2$
+    ગણતું શિસ્તબદ્ધ ટ્યુરિંગ મશીન આપો.
+\end{prob}
+% END OLP-0261
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0262
+\olfileid{tur}{mac}{var}
+\olsection{ટ્યુરિંગ મશીનોનાં વિવિધ સ્વરૂપો}
+\phantomsection\label{guunit:OLP-0262}
+
+
+હકીકતમાં ટ્યુરિંગ મશીનોની વ્યાખ્યા આપવાની ઘણી રીતો છે;
+આપણી રીત માત્ર એક છે. કેટલીક બાબતમાં આપણી વ્યાખ્યા
+બીજી વ્યાખ્યાઓ કરતાં વધુ છૂટ આપે છે. આપણે મનસ્વી
+સાન્ત વર્ણમાળાઓને મંજૂરી આપીએ છીએ; વધુ મર્યાદિત
+વ્યાખ્યા ટેપનાં માત્ર બે પ્રતીકો, $\TMstroke$ અને~$\TMblank$,
+મંજૂર કરી શકે. આપણે મશીનને ટેપ પર પ્રતીક લખતાં જ
+ખસવાની છૂટ આપીએ છીએ; બીજી વ્યાખ્યાઓમાં લખવું
+અથવા ખસવું, બેમાંથી એક જ થઈ શકે. આપણે ટેપના હેડને
+ખસેડ્યા વગર લખવાની શક્યતા મંજૂર કરીએ છીએ; બીજી
+વ્યાખ્યાઓ $\TMstay$ ``સૂચના'' છોડે છે. બીજી બાબતમાં
+આપણી વ્યાખ્યા વધુ મર્યાદિત છે. આપણે ટેપ માત્ર એક
+દિશામાં અનંત છે એમ ધાર્યું છે; બીજી વ્યાખ્યાઓ તેને ડાબે
+અને જમણે બંને તરફ અનંત રાખે છે. હકીકતમાં જુદી જુદી
+ગમે તેટલી ટેપ, અથવા ખાનાંની અનંત જાળી પણ મંજૂર કરી
+શકાય. આપણે ટ્યુરિંગ મશીનનો સૂચનાઓનો ગણ સંક્રમણ
+વિધેયથી દર્શાવીએ છીએ; બીજી વ્યાખ્યાઓ સંક્રમણ સંબંધ
+વાપરે છે, જેમાં કોઈ પણ આપેલી સ્થિતિમાં મશીન પાસે
+એકથી વધુ શક્ય સૂચનાઓ હોય છે.
+
+વ્યાખ્યામાં કરેલી આ છેલ્લી છૂટ ખાસ રસપ્રદ છે. આપણી
+વ્યાખ્યામાં મશીન અવસ્થા~$q$માં પ્રતીક~$\sigma$ વાંચે,
+ત્યારે $\delta(q, \sigma)$ નવું પ્રતીક, નવી અવસ્થા અને
+ટેપના હેડનું નવું સ્થાન નક્કી કરે છે. પરંતુ સૂચનાઓનો
+ગણ વર્તમાન અવસ્થા-પ્રતીક જોડીઓ $\tuple{q,
+  \sigma}$ અને નવી અવસ્થા-પ્રતીક-દિશા ત્રિકો
+$\tuple{q', \sigma',
+  D}$ વચ્ચેનો સંબંધ હોય, તો ટ્યુરિંગ મશીનની ક્રિયા
+એક જ રીતે નક્કી થાય એવું જરૂરી નથી---સૂચનાઓના
+સંબંધમાં $\tuple{q,
+  \sigma, q', \sigma', D}$ અને
+$\tuple{q, \sigma, q'', \sigma'', D'}$ બંને હોઈ શકે.
+આ કિસ્સામાં આપણી પાસે \emph{અનિર્ધારિત} ટ્યુરિંગ મશીન
+છે. સંગણકીય જટિલતાના સિદ્ધાંતમાં આવાં મશીનો અગત્યની
+ભૂમિકા ભજવે છે.
+
+ટ્યુરિંગ મશીન ક્યારે થંભે તેની પણ જુદી રીતો છે: આપણે
+સંક્રમણ વિધેય અવ્યાખ્યાયિત હોય ત્યારે તે થંભે એમ કહીએ
+છીએ; બીજી વ્યાખ્યાઓમાં મશીન ખાસ નિર્ધારિત થંભવાની
+અવસ્થામાં હોય તે જરૂરી છે. આવી અવસ્થા જરૂરી રાખવાથી
+ટ્યુરિંગ મશીનો શું ગણી શકે તેમાં ફેર પડતો નથી તે આપણે
+\olref[hal]{sec}માં સમજાવ્યું છે. આપણા ટ્યુરિંગ મશીનોની
+ટેપ માત્ર એક દિશામાં અનંત હોવાથી ક્યારેક મશીન સૂચના
+યોગ્ય રીતે ચલાવી શકતું નથી: સૌથી ડાબું ખાનું વાંચતું
+હોય અને ડાબે ખસવાનું કહેવામાં આવે ત્યારે. આપણી
+વ્યાખ્યા મુજબ ``નીચે પડી જવા''ને બદલે તે એ જ સ્થાને
+રહે છે; પરંતુ આવું બને ત્યારે મશીન થંભે એવી વ્યાખ્યા
+પણ આપી શકીએ. આ વ્યાખ્યા પણ સમકક્ષ છે: ખાનું~$0$માંથી
+ડાબે ખસવાનો પ્રયત્ન કરતાં થંભતું ટ્યુરિંગ મશીનનું વર્તન
+અનુકરવા, દરેક સંક્રમણ $\delta(q,\TMendtape) =
+\tuple{q',\sigma,\TMleft}$ દૂર કરી શકીએ---પછી
+મશીન~$\TMendtape$ પર ડાબે ખસવાનો પ્રયત્ન કરવાને
+બદલે થંભે છે.\footnote{આ રીત \emph{પૂરેપૂરી} કામ
+કરતી નથી, કારણ કે ખાનું~$0$ સિવાયનાં ખાનાંમાં પણ
+$\TMendtape$ લખતાં અને વાંચતાં આપણને કોઈ રોકતું નથી
+(જુઓ \olref[una]{ex:mover}). આવાં કામ માટે બીજું
+પ્રતીક~$\TMendtape'$ ઉમેરીને આ મુશ્કેલી દૂર કરી શકીએ.}
+
+સંખ્યાઓ દર્શાવવાની પણ જુદી રીતો છે (અને તેથી ટ્યુરિંગ
+મશીન ગણતું ઇનપુટ-આઉટપુટ વિધેય પણ બદલાય છે): આપણે
+એક-પ્રતીકી નિરૂપણ વાપરીએ છીએ, પરંતુ દ્વિ-આધારી
+નિરૂપણ પણ વાપરી શકાય. તે માટે $\TMblank$ અને~$\TMendtape$
+ઉપરાંત બે પ્રતીકો જોઈએ.
+
+હવે એક રસપ્રદ હકીકત: કયાં વિધેયો ટ્યુરિંગ-સંગણનીય છે
+તેના પર આમાંથી કોઈ ફેરફારનો પ્રભાવ પડતો નથી.
+\emph{એક વ્યાખ્યા અનુસાર કોઈ વિધેય ટ્યુરિંગ-સંગણનીય
+હોય, તો બધી વ્યાખ્યાઓ અનુસાર તે ટ્યુરિંગ-સંગણનીય છે.}
+
+આ વાતની ચકાસણીની વિગતોમાં નહીં જઈએ. માત્ર એક
+ઉદાહરણ જોઈએ: ટેપ બંને દિશામાં અનંત હોય અથવા
+અનેક ટેપ હોય એવી છૂટ આપવાથી સંગણનશક્તિ વધતી
+નથી. લગભગ આવું કારણ છે: એક જ, એક દિશામાં
+અનંત ટેપવાળું ટ્યુરિંગ મશીન અનેક ટેપનું અથવા બે
+દિશામાં અનંત ટેપનું અનુકરણ કરી શકે છે. દાખલા તરીકે,
+વધારાની અવસ્થાઓ અને સૂચનાઓ વાપરીને અનેક ટેપવાળા
+અથવા બે દિશામાં અનંત ટેપવાળા મશીનના પ્રોગ્રામને
+એક જ, એક દિશામાં અનંત ટેપવાળા મશીનના પ્રોગ્રામમાં
+``રૂપાંતરિત'' કરી શકીએ. રૂપાંતરિત મશીન સમ ક્રમાંકનાં
+ખાનાં ટેપ~$1$નાં ખાનાં (અથવા બે દિશામાં અનંત ટેપનાં
+``ધન'' ખાનાં) માટે અને વિષમ ક્રમાંકનાં ખાનાં ટેપ~$2$
+નાં ખાનાં (અથવા ``ઋણ'' ખાનાં) માટે વાપરી શકે છે.
+% END OLP-0262
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0263
+\olfileid{tur}{mac}{ctt}
+\olsection{ચર્ચ--ટ્યુરિંગ માન્યતા}
+\phantomsection\label{guunit:OLP-0263}
+
+
+ટ્યુરિંગ મશીનો અસરકારક પ્રક્રિયાના ખ્યાલનું ચોક્કસ
+ગણિતીય સ્વરૂપ આપવાનાં છે. ટ્યુરિંગના મતે, જે કોઈ
+અસરકારક પ્રક્રિયા અને ટ્યુરિંગ મશીન બંનેના ખ્યાલને
+સમજે તેને સહજ રીતે લાગશે કે અસરકારક પ્રક્રિયા વડે
+જે કંઈ કરી શકાય તે ટ્યુરિંગ મશીન વડે પણ કરી શકાય.
+આ દાવાને એ હકીકત ટેકો આપે છે કે અસરકારક પ્રક્રિયાના
+ખ્યાલનાં અન્ય તમામ પ્રસ્તાવિત ચોક્કસ સ્વરૂપો ટ્યુરિંગ
+મશીનના ખ્યાલ સાથે વિસ્તારની દૃષ્ટિએ સમકક્ષ નીવડે
+છે---એટલે તેઓ બરાબર એ જ વિધેયોનો ગણ ગણી શકે છે.
+આ દાવો \emph{ચર્ચ--ટ્યુરિંગ માન્યતા} કહેવાય છે.
+
+\begin{defn}[ચર્ચ--ટ્યુરિંગ માન્યતા]
+\emph{ચર્ચ--ટ્યુરિંગ માન્યતા} કહે છે કે અસરકારક
+પ્રક્રિયા વડે સંગણનીય હોય તે બધું ટ્યુરિંગ-સંગણનીય છે.
+\end{defn}
+
+ચર્ચ--ટ્યુરિંગ માન્યતાનો બે રીતે આધાર લેવાય છે. પ્રથમ
+રીત આળસને બહાનું આપે છે. ધારો કે આપણને કંઈક ગણવાની
+અસરકારક પ્રક્રિયાનું વર્ણન, માનો ``આભાસી કોડ''માં,
+મળ્યું છે. તો આપણે ખરેખર ટ્યુરિંગ મશીન બનાવ્યું ન
+હોય તોપણ એ જ વિધેય કોઈ ટ્યુરિંગ મશીન ગણે છે એવો
+દાવો યોગ્ય ઠેરવવા ચર્ચ--ટ્યુરિંગ માન્યતા લઈ શકીએ.
+
+ચર્ચ--ટ્યુરિંગ માન્યતાનો બીજો ઉપયોગ તત્ત્વચિંતનની
+દૃષ્ટિએ વધુ રસપ્રદ છે. કેટલાંક વિધેયો ટ્યુરિંગ મશીન
+વડે ગણી શકાતા નથી તે બતાવી શકાય છે. તેના પરથી,
+ચર્ચ--ટ્યુરિંગ માન્યતા વાપરીને, કોઈ પણ પ્રકારની પ્રક્રિયા
+વડે તેમને અસરકારક રીતે ગણી શકાતા નથી એવો નિષ્કર્ષ
+કાઢી શકાય છે. કારણ કે એવી પ્રક્રિયા હોય, તો
+ચર્ચ--ટ્યુરિંગ માન્યતા મુજબ તેને માટે ટ્યુરિંગ મશીન
+હોવું જોઈએ. તેથી જો તેને ગણતું ટ્યુરિંગ મશીન નથી
+એવું સાબિત કરી શકીએ, તો અસરકારક પ્રક્રિયા પણ
+હોઈ શકે નહીં. ખાસ કરીને, કહેવાતી અટકવાની સમસ્યા
+ટ્યુરિંગ મશીનોથી જ નહીં પરંતુ કોઈ પણ અસરકારક રીતે
+ઉકેલી શકાતી નથી એવો દાવો કરવા ચર્ચ--ટ્યુરિંગ
+માન્યતા વપરાય છે.
+% END OLP-0263
+\endgroup
+
+
+\OLEndChapterHook
+% END OLP-0253
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0264
+\olchapter{tur}{und}{અનિર્ણેયતા}
+\olchapterid{tur}{und}
+\phantomsection\label{guunit:OLP-0264}
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0265
+\olfileid{tur}{und}{int}
+\olsection{પરિચય}
+\phantomsection\label{guunit:OLP-0265}
+
+
+પ્રથમ નજરે એવું સ્પષ્ટ લાગશે કે કેટલાક વિધેયો, અંકગણિતીય
+વિધેયો પણ, અસંગણનીય છે. આવાં વિધેયો એટલાં બધાં છે
+અને તેમનું વર્તન એટલું
+જટિલ છે. દાખલા તરીકે, કિરણોત્સર્ગી કણોના ક્ષય પરથી, અથવા
+બીજા અવ્યવસ્થિત કે યાદૃચ્છિક વર્તન પરથી વ્યાખ્યાયિત વિધેયો લો.
+ધારો કે આપણે કોઈ આપેલી ક્ષણથી એક-સેકંડના સમયગાળાની ગણતરી
+શરૂ કરીએ અને તે પ્રારંભિક ક્ષણ પછીના $n$મા એક-સેકંડના
+સમયગાળામાં બ્રહ્માંડના ક્ષય પામતા કણોની સંખ્યા $f(n)$ તરીકે
+વ્યાખ્યાયિત કરીએ. આ વિધેય કદાચ એવું લાગે કે તેને કદી
+ગણવાની આશા રાખી શકાય નહીં.
+
+પરંતુ આવા વિધેયો કેવી રીતે ગણવા તેની કલ્પના ન થઈ શકે એ એક
+વાત છે; તેઓ અસંગણનીય છે તે ખરેખર સાબિત કરવું બીજી વાત છે.
+હકીકતમાં, અત્યંત જટિલ લાગતાં વિધેયો પણ અમૂર્ત અર્થમાં
+સંગણનીય હોઈ શકે. ઉદાહરણ તરીકે, ધારો કે બ્રહ્માંડ સમયની
+દૃષ્ટિએ સાન્ત છે---કેટલાક બ્રહ્માંડવિજ્ઞાનના સિદ્ધાંતોની
+આગાહી મુજબ, દૂરના ભવિષ્યમાં કોઈ દિવસે તે સંકોચાઈને એક જ
+બિંદુ બની જશે. તો એ પ્રારંભિક ક્ષણ પછી $f(n)$ વ્યાખ્યાયિત
+હોય એવા સેકંડોની સંખ્યા સાન્ત (જોકે અતિ વિશાળ) હશે.
+માત્ર સાન્ત સંખ્યામાં ઇનપુટ માટે વ્યાખ્યાયિત કોઈ પણ વિધેય
+સંગણનીય છે: આપણે તેના આઉટપુટ એક મોટા કોષ્ટકમાં લખી શકીએ,
+અથવા તેમને અત્યંત મોટા ટ્યુરિંગ મશીનના અવસ્થા-આલેખમાં
+સંકેતિત કરી શકીએ.
+
+ઘણી વાર આપણને એવા વિધેયોના ખાસ કિસ્સાઓમાં રસ હોય છે
+જેનાં મૂલ્યો હા/ના પ્રશ્નોના જવાબ આપે છે. ઉદાહરણ તરીકે,
+``$n$ અવિભાજ્ય સંખ્યા છે?'' એ પ્રશ્નની સાથે નીચેનું વિધેય જોડાય છે:
+\[
+\fn{isprime}(n) = \begin{cases}
+  1 & \text{જો $n$ અવિભાજ્ય હોય}\\
+  0 & \text{અન્યથા.}
+  \end{cases}
+\]
+સંબંધિત $1/0$-મૂલ્યવાળું વિધેય અસરકારક રીતે સંગણનીય હોય,
+તો આપણે કહીએ કે હા/ના પ્રશ્નનો \emph{અસરકારક રીતે નિર્ણય}
+કરી શકાય છે.
+
+કેટલાંક વિધેયો અસરકારક રીતે ગણી શકાતાં નથી, અથવા કેટલીક
+સમસ્યાઓનો અસરકારક રીતે નિર્ણય કરી શકાતો નથી, તે ગણિતીય
+રીતે સાબિત કરવા સંગણનનું કોઈ એક ચોક્કસ નિદર્શ નક્કી કરવું
+અને તે કેટલાંક વિધેયો ગણી કે કેટલીક સમસ્યાઓનો નિર્ણય
+કરી શકતું નથી તે બતાવવું આવશ્યક છે. દાખલા તરીકે, દરેક
+વિધેય ટ્યુરિંગ મશીન વડે ગણી શકાતું નથી અને દરેક સમસ્યાનો
+ટ્યુરિંગ મશીન વડે નિર્ણય કરી શકાતો નથી તે આપણે બતાવી
+શકીએ. પછી ચર્ચ--ટ્યુરિંગ માન્યતાનો આધાર લઈને તારવી
+શકીએ કે માત્ર ટ્યુરિંગ મશીનો જ દરેક વિધેય ગણવા માટે
+અસમર્થ નથી; ટ્યુરિંગ મશીન વડે ન ગણી શકાય તેવા વિધેયો
+કોઈ અસરકારક પ્રક્રિયા વડે પણ ગણી શકાતા નથી.
+
+આવા નકારાત્મક પરિણામોની સાબિતીમાં મુખ્ય બાબત એ છે કે
+ટ્યુરિંગ મશીનોને જ સંખ્યાઓ આપી શકાય છે. એ માટેનો સૌથી
+સરળ રસ્તો તેમની પરિગણના કરવાનો છે: મશીનો અને તેમના
+પ્રોગ્રામ લખવાની કોઈ ચોક્કસ રીત નક્કી કરી, પછી તેમને
+ક્રમબદ્ધ રીતે યાદીમાં મૂકી શકાય. આમ કરી શકાય છે એ
+જોયા પછી, ટ્યુરિંગ મશીન વડે અસંગણનીય વિધેયોનું અસ્તિત્વ
+ગણાંકના સરળ વિચારોથી ફલિત થાય છે: $\Nat$થી~$\Nat$માં
+જતાં વિધેયોનો ગણ (હકીકતમાં, $\Nat$થી~$\{0, 1\}$માં
+જતાં વિધેયોનો ગણ પણ) અપરિગણનીય છે; પરંતુ બધાં
+ટ્યુરિંગ મશીનોની પરિગણના કરી શકાય છે, તેથી ટ્યુરિંગ-સંગણનીય
+વિધેયોનો ગણ માત્ર ગણનીય છે.
+
+આપણે \emph{ચોક્કસ} વિધેયો અને સમસ્યાઓ પણ વ્યાખ્યાયિત
+કરી શકીએ, અને અનુક્રમે તેમનું અસંગણનીય તથા અનિર્ણેય
+હોવું સાબિત કરી શકીએ. આવી એક સમસ્યા કહેવાતી
+\emph{અટકવાની સમસ્યા} છે. ટ્યુરિંગ મશીનની સૂચનાઓની
+યાદી આપીને તેનું સાન્ત વર્ણન કરી શકાય છે. ટ્યુરિંગ
+મશીનનું એવું વર્ણન, એટલે ટ્યુરિંગ મશીનનો પ્રોગ્રામ,
+અલબત્ત બીજા ટ્યુરિંગ મશીનને ઇનપુટ તરીકે આપી શકાય.
+તેથી આપણે એવા ટ્યુરિંગ મશીનો વિચારીએ જે બીજાં
+ટ્યુરિંગ મશીનો વિશેના પ્રશ્નોનો નિર્ણય કરે. ખાસ
+રસપ્રદ પ્રશ્ન આ છે: ``આપેલું ટ્યુરિંગ મશીન ઇનપુટ~$n$
+પર શરૂ કરતાં છેવટે અટકશે?'' આ પ્રશ્નનો નિર્ણય
+કરી શકતું ટ્યુરિંગ મશીન હોય તો સારું: તેને ગુણવત્તા
+તપાસતું ટ્યુરિંગ મશીન માનો, જે બીજા મશીનો અનંત
+ચક્રમાં ફસાઈ ન જાય તેની ખાતરી કરે. ટ્યુરિંગે સાબિત
+કરેલી રસપ્રદ હકીકત એ છે કે આવું મશીન હોઈ શકે નહીં.
+ટ્યુરિંગ મશીન~$M$ના વર્ણન અને કોઈ સંખ્યા~$n$નો
+ઇનપુટ આપતાં હંમેશાં અટકે અને, $M$ ઇનપુટ~$n$ પર
+અટકે કે ન અટકે તે મુજબ અનુક્રમે $1$ કે $0$ આપે,
+એવું કોઈ એક ટ્યુરિંગ મશીન હોઈ શકે નહીં.
+
+ચોક્કસ અનિર્ણેય સમસ્યાઓનાં ઉદાહરણો મળ્યા પછી બીજી
+સમસ્યાઓ પણ અનિર્ણેય છે તે બતાવવા તેમનો ઉપયોગ
+કરી શકીએ. દાખલા તરીકે, પ્રસિદ્ધ અનિર્ણેય પ્રશ્ન છે:
+``પ્રથમ-ક્રમનું સૂત્ર~$!A$ પ્રામાણ્ય ધરાવે છે?''
+ઇનપુટ તરીકે પ્રથમ-ક્રમનું સૂત્ર~$!A$ આપવામાં આવે
+ત્યારે, $!A$ પ્રામાણ્ય ધરાવે છે કે નહીં તે મુજબ $1$ કે
+$0$ આઉટપુટ સાથે અટકશે તેની ખાતરી હોય એવું કોઈ ટ્યુરિંગ
+મશીન નથી. ઐતિહાસિક રીતે, આ સમસ્યાને અસરકારક રીતે
+ઉકેલવાની પ્રક્રિયા શોધવાના પ્રશ્નને સાદી રીતે ``નિર્ણય
+સમસ્યા'' કહેવાતો; તેથી આપણે કહીએ છીએ કે નિર્ણય સમસ્યા
+ઉકેલી શકાતી નથી. ટ્યુરિંગ અને ચર્ચે આશરે એક જ સમયે સ્વતંત્ર
+રીતે આ પરિણામ સાબિત કર્યું હતું, તેથી તેને ચર્ચ--ટ્યુરિંગ
+પ્રમેય પણ કહે છે.
+% END OLP-0265
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0266
+\olfileid{tur}{und}{enu}
+\olsection{ટ્યુરિંગ મશીનોની પરિગણના}
+\phantomsection\label{guunit:OLP-0266}
+
+
+\begin{explain}
+બધાં ટ્યુરિંગ મશીનોનો ગણ પરિગણનીય છે એ આપણે બતાવી શકીએ.
+દરેક ટ્યુરિંગ મશીનનું સાન્ત વર્ણન આપી શકાય છે, તેમાંથી આ
+વાત ફલિત થાય છે. અવસ્થાઓનો ગણ અને ટેપની વર્ણમાળા સાન્ત
+ગણો છે. સંક્રમણ વિધેય એ $Q \times \Sigma$થી
+$Q \times \Sigma \times \{\TMleft, \TMright, \TMstay\}$માં
+જતું આંશિક વિધેય છે; તેથી જે સાન્ત સંખ્યામાં નિવેશ-જોડીઓ માટે તે
+વ્યાખ્યાયિત છે, તેમનાં મૂલ્યોની યાદી આપીને તેને પણ
+નિર્દિષ્ટ કરી શકાય છે.
+
+અત્યાર સુધીની વાત સાચી છે, છતાં અહીં એક સૂક્ષ્મ ભેદ છે.
+ટ્યુરિંગ મશીનની વ્યાખ્યાએ અવસ્થાઓના ગણ અને ટેપની
+વર્ણમાળામાં કેવા ઘટકો હોઈ શકે તેના પર કોઈ
+પ્રતિબંધ મૂક્યો નથી. તેથી, દાખલા તરીકે, દરેક વાસ્તવિક
+સંખ્યા માટે તકનીકી અર્થમાં એવું ટ્યુરિંગ મશીન છે જે તે
+સંખ્યાને અવસ્થા તરીકે વાપરે છે. જોકે મશીનનું \emph{વર્તન}
+કયા પદાર્થો અવસ્થાઓ અને ચિહ્નો તરીકે કામ કરે છે તેના પર
+આધારિત નથી. \olref{fig:variants}નાં બે ટ્યુરિંગ મશીનો જુઓ.
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+  \node[initial,state]         (A)              {$q_0$};
+  \node[state]         (B) [right of=A] {$q_1$};
+
+  \path (A) edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+        (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+            edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
+\end{tikzpicture}\\
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+  semithick]
+\tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+\node[initial,state]         (A)              {$s$};
+\node[state]         (B) [right of=A] {$h$};
+
+\path (A) edge [bend left] node {\TMtrans{A}{A}{\TMright}} (B)
+(B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
+edge [bend left] node {\TMtrans{A}{A}{\TMright}} (A);
+\end{tikzpicture}
+\end{center}
+\caption{\emph{સમ} મશીનનાં બે રૂપ}
+\ollabel{fig:variants}
+\end{figure}
+આ બે આલેખ બે મશીનોને અનુરૂપ છે: $M$ની ટેપ-વર્ણમાળા
+$\Sigma = \{\TMendtape,\TMblank,\TMstroke\}$ અને અવસ્થાઓનો
+ગણ $\{q_0,q_1\}$ છે, જ્યારે $M'$ની વર્ણમાળા $\Sigma' =
+\{\TMendtape,\TMblank,A\}$ અને અવસ્થાઓનો ગણ $\{s,h\}$
+છે. પરંતુ તેમની બાકીની સૂચનાઓ સમાન છે: $n$ સંખ્યાના
+$\TMstroke$ના ક્રમ પર $M$ ત્યારે અને માત્ર ત્યારે અટકે છે
+જ્યારે $n$ સમ હોય; અને $n$ સંખ્યાના $A$ના ક્રમ પર $M'$
+પણ ત્યારે અને માત્ર ત્યારે અટકે છે જ્યારે $n$ સમ હોય.
+આપણે માત્ર $\TMstroke$નું નામ~$A$, $q_0$નું નામ~$s$ અને
+$q_1$નું નામ~$h$ રાખ્યાં છે. આ દાખલાને સામાન્ય બનાવી
+શકાય: ચિહ્નો અને અવસ્થાઓનાં આવાં નામ બદલવાથી એકમાંથી
+બીજું મળે તો ટ્યુરિંગ મશીનોને સમાન માની શકીએ. હકીકતમાં,
+આપણે મશીનનાં ચિહ્નો અને અવસ્થાઓને સીધાં ધન પૂર્ણાંકો
+જ માની શકીએ: $\sigma_0$ને બદલે~$1$, $\sigma_1$ને
+બદલે~$2$ વગેરે; $\TMendtape$ એ~$1$, $\TMblank$ એ~$2$
+વગેરે. આ રીતે \emph{સમ} મશીન \olref{fig:standard-even}માં
+દર્શાવેલું મશીન બને છે.
+\begin{figure}
+\[\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+  semithick]
+\tikzstyle{every state}=[fill=none,draw=black,text=black]
+
+\node[initial,state]         (A)              {$1$};
+\node[state]         (B) [right of=A] {$2$};
+
+\path (A) edge [bend left] node {\TMtrans{3}{3}{\TMright}} (B)
+(B) edge [loop above] node {\TMtrans{2}{2}{\TMright}} (B)
+edge [bend left] node {\TMtrans{3}{3}{\TMright}} (A);
+\end{tikzpicture}
+\]
+\caption{માનક \emph{સમ} મશીન}
+\ollabel{fig:standard-even}
+\end{figure}
+જે ટ્યુરિંગ મશીનની અવસ્થાઓ અને ચિહ્નો ધન પૂર્ણાંકો છે
+તેને \emph{માનક} મશીન કહી શકીએ અને હવે પછી માત્ર માનક
+મશીનો જ વિચારીએ.\footnote{``માનક મશીન'' પરિભાષા
+સ્વયં માનક નથી.}
+
+આપણે ટ્યુરિંગ મશીનોનો ગણ પરિગણનીય છે તે બતાવવું
+હતું; ઉપરની ચર્ચા મુજબ માનક ટ્યુરિંગ મશીનોનો ગણ
+પરિગણનીય છે તે બતાવવું પૂરતું છે. ધારો કે માનક
+ટ્યુરિંગ મશીન $M = \tuple{Q, \Sigma, q_0, \delta}$
+આપેલું છે. ધન પૂર્ણાંકોની સાન્ત શ્રેણી વડે તેનું વર્ણન
+કેવી રીતે કરીએ? પહેલાં અવસ્થાઓની સંખ્યા, પછી અવસ્થાઓ,
+ચિહ્નોની સંખ્યા, ચિહ્નો અને પ્રારંભિક અવસ્થાની યાદી આપીએ.
+($M$ માનક હોવાથી આ બધાં ધન પૂર્ણાંકો છે એ યાદ રાખો.)
+હવે~$\delta$નું શું? શક્ય દલીલોનો ગણ, એટલે કે
+$\tuple{q,\sigma}$ જોડો, સાન્ત છે, કારણ કે $Q$ અને
+~$\Sigma$ સાન્ત છે. તેથી~$\delta$માં રહેલી માહિતી એ
+એવી બધી $5$ ઘટકોવાળી ક્રમયુક્ત શ્રેણીઓ
+$\tuple{q, \sigma, q', \sigma', d}$ની
+સાન્ત યાદી છે, જેમના માટે
+$\delta(q,\sigma) = \tuple{q', \sigma', D}$; અહીં $d$
+દિશા~$D$નો સંકેત આપતો અંક છે (જેમ કે~$\TMleft$ માટે
+$1$,~$\TMright$ માટે $2$ અને~$\TMstay$ માટે $3$).
+
+આ રીતે દરેક માનક ટ્યુરિંગ મશીનને ધન પૂર્ણાંકોની સાન્ત
+યાદી વડે, એટલે કે શ્રેણી $s_M \in (\PosInt)^*$ વડે,
+વર્ણવી શકાય છે. દાખલા તરીકે, માનક \emph{સમ} મશીનનો
+સંકેત આ શ્રેણી છે:
+\[
+2, \underbrace{1, 2}_Q, 3, \overbrace{1, 2, 3}^\Sigma, 1, \underbrace{1, 3, 2, 3, 2}_{\delta(1,3) = \tuple{2,3,R}},
+\overbrace{2, 2, 2, 2, 2}^{\delta(2,2) = \tuple{2,2,R}},
+\underbrace{2, 3, 1, 3, 2}_{\delta(2,3) = \tuple{1,3,R}}.
+\]
+\end{explain}
+
+\begin{thm}
+$\Nat$થી~$\Nat$માં જતાં કેટલાંક વિધેયો ટ્યુરિંગ-સંગણનીય
+નથી.
+\end{thm}
+
+\begin{proof}
+ધન પૂર્ણાંકોની સાન્ત શ્રેણીઓનો ગણ~$(\PosInt)^*$
+પરિગણનીય છે એ આપણે જાણીએ છીએ
+(\cref{sfr:siz:zigzag:prob:posint-star}). તેથી માનક
+ટ્યુરિંગ મશીનોનાં વર્ણનોનો ગણ, $(\PosInt)^*$નો ઉપગણ
+હોવાથી, પોતે પણ પરિગણનીય છે. $\Nat$થી~$\Nat$માં જતું
+દરેક ટ્યુરિંગ-સંગણનીય વિધેય કોઈ ટ્યુરિંગ મશીન વડે
+(હકીકતમાં, અનેક મશીનો વડે) ગણાય છે. તેની અવસ્થાઓ અને
+ચિહ્નોનાં નામ ધન પૂર્ણાંકો વડે બદલીને (ખાસ કરીને
+$\TMendtape$ને~$1$, $\TMblank$ને~$2$ અને
+$\TMstroke$ને~$3$ રાખીને) જોઈ શકાય છે કે દરેક
+ટ્યુરિંગ-સંગણનીય વિધેય કોઈ માનક ટ્યુરિંગ મશીન વડે
+ગણાય છે. એટલે $\Nat$થી~$\Nat$માં જતાં બધાં
+ટ્યુરિંગ-સંગણનીય વિધેયોનો ગણ પણ પરિગણનીય છે.
+
+બીજી તરફ, $\Nat$થી~$\Nat$માં જતાં બધાં વિધેયોનો
+ગણ પરિગણનીય નથી (\cref{sfr:siz:red:prob:nat-nat}).
+જો દરેક વિધેય કોઈ ટ્યુરિંગ મશીન વડે સંગણનીય હોત,
+તો તેમનું સંગણન કરતાં મશીનોનાં બધાં વર્ણનોની યાદી
+આપીને બધાં વિધેયોની પરિગણના કરી શકાત. તેથી કેટલાંક
+વિધેયો ટ્યુરિંગ-સંગણનીય નથી.
+\end{proof}
+
+\begin{prob}
+  અવસ્થાઓ અને વર્ણમાળાનાં ચિહ્નોની સ્પષ્ટ યાદી આપવી ન
+  પડે એ રીતે ટ્યુરિંગ મશીનોનું વર્ણન કેવી રીતે આપી શકાય
+  તે વિચારો. ``માનક'' મશીનની તમારી પોતાની વ્યાખ્યા આપી
+  શકો છો; પરંતુ તમારા નવા અર્થમાં દરેક ટ્યુરિંગ મશીન
+  જે વિધેય ગણે છે તે કોઈ ``માનક'' મશીન પણ કેમ ગણી
+  શકે તે વિશે કંઈક કહો.
+  \sourcecorrection{OLUN-004}{સ્થિર અંગ્રેજી મૂળમાં
+  મશીનની જ સંગણના કરવાની વાત છે; અહીં અર્થ તેના
+  અવસ્થા અને ચિહ્નોનાં નામ બદલીને સમાન સંગણન
+  કરતું માનક મશીન મેળવવાનો છે.}
+\end{prob}
+% END OLP-0266
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0267
+\olfileid{tur}{und}{uni}
+\olsection{સર્વવ્યાપી ટ્યુરિંગ મશીનો}
+\phantomsection\label{guunit:OLP-0267}
+
+
+\olref[enu]{sec}માં આપણે ચર્ચ્યું કે દરેક ટ્યુરિંગ મશીનનું
+વર્ણન પૂર્ણાંકોની સાન્ત શ્રેણી વડે કરી શકાય છે. આ શ્રેણી
+મશીનની અવસ્થાઓ, વર્ણમાળા, પ્રારંભિક અવસ્થા અને સૂચનાઓને
+સંકેતિત કરે છે. આ બધાં વર્ણનોનો ગણ પરિગણનીય છે એ
+પણ આપણે નોંધ્યું. આવાં વર્ણનોનો ગણ ગણનીય હોવાથી
+~$\Nat$થી આ વર્ણનોમાં જતું કોઈ વ્યાપ્ત વિધેય છે.
+દાખલા તરીકે, કેન્ટરની આડીઅવળી રીત વડે આવું
+વ્યાપ્ત વિધેય મેળવી શકાય. તે બધાં ટ્યુરિંગ
+મશીનોનાં (વર્ણનોનાં) પરિગણનાનો રસ્તો આપે છે. આવી કોઈ
+એક પરિગણના નક્કી કરીએ, તો હવે $1$મું, $2$જું, \dots,
+$e$મું ટ્યુરિંગ મશીન કહેવાનો અર્થ બને છે. આ અંકોને
+\emph{સૂચકો} કહે છે.
+
+\begin{defn}
+આપણી નક્કી કરેલી પરિગણનામાં $M$ એ $e$મું ટ્યુરિંગ
+મશીન હોય, તો $e$ને~$M$નો \emph{સૂચક} કહીએ છીએ.
+$e$મા ટ્યુરિંગ મશીન માટે $M_e$ લખીએ છીએ.
+\end{defn}
+
+એક મશીનને એક કરતાં વધુ સૂચકો હોઈ શકે. દાખલા તરીકે,
+~$M$નાં બે વર્ણનોમાં તેની સૂચનાઓની યાદીનો ક્રમ જુદો
+હોઈ શકે; આવા જુદા વર્ણનોને જુદા સૂચકો મળશે.
+
+અગત્યની વાત એ છે કે ટ્યુરિંગ મશીનોનાં વર્ણનોની પરિગણના
+એવી રીતે આપી શકાય છે કે મશીનના સૂચકમાંથી~$M$નું વર્ણન
+અસરકારક રીતે ગણી શકાય, અને મશીન~$M$ના વર્ણનમાંથી
+તેનો કોઈ સૂચક અસરકારક રીતે ગણી શકાય. પછી ચર્ચ--ટ્યુરિંગ
+માન્યતા મુજબ એવું ટ્યુરિંગ મશીન મેળવી શકાય છે જે
+સૂચક~$e$વાળા ટ્યુરિંગ મશીનનું વર્ણન પાછું મેળવે અને
+તે વર્ણનને આઉટપુટ તરીકે પોતાની ટેપ પર લખે. આ વર્ણન
+~$\TMstroke$ના ખંડોની શ્રેણી હશે (જે~$M_e$નું વર્ણન
+કરતી શ્રેણીના ધન પૂર્ણાંકો દર્શાવે છે).
+
+આથી હવે સ્વાભાવિક રીતે પ્રશ્ન થાય: ટ્યુરિંગ મશીનોના
+સૂચકો પરનાં કયાં વિધેયો પોતે ટ્યુરિંગ મશીન વડે સંગણનીય
+છે? સૂચકોનાં કયાં ગુણધર્મોનો ટ્યુરિંગ મશીન વડે નિર્ણય
+કરી શકાય? દાખલો લો: સૂચક~$e$ને સૂચક~$e$વાળા ટ્યુરિંગ
+મશીનની અવસ્થાઓની સંખ્યા સાથે જોડતું વિધેય ટ્યુરિંગ
+મશીન વડે સંગણનીય છે. આવું મશીન શું કરશે તે જુઓ:
+તેની ટેપ પર $e$ જેટલા~$\TMstroke$નો એક ખંડ હોય ત્યારે
+તે પહેલાં $e$માંથી મશીનનું વર્ણન કાઢશે. હવે ટેપ પર
+વર્ણન~$\TMstroke$ના ખંડોની શ્રેણી વડે દર્શાવાયેલું છે.
+આ શ્રેણીનો પહેલો ઘટક અવસ્થાઓની સંખ્યા છે.
+તેથી હવે પહેલા~$\TMstroke$ના ખંડ સિવાયનું બધું ભૂંસીને
+મશીન અટકી જાય એટલું જ કરવાનું રહે છે.
+
+નીચેનું પરિણામ નોંધપાત્ર છે:
+
+\begin{thm}\ollabel{thm:universal-tm} એવું \emph{સર્વવ્યાપી
+  ટ્યુરિંગ મશીન}~$U$ છે કે ઇનપુટ $\tuple{e,n}$ પર શરૂ કરતાં
+  \begin{enumerate}
+    \item $M_e$ ઇનપુટ~$n$ પર અટકે ત્યારે અને માત્ર ત્યારે જ તે અટકે છે, અને
+    \item $M_e$ આઉટપુટ $m$ સાથે અટકે, તો~$U$ પણ તેમ જ અટકે છે.
+  \end{enumerate}
+  આમ, $U$ એ $f\colon \Nat \times \Nat \pto \Nat$ વિધેય
+  ગણે છે: $M_e$ ઇનપુટ~$n$ પર શરૂ કરીને આઉટપુટ~$m$
+  સાથે અટકે ત્યારે $f(e,n) = m$, અને અન્યથા તે અવ્યાખ્યાયિત છે.
+\end{thm}
+
+\begin{proof}
+  ખરેખર~$U$નું સંપૂર્ણ બાંધકામ આપવું વ્યવહારમાં લગભગ અશક્ય
+  છે, કારણ કે તે અત્યંત જટિલ મશીન છે. પરંતુ તે કેવી રીતે
+  કામ કરે છે તેની રૂપરેખા આપી, પછી ચર્ચ--ટ્યુરિંગ માન્યતાનો
+  આધાર લઈ શકીએ. શરૂઆતમાં~$U$ની ટેપ પર $e$ જેટલા
+  $\TMstroke$નો ખંડ, ત્યાર પછી $n$ જેટલા~$\TMstroke$નો
+  ખંડ હોય છે. તે પહેલાં સૂચક~$e$માંથી મશીનનું વર્ણન
+  કાઢીને ઇનપુટ~$n$ની જમણી બાજુ લખે છે. આમ મશીન~$M_e$ની
+  સૂચનાઓનું વર્ણન કરતી સંખ્યાઓની યાદી મળે છે (એટલે
+  ~$\TMblank$થી છૂટા પડેલા~$\TMstroke$ના ખંડો).
+  પછી~$U$,~$M_e$ના વર્ણનની જમણી બાજુ,~$M_e$ની પ્રારંભિક
+  અવસ્થાનો અંક અને સંખ્યા~$1$ ટેપ પર લખે છે. (ફરીથી,
+  આ અંકો~$\TMstroke$ના ખંડો તરીકે એકકી સ્વરૂપમાં દર્શાવાય
+  છે.) ત્યાર પછી તે ઇનપુટ ($n$ જેટલા~$\TMstroke$નો ખંડ)
+  જમણી બાજુ નકલ કરે છે---પરંતુ દરેક $\TMstroke$ને
+  ત્રણ $\TMstroke$ના ખંડથી બદલે છે (યાદ રાખો,
+  $\TMstroke$ ચિહ્નનો અંક~$3$ છે; $\TMendtape$નો અંક
+  $1$ અને $\TMblank$નો અંક $2$ છે). આ ખંડોની શ્રેણીના
+  ડાબા છેડે (~$U$ની ટેપ પર $\TMblank$ ચિહ્નોથી છૂટા
+  પડેલા ખંડોમાં) તે એક~$\TMstroke$ લખે છે, જે
+  ~$\TMendtape$નો સંકેત છે.
+
+  હવે~$U$ની ટેપ પર આ બધું છે: સૂચક~$e$, સંખ્યા~$n$,
+  પ્રારંભિક અવસ્થાનો સંકેત-અંક (``વર્તમાન અવસ્થા''),
+  પ્રારંભિક હેડ-સ્થાનનો અંક~$1$ (``વર્તમાન હેડ-સ્થાન''),
+  અને ``ટેપ''ની પ્રારંભિક સામગ્રી (~$\TMblank$થી છૂટા
+  પડેલા~$\TMstroke$ના ખંડોની શ્રેણી, જે~$M_e$નાં
+  ચિહ્નોના સંકેત-અંકો---``ચિહ્નો''---દર્શાવે છે).
+
+  હવે નીચેના પગલાં લઈને તે ઇનપુટ~$n$ પર શરૂ કરાયેલું
+  $M_e$ શું કરે તેની અનુકૃતિ કરે છે:
+  \begin{enumerate}
+    \item ``વર્તમાન હેડ-સ્થાન''નો અંક~$k$ શોધો
+    (શરૂઆતમાં તે~$1$ છે),
+    \item ``ટેપ''ના $k$મા ખંડ પાસે જઈને ત્યાં કયું
+    ``ચિહ્ન'' છે તે જુઓ,
+    \item\ollabel{find-inst}%
+    વર્તમાન ``અવસ્થા'' અને ``ચિહ્ન''ને મળતી સૂચના શોધો,
+    \item ``ટેપ''ના $k$મા ખંડ પર પાછા જઈ ત્યાંનું
+    ``ચિહ્ન''~$M_e$ જે ચિહ્ન લખે તેના સંકેત-અંકથી બદલો,
+    \item વર્તમાન ``અવસ્થા''ની નોંધ જ્યાં છે ત્યાં હેડ
+    લઈ જઈ એ અંકને નવી અવસ્થાના અંકથી બદલો,
+    \item ``ટેપ-સ્થાન''ની નોંધ પાસે જઈ એક~$\TMstroke$
+    ભૂંસો અથવા એક~$\TMstroke$ ઉમેરો (સૂચના અનુક્રમે
+    ડાબે કે જમણે જવાનું કહે ત્યારે).
+    \item ફરી કરો.\footnote{અહીં કેટલીક સૂક્ષ્મ મુશ્કેલીઓ
+    છોડીને ચાલીએ છીએ. દાખલા તરીકે, ``વર્તમાન હેડ-સ્થાન''નો
+    હિસાબ રાખતું ગણક વધારતી વખતે~$U$ને વધારે જગ્યા
+    જોઈતી થઈ શકે---એ કિસ્સામાં આખી ``ટેપ'' જમણી બાજુ
+    ખસેડવી પડશે.}
+  \end{enumerate}
+  ઇનપુટ~$n$ પર શરૂ કરાયેલું $M_e$ કદી ન અટકે, તો~$U$
+  પણ કદી નથી અટકતું, એટલે તેનું આઉટપુટ અવ્યાખ્યાયિત છે.
+
+  પગલું~\olref{find-inst}માં~$M_e$ના વર્ણનમાં વર્તમાન
+  ``અવસ્થા''/``ચિહ્ન'' જોડ માટે કોઈ સૂચના નથી એવું જણાય,
+  તો~$M_e$ અટકતું. આ થાય તો~$U$ પોતાની ટેપનો
+  ``ટેપ''ની ડાબી બાજુનો ભાગ ભૂંસે છે. તે ત્રણ
+  ~$\TMstroke$ના દરેક ખંડ માટે (જે~$M_e$ની ટેપ પરના
+  એક~$\TMstroke$ને દર્શાવે છે) પોતાની ટેપના ડાબા છેડે
+  એક $\TMstroke$ લખે છે અને ``ટેપ''ને ક્રમે ભૂંસે છે.
+  આ પૂરું થાય ત્યારે~$U$ની ટેપ પર લંબાઈ~$m$વાળો
+  ~$\TMstroke$નો એક જ ખંડ હોય છે.
+
+  ``ટેપ'' પર ત્રણ~$\TMstroke$ના ખંડ સિવાયનું કંઈ
+  $U$ને મળે, તો તે તરત અટકી જાય છે. આ કિસ્સામાં
+  ~$U$ની ટેપ પર~$\TMstroke$નો એક જ ખંડ ન હોવાથી
+  તેનું આઉટપુટ પ્રાકૃતિક સંખ્યા નથી, એટલે આ કિસ્સામાં
+  $f(e,n)$ અવ્યાખ્યાયિત છે.
+\end{proof}
+% END OLP-0267
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0268
+\olfileid{tur}{und}{hal}
+\olsection{અટકવાની સમસ્યા}
+\phantomsection\label{guunit:OLP-0268}
+
+
+\begin{explain}
+માનો કે આપણે ટ્યુરિંગ મશીનોનાં વર્ણનોની કોઈ પરિગણના
+નક્કી કરી છે. તેથી દરેક ટ્યુરિંગ મશીનને એક
+\emph{સૂચક} મળે છે: મશીનોનાં વર્ણનોની પરિગણના
+$M_1$, $M_2$, $M_3$, \dots{}માં તેનું સ્થાન.
+
+ટ્યુરિંગ-અસંગણનીય વિધેયો હોવાં જ જોઈએ એ આપણે
+જાણીએ છીએ: ટ્યુરિંગ મશીનોનાં વર્ણનોનો ગણ---અને તેથી
+ટ્યુરિંગ મશીનોનો ગણ---પરિગણનીય છે, પરંતુ
+$\Nat$થી $\Nat$માં જતાં બધાં વિધેયોનો ગણ એવો નથી.
+તેમ છતાં આપણે અસંગણનીય વિધેયોનાં ચોક્કસ ઉદાહરણો પણ
+મેળવી શકીએ. આવું એક વિધેય અટકવાનું વિધેય છે.
+\end{explain}
+
+\begin{defn}[અટકવાનું વિધેય]
+ \emph{અટકવાનું વિધેય}~$h$ આ રીતે વ્યાખ્યાયિત છે:
+\[
+h(e,n) =
+\begin{cases}
+  \text{0} & \text{જો મશીન~$M_e$ ઇનપુટ $n$ પર ન અટકે} \\
+  \text{1} & \text{જો મશીન~$M_e$ ઇનપુટ $n$ પર અટકે}
+\end{cases}
+\]
+\end{defn}
+
+\begin{defn}[અટકવાની સમસ્યા]
+\emph{અટકવાની સમસ્યા} એટલે કોઈ પણ $e$, $n$ માટે,
+ટ્યુરિંગ મશીન~$M_e$~$n$ સ્ટ્રોકના
+ઇનપુટથી શરૂ કરતાં અટકે છે કે નહીં તે નક્કી કરવાની
+સમસ્યા.
+\end{defn}
+
+\begin{explain}
+સંબંધિત વિધેય~$s$ ટ્યુરિંગ-સંગણનીય નથી એવું બતાવીને
+આપણે~$h$ પણ ટ્યુરિંગ-સંગણનીય નથી એવું બતાવીએ છીએ.
+આ સાબિતી એ હકીકતો પર આધાર રાખે છે કે ટ્યુરિંગ મશીન
+વડે ગણી શકાય તે બધું શિસ્તબદ્ધ ટ્યુરિંગ મશીન વડે પણ
+ગણી શકાય છે (\olref[mac][dis]{sec}), અને બે ટ્યુરિંગ
+મશીનોને જોડીને એક મશીન બનાવી શકાય છે
+(\olref[mac][cmb]{sec}).
+\end{explain}
+
+\begin{defn} વિધેય~$s$ આ રીતે વ્યાખ્યાયિત છે:
+\[
+s(e) =
+\begin{cases}
+  \text{0} & \text{જો મશીન~$M_e$ ઇનપુટ $e$ પર ન અટકે} \\
+  \text{1} & \text{જો મશીન~$M_e$ ઇનપુટ $e$ પર અટકે}
+\end{cases}
+\]
+\end{defn}
+
+\begin{lem}
+વિધેય~$s$ ટ્યુરિંગ-સંગણનીય નથી.
+\end{lem}
+
+\begin{proof}
+વિરોધાભાસ માટે માનો કે વિધેય~$s$ ટ્યુરિંગ-સંગણનીય
+છે. તો~$s$ ગણતું ટ્યુરિંગ મશીન~$S$ હોત. વ્યાપકતા
+ગુમાવ્યા વિના ધારી શકીએ કે $S$ અટકે ત્યારે પ્રથમ
+ખાનાને વાંચતું હોય (એટલે તે શિસ્તબદ્ધ હોય). આ
+મશીનને બીજા મશીન~$J$ સાથે ``જોડી'' શકાય. તે ઇનપુટ
+~$0$ પર શરૂ થાય તો અટકે છે (એટલે શરૂઆતની અવસ્થામાં,
+ટેપના છેડાના ચિહ્નની જમણી બાજુના ખાનાને વાંચતી વખતે
+$\TMblank$ વાંચે તો અટકે છે); અન્યથા તે કદી ન અટકીને
+જમણી બાજુ ભટકતું રહે છે. $S$ને~$J$ સાથે જોડીને
+બનેલું મશીન $S \concat J$ પણ ટ્યુરિંગ મશીન છે;
+તેથી કોઈ~$e$ માટે તે $M_e$ છે (એટલે તે પરિગણનામાં
+ક્યાંક આવે છે). હવે~$M_e$ને~$e$ જેટલા $\TMstroke$ના
+ઇનપુટથી શરૂ કરો. બે શક્યતાઓ છે: $M_e$ અટકે છે
+અથવા નથી અટકતું.
+\begin{enumerate}
+\item માનો કે~$M_e$,~$e$ જેટલા $\TMstroke$ના ઇનપુટ
+  પર અટકે છે. તો $s(e) = 1$. તેથી~$S$ને ઇનપુટ~$e$
+  પર શરૂ કરતાં તે ટેપ પર આઉટપુટ તરીકે એક જ
+  $\TMstroke$ રાખીને અટકે છે. ત્યાર પછી~$J$ ટેપ પર
+  $\TMstroke$ હોય ત્યારે શરૂ થાય છે. આ કિસ્સામાં~$J$
+  અટકતું નથી. પરંતુ~$M_e$ એ $S \concat J$ મશીન જ
+  છે, તેથી તેને $S$ અને પછી $J$ જે કરે તે જ કરવું
+  પડે (એટલે આ કિસ્સામાં જમણી બાજુ ભટકીને કદી ન
+  અટકવું પડે). તેથી~$e$ જેટલા $\TMstroke$ના ઇનપુટ
+  પર~$M_e$ અટકી શકે નહીં.
+
+\item હવે માનો કે~$M_e$,~$e$ જેટલા $\TMstroke$ના
+  ઇનપુટ પર અટકતું નથી. તો $s(e) = 0$, અને~$S$ને
+  ઇનપુટ~$e$ પર શરૂ કરતાં તે ખાલી ટેપ સાથે અટકે છે.
+  ખાલી ટેપ પર શરૂ કરાયેલું~$J$ તરત અટકે છે. ફરી,
+  $M_e$ એ $S$ અને પછી~$J$ જે કરે તે જ કરે છે;
+  તેથી~$e$ જેટલા $\TMstroke$ના ઇનપુટ પર~$M_e$
+  અટકવું જ જોઈએ.
+\end{enumerate}
+બંને કિસ્સામાં ધારણા સાથે વિરોધાભાસ મળે છે. તેથી
+આવું ટ્યુરિંગ મશીન~$S$ હોઈ શકે નહીં: $s$ ટ્યુરિંગ-સંગણનીય
+નથી.
+\end{proof}
+
+\begin{thm}[અટકવાની સમસ્યા ઉકેલી ન શકાય]
+\ollabel{thm:halting-problem} અટકવાની સમસ્યા ઉકેલી
+શકાતી નથી, એટલે વિધેય~$h$ ટ્યુરિંગ-સંગણનીય નથી.
+\end{thm}
+
+\begin{proof}
+માનો કે~$h$ ટ્યુરિંગ-સંગણનીય છે અને તેને ટ્યુરિંગ
+મશીન~$H$ ગણે છે. $H$ વડે~$s$ ગણતું ટ્યુરિંગ મશીન
+બનાવી શકીએ: પહેલાં ઇનપુટની એક નકલ કરો (તેને
+~$\TMblank$ ચિહ્નથી છૂટી રાખીને); પછી શરૂઆતમાં
+પાછા જઈ~$H$ ચલાવો. પહેલું કામ કરતું મશીન સ્પષ્ટપણે
+બનાવી શકાય છે (\cref{tur:mac:dis:prob:copier});
+અને જો $H$ હોત, તો તેને આવા નકલ કરનારા મશીન સાથે
+``જોડીને'' એવું નવું મશીન મેળવી શકાત જે~$M_e$
+ઇનપુટ~$e$ પર અટકે છે કે નહીં તે નક્કી કરે, એટલે~$s$
+ગણે. પરંતુ આવું કોઈ મશીન હોઈ શકે નહીં એ આપણે પહેલેથી
+બતાવ્યું છે. તેથી~$h$ પણ ટ્યુરિંગ-સંગણનીય નથી.
+\end{proof}
+
+\begin{prob}
+ત્રણ-અટક (3-Halt) સમસ્યા એટલે અન્યથા ખાલી ટેપ પર
+ત્રણ $\TMstroke$ના ઇનપુટ માટે મનસ્વી પસંદ કરેલું
+ટ્યુરિંગ મશીન અટકે છે કે નહીં તે નક્કી કરતી નિર્ણય-વિધિ
+આપવાની સમસ્યા. ત્રણ-અટક સમસ્યા ઉકેલી શકાતી નથી
+તે સાબિત કરો.
+\end{prob}
+
+\begin{prob}
+બતાવો કે~$e \neq n$ હોય તેવા ટ્યુરિંગ મશીન અને ઇનપુટ
+જોડ $M_e$ તથા~$n$ માટે અટકવાની સમસ્યા ઉકેલી શકાય,
+તો $e = n$ હોય તેવા કિસ્સાઓ માટે પણ ઉકેલી શકાય છે.
+\end{prob}
+
+\begin{prob}
+અમે સાબિત કર્યું કે ઇનપુટ તરીકે સંખ્યા~$e$ આપવામાં આવે,
+જે બધાં ટ્યુરિંગ મશીનોની પરિગણનામાં મશીન~$M_e$ને
+ઓળખાવે છે, ત્યારે અટકવાની સમસ્યા ઉકેલી શકાતી નથી.
+જો ઇનપુટ તરીકે~\olref[tur][und][enu]{sec}માંનાં
+ટ્યુરિંગ મશીનોનાં વર્ણનો સીધાં આપવાની છૂટ આપીએ તો?
+શું સૂચકોને બદલે મશીનોનાં વર્ણનો ઇનપુટ તરીકે લેતું,
+અટકવાની સમસ્યાનો નિર્ણય કરતું ટ્યુરિંગ મશીન હોઈ
+શકે? કેમ અથવા કેમ નહીં તે સમજાવો.
+\end{prob}
+
+\begin{prob} બતાવો કે નીચે પ્રમાણે વ્યાખ્યાયિત
+  \emph{આંશિક} વિધેય~$s'$ ટ્યુરિંગ-સંગણનીય \emph{છે}:
+  \[
+  s'(e) =
+  \begin{cases}
+    \text{1} & \text{જો મશીન~$M_e$ ઇનપુટ $e$ પર અટકે}\\
+    \text{અવ્યાખ્યાયિત} & \text{જો મશીન~$M_e$ ઇનપુટ $e$ પર ન અટકે}
+  \end{cases}
+  \]
+\end{prob}
+% END OLP-0268
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0269
+\olfileid{tur}{und}{dec}
+\olsection{નિર્ણય સમસ્યા}
+\phantomsection\label{guunit:OLP-0269}
+
+
+આપેલું વાક્ય પ્રામાણ્ય ધરાવે છે કે નહીં તે
+નક્કી કરવાની અસરકારક રીત હોય ત્યારે અને માત્ર ત્યારે
+જ આપણે પ્રથમ-ક્રમનું તર્કશાસ્ત્ર \emph{નિર્ણેય} છે એમ
+કહીએ છીએ. હકીકતમાં, આવી કોઈ રીત નથી: પ્રથમ-ક્રમનાં
+વાક્યોનું પ્રામાણ્ય નક્કી કરવાની સમસ્યા ઉકેલી શકાતી નથી.
+
+આ મહત્ત્વનું નકારાત્મક પરિણામ સ્થાપિત કરવા આપણે
+નિર્ણય સમસ્યા ટ્યુરિંગ મશીન વડે ઉકેલી શકાતી નથી તે
+સાબિત કરીએ છીએ. એટલે, એવું કોઈ ટ્યુરિંગ મશીન નથી
+જેની ટેપ પર પ્રથમ-ક્રમનું વાક્ય હોય ત્યારે
+તે શરૂ કરીને છેવટે અટકે અને તે વાક્ય પ્રામાણ્ય ધરાવે
+છે કે નહીં તે મુજબ $1$ અથવા~$0$ આઉટપુટ આપે.
+ચર્ચ--ટ્યુરિંગ માન્યતા મુજબ દરેક સંગણનીય વિધેય
+ટ્યુરિંગ-સંગણનીય છે. તેથી જો આ ``પ્રામાણ્ય વિધેય''
+કોઈ પણ રીતે અસરકારક રીતે સંગણનીય હોત, તો તે
+ટ્યુરિંગ-સંગણનીય હોત. તે ટ્યુરિંગ-સંગણનીય નથી,
+તો અસરકારક રીતે પણ સંગણનીય હોઈ શકે નહીં.
+
+નિર્ણય સમસ્યા ઉકેલી શકાતી નથી તે સાબિત કરવાની
+આપણી રીત અટકવાની સમસ્યાનું તેમાં ન્યૂનીકરણ કરવાની
+છે. તેનો અર્થ આ છે: ટ્યુરિંગ મશીનનો સૂચક~$e$
+અને ઇનપુટ~$w$ માટે, મશીન અટકે તો $1$ અને
+અન્યથા~$0$ મૂલ્ય આપતું વિધેય~$h(e,w)$ ટ્યુરિંગ-સંગણનીય
+નથી એ આપણે સાબિત કર્યું છે. આપણે બતાવીશું કે
+પ્રથમ-ક્રમનાં વાક્યોનું પ્રામાણ્ય નક્કી કરતું ટ્યુરિંગ
+મશીન હોત, તો~$h$ ગણતું ટ્યુરિંગ મશીન પણ હોત.
+પરંતુ~$h$ને ટ્યુરિંગ મશીન વડે ગણી શકાતું નથી;
+તેથી પ્રામાણ્ય નક્કી કરતું મશીન પણ હોઈ શકે નહીં.
+
+આ રીતનું પહેલું પગલું એ બતાવવાનું છે કે દરેક ઇનપુટ~$w$
+અને ટ્યુરિંગ મશીન~$M$ માટે આપણે અસરકારક રીતે
+વાક્ય $!T(M, w)$ આપી શકીએ, જે~$M$ની
+સૂચનાઓનો ગણ અને ઇનપુટ~$w$ નિરૂપે, અને
+વાક્ય~$!E(M, w)$ આપી શકીએ, જે ``$M$ છેવટે
+અટકે છે'' એવું વ્યક્ત કરે, એવી રીતે કે:
+\begin{quote}
+  $\Entails !T(M, w) \lif !E(M,w)$ ત્યારે અને માત્ર
+  ત્યારે જ, જ્યારે $M$ ઇનપુટ~$w$ પર અટકે છે.
+\end{quote}
+આ વાક્યો $!T(M, w)$ અને~$!E(M, w)$નું વર્ણન અને
+$!T(M, w) \lif !E(M, w)$ ત્યારે અને માત્ર ત્યારે જ
+પ્રામાણ્ય ધરાવે છે જ્યારે $M$ ઇનપુટ~$w$ પર અટકે
+છે તેની તપાસ, આપણી સાબિતીનો મુખ્ય ભાગ હશે.
+% END OLP-0269
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0270
+\olfileid{tur}{und}{rep}
+\olsection{ટ્યુરિંગ મશીનોનું નિરૂપણ}
+\phantomsection\label{guunit:OLP-0270}
+
+
+\begin{explain}
+ટ્યુરિંગ મશીનો અને તેમનું વર્તન પ્રથમ-ક્રમના તર્કના
+વાક્ય વડે નિરૂપવા માટે યોગ્ય ભાષા વ્યાખ્યાયિત
+કરવી પડશે. આ ભાષાના બે ભાગ છે: મશીનનાં સંરૂપણોનું
+વર્ણન કરવા માટેનાં વિધેયો, અને સંગણનનાં પગલાં
+(``ક્ષણો'') તથા ટેપ પરનાં સ્થાનોને અંક આપવા માટેની
+અભિવ્યક્તિઓ.
+
+બે જાતનાં વિધેયો લઈએ છીએ, અને બંને દ્વિસ્થાનિક
+છે: દરેક અવસ્થા~$q$ માટે વિધેય~$\Obj Q_q$,
+અને દરેક ટેપ-ચિહ્ન~$\sigma$ માટે
+વિધેય~$\Obj S_\sigma$. પહેલાંના વિધાનો
+આપણને~$M$ની અવસ્થા અને તેના ટેપ-હેડનું સ્થાન
+વર્ણવવા દે છે; બીજાં વિધાનો ટેપની સામગ્રીનું વર્ણન
+કરવા દે છે.
+
+ટેપ-હેડનાં સ્થાનો અને થઈ ચૂકેલાં પગલાંની સંખ્યા
+વ્યક્ત કરવા સંખ્યાઓ વ્યક્ત કરવાની રીત જોઈએ. તે માટે
+અચળ~$\Obj 0$ અને $1$-સ્થાનિક અનુગામી
+વિધેય~$\prime$ વાપરીએ છીએ. રૂઢિ મુજબ તેને તેના
+આર્ગ્યુમેન્ટની \emph{પછી} લખીએ છીએ (અને કૌંસ
+છોડી દઈએ છીએ).
+
+દરેક સંખ્યા $n$ માટે પ્રમાણભૂત પદ~$\num{n}$ છે,
+એટલે~$n$નું \emph{આંકિક પદ}, જે~$\Lang L_M$માં
+તેનું નિરૂપણ કરે છે. $\num{0}$ એ $\Obj 0$,
+$\num{1}$ એ $\Obj 0'$, $\num{2}$ એ $\Obj 0''$,
+વગેરે છે. વધુ ઔપચારિક રીતે:
+\begin{align*}
+\num{0} & = \Obj 0 \\
+\num{n+1} &= \num{n}'
+\end{align*}
+પદ $\num{0}$, એટલે $\Obj 0$, ટેપના સૌથી ડાબા
+સ્થાનને તેમજ પ્રથમ પગલા પહેલાંના સમયને (પ્રારંભિક
+સંરૂપણને) નામ આપે છે. પદ $\num{1}$, એટલે
+$\Obj 0'$, સૌથી ડાબા ખાનાની જમણી બાજુના ખાનાને
+અને પ્રથમ પગલા પછીના સમયને નામ આપે છે; આગળ
+પણ એમ જ છે.
+
+ટેપનાં સ્થાનોનો ક્રમ (અર્થ ``ની ડાબે'') તથા
+સંગણનનાં પગલાંનો ક્રમ (અર્થ ``પહેલાં'') બંને વ્યક્ત
+કરવા વિધેય~$<$ પણ લઈએ છીએ.
+
+ભાષા નક્કી થયા પછી~$!T(M, w)$નાં ``સ્વયંસિદ્ધ વાક્યો''
+યાદીબદ્ધ કરીએ: એટલે એવા વાક્યો, જે સાથે
+મળીને ઇનપુટ~$w$ પર ચાલતાં~$M$નું વર્તન વર્ણવે.
+$\Obj 0$, $\prime$ અને $<$ પર શરતો મૂકતાં વાક્યો,
+પ્રારંભિક સંરૂપણ વર્ણવતાં વાક્યો અને ચોક્કસ સૂચના
+ચલાવ્યા પછી~$M$નું સંરૂપણ કેવું હોય તે વર્ણવતાં
+વાક્યો હશે.
+\end{explain}
+
+\begin{defn}
+  \ollabel{defn:tm-descr}
+ટ્યુરિંગ મશીન $M = \tuple{Q, \Sigma, q_0, \delta}$
+આપેલું હોય, તો ભાષા~$\Lang L_M$માં નીચેનું આવે છે:
+\begin{enumerate}
+\item દરેક અવસ્થા~$q \in Q$ માટે દ્વિસ્થાનિક
+  વિધેય $\Obj Q_q(x, y)$. સહજ રીતે,
+  $\Obj Q_q(\num{m}, \num{n})$ વ્યક્ત કરે છે કે
+  ``$n$ પગલાં પછી~$M$,~$m$મું ખાનું વાંચતાં
+  અવસ્થા~$q$માં છે.''
+\item દરેક ચિહ્ન~$\sigma\in \Sigma$ માટે દ્વિસ્થાનિક
+  વિધેય $\Obj S_\sigma(x, y)$. સહજ રીતે,
+  $\Obj S_\sigma(\num{m}, \num{n})$ વ્યક્ત કરે છે કે
+  ``$n$ પગલાં પછી~$m$મા ખાનામાં ચિહ્ન~$\sigma$ છે.''
+\item એક અચળ $\Obj 0$
+\item એક એકસ્થાનિક ફલન $\prime$
+\item એક દ્વિસ્થાનિક વિધેય $<$
+\end{enumerate}
+\end{defn}
+
+ટ્યુરિંગ મશીન~$M$, ઇનપુટ
+$w = \sigma_{i_1}\dots\sigma_{i_k}$ પર કેવી રીતે
+કામ કરે તે વર્ણવતાં વાક્યો નીચે મુજબ છે:
+\begin{enumerate}
+\item સંખ્યાઓ અને~$<$નું વર્ણન કરતાં સ્વયંસિદ્ધ વાક્યો:
+\begin{enumerate}
+\item દરેક સંખ્યા તેના અનુગામી કરતાં નાની છે એવું
+કહેતું વાક્ય:
+\[
+\lforall[x][x < x']
+\]
+\item $<$ સંક્રામક છે તેની ખાતરી આપતું વાક્ય:
+\[
+\lforall[x][\lforall[y][\lforall[z][
+      ((x < y \land y < z) \lif x < z)]]]
+\]
+\end{enumerate}
+\item ઇનપુટ-સંરૂપણનું વર્ણન કરતાં સ્વયંસિદ્ધ વાક્યો:
+\begin{enumerate}
+\item મશીન શરૂ થાય તે પહેલાં, એટલે $0$~પગલાં પછી,
+  $M$ પ્રારંભિક અવસ્થા~$q_0$માં છે અને ખાનું~$1$
+  વાંચે છે:
+\[
+\Obj Q_{q_0}(\num{1}, \num{0})
+\]
+\item પ્રથમ $k+1$ ખાનાંમાં ચિહ્નો $\TMendtape$,
+  $\sigma_{i_1}$, \dots, $\sigma_{i_k}$ છે:
+\[
+\Obj S_\TMendtape(\num{0}, \num{0}) \land
+\Obj S_{\sigma_{i_1}}(\num{1}, \num{0}) \land
+\dots \land
+\Obj S_{\sigma_{i_k}}(\num{k}, \num{0})
+\]
+\item બાકીની ટેપ ખાલી છે:
+\[
+\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{0}))]
+\]
+\end{enumerate}
+\item એક સંરૂપણમાંથી આગળના સંરૂપણમાં થતું સંક્રમણ
+  વર્ણવતાં સ્વયંસિદ્ધ વાક્યો:
+
+આગળ માટે, $!A(x, y)$ એ નીચેના સ્વરૂપનાં બધાં
+વાક્યોનું સંયોજન માનો:
+\[
+\lforall[z][
+  (((z < x \lor x < z) \land \Obj S_\sigma(z, y))
+  \lif \Obj S_\sigma(z, y'))]
+\]
+અહીં $\sigma \in \Sigma$. $!A(\num{m},\num{n})$
+વડે આપણે કહીએ છીએ કે ``$m$મા ખાના સિવાય,
+$n+1$ પગલાં પછીની ટેપ $n$ પગલાં પછી જેવી જ છે.''
+\begin{enumerate}
+\item \ollabel{rep-right} દરેક સૂચના
+  $\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMright}$ માટે વાક્ય:
+\begin{align*}
+& \lforall[x][\lforall[y][(
+   (\Obj Q_{q_i}(x, y) \land \Obj S_{\sigma}(x, y)) \lif {}]] \\
+&\qquad   (\Obj Q_{q_j}(x', y') \land \Obj S_{\sigma'}(x, y') \land
+!A(x, y)))
+\end{align*}
+એનો અર્થ એ છે કે~$y$ પગલાં પછી મશીન
+અવસ્થા~$q_i$માં, ચિહ્ન~$\sigma$ ધરાવતું ખાનું~$x$
+વાંચે છે, તો $y+1$ પગલાં પછી તે ખાનું~$x+1$ વાંચે છે,
+અવસ્થા~$q_j$માં છે, ખાનું~$x$ હવે~$\sigma'$ ધરાવે છે,
+અને~$x$ સિવાયનું દરેક ખાનું~$y$ પગલાં પછી જે ચિહ્ન
+ધરાવતું હતું તે જ ધરાવે છે.
+
+\item \ollabel{rep-left} દરેક સૂચના
+  $\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMleft}$ માટે વાક્ય:
+\begin{align*}
+& \lforall[x][\lforall[y][
+    ((\Obj Q_{q_i}(x', y) \land \Obj S_{\sigma}(x', y)) \lif {}]]\\
+& \qquad   (\Obj Q_{q_j}(x, y') \land \Obj S_{\sigma'}(x', y') \land
+!A(x', y))) \land {}\\
+& \lforall[y][((\Obj Q_{q_i}(\num{0}, y) \land \Obj S_{\sigma}(\num{0},
+    y)) \lif {}]\\
+& \qquad (\Obj Q_{q_j}(\num{0}, y') \land \Obj S_{\sigma'}(\num{0},
+  y') \land !A(\num{0}, y)))
+\end{align*}
+\sourcecorrection{OLUN-002}{સ્થિર અંગ્રેજી મૂળની
+ડાબે-ચાલ સૂચનાની પહેલી શાખામાં લખાતું ખાનું
+$x'$ છે, પરંતુ તેનું $!A(x,y)$ એ ખાનાને
+યથાવત્ રહેવાની શરતમાંથી બાકાત રાખતું નથી.
+અહીં લખાતા ખાનાને બાકાત રાખવા $!A(x',y)$ કર્યું છે.}
+આ કેવી રીતે કામ કરે છે તે વિચારો: હવે આપણે
+``ખાનું~$x$ વાંચતું હોય તો \dots''થી શરૂ કરતા નથી,
+પણ ``ખાનું $x+1$ વાંચતું હોય તો \dots''થી શરૂ કરીએ
+છીએ. ડાબે જવાથી આગળના પગલે મશીન ખાનું~$x$
+વાંચે છે. પરંતુ લખાણ ખાનું~$x+1$ પર થાય છે.
+બાદબાકી કે પૂર્વગામી વિધેય ન હોવાથી આ રીતે કરીએ
+છીએ.
+
+નોંધો કે $x+1$ સ્વરૂપની સંખ્યાઓ $1$, $2$, \dots છે;
+એટલે મશીન ખાનું~$0$ વાંચતું હોય અને ડાબે જવાનું હોય
+તે કિસ્સો અહીં આવતો નથી (અને તે ડાબે જઈ પણ ન શકે,
+એટલે એ જ સ્થાને રહે છે). બીજું સંયોજન એ ખાસ કિસ્સો
+આવરે છે: $y$ પગલાં પછી મશીન અવસ્થા~$q_i$માં
+ખાનું~$0$ વાંચે અને ખાનું~$0$માં ચિહ્ન~$\sigma$
+હોય, તો $y+1$ પગલાં પછી પણ તે ખાનું~$0$ વાંચે છે,
+હવે અવસ્થા~$q_j$માં છે, ખાનું~$0$માં ચિહ્ન~$\sigma'$
+છે, અને ખાનું~$0$ સિવાયનાં ખાનાંમાં~$y$ પગલાં
+પછી હતાં તે જ ચિહ્નો રહે છે.
+\item \ollabel{rep-stay} દરેક સૂચના
+  $\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMstay}$ માટે વાક્ય:
+\begin{align*}
+& \lforall[x][\lforall[y][(
+   (\Obj Q_{q_i}(x, y) \land \Obj S_{\sigma}(x, y)) \lif {}]] \\
+&\qquad   (\Obj Q_{q_j}(x, y') \land \Obj S_{\sigma'}(x, y') \land
+!A(x, y)))
+\end{align*}
+\end{enumerate}
+\end{enumerate}
+ટ્યુરિંગ મશીન~$M$ અને ઇનપુટ~$w$ માટે ઉપરનાં
+બધાં વાક્યોનું સંયોજન~$!T(M, w)$ માનો.
+
+~$M$ છેવટે અટકે છે એમ વ્યક્ત કરવા એવું વાક્ય
+જોઈએ જે કહે કે ``કેટલાંક પગલાં પછી સંક્રમણ વિધેય
+અવ્યાખ્યાયિત હશે.'' $X$ એ એવાં બધા
+$\tuple{q, \sigma}$ જોડોનો ગણ માનો કે જેમના માટે
+~$\delta(q, \sigma)$ અવ્યાખ્યાયિત છે. હવે~$!E(M, w)$
+એ નીચેનું વાક્ય માનો:
+\[
+\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]
+\]
+
+ખાસ અટકવાની અવસ્થા~$h$ ધરાવતું ટ્યુરિંગ મશીન
+વાપરીએ, તો વાત વધુ સરળ બને છે: તે વખતે
+વાક્ય~$!E(M, w)$
+\[
+\lexists[x][\lexists[y][\Obj Q_h(x, y)]]
+\]
+મશીન છેવટે અટકે છે એમ વ્યક્ત કરે છે.
+
+\begin{prop}
+\ollabel{prop:mlessk}
+જો $m < k$, તો $!T(M, w) \Entails \num{m} < \num{k}$.
+\end{prop}
+
+\begin{proof}
+કસરત.
+\end{proof}
+
+\begin{prob}
+\olref[tur][und][rep]{prop:mlessk} સાબિત કરો.
+(સૂચન: $k-m$ પર આગમન વાપરો.)
+\end{prob}
+% END OLP-0270
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0271
+\olfileid{tur}{und}{ver}
+\olsection{નિરૂપણની ચકાસણી}
+\phantomsection\label{guunit:OLP-0271}
+
+
+\begin{explain}
+આપણું નિરૂપણ કામ કરે છે તેની ચકાસણી માટે બે વાત
+સાબિત કરવી પડશે. પ્રથમ, $M$ ઇનપુટ~$w$ પર અટકે,
+તો $!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે છે તે
+બતાવવું પડશે. પછી ઊલટી દિશા: જો
+$!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે, તો
+ઇનપુટ~$w$ પર ચલાવતાં $M$ ખરેખર છેવટે અટકે છે.
+
+આ બે પરિણામો સાબિત કરવાની રીતો એકદમ જુદી છે.
+પહેલા પરિણામ માટે પ્રથમ-ક્રમના તર્કનું વાક્ય
+(એટલે $!T(M, w) \lif !E(M, w)$) પ્રામાણ્ય ધરાવે છે
+તે બતાવવું છે. તેનો સૌથી સરળ રસ્તો નિષ્પત્તિ
+આપવાનો છે. પરંતુ આપણી સાબિતી બધાં~$M$ અને~$w$
+માટે કામ કરવી જોઈએ; એટલે એક જ વાક્યની
+નિષ્પત્તિ આપવાની નથી, અસંખ્ય વાક્યો માટે
+આપવાની છે. તેથી $M$ અને~$w$ ગમે તે હોય અને
+ઇનપુટ~$w$ પર અટકતાં~$M$ને ગમે તેટલાં પગલાં લાગતાં
+હોય, $!T(M, w) \lif !E(M, w)$ની નિષ્પત્તિ
+મળશે એવું આગમનથી સાબિત કરી શકીએ.
+
+સ્વાભાવિક રીતે આગમનનો આધાર~$M$ અટકવાના સંરૂપણ
+સુધી પહોંચે તે પહેલાંના પગલાંની સંખ્યા હશે. આ
+સાબિતીમાં આપણે સ્થાપીશું કે ઇનપુટ~$w$ પરના~$M$ના
+સંગણનના દરેક પગલા~$n$ માટે
+$!T(M, w) \Entails !C(M, w, n)$, જ્યાં
+$!C(M, w, n)$ એ ઇનપુટ~$w$ પર ચાલતા~$M$નું
+$n$ પગલાં પછીનું સંરૂપણ યોગ્ય રીતે વર્ણવે છે.
+હવે માનો કે $M$ ઇનપુટ~$w$
+પર~$n$ પગલાં પછી અટકે છે. ત્યારે
+$!C(M, w, n)$ અટકવાનું સંરૂપણ વર્ણવશે. જ્યારે
+$!C(M, w, n)$ અટકવાનું સંરૂપણ વર્ણવે, ત્યારે
+$!C(M, w, n) \Entails !E(M, w)$ પણ બતાવીશું.
+  એટલે $M$ ઇનપુટ~$w$ પર અટકે, તો કોઈ~$n$ માટે
+$n$ પગલાં પછી~$M$ અટકવાના સંરૂપણમાં હશે. તેથી
+$!T(M, w) \Entails !C(M, w, n)$, જ્યાં
+$!C(M, w, n)$ એવું સંરૂપણ વર્ણવે છે; અને એ કિસ્સામાં
+$!C(M, w, n) \Entails !E(M, w)$ હોવાથી
+$!T(M, w) \Entails !E(M, w)$ મળે છે, એટલે
+$\Entails !T(M, w) \lif !E(M, w)$.
+\sourcecorrection{OLUN-006}{સ્થિર અંગ્રેજી મૂળની આ
+છેલ્લી ફલિતતા-પંક્તિમાં વ્યાખ્યાયિત $!T(M,w)$ને
+બદલે $T(M,w)$ છપાયું છે; અહીં વ્યાખ્યાયિત
+વાક્યનું ચિહ્ન જાળવ્યું છે.}
+
+ઊલટી દિશાની રીત તદ્દન જુદી છે. અહીં આપણે
+$\Entails !T(M, w) \lif !E(M, w)$ માનીને
+$M$ ઇનપુટ~$w$ પર અટકે છે તે સાબિત કરવાનું છે.
+ધારણામાંથી $!T(M, w) \Entails !E(M, w)$ મળે છે:
+એટલે જ્યાં $!T(M, w)$ સત્ય છે એવી દરેક
+સંરચનામાં $!E(M, w)$ પણ સત્ય છે. તેથી
+જેમાં $!T(M, w)$ સત્ય છે એવી
+સંરચના~$\Struct{M}$ વર્ણવીશું. તેનો પ્રદેશ
+$\Nat$ હશે; બધાં $\Obj Q_q$ અને $\Obj S_\sigma$
+નું અર્થઘટન ઇનપુટ~$w$ પર ચાલતા~$M$નાં
+સંરૂપણો પરથી નક્કી થશે. દાખલા તરીકે,
+$\Sat{M}{\Obj Q_q(\num{m}, \num{n})}$ ત્યારે અને માત્ર
+ત્યારે જ્યારે~$M$ ઇનપુટ~$w$ પર~$n$ પગલાં ચાલ્યા
+પછી અવસ્થા~$q$માં હોય અને ખાનું~$m$ વાંચતું હોય.
+\sourcecorrection{OLUN-007}{સ્થિર અંગ્રેજી મૂળના આ
+દાખલામાં ચાલતા મશીનને $T$ લખ્યું છે; સંદર્ભમાં તે
+$M$ છે, જ્યારે $!T(M,w)$ મશીનનું વર્ણન કરતું વાક્ય છે.}
+હવે ધારણા મુજબ $!T(M, w) \Entails !E(M, w)$,
+અને રચના મુજબ $\Sat{M}{!T(M, w)}$;
+તેથી $\Sat{M}{!E(M, w)}$. પરંતુ
+$\Sat{M}{!E(M, w)}$ ત્યારે અને માત્ર ત્યારે જ્યારે
+કોઈ $n \in \Domain{M} = \Nat$ માટે ઇનપુટ~$w$
+પર ચાલતું~$M$,~$n$ પગલાં પછી અટકવાના
+સંરૂપણમાં હોય.
+\end{explain}
+
+\begin{defn}
+$!C(M, w, n)$ એ નીચેનું વાક્ય માનો:
+\[
+\Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land
+\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]
+\]
+અહીં~$q$, સમય~$n$ પર~$M$ની અવસ્થા છે;
+સમય~$n$ પર~$M$ ખાનું~$m$ વાંચે છે;
+$0 \le i \le k$ માટે ખાનું~$i$ સમય~$n$ પર
+ચિહ્ન~$\sigma_i$ ધરાવે છે;
+અને~$k$ એ સમય~$0$ પરની ટેપનું સૌથી જમણું ખાલી
+ન હોય એવું ખાનું તથા~$n$ પગલાં પછી હેડે મુલાકાત
+લીધેલું સૌથી જમણું ખાનું—આ બેમાંથી વધુ જમણાં
+ખાનાનો સૂચક છે.
+\end{defn}
+
+\begin{lem}\ollabel{lem:halt-config-implies-halt}
+ઇનપુટ~$w$ પર ચાલતું~$M$,~$n$ પગલાં પછી
+અટકવાના સંરૂપણમાં હોય, તો
+$!C(M, w, n) \Entails !E(M, w)$.
+\end{lem}
+
+\begin{proof}
+માનો કે ઇનપુટ~$w$ પર~$M$,~$n$ પગલાં પછી અટકે છે.
+કોઈ અવસ્થા~$q$, ખાનું~$m$ અને ચિહ્ન~$\sigma$
+એવાં છે કે:
+\begin{enumerate}
+\item $n$ પગલાં પછી~$M$ અવસ્થા~$q$માં ખાનું~$m$
+  વાંચે છે, અને તે ખાનામાં~$\sigma$ છે.
+\item સંક્રમણ વિધેય~$\delta(q, \sigma)$ અવ્યાખ્યાયિત છે.
+\end{enumerate}
+$!C(M, w, n)$ આ સંરૂપણનું વર્ણન છે અને તેમાં
+$\Obj Q_{q}(\num{m}, \num{n})$ તથા
+$\Obj S_{\sigma}(\num{m}, \num{n})$ ખંડો હશે.
+આ બંને ખંડો મળીને~$!E(M, w)$ ફલિત કરે છે:
+\[
+\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]
+\]
+કારણ કે $\tuple{q,\sigma} \in X$ હોવાથી
+$\Obj Q_q(\num{m}, \num{n}) \land
+\Obj S_{\sigma}(\num{m}, \num{n}) \Entails
+\bigvee_{\tuple{q, \sigma} \in X}
+(\Obj Q_q(\num{m}, \num{n}) \land
+\Obj S_{\sigma}(\num{m}, \num{n}))$.
+\sourcecorrection{OLUN-008}{સ્થિર અંગ્રેજી મૂળની
+આ ફલિતતા-પંક્તિમાં પહેલાના પસંદ કરેલા $q,\sigma$
+બદલે અચાનક $q',\sigma'$ આવે છે અને એક
+$S$-વિધેય આગળનો વસ્તુભાષાનો અક્ષરપ્રકાર આપતો આદેશ છૂટી ગયો છે. અહીં
+અગાઉના જ $q,\sigma$ અને પૂરો વિધેય-સંકેત રાખ્યો છે.}
+\end{proof}
+
+\begin{explain}
+એટલે $M$ ઇનપુટ~$w$ પર અટકે, તો કોઈ~$n$ માટે
+$!C(M, w, n) \Entails !E(M,w)$. હવે આપણે
+બતાવીશું કે કોઈ પણ સમય~$n$ માટે
+$!T(M, w) \Entails !C(M, w, n)$.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:config}
+દરેક~$n$ માટે, $M$ જો~$n$ પગલાં પૂરાં થાય તે
+પહેલાં અટક્યું ન હોય, તો
+$!T(M, w) \Entails !C(M, w, n)$.
+\sourcecorrection{OLUN-009}{સ્થિર અંગ્રેજી મૂળનું
+``$n$ પગલાં પછી અટક્યું ન હોય'' વિધાન~$n$મા
+પગલે જ અટકવાનું સંરૂપણ બાકાત કરે છે, છતાં નીચેનો
+પ્રામાણ્યનો પુરાવો એ જ સંરૂપણ માટે આ ઉપપ્રમેય
+વાપરે છે. અહીં~$n$ પગલાં પૂરાં થતાં પહેલાં ન
+અટકવાની જરૂરી શરત સ્પષ્ટ કરી છે.}
+\end{lem}
+
+\begin{proof}
+આગમનનો આધાર: $n = 0$ હોય, તો
+$!C(M, w, 0)$ના સંયોજકો~$!T(M,w)$નાં
+પ્રારંભિક સંરૂપણ અને સંખ્યાનાં સ્વયંસિદ્ધ વાક્યોમાંથી
+ફલિત થાય છે. ખાલી ઇનપુટમાં શરૂઆતથી વાંચાતું
+ખાનું ખાલી છે, અને તેની જમણી બાજુનાં બધાં
+ખાનાં પણ ખાલી છે, તે ખાલી-ટેપની શરત અને
+અનુગામીના સ્વયંસિદ્ધ વાક્યથી મળે છે.
+\sourcecorrection{OLUN-024}{સ્થિર અંગ્રેજી મૂળ
+આધારકિસ્સાના બધા સંયોજકો~$!T(M,w)$માં
+સીધા જ છે એમ કહે છે. ખાલી ઇનપુટ હોય ત્યારે
+માથું શરૂઆતમાં પહેલું ખાનું વાંચે છે, એટલે
+તે ખાનું ખાલી હોવાનું અને તેની આગળની
+ખાલી-ટેપ શરતનું અનુમાન પણ કરવું પડે છે.}
+
+આગમનની ધારણા: $M$ જો~$n$મા પગલા પહેલાં
+અટક્યું ન હોય, તો $!T(M,w) \Entails !C(M, w, n)$.
+હવે બતાવવું છે કે, $!C(M, w, n)$ અટકવાનું સંરૂપણ
+વર્ણવતું ન હોય તો,
+$!T(M, w) \Entails !C(M, w, n+1)$.
+
+માનો કે $n \ge 0$ અને ઇનપુટ~$w$ પર શરૂ થયેલું
+$M$,~$n$ પગલાં પછી અવસ્થા~$q$માં ખાનું~$m$
+વાંચે છે. $M$,~$n$ પગલાં પછી અટકતું ન હોવાથી
+~$M$ના કાર્યક્રમમાં નીચેના ત્રણ સ્વરૂપોમાંની કોઈ એક
+સૂચના હોવી જોઈએ:
+\sourcecorrection{OLUN-010}{સ્થિર અંગ્રેજી મૂળ આ
+આગમન-પગલામાં $n>0$ ધારે છે, જેથી આધાર પછીનું
+$n=0$થી $n+1$ પગલું છૂટી જાય છે. એ જ વિચાર
+$n=0$ માટે પણ લાગુ પડે છે, તેથી અહીં $n\ge0$ છે.}
+
+\begin{enumerate}
+\item \ollabel{right} $\delta(q, \sigma) = \tuple{q', \sigma', \TMright}$
+
+\item \ollabel{left} $\delta(q, \sigma) = \tuple{q', \sigma', \TMleft}$
+
+\item \ollabel{stay} $\delta(q, \sigma) = \tuple{q', \sigma', \TMstay}$
+\end{enumerate}
+
+આ ત્રણેય કિસ્સા અનુક્રમે જોઈએ.
+
+\begin{enumerate}
+\item માનો કે સૂચના~\olref{right}ના સ્વરૂપની છે.
+  \olref[rep]{defn:tm-descr}\olref[rep]{rep-right}
+  મુજબ આનો અર્થ છે કે
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x,
+  y) \land \Obj S_\sigma(x, y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x',
+  y') \land \Obj S_{\sigma'}(x, y') \land !A(x, y)))
+\intertext{એ $!T(M,w)$નો એક સંયોજક છે. તેથી
+  સર્વપરિમાણકના ઉદાહરણથી (અહીં~$x$ માટે
+  $\num{m}$ અને~$y$ માટે $\num{n}$ મૂકીને)
+  નીચેનું વાક્ય ફલિત થાય છે:}
+& (\Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+\num{n})) \lif {}\\
+& \qquad (\Obj Q_{q'}(\num{m}', \num{n}') \land
+\Obj S_{\sigma'}(\num{m}, \num{n}') \land !A(\num{m}, \num{n})).
+\intertext{આગમનની ધારણા મુજબ $!T(M, w) \Entails !C(M, w, n)$,
+  એટલે કે:}
+& \Obj Q_q(\num{m}, \num{n}) \land \Obj S_{\sigma_0}(\num{0}, \num{n})
+\land \dots \land \Obj S_{\sigma_k}(\num{k}, \num{n}) \land \\
+& \qquad\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}))]\\
+\intertext{$n$ પગલાં પછી ખાનું~$m$ ચિહ્ન~$\sigma$
+  ધરાવે છે, તેથી અનુરૂપ સંયોજક
+  $\Obj S_\sigma(\num{m}, \num{n})$ છે; એટલે
+  તેમાંથી આ ફલિત થાય છે:}
+& \Obj Q_{q}(\num{m}, \num{n}) \land \Obj S_{\sigma}(\num{m},
+   \num{n})
+\intertext{હવે આપણને મળે છે:}
+& \Obj Q_{q'}(\num{m}', \num{n}') \land \Obj S_{\sigma'}(\num{m},
+  \num{n}') \land {}\\
+& \qquad\bigwedge_{\substack{0\le i\le k\\i\ne m}}
+  \Obj S_{\sigma_i}(\num{i}, \num{n}') \land {}\\
+& \qquad \lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x, \num{n}'))]
+\end{align*}
+\sourcecorrection{OLUN-022}{સ્થિર અંગ્રેજી મૂળના
+જમણી-ચાલના પરિણામમાં બદલાયેલા ખાના~$m$નું
+નવું ચિહ્ન પહેલેથી અલગ આપેલું છે, છતાં પછીની
+યાદી દેખીતી રીતે $0$થી~$k$ સુધીના બધા
+જૂનાં ચિહ્નો ફરી જોડે છે. મૂળનું જ ગદ્ય~$m$નો
+બાકાત રાખે છે; અહીં એ બાકાત સ્પષ્ટ લખ્યો છે.}
+આ રીતે: પહેલી પંક્તિ અગાઉના શરતી વાક્યના
+અનુગામીમાંથી સીધી, મોડસ પોનેન્સથી મળે છે.
+વચ્ચેની પંક્તિનો દરેક સંયોજક—જેમાં
+$S_{\sigma_m}(\num{m},\num{n}')$નો સમાવેશ નથી—
+$!C(M, w, n)$ના અનુરૂપ સંયોજક તથા
+$!A(\num{m}, \num{n})$માંથી ફલિત થાય છે.
+
+$m < k$ હોય, તો $!T(M,w) \Proves \num{m} < \num {k}$
+(\olref[rep]{prop:mlessk}); અને~$<$ની સંક્રામકતાથી
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$
+મળે છે. $m = k$ હોય, તો એ જ વાક્ય
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$
+માત્ર તર્કથી મળે છે. તેથી છેલ્લી પંક્તિ
+$!C(M, w, n)$ના અનુરૂપ સંયોજક,
+$\lforall[x][(\num{k} < x \lif \num{m} < x)]$,
+અને $!A(\num{m}, \num{n})$માંથી ફલિત થાય છે.
+$m<k$ હોય, તો આ જ $!C(M, w, n+1)$ છે.
+
+હવે માનો કે $m=k$. ત્યારે $n+1$ પગલાં પછી
+ટેપ-હેડે ખાનું~$k+1$ પણ મુલાકાત લીધું હશે;
+તે હવે મુલાકાત લેવાયેલું સૌથી જમણું ખાનું છે.
+એટલે $!C(M, w, n+1)$માં નવો સંયોજક
+$\Obj S_\TMblank(\num{k}',\num{n}')$ છે, અને
+છેલ્લો સંયોજક
+$\lforall[x][(\num{k}' < x \lif \Obj S_\TMblank(x, \num{n}'))]$
+છે. આ બે વાક્યો પણ ફલિત થાય છે તે
+ચકાસવું પડશે.
+
+આપણી પાસે પહેલેથી
+$\lforall[x][(\num{k} < x \lif \Obj S_\TMblank(x,
+  \num{n}'))]$ છે. ખાસ કરીને તેમાંથી
+$\num{k} < \num{k}' \lif
+\Obj S_\TMblank(\num{k}', \num{n}')$ મળે છે.
+સ્વયંસિદ્ધ વાક્ય $\lforall[x][x < x']$માંથી
+$\num{k} < \num{k}'$ મળે છે. મોડસ પોનેન્સથી
+$\Obj S_\TMblank(\num{k}',\num{n}')$ ફલિત થાય છે.
+
+વળી, $!T(M,w) \Proves \num{k} < \num{k}'$
+હોવાથી~$<$ની સંક્રામકતાના સ્વયંસિદ્ધ વાક્યથી
+$\lforall[x][(\num{k}' < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$ મળે છે. (આ
+ચકાસણી કસરત તરીકે છોડી છે.)
+
+\item માનો કે સૂચના~\olref{left}ના સ્વરૂપની છે.
+  તો \olref[rep]{defn:tm-descr}\olref[rep]{rep-left}
+  મુજબ:
+\sourcecorrection{OLUN-011}{સ્થિર અંગ્રેજી મૂળના
+આ ડાબે-ચાલ કિસ્સામાં લખાતું ખાનું~$x'$ અને
+ઉદાહરણમાં~$l+1$ છે, પરંતુ યથાવત્-ખાનાંની
+શરત અનુક્રમે $!A(x,y)$ અને $!A(\num{l},\num{n})$
+લખાઈ છે. ઉપરાંત શૂન્ય-ખાનાની શાખામાં અહીં
+પસંદ કરેલા $q,q'$ને બદલે જૂનાં $q_i,q_j$ છે.
+નીચે લખાતું ખાનું બાકાત રાખ્યું છે અને
+અવસ્થા-ચિહ્નો એકરૂપ કર્યા છે.}
+\begin{align*}
+& \lforall[x][\lforall[y][((\Obj Q_{q}(x', y) \land \Obj
+    S_{\sigma}(x', y)) \lif {}]]\\
+& \qquad (\Obj Q_{q'}(x, y') \land \Obj
+  S_{\sigma'}(x', y') \land !A(x', y))) \land {}\\
+& \lforall[y][((\Obj Q_{q}(\num{0}, y) \land \Obj S_{\sigma}(\num{0},
+    y)) \lif {}]\\
+& \qquad (\Obj Q_{q'}(\num{0}, y') \land \Obj S_{\sigma'}(\num{0}, y')
+  \land !A(\num{0}, y)))
+\intertext{એ $!T(M,w)$નો એક સંયોજક છે. $m>0$
+  હોય, તો $l = m - 1$ લો (એટલે $m = l+1$).
+  ઉપરના વાક્યના પહેલા સંયોજકમાંથી
+  નીચેનું ફલિત થાય છે:}
+& (\Obj Q_{q}(\num{l}', \num{n}) \land \Obj S_{\sigma}(\num{l}', \num{n}))
+\lif {} \\
+& \qquad (\Obj Q_{q'}(\num{l}, \num{n}') \land \Obj S_{\sigma'}(\num{l}',
+\num{n}') \land !A(\num{l}', \num{n}))
+\intertext{અન્યથા $l = m = 0$ લો અને બીજા
+  સંયોજકમાંથી ફલિત થતું નીચેનું વાક્ય
+  જુઓ:}
+& ((\Obj Q_{q}(\num{0}, \num{n}) \land \Obj S_{\sigma}(\num{0}, \num{n})) \lif {}\\
+& \qquad   (\Obj Q_{q'}(\num{0}, \num{n}') \land \Obj S_{\sigma'}(\num{0}, \num{n}') \land
+!A(\num{0}, \num{n})))
+\intertext{બંનેમાંથી જે લાગુ પડે તેમાંથી
+નીચેનું ફલિત થાય છે:}
+&  \Obj Q_{q'}(\num{l}, \num{n}') \land \Obj S_{\sigma'}(\num{m},
+  \num{n}') \land {}\\
+&\qquad  \bigwedge_{\substack{0\le i\le k\\i\ne m}}
+  \Obj S_{\sigma_i}(\num{i}, \num{n}') \land {} \\
+&\qquad  \lforall[x][(\num{k} < x
+  \lif \Obj S_\TMblank(x, \num{n}'))]
+\end{align*}
+\sourcecorrection{OLUN-023}{સ્થિર અંગ્રેજી મૂળના
+ડાબી-ચાલના પરિણામમાં પણ લખાયેલું ખાનું~$m$
+અલગ નવા ચિહ્ન સાથે આવે છે; પછીની જૂનાં
+ચિહ્નોની યાદીમાં તેને ફરી સામેલ કરવાથી
+સંરૂપણ ખોટું થાય. અહીં તે ખાનું સ્પષ્ટ બાકાત છે.}
+અગાઉની જેમ. (પહેલા કિસ્સામાં
+$\num{l}' \ident \num{l+1} \ident \num{m}$
+અને બીજા કિસ્સામાં $\num{l} \ident \num{0}$
+એ નોંધો.) પરંતુ આ તો $!C(M, w, n+1)$ જ છે.
+
+\item \olref{stay} કિસ્સો કસરત તરીકે છોડી છે.
+\end{enumerate}
+આપણે બતાવ્યું કે આવા દરેક~$n$ માટે
+$!T(M, w) \Entails !C(M, w, n)$.
+\end{proof}
+
+\begin{prob}
+\olref[tur][und][ver]{lem:config}ની સાબિતીમાં
+કિસ્સો~\olref[tur][und][ver]{stay} પૂર્ણ કરો.
+\end{prob}
+
+\begin{prob}
+$\Obj S_{\sigma_i}(\num{i}, \num{n})$ અને
+$!A(m, n)$માંથી
+$\Obj S_{\sigma_i}(\num{i}, \num{n}')$ની
+નિષ્પત્તિ આપો (ધારો કે $i \neq m$,
+એટલે $i < m$ અથવા $m < i$).
+\end{prob}
+
+\begin{prob}
+$\lforall[x][(\num{k} < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$,
+$\lforall[x][x < x']$ અને
+$\lforall[x][\lforall[y][\lforall[z][ ((x < y \land y < z) \lif x <
+      z)]]]$માંથી
+$\lforall[x][(\num{k}' < x \lif \Obj
+  S_\TMblank(x, \num{n}'))]$ની
+નિષ્પત્તિ આપો.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:valid-if-halt}
+$M$ ઇનપુટ~$w$ પર અટકે, તો
+$!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે છે.
+\end{lem}
+
+\begin{proof}
+\olref{lem:config}થી જાણીએ છીએ કે પ્રથમ
+અટકવાના સમય સુધીનાં દરેક~$n$ માટે
+સમય~$n$ પરનાં~$M$ના સંરૂપણનું
+વર્ણન~$!C(M, w, n)$,
+$!T(M, w)$માંથી ફલિત થાય છે.
+\sourcecorrection{OLUN-012}{સ્થિર અંગ્રેજી મૂળ
+અહીં ``કોઈ પણ સમય~$n$'' કહે છે, છતાં મશીન
+અટક્યા પછીનું સંરૂપણ તેની વ્યાખ્યા મુજબ આપેલું
+નથી. OLUN-009ના સુધારેલા ઉપપ્રમેયને પ્રથમ
+અટકવાના સમય સુધી જ વાપર્યો છે.}
+માનો કે $M$,~$k$ પગલાં પછી અટકે છે. તે સમયે
+તે કોઈ~$m \in \Nat$ માટે ખાનું~$m$ વાંચતું હશે.
+તેથી $!C(M, w, k)$ એ~$M$ના અટકવાના
+સંરૂપણનું વર્ણન છે: તેમાં
+$\Obj Q_q(\num{m}, \num{k})$ તથા
+$\Obj S_\sigma(\num{m}, \num{k})$ બંને સંયોજકો છે,
+અને $\delta(q,\sigma)$ અવ્યાખ્યાયિત છે. તેથી
+\olref{lem:halt-config-implies-halt} મુજબ
+$!C(M, w, k) \Entails !E(M, w)$. વળી
+$!T(M, w) \Entails !C(M, w, k)$ હોવાથી
+$!T(M, w) \Entails !E(M, w)$; એટલે
+$!T(M, w) \lif !E(M, w)$ પ્રામાણ્ય ધરાવે છે.
+\end{proof}
+
+\begin{explain}
+આપણો દાવો ચકાસવાનું પૂરું કરવા ઊલટી દિશા પણ
+સ્થાપવી પડશે: $!T(M, w) \lif !E(M, w)$
+પ્રામાણ્ય ધરાવે, તો ઇનપુટ~$w$ પર શરૂ કરતાં
+$M$ ખરેખર અટકે છે.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:halt-if-valid}
+$\Entails !T(M, w) \lif !E(M, w)$ હોય, તો
+$M$ ઇનપુટ~$w$ પર અટકે છે.
+\end{lem}
+
+\begin{proof}
+પ્રદેશ~$\Nat$ ધરાવતું $\Lang L_M$-સંરચના
+$\Struct M$ લો. તેમાં $\Obj 0$નું અર્થઘટન~$0$,
+$\prime$નું અનુગામી વિધેય અને~$<$નું નાની-કરતાં
+સંબંધ તરીકે કરીએ છીએ. વિધાનો $\Obj Q_q$ અને
+$\Obj S_\sigma$નું અર્થઘટન આ પ્રમાણે છે:
+\begin{align*}
+  \Assign{\Obj Q_q}{M} & =
+\Setabs{\tuple{m, n}}{\begin{array}{ll}\text{ઇનપુટ~$w$ પર શરૂ કરતાં,~$n$ પગલાં પછી,}\\ \text{$M$ અવસ્થા~$q$માં
+  ખાનું~$m$ વાંચે છે}\end{array}} \\
+  \Assign{\Obj S_\sigma}{M} & = \Setabs{\tuple{m, n}}{\begin{array}{ll}
+\text{ઇનપુટ~$w$ પર શરૂ કરતાં,~$n$ પગલાં પછી,}\\ \text{$M$ના ખાના~$m$માં
+  ચિહ્ન~$\sigma$ છે}\end{array}}
+\end{align*}
+બીજા શબ્દોમાં, ઇનપુટ~$w$ પર શરૂ થયેલું~$M$
+હકીકતમાં પગલે પગલે શું કરે છે તેનું વર્ણન કરે
+એવું સંરચના~$\Struct{M}$ રચીએ છીએ. સ્પષ્ટપણે
+$\Sat{M}{!T(M, w)}$. જો
+$\Entails !T(M, w) \lif !E(M, w)$, તો
+$\Sat{M}{!E(M, w)}$ પણ; એટલે:
+\[
+\Sat{M}{\lexists[x][\lexists[y][(\bigvee_{\tuple{q, \sigma} \in
+      X}(\Obj Q_q(x, y) \land \Obj S_\sigma(x, y)))]]}.
+\]
+$\Domain{M} = \Nat$ હોવાથી કોઈ
+$m$, $n \in \Nat$ તથા એવાં~$q$ અને~$\sigma$
+છે કે $\Sat{M}{\Obj Q_q(\num{m}, \num{n}) \land
+\Obj S_\sigma(\num{m}, \num{n})}$ અને
+$\delta(q, \sigma)$ અવ્યાખ્યાયિત છે.
+$\Struct M$ની વ્યાખ્યા મુજબ તેનો અર્થ એ છે કે
+ઇનપુટ~$w$ પર શરૂ થયેલું~$M$,~$n$ પગલાં પછી
+અવસ્થા~$q$માં છે અને ચિહ્ન~$\sigma$ વાંચે છે;
+સંક્રમણ વિધેય અવ્યાખ્યાયિત છે, એટલે~$M$ અટક્યું છે.
+\end{proof}
+% END OLP-0271
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0272
+\olfileid{tur}{und}{uns}
+\olsection{નિર્ણય સમસ્યા ઉકેલી શકાતી નથી}
+\phantomsection\label{guunit:OLP-0272}
+
+
+\begin{thm}
+\ollabel{thm:decision-prob}
+નિર્ણય સમસ્યા ઉકેલી શકાતી નથી: એવું કોઈ ટ્યુરિંગ
+મશીન~$D$ નથી કે જેની ટેપ પર પ્રથમ-ક્રમના તર્કનું
+વાક્ય~$!B$ ઇનપુટ તરીકે હોય ત્યારે~$D$ છેવટે
+અટકે અને~$!B$ પ્રામાણ્ય ધરાવે ત્યારે અને માત્ર ત્યારે
+જ~$1$, અન્યથા~$0$ આઉટપુટ આપે.
+\end{thm}
+
+\begin{proof}
+માનો કે નિર્ણય સમસ્યા ઉકેલી શકાતી હોય, એટલે એવું
+ટ્યુરિંગ મશીન~$D$ હોય. તો અટકવાની સમસ્યા આ પ્રમાણે
+ઉકેલી શકીએ. ટ્યુરિંગ મશીન~$M_e$નો સૂચક~$e$ અને
+ઇનપુટ~$w$ આપતાં, તેને અનુરૂપ વાક્ય
+$!T(M_e, w) \lif !E(M_e, w)$ ગણતું અને ટેપના સૌથી
+ડાબા ખાનાને વાંચતું અટકતું ટ્યુરિંગ મશીન~$E$ બનાવીએ.
+પછી $E \concat D$ મશીન ઇનપુટ~$e$ અને~$w$ માટે
+પહેલાં $!T(M_e, w) \lif !E(M_e, w)$ ગણે અને ત્યાર પછી
+તે ઇનપુટ પર નિર્ણય સમસ્યાનું મશીન~$D$ ચલાવે.
+$!T(M_e, w) \lif !E(M_e, w)$ પ્રામાણ્ય ધરાવે ત્યારે
+અને માત્ર ત્યારે $D$ આઉટપુટ~$1$ સાથે અટકે છે;
+અન્યથા આઉટપુટ~$0$ આપે છે.
+\olref[ver]{lem:halt-if-valid} અને
+\olref[ver]{lem:valid-if-halt} મુજબ
+$!T(M_e, w) \lif !E(M_e, w)$ પ્રામાણ્ય
+ધરાવે ત્યારે અને માત્ર ત્યારે~$M_e$ ઇનપુટ~$w$ પર
+અટકે છે. એટલે ઇનપુટ~$e$ અને~$w$ પર $E\concat D$
+એવું મશીન બને કે~$M_e$ ઇનપુટ~$w$ પર અટકે ત્યારે
+અને માત્ર ત્યારે આઉટપુટ~$1$ સાથે, અન્યથા આઉટપુટ~$0$
+સાથે અટકે. બીજા શબ્દોમાં, $E \concat D$ અટકવાની
+સમસ્યા ઉકેલી નાખે. પરંતુ
+\olref[hal]{thm:halting-problem}થી આપણે જાણીએ છીએ
+કે આવું કોઈ ટ્યુરિંગ મશીન હોઈ શકતું નથી.
+\end{proof}
+
+\begin{cor}\ollabel{cor:undecidable-sat}%
+પ્રથમ-ક્રમના તર્કનું મનસ્વી વાક્ય સંતોષ્ય છે કે
+નહીં તે નક્કી કરી શકાતું નથી.
+\end{cor}
+
+\begin{proof}
+  માનો કે સંતોષ્યતા ટ્યુરિંગ મશીન~$S$ વડે નક્કી કરી
+  શકાતી હોય. તો નિર્ણય સમસ્યા આ રીતે ઉકેલી શકીએ:
+  વાક્ય~$!B$ ઇનપુટ તરીકે આપેલું હોય, તો
+  ટેપ પરનું~$!B$ એક ખાનું જમણી તરફ ખસેડો.
+  \sourcecorrection{OLUN-005}{સ્થિર અંગ્રેજી મૂળ આ
+  વાક્યમાં ઇનપુટને $B$ કહે છે; આસપાસની સાબિતીમાં
+  તે જ વાક્ય $!B$ છે, તેથી અહીં ચિહ્ન એકરૂપ કર્યું છે.}
+  ખાનું~$1$ પર પાછા જઈ~$\lnot$ ચિહ્ન લખો.
+
+  હવે ટ્યુરિંગ મશીન~$S$ ચલાવો. ટેપ પર આઉટપુટ~$1$
+  (જો $\lnot !B$ સંતોષ્ય હોય) અથવા~$0$ (જો
+  $\lnot !B$ અસંતોષ્ય હોય) સાથે તે છેવટે અટકે છે.
+  ખાનું~$1$ પર~$\TMstroke$ હોય, તો તેને ભૂંસી નાખો;
+  ખાનું~$1$ ખાલી હોય, તો ત્યાં~$\TMstroke$ લખો,
+  અને પછી અટકો.
+
+  આ ટ્યુરિંગ મશીન હંમેશાં અટકે છે અને~$\lnot !B$
+  અસંતોષ્ય હોય ત્યારે અને માત્ર ત્યારે આઉટપુટ~$1$,
+  અન્યથા~$0$ આપે છે. $!B$ પ્રામાણ્ય ધરાવે ત્યારે
+  અને માત્ર ત્યારે~$\lnot !B$ અસંતોષ્ય છે. એટલે
+  મશીન~$!B$ પ્રામાણ્ય ધરાવે ત્યારે અને માત્ર ત્યારે
+  આઉટપુટ~$1$, અન્યથા~$0$ આપે છે; આમ તે નિર્ણય
+  સમસ્યા ઉકેલી નાખે.
+\end{proof}
+
+\begin{explain}
+એટલે ``$!B$ પ્રથમ-ક્રમના તર્કનું પ્રમાણભૂત વાક્ય
+છે?'' એ પ્રશ્નનો હંમેશાં સાચો ``હા'' અથવા ``ના''
+જવાબ આપતું ટ્યુરિંગ મશીન નથી. પરંતુ સાચો જવાબ
+``હા'' હોય ત્યારે તે આપતું, અને જવાબ ``ના'' હોય તો
+અટકતું જ ન હોય એવું ટ્યુરિંગ મશીન \emph{છે}.
+આ વાત પ્રથમ-ક્રમના તર્કની યથાર્થતા અને પૂર્ણતાના
+પ્રમેયોમાંથી તથા નિષ્પત્તિઓની અસરકારક પરિગણના
+કરી શકાય છે એ હકીકતમાંથી ફલિત થાય છે.
+\end{explain}
+
+\begin{thm}
+  \ollabel{thm:valid-ce}%
+  પ્રથમ-ક્રમનાં વાક્યોનું પ્રામાણ્ય અર્ધનિર્ણેય
+  છે: એવું ટ્યુરિંગ મશીન~$E$ છે કે જેની ટેપ પર
+  પ્રથમ-ક્રમનું વાક્ય~$!B$ ઇનપુટ તરીકે હોય,
+  તો~$!B$ પ્રામાણ્ય ધરાવે ત્યારે અને માત્ર ત્યારે
+  $E$ છેવટે આઉટપુટ~$1$ સાથે અટકે છે; અન્યથા તે
+  અટકતું નથી.
+\end{thm}
+
+\begin{proof}
+  પ્રથમ-ક્રમના તર્કની બધી શક્ય નિષ્પત્તિઓ એક
+  પછી એક અસરકારક વિધિ વડે ઉત્પન્ન કરી શકાય છે.
+  મશીન~$E$ એમ કરે છે અને~$\Proves !B$ બતાવતી
+  નિષ્પત્તિ મળે ત્યારે આઉટપુટ~$1$ સાથે અટકે છે.
+  યથાર્થતાના પ્રમેયથી, $E$ આઉટપુટ~$1$ સાથે અટકે,
+  તો~$\Entails !B$ છે. પૂર્ણતાના પ્રમેયથી,
+  $\Entails !B$ હોય તો~$\Proves !B$ બતાવતી
+  નિષ્પત્તિ છે. $E$ બધી શક્ય નિષ્પત્તિઓ
+  પદ્ધતિસર ઉત્પન્ન કરતું હોવાથી તે
+  $\Proves !B$ બતાવતી વ્યૂત્પત્તિ છેવટે
+  શોધશે અને આઉટપુટ~$1$
+  સાથે અટકશે.
+\end{proof}
+% END OLP-0272
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0273
+\olfileid{tur}{und}{tra}
+\olsection{ટ્રાખ્ટેનબ્રોટનું પ્રમેય}
+\phantomsection\label{guunit:OLP-0273}
+
+
+\begin{explain}
+  \olref[rep]{sec}માં આપણે ટ્યુરિંગ મશીન~$M$
+  અને ઇનપુટ શબ્દમાળા~$w$ માટે વાક્યો
+  $!T(M,w)$ તથા~$!E(M,w)$ વ્યાખ્યાયિત કર્યા.
+  પછી \olref[ver]{lem:valid-if-halt} અને
+  \olref[ver]{lem:halt-if-valid}માં બતાવ્યું કે
+  $!T(M,w) \lif !E(M,w)$ ત્યારે અને માત્ર ત્યારે
+  પ્રામાણ્ય ધરાવે છે જ્યારે ઇનપુટ~$w$ પર શરૂ થયેલું
+  $M$ છેવટે અટકે છે. અટકવાની સમસ્યા અનિર્ણેય
+  હોવાથી, આમાંથી પ્રથમ-ક્રમના તર્કનાં વાક્યોનું
+  પ્રામાણ્ય અને સંતોષ્યતા અનિર્ણેય છે એ ફલિત થાય છે
+  (\cref{tur:und:uns:thm:decision-prob,tur:und:uns:cor:undecidable-sat}).
+
+  પરંતુ વાક્યનું પ્રામાણ્ય અને સંતોષ્યતા કોઈ પણ
+  સંરચનાઓ માટે વ્યાખ્યાયિત છે—સાન્ત હોય કે
+  અનંત. તમને એવું લાગે કે કોઈ વાક્ય
+  સાન્ત સંરચનામાં સંતોષ્ય છે કે નહીં (અથવા
+  બધાં સાન્ત સંરચનાઓમાં પ્રામાણ્ય ધરાવે છે કે
+  નહીં) તે નક્કી કરવું સરળ હશે. નિર્ણય સમસ્યા
+  ઉકેલી ન શકાય તેની સાબિતી અનુરૂપ ફેરવીને
+  બતાવી શકીએ કે એવું નથી.
+
+  પહેલાં \olref[ver]{lem:halt-if-valid}ની
+  સાબિતી ફરી જુઓ: ત્યાં આપણે~$!T(M,w)$નું
+  નિદર્શ~$\Struct M$ બનાવ્યું હતું, જે
+  ઇનપુટ~$w$ પર શરૂ થયેલું મશીન~$M$ શું કરે
+  છે તેનું ચોક્કસ વર્ણન કરે છે. એ નિદર્શનો
+  પ્રદેશ~$\Nat$ હોવાથી તે અનંત હતો. પરંતુ
+  $M$ ઇનપુટ~$w$ પર ખરેખર અટકતું હોય, તો
+  એ જ રીતે સાન્ત નિદર્શ~$\Struct M'$ બનાવી શકીએ.
+  માનો કે ઇનપુટ~$w$ પર શરૂ થયેલું~$M$,
+  $k$ પગલાં પછી અટકે છે. પ્રદેશ
+  $\Domain{M'}$ તરીકે $\{0, \dots, n\}$ લો,
+  જ્યાં~$n$ એ~$k+1$ અને~$w$ની લંબાઈમાંથી
+  મોટું છે, અને મૂકો:
+  \sourcecorrection{OLUN-013}{સ્થિર અંગ્રેજી મૂળ
+  $n$ માટે $k$ અને ઇનપુટની લંબાઈમાંથી મોટું
+  મૂલ્ય લે છે. જો $n=k$ હોય, તો અટકવાના
+  સમયનો પૂર્વગામી સંક્રમણ અથવા છેલ્લે લખાતું
+  ખાનું સ્વ-લૂપના છેડે આવી શકે છે. $n>k$
+  રાખવાથી વપરાતી સમય-સંખ્યા અને અટકવા પહેલાં
+  લખાતાં ખાનાં એ છેડાથી નીચે રહે છે.}
+  \[
+    \Assign{\prime}{M'}(x) =
+    \begin{cases}
+      x + 1 &\text{જો $x < n$ હોય}\\
+      n &\text{અન્યથા,}
+    \end{cases}
+  \]
+  અને $\tuple{x,y} \in \Assign{<}{M'}$ ત્યારે
+  અને માત્ર ત્યારે જ્યારે $x < y$ અથવા
+  $x = y = n$. બાકીની રીતે $\Struct{M'}$ની
+  વ્યાખ્યા~$\Struct{M}$ જેવી જ છે.
+  $\Struct{M'}$ની વ્યાખ્યા મુજબ,
+  \olref[ver]{lem:halt-if-valid}ની સાબિતીની
+  જેમ, $\Sat{M'}{!T(M,w)}$. અને આપણે~$M$
+  ઇનપુટ~$w$ પર અટકે છે એમ માન્યું હોવાથી
+  $\Sat{M'}{!E(M,w)}$. તેથી
+  $\Struct{M'}$ એ~$!T(M,w) \land !E(M,w)$નું
+  સાન્ત નિદર્શ છે (અહીં~$\lif$ને બદલે~$\land$
+  મૂક્યું છે).
+
+  આ સાબિતીનો અડધો ભાગ થયો: $M$ ઇનપુટ~$w$
+  પર અટકે, તો $!T(M,w) \land !E(M,w)$ને
+  સાન્ત નિદર્શ છે. દુર્ભાગ્યે ઊલટી દિશા સાચી
+  નથી: કેટલાંક ટ્યુરિંગ મશીનો ઇનપુટ~$w$ પર
+  અટકતાં નથી, છતાં $!T(M,w) \land !E(M,w)$ને
+  સાન્ત નિદર્શ મળે છે. દાખલા તરીકે, એક જ
+  અવસ્થા~$q_0$ અને સૂચના
+  $\delta(q_0,\TMblank) = \tuple{q_0,\TMblank,\TMstay}$
+  ધરાવતું મશીન~$M$ લો. ખાલી ઇનપુટ
+  $w = \emptyseq$ પર તે કદી અટકતું નથી:
+  તે અનંત ચક્રમાં ચાલે છે, પરંતુ ટેપ બદલતું કે
+  હેડ ખસેડતું નથી. બધાં સંરૂપણો સરખાં જ છે
+  (એક જ અવસ્થા, હેડનું સ્થાન અને ટેપની સામગ્રી).
+  આપણે $!T(M,\emptyseq) \land !E(M,\emptyseq)$
+  સંતોષે એવું સાન્ત સંરચના~$\Struct{M''}$
+  વ્યાખ્યાયિત કરી શકીએ (કસરત). તેમ છતાં,
+  આવાં સંરચનાઓ દૂર થાય તે રીતે
+  $!T(M,w)$માં યોગ્ય ફેરફાર કરી શકીએ.
+
+  \begin{prob}
+    એક જ અવસ્થા~$q_0$ અને એક જ સૂચના
+    $\delta(q_0,\TMblank) = \tuple{q_0,\TMblank,\TMstay}$
+    ધરાવતું ટ્યુરિંગ મશીન~$M$ લો.
+    $\Domain{M''} = \{0, 1, 2\}$,
+    $\Assign{\prime}{M''}(0) =
+    \Assign{\prime}{M''}(1) = 1$ અને
+    $\Assign{\prime}{M''}(2) = 2$, તથા
+    $\Assign{<}{M''} = \{\tuple{0,1}, \tuple{1,1}, \tuple{2,2}\}$
+    લો.
+    \sourcecorrection{OLUN-015}{સ્થિર અંગ્રેજી
+    મૂળ ``એક જ અવસ્થા'' કહેતાં છતાં સૂચનામાં
+    અપરિચિત $q$ આપે છે; અનુગામીની બીજી
+    કિંમતમાં $M''$ને બદલે $M'$ છે. અહીં
+    બંને જગ્યાએ આ જ મશીન અને નિદર્શનાં
+    યોગ્ય ચિહ્નો રાખ્યાં છે.}
+    $\Assign{\Obj Q_{q_0}}{M''}$,
+    $\Assign{\Obj S_{\TMblank}}{M''}$ અને
+    $\Assign{\Obj S_{\TMendtape}}{M''}$
+    એ રીતે વ્યાખ્યાયિત કરો કે
+    $!T(M,\emptyseq)$ તથા $!E(M,\emptyseq)$
+    સાચાં થાય, અને કેમ થાય છે તે સમજાવો.
+    સંકેત: $\delta(q_0, \TMendtape)$
+    અવ્યાખ્યાયિત છે એ નોંધો. ખાતરી કરો કે
+    \begin{align*}
+    & \Obj Q_{q_0}(\num{1}, \num{n}) \land \Obj S_{\TMendtape}(\num{0}, \num{n})
+      \land
+      \lforall[x][(\num{0} < x \lif \Obj S_\TMblank(x, \num{n}))] \text{\quad બધાં $n \in \Nat$ માટે}\\
+    & \lexists[y][(\Obj Q_{q_0}(\num{0}, y) \land \Obj S_{\TMendtape}(\num{0}, y))]
+    \end{align*}
+    બંને~$\Struct{M''}$માં સત્ય છે.
+  \end{prob}
+\end{explain}
+
+ઇનપુટ $w = \sigma_{i_1}\dots\sigma_{i_k}$ પર
+ટ્યુરિંગ મશીન~$M$નું કામ વર્ણવતાં વાક્યો
+વિચારો:
+\begin{enumerate}
+\item સંખ્યાઓ અને~$<$ વર્ણવતાં સ્વયંસિદ્ધ વાક્યો
+  (\olref[rep]{sec}માં $!T(M,w)$ની વ્યાખ્યા જેવા જ).
+\item પ્રારંભિક સંરૂપણ વર્ણવતાં સ્વયંસિદ્ધ વાક્યો:
+  $!T(M,w)$ની વ્યાખ્યા જેવા જ.
+\item એક સંરૂપણમાંથી બીજા સંરૂપણમાં થતું સંક્રમણ
+  વર્ણવતાં સ્વયંસિદ્ધ વાક્યો:
+
+આગળ માટે $!A(x, y)$ અગાઉ જેવું જ માનો અને
+નીચેનું વ્યાખ્યાયિત કરો:
+\[
+  !B(y) \ident \lforall[x][(x < y \lif \eq/[x][y])].
+\]
+\begin{enumerate}
+\item \ollabel{rep-right} દરેક સૂચના
+  $\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMright}$ માટે વાક્ય:
+\begin{align*}
+& \lforall[x][\lforall[y][(
+   (\Obj Q_{q_i}(x, y) \land \Obj S_{\sigma}(x, y)) \lif {}]] \\
+&\qquad   (\Obj Q_{q_j}(x', y') \land \Obj S_{\sigma'}(x, y') \land
+!A(x, y) \land !B(y')))
+\end{align*}
+\item \ollabel{rep-left} દરેક સૂચના
+  $\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMleft}$ માટે વાક્ય:
+\begin{align*}
+& \lforall[x][\lforall[y][
+    ((\Obj Q_{q_i}(x', y) \land \Obj S_{\sigma}(x', y)) \lif {}]]\\
+& \qquad   (\Obj Q_{q_j}(x, y') \land \Obj S_{\sigma'}(x', y') \land
+!A(x', y) \land !B(y'))) \land {}\\
+& \lforall[y][((\Obj Q_{q_i}(\num{0}, y) \land \Obj S_{\sigma}(\num{0},
+    y)) \lif {}]\\
+& \qquad (\Obj Q_{q_j}(\num{0}, y') \land \Obj S_{\sigma'}(\num{0},
+  y') \land !A(\num{0}, y) \land !B(y')))
+\end{align*}
+\sourcecorrection{OLUN-016}{સ્થિર અંગ્રેજી મૂળની
+સામાન્ય ડાબે-ચાલ શાખામાં લખાતું ખાનું~$x'$
+છતાં $!A(x,y)$ છે અને આગળના સમય માટે
+$!B(y')$ નથી. અહીં લખાતું ખાનું
+યથાવત્-શરતમાંથી બાકાત છે અને આ શાખામાં પણ
+નવો સમય અગાઉના સમયોથી જુદો રહે છે.}
+\item \ollabel{rep-stay} દરેક સૂચના
+  $\delta(q_i, \sigma) =
+  \tuple{q_j, \sigma', \TMstay}$ માટે વાક્ય:
+\begin{align*}
+& \lforall[x][\lforall[y][(
+   (\Obj Q_{q_i}(x, y) \land \Obj S_{\sigma}(x, y)) \lif {}]] \\
+&\qquad (\Obj Q_{q_j}(x, y') \land \Obj S_{\sigma'}(x, y') \land
+!A(x, y) \land !B(y')))
+\end{align*}
+\end{enumerate}
+જેમ જોઈ શકાય છે,~$M$નાં સંક્રમણો વર્ણવતાં
+વાક્યો, અંતે $!B(y')$ ઉમેર્યું છે તે સિવાય,
+$!T(M,w)$નાં અનુરૂપ વાક્ય જેવા જ છે.
+$!B(y')$ ખાતરી કરે છે કે ``આગળના'' સંરૂપણનો
+સૂચક~$y'$ અગાઉની બધી સંખ્યાઓ
+$\Obj 0$, $\Obj 0'$, \dots{}થી જુદો છે.
+\end{enumerate}
+ટ્યુરિંગ મશીન~$M$ અને ઇનપુટ~$w$ માટે ઉપરનાં
+બધાં વાક્યોનું સંયોજન~$!T'(M, w)$ માનો.
+
+\begin{lem}\ollabel{lem:halts-sat}
+  ઇનપુટ~$w$ પર શરૂ થયેલું~$M$ અટકે, તો
+  $!T'(M,w) \land !E(M,w)$ને સાન્ત નિદર્શ છે.
+\end{lem}
+
+\begin{proof}
+  $\Struct{M'}$ને
+  \olref[ver]{lem:halt-if-valid}ની સાબિતી જેવું
+  જ લો, પરંતુ:
+  \begin{align*}
+    \Domain{M'} & = \{0, \dots, n\},\\
+    \Assign{\prime}{M'}(x) & =
+    \begin{cases}
+      x + 1 &\text{જો $x < n$ હોય}\\
+      n &\text{અન્યથા,}
+    \end{cases} \\
+    \tuple{x,y} \in \Assign{<}{M'} &\text{ત્યારે અને માત્ર ત્યારે જ્યારે $x < y$ અથવા $x = y = n$,}
+  \end{align*}
+  જ્યાં $n = \max(k+1,\len{w})$ અને~$k$ એ
+  એવી સૌથી નાની પગલાંની સંખ્યા છે કે
+  ઇનપુટ~$w$ પર શરૂ થયેલું~$M$, $k$ પગલાં
+  પછી અટક્યું હોય.
+  \sourcecorrection{OLUN-014}{સ્થિર અંગ્રેજી
+  મૂળ અહીં ફરી $n=\max(k,\len{w})$ લે છે.
+  OLUN-013 મુજબ અટકવાના સમય અને છેલ્લા
+  લખાતા ખાનાને છેડાની સ્વ-લૂપથી દૂર રાખવા
+  અહીં $k+1$ લીધું છે; એટલે $!B(\num{k})$
+  પણ અંતિમ સંક્રમણથી ફલિત થઈ શકે છે.}
+  $\Sat{M'}{!T'(M,w) \land !E(M,w)}$
+  તેની ચકાસણી કસરત તરીકે છોડી છે.
+  \sourcecorrection{OLUN-017}{સ્થિર અંગ્રેજી
+  મૂળના આ સંતોષ-દાવામાં $E(M,w)$ આગળનું
+  મેટાસંકેત~$!$ છૂટ્યું છે; અહીં વ્યાખ્યાયિત
+  વાક્ય~$!E(M,w)$ જ રાખ્યું છે.}
+\end{proof}
+
+\begin{prob}
+  $\Sat{M'}{!T'(M,w) \land !E(M,w)}$
+  સાબિત કરીને \olref[tur][und][tra]{lem:halts-sat}ની
+  સાબિતી પૂર્ણ કરો.
+  \sourcecorrection{OLUN-018}{સ્થિર અંગ્રેજી
+  મૂળની આ કસરતમાં $!T'(M,w)$ને બદલે
+  $!T(M,w)$ છે અને $E(M,w)$ આગળનું $!$
+  છૂટે છે; ઉપપ્રમેયમાં દર્શાવેલું જ સંયોજન
+  અહીં ચકાસવાનું છે.}
+\end{prob}
+
+\begin{lem}\ollabel{lem:sat-halts}
+  $!T'(M,w) \land !E(M,w)$ને સાન્ત નિદર્શ
+  હોય, તો ઇનપુટ~$w$ પર શરૂ થયેલું~$M$ અટકે છે.
+\end{lem}
+
+\begin{proof}
+  પ્રતિનિષેધ સાબિત કરીએ. માનો કે ઇનપુટ~$w$
+  પર શરૂ થયેલું~$M$ અટકતું નથી.
+  $!T'(M,w) \land !E(M,w)$ને કોઈ નિદર્શ
+  જ ન હોય, તો વાત પૂરી. તેથી માનો કે
+  $\Struct{M}$ એ~$!T'(M,w) \land !E(M, w)$નું
+  નિદર્શ છે. હવે બતાવવું છે કે તે સાન્ત હોઈ
+  શકતું નથી.
+  \sourcecorrection{OLUN-019}{સ્થિર અંગ્રેજી
+  મૂળ અહીં જૂના~$!T(M,w)$નું નિદર્શ માને છે,
+  પણ નવી~$!B$ શરત પરથી અનંતપણું બતાવવા
+  $!T'(M,w)$નું નિદર્શ જરૂરી છે.}
+
+  \olref[ver]{lem:config}ની જેમ સાબિત કરી
+  શકીએ કે ઇનપુટ~$w$ પર શરૂ થયેલું~$M$ જો
+  $n$ પગલાં પહેલાં અટક્યું ન હોય અને
+  $n \ge 1$ હોય, તો $!T'(M,w) \Entails
+  !C(M, w, n) \land !B(\num{n})$.
+  $M$ ઇનપુટ~$w$ પર અટકતું નથી, તેથી
+  દરેક ધન~$n \in \Nat$ માટે
+  $!T'(M,w) \Entails !C(M, w, n) \land
+  !B(\num{n})$. પ્રારંભિક સંરૂપણનું
+  $!C(M,w,0)$ ઇનપુટનાં સ્વયંસિદ્ધ વાક્યોમાંથી
+  અલગથી મળે છે.
+  \sourcecorrection{OLUN-020}{સ્થિર અંગ્રેજી
+  મૂળ $!B(\num{n})$ને $n=0$ માટે પણ
+  ફલિત કહે છે; પ્રારંભિક સ્વયંસિદ્ધ વાક્યો
+  એ દાવો આપતાં નથી. પ્રથમ સંક્રમણથી
+  આગળના બધા $n\ge1$ માટે~$!B$ મળે છે,
+  અને જુદા આંકિક પદો બતાવવા એટલું પૂરતું છે.}
+  \olref[rep]{prop:mlessk}થી, દરેક~$k < n$
+  માટે $!T'(M,w) \Entails \num{k} < \num{n}$.
+  વળી $!B(\num{n}) \Entails
+  \num{k} < \num{n} \lif
+  \eq/[\num{k}][\num{n}]$. તેથી બધા
+  $k < n$ માટે
+  $\Sat{M}{\eq/[\num{k}][\num{n}]}$:
+  એટલે અસંખ્ય પદો~$\num{k}$નાં મૂલ્યો
+  $\Struct{M}$માં જુદાં જ હોવાં જોઈએ.
+  પરંતુ તેના માટે $\Domain{M}$ અનંત હોવો
+  જરૂરી છે. તેથી~$\Struct{M}$,
+  $!T'(M,w) \land !E(M, w)$નું સાન્ત નિદર્શ
+  હોઈ શકતું નથી.
+\end{proof}
+
+\begin{prob}
+  ઇનપુટ~$w$ પર શરૂ થયેલું~$M$ જો~$n$
+  પગલાં પહેલાં અટક્યું ન હોય અને~$n \ge 1$,
+  તો $!T'(M,w) \Entails !B(\num{n})$
+  સાબિત કરીને
+  \olref[tur][und][tra]{lem:sat-halts}ની સાબિતી
+  પૂર્ણ કરો.
+  \sourcecorrection{OLUN-021}{સ્થિર અંગ્રેજી
+  મૂળ આ કસરતમાં $n=0$ પણ આવરી લે છે.
+  OLUN-020 મુજબ તે પ્રારંભિક કિસ્સામાં
+  આ દાવો જરૂરી નથી કે ફલિત પણ થતો નથી.}
+\end{prob}
+
+\begin{thm}[ટ્રાખ્ટેનબ્રોટનું પ્રમેય]
+  \ollabel{thm:trakhtenbrodt}
+  પ્રથમ-ક્રમના તર્કનું મનસ્વી વાક્ય સાન્ત
+  નિદર્શ ધરાવે છે કે નહીં (એટલે સાન્ત
+  નિદર્શમાં સંતોષ્ય છે કે નહીં) તે અનિર્ણેય છે.
+\end{thm}
+
+\begin{proof}
+  માનો કે સાન્ત નિદર્શમાં સંતોષ્યતા નક્કી કરતું
+  ટ્યુરિંગ મશીન~$F$ હોય. તો કોઈ પણ ટ્યુરિંગ
+  મશીન~$M$ અને ઇનપુટ~$w$ માટે વાક્ય
+  $!T'(M,w) \land !E(M,w)$ ગણીને~$F$ વડે
+  તેને સાન્ત નિદર્શ છે કે નહીં તે નક્કી કરી
+  શકીએ. \cref{tur:und:tra:lem:halts-sat,tur:und:tra:lem:sat-halts}
+  મુજબ એવું નિદર્શ ત્યારે અને માત્ર ત્યારે છે
+  જ્યારે ઇનપુટ~$w$ પર શરૂ થયેલું~$M$ અટકે.
+  એટલે~$F$ વડે અટકવાની સમસ્યા ઉકેલી શકાય;
+  પરંતુ તે ઉકેલી શકાતી નથી એ જાણીએ છીએ.
+\end{proof}
+
+\begin{cor}\ollabel{cor:fproof-incomp}%
+  \emph{સાન્ત} નિદર્શોમાં પ્રામાણ્ય માટે
+  યથાર્થ અને પૂર્ણ એવી કોઈ નિષ્પત્તિ
+  પદ્ધતિ હોઈ શકતી નથી: એટલે એવી નિષ્પત્તિ પદ્ધતિ,
+  જેમાં દરેક સાન્ત સંરચના~$\Struct{M}$
+  માટે $\Sat{M}{!B}$ હોય ત્યારે અને માત્ર
+  ત્યારે $\Proves !B$ હોય.
+\end{cor}
+
+\begin{proof}
+  કસરત.
+\end{proof}
+
+\begin{prob}
+  \olref[tur][und][tra]{cor:fproof-incomp}
+  સાબિત કરો. $!B$ દરેક સાન્ત સંરચનામાં
+  સંતોષાય ત્યારે અને માત્ર ત્યારે~$\lnot !B$
+  સાન્ત નિદર્શમાં સંતોષ્ય નથી એ નોંધો.
+  \olref[tur][und][uns]{thm:valid-ce}ના અર્થમાં
+  સાન્ત નિદર્શમાં સંતોષ્યતા અર્ધનિર્ણેય કેમ
+  છે તે સમજાવો. આથી સાન્ત નિદર્શોમાં
+  પ્રામાણ્ય માટેની નિષ્પત્તિ પદ્ધતિ હોત,
+  તો સાન્ત નિદર્શમાં સંતોષ્યતા નિર્ણેય બનત
+  એવું કેમ થાય તે દલીલ કરો.
+\end{prob}
+% END OLP-0273
+\endgroup
+
+
+\OLEndChapterHook
+% END OLP-0264
+\endgroup
+
+
+\OLEndPartHook
+% END OLP-0252

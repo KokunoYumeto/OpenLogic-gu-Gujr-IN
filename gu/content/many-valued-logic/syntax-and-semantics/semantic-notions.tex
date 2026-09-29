@@ -1,0 +1,69 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{sem}
+
+\olsection{અર્થવિચારી ખ્યાલો}
+
+ધારો કે બહુમૂલ્ય તર્કશાસ્ત્ર~$\Log L$ શ્રેણિક વડે આપેલું છે. ત્યારે
+આપણે~$\Log L$ માટેના સામાન્ય અર્થવિચારી ખ્યાલો વ્યાખ્યાયિત કરી શકીએ.
+
+\begin{defn}
+\begin{enumerate}
+\item કોઈ~$\pAssign{v}$ માટે $\pSat{v}{!A}$ હોય, તો
+  !!^a{formula}~$!A$ \emph{સંતોષ્ય} છે; કોઈ પણ $\pAssign{v}$ માટે
+  $\pSat{v}{!A}$ ન હોય, તો તે \emph{અસંતોષ્ય} છે;
+\item બધાં !!{valuation}s~$v$ માટે $\pSat{v}{!A}$ હોય, તો
+  !!^a{formula}~$!A$ \emph{પુનરુક્તિ} છે;
+\item જો $\Gamma$ એ !!{formula}sનો ગણ હોય, તો $\Gamma \Entails !A$
+  (``$\Gamma$, $!A$ને ફલિત કરે છે'') ત્યારે અને માત્ર ત્યારે, જ્યારે
+  $\pSat{v}{\Gamma}$ હોય એવા દરેક !!{valuation}~$\pAssign{v}$ માટે
+  $\pSat{v}{!A}$ હોય.
+\item જો $\Gamma$ એ !!{formula}sનો ગણ હોય, તો એવા કોઈ
+  !!a{valuation}~$\pAssign{v}$ માટે $\pSat{v}{\Gamma}$ હોય ત્યારે
+  $\Gamma$ \emph{સંતોષ્ય} છે; અન્યથા $\Gamma$ \emph{અસંતોષ્ય} છે.
+\end{enumerate}
+\end{defn}
+
+આ ખ્યાલો માટે શાસ્ત્રીય તર્કશાસ્ત્રના કિસ્સા જેવી કેટલીક હકીકતો મળે છે:
+
+\begin{prop}
+\ollabel{prop:semanticalfacts}
+\begin{enumerate}
+\item $!A$ પુનરુક્તિ હોય ત્યારે અને માત્ર ત્યારે
+  $\emptyset \Entails !A$;
+\item જો $\Gamma$ સંતોષ્ય હોય, તો $\Gamma$નો દરેક સાન્ત ઉપગણ પણ
+  સંતોષ્ય છે;
+\item\ollabel{def:monotonicity}%
+એકદિશવર્ધિતા: જો $\Gamma \subseteq \Delta$
+  અને $\Gamma \Entails !A$, તો $\Delta \Entails !A$ પણ;
+\item\ollabel{def:Cut}%
+પરંપરિતતા: જો $\Gamma \Entails !A$ અને
+  $\Delta \cup \{ !A\} \Entails !B$, તો $\Gamma \cup \Delta \Entails
+  !B$;
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[mvl][syn][sem]{prop:semanticalfacts} સાબિત કરો.
+\end{prob}
+
+શાસ્ત્રીય તર્કશાસ્ત્રમાં ફલિતતા અને પ્રેરણ સંયોજક વચ્ચે સંબંધ સ્થાપી શકાય છે.
+દાખલા તરીકે, \emph{મોદુસ પોનેન્સ}નું પ્રામાણ્ય મળે છે: જો $\Gamma
+\Entails !A$ અને $\Gamma \Entails !A \lif !B$, તો $\Gamma \Entails
+!B$. શાસ્ત્રીય તર્કશાસ્ત્રમાં $\Entails$ અને $\lif$ વચ્ચેનો બીજો
+મહત્ત્વનો સંબંધ અર્થાનુસારી નિગમન પ્રમેય છે: $\Gamma \Entails !A
+\lif !B$ ત્યારે અને માત્ર ત્યારે, જ્યારે $\Gamma \cup \{!A\} \Entails
+!B$. આ પરિણામો બહુમૂલ્ય તર્કશાસ્ત્રોમાં \emph{હંમેશાં લાગુ પડતાં નથી}.
+તેઓ લાગુ પડે છે કે કેમ તે સત્યવિધેય~$\tf{\lif}$ પર આધાર રાખે છે.
+
+\end{document}

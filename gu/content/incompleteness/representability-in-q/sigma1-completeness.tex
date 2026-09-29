@@ -1,0 +1,536 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: sigma1-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{s1c}
+\olsection{\texorpdfstring{$\Sigma_1$}{Sigma-1} પૂર્ણતા}
+
+$\Th{Q}$ અને તેના સુસંગત,
+સ્વયંસિદ્ધિગત વિસ્તરણો અપૂર્ણ
+હોવા છતાં, આપણે જોયું છે કે
+$\Th{Q}$ અંકો વિશેનાં ઘણાં
+મૂળભૂત તથ્યો સાબિત કરે છે.
+હકીકતમાં આ વાતને ખાસ્સી
+આગળ લઈ જઈ શકાય છે.
+$\Th{Q}$માં શું સાબિત કરી
+શકાય છે તેનો વ્યાપ સમજવા
+$\Delta_0$, $\Sigma_1$ અને
+$\Pi_1$ !!{formula}sની
+વિભાવનાઓ રજૂ કરીએ.
+સ્થૂળ રીતે કહીએ તો
+$\Sigma_1$ !!{formula} એ
+$\lexists[x][!B(x)]$ આકારનું
+છે, જ્યાં~$!B$ માત્ર વિધાનાત્મક
+સંયોજકો અને મર્યાદિત પરિમાણકો
+વડે રચાયેલું છે. આપણે બતાવીશું
+કે $!A$ એ $\Struct{N}$માં
+સાચું $\Sigma_1$ !!{sentence}
+હોય, તો $\Th{Q} \Proves !A$
+(\olref{thm:sigma1-completeness}).
+
+\begin{defn}
+\ollabel{defn:bd-quant}
+\emph{મર્યાદિત અસ્તિત્વવાચક
+!!{formula}} એ
+$\lexists[x][(x < t \land !A(x))]$
+આકારનું છે, જ્યાં~$t$ કોઈપણ
+પદ છે; પરંપરાગત રીતે તેને
+$\bexists{x < t}{!A(x)}$
+લખીએ છીએ.
+%
+\emph{મર્યાદિત સર્વવાચક
+!!{formula}} એ
+$\lforall[x][(x < t \lif !A(x))]$
+આકારનું છે, જ્યાં~$t$ કોઈપણ
+પદ છે; પરંપરાગત રીતે તેને
+$\bforall{x < t}{!A(x)}$
+લખીએ છીએ.
+\end{defn}
+
+\begin{defn}
+\ollabel{defn:delta0-sigma1-pi1-frm}
+!!{formula}~$!B$ એ $\Delta_0$
+ત્યારે કહેવાય જ્યારે તે
+પરમાણુ !!{formula}sમાંથી
+માત્ર વિધાનાત્મક સંયોજકો
+અને મર્યાદિત પરિમાણીકરણ
+વડે રચાયેલું હોય.
+%
+!!{formula}~$!A$ એ $\Sigma_1$
+ત્યારે કહેવાય જ્યારે
+$!A \ident \lexists[x][!B(x)]$
+અને~$!B$ એ $\Delta_0$ હોય.
+%
+!!{formula}~$!A$ એ $\Pi_1$
+ત્યારે કહેવાય જ્યારે
+$!A \ident \lforall[x][!B(x)]$
+અને~$!B$ એ $\Delta_0$ હોય.
+\end{defn}
+
+\begin{lem}
+\ollabel{lem:q-proves-clterm-id}
+માનો કે~$t$ બંધ પદ છે અને
+$\Value{t}{N} = n$. તો
+$\Th{Q} \Proves \eq[t][\num n]$.
+\end{lem}
+
+\begin{proof}
+$t$ની જટિલતા પર અનુમાન
+વડે આ સાબિત કરીએ.
+આરંભિક કિસ્સામાં
+$\Value{\Obj 0}{N} = 0$,
+અને $\num 0 \ident \Obj 0$
+હોવાથી
+$\Th{Q} \Proves \eq[\Obj 0][\num 0]$.
+%
+અનુમાનના કિસ્સામાં માનો કે
+$t_1$ અને~$t_2$ એવાં પદો છે કે
+$\Value{t_1}{N} = n_1$,
+$\Value{t_2}{N} = n_2$,
+$\Th{Q} \Proves \eq[t_1][\num n_1]$,
+અને $\Th{Q} \Proves
+\eq[t_2][\num n_2]$.
+
+તો $\Value{(t_1')}{N} = n_1 + 1$.
+અનુમાનની ધારણા અને
+!!{formula}~$\eq[\num{n_1}'][\num{n_1}']$
+પર સમતા માટેના પ્રથમ-ક્રમના
+નિયમો લગાડવાથી
+$\Th{Q} \Proves
+\eq[t_1'][{\num n_1}']$.
+તેથી અંકોની વ્યાખ્યા પ્રમાણે
+$\Th{Q} \Proves
+\eq[t_1'][\num{n_1 + 1}]$.
+
+સરવાળા માટે
+\[
+      \Value{(t_1 + t_2)}{N}
+    = \Value{t_1}{N} + \Value{t_2}{N}
+    = n_1 + n_2.
+\]
+અનુમાનની ધારણા તથા
+સમતાના નિયમો વડે પહેલાં
+$\Th{Q} \Proves
+\eq[t_1 + t_2][\num{n_1} + t_2]$
+અને તે નિયમો બીજી વાર
+લગાડતાં
+$\Th{Q} \Proves
+\eq[t_1 + t_2][\num{n_1} + \num{n_2}]$
+મળે છે.
+\olref[inc][req][bre]{lem:q-proves-add}
+પ્રમાણે
+$\Th{Q} \Proves
+\eq[\num{n_1} + \num{n_2}][\num{n_1 + n_2}]$;
+તેથી $\Th{Q} \Proves
+\eq[t_1 + t_2][\num{n_1 + n_2}]$.
+
+$\times$ માટે પણ
+\olref[inc][req][bre]{lem:q-proves-mult}
+વાપરીને આવી જ દલીલ થાય છે.
+%
+અંકગણિતનાં બધાં બંધ પદો
+આ કિસ્સાઓમાં આવી જાય છે;
+તેથી $\Value{t}{N} = n$
+હોય એવા દરેક બંધ પદ~$t$
+માટે $\Th{Q} \Proves
+\eq[t][\num n]$.
+\end{proof}
+ 
+\begin{prob}
+$\times$ સંબંધિત
+\olref{lem:q-proves-clterm-id}ની
+સાબિતી વિગતે આપો.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:atomic-completeness}
+માનો કે $t_1$ અને~$t_2$
+બંધ પદો છે. તો
+\begin{enumerate}
+\item જો $\Value{t_1}{N} = \Value{t_2}{N}$,
+    તો $\Th{Q} \Proves \eq[t_1][t_2]$.
+\item જો $\Value{t_1}{N} \neq \Value{t_2}{N}$,
+    તો $\Th{Q} \Proves \eq/[t_1][t_2]$.
+\item જો $\Value{t_1}{N} < \Value{t_2}{N}$,
+    તો $\Th{Q} \Proves t_1 < t_2$.
+\item જો $\Value{t_2}{N} \leq \Value{t_1}{N}$,
+    તો $\Th{Q} \Proves \lnot(t_1 < t_2)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$t_1$ અને~$t_2$ આપેલાં હોય,
+તો $n = \Value{t_1}{N}$ અને
+$m = \Value{t_2}{N}$ નક્કી કરીએ.
+
+માનો કે $!A \ident t_1 = t_2$.
+\olref{lem:q-proves-clterm-id}
+પ્રમાણે $\Th{Q} \Proves
+\eq[t_1][\num n]$ અને
+$\Th{Q} \Proves \eq[t_2][\num m]$.
+જો $n = m$, તો
+$\Th{Q} \Proves \eq[\num n][\num m]$;
+અને સમતાની સંક્રામકતા વડે
+$\Th{Q} \Proves \eq[t_1][t_2]$.
+જો $n \neq m$, તો
+$\Th{Q} \Proves \eq/[\num n][\num m]$;
+સમતાની સંક્રામકતા ફરીથી
+લગાડતાં $\Th{Q} \Proves
+\eq/[t_1][t_2]$.
+\sourcecorrection{OLINC-032}{સ્થિર અંગ્રેજી
+મૂળ અહીં $t_2$નું મૂલ્ય~$m$
+વ્યાખ્યાયિત કરે છે છતાં
+$t_2=\num n$ લખે છે.
+આ સમીકરણ $t_2=\num m$
+કર્યું છે, જેથી $n=m$ અને
+$n\neq m$ બંને કિસ્સા
+યોગ્ય રીતે ચાલે.}
+
+હવે $!A \ident t_1 < t_2$
+લો. બંને કિસ્સામાં સ્વયંસિદ્ધિ
+$!Q_8$ વાપરીશું; તે દરેક
+$x,y$ માટે
+$x < y \liff
+\lexists[z][\eq[z' + x][y]]$
+કહે છે.
+
+માનો કે $\Sat{N}{t_1 < t_2}$.
+તો કોઈ~$k \in \Nat$ માટે
+$n + k + 1 = m$.
+\olref{lem:q-proves-clterm-id}
+પ્રમાણે $\Th{Q} \Proves
+\eq[t_1][\num n]$ અને
+$\Th{Q} \Proves \eq[t_2][\num m]$.
+આ લેમ્માના પહેલા ભાગથી
+$\Th{Q} \Proves
+\eq[{\num k}' + \num n][\num m]$.
+સમતાની સંક્રામકતા વડે
+$\Th{Q} \Proves
+\eq[{\num k}' + t_1][t_2]$;
+એટલે $\Th{Q} \Proves
+\lexists[z][\eq[z' + t_1][t_2]]$.
+$!Q_8$ની જમણેથી ડાબી
+દિશા પ્રમાણે $\Th{Q} \Proves
+t_1 < t_2$.
+\sourcecorrection{OLINC-033}{સ્થિર અંગ્રેજી
+મૂળ પહેલા $\num n+\num k'$
+નું સમીકરણ આપે છે, પરંતુ
+પછીના અસ્તિત્વવાચક સાક્ષી માટે
+$\num k'+\num n$ જરૂરી છે.
+$\Th{Q}$ સામાન્ય સરવાળાની
+અદલાબદલી સાબિત કરતું નથી;
+અહીં નિશ્ચિત અંકોનું જરૂરી
+સમીકરણ લેમ્માના પહેલા
+ભાગથી સીધું લીધું છે.}
+
+તેના બદલે $\Sat/{N}{t_1 < t_2}$,
+એટલે $m \leq n$, માનો.
+%
+$\Th{Q}$માં રહીને
+$t_1 < t_2$ ધારો. $!Q_8$ની
+ડાબેથી જમણી દિશા પ્રમાણે
+કોઈ~$z$ માટે
+$\eq[z' + t_1][t_2]$.
+$\Th{Q} \Proves
+\eq[t_1][\num n]$ અને
+$\Th{Q} \Proves \eq[t_2][\num m]$
+હોવાથી
+$\eq[z' + \num n][\num m]$.
+%
+હવે $!Q_5$ વાપરીને~$m$
+પર બાહ્ય અનુમાન કરીએ, તો
+$\eq[z' + \num{n - m}][\Obj 0]$.
+જો $m = n$, તો $!Q_4$
+વડે $\eq[z'][\Obj 0]$ મળે,
+જે $!Q_2$ને વિરુદ્ધ છે.
+જો $m < n$, તો ફરી~$!Q_5$
+વડે
+$\eq[(z' + \num{n - m - 1})'][\Obj 0]$,
+જે $!Q_2$ને વિરુદ્ધ છે.
+આથી $\Th{Q} \Proves
+\lnot(t_1 < t_2)$.
+\sourcecorrection{OLINC-034}{સ્થિર અંગ્રેજી
+મૂળ આ બંને વિરોધાભાસને
+$Q_3$ સાથે જોડે છે; ઉત્તરગામી
+શૂન્ય ન હોય તે સ્વયંસિદ્ધિ
+$Q_2$ છે. $m=n$ના
+કિસ્સામાં સરવાળામાંથી શૂન્ય
+દૂર કરવા $Q_4$ પણ જરૂરી છે.}
+\end{proof}
+
+\begin{lem}
+\ollabel{lem:bounded-quant-equiv}
+માનો કે $!A$ એ !!a{formula},
+$t$ એ બંધ પદ અને
+$k=\Value{t}{N}$. તો
+\begin{enumerate}
+\item $\Th{Q} \Proves \bforall{x<t}{!A(x)}$
+ત્યારે અને માત્ર ત્યારે જ
+$\Th{Q} \Proves
+    !A(\num 0) \land \dots \land !A(\num{k-1})$.
+\item $\Th{Q} \Proves \bexists{x<t}{!A(x)}$
+ત્યારે અને માત્ર ત્યારે જ
+$\Th{Q} \Proves
+    !A(\num 0) \lor \dots \lor !A(\num{k-1})$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+    મર્યાદિત સર્વવાચક પરિમાણકનો
+    કિસ્સો સાબિત કરીએ.
+    $\Value{t}{N} = 0$ હોય,
+    તો સમકક્ષતાની ડાબી બાજુ
+    $\Th{Q}$માં સાબિત થાય છે,
+    કારણ કે \olref[inc][req][min]{lem:less-zero}
+    પ્રમાણે $x<\num 0$
+    એવું શક્ય નથી.
+    તેવી જ રીતે ખાલી સંયોજનને
+    માત્ર $\ltrue$ લઈ શકીએ,
+    જે પણ $\Th{Q}$માં
+    સાબિત થાય છે.
+    \sourcecorrection{OLINC-035}{સ્થિર અંગ્રેજી
+    મૂળ આ સર્વવાચક કિસ્સામાં
+    ખાલી વિયોજનને $\ltrue$
+    કહે છે. અહીં સાન્ત
+    સર્વવાચક દાવાને અનુરૂપ
+    ખાલી સંયોજન જ $\ltrue$
+    છે; ખાલી વિયોજનનો અર્થ
+    જુદો થાય છે.}
+    %
+    તેથી કોઈ પ્રાકૃતિક સંખ્યા~$k$
+    માટે $\Value{t}{N} = k+1$
+    ધારો. \olref{lem:q-proves-clterm-id}
+    વડે આપણે
+    $\bforall{x<\num{k+1}}{!A(x)}$
+    આકારના !!a{formula} સાથે
+    કામ કરીએ તેમ માની શકીએ.
+    
+    માનો કે $\Th{Q} \Proves
+    \bforall{x<\num{k+1}}{!A(x)}$,
+    અને $n \leq k$ લો.
+    \olref{lem:atomic-completeness}
+    પ્રમાણે $\Th{Q} \Proves
+    \num n < \num{k+1}$;
+    તેથી તર્કથી $\Th{Q} \Proves
+    !A(\num n)$. દરેક
+    $n \leq k$ માટે આ વાત
+    $k+1$ વાર લગાડવાથી
+    માંગ્યા પ્રમાણે
+    $\Th{Q} \Proves !A(\num 0)
+    \land \dots \land !A(\num k)$.
+    
+    બીજી દિશા માટે
+    $\Th{Q} \Proves
+    !A(\num 0) \land \dots \land !A(\num k)$
+    ધારો. $\Th{Q}$માં
+    $x < \num{k+1}$ માનો.
+    \olref[inc][req][min]{lem:less-nsucc}
+    વડે
+    $x = \num 0 \lor \dots \lor x = \num k$;
+    તેથી તર્કથી~$!A(x)$
+    મળે છે અને પરિણામે
+    સર્વવાચક દાવો
+    $\bforall{x<\num{k+1}}{!A(x)}$
+    મળે છે.
+    
+    મર્યાદિત અસ્તિત્વવાચક
+    પરિમાણિત !!{formula}sની
+    સમકક્ષતાની સાબિતી પણ આવી જ છે.
+\end{proof}
+
+\begin{prob}
+\olref{lem:bounded-quant-equiv}માં
+અસ્તિત્વવાચક કિસ્સાની વિગતવાર
+સાબિતી આપો.
+\end{prob}
+
+\begin{lem}
+\ollabel{lem:delta0-completeness}
+$!A$ એ $\Struct{N}$માં સાચું
+$\Delta_0$ !!{sentence} હોય,
+તો $\Th{Q} \Proves !A$.
+\end{lem}
+
+\begin{proof}
+!!{formula}ની જટિલતા પર
+અનુમાન વડે સાબિત કરીએ.
+%
+આરંભિક કિસ્સો
+\olref{lem:atomic-completeness}
+આપે છે; તેથી અનુમાનના
+પગલા તરફ જઈએ. સરળતા માટે,
+નિષેધ લાગુ પડે તે
+!!{formula}ની રચના મુજબ
+નિષેધના કિસ્સાને પેટાકિસ્સામાં
+વહેંચીએ.
+
+\begin{enumerate}
+\item માનો કે $(!A \land !B)$
+$\Struct{N}$માં સાચું છે;
+ત્યારે $!A$ અને~$!B$ બંને
+$\Struct{N}$માં સાચાં છે.
+અનુમાનની ધારણા પ્રમાણે
+$\Th{Q} \Proves !A$ અને
+$\Th{Q} \Proves !B$;
+તેથી તર્કથી
+$\Th{Q} \Proves (!A \land !B)$.
+%
+\item માનો કે
+$\lnot (!A \land !B)$ એ
+$\Struct{N}$માં સાચું છે;
+ત્યારે $\lnot !A$ અથવા
+$\lnot !B$ એ $\Struct{N}$માં
+સાચું છે. વ્યાપકતા ગુમાવ્યા
+વિના પહેલું સાચું છે એમ
+ધારો. અનુમાનની ધારણા પ્રમાણે
+$\Th{Q} \Proves \lnot !A$;
+તેથી તર્કથી $\Th{Q} \Proves
+\lnot (!A \land !B)$.
+%
+\item માનો કે $(!A \lor !B)$
+$\Struct{N}$માં સાચું છે;
+ત્યારે $!A$ એ $\Struct{N}$માં
+સાચું છે અથવા~$!B$ એ
+$\Struct{N}$માં સાચું છે.
+વ્યાપકતા ગુમાવ્યા વિના પહેલું
+સાચું છે એમ ધારો.
+અનુમાનની ધારણા પ્રમાણે
+$\Th{Q} \Proves !A$;
+તેથી તર્કથી $\Th{Q} \Proves
+(!A \lor !B)$.
+%
+\item માનો કે
+$\lnot(!A \lor !B)$ એ
+$\Struct{N}$માં સાચું છે;
+ત્યારે $\lnot !A$ અને
+$\lnot !B$ બંને $\Struct{N}$માં
+સાચાં છે. અનુમાનની ધારણા
+પ્રમાણે $\Th{Q} \Proves
+\lnot !A$ અને
+$\Th{Q} \Proves \lnot !B$.
+પરિણામે તર્કથી
+$\Th{Q} \Proves
+\lnot(!A \lor !B)$.
+%
+\item માનો કે
+$\bforall{x<t}{!A(x)}$
+$\Struct{N}$માં સાચું છે,
+જ્યાં~$t$ બંધ પદ અને
+$k=\Value{t}{N}$. અનુમાનની
+ધારણા તથા તર્ક પ્રમાણે
+દરેક $n < \Value{t}{N}$
+માટે $!A(\num n)$ એ
+$\Struct{N}$માં સાચું હોય,
+તો $\Th{Q} \Proves
+!A(\num 0) \land \dots \land !A(\num{k-1})$.
+\olref{lem:bounded-quant-equiv}
+પ્રમાણે $\Th{Q} \Proves
+\bforall{x<t}{!A(x)}$.
+%
+\item મર્યાદિત અસ્તિત્વવાચક
+પરિમાણકનો કિસ્સો, જેમાં
+$\bexists{x < t}{!A(x)}$
+આકારનું !!a{sentence} હોય,
+તે મર્યાદિત સર્વવાચક
+પરિમાણકના કિસ્સા જેવો જ છે.
+%
+\item માનો કે
+$\lnot \bforall{x<t}{!A(x)}$
+$\Struct{N}$માં સાચું છે,
+જ્યાં~$t$ બંધ પદ છે.
+આ !!{sentence} એ
+!!{sentence}
+$\bexists{x<t}{\lnot !A(x)}$
+ની સમકક્ષ છે, અને સમકક્ષતા
+$\Th{Q}$માં નિગમ્ય છે;
+તેથી મર્યાદિત અસ્તિત્વવાચક
+પરિમાણકની દલીલ વાપરી શકીએ.
+%
+\item તેવી જ રીતે માનો કે
+$\lnot \bexists{x<t}{!A(x)}$
+$\Struct{N}$માં સાચું છે,
+જ્યાં~$t$ બંધ પદ છે.
+આ !!{sentence} એ
+$\Th{Q}$માં
+$\bforall{x<t}{\lnot!A(x)}$
+ની સમકક્ષ છે; તેથી
+મર્યાદિત સર્વવાચક પરિમાણકની
+દલીલ વાપરી શકીએ.
+\sourcecorrection{OLINC-036}{સ્થિર અંગ્રેજી
+મૂળના આ કિસ્સામાં
+$\bexists$ માટે બીજો
+કૌંસબંધ દલીલ-ઘટક છૂટી
+ગયો છે. મેક્રોની વ્યાખ્યા
+પ્રમાણે અહીં $!A(x)$ને
+બીજા ઘટકમાં મૂક્યું છે.}
+%
+\item છેલ્લે માનો કે
+$\lnot !A$ એ $\Struct{N}$માં
+સાચું છે. હવે માત્ર બે
+કિસ્સા બાકી છે: $!A$
+પરમાણુ છે, અથવા કોઈ
+$\Delta_0$ !!{sentence}~$!B$
+માટે
+$\lnot !A \ident \lnot\lnot !B$.
+જો $!A$ પરમાણુ હોય, તો
+\olref{lem:atomic-completeness}
+પ્રમાણે $\Th{Q} \Proves
+\lnot !A$. જો
+$\lnot !A \ident \lnot\lnot !B$,
+તો તર્કથી તે~$!B$ની
+$\Th{Q}$માં સાબિત કરી શકાય
+એવી સમકક્ષતા ધરાવે છે.
+તે $\Struct{N}$માં સાચું છે,
+કારણ કે $\lnot !A$ પણ
+$\Struct{N}$માં સાચું છે.
+તેથી અનુમાનની ધારણા પ્રમાણે
+$\Th{Q} \Proves \lnot !A$.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref{lem:delta0-completeness}માં
+અસ્તિત્વવાચક કિસ્સાની વિગતવાર
+સાબિતી આપો.
+\end{prob}
+
+\begin{thm}
+\ollabel{thm:sigma1-completeness}
+$!A$ એ $\Struct{N}$માં સાચું
+$\Sigma_1$ !!{sentence} હોય,
+તો $\Th{Q} \Proves !A$.
+\end{thm}
+
+\begin{proof}
+$\lexists[x][!A(x)]$ એ
+$\Struct{N}$માં સાચું
+$\Sigma_1$ !!{sentence}
+હોય, તો કોઈ પ્રાકૃતિક
+સંખ્યા~$n$ અને ચલ-નિયુક્તિ~$s$
+એવાં છે કે $s(x) = n$ અને
+$\Sat{N}{!A(x)}[s]$.
+સંતોષસંબંધનાં પ્રમાણભૂત
+તથ્યો વડે $\Sat{N}{!A(\num n)}$
+મળે છે. પરંતુ $!A(\num n)$
+$\Delta_0$ !!{formula} છે;
+તેથી \olref{lem:delta0-completeness}
+પ્રમાણે $\Th{Q} \Proves
+!A(\num n)$ અને પરિણામે
+તર્કથી $\Th{Q} \Proves
+\lexists[x][!A(x)]$ પણ છે.
+\sourcecorrection{OLINC-037}{સ્થિર અંગ્રેજી
+મૂળ અહીં $\lexists{x}!A(x)$
+લખે છે; આ મેક્રો ચલ અને
+વ્યાપ માટે ચોરસ કૌંસવાળા
+વૈકલ્પિક ઘટકો લે છે.
+વ્યાખ્યા અને સાબિતીના
+છેલ્લા સૂત્ર પ્રમાણે
+$\lexists[x][!A(x)]$
+આકાર સ્પષ્ટ કર્યો છે.}
+\end{proof}
+
+\end{document}

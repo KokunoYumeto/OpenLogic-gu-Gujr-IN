@@ -1,0 +1,103 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: terms-to-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tp}
+
+\olsection{સાબિતી-પદોમાંથી \usetoken{P}{derivation} પુનઃપ્રાપ્ત કરવી}
+
+હવે બીજી દિશા વિચારીએ: સાબિતી-પદ~$N$માંથી
+\Log{N2i}ની !!a{proof} પાછી મેળવવી.
+સામાન્ય રીતે આ ફક્ત એવા સંદર્ભની સાપેક્ષે શક્ય છે,
+જેમાં આપેલા સાબિતી-પદમાં મુક્ત રીતે આવતાં દરેક ચલ~$x$
+માટે $x : !A$ની જોડી હોય.
+પરંતુ મુક્ત ચલ વિનાના ઉદાહરણથી શરૂ કરીએ, એટલે આ પદથી:
+\[
+\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]
+\]
+તેનું સ્વરૂપ $\lambd[\typeof{x}{!A \land !B}][N_1]$ છે.
+\Log{tN2i}માં આ સ્વરૂપનું પદ આપતો એકમાત્ર નિયમ
+\Intro{\lif} છે; એટલે $N$માં સંકેતિત !!{proof}નો
+અંત~\Intro{\lif}થી જ થાય છે, એટલે તે આમ પૂરો થાય છે:
+  \[
+  \Axiom$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif !C$
+  \DisplayProof
+  \]
+હજુ $!C$ શું છે તે જાણતા નથી, પરંતુ પૂર્વાંગ
+$!A \land !B$ છે અને આધારના સંદર્ભમાં
+$x:!A \land !B$ આવવું જ જોઈએ તે જાણીએ છીએ.
+
+હવે આધાર સાથે સંકળાયેલું સાબિતી-પદ નક્કી થઈ ચૂક્યું છે:
+$\pair{\proj{2}{x}}{\proj{1}{x}}$.
+\emph{તેમાં} સંકેતિત !!{proof}નો અંત \Intro{\land}થી જ થાય.
+હજુ $!C$ શું છે તે જાણતા નથી, પરંતુ
+તે~\Intro{\land}નું નિષ્કર્ષ હોવાથી સંયોજન જ હોય,
+એટલે $!C \ident (!C_1 \land !C_2)$.
+પુનઃરચના આગળ વધારીએ:
+  \[
+  \Axiom$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+સાબિતી-પદ $\pi_2(x)$ સૂચવે છે કે ડાબી તરફનો સૌથી ઉપરનો
+સિક્વન્ટ \Elim{\land}[2]થી મળ્યો હતો, એટલે આધારનું
+સ્વરૂપ $!D \land !C_1$ છે.
+જમણી તરફ $!C_2$ આપતું અનુમાન \Elim{\land}[1] જ હોય
+અને આધારનું સ્વરૂપ $!C_2 \land !E$ હોય તે નક્કી કરી શકીએ.
+  \[
+  \Axiom$x : !A\land !B \fCenter x: !D\land !C_1$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter x: !C_2\land !E$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+સૌથી ઉપરના સિક્વન્ટોનાં સાબિતી-પદો હવે ચલ છે,
+એટલે તેઓ સ્વયંસિદ્ધો જ હોવા જોઈએ.
+આથી $!C_1$, $!C_2$, $!D$ અને $!E$ નક્કી થાય છે:
+$!D \ident !A$ અને $!C_1 \ident !B$, નહીં તો
+ડાબો સિક્વન્ટ સ્વયંસિદ્ધ નથી;
+અને $!C_2 \ident !A$ તથા $!E \ident !B$,
+નહીં તો જમણો સિક્વન્ટ સ્વયંસિદ્ધ નથી.
+આપણે સાબિતી સંપૂર્ણપણે પુનઃપ્રાપ્ત કરી છે:
+  \[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+
+
+\end{document}
+

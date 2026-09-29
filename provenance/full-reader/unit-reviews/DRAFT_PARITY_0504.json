@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0504",
+  "checked_at_utc": "2026-09-27T21:32:00.764666+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0504 intuitionistic axiomatic soundness; state-only draft",
+  "report": {
+    "unit_id": "OLP-0504",
+    "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+    "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+    "draft_path": "private-state\\work\\batch042_draft\\intuitionistic-soundness-axd.tex",
+    "draft_sha256": "95f82400c7b0c5159bcb6a8bf233d2c0f87edead5f943b453f7390c0508c4b33",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 56,
+    "target_math_spans_after_corrections": 56,
+    "glossary_tokens": 7,
+    "source_correction_notes": [
+      "OLMD-089"
+    ],
+    "source_detector_ascii_tokens": 151,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "formula_change_limited_to_visible_malformed_truth_notation_repair": true
+  },
+  "status": "draft_linguistic_semantic_and_correction_aware_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

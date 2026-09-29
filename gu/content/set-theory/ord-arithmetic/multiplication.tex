@@ -1,0 +1,117 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{mult}
+
+\olsection{ક્રમવાચક સંખ્યાઓનો ગુણાકાર}
+
+હવે ક્રમવાચક સંખ્યાઓના ગુણાકાર તરફ વળીએ. તેને પણ
+સરવાળાની જેમ સમજીએ. ધારો કે $\alpha$ને~$\beta$થી
+ગુણવું છે. પહોળાઈ $\alpha$ અને ઊંચાઈ $\beta$
+હોય એવી લંબચોરસ જાળી કલ્પો: દરેક પંક્તિમાં આગળ
+વધીએ, પછી બીજી પંક્તિમાં જઈએ\ldots એમ આખી
+જાળીમાંથી પસાર થઈએ ત્યારે મળતો ક્રમપ્રકાર
+$\alpha$ અને $\beta$નો ગુણાકાર છે. બીજી રીતે કહીએ
+તો $\beta$ના \emph{દરેક} ઘટકની જગ્યાએ $\alpha$ની
+એક નકલ મૂકવાથી $\alpha$ અને $\beta$નો ગુણાકાર
+મળે છે.
+
+તેને ઔપચારિક બનાવવા $\alpha$ અને $\beta$ના
+કાર્ટેસિયન ગુણાકાર પર ઊલટો શબ્દકોશક્રમ વાપરીએ:
+
+\begin{defn}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha, \beta$ માટે
+તેમનો ગુણાકાર $\alpha \ordtimes \beta = \ordtype{\alpha \times \beta, \rlexless}$ છે.
+\end{defn}
+\noindent
+ફરી ખાતરી કરવી પડે કે આ વ્યાખ્યા સુગઠિત છે:
+
+\begin{lem}\ollabel{ordtimeslessiswo}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha$ અને $\beta$ માટે
+$\tuple{\alpha \times \beta, \rlexless}$ સુક્રમ છે.
+\end{lem}
+
+\begin{proof}
+બરાબર \olref[add]{ordsumlessiswo}ની જેમ.
+\end{proof}
+\noindent
+ગુણાકાર નીચે પ્રમાણે વર્તે છે તે પણ સાબિત કરવું
+અઘરું નથી:
+
+\begin{lem}\ollabel{ordtimesrecursion}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha, \beta$ માટે:
+\begin{align*}
+	\alpha \ordtimes 0 &= 0\\
+	\alpha \ordtimes (\beta \ordplus 1) &=
+		(\alpha \ordtimes \beta) \ordplus \alpha\\
+	\alpha  \ordtimes \beta &=
+		\supstrict_{\delta < \beta}(\alpha \ordtimes \delta) &&
+		\text{when $\beta$ is a limit ordinal}.
+\end{align*}
+\end{lem}
+
+\begin{proof}
+સાબિતી સ્વાધ્યાય તરીકે છોડી છે.
+\end{proof}
+
+ખરેખર, સરવાળાની જેમ, સીધી વ્યાખ્યા આપવાને બદલે
+આ પુનરાવર્તી સમીકરણોથી પણ ક્રમવાચક ગુણાકાર
+વ્યાખ્યાયિત કરી શક્યા હોત. અને સરવાળાની જેમ
+તેના કેટલાક ગુણધર્મો પણ પરિચિત છે:
+
+\begin{lem}\ollabel{ordinalmultiplicationisnice}
+$\alpha, \beta, \gamma$ ક્રમવાચક સંખ્યાઓ હોય, તો:
+\begin{enumerate}
+	\item\ollabel{ordtimes1} જો $\alpha \neq 0$ અને $\beta < \gamma$
+	હોય, તો $\alpha \ordtimes \beta < \alpha \ordtimes \gamma$;
+	\item\ollabel{ordtimes2} જો $\alpha \neq 0$ અને $\alpha \ordtimes
+	\beta = \alpha\ordtimes\gamma$ હોય, તો $\beta = \gamma$;
+	\item\ollabel{ordtimes3} $\alpha \ordtimes (\beta \ordtimes
+	\gamma) = (\alpha \ordtimes \beta) \ordtimes \gamma$;
+	\item\ollabel{ordtimes4} જો $\alpha \leq \beta$ હોય, તો $\alpha
+	\ordtimes \gamma \leq \beta \ordtimes \gamma$;
+	\item\ollabel{ordtimes5} $\alpha \ordtimes (\beta \ordplus
+	\gamma) = (\alpha \ordtimes \beta )\ordplus (\alpha\ordtimes
+	\gamma)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+સાબિતી સ્વાધ્યાય તરીકે છોડી છે.
+\end{proof}
+
+ઇચ્છા મુજબ બીજા પરિણામો પણ સાબિત કરી શકો (અથવા
+શોધીને વાંચી શકો). પરંતુ
+\olref[ord-arithmetic][add]{ordsumnotcommute}ને
+જોતાં નીચેનું આશ્ચર્યજનક ન લાગવું જોઈએ:
+
+\begin{prop}
+ક્રમવાચક ગુણાકાર અદલબદલીય નથી:
+$2 \ordtimes \omega  =
+\omega < \omega \ordtimes 2$
+\end{prop}
+
+\begin{proof}
+$2 \ordtimes \omega = \supstrict_{n < \omega}(2\ordtimes  n) = \omega \in \supstrict_{n < \omega}(\omega \ordplus n) = \omega \ordplus \omega = \omega \ordtimes 2$.
+\end{proof}
+\noindent
+ફરી, તેની સહજ સમજ સીધી છે. $2
+\ordtimes \omega$ ગણવા દરેક પ્રાકૃતિક સંખ્યાની
+જગ્યાએ બે ઘટકો મૂકો. એ જ ક્રમપ્રકાર પ્રાકૃતિક
+સંખ્યાઓ વચ્ચે બધી ``અડધી'' સંખ્યાઓ ઉમેરીને,
+એટલે $\Setabs{\nicefrac{n}{2}}{n \in \omega}$
+પરનો સ્વાભાવિક ક્રમ વિચારીને, પણ મળે છે. આમ
+જોતાં તેનો ક્રમપ્રકાર $\omega$ જેવો જ છે તે સ્પષ્ટ
+થાય છે. પરંતુ $\omega \ordtimes 2$ ગણવા
+$\omega$ની બે નકલો એક પછી એક મૂકો.
+
+\begin{prob}
+\olref[sth][ord-arithmetic][mult]{ordtimeslessiswo},
+\olref[sth][ord-arithmetic][mult]{ordtimesrecursion}
+અને
+\olref[sth][ord-arithmetic][mult]{ordinalmultiplicationisnice}
+સાબિત કરો.
+\end{prob}
+
+\end{document}

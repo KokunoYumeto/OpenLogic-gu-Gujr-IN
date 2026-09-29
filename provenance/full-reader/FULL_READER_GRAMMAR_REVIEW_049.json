@@ -1,0 +1,1364 @@
+{
+  "schema": "openlogic-gu-full-reader-grammar-review/1",
+  "checked_at_utc": "2026-09-29T02:36:45.105000+00:00",
+  "choices": [
+    {
+      "choice_id": "GU-R049-PROVE",
+      "recorded_at_utc": "2026-09-29T02:36:45.105000+00:00",
+      "term": "prove",
+      "gujarati": "સાબિત; સાબિત કરે છે",
+      "rationale_gu": "સાબિતનો મૂળ શબ્દ ગુજરાતી સહાયક ક્રિયા સાથે જોડાય છે. OLP-0655નાં ચાર વાક્યોમાં સહાયક ક્રિયા મૂળ અનુવાદમાં નથી, તેથી ત્યાં સાબિત કરે છે રાખ્યું છે. OLP-0680માં કરે છે પહેલેથી છે; ત્યાં તથા અન્ય સહાયક-ક્રિયાવાળા સંદર્ભોમાં ફક્ત સાબિત રાખ્યું છે.",
+      "rejected_gu": "દરેક જગ્યાએ સાબિત કરવું મૂકવાથી કરે છે, કરવું અને કરી શકાય સાથે સહાયક ક્રિયાની ખોટી પુનરાવૃત્તિ થતી હતી.",
+      "uncertainty_gu": "સાબિત કરોનું મૂળ ભાષાકીય સાક્ષ્ય ઉપલબ્ધ છે. આ ચોક્કસ વાક્યોની સમીક્ષા યાંત્રિક છે; સ્વતંત્ર માનવ સમીક્ષા થયેલી નથી.",
+      "occurrence_count": 31,
+      "occurrences": [
+        {
+          "unit_id": "OLP-0700",
+          "raw_utf8_range": [
+            2943154,
+            2943163
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ાબ તર્કની બીજી રીતોથી પણ આપી શકાય\n(દાખલા તરીકે નિદર્શ-સિદ્ધાંતની રીતોથી).\nબંને તંત્રો દરેક !!{structure}માં સત્ય હોય\nબરાબર તે જ સિક્વન્ટોને !!{prove} કરે છે;\nતેથી ખાસ કરીને તેઓ એ જ સિક્વન્ટોને સાબિત કરે છે.\n\nપરંતુ સાબિતી-સિદ્ધાંત ફક્ત કંઈક સાબિત થઈ શકે છે\n\\emph{કે નહીં} તેનો જ નહીં, \\emph{કેવી રીતે} તેનો પણ વિચાર કરે છે.\nતેના અભ્યાસીઓ આવા પ્રશ્નો ",
+          "context_sha256": "8d568e6795fcacf4535a3041859713051021de528e2ecb97f0fa8a6dfe4a9c6a",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0702",
+          "raw_utf8_range": [
+            2965259,
+            2965269
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "સિક્વન્ટોની !!{proof}s આપવી પડે.\nશિથિલીકરણના નિયમોથી આ સરળતાથી થઈ શકે.\nદાખલા તરીકે ડાબે સૌથી ઉપરનો સિક્વન્ટ\n$!D, !C \\Sequent !E, !C$ આ રીતે !!{prove}d થઈ શકે:\n\\[\n\\Axiom$!C \\fCenter !C$\n\\RightLabel{\\LeftR{\\Weakening}}\n\\UnaryInf$!D, !C \\fCenter !C$\n\\RightLabel{\\RightR{\\Weakening}}\n\\UnaryInf$!D, !C \\fCenter !E, !C$\n\\DisplayProof\n\\]\n\\sourcecorrection{O",
+          "context_sha256": "f91e3c393a7c4240fc1746597447b6215db093680e9689f43f2a75282b42fad3",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0699",
+          "raw_utf8_range": [
+            2993679,
+            2993688
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ય અથવા ડાબે અસત્ય કર્યું છે, જેમ વિભાગની શરૂઆતની વ્યાખ્યામાં છે.}\n\nબંધારણીય નિયમો શા માટે જોઈએ?\nદાખલા તરીકે $\\ \\Sequent !A \\lor \\lnot !A$ને\n!!{prove} કરવા સંકોચન (\\RightR{\\Contraction}, \\LeftR{\\Contraction}) જોઈએ.\n$!A \\Sequent !A$થી શરૂ કરીએ,\nતો~\\RightR{\\lnot}થી પહેલા $\\Sequent !A, \\lnot !A$ મળે.\nપછી \\RightR{\\lor}નાં બંને સ્વરૂપ એક પછી એક વાપરી શક",
+          "context_sha256": "5dceed6b82ce793f0b7e9dac36c387e6cd65f771676ac7fa48947e2a7e8c4b02",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0699",
+          "raw_utf8_range": [
+            2994976,
+            2994985
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "htR{\\Contraction}}\n\\UnaryInf$\\fCenter !A \\lor \\lnot !A$\n\\DisplayProof\n\\]\nખરેખર કેટલાક માન્ય સિક્વન્ટો~\\Log{G1c}માં\nશિથિલીકરણ કે સંકોચન વિના !!{prove} કરી ન શકાય.\nદાખલા તરીકે~\\Log{G1c}માં $!A \\Sequent !B \\lif !A$\nસિક્વન્ટની !!a{proof}નો અંત \\RightR{\\lif}થી જ થાય\n(કારણ કે ફક્ત $!B \\lif !A$ મુખ્ય સૂત્ર હોઈ શકે).\nતે માટે આધાર તરીકે $!B, !A \\Sequent !A",
+          "context_sha256": "4a35ba04222781a0f8f3e16f7ebbd49a0eb447fb4a97fd0e654f8512dba60a58",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0698",
+          "raw_utf8_range": [
+            3013780,
+            3013790
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "abel{guunit:OLP-0698}\n\n\nસાબિતી-સિદ્ધાંતનાં ઘણાં પરિણામો આ પ્રશ્નને લગતાં\nપરિણામો વિશે છે અથવા તેમનો ઉપયોગ કરે છે:\nકોઈ ચોક્કસ નિયમથી જે બધું !!{prove}d થઈ શકે\nતે એ નિયમ વિના પણ !!{prove}d થઈ શકે?\nકટ-લોપનું પ્રમેય આનું સૌથી જાણીતું ઉદાહરણ છે.\nતે બતાવે છે કે~\\Cut{} સાથેના સિક્વન્ટ તંત્રના નિયમોથી\nજે સિક્વન્ટ !!{prove}d થઈ શકે તે~\\Cut વિના પણ\n!!{prove}",
+          "context_sha256": "1fef60b4cd7e6428f1fdc8aa925012e5cdd304bd2ce615d838115335994ab896",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0698",
+          "raw_utf8_range": [
+            3013852,
+            3013862
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ાંતનાં ઘણાં પરિણામો આ પ્રશ્નને લગતાં\nપરિણામો વિશે છે અથવા તેમનો ઉપયોગ કરે છે:\nકોઈ ચોક્કસ નિયમથી જે બધું !!{prove}d થઈ શકે\nતે એ નિયમ વિના પણ !!{prove}d થઈ શકે?\nકટ-લોપનું પ્રમેય આનું સૌથી જાણીતું ઉદાહરણ છે.\nતે બતાવે છે કે~\\Cut{} સાથેના સિક્વન્ટ તંત્રના નિયમોથી\nજે સિક્વન્ટ !!{prove}d થઈ શકે તે~\\Cut વિના પણ\n!!{prove}d થઈ શકે છે. આ પ્રકારનો ગુણધર્મ\nમહત્",
+          "context_sha256": "df3a695b59f58b64cf8e202451a6926cef3d178a75cb2b982f1edf0ec2024d1f",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0698",
+          "raw_utf8_range": [
+            3014165,
+            3014175
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": " વિના પણ !!{prove}d થઈ શકે?\nકટ-લોપનું પ્રમેય આનું સૌથી જાણીતું ઉદાહરણ છે.\nતે બતાવે છે કે~\\Cut{} સાથેના સિક્વન્ટ તંત્રના નિયમોથી\nજે સિક્વન્ટ !!{prove}d થઈ શકે તે~\\Cut વિના પણ\n!!{prove}d થઈ શકે છે. આ પ્રકારનો ગુણધર્મ\nમહત્ત્વનો હોવાથી તેને નામ આપ્યું છે.\n\n\\begin{defn}\nસિક્વન્ટ તંત્રમાં નિયમ~$R$ \\emph{સ્વીકાર્ય} છે,\nજો તંત્ર સાથે નિયમ~$R$ વાપરીને સાબિત",
+          "context_sha256": "f6354db87eaf3dd654d4a28fc2af92da18baa510b42b1a5d4b5744addea37755",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0698",
+          "raw_utf8_range": [
+            3014225,
+            3014235
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "નું પ્રમેય આનું સૌથી જાણીતું ઉદાહરણ છે.\nતે બતાવે છે કે~\\Cut{} સાથેના સિક્વન્ટ તંત્રના નિયમોથી\nજે સિક્વન્ટ !!{prove}d થઈ શકે તે~\\Cut વિના પણ\n!!{prove}d થઈ શકે છે. આ પ્રકારનો ગુણધર્મ\nમહત્ત્વનો હોવાથી તેને નામ આપ્યું છે.\n\n\\begin{defn}\nસિક્વન્ટ તંત્રમાં નિયમ~$R$ \\emph{સ્વીકાર્ય} છે,\nજો તંત્ર સાથે નિયમ~$R$ વાપરીને સાબિત થઈ શકે તે દરેક\nસિક્વન્ટ~$R$ વિના ",
+          "context_sha256": "03bcc26cef195c56214f01043dc1aaba1cbcdcaa6ce31704a5c486f2776a6609",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0698",
+          "raw_utf8_range": [
+            3023863,
+            3023872
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "{G3c}માં\n!!a{proof} છે તે બતાવ્યું હોય.\nપરંતુ આ અશક્ય છે, કારણ કે \\Log{G3c} યથાર્થ છે;\nએટલે દરેક !!{structure}માં સત્ય હોય તેવા સિક્વન્ટો જ\n!!{prove} કરી શકે. $\\Gamma = \\Delta = \\emptyset$\nઅને $!A \\ident \\lfalse$ લઈએ, તો \\Log{G3c}એ\nદાખલા તરીકે $\\quad \\Sequent \\lfalse$ સિક્વન્ટ !!{prove}\nકરવો પડે, જે તે કરી શકતું નથી.\n\\end{ex}\n\nહવે શિથિલીકરણ~\\Log{G",
+          "context_sha256": "8a1b3dbf888b1f4437175075f5cb279e101585b0f0e835dff99503e315c4ce11",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0698",
+          "raw_utf8_range": [
+            3024067,
+            3024076
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "જ\n!!{prove} કરી શકે. $\\Gamma = \\Delta = \\emptyset$\nઅને $!A \\ident \\lfalse$ લઈએ, તો \\Log{G3c}એ\nદાખલા તરીકે $\\quad \\Sequent \\lfalse$ સિક્વન્ટ !!{prove}\nકરવો પડે, જે તે કરી શકતું નથી.\n\\end{ex}\n\nહવે શિથિલીકરણ~\\Log{G3c}માં સ્વીકાર્ય નિયમ છે\nતે પરિણામની આગમનથી સાબિતી આપીએ.\nખરેખર સહજ દલીલ બતાવે છે તેમ થોડું વધુ સબળ પરિણામ સાચું છે:\n$\\pi$ના દરેક સિક્વન્ટન",
+          "context_sha256": "f5f4a6fcea0357087f29f10591aa3bc039d9957f78405d5d7fd838803beb13c4",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0713",
+          "raw_utf8_range": [
+            3062163,
+            3062172
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ગમન વાપરીએ.\n  \\Log{G3c}નું દરેક સ્વયંસિદ્ધ \\Log{G1c}માં કોઈ સ્વયંસિદ્ધ\n  તથા \\LeftR{\\Weakening} અને \\RightR{\\Weakening}ના\n  વારંવાર ઉપયોગથી !!{prove} કરી શકાય:\n  \\[\n  \\Axiom$!C \\fCenter !C$\n  \\RightLabel{\\LeftR{\\Weakening}}\n  \\Deduce$!C, \\Gamma \\fCenter !C$\n  \\RightLabel{\\RightR{\\Weakening}}\n  \\Deduce$!C, \\Gamma \\fCenter \\Delta, !C$\n  \\DisplayProo",
+          "context_sha256": "8cc9d79ea34682327c2e5a9e331ab0728d75ca13cdefd961ad5bcf9501887d1a",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0655",
+          "raw_utf8_range": [
+            3127307,
+            3127317
+          ],
+          "source_token": "!!{prove}s",
+          "normalized_term": "prove",
+          "suffix": "s",
+          "gujarati": "સાબિત કરે છે",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "}\n\\phantomsection\\label{guunit:OLP-0655}\n\n\n\\olref[seq][inv]{lem:G3c-invert}ની સાબિતી બતાવે છે કે જો\n\\Log{G3c} કોઈ તાર્કિક નિયમના નિષ્કર્ષને !!{prove}s\n(\\RightR{\\lexists} અને \\LeftR{\\lforall} સિવાય), તો તે\nસાબિતીની !!{height} વધાર્યા વિના તે નિયમનાં દરેક આધારવિધાનને\nપણ !!{prove}s. આથી વધુ બતાવી શકાય છે: આ વાત\n$\\Log{G3c} + \\CutCS$ માટે પણ સાચી છે.\n\nઅ",
+          "context_sha256": "be705fec4fe37459188a4943afcd990630a4e114dae5ff14a52912579b02be58",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0655",
+          "raw_utf8_range": [
+            3127550,
+            3127560
+          ],
+          "source_token": "!!{prove}s",
+          "normalized_term": "prove",
+          "suffix": "s",
+          "gujarati": "સાબિત કરે છે",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "નિષ્કર્ષને !!{prove}s\n(\\RightR{\\lexists} અને \\LeftR{\\lforall} સિવાય), તો તે\nસાબિતીની !!{height} વધાર્યા વિના તે નિયમનાં દરેક આધારવિધાનને\nપણ !!{prove}s. આથી વધુ બતાવી શકાય છે: આ વાત\n$\\Log{G3c} + \\CutCS$ માટે પણ સાચી છે.\n\nઅગાઉની જેમ, \\CutCS{} અનુમાનનો \\emph{કટ-ક્રમ} તેના\nકટ !!{formula}ની ઊંડાઈ ગણીએ છીએ.\n\n\\begin{lem}\\ollabel{lem:inv-G3c-cut}\nજો $R$ એ ",
+          "context_sha256": "9197a71375e314f6489f4d1fae30838f7d336c4a7b8fdaaf694872d729666a0b",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0655",
+          "raw_utf8_range": [
+            3128129,
+            3128139
+          ],
+          "source_token": "!!{prove}s",
+          "normalized_term": "prove",
+          "suffix": "s",
+          "gujarati": "સાબિત કરે છે",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "-cut}\nજો $R$ એ \\RightR{\\lexists} કે \\LeftR{\\lforall}\nસિવાયનો તાર્કિક નિયમ હોય અને\n$\\Log{G3c} + \\CutCS$ !!a{proof}~$\\pi$ વડે તેના\nનિષ્કર્ષને !!{prove}s, તો તે તેના દરેક આધારવિધાનને પણ\n!!{proof}~$\\pi'$ વડે !!{prove}s (નિયમને બે\nઆધારવિધાનો હોય તો !!{proof}s~$\\pi'$ અને~$\\pi''$ વડે).\nવધુમાં, (a)~$\\pheight{\\pi'}\\le\\pheight{\\pi}$\n(અને $\\pheight{\\pi''}\\le\\",
+          "context_sha256": "0eb997969179f16efcd48e535f739e65154863d5ee5bb5011be2ca8ad783d9bf",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0655",
+          "raw_utf8_range": [
+            3128249,
+            3128259
+          ],
+          "source_token": "!!{prove}s",
+          "normalized_term": "prove",
+          "suffix": "s",
+          "gujarati": "સાબિત કરે છે",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "્કિક નિયમ હોય અને\n$\\Log{G3c} + \\CutCS$ !!a{proof}~$\\pi$ વડે તેના\nનિષ્કર્ષને !!{prove}s, તો તે તેના દરેક આધારવિધાનને પણ\n!!{proof}~$\\pi'$ વડે !!{prove}s (નિયમને બે\nઆધારવિધાનો હોય તો !!{proof}s~$\\pi'$ અને~$\\pi''$ વડે).\nવધુમાં, (a)~$\\pheight{\\pi'}\\le\\pheight{\\pi}$\n(અને $\\pheight{\\pi''}\\le\\pheight{\\pi}$) તથા\n(b)~$\\pi'$માં (અને $\\pi''$માં) \\CutCS{} અનુમા",
+          "context_sha256": "9cb4c66c734a1c5aa468734424ee556114cb6edcae9b4fab3680c7ec5f778f66",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0661",
+          "raw_utf8_range": [
+            3152498,
+            3152508
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "લ છે,\nપણ વ્યાપક રીતે તે કહે છે કે\nપ્રથમ-ક્રમ તર્કના દરેક\n!!{provable} !!{sentence}~$!A$\nમાટે એવી વિધાનાત્મક\nપુનરુક્તિ~$!A'$ છે જેમાંથી\n$!A$ !!{prove}d કરી શકાય.\nઅહીં~$!B$ પરિમાણક-રહિત હોય ત્યારે\n$\\lexists[x][!B(x)]$ સ્વરૂપનાં\n!!{sentence}s માટેનું રૂપ આપીએ:\n\n\\begin{thm}[હર્બ્રાન્ડનું પ્રમેય]\nમાનો કે~$!B(x)$ પરિમાણક-રહિત છે\nઅને $\\Proves\n\\lexists[x][",
+          "context_sha256": "e5bf0762e33e1c775e5979d39bc34df6a18cf6b284c94fb4efa78abc15aba1b6",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3177748,
+            3177757
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "  $\\RightR{\\lnot}$ અને\n    $\\LeftR{\\lnot}$ વડે\n    $\\Gamma_1 \\Sequent \\Delta_1, \\lnot!A$\n    અને $\\lnot !A, \\Gamma_2 \\Sequent \\Delta_2$\n    !!{prove} કરી શકાય.\n    \\item $!A \\in \\Gamma_2$ અને\n    $!A \\in \\Delta_2$. કસરત.\n  \\end{enumerate}\n  જો $\\lfalse \\in \\Gamma_1$\n  અથવા $\\lfalse \\in \\Gamma_2$\n  હોવાને કારણે\n  $\\maeh{\\Gamma_1}{\\Gamma_2} \\Sequent",
+          "context_sha256": "fa3dcf89181b4d5a18651f6d352b928204da7fd54122e5d33ffa263d6d6e9d5d",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3187708,
+            3187717
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "_2\n    \\]\n    આથી આ કિસ્સામાં\n    $!C_1 \\lor !C_2$ અંતર્વેશક હોઈ શકે.\n    ખરેખર, બાકી સિક્વન્ટ (2) અને~(4)\n    વડે બીજું જરૂરી સિક્વન્ટ\n    !!{prove} કરી શકાય:\n    \\[\n    \\AxiomC{}\n    \\Deduce$!C_1, \\Gamma_2 \\fCenter \\Delta_2$\n    \\AxiomC{}\n    \\Deduce$!C_2, \\Gamma_2 \\fCenter \\Delta_2$\n    \\RightLabel{\\LeftR{\\lor}}\n    \\BinaryInf$!C_1 \\lor !C_2, \\",
+          "context_sha256": "cbfb214d1d9897f081ba97f6a0b0542135864905a70a9eb4d13ee2bd5b276411",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3190811,
+            3190820
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "કામ થાય છે;\n    $!C \\ident (!C_1 \\land !C_2)$\n    અંતર્વેશક લેવો જોઈએ.\n    બાકી સિક્વન્ટ (1) અને (3)\n    વડે બીજા ભાગને અનુરૂપ સિક્વન્ટ\n    !!{prove} કરી શકાય:\n    \\[\n    \\AxiomC{}\n    \\Deduce$\\Gamma_1 \\fCenter \\Delta_1, !C_1$\n    \\AxiomC{}\n    \\Deduce$\\Gamma_1 \\fCenter \\Delta_1, !C_2$\n    \\RightLabel{\\RightR{\\land}}\n    \\BinaryInf$\\Gamma_1 \\fCent",
+          "context_sha256": "5e0ed4234e24d179d2a1ba385685ad2d96d5bbf0c203b5ce94eda453bf7ed65d",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0663",
+          "raw_utf8_range": [
+            3217838,
+            3217848
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ે\nશિક્ષણમાં સૌથી વધુ વપરાતાં\nતંત્રો યાશ્કોવ્સ્કીની રીતમાંથી\nવિકસ્યાં છે. બંનેમાં\n\\emph{ધારણાઓ}થી શરૂઆત\nકરી શકાય છે: એવાં\n!!{formula}s જેમને\n!!{prove}d કરવાં જરૂરી\nનથી, પણ જે બીજા\n!!{formula}sને !!{proving}\nકરવા વાપરી શકાય છે.\nઆખી !!{proof} આવી\nધારણાઓ પર આધારિત હોઈ\nશકે છે. તે ધારણાઓ\nઅસાબિત હોવાથી !!{proof}\nપોતાના નિષ્કર્ષને\n(પોતાના \\emph{અંતિમ-!!{fo",
+          "context_sha256": "01bbadf1f0ab5d8d7a76bad169d7a0beaae16261531660f11bfd137836c08435",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0663",
+          "raw_utf8_range": [
+            3225186,
+            3225195
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ાંથી\nકંઈ પણ તારી શકાય.\nબીજો પરોક્ષ સાબિતીનો\nશાસ્ત્રીય સિદ્ધાંત~\\FalseCl{}\n(અથવા ``શાસ્ત્રીય\nઅસંગતિ-નિયમ'') છે:\nજો~$\\lnot !A$માંથી\n$\\lfalse$ !!{prove}\nકરી શકાય, તો~$!A$\n!!{prove}d થયું છે.\nજો~\\FalseCl કાઢી નાખીએ,\nતો અંતઃપ્રજ્ઞાવાદી\nતર્ક માટે યોગ્ય તંત્ર મળે છે.\nબંને કાઢી નાખીએ,\nતો ``લઘુતમ તર્ક''\nનામે ઓળખાતું તંત્ર મળે છે.\n\nહવે શાસ્ત્રીય અને\nઅંતઃપ્ર",
+          "context_sha256": "3ededa91d352df374a3e82f372feebbd59962c19693d9acd6d9add77e47b3842",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0663",
+          "raw_utf8_range": [
+            3225232,
+            3225242
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "પરોક્ષ સાબિતીનો\nશાસ્ત્રીય સિદ્ધાંત~\\FalseCl{}\n(અથવા ``શાસ્ત્રીય\nઅસંગતિ-નિયમ'') છે:\nજો~$\\lnot !A$માંથી\n$\\lfalse$ !!{prove}\nકરી શકાય, તો~$!A$\n!!{prove}d થયું છે.\nજો~\\FalseCl કાઢી નાખીએ,\nતો અંતઃપ્રજ્ઞાવાદી\nતર્ક માટે યોગ્ય તંત્ર મળે છે.\nબંને કાઢી નાખીએ,\nતો ``લઘુતમ તર્ક''\nનામે ઓળખાતું તંત્ર મળે છે.\n\nહવે શાસ્ત્રીય અને\nઅંતઃપ્રજ્ઞાવાદી તર્ક માટે\nગેન્ટ્ઝનની",
+          "context_sha256": "71bac3db319b08c47e30da58a74212e8fd63d891413b316563083ac6657e33d3",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0672",
+          "raw_utf8_range": [
+            3304605,
+            3304615
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "eatother\n\n% BEGIN OLP-0672\n\\olfileid{pt}{nor}{int}\n\n\\olsection{પરિચય}\n\\phantomsection\\label{guunit:OLP-0672}\n\n\nજો તમે અનુસરણ~$!A \\lif !B$ને\n!!{prove}d કર્યું હોય, તો\n\\Elim{\\lif} વાપરીને\nતેને~$!B$ની !!a{proof}માં\nકામે લગાડી શકો.\nઅલબત્ત, આ માટે~$!A$ની\n!!a{proof}~$\\delta_1$ પણ\nજોઈએ. અનુસરણ~$!A \\lif !B$ની\nતમારી !!{proof}~$\\delta$\nમોટે ભાગે~\\Intro{\\lif}",
+          "context_sha256": "99dbe1638b567383b12a5a183cb8eada06fecb0e72f91184354f92bc005394f6",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0672",
+          "raw_utf8_range": [
+            3306388,
+            3306397
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "રી વાપરવાથી તમારી\nરીત કાર્યક્ષમ છે,\nપરંતુ તેની !!{proof}\nકાર્યક્ષમ નથી.\n$!A \\lif !B$ને રજૂ\nકરીને તરત જ તેનો\nલોપ કરવો ચકરાવો લાગે\nછે. $!B$ને !!{prove}\nકરવાની વધુ સીધી\nરીત હોવી જોઈએ.\n\nખરેખર, એવી રીત હંમેશાં\nહોય છે. ઉપરના જેવા\n``ચકરાવા''—!!a{introduction}\nનિયમ પછી તરત\n!!a{elimination} નિયમ—સ્વાભાવિક\nનિગમનની !!{proof}sમાંથી\nહંમેશાં દૂર કરી શકાય.\nતેને ",
+          "context_sha256": "c1c8af3718439528f045aa9f0c04a8d2a316a9ae561567e5a67b8a8c90c244c7",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0672",
+          "raw_utf8_range": [
+            3307737,
+            3307746
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ાદી~\\Log{N1i}\nકરતાં શાસ્ત્રીય~\\Log{N1c}\nમાટે તે સાબિત કરવું\nવધુ મુશ્કેલ છે.\nસિક્વન્ટ-કલનમાં \\Cut{}\nનિયમ વાપરીને તેની\nવિના કરતાં વધુ\nપરિણામો !!{prove}\nકરી શકાતાં નથી એવું\nકટ-નિવારણ બતાવે છે;\nતેવી જ રીતે,\nચકરાવા વાપરીને તેમને\nટાળવા કરતાં વધુ\nપરિણામો સાબિત કરી\nશકાતાં નથી એવું\nસામાન્યીકરણ બતાવે છે.\nબીજી સામ્યતાઓ પણ છે:\nએક જ પરિણામની ચકરાવાવાળી\nસૌથી ટૂ",
+          "context_sha256": "0d42c0945fab5c308ed9111397a14da52dbf029ef37941168c6c5342cd3e0553",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0672",
+          "raw_utf8_range": [
+            3308784,
+            3308793
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "of}s\nસૌથી ટૂંકી કટ-રહિત\n!!{proof} કરતાં ઘણી\nટૂંકી હોઈ શકે છે.\nઉપ-!!{formula}\nગુણધર્મ કહે છે કે\nપરિણામના ઉપ-!!{formula}s\nવાપરીને જ તે પરિણામ\n!!{prove} કરતી\n!!{proof} હંમેશાં\nમેળવી શકાય છે.\nસિક્વન્ટ-કલનમાં આ\nગુણધર્મ કટ-નિવારણમાંથી\nઅને સ્વાભાવિક નિગમનમાં\nસામાન્યીકરણમાંથી ફલિત\nથાય છે.\n% END OLP-0672\n\\endgroup\n\n\\begingroup\n\\makeatletter\\def\\ol@sectionc",
+          "context_sha256": "3e256981804f2691df289ccd7dae6e6eeb483515bf74c1c35899b9042bce9b2b",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0688",
+          "raw_utf8_range": [
+            3384998,
+            3385008
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "\\Gamma$માં ચલ--!!{formula}\nજોડીઓની યાદી છે. તેથી \\Log{N2i}માં\n!!a{proof}નો દરેક સિક્વન્ટ એટલું જ નથી\nજણાવતો કે અત્યાર સુધીની !!{proof}એ શું\n!!{prove}d કર્યું છે (એટલે $!A$), પણ દરેક\nસ્થાને કઈ ધારણાઓ ખુલ્લી છે (એટલે $\\Gamma$)\nતે પણ જણાવે છે. દરેક સિક્વન્ટમાં~$!A$\n\\emph{કેવી રીતે} !!{prove}d થયું છે તે\nમાહિતી પણ ઉમેરીએ તો? આ માટે\n\\emph{પદથી ચિહ્નિત} ",
+          "context_sha256": "feea104d13216e8f2cc1df233227036ef7626d42215d9fad2b2937308dfe4597",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0688",
+          "raw_utf8_range": [
+            3385294,
+            3385304
+          ],
+          "source_token": "!!{prove}d",
+          "normalized_term": "prove",
+          "suffix": "d",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "!!{prove}d કર્યું છે (એટલે $!A$), પણ દરેક\nસ્થાને કઈ ધારણાઓ ખુલ્લી છે (એટલે $\\Gamma$)\nતે પણ જણાવે છે. દરેક સિક્વન્ટમાં~$!A$\n\\emph{કેવી રીતે} !!{prove}d થયું છે તે\nમાહિતી પણ ઉમેરીએ તો? આ માટે\n\\emph{પદથી ચિહ્નિત} તંત્ર \\Log{tN2i}\nવ્યાખ્યાયિત કરી શકીએ છીએ, જેમાં સિક્વન્ટનું\nસ્વરૂપ $\\Gamma \\Sequent N : !A$ છે.\n$\\Gamma$ અને $!A$ પહેલાં જેવા જ છે:\n$x: !B$",
+          "context_sha256": "6de49b1bd976d5956a5591bc95c494ff50eab9f94e3f46edebb75f60b6be5cee",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0680",
+          "raw_utf8_range": [
+            3479050,
+            3479060
+          ],
+          "source_token": "!!{prove}s",
+          "normalized_term": "prove",
+          "suffix": "s",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": " ઓછા\nએક !!{formula}ને\nઅસત્ય અથવા\n$\\Delta$ના\nઓછામાં ઓછા\nએક !!{formula}ને\nસત્ય બનાવે.\n\\Log{G3c}\n\\emph{યથાર્થ}\nછે: તે ફક્ત\nપ્રામાણ્ય\nસિક્વન્ટો\n!!{prove}s\nકરે છે.\nઆ !!{proof}s\nપર આગમનથી\nસ્થાપિત થાય\nછે: સ્વયંસિદ્ધો\nસ્પષ્ટ રીતે\nપ્રામાણ્ય છે,\nઅને નિયમનાં\nઆધારવિધાનો\nપ્રામાણ્ય હોય\nતો તેનું\nનિષ્કર્ષ પણ\nપ્રામાણ્ય છે.\nસાબિતી-શોધ\nઅલ્ગોરિધમ\nઅચૂક છે\nતે માટે\nબતાવી",
+          "context_sha256": "26a62017ba05b1d7b0dc07f9eba886f6b3c4098f00e9d166170205a7d8060333",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0684",
+          "raw_utf8_range": [
+            3511280,
+            3511289
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": " $\\sFmla{\\True}{!A}$ અથવા\n$\\sFmla{\\False}{!A}$ સ્વરૂપનાં હોઈ શકે.\nવૃક્ષો નીચેની દિશામાં વધે છે. શરૂઆતમાં જે\n!!{formula}s હોય છે તે આપણે શું !!{prove} કરવું છે\nતે નક્કી કરે છે. દાખલા તરીકે,\n$!A, !B \\Sequent !C, !D$ સિક્વન્ટને !!{prove}\nકરવા માટે તે\n$\\sFmla{\\True}{!A}, \\sFmla{\\True}{!B},\n\\sFmla{\\False}{!C}, \\sFmla{\\False}{!D}$થી\nશરૂ થાય.\n\\sourcecorr",
+          "context_sha256": "f24450ac2b61ac3fb04a190355c7486296e522aaaf923c09d1ee081ea07bf6d5",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0684",
+          "raw_utf8_range": [
+            3511443,
+            3511452
+          ],
+          "source_token": "!!{prove}",
+          "normalized_term": "prove",
+          "suffix": "",
+          "gujarati": "સાબિત",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVE",
+          "context": "ાં વધે છે. શરૂઆતમાં જે\n!!{formula}s હોય છે તે આપણે શું !!{prove} કરવું છે\nતે નક્કી કરે છે. દાખલા તરીકે,\n$!A, !B \\Sequent !C, !D$ સિક્વન્ટને !!{prove}\nકરવા માટે તે\n$\\sFmla{\\True}{!A}, \\sFmla{\\True}{!B},\n\\sFmla{\\False}{!C}, \\sFmla{\\False}{!D}$થી\nશરૂ થાય.\n\\sourcecorrection{OLMD-278}{મૂળ ઉદાહરણમાં $!D$ને ભૂલથી સત્ય-ચિહ્ન અપાયું છે; તરત પછીનું ગદ્ય $!C",
+          "context_sha256": "ed6e694c5688f4f168445525231a6331cbb5bf0686a8cac5a3afc44b10076e3d",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "OLP-0655",
+          "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+          "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c"
+        },
+        {
+          "unit_id": "OLP-0658",
+          "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+          "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e"
+        },
+        {
+          "unit_id": "OLP-0661",
+          "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+          "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99"
+        },
+        {
+          "unit_id": "OLP-0663",
+          "source_path": "content/proof-theory/natural-deduction/introduction.tex",
+          "source_sha256": "782f91d07d6f92f5ae9cea347d3d04f6a84c140008cbe9381d125c63d352ddb9"
+        },
+        {
+          "unit_id": "OLP-0672",
+          "source_path": "content/proof-theory/normalization/introduction.tex",
+          "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5"
+        },
+        {
+          "unit_id": "OLP-0680",
+          "source_path": "content/proof-theory/proof-search/introduction.tex",
+          "source_sha256": "c85fedf2ffa728c646c91417c475aa796de5d2d32b09c487475a721b2290ae7f"
+        },
+        {
+          "unit_id": "OLP-0684",
+          "source_path": "content/proof-theory/proof-search/tableaux.tex",
+          "source_sha256": "593c823ad413a4db7c58f783d612a3fb14cc8fbaa790c50c26d0f7709b6a8d14"
+        },
+        {
+          "unit_id": "OLP-0688",
+          "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+          "source_sha256": "efeb3a9e0573794a31ef1cc56221cfb9f52c166ed73b4408118d0e9a2357aa66"
+        },
+        {
+          "unit_id": "OLP-0698",
+          "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+          "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10"
+        },
+        {
+          "unit_id": "OLP-0699",
+          "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+          "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a"
+        },
+        {
+          "unit_id": "OLP-0700",
+          "source_path": "content/proof-theory/sequent-calculus/introduction.tex",
+          "source_sha256": "e924a772dc7189fa1354d7d0ae3b78120cf8fac7f9ab6d0534a39afb85efa161"
+        },
+        {
+          "unit_id": "OLP-0702",
+          "source_path": "content/proof-theory/sequent-calculus/proof-examples.tex",
+          "source_sha256": "c19f22b1b416d0cfbc56182056961ac353bee13b6f662e915c3b2699edc36ce8"
+        },
+        {
+          "unit_id": "OLP-0713",
+          "source_path": "content/proof-theory/sequent-calculus/translations.tex",
+          "source_sha256": "9ae0e40622effab9a067226754c58eeac00c1e21b1ac899c9e2acdebbd12d92c"
+        }
+      ],
+      "raw_reader_sha256": "b0d1961fa485252d7c1ab68880f0ae1f32adb7195a50675443472736c49d2aa2",
+      "canon_passages": [
+        {
+          "passage_id": "GU-P039",
+          "source_id": "GU-GSSTB-MATH12-SEM3",
+          "source_sha256": "afd26179580cf4af265e27447d7fe01e37fa762803624e7e1ec100b7bc412b09",
+          "locator": {
+            "pdf_page_one_based": 19,
+            "printed_page": "13"
+          },
+          "render_path": "canon/extracts/functions/GU-GSSTB-MATH12-SEM3-p19.png",
+          "render_sha256": "20428e5b0301fee09c29072a126e25de930db954d60b891efb95ac4ac466b72c",
+          "inspection": "Fresh original PDF rendering personally read in full before Functions translation; legacy encoded text not trusted as OCR.",
+          "consulted_at_utc": "2026-09-04T16:08:47.996909+00:00",
+          "evidence_role": "Native Gujarati textbook technical definitions and mathematical proof prose",
+          "paraphrase": "Addition and pair exchange functions; exercises classify function types.",
+          "short_term_attestation": "સાબિત કરો"
+        },
+        {
+          "passage_id": "GU-P075",
+          "source_id": "GU-VK-WITTGENSTEIN",
+          "extract_path": "canon/extracts/GU-VK-WITTGENSTEIN.txt",
+          "extract_sha256": "d43369e68df46245fbd41e9d58c953eff4e2b2b33852953066210d50c506e292",
+          "locator": {
+            "line_one_based": 11,
+            "last_line_one_based": 11,
+            "utf8_start": 14904,
+            "utf8_end": 17212,
+            "byte_basis": "UTF-8 raw extract bytes"
+          },
+          "passage_sha256": "6931472c6d0dcd4be410171fdf2c0c115fe9d19c241a0fb346e397b9f06e7966",
+          "consulted_at_utc": "2026-09-04T23:13:14.732323+00:00",
+          "inspection": "Exact locally extracted native Gujarati scholarly passage personally read before the Proof Systems translation",
+          "evidence_role": "Gujarati mathematical-logic terminology and explanatory register; the frozen English source controls formal claims and scope",
+          "paraphrase": "Logic studies the formal validity of inference and the basic structure shared by language and the world.",
+          "short_term_attestation": "અનુમાન; રૂપલક્ષી પ્રામાણ્ય; સંરચના"
+        }
+      ],
+      "evidence_scope_gu": "GU-P039નું પાનું અને GU-P075નો નિર્દિષ્ટ અંશ આ સુધારા પહેલાં ફરી વાંચ્યાં હતાં. અગાઉના પરિભાષા-નિર્ણયો પોતે મૂળ ભાષાનું સાક્ષ્ય નથી.",
+      "editorial_confidence_gu": "વ્યાકરણના સુધારામાં ઊંચો વિશ્વાસ; અસ્થાયી વિશિષ્ટ શબ્દોના સ્વતંત્ર ગુજરાતી પ્રમાણમાં મર્યાદા. આ આંકડાકીય સંભાવના કે માનવ મંજૂરી નથી."
+    },
+    {
+      "choice_id": "GU-R049-PROVABLE",
+      "recorded_at_utc": "2026-09-29T02:36:45.105000+00:00",
+      "term": "provable",
+      "gujarati": "સાબિતીક્ષમ",
+      "rationale_gu": "સાબિતી ધરાવી શકે એવો અર્થ રાખવા માટે અપરિવર્તિત વિશેષણ સાબિતીક્ષમ પસંદ કર્યું છે. તે એકવચન તથા બહુવચન વાક્યો, સૂત્રો અને સિક્વન્ટો સાથે બંધબેસે છે. આ આવૃત્તિના OLP-0278માં સાબિતીક્ષમતા-વિધેય પહેલેથી વપરાય છે. અંગ્રેજી મૂળમાં માંગેલી શરત સાબિતીનું અસ્તિત્વ છે; સાચું હોવું અથવા માનવીને સહેલું હોવું નથી.",
+      "rejected_gu": "દરેક જગ્યાએ સાબિત થઈ શકે એવું મૂકવાથી સિક્વન્ટો સાથે લિંગ અને વચનનો મેળ બેસતો નહોતો.",
+      "uncertainty_gu": "સાબિતીક્ષમનો આ વિશિષ્ટ સંયુક્ત શબ્દ વાંચેલા ગુજરાતી સાક્ષ્યોમાં સીધો પ્રમાણિત નથી. આ સ્ત્રોત-નિયંત્રિત અસ્થાયી પરિભાષા છે. GU-P039 સાબિતનો મૂળ શબ્દ અને GU-P075 શાસ્ત્રીય વાક્યરચનાને આધાર આપે છે, આ સંયુક્ત શબ્દને નહીં.",
+      "occurrence_count": 18,
+      "occurrences": [
+        {
+          "unit_id": "OLP-0700",
+          "raw_utf8_range": [
+            2942426,
+            2942438
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "eakening}, \\RightR{\\Weakening}) કહે છે.\n\n\\Log{G1c} અને \\Log{G3c} તંત્રો શાસ્ત્રીય તર્ક માટે યથાર્થ અને પૂર્ણ છે.\nબીજા શબ્દોમાં, આ તંત્રોમાં !!{provable} દરેક સિક્વન્ટ\nદરેક !!{structure}માં સત્ય છે,\nઅને દરેક !!{structure}માં સત્ય હોય તે દરેક સિક્વન્ટની !!a{proof} છે.\nએટલે કોઈ સિક્વન્ટની !!a{proof} છે \\emph{કે નહીં} તે પ્રશ્નનો\nજવાબ તર્કની બીજી રીતોથી ",
+          "context_sha256": "b6f214d0f809e8e24fc170c04f3fea2f9a9d3949da5d1819b46da3d6a7baea42",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0700",
+          "raw_utf8_range": [
+            2945296,
+            2945308
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "$!A, \\Pi \\fCenter \\Lambda$\n\\RightLabel{\\Cut}\n\\BinaryInf$\\Gamma, \\Pi \\fCenter \\Delta, \\Lambda$\n\\DisplayProof\n\\]\nઉમેરી શકાય અને કયા સિક્વન્ટો !!{provable} છે તે બદલાતું નથી.\nવળી તેની સાબિતી એવી રીત આપે છે\nજે \\Log{G1c} (અથવા \\Log{G3c})ના નિયમો સાથે\n\\Cut{} વાપરતી કોઈ પણ !!{proof}ને,\nફક્ત \\Log{G1c} (અથવા \\Log{G3c})ના નિયમો વાપરતી સાબિતીમાં ફેરવે છે.\nબીજા ",
+          "context_sha256": "34d3c7b6ec7b2baa6d22fed267b37476bac2f29046ae07607e175e52d56986aa",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0713",
+          "raw_utf8_range": [
+            3057278,
+            3057290
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "માટે નહીં, $!A \\Sequent !A$ સ્વયંસિદ્ધ માન્ય છે.\n  પરંતુ \\olref[ex]{prop:G3c-axioms}માં સાબિત કર્યું છે કે\n  આવા બધા સિક્વન્ટો \\Log{G3c}માં !!{provable} છે.\n  \\sourcecorrection{OLMD-340}{મૂળ અહીં કોઈ પણ સૂત્રના ઓળખ-સિક્વન્ટને સ્વયંસિદ્ધ તરીકે મંજૂરી આપતું તંત્ર G3c કહે છે. આ G1cની શરત છે; G3cમાં પરમાણ્વીય ઓળખ-સિક્વન્ટો જ સ્વયંસિદ્ધ છે, જ્યારે સામાન્ય",
+          "context_sha256": "a978e4e8f2d60b5d4e6d35ea247b9eb86aedb404a8d84faf87551a23a59f9b43",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0659",
+          "raw_utf8_range": [
+            3082375,
+            3082387
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "ૂત્ર} કહે છે.)\n\n\\Cut{} એ ગેન્ઝેનના મૂળ\nસિક્વન્ટ કલન~\\Log{LK}માં હતું.\nગેન્ઝેનનું \\emph{Hauptsatz}\n(``મુખ્ય પ્રમેય'') કહે છે કે\n~\\Log{LK}માં !!{provable}\nદરેક સિક્વન્ટ \\Cut{} નિયમ વિના\nપણ !!{provable} છે;\nએટલે~\\Log{LK}-સાબિતીઓમાંથી\n\\Cut{} ``દૂર'' કરી શકાય.\nઆપણી પ્રણાલીઓ~\\Log{G1c}\nઅને~\\Log{G3c}માં \\Cut{} નથી,\nપણ તેમના માટે પણ પ્રશ્ન ઊભો થાય:\n\\Log{G1c}ન",
+          "context_sha256": "14af587d73e13329fe576f6a302d615c3ad6577a17d295d318fd8a5868626bf9",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0659",
+          "raw_utf8_range": [
+            3082466,
+            3082478
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": " કલન~\\Log{LK}માં હતું.\nગેન્ઝેનનું \\emph{Hauptsatz}\n(``મુખ્ય પ્રમેય'') કહે છે કે\n~\\Log{LK}માં !!{provable}\nદરેક સિક્વન્ટ \\Cut{} નિયમ વિના\nપણ !!{provable} છે;\nએટલે~\\Log{LK}-સાબિતીઓમાંથી\n\\Cut{} ``દૂર'' કરી શકાય.\nઆપણી પ્રણાલીઓ~\\Log{G1c}\nઅને~\\Log{G3c}માં \\Cut{} નથી,\nપણ તેમના માટે પણ પ્રશ્ન ઊભો થાય:\n\\Log{G1c}ના (અથવા~\\Log{G3c}ના)\nબીજા નિયમો સાથે~\\Cut{} વાપ",
+          "context_sha256": "f3934dd825a448e2bacef971bac7968732a6e70341a2e63ae4ad6f004d6415ba",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0661",
+          "raw_utf8_range": [
+            3152345,
+            3152357
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "\nમહત્ત્વનું પરિણામ હર્બ્રાન્ડનું\nપ્રમેય છે. તેનો સામાન્ય કિસ્સો\nવર્ણવવો થોડો મુશ્કેલ છે,\nપણ વ્યાપક રીતે તે કહે છે કે\nપ્રથમ-ક્રમ તર્કના દરેક\n!!{provable} !!{sentence}~$!A$\nમાટે એવી વિધાનાત્મક\nપુનરુક્તિ~$!A'$ છે જેમાંથી\n$!A$ !!{prove}d કરી શકાય.\nઅહીં~$!B$ પરિમાણક-રહિત હોય ત્યારે\n$\\lexists[x][!B(x)]$ સ્વરૂપનાં\n!!{sentence}s માટેનું રૂપ આપીએ:\n\n\\begin{thm",
+          "context_sha256": "a6fd5b2040b03caa06d9199865f59be5cba0ae9b1cb515280b3e448fc400315d",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0661",
+          "raw_utf8_range": [
+            3153337,
+            3153349
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "s \\lor !B(t_n)$ને\n$\\lexists[x][!B(x)]$નો\n\\emph{હર્બ્રાન્ડ વિકલ્પ} કહે છે.\nકારણ કે~$!B$ પરિમાણક-રહિત છે,\nઆ વિકલ્પ પણ પરિમાણક-રહિત છે.\nઆથી તે !!{provable} હોય તો\nકટ-મુક્ત સાબિતીથી !!{provable} છે,\nઅને તેથી માત્ર વિધાનાત્મક\nઅનુમાનો વાપરતી !!a{proof}\nપણ છે. એટલે તે પુનરુક્તિ છે.\n\nહર્બ્રાન્ડના પ્રમેયનો મુશ્કેલ ભાગ\nએ છે કે દરેક !!{provable}\n!!{formula}~$\\l",
+          "context_sha256": "fda64fdbe5d68f9ce421cd999fcc92819a8dda3f4023d934409258c3f28e1958",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0661",
+          "raw_utf8_range": [
+            3153415,
+            3153427
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "નો\n\\emph{હર્બ્રાન્ડ વિકલ્પ} કહે છે.\nકારણ કે~$!B$ પરિમાણક-રહિત છે,\nઆ વિકલ્પ પણ પરિમાણક-રહિત છે.\nઆથી તે !!{provable} હોય તો\nકટ-મુક્ત સાબિતીથી !!{provable} છે,\nઅને તેથી માત્ર વિધાનાત્મક\nઅનુમાનો વાપરતી !!a{proof}\nપણ છે. એટલે તે પુનરુક્તિ છે.\n\nહર્બ્રાન્ડના પ્રમેયનો મુશ્કેલ ભાગ\nએ છે કે દરેક !!{provable}\n!!{formula}~$\\lexists[x][!B(x)]$\nમાટે હર્બ્રાન્ડ વિકલ",
+          "context_sha256": "d093c1e92b9a6da5472fbbb384eb03eb0763c632109395932c94f39153f7acd5",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0661",
+          "raw_utf8_range": [
+            3153755,
+            3153767
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "vable} છે,\nઅને તેથી માત્ર વિધાનાત્મક\nઅનુમાનો વાપરતી !!a{proof}\nપણ છે. એટલે તે પુનરુક્તિ છે.\n\nહર્બ્રાન્ડના પ્રમેયનો મુશ્કેલ ભાગ\nએ છે કે દરેક !!{provable}\n!!{formula}~$\\lexists[x][!B(x)]$\nમાટે હર્બ્રાન્ડ વિકલ્પ છે\nતે બતાવવું. વ્યસ્ત દિશા,\nએટલે~$\\lexists[x][!B(x)]$નો\nહર્બ્રાન્ડ વિકલ્પ હોય તો\nતે સાબિત થઈ શકે, સહેલી છે.\nખરેખર હર્બ્રાન્ડ વિકલ્પમાંથી\n$\\lexi",
+          "context_sha256": "77ad28e628220b3cde955ece1160d49e5b57b9e7e4f35e9376860ed3d233ee68",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3176564,
+            3176576
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "amma_1$ અને $!A \\in \\Delta_1$.\n    એવું~$!C$ જોઈએ કે\n    $\\Gamma_1 \\Sequent \\Delta_1, !C$ અને\n    $!C, \\Gamma_2 \\Sequent \\Delta_2$\n    બંને !!{provable} હોય.\n    પહેલું તો~$!C$ ગમે તે લઈએ\n    તોય સ્વયંસિદ્ધ છે, કારણ કે~$!A$\n    ડાબે અને જમણે બંને છે.\n    $!C, \\Gamma_2 \\Sequent \\Delta_2$\n    !!{provable} રહે તેની ખાતરી માટે\n    $!C \\ident \\lfalse$ લેવ",
+          "context_sha256": "e898ab74f24915ef630ced77e1830adb0dc45ff0819899e63e7d7ee8f8da63dc",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3176830,
+            3176842
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": " હોય.\n    પહેલું તો~$!C$ ગમે તે લઈએ\n    તોય સ્વયંસિદ્ધ છે, કારણ કે~$!A$\n    ડાબે અને જમણે બંને છે.\n    $!C, \\Gamma_2 \\Sequent \\Delta_2$\n    !!{provable} રહે તેની ખાતરી માટે\n    $!C \\ident \\lfalse$ લેવું પડે.\n    \\item $!A \\in \\Gamma_1$ અને\n    $!A \\in \\Delta_2$. ત્યારે\n    $\\Gamma_1 \\Sequent \\Delta_1, !A$\n    અને $!A, \\Gamma_2 \\Sequent \\Delta_2$\n    ",
+          "context_sha256": "deb3306e571ce6699e5330a6425fe7ff671e968c3235b5d99132d49f63dea50c",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3181266,
+            3181278
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "text{અને} &\n    !C_1, \\Gamma_2 & \\Sequent \\Delta_2\n    \\intertext{સાબિત થઈ શકે છે. આપણને એવી !!a{formula}~$!C$ જોઈએ કે નીચેના બંને સિક્વન્ટ !!{provable} હોય:}\n    \\Gamma_1 & \\Sequent \\Delta_1, \\lnot !A, !C &&\\text{અને} &\n    !C, \\Gamma_2 & \\Sequent \\Delta_2\n    \\end{align*}\n    સ્પષ્ટ રીતે~$!C \\ident !C_1$ લઈ શકાય:\n    જમણો સિક્વન્ટ !!{provable} છે\n ",
+          "context_sha256": "626674f2586a24c730ba5b61ca3c9fb6837ec46a8011a04f757092dadb8428ee",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3181529,
+            3181541
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "not !A, !C &&\\text{અને} &\n    !C, \\Gamma_2 & \\Sequent \\Delta_2\n    \\end{align*}\n    સ્પષ્ટ રીતે~$!C \\ident !C_1$ લઈ શકાય:\n    જમણો સિક્વન્ટ !!{provable} છે\n    એ આગમન-પૂર્વધારણાથી મળે છે,\n    અને ડાબો સિક્વન્ટ\n    આગમન-પૂર્વધારણાથી મળેલા સિક્વન્ટ\n    પર~$\\RightR{\\lnot}$ લગાવતાં મળે છે.\n    આગમન-પૂર્વધારણા એમ પણ કહે છે કે\n    $\\Lang L(!C_1) \\subseteq ",
+          "context_sha256": "231dc763c04352521aec20180b47c887486baf1d0d304ff2a38bbef70bf5b506",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3183204,
+            3183216
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "t \\Delta_1, !C_1 &&\\text{અને} &\n    !C_1, \\Gamma_2 & \\Sequent \\Delta_2, \\lnot !A\n    \\end{align*}\n    $!C_1$ અંતર્વેશક હોય ત્યારે\n    આપણને !!{provable} જોઈએ એવા\n    બરાબર આ જ સિક્વન્ટ છે;\n    ફરી~$!C \\ident !C_1$ લઈએ.\n    અગાઉની જેમ\n    $\\Lang L(!C_1) \\subseteq\n    \\Lang L(\\Gamma_1, \\Delta_1) \\cap\n    \\Lang L(\\Gamma_2, \\Delta_2, \\lnot !A)$.\n    \\ite",
+          "context_sha256": "53adfce7b57afecf6f31e985092c5c275cc60600de469630649a6a8c85236990",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3185090,
+            3185102
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "_1 &&\\text{અને} & !C_1, \\Gamma_2 & \\Sequent \\Delta_2\n    \\intertext{ડાબો સિક્વન્ટ \\RightR{\\lif}નું યોગ્ય આધારવિધાન છે. તેથી નીચેના સિક્વન્ટ !!{provable} છે:}\n    \\Gamma_1 & \\Sequent \\Delta_1, !A \\lif !B, !C_1 &&\\text{અને} & !C_1, \\Gamma_2 & \\Sequent \\Delta_2\n    \\end{align*}\n    આથી~$!C_1$ એ~$\\pi$ના અંતિમ\n    સિક્વન્ટનો પણ અંતર્વેશક છે;\n    ફરી~$!C \\",
+          "context_sha256": "57a60ba98c69153039b2990c28559d29bb370991247e3209c73a02431257810d",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3186220,
+            3186232
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "aryInf$\\maeh{!A \\lif !B, \\Gamma_1}{\\Gamma_2} \\fCenter\n      \\maeh{\\Delta_1}{\\Delta_2}$\n    \\DisplayProof\n    \\]\n    આગમન-પૂર્વધારણા ચાર\n    !!{provable} સિક્વન્ટ આપે છે:\n    ડાબા આધારવિધાનના અંતર્વેશક~$!C_1$\n    માટે બે અને બીજા આધારવિધાનના\n    અંતર્વેશક~$!C_2$ માટે બે:\n    \\begin{align*}\n    \\Gamma_1 & \\Sequent \\Delta_1, !A, !C_1 &&\\text{(1)} &\n    ",
+          "context_sha256": "3ee27cd2617bf0b46697b3a61b18af2e9a5ee8610d025337cf8927da3f95487e",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3189368,
+            3189380
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "*}\n    જે જરૂરી હતું તે જ છે.\n\n    જો~$!A \\lif !B$ બીજા ભાગમાં હોય,\n    તો સ્થિતિ જુદી છે, પણ દલીલ સમાન છે.\n    આગમન-પૂર્વધારણા ફરી ચાર\n    !!{provable} સિક્વન્ટ આપે છે:\n    \\begin{align*}\n    \\Gamma_1 & \\Sequent \\Delta_1, !C_1 &&\\text{(1)} &\n    !C_1, \\Gamma_2 & \\Sequent \\Delta_2, !A && \\text{(2)}\\\\\n    \\Gamma_1 & \\Sequent \\Delta_1, !C_2 &&\\text{(3)",
+          "context_sha256": "4463e0b029ffbe3dcbd3985b115fb3c59a07bf3aa639373dd692b46893196034",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0658",
+          "raw_utf8_range": [
+            3200803,
+            3200815
+          ],
+          "source_token": "!!{provable}",
+          "normalized_term": "provable",
+          "suffix": "",
+          "gujarati": "સાબિતીક્ષમ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-PROVABLE",
+          "context": "મળ્યું છે;\nહવે તે વડે ક્રેગનું અંતર્વેશન\nપ્રમેય સાબિત કરીએ.\n\n\\begin{proof}[\\olref{thm:interpolation}ની સાબિતી]\n  માનો કે $!A \\Sequent !B$\n  !!{provable} છે.\n  $\\maeh{!A}{\\ } \\Sequent \\maeh{\\ }{!B}$\n  પર \\olref{lem:maehara} લગાવતાં\n  અંતર્વેશક~$!C$ મળે છે.\n  આપણને\n  $\\Proves !A \\Sequent !C$ અને\n  $\\Proves !C \\Sequent !B$ મળે છે.\n\\end{proof}\n\nમાનો કે~$",
+          "context_sha256": "312975ba36bd4ede9cab6b9adbb29b759363e419e9b021cad3b5197c4f648ece",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "OLP-0658",
+          "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+          "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e"
+        },
+        {
+          "unit_id": "OLP-0659",
+          "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+          "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83"
+        },
+        {
+          "unit_id": "OLP-0661",
+          "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+          "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99"
+        },
+        {
+          "unit_id": "OLP-0700",
+          "source_path": "content/proof-theory/sequent-calculus/introduction.tex",
+          "source_sha256": "e924a772dc7189fa1354d7d0ae3b78120cf8fac7f9ab6d0534a39afb85efa161"
+        },
+        {
+          "unit_id": "OLP-0713",
+          "source_path": "content/proof-theory/sequent-calculus/translations.tex",
+          "source_sha256": "9ae0e40622effab9a067226754c58eeac00c1e21b1ac899c9e2acdebbd12d92c"
+        }
+      ],
+      "raw_reader_sha256": "b0d1961fa485252d7c1ab68880f0ae1f32adb7195a50675443472736c49d2aa2",
+      "canon_passages": [
+        {
+          "passage_id": "GU-P039",
+          "source_id": "GU-GSSTB-MATH12-SEM3",
+          "source_sha256": "afd26179580cf4af265e27447d7fe01e37fa762803624e7e1ec100b7bc412b09",
+          "locator": {
+            "pdf_page_one_based": 19,
+            "printed_page": "13"
+          },
+          "render_path": "canon/extracts/functions/GU-GSSTB-MATH12-SEM3-p19.png",
+          "render_sha256": "20428e5b0301fee09c29072a126e25de930db954d60b891efb95ac4ac466b72c",
+          "inspection": "Fresh original PDF rendering personally read in full before Functions translation; legacy encoded text not trusted as OCR.",
+          "consulted_at_utc": "2026-09-04T16:08:47.996909+00:00",
+          "evidence_role": "Native Gujarati textbook technical definitions and mathematical proof prose",
+          "paraphrase": "Addition and pair exchange functions; exercises classify function types.",
+          "short_term_attestation": "સાબિત કરો"
+        },
+        {
+          "passage_id": "GU-P075",
+          "source_id": "GU-VK-WITTGENSTEIN",
+          "extract_path": "canon/extracts/GU-VK-WITTGENSTEIN.txt",
+          "extract_sha256": "d43369e68df46245fbd41e9d58c953eff4e2b2b33852953066210d50c506e292",
+          "locator": {
+            "line_one_based": 11,
+            "last_line_one_based": 11,
+            "utf8_start": 14904,
+            "utf8_end": 17212,
+            "byte_basis": "UTF-8 raw extract bytes"
+          },
+          "passage_sha256": "6931472c6d0dcd4be410171fdf2c0c115fe9d19c241a0fb346e397b9f06e7966",
+          "consulted_at_utc": "2026-09-04T23:13:14.732323+00:00",
+          "inspection": "Exact locally extracted native Gujarati scholarly passage personally read before the Proof Systems translation",
+          "evidence_role": "Gujarati mathematical-logic terminology and explanatory register; the frozen English source controls formal claims and scope",
+          "paraphrase": "Logic studies the formal validity of inference and the basic structure shared by language and the world.",
+          "short_term_attestation": "અનુમાન; રૂપલક્ષી પ્રામાણ્ય; સંરચના"
+        }
+      ],
+      "evidence_scope_gu": "GU-P039નું પાનું અને GU-P075નો નિર્દિષ્ટ અંશ આ સુધારા પહેલાં ફરી વાંચ્યાં હતાં. અગાઉના પરિભાષા-નિર્ણયો પોતે મૂળ ભાષાનું સાક્ષ્ય નથી.",
+      "editorial_confidence_gu": "વ્યાકરણના સુધારામાં ઊંચો વિશ્વાસ; અસ્થાયી વિશિષ્ટ શબ્દોના સ્વતંત્ર ગુજરાતી પ્રમાણમાં મર્યાદા. આ આંકડાકીય સંભાવના કે માનવ મંજૂરી નથી."
+    },
+    {
+      "choice_id": "GU-R049-REPRESENTS",
+      "recorded_at_utc": "2026-09-29T02:36:45.105000+00:00",
+      "term": "represents",
+      "gujarati": "નિરૂપણ કરે",
+      "rationale_gu": "OLP-0277ની બંને વ્યાખ્યાઓમાં અંગ્રેજી represents વિધેય કે સંબંધને નિરૂપિત કરવાની ક્રિયા છે. ગુજરાતી વાક્યમાં પાછળ છે આવે છે; તેથી નિરૂપણ કરે છે બને તે રીતે શબ્દસમૂહ પસંદ કર્યો છે. અન્યત્ર કરવાનો, કરતો અને કરે છે જેવા સહાયક શબ્દો હોવાથી નિરૂપણ નામરૂપ રાખ્યું છે.",
+      "rejected_gu": "આ બંને વ્યાખ્યાઓમાં નિરૂપણ છે મૂકવાથી સંબંધને નિરૂપિત કરવાની ક્રિયા વ્યક્ત થતી નહોતી.",
+      "uncertainty_gu": "નિરૂપણ આવૃત્તિની અગાઉ નોંધાયેલી પરિભાષા છે. આ સુધારાનું તાજું સાક્ષ્ય ગુજરાતી ક્રિયા-સંયોજન માટે છે; અંકગણિતીય નિરૂપણની વિશિષ્ટ પરિભાષાના સ્વતંત્ર મૂળ-ભાષીય પ્રમાણનો દાવો નથી.",
+      "occurrence_count": 2,
+      "occurrences": [
+        {
+          "unit_id": "OLP-0277",
+          "raw_utf8_range": [
+            2210570,
+            2210584
+          ],
+          "source_token": "!!{represents}",
+          "normalized_term": "represents",
+          "suffix": "",
+          "gujarati": "નિરૂપણ કરે",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-REPRESENTS",
+          "context": "ળની બે વ્યાખ્યાઓમાં આ ચોક્કસ કરીએ.\n\n\\begin{defn}\n!!{formula}~$!A(x_1, \\dots, x_k, y)$ એ\nવિધેય~$f\\colon \\Nat^k \\to \\Nat$ને\n$\\Gamma$માં \\emph{!!{represents}} છે\nત્યારે અને માત્ર ત્યારે, જ્યારે\n$f(n_1, \\dots, n_k)=m$ હોય ત્યારે\n\\begin{enumerate}\n\\item $\\Gamma \\Proves !A(\\num{n_1}, \\dots, \\num{n_k}, \\num{m})$, અને\n\\item $\\Gamma \\Proves \\lforall[y](!A(\\num{",
+          "context_sha256": "69d145a7b505667166a19e089bd5292b0d3387d9b27443df02d1af4c8d7d8863",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        },
+        {
+          "unit_id": "OLP-0277",
+          "raw_utf8_range": [
+            2211077,
+            2211091
+          ],
+          "source_token": "!!{represents}",
+          "normalized_term": "represents",
+          "suffix": "",
+          "gujarati": "નિરૂપણ કરે",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-REPRESENTS",
+          "context": " = \\num{m})$.\n\\end{enumerate}\n\\end{defn}\n\n\\begin{defn}\n!!{formula}~$!A(x_1, \\dots, x_k)$ સંબંધ\n$R \\subseteq \\Nat^k$ને એ જ સિદ્ધાંતમાં\n\\emph{!!{represents}}\nછે ત્યારે અને માત્ર ત્યારે,\n\\begin{enumerate}\n\\item $R(n_1, \\dots, n_k)$ હોય ત્યારે\n  $\\Gamma \\Proves !A(\\num{n_1},\n\\dots, \\num{n_k})$, અને\n\\item $R(n_1, \\dots, n_k)$ ન હોય ત્યારે\n  $\\Gamma \\Proves ",
+          "context_sha256": "94df5f4265016435db6a424459eac8e0783a9b37e990e99789ac3b9c5a9e45ca",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "OLP-0277",
+          "source_path": "content/incompleteness/introduction/definitions.tex",
+          "source_sha256": "bca709e14f7652027776c1a55e484466d5fe4e2dcc91390f598d374ed70cee71"
+        }
+      ],
+      "raw_reader_sha256": "b0d1961fa485252d7c1ab68880f0ae1f32adb7195a50675443472736c49d2aa2",
+      "canon_passages": [
+        {
+          "passage_id": "GU-P039",
+          "source_id": "GU-GSSTB-MATH12-SEM3",
+          "source_sha256": "afd26179580cf4af265e27447d7fe01e37fa762803624e7e1ec100b7bc412b09",
+          "locator": {
+            "pdf_page_one_based": 19,
+            "printed_page": "13"
+          },
+          "render_path": "canon/extracts/functions/GU-GSSTB-MATH12-SEM3-p19.png",
+          "render_sha256": "20428e5b0301fee09c29072a126e25de930db954d60b891efb95ac4ac466b72c",
+          "inspection": "Fresh original PDF rendering personally read in full before Functions translation; legacy encoded text not trusted as OCR.",
+          "consulted_at_utc": "2026-09-04T16:08:47.996909+00:00",
+          "evidence_role": "Native Gujarati textbook technical definitions and mathematical proof prose",
+          "paraphrase": "Addition and pair exchange functions; exercises classify function types.",
+          "short_term_attestation": "સાબિત કરો"
+        },
+        {
+          "passage_id": "GU-P075",
+          "source_id": "GU-VK-WITTGENSTEIN",
+          "extract_path": "canon/extracts/GU-VK-WITTGENSTEIN.txt",
+          "extract_sha256": "d43369e68df46245fbd41e9d58c953eff4e2b2b33852953066210d50c506e292",
+          "locator": {
+            "line_one_based": 11,
+            "last_line_one_based": 11,
+            "utf8_start": 14904,
+            "utf8_end": 17212,
+            "byte_basis": "UTF-8 raw extract bytes"
+          },
+          "passage_sha256": "6931472c6d0dcd4be410171fdf2c0c115fe9d19c241a0fb346e397b9f06e7966",
+          "consulted_at_utc": "2026-09-04T23:13:14.732323+00:00",
+          "inspection": "Exact locally extracted native Gujarati scholarly passage personally read before the Proof Systems translation",
+          "evidence_role": "Gujarati mathematical-logic terminology and explanatory register; the frozen English source controls formal claims and scope",
+          "paraphrase": "Logic studies the formal validity of inference and the basic structure shared by language and the world.",
+          "short_term_attestation": "અનુમાન; રૂપલક્ષી પ્રામાણ્ય; સંરચના"
+        }
+      ],
+      "evidence_scope_gu": "GU-P039નું પાનું અને GU-P075નો નિર્દિષ્ટ અંશ આ સુધારા પહેલાં ફરી વાંચ્યાં હતાં. અગાઉના પરિભાષા-નિર્ણયો પોતે મૂળ ભાષાનું સાક્ષ્ય નથી.",
+      "editorial_confidence_gu": "વ્યાકરણના સુધારામાં ઊંચો વિશ્વાસ; અસ્થાયી વિશિષ્ટ શબ્દોના સ્વતંત્ર ગુજરાતી પ્રમાણમાં મર્યાદા. આ આંકડાકીય સંભાવના કે માનવ મંજૂરી નથી."
+    },
+    {
+      "choice_id": "GU-R049-DISCHARGE",
+      "recorded_at_utc": "2026-09-29T02:36:45.105000+00:00",
+      "term": "discharge",
+      "gujarati": "નિવૃત્તિ",
+      "rationale_gu": "OLP-0694માં ધારણાઓની નિવૃત્તિ વધુ સ્પષ્ટ થાય છે એવો નામરૂપ સંદર્ભ છે. બીજા ચાર સંદર્ભોમાં નિવૃત્ત કરી કે નિવૃત્ત કરવાની ક્રિયારચના યોગ્ય છે અને જાળવી છે.",
+      "rejected_gu": "ધારણાઓની નિવૃત્ત વધુ સ્પષ્ટ થાય છે નામરૂપ વાક્યમાં વ્યાકરણસર નહોતું.",
+      "uncertainty_gu": "ધારણાની નિવૃત્તિ એ આ આવૃત્તિનો અસ્થાયી સાબિતી-સિદ્ધાંતીય ઉપયોગ છે. વાંચેલા સાક્ષ્યથી આ ચોક્કસ પારિભાષિક નામરૂપ સીધું પ્રમાણિત થતું નથી.",
+      "occurrence_count": 1,
+      "occurrences": [
+        {
+          "unit_id": "OLP-0694",
+          "raw_utf8_range": [
+            3464676,
+            3464689
+          ],
+          "source_token": "!!{discharge}",
+          "normalized_term": "discharge",
+          "suffix": "",
+          "gujarati": "નિવૃત્તિ",
+          "decision_scope": "reviewed_contextual_Gujarati_grammar",
+          "choice_id": "GU-R049-DISCHARGE",
+          "context": "arged} ધારણાઓ~$\\Gamma$\nઅને અંતિમ !!{formula}~$!A \\lif !B$\nધરાવતી !!a{derivation} મળે છે,\nએટલે $\\Gamma \\Sequent !A \\lif !B$.\nઆ રીતે ધારણાઓની !!{discharge}\nવધુ સ્પષ્ટ થાય છે તે નોંધો.\n\\begin{prooftree}\n  \\Axiom $\\Gamma, !A \\fCenter !B$\n  \\RightLabel{$\\Intro{\\lif}$}\n  \\UnaryInf $\\Gamma \\fCenter !A \\lif !B$\n\\end{prooftree}\n\nબીજા નિયમોમાંથી પણ આ રીતે નિષ્ક",
+          "context_sha256": "78e327d8d4b9a9a8ecfaa60c0ef1dd5efa1cc7fae8624f00597543d5c0fa9c38",
+          "canon_passages": [
+            "GU-P039",
+            "GU-P075"
+          ],
+          "canon_scope": "Proof stem and scholarly Gujarati auxiliary-verb syntax; specialist compounds remain provisional."
+        }
+      ],
+      "source_units": [
+        {
+          "unit_id": "OLP-0694",
+          "source_path": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",
+          "source_sha256": "44525323721b70654bc19c745388c1ea8196fa4a2fe82c355799018bdeb6d705"
+        }
+      ],
+      "raw_reader_sha256": "b0d1961fa485252d7c1ab68880f0ae1f32adb7195a50675443472736c49d2aa2",
+      "canon_passages": [
+        {
+          "passage_id": "GU-P039",
+          "source_id": "GU-GSSTB-MATH12-SEM3",
+          "source_sha256": "afd26179580cf4af265e27447d7fe01e37fa762803624e7e1ec100b7bc412b09",
+          "locator": {
+            "pdf_page_one_based": 19,
+            "printed_page": "13"
+          },
+          "render_path": "canon/extracts/functions/GU-GSSTB-MATH12-SEM3-p19.png",
+          "render_sha256": "20428e5b0301fee09c29072a126e25de930db954d60b891efb95ac4ac466b72c",
+          "inspection": "Fresh original PDF rendering personally read in full before Functions translation; legacy encoded text not trusted as OCR.",
+          "consulted_at_utc": "2026-09-04T16:08:47.996909+00:00",
+          "evidence_role": "Native Gujarati textbook technical definitions and mathematical proof prose",
+          "paraphrase": "Addition and pair exchange functions; exercises classify function types.",
+          "short_term_attestation": "સાબિત કરો"
+        },
+        {
+          "passage_id": "GU-P075",
+          "source_id": "GU-VK-WITTGENSTEIN",
+          "extract_path": "canon/extracts/GU-VK-WITTGENSTEIN.txt",
+          "extract_sha256": "d43369e68df46245fbd41e9d58c953eff4e2b2b33852953066210d50c506e292",
+          "locator": {
+            "line_one_based": 11,
+            "last_line_one_based": 11,
+            "utf8_start": 14904,
+            "utf8_end": 17212,
+            "byte_basis": "UTF-8 raw extract bytes"
+          },
+          "passage_sha256": "6931472c6d0dcd4be410171fdf2c0c115fe9d19c241a0fb346e397b9f06e7966",
+          "consulted_at_utc": "2026-09-04T23:13:14.732323+00:00",
+          "inspection": "Exact locally extracted native Gujarati scholarly passage personally read before the Proof Systems translation",
+          "evidence_role": "Gujarati mathematical-logic terminology and explanatory register; the frozen English source controls formal claims and scope",
+          "paraphrase": "Logic studies the formal validity of inference and the basic structure shared by language and the world.",
+          "short_term_attestation": "અનુમાન; રૂપલક્ષી પ્રામાણ્ય; સંરચના"
+        }
+      ],
+      "evidence_scope_gu": "GU-P039નું પાનું અને GU-P075નો નિર્દિષ્ટ અંશ આ સુધારા પહેલાં ફરી વાંચ્યાં હતાં. અગાઉના પરિભાષા-નિર્ણયો પોતે મૂળ ભાષાનું સાક્ષ્ય નથી.",
+      "editorial_confidence_gu": "વ્યાકરણના સુધારામાં ઊંચો વિશ્વાસ; અસ્થાયી વિશિષ્ટ શબ્દોના સ્વતંત્ર ગુજરાતી પ્રમાણમાં મર્યાદા. આ આંકડાકીય સંભાવના કે માનવ મંજૂરી નથી."
+    }
+  ],
+  "total_bound_occurrences": 52,
+  "full_corpus_complete": false
+}

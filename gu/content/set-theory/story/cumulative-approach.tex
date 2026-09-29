@@ -1,0 +1,89 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{story}{approach}
+\olsection{સંચયી-પુનરાવર્તી અભિગમ}
+
+ગણોને તબક્કાઓમાં કેવી રીતે ગોઠવીશું તેનું થોડું વધુ પૂર્ણ વર્ણન
+આ છે:
+\begin{quote}
+ગણો \emph{તબક્કાઓ}માં રચાય છે. દરેક તબક્કા $S$ માટે કેટલાક
+તબક્કાઓ $S$ની \emph{પહેલાં} હોય છે. તબક્કા $S$ પર, $S$ પહેલાંના
+તબક્કાઓમાં રચાયેલા ગણોથી બનેલો દરેક સંગ્રહ ગણ તરીકે રચાય છે.
+તબક્કાઓમાં રચાતા ગણો સિવાય બીજા કોઈ ગણો નથી.
+\citep[p.~323]{Shoenfield:AST}
+\end{quote}
+આ \emph{ગણની સંચયી-પુનરાવર્તી કલ્પના}ની રૂપરેખા છે.
+\olref[sth][][]{part}માં રજૂ કરવાના ઔપચારિક ગણસિદ્ધાંતનો તે
+આધાર બનશે.
+
+આને થોડું વધુ વિગતે તપાસીએ. શોએનફેલ્ડ પ્રક્રિયાનું વર્ણન કરે છે
+તે મુજબ દરેક તબક્કે પહેલાંના તબક્કાઓમાંથી ઉપલબ્ધ થયેલા ગણો
+વડે નવા ગણો રચીએ છીએ. તેથી શોએનફેલ્ડના વર્ણન મુજબ પ્રારંભિક
+તબક્કા, તબક્કા $0$,ની \emph{પહેલાં} કોઈ તબક્કા નથી, અને
+\emph{તો ખાસ કરીને} પહેલાંના તબક્કાઓમાંથી કોઈ ગણો ઉપલબ્ધ
+નથી.\footnote{\emph{પ્રથમ} તબક્કો છે એવું શા માટે માનવું?
+\olref[z][story]{sec}માં \stagesord{}ની ફૂટનોટ જુઓ.}
+તેથી માત્ર એક ગણ રચીએ છીએ: કોઈ !!{element}s વિનાનો ગણ
+$\emptyset$. તબક્કા $1$ પર પહેલાંના તબક્કાઓમાંથી બરાબર એક ગણ
+ઉપલબ્ધ છે, તેથી માત્ર એક નવો ગણ $\{\emptyset\}$ રચાય છે.
+તબક્કા $2$ પર પહેલાંના તબક્કાઓમાંથી બે ગણો ઉપલબ્ધ છે, અને
+બે નવા ગણો $\{\{\emptyset\}\}$ અને
+$\{\emptyset, \{\emptyset\}\}$ રચીએ છીએ. તબક્કા $3$ પર
+પહેલાંના તબક્કાઓમાંથી ચાર ગણો ઉપલબ્ધ છે, તેથી બાર નવા ગણો
+રચીએ છીએ\ldots. આમ ગણોનું સંચયી-પુનરાવર્તી ચિત્ર કંઈક નીચે
+જેવું હશે (અંકો તબક્કાઓ દર્શાવે છે):
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+	\tikzset{cut_here/.style={densely dotted}}
+	\draw (-4,6) -- (-1, 0)-- (2,6); 
+	\draw[cut_here] (-5,8)--(-4,6);
+	\draw[cut_here] (2,6)--(3,8);
+	\draw(-1.5, 1)--(-0.5, 1);
+	\draw(-2, 2)--(0, 2);
+	\draw(-2.5, 3)--(0.5,3);
+	\draw(-3, 4)--(1, 4);
+	\draw(-3.5, 5)--(1.5, 5);
+	\draw(-4, 6)--(2, 6);
+	\node[label] at (0, 0) {\small 0};
+	\node[label] at (0.5, 1) {\small 1};
+	\node[label] at (1, 2) {\small 2};
+	\node[label] at (1.5, 3) {\small 3};
+	\node[label] at (2, 4) {\small 4};
+	\node[label] at (2.5, 5) {\small 5};
+	\node[label] at (3, 6) {\small 6};
+	\end{tikzpicture}
+\end{center}
+તો આ વર્ણન શા માટે સ્વીકારવું?
+
+એક કારણ એ છે કે તે સરસ અને સહેલાઈથી કામમાં લઈ શકાય એવું વર્ણન
+છે. સૌથી સ્વાભાવિક લાગતા વર્ણન, એટલે સહજ ગણરચના,નું પતન થયા
+પછી આપણને કોઈ સરસ વર્ણનની જરૂર છે.
+
+પરંતુ આ વર્ણન \emph{માત્ર} સરસ નથી. તેના પર આધારિત કોઈ પણ
+ગણસિદ્ધાંત \emph{સુસંગત} હશે એમ માનવા માટે આપણી પાસે સારું
+કારણ છે. તેનું કારણ આ છે.
+
+ગણની સંચયી-પુનરાવર્તી કલ્પના મુજબ આપણે ગણો તબક્કાઓમાં રચીએ
+છીએ; અને તેમના !!{element}s \emph{પહેલેથી} ઉપલબ્ધ વસ્તુઓ
+હોવા જોઈએ. તેથી કોઈ પણ તબક્કા~$S$ માટે આ ગણ રચી શકીએ:
+\[
+R_S = \Setabs{x}{x \notin x \text{ અને $x$ તબક્કા $S$ પહેલાં ઉપલબ્ધ હતો}}
+\]
+રસેલનો વિરોધાભાસ સાબિત કરવામાં વપરાયેલું તર્ક હવે સ્થાપિત
+કરશે કે $R_S$ પોતે તબક્કા $S$ પહેલાં ઉપલબ્ધ નથી. અને તે
+પરસ્પરવિરોધ નથી. વધુમાં, ગણની સંચયી-પુનરાવર્તી કલ્પના
+સ્વીકારીએ તો રસેલનો ગણ પોતે રચી શકવાની \emph{અપેક્ષા} પણ
+ન રાખવી જોઈએ. કારણ કે તે ``ક્યારેય પણ ઉપલબ્ધ થવાના'' બધા
+સ્વસભ્ય ન હોય એવા ગણોનો ગણ હોત. ટૂંકમાં, રસેલનો ગણ આપણે
+(સાબિતી મુજબ) રચી શકતા નથી તે સંચયી-પુનરાવર્તી વર્ણન મુજબ
+\emph{આશ્ચર્યજનક} નથી; એ તો આપણે કરેલી \emph{આગાહી} જ છે.
+
+%In one sense, then, the cumulative-iterative conception of set yields a response to Russell's Paradox which is rather like the \emph{predicativist}'s response. After all, the predicativist said that the collection of all non-self-membered sets$_n$ is a set$_{n+1}$, and this set$_n$ will not be self-membered. (Indeed, most predicativists will treat it as \emph{ungrammatical} to try to ask whether a set is self-membered.)
+%
+%But there is an important difference between the cumulative-iterative approach and the predicativist approach: the cumulative-iterative approach treats all of our entities as being \emph{of the same kind}. The predicativist will presumably have an empty set$_0$ (i.e., a set$_0$ with no !!{element}s), and an empty set$_1$ (i.e., a set$_1$ with no !!{element}s), and these will be \emph{different entities}. But on the cumulative-iterative approach, there is just one empty set, $\emptyset$, and it will be available at every stage of the hierarchy. 
+
+%Indeed, the Axiom of Extensionality, stated at the start of this chapter, will hold true of the elements in this hierarchy (so that there can be \emph{only one} ``empty'' set). But I do not intend to use the cumulative-iterative conception to justify Extensionality (see \cite{Boolos1971}). Again: I suggest that we should accept Extensionality, just because we are interested in extensional collections. 
+
+\end{document}

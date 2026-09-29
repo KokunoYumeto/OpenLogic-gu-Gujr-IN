@@ -1,0 +1,172 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{opps}
+\olsection{મૂળભૂત ક્રિયાઓની વ્યાખ્યા}
+
+આપણને ક્રમની નોંધ રાખવાની જરૂર નથી, તેથી
+ગણાંકોનું અંકગણિત ક્રમવાચક અંકગણિત કરતાં વ્યાખ્યાયિત
+કરવામાં સહેલું છે. સરવાળો, ગુણાકાર અને ઘાતક્રિયા
+ત્રણેયને સાથે વ્યાખ્યાયિત કરીશું.
+
+\begin{defn}
+$\cardfont{a}$ અને $\cardfont{b}$ ગણાંકો હોય ત્યારે:
+\begin{align*}
+	\cardfont{a} \cardplus \cardfont{b} &\defis 
+	\card{\cardfont{a} \disjointsum \cardfont{b}}\\
+	\cardfont{a} \cardtimes \cardfont{b} &\defis 
+	\card{\cardfont{a} \times \cardfont{b}}\\
+	\cardexpo{\cardfont{a}}{\cardfont{b}} &\defis 
+	\card{\funfromto{\cardfont{b}}{\cardfont{a}}}
+\end{align*}
+અહીં $\funfromto{X}{Y} = \Setabs{f}{f \text{ એ વિધેય છે } X \to Y}$.
+(કોઈ પણ ગણો $X$ અને $Y$ માટે
+$\funfromto{X}{Y}$ અસ્તિત્વમાં છે તે બતાવવું સહેલું
+છે; તેને સ્વાધ્યાય તરીકે છોડીએ છીએ.)
+\end{defn}
+
+\begin{prob}
+કોઈ પણ ગણો $X$ અને~$Y$ માટે
+$\funfromto{X}{Y}$ અસ્તિત્વમાં છે તે $\Zminus$માં
+સાબિત કરો. $\ZF$માં કામ કરતાં, $\setrank{X}$ અને
+$\setrank{Y}$ પરથી $\setrank{\funfromto{X}{Y}}$
+ગણો; \olref[sth][ord-arithmetic][using-addition]{rankcomputation}
+જેવી રીતે.
+\end{prob}
+
+આ વ્યાખ્યા થોડી સમજાવીએ. સરવાળા માટે તે
+\olref[ord-arithmetic][add]{defdissum}માં
+વ્યાખ્યાયિત વિચ્છિન્ન સરવાળો $\disjointsum$ વાપરે
+છે; સાન્ત કિસ્સામાં તે યોગ્ય પરિણામ આપે છે તે
+સરળતાથી દેખાય છે. ગુણાકાર માટે
+\olref[sfr][set][pai]{cardnmprod} કહે છે કે $A$માં
+$n$ ઘટકો અને $B$માં $m$ ઘટકો હોય, તો
+$A \times B$માં $n \cdot m$ ઘટકો હોય. તેથી
+આપણી વ્યાખ્યા એ જ વિચારને અનંતાતીત ગુણાકાર સુધી
+સામાન્ય બનાવે છે. ઘાતક્રિયા માટે પણ એવું જ છે:
+સાન્ત કિસ્સાનો વિચાર અનંતાતીત કિસ્સા સુધી લઈ જઈએ
+છીએ. ખરેખર કેટલીક રીતે અનંતાતીત ગણાંક-અંકગણિત
+અનંતાતીત ક્રમવાચક અંકગણિત કરતાં ``સામાન્ય''
+અંકગણિત જેવું વધુ લાગે છે:
+
+\begin{prop}\ollabel{cardplustimescommute}
+$\cardplus$ અને $\cardtimes$ અદલબદલીય અને સહયોગી છે.
+\end{prop}
+
+\begin{proof}
+અદલબદલી માટે
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}
+મુજબ $\cardeq{(\cardfont{a} \disjointsum
+\cardfont{b})}{(\cardfont{b} \disjointsum \cardfont{a})}$
+અને $\cardeq{(\cardfont{a} \times
+\cardfont{b})}{(\cardfont{b} \times \cardfont{a})}$
+નોંધવું પૂરતું છે. સહયોગિતાનો પુરાવો સ્વાધ્યાય
+માટે છોડીએ છીએ.
+\end{proof}
+
+\begin{prob}
+$\cardplus$ અને $\cardtimes$ સહયોગી છે તે સાબિત કરો.
+\end{prob}
+
+\begin{prop}
+$A$ અનંત હોય જો અને માત્ર જો
+$\card{A} \cardplus 1 = 1 \cardplus \card{A} = \card{A}$.
+\end{prop}
+
+\begin{proof}
+\olref[cardinals][classing]{generalinfinitycharacter}ની
+જેમ, \olref[ord-arithmetic][using-addition]{ordinfinitycharacter}
+અને \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}
+પરથી મળે છે.
+\end{proof}
+
+આથી સમજાય છે કે ક્રમવાચક સરવાળા-ગુણાકાર અને
+ગણાંક સરવાળા-ગુણાકાર માટે જુદાં સંકેતો શા માટે
+જોઈએ: એ ખરેખર \emph{જુદી} ક્રિયાઓ છે. આગળનાં
+બે પરિણામો બતાવે છે કે ક્રમવાચક અને ગણાંક ઘાતક્રિયા
+પણ જુદી છે. (યાદ કરો કે
+\olref[z][infinity-again]{defnomega}થી $2 = \{0,
+1\}$ મળે છે):
+
+\begin{lem}\ollabel{lem:SizePowerset2Exp}
+કોઈ પણ $A$ માટે $\card{\Pow{A}} =
+\cardexpo{2}{\card{A}}$.
+\end{lem}
+
+\begin{proof}
+દરેક ઉપગણ $B \subseteq A$ માટે
+$\chi_B \in \funfromto{A}{2}$ આ રીતે લો:
+\begin{align*}
+	\chi_{B}(x) &\defis
+	\begin{cases}
+		1 & \text{જો }x\in B\\
+		0 & \text{અન્યથા.}
+	\end{cases}
+\end{align*}
+હવે $f(B) = \chi_B$ લો; આથી
+!!a{bijection} $f \colon \Pow{A} \to
+\funfromto{A}{2}$ વ્યાખ્યાયિત થાય છે.
+તેથી $\cardeq{\Pow{A}}{\funfromto{A}{2}}$.
+આથી $\cardeq{\Pow{A}}{\funfromto{\card{A}}{2}}$,
+અને તેથી $\card{\Pow{A}} =
+\card{\funfromto{\card{A}}{2}} = 2^{\card{A}}$.
+\end{proof}
+
+આ ટૂંકો પુરાવો એક રીતે
+\olref[sfr][siz][red-alt]{sec}ની ચર્ચાને પણ સમાવે છે.
+ત્યાં આપણે $\Pow{\omega}$ની અગણનીયતાને અનંત દ્વિઆધારી
+અનુક્રમોના ગણ $\Bin^\omega$ની અગણનીયતામાં કેવી રીતે
+``ઘટાડી'' શકાય તે બતાવ્યું હતું. હકીકતમાં
+$\Bin^{\omega}$ એટલે $\funfromto{\omega}{2}$ જ;
+અને ઉપરનો પુરાવો બતાવે છે કે
+\olref[sfr][siz][red-alt]{sec}ની દલીલમાં~$\omega$
+ને બદલે કોઈ પણ ગણ~$A$ લઈ શકીએ. પરિણામમાંથી
+ગણાંક ઘાતક્રિયા અંગે એક ટૂંકું તથ્ય પણ મળે છે:
+
+\begin{cor}\ollabel{cantorcor}
+કોઈ પણ ગણાંક~$\cardfont{a}$ માટે
+$\cardfont{a} < \cardexpo{2}{\cardfont{a}}$.
+\end{cor}
+
+\begin{proof}
+કૅન્ટરના પ્રમેય
+(\olref[sfr][siz][car]{thm:cantor}) અને
+\olref{lem:SizePowerset2Exp} પરથી.
+\end{proof}
+\noindent
+તેથી $\omega < \cardexpo{2}{\omega}$.
+પરંતુ ધ્યાન રાખો: આ પરિણામ \emph{ગણાંક}
+ઘાતક્રિયા વિશે છે. તેની સરખામણી \emph{ક્રમવાચક}
+ઘાતક્રિયા સાથે કરવી જોઈએ, કારણ કે ત્યાં
+$\omega = \ordexpo{2}{\omega}$ છે
+(\olref[ord-arithmetic][expo]{sec} જુઓ).
+
+ગણાંક ઘાતક્રિયાની વાત ચાલે છે ત્યારે
+$\Real$ કઈ ``રીતે'' !!{nonenumerable} છે તે
+વધુ ચોક્કસ કહી શકીએ.
+
+\begin{thm}\ollabel{continuumis2aleph0}
+$\card{\Real} = \cardexpo{2}{\omega}$
+\end{thm}
+
+\begin{proof}[પુરાવાની રૂપરેખા]
+આ સાબિત કરવાની ઘણી રીતો છે. સૌથી સીધી રીત એ
+છે કે $\cardle{\Pow{\omega}}{\Real}$ અને
+$\cardle{\Real}{\Pow{\omega}}$ બતાવીએ; પછી
+શ્રેડર--બર્નસ્ટાઇનથી $\cardeq{\Real}{\Pow{\omega}}$
+મળે અને \olref[card-arithmetic][opps]{lem:SizePowerset2Exp}
+થી $\card{\Real} = \cardexpo{2}{\omega}$ મળે.
+અંતઃક્ષેપો $f \colon \Pow{\omega} \to \Real$
+અને $g \colon \Real \to \Pow{\omega}$ વ્યાખ્યાયિત
+કરવાનું (ઉપયોગી) સ્વાધ્યાય માટે છોડીએ છીએ.
+\end{proof}
+
+\begin{prob}
+$\cardle{\Pow{\omega}}{\Real}$ અને
+$\cardle{\Real}{\Pow{\omega}}$ બતાવીને
+\olref[sth][card-arithmetic][opps]{continuumis2aleph0}નો
+પુરાવો પૂર્ણ કરો.
+\end{prob}
+
+\end{document}

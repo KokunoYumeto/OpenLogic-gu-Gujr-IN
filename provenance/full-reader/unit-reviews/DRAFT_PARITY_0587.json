@@ -1,0 +1,103 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0587",
+  "checked_at_utc": "2026-09-28T03:13:58.342226+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0587 cardinal operations, powerset exponentiation and continuum size; state-only draft",
+  "report": {
+    "unit_id": "OLP-0587",
+    "source_path": "content/set-theory/card-arithmetic/opps.tex",
+    "source_sha256": "fe59199062c34a36e296a777ee0da52721751686f202735791a472d0a0906872",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-opps.tex",
+    "draft_sha256": "ce48855cdaaf5535f30cc6368c29f00d3970e99a82e008493858bcb36466feef",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 20,
+    "source_math_spans_correction_aware": 61,
+    "target_math_spans_after_corrections": 61,
+    "glossary_tokens": 2,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 411,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "\\text{ is a function }",
+        "\\text{ એ વિધેય છે }"
+      ],
+      [
+        "\\text{if }",
+        "\\text{જો }"
+      ],
+      [
+        "\\text{otherwise.}",
+        "\\text{અન્યથા.}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-addition.tex",
+        "sha256": "9e73541a68e424fc5af4eafe872358f522b4c537ca21d4f31183192e6c5cbacf",
+        "terms": [
+          "\\ollabel{defdissum}",
+          "વિચ્છિન્ન સરવાળો"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-exponentiation.tex",
+        "sha256": "3180e2fafb439da079e465ad88c9c12e4b167fce921ec9898575e5d94b8e4590",
+        "terms": [
+          "\\ordexpo{2}{\\omega}",
+          "ઘાતક્રિયા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+        "sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+        "terms": [
+          "\\ollabel{lem:CardinalsBehaveRight}",
+          "ગણાંકો"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-classing.tex",
+        "sha256": "20e65b4282ccaf9667608ff33ce6677e8cbf50f88bba69ddb9230e835147255d",
+        "terms": [
+          "\\ollabel{generalinfinitycharacter}",
+          "\\omega"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\sets\\pairs-and-products.tex",
+        "sha256": "aa9a7b740875860a3af42fb205b6cacc08d4c364487677797dcb197129585c64",
+        "terms": [
+          "\\ollabel{cardnmprod}",
+          "ગુણાકાર"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\reduction-alt.tex",
+        "sha256": "1c0dd4b5ba5d8c82b6e9620c34080cd16728323f5dc44d74fab7c10f69d7c18d",
+        "terms": [
+          "\\olfileid{sfr}{siz}{red-alt}",
+          "\\Bin"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The function-set direction is X to Y and cardinal exponentiation uses maps from exponent to base, unlike the earlier ordinal finite-support construction.",
+      "Commutativity and associativity are asserted only for cardinal plus and times; exponentiation is not included.",
+      "The powerset bijection uses characteristic functions with values 1 on B and 0 otherwise; the inherited English inside cases remains source-exact.",
+      "The continuum proof is explicitly a skeleton and the two injections remain exercises, not claimed to be supplied here.",
+      "Reader-facing English explanations inside displayed mathematics are localized to Gujarati; variables, citations and mathematical relations retain their source meaning."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

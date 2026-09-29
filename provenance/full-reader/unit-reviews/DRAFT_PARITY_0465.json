@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0465",
+  "checked_at_utc": "2026-09-27T18:37:25.422445+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0465 additional modal tableau rules; state-only draft",
+  "report": {
+    "unit_id": "OLP-0465",
+    "source_path": "content/normal-modal-logic/tableaux/more-rules.tex",
+    "source_sha256": "1763d19e944f908c2890c6918b0197280a38ce9932867b28f563a7140b6d9c48",
+    "draft_path": "private-state\\work\\batch040_draft\\tableaux-more-rules.tex",
+    "draft_sha256": "63a27b38b8e7b9a519c5ae50179cc6e618b2929731b10fb67aca9ea6bb8e0ae8",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 49,
+    "target_math_spans_after_corrections": 49,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-060"
+    ],
+    "source_detector_ascii_tokens": 78,
+    "target_untranslated_prose_findings": 0,
+    "excluded_structural_detector_finding": {
+      "token": "lll",
+      "location": "tabular column specification"
+    },
+    "all_math_spans_exact": true,
+    "one_formal_tree_byte_exact": true,
+    "ten_formal_modal_rules_reviewed": true,
+    "six_exercise_formulas_preserved": true
+  },
+  "status": "draft_linguistic_math_and_modal_rule_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

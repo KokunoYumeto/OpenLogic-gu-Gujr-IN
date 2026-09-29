@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/36-0361",
+  "checked_at_utc": "2026-09-27T05:57:58.146708+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0361 partial substitution; state-only draft",
+  "report": {
+    "unit_id": "OLP-0361",
+    "source_path": "content/lambda-calculus/syntax/substitution.tex",
+    "source_sha256": "8e6a232737d4b0c58a03fd1ab2bedc120e159c21e6d17cd30ed58fd4615ec8bd",
+    "draft_path": "private-state\\work\\batch036_draft\\substitution.tex",
+    "draft_sha256": "790ef5b7cb90c595c945a15cf214085c3ed8cb1175398d35f745247fd992bc60",
+    "aligned_blocks": 22,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 90,
+    "target_math_spans_after_corrections": 93,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLLAM-012",
+      "OLLAM-013",
+      "OLLAM-014",
+      "OLLAM-015",
+      "OLLAM-016",
+      "OLLAM-017",
+      "OLLAM-018"
+    ],
+    "source_detector_ascii_tokens": 348,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      6,
+      11,
+      13,
+      14,
+      20
+    ],
+    "finite_structural_sanity_check": {
+      "term_count": 507,
+      "replacement_count": 21,
+      "checks": {
+        "no_free_identity": 13734,
+        "free_variable_set": 15831,
+        "clear_target_variable": 17997,
+        "inverse": 1758
+      }
+    }
+  },
+  "status": "draft_unchanged_math_reference_and_glossary_parity_with_keyed_repairs_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

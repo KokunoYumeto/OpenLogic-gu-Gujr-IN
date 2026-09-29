@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0696",
+  "checked_at_utc": "2026-09-28T23:04:31.342881+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0696 Type preservation and progress; state-only draft",
+  "report": {
+    "unit_id": "OLP-0696",
+    "source_path": "content/proof-theory/propositions-as-types/type-preservation.tex",
+    "source_sha256": "45707be51e3f9c94199c7d8ac0656d402a50f99b12504c33b217bfe86f040d8f",
+    "draft_path": "private-state\\work\\batch044_draft\\type-preservation.tex",
+    "draft_sha256": "b4769dfcae2419f0ab4c6ec1ec5044f3f9aed8e43eb6e18e25e251d0b1964666",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 73,
+    "target_math_spans_after_corrections": 73,
+    "glossary_tokens": 16,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 345,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-terms.tex",
+        "sha256": "04a94a8e5015bcd50bd4827a2b6e0e46a9781ceb8422bf643e107220a74c6a9c",
+        "terms": [
+          "સાબિતી-પદ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\propositions-as-types-normalization.tex",
+        "sha256": "a47a68181954a2d4ca789dbef88c8815ed073cb79525961562af9117347b82e8",
+        "terms": [
+          "સંકોચ્ય પદ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

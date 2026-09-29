@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0523",
+  "checked_at_utc": "2026-09-27T22:35:41.165824+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0523 minimal-change semantics introduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0523",
+    "source_path": "content/counterfactuals/minimal-change-semantics/introduction.tex",
+    "source_sha256": "52eadae36895fda99f808b74a27529041a2fa0bccbfddea6c11eec92c016b2e4",
+    "draft_path": "private-state\\work\\batch043_draft\\minimal-change-introduction.tex",
+    "draft_sha256": "7f0d6763a1273b05d9549f64575bae02ab9e37c6fb6159091d8f3a51675b892b",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 23,
+    "target_math_spans_after_corrections": 23,
+    "glossary_tokens": 3,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 410,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "diagram_sha256": "398a3b9151a8a1e9e6c5517778cb6d167a7f157ec6d94082214b65bd58de31f3",
+    "diagram_byte_identical": true,
+    "structural_scan_exclusions": [
+      {
+        "source": "unchanged TikZ diagram code",
+        "finding_contexts": 6,
+        "reason": "TikZ keys and node names, not untranslated prose; diagram bytes exactly match frozen source"
+      }
+    ]
+  },
+  "status": "draft_linguistic_semantic_formula_and_diagram_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

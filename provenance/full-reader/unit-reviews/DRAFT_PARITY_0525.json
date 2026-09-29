@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0525",
+  "checked_at_utc": "2026-09-27T22:41:59.813077+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0525 counterfactual truth and falsity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0525",
+    "source_path": "content/counterfactuals/minimal-change-semantics/true-false.tex",
+    "source_sha256": "cd1c4ae0d9b97228174e754a0f786211c56f689360a476ba1ec27858f58922e9",
+    "draft_path": "private-state\\work\\batch043_draft\\true-false.tex",
+    "draft_sha256": "4735b64328f20d97ea5e853211eac1ab9ff23175ea42e4f91dfaf93b3a022b81",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 39,
+    "target_math_spans_after_corrections": 39,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 190,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "five_diagrams_sha256": [
+      "398a3b9151a8a1e9e6c5517778cb6d167a7f157ec6d94082214b65bd58de31f3",
+      "c13618b8b23933dd4d1eff44dab1a8673333eb2a39e588790370038fe908e19a",
+      "a3cc7c7543bbaf59f9f23d72b4046ff73ffda1a30f2d1c2952b5ea2ca4d92067",
+      "ff274f9d55473b56ab8b932a7e9307d2122f066e2357be3b63b6a993b1b0cb3b",
+      "2b8b71b72bbcf4840b6d7388789201c42a6ae36faf474305825ee5ac85c41486"
+    ],
+    "five_diagrams_byte_identical": true,
+    "source_con_min_tf_identifier_preserved": true,
+    "structural_scan_exclusions": [
+      {
+        "source": "five unchanged TikZ figure bodies",
+        "finding_contexts": 32,
+        "reason": "TikZ keys and node names, not untranslated prose; all five diagram bodies exactly match frozen source"
+      }
+    ]
+  },
+  "status": "draft_linguistic_semantic_formula_and_five_diagram_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

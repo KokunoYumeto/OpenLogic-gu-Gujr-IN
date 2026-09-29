@@ -1,0 +1,245 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: multiple-designation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{mul}
+
+\olsection{માત્ર $\True$ જ નિર્દિષ્ટ નહિ}
+
+અત્યાર સુધી જોયેલા બધાં તર્કશાસ્ત્રોમાં નિર્દિષ્ટ સત્યમૂલ્યોનો ગણ
+$V^+ = \{\True\}$ હતો; એટલે કોઈ વસ્તુનું સત્યમૂલ્ય~$\True$
+હોય ત્યારે અને માત્ર ત્યારે જ તેને સાચી ગણાતી. પરંતુ કોઈ વસ્તુ
+માત્ર~$\False$ ન હોય તોપણ તેને સાચી ગણી શકાય. દાખલા તરીકે,
+શ્રેણિકમાં $V^+ = \{\True, \Undef\}$ નક્કી કરવાથી આવું
+તર્કશાસ્ત્ર મળશે.
+
+\begin{defn}
+\emph{વિરોધાભાસનું તર્કશાસ્ત્ર}~$\LogLP$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી અને
+  અસત્ય-અચલ વિનાની પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$ની ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item $\True$ અને $\Undef$ નિર્દિષ્ટ છે; એટલે $V^+ = \{\True, \Undef\}$.
+  \item સત્યવિધેયો પ્રબળ ક્લીની તર્કશાસ્ત્ર જેવા જ છે.
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+હાલ્ડેનનું \emph{નિરર્થકતાનું તર્કશાસ્ત્ર}~$\LogHal$ નીચેની શ્રેણિક વડે
+વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ અને $1$-સ્થાનીય
+  સંયોજક~$+$ ધરાવતી, અસત્ય-અચલ વિનાની પ્રમાણભૂત
+  વિધાનાત્મક ભાષા~$\Lang L_0$ની વિસ્તૃત ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item $\True$ અને $\Undef$ નિર્દિષ્ટ છે; એટલે $V^+ = \{\True, \Undef\}$.
+  \item સત્યવિધેયો દુર્બળ ક્લીની તર્કશાસ્ત્ર જેવા છે, અને ઉપરાંત
+  ``નિરર્થક છે'' કારક આ પ્રમાણે છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\sourcecorrection{OLMV-008}{સ્થિર અંગ્રેજી મૂળ બંને
+શ્રેણિકોમાં આખી ભાષા~$\Lang L_0$ કહે છે, પરંતુ
+તેમાં અગાઉથી અસત્ય-અચલ છે અને અહીં તેનું સત્યવિધેય
+આપેલું નથી. અગાઉના ક્લીની વિભાગની જેમ અહીં
+બંને શ્રેણિકોને અચલ વિનાની સામાન્ય ઉપભાષા પર
+વ્યાખ્યાયિત કરી છે. વધારાનો કારક ધરાવતા હાલ્ડેન
+તર્કશાસ્ત્રની પુનરુક્તિઓની શાસ્ત્રીય સાથેની સરખામણી
+પણ સામાન્ય ચાર-સંયોજક ખંડ પૂરતી છે.}
+
+સમાન સત્યતાસારણીઓ ધરાવતા ક્લીની તર્કશાસ્ત્રોથી વિપરીત,
+આ બંનેમાં પુનરુક્તિઓ \emph{છે}.
+
+\begin{prop}\ollabel{prop:LP-taut-CL} સામાન્ય ચાર-સંયોજક ખંડમાં
+  $\LogLP$ની પુનરુક્તિઓ શાસ્ત્રીય વિધાનાત્મક તર્કશાસ્ત્રની
+  પુનરુક્તિઓ જેવી જ છે.
+\end{prop}
+
+\begin{proof}
+  \olref[syn][sub]{prop:mvl-cl} અનુસાર, જો $\Entails[\LogLP] !A$
+  હોય, તો $\Entails[\LogCL] !A$. વિપરીત દિશા માટે બતાવીએ કે
+  જો એવું કોઈ !!a{valuation}~$\pAssign v\colon \PVar \to \{\False, \True,
+  \Undef\}$ હોય કે $\pValue v(!A)[\LogKs] = \False$, તો એવું
+  !!a{valuation}~$\pAssign {v'}\colon \PVar \to \{\False, \True\}$
+  હોય કે $\pValue {v'}(!A)[\LogCL] = \False$. આથી $\LogLP$ માટે
+  પરિણામ મળે છે, કારણ કે $\LogKs$ અને $\LogLP$નાં લાક્ષણિક
+  સત્યવિધેયો સરખાં છે અને $\LogLP$નું એકમાત્ર અનિર્દિષ્ટ
+  સત્યમૂલ્ય $\False$ છે (આ જ $\LogLP$ અને~$\LogKs$ વચ્ચેનો ભેદ છે).
+  તેથી જો $\Entails/[\LogLP] !A$, તો કોઈ !!{valuation}~$\pAssign v$
+  માટે $\pValue v(!A)[\LogLP] = \pValue
+  v[\LogKs](!A) = \False$. આપણે જે દાવો સાબિત કરીએ છીએ તે મુજબ
+  $\pValue{v'}[\LogCL](!A) = \False$; એટલે
+  $\Entails/[\LogCL] !A$.
+
+  દાવો સાબિત કરવા પહેલાં $\pAssign {v'}$ને આ રીતે વ્યાખ્યાયિત કરીએ:
+  \[
+    \pAssign {v'}(p) =
+    \begin{cases}
+    \True & \text{જો } \pAssign {v}(p) \in \{\True, \Undef\}\\
+    \False & \text{અન્યથા}
+  \end{cases}
+  \]
+  હવે $!A$ પર અનુમાનથી બતાવીએ કે (a)~જો $\pValue v(!A)[\LogKs]
+  = \False$, તો $\pValue {v'}(!A)[\LogCL] = \False$; અને (b)~જો
+  $\pValue v(!A)[\LogKs] = \True$, તો $\pValue {v'}(!A)[\LogCL] =
+  \True$.
+  \begin{enumerate}
+    \item અનુમાનનો આધાર: $!A \ident p$. 
+    \olref[syn][val]{defn:pValue} અનુસાર,
+    $\pValue v(!A)[\LogKs] = \pAssign v(p)$.
+    જો આ મૂલ્ય $\False$ અથવા $\True$ હોય, તો ઉપરની
+    $\pAssign {v'}$ની વ્યાખ્યા મુજબ $\pValue {v'}(!A)[\LogCL]$
+    પણ એ જ મૂલ્ય છે; એટલે (a) અને~(b) બંને મળે છે.
+    જો મૂલ્ય $\Undef$ હોય, તો બંને પૂર્વપક્ષ ખોટા છે.
+    \sourcecorrection{OLMV-009}{સ્થિર અંગ્રેજી મૂળ
+    બધા મૂલ્યાંકનો માટે $\pAssign v(p)=\pValue{v'}(!A)$
+    કહે છે; પરંતુ $\pAssign v(p)=\Undef$ હોય ત્યારે
+    $\pAssign{v'}(p)=\True$ છે. અહીં માત્ર (a) અને
+    (b) માટે જરૂરી બે શરતી દાવા સાબિત કર્યા છે.}
+
+    અનુમાનના પગલા માટે નીચેના કિસ્સા લો:
+    \item $!A \ident \lnot !B$.
+    \begin{enumerate}
+      \item ધારો કે $\pValue v(\lnot!B)[\LogKs] = \False$.
+      $\tf{\lnot}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \True$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(b)થી $\pValue {v'}(!B)[\LogCL] = \True$ મળે છે;
+      તેથી $\pValue {v'}(\lnot !B)[\LogCL] = \False$.
+      \item ધારો કે $\pValue v(\lnot!B)[\LogKs] = \True$.
+      $\tf{\lnot}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \False$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(a)થી $\pValue {v'}(!B)[\LogCL] = \False$ મળે છે;
+      તેથી $\pValue {v'}(\lnot !B)[\LogCL] = \True$.
+    \end{enumerate}
+
+    \item $!A \ident (!B \land !C)$.
+    \begin{enumerate}
+      \item ધારો કે $\pValue v(!B \land !C)[\LogKs] = \False$.
+      $\tf{\land}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \False$ અથવા
+      $\pValue v(!C)[\LogKs] = \False$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(a)થી $\pValue {v'}(!B)[\LogCL] = \False$
+      અથવા $\pValue {v'}(!C)[\LogCL] = \False$ મળે છે; તેથી
+      $\pValue {v'}(!B \land !C)[\LogCL] = \False$.
+      \item ધારો કે $\pValue v(!B \land !C)[\LogKs] = \True$.
+      $\tf{\land}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \True$ અને
+      $\pValue v(!C)[\LogKs] = \True$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(b)થી $\pValue {v'}(!B)[\LogCL] = \True$
+      અને $\pValue {v'}(!C)[\LogCL] = \True$ મળે છે; તેથી
+      $\pValue {v'}(!B \land !C)[\LogCL] = \True$.
+    \end{enumerate}
+    \sourcecorrection{OLMV-010}{સ્થિર અંગ્રેજી મૂળ
+    સંયોજન ખોટું અને સાચું હોય તે બંને કિસ્સામાં
+    બે વાર~$!B$નું મૂલ્ય લખે છે, જોકે આગળનો
+    નિષ્કર્ષ $!B$ અને~$!C$ પર આધારિત છે. અહીં
+    બીજા ઘટકનું મૂલ્ય $!C$ તરીકે સુધાર્યું છે.}
+  \end{enumerate}
+
+  બીજા બે કિસ્સા સમાન રીતે સાબિત થાય છે; તેમને અભ્યાસપ્રશ્ન તરીકે
+  રાખ્યા છે. વિકલ્પે, ઉપરનો પુરાવો માત્ર $\lnot$ અને~$\land$
+  ધરાવતા બધાં !!{formula}s માટે પરિણામ સ્થાપિત કરે છે. હવે
+  $\LogKs$ અને $\LogCL$ બંનેમાં કોઈ પણ $\pAssign v$ માટે
+  $\pValue v(!B \lor
+  !C) = \pValue v(\lnot(\lnot!B \land \lnot !C))$ અને
+  $\pValue v(!B \lif
+  !C) = \pValue v(\lnot(!B \land \lnot !C))$ એ હકીકતોનો
+  ઉપયોગ કરી શકાય છે.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][thr][mul]{prop:LP-taut-CL}નો પુરાવો પૂર્ણ કરો; એટલે
+  $!A \ident (!B \lor !C)$ અને $!A \ident (!B \lif !C)$ના
+  કિસ્સાઓમાં (a) અને~(b) સ્થાપિત કરો.
+\end{prob}
+
+\begin{prob}
+દરેક શાસ્ત્રીય પુનરુક્તિ~$\LogHal$માં પુનરુક્તિ છે તે સાબિત કરો.
+\end{prob}
+
+સામાન્ય ચાર-સંયોજક ખંડમાં તેમની પુનરુક્તિઓ શાસ્ત્રીય તર્કશાસ્ત્ર
+જેવી હોવા છતાં તેમના ફલિતતા-સંબંધો જુદા છે. દાખલા તરીકે,
+$\LogLP$ \emph{વિરોધાભાસ-સહનશીલ} છે: $\lnot p, p \Entails/ q$.
+તેથી વિસ્ફોટનો સિદ્ધાંત $\lnot !A, !A \Entails !B$ સામાન્ય રીતે
+લાગુ પડતો નથી. (કેટલાક $!A$ અને $!B$ના કિસ્સામાં તે લાગુ પડે છે;
+દાખલા તરીકે, $!B$~પુનરુક્તિ હોય ત્યારે.)
+
+\begin{prob}
+  નીચેનામાંથી કયા સંબંધો (a)~$\LogLP$માં અને (b)~$\LogHal$માં
+  સાચા છે? દરેક માટે સત્યતાસારણી આપો.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot q, p \lif q \Entails \lnot p$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+    \item $p \lif q, q\lif r \Entails p \lif r$
+  \end{enumerate}
+\end{prob}
+
+$\LogLuk[3]$માં $\Undef$ને નિર્દિષ્ટ ગણીએ તો શું થાય?
+
+\begin{defn}
+\emph{ત્રિમૂલ્ય આર-મિંગલ}~$\LogRM[3]$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+    \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$
+    ધરાવતી પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+    \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+    \item $\True$ અને $\Undef$ નિર્દિષ્ટ છે; એટલે $V^+ = \{\True, \Undef\}$.
+    \item સત્યવિધેયો લુકાશેવિચ તર્કશાસ્ત્ર~$\LogLuk[3]$ જેવા જ છે.
+  \end{enumerate}
+\end{defn}
+
+\begin{prob}
+  $\LogRM[3]$માં નીચેનામાંથી કયા સંબંધો સાચા છે?
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+નિર્દિષ્ટ મૂલ્યો બદલવાથી જુદી સત્યતાસારણીઓ ક્યારેક સમાન
+તર્કશાસ્ત્ર, એટલે સમાન ફલિતતા-સંબંધ, આપી શકે છે. દાખલા તરીકે,
+ગોડેલ તર્કશાસ્ત્રમાં $\{\True\}$ને બદલે
+$V^+ = \{\True, \Undef\}$ લઈએ ત્યારે એવું થાય છે.
+
+\begin{prop}\ollabel{prop:gl-udes}
+  $V = \{\False, \Undef,\True\}$, $V^+=\{\True,
+  \Undef\}$ અને $3$-મૂલ્ય ગોડેલ તર્કશાસ્ત્રનાં સત્યવિધેયો ધરાવતી
+  શ્રેણિક શાસ્ત્રીય તર્કશાસ્ત્ર વ્યાખ્યાયિત કરે છે.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  ગોડેલ તર્કશાસ્ત્રની જેમ વ્યાખ્યાયિત પરંતુ
+  $V^+=\{\True,\Undef\}$ ધરાવતા તર્કશાસ્ત્ર~$\Log L$ માટે,
+  જો $\Gamma \Entails/[\Log L] !B$ તો
+  $\Gamma \Entails/[\LogCL] !B$ છે તે બતાવી
+  \olref[mvl][thr][mul]{prop:gl-udes} સાબિત કરો.
+  \olref[mvl][thr][mul]{prop:LP-taut-CL}ના વિચારોનો ઉપયોગ કરો;
+  પરંતુ (a) અને~(b) સાબિત કરવાને બદલે
+  $\pValue v(!A)[\LogGod] = \False$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\pValue {v'}(!A)[\LogCL] = \False$ છે તે બતાવો
+  (અને તેથી $\pValue v(!A)[\LogGod] \in \{\True,\Undef\}$ ત્યારે
+  અને માત્ર ત્યારે જ્યારે $\pValue {v'}(!A)[\LogCL] = \True$).
+  આથી વિધાન કેવી રીતે સ્થાપિત થાય છે તે સમજાવો.
+\end{prob}
+
+\end{document}

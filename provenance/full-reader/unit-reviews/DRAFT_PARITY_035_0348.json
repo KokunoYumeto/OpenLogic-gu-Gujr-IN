@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/35-0348",
+  "checked_at_utc": "2026-09-27T04:27:42.537990+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0348 λ-definability state-only draft",
+  "report": {
+    "unit_id": "OLP-0348",
+    "source_path": "content/lambda-calculus/introduction/lambda-definability.tex",
+    "source_sha256": "fefc26aa72359b62bcc486490e018cb534d6e24aad01cadde4672b5cd99b244a",
+    "draft_path": "private-state\\work\\batch035_draft\\lambda-definability.tex",
+    "draft_sha256": "adb9506df668c4908873092c6bc9709646cc4492150421d719c6bed4f9d6783f",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 23,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLLAM-003",
+      "OLLAM-004"
+    ],
+    "source_detector_ascii_tokens": 178,
+    "target_untranslated_prose_findings": 0,
+    "math_structure_and_glossary_equal_after_keyed_correction": true
+  },
+  "status": "draft_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

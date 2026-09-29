@@ -1,0 +1,329 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: countermodels
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{cou}
+      
+\olsection{\usetoken{P}{tableau}માંથી પ્રતિવિધાનો}
+
+\begin{explain}
+  પૂર્ણતા પ્રમેયનું પ્રમાણ $\Entails !A$ હોય તો $\Proves !A$
+  એટલું જ નથી બતાવતું; $\Entails/ !A$ હોય ત્યારે~$!A$નું
+  પ્રતિવિધાન બનાવવાની રીત પણ આપે છે.
+  \sourcecorrection{OLMD-071}{મૂળમાં આ પ્રતિવિધાનની શરત
+  $\Entails/ A$ લખાઈ છે; બાકીના પરિચ્છેદ અને પૂર્ણતા-દાવા
+  મુજબ $!A$નું અનુસરણ ન થવું જોઈએ, તેથી $!A$ રાખ્યું છે.}
+  $\Log{K}$ના કિસ્સામાં આ રીત \emph{નિર્ણય-પ્રક્રિયા} છે.
+  ધારો કે $\Entails/ !A$. ત્યારે
+  \olref[cpl]{prop:complete-tableau}નું પ્રમાણ પૂર્ણ
+  !!{tableau} બનાવવાની રીત આપે છે. આ એક-સૂત્રના કિસ્સામાં
+  રીત હંમેશા સમાપ્ત થાય છે. $\Log{K}$ના વિધાનસંબંધી નિયમો
+  ઓછી જટિલતાવાળાં ઉપસર્ગવાળાં !!{formula}s જ ઉમેરે છે;
+  એટલે દરેક ચિહ્નિત સૂત્ર $\sFmla{S}{!A}[\sigma]$ પર
+  શાખામાં કોઈ વિધાનસંબંધી નિયમ એક વાર લાગુ કરવો પૂરતો છે.
+  નવા ઉપસર્ગો માત્ર
+  \iftag{prvBox}{$\TRule{\False}{\Box}$}{}\iftag{notprvBox,notprvDiamond}{}{
+    અને }\iftag{prvDiamond}{$\TRule{\True}{\Diamond}$}{}
+  \iftag{notprvBox,notprvDiamond}{નિયમ}{નિયમો}થી બને છે; તેમને
+  પણ એક જ વાર લાગુ કરવાના હોય છે (અને એક જ નવો ઉપસર્ગ મળે છે).
+  \iftag{prvBox}{$\TRule{\True}{\Box}$}{}\iftag{notprvBox,notprvDiamond}{}{
+    અને }\iftag{prvDiamond}{$\TRule{\False}{\Diamond}$}{}
+  \iftag{notprvBox,notprvDiamond}{નિયમ}{નિયમો} કદાચ અનેક વાર
+  લાગુ કરવા પડે, પરંતુ દરેક ઉપસર્ગ માટે એક જ વાર; અને નવા
+  ઉપસર્ગો સાંત સંખ્યામાં જ બને છે. તેથી સાંત તબક્કાઓ પછી
+  રચનામાં બંધ અથવા પૂર્ણ શાખા મળે છે.
+
+  ખુલ્લી પૂર્ણ શાખાવાળું ટેબ્લો બની જાય પછી
+  \olref[cpl]{thm:tableau-completeness}નું પ્રમાણ મૂળના
+  ઉપસર્ગવાળાં !!{formula}sના ગણને સંતોષતું સ્પષ્ટ નિદર્શન
+  આપે છે. આમ $\Gamma \Entails !A$ હોય તો બંધ !!{tableau}
+  મળે છે અને $\Gamma \Proves !A$ થાય છે એટલું જ નહિ;
+  બંધ !!{tableau}ને યોગ્ય રીતે શોધતાં જો ``પૂર્ણ''
+  !!{tableau} મળે, તો $\Gamma \Entails/ !A$ છે તે જાણીએ
+  છીએ અને પ્રતિવિધાન પણ બનાવી શકીએ છીએ.
+\end{explain}
+
+\iftag{prvBox}{
+\begin{ex}
+  આપણે જાણીએ છીએ કે
+  $\Proves/ \Box(p \lor q) \lif (\Box p \lor \Box q)$.
+  ટેબ્લોનું નિર્માણ આ રીતે શરૂ થાય છે:
+  \begin{oltableau}
+    [\pFmla{\False}{\Box(p \lor q) \lif (\Box p \lor \Box q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Box(p \lor q)}{1},
+        just = {\TRule{\False}{\lif}[1]}, 
+        [\pFmla{\False}{\Box p \lor \Box q}{1},
+          just = {\TRule{\False}{\lif}[1]}, checked
+          [\pFmla{\False}{\Box p}{1},
+            just = {\TRule{\False}{\lor}[3]}, checked
+            [\pFmla{\False}{\Box q}{1},
+              just = {\TRule{\False}{\lor}[3]}, checked
+              [\pFmla{\False}{p}{1.1}, 
+                just = {\TRule{\False}{\Box}[4]}, checked
+                [\pFmla{\False}{q}{1.2}, 
+                  just = {\TRule{\False}{\Box}[5]}, checked
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  આ !!{tableau} હજી પૂરું થયું નથી. આગળ ટીકચિહ્ન વિનાની
+  એકમાત્ર પંક્તિ જોઈએ: પંક્તિ~$2$ પરનું ઉપસર્ગવાળું
+  !!{formula} $\sFmla{\True}{\Box(p \lor q)}[1]$.
+  પદ્ધતિસર રચનામાં $\TRule{\True}{\Box}$ નિયમ શાખા પર
+  વપરાયેલા દરેક ઉપસર્ગ, એટલે $1.1$ અને $1.2$ બંને માટે
+  લાગુ કરવો પડે છે:
+  \begin{oltableau}
+    [\pFmla{\False}{\Box(p \lor q) \lif (\Box p \lor \Box q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Box(p \lor q)}{1},
+        just = {\TRule{\False}{\lif}[1]}, 
+        [\pFmla{\False}{\Box p \lor \Box q}{1},
+          just = {\TRule{\False}{\lif}[1]}, checked
+          [\pFmla{\False}{\Box p}{1},
+            just = {\TRule{\False}{\lor}[3]}, checked
+            [\pFmla{\False}{\Box q}{1},
+              just = {\TRule{\False}{\lor}[3]}, checked
+              [\pFmla{\False}{p}{1.1}, 
+                just = {\TRule{\False}{\Box}[4]}, checked
+                [\pFmla{\False}{q}{1.2}, 
+                  just = {\TRule{\False}{\Box}[5]}, checked
+                  [\pFmla{\True}{p \lor q}{1.1}, 
+                    just = {\TRule{\True}{\Box}[2]}
+                    [\pFmla{\True}{p \lor q}{1.2}, 
+                      just = {\TRule{\True}{\Box}[2]}
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  હવે પંક્તિઓ 2, 8 અને 9 પર ટીકચિહ્ન નથી. પરંતુ નવો
+  ઉપસર્ગ ઉમેરાયો નથી; તેથી મળતી બધી શાખાઓ પર, તે બંધ ન
+  થાય ત્યાં સુધી, પંક્તિઓ~8 અને~9ને
+  $\TRule{\True}{\lor}$ લાગુ કરીએ છીએ:
+  \begin{oltableau}
+    [\pFmla{\False}{\Box(p \lor q) \lif (\Box p \lor \Box q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Box(p \lor q)}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Box p \lor \Box q}{1},
+          just = {\TRule{\False}{\lif}[1]}, checked
+          [\pFmla{\False}{\Box p}{1},
+            just = {\TRule{\False}{\lor}[3]}, checked
+            [\pFmla{\False}{\Box q}{1},
+              just = {\TRule{\False}{\lor}[3]}, checked
+              [\pFmla{\False}{p}{1.1}, 
+                just = {\TRule{\False}{\Box}[4]}, checked
+                [\pFmla{\False}{q}{1.2}, 
+                  just = {\TRule{\False}{\Box}[5]}, checked
+                  [\pFmla{\True}{p \lor q}{1.1}, 
+                    just = {\TRule{\True}{\Box}[2]}, checked
+                    [\pFmla{\True}{p \lor q}{1.2}, 
+                      just = {\TRule{\True}{\Box}[2]}, checked
+                      [\pFmla{\True}{p}{1.1},
+                        just = {\TRule{\True}{\lor}[8]}, checked, close
+                      ]
+                      [\pFmla{\True}{q}{1.1},
+                        just = {\TRule{\True}{\lor}[8]}, checked
+                        [\pFmla{\True}{p}{1.2},
+                          just = {\TRule{\True}{\lor}[9]}, checked]
+                        [\pFmla{\True}{q}{1.2},
+                          just = {\TRule{\True}{\lor}[9]}, checked, close]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  એક ખુલ્લી શાખા બાકી રહે છે અને તે પૂર્ણ છે. તેમાંથી
+  જગતો $W = \{1, 1.1, 1.2\}$ (ખુલ્લી શાખા પરના ઉપસર્ગો),
+  સુલભતા-સંબંધ $R = \{\tuple{1, 1.1}, \tuple{1, 1.2}\}$,
+  અને નિમણૂક $V(p) = \{1.2\}$ (કારણ કે પંક્તિ~11 પર
+  $\sFmla{\True}{p}[1.2]$ છે) તથા $V(q) = \{1.1\}$
+  (કારણ કે પંક્તિ~10 પર $\sFmla{\True}{q}[1.1]$ છે)
+  ધરાવતું નિદર્શન વ્યાખ્યાયિત કરીએ છીએ. તે
+  \olref{fig:counter-Box}માં દર્શાવ્યું છે; તે
+  $\Box(p \lor q) \lif (\Box p \lor \Box q)$નું પ્રતિવિધાન
+  છે તે ચકાસી શકો છો.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}}]{$1$}; 
+      \node[world] (w2) [label={[align=right]right:\mFalse{p}\\ \mTrue{q}},
+        above left=of w1]{$1.1$}; 
+      \node[world] (w3) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}},
+        above right=of w1] {$1.2$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$\Box(p \lor q) \lif (\Box p \lor \Box q)$નું પ્રતિવિધાન.}
+  \ollabel{fig:counter-Box}
+\end{figure}
+\end{ex}          
+}
+{
+\begin{ex}
+  આપણે જાણીએ છીએ કે
+  $\Proves/ (\Diamond p \land \Diamond q) \lif \Diamond(p
+  \land q)$. ટેબ્લોનું નિર્માણ આ રીતે શરૂ થાય છે:
+  \begin{oltableau}
+    [\pFmla{\False}{(\Diamond p \land \Diamond q) \lif \Diamond(p \land q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Diamond p \land \Diamond q}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Diamond(p \land q)}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\True}{\Diamond p}{1},
+            just = {\TRule{\True}{\land}[2]}, checked
+            [\pFmla{\True}{\Diamond q}{1},
+              just = {\TRule{\True}{\land}[2]}, checked
+              [\pFmla{\True}{p}{1.1}, 
+                just = {\TRule{\True}{\Diamond}[4]}, checked
+                [\pFmla{\True}{q}{1.2}, 
+                  just = {\TRule{\True}{\Diamond}[5]}, checked
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  આ !!{tableau} હજી પૂરું થયું નથી. આગળ ટીકચિહ્ન વિનાની
+  એકમાત્ર પંક્તિ જોઈએ: પંક્તિ~$3$ પરનું ઉપસર્ગવાળું
+  !!{formula} $\sFmla{\False}{\Diamond(p \land q)}[1]$.
+  પદ્ધતિસર રચનામાં $\TRule{\False}{\Diamond}$ નિયમ
+  શાખા પર વપરાયેલા દરેક ઉપસર્ગ, એટલે $1.1$ અને $1.2$
+  બંને માટે લાગુ કરવો પડે છે:
+  \sourcecorrection{OLMD-072}{મૂળના આ વર્ણનમાં પંક્તિ~3ને
+  સત્ય ડાયમંડ અને નિયમને સત્ય ડાયમંડનો નિયમ કહ્યા છે;
+  પ્રથમ તથા અનુગામી વૃક્ષોમાં પંક્તિ~3 અસત્ય ડાયમંડ છે,
+  જેના માટે વપરાયેલા બંને ઉપસર્ગે અસત્ય-ડાયમંડ નિયમ લાગે છે.}
+  \sourcecorrection{OLMD-073}{મૂળના બીજા વૃક્ષનું મૂળ
+  પ્રથમ અને ત્રીજા વૃક્ષથી જુદા ક્રમનો અનુબંધ દર્શાવે છે,
+  જ્યારે તેની બધી આગળની પંક્તિઓ પ્રથમ વૃક્ષના અનુબંધને
+  અનુસરે છે. બીજા વૃક્ષનું મૂળ બંને સાથે સુસંગત કર્યું છે.}
+  \begin{oltableau}
+    [\pFmla{\False}{(\Diamond p \land \Diamond q) \lif \Diamond(p \land q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Diamond p \land \Diamond q}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Diamond (p \land q)}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\True}{\Diamond p}{1},
+            just = {\TRule{\True}{\land}[2]}, checked
+            [\pFmla{\True}{\Diamond q}{1},
+              just = {\TRule{\True}{\land}[2]}, checked
+              [\pFmla{\True}{p}{1.1}, 
+                just = {\TRule{\True}{\Diamond}[4]}, checked
+                [\pFmla{\True}{q}{1.2}, 
+                  just = {\TRule{\True}{\Diamond}[5]}, checked
+                  [\pFmla{\False}{p \land q}{1.1}, 
+                    just = {\TRule{\False}{\Diamond}[3]}
+                    [\pFmla{\False}{p \land q}{1.2}, 
+                      just = {\TRule{\False}{\Diamond}[3]}
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  હવે પંક્તિઓ 3, 8 અને 9 પર ટીકચિહ્ન નથી. પરંતુ નવો
+  ઉપસર્ગ ઉમેરાયો નથી; તેથી મળતી બધી શાખાઓ પર, તે બંધ ન
+  થાય ત્યાં સુધી, પંક્તિઓ~8 અને~9ને
+  $\TRule{\False}{\land}$ લાગુ કરીએ છીએ:
+  \begin{oltableau}
+    [\pFmla{\False}{(\Diamond p \land \Diamond q) \lif \Diamond(p \land q)}{1},
+      just = \TAss, checked
+      [\pFmla{\True}{\Diamond p \land \Diamond q}{1},
+        just = {\TRule{\False}{\lif}[1]}, checked
+        [\pFmla{\False}{\Diamond(p \land q)}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\True}{\Diamond p}{1},
+            just = {\TRule{\True}{\land}[2]}, checked
+            [\pFmla{\True}{\Diamond q}{1},
+              just = {\TRule{\True}{\land}[2]}, checked
+              [\pFmla{\True}{p}{1.1}, 
+                just = {\TRule{\True}{\Diamond}[4]}, checked
+                [\pFmla{\True}{q}{1.2}, 
+                  just = {\TRule{\True}{\Diamond}[5]}, checked
+                  [\pFmla{\False}{p \land q}{1.1}, 
+                    just = {\TRule{\False}{\Diamond}[3]}, checked
+                    [\pFmla{\False}{p \land q}{1.2}, 
+                      just = {\TRule{\False}{\Diamond}[3]}, checked
+                      [\pFmla{\False}{p}{1.1},
+                        just = {\TRule{\False}{\land}[8]}, checked, close
+                      ]
+                      [\pFmla{\False}{q}{1.1},
+                        just = {\TRule{\False}{\land}[8]}, checked
+                        [\pFmla{\False}{p}{1.2},
+                          just = {\TRule{\False}{\land}[9]}, checked]
+                        [\pFmla{\False}{q}{1.2},
+                          just = {\TRule{\False}{\land}[9]}, checked, close]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  એક ખુલ્લી શાખા બાકી રહે છે અને તે પૂર્ણ છે. તેમાંથી
+  જગતો $W = \{1, 1.1, 1.2\}$ (ખુલ્લી શાખા પરના ઉપસર્ગો),
+  સુલભતા-સંબંધ $R = \{\tuple{1, 1.1}, \tuple{1, 1.2}\}$,
+  અને નિમણૂક $V(p) = \{1.1\}$ (કારણ કે પંક્તિ~6 પર
+  $\sFmla{\True}{p}[1.1]$ છે) તથા $V(q) = \{1.2\}$
+  (કારણ કે પંક્તિ~7 પર $\sFmla{\True}{q}[1.2]$ છે)
+  ધરાવતું નિદર્શન વ્યાખ્યાયિત કરીએ છીએ.
+  \sourcecorrection{OLMD-074}{મૂળમાં પંક્તિ~7ના સત્ય
+  $q$નું સ્થાન $1.1$ લખાયું છે; વૃક્ષ અને નિમણૂક
+  $V(q)=\{1.2\}$ મુજબ તે $1.2$ છે.}
+  તે \olref{fig:counter-Diamond}માં દર્શાવ્યું છે;
+  $(\Diamond p \land \Diamond q) \lif \Diamond (p \land q)$નું
+  પ્રતિવિધાન છે તે ચકાસી શકો છો.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}}]{$1$}; 
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}},
+        above left=of w1]{$1.1$}; 
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mTrue{q}},
+        above right=of w1] {$1.2$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$(\Diamond p \land \Diamond q) \lif
+    \Diamond (p \land q)$નું પ્રતિવિધાન.}
+  \ollabel{fig:counter-Diamond}
+\end{figure}
+\end{ex}          
+}
+
+\end{document}

@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0585",
+  "checked_at_utc": "2026-09-28T02:46:30.394512+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0585 Hume's Principle, Basic Law V and predicative versus impredicative readings; state-only draft",
+  "report": {
+    "unit_id": "OLP-0585",
+    "source_path": "content/set-theory/cardinals/hp.tex",
+    "source_sha256": "b4c06d8cd04558e99e48c018a170bef91763b86b74ef03b260282ea5eae5b09e",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinals-hp.tex",
+    "draft_sha256": "a24cf6b19557276895b934c13538759b3636cb3697c4054d39ed92f1dee08dea",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 41,
+    "target_math_spans_after_corrections": 41,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 542,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "\\intertext{This is very similar to what is now called\r\n\\emph{Hume's Principle}, which says:}",
+        "\\intertext{આ આજકાલ \\emph{હ્યુમનો સિદ્ધાંત} કહેવાય છે\nતેના જેવો છે; તે કહે છે:}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cp.tex",
+        "sha256": "db4c5d306da9bcad4bee6d9a627075c73d4249769d12ea8185f9fd2044e2df86",
+        "terms": [
+          "કૅન્ટરનો સિદ્ધાંત",
+          "\\olfileid{sth}{cardinals}{cp}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\grundgesetze.tex",
+        "sha256": "14fa3a3e9770fc574c86e65a5e9caec7dae84027788bb2bc4b0afac05fa1ffe2",
+        "terms": [
+          "\\olfileid{sth}{story}{blv}",
+          "મૂળભૂત નિયમ V",
+          "\\fregeext{x}{F(x)}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\predicativity.tex",
+        "sha256": "be1b03accf0a51bbf9af6557dd39e91587b352bb9337b33e8b2509f88114461d",
+        "terms": [
+          "\\olsection{વિધેયક અને અવિધેયક}",
+          "સહજ ગણરચના"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The three conjuncts in the relation formula use source-exact implication macros, and together enforce a bijection between the F-objects and G-objects.",
+      "Only the reader-facing English prose inside intertext is localized; its formal surrounding align expression remains unchanged and correction-aware parity records the replacement.",
+      "The source contrasts first-order set terms with predicate-position variables and does not reduce Hume's Principle to Cantor's set equality.",
+      "The zero, one and two illustration is explicitly conditional on the impredicative interpretation."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Pt.III Bk.1",
+        "count": 1,
+        "reason": "Inherited exact part/book locator in the Hume 1740 citation, not reader prose."
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0674",
+  "checked_at_utc": "2026-09-28T20:09:36.949441+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0674 Normalization chapter driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0674",
+    "source_path": "content/proof-theory/normalization/normalization.tex",
+    "source_sha256": "3adbf315f473121f2b5bbc253c968081c58814a9b0e30d539001fea72d0ba55d",
+    "draft_path": "private-state\\work\\batch044_draft\\normalization.tex",
+    "draft_sha256": "9b3faaa84e9734a384201abc57c8979ee6710f691b9f1afbf5a9ba9e6bfb4838",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 1,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

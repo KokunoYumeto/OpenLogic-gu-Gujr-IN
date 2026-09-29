@@ -1,0 +1,87 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: minimization
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{min}
+\olsection{લઘુત્તમીકરણ}
+
+સામાન્ય પુનરાવર્તી વિધેયો એવાં વિધેયો છે, જે મૂળભૂત
+વિધેયો $\Zero$, $\Succ$, $\Proj{n}{i}$માંથી સંયોજન,
+આદિમ પુનરાવર્તન અને નિયમિત લઘુત્તમીકરણ વડે મેળવી
+શકાય છે. બધા સામાન્ય પુનરાવર્તી વિધેયો
+!!{lambda definable} છે એવું બતાવવા, !!a{lambda
+  definable} વિધેય પર નિયમિત લઘુત્તમીકરણ લાગુ કરતાં
+મળતું કોઈ પણ વિધેય પોતે !!{lambda definable} છે,
+એ બતાવવું પડશે.
+
+\begin{lem}
+  \ollabel{lem:min} જો $f(x_1, \dots, x_k, y)$
+  નિયમિત અને !!{lambda definable} હોય, તો
+  \[
+  g(x_1, \dots, x_k) = \umin{y}{f(x_1,\dots,x_k, y) = 0}
+  \]
+  વડે વ્યાખ્યાયિત $g$ પણ !!{lambda definable} છે.
+\end{lem}
+
+\begin{proof}
+  ધારો કે લૅમ્બડા પદ~$F$ નિયમિત વિધેય
+  $f(\vec x, y)$ને $\lambda$-વ્યાખ્યાયિત કરે છે.
+  $g$ને !!{lambda define} કરવા આપણે શોધ-વિધેય
+  અને સ્થિરબિંદુ સંયોજક વાપરીશું:
+  \begin{align*}
+    \fn{Search} & \ident \lambd[g][\lambd[f\,\vec{x}\,y][
+        \fn{IsZero} (f\, \vec{x}\, y)\, y\, (g\, \vec{x} (\fn{Succ}\, y))]]\\
+    H & \ident \lambd[\vec x][(Y \, \fn{Search}) F\, \vec{x}\, \num{0}],
+  \end{align*}
+  જ્યાં $Y$ કોઈ પણ સ્થિરબિંદુ સંયોજક છે.
+  \sourcecorrection{OLLAM-060}{સ્થિર અંગ્રેજી મૂળની
+  લઘુત્તમીકરણ-પ્રમેયમાં મેળવવાનું વિધેય~$g$ છે,
+  પરંતુ પુરાવાની શરૂઆત અને અંતે ભૂલથી~$h$ આવે છે.
+  અહીં વિધેય માટે~$g$ રાખ્યું છે; તેનું નિરૂપણ કરતું
+  લૅમ્બડા પદ~$H$ મૂળ મુજબ જ રાખ્યું છે.}
+  \sourcecorrection{OLLAM-061}{સ્થિર અંગ્રેજી મૂળમાં
+  $\fn{Search}$ના પદમાં $(g\,\vec{x}(\fn{Succ}\,y))$
+  આહ્વાનનું અંતિમ કૌંસ ગાયબ છે. અહીં તે ઉમેર્યું છે,
+  જેથી $\fn{IsZero}$ની ત્રીજી શાખા યોગ્ય રીતે બંધ થાય.}
+  અનૌપચારિક રીતે, $\fn{Search}$ પોતાનો સંદર્ભ લેતું
+  વિધેય છે: $y$થી શરૂ કરીને $f\,\vec x\,y$
+  શૂન્ય છે કે નહીં તે તપાસે છે; હોય તો $y$ પરત કરે
+  છે, નહીંતર પોતાને $\fn{Succ}\,y$ સાથે ફરી
+  બોલાવે છે. તેથી $(Y \, \fn{Search}) F
+  \num{n_1}\dots\num{n_k}\,\num{0}$ એવું નાનામાં
+  નાનું~$m$ પરત કરે છે કે જેના માટે $f(n_1,
+  \dots, n_k, m) = 0$.
+
+  ખાસ કરીને ધ્યાન આપો:
+  \begin{align*}
+    (Y \, \fn{Search}) F \num{n_1}
+    \dots\num{n_k}\, \num{m} & \red \num{m}
+    \intertext{જો $f(n_1, \dots,
+      n_k, m) = 0$ હોય; અથવા}
+    & \red (Y \, \fn{Search}) F\, \num{n_1} \dots\num{n_k}\, \num{m+1}
+    \intertext{અન્યથા. $f$ નિયમિત હોવાથી કોઈક $y$ માટે
+      $f(n_1, \dots, n_k, y) = 0$ થાય છે, તેથી}
+    (Y \, \fn{Search}) F \num{n_1} \dots\num{n_k}\,\num{0}
+    & \red \num{g(n_1, \dots, n_k)}.
+    \end{align*}
+\end{proof}
+
+
+\begin{prop}
+  દરેક સામાન્ય પુનરાવર્તી વિધેય !!{lambda definable} છે.
+\end{prop}
+
+\begin{proof}
+ \olref[prf]{lem:basic} મુજબ બધા મૂળભૂત વિધેયો
+ !!{lambda definable} છે; અને \olref[prf]{lem:comp},
+ \olref[prf]{lem:prim} તથા \olref{lem:min} મુજબ
+ !!{lambda definable} વિધેયોનો ગણ સંયોજન,
+ આદિમ પુનરાવર્તન અને નિયમિત લઘુત્તમીકરણ હેઠળ
+ બંધ છે.
+\end{proof}
+
+\end{document}

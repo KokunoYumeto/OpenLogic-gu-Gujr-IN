@@ -1,0 +1,244 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: examples-of-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{exf}
+
+\olsection{ફિલ્ટ્રેશનનાં ઉદાહરણો}
+
+ફિલ્ટ્રેશનો અસ્તિત્વમાં છે એવું હજી આપણે બતાવ્યું નથી. પરંતુ હકીકતમાં
+દરેક નિદર્શન $\mModel{M}$ માટે $\Gamma$ દ્વારા~$\mModel{M}$નાં
+ઘણાં ફિલ્ટ્રેશનો છે. તેમાંનાં બે ખાસ ઓળખીએ: સૌથી સૂક્ષ્મ અને સૌથી
+સ્થૂલ ફિલ્ટ્રેશન. એ જ નિદર્શનનાં ફિલ્ટ્રેશનોનો પ્રાપ્યતા સંબંધ જુદો
+હોય છે (કારણ કે \olref[fil]{defn:filtration} સીધું જ $W^*$ અને
+~$V^*$ નક્કી કરે છે). સૌથી સૂક્ષ્મ ફિલ્ટ્રેશનમાં શક્ય તેટલાં ઓછાં
+જગતો સંબંધિત હશે; સૌથી સ્થૂલમાં શક્ય તેટલાં વધુ.
+
+\begin{defn}
+  $\Gamma$ ઉપસૂત્રો હેઠળ બંધ હોય ત્યારે નિદર્શન $\mModel{M}$નું
+  \emph{સૌથી સૂક્ષ્મ} ફિલ્ટ્રેશન $\mModel{M^*}$ આ રીતે વ્યાખ્યાયિત
+  થાય છે:
+  \[
+  R^*[u][v] \quad \text{જો અને માત્ર જો} \quad \exists u'\in [u] \;
+  \exists v' \in [v] : Ru'v'.
+  \]
+\end{defn}
+
+\begin{prop}\ollabel{prop:finest}
+  સૌથી સૂક્ષ્મ ફિલ્ટ્રેશન $\mModel{M^*}$ ખરેખર ફિલ્ટ્રેશન છે.
+\end{prop}
+
+\begin{proof}
+  આ રીતે વ્યાખ્યાયિત $R^*$ એ
+  \olref[fil]{defn:filtration}\olref[fil]{defn:filtration-R}ની
+  શરતો પૂરી કરે છે તે ચકાસવું પડશે. ત્રણ શરતો ક્રમસર ચકાસીએ.
+
+  જો $Ruv$ હોય તો $u \in [u]$ અને $v \in [v]$ હોવાથી
+  $R^*[u][v]$ પણ; એટલે \olref[fil]{defn:filtration-R1} પૂરી થાય છે.
+
+  \iftag{prvBox}{\iftag{probBox}{\olref[fil]{defn:filtration-R2}ની
+      ચકાસણી પ્રશ્ન તરીકે છોડીએ છીએ.}{%
+      \olref[fil]{defn:filtration-R2} માટે $\Box!A \in \Gamma$,
+      $R^*[u][v]$ અને $\mSat{M}{\Box!A}[u]$ ધારો.
+      $R^*$ની વ્યાખ્યાથી એવાં $u' \equiv u$ અને
+      $v' \equiv v$ છે કે $Ru'v'$. $u$ અને $u'$ એ $\Gamma$ પર
+      સહમત હોવાથી $\mSat{M}{\Box!A}[u']$ પણ; તેથી
+      $\mSat{M}{!A}[v']$. $\Gamma$ ઉપ-!!{formula}s હેઠળ બંધ હોવાથી
+      $v$ અને $v'$ એ $!A$ પર સહમત છે; એટલે જરૂરી મુજબ
+      $\mSat{M}{!A}[v]$.}}{}
+
+  \iftag{prvDiamond}{\iftag{probDiamond}{\olref[fil]{defn:filtration-R3}ની
+      ચકાસણી પ્રશ્ન તરીકે છોડીએ છીએ.}{%
+      \olref[fil]{defn:filtration-R3} ચકાસવા $\Diamond!A \in
+      \Gamma$, $R^*[u][v]$ અને $\mSat{M}{!A}[v]$ ધારો.
+      $R^*$ની વ્યાખ્યાથી એવાં $u' \equiv u$ અને
+      $v' \equiv v$ છે કે $Ru'v'$. $v$ અને $v'$ એ~$\Gamma$ પર
+      સહમત છે, અને $\Gamma$ ઉપ-!!{formula}s હેઠળ બંધ છે;
+      તેથી $\mSat{M}{!A}[v']$ પણ અને પછી
+      $\mSat{M}{\Diamond !A}[u']$. $u$ અને $u'$ પણ $\Gamma$ પર
+      સહમત હોવાથી $\mSat{M}{\Diamond !A}[u]$.}}{}
+\end{proof}
+
+
+\begin{probtag}{probBox,probDiamond}
+  \olref[nml][fil][exf]{prop:finest}ની સાબિતી પૂરી કરો.
+\end{probtag}
+
+\begin{defn}
+  $\Gamma$ ઉપસૂત્રો હેઠળ બંધ હોય ત્યારે નિદર્શન~$\mModel{M}$નું
+  \emph{સૌથી સ્થૂલ} ફિલ્ટ્રેશન~$\mModel{M^*}$માં
+  $R^*[u][v]$ જો અને માત્ર જો
+  \iftag{notprvBox,notprvDiamond}{નીચેની શરત પૂરી થાય:}{નીચેની
+    \emph{બંને} શરતો પૂરી થાય:}
+  \begin{tagenumerate}{prvBox,prvDiamond}
+  \tagitem{prvBox}{\ollabel{defn:coarsest-Box}જો $\Box!A \in \Gamma$
+    અને $\mSat{M}{\Box!A}[u]$ હોય, તો
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{;}{.}}{}
+  \tagitem{prvDiamond}{\ollabel{defn:coarsest-Diamond}જો $\Diamond!A
+    \in \Gamma$ અને $\mSat{M}{!A}[v]$ હોય, તો
+    $\mSat{M}{\Diamond!A}[u]$.}{}
+  \end{tagenumerate}
+\end{defn}
+
+\begin{prop}
+  સૌથી સ્થૂલ ફિલ્ટ્રેશન $\mModel{M^*}$ ખરેખર ફિલ્ટ્રેશન છે.
+\end{prop}
+
+\begin{proof}
+  $R^*$ની વ્યાખ્યા મુજબ માત્ર $Ruv$માંથી $R^*[u][v]$ મેળવવાની
+  શરત ચકાસવાની બાકી છે. તેથી $Ruv$ ધારો.
+  \iftag{prvBox}{ધારો કે $\Box!A \in \Gamma$ અને
+    $\mSat{M}{\Box!A}[u]$; ત્યારે સ્પષ્ટ રીતે
+    $\mSat{M}{!A}[v]$\iftag{prvDiamond}{, અને
+      \olref{defn:coarsest-Box} પૂરી થાય છે. }{.}}{}%
+  \iftag{prvDiamond}{ધારો કે $\Diamond!A \in
+    \Gamma$ અને $\mSat{M}{!A}[v]$. $Ruv$ હોવાથી
+    $\mSat{M}{\Diamond!A}[u]$\iftag{prvBox}{, અને
+      \olref{defn:coarsest-Diamond} પૂરી થાય છે}{}.}{}
+\end{proof}
+
+\begin{ex}
+  ધારો કે $W = \PosInt$, $Rnm$ જો અને માત્ર જો $m = n + 1$,
+  અને $V(p) = \Setabs{2n}{n \in \PosInt}$.
+  \sourcecorrection{OLMD-044}{મૂળમાં $n\in\Nat$ હોવાથી મૂલ્યાંકનમાં
+  $0$ પણ આવે છે, જ્યારે જગત-ગણ ધન પૂર્ણાંકોનો છે; $n\in\PosInt$
+  રાખીને મૂલ્યાંકનને યોગ્ય જગતો સુધી મર્યાદિત કર્યું છે.}
+  નિદર્શન $\mModel{M} = \tuple{W, R, V}$
+  \olref{fig:ex-filtration}માં દર્શાવ્યું છે. જગતો $1$, $2$,
+  વગેરે છે; દરેક જગતમાંથી બરાબર એક અન્ય જગત—તેનો અનુગામી—પ્રાપ્ય
+  છે; અને $p$ બધાં અને માત્ર સમ સંખ્યાઓ પર સત્ય છે.
+
+  \begin{figure}
+    \centering
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$1$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$2$};
+      \node[world] (3) [label=below:\mFalse{p}, right=of 2] {$3$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$4$};
+      \node[phantom] (5) [right=of 4] {};
+      \draw[->] (1) to (2);
+      \draw[->] (2) to (3);
+      \draw[->] (3) to (4);
+      \draw[dotted] (4) to (5);
+    \end{tikzpicture}
+
+    \begin{tikzpicture}[modal]
+      \node[world] (1) [label=below:\mFalse{p}] {$[1]$};
+      \node[world] (2) [label=below:\mTrue{p}, right=of 1] {$[2]$};
+      \draw[->,bend left] (1) to (2);
+      \draw[->,bend left] (2) to (1);
+      
+      \node[world] (3) [label=below:\mFalse{p},right=of 2] {$[1]$};
+      \node[world] (4) [label=below:\mTrue{p}, right=of 3] {$[2]$};
+      \draw[->,bend left] (3) to (4);
+      \draw[->,bend left] (4) to (3);
+      \draw[->,reflexive above] (4) to (4);
+    \end{tikzpicture}
+    \caption{અનંત નિદર્શન અને તેનાં ફિલ્ટ્રેશનો.}
+    \ollabel{fig:ex-filtration}
+  \end{figure}
+  
+  હવે $\Gamma$ એ~$\Box p \lif p$નાં ઉપ-!!{formula}sનો ગણ,
+  એટલે કે $\{p, \Box p, \Box p \lif p\}$, માનો. $p$ બધાં અને
+  માત્ર સમ સંખ્યાઓ પર સત્ય છે; $\Box p$ બધાં અને માત્ર વિષમ
+  સંખ્યાઓ પર સત્ય છે; તેથી $\Box p \lif p$ બધાં અને માત્ર સમ
+  સંખ્યાઓ પર સત્ય છે. બીજા શબ્દોમાં, દરેક વિષમ સંખ્યા $\Box p$ને
+  સત્ય, પરંતુ $p$ અને $\Box p \lif p$ને અસત્ય બનાવે છે; દરેક સમ
+  સંખ્યા $p$ અને $\Box p \lif p$ને સત્ય, પરંતુ $\Box p$ને
+  અસત્ય બનાવે છે. આમ $W^* = \{ [1], [2] \}$, જ્યાં
+  $[1] = \{1, 3, 5, \dots\}$ અને
+  $[2] = \{2, 4, 6, \dots\}$. $2 \in V(p)$ હોવાથી
+  $[2] \in V^*(p)$; $1 \notin V(p)$ હોવાથી
+  $[1] \notin V^*(p)$. તેથી $V^*(p) = \{[2]\}$.
+
+  $W^*$ પર આધારિત કોઈપણ ફિલ્ટ્રેશનના પ્રાપ્યતા સંબંધમાં
+  $\tuple{[1], [2]}, \tuple{[2],[1]}$ હોવાં જોઈએ: $R12$
+  હોવાથી \olref[fil]{defn:filtration}%
+  \olref[fil]{defn:filtration-R1} મુજબ $R^*[1][2]$ હોવું જોઈએ;
+  અને $R23$ હોવાથી $R^*[2][3]$ હોવું જોઈએ, જ્યારે $[3]=[1]$.
+  તેમાં $\tuple{[1],[1]}$ હોઈ શકે નહિ: એવું હોય તો
+  $R^*[1][1]$, $\mSat{M}{\Box p}[1]$ પરંતુ
+  $\mSat/{M}{p}[1]$ મળે, જે
+  \olref[fil]{defn:filtration-R2}નો વિરોધ કરે છે.
+  $R^*[2][2]$ હોવું જરૂરી પણ નથી અને પ્રતિબંધિત પણ નથી.
+  તેથી~$\mModel{M}$નાં બે શક્ય ફિલ્ટ્રેશનો છે, જે નીચેના બે
+  પ્રાપ્યતા સંબંધોને અનુરૂપ છે:
+  \[
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}\} \text{ અને }
+  \{\tuple{[1],[2]}, \tuple{[2],[1]}, \tuple{[2],[2]}\}.
+  \]
+  બંને કિસ્સામાં~$[1]$ પર $p$ અને $\Box p \lif p$ અસત્ય, જ્યારે
+  $\Box p$ સત્ય છે;~$[2]$ પર $p$ અને $\Box p \lif p$ સત્ય,
+  જ્યારે $\Box p$ અસત્ય છે.
+\end{ex}
+
+\begin{prob}
+  નીચેનું નિદર્શન $\mModel{M} = \tuple{W, R, V}$ ધ્યાનમાં લો. અહીં
+  $W = \Setabs{0\sigma}{\sigma \in \Bin^*}$, એટલે $0$થી શરૂ થતી
+  $0$ અને~$1$ની શ્રેણીઓનો ગણ; $R\sigma\sigma'$ જો અને માત્ર જો
+  $\sigma' = \sigma 0$ અથવા $\sigma' = \sigma 1$; અને
+  $V(p) = \Setabs{\sigma 0}{\sigma \in \Bin^*}\cap W$ તથા
+  $V(q) = \Setabs{\sigma 1}{\sigma \in
+    \Bin^* \setminus \{1\}}\cap W$.
+  મૂળમાં આપેલા મૂલ્યાંકન-ગણોને જગત-ગણ સાથે છેદવાથી તેઓ નિદર્શનના
+  જગતોના ઉપગણ બને છે.\sourcecorrection{OLMD-045}{મૂળમાં $V(p)$ અને
+  $V(q)$ને $W$ની બહારની શ્રેણીઓ પણ સમાવી શકે એવા ગણો તરીકે લખ્યાં છે;
+  મૂલ્યાંકનને $W$ના ઉપગણો સુધી મર્યાદિત કરવા બંનેમાં $\cap W$ ઉમેર્યું છે.}
+  તેનું ચિત્ર આ રહ્યું:
+  \begin{center}
+    \begin{tikzpicture}[modal,
+        node distance=2cm
+      ]
+
+      \node[world] (0) [label={below:\mTrue{p}\\\mFalse{q}},font=\tiny] {$0$};
+      \node[world] (00) [label={below:\mTrue{p}\\\mFalse{q}},
+        above right=of 0,font=\tiny] {$00$};
+      \node[world] (000) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 00, yshift=.8cm, font=\tiny] {$000$};
+      \node[phantom] (0000) [right=of 000, yshift=.5cm] {};
+      \node[phantom] (0001) [right=of 000, yshift=-.5cm] {};
+      \node[world] (001) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 00, yshift=-.8cm, font=\tiny] {$001$};
+      \node[phantom](0010) [right=of 001, yshift=.5cm] {};
+      \node[phantom](0011) [right=of 001, yshift=-.5cm] {};
+      \node[world] (01) [label={below:\mFalse{p}\\\mTrue{q}},
+        below right=of 0,font=\tiny] {$01$};
+      \node[world] (010) [label={below:\mTrue{p}\\\mFalse{q}},
+        right=of 01, yshift=.8cm,font=\tiny] {$010$};
+      \node[phantom] (0100) [right=of 010, yshift=.5cm] {};
+      \node[phantom] (0101) [right=of 010, yshift=-.5cm] {};
+      \node[world] (011) [label={below:\mFalse{p}\\\mTrue{q}},
+        right=of 01, yshift=-.8cm,font=\tiny] {$011$};
+      \node[phantom] (0110) [right=of 011, yshift=.5cm] {};
+      \node[phantom] (0111) [right=of 011, yshift=-.5cm] {};
+
+      \draw[->] (0) to (00);
+      \draw[->] (0) to (01);
+      \draw[->] (00) to (000);
+      \draw[dotted] (000) to (0000);
+      \draw[dotted] (000) to (0001);
+      \draw[->] (00) to (001);
+      \draw[dotted] (001) to (0010);
+      \draw[dotted] (001) to (0011);
+      \draw[->] (01) to (010);
+      \draw[dotted] (010) to (0100);
+      \draw[dotted] (010) to (0101);
+      \draw[->] (01) to (011);
+      \draw[dotted] (011) to (0110);
+      \draw[dotted] (011) to (0111);
+    \end{tikzpicture}
+  \end{center}
+  દરેક~$w$ માટે $\mSat/{M}{\Box(p \lor q) \lif (\Box p \lor \Box q)}[w]$
+  છે.
+
+  $\Gamma$ને~$\Box(p \lor q) \lif (\Box p \lor \Box q)$નાં
+  ઉપ-!!{formula}sનો ગણ માનો. $W^*$ અને~$V^*$ શું છે?
+  $\mModel{M}$ના સૌથી સૂક્ષ્મ ફિલ્ટ્રેશનનો પ્રાપ્યતા સંબંધ કયો છે?
+  સૌથી સ્થૂલ ફિલ્ટ્રેશનનો કયો છે?
+\end{prob}
+
+\end{document}

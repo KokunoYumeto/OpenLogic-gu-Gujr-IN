@@ -1,0 +1,178 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: lindenbaum
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{lin}
+
+\olsection{લિન્ડનબાઉમનું સહાયક પ્રમેય}
+
+સ્ફુરણાવાદી તર્ક માટેનો પૂર્ણતા પ્રમેય $\Gamma \Proves/ !A$
+માનીને $\mSat{M}{\Gamma}$ અને~$\mSat/{M}{!A}$ ધરાવતું
+નિદર્શ રચીને સાબિત થાય છે.
+
+પ્રશિષ્ટ તર્કમાં !!{derivability}ના સંબંધને સુસંગતતાના
+ખ્યાલમાં ઉતારી શકાય છે: !!a{formula}~$!A$ એ
+!!{formula}sના ગણમાંથી ત્યારે અને માત્ર ત્યારે જ
+!!{derivable} હોય છે જ્યારે તે ગણ અને~$!A$નો નિષેધ
+મળીને અસુસંગત થાય. સ્ફુરણાવાદી તર્કમાં આવું શક્ય નથી.
+ત્યાં જો $\lnot!A$ અસુસંગત હોય, તો માત્ર
+$\Proves \lnot\lnot !A$ મળે છે. સામાન્ય રીતે
+$\lnot\lnot!A \lif !A$ સ્ફુરણાવાદી રીતે માન્ય નથી,
+તેથી $\Proves !A$ તારવી શકાતું નથી.
+
+આથી નિદર્શ~$\mModel{M}$ રચતી વખતે !!{formula}~$!A$નું
+!!{derivability} ન હોવું ધ્યાનમાં રાખવું પડે છે. તેથી નિદર્શ
+$\mModel{M}$ રચવા માટે પૂર્ણ ગણ $\Gamma^* \supseteq \Gamma$
+વાપરી શકાતો નથી, કારણ કે દરેક પૂર્ણ ગણ~$\Gamma^*$માં
+$\Gamma^* \Proves !A \lor \lnot !A$ હોય છે.
+
+પૂર્ણ ગણ~$\Gamma^*$ને બદલે આપણે સૂત્રોના અભાજ્ય ગણનો
+ખ્યાલ વાપરીશું:
+
+\begin{defn}\ollabel{defn:prime}
+  !!{formula}sનો ગણ~$\Gamma$ ત્યારે અને માત્ર ત્યારે જ
+  \emph{અભાજ્ય} કહેવાય જ્યારે
+  \begin{enumerate}
+  \item\ollabel{defn:prime1} $\Gamma$ સુસંગત હોય, એટલે
+    $\Gamma \Proves/ \lfalse$;
+  \item\ollabel{defn:prime2} જો $\Gamma \Proves !A$ હોય,
+    તો $!A \in \Gamma$; અને
+  \item\ollabel{defn:prime3} જો $!A \lor !B \in \Gamma$
+    હોય, તો $!A \in \Gamma$ અથવા $!B \in \Gamma$.
+  \end{enumerate}
+\end{defn}
+
+\begin{lem}[લિન્ડનબાઉમનું સહાયક પ્રમેય]
+  \ollabel{lem:lindenbaum} જો $\Gamma \Proves/ !A$ હોય,
+  તો એવો $\Gamma^* \supseteq \Gamma$ છે કે $\Gamma^*$
+  અભાજ્ય છે અને $\Gamma^* \Proves/ !A$.
+\end{lem}
+
+\begin{proof}
+  $!B_1 \lor !C_1$, $!B_2 \lor !C_2$, \dots, એ
+  $!B \lor !C$ સ્વરૂપના બધા !!{formula}sની પરિગણના હોય.
+  !!{formula}sના ગણોની વધતી શ્રેણી~$\Gamma_n$ વ્યાખ્યાયિત
+  કરીએ છીએ, જેમાં દરેક $\Gamma_{n+1}$ એ $\Gamma_n$માં
+  એક નવું !!{formula} ઉમેરીને બને છે. બધા~$\Gamma_n$નો
+  યોગગણ $\Gamma^*$ હશે. નવા !!{formula}s એવી રીતે પસંદ
+  કરીએ છીએ કે $\Gamma^*$ અભાજ્ય રહે અને છતાં
+  $\Gamma^* \Proves/ !A$ હોય. એટલે દરેક તબક્કે
+  નીચેની શરતો સંતોષતું પહેલું વિયોજન~$!B_i \lor !C_i$
+  શોધવું પડશે:
+  \begin{enumerate}
+  \item\ollabel{gamma-1} $\Gamma_n \Proves !B_i \lor !C_i$
+  \item\ollabel{gamma-2} $!B_i \notin \Gamma_n$ અને
+    $!C_i \notin \Gamma_n$
+  \end{enumerate}
+  જો $\Gamma_n \cup \{!B_i\} \Proves/ !A$ હોય, તો
+  $\Gamma_n$માં $!B_i$ ઉમેરીએ; નહિ તો $!C_i$ ઉમેરીએ.
+  આ રીત કામ કરે છે તે બતાવવું પડશે. હાલ માટે
+  \olref{gamma-1} અને~\olref{gamma-2} સંતોષતા સૌથી
+  નાના $i$ને $i(n)$ કહીએ.
+
+  $\Gamma_0 = \Gamma$ મૂકો અને
+  \[
+  \Gamma_{n+1} = \begin{cases}
+    \Gamma_n \cup \{!B_{i(n)}\} &
+    \text{જો $\Gamma_n \cup \{!B_{i(n)}\} \Proves/ !A$ હોય} \\
+    \Gamma_n \cup \{!C_{i(n)}\} & \text{અન્યથા}
+    \end{cases}
+  \]
+  જો $i(n)$ વ્યાખ્યાયિત ન હોય, એટલે $\Gamma_n \Proves !B \lor !C$
+  થાય ત્યારે હંમેશાં $!B \in \Gamma_n$ અથવા $!C \in \Gamma_n$
+  હોય, તો $\Gamma_{n+1} = \Gamma_n$ મૂકો.
+  હવે $\Gamma^* = \bigcup_{n=0}^\infty \Gamma_n$ મૂકો.
+
+  પહેલાં દરેક $n$ માટે $\Gamma_n \Proves/ !A$ બતાવીએ.
+  $n$ પર આગમન કરીએ. $n = 0$ માટે સહાયક પ્રમેયની ધારણા,
+  એટલે $\Gamma \Proves/ !A$, પરથી દાવો મળે છે.
+  આગમનના પગલામાં કોઈ પણ $n\ge 0$ માટે
+  $\Gamma_n \Proves/ !A$ પરથી
+  $\Gamma_{n+1} \Proves/ !A$ બતાવવું છે. $i(n)$
+  વ્યાખ્યાયિત ન હોય, તો $\Gamma_{n+1} = \Gamma_n$
+  હોવાથી કશું સાબિત કરવાનું નથી. તેથી $i(n)$
+  વ્યાખ્યાયિત છે એમ ધારો. સરળતા માટે $i = i(n)$ મૂકો.
+  \sourcecorrection{OLMD-093}{મૂળમાં આધાર $n=0$ પછી
+  આગમનનું પગલું $n>0$થી શરૂ થાય છે, જેથી
+  $\Gamma_0$થી $\Gamma_1$નો કિસ્સો છૂટી જાય છે.
+  પગલું બધા $n\ge 0$ માટે જણાવ્યું છે.}
+
+  દાવાનું પ્રતિપક્ષી વિધાન સાબિત કરીએ. ધારો કે
+  $\Gamma_{n+1} \Proves !A$. રચના મુજબ જો
+  $\Gamma_n \cup \{!B_i\} \Proves/ !A$ હોય, તો
+  $\Gamma_{n+1} = \Gamma_n \cup \{!B_i\}$; નહિ તો
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\}$.
+  પહેલો કિસ્સો બની શકે નહીં, કારણ કે ત્યારે
+  $\Gamma_{n+1} \Proves/ !A$ થાય. તેથી
+  $\Gamma_n \cup \{!B_i\} \Proves !A$ અને
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\}$.
+  $i(n)$ની વ્યાખ્યાથી $\Gamma _n \Proves !B_i \lor !C_i$.
+  વળી $\Gamma_n \cup \{!B_i\} \Proves !A$ અને
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\} \Proves !A$.
+  આથી ઇચ્છિત $\Gamma_n \Proves !A$ મળે છે.
+
+  જો $\Gamma^* \Proves !A$ હોય, તો એવો સાન્ત ઉપગણ
+  $\Gamma' \subseteq \Gamma^*$ હોય
+  કે $\Gamma' \Proves !A$. તેનું દરેક
+  $!D \in \Gamma'$ કોઈક~$i$ માટે $\Gamma_i$માં હશે.
+  આ સૂચકોમાં સૌથી મોટો $n$ લો. $i \le n$ હોય ત્યારે
+  $\Gamma_i \subseteq \Gamma_n$ હોવાથી
+  $\Gamma' \subseteq \Gamma_n$. તેથી
+  $\Gamma_n \Proves !A$, જે ઉપર સાબિત કરેલા
+  $\Gamma_n \Proves/ !A$થી વિરુદ્ધ છે.
+
+  છેલ્લે $\Gamma^*$ અભાજ્ય છે, એટલે કે
+  \olref{defn:prime}ની \olref{defn:prime1},
+  \olref{defn:prime2} અને~\olref{defn:prime3}
+  શરતો સંતોષે છે તે બતાવીએ.
+
+  સૌપ્રથમ $\Gamma^* \Proves/ !A$ છે, તેથી
+  $\Gamma^*$ સુસંગત છે અને \olref{defn:prime1} મળે છે.
+
+  હવે જો $\Gamma^* \Proves !B \lor !C$ હોય, તો
+  $!B \in \Gamma^*$ અથવા $!C \in \Gamma^*$ છે તે
+  બતાવીએ. આનાથી \olref{defn:prime3} મળે છે, કારણ કે
+  $!B \lor !C \in \Gamma^*$ હોય, તો
+  $\Gamma^* \Proves !B \lor !C$ પણ હોય. તેથી
+  $\Gamma^* \Proves !B \lor !C$, પરંતુ
+  $!B \notin \Gamma^*$ અને $!C \notin \Gamma^*$,
+  એમ ધારો. $\Gamma^* \Proves !B \lor !C$
+  હોવાથી કોઈક~$n$ માટે $\Gamma_n \Proves !B \lor !C$.
+  બધા વિયોજનોની પરિગણનામાં $!B \lor !C$ કોઈક
+  $!B_j \lor !C_j$ તરીકે આવે છે. $!B_j \lor !C_j$
+  એ $i(n)$ની વ્યાખ્યાની શરતો સંતોષે છે: એટલે
+  $\Gamma_n \Proves !B_j \lor !C_j$, જ્યારે
+  $!B_j \notin \Gamma_n$ અને $!C_j \notin \Gamma_n$.
+  દરેક તબક્કે પસંદ કરેલું વિયોજન~$!B_i \lor !C_i$
+  પછીની યાદીમાં ફરી શરતો સંતોષતું નથી, કારણ કે
+  તેમાં $!B_i$ અથવા $!C_i$ ઉમેરાય છે. આ સૂચક
+  પહેલાં સાન્ત સૂચકો જ છે; તેથી આ વિયોજન શરતો સંતોષતું
+  રહે ત્યાં સુધી તેનાથી નાના બાકી સૂચકો એક પછી એક
+  દૂર થશે અને કોઈક તબક્કે~$m$ માટે $j = i(m)$ મળશે.
+  \sourcecorrection{OLMD-094}{મૂળ કહે છે કે દરેક તબક્કે
+  શરતો સંતોષતા વિયોજનોની કુલ સંખ્યા ઓછામાં ઓછી એકથી
+  ઘટે છે; નવા વિયોજનો નિગમ્ય બની શકે હોવાથી આ દાવો
+  જરૂરી નથી. નક્કી કરેલા $j$થી નાના સાન્ત સૂચકો
+  ફરી પસંદ ન થાય એ તર્ક વાપર્યો છે.}
+  પરંતુ પછી $!B \in \Gamma_{m+1}$ અથવા
+  $!C \in \Gamma_{m+1}$, જે $!B \notin \Gamma^*$
+  અને $!C \notin \Gamma^*$ની ધારણાથી વિરુદ્ધ છે.
+
+  હવે ધારો કે $\Gamma^* \Proves !B$. તો
+  $\Gamma^* \Proves !B \lor !B$. હમણાં સાબિત કર્યું
+  છે કે $\Gamma^* \Proves !B \lor !B$ હોય, તો
+  $!B \in \Gamma^*$. તેથી $\Gamma^*$ એ
+  \olref{defn:prime}ની \olref{defn:prime2} સંતોષે છે.
+\end{proof}
+
+\begin{prob}
+જો $\Gamma \Proves/ \bot$ હોય, તો પ્રશિષ્ટ તર્કમાં
+$\Gamma$ સુસંગત છે, એટલે~$\Gamma$નાં બધાં સૂત્રોને
+સાચાં બનાવતું મૂલ્યાંકન છે, તે બતાવો.
+\end{prob}
+
+\end{document}

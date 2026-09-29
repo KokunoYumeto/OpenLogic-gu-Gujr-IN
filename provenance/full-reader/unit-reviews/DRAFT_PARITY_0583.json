@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0583",
+  "checked_at_utc": "2026-09-28T02:39:36.734256+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0583 ZFC milestone and Choice versus Well-Ordering; state-only draft",
+  "report": {
+    "unit_id": "OLP-0583",
+    "source_path": "content/set-theory/cardinals/milestone.tex",
+    "source_sha256": "50f4f989834763156b2d27822acd03201532846baa243a8f97d6b3fa299a54fd",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinals-milestone.tex",
+    "draft_sha256": "1f6cb68e1d4fb01b2f04bfc5d9c8807032658889ebab02ae4c3ff0155093d8f3",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 8,
+    "target_math_spans_after_corrections": 8,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 111,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-zf.tex",
+        "sha256": "d3c7abdd61c0795743c4c59b6fea83261af721c1e287e7158e90924e819fe9ac",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત સમાનતા",
+          "પૃથક્કરણ",
+          "આધાર",
+          "પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+        "sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+        "terms": [
+          "\\begin{axiom}[સુક્રમિતતા]",
+          "\\ZF"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-introduction.tex",
+        "sha256": "90ada58ffd3a8f6a9320170d03e6c0c24a4374ede71508794addb7b78423da8c",
+        "terms": [
+          "પ્રતિસ્થાપન",
+          "\\ZF"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The source's list distinguishes individual axioms from every instance of the two schemes; the Gujarati keeps that distinction.",
+      "Equivalence of Choice and Well-Ordering is deferred to the cited later theorem and qualified as modulo ZF, not asserted without context.",
+      "The existing Gujarati ZF vocabulary controls the axiom names rather than improvised synonyms."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

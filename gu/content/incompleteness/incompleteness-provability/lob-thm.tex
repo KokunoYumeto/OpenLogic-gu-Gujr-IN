@@ -1,0 +1,101 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: lob-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{lob}
+
+\olsection{લોબનું પ્રમેય}
+
+સિદ્ધાંત~$\Th{T}$ માટેનું ગોડેલ વાક્ય $\lnot\OProv[\Th{T}](y)$નું નિશ્ચિત-બિંદુ છે; એટલે એવું !!a{sentence}~$!G$ કે
+\[
+\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G}) \liff !G.
+\]
+સુસંગત સિદ્ધાંતમાં તે !!{derivable} નથી. કારણ કે જો $\Th{T} \Proves !G$, તો (a) !!{derivability} શરત~(1)થી $\Th{T} \Proves \OProv[\Th{T}](\gn{!G})$; અને (b) $\Th{T} \Proves !G$ તથા $\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G}) \liff !G$ મળીને $\Th{T} \Proves \lnot \OProv[\Th{T}](\gn{!G})$ આપે. તેથી $\Th{T}$ અસુસંગત બને. હવે $\OProv[\Th{T}](y)$ના નિશ્ચિત-બિંદુની સ્થિતિ શું છે એ પૂછવું સ્વાભાવિક છે. એટલે એવું !!a{sentence}~$!H$ કે
+\[
+\Th{T} \Proves \OProv[\Th{T}](\gn{!H}) \liff !H.
+\]
+જો તે !!{derivable} હોય, તો શરત~(1)થી $\Th{T} \Proves \OProv[\Th{T}](\gn{!H})$; પણ ઉપરની સમકક્ષતા પર મોડસ પોનેન્સ લાગુ કરતાં પણ એ જ તારણ મળે. તેથી, ઓછામાં ઓછું ગોડેલ વાક્યના કિસ્સામાં વપરાયેલી દલીલથી, $\Th{T}$ અસુસંગત છે એવું નીકળતું નથી. અલબત્ત, આથી $\Th{T}$ ખરેખર $!H$ને !!{derive} કરે છે એવું પણ સાબિત થતું નથી.
+\sourcecorrection{OLINC-049}{સ્થિર અંગ્રેજી મૂળ ગોડેલ વાક્ય અસાબિત્ય છે એવું નિઃશરત કહે છે, પરંતુ પછીની દલીલ માત્ર તેની સાબિતીથી સિદ્ધાંત અસુસંગત બનશે એવું બતાવે છે. તેથી અહીં સુસંગતતાની શરત સ્પષ્ટ કરી છે; અસુસંગત સિદ્ધાંતમાં વાક્ય સાબિત થઈ શકે.}
+
+આ પ્રશ્નને થોડો વ્યાપક કરીએ તો આગળ વધી શકીએ. નિશ્ચિત-બિંદુની સમકક્ષતામાં ડાબેથી જમણી દિશા, $\OProv[\Th{T}](\gn{!H}) \lif !H$, \emph{પ્રતિબિંબન સિદ્ધાંત} કહેવાતી સામાન્ય યોજનાનું ઉદાહરણ છે: $\OProv[\Th{T}](\gn{!A}) \lif !A$. તેને એવું નામ એટલા માટે છે કે, એક અર્થમાં, તે $\Th{T}$ને પોતે શું !!{derive} કરી શકે છે તે અંગે ``પ્રતિબિંબિત'' કરવા દે છે. મૂળભૂત રીતે તે દરેક~$!A$ માટે કહે છે: ``જો $\Th{T}$ એ $!A$ને !!{derive} કરી શકે, તો $!A$ સાચું છે.'' અલબત્ત, આ ફક્ત યથાર્થ સિદ્ધાંતો માટે સાચું છે; તેથી સામાન્ય રીતે સિદ્ધાંતો તેના દરેક ઉદાહરણને !!{derive} કરતા નથી એવું સૂચાય છે. તો પૂરતી શક્તિ અને !!{derivability} શરતો ધરાવતો સિદ્ધાંત તેના કયા ઉદાહરણો !!{derive} કરી શકે? નિશ્ચિતપણે એવા બધાં, જ્યાં $!A$ પોતે !!{derivable} છે. પછીના પરિણામ મુજબ, બસ એટલાં જ.
+
+\begin{thm}\ollabel{thm:lob}
+$\Th{T}$ એ $\Th{Q}$નું !!a{axiomatizable} વિસ્તરણ હોય અને $\OProv[\Th{T}](y)$ એ \olref[2in]{sec}ની શરતો P1--P3 સંતોષતું સૂત્ર હોય. જો $\Th{T}$ એ $\OProv[\Th{T}](\gn{!A}) \lif !A$ને !!{derive} કરે, તો હકીકતમાં $\Th{T}$ એ $!A$ને !!{derive} કરે છે.
+\end{thm}
+
+બીજી રીતે કહીએ તો, જો $\Th{T} \Proves/ !A$, તો $\Th{T} \Proves/ \OProv[\Th{T}](\gn{!A}) \lif !A$. આ પરિણામ લોબના પ્રમેય તરીકે ઓળખાય છે.
+
+\begin{explain}
+લોબના પ્રમેયની સાબિતી પાછળની યુક્તિ સાન્તા ક્લોઝ અસ્તિત્વમાં છે એવી ચતુર સાબિતી છે. (તમને આ તારણ ન ગમતું હોય તો ગમતું કોઈ બીજું તારણ તેની જગ્યાએ મૂકી શકો.) દલીલ આ છે:
+\begin{enumerate}
+\item $X$ એ આ વાક્ય હોય: ``જો $X$ સાચું હોય, તો સાન્તા ક્લોઝ અસ્તિત્વમાં છે.''
+\item માનો કે $X$ સાચું છે.
+\item તો તે જે કહે છે તે સાચું છે; એટલે જો $X$ સાચું હોય, તો સાન્તા ક્લોઝ અસ્તિત્વમાં છે.
+\item $X$ સાચું છે એમ માન્યું હોવાથી (2) અને~(3) પરથી મોડસ પોનેન્સ વડે સાન્તા ક્લોઝ અસ્તિત્વમાં છે એવું તારવી શકીએ.
+\item ધારણા~(2), ``$X$ સાચું છે,'' પરથી આપણે (4), ``સાન્તા ક્લોઝ અસ્તિત્વમાં છે,'' તારવ્યું. શરતી સાબિતી વડે બતાવ્યું: ``જો $X$ સાચું હોય, તો સાન્તા ક્લોઝ અસ્તિત્વમાં છે.''
+\item પરંતુ આ તો વાક્ય~$X$ જ છે. એટલે $X$ સાચું છે એવું બતાવ્યું.
+\item પછી ઉપરની (2)--(4) દલીલથી સાન્તા ક્લોઝ અસ્તિત્વમાં છે.
+\end{enumerate}
+આ વિચારને ઔપચારિક કરતાં ``સાચું છે''ની જગ્યાએ ``!!{derivable} છે'' અને ``સાન્તા ક્લોઝ અસ્તિત્વમાં છે''ની જગ્યાએ~$!A$ મૂકીએ તો લોબના પ્રમેયની સાબિતી મળે છે. યુક્તિ !!{formula}~$\OProv[\Th{T}](y) \lif !A$ પર નિશ્ચિત-બિંદુ લેમ્મા લાગુ કરવાની છે. તેનું નિશ્ચિત-બિંદુ ઉપરની રૂપરેખાના વાક્ય~$X$ને અનુરૂપ છે.
+\end{explain}
+
+\begin{proof}[\olref{thm:lob}ની સાબિતી]
+માનો કે $!A$ એવું !!a{sentence} છે કે $\Th{T}$ એ $\OProv[\Th{T}](\gn{!A}) \lif !A$ને !!{derive} કરે છે. $!B(y)$ એ !!{formula}~$\OProv[\Th{T}](y) \lif !A$ હોય. નિશ્ચિત-બિંદુ લેમ્માથી એવું !!a{sentence}~$!D$ શોધો કે $\Th{T}$ એ $!D \liff !B(\gn{!D})$ને !!{derive} કરે. હવે નીચેની દરેક અભિવ્યક્તિ $\Th{T}$માં !!{derivable} છે:
+\begin{align}
+  & !D \liff (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-1}\\
+  & \qquad \text{$!D$ એ~$!B(y)$નું નિશ્ચિત-બિંદુ છે}\notag \\
+  & !D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A) \ollabel{L-2}\\
+  & \qquad\text{\olref{L-1} પરથી}\notag\\
+  & \OProv[\Th{T}](\gn{!D \lif (\OProv[\Th{T}](\gn{!D}) \lif !A)}) \ollabel{L-3}\\
+  & \qquad \text{\olref{L-2} અને શરત P1 પરથી}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D}) \lif !A})
+  \ollabel{L-4}\\
+  &\qquad \text{\olref{L-3} અને શરત P2 પરથી}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \lif (\OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \lif \OProv[\Th{T}](\gn{!A})) \ollabel{L-5}\\
+  &\qquad \text{\olref{L-4} અને ફરી P2 પરથી} \notag\\
+& \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{\OProv[\Th{T}](\gn{!D})}) \ollabel{L-6}\\
+  & \qquad\text{!!{derivability} શરત P3 પરથી} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif \OProv[\Th{T}](\gn{!A}) \ollabel{L-7} \\
+  &\qquad\text{\olref{L-5} અને \olref{L-6} પરથી}\notag\\
+  & \OProv[\Th{T}](\gn{!A}) \lif !A \ollabel{L-8}\\
+  &\qquad\text{પ્રમેયની ધારણા પરથી} \notag\\
+  & \OProv[\Th{T}](\gn{!D}) \lif !A \ollabel{L-9}\\
+  &\qquad\text{\olref{L-7} અને \olref{L-8} પરથી}\notag\\
+  & (\OProv[\Th{T}](\gn{!D}) \lif !A) \lif !D \ollabel{L-10}\\
+  & \qquad \text{\olref{L-1} પરથી}\notag \\
+  & !D \ollabel{L-11}\\
+  & \qquad\text{\olref{L-9} અને \olref{L-10} પરથી}\notag \\
+  & \OProv[\Th{T}](\gn{!D}) \ollabel{L-12}\\
+  & \qquad\text{\olref{L-11} અને શરત~P1 પરથી}\notag \\
+  & !A \qquad\qquad\text{\olref{L-8} અને \olref{L-12} પરથી}\notag
+\end{align}
+\end{proof}
+
+લોબનું પ્રમેય મળ્યા પછી બીજું અપૂર્ણતા પ્રમેય ટૂંકમાં સાબિત કરી શકાય છે (જ્યાં !!a{derivability} વિધેયધર્મ P1--P3 શરતો સંતોષે છે): જો $\Th{T} \Proves \OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$, તો $\Th{T} \Proves \lfalse$. જો $\Th{T}$ સુસંગત હોય, તો $\Th{T} \Proves/ \lfalse$. તેથી $\Th{T} \Proves/ \OProv[\Th{T}](\gn{\lfalse}) \lif \lfalse$, એટલે $\Th{T} \Proves/ \OCon[\Th{T}]$. આ પ્રમેયથી $\OProv[\Th{T}](x)$ના નિશ્ચિત-બિંદુ~$!H$ને પણ !!{derivable} બતાવી શકાય છે. કારણ કે
+\begin{align*}
+  \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \liff !H\\
+  \intertext{ખાસ કરીને}
+    \Th{T} & \Proves \OProv[\Th{T}](\gn{!H}) \lif !H
+\end{align*}
+અને તેથી લોબના પ્રમેયથી $\Th{T} \Proves !H$.
+
+% Going in the other direction, for homework I
+% may ask you to work through a short proof of L\"ob's theorem, using
+% the second incompleteness theorem instead of the fixed-point lemma.
+
+\begin{prob}
+$\Th{T}$ એ સંગણનીય રીતે સ્વયંસિદ્ધિત સિદ્ધાંત હોય અને $\OProv[\Th{T}]$ એ $\Th{T}$ માટેનો !!a{derivability} વિધેયધર્મ હોય. નીચેના ચાર દાવા વિચારો:
+\begin{enumerate}
+\item જો $T \Proves !A$, તો $T \Proves \OProv[\Th{T}](\gn{!A})$.
+\item $T \Proves !A \lif \OProv[\Th{T}](\gn{!A})$.
+\item જો $T \Proves \OProv[\Th{T}](\gn{!A})$, તો $T \Proves !A$.
+\item $T \Proves \OProv[\Th{T}](\gn{!A}) \lif !A$.
+\end{enumerate}
+કઈ શરતો હેઠળ આમાંથી દરેક દાવો સાચો છે?
+\end{prob}
+
+\end{document}

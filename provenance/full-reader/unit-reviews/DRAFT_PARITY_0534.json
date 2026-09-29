@@ -1,0 +1,66 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0534",
+  "checked_at_utc": "2026-09-27T23:24:03.899012+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0534 cumulative-iterative approach; state-only draft",
+  "report": {
+    "unit_id": "OLP-0534",
+    "source_path": "content/set-theory/story/cumulative-approach.tex",
+    "source_sha256": "86099ec03bf39142ceb2d76826a796a91731caa5eae0cd35d74b6c1a7fe2f798",
+    "draft_path": "private-state\\work\\batch044_draft\\cumulative-approach.tex",
+    "draft_sha256": "406d630c98b96fba4eb2edf4ed84703d9e58fa92ec4c71cf643ba90bd11f56ee",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 24,
+    "target_math_spans_after_corrections": 24,
+    "glossary_tokens": 4,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 422,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\predicativity.tex",
+        "sha256": "be1b03accf0a51bbf9af6557dd39e91587b352bb9337b33e8b2509f88114461d",
+        "terms": [
+          "સંચયી-પુનરાવર્તી",
+          "તબક્કાઓ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\russells-paradox-again.tex",
+        "sha256": "e62b2d165b604d47921965045523cd4eba48b62c886d197f1d8d8b7079f440f8",
+        "terms": [
+          "સહજ ગણરચના",
+          "સ્વસભ્ય ન હોય"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The finite enumeration independently confirms 1,1,2,12 newly formed sets.",
+      "The diagram and inactive English source comments are preserved as exact raw byte ranges. Diagram rendering and visual QA remain pending.",
+      "All raw-file formula spans, including formulas in inactive comments, are preserved; the prose inside the active text macro is translated without changing its embedded x and S.",
+      "Avoiding Russell's specific contradiction does not establish a formal consistency theorem for the full axiomatic theory."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citep[p.~323]{Shoenfield:AST}",
+        "count": 1,
+        "reason": "Frozen colon-containing bibliography key and page locator; no ordinary untranslated prose."
+      }
+    ],
+    "supporting_receipts": [
+      {
+        "path": "work/FINITE_STAGE_CHECK_044_0534.json",
+        "sha256": "c29267901bb9f216fa83c691a499c1d1f8ed004e45295920b84fb028330e6659"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 1,
+    "inherited_diagrams_visual_qa": "pending",
+    "math_parser": "double-dollar-aware"
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

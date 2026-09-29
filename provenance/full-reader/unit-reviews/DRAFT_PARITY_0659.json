@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0659",
+  "checked_at_utc": "2026-09-28T19:08:21.008592+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0659 Cut elimination motivation and two G3c strategies; state-only draft",
+  "report": {
+    "unit_id": "OLP-0659",
+    "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+    "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83",
+    "draft_path": "private-state\\work\\batch044_draft\\introduction.tex",
+    "draft_sha256": "13ae46312b719972dc70115404d41c3c01bb2ee08d58851b4adef22033808f7e",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 12,
+    "target_math_spans_after_corrections": 12,
+    "glossary_tokens": 18,
+    "source_correction_notes": [
+      "OLMD-213",
+      "OLMD-214"
+    ],
+    "source_detector_ascii_tokens": 666,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "!!\na{proof}",
+        "!!a{proof}"
+      ],
+      [
+        "\\Axiom$!A, \\Gamma \\fCenter \\Delta$\n\\RightLabel{\\Cut}",
+        "\\Axiom$!A, \\Gamma \\fCenter \\Delta$\n\\RightLabel{\\CutCS}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "શિથિલીકરણ",
+          "સંકોચન",
+          "કટ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\model-theory\\interpolation\\introduction.tex",
+        "sha256": "5cdff6e7f1d49484d76f8e74cba3603ea1af6907f745a1b1008756cb814776ae",
+        "terms": [
+          "અંતર્વેશન પ્રમેય",
+          "અંતર્વેશક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Hauptsatz",
+        "count": 1,
+        "reason": "Gentzen's historical German theorem name"
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [
+      {
+        "literal": "LK",
+        "count": 5
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

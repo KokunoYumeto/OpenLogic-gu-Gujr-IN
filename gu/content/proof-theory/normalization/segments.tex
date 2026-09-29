@@ -1,0 +1,221 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{seg}
+
+\olsection{ખંડો અને કટ}
+
+!!^a{introduction} નિયમ
+પછી !!a{elimination}
+નિયમ આવે તે
+!!a{proof}માં ચકરાવો
+છે; !!a{proof}નું
+સામાન્યીકરણ એટલે
+એવા ચકરાવા
+દૂર કરવા.
+જોકે~\Elim{\lor}
+અને~\Elim{\lexists}
+હોવાને કારણે
+``દૂર કરવાનો
+ચકરાવો'' શું છે
+તેની વ્યાખ્યા
+પણ થોડી જટિલ
+બને છે. સમસ્યા
+એ છે કે
+આ નિયમોને લીધે
+ચકરાવામાં
+!!{elimination}
+નિયમ !!{introduction}
+નિયમની \emph{તરત}
+પછી આવે જ
+તે જરૂરી નથી.
+વચ્ચે~\Elim{\lor}
+કે~\Elim{\lexists}
+આવી શકે છે,
+જેમ કે:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+ખરેખર, ગમે તેટલા
+\Elim{\lor} અથવા
+\Elim{\lexists}
+નિયમો~\Intro{\lif}
+અને~\Elim{\lif}
+વચ્ચે આવી શકે
+છે, જેમ કે:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+આ દાખલો બતાવે
+છે કે એક જ
+\Elim{\lif} અનેક
+ચકરાવામાં સામેલ
+હોઈ શકે છે,
+કારણ કે તેના
+પહેલાં એકથી વધુ
+\Intro{\lif} આવે
+છે. આ બધી
+શક્યતાઓ સમાવવા
+\Log{N1i}-સાબિતીમાં
+!!{formula} આવૃત્તિઓના
+અમુક પ્રકારના
+ક્રમ, જેને
+\emph{ખંડો} કહીએ,
+તે વડે ચકરાવા
+વ્યાખ્યાયિત કરીએ.
+આપણા દાખલામાં
+તે~$!A \lif !B$ની
+આવૃત્તિઓનો એવો
+ક્રમ છે જેમાં
+$\Elim{\lor}$ કે
+$\Elim{\lexists}$ના
+ગૌણ આધારવિધાન
+પછી એ નિયમનું
+નિષ્કર્ષ આવે
+છે. અહીં આવા
+બે ખંડ છે,
+અને દરેકમાં~$!A \lif !B$ની
+ત્રણ આવૃત્તિઓ
+છે. હવે ઔપચારિક
+વ્યાખ્યા આપીએ.
+
+\begin{defn}
+\Log{N1i}ની !!{proof}~$\delta$માં
+એક જ !!{formula}~$!A$ની
+આવૃત્તિઓનો ક્રમ
+$!A_1$, \dots, $!A_n$
+એ જ~$\delta$માં
+નીચેની શરતો પૂરી
+કરે તો તે
+\emph{ખંડ} છે:
+\begin{enumerate}
+  \item $!A_1$ એ
+  \Elim{\lor} કે
+  \Elim{\lexists}નું
+  નિષ્કર્ષ ન હોય;
+  \item $!A_n$ એ
+  \Elim{\lor} કે
+  \Elim{\lexists}નું
+  ગૌણ આધારવિધાન
+  ન હોય;
+  \item $i = 1$,
+  \dots,~$n-1$
+  માટે~$!A_i$ એ
+  \Elim{\lor}
+  અથવા~\Elim{\lexists}નું
+  ગૌણ આધારવિધાન
+  હોય અને
+  $!A_{i+1}$
+  તે જ અનુમાનનું
+  નિષ્કર્ષ હોય.
+\end{enumerate}
+\sourcecorrection{OLMD-259}{મૂળની ત્રીજી શરતમાં પહેલાની આવૃત્તિ $!A_i$ પછીની આવૃત્તિ $A_{i+1}$ લખાઈ છે; બંને એક જ $!A$ સૂત્રની આવૃત્તિઓ હોવાથી બીજામાં પણ $!$ જરૂરી છે.}
+તે ખંડની
+\emph{લંબાઈ}~$n$ છે.
+\end{defn}
+
+દરેક ખંડ દૂર
+કરવા યોગ્ય
+ચકરાવો નથી.
+જે એવા છે
+તેમને \emph{કટ}
+કહીએ છીએ.
+
+\begin{defn}
+\emph{કટ} એવો
+ખંડ છે જેમાં
+$!A_n$ એ
+!!a{elimination}
+અનુમાનનું મુખ્ય
+આધારવિધાન હોય
+અને કાં તો
+$n=1$ હોય તથા
+$!A_1 = !A_n$
+એ !!a{introduction}
+અનુમાનનું અથવા
+\FalseInt{}નું
+નિષ્કર્ષ હોય,
+અથવા~$n>1$
+હોય.
+\end{defn}
+
+નોંધો કે કટ-ખંડની
+શરૂઆત !!a{introduction}
+નિયમના નિષ્કર્ષથી
+થવી જરૂરી નથી.
+તેનો અંત
+!!a{elimination}
+નિયમના મુખ્ય
+આધારવિધાનમાં
+થવો પૂરતો છે.
+જોકે લંબાઈ~$1$નો
+ખંડ કટ ગણાય
+તે માટે તે
+!!{introduction}
+નિયમનું અથવા
+\FalseInt{}નું
+નિષ્કર્ષ હોવું
+જોઈએ.
+\sourcecorrection{OLMD-260}{મૂળનો સારાંશ લંબાઈ એકના કિસ્સામાં ફક્ત પરિચય-નિયમ કહે છે, જ્યારે તરત પહેલાંની કટની વ્યાખ્યામાં \FalseInt{} પણ સ્પષ્ટ સામેલ છે.}
+
+\begin{defn}
+કટની \emph{કક્ષા}~$\depth{!A}$
+છે. !!a{proof}~$\delta$ની
+\emph{કટ-કક્ષા}~$\cutrank{\delta}$
+એ~$\delta$માંના
+કટોની મહત્તમ
+કક્ષા છે.
+કટની કક્ષા
+$\cutrank{\delta}$
+હોય, એટલે
+મહત્તમ કક્ષા
+હોય, તો તે
+$\delta$માં
+\emph{મહત્તમ}
+કટ છે.
+$\delta$ની
+\emph{કટ-લંબાઈ}
+એ તેના બધા
+મહત્તમ કટોની
+લંબાઈનો સરવાળો
+છે.
+\end{defn}
+
+\end{document}

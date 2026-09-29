@@ -1,0 +1,299 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: rosser-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{ros}
+
+\olsection{રોસરનું પ્રમેય}
+
+``$\omega$-સુસંગત''ને
+બદલે માત્ર ``સુસંગત''
+રાખીને વધુ મજબૂત
+પરિણામ મેળવવા ગોડેલની
+સાબિતી બદલી શકીએ?
+રોસરે શોધેલી યુક્તિથી
+જવાબ ``હા'' છે.
+રોસરની યુક્તિ
+$\OProv[\Th{T}](y)$ને
+બદલે ``બદલાયેલું''
+!!{derivability} વિધેયધર્મ
+$\ORProv_T(y)$ વાપરે છે.
+
+\begin{thm}
+\ollabel{thm:rosser}
+$\Th{T}$ એ~$\Th{Q}$નું
+કોઈપણ સુસંગત,
+!!{axiomatizable} વિસ્તરણ
+હોય. તો $\Th{T}$
+પૂર્ણ નથી.
+\end{thm}
+
+\begin{proof}
+યાદ રાખો કે
+$\OProv[\Th{T}](y)$ની
+વ્યાખ્યા
+$\lexists[x][\OPrf[\Th{T}](x,
+  y)]$ છે; અહીં
+$\OPrf[\Th{T}](x, y)$
+એ એવો નિર્ણેય સંબંધ
+નિરૂપે છે કે $x$ એ
+ગોડેલ સંખ્યા~$y$
+ધરાવતા !!{sentence}ના
+!!a{derivation}ની ગોડેલ
+સંખ્યા હોય ત્યારે અને
+માત્ર ત્યારે જ સંબંધ
+સાચો છે. $x$ અને~$y$
+વચ્ચેનો એવો સંબંધ પણ
+નિર્ણેય છે જેમાં $x$ એ
+ગોડેલ સંખ્યા~$y$ ધરાવતા
+વાક્યના \emph{ખંડન}ની
+ગોડેલ સંખ્યા હોય ત્યારે
+તે સાચો થાય. $\fn{not}(x)$
+નીચે મુજબનું આદિમ
+પુનરાવર્તી વિધેય હોય:
+$x$ જો સૂત્ર~$!A$નો
+સંકેત હોય, તો
+$\fn{not}(x)$ એ
+$\lnot
+!A$નો સંકેત છે.
+ત્યારે $\Refut[\Th{T}](x, y)$
+ત્યારે અને માત્ર ત્યારે જ
+સાચો છે જ્યારે
+$\Prf[\Th{T}](x, \fn{not}(y))$
+સાચો હોય. તેને
+$\ORefut[\Th{T}](x, y)$
+નિરૂપે એમ માનો. પછી
+જો $\Th{T} \Proves \lnot !A$
+અને $\delta$ એ અનુરૂપ
+!!{derivation} હોય, તો
+$\Th{Q} \Proves
+\ORefut[\Th{T}](\gn{\delta}, \gn{!A})$.
+$\ORProv[\Th{T}](y)$ની
+વ્યાખ્યા આ રાખીએ:
+\[
+\lexists[x][(\OPrf[\Th{T}](x,y) \land \lforall[z][(z < x \lif \lnot
+  \ORefut[\Th{T}](z,y))])].
+\]
+આશરે, $\ORProv[\Th{T}](y)$
+કહે છે કે ``$\Th{T}$માં
+$y$ની સાબિતી છે, અને
+$y$નું તેની સાબિતીની
+સંકેતસંખ્યા કરતાં નાની
+સંકેતસંખ્યા ધરાવતું
+ખંડન નથી.''
+\sourcecorrection{OLINC-043}{સ્થિર અંગ્રેજી
+મૂળમાં ``ટૂંકું ખંડન''
+કહ્યું છે, પરંતુ વ્યાખ્યાનું
+ક્રમ-માપ સાબિતી અને
+ખંડનની સંકેતસંખ્યાઓની
+સરખામણી છે. સૂત્રમાં
+લખાયેલી નાની સંકેતસંખ્યા
+અનુસાર અર્થ સ્પષ્ટ કર્યો છે.}
+$\Th{T}$ સુસંગત
+છે એમ માનીએ તો
+$\ORProv[\Th{T}](y)$ અને
+$\OProv[\Th{T}](y)$
+એક જ સંખ્યાઓ માટે
+સાચાં છે; પરંતુ
+~$\Th{T}$માં
+\emph{સાબિતિક્ષમતા}ની
+દૃષ્ટિએ (સત્ય અને
+સાબિતિક્ષમતા વચ્ચે તફાવત
+છે તે હવે જાણીએ છીએ!)
+બંનેના ગુણધર્મો જુદા છે.
+જો $\Th{T}$
+\emph{અ}સુસંગત હોય,
+તો બંને એક જ સંખ્યાઓ
+માટે સાચાં \emph{નથી}!{}
+($\ORProv[\Th{T}](y)$ને
+ઘણી વાર ``$y$ રોસર-સાબિતિક્ષમ
+છે'' એમ વાંચે છે.
+હમણાં ચર્ચ્યું તેમ,
+રોસર-સાબિતિક્ષમતા કોઈ
+ખાસ પ્રકારની સાબિતિક્ષમતા
+નથી: અસુસંગત સિદ્ધાંતોમાં
+કેટલાંક !!{sentence}
+સાબિતિક્ષમ હોય છતાં
+રોસર-સાબિતિક્ષમ નથી.
+એટલે આ નામ ગૂંચવી શકે.
+ગૂંચવણ ટાળવા તેને
+``$y$ શ્મૂવેબલ છે'' પણ
+વાંચી શકો.)
+
+નિશ્ચિત-બિંદુ લેમ્માથી એવું
+સૂત્ર $!R_\Th{T}$ છે કે
+\begin{equation}
+  \Th{Q} \Proves !R_\Th{T} \liff \lnot \ORProv[\Th{T}](\gn{!R_\Th{T}}).
+  \ollabel{RT}
+\end{equation}
+\olref[1in]{thm:first-incompleteness}ની
+સાબિતીથી વિપરીત, અહીં
+દાવો એવો છે કે
+$\Th{T}$ સુસંગત હોય તો
+$\Th{T}$ એ $!R_\Th{T}$ને
+!!{derive} કરતું નથી,
+અને $\Th{T}$ એ
+$\lnot !R_\Th{T}$ને પણ
+!!{derive} કરતું નથી.
+(બીજા શબ્દોમાં,
+$\omega$-સુસંગતતાની
+ધારણા જરૂરી નથી.)
+
+પ્રથમ બતાવીએ કે
+$\Th{T} \Proves/ !R_{\Th{T}}$.
+માનો કે તે સાબિત કરે;
+તો~$T$માંથી
+~$!R_{\Th{T}}$નું
+!!a{derivation} છે;
+તેની ગોડેલ સંખ્યા~$n$
+માનો. તેથી
+$\Th{Q} \Proves \OPrf[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$,
+કારણ કે $\OPrf[\Th{T}]$
+એ~$\Th{Q}$માં
+$\Prf[\Th{T}]$નું નિરૂપણ
+કરે છે. ઉપરાંત દરેક
+$k < n$ માટે $k$ એ
+$\lnot !R_{\Th{T}}$ના
+!!a{derivation}ની ગોડેલ
+સંખ્યા નથી, કારણ કે
+$\Th{T}$ સુસંગત છે.
+તેથી દરેક $k < n$ માટે
+$\Th{Q} \Proves \lnot
+\ORefut[\Th{T}](\num{k}, \gn{!R_{\Th{T}}})$.
+\olref[req][min]{lem:less-nsucc}
+મુજબ
+$\Th{Q} \Proves \lforall[z][(z < \num{n} \lif \lnot \ORefut[\Th{T}](z,
+  \gn{!R_{\Th{T}}}))]$.
+આથી
+\[
+\Th{Q} \Proves \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land \lforall[z][(z
+    < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+\]
+પણ આ તો
+$\ORProv[\Th{T}](\gn{!R_{\Th{T}}})$
+જ છે. \olref{RT} મુજબ
+$\Th{Q}
+\Proves \lnot !R_{\Th{T}}$.
+$\Th{T}$ એ $\Th{Q}$નું
+વિસ્તરણ હોવાથી
+$\Th{T}
+\Proves \lnot !R_{\Th{T}}$
+પણ. પરંતુ
+$\Th{T} \Proves !R_{\Th{T}}$
+એવી ધારણા કરી હતી;
+તેથી $\Th{T}$ અસુસંગત
+બને, જે પ્રમેયની
+ધારણાથી વિરુદ્ધ છે.
+
+હવે બતાવીએ કે
+$\Th{T} \Proves/ \lnot !R_{\Th{T}}$.
+ફરી માનો કે તે
+સાબિત કરે અને
+~$\lnot !R_{\Th{T}}$ના
+!!a{derivation}ની ગોડેલ
+સંખ્યા~$n$ હોય. ત્યારે
+$\Refut[\Th{T}](n, \Gn{!R_{\Th{T}}})$
+સાચો છે; અને
+$\ORefut[\Th{T}]$ એ
+$\Th{Q}$માં
+$\Refut[\Th{T}]$નું
+નિરૂપણ કરે છે, તેથી
+$\Th{Q} \Proves
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$.
+અહીં પણ $\Th{T}$
+અસુસંગત બનશે એવું
+બતાવીશું, કારણ કે તે
+~$!R_{\Th{T}}$ને પણ
+!!{derive} કરશે. કારણ કે
+\begin{align*}
+\Th{Q} & \Proves !R_{\Th{T}} \liff \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}),
+\intertext{અને $\Th{T}$ એ~$\Th{Q}$નું વિસ્તરણ હોવાથી, આ બતાવવું પૂરતું છે કે}
+\Th{Q} & \Proves \lnot \ORProv[\Th{T}](\gn{!R_{\Th{T}}}).
+\end{align*}
+!!{sentence} $\lnot
+\ORProv[\Th{T}](\gn{!R_{\Th{T}}})$,
+એટલે
+\begin{align*}
+  \lnot & \lexists[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \land
+    \lforall[z][(z < x \lif \lnot \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])],
+  \intertext{તર્કની દૃષ્ટિએ આને સમકક્ષ છે:}
+  & \lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+    \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\end{align*}
+~$\Th{Q}$ જે હકીકતો
+!!{derive} કરે છે તે
+વાપરીને અનૌપચારિક
+તાર્કિક દલીલ કરીએ.
+$x$ ગમે તે હોય અને
+$\OPrf[\Th{T}](x,
+\gn{!R_{\Th{T}}})$ માનો.
+આપણે પહેલેથી જાણીએ
+છીએ કે
+$\Th{T} \Proves/ !R_{\Th{T}}$;
+તેથી દરેક $k$ માટે
+$\Th{Q} \Proves \lnot \OPrf[\Th{T}](\num{k}, \gn{!R_{\Th{T}}})$.
+આથી દરેક $k$ માટે
+$\eq/[x][\num{k}]$ મળે
+છે. ખાસ કરીને
+(a) $\eq/[x][\num{n}]$.
+ઉપરાંત
+$\lnot(\eq[x][\num{0}]
+\lor \eq[x][\num{1}] \lor \dots \lor \eq[x][\num{n-1}])$
+મળે છે; તેથી
+\olref[req][min]{lem:less-nsucc}
+મુજબ (b)
+$\lnot(x < \num{n})$.
+\olref[req][min]{lem:trichotomy}
+મુજબ $\num{n} < x$.
+અને
+$\Th{Q} \Proves
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$
+હોવાથી
+$\num{n} < x \land
+\ORefut[\Th{T}](\num{n}, \gn{!R_{\Th{T}}})$,
+અને તેથી
+$\lexists[z][(z < x
+\land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))]$
+મળે છે. $x$ ગમે તે
+હોવાથી માંગેલું વિધાન
+મળે છે:
+\[
+\lforall[x][(\OPrf[\Th{T}](x,\gn{!R_{\Th{T}}}) \lif
+  \lexists[z][(z < x \land \ORefut[\Th{T}](z,\gn{!R_{\Th{T}}}))])].
+\]
+\end{proof}
+
+\begin{prob}
+પ્રાકૃતિક સંખ્યાઓના બે
+ગણો $A$ અને $B$ને
+\emph{સંગણનીય રીતે
+અવિભાજ્ય} ત્યારે કહીએ
+જ્યારે એવો કોઈ
+!!{decidable} ગણ~$X$
+ન હોય કે
+$A \subseteq X$ અને
+$B \subseteq \Complement{X}$
+(અહીં $\Complement{X}$
+એ~$X$નો પૂરક ગણ
+$\Nat \setminus X$ છે).
+$\Th{T}$ એ~$\Th{Q}$નું
+સુસંગત,
+!!{axiomatizable} વિસ્તરણ
+હોય. માનો કે $A$ એ
+~$\Th{T}$માં સાબિત
+થતાં !!{sentence}ની
+ગોડેલ સંખ્યાઓનો ગણ છે,
+અને $B$ એ~$\Th{T}$માં
+નકારી શકાય એવાં
+વાક્યોની ગોડેલ
+સંખ્યાઓનો ગણ છે.
+$A$ અને~$B$ સંગણનીય
+રીતે અવિભાજ્ય છે એમ
+સાબિત કરો.
+\end{prob}
+
+\end{document}

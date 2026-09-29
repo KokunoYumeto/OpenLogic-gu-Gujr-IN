@@ -1,0 +1,428 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-G2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tgi}
+
+\olsection{\Log{G2i}માંથી \Log{N2i}માં રૂપાંતર}
+
+\Log{G2i}ના સિક્વન્ટોના
+પૂર્વાંગો !!{formula}sનાં
+બહુગણો~$\Gamma$ છે,
+જ્યારે~\Log{N2i}ના
+સિક્વન્ટોના પૂર્વાંગો
+એવાં ચિહ્નિત સૂત્રોના
+ગણો~$\Gamma'$ છે
+જેમાં દરેક ચિહ્ન માત્ર
+એક વાર આવે છે.
+ચિહ્નિત !!{formula}sનો
+ગણ~$\Gamma'$,
+બહુગણ~$\Gamma$ને
+\emph{અનુરૂપ} છે એમ
+ત્યારે કહીએ જ્યારે
+દરેક !!{formula}~$!A$
+માટે~$\Gamma'$માંના
+$x : !A$ સ્વરૂપનાં
+!!{element}sની સંખ્યા,
+$\Gamma$માં~$!A$ની
+બહુલતા (એટલે~$!A$ની
+નકલોની સંખ્યા)
+કરતાં વધુ ન હોય.
+
+\begin{prop}\ollabel{prop:G2i-to-N2i}
+જો $\Log{G2i} + \Cut \Proves \Gamma \Sequent \Delta$,
+તો~$\Log{N2i}
+\Proves \Gamma' \Sequent !C$,
+જ્યાં~$\Delta$ ખાલી
+હોય ત્યારે
+$!C \ident \lfalse$
+અને નહિતર
+$\Delta = \{!A\}$ હોય,
+તથા~$\Gamma'$ એ~$\Gamma$ને
+અનુરૂપ હોય.
+\end{prop}
+
+\begin{proof}
+  બતાવીએ કે જો~$\pi$
+  એ~\Log{G2i}+\Cutમાં
+  $\Gamma \Sequent \Delta$ની
+  !!a{proof} હોય,
+  તો~$\Gamma$ને અનુરૂપ
+  એવો~$\Gamma'$ અને
+  \Log{N2i}માં
+  $\Gamma' \Sequent !C$ની
+  !!a{proof}~$\delta$
+  છે.
+  \sourcecorrection{OLMD-240}{મૂળ સાબિતીના આરંભમાં અપરિભાષિત G2ci તંત્ર લખાયું છે; પ્રતિજ્ઞાપનનું તંત્ર G2i સાથે Cut છે.}
+  આ માટે
+  $n = \pheight{\pi}$
+  પર આગમન કરીએ.
+
+  જો~$n = 0$, તો~$\pi$
+  સ્વયંસિદ્ધ છે.
+  તે~$\lfalse \Sequent
+  \quad$ સ્વયંસિદ્ધ હોય,
+  તો~$\delta$ એ
+  $x:\lfalse \Sequent \lfalse$
+  સ્વયંસિદ્ધ છે,
+  અર્થાત્
+  $\Gamma' = \{x:\lfalse\}$
+  અને~$!C \ident \lfalse$.
+  જો~$\pi$ એ
+  $!A \Sequent !A$
+  સ્વરૂપનું સ્વયંસિદ્ધ
+  હોય, તો~$\delta$
+  એ~$x: !A \Sequent !A$ છે.
+  
+  જો~$n>0$, તો~$\pi$નો
+  અંત નિયમ~$R$માં થાય છે.
+  આગમન-પરિકલ્પનાથી
+  \Log{N2i}માં એ
+  નિયમનાં આધારવિધાનોને
+  અનુરૂપ સિક્વન્ટોની
+  !!{proof}s મળે છે.
+  \sourcecorrection{OLMD-241}{મૂળના આગમન-વાક્યમાં N2c લખાયું છે; આ દાવો અને આખી સાબિતી N2i માટે છે.}
+  જરૂરી હોય તો ફરી
+  ચિહ્નિત કરીને ધારી
+  શકીએ કે એ સાબિતીઓનાં
+  બધાં મુક્તિ-ચિહ્નો
+  જુદાં છે, અને
+  કોઈ ચિહ્ન~$x$
+  મુક્ત થતું હોય
+  તો તેને મુક્ત કરતા
+  અનુમાનની ઉપર જ
+  આવે છે.
+  હવે એ !!{proof}sને
+  જોડીને યોગ્ય
+  $\Gamma' \Sequent !C$ની
+  સાબિતી કેવી રીતે
+  મળે તે બતાવીએ.
+  $R$ પ્રમાણે કિસ્સા
+  જુદા પાડીએ.
+
+  \begin{enumerate}
+    \item જો~$R$ એ
+    \RightR{\Weakening}
+    હોય, તો~$\pi$નો
+    અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter !A$
+    \DisplayProof
+    \]
+    $\pi_1$ પર
+    આગમન-પરિકલ્પના
+    લાગુ કરતાં
+    $\Gamma' \Sequent \lfalse$ની
+    !!a{proof} મળે છે.
+    $\FalseInt$ લાગુ કરી
+    $\Gamma' \Sequent !A$ની
+    !!a{proof} મળે છે.
+    \item જો~$R$ એ
+    \LeftR{\Weakening}
+    હોય, તો~$\pi$નો
+    અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    \sourcecorrection{OLMD-242}{મૂળના ડાબા શિથિલીકરણના વૃક્ષમાં નિયમ-લેબલ ભૂલથી જમણું શિથિલીકરણ છે; પૂર્વાંગમાં સૂત્ર ઉમેરાતું હોવાથી ડાબું શિથિલીકરણ લખ્યું છે.}
+    $\pi_1$ પર
+    આગમન-પરિકલ્પના
+    લગાવતાં
+    $\Gamma' \Sequent !C$ની
+    !!a{proof} મળે છે;
+    તેને~$\delta$ લઈએ.
+    નોંધો કે~$\Gamma'$
+    એ~$\Gamma$ને અનુરૂપ
+    હોય તો~$!A,
+    \Gamma$ને પણ
+    અનુરૂપ છે.
+    કારણ કે~$\Gamma'$માં
+    $x : !A$ની સંખ્યા
+    $\Gamma$માં~$!A$ની
+    નકલોની સંખ્યાથી
+    વધુ નથી, તેથી
+    $\Gamma \cup \{!A\}$માં
+    $!A$ની નકલોની
+    સંખ્યાથી પણ વધુ નથી.
+    \item જો~$R$ એ
+    \LeftR{\Contraction}
+    હોય, તો~$\pi$નો
+    અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, !A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Contraction}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    $\pi_1$ પર
+    આગમન-પરિકલ્પના
+    લગાવતાં
+    $\Pi, \Gamma' \Sequent !C$ની
+    !!a{proof} મળે છે,
+    જ્યાં~$\Pi \subseteq \{x : !A,
+    y:!A\}$.
+    જો~$\Pi = \{x : !A, y:!A\}$,
+    તો મળેલી~$\delta$માંના
+    ચિહ્નિત
+    !!{formula}s~$y:!A$
+    ને~$x:!A$થી બદલો.
+    $\delta$ના અંતિમ સિક્વન્ટના
+    સંદર્ભમાં~$x$
+    આવતો હોવાથી
+    $\delta$માં કોઈ
+    અનુમાન~$x:!B$
+    સ્વરૂપનું
+    !!a{formula} મુક્ત
+    કરતું નથી એમ
+    ધારી શકીએ;
+    એટલે~$\delta$ના
+    કોઈ સિક્વન્ટના
+    ડાબે આવેલું~$x:!B$
+    સક્રિય નથી.
+    \sourcecorrection{OLMD-243}{મૂળમાં ચિહ્નિત N2 સૂત્રોનું નામબદલણ G2i ઉપસાબિતી $\pi_1$માં કરવાનું કહેવાયું છે; આગમનથી મળેલી N2 સાબિતી $\delta$માં તે કરવું જોઈએ.}
+    તેથી પરિણામ
+    \Log{N2i}માં
+    હજી પણ !!a{proof} છે.
+    \item જો~$R$ એ
+    $\RightR{\lif}$ હોય,
+    તો~$\pi$નો અંત
+    આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter !A \lif !B$
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $x:
+    !A, \Gamma' \Sequent !B$
+    અથવા~$\Gamma' \Sequent !B$ની
+    !!a{proof}~$\delta_1$
+    છે, જ્યાં~$\Gamma'$
+    એ~$\Gamma$ને
+    અનુરૂપ છે.
+    $\delta_1$ પછી
+    \Intro{\lif}
+    લગાવી મળતી
+    સાબિતીને~$\delta$
+    લઈ શકાય.
+    \sourcecorrection{OLMD-244}{મૂળમાં $\delta_1$ એ $\delta$ પછી અનુસરણ-પરિચય લગાવી મળે છે એમ ઉલટું લખાયું છે; આગમનથી $\delta_1$ મળે છે અને તેની નીચે નિયમ લગાવી $\delta$ બને છે.}
+    \item જો~$R$ એ
+    \LeftR{\lif} હોય,
+    તો~$\pi$નો
+    અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!B, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $\Gamma_1' \Sequent !A$ની
+    !!{proof}~$\delta_1$
+    અને~$x: !B, \Gamma_2' \Sequent !C$
+    અથવા~$\Gamma_2' \Sequent !C$ની
+    સાબિતી~$\delta_2$
+    મળે છે.
+    $\delta_2$ બીજા
+    સ્વરૂપની હોય,
+    તો~$\delta_2$ને જ~$\delta$
+    લઈ શકાય.
+    નહિતર~$\delta_1$માંનાં
+    બધા સૂત્રો તથા
+    મુક્તિ-ચિહ્નો ફરી
+    ચિહ્નિત કરીને
+    $\delta_1$ અને~$\delta_2$
+    વચ્ચે કોઈ ચિહ્ન
+    સામાન્ય ન રહે
+    તે સુનિશ્ચિત કરીએ.
+    \sourcecorrection{OLMD-245}{મૂળમાં આ N2 ચિહ્નબદલી G2i ઉપસાબિતી $\pi_1$માં કરવાનું કહેવાયું છે; ચિહ્નિત સૂત્રો અને મુક્તિ-ચિહ્નો ધરાવતી અનુવાદિત સાબિતી $\delta_1$ છે.}
+    ત્યારે~$\Gamma_1' \cup
+    \Gamma_2'$ એ
+    $\Gamma_1 \cup \Gamma_2$
+    ને અનુરૂપ છે.
+    $x:!B$ એ~$\delta_2$ના
+    અંતિમ સિક્વન્ટમાં
+    હોવાથી~$\delta_2$માં
+    $x$ મુક્તિ-ચિહ્નવાળા
+    કોઈ અનુમાનમાં
+    $x:!B$ સક્રિય
+    હોઈ શકે નહીં.
+    $\delta_2$માંનું
+    દરેક સ્વયંસિદ્ધ
+    $x:!B \Sequent !B$
+    નીચેની
+    !!{proof}~$\delta_3$થી
+    બદલો:
+    \[
+    \Axiom$x: !A \lif !B \fCenter !A \lif !B$
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \Deduce$\Gamma_1' \fCenter !A$
+    \RightLabel{\Elim{\lif}}
+    \BinaryInf$x: !A \lif !B, \Gamma_1' \fCenter !B$
+    \DisplayProof
+    \]
+    \sourcecorrection{OLMD-246}{મૂળના $\delta_3$ અનુસરણ-નિવારણ વૃક્ષના નિષ્કર્ષમાં $\Gamma_1'$ છૂટે છે; બીજું આધારવિધાન એ સંદર્ભ ધરાવે છે અને નિયમ તેને નિષ્કર્ષમાં રાખે છે.}
+    અને~$\delta_2$માં
+    $x:!B$ના દરેક
+    સ્થાનને
+    $x:!A \lif !B$થી
+    બદલો.
+    પરિણામ
+    $\Subst{\delta_2}{\delta_3}{x:!B}$
+    એ
+    $x:!A \lif !B, \Gamma_1', \Gamma_2' \Sequent !C$ની
+    !!a{proof} છે.
+    \item જો~$R$ એ
+    \RightR{\land} હોય,
+    તો~$\pi$નો
+    અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma_2 \fCenter !B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A \land !B$
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $\Gamma_1' \Sequent !A$ની
+    સાબિતી~$\delta_1$
+    અને~$\Gamma_2' \Sequent !B$ની
+    સાબિતી~$\delta_2$
+    મળે છે.
+    $\delta_2$માંનાં
+    બધા સૂત્રો તથા
+    મુક્તિ-ચિહ્નો ફરી
+    ચિહ્નિત કરીને
+    $\delta_1$ અને~$\delta_2$
+    વચ્ચે કોઈ ચિહ્ન
+    સામાન્ય ન રહે
+    તે સુનિશ્ચિત કરીએ.
+    \sourcecorrection{OLMD-247}{મૂળમાં બીજા આગમન-નિષ્કર્ષનું સૂત્ર $!A$ લખાયું છે, પણ બીજા આધારવિધાનમાં $!B$ છે; વળી N2 ચિહ્નબદલી $\pi_2$ને બદલે $\delta_2$માં થવી જોઈએ.}
+    ત્યારે~$\Gamma_1' \cup \Gamma_2'$
+    એ~$\Gamma_1 \cup
+    \Gamma_2$ને અનુરૂપ છે.
+    $\delta_1$ તથા~$\delta_2$ના
+    અંતિમ સિક્વન્ટો પર
+    $\Intro{\land}$
+    લગાવી
+    !!a{proof}~$\delta$
+    મળે છે.
+    \item જો~$R$ એ
+    $\LeftR{\land}$ હોય,
+    તો, દાખલા તરીકે,
+    $\pi$નો અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $x:
+    !A, \Gamma' \Sequent !C$
+    અથવા~$\Gamma' \Sequent !C$ની
+    !!a{proof}~$\delta_1$
+    છે, જ્યાં~$\Gamma'$
+    એ~$\Gamma$ને
+    અનુરૂપ છે.
+    બીજા કિસ્સામાં
+    $\delta$ને~$\delta_1$
+    લઈ શકાય.
+    \sourcecorrection{OLMD-248}{મૂળના બીજા કિસ્સામાં $\delta_1$ને $\delta$ કહેવાનું વાક્ય દિશા ઉલટી બતાવે છે; આગમનથી મળેલી $\delta_1$ જ માંગેલી $\delta$ તરીકે લેવાય છે.}
+    પહેલા કિસ્સામાં
+    $x:!A$ અંતિમ
+    સિક્વન્ટમાં હોવાથી
+    $\delta_1$માં~$x$
+    મુક્તિ-ચિહ્નવાળા
+    કોઈ અનુમાનમાં
+    $x:!A$ સક્રિય
+    નથી. દરેક
+    સ્વયંસિદ્ધ
+    $x:!A
+    \Sequent !A$ને
+    આ~!!{proof}~$\delta_2$થી
+    બદલો:
+    \[
+    \Axiom$x: !A \land !B \fCenter !A \land !B$
+    \RightLabel{\Elim{\land}}
+    \UnaryInf$x: !A \land !B \fCenter !A$
+    \DisplayProof
+    \]
+    અને~$x:!A$ના
+    દરેક સ્થાનને
+    $x:!A \land !B$થી
+    બદલો; એટલે
+    $\Subst{\delta_1}{\delta_2}{x:!A}$
+    લો. આ
+    $x:!A
+    \land !B, \Gamma' \Sequent !C$ની
+    !!a{proof} છે.
+    \item જો~$R$ એ
+    \Cut હોય, તો~$\pi$નો
+    અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!A, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $\Gamma_1' \Sequent !A$ની
+    સાબિતી~$\delta_1$
+    અને
+    $x:!A, \Gamma_2' \Sequent !C$
+    અથવા~$\Gamma_2' \Sequent !C$ની
+    સાબિતી~$\delta_2$
+    મળે છે.
+    બીજા કિસ્સામાં
+    $\delta$ને~$\delta_2$
+    લો. નહિતર
+    $\delta_2$માંનાં
+    દરેક સ્વયંસિદ્ધ
+    $x:!A \Sequent !A$
+    ને~$\delta_1$થી
+    બદલો. આમ
+    $\Gamma_1',
+    \Gamma_2' \Sequent !C$ની
+    !!{proof}
+    $\Subst{\delta_2}{\delta_1}{x:!A}$
+    એ~$\delta$ બને છે.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

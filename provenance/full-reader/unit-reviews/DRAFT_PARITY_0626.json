@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0626",
+  "checked_at_utc": "2026-09-28T15:29:28.217125+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0626 Emmy Noether biography and ascending and descending chain conditions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0626",
+    "source_path": "content/history/biographies/emmy-noether.tex",
+    "source_sha256": "db6fbf6574c82c930646e6faaa5e486fb360c04aee3da1419e418a4a0616162d",
+    "draft_path": "private-state\\work\\batch044_draft\\emmy-noether.tex",
+    "draft_sha256": "a2ef25d97391d0b284b400687ea1ec965e5361ef9a0325550c58640a1138517c",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 3,
+    "target_math_spans_after_corrections": 3,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 498,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\orders.tex",
+        "sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c",
+        "terms": [
+          "આંશિક ક્રમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-addition.tex",
+        "sha256": "9e73541a68e424fc5af4eafe872358f522b4c537ca21d4f31183192e6c5cbacf",
+        "terms": [
+          "સુઆધારિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\induction.tex",
+        "sha256": "ed6204f8d2514b5150042e010bb2ddc0a1b2668f1547c21f76bd42a1046ec226",
+        "terms": [
+          "ગાણિતિક અનુમાન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Stuff You Missed in History Class",
+        "count": 1,
+        "reason": "Exact English proper title of the cited podcast series."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "noether-emmy",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

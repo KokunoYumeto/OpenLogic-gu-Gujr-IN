@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0371",
+  "checked_at_utc": "2026-09-27T07:00:19.049346+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0371 parallel-beta-eta-reduction; state-only draft with proof dependency",
+  "report": {
+    "unit_id": "OLP-0371",
+    "source_path": "content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex",
+    "source_sha256": "88130e362effc83767b2fae97dcab4b6ae13f657a7d7a43da2df13883c9d54f2",
+    "draft_path": "private-state\\work\\batch037_draft\\parallel-beta-eta-reduction.tex",
+    "draft_sha256": "8aca4e853a4995e1f9ddf6bd4b11146b620d5b38abb9fd2eb81e48b8590f1a5b",
+    "aligned_blocks": 20,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 56,
+    "target_math_spans_after_corrections": 65,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLLAM-039",
+      "OLLAM-040",
+      "OLLAM-041",
+      "OLLAM-042"
+    ],
+    "source_detector_ascii_tokens": 134,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7,
+      11,
+      14,
+      17
+    ],
+    "open_proof_gap": "The source's overlapping complete-development clauses and copied abstraction proof require additional justification; earlier parallel-beta substitution composition is also open.",
+    "open_proof_dependency": null
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_source_proof_gap_open_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

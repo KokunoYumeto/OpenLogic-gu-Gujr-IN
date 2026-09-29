@@ -1,0 +1,90 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0554",
+  "checked_at_utc": "2026-09-28T01:08:15.756460+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0554 Replacement schema, term images, and set-coded function distinction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0554",
+    "source_path": "content/set-theory/ordinals/replacement.tex",
+    "source_sha256": "c081b7ac20726b738ce2fb496ad29e836a72883160c847b828582e4de0218523",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-replacement.tex",
+    "draft_sha256": "26a05b92c09a1ba8edfcde66d51a841858744b476bae38a81d1999d3ac26c1ef",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 37,
+    "target_math_spans_after_corrections": 37,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 343,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-vn.tex",
+        "sha256": "d634e926539b703109c4034ef9abc68986efe47f9aedc4a2bffa993b704f1d25",
+        "terms": [
+          "ક્રમપ્રકારો",
+          "ક્રમવાચક સંખ્યા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-iso.tex",
+        "sha256": "4f6a241b7fd72994f3a93087e2ed6525dbbcf74f02e8576330be1c61a41b657f",
+        "terms": [
+          "ક્રમ-એકરૂપતા",
+          "સુક્રમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\separation.tex",
+        "sha256": "b69123900add155945875e833da784adb7a6719fce6464f0db893bb2ddd0c1a8",
+        "terms": [
+          "પૃથક્કરણ",
+          "પ્રરૂપ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\function-basics.tex",
+        "sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+        "terms": [
+          "વિધેય",
+          "વિસ્તાર"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\functions-relations.tex",
+        "sha256": "b348c926961347405fb3589274e0ad70c027d84e9c92f745e378734199b0c909",
+        "terms": [
+          "પ્રતિબિંબ",
+          "આલેખ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\syntax-and-semantics\\substitution.tex",
+        "sha256": "4aeaa92097737f7730b525310c5fbb4fa1586eafbe5537f95b08718e0298d01a",
+        "terms": [
+          "પ્રતિસ્થાપન",
+          "પદ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The axiom requires existence and uniqueness of y only for each x in A, not over all x.",
+      "The equivalent formula's side condition that B does not occur in phi is translated explicitly.",
+      "The source's word-order typo about previously introduced axioms is silently smoothed; there is no mathematical change requiring a correction note.",
+      "પ્રતિસ્થાપન is already the edition's lexical form for syntactic substitution. In this named set-theoretic scheme the formal statement and chapter context distinguish it; the set-theoretic usage remains provisional rather than falsely claimed as direct native attestation.",
+      "The final footnote retains the precise bound double union of the graph set f; no class function is silently treated as a set-coded function.",
+      "No extra premise such as Foundation or Choice is imported into Zminus."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

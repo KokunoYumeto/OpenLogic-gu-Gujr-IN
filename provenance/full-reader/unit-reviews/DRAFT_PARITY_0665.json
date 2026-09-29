@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0665",
+  "checked_at_utc": "2026-09-28T19:36:14.532421+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0665 Regular natural-deduction proofs and quantifier substitution; state-only draft",
+  "report": {
+    "unit_id": "OLP-0665",
+    "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+    "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+    "draft_path": "private-state\\work\\batch044_draft\\quantifiers.tex",
+    "draft_sha256": "58c8bdd72dffb046ccf133e26059148124c6bedacbd7d9a9122876c7e03397f3",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 104,
+    "target_math_spans_after_corrections": 104,
+    "glossary_tokens": 17,
+    "source_correction_notes": [
+      "OLMD-228",
+      "OLMD-229",
+      "OLMD-230"
+    ],
+    "source_detector_ascii_tokens": 577,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\lexists[x][!A(x,c)]$ and of $!C$ from the open",
+        "$\\lexists[x][!A(x,t)]$ and of $\\Subst{!C}{t}{c}$ from the open"
+      ],
+      [
+        "\\RightLabel{$\\Subst{\\delta'}{t}{c}$}\n    \\DeduceC{$!A(a,t)$}\n    \\RightLabel{\\Intro{\\lforall}}\n    \\UnaryInfC{$\\lforall[x][!A(x,t)]$}\n    \\DisplayProof\n    \\]\n    is correct: $\\Subst{!A(x,t)}{a}{x}",
+        "\\RightLabel{$\\Subst{\\delta_1'}{t}{c}$}\n    \\DeduceC{$\\lexists[x][!A(x,t)]$}\n    \\AxiomC{$\\Discharge{!A(a,t)}{x}$}\n    \\RightLabel{$\\Subst{\\delta_2'}{t}{c}$}\n    \\DeduceC{$\\Subst{!C}{t}{c}$}\n    \\DischargeRule{\\Elim{\\lexists}}{x}\n    \\BinaryInfC{$\\Subst{!C}{t}{c}$}\n    \\DisplayProof\n    \\]\n    is correct: $\\Subst{!A(x,t)}{a}{x}"
+      ],
+      [
+        "the conclusion~$!C$ nor any open assumption",
+        "the conclusion~$\\Subst{!C}{t}{c}$ nor any open assumption"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\introduction\\substitution.tex",
+        "sha256": "7c40fdf6dfd413a2d6aa6897df890f5d9c62e2a48aff11ad7602dff21ec89091",
+        "terms": [
+          "પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "ધારણાઓ",
+          "આધારવાક્યો"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\Olref{lem:subst-regular}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0524",
+  "checked_at_utc": "2026-09-27T22:39:21.702211+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0524 sphere models; state-only draft",
+  "report": {
+    "unit_id": "OLP-0524",
+    "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+    "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+    "draft_path": "private-state\\work\\batch043_draft\\sphere-models.tex",
+    "draft_sha256": "3328ffbe8ed50da2b8ecfa6e6e9eaeb5ec079124eec1bc217a6990e07e4d633a",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 98,
+    "target_math_spans_after_corrections": 98,
+    "glossary_tokens": 1,
+    "source_correction_notes": [
+      "OLMD-109"
+    ],
+    "source_detector_ascii_tokens": 430,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "diagram_sha256": "66051dc4d46acafdf8b928a22fd462413bf74d33d41200dc7f165d567103ac6c",
+    "diagram_byte_identical": true,
+    "source_con_min_sph_identifier_preserved": true,
+    "structural_scan_exclusions": [
+      {
+        "source": "unchanged TikZ figure code",
+        "finding_contexts": 10,
+        "reason": "TikZ keys and node names, not untranslated prose; diagram bytes exactly match frozen source"
+      }
+    ]
+  },
+  "status": "draft_linguistic_semantic_formula_and_diagram_review_passed_source_repair_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

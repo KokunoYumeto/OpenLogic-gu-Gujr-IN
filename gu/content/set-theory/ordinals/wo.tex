@@ -1,0 +1,77 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{wo}
+\olsection{સુક્રમો}
+
+મૂળભૂત ખ્યાલ આ છે:
+
+\begin{defn}
+સંબંધ $<$ એ $A$ને \emph{સુક્રમિત} કરે જો અને ફક્ત જો નીચેની
+બે શરતો પૂરી થાય:
+\begin{enumerate}
+	\item $<$ તુલનાયુક્ત છે, એટલે કે બધા $a, b \in A$ માટે
+	કાં $a < b$ અથવા $a = b$ અથવા $b < a$;
+	\item $A$ના દરેક અરિક્ત ઉપગણને $<$ મુજબ ન્યૂનતમ !!{element}
+	હોય, એટલે કે જો $\emptyset \neq X \subseteq A$ તો
+	$(\exists m \in
+	X)(\forall z \in X)z \nless m$
+\end{enumerate}
+\end{defn}
+
+હમણાં વિચારેલા ત્રણેય દાખલા ખરેખર સુક્રમિત કરનારા સંબંધો છે
+તે સહેલાઈથી જોઈ શકાય છે.
+
+\begin{prob}
+\Olref[sth][ordinals][idea]{sec}માં પ્રાકૃતિક સંખ્યાઓ પરના
+ત્રણ ક્રમોના દાખલા આપ્યા હતા. દરેક સુક્રમ છે તે તપાસો.
+\end{prob}
+
+સુક્રમ વિશેનાં કેટલાંક પ્રાથમિક પણ અત્યંત મહત્ત્વનાં અવલોકનો આ છે.
+
+\begin{prop}\ollabel{wo:strictorder}
+જો $<$ એ $A$ને સુક્રમિત કરતો હોય, તો $A$ના દરેક અરિક્ત
+ઉપગણને અનન્ય $<$ મુજબ લઘુતમ સભ્ય હોય, અને $<$ અસ્વવાચક,
+અસંમિત તથા પરંપરિત હોય.
+\end{prop}
+
+\begin{proof}
+જો $X$ એ $A$નો અરિક્ત ઉપગણ હોય, તો તેને $<$ મુજબ
+ન્યૂનતમ !!{element} $m$ હોય, એટલે કે
+$(\forall z \in X)z \nless m$.
+$<$ તુલનાયુક્ત હોવાથી $(\forall z \in X)m \leq z$.
+તેથી $m$ એ $X$નો $<$ મુજબ લઘુતમ !!{element} છે.
+
+અસ્વવાચકતા માટે કોઈ $a \in A$ લો; $\{a\}$નો $<$ મુજબ
+લઘુતમ !!{element} $a$ છે, તેથી $a \nless a$.
+પરંપરિતતા માટે, જો $a < b < c$, તો
+$\{a, b, c\}$ને $<$ મુજબ લઘુતમ !!{element} હોવાથી
+$a < c$. અસંમિતતા અસ્વવાચકતા અને પરંપરિતતાથી
+મળે છે.
+\end{proof}
+
+\begin{prop}\ollabel{propwoinduction}
+જો $<$ એ $A$ને સુક્રમિત કરતો હોય, તો કોઈ પણ સૂત્ર
+$\phi(x)$ માટે:
+\[
+	\text{જો }(\forall a \in A)((\forall b < a)\phi(b) \lif
+		\phi(a))\text{, તો }(\forall a \in A)\phi(a).
+\]
+\end{prop}
+
+\begin{proof}
+આપણે પ્રતિવિધાન સાબિત કરીશું. ધારો કે $\lnot(\forall a \in
+A)\phi(a)$, એટલે કે $X = \Setabs{x \in A}{\lnot\phi(x)} \neq
+\emptyset$. ત્યારે $X$ને $<$ મુજબ ન્યૂનતમ !!{element} $a$
+હોય. તેથી $(\forall
+b < a)\phi(b)$, પરંતુ $\lnot \phi(a)$.
+\end{proof}\noindent આ છેલ્લા ગુણધર્મથી પ્રાકૃતિક સંખ્યાઓ પરના
+પ્રબળ ગાણિતિક અનુમાનનો સિદ્ધાંત યાદ આવવો જોઈએ, એટલે કે:
+જો $(\forall n \in \omega)((\forall m < n)\phi(m)
+\lif \phi(n))$ હોય, તો $(\forall n \in \omega)\phi(n)$.
+આ ગુણધર્મ સુક્રમને ખૂબ \emph{મજબૂત} ખ્યાલ બનાવે છે.\footnote{
+યાદ રાખો: સ્પષ્ટપણે વિરુદ્ધ ન કહ્યું હોય તો બધા સૂત્રોમાં
+પ્રાચલો હોઈ શકે છે.}
+
+\end{document}

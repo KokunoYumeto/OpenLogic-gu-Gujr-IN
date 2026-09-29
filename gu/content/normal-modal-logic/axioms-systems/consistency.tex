@@ -1,0 +1,62 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: consistency
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{con}
+
+\olsection{સુસંગતતા}
+
+સુસંગતતા એ !!{formula}sના ગણનો અગત્યનો ગુણધર્મ છે. જો !!{formula}sના કોઈ ગણમાંથી
+વિસંવાદ, જેમ કે~$\lfalse$, !!{derivable} હોય, તો તે ગણ અસુસંગત છે;
+નહિ તો સુસંગત છે. ગણ અસુસંગત હોય, તો તેનાં બધાં !!{formula}s કોઈ
+નિદર્શનના એક જગતમાં એકસાથે સત્ય હોઈ શકતાં નથી. પૂર્ણતાના પ્રમેય માટે
+અમે વિપરીત વિધાન સાબિત કરીએ છીએ: દરેક સુસંગત ગણ કોઈ નિદર્શનના એક
+જગતમાં સત્ય છે, ખાસ કરીને ``કૅનોનિકલ નિદર્શન''માં.
+
+\begin{defn}
+  ગણ $\Gamma$ એ તંત્ર~$\Sigma$ને અનુલક્ષીને \emph{સુસંગત} છે, અથવા
+  આપણે કહીએ તેમ, $\Sigma$-સુસંગત છે, જો અને માત્ર જો $\Gamma
+  \Proves/[\Sigma] \lfalse$.
+\end{defn}
+
+દાખલા તરીકે, ગણ $\{ \Box(p \lif q), \Box p, \lnot\Box q \}$
+વિધાનાત્મક તર્કને અનુલક્ષીને સુસંગત છે, પરંતુ \Log{K}-સુસંગત નથી.
+એ જ રીતે, ગણ $\{ \Diamond p, \Box\Diamond
+p \lif q, \lnot q \}$ એ \Log{K5}-સુસંગત નથી.
+
+\begin{prop}\ollabel{prop:consistencyfacts}
+  માનો કે $\Gamma$ એ !!{formula}sનો ગણ છે. ત્યારે:
+  \begin{enumerate}
+  \item $\Gamma$ એ $\Sigma$-સુસંગત છે જો અને માત્ર જો એવું કોઈ
+    !!{formula}~$!A$ હોય કે $\Gamma \Proves/[\Sigma]
+    !A$.
+  \item \ollabel{prop:consistencyfacts-b}%
+    $\Gamma \Proves[\Sigma] !A$ જો અને માત્ર જો $\Gamma \cup \{
+    \lnot!A \}$ એ $\Sigma$-સુસંગત ન હોય.
+  \item \ollabel{prop:consistencyfacts-c}%
+    જો $\Gamma$ એ $\Sigma$-સુસંગત હોય, તો કોઈપણ !!{formula}
+    $!A$ માટે કાં $\Gamma \cup \{ !A \}$ એ $\Sigma$-સુસંગત છે,
+    કાં $\Gamma \cup \{ \lnot!A \}$ એ $\Sigma$-સુસંગત છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  આ હકીકતો પરંપરાગત વિધાનાત્મક તર્કથી સહેલાઈથી ફલિત થાય છે. આપણે
+  \olref{prop:consistencyfacts-c}ની દલીલ આપીએ. પ્રતિપક્ષી વિધાનથી
+  આગળ વધો અને માનો કે $\Gamma \cup \{ !A \}$ તથા
+  $\Gamma \cup \{ \lnot!A \}$માંથી એકેય $\Sigma$-સુસંગત નથી.
+  ત્યારે \olref{prop:consistencyfacts-b} મુજબ $\Gamma, !A \Proves[\Sigma]
+  \lfalse$ અને $\Gamma, \lnot !A \Proves[\Sigma] \lfalse$ બંને.
+  નિષ્પત્તિ પ્રમેયથી $\Gamma \Proves[\Sigma] !A \to \lfalse$ અને
+  $\Gamma \Proves[\Sigma] \lnot!A \lif \lfalse$. પરંતુ $(!A \lif
+  \lfalse) \lif ((\lnot!A \lif \lfalse) \lif \lfalse)$ પુનરુક્તિનો
+  દૃષ્ટાંત છે; તેથી
+  \olref[prp]{prop:derivabilityfacts}\olref[prp]{prop:derivabilityfacts-ruleT} મુજબ
+  $\Gamma \Proves[\Sigma] \lfalse$.
+\end{proof}
+
+\end{document}

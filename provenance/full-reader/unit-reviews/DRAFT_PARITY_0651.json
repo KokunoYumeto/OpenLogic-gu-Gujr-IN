@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0651",
+  "checked_at_utc": "2026-09-28T18:16:06.185976+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0651 Incomplete legacy lambda conversion and reduction introduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0651",
+    "source_path": "content/lambda-calculus/syntax/conversion.tex",
+    "source_sha256": "0179bc8cb297b394faaa6955ed852a1f0300ee3a9b254081ccfc3ef68844052e",
+    "draft_path": "private-state\\work\\batch044_draft\\conversion.tex",
+    "draft_sha256": "c1dd774dde1f636bb61b77ba6431e5db8da8736e7fb5c021262392261e507e2f",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 3,
+    "source_math_spans_correction_aware": 3,
+    "target_math_spans_after_corrections": 3,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-188"
+    ],
+    "source_detector_ascii_tokens": 55,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

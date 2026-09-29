@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0473",
+  "checked_at_utc": "2026-09-27T19:17:32.935443+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0473 K sequent derivations; state-only draft",
+  "report": {
+    "unit_id": "OLP-0473",
+    "source_path": "content/normal-modal-logic/sequent-calculus/proofs-in-K.tex",
+    "source_sha256": "62589ae78eea5962800114b6fdfffa1923072dfb10c85746d042c4d5dc7f4c30",
+    "draft_path": "private-state\\work\\batch040_draft\\sequent-proofs-in-K.tex",
+    "draft_sha256": "da8732f071682e3150caa1f24a1808d6e89fd279bb39d6a02bd952b40aa54842",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 48,
+    "target_math_spans_after_corrections": 48,
+    "glossary_tokens": 5,
+    "source_correction_notes": [
+      "OLMD-075"
+    ],
+    "source_detector_ascii_tokens": 25,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "two_trees_byte_exact_one_tree_visibly_repaired": true,
+    "four_exercise_formulas_preserved": true
+  },
+  "status": "draft_linguistic_math_and_formal_tree_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

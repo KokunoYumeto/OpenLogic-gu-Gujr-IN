@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0491",
+  "checked_at_utc": "2026-09-27T20:26:42.739616+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0491 intuitionistic logic part driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0491",
+    "source_path": "content/intuitionistic-logic/intuitionistic-logic.tex",
+    "source_sha256": "d4274226f1459dcd2a6029d4b8962f922c7ccaa0d3cb4ee090b2e442e40425c9",
+    "draft_path": "private-state\\work\\batch042_draft\\intuitionistic-logic.tex",
+    "draft_sha256": "5f6d655e218e14ec11cfddb7f38f66d5c8b3481e56e626457f3a39fd521789d5",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 3,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "four_active_imports_preserved": true,
+    "structural_scan_exclusions": [
+      {
+        "token": "int",
+        "count": 1,
+        "reason": "part identifier"
+      }
+    ]
+  },
+  "status": "draft_linguistic_and_import_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

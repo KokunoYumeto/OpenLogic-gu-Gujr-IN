@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0611",
+  "checked_at_utc": "2026-09-28T14:36:14.538334+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0611 adult learner guidance on practice, early starts and seeking help; state-only draft",
+  "report": {
+    "unit_id": "OLP-0611",
+    "source_path": "content/methods/proofs/cant-do-it.tex",
+    "source_sha256": "47c3b4332e0c28351984e78cba0008e54deb442704710bf7d4f2ffa34e4e6c5e",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-cant-do-it.tex",
+    "draft_sha256": "0687a4f31f50275cd6ea41156d27b42884496313ea52fa8b281f73d12fb040bc",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 464,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-reading-proofs.tex",
+        "sha256": "8c007ad27f590cf3bdf94902122c68bebb261d17abc8aea888dc59215bcc1eff",
+        "terms": [
+          "સાબિતીઓ",
+          "અભ્યાસ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\methods.tex",
+        "sha256": "100e4087c74e7f5be19ea5c63e733128e5b26889be7e960bc394ce4ea2fa6ebf",
+        "terms": [
+          "ગણિતના વિદ્યાર્થી",
+          "સાબિતીઓ કેવી રીતે લખવી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The source's reassuring second-person voice is preserved without dropping instructor, teaching assistant or classmates as distinct sources of help.",
+      "The four numbered tips remain: start early, talk to classmates without copying, ask instructors/TAs, and take a break then return.",
+      "The light aside about crying, the 2am-before-deadline warning, the role of practice, and the instruction to retry without looking at the solution remain present.",
+      "There are no formal math spans in this pedagogical section. Its encouragement is translated as content, not treated as a task workflow requirement."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,262 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{add}
+\olsection{ક્રમવાચક સંખ્યાઓનો સરવાળો}
+
+ધારો કે આપણે $\alpha$ અને $\beta$ ઉમેરવા માગીએ છીએ.
+$\alpha$ની એક નકલ પછી તરત $\beta$ની એક નકલ
+મૂકી શકીએ. (\emph{નકલો} લેવી પડે, કારણ કે
+\olref[ordinals][basic]{ordinalsaresubsets} મુજબ કાં તો
+$\alpha
+\subseteq \beta$ અથવા $\beta \subseteq \alpha$.)
+તેનો સહજ અર્થ એ છે કે પહેલાં $\alpha$-અનુક્રમના
+પગલાંમાંથી પસાર થઈએ, અને \emph{ત્યાર પછી}
+$\beta$-અનુક્રમમાંથી. મળતો અનુક્રમ સુક્રમિત હશે; તેથી
+\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+મુજબ તે એક (અનન્ય) ક્રમવાચક સંખ્યા સાથે ક્રમ-એકરૂપ
+છે. એ સંખ્યાને $\alpha$ અને $\beta$નો \emph{સરવાળો}
+ગણી શકાય.
+
+ક્રમવાચક સરવાળા પાછળનો સહજ વિચાર આ છે. તેની કડક
+વ્યાખ્યા આપવા પહેલાં ગણોની \emph{નકલો} લેવાનો વિચાર
+જોઈએ. કઈ વસ્તુ ક્યાંથી આવી તેનો હિસાબ રાખવા માટે
+$0$ અને $1$ જેવા મનસ્વી ચિહ્નો વાપરીએ છીએ:
+
+\begin{defn}\ollabel{defdissum}
+$A$ અને $B$નો \emph{વિચ્છિન્ન સરવાળો} એ
+$A \disjointsum B = (A\times
+\{0\}) \cup (B \times \{1\})$ છે.
+\end{defn}
+
+હવે ક્રમવાચક સંખ્યાઓની જોડીઓ પર એક ક્રમ વ્યાખ્યાયિત
+કરીએ:
+
+\begin{defn}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ
+$\alpha_1, \alpha_2, \beta_1, \beta_2$ માટે કહીએ કે:
+\begin{align*}
+	\tuple{\alpha_1, \alpha_2} \rlexless \tuple{\beta_1, \beta_2}\text{ iff }&
+	\text{either $\alpha_2 \in \beta_2$}\\
+	& \text{or both $\alpha_2 = \beta_2$ and $\alpha_1 \in \beta_1$}
+\end{align*}
+\end{defn}
+
+આ \emph{ઊલટો શબ્દકોશક્રમ} છે, કારણ કે પહેલાં બીજા
+ઘટકથી અને પછી પહેલા ઘટકથી ક્રમ નક્કી થાય છે. હવે
+યાદ કરો કે આપણે $\alpha \ordplus \beta$ને $\alpha$ની
+નકલ પછી $\beta$ની નકલ મૂકવાથી મળતો ક્રમપ્રકાર
+ગણવા માગતા હતા. એ માટે કહીએ:
+
+\begin{defn}\ollabel{defordplus}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha$, $\beta$ માટે
+તેમનો સરવાળો $\alpha \ordplus
+\beta = \ordtype{\alpha \disjointsum \beta, \rlexless}$ છે.
+\end{defn}
+\noindent
+ધ્યાન આપો કે અહીં સંકેતનો થોડો ઢીલો ઉપયોગ કર્યો છે;
+કડક રીતે ``$\rlexless$''ને બદલે
+``$\Setabs{\tuple{x,y}\in \alpha\disjointsum\beta}{x \rlexless y}$''
+લખવું જોઈએ. જોકે ટૂંકાણ માટે આગળ પણ આ રીતે જ
+સંકેત વાપરીશું.
+
+નીચેનું પરિણામ અને
+\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+મળીને ખાતરી આપે છે કે આપણી વ્યાખ્યા સુગઠિત છે:
+
+\begin{lem}\ollabel{ordsumlessiswo}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha$ અને $\beta$ માટે
+$\tuple{\alpha \disjointsum \beta, \rlexless}$ સુક્રમ છે.
+\end{lem}
+
+\begin{proof}
+$\alpha \disjointsum \beta$ પર $\rlexless$ સંલગ્ન
+છે તે સ્પષ્ટ છે. તે સુઆધારિત છે એમ બતાવવા અરિક્ત
+$X \subseteq \alpha
+\disjointsum \beta$ નક્કી કરો. $X$માંથી બીજા
+સ્થાનનો ઘટક શક્ય એટલો નાનો હોય એવી જોડીઓનો ઉપગણ
+$Y$ લો; એટલે કે
+$Y = \Setabs{\tuple{\gamma, i} \in X}{(\forall \tuple{\delta, j} \in X)i \leq j}$.
+હવે $Y$માંથી પહેલા સ્થાનનો ઘટક સૌથી નાનો હોય એવી
+જોડી પસંદ કરો.
+\end{proof}
+\noindent
+આમ ક્રમવાચક સરવાળાની સરસ સ્પષ્ટ વ્યાખ્યા મળી.
+હવે એક અપેક્ષિત તથ્ય (\olref[z][infinity-again]{defnomega}
+મુજબ $1 = \{0\}$ યાદ કરો):
+\begin{prop}
+કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$ માટે
+$\alpha \ordplus  1 = \ordsucc{\alpha}$.
+\end{prop}
+
+\begin{proof}
+$\ordsucc{\alpha} = \alpha \cup
+\{\alpha\}$થી $\alpha\disjointsum1 = (\alpha \times \{0\})
+\cup (\{0\} \times \{1\})$ સુધીની ક્રમ-એકરૂપતા
+$f$ લો, જ્યાં $\gamma \in \alpha$ માટે $f(\gamma) =
+\tuple{\gamma, 0}$ અને $f(\alpha) = \tuple{0,
+1}$.
+\sourcecorrection{OLMD-128}{મૂળની આ પંક્તિમાં
+પહેલેથી ચિહ્નિત થયેલા બે ગણો વચ્ચે ફરી
+``$\disjointsum$'' લખાયું છે; તેથી તે મૂળ
+$\alpha\disjointsum1$ સમાન નથી. અહીં વ્યાખ્યા
+મુજબ બંને ચિહ્નિત ભાગોનો યોગગણ ``$\cup$''
+લખ્યો છે.}
+\end{proof}
+\noindent
+વધુમાં, સરવાળો કેટલીક પુનરાવર્તી શરતો સંતોષે છે તે
+બતાવવું સરળ છે:
+
+\begin{lem}\ollabel{ordadditionrecursion}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha, \beta$ માટે:
+\begin{align*}
+	\alpha\ordplus 0 &= \alpha\\
+	\alpha \ordplus  (\beta\ordplus 1) &= (\alpha \ordplus  \beta) \ordplus  1\\
+	\alpha  \ordplus  \beta &= \supstrict_{\delta < \beta}(\alpha \ordplus  \delta) && \text{if $\beta $ is a limit ordinal}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+એક પછી એક કિસ્સો તપાસીએ; પહેલાં:
+\begin{align*}
+	\alpha \ordplus  0
+	& = \ordtype{(\alpha \times \{0\}) \cup (0 \times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha \times \{0\}) \cup \emptyset, \rlexless}\\
+	&= \alpha\\
+	\alpha \ordplus (\beta \ordplus  1)
+	%&= \ordtype{(\alpha\times \{0\}) \cup (\ordtype{\beta \ordplus  1}\times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha\times \{0\}) \cup (\ordsucc{\beta}\times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha\times \{0\}) \cup (\beta \times \{1\}), \rlexless} \ordplus 1\\
+	&= (\alpha \ordplus  \beta) \ordplus  1
+\end{align*}
+\sourcecorrection{OLMD-129}{મૂળમાં $0\times\{1\}$
+ખાલી ગણ હોવા છતાં આગળની પંક્તિમાં તે
+``$\{0\}$'' બની જાય છે. અહીં તેને
+``$\emptyset$'' રાખ્યું છે.}
+હવે $\beta \neq \emptyset$ સીમા ક્રમવાચક સંખ્યા
+હોય. $\delta < \beta$ હોય તો
+$\delta\ordplus 1 < \beta$ પણ છે; તેથી
+$\alpha \ordplus  \delta$ એ
+$\alpha \ordplus  \beta$નો યોગ્ય આરંભિક ખંડ છે.
+આથી $\alpha
+\ordplus  \beta$ એ
+$X = \Setabs{\alpha
+\ordplus  \delta}{\delta < \beta}$ની કડક ઉચ્ચસીમા
+છે. વળી, $\alpha \leq \gamma <
+\alpha \ordplus  \beta$ હોય, તો સ્પષ્ટપણે કોઈ
+$\delta < \beta$ માટે $\gamma = \alpha \ordplus
+\delta$. તેથી $\alpha \ordplus  \beta =
+\supstrict_{\delta< \beta}(\alpha\ordplus \delta)$.
+\end{proof}
+
+અહીં એક નોંધપાત્ર વાત છે. ક્રમવાચક સરવાળો
+વ્યાખ્યાયિત કરવા આપણે \emph{તેના બદલે} સીધો
+અનંતાતીત પુનરાવર્તનનો પ્રમેય વાપરી શક્યા હોત,
+અને \olref{ordadditionrecursion}માં આપેલી પુનરાવર્તી
+સમીકરણો જ લઈ શક્યા હોત (જોકે
+``$\beta \ordplus 1$''ને બદલે
+``$\ordsucc{\beta}$'' વાપરીને).
+
+આમ ક્રમવાચક સંખ્યાઓ પર ક્રિયાઓની વ્યાખ્યા આપવાની
+બે જુદી રીતો છે. સ્પષ્ટ સુક્રમિત ગણ રચે અને તેનો
+ક્રમપ્રકાર વિચારે, એ રીતે \emph{રચના કરીને} વ્યાખ્યા
+આપી શકાય. અથવા માત્ર પુનરાવર્તી સમીકરણો આપીને
+\emph{પુનરાવર્તનથી} વ્યાખ્યા આપી શકાય. જોકે યોગ્ય
+રીતે કરીએ, તો બંનેના પરિણામ સમાન છે. કારણ કે
+\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+આ પુનરાવર્તી સમીકરણો \emph{અનન્ય} ક્રમવાચક સંખ્યાઓ
+નક્કી કરે છે તેની ખાતરી આપે છે.
+\sourcecorrection{OLMD-130}{મૂળમાં પુનરાવર્તી
+સમીકરણોની અનન્યતા માટે ક્રમવાચક-રજૂઆત પ્રમેયનો
+સંદર્ભ છે. એ પ્રમેય સુક્રમને અનન્ય ક્રમવાચક
+ક્રમપ્રકાર આપે છે; પુનરાવર્તી સમીકરણો માટેનું
+અસ્તિત્વ અને અનન્યતા અનંતાતીત પુનરાવર્તનના
+પ્રમેયથી મળે છે. અહીં મૂળનો સંદર્ભ રાખીને
+આ તર્કભેદ નોંધ્યો છે.}
+
+ઘણી રીતે ક્રમવાચક અંકગણિત પ્રાકૃતિક સંખ્યાઓના
+સરવાળાની જેમ વર્તે છે. દાખલા તરીકે, નીચેનું સાબિત
+કરી શકીએ છીએ:
+
+\begin{lem}\ollabel{ordinaladditionisnice}
+$\alpha, \beta, \gamma$ ક્રમવાચક સંખ્યાઓ હોય, તો:
+\begin{enumerate}
+	\item\ollabel{ordaddition1} જો $\beta < \gamma$ હોય, તો $\alpha
+	\ordplus  \beta < \alpha \ordplus  \gamma$
+	\item\ollabel{ordaddition2} જો $\alpha \ordplus  \beta =
+	\alpha\ordplus \gamma$ હોય, તો $\beta = \gamma$
+	\item\ollabel{ordaddition3} $\alpha \ordplus  (\beta \ordplus
+	\gamma) = (\alpha \ordplus  \beta) \ordplus  \gamma$;
+	એટલે સરવાળો સહયોગી છે
+	\item\ollabel{ordaddition4} જો $\alpha \leq \beta$ હોય, તો $\alpha
+	\ordplus  \gamma \leq \beta \ordplus \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+અહીં \olref{ordaddition3} સાબિત કરીએ છીએ; બાકીનાં
+સ્વાધ્યાય તરીકે છોડીએ છીએ. $\gamma$ પર સરળ
+અનંતાતીત અનુમાનથી સાબિતી કરીએ, અને
+\olref{ordadditionrecursion} વાપરીએ. $\gamma = 0$
+હોય ત્યારે:
+\[
+(\alpha \ordplus  \beta) \ordplus  0 = \alpha \ordplus  \beta  = \alpha \ordplus  (\beta \ordplus  0)
+\]
+$\gamma = \delta\ordplus 1$ હોય, ત્યારે અનુમાનની
+ધારણા તરીકે $(\alpha
+\ordplus  \beta) \ordplus  \delta = \alpha \ordplus  (\beta \ordplus
+\delta)$ લો; હવે \olref{ordadditionrecursion} ત્રણ વાર વાપરીએ:
+\begin{align*}
+	(\alpha \ordplus  \beta) \ordplus  (\delta \ordplus  1) & = ((\alpha \ordplus  \beta) \ordplus  \delta)\ordplus 1\\
+	& = (\alpha \ordplus  (\beta \ordplus  \delta)) \ordplus  1\\
+	& = \alpha \ordplus  ((\beta \ordplus  \delta)\ordplus 1)\\
+	& = \alpha \ordplus  (\beta \ordplus  (\delta\ordplus 1))
+\end{align*}
+$\gamma$ સીમા ક્રમવાચક સંખ્યા હોય, ત્યારે
+$\delta \in \gamma$ હોય તો $(\alpha \ordplus  \beta) \ordplus  \delta =
+\alpha \ordplus  (\beta \ordplus  \delta)$ એવી
+અનુમાનની ધારણા લો; હવે:
+\begin{align*}
+	(\alpha \ordplus  \beta) \ordplus  \gamma & = \supstrict_{\delta < \gamma}((\alpha \ordplus  \beta) \ordplus  \delta) \\
+	&= \supstrict_{\delta < \gamma}(\alpha \ordplus  (\beta \ordplus  \delta))\\
+	&= \alpha \ordplus  \supstrict_{\delta < \gamma}(\beta \ordplus  \delta)\\
+	& = \alpha \ordplus  (\beta \ordplus  \gamma)
+\end{align*}
+\end{proof}
+
+\begin{prob}
+\olref[sth][ord-arithmetic][add]{ordinaladditionisnice}નાં
+બાકીનાં પરિણામો સાબિત કરો.
+\end{prob}
+
+આ રીતે ક્રમવાચક સરવાળો બહુ પરિચિત લાગવો જોઈએ.
+પરંતુ એક મહત્ત્વની બાબતમાં તે પ્રાકૃતિક સંખ્યાઓના
+સરવાળા જેવો \emph{નથી}.
+
+\begin{prop}\ollabel{ordsumnotcommute}
+ક્રમવાચક સરવાળો {અદલબદલીય નથી};
+$1 \ordplus  \omega = \omega <
+\omega \ordplus  1$.
+\end{prop}
+
+\begin{proof}
+ધ્યાન આપો કે $1 \ordplus  \omega = \supstrict_{n < \omega} (1 \ordplus n)
+= \omega \in \omega \cup \{\omega\} = \ordsucc{\omega} = \omega
+\ordplus  1$.
+\end{proof}
+\noindent
+પહેલી વાર આ વાત આશ્ચર્યજનક લાગી શકે, પરંતુ
+\emph{એવું લાગવું ન જોઈએ}. એક તરફ,
+$1 \ordplus  \omega$ વિચારીએ ત્યારે બધી પ્રાકૃતિક
+સંખ્યાઓની \emph{પહેલાં} એક વધારાનું ઘટક મૂકવાથી
+મળતો ક્રમપ્રકાર વિચારીએ છીએ.
+\olref[sfr][infinite][hilbert]{sec}માં હિલ્બર્ટની હોટેલ
+વિશે કરેલી દલીલ મુજબ, સહજ રીતે આ વધારાનું પહેલું
+ઘટક આખા ક્રમપ્રકારને બદલવું ન જોઈએ. બીજી તરફ,
+$\omega \ordplus  1$ વિચારીએ ત્યારે બધી પ્રાકૃતિક
+સંખ્યાઓની \emph{પછી} એક વધારાનું ઘટક મૂકવાથી
+મળતો ક્રમપ્રકાર વિચારીએ છીએ. અને તે તો ધરમૂળથી
+જુદી બાબત છે!
+
+\end{document}

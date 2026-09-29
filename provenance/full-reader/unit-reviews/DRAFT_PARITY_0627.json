@@ -1,0 +1,76 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0627",
+  "checked_at_utc": "2026-09-28T15:31:25.212550+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0627 Rózsa Péter biography and recursive-function theory; state-only draft",
+  "report": {
+    "unit_id": "OLP-0627",
+    "source_path": "content/history/biographies/rozsa-peter.tex",
+    "source_sha256": "cd1559c7f682712f7257c16abe9afa075178ba9aa6a587b035d7e466d3bf668f",
+    "draft_path": "private-state\\work\\batch044_draft\\rozsa-peter.tex",
+    "draft_sha256": "f0027b140bd94963bea08a7802f1bcde98cfbd501c05f73e6c06eaa2fbdd3069",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 495,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\computability\\recursive-functions\\introduction.tex",
+        "sha256": "c30e681e691c687b21c20fb280a031749cb6f5cfd4b89acccac4db0cc4dc7758",
+        "terms": [
+          "પુનરાવર્તી વિધેય",
+          "આદિમ પુનરાવર્તન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\computability\\recursive-functions\\non-pr-functions.tex",
+        "sha256": "755b7a1c1d1092fa03b50f1609b07e11c6263660dec8a2ddaebe6990c6b75128",
+        "terms": [
+          "આદિમ પુનરાવર્તી"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\proof-systems\\introduction.tex",
+        "sha256": "1b84a55e723ee46dbbc3703c635e010a63a12f7e1015b956874cab45e9385ad8",
+        "terms": [
+          "કુર્ત ગેડલે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Journal of\n  Symbolic Logic",
+        "count": 1,
+        "reason": "Exact English proper title of the journal in which Péter became an editor."
+      },
+      {
+        "literal": "Playing With Infinity",
+        "count": 1,
+        "reason": "Exact English proper title of the cited book."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "peter-rozsa",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

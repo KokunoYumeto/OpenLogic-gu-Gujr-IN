@@ -1,0 +1,54 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: completeness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{cpl}
+
+\olsection{પૂર્ણતા પ્રમેય}
+
+\begin{thm}\ollabel{thm:completeness}
+  જો $\Gamma \Entails !A$ હોય, તો $\Gamma \Proves !A$.
+\end{thm}
+
+\begin{proof}
+  પ્રતિપક્ષી વિધાન સાબિત કરીએ: ધારો કે $\Gamma \Proves/ !A$.
+  ત્યારે \olref[lin]{lem:lindenbaum} મુજબ એવો અભાજ્ય ગણ
+  $\Gamma^* \supseteq \Gamma$ છે કે $\Gamma^* \Proves/ !A$.
+  \olref[mod]{defn:canonical-model}માં વ્યાખ્યાયિત
+  $\Gamma^*$ માટેનું કૅનોનિકલ નિદર્શ~$\mModel{M(\Gamma^*)}$
+  લો. દરેક $!B \in \Gamma$ માટે $\Gamma^* \Proves !B$.
+  નોંધો કે $\Gamma^*(\emptyseq) = \Gamma^*$.
+  સત્યતા સહાયક પ્રમેય (\olref[tru]{lem:truth}) મુજબ
+  બધા $!B \in \Gamma$ માટે
+  $\mSat{M(\Gamma^*)}{!B}[\emptyseq]$ અને
+  $\mSat/{M(\Gamma^*)}{!A}[\emptyseq]$ મળે છે.
+  આથી $\Gamma \Entails/ !A$.
+\end{proof}
+
+\begin{prob}
+  જો $!A$માં ફક્ત !!{propositional variable}s, $\lor$
+  અને~$\land$ હોય, તો $\Entails/ !A$ છે તે બતાવો.
+  આ પરથી સ્ફુરણાવાદી તર્કમાં $\lor$ અને~$\land$
+  વડે $\lif$ વ્યાખ્યાયિત થઈ શકતું નથી તે તારવો.
+\end{prob}
+
+\begin{prob}
+  પૂર્ણતા પ્રમેય વાપરીને સાબિત કરો કે જો
+  $\Proves !A \lor !B$ હોય, તો $\Proves !A$ અથવા
+  $\Proves !B$. (સંકેત: $\mSat/{M_1}{!A}$ અને
+  $\mSat/{M_2}{!B}$ ધારો અને એવું નવું નિદર્શ
+  $\mModel{M}$ રચો કે $\mSat/{M}{!A \lor !B}$.)
+\end{prob}
+
+\begin{prob}
+  જો $\mModel{M}$ રેખીય ક્રમ વાપરતું સંબંધાત્મક
+  નિદર્શ હોય, તો
+  $\mSat{M}{(!A \lif !B)\lor(!B \lif !A)}$
+  છે તે બતાવો.
+\end{prob}
+
+\end{document}

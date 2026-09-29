@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0613",
+  "checked_at_utc": "2026-09-28T14:46:46.324324+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0613 Induction chapter title and six-section topology; state-only draft",
+  "report": {
+    "unit_id": "OLP-0613",
+    "source_path": "content/methods/induction/induction.tex",
+    "source_sha256": "a473475ad8fdd83af7da9474e389385d9b3fc9b0fe3673fbb7dc9c6a413df5af",
+    "draft_path": "private-state\\work\\batch044_draft\\induction.tex",
+    "draft_sha256": "ed6204f8d2514b5150042e010bb2ddc0a1b2668f1547c21f76bd42a1046ec226",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 1,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-induction.tex",
+        "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945",
+        "terms": [
+          "ગાણિતિક અનુમાન",
+          "અનુમાન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\methods.tex",
+        "sha256": "100e4087c74e7f5be19ea5c63e733128e5b26889be7e960bc394ce4ea2fa6ebf",
+        "terms": [
+          "ગાણિતિક અનુમાન અંગેનું એક પ્રકરણ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

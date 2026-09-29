@@ -1,0 +1,100 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0589",
+  "checked_at_utc": "2026-09-28T03:13:58.613685+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0589 cardinal exponentiation laws and bounded-base reductions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0589",
+    "source_path": "content/set-theory/card-arithmetic/expotough.tex",
+    "source_sha256": "3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-expotough.tex",
+    "draft_sha256": "9612f5098ff687bf2992d7daf6a1dcac6f914cb788d2839cc017cb722bce2ea8",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 14,
+    "source_math_spans_correction_aware": 36,
+    "target_math_spans_after_corrections": 36,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-137",
+      "OLMD-138",
+      "OLMD-139"
+    ],
+    "source_detector_ascii_tokens": 197,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "f \\mapsto\r\n(f_{\\cardfont{b}} \\times f_\\cardfont{c})",
+        "f \\mapsto\r\n\\tuple{f_{\\cardfont{b}}, f_\\cardfont{c}}"
+      ],
+      [
+        "\\funfromto{\\cardfont{b} \\cardtimes \\cardfont{c}}{\\cardfont{a}}",
+        "\\funfromto{\\cardfont{b} \\times \\cardfont{c}}{\\cardfont{a}}"
+      ],
+      [
+        "$n \\in \\omega$",
+        "$0<n \\in \\omega$"
+      ],
+      [
+        "\\text{, as $2 \\leq \\cardfont{a}$}",
+        "\\text{, કારણ કે $2 \\leq \\cardfont{a}$}"
+      ],
+      [
+        "\\text{, by \\olref[opps]{lem:SizePowerset2Exp}}",
+        "\\text{, \\olref[opps]{lem:SizePowerset2Exp} મુજબ}"
+      ],
+      [
+        "\\text{, by \\olref{simplecardexpo}}",
+        "\\text{, \\olref{simplecardexpo} મુજબ}"
+      ],
+      [
+        "\\text{, by \\olref[simp]{cardplustimesmax}}",
+        "\\text{, \\olref[simp]{cardplustimesmax} મુજબ}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-simp.tex",
+        "sha256": "4f217a5c40f0d10bea591b7daaf9f2627651a24e4aadffac57024b6ca9f8aea3",
+        "terms": [
+          "\\ollabel{cardplustimesmax}",
+          "સરળીકરણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-opps.tex",
+        "sha256": "ce48855cdaaf5535f30cc6368c29f00d3970e99a82e008493858bcb36466feef",
+        "terms": [
+          "\\ollabel{lem:SizePowerset2Exp}",
+          "\\cardexpo",
+          "\\funfromto"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+        "sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+        "terms": [
+          "\\ollabel{lem:CardinalsBehaveRight}",
+          "ગણાંક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "OLMD-137 replaces a product of component functions with the ordered pair required by the Cartesian product codomain.",
+      "OLMD-138 gives f-star its actual domain b times c, then states that cardinal multiplication identifies the cardinality only via a bijection; it does not identify the two underlying sets.",
+      "OLMD-139 adds positive n because a^0=1 for infinite a, while leaving the theorem's power and the nonempty repeated-product proof intact.",
+      "No general formula is asserted for cardinal powers beyond the two bounded-base reductions in the source.",
+      "Reader-facing English explanations inside displayed mathematics are localized to Gujarati; variables, citations and mathematical relations retain their source meaning."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

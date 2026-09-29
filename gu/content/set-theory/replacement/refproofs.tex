@@ -1,0 +1,218 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{replacement}{refproofs}
+\olsection{પરિશિષ્ટ: પ્રતિસ્થાપન અંગેના પરિણામો}
+
+આ વિભાગમાં $\ZF$માં પ્રતિબિંબન સાબિત કરીશું. પ્રતિબિંબન
+કયા અર્થમાં પ્રતિસ્થાપનને સમકક્ષ છે તે પણ સાબિત કરીશું.
+અને આ બધાંમાંથી પ્રતિબિંબન/પ્રતિસ્થાપનની શક્તિ વિશેનું
+એક રસપ્રદ પરિણામ પણ સાબિત કરીશું. \emph{સાવધાન:
+આ પાઠ્યપુસ્તકમાં આ સહેલાઈથી સૌથી અઘરું ગણિત છે.}
+
+શરૂઆતમાં એક લેમા જોઈએ. ટૂંકાણ માટે તેમાં ચલો અથવા
+વસ્તુઓના અનુક્રમ દર્શાવવા \emph{ઉપરરેખા}ના સંકેતનો
+ઉપયોગ થાય છે. એટલે, ``$\overline{a}_k$'' એ
+``$a_{k_1}$, \dots, $a_{k_n}$''નું ટૂંકું લખાણ છે,
+જ્યાં $n$ સંદર્ભથી નક્કી થાય છે.
+
+\begin{lem}\ollabel{lemreflection}
+દરેક $1 \leq i \leq k$ માટે
+$\phi_i(\overline{v}_i, x)$ સૂત્ર હોય. ત્યારે દરેક
+$\alpha$ માટે એવો $\beta > \alpha$ છે કે કોઈ પણ
+$\overline{a}_1, \ldots, \overline{a}_k \in V_\beta$
+અને દરેક $1 \leq i \leq k$ માટે:
+\[
+	\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V_\beta) \phi_i(\overline{a}_i, x)
+\]
+\end{lem}
+
+\begin{proof}
+નીચે પ્રમાણે પદ $\mu$ વ્યાખ્યાયિત કરીએ:
+$\mu(\overline{a}_1, \ldots,
+\overline{a}_k)$ એ લઘુતમ તબક્કો $V$ છે જે દરેક
+$1 \leq i \leq k$ માટે નીચેની શરત સંતોષે છે:
+\[
+\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V) \phi_i(\overline{a}_i, x)
+\]
+\sourcecorrection{OLMD-121}{મૂળ પ્રદર્શિત શરતમાં
+છેલ્લે એક વધારાનો બંધ કૌંસ છે. અહીં અનુગામી
+સૂત્રના પહેલેથી બંધ થયેલા કૌંસ પછીનું વધારાનું
+ચિહ્ન દૂર કર્યું છે.}
+બધાં $\overline{a}_1, \ldots, \overline{a}_k$
+માટે $\mu(\overline{a}_1, \ldots, \overline{a}_k)$
+અસ્તિત્વમાં છે તે સહેલાઈથી ચકાસી શકાય છે. હવે
+પ્રતિસ્થાપન અને આપણા પુનરાવર્તન પ્રમેય વડે વ્યાખ્યા આપીએ:
+\begin{align*}
+	S_0 & = V_{\alpha+1}\\
+	S_{n+1} & = S_n \cup \bigcup
+	\Setabs{\mu(\overline{a}_1, \ldots, \overline{a}_k)}
+	{\overline{a}_1, \ldots, \overline{a}_k \in S_n} \\
+	S &= \bigcup_{m < \omega} S_m.
+\end{align*}
+\sourcecorrection{OLMD-122}{મૂળની છેલ્લી પંક્તિમાં
+યોગગણની સીમા $m$ હોવા છતાં પદ $S_n$ હતું; ત્યાં
+$n$ મુક્ત રહી જતો હતો. અહીં તે $S_m$ કર્યું છે.}
+દરેક $S_n$, અને તેથી $S$ પોતે પણ, $V_\alpha$
+પછીનો તબક્કો છે. હવે $\overline{a}_1$,
+\dots,~$\overline{a}_k \in S$ નક્કી કરો; તેથી કોઈ
+$n < \omega$ એવો છે કે $\overline{a}_1$,
+\dots, $\overline{a}_k \in S_n$. કોઈ
+$1 \leq i \leq k$ નક્કી કરો અને ધારો કે
+$\exists x \phi_i(\overline{a}_i,x)$. રચના મુજબ
+$(\exists x \in \mu(\overline{a}_1,
+\ldots, \overline{a}_k))\phi_i(\overline{a}_i, x)$,
+તેથી $(\exists x \in S_{n+1})\phi_i(\overline{a}_i, x)$,
+અને તેથી $(\exists x \in S)\phi_i(\overline{a}_i, x)$.
+આમ $S$ એ જોઈતું $V_\beta$ છે.
+\end{proof}
+\noindent
+હવે \olref[sth][replacement][ref]{reflectionschema} સરળતાથી
+સાબિત કરી શકીએ:
+
+\begin{proof}[સાબિતી]
+$\alpha$ નક્કી કરો. સામાન્યતા ગુમાવ્યા વિના આપણે
+ધારી શકીએ કે $\phi$માં માત્ર $\exists$, $\lnot$
+અને $\land$ તર્કસંયોજકો છે (કારણ કે આ અભિવ્યક્તિ
+માટે પૂરતા છે). $\phi$ના બધા ઉપસૂત્રો જટિલતાના
+ક્રમમાં $\psi_1, \ldots, \psi_k$ તરીકે ગણીએ,
+જેથી $\psi_k = \phi$. \olref{lemreflection} મુજબ
+એવો $\beta > \alpha$ છે કે કોઈ પણ
+$\overline{a}_i \in V_\beta$ અને દરેક
+$1 \leq i \leq k$ માટે:
+\begin{align}\label{reflectionnicelybehaved}
+	\exists x\psi_i(\overline{a}_i, x) \rightarrow
+	(\exists x \in V_\beta) \psi_i(\overline{a}_i, x)\tag{*}
+\end{align}
+$\psi_i$ની જટિલતા પરના અનુમાનથી બતાવીશું કે કોઈ પણ
+$\overline{a}_i \in V_\beta$ માટે
+$\psi_i(\overline{a}_i) \leftrightarrow
+\psi_i^{V_\beta}(\overline{a}_i)$. જો $\psi_i$
+આણ્વિક હોય, તો આ સ્પષ્ટ છે. આ દ્વિદિશ શરતથી એ પણ
+મળે છે કે જો $\psi_i$ આ ગુણ ધરાવતા ઉપસૂત્રોનો
+નિષેધ કે સંયોજન હોય, તો $\psi_i$ને પણ આ ગુણ છે. તેથી
+એકમાત્ર રસપ્રદ કિસ્સો પરિમાણીકરણનો છે. હવે
+$\overline{a}_i \in V_\beta$ નક્કી કરો; ત્યારે:
+\begin{align*}
+	(\exists x \psi_i(\overline{a}_i, x))^{V_\beta}
+	&\text{ iff }
+	(\exists x \in V_\beta)\psi_i^{V_\beta}(\overline{a}_i, x)
+	&&\text{by definition}\\
+	&\text{ iff }
+	(\exists x \in V_\beta)\psi_i(\overline{a}_i,  x)
+	&&\text{by hypothesis}\\
+	&\text{ iff }
+	\exists x \psi_i(\overline{a}_i, x)
+	&&\text{by \eqref{reflectionnicelybehaved}}
+\end{align*}
+આથી અનુમાન પૂરું થાય છે; $\psi_k = \phi$ હોવાથી
+જોઈતું પરિણામ મળે છે.
+\end{proof}
+
+$\ZF$માં પ્રતિબિંબન સાબિત થયું. અમારી સાબિતી મુખ્યત્વે
+\citet{Montague1961}ને અનુસરે છે. હવે $\Z$માં
+પ્રતિબિંબનથી પ્રતિસ્થાપન નીકળે છે તે સાબિત કરવું છે.
+સાબિતી સરળ ફેરફાર સાથે \citet{Levy1960}ને અનુસરે છે.
+
+અહીં $\Z$માં કામ કરીએ છીએ, તેથી પ્રતિબિંબનને ઉપર
+આપેલા બરાબર સ્વરૂપમાં રજૂ કરી શકતા નથી. કારણ કે
+તે સ્વરૂપમાં ``$V_\alpha$''નો સંકેત વપરાયો છે, અને
+$\Z$માં તેની વ્યાખ્યા આપી શકાતી નથી (જુઓ
+\olref[sth][spine][zf]{sec}). તેથી તેના બદલે
+પ્રતિબિંબનનું દેખીતી રીતે નબળું સ્વરૂપ નીચે મુજબ આપીએ:
+\sourcecorrection{OLMD-123}{મૂળ અહીં પ્રતિસ્થાપનનું
+નબળું સ્વરૂપ કહે છે, પરંતુ તરત આવતી વ્યાખ્યા નબળા
+પ્રતિબિંબનની છે. અહીં તે વિષય-સૂચક શબ્દ સુધાર્યો છે.}
+
+\begin{defish}
+\emph{નબળું પ્રતિબિંબન.} કોઈ પણ સૂત્ર $\phi$ માટે
+એવો પરંપરિત ગણ $S$ છે કે $0$, $1$ અને $\phi$ના
+બધા પરિમાણો $S$ના !!{element}s છે, અને
+$(\forall \overline{x} \in S)(\phi \liff
+\phi^S)$.
+\end{defish}
+
+આમાંથી પ્રતિસ્થાપન સાબિત કરવા પહેલાં,
+\citet[first
+part of Theorem 2]{Levy1960}ને અનુસરીને બતાવીશું
+કે બે સૂત્રોને એકસાથે ``પ્રતિબિંબિત'' કરી શકીએ છીએ:
+
+\begin{lem}[$\Z + \text{Weak-Reflection}$માં.]\ollabel{lem:reflect}
+કોઈ પણ સૂત્રો $\psi, \chi$ માટે એવો પરંપરિત
+ગણ $S$ છે કે $0$ અને $1$ (અને સૂત્રોના કોઈ પણ
+પરિમાણો) $S$ના !!{element}s છે, અને
+$(\forall \overline{x} \in S)((\psi \liff \psi^S) \land (\chi
+\liff \chi^S))$.
+\end{lem}
+
+\begin{proof}
+$\phi$ને $(z = 0 \land \psi) \lor (z = 1 \land \chi)$
+સૂત્ર તરીકે લો.
+
+અહીં ટૂંકું લખાણ વાપર્યું છે; ``$z = 0$''ને
+``$\forall t\, t \notin z$'' અને ``$z =1$''ને
+``$\forall s(s \in z
+\liff \forall t\, t \notin s)$'' તરીકે પૂરું લખવું
+જોઈએ. પરંતુ $0, 1 \in S$ અને $S$ પરંપરિત હોવાથી,
+આ સૂત્રો $S$ માટે \emph{નિરપેક્ષ} છે; એટલે કે
+તેમના પરિમાણકો $S$ સુધી મર્યાદિત કરીએ કે નહીં,
+તે જ વસ્તુ માટે તે સાચાં રહેશે.\footnote{વધુ ઔપચારિક
+રીતે, આ બેમાંથી કોઈ પણ સૂત્ર $\xi$ હોય, તો
+$\xi(z) \liff \xi^S(z)$.}
+
+નબળા પ્રતિબિંબન મુજબ યોગ્ય $S$ એવો મળે છે કે:
+\begin{align*}
+	(\forall z, \overline{x} \in S)(&\phi \liff \phi^S)\\
+	\text{i.e. }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi)) \liff {}\\
+	&\phantom{(}((z = 0 \land \psi) \lor (z = 1 \land \chi))^S)\\
+	\text{i.e. }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi))\liff {}\\
+	&\phantom{(}((z = 0 \land \psi^S) \lor (z = 1 \land \chi^S)))\\
+	\text{i.e. }(\forall \overline{x} \in S)(&(\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\end{align*}
+બીજું વિધાન ત્રીજું વિધાન આપે છે, કારણ કે ``$z = 0$''
+અને ``$z=1$'' $S$ માટે નિરપેક્ષ છે; ચોથું વિધાન
+$0 \neq 1$ હોવાથી મળે છે.
+\end{proof}\noindent હવે \citet[Theorem 6]{Levy1960}ની
+સાબિતી અનુસરીને તેને સરળ બનાવતાં પ્રતિસ્થાપન મેળવી શકીએ:
+
+\begin{thm}[$\Z$ અને નબળા પ્રતિબિંબન પર]\label{thm:replacement}
+કોઈ પણ સૂત્ર $\phi(v,w)$ અને કોઈ પણ $A$ માટે,
+જો $(\forall x \in A)\lexists![y][\phi(x,y)]$ હોય,
+તો $\Setabs{y}{(\exists x \in A)\phi(x,y)}$ અસ્તિત્વમાં છે.
+\sourcecorrection{OLMD-124}{મૂળના ગણ-નિર્માણ
+સૂત્રમાં $\phi(x,y)$નું અંતિમ બંધ કૌંસ છૂટી ગયું છે;
+અહીં તે ઉમેરી સૂત્ર પૂર્ણ કર્યું છે.}
+\end{thm}
+
+\begin{proof}
+$(\forall x \in A)\lexists![y][\phi(x,y)]$ થાય એવો
+$A$ નક્કી કરો અને નીચેના સૂત્રો વ્યાખ્યાયિત કરો:
+\begin{align*}
+	\psi &\text{ is } (\phi(x, z) \land A = A)\\
+	\chi &\text{ is } \lexists[y][\phi(x, y)]
+\end{align*}
+\olref{lem:reflect} વાપરીએ. $A$ એ $\psi$નો
+પરિમાણ હોવાથી, એવો પરંપરિત~$S$ મળે છે કે
+$0, 1, A \in S$ (બીજા કોઈ પણ પરિમાણો સાથે), અને:
+\[
+	(\forall x,z \in S)((\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\]
+ખાસ કરીને:
+\begin{align*}
+	(\forall  x, z \in S)(&\phi(x, z) \liff \phi^S(x, z))\\
+	(\forall x \in S)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi^S(x, y))
+\end{align*}
+આ બંનેને જોડીએ અને $A \in S$ તથા $S$ પરંપરિત
+હોવાથી $A \subseteq S$ એ ધ્યાનમાં લઈએ:
+\begin{align*}
+	(\forall x \in A)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi(x, y))
+\end{align*}
+હવે $(\forall x \in A)(\lexists![y \in S])\phi(x, y)$,
+કારણ કે $(\forall x \in A)\lexists![y][\phi(x, y)]$.
+પૃથક્કરણથી
+$\Setabs{y \in S}{(\exists x \in A) \phi(x, y)} = \Setabs{y}{(\exists
+x \in A) \phi(x, y)}$ મળે છે.
+\end{proof}
+
+\end{document}

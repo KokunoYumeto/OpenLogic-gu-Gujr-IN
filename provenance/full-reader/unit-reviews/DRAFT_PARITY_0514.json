@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0514",
+  "checked_at_utc": "2026-09-27T22:04:11.716544+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0514 intuitionistic tableau proof; state-only draft",
+  "report": {
+    "unit_id": "OLP-0514",
+    "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+    "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+    "draft_path": "private-state\\work\\batch042_draft\\intuitionistic-tableaux-proofs.tex",
+    "draft_sha256": "5ca37d6f36ba9feb8db7ada223dd83a60b228772348291bb0456b49fbc1ea0bf",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 3,
+    "source_math_spans_correction_aware": 5,
+    "target_math_spans_after_corrections": 5,
+    "glossary_tokens": 1,
+    "source_correction_notes": [
+      "OLMD-100"
+    ],
+    "source_detector_ascii_tokens": 16,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "tableau_ten_nodes_exact_except_two_premise_reference_repairs": true
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

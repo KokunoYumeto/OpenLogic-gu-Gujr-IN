@@ -1,0 +1,420 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-lk
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{plk}
+\olsection{$\Log{LK}$માં \usetoken{P}{derivation}}
+
+\begin{explain}
+!!{derivation}sનું અંકગણિતીકરણ કરવા માટે
+આપણે !!{derivation}sને સંખ્યાઓ વડે નિરૂપવાં પડશે.
+દરેક !!{derivation} એ સિક્વન્ટોનું વૃક્ષ છે
+અને તેમાં દરેક અનુમાનને એક ચિહ્નન પણ
+આપેલું છે. તેથી પુનરાવર્તી નિરૂપણ
+સૌથી સ્વાભાવિક છે: !!{derivation}ને
+એવી ટપલ તરીકે નિરૂપીએ જેના ઘટકો
+અંતિમ સિક્વન્ટ, ચિહ્નન અને છેલ્લા અનુમાનના
+આધાર-સિક્વન્ટો સુધી પહોંચતી
+ઉપ-!!{derivation}sનાં નિરૂપણ છે.
+\end{explain}
+
+\begin{defn}
+$\Gamma$ એ !!{sentence}sની સાન્ત શ્રેણી,
+$\Gamma = \tuple{!A_1, \dots, !A_n}$ હોય,
+તો $\Gn{\Gamma} = \tuple{\Gn{!A_1},
+  \dots, \Gn{!A_n}}$.
+
+$\Gamma \Sequent \Delta$ સિક્વન્ટ હોય,
+તો $\Gamma \Sequent \Delta$ની
+ગડેલ-સંખ્યા આ છે:
+\[
+\Gn{\Gamma \Sequent \Delta} = \tuple{\Gn{\Gamma}, \Gn{\Delta}}
+\]
+
+$\pi$ એ $\Log{LK}$માં !!a{derivation} હોય,
+તો $\Gn{\pi}$ને આ પ્રમાણે વ્યાખ્યાયિત કરીએ:
+\begin{enumerate}
+\item $\pi$ માત્ર આરંભિક સિક્વન્ટ
+  $\Gamma \Sequent \Delta$નું બનેલું હોય,
+  તો $\Gn{\pi}$ આ છે:
+  \[
+    \tuple{0, \Gn{\Gamma \Sequent \Delta}}.
+  \]
+\item $\pi$નો અંત એક કે બે આધાર-સિક્વન્ટવાળા
+  અનુમાનથી થતો હોય, તેનું ફલિત-સિક્વન્ટ
+  $\Gamma \Sequent \Delta$ હોય અને
+  $\pi_1$ તથા, લાગુ પડે ત્યારે, $\pi_2$
+  છેલ્લા અનુમાનના આધાર-સિક્વન્ટોમાં
+  પૂરાં થતાં સીધાં ઉપપ્રમાણો હોય,
+  તો અનુક્રમે $\Gn{\pi}$ આ છે:
+  \begin{align*}
+    & \tuple{1, \Gn{\pi_1}, \Gn{\Gamma \Sequent \Delta}, k} \text{ અથવા}\\ 
+    & \tuple{2, \Gn{\pi_1}, \Gn{\pi_2}, \Gn{\Gamma \Sequent \Delta}, k}, 
+  \end{align*}
+  અહીં છેલ્લા અનુમાનમાં વપરાયેલા નિયમ
+  પ્રમાણે નીચેના કોષ્ટકમાંથી~$k$ મળે છે:
+
+  \begin{tabular}{lccccccc}
+    \text{નિયમ:} & \LeftR{\Weakening} & \RightR{\Weakening} &
+    \LeftR{\Contraction} & \RightR{\Contraction} &
+    \LeftR{\Exchange} & \RightR{\Exchange} \\
+    $k$: & 1 & 2 & 3 & 4 & 5 & 6 \\[2ex]
+    \text{નિયમ:} & \LeftR{\lnot} & \RightR{\lnot} &
+    \LeftR{\land} & \RightR{\land} & 
+    \LeftR{\lor} & \RightR{\lor} \\
+    $k$: & 7 & 8 & 9 & 10 & 11 & 12 \\[2ex]
+    \text{નિયમ:} & \LeftR{\lif} & \RightR{\lif} &
+    \LeftR{\lforall} & \RightR{\lforall} &
+    \LeftR{\lexists} & \RightR{\lexists} \\
+    $k$: & 13 & 14 & 15 & 16 & 17 & 18 \\[2ex]
+    \text{નિયમ:} & \Cut & = \\
+    $k$: & 19 & 20
+  \end{tabular}
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+  આ અત્યંત સરળ !!{derivation} જુઓ:
+  \begin{prooftree}
+    \Axiom$!A \fCenter !A$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B \fCenter !A$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter (!A \land !B) \lif !A$
+  \end{prooftree}
+  આરંભિક સિક્વન્ટની ગડેલ-સંખ્યા
+  $p_0 = \tuple{0,
+    \Gn{!A \Sequent !A}}$ થાય.
+  $\LeftR{\land}$ના ફલિત-સિક્વન્ટમાં
+  પૂરી થતી !!{derivation}ની ગડેલ-સંખ્યા
+  $p_1 =
+    \tuple{1, p_0, \Gn{!A \land !B \Sequent !A}, 9}$
+  થાય ($1$ એટલા માટે કે
+  $\LeftR{\land}$નો એક આધાર-સિક્વન્ટ છે;
+  $!A \land !B \Sequent !A$ના
+  ફલિત-સિક્વન્ટની ગડેલ-સંખ્યા લેવાઈ છે;
+  અને $9$ એ $\LeftR{\land}$નો સંકેત
+  નંબર છે). આખી !!{derivation}ની
+  ગડેલ-સંખ્યા તેથી
+  $\tuple{1, p_1, \Gn{\Sequent (!A \land !B) \lif !A}, 14}$,
+  એટલે કે
+  \[
+  \tuple{1, \tuple{1, \tuple{0, \Gn{!A \Sequent !A}}, \Gn{!A \land !B \Sequent !A}, 9},
+    \Gn{\Sequent (!A \land !B) \lif !A}, 14}.
+  \]
+  \sourcecorrection{OLINC-006}{સ્થિર અંગ્રેજી મૂળમાં
+  આ ઉદાહરણની ટપલમાં બે જગ્યાએ
+  સિક્વન્ટની અંદર વધારાનું બંધ કૌંસ છે.
+  અહીં એ વધારાનાં કૌંસ કાઢ્યાં છે;
+  નિયમ-સંકેત~$14$ અને ટપલના બાકીના
+  ઘટકો યથાવત્ છે.}
+\end{ex}
+
+\begin{explain}
+!!{derivation}sનું નિરૂપણ નક્કી કર્યા પછી,
+આવા !!{derivation}s પર આદિમ પુનરાવર્તી રીતે ક્રિયા
+કરી શકાય છે અને તેમના આવશ્યક ગુણધર્મો
+તથા સંબંધો એ જ રીતે વ્યક્ત કરી શકાય છે
+તે પણ બતાવવું પડશે. કેટલીક ક્રિયાઓ
+સરળ છે. દાખલા તરીકે, !!a{derivation}ની
+ગડેલ-સંખ્યા~$p$ હોય, તો
+$\fn{EndSequent}(p) = (p)_{(p)_0+1}$
+તેના અંતિમ સિક્વન્ટની ગડેલ-સંખ્યા આપે છે.
+આરંભિક સિક્વન્ટ સિવાયના કિસ્સામાં
+$\fn{LastRule}(p) = (p)_{(p)_0+2}$
+છેલ્લા નિયમનો સંકેત આપે છે.
+આરંભિક સિક્વન્ટના કિસ્સામાં આ વિધેયને
+ઇચ્છીએ તો શૂન્ય મૂલ્ય આપીને સર્વત્ર
+વ્યાખ્યાયિત કરી શકીએ.
+\sourcecorrection{OLINC-007}{સ્થિર અંગ્રેજી મૂળ
+અહીં અંતિમ સિક્વન્ટના વિધેયને
+$\fn{EndSeq}$ કહે છે, પણ આગળ
+$\fn{EndSequent}$ વાપરે છે; અહીં
+બીજું નામ સતત રાખ્યું છે. આરંભિક
+સિક્વન્ટવાળી બે-ઘટક ટપલ માટે
+છેલ્લા નિયમનો દર્શાવેલો ઘટક નથી,
+એથી એ વિધેયનું દર્શાવેલું સમીકરણ
+માત્ર બિનઆરંભિક કિસ્સાને લાગુ પડે છે;
+આરંભિક કિસ્સામાં~$0$ મૂકવાથી
+પછીનું વિધાન સર્વત્ર અર્થપૂર્ણ બને છે.}
+નીચેના વિધાનથી વ્યાખ્યાયિત
+$\fn{Sequent}(s)$ ગુણધર્મ જુઓ:
+\[
+  \len{s} = 2 \land \bforall{i<\len{(s)_0} + \len{(s)_1}}{\fn{Sent}(((s)_0 \concat (s)_1)_i)}
+\]
+તે $s$ માટે ત્યારે અને માત્ર ત્યારે
+સત્ય છે જ્યારે $s$ એ !!{sentence}sના
+સિક્વન્ટની ગડેલ-સંખ્યા હોય. કેટલાક
+કિસ્સા ઘણાં કઠિન છે. તેમને કેવી રીતે
+સંભાળવા તેનો ઓછામાં ઓછો રૂપરેખાત્મક
+ખ્યાલ આપીશું. હેતુ એ બતાવવાનો છે કે
+``$\pi$ એ~$\Gamma$માંથી~$!A$ની
+!!a{derivation} છે'' એ સંબંધ
+$\pi$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
+આદિમ પુનરાવર્તી સંબંધ છે.
+\end{explain}
+
+\begin{prop}\ollabel{prop:followsby}
+  ગડેલ-સંખ્યા~$p$ ધરાવતી
+  !!{derivation}~$\pi$નું છેલ્લું અનુમાન
+  યોગ્ય હોય ત્યારે અને માત્ર ત્યારે સત્ય
+  થતો ગુણધર્મ~$\fn{Correct}(p)$ આદિમ
+  પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  $\Gamma \Sequent \Delta$ આરંભિક સિક્વન્ટ
+  છે, જો કાં તો કોઈ !!a{sentence}~$!A$
+  માટે $\Gamma \Sequent \Delta$ એ
+  $!A \Sequent !A$ હોય,
+  અથવા કોઈ પદ~$t$ માટે
+  $\Gamma \Sequent \Delta$ એ
+  $\emptyset \Sequent \eq[t][t]$ હોય.
+  ગડેલ-સંખ્યાઓની ભાષામાં
+  $\fn{InitSeq}(s)$ ત્યારે અને માત્ર ત્યારે
+  સત્ય છે જ્યારે
+  \begin{align*}
+  \bexists{x < s}{} (\fn{Sent}(x) & \land
+  s = \tuple{\tuple{x},\tuple{x}})
+  \lor {}\\
+  \bexists{t<s}{} (\fn{Term}(t) & \land
+  s = \tuple{0, \tuple{\Gn{{\eq}(} \concat t \concat \Gn{,} \concat t \concat \Gn{)}}}).
+  \end{align*}
+
+  દરેક અનુમાન-નિયમ~$R$ માટે
+  $\fn{FollowsBy}_R(p)$ સંબંધ આદિમ
+  પુનરાવર્તી છે તે પણ બતાવવું પડે.
+  આ $\fn{FollowsBy}_R(p)$ સંબંધ ત્યારે
+  અને માત્ર ત્યારે સત્ય છે જ્યારે $p$ એ
+  !!{derivation}~$\pi$ની ગડેલ-સંખ્યા
+  હોય અને~$\pi$નું અંતિમ સિક્વન્ટ
+  $\pi$ના સીધા ઉપ-!!{derivation}sમાંથી
+  $R$ના યોગ્ય ઉપયોગ વડે ફલિત થતું હોય.
+
+  એક સરળ કિસ્સો \RightR{\land} નિયમનો
+  છે. $\pi$નો અંત યોગ્ય
+  $\RightR{\land}$ અનુમાનથી થતો હોય,
+  તો તે આ પ્રમાણે દેખાય:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta, !A$
+    
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !B$
+
+    \RightLabel{\RightR\land}
+    \BinaryInf$\Gamma \fCenter \Delta, !A \land !B$
+  \end{prooftree}
+  એટલે, !!{derivation}~$\pi$નું છેલ્લું
+  અનુમાન $\RightR{\land}$નો યોગ્ય ઉપયોગ
+  ત્યારે અને માત્ર ત્યારે છે જ્યારે
+  !!{sentence}sની શ્રેણીઓ $\Gamma$ અને
+  $\Delta$, તેમજ બે !!{sentence}s
+  $!A$ અને~$!B$ એવાં હોય કે
+  $\pi_1$નું અંતિમ સિક્વન્ટ
+  $\Gamma \Sequent \Delta, !A$,
+  $\pi_2$નું અંતિમ સિક્વન્ટ
+  $\Gamma \Sequent \Delta, !B$ અને
+  $\pi$નું અંતિમ સિક્વન્ટ
+  $\Gamma \Sequent \Delta, !A \land !B$ હોય.
+  આને ગડેલ-સંખ્યાઓમાં વ્યક્ત કરીએ.
+  $s = \Gn{\Gamma \Sequent \Delta}$
+  હોય, તો $(s)_0 = \Gn{\Gamma}$
+  અને $(s)_1 = \Gn{\Delta}$.
+  તેથી $\fn{FollowsBy}_{\RightR{\land}}(p)$
+  ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
+\begin{align*}
+& \bexists{g < p}{\bexists{d < p}{\bexists{a < p}{\bexists{b < p}{\quad}}}} \\
+& \qquad \fn{EndSequent}(p) = 
+  \tuple{g, d \concat 
+    \tuple{\Gn{(} \concat a \concat \Gn{\land} \concat b \concat \Gn{)}}} \land {} \\
+& \qquad \fn{EndSequent}((p)_1) = \tuple{g, d \concat \tuple{a}} \land {}\\
+& \qquad \fn{EndSequent}((p)_2) = \tuple{g, d \concat \tuple{b}} \land {}\\
+& \qquad (p)_0 = 2 \land \fn{LastRule}(p) = 10.
+\end{align*}
+અનુક્રમે આ પંક્તિઓ કહે છે કે
+``ગડેલ-સંખ્યા~$g$ ધરાવતી
+શ્રેણી~($\Gamma$), ગડેલ-સંખ્યા~$d$
+ધરાવતી શ્રેણી~($\Delta$),
+ગડેલ-સંખ્યા~$a$ ધરાવતું
+!!a{formula}~($!A$) અને
+ગડેલ-સંખ્યા~$b$ ધરાવતું
+!!a{formula}~($!B$) અસ્તિત્વમાં છે'';
+``$\pi$નું અંતિમ સિક્વન્ટ
+$\Gamma \Sequent \Delta, !A \land !B$
+છે''; ``$\pi_1$નું અંતિમ સિક્વન્ટ
+$\Gamma \Sequent \Delta, !A$ છે'';
+``$\pi_2$નું અંતિમ સિક્વન્ટ
+$\Gamma \Sequent \Delta, !B$ છે'';
+અને ``$\pi$નાં બે સીધાં
+ઉપપ્રમાણો છે તથા છેલ્લો અનુમાન-નિયમ
+$\RightR\land$ (નંબર~$10$) છે.''
+
+$\pi$નું છેલ્લું અનુમાન
+$\RightR\lexists$નો યોગ્ય ઉપયોગ હોય,
+તો અને માત્ર તો જ !!a{formula}~$!A$,
+ચલ~$x$, પદ~$t$ અને શ્રેણીઓ
+$\Gamma$, $\Delta$ એવાં હોય કે
+$\pi$નું અંતિમ સિક્વન્ટ
+$\Gamma \Sequent \Delta, \lexists[x][!A]$
+અને $\pi_1$નું અંતિમ સિક્વન્ટ
+$\Gamma \Sequent \Delta,
+\Subst{!A}{t}{x}$ હોય. તેથી
+ગડેલ-સંખ્યાઓમાં
+$\fn{FollowsBy}_{\RightR\lexists}(p)$
+ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
+\begin{align*}
+  & \bexists{g<p}{\bexists{d<p}{\bexists{a<p}{\bexists{x<p}{\bexists{t<p}{\quad}}}}}\\
+  & \qquad \fn{EndSequent}(p) = 
+  \tuple{
+    g,
+    d \concat \tuple{\Gn{\lexists} \concat x \concat a}
+  } \land {}\\
+  & \qquad \fn{EndSequent}((p)_1) = 
+  \tuple{
+    g,
+    d \concat \tuple{\fn{Subst}(a, t, x)}
+  } \land {}\\
+  & \qquad (p)_0 = 1 \land \fn{LastRule}(p) = 18.
+\end{align*}
+હવે $\fn{Correct}(p)$ને આ પ્રમાણે
+વ્યાખ્યાયિત કરીએ:
+\begin{multline*}
+  \fn{Sequent}(\fn{EndSequent}(p)) \land {}\\ 
+  [(\fn{LastRule}(p) = 1 \land 
+  \fn{FollowsBy}_{\LeftR\Weakening}(p)) \lor \dots \lor {}\\
+  (\fn{LastRule}(p) = 20 \land \fn{FollowsBy}_{\eq}(p)) \lor {}\\
+  (p)_0 = 0 \land \fn{InitSeq}(\fn{EndSequent}(p))]
+\end{multline*}
+\sourcecorrection{OLINC-008}{સ્થિર અંગ્રેજી મૂળમાં
+આરંભિક સિક્વન્ટના ગુણધર્મનું નામ
+પહેલાં $\fn{InitSeq}$ છે, પણ આ
+છેલ્લી પંક્તિમાં $\fn{InitialSeq}$ છે.
+અહીં અગાઉ વ્યાખ્યાયિત નામ જ રાખ્યું છે.
+આગળની સમજૂતીમાં અંતિમ સિક્વન્ટને
+ભૂલથી~$d$નું કહેવામાં આવ્યું છે;
+અહીં યોગ્ય ચલ~$p$ રાખ્યો છે.}
+પહેલી પંક્તિથી~$p$નું અંતિમ સિક્વન્ટ
+ખરેખર !!{sentence}sનું સિક્વન્ટ છે
+તે નિશ્ચિત થાય છે. છેલ્લી પંક્તિ
+$p$ માત્ર આરંભિક સિક્વન્ટ હોય તે
+કિસ્સાને આવરી લે છે.
+\end{proof}
+
+\begin{prob}
+  \olref[inc][art][plk]{prop:followsby}ની
+  જેમ નીચેના ગુણધર્મો વ્યાખ્યાયિત કરો:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Cut}(p)$,
+  \item $\fn{FollowsBy}_{\LeftR\lif}(p)$,
+  \item $\fn{FollowsBy}_{\eq}(p)$,
+  \item $\fn{FollowsBy}_{\RightR{\lforall}}(p)$.
+  \end{enumerate}
+  છેલ્લા ગુણધર્મ માટે એ પણ બતાવવું પડશે
+  કે ગડેલ-સંખ્યા~$p$ ધરાવતી
+  !!{derivation}નું છેલ્લું અનુમાન
+  વિશિષ્ટ ચલની શરત સંતોષે છે કે નહીં
+  તે આદિમ પુનરાવર્તી રીતે ચકાસી શકાય.
+  એટલે $\RightR{\lforall}$નો વિશિષ્ટ
+  ચલ~$a$ અંતિમ સિક્વન્ટમાં આવતો નથી.
+  \end{prob}
+  
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  યોગ્ય !!{derivation}~$\pi$ની
+  ગડેલ-સંખ્યા~$p$ હોય ત્યારે સત્ય
+  થતો સંબંધ~$\fn{Deriv}(p)$ આદિમ
+  પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  !!^a{derivation}~$\pi$ ત્યારે યોગ્ય
+  છે જ્યારે તેનું દરેક અનુમાન કોઈ
+  નિયમનો યોગ્ય ઉપયોગ હોય, એટલે કે
+  દરેક ઉપ-!!{derivation}નો અંત યોગ્ય
+  અનુમાનથી થતો હોય. તેથી
+  $\fn{Deriv}(p)$ ત્યારે અને માત્ર ત્યારે,
+  જ્યારે
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(p)}}{\fn{Correct}((\fn{SubtreeSeq}(p))_i)}.
+  \]
+  \sourcecorrection{OLINC-009}{સ્થિર અંગ્રેજી
+  મૂળમાં આ અનુચ્છેદના ગદ્યમાં
+  $\fn{Deriv}(d)$ લખ્યું છે, જ્યારે
+  વિધાન અને સૂત્રનો ચલ~$p$ છે.
+  મૂળ સૂત્રમાં $\fn{Correct}$ના ઘટકનું
+  બંધ કૌંસ પણ છૂટી ગયું છે; અહીં
+  બંને અસંગતતાઓ સુધારી છે.}
+\end{proof}
+
+
+\begin{prop}
+$\Gamma$ એ !!{sentence}sનો આદિમ
+પુનરાવર્તી ગણ હોય એમ ધારો. ત્યારે
+$\Prf[\Gamma](x, y)$ સંબંધ આદિમ
+પુનરાવર્તી છે. તેનો અર્થ એ છે કે
+$x$ એ કોઈ સાન્ત
+$\Gamma_0 \subseteq \Gamma$ માટે
+$\Gamma_0 \Sequent !A$ની
+!!a{derivation}~$\pi$નો સંકેત છે અને
+$y$ એ~$!A$ની ગડેલ-સંખ્યા છે.
+\end{prop}
+
+\begin{proof}
+``$y \in \Gamma$'' આદિમ પુનરાવર્તી
+વિધાન~$R_\Gamma(y)$ વડે આપવામાં
+આવ્યું હોય એમ ધારો. આપણે બતાવવું છે
+કે $\Prf[\Gamma](x, y)$ આદિમ
+પુનરાવર્તી છે. આ સંબંધ ત્યારે અને
+માત્ર ત્યારે સત્ય છે જ્યારે $y$ એ
+વાક્ય~$!A$ની ગડેલ-સંખ્યા
+હોય અને $x$ એ અંતિમ સિક્વન્ટ
+$\Gamma_0 \Sequent !A$ ધરાવતી
+$\Log{LK}$-!!{derivation}નો સંકેત હોય.
+
+અગાઉના વિધાન પ્રમાણે, $x$ એ
+$\Log{LK}$માં યોગ્ય
+!!{derivation}~$\pi$નો સંકેત હોય
+ત્યારે સત્ય થતો
+$\fn{Deriv}(x)$ ગુણધર્મ આદિમ
+પુનરાવર્તી છે. $x$ એવો સંકેત હોય,
+તો $\fn{EndSequent}(x)$ એ~$\pi$ના
+અંતિમ સિક્વન્ટનો સંકેત છે. તેથી
+$(\fn{EndSequent}(x))_0$ અંતિમ
+સિક્વન્ટની ડાબી બાજુનો સંકેત છે
+અને $(\fn{EndSequent}(x))_1$
+જમણી બાજુનો સંકેત છે. આમ,
+``$\pi$ના અંતિમ સિક્વન્ટની જમણી
+બાજુ માત્ર~$!A$ છે'' તે
+$\len{(\fn{EndSequent}(x))_1} = 1
+\land ((\fn{EndSequent}(x))_1)_0 = y$
+વડે વ્યક્ત થાય છે.
+\sourcecorrection{OLINC-010}{સ્થિર અંગ્રેજી મૂળના
+આ ગદ્ય-સૂત્રમાં છેલ્લે $y$ને બદલે
+$x$ છે; પરંતુ તરત નીચેની
+$\Prf[\Gamma](x,y)$ની વ્યાખ્યામાં
+યોગ્ય રીતે $y$ છે. અહીં ગદ્ય-સૂત્રને
+એ જ વ્યાખ્યા સાથે મેળમાં કર્યું છે.}
+$\pi$ના અંતિમ સિક્વન્ટની ડાબી
+બાજુ તો આપોઆપ સાન્ત છે; માત્ર
+તેનું દરેક વાક્ય~$\Gamma$માં છે
+તે વ્યક્ત કરવું પડે. આમ
+$\Prf[\Gamma](x, y)$ને આ પ્રમાણે
+વ્યાખ્યાયિત કરી શકીએ:
+\begin{align*}
+\Prf[\Gamma](x, y) \defiff {}&
+\fn{Deriv}(x) \land {} \\
+& \bforall{i <
+  \len{(\fn{EndSequent}(x))_0}}{R_\Gamma(((\fn{EndSequent}(x))_0)_i)} \land {}\\
+& \len{(\fn{EndSequent}(x))_1} = 1 \land ((\fn{EndSequent}(x))_1)_0 = y.
+\end{align*}
+\end{proof}
+
+\end{document}

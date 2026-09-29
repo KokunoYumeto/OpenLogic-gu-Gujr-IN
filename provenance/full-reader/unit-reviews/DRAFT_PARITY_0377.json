@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0377",
+  "checked_at_utc": "2026-09-27T07:42:38.737891+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0377 truth values and relations; state-only draft",
+  "report": {
+    "unit_id": "OLP-0377",
+    "source_path": "content/lambda-calculus/lambda-definability/truth-values.tex",
+    "source_sha256": "c59cf879d08ccb846c28886a957ffee1a5256157e9a160af104606743eb9006c",
+    "draft_path": "private-state\\work\\batch038_draft\\truth-values.tex",
+    "draft_sha256": "f681b771cd63a5183d03e18eee17db7f5316d3407753a9b4fe6f94a9696058fb",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 49,
+    "target_math_spans_after_corrections": 49,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLLAM-053"
+    ],
+    "source_detector_ascii_tokens": 322,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7
+    ]
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

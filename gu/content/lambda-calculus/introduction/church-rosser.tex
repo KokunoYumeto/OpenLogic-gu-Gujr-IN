@@ -1,0 +1,40 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: church-rosser
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{cr}
+\olsection{ચર્ચ--રોસર ગુણધર્મ}
+
+\begin{thm}
+\ollabel{thm:church-rosser}
+$M$, $N_1$ અને~$N_2$ એવાં પદો હોય કે $M \red N_1$ અને $M \red
+N_2$. તો એવું પદ~$P$ છે કે $N_1 \red P$ અને $N_2 \red P$.
+\end{thm}
+
+\begin{cor}
+માનો કે~$M$નું સામાન્ય સ્વરૂપમાં લઘુકરણ થઈ શકે છે. તો આ
+સામાન્ય સ્વરૂપ અનન્ય છે.
+\end{cor}
+
+\begin{proof}
+જો $M \red N_1$ અને $M \red N_2$, તો અગાઉના પ્રમેય મુજબ એવું
+પદ~$P$ છે કે~$N_1$ અને~$N_2$ બંનેનું~$P$માં લઘુકરણ થાય છે.
+$N_1$ અને~$N_2$ બંને સામાન્ય સ્વરૂપમાં હોય, તો આ ત્યારે જ બની
+શકે જ્યારે $N_1 \ident P \ident N_2$.
+\end{proof}
+
+છેલ્લે, બે પદો~$M$ અને~$N$ કોઈ એક જ પદમાં લઘુકૃત થાય તો તેમને
+\emph{$\beta$-સામ્યવાળાં}, અથવા ટૂંકમાં \emph{સામ્યવાળાં},
+કહીશું. એટલે કે એવું~$P$ હોય કે $M \red P$ અને $N \red P$.
+તેને $M \equal[\beta] N$ લખીએ છીએ. 
+\olref{thm:church-rosser}નો ઉપયોગ કરીને ચકાસી શકાય કે
+$\equal[\beta]$ સામ્ય-સંબંધ છે અને તેમાં વધારાનો ગુણધર્મ છે:
+દરેક $M$ અને~$N$ માટે $M \red N$ અથવા $N \red M$ હોય તો
+$M \equal[\beta] N$. (ખરેખર, આ ગુણધર્મ ધરાવતા સામ્ય-સંબંધોમાં
+$\equal[\beta]$ \emph{સૌથી નાનો} છે એમ બતાવી શકાય.)
+
+\end{document}

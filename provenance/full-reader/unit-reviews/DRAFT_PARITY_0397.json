@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0397",
+  "checked_at_utc": "2026-09-27T09:30:50.265911+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0397 multiple designation, LP and related logics; state-only draft",
+  "report": {
+    "unit_id": "OLP-0397",
+    "source_path": "content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+    "source_sha256": "4345be8f1da0718c7667fcae18709d7e2688c5e576f07e3e043f36e7eb99216f",
+    "draft_path": "private-state\\work\\batch039_draft\\multiple-designation.tex",
+    "draft_sha256": "57a202c8ebe87402889ad59176e016539a0ef289dfb1342e8bffff3a2e4178a3",
+    "aligned_blocks": 27,
+    "linguistic_blocks": 22,
+    "source_math_spans_correction_aware": 144,
+    "target_math_spans_after_corrections": 149,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMV-008",
+      "OLMV-009",
+      "OLMV-010"
+    ],
+    "source_detector_ascii_tokens": 525,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      12,
+      14
+    ],
+    "plus_truth_table_cell_and_order_exact": true,
+    "prose_scan_tabular_exception": "one parity-verified table removed from prose scan; its column code is structural TeX",
+    "LP_tautology_claim_restricted_to_common_fragment": true
+  },
+  "status": "draft_linguistic_math_table_and_visible_source_proof_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

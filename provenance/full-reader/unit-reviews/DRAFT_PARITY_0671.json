@@ -1,0 +1,72 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0671",
+  "checked_at_utc": "2026-09-28T20:00:32.436809+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0671 Translation from N2 to G2 with Cut; state-only draft",
+  "report": {
+    "unit_id": "OLP-0671",
+    "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+    "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+    "draft_path": "private-state\\work\\batch044_draft\\translation-N2i.tex",
+    "draft_sha256": "a014c075911efbf1f9fd20795b537efe33c5283c33c42accb29c6fb7a8774015",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 67,
+    "target_math_spans_after_corrections": 67,
+    "glossary_tokens": 14,
+    "source_correction_notes": [
+      "OLMD-249",
+      "OLMD-250",
+      "OLMD-251"
+    ],
+    "source_detector_ascii_tokens": 224,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\Log{G2c}\\ (\\Log{N2i}) + \\Cut",
+        "\\Log{G2c}\\ (\\Log{G2i}) + \\Cut"
+      ],
+      [
+        "$\\Gamma_2' \\Sequent \\ $",
+        "$\\Gamma_2' \\Sequent !B$"
+      ],
+      [
+        "\\Deduce$x: \\lnot !A, \\Gamma' \\fCenter $",
+        "\\Deduce$\\lnot !A, \\Gamma' \\fCenter $"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "શિથિલીકરણ",
+          "સંકોચન",
+          "કટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

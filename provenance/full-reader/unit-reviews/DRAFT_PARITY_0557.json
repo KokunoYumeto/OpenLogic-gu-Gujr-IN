@@ -1,0 +1,84 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0557",
+  "checked_at_utc": "2026-09-28T01:15:07.492159+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0557 successor and limit ordinals, simple induction, and least strict upper bounds; state-only draft",
+  "report": {
+    "unit_id": "OLP-0557",
+    "source_path": "content/set-theory/ordinals/opps.tex",
+    "source_sha256": "f53aa4197833752c4ecdd3d7755c8e13cdec164fd68d0261dac26290a95cd171",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+    "draft_sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 61,
+    "target_math_spans_after_corrections": 61,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 296,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-basic.tex",
+        "sha256": "04651b060194f7d1566c1b81a0f5ab73b80a6d025107ba0db0a280141af07554",
+        "terms": [
+          "અનંતાતીત અનુમાન",
+          "ક્રમવાચક સંખ્યા",
+          "પરંપરિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+        "sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+        "terms": [
+          "ક્રમપ્રકાર",
+          "પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\function-basics.tex",
+        "sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+        "terms": [
+          "અનુગામી"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\arithmetization\\cuts.tex",
+        "sha256": "4c561ba8bc656647400630dd331bc68ed1f4eb170eb9ab4cb7253303306b4565",
+        "terms": [
+          "ન્યૂનતમ ઉચ્ચસીમા"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\orders.tex",
+        "sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c",
+        "terms": [
+          "કડક ક્રમ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The limit-ordinal definition explicitly excludes zero as well as successor ordinals.",
+      "The two distinct senses of sup(X) in the footnote are retained as frozen math with the Gujarati strict/non-strict distinction; lsub is kept as a printed abbreviation, not untranslated prose.",
+      "The final minimality proof's implicit comparison to an arbitrary other strict upper bound is made explicit in Gujarati without modifying any formula.",
+      "The set Y uses the earlier Replacement scheme; no infinite union of a proper class is implicitly formed."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "lsub",
+        "count": 1,
+        "reason": "The fixed printed abbreviation of the frozen supstrict notation is explained in Gujarati."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

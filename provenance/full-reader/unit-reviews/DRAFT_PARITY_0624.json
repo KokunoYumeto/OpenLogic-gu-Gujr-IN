@@ -1,0 +1,64 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0624",
+  "checked_at_utc": "2026-09-28T15:23:45.019196+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0624 Gerhard Gentzen biography, proof systems, and wartime history; state-only draft",
+  "report": {
+    "unit_id": "OLP-0624",
+    "source_path": "content/history/biographies/gerhard-gentzen.tex",
+    "source_sha256": "408dd58408ae82521025e8fcaa688d6025ed3bd84752721b826906bfcde5e6a0",
+    "draft_path": "private-state\\work\\batch044_draft\\gerhard-gentzen.tex",
+    "draft_sha256": "d1d40ec50036b2f0f21e8ad82adbab821be3edf8c3dd5a2b101458fc4b7f0bd3",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 2,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 398,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\proof-systems\\sequent-calculus.tex",
+        "sha256": "91f89402c36aacf95aac325abee69ee78c588149b34c164023d9ceff86cb1581",
+        "terms": [
+          "ગેરહાર્ડ ગેન્ટ્ઝને",
+          "સિક્વન્ટ કલન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\proof-systems\\natural-deduction.tex",
+        "sha256": "ef088e5f8594092cf8410502829ab7686231f9f7d7e44d7f42b5b124720ff356",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Untersuchungen \\\"{u}ber das logische Schlie\\ss en I--II",
+        "count": 1,
+        "reason": "Exact German proper title of Gentzen's papers retained with a Gujarati gloss."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "gentzen-gerhard",
+        "count": 1,
+        "reason": "Frozen portrait asset key; the visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

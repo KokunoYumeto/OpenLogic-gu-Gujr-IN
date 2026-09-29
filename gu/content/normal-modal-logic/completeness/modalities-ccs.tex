@@ -1,0 +1,262 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: modalities-ccs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{mod}
+
+\olsection{મોડલ સંચાલકો અને પૂર્ણ સુસંગત ગણો}
+
+\begin{explain}
+જ્યારે આપણે કોઈ સામાન્ય મોડલ તર્ક~$\Sigma$ના પૂર્ણ
+$\Sigma$-સુસંગત ગણો~$\Delta$ને જગતો તરીકે લઈને
+નિદર્શન~$\mModel{M^\Sigma}$ રચીશું, ત્યારે આ ``જગતો'' વચ્ચે
+પ્રાપ્યતા સંબંધ~$R^\Sigma$ પણ વ્યાખ્યાયિત કરવો પડશે. આપણે ઇચ્છીએ
+છીએ કે પ્રાપ્યતા સંબંધ (અને નિયુક્તિ~$V^\Sigma$) એવી રીતે
+વ્યાખ્યાયિત થાય કે $\mSat{M^\Sigma}{!A}[\Delta]$ જો અને માત્ર જો
+$!A \in \Delta$. તે કેવી રીતે કરવું?
+\sourcecorrection{OLMD-035}{મૂળમાં નિયુક્તિના ચિહ્નની પાછળનું બંધ
+કૌંસ ગણિત-ચિહ્નની અંદર છે; અહીં કૌંસને ગણિત-ચિહ્નની બહાર રાખ્યું છે.}
+
+પ્રાપ્યતા સંબંધ વ્યાખ્યાયિત કર્યા પછી જગત પર સત્યની વ્યાખ્યાથી
+\iftag{prvBox}{$\mSat{M^\Sigma}{\Box!A}[\Delta]$ જો અને માત્ર જો
+  $R^\Sigma\Delta\Delta'$ હોય તેવા બધાં $\Delta'$ માટે
+  $\mSat{M^\Sigma}{!A}[\Delta']$}{$\mSat{M^\Sigma}{\Diamond!A}[\Delta]$
+  જો અને માત્ર જો $R^\Sigma\Delta\Delta'$ હોય તેવા ઓછામાં ઓછા એક
+  $\Delta'$ માટે $\mSat{M^\Sigma}{!A}[\Delta']$}.
+$\mSat{M^\Sigma}{!A}[\Delta]$ જો અને માત્ર જો $!A \in \Delta$
+એ સાબિત કરવા ખાસ કરીને મોડલ સંચાલકથી શરૂ થતા !!{formula}s માટે પણ
+આ સાચું હોવું જરૂરી છે, એટલે કે
+\iftag{prvBox}{$\mSat{M^\Sigma}{\Box!A}[\Delta]$ જો અને માત્ર જો
+  $\Box !A \in \Delta$}{$\mSat{M^\Sigma}{\Diamond!A}[\Delta]$
+  જો અને માત્ર જો $\Diamond !A \in \Delta$}. આ આવશ્યકતાને
+\iftag{prvBox}{$\Box !A$}{$\Diamond !A$} માટે જગત પર સત્યની
+વ્યાખ્યા સાથે જોડવાથી મળે છે:
+\[
+\iftag{prvBox}{%
+  \Box!A \in \Delta \text{ જો અને માત્ર જો } !A \in \Delta' \text{
+    એવા બધા $\Delta'$ માટે કે } R^\Sigma\Delta\Delta'}{%
+  \Diamond!A \in \Delta \text{ જો અને માત્ર જો } !A \in \Delta' \text{ એવા
+    ઓછામાં ઓછા એક } \Delta' \text{ માટે કે } R^\Sigma\Delta\Delta'}
+\]
+\iftag{prvBox}{ડાબેથી જમણી દિશા જુઓ: તે કહે છે કે જો
+  $\Box !A \in \Delta$ હોય, તો કોઈપણ $!A$ અને
+  $R^\Sigma\Delta\Delta'$ હોય તેવા કોઈપણ $\Delta'$ માટે
+  $!A \in \Delta'$. જો આપણે $R^\Sigma\Delta\Delta'$ જો અને માત્ર
+  જો $\Box!A \in \Delta$ હોય તેવા બધા સૂત્રો માટે $!A \in \Delta'$
+  એવું નક્કી કરીએ, તો આ વિધાન સાચું રહેશે. ``જો અને માત્ર જો''ની
+  જમણી બાજુની શરત વધુ સંક્ષેપમાં આમ લખી શકાય:
+  $\Setabs{!A}{\Box!A \in \Delta} \subseteq \Delta'$.}{જમણેથી
+  ડાબી દિશા જુઓ: તે કહે છે કે જો $!A \in \Delta'$ હોય તો
+  $\Diamond!A \in \Delta$, કોઈપણ $!A$ અને
+  $R^\Sigma\Delta\Delta'$ હોય તેવા $\Delta'$ માટે. જો આપણે
+  $!A \in \Delta'$ હોય તેવા બધા સૂત્રો માટે $\Diamond!A \in \Delta$
+  હોય ત્યારે $R^\Sigma\Delta\Delta'$ માનીએ, તો આ વિધાન સાચું
+  રહેશે. ``જો અને માત્ર જો''ની જમણી બાજુની શરત વધુ સંક્ષેપમાં આમ
+  લખી શકાય: $\Setabs{\Diamond!A}{!A \in \Delta'} \subseteq \Delta$.}
+
+તો પ્રશ્ન એ છે: $R^\Sigma$ની આ વ્યાખ્યા ખરેખર ખાતરી આપે છે કે
+\iftag{prvBox}{$\Box !A \in \Delta$ જો અને માત્ર જો
+  $\mSat{M^\Sigma}{\Box !A}[\Delta]$?
+  \iftag{prvDiamond}{શું તે એ પણ ખાતરી આપે છે કે }{}}{}%
+\iftag{prvDiamond}{$\Diamond !A \in \Delta$ જો અને માત્ર જો
+  $\mSat{M^\Sigma}{\Diamond !A}[\Delta]$?}{}
+આગળનાં થોડાં પરિણામો આ સ્થાપિત કરશે.
+\end{explain}
+
+\begin{defn}
+  જો $\Gamma$ એ !!{formula}sનો ગણ હોય, તો મૂકો
+  \begin{align*}
+    \Box\Gamma & = \Setabs{\Box !B}{!B \in \Gamma}\\
+    \Diamond\Gamma & = \Setabs{\Diamond !B}{!B \in \Gamma}\\
+    \intertext{અને}
+    \Box^{-1}\Gamma & = \Setabs{!B}{\Box !B \in \Gamma}\\
+    \Diamond^{-1}\Gamma & = \Setabs{!B}{\Diamond !B \in \Gamma}\\
+  \end{align*}
+\end{defn}
+
+બીજા શબ્દોમાં, $\Box\Gamma$ એટલે~$\Gamma$નો એવો ગણ જેમાં
+દરેક !!{formula}~$\Gamma$માંથી લઈને તેની આગળ $\Box$ મૂકેલો હોય;
+અને $\Box^{-1}\Gamma$ એટલે~$\Gamma$ના
+$\Box$થી શરૂ થતા બધાં !!{formula}sમાંથી શરૂઆતના $\Box$ દૂર કરીને
+મળેલો ગણ. આ વ્યાખ્યા પોતે બહુ મહત્વની નથી, પરંતુ સંકેતન ઘણું સરળ
+બનાવશે.
+
+નોંધો કે $\Box\Box^{-1}\Gamma \subseteq \Gamma$:
+\[
+\Box\Box^{-1}\Gamma = \Setabs{\Box!B}{\Box!B \in \Gamma}
+\]
+એટલે કે આ~$\Gamma$નાં $\Box$થી શરૂ થતા બધાં !!{formula}sનો જ ગણ છે.
+
+\begin{lem}\ollabel{lem:box1}
+  જો $\Gamma \Proves[\Sigma] !A$ હોય, તો $\Box\Gamma
+  \Proves[\Sigma] \Box !A$.
+\end{lem}
+
+\begin{proof}
+  જો $\Gamma \Proves[\Sigma] !A$ હોય, તો એવાં $!B_1$, \dots,
+  $!B_k \in \Gamma$ છે કે $\Sigma \Proves !B_1 \lif (!B_2 \lif
+  \cdots (!B_k \lif !A)\cdots)$. $\Sigma$ સામાન્ય હોવાથી
+  નિયમ~\RK{} મુજબ $\Sigma \Proves \Box!B_1 \lif (\Box!B_2 \lif
+  \cdots (\Box!B_k \lif \Box!A)\cdots)$, જ્યાં સ્પષ્ટ રીતે
+  $\Box!B_1$, \dots, $\Box!B_k \in \Box\Gamma$. તેથી વ્યાખ્યા મુજબ
+  $\Box\Gamma \Proves[\Sigma] \Box !A$.
+  \sourcecorrection{OLMD-036}{મૂળની બંને શૃંખલાના છેલ્લા પદમાં
+  સૂચક બદલાઈ જાય છે; ગણમાં પસંદ કરાયેલા સૂત્રોની સંખ્યા સાથે મેળ
+  રાખવા અહીં એ જ અંતિમ સૂચક વાપર્યો છે.}
+\end{proof}
+
+\begin{lem}\ollabel{lem:box2}
+  જો $\Box^{-1} \Gamma \Proves[\Sigma] !A$ હોય, તો $\Gamma
+  \Proves[\Sigma] \Box!A$.
+\end{lem}
+
+\begin{proof}
+  ધારો કે $\Box^{-1}\Gamma \Proves[\Sigma] !A$; ત્યારે
+  \olref{lem:box1} મુજબ $\Box\Box^{-1}\Gamma \Proves \Box!A$.
+  પરંતુ $\Box\Box^{-1}\Gamma \subseteq \Gamma$ હોવાથી
+  એકદિશવર્ધિતાથી $\Gamma \Proves[\Sigma] \Box!A$ પણ મળે છે.
+\end{proof}
+
+\iftag{prvBox}{%
+% Box is primitive
+
+\begin{prop}\ollabel{prop:box}
+  જો $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોય, તો $\Box !A \in
+  \Gamma$ જો અને માત્ર જો $\Box^{-1} \Gamma \subseteq \Delta$
+  હોય તેવા દરેક પૂર્ણ $\Sigma$-સુસંગત ગણ $\Delta$ માટે
+  $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+  ધારો કે $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત છે. ``માત્ર જો'' દિશા
+  સરળ છે: ધારો કે $\Box !A \in \Gamma$ અને $\Box^{-1}\Gamma
+  \subseteq \Delta$. $\Box!A \in \Gamma$ હોવાથી
+  $!A \in \Box^{-1}\Gamma \subseteq \Delta$; તેથી
+  $!A \in \Delta$.
+
+  ``જો'' દિશા માટે પ્રતિપક્ષી વિધાન સાબિત કરીએ: ધારો કે
+  $\Box!A \notin \Gamma$. $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોવાથી
+  તે નિષ્પત્તિ હેઠળ બંધ છે; તેથી $\Gamma \Proves/[\Sigma] \Box !A$.
+  \olref{lem:box2} મુજબ $\Box^{-1}\Gamma \Proves/[\Sigma] !A$.
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  મુજબ $\Box^{-1}\Gamma \cup \{ \lnot!A \}$ એ
+  $\Sigma$-સુસંગત છે. લિન્ડનબાઉમના સહાયક પ્રમેયથી એવો પૂર્ણ
+  $\Sigma$-સુસંગત ગણ~$\Delta$ છે કે $\Box^{-1}\Gamma \cup
+  \{ \lnot!A \} \subseteq \Delta$. સુસંગતતાથી $!A \notin \Delta$.
+\end{proof}
+}{%
+% Box is not primitive, only Diamond is
+
+\begin{prop}\ollabel{prop:diamond}
+  જો $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોય, તો $\Diamond !A \in
+  \Gamma$ જો અને માત્ર જો એવો કોઈ પૂર્ણ $\Sigma$-સુસંગત ગણ
+  $\Delta$ હોય કે $\Diamond\Delta \subseteq \Gamma$ અને
+  $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+  ધારો કે $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત છે. જમણેથી ડાબી દિશા
+  સરળ છે: એવો પૂર્ણ $\Sigma$-સુસંગત ગણ $\Delta$ લો કે
+  $\Diamond\Delta \subseteq \Gamma$ અને $!A \in \Delta$.
+  ત્યારે $\Diamond!A \in \Diamond\Delta \subseteq \Gamma$,
+  એટલે $\Diamond!A \in \Gamma$.
+
+  ડાબેથી જમણી દિશા માટે $\Diamond !A \in \Gamma$ ધારો. આપણે
+  એવો પૂર્ણ $\Sigma$-સુસંગત ગણ $\Delta$ બતાવવો છે કે
+  $!A \in \Delta$ અને $\Diamond\Delta \subseteq \Gamma$.
+  $\Diamond !A \in \Gamma$ અને $\Gamma$ એ $\Sigma$-સુસંગત હોવાથી
+  $\Box\lnot !A \notin \Gamma$. $\Gamma$ પૂર્ણ
+  $\Sigma$-સુસંગત હોવાથી તે નિષ્પત્તિ હેઠળ બંધ છે; તેથી
+  $\Gamma \Proves/[\Sigma] \Box\lnot !A$.
+  \olref{lem:box2} મુજબ $\Box^{-1}\Gamma \Proves/[\Sigma] \lnot !A$.
+  \olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-b}
+  મુજબ $\Box^{-1}\Gamma \cup \{ !A \}$ એ $\Sigma$-સુસંગત છે.
+  લિન્ડનબાઉમના સહાયક પ્રમેયથી એવો પૂર્ણ $\Sigma$-સુસંગત
+  ગણ~$\Delta$ છે કે $\Box^{-1}\Gamma \cup \{ !A \} \subseteq
+  \Delta$. સ્પષ્ટ રીતે $!A \in \Delta$. હવે $\Diamond\Delta
+  \subseteq \Gamma$ છે તે જોવા ધારો કે એવું નથી: કોઈ
+  $!B \in \Delta$ માટે $\Diamond !B \notin \Gamma$.
+  ત્યારે $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોવાથી
+  $\Box\lnot !B \in \Gamma$. પણ તેથી $\lnot !B \in
+  \Box^{-1}\Gamma \subseteq \Delta$ પણ મળે છે, જે $\Delta$ને
+  અસુસંગત બનાવે છે.
+\end{proof}
+}
+
+\begin{lem}\ollabel{lem:box-iff-diamond}
+  ધારો કે $\Gamma$ અને $\Delta$ પૂર્ણ $\Sigma$-સુસંગત છે.
+  ત્યારે $\Box^{-1}\Gamma \subseteq \Delta$ જો અને માત્ર જો
+  $\Diamond\Delta \subseteq \Gamma$.
+\end{lem}
+
+\begin{proof}
+  ``માત્ર જો'' દિશા: $\Box^{-1}\Gamma \subseteq \Delta$ ધારો અને
+  $\Diamond!A \in \Diamond\Delta$ (એટલે કે $!A \in \Delta$)
+  માનો. $\Diamond!A \in \Gamma$ બતાવવા $\Box\lnot!A \notin
+  \Gamma$ બતાવવું પૂરતું છે, કારણ કે ત્યારે મહત્તમતાથી
+  $\lnot\Box\lnot !A \in \Gamma$. હવે જો $\Box\lnot!A \in
+  \Gamma$ હોય, તો પૂર્વધારણાથી $\lnot!A \in \Delta$, જે
+  $\Delta$ની સુસંગતતા વિરુદ્ધ છે (કારણ કે $!A \in \Delta$).
+  તેથી જરૂરી મુજબ $\Box\lnot!A \notin \Gamma$.
+
+  ``જો'' દિશા: $\Diamond\Delta \subseteq \Gamma$ ધારો.
+  પ્રતિપક્ષી દલીલ કરીએ: $!A \notin \Delta$ માનીને
+  $\Box!A \notin \Gamma$ બતાવીએ. જો $!A \notin \Delta$ હોય,
+  તો મહત્તમતાથી $\lnot!A \in \Delta$ અને તેથી પૂર્વધારણાથી
+  $\Diamond\lnot!A \in \Gamma$. પરંતુ સામાન્ય મોડલ તર્કમાં
+  $\Diamond\lnot!A$ એ $\lnot\Box !A$ને સમકક્ષ છે; અને છેલ્લું
+  સૂત્ર $\Gamma$માં હોય તો સુસંગતતાથી $\Box!A \notin\Gamma$,
+  જેમ જોઈતું હતું.
+\end{proof}
+
+\iftag{prvBox}{%
+  \iftag{prvDiamond}{%
+% Box and Diamond are both primitive; prove
+% prop:diamond using lem:box-iff-diamond
+
+\begin{prop}\ollabel{prop:diamond}
+  જો $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોય, તો $\Diamond !A \in
+  \Gamma$ જો અને માત્ર જો એવો કોઈ પૂર્ણ $\Sigma$-સુસંગત ગણ
+  $\Delta$ હોય કે $\Diamond\Delta \subseteq \Gamma$ અને
+  $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+ધારો કે $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત છે. \Dual{} અને નિષ્પત્તિ
+હેઠળની બંધતા મુજબ $\Diamond!A \in \Gamma$ જો અને માત્ર જો
+$\lnot\Box\lnot !A \in \Gamma$. $\Gamma$ પૂર્ણ
+$\Sigma$-સુસંગત હોવાથી
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot} મુજબ
+$\lnot\Box\lnot !A \in \Gamma$ જો અને માત્ર જો
+$\Box\lnot !A \notin \Gamma$. \olref{prop:box} મુજબ
+$\Box\lnot !A \notin \Gamma$ જો અને માત્ર જો એવો કોઈ પૂર્ણ
+$\Sigma$-સુસંગત ગણ $\Delta$ હોય કે $\Box^{-1}\Gamma
+\subseteq \Delta$ અને $\lnot!A \notin \Delta$. હવે આવો
+કોઈપણ~$\Delta$ લો. \olref{lem:box-iff-diamond} મુજબ
+$\Box^{-1}\Gamma \subseteq \Delta$ જો અને માત્ર જો
+$\Diamond\Delta \subseteq \Gamma$. વધુમાં,
+\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot} મુજબ
+$\lnot !A \notin \Delta$ જો અને માત્ર જો $!A \in \Delta$.
+તેથી $\Diamond!A \in \Gamma$ જો અને માત્ર જો એવો કોઈ પૂર્ણ
+$\Sigma$-સુસંગત ગણ $\Delta$ હોય કે $\Diamond\Delta
+\subseteq \Gamma$ અને $!A \in \Delta$.
+\end{proof}
+
+}{}}{}
+
+\begin{prob}
+  બતાવો કે જો $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોય, તો
+  \iftag{prvBox}{$\Diamond !A \in \Gamma$ જો અને માત્ર જો એવો પૂર્ણ
+    $\Sigma$-સુસંગત ગણ $\Delta$ છે કે $\Box^{-1}\Gamma
+    \subseteq \Delta$ અને $!A \in \Delta$.}{$\Box !A \in
+    \Gamma$ જો અને માત્ર જો $\Box^{-1} \Gamma \subseteq \Delta$
+    હોય તેવા દરેક પૂર્ણ $\Sigma$-સુસંગત ગણ $\Delta$ માટે
+    $!A \in \Delta$.} આ સાબિતી
+  \olref[nml][com][mod]{lem:box-iff-diamond} વાપર્યા \emph{વિના} કરો.
+\end{prob}
+
+\end{document}

@@ -1,0 +1,133 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-symbols
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{cod}
+\olsection{ચિહ્નોનું સંકેતબદ્ધીકરણ}
+
+પ્રથમ-ક્રમના તર્કશાસ્ત્રની મૂળભૂત ભાષા~$\Lang L$
+નીચેના ચિહ્નો વાપરે છે:
+\[
+\lfalse \quad \lnot \quad \lor \quad \land \quad \lif \quad \lforall
+\quad \lexists \quad \eq \quad ( \quad ) \quad ,
+\]
+આ સાથે ચલો અને !!{constant}sના
+!!{enumerable} ગણો તથા મનસ્વી સ્થાનિકતાવાળા
+!!{function}s અને !!{predicate}sના
+!!{enumerable} ગણો હોય છે. આપણે દરેક
+ચિહ્નને \emph{સંકેત નંબર} એવી રીતે આપી
+શકીએ કે દરેક ચિહ્નને અનન્ય નંબર મળે અને
+બે જુદાં ચિહ્નોને ક્યારેય એ જ નંબર ન મળે.
+આ શક્ય છે કારણ કે બધા ચિહ્નોનો ગણ
+!!{enumerable} છે અને તેથી તેની તથા
+પ્રાકૃતિક સંખ્યાઓના ગણની વચ્ચે
+!!a{bijection} છે. પરંતુ સંકેત નંબરમાંથી
+ચિહ્ન તથા તેના વિશેની કેટલીક માહિતી
+(દાખલા તરીકે, !!a{function}ની સ્થાનિકતા)
+સંગણનીય રીતે પાછી મેળવી શકાય તેની
+ખાતરી પણ જોઈએ. એ કરવાની ઘણી રીત છે.
+અહીં આદિમ પુનરાવર્તી વિધેયો વાપરતી
+એક રીત આપી છે. (યાદ કરો કે
+$\tuple{n_0, \dots, n_k}$ એ સંખ્યાઓ
+$n_0$, \dots, $n_k$ના અનુક્રમનો સંકેત
+નંબર છે.)
+
+\begin{defn}
+$s$ એ~$\Lang L$નું ચિહ્ન હોય તો
+તેનો \emph{ચિહ્ન-સંકેત}~$\scode s$
+આ પ્રમાણે વ્યાખ્યાયિત કરીએ:
+\begin{enumerate}
+\item $s$ તાર્કિક ચિહ્નોમાંનું હોય તો
+  $\scode s$ નીચેના કોષ્ટક મુજબ છે:
+\[
+\begin{array}{cccccccccc}
+  \lfalse & \lnot & \lor & \land & \lif & \lforall \\
+\tuple{0, 0} & \tuple{0, 1} & \tuple{0, 2} & \tuple{0, 3} &
+\tuple{0, 4} & \tuple{0, 5} \\
+\lexists & \eq & ( & ) & ,\\
+\tuple{0, 6} & \tuple{0, 7} &
+\tuple{0, 8} & \tuple{0, 9} & \tuple{0, 10}
+\end{array}
+\]
+\item $s$ એ~$i$મો ચલ~$\Obj v_i$ હોય, તો $\scode s = \tuple{1, i}$.
+\item $s$ એ~$i$મો !!{constant}~$\Obj c_i$ હોય, તો
+  $\scode s = \tuple{2, i}$.
+\item $s$ એ~$i$મો $n$-સ્થાનિક !!{function}~$\Obj f_i^n$ હોય, તો
+  $\scode s = \tuple{3, n, i}$.
+\item $s$ એ~$i$મો $n$-સ્થાનિક !!{predicate}~$\Obj P_i^n$ હોય, તો
+  $\scode s = \tuple{4, n, i}$.
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+નીચેના સંબંધો આદિમ પુનરાવર્તી છે:
+\begin{enumerate}
+\item $\fn{Fn}(x, n)$ ત્યારે અને માત્ર ત્યારે,
+  જ્યારે કોઈ~$i$ માટે~$x$ એ~$\Obj f^n_i$નો
+  સંકેત નંબર હોય; એટલે~$x$ એ $n$-સ્થાનિક
+  !!{function}નો સંકેત નંબર હોય.
+\item $\fn{Pred}(x, n)$ ત્યારે અને માત્ર ત્યારે,
+  જ્યારે કોઈ~$i$ માટે~$x$ એ~$\Obj P^n_i$નો
+  સંકેત નંબર હોય અથવા~$x$ એ~$\eq$નો
+  સંકેત નંબર અને~$n = 2$ હોય; એટલે~$x$
+  એ $n$-સ્થાનિક !!{predicate}નો સંકેત
+  નંબર હોય.
+\end{enumerate}
+\end{prop}
+
+\begin{defn}
+$s_0, \dots, s_{n-1}$ ચિહ્નોનો અનુક્રમ
+હોય, તો તેની \emph{ગડેલ-સંખ્યા}
+$\tuple{\scode{s_0}, \dots, \scode{s_{n-1}}}$ છે.
+\end{defn}
+
+\begin{explain}
+\emph{સંકેત નંબરો} અને \emph{ગડેલ-સંખ્યાઓ}
+અલગ વસ્તુઓ છે. દાખલા તરીકે, ચલ~$\Obj v_5$
+નો સંકેત નંબર~$\scode{\Obj
+  v_5} = \tuple{1, 5} = 2^2\cdot 3^6$ છે.
+પરંતુ પદ તરીકે વિચારેલું ચલ~$\Obj v_5$
+લંબાઈ~$1$ ધરાવતો ચિહ્નોનો અનુક્રમ પણ
+છે. \emph{પદ}~$\Obj v_5$ની
+\emph{ગડેલ-સંખ્યા}~$\Gn{\Obj v_5}$ એ
+$\tuple{\scode{\Obj v_5}} = 2^{\scode{\Obj
+    v_5} + 1} = 2^{2^2\cdot 3^6 + 1}$ છે.
+\end{explain}
+
+\begin{ex}
+યાદ કરો કે $k_0$, \dots, $k_{n-1}$
+સંખ્યાઓનો અનુક્રમ હોય, તો અવિભાજ્ય
+સંખ્યાઓની ઘાતો વડે થતા સંકેતબદ્ધીકરણમાં
+અનુક્રમ~$\tuple{k_0, \dots, k_{n-1}}$નો
+સંકેત નંબર આ છે:
+\[
+2^{k_0+1}\cdot3^{k_1+1}\cdot \dots \cdot p_{n-1}^{k_{n-1}+1},
+\]
+અહીં~$p_i$ એ~$i$મી અવિભાજ્ય સંખ્યા છે
+(શરૂઆત~$p_0 = 2$થી થાય છે). તેથી,
+દાખલા તરીકે, સૂત્ર~$\eq[\Obj v_0][\Obj 0]$
+અથવા વધુ સ્પષ્ટ રીતે~${\eq}(\Obj v_0,\Obj c_0)$ની
+ગડેલ-સંખ્યા છે:
+\[
+\tuple{\scode{\eq},\scode{(},\scode{\Obj v_0},\scode{,}, \scode{\Obj
+    c_0},\scode{)}}.
+\]
+અહીં $\scode{\eq}$ એ~$\tuple{0,7} = 2^{0+1}\cdot
+3^{7+1}$ અને $\scode{\Obj v_0}$ એ~$\tuple{1,0} = 2^{1+1}\cdot3^{0+1}$,
+વગેરે. તેથી~$\Gn{=(\Obj v_0,\Obj c_0)}$ એ
+\begin{multline*}
+2^{\scode{=} + 1}\cdot 3^{\scode{(}+1}\cdot 5^{\scode{\Obj v_0}+1}
+\cdot 7^{\scode{,} + 1} \cdot 11^{\scode{\Obj c_0}+1} \cdot
+13^{\scode{)}+1} = \\
+2^{2^1\cdot 3^8 + 1}\cdot 3^{2^1\cdot 3^9+1}\cdot 5^{2^2\cdot 3^1+1}
+\cdot 7^{2^1\cdot 3^{11} + 1} \cdot 11^{2^3\cdot3^1+1} \cdot
+13^{2^1\cdot3^{10}+1} = \\
+2^{13\,123}\cdot 3^{39\,367}\cdot 5^{13}\cdot 7^{354\,295}\cdot11^{25}\cdot13^{118\,099}.
+\end{multline*}
+\end{ex}
+
+\end{document}

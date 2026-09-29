@@ -1,0 +1,154 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: systems-distinct
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dis}
+
+\olsection{તંત્રો ભિન્ન છે તે બતાવવું}
+
+\olref[prs]{sec}માં આપણે બે મોડલ તર્ક-તંત્રો હકીકતમાં એક જ તંત્ર છે તે
+કેવી રીતે સાબિત કરવું જોયું. \olref[snd]{thm:soundness} વડે બે મોડલ
+તંત્રો $\Sigma$ અને $\Sigma'$ ભિન્ન છે તે બતાવી શકાય: એવું
+!!a{formula}~$!A$ શોધો કે $\Sigma' \Proves !A$, પરંતુ તે~$\Sigma$ના
+કોઈ નિદર્શનમાં અસત્ય હોય.
+
+\begin{prop}
+  $\Log{KD} \subsetneq \Log{KT}$
+\end{prop}
+
+\begin{proof} આ બધા સ્વવાચક સંબંધો સિરિયલ હોય છે એ અર્થાનુસારી હકીકતનો
+  વાક્યરચનાલક્ષી સમકક્ષ છે. $\Log{KD} \subseteq
+  \Log{KT}$ બતાવવા $\Log{KD} \Proves !B$ હોય તો
+  $\Log{KT} \Proves !B$ થાય છે તે જોવું પડે. તે $\Log{KT} \Proves
+  \Ax{D}$ પરથી મળે છે, જેમ
+  \olref[prs]{prop:S5facts}\olref[prs]{prop:S5facts-KT-D}માં બતાવ્યું છે.\sourcecorrection{OLMD-028}{મૂળમાં અહીં KTમાંથી 'Log D' નિષ્પન્ન થાય એમ છે; નિષ્પન્ન થતું તંત્ર નહિ પરંતુ Dનું સ્વયંસિદ્ધિ-સૂત્ર છે, તેથી Ax D મૂક્યું છે.}
+  સમાવેશ ચુસ્ત છે તે બતાવવા યથાર્થતા
+  (\olref[snd]{thm:soundness}) મુજબ \Log{KD}નું એવું નિદર્શન આપવું પૂરતું
+  છે જેમાં \Ax{T}, એટલે કે $\Box p \lif p$, અસત્ય હોય (આ સરળ કામ
+  અભ્યાસપ્રશ્ન તરીકે છોડ્યું છે). ત્યારે યથાર્થતા મુજબ $\Log{KD}
+  \Proves/ \Box p \lif p$.
+\end{proof}
+
+\begin{prop}
+  $\Log{KB} \neq \Log{K4}$. 
+\end{prop}
+
+\begin{proof}
+  આપણે એવું સંમિત નિદર્શન રચીએ છીએ જેમાં \Ax{4}નો કોઈ દૃષ્ટાંત અસત્ય
+  હોય. તે દૃષ્ટાંત \Log{K4}માં સ્પષ્ટપણે !!{derivable} છે, પરંતુ
+  \Log{KB}માં નથી; તેથી $\Log{K4} \nsubseteq \Log{KB}$ ફલિત થશે.
+  \olref{fig:Bnot4}નું સંમિત નિદર્શન~$\mModel{M}$ લો. નિદર્શન સંમિત
+  હોવાથી~$\mModel{M}$માં \Ax{K} અને~\Ax{B} સત્ય છે
+  (અનુક્રમે \olref[syn][sch]{prop:Kvalid} અને
+  \olref[frd][acc]{thm:soundschemas} મુજબ). પરંતુ
+  $\mSat/{M}{\Box p \lif \Box\Box p}[w_1]$.
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label=above:\mFalse{p},
+    label={below:$\mSat{{}}{\Box p}$\\ $\mSat/{{}}{\Box\Box p}$}] {$w_1$}; 
+    \node[world] (w2) [label=above:\mTrue{p},
+      label=below:$\mSat/{{}}{\Box p}$, right=of w1]{$w_2$}; 
+    \draw[->, bend left] (w1) to (w2); 
+    \draw[->, bend left] (w2) to (w1); 
+  \end{tikzpicture}
+  \caption{\Ax{4}ના દૃષ્ટાંતને અસત્ય બનાવતું સંમિત નિદર્શન.}
+  \ollabel{fig:Bnot4}
+\end{figure}
+ 
+\begin{thm}\ollabel{thm:KTBnot45}
+  $\Log{KTB} \Proves/ \Ax{4}$ અને $\Log{KTB} \Proves/ \Ax{5}$.
+\end{thm}\sourcecorrection{OLMD-029}{મૂળ પ્રમેયમાં KTBમાંથી 'Log 4' અને 'Log 5' નિષ્પન્ન નથી એમ લખાયું છે; નિષ્પન્નતાના જમણે તંત્રના નામને બદલે અનુક્રમે 4 અને 5નાં સ્વયંસિદ્ધિ-સૂત્રો મૂક્યાં છે.}
+
+\begin{proof}
+  \olref[frd][acc]{thm:soundschemas} મુજબ \Ax{T} અને \Ax{B}ના બધા
+  દૃષ્ટાંતો અનુક્રમે દરેક સ્વવાચક અને સંમિત નિદર્શનમાં સત્ય છે. તેથી
+  યથાર્થતા મુજબ એવું સ્વવાચક-સંમિત નિદર્શન શોધવું પૂરતું છે જેના કોઈ
+  જગતમાં~\Ax{4}નો દૃષ્ટાંત અસત્ય હોય, અને~\Ax{5} માટે પણ એમ જ. બંને
+  દાવા માટે આપણે એક જ નિદર્શન વાપરીએ છીએ.
+  \olref{fig:KTBnot45}નું સંમિત, સ્વવાચક નિદર્શન લો. ત્યારે
+  $\mSat/{M}{\Box p \to \Box \Box
+    p}[w_1]$, તેથી \Ax{4} એ $w_1$માં અસત્ય છે. એ જ રીતે,
+  $\mSat/{M}{\Diamond
+    \lnot p \lif \Box \Diamond \lnot p}[w_2]$, તેથી $!A = \lnot p$
+  મૂકેલો~\Ax{5}નો દૃષ્ટાંત~$w_2$માં અસત્ય છે.
+\end{proof}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1) [label={right:\mTrue{p}},
+      label={below: $\mSat{{}}{\Box p}$\\
+        $\mSat/{{}}{\Box\Box p}$\\
+        $\mSat/{{}}{\Diamond\lnot p}$}] {$w_1$};
+    \draw[reflexive above] (w1) to (w1);
+    \node[world] (w2) [label={right:\mTrue{p}}, label={below:
+        $\mSat{{}}{\Diamond\lnot p}$\\
+        $\mSat/{{}}{\Box\Diamond\lnot p}$}, right=of w1] {$w_2$} ;
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w3) [label={right:\mFalse{p}},right=of w2] {$w_3$};
+    \draw[reflexive above] (w3) to (w3);
+    \draw[->, bend left] (w1) to (w2);  
+    \draw[->, bend left] (w2) to (w3);  
+    \draw[->, bend left] (w3) to (w2);  
+    \draw[->, bend left] (w2) to (w1);  
+  \end{tikzpicture}
+  \caption{\olref{thm:KTBnot45} માટેનું નિદર્શન.}
+  \ollabel{fig:KTBnot45}
+\end{figure}
+
+\begin{thm}\ollabel{thm:KD5not4}
+  $\Log{KD5} \neq \Log{KT4} = \Log{S4}$.
+\end{thm}
+
+\begin{proof}
+  \olref[frd][acc]{thm:soundschemas} મુજબ \Ax{D} અને~\Ax{5}ના બધા
+  દૃષ્ટાંતો દરેક સિરિયલ યુક્લિડિયન નિદર્શનમાં સત્ય છે. તેથી એવું
+  સિરિયલ યુક્લિડિયન નિદર્શન શોધવું પૂરતું છે જેના કોઈ જગતમાં~\Ax{4}નો
+  દૃષ્ટાંત અસત્ય હોય. \olref{fig:KD5not4}નું નિદર્શન લો અને નોંધો કે
+  $\mSat/{M}{\Box p
+  \lif \Box\Box p}[w_1]$.
+\end{proof}
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w2) [label=north west:\mTrue{p}]{$w_2$} ;
+    \draw[reflexive left] (w2) to (w2);
+    \node[world] (w1) [label=right:\mFalse{p},
+      label=below:{$\mSat{{}}{\Box p}, \mSat/{{}}{\Box\Box p}$},
+      below right=of w2]{$w_1$};
+    \node[world] (w3) [label=north east:\mTrue{p}, above right=of w1]{$w_3$} ;
+    \draw[reflexive right] (w3) to (w3);
+    \node[world] (w4) [label=right:\mFalse{p},above right=of w2]{$w_4$};
+    \draw[reflexive above] (w4) to (w4);
+    \draw[->] (w1) to (w2);  
+    \draw[->] (w1) to (w3);  
+    \draw[->, bend left=15] (w2) to (w3);
+    \draw[->, bend left=15] (w3) to (w2);  
+    \draw[->, bend left=15] (w2) to (w4);
+    \draw[->, bend left=15] (w4) to (w2);  
+    \draw[->, bend left=15] (w3) to (w4);
+    \draw[->, bend left=15] (w4) to (w3);  
+  \end{tikzpicture}
+  \caption{\olref{thm:KD5not4} માટેનું નિદર્શન.}
+  \ollabel{fig:KD5not4}
+\end{figure}
+
+\begin{prob}
+  $3$ જગતોવાળું નિદર્શન વાપરીને \olref[nml][prf][dis]{thm:KD5not4}નું
+  વૈકલ્પિક પ્રમાણ આપો.
+\end{prob}
+
+\begin{prob}
+  $\Log{KT4} \Proves/ \Ax{B}$ અને $\Log{KT4} \Proves/ \Ax{5}$ બંને
+  બતાવતું એક જ સ્વવાચક પરંપરિત નિદર્શન આપો.
+\end{prob}
+
+\end{document}

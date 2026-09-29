@@ -1,0 +1,140 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+\olfileid{sth}{card-arithmetic}{expotough}
+
+\olsection[થોડાં સરળીકરણો]{ગણાંક ઘાતક્રિયાનાં થોડાં સરળીકરણો}
+
+$\canonord$ની વ્યાખ્યા થોડી જટિલ હતી, પરંતુ તેનાથી
+ગણાંક સરવાળા અને ગુણાકાર માટે ઉપયોગી
+\olref[simp]{cardplustimesmax} મળ્યું. જોકે અનંતાતીત
+ઘાતક્રિયાનું સરળીકરણ એટલી સહેલાઈથી થતું નથી.
+શા માટે તે સમજાવવા સાન્ત કિસ્સાની પરિચિત રીતને
+વિસ્તારતું પરિણામ લઈએ (તેનો પુરાવો ઊંચા અમૂર્ત
+સ્તરે છે):
+
+\begin{prop}\ollabel{simplecardexpo}
+કોઈ પણ ગણાંકો $\cardfont{a}, \cardfont{b},
+\cardfont{c}$ માટે
+$\cardexpo{\cardfont{a}}{\cardfont{b} \cardplus \cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b}} \cardtimes
+\cardexpo{\cardfont{a}}{\cardfont{c}}$ અને
+$\cardexpo{(\cardexpo{\cardfont{a}}{\cardfont{b}})}{\cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b} \cardtimes \cardfont{c}}$.
+\end{prop}
+
+\begin{proof}
+પહેલા દાવા માટે $f \colon
+(\cardfont{b}\disjointsum\cardfont{c}) \to
+\cardfont{a}$ વિધેય લો. તેને ``બે ભાગમાં વહેંચો'':
+દરેક $\beta \in \cardfont{b}$ માટે
+$f_\cardfont{b}(\beta) = f(\beta, 0)$ અને દરેક
+$\gamma \in \cardfont{c}$ માટે
+$f_\cardfont{c}(\gamma) = f(\gamma, 1)$
+વ્યાખ્યાયિત કરો. નકશો $f \mapsto
+\tuple{f_{\cardfont{b}}, f_\cardfont{c}}$ એ
+!!a{bijection}
+$\funfromto{\cardfont{b} \disjointsum \cardfont{c}}{\cardfont{a}} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}} \times
+\funfromto{\cardfont{c}}{\cardfont{a}})$ છે.
+\sourcecorrection{OLMD-137}{મૂળમાં અહીં નકશાનું મૂલ્ય
+$(f_{\cardfont{b}} \times f_\cardfont{c})$
+લખાયું છે. તે બે વિધેયોની કાર્ટેસિયન-ગુણાકાર
+ક્રિયા સૂચવે છે, જ્યારે દર્શાવેલા લક્ષ્ય-ગણનો
+ઘટક વિધેયોની ક્રમિત જોડી છે. તેથી અહીં
+$\tuple{f_{\cardfont{b}}, f_\cardfont{c}}$ લખ્યું છે.}
+
+બીજા દાવા માટે $f \colon \cardfont{c} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}})$ વિધેય લો;
+એટલે દરેક $\gamma \in \cardfont{c}$ માટે
+$f(\gamma) \colon \cardfont{b} \to \cardfont{a}$
+એવું વિધેય છે. હવે દરેક
+$\tuple{\beta, \gamma} \in \cardfont{b} \times
+\cardfont{c}$ માટે
+$f^*(\beta, \gamma) = (f(\gamma))(\beta)$
+વ્યાખ્યાયિત કરો. $f \mapsto f^*$ એ
+!!a{bijection}
+$\funfromto{\cardfont{c}}{(\funfromto{\cardfont{b}}{\cardfont{a}})}
+\to \funfromto{\cardfont{b} \times \cardfont{c}}{\cardfont{a}}$ છે.
+\sourcecorrection{OLMD-138}{મૂળમાં આ નકશાનું
+લક્ષ્ય-ગણ $\funfromto{\cardfont{b} \cardtimes
+\cardfont{c}}{\cardfont{a}}$ લખાયું છે, પરંતુ
+અહીં રચેલું $f^*$ સીધું
+$\cardfont{b}\times\cardfont{c}$ પર વ્યાખ્યાયિત છે.
+એ ગુણાકાર-ગણનો ગણાંક
+$\cardfont{b}\cardtimes\cardfont{c}$ છે;
+આ બે પ્રદેશ વચ્ચે એક-એક અને વ્યાપ્ત વિધેયથી
+સ્થાનાંતરણ કરીને મૂળનું ગણાંક-સમીકરણ મળે છે.}
+\end{proof}
+
+અનંત ગણાંકો સાથે કામ કરીએ ત્યારે
+$\cardexpo{\cardfont{a}}{\cardfont{b}}$ સહેલાઈથી
+ગણી શકીએ એવી રીત આપણને \emph{ગમશે}.
+આ દિશામાં એક સારું પગલું આ છે:
+
+\begin{prop}\ollabel{cardexpo2reduct}
+જો $2 \leq \cardfont{a} \leq \cardfont{b}$ અને
+$\cardfont{b}$ અનંત હોય, તો
+$\cardexpo{\cardfont{a}}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$.
+\end{prop}
+
+\begin{proof}
+\begin{align*}
+	\cardexpo{2}{\cardfont{b}} &\leq 
+	\cardexpo{\cardfont{a}}{\cardfont{b}}\text{, કારણ કે $2 \leq \cardfont{a}$}\\
+	&\leq \cardexpo{(2^\cardfont{a})}{\cardfont{b}}
+	\text{, \olref[opps]{lem:SizePowerset2Exp} મુજબ}\\
+	&= \cardexpo{2}{\cardfont{a} \cardtimes \cardfont{b}}
+	\text{, \olref{simplecardexpo} મુજબ} \\
+	&= \cardexpo{2}{\cardfont{b}}
+	\text{, \olref[simp]{cardplustimesmax} મુજબ}
+\end{align*}
+\end{proof}
+
+ખરેખર આનાથી વધુ સરળીકરણની અપેક્ષા રાખવી
+જોઈએ નહીં, કારણ કે
+\olref[card-arithmetic][opps]{lem:SizePowerset2Exp}
+મુજબ $\cardfont{b} < \cardexpo{2}{\cardfont{b}}$.
+પરંતુ $\cardfont{b} < \cardfont{a}$ હોય ત્યારે
+$\cardexpo{\cardfont{a}}{\cardfont{b}}$ વિશે શું
+કહેવું તે આથી ખબર પડતી નથી. અલબત્ત,
+$\cardfont{b}$ \emph{સાન્ત} હોય તો શું કરવું તે જાણીએ છીએ.
+
+\begin{prop}
+$\cardfont{a}$ અનંત હોય અને $0<n \in \omega$ હોય, તો
+$\cardexpo{\cardfont{a}}{n} = \cardfont{a}$.
+\sourcecorrection{OLMD-139}{મૂળમાં $n \in \omega$
+જ લખાયું છે; પરંતુ $n=0$ હોય ત્યારે
+$\cardexpo{\cardfont{a}}{0}=1$, જે અનંત
+$\cardfont{a}$ જેટલું નથી. તેથી અહીં $n>0$
+શરત દૃશ્ય રીતે ઉમેરેલી છે.}
+\end{prop}
+
+\begin{proof}
+$\cardexpo{\cardfont{a}}{n} = \cardfont{a} \cardtimes \cardfont{a}
+\cardtimes \ldots \cardtimes \cardfont{a} = \cardfont{a}$,
+\olref[simp]{cardplustimesmax} મુજબ.
+\end{proof}
+\noindent
+વળી કેટલાક બીજા કિસ્સાઓમાં પણ
+$\cardexpo{\cardfont{a}}{\cardfont{b}}$નું કદ
+નિયંત્રિત કરી શકીએ છીએ:
+
+\begin{prop}
+જો $2 \leq \cardfont{b} < \cardfont{a} \leq
+\cardexpo{2}{\cardfont{b}}$ અને $\cardfont{b}$ અનંત હોય, તો
+$\cardexpo{\cardfont{a}}{\cardfont{b}} = \cardexpo{2}{\cardfont{b}}$.
+\end{prop}
+
+\begin{proof}
+$\cardexpo{2}{\cardfont{b}}\leq \cardexpo{\cardfont{a}}{\cardfont{b}}
+\leq \cardexpo{(\cardexpo{2}{\cardfont{b}})}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}\cardtimes\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$;
+\olref{cardexpo2reduct} જેવી દલીલ છે.
+\end{proof}
+\noindent
+પરંતુ આથી આગળ વાત ઘણી વધુ સૂક્ષ્મ બને છે.
+
+\end{document}

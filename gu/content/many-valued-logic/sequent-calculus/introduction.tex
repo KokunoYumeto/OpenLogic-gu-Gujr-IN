@@ -1,0 +1,96 @@
+% Part: many-valued-logic
+% Chapter: sequent-calculus
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{int}
+
+\olsection{પરિચય}
+
+શાસ્ત્રીય તર્કશાસ્ત્રનું સિક્વન્ટ કલન કાર્યક્ષમ અને સરળ
+!!{derivation} તંત્ર છે. જો કોઈ બહુમૂલ્ય તર્કશાસ્ત્ર સાન્ત
+સત્યમૂલ્યો ધરાવતી શ્રેણિક વડે વ્યાખ્યાયિત થાય, એટલે કે $V$
+સાન્ત હોય, તો તેના માટે સિક્વન્ટ કલન આપી શકાય છે.
+તે કેવી રીતે કરવું તેનો વિચાર શાસ્ત્રીય કિસ્સામાં સિક્વન્ટોના
+અર્થ અને અનુમાનના નિયમોના સ્વરૂપ પરથી આવે છે.
+
+હવે યાદ કરો કે સિક્વન્ટ
+\begin{align*}
+    !A_1, \dots, !A_m & \Sequent !B_1, \dots, !B_n
+\intertext{નું અર્થઘટન નીચેના !!{formula} તરીકે થઈ શકે છે:}
+    (!A_1 \land \cdots \land !A_m) & \lif (!B_1 \lor \cdots \lor
+!B_n)
+\end{align*}
+\sourcecorrection{OLMV-017}{સ્થિર અંગ્રેજી મૂળ
+સિક્વન્ટની ડાબી બાજુનો છેલ્લો ક્રમસૂચક $n$ લખે છે,
+પણ તરત નીચેના અર્થઘટનમાં ડાબી બાજુ માટે $m$ વાપરે છે.
+બંને બાજુની લંબાઈ સ્વતંત્ર રહે તે માટે અહીં ડાબે
+$!A_1,\dots,!A_m$ અને જમણે $!B_1,\dots,!B_n$ રાખ્યા છે.}
+બીજા શબ્દોમાં, !!^a{valuation}~$\pAssign{v}$ સિક્વન્ટ
+$\Gamma \Sequent \Delta$ને \emph{સંતોષે છે} જો અને માત્ર જો
+કોઈ $!A \in \Gamma$ માટે $\pValue{v}(!A) = \False$ હોય
+અથવા કોઈ $!A \in \Delta$ માટે $\pValue{v}(!A) = \True$ હોય.
+આ અર્થઘટન મુજબ આરંભિક સિક્વન્ટો $!A \Sequent !A$
+હંમેશા સંતોષાય છે, કારણ કે $\pValue v(!A) = \True$ અથવા
+$\pValue{v}(!A) = \False$ હોય છે.
+\sourcecorrection{OLMV-018}{સ્થિર અંગ્રેજી મૂળ
+આરંભિક સિક્વન્ટ અંગેના અસત્ય-કિસ્સામાં
+\texttt{\textbackslash pValue}નું મૂલ્યાંકન-ચલ $v$
+છોડી દે છે. બંને વિકલ્પોમાં એ જ $v$ રાખ્યું છે.}
+
+અહીં બાજુનાં સૂત્રો $\Gamma$ અને $\Delta$ છોડી દઈને
+$\Log{LK}$માં પ્રેરણ સંયોજકના અનુમાન-નિયમો આપ્યાં છે:
+
+\begin{defish}
+    \Axiom$ \fCenter !A$
+    \Axiom$ !B \fCenter $
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$ !A \lif !B \fCenter $
+    \DisplayProof
+    \hfill
+    \Axiom$ !A \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter !A \lif !B $
+    \DisplayProof
+\end{defish}
+
+ઉપર આપેલા સિક્વન્ટના અર્થઘટનને લાગુ કરીએ તો
+$\LeftR{\lif}$ નિયમ કહે છે કે જો $\pValue v(!A) = \True$
+અને $\pValue v(!B) = \False$ હોય, તો
+$\pValue v(!A \lif !B) = \False$ હોય છે. તેવી જ રીતે,
+$\RightR{\lif}$ નિયમ કહે છે કે જો $\pValue v(!A) = \False$
+અથવા $\pValue v(!B) = \True$ હોય, તો
+$\pValue v(!A \lif !B) = \True$ હોય છે. હકીકતમાં,
+આ બંને શરતી વિધાનો દ્વિશરતી છે. $\LeftR{\land}$ અને
+$\RightR{\lor}$ નિયમોના પ્રમાણભૂત સ્વરૂપમાં તેમના
+અનુરૂપ શરતી વિધાનો દ્વિશરતી નહીં હોય. પરંતુ આ
+નિયમોનાં વૈકલ્પિક સ્વરૂપો છે જેમાં તે દ્વિશરતી બને છે:
+
+\begin{defish}
+    \Axiom$!A, !B, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \hfill
+    \Axiom$ \Gamma \fCenter \Delta, !A, !B$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$ \Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+\end{defish}
+
+આ મૂળભૂત વિચાર $n$-મૂલ્ય તર્કશાસ્ત્ર પર લાગુ કરતાં
+બેને બદલે $n$ સ્થાનોવાળું સિક્વન્ટ કલન મળે છે, જેમાં
+દરેક સત્યમૂલ્ય માટે એક સ્થાન હોય છે. $V = \{\False, \Undef, \True\}$
+ધરાવતા ત્રિમૂલ્ય તર્કશાસ્ત્ર માટે સિક્વન્ટ
+$\Gamma \mid \Pi \mid \Delta$ સ્વરૂપનું પદ છે. તે
+!!a{valuation}~$\pAssign v$માં સંતોષાય છે જો અને માત્ર જો
+કોઈ $!A \in \Gamma$ માટે $\pValue{v}(!A) = \False$
+અથવા કોઈ $!A \in \Delta$ માટે $\pValue{v}(!A) = \True$
+અથવા કોઈ $!A \in \Pi$ માટે $\pValue{v}(!A) = \Undef$
+હોય. તેથી આરંભિક સિક્વન્ટો $!A \mid !A \mid !A$
+હંમેશા સંતોષાય છે.
+
+\end{document}

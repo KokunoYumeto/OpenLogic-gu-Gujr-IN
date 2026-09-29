@@ -1,0 +1,67 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: pairs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{pai}
+\olsection{જોડીઓ અને પૂર્વગામી}
+
+\begin{defn}
+$M$ અને~$N$ની જોડી ($\tuple{M,N}$ તરીકે લખાતી)
+આ રીતે વ્યાખ્યાયિત થાય છે:
+\[
+\tuple{M,N} \ident \lambd[f][fMN].
+\]
+\end{defn}
+  
+સહજ રીતે, આ એવું વિધેય છે જે બીજું વિધેય
+સ્વીકારે છે અને તેને જોડીના બંને ઘટકો પર લાગુ
+કરે છે. આ વિચાર પરથી બે પદો લઈને તેમની
+જોડી આપતું રચનાપદ મળે છે:
+\[
+  \fn{Pair} \ident \lambd[mn][\lambd[f][fmn]]
+\]
+જોડી આપેલી હોય ત્યારે તેના ઘટકો પાછા પણ
+મેળવવા છે. તેના માટે બે પ્રવેશ-વિધેયો જોઈએ;
+તે જોડી આર્ગ્યુમેન્ટ તરીકે લે છે અને અનુક્રમે
+પહેલો કે બીજો ઘટક આપે છે:
+\begin{align*}
+  \fn{Fst} & \ident \lambd[p][p(\lambd[mn][m])]\\
+  \fn{Snd} & \ident \lambd[p][p(\lambd[mn][n])]
+\end{align*}
+
+\begin{prob}
+  પ્રવેશ-વિધેયો $\fn{Fst}$ અને $\fn{Snd}$
+  કેમ કામ કરે છે તે સમજાવો.
+\end{prob}
+
+હવે જોડીઓ વડે પૂર્વગામી વિધેયને !!{lambda define}
+કરી શકીએ:
+\[
+  \fn{Pred} \ident \lambd[n][\fn{Fst}(n (\lambd[p][\tuple{\fn{Snd}\, {p}, \fn{Succ}(\fn{Snd}\, {p})}]) \tuple{\num 0, \num 0})]
+\]
+યાદ રાખો કે $\num n\, f x$નું લઘુકરણ
+$f^{n}(x)$માં થાય છે. અહીં~$f$ જોડી~$p$
+સ્વીકારી જોડી~$p$નો બીજો ઘટક તથા એ બીજા ઘટકનો
+અનુગામી ધરાવતી નવી જોડી આપતું વિધેય છે;
+$x$ એ જોડી $\tuple{\num 0,\num 0}$ છે.
+તેથી $n=0$ માટે પરિણામ $\tuple{\num 0,\num 0}$
+અને અન્ય કિસ્સામાં $\tuple{\num{n-1}, \num n}$
+મળે છે. પછી~$\fn{Pred}$ એ પરિણામનો
+પહેલો ઘટક આપે છે.
+\sourcecorrection{OLLAM-052}{સ્થિર અંગ્રેજી મૂળ
+ગદ્યમાં શરૂઆતની અને શૂન્ય માટેની જોડીને
+$\tuple{0,0}$ લખે છે, જ્યારે પદની વ્યાખ્યામાં
+ચર્ચ અંકોની જોડી~$\tuple{\num 0,\num 0}$
+છે. અહીં પદ-સ્તરે ચર્ચ અંક જ લખ્યા છે.}
+
+બાદબાકી~$a$ પર $\fn{Pred}$ને $b$ વાર
+લાગુ કરીને વ્યાખ્યાયિત કરી શકાય:
+\[
+\fn{Sub} \ident \lambd[ab][b \fn{Pred}\, a].
+\]
+    
+\end{document}

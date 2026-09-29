@@ -1,0 +1,1744 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewed_at_utc": "2026-09-12T14:55:37.307145+00:00",
+  "batch": "OLP-0138–0148 First-order Logic introduction under the complete classical first-order profile",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with independently worded reverse paraphrases for all 39 substantive prose blocks. The review focuses on quantifier scope, inductive formula formation, satisfaction under assignments, free and bound variables, validity, entailment, substitution, models, soundness, completeness and all six adjacent disclosed source repairs.",
+  "all_drafted_blocks_directly_compared_during_translation": 50,
+  "reverse_paraphrase_samples": 39,
+  "blocks": [
+    {
+      "segment_id": "OLP-0138-B004",
+      "unit_id": "OLP-0138",
+      "source_path": "upstream/content/first-order-logic/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/first-order-logic.tex",
+      "source_range_utf8": [
+        102,
+        133
+      ],
+      "target_range_utf8": [
+        102,
+        178
+      ],
+      "source_sha256": "2d1956dda70979afc9c5c96a50f5ced830689a098b842cd1256137d25e2c3cda",
+      "target_sha256": "58376b2e973a1349af61589f4f13c33ffc00db24189297ac16e9e9879bc41e91",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P072",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The part title and editorial explanation preserve the first-order/propositional profile distinction, conditional source behavior and planned reduction of repetition.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0138-B005",
+      "unit_id": "OLP-0138",
+      "source_path": "upstream/content/first-order-logic/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/first-order-logic.tex",
+      "source_range_utf8": [
+        135,
+        656
+      ],
+      "target_range_utf8": [
+        180,
+        1241
+      ],
+      "source_sha256": "6c02109f103c91389972355d3b9d4e34ad0ccaf2353d27560076f3d3b8727ffa",
+      "target_sha256": "a3f044ad9e8118cbb76fac580de6e4cdba81e41acca64f5c5c975926cefa5104",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P072",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The part title and editorial explanation preserve the first-order/propositional profile distinction, conditional source behavior and planned reduction of repetition.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0138-B006",
+      "unit_id": "OLP-0138",
+      "source_path": "upstream/content/first-order-logic/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/first-order-logic.tex",
+      "source_range_utf8": [
+        660,
+        1023
+      ],
+      "target_range_utf8": [
+        1245,
+        2077
+      ],
+      "source_sha256": "959c08dc8051627a8bae93aa3b1e76cf640d1c8977c6700f7fada875f2092eee",
+      "target_sha256": "aa1cc5ec4f2833670508a41b3b85f7f846d69dcaa091af5d6f780d4626bc9874",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P072",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The part title and editorial explanation preserve the first-order/propositional profile distinction, conditional source behavior and planned reduction of repetition.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0139-B004",
+      "unit_id": "OLP-0139",
+      "source_path": "upstream/content/first-order-logic/introduction/introduction.tex",
+      "target_path": "gu/content/first-order-logic/introduction/introduction.tex",
+      "source_range_utf8": [
+        132,
+        187
+      ],
+      "target_range_utf8": [
+        132,
+        238
+      ],
+      "source_sha256": "c1e0d03840637dedbdee2849310c1b7a59f459ef731af0c22373ff5c18c33563",
+      "target_sha256": "f4e7efce64fc9cd8770dad965e4fb253086bcf4d8f5cc2cdab649c8b7da4b0e3",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P072",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The chapter driver preserves the introduction's identity and import boundary.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B005",
+      "unit_id": "OLP-0140",
+      "source_path": "upstream/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "source_range_utf8": [
+        187,
+        216
+      ],
+      "target_range_utf8": [
+        187,
+        261
+      ],
+      "source_sha256": "9457dfe194271a234edfaf8df145b1772892a8d3b0aa176e3280e5eaf615264a",
+      "target_sha256": "802fcad2eee6dec873a8546b93a462e8687191eee603e296e9b4d50c0cbd76e4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B006",
+      "unit_id": "OLP-0140",
+      "source_path": "upstream/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "source_range_utf8": [
+        218,
+        1227
+      ],
+      "target_range_utf8": [
+        263,
+        2576
+      ],
+      "source_sha256": "8ac33cd155c850fa55f127ed0041aa09ef7204daff7b847ba95f825fbdc7a7f1",
+      "target_sha256": "92c56042051e3f22a5951add4b134475d6a19581401480b7643c3345b6d1decd",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B007",
+      "unit_id": "OLP-0140",
+      "source_path": "upstream/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "source_range_utf8": [
+        1229,
+        2970
+      ],
+      "target_range_utf8": [
+        2578,
+        6214
+      ],
+      "source_sha256": "0b6fed3583114eda95004bda72eeaaeb15f9de856c614e8c64c0d1f26f50cb09",
+      "target_sha256": "87c597a6647bfb9901d68c6ef3a816f232957adc1478768e1f3a81c7a295964a",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B008",
+      "unit_id": "OLP-0140",
+      "source_path": "upstream/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "source_range_utf8": [
+        2972,
+        3871
+      ],
+      "target_range_utf8": [
+        6907,
+        8644
+      ],
+      "source_sha256": "3a6d8fa778d52e0287f1eab899a80a718cd60326fcf48beeb071483fb8ef2ca5",
+      "target_sha256": "0a4d36f031a996646c0435947f66b45f4ff076beeeb26665a0a6e8dc4e0c0a45",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B009",
+      "unit_id": "OLP-0140",
+      "source_path": "upstream/content/first-order-logic/introduction/first-order-logic.tex",
+      "target_path": "gu/content/first-order-logic/introduction/first-order-logic.tex",
+      "source_range_utf8": [
+        3873,
+        4668
+      ],
+      "target_range_utf8": [
+        9136,
+        10663
+      ],
+      "source_sha256": "eddf00ddabe617e5f3e95bb5da2dac21733785d03bed4a93c574fc7a0dd7f708",
+      "target_sha256": "4697a3b642eba66a5108d62ac8061aa6f6af474a74e835b64cc2bc0354d542d5",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0141-B005",
+      "unit_id": "OLP-0141",
+      "source_path": "upstream/content/first-order-logic/introduction/syntax.tex",
+      "target_path": "gu/content/first-order-logic/introduction/syntax.tex",
+      "source_range_utf8": [
+        176,
+        194
+      ],
+      "target_range_utf8": [
+        176,
+        215
+      ],
+      "source_sha256": "89943fc4d95b3fb17a1d108b7af47cf555ad786b9222e5f35a5fca1b11aa2162",
+      "target_sha256": "5b6bf3e6c282d2edff2503826c506fdb1051f1fd5b5685a848e633f67fb775fd",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The syntax overview preserves the roles of constants, predicates, connectives and quantifiers and the need for an exact inductive definition supporting proofs about every sentence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0141-B006",
+      "unit_id": "OLP-0141",
+      "source_path": "upstream/content/first-order-logic/introduction/syntax.tex",
+      "target_path": "gu/content/first-order-logic/introduction/syntax.tex",
+      "source_range_utf8": [
+        196,
+        1326
+      ],
+      "target_range_utf8": [
+        217,
+        2641
+      ],
+      "source_sha256": "27585fd3c6f91ed6e13548219a58f0731de71066adcd2f965c6d72e5ec7ca5e4",
+      "target_sha256": "594caf882f0f34467149969c0358089aee1d1ba65356f5fca4dbc8d7c8e863e3",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The syntax overview preserves the roles of constants, predicates, connectives and quantifiers and the need for an exact inductive definition supporting proofs about every sentence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0141-B007",
+      "unit_id": "OLP-0141",
+      "source_path": "upstream/content/first-order-logic/introduction/syntax.tex",
+      "target_path": "gu/content/first-order-logic/introduction/syntax.tex",
+      "source_range_utf8": [
+        1328,
+        2823
+      ],
+      "target_range_utf8": [
+        2643,
+        5469
+      ],
+      "source_sha256": "94c9d148789351c009fa44e49c08348d9d2548619fa0571dcbc0f2dc7ea59bf8",
+      "target_sha256": "0363b906afd5915b3cafc27b47dce0198546ff83506b72b34bba2e3b04df6e09",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The syntax overview preserves the roles of constants, predicates, connectives and quantifiers and the need for an exact inductive definition supporting proofs about every sentence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B005",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        178,
+        209
+      ],
+      "target_range_utf8": [
+        178,
+        209
+      ],
+      "source_sha256": "8638206341e182cd4124601bc9492ee68cadb4ae3d846d331a3f56a8212963c6",
+      "target_sha256": "8638206341e182cd4124601bc9492ee68cadb4ae3d846d331a3f56a8212963c6",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B006",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        211,
+        874
+      ],
+      "target_range_utf8": [
+        211,
+        1524
+      ],
+      "source_sha256": "72b09460c66a4a04f9bde37ebefdebb1e7cf012342daa7bd67e749d83e33dafc",
+      "target_sha256": "1052940fbbfb1e90ec19f2c3e057a9325e9d4df3ed65ce63cdde381ed2d45ae9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B007",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        876,
+        1505
+      ],
+      "target_range_utf8": [
+        1526,
+        2660
+      ],
+      "source_sha256": "c7b459e59f71aa43bd3e8b80e73973628abb8e5ab4e02d4fe4b80aaf055d4e9e",
+      "target_sha256": "ca1eef166e42209fc7e221a8ff7a4149d45be13c066963f59f9829c6056d1173",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B008",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        1507,
+        1712
+      ],
+      "target_range_utf8": [
+        2662,
+        2946
+      ],
+      "source_sha256": "a9aa6032bc532cda5e48427de35a9f2ae3bf6eda793e3dfac8364d05e615977f",
+      "target_sha256": "db5c692643bbbb696e0ca448ebdb5c45902a2cd50941026face9ca46f91eea31",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B009",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        1714,
+        1810
+      ],
+      "target_range_utf8": [
+        2948,
+        3068
+      ],
+      "source_sha256": "5433bf5f39d774a1f8373c312f618a6178840f838fc95e2a9727ecb2fa52f341",
+      "target_sha256": "9b0bf9236402a1845b2da56966400a6f0f35e8a1c5afebe9141b1dcf8996ab79",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B010",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        1812,
+        1906
+      ],
+      "target_range_utf8": [
+        3070,
+        3193
+      ],
+      "source_sha256": "fdd7a008581355c303ce7315c709733df87124515d3c571143c72a69f14a8632",
+      "target_sha256": "a5f573aa88ffa2993ca314d925aaee602bdf9a49c4ac3b8856f89a6387b17b7b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B011",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        1908,
+        2035
+      ],
+      "target_range_utf8": [
+        3195,
+        3349
+      ],
+      "source_sha256": "233b25c8ae6143cb4bdd030bb45021629f22ad1c4ef0fa610d1037258bf5816c",
+      "target_sha256": "6d5f4aaf96d13352ce160e28078a18c9245957dd5523c1b731e6e90f7a4cd740",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B012",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        2037,
+        2138
+      ],
+      "target_range_utf8": [
+        3351,
+        3475
+      ],
+      "source_sha256": "1a9655cf69536c3d03e427a5f04841c7919d15f760cfc35361f08ad6a85fafb9",
+      "target_sha256": "3a6b22679d6894fc5ab1edab5863960d210cba9d66d0423f5bf7b69e47effc7d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B013",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        2140,
+        3105
+      ],
+      "target_range_utf8": [
+        3477,
+        4961
+      ],
+      "source_sha256": "95ac50397e31c3f8832482ab95f7ef9d24e8b98ce73b6251b214ea89ed01b6bb",
+      "target_sha256": "5e9c1f2bd17b537165f9517e13f77dac19a381dff7f577f08adf41cf9bd0442d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B014",
+      "unit_id": "OLP-0142",
+      "source_path": "upstream/content/first-order-logic/introduction/formulas.tex",
+      "target_path": "gu/content/first-order-logic/introduction/formulas.tex",
+      "source_range_utf8": [
+        3107,
+        4259
+      ],
+      "target_range_utf8": [
+        4963,
+        7130
+      ],
+      "source_sha256": "9e2c616a79ae65d085e165c78e83556b4884d51a35f3548a57f193bea4557839",
+      "target_sha256": "d1608873ac179296eb019ee4003fa4097ed619d59fedeb4adf7d6c9b648aa6bf",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P077"
+      ],
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B005",
+      "unit_id": "OLP-0143",
+      "source_path": "upstream/content/first-order-logic/introduction/satisfaction.tex",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "source_range_utf8": [
+        182,
+        206
+      ],
+      "target_range_utf8": [
+        182,
+        209
+      ],
+      "source_sha256": "3f9813a24331caeea991c1d4005cd597a1ec3f5f19f7373d4a983b508b43bef4",
+      "target_sha256": "889ffae4b2cd304394635fcac0d5ed121a4b63fd9992f4b0c4ed0c5d99637ac4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B006",
+      "unit_id": "OLP-0143",
+      "source_path": "upstream/content/first-order-logic/introduction/satisfaction.tex",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "source_range_utf8": [
+        208,
+        1070
+      ],
+      "target_range_utf8": [
+        211,
+        1757
+      ],
+      "source_sha256": "89572c7b579278bb0fd1ff7e74d166a574bbf2857b0f98ff36acdb78832832dd",
+      "target_sha256": "004f3cbc3381cb987161db69adc0fe240e69e5d1f6fe520a67e1ddf00b027a1f",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B007",
+      "unit_id": "OLP-0143",
+      "source_path": "upstream/content/first-order-logic/introduction/satisfaction.tex",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "source_range_utf8": [
+        1072,
+        2365
+      ],
+      "target_range_utf8": [
+        2310,
+        4684
+      ],
+      "source_sha256": "5161ce42c6c177370803d8e20e2741a6c2584520d938b24a4d6fed4dfd6bb456",
+      "target_sha256": "ff6982a48afd5f8f74eba118d68174345024453c23f874bd21652e45529d1397",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B008",
+      "unit_id": "OLP-0143",
+      "source_path": "upstream/content/first-order-logic/introduction/satisfaction.tex",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "source_range_utf8": [
+        2367,
+        3402
+      ],
+      "target_range_utf8": [
+        4686,
+        6651
+      ],
+      "source_sha256": "777e662e0bc3968db861b6dfebd553af3994a96216e68596ceea0592ccae9ba3",
+      "target_sha256": "c629a810fe082820a66f6a6891c8cb3697459a38f8767bbe1f0c87b8b26c9943",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B009",
+      "unit_id": "OLP-0143",
+      "source_path": "upstream/content/first-order-logic/introduction/satisfaction.tex",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "source_range_utf8": [
+        3404,
+        5569
+      ],
+      "target_range_utf8": [
+        7072,
+        10990
+      ],
+      "source_sha256": "2910dadff580d6da5d4388bf55efe3b0fb06c6f183ff4c70f3b46f90e909ecfa",
+      "target_sha256": "2becd00bbf9a44c8edf3c7583123816ab37108f8f563bfb9ea95b0bbfa0f2b30",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B010",
+      "unit_id": "OLP-0143",
+      "source_path": "upstream/content/first-order-logic/introduction/satisfaction.tex",
+      "target_path": "gu/content/first-order-logic/introduction/satisfaction.tex",
+      "source_range_utf8": [
+        5571,
+        5877
+      ],
+      "target_range_utf8": [
+        10992,
+        11683
+      ],
+      "source_sha256": "c71f6640fb06fce4bad951cc4debee267301d8ccc142bd833f89f7511094585b",
+      "target_sha256": "10f5edeae014f53230208d054439ec3376ad1b99689d2b2919bac20ca85d9305",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B005",
+      "unit_id": "OLP-0144",
+      "source_path": "upstream/content/first-order-logic/introduction/sentences.tex",
+      "target_path": "gu/content/first-order-logic/introduction/sentences.tex",
+      "source_range_utf8": [
+        179,
+        213
+      ],
+      "target_range_utf8": [
+        179,
+        213
+      ],
+      "source_sha256": "8bafb086014c66761479061c514fd97bfab66cef79517fa447d3ca0b686c98f2",
+      "target_sha256": "8bafb086014c66761479061c514fd97bfab66cef79517fa447d3ca0b686c98f2",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B006",
+      "unit_id": "OLP-0144",
+      "source_path": "upstream/content/first-order-logic/introduction/sentences.tex",
+      "target_path": "gu/content/first-order-logic/introduction/sentences.tex",
+      "source_range_utf8": [
+        215,
+        501
+      ],
+      "target_range_utf8": [
+        215,
+        837
+      ],
+      "source_sha256": "19586f569b5a6a17206ead6248a411e5af6b34b7ee14a0491d55ea1566361eec",
+      "target_sha256": "d7a33fa425713e296458794d7422b17eedd35a15a5010755df82295b3037d3a2",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B007",
+      "unit_id": "OLP-0144",
+      "source_path": "upstream/content/first-order-logic/introduction/sentences.tex",
+      "target_path": "gu/content/first-order-logic/introduction/sentences.tex",
+      "source_range_utf8": [
+        503,
+        1101
+      ],
+      "target_range_utf8": [
+        839,
+        1890
+      ],
+      "source_sha256": "b123c8e52d82feac195dad82233dbe606be38decf83e0807eef9e729801345af",
+      "target_sha256": "8061b01f5c65bde53503dae7c66dff3fd051200d60ca6a46044517d646295839",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B008",
+      "unit_id": "OLP-0144",
+      "source_path": "upstream/content/first-order-logic/introduction/sentences.tex",
+      "target_path": "gu/content/first-order-logic/introduction/sentences.tex",
+      "source_range_utf8": [
+        1103,
+        2541
+      ],
+      "target_range_utf8": [
+        1892,
+        4748
+      ],
+      "source_sha256": "55d4a94345665cbee5e20db6654de8495cce56266bfbbb461dd4b7adb0105668",
+      "target_sha256": "cc23e05bd1e479e6e362f4b9a316295dce6ec30c0fae7dff2713a70355276cd9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B009",
+      "unit_id": "OLP-0144",
+      "source_path": "upstream/content/first-order-logic/introduction/sentences.tex",
+      "target_path": "gu/content/first-order-logic/introduction/sentences.tex",
+      "source_range_utf8": [
+        2543,
+        2715
+      ],
+      "target_range_utf8": [
+        4750,
+        5102
+      ],
+      "source_sha256": "1046f6a5b8ed9420ff761f9464ac796eeadb891f6404a419e96e6c941e0e72a5",
+      "target_sha256": "5fa8e0a152765b35c0a6c39febfdc52f7b58787996081b1ad627669c7bbdc4a9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0145-B005",
+      "unit_id": "OLP-0145",
+      "source_path": "upstream/content/first-order-logic/introduction/semantic-notions.tex",
+      "target_path": "gu/content/first-order-logic/introduction/semantic-notions.tex",
+      "source_range_utf8": [
+        186,
+        214
+      ],
+      "target_range_utf8": [
+        186,
+        247
+      ],
+      "source_sha256": "d5b561f591bed7cc477fc7edd05fab37cb78bcbb63ea896bc33a470cacecada4",
+      "target_sha256": "1e9cb0b0e6894c66eeb321c354a3d1d1d05212af9eb90227661d50dfe1820cd4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The semantic notions preserve assignment independence for sentences and the exact quantifier order in validity, entailment and satisfiability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0145-B006",
+      "unit_id": "OLP-0145",
+      "source_path": "upstream/content/first-order-logic/introduction/semantic-notions.tex",
+      "target_path": "gu/content/first-order-logic/introduction/semantic-notions.tex",
+      "source_range_utf8": [
+        216,
+        1068
+      ],
+      "target_range_utf8": [
+        249,
+        2058
+      ],
+      "source_sha256": "4415c1a5dfd2a3a614801f31287588b67c781f1268c828c1b725867318f9122d",
+      "target_sha256": "19f47d04aa6e7725f0ca50244be9864b31e0871ed92f2554486cb866ef0739a9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The semantic notions preserve assignment independence for sentences and the exact quantifier order in validity, entailment and satisfiability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0145-B007",
+      "unit_id": "OLP-0145",
+      "source_path": "upstream/content/first-order-logic/introduction/semantic-notions.tex",
+      "target_path": "gu/content/first-order-logic/introduction/semantic-notions.tex",
+      "source_range_utf8": [
+        1070,
+        1724
+      ],
+      "target_range_utf8": [
+        2060,
+        3418
+      ],
+      "source_sha256": "fb230ae8c82d9fdb2297bc0a758b682bc003ac11b9d8eeecede1e95ed121ebf7",
+      "target_sha256": "1e3ab74d6c8d6486e85d5bb3fa12c1dfd0800eb33ffbc86d4028ccae2f8cd885",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The semantic notions preserve assignment independence for sentences and the exact quantifier order in validity, entailment and satisfiability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0145-B008",
+      "unit_id": "OLP-0145",
+      "source_path": "upstream/content/first-order-logic/introduction/semantic-notions.tex",
+      "target_path": "gu/content/first-order-logic/introduction/semantic-notions.tex",
+      "source_range_utf8": [
+        1726,
+        2337
+      ],
+      "target_range_utf8": [
+        3420,
+        4867
+      ],
+      "source_sha256": "4a6c91c2c401c98ebfeae461209cee47b42b80039e5f5bc3cd094741593e1fd9",
+      "target_sha256": "b461fd05afc9f575e7c21fe1be07914245900228ef6739698436aa4aefc3ebce",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P069",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The semantic notions preserve assignment independence for sentences and the exact quantifier order in validity, entailment and satisfiability.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0146-B005",
+      "unit_id": "OLP-0146",
+      "source_path": "upstream/content/first-order-logic/introduction/substitution.tex",
+      "target_path": "gu/content/first-order-logic/introduction/substitution.tex",
+      "source_range_utf8": [
+        182,
+        206
+      ],
+      "target_range_utf8": [
+        182,
+        227
+      ],
+      "source_sha256": "6ba2fb57cd67b9209c3e4b93a3ce748ef2c670c6c7576df031665e6db5a38bf3",
+      "target_sha256": "aac36706da59ef374b65b36bf5bb85bb16d906734060613f7e68d79a20fd8505",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The substitution discussion preserves the universal-instantiation motivation, capture-sensitive nature of substitution and semantic substitution lemma; OLFINT-006 repairs only the malformed Atom argument braces.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0146-B006",
+      "unit_id": "OLP-0146",
+      "source_path": "upstream/content/first-order-logic/introduction/substitution.tex",
+      "target_path": "gu/content/first-order-logic/introduction/substitution.tex",
+      "source_range_utf8": [
+        208,
+        1219
+      ],
+      "target_range_utf8": [
+        229,
+        2137
+      ],
+      "source_sha256": "e47b90ec1f8b76f048ecc86b78c5996a756ad43c0da2c19461fa1f5d70edf494",
+      "target_sha256": "8490df109d8d74dfaeac9feda31a7ab69baab707decbb315c1fc8e11182590b4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The substitution discussion preserves the universal-instantiation motivation, capture-sensitive nature of substitution and semantic substitution lemma; OLFINT-006 repairs only the malformed Atom argument braces.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0146-B007",
+      "unit_id": "OLP-0146",
+      "source_path": "upstream/content/first-order-logic/introduction/substitution.tex",
+      "target_path": "gu/content/first-order-logic/introduction/substitution.tex",
+      "source_range_utf8": [
+        1221,
+        2271
+      ],
+      "target_range_utf8": [
+        2569,
+        4755
+      ],
+      "source_sha256": "9ef30565efc089edd93eec166de84c4c860c1796e259c44a5d9444012dff7fe3",
+      "target_sha256": "65dd5b9d63920a311644cd25e6aaf217155b464c03e3a6369577bebf3e836ab4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P063",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The substitution discussion preserves the universal-instantiation motivation, capture-sensitive nature of substitution and semantic substitution lemma; OLFINT-006 repairs only the malformed Atom argument braces.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0147-B005",
+      "unit_id": "OLP-0147",
+      "source_path": "upstream/content/first-order-logic/introduction/models-theories.tex",
+      "target_path": "gu/content/first-order-logic/introduction/models-theories.tex",
+      "source_range_utf8": [
+        185,
+        216
+      ],
+      "target_range_utf8": [
+        185,
+        256
+      ],
+      "source_sha256": "bfc4ec567ba4493da6de0f34fbc8b779ece73f65fbbedfb7c4ee9602f4940641",
+      "target_sha256": "2cd84626a904b5cd7de2ee2414b3f37fe2753e25325a87e424dd1766b0554a8b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P025",
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The model-theory overview preserves both directions of inquiry, the preorder axiomatization and the expressibility limits supplied by compactness and Löwenheim–Skolem.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0147-B006",
+      "unit_id": "OLP-0147",
+      "source_path": "upstream/content/first-order-logic/introduction/models-theories.tex",
+      "target_path": "gu/content/first-order-logic/introduction/models-theories.tex",
+      "source_range_utf8": [
+        218,
+        1415
+      ],
+      "target_range_utf8": [
+        258,
+        2849
+      ],
+      "source_sha256": "b8261e61916303e043ddb7aad9cd5b91d5cff2420e6162c80cc24fcff1dd905d",
+      "target_sha256": "3a5f628924552cb7681f2eb268397cdaa775627491f75118cc30151b40ffd29d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P025",
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The model-theory overview preserves both directions of inquiry, the preorder axiomatization and the expressibility limits supplied by compactness and Löwenheim–Skolem.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0147-B007",
+      "unit_id": "OLP-0147",
+      "source_path": "upstream/content/first-order-logic/introduction/models-theories.tex",
+      "target_path": "gu/content/first-order-logic/introduction/models-theories.tex",
+      "source_range_utf8": [
+        1417,
+        2919
+      ],
+      "target_range_utf8": [
+        2851,
+        5732
+      ],
+      "source_sha256": "331d905428b1588f5dc1e6a506f8bfe0c3b69feaba30df2099028fd71d360291",
+      "target_sha256": "005bed57f26020436a586bf823cab74f96b29cd2c45a95d70df376b5c28f8018",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P025",
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The model-theory overview preserves both directions of inquiry, the preorder axiomatization and the expressibility limits supplied by compactness and Löwenheim–Skolem.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0147-B008",
+      "unit_id": "OLP-0147",
+      "source_path": "upstream/content/first-order-logic/introduction/models-theories.tex",
+      "target_path": "gu/content/first-order-logic/introduction/models-theories.tex",
+      "source_range_utf8": [
+        2921,
+        3743
+      ],
+      "target_range_utf8": [
+        5734,
+        7339
+      ],
+      "source_sha256": "99fa296658ff7f19cd0b0602fefeaa95329f636aa3b3ab370f2fcc361492c86d",
+      "target_sha256": "b3c9cf62a75725c8d055c3fd68ab21f41040083ec0e980cccb9894c6d851e59c",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P025",
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The model-theory overview preserves both directions of inquiry, the preorder axiomatization and the expressibility limits supplied by compactness and Löwenheim–Skolem.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B005",
+      "unit_id": "OLP-0148",
+      "source_path": "upstream/content/first-order-logic/introduction/soundness-completeness.tex",
+      "target_path": "gu/content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_range_utf8": [
+        192,
+        230
+      ],
+      "target_range_utf8": [
+        192,
+        260
+      ],
+      "source_sha256": "e2cd9925662b62b8fa18347f70f86cbf3ad2f29927517842d4f9b2d35d358d3e",
+      "target_sha256": "c554489b6429aeb36ea2db91e9d99903f0a7c843a1f39715eb474bab0ee6bff4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B006",
+      "unit_id": "OLP-0148",
+      "source_path": "upstream/content/first-order-logic/introduction/soundness-completeness.tex",
+      "target_path": "gu/content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_range_utf8": [
+        232,
+        945
+      ],
+      "target_range_utf8": [
+        262,
+        1630
+      ],
+      "source_sha256": "e2938e1de137fb44f39c602fc5c6756eeaf2b0d38b1574e2c36861daa906ce1e",
+      "target_sha256": "112c9ac9788731d391790fa20e338fcb726114887a7978865695ef76fe861675",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B007",
+      "unit_id": "OLP-0148",
+      "source_path": "upstream/content/first-order-logic/introduction/soundness-completeness.tex",
+      "target_path": "gu/content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_range_utf8": [
+        947,
+        1627
+      ],
+      "target_range_utf8": [
+        1632,
+        2967
+      ],
+      "source_sha256": "43f4cf45afb2faa9ff3f28e44f1b07d00d5fc55c8f404a484580b7a4440f530d",
+      "target_sha256": "7491f86a8e163ac3f3363a01a4d0f451a7ae9796fab45d2e34aacdeb14247305",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B008",
+      "unit_id": "OLP-0148",
+      "source_path": "upstream/content/first-order-logic/introduction/soundness-completeness.tex",
+      "target_path": "gu/content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_range_utf8": [
+        1629,
+        2443
+      ],
+      "target_range_utf8": [
+        2969,
+        4613
+      ],
+      "source_sha256": "121358184e4095366d7e0f3d1cee966ccf3fad778346744a44bc152a79361a89",
+      "target_sha256": "39461113b82d5a504e3d6e1ecb3854482270dc487432fa6fdb415ae703b98953",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B009",
+      "unit_id": "OLP-0148",
+      "source_path": "upstream/content/first-order-logic/introduction/soundness-completeness.tex",
+      "target_path": "gu/content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_range_utf8": [
+        2445,
+        2821
+      ],
+      "target_range_utf8": [
+        4615,
+        5461
+      ],
+      "source_sha256": "4c818c1c2e0d95eaca76e6ff7bee2abdf76cc38e1d23a90d821b7074cff8722a",
+      "target_sha256": "4f6d0151038dd3c80b73a5a08b8968a5a4665551f7df6242ef32fdca7afcc8a9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B010",
+      "unit_id": "OLP-0148",
+      "source_path": "upstream/content/first-order-logic/introduction/soundness-completeness.tex",
+      "target_path": "gu/content/first-order-logic/introduction/soundness-completeness.tex",
+      "source_range_utf8": [
+        2823,
+        3459
+      ],
+      "target_range_utf8": [
+        5463,
+        7187
+      ],
+      "source_sha256": "49b1a9ef4e04cca09b5369104a20ab05ed9435b3607e3b4d40521cd04b169b5c",
+      "target_sha256": "f3058a5414df887a5bc5ec0ad0bfd4f8ea37fbe411721ac41b8d74929eba333d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ],
+  "samples": [
+    {
+      "segment_id": "OLP-0138-B005",
+      "unit_id": "OLP-0138",
+      "source_sha256": "6c02109f103c91389972355d3b9d4e34ad0ccaf2353d27560076f3d3b8727ffa",
+      "target_sha256": "a3f044ad9e8118cbb76fac580de6e4cdba81e41acca64f5c5c975926cefa5104",
+      "reverse_paraphrase": "The first-order part proves its own metatheory through completeness and can suppress quantifier-specific material and swap structures for valuations when the FOL profile is disabled.",
+      "assessment": "The part title and editorial explanation preserve the first-order/propositional profile distinction, conditional source behavior and planned reduction of repetition.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0138-B006",
+      "unit_id": "OLP-0138",
+      "source_sha256": "959c08dc8051627a8bae93aa3b1e76cf640d1c8977c6700f7fada875f2092eee",
+      "target_sha256": "aa1cc5ec4f2833670508a41b3b85f7f846d69dcaa091af5d6f780d4626bc9874",
+      "reverse_paraphrase": "Including a separate propositional part currently repeats material, while a planned source arrangement would omit overlap and refer back to propositional proofs.",
+      "assessment": "The part title and editorial explanation preserve the first-order/propositional profile distinction, conditional source behavior and planned reduction of repetition.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B006",
+      "unit_id": "OLP-0140",
+      "source_sha256": "8ac33cd155c850fa55f127ed0041aa09ef7204daff7b847ba95f825fbdc7a7f1",
+      "target_sha256": "92c56042051e3f22a5951add4b134475d6a19581401480b7643c3345b6d1decd",
+      "reverse_paraphrase": "First-order logic is a formal language whose permitted strings include terms, formulas and sentences, and logicians ask whether its sentences are valid, satisfiable or consequences of others.",
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B007",
+      "unit_id": "OLP-0140",
+      "source_sha256": "0b6fed3583114eda95004bda72eeaaeb15f9de856c614e8c64c0d1f26f50cb09",
+      "target_sha256": "87c597a6647bfb9901d68c6ef3a816f232957adc1478768e1f3a81c7a295964a",
+      "reverse_paraphrase": "Semantics turns an intuitive case into a mathematical structure and truth in a case into satisfaction, thereby making logical consequence precise; OLFINT-001 restores the intended two-premise entailment.",
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B008",
+      "unit_id": "OLP-0140",
+      "source_sha256": "3a6d8fa778d52e0287f1eab899a80a718cd60326fcf48beeb071483fb8ef2ca5",
+      "target_sha256": "0a4d36f031a996646c0435947f66b45f4ff076beeeb26665a0a6e8dc4e0c0a45",
+      "reverse_paraphrase": "Formal systems arrange symbols by rules to derive conclusions from premises, as in natural deduction or truth trees; OLFINT-002 closes the quantified formulas without changing the example.",
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0140-B009",
+      "unit_id": "OLP-0140",
+      "source_sha256": "eddf00ddabe617e5f3e95bb5da2dac21733785d03bed4a93c574fc7a0dd7f708",
+      "target_sha256": "4697a3b642eba66a5108d62ac8061aa6f6af474a74e835b64cc2bc0354d542d5",
+      "reverse_paraphrase": "A metalogical proof must establish that formal derivability matches semantic entailment, which first requires exact syntax and semantics; OLFINT-003 restores the formulas in that biconditional.",
+      "assessment": "The overview preserves the distinctions among syntax, semantics, satisfaction, entailment, formal derivation and the metalogical equivalence connecting them; OLFINT-001 through OLFINT-003 repair only malformed formula scope and brackets.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0141-B006",
+      "unit_id": "OLP-0141",
+      "source_sha256": "27585fd3c6f91ed6e13548219a58f0731de71066adcd2f965c6d72e5ec7ca5e4",
+      "target_sha256": "594caf882f0f34467149969c0358089aee1d1ba65356f5fca4dbc8d7c8e863e3",
+      "reverse_paraphrase": "Constants pick out objects, predicates say things of them, and connectives and quantifiers build more complex sentences from simple atomic ones.",
+      "assessment": "The syntax overview preserves the roles of constants, predicates, connectives and quantifiers and the need for an exact inductive definition supporting proofs about every sentence.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0141-B007",
+      "unit_id": "OLP-0141",
+      "source_sha256": "94c9d148789351c009fa44e49c08348d9d2548619fa0571dcbc0f2dc7ea59bf8",
+      "target_sha256": "0363b906afd5915b3cafc27b47dce0198546ff83506b72b34bba2e3b04df6e09",
+      "reverse_paraphrase": "A rigorous metatheory needs an exact sentence-formation definition that admits exactly the right strings and supports mathematical proofs covering all sentences.",
+      "assessment": "The syntax overview preserves the roles of constants, predicates, connectives and quantifiers and the need for an exact inductive definition supporting proofs about every sentence.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B006",
+      "unit_id": "OLP-0142",
+      "source_sha256": "72b09460c66a4a04f9bde37ebefdebb1e7cf012342daa7bd67e749d83e33dafc",
+      "target_sha256": "1052940fbbfb1e90ec19f2c3e057a9325e9d4df3ed65ce63cdde381ed2d45ae9",
+      "reverse_paraphrase": "The development defines formulas first, then defines sentences as formulas without free variables, a distinction also needed for the semantics of satisfaction.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B007",
+      "unit_id": "OLP-0142",
+      "source_sha256": "c7b459e59f71aa43bd3e8b80e73973628abb8e5ab4e02d4fe4b80aaf055d4e9e",
+      "target_sha256": "ca1eef166e42209fc7e221a8ff7a4149d45be13c066963f59f9829c6056d1173",
+      "reverse_paraphrase": "The simplified language has one predicate, one constant, negation, conjunction, existential quantification and countably many variables, while the full definition also allows functions and infinitely many symbols.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B008",
+      "unit_id": "OLP-0142",
+      "source_sha256": "a9aa6032bc532cda5e48427de35a9f2ae3bf6eda793e3dfac8364d05e615977f",
+      "target_sha256": "db5c692643bbbb696e0ca448ebdb5c45902a2cd50941026face9ca46f91eea31",
+      "reverse_paraphrase": "The inductive base clause makes P(a) and every P(v_i) formulas.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B009",
+      "unit_id": "OLP-0142",
+      "source_sha256": "5433bf5f39d774a1f8373c312f618a6178840f838fc95e2a9727ecb2fa52f341",
+      "target_sha256": "9b0bf9236402a1845b2da56966400a6f0f35e8a1c5afebe9141b1dcf8996ab79",
+      "reverse_paraphrase": "Negating any formula yields another formula.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B010",
+      "unit_id": "OLP-0142",
+      "source_sha256": "fdd7a008581355c303ce7315c709733df87124515d3c571143c72a69f14a8632",
+      "target_sha256": "a5f573aa88ffa2993ca314d925aaee602bdf9a49c4ac3b8856f89a6387b17b7b",
+      "reverse_paraphrase": "Conjoining any two formulas yields another formula.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B011",
+      "unit_id": "OLP-0142",
+      "source_sha256": "233b25c8ae6143cb4bdd030bb45021629f22ad1c4ef0fa610d1037258bf5816c",
+      "target_sha256": "6d5f4aaf96d13352ce160e28078a18c9245957dd5523c1b731e6e90f7a4cd740",
+      "reverse_paraphrase": "Existentially quantifying any formula by any variable yields another formula.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B012",
+      "unit_id": "OLP-0142",
+      "source_sha256": "1a9655cf69536c3d03e427a5f04841c7919d15f760cfc35361f08ad6a85fafb9",
+      "target_sha256": "3a6b22679d6894fc5ab1edab5863960d210cba9d66d0423f5bf7b69e47effc7d",
+      "reverse_paraphrase": "The limiting clause excludes every expression not generated by the preceding formation rules.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B013",
+      "unit_id": "OLP-0142",
+      "source_sha256": "95ac50397e31c3f8832482ab95f7ef9d24e8b98ce73b6251b214ea89ed01b6bb",
+      "target_sha256": "5e9c1f2bd17b537165f9517e13f77dac19a381dff7f577f08adf41cf9bd0442d",
+      "reverse_paraphrase": "Atomic formulas start the construction; repeated constructor clauses generate complex formulas, and only strings obtainable in this way count as formulas.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0142-B014",
+      "unit_id": "OLP-0142",
+      "source_sha256": "9e2c616a79ae65d085e165c78e83556b4884d51a35f3548a57f193bea4557839",
+      "target_sha256": "d1608873ac179296eb019ee4003fa4097ed619d59fedeb4adf7d6c9b648aa6bf",
+      "reverse_paraphrase": "Structural induction proves a property of every formula by handling atoms and showing that each negation, conjunction and quantified constructor preserves the property.",
+      "assessment": "The formula definition preserves all base, constructor and limiting clauses, the free/bound-variable motivation, and the structural-induction proof pattern.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B006",
+      "unit_id": "OLP-0143",
+      "source_sha256": "89572c7b579278bb0fd1ff7e74d166a574bbf2857b0f98ff36acdb78832832dd",
+      "target_sha256": "004f3cbc3381cb987161db69adc0fe240e69e5d1f6fe520a67e1ddf00b027a1f",
+      "reverse_paraphrase": "A structure for the simple language consists of a nonempty domain, one domain element interpreting the constant and one subset interpreting the predicate; OLFINT-004 correctly assigns multiple argument places to predicates.",
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B007",
+      "unit_id": "OLP-0143",
+      "source_sha256": "5161ce42c6c177370803d8e20e2741a6c2584520d938b24a4d6fed4dfd6bb456",
+      "target_sha256": "ff6982a48afd5f8f74eba118d68174345024453c23f874bd21652e45529d1397",
+      "reverse_paraphrase": "Satisfaction mirrors formula construction: the atom is true when the named object lies in the predicate extension, negation reverses truth, and conjunction requires both conjuncts.",
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B008",
+      "unit_id": "OLP-0143",
+      "source_sha256": "777e662e0bc3968db861b6dfebd553af3994a96216e68596ceea0592ccae9ba3",
+      "target_sha256": "c629a810fe082820a66f6a6891c8cb3697459a38f8767bbe1f0c87b8b26c9943",
+      "reverse_paraphrase": "Quantified formulas require a total variable assignment into the domain so that satisfaction can range over possible values; OLFINT-005 makes the example values exactly 0, 1 and 2.",
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B009",
+      "unit_id": "OLP-0143",
+      "source_sha256": "2910dadff580d6da5d4388bf55efe3b0fb06c6f183ff4c70f3b46f90e909ecfa",
+      "target_sha256": "2becd00bbf9a44c8edf3c7583123816ab37108f8f563bfb9ea95b0bbfa0f2b30",
+      "reverse_paraphrase": "Satisfaction relative to a structure and assignment handles constants, variables, negation and conjunction, while an existential is satisfied when a variant assignment gives its variable a witnessing domain value.",
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0143-B010",
+      "unit_id": "OLP-0143",
+      "source_sha256": "c71f6640fb06fce4bad951cc4debee267301d8ccc142bd833f89f7511094585b",
+      "target_sha256": "10f5edeae014f53230208d054439ec3376ad1b99689d2b2919bac20ca85d9305",
+      "reverse_paraphrase": "The extra machinery is cumbersome but necessary for a precise inductive semantics of every formula.",
+      "assessment": "The satisfaction sketch preserves structures, domains, interpretations, variable assignments and every inductive truth clause; OLFINT-004 and OLFINT-005 restore the intended symbol class and domain-respecting assignment values.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B006",
+      "unit_id": "OLP-0144",
+      "source_sha256": "19586f569b5a6a17206ead6248a411e5af6b34b7ee14a0491d55ea1566361eec",
+      "target_sha256": "d7a33fa425713e296458794d7422b17eedd35a15a5010755df82295b3037d3a2",
+      "reverse_paraphrase": "Variable assignments are needed for formulas, so the text next identifies the formulas for which satisfaction can be stated without that extra parameter.",
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B007",
+      "unit_id": "OLP-0144",
+      "source_sha256": "b123c8e52d82feac195dad82233dbe606be38decf83e0807eef9e729801345af",
+      "target_sha256": "8061b01f5c65bde53503dae7c66dff3fd051200d60ca6a46044517d646295839",
+      "reverse_paraphrase": "A quantifier binds matching variable occurrences in its scope; unmatched occurrences are free, and sentences are formulas with no free variables.",
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B008",
+      "unit_id": "OLP-0144",
+      "source_sha256": "55d4a94345665cbee5e20db6654de8495cce56266bfbbb461dd4b7adb0105668",
+      "target_sha256": "cc23e05bd1e479e6e362f4b9a316295dce6ec30c0fae7dff2713a70355276cd9",
+      "reverse_paraphrase": "Free occurrence is defined recursively: atoms begin free, negation and conjunction preserve corresponding freedom, and a quantifier binds the occurrences of its own variable in its scope.",
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0144-B009",
+      "unit_id": "OLP-0144",
+      "source_sha256": "1046f6a5b8ed9420ff761f9464ac796eeadb891f6404a419e96e6c941e0e72a5",
+      "target_sha256": "5fa8e0a152765b35c0a6c39febfdc52f7b58787996081b1ad627669c7bbdc4a9",
+      "reverse_paraphrase": "With free and bound occurrence defined precisely, a sentence is exactly a formula that has no free variable occurrence.",
+      "assessment": "The sentence discussion preserves quantifier scope, free and bound occurrences, the inductive clauses for freedom and the definition of a sentence as a formula with no free variable occurrence.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0145-B006",
+      "unit_id": "OLP-0145",
+      "source_sha256": "4415c1a5dfd2a3a614801f31287588b67c781f1268c828c1b725867318f9122d",
+      "target_sha256": "19f47d04aa6e7725f0ca50244be9864b31e0871ed92f2554486cb866ef0739a9",
+      "reverse_paraphrase": "Only assignments to free variables affect formula satisfaction, so satisfaction of a sentence is assignment-independent and can be written relative to the structure alone.",
+      "assessment": "The semantic notions preserve assignment independence for sentences and the exact quantifier order in validity, entailment and satisfiability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0145-B007",
+      "unit_id": "OLP-0145",
+      "source_sha256": "fb230ae8c82d9fdb2297bc0a758b682bc003ac11b9d8eeecede1e95ed121ebf7",
+      "target_sha256": "1e3ab74d6c8d6486e85d5bb3fa12c1dfd0800eb33ffbc86d4028ccae2f8cd885",
+      "reverse_paraphrase": "A valid sentence holds in every structure, Gamma entails A when every model of Gamma satisfies A, and Gamma is satisfiable when some single structure satisfies all of it.",
+      "assessment": "The semantic notions preserve assignment independence for sentences and the exact quantifier order in validity, entailment and satisfiability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0145-B008",
+      "unit_id": "OLP-0145",
+      "source_sha256": "4a6c91c2c401c98ebfeae461209cee47b42b80039e5f5bc3cd094741593e1fd9",
+      "target_sha256": "b461fd05afc9f575e7c21fe1be07914245900228ef6739698436aa4aefc3ebce",
+      "reverse_paraphrase": "Induction over formulas supports proofs about semantic properties and their relationships, alongside further recursively defined syntactic operations.",
+      "assessment": "The semantic notions preserve assignment independence for sentences and the exact quantifier order in validity, entailment and satisfiability.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0146-B006",
+      "unit_id": "OLP-0146",
+      "source_sha256": "e47b90ec1f8b76f048ecc86b78c5996a756ad43c0da2c19461fa1f5d70edf494",
+      "target_sha256": "8490df109d8d74dfaeac9feda31a7ab69baab707decbb315c1fc8e11182590b4",
+      "reverse_paraphrase": "Universal instantiation must be stated for arbitrary formulas, terms and variables, which requires an exact account of replacing a variable by a term; OLFINT-006 restores the intended universal atomic formula.",
+      "assessment": "The substitution discussion preserves the universal-instantiation motivation, capture-sensitive nature of substitution and semantic substitution lemma; OLFINT-006 repairs only the malformed Atom argument braces.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0146-B007",
+      "unit_id": "OLP-0146",
+      "source_sha256": "9ef30565efc089edd93eec166de84c4c860c1796e259c44a5d9444012dff7fe3",
+      "target_sha256": "65dd5b9d63920a311644cd25e6aaf217155b464c03e3a6369577bebf3e836ab4",
+      "reverse_paraphrase": "Substitution cannot be indiscriminate because capture matters; its semantic lemma equates evaluating the substituted formula with evaluating the original under an assignment changed to the term's value.",
+      "assessment": "The substitution discussion preserves the universal-instantiation motivation, capture-sensitive nature of substitution and semantic substitution lemma; OLFINT-006 repairs only the malformed Atom argument braces.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0147-B006",
+      "unit_id": "OLP-0147",
+      "source_sha256": "b8261e61916303e043ddb7aad9cd5b91d5cff2420e6162c80cc24fcff1dd905d",
+      "target_sha256": "3a5f628924552cb7681f2eb268397cdaa775627491f75118cc30151b40ffd29d",
+      "reverse_paraphrase": "Model theory studies which structures satisfy a theory and which sentences characterize structures, extending the axiomatic method from mathematics into logic.",
+      "assessment": "The model-theory overview preserves both directions of inquiry, the preorder axiomatization and the expressibility limits supplied by compactness and Löwenheim–Skolem.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0147-B007",
+      "unit_id": "OLP-0147",
+      "source_sha256": "331d905428b1588f5dc1e6a506f8bfe0c3b69feaba30df2099028fd71d360291",
+      "target_sha256": "005bed57f26020436a586bf823cab74f96b29cd2c45a95d70df376b5c28f8018",
+      "reverse_paraphrase": "A preorder becomes a structure interpreting a binary predicate by a reflexive and transitive relation, and two first-order sentences axiomatize exactly those properties.",
+      "assessment": "The model-theory overview preserves both directions of inquiry, the preorder axiomatization and the expressibility limits supplied by compactness and Löwenheim–Skolem.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0147-B008",
+      "unit_id": "OLP-0147",
+      "source_sha256": "99fa296658ff7f19cd0b0602fefeaa95329f636aa3b3ab370f2fcc361492c86d",
+      "target_sha256": "b3c9cf62a75725c8d055c3fd68ab21f41040083ec0e980cccb9894c6d851e59c",
+      "reverse_paraphrase": "First-order theories can force an exact finite size or, with infinitely many sentences, infinitude, but compactness and Löwenheim–Skolem prevent expressing finiteness or non-enumerability.",
+      "assessment": "The model-theory overview preserves both directions of inquiry, the preorder axiomatization and the expressibility limits supplied by compactness and Löwenheim–Skolem.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B006",
+      "unit_id": "OLP-0148",
+      "source_sha256": "e2938e1de137fb44f39c602fc5c6756eeaf2b0d38b1574e2c36861daa906ce1e",
+      "target_sha256": "112c9ac9788731d391790fa20e338fcb726114887a7978865695ef76fe861675",
+      "reverse_paraphrase": "Different formal calculi define the same intended derivability relation, and they serve semantics only when Gamma proves A exactly when Gamma entails A.",
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B007",
+      "unit_id": "OLP-0148",
+      "source_sha256": "43f4cf45afb2faa9ff3f28e44f1b07d00d5fc55c8f404a484580b7a4440f530d",
+      "target_sha256": "7491f86a8e163ac3f3363a01a4d0f451a7ae9796fab45d2e34aacdeb14247305",
+      "reverse_paraphrase": "Soundness is the direction from proof to entailment and prevents overgeneration; completeness is the direction from entailment to proof and prevents undergeneration.",
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B008",
+      "unit_id": "OLP-0148",
+      "source_sha256": "121358184e4095366d7e0f3d1cee966ccf3fad778346744a44bc152a79361a89",
+      "target_sha256": "39461113b82d5a504e3d6e1ecb3854482270dc487432fa6fdb415ae703b98953",
+      "reverse_paraphrase": "Inconsistency means deriving a contradiction and rules out models, while completeness supplies the converse model-existence theorem for every consistent sentence set.",
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B009",
+      "unit_id": "OLP-0148",
+      "source_sha256": "4c818c1c2e0d95eaca76e6ff7bee2abdf76cc38e1d23a90d821b7074cff8722a",
+      "target_sha256": "4f6d0151038dd3c80b73a5a08b8968a5a4665551f7df6242ef32fdca7afcc8a9",
+      "reverse_paraphrase": "Compactness and Löwenheim–Skolem follow from soundness and completeness and explain key limits on expressing domain size in first-order logic.",
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0148-B010",
+      "unit_id": "OLP-0148",
+      "source_sha256": "49b1a9ef4e04cca09b5369104a20ab05ed9435b3607e3b4d40521cd04b169b5c",
+      "target_sha256": "f3058a5414df887a5bc5ec0ad0bfd4f8ea37fbe411721ac41b8d74929eba333d",
+      "reverse_paraphrase": "Although historically difficult and technically detailed, the syntax-and-semantics methods developed here are broadly useful in logic, computer science and linguistics.",
+      "assessment": "The overview preserves derivability, the two directions of soundness and completeness, model existence for consistent sets, major consequences and the historical motivation.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    }
+  ]
+}

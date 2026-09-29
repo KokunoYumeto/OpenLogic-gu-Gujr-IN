@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0635",
+  "checked_at_utc": "2026-09-28T15:57:47.133231+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0635 Rigorous limits, corrected punctured-neighbourhood condition and continuity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0635",
+    "source_path": "content/history/set-theory/limits.tex",
+    "source_sha256": "df5d36d65e7abafe7503527229866dfc618527177e567b16ce33ec01c683783d",
+    "draft_path": "private-state\\work\\batch044_draft\\limits.tex",
+    "draft_sha256": "1c3ea3159effc7bdc430b9f09612e894d79c96401a53a9c26e1b617d9bd79eb3",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 53,
+    "target_math_spans_after_corrections": 53,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-167"
+    ],
+    "source_detector_ascii_tokens": 436,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "|x - c| < \\delta \\lif",
+        "0<|x - c| < \\delta \\lif"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\infinitesimals.tex",
+        "sha256": "eaec0e992a68a8820e6b5dcf93b997b354f07f69c1086302e8640108fbce1305",
+        "terms": [
+          "અનંતસૂક્ષ્મો અને વિકલન",
+          "ઢાળ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\completeness\\compactness.tex",
+        "sha256": "fa1e0514041303d1bcd629e1287dabe8c0b45473bddb40bf161053aebdaf5858",
+        "terms": [
+          "અનંતસૂક્ષ્મ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ where a limit exists}",
+        "target": "\\text{ જ્યાં લક્ષ અસ્તિત્વમાં હોય}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 1,
+    "inherited_diagrams_visual_qa": "pending",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

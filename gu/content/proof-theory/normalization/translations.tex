@@ -1,0 +1,790 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{tr}
+
+\olsection{સામાન્ય \Log{N2i}-\usetoken{P}{proof} અને \Log{G2i} વચ્ચેનું રૂપાંતર}
+
+!!^{proof}sને
+\Log{N2i}માંથી
+\Log{G2i}ની
+!!{proof}sમાં
+રૂપાંતરિત કરી
+શકાય છે અને
+ઊલટું પણ.
+પહેલાં, કટ-રહિત
+\Log{G2i}ની
+!!{proof}sનું
+રૂપાંતર સામાન્ય
+\Log{N2i}-!!{proof}s
+આપે છે.
+\sourcecorrection{OLMD-261}{મૂળમાં કટ-રહિત સાબિતીના તંત્રનું નામ \Log{2i} છે, જે અપરિભાષિત છે; અહીં સંદર્ભ અને પૂર્વવર્તી રૂપાંતર મુજબ \Log{G2i} છે.}
+
+પરિણામ કહેવા
+\Log{N2i} અને
+\Log{G2i}ના
+સિક્વન્ટોના
+પૂર્વાંગો વચ્ચેનો
+સંબંધ સરળતાથી
+દર્શાવતું થોડું
+પરિભાષિક ગદ્ય
+જોઈએ: ચિહ્નિત
+!!{formula}sનો
+ગણ~$\Gamma'$
+ચિહ્નવિહોણાં
+!!{formula}sના
+બહુગણ~$\Gamma$ને
+\emph{અનુરૂપ છે},
+જો દરેક
+!!{formula}~$!A$
+માટે~$\Gamma'$માં
+$x : !A$
+સ્વરૂપના
+!!{element}sની
+સંખ્યા~$\Gamma$માં
+$!A$ની બહુલતા
+કરતાં ઓછી કે
+સમાન હોય.
+
+\begin{cor}
+જો
+$\Log{G2i} \Proves \Gamma \Sequent \Delta$
+હોય, તો
+$\Gamma' \Sequent !C$ની
+સામાન્ય
+\Log{N2i}-!!{proof}~$\delta$
+હોય છે. પહેલાના
+સિક્વન્ટના જમણા
+ભાગમાં સૂત્ર
+હોય તો તે
+જ પરિણામનું
+સૂત્ર છે; જમણો
+ભાગ ખાલી હોય
+તો પરિણામ
+અસત્ય છે.
+અહીં
+ચિહ્નિત
+!!{formula}sનો
+ગણ~$\Gamma'$
+બહુગણ~$\Gamma$ને
+અનુરૂપ છે:
+એટલે દરેક
+!!{formula}~$!A$
+માટે~$\Gamma'$માં
+$x : !A$
+સ્વરૂપના
+!!{element}sની
+સંખ્યા~$\Gamma$માં
+$!A$ની બહુલતા
+(એટલે~$!A$ની
+નકલોની સંખ્યા)
+કરતાં ઓછી કે
+સમાન છે.
+\sourcecorrection{OLMD-262}{મૂળ ઉપપત્તિ કટ-રહિત G2iમાંથી N2cની સામાન્ય સાબિતી કહે છે; અગાઉના રૂપાંતર મુજબ લક્ષ્ય \Log{N2i} છે. મૂળમાં જમણો ભાગ ખાલી હોય ત્યારે પરિણામ અસત્ય લેવાય અને એક સૂત્ર હોય ત્યારે તે જ લેવાય તે શરત પણ છૂટી છે.}
+\end{cor}
+
+\begin{proof}
+\olref[nat][tgi]{prop:G2i-to-N2i}ની
+સાબિતી તપાસો:
+!!{introduction} નિયમો
+!!{proof}sના
+અંતે ઉમેરાય છે,
+અને !!{elimination}
+નિયમો ફક્ત
+!!{proof}sની
+ટોચે ઉમેરાય
+છે. તેથી
+!!a{elimination}
+નિયમની ઉપર
+!!{introduction}
+નિયમ કદી
+આવતો નથી.
+\end{proof}
+
+જોકે
+\olref[nat][tgi]{prop:G2i-to-N2i}માં
+આપેલું~\Cut{}
+નિયમનું રૂપાંતર
+\Log{N2i}-!!{proof}~$\delta$માં
+કટ ઊભા કરી
+શકે છે.
+\Log{G2i}ની
+!!{proof}નો
+અંત~\Cut{}માં
+થતો હોય અને
+તેની તત્કાલીન
+ઉપ-!!{proof}s
+$\pi_1$ અને
+$\pi_2$ અનુક્રમે
+$\Gamma_1
+\Sequent !A$
+અને
+$!A, \Gamma_2 \Sequent \Delta_2$
+ની હોય, તો
+$\pi_1$નું
+રૂપાંતર~$\delta_1$,
+$\pi_2$ના
+રૂપાંતર~$\delta_2$માં
+આવતા
+$x:!A
+\Sequent !A$
+સ્વયંસિદ્ધો પર
+કલમ-જોડીએ છીએ.
+$\delta_1$નો
+અંત મુખ્ય
+!!{formula}~$!A$
+ધરાવતા
+!!a{introduction}
+નિયમમાં થાય
+અને~$\delta_2$માંનો
+$x:!A \Sequent !A$
+સ્વયંસિદ્ધ
+!!a{elimination}
+નિયમનું મુખ્ય
+આધારવિધાન હોય,
+તો~$\delta$માં
+કટ ઊભો થાય.
+
+\Log{N2i}ની
+!!{proof}sને
+\Log{G2i}ની
+!!{proof}sમાં
+પણ રૂપાંતરિત
+કરી શકાય છે.
+\olref[nat][tni]{prop:N2-to-G2}ની
+સાબિતીમાં
+\Elim{\land},
+\Elim{\lif},
+\Elim{\lnot} અને
+\Elim{\lforall}નું
+રૂપાંતર પરિણામની
+\Log{G2i}
+!!{proof}માં
+\Cut{} અનુમાનો
+આપે છે.
+જોકે શરૂઆતની
+\Log{N2i}-!!{proof}
+સામાન્ય સ્વરૂપમાં
+હોય, તો આ
+ટાળી શકાય છે.
+\sourcecorrection{OLMD-263}{મૂળનું છેલ્લું વાક્ય ``If the N2i-proof we start from, ...'' અધૂરું છે; આગળનું પ્રતિજ્ઞાપન સ્પષ્ટ કરે છે કે કટ ટાળવા શરૂઆતની સાબિતી સામાન્ય સ્વરૂપમાં હોવી જોઈએ.}
+
+સિક્વન્ટોની
+આવૃત્તિઓની
+યાદી
+$S_1$, \dots,~$S_n$
+ને~\Log{N2i}-!!{proof}~$\delta$માં
+\emph{શાખા} કહીએ,
+જો~$S_1$
+સ્વયંસિદ્ધ હોય
+અને~$S_i$
+કોઈ અનુમાનનું
+મુખ્ય આધારવિધાન
+હોય ત્યારે
+$S_{i+1}$
+તેનું નિષ્કર્ષ
+હોય. બીજા
+શબ્દોમાં, શાખા
+સ્વયંસિદ્ધોથી
+નીચે તરફ
+$\delta$માં
+સિક્વન્ટો અનુસરે
+છે, પણ
+!!{elimination}
+નિયમના ગૌણ
+આધારવિધાન પર
+અટકે છે.
+$S_n$ અંતિમ
+સિક્વન્ટ હોય
+એવી~$\delta$ની
+શાખાને
+\emph{મુખ્ય શાખા}
+કહીએ. દરેક
+!!{proof}~$\delta$માં
+ઓછામાં ઓછી
+એક મુખ્ય શાખા
+હોય છે, કારણ
+કે દરેક નિયમને
+ઓછામાં ઓછું
+એક મુખ્ય
+આધારવિધાન છે
+(ફક્ત~\Intro{\land}ને
+બે છે).
+
+
+\begin{prop}\ollabel{prop:normal-N2i-to-G2i}
+જો~$\delta$ એ
+$\Gamma \Sequent !A$ની
+સામાન્ય
+$\Log{N2c}$ અથવા
+$\Log{N2i}$-!!{proof}
+હોય, તો
+$\Gamma' \Sequent \Delta$ની
+(કટ-રહિત)
+$\Log{G2c}$-!!{proof}
+(અથવા
+$\Log{G2i}$-!!{proof})~$\pi$
+હોય છે. અહીં
+$\Gamma$માંથી
+ચિહ્નો દૂર કરતાં
+મળતો !!{formula}sનો
+બહુગણ~$\Gamma'$
+છે; અને~$!A$
+એ~$\lfalse$
+ન હોય તો
+$\Delta = \{!A\}$,
+જ્યારે હોય તો
+$\Delta = \emptyset$.
+\end{prop}
+
+\begin{proof}
+આ વખતે
+$\Gamma \Sequent !A$ની
+!!{proof}~$\delta$માં
+અનુમાનોની સંખ્યા
+પર આગમન કરીએ.
+$\delta$માં
+એકેય અનુમાન
+ન હોય, તો
+તે સ્વયંસિદ્ધ
+$x:!A \Sequent !A$
+છે અને~$\pi$
+અનુરૂપ સ્વયંસિદ્ધ
+$!A \Sequent !A$
+છે; અથવા
+$!A
+\ident \lfalse$
+હોય તો
+$\lfalse \Sequent \ $
+છે.
+
+જો~$\delta$નો
+અંત અનુમાન-નિયમમાં
+થાય, તો કિસ્સા
+જુદા પાડીએ:
+\begin{enumerate}
+  \item $R$ એ
+  !!a{introduction}
+  નિયમ અથવા~\FalseInt
+  હોય, તો
+  રૂપાંતર
+  \olref[nat][tni]{prop:N2-to-G2}ની
+  સાબિતીની જેમ
+  જ થાય છે
+  અને~\Cut
+  જરૂરી નથી.
+
+  $\delta$નો
+  છેલ્લો નિયમ~$R$
+  !!a{elimination}
+  નિયમ હોય,
+  તો નીચેની
+  વાતો નોંધો:
+  \begin{enumerate}
+    \item $\delta$ની
+    મુખ્ય શાખા
+    કોઈ !!{introduction}
+    નિયમમાંથી
+    પસાર થતી
+    નથી. નહિતર
+    એ શાખા પર
+    !!a{introduction}
+    નિયમ અથવા
+    \FalseInt{}
+    પછી
+    !!a{elimination}
+    નિયમ આવત
+    અને~$\delta$
+    સામાન્ય ન
+    રહેત.
+    \item $\delta$ની
+    મુખ્ય શાખાઓ
+    પર !!{introduction}
+    નિયમો નથી,
+    તેથી મુખ્ય
+    શાખા એક
+    જ છે.
+    (માત્ર
+    \Intro{\land}ને
+    બે મુખ્ય
+    આધારવિધાન છે;
+    એટલે એકથી
+    વધુ મુખ્ય
+    શાખાઓ હોય
+    તો તે
+    \Intro{\land}ના
+    આધારવિધાનોમાંથી
+    પસાર થવી
+    પડે.)
+    \item મુખ્ય
+    શાખામાં
+    \Elim{\lor}
+    અથવા
+    \Elim{\lexists}નું
+    મુખ્ય આધારવિધાન
+    આવે, તો
+    એવો ફક્ત
+    એક જ
+    નિયમ હોય
+    અને તે
+    છેલ્લો
+    નિયમ~$R$
+    હોય.
+    (નહિતર
+    મુખ્ય શાખામાં
+    \Elim{\lor}
+    કે
+    \Elim{\lexists}
+    એવો હોય
+    કે તેનું
+    નિષ્કર્ષ
+    !!a{elimination}
+    નિયમનું મુખ્ય
+    આધારવિધાન
+    બને; પછી
+    ક્રમપરિવર્તન-રૂપાંતર
+    લગાડી શકાય,
+    એટલે સાબિતી
+    સામાન્ય ન
+    હોય.)
+  \item \Elim{\lor}
+  અને
+  \Elim{\lexists}
+  સિવાયના
+  !!{elimination}
+  નિયમો ધારણાઓ
+  મુક્ત કરતા
+  નથી, એટલે
+  સિક્વન્ટના
+  ડાબા સંદર્ભને
+  બદલતા નથી.
+  આ બંને નિયમો
+  ફક્ત ગૌણ
+  આધારવિધાનની
+  ઉપરની ધારણાઓ
+  મુક્ત કરે
+  છે; એટલે
+  ફક્ત પોતાના
+  ગૌણ આધારવિધાનોનો
+  ડાબો સંદર્ભ
+  બદલે છે.
+  બીજા શબ્દોમાં,
+  $\delta$ની
+  મુખ્ય શાખા
+  પરના
+  સિક્વન્ટ~$S_i$નો
+  સંદર્ભ~$\Gamma_1$
+  હોય, તો
+  $S_i$ જે
+  અનુમાનનું
+  મુખ્ય આધારવિધાન
+  છે તેના
+  નિષ્કર્ષ
+  $S_{i+1}$નો
+  સંદર્ભ
+  $\Gamma_1' \supseteq \Gamma_1$
+  હોય છે.
+  \item તેથી
+  મુખ્ય શાખાનો
+  સૌથી ઉપરનો
+  સિક્વન્ટ~$S_1$
+  જો
+  $x: !C \Sequent !C$
+  હોય, તો
+  $x:!C \in \Gamma$.
+  \end{enumerate}
+  હવે~$!C$ના
+  સ્વરૂપ પ્રમાણે
+  કિસ્સા જુદા
+  પાડીએ. મુખ્ય
+  શાખાનું અંતિમ
+  સિક્વન્ટ સિવાયનું
+  દરેક~$S_i$
+  !!a{elimination}
+  નિયમનું મુખ્ય
+  આધારવિધાન છે;
+  તેથી આ વાત
+  $x:!C \Sequent !C$
+  માટે પણ
+  સાચી છે.
+  \sourcecorrection{OLMD-264}{મૂળ કહે છે કે મુખ્ય શાખાનો દરેક $S_i$ લોપ-નિયમનું મુખ્ય આધારવિધાન છે; અંતિમ સિક્વન્ટ પછી કોઈ અનુમાન જ નથી. દાવો અંતિમ સિવાયના $S_i$ માટે છે.}
+
+  \item $!C \ident !D \land !E$
+  હોય. ત્યારે~$\delta$નું
+  સ્વરૂપ આ છે:
+  \[
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  મુખ્ય શાખામાં
+  $x:!D \land !E \Sequent !D$
+  આવે છે. તેમાં
+  \Intro{\lif}
+  કે~\Intro{\lnot}નું
+  મુખ્ય આધારવિધાન
+  નથી, તેમજ
+  \Elim{\lor}
+  કે~\Elim{\lexists}નું
+  ગૌણ આધારવિધાન
+  પણ નથી; તેથી
+  $x:!D
+  \land !E$માંનાં
+  સંદર્ભ-!!{formula}s
+  આખી મુખ્ય
+  શાખામાં યથાવત્
+  રહે છે. તેથી
+  અંતિમ સિક્વન્ટના
+  સંદર્ભમાં
+  $x:!D \land !E$
+  હોવું જ પડે.
+  વળી,
+  !!{proof}~$\delta$માં
+  \Elim{\land}માં
+  પૂરી થતી
+  ઉપ-!!{proof}ના
+  સ્થાને
+  $x:!D \Sequent !D$
+  મૂકીને અને
+  મુખ્ય શાખાના
+  દરેક સિક્વન્ટના
+  સંદર્ભમાં
+  $x:!D \land !E$ના
+  સ્થાને
+  $x:!D$
+  મૂકીને
+  !!{proof}~$\delta_1$
+  મેળવીએ; એટલે
+  આને
+  \[
+  \bottomAlignProof
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \quad\text{માં ફેરવો}\quad
+  \bottomAlignProof
+  \Axiom$x:!D \fCenter !D$
+  \Deduce$x:!D, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પના
+  $\delta_1$ને
+  લાગુ પડે છે,
+  કારણ કે~$\delta$માં
+  અનુમાનોની સંખ્યા
+  $\delta_1$માંની
+  સંખ્યા કરતાં~$1$
+  વધુ છે.
+  \sourcecorrection{OLMD-265}{મૂળમાં આગમનથી બનેલી સાબિતીને $\delta_1$ કહીને પછી અનુમાનોની ગણતરીમાં અપરિભાષિત $\delta'$ વપરાયું છે; અહીં તે જ $\delta_1$ છે.}
+
+  આગમન-પરિકલ્પનાથી
+  $!D, \Gamma_1' \Sequent !A$ની
+  \Log{G2i}-!!{proof}~$\pi_1$
+  મળે છે.
+  \LeftR{\land} લગાવી
+  !!{proof}~$\pi$
+  મેળવીએ:
+  \sourcecorrection{OLMD-266}{મૂળ અહીં G2iની ઉપસાબિતીનું પૂર્વાંગ $x:!D, \Gamma_1$ લખે છે; G2iમાં $x:$ ચિહ્ન નથી અને સંદર્ભ $\Gamma_1'$ છે, જેમ નીચેના વૃક્ષમાં છે.}
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  $!A \ident \lfalse$
+  હોય તો
+  \RightR{\Weakening}
+  ઉમેરીએ, જેમ કે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  \item જો
+  $!C \ident !D \lor !E$
+  હોય, તો તે
+  \Elim{\lor}નું
+  મુખ્ય આધારવિધાન
+  હોવું જોઈએ
+  અને આ અનુમાન
+  મુખ્ય શાખાનું
+  છેલ્લું અનુમાન~$R$
+  હોવું જોઈએ.
+  એટલે~$\delta$નું
+  સ્વરૂપ આ છે:
+  \[
+  \Axiom$x:!D \lor !E \fCenter !D \lor !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$y:!D, \Gamma_1 \fCenter!A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$z:!E, \Gamma_2 \fCenter !A$
+  \RightLabel{\Elim{\lor}}
+  \TrinaryInf$x:!D \lor !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પના
+  !!{proof}s~$\delta_1$
+  અને~$\delta_2$ને
+  લાગુ પડે છે;
+  તેથી
+  $!D, \Gamma_1' \Sequent !A$
+  અને
+  $!E, \Gamma_2' \Sequent !A$ની
+  \Log{G2i}-!!{proof}s
+  $\pi_1$ અને
+  $\pi_2$ મળે છે.
+  $\LeftR{\lor}$
+  લગાવી~$\pi$
+  મેળવીએ:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  $\Elim{\lor}$
+  $y: !D$ અથવા
+  $z: !E$ને
+  મુક્ત ન કરતું
+  હોય (એટલે
+  તે ગૌણ
+  આધારવિધાનોના
+  સંદર્ભમાં
+  ન હોય), અથવા
+  $!A$ એ
+  $\lfalse$
+  હોય, તો
+  કેટલાક
+  \LeftR{\Weakening}
+  અને
+  \RightR{\Weakening}
+  ઉમેરવા પડે.
+  દાખલા તરીકે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!D, \Gamma_1' \fCenter $
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  
+  \item $!C \ident !D \lif !E$
+  હોય. ત્યારે~$\delta$નું
+  સ્વરૂપ આ છે:
+  \[
+  \Axiom$x:!D \lif !E \fCenter !D \lif !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter!D$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  અહીં નોંધો કે
+  $x:!D \lif !E,
+  \Gamma_1 \Sequent !E$
+  ધરાવતી મુખ્ય
+  શાખામાં
+  \Intro{\lif}
+  કે~\Intro{\lnot}નું
+  મુખ્ય આધારવિધાન
+  નથી, તેમજ
+  \Elim{\lor}
+  કે~\Elim{\lexists}નું
+  ગૌણ આધારવિધાન
+  પણ નથી.
+  તેથી
+  $x:!D \lif !E, \Gamma_1$ના
+  સંદર્ભ-!!{formula}s
+  મુખ્ય શાખામાં
+  યથાવત્ રહે
+  છે. આથી
+  અંતિમ સિક્વન્ટના
+  સંદર્ભમાં
+  $x:!D \lif !E, \Gamma_1$
+  આવવું જ જોઈએ.
+  વળી,
+  !!{proof}-ખંડ~$\delta_2$માં
+  \Elim{\lif}માં
+  પૂરી થતી
+  ઉપ-!!{proof}ના
+  સ્થાને
+  $x:!E \Sequent !E$
+  મૂકીએ અને
+  મુખ્ય શાખાના
+  દરેક સિક્વન્ટના
+  સંદર્ભમાં
+  $x:!D \lif !E,
+  \Gamma_1$ના
+  સ્થાને~$x:!E$
+  મૂકીએ, તો
+  યોગ્ય
+  !!{proof}~$\delta_2'$
+  મળે છે;
+  એટલે આને
+  \[
+  \bottomAlignProof
+  \Axiom$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \quad\text{માં ફેરવો}\quad
+  \bottomAlignProof
+  \Axiom$x:!E \fCenter !E$
+  \RightLabel{$\delta_2'$}
+  \Deduce$x:!E, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પના
+  $\delta_1$ અને
+  $\delta_2'$ને
+  લાગુ પડે છે,
+  કારણ કે~$\delta$માં
+  અનુમાનોની સંખ્યા
+  $\delta_1$ અને
+  $\delta_2$માંની
+  અનુમાનોની
+  સંખ્યાના સરવાળાથી~$1$
+  વધુ છે; આ
+  એક અનુમાન
+  મુખ્ય શાખાની
+  શરૂઆતનું
+  \Elim{\lif}
+  છે. (જો
+  આ જ
+  $\delta$નું
+  છેલ્લું
+  અનુમાન~$R$
+  હોય, તો
+  $\delta_1$માં
+  $0$ અનુમાનો
+  છે.)
+
+  આગમન-પરિકલ્પનાથી
+  $\Gamma_1' \Sequent !D$ની
+  \Log{G2i}-!!{proof}~$\pi_1$
+  અને
+  $!E, \Gamma_2' \Sequent !A$ની
+  સાબિતી~$\pi_2$
+  મળે છે.
+  \LeftR{\lif} લગાવી
+  !!{proof}~$\pi$
+  મેળવીએ:
+  \sourcecorrection{OLMD-267}{મૂળના આગમન-પરિણામમાં $\pi_1$ માટે $\Gamma_1$નું ચિહ્નવિહોણું સ્વરૂપ દર્શાવતું પ્રાઇમ નથી અને $\pi_2$ માટે $\Gamma_2'$ને બદલે $\Gamma_1'$ લખાયું છે; નીચેનું ડાબા અનુસરણનું વૃક્ષ યોગ્ય સંદર્ભો બતાવે છે.}
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  $!D \ident \lfalse$
+  અને/અથવા
+  $!A \ident \lfalse$
+  હોય, તો
+  એક કે બે
+  \RightR{\Weakening}
+  ઉમેરીએ,
+  જેમ કે:
+  \sourcecorrection{OLMD-268}{મૂળમાં શરતનો પહેલો ભાગ માત્ર $!D$ લખાયો છે; ખાલી ઉત્તરાંગનો કિસ્સો $!D \ident \lfalse$ છે, જેમ તરત નીચેની જમણી શિથિલીકરણની કડી બતાવે છે.}
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+
+\end{enumerate}
+બાકીના કિસ્સા
+આવી જ રીતે
+સંભાળી શકાય
+છે અને તેમને
+કસરત તરીકે
+મૂક્યા છે.
+\end{proof}
+
+\begin{cor}
+સામાન્ય
+\Log{N1i} અથવા
+\Log{N2i}-!!{proof}માં
+આવતું દરેક
+!!{formula}
+અંતિમ
+!!{formula} અથવા
+અંતિમ સિક્વન્ટનું
+ઉપ-!!{formula}
+છે.
+\end{cor}
+
+\begin{proof}
+  \olref{prop:normal-N2i-to-G2i}
+  પ્રમાણે દરેક
+  સામાન્ય
+  \Log{N2i}-!!{proof}ને
+  \Log{G2i}-!!{proof}માં
+  રૂપાંતરિત કરી
+  શકાય છે.
+  સાબિતી જોવાથી
+  દેખાય છે કે
+  \Log{N2i}-!!{proof}માં
+  આવતું દરેક
+  !!{formula}
+  \Log{G2i}-!!{proof}માં
+  પણ આવે છે.
+  \Log{G2i}માં
+  \Cut{} નિયમ
+  નથી, તેથી
+  તેમાં
+  ઉપ-!!{formula}
+  ગુણધર્મ છે.
+\end{proof}
+
+\end{document}

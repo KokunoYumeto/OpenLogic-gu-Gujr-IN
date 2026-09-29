@@ -1,0 +1,25 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: provability-from-set
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prg}
+
+\olsection{\usetoken{P}{formula}ના ગણમાંથી \usetoken{S}{derivability}}
+
+\olref[prf][prf]{sec}માં આપણે તંત્ર~$\Sigma$માં !!a{formula}ની
+નિષ્પન્નતાનો ખ્યાલ વ્યાખ્યાયિત કર્યો હતો. હવે આ ખ્યાલને ગણ~$\Gamma$
+માંનાં !!{formula}sમાંથી $\Sigma$માં નિષ્પન્નતા સુધી વિસ્તારીશું.\sourcecorrection{OLMD-030}{મૂળ સંદર્ભ prf/prs વિભાગ બતાવે છે, પરંતુ તંત્રમાં નિષ્પન્નતાની વ્યાખ્યા prf/prf વિભાગમાં છે; સંદર્ભને તે વિભાગ તરફ સુધાર્યો છે.}
+
+\begin{defn}\ollabel{defn:Gammaproves}
+  !!^a{formula}~$!A$ એ ગણ~$\Gamma$માંના !!{formula}sમાંથી
+  તંત્ર~$\Sigma$માં !!{derivable} છે, જે $\Gamma \Proves[\Sigma] !A$
+  લખાય છે, જો અને માત્ર જો $!B_1$, \dots, $!B_n \in \Gamma$ એવાં હોય કે
+  $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots (!B_n \lif !A)
+  \cdots)$.
+\end{defn}
+
+\end{document}

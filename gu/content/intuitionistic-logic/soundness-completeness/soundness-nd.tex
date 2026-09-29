@@ -1,0 +1,191 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{snd}
+
+\olsection{સ્વાભાવિક નિગમનની યથાર્થતા}
+
+હવે આપણે સંબંધાત્મક અર્થવિજ્ઞાનની દૃષ્ટિએ સ્વાભાવિક નિગમનની
+યથાર્થતા સાબિત કરીશું. એટલે કે, ધારણાઓના ગણમાંથી
+!!a{formula} !!{derivable} હોય, તો તે ધારણાઓનો ગણ તે
+!!{formula}ને ફલિત કરે છે એમ બતાવીશું.
+
+\begin{thm}[યથાર્થતા]
+  \ollabel{thm:soundness}
+  જો $\Gamma \Proves !A$ હોય, તો $ \Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+  જો $\Gamma \Proves !A$ હોય, તો $\Gamma \Entails !A$
+  તે સાબિત કરીએ છીએ. $\Gamma$માંથી~$!A$ના
+  !!{derivation} પર આગમન કરીએ છીએ.
+
+  \begin{enumerate}
+  \item જો !!{derivation}માં માત્ર ધારણા~$!A$ જ હોય,
+    તો $!A \Proves !A$ છે અને $!A \Entails !A$
+    બતાવવાનું છે. ધારો કે $\mSat{M}{!A}[w]$.
+    તો સ્પષ્ટ છે કે $\mSat{M}{!A}[w]$.
+
+  \item !!{derivation}નો છેલ્લો નિયમ $\Intro{\land}$ છે:
+    \iftag{probAnd}{સ્વાધ્યાય.}{!!{undischarged} ધારણાઓ~$\Gamma$માંથી
+      $!B$ની અને !!{undischarged} ધારણાઓ~$\Delta$માંથી~$!C$ની
+      પૂર્વધારણાઓના !!{derivation}s,
+      $\Gamma \Proves !B$ અને $\Delta \Proves !C$ બતાવે છે.
+      આગમનની ધારણાથી $\Gamma \Entails !B$ અને
+      $\Delta \Entails !C$ છે. આખા !!{derivation}ની
+      !!{undischarged} ધારણાઓ $\Gamma$ અને $\Delta$ બંને
+      છે, તેથી $\Gamma \cup \Delta \Entails !B \land !C$
+      બતાવવાનું છે.
+      \sourcecorrection{OLMD-090}{મૂળમાં અહીં નિષ્કર્ષ
+      $!A \land !B$ લખાયો છે, જ્યારે પૂર્વધારણાઓ
+      $!B$ અને $!C$ છે અને અંતે $!B \land !C$ મળે છે.}
+      ધારો કે $\mSat{M}{\Gamma \cup \Delta}[w]$.
+      ત્યારે $\mSat{M}{\Gamma}[w]$ પણ છે.
+      $\Gamma \Entails !B$ હોવાથી $\mSat{M}{!B}[w]$.
+      એ જ રીતે $\mSat{M}{!C}[w]$. તેથી
+      $\mSat{M}{!B \land !C}[w]$.}
+
+  \item !!{derivation}નો છેલ્લો નિયમ $\Elim{\land}$ છે:
+    \iftag{probAnd}{સ્વાધ્યાય.}{પૂર્વધારણા
+      $!B \land !C$નું !!{derivation}, જેમાં $\Gamma$ની
+      ધારણાઓ !!{undischarged} છે, $\Gamma \Proves !B \land !C$
+      બતાવે છે. આગમનની ધારણાથી $\Gamma \Entails !B \land !C$.
+      $\Gamma \Entails !B$ બતાવવાનું છે. તેથી ધારો કે
+      $\mSat{M}{\Gamma}[w]$. $\Gamma \Entails !B \land !C$
+      હોવાથી $\mSat{M}{!B \land !C}[w]$; તેથી
+      $\mSat{M}{!B}[w]$ પણ છે. એ જ રીતે જો $\Elim\land$નો
+      નિષ્કર્ષ~$!C$ હોય, તો $\Gamma \Entails !C$.}
+
+  \item !!{derivation}નો છેલ્લો નિયમ $\Intro{\lor}$ છે:
+    \iftag{probOr}{સ્વાધ્યાય.}{ધારો કે પૂર્વધારણા $!B$
+      છે અને $!B$ પર પૂરાં થતા !!{derivation}ની
+      !!{undischarged} ધારણાઓ $\Gamma$ છે. ત્યારે
+      $\Gamma \Proves !B$ અને આગમનની ધારણાથી
+      $\Gamma \Entails !B$. $\Gamma \Entails !B \lor !C$
+      બતાવવાનું છે. ધારો કે $\mSat{M}{\Gamma}[w]$.
+      $\Gamma \Entails !B$ હોવાથી $\mSat{M}{!B}[w]$;
+      તેથી $\mSat{M}{!B \lor !C}[w]$ પણ છે. એ જ રીતે
+      પૂર્વધારણા~$!C$ હોય, તો $\Gamma \Entails !C$.}
+
+  \item !!{derivation}નો છેલ્લો નિયમ~$\Elim{\lor}$ છે:
+    \iftag{probOr}{સ્વાધ્યાય.}{પૂર્વધારણાઓ પર પૂરાં થતાં
+      !!{derivation}s અનુક્રમે !!{undischarged} ધારણાઓ~$\Gamma$
+      પરથી $!B \lor !C$નાં, !!{undischarged} ધારણાઓ
+      $\Delta_1 \cup \{!B\}$ પરથી $!D$નાં અને
+      !!{undischarged} ધારણાઓ~$\Delta_2 \cup \{!C\}$
+      પરથી $!D$નાં છે. તેથી $\Gamma \Proves !B \lor !C$,
+      $\Delta_1 \cup \{!B\} \Proves !D$, અને
+      $\Delta_2 \cup \{!C\} \Proves !D$.
+      આગમનની ધારણાથી $\Gamma \Entails !B \lor !C$,
+      $\Delta_1 \cup \{!B\} \Entails !D$, અને
+      $\Delta_2 \cup \{!C\} \Entails !D$.
+      $\Gamma \cup \Delta_1 \cup \Delta_2 \Entails !D$
+      સાબિત કરવાનું છે.
+
+    ધારો કે $\mSat{M}{\Gamma \cup \Delta_1 \cup \Delta_2}[w]$.
+    ત્યારે $\mSat{M}{\Gamma}[w]$ છે અને
+    $\Gamma \Entails !B \lor !C$ હોવાથી
+    $\mSat{M}{!B \lor !C}[w]$. $\mSat{M}{}$ની
+    વ્યાખ્યા મુજબ $\mSat{M}{!B}[w]$ અથવા
+    $\mSat{M}{!C}[w]$. તેથી બે કિસ્સા છે:
+    (a)~$\mSat{M}{!B}[w]$. ત્યારે
+    $\mSat{M}{\Delta_1 \cup \{!B\}}[w]$.
+    \sourcecorrection{OLMD-091}{મૂળમાં (a)માં
+    $\mSat{M}{!B}$ પછીનું $[w]$ ગણિત-મર્યાદાની
+    બહાર છે; તેને એ જ સત્ય-સંજ્ઞામાં મૂક્યું છે.}
+    $\Delta_1 \cup \{!B\} \Entails !D$ હોવાથી
+    $\mSat{M}{!D}[w]$. (b)~$\mSat{M}{!C}[w]$.
+    ત્યારે $\mSat{M}{\Delta_2 \cup \{!C\}}[w]$.
+    $\Delta_2 \cup \{!C\} \Entails !D$ હોવાથી
+    $\mSat{M}{!D}[w]$. આથી બંને કિસ્સામાં ઇચ્છિત
+    $\mSat{M}{!D}[w]$ મળે છે.
+    \sourcecorrection{OLMD-092}{મૂળના બે અનુસરણ-દાવામાં
+    $!B$ અને $!C$ પહેલાં $\cup$ આવે છે, પરંતુ
+    એકલ સૂત્રો ગણો નથી; અગાઉની પૂર્વધારણાઓ પ્રમાણે
+    તેમને $\{!B\}$ અને $\{!C\}$ એકક ગણો કર્યા છે.}}
+
+  \item !!{derivation}નો છેલ્લો નિયમ $\Intro{\lif}$ છે અને
+    નિષ્કર્ષ~$!B\lif !C$ છે. ત્યારે પૂર્વધારણા~$!C$
+    છે અને તેના પર પૂરાં થતા !!{derivation}ની
+    !!{undischarged} ધારણાઓ~$\Gamma \cup \{!B\}$ છે.
+    તેથી $\Gamma \cup \{!B\} \Proves !C$ અને આગમનની
+    ધારણાથી $\Gamma \cup \{!B\} \Entails !C$.
+    $\Gamma \Entails !B \lif !C$ બતાવવાનું છે.
+
+    ધારો કે $\mSat{M}{\Gamma}[w]$. દરેક એવા $w'$ માટે
+    કે $Rww'$, જો $\mSat{M}{!B}[w']$ હોય, તો
+    $\mSat{M}{!C}[w']$ છે તે બતાવવું છે. તેથી
+    $Rww'$ અને $\mSat{M}{!B}[w']$ ધારો.
+    \olref[sem][rel]{prop:true-monotonic} મુજબ
+    $\mSat{M}{\Gamma}[w']$. હવે
+    $\Gamma \cup \{!B\} \Entails !C$ હોવાથી
+    $\mSat{M}{!C}[w']$ મળે છે, જે બતાવવાનું હતું.
+
+  \item !!{derivation}નો છેલ્લો નિયમ $\Elim{\lif}$ છે અને
+    નિષ્કર્ષ~$!C$ છે. પૂર્વધારણાઓ $!B \lif !C$ અને
+    $!B$ છે, જેમના !!{derivation}s અનુક્રમે
+    !!{undischarged} ધારણાઓ $\Gamma$ અને $\Delta$
+    પરથી છે. તેથી $\Gamma \Proves !B \lif !C$ અને
+    $\Delta \Proves !B$. આગમનની ધારણાથી
+    $\Gamma \Entails !B \lif !C$ અને
+    $\Delta \Entails !B$. $\Gamma \cup \Delta
+    \Entails !C$ બતાવવાનું છે.
+
+    ધારો કે $\mSat{M}{\Gamma \cup \Delta}[w]$.
+    $\mSat{M}{\Gamma}[w]$ અને
+    $\Gamma \Entails !B \lif !C$ હોવાથી
+    $\mSat{M}{!B \lif !C}[w]$. વ્યાખ્યા મુજબ,
+    $Rww'$ ધરાવતા દરેક $w'$ માટે જો
+    $\mSat{M}{!B}[w']$ હોય, તો
+    $\mSat{M}{!C}[w']$. $R$ સ્વવાચક હોવાથી
+    $Rww'$ ધરાવતા $w'$માં $w$ પોતે પણ આવે છે;
+    એટલે જો $\mSat{M}{!B}[w]$ હોય, તો
+    $\mSat{M}{!C}[w]$. હવે $\mSat{M}{\Delta}[w]$
+    અને $\Delta \Entails !B$ હોવાથી
+    $\mSat{M}{!B}[w]$. તેથી ઇચ્છિત
+    $\mSat{M}{!C}[w]$ મળે છે.
+
+  \item !!{derivation}નો છેલ્લો નિયમ $\FalseInt$ છે અને
+    નિષ્કર્ષ~$!A$ છે. પૂર્વધારણા $\lfalse$ છે અને તેના
+    !!{derivation}ની !!{undischarged} ધારણાઓ~$\Gamma$ છે.
+    ત્યારે $\Gamma \Proves \lfalse$. આગમનની ધારણાથી
+    $\Gamma \Entails \lfalse$. હવે $\Gamma \Entails !A$
+    બતાવવાનું છે.
+
+    પરોક્ષ રીતે આગળ વધીએ. જો $\Gamma \Entails/ !A$
+    હોય, તો એવું નિદર્શ~$\mModel{M}$ અને જગત~$w$
+    છે કે $\mSat{M}{\Gamma}[w]$ અને
+    $\mSat/{M}{!A}[w]$. $\Gamma \Entails \lfalse$
+    હોવાથી $\mSat{M}{\lfalse}[w]$. પરંતુ આ અશક્ય
+    છે, કારણ કે વ્યાખ્યા મુજબ $\mSat/{M}{\lfalse}[w]$.
+    તેથી $\Gamma \Entails !A$.
+  \item !!{derivation}નો છેલ્લો નિયમ $\Intro\lnot$ છે: સ્વાધ્યાય.
+  \item !!{derivation}નો છેલ્લો નિયમ $\Elim\lnot$ છે: સ્વાધ્યાય.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[int][sc][snd]{thm:soundness}ની સાબિતી પૂરી કરો.
+  $\Intro\lnot$ અને $\Elim\lnot$ના કિસ્સાઓમાં
+  \olref[int][sem][rel]{defn:true-at-w}માં આપેલી
+  $\mSat{M}{\lnot !A}[w]$ની વ્યાખ્યા વાપરો;
+  એટલે $\lnot !A$ને $!A \lif \lfalse$ વડે
+  વ્યાખ્યાયિત થયેલું માનીને કામ ન કરો.
+\end{prob}
+
+\begin{prob}
+  નીચેના !!{formula}s સ્ફુરણાવાદી તર્કમાં !!{derivable}
+  નથી તે બતાવો:
+  \begin{enumerate}
+    \item $(!A \lif !B) \lor (!B \lif !A)$
+    \item $(\lnot\lnot !A \lif !A) \lif (!A \lor \lnot !A)$
+    \item $(!A \lif !B \lor !C) \lif \bigl((!A \lif !B)\lor(!A \lif !C)\bigr)$
+  \end{enumerate}
+\end{prob}
+
+\end{document}

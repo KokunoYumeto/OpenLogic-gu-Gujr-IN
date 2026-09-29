@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0668",
+  "checked_at_utc": "2026-09-28T19:44:41.550027+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0668 N1 natural-deduction rules, assumptions, proof height, and example; state-only draft",
+  "report": {
+    "unit_id": "OLP-0668",
+    "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+    "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+    "draft_path": "private-state\\work\\batch044_draft\\rules-proofs.tex",
+    "draft_sha256": "bfeeaa46d4de262926b7fed97639f01aeb2ce62f4b65dff0f30cdb6c0bc0bc06",
+    "aligned_blocks": 20,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 115,
+    "target_math_spans_after_corrections": 115,
+    "glossary_tokens": 56,
+    "source_correction_notes": [
+      "OLMD-231",
+      "OLMD-232",
+      "OLMD-233",
+      "OLMD-234",
+      "OLMD-235",
+      "OLMD-236"
+    ],
+    "source_detector_ascii_tokens": 900,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\AxiomC{$\\Discharge{!A}{y}$}\n\\DischargeRule{\\Intro{\\lif}}{x}",
+        "\\AxiomC{$\\Discharge{!A}{y}$}\n\\RightLabel{\\Intro{\\lif}}"
+      ],
+      [
+        "are finite trees of sequents",
+        "are finite trees of formulas"
+      ],
+      [
+        "\\RightLabel{$\\delta_3$}\n  \\DeduceC{$!A_2$}",
+        "\\RightLabel{$\\delta_3$}\n  \\DeduceC{$!A_3$}"
+      ],
+      [
+        "The rules of \\Log{N2c} and \\Log{N2i}\nare given in \\olref{tab:N1}",
+        "The rules of \\Log{N1c} and \\Log{N1i}\nare given in \\olref{tab:N1}"
+      ],
+      [
+        "!A \\land !B^x",
+        "\\Discharge{!A \\land !B}{x}",
+        5
+      ],
+      [
+        "$\\pheight{\\delta_1} = \\pheight{\\delta_2} = 1$",
+        "$\\pheight{\\delta_2} = \\pheight{\\delta_3} = 1$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "પરિચય-નિયમ",
+          "નિવારણ-નિયમ",
+          "આધારવાક્યો",
+          "ફલિતવાક્ય",
+          "ધારણાઓ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,166 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: derived-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{der}
+
+\olsection{નિષ્પન્ન નિયમો}
+
+!!{derivation}s શોધવી અને લખવી સ્પષ્ટપણે મુશ્કેલ, કંટાળાજનક અને
+પુનરાવર્તિત કામ છે. દાખલા તરીકે, ઘણી વાર આપણે $!A \lif !B$માંથી
+$\Box !A \lif \Box !B$ મેળવવું હોય છે, એટલે કે નિયમ~\RK વાપરવો હોય
+છે. તે માટે પહેલાં \Nec વાપરવું, પછી~\Ax{K}નો યોગ્ય દૃષ્ટાંત લખવો
+અને છેલ્લે~\MP વાપરવું પડે. $!A \lif
+!B$ અને $!B \lif !C$માંથી $!A \lif !C$ મેળવવા માટે આ લાંબો
+પુનરુક્તિ-દૃષ્ટાંત લખવો પડે:
+\[
+(!A \lif !B) \lif ((!B \lif !C) \lif (!A \lif !C))
+\]
+અને \MP{} બે વાર વાપરવું પડે. ઘણી વાર કોઈ ઉપ-!!{formula}ને તેની સાથે
+સમકક્ષ હોવાનું આપણને જાણીતું હોય એવા સૂત્રથી બદલવું હોય છે; દાખલા
+તરીકે, \iftag{prvDiamond}{$\Diamond
+  !A$ને $\lnot\Box\lnot !A$થી}{$\Box !A$ને $\lnot\Diamond\lnot !A$થી}, અથવા
+$\lnot\lnot !A$ને $!A$થી. તેથી આખી !!{derivation} લખવાને બદલે
+વચ્ચેનાં પગલાં !!{derivable} કેમ છે એટલું નોંધવું વધુ અનુકૂળ છે. આ માટે
+!!{derivability} વિશે કેટલીક હકીકતો એકત્ર કરીએ.
+
+\begin{prop}
+  જો $\Log{K} \Proves !A_1$, \dots, $\Log{K} \Proves !A_n$ હોય અને
+  $!A_1$, \dots, $!A_n$માંથી વિધાનાત્મક તર્ક અનુસાર $!B$ ફલિત થતું હોય,
+  તો $\Log{K} \Proves !B$.
+\end{prop}
+
+\begin{proof}
+  જો $!A_1$, \dots,~$!A_n$માંથી વિધાનાત્મક તર્ક અનુસાર $!B$ ફલિત થતું હોય, તો
+  \[
+  !A_1 \lif (!A_2 \lif \cdots (!A_n \lif !B)\dots)
+  \]
+  પુનરુક્તિનો દૃષ્ટાંત છે. \MP{}ને $n$ વાર વાપરવાથી~$!B$ની
+  !!{derivation} મળે છે.
+\end{proof}
+
+આ પ્રસ્તાવના ઉપયોગને આપણે~\PL વડે દર્શાવીશું.
+
+\begin{prop}
+  જો $\Log{K} \Proves !A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif
+  !A_n)\dots)$, તો $\Log{K} \Proves \Box !A_1 \lif (\Box !A_2 \lif
+  \cdots (\Box !A_{n-1} \lif \Box !A_n)\dots)$.
+\end{prop}
+
+\begin{proof}
+  \olref[nor]{prop:rk}ની સાબિતીની જેમ $n$ પર આગમનથી.
+\end{proof}
+
+આ પ્રસ્તાવના ઉપયોગને આપણે~\RK વડે દર્શાવીશું. આ પરિણામો વડે
+!!{derivability} વિશેના દાવા કેવી રીતે સહેલાઈથી સ્થાપી શકાય તે જોઈએ.
+
+\begin{prop}
+  $\Log{K} \Proves (\Box!A \land \Box!B) \lif \Box (!A \land !B)$
+\end{prop}
+
+\begin{proof}
+  \begin{derivation}
+    1. & $\Log{K} \Proves !A \lif (!B \lif (!A \land !B))$ & \Taut \\
+    2. & $\Log{K} \Proves \Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \RK, 1\\
+    3. & $\Log{K} \Proves (\Box!A \land \Box!B) \lif \Box(!A \land !B)$ & \PL, 2
+  \end{derivation}
+\end{proof}
+
+\begin{prop}\ollabel{prop:rewriting}
+  જો $\Log{K} \Proves !A \liff !B$ અને $\Log{K} \Proves
+  \Subst{!C}{!A}{q}$ હોય, તો $\Log{K} \Proves \Subst{!C}{!B}{q}$.
+\end{prop}\sourcecorrection{OLMD-025}{મૂળ પ્રસ્તાવના અંતિમ પ્રતિસ્થાપનમાં B પહેલાં સૂત્રચિહ્ન ! છૂટી ગયું છે; પૂર્વપક્ષ અને પછીના પ્રશ્નની જેમ અહીં !B મૂક્યું છે.}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  $!C$ની જટિલતા પર આગમન વડે, જો $\Log{K} \Proves !A \liff !B$ હોય,
+  તો $\Log{K} \Proves \Subst{!C}{!A}{q} \liff \Subst{!C}{!B}{q}$
+  સાબિત કરો અને તેના વડે \olref[nml][prf][der]{prop:rewriting} સાબિત કરો.
+\end{prob}
+
+આ પ્રસ્તાવ ખાસ કરીને $\Diamond$ને $\Box$માં (અથવા વિપરીત રીતે)
+ફેરવવો હોય, કે !!a{formula}ની અંદર બેવડો નિષેધ દૂર કરવો હોય, ત્યારે
+ઉપયોગી છે. આગળ જ્યારે~$!C(!A)$ને !!a{formula}~$!C(!B)$ તરીકે ફરી
+લખીશું, ત્યારે \olref{prop:rewriting}ના ઉપયોગને ``$!A$ના સ્થાને $!B$''
+વડે દર્શાવીશું. બીજા શબ્દોમાં, ``$!A$ના સ્થાને $!B$'' આનું સંક્ષેપ છે:\sourcecorrection{OLMD-026}{મૂળ સામાન્ય સંક્ષેપમાં ``A for B'' છે, છતાં તેની નીચેની ત્રણ પંક્તિમાં C(A)માંથી C(B) મળે છે અને પછીના ઉદાહરણમાં p જૂના બેવડા નિષેધને બદલે છે; બદલીની દિશા અહીં સ્પષ્ટ કરી છે.}
+  \begin{derivation}
+    & $\Proves !C(!A)$ \\
+    & $\Proves !A \liff !B$\\
+    & $\Proves !C(!B)$ & \olref{prop:rewriting} વડે
+  \end{derivation}
+દાખલા તરીકે:
+
+\begin{prop}
+  $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$
+\end{prop}
+
+\begin{proof}
+  \iftag{prvDiamond}{% Diamond મૂળભૂત છે
+  \begin{derivation}
+    1. & $\Log{K} \Proves \Diamond \lnot p \liff \lnot\Box\lnot\lnot p$ &
+    \Dual\\
+    2. & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot p$ & \PL, 1\\
+    3. & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & $\lnot\lnot p$ના સ્થાને $p$\\
+  \end{derivation}
+  }{% Diamond વ્યાખ્યાયિત છે
+  \begin{derivation}
+    1. & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot p$ & \Taut\\
+    2. & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & $\lnot\lnot p$ના સ્થાને $p$\\
+  \end{derivation}
+  પંક્તિ~$1$ પરનું સૂત્ર $\lnot q \lif \lnot q$નો દૃષ્ટાંત છે, જેમાં
+  $q$ના સ્થાને $\Box\lnot\lnot p$ મૂક્યું છે. $\Diamond\lnot p$ અને
+  $\lnot\Box\lnot\lnot p$ એક જ સૂત્ર છે, કારણ કે $\Diamond$ની
+  વ્યાખ્યા~$\lnot\Box\lnot$ છે.}
+\end{proof}
+
+ઉપરની !!{derivation}માં છેલ્લું પગલું ``$\lnot\lnot p$ના સ્થાને $p$''
+આનો સંક્ષેપ છે:
+  \begin{derivation}
+    & $\Log{K} \Proves \lnot \Box \lnot\lnot p \lif \Diamond \lnot
+    p$\\
+    & $\Log{K} \Proves \lnot\lnot p \liff p$ & \Taut\\
+    & $\Log{K} \Proves \lnot\Box p \lif \Diamond \lnot p$ & \olref{prop:rewriting} વડે
+  \end{derivation}
+અહીં \olref{prop:rewriting}ના $!C(q)$, $!A$ અને $!B$ની ભૂમિકામાં અનુક્રમે
+$\lnot \Box q \lif \Diamond \lnot p$,
+$\lnot\lnot p$ અને~$p$ આવે છે.
+
+જ્યારે !!a{formula}માં ઉપ-!!{formula} $\lnot\Diamond !A$ હોય, ત્યારે
+\olref{prop:rewriting} વડે તેની જગ્યાએ $\Box\lnot !A$ મૂકી શકીએ,
+કારણ કે $\Log{K} \Proves \lnot\Diamond !A \liff \Box\lnot !A$.
+આવા અને સમાન પ્રતિસ્થાપનોને આપણે માત્ર ``$\lnot\Diamond$ના સ્થાને
+$\Box\lnot$'' વડે દર્શાવીશું.
+
+નીચેનો પ્રસ્તાવ !!{derivability} વિશેનાં પરિણામો ઢાંચારૂપે સ્થાપવાનું
+સમર્થન આપે છે. દાખલા તરીકે, અગાઉનો પ્રસ્તાવ માત્ર
+$\Log{K} \Proves \lnot\Box p \lif
+\Diamond \lnot p$ જ નહિ, પરંતુ મનસ્વી~$!A$ માટે
+$\Log{K} \Proves \lnot\Box !A \lif \Diamond
+\lnot !A$ પણ સ્થાપે છે.
+
+\begin{prop}
+  જો $!A$ એ $!B$નો પ્રતિસ્થાપન દૃષ્ટાંત હોય અને $\Log{K} \Proves !B$,
+  તો $\Log{K} \Proves !A$.
+\end{prop}
+
+\begin{proof}
+  આખી !!{derivation}માં પ્રતિસ્થાપન કરતાં પણ યોગ્ય !!{derivation}
+  મળે છે તે ચકાસવું લાંબું, પરંતુ નિયમિત કામ છે ($!B$ની
+  !!{derivation}ની લંબાઈ પર આગમન કરો). ખાસ કરીને, પુનરુક્તિના
+  દૃષ્ટાંતોના પ્રતિસ્થાપન દૃષ્ટાંતો પોતે પુનરુક્તિના દૃષ્ટાંતો છે;
+  \iftag{prvDiamond}{\Dual{} અને~}{}\Ax{K}ના દૃષ્ટાંતોના પ્રતિસ્થાપન
+  દૃષ્ટાંતો પોતે~\iftag{prvDiamond}{\Dual{}
+    અને~}{}\Ax{K}ના દૃષ્ટાંતો છે; અને પૂર્વપક્ષ(ઓ) તથા નિષ્કર્ષમાં
+  !!{propositional variable}sના સ્થાને !!{formula}s મૂકતાં \MP{} અને~\Nec{}
+  નો ઉપયોગ યોગ્ય જ રહે છે.
+\end{proof}
+
+
+\end{document}

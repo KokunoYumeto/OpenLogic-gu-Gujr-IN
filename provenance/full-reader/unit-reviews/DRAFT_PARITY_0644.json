@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0644",
+  "checked_at_utc": "2026-09-28T16:40:23.459414+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0644 Maximally consistent sentence sets and their connective laws; state-only draft",
+  "report": {
+    "unit_id": "OLP-0644",
+    "source_path": "content/first-order-logic/completeness/maximally-consistent-sets.tex",
+    "source_sha256": "f2bc62fc8b385c2c68d58c5a95e5e9a18ff11820b8f63ab17810b281aeae4b51",
+    "draft_path": "private-state\\work\\batch044_draft\\maximally-consistent-sets.tex",
+    "draft_sha256": "d1228504e40d5c48791312e8b4e7b770e078a33d537cc7e7a3e78068105709ee",
+    "aligned_blocks": 29,
+    "linguistic_blocks": 24,
+    "source_math_spans_correction_aware": 118,
+    "target_math_spans_after_corrections": 118,
+    "glossary_tokens": 12,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 262,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\completeness\\complete-consistent-sets.tex",
+        "sha256": "55fb93bd50013cb73cdafad6a06cdeab3d34509eec9d2a2826c833e46c4fe89a",
+        "terms": [
+          "સુસંગત ગણ",
+          "પૂર્ણતાની સાબિતી",
+          "પરમાણુક !!{sentence}s"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

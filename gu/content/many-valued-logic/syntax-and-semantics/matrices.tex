@@ -1,0 +1,78 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: matrices
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{mat}
+
+\olsection{શ્રેણિકો}
+
+બહુમૂલ્ય તર્કશાસ્ત્ર તેની ભાષા, સત્યમૂલ્યોના ગણ~$V$,
+નિર્દિષ્ટ સત્યમૂલ્યોના ઉપગણ અને તેના સંયોજકોનાં
+સત્યવિધેયો વડે વ્યાખ્યાયિત થાય છે. આ ઘટકોને
+એકસાથે \emph{શ્રેણિક} કહે છે.
+
+\begin{defn}[શ્રેણિક]
+\ollabel{defn:matrix}
+તર્કશાસ્ત્ર~$\Log L$ માટેની \emph{શ્રેણિક}માં આ હોય છે:
+\begin{enumerate}
+\item ભાષા~$\Lang L$ બનાવતો સંયોજકોનો ગણ;
+\item સત્યમૂલ્યોનો અરિક્ત ગણ~$V \neq \emptyset$;
+\item નિર્દિષ્ટ સત્યમૂલ્યોનો ગણ~$V^+ \subseteq V$;
+\item $\Lang L$ના દરેક $n$-સ્થાનીય સંયોજક~$\star$
+માટે સત્યવિધેય~$\tf{\star} : V^n \to V$. જો
+$n = 0$ હોય, તો $\tf{\star}$ એ $V$નો માત્ર એક ઘટક છે.
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+શાસ્ત્રીય તર્કશાસ્ત્ર~\LogCL{} માટેની શ્રેણિકમાં આ હોય છે:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$ અને $\lif$
+  ધરાવતી પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ~$V = \{\True, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય~$\True$ છે, એટલે
+  $V^+ = \{\True\}$.
+  \item $\lfalse$ માટે $\tf{\lfalse} = \False$ છે.
+  અન્ય સત્યવિધેયો સામાન્ય સત્યતાસારણીઓ વડે
+  અપાય છે (જુઓ \olref{fig:tf-CL}).
+\end{enumerate}
+\begin{figure}
+  \begin{center}
+      \begin{tabular}{c|c}
+        $\tf{\lnot}$ & \\
+        \hline
+        $\True$ & $\False$ \\
+        $\False$ & $\True$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\land}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\False$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lor}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\True$ \\
+        $\False$ & $\True$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lif}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
+    \caption{શાસ્ત્રીય તર્કશાસ્ત્ર~$\LogCL$ માટેનાં સત્યવિધેયો.}
+    \ollabel{fig:tf-CL}
+  \end{figure}
+  \end{ex}
+
+\end{document}

@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0582",
+  "checked_at_utc": "2026-09-28T02:38:15.600254+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0582 cardinals defined as least equinumerous ordinals under Well-Ordering; state-only draft",
+  "report": {
+    "unit_id": "OLP-0582",
+    "source_path": "content/set-theory/cardinals/cardsasords.tex",
+    "source_sha256": "76eb33836f0e2c21be7701b157030b8465ac08daccf532eeb5fa74dc8110100d",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+    "draft_sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 67,
+    "target_math_spans_after_corrections": 67,
+    "glossary_tokens": 3,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 503,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cp.tex",
+        "sha256": "db4c5d306da9bcad4bee6d9a627075c73d4249769d12ea8185f9fd2044e2df86",
+        "terms": [
+          "કૅન્ટરનો સિદ્ધાંત",
+          "\\card{A} = \\card{B}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+        "sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+        "terms": [
+          "\\ollabel{thmOrdinalRepresentation}",
+          "ક્રમ-એકરૂપ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\equinumerous-sets.tex",
+        "sha256": "6fbd4a47047c24d9dc2f53b708812801075de97462a139f0ae6b7852a0bac85b",
+        "terms": [
+          "\\ollabel{equinumerosityisequi}",
+          "સામ્ય સંબંધ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\schroder-bernstein.tex",
+        "sha256": "7f481c83f2e1e975c0935282cf02bbd2405b19672fd1e604301386a6c979f343",
+        "terms": [
+          "\\ollabel{thm:schroder-bernstein}",
+          "શ્રેડર"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\card-sb.tex",
+        "sha256": "dc576fc74ba0150f94668edf1a2f02bf94c3f51440645ff8fcc4774c2f10be51",
+        "terms": [
+          "\\olfileid{sfr}{infinite}{card-sb}",
+          "શ્રેડર"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The definition remains conditional on well-orderability until the Well-Ordering Axiom is introduced; it is not represented as a theorem of ZF.",
+      "The source's proof calls for transfinite induction to select the least gamma; the reviewed statement uses the already obtained beta witness and the least-ordinal property without adding a new assumption.",
+      "The three comparison formulas and every math span remain exact, including the source's English iff inside the formal display.",
+      "The TikZ diagram and all arrow styles are byte-for-byte inherited and need later visual QA.",
+      "An inactive English source comment is retained as source evidence; it is not reader-facing Gujarati prose."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 1,
+    "inherited_diagrams_visual_qa": "pending",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

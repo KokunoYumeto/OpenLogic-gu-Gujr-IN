@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0578",
+  "checked_at_utc": "2026-09-28T02:23:38.818812+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0578 ordinal multiplication, recursion laws and noncommutativity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0578",
+    "source_path": "content/set-theory/ord-arithmetic/multiplication.tex",
+    "source_sha256": "eade2bc67a7dede697f1a89e0359c3ef4a1c52154bbcf4b1b45176f5d3742abb",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-multiplication.tex",
+    "draft_sha256": "833cbff112af9868752cd544a52f05c18651e81465959c2f7498b16141fc36ad",
+    "aligned_blocks": 19,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 37,
+    "target_math_spans_after_corrections": 37,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 280,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-addition.tex",
+        "sha256": "9e73541a68e424fc5af4eafe872358f522b4c537ca21d4f31183192e6c5cbacf",
+        "terms": [
+          "ઊલટો શબ્દકોશક્રમ",
+          "\\ollabel{ordsumlessiswo}",
+          "\\ollabel{ordsumnotcommute}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+        "sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+        "terms": [
+          "\\supstrict",
+          "સીમા ક્રમવાચક"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\hilberts-hotel.tex",
+        "sha256": "4508359b21e4b13bb5340322aebb967117544ba82dcce95eba802d8cc8a7c904",
+        "terms": [
+          "હિલ્બર્ટ",
+          "પ્રાકૃતિક સંખ્યાઓ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The grid scans each alpha-wide row before the next beta-indexed row; reversing those roles would give a different product.",
+      "The strict monotonicity and cancellation clauses retain alpha not equal zero, while the weak left monotonicity has no extra hypothesis.",
+      "The source's limit recurrence, nicefrac set, and noncommutativity proof are copied without changing mathematical displays.",
+      "All three requested exercise targets stay local references and no exercise is silently supplied."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0547",
+  "checked_at_utc": "2026-09-28T00:39:11.486624+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0547 set-theory chapter_driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0547",
+    "source_path": "content/set-theory/ordinals/ordinals.tex",
+    "source_sha256": "bacf063dff89b8bdbe263ce56294e66b10e208d4bccc9ce81119aaa9968e0d63",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinals.tex",
+    "draft_sha256": "3eb012194bc0e67586089d5c9518d8727d3e01369956bef550e910ee6d547afb",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 1,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "active_imports_preserved": 10,
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [
+      {
+        "path": "work/LEXICAL_CONSULTATION_044_0547.json",
+        "sha256": "1216550acbd6cb6501ecfd96b0900a130233b79bcd373875eac03ad70686369c"
+      }
+    ]
+  },
+  "status": "draft_linguistic_and_import_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

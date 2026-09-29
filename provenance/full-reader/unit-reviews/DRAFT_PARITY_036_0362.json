@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/36-0362",
+  "checked_at_utc": "2026-09-27T06:22:07.239268+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0362 alpha conversion; state-only draft with open source proof gap",
+  "report": {
+    "unit_id": "OLP-0362",
+    "source_path": "content/lambda-calculus/syntax/alpha.tex",
+    "source_sha256": "f17619c4515bbbc583990680fd46c1d57191327b0f4a3cce347b2a327a6d0dda",
+    "draft_path": "private-state\\work\\batch036_draft\\alpha.tex",
+    "draft_sha256": "7105cc35d1516090d67e19702a245270f64e9b3aa3f6e290271a77451c0cbe50",
+    "aligned_blocks": 39,
+    "linguistic_blocks": 35,
+    "source_math_spans_correction_aware": 181,
+    "target_math_spans_after_corrections": 182,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLLAM-019",
+      "OLLAM-020",
+      "OLLAM-021",
+      "OLLAM-022",
+      "OLLAM-023",
+      "OLLAM-024",
+      "OLLAM-025",
+      "OLLAM-026"
+    ],
+    "source_detector_ascii_tokens": 648,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      6,
+      19,
+      22,
+      34,
+      35,
+      37
+    ],
+    "open_proof_gap": "The source's existence proof for substitution after alpha-renaming does not establish inner definedness; OLLAM-024 gives a counterexample. The following comparison chain does not resolve that gap."
+  },
+  "status": "draft_linguistic_and_correction_aware_math_parity_passed_source_proof_gap_open_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

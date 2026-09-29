@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0481",
+  "checked_at_utc": "2026-09-27T19:48:17.506294+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0481 possible histories; state-only draft",
+  "report": {
+    "unit_id": "OLP-0481",
+    "source_path": "content/applied-modal-logic/temporal-logic/possible-histories.tex",
+    "source_sha256": "29a288f0012cbdf900f927cb285864444ca0f8d7dea27c1d037cdaaae40e924a",
+    "draft_path": "private-state\\work\\batch041_draft\\temporal-possible-histories.tex",
+    "draft_sha256": "a888fa6e43d05eb16d47a01a88e85744791d99c4aaf2a93c4cd429582c537c77",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 53,
+    "target_math_spans_after_corrections": 53,
+    "glossary_tokens": 4,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 355,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "two_history_relative_semantics_cases_checked": true,
+    "suffix_closure_and_alternative_history_example_reviewed": true
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

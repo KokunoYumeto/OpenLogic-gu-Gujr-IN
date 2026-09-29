@@ -1,0 +1,194 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{fix}
+\olsection{$\aleph$નાં સ્થિરબિંદુઓ}
+
+\olref[spine][]{chap}માં આપણે સૂચવ્યું હતું કે
+પ્રતિસ્થાપનને વાજબી ઠરાવવાની જરૂર છે, કારણ કે તે
+પદાનુક્રમને ઘણો ઊંચો બનાવે છે. થોડું ગણાંક-અંકગણિત
+જોયા પછી આ ઊંચાઈનું એક ઉદાહરણ આપી શકીએ.
+
+દેખીતી રીતે $0 < \aleph_0$, અને $1 < \aleph_1$,
+અને $2 < \aleph_2$\ldots; ખરેખર દરેક પગલે કદનો
+તફાવત વધુ \emph{મોટો} થતો જાય છે. તેથી દરેક
+ક્રમવાચક સંખ્યા $\kappa$ માટે
+$\kappa< \aleph_\kappa$ હશે એવું અનુમાન કરવાનું
+મન થાય.
+
+પરંતુ $\ZFC$માં આ અનુમાન \emph{ખોટું} છે.
+ખરેખર \emph{$\aleph$નાં સ્થિરબિંદુઓ} અસ્તિત્વમાં
+છે, એટલે એવા ગણાંકો $\kappa$ કે
+$\kappa=\aleph_\kappa$.
+
+\begin{prop}\ollabel{alephfixed}
+$\aleph$નું સ્થિરબિંદુ છે.
+\end{prop}
+
+\begin{proof}
+પુનરાવર્તનથી આ રીતે વ્યાખ્યાયિત કરો:
+\begin{align*}
+	\kappa_0 &= 0\\
+	\kappa_{n+1} &= \aleph_{\kappa_n}\\
+	\kappa&= \bigcup_{n < \omega}\kappa_n
+\end{align*}
+હવે \olref[cardinals][classing]{unioncardinalscardinal}
+મુજબ $\kappa$ ગણાંક છે. વળી:
+\[
+	\kappa= \bigcup_{n < \omega} \kappa_{n+1} = 
+	\bigcup_{n < \omega}\aleph_{\kappa_n} = 
+	\bigcup_{\alpha < \kappa}\aleph_\alpha = \aleph_\kappa
+\]
+%	By construction, $\kappa$ is the least cardinal greater than each
+%	$\kappa_n$. So $\aleph_\kappa$ is the least cardinal greater than
+%	each $\aleph_{\kappa_n}$, and hence greater than each
+%	$\kappa_{n+1}$. But equally $\kappa$ is the least cardinal greater
+%	than each $\kappa_{n+1} = \aleph_{\kappa_n}$. So $\kappa=
+%	\aleph_\kappa$.
+\end{proof}
+
+બૂલોઝે આપણે હમણાં રચેલા આ જ $\aleph$-સ્થિરબિંદુ
+વિશે લેખ લખ્યો હતો. લેખની શરૂઆતમાં $\kappa$નું
+અસ્તિત્વ નોંધ્યા પછી તેમણે કહ્યું:
+\begin{quote}
+	[ગણસિદ્ધાંતનો અગાઉનો પરિચય ન હોય એવા લોકોની
+	દૃષ્ટિએ $\kappa$] \emph{ઘણી મોટી} સંખ્યા છે; એટલી
+	મોટી કે મને લાગે છે, ઓછામાં ઓછી $\kappa$ વસ્તુઓ
+	છે એવો દાવો કરતી કોઈ પણ સિદ્ધાંતની સત્યતા અંગે
+	તે પ્રશ્ન ઊભો કરે છે.
+	\citep[p.~257]{Boolos2000}
+\end{quote}
+લેખના અંતે તેમણે પૂછ્યું:
+\begin{quote}
+	[શું] આપણને એવી શંકા થાય છે કે વાર્તાની શરૂઆતમાં
+	ગમે તેમ રહ્યું હોય, પરંતુ આટલે સુધી આવતાં ચક્રો
+	ખાલી ફરી રહ્યાં છે અને હવે આપણે ખરેખર જે છે
+	તેનું વર્ણન સાંભળી રહ્યાં નથી?
+	\citep[p.~268]{Boolos2000}
+\end{quote}
+જો આપણે ખરેખર ``જે છે'' તેનાથી આગળ નીકળી
+ગયા હોઈએ, તો દોષ સીધો પ્રતિસ્થાપન પર મૂકવો પડે.
+કારણ કે આ સ્વયંસિદ્ધિ આપણો પુરાવો શક્ય બનાવે છે.
+એવું હોય, તો કદાચ બૂલોઝે થોડાં દાયકાં પહેલાં
+પ્રતિસ્થાપનનાં ``કોઈ અનિચ્છનીય'' પરિણામ નથી
+એવો કરેલો દાવો ફરી વિચારવો પડે
+(\olref[replacement][extrinsic]{sec} જુઓ).
+
+પરંતુ $\kappa$નું અસ્તિત્વ ખરેખર એટલું ખરાબ છે?
+અહીં રસેલનો \emph{ટ્રિસ્ટ્રમ શૅન્ડીનો વિરોધાભાસ}
+વિચારીએ. ટ્રિસ્ટ્રમ શૅન્ડી પોતાના જીવનની દૈનિક
+નોંધ લખે છે, પરંતુ એક દિવસની નોંધ લખતાં તેને એક
+વર્ષ લાગે છે. દરેક પસાર થતા વર્ષે તે વધુ પાછળ
+પડે છે: એક વર્ષ પછી તેણે ફક્ત એક દિવસ નોંધ્યો
+હોય અને જીવેલા 364 દિવસ નોંધાયા ન હોય; બે વર્ષ
+પછી ફક્ત બે દિવસ નોંધ્યા હોય અને 728 દિવસ બાકી
+હોય; ત્રણ વર્ષ પછી ફક્ત ત્રણ દિવસ નોંધ્યા હોય
+અને 1092 દિવસ બાકી હોય~\dots\footnote{અધિવર્ષો
+ધ્યાનમાં લીધાં નથી.} છતાં ટ્રિસ્ટ્રમ
+\emph{અમર} હોય, તો તે દરેક દિવસ નોંધશે, કારણ
+કે પોતાના જીવનના $n$મા વર્ષે $n$મો દિવસ
+નોંધશે. આમ ``સમયના અંતે'' તેની નોંધપોથી પૂર્ણ હશે.
+
+હવે આ વિચારથી નીચેનો વિચાર એટલો જુદો શા માટે
+છે: $\alpha$ એ $\aleph_\alpha$ કરતાં નાની છે,
+અને સતત વધુ ને વધુ પાછળ પડે છે, પરંતુ
+$\kappa$એ પહોંચતાં તેને સરખી પડે છે અને
+$\kappa = \aleph_\kappa$ થાય છે?
+
+આ મુદ્દો હાલ બાજુએ રાખીને અને $\ZFC$ સ્વીકારીએ
+એમ ધારીને, સ્થિરબિંદુઓની કેટલીક વધુ રસપ્રદ
+રચનાઓથી સમાપન કરીએ. આગળનાં ત્રણ પરિણામો સહજ
+રીતે બતાવે છે કે કોઈ (બિનતુચ્છ) બિંદુએ પદાનુક્રમની
+પહોળાઈ તેની ઊંચાઈ જેટલી થાય છે:
+
+\begin{prop}\ollabel{bethfixed}
+$\beth$નું સ્થિરબિંદુ છે, એટલે એવું $\kappa$ કે
+$\kappa=\beth_\kappa$.
+\end{prop}
+
+\begin{proof}
+\olref{alephfixed} જેવી જ રીત, ફક્ત ``$\aleph$''ને
+બદલે ``$\beth$'' વાપરો.
+\end{proof}
+
+\begin{prop}\ollabel{stagesize}
+$\card{V_{\omega+\alpha}} = \beth_{\alpha}$.
+જો $\omega \ordtimes \omega \leq \alpha$ હોય, તો
+$\card{V_\alpha} = \beth_\alpha$.
+\end{prop}
+
+\begin{proof}
+પહેલો દાવો સરળ અનંતાતીત અનુમાનથી મળે છે. બીજો
+દાવો એથી મળે છે કે $\omega \ordtimes \omega
+\leq \alpha$ હોય, તો $\omega + \alpha = \alpha$.
+આ સાબિત કરવા
+\olref[ord-arithmetic][]{chap}ના ક્રમવાચક અંકગણિતનાં
+તથ્યો વાપરીએ. પહેલાં નોંધો કે
+$\omega \ordtimes \omega = \omega \ordtimes (1 \ordplus \omega) =
+(\omega  \ordtimes 1) \ordplus (\omega\ordtimes\omega) = \omega
+\ordplus (\omega \ordtimes \omega)$.
+હવે $\omega \ordtimes \omega \leq \alpha$
+હોય, એટલે કોઈ $\beta$ માટે
+$\alpha = (\omega\ordtimes\omega) \ordplus \beta$,
+તો $\omega \ordplus \alpha = \omega \ordplus
+((\omega \ordtimes \omega) \ordplus \beta) =
+(\omega \ordplus (\omega \ordtimes \omega)) \ordplus
+\beta = (\omega \ordtimes \omega) \ordplus
+\beta = \alpha$.
+\end{proof}
+
+\begin{cor}
+એવું $\kappa$ છે કે $\card{V_\kappa} = \kappa$.
+\end{cor}
+
+\begin{proof}
+\olref{bethfixed} મુજબ $\kappa$ને કોઈ
+$\beth$-સ્થિરબિંદુ લો. દેખીતી રીતે
+$\omega \ordtimes \omega < \kappa$.
+તેથી \olref{stagesize}થી
+$\card{V_\kappa} = \beth_\kappa= \kappa$.
+\end{proof}
+
+$V_\kappa$ની નીચે જેટલા તબક્કા છે એટલા જ
+$V_\kappa$માં !!{element}s છે. તેથી સહજ રીતે
+$V_\kappa$ જેટલું ઊંચું છે તેટલું પહોળું પણ છે.
+આ ટ્રિસ્ટ્રમ-શૅન્ડીની વાત જેવું છે: એક તબક્કાથી
+આગળના તબક્કે \emph{ઘાતગણ} લઈને જઈએ છીએ,
+તેથી પદાનુક્રમ દરેક પગલે \emph{ઘણો} મોટો થાય છે.
+પરંતુ ``અંતે'', એટલે $\kappa$ તબક્કે,
+પદાનુક્રમની પહોળાઈ તેની ઊંચાઈ જેટલી થઈ જાય છે.
+
+પ્રશ્ન થાય: \emph{પદાનુક્રમની પહોળાઈ તેની ઊંચાઈ
+જેટલી કેટલી વાર થાય છે?} જવાબ છે:
+\emph{જેટલી ક્રમવાચક સંખ્યાઓ છે એટલી વાર.}
+પણ આ માટે થોડી સમજૂતી જોઈએ.
+
+પદ $\tau$ને આમ વ્યાખ્યાયિત કરીએ.
+કોઈ પણ $A$ માટે:
+\begin{align*}
+	\tau_0(A) & \defis \cardsucc{(\card{A})}\\
+	\tau_{n+1}(A) & \defis \beth_{\tau_n(A)}\\
+	\tau(A) & \defis \bigcup_{n < \omega}\tau_n(A)
+\intertext{\olref{bethfixed}ની જેમ કોઈ પણ $A$ માટે
+$\tau(A)$ એ $\beth$-સ્થિરબિંદુ છે અને
+$\card{A} < \tau(A)$. હવે આ પુનરાવર્તી વ્યાખ્યા જુઓ:}
+	W_0 &\defis 0\\
+	W_{\alpha + 1} & \defis \tau(W_\alpha)\\
+	W_\alpha & \defis \bigcup_{\beta < \alpha} W_\beta
+	\text{, જ્યારે $\alpha$ સીમા ક્રમવાચક સંખ્યા હોય}
+\end{align*}
+\sourcecorrection{OLMD-143}{મૂળમાં
+$\tau_0(A)=\card{A}$ છે. જો $\card{A}$ પહેલેથી
+$\beth$નું સ્થિરબિંદુ હોય, તો આખું પુનરાવર્તન
+ત્યાં જ અટકે અને મૂળનો ``$\card{A}<\tau(A)$''
+દાવો ખોટો પડે. શરૂઆતમાં અનુગામી ગણાંક
+$\cardsucc{(\card{A})}$ લેવાથી રચાયેલું
+$\beth$-સ્થિરબિંદુ $\card{A}$ કરતાં કડક મોટું રહે છે.}
+આ રચના બધી ક્રમવાચક સંખ્યાઓ માટે વ્યાખ્યાયિત
+છે. તેથી સહજ રીતે $W$ એ ક્રમવાચક સંખ્યાઓમાંથી
+$\beth$-સ્થિરબિંદુઓમાં ``!!a{injection}'' છે.
+અને પહેલાંની જેમ જ કોઈ પણ $\alpha$ માટે
+$V_{W_\alpha}$ જેટલું ઊંચું છે તેટલું પહોળું છે.
+
+\end{document}

@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0579",
+  "checked_at_utc": "2026-09-28T02:28:17.144025+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0579 ordinal exponentiation, finite-support functions and recursive equations; state-only draft",
+  "report": {
+    "unit_id": "OLP-0579",
+    "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+    "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-exponentiation.tex",
+    "draft_sha256": "3180e2fafb439da079e465ad88c9c12e4b167fce921ec9898575e5d94b8e4590",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 20,
+    "target_math_spans_after_corrections": 20,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-132",
+      "OLMD-133",
+      "OLMD-134"
+    ],
+    "source_detector_ascii_tokens": 212,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\ordtype{\\text{finfun}(\\alpha, \\beta), \\sqsubset}",
+        "\\ordtype{\\text{finfun}(\\beta, \\alpha), \\sqsubset}"
+      ],
+      [
+        "\\ordtype{\\text{finfun}(\\alpha, \\beta),\r\n\\sqsubset}",
+        "\\ordtype{\\text{finfun}(\\beta, \\alpha),\r\n\\sqsubset}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-addition.tex",
+        "sha256": "9e73541a68e424fc5af4eafe872358f522b4c537ca21d4f31183192e6c5cbacf",
+        "terms": [
+          "\\ollabel{ordadditionrecursion}",
+          "અનંતાતીત પુનરાવર્તન",
+          "અદલબદલીય"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-multiplication.tex",
+        "sha256": "833cbff112af9868752cd544a52f05c18651e81465959c2f7498b16141fc36ad",
+        "terms": [
+          "\\ollabel{ordtimesrecursion}",
+          "અદલબદલીય",
+          "\\ordtimes"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-recursion.tex",
+        "sha256": "aeb5abe00df7192c8e56b9ed2a8dfef17660d4e5ef647f113090239df415f777",
+        "terms": [
+          "\\ollabel{transrecursionschema}",
+          "અનંતાતીત પુનરાવર્તન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The source explicitly defines finfun(alpha,beta) as functions alpha to beta; swapping the arguments only in the order-type application makes alpha the codomain/base and beta the domain/exponent.",
+      "At zero base, the printed recurrence has 0^0=1 and all positive successor powers zero, so the union at omega is 1, whereas finfun(omega,0) is empty. This is an open source inconsistency, not a proven equivalence.",
+      "The quote remains attributed to Potter page 199; the mathematical display is unchanged except the two visible argument-order corrections outside it.",
+      "The final exercise remains an exercise, with the inherited reference to the local definition and an explicit caveat about its false unrestricted case."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

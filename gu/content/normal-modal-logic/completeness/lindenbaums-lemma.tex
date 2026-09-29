@@ -1,0 +1,108 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: lindenbaums-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{lin}
+
+\olsection{લિન્ડનબાઉમનું સહાયક પ્રમેય}
+
+લિન્ડનબાઉમનું સહાયક પ્રમેય સ્થાપિત કરે છે કે !!{formula}sનો દરેક
+$\Sigma$-સુસંગત ગણ ઓછામાં ઓછા એક \emph{પૂર્ણ} $\Sigma$-સુસંગત ગણમાં
+સમાયેલો છે. કૅનોનિકલ નિદર્શનની આપણી રચના બતાવશે કે દરેક પૂર્ણ
+$\Sigma$-સુસંગત ગણ~$\Delta$ માટે કૅનોનિકલ નિદર્શનમાં એવું જગત છે
+જ્યાં $\Delta$માંનાં બધાં અને માત્ર એ જ !!{formula}s સત્ય છે. તેથી
+લિન્ડનબાઉમનું સહાયક પ્રમેય ખાતરી આપે છે કે દરેક $\Sigma$-સુસંગત ગણ
+કૅનોનિકલ નિદર્શનના કોઈ જગત પર સત્ય છે.
+
+\begin{thm}[લિન્ડનબાઉમનું સહાયક પ્રમેય]\ollabel{thm:lindenbaum}
+  જો $\Gamma$ એ $\Sigma$-સુસંગત હોય, તો $\Gamma$ને વિસ્તારે એવો
+  પૂર્ણ $\Sigma$-સુસંગત ગણ $\Delta$ છે.
+\end{thm}
+
+\begin{proof}
+ભાષાનાં બધાં સૂત્રોની સંપૂર્ણ યાદી $!A_0$, $!A_1$, \dots{} લો
+(પુનરાવર્તન માન્ય છે). દાખલા તરીકે, પહેલાં $\Obj p_0$ને યાદીમાં
+મૂકો અને દરેક તબક્કે $n \ge 1$ માટે માત્ર $\Obj p_0$,
+\dots,~$\Obj p_n$માંથી ચલ વાપરીને બનતાં લંબાઈ~$n$નાં સાન્ત
+સંખ્યામાં સૂત્રોને યાદીમાં મૂકો. આપણે~$n$ પર અનુમાનથી !!{formula}sના
+ગણો $\Delta_n$ વ્યાખ્યાયિત કરીએ છીએ અને પછી $\Delta = \bigcup_n
+\Delta_n$ મૂકીએ છીએ. પહેલાં $\Delta_0 = \Gamma$ મૂકો. $\Delta_n$
+વ્યાખ્યાયિત છે એમ ધારીને $\Delta_{n+1}$ આ રીતે વ્યાખ્યાયિત કરો:
+\[
+\Delta_{n+1} =
+\begin{cases}
+  \Delta_n \cup \{!A_n\}, & \text{જો $\Delta_n \cup \{ !A_n\}$
+    એ $\Sigma$-સુસંગત હોય;} \\
+  \Delta_n \cup \{ \lnot !A_n\}, & \text{અન્યથા.}
+\end{cases}
+\]
+હવે $\Delta = \bigcup_{n=0}^\infty \Delta_n$ લો.
+
+આ વ્યાખ્યાથી ખરેખર જરૂરી ગુણધર્મો ધરાવતો ગણ $\Delta$ મળે છે એવું
+બતાવવું પડશે, એટલે કે $\Gamma \subseteq \Delta$ અને $\Delta$ એ
+પૂર્ણ $\Sigma$-સુસંગત છે.
+
+$\Gamma \subseteq \Delta$ સ્પષ્ટ છે, કારણ કે રચના મુજબ $\Delta_0
+\subseteq \Delta$ અને $\Delta_0 = \Gamma$. હકીકતમાં, દરેક~$n$ માટે
+$\Delta_n \subseteq \Delta$, કેમ કે $\Delta$ બધાં~$\Delta_n$નો સંઘ
+છે. (રચનાના દરેક પગલે આપણે અગાઉના ગણમાં !!a{formula} ઉમેરીએ છીએ,
+તેથી $\Delta_n \subseteq \Delta_{n+1}$; અને $\subseteq$ પરંપરિત
+હોવાથી $n \le m$ હોય ત્યારે $\Delta_n \subseteq \Delta_{m}$.)
+રચનાના દરેક તબક્કે આપણે કાં તો $!A_n$ અથવા $\lnot !A_n$ ઉમેરીએ
+છીએ, અને દરેક !!{formula} બધાં~$!A_n$ની યાદીમાં (ઓછામાં ઓછું એક વાર)
+આવે છે. તેથી દરેક $!A$ માટે કાં તો $!A \in \Delta$ અથવા
+$\lnot !A \in \Delta$; એટલે વ્યાખ્યા મુજબ $\Delta$ પૂર્ણ છે.
+
+છેલ્લે, $\Delta$ એ $\Sigma$-સુસંગત છે તે બતાવવું પડશે. આ માટે
+બતાવીએ છીએ કે (a) જો $\Delta$ એ $\Sigma$-અસુસંગત હોય, તો કોઈ
+$\Delta_n$ એ $\Sigma$-અસુસંગત હશે; અને (b) બધાં $\Delta_n$ એ
+$\Sigma$-સુસંગત છે.
+
+ધારો કે $\Delta$ એ $\Sigma$-અસુસંગત છે. ત્યારે $\Delta
+\Proves[\Sigma] \lfalse$, એટલે કે એવાં $!A_1$, \dots,~$!A_k \in
+\Delta$ છે કે $\Sigma \Proves !A_1 \lif (!A_2 \lif \cdots (!A_k
+\lif \lfalse)\dots)$. $\Delta = \bigcup_{n=0}^\infty \Delta_n$
+હોવાથી દરેક $!A_i \in \Delta_{n_i}$ કોઈક~$n_i$ માટે સાચું છે.
+આ સૂચકોમાં સૌથી મોટો $n$ લો. $n_i \le n$ હોવાથી $\Delta_{n_i}
+\subseteq \Delta_n$. આમ, બધાં $!A_i$ કોઈ એક~$\Delta_n$માં છે.
+આનો અર્થ $\Delta_n \Proves[\Sigma] \lfalse$, એટલે કે $\Delta_n$
+એ $\Sigma$-અસુસંગત છે.
+
+દરેક $\Delta_n$ એ $\Sigma$-સુસંગત છે તે બતાવવા~$n$ પર સરળ અનુમાન
+વાપરીએ. $\Delta_0 = \Gamma$, અને આપણે $\Gamma$ એ
+$\Sigma$-સુસંગત છે એમ ધાર્યું હતું. એટલે $n = 0$ માટે દાવો સાચો
+છે. હવે $n$ માટે દાવો સાચો છે, એટલે કે $\Delta_n$ એ
+$\Sigma$-સુસંગત છે, એમ ધારો. જો $\Delta_n \cup \{!A_n\}$ એ
+$\Sigma$-સુસંગત હોય, તો $\Delta_{n+1}$ એ તે ગણ છે; નહિ તો તે
+$\Delta_n \cup \{\lnot!A_n\}$ છે. પહેલા કિસ્સામાં
+$\Delta_{n+1}$ એ સ્પષ્ટ રીતે $\Sigma$-સુસંગત છે. પરંતુ
+\olref[prf][con]{prop:consistencyfacts}\olref[prf][con]{prop:consistencyfacts-c}
+મુજબ $\Delta_n \cup \{!A_n\}$ અથવા $\Delta_n \cup \{\lnot!A_n\}$
+બેમાંથી ઓછામાં ઓછો એક સુસંગત છે; તેથી બીજા કિસ્સામાં પણ
+$\Delta_{n+1}$ સુસંગત છે.
+\end{proof}
+
+\begin{cor}\ollabel{cor:provability-characterization}
+  $\Gamma \Proves[\Sigma] !A$ જો અને માત્ર જો $\Gamma$ને વિસ્તારે
+  એવા દરેક પૂર્ણ $\Sigma$-સુસંગત ગણ $\Delta$માં $!A \in \Delta$
+  હોય ($\Gamma = \emptyset$ હોય ત્યારે પણ; એ કિસ્સામાં મોડલ તંત્ર
+  $\Sigma$નું બીજું લક્ષણચિત્રણ મળે છે).
+\end{cor}
+
+\begin{proof}
+  ધારો કે $\Gamma \Proves[\Sigma] !A$, અને $\Gamma$ને વિસ્તારે
+  એવો કોઈપણ પૂર્ણ $\Sigma$-સુસંગત ગણ $\Delta$ લો. જો $!A
+  \notin \Delta$ હોય, તો મહત્તમતાથી $\lnot!A \in \Delta$;
+  તેથી એકદિશવર્ધિતાથી $\Delta \Proves[\Sigma] !A$ અને સ્વવાચકતાથી
+  $\Delta \Proves[\Sigma] \lnot!A$, એટલે $\Delta$ અસુસંગત છે.
+  ઊલટું, જો $\Gamma \Proves/[\Sigma] !A$ હોય, તો $\Gamma \cup \{
+  \lnot!A\}$ એ $\Sigma$-સુસંગત છે; લિન્ડનબાઉમના સહાયક પ્રમેયથી
+  $\Gamma \cup \{ \lnot!A \}$ને વિસ્તારે એવો પૂર્ણ સુસંગત ગણ
+  $\Delta$ છે. સુસંગતતાથી $!A \notin \Delta$.
+\end{proof}
+
+\end{document}

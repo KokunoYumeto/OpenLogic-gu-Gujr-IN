@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0521",
+  "checked_at_utc": "2026-09-27T22:30:54.881446+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0521 counterfactual conditionals introduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0521",
+    "source_path": "content/counterfactuals/introduction/counterfactuals.tex",
+    "source_sha256": "b99a7ee8d111ff23508238df4fae5208e76f84f1a2cba55c5eecaff5814f7dba",
+    "draft_path": "private-state\\work\\batch043_draft\\counterfactual-conditionals.tex",
+    "draft_sha256": "944d28d253b7adceb7907770ae37e6ee0f09c4ea6f8bf1897522ea3bad0e1dfe",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 6,
+    "target_math_spans_after_corrections": 6,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 573,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "structural_scan_exclusions": [
+      {
+        "token": "to be",
+        "count": 2,
+        "reason": "quoted English verb under grammatical analysis; not untranslated expository prose"
+      }
+    ],
+    "one_quote_environment_preserved": true,
+    "source_punctuation_and_capitalization_regularized": true
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

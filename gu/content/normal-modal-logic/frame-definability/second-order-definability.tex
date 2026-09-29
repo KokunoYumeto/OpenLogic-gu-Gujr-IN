@@ -1,0 +1,200 @@
+% Part: normal-modal-logic
+% Chapter: frame-definability
+% Section: second-order-definability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{frd}{st}
+
+\olsection{દ્વિતીય-ક્રમ વ્યાખ્યાયિતતા}
+
+મોડલ સૂત્રોથી વ્યાખ્યાયિત કરી શકાય એવો દરેક
+ફ્રેમ-ગુણધર્મ પ્રથમ-ક્રમમાં વ્યાખ્યાયિત થઈ શકતો
+નથી. પરંતુ એકસ્થાની વિધેયધર્મો પર પરિમાણીકરણ
+(એટલે કે એકસ્થાની દ્વિતીય-ક્રમ પરિમાણીકરણ)
+મંજૂર કરીએ, તો બધા મોડલ રીતે વ્યાખ્યાયિત
+ફ્રેમ-ગુણધર્મો વ્યાખ્યાયિત કરી શકાય છે. યુક્તિ
+એ છે કે કોઈ મોડલ !!{formula} જગતમાં કઈ શરતો હેઠળ
+સત્ય છે અને પ્રથમ-ક્રમનાં !!{formula}s વચ્ચેના
+ક્રમબદ્ધ સંબંધનો ઉપયોગ કરવો. આ મોડલ સૂત્રોનો
+કહેવાતો \emph{પ્રમાણભૂત અનુવાદ} છે: તે માત્ર
+સુલભતા સંબંધ માટેનું દ્વિસ્થાની !!{predicate}~$Q$
+જ નહીં, પરંતુ~$!A$માં આવતાં દરેક
+!!{propositional variable}s~$\Obj p_i$ માટે
+એકસ્થાની !!{predicate}~$P_i$ પણ ધરાવતી
+પ્રથમ-ક્રમની ભાષામાં સૂત્રો આપે છે.
+
+\begin{defn}
+  \emph{પ્રમાણભૂત અનુવાદ}~$\ST_x(!A)$ નીચે પ્રમાણે
+  આગમનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\ST_x(\indfrm) = \lfalse$.}}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\ST_x(\indfrm) = \ltrue$.}}{}
+  \item \indcase{!A}{\Obj p_i}{$\ST_x(\indfrm) = \Atom{P_i}{x}$.}
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\ST_x(\indfrm) = \lnot \ST_x(!B)$.}}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \land \ST_x(!C))$.}}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \lor \ST_x(!C))$.}}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \lif \ST_x(!C))$.}}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\ST_x(\indfrm) = (\ST_x(!B)
+      \liff \ST_x(!C))}$.}{}
+  \tagitem{prvBox}{\indcase{!A}{\Box !B}{$\ST_x(\indfrm) =
+      \lforall[y][(\Atom{Q}{x,y} \lif \ST_y(!B))]$.}}{}
+  \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{$\ST_x(\indfrm) =
+      \lexists[y][(\Atom{Q}{x,y} \land \ST_y(!B))]$.}}{}
+  \end{enumerate}
+\end{defn}
+\sourcecorrection{OLMD-019}{સ્થિર અંગ્રેજી મૂળના
+\texttt{prvTrue} કિસ્સામાં આગમનનું સૂત્ર ભૂલથી
+અસત્ય સ્થિરાંક છે, જ્યારે અનુવાદનું પરિણામ સત્ય
+સ્થિરાંક છે. કિસ્સાનું સૂત્ર પરિણામ સાથે સુસંગત કર્યું છે.}
+
+દાખલા તરીકે, $\ST_x(\Box p \lif p)$ એ
+$\lforall[y][(\Atom{Q}{x,y}
+  \lif \Atom{P}{y})] \lif \Atom{P}{x}$ છે.
+~$\ST_x(!A)$ની ભાષાનું કોઈપણ !!{structure}
+માટે પ્રદેશ,~$Q$ને આપેલો દ્વિસ્થાની સંબંધ અને
+એકસ્થાની !!{predicate}s~$P_i$ને આપેલા પ્રદેશના
+ઉપગણો જોઈએ. બીજા શબ્દોમાં, આવા !!a{structure}ના
+ઘટકો બરાબર~$!A$ના નિદર્શનના ઘટકો જ છે:
+પ્રદેશ જગતોનો ગણ છે,~$Q$ને આપેલો દ્વિસ્થાની
+સંબંધ સુલભતા સંબંધ છે, અને~$P_i$ને આપેલા
+ઉપગણો બરાબર નિમણૂકો~$V(\Obj p_i)$ છે.
+મોડલ નિદર્શનમાં $!A$નો સંતોષ અને અનુરૂપ
+!!{structure}માં $\ST_x(!A)$નો સંતોષ મેળ ખાતા
+હોય તે આશ્ચર્યની વાત નથી:
+
+\begin{prop}\ollabel{prop:st}
+  $\mModel{M} = \tuple{W, R, V}$ લો. $\Struct{M'}$ એવું
+  પ્રથમ-ક્રમનું !!{structure} હોય કે
+  $\Domain{M'} = W$, $\Assign{Q}{M'} = R$ અને
+  $\Assign{P_i}{M'} = V(\Obj p_i)$; તથા $s(x) = w$.
+  ત્યારે
+  \[
+  \mSat{M}{!A}[w] \text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે } \Sat{M'}{\ST_x(!A)}[s]
+  \]
+\end{prop}
+
+\begin{proof}
+  $!A$ પર આગમનથી.
+\end{proof}
+
+\begin{prop}
+  માનો કે $!A$ મોડલ !!{formula} છે અને
+  $\mModel{F} = \tuple{W, R}$ ફ્રેમ છે.
+  $\Struct{F'}$ એવું પ્રથમ-ક્રમનું !!{structure} લો કે
+  $\Domain{F'} = W$ અને $\Assign{Q}{F'} = R$;
+  અને $!A'$ નીચેનું દ્વિતીય-ક્રમ સૂત્ર હોય:
+  \[
+  \lforall[X_1][\dots\lforall[X_n][\lforall[x][
+        \SSubst{\ST_x(!A)}{\subst{X_1}{P_1}, \dots,
+          \subst{X_n}{P_n}}]]],
+  \]
+  જ્યાં $P_1$, \dots, $P_n$ એ~$\ST_x(!A)$માંનાં
+  બધાં એકસ્થાની !!{predicate}s છે. ત્યારે
+  \[
+  \mModel{F} \Entails !A \text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે } \Sat{F'}{!A'}
+  \]
+\end{prop}
+
+\begin{proof}
+  $\Sat{F'}{!A'}$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $\Domain{M'}=W$ અને $\Assign{Q}{M'}=R$ ધરાવતાં
+  દરેક !!{structure}~$\mModel{M'}$માં
+  $i = 1$, \dots,~$n$ માટે
+  $\Assign{P_i}{M'} \subseteq W$ હોય, અને
+  $s(x) \in W$ ધરાવતી દરેક $s$ માટે
+  $\Sat{M'}{\ST_x(!A)}[s]$ હોય. \olref{prop:st}
+  મુજબ આ ત્યારે અને માત્ર ત્યારે જ છે જ્યારે
+  ફ્રેમ~$\mModel{F}$ પર આધારિત બધા નિદર્શનો~$\mModel{M}$
+  અને દરેક જગત~$w \in W$ માટે $\mSat{M}{!A}[w]$
+  હોય, એટલે કે $\mModel{F} \Entails !A$.
+\end{proof}
+\sourcecorrection{OLMD-020}{સ્થિર અંગ્રેજી મૂળના
+બીજા પ્રસ્તાવના પ્રમાણમાં રચના માટે નિર્ધારિત
+પ્રદેશ અને દ્વિસ્થાની સંબંધને મધ્યવર્તી નિદર્શનમાં
+સ્પષ્ટ રાખવામાં આવ્યા નથી. તે $W$ અને $R$
+શરતો લખી છે; નહીં તો ફ્રેમ પર આધારિત
+નિદર્શનો સાથે સમકક્ષતા ફલિત થતી નથી.}
+
+\begin{defn}
+  ફ્રેમોનો વર્ગ~$\mClass{F}$ \emph{દ્વિતીય-ક્રમમાં
+  વ્યાખ્યાયિત} છે જો એક દ્વિસ્થાની !!{predicate}~$P$
+  અને માત્ર એકસ્થાની ગણ-ચલો પરના પરિમાણકો
+  ધરાવતી દ્વિતીય-ક્રમ ભાષામાં એવું !!a{sentence}~$!A$
+  હોય કે $\mModel{F} = \tuple{W, R} \in \mClass{F}$
+  ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Domain{M} = W$
+  અને $\Assign{P}{M} = R$ ધરાવતી
+  !!{structure}~$\Struct{M}$માં $\Sat{M}{!A}$ હોય.
+\end{defn}
+
+\begin{cor}
+  ફ્રેમોનો વર્ગ કોઈ !!a{formula}~$!A$થી
+  વ્યાખ્યાયિત થતો હોય, તો અનુરૂપ સુલભતા
+  સંબંધોનો વર્ગ એકસ્થાની દ્વિતીય-ક્રમ વાક્યથી
+  વ્યાખ્યાયિત થાય છે.
+\end{cor}
+
+\begin{proof}
+  અગાઉના પ્રમાણનું એકસ્થાની દ્વિતીય-ક્રમ
+  વાક્ય~$!A'$ જરૂરી ગુણધર્મ ધરાવે છે.
+\end{proof}
+
+ઉદાહરણ તરીકે ફરી !!{formula}~$\Box p \lif p$ લો.
+તે સ્વવાચકતા વ્યાખ્યાયિત કરે છે. સ્વવાચકતા
+અલબત્ત પ્રથમ-ક્રમના !!{sentence}~$\lforall[x][\Atom{Q}{x,x}]$થી
+વ્યાખ્યાયિત થાય છે. પરંતુ એકસ્થાની દ્વિતીય-ક્રમના
+!!{sentence}થી પણ તે વ્યાખ્યાયિત થાય છે:
+\[
+\lforall[X][\lforall[x][(\lforall[y][(\Atom{Q}{x,y} \lif \Atom{X}{y})]
+    \lif \Atom{X}{x})]].
+\]
+એટલે આ બંને વાક્યો સમકક્ષ છે. આ વાત સીધી
+કેવી રીતે સમજાય તે જોઈએ. પહેલાં માનો કે
+દ્વિતીય-ક્રમ વાક્ય !!a{structure}~$\Struct{M}$માં
+સત્ય છે. $x$ અને $X$ બંને પર સર્વપરિમાણક
+હોવાથી બાકીનું કોઈપણ $x \in W$ અને
+ગણ~$X \subseteq W$ માટે સાચું હોવું જોઈએ;
+દાખલા તરીકે, $R =
+\Assign{Q}{M}$ હોય ત્યારે ગણ
+$\Setabs{z}{Rxz}$ લો. તો $s(x) \in W$ અને
+$s(X) =
+\Setabs{z}{Rxz}$ ધરાવતી કોઈપણ~$s$ માટે
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{X}{y})] \lif \Atom{X}{x}}[s]$ હોય.
+પરંતુ $s(X)$ની પસંદગીથી આનો અર્થ
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{Q}{x,y})] \lif \Atom{Q}{x,x}}[s]$ હોય,
+જેનો પૂર્વપક્ષ માન્ય હોવાથી તે
+$\Atom{Q}{x,x}$ને સમકક્ષ છે. $s(x)$ ગમે તે
+હોવાથી $\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$ મળે.
+\sourcecorrection{OLMD-021}{સ્થિર અંગ્રેજી મૂળની
+સીધી દલીલમાં મુક્ત ચલ ધરાવતી એક સંતોષ-અભિવ્યક્તિ
+સાથે નિમણૂક દર્શાવાઈ નથી. આસપાસની દલીલ મુજબ
+તેમાં નિમણૂકનો નિર્દેશ પૂર્યો છે.}
+
+હવે $\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$ માનો
+અને $\Sat{M}{\lforall[X][\lforall[x][(\lforall[y][(\Atom{Q}{x,y} \lif
+        \Atom{X}{y})] \lif \Atom{X}{x})]]}$ બતાવો.
+કોઈપણ નિમણૂક~$s$ લો અને
+$\Sat{M}{\lforall[y][(\Atom{Q}{x,y} \lif
+    \Atom{X}{y})]}[s]$ માનો. $s'$ એ~$s$નું એવું
+$y$-રૂપાંતર હોય કે $s'(y)
+= s(x)$; તો $\Sat{M}{\Atom{Q}{x,y} \lif \Atom{X}{y}}[s']$,
+એટલે કે $\Sat{M}{\Atom{Q}{x,x} \lif \Atom{X}{x}}[s]$.
+$\Sat{M}{\lforall[x][\Atom{Q}{x,x}]}$ હોવાથી
+પૂર્વપક્ષ સત્ય છે અને $\Sat{M}{\Atom{X}{x}}[s]$
+મળે છે; આ જ બતાવવાનું હતું.
+
+ફ્રેમોના કેટલાક વ્યાખ્યાયિત વર્ગો પ્રથમ-ક્રમમાં
+વ્યાખ્યાયિત થતા નથી; તેથી~$!A'$ સ્વરૂપના દરેક
+એકસ્થાની દ્વિતીય-ક્રમ !!{sentence}ને પ્રથમ-ક્રમના
+!!{sentence}ને સમકક્ષ બનાવી શકાય એવું નથી.
+કયાં બનાવી શકાય તે નક્કી કરવાની કોઈ અસરકારક
+પદ્ધતિ નથી.
+
+\end{document}

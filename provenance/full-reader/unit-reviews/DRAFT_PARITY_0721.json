@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0721",
+  "checked_at_utc": "2026-09-29T00:32:06.584235+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0721 Legacy detailed absorption proof; state-only draft",
+  "report": {
+    "unit_id": "OLP-0721",
+    "source_path": "content/sets-functions-relations/sets/proofs-about-sets.tex",
+    "source_sha256": "8f93670032cba429dab9426b50df980a5525413e67bd736f67153da40f7d2475",
+    "draft_path": "private-state\\work\\batch044_draft\\legacy-proofs-about-sets.tex",
+    "draft_sha256": "35d0e31ceec8e8d4d15d22deba673da3a730913b9c989649241a7167bdff3f28",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 62,
+    "target_math_spans_after_corrections": 62,
+    "glossary_tokens": 12,
+    "source_correction_notes": [
+      "OLMD-352"
+    ],
+    "source_detector_ascii_tokens": 469,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "\\verb|content/method/proofs|",
+        "\\verb|content/methods/proofs|"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "યોગગણ",
+          "છેદગણ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\verb|content/methods/proofs|",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

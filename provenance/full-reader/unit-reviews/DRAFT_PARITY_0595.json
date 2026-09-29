@@ -1,0 +1,101 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0595",
+  "checked_at_utc": "2026-09-28T03:24:54.506607+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0595 Hartogs lemma and equivalence of well-ordering with cardinal comparability; state-only draft",
+  "report": {
+    "unit_id": "OLP-0595",
+    "source_path": "content/set-theory/choice/hartogs.tex",
+    "source_sha256": "ffe4c3f0a800bd7893a39e68d109ca1eb9662b5f29cda42393cbc5777cf557c4",
+    "draft_path": "private-state\\work\\batch044_draft\\choice-hartogs.tex",
+    "draft_sha256": "67000ccd938d62c3c5f6aa9ba01a40de5b62bb5575880b29b54307eb00d15b38",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 57,
+    "target_math_spans_after_corrections": 57,
+    "glossary_tokens": 3,
+    "source_correction_notes": [
+      "OLMD-144",
+      "OLMD-145",
+      "OLMD-146"
+    ],
+    "source_detector_ascii_tokens": 231,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\text{ and $\\tuple{B, R}$ is a well-ordering}",
+        "\\text{ અને $\\tuple{B, R}$ સુક્રમ છે}"
+      ],
+      [
+        "$B \\subseteq R$",
+        "$B \\subseteq A$"
+      ],
+      [
+        "\\Setabs{\\tuple{f(\\alpha), f(\\beta)} \\in A \\times A}{\\alpha \\in \\beta}",
+        "\\Setabs{\\tuple{f(\\gamma), f(\\delta)} \\in A \\times A}{\\gamma,\\delta\\in\\alpha \\land \\gamma \\in \\delta}"
+      ],
+      [
+        "$\\cardeq{\\cardeq{A \\disjointsum B}{A \\times\r\nB}}{M}$",
+        "$\\cardeq{A \\disjointsum B}{M}$ અને\n$\\cardeq{A \\times B}{M}$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-using-addition.tex",
+        "sha256": "54c52a27923fcfb6fa3e156586066d9efc5232ab4df6ba4f70bca737d92e4210",
+        "terms": [
+          "\\ollabel{rankcomputation}",
+          "સ્તરાંક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+        "sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+        "terms": [
+          "\\ollabel{thmOrdinalRepresentation}",
+          "ક્રમપ્રકાર"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-basic.tex",
+        "sha256": "04651b060194f7d1566c1b81a0f5ab73b80a6d025107ba0db0a280141af07554",
+        "terms": [
+          "\\ollabel{corordtransitiveord}",
+          "પરંપરિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-iso.tex",
+        "sha256": "4f6a241b7fd72994f3a93087e2ed6525dbbcf74f02e8576330be1c61a41b657f",
+        "terms": [
+          "\\ollabel{wellordinitialsegment}",
+          "સુક્રમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-simp.tex",
+        "sha256": "4f217a5c40f0d10bea591b7daaf9f2627651a24e4aadffac57024b6ca9f8aea3",
+        "terms": [
+          "\\ollabel{cardplustimesmax}",
+          "ગણાંક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "OLMD-144 corrects only the source's mistaken B⊆R in the transitivity step; the defining C already requires B⊆A.",
+      "OLMD-145 binds gamma and delta inside the ordinal alpha, so the transported relation never evaluates f at alpha itself.",
+      "OLMD-146 separates the disjoint-union and product comparisons with M; the original nested cardeq does not denote a set-sized comparison."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

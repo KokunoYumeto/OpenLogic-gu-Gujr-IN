@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0490",
+  "checked_at_utc": "2026-09-27T20:22:49.801021+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0490 public-announcement semantics; state-only draft",
+  "report": {
+    "unit_id": "OLP-0490",
+    "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex",
+    "source_sha256": "b5e8c2ba742dc473a01dbc6f3908250b2afc6deb12f338019ac9482cfea361cd",
+    "draft_path": "private-state\\work\\batch041_draft\\epistemic-public-announcement-logic-semantics.tex",
+    "draft_sha256": "948bb8919f8fad7e4f502b22be09459586cd2d4d24f6b3b2c6e5769766bdee24",
+    "aligned_blocks": 20,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 86,
+    "target_math_spans_after_corrections": 86,
+    "glossary_tokens": 8,
+    "source_correction_notes": [
+      "OLMD-081",
+      "OLMD-082"
+    ],
+    "source_detector_ascii_tokens": 431,
+    "target_detector_findings_all_tikz_structural": 17,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_after_logged_repair": true,
+    "figure_structure_exact_except_localized_edge_label": true,
+    "independent_model_check": {
+      "p_announcement_worlds": [
+        "w1",
+        "w3"
+      ],
+      "moore_announcement_worlds": [
+        "w1"
+      ],
+      "b_knows_p_after_both_at_original_w1": true,
+      "moore_content_false_after_announcement_at_original_w1": true
+    }
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

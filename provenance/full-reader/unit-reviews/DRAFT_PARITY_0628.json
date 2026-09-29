@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0628",
+  "checked_at_utc": "2026-09-28T15:33:53.375421+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0628 Julia Robinson biography and Hilbert's tenth problem; state-only draft",
+  "report": {
+    "unit_id": "OLP-0628",
+    "source_path": "content/history/biographies/julia-robinson.tex",
+    "source_sha256": "bdc5d38306c267699a1e3bfa1fc136f93e0b83ebe03de1ac81987ae35f7b599d",
+    "draft_path": "private-state\\work\\batch044_draft\\julia-robinson.tex",
+    "draft_sha256": "722ed8f1b44547fc132e6275807c5d3d5360f9de8010497b26c2f481ab1b3433",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 1,
+    "target_math_spans_after_corrections": 1,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 637,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\turing-machines\\undecidability\\decision-problem.tex",
+        "sha256": "b8323db81b22049f90eeac15fc4797ed127f5970cfc2f89dcf4375849ffa79f3",
+        "terms": [
+          "નિર્ણેય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\computability\\computability-theory\\application-fixed-point.tex",
+        "sha256": "5c6cf00273f1b508b6b80359be3a5436f0245596ebc02b75ac7352a6756bafd8",
+        "terms": [
+          "કલનવિધિ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\proof-systems\\introduction.tex",
+        "sha256": "1b84a55e723ee46dbbc3703c635e010a63a12f7e1015b956874cab45e9385ad8",
+        "terms": [
+          "કુર્ત ગેડલે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Collected\n  Works",
+        "count": 1,
+        "reason": "Exact English proper title of the cited collected edition."
+      },
+      {
+        "literal": "Autobiography of Julia",
+        "count": 1,
+        "reason": "Exact English proper title of the memoir by Constance Reid."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "robinson-julia",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [
+      {
+        "literal": "MRDP",
+        "count": 1,
+        "reason": "Conventional acronym for the explicitly named four-person theorem."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,521 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: proofs-in-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{pnd}
+\olsection{સ્વાભાવિક નિગમનમાં \usetoken{P}{derivation}}
+
+\begin{explain}
+!!{derivation}sનું અંકગણિતીકરણ કરવા
+આપણે !!{derivation}sને સંખ્યાઓ વડે
+નિરૂપવાં પડશે. !!{derivation}s એ
+!!{formula}sનાં વૃક્ષો છે અને તેમાં
+દરેક અનુમાનને એક કે બે ચિહ્નન હોય છે.
+તેથી પુનરાવર્તી નિરૂપણ સ્વાભાવિક છે:
+!!{derivation}ને એવી ટપલ તરીકે નિરૂપીએ
+જેના ઘટકો છેલ્લા અનુમાનના આધારવાક્યો
+તરફ જતા સીધા ઉપ-!!{derivation}sની સંખ્યા,
+આ ઉપ-!!{derivation}sનાં નિરૂપણો,
+અંતિમ !!{formula}, છેલ્લા અનુમાનનું
+નિવૃત્તિ-ચિહ્નન અને છેલ્લા અનુમાનનો
+પ્રકાર દર્શાવતો નંબર છે.
+\end{explain}
+
+\begin{defn}
+  $\delta$ એ સ્વાભાવિક નિગમનમાં
+  !!a{derivation} હોય, તો $\Gn{\delta}$ને
+  નીચે પ્રમાણે આગમનાત્મક રીતે વ્યાખ્યાયિત કરીએ:
+  \begin{enumerate}
+  \item
+    $\delta$ માત્ર ધારણા~$!A$નું બનેલું
+    હોય, તો $\Gn{\delta}$ એ
+    $\tuple{0, \Gn{!A}, n}$ છે.
+    ધારણા !!{undischarged} હોય તો
+    નંબર~$n$ એ~$0$ છે; અન્યથા તે
+    ધારણાનું અંકીય ચિહ્નન છે.
+  \item
+    $\delta$નો અંત શૂન્ય, એક, બે કે ત્રણ
+    આધારવાક્યોવાળા અનુમાનથી થતો હોય,
+    તો અનુક્રમે $\Gn{\delta}$ આ છે:
+    \begin{align*}
+      & \tuple{0, \Gn{!A}, n, k}, \\
+      & \tuple{1, \Gn{\delta_1}, \Gn{!A}, n, k}, \\
+      & \tuple{2, \Gn{\delta_1}, \Gn{\delta_2}, \Gn{!A}, n, k}, \text{ અથવા}\\
+      & \tuple{3, \Gn{\delta_1}, \Gn{\delta_2}, \Gn{\delta_3}, \Gn{!A}, n,
+        k},
+    \end{align*}
+    અહીં $\delta_1$, $\delta_2$, $\delta_3$
+    એ~$\delta$ના છેલ્લા અનુમાનનાં
+    આધારવાક્યોમાં પૂરાં થતાં
+    ઉપ-!!{derivation}s છે;
+    $!A$ એ~$\delta$ના છેલ્લા અનુમાનનું
+    ફલિતવાક્ય છે; $n$ એ છેલ્લા અનુમાનનું
+    નિવૃત્તિ-ચિહ્નન છે (અનુમાન કોઈ ધારણા
+    નિવૃત્ત ન કરતું હોય તો~$0$); અને
+    છેલ્લા અનુમાનમાં વપરાયેલા નિયમ પ્રમાણે
+    નીચેના કોષ્ટકમાંથી~$k$ મળે છે.
+  
+    \begin{tabular}{lccccccc}
+      \text{નિયમ:} & \Intro{\land} & \Elim{\land} & \Intro{\lor} & \Elim{\lor} \\
+      $k$: & 1 & 2 & 3 & 4  \\[1.5ex]
+      \text{નિયમ:} &  \Intro{\lif} & \Elim{\lif} & \Intro{\lnot} & \Elim{\lnot} \\
+      $k$: & 5 & 6 & 7 & 8 \\[1.5ex]
+      \text{નિયમ:}  &  \FalseInt & \FalseCl & \Intro{\lforall} & \Elim{\lforall} \\
+      $k$: & 9 & 10 & 11 & 12 \\[1.5ex]
+      \text{નિયમ:} & \Intro{\lexists} & \Elim{\lexists} & \Intro{\eq} & \Elim{\eq} \\
+      $k$: & 13 & 14 & 15 & 16 
+    \end{tabular}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  આ અત્યંત સરળ !!{derivation} જુઓ:
+  \begin{prooftree}
+    \AxiomC{$\Discharge{!A \land !B}{1}$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$!A$}
+    \DischargeRule{\Intro{\lif}}{1}
+    \UnaryInfC{$(!A \land !B) \lif !A$}
+  \end{prooftree}
+  ધારણાની ગડેલ-સંખ્યા
+  $d_0 = \tuple{0,
+    \Gn{(!A \land !B)}, 1}$ થાય.
+  $\Elim{\land}$ના ફલિતવાક્યમાં
+  પૂરી થતી !!{derivation}ની ગડેલ-સંખ્યા
+  $d_1 = \tuple{1,
+     d_0, \Gn{!A}, 0, 2}$ થાય
+  ($1$ એટલા માટે કે $\Elim{\land}$ને
+  એક આધારવાક્ય છે, ફલિતવાક્ય~$!A$ની
+  ગડેલ-સંખ્યા લેવાઈ છે, $0$ એટલા માટે
+  કે કોઈ ધારણા નિવૃત્ત થતી નથી અને
+  $2$ એ $\Elim{\land}$નો સંકેત નંબર
+  છે). આખી !!{derivation}ની ગડેલ-સંખ્યા
+  તેથી
+  $\tuple{1, d_1, \Gn{((!A \land !B) \lif
+      !A)}, 1, 5}$, એટલે કે
+  \[
+  \tuple{1, \tuple{1, \tuple{0, \Gn{(!A \land !B)}, 1}, \Gn{!A}, 0, 2},
+    \Gn{((!A \land !B) \lif !A)}, 1, 5}.
+  \]
+  \sourcecorrection{OLINC-011}{સ્થિર અંગ્રેજી
+  મૂળમાં ધારણાના સંકેત~$d_0$માં
+  $\Gn{!A \land !B}$ છે, જ્યારે
+  એ જ ધારણાની વિસ્તૃત ટપલમાં
+  $\Gn{(!A \land !B)}$ છે. વાક્યરચનાની
+  એકરૂપ સંકેતશ્રેણી માટે અહીં બંને
+  જગ્યાએ બીજા સ્વરૂપને રાખ્યું છે.}
+\end{ex}
+
+\begin{explain}
+!!{derivation}sનું નિરૂપણ નક્કી કર્યા પછી
+આવા !!{derivation}sની ગડેલ-સંખ્યાઓ પર
+આદિમ પુનરાવર્તી રીતે ક્રિયા કરી શકાય
+અને તેમના આવશ્યક ગુણધર્મો તથા સંબંધો
+વ્યક્ત કરી શકાય તે પણ બતાવવું પડે.
+કેટલીક ક્રિયાઓ સરળ છે: દાખલા તરીકે,
+!!a{derivation}ની ગડેલ-સંખ્યા~$d$ હોય,
+તો $\fn{EndFmla}(d) = (d)_{(d)_0+1}$
+તેના અંતિમ !!{formula}ની ગડેલ-સંખ્યા
+આપે છે; $\fn{DischargeLabel}(d) = (d)_{(d)_0 + 2}$
+નિવૃત્તિ-ચિહ્નન આપે છે અને બિનધારણા
+કિસ્સામાં
+$\fn{LastRule}(d) = (d)_{(d)_0 + 3}$
+છેલ્લા અનુમાનનો પ્રકાર દર્શાવતો નંબર
+આપે છે. માત્ર ધારણા હોય ત્યારે આ
+વિધેયને શૂન્ય મૂલ્ય આપીને સર્વત્ર
+વ્યાખ્યાયિત કરી શકીએ.
+\sourcecorrection{OLINC-012}{સ્થિર અંગ્રેજી
+મૂળમાં ત્રણ-ઘટક ધારણા-ટપલ માટે
+$\fn{LastRule}(d)$નું દર્શાવેલું
+ઘટક અસ્તિત્વમાં નથી. આ સમીકરણ
+બિનધારણા કિસ્સે લાગુ પડે છે;
+ધારણાના કિસ્સામાં શૂન્ય મૂલ્ય
+મૂકવાથી આગળનો ગુણધર્મ સર્વત્ર
+અર્થપૂર્ણ થાય છે.}
+બીજી કેટલીક ક્રિયાઓ ઘણી કઠિન છે.
+તેમને કેવી રીતે સંભાળવી તેનો ઓછામાં
+ઓછો રૂપરેખાત્મક ખ્યાલ આપીશું. હેતુ
+એ બતાવવાનો છે કે ``$\delta$ એ
+$\Gamma$માંથી~$!A$ની
+!!a{derivation} છે'' એ સંબંધ
+$\delta$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
+આદિમ પુનરાવર્તી સંબંધ છે.
+\end{explain}
+
+\begin{prop}
+  નીચેના સંબંધો આદિમ પુનરાવર્તી છે:
+  \begin{enumerate}
+  \item $!A$ એ~$\delta$માં
+    ચિહ્નન~$n$વાળી ધારણા તરીકે આવે છે.
+  \item $\delta$માં ચિહ્નન~$n$વાળી
+    બધી ધારણાઓ $!A$ સ્વરૂપની છે
+    (એટલે $\delta$માં ચિહ્નન~$n$
+    વાપરીને ધારણા~$!A$ને
+    !!{discharge} કરી શકીએ).
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  !!{formula}sની ગડેલ-સંખ્યાઓ અને
+  !!{derivation}sની ગડેલ-સંખ્યાઓ વચ્ચેના
+  અનુરૂપ સંબંધો આદિમ પુનરાવર્તી છે
+  તે બતાવવાનું છે.
+  \begin{enumerate}
+  \item $\fn{Assum}(x, d, n)$ આદિમ
+    પુનરાવર્તી છે તે બતાવવું છે. તે
+    ત્યારે સત્ય છે જ્યારે $x$ એ
+    ગડેલ-સંખ્યા~$d$ ધરાવતી
+    !!{derivation}માં ચિહ્નન~$n$વાળી
+    ધારણાની ગડેલ-સંખ્યા હોય.
+    ગડેલ-સંખ્યા~$\tuple{0, x,
+      n}$ ધરાવતી !!{derivation} એ~$d$ની
+    ઉપ-!!{derivation} હોય ત્યારે આવું બને.
+    !!{derivation}sનું આપેલું
+    સંકેતબદ્ધીકરણ
+    \olref[cmp][rec][tre]{sec}માં રજૂ થયેલા
+    વૃક્ષોના સંકેતબદ્ધીકરણનો વિશિષ્ટ
+    કિસ્સો છે. તેથી આદિમ પુનરાવર્તી
+    વિધેય~$\fn{SubtreeSeq}(d)$ આ~$d$ની
+    બધી ઉપ-!!{derivation}sની ગડેલ-સંખ્યાઓની
+    શ્રેણી આપે છે (તેની લંબાઈ વધુમાં
+    વધુ~$d$ છે). આમ વ્યાખ્યાયિત કરીએ:
+    \[
+    \fn{Assum}(x, d, n) \defiff \bexists{i<d}{(\fn{SubtreeSeq}(d))_i =
+      \tuple{0, x, n}}.
+    \]
+  \item $\fn{Discharge}(x, d, n)$
+    સંબંધ આદિમ પુનરાવર્તી છે તે બતાવવું છે.
+    તે ત્યારે સત્ય છે જ્યારે ગડેલ-સંખ્યા~$d$
+    ધરાવતી !!{derivation}માં ચિહ્નન~$n$
+    ધરાવતી બધી ધારણાઓ ગડેલ-સંખ્યા~$x$
+    ધરાવતા !!{formula} હોય. આ સંબંધ
+    ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
+    $\bforall{y<d}{(\fn{Assum}(y, d, n) \lif y
+      = x)}$.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:followsby}
+  ગડેલ-સંખ્યા~$d$ ધરાવતી
+  !!{derivation}~$\delta$નું છેલ્લું
+  અનુમાન યોગ્ય હોય ત્યારે અને માત્ર
+  ત્યારે સત્ય થતો ગુણધર્મ
+  $\fn{Correct}(d)$ આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  દરેક અનુમાન-નિયમ~$R$ માટે
+  $\fn{FollowsBy}_R(d)$ સંબંધ આદિમ
+  પુનરાવર્તી છે તે બતાવવાનું છે.
+  $\fn{FollowsBy}_R(d)$ ત્યારે અને માત્ર
+  ત્યારે સત્ય છે જ્યારે $d$ એ
+  !!{derivation}~$\delta$ની ગડેલ-સંખ્યા
+  હોય અને~$\delta$નું અંતિમ !!{formula}
+  $\delta$ના સીધા ઉપ-!!{derivation}sમાંથી
+  $R$ના યોગ્ય ઉપયોગ વડે ફલિત થતું હોય.
+
+  એક સરળ કિસ્સો \Intro{\land} નિયમનો
+  છે. $\delta$નો અંત યોગ્ય
+  $\Intro{\land}$ અનુમાનથી થતો હોય,
+  તો તે આ પ્રમાણે દેખાય:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$!A$}
+    
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!B$}
+
+    \RightLabel{\Intro\land}
+    \BinaryInfC{$!A \land !B$}
+  \end{prooftree}
+  ત્યારે $\delta$ની ગડેલ-સંખ્યા~$d$
+  એ $\tuple{2, d_1, d_2,
+    \Gn{(!A \land !B)}, 0, k}$ છે, જ્યાં
+  $\fn{EndFmla}(d_1) = \Gn{!A}$,
+  $\fn{EndFmla}(d_2) = \Gn{!B}$,
+  $n=0$ અને $k=1$. તેથી
+  $\fn{FollowsBy}_{\Intro\land}(d)$ને
+  આ પ્રમાણે વ્યાખ્યાયિત કરીએ:
+  \begin{multline*}
+    (d)_0 = 2 \land \fn{DischargeLabel}(d) = 0 \land \fn{LastRule}(d) = 1 \land {}\\
+    \fn{EndFmla}(d) = {}\\
+    \Gn{(} \concat \fn{EndFmla}((d)_1) \concat \Gn{\land}
+    \concat \fn{EndFmla}((d)_2) \concat \Gn{)}.
+  \end{multline*}
+
+  બીજું સરળ ઉદાહરણ $\Intro\eq$ નિયમ છે.
+  તેને આધારવાક્યો નથી, એટલે ધારણાની
+  જેમ $(d)_0 = 0$. તેને
+  નિવૃત્તિ-ચિહ્નન પણ નથી, એટલે
+  $n=0$. જોકે $!A$ કોઈ બંધ
+  પદ~$t$ માટે $\eq[t][t]$ સ્વરૂપનું
+  હોવું જોઈએ. અહીં આદિમ પુનરાવર્તી
+  વ્યાખ્યા આ છે:
+  \begin{multline*}
+    (d)_0 = 0 \land \fn{DischargeLabel}(d) = 0 \land
+    \fn{LastRule}(d) = 15 \land {}\\
+    \bexists{t<d}{(\fn{ClTerm}(t) \land 
+      \fn{EndFmla}(d) = {}\\
+      \Gn{{\eq}(} \concat t \concat \Gn{,} \concat t \concat \Gn{)})}.
+  \end{multline*}
+  \sourcecorrection{OLINC-013}{સ્થિર અંગ્રેજી
+  મૂળમાં આ નિયમના સૂત્રમાં
+  છેલ્લો નિયમ~$15$ છે તે શરત
+  છૂટી છે. વ્યાખ્યા જણાવેલા
+  $\Intro\eq$ નિયમને જ ઓળખે
+  તે માટે અહીં આ શરત ઉમેરી છે.}
+
+  વધુ જટિલ ઉદાહરણમાં
+  $\fn{FollowsBy}_{\Intro{\lif}}(d)$
+  ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
+  $\delta$નું અંતિમ !!{formula}
+  $(!A \lif !B)$ સ્વરૂપનું હોય,
+  $\delta_1$નું અંતિમ !!{formula}~$!B$
+  હોય અને~$\delta$માં ચિહ્નન~$n$
+  ધરાવતી દરેક ધારણા $!A$ સ્વરૂપની હોય.
+  આને આદિમ પુનરાવર્તી રીતે વ્યક્ત કરીએ:
+  \begin{multline*}
+    (d)_0 = 1 \land \fn{LastRule}(d) = 5 \land {}\\
+    \bexists{a<d}{(\fn{Discharge}(a, (d)_1, \fn{DischargeLabel}(d)) \land {}}\\
+      \fn{EndFmla}(d) = (\Gn{(} \concat a \concat \Gn{\lif}
+      \concat \fn{EndFmla}((d)_1) \concat \Gn{)}))
+  \end{multline*}
+  (અહીં $a$ને~$!A$ની ગડેલ-સંખ્યા
+  તરીકે વિચારો).
+  \sourcecorrection{OLINC-014}{સ્થિર અંગ્રેજી
+  મૂળના આ સૂત્રમાં છેલ્લો
+  નિયમ~$5$ છે તે શરત છૂટી છે;
+  નિયમ ઓળખવા માટે અહીં ઉમેરી છે.}
+
+  હવે \Intro{\lexists}નું ઉદાહરણ લો.
+  અહીં~$\delta$નું છેલ્લું અનુમાન
+  ત્યારે અને માત્ર ત્યારે યોગ્ય છે
+  જ્યારે એવું !!a{formula}~$!A$,
+  બંધ પદ~$t$ અને !!a{variable}~$x$
+  હોય કે $\Subst{!A}{t}{x}$ એ
+  !!{derivation}~$\delta_1$નું અંતિમ
+  !!{formula} હોય અને
+  $\lexists[x][!A]$ છેલ્લા અનુમાનનું
+  ફલિતવાક્ય હોય. તેથી
+  $\fn{FollowsBy}_{\Intro{\lexists}}(d)$
+  ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
+  \begin{multline*}
+    (d)_0 = 1 \land \fn{DischargeLabel}(d) = 0 \land
+    \fn{LastRule}(d) = 13 \land {} \\
+    \bexists{a < d}{\bexists{x<d}{\bexists{t<d}{
+          (\fn{ClTerm}(t) \land \fn{Var}(x)  \land {}}}}\\
+    \fn{Subst}(a,t,x) = \fn{EndFmla}((d)_1) \land
+    \fn{EndFmla}(d) = (\Gn{\lexists} \concat x \concat a)).
+  \end{multline*}
+  \sourcecorrection{OLINC-015}{સ્થિર અંગ્રેજી
+  મૂળના આ સૂત્રમાં છેલ્લો
+  નિયમ~$13$ છે તે શરત છૂટી છે;
+  અહીં એ સ્પષ્ટ કરી છે.}
+
+  હવે $\fn{Correct}(d)$ને આ પ્રમાણે
+  વ્યાખ્યાયિત કરીએ:
+  \begin{multline*}
+    \fn{Sent}(\fn{EndFmla}(d)) \land \bigl[{}\\
+    (\fn{LastRule}(d) = 1 \land
+    \fn{FollowsBy}_{\Intro\land}(d)) \lor \dots \lor {}\\
+    (\fn{LastRule}(d) = 16 \land \fn{FollowsBy}_{\Elim\eq}(d)) \lor {}\\
+    \bexists{n<d}{\bexists{x<d}{(d = \tuple{0, x, n})}}\bigr].
+  \end{multline*}
+  \sourcecorrection{OLINC-016}{સ્થિર અંગ્રેજી
+  મૂળના સૂત્રમાં છેલ્લાં વિકલ્પોની
+  આસપાસ કૌંસ નથી. સામાન્ય
+  સંયોજક-પ્રાથમિકતા પ્રમાણે
+  $\fn{Sent}$ની શરત ફક્ત પહેલા
+  નિયમને લાગુ પડે તેમ બને છે.
+  અહીં આખા વિકલ્પ-સમૂહને કૌંસમાં
+  રાખ્યો છે જેથી દરેક કિસ્સામાં
+  અંતિમ સૂત્ર વાક્ય હોવું જરૂરી બને.}
+  પહેલી પંક્તિથી~$d$નું અંતિમ
+  !!{formula} વાક્ય છે તે નિશ્ચિત
+  થાય છે. છેલ્લી પંક્તિ~$d$
+  માત્ર ધારણા હોય તે કિસ્સો આવરી લે છે.
+\end{proof}
+
+\begin{prob}
+  \olref[inc][art][pnd]{prop:followsby}ની
+  જેમ નીચેના ગુણધર્મો વ્યાખ્યાયિત કરો:
+  \begin{enumerate}
+  \item $\fn{FollowsBy}_{\Elim{\lif}}(d)$,
+  \item $\fn{FollowsBy}_{\Elim{\eq}}(d)$,
+  \item $\fn{FollowsBy}_{\Elim{\lor}}(d)$,
+  \item $\fn{FollowsBy}_{\Intro{\lforall}}(d)$.
+  \end{enumerate}
+  છેલ્લા માટે એ પણ બતાવવું પડશે કે
+  ગડેલ-સંખ્યા~$d$ ધરાવતી
+  !!{derivation}નું છેલ્લું અનુમાન
+  વિશિષ્ટ ચલની શરત સંતોષે છે કે નહીં
+  તે આદિમ પુનરાવર્તી રીતે ચકાસી શકાય.
+  એટલે $\Intro{\lforall}$ અનુમાનનો
+  વિશિષ્ટ ચલ~$a$ ન તો~$d$ના
+  અંતિમ !!{formula}માં આવે, ન તો~$d$ની
+  ખુલ્લી ધારણામાં આવે. આ માટે
+  \olref[inc][art][pnd]{prop:openassum}નો
+  આદિમ પુનરાવર્તી વિધાન
+  $\fn{OpenAssum}$ વાપરી શકો.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:deriv}
+  યોગ્ય !!{derivation}~$\delta$ની
+  ગડેલ-સંખ્યા~$d$ હોય ત્યારે સત્ય
+  થતો સંબંધ~$\fn{Deriv}(d)$ આદિમ
+  પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  !!^a{derivation}~$\delta$ ત્યારે યોગ્ય
+  છે જ્યારે તેનું દરેક અનુમાન કોઈ
+  નિયમનો યોગ્ય ઉપયોગ હોય, એટલે કે
+  તેની દરેક ઉપ-!!{derivation}નો અંત
+  યોગ્ય અનુમાનથી થતો હોય. તેથી
+  $\fn{Deriv}(d)$ ત્યારે અને માત્ર
+  ત્યારે સત્ય છે જ્યારે
+  \[
+  \bforall{i<\len{\fn{SubtreeSeq}(d)}}{\fn{Correct}((\fn{SubtreeSeq}(d))_i)}
+  \]
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:openassum}
+  ગડેલ-સંખ્યા~$d$ ધરાવતી
+  !!{derivation}~$\delta$ની
+  !!a{undischarged} ધારણા~$!A$ની
+  ગડેલ-સંખ્યા~$z$ હોય ત્યારે સત્ય
+  થતો સંબંધ~$\fn{OpenAssum}(z, d)$
+  આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+  ધારણાની કોઈ ઘટના~$\delta$ની એવી
+  ઉપ-!!{derivation}માં ચિહ્નન~$n$
+  સાથે આવે જેનો અંત નિવૃત્તિ-ચિહ્નન~$n$
+  ધરાવતા નિયમથી થાય, તો તે ઘટના
+  !!{discharged} કહેવાય. તેથી~$!A$ની
+  ઓછામાં ઓછી એક ઘટના~$\delta$માં
+  !!{discharged} ન હોય તો તે
+  $\delta$ની !!a{undischarged} ધારણા છે.
+  સાવચેતી જરૂરી છે: $\delta$માં~$!A$ની
+  !!{discharged} અને
+  !!{undischarged} બંને પ્રકારની
+  ઘટનાઓ હોઈ શકે.
+
+  $\delta_0$, \dots, $\delta_k$ એવી
+  શ્રેણી લો જેમાં $\delta_0 =
+  \delta$, $\delta_k$ એ ધારણા
+  $\Discharge{!A}{n}$ છે (કોઈ~$n$
+  માટે) અને $\delta_{i+1}$ એ
+  $\delta_i$ની સીધી ઉપ-!!{derivation}
+  છે. ધારણાનું ચિહ્નન શૂન્ય હોય અથવા એવી શ્રેણી
+  હોય કે તેના કોઈ $\delta_i$નો અંત
+  નિવૃત્તિ-ચિહ્નન~$n$ ધરાવતા
+  અનુમાનથી ન થતો હોય, તો~$!A$ એ
+  $\delta$ની !!a{undischarged}
+  ધારણા છે.
+
+  આદિમ પુનરાવર્તી
+  વિધેય~$\fn{SubtreeSeq}(d)$ આપણને
+  $\delta$ની બધી ઉપ-!!{derivation}sની
+  ગડેલ-સંખ્યાઓની શ્રેણી આપે છે.
+  $\delta$ની ઉપ-!!{derivation}sના
+  સંકેતોની કોઈ માર્ગ-શ્રેણીના બધા
+  ઘટકો તેમાં આવે છે. ઘટક-સમાવેશ
+  આદિમ પુનરાવર્તી સંબંધ છે:
+  $\fn{Subseq}(s, s')$ ત્યારે અને
+  માત્ર ત્યારે સત્ય છે જ્યારે
+  $\bforall{i<\len{s}}{\lexists[j<\len{s'}][(s)_i = (s')_j]}$.
+  સીધી ઉપ-!!{derivation} હોવું પણ
+  આદિમ પુનરાવર્તી છે:
+  $\fn{Subderiv}(d, d')$ ત્યારે અને
+  માત્ર ત્યારે, જ્યારે
+  $\bexists{j<(d')_0}{d = (d')_{j+1}}$.
+  અંતિમ વૃક્ષમાં માર્ગની લંબાઈ અને
+  તેના સભ્યોના સંકેતો મૂળ કોડથી
+  મર્યાદિત છે; તેથી અગાઉનું
+  $\fn{sequenceBound}$ વિધેય
+  વાપરીને $B(d)=\fn{sequenceBound}(d,d+1)+1$
+  બધા આવા માર્ગોના સંકેતોની
+  આદિમ પુનરાવર્તી મર્યાદા આપે છે.
+  આમ $\fn{OpenAssum}(z, d)$ને
+  આ પ્રમાણે વ્યાખ્યાયિત કરીએ:
+  \begin{multline*}
+    \bexists{s<B(d)}{(\fn{Subseq}(s, \fn{SubtreeSeq}(d))
+      \land (s)_0 = d \land {}} \\
+    \bexists{n<d}{((s)_{\len{s} \tsub 1} = \tuple{0, z, n} \land {}}\\
+      \bforall{i<(\len{s} \tsub 1)}{(\fn{Subderiv}((s)_{i+1}, (s)_i) \land {}}\\
+      (n=0 \lor \fn{DischargeLabel}((s)_i) \neq n)))).
+  \end{multline*}
+  \sourcecorrection{OLINC-017}{સ્થિર અંગ્રેજી
+  મૂળના માર્ગ-પરીક્ષણમાં ચાર સમસ્યાઓ
+  છે. $\fn{Subseq}$નું આપેલું સૂત્ર
+  ક્રમયુક્ત ઉપશ્રેણી નહીં, માત્ર
+  ઘટક-સમાવેશ તપાસે છે; માર્ગનો ક્રમ
+  આગળની સીધી-ઉપપ્રમાણ શરત આપે છે.
+  સીધી ઉપપ્રમાણની ટપલનું પ્રથમ સ્થાન
+  ગણતરી છે, તેથી સંતાન-સૂચકમાં
+  એક ઉમેરવું પડે. આખી
+  $\fn{SubtreeSeq}(d)$નો સંકેત
+  માર્ગના સંકેતોની મર્યાદા હોવો
+  જરૂરી નથી; અહીં અગાઉ વ્યાખ્યાયિત
+  $\fn{sequenceBound}$માંથી સ્પષ્ટ
+  મર્યાદા લીધી છે. અને ખુલ્લી
+  ધારણાનું ચિહ્નન~$0$ હોય ત્યારે
+  પૂર્વજનાં શૂન્ય નિવૃત્તિ-ચિહ્નનો
+  તેને નિવૃત્ત કરતો નથી; તે કિસ્સો
+  અહીં અલગ રાખ્યો છે.}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:prf-prim-rec}
+  $\Gamma$ એ !!{sentence}sનો આદિમ
+  પુનરાવર્તી ગણ હોય એમ ધારો.
+  ત્યારે $\Prf[\Gamma](x, y)$ આદિમ
+  પુનરાવર્તી છે: તેનો અર્થ એ છે કે
+  $x$ એ~$\Gamma$ની
+  !!{undischarged} ધારણાઓમાંથી
+  $!A$ની !!a{derivation}~$\delta$નો
+  સંકેત છે અને $y$ એ~$!A$ની
+  ગડેલ-સંખ્યા છે.
+\end{prop}
+
+\begin{proof}
+  ``$y \in \Gamma$'' આદિમ પુનરાવર્તી
+  વિધાન~$R_\Gamma(y)$ વડે આપવામાં
+  આવ્યું હોય એમ ધારો. આપણે બતાવવું છે
+  કે $\Prf[\Gamma](x, y)$ આદિમ
+  પુનરાવર્તી છે. આ સંબંધ ત્યારે અને
+  માત્ર ત્યારે સત્ય છે જ્યારે $y$ એ
+  વાક્ય~$!A$ની ગડેલ-સંખ્યા હોય અને
+  $x$ એ અંતિમ !!{formula}~$!A$
+  તથા~$\Gamma$માંની બધી
+  !!{undischarged} ધારણાઓ ધરાવતી
+  સ્વાભાવિક નિગમનની
+  !!{derivation}નો સંકેત હોય.
+
+  \olref{prop:deriv} પ્રમાણે, $x$ એ
+  સ્વાભાવિક નિગમનની યોગ્ય
+  !!{derivation}~$\delta$ની ગડેલ-સંખ્યા
+  હોય ત્યારે સત્ય થતો
+  $\fn{Deriv}(x)$ ગુણધર્મ આદિમ
+  પુનરાવર્તી છે. તેથી
+  $\Prf[\Gamma](x, y)$ને આ પ્રમાણે
+  વ્યાખ્યાયિત કરી શકીએ:
+  \begin{align*}
+    \Prf[\Gamma](x, y) \defiff {}
+    & \fn{Deriv}(x) \land \fn{EndFmla}(x) = y \land {} \\
+    & \bforall{z < x}{(\fn{OpenAssum}(z, x) \lif R_\Gamma(z))}.
+  \end{align*}
+\end{proof}
+
+\end{document}

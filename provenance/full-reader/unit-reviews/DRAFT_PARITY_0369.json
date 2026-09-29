@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0369",
+  "checked_at_utc": "2026-09-27T06:48:07.315043+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0369 parallel beta reduction; state-only draft with open source proof gap",
+  "report": {
+    "unit_id": "OLP-0369",
+    "source_path": "content/lambda-calculus/church-rosser/parallel-beta-reduction.tex",
+    "source_sha256": "37905b8d25e97bb2554d4df43321bbcefd55816a7d89fe85279c4119a7871f52",
+    "draft_path": "private-state\\work\\batch037_draft\\parallel-beta-reduction.tex",
+    "draft_sha256": "dff2212789245d632fba9f51a6c58576aa2bca236baed1eb33b56b84a93c7ce2",
+    "aligned_blocks": 22,
+    "linguistic_blocks": 17,
+    "source_math_spans_correction_aware": 108,
+    "target_math_spans_after_corrections": 113,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLLAM-033",
+      "OLLAM-034",
+      "OLLAM-035"
+    ],
+    "source_detector_ascii_tokens": 363,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7,
+      16
+    ],
+    "open_proof_gap": "The source omits the capture-safe substitution-composition lemma required in the redex case of parallel-reduction substitution compatibility; later lemmas and theorem depend on it."
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_source_proof_gap_open_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

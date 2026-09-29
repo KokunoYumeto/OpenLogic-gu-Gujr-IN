@@ -1,0 +1,174 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{tru}
+
+\olsection{સત્યતા સહાયક પ્રમેય}
+
+કૅનોનિકલ નિદર્શન~$\mModel{M^\Sigma}$ એવી રીતે વ્યાખ્યાયિત છે કે
+$\mSat{M^\Sigma}{!A}[\Delta]$ જો અને માત્ર જો $!A \in \Delta$.
+!!{propositional
+variable}s માટે $V^\Sigma$ની વ્યાખ્યાથી આ સીધું
+મળે છે. જોકે બધાં !!{formula}s માટે આ સમકક્ષતા સાચી છે તે ચકાસવું
+પડશે. તે આપણે અનુમાનથી કરીએ છીએ. અનુમાનના પગલામાં વિધાનાત્મક
+સંચાલકો ધરાવતા !!{formula}s માટે (જ્યાં
+\olref[ccs]{prop:ccs-properties} વાપરવું પડે) અને મોડલ સંચાલકો
+ધરાવતા સૂત્રો માટે (જ્યાં \olref[mod]{sec}નાં પરિણામો વાપરીએ)
+સમકક્ષતા સાબિત કરવી પડે છે.
+
+\begin{prop}[સત્યતા સહાયક પ્રમેય]
+  \ollabel{prop:truthlemma}
+  દરેક !!{formula}~$!A$ માટે $\mSat{M^\Sigma}{!A}[\Delta]$ જો અને
+  માત્ર જો $!A \in \Delta$.
+\end{prop}
+
+\begin{proof}
+  $!A$ પર અનુમાનથી.
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat/{M^\Sigma}{\lfalse}[\Delta]$
+        \olref[syn][trw]{defn:mmodels} મુજબ, અને $\lfalse \notin \Delta$
+        \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lfalse}
+        મુજબ.}}{}
+
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M^\Sigma}{\ltrue}[\Delta]$
+        \olref[syn][trw]{defn:mmodels} મુજબ, અને $\ltrue \in \Delta$
+        \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-ltrue}
+        મુજબ.}}{}
+
+    \item \indcase{!A}{p}{$\mSat{M^\Sigma}{p}[\Delta]$ જો અને માત્ર જો
+      $\Delta \in V^\Sigma(p)$, \olref[syn][trw]{defn:mmodels} મુજબ.
+      વધુમાં, $V^\Sigma$ની વ્યાખ્યાથી $\Delta \in V^\Sigma(p)$ જો અને
+      માત્ર જો $p \in \Delta$.}
+
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        \iftag{probNot}{પ્રશ્ન.}{$\mSat{M^\Sigma}{\lnot !B}[\Delta]$
+          જો અને માત્ર જો $\mSat/{M^\Sigma}{!B}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels}), જો અને માત્ર જો
+          $!B \notin \Delta$ (અનુમાનની પૂર્વધારણાથી), જો અને માત્ર જો
+          $\lnot !B \in \Delta$
+          (\olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-lnot}
+          મુજબ).}}}{}
+
+    \tagitem{prvAnd}{\indcase{!A}{!B \land !C}{%
+        \iftag{probAnd}{પ્રશ્ન.}{$\mSat{M^\Sigma}{!B \land
+            !C}[\Delta]$ જો અને માત્ર જો
+          $\mSat{M^\Sigma}{!B}[\Delta]$ અને
+          $\mSat{M^\Sigma}{!C}[\Delta]$ બંને
+          (\olref[syn][trw]{defn:mmodels} મુજબ), જો અને માત્ર જો
+          $!B \in \Delta$ અને $!C \in \Delta$ બંને (અનુમાનની
+          પૂર્વધારણાથી), જો અને માત્ર જો $!B \land !C \in
+          \Delta$ (\olref[ccs]{prop:ccs-properties}%
+          \olref[ccs]{prop:ccs-land} મુજબ).}}}{}
+
+    \tagitem{prvOr}{\indcase{!A}{!B \lor !C}{%
+        \iftag{probOr}{પ્રશ્ન.}{$\mSat{M^\Sigma}{!B \lor
+            !C}[\Delta]$ જો અને માત્ર જો
+          $\mSat{M^\Sigma}{!B}[\Delta]$ અથવા
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels} મુજબ), જો અને માત્ર જો
+          $!B \in \Delta$ અથવા $!C \in \Delta$ (અનુમાનની
+          પૂર્વધારણાથી), જો અને માત્ર જો $!B \lor !C \in
+          \Delta$ (\olref[ccs]{prop:ccs-properties}%
+          \olref[ccs]{prop:ccs-lor} મુજબ).}}}{}
+
+    \tagitem{prvIf}{\indcase{!A}{!B \lif !C}{%
+        \iftag{probIf}{પ્રશ્ન.}{$\mSat{M^\Sigma}{!B \lif
+            !C}[\Delta]$ જો અને માત્ર જો
+          $\mSat/{M^\Sigma}{!B}[\Delta]$ અથવા
+          $\mSat{M^\Sigma}{!C}[\Delta]$
+          (\olref[syn][trw]{defn:mmodels} મુજબ), જો અને માત્ર જો
+          $!B \notin \Delta$ અથવા $!C \in \Delta$ (અનુમાનની
+          પૂર્વધારણાથી), જો અને માત્ર જો $!B \lif !C \in
+          \Delta$ (\olref[ccs]{prop:ccs-properties}%
+          \olref[ccs]{prop:ccs-lif} મુજબ).}}}{}
+
+    \tagitem{prvIff}{\indcase{!A}{!B \liff !C}{%
+        \iftag{probIff}{પ્રશ્ન.}{$\mSat{M^\Sigma}{!B \liff
+            !C}[\Delta]$ જો અને માત્ર જો કાં તો
+          $\mSat{M^\Sigma}{!B}[\Delta]$ અને
+          $\mSat{M^\Sigma}{!C}[\Delta]$ બંને, અથવા
+          $\mSat/{M^\Sigma}{!B}[\Delta]$ અને
+          $\mSat/{M^\Sigma}{!C}[\Delta]$ બંને
+          (\olref[syn][trw]{defn:mmodels} મુજબ), જો અને માત્ર જો
+          કાં તો $!B \in \Delta$ અને $!C \in \Delta$ બંને, અથવા
+          $!B \notin \Delta$ અને $!C \notin \Delta$ બંને (અનુમાનની
+          પૂર્વધારણાથી), જો અને માત્ર જો $!B \liff !C \in
+          \Delta$ (\olref[ccs]{prop:ccs-properties}%
+          \olref[ccs]{prop:ccs-liff} મુજબ).}}}{}
+
+    \tagitem{prvBox}{\indcase{!A}{\Box !B}{%
+        \iftag{probBox}{પ્રશ્ન.}{પહેલાં ધારો કે
+          $\mSat{M^\Sigma}{\Box !B}[\Delta]$.
+          \olref[syn][trw]{defn:mmodels} મુજબ $R^\Sigma
+          \Delta\Delta'$ હોય તેવા દરેક $\Delta'$ માટે
+          $\mSat{M^\Sigma}{!B}[\Delta']$. અનુમાનની પૂર્વધારણાથી
+          $R^\Sigma \Delta\Delta'$ હોય તેવા દરેક $\Delta'$ માટે
+          $!B \in \Delta'$. $R^\Sigma$ની વ્યાખ્યાથી
+          $\Box^{-1} \Delta \subseteq \Delta'$ હોય તેવા દરેક
+          $\Delta'$ માટે $!B \in \Delta'$.
+          \olref[mod]{prop:box} મુજબ $\Box !B \in \Delta$.
+
+          હવે $\Box !B \in \Delta$ ધારો. એવો $\Delta' \in
+          W^\Sigma$ લો કે $R^\Sigma \Delta\Delta'$, એટલે કે
+          $\Box^{-1}\Delta \subseteq \Delta'$. $\Box !B \in
+          \Delta$ હોવાથી $!B \in \Box^{-1} \Delta$. તેથી
+          $!B \in \Delta'$. અનુમાનની પૂર્વધારણાથી
+          $\mSat{M^\Sigma}{!B}[\Delta']$. $R^\Sigma
+          \Delta\Delta'$ હોય તેવો $\Delta'$ મનસ્વી હોવાથી,
+          $R^\Sigma \Delta\Delta'$ હોય તેવા બધા $\Delta' \in
+          W^\Sigma$ માટે $\mSat{M^\Sigma}{!B}[\Delta']$.
+          \olref[syn][trw]{defn:mmodels} મુજબ
+          $\mSat{M^\Sigma}{\Box !B}[\Delta]$.}}}{}
+
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        \iftag{probDiamond}{પ્રશ્ન.}{પહેલાં ધારો કે
+          $\mSat{M^\Sigma}{\Diamond !B}[\Delta]$.
+          \olref[syn][trw]{defn:mmodels} મુજબ એવો કોઈ $\Delta'$ છે કે
+          $R^\Sigma \Delta\Delta'$ અને
+          $\mSat{M^\Sigma}{!B}[\Delta']$. અનુમાનની પૂર્વધારણાથી
+          એવો કોઈ $\Delta'$ છે કે $R^\Sigma \Delta\Delta'$ અને
+          $!B \in \Delta'$. $R^\Sigma$ની વ્યાખ્યાથી,%
+          \iftag{prvBox}{ એવો કોઈ $\Delta'$ છે કે
+            $\Box^{-1} \Delta \subseteq \Delta'$ અને
+            $!B \in \Delta'$. \olref[mod]{lem:box-iff-diamond}
+            મુજબ,}{} એવો કોઈ $\Delta'$ છે કે
+          $\Diamond \Delta' \subseteq \Delta$ અને
+          $!B \in \Delta'$.
+          \sourcecorrection{OLMD-037}{મૂળમાં બૉક્સ-શાખામાં આ
+          સમાવેશને ડાયમંડના ગુણધર્મથી મેળવ્યો છે; અહીં જરૂરી બે
+          પ્રાપ્યતા-શરતોની સમકક્ષતાના સહાયક પ્રમેયનો સંદર્ભ આપ્યો છે.}
+          $!B \in \Delta'$ હોવાથી $\Diamond !B \in \Diamond
+          \Delta'$; તેથી $\Diamond !B \in \Delta$.
+
+          હવે $\Diamond !B \in \Delta$ ધારો.
+          \olref[mod]{prop:diamond} મુજબ એવો પૂર્ણ
+          $\Sigma$-સુસંગત $\Delta' \in W^\Sigma$ છે કે
+          $\Diamond \Delta' \subseteq \Delta$ અને $!B \in
+          \Delta'$.\iftag{prvBox}{ \olref[mod]{lem:box-iff-diamond}
+            મુજબ એવો $\Delta' \in W^\Sigma$ છે કે $\Box^{-1}
+            \Delta \subseteq \Delta'$ અને $!B \in \Delta'$.}{}
+          $R^\Sigma$ની વ્યાખ્યાથી $R^\Sigma \Delta\Delta'$; એટલે
+          એવો $\Delta' \in W^\Sigma$ છે કે $R^\Sigma
+          \Delta\Delta'$ અને $!B \in \Delta'$. અનુમાનની
+          પૂર્વધારણાથી તે સૂત્ર ત્યાં સત્ય છે.
+          \sourcecorrection{OLMD-038}{મૂળની આ દિશામાં સભ્યતામાંથી
+          જગત પર સત્યતા મેળવવા જરૂરી અનુમાનનો પગલો છોડાયો છે;
+          તે અહીં સ્પષ્ટ કર્યો છે.}
+          \olref[syn][trw]{defn:mmodels} મુજબ
+          $\mSat{M^\Sigma}{\Diamond !B}[\Delta]$.}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probFalse,probTrue,probNot,probAnd,probOr,probIf,probIff,probBox,probDiamond}
+  \sourcecorrection{OLMD-039}{મૂળની પ્રશ્ન-ટૅગ યાદીમાં સંયોજનના
+  ટૅગનું એક અક્ષર નાનું છે, જ્યારે અનુમાન-કિસ્સામાં તેનું પહેલું
+  અક્ષર મોટું છે; બંનેને મેળ ખાતાં કર્યા છે.}
+  \olref[nml][com][tru]{prop:truthlemma}ની સાબિતી પૂરી કરો.
+\end{probtag}
+
+\end{document}

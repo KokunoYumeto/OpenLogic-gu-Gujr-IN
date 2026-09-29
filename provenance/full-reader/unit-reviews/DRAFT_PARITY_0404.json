@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0404",
+  "checked_at_utc": "2026-09-27T09:55:42.312098+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0404 many-valued sequent rules and proofs; state-only draft",
+  "report": {
+    "unit_id": "OLP-0404",
+    "source_path": "content/many-valued-logic/sequent-calculus/rules-and-proofs.tex",
+    "source_sha256": "edaed42989f5e52e48f2d3a4c28b822e99df5c7fad3861cf31005e23791240a3",
+    "draft_path": "private-state\\work\\batch039_draft\\sequent-rules-and-proofs.tex",
+    "draft_sha256": "185a5f76fb29d2233aa0e70bdc91e009cc8b79faedd88f00676e2cac626bb288",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 61,
+    "target_math_spans_after_corrections": 61,
+    "glossary_tokens": 15,
+    "source_correction_notes": [
+      "OLMV-019"
+    ],
+    "source_detector_ascii_tokens": 235,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7
+    ],
+    "source_comment_part_typo_fixed": true
+  },
+  "status": "draft_linguistic_structure_math_and_visible_source_index_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

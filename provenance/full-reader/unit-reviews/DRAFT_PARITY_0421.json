@@ -1,0 +1,43 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0421",
+  "checked_at_utc": "2026-09-27T10:54:01.679880+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0421 accessibility relation properties; state-only draft",
+  "report": {
+    "unit_id": "OLP-0421",
+    "source_path": "content/normal-modal-logic/frame-definability/properties-accessibility.tex",
+    "source_sha256": "eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622",
+    "draft_path": "private-state\\work\\batch040_draft\\properties-accessibility.tex",
+    "draft_sha256": "7c7512cbcb1b929b525b8f7b1639ab3899a1540480a2d5543cccacb8eaf4d3b7",
+    "aligned_blocks": 19,
+    "linguistic_blocks": 14,
+    "source_math_spans_correction_aware": 97,
+    "target_math_spans_after_corrections": 97,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-013",
+      "OLMD-014"
+    ],
+    "source_detector_ascii_tokens": 576,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_and_labels_equal": true,
+    "tikz_diagram_byte_exact": true,
+    "finite_frame_cases_checked": 530,
+    "finite_model_cases_checked": 33032,
+    "property_frame_counts": [
+      353,
+      69,
+      74,
+      186,
+      48,
+      75,
+      32,
+      348,
+      434,
+      286
+    ],
+    "two_missing_source_assumptions_repaired_in_prose": true
+  },
+  "status": "draft_linguistic_math_tables_diagram_and_source_gap_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

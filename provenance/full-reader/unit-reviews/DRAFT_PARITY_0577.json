@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0577",
+  "checked_at_utc": "2026-09-28T02:21:44.547890+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0577 rank calculations and equivalent finite versus infinite ordinal conditions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0577",
+    "source_path": "content/set-theory/ord-arithmetic/using-addition.tex",
+    "source_sha256": "9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-using-addition.tex",
+    "draft_sha256": "54c52a27923fcfb6fa3e156586066d9efc5232ab4df6ba4f70bca737d92e4210",
+    "aligned_blocks": 20,
+    "linguistic_blocks": 17,
+    "source_math_spans_correction_aware": 64,
+    "target_math_spans_after_corrections": 64,
+    "glossary_tokens": 6,
+    "source_correction_notes": [
+      "OLMD-131"
+    ],
+    "source_detector_ascii_tokens": 225,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\setrank{A \\times B}\\max(\\setrank{A}, \\setrank{B}) \\ordplus  2",
+        "\\setrank{A \\times B}=\\max(\\setrank{A}, \\setrank{B}) \\ordplus  2"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-rank.tex",
+        "sha256": "c12244adb25c2d040cc761178dab315e3fa746fed06f8e3fab4c4c3259e5632a",
+        "terms": [
+          "\\ollabel{defnsetrank}",
+          "\\ollabel{ranksupstrict}",
+          "સ્તરાંક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-addition.tex",
+        "sha256": "9e73541a68e424fc5af4eafe872358f522b4c537ca21d4f31183192e6c5cbacf",
+        "terms": [
+          "\\ollabel{ordadditionrecursion}",
+          "\\ordplus"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\infinity-again.tex",
+        "sha256": "8f1e1364dd675967c7c95deb9c84e11bde16937375f65b77ef8107380dcbf798",
+        "terms": [
+          "\\ollabel{naturalnumbersarentinfinite}",
+          "ડેડેકિન્ડ-અનંત"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\hilberts-hotel.tex",
+        "sha256": "4508359b21e4b13bb5340322aebb967117544ba82dcce95eba802d8cc8a7c904",
+        "terms": [
+          "ડેડેકિન્ડ-અનંત",
+          "એક-એક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The Cartesian-product statement is an inequality; its exercise asks for examples attaining two candidate ranks, and OLMD-131 inserts only the missing equality sign in the second request.",
+      "The empty-rank alternative for rank(bigcup A) remains alongside the nonzero limit and successor alternatives.",
+      "The five infinitude conditions are connected by four implications in the source order; the equivalence symbol approx is explained as equal cardinality without converting it to order isomorphism.",
+      "The inherited inactive comment line before the fourth infinitude item contains a dangling dollar sign. The review's opt-in math parser ignores inactive TeX comment lines for this unit only; the source and target comment text remain identical.",
+      "The final Dedekind-infinity witness omits f(0,1) from the image of g and thus gives a proper self-injection."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

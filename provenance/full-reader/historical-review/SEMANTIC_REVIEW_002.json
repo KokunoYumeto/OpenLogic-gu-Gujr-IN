@@ -1,0 +1,112 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Read each exact Gujarati block and corresponding English original; reverse-paraphrase important scope/direction/definition/proof distinctions.",
+  "samples": [
+    {
+      "segment_id": "OLP-0012-B009",
+      "source_sha256": "da00ceaff3c3625859cb53bde26bdffdcf6545a04087921c40621abf2275b68f",
+      "target_sha256": "fed4dab0b68980b1789f70f2aedbc4c25087efb84946f71803777199f2a84c00",
+      "reverse_paraphrase": "A binary relation on A is a subset of A squared. Rxy and xRy abbreviate ordered-pair membership, without exchanging coordinates.",
+      "assessment": "Definition, base set, direction and equivalence retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0013-B007",
+      "source_sha256": "ddb5af6dacf10e265397c53241fd9f117d9aa9e150342b19939b0c2461f875ea",
+      "target_sha256": "42afc77e580bebe2f945944a26c153e7b28c802cc5932cd7543ea24d78246c49",
+      "reverse_paraphrase": "If membership denotes merely a set, the expression has three names and lacks a predicate able to express a proposition. Treating membership as a predicate is the proviso.",
+      "assessment": "Preserves use/mention distinction and the argument rather than endorsing its premise.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0013-B006",
+      "source_sha256": "d0c5c137acdde4c0f0cc4d490f5666ab85eeee7f0b91bb7e3c860ef86bdc0c7f",
+      "target_sha256": "425bc7f53ca751783406474a0288c3db410d122d724887f12ba6964fd49d22d4",
+      "reverse_paraphrase": "The membership relation would have to be the set of all x,y with x in y; its existence is not automatic. An axiomatic set theory denies that set.",
+      "assessment": "Both conditional branches and footnote kept. Reader selects upstream absent-chapter alternative.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0014-B010",
+      "source_sha256": "fd69cf176f07d8103af088e7ff38ed21764272b2834712e2285a950429a16c4d",
+      "target_sha256": "24b6368dc4b8dfaa1427f50a1fd268b945069d57aa25f440cd49ffd6f97cc7d3",
+      "reverse_paraphrase": "Antisymmetry only permits both directions when the relata are equal. It neither requires all diagonal pairs nor means merely not symmetric. Identity can be symmetric and antisymmetric.",
+      "assessment": "Universal/conditional scope and distinction from asymmetry retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0015-B012",
+      "source_sha256": "2cd64c68f15c2b361a1fbcac2dccb1f5db7b336f7d12de8df752964785c06924",
+      "target_sha256": "f155eb6c173e311d596a13cc539dcfc52b389a770c5f725acf62c9e39bc692ed",
+      "reverse_paraphrase": "Given Rxy and Rxz, symmetry gives Ryx and transitivity gives Ryz. Thus the class of x is contained in the class of y; the reverse inclusion gives equality.",
+      "assessment": "Proof uses symmetry before transitivity, preserving correct orientation.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0016-B022",
+      "source_sha256": "1df61bf97e8264d74c9d5df2e87ea6189be556f8d059e62d280055349065cb86",
+      "target_sha256": "c613c9b02f83a5770e0f08537d690d0dd27b8f66718889c002eb33385c31c244",
+      "reverse_paraphrase": "For the enlarged relation, two old edges compose by transitivity; if one edge is diagonal, substitute the equal endpoints. All cases yield the enlarged x,z edge.",
+      "assessment": "All cases retained; no assumption of old-relation reflexivity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0016-B012",
+      "source_sha256": "e4ee90cc602bef51946d1a8d947c7cba5332434103eb165b10e1f61799f914ba",
+      "target_sha256": "e5efaba966b9660728b82b71a821b5f6242bf85599755d537008c81ca86d72cc",
+      "reverse_paraphrase": "Divisibility is a partial order on natural numbers but only a preorder on integers, since 1 and minus 1 divide one another.",
+      "assessment": "Natural/integer base domains and nonlinearity examples kept distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0017-B007",
+      "source_sha256": "6dd1b7e5b52b10eae0317b7e76c60b48efe6570f5231ed2e62bbb3c7894778ec",
+      "target_sha256": "1e248b14fd05f73a38080b1e371cdd68871d1187a642a370eff8151eea0817e0",
+      "reverse_paraphrase": "A graph explicitly specifies its vertex set and may include isolated vertices. The same edge relation can therefore yield different graphs on different vertex sets.",
+      "assessment": "Both diagrams retain self-loop and isolated-vertex distinction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0018-B013",
+      "source_sha256": "ef84bdfd1f89dee046ad6f7676817728558def77afd60b32fbf136a5e07975f8",
+      "target_sha256": "0b7746dbf97c8d88e456b0d66d07a71331a4229b0ba4bf02eaafdea44693a4b0",
+      "reverse_paraphrase": "Each nonroot node has at most one immediate predecessor, not necessarily an immediate predecessor.",
+      "assessment": "At-most-one preserved; no finite-tree condition silently imposed on general trees.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0018-B016",
+      "source_sha256": "43d0b18293d4619a6daead2f8adaf694f71b372ea4628a90eb4af698ffa77021",
+      "target_sha256": "1cf543da76773d47ffd0b958271dcbd10e7802938ef9538f87c882b95a148d58",
+      "reverse_paraphrase": "A branch is an inclusion-maximal chain; every omitted vertex has an incomparable vertex in the chain.",
+      "assessment": "Maximality clarified as inclusion, not longest chain. Undefined X retained from source and flagged separately.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0018-B019",
+      "source_sha256": "27128448bfd4e918f3e8973f8e27a2e4abad3dae70eccba3d39fd76738a3a103",
+      "target_sha256": "41b20fb42a7e392e1feba2ba651e2ac104e86d30176102b785caebaf3d3d42ad",
+      "reverse_paraphrase": "An infinite tree with finitely many immediate successors at every node has an infinite branch.",
+      "assessment": "Both infinitude and finite branching are essential and retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0019-B008",
+      "source_sha256": "8352bbb68ba2bbb69a2cc5fe3ddfe24a80e3659e9eef2f9028964cd6fb36ec6e",
+      "target_sha256": "1e5c8bd7f61d0794fae5f4a81ac175210898fc25501bf240c52f835568630a42",
+      "reverse_paraphrase": "The relative product follows R from x to y, then S from y to z. Restriction intersects both coordinates with A squared.",
+      "assessment": "Composition order and two-coordinate restriction preserved; not function-only domain restriction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0019-B019",
+      "source_sha256": "37e51a12dfe4db56ae1df0c7015195fadde88dcf1ac89deb1536c473b3432f14",
+      "target_sha256": "a9649343359bb8dcd46804ca1d0d70352c3f42f4651f2676e14ea0b6dcf172a6",
+      "reverse_paraphrase": "Positive finite successor iterations on the integers give strict less-than; adjoining identity gives less-than-or-equal.",
+      "assessment": "R+ versus R* distinction and n at least one retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0417",
+  "checked_at_utc": "2026-09-27T10:41:51.278771+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0417 schemas and validity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0417",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/schemas.tex",
+    "source_sha256": "2644661ac31c8a11b18826df77ecd26332c0b3452f584d08260c01ee4fe727dc",
+    "draft_path": "private-state\\work\\batch040_draft\\schemas.tex",
+    "draft_sha256": "6acab01ec6c40541048694509d79dd7ed0b8b983bdbe8c66f74149070d50a920",
+    "aligned_blocks": 25,
+    "linguistic_blocks": 20,
+    "source_math_spans_correction_aware": 87,
+    "target_math_spans_after_corrections": 87,
+    "glossary_tokens": 13,
+    "source_correction_notes": [
+      "OLMD-010"
+    ],
+    "source_detector_ascii_tokens": 467,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_and_labels_equal": true,
+    "finite_model_cases_checked": 33032,
+    "invalid_table_witnesses": {
+      "0": {
+        "worlds": 2,
+        "relation_bits": 3,
+        "A_bits": 1,
+        "B_bits": 2,
+        "refuting_world": 0
+      },
+      "1": {
+        "worlds": 2,
+        "relation_bits": 3,
+        "A_bits": 1,
+        "B_bits": 2,
+        "refuting_world": 0
+      },
+      "2": {
+        "worlds": 2,
+        "relation_bits": 2,
+        "A_bits": 1,
+        "B_bits": 0,
+        "refuting_world": 0
+      },
+      "3": {
+        "worlds": 1,
+        "relation_bits": 0,
+        "A_bits": 0,
+        "B_bits": 0,
+        "refuting_world": 0
+      },
+      "4": {
+        "worlds": 2,
+        "relation_bits": 2,
+        "A_bits": 0,
+        "B_bits": 0,
+        "refuting_world": 0
+      },
+      "5": {
+        "worlds": 1,
+        "relation_bits": 0,
+        "A_bits": 0,
+        "B_bits": 0,
+        "refuting_world": 0
+      }
+    },
+    "invalid_axiom_witnesses": {
+      "0": {
+        "worlds": 1,
+        "relation_bits": 0,
+        "p_bits": 0,
+        "refuting_world": 0
+      },
+      "1": {
+        "worlds": 1,
+        "relation_bits": 0,
+        "p_bits": 0,
+        "refuting_world": 0
+      },
+      "2": {
+        "worlds": 2,
+        "relation_bits": 2,
+        "p_bits": 1,
+        "refuting_world": 0
+      },
+      "3": {
+        "worlds": 2,
+        "relation_bits": 6,
+        "p_bits": 1,
+        "refuting_world": 1
+      },
+      "4": {
+        "worlds": 2,
+        "relation_bits": 2,
+        "p_bits": 2,
+        "refuting_world": 0
+      }
+    },
+    "additional_exercise_validity_checked": [
+      true,
+      true
+    ]
+  },
+  "status": "draft_linguistic_math_schema_table_and_visible_caption_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

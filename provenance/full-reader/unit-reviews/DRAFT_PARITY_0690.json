@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0690",
+  "checked_at_utc": "2026-09-28T22:45:47.282414+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0690 Propositions as Types chapter driver and original experimental notice; state-only draft",
+  "report": {
+    "unit_id": "OLP-0690",
+    "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+    "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+    "draft_path": "private-state\\work\\batch044_draft\\propositions-as-types.tex",
+    "draft_sha256": "ed3cff8fe6ce88cdad42667e55964477766f6c14ad7fe52df54c4ed3c265a1b4",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-290"
+    ],
+    "source_detector_ascii_tokens": 76,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\propositions-as-types-introduction.tex",
+        "sha256": "155186e0b61e8569c20bafe561749675307dfaea18b9a0244e407fc91a6389e8",
+        "terms": [
+          "પ્રકારો તરીકે પ્રતિજ્ઞાપનો"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

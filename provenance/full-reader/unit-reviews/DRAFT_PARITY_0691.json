@@ -1,0 +1,79 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0691",
+  "checked_at_utc": "2026-09-28T22:51:46.730849+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0691 Proof-term beta reductions and permutation conversion; state-only draft",
+  "report": {
+    "unit_id": "OLP-0691",
+    "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+    "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+    "draft_path": "private-state\\work\\batch044_draft\\propositions-as-types-reduction.tex",
+    "draft_sha256": "4d92ba56749cefb050625fb460cee5f65589ce7957c931029914d69f8058911a",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 90,
+    "target_math_spans_after_corrections": 90,
+    "glossary_tokens": 13,
+    "source_correction_notes": [
+      "OLMD-291",
+      "OLMD-292",
+      "OLMD-293",
+      "OLMD-294"
+    ],
+    "source_detector_ascii_tokens": 402,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\pair{N_1, N_2}",
+        "\\pair{N_1}{N_2}"
+      ],
+      [
+        "$\\inj{i}{!A}{N}$",
+        "$\\inj[!A]{i}{N}$"
+      ],
+      [
+        "\\dcase{\\inj[!A_i]{i}{M}}",
+        "\\dcase{\\inj[!A_{3-i}]{i}{M}}"
+      ],
+      [
+        "\\redone M_2 \\redone M_2 \\redone",
+        "\\redone M_2 \\redone M_3 \\redone"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\propositions-as-types-normalization.tex",
+        "sha256": "a47a68181954a2d4ca789dbef88c8815ed073cb79525961562af9117347b82e8",
+        "terms": [
+          "સંકોચ્ય પદ",
+          "સામાન્ય સ્વરૂપ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-terms.tex",
+        "sha256": "04a94a8e5015bcd50bd4827a2b6e0e46a9781ceb8422bf643e107220a74c6a9c",
+        "terms": [
+          "સાબિતી-પદ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Full correction-aware comparison of all five gather displays covers the sum-injection formula outside dollar delimiters.",
+      "The optional injection annotation names the other summand, as shown by the two introduction rules in frozen rules-tN2."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0,
+    "verified_gather_displays_exact": 5
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

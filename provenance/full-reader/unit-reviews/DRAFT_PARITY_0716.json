@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0716",
+  "checked_at_utc": "2026-09-29T00:25:18.467572+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0716 Alternative second-order vocabulary introduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0716",
+    "source_path": "content/second-order-logic/syntax-and-semantics/language-of-sol.tex",
+    "source_sha256": "49d9beabf33f0727dafafd28fb282489083c4b146bfaf1c66c01ac80dd8f7856",
+    "draft_path": "private-state\\work\\batch044_draft\\alternative-sol-language.tex",
+    "draft_sha256": "3180e85dde823c2d9c0050ef1798b5295091722a987004ee55cb6bef8c05878c",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 10,
+    "target_math_spans_after_corrections": 10,
+    "glossary_tokens": 11,
+    "source_correction_notes": [
+      "OLMD-346"
+    ],
+    "source_detector_ascii_tokens": 163,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "દ્વિતીય-ક્રમ તર્કશાસ્ત્ર",
+          "ગણનીય"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

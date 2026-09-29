@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0620",
+  "checked_at_utc": "2026-09-28T15:12:55.937782+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0620 History part title and two-chapter topology; state-only draft",
+  "report": {
+    "unit_id": "OLP-0620",
+    "source_path": "content/history/history.tex",
+    "source_sha256": "666329ac5880a112d9c17360202bde7bc27d3ebe1c8021c5f1429d9bb8832517",
+    "draft_path": "private-state\\work\\batch044_draft\\history.tex",
+    "draft_sha256": "82c4d114350d2b11bbc2d02a787f6111759c32308f34aec410b589259584d964",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 2,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\schroder-bernstein.tex",
+        "sha256": "7f481c83f2e1e975c0935282cf02bbd2405b19672fd1e604301386a6c979f343",
+        "terms": [
+          "ઇતિહાસ વિશે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

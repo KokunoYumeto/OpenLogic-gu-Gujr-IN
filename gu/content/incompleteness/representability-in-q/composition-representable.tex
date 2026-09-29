@@ -1,0 +1,146 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: composition-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{cmp}
+\olsection{સંયોજન~$\Th{Q}$માં નિરૂપ્ય છે}
+
+માનો કે $h$ આ પ્રમાણે
+વ્યાખ્યાયિત છે:
+\[
+h(x_0,\dots,x_{l-1}) = f(g_0(x_0,\dots,x_{l-1}), \dots,
+g_{k-1}(x_0,\dots,x_{l-1})).
+\]
+અહીં $f$ અને અનુક્રમે $g_0$,
+\dots,~$g_{k-1}$ને નિરૂપતાં
+!!{formula}s $!A_f, !A_{g_0}, \dots,
+!A_{g_{k-1}}$ આપણે અગાઉથી શોધ્યાં
+છે. હવે~$h$ને નિરૂપતું
+!!a{formula}~$!A_h$ શોધવાનું છે.
+
+પહેલાં બધાં વિધેયો $1$-સ્થાની
+હોય એવો સરળ કિસ્સો લો, એટલે
+$h(x) = f(g(x))$ વિચારો.
+$!A_f(y, z)$ એ~$f$ને અને
+$!A_g(x, y)$ એ~$g$ને નિરૂપે,
+તો~$h$ને નિરૂપતું
+!!a{formula}~$!A_h(x, z)$ જોઈએ.
+ધ્યાન આપો કે $h(x) = z$
+ત્યારે અને માત્ર ત્યારે જ એવું~$y$
+છે કે $z = f(y)$ અને
+$y = g(x)$ બંને સાચાં છે.
+($h(x) = z$ હોય, તો $g(x)$
+આવું~$y$ છે; અને આવું $y$
+હોય, તો $y = g(x)$ તથા
+$z = f(y)$ હોવાથી $z
+= f(g(x))$.) તેથી
+$\lexists[y][(!A_g(x, y) \land !A_f(y,
+  z))]$ એ~$!A_h(x, z)$ માટે
+યોગ્ય ઉમેદવાર લાગે છે.
+હવે સંબંધિત !!{formula}s
+$\Th{Q}$માં સાબિત થાય છે
+તેની ખાતરી કરવી બાકી છે.
+
+\begin{prop}
+\ollabel{prop:rep1}
+$h(n) = m$ હોય, તો
+$\Th{Q} \Proves !A_h(\num{n}, \num{m})$.
+\end{prop}
+
+\begin{proof}
+માનો કે $h(n) = m$, એટલે કે
+$f(g(n)) = m$. $k = g(n)$ લો.
+તો
+\begin{align*}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k})
+  \intertext{કારણ કે $!A_g$ એ~$g$ને નિરૂપે છે, અને}
+  \Th{Q} & \Proves !A_f(\num{k}, \num{m})
+  \intertext{કારણ કે $!A_f$ એ~$f$ને નિરૂપે છે. તેથી}
+  \Th{Q} & \Proves !A_g(\num{n}, \num{k}) \land !A_f(\num{k}, \num{m})
+  \intertext{અને પરિણામે}
+  \Th{Q} & \Proves \lexists[y][(!A_g(\num{n}, y) \land !A_f(y, \num{m}))],
+\end{align*}
+એટલે કે $\Th{Q} \Proves
+!A_h(\num{n}, \num{m})$.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep2}
+$h(n) = m$ હોય, તો
+$\Th{Q} \Proves \lforall[z][(!A_h(\num{n}, z) \lif
+  z = \num{m})]$.
+\end{prop}
+
+\begin{proof}
+માનો કે $h(n) = m$, એટલે કે
+$f(g(n)) = m$. $k = g(n)$ લો.
+તો
+\begin{align*}
+  \Th{Q} & \Proves \lforall[y][(!A_g(\num{n}, y) \lif \eq[y][\num{k}])]
+  \intertext{કારણ કે $!A_g$ એ~$g$ને નિરૂપે છે, અને}
+  \Th{Q} & \Proves \lforall[z][(!A_f(\num{k}, z) \lif \eq[z][\num{m}])]
+  \intertext{કારણ કે $!A_f$ એ~$f$ને નિરૂપે છે. થોડો તર્ક વાપરીને આ પણ બતાવી શકીએ:}
+  \Th{Q} & \Proves \lforall[z][(\lexists[y][(!A_g(\num{n}, y) \land
+      !A_f(y, z))] \lif \eq[z][\num{m}])].
+\end{align*}
+એટલે કે $\Th{Q} \Proves
+\lforall[y][(!A_h(\num n, y) \lif \eq[y][\num m])]$.
+\end{proof}
+
+$f$ અને~$g_i$ની સ્થાનસંખ્યા
+$1$ કરતાં વધુ હોય એવા જટિલ
+કિસ્સામાં પણ આ જ વિચાર કામ કરે છે.
+
+\begin{prop}
+\ollabel{prop:rep-composition}
+$!A_f(y_0, \dots, y_{k-1}, z)$
+એ~$f(y_0, \dots, y_{k-1})$ને
+$\Th{Q}$માં નિરૂપે, અને
+$!A_{g_i}(x_0, \dots, x_{l-1}, y)$
+એ $g_i(x_0, \dots, x_{l-1})$ને
+$\Th{Q}$માં નિરૂપે, તો આ સૂત્ર
+\begin{multline*}
+  \lexists[y_0]\dots\lexists[y_{k-1}]
+  (!A_{g_0}(x_0,\dots,x_{l-1},y_0) \land
+      \dots \land {}\\
+  !A_{g_{k-1}}(x_0,\dots,x_{l-1},y_{k-1}) \land !A_f(y_0,\dots,y_{k-1},z))
+\end{multline*}
+\sourcecorrection{OLINC-027}{સ્થિર અંગ્રેજી
+મૂળના આ પ્રદર્શિત સૂત્રમાં
+પહેલો પરિમાણક $y_0\dots$ને
+એક જ ચલ તરીકે લે છે અને
+છેલ્લો સંયોજક અંદરના પરિમાણકની
+હદ બહાર રહી જાય છે. અહીં
+$y_0$થી~$y_{k-1}$ સુધીના
+અસ્તિત્વ-પરિમાણકો તથા આખા
+સંયોજનની હદ સ્પષ્ટ કરી છે.}
+આ વિધેયને નિરૂપે છે:
+\[
+h(x_0, \dots, x_{l-1}) = f(g_0(x_0, \dots, x_{l-1}), \dots, g_{k-1}(x_0,
+\dots, x_{l-1})).
+\]
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[inc][req][cmp]{prop:rep1}
+અને \olref[inc][req][cmp]{prop:rep2}ની
+સાબિતીઓને માર્ગદર્શક બનાવી
+\olref[inc][req][cmp]{prop:rep-composition}ની
+સાબિતી વિગતે પૂર્ણ કરો.
+\sourcecorrection{OLINC-028}{સ્થિર અંગ્રેજી
+મૂળના આ અભ્યાસપ્રશ્નમાં
+એક જ વિધાનનો સંદર્ભ બે વાર છે;
+અગાઉની બે પૂરક સાબિતીઓમાંથી
+પહેલી અને બીજી બંનેનો સંદર્ભ
+અહીં આપ્યો છે.}
+\end{prob}
+
+\end{document}

@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0432",
+  "checked_at_utc": "2026-09-27T11:29:59.098433+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0432 derived PL/RK rules and rewriting; state-only draft",
+  "report": {
+    "unit_id": "OLP-0432",
+    "source_path": "content/normal-modal-logic/axioms-systems/derived-rules.tex",
+    "source_sha256": "ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8",
+    "draft_path": "private-state\\work\\batch040_draft\\derived-rules.tex",
+    "draft_sha256": "91a61bdeefdc37d10bf6aa6aec32df5b313b9bcfc0badbb83006290f0d7424a8",
+    "aligned_blocks": 26,
+    "linguistic_blocks": 21,
+    "source_math_spans_correction_aware": 90,
+    "target_math_spans_after_corrections": 90,
+    "glossary_tokens": 18,
+    "source_correction_notes": [
+      "OLMD-025",
+      "OLMD-026"
+    ],
+    "source_detector_ascii_tokens": 355,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_equal_after_visible_repair": true,
+    "derivation_tables": 5,
+    "numbered_line_counts": [
+      3,
+      0,
+      3,
+      2,
+      0
+    ],
+    "rewriting_direction_checked_against_worked_example": true
+  },
+  "status": "draft_linguistic_math_derived_rules_and_source_rewriting_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

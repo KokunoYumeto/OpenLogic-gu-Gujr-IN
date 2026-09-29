@@ -1,0 +1,141 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{using-addition}
+\olsection{ક્રમવાચક સરવાળાનો ઉપયોગ}
+
+ક્રમવાચક સંખ્યાઓના સરવાળાથી
+\olref[spine][rank]{defnsetrank}ના અર્થમાં જુદા જુદા
+ગણોના સ્તરાંક સ્પષ્ટ રીતે ગણી શકીએ:
+
+\begin{lem}\ollabel{rankcomputation}
+જો $\setrank{A} = \alpha$ અને $\setrank{B} = \beta$ હોય, તો:
+\begin{enumerate}
+	\item\ollabel{exrankpow} $\setrank{\Pow{A}} = \alpha\ordplus 1$
+	\item\ollabel{exrankpair} $\setrank{\{A, B\}} = \max(\alpha,
+	\beta) \ordplus 1$
+	\item\ollabel{exrankcup} $\setrank{A \cup B} = \max(\alpha,
+	\beta)$
+	\item\ollabel{exranktuple} $\setrank{\tuple{A,B}} = \max(\alpha,
+	\beta) \ordplus  2$
+	\item\ollabel{exranktimes} $\setrank{A \times B} \leq \max(\alpha,
+	\beta) \ordplus  2$
+	\item\ollabel{exrankunion} $\alpha$ ખાલી અથવા સીમા
+	હોય ત્યારે $\setrank{\bigcup A} = \alpha$;
+	$\alpha = \gamma\ordplus 1$ હોય ત્યારે
+	$\setrank{\bigcup A} = \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+આખી સાબિતીમાં \olref[spine][rank]{ranksupstrict}નો
+વારંવાર ઉપયોગ કરીએ છીએ.
+
+\emph{\olref{exrankpow}.} જો $x \subseteq A$ હોય, તો
+$\setrank{x} \leq
+\setrank{A}$. તેથી $\setrank{\Pow{A}} \leq \alpha \ordplus  1$.
+ખાસ કરીને $A
+\in \Pow{A}$ હોવાથી $\setrank{\Pow{A}} = \alpha \ordplus  1$.
+
+\emph{\olref{exrankpair}.} \olref[spine][rank]{ranksupstrict} મુજબ.
+
+\emph{\olref{exrankcup}.} \olref[spine][rank]{ranksupstrict} મુજબ.
+
+\emph{\olref{exranktuple}.} \olref{exrankpair} બે વાર વાપરો.
+
+\emph{\olref{exranktimes}.} નોંધો કે
+$A \times B \subseteq
+\Pow{\Pow{A \cup B}}$; પછી \olref{exranktuple} વાપરો.
+
+\emph{\olref{exrankunion}.} જો $\alpha = \gamma\ordplus 1$
+હોય, તો કોઈ $c \in A$ માટે $\setrank{c} = \gamma$
+અને $A$ના કોઈ !!{element}નો સ્તરાંક તેનાથી મોટો નથી;
+તેથી $\setrank{\bigcup A} = \gamma$. જો $\alpha$
+સીમા ક્રમવાચક સંખ્યા હોય, તો $A$માં $\alpha$ની
+ગમે તેટલી નજીક, પણ તેનાથી કડક રીતે નાના, સ્તરાંક
+ધરાવતા !!{element}s છે. તેથી $\bigcup A$માં પણ
+$\alpha$ની ગમે તેટલી નજીક, પણ તેનાથી કડક રીતે
+નાના, સ્તરાંક ધરાવતા !!{element}s છે; આથી
+$\setrank{\bigcup A} = \alpha$.
+\end{proof}
+\noindent
+\olref{exranktimes}માં સમાનતાને બદલે \emph{અસમાનતા}
+શા માટે છે તે સ્વાધ્યાય તરીકે છોડીએ છીએ.
+
+\begin{prob}
+$\setrank{A \times B}=
+\max(\setrank{A}, \setrank{B})$ થાય એવા ગણો
+$A$ અને $B$ શોધો. પછી
+$\setrank{A \times B}=\max(\setrank{A}, \setrank{B}) \ordplus  2$
+થાય એવા ગણો $A$ અને $B$ શોધો. શું બીજા કોઈ
+સ્તરાંકો શક્ય છે?
+\sourcecorrection{OLMD-131}{મૂળના બીજા પ્રશ્નમાં
+$\setrank{A\times B}$ અને $\max(\setrank{A},\setrank{B})\ordplus2$
+વચ્ચે સંબંધનું ચિહ્ન છૂટી ગયું છે. પહેલો પ્રશ્ન અને
+ઉપરની ઉચ્ચસીમા-અસમાનતા પ્રમાણે અહીં ``$=$''
+ઉમેર્યું છે.}
+\end{prob}
+
+હવે ક્રમવાચક સંખ્યાને ``સીમિત'' કે ``અનંત'' કહેવાનો
+શું અર્થ થાય તેના ઘણા વાજબી ખ્યાલો સમકક્ષ છે તે
+બતાવી શકીએ:
+
+\begin{lem}\ollabel{ordinfinitycharacter}
+કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$ માટે નીચેની શરતો
+સમકક્ષ છે:
+\begin{enumerate}
+	\item\ollabel{ord:notinomega} $\alpha\notin \omega$;
+	એટલે $\alpha$ પ્રાકૃતિક સંખ્યા નથી
+	\item\ollabel{ord:omegaplus} $\omega \leq \alpha$
+	\item\ollabel{ord:oneplus} $1 \ordplus  \alpha = \alpha$
+	%\alpha \approx \alpha \ordplus 1$
+	\item\ollabel{ord:plusone} $\alpha \approx \alpha\ordplus 1$;
+	એટલે $\alpha$ અને $\alpha\ordplus 1$માં
+	સમાન સંખ્યાના ઘટકો છે
+	\item\ollabel{ord:infinite} $\alpha$ ડેડેકિન્ડ-અનંત છે
+	\end{enumerate}
+\end{lem}
+\noindent
+આમ ક્રમવાચક સંખ્યા (અ)સીમિત હોવાનો અર્થ સમજવાની
+પાંચ સાબિત કરી શકાય એવી સમકક્ષ રીતો મળી.
+
+\begin{proof}
+\emph{\olref{ord:notinomega} $\Rightarrow$ \olref{ord:omegaplus}.}
+ત્રિવિકલ્પિતાથી.
+
+\emph{\olref{ord:omegaplus} $\Rightarrow$ \olref{ord:oneplus}.}
+$\alpha \geq \omega$ નક્કી કરો. અનંતાતીત અનુમાનથી
+એવી લઘુતમ ક્રમવાચક સંખ્યા $\gamma$ મળે છે
+(શક્ય છે $0$) કે કોઈ સીમા ક્રમવાચક સંખ્યા $\beta$
+માટે $\alpha = \beta \ordplus \gamma$. હવે:
+\[
+	1 \ordplus \alpha =
+	1 \ordplus (\beta \ordplus \gamma) =
+	(1 \ordplus \beta) \ordplus \gamma =
+	\supstrict_{\delta < \beta} (1 \ordplus  \delta) \ordplus  \gamma =
+	\beta \ordplus  \gamma =
+	\alpha.
+\]
+\emph{\olref{ord:oneplus} $\Rightarrow$ \olref{ord:plusone}.}
+સ્પષ્ટપણે એવું !!a{bijection}
+$f \colon (\alpha \disjointsum 1) \to (1
+\disjointsum \alpha)$ છે. જો $1 \ordplus \alpha = \alpha$
+હોય, તો એવી ક્રમ-એકરૂપતા
+$g \colon (1 \disjointsum \alpha) \to \alpha$
+છે. હવે $\comp{f}{g}$ વિચારો.
+
+\emph{\olref{ord:plusone} $\Rightarrow$ \olref{ord:infinite}.}
+જો $\alpha \approx \alpha \ordplus 1$ હોય, તો એવું
+!!a{bijection} $f \colon
+(\alpha \disjointsum 1) \to \alpha$ છે. દરેક
+$\gamma < \alpha$ માટે $g(\gamma) = f(\gamma, 0)$
+વ્યાખ્યાયિત કરો; આ !!{injection} બતાવે છે કે
+$\alpha$ ડેડેકિન્ડ-અનંત છે, કારણ કે
+$f(0,1) \in \alpha \setminus \ran{g}$.
+
+\emph{\olref{ord:infinite} $\Rightarrow$ \olref{ord:notinomega}.}
+આ \olref[z][infinity-again]{naturalnumbersarentinfinite} છે.
+\end{proof}
+
+\end{document}

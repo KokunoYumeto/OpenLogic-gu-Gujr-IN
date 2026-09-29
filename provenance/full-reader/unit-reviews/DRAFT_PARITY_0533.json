@@ -1,0 +1,66 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0533",
+  "checked_at_utc": "2026-09-27T23:24:03.611400+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0533 predicative and impredicative definitions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0533",
+    "source_path": "content/set-theory/story/predicativity.tex",
+    "source_sha256": "c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa",
+    "draft_path": "private-state\\work\\batch044_draft\\predicativity.tex",
+    "draft_sha256": "be1b03accf0a51bbf9af6557dd39e91587b352bb9337b33e8b2509f88114461d",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 13,
+    "source_math_spans_correction_aware": 26,
+    "target_math_spans_after_corrections": 26,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-112",
+      "OLMD-113"
+    ],
+    "source_detector_ascii_tokens": 714,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "are not non-self-membered",
+        "are non-self-membered"
+      ],
+      [
+        "rejecting the \\emph{vicious-circle principle}",
+        "accepting the \\emph{vicious-circle principle}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\russells-paradox-again.tex",
+        "sha256": "e62b2d165b604d47921965045523cd4eba48b62c886d197f1d8d8b7079f440f8",
+        "terms": [
+          "સહજ ગણરચના",
+          "સ્વસભ્ય ન હોય"
+        ]
+      },
+      {
+        "path": "private-state\\work\\LEXICAL_CONSULTATION_044_0533.json",
+        "sha256": "0ee962f2c7a7836530f6424c3bc8c39efb7ff3086fa0303dc17b92ccfc2ef4f1",
+        "terms": [
+          "અવિધેયક વ્યાખ્યા",
+          "Supplementary lexical attestation only"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Both source corrections affect prose only; all 26 formula spans are unchanged.",
+      "Prime and subscript annotations remain outside the translated Gujarati noun exactly as in the source.",
+      "The type-separation consistency sentence is translated as the source's assertion, not promoted to a verified general consistency theorem."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware"
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

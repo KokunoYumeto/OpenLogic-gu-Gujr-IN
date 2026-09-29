@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0449",
+  "checked_at_utc": "2026-09-27T12:25:00.128278+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0449 frame completeness and weak density; state-only draft",
+  "report": {
+    "unit_id": "OLP-0449",
+    "source_path": "content/normal-modal-logic/completeness/frame-completeness.tex",
+    "source_sha256": "4021151e95c367cfd94030d36b6dfb3c16792ade5767bb24825daf2e0602bb70",
+    "draft_path": "private-state\\work\\batch040_draft\\frame-completeness.tex",
+    "draft_sha256": "d35d2bbc40feb7c9b24dce31bee89cfe28e806481c0ee4eea98d90bd82c0ae3c",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 143,
+    "target_math_spans_after_corrections": 143,
+    "glossary_tokens": 3,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 597,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "five_axiom_frame_correspondences_preserved": true,
+    "three_further_frame_properties_reviewed": true,
+    "weak_density_derivation_chain_reviewed": true
+  },
+  "status": "draft_linguistic_math_frame_and_derivation_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

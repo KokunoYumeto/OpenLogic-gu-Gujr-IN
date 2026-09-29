@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/30-middle",
+  "checked_at_utc": "2026-09-27T00:35:53.215076+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0303–0304 Q c.e.-completeness and omega-consistency state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0303",
+      "source_path": "content/incompleteness/theories-computability/q-is-ce.tex",
+      "source_sha256": "26919c5d76e83e2084a4b157b7991d7a4f798c61973106e903f93812432122a4",
+      "draft_path": "private-state\\work\\batch030_draft\\q-is-ce.tex",
+      "draft_sha256": "1c57c77751f0de30a310ea4f5d29014137f13d195651b3ff505498296b436b4a",
+      "aligned_blocks": 10,
+      "linguistic_blocks": 5,
+      "source_math_spans": 39,
+      "glossary_tokens": 3,
+      "source_correction_notes": [
+        "OLINC-039"
+      ],
+      "source_detector_ascii_tokens": 158,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0304",
+      "source_path": "content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex",
+      "source_sha256": "141abd39d6939f679a6ee519dd4d9782a870650b8d94fdceff9f5b0e29cd8265",
+      "draft_path": "private-state\\work\\batch030_draft\\oconsis-ext-of-q-undec.tex",
+      "draft_sha256": "67d04b67152382db6c03dbc62a84f5ea5b19abdf5cf35dc5aa03c8378b0de04b",
+      "aligned_blocks": 10,
+      "linguistic_blocks": 5,
+      "source_math_spans": 38,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 157,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    }
+  ],
+  "status": "partial_draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0594",
+  "checked_at_utc": "2026-09-28T03:21:55.380791+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0594 Tarski–Scott minimal-rank representation of cardinals and ordinals; state-only draft",
+  "report": {
+    "unit_id": "OLP-0594",
+    "source_path": "content/set-theory/choice/tarskiscott.tex",
+    "source_sha256": "2cf102fa76c9cb3c1080901967626539d8da1aa6dda38dddbbc743ae5e883579",
+    "draft_path": "private-state\\work\\batch044_draft\\choice-tarskiscott.tex",
+    "draft_sha256": "bac4945ad87894562eadc09f9c6a8e07b24aa13dd3ccfbdde12ce94f61d3f5f2",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 28,
+    "target_math_spans_after_corrections": 28,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 341,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+        "sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+        "terms": [
+          "\\ollabel{defcardinalasordinal}",
+          "\\ollabel{lem:CardinalsBehaveRight}",
+          "ગણાંક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-hp.tex",
+        "sha256": "a24cf6b19557276895b934c13538759b3636cb3697c4054d39ed92f1dee08dea",
+        "terms": [
+          "ફ્રેગે",
+          "હ્યુમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-foundation.tex",
+        "sha256": "ac0d027ab6f44ed014fe53f57a5851673abbf5cd3e9552848b7495f6eb50e0f1",
+        "terms": [
+          "\\ollabel{zfentailsregularity}",
+          "નિયમિતતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-opps.tex",
+        "sha256": "ce48855cdaaf5535f30cc6368c29f00d3970e99a82e008493858bcb36466feef",
+        "terms": [
+          "\\ollabel{lem:SizePowerset2Exp}",
+          "ગણાંક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The two uses of TS are retained as a formal abbreviation; cardinality as a set of minimal-rank representatives is not conflated with an ordinal cardinal.",
+      "The source's singleton example motivates why the naïve equivalence class cannot define a general set-sized cardinal."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "\\textsc{ts}",
+        "count": 4
+      }
+    ],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citet[chs.~9--12]{Potter2004}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

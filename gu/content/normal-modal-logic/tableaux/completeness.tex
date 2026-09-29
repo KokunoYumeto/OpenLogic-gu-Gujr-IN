@@ -1,0 +1,279 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{cpl}
+
+\olsection{\Log{K} માટેની પૂર્ણતા}
+
+\begin{explain}
+  !!{tableau}ની રીત પૂર્ણ છે તે બતાવવા સાબિત કરવું પડે કે
+  $\Gamma \Proves !A$ બતાવતું કોઈ બંધ !!{tableau} ન હોય ત્યારે
+  $\Gamma \Entails/ !A$, એટલે પ્રતિવિધાન હોય. પરંતુ ``બંધ
+  !!{tableau} નથી''નો અર્થ એવો છે કે તેને બનાવવાના દરેક પ્રયાસમાં
+  શાખા બંધ થવામાં નિષ્ફળતા મળે. યુક્તિ એ છે કે બધા પ્રયાસ નિષ્ફળ
+  જાય તો એક નિશ્ચિત \emph{પદ્ધતિસર અને સર્વગ્રાહી} પ્રયાસ પણ
+  નિષ્ફળ જાય; અને બંધ !!{tableau} અસ્તિત્વમાં હોય તો આ
+  પદ્ધતિસરનો પ્રયાસ શાખાઓ બંધ કરી દે. આ એક ટેબ્લોની ખુલ્લી
+  શાખાઓમાં પ્રતિવિધાન વ્યાખ્યાયિત કરવા જરૂરી બધી માહિતી હશે.
+  તેની કોઈ ખુલ્લી શાખાથી મળતા પ્રતિવિધાનનાં જગતો તે શાખા પર
+  વપરાયેલા બધા ઉપસર્ગો હશે; અને !!a{propositional
+    variable}~$p$ એ~$\sigma$ પર ત્યારે અને માત્ર ત્યારે સત્ય હશે
+  જ્યારે $\sFmla{\True}{p}[\sigma]$ એ શાખા પર આવે.
+\end{explain}
+
+\begin{defn}
+  !!a{tableau}ની શાખાને \emph{પૂર્ણ} ત્યારે કહીએ જ્યારે તેમાં
+  નિયમ લાગુ કરી શકાય એવું ઉપસર્ગવાળું !!{formula}
+  $\sFmla{S}{!A}[\sigma]$ હોય ત્યારે તેમાં આગળનું પણ હોય:
+  \begin{enumerate}
+    \item વિધાનસંબંધી એક-શાખી નિયમોમાં તેના અનુરૂપ નિષ્કર્ષરૂપ
+      ઉપસર્ગવાળાં !!{formula}s;
+    \item વિધાનસંબંધી શાખા-વિભાજક નિયમોમાં અનુરૂપ નિષ્કર્ષના
+      !!{formula}sમાંથી ઓછામાં ઓછું એક;
+    \item નવો ઉપસર્ગ માગતા મોડલ નિયમોમાં શક્ય નિષ્કર્ષોમાંથી
+      ઓછામાં ઓછું એક;
+    \item વપરાયેલો ઉપસર્ગ માગતા મોડલ નિયમોમાં શાખા પર આવતા
+      દરેક અનુરૂપ ઉપસર્ગ માટેનો નિષ્કર્ષ.
+  \end{enumerate}
+\end{defn}
+
+\begin{explain}
+દાખલા તરીકે, પૂર્ણ શાખામાં $\sFmla{\True}{!B \land !C}[\sigma]$
+હોય ત્યારે તેમાં $\sFmla{\True}{!B}[\sigma]$ અને
+$\sFmla{\True}{!C}[\sigma]$ બંને હોય. તેમાં
+$\sFmla{\True}{!B \lor !C}[\sigma]$ હોય તો
+$\sFmla{\True}{!B}[\sigma]$ અને
+$\sFmla{\True}{!C}[\sigma]$માંથી ઓછામાં ઓછું એક હોય.
+\sourcecorrection{OLMD-063}{મૂળના આ બે વિધાનસંબંધી ઉદાહરણમાં
+પ્રથમ સૂત્રનો ઉપસર્ગ છૂટી ગયો છે અને વિયોજનના પહેલા
+નિષ્કર્ષને અસત્ય ચિહ્ન અપાયું છે; નિયમો મુજબ ઉપસર્ગ અને સત્ય
+ચિહ્ન પુનઃસ્થાપિત કર્યાં છે.}
+તેમાં \iftag{prvBox}
+{$\sFmla{\False}{\Box !B}[\sigma]$}
+{$\sFmla{\True}{\Diamond !B}[\sigma]$} હોય તો કોઈ એક~$n$
+માટે તેમાં \iftag{prvBox}
+{$\sFmla{\False}{!B}[\sigma.n]$}
+{$\sFmla{\True}{!B}[\sigma.n]$} પણ હોય. અને તેમાં
+\iftag{prvBox} {$\sFmla{\True}{\Box !B}[\sigma]$}
+{$\sFmla{\False}{\Diamond !B}[\sigma]$} હોય ત્યારે,
+$\sigma.n$ શાખા પર વપરાયેલો હોય એવા દરેક~$n$ માટે તેમાં
+\iftag{prvBox}
+{$\sFmla{\True}{!B}[\sigma.n]$}
+{$\sFmla{\False}{!B}[\sigma.n]$} પણ હોય.
+\sourcecorrection{OLMD-064}{મૂળના ચાર મોડલ ઉદાહરણમાં
+$\Box/\Diamond$નો સૂત્ર-આર્ગ્યુમેન્ટ ખૂટે છે; અનુગામી ઉપસર્ગે
+નિયમનો નિષ્કર્ષ મૂળના મોડલ સૂત્રને બદલે $!B$ માટે હોવો જોઈએ.
+અહીં પૂર્વપક્ષમાં $!B$ અને અનુગામી નિષ્કર્ષમાં ચિહ્નિત $!B$
+રાખ્યાં છે.}
+\end{explain}
+
+\begin{prop}\ollabel{prop:complete-tableau}
+  દરેક સાંત $\Gamma$ માટે એવું !!a{tableau} છે કે તેની દરેક
+  ખુલ્લી શાખા પૂર્ણ છે.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ માટેના !!a{tableau}માં કોઈ ખુલ્લી શાખા લો. તેના
+  દરેક સાંત તબક્કે નિયમ લાગુ કરી શકાય એવાં ઉપસર્ગવાળાં
+  !!{formula}s સાંત જ હોય છે. નિશ્ચિત ક્રમમાં (જેમ કે ઉપરથી
+  નીચે), જેના માટે (1)--(4)ની શરતો હજી પૂરી ન થતી હોય એવા
+  દરેક ઉપસર્ગવાળા !!{formula} પર લાગુ પડતા નિયમો ચલાવી
+  શાખા વિસ્તારો. ક્યારેક શાખા વહેંચાશે; ત્યારે બાકીનાં
+  ઉપસર્ગવાળાં !!{formula}s માટે મળતી દરેક શાખાના છેડે
+  નિયમો ચલાવો. !!{formula}s અને વપરાયેલા ઉપસર્ગો બંને સાંત હોવાથી
+  આ ફેરી અંતે મૂળ શાખાને વિસ્તરતી સાંત સંખ્યામાં શાખાઓ
+  મળે છે. દરેક ખુલ્લી શાખા પર પ્રક્રિયા ફરી કરો અને ફેરીઓ
+  ચાલુ રાખો. આ તબક્કાઓના સંઘરૂપ સીમા-ટેબ્લોમાં દરેક
+  ખુલ્લી શાખા પૂર્ણ છે: શાખા પર આવેલું દરેક સૂત્ર અને દરેક
+  વપરાયેલો અનુગામી ઉપસર્ગ કોઈ સાંત તબક્કે હાજર હોય છે,
+  તેથી પછીની ફેરીમાં તેની બાકી શરત પૂરી થાય છે.
+  \sourcecorrection{OLMD-065}{મૂળની પ્રતિજ્ઞા બધી શાખાઓને
+  પૂર્ણ કહે છે, પરંતુ આપેલું નિર્માણ માત્ર ખુલ્લી શાખાઓ
+  વિસ્તારે છે; અંતે ``દરેક શાખા બંધ છે'' પણ લખાયું છે,
+  જે પૂર્ણતાના હેતુથી વિરુદ્ધ છે. દાવો ખુલ્લી શાખાઓ માટે
+  સ્પષ્ટ કર્યો અને ન્યાયી પુનરાવર્તનનું સીમા-વૃક્ષ ઉમેર્યું છે.}
+\end{proof}
+
+\begin{thm}[પૂર્ણતા]
+  \ollabel{thm:tableau-completeness}
+  $\Gamma$ માટે કોઈ બંધ !!{tableau} ન હોય, તો $\Gamma$ સંતોષ્ય છે.
+\end{thm}
+
+\begin{proof}
+ઉપરની પ્રતિજ્ઞા સાંત ધારણાઓ માટે છે. અહીં ધારણાઓનો ગણ
+અનંત પણ હોઈ શકે. એવો !!a{tableau} મેળવવા, ભાષા ગણનીય
+હોવાથી ધારણાઓને ક્રમમાં
+ગોઠવો. દરેક સાંત તબક્કે આગળની ધારણા દરેક ખુલ્લી શાખામાં
+ઉમેરો અને ત્યાં સુધી ઊભી થયેલી નિયમ-શરતોને ન્યાયી ક્રમમાં
+પૂરી કરો. બંધ !!{tableau} અસ્તિત્વમાં ન હોવાથી કોઈ સાંત
+તબક્કે બધી શાખાઓ બંધ થઈ શકતી નથી. દરેક તબક્કે શાખાઓની
+સંખ્યા સાંત હોવાથી, સતત ખુલ્લા વિસ્તરણો ધરાવતી શાખા
+પસંદ કરતાં એક ખુલ્લી પૂર્ણ શાખા મળે છે.
+\sourcecorrection{OLMD-066}{મૂળની પ્રતિજ્ઞા માત્ર સાંત
+ધારણાઓ માટે છે, પરંતુ પ્રમેયના પ્રમાણમાં તેને મનસ્વી
+ધારણાગણ પર સીધી લાગુ કરી છે. ગણનીય ભાષામાં ધારણાઓનું
+ન્યાયી ક્રમમાં ઉમેરણ અને સાંત-શાખાવાળા તબક્કાઓમાંથી
+અનંત ખુલ્લી શાખાની પસંદગી સ્પષ્ટ કરી છે.}
+ધારણાઓનો ગણ ખાલી હોય તો એક-જગતનું કોઈપણ નિદર્શન તેને
+સંતોષે છે; તેથી આગળ અખાલી કિસ્સો લો.
+\sourcecorrection{OLMD-067}{મૂળના નિદર્શન-નિર્માણમાં
+જગતોનો ગણ ઉપસર્ગોનો ગણ છે; ખાલી ધારણાગણ માટે તે ખાલી
+પડી શકે, જ્યારે નિદર્શનનો જગત-ગણ અખાલી હોવો જોઈએ.
+ખાલી કિસ્સો અલગથી નિકાલ કર્યો છે.}
+આ રીતે $\Gamma$ માટે એવું !!a{tableau} મળે છે જેમાં
+ઓછામાં ઓછી એક શાખા ખુલ્લી અને પૂર્ણ છે. તે શાખા પરનાં
+ઉપસર્ગવાળાં !!{formula}sનો ગણ $\Delta$ લો, અને તેમાં
+આવતા ઉપસર્ગોનો ગણ $P(\Delta)$ લો.
+
+નિદર્શન~$\mModel{M(\Delta)} = \tuple{P(\Delta), R, V}$
+વ્યાખ્યાયિત કરીએ છીએ. તેમાં~$\Delta$માં આવતા ઉપસર્ગો
+જગતો છે અને સુલભતા-સંબંધ આ રીતે અપાય છે:
+\[
+R\sigma\sigma' \quad \text{iff} \quad
+\sigma'=\sigma.n \quad \text{for some~$n$}
+\]
+અને
+\[
+V(p) = \Setabs{\sigma}{\sFmla{\True}{p}[\sigma] \in \Delta}.
+\]
+હવે~$!A$ પર આગમનથી બતાવીએ છીએ કે
+$\sFmla{\True}{!A}[\sigma] \in \Delta$ હોય તો
+$\mSat{M(\Delta)}{!A}[\sigma]$, અને
+$\sFmla{\False}{!A}[\sigma] \in \Delta$ હોય તો
+$\mSat/{M(\Delta)}{!A}[\sigma]$.
+
+\begin{enumerate}
+  \item \indcase{!A}{p}{$\sFmla{\True}{\indfrm}[\sigma] \in \Delta$
+    હોય તો~$V$ની વ્યાખ્યા મુજબ $\sigma \in V(p)$, તેથી
+    $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+    $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ હોય તો
+    $\sFmla{\True}{\indfrm}[\sigma] \notin \Delta$, કારણ કે
+    અન્યથા શાખા બંધ હોત. તેથી $\sigma \notin V(p)$ અને
+    $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}
+  \item \indcase{!A}{\lnot !B}{\iftag{probNot}{અભ્યાસપ્રશ્ન.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\False}{!B}[\sigma] \in \Delta$.
+      આગમન-ધારણા મુજબ
+      $\mSat/{M(\Delta)}{!B}[\sigma]$, તેથી
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\True}{!B}[\sigma] \in \Delta$.
+      આગમન-ધારણા મુજબ
+      $\mSat{M(\Delta)}{!B}[\sigma]$, તેથી
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{!B \land !C}{\iftag{probAnd}{અભ્યાસપ્રશ્ન.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\True}{!B}[\sigma] \in \Delta$
+      અને $\sFmla{\True}{!C}[\sigma] \in \Delta$ બંને હોય.
+      આગમન-ધારણા મુજબ $\mSat{M(\Delta)}{!B}[\sigma]$ અને
+      $\mSat{M(\Delta)}{!C}[\sigma]$; તેથી
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\False}{!B}[\sigma] \in \Delta$
+      અથવા $\sFmla{\False}{!C}[\sigma] \in \Delta$ હોય.
+      આગમન-ધારણા મુજબ
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ અથવા
+      $\mSat/{M(\Delta)}{!C}[\sigma]$; તેથી
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \sourcecorrection{OLMD-068}{મૂળમાં અસત્ય સંયોજનના
+    આગમન-નિષ્કર્ષમાં બીજો ભાગ ફરી $!B$ લખાયો છે;
+    પૂર્વપક્ષ અને શાખા-નિયમ મુજબ ત્યાં $!C$ રાખ્યું છે.}
+  \item \indcase{!A}{!B \lor !C}{\iftag{probOr}{અભ્યાસપ્રશ્ન.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\True}{!B}[\sigma] \in \Delta$
+      અથવા $\sFmla{\True}{!C}[\sigma] \in \Delta$ હોય.
+      આગમન-ધારણા મુજબ
+      $\mSat{M(\Delta)}{!B}[\sigma]$ અથવા
+      $\mSat{M(\Delta)}{!C}[\sigma]$; તેથી
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\False}{!B}[\sigma] \in \Delta$
+      અને $\sFmla{\False}{!C}[\sigma] \in \Delta$ બંને હોય.
+      આગમન-ધારણા મુજબ
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ અને
+      $\mSat/{M(\Delta)}{!C}[\sigma]$; તેથી
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \sourcecorrection{OLMD-069}{મૂળમાં અસત્ય વિયોજનના
+    આગમન-નિષ્કર્ષમાં બીજો ભાગ ફરી $!B$ લખાયો છે;
+    બંને અસત્ય શાખા-સૂત્રો મુજબ ત્યાં $!C$ રાખ્યું છે.}
+  \item \indcase{!A}{!B \lif !C}{\iftag{probIf}{અભ્યાસપ્રશ્ન.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\False}{!B}[\sigma] \in \Delta$
+      અથવા $\sFmla{\True}{!C}[\sigma] \in \Delta$ હોય.
+      આગમન-ધારણા મુજબ
+      $\mSat/{M(\Delta)}{!B}[\sigma]$ અથવા
+      $\mSat{M(\Delta)}{!C}[\sigma]$; તેથી
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી $\sFmla{\True}{!B}[\sigma] \in \Delta$
+      અને $\sFmla{\False}{!C}[\sigma] \in \Delta$ બંને હોય.
+      આગમન-ધારણા મુજબ
+      $\mSat{M(\Delta)}{!B}[\sigma]$ અને
+      $\mSat/{M(\Delta)}{!C}[\sigma]$; તેથી
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \sourcecorrection{OLMD-070}{મૂળમાં અસત્ય અનુબંધના
+    આગમન-નિષ્કર્ષમાં બીજો ભાગ ફરી $!B$ લખાયો છે;
+    અનુબંધનો ઉત્તરપક્ષ અસત્ય હોવાથી ત્યાં $!C$ રાખ્યું છે.}
+  \item \indcase{!A}{\Box !B}{\iftag{probBox}{અભ્યાસપ્રશ્ન.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી તેમાં વપરાયેલા દરેક $\sigma.n$ માટે
+      $\sFmla{\True}{!B}[\sigma.n] \in \Delta$; એટલે
+      $R\sigma\sigma'$ ધરાવતા દરેક $\sigma' \in P(\Delta)$
+      માટે આ વાત સાચી છે. આગમન-ધારણા મુજબ
+      $R\sigma\sigma'$ ધરાવતા એવા દરેક $\sigma'$ માટે
+      $\mSat{M(\Delta)}{!B}[\sigma']$.
+      તેથી $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી કોઈ $\sigma.n$ માટે
+      $\sFmla{\False}{!B}[\sigma.n] \in \Delta$.
+      આગમન-ધારણા મુજબ $\mSat/{M(\Delta)}{!B}[\sigma.n]$.
+      $R\sigma(\sigma.n)$ હોવાથી એવું~$\sigma'$ છે કે
+      $\mSat/{M(\Delta)}{!B}[\sigma']$. આમ
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+  \item \indcase{!A}{\Diamond !B}{\iftag{probDiamond}{અભ્યાસપ્રશ્ન.}{
+      $\sFmla{\True}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી કોઈ $\sigma.n$ માટે
+      $\sFmla{\True}{!B}[\sigma.n] \in \Delta$.
+      આગમન-ધારણા મુજબ $\mSat{M(\Delta)}{!B}[\sigma.n]$.
+      $R\sigma(\sigma.n)$ હોવાથી એવું~$\sigma'$ છે કે
+      $\mSat{M(\Delta)}{!B}[\sigma']$. આમ
+      $\mSat{M(\Delta)}{\indfrm}[\sigma]$.
+
+      $\sFmla{\False}{\indfrm}[\sigma] \in \Delta$ હોય તો
+      શાખા પૂર્ણ હોવાથી તેમાં વપરાયેલા દરેક $\sigma.n$ માટે
+      $\sFmla{\False}{!B}[\sigma.n] \in \Delta$; એટલે
+      $R\sigma\sigma'$ ધરાવતા દરેક
+      $\sigma' \in P(\Delta)$ માટે આ વાત સાચી છે.
+      આગમન-ધારણા મુજબ $R\sigma\sigma'$ ધરાવતા એવા દરેક
+      $\sigma'$ માટે $\mSat/{M(\Delta)}{!B}[\sigma']$.
+      તેથી $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}}
+\end{enumerate}
+$\Gamma \subseteq \Delta$ હોવાથી $\mSat{M(\Delta)}{\Gamma}$.
+\end{proof}
+
+\begin{prob}
+\olref[nml][tab][cpl]{thm:tableau-completeness}નું પ્રમાણ પૂર્ણ કરો.
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-completeness}
+$\Gamma \Entails !A$ હોય તો $\Gamma \Proves !A$.
+\end{cor}
+
+\begin{cor}
+\ollabel{cor:weak-completeness}
+બધાં નિદર્શનોમાં $!A$ સત્ય હોય તો $\Proves !A$.
+\end{cor}
+
+\end{document}

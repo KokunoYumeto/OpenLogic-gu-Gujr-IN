@@ -1,0 +1,71 @@
+% Part: counterfactuals
+% Chapter: minimal-change-semantics
+% Section: antecedent-strengthening
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{min}{agg}
+
+\olsection{પૂર્વપક્ષને મજબૂત કરવો}
+
+``પૂર્વપક્ષને મજબૂત કરવો'' એટલે
+$!A \lif !C \Entails (!A \land !B) \lif !C$ એ અનુમાન.
+ભૌતિક શરતી વિધાન માટે તે માન્ય છે, પરંતુ પ્રતિતથ્યાત્મક વિધાન માટે
+અમાન્ય છે. ધારો કે આ દીવાસળી ઘસું તો તે સળગી ઊઠે, એ સાચું છે.
+(એટલે દીવાસળી કે દીવાસળીઓના પૅકેટની ઘસવાની સપાટીમાં કોઈ ખામી નથી;
+હું દીવાસળી તોડી નાખવાનો નથી, વગેરે.) પરંતુ આ દીવાસળી અવકાશમાં
+ઘસું તો તે સળગી ઊઠે, એ સાચું નથી. તેથી નીચેનું અનુમાન અમાન્ય છે:
+\begin{quote}
+  જો દીવાસળી ઘસાત, તો તે સળગી ઊઠત.
+
+  તેથી, જો દીવાસળી અવકાશમાં ઘસાત, તો તે સળગી ઊઠત.
+\end{quote}
+
+લૂઈસ--સ્ટાલનેકરનું શરતી વિધાનોનું વિશ્લેષણ આ સમજાવે છે: હું
+અવકાશમાં દીવાસળી ઘસું એવું સૌથી નજીકનું જગત, હું દીવાસળી ઘસું
+એવા સૌથી નજીકના જગત કરતાં વાસ્તવિક જગતથી ઘણું વધુ દૂર છે. તેથી
+પછીના જગતમાં દીવાસળી સળગે છે, પરંતુ પહેલાંના જગતમાં નહિ. એવું જ
+થવું જોઈએ.
+
+\begin{ex}
+  ગોળા-અર્થવિચાર આ અનુમાનને અમાન્ય ઠરાવે છે; એટલે $p
+  \cif r \Entails/ (p \land q) \cif r$. નિદર્શ $\mModel{M}
+  = \tuple{W, O, V}$ લો જેમાં $W = \{w, w_1, w_2\}$,
+  $O_w = \{\{w\}, \{w, w_1\}, \{w, w_1, w_2\}\}$,
+  $V(p) = \{w_1, w_2\}$, $V(q) = \{w_2\}$ અને
+  $V(r) = \{w_1\}$. $p$ને સ્વીકારતો ગોળો $S = \{w,
+  w_1\}$ છે અને તેના બધાં જગતોમાં $p \lif r$ સત્ય છે; તેથી
+  $\mSat{M}{p \cif r}[w]$. વળી $(p \land q)$ને સ્વીકારતો ગોળો
+  $S' = \{w, w_1, w_2\}$ છે, પરંતુ
+  $\mSat/{M}{(p \land q) \lif r}[w_2]$; તેથી
+  $\mSat/{M}{(p \land q) \cif r}[w]$ (જુઓ~\olref{fig:antecedent-strengthening}).
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[layerwidth=1.5,scale=.6]\tiny
+  \spheresystem{3}
+  \propositionintersect{-10}{3}{30}{5}
+  \begin{scope}
+    \clip plot[smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} -- (4.5,4.5) ;
+    \spherefill{2}
+  \end{scope}
+  \draw[proposition] plot[dashed,smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} ;
+  \proposition{30}{2}{30}{5}
+  \path (0,0) node[world] {$w$};
+  \spherepos{30}{2}{node[world] {$w_1$}}
+  \spherepos{-10}{3}{node[world] {$w_2$}}
+  \spherepos{-10}{4}{node {$q$}}
+  \spherepos{30}{4}{node {$r$}}
+  \draw (1,4.5) node[below] {$p$};
+\end{tikzpicture}
+\caption{પૂર્વપક્ષને મજબૂત કરવાના નિયમનું પ્રત્યુદાહરણ}
+\ollabel{fig:antecedent-strengthening}
+\end{center}
+\end{figure}
+\end{ex}
+
+\end{document}

@@ -1,0 +1,71 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: computably-axiomatizable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{cax}
+
+\olsection{\printtoken{S}{axiomatizable} સિદ્ધાંતો}
+
+સિદ્ધાંત~$\Th{T}$ પાસે
+સ્વયંસિદ્ધિઓનો સંગણનીય ગણ~$A$
+હોય તો તેને
+\emph{!!{axiomatizable}} કહીએ.
+($A$ એ~$\Th{T}$નો
+સ્વયંસિદ્ધિઓનો ગણ છે એમ
+કહેવાનો અર્થ
+$T = \Setabs{!A}{A \Proves !A}$.)
+પ્રાકૃતિક સંખ્યાઓના કોઈપણ
+``વાજબી'' સ્વયંસિદ્ધીકરણમાં
+આ ગુણધર્મ હશે. ખાસ કરીને
+સાન્ત સંખ્યામાં સ્વયંસિદ્ધિઓ
+ધરાવતો દરેક સિદ્ધાંત
+!!{axiomatizable} છે.
+
+\begin{lem}
+માનો કે $\Th{T}$
+!!{axiomatizable} છે.
+તો $\Th{T}$
+!!{computably
+enumerable} છે.
+\end{lem}
+
+\begin{proof}
+માનો કે~$A$ એ~$\Th{T}$
+માટે સ્વયંસિદ્ધિઓનો
+સંગણનીય ગણ છે.
+$!A \in T$ હોય તેની
+પુષ્ટિ માટે સ્વયંસિદ્ધિઓમાંથી
+$!A$નું !!a{derivation}
+શોધતા રહો.
+\sourcecorrection{OLINC-040}{સ્થિર અંગ્રેજી
+મૂળ અહીં શોધથી $!A\in T$
+છે કે નહીં ``નક્કી''
+થઈ જાય એવું કહે છે.
+આ શોધ સભ્યતા હોય ત્યારે
+સાબિતી શોધી આપે છે, પરંતુ
+સભ્યતા ન હોય ત્યારે અટકવી
+જરૂરી નથી; લેમ્માનો દાવો
+પરિગણનીયતાનો છે, નિર્ણેયતાનો નહીં.}
+
+થોડું જુદી રીતે કહીએ તો
+$!A$ એ $\Th{T}$માં છે
+ત્યારે અને માત્ર ત્યારે જ
+$A$માં $!B_1$, \dots,
+$!B_k$ સ્વયંસિદ્ધિઓની
+સાન્ત યાદી અને પ્રથમ-ક્રમના
+તર્કમાં
+$(!B_1 \land \dots \land !B_k) \lif !A$
+નું !!a{derivation} છે.
+પરંતુ આપણે અગાઉથી જાણીએ
+છીએ કે ``એવા \dots છે કે
+\dots'' આકારની વ્યાખ્યા
+ધરાવતો દરેક ગણ !!{c.e.}
+છે, જો બીજું ``\dots''
+સંગણનીય હોય.
+\end{proof}
+
+\end{document}

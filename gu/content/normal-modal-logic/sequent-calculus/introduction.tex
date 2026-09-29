@@ -1,0 +1,50 @@
+% Part: normal-modal-logic
+% Chapter: sequent-calculus
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{seq}{int}
+
+\olsection{પરિચય}
+
+વિધાનતર્કના સિક્વન્ટ કલનમાં
+\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ અને~}{}}{}%
+\iftag{prvDiamond}{$\Diamond$}{} માટેના વધારાના નિયમો
+ઉમેરી શકાય છે. દાખલા તરીકે,~$\Log{K}$ માટે
+\Log{LK} ઉપરાંત આ નિયમો છે:
+\[
+  \iftag{prvBox}{\iftag{prvDiamond}{% <> and [] primitive
+    \Axiom$\Gamma \fCenter \Delta, !A$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box!A$
+    \DisplayProof  
+    \qquad
+    \Axiom$!A, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond!A, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+}{% only Box primitive
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{$\Box$}
+\UnaryInf$\Box\Gamma \fCenter \Box!A$
+\DisplayProof
+}}{% only <> primitive
+  \Axiom$!A \fCenter \Delta$
+  \RightLabel{$\Diamond$}
+  \UnaryInf$\Diamond!A \fCenter \Diamond\Delta$
+  \DisplayProof
+}
+\]
+$\Log{K}$ના વિસ્તરણો માટે બીજા નિયમો પણ ઉમેરવા પડે છે.
+
+દરેક મોડલ તર્ક માટે આવું સિક્વન્ટ કલન જાણીતું નથી.
+$\Log{S5}$ અર્થવિજ્ઞાનની દૃષ્ટિએ સરળ છે (તેને સુલભતા
+સંબંધ વાપર્યા વિના પણ વ્યાખ્યાયિત કરી શકાય છે), છતાં
+$\Log{LK}$માંથી મળતું અને~\Cut નિયમ વિના પૂર્ણ હોય એવું
+સિક્વન્ટ કલન તેના માટે જાણીતું નથી. જોકે તેના માટે કટ વિના
+પૂર્ણ \emph{હાઇપર-સિક્વન્ટ} કલન છે.
+
+\end{document}

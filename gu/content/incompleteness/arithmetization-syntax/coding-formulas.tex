@@ -1,0 +1,129 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: coding-formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{frm}
+\olsection{\printtoken{P}{formula}નું સંકેતબદ્ધીકરણ}
+
+સંબંધ~$\fn{Term}(x)$ને આદિમ
+પુનરાવર્તી રીતે વ્યાખ્યાયિત કર્યા પછી,
+તેની મદદથી !!{formula}s માટેનો અનુરૂપ
+સંબંધ~$\fn{Frm}(x)$ પણ આદિમ
+પુનરાવર્તી રીતે વ્યાખ્યાયિત કરી શકીએ.
+
+\begin{prop}
+$x$ આણ્વિક !!{formula}ની ગડેલ-સંખ્યા
+હોય ત્યારે અને માત્ર ત્યારે સત્ય થતો
+સંબંધ~$\fn{Atom}(x)$ આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+નીચેમાંથી એક શરત હોય ત્યારે અને માત્ર
+ત્યારે નંબર~$x$ આણ્વિક !!{formula}ની
+ગડેલ-સંખ્યા છે:
+\begin{enumerate}
+\item એવાં~$n$, $j < x$ અને~$z < x$
+  હોય કે દરેક~$i < n$ માટે
+  $\fn{Term}((z)_i)$ અને $x = $
+\[
+\Gn{\Obj P^n_j(} \concat \fn{flatten}(z) \concat \Gn{)}.
+\]
+\item એવાં~$z_1, z_2 < x$ હોય કે
+  $\fn{Term}(z_1)$, $\fn{Term}(z_2)$
+  અને $x = $
+\[
+\Gn{{\eq}(} \concat z_1 \concat \Gn{,} \concat z_2 \concat{\Gn{)}}.
+\]
+  \tagitem{prvFalse}{$x = \Gn{\lfalse}$.}{}
+  \tagitem{prvTrue}{$x = \Gn{\ltrue}$.}{}
+\end{enumerate}
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:frm-primrec}
+$x$ કોઈ !!a{formula}ની ગડેલ-સંખ્યા
+હોય ત્યારે અને માત્ર ત્યારે સત્ય થતો
+સંબંધ~$\fn{Frm}(x)$ આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+ચિહ્નોનો અનુક્રમ~$s$ !!a{formula} છે
+ત્યારે અને માત્ર ત્યારે, જ્યારે
+!!{formula}ની એવી રચના-શ્રેણી~$s_0$,
+\dots, $s_{k-1} = s$ હોય જે રચના-નિયમો
+મુજબ આણ્વિક !!{formula}sમાંથી~$s$
+કેવી રીતે બન્યું તે નોંધે છે. બિનજરૂરી
+વચગાળાનાં સૂત્રો કાઢીને માત્ર ઉપસૂત્રોની
+રચના-શ્રેણી પસંદ કરીએ, તો દરેક~$s_i$નો
+સંકેત નંબર અંતિમ~$s$ના સંકેત નંબર~$x$થી
+મોટો નથી. સમગ્ર રચના-શ્રેણી
+$\tuple{s_0, \dots, s_{k-1}}$ના સંકેત
+નંબર માટે પણ અંતિમ નંબરથી ગણાતી
+આદિમ પુનરાવર્તી મર્યાદા મળે છે.
+\sourcecorrection{OLINC-005}{સ્થિર અંગ્રેજી મૂળમાં
+અંતિમ સભ્ય સહિત દરેક~$s_i$નો સંકેત
+નંબર અને આખી રચના-શ્રેણીનો સંકેત
+નંબર બંને~$x$ કરતાં નાના કહેવાયા છે.
+અંતિમ સભ્યનો સંકેત પોતે જ~$x$ છે,
+અને આખી શ્રેણીનો સંકેત તેનાથી મોટો
+થઈ શકે છે. બિનજરૂરી વચગાળાનાં સૂત્રો
+કાઢીને ઉપસૂત્રો પૂરતી રચના-શ્રેણી લેવી
+પડે. પહેલાંના પદ-પ્રમાણની જેમ
+અહીં જરૂરી વાત~$x$ પરથી ગણાતી આદિમ
+પુનરાવર્તી મર્યાદા હોવાની છે.}
+\end{proof}
+
+\begin{prob}
+પહેલી સાબિતીની રીત અનુસરીને
+\olref[inc][art][frm]{prop:frm-primrec}ની
+વિગતવાર સાબિતી આપો;
+\olref[inc][art][trm]{prop:term-primrec}ની
+પહેલી સાબિતી માર્ગદર્શક છે.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:freeocc-primrec}
+ગડેલ-સંખ્યા~$x$ ધરાવતા સૂત્રનું
+$i$મું ચિહ્ન એ ગડેલ-સંખ્યા~$z$
+ધરાવતા ચલની મુક્ત ઘટના હોય ત્યારે
+અને માત્ર ત્યારે સત્ય થતો સંબંધ
+$\fn{FreeOcc}(x, z, i)$ આદિમ
+પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[inc][art][frm]{prop:freeocc-primrec}
+સાબિત કરો. !!a{formula}નો કોઈ
+ઉપઅનુક્રમ પણ !!a{formula} હોય, તો
+તે મૂળ સૂત્રનું ઉપ-!!{formula} હોય છે,
+એ તથ્ય વાપરી શકો છો.
+\end{prob}
+
+\begin{prop}
+$x$ કોઈ !!a{sentence}ની ગડેલ-સંખ્યા
+હોય ત્યારે અને માત્ર ત્યારે સત્ય થતો
+ગુણધર્મ~$\fn{Sent}(x)$ આદિમ
+પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof}
+!!{sentence} એ !!{variable}sની મુક્ત
+ઘટના વિનાનું !!a{formula} છે. તેથી
+$\fn{Sent}(x)$ ત્યારે અને માત્ર ત્યારે,
+જ્યારે
+\begin{multline*}
+\bforall{i<\len{x}}{\bforall{z<x}{}}\\
+(\bexists{j<z}{z=\Gn{\Obj v_j}} \lif \lnot\fn{FreeOcc}(x,z,i)).
+\end{multline*}
+\end{proof}
+
+
+\end{document}

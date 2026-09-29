@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0653",
+  "checked_at_utc": "2026-09-28T18:27:28.153157+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0653 Legacy nonstandard models of true arithmetic and their order blocks; state-only draft",
+  "report": {
+    "unit_id": "OLP-0653",
+    "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+    "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+    "draft_path": "private-state\\work\\batch044_draft\\nonstandard-arithmetic.tex",
+    "draft_sha256": "ad7fa5775758a273e518dc48672468e76699bf065a7a8a059f08530389278d26",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 248,
+    "target_math_spans_after_corrections": 248,
+    "glossary_tokens": 16,
+    "source_correction_notes": [
+      "OLMD-190",
+      "OLMD-191",
+      "OLMD-192",
+      "OLMD-193",
+      "OLMD-194",
+      "OLMD-195"
+    ],
+    "source_detector_ascii_tokens": 1039,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "non-logical constants of\n$\\Lang{L}$ as",
+        "non-logical constants of\n$\\Lang{L_N}$ as"
+      ],
+      [
+        "so $x \\prec\n  y$",
+        "so $x^* \\prec\n  y$"
+      ],
+      [
+        "$\\Struct{M_2}$",
+        "$\\Struct{M}_2$",
+        3
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\model-theory\\models-of-arithmetic\\non-standard-models.tex",
+        "sha256": "3a5a3e752691df8f2f5b54b328e13c6ec4ce3b91111d8fae1a447fda8ebe4b03",
+        "terms": [
+          "પ્રમાણભૂત",
+          "અપ્રમાણભૂત",
+          "લેવેનહાઇમ--સ્કોલેમ",
+          "સઘનતા"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\model-theory\\models-of-arithmetic\\models-of-pa.tex",
+        "sha256": "c890c48a350ad7ca31faf2a4ed8a4091f977152b078485ab10fb1c3c32d9f8d4",
+        "terms": [
+          "પ્રમાણભૂત ભાગ",
+          "અપ્રમાણભૂત ખંડ",
+          "સંમેય",
+          "ખંડોનો ક્રમ",
+          "રદ્દીકરણ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\pairing.tex",
+        "sha256": "d647d28c903c54c4a3aa2aefe711ad620b4b4a34249428234d50752edabf3ba6",
+        "terms": [
+          "સહસાન્ત"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0559",
+  "checked_at_utc": "2026-09-28T01:20:41.395065+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0559 cumulative stages V-alpha and the transfinite recursion proposal; state-only draft",
+  "report": {
+    "unit_id": "OLP-0559",
+    "source_path": "content/set-theory/spine/idea.tex",
+    "source_sha256": "72e78cfef1d30e6a2e097f398dd5f502654f906c855dc226b9f616947a2b6955",
+    "draft_path": "private-state\\work\\batch044_draft\\spine-idea.tex",
+    "draft_sha256": "0e754ebf889a7583c9fdc1e27df41a53e46cf4989d628f28653470d12ccfc801",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 4,
+    "target_math_spans_after_corrections": 4,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 170,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cumulative-approach.tex",
+        "sha256": "406d630c98b96fba4eb2edf4ed84703d9e58fa92ec4c71cf643ba90bd11f56ee",
+        "terms": [
+          "તબક્કાઓ",
+          "ગણો"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-introduction.tex",
+        "sha256": "d70b876059d2ce33c66c4b20a050dacb5ff19f7125d436624d3d3fe9665839a6",
+        "terms": [
+          "પદાનુક્રમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+        "sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+        "terms": [
+          "અનુગામી",
+          "સીમા ક્રમવાચક"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-induction.tex",
+        "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945",
+        "terms": [
+          "પુનરાવર્તી વ્યાખ્યા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The three defining clauses are retained as one exact align* math span, including the source's English text inside TeX math; the draft does not silently rewrite the formal display.",
+      "The source says the recursive clauses will be a definition, so this unit does not claim that transfinite recursion has already been justified.",
+      "The internal theory versus possible model contrast is translated explicitly, without identifying a proper class of all stages as a set."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

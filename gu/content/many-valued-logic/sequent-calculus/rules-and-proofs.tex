@@ -1,0 +1,86 @@
+% Part: many-valued-logic
+% Chapter: sequent-calculus
+% Section: rules-and-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{seq}{rul}
+
+\olsection{નિયમો અને \usetoken{P}{derivation}}
+
+નીચેના માટે, $\Gamma, \Delta, \Pi, \Lambda$ એ !!{sentence}sની
+સાન્ત શ્રેણીઓ દર્શાવે તેમ માનો.
+
+\begin{defn}[સિક્વન્ટ]
+\emph{$n$-બાજુવાળો સિક્વન્ટ} નીચેના સ્વરૂપનું પદ છે:
+\[
+\Gamma_1 \nSequent \dots \nSequent \Gamma_n
+\]
+અહીં દરેક $\Gamma_i$ એ ભાષા~$\Lang L$નાં !!{sentence}sની
+સાન્ત (સંભવતઃ ખાલી) શ્રેણી છે.
+\end{defn}
+\sourcecorrection{OLMV-019}{સ્થિર અંગ્રેજી મૂળ
+સિક્વન્ટનાં $n$ સ્થાનો દર્શાવ્યા પછી દરેક સ્થાનને
+$\Gamma_1$ કહે છે. સામાન્ય સ્થાન માટે $\Gamma_i$
+વાપરીને તેની વ્યાખ્યા અને ગણિતીય સૂચકાંક એકરૂપ કર્યા છે.}
+
+\begin{defn}[આરંભિક સિક્વન્ટ]
+\emph{$n$-બાજુવાળો આરંભિક સિક્વન્ટ} ભાષાના કોઈપણ
+!!{sentence} $!A$ માટે $!A \nSequent \dots \nSequent !A$
+સ્વરૂપનો $n$-બાજુવાળો સિક્વન્ટ છે.
+
+જો ભાષામાં $0$-સ્થાનવાળો સંયોજક~$\star$ હોય, એટલે
+કે વિધાનાત્મક અચલ હોય, તો $\dots \nSequent
+\star \nSequent \dots$ સિક્વન્ટ પણ આરંભિક ગણીએ છીએ.
+તેમાં $\star$ તેના $\tf{\star} \in V$ સાથે સંકળાયેલા
+સત્યમૂલ્યના સ્થાનમાં આવે છે અને અન્ય સ્થાનો ખાલી રહે છે.
+\end{defn}
+
+$n$-મૂલ્ય તર્કશાસ્ત્ર~$\Log{L}$ના દરેક સંયોજક માટે,
+તે સંયોજક~$\Log{L}$માં લઈ શકે એવા દરેક સત્યમૂલ્યને
+અનુરૂપ એક તાર્કિક નિયમ હોય છે. $\Log{L}$ના $n$-બાજુવાળા
+સિક્વન્ટ કલનમાં !!^{derivation}s એ સિક્વન્ટોનાં વૃક્ષો છે:
+સૌથી ઉપરના સિક્વન્ટો આરંભિક સિક્વન્ટો હોય છે, અને
+જો કોઈ સિક્વન્ટ બીજા એક કે વધુ સિક્વન્ટોની નીચે હોય,
+તો તે $\Log{L}$ના સંયોજકોના અનુમાન-નિયમ વડે તેમાંથી
+યોગ્ય રીતે મળવું જોઈએ.
+
+\begin{defn}[પ્રમેયો]
+!!^a{sentence}~$!A$ એ $n$-મૂલ્ય તર્કશાસ્ત્ર~$\Log{L}$નું
+\emph{પ્રમેય} છે જો $\Log{L}$ના નિર્દિષ્ટ સત્યમૂલ્યને
+અનુરૂપ દરેક સ્થાનમાં $!A$ ધરાવતા $n$-સિક્વન્ટની
+!!a{derivation} હોય. જો $!A$ પ્રમેય હોય તો
+$\Proves[\Log{L}] !A$ લખીએ છીએ, અને ન હોય તો
+$\Proves/[\Log{L}] !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+!!^a{sentence}~$!A$ એ !!{sentence}sના ગણ~$\Gamma$માંથી
+$n$-મૂલ્ય તર્કશાસ્ત્ર~$\Log{L}$માં \emph{!!{derivable}}
+છે, $\Gamma \Proves[\Log{L}] !A$, જો અને માત્ર જો
+કોઈ સાન્ત ઉપગણ~$\Gamma_0 \subseteq \Gamma$
+અને $\Gamma_0$નાં !!{sentence}sની કોઈ શ્રેણી $\Gamma_0'$
+હોય જેથી નીચેના સિક્વન્ટની !!a{derivation} હોય:
+\[ \Lambda_1 \nSequent \dots \nSequent \Lambda_n \]
+અહીં જો સ્થાન $i$ કોઈ નિર્દિષ્ટ સત્યમૂલ્યને અનુરૂપ હોય
+તો $\Lambda_i$ એ $!A$ છે, અને અન્યથા $\Gamma_0'$ છે.
+જો $!A$ એ~$\Gamma$માંથી !!{derivable} ન હોય તો
+$\Gamma \Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+દાખલા તરીકે, $3$-મૂલ્ય લુકાશેવિચ તર્કશાસ્ત્રમાં
+$3$-બાજુવાળું સિક્વન્ટ કલન છે. $3$-બાજુવાળા સિક્વન્ટ
+$\Gamma \nSequent \Pi \nSequent \Delta$માં $\Gamma$
+એ~$\False$ને, $\Delta$ એ~$\True$ને, અને $\Pi$
+એ~$\Undef$ને અનુરૂપ છે. સ્વયંસિદ્ધિઓ
+$!A \nSequent !A \nSequent !A$ છે. માત્ર $\True$
+નિર્દિષ્ટ હોવાથી, $\Gamma \Proves[\LogLuk[3]] !A$
+ત્યારે અને માત્ર ત્યારે જ જ્યારે
+$\Gamma \nSequent \Gamma \nSequent !A$ સિક્વન્ટની
+!!a{derivation} હોય. (જો $\Undef$ પણ નિર્દિષ્ટ હોત,
+તો $\Gamma \nSequent !A \nSequent !A$ની
+!!a{derivation} જોઈતી હોત.)
+
+\end{document}

@@ -1,0 +1,117 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{Valphabasic}
+\olsection{તબક્કાઓના મૂળભૂત ગુણધર્મો}
+
+ગણસિદ્ધાંતના પાયા માટે $V_\alpha$ની વ્યાખ્યાનું મહત્ત્વ
+સ્પષ્ટ કરવા તેના કેટલાક મૂળભૂત પરિણામો આપીશું. શરૂઆત એક
+વ્યાખ્યાથી કરીએ:\footnote{આ ગુણધર્મ માટે કોઈ પ્રમાણભૂત નામ નથી;
+અહીંનું નામ \citet{ButtonLT1}ના નામનો અર્થ સ્પષ્ટ કરે છે.}
+\begin{defn}
+	ગણ $A$ \emph{ઉપગણ-સંવૃત} છે જો અને માત્ર જો
+	$\forall x((\exists y \in A)x \subseteq y \lif x \in A)$.
+\end{defn}
+\begin{lem}\ollabel{Valphabasicprops}
+દરેક ક્રમવાચક સંખ્યા $\alpha$ માટે:
+\begin{enumerate}
+	\item\ollabel{Valphatrans} દરેક $V_\alpha$ પરંપરિત છે.
+	\item\ollabel{Valphapotent} દરેક $V_\alpha$ ઉપગણ-સંવૃત છે.
+	\item\ollabel{Valphacum} જો $\gamma \in \alpha$, તો $V_\gamma
+	\in V_\alpha$ (અને તેથી \olref{Valphatrans} મુજબ
+	$V_\gamma \subseteq V_\alpha$ પણ).
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+આ પરિણામો (એકસાથે) અનંતાતીત અનુમાનથી સાબિત કરીએ. અનુમાન માટે
+ધારો કે દરેક ક્રમવાચક સંખ્યા $\beta < \alpha$ માટે
+\olref{Valphatrans}--\olref{Valphacum} સાચાં છે.
+
+$\alpha = \emptyset$નો કિસ્સો સીધો છે.
+
+ધારો કે $\alpha = \ordsucc{\beta}$. \olref{Valphacum} માટે,
+જો $\gamma \in \alpha$ હોય, તો અનુમાનની ધારણા મુજબ
+$V_\gamma \subseteq V_\beta$, તેથી
+$V_\gamma \in \Pow{V_\beta} = V_\alpha$. \olref{Valphapotent}
+માટે ધારો કે $A \subseteq B \in V_\alpha$, એટલે કે $A
+\subseteq B \subseteq V_\beta$; ત્યારે $A \subseteq V_\beta$,
+તેથી $A \in
+V_\alpha$. \olref{Valphatrans} માટે ધ્યાન આપો કે $x \in A \in
+V_\alpha$ હોય તો $A \subseteq V_\beta$, એટલે $x \in V_\beta$.
+અનુમાનની ધારણા મુજબ $V_\beta$ પરંપરિત હોવાથી $x
+\subseteq V_\beta$, અને તેથી $x
+\in V_\alpha$.
+
+ધારો કે $\alpha$ સીમા ક્રમવાચક સંખ્યા છે. \olref{Valphacum}
+માટે જો $\gamma \in \alpha$ હોય, તો
+$\gamma \in \ordsucc{\gamma} \in \alpha$; તેથી અનુમાનની ધારણા
+મુજબ $V_\gamma \in V_{\ordsucc{\gamma}}$, અને તેથી
+$V_\gamma \in \bigcup_{\beta \in \alpha} V_\beta = V_\alpha$.
+\olref{Valphatrans} અને \olref{Valphapotent} માટે માત્ર
+એટલું ધ્યાનમાં લો કે પરંપરિત ગણોનો યોગ પરંપરિત છે અને
+ઉપગણ-સંવૃત ગણોનો યોગ ઉપગણ-સંવૃત છે.
+\end{proof}
+
+\begin{lem}\ollabel{Valphanotref}
+દરેક ક્રમવાચક સંખ્યા $\alpha$ માટે $V_\alpha \notin V_\alpha$.
+\end{lem}
+
+\begin{proof}
+અનંતાતીત અનુમાનથી સાબિત કરીએ. સ્પષ્ટ છે કે
+$V_\emptyset \notin V_\emptyset$.
+
+જો $V_{\ordsucc{\alpha}} \in V_{\ordsucc{\alpha}} = \Pow{V_\alpha}$,
+તો $V_{\ordsucc{\alpha}} \subseteq V_\alpha$; અને
+\olref{Valphabasicprops} મુજબ $V_\alpha
+\in V_{\ordsucc{\alpha}}$ હોવાથી
+$V_\alpha \in V_\alpha$. આમ તેનું પ્રતિવિધાન મળે છે: જો
+$V_\alpha \notin V_\alpha$ હોય, તો
+$V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$.
+
+જો $\alpha$ સીમા ક્રમવાચક સંખ્યા હોય અને
+$V_\alpha \in V_\alpha = \bigcup_{\beta \in
+\alpha}V_\beta$, તો કોઈ $\beta \in
+\alpha$ માટે $V_\alpha \in V_\beta$; પણ ત્યારે
+$V_\beta \in V_\alpha$ પણ છે, જેથી
+\olref{Valphabasicprops}નો બે વાર ઉપયોગ કરતાં $V_\beta \in
+V_\beta$ મળે છે. આમ પ્રતિવિધાન પ્રમાણે, જો બધા $\beta \in \alpha$
+માટે $V_\beta
+\notin V_\beta$ હોય, તો $V_\alpha \notin
+V_\alpha$.
+\end{proof}
+
+\begin{cor}
+કોઈ પણ ક્રમવાચક સંખ્યાઓ $\alpha, \beta$ માટે:
+$\alpha \in \beta$ જો અને માત્ર જો $V_\alpha \in V_\beta$.
+\end{cor}
+
+\begin{proof}
+\Olref{Valphabasicprops}થી એક દિશા મળે છે. ઊલટું, ધારો કે
+$V_\alpha \in V_\beta$. તો \olref{Valphanotref} મુજબ
+$\alpha \neq \beta$; અને $\beta \notin \alpha$, કારણ કે
+નહિતર $V_\beta \in V_\alpha$ થાય અને તેથી
+\olref{Valphabasicprops}ને બે વાર વાપરતાં
+$V_\beta \in V_\beta$ મળે, જે \olref{Valphanotref}નો
+વિરોધ કરે છે. તેથી ત્રિવિકલ્પતા મુજબ $\alpha \in \beta$.
+\end{proof}
+\noindent
+આ બધાથી દરેક $V_\alpha$ને પદાનુક્રમનો $\alpha$મો તબક્કો
+ગણી શકીએ. કારણ આ છે.
+
+આપણા $V_\alpha$ \emph{પુનરાવર્તી} પ્રક્રિયામાં રચાતા હોવાનું
+વિચારી શકાય છે, કારણ કે ક્રમવાચક સંખ્યાઓનો આપણો ઉપયોગ
+પુનરાવર્તનનો ખ્યાલ દર્શાવે છે. વધુમાં, એક તબક્કો બીજા પહેલાં
+રચાતો હોય, એટલે કે $V_\beta \in V_\alpha$, એટલે કે
+$\beta \in \alpha$, તો રચનાની પ્રક્રિયા \emph{સંચયી} છે,
+કારણ કે $V_\beta \subseteq V_\alpha$. છેલ્લે, કોઈ પણ અગાઉના
+તબક્કે ઉપલબ્ધ ગણોના \emph{બધા} સંભવિત સંગ્રહો ખરેખર રચીએ
+છીએ, કારણ કે દરેક અનુગામી તબક્કો $V_{\ordsucc{\alpha}}$
+એ તેના પુરોગામી $V_\alpha$નો ઘાતગણ છે.
+
+$\ZFminus$માં ગણોના સંચયી-પુનરાવર્તી પદાનુક્રમની આપણી
+કલ્પનાને સ્પષ્ટ કરવામાં આપણે \emph{લગભગ} સફળ થયા છીએ.
+(જોકે પ્રતિસ્થાપનને વાજબી ઠેરવવાનું હજી બાકી છે.)
+
+\end{document}

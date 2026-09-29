@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0418",
+  "checked_at_utc": "2026-09-27T11:46:38.216237+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0418 modal entailment; state-only draft",
+  "report": {
+    "unit_id": "OLP-0418",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/entailment.tex",
+    "source_sha256": "825d28934a3a8ef5f7f6775e0624e97ede3be1ae9c0dc7af64883becb0bcfdee",
+    "draft_path": "private-state\\work\\batch040_draft\\entailment.tex",
+    "draft_sha256": "e4f17854416634630aba6bb115e214597892a59aa7df5c678d0455983093a284",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 63,
+    "target_math_spans_after_corrections": 63,
+    "glossary_tokens": 7,
+    "source_correction_notes": [
+      "OLMD-011",
+      "OLMD-012"
+    ],
+    "active_source_correction_notes": [
+      "OLMD-011"
+    ],
+    "withdrawn_source_correction_notices": [
+      "OLMD-012"
+    ],
+    "source_detector_ascii_tokens": 192,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      10
+    ],
+    "tikz_diagram_byte_exact": true,
+    "finite_model_cases_checked": 33032,
+    "nonentailment_exercise_witnesses": [
+      {
+        "worlds": 2,
+        "relation_bits": 2,
+        "p_bits": 1,
+        "q_bits": 0,
+        "refuting_world": 0
+      },
+      {
+        "worlds": 2,
+        "relation_bits": 2,
+        "p_bits": 2,
+        "q_bits": 0,
+        "refuting_world": 0
+      }
+    ],
+    "two_source_countermodels_checked": true
+  },
+  "status": "draft_linguistic_math_countermodel_diagram_and_visible_source_repair_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,60 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{replacement}{strength}
+\olsection{પ્રતિસ્થાપનની શક્તિ}
+
+પ્રતિસ્થાપનની શક્તિ વિશેની એક સરળ નોંધથી શરૂઆત કરીએ:
+$\Z$થી આગળ ન જઈએ, તો $\omega + \omega$ કરતાં મોટી કે
+તેના જેટલી કોઈ પણ વૉન નોયમન ક્રમવાચક સંખ્યાનું અસ્તિત્વ
+સાબિત કરી શકતા નથી.
+
+તેનું કારણ રૂપરેખામાં જોઈએ. ~$\ZF$માં કામ કરીને
+$V_{\omega+\omega}$ ગણ લો. આ ગણ~$\Z$ના એક \emph{નિદર્શ}
+માટે પ્રદેશનું કામ કરે છે. આ સમજવા સૂત્રના
+\emph{સાપેક્ષીકરણ}નો સંકેત રજૂ કરીએ:
+\begin{defn}\ollabel{formularelativization}
+	કોઈ પણ ગણ $M$ અને સૂત્ર $\phi$ માટે, $\phi$ના બધા
+	પરિમાણકોને $M$ સુધી મર્યાદિત કરતાં મળતા સૂત્રને $\phi^M$
+	કહીએ. એટલે ``$\lexists[x]$''ને ``$(\lexists[x \in M])$''થી
+	અને ``$\lforall[x]$''ને ``$(\lforall[x \in M])$''થી બદલો.
+\end{defn}\noindent
+બતાવી શકાય છે કે~$\Z$ના દરેક સ્વયંસિદ્ધિ $\phi$ માટે
+$\ZF \vdash
+\phi^{V_{\omega+\omega}}$. પરંતુ
+\olref[spine][rank]{ordsetrankalpha} મુજબ $\omega+\omega$
+એ $V_{\omega+\omega}$માં \emph{સભ્ય નથી}. તેથી
+$\omega+\omega$નું અસ્તિત્વ ન હોવું $\Z$ સાથે સુસંગત છે.
+
+આથી જ \olref[ordinals][replacement]{sec}માં કહ્યું હતું કે
+\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+પ્રતિસ્થાપન વિના સાબિત કરી શકાતું નથી. કારણ કે~$\Z$માં
+સહજ રીતે ક્રમપ્રકાર $\omega+\omega$ \emph{હોવો જોઈએ} એવો
+સ્પષ્ટ સુક્રમ વ્યાખ્યાયિત કરવો સરળ છે. ખરેખર,
+\olref[ordinals][idea]{sec}માં પ્રાકૃતિક સંખ્યાઓ પરનો આ
+ક્રમ આપીને તેનું અનૌપચારિક ઉદાહરણ આપ્યું હતું:
+\begin{align*}
+	n \lessdot m \text{ iff }&\text{either }n < m\text{ and }m-n\text{ is even,}\\
+	& \text{or $n$ is even and $m$ is odd.}
+\end{align*}
+પરંતુ $\omega+\omega$ અસ્તિત્વમાં ન હોય, તો આ સુક્રમ કોઈ
+પણ ક્રમવાચક સંખ્યા સાથે ક્રમ-એકરૂપ નથી. તેથી $\Z$માં
+\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+\emph{સાબિત થતું નથી}.
+
+ઊલટેથી જોઈએ: પ્રતિસ્થાપનથી $\omega+\omega$નું અસ્તિત્વ
+સાબિત થાય છે, અને તેથી $V_{\omega+\omega}$નું અસ્તિત્વ પણ
+સાબિત થવું જોઈએ. એટલું જ નહીં. આપણે વ્યાખ્યાયિત કરી શકીએ
+તેવા \emph{કોઈ પણ} સુક્રમ માટે
+\olref[ordinals][ordtype]{thmOrdinalRepresentation} કહે છે કે
+તેની સાથે ક્રમ-એકરૂપ કોઈ $\alpha$ છે, અને તેથી $V_\alpha$
+અસ્તિત્વમાં છે. આમ સીધી રીતે, પ્રતિસ્થાપન ખાતરી આપે છે કે
+ગણોનો પદાનુક્રમ \emph{ઘણો ઊંચો} હોવો જોઈએ.
+
+આગળના થોડા વિભાગોમાં અને પછી ફરી
+\olref[card-arithmetic][fix]{sec}માં પ્રતિસ્થાપન પદાનુક્રમને
+\emph{કેટલો} ઊંચો બનાવે છે તે વધુ સમજાશે. હાલનો સરળ મુદ્દો
+એ છે કે પ્રતિસ્થાપન માટે ઔચિત્ય \emph{ખરેખર} જોઈએ છે!
+
+\end{document}

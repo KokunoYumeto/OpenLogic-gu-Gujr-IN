@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/28",
+  "checked_at_utc": "2026-09-26T22:39:04.066788+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0280–0282 state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0280",
+      "source_path": "content/incompleteness/arithmetization-syntax/arithmetization-syntax.tex",
+      "source_sha256": "0105ed979c80e2ec23fcf8db78959e1d4161ade92513858b02dffb87034a9436",
+      "draft_path": "private-state\\work\\batch028_draft\\arithmetization-syntax.tex",
+      "draft_sha256": "c50d3ee9cf9999b69b0ccc9176dbac1121d3d44442514376d2cded79abd4541d",
+      "aligned_blocks": 15,
+      "linguistic_blocks": 2,
+      "source_math_spans": 0,
+      "glossary_tokens": 0,
+      "structure_and_math_equal": true
+    },
+    {
+      "unit_id": "OLP-0281",
+      "source_path": "content/incompleteness/arithmetization-syntax/introduction.tex",
+      "source_sha256": "12b6779f25c86d92821b6f2dbd9acd095d934a7d22438493d5f043b9c5526c96",
+      "draft_path": "private-state\\work\\batch028_draft\\introduction.tex",
+      "draft_sha256": "b48e51c1ec430b88a7f3a396d874beef781bd8a05d35ab90702e13bbc6f353cb",
+      "aligned_blocks": 10,
+      "linguistic_blocks": 6,
+      "source_math_spans": 34,
+      "glossary_tokens": 17,
+      "structure_and_math_equal": true
+    },
+    {
+      "unit_id": "OLP-0282",
+      "source_path": "content/incompleteness/arithmetization-syntax/coding-symbols.tex",
+      "source_sha256": "bef2c4a725e39661d3534b411cccf9fd5f21bca5e08c401a07a7b32e403fa2d3",
+      "draft_path": "private-state\\work\\batch028_draft\\coding-symbols.tex",
+      "draft_sha256": "b4000df2fad6e1d325605376fd71d8c7743eec62bb7d6b01b6ca05db55993126",
+      "aligned_blocks": 11,
+      "linguistic_blocks": 7,
+      "source_math_spans": 69,
+      "glossary_tokens": 13,
+      "structure_and_math_equal": true
+    }
+  ],
+  "status": "partial_draft_structure_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

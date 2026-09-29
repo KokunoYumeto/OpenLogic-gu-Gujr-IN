@@ -1,0 +1,551 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: reductions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{red}
+
+\olsection{ઘટાડા-રૂપાંતરો}
+
+\Log{N1i}ની
+!!a{proof}માં કટની
+લંબાઈ~$1$ હોય,
+તો તેનો ખંડ
+માત્ર એક
+!!{formula} આવૃત્તિનો
+બને છે. એ
+!!{formula} એક
+!!a{introduction}
+અનુમાનનું નિષ્કર્ષ
+અને !!a{elimination}
+અનુમાનનું મુખ્ય
+આધારવિધાન બંને
+છે. સામાન્યીકરણની
+સાબિતીમાં, આવા
+!!{introduction}/!!{elimination}
+યુગ્મમાં પૂરી થતી
+ઉપ-!!{proof}ના સ્થાને,
+તે યુગ્મ કાઢી
+નાખેલી નવી
+!!{proof} મૂકીને
+કટ ``ઘટાડીએ'' છીએ.
+આ બદલાવથી નવા
+કટ ઊભા થઈ
+શકે છે. જોકે
+નવા કટની કક્ષા
+ઘટાડાતા કટની
+કક્ષા કરતાં ઓછી
+હોય છે. તેથી
+નવી !!{proof}ની
+કટ-લંબાઈ ઓછી
+હોય છે (કારણ
+કે લંબાઈ~$1$નો
+મહત્તમ કટ દૂર
+થયો), અથવા
+!!{proof}ની કટ-કક્ષા
+ઘટે છે (જો એ
+જ એકમાત્ર
+મહત્તમ કટ હોય).
+
+દાખલા તરીકે,
+સંબંધિત અનુમાનો
+\Intro{\lif} અને
+\Elim{\lif} હોય,
+$!A \ident !B \lif !C$
+હોય અને
+ઉપ-!!{proof}~$\delta_1$નો
+અંત આ રીતે
+થાય:
+\[
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\]
+આ કટ દૂર કરવા
+$\delta$માંની
+ઉપસાબિતી~$\delta_1$ના
+સ્થાને આ મૂકીએ:
+\[
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\DeduceC{$!C$}
+\DisplayProof
+\]
+$\Subst{\delta_2}{\delta_3}{!B^x}$
+એટલે~$\delta_2$માં
+$x$ ચિહ્નવાળી
+દરેક ધારણા~$!B$ને
+આખી !!{proof}~$\delta_3$થી
+બદલતાં મળતી
+!!{proof}. આ
+!!{proof}માં
+$x$ ચિહ્નવાળી
+$!B$ સ્વરૂપની
+ખુલ્લી ધારણા
+રહેતી નથી.
+તેમાં~$x$
+ચિહ્નવાળી બીજી
+કોઈ ધારણા પણ
+નથી, કારણ કે
+હંમેશની જેમ
+અલગ !!{formula}s
+એક જ ચિહ્ન
+સાથે ધારણા
+તરીકે આવતાં
+નથી એમ માનીએ
+છીએ. તેથી નવી
+!!{proof}ની ખુલ્લી
+ધારણાઓ~$\delta_1$ની
+જેટલી જ છે.
+$\delta_2$માં ધારણાઓ
+મુક્ત કરતું
+દરેક અનુમાન
+$\Subst{\delta_2}{\delta_3}{!B^x}$
+માં પણ એ જ
+ધારણાઓ મુક્ત
+કરે છે; અને
+$\delta_3$માં ધારણાઓ
+મુક્ત કરતું
+દરેક અનુમાન
+શક્ય હોય એવી
+અનેક નકલોમાં
+આવે છે, જે
+$\Subst{\delta_2}{\delta_3}{!B^x}$
+માં અનુરૂપ
+ધારણાઓ મુક્ત
+કરે છે.
+
+સંપૂર્ણપણે
+$\delta_2$ અથવા
+$\delta_3$ની અંદરનો
+કટ, કે
+$\delta$માં~$\delta_1$ની
+સંપૂર્ણપણે બહારનો
+કટ, યથાવત્
+રહે છે: તે
+જ !!{formula}s
+અને એ જ
+અનુમાનોમાંથી
+પસાર થાય છે.
+તેથી ખાસ કરીને,
+$\delta$ના અનુરૂપ
+કટ જેટલી જ
+તેની કક્ષા અને
+લંબાઈ છે.
+આપણે લંબાઈ~$1$નો
+મહત્તમ કટ
+દૂર કર્યો છે;
+એટલે કટ-લંબાઈ
+અથવા કટ-કક્ષા
+ઘટાડી છે (જો
+$\delta$ની કટ-લંબાઈ~$1$
+હતી અને આ
+એકમાત્ર મહત્તમ
+કટ હતો).
+\sourcecorrection{OLMD-255}{મૂળ ફકરો $\delta_4$ની અંદરના કટનો ઉલ્લેખ કરે છે, પરંતુ આ અનુસરણ-પરિચય/લોપના ઉદાહરણમાં ફક્ત $\delta_2$ અને $\delta_3$ ઉપસાબિતીઓ છે.}
+
+જોકે બે બાબતો
+બની શકે છે:
+\begin{enumerate}
+  \item બધી
+  ધારણાઓ~$!B^x$ને
+  $\delta_3$થી બદલતાં
+  $\delta_3$ના બધા
+  કટની નકલો વધી
+  જાય છે. એમાંથી
+  કેટલાક મહત્તમ
+  કટ હોય તો
+  નવી !!{proof}ની
+  કટ-લંબાઈ જૂની
+  !!{proof}ની કટ-લંબાઈ
+  કરતાં વધુ થઈ
+  શકે. આવું
+  ન થાય તેની
+  ખાતરી જોઈએ.
+  તેથી ઘટાડા-રૂપાંતર
+  ફક્ત \emph{સૌથી
+  જમણા} મહત્તમ
+  કટ પર લગાવીએ:
+  એટલે~$\delta$ની
+  શાખાઓમાં ઘટાડાતા
+  કટની જમણી બાજુ
+  બીજો કોઈ
+  મહત્તમ કટ ન
+  હોય. $\delta_3$માં
+  કટ હોય તો
+  તે અહીં ઘટાડાતા
+  કટની જમણી
+  બાજુએ હશે;
+  તેથી પસંદ કરેલો
+  કટ સૌથી જમણો
+  ન ગણાય. હંમેશાં
+  સૌથી જમણો
+  કટ પસંદ કરતાં
+  !!{proof}ની
+  કટ-લંબાઈ અથવા
+  કટ-કક્ષા ઘટે
+  છે તેની ખાતરી
+  મળે છે.
+  \item જો
+  $\delta_2$માંની
+  ધારણા~$!B^x$
+  !!a{elimination}
+  અનુમાનનું મુખ્ય
+  આધારવિધાન હોય,
+  અને~$\delta_3$નું
+  છેલ્લું અનુમાન
+  \Elim{\lor},
+  \Elim{\lexists}
+  અથવા !!a{introduction}
+  હોય, તો આ
+  $\delta_2$માંની આ
+  ધારણાની જગ્યાએ
+  $\delta_3$નું
+  કલમ-જોડાણ
+  કરવાથી નવો
+  કટ ઊભો થાય
+  છે. $\delta_2$માં
+  જે માત્ર ધારણા
+  હતી તે હવે
+  લંબાઈ~$1$નો
+  કટ (એક
+  !!a{introduction}
+  અનુમાનનું નિષ્કર્ષ
+  અને !!a{elimination}
+  અનુમાનનું મુખ્ય
+  આધારવિધાન) અથવા
+  કટ-ખંડની
+  છેલ્લી !!{formula}
+  આવૃત્તિ
+  (!!a{elimination}
+  અનુમાનનું
+  મુખ્ય આધારવિધાન
+  અને~\Elim{\lor}
+  કે~\Elim{\lexists}નું
+  નિષ્કર્ષ) બને
+  છે. જો~$!B^x$
+  એ~\Elim{\lor}
+  અથવા~\Elim{\lexists}નું
+  ગૌણ આધારવિધાન
+  હતું, તો તે
+  પહેલેથી કોઈ
+  ખંડની, અને
+  કદાચ કટ-ખંડની,
+  પ્રથમ !!{formula}
+  આવૃત્તિ હતું.
+  નવી !!{proof}માં
+  એ ખંડ હવે
+  લાંબો થઈ શકે.
+  પણ નોંધો કે
+  આ નવા કટ
+  અથવા જૂના
+  કટ-ખંડનું
+  !!{formula}~$!B$
+  છે અને
+  $\depth{!B} < \depth{!B \lif !C}$.
+  તેથી કટ ઉમેરાયા
+  હોય અથવા તેમની
+  લંબાઈ વધી હોય
+  તો પણ તેઓ
+  મહત્તમ કટ નથી.
+  આમ કટ-કક્ષા
+  ઘટે છે; અથવા
+  સમાન કક્ષાના
+  કટ બાકી હોય
+  તો કટ-લંબાઈ
+  ઘટે છે.
+  \sourcecorrection{OLMD-256}{મૂળમાં આ જ ચિહ્નિત ધારણા પહેલા $!B^x$ અને પછી $B^x$ લખાઈ છે; આખા ઉદાહરણમાં સૂત્રનું ચિહ્ન $!B^x$ જ છે.}
+\end{enumerate}
+
+લંબાઈ~$1$નો
+કટ ઘટાડવાની
+પ્રક્રિયાને
+\emph{ઘટાડા-રૂપાંતર}
+(અથવા
+\emph{ચકરાવા-રૂપાંતર})
+કહે છે.
+કેટલાક નિયમ-યુગ્મો
+માટેના નમૂના
+\olref{tab:reduction-conversions}માં
+આપ્યાં છે.
+(બાકીનાં કસરત
+તરીકે મૂક્યાં છે.)
+
+\begin{table}
+\begin{multline*}
+\bottomAlignProof
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\DisplayProof}\qquad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_3}{\delta_2}{!B^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\\[2ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(c)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\Subst{\delta_2}{t}{c}$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\DisplayProof}
+\\[4ex]
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{$\Subst{\Subst{\delta_3}{t}{c}}{\delta_2}{!B(t)^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\end{multline*}
+\caption{\Log{N1i} માટેનાં કેટલાંક ઘટાડા-રૂપાંતરો.}
+\ollabel{tab:reduction-conversions}
+\end{table}
+
+\begin{prob}
+\Intro{\lnot} પછી
+\Elim{\lnot} આવે
+ત્યારેનું
+ઘટાડા-રૂપાંતર
+આપો.
+\end{prob}
+
+હજી એક કિસ્સો
+જોવાનો બાકી છે.
+કટની વ્યાખ્યામાં
+લંબાઈ~$1$ હોય
+અને~$!A$ એ
+\FalseInt{}નું
+નિષ્કર્ષ તથા
+!!a{elimination}
+અનુમાનનું મુખ્ય
+આધારવિધાન હોય,
+તે કિસ્સો પણ
+આવે છે. $!A$
+એ !!a{introduction}
+નિયમનું નિષ્કર્ષ
+હોય તે કિસ્સાની
+જેમ આને પણ
+સંભાળીએ. દાખલા
+તરીકે, આને
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad\text{ના સ્થાને}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!C$}
+\DisplayProof
+\]
+\sourcecorrection{OLMD-257}{મૂળના પ્રથમ અસત્ય-પ્રવેશ રૂપાંતરના બે વૃક્ષોમાં અસત્યમાંથી નવું સૂત્ર કાઢતી એકપદી કડીઓ પર નિયમનું લેબલ છૂટ્યું છે; નીચેના સમાન દાખલાની જેમ \FalseInt{} દેખાડ્યું છે.}
+$!A \ident (!B \lor
+!C)$ અથવા
+$!A \ident \lexists[x][!B(x)]$
+હોય ત્યારે થોડી
+સાવચેતી જોઈએ.
+દાખલા તરીકે,
+જો આને
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad\text{ના સ્થાને}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!D$}
+\DisplayProof
+\]
+\sourcecorrection{OLMD-258}{મૂળના વિકલ્પ-લોપ વૃક્ષમાં $!B$ અને $!C$ની જુદી ધારણાઓ બંનેને $x$ ચિહ્ન આપ્યું છે અને લોપ-નિયમ પર મુક્તિ-ચિહ્નો નથી. અગાઉના N1 નિયમવૃક્ષ પ્રમાણે બીજી ધારણા $y$ અને નિયમ $x,y$ બંનેને મુક્ત કરે છે.}
+તો કટનું
+!!{formula}~$!D$
+ધરાવતો નવો
+કટ ઊભો થઈ
+શકે છે. પરંતુ
+$\depth{!D} < \depth{!B \lor !C}$
+હોવાની કોઈ
+ખાતરી નથી!{}
+તેથી અહીં પણ
+\Intro{\lor}/\Elim{\lor}
+ઘટાડા-રૂપાંતરની
+જેમ આગળ વધવું
+અને તેના
+સ્થાને આ મૂકવું:
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\DisplayProof
+\quad\text{અથવા}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!C$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\DisplayProof
+\]
+
+\end{document}

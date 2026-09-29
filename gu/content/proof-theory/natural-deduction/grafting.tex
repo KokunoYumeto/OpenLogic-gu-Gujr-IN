@@ -1,0 +1,144 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: grafting
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{gra}
+
+\olsection{\usetoken{P}{proof}નું કલમ-જોડાણ}
+
+\Log{N1c} અને~\Log{N1i}માંની
+!!^{proof}s એ ધારણાઓ~$!B$માંથી
+!!{formula}s~$!A$ની !!{proof}s છે.
+માનો કે~$!B$ની પણ !!a{proof} છે.
+તો~$!B$ની !!{proof} અને
+$!B$માંથી~$!A$ની !!{proof}
+જોડીને~$!A$ની એવી
+!!a{proof} કેવી રીતે
+મેળવવી જેમાં~$!B$ની ધારણાનો
+ઉપયોગ ન થતો હોય?
+
+એક વિકલ્પ એ છે કે~\Intro{\lif}
+લગાવી~$!A$ની !!{proof}માંથી
+ધારણા~$!B$ દૂર કરીએ.
+પછી મળેલી~$!B \lif !A$ની
+!!{proof}ને~$!B$ની !!{proof}
+સાથે જોડીને આ મળે:
+\[
+\AxiomC{$\Discharge{!B}{x}$}
+\DeduceC{$!A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !A$}
+\AxiomC{}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!A$}
+\DisplayProof
+\]
+\sourcecorrection{OLMD-224}{મૂળ વૃક્ષમાં અનુસરણ-પ્રવેશનું નિષ્કર્ષ $!B \lif !C$ લખાયું છે; ઉપરની ઉપસાબિતીનું નિષ્કર્ષ $!A$ હોવાથી અહીં $!B \lif !A$ જોઈએ.}
+આ રીત સીધી છે, પણ થોડી
+અકુદરતી લાગે છે: તરત જ
+દૂર કરવાના~$\lif$ને શા માટે
+પહેલાં દાખલ કરવું?
+$!B \lif !A$માંથી પસાર
+થતો આવો ``ચકરાવો''
+ટાળી શકાય એવો હોવો જોઈએ.
+(આવા ચકરાવા હંમેશાં ટાળી
+શકાય છે એ જ સામાન્યીકરણ
+પ્રમેયનો આશય છે.)
+
+\Log{N1c} અને~\Log{N1i}માં
+આ કિસ્સામાં ચકરાવો સહેલાઈથી
+ટાળી શકાય છે: ધારણાઓ~$!B^x$
+જ્યાં આવે ત્યાં~$!B$ની
+આખી !!{proof} મૂકી દઈએ.
+બીજી સાબિતીની ધારણાઓ પર
+!!{proof}sનું આવું
+``કલમ-જોડાણ'' ઉપયોગી છે,
+એટલે તેને વ્યાખ્યા તરીકે
+નોંધીએ છીએ.
+
+\begin{defn}
+જો~$\delta_1$ એ ખુલ્લી
+ધારણા~$!B^x$માંથી~$!A$ની
+\Log{N1c}-!!{proof}
+(અથવા~\Log{N1i}-!!{proof})
+હોય, અને~$\delta_2$ એ~$!B$ની
+\Log{N1c}-!!{proof}
+(\Log{N1i}-!!{proof}) હોય,
+તો~$\delta_1$માંનાં
+મુક્ત ન કરાયેલાં~$!B^x$નાં
+દરેક સ્થાનને~$\delta_2$થી
+બદલવાથી મળતું પરિણામ
+$\Subst{\delta_1}{\delta_2}{!B^x}$
+છે.
+\end{defn}
+
+જો~$\delta_1$ અને~$\delta_2$માં
+જુદાં ધારણા-!!{formula}sને
+એક જ ચિહ્ન ન આપેલું હોય,
+અને~$\delta_2$ની કોઈ ખુલ્લી
+ધારણામાં~$\delta_1$નો
+સ્વનિર્ધારક ચલ ન આવતો હોય,
+તો મળેલી
+$\Subst{\delta_1}{\delta_2}{!B^x}$
+યોગ્ય !!{proof} છે.
+તેની ખુલ્લી ધારણાઓ
+$\delta_1$ તથા~$\delta_2$ની
+ખુલ્લી ધારણાઓ છે.
+!!{proof}sનું કલમ-જોડાણ
+કરતી વખતે આ શરતો સામાન્ય રીતે
+પૂરી થાય છે. $\delta_1$ અને
+$\delta_2$ કોઈ મોટી
+!!{proof}ની ઉપસાબિતીઓ હોય
+તો પહેલી શરત પૂરી થાય છે.
+બીજી શરત પૂરી ન થતી હોય
+તો~$\delta_1$ના સ્વનિર્ધારક
+ચલોનાં નામ બદલીને તેને
+પૂરી કરી શકાય છે.
+
+\Log{N2c} અને~\Log{N2i}
+માટે પણ અનુરૂપ વ્યાખ્યા છે.
+
+\begin{defn}
+જો~$\delta_1$ એ
+$x:!B, \Gamma_1 \Sequent !A$ની
+\Log{N2c}-!!{proof}
+(અથવા~\Log{N2i}-!!{proof})
+હોય, અને~$\delta_2$ એ
+$\Gamma_2 \Sequent !B$ની
+\Log{N2c}-!!{proof}
+(\Log{N2i}-!!{proof}) હોય,
+તો~$\delta_1$માંનાં
+દરેક સ્વયંસિદ્ધ
+$x:!B \Sequent !B$ને
+$\delta_2$થી બદલીને,
+અને એવાં સ્વયંસિદ્ધોની
+નીચે આવતા દરેક સિક્વન્ટના
+સંદર્ભમાં~$\Gamma_2$ ઉમેરવાથી
+મળતું પરિણામ
+$\Subst{\delta_1}{\delta_2}{x:!B}$
+છે.
+\sourcecorrection{OLMD-225}{મૂળની આ N2 વ્યાખ્યામાં $\delta_2$ને ભૂલથી N1c/N1i-સાબિતી કહેવાયું છે; સિક્વન્ટવાળી આધારસાબિતી માટે અનુરૂપ N2c/N2i જોઈએ.}
+\end{defn}
+
+\begin{prop}
+જો $\delta_1 \Proves x:!B, \Gamma_1 \Sequent
+!A$ અને $\delta_2 \Proves \Gamma_2 \Sequent !B$,
+તો, જો~$\delta_1$નો કોઈ
+સ્વનિર્ધારક ચલ~$\Gamma_2$માં
+ન આવતો હોય,
+$\Subst{\delta_1}{\delta_2}{x:!B} \Proves \Gamma_1, \Gamma_2 \Sequent
+!A$.
+\end{prop}
+
+
+\begin{proof}
+  $\pheight{\delta_1}$ પર આગમનથી.
+  \sourcecorrection{OLMD-226}{મૂળની એક-વાક્યીય સાબિતીમાં અપરિભાષિત $\delta$ની ઊંચાઈ લખાઈ છે; પ્રતિજ્ઞાપનમાં આવેલી બદલાતી સાબિતી $\delta_1$ પર આગમનનો આશય છે.}
+\end{proof}
+
+\end{document}

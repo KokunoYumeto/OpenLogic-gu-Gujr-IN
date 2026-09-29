@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0394",
+  "checked_at_utc": "2026-09-27T09:15:43.147765+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0394 Łukasiewicz three-valued logic; state-only draft",
+  "report": {
+    "unit_id": "OLP-0394",
+    "source_path": "content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+    "source_sha256": "fe499a0fa941ad8d370b2f0346660d76aad7b4aad999a54ea88f79cdacc2641a",
+    "draft_path": "private-state\\work\\batch039_draft\\lukasiewicz.tex",
+    "draft_sha256": "4691e1f1afbc7f3ea70db0b41a4e96e49cd2da4a4dcb4c2abc3875c7fa33a2c5",
+    "aligned_blocks": 22,
+    "linguistic_blocks": 17,
+    "source_math_spans_correction_aware": 101,
+    "target_math_spans_after_corrections": 101,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMV-003",
+      "OLMV-004",
+      "OLMV-005",
+      "OLMV-006"
+    ],
+    "source_detector_ascii_tokens": 654,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7,
+      16,
+      21
+    ],
+    "seven_truth_tables_cell_and_order_exact": true,
+    "prose_scan_tabular_exception": "seven parity-verified tables removed from prose scan; their column codes are structural TeX",
+    "modal_last_value_verified_from_tables": "False"
+  },
+  "status": "draft_linguistic_math_table_and_visible_source_correction_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

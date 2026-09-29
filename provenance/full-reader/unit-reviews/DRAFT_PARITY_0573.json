@@ -1,0 +1,94 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0573",
+  "checked_at_utc": "2026-09-28T02:07:45.281090+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0573 finite axiomatizability of ZF and a flagged gap in the finite-Z-extension proof; state-only draft",
+  "report": {
+    "unit_id": "OLP-0573",
+    "source_path": "content/set-theory/replacement/finiteaxiomatizability.tex",
+    "source_sha256": "31413d0ed7d34d8cd7ee45cbf8f137fb28c954de9ed84ef6bed96f502fad4cf4",
+    "draft_path": "private-state\\work\\batch044_draft\\replacement-finiteaxiomatizability.tex",
+    "draft_sha256": "00290ad655105d493466e41aa04b412016b35faeecfed76d567d2ffccc1029a3",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 59,
+    "target_math_spans_after_corrections": 59,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-125",
+      "OLMD-126",
+      "OLMD-127"
+    ],
+    "source_detector_ascii_tokens": 316,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "(N\\text{ is transitive})^N",
+        "(N\\text{ is transitive})^M"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-ref.tex",
+        "sha256": "a30e46ee74ad749a3b8b6649bdd41678caef7a7eac88c5e417a13a2af7b8c5a1",
+        "terms": [
+          "\\ollabel{reflectionschema}",
+          "પ્રતિબિંબન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-refproofs.tex",
+        "sha256": "59ffa777cf0c76bd7e19f108264661fabf8aeb08f95007fe18de0d5e18d78ff8",
+        "terms": [
+          "પરંપરિત",
+          "\\phi^S"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-strength.tex",
+        "sha256": "03f286c59d3b3c75a84b22f1a0dc200e6cb82bbf5ee4354bcd801a8a48cca94a",
+        "terms": [
+          "V_{\\omega+\\omega}",
+          "\\ZF"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-absinf.tex",
+        "sha256": "5cc5ecf0f6f33c30790b4fb0836cd7ce9bc6c7861615df4354abdb8f536290b0",
+        "terms": [
+          "\\olref[ordinals][ordtype]{thmOrdinalRepresentation}",
+          "કડક રીતે વધુ શક્તિશાળી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The first theorem is a metatheoretic claim about ZF, not a sentence asserted within ZF; the finite language restriction is preserved.",
+      "OLMD-125 changes only the ambient relativization superscript of N's transitivity clause from N to M, matching the expansion of (exists N psi(N))^M.",
+      "OLMD-126 gives a concrete counterexample to the second proof's claimed schema: omega is transitive, A=3 belongs to omega, and {0,2}, selected by a formula with parameter 2, is not in omega.",
+      "The second proposition, its exercise and the final strict-strength comparison remain source claims with an open supplied-proof gap; the translation does not assert their falsity or a substitute proof.",
+      "English words inside inherited TeX text and intertext nodes remain exact mathematical-display annotations; inactive source comments remain frozen and are not reader-facing Gujarati prose.",
+      "All three exercises, their formula identifiers, and the final conditional consistency qualifier are preserved."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\label{Mpsi}",
+        "count": 1,
+        "reason": "The frozen equation label is a structural cross-reference identifier."
+      },
+      {
+        "literal": "\\eqref{Mpsi}",
+        "count": 2,
+        "reason": "Two references to the same frozen equation label are structural identifiers."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

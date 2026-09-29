@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0561",
+  "checked_at_utc": "2026-09-28T01:28:10.961833+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0561 basic cumulative stage properties and stage self-nonmembership; state-only draft",
+  "report": {
+    "unit_id": "OLP-0561",
+    "source_path": "content/set-theory/spine/stagesbasics.tex",
+    "source_sha256": "055948a696b012f7bf5b0a6e9ac39297a0a910f6c17ca9580782e9795e87def6",
+    "draft_path": "private-state\\work\\batch044_draft\\spine-stagesbasics.tex",
+    "draft_sha256": "5e15f7e4331eb426db2c4be011214573ad87dbe96fc7972577a32455979782f3",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 14,
+    "source_math_spans_correction_aware": 66,
+    "target_math_spans_after_corrections": 66,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 311,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-idea.tex",
+        "sha256": "0e754ebf889a7583c9fdc1e27df41a53e46cf4989d628f28653470d12ccfc801",
+        "terms": [
+          "તબક્કાઓ",
+          "પદાનુક્રમ",
+          "\\Pow"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cumulative-approach.tex",
+        "sha256": "406d630c98b96fba4eb2edf4ed84703d9e58fa92ec4c71cf643ba90bd11f56ee",
+        "terms": [
+          "સંચયી-પુનરાવર્તી",
+          "તબક્કાઓ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-basic.tex",
+        "sha256": "04651b060194f7d1566c1b81a0f5ab73b80a6d025107ba0db0a280141af07554",
+        "terms": [
+          "ત્રિવિકલ્પતા",
+          "પરંપરિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+        "sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+        "terms": [
+          "સીમા ક્રમવાચક",
+          "અનુગામી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-milestone.tex",
+        "sha256": "a27682872d729b00a6f6559cc63b06b349843e52490466673e5fa217dbe071cb",
+        "terms": [
+          "\\ZFminus",
+          "પ્રતિસ્થાપન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "ઉપગણ-સંવૃત is transparently defined by the exact iff formula, not passed off as an attested standard Gujarati translation of Button's nonstandard potent.",
+      "The simultaneous induction keeps all three properties separate; the successor proof uses transitivity of V-beta and the limit proof uses union preservation.",
+      "The source's rhetorical 'Conversely' in the self-nonmembership lemma is rendered as contrapositive, the actual logical move, without altering a formula.",
+      "The final interpretation retains the unresolved justification of Replacement and does not call ZFminus a complete published theory."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\Olref{Valphabasicprops}",
+        "count": 1,
+        "reason": "Frozen capitalized cross-reference macro retained exactly with its structural label."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

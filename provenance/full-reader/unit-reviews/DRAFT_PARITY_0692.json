@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0692",
+  "checked_at_utc": "2026-09-28T22:54:40.542470+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0692 Auxiliary tN2ip term-labeled natural-deduction rules; state-only draft",
+  "report": {
+    "unit_id": "OLP-0692",
+    "source_path": "content/proof-theory/propositions-as-types/rules-tN2.tex",
+    "source_sha256": "028e19b146423187a4a0057fee449ac084cdfc3c987f0a366787784aa64a2ee2",
+    "draft_path": "private-state\\work\\batch044_draft\\rules-tN2.tex",
+    "draft_sha256": "c4f7e9aa8548e5eeb90616dac5f7e3cd685bc5c98a9081d841712791f0886394",
+    "aligned_blocks": 5,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 23,
+    "target_math_spans_after_corrections": 23,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 12,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\natural-deduction-introduction.tex",
+        "sha256": "bed9868a3afe599a17b1ad11aeb4566fe4b2d8a6154f33809fe52f10a0b77744",
+        "terms": [
+          "અંતઃપ્રજ્ઞાવાદી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-terms.tex",
+        "sha256": "04a94a8e5015bcd50bd4827a2b6e0e46a9781ceb8422bf643e107220a74c6a9c",
+        "terms": [
+          "પદથી ચિહ્નિત"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\begin{tabular}{@{}c@{}c@{}}",
+        "count": 1
+      },
+      {
+        "literal": "\\begin{tabular}[b]{@{}l@{}}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

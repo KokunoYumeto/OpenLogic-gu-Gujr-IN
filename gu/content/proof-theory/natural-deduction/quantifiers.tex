@@ -1,0 +1,336 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{qua}
+
+\olsection{નિયમિત \usetoken{P}{proof} અને પ્રતિસ્થાપન}
+
+પરિમાણકોના નિયમોમાં
+\Elim{\lexists} અને
+\Intro{\lforall}ને લાગતી
+``સ્વનિર્ધારક ચલની શરતો''
+ને કારણે કેટલીક મુશ્કેલીઓ
+ઊભી થાય છે. આ અનુમાનોમાં
+આવતો !!{constant}~$c$
+ફરી કદી ન વપરાય એ
+સુનિશ્ચિત કરીએ તો
+મોટાભાગની મુશ્કેલીઓ
+ઉકેલી શકાય છે.
+આ માટે નીચેની વ્યાખ્યા લો.
+
+\begin{defn}
+સ્વાભાવિક નિગમનની
+!!{proof}~$\delta$
+\emph{નિયમિત} છે, જો
+\begin{enumerate}
+  \item કોઈ સ્વનિર્ધારક ચલ~$a$
+  એકથી વધુ \Elim{\lexists}
+  અથવા~\Intro{\lforall}
+  અનુમાનમાં સ્વનિર્ધારક ચલ
+  તરીકે ન વપરાતો હોય, અને
+  \item જો~$a$ કોઈ
+  \Elim{\lexists} અથવા
+  \Intro{\lforall} અનુમાનનો
+  સ્વનિર્ધારક ચલ હોય,
+  તો તે અનુક્રમે ગૌણ
+  આધારવિધાન અથવા આધારવિધાન
+  સુધી પહોંચતી તાત્કાલિક
+  ઉપ-!!{proof}માં જ આવતો હોય.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular}
+જો~$\delta$ નિયમિત હોય,
+તેનો અંત~$!C$માં થતો હોય,
+$c$ એવો !!a{constant} હોય
+જે~$\delta$માં સ્વનિર્ધારક
+ચલ તરીકે વપરાયો ન હોય,
+અને~$t$ એવું પદ હોય
+જેમાં~$\delta$નો કોઈ
+સ્વનિર્ધારક ચલ ન હોય,
+તો~$\delta$માં~$c$ના
+દરેક સ્થાનને~$t$થી
+બદલવાથી મળતી
+$\Subst{\delta}{t}{c}$
+નિયમિત !!{proof} છે.
+$\Subst{\delta}{t}{c}$નું
+અંતિમ-!!{formula}
+$\Subst{!C}{t}{c}$ છે.
+જો~$!A^x$ એ~$\delta$ની
+ખુલ્લી ધારણા હોય, તો
+$\Subst{!A}{t}{c}^x$ એ
+$\Subst{\delta}{t}{c}$ની
+ખુલ્લી ધારણા છે.
+\end{lem}
+
+\begin{proof}
+  $\pheight{\delta}$ પર
+  આગમન કરીએ.
+  જો~$\pheight{\delta} = 0$,
+  તો તેમાં માત્ર
+  ધારણા~$!A^x$ છે.
+  ત્યારે~$\Subst{\delta}{t}{c}$
+  એ~$\Subst{!A}{t}{c}^x$ છે.
+
+જો~$\pheight{\delta} > 0$,
+  તો~$\delta$ના છેલ્લા
+  અનુમાન પ્રમાણે કિસ્સા
+  જુદા પાડીએ.
+  વિધાનાત્મક સંયોજકોના
+  નિયમોના કિસ્સા સહેલા છે
+  અને કસરત તરીકે રાખ્યા છે.
+  અહીં~$\delta$નો અંત
+  પરિમાણક-અનુમાનમાં થાય
+  તે કિસ્સા જોઈએ.
+  \begin{enumerate}
+    \item છેલ્લું અનુમાન
+    $\Intro{\lforall}$ હોય,
+    તો~$\delta$નું સ્વરૂપ
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$!A(a,c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,c)]$}
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $\Subst{\delta'}{t}{c}$
+    એ~$!A(a,t)$ની નિયમિત
+    !!{proof} છે.
+    $a$ એ~$\delta$નો
+    સ્વનિર્ધારક ચલ હોવાથી
+    $t$માં~$a$ આવતો નથી.
+    તેથી~$\Subst{\delta}{t}{c}$નું
+    છેલ્લું અનુમાન,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$!A(a,t)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,t)]$}
+    \DisplayProof
+    \]
+    યોગ્ય છે: $t$માં~$a$
+    ન હોવાથી નિષ્કર્ષમાં
+    કે કોઈ ખુલ્લી ધારણામાં
+    $a$ આવતો નથી.
+    \item છેલ્લું અનુમાન
+    $\Elim{\lforall}$ હોય,
+    તો~$\delta$નું સ્વરૂપ
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$\lforall[x][!A(x,c)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(c),c)$}
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $\Subst{\delta'}{t}{c}$
+    એ~$\lforall[x][!A(x,t)]$ની
+    નિયમિત !!{proof} છે.
+    (નિષ્કર્ષમાંનું
+    પદ~$s(c)$, $c$ ધરાવતું
+    હોય પણ શકે અને ન પણ હોય.)
+    $\Subst{\delta}{t}{c}$નું
+    છેલ્લું અનુમાન,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$\lforall[x][!A(x,t)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(t),t)$}
+    \DisplayProof
+    \]
+    યોગ્ય છે, અને
+    $!A(s(t),t) \ident \Subst{!A(s(c),c)}{t}{c}$.
+    \Intro{\lexists}નો
+    કિસ્સો આને સમાન છે.
+  \item છેલ્લું અનુમાન
+    $\Elim{\lexists}$ હોય,
+    તો~$\delta$નું સ્વરૂપ
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_1'$}
+    \DeduceC{$\lexists[x][!A(x,c)]$}
+    \AxiomC{$\Discharge{!A(a,c)}{x}$}
+    \RightLabel{$\delta_2'$}
+    \DeduceC{$!C$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$!C$}
+    \DisplayProof
+    \]
+    આગમન-પરિકલ્પનાથી
+    $\Subst{\delta_1'}{t}{c}$
+    અને~$\Subst{\delta_2'}{t}{c}$
+    અનુક્રમે
+    $\lexists[x][!A(x,t)]$ની
+    અને ખુલ્લી ધારણા
+    $!A(a,t)$માંથી
+    $\Subst{!C}{t}{c}$ની
+    નિયમિત !!{proof}s છે.
+    $a$ એ~$\delta$નો
+    સ્વનિર્ધારક ચલ હોવાથી
+    $t$માં~$a$ આવતો નથી.
+    આથી~$\Subst{\delta}{t}{c}$નું
+    છેલ્લું અનુમાન,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_1'}{t}{c}$}
+    \DeduceC{$\lexists[x][!A(x,t)]$}
+    \AxiomC{$\Discharge{!A(a,t)}{x}$}
+    \RightLabel{$\Subst{\delta_2'}{t}{c}$}
+    \DeduceC{$\Subst{!C}{t}{c}$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$\Subst{!C}{t}{c}$}
+    \DisplayProof
+    \]
+    યોગ્ય છે:
+    $\Subst{!A(x,t)}{a}{x} \ident \Subst{!A(a,c)}{t}{c}$,
+    અને નિષ્કર્ષ
+    $\Subst{!C}{t}{c}$માં
+    કે કોઈ ખુલ્લી ધારણામાં
+    $a$ આવતો નથી.
+    \sourcecorrection{OLMD-228}{મૂળના અસ્તિત્વ-નિવારણ કિસ્સામાં પ્રતિસ્થાપિત પહેલા નિષ્કર્ષમાં $c$ જ રહી ગયું છે, બીજા નિષ્કર્ષમાં $C$નું પ્રતિસ્થાપન છૂટ્યું છે અને અંતિમ વૃક્ષ ભૂલથી સર્વમાન્યક-પરિચયનું છે; અહીં બંને પ્રતિસ્થાપિત ઉપસાબિતીથી અસ્તિત્વ-નિવારણનું યોગ્ય વૃક્ષ મૂક્યું છે.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\ollabel{prop:regular}
+જો~$\delta$ એ~\Log{N1c}
+અથવા~\Log{N1i}માંની
+!!a{proof} હોય,
+તો એ જેવી જ
+રચના ધરાવતી
+(ખાસ કરીને સરખી
+!!{height} ધરાવતી)
+નિયમિત !!{proof}~$\delta'$
+છે, જે~$\delta$થી
+માત્ર સ્વનિર્ધારક ચલો
+બદલવામાં જુદી પડે છે.
+\end{prop}
+
+\begin{proof}
+આ સાબિતી માટે~$\delta$માંના
+સ્વનિર્ધારક ચલ ધરાવતા
+અનુમાનને \emph{સ્વચ્છ}
+કહીએ, જો તેનો સ્વનિર્ધારક
+ચલ બીજા કોઈ અનુમાનનો
+સ્વનિર્ધારક ચલ ન હોય
+અને તે આ અનુમાનની
+તાત્કાલિક ઉપ-!!{proof}
+સિવાય~$\delta$માં ક્યાંય
+ન આવતો હોય; નહિતર તેને
+\emph{અસ્વચ્છ} કહીએ.
+$n$ એ~$\delta$માંનાં
+અસ્વચ્છ અનુમાનોની સંખ્યા
+હોય. $n$ પર આગમનથી
+બતાવીશું કે~$\delta$ને
+જરૂરી નિયમિત
+!!{proof}~$\delta'$માં
+ફેરવી શકાય છે.
+જો~$n=0$, તો~$\delta$નાં બધાં
+સ્વનિર્ધારક ચલવાળાં અનુમાનો
+સ્વચ્છ છે, એટલે~$\delta$
+નિયમિત છે અને કંઈ સાબિત
+કરવાનું રહેતું નથી.
+નહિતર સૌથી ઉપરનું
+અસ્વચ્છ સ્વનિર્ધારક ચલવાળું
+અનુમાન પસંદ કરો;
+માનો કે તે~\Intro{\lforall}
+છે. તેનામાં પૂરી થતી
+$\delta$ની
+ઉપ-!!{proof}~$\delta_1$
+આ સ્વરૂપની છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!A(c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+$c$ સ્વનિર્ધારક ચલ હોવાથી
+તે~$\lforall[x][!A(x)]$માં
+કે કોઈ ખુલ્લી ધારણામાં
+આવતો નથી.
+તેમાં અસ્વચ્છ
+સ્વનિર્ધારક ચલવાળું અનુમાન
+નથી, તેથી~$\delta_2$
+નિયમિત છે. વળી પસંદ કરેલો
+ચલ તેના કોઈ અનુમાનનો
+સ્વનિર્ધારક ચલ નથી;
+હોય તો તે અનુમાન પણ
+અસ્વચ્છ બનત.
+\sourcecorrection{OLMD-229}{મૂળમાં સૌથી ઉપરનું કોઈ પણ સ્વનિર્ધારક-ચલવાળું અનુમાન પસંદ થાય છે અને ઉપરની ઉપસાબિતીમાં આવાં અનુમાનો જ નથી એમ કહેવાયું છે; આગમન માટે સૌથી ઉપરનું \emph{અસ્વચ્છ} અનુમાન જોઈએ, જેથી તેની ઉપર સ્વચ્છ અનુમાનો રહી શકે પણ ઉપસાબિતી નિયમિત રહે.}
+$\delta$માં ન આવતો
+!!a{constant}~$a$ લો.
+\olref{lem:subst-regular}થી
+$\Subst{\delta_2}{a}{c}$
+એ~$!A(a)$ની નિયમિત
+સાબિતી છે.
+સ્વનિર્ધારક ચલની શરતથી
+$\delta_2$ની કોઈ ખુલ્લી
+ધારણામાં~$c$ નથી,
+તેથી~$\Subst{\delta_2}{a}{c}$ની
+કોઈ ખુલ્લી ધારણામાં~$a$
+નથી. આથી~$\Intro{\lforall}$
+લાગુ કરી શકાય છે.
+જો~$\delta$માં
+$\delta_1$ને બદલે
+સાબિતી~$\delta_1'$ મૂકીએ,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_2}{a}{c}$}
+    \DeduceC{$!A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+તો અસ્વચ્છ સ્વનિર્ધારક
+ચલવાળું અનુમાન સ્વચ્છ
+અનુમાનથી બદલાયું છે,
+અને ફરક માત્ર
+સ્વનિર્ધારક ચલ~$c$ની
+જગ્યાએ~$a$ મૂકવાનો છે.
+મળેલી સાબિતીમાં
+વધુમાં વધુ~$n-1$
+અસ્વચ્છ સ્વનિર્ધારક
+ચલવાળાં અનુમાનો છે;
+આગમન-પરિકલ્પનાથી
+પરિણામ મળે છે.
+\sourcecorrection{OLMD-230}{મૂળમાં અસ્વચ્છ અનુમાનોની સંખ્યા ચોક્કસ $n-1$ થાય છે એમ કહેવાયું છે; તાજા ચલથી બીજાં અનુમાનો પણ સ્વચ્છ થઈ શકે, તેથી આગમન માટે જરૂરી વધુમાં વધુ $n-1$ દાવો લખ્યો છે.}
+\end{proof}
+
+\begin{prob}
+\olref{prop:regular}ની
+સાબિતીમાં સૌથી ઉપરનું
+અસ્વચ્છ સ્વનિર્ધારક
+ચલવાળું અનુમાન~\Elim{\lexists}
+હોય તે કિસ્સો વર્ણવો.
+\end{prob}
+
+હમણાં સાબિત કરેલી
+પ્રતિજ્ઞાપનનો સ્પષ્ટ
+ઉલ્લેખ હવે નહીં કરીએ;
+પણ ચર્ચામાં આવતી
+બધી !!{proof}s નિયમિત
+છે એમ માનીશું.
+નિયમિત ન હોય તો
+સ્વનિર્ધારક ચલો બદલીને
+તેમને નિયમિત બનાવી
+શકાય છે.
+
+\Olref{lem:subst-regular}
+અને~\olref{prop:regular}
+\Log{N2c} તથા~\Log{N2i}
+માટે પણ સાચાં છે.
+તેમની સાબિતીઓ કસરત
+તરીકે રાખીએ છીએ.
+
+\end{document}

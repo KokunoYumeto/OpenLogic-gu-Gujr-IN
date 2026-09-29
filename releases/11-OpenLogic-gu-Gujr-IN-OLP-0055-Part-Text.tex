@@ -1,0 +1,1007 @@
+% આ ભાગનો પૂર્ણ સંપાદનીય પાઠ છે. શૈલી, ફોન્ટ, ચિત્રો અને પ્રકરણસંદર્ભ માટે સંપૂર્ણ સ્રોત ZIP તથા reader/full-reader.tex જુઓ. આ એકલી સ્વતંત્ર કમ્પાઇલ થતી મુખ્ય ફાઇલ નથી.
+
+% BEGIN OLP-0055
+\olpart{pl}{વિધાનાત્મક તર્કશાસ્ત્ર}
+\phantomsection\label{guunit:OLP-0055}
+
+
+\begin{editorial}
+  આ ભાગમાં શાસ્ત્રીય વિધાનાત્મક તર્કશાસ્ત્રની સામગ્રી છે. પ્રથમ પ્રકરણ
+  પ્રમાણમાં પ્રાથમિક છે અને તેમાં માત્ર વ્યાખ્યાઓ અને પરિણામોની યાદી છે;
+  ઘણી સાબિતીઓ કરી નથી, પણ અભ્યાસપ્રશ્નો તરીકે છોડી છે. પ્રમાણપદ્ધતિઓ
+  અને પૂર્ણતા પ્રમેયની સામગ્રી પ્રથમ-ક્રમ તર્કશાસ્ત્રના ભાગમાંથી,
+  ``FOL'' ટૅગને false રાખીને, સામેલ કરી છે. તેથી વિધેયો, પદો અને
+  પરિમાણકોને લગતું બધું રહી જાય છે અને સંરચનાઓ~$\Struct{M}$ની
+  વાતને બદલે સત્યમૂલ્ય-નિયુક્તિઓ~$\pAssign{v}$ની વાત આવે છે.
+
+  આ ભાગને આગળ વધારીને વધુ વિગત ઉમેરવાની અને સત્યતાફલનલક્ષી પૂર્ણતા
+  જેવા બીજા વિષયો તથા પરિણામો સામેલ કરવાની યોજના છે.
+\end{editorial}
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0056
+\olchapter{pl}{syn}{વાક્યરચના અને અર્થવિચાર}
+\olchapterid{pl}{syn}
+\phantomsection\label{guunit:OLP-0056}
+
+
+\begin{editorial}
+  આ માત્ર વ્યાખ્યાઓનો બહુ ટૂંકો સાર છે. સૂત્રો પર અનુમાન વડે થતી
+  સાબિતીઓનો સહેલો પરિચય અને ઘણાં વધુ ઉદાહરણો આપીને તેને વિસ્તૃત
+  કરવો જોઈએ.
+\end{editorial}
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0057
+\olfileid{pl}{syn}{int}
+
+\olsection{પરિચય}
+\phantomsection\label{guunit:OLP-0057}
+
+
+વિધાનાત્મક તર્કશાસ્ત્રમાં $\lnot$, $\land$, $\lor$, $\lif$ અને
+$\liff$ એ વિધાનાત્મક સંયોજકો વડે પ્રતિજ્ઞાપન ચલોમાંથી
+બનાવેલાં સૂત્રોનો અભ્યાસ થાય છે. સહજ રીતે કહીએ તો,
+પ્રતિજ્ઞાપન ચલ~$p$ સત્ય કે અસત્ય હોઈ શકે એવા વાક્ય
+અથવા વિધાનને રજૂ કરે છે. સૂત્રમાંના પ્રતિજ્ઞાપન ચલનું
+``સત્યમૂલ્ય'' નક્કી થાય એટલે વિધાનાત્મક સંયોજકો વડે તેમાંથી બનાવેલાં
+સૂત્રોનું સત્યમૂલ્ય પણ નક્કી થાય છે. આપણે
+વિધાનાત્મક તર્કશાસ્ત્રને \emph{સત્યતાફલનલક્ષી} કહીએ છીએ, કારણ કે તેનો
+અર્થવિચાર સત્યમૂલ્યોનાં વિધેયો વડે અપાય છે. ખાસ કરીને, વિધાનાત્મક
+તર્કશાસ્ત્રમાં સત્ય અને અસત્યના બીજા કોઈ નિર્ધારણને ધ્યાનમાં લેતા નથી;
+દાખલા તરીકે, કોઈ વાત માત્ર સંજોગવશાત્ સત્ય હોવાને બદલે અનિવાર્યપણે
+સત્ય છે કે નહિ, તે સત્ય છે એવું જાણીતું છે કે નહિ, અથવા તે હમણાં
+સત્ય છે કે પહેલાં સત્ય હતી કે પછી સત્ય થશે. આપણે માત્ર સત્ય
+($\True$) અને અસત્ય ($\False$) એ બે સત્યમૂલ્યો લઈએ છીએ; એટલે કોઈ
+કથન ન તો સત્ય ન તો અસત્ય, અથવા માત્ર અડધું સત્ય હોઈ શકે એવી શક્યતા
+ચર્ચામાંથી બહાર રાખીએ છીએ. વળી, આપણે માત્ર એવા સંયોજકો પર ધ્યાન
+આપીએ છીએ જેમનાથી બનેલા સૂત્રનું સત્યમૂલ્ય તેના ભાગોનાં
+સત્યમૂલ્યો વડે સંપૂર્ણપણે નક્કી થાય છે (અને, માનો કે, તેના અર્થ વડે
+નહિ). ખાસ કરીને, અંગ્રેજી ભાષાનાં શરતી વાક્યોનું સત્યમૂલ્ય આ અર્થમાં
+સત્યતાફલનલક્ષી છે કે નહિ તે વિવાદાસ્પદ છે. સત્યમૂલ્યલક્ષી પ્રેરણ
+$\lif$ એવું છે; બીજા તર્કશાસ્ત્રો સત્યતાફલનલક્ષી ન હોય એવાં શરતી
+વિધાનોનો અભ્યાસ કરે છે.
+
+સત્યતાફલનલક્ષી વિધાનાત્મક તર્કશાસ્ત્રનો સિદ્ધાંત અને અધિસિદ્ધાંત
+વિકસાવવા માટે પહેલાં તેના પદોની વાક્યરચના અને અર્થવિચાર વ્યાખ્યાયિત
+કરવાં પડે. સંયોજકો વડે પ્રતિજ્ઞાપન ચલોમાંથી
+સૂત્રો રચવાની એક રીત આપણે વર્ણવીશું. બીજી વ્યાખ્યાઓ પણ શક્ય
+છે. બીજી પદ્ધતિઓ જુદા સંકેતો પસંદ કરશે, સંયોજકોના જુદા ગણને મૂળભૂત
+ગણશે અને કૌંસ જુદી રીતે વાપરશે (અથવા કહેવાતી પોલિશ સંજ્ઞાપદ્ધતિની
+જેમ જરા પણ નહિ વાપરે). છતાં, બધી રીતોમાં એક વાત સામાન્ય છે: રચનાના
+નિયમો સૂત્રોના ગણને \emph{અનુમાનાત્મક રીતે} વ્યાખ્યાયિત કરે છે.
+નિયમો યોગ્ય રીતે આપ્યા હોય, તો દરેક પદ રચનાના નિયમો અનુસાર મૂળભૂત રીતે
+એક જ રીતે બની શકે. પદોને \emph{એકમાત્ર વાંચી શકાય} એવી અનુમાનાત્મક
+વ્યાખ્યા મળવાથી એ જ રીત---અનુમાનાત્મક વ્યાખ્યા---વાપરીને આપણે આ
+પદોને અર્થ આપી શકીએ છીએ.
+
+પદોને અર્થ આપવાનું ક્ષેત્ર અર્થવિચાર છે. વિધાનાત્મક તર્કશાસ્ત્રના
+અર્થવિચારમાં સત્યમૂલ્ય-નિયુક્તિમાં થતો સંતોષ મુખ્ય ખ્યાલ છે.
+સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ પ્રતિજ્ઞાપન ચલોને સત્યમૂલ્યો
+$\True$, $\False$ નિયુક્ત કરે છે. દરેક સત્યમૂલ્ય-નિયુક્તિ, દરેક
+સૂત્ર~$!A$ માટે સત્યમૂલ્ય $\pValue{v}(!A)$ નક્કી કરે છે.
+$\pValue{v}(!A)=\True$ હોય તો અને તો જ સૂત્ર,
+સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$માં સંતોષાય છે---આને આપણે
+$\pSat{v}{!A}$ તરીકે લખીએ છીએ. આ સંબંધને પણ $!A$ની રચના પર અનુમાન
+વડે વ્યાખ્યાયિત કરી શકાય છે: તાર્કિક સંયોજકોનાં સત્યવિધેયો વાપરીને,
+માનો કે, $!A\land !B$નો સંતોષ $!A$ અને $!B$ના સંતોષ (અથવા
+અસંતોષ)ના આધારે વ્યાખ્યાયિત થાય છે.
+
+વાક્યો માટેના સંતોષસંબંધ $\pSat{v}{!A}$ને આધારે પછી આપણે પુનરુક્તિ,
+ફલિતતા અને સંતોષ્યતાના મૂળ અર્થવિચારી ખ્યાલો વ્યાખ્યાયિત કરી શકીએ
+છીએ. દરેક સત્યમૂલ્ય-નિયુક્તિ તેને સંતોષે, એટલે કે દરેક $\pAssign{v}$ માટે
+$\pValue{v}(!A)=\True$ હોય, તો સૂત્ર પુનરુક્તિ છે અને આપણે
+$\Entails !A$ લખીએ છીએ. જો $\Gamma$નાં બધાં સૂત્રોને સંતોષતું
+દરેક સત્યમૂલ્ય-નિયુક્તિ, $!A$ને પણ સંતોષે, તો સૂત્રોનો ગણ તેને
+ફલિત કરે છે અને આપણે $\Gamma\Entails !A$ લખીએ છીએ. અને કોઈ એક
+સત્યમૂલ્ય-નિયુક્તિ, સૂત્રોના ગણમાંનાં બધાં સૂત્રોને એકસાથે સંતોષે તો
+તે ગણ સંતોષ્ય છે. સૂત્રો અનુમાનાત્મક રીતે વ્યાખ્યાયિત છે અને
+સંતોષ પણ સૂત્રોની રચના પર અનુમાન વડે વ્યાખ્યાયિત થાય છે; તેથી
+અર્થવિચારના ગુણધર્મો સાબિત કરવા અને વ્યાખ્યાયિત અર્થવિચારી ખ્યાલોને
+પરસ્પર જોડવા આપણે અનુમાન વાપરી શકીએ છીએ.
+% END OLP-0057
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0058
+\olfileid{pl}{syn}{fml}
+
+\olsection{વિધાનાત્મક સૂત્રો}
+\phantomsection\label{guunit:OLP-0058}
+
+
+વિધાનાત્મક તર્કશાસ્ત્રનાં સૂત્રો,
+\emph{પ્રતિજ્ઞાપન ચલો}માંથી,
+  વિધાનાત્મક અચળ~$\lfalse$
+    અને વિધાનાત્મક અચળ~$\ltrue$ \emph{તાર્કિક સંયોજકો} વડે
+રચાય છે.
+
+\begin{enumerate}
+\item પ્રતિજ્ઞાપન ચલો $\Obj p_0$, $\Obj p_1$, \dots નો
+  ગણનીય ગણ~$\PVar$.
+\item અસત્ય માટેનો વિધાનાત્મક અચળ~$\lfalse$.
+\item સત્ય માટેનો વિધાનાત્મક અચળ~$\ltrue$.
+\item તાર્કિક સંયોજકો:
+  \startycommalist
+  \ycomma $\lnot$ (નિષેધ)%
+  \ycomma $\land$ (સંયોજન)%
+  \ycomma $\lor$ (વિયોજન)%
+  \ycomma $\lif$ (પ્રેરણ)%
+  \ycomma $\liff$ (દ્વિમુખી પ્રેરણ)%
+\item વિરામચિહ્નો: (, ) અને અલ્પવિરામ.
+\end{enumerate}
+
+વિધાનાત્મક તર્કશાસ્ત્રની આ ભાષાને આપણે $\Lang L_0$થી દર્શાવીએ છીએ.
+
+.
+
+
+
+
+\begin{intro}
+ઉપર આપણે વાપર્યાં તેનાથી જુદી પરિભાષા અને સંકેતોથી તમે પરિચિત હોઈ
+શકો. તર્કશાસ્ત્રનાં પુસ્તકો (અને શિક્ષકો) ``નિષેધ'' માટે સામાન્ય રીતે
+$\sim$, $\neg$ અને~!\; તથા ``સંયોજન'' માટે $\wedge$, $\cdot$ અને
+$\&$માંથી કોઈ સંકેત વાપરે છે. ``શરતી વિધાન'' અથવા ``પ્રેરણ'' માટે
+સામાન્ય સંકેતો $\rightarrow$, $\Rightarrow$ અને $\supset$ છે.
+``દ્વિશરતી વિધાન'', ``દ્વિમુખી પ્રેરણ'' અથવા
+  ``(સત્યમૂલ્યલક્ષી) સમતુલ્યતા'' માટે $\leftrightarrow$,
+  $\Leftrightarrow$ અને $\equiv$ વપરાય છે.
+$\lfalse$ સંકેતને જુદી જગ્યાએ ``અસત્યતા'',
+  ``ફાલ્સમ'', ``અસંગતિ'' અથવા ``તળિયું'' કહે છે.
+$\ltrue$ સંકેતને જુદી જગ્યાએ ``સત્ય'',
+  ``વેરમ'' અથવા ``ટોચ'' કહે છે.
+\end{intro}
+
+\begin{defn}[સૂત્ર]
+\ollabel{defn:formulas}
+વિધાનાત્મક તર્કશાસ્ત્રનાં \emph{સૂત્રો}નો ગણ~$\Frm[L_0]$
+નીચે પ્રમાણે અનુમાનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item $\lfalse$ એ આણ્વિક સૂત્ર છે.
+
+\item $\ltrue$ એ આણ્વિક સૂત્ર છે.
+
+\item દરેક પ્રતિજ્ઞાપન ચલ~$\Obj p_i$ આણ્વિક
+  સૂત્ર છે.
+
+\item જો $!A$ સૂત્ર હોય, તો $\lnot !A$ પણ
+  સૂત્ર છે.
+
+\item જો $!A$ અને $!B$ સૂત્રો હોય, તો $(!A \land
+  !B)$ પણ સૂત્ર છે.
+
+\item જો $!A$ અને $!B$ સૂત્રો હોય, તો $(!A \lor !B)$
+  પણ સૂત્ર છે.
+
+\item જો $!A$ અને $!B$ સૂત્રો હોય, તો $(!A \lif !B)$
+  પણ સૂત્ર છે.
+
+\item જો $!A$ અને $!B$ સૂત્રો હોય, તો $(!A \liff !B)$
+  પણ સૂત્ર છે.
+
+\item બીજું કશું સૂત્ર નથી.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+સૂત્રોની વ્યાખ્યા \emph{અનુમાનાત્મક વ્યાખ્યા} છે. મૂળભૂત રીતે,
+આપણે સૂત્રોનો ગણ અનંત સંખ્યામાં તબક્કાઓમાં રચીએ છીએ. પહેલા
+તબક્કામાં બધાં આણ્વિક સૂત્રોને સૂત્ર જાહેર કરીએ છીએ; આ વ્યાખ્યાના
+પહેલા થોડા કિસ્સાઓ, એટલે કે
+$\ltrue$, %
+$\lfalse$, %
+$\Obj p_i$ના કિસ્સાઓને અનુરૂપ છે. તેથી ``આણ્વિક સૂત્ર''નો અર્થ
+આ સ્વરૂપનું કોઈ પણ સૂત્ર થાય છે.
+
+વ્યાખ્યાના બીજા કિસ્સાઓ અગાઉથી રચેલાં સૂત્રોમાંથી નવાં
+સૂત્રો રચવાના નિયમો આપે છે. બીજા તબક્કામાં આણ્વિક
+સૂત્રોમાંથી સૂત્રો રચવા આપણે એ નિયમો વાપરી શકીએ છીએ.
+ત્રીજા તબક્કામાં આણ્વિક સૂત્રો અને બીજા તબક્કામાં મળેલાં સૂત્રોમાંથી
+નવાં સૂત્રો રચીએ છીએ, અને આમ આગળ ચાલે છે. આવા કોઈ તબક્કે છેવટે
+રચાતી દરેક વસ્તુ, અને માત્ર એવી વસ્તુ, સૂત્ર છે.
+\end{explain}
+
+દ્વિસ્થાની સંયોજક~$\ast$ વડે $!B$, $!C$માંથી રચેલું સૂત્ર
+$(!B \ast !C)$ લખતી વખતે આપણે ઘણી વાર સૌથી બહારની કૌંસજોડી છોડી
+દઈને માત્ર~$!B \ast !C$ લખીશું.
+
+
+\sourcecorrection{OLPL-001}{મૂળની \texttt{formulas.tex}માં વ્યાખ્યાયિત
+પ્રેરણના વિયોજનવાળા વિકલ્પને $\lnot !A\lor !B)$ લખતાં એક વધારાનું
+અંતકૌંસ આવે છે. અહીં અર્થાત્ બનતું સુઘડ સૂત્ર $\lnot !A\lor !B$
+લખ્યું છે.}
+
+\begin{defn}[વાક્યરચનાત્મક અભિન્નતા]
+$\ident$ સંકેત, સંકેતોની શ્રેણીઓ વચ્ચેની વાક્યરચનાત્મક અભિન્નતા
+દર્શાવે છે; એટલે કે, $!A \ident !B$ ત્યારે જ જ્યારે $!A$ અને $!B$
+સમાન લંબાઈ ધરાવતી સંકેતશ્રેણીઓ હોય અને દરેક સ્થાને બંનેમાં એક જ
+સંકેત હોય.
+\end{defn}
+
+$\ident$ સંકેતની બંને બાજુએ જોડાણથી મળેલી શ્રેણીઓ પણ આવી શકે છે.
+દાખલા તરીકે, $!A \ident (!B \lor !C)$નો અર્થ આ છે: $!A$ની
+સંકેતશ્રેણી એ આરંભકૌંસ, શ્રેણી $!B$, સંકેત $\lor$, શ્રેણી $!C$ અને
+અંતકૌંસને આ જ ક્રમમાં જોડવાથી મળતી શ્રેણી છે. જો એવું હોય, તો આપણે
+જાણીએ છીએ કે $!A$નો પહેલો સંકેત આરંભકૌંસ છે, $!A$માં $!B$ ઉપશ્રેણી
+તરીકે આવે છે (બીજા સંકેતથી શરૂ થઈને), એ ઉપશ્રેણી પછી $\lor$ આવે છે,
+વગેરે.
+% END OLP-0058
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0059
+\olfileid{pl}{syn}{pre}
+
+\olsection{પ્રારંભિક બાબતો}
+\phantomsection\label{guunit:OLP-0059}
+
+
+\begin{thm}[\emph{સૂત્રો પર અનુમાનનો સિદ્ધાંત}]
+  \ollabel{thm:induction}
+  કોઈ ગુણધર્મ~$P$ બધાં આણ્વિક સૂત્રો માટે હોય અને નીચેની
+  શરતો સંતોષતો હોય:
+  \begin{enumerate}
+    \item $!A$ માટે ગુણધર્મ હોય ત્યારે $\lnot !A$ માટે
+      પણ હોય;
+    \item $!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \land !B)$ માટે પણ હોય;
+    \item $!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \lor !B)$ માટે પણ હોય;
+    \item $!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \lif !B)$ માટે પણ હોય;
+    \item $!A$ અને~$!B$ માટે ગુણધર્મ હોય ત્યારે
+      $(!A \liff !B)$ માટે પણ હોય;
+  \end{enumerate}
+  તો બધાં સૂત્રો માટે $P$ હોય છે.
+\end{thm}
+
+\begin{proof}
+  ગુણધર્મ~$P$ ધરાવતાં બધાં સૂત્રોનો સંગ્રહ $S$ લો. સ્પષ્ટપણે
+  $S \subseteq \Frm[L_0]$. $S$, \olref[fml]{defn:formulas}ની બધી
+  શરતો સંતોષે છે: તેમાં બધાં આણ્વિક સૂત્રો છે અને તે
+  કારકો હેઠળ સંવૃત છે. $\Frm[L_0]$ આવો નાનામાં નાનો વર્ગ છે,
+  તેથી $\Frm[L_0] \subseteq S$. આમ $\Frm[L_0]=S$, અને દરેક સૂત્રને
+  ગુણધર્મ~$P$ છે.
+\end{proof}
+
+\begin{prop}\ollabel{prop:balanced}
+   $\Frm[L_0]$નું દરેક સૂત્ર \emph{સંતુલિત} છે, એટલે તેમાં
+   ડાબાં અને જમણાં કૌંસની સંખ્યા સમાન છે.
+\end{prop}
+
+\begin{prob}
+\olref[pl][syn][pre]{prop:balanced} સાબિત કરો.
+\end{prob}
+
+\begin{prop} \ollabel{prop:noinit}
+સૂત્રનો કોઈ ઉચિત આરંભખંડ સૂત્ર નથી.
+\end{prop}
+
+\begin{prob}
+  \olref[pl][syn][pre]{prop:noinit} સાબિત કરો.
+\end{prob}
+
+\begin{prop}[એકમાત્ર વાચનીયતા]
+$\Frm[L_0]$નું દરેક સૂત્ર~$!A$ નીચેના પૈકી કોઈ એક સ્વરૂપમાં
+બરાબર એક જ રીતે વિભાજિત થઈને વાંચી શકાય છે:
+\begin{enumerate}
+\item $\lfalse$.
+
+\item $\ltrue$.
+
+\item કોઈ $\Obj p_n \in \PVar$ માટે $\Obj p_n$.
+
+\item કોઈ સૂત્ર~$!B$ માટે $\lnot !B$.
+
+\item કોઈ સૂત્રો $!B$ અને~$!C$ માટે
+$(!B \land !C)$.
+
+\item કોઈ સૂત્રો $!B$ અને~$!C$ માટે
+$(!B \lor !C)$.
+
+\item કોઈ સૂત્રો $!B$ અને~$!C$ માટે
+$(!B \lif !C)$.
+
+\item કોઈ સૂત્રો $!B$ અને~$!C$ માટે
+$(!B \liff !C)$.
+\end{enumerate}
+વળી, આ વિભાજિત વાંચન \emph{એકમાત્ર} છે.
+\end{prop}
+
+\begin{proof}
+$!A$ પર અનુમાનથી. દાખલા તરીકે, ધારો કે $!A$નાં $(!B \lif !C)$ અને
+$(!B' \lif !C')$ તરીકે બે જુદાં વાંચન છે. ત્યારે $!B$ અને $!B'$ સરખાં
+હોવાં જોઈએ (નહિતર એક બીજાનો ઉચિત આરંભખંડ હોત); તેથી $!A$નાં બંને
+વાંચન જુદાં હોય તો એનું કારણ માત્ર એ હોઈ શકે કે $!C$ અને $!C'$ એક જ
+સંકેતશ્રેણીનાં જુદાં વાંચન છે, જે અનુમાન-પૂર્વધારણાથી અશક્ય છે.
+\end{proof}
+
+
+\begin{defn}[એકરૂપ પ્રતિસ્થાપન]
+જો $!A$ અને $!B$ સૂત્રો હોય અને $\Obj p_i$ પ્રતિજ્ઞાપન ચલ હોય, તો $\Subst{!A}{!B}{\Obj p_i}$ એ $!A$માં $\Obj p_i$ના
+દરેક આવર્તનને $!B$ના આવર્તનથી બદલવાથી મળતું પરિણામ દર્શાવે છે;
+એવી જ રીતે, $\Obj p_1$, \dots,~$\Obj p_n$ને સૂત્રો $!B_1$,
+\dots,~$!B_n$થી એકસાથે કરેલું પ્રતિસ્થાપન
+$\SSubst{!A}{\subst{!B_1}{\Obj p_1},\dots,\subst{!B_n}{\Obj p_n}}$થી
+દર્શાવાય છે.
+\end{defn}
+
+\begin{prob} નીચેનાં પાંચ સૂત્રોમાંના દરેક માટે નક્કી કરો કે
+ તેને પ્રતિસ્થાપન \( \Subst{!A}{!B}{\Obj p_i} \) તરીકે લખી શકાય છે કે નહિ,
+ જ્યાં \( !A \) અનુક્રમે (i) \( \Obj p_0 \); (ii) \( ( \lnot \Obj p_0 \land \Obj
+ p_1) \); અને (iii) \( ( ( \lnot \Obj p_0 \lif \Obj p_1 ) \land \Obj
+ p_2 ) \) છે. દરેક કિસ્સામાં સંબંધિત પ્રતિસ્થાપન જણાવો.
+  \begin{enumerate}
+    \item \( \Obj p_1 \)
+    \item \( ( \lnot \Obj p_0 \land \Obj p_0 ) \)
+    \item \( ( ( \Obj p_0 \lor \Obj p_1 ) \land \Obj p_2 )  \)
+    \item \( \lnot ( ( \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \)
+    \item \( (( \lnot ( \Obj p_0 \lif \Obj p_1 ) \lif ( \Obj p_0 \lor \Obj p_1 )) \land \lnot ( \Obj p_0 \land \Obj p_1 )) \)
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+અનુમાન વડે $\Subst{!A}{!B}{p}$ની ગાણિતિક રીતે ચુસ્ત વ્યાખ્યા આપો.
+\end{prob}
+% END OLP-0059
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0060
+\olfileid{pl}{syn}{fseq}
+
+\olsection{રચના-શ્રેણીઓ}
+\phantomsection\label{guunit:OLP-0060}
+
+
+અનુમાનાત્મક વ્યાખ્યા વડે સૂત્રો વ્યાખ્યાયિત કરવા અને તેની
+પૂરક રીત તરીકે અનુમાન વડે સૂત્રોના ગુણધર્મો સાબિત કરવા એ
+સુઘડ અને કાર્યક્ષમ અભિગમ છે. જોકે સૂત્રોની રચનાને નીચેથી ઉપર,
+ક્રમિક પગલાંમાં જોવી પણ ઉપયોગી થઈ શકે છે. અહીં આપણે \emph{રચના-શ્રેણી}
+એ ખ્યાલ વડે એમ કરીશું.
+
+\begin{defn}[સૂત્રો માટેની રચના-શ્રેણીઓ]
+\ollabel{defn:fseq-frm}
+ભાષા~$\Lang L_0$નાં સંકેતોની શ્રેણીઓની સાન્ત શ્રેણી
+$\tuple{!A_0,\dotsc,!A_n}$ને $!A$ માટેની \emph{રચના-શ્રેણી} ત્યારે
+કહીએ જ્યારે $!A \ident !A_n$ હોય અને દરેક $i\leq n$ માટે કાં તો
+$!A_i$ આણ્વિક સૂત્ર હોય, અથવા એવા $j,k<i$ હોય કે નીચેનામાંથી કોઈ
+એક વાત સાચી હોય:
+\begin{enumerate}
+    \item $!A_i \ident \lnot !A_j$.%
+    \item $!A_i \ident (!A_j \land !A_k)$.%
+    \item $!A_i \ident (!A_j \lor !A_k)$.%
+    \item $!A_i \ident (!A_j \lif !A_k)$.%
+    \item $!A_i \ident (!A_j \liff !A_k)$.%
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    (\Obj p_1 \land \Obj p_0),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}
+\]
+એ $\lnot (\Obj p_1 \land \Obj p_0)$ની રચના-શ્રેણી છે; એવી જ રીતે
+\[
+\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    \Obj p_0,
+    (\Obj p_1 \land \Obj p_0),
+    (\Obj p_0 \lif \Obj p_1),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}.
+\]
+પણ છે.
+બીજા ઉદાહરણ પરથી દેખાય છે તેમ, રચના-શ્રેણીમાં `કચરો' હોઈ શકે છે:
+એવાં સૂત્રો જે બિનજરૂરી હોય અથવા રચનામાં કોઈ ફાળો આપતાં ન હોય.
+\end{ex}
+
+\begin{prop}
+\ollabel{prop:formed}
+$\Frm[L_0]$ના દરેક સૂત્ર~$!A$ માટે કોઈ રચના-શ્રેણી હોય છે.
+\end{prop}
+
+\begin{proof}
+ધારો કે $!A$ આણ્વિક છે. ત્યારે શ્રેણી~$\tuple{!A}$ એ $!A$ માટેની
+રચના-શ્રેણી છે.
+હવે ધારો કે $!B$ અને~$!C$ માટે અનુક્રમે રચના-શ્રેણીઓ
+$\tuple{!B_0,\dotsc,!B_n}$ અને $\tuple{!C_0,\dotsc,!C_m}$ છે.
+\begin{enumerate}
+  \item જો $!A \ident \lnot !B$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,\lnot !B_n}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.
+  \item જો $!A \ident (!B \land !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \land !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.
+  \item જો $!A \ident (!B \lor !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lor !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.
+  \item જો $!A \ident (!B \lif !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \lif !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.
+  \item જો $!A \ident (!B \liff !C)$ હોય,
+      તો $\tuple{!B_0,\dotsc,!B_n,!C_0,\dotsc,!C_m,(!B_n \liff !C_m)}$
+      એ $!A$ માટેની રચના-શ્રેણી છે.
+\end{enumerate}
+સૂત્રો પર અનુમાનના સિદ્ધાંત મુજબ દરેક સૂત્ર માટે
+રચના-શ્રેણી હોય છે.
+\end{proof}
+
+આપણે તેનું પ્રતિલોમ પણ સાબિત કરી શકીએ છીએ. આ મહત્વનું છે, કારણ કે
+તેનાથી સૂત્રો વ્યાખ્યાયિત કરવાની આપણી બંને રીતો સમતુલ્ય છે---એ બંને
+સરખાં પરિણામો આપે છે---એ દેખાય છે. તેનો અર્થ એ પણ થાય છે કે
+રચના-શ્રેણીની લંબાઈ પર સામાન્ય અનુમાન વાપરીને આપણે સૂત્રો વિશેનાં
+પ્રમેયો સાબિત કરી શકીએ છીએ.
+
+\begin{lem}
+\ollabel{lem:fseq-init}
+ધારો કે $\tuple{!A_0,\dotsc,!A_n}$ એ~$!A_n$ માટેની રચના-શ્રેણી છે
+અને $k\leq n$. ત્યારે $\tuple{!A_0,\dotsc,!A_k}$ એ~$!A_k$ માટેની
+રચના-શ્રેણી છે.
+\end{lem}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:fseq-frm-equiv}
+$\Frm[L_0]$ એ ભાષા~$\Lang L_0$ની એવી બધી સંકેતશ્રેણીઓનો ગણ છે
+જેમની રચના-શ્રેણી હોય છે.
+\end{thm}
+
+\begin{proof}
+ભાષા~$\Lang L_0$ની એવી બધી સંકેતશ્રેણીઓનો ગણ $F$ લો જેમની
+રચના-શ્રેણી હોય છે. \olref[pl][syn][fseq]{prop:formed}માં આપણે
+$\Frm[L_0]\subseteq F$ જોયું છે; તેથી હવે આપણે તેનું પ્રતિલોમ
+સાબિત કરીએ છીએ.
+
+ધારો કે $!A$ની રચના-શ્રેણી $\tuple{!A_0,\dotsc,!A_n}$ છે. $n$ પર
+પ્રબળ અનુમાનથી આપણે $!A\in\Frm[L_0]$ સાબિત કરીએ છીએ. આપણી
+અનુમાન-પૂર્વધારણા એ છે કે $m<n$ લંબાઈની રચના-શ્રેણી ધરાવતી દરેક
+સંકેતશ્રેણી $\Frm[L_0]$માં છે. રચના-શ્રેણીની વ્યાખ્યા મુજબ કાં તો
+$!A_n$ આણ્વિક છે, અથવા એવા $j,k<n$ હોવા જોઈએ કે નીચેનામાંથી કોઈ એક
+કિસ્સો બને:
+\begin{enumerate}
+    \item $!A_n \ident \lnot !A_j$.%
+    \item $!A_n \ident (!A_j \land !A_k)$.%
+    \item $!A_n \ident (!A_j \lor !A_k)$.%
+    \item $!A_n \ident (!A_j \lif !A_k)$.%
+    \item $!A_n \ident (!A_j \liff !A_k)$.%
+\end{enumerate}
+હવે આપણે કિસ્સાવાર વિચારીએ. જો $!A_n$ આણ્વિક હોય, તો
+$!A_n\in\Frm[L_0]$. હવે તેના બદલે ધારો કે $!A\ident
+(!A_j\land !A_k)$. \olref[pl][syn][fseq]{lem:fseq-init} મુજબ
+$\tuple{!A_0,\dotsc,!A_j}$ અને $\tuple{!A_0,\dotsc,!A_k}$ અનુક્રમે
+$!A_j$ અને~$!A_k$ માટેની રચના-શ્રેણીઓ છે. આ બંને $!A$ની
+રચના-શ્રેણીની ઉચિત આરંભ-ઉપશ્રેણીઓ હોવાથી તેમની લંબાઈ~$n$થી ઓછી છે.
+તેથી અનુમાન-પૂર્વધારણા મુજબ $!A_j$ અને~$!A_k$, $\Frm[L_0]$માં છે;
+અને આમ સૂત્રની વ્યાખ્યા મુજબ $(!A_j\land !A_k)$ પણ તેમાં છે.
+બીજા કિસ્સા સમાંતર દલીલથી મળે છે.
+\end{proof}
+\sourcecorrection{OLPL-002}{મૂળની \texttt{formation-sequences.tex}માં
+આ કિસ્સાની પૂર્વધારણા $!A\equiv(!A_j\land !A_k)$ લખાઈ છે. અહીં
+તાર્કિક સમતુલ્યતાની નહિ પણ સંકેતશ્રેણીની અભિન્નતાની જરૂર છે;
+વ્યાખ્યામાં અને આ જ સાબિતીના અગાઉના ખંડમાં વપરાયેલો
+$\ident$ સંકેત અહીં પુનઃસ્થાપિત કર્યો છે.}
+% END OLP-0060
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0061
+\olfileid{pl}{syn}{val}
+
+\olsection{સત્યમૂલ્ય-નિયુક્તિઓ અને સંતોષ}
+\phantomsection\label{guunit:OLP-0061}
+
+
+\begin{defn}[સત્યમૂલ્ય-નિયુક્તિઓ]
+$\{\True,\False\}$ને ``સત્ય'' અને ``અસત્ય'' એ બે સત્યમૂલ્યોનો ગણ
+માનો. $\Lang{L_0}$ માટેની \emph{સત્યમૂલ્ય-નિયુક્તિ} એ ભાષાનાં
+પ્રતિજ્ઞાપન ચલોને $\True$ અથવા $\False$ નિયુક્ત કરતું
+વિધેય~$\pAssign{v}$ છે; એટલે કે, $\pAssign{v}\colon
+\PVar\to\{\True,\False\}$.
+\end{defn}
+
+\begin{defn}
+  સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ આપેલી હોય, ત્યારે મૂલ્યાંકન વિધેય
+  $\pValue{v}\colon\Frm[L_0]\to\{\True,\False\}$ને નીચે પ્રમાણે
+  અનુમાનાત્મક રીતે વ્યાખ્યાયિત કરો:
+  \begin{align*}
+    \pValue{v}(\lfalse) & = \False; \\
+    \pValue{v}(\ltrue) & = \True; \\
+    \pValue{v}(\Obj p_n) & = \pAssign{v}(\Obj p_n); \\
+    \pValue{v}(\lnot !A) & = \begin{cases}
+        \True & \text{જો } \pValue{v}(!A) = \False;\\
+        \False & \text{અન્યથા.}
+      \end{cases} \\ 
+    \pValue{v}(!A \land !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \True$ અને $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) = \False$ અથવા $\pValue{v}(!B) = \False$}.
+      \end{cases}\\
+    \pValue{v}(!A \lor !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \True$ અથવા $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) = \False$ અને $\pValue{v}(!B) = \False$}.
+      \end{cases}\\
+    \pValue{v}(!A \lif !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \False$ અથવા $\pValue{v}(!B) = \True$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) = \True$ અને $\pValue{v}(!B) = \False$}.
+      \end{cases}\\
+    \pValue{v}(!A \liff !B) & = \begin{cases}
+        \True &
+        \text{જો $\pValue{v}(!A) = \pValue{v}(!B)$;}\\
+        \False &
+        \text{જો $\pValue{v}(!A) \neq \pValue{v}(!B)$}.
+      \end{cases}
+\end{align*}
+\end{defn}
+
+\begin{explain}
+આ ખંડો નીચેની સત્યાર્થતા સારણીઓને અનુરૂપ છે:
+\begin{center}
+  \begin{tabular}{|c||c|} \hline
+    $!A$ & $ \lnot !A$ \\
+    \hline \hline
+    $\True$ & $\False$ \\
+    $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \land !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lor !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\True$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+%
+\\[1em]
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \lif !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+  \begin{tabular}{|cc||c|} \hline
+    $!A$ & $!B$ & $!A \liff !B$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{explain}
+
+\begin{prob}
+$\Lang{L_0}$માં ત્રિસ્થાની સંયોજક $\diamondsuit$ ઉમેરવાનું વિચારો,
+જેનું મૂલ્યાંકન આ પ્રમાણે આપેલું છે:
+\begin{gather*}
+  \pValue{v}(\diamondsuit( !A , !B , !C ) ) = \begin{cases}
+    \pValue{v}( !B ) &
+    \text{જો $\pValue{v}(!A) = \True$;}\\
+    \pValue{v}( !C ) &
+    \text{જો $\pValue{v}(!A) = \False $}.
+  \end{cases}
+\end{gather*}
+આ સંયોજકની સત્યાર્થતા સારણી લખો.
+\end{prob}
+
+\begin{thm}[સ્થાનિક નિર્ધારણ]
+\ollabel{thm:LocalDetermination} ધારો કે $\pAssign{v_1}$ અને
+$\pAssign{v_2}$ એ સત્યમૂલ્ય-નિયુક્તિઓ છે અને $!A$માં આવતાં
+પ્રતિજ્ઞાપન ચલો પર સંમત થાય છે; એટલે કે, કોઈ
+સૂત્ર~$!A$માં $\Obj p_n$ આવે ત્યારે
+$\pAssign{v_1}(\Obj p_n)=\pAssign{v_2}(\Obj p_n)$. ત્યારે
+$\pValue{v_1}$ અને $\pValue{v_2}$ પણ~$!A$ પર સંમત થાય છે; એટલે કે,
+$\pValue{v_1}(!A)=\pValue{v_2}(!A)$.
+\end{thm}
+
+\begin{proof}
+$!A$ પર અનુમાનથી.
+\end{proof}
+
+\begin{defn}[સંતોષ]
+\ollabel{defn:satisfaction} સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ વડે
+  સૂત્ર~$!A$ના \emph{સંતોષ}, $\pSat{v}{!A}$,નો ખ્યાલ આપણે
+  નીચે પ્રમાણે અનુમાનાત્મક રીતે વ્યાખ્યાયિત કરી શકીએ છીએ.
+  (``$\pSat{v}{!A}$ નથી'' એ કહેવા આપણે $\pSat/{v}{!A}$ લખીએ છીએ.)
+\begin{enumerate}
+\item %
+  \indcase{!A}{\lfalse}{$\pSat/{v}{\indfrm}$.}
+
+\item %
+  \indcase{!A}{\ltrue}{$\pSat{v}{\indfrm}$.}
+
+\item \indcase{!A}{\Obj p_i}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+  $\pAssign{v}(\Obj p_i) = \True$.}
+
+\item %
+  \indcase{!A}{\lnot !B}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat/{v}{!B}$.}
+
+\item %
+  \indcase{!A}{(!B \land !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat{v}{!B}$ અને $\pSat{v}{!C}$.}
+
+\item %
+  \indcase{!A}{(!B \lor !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat{v}{!B}$ અથવા $\pSat{v}{!C}$ (અથવા બંને).}
+
+\item %
+  \indcase{!A}{(!B \lif !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat/{v}{!B}$ અથવા $\pSat{v}{!C}$ (અથવા બંને).}
+
+\item %
+  \indcase{!A}{(!B \liff !C)}{$\pSat{v}{\indfrm}$ ત્યારે જ જ્યારે
+    $\pSat{v}{!B}$ અને $\pSat{v}{!C}$ બંને, અથવા $\pSat{v}{!B}$ અને
+    $\pSat{v}{!C}$ એ બેમાંથી એકેય નહિ.}
+\end{enumerate}
+જો $\Gamma$ એ સૂત્રોનો ગણ હોય, તો દરેક~$!A\in\Gamma$ માટે
+$\pSat{v}{!A}$ હોય ત્યારે જ $\pSat{v}{\Gamma}$.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-value}
+  $\pSat{v}{!A}$ ત્યારે જ જ્યારે $\pValue{v}(!A)=\True$.
+\end{prop}
+
+\begin{proof}
+  $!A$ પર અનુમાનથી.
+\end{proof}
+
+\begin{prob}
+  \olref[pl][syn][val]{prop:sat-value} સાબિત કરો.
+\end{prob}
+% END OLP-0061
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0062
+\olfileid{pl}{syn}{sem}
+
+\olsection{અર્થવિચારી ખ્યાલો}
+\phantomsection\label{guunit:OLP-0062}
+
+
+આપણે નીચેના અર્થવિચારી ખ્યાલો વ્યાખ્યાયિત કરીએ છીએ:
+
+\begin{defn}
+\begin{enumerate}
+\item કોઈ~$\pAssign{v}$ માટે $\pSat{v}{!A}$ હોય, તો
+  સૂત્ર~$!A$ \emph{સંતોષ્ય} છે; કોઈ પણ $\pAssign{v}$ માટે
+  $\pSat{v}{!A}$ ન હોય, તો તે \emph{અસંતોષ્ય} છે;
+\item બધાં સત્યમૂલ્ય-નિયુક્તિઓ~$\pAssign{v}$ માટે $\pSat{v}{!A}$ હોય, તો
+  સૂત્ર~$!A$ \emph{પુનરુક્તિ} છે;
+\item સૂત્ર~$!A$ સંતોષ્ય હોય પણ પુનરુક્તિ ન હોય, તો તે
+  \emph{નિવાર્ય} છે;
+\item જો $\Gamma$ એ સૂત્રોનો ગણ હોય, તો દરેક એવા
+  સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ માટે કે જેના માટે $\pSat{v}{\Gamma}$,
+  $\pSat{v}{!A}$ પણ હોય ત્યારે અને માત્ર ત્યારે $\Gamma\Entails !A$
+  (``$\Gamma$, $!A$ને ફલિત કરે છે'').
+\item જો $\Gamma$ એ સૂત્રોનો ગણ હોય, તો એવા કોઈ
+  સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ માટે $\pSat{v}{\Gamma}$ હોય ત્યારે
+  $\Gamma$ \emph{સંતોષ્ય} છે; અન્યથા $\Gamma$ \emph{અસંતોષ્ય} છે.
+\end{enumerate}
+\end{defn}
+
+\begin{prob}
+ નીચેનાં ચાર સૂત્રોમાંનું દરેક (a)~સંતોષ્ય, (b)~પુનરુક્તિ અને
+ (c)~નિવાર્ય છે કે નહિ તે નક્કી કરો.
+\begin{enumerate}
+  \item \( ( \Obj p_0 \lif ( \lnot \Obj p_1 \lif \lnot \Obj p_0 ) ) \).
+  \item \( ( ( \Obj p_0 \land \lnot \Obj p_1 ) \lif ( \lnot \Obj p_0 \land \Obj p_2 )) \liff ( ( \Obj p_2 \lif \Obj p_0 ) \lif ( \Obj p_0 \lif \Obj p_1 )) \).
+  \item \( ( \Obj p_0 \liff \Obj p_1 ) \lif ( \Obj p_2 \liff \lnot \Obj p_1 ) \).
+  \item \( (( \Obj p_0 \liff ( \lnot \Obj p_1 \land \Obj p_2 )) \lor ( \Obj p_2 \lif ( \Obj p_0 \liff \Obj p_1 ))) \).
+\end{enumerate}
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:semanticalfacts}
+\begin{enumerate}
+\item $!A$ પુનરુક્તિ હોય ત્યારે અને માત્ર ત્યારે
+  $\emptyset \Entails !A$;
+\item જો $\Gamma \Entails !A$ અને $\Gamma \Entails !A \lif !B$, તો
+  $\Gamma \Entails !B$;
+\item જો $\Gamma$ સંતોષ્ય હોય, તો $\Gamma$નો દરેક સાન્ત ઉપગણ પણ
+  સંતોષ્ય છે;
+\item \ollabel{def:monotonicity} એકદિશવર્ધિતા: જો
+  $\Gamma \subseteq \Delta$ અને $\Gamma \Entails !A$, તો
+  $\Delta \Entails !A$ પણ;
+\item \ollabel{def:Cut} પરંપરિતતા: જો $\Gamma \Entails !A$ અને
+  $\Delta \cup \{ !A\} \Entails !B$, તો $\Gamma \cup \Delta \Entails
+  !B$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:semanticalfacts} સાબિત કરો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:entails-unsat}
+  $\Gamma \Entails !A$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\Gamma \cup \{\lnot !A\}$ અસંતોષ્ય હોય.
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{prop:entails-unsat} સાબિત કરો.
+\end{prob}
+
+\begin{thm}[અર્થાનુસારી નિગમન પ્રમેય]
+  \ollabel{thm:sem-deduction} $\Gamma \Entails !A \lif !B$ ત્યારે અને માત્ર
+  ત્યારે જ્યારે $\Gamma \cup \{!A\} \Entails !B$.
+\end{thm}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[pl][syn][sem]{thm:sem-deduction} સાબિત કરો.
+\end{prob}
+% END OLP-0062
+\endgroup
+
+
+\OLEndChapterHook
+
+
+\begin{editorial}
+આગળનો સંબંધિત અંશ મૂળના સક્રિય આયાતક્રમમાં નથી. તેને અહીં સ્પષ્ટ વૈકલ્પિક સંદર્ભમાં જાળવ્યો છે.
+\end{editorial}
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0714
+\olfileid{pl}{prp}{com}
+
+\olsection{પ્રતિજ્ઞાપન તર્કશાસ્ત્રની પૂર્ણતા}
+\phantomsection\label{guunit:OLP-0714}
+
+
+\begin{defn}
+\ollabel{def:MaxCon}
+સૂત્રનો ગણ~$\Gamma$ \emph{મહત્તમ સુસંગત} કહેવાય,
+જો તે સુસંગત હોય અને કોઈ સુસંગત ગણ~$\Delta$ માટે
+$\Gamma \subseteq \Delta$ હોય ત્યારે $\Gamma = \Delta$ થાય.
+\end{defn}
+
+\begin{lem}[સત્ય સહાયક પ્રમેય]
+  \ollabel{lem:truth}
+$\Gamma$ મહત્તમ સુસંગત હોય, તો:
+\begin{enumerate}
+\item \ollabel{lem:truth-1} $!A \in \Gamma$ જો અને ફક્ત જો
+  $\lnot !A \notin \Gamma$;
+\item \ollabel{lem:truth-2} $\Gamma \Proves !A$ જો અને ફક્ત જો
+  $!A \in \Gamma$;
+\item \ollabel{lem:truth-3} $!A \lif !B \in \Gamma$ જો અને ફક્ત જો
+  કાં તો $!A \notin \Gamma$ અથવા $!B \in \Gamma$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\begin{enumerate}
+\item ધારો કે $!A \in \Gamma$ હોય. જો $\lnot !A \in \Gamma$
+  પણ હોય, તો $\Gamma$ અસુસંગત થાય.
+  બીજી શક્યતા એ છે કે $!A$ કે $\lnot!A$ બેમાંથી એકેય
+  $\Gamma$માં ન હોય. ત્યારે
+  \olref[fol][axd][prv]{prop:provability-exhaustive} પ્રમાણે
+  $\Gamma\cup\{!A\}$ અને $\Gamma \cup \{\lnot !A\}$માંથી
+  એક સુસંગત હોય, એટલે $\Gamma$ મહત્તમ ન હોય.
+  આ બંને અવલોકનો ઊલટી દિશા પણ આપે છે.
+\item જો $!A \in \Gamma$ હોય, તો દેખીતી રીતે $\Gamma \Proves !A$.
+  ઊલટી તરફ, ધારો કે $\Gamma \Proves !A$ હોય.
+  જો $!A \notin \Gamma$ હોય, તો \olref{lem:truth-1}
+  પ્રમાણે $\lnot !A \in \Gamma$ થાય.
+  આમ $\Gamma \Proves !A$ અને $\Gamma \Proves \lnot !A$,
+  જે સુસંગતતા સાથે વિરોધાભાસ આપે છે.
+\item કસરત.
+\end{enumerate}
+\sourcecorrection{OLMD-344}{મૂળના બે જૂના સંદર્ભ એકેય વિસ્તરણ સુસંગત ન હોય તો મૂળ ગણ અસુસંગત થાય તે પરિણામને નિર્દેશે છે, પરંતુ આપેલા નામવાળો ઉલ્લેખ સ્થિર સ્રોતમાં મળતો નથી. તેમની જગ્યાએ હાલની સ્વયંસિદ્ધ-નિગમન રચનાના અસુસંગતતાનાં બંને વિસ્તરણ અંગેના પરિણામનો સ્પષ્ટ સંદર્ભ આપ્યો છે. આગળના નિષ્પન્નતા-અસુસંગતતા સંદર્ભને પણ તેના સાચા વિભાગ સુધી વિસ્તૃત કર્યો છે.}
+\end{proof}
+
+\olref{lem:truth}\olref{lem:truth-2}ની ડાબેથી જમણી દિશા
+બતાવે છે કે $\Gamma$ \emph{નિગમન હેઠળ બંધ} છે:
+દરેક $!A$ માટે, જો $\Gamma \Proves !A$ હોય, તો $!A
+\in \Gamma$ થાય.
+
+\begin{prob}
+  \olref{lem:truth}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{thm}[પૂર્ણતા]
+\ollabel{thm:completeness}
+જો $\Gamma$ સુસંગત હોય, તો $\Gamma$ સંતોષ્ય છે.
+\end{thm}
+
+\begin{proof}
+ભાષાનાં બધાં સૂત્રની સંપૂર્ણ સૂચિ $!A_0$, $!A_1$,
+\dots લો. સૂત્રના ગણોનો વધતો ક્રમ
+$\Gamma_0$, $\Gamma_1$, \dots નીચે મુજબ પુનરાવર્તનથી વ્યાખ્યાયિત કરીએ:
+\begin{align*}
+\Gamma_0 & = \Gamma\\
+\Gamma_{n+1} &  =
+\begin{cases}
+  \Gamma_n \cup \{!A_n\} & \text{જો $\Gamma_n \cup \{!A_n\}$ સુસંગત હોય;}\\
+  \Gamma_n \cup \{\lnot !A_n\} & \text{અન્યથા}.
+\end{cases}
+\end{align*}
+પછી આ વ્યાખ્યા આપીએ:
+\[
+\Gamma^* = \bigcup_{0\le n}\Gamma_n.
+\]
+હવે સાબિતીને આગળ વધારવા ક્રમશઃ નીચેની હકીકતો સ્થાપિત કરવાની છે:
+\begin{enumerate}
+\item દરેક $n$ માટે ગણ~$\Gamma_n$ સુસંગત છે:
+  \olref[fol][axd][prv]{prop:provability-exhaustive} વાપરી
+  $n$ પર આગમન કરો;
+\item $\Gamma^*$ સુસંગત છે;
+\item $\Gamma^*$ મહત્તમ છે.
+\end{enumerate}
+પછી સત્યમૂલ્ય-નિયુક્તિ~$v$ એવી વ્યાખ્યાયિત કરીએ કે
+$v(p_i) = \True$ જો અને ફક્ત જો $p_i \in \Gamma^*$.
+$!A$ પર આગમનથી બતાવવાનું છે કે વધુ જટિલ વાક્ય
+માટે પણ $\Gamma^*$નું સભ્યપદ અને $v$ અનુસારનું સત્ય એક જ છે:
+$\overline{v}(!A) = \True$ જો અને ફક્ત જો $!A \in \Gamma^*$.
+ખાસ કરીને $v$ એ $\Gamma^*$ને સંતોષે છે;
+$\Gamma \subseteq \Gamma^*$ હોવાથી $\Gamma$ પણ સંતોષ્ય છે,
+જે જોઈએ છે.
+\end{proof}
+
+\begin{cor}
+જો $\Gamma \Entails !A$ હોય, તો $\Gamma \Proves !A$.
+\end{cor}
+
+\begin{proof}
+જો $\Gamma\Proves/ !A$ હોય, તો
+\olref[fol][axd][prv]{prop:prov-incons} પ્રમાણે
+$\Gamma \cup \{\lnot !A\}$ સુસંગત છે.
+પૂર્ણતા પ્રમેયથી $\Gamma \cup
+\{\lnot !A\}$ સંતોષ્ય છે, એટલે $\Gamma \Entails/ !A$.
+\end{proof}
+
+\begin{prop}[સઘનતા પ્રમેય]
+\ollabel{prop:compactness}
+$\Gamma$ સંતોષ્ય છે જો અને ફક્ત જો $\Gamma$નો દરેક
+\emph{સાંત} ઉપગણ~$\Gamma_0$ સંતોષ્ય હોય.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ અસંતોષ્ય છે જો અને ફક્ત જો તે અસુસંગત હોય;
+જો અને ફક્ત જો $\Gamma$નો કોઈ સાંત ઉપગણ~$\Gamma_0$
+અસુસંગત હોય; જો અને ફક્ત જો $\Gamma$નો કોઈ સાંત
+ઉપગણ~$\Gamma_0$ અસંતોષ્ય હોય.
+\end{proof}
+
+\begin{cor}
+$\Gamma \Entails !A$ જો અને ફક્ત જો $\Gamma$ના
+કોઈ સાંત ઉપગણ~$\Gamma_0$ માટે $\Gamma_0 \Entails !A$.
+\end{cor}
+
+\begin{editorial}
+આ પઠન-રચનામાં ફરી વપરાયેલા નિષ્પન્નતા-ગુણધર્મોનો પાઠ પ્રથમ-ક્રમના સ્વયંસિદ્ધિ-આધારિત નિગમનના ભાગમાં એક જ વાર છે. આ વિભાગની કડીઓ ત્યાંના તે જ પરિણામોના વિધાનાત્મક કિસ્સાઓ સુધી જાય છે.
+\end{editorial}
+% END OLP-0714
+\endgroup
+
+\begin{editorial}
+આગળનો સંબંધિત અંશ મૂળના સક્રિય આયાતક્રમમાં નથી. તેને અહીં સ્પષ્ટ વૈકલ્પિક સંદર્ભમાં જાળવ્યો છે.
+\end{editorial}
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0715
+\olfileid{pl}{prp}{snd}
+
+\olsection{પ્રતિજ્ઞાપન તર્કશાસ્ત્રની યથાર્થતા}
+\phantomsection\label{guunit:OLP-0715}
+
+
+\begin{thm}[યથાર્થતા]
+\ollabel{thm:soundness}
+જો $\Gamma\Proves!A$ હોય, તો $\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+નિષ્પન્ન થતી પ્રતિજ્ઞાપનાઓ પર આગમન કરીએ.
+જો $!A$ સ્વયંસિદ્ધ હોય, તો $\Entails
+!A$, એટલે $\Gamma \Entails!A$ પણ થાય.
+તે જ રીતે, જો $!A \in \Gamma$ હોય, તો $\Gamma \Entails!A$.
+આગમનના પગલામાં ધારો કે $!A$ એ $!C$ અને $!C\lif!A$માંથી
+\emph{મોડસ પોનેન્સ} વડે મળ્યું હોય.
+આગમનની ધારણા મુજબ $!C\lif !A$ અને $!C$ માટે પ્રમેય સાચું છે.
+\olref[pl][syn][sem]{prop:semanticalfacts}નો બીજો મુદ્દો
+ઇચ્છિત પરિણામ આપે છે.
+\sourcecorrection{OLMD-345}{મૂળ અહીં અર્થવિજ્ઞાનના પરિણામનો ત્રીજો મુદ્દો કહે છે. સ્થિર મૂળમાં મોડસ પોનેન્સને અનુરૂપ સત્ય-સંરક્ષણ બીજો મુદ્દો છે; ત્રીજો મુદ્દો સાંત ઉપગણોની સંતોષ્યતા અંગે છે. ક્રમસંખ્યા અને સ્રોતના સાચા ભાગ-અધ્યાય સુધીનો સંદર્ભ સુધાર્યા છે.}
+\end{proof}
+
+\begin{cor}
+જો $\Gamma$ સંતોષ્ય હોય, તો $\Gamma$ સુસંગત છે.
+આથી પ્રતિજ્ઞાપન તર્કશાસ્ત્ર સુસંગત છે.
+\end{cor}
+% END OLP-0715
+\endgroup
+% END OLP-0056
+\endgroup
+
+
+\tagfalse{FOL}
+
+\noindent\hyperref[guunit:OLP-0063]{સંબંધિત સામગ્રી જુઓ (OLP-0063).}\par
+
+
+%
+  \noindent\hyperref[guunit:OLP-0069]{સંબંધિત સામગ્રી જુઓ (OLP-0069).}\par
+
+
+%
+  \noindent\hyperref[guunit:OLP-0084]{સંબંધિત સામગ્રી જુઓ (OLP-0084).}\par
+
+
+%
+  \noindent\hyperref[guunit:OLP-0098]{સંબંધિત સામગ્રી જુઓ (OLP-0098).}\par
+
+
+%
+  \noindent\hyperref[guunit:OLP-0112]{સંબંધિત સામગ્રી જુઓ (OLP-0112).}\par
+
+
+\noindent\hyperref[guunit:OLP-0126]{સંબંધિત સામગ્રી જુઓ (OLP-0126).}\par
+
+
+\tagtrue{FOL}
+
+\OLEndPartHook
+% END OLP-0055

@@ -1,0 +1,94 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0612",
+  "checked_at_utc": "2026-09-28T14:38:26.224179+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0612 proof-writing bibliography, online guides and motivational links; state-only draft",
+  "report": {
+    "unit_id": "OLP-0612",
+    "source_path": "content/methods/proofs/resources.tex",
+    "source_sha256": "69bf95954428e38a55dfca85aa13d62ba2b9992afa406364da4a0b251d86fa44",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-resources.tex",
+    "draft_sha256": "57723c9600e345c7f9d0a4e86460a53f37029c2c147d4c11b8d681049ab03bd0",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 158,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-cant-do-it.tex",
+        "sha256": "0687a4f31f50275cd6ea41156d27b42884496313ea52fa8b281f73d12fb040bc",
+        "terms": [
+          "મદદ",
+          "ઘરકામ",
+          "સાબિતી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-introduction.tex",
+        "sha256": "dc70f7cf288048418dd39f075748e30c2b87b33c531a1a1dc7f9018520c3d688",
+        "terms": [
+          "સાબિતી",
+          "તર્ક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The surrounding recommendation and access prose is Gujarati. Seven English book/guide titles are intentional proper bibliographic titles and remain exact with seven citations.",
+      "Four href targets and three video URL targets are preserved byte-for-byte as targets; current remote availability is not inferred from frozen-source inclusion.",
+      "The source distinguishes general proof textbooks, freely available online books, a philosophy-oriented primer, shorter online guides, and three motivational videos."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "\\emph{How to Read and do Proofs: An Introduction to\nMathematical Thought Processes}",
+        "count": 1,
+        "reason": "Exact English bibliographic title retained with its citation"
+      },
+      {
+        "literal": "\\emph{How to\nProve It: A Structured Approach}",
+        "count": 1,
+        "reason": "Exact English bibliographic title retained with its citation"
+      },
+      {
+        "literal": "\\emph{Book\nof Proof}",
+        "count": 1,
+        "reason": "Exact English bibliographic title retained with its link and citation"
+      },
+      {
+        "literal": "\\emph{Mathematical\nReasoning}",
+        "count": 1,
+        "reason": "Exact English bibliographic title retained with its link and citation"
+      },
+      {
+        "literal": "\\emph{More\nPrecisely: The Math you need to do Philosophy}",
+        "count": 1,
+        "reason": "Exact English bibliographic title retained with its citation"
+      },
+      {
+        "literal": "``Introduction\n  to Mathematical Arguments''",
+        "count": 1,
+        "reason": "Exact English guide title retained with its link and citation"
+      },
+      {
+        "literal": "``How to\n  write proofs''",
+        "count": 1,
+        "reason": "Exact English guide title retained with its link and citation"
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

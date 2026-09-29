@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0648",
+  "checked_at_utc": "2026-09-28T18:10:06.158809+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0648 Legacy class C of functions and its closure operations; state-only draft",
+  "report": {
+    "unit_id": "OLP-0648",
+    "source_path": "content/incompleteness/representability-in-q/c.tex",
+    "source_sha256": "417388c82eb2680eee44dfe2e1f1dc26dddec6ebfd557109dc674f3cd5ae7af7",
+    "draft_path": "private-state\\work\\batch044_draft\\c.tex",
+    "draft_sha256": "05ef8b334baaa9e459289fbacd6cc5517a28d00bfe01a9b9d002ecb20ac9b370",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 3,
+    "source_math_spans_correction_aware": 9,
+    "target_math_spans_after_corrections": 9,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 107,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\computability\\recursive-functions\\general-recursive-functions.tex",
+        "sha256": "5038174067a2620203fc60f94cef96e443a582412da23a3f76b733f3911f441b",
+        "terms": [
+          "નિયમિત",
+          "અનિયત મર્યાદા સુધીની શોધ",
+          "સામાન્ય પુનરાવર્તી વિધેયો",
+          "આદિમ પુનરાવર્તન",
+          "પ્રક્ષેપો",
+          "સંયોજન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

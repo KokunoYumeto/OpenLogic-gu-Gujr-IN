@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/31-0319",
+  "checked_at_utc": "2026-09-27T02:40:48.730869+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0319 second incompleteness theorem state-only draft",
+  "report": {
+    "unit_id": "OLP-0319",
+    "source_path": "content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex",
+    "source_sha256": "8b96ecc610effe58fb1c422015965d42725f9f3832a00558e2b15753861a55fe",
+    "draft_path": "private-state\\work\\batch031_draft\\second-incompleteness-thm.tex",
+    "draft_sha256": "00a172ac8214c5fdc59ea6903cf78bbc7b90953450787d7f4bf2681d22b8f07d",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 59,
+    "glossary_tokens": 20,
+    "source_correction_notes": [
+      "OLINC-045",
+      "OLINC-046",
+      "OLINC-047",
+      "OLINC-048"
+    ],
+    "formula_text_localizations": 10,
+    "source_detector_ascii_tokens": 413,
+    "target_untranslated_prose_findings": 0,
+    "source_correction_untranslated_prose_findings": 0,
+    "correction_aware_math_align_structure_and_glossary_equal": true
+  },
+  "status": "partial_draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

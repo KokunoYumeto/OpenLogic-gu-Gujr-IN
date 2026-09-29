@@ -1,0 +1,71 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0713",
+  "checked_at_utc": "2026-09-29T00:14:43.052972+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0713 Proof conversion between G1c and G3c; state-only draft",
+  "report": {
+    "unit_id": "OLP-0713",
+    "source_path": "content/proof-theory/sequent-calculus/translations.tex",
+    "source_sha256": "9ae0e40622effab9a067226754c58eeac00c1e21b1ac899c9e2acdebbd12d92c",
+    "draft_path": "private-state\\work\\batch044_draft\\sequent-translations.tex",
+    "draft_sha256": "e2548f58b27b3d0ce7e1c9db924f0f592ee0984d2c3e3b883d18b1121b451735",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 28,
+    "target_math_spans_after_corrections": 28,
+    "glossary_tokens": 14,
+    "source_correction_notes": [
+      "OLMD-340",
+      "OLMD-341",
+      "OLMD-342",
+      "OLMD-343"
+    ],
+    "source_detector_ascii_tokens": 265,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "In \\Log{G3c}, axioms",
+        "In \\Log{G1c}, axioms"
+      ],
+      [
+        "\\olref[adm]{prop:lor-G3-adm}",
+        "\\olref[adm]{prop:weak-G3c-adm}"
+      ],
+      [
+        "\\Delta, , !A",
+        "\\Delta, !A"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\admissible-derivable.tex",
+        "sha256": "9d7fc09c1a6d36bb895db6a81bfb1469d5fb651b5f6f937ee1715690856c3a29",
+        "terms": [
+          "સ્વીકાર્ય",
+          "શિથિલીકરણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-sequent-invertibility.tex",
+        "sha256": "3009c44769ce5c5f91ba44bd5ce7932278546f35a59d5a8ddff0fa8047415ca0",
+        "terms": [
+          "સંકોચન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

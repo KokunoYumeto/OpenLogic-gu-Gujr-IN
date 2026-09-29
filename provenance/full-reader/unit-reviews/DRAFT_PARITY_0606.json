@@ -1,0 +1,101 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0606",
+  "checked_at_utc": "2026-09-28T14:18:28.880340+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0606 proof inference patterns from definitions through existential claims; state-only draft",
+  "report": {
+    "unit_id": "OLP-0606",
+    "source_path": "content/methods/proofs/inference-patterns.tex",
+    "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-inference-patterns.tex",
+    "draft_sha256": "62dbb8b704e7d8e489df4649d9c2b71bf52425461895204a6a89a94941a8c3eb",
+    "aligned_blocks": 46,
+    "linguistic_blocks": 41,
+    "source_math_spans_correction_aware": 301,
+    "target_math_spans_after_corrections": 301,
+    "glossary_tokens": 30,
+    "source_correction_notes": [
+      "OLMD-155",
+      "OLMD-156",
+      "OLMD-157"
+    ],
+    "source_detector_ascii_tokens": 2195,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\in D$",
+        "$x \\in D$"
+      ],
+      [
+        "$\\in E$",
+        "$x \\in E$"
+      ],
+      [
+        "$x \\neq\r\n    \\emptyset$",
+        "$A \\neq\r\n    \\emptyset$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\propositional-logic\\syntax-and-semantics\\formulas.tex",
+        "sha256": "759ce2b24633dbdbbf798103b980025599bc741377792cad68c1f069a7c66701",
+        "terms": [
+          "$\\land$ (સંયોજન)",
+          "$\\lor$ (વિયોજન)"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\union.tex",
+        "sha256": "8cf83b4f062e7d0efa953119a6a5461180d1fc433271318394aa88b8745d203f",
+        "terms": [
+          "યોગગણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-using-definitions.tex",
+        "sha256": "bb8e0d0841f4f0a60e829d26fdf3968cf1f800aee79308c21e99e4d0aca4d754",
+        "terms": [
+          "વ્યાખ્યેય પદ",
+          "વ્યાખ્યાકારક વિધાન",
+          "સાબિતી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The opening separates already available assumptions or derived facts from the new inference and its justification; induction is only deferred to a later discussion.",
+      "Applying equality definition to established D=E and using it as a proof goal are distinct directions. The (a)/(b) template and quoted proof preserve both containment directions.",
+      "Conjunction elimination and conjunction introduction are separate patterns. Disjunction introduction needs one disjunct, while the source notes cases are often useful for mixed cases.",
+      "All formulations p only if q, q if p, and q provided p have the p→q direction; iff needs both directions or a genuine biconditional chain.",
+      "The universal proof fixes arbitrary x and does not choose a special witness; the example establishes A subseteq A union B.",
+      "Case analysis uses p or q as a premise and proves r from each. The B/C-to-D/E example keeps (a)-(d), two cases, and the editorial footnote outside the proof logic.",
+      "The singleton witness A={x} proof separately establishes A nonempty and A subseteq B; no assumption of these properties is smuggled in.",
+      "An existential witness name must be fresh and absent from the discharged conclusion. The corrected prose distinguishes independence of the arbitrary witness from dependence on the existential premise.",
+      "The final quoted proof is intentionally invalid because two existential claims can have different witnesses; no repair to its reasoning is inserted.",
+      "Three visible corrections address the omitted x in two membership expressions, witness-scope overstatement, and wrong x/A variable in the nonempty-set equivalence."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "iff",
+        "count": 1,
+        "reason": "The source explicitly teaches this English abbreviation for the biconditional and the Gujarati text explains it."
+      }
+    ],
+    "localized_math_text": [
+      {
+        "source": "\\text{ or }",
+        "target": "\\text{ અથવા }",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

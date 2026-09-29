@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/28-ax",
+  "checked_at_utc": "2026-09-26T23:19:14.980577+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0288 state-only axiomatic proof coding draft",
+  "report": {
+    "unit_id": "OLP-0288",
+    "source_path": "content/incompleteness/arithmetization-syntax/proofs-in-ax.tex",
+    "source_sha256": "6498fe743671727c99bee3ff39efb8e83bf46be470a8c2b613b62a8757c3e4eb",
+    "draft_path": "private-state\\work\\batch028_draft\\proofs-in-ax.tex",
+    "draft_sha256": "8eb9716d4878181ee165850ab5a6c07797a7fb397de2aff36759611c4f7f28ad",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 13,
+    "source_math_spans": 139,
+    "glossary_tokens": 41,
+    "correction_notes": [
+      "OLINC-018",
+      "OLINC-019",
+      "OLINC-020",
+      "OLINC-021"
+    ],
+    "correction_aware_math_and_structure_equal": true
+  },
+  "status": "draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

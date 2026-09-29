@@ -1,0 +1,110 @@
+% Part: counterfactuals
+% Chapter: introduction
+% Section: strict-conditional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{int}{str}
+
+\olsection{કડક શરતી વિધાન}
+
+લૂઈસે \emph{કડક શરતી વિધાન}~$\strictif$ રજૂ કર્યું અને દલીલ કરી કે
+ભૌતિક શરતી વિધાનને બદલે આ વિધાન ફલિતતાને અનુરૂપ છે. સત્યલક્ષી મોડલ
+તર્કશાસ્ત્રમાં $!A \strictif !B$ને $\Box(!A \lif
+!B)$ તરીકે વ્યાખ્યાયિત કરી શકાય છે. એટલે અનુરૂપ ભૌતિક શરતી
+વિધાન અનિવાર્ય હોય ત્યારે અને માત્ર ત્યારે કડક શરતી વિધાન (કોઈ
+જગતમાં) સત્ય હોય છે.
+
+ભૌતિક શરતી વિધાનના વિરોધાભાસોની સામે કડક શરતી વિધાન કેટલું સફળ થાય
+છે? અસત્ય પૂર્વપક્ષ ધરાવતું કડક શરતી વિધાન હોય કે સત્ય પરિણામ
+ધરાવતું હોય, તે સત્ય પણ હોઈ શકે અને અસત્ય પણ. વધુમાં,
+$(!A \strictif !B) \lor (!B \strictif !A)$ માન્ય નથી. કડક શરતી
+વિધાન $!A \strictif !B$, $\lnot !A \lor !B$ને સમતુલ્ય પણ નથી;
+એટલે તે સત્યતાફલનલક્ષી નથી.
+
+અહીં \Log{S5}ના પરિપ્રેક્ષ્યમાં નીચેના સંબંધો મળે છે:
+\sourcecorrection{OLMD-107}{આ ફલિતતા-સંબંધો તથા નીચેની અનિવાર્યતા-દલીલો દરેક મોડલ તંત્રમાં માન્ય નથી; અહીં S5નો પરિપ્રેક્ષ્ય સ્પષ્ટ કર્યો છે.}
+\begin{align}
+  !A \strictif !B & \Entails \lnot !A \lor !B
+  \text{ પરંતુ:}\\
+  \lnot !A \lor !B & \Entails/ !A \strictif !B\\
+  !B & \Entails/ !A \strictif !B\\
+  \lnot !A & \Entails/ !A \strictif !B\\
+  \lnot(!A \strictif !B) & \Entails/ !A \land \lnot !B
+  \text{ પરંતુ:}\\
+  !A \land \lnot !B & \Entails \lnot(!A \strictif !B)
+  \intertext{તેમ છતાં કડક શરતી વિધાન પર મોડસ પોનેન્સનો નિયમ લાગુ પડે છે:}
+  !A, !A \strictif !B & \Entails !B
+  \intertext{કડક શરતી વિધાન પરિણામોને એકત્ર કરે છે:}
+  !A \strictif !B,  !A \strictif !C & \Entails !A \strictif (!B \land !C)
+  \intertext{કડક શરતી વિધાનમાં પૂર્વપક્ષને મજબૂત કરી શકાય છે:}
+  !A \strictif !B & \Entails (!A \land !C) \strictif !B
+  \intertext{કડક શરતી વિધાન સંક્રામક પણ છે:}
+  !A \strictif !B, !B \strictif !C & \Entails !A \strictif !C
+  \intertext{છેવટે કડક શરતી વિધાન તેના પ્રતિપક્ષી સ્વરૂપ સાથે સમતુલ્ય છે:}
+  !A \strictif !B & \Entails \lnot !B \strictif \lnot !A\\
+  \lnot !B \strictif \lnot !A & \Entails !A \strictif !B
+\end{align}
+\sourcecorrection{OLMD-108}{મૂળમાં પાંચમી ફલિતતા-પંક્તિએ ભૌતિક સંયોજક મૂક્યો છે; તે રૂપ માટે દર્શાવેલી અ-ફલિતતા ખોટી છે, તેથી અહીં કડક સંયોજક મૂક્યો છે.}
+
+\begin{prob}
+  કડક શરતી વિધાન માટે માન્ય ન હોય એવા ફલિતતા-સંબંધોના
+  \Log{S5}-પ્રત્યુદાહરણો આપો, એટલે કે નીચેનાં માટે:
+  \begin{enumerate}
+  \item $\lnot p \Entails/ \Box(p \lif q)$
+  \item $q \Entails/ \Box(p \lif q)$
+  \item $\lnot\Box(p \lif q) \Entails/ p \land \lnot q$
+  \item $\Entails/ \Box(p \lif q) \lor \Box(q \lif p)$
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  માન્ય ફલિતતા-સંબંધો કડક શરતી વિધાન માટે સાચા છે તે નીચેના
+  \Log{S5}-પ્રમાણો આપીને બતાવો:
+  \begin{enumerate}
+  \item  $\Box(!A \lif !B) \Entails \lnot !A \lor !B$
+  \item $!A \land \lnot !B \Entails \lnot\Box(!A \lif !B)$
+  \item $!A, \Box(!A \lif !B) \Entails !B$
+  \item $\Box(!A \lif !B), \Box(!A \lif !C) \Entails \Box(!A \lif (!B
+    \land !C))$
+  \item $\Box(!A \lif !B) \Entails \Box((!A \land !C) \lif !B)$
+  \item $\Box(!A \lif !B), \Box(!B \lif !C) \Entails \Box(!A
+    \lif !C)$
+  \item $\Box(!A \lif !B) \Entails \Box(\lnot !B \lif \lnot !A)$
+  \item $\Box(\lnot !B \lif \lnot !A) \Entails \Box(!A \lif !B)$
+  \end{enumerate}
+  \end{prob}
+
+તેમ છતાં કડક શરતી વિધાનના પોતાના ``વિરોધાભાસો'' છે. અસત્ય પૂર્વપક્ષ
+અથવા સત્ય પરિણામ ધરાવતું ભૌતિક શરતી વિધાન સત્ય હોય છે; તેવી જ રીતે
+\emph{અનિવાર્યપણે} અસત્ય પૂર્વપક્ષ અથવા અનિવાર્યપણે સત્ય પરિણામ ધરાવતું
+કડક શરતી વિધાન સત્ય હોય છે. વધુમાં, \Log{S5}માં દરેક સત્ય કડક શરતી
+વિધાન અનિવાર્યપણે સત્ય છે અને દરેક અસત્ય કડક શરતી વિધાન અનિવાર્યપણે
+અસત્ય છે. બીજા શબ્દોમાં,
+\begin{align}
+  \Box \lnot !A & \Entails !A \strictif !B\\
+  \Box !B & \Entails !A \strictif !B\\
+  !A \strictif !B& \Entails \Box(!A \strictif !B)\\
+  \lnot(!A \strictif !B) & \Entails \Box\lnot(!A \strictif !B)
+\end{align}
+$\strictif$ને ``ફલિત કરે છે'' એમ સમજીએ તો આ કોઈ સમસ્યા નથી.
+આખરે તાર્કિક ફલિતતા-સંબંધો ગાણિતિક તથ્યો છે; તેથી તે સંજોગાધીન
+હોઈ શકતા નથી. પરંતુ $\strictif$ને ``જો \dots તો \dots''નો અર્થ
+પકડતો તાર્કિક સંયોજક માનવો હોય, તો ખાસ કરીને છેલ્લા બે સંબંધો
+સમસ્યા ઊભી કરે છે. ``જો \dots તો \dots'' એવાં કેટલાંક વાક્યો
+સંજોગાધીન રીતે સત્ય અથવા સંજોગાધીન રીતે અસત્ય હોય છે જ---હકીકતમાં,
+સામાન્ય રીતે તે ન તો અનિવાર્ય હોય છે, ન તો અશક્ય.
+
+\begin{prob}
+  નીચેના \Log{S5}-પ્રમાણો આપો:
+  \begin{enumerate}
+    \item  $\Box \lnot !A \Entails !A \strictif !B$
+    \item $!A \strictif !B \Entails \Box(!A \strictif !B)$
+    \item $\lnot(!A \strictif !B)  \Entails \Box\lnot(!A \strictif !B)$
+  \end{enumerate}
+  તેના માટે $\strictif$ની વ્યાખ્યા વાપરો.
+\end{prob}
+
+\end{document}

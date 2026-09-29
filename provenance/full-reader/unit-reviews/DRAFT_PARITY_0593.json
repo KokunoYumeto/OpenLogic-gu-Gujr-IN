@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0593",
+  "checked_at_utc": "2026-09-28T03:18:50.051598+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0593 axiom of choice introduction and philosophical questions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0593",
+    "source_path": "content/set-theory/choice/introduction.tex",
+    "source_sha256": "bf4d57a0cb3263fa3b2cc386ba572017442f24e1016c995a81474e43ffaa7143",
+    "draft_path": "private-state\\work\\batch044_draft\\choice-introduction.tex",
+    "draft_sha256": "27d5a7cf43f980132f76f8692b3b94622377eb641ef935e5af707f633376f928",
+    "aligned_blocks": 6,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 64,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-cardsasords.tex",
+        "sha256": "d912bdb0f4c5d02d1df7d8473e1dcdf7484537530e196d56dad634fcd0f16356",
+        "terms": [
+          "સુક્રમિતતા",
+          "ગણાંક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-milestone.tex",
+        "sha256": "1f6cb68e1d4fb01b2f04bfc5d9c8807032658889ebab02ae4c3ff0155093d8f3",
+        "terms": [
+          "પસંદગી",
+          "સુક્રમિતતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic.tex",
+        "sha256": "0e315773c9a7ba870d76703d5d41f4c03ad42cfb889791eca9027aecd4651c25",
+        "terms": [
+          "\\olchapter{sth}{card-arithmetic}",
+          "ગણાંકો"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\crefrange{sth:cardinals::chap}{sth:card-arithmetic::chap}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,73 @@
+% part: intuitionistic-logic
+% chapter: introduction
+% section: axiomatic-derivations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{int}{axd}
+
+\olsection{સ્વયંસિદ્ધિમૂલક \usetoken{P}{derivation}}
+
+સ્ફુરણાવાદી વિધાનાત્મક તર્ક માટેની સ્વયંસિદ્ધિમૂલક
+!!{derivation}s ખ્યાલની દૃષ્ટિએ સૌથી સરળ અને ઇતિહાસમાં
+સૌથી પહેલાં આવેલાં !!{derivation} તંત્રો છે. તેઓ પ્રશિષ્ટ
+વિધાનાત્મક તર્કની જેમ જ કાર્ય કરે છે.
+
+\begin{defn}[!!^{derivability}]
+જો $\Gamma$ એ $\Lang L$નાં !!{formula}sનો ગણ હોય, તો
+$\Gamma$માંથી \emph{!!{derivation}} એ !!{formula}sનો
+સાંત ક્રમ $!A_1$, \dots,~$!A_n$ છે, જેમાં દરેક $i \le n$
+માટે નીચેનામાંથી કોઈ એક શરત પૂરી થાય છે:
+\begin{enumerate}
+\item $!A_i \in \Gamma$; અથવા
+\item $!A_i$ સ્વયંસિદ્ધિ છે; અથવા
+\item $j < i$ અને $k < i$ ધરાવતા કોઈ $!A_j$ અને $!A_k$
+  પરથી મોડસ પોનેન્સ વડે $!A_i$ મળે છે, એટલે કે
+  $!A_k \ident !A_j \lif !A_i$.
+\end{enumerate}
+\end{defn}
+
+\begin{defn}[સ્વયંસિદ્ધિઓ]
+સ્ફુરણાવાદી વિધાનાત્મક તર્ક માટેની \emph{સ્વયંસિદ્ધિઓ}નો ગણ
+$\PAx$ નીચેના સ્વરૂપોનાં બધાં !!{formula}sનો બનેલો છે:
+\begin{align}
+  & (!A \land !B) \lif !A \ollabel{ax:land1}\\
+  & (!A \land !B) \lif !B \ollabel{ax:land2}\\
+  & !A \lif (!B \lif (!A \land !B)) \ollabel{ax:land3}\\
+  & !A \lif (!A \lor !B) \ollabel{ax:lor1}\\
+  & !A \lif (!B \lor !A) \ollabel{ax:lor2}\\
+  & (!A \lif !C) \lif ((!B \lif !C) \lif ((!A \lor !B) \lif !C)) \ollabel{ax:lor3}\\
+  & !A \lif (!B \lif !A) \ollabel{ax:lif1}\\
+  & (!A \lif (!B \lif !C)) \lif ((!A \lif !B) \lif (!A \lif !C)) \ollabel{ax:lif2}\\
+  & \lfalse \lif !A \ollabel{ax:lfalse1}
+\end{align}
+\end{defn}
+
+\begin{defn}[!!^{derivability}]
+જો $\Gamma$માંથી અંતે $!A$ આવતું !!a{derivation} હોય, તો
+!!^a{formula}~$!A$ એ $\Gamma$માંથી \emph{!!{derivable}}
+છે; તેને $\Gamma \Proves !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[પ્રમેયો]
+જો ખાલી ગણમાંથી~$!A$નું !!a{derivation} હોય, તો
+!!^a{formula}~$!A$ એ \emph{પ્રમેય} છે. $!A$ પ્રમેય
+હોય તો $\Proves !A$ અને ન હોય તો $\Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{prop}
+  સ્ફુરણાવાદી તર્કના સ્વયંસિદ્ધિમૂલક !!{derivation} તંત્રમાં
+  $\Gamma \Proves !A$ હોય, તો પ્રશિષ્ટ તર્કમાં પણ
+  $\Gamma \Proves !A$. ખાસ કરીને, $!A$ સ્ફુરણાવાદી
+  પ્રમેય હોય તો પ્રશિષ્ટ પ્રમેય પણ છે.
+\end{prop}
+
+\begin{proof}
+  દરેક સ્ફુરણાવાદી સ્વયંસિદ્ધિ પ્રશિષ્ટ સ્વયંસિદ્ધિ પણ છે;
+  તેથી સ્ફુરણાવાદી તર્કની દરેક !!{derivation} પ્રશિષ્ટ
+  તર્કમાં પણ !!a{derivation} છે.
+\end{proof}
+
+\end{document}

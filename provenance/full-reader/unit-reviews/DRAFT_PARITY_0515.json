@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0515",
+  "checked_at_utc": "2026-09-27T22:09:31.556901+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0515 intuitionistic tableau soundness; state-only draft",
+  "report": {
+    "unit_id": "OLP-0515",
+    "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+    "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+    "draft_path": "private-state\\work\\batch042_draft\\intuitionistic-tableaux-soundness.tex",
+    "draft_sha256": "e36af8a30488c55768d19d85a948fab2d42658655047bca7bec56d3f9b61256e",
+    "aligned_blocks": 26,
+    "linguistic_blocks": 21,
+    "source_math_spans_correction_aware": 175,
+    "target_math_spans_after_corrections": 175,
+    "glossary_tokens": 33,
+    "source_correction_notes": [
+      "OLMD-101",
+      "OLMD-102",
+      "OLMD-103",
+      "OLMD-104",
+      "OLMD-105",
+      "OLMD-106"
+    ],
+    "source_detector_ascii_tokens": 782,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "formula_changes_limited_to_visible_repair_sites": true,
+    "four_source_rule_cases_left_as_exercises": true,
+    "full_tableau_soundness_proof_verified": false
+  },
+  "status": "draft_translation_review_passed_source_exercise_cases_open_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

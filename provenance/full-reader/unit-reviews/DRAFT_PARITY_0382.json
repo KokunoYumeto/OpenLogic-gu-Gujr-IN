@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0382",
+  "checked_at_utc": "2026-09-27T08:32:45.106734+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0382 lambda definable implies partial recursive; state-only draft",
+  "report": {
+    "unit_id": "OLP-0382",
+    "source_path": "content/lambda-calculus/lambda-definability/lambda-definable-recursive.tex",
+    "source_sha256": "ff6f9c3dbe4c11e42b9528b74afa11ecc68978c3c76211000b8e8f279ad1db07",
+    "draft_path": "private-state\\work\\batch038_draft\\lambda-definable-recursive.tex",
+    "draft_sha256": "b673911e34dea12244039eac1d81e2a8838469a480b8257d9b30acf59a3178cf",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 20,
+    "target_math_spans_after_corrections": 20,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLLAM-062"
+    ],
+    "source_detector_ascii_tokens": 184,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [],
+    "changed_identifier_block_ordinal": 4
+  },
+  "status": "draft_linguistic_and_keyed_identifier_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

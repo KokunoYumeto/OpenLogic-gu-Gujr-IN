@@ -1,0 +1,60 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: relational-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{rel}
+
+\olsection{સંબંધાત્મક નિદર્શનો}
+
+સામાન્ય મોડલ તર્કશાસ્ત્રોના અર્થવિજ્ઞાનનો મૂળભૂત ખ્યાલ
+\emph{સંબંધાત્મક નિદર્શન} છે. તેમાં જગતોનો એક ગણ હોય છે,
+જેનાં જગતો દ્વિસ્થાની ``સુલભતા સંબંધ'' વડે જોડાયેલાં હોય છે;
+સાથે એવી નિમણૂક હોય છે જે કયા જગતમાં કયા
+!!{propositional variable}sને ``સત્ય'' ગણવા તે નક્કી કરે છે.
+
+\begin{defn}
+  મૂળભૂત મોડલ ભાષાનું \emph{નિદર્શન} એ ત્રિક
+  $\mModel{M} = \tuple{W, R, V}$ છે, જ્યાં
+  \begin{enumerate}
+  \item $W$ એ ``જગતો''નો અખાલી ગણ છે,
+  \item $R$ એ~$W$ પરનો દ્વિસ્થાની સુલભતા સંબંધ છે, અને
+  \item $V$ એવું વિધેય છે જે દરેક !!{propositional
+    variable}~$p$ને શક્ય જગતોનો ગણ $V(p)$ આપે છે.
+  \end{enumerate}
+  $Rww'$ હોય ત્યારે કહીએ કે $w'$ એ~$w$માંથી \emph{સુલભ}
+  છે. $w \in V(p)$ હોય ત્યારે કહીએ કે $p$ એ~$w$માં
+  \emph{સત્ય} છે.
+\end{defn}
+
+સંબંધાત્મક અર્થવિજ્ઞાનનો મોટો લાભ એ છે કે નિદર્શનોને
+\olref{fig:simple} જેવી સરળ આકૃતિઓથી દર્શાવી શકાય છે.
+જગતો ગાંઠો વડે દર્શાવાય છે; જગત~$w'$ એ~$w$માંથી
+ત્યારે અને માત્ર ત્યારે જ સુલભ છે જ્યારે~$w$થી~$w'$
+સુધી તીર હોય. વધુમાં, $w \in V(p)$ હોય ત્યારે ગાંઠને
+(જગતને)~$\mTrue{p}$થી અને અન્યથા~\mFalse{p}થી
+ચિહ્નિત કરીએ છીએ. \olref{fig:simple}માં
+$W = \{w_1, w_2, w_3\}$, $R = \{\tuple{w_1, w_2},\tuple{w_1,
+  w_3}\}$, $V(p) = \{w_1, w_2\}$ અને $V(q) = \{w_2\}$
+ધરાવતું નિદર્શન દર્શાવ્યું છે.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$}; 
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$}; 
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{સરળ નિદર્શન.}
+  \ollabel{fig:simple}
+\end{figure}
+
+\end{document}

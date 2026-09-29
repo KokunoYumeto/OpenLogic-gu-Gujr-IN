@@ -1,0 +1,403 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: minimization-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{min}
+\olsection{નિયમિત લઘુત્તમીકરણ~$\Th{Q}$માં નિરૂપ્ય છે}
+
+હવે અમર્યાદિત શોધનો વિચાર કરીએ.
+માનો કે $g(x, z)$ નિયમિત છે અને
+!!{formula}~$!A_g(x, z, y)$ વડે
+$\Th{Q}$માં નિરૂપ્ય છે.
+માનો કે $f$ને
+$f(z) = \umin{x}{[g(x, z) = 0]}$
+દ્વારા વ્યાખ્યાયિત કરીએ.
+$f$ને નિરૂપતું
+!!a{formula}~$!A_f(z, y)$ શોધવું છે.
+$f(z)$નું મૂલ્ય એવી સંખ્યા~$x$
+છે જે (a) $g(x, z) = 0$ સંતોષે
+છે અને (b) એવી સંખ્યાઓમાં સૌથી
+નાની છે, એટલે દરેક $w < x$
+માટે $g(w, z) \neq 0$ છે.
+તેથી આ સ્વાભાવિક પસંદગી છે:
+\[
+!A_f(z,y) \ident !A_g(y, z, \Obj 0) \land \lforall[w][(w < y \lif \lnot
+  !A_g(w, z, \Obj 0))].
+\]
+સામાન્ય કિસ્સામાં, અલબત્ત,
+$z$ને $z_0$, \dots, $z_k$થી
+બદલવું પડશે.
+
+સાબિતીમાં ફરીથી એ બાબતનાં
+કેટલાંક લેમ્મા આવશે કે
+$\Th{Q}$ શું સાબિત કરવા જેટલું
+સમર્થ છે.
+
+\begin{lem}
+\ollabel{lem:succ} દરેક
+!!{constant}~$a$ અને દરેક
+પ્રાકૃતિક સંખ્યા~$n$ માટે,
+\[
+\Th{Q} \Proves \eq[(a' + \num n)][(a + \num n)'].
+\]
+\end{lem}
+
+\begin{proof}
+હંમેશની જેમ, $n$ પર અનુમાન
+વડે સાબિતી કરીએ. આરંભિક કિસ્સામાં
+$n = 0$ છે; એટલે $\Th{Q}$માં
+$\eq[(a' + \Obj 0)][(a + \Obj
+0)']$ સાબિત કરવાનું છે.
+આપણી પાસે આ છે:
+\begin{align}
+  \Th{Q} & \Proves \eq[(a' + \Obj 0)][a'] \quad \text{સ્વયંસિદ્ધિ $Q_4$ વડે}
+  \ollabel{step1}\\
+  \Th{Q} & \Proves  \eq[(a + \Obj 0)][a] \quad \text{સ્વયંસિદ્ધિ $Q_4$ વડે}
+  \ollabel{step2} \\
+  \Th{Q} & \Proves \eq[(a + \Obj 0)'][a'] \quad \text{\olref{step2} વડે}
+  \ollabel{step3} \\
+  \Th{Q} & \Proves \eq[(a' + \Obj 0)][(a + \Obj 0)'] \quad
+  \text{\olref{step1} અને \olref{step3} વડે}\notag
+\end{align}
+અનુમાનના પગલામાં ધારો કે
+$\Th{Q} \Proves \eq[(a' + \num n)][(a + \num n)']$
+બતાવી ચૂક્યા છીએ. કારણ કે
+$\num{n+1}$ એટલે $\num{n}'$,
+હવે $\Th{Q}$માં
+$\eq[(a' + \num{n}')][(a + \num{n}')']$
+સાબિત કરવાનું છે. આપણે મેળવીએ:
+\begin{align}
+  \Th{Q} & \Proves \eq[(a' + \num n')][(a' + \num n)'] \quad
+  \text{સ્વયંસિદ્ધિ $!Q_5$ વડે} \ollabel{step5}\\
+  \Th{Q} & \Proves \eq[(a' + \num n)'][(a + \num n')'] \quad
+  \text{અનુમાનની ધારણા અને સ્વયંસિદ્ધિ $!Q_5$ વડે} \ollabel{step6}\\
+  \Th{Q} & \Proves \eq[(a' + \num n')][(a + \num n')'] \quad
+  \text{\olref{step5} અને \olref{step6} વડે.} \notag
+\end{align}
+\sourcecorrection{OLINC-029}{સ્થિર અંગ્રેજી
+મૂળના અનુમાન-પગલાની બીજી પંક્તિમાં
+સાબિત કરવાનું અંતિમ સમીકરણ જ
+અનુમાનની ધારણા તરીકે લખાયું છે;
+છેલ્લી પંક્તિમાં મધ્યવર્તી સમીકરણ
+આવી જાય છે. અહીં અનુમાનની
+ધારણા તથા $Q_5$ વડે મળતું
+મધ્યવર્તી સમીકરણ બીજી પંક્તિમાં
+અને માંગેલું તારણ છેલ્લી પંક્તિમાં
+આપ્યું છે.}
+\end{proof}
+
+ફરી નોંધવું જોઈએ કે આ દાવો
+$\Th{Q}$ આ
+$\lforall[x][\lforall[y][(x' + y) = (x + y)']]$
+સાબિત કરે છે એવા દાવા કરતાં
+નબળો છે. આ !!{sentence}
+$\Struct{N}$માં સાચું હોવા છતાં
+$\Th{Q}$ તેને સાબિત કરતું નથી.
+
+\begin{lem}
+\ollabel{lem:less-zero}
+$\Th{Q} \Proves \lforall[x][\lnot x < \Obj 0]$.
+\end{lem}
+
+\begin{proof}
+સાબિતી અનૌપચારિક રીતે આપીએ
+(એટલે ઔપચારિક !!{derivation}
+કેવી રીતે રચવું તેના માત્ર સંકેતો
+આપીએ).
+
+કોઈપણ~$a$ માટે $\lnot a < \Obj 0$
+સાબિત કરવાનું છે. $<$ની
+વ્યાખ્યા પ્રમાણે $\Th{Q}$માં
+$\lnot \lexists[y][\eq[(y'+a)][\Obj 0]]$
+સાબિત કરવાનું છે. આપણે
+$\lexists[y][\eq[(y'+a)][\Obj 0]]$
+ધારીને વિરોધાભાસ મેળવીશું.
+માનો કે $\eq[(b'+a)][\Obj 0]$.
+$!Q_3$ વડે
+$\eq[a][\Obj 0] \lor \lexists[y][\eq[a][y']]$
+મળે છે. હવે બે કિસ્સા જોઈએ.
+
+કિસ્સો 1: $\eq[a][\Obj 0]$.
+$\eq[(b'+a)][\Obj 0]$માંથી
+$\eq[(b' + \Obj 0)][\Obj 0]$
+મળે છે. $\Th{Q}$ની સ્વયંસિદ્ધિ
+$!Q_4$ વડે
+$\eq[(b' + \Obj 0)][b']$,
+એટલે $\eq[b'][\Obj 0]$ મળે છે.
+પણ સ્વયંસિદ્ધિ $!Q_2$ વડે
+$\eq/[b'][\Obj 0]$ પણ મળે છે;
+આ વિરોધાભાસ છે.
+
+કિસ્સો 2: કોઈ~$c$ માટે
+$\eq[a][c']$. તો
+$\eq[(b' + c')][\Obj 0]$ મળે છે.
+સ્વયંસિદ્ધિ $!Q_5$ વડે
+$\eq[(b' + c)'][\Obj 0]$ મળે,
+જે ફરી સ્વયંસિદ્ધિ $Q_2$ની
+વિરુદ્ધ છે.
+\end{proof}
+
+\begin{lem}
+\ollabel{lem:less-nsucc}
+દરેક પ્રાકૃતિક સંખ્યા~$n$ માટે,
+  \[
+  \Th{Q} \Proves
+  \lforall[x][(x < \num {n+1} \lif (\eq[x][\Obj 0] \lor \dots \lor
+    \eq[x][\num n]))].
+  \]
+\end{lem}
+
+\begin{proof}
+$n$ પર અનુમાન વાપરીએ.
+પહેલાં $n = 0$નો આરંભિક
+કિસ્સો જોઈએ. ત્યારે કોઈપણ~$a$
+માટે $a < \num 1 \lif
+\eq[a][\Obj 0]$ બતાવવું છે.
+માનો કે $a < \num 1$. તો
+$<$ની વ્યાખ્યા આપતી સ્વયંસિદ્ધિ
+પ્રમાણે
+$\lexists[y][\eq[(y'+a)][\Obj 0']]$
+છે (કારણ કે $\num 1 \ident
+\Obj 0'$).
+
+માનો કે $b$ આ ગુણધર્મ
+ધરાવે છે, એટલે
+$\eq[(b'+a)][\Obj 0']$.
+$\eq[a][\Obj 0]$ બતાવવાનું છે.
+સ્વયંસિદ્ધિ $!Q_3$ પ્રમાણે
+$\eq[a][\Obj 0]$ અથવા
+કોઈ~$c$ માટે $\eq[a][c']$.
+પહેલા કિસ્સામાં બતાવવાનું કંઈ
+બાકી નથી. તેથી
+$\eq[a][c']$ ધારો. તો
+$\eq[(b' + c')][\Obj 0']$.
+$\Th{Q}$ની સ્વયંસિદ્ધિ $!Q_5$
+વડે $\eq[(b'+c)'][\Obj 0']$.
+સ્વયંસિદ્ધિ $!Q_1$ વડે
+$\eq[(b' + c)][\Obj 0]$.
+પણ સ્વયંસિદ્ધિ $!Q_8$ પ્રમાણે
+આનો અર્થ $c < \Obj 0$ છે,
+જે \olref{lem:less-zero}થી
+મળેલા પરિણામની વિરુદ્ધ છે.
+
+હવે અનુમાનનું પગલું જોઈએ.
+$n$ માટેનો કિસ્સો ધારીને
+$n+1$ માટે સાબિત કરીએ.
+માનો કે $a < \num {n+2}$.
+ફરી $!Q_3$ વડે બે કિસ્સા:
+$\eq[a][\Obj 0]$ અથવા
+કોઈ~$b$ માટે $\eq[a][b']$.
+પહેલા કિસ્સામાં
+$\eq[a][\Obj 0] \lor \dots \lor
+\eq[a][\num{n+1}]$ તરત મળે છે.
+બીજા કિસ્સામાં
+$b' < \num {n+2}$, એટલે
+$b' < \num{n+1}'$.
+સ્વયંસિદ્ધિ $!Q_8$ વડે કોઈ~$c$
+માટે
+$\eq[(c'+b')][\num{n+1}']$.
+સ્વયંસિદ્ધિ $!Q_5$ વડે
+$\eq[(c'+b)'][\num{n+1}']$.
+સ્વયંસિદ્ધિ $!Q_1$ વડે
+$\eq[(c'+b)][\num{n+1}]$,
+અને તેથી સ્વયંસિદ્ધિ $!Q_8$
+વડે $b < \num{n+1}$.
+અનુમાનની ધારણા પ્રમાણે
+$\eq[b][\Obj 0] \lor \dots \lor
+\eq[b][\num{n}]$. તર્કથી
+$\eq[b'][\Obj 0'] \lor \dots \lor
+\eq[b'][\num{n}']$ મળે છે;
+અને $\eq[a][b']$ હોવાથી
+$\eq[a][\num{1}] \lor \dots \lor
+\eq[a][\num{n+1}]$ મળે છે.
+\end{proof}
+
+\begin{lem}
+  \ollabel{lem:trichotomy} દરેક પ્રાકૃતિક સંખ્યા~$m$ માટે,
+  \[
+  \Th{Q} \Proves
+  \lforall[y][((y < \num{m} \lor \num{m} < y) \lor \eq[y][\num{m}])].
+  \]
+\end{lem}
+
+\begin{proof}
+$m$ પર અનુમાન કરીએ.
+પહેલાં $m=0$નો કિસ્સો લો.
+$!Q_3$ વડે
+$\Th{Q} \Proves
+\lforall[y][(\eq[y][\Obj 0] \lor \lexists[z][\eq[y][z']])]$.
+કોઈપણ~$a$ લો. તો
+$\eq[a][\Obj 0]$ અથવા
+કોઈ~$b$ માટે $\eq[a][b']$.
+પહેલા કિસ્સામાં
+$(a < \Obj 0 \lor \Obj
+0 < a) \lor \eq[a][\Obj 0]$
+પણ મળે છે. જો $\eq[a][b']$,
+તો~$\eq$ માટેના તર્ક વડે
+$\eq[(b' + \Obj 0)][(a + \Obj 0)]$.
+$!Q_4$ વડે
+$\eq[(a + \Obj 0)][a]$;
+તેથી $\eq[(b' + \Obj 0)][a]$,
+અને પરિણામે
+$\lexists[z][\eq[(z' + \Obj 0)][a]]$.
+$!Q_8$ની $<$ની વ્યાખ્યા
+પ્રમાણે $\Obj 0 < a$.
+જો $\Obj 0 < a$, તો
+$(\Obj 0 < a \lor a
+< \Obj 0) \lor \eq[a][\Obj 0]$
+પણ મળે છે.
+
+હવે ધારો કે આ સાબિત થયું છે:
+\begin{align*}
+  \Th{Q} & \Proves \lforall[y][((y < \num{m} \lor \num{m} < y) \lor
+    \eq[y][\num{m}])]
+  \intertext{અને આપણે આ બતાવવું છે:}
+  \Th{Q} & \Proves \lforall[y][((y < \num{m+1} \lor \num{m+1} < y) \lor
+    \eq[y][\num{m+1}])]
+\end{align*}
+કોઈપણ~$a$ લો. $!Q_3$ પ્રમાણે
+$\eq[a][\Obj 0]$ અથવા
+કોઈ~$b$ માટે $\eq[a][b']$.
+પહેલા કિસ્સામાં $!Q_4$ વડે
+$\eq[\num{m}' +
+a][\num{m+1}]$; એટલે $!Q_8$
+વડે $a < \num{m+1}$.
+
+હવે બીજો કિસ્સો લો:
+$\eq[a][b']$. અનુમાનની
+ધારણા પ્રમાણે
+$(b < \num{m} \lor \num{m} < b) \lor
+    \eq[b][\num{m}]$.
+
+પહેલો વિકલ્પ $b < \num{m}$
+$!Q_8$ પ્રમાણે
+$\lexists[z][\eq[(z' + b)][\num{m}]]$
+ની સમકક્ષ છે. માનો કે~$c$ આ
+ગુણધર્મ ધરાવે છે. જો
+$\eq[(c' + b)][\num{m}]$,
+તો $\eq[(c' + b)'][\num{m}']$
+પણ મળે છે. $!Q_5$ વડે
+$\eq[(c' + b')][(c' + b)']$.
+એટલે $\eq[(c' +
+b')][\num{m}']$. હવે~$c$
+પર અસ્તિત્વ-પરિમાણક લાવીને
+અને $\num{m}' \ident
+\num{m+1}$ ધ્યાનમાં રાખીને
+$\lexists[u][\eq[(u' + b')][\num{m+1}]]$
+મળે છે. તેથી $b < \num{m}$
+હોય, તો $b' < \num{m+1}$;
+અને $a < \num{m+1}$.
+\sourcecorrection{OLINC-030}{સ્થિર અંગ્રેજી
+મૂળ અહીં $Q_5$ વડે નિરર્થક
+સ્વસમાનતા લખે છે અને પછી
+$c'$ પર અસ્તિત્વ-પરિમાણક
+લાવવાનું કહે છે. જરૂરી સમીકરણ
+$(c'+b')=(c'+b)'$ છે;
+તેમાં સાક્ષી~$c$ જ છે, જેને
+પરિમાણિત કરતાં $b'<\num{m+1}$
+મળે છે.}
+
+હવે $\num{m} < b$ માનો,
+એટલે
+$\lexists[z][\eq[(z' +
+\num{m})][b]]$. માનો કે~$c$
+આવું~$z$ છે, એટલે
+$\eq[(c' + \num{m})][b]$.
+તર્કથી
+$\eq[(c' + \num{m})'][b']$.
+$!Q_5$ વડે
+$\eq[(c' + \num{m}')][b']$.
+$\eq[a][b']$ અને
+$\num{m}' \ident \num{m+1}$
+હોવાથી
+$\eq[(c' + \num{m+1})][a]$.
+$!Q_8$ વડે $\num{m+1} < a$.
+
+છેવટે $\eq[b][\num{m}]$
+ધારો. તો તર્કથી
+$\eq[b'][\num{m}']$;
+એટલે $\eq[a][\num{m+1}]$.
+
+આથી $m$ અને~$b$ માટેના
+દરેક વિકલ્પમાંથી $m+1$
+અને~$a$ માટેનો અનુરૂપ
+વિકલ્પ મળે છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-minimization}
+$!A_g(x, z, y)$ એ~$g(x, z)$ને
+$\Th{Q}$માં નિરૂપે, તો
+\[
+!A_f(z,y) \ident !A_g(y, z, \Obj 0) \land \lforall[w][(w < y \lif \lnot
+  !A_g(w, z, \Obj 0))]
+\]
+એ $f(z) = \umin{x}{[g(x, z) = 0]}$ને
+નિરૂપે છે.
+\end{prop}
+
+\begin{proof}
+પહેલાં બતાવીએ કે $f(n) = m$
+હોય, તો
+$\Th{Q} \Proves !A_f(\num n, \num m)$,
+એટલે કે
+\begin{align}
+  \Th{Q} & \Proves !A_g(\num{m}, \num{n}, \Obj 0) \land \lforall[w][(w <
+    \num{m} \lif \lnot !A_g(w, \num{n}, \Obj 0))]. \notag
+  \intertext{કારણ કે $!A_g(x, z, y)$ એ $g(x, z)$ને નિરૂપે છે અને $f(n) = m$ હોય તો $g(m, n) = 0$, તેથી}
+\Th{Q} & \Proves !A_g(\num{m}, \num{n}, \Obj 0). \notag
+\intertext{$f(n) = m$ હોય, તો દરેક $k < m$ માટે $g(k, n) \neq 0$. તેથી}
+\Th{Q} & \Proves \lnot !A_g(\num{k}, \num{n}, \Obj 0). \notag
+\intertext{આ પરથી મળે છે:}
+\Th{Q} & \Proves \lforall[w][(w < \num{m} \lif \lnot
+  !A_g(w, \num{n}, \Obj 0))]. \ollabel{rep-less}
+\end{align}
+$m = 0$ હોય તો
+\olref{lem:less-zero} વડે અને
+અન્યથા \olref{lem:less-nsucc}
+વડે છેલ્લું તારણ મળે છે.
+
+હવે $f(n) = m$ હોય, તો
+$\Th{Q} \Proves
+\lforall[y][(!A_f(\num{n}, y) \lif
+\eq[y][\num{m}])]$
+તે બતાવીએ. દલીલ ફરી
+અનૌપચારિક રીતે દર્શાવીએ અને
+ઔપચારિક રૂપાંતર વાચક પર છોડીએ.
+
+માનો કે $!A_f(\num{n}, b)$.
+ત્યારે (a) $!A_g(b, \num{n},
+\Obj 0)$ અને (b)
+$\lforall[w][(w < b \lif \lnot !A_g(w, \num{n}, \Obj
+  0))]$ મળે છે.
+\olref{lem:trichotomy} પ્રમાણે
+$(b < \num{m} \lor \num{m} < b)
+\lor \eq[b][\num{m}]$.
+$b < \num{m}$ અને $\num{m}
+< b$ બંને વિરોધાભાસ આપે છે
+તે બતાવીએ.
+
+જો $\num{m} < b$, તો~(b)
+પરથી $\lnot !A_g(\num{m},
+\num{n}, \Obj 0)$ મળે છે.
+પરંતુ $m = f(n)$ હોવાથી
+$g(m, n) = 0$; અને~$!A_g$
+એ~$g$ને નિરૂપે છે, એટલે
+$\Th{Q} \Proves !A_g(\num{m},
+\num{n}, \Obj 0)$.
+આ વિરોધાભાસ છે.
+
+હવે $b < \num{m}$ માનો.
+\olref{rep-less} પ્રમાણે
+$\Th{Q} \Proves \lforall[w][(w <
+  \num{m} \lif \lnot !A_g(w, \num{n}, \Obj 0))]$;
+તેથી $\lnot !A_g(b, \num{n},
+\Obj 0)$ મળે છે. આ ફરી~(a)
+ની વિરુદ્ધ છે.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0656",
+  "checked_at_utc": "2026-09-28T18:51:43.877149+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0656 Topmost CutCS elimination by double induction in G3c; state-only draft",
+  "report": {
+    "unit_id": "OLP-0656",
+    "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+    "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+    "draft_path": "private-state\\work\\batch044_draft\\ce-topmost.tex",
+    "draft_sha256": "6d89260497dd7a143dde6973720f3430f498a7ae5edff57d06406d071d808938",
+    "aligned_blocks": 41,
+    "linguistic_blocks": 36,
+    "source_math_spans_correction_aware": 289,
+    "target_math_spans_after_corrections": 289,
+    "glossary_tokens": 90,
+    "source_correction_notes": [
+      "OLMD-200",
+      "OLMD-201",
+      "OLMD-202",
+      "OLMD-203",
+      "OLMD-204",
+      "OLMD-205"
+    ],
+    "source_detector_ascii_tokens": 1581,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "In the second case, $\\pi_2$ is\n!!a{proof} of $\\Gamma \\Sequent \\Delta', !A, !A$",
+        "In the second case, $\\pi_1$ is\n!!a{proof} of $\\Gamma \\Sequent \\Delta', !A, !A$"
+      ],
+      [
+        "\\UnaryInf$\\Gamma, \\fCenter \\Delta', !D, !D$",
+        "\\UnaryInf$\\Gamma \\fCenter \\Delta', !D, !D$"
+      ],
+      [
+        "\\Deduce$\\Gamma \\fCenter \\Delta, !B \\land !C, !C, !A$",
+        "\\Deduce$\\Gamma \\fCenter \\Delta', !B \\land !C, !C, !A$"
+      ],
+      [
+        "\\BinaryInf$\\Gamma \\fCenter \\Delta, !B \\land !C, !B \\land !C$",
+        "\\BinaryInf$\\Gamma \\fCenter \\Delta', !B \\land !C, !B \\land !C$"
+      ],
+      [
+        "\\cutr{\\pi}",
+        "\\cutrank{\\pi}"
+      ],
+      [
+        "\\RightSubproofLabel{$\\pi_1''$}\n\\RightLabel{\\CutCS}\n\\BinaryInf$!B, \\Gamma \\fCenter \\Delta$",
+        "\\RightSubproofLabel{$\\pi_1''$}\n\\RightLabel{\\CutCS}\n\\BinaryInf$\\Gamma \\fCenter \\Delta$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "શિથિલીકરણ",
+          "સંકોચન",
+          "અદલાબદલી",
+          "કટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

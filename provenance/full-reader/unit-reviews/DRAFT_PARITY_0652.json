@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0652",
+  "checked_at_utc": "2026-09-28T18:19:06.818902+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0652 Many-valued sequent derivability, consistency, and compactness; state-only draft",
+  "report": {
+    "unit_id": "OLP-0652",
+    "source_path": "content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex",
+    "source_sha256": "3c31cced541d949d031c706ea2042db536f047619dfedb6f06257555ea84c061",
+    "draft_path": "private-state\\work\\batch044_draft\\mvl-proof-theoretic-notions.tex",
+    "draft_sha256": "a731ddabb373236c6e27a469ed4784e3c50bfd3a4157af3f48da5e1d3b5c8990",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 99,
+    "target_math_spans_after_corrections": 99,
+    "glossary_tokens": 30,
+    "source_correction_notes": [
+      "OLMD-189"
+    ],
+    "source_detector_ascii_tokens": 344,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "\\olref[fol][seq][ptn]{prop:incons}",
+        "\\olref[mvl][seq][prf]{prop:incons}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\proof-theoretic-notions.tex",
+        "sha256": "4198b3cbe7c82641e4b723e334b3ec2c81ddc6d29242fd8638a2d0ec9ee81ec3",
+        "terms": [
+          "સાબિતી-સૈદ્ધાંતિક ખ્યાલો",
+          "પ્રમેયો",
+          "સુસંગતતા",
+          "સ્વવાચકતા",
+          "એકદિશવર્ધિતા",
+          "પરંપરિતતા",
+          "સઘનતા",
+          "સંકોચન",
+          "શિથિલીકરણ",
+          "અદલાબદલી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

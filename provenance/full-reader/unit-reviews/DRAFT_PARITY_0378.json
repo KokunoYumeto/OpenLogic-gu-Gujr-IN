@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0378",
+  "checked_at_utc": "2026-09-27T08:07:09.814549+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0378 primitive recursive functions are lambda definable; state-only draft",
+  "report": {
+    "unit_id": "OLP-0378",
+    "source_path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+    "source_sha256": "dbedc0b45f7d2ce9eebd36a219fe22b532ddebb6082fb4bf356afc612f4e294d",
+    "draft_path": "private-state\\work\\batch038_draft\\primitive-recursive-functions.tex",
+    "draft_sha256": "df6c541f11feaca2a8c218a1892eb2f9c42d6a5fabfd138ca1664988c24272f4",
+    "aligned_blocks": 21,
+    "linguistic_blocks": 17,
+    "source_math_spans_correction_aware": 65,
+    "target_math_spans_after_corrections": 65,
+    "glossary_tokens": 13,
+    "source_correction_notes": [
+      "OLLAM-054",
+      "OLLAM-055",
+      "OLLAM-056"
+    ],
+    "source_detector_ascii_tokens": 311,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      8,
+      13
+    ]
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

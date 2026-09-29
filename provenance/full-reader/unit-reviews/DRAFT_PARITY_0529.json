@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0529",
+  "checked_at_utc": "2026-09-27T23:03:32.245239+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0529 set-theory part_driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0529",
+    "source_path": "content/set-theory/set-theory.tex",
+    "source_sha256": "2ecb71a25920205cd2d00a9ad69601348ff5fd0db30e5b94d396d0da01007a21",
+    "draft_path": "private-state\\work\\batch044_draft\\set-theory.tex",
+    "draft_sha256": "eb470a1bc4adbf335d48633421818ddf36a93e0fff497cb8c38974a29593fd25",
+    "aligned_blocks": 6,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 3,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "active_imports_preserved": 9,
+    "structural_scan_exclusions": [
+      {
+        "token": "sth",
+        "count": 1,
+        "reason": "part identifier"
+      }
+    ]
+  },
+  "status": "draft_linguistic_and_import_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

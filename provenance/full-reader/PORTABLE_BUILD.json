@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-gu-full-reader-guarded-build/1",
+  "started_at_utc": "2026-09-29T03:50:26.5121442Z",
+  "mutex": "Global\\InterlanguageTeXSlotV1",
+  "timeout_ms": 1000,
+  "acquired": true,
+  "steps": [
+    {
+      "step": "lualatex-1",
+      "process_id": 74808,
+      "exit_code": 0
+    },
+    {
+      "step": "lualatex-2",
+      "process_id": 79152,
+      "exit_code": 0
+    },
+    {
+      "step": "lualatex-3",
+      "process_id": 71292,
+      "exit_code": 0
+    }
+  ],
+  "status": "three_lualatex_passes_succeeded_visual_QA_pending",
+  "log": {
+    "path": "project\\build\\full-reader\\gu-full-reader-proof.log",
+    "sha256": "68a8f34582a0b9195f0b659a22ff988e576b35b6508215b7fa6dfc19b96d0b7d"
+  },
+  "missing_characters": [],
+  "undefined_references": [],
+  "pdf": {
+    "path": "project\\build\\full-reader\\gu-full-reader-proof.pdf",
+    "bytes": 8640831,
+    "sha256": "7b452b63950cdfcbd5c0729fb2281cd41d49459a57b7703ef5974a8165e82aef"
+  },
+  "ended_at_utc": "2026-09-29T03:56:01.2019270Z",
+  "tex_errors": [],
+  "saved_log": {
+    "path": "project\\build\\full-reader\\20260929T035026Z.tex.log",
+    "sha256": "68a8f34582a0b9195f0b659a22ff988e576b35b6508215b7fa6dfc19b96d0b7d"
+  }
+}

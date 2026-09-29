@@ -1,0 +1,32 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: basic-pr-lambda
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{bas}
+\olsection{મૂળભૂત આદિમ પુનરાવર્તી વિધેયો \usetoken{S}{lambda definable} છે}
+
+\begin{lem}
+વિધેયો $\Zero$, $\Succ$ અને $\Proj{n}{i}$ !!{lambda definable} છે.
+\end{lem}
+
+\begin{proof}
+$\Zero$ એટલે માત્ર $\lambd[x][\lambd[y][y]]$.
+
+ઉત્તરગામી વિધેય~$\Succ$ને
+$\fn{Succ}(u) = \lambd[x][\lambd[y][x(uxy)]]$ વડે વ્યાખ્યાયિત
+કરીએ છીએ. આ કેવી રીતે કામ કરે છે તે વિચારો. દરેક ચર્ચ અંક~$\num{n}$ને
+પુનરાવર્તક માનો અને કોઈપણ વિધેય~$f$ લો. ત્યારે
+$\fn{Succ}(\num{n},f)$ એવું વિધેય છે જે ઇનપુટ~$y$ પર, $y$થી
+શરૂ કરીને~$f$ને $n$ વખત લાગુ કરે છે અને પછી વધુ એક વખત લાગુ કરે છે.
+
+પ્રક્ષેપો માટે કંઈ વિશેષ કહેવાનું નથી:
+$\fn{Proj}^n_i(x_0, \dots, x_{n-1}) = x_i$. બીજા શબ્દોમાં,
+આપણા સંકેતન મુજબ $\fn{Proj}^n_i$ એ લૅમ્બડા પદ
+$\lambd[x_0][\dots \lambd[x_{n-1}][x_i]]$ છે.
+\end{proof}
+
+\end{document}

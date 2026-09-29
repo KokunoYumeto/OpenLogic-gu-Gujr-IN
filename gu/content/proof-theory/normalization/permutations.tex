@@ -1,0 +1,569 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: permutations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{per}
+
+\olsection{ક્રમપરિવર્તન-રૂપાંતરો}
+
+\Log{N1i}માં કટ
+એવા ખંડો છે
+જેમનો અંત
+!!a{elimination} નિયમના
+મુખ્ય આધારવિધાનમાં
+થાય છે. સામાન્યીકરણની
+સાબિતીમાં એક કિસ્સો
+મહત્તમ કટની લંબાઈ
+અને તેની સાથે
+આખી !!{proof}ની
+કટ-લંબાઈ ઘટાડવાનો છે.
+$>1$ લંબાઈનો કટ
+ઘણી રીતે પૂરો
+થઈ શકે છે: કટમાં
+$!A$ની છેલ્લી
+!!{formula} આવૃત્તિ
+(\Elim{\lor} કે
+\Elim{\lexists})નું
+નિષ્કર્ષ છે કે નહીં,
+અને તે કયા
+!!{elimination} અનુમાનનું
+મુખ્ય આધારવિધાન
+છે, તેના પર
+તે આધાર રાખે છે.
+
+દાખલા તરીકે, સંબંધિત
+અનુમાનો~\Elim{\lor}
+અને~\Elim{\land}
+હોય, $!A \ident !B \land !C$
+હોય, અને
+ઉપ-!!{proof}~$\delta_1$નો
+અંત આ રીતે
+થતો હોય:
+\sourcecorrection{OLMD-253}{મૂળ ગદ્યમાં $!A$ને $!B \lor !C$ કહે છે, પરંતુ નીચેના વૃક્ષમાં કટનું છેલ્લું મુખ્ય સૂત્ર $!B \land !C$ છે; દાખલાના અનુરૂપ અહીં સંયોજન રાખ્યું છે.}
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B \land !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!B \land !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\]
+કટમાં છેલ્લી
+!!{formula} આવૃત્તિ~$!A_n$
+એ~\Elim{\lor}નું નિષ્કર્ષ,
+નીચેનું $!B \land !C$,
+છે. છેલ્લાથી
+આગળની
+!!{formula} આવૃત્તિ~$!A_{n-1}$
+એ~\Elim{\lor}ના
+ગૌણ આધારવિધાનોમાંથી
+એક છે.
+
+આ કટની લંબાઈ
+ઘટાડવા~\Elim{\lor}
+અને~\Elim{\land}
+અનુમાનોનો ક્રમ
+બદલી (``ક્રમપરિવર્તન''
+કરી) શકાય છે.
+એટલે~$\delta$માંની
+ઉપસાબિતી~$\delta_1$ના
+સ્થાને આ મૂકીએ:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B$}
+\DisplayProof
+\]
+અગાઉ~\Elim{\lor}ની
+નીચેના~\Elim{\land}ના
+આધારવિધાનમાં પૂરા
+થતા કટો હવે
+\Elim{\lor}ના ગૌણ
+આધારવિધાનોની ઉપરના
+\Elim{\land} અનુમાનોમાંથી
+એકના આધારવિધાનમાં
+પૂરા થાય છે.
+એટલે દરેકની
+લંબાઈ~$1$ ઘટે છે.
+
+વળી, સંપૂર્ણપણે
+$\delta_2$, $\delta_3$
+અથવા~$\delta_4$ની
+અંદરનો કટ, કે
+$\delta$માં~$\delta_1$ની
+સંપૂર્ણપણે બહારનો
+કટ, યથાવત્ રહે
+છે: તે જ
+!!{formula}s અને
+તે જ અનુમાનોમાંથી
+પસાર થાય છે.
+તેથી ખાસ કરીને,
+$\delta$માંના અનુરૂપ
+કટ જેટલી જ તેની
+કક્ષા અને લંબાઈ
+રહે છે. આમ નવી
+!!{proof}ની કટ-કક્ષા
+વધતી નથી અને
+નવી !!{proof}ની
+કટ-લંબાઈ
+જૂની !!{proof}ની
+કટ-લંબાઈ કરતાં
+ઓછી છે.
+
+\begin{prob}
+ક્રમપરિવર્તન-રૂપાંતર પછી
+ઓછામાં ઓછા એક
+કટની લંબાઈ~$1$
+ઘટે છે.
+\Elim{\land}ને~\Elim{\lor}
+ની આરપાર ખસેડીએ
+ત્યારે હકીકતમાં
+બે કટ-ખંડોની
+લંબાઈ ઘટે છે;
+એથી આ કિસ્સામાં
+!!{proof}ની કટ-લંબાઈ
+ઓછામાં ઓછી~$2$
+ઘટે છે. એક જ
+આવા ક્રમપરિવર્તનથી
+!!a{proof}ની કટ-લંબાઈ
+$2$થી વધુ ઘટી
+શકે? કટની
+\emph{કક્ષા} ઘટી શકે?
+\end{prob}
+
+!!a{elimination} નિયમને
+\Elim{\lor} કે
+\Elim{\lexists} નિયમની
+ઉપર ખસેડવાની
+પ્રક્રિયાને
+\emph{ક્રમપરિવર્તન-રૂપાંતર}
+કહે છે. કેટલાક
+નિયમ-યુગ્મો માટેનાં
+નમૂના
+\olref{tab:permutation-conversions}માં
+આપ્યાં છે.
+(બાકીનાં કસરત
+તરીકે મૂક્યાં છે.)
+
+% \begin{table}
+% \begin{multline*}
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!C$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!C$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B(t)$}
+% \DisplayProof}
+% \end{multline*}
+% \caption{Some permutation conversions for \Log{N1i}.}
+% \ollabel{tab:permutation-conversions}
+% \end{table}
+
+{\small
+\begin{longtable}{@{}l@{}}
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\quad\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DisplayProof
+\quad$\longrightarrow$\\[8ex]
+\quad\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B(t)$}
+\DisplayProof
+\\
+\caption{\Log{N1i} માટેનાં કેટલાંક ક્રમપરિવર્તન-રૂપાંતરો.}
+\ollabel{tab:permutation-conversions}
+\end{longtable}
+}
+\sourcecorrection{OLMD-254}{મૂળ કોષ્ટકમાં અનુસરણ-લોપના બે મધ્યવર્તી રૂપાંતર-નમૂના એકસરખા પુનરાવર્તિત થાય છે. મૂળના વૃક્ષો યથાવત્ રાખ્યાં છે; કોઈ ગાયબ નમૂનો અનુમાનથી ઉમેર્યો નથી.}
+
+\begin{prob}
+\Elim{\lor} પછી
+\Elim{\lor} અથવા
+\Elim{\lnot} આવે
+ત્યારેનાં
+ક્રમપરિવર્તન-રૂપાંતરો
+આપો.
+\end{prob}
+
+\begin{prob}
+\Elim{\lexists} પછી
+\Elim{\exists} આવે
+ત્યારેનાં
+ક્રમપરિવર્તન-રૂપાંતરો
+આપો. છેલ્લા
+કિસ્સામાં કોઈ
+સ્વનિર્ધારક ચલની
+શરત કેમ ભંગાતી
+નથી તે સમજાવો.
+\end{prob}
+
+ક્રમપરિવર્તન-રૂપાંતર
+લગાવતાં કોઈ
+સ્વનિર્ધારક ચલની
+શરત ભંગાતી નથી,
+તેની ખાતરી કરીએ.
+આ જુઓ:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\DisplayProof
+\]
+તેના સ્થાને
+આ મૂકીએ:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\]
+તો કદાચ
+સ્વનિર્ધારક ચલ~$c$
+દાખલા તરીકે~$!D$માં
+આવતું હોય એવી
+ચિંતા થાય. મૂળ
+વૃક્ષમાં ધારણા~$!D$
+મૂળના~$\Elim{\lexists}$ની
+ઉપર મુક્ત થાય છે.
+તેથી મૂળ !!{proof}માં
+તે~\Elim{\exists}
+અનુમાનના મુખ્ય
+આધારવિધાનની ઉપર
+ખુલ્લી રહેલી
+ધારણામાં આવતું
+નથી; ત્યાં
+સ્વનિર્ધારક ચલની
+શરત સંતોષાય છે.
+પણ નવી !!{proof}માં
+$!D$~\Elim{\lexists}
+અનુમાનો પછી જ
+મુક્ત થાય છે,
+એટલે શરત ભંગાતી
+હોય એમ લાગે.
+જોકે યાદ રાખો
+કે આપણે
+!!{proof}s નિયમિત
+છે એમ માનીએ છીએ:
+દરેક સ્વનિર્ધારક
+ચલ માત્ર એક
+અનુમાનનું સ્વનિર્ધારક
+ચલ છે અને આખી
+!!{proof}માં તે
+માત્ર~\Elim{\lexists}ના
+ગૌણ આધારવિધાનની
+ઉપર જ આવે છે.
+ખાસ કરીને,
+$c$~$\delta_3$માં
+કે~$\delta_4$માં
+આવી શકતું નથી.
+
+આ દાખલો બીજી
+એક વાત પણ
+બતાવે છે: નવી
+!!{proof}માં~$\delta_5$ની
+બે નકલો છે.
+જો~$\delta_5$માં
+મહત્તમ કટ હોય,
+તો આપણે કટ-લંબાઈ
+\emph{ઘટાડી નથી}!
+તેથી~$\delta_5$માં
+મહત્તમ કટ નથી
+તેની ખાતરી હોય
+ત્યારે જ
+ક્રમપરિવર્તન-રૂપાંતર
+લગાવવું જોઈએ.
+આ માટે હંમેશાં
+\emph{સૌથી ઉપરનો}
+મહત્તમ કટ પસંદ
+કરીશું: એટલે
+એવો મહત્તમ કટ
+જેની ઉપ-!!{proof}
+(અહીં~$\delta_1$)માં
+તે ઉપ-!!{proof}ના
+છેલ્લા અનુમાનની
+ઉપર પૂરો થતો
+બીજો કોઈ મહત્તમ
+કટ ન હોય.
+એથી~$\delta_5$માં
+(અને ખરેખર
+$\delta_2$, $\delta_3$
+કે~$\delta_4$માં પણ)
+બીજા મહત્તમ
+કટ હોવાની શક્યતા
+દૂર થાય છે.
+
+\end{document}

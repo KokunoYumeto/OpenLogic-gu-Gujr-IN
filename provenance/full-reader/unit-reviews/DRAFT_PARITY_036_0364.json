@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/36-0364",
+  "checked_at_utc": "2026-09-27T06:32:27.204223+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0364 term-revisited; state-only draft",
+  "report": {
+    "unit_id": "OLP-0364",
+    "source_path": "content/lambda-calculus/syntax/term-revisited.tex",
+    "source_sha256": "6b58e0943a9203c2d90bc0c533f880effdb583993134da6c2448cc3aad79fc67",
+    "draft_path": "private-state\\work\\batch036_draft\\term-revisited.tex",
+    "draft_sha256": "e169ed86a5663ecdc40bb978c1cc110377085820aa68578015f3961436dd85dd",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 44,
+    "target_math_spans_after_corrections": 49,
+    "glossary_tokens": 1,
+    "source_correction_notes": [
+      "OLLAM-027",
+      "OLLAM-028"
+    ],
+    "source_detector_ascii_tokens": 376,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7,
+      12,
+      15
+    ],
+    "open_proof_dependency": "OLP-0362 alpha freshening/substitution theorem proof remains open"
+  },
+  "status": "draft_linguistic_and_correction_aware_math_parity_passed_alpha_proof_dependency_open_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

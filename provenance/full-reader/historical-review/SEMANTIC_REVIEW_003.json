@@ -1,0 +1,152 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Read exact Gujarati and English blocks, record reverse paraphrase for quantifiers, directions, domain restrictions, proof assumptions and exceptions.",
+  "samples": [
+    {
+      "segment_id": "OLP-0021-B008",
+      "source_sha256": "1a9c00c6186215b6f00d0523fe092abb22a5d6f90bf08855123c0f93fe67705c",
+      "target_sha256": "d2b21471edc86d33879842e8f4aadb7001874925721bf5c6d28cb8b2c022451b",
+      "reverse_paraphrase": "Each domain element is assigned an element of the codomain. The range consists only of attained values.",
+      "assessment": "Domain, codomain and range remain distinct.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0021-B019",
+      "source_sha256": "18855592a5020d19f8604f6b8a3e91917a69514a700a9998a563b0aa025a8f04",
+      "target_sha256": "e7b18967a8ab41036d398acad4bc25e0f6df0a44cda78f8b00c2e2497ec1b828",
+      "reverse_paraphrase": "Different expressions define the same function when all argument values agree and the domain and codomain are shared.",
+      "assessment": "Extensional equality depends on the stated same-domain/codomain proviso.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0021-B020",
+      "source_sha256": "018253adf7b90e04c7b950e2514e648b511b1dcca6ee97817bd350c4ad9211fb",
+      "target_sha256": "ceb9b04e304b1ebd26cee9925197be58240eb1e17640e76e0e2c35ae9c4fc766",
+      "reverse_paraphrase": "Every input must be in exactly one case. Exhaustiveness and exclusivity may need proof.",
+      "assessment": "Both coverage and uniqueness requirements retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0021-B014",
+      "source_sha256": "e6533df94def2e8df976226fcf71fd04e7cbe45b42ebca872bd8dbe1a5940b55",
+      "target_sha256": "784fe3b42fdcb73aa370de7a4791158a48205fc4a9f7491176fdd5d447a360c1",
+      "reverse_paraphrase": "The selector is the nonnegative principal square root because the natural-number domain includes zero.",
+      "assessment": "Corrected positive-at-zero wording is disclosed next to the example and leaves the preceding positive-integer two-root claim unchanged.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0021-B018",
+      "source_sha256": "c3623158b7f7e5efb2ea4e2ec5440cac7815d63b23a33b2410cc515171283fdc",
+      "target_sha256": "606e776c27c3c664c03cb4fe95175cddfe1f529a9cc67e3a926cf0df93ff1822",
+      "reverse_paraphrase": "The example uses x consistently as the input and returns x+1.",
+      "assessment": "One n-to-x token correction is disclosed and keyed in structural parity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0022-B008",
+      "source_sha256": "80390506bae7ef67ff781f23f4154cf505ddb2ef50afa3edff909b434c277ad4",
+      "target_sha256": "3792f93686b980f4afcc01f12dddfc10d5550a00b3caa6f8ba84442bd1180b3a",
+      "reverse_paraphrase": "Surjection means every codomain y has at least one domain x with f(x)=y.",
+      "assessment": "Quantifier direction and existence retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0022-B012",
+      "source_sha256": "435cbf070ccfce3c9dc4fe9a01f602fe9c94be3db58ec69fdbef7d5d1b51e836",
+      "target_sha256": "2e6245ae58f5da49c076cc29133ce4707b29331395e73a434cc27cb8e6caf872",
+      "reverse_paraphrase": "Injection means each codomain y has at most one domain preimage; it need not have any.",
+      "assessment": "At-most-one distinguished from at-least-one.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0023-B010",
+      "source_sha256": "78961aaf565071ce75e25a46c3175af74ccb117e4edd9892675ea0e1f7061d85",
+      "target_sha256": "df3f6d1ec535148ee491b67c74aaae935f452a2d3795daa54f9fa402d75c95c7",
+      "reverse_paraphrase": "A relation with a unique output wherever related and an output for every domain input is the graph of a total function.",
+      "assessment": "Both functionality and totality hypotheses kept.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0023-B012",
+      "source_sha256": "2c8f39ad38d29a2482062e58eb6825b7a58d3422f104887de2efc44ea2fa19ec",
+      "target_sha256": "224374b020e5e3a4e7a890acbec0101d964a80af2ccb8536a58e58de1fc9c481",
+      "reverse_paraphrase": "Functions can be treated as graphs for mathematical convenience, without a metaphysical identity claim; the graph is typed as a relation contained in A times B.",
+      "assessment": "Both conditional reader branches translated; OLFUN-004 terminology repair disclosed in the same aligned block.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0023-B014",
+      "source_sha256": "19300f2257b6a2d8b71d9d8de83d2936a7e746479d1d03d1b7add7836f3db1aa",
+      "target_sha256": "0359dfd2b5b9d3504536e56dd96e623e0baec5fcda624d655ab2eeb6e7b6e29a",
+      "reverse_paraphrase": "Restriction changes the domain to C and keeps values on C. Application to C returns the set of attained values.",
+      "assessment": "The explicit domain-only function restriction remains unchanged.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0023-B016",
+      "source_sha256": "51d1011bf98f09f79768ab1dcef075632b5dd670d2e44b10af0701df114390d9",
+      "target_sha256": "be6bc6fae9f3433d8412911c6f53bea3ddfdd78620e6663bbc57c3b8d9cc036f",
+      "reverse_paraphrase": "Function restriction is analogous to relation restriction but acts only on the input coordinate, while the earlier homogeneous relation restriction acts on both coordinates.",
+      "assessment": "The source claim of exact identity is qualified and the distinction is disclosed.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0024-B008",
+      "source_sha256": "83e14e4ba16ba9c7e51c519e5a36d441eec7f4bd1a014b5187281df281287046",
+      "target_sha256": "3348a97dff3989ee1174eb5e1cdc7462a702216ccd836eb0e4b9f0fb6fc58a88",
+      "reverse_paraphrase": "An inverse B to A undoes f in both orders on all of A and B.",
+      "assessment": "Both compositions and domain ranges retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0024-B013",
+      "source_sha256": "fc53c2f003abe6219a376351614d5fdf231c21ba64701ead1933aa8b0390b971",
+      "target_sha256": "a46f6afb499412c41c6a7a4eb12635c36806a2f5c778aaa31f8530422b1c8765",
+      "reverse_paraphrase": "For an injection with nonempty domain, choose the unique preimage on the range and a fixed domain element outside the range.",
+      "assessment": "The theorem and proof now state the needed nonempty-domain condition; OLFUN-001 also discloses the empty-to-singleton counterexample and exact general condition.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0024-B016",
+      "source_sha256": "496c7f95f4db990f3c818ea27b4ac61c43409ed269ba458f9b0cf309b77f5a02",
+      "target_sha256": "b9273558cc87b9831512835034863147d06a55fc4d42da2174b99f238b88ae61",
+      "reverse_paraphrase": "A surjection admits a right inverse by selecting one preimage for each codomain element. This assumes choice in general; finite or natural-number domain, and bijections, are exceptions.",
+      "assessment": "Footnote, both future-chapter branches and no-choice singleton argument all retained.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0024-B026",
+      "source_sha256": "32d60f1b244cc5fa1e18c4d8aafd0522a20f53b4c90a79cf10cb5e6473613dff",
+      "target_sha256": "9e7cf744b74bd9737ff969d0dd9bef95ee734da8f31967bb29d5645d3e49abad",
+      "reverse_paraphrase": "A function has at most one two-sided inverse.",
+      "assessment": "Uniqueness does not imply existence.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0025-B007",
+      "source_sha256": "abc5b617d140759bcb6fd599545513060766f9c2947ea2422957197ce3d96207",
+      "target_sha256": "b343444e0e46e29e4f433068338e4e0a93e0761eafcabd8816d9197f3eb0ca79",
+      "reverse_paraphrase": "The composition of f with g applies f first, then g: g(f(x)).",
+      "assessment": "Order preserved despite notation macro arguments f,g.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0026-B007",
+      "source_sha256": "ceecc9b394be0ebbbde1e32e066043c14bf77173dc711709b964f965d58dd769",
+      "target_sha256": "4df23be1080d1dc157f1097508ce7c4a94fb648d337ade4a593c5f8ace276b15",
+      "reverse_paraphrase": "A partial function assigns at most one output to each ambient A input. Its domain is the subset where it is defined.",
+      "assessment": "Ambient source set and defined domain are not conflated.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0026-B012",
+      "source_sha256": "b2616e45eba1852e018079c5736f895aadb152d012122759f2b8a8fdcaf18773",
+      "target_sha256": "34e9a67634d855310f4537c8b04735251beba2bb7a425d91801fa151914a00f4",
+      "reverse_paraphrase": "A functional relation defines a partial function, and seriality additionally makes it total.",
+      "assessment": "Serial means every source element has a target, not an ordered sequence.",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ]
+}

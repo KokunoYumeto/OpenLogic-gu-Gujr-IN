@@ -1,0 +1,66 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0615",
+  "checked_at_utc": "2026-09-28T14:53:56.904056+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0615 natural-number induction, dice sums, and recursively defined sums; state-only draft",
+  "report": {
+    "unit_id": "OLP-0615",
+    "source_path": "content/methods/induction/induction-on-N.tex",
+    "source_sha256": "30a7fe3bf67517b5744d826eeb819782d399cf28a018313f5a7eff12843fe222",
+    "draft_path": "private-state\\work\\batch044_draft\\induction-induction-on-N.tex",
+    "draft_sha256": "c46d9788251e82d66c33cf2fd1a3ee97558b1d96ca182578b26df4004c8eed1f",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 13,
+    "source_math_spans_correction_aware": 131,
+    "target_math_spans_after_corrections": 131,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-163"
+    ],
+    "source_detector_ascii_tokens": 708,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$1$ for~$n$",
+        "$1$ for~$k$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\model-theory\\interpolation\\interpolation-proof.tex",
+        "sha256": "2532d55c94839690bfbebe65ffb9f1ce923ff3e2dbce71d7b0fd3342e37530ff",
+        "terms": [
+          "આગમનનો આધાર",
+          "આગમન-પગલું",
+          "આગમન-પરિકલ્પના"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\axiomatic-deduction\\rules-and-proofs.tex",
+        "sha256": "ab7348dffd7001a526285e5d6a6d087576a2f90b4a7daf749695cb49a1a32148",
+        "terms": [
+          "મોડસ પોનેન્સ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ etc.}",
+        "target": "\\text{ વગેરે}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

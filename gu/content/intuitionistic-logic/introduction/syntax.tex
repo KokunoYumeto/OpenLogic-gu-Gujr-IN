@@ -1,0 +1,81 @@
+% part: intuitionistic-logic
+% chapter: introduction
+% section: syntax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{int}{syn}
+
+\olsection{સ્ફુરણાવાદી તર્કની વાક્યરચના}
+
+સ્ફુરણાવાદી તર્કની વાક્યરચના વિધાનાત્મક તર્ક જેવી જ છે.
+પ્રશિષ્ટ વિધાનાત્મક તર્કમાં કેટલાક સંયોજકોને બીજાં સંયોજકો
+વડે વ્યાખ્યાયિત કરી શકાય છે. દાખલા તરીકે, $!A \lif !B$ને
+$\lnot !A \lor !B$ વડે, અથવા $!A \lor !B$ને
+$\lnot(\lnot !A \land \lnot !B)$ વડે વ્યાખ્યાયિત કરી શકીએ.
+તેથી પ્રશિષ્ટ તર્કની રજૂઆતોમાં કેટલાક સંયોજકો આવી વ્યાખ્યાઓના
+સંક્ષેપ તરીકે રજૂ થાય છે. સ્ફુરણાવાદી તર્કમાં એવું નથી, બે
+અપવાદો સિવાય: $\lnot !A$ને $!A \lif \lfalse$ના સંક્ષેપ
+તરીકે વ્યાખ્યાયિત કરી શકાય છે---અને ઘણી વાર કરાય છે. તો,
+અલબત્ત, $\lfalse$ પોતે વ્યાખ્યાયિત સંક્ષેપ ન હોવું જોઈએ!{}
+વળી, પ્રશિષ્ટ તર્કની જેમ $!A \liff !B$ને
+$(!A \lif !B) \land (!B \lif !A)$ તરીકે વ્યાખ્યાયિત કરી
+શકાય છે.
+
+વિધાનાત્મક સ્ફુરણાવાદી તર્કનાં !!^{formula}s
+\emph{!!{propositional variable}s} અને વિધાનાત્મક
+અચલાંક~$\lfalse$માંથી \emph{તાર્કિક સંયોજકો} વડે રચાય છે.
+આપણી પાસે છે:
+
+\begin{enumerate}
+\item !!{propositional variable}sનો !!^a{denumerable} ગણ~$\PVar$:
+  $\Obj p_0$,
+  $\Obj p_1$, \dots
+  \item !!{falsity} માટેનો વિધાનાત્મક અચલાંક~$\lfalse$.
+\item તાર્કિક સંયોજકો: $\land$ (સંયોજન), $\lor$ (વિયોજન),
+  $\lif$ (શરતી સંયોજક).
+\item વિરામચિહ્નો: (, ), અને અલ્પવિરામ.
+\end{enumerate}
+
+\begin{defn}[સૂત્ર]
+\ollabel{defn:formulas} વિધાનાત્મક સ્ફુરણાવાદી તર્કનાં
+\emph{!!{formula}s}નો ગણ~$\Frm[L_0]$ નીચે મુજબ આગમનાત્મક
+રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item $\lfalse$ પરમાણુક !!{formula} છે.
+
+\item દરેક !!{propositional variable}~$\Obj p_i$ પરમાણુક
+  !!{formula} છે.
+
+\item જો $!A$ અને $!B$ એ !!{formula}s હોય, તો $(!A \land
+  !B)$ પણ !!a{formula} છે.
+
+\item જો $!A$ અને $!B$ એ !!{formula}s હોય, તો $(!A \lor !B)$
+  પણ !!a{formula} છે.
+
+\item જો $!A$ અને $!B$ એ !!{formula}s હોય, તો $(!A \lif !B)$
+  પણ !!a{formula} છે.
+
+\tagitem{limitClause}{આ સિવાય બીજું કશું !!a{formula} નથી.}{}
+\end{enumerate}
+\end{defn}
+
+ઉપર જણાવેલા મૂળભૂત સંયોજકો ઉપરાંત, નીચેના \emph{વ્યાખ્યાયિત}
+સંકેતો પણ વાપરીએ છીએ: $\lnot$ (નિષેધ) અને $\liff$
+(!!{biconditional}). આ વ્યાખ્યાયિત સંક્રિયકો વડે બનેલાં
+સૂત્રોને નીચે મુજબ સમજવાનાં છે:
+\begin{enumerate}
+\item $\lnot !A$ એ $!A \lif \lfalse$નો સંક્ષેપ છે.
+
+\item $!A \liff !B$ એ $(!A \lif !B) \land (!B
+  \lif !A)$નો સંક્ષેપ છે.
+\end{enumerate}
+
+જોકે $\lnot$ને ઔપચારિક રીતે સંક્ષેપ ગણીએ છીએ, કેટલીક વાર
+તે મૂળભૂત હોય તેમ $\lnot$ માટે સ્પષ્ટ નિયમો અને વ્યાખ્યાની
+શરતો આપીશું. મુખ્યત્વે અભ્યાસ-પ્રશ્નો રજૂ કરી શકાય તે માટે
+આવું કરીશું.
+
+\end{document}

@@ -1,0 +1,63 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: propositions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{pro}
+
+\olsection{વિધાનો}
+
+ક્યારેક !!a{relational model}~$\mModel{M}$માં
+!!a{formula}~$!A$ જ્યાં સાચું હોય તે જગતોના
+ગણને નામ આપવું ઉપયોગી છે. તેને $!A$ દ્વારા
+વ્યાખ્યાયિત \emph{વિધાન} કહીએ છીએ અને
+$\Prop{M}{!A}$ લખીએ છીએ.
+
+\begin{defn}
+  $V$ વિધેયને આગમનાત્મક રીતે
+  $\Prop{M}{\cdot} \colon \Frm
+  \to \Pow{W}$ વિધેય સુધી આ પ્રમાણે વિસ્તરીએ:
+  \begin{enumerate}
+  \item $\Prop{M}{\lfalse} = \emptyset$
+  \item $\Prop{M}{p} = V(p)$
+  \item $\Prop{M}{\lnot !B} = {}$
+    \[
+      \Setabs{w \in W}{\text{દરેક $w'$ માટે જે $Rww'$ સંતોષે છે, $w'
+          \notin \Prop{M}{!B}$}}.
+    \]
+  \item $\Prop{M}{!B \land !C} = \Prop{M}{!B} \cap \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lor !C} = \Prop{M}{!B} \cup \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lif !C} = {}$
+    \[
+      \Setabs{w \in W}{\text{દરેક $w'$ માટે જે $Rww'$ સંતોષે છે, જો $w'
+          \in \Prop{M}{!B}$ હોય તો $w' \in \Prop{M}{!C}$}}.
+    \]
+  \end{enumerate}
+  \sourcecorrection{OLMD-185}{મૂળમાં આખા વિધેયની
+  પ્રકાર-ઘોષણામાં $\Prop{M}{!A}$ લખ્યું છે, જોકે
+  $!A$ અહીં વિધેયનું આર્ગ્યુમેન્ટ છે; તેથી
+  $\Prop{M}{\cdot}$ રાખ્યું છે.}
+\end{defn}
+
+\begin{prop}
+  \ollabel{prop:propositions-true}
+  $\mSat{M}{!A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $w \in \Prop{M}{!A}$.
+  \sourcecorrection{OLMD-186}{મૂળ વિધાનમાં
+  $\mModel{M}{!A}[w]$ છે; અગાઉ વ્યાખ્યાયિત
+  જગત-ખાતે સત્યતાની સંજ્ઞા $\mSat{M}{!A}[w]$
+  અહીં જરૂરી છે.}
+\end{prop}
+
+\begin{proof}
+  સ્વાધ્યાય.
+\end{proof}
+
+\begin{prob}
+  \olref[int][sem][pro]{prop:propositions-true} સાબિત કરો.
+\end{prob}
+
+\end{document}

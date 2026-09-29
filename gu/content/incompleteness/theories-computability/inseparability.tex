@@ -1,0 +1,77 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: inseparability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{ins}
+
+\olsection{$\Th{Q}$માં સાબિત અને નકારી શકાય એવાં વાક્યો
+  સંગણનીય રીતે અવિભાજ્ય છે}
+
+
+$\Th{\bar Q}$ એ એવાં
+વાક્યોનો ગણ માનો કે જેના
+{\em નિષેધો} $\Th{Q}$માં
+સાબિત થાય છે; એટલે
+$\Th{\bar Q} = \Setabs{!A}{\Th{Q} \Proves
+  \lnot !A}$.
+યાદ રાખો કે વિચ્છિન્ન
+ગણો $A$ અને $B$ને
+સંગણનીય રીતે અવિભાજ્ય
+ત્યારે કહીએ જ્યારે એવો
+સંગણનીય ગણ~$C$ ન હોય
+કે $A \subseteq C$ અને
+$B \subseteq \Complement{C}$.
+
+\begin{lem}
+$\Th{Q}$ અને
+$\Th{\bar Q}$ સંગણનીય
+રીતે અવિભાજ્ય છે.
+\end{lem}
+
+\begin{proof}
+માનો કે $C$ એવો સંગણનીય
+ગણ છે કે $\Th{Q} \subseteq C$
+અને $\Th{\bar Q} \subseteq \Complement{C}$.
+$R(x,y)$ સંબંધ નીચે મુજબ લો:
+\begin{quote}
+$x$ એ સૂત્ર $!D(u)$નો
+સંકેત છે અને $!D(\num y)$
+એ $C$માં છે.
+\end{quote}
+$R(x,y)$ સાર્વત્રિક
+સંગણનીય સંબંધ છે એમ
+બતાવીને વિરોધાભાસ
+મેળવીશું.
+
+માનો કે $S(y)$ સંગણનીય
+છે અને તેને $\Th{Q}$માં
+$!D_S(u)$ નિરૂપે છે.
+ત્યારે
+\begin{eqnarray*}
+S(\num n) & \lif & \Th{Q} \Proves !D_S(\num n) \\
+& \lif & !D_S(\num n) \in C
+\end{eqnarray*}
+અને
+\begin{eqnarray*}
+\lnot S(\num n) & \lif & \Th{Q} \Proves \lnot !D_S(\num n) \\
+& \lif & !D_S(\num n) \in \Th{\bar Q} \\
+& \lif & !D_S(\num n) \not\in C
+\end{eqnarray*}
+આથી $S(y)$ એ
+$R(\#(!D_S(u)),y)$ની
+સમકક્ષ છે.
+\sourcecorrection{OLINC-041}{સ્થિર અંગ્રેજી
+મૂળના અંતિમ સંકેતમાં
+$!D_S(\num u)$ લખાયું છે.
+અહીં $R$નો પહેલો ઘટક
+મુક્ત ચલવાળા સૂત્ર
+$!D_S(u)$નો સંકેત છે;
+ચલને અંકરૂપ આપતું
+ચિહ્ન તેથી દૂર કર્યું છે.}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,46 @@
+% Part: applied-modal-logics
+% Chapter: temporal-logic
+% Section: extra-operators
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{tl}{ext}
+
+\olsection{સમયસંબંધી તર્ક માટે વધારાના સંક્રિયકો}
+
+ભૂતકાળ અને ભવિષ્ય માટેના એકસ્થાની સંક્રિયકો ઉપરાંત સમયસંબંધી
+તર્કપદ્ધતિઓમાં ક્યારેક ``ત્યારથી'' અને ``ત્યાં સુધી'' દર્શાવતા
+દ્વિસ્થાની સંક્રિયકો~$\Since $ અને~$\Until$ પણ હોય છે. એટલે
+સમયસંબંધી તર્કની ભાષામાં $\Since $ અને~$\Until$ ઉમેરીએ છીએ અને
+સમયસંબંધી !!{formula}ની વ્યાખ્યામાં નીચેની શરત ઉમેરીએ છીએ:
+
+\begin{itemize}
+\item[] જો $!A$ અને $!B$ એ !!{formula}s હોય, તો $(\Since  !A !B)$ અને
+  $(\Until !A !B)$ બંને !!{formula}s છે.
+\end{itemize}
+
+પછી આ સંક્રિયકોનું અર્થવિજ્ઞાન નીચે મુજબ છે:
+
+\begin{defn}\ollabel{defn:since-until}
+  નિદર્શ~$\mModel M$માં \emph{!!a{formula}~$!A$નું~$t$એ સત્ય હોવું}:
+  \begin{enumerate}
+  \item\ollabel{defn:sub:mmodels-since} \indcase{!A}{\Since  !B
+    !C}{$\mSat{M}{\indfrm}[t]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $t' \prec t$ ધરાવતા કોઈ $t' \in T$ માટે $\mSat{M}{!B}[t']$ હોય,
+    અને $t' \prec s \prec t$ ધરાવતા દરેક $s$ માટે
+    $\mSat{M}{!C}[s]$ હોય}
+   \item\ollabel{defn:sub:mmodels-until} \indcase{!A}{\Until !B
+    !C}{$\mSat{M}{\indfrm}[t]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $t \prec t'$ ધરાવતા કોઈ $t' \in T$ માટે $\mSat{M}{!B}[t']$ હોય,
+    અને $t \prec s \prec t'$ ધરાવતા દરેક $s$ માટે
+    $\mSat{M}{!C}[s]$ હોય}
+  \end{enumerate} 
+\end{defn}
+
+$\Since  !B !C$નો સહજ અર્થ છે: ``$!B$ સાચું હતું ત્યારથી
+$!C$~સાચું રહ્યું છે.'' અને $\Until !B !C$નો સહજ અર્થ છે:
+``$!B$ સાચું થશે ત્યાં સુધી $!C$~સાચું રહેશે.''
+
+\end{document}

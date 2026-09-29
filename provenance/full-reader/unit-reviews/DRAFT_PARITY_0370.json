@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0370",
+  "checked_at_utc": "2026-09-27T06:53:25.767766+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0370 beta reduction; state-only draft with upstream proof dependency",
+  "report": {
+    "unit_id": "OLP-0370",
+    "source_path": "content/lambda-calculus/church-rosser/beta-reduction.tex",
+    "source_sha256": "c51e50d16a675080277053003c33dc22951be9a43bb9910cc1bf1dff6e05f361",
+    "draft_path": "private-state\\work\\batch037_draft\\beta-reduction.tex",
+    "draft_sha256": "2e47ad43d138b77a3fcca4562db51e76b1c32660e4c1a08c6fb49a8b73399e64",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 84,
+    "target_math_spans_after_corrections": 87,
+    "glossary_tokens": 1,
+    "source_correction_notes": [
+      "OLLAM-036",
+      "OLLAM-037",
+      "OLLAM-038"
+    ],
+    "source_detector_ascii_tokens": 140,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      8,
+      11
+    ],
+    "open_proof_dependency": "OLP-0369 parallel beta diamond proof relies on an unproved substitution-composition step"
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_upstream_proof_dependency_open_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0660",
+  "checked_at_utc": "2026-09-28T19:11:05.758759+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0660 Auxiliary implication cut-reduction fragment; state-only draft",
+  "report": {
+    "unit_id": "OLP-0660",
+    "source_path": "content/proof-theory/cut-elimination/intuitionistic.tex",
+    "source_sha256": "4fc53ce7b95d519d63b400945ad34012779aee9d48404b74cfbfee829a0c9b26",
+    "draft_path": "private-state\\work\\batch044_draft\\intuitionistic.tex",
+    "draft_sha256": "ad5a61e2469839b934844b01e494989b64c9235ddad3a62468ca6984c27a2385",
+    "aligned_blocks": 1,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 16,
+    "target_math_spans_after_corrections": 16,
+    "glossary_tokens": 10,
+    "source_correction_notes": [
+      "OLMD-215",
+      "OLMD-216",
+      "OLMD-217",
+      "OLMD-218",
+      "OLMD-219",
+      "OLMD-220"
+    ],
+    "source_detector_ascii_tokens": 61,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "B!",
+        "!B"
+      ],
+      [
+        "!B, \\Gamma, \\Pi, \\Pi \\fCenter \\Delta, \\Lambda,\n\\Lambda",
+        "!B, \\Gamma, \\Pi \\fCenter \\Delta, \\Lambda",
+        2
+      ],
+      [
+        "\\RightLabel{$\\pi_2'''$}\n\\Deduce$!B, \\Gamma, \\Pi \\fCenter \\Delta, \\Lambda$\n\\RightLabel{\\Cut}\n\\BinaryInf$!B, \\Gamma, \\Pi \\fCenter \\Delta, \\Lambda$",
+        "\\RightLabel{$\\pi_2'''$}\n\\Deduce$!B, \\Gamma, \\Pi \\fCenter \\Delta, \\Lambda$\n\\RightLabel{\\Cut}\n\\BinaryInf$\\Gamma, \\Gamma, \\Pi, \\Pi \\fCenter \\Delta, \\Delta, \\Lambda, \\Lambda$"
+      ],
+      [
+        "\\cutr{\\pi}",
+        "\\cutrank{\\pi}"
+      ],
+      [
+        "$\\Gamma,\n\\Gamma, \\Pi, \\Pi, \\Pi \\fCenter \\Delta, \\Lambda, \\Lambda, \\Lambda$",
+        "$\\Gamma, \\Gamma, \\Pi, \\Pi \\fCenter \\Delta, \\Delta, \\Lambda, \\Lambda$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "કટ",
+          "સંકોચન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ce-topmost.tex",
+        "sha256": "6d89260497dd7a143dde6973720f3430f498a7ae5edff57d06406d071d808938",
+        "terms": [
+          "કટ-ક્રમ",
+          "કટ-ઊંચાઈ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

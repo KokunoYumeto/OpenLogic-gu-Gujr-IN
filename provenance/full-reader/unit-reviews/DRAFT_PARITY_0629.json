@@ -1,0 +1,85 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0629",
+  "checked_at_utc": "2026-09-28T15:35:43.653664+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0629 Bertrand Russell biography, analytic philosophy and activism; state-only draft",
+  "report": {
+    "unit_id": "OLP-0629",
+    "source_path": "content/history/biographies/bertrand-russell.tex",
+    "source_sha256": "4b13fffaac861f87a7e36182296f5896a8be923bf21d19dfbcf1b0a7bb253bbd",
+    "draft_path": "private-state\\work\\batch044_draft\\bertrand-russell.tex",
+    "draft_sha256": "62ee9c1b9f784ed9bf15e80e0f7aaa810c41371961e1fb6277ee1f06ea6d4eaa",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 432,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\proof-systems\\axiomatic-deduction.tex",
+        "sha256": "83ee5b0f14053eaa0b81be7ff1c8d6a20f4993fb5a60f1c3c79db4114bae5937",
+        "terms": [
+          "બર્ટ્રાન્ડ રસેલ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\beyond\\introduction.tex",
+        "sha256": "b79e6bdb4554cea8371f7f31d1ac9e4e7aa1dd6449951885aaf60cfd68b37330",
+        "terms": [
+          "રસેલ અને વ્હાઇટહેડે"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\sets\\russells-paradox.tex",
+        "sha256": "6946b2ff400e46866f64e91253e6d319c83c04c43d182c4dc701bf870965c002",
+        "terms": [
+          "રસેલનો વિરોધાભાસ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Principia Mathematica",
+        "count": 1,
+        "reason": "Exact Latin proper title of Russell and Whitehead's cited work."
+      },
+      {
+        "literal": "On\n  Denoting",
+        "count": 1,
+        "reason": "Exact English proper title of Russell's paper."
+      },
+      {
+        "literal": "The Stanford Encyclopedia of Philosophy",
+        "count": 1,
+        "reason": "Exact English proper title of the cited reference work."
+      },
+      {
+        "literal": "Introduction to Mathematical Philosophy",
+        "count": 1,
+        "reason": "Exact English proper title of Russell's cited audiobook."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "russell-bertrand",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

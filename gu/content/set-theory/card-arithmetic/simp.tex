@@ -1,0 +1,165 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+\olfileid{sth}{card-arithmetic}{simp}
+
+\olsection{સરવાળો અને ગુણાકારનું સરળીકરણ}
+
+અનંતાતીત ગણાંક-સરવાળો અને ગણાંક-ગુણાકાર
+\emph{અત્યંત} સહેલા નીવડે છે. કારણ કે ગણાંકો
+ચોક્કસ ક્રમવાચક સંખ્યાઓ છે; તેથી તેઓ સુક્રમિત
+છે અને એક ચોક્કસ રીતે તેમનો ઉપયોગ કરી શકાય છે.
+જોકે આ બતાવવું \emph{એટલું} સહેલું નથી. શરૂઆતમાં
+થોડી ચતુર વ્યાખ્યા જોઈએ:
+
+\begin{defn}
+ક્રમવાચક સંખ્યાઓની જોડીઓ પર \emph{પ્રમાણભૂત ક્રમ}
+$\canonord$ આમ વ્યાખ્યાયિત કરીએ:
+$\tuple{\alpha_1, \alpha_2} \canonord
+\tuple{\beta_1, \beta_2}$ જો અને માત્ર જો નીચેનામાંથી
+કોઈ એક શરત સાચી હોય:
+\begin{enumerate}
+	\item $\max(\alpha_1, \alpha_2) < \max(\beta_1, \beta_2)$; અથવા
+	\item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ અને
+	$\alpha_1 < \beta_1$; અથવા
+	\item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ અને
+	$\alpha_1 = \beta_1$ અને $\alpha_2 < \beta_2$
+\end{enumerate}
+\end{defn}
+
+\begin{lem}
+કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$ માટે
+$\tuple{\alpha \times \alpha, \canonord}$ સુક્રમ છે.
+\end{lem}
+
+\begin{proof}
+$\alpha \times \alpha$ પર $\canonord$ પૂર્ણ તુલનાત્મક છે
+તે સ્પષ્ટ છે. કારણ કે ધારો કે
+$\tuple{\alpha_1, \alpha_2}$ અને
+$\tuple{\beta_1, \beta_2}$ પૈકી કોઈ પણ બીજી કરતાં
+$\canonord$ મુજબ નાની નથી. તો
+$\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$
+અને $\alpha_1 = \beta_1$ તથા $\alpha_2 = \beta_2$;
+તેથી $\tuple{\alpha_1, \alpha_2} =
+\tuple{\beta_1,  \beta_2}$.
+
+સુક્રમિતતા બતાવવા અરિક્ત
+$X \subseteq \alpha\times\alpha$ લો. $\alpha$
+ક્રમવાચક સંખ્યા હોવાથી
+$\Setabs{\max(\gamma_1, \gamma_2)}{\tuple{\gamma_1,
+\gamma_2} \in X}$માં કોઈ લઘુતમ ઘટક $\delta$ છે.
+હવે $\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
+\delta}$માંથી લઘુતમ પ્રથમ ઘટક ન ધરાવતી બધી જોડીઓ
+દૂર કરો. બાકીની જોડીઓમાં લઘુતમ બીજો ઘટક ધરાવતી
+જોડી $X$ની $\canonord$ મુજબ લઘુતમ જોડી છે.
+\end{proof}
+\noindent
+હવે એક નાનું, સરળ અવલોકન:
+
+\begin{prop}\ollabel{simplecardproduct}
+જો $\cardeq{\alpha}{\beta}$ હોય, તો
+$\cardeq{\alpha \times \alpha}{\beta \times \beta}$.
+\end{prop}
+
+\begin{proof}
+$f \colon \alpha \to \beta$ પરથી
+$\tuple{\gamma_1, \gamma_2} \mapsto
+\tuple{f(\gamma_1), f(\gamma_2)}$ લો.
+\end{proof}
+\noindent
+હવે આ બધું એક નિર્ણાયક લેમાના પુરાવામાં વાપરીશું:
+\begin{lem}\ollabel{alphatimesalpha}
+કોઈ પણ અનંત ક્રમવાચક સંખ્યા $\alpha$ માટે
+$\cardeq{\alpha}{\alpha \times \alpha}$.
+\end{lem}
+
+\begin{proof}
+વિરોધાભાસ માટે ધારો કે આ ખોટું પડે એવી
+લઘુતમ અનંત ક્રમવાચક સંખ્યા $\alpha$ છે.
+\olref[sfr][siz][zigzag]{natsquaredenumerable}
+બતાવે છે કે $\cardeq{\omega}{\omega\times\omega}$;
+તેથી $\omega \in \alpha$. વધુમાં $\alpha$ ગણાંક છે:
+વિરોધાભાસ માટે અન્યથા ધારો. તો
+$\card{\alpha} \in \alpha$, તેથી અનુમાન મુજબ
+$\cardeq{\card{\alpha}}{\card{\alpha} \times
+\card{\alpha}}$; અને વ્યાખ્યાથી
+$\cardeq{\card{\alpha}}{\alpha}$; તેથી
+\olref{simplecardproduct}થી
+$\cardeq{\alpha}{\alpha\times\alpha}$.
+
+હવે દરેક $\tuple{\gamma_1, \gamma_2} \in
+\alpha \times \alpha$ માટે આ ખંડ જુઓ:
+\begin{align*}
+	\text{Seg}(\gamma_1, \gamma_2) &= \Setabs{\tuple{\delta_1, \delta_2} \in \alpha \times \alpha}{\tuple{\delta_1, \delta_2} \canonord \tuple{\gamma_1, \gamma_2}}
+\end{align*}
+$\gamma = \max(\gamma_1, \gamma_2)$ લો. નોંધો કે
+$\tuple{\gamma_1, \gamma_2} \canonord
+\tuple{\gamma+1, \gamma + 1}$. તેથી $\gamma$
+અનંત હોય ત્યારે:
+\begin{align*}
+	\text{Seg}(\gamma_1, \gamma_2) & 
+	\precsim ((\gamma \ordplus 1)\ordtimes (\gamma \ordplus 1))\\
+	&\approx (\gamma \ordtimes \gamma)
+	\text{, \olref[ord-arithmetic][using-addition]{ordinfinitycharacter} અને 
+	\olref{simplecardproduct} મુજબ}\\
+	&\approx \gamma \text{, અનુમાનની ધારણા મુજબ}\\
+	& \prec \alpha\text{, કારણ કે $\alpha$ ગણાંક છે}
+\end{align*}
+આથી $\ordtype{\alpha\times \alpha, \canonord} \leq
+\alpha$, અને તેથી $\cardle{\alpha \times
+\alpha}{\alpha}$. નિશ્ચિતપણે
+$\cardle{\alpha}{\alpha \times \alpha}$ પણ છે;
+તેથી શ્રેડર--બર્નસ્ટાઇનથી પરિણામ મળે છે.
+\end{proof}
+
+અંતે આપણને ઇચ્છેલું સરળીકરણ મળે છે:
+
+\begin{thm}\ollabel{cardplustimesmax}
+$\cardfont{a}, \cardfont{b}$ અનંત ગણાંકો હોય, તો:
+\[
+	\cardfont{a}
+\cardtimes \cardfont{b} = \cardfont{a} \cardplus \cardfont{b} =
+\text{max}(\cardfont{a}, \cardfont{b}).
+\]
+\end{thm}
+
+\begin{proof}
+સામાન્યતા ગુમાવ્યા વિના
+$\cardfont{a} = \max(\cardfont{a},
+\cardfont{b})$ ધારો. પછી \olref{alphatimesalpha}
+વાપરીને
+$\cardfont{a}\cardtimes\cardfont{a} = \cardfont{a} \leq \cardfont{a}
+\cardplus \cardfont{b} \leq \cardfont{a} \cardplus \cardfont{a} \leq
+\cardfont{a} \cardtimes \cardfont{a}$.
+\end{proof}\noindent એ જ રીતે
+$\cardfont{a}$ અનંત હોય, તો કદ
+$\leq\cardfont{a}$ ધરાવતા ગણોના $\cardfont{a}$
+કદના યોગગણનું કદ પણ $\leq\cardfont{a}$ છે:
+
+\begin{prop}\ollabel{kappaunionkappasize}
+ધારો કે $\cardfont{a}$ અનંત ગણાંક છે. દરેક
+ક્રમવાચક સંખ્યા $\beta \in \cardfont{a}$ માટે
+$X_\beta$ એવો ગણ લો કે
+$\card{X_\beta} \leq \cardfont{a}$. તો
+$\card{\bigcup_{\beta \in \cardfont{a}} X_\beta}
+\leq \cardfont{a}$.
+\end{prop}
+
+\begin{proof}
+દરેક $\beta \in \cardfont{a}$ માટે
+!!a{injection} $f_\beta \colon X_\beta \to
+\cardfont{a}$ નક્કી કરો.\footnote{આ વિધેયો
+``નક્કી'' કેવી રીતે કરાય છે? જુઓ
+\olref[sth][choice][countablechoice]{sec}.}
+!!a{injection} $g \colon \bigcup_{\beta \in
+\cardfont{a}} X_\beta \to \cardfont{a} \times
+\cardfont{a}$ને $g(v) = \tuple{\beta, f_\beta(v)}$
+વડે વ્યાખ્યાયિત કરો, જ્યાં $v \in X_\beta$
+અને દરેક $\gamma \in \beta$ માટે
+$v \notin X_\gamma$. હવે
+\olref{cardplustimesmax} મુજબ
+$\bigcup_{\beta \in \cardfont{a}} X_\beta \preceq
+\cardfont{a} \times \cardfont{a} \approx \cardfont{a}$.
+\end{proof}
+
+\end{document}

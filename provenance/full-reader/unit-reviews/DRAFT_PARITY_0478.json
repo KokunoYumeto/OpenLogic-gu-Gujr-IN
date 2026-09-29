@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0478",
+  "checked_at_utc": "2026-09-27T19:38:59.090782+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0478 temporal logic semantics; state-only draft",
+  "report": {
+    "unit_id": "OLP-0478",
+    "source_path": "content/applied-modal-logic/temporal-logic/temporal-logic-semantics.tex",
+    "source_sha256": "237c841d5cb359d63f994fd71e13fb6e7101c266c2390e0059ab52e9efb8fd6d",
+    "draft_path": "private-state\\work\\batch041_draft\\temporal-logic-semantics.tex",
+    "draft_sha256": "05005ca20c6bd9c4797a8a09340d5de68acb6ac3a1034383467fbd7b4dd17d2f",
+    "aligned_blocks": 24,
+    "linguistic_blocks": 19,
+    "source_math_spans_correction_aware": 101,
+    "target_math_spans_after_corrections": 101,
+    "glossary_tokens": 27,
+    "source_correction_notes": [
+      "OLMD-076"
+    ],
+    "source_detector_ascii_tokens": 341,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_after_visible_typo_repair": true,
+    "inductive_cases_preserved": 11,
+    "four_tense_operator_quantifiers_and_time_directions_checked": true,
+    "source_comment_metadata_mismatch": "The frozen source comment says language-epistemic-logic although file ID aml/tl/sem and reader content are temporal; comment preserved as non-rendered source metadata pending editorial integration."
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

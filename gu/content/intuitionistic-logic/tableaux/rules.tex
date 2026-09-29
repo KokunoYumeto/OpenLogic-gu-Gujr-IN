@@ -1,0 +1,174 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{rul}
+
+\olsection{સ્ફુરણાવાદી તર્ક માટેના નિયમો}
+
+$\land$ અને $\lor$ માટેના નિયમો સામાન્ય વિધાનસંબંધી
+ચિહ્નિત !!{tableau}s જેવા જ છે; ફક્ત ઉપસર્ગો ઉમેરાય છે.
+દરેક કિસ્સામાં ચિહ્નિત !!{formula}
+$\sFmla{S}{!A}[\sigma]$ પર લાગુ થયેલો નિયમ નવાં
+!!{formula}s આપે છે, જેમને પણ~$\sigma$ ઉપસર્ગ હોય છે.
+આ સહજ છે: દાખલા તરીકે, $!A \land !B$ એ~$\sigma$
+નામના જગતમાં સત્ય હોય, તો $!A$ અને $!B$ પણ
+~$\sigma$માં સત્ય છે. આ નિયમના નિષ્કર્ષ પર અન્ય
+જગતનો ઉપસર્ગ મૂકાતો નથી.
+\sourcecorrection{OLMD-098}{મૂળનું કૌંસ કહે છે કે
+$!A$ અને $!B$ બીજા કોઈ જગતમાં સત્ય નથી;
+સ્ફુરણાવાદી એકદિશવર્ધિતાથી તેઓ સુલભ જગતોમાં પણ
+સત્ય હોય છે. નિયમ માત્ર એ જ ઉપસર્ગ પર નિષ્કર્ષ
+લખે છે એમ સ્પષ્ટ કર્યું છે.}
+$\land$ અને $\lor$ના નિયમો \olref{tab:prop-rules}માં
+એકત્ર કર્યા છે.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\land}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\True}{!B}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\land}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\False}{!B}[\sigma]$}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lor}}
+    \UnaryInfC{$\sFmla{\True}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lor}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+  \end{array}\]
+  \caption{$\land$ અને $\lor$ માટે ઉપસર્ગવાળા !!{tableau} નિયમો}
+  \ollabel{tab:prop-rules}
+\end{table}
+
+બંધતાની શરત સામાન્ય !!{tableau}s જેવી છે, પરંતુ
+!!{formula}s સાથે ઉપસર્ગો પણ સુસંગત હોવા જોઈએ. વધુમાં,
+અહીં થોડી વ્યાપક શરત લઈ શકીએ: સ્ફુરણાવાદી
+નિદર્શોમાં !!{formula}s એક વાર સત્ય બને, પછી
+સત્ય રહે છે. તેથી $!A$ એ~$\sigma$માં સત્ય હોય
+અને સુલભ ઉપસર્ગ~$\sigma.{*}$ પર ખોટું હોય
+એવું શક્ય નથી. આથી કોઈ શાખામાં નીચેના બંને હોય,
+તો તે બંધ છે:
+\[
+\sFmla{\True}{!A}[\sigma] \quad\text{અને}\quad \sFmla{\False}{!A}[\sigma.{*}]
+\]
+કોઈ ઉપસર્ગ $\sigma$ અને !!{formula}~$!A$ માટે.
+નોંધો કે ચિહ્નો ઊલટાં હોય, એટલે શાખામાં
+\[
+\sFmla{\False}{!A}[\sigma] \quad\text{અને}\quad \sFmla{\True}{!A}[\sigma.{*}]
+\]
+હોય, તો $*$ ખાલી શ્રેણી હોય ત્યારે જ શાખા બંધ છે.
+
+આ ઉપરાંત, શાખામાં~$\sFmla{\True}{\bot}[\sigma]$
+હોય, તો તે બંધ છે.
+
+ધારણાઓ ગોઠવવાના નિયમો પણ સામાન્ય !!{tableau}s
+જેવા જ છે, પરંતુ ધારણાઓ માટે આપણે હંમેશા
+ઉપસર્ગ~$1$ લઈએ છીએ. (કયો ઉપસર્ગ લઈએ તે
+મહત્ત્વનું નથી, જો બધી ધારણાઓ માટે તે એક જ હોય.)
+દાખલા તરીકે, આપણે કહીએ છીએ કે
+\[
+!B_1, \dots, !B_n \Proves !A
+\]
+ત્યારે અને માત્ર ત્યારે જ જ્યારે નીચેની ધારણાઓ
+માટે બંધ ટેબ્લો હોય:
+\[
+\sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1],
+\sFmla{\False}{!A}[1].
+\]
+
+શરતી~$\lif$ માટેના નિયમો પ્રશિષ્ટ અને મોડલ
+કિસ્સાઓથી જુદા છે. $\TRule{\True}{\lif}$ નિયમ
+$\sFmla{\True}{!A \lif !B}[\sigma]$ ધરાવતી શાખાને
+જુદી બે શાખાઓ પર અનુક્રમે
+$\sFmla{\False}{!A}[\sigma.{*}]$ અને
+$\sFmla{\True}{!B}[\sigma.{*}]$ ઉમેરીને વિસ્તારે છે.
+\sourcecorrection{OLMD-099}{મૂળ ગદ્યમાં આ નિયમનાં
+બંને નિષ્કર્ષોના સત્યચિહ્ન ઊલટાં છે: ત્યાં
+$\sFmla{\True}{!A}[\sigma.{*}]$ અને
+$\sFmla{\False}{!B}[\sigma.{*}]$ છે, જ્યારે
+નીચેની નિયામક કોષ્ટકમાં સાચાં
+$\sFmla{\False}{!A}[\sigma.{*}]$ અને
+$\sFmla{\True}{!B}[\sigma.{*}]$ છે. મૂળના
+બંને $\TRule$ ગદ્ય-લેબલોમાં દલીલોનો ક્રમ પણ
+કોષ્ટકથી ઊલટો છે; અહીં કોષ્ટકનો ક્રમ લીધો છે.}
+આ નિયમ ફક્ત એવા ઉપસર્ગ~$\sigma.{*}$ માટે
+લાગુ કરી શકાય જે સંબંધિત શાખા પર \emph{પહેલેથી}
+આવે છે. આવા ઉપસર્ગને તે શાખા પર ``વપરાયેલો''
+કહીએ. ($\sigma.{*}$માં $\sigma$ પોતે પણ આવે છે,
+તેથી જુદી શાખાઓ પર અનુક્રમે
+$\sFmla{\False}{!A}[\sigma]$ અને
+$\sFmla{\True}{!B}[\sigma]$ ઉમેરીને આ નિયમ
+હંમેશા લાગુ કરી શકાય છે.)
+
+$\TRule{\False}{\lif}$ નિયમ
+$\sFmla{\False}{!A \lif !B}[\sigma]$ ધરાવતી શાખાને
+એ જ શાખા પર $\sFmla{\True}{!A}[\sigma.n]$
+અને $\sFmla{\False}{!B}[\sigma.n]$ બંને ઉમેરીને
+વિસ્તારે છે; અહીં $\sigma.n$ એ શાખા પર નવો
+ઉપસર્ગ છે.
+
+$\lnot$ માટેના નિયમો સમાન રીતે વ્યાખ્યાયિત થાય છે
+($\lnot !A$ને $!A \lif \lfalse$ તરીકે વ્યાખ્યાયિત
+કર્યા પ્રમાણે).
+
+નિયમો \olref{tab:rules-lif-lnot}માં આપ્યા છે.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\True}{\lnot}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\False}{\lnot}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ વપરાયેલો છે} & \text{$\sigma.n$ નવો છે}\\
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lif}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lif}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ વપરાયેલો છે} & \text{$\sigma.n$ નવો છે}\\
+    \hline
+  \end{array}\]
+  \caption{$\lnot$ અને $\lif$ માટે ઉપસર્ગવાળા !!{tableau} નિયમો}
+  \ollabel{tab:rules-lif-lnot}
+\end{table}
+
+\end{document}

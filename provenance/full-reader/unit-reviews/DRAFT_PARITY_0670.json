@@ -1,0 +1,110 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0670",
+  "checked_at_utc": "2026-09-28T19:55:36.191843+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0670 Translation from G2i with Cut to N2i; state-only draft",
+  "report": {
+    "unit_id": "OLP-0670",
+    "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+    "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+    "draft_path": "private-state\\work\\batch044_draft\\translation-G2i.tex",
+    "draft_sha256": "1becaa77facf3141db5183dd21db57acf940b99eecff056e4c0a0204edac93df",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 174,
+    "target_math_spans_after_corrections": 174,
+    "glossary_tokens": 24,
+    "source_correction_notes": [
+      "OLMD-240",
+      "OLMD-241",
+      "OLMD-242",
+      "OLMD-243",
+      "OLMD-244",
+      "OLMD-245",
+      "OLMD-246",
+      "OLMD-247",
+      "OLMD-248"
+    ],
+    "source_detector_ascii_tokens": 546,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\Log{G2ci}",
+        "\\Log{G2i}+\\Cut"
+      ],
+      [
+        "in~\\Log{N2c}",
+        "in~\\Log{N2i}"
+      ],
+      [
+        "\\RightLabel{\\RightR{\\Weakening}}\n    \\UnaryInf$!A, \\Gamma",
+        "\\RightLabel{\\LeftR{\\Weakening}}\n    \\UnaryInf$!A, \\Gamma"
+      ],
+      [
+        "!!{formula}s $y:!A$ in~$\\pi_1$ by $x:!A$",
+        "!!{formula}s $y:!A$ in~$\\delta$ by $x:!A$"
+      ],
+      [
+        "end-sequent of~$\\pi_1$ we",
+        "end-sequent of~$\\delta$ we"
+      ],
+      [
+        "in~$\\pi_1$ discharges",
+        "in~$\\delta$ discharges"
+      ],
+      [
+        "sequent in~$\\pi_1$ is",
+        "sequent in~$\\delta$ is"
+      ],
+      [
+        "discharge labels in~$\\pi_1$ to ensure",
+        "discharge labels in~$\\delta_1$ to ensure"
+      ],
+      [
+        "\\BinaryInf$x: !A \\lif !B \\fCenter !B$",
+        "\\BinaryInf$x: !A \\lif !B, \\Gamma_1' \\fCenter !B$"
+      ],
+      [
+        "$\\Gamma_2' \\Sequent !A$. By",
+        "$\\Gamma_2' \\Sequent !B$. By"
+      ],
+      [
+        "discharge labels in~$\\pi_2$ we",
+        "discharge labels in~$\\delta_2$ we"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "શિથિલીકરણ",
+          "સંકોચન",
+          "કટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

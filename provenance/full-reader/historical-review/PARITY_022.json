@@ -1,0 +1,246 @@
+{
+  "schema": "openlogic-gu-parity/22",
+  "reports": [
+    {
+      "unit_id": "OLP-0203",
+      "path": "content/model-theory/lindstrom/lindstrom.tex",
+      "source_sha256": "a3cc84f5789bc27838d0c2461c67438d5029d1071b7f94c4a4fd3b4910cd6310",
+      "target_sha256": "d48af8cafb10cde39c44dfa64abd1a7ee46f38158b854cf580bcc2792c04bd73",
+      "math_source_count": 0,
+      "math_corrected_source_count": 0,
+      "math_target_count": 0,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 10,
+      "target_blocks": 10,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0204",
+      "path": "content/model-theory/lindstrom/introduction.tex",
+      "source_sha256": "1e014424519199e2ca2760dfe343dbc6756c6972c56e17174587e9aacf913ed0",
+      "target_sha256": "06522fe45c8e3f4a5a97a75413f53714043342468a4ebbd55f58a4cba5856b97",
+      "math_source_count": 0,
+      "math_corrected_source_count": 0,
+      "math_target_count": 0,
+      "raw_math_equal_except_translated_text": true,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 6,
+      "target_blocks": 6,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0205",
+      "path": "content/model-theory/lindstrom/abstract-logics.tex",
+      "source_sha256": "5ab9d1c3b8861e71c3691c3333e5824f9467ecd5747e67edcd3b31ca3790b678",
+      "target_sha256": "daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d",
+      "math_source_count": 128,
+      "math_corrected_source_count": 128,
+      "math_target_count": 128,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLLIN-001",
+          "change": "Made the first-order sentences use all symbols of the language rather than only constants."
+        },
+        {
+          "finding_id": "OLLIN-002",
+          "change": "Made the renamed structure correspond to M; the renamed language is what corresponds to L."
+        },
+        {
+          "finding_id": "OLLIN-003",
+          "change": "Placed the quantified sentence in the reduced language L-prime used by its model class."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLLIN-001",
+        "OLLIN-002",
+        "OLLIN-003"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 11,
+      "target_blocks": 11,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0206",
+      "path": "content/model-theory/lindstrom/ls-property.tex",
+      "source_sha256": "ea41d7c2886da3b341c6a216f369f5c55f33978d330a0ddaf305fd6c409511b5",
+      "target_sha256": "5852052ffe2b582cdec70811d34334b538e692b40581a8d8b8ca256557db3d20",
+      "math_source_count": 95,
+      "math_corrected_source_count": 96,
+      "math_target_count": 96,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLLIN-004",
+          "change": "Included predicates and functions as well as constants in the algebraic definition."
+        },
+        {
+          "finding_id": "OLLIN-005",
+          "change": "Renamed the ambient structure A throughout, leaving its inner M and N substructures distinct."
+        },
+        {
+          "finding_id": "OLLIN-006",
+          "change": "Put the star on the domain of N in exponent position."
+        },
+        {
+          "finding_id": "OLLIN-007",
+          "change": "Classified D1 as an L-sentence obtained by relativization; D2 remains first-order."
+        },
+        {
+          "finding_id": "OLLIN-008",
+          "change": "Separated the countable ambient model A0 from its inner M0 and N0 substructures."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLLIN-004",
+        "OLLIN-005",
+        "OLLIN-006",
+        "OLLIN-007",
+        "OLLIN-008"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 16,
+      "target_blocks": 16,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    },
+    {
+      "unit_id": "OLP-0207",
+      "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "source_sha256": "a9de6ae6e6dd2ec2db64e9c7d3afad37a695896af57d50a64f003f958db499d9",
+      "target_sha256": "cb0332d121f73d7337661a81e1457cce884d8a2cc9d15bc49dfd62ccb5aa47bc",
+      "math_source_count": 123,
+      "math_corrected_source_count": 134,
+      "math_target_count": 134,
+      "raw_math_equal_except_translated_text": false,
+      "math_equal_after_documented_source_corrections": true,
+      "documented_source_corrections": [
+        {
+          "finding_id": "OLLIN-009",
+          "change": "Used A for the bound first-order sentence, distinct from the fixed abstract sentence E."
+        },
+        {
+          "finding_id": "OLLIN-010",
+          "change": "Restored the normality hypothesis required by the proof and by the equivalence conclusion."
+        },
+        {
+          "finding_id": "OLLIN-011",
+          "change": "Renamed the larger coding structure A so it no longer shadows the union structure M."
+        },
+        {
+          "finding_id": "OLLIN-012",
+          "change": "Used the abstract satisfaction relation models-L for E on both coded structures."
+        },
+        {
+          "finding_id": "OLLIN-013",
+          "change": "Added the finitely satisfiable type that forces a non-standard order element and used A-star for the resulting ambient model."
+        }
+      ],
+      "block_math_deltas": [],
+      "identifier_reference_citation_asset_conditional_parity": true,
+      "named_constructs_missing": {},
+      "named_constructs_added": {},
+      "proof_primitive_parity": true,
+      "proof_rule_invocation_parity": true,
+      "environment_parity": true,
+      "olp_token_parity": true,
+      "olp_tokens_missing": {},
+      "olp_tokens_added": {},
+      "source_correction_notes": [
+        "OLLIN-009",
+        "OLLIN-010",
+        "OLLIN-011",
+        "OLLIN-012",
+        "OLLIN-013"
+      ],
+      "source_correction_note_parity": true,
+      "balanced_braces": true,
+      "unicode_nfc": true,
+      "replacement_character": false,
+      "devanagari_characters": 0,
+      "source_blocks": 15,
+      "target_blocks": 15,
+      "trailing_whitespace_lines": [],
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "totals": {
+    "units": 5,
+    "source_math_spans": 346,
+    "corrected_source_math_spans": 358,
+    "documented_source_corrections": 13,
+    "source_blocks": 58,
+    "target_blocks": 58
+  },
+  "meaning": "Formula multisets, named constructs, proof primitives, rule invocations, environments and tagged terminology tokens are checked within aligned blank-delimited blocks. Gujarati correction boxes are stripped; every corrected expected-source change is explicit and keyed."
+}

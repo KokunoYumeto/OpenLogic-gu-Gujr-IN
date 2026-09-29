@@ -1,0 +1,73 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0571",
+  "checked_at_utc": "2026-09-28T01:56:59.367896+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0571 Reflection Schema and the proposed intrinsic justification of Replacement; state-only draft",
+  "report": {
+    "unit_id": "OLP-0571",
+    "source_path": "content/set-theory/replacement/ref.tex",
+    "source_sha256": "fbdfc9b85a4c276113f81e9a1ba5a20f59930a75175e43a1e11a6d9bee57644e",
+    "draft_path": "private-state\\work\\batch044_draft\\replacement-ref.tex",
+    "draft_sha256": "a30e46ee74ad749a3b8b6649bdd41678caef7a7eac88c5e417a13a2af7b8c5a1",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 12,
+    "target_math_spans_after_corrections": 12,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 206,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-strength.tex",
+        "sha256": "03f286c59d3b3c75a84b22f1a0dc200e6cb82bbf5ee4354bcd801a8a48cca94a",
+        "terms": [
+          "\\ollabel{formularelativization}",
+          "સાપેક્ષીકરણ",
+          "\\phi^M"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-absinf.tex",
+        "sha256": "5cc5ecf0f6f33c30790b4fb0836cd7ce9bc6c7861615df4354abdb8f536290b0",
+        "terms": [
+          "\\stagesinex",
+          "નિરપેક્ષ અનંતતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-replacement-stage-labels-044.tex",
+        "sha256": "8e0eef71b1a5b4e6c007636c5358566f1eaab911ec7bad63ea32b7eb9f911d16",
+        "terms": [
+          "તબક્કાઓ અખૂટ છે"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-rank.tex",
+        "sha256": "c12244adb25c2d040cc761178dab315e3fa746fed06f8e3fab4c4c3259e5632a",
+        "terms": [
+          "\\ZF",
+          "સ્તરાંક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The Reflection Schema's exact display, including beta>alpha, bound x_1 through x_n, and the biconditional, is unchanged.",
+      "The theorem is a schema for formulas with possible parameters, as the source footnote says; the intuitive sentence gloss is not substituted for the formula.",
+      "The Montague-Levy equivalence is qualified as suitable formulations modulo Z; no unconditional equivalence of all formulations is introduced.",
+      "The stage-based philosophical motivation remains a proposed justification, not a claimed formal derivation.",
+      "The inactive English source comment about overlining remains byte-equivalent, and is not reader-facing prose."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

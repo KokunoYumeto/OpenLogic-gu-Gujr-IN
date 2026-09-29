@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/35-0347",
+  "checked_at_utc": "2026-09-27T04:25:04.842240+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0347 λ currying state-only draft",
+  "report": {
+    "unit_id": "OLP-0347",
+    "source_path": "content/lambda-calculus/introduction/currying.tex",
+    "source_sha256": "218fab4af4b5c2a49ffe9e7d4ffdc6bb2dd1f88046b71dad2097b5de62b1f5f9",
+    "draft_path": "private-state\\work\\batch035_draft\\currying.tex",
+    "draft_sha256": "6835ac0ca96fa38762b4ad90a0c329f2113e1b14ee64a19cd54c6d6e0154ca2e",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 43,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLLAM-001",
+      "OLLAM-002"
+    ],
+    "source_detector_ascii_tokens": 308,
+    "target_untranslated_prose_findings": 0,
+    "math_structure_and_glossary_equal_after_keyed_correction": true,
+    "unrendered_header_correction": "% Chapter: representability → % Chapter: introduction"
+  },
+  "status": "draft_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

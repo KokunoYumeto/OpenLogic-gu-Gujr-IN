@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0379",
+  "checked_at_utc": "2026-09-27T08:24:42.914073+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0379 fixpoints; state-only draft",
+  "report": {
+    "unit_id": "OLP-0379",
+    "source_path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+    "source_sha256": "d826387d4284ef13679ef5b91a22bb7551c193c2e8c8356201ceb1df72a46b93",
+    "draft_path": "private-state\\work\\batch038_draft\\fixpoints.tex",
+    "draft_sha256": "abfc31bb826133e34cf123dae2346822b3d4ff81bfd169eaa28955cb528f605f",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 13,
+    "source_math_spans_correction_aware": 84,
+    "target_math_spans_after_corrections": 84,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLLAM-057",
+      "OLLAM-059",
+      "OLLAM-058"
+    ],
+    "source_detector_ascii_tokens": 484,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7,
+      17
+    ]
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,70 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{int}
+
+\olsection{પરિચય}
+
+!!^{tableau}s એ !!{signed
+  formula}sનાં ચોક્કસ પ્રકારનાં (નીચે તરફ શાખા પાડતાં) વૃક્ષો છે.
+ચિહ્નિત સૂત્ર એટલે સત્યમૂલ્ય-ચિહ્ન ($\True$ અથવા
+$\False$) અને !!a{sentence}ની જોડી:
+\[
+\sFmla{\True}{!A} \text{ અથવા } \sFmla{\False}{!A}.
+\]
+!!^a{tableau} કેટલીક \emph{ધારણાઓ}થી શરૂ થાય છે. પછીનું દરેક
+!!{signed formula} અનુમાનનો કોઈ નિયમ લાગુ કરીને મળે છે.
+કેટલાક નિયમો વૃક્ષની શાખાના છેડે એક અથવા વધુ
+!!{signed formula}s ઉમેરે છે; બીજા નિયમો બે નવા છેડા ઉમેરી
+બે શાખાઓ બનાવે છે. કોઈ નિયમથી મળતા !!{signed formula}sમાંનું
+!!{formula} જે !!{signed formula} પર નિયમ લાગુ થયો તેના
+સૂત્ર કરતાં ઓછું સંકુલ હોય છે. કોઈ શાખામાં
+$\sFmla{\True}{!A}$ અને $\sFmla{\False}{!A}$ બંને હોય,
+તો તે શાખાને \emph{બંધ} કહીએ છીએ. !!a{tableau}ની દરેક શાખા
+બંધ હોય તો આખું !!{tableau} બંધ છે. બંધ !!{tableau} એક
+!!a{derivation} છે, જે બતાવે છે કે !!{tableau}ની શરૂઆતમાં લીધેલા
+!!{signed formula}sનો ગણ અસંતોષ્ય છે. એના આધારે
+$\Proves$ સંબંધ વ્યાખ્યાયિત કરી શકાય:
+$\Gamma \Proves !A$ જો અને માત્ર જો એવો કોઈ સાંત ગણ
+~$\Gamma_0 = \{!B_1,
+\dots, !B_n\} \subseteq \Gamma$ હોય કે નીચેની ધારણાઓ માટે
+બંધ !!{tableau} મળે:
+\[
+\{\sFmla{\False}{!A}, \sFmla{\True}{!B_1}, \dots, \sFmla{\True}{!B_n}\}.
+\]
+
+નિદર્શ્ય તર્કશાસ્ત્રો માટે !!{signed
+formula}ની સંકલ્પના વિસ્તૃત કરવી પડે છે અને
+~\iftag{prvBox}{$\Box$\iftag{prvDiamond}{ અને
+    $\Diamond$}{}}{$\Diamond$}ને આવરી લેતા નિયમો ઉમેરવા પડે છે.
+\sourcecorrection{OLMD-051}{મૂળમાં અંદરના
+\texttt{\string\iftag\{prvDiamond\}} માટે જરૂરી ત્રીજું, ખાલી
+શાખા-આર્ગ્યુમેન્ટ ખૂટે છે; પસંદગી-મેક્રો યોગ્ય રીતે ચાલે તે માટે
+તે ઉમેર્યું છે.}
+ચિહ્ન ($\True$ અથવા $\False$) ઉપરાંત, મોડલ !!{tableau}sનાં
+!!{formula}sને \emph{ઉપસર્ગો}~$\sigma$ પણ હોય છે. ઉપસર્ગો ધન
+પૂર્ણાંકોની ખાલી ન હોય તેવી શ્રેણીઓ છે, એટલે
+$\sigma \in (\PosInt)^* \setminus
+\{\emptyseq\}$. આવા ઉપસર્ગો લખતી વખતે આપણે આસપાસના
+$\tuple{\ }$ છોડીએ છીએ અને જુદા !!{element}s વચ્ચે
+$,$ને બદલે~$.$ મૂકીએ છીએ. જો $\sigma$ ઉપસર્ગ હોય, તો
+$\sigma.n$ એ $\sigma
+\concat \tuple{n}$ છે; દાખલા તરીકે, $\sigma = 1.2.1$ હોય
+તો $\sigma.3$ એ $1.2.1.3$ છે. આમ, દાખલા તરીકે,
+\[
+\sFmla{\True}{\Box !A \lif !A}[1.2]
+\]
+એ \emph{ઉપસર્ગવાળું !!{signed formula}} છે (અથવા ટૂંકમાં
+\emph{ઉપસર્ગવાળું !!{formula}}).
+
+સહજ રીતે, ઉપસર્ગ એ નિદર્શનમાં એવા જગતનું નામ આપે છે જે
+!!a{tableau}ની શાખા પરનાં !!{formula}sને સંતોષી શકે; અને જો
+$\sigma$ કોઈ જગતનું નામ હોય, તો $\sigma.n$ એ~$\sigma$ નામના
+જગતમાંથી પ્રાપ્ય જગતનું નામ આપે છે.
+
+\end{document}

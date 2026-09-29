@@ -1,0 +1,151 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: truth-at-w
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{trw}
+
+\olsection{જગતમાં સત્યતા}
+
+દરેક મોડલ નિદર્શન તેમાં કયા જગતમાં કયાં મોડલ !!{formula}s
+સત્ય ગણાય છે તે નક્કી કરે છે. ``નિદર્શન $\mModel{M}$
+!!{formula}~$!A$ને જગત~$w$માં સત્ય બનાવે છે'' એ સંબંધ
+સંબંધાત્મક અર્થવિજ્ઞાનનો મૂળભૂત ખ્યાલ છે. આ સંબંધ
+આગમનાત્મક રીતે વ્યાખ્યાયિત થાય છે અને બિનમોડલ
+કારકો માટે સત્યતાસારણીઓથી મળતી સામાન્ય વ્યાખ્યા
+સાથે મેળ ખાય છે.
+
+\begin{defn}\ollabel{defn:mmodels}
+  નિદર્શન~$\mModel M$માં \emph{!!a{formula}~$!A$ની $w$માં સત્યતા},
+  સંકેતમાં $\mSat{M}{!A}[w]$, નીચે પ્રમાણે આગમનાત્મક રીતે
+  વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[w]$ ક્યારેય નહીં.}}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[w]$ હંમેશા.}}{}
+  \item $\mSat{M}{p}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $w \in V(p)$.
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$} (અથવા બંને).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat/{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બંને હોય અથવા
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બેમાંથી એકેય ન હોય}.}{}
+  \tagitem{prvBox}{\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Box !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $Rww'$ ધરાવતા બધા $w' \in W$ માટે $\mSat{M}{!B}[w']$ હોય.}}{}
+  \tagitem{prvDiamond}{\ollabel{defn:sub:mmodels-diamond}
+    \indcase{!A}{\Diamond !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $Rww'$ ધરાવતા ઓછામાં ઓછા એક $w' \in W$ માટે $\mSat{M}{!B}[w']$ હોય.}}{}
+  \end{enumerate}
+\end{defn}
+\sourcecorrection{OLMD-004}{સ્થિર અંગ્રેજી મૂળમાં
+$\Box$નો સત્યતા-કિસ્સો અશરતી \texttt{item} છે,
+જ્યારે ભાષામાં આ પ્રાથમિક કારક \texttt{prvBox}
+ટૅગથી પસંદ થાય છે. તે કિસ્સાને એ જ ટૅગથી
+શરતિત કર્યો છે; તેના સત્ય-સૂત્રમાં ફેરફાર નથી.}
+\sourcecorrection{OLMD-005}{સ્થિર અંગ્રેજી મૂળમાં
+$\Diamond$નો સત્યતા-કિસ્સો પણ અશરતી
+\texttt{item} છે, જ્યારે ભાષામાં તે \texttt{prvDiamond}
+ટૅગથી પસંદ થાય છે. અહીં સત્ય-સૂત્ર જાળવી
+તે કિસ્સાને સંબંધિત ટૅગથી શરતિત કર્યો છે.}
+
+\olref{defn:sub:mmodels-box} ખંડ મુજબ, $Rww'$ ધરાવતું
+કોઈ~$w'$ ન હોય ત્યારે !!a{formula}~$\Box
+!B$ એ~$w$માં સત્ય છે. આ કિસ્સામાં $\Box !B$
+એ~$w$માં \emph{તુચ્છ રીતે} સત્ય છે. વળી,
+$!B$ સત્ય ન હોય છતાં $\Box !B$ એ~$w$માં સંતોષાઈ શકે છે.
+$!B$ એ~$w$માં સત્ય હોય તેથી $\Diamond !B$ પણ~$w$માં
+સત્ય હશે એવું જરૂરી નથી. જોકે $Rww$ હોય, જેમ કે
+$R$ સ્વવાચક હોય, ત્યારે એ ફલિત થાય છે. જો $Rww'$
+ધરાવતું કોઈ $w'$ ન હોય, તો કોઈપણ~$!A$ માટે
+$\mSat/{M}{\Diamond !A}[w]$ હોય છે.
+
+\begin{prob}
+  \olref[nml][syn][rel]{fig:simple}ના નિદર્શનને વિચારો.
+  નીચેનામાંથી કયાં સાચાં છે?
+    \begin{enumerate}
+    \item $\mSat{M}{q}[w_1]$;
+    \item $\mSat{M}{\lnot q}[w_3]$;
+    \item $\mSat{M}{p \lor q}[w_1]$;
+    \item $\mSat{M}{\Box (p \lor q)}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_3]$;
+    \item $\mSat{M}{\Box \bot}[w_3]$;
+    \item $\mSat{M}{\Diamond q}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_1]$;
+    \item $\mSat{M}{\lnot \Box\Box \lnot q}[w_1]$.
+    \end{enumerate}
+\end{prob}
+
+% \Box અને \Diamondની દ્વૈતતા સાબિત કરો
+\begin{tagblock}{prvDiamond}
+\begin{prop}\ollabel{prop:dual}
+  \begin{enumerate}
+  \item $\mSat{M}{\Box !A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $\mSat{M}{\lnot\Diamond\lnot !A}[w]$.
+  \item $\mSat{M}{\Diamond !A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $\mSat{M}{\lnot\Box\lnot !A}[w]$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot\Diamond\lnot !A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $\mSat/{M}{\Diamond\lnot
+      !A}[w]$; આ $\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ છે. $\mSat{M}{\Diamond\lnot
+      !A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $Rww'$ ધરાવતા કોઈ $w'$ માટે
+      $\mSat{M}{\lnot !A}[w']$ હોય. તેથી $\mSat/{M}{\Diamond\lnot !A}[w]$
+      ત્યારે અને માત્ર ત્યારે જ જ્યારે $Rww'$ ધરાવતા બધા $w'$ માટે
+      $\mSat/{M}{\lnot !A}[w']$ હોય. વળી, $\mSat/{M}{\lnot !A}[w']$
+      ત્યારે અને માત્ર ત્યારે જ જ્યારે $\mSat{M}{!A}[w']$ હોય. આ બધું
+      સાથે લેતાં, $\mSat{M}{\lnot\Diamond\lnot !A}[w]$ ત્યારે અને માત્ર
+      ત્યારે જ જ્યારે $Rww'$ ધરાવતા બધા $w'$ માટે $\mSat{M}{!A}[w']$ હોય.
+      ફરી $\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ, આ ત્યારે અને માત્ર ત્યારે જ
+      જ્યારે $\mSat{M}{\Box !A}[w]$ હોય.
+    \item \iftag{probDiamond}{અભ્યાસપ્રશ્ન.}{$\mSat{M}{\lnot\Box\lnot !A}[w]$
+      ત્યારે અને માત્ર ત્યારે જ જ્યારે $\mSat/{M}{\Box\lnot !A}[w]$.
+      $\mSat{M}{\Box\lnot !A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+      $Rww'$ ધરાવતા બધા $w'$ માટે $\mSat{M}{\lnot !A}[w']$ હોય. તેથી
+      $\mSat/{M}{\Box\lnot !A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+      $Rww'$ ધરાવતા કોઈ $w'$ માટે $\mSat/{M}{\lnot !A}[w']$ હોય.
+      વળી, $\mSat/{M}{\lnot !A}[w']$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+      $\mSat{M}{!A}[w']$ હોય. તેથી $\mSat{M}{\lnot\Box\lnot !A}[w]$
+      ત્યારે અને માત્ર ત્યારે જ જ્યારે $Rww'$ ધરાવતા કોઈ~$w'$ માટે
+      $\mSat{M}{!A}[w']$ હોય. ફરી $\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ,
+      આ ત્યારે અને માત્ર ત્યારે જ જ્યારે $\mSat{M}{\Diamond
+        !A}[w]$ હોય.}
+  \end{enumerate}
+\end{proof}
+\sourcecorrection{OLMD-006}{સ્થિર અંગ્રેજી મૂળ
+દ્વિતીય દ્વૈતતાના પ્રમાણમાં
+$\mSat/{M}{\Box\lnot !A}$ પાસે જગત-દલીલ $[w]$
+છોડી દે છે. આસપાસનાં બધા સત્યતા-સંબંધો અને
+વ્યાખ્યાની જેમ એ જ $[w]$ અહીં પૂરું કર્યું છે.}
+
+\begin{probtag}{probDiamond}
+  \olref[nml][syn][trw]{prop:dual}નું પ્રમાણ પૂર્ણ કરો.
+\end{probtag}
+\end{tagblock}
+
+\begin{prob}
+  માનો કે $\mModel{M} = \tuple{W, R, V}$ નિદર્શન છે
+  અને $w_1, w_2 \in W$ માટે નીચેની શરતો છે:
+  \begin{enumerate}
+  \item $w_1 \in V(p)$ જો અને માત્ર જો $w_2 \in V(p)$
+    (દરેક !!{propositional variable} $p$ માટે); અને
+  \item બધા $w \in W$ માટે: $Rw_1w$ જો અને માત્ર જો $Rw_2w$.
+  \end{enumerate}
+  !!{formula}s પર અનુમાન વડે બતાવો કે બધા !!{formula}s $!A$ માટે:
+  $\mSat{M}{!A}[w_1]$ જો અને માત્ર જો $\mSat{M}{!A}[w_2]$.
+\end{prob}
+
+\begin{probtag}{prvDiamond}
+  માનો કે $\mModel{M} = \tuple{W, R, V}$. બતાવો કે
+  $\mSat{M}{\lnot\Diamond !A}[w]$ જો અને માત્ર જો
+  $\mSat{M}{\Box\lnot!A}[w]$.
+\end{probtag}
+
+\end{document}

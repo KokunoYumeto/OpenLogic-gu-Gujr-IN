@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0366",
+  "checked_at_utc": "2026-09-27T06:38:40.533490+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0366 state-only lambda draft",
+  "report": {
+    "unit_id": "OLP-0366",
+    "source_path": "content/lambda-calculus/syntax/eta.tex",
+    "source_sha256": "a6027d321bb141166a89ae598a60f8cc559b5b74922b47f5932fe464a91eb978",
+    "draft_path": "private-state\\work\\batch036_draft\\eta.tex",
+    "draft_sha256": "ef4a1eba0bf0e1ae781ffdf6a7c48140d8711b440362c30f8fe1b11e2aebc393",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 13,
+    "source_math_spans_correction_aware": 59,
+    "target_math_spans_after_corrections": 71,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLLAM-030",
+      "OLLAM-031"
+    ],
+    "source_detector_ascii_tokens": 233,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      15,
+      16,
+      17
+    ]
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

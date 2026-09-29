@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0440",
+  "checked_at_utc": "2026-09-27T11:55:18.859384+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0440 modal consistency; state-only draft",
+  "report": {
+    "unit_id": "OLP-0440",
+    "source_path": "content/normal-modal-logic/axioms-systems/consistency.tex",
+    "source_sha256": "410cd2532bf8c2ba318f476f6e9192064021f16e0a42aa297015bb41851e889b",
+    "draft_path": "private-state\\work\\batch040_draft\\consistency.tex",
+    "draft_sha256": "d9144d2ce9bfa8365873e143d3d097b242a7f4a3f24c9ebddd3e7395b7b8cb03",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 31,
+    "target_math_spans_after_corrections": 31,
+    "glossary_tokens": 7,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 156,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "two_consistency_examples_checked": true,
+    "extension_tautology_checked": true
+  },
+  "status": "draft_linguistic_math_and_consistency_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

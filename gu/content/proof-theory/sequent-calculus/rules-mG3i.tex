@@ -1,0 +1,90 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: rules-G3c
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\begin{table}
+\begin{tabular}{@{}c@{}c@{}}
+\multicolumn{2}{@{}c@{}}{સ્વયંસિદ્ધો}\\[2ex]
+$!C, \Gamma \Sequent \Delta, !C$ & $\lfalse, \Gamma \Sequent \Delta$
+\\[2ex]
+\multicolumn{2}{@{}c@{}}{તાર્કિક નિયમો}\\[2ex]
+\Axiom$\lnot !A, \Gamma \fCenter \Delta, !A $
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$!A, \Gamma \fCenter$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lnot !A $
+\DisplayProof
+\\[4ex]
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\DisplayProof
+\\[4ex]\Axiom$!A, \Gamma \fCenter \Delta$
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!A \lor !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter \Delta, !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lor !B$
+\DisplayProof
+\\[4ex]
+\Axiom$!A \lif !B, \Gamma \fCenter \Delta, !A$
+\Axiom$ !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A \lif !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ !A, \Gamma \fCenter !B$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lif !B $
+\DisplayProof
+\\[4ex]
+\Axiom$ !A(t), \lforall[x][!A(x)], \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \lforall[x][!A(x)]$
+\DisplayProof
+\\[4ex]
+\Axiom$ !A(a), \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][!A(x)], \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter \Delta, \lexists[x][!A(x)], !A(t) $
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lexists[x][!A(x)]$
+\DisplayProof
+\end{tabular}
+\caption{અંતઃપ્રજ્ઞાવાદી તર્ક માટે અનેક ફલિત ધરાવતા \Log{mG3i}ના નિયમો.
+$\RightR{\forall}$ અને $\LeftR{\exists}$માં !!{constant}~$a$
+ફલિત-સિક્વન્ટમાં આવવો નહીં. $\Gamma$ અને $\Delta$ એ
+!!{formula}ના બહુગણ છે. સ્વયંસિદ્ધોમાં !!{formula}~$!C$
+પરમાણ્વીય હોવું જોઈએ. મૂળ કૅપ્શન \Log{mG1m}ને
+$\lfalse,
+\Gamma \Sequent \Delta$ સ્વરૂપનાં સ્વયંસિદ્ધો વિનાના \Log{mG1i}
+તરીકે પણ વર્ણવે છે.}
+\ollabel{tab:G3c}
+\end{table}
+\sourcecorrection{OLMD-337}{મૂળ સર્વપરિમાણકના ડાબા નિયમના આધારમાં મુખ્ય સૂત્ર અને સંદર્ભ વચ્ચેનો અલ્પવિરામ ઉમેર્યો છે.}
+\sourcecorrection{OLMD-338}{મૂળ કૅપ્શનના અંતે mG1i અને mG1m આવે છે, પરંતુ આ અધ્યાય તેમના નિયમો આપતો નથી. તેથી આ વાક્યને મૂળનો ઉલ્લેખ માની જાળવ્યું છે. તેને mG3iમાંથી ન્યૂનતમ તંત્ર બનાવવાની વ્યાખ્યા ગણવી નહીં; એવા તંત્રના નિયમો માટે જરૂરી માહિતી અહીં મળતી નથી.}
+
+\end{document}

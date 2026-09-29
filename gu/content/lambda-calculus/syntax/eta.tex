@@ -1,0 +1,119 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: eta
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{eta}
+\olsection{$\eta$-રૂપાંતરણ}
+
+$\lambda$-પદો પર બીજો પણ એક સંબંધ છે. \olref[fv]{sec}માં
+આપણે $\lambd[x][(fx)]$નું ઉદાહરણ જોયું હતું: તે આર્ગ્યુમેન્ટ
+સ્વીકારીને તેના પર~$f$ લાગુ કરે છે. બીજા શબ્દોમાં, તે~$f$
+જેવું જ વિધેય છે: $\lambd[x][(fx)]N$ અને~$fN$ બંનેનું
+લઘુકરણ~$fN$માં થાય છે. આ વિચાર વ્યક્ત કરવા
+$\eta$-લઘુકરણ (અને $\eta$-વિસ્તરણ) વાપરીએ છીએ.
+
+\begin{defn}[$\eta$-સંકોચન, $\eredone$]
+  \ollabel{defn:beredone}
+  \emph{$\eta$-સંકોચન} ($\eredone$) પદો પરનો સૌથી નાનો
+  રચના-સુસંગત સંબંધ છે જે નીચેની શરત સંતોષે છે:
+  \[
+    \lambd[x][M x] \eredone M \text{ જો } x \notin FV(M)
+  \]
+\end{defn}
+
+\begin{defn}[$\beta\eta$-લઘુકરણ, $\bered$] \ollabel{defn:bered}
+  \emph{$\beta\eta$-લઘુકરણ} ($\bered$) પદો પરનો
+  $\bredone$ અને $\eredone$ને સમાવતો સૌથી નાનો
+  સ્વવાચક અને પરંપરિત સંબંધ છે. એટલે સ્વવાચકતા અને
+  પરંપરિતતાના નિયમો ઉપરાંત નીચેના બે નિયમો છે:
+  \begin{enumerate}
+  \item જો $M \bredone N$, તો $M \bered N$. \ollabel{defn:bered3}
+  \item જો $M \eredone N$, તો $M \bered N$. \ollabel{defn:bered4}
+  \end{enumerate}
+    
+\end{defn}
+
+\begin{defn}
+  સામ્ય સંબંધ~$\equal$માં $\eta$-રૂપાંતરણનો નિયમ ઉમેરીએ:
+  \[
+  \lambd[x][f x] \equal f
+  \]
+  આ રીતે વિસ્તરેલા સંબંધને $\equal[\eta]$થી દર્શાવીએ.
+\end{defn}
+
+$\eta$-સામ્ય મહત્વનું છે, કારણ કે તે લૅમ્બડા પદોની
+વિસ્તારાત્મકતા સાથે સંબંધિત છે:
+
+\begin{defn}[વિસ્તારાત્મકતા]
+  સામ્ય સંબંધ~$\equal$માં (\ext) નિયમ ઉમેરીએ:
+  \begin{center}
+  જો $Mx \equal Nx$, તો $M \equal N$; શરત છે કે $x \notin FV(MN)$.
+  \end{center}
+  આ રીતે વિસ્તરેલા સંબંધને $\equal[\ext]$થી દર્શાવીએ.
+\end{defn}
+
+આ નિયમનો સાર એ છે કે પદોને વિધેયો માનીએ ત્યારે એક જ
+મનસ્વી આર્ગ્યુમેન્ટ પર તેમનું વર્તન સમાન હોય તો તેમને
+સમાન ગણવાં.
+
+હવે સાબિત કરીએ કે $\eta$-નિયમથી બરાબર વિસ્તારાત્મકતા
+મળે છે, તેનાથી વધુ કંઈ નહીં.
+
+\begin{thm}
+  $M \equal[\ext] N$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $M \equal[\eta] N$.
+\end{thm}
+
+\begin{proof}
+  પ્રદર્શિત $\eta$-નિયમમાં $f$ ચલ છે. પરંતુ
+  $x \notin FV(M)$ હોય અને~$f$ને $M$ તથા~$x$થી
+  તાજો લઈએ તો રચના-સુસંગતતાથી
+  $\lambd[f][\lambd[x][f x]] \equal[\eta]
+  \lambd[f][f]$. બંને બાજુ~$M$ લાગુ કરી
+  $\beta$-સામ્ય વાપરતાં $\lambd[x][Mx]
+  \equal[\eta] M$ મળે છે. આથી આગળ સામાન્ય પદો માટે
+  $\eta$-નિયમ વાપરી શકીએ.
+  \sourcecorrection{OLLAM-030}{સ્થિર અંગ્રેજી મૂળના
+  પ્રદર્શિત $\eta$-નિયમમાં $f$ ચલ છે, પરંતુ સાબિતી
+  ગમે તે પદ~$M$ માટે એ નિયમ વાપરે છે. અહીં તાજો
+  $f$, રચના-સુસંગતતા અને $\beta$-સામ્યથી સામાન્ય
+  નિયમ મેળવવાનું ગાયબ પગલું ઉમેર્યું છે.}
+  પહેલાં બતાવીએ કે $\equal[\eta]$ વિસ્તારાત્મકતાના
+  નિયમ હેઠળ બંધ છે. તેથી~\ext{} નિયમ
+  $\equal[\eta]$માં નવી જોડી ઉમેરતો નથી: નિયમ-ઉપજ
+  પર આગમનથી $\equal[\ext]$નો દરેક સંબંધ
+  $\equal[\eta]$માં આવે છે. તેથી
+  $M \equal[\ext] N$ હોય તો $M \equal[\eta] N$.
+
+  \ext{} નિયમ હેઠળની બંધતા માટે, એ નિયમ લાગુ કરતાં
+  $Mx \equal[\ext] Nx$ એ પૂર્વધારણા હોય છે અને
+  $x \notin FV(MN)$ હોય છે. આગમનની ધારણાથી
+  $Mx \equal[\eta] Nx$. રચના-સુસંગતતાથી
+  $\lambd[x][Mx] \equal[\eta] \lambd[x][Nx]$.
+  $x$ બંને પદોમાં મુક્ત ન હોવાથી, બંને બાજુ
+  $\eta$-નિયમ લગાડી પરંપરિતતાથી
+  $M \equal[\eta] N$ મળે છે.
+  \sourcecorrection{OLLAM-031}{સ્થિર અંગ્રેજી મૂળ
+  \ext{}-નિયમની પૂર્વધારણાને તરત
+  $Mx \equal[\eta] Nx$ કહે છે, જ્યારે તે શરૂઆતમાં
+  $Mx \equal[\ext] Nx$ છે; પહેલાંના નિષ્કર્ષ પર
+  આગમનની ધારણા લગાવવી પડે. અહીં એ પગલું અને
+  $x \notin FV(MN)$ની શરત સ્પષ્ટ કર્યાં છે.
+  મૂળના બીજા દિશાના તર્કમાં $\equal[ext]$ લખાયું
+  છે; વ્યાખ્યાયિત સંકેત $\equal[\ext]$ છે.}
+
+  ઊલટું, $\eta$-નિયમ $\equal[\ext]$માં સમાયેલો છે.
+  જો $x \notin FV(M)$ હોય તો $\beta$-નિયમથી
+  $(\lambd[x][Mx])x \equal[\ext] Mx$. વળી,
+  $x \notin FV((\lambd[x][Mx])M)$; તેથી
+  \ext{} નિયમથી $\lambd[x][Mx] \equal[\ext] M$.
+  આ રીતે
+  $\equal[\eta]$ના નિયમો પણ $\equal[\ext]$માં
+  સમાયેલા છે; એટલે બંને સંબંધો સમાન છે.
+\end{proof}
+
+\end{document}

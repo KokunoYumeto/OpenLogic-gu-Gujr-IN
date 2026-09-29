@@ -1,0 +1,106 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{opps}
+\olsection{અનુગામી અને સીમા ક્રમવાચક સંખ્યાઓ}
+
+આગળનાં થોડાં અધ્યાયોમાં આપણે ક્રમવાચક સંખ્યાઓનો ઘણો ઉપયોગ
+કરીશું. તેથી કેટલાક સરળ ખ્યાલો રજૂ કરી લઈએ.
+
+\begin{defn}
+કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$નો \emph{અનુગામી}
+$\ordsucc{\alpha}
+=\alpha \cup \{\alpha\}$ છે. કોઈ ક્રમવાચક સંખ્યા~$\beta$ માટે
+$\ordsucc{\beta} = \alpha$ હોય, તો $\alpha$ને
+\emph{અનુગામી} ક્રમવાચક સંખ્યા કહીએ. $\alpha$ ખાલી ન હોય અને
+$\alpha$ અનુગામી ક્રમવાચક સંખ્યા પણ ન હોય, તો અને માત્ર તો તેને
+\emph{સીમા} ક્રમવાચક સંખ્યા કહીએ.
+\end{defn}
+\noindent
+આગળનું પરિણામ બતાવે છે કે \emph{અનુગામી}નો આ યોગ્ય ખ્યાલ છે:
+
+\begin{prop}
+કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$ માટે:
+\begin{enumerate}
+	\item $\alpha \in \ordsucc{\alpha}$;
+	\item $\ordsucc{\alpha}$ ક્રમવાચક સંખ્યા છે;
+	\item $\alpha \in \beta \in
+	\ordsucc{\alpha}$ થાય એવી કોઈ ક્રમવાચક સંખ્યા $\beta$ નથી.
+	\end{enumerate}
+\end{prop}
+
+\begin{proof}
+સ્પષ્ટ છે કે $\alpha \in \alpha \cup \{\alpha\} = \ordsucc{\alpha}$.
+તે જ રીતે $\ordsucc{\alpha}$ ક્રમવાચક સંખ્યાઓનો પરંપરિત ગણ છે,
+તેથી \olref[basic]{corordtransitiveord} મુજબ ક્રમવાચક સંખ્યા છે.
+વળી $\alpha \in \beta \in \ordsucc{\alpha}$ અશક્ય છે,
+કારણ કે ત્યારે $\beta \in \alpha$ અથવા $\beta = \alpha$,
+જે \olref[basic]{ordordered}નો વિરોધ કરે છે.
+\end{proof}
+\noindent
+આથી અનંતાતીત અનુમાન વડે સાબિતીની એક બીજી રીત પણ મળે છે:
+
+\begin{thm}[સરળ અનંતાતીત અનુમાન]\ollabel{simpletransrecursion}
+ધારો કે $\phi(x)$ એવું સૂત્ર છે કે:
+\begin{enumerate}
+	\item $\phi(\emptyset)$; અને
+	\item કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$ માટે, જો $\phi(\alpha)$ હોય, તો
+	$\phi(\ordsucc{\alpha})$; અને
+	\item જો $\alpha$ સીમા ક્રમવાચક સંખ્યા હોય અને $(\forall \beta \in
+	\alpha)\phi(\beta)$ હોય, તો $\phi(\alpha)$.
+\end{enumerate}
+તો $\forall \alpha \phi(\alpha)$.
+\end{thm}
+
+\begin{proof}
+આપણે પ્રતિવિધાન સાબિત કરીએ. ધારો કે એવી કોઈ ક્રમવાચક સંખ્યા છે
+જેના માટે $\lnot\phi$; આવી લઘુતમ ક્રમવાચક સંખ્યા $\gamma$ લો.
+ત્યારે કાં તો $\gamma = \emptyset$, અથવા કોઈ એવી $\alpha$ માટે
+$\gamma = \ordsucc{\alpha}$ છે જેના માટે $\phi(\alpha)$;
+અથવા $\gamma$ સીમા ક્રમવાચક સંખ્યા છે અને $(\forall
+\beta \in \gamma)\phi(\beta)$. દરેક કિસ્સો સંબંધિત ધારણાથી
+વિરોધાભાસ આપે છે.
+\end{proof}
+\noindent
+આગળ એક અંતિમ સંકેત ઉપયોગી થશે:
+
+\begin{defn}\ollabel{defsupstrict}
+જો $X$ ક્રમવાચક સંખ્યાઓનો ગણ હોય, તો $\supstrict(X) = \bigcup_{\alpha
+\in X} \ordsucc{\alpha}$.
+\end{defn}
+\noindent
+અહીં ``lsub''નો અર્થ ``ન્યૂનતમ કડક ઉચ્ચસીમા'' છે.\footnote{કેટલાંક
+પુસ્તકો તેના માટે ``$\text{sup}(X)$'' લખે છે. પરંતુ બીજા પુસ્તકો
+``$\text{sup}(X)$''નો અર્થ ન્યૂનતમ \emph{અકડક} ઉચ્ચસીમા,
+એટલે કે માત્ર $\bigcup X$, એવો કરે છે. જો $X$માં મહત્તમ સભ્ય
+$\alpha$ હોય, તો આ બે ખ્યાલ જુદા પડે: ન્યૂનતમ \emph{કડક}
+ઉચ્ચસીમા $\ordsucc{\alpha}$ છે, જ્યારે ન્યૂનતમ \emph{અકડક}
+ઉચ્ચસીમા માત્ર $\alpha$ છે.} આગળનું પરિણામ તેનો ખુલાસો કરે છે:
+
+\begin{prop}
+જો $X$ ક્રમવાચક સંખ્યાઓનો ગણ હોય, તો $\supstrict(X)$ એ $X$ની
+દરેક ક્રમવાચક સંખ્યા કરતાં મોટી હોય એવી ન્યૂનતમ ક્રમવાચક સંખ્યા છે.
+\end{prop}
+
+\begin{proof}
+$Y = \Setabs{\ordsucc{\alpha}}{\alpha \in X}$ લો, જેથી
+$\supstrict(X) = \bigcup Y$. ક્રમવાચક સંખ્યાઓ પરંપરિત હોવાથી અને
+ક્રમવાચક સંખ્યાનો દરેક સભ્ય પણ ક્રમવાચક હોવાથી $\supstrict(X)$
+એ ક્રમવાચક સંખ્યાઓનો પરંપરિત ગણ છે; તેથી
+\olref[basic]{corordtransitiveord} મુજબ તે ક્રમવાચક સંખ્યા છે.
+
+જો $\alpha \in X$ હોય, તો $\ordsucc{\alpha} \in Y$, તેથી $\ordsucc{\alpha}
+\subseteq \bigcup Y = \supstrict(X)$, અને તેથી $\alpha \in
+\supstrict(X)$. આમ $\supstrict(X)$ એ $X$ની દરેક ક્રમવાચક
+સંખ્યા કરતાં કડક રીતે મોટો છે.
+
+ઊલટું, જો $\alpha \in \supstrict(X)$ હોય, તો કોઈ $\beta \in X$
+માટે $\alpha \in
+\ordsucc{\beta} \in Y$, તેથી $\alpha \leq
+\beta \in X$. એટલે $\supstrict(X)$ એ $X$ની \emph{ન્યૂનતમ}
+કડક ઉચ્ચસીમા છે. ખરેખર, આપેલા ગણની બધી ક્રમવાચક સંખ્યાઓથી
+મોટી કોઈ પણ ક્રમવાચક સંખ્યા આ બધાં સભ્યોને સમાવે છે.
+\end{proof}
+
+\end{document}

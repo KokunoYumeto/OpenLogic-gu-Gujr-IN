@@ -1,0 +1,195 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: filtrations-def
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{fil}
+
+\olsection{ફિલ્ટ્રેશનો}
+
+$\Gamma$ દ્વારા~$\mModel{M}$નું ``તે'' ફિલ્ટ્રેશન વ્યાખ્યાયિત
+કરવાને બદલે, નિદર્શન~$\mModel{M^*}$ ક્યારે~$\mModel{M}$નું
+ફિલ્ટ્રેશન ગણાય તે વ્યાખ્યાયિત કરીએ છીએ. બધાં ફિલ્ટ્રેશનોમાં
+જગતોનો ગણ~$W^*$ અને નિયુક્તિ~$V^*$ સરખાં હોય છે. પરંતુ જુદાં
+ફિલ્ટ્રેશનોના પ્રાપ્યતા સંબંધો~$R^*$ જુદા હોઈ શકે. ફિલ્ટ્રેશન
+ગણાવા માટે $R^*$એ કેટલીક શરતો પૂરી કરવી જ પડે. આ શરતો મુખ્ય
+પરિણામ સાબિત કરવા બરાબર જરૂરી છે: $!A \in \Gamma$ હોય ત્યારે
+$\mSat{M}{!A}[w]$ જો અને માત્ર જો
+$\mSat{M^*}{!A}[{[w]}]$.
+
+\begin{defn}\ollabel{defn:filtration}
+  ધારો કે $\Gamma$ ઉપસૂત્રો હેઠળ બંધ છે અને
+  $\mModel{M} = \tuple{W, R, V}$. $\Gamma$ દ્વારા
+  $\mModel{M}$નું \emph{ફિલ્ટ્રેશન} એવું કોઈપણ નિદર્શન
+  $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ છે, જ્યાં:
+  \begin{enumerate}
+  \item $W^* = \Setabs{[w]}{w \in W}$;
+  \item \ollabel{defn:filtration-R}%
+    કોઈપણ $u,v \in W$ માટે:
+    \begin{enumerate}
+    \item \ollabel{defn:filtration-R1}%
+      જો $Ruv$ હોય તો $R^*[u][v]$;
+    \tagitem{prvBox}{\ollabel{defn:filtration-R2}%
+      જો $R^*[u][v]$ હોય, તો કોઈપણ $\Box !A \in \Gamma$ માટે,
+      $\mSat{M}{\Box!A}[u]$ હોય ત્યારે $\mSat{M}{!A}[v]$}{};
+    \tagitem{prvDiamond}{\ollabel{defn:filtration-R3}%
+      જો $R^*[u][v]$ હોય, તો કોઈપણ $\Diamond !A \in \Gamma$
+      માટે, $\mSat{M}{!A}[v]$ હોય ત્યારે
+      $\mSat{M}{\Diamond!A}[u]$.}{}
+    \end{enumerate}
+  \item $V^*(p) = \Setabs{[u]}{u \in V(p)}$.
+  \end{enumerate}
+\end{defn}
+
+$V^*(p)$ શું છે તે વિચારવા જેવું છે:~$\mModel{M}$માં જ્યાં $p$
+સત્ય હોય એવા બધાં જગતો~$w$ના સમકક્ષતા-વર્ગો~$[w]$નો ગણ.
+એક તરફ, જો $w \in V(p)$ હોય, તો એ વ્યાખ્યાથી $[w] \in
+V^*(p)$. જોકે $[w] \in V^*(p)$ હોય તો $w \in V(p)$ પણ હોય જ એવું
+જરૂરી નથી. $[w] \in V^*(p)$ પરથી માત્ર \emph{કોઈ}~$u \in V(p)$
+માટે $[w] = [u]$ મળે છે. અલબત્ત, $[w] = [u]$ એટલે
+$w \equiv u$. તેથી $[w] \in V^*(p)$ હોય ત્યારે આપણે
+માત્ર એટલું તારવી શકીએ કે કોઈ $u \in V(p)$ માટે $w \equiv u$.
+
+\begin{thm}\ollabel{thm:filtrations}
+  જો $\mModel{M^*}$ એ $\Gamma$ દ્વારા $\mModel{M}$નું ફિલ્ટ્રેશન
+  હોય, તો દરેક $!A \in \Gamma$ અને $w \in W$ માટે
+  $\mSat{M}{!A}[w]$ જો અને માત્ર જો
+  $\mSat{M^*}{!A}[{[w]}]$.
+\end{thm}
+
+\begin{proof}
+  $!A$ પર અનુમાનથી; $\Gamma$ ઉપસૂત્રો હેઠળ બંધ છે એ વાપરીશું.
+  $!A \in \Gamma$ અને $\Gamma$ ઉપ-!!{formula}s હેઠળ બંધ હોવાથી
+  $!A$નાં બધાં ઉપ-!!{formula}s પણ $\in \Gamma$ છે. તેથી
+  અનુમાનના દરેક પગલામાં~$!A$નાં ઉપ-!!{formula}s માટે અનુમાનની
+  પૂર્વધારણા વાપરી શકાય છે.
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{ન તો
+        $\mSat{M}{\indfrm}[w]$ અને ન તો
+        $\mSat{M^*}{\indfrm}[{[w]}]$.}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{બંને
+        $\mSat{M}{\indfrm}[w]$ અને
+        $\mSat{M^*}{\indfrm}[{[w]}]$.}}{}
+    \item \indcase{!A}{p}{ડાબેથી જમણી દિશા સીધી છે:
+      $\mSat{M}{\indfrm}[w]$ હોય તો જ $w \in V(p)$, જેથી
+      $[w] \in V^*(p)$, એટલે કે
+      $\mSat{M^*}{\indfrm}[{[w]}]$. ઊલટું, ધારો કે
+      $\mSat{M^*}{\indfrm}[{[w]}]$, એટલે કે $[w] \in
+      V^*(p)$. ત્યારે કોઈ $v \in V(p)$ માટે $w \equiv v$.
+      તેથી $\mSat{M}{p}[v]$ પણ. $w \equiv v$ હોવાથી $w$ અને
+      $v$ એ~$\Gamma$માંથી સરખાં !!{formula}sને સત્ય બનાવે છે.
+      પૂર્વધારણા મુજબ $p \in \Gamma$ અને $\mSat{M}{p}[v]$
+      હોવાથી $\mSat{M}{\indfrm}[w]$.}
+
+    \tagitem{prvNot}{\iftag{probNot}{પ્રશ્ન.}{\indcase{!A}{\lnot
+          !B}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+          $\mSat/{M}{!B}[w]$. અનુમાનની પૂર્વધારણાથી
+          $\mSat/{M}{!B}[w]$ જો અને માત્ર જો
+          $\mSat/{M^*}{!B}[{[w]}]$. છેલ્લે,
+          $\mSat/{M^*}{!B}[{[w]}]$ જો અને માત્ર જો
+          $\mSat{M^*}{\indfrm}[{[w]}]$.}}}{}
+
+    \tagitem{prvAnd}{\iftag{probAnd}{પ્રશ્ન.}{\indcase{!A}{(!B \land
+          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+          $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બંને.
+          અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
+          $\mSat{M^*}{!B}[{[w]}]$, અને $\mSat{M}{!C}[w]$ જો અને
+          માત્ર જો $\mSat{M^*}{!C}[{[w]}]$. વળી,
+          $\mSat{M^*}{\indfrm}[{[w]}]$ જો અને માત્ર જો
+          $\mSat{M^*}{!B}[{[w]}]$ અને
+          $\mSat{M^*}{!C}[{[w]}]$ બંને.}}}{}
+
+    \tagitem{prvOr}{\iftag{probOr}{પ્રશ્ન.}{\indcase{!A}{(!B \lor
+          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+          $\mSat{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$.
+          અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
+          $\mSat{M^*}{!B}[{[w]}]$, અને $\mSat{M}{!C}[w]$ જો અને
+          માત્ર જો $\mSat{M^*}{!C}[{[w]}]$. વળી,
+          $\mSat{M^*}{\indfrm}[{[w]}]$ જો અને માત્ર જો
+          $\mSat{M^*}{!B}[{[w]}]$ અથવા
+          $\mSat{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvIf}{\iftag{probIf}{પ્રશ્ન.}{\indcase{!A}{(!B \lif
+          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+          $\mSat/{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$.
+          અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
+          $\mSat{M^*}{!B}[{[w]}]$, અને $\mSat{M}{!C}[w]$ જો અને
+          માત્ર જો $\mSat{M^*}{!C}[{[w]}]$. વળી,
+          $\mSat{M^*}{\indfrm}[{[w]}]$ જો અને માત્ર જો
+          $\mSat/{M^*}{!B}[{[w]}]$ અથવા
+          $\mSat{M^*}{!C}[{[w]}]$.}}}{}
+
+    \tagitem{prvIff}{\iftag{probIff}{પ્રશ્ન.}{\indcase{!A}{(!B \liff
+          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+          $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બંને, અથવા
+          $\mSat/{M}{!B}[w]$ અને $\mSat/{M}{!C}[w]$ બંને.
+          અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
+          $\mSat{M^*}{!B}[{[w]}]$, અને $\mSat{M}{!C}[w]$ જો અને
+          માત્ર જો $\mSat{M^*}{!C}[{[w]}]$. વળી,
+          $\mSat{M^*}{\indfrm}[{[w]}]$ જો અને માત્ર જો
+          $\mSat{M^*}{!B}[{[w]}]$ અને
+          $\mSat{M^*}{!C}[{[w]}]$ બંને, અથવા
+          $\mSat/{M^*}{!B}[{[w]}]$ અને
+          $\mSat/{M^*}{!C}[{[w]}]$ બંને.}}}{}
+
+    \tagitem{prvBox}{\iftag{probBox}{પ્રશ્ન.}{\indcase{!A}{\Box
+          !B}{ધારો કે $\mSat{M}{\indfrm}[w]$.
+          $\mSat{M^*}{\indfrm}[{[w]}]$ બતાવવા એવો $v$ લો કે
+          $R^*[w][v]$. \olref{defn:filtration}%
+          \olref{defn:filtration-R2} મુજબ $\mSat{M}{!B}[v]$;
+          અનુમાનની પૂર્વધારણાથી
+          $\mSat{M^*}{!B}[{[v]}]$. $v$ મનસ્વી હોવાથી
+          $\mSat{M^*}{\indfrm}[{[w]}]$ ફલિત થાય છે.
+
+          ઊલટું, ધારો કે $\mSat{M^*}{\indfrm}[{[w]}]$ અને
+          $Rwv$ હોય એવો મનસ્વી $v$ લો. \olref{defn:filtration}%
+          \olref{defn:filtration-R1} મુજબ $R^*[w][v]$,
+          તેથી $\mSat{M^*}{!B}[{[v]}]$; અનુમાનની પૂર્વધારણાથી
+          $\mSat{M}{!B}[v]$. $v$ મનસ્વી હોવાથી
+          $\mSat{M}{\indfrm}[w]$.}}}{}
+
+    \tagitem{prvDiamond}{\iftag{probDiamond}{પ્રશ્ન.}{\indcase{!A}{\Diamond
+          !B}{ધારો કે $\mSat{M}{\indfrm}[w]$.
+          ત્યારે કોઈ $v \in W$ માટે $Rwv$ અને
+          $\mSat{M}{!B}[v]$. અનુમાનની પૂર્વધારણાથી
+          $\mSat{M^*}{!B}[{[v]}]$; અને
+          \olref{defn:filtration}\olref{defn:filtration-R1} મુજબ
+          $R^*[w][v]$. તેથી
+          $\mSat{M^*}{\indfrm}[{[w]}]$.
+
+          હવે ધારો કે $\mSat{M^*}{\indfrm}[{[w]}]$.
+          ત્યારે એવો કોઈ $[v] \in W^*$ છે કે $R^*[w][v]$ અને
+          $\mSat{M^*}{!B}[{[v]}]$. અનુમાનની પૂર્વધારણાથી
+          $\mSat{M}{!B}[v]$.
+          \olref{defn:filtration}\olref{defn:filtration-R3} મુજબ
+          $\mSat{M}{\indfrm}[w]$.}}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][fil]{thm:filtrations}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+નિદર્શનના જગતો પરની સત્યતા માટે જે સાચું છે તે નિદર્શનમાં સત્યતા
+અને નિદર્શનોના વર્ગમાં માન્યતા માટે પણ સાચું છે.
+
+\begin{cor}
+  ધારો કે $\Gamma$ ઉપસૂત્રો હેઠળ બંધ છે. ત્યારે:
+  \begin{enumerate}
+  \item જો $\mModel{M^*}$ એ $\Gamma$ દ્વારા $\mModel{M}$નું
+    ફિલ્ટ્રેશન હોય, તો કોઈપણ $!A \in \Gamma$ માટે:
+    $\mSat{M}{!A}$ જો અને માત્ર જો $\mSat{M^*}{!A}$.
+  \item જો $\mClass{C}$ નિદર્શનોનો વર્ગ હોય અને
+    $\Gamma(\mClass{C})$ એ $\mClass{C}$માંનાં નિદર્શનોના
+    $\Gamma$-ફિલ્ટ્રેશનોનો વર્ગ હોય, તો કોઈપણ
+    !!{formula}~$!A \in \Gamma$ એ $\mClass{C}$માં માન્ય છે
+    જો અને માત્ર જો તે $\Gamma(\mClass{C})$માં માન્ય છે.
+  \end{enumerate}
+\end{cor}
+
+
+
+\end{document}

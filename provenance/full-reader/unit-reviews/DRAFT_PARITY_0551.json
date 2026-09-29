@@ -1,0 +1,88 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0551",
+  "checked_at_utc": "2026-09-28T00:56:49.200628+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0551 order isomorphisms and comparability of well-orders; state-only draft",
+  "report": {
+    "unit_id": "OLP-0551",
+    "source_path": "content/set-theory/ordinals/iso.tex",
+    "source_sha256": "eb57a72aed6e4ff2398fe8d9c52239c79d2578df37c5e4bb891568381a41cb39",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-iso.tex",
+    "draft_sha256": "4f6a241b7fd72994f3a93087e2ed6525dbbcf74f02e8576330be1c61a41b657f",
+    "aligned_blocks": 24,
+    "linguistic_blocks": 21,
+    "source_math_spans_correction_aware": 120,
+    "target_math_spans_after_corrections": 120,
+    "glossary_tokens": 5,
+    "source_correction_notes": [
+      "OLMD-115"
+    ],
+    "source_detector_ascii_tokens": 440,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "domain\r\nis",
+        "codomain\r\nis"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekinds-proof.tex",
+        "sha256": "c22dc425e4688da45ff2573876a7e4072e493f2cf411436fdb9567a46fa031d4",
+        "terms": [
+          "એકરૂપ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\orders.tex",
+        "sha256": "0490f7ef348c6b29860dc12b90e6d41ea05e92add293c02b188a0e65b4f6e38c",
+        "terms": [
+          "આરંભિક ખંડ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\arithmetization\\checking-details.tex",
+        "sha256": "77b13461dc42a8d952431a1987a8134c972df7d7b8f06c404e20343d7e9a440f",
+        "terms": [
+          "ઉચિત આરંભિક ખંડ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\function-basics.tex",
+        "sha256": "1975bcc7f35c81564a91660b46f9934627b027cdec695ba1f960baad4e209364",
+        "terms": [
+          "પ્રદેશ",
+          "વિસ્તાર",
+          "સહપ્રદેશ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-wo.tex",
+        "sha256": "c101c7813ca2cfbc30ae058966bc0cd22c520f7d37e99e5f7d7e1f279af035df",
+        "terms": [
+          "સુક્રમ",
+          "લઘુતમ",
+          "ન્યૂનતમ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "GU-P064 directly attests એકરૂપતા for isomorphism of mathematical structures, while source order preservation governs the compounded ક્રમ-એકરૂપતા.",
+      "The source's !!a{bijection} and !!{bijection}s markers are preserved; no new definition of homomorphism is imported.",
+      "The source's inline inactive comment before the four-line image calculation remains inactive and exact.",
+      "The unique-isomorphism induction compares predecessor sets on both sides before applying the strict-linear-order extensionality reference.",
+      "The cut-point lemma's final reference to the domain B_b2 is a prose mistake: f:A_a2→B_b2 has that set as codomain and, because f is an isomorphism, range. OLMD-115 changes no formula.",
+      "The comparability map is bounded by A×B and formed by Separation; it does not assume a set of all well-orders."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

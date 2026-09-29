@@ -1,0 +1,67 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0544",
+  "checked_at_utc": "2026-09-28T00:22:55.298243+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0544 the Zminus milestone; state-only draft",
+  "report": {
+    "unit_id": "OLP-0544",
+    "source_path": "content/set-theory/z/milestone.tex",
+    "source_sha256": "15127543e5463e6dc278ab5cb43c4127fe55a54696e9b076d77c053608a5ff40",
+    "draft_path": "private-state\\work\\batch044_draft\\milestone.tex",
+    "draft_sha256": "6fedf939f25a1478ca822bc44025b491a1cddadc5bdd88644b817db8e22e4324",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 5,
+    "target_math_spans_after_corrections": 5,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 154,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\extensionality.tex",
+        "sha256": "be103783e4ba30e4118344fb25be3383732bda255321d36b38e47c01e08cf6b5",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત સમાનતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\separation.tex",
+        "sha256": "b69123900add155945875e833da784adb7a6719fce6464f0db893bb2ddd0c1a8",
+        "terms": [
+          "પૃથક્કરણ",
+          "પ્રરૂપ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-infinity-044.tex",
+        "sha256": "2dd0ea1ef1d9d86e8530e412787068ec4b6f8fa77955846f9d43757bf07a2981",
+        "terms": [
+          "તબક્કાઓ અનંતતા સુધી પહોંચે છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The Separation scheme is an infinite family of instances, not a single unrestricted comprehension axiom.",
+      "The printed title Z^- and body macro Zminus are kept exactly as frozen mathematical notation.",
+      "Historical and bibliography claims are translated as source claims, not independently adjudicated."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citet[Appendix\nA]{Potter2004}",
+        "count": 1,
+        "reason": "Frozen bibliographic appendix locator and citation key, retained as reference metadata."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

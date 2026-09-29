@@ -1,0 +1,304 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{sou}
+
+\olsection{સ્ફુરણાવાદી \usetoken{P}{tableau}ની યથાર્થતા}
+
+\begin{explain}
+  સ્ફુરણાવાદી !!{tableau}s યથાર્થ છે તે બતાવવા,
+  જો
+  \[
+  \sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1], \sFmla{\False}{!A}[1]
+  \]
+  માટે બંધ !!{tableau} હોય, તો
+  $!B_1, \dots, !B_n \Entails !A$ છે તે બતાવવું પડે.
+  પ્રતિપક્ષી વિધાન સાબિત કરવું સરળ છે: જો કોઈ
+  $\mModel{M}$ અને જગત~$w$ માટે બધા $i=1$,
+  \dots,~$n$ માટે $\mSat{M}{!B_i}[w]$ હોય,
+  પરંતુ $\mSat/{M}{!A}[w]$ હોય, તો કોઈ
+  !!{tableau} બંધ થઈ શકે નહીં.
+  \sourcecorrection{OLMD-101}{મૂળમાં અહીં
+  પ્રતિનિદર્શમાં $!A$ પણ સત્ય છે એમ લખાયું છે;
+  $!A$ ખોટું હોવું જોઈએ, તેથી સત્ય-સંજ્ઞામાં
+  નિષેધચિહ્ન ઉમેર્યું છે.}
+  આવું પ્રતિનિદર્શ બતાવે છે કે !!{tableau}ની
+  શરૂઆતની ધારણાઓ સંતોષ્ય છે. સાબિતીની રીત એ
+  બતાવવાની છે કે !!a{tableau}ની શાખા પરનાં બધાં
+  ઉપસર્ગવાળા !!{formula}s સંતોષ્ય હોય, તો કોઈ પણ
+  નિયમ લાગુ કરતાં ઓછામાં ઓછી એક વિસ્તરેલી શાખા
+  સંતોષ્ય રહે છે. બંધ શાખાઓ અસંતોષ્ય હોવાથી,
+  સંતોષ્ય ઉપસર્ગવાળા !!{formula}sના ગણનું કોઈ પણ
+  !!{tableau} ઓછામાં ઓછી એક ખુલ્લી શાખા ધરાવે છે.
+
+  સ્ફુરણાવાદી કિસ્સામાં આ રીત લાગુ કરવા
+  ``સંતોષ્ય''ની વ્યાખ્યાને સંબંધાત્મક નિદર્શો અને
+  ઉપસર્ગો સુધી વિસ્તૃત કરવી પડે છે. પછી સાબિતી
+  સીધી છે.
+  \sourcecorrection{OLMD-102}{મૂળમાં અહીં
+  ``મોડલ કિસ્સો'' લખાયો છે; આ પ્રકરણ
+  સ્ફુરણાવાદી ટેબ્લોનું છે, તેથી વિષયનું નામ
+  સુસંગત કર્યું છે.}
+\end{explain}
+
+\begin{defn}
+  ધારો કે $P$ ઉપસર્ગોનો ગણ છે, એટલે
+  $P \subseteq (\PosInt)^* \setminus \{\emptyseq\}$,
+  અને $\mModel{M}$ નિદર્શ છે.
+  વિધેય~$f\colon P \to W$ એ~$\mModel{M}$માં
+  $P$નું \emph{અર્થઘટન} ત્યારે કહેવાય જ્યારે
+  $\sigma$ અને $\sigma.n$ બંને~$P$માં હોય ત્યારે
+  $Rf(\sigma)f(\sigma.n)$ હોય.
+
+  ઉપસર્ગો~$P$ના અર્થઘટનની દૃષ્ટિએ નીચેની
+  વ્યાખ્યાઓ આપી શકીએ:
+  \begin{enumerate}
+  \item $\mModel{M}$ એ $\sFmla{\True}{!A}[\sigma]$ને
+    ત્યારે અને માત્ર ત્યારે જ સંતોષે જ્યારે
+    $\mSat{M}{!A}[f(\sigma)]$.
+  \item $\mModel{M}$ એ $\sFmla{\False}{!A}[\sigma]$ને
+    ત્યારે અને માત્ર ત્યારે જ સંતોષે જ્યારે
+    $\mSat/{M}{!A}[f(\sigma)]$.
+  \end{enumerate}
+\end{defn}
+
+$R$ સ્વવાચક અને પરંપરિત હોવાથી, અને $\sigma.{*}$
+એ $\sigma$, $\sigma.n_1$, $\sigma.n_1.n_2$,
+\dots, દર્શાવતું હોવાથી, $Rf(\sigma)f(\sigma.{*})$
+પણ છે.
+
+\begin{defn}
+  ધારો કે $\Gamma$ ઉપસર્ગવાળા !!{formula}sનો ગણ છે,
+  અને $P(\Gamma)$ તેમાં આવતા ઉપસર્ગોનો ગણ છે.
+  જો $f$ એ $\mModel{M}$માં $P(\Gamma)$નું અર્થઘટન
+  હોય, તો $\mModel{M}$ એ~$f$ની દૃષ્ટિએ $\Gamma$ને
+  સંતોષે છે, સંજ્ઞામાં $\mSat{M}{\Gamma}[f]$,
+  એમ ત્યારે કહીએ જ્યારે $\mModel{M}$ એ~$f$ની
+  દૃષ્ટિએ $\Gamma$નું દરેક ઉપસર્ગવાળું !!{formula}
+  સંતોષે. $\Gamma$ \emph{સંતોષ્ય} ત્યારે અને માત્ર
+  ત્યારે જ જ્યારે એવું નિદર્શ~$\mModel{M}$ અને
+  $P(\Gamma)$નું અર્થઘટન~$f$ હોય કે
+  $\mSat{M}{\Gamma}[f]$.
+\end{defn}
+
+\begin{prop}
+  જો $\Gamma$માં કોઈ !!{formula}~$!A$ અને
+  ઉપસર્ગ~$\sigma$ માટે
+  $\sFmla{\True}{!A}[\sigma]$ તથા
+  $\sFmla{\False}{!A}[\sigma.{*}]$ બંને હોય,
+  અથવા તેમાં $\sFmla{\True}{\lfalse}[\sigma]$
+  હોય, તો $\Gamma$ અસંતોષ્ય છે.
+\end{prop}
+
+\begin{proof}
+  હંમેશા $\mSat/{M}{\lfalse}[f(\sigma)]$ હોવાથી,
+  $\sFmla{\True}{\lfalse}[\sigma]$ ધરાવતો
+  $\Gamma$ અસંતોષ્ય છે.
+
+  વળી, બંને વિરોધી ચિહ્નિત સૂત્રોને સંતોષતું
+  નિદર્શ~$\mModel{M}$ અને $P(\Gamma)$નું અર્થઘટન~$f$
+  હોઈ શકે નહીં. જો $\mSat{M}{!A}[f(\sigma)]$
+  હોય, તો $Rf(\sigma)f(\sigma.{*})$ અને
+  \olref[sem][rel]{prop:true-monotonic} મુજબ
+  $\mSat{M}{!A}[f(\sigma.{*})]$ પણ હોય.
+  તેથી $\mSat{M}{!A}[f(\sigma)]$ અને
+  $\mSat/{M}{!A}[f(\sigma.{*})]$ બંને સાથે
+  હોઈ શકે નહીં.
+  \sourcecorrection{OLMD-103}{મૂળના આ વાક્યમાં
+  વાક્યરચના અધૂરી છે, $R$ની બીજી દલીલમાં
+  $f$ ખૂટે છે અને એકદિશવર્ધિતાથી મળતું સત્ય
+  ફરી મૂળ જગતમાં મૂકાયું છે. અહીં તે સુલભ
+  જગત~$f(\sigma.{*})$માં મૂક્યું છે; અસત્યના
+  ચિહ્નિત સૂત્રને પણ~$\sigma$ ઉપસર્ગ આપ્યો છે.}
+\end{proof}
+
+\begin{thm}[યથાર્થતા]
+  \ollabel{thm:tableau-soundness}
+  જો $\Gamma$ માટે બંધ !!{tableau} હોય,
+  તો $\Gamma$ અસંતોષ્ય છે.
+\end{thm}
+
+\begin{proof}
+!!a{tableau}ની શાખાને ત્યારે સંતોષ્ય કહીએ જ્યારે
+તેના પરના !!{signed formula}sનો ગણ સંતોષ્ય હોય;
+અને !!a{tableau}ને ત્યારે સંતોષ્ય કહીએ જ્યારે
+તેની ઓછામાં ઓછી એક શાખા સંતોષ્ય હોય.
+
+આ બતાવીએ: સંતોષ્ય !!{tableau}ને અનુમાનનો કોઈ પણ
+નિયમ વાપરીને વિસ્તારો, તો મળતું !!{tableau} પણ
+સંતોષ્ય રહે છે. આનાથી પ્રમેય મળશે: કોઈ પણ બંધ
+!!{tableau} એ~$\Gamma$ની ધારણાઓથી જ શરૂ થતા
+!!{tableau} પર અનુમાનના નિયમો લગાવવાથી મળે છે.
+જો $\Gamma$ સંતોષ્ય હોય, તો તેના માટેનું દરેક
+!!{tableau} સંતોષ્ય રહે. પરંતુ બંધ !!{tableau}
+સંતોષ્ય નથી, કારણ કે તેની બધી શાખાઓ બંધ છે
+અને બંધ શાખાઓ અસંતોષ્ય છે.
+
+ધારો કે આપણી પાસે સંતોષ્ય !!{tableau} છે,
+એટલે ઓછામાં ઓછી એક સંતોષ્ય શાખાવાળું
+!!a{tableau}. નિયમ લાગુ કરતાં કોઈ શાખા પર
+!!{signed formula}s ઉમેરાય છે અથવા શાખા
+બે ભાગમાં ફાટે છે. જો !!{tableau}માં નિયમથી ન વિસ્તરતી
+બીજી કોઈ સંતોષ્ય શાખા હોય, તો તે વિસ્તરેલા
+!!{tableau}માં પણ સંતોષ્ય રહે છે; તેથી આખું
+વિસ્તરેલું ટેબ્લો સંતોષ્ય છે. હવે ફક્ત એવો
+કિસ્સો જોવો છે જેમાં નિયમ સંતોષ્ય શાખા પર
+લાગુ થાય છે.
+
+તે શાખા પરનાં !!{signed formula}sનો ગણ
+$\Gamma$ હોય અને નિયમ જેના પર લાગુ થાય છે તે
+!!{signed formula} $\sFmla{S}{!A}[\sigma] \in \Gamma$
+હોય. નિયમથી શાખા ન ફાટે, તો વિસ્તરેલી શાખા,
+એટલે નિયમના નિષ્કર્ષો સાથેનો $\Gamma$,
+હજી સંતોષ્ય છે તે બતાવવું પડે. શાખા ફાટે,
+તો બેમાંથી ઓછામાં ઓછી એક નવી શાખા સંતોષ્ય
+છે તે બતાવવું પડે.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot !B}[\sigma] \in \Gamma$
+  પર $\TRule{\True}{\lnot}$ લગાવવાથી શાખા
+  વિસ્તરે છે. વિસ્તરેલી શાખામાં
+  !!{signed formula}sનો ગણ $\Gamma \cup
+  \{\sFmla{\False}{!B}[\sigma.{*}]\}$ હોય છે.
+  ધારો કે $\mSat{M}{\Gamma}[f]$. ખાસ કરીને
+  $\mSat{M}{\lnot !B}[f(\sigma)]$. તેથી
+  $Rf(\sigma)w$ ધરાવતા કોઈ પણ $w$ માટે
+  $\mSat/{M}{!B}[w]$; તેમાં $f(\sigma.{*})$
+  પણ આવે છે. આથી $\mModel{M}$ એ~$f$ની
+  દૃષ્ટિએ $\sFmla{\False}{!B}[\sigma.{*}]$
+  સંતોષે છે.
+\item $\sFmla{\False}{\lnot !B}[\sigma] \in \Gamma$
+  પર $\TRule{\False}{\lnot}$ લગાવવાથી શાખા
+  વિસ્તરે છે: સ્વાધ્યાય.
+\item $\sFmla{\True}{!B \land !C}[\sigma] \in \Gamma$
+  પર $\TRule{\True}{\land}$ લગાવવાથી શાખા
+  વિસ્તરે છે અને તે જ શાખા પર બે નવાં
+  !!{signed formula}s, $\sFmla{\True}{!B}[\sigma]$
+  અને $\sFmla{\True}{!C}[\sigma]$, મળે છે.
+  ધારો કે $\mSat{M}{\Gamma}[f]$; ખાસ કરીને
+  $\mSat{M}{!B \land !C}[f(\sigma)]$.
+  ત્યારે $\mSat{M}{!B}[f(\sigma)]$ અને
+  $\mSat{M}{!C}[f(\sigma)]$. એટલે
+  $\mModel{M}$ એ~$f$ની દૃષ્ટિએ
+  $\sFmla{\True}{!B}[\sigma]$ અને
+  $\sFmla{\True}{!C}[\sigma]$ બંને સંતોષે છે.
+\item $\sFmla{\False}{!B \lor !C}[\sigma] \in \Gamma$
+  પર $\TRule{\False}{\lor}$ લગાવવાથી શાખા
+  વિસ્તરે છે: સ્વાધ્યાય.
+  \sourcecorrection{OLMD-104}{મૂળની આ
+  સ્વાધ્યાય-પંક્તિમાં ચિહ્નિત વિયોજન પછી
+  ઉપસર્ગ~$\sigma$ ખૂટે છે; નિયમનો વિષય
+  નિશ્ચિત કરવા તે ઉમેર્યો છે.}
+\item $\sFmla{\False}{!B \lif !C}[\sigma] \in \Gamma$
+  પર $\TRule{\False}{\lif}$ લગાવવાથી શાખા
+  વિસ્તરે છે. એ જ શાખા પર બે નવાં
+  !!{signed formula}s મળે છે:
+  $\sFmla{\True}{!B}[\sigma.n]$ અને
+  $\sFmla{\False}{!C}[\sigma.n]$; અહીં
+  $\sigma.n$ શાખા પર નવો ઉપસર્ગ છે, એટલે
+  $\sigma.n \notin P(\Gamma)$.
+
+  $\Gamma$ સંતોષ્ય હોવાથી એવું
+  $\mModel{M}$ અને $P(\Gamma)$નું અર્થઘટન~$f$
+  છે કે $\mSat{M}{\Gamma}[f]$; ખાસ કરીને
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$.
+  $\Gamma \cup \{\sFmla{\True}{!B}[\sigma.n],
+  \sFmla{\False}{!C}[\sigma.n]\}$ સંતોષ્ય છે
+  તે બતાવવાનું છે. તે માટે $P(\Gamma)
+  \cup \{\sigma.n\}$નું અર્થઘટન નીચે મુજબ
+  વ્યાખ્યાયિત કરીએ છીએ:
+  \sourcecorrection{OLMD-105}{મૂળ આ લક્ષ્યમાં
+  બે નવા ચિહ્નિત સૂત્રોને બદલે
+  $\sFmla{\False}{!B \lif !C}[\sigma.n]$
+  લખે છે; એ શાખામાં લાગુ પડેલા નિયમનું
+  નિષ્કર્ષ નથી. બંને જરૂરી સૂત્રો મૂક્યા છે.}
+
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$
+  હોવાથી એવું $w \in W$ છે કે $Rf(\sigma)w$
+  અને $\mSat{M}{!B}[w]$ તથા
+  $\mSat/{M}{!C}[w]$. $f'$ એ $f$ જેવું જ હોય,
+  ફક્ત $f'(\sigma.n) = w$ મૂકો.
+  $f'(\sigma) = f(\sigma)$ અને $Rf(\sigma)w$
+  હોવાથી $Rf'(\sigma)f'(\sigma.n)$; તેથી
+  $f'$ એ $P(\Gamma) \cup \{\sigma.n\}$નું
+  અર્થઘટન છે. સ્પષ્ટ છે કે
+  $\mSat{M}{!B}[f'(\sigma.n)]$ અને
+  $\mSat/{M}{!C}[f'(\sigma.n)]$.
+  $\sigma' \in P(\Gamma)$ એવા દરેક ઉપસર્ગ માટે
+  $f(\sigma') = f'(\sigma')$ હોવાથી
+  $\mSat{M}{\Gamma}[f']$. તેથી $\mModel{M}, f'$
+  એ $\Gamma \cup \{\sFmla{\True}{!B}[\sigma.n],
+  \sFmla{\False}{!C}[\sigma.n]\}$ સંતોષે છે.
+\end{enumerate}
+હવે બે નવી શાખાઓ આપતા નિયમો જોઈએ.
+\begin{enumerate}
+\item $\sFmla{\False}{!B \land !C}[\sigma] \in \Gamma$
+  પર $\TRule{\False}{\land}$ લગાવવાથી
+  શાખા બેમાં ફાટે છે: ડાબી શાખા
+  $\sFmla{\False}{!B}[\sigma]$થી આગળ વધે છે
+  અને જમણી $\sFmla{\False}{!C}[\sigma]$થી.
+  ધારો કે $\mSat{M}{\Gamma}[f]$; ખાસ કરીને
+  $\mSat/{M}{!B \land !C}[f(\sigma)]$.
+  ત્યારે $\mSat/{M}{!B}[f(\sigma)]$ અથવા
+  $\mSat/{M}{!C}[f(\sigma)]$. પહેલા કિસ્સામાં
+  $\mModel{M}, f$ એ $\sFmla{\False}{!B}[\sigma]$
+  સંતોષે છે, એટલે ડાબી શાખા સંતોષ્ય છે.
+  બીજા કિસ્સામાં $\mModel{M}, f$ એ
+  $\sFmla{\False}{!C}[\sigma]$ સંતોષે છે,
+  એટલે જમણી શાખા સંતોષ્ય છે.
+\item $\sFmla{\True}{!B \lor !C}[\sigma] \in \Gamma$
+  પર $\TRule{\True}{\lor}$ લગાવવાથી શાખા
+  વિસ્તરે છે: સ્વાધ્યાય.
+\item $\sFmla{\True}{!B \lif !C}[\sigma] \in \Gamma$
+  પર $\TRule{\True}{\lif}$ લગાવવાથી શાખા
+  વિસ્તરે છે: સ્વાધ્યાય.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref[int][tab][sou]{thm:tableau-soundness}ની
+સાબિતી પૂરી કરો.
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+જો $\Gamma \Proves !A$ હોય, તો
+$\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+  જો $\Gamma \Proves !A$ હોય, તો કોઈ
+  $!B_1$, \dots, $!B_n \in \Gamma$ માટે
+  $\Delta = \{\sFmla{\False}{!A}[1],
+  \sFmla{\True}{!B_1}[1], \dots,
+  \sFmla{\True}{!B_n}[1]\}$નું બંધ
+  !!{tableau} છે. $\Gamma \Entails !A$
+  બતાવવું છે. ઊલટું ધારો: કોઈ
+  $\mModel{M}$ અને $w$ માટે $i=1$,
+  \dots,~$n$ માટે $\mSat{M}{!B_i}[w]$
+  હોય, પણ $\mSat/{M}{!A}[w]$.
+  $f(1) = w$ મૂકો; ત્યારે $f$ એ
+  $P(\Delta)$નું~$\mModel{M}$માં અર્થઘટન
+  છે અને $\mModel{M}$ એ~$f$ની દૃષ્ટિએ
+  $\Delta$ને સંતોષે છે. પરંતુ
+  \olref{thm:tableau-soundness} મુજબ બંધ
+  !!{tableau} ધરાવતો $\Delta$ અસંતોષ્ય છે;
+  આ વિરોધાભાસ છે. તેથી
+  $\Gamma \Entails !A$ હોવું જ જોઈએ.
+  \sourcecorrection{OLMD-106}{મૂળની અંતિમ
+  પંક્તિમાં ફરી $\Gamma \Proves !A$ લખાયું છે,
+  જે પહેલેથી ધારેલું હતું. વિરોધાભાસથી
+  અહીં જોઈતું $\Gamma \Entails !A$ મળે છે.}
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+જો $\Proves !A$ હોય, તો બધા નિદર્શોમાં
+$!A$ સત્ય છે.
+\end{cor}
+
+\end{document}

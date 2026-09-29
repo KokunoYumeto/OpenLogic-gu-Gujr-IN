@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0453",
+  "checked_at_utc": "2026-09-27T12:38:15.032058+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0453 filtration definition and truth preservation; state-only draft",
+  "report": {
+    "unit_id": "OLP-0453",
+    "source_path": "content/normal-modal-logic/filtrations/filtrations-def.tex",
+    "source_sha256": "e7f0f36522a5549a046c4c7999dec2c80751ed486edb72efaa3c3962bb4d02d1",
+    "draft_path": "private-state\\work\\batch040_draft\\filtrations-def.tex",
+    "draft_sha256": "5965107d7ac9bdf24e5f21d4ffcc704b6208f40de106991ca210c78c6395be47",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 173,
+    "target_math_spans_after_corrections": 173,
+    "glossary_tokens": 5,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 432,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "R1_R2_R3_and_ten_induction_cases_preserved": true,
+    "class_validity_corollary_existence_dependency_noted": true
+  },
+  "status": "draft_linguistic_math_and_induction_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

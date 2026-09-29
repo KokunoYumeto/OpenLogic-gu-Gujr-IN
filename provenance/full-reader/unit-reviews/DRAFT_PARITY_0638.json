@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0638",
+  "checked_at_utc": "2026-09-28T16:07:59.054980+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0638 Cantor's binary interleaving and the Schröder–Bernstein completion; state-only draft",
+  "report": {
+    "unit_id": "OLP-0638",
+    "source_path": "content/history/set-theory/cantor-plane.tex",
+    "source_sha256": "6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737",
+    "draft_path": "private-state\\work\\batch044_draft\\cantor-plane.tex",
+    "draft_sha256": "bca1dac6e1bf2f3ef952f87d577b3fd2b10beaaeacdd32f2eccedcf4ab4fe985",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 41,
+    "target_math_spans_after_corrections": 41,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-169"
+    ],
+    "source_detector_ascii_tokens": 317,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\schroder-bernstein.tex",
+        "sha256": "7f481c83f2e1e975c0935282cf02bbd2405b19672fd1e604301386a6c979f343",
+        "terms": [
+          "શ્રેડર--બર્નસ્ટાઇન",
+          "\\cardle{A}{B}"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\function-kinds.tex",
+        "sha256": "3255e9aba2a04f71c6c86aefdb14438c345a8105b69c545220ccaf69fd397f7e",
+        "terms": [
+          "!!a{surjection}",
+          "!!a{injection}"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\intertext{Now consider the function $f \\colon \\unitsquare \\to \\unitline$ given by}",
+        "target": "\\intertext{હવે આ રીતે આપેલું વિધેય $f \\colon \\unitsquare \\to \\unitline$ લો:}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

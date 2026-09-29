@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0689",
+  "checked_at_utc": "2026-09-28T22:43:40.528616+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0689 Converting natural deduction proofs to unique proof terms; state-only draft",
+  "report": {
+    "unit_id": "OLP-0689",
+    "source_path": "content/proof-theory/propositions-as-types/proofs-to-terms.tex",
+    "source_sha256": "659493297b55668bb3c57b1999a8fac3c45b6db7564a83b6147e12628b5f217d",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-to-terms.tex",
+    "draft_sha256": "8a724c1ca6011093f964944c0468029410908ddba3c023edc7e908cb4b36171e",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 30,
+    "target_math_spans_after_corrections": 30,
+    "glossary_tokens": 10,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 205,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-terms.tex",
+        "sha256": "04a94a8e5015bcd50bd4827a2b6e0e46a9781ceb8422bf643e107220a74c6a9c",
+        "terms": [
+          "સાબિતી-પદ",
+          "બદ્ધ કરે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0552",
+  "checked_at_utc": "2026-09-28T00:58:42.324414+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0552 von Neumann construction of ordinals; state-only draft",
+  "report": {
+    "unit_id": "OLP-0552",
+    "source_path": "content/set-theory/ordinals/vn.tex",
+    "source_sha256": "1a1ffe53bdfd51d0ee3ad7a818981d6cc2b54405c92a219a4295fa48b1393529",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-vn.tex",
+    "draft_sha256": "d634e926539b703109c4034ef9abc68986efe47f9aedc4a2bffa993b704f1d25",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 14,
+    "target_math_spans_after_corrections": 14,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 267,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinals.tex",
+        "sha256": "3eb012194bc0e67586089d5c9518d8727d3e01369956bef550e910ee6d547afb",
+        "terms": [
+          "ક્રમવાચક સંખ્યાઓ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-iso.tex",
+        "sha256": "4f6a241b7fd72994f3a93087e2ed6525dbbcf74f02e8576330be1c61a41b657f",
+        "terms": [
+          "ક્રમ-એકરૂપતા",
+          "સુક્રમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\infinity-again.tex",
+        "sha256": "8f1e1364dd675967c7c95deb9c84e11bde16937375f65b77ef8107380dcbf798",
+        "terms": [
+          "\\omega",
+          "\\emptyset"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The two proposed order-type principles are not claimed as proved at this point; the source says we would hope to secure them.",
+      "The relation on alpha is explicitly the set of ordered pairs in alpha squared satisfying x in y, not unrestricted global membership.",
+      "The optional English running head is localized along with the visible section heading.",
+      "The four examples in the displayed formula are copied, without substituting Zermelo's singleton representation.",
+      "Transitive as a set property is defined explicitly; the established relation adjective પરંપરિત is extended contextually rather than assumed to be direct native attestation for transitive sets."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

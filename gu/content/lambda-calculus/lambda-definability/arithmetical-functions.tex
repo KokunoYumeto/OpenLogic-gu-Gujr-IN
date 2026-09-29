@@ -1,0 +1,172 @@
+% Part: lambda-calculus
+% Chapter: lambda-definablity
+% Section: arithmetical-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{arf}
+\olsection{\usetoken{S}{lambda definable} અંકગણિતીય વિધેયો}
+\sourcecorrection{OLLAM-048}{સ્થિર અંગ્રેજી મૂળમાં આ વિભાગની
+અધ્યાય-ઓળખ~\texttt{rep} છે, જ્યારે અધ્યાયની સુધારેલી
+ઓળખ~\texttt{ldf} છે. અધ્યાયની અંદરના સંદર્ભો
+એકરૂપ રહે તે માટે અહીં~\texttt{ldf} વાપર્યું છે.}
+
+\begin{prop}
+  \ollabel{prop:succ-ld}
+  અનુગામી વિધેય~$\Succ$ !!{lambda definable} છે.
+\end{prop}
+
+\begin{proof}
+અનુગામી વિધેયને !!{lambda define} કરતું એક પદ આ છે:
+\begin{align*}
+  \fn{Succ} & \ident \lambd[a][\lambd[fx][f ({a} f x)]].
+  \intertext{આપણી રૂઢિ અનુસાર આ નીચેના પદનું ટૂંકું સ્વરૂપ છે:}
+  \fn{Succ} & \ident \lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]].
+  \intertext{$\fn{Succ}$ આર્ગ્યુમેન્ટ તરીકે સંખ્યા~$a$ લેતું વિધેય છે
+    અને તેનું મૂલ્ય બીજું વિધેય $\lambd[fx][f ({a}
+      f x)]$ છે. એ વિધેય પોતે ચર્ચ અંક નથી. જોકે,
+    આર્ગ્યુમેન્ટ~$a$ ચર્ચ અંક હોય તો પરિણામ ચર્ચ અંકમાં
+    લઘુકૃત થાય છે. જુઓ:}
+   (\lambd[a][\lambd[fx][f ({a} f x)]])\,\num{n} & \redone
+   \lambd[fx][f ({\num{n}} f x)].
+   \intertext{અંદરનું પદ $\num{n}fx$ લઘુકરણીય છે, કારણ કે
+     $\num{n}$ એ $\lambd[fx][f^nx]$ છે. તેથી
+     $\num{n}fx \red f^nx$ અને આખા પદ માટે મળે છે:}
+   \fn{Succ}\, \num n & \red \lambd[fx][f(f^n(x))],
+\end{align*}
+એટલે કે, $\num{n+1}$.
+\sourcecorrection{OLLAM-049}{સ્થિર અંગ્રેજી મૂળ
+$\num{n}fx$થી~$f^nx$ સુધી એક જ $\redone$
+પગલું બતાવે છે. ચર્ચ અંકના $f$ અને~$x$ બંને
+આર્ગ્યુમેન્ટ લાગુ કરવા બે બીટા-પગલાં જોઈએ;
+અહીં બહુ-પગલાનું~$\red$ લખ્યું છે.}
+\end{proof}
+
+\begin{ex}
+  $\fn{Succ}$ને~$\num{0}$, એટલે કે
+  $\lambd[fx][x]$, પર લાગુ કરીએ તો શું થાય તે જોઈએ.
+  પદોને પૂરેપૂરાં લખીએ:
+  \begin{align*}
+    \fn{Succ}\, \num{0} & \ident (\lambd[a][\lambd[f][\lambd[x][(f (({a} f) x))]]])(\lambd[f][\lambd[x][x]])\\
+    & \redone \lambd[f][\lambd[x][(f (({(\lambd[f][\lambd[x][x]])} f) x))]] \\
+    & \redone \lambd[f][\lambd[x][(f ({(\lambd[x][x])} x))]] \\
+    & \redone \lambd[f][\lambd[x][(f x)]] \ident \num{1}\\
+  \end{align*}
+\end{ex}
+
+\begin{prob}
+  પદ
+  \begin{align*}
+    \fn{Succ}' & \ident \lambd[{n}][\lambd[fx][{n} f (f x)]]
+  \end{align*}
+  અનુગામી વિધેયને !!{lambda define} કરે છે. કેમ, તે સમજાવો.
+\end{prob}
+
+\begin{prop}
+  \ollabel{prop:add-ld}
+  સરવાળાનું વિધેય~$\Add$ !!{lambda definable} છે.
+\end{prop}
+
+\begin{proof}
+નીચેનાં પદો સરવાળાને !!{lambda define} કરે છે:
+\begin{align*}
+  \fn{Add} & \ident \lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]]
+\intertext{અથવા વૈકલ્પિક રીતે,}
+  \fn{Add}' & \ident \lambd[{a}{b}][{a}\, \fn{Succ} \, {b}].
+\intertext{પહેલું પદ આ રીતે કામ કરે છે: $\fn{Add}$ પહેલાં
+  બે સંખ્યાઓ ${a}$ અને ${b}$ લે છે. પરિણામે મળતું
+  વિધેય $f$ અને~$x$ લે છે તથા $af(bfx)$ આપે છે.
+  $a$ અને~$b$ ચર્ચ અંકો $\num{n}$ અને~$\num{m}$
+  હોય તો આ $f^{n+m}(x)$માં લઘુકૃત થાય છે;
+  એ $f^{n}(f^{m}(x))$ જેટલું જ છે. પગલે પગલે:}
+  (\lambd[{a}{b}][\lambd[fx][{a} f ({b} f x)]])\num n\,\num m & \red
+  \lambd[fx][\num{n}\, f (\num {m}\, f x)] \\
+  & \red \lambd[fx][\num{n}\, f (f^m x)] \\
+  & \red \lambd[fx][f^n (f^m x)] \ident \num {n+m}.
+\intertext{સરવાળાનું બીજું નિરૂપણ $\fn{Add'}$ જુદી રીતે
+  કામ કરે છે. બે ચર્ચ અંકો $\num{n}$ અને
+  $\num{m}$ પર લાગુ કરીએ તો}
+\fn{Add}' \num n \,\num m
+& \red \num{n}\, \fn{Succ}\, \num{m}.
+\intertext{પરંતુ $\num{n} f x$ હંમેશા $f^n(x)$માં
+  લઘુકૃત થાય છે. તેથી}
+  \num{n}\,  \fn{Succ}\, \num{m} & \red \fn{Succ}^n(\num{m}).
+\end{align*}
+અને $\fn{Succ}$ અનુગામી વિધેયને !!{lambda define}
+કરે છે તથા~$m$ પર તેને~$n$ વાર લાગુ કરીએ તો
+$n+m$ મળે છે; તેથી આખું પદ~$\num{n+m}$માં
+લઘુકૃત થાય છે.
+\sourcecorrection{OLLAM-050}{સ્થિર અંગ્રેજી મૂળમાં
+સરવાળાના પ્રદર્શનનાં અનેક $\redone$ ચિહ્નો એક-પગલાનું
+લઘુકરણ બતાવે છે, જોકે બે આર્ગ્યુમેન્ટ લગાડવા
+અને ચર્ચ અંકનું લઘુકરણ કરવા અનેક બીટા-પગલાં
+જોઈએ. અહીં એ સ્થળોએ બહુ-પગલાનું~$\red$ વાપર્યું છે.}
+\end{proof}
+
+\begin{prop}
+  \ollabel{prop:mult-ld}
+  ગુણાકાર આ પદ વડે !!{lambda definable} છે:
+  \[
+  \fn{Mult} \ident \lambd[ab][\lambd[fx][a (b f) x]]
+  \]
+\end{prop}
+
+\begin{proof}
+આ પદ કેવી રીતે કામ કરે છે તે જોવા $\fn{Mult}$ને ચર્ચ
+અંકો $\num{n}$ અને $\num{m}$ પર લાગુ કરીએ:
+$\fn{Mult} \, \num{n} \, \num{m}$નું લઘુકરણ
+$\lambd[fx][\num{n}(\num{m}\, f)x]$માં થાય છે.
+$\num{m} f$ એવું વિધેય દર્શાવે છે જે પોતાના
+આર્ગ્યુમેન્ટ પર~$f$ને $m$ વાર લાગુ કરે છે. તેથી
+$\num{n} (\num{m} f) x$ એ ``$f$ને $m$
+વાર લાગુ કરો'' એવા વિધેયને જ~$x$ પર $n$ વાર
+લાગુ કરે છે. બીજા શબ્દોમાં, $f$ને~$x$ પર
+$n\cdot m$ વાર લાગુ કરીએ છીએ. પરિણામે મળતું
+સામાન્ય સ્વરૂપ ચર્ચ અંક~$\num{nm}$ જ છે.
+\end{proof}
+
+\begin{editorial}
+$\eta$-લઘુકરણ વડે આ પદને હજી વધુ સરળ કરી શકાય:
+\[
+  \fn{Mult} \ident \lambd[ab][\lambd[f][a (b f)]].
+\]
+
+પણ એ પહેલાં $\eta$-લઘુકરણ સમજાવવું પડે.
+\end{editorial}
+
+\begin{prob}
+ગુણાકાર આ પદ વડે !!{lambda define} કરી શકાય છે:
+\[
+  \fn{Mult}' \ident \lambd[ab][b (\fn{Add}\, a) \num{0}].
+\]
+તે કેમ કામ કરે છે તે સમજાવો.
+\sourcecorrection{OLLAM-051}{સ્થિર અંગ્રેજી મૂળમાં
+$\fn{Mult}'$ના મુખ્ય ભાગમાં
+$a(\fn{Add}\,a)\num{0}$ છે. એ~$a$ને
+$a$ વાર ઉમેરે છે અને બીજો આર્ગ્યુમેન્ટ~$b$
+વાપરતું નથી; એટલે સામાન્ય રીતે $ab$ને બદલે
+$a^2$ આપે છે. અહીં~$b(\fn{Add}\,a)\num{0}$
+રાખ્યું છે, જેથી~$a$ને $b$ વાર ઉમેરીને~$ab$ મળે.}
+\end{prob}
+
+ઘાતાંકને $\lambd$-પદ તરીકે વ્યાખ્યાયિત કરવો
+આશ્ચર્યજનક રીતે સરળ છે:
+\[
+  \fn{Exp} \ident \lambd[be][e b].
+\]
+પહેલો આર્ગ્યુમેન્ટ~$b$ આધાર છે અને બીજો~$e$
+ઘાતાંક છે. સંખ્યાઓના આપણા સંકેતન પ્રમાણે
+$e f$ એ $f^e$ છે એમ સહજ રીતે સમજાય છે.
+આ સમજવું મુશ્કેલ લાગે તો પુનરાવર્તિત ગુણાકાર
+વડે પણ ઘાતાંક વ્યાખ્યાયિત કરી શકાય:
+\[
+  \fn{Exp}' \ident \lambd[be][e (\fn{Mult}\, b) \num{1}].
+\]
+
+ચર્ચ અંક પર પૂર્વગામી અને બાદબાકી વ્યાખ્યાયિત
+કરવાનું આપણી ધારણા કરતાં ઓછું સરળ છે:
+તે માટે જોડીઓનું સંકેતન જોઈએ.
+
+\end{document}

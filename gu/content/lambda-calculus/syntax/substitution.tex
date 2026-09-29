@@ -1,0 +1,228 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{sub}
+\olsection{સ્થાનાપન્ન}
+
+\begin{explain}
+મુક્ત ચલો પરિવેશના ચલો તરફ નિર્દેશ કરે છે; તેથી મુક્ત ચલની
+જગ્યાએ કોઈ નિશ્ચિત મૂલ્ય વાપરવું અર્થપૂર્ણ છે. દાખલા તરીકે,
+$\lambd[x][f x]$માંના~$f$ની જગ્યાએ નિશ્ચિત પદ, જેમ કે
+ઓળખ-વિધેય~$\lambd[y][y]$, મૂકવું હોય. પરિણામે
+$\lambd[x][(\lambd[y][y]) x]$ મળે છે. મુક્ત ચલોની જગ્યાએ
+લૅમ્બડા પદો મૂકવાની પ્રક્રિયા \emph{સ્થાનાપન્ન} કહેવાય છે.
+\end{explain}
+
+\begin{defn}[સ્થાનાપન્ન] \ollabel{defn:substitution}
+  પદ~$M$માં ચલ~$x$ની જગ્યાએ પદ~$N$નું \emph{સ્થાનાપન્ન},
+  $\Subst{M}{N}{x}$, આગમનથી આ રીતે વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+    \item $\Subst{x}{N}{x} = N$. \ollabel{defn:substitution-1}
+    \item $\Subst{y}{N}{x}  = y$ જો $x \neq y$ હોય.
+      \ollabel{defn:substitution-2}
+    \item $\Subst{PQ}{N}{x}  = (\Subst{P}{N}{x}) (\Subst{Q}{N}{x})$.
+      \ollabel{def:substitution-3}
+    \item $\Subst{(\lambd[y][P])}{N}{x} = \lambd[y][\Subst{P}{N}{x}]$,
+      જો $x \neq y$ અને $y \notin \FV{N}$ હોય તથા અંદરનું
+      સ્થાનાપન્ન વ્યાખ્યાયિત હોય. જો $x=y$ હોય અથવા
+      $x\notin\FV{P}$ હોય તો આખું અમૂર્તીકરણ યથાવત રહે છે;
+      બાકીના કિસ્સામાં સ્થાનાપન્ન અવ્યાખ્યાયિત છે.
+      \ollabel{defn:substitution-4}
+  \end{enumerate}
+\sourcecorrection{OLLAM-012}{સ્થિર અંગ્રેજી મૂળનો ચોથો નિયમ
+બાકીના બધા કિસ્સાઓને અવ્યાખ્યાયિત કહે છે, જ્યારે તરત પછીનું
+ઉદાહરણ બદ્ધ ચલને બદલી ન નાખતાં અમૂર્તીકરણ યથાવત રાખવાનું કહે
+છે. અહીં બાંધનાર ચલ જ બદલવાનું હોય, અથવા બદલવાના ચલની
+મુક્ત ઘટના અંદરના પદમાં ન હોય, તો અમૂર્તીકરણ યથાવત રાખ્યું
+છે; આથી નિષ્પ્રયોજન સ્થાનાપન્નમાં પણ ખોટો બંધન-અવરોધ ઊભો
+થતો નથી.}
+\end{defn}
+
+\begin{explain}
+\olref{defn:substitution}\olref{defn:substitution-4}માં
+$x \neq y$ની શરત એટલા માટે છે કે~$M$માં ચલ~$x$ની
+\emph{બદ્ધ} ઘટનાઓને~$N$થી બદલવી નથી. દાખલા તરીકે,
+$\Subst{\lambd[x][x]}{y}{x}$ ગણીએ તો પરિણામ
+$\lambd[x][y]$ નહીં પરંતુ~$\lambd[x][x]$ જ હોવું જોઈએ.
+
+$\lambd[y][P]$માં~$x$ની જગ્યાએ~$N$ મૂકતાં આપણે
+$y \notin \FV{N}$ પણ માગીએ છીએ. દાખલા તરીકે,
+$\lambd[y][x]$માં~$x$ની જગ્યાએ~$y$ મૂકી શકાતું નથી;
+અર્થાત્~$\Subst{\lambd[y][x]}{y}{x}$ અવ્યાખ્યાયિત છે.
+એમ કરવાથી~$\lambd[y][y]$ મળશે, જે આર્ગ્યુમેન્ટ સ્વીકારીને
+તે જ પાછું આપતું વિધેય છે. પરંતુ~$\lambd[y][x]$ હંમેશા
+પદ~$x$ (અથવા~$x$ જેનો નિર્દેશ કરે તે) પાછું આપતું વિધેય છે.
+આથી આપણને ખરેખર એવું વિધેય જોઈએ જે આર્ગ્યુમેન્ટ સ્વીકારે,
+તેને અવગણે અને પરિવેશના ચલ~$y$ને પાછું આપે. તે યોગ્ય રીતે
+કરવા પહેલાં બદ્ધ ચલ~$y$નું ``નામ બદલવું'' પડે.
+\end{explain}
+
+\begin{prob}
+  નીચેના સ્થાનાપન્નોનાં પરિણામો શું છે?
+  \begin{enumerate}
+  \item $\Subst{\lambd[y][x(\lambd[w][vwx])]}{(uv)}{x}$
+  \item $\Subst{\lambd[y][x(\lambd[x][x])]}{(\lambd[y][xy])}{x}$
+  \item $\Subst{y(\lambd[v][xv])}{(\lambd[y][vy])}{x}$
+  \end{enumerate}
+\end{prob}
+
+\begin{thm} \ollabel{thm:notinfv}
+  $x \notin \FV{M}$ હોય અને સ્થાનાપન્ન વ્યાખ્યાયિત હોય તો
+  $\FV{\Subst{M}{N}{x}} = \FV{M}$.
+\end{thm}
+
+\begin{proof}
+  $M$ના રચનાક્રમ પર આગમનથી.
+  \begin{enumerate}
+  \item $M$ ચલ હોય: અભ્યાસપ્રશ્ન.
+  \item $M$ એ~$(PQ)$ સ્વરૂપનું હોય: અભ્યાસપ્રશ્ન.
+  \item $M$ એ~$\lambd[y][P]$ સ્વરૂપનું હોય. જો બદલવાનો ચલ
+    બાંધનાર ચલ જ હોય તો નિયમ અનુસાર પદ યથાવત રહે છે અને
+    દાવો તરત મળે છે. અન્યથા,
+    $\Subst{\lambd[y][P]}{N}{x}$ વ્યાખ્યાયિત હોવાથી તે
+    $\lambd[y][\Subst{P}{N}{x}]$ છે. તેથી
+    $\Subst{P}{N}{x}$ વ્યાખ્યાયિત છે; વળી $x \neq y$
+    અને~$x \notin \FV{P}$. પછી:
+    \begin{multline*}
+      \FV{\Subst{\lambd[y][P]}{N}{x}} \\
+    \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} &&
+      \text{\olref{defn:substitution-4} મુજબ}\\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} &&
+      \text{\olref[fv]{def:fv}\olref[fv]{def:fv2} મુજબ}\\
+      & = \FV{P} \setminus \{y\} && \text{આગમનની ધારણાથી} \\
+      & = \FV{\lambd[y][P]} && \text{\olref[fv]{def:fv}\olref[fv]{def:fv2} મુજબ}
+    \end{aligned}
+    \end{multline*}
+  \end{enumerate}
+\sourcecorrection{OLLAM-013}{સ્થિર અંગ્રેજી મૂળની આ સાબિતીમાં
+$x\notin\FV{Q}$ લખાયું છે, પરંતુ આ કિસ્સામાં~$M$ એ
+$\lambd[y][P]$ છે; જરૂરી ધારણા~$x\notin\FV{P}$ છે.
+બાંધનાર ચલ જ બદલવાનું હોય તે યથાવત રહેતો કિસ્સો પણ
+અલગ બતાવ્યો છે અને સમીકરણ-શ્રેણીમાંનું બેવડું સમાનચિહ્ન દૂર
+કર્યું છે.}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:notinfv}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{thm} \ollabel{thm:infv}
+  $x \in \FV{M}$ હોય અને સ્થાનાપન્ન વ્યાખ્યાયિત હોય તો
+  $\FV{\Subst{M}{N}{x}} = (\FV{M} \setminus
+  \{x\}) \cup \FV{N}$.
+\sourcecorrection{OLLAM-014}{સ્થિર અંગ્રેજી મૂળની ધારણામાં
+$x\in\FV{M})$ લખાયેલો વધારાનો બંધ કૌંસ દૂર કર્યો છે.}
+\end{thm}
+
+\begin{proof}
+  $M$ના રચનાક્રમ પર આગમનથી.
+  \begin{enumerate}
+  \item $M$ ચલ હોય: અભ્યાસપ્રશ્ન.
+  \item $M$ એ~$PQ$ સ્વરૂપનું હોય: $\Subst{(PQ)}{N}{x}$
+    વ્યાખ્યાયિત હોવાથી તે
+    $(\Subst{P}{N}{x})(\Subst{Q}{N}{x})$ છે, જ્યાં બંને
+    સ્થાનાપન્ન વ્યાખ્યાયિત છે. વળી~$x \in \FV{PQ}$
+    હોવાથી~$x \in \FV{P}$ અથવા~$x \in \FV{Q}$ અથવા
+    બંને સાચાં છે. બાકીનો ભાગ અભ્યાસપ્રશ્ન છે.
+    \sourcecorrection{OLLAM-015}{સ્થિર અંગ્રેજી મૂળમાં
+    અનુપ્રયોગના આ કિસ્સામાં~$\Subst{(PQ)}{N}{y}$ છે,
+    જ્યારે આખા પ્રમેયમાં બદલવાનો ચલ~$x$ છે. અહીં~$x$
+    મૂક્યું છે.}
+  \item $M$ એ~$\lambd[y][P]$ સ્વરૂપનું હોય.
+    $\Subst{\lambd[y][P]}{N}{x}$ વ્યાખ્યાયિત હોવાથી તે
+    $\lambd[y][\Subst{P}{N}{x}]$ છે; અહીં
+    $\Subst{P}{N}{x}$ વ્યાખ્યાયિત છે, $x \neq y$ અને
+    $y \notin \FV{N}$. વળી, $x \in
+    \FV{\lambd[y][P]}$ હોવાથી~$x \in \FV{P}$ પણ છે.
+    હવે:
+    \sourcecorrection{OLLAM-016}{સ્થિર અંગ્રેજી મૂળમાં અહીં
+    $y\in\FV{\lambd[x][P]}$ પરથી~$y\in\FV{P}$ કહે છે;
+    આ કિસ્સાનું પદ તો~$\lambd[y][P]$ છે અને જરૂરી
+    ધારણા~$x\in\FV{\lambd[y][P]}$, તેથી~$x\in\FV{P}$ છે.}
+    \begin{multline*}
+      \FV{\Subst{(\lambd[y][P])}{N}{x}} \\
+      \begin{aligned}
+      & = \FV{\lambd[y][\Subst{P}{N}{x}]} \\
+      & = \FV{\Subst{P}{N}{x}} \setminus \{y\} \\
+      & = ((\FV{P} \setminus \{x\}) \cup \FV{N}) \setminus \{y\}
+       && \text{આગમનની ધારણાથી} \\
+      & = (\FV{P} \setminus \{x, y\}) \cup \FV{N}
+       && y \notin \FV{N} \\
+      & = (\FV{\lambd[y][P]} \setminus \{x\}) \cup \FV{N}
+      \end{aligned}
+      \end{multline*}
+    \sourcecorrection{OLLAM-017}{સ્થિર અંગ્રેજી મૂળની
+    આગમન-શ્રેણીમાં~$\FV{P}\setminus\{y\}$ અને
+    $\FV{N}\setminus\{x\}$ ખોટી જગ્યાએ છે તથા કૌંસ
+    અધૂરા છે. અહીં પહેલા~$x$ દૂર કર્યા પછી સંઘમાંથી~$y$
+    દૂર કર્યો છે; છેલ્લું સરળીકરણ~$y\notin\FV{N}$થી
+    મળે છે, મૂળમાં લખેલા~$x\notin\FV{N}$થી નહીં.
+    સમીકરણ-શ્રેણીનું બેવડું સમાનચિહ્ન પણ દૂર કર્યું છે.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:infv}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{thm}\ollabel{thm:clr}
+  સ્થાનાપન્ન વ્યાખ્યાયિત હોય અને~$x \notin \FV{N}$ હોય તો
+  $x \notin \FV{\Subst{M}{N}{x}}$.
+\end{thm}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:clr} સાબિત કરો.
+\end{prob}
+
+\begin{thm}\ollabel{thm:inv}
+  $\Subst{M}{y}{x}$ વ્યાખ્યાયિત હોય અને
+  $y \notin \FV{M}$ હોય તો
+  $\Subst{\Subst{M}{y}{x}}{x}{y} = M$.
+\end{thm}
+
+\begin{proof}
+  $M$ના રચનાક્રમ પર આગમનથી.
+  \begin{enumerate}
+  \item $M$ ચલ~$z$ હોય: અભ્યાસપ્રશ્ન.
+  \item $M$ એ~$(PQ)$ સ્વરૂપનું હોય. પછી:
+    \begin{align*}
+      \Subst{\Subst{(PQ)}{y}{x}}{x}{y}
+      &=\Subst{((\Subst{P}{y}{x})(\Subst{Q}{y}{x}))}{x}{y} \\
+      &= (\Subst{\Subst{P}{y}{x}}{x}{y})(\Subst{\Subst{Q}{y}{x}}{x}{y}) \\
+      &= (PQ) \text{આગમનની ધારણાથી}
+    \end{align*}
+  \item $M$ એ~$\lambd[z][N]$ સ્વરૂપનું હોય. બદલવાના ચલની
+    મુક્ત ઘટના જ ન હોય તો બંને સ્થાનાપન્ન પદને યથાવત રાખે છે.
+    બાકીના કિસ્સામાં~$\Subst{\lambd[z][N]}{y}{x}$
+    વ્યાખ્યાયિત હોવાથી~$z \neq y$ અને~$z\neq x$ છે.
+    તેથી:
+    \begin{align*}
+      \Subst{\Subst{(\lambd[z][N])}{y}{x}}{x}{y}\\
+      & = \Subst{(\lambd[z][\Subst{N}{y}{x}])}{x}{y} \\
+      & = \lambd[z][\Subst{\Subst{N}{y}{x}}{x}{y}] \\
+      &= \lambd[z][N] \text{આગમનની ધારણાથી}
+    \end{align*}
+    \sourcecorrection{OLLAM-018}{સ્થિર અંગ્રેજી મૂળ પહેલું
+    સ્થાનાપન્ન વ્યાખ્યાયિત હોવાથી સીધું~$z\neq y$
+    માને છે; બદલવાના ચલની મુક્ત ઘટના ન હોય તો આ જરૂરી
+    નથી. તે યથાવત રહેતો કિસ્સો અલગ લીધો છે. બાકીનું
+    પ્રદર્શન બંને બંધન-અથડામણો ટળે એવા~$z\neq x,y$
+    કિસ્સામાં છે.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][sub]{thm:inv}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\end{document}

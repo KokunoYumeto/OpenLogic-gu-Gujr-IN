@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0001",
+  "checked_at_utc": "2026-09-29T00:50:27.920088+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0001 Open Logic project description; state-only draft",
+  "report": {
+    "unit_id": "OLP-0001",
+    "source_path": "content/open-logic-about.tex",
+    "source_sha256": "f1212d77679b9080a2cbf1ba03f9b71f0993db10b1b28464c423652f95b5fd33",
+    "draft_path": "private-state\\work\\batch044_draft\\open-logic-about.tex",
+    "draft_sha256": "e54c05aa5e5a9fe9edd1923b768143a28014a680e0b32097bd8dc3475cdbb186",
+    "aligned_blocks": 4,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 209,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "રૂપલક્ષી",
+          "ગણ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "LaTeX",
+        "count": 1
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\addcontentsline{toc}{chapter}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

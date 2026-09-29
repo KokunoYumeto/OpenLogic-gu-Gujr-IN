@@ -1,0 +1,175 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{qua}
+
+\olsection{નિયમિત સાબિતીઓ અને પ્રતિસ્થાપન}
+
+પરિમાણકના નિયમોમાં કેટલીક જટિલતાઓ ઊભી થાય છે,
+કારણ કે \LeftR{\lexists} અને~\RightR{\lforall} પર
+``આઇગનચલ-શરતો'' લાગુ પડે છે.
+આવા અનુમાનોમાં !!{constant}~$a$નો ક્યારેય પુનઃઉપયોગ ન થાય
+તે સુનિશ્ચિત કરીને મોટાભાગની જટિલતાઓ ઉકેલી શકાય.
+આ વ્યાખ્યા રજૂ કરીએ.
+
+\begin{defn}
+\Log{G1c} કે \Log{G3c}માં !!^a{proof}~$\pi$ \emph{નિયમિત} છે, જો
+\begin{enumerate}
+  \item કોઈ આઇગનચલ~$a$ એક કરતાં વધુ
+  \LeftR{\lexists} કે~\RightR{\lforall} અનુમાનનું આઇગનચલ ન હોય, અને
+  \item $a$ એ \LeftR{\lexists} કે~\RightR{\lforall}નું આઇગનચલ હોય,
+  તો તે $\pi$માં ફક્ત એ અનુમાનની ઉપર જ આવે.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular}
+$\pi$ નિયમિત હોય અને તેનો અંત $\Gamma \Sequent \Delta$ હોય,
+$c$ એ~$\pi$માં આઇગનચલ તરીકે ન વપરાતો !!a{constant} હોય,
+અને $t$~એ~$\pi$નું કોઈ આઇગનચલ ન ધરાવતું બંધ પદ હોય,
+તો~$\pi$માં $c$ની દરેક આવૃત્તિને બદલે~$t$ મૂકવાથી મળતું
+$\Subst{\pi}{t}{c}$ નિયમિત !!{proof} છે.
+$\Subst{\pi}{t}{c}$નો અંતિમ સિક્વન્ટ
+$\Subst{\Gamma}{t}{c} \Sequent \Subst{\Delta}{t}{c}$ છે,
+જ્યાં $\Subst{\Gamma}{t}{c} =
+\Setabs{!A(t)}{!A(c) \in \Gamma}$.
+સંદર્ભો બહુગણો હોવાથી આ રૂપાંતરમાં દરેક આવૃત્તિ જળવાય છે.
+\sourcecorrection{OLMD-329}{મૂળ પ્રતિસ્થાપિત પદ માટે ફક્ત આઇગનચલો ન ધરાવવાની શરત આપે છે. આ અધ્યાયના નિયમ-વિભાગમાં પરિમાણકનો દાખલ બંધ પદ હોવાનો છે; ખુલ્લું પદ મૂકવાથી એ શરત અથવા પરિમાણકની અંદર ચલ-બંધન બદલાઈ શકે. તેથી અહીં બંધ પદની શરત સ્પષ્ટ કરી છે.}
+\end{lem}
+
+\begin{proof}
+  $\pheight{\pi}$ પર આગમનથી સાબિતી કરીએ.
+  $\pheight{\pi} = 0$ હોય, તો ફક્ત સ્વયંસિદ્ધ છે.
+  ત્યારે $\Subst{\pi}{t}{c}$ પણ સ્વયંસિદ્ધ છે,
+  કારણ કે તેનું કોઈ !!{formula}~$!A(c)$ એ $!A(t)$ બને છે.
+
+  $\pheight{\pi} > 0$ હોય,
+  તો~$\pi$ના છેલ્લા અનુમાન પ્રમાણે કિસ્સા જુદા પાડીએ.
+  બંધારણીય નિયમોના (\Log{G1c}માં) અને વિધાનતર્કીય સંયોજકોના
+  તાર્કિક નિયમોના કિસ્સા સરળ છે અને સ્વાધ્યાય તરીકે છોડીએ.
+  $\pi$નો અંત પરિમાણકના અનુમાનથી થાય તે કિસ્સા વિચારીએ.
+  \begin{enumerate}
+    \item છેલ્લું અનુમાન $\RightR{\lforall}$ હોય,
+    તો $\pi$નું સ્વરૂપ આ છે:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$\Gamma(c) \fCenter \Delta'(c), !A(a,c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(c) \fCenter \Delta'(c), \lforall[x][!A(x,c)]$
+    \DisplayProof
+    \]
+    આગમન-ધારણાથી $\Subst{\pi'}{t}{c}$ એ
+    $\Gamma(t) \fCenter \Delta'(t), !A(a,t)$ની
+    નિયમિત !!{proof} છે.
+    $a$ એ~$\pi$નું આઇગનચલ હોવાથી $a$~એ~$t$માં આવતું નથી.
+    એટલે $\Subst{\pi}{t}{c}$નું છેલ્લું અનુમાન,
+\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$\Gamma(t) \fCenter \Delta'(t), !A(a,t)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(t) \fCenter \Delta'(t), \lforall[x][!A(x,t)]$
+    \DisplayProof
+    \]
+    યોગ્ય છે: નિષ્કર્ષમાં~$a$ આવતું નથી.
+    \item \Log{G3c}માં છેલ્લું અનુમાન $\LeftR{\lforall}$ હોય,
+    તો $\pi$નું સ્વરૂપ આ છે:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$!A(s(c),c), \lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \DisplayProof
+    \]
+    આગમન-ધારણાથી $\Subst{\pi'}{t}{c}$ એ
+    $!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$ની
+    નિયમિત !!{proof} છે.
+    $\Subst{\pi}{t}{c}$નું છેલ્લું અનુમાન,
+\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \DisplayProof
+    \]
+    યોગ્ય છે. \Log{G1c}માં~\LeftR{\lforall}નો કિસ્સો સમાન,
+    પરંતુ થોડો સરળ છે.
+    \sourcecorrection{OLMD-330}{મૂળના આ સર્વપરિમાણક-ડાબા કિસ્સાનાં બંને વૃક્ષોમાં જમણા નિયમનું લેબલ છે. મુખ્ય સૂત્ર તથા આધારમાં જાળવેલી તેની આવૃત્તિ મુજબ બંને લેબલ ડાબા કર્યા છે.}
+    \item છેલ્લું અનુમાન \RightR{\lexists} કે \LeftR{\lexists} હોય: સ્વાધ્યાય.
+  \end{enumerate}
+  દરેક કિસ્સામાં નિયમિત !!{proof}ના અંતે સિક્વન્ટ ઉમેર્યો છે
+  (બે આધારવાળા નિયમોમાં બે નિયમિત !!{proof}sના અંતે).
+  નવું સિક્વન્ટ $\pi$ના અંતિમ સિક્વન્ટથી ફક્ત એટલું જુદું છે
+  કે $c$ને બદલે પદ~$t$ મૂક્યું છે.
+  વળી $\pi$ અને $\Subst{\pi}{t}{c}$ના આઇગનચલો એ જ છે.
+  $t$માં~$\pi$નું કોઈ આઇગનચલ નથી એમ ધાર્યું હોવાથી,
+  નવા અંતિમ સિક્વન્ટમાં $\Subst{\pi}{t}{c}$નું કોઈ આઇગનચલ નથી.
+  એટલે $\Subst{\pi}{t}{c}$ નિયમિત છે.
+\end{proof}
+
+\begin{prop}
+$\pi$ એ \Log{G1c} કે \Log{G3c}ની !!a{proof} હોય,
+તો એ જ સંરચના (ખાસ કરીને એ જ !!{height}) ધરાવતી
+નિયમિત !!{proof}~$\pi'$ છે,
+જે $\pi$થી ફક્ત આઇગનચલોનાં પ્રતિસ્થાપનથી જુદી પડે છે.
+\end{prop}
+
+\begin{proof}
+ફક્ત આ સાબિતી પૂરતું, $\pi$ના આઇગનચલ-અનુમાનને \emph{સ્વચ્છ} કહીએ,
+જો તેનું આઇગનચલ બીજા અનુમાનનું આઇગનચલ ન હોય
+અને~$\pi$માં તે અનુમાનની તરત પહેલાંની ઉપ-!!{proof}
+સિવાય ક્યાંય ન આવે; નહીં તો \emph{અસ્વચ્છ} કહીએ.
+$\pi$માં અસ્વચ્છ આઇગનચલ-અનુમાનોની સંખ્યા $n$ લો.
+$n$ પર આગમનથી બતાવીએ કે $\pi$~ને
+જરૂરી નિયમિત !!{proof}~$\pi'$માં ફેરવી શકાય.
+$n=0$ હોય, તો~$\pi$નાં બધાં આઇગનચલ-અનુમાન સ્વચ્છ છે;
+એટલે $\pi$ નિયમિત છે અને કશું સાબિત કરવાનું નથી.
+નહિતર સૌથી ઉપરનું અસ્વચ્છ આઇગનચલ-અનુમાન પસંદ કરો,
+દાખલા તરીકે \RightR{\lforall}.
+તે અનુમાનથી પૂરી થતી $\pi$ની ઉપ-!!{proof}~$\pi_1$નું સ્વરૂપ આ છે:
+\[
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !A(c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+$c$ આઇગનચલ હોવાથી~$\Gamma$, $\Delta$
+કે $\lforall[x][!A(x)]$માં આવતું નથી તે નોંધો.
+સાબિતી $\pi_2$ નિયમિત છે:
+પસંદ કરેલા અસ્વચ્છ અનુમાનની ઉપરના આઇગનચલ-અનુમાન સ્વચ્છ છે.
+પસંદ કરેલું આઇગનચલ તેમાં બીજા અનુમાનનું આઇગનચલ નથી.
+\sourcecorrection{OLMD-331}{મૂળ સૌથી ઉપરનું આઇગનચલ-અનુમાન પસંદ કરે છે, પરંતુ તે સ્વચ્છ પણ હોઈ શકે, એટલે અસ્વચ્છ અનુમાનોની સંખ્યા ઘટવાની ખાતરી નથી. સૌથી ઉપરનું અસ્વચ્છ અનુમાન પસંદ કર્યું છે. તેની ઉપર સ્વચ્છ અનુમાન હોઈ શકે; તેથી ઉપસાબિતી નિયમિત છે તે કહ્યું છે, એકેય આઇગનચલ-અનુમાન નથી એવો મૂળનો દાવો કર્યો નથી.}
+$\pi$માં ન આવતો !!a{constant} $a$ લો.
+\olref{lem:subst-regular} મુજબ $\Subst{\pi_2}{a}{c}$
+એ $\Gamma \fCenter \Delta, !A(a)$ની નિયમિત સાબિતી છે;
+તેના પર~$\RightR{\lforall}$ લગાવી શકીએ.
+$\pi$માં $\pi_1$ને બદલે સાબિતી $\pi_1'$,
+\[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi_2}{a}{c}$}
+    \Deduce$\Gamma \fCenter \Delta, !A(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+મૂકીએ, તો અસ્વચ્છ આઇગનચલ-અનુમાનને બદલે સ્વચ્છ અનુમાન મૂક્યું છે;
+ફક્ત પસંદ કરેલા આઇગનચલ $c$ને બદલે~$a$ મૂકવાનો તફાવત છે.
+મળેલી સાબિતીમાં વધુમાં વધુ $n-1$ અસ્વચ્છ આઇગનચલ-અનુમાનો છે,
+અને પરિણામ આગમન-ધારણાથી અનુસરે છે.
+\sourcecorrection{OLMD-332}{મૂળ નવી સંખ્યા બરાબર એકથી ઘટે છે કહે છે. બીજા અનુમાનોની એક જ આઇગનચલના પુનઃઉપયોગની ખામી પણ આ બદલાવથી દૂર થઈ શકે; તેથી ઓછામાં ઓછા એક અસ્વચ્છ અનુમાનનો ઘટાડો, એટલે વધુમાં વધુ જૂની સંખ્યાથી એક ઓછાં, એવો પૂરતો દાવો કર્યો છે.}
+\end{proof}
+
+હમણાં સાબિત કરેલા પ્રતિજ્ઞાપનને આગળ સ્પષ્ટ રીતે ટાંકશું નહીં,
+પરંતુ વિચારેલી બધી !!{proof}s નિયમિત છે એમ માનીશું:
+તે ન હોય, તો આઇગનચલો બદલીને હંમેશાં નિયમિત બનાવી શકીએ.
+
+\end{document}

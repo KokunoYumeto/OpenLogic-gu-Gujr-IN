@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0518",
+  "checked_at_utc": "2026-09-27T22:20:51.373345+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0518 material conditional; state-only draft",
+  "report": {
+    "unit_id": "OLP-0518",
+    "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+    "source_sha256": "1336ca4b9151ae97d2416ae95b815dbcaa478c68cb0b41f743e5654afc7b5d76",
+    "draft_path": "private-state\\work\\batch043_draft\\material-conditional.tex",
+    "draft_sha256": "d0b1f22d1ac1bbe4656dda1365e8811f3ae7986f276fbaeaef067e9ca0eca37c",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 23,
+    "target_math_spans_after_corrections": 23,
+    "glossary_tokens": 1,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 182,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "thirteen_entailment_rows_exact_except_localized_text": true,
+    "obvious_source_typo_regularized": "earn → learn in the introductory prose; no change to mathematical claim"
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

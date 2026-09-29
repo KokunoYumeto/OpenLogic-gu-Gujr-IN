@@ -1,0 +1,351 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: alpha
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{alp}
+\olsection{$\alpha$-રૂપાંતરણ}
+
+$\lambd[x][x]$ અને~$\lambd[y][y]$ વચ્ચે શું સંબંધ છે?
+બંને ઓળખ-વિધેય દર્શાવે છે. અલબત્ત, વાક્યરચનાની દૃષ્ટિએ તે
+જુદાં પદો છે. ફરક માત્ર બદ્ધ ચલના નામમાં છે; એકમાંના બદ્ધ
+ચલનું ``નામ બદલીને'' બીજું મળે છે. તેને
+\emph{$\alpha$-રૂપાંતરણ} કહે છે.
+
+\begin{defn}[બદ્ધ ચલનું નામ બદલવું, $\aconvone$]
+  પદ~$M$માં~$\lambd[x][N]$ની કોઈ ઘટના હોય, $x\neq y$,
+  $y \notin
+  \FV{N}$ હોય અને~$\Subst{N}{y}{x}$ વ્યાખ્યાયિત હોય તો
+  તે ઘટનાને
+  \begin{equation*}
+    \lambd[y][\Subst{N}{y}{x}]
+  \end{equation*}
+  વડે બદલીને~$M'$ મળે તેને \emph{બદ્ધ ચલનું નામ બદલવું}
+  કહીએ છીએ અને~$M \redone[\alpha] M'$ લખીએ છીએ.
+\sourcecorrection{OLLAM-019}{સ્થિર અંગ્રેજી મૂળની પહેલી
+વ્યાખ્યામાં~$x\neq y$ની શરત નથી, પરંતુ આગળની બંને સમકક્ષ
+વ્યાખ્યાઓમાં તે છે. અહીં નામ ખરેખર બદલાય તે માટે એ શરત
+સ્પષ્ટ મૂકી છે.}
+\end{defn}
+
+\begin{defn}[સંબંધની રચના-સુસંગતતા]
+  પદો પરનો સંબંધ~$R$ નીચેની શરતો સંતોષે તો તેને
+  \emph{રચના-સુસંગત} કહીએ છીએ:
+  \begin{enumerate}
+  \item જો $R N N'$ હોય તો $R \lambd[x][N] \lambd[x][N']$.
+  \item જો $R P P'$ હોય તો $R (PQ) (P'Q)$.
+  \item જો $R Q Q'$ હોય તો $R (PQ) (PQ')$.
+  \end{enumerate}
+\end{defn}
+
+આથી વ્યાખ્યા ફરી આ રીતે કહી શકાય:
+\begin{defn}[બદ્ધ ચલનું નામ બદલવું, $\aconvone$]
+  \emph{બદ્ધ ચલનું નામ બદલવાનો} સંબંધ~($\redone[\alpha]$)
+  પદો પરનો સૌથી નાનો રચના-સુસંગત સંબંધ છે જે નીચેની
+  શરત સંતોષે છે:
+  \begin{align*}
+    &\lambd[x][N] \redone[\alpha] \lambd[y][\Subst{N}{y}{x}] && \text{જો
+      $x \neq y$, $y \notin \FV{N}$ હોય} \\
+    & &&\text{અને $\Subst{N}{y}{x}$ વ્યાખ્યાયિત હોય}
+  \end{align*}
+\end{defn}
+
+અહીં ``સૌથી નાનો'' એટલે સંબંધમાં રચના-સુસંગતતા અને વધારાની
+શરતથી જરૂરી બનેલી જોડીઓ જ હોય, બીજી કોઈ નહીં. તેથી સંબંધને
+આગમનથી પણ વ્યાખ્યાયિત કરી શકાય:
+
+\begin{defn}[બદ્ધ ચલનું નામ બદલવું, $\aconvone$] \ollabel{defn:aconvone}
+  \emph{બદ્ધ ચલનું નામ બદલવાનો} સંબંધ~($\aconvone$)
+  આગમનથી આ રીતે વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+  \item જો $N \aconvone N'$ હોય તો $\lambd[x][N] \aconvone
+    \lambd[x][N']$. \ollabel{defn:aconvone1}
+  \item જો $P \aconvone P'$ હોય તો $(PQ) \aconvone (P'Q)$.
+    \ollabel{defn:aconvone2}
+  \item જો $Q \aconvone Q'$ હોય તો $(PQ) \aconvone (PQ')$.
+    \ollabel{defn:aconvone3}
+  \item જો $x \neq y$, $y \notin \FV{N}$ અને~$\Subst{N}{y}{x}$
+    વ્યાખ્યાયિત હોય તો
+    $\lambd[x][N] \redone[\alpha] \lambd[y][\Subst{N}{y}{x}]$.
+    \ollabel{defn:aconvone4}
+  \end{enumerate}
+\end{defn}
+
+આ વ્યાખ્યાઓ સમકક્ષ છે, પરંતુ તેની સાબિતી અભ્યાસપ્રશ્ન તરીકે
+છોડીએ છીએ. હવે પછી આગમનાત્મક વ્યાખ્યા વાપરીશું.
+
+\begin{defn}[$\alpha$-રૂપાંતરણ, $\aconv$]
+  \emph{$\alpha$-રૂપાંતરણ}~($\aconv$) એ પદો પરનો
+  $\aconvone$ને સમાવતા સ્વવાચક અને પરંપરિત સંબંધોમાં
+  સૌથી નાનો સંબંધ છે.
+\end{defn}
+
+અગાઉની જેમ, ``સૌથી નાનો'' એટલે સંબંધમાં સ્વવાચકતા,
+પરંપરિતતા અને~$\aconvone$ને કારણે જરૂરી બનેલી જોડીઓ જ હોય.
+તેમાંથી નીચેની સમકક્ષ વ્યાખ્યા મળે છે:
+\sourcecorrection{OLLAM-020}{સ્થિર અંગ્રેજી મૂળની આ
+સમજૂતીમાં ``સૌથી નાના'' સંબંધ માટે પરંપરિતતા અને
+$\aconvone$નું નામ છે, પરંતુ વ્યાખ્યામાં જરૂરી સ્વવાચકતાનો
+ઉલ્લેખ છૂટી ગયો છે. અહીં તે ઉમેર્યો છે.}
+
+\begin{defn}[$\alpha$-રૂપાંતરણ, $\aconv$] \ollabel{defn:aconv}
+  \emph{$\alpha$-રૂપાંતરણ}~($\aconv$) આગમનથી આ રીતે
+  વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+  \item જો $P \aconv Q$ અને~$Q \aconv R$ હોય તો
+    $P \aconv R$. \ollabel{defn:aconv1}
+  \item જો $P \aconvone Q$ હોય તો $P \aconv Q$.
+    \ollabel{defn:aconv2}
+  \item $P \aconv P$. \ollabel{defn:aconv3}
+  \end{enumerate}
+\end{defn}
+
+\begin{ex}
+  $\lambd[x][f x]$નું~$\lambd[y][f
+  y]$માં $\alpha$-રૂપાંતરણ થાય છે, અને ઊલટું પણ.
+  અનૌપચારિક રીતે કહીએ તો બંને આર્ગ્યુમેન્ટ સ્વીકારીને તેના
+  પર~$f$ લાગુ કરવાનું પરિણામ આપે છે; અહીં~$f$ પરિવેશનો
+  ચલ છે.
+
+  $\lambd[x][f x]$નું~$\lambd[x][g
+    x]$માં $\alpha$-રૂપાંતરણ થતું નથી. પહેલું અને બીજું પદ
+  અનુક્રમે પરિવેશના ચલો~$f$ અને~$g$ તરફ નિર્દેશ કરે છે.
+  તેથી એ જુદાં વિધેયો છે: જ્યાં~$f$ અને~$g$ જુદાં હોય એવા
+  પરિવેશોમાં તેમનું વર્તન જુદું હોય છે.
+\end{ex}
+
+\begin{prob}
+  નીચેની પદ-જોડીઓ $\alpha$-રૂપાંતરણથી એકબીજામાં બદલી શકાય છે?
+  \begin{enumerate}
+  \item $\lambd[x][\lambd[y][x]]$ અને $\lambd[y][\lambd[x][y]]$
+  \item $\lambd[x][\lambd[y][x]]$ અને $\lambd[c][\lambd[b][a]]$
+  \item $\lambd[x][\lambd[y][x]]$ અને $\lambd[c][\lambd[b][a]]$
+  \end{enumerate}
+\sourcecorrection{OLLAM-021}{સ્થિર અંગ્રેજી મૂળમાં આ
+અભ્યાસપ્રશ્નની બીજી અને ત્રીજી જોડી એકસરખી છે. અનુમાનથી
+કોઈ નવી જોડી ન ઘડતાં બંને મૂળ મુજબ જાળવી છે.}
+\end{prob}
+
+\begin{lem}\ollabel{lem:fv-one}
+  $P \aconvone Q$ હોય તો $\FV{P} = \FV{Q}$.
+\end{lem}
+
+\begin{proof}
+  $P \aconvone Q$ની !!{derivation} પર આગમનથી.
+  \begin{enumerate}
+  \item છેલ્લો નિયમ~\olref{defn:aconvone4} હોય તો~$P$
+    એ~$\lambd[x][N]$ અને~$Q$ એ
+    $\lambd[y][\Subst{N}{y}{x}]$ સ્વરૂપના છે; અહીં
+    $x \neq y$, $y \notin \FV{N}$ અને~$\Subst{N}{y}{x}$
+    વ્યાખ્યાયિત છે. હવે~$x \in \FV{N}$ છે કે નહીં તે
+    મુજબ કિસ્સા કરીએ:
+    \begin{enumerate}
+    \item $x \in \FV{N}$ હોય તો:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]} &=
+        \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = ((\FV{N} \setminus \{x\}) \cup \{y\}) \setminus \{y\}
+         && \text{\olref[sub]{thm:infv} મુજબ} \\
+        & = \FV{N} \setminus \{x\} \\
+        & = \FV{\lambd[x][N]}
+      \end{align*}
+    \item $x \notin \FV{N}$ હોય તો:
+      \begin{align*}
+        \FV{\lambd[y][\Subst{N}{y}{x}]}
+        & = \FV{\Subst{N}{y}{x}} \setminus \{y\} \\
+        & = \FV{N} \setminus \{x\}
+         && \text{\olref[sub]{thm:notinfv} મુજબ} \\
+        & = \FV{\lambd[x][N]}.
+      \end{align*}
+    \end{enumerate}
+  \item બીજા ત્રણ કિસ્સા અભ્યાસપ્રશ્ન તરીકે છોડીએ છીએ.
+  \end{enumerate}
+\sourcecorrection{OLLAM-022}{સ્થિર અંગ્રેજી મૂળની આ
+સાબિતીમાં~$x\in FV(N)$, $x\notin FV(N)$ અને
+$FV\{\Subst{N}{y}{x}\}$ એમ ત્રણ જગ્યાએ મુક્ત-ચલ
+સંકેતનું~$\backslash$ છૂટી ગયું છે. અહીં બધે~$\FV{}$
+સંકેત વાપર્યો છે.}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:fv-one}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{lem}\ollabel{lem:inv}
+  $P \aconvone Q$ હોય તો $Q \aconvone P$.
+\end{lem}
+
+\begin{proof}
+  $P \aconvone Q$ની !!{derivation} પર આગમનથી.
+  \begin{enumerate}
+  \item છેલ્લો નિયમ~\olref{defn:aconvone4} હોય તો~$P$
+    એ~$\lambd[x][N]$ અને~$Q$ એ
+    $\lambd[y][\Subst{N}{y}{x}]$ સ્વરૂપનાં છે; અહીં
+    $x \neq y$, $y \notin \FV{N}$ અને~$\Subst{N}{y}{x}$
+    વ્યાખ્યાયિત છે. પ્રથમ, \olref[sub]{thm:clr} મુજબ
+    $x \notin
+    \FV{\Subst{N}{y}{x}}$. \olref[sub]{thm:inv} મુજબ
+    $\Subst{\Subst{N}{y}{x}}{x}{y}$ વ્યાખ્યાયિત પણ છે અને
+    $N$ બરાબર પણ છે. તેથી~\olref{defn:aconvone4} મુજબ
+    $\lambd[y][\Subst{N}{y}{x}]
+    \aconvone \lambd[x][\Subst{\Subst{N}{y}{x}}{x}{y}] =
+    \lambd[x][N]$.
+    \sourcecorrection{OLLAM-023}{સ્થિર અંગ્રેજી મૂળ અહીં
+    સ્થાનાપન્ન પછી~$y$ મુક્ત નથી એમ કહે છે; દાખલા તરીકે
+    $N=x$ હોય તો પરિણામ~$y$ જ છે. વિપરીત નામ-બદલી માટે
+    જરૂરી શરત~$x\notin\FV{\Subst{N}{y}{x}}$ છે, જે
+    અગાઉના પ્રમેયથી મળે છે.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:inv}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{thm}
+  $\alpha$-રૂપાંતરણ પદો પરનો સામ્ય સંબંધ છે; એટલે તે
+  સ્વવાચક, સંમિત અને પરંપરિત છે.
+\end{thm}
+
+\begin{proof}
+  \begin{enumerate}
+  \item દરેક પદ~$M$ માટે બદ્ધ ચલોનું નામ \emph{શૂન્ય} વાર
+    બદલીને~$M$માંથી~$M$ મળે છે.
+  \item બદ્ધ ચલોનું નામ બદલવાની કોઈ શ્રેણીથી~$P$નું
+    $Q$માં $\alpha$-રૂપાંતરણ થાય તો~$Q$માંથી એ ફેરફારો
+    ઊલટા ક્રમે ઉલટાવીને (\olref{lem:inv} મુજબ)~$P$ મળે છે.
+  \item એક શ્રેણીથી~$P$નું~$Q$માં અને બીજીથી~$Q$નું~$R$માં
+    $\alpha$-રૂપાંતરણ થાય તો પહેલી પછી બીજી શ્રેણી
+    લાગુ કરીને~$P$માંથી~$R$ મળે છે.
+  \end{enumerate}
+\end{proof}
+
+હવે પછી~$M$ અને~$N$ને \emph{$\alpha$-સામ્યવાળાં},
+$M
+\aeq N$, ત્યારે અને માત્ર ત્યારે જ કહીએ છીએ જ્યારે~$M$નું
+$N$માં $\alpha$-રૂપાંતરણ થાય. હમણાં સાબિત કર્યું તેમ,
+આ ત્યારે અને માત્ર ત્યારે જ બને છે જ્યારે~$N$નું પણ
+$M$માં $\alpha$-રૂપાંતરણ થાય.
+
+\begin{thm}\ollabel{thm:fv}
+  $M \aeq N$ હોય તો $\FV{M} = \FV{N}$.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:fv-one}માંથી સીધું મળે છે.
+\end{proof}
+
+\begin{lem}\ollabel{lem:sub:R}
+  $R \aeq R'$ હોય અને~$\Subst{M}{R}{y}$ વ્યાખ્યાયિત હોય
+  તો~$\Subst{M}{R'}{y}$ પણ વ્યાખ્યાયિત છે અને
+  $\Subst{M}{R}{y}$ સાથે $\alpha$-સામ્યવાળું છે.
+\end{lem}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{lem:sub:R} સાબિત કરો.
+\end{prob}
+
+યાદ કરો કે~\olref[sub]{sec}માં કેટલાક કિસ્સામાં સ્થાનાપન્ન
+અવ્યાખ્યાયિત છે. પરંતુ પદોના બદ્ધ ચલોનું નામ
+$\alpha$-રૂપાંતરણથી બદલીને સ્થાનાપન્ન વ્યાખ્યાયિત બનાવી
+શકાય છે. નીચેના પ્રમેય મુજબ પરિણામમાં $\alpha$-સામ્ય
+જળવાય છે:
+
+\begin{thm}\ollabel{thm:sub}
+  કોઈપણ~$M$, $R$ અને~$y$ માટે એવું~$M'$ મળે છે કે
+  $M \aeq M'$ અને~$\Subst{M'}{R}{y}$ વ્યાખ્યાયિત છે.
+  વધુમાં, બીજી જોડી~$M'' \aeq M$ અને~$R''$ હોય, જેમાં
+  $\Subst{M''}{R''}{y}$ વ્યાખ્યાયિત તથા~$R'' \aeq R$
+  હોય તો
+  $\Subst{M'}{R}{y} \aeq \Subst{M''}{R''}{y}$.
+\end{thm}
+
+\begin{proof}
+  $M$ના રચનાક્રમ પર આગમનથી:
+  \begin{enumerate}
+  \item $M$ ચલ~$z$ હોય: અભ્યાસપ્રશ્ન.
+  \item $M$ એ~$\lambd[x][N]$ સ્વરૂપનું હોય. $x$ અને~$y$થી
+    જુદો, $z \notin \FV{N}$ અને~$z
+    \notin \FV{R}$ હોય એવો ચલ~$z$ પસંદ કરો. આગમનની
+    ધારણાથી એવું~$N'$ મળે છે કે~$N' \aeq N$ અને
+    $\Subst{N'}{z}{x}$ વ્યાખ્યાયિત છે. ત્યારબાદ
+    \olref{defn:aconvone}\olref{defn:aconvone1} મુજબ
+    $\lambd[x][N] \aeq \lambd[x][N']$ પણ છે. હવે
+    \olref{defn:aconvone}\olref{defn:aconvone4} મુજબ
+    $\lambd[x][N']
+    \aeq \lambd[z][\Subst{N'}{z}{x}]$ છે. આ પગલું
+    લઈ શકાય છે કારણ કે~$z \ne x$,
+    $z \notin \FV{N'}$ અને~$\Subst{N'}{z}{x}$
+    વ્યાખ્યાયિત છે. પરંતુ માત્ર~$z \neq y$ અને
+    $z \notin \FV{R}$થી
+    $\Subst{\lambd[z][\Subst{N'}{z}{x}]}{R}{y}$
+    વ્યાખ્યાયિત છે એવું ફલિત થતું નથી: અંદરના બંધનોની
+    શરતો પણ તપાસવી પડે.
+    \sourcecorrection{OLLAM-024}{સ્થિર અંગ્રેજી મૂળ અહીં
+    ફક્ત બહારના બાંધનાર~$z$ની અથડામણ ન હોવાથી આખું
+    સ્થાનાપન્ન વ્યાખ્યાયિત છે એમ કહે છે. પરંતુ
+    $N=\lambd[w][y]$, $R=w$ અને~$x,y,z,w$ જુદા હોય
+    ત્યારે~$\Subst{N}{z}{x}=N$ વ્યાખ્યાયિત છે, છતાં
+    $\Subst{\lambd[z][N]}{w}{y}$ અંદરના~$w$થી થતી
+    અથડામણને કારણે અવ્યાખ્યાયિત છે. અગાઉથી બધાં
+    જરૂરી અંદરનાં બંધનોનાં નામ તાજાં કરવાની વધારાની
+    દલીલ જોઈએ; સ્થિર મૂળની આ સાબિતી અહીં અધૂરી છે.
+    મૂળમાંની બે~$FV$ અભિવ્યક્તિઓને પણ~$\FV{}$ કર્યું છે.}
+
+    વધુમાં, એ જ શરતો સંતોષતાં બીજાં~$N''$ અને~$R''$
+    હોય તો સ્ત્રોત નીચેની સાંકળ આપે છે; મધ્યનાં બે
+    પગલાં માત્ર આલ્ફા-સામ્ય સુધી જ માન્ય છે:
+    \begin{multline*}
+      \Subst{(\lambd[z][\Subst{N''}{z}{x}])}{R''}{y} \\
+    \begin{aligned}
+      &= \lambd[z][\Subst{\Subst{N''}{z}{x}}{R''}{y}] \\
+      &\aeq \lambd[z][\Subst{\Subst{N''}{z}{x}}{R}{y}] && \text{
+        \olref{lem:sub:R} મુજબ}\\
+      &\aeq\lambd[z][\Subst{\Subst{N'}{z}{x}}{R}{y}]
+      && \text{આગમનની ધારણાથી}\\
+      &=\Subst{(\lambd[z][\Subst{N'}{z}{x}])}{R}{y}
+    \end{aligned}
+    \end{multline*}
+    \sourcecorrection{OLLAM-025}{સ્થિર અંગ્રેજી મૂળની
+    સમીકરણ-સાંકળમાં~\olref{lem:sub:R} અને આગમનનો ઉપયોગ
+    કરતી જગ્યાએ સાદી સમાનતા લખી છે. સંબંધિત પદો
+    સામાન્ય રીતે નામમાં જુદાં હોવાથી ત્યાં માત્ર
+    $\alpha$-સામ્ય મળે છે. ઉપરનો અધૂરો વ્યાખ્યાયિતતા-
+    તર્ક પૂરો કર્યા વિના આ સાંકળને સંપૂર્ણ સાબિતી
+    ગણવી નહીં.}
+    \item $M$ એ~$(PQ)$ સ્વરૂપનું હોય: અભ્યાસપ્રશ્ન.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][syn][alp]{thm:sub}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{cor}\ollabel{cor:sub}
+  કોઈપણ~$M$, $R$ અને~$y$ માટે એવી જોડી~$M'$ અને~$R'$
+  મળે છે કે~$M' \aeq M$, $R \aeq R'$ અને
+  $\Subst{M'}{R'}{y}$ વ્યાખ્યાયિત છે. વધુમાં, બીજી
+  જોડી~$M'' \aeq M$ અને~$R'' \aeq R$ હોય તથા
+  $\Subst{M''}{R''}{y}$ વ્યાખ્યાયિત હોય તો
+  $\Subst{M'}{R'}{y} \aeq
+  \Subst{M''}{R''}{y}$.
+  \sourcecorrection{OLLAM-026}{સ્થિર અંગ્રેજી મૂળના
+  ઉપસિદ્ધાંતમાં બીજી જોડી માટે~$R''\aeq R$ની શરત
+  ગાયબ છે અને તેની જગ્યાએ પહેલી જોડીનું સ્થાનાપન્ન
+  ફરી વ્યાખ્યાયિત હોવાનું લખાયું છે. અહીં બીજા
+  સ્થાનાપન્નની વ્યાખ્યાયિતતા તથા બંને પ્રતિસ્થાપકોનું
+  $\alpha$-સામ્ય સ્પષ્ટ કર્યું છે.}
+\end{cor}
+
+\begin{proof}
+  \olref{thm:sub}માંથી સીધું મળે છે.
+\end{proof}
+
+\end{document}

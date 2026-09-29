@@ -1,0 +1,258 @@
+% Part: many-valued-logic
+% Chapter: three-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{thr}{luk}
+
+\olsection{લુકાશેવિચનું તર્કશાસ્ત્ર}
+
+બહુમૂલ્ય તર્કશાસ્ત્રની પ્રકાશિત અને વિગતે વિકસાવેલી શરૂઆતની
+દરખાસ્તોમાંની એક પોલૅન્ડના તત્ત્વચિંતક યાન~\L ukasiewiczએ
+1921માં આપી હતી. લુકાશેવિચને પ્રેરણા એરિસ્ટોટલની દરિયાઈ યુદ્ધની
+સમસ્યામાંથી મળી હતી: \emph{આજે} ``આવતી કાલે દરિયાઈ યુદ્ધ થશે'' એ
+વિધાન ન તો સાચું લાગે છે, ન તો ખોટું; તેનું સત્યમૂલ્ય હજી નક્કી થયું
+નથી. લુકાશેવિચે આવાં ``ભાવિ અનિશ્ચિત'' વિધાનો માટે ત્રીજું સત્યમૂલ્ય
+રજૂ કરવાની દરખાસ્ત કરી.
+\begin{quote}
+આવતા વર્ષે કોઈ નિશ્ચિત ક્ષણે, દાખલા તરીકે 21 ડિસેમ્બરે બપોરે,
+હું વૉર્સોમાં હાજર હોઈશ કે નહિ, તે અત્યારે હકારાત્મક કે નકારાત્મક
+રીતે નક્કી નથી—આ હું વિરોધાભાસ વિના માની શકું છું. તેથી તે
+સમયે હું વૉર્સોમાં હોઉં એ શક્ય છે, પણ આવશ્યક નથી. આ ધારણા હેઠળ
+``આવતા વર્ષે 21 ડિસેમ્બરે બપોરે હું વૉર્સોમાં હોઈશ'' એ વિધાન અત્યારે
+સાચું પણ નથી અને ખોટું પણ નથી. જો તે અત્યારે સાચું હોય, તો મારી
+ભાવિ હાજરી આવશ્યક બને, જે ધારણાથી વિરુદ્ધ છે. બીજી બાજુ, જો તે
+અત્યારે ખોટું હોય, તો મારી ભાવિ હાજરી અશક્ય બને, જે પણ ધારણાથી
+વિરુદ્ધ છે. તેથી વિચારાધીન વિધાન અત્યારે સાચું કે ખોટું નથી; તેને
+``0'' અથવા અસત્ય અને ``1'' અથવા સત્યથી જુદું ત્રીજું મૂલ્ય હોવું
+જોઈએ. આ મૂલ્યને આપણે ``$\frac{1}{2}$'' વડે દર્શાવી શકીએ. તે
+``શક્ય''ને દર્શાવે છે અને ``સાચું'' તથા ``ખોટું'' સાથે ત્રીજા મૂલ્ય
+તરીકે જોડાય છે.
+\end{quote}
+લુકાશેવિચના ત્રીજા સત્યમૂલ્ય માટે આપણે $\Undef$ વાપરીશું.\footnote{લુકાશેવિચ
+અહીં ``શક્ય''નો આજકાલ ઓછો પ્રચલિત અર્થ લે છે: શક્ય, પણ આવશ્યક નહિ.}
+
+$\lnot$, $\land$ અને $\lor$ સંયોજકોનાં સત્યવિધેયો આ અર્થઘટન હેઠળ
+નક્કી કરવાં સહેલાં છે: ભાવિ અનિશ્ચિત વિધાનનો નિષેધ પણ ભાવિ અનિશ્ચિત
+વિધાન છે, તેથી $\tf{\lnot}(\Undef) = \Undef$. સંયોજનનો એક ઘટક
+અનિર્ધારિત અને બીજો સાચો હોય, તો આખું સંયોજન પણ અનિર્ધારિત છે—કારણ
+કે ભાવિ અનિશ્ચિત ઘટક છેવટે કેવો નીકળે તેના આધારે સંયોજન સાચું પણ
+નીકળી શકે અને ખોટું પણ. તેથી \[
+    \tf{\land}(\True, \Undef) =
+\tf{\land}(\Undef, \True) =
+\Undef.
+\]
+પરંતુ બીજો ઘટક ખોટો હોય તો સંયોજન સાચું નીકળી શકે નહિ, તેથી
+\[\tf{\land}(\False, \Undef) =
+\tf{\land}(\Undef, \False) = \False.\]
+\sourcecorrection{OLMV-003}{સ્થિર અંગ્રેજી મૂળના આ
+સમીકરણમાં બંને ડાબી બાજુએ એક જ ક્રમમાં અસત્ય અને
+અનિર્ધારિત મૂલ્ય લખાયું છે. નીચેની સંયોજન-સારણી
+અનુસાર બીજો ક્રમ ઉલટો છે; અહીં બંને ક્રમ દર્શાવ્યા છે.}
+બાકીનાં મૂલ્યો માટે, જ્યારે આર્ગ્યુમેન્ટનાં સત્યમૂલ્યો $\True$
+અથવા $\False$ તરીકે નક્કી હોય, ત્યારે શાસ્ત્રીય તર્કશાસ્ત્રના
+જ મૂલ્યો મળે છે.
+
+પ્રેરણ સંયોજકનો કિસ્સો થોડો વધુ મુશ્કેલ છે. ધારો કે $q$ ભાવિ
+અનિશ્ચિત વિધાન છે. જો $p$ ખોટું હોય, તો $q$ છેવટે ગમે તે નીકળે,
+$p \lif q$ સાચું રહેશે; તેથી $\tf{\lif}(\False, \Undef) = \True$
+રાખવું જોઈએ. અને જો $p$ સાચું હોય, તો $q$ ગમે તે નીકળે,
+$q \lif p$ સાચું રહેશે; તેથી $\tf{\lif}(\Undef, \True) = \True$.
+જો $p$ સાચું હોય, તો $p \lif q$ છેવટે સાચું કે ખોટું નીકળી શકે;
+તેથી $\tf{\lif}(\True, \Undef) = \Undef$. એ જ રીતે, જો $p$
+ખોટું હોય, તો $q \lif p$ છેવટે સાચું કે ખોટું નીકળી શકે; તેથી
+$\tf{\lif}(\Undef, \False) = \Undef$. હવે $p$ અને $q$ બંને
+ભાવિ અનિશ્ચિત હોય એવો કિસ્સો બાકી રહે છે. પ્રેરણાના આધાર પરથી
+આ કિસ્સામાં ખરેખર $\Undef$ આપવું જોઈએ. પરંતુ એમ કરવાથી
+$!A \lif !A$ \emph{પુનરુક્તિ નહિ રહે}. લુકાશેવિચને
+$!A \lor \lnot !A$ અને $\lnot(!A \land \lnot !A)$ છોડવામાં
+અડચણ નહોતી, પણ $!A \lif !A$ છોડવામાં વાંધો હતો. તેથી તેણે
+$\tf{\lif}(\Undef, \Undef) = \True$ નક્કી કર્યું.
+
+\begin{defn}\ollabel{def:lukasiewicz}
+ત્રિમૂલ્ય લુકાશેવિચ તર્કશાસ્ત્ર નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી પ્રમાણભૂત
+  વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $\True$ છે; એટલે $V^+ = \{\True\}$.
+  \item અસત્ય-અચલનું મૂલ્ય અસત્ય છે. અન્ય સત્યવિધેયો નીચેની
+  સારણીઓ વડે અપાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\Undef$ \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\sourcecorrection{OLMV-004}{પહેલાં $\Lang L_0$માં
+અસત્ય-અચલ શૂન્યસ્થાનીય સંયોજક તરીકે વ્યાખ્યાયિત છે,
+પણ સ્થિર અંગ્રેજી મૂળની આ શ્રેણિક તેનો સત્યવિધેય
+આપતી નથી. શાસ્ત્રીય અર્થ જાળવવા અહીં તેનું
+મૂલ્ય અસત્ય હોવાનું સ્પષ્ટ કર્યું છે.}
+
+સરળતાથી જોઈ શકાય છે કે માત્ર $\lnot$, $\land$ અને $\lor$
+ધરાવતું કોઈ પણ !!{formula}~$!A$, જો તેનાં બધાં
+!!{propositional variable}sને $\Undef$ આપવામાં આવે, તો તેનું
+સત્યમૂલ્ય~$\Undef$ થશે. તેથી, દાખલા તરીકે, શાસ્ત્રીય પુનરુક્તિઓ
+$p \lor \lnot p$ અને $\lnot(p \land \lnot p)$ એ
+$\LogLuk[3]$માં પુનરુક્તિ નથી, કારણ કે $\pAssign v(p) = \Undef$
+હોય ત્યારે $\pValue{v}(!A) = \Undef$.
+
+જ્યાં $\pAssign v(p) = \True$ અથવા $\False$ હોય એવા
+!!{valuation}s પર $\pValue v(!A)$ તેનું શાસ્ત્રીય સત્યમૂલ્ય જ આપશે.
+
+\begin{prop}
+  $!A$માં આવતા દરેક $p$ માટે જો $\pAssign v(p) \in \{\True, \False\}$,
+  તો $\pValue v(!A)[\LogLuk[3]] = \pValue v(!A)[\LogCL]$.
+\end{prop}
+
+\begin{prob}\label{mvl:thr:luk:prob:luk-iff} ધારો કે~$\LogLuk[3]$માં
+  $\pValue v(!A \liff !B) = \pValue v((!A \lif !B) \land (!B \lif
+  !A))$ એમ વ્યાખ્યાયિત કરીએ. ત્યારે $\liff$ની સત્યતાસારણી કેવી હશે?
+\end{prob}
+
+ઘણી શાસ્ત્રીય પુનરુક્તિઓ \LogLuk[3]માં પણ પુનરુક્તિ \emph{છે};
+દાખલા તરીકે $\lnot p \lif (p \lif q)$. શાસ્ત્રીય તર્કશાસ્ત્રની
+જેમ સત્યતાસારણીથી આ તપાસી શકીએ છીએ:
+\begin{center}
+\begin{tabular}{cc|cccccc}
+  $p$ & $q$ & $\lnot$ & $p$ & $\lif$ & $\smash{(}p$ & $\lif$ & $q\smash{)}$ \\ \hline
+  \True & \True & \False & \True & \True & \True & \True & \True \\
+  \True & \Undef & \False & \True & \True & \True & \Undef & \Undef \\
+  \True & \False & \False & \True & \True & \True & \False & \False \\
+  \Undef & \True & \Undef & \Undef & \True & \Undef & \True & \True \\
+  \Undef & \Undef & \Undef & \Undef & \True & \Undef & \True & \Undef \\
+  \Undef & \False & \Undef & \Undef & \True & \Undef & \Undef & \False \\
+  \False & \True & \True & \False & \True & \False & \True & \True \\
+  \False & \Undef & \True & \False & \True & \False & \True & \Undef \\
+  \False & \False & \True & \False & \True & \False & \True & \False \\
+\end{tabular}
+\end{center}
+
+\begin{prob}
+  નીચેનાં સૂત્રો \LogLuk[3]માં પુનરુક્તિ છે તે બતાવો:
+  \begin{enumerate}
+    \item $p \lif (q \lif p)$
+    \item\label{mvl:thr:luk:prob:luk-taut-2} $\lnot(p \land q) \liff (\lnot p \lor \lnot q)$
+    \item\label{mvl:thr:luk:prob:luk-taut-3} $\lnot(p \lor q) \liff (\lnot p \land \lnot q)$
+  \end{enumerate}
+  (\olref[mvl][thr][luk]{prob:luk-taut-2} અને
+  \olref[mvl][thr][luk]{prob:luk-taut-3}માં $!A \liff !B$ને
+  $(!A \lif !B) \land (!B \lif !A)$નું સંક્ષિપ્ત લેખન માનો,
+  અથવા \olref[mvl][thr][luk]{prob:luk-iff}ના તમારા ઉકેલનો ઉપયોગ કરો.)
+\end{prob}
+
+\begin{prob}
+  નીચેનાં શાસ્ત્રીય પુનરુક્તિઓ \LogLuk[3]માં પુનરુક્તિ નથી તે બતાવો:
+  \begin{enumerate}
+    \item $(\lnot p \land p) \lif q$
+    \item $((p \lif q) \lif p) \lif p$
+    \item $(p \lif (p \lif q)) \lif (p \lif q)$
+  \end{enumerate}
+\end{prob}
+\sourcecorrection{OLMV-005}{સ્થિર અંગ્રેજી મૂળના
+પહેલા અભ્યાસપ્રશ્નમાં અંતે વધારાનો જમણો કૌંસ છે.
+અહીં વધારાનો કૌંસ દૂર કર્યો છે; સૂત્રનો અર્થ અને
+શાસ્ત્રીય પુનરુક્તિરૂપ જળવાય છે.}
+
+આથી કદાચ એમ લાગી શકે કે બધી શાસ્ત્રીય પુનરુક્તિઓ
+$\LogLuk[3]$માં પુનરુક્તિ ન હોય તોપણ દરેક
+!!{valuation} હેઠળ તેમનું મૂલ્ય ઓછામાં ઓછું $\True$ અથવા
+$\Undef$ હશે. પરંતુ એવું નથી. નીચેનું પ્રતિઉદાહરણ જુઓ:
+\[
+  \lnot(p \lif \lnot p) \lor \lnot(\lnot p \lif p)
+\]
+જો $p$નું મૂલ્ય~$\Undef$ હોય, તો આ સૂત્રનું મૂલ્ય $\False$ છે.
+
+\begin{prob}
+  લુકાશેવિચ તર્કશાસ્ત્રમાં નીચેનામાંથી કયા ફલિતતા-સંબંધો સાચા છે?
+  દરેક માટે સત્યતાસારણી આપો.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot\lnot p \Entails p$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+લુકાશેવિચે પોતાના ત્રિમૂલ્ય તર્કશાસ્ત્રના આધારે સંભાવનાનું
+તર્કશાસ્ત્ર બનાવવાની આશા રાખી હતી. તેણે એકસ્થાનીય
+સંયોજક $\Diamond !A$ (``$!A$ શક્ય છે'' માટે) અને તેને અનુરૂપ
+$\Box !A$ (``$!A$ આવશ્યક છે'' માટે) રજૂ કર્યા:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\Diamond}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+  \quad
+  \begin{tabular}{c|c}
+    $\tf{\Box}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\False$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+બીજા શબ્દોમાં, $p$ શક્ય ત્યારે અને માત્ર ત્યારે છે જ્યારે
+તે પહેલેથી ખોટું હોવાનું નક્કી નથી; અને $p$ આવશ્યક ત્યારે
+અને માત્ર ત્યારે છે જ્યારે તે પહેલેથી સાચું હોવાનું નક્કી છે.
+
+\begin{prob}
+  $\Box p \liff \lnot\Diamond \lnot p$ અને $\Diamond p \liff
+  \lnot \Box \lnot p$ એ $\Box$ અને~$\Diamond$ની ઉપરની
+  સત્યતાસારણીઓથી વિસ્તૃત \LogLuk[3]માં પુનરુક્તિ છે તે બતાવો.
+\end{prob}
+
+પરંતુ સૂચિત આ વિધાત્મક તર્કશાસ્ત્રની મર્યાદા ટૂંક સમયમાં
+સ્પષ્ટ થઈ: ભવિષ્યમાં ગમે તે થાય, $p \land \lnot p$ કદી સાચું
+નીકળી શકે નહિ. તેથી અત્યારે તેનું મૂલ્ય અનિર્ધારિત હોય તોપણ તેને
+અશક્ય ગણવું જોઈએ; એટલે $\lnot \Diamond(p \land \lnot p)$ પુનરુક્તિ
+હોવું જોઈએ. પરંતુ જો $\pAssign v(p) = \Undef$, તો
+$\pValue v(\lnot \Diamond(p \land \lnot p)) = \False$.
+\sourcecorrection{OLMV-006}{સ્થિર અંગ્રેજી મૂળ અહીં
+અંતિમ મૂલ્ય અનિર્ધારિત કહે છે. ઉપરની સારણીઓ મુજબ
+અનિર્ધારિત વિધાન અને તેનો નિષેધ ભેગાં કરીએ તો
+અનિર્ધારિત મળે છે, તેનું સંભાવના-મૂલ્ય સત્ય અને
+તેનો નિષેધ અસત્ય મળે છે. તેથી અહીં અસત્ય લખ્યું છે;
+પ્રતિઉદાહરણનો હેતુ યથાવત્ રહે છે.}
+લુકાશેવિચે શક્યતા અને આવશ્યકતા જેવા વિધાત્મક ભેદો માટે
+બે સત્યમૂલ્યો પૂરતાં નથી એમ સાચું કહ્યું હતું, પરંતુ
+ત્રીજું સત્યમૂલ્ય ઉમેરવું પણ પૂરતું નથી.
+
+\end{document}

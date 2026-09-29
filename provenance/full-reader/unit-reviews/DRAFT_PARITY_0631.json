@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0631",
+  "checked_at_utc": "2026-09-28T15:39:32.581097+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0631 Alan Turing biography, computation, Bletchley Park and criminalization; state-only draft",
+  "report": {
+    "unit_id": "OLP-0631",
+    "source_path": "content/history/biographies/alan-turing.tex",
+    "source_sha256": "105de99d822a0dbb375d0d4bd8e3ed3847b7f77d1f1c4760f62cbcd0b7f2671b",
+    "draft_path": "private-state\\work\\batch044_draft\\alan-turing.tex",
+    "draft_sha256": "7c81083b343f59e2a55b0725af08d83d8a304726649087940909bf2a3567a35d",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 491,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\turing-machines\\machines-computations\\introduction.tex",
+        "sha256": "11e627ef77211891ac4264125fdc5bb81860aa2a89513594b65de194cb33cb11",
+        "terms": [
+          "એલન ટ્યુરિંગે",
+          "સંગણનીય",
+          "ટ્યુરિંગ મશીન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\turing-machines\\undecidability\\decision-problem.tex",
+        "sha256": "b8323db81b22049f90eeac15fc4797ed127f5970cfc2f89dcf4375849ffa79f3",
+        "terms": [
+          "નિર્ણય સમસ્યા"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\turing-machines\\undecidability\\introduction.tex",
+        "sha256": "52e351d132450e546bcea04caae94dfdbe5ef5fc711c767c46eb7ba4c4843950",
+        "terms": [
+          "અનિર્ણેય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\computability\\recursive-functions\\introduction.tex",
+        "sha256": "c30e681e691c687b21c20fb280a031749cb6f5cfd4b89acccac4db0cc4dc7758",
+        "terms": [
+          "લૅમ્બડા કલન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Breaking the Code",
+        "count": 1,
+        "reason": "Exact English proper title of the cited play."
+      },
+      {
+        "literal": "The Imitation Game",
+        "count": 1,
+        "reason": "Exact English proper title of the cited film."
+      },
+      {
+        "literal": "The Strange Life and Death of\n  Dr.~Turing",
+        "count": 1,
+        "reason": "Exact English proper title of the cited documentary."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "turing-alan",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,54 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{trm}
+\olsection{પદો}
+
+લૅમ્બડા કલનનાં પદો ચલોનો અનંત પુરવઠો $\Obj{v_0}$, $\Obj{v_1}$,
+\dots{}, સંકેત~``$\lambd$'' અને કૌંસોમાંથી આગમનથી બને છે. ચલો
+દર્શાવવા આપણે $x$, $y$, $z$, \dots{} વાપરીશું અને પદો દર્શાવવા
+$M$, $N$, $P$, \dots{} વાપરીશું.
+
+\begin{defn}[પદો] \ollabel{defn:term}
+લૅમ્બડા કલનનાં \emph{પદો}નો ગણ આગમનથી આ રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item \ollabel{defn:term-var} $x$ ચલ હોય તો $x$ પદ છે.
+  \item \ollabel{defn:term-abs} $x$ ચલ અને $M$ પદ હોય તો
+    $(\lambd[x][M])$ પદ છે.
+  \item \ollabel{defn:term-app} $M$ અને $N$ બંને પદો હોય તો
+    $(MN)$ પદ છે.
+\end{enumerate}
+\end{defn}
+
+કોઈ પદ~$(\lambd[x][M])$ \olref{defn:term-abs} મુજબ રચાયું હોય
+તો તેને \emph{અમૂર્તીકરણ}નું પરિણામ કહીએ છીએ અને તેમાં
+$\lambd[x]$માંના~$x$ને \emph{!!{parameter}} કહીએ છીએ. એ જ રીતે,
+\olref{defn:term-app} મુજબ રચાયેલું પદ~$(MN)$
+\emph{અનુપ્રયોગ}નું પરિણામ છે.
+
+ઉપર વ્યાખ્યાયિત પદોમાં બધા જરૂરી કૌંસ છે. આ ક્યારેક ભારે પડે છે;
+દાખલા તરીકે પદ
+$(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$ જુઓ. કૌંસ
+છોડી શકાય તે માટે આપણે આગળ નિયમો આપીશું. જોકે, આ ઔપચારિક
+વ્યાખ્યાથી \olref{defn:term} મુજબ પદ કઈ રીતે રચાયું છે તે નક્કી
+કરવું સરળ બને છે. દાખલા તરીકે,
+$(\lambd[x][((\lambd[x][x])(\lambd[x][(xx)]))])$ પદની રચનાનું
+છેલ્લું પગલું અમૂર્તીકરણ જ હોવું જોઈએ, જેમાં !!{parameter}~$x$ છે.
+તે પદ~$((\lambd[x][x])(\lambd[x][(xx)]))$માંથી અમૂર્તીકરણ વડે
+બને છે; આ બીજું પદ બે પદોનો અનુપ્રયોગ છે. તે બંને પદો પોતપોતે
+અમૂર્તીકરણથી બને છે, અને આ રીતે આગળ જઈ શકાય છે.
+
+\begin{prob}
+$(\lambd[g][((\lambd[x][(g (x x))])
+  (\lambd[x][(g (x x))]))])$ની રચના વર્ણવો.
+\sourcecorrection{OLLAM-010}{સ્થિર અંગ્રેજી મૂળના આ અભ્યાસપ્રશ્નમાં
+બે અમૂર્તીકરણોનો અનુપ્રયોગ બહારના કૌંસ વિના લખાયો છે. અહીં
+વ્યાખ્યાના~$(MN)$ નિયમ અનુસાર તેમની આસપાસ કૌંસ ઉમેર્યા છે.}
+\end{prob}
+
+\end{document}

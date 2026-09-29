@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0661",
+  "checked_at_utc": "2026-09-28T19:17:41.391454+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0661 Midsequent theorem and Herbrand's theorem; state-only draft",
+  "report": {
+    "unit_id": "OLP-0661",
+    "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+    "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+    "draft_path": "private-state\\work\\batch044_draft\\midsequent.tex",
+    "draft_sha256": "cd72e03a643f8e185de3b23d23d2bf40b2cc8dd9f13ea402f87e3e4597a819f8",
+    "aligned_blocks": 22,
+    "linguistic_blocks": 16,
+    "source_math_spans_correction_aware": 137,
+    "target_math_spans_after_corrections": 137,
+    "glossary_tokens": 40,
+    "source_correction_notes": [
+      "OLMD-221",
+      "OLMD-222",
+      "OLMD-223"
+    ],
+    "source_detector_ascii_tokens": 996,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "inferences in~$\\pi_1'$",
+        "inferences in~$\\pi_1$"
+      ],
+      [
+        "\\UnaryInf$!\\Gamma' \\fCenter",
+        "\\UnaryInf$\\Gamma' \\fCenter"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "શિથિલીકરણ",
+          "સંકોચન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

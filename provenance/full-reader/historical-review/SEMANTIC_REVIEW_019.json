@@ -1,0 +1,2595 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewed_at_utc": "2026-09-20T00:58:54.927136+00:00",
+  "batch": "OLP-0182–0190 Model Theory Basics under the cumulative Model Theory profile",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with independently worded reverse paraphrases for every substantive block. The review covers reducts, substructures, compactness overspill, isomorphism, theories of structures, partial isomorphisms, bounded quantifier rank, dense linear orders and all eight adjacent disclosed source repairs. One rejected candidate was checked against the upstream macro declaration and preserved.",
+  "all_drafted_blocks_directly_compared_during_translation": 68,
+  "reverse_paraphrase_samples": 59,
+  "blocks": [
+    {
+      "segment_id": "OLP-0182-B004",
+      "unit_id": "OLP-0182",
+      "source_path": "upstream/content/model-theory/model-theory.tex",
+      "target_path": "gu/content/model-theory/model-theory.tex",
+      "source_range_utf8": [
+        97,
+        123
+      ],
+      "target_range_utf8": [
+        97,
+        153
+      ],
+      "source_sha256": "9f76c52b32a25a76de7465547372742ee0f3cc9586566b84d551228f67ee5a86",
+      "target_sha256": "cd0321ec5400e1c576636b6247c32efa45fbc6201da25b5fe42882310eccc49e",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The part driver preserves the editorial status of the model-theory material, its derivation from Aldo Antonelli's notes, the excluded first-order topics, the needed pedagogical additions and the linked work plan. OLMTB-001 repairs only the malformed English planning phrase.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0182-B005",
+      "unit_id": "OLP-0182",
+      "source_path": "upstream/content/model-theory/model-theory.tex",
+      "target_path": "gu/content/model-theory/model-theory.tex",
+      "source_range_utf8": [
+        125,
+        603
+      ],
+      "target_range_utf8": [
+        155,
+        1683
+      ],
+      "source_sha256": "74d8a8eb9d8c55dfdf31b52f3a27d993a07146da67a3ec97b411cb03c39d7735",
+      "target_sha256": "74fbf195d3dd3cf0e704c893e45d314020caa4627cec9a343e3f5fcdbabf8e00",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The part driver preserves the editorial status of the model-theory material, its derivation from Aldo Antonelli's notes, the excluded first-order topics, the needed pedagogical additions and the linked work plan. OLMTB-001 repairs only the malformed English planning phrase.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0183-B004",
+      "unit_id": "OLP-0183",
+      "source_path": "upstream/content/model-theory/basics/basics.tex",
+      "target_path": "gu/content/model-theory/basics/basics.tex",
+      "source_range_utf8": [
+        121,
+        165
+      ],
+      "target_range_utf8": [
+        121,
+        204
+      ],
+      "source_sha256": "50027506ad02d834f2da91415fd378c9e8f148ac937ec45321f63a3acc01f304",
+      "target_sha256": "d3ec141142a162ba4d49e029a9940ce481828f17bca91cb3e1beae8cdb8c038c",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The chapter driver preserves the seven-section order for reducts and expansions, substructures, overspill, isomorphism, theories of structures, partial isomorphisms and dense linear orders, while leaving the commented import unchanged.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B004",
+      "unit_id": "OLP-0184",
+      "source_path": "upstream/content/model-theory/basics/reducts-and-expansions.tex",
+      "target_path": "gu/content/model-theory/basics/reducts-and-expansions.tex",
+      "source_range_utf8": [
+        166,
+        223
+      ],
+      "target_range_utf8": [
+        155,
+        252
+      ],
+      "source_sha256": "23910753fcc0bb433aca87d77764224a8eaa2f2111f98c9b1d0ce436a5a86cdd",
+      "target_sha256": "d2c9b70c0a88b8366f650492774cb1ed8b625b820e18853f56319766f95fb6d9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B005",
+      "unit_id": "OLP-0184",
+      "source_path": "upstream/content/model-theory/basics/reducts-and-expansions.tex",
+      "target_path": "gu/content/model-theory/basics/reducts-and-expansions.tex",
+      "source_range_utf8": [
+        225,
+        924
+      ],
+      "target_range_utf8": [
+        254,
+        1460
+      ],
+      "source_sha256": "1bd0d87f76481be1f01582460d3b167e7f07f4cfadef4819dd1d0101b19db28d",
+      "target_sha256": "02c3b800198a712dddd08dd90aa54cf41f2c883c215acd54a03c00f04d61cd06",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B006",
+      "unit_id": "OLP-0184",
+      "source_path": "upstream/content/model-theory/basics/reducts-and-expansions.tex",
+      "target_path": "gu/content/model-theory/basics/reducts-and-expansions.tex",
+      "source_range_utf8": [
+        926,
+        1550
+      ],
+      "target_range_utf8": [
+        1462,
+        2335
+      ],
+      "source_sha256": "7213ca4e32fbd5250418393286c81b0e7b7acda6c486c4d7c52d9e94a4e32597",
+      "target_sha256": "4c117b2a05a210a47d51457d2330ae1b610c79780f7d3184d7d58ad345ec9184",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B007",
+      "unit_id": "OLP-0184",
+      "source_path": "upstream/content/model-theory/basics/reducts-and-expansions.tex",
+      "target_path": "gu/content/model-theory/basics/reducts-and-expansions.tex",
+      "source_range_utf8": [
+        1552,
+        1789
+      ],
+      "target_range_utf8": [
+        2337,
+        2701
+      ],
+      "source_sha256": "aca4208a5a035b3b816311dd7bdbaf884f936b55e9977526a8d4948495bb42d5",
+      "target_sha256": "3335f62ad25f769ab543356fcc716c01a9adb117004edf02e3d430d827125f0b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B008",
+      "unit_id": "OLP-0184",
+      "source_path": "upstream/content/model-theory/basics/reducts-and-expansions.tex",
+      "target_path": "gu/content/model-theory/basics/reducts-and-expansions.tex",
+      "source_range_utf8": [
+        1791,
+        1828
+      ],
+      "target_range_utf8": [
+        2703,
+        2768
+      ],
+      "source_sha256": "5c1629f4abdb1fa4d97a4d38d8df34d4d015cb746bb0ca99ded7e8572d0f7000",
+      "target_sha256": "f63b1935e4d079684b1d502a5487b5c199586806eb2fe0a2a450db14d0b2df53",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B009",
+      "unit_id": "OLP-0184",
+      "source_path": "upstream/content/model-theory/basics/reducts-and-expansions.tex",
+      "target_path": "gu/content/model-theory/basics/reducts-and-expansions.tex",
+      "source_range_utf8": [
+        1830,
+        1895
+      ],
+      "target_range_utf8": [
+        2770,
+        2855
+      ],
+      "source_sha256": "0d931efbcbc0734d3421c902f2299c0bebea2dd006dec544fb338c35b3369bba",
+      "target_sha256": "dc2141e6e5cf1850c6bfec7ca46c281c8db6858f51b9262ca8061550ed4d3566",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B010",
+      "unit_id": "OLP-0184",
+      "source_path": "upstream/content/model-theory/basics/reducts-and-expansions.tex",
+      "target_path": "gu/content/model-theory/basics/reducts-and-expansions.tex",
+      "source_range_utf8": [
+        1897,
+        2258
+      ],
+      "target_range_utf8": [
+        2857,
+        3400
+      ],
+      "source_sha256": "69db6e3b00b6c4d3ce01bfc929ed24236e3060a0a3f9f3b7f1e0c9ed221cb825",
+      "target_sha256": "3b5fe99ec27247256d49a8efa2c8455d9aab2003b414f1ddce22f910c0bd882b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0185-B004",
+      "unit_id": "OLP-0185",
+      "source_path": "upstream/content/model-theory/basics/substructures.tex",
+      "target_path": "gu/content/model-theory/basics/substructures.tex",
+      "source_range_utf8": [
+        157,
+        222
+      ],
+      "target_range_utf8": [
+        146,
+        214
+      ],
+      "source_sha256": "15a36a09dcb6bda63ce30116042fdbdea6c4d406699e4dd42e524d1364bebd40",
+      "target_sha256": "60d8c667019571624caf1a2f91c937548dbaf7e15a5fe4c224dfcbcfad0b8a35",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P003",
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves domain inclusion and agreement on constants, functions and predicates as the exact substructure conditions. OLMTB-002 adds only the nonempty domain condition required by the edition's definition of a first-order structure.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0185-B005",
+      "unit_id": "OLP-0185",
+      "source_path": "upstream/content/model-theory/basics/substructures.tex",
+      "target_path": "gu/content/model-theory/basics/substructures.tex",
+      "source_range_utf8": [
+        224,
+        576
+      ],
+      "target_range_utf8": [
+        216,
+        904
+      ],
+      "source_sha256": "d1952eba659af397a4c8d1c4197c74025254a87c938a9e1e95e496786af0d4c0",
+      "target_sha256": "0d76bf0b0e788a7c21f4315522a09298405d612a4b46596aa99fe13d7195304b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P003",
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves domain inclusion and agreement on constants, functions and predicates as the exact substructure conditions. OLMTB-002 adds only the nonempty domain condition required by the edition's definition of a first-order structure.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0185-B006",
+      "unit_id": "OLP-0185",
+      "source_path": "upstream/content/model-theory/basics/substructures.tex",
+      "target_path": "gu/content/model-theory/basics/substructures.tex",
+      "source_range_utf8": [
+        578,
+        1419
+      ],
+      "target_range_utf8": [
+        906,
+        2176
+      ],
+      "source_sha256": "68d4eea99f75ee5744559dda7bc869c7d2ca2d8262fafad2d02a59a39705ce1e",
+      "target_sha256": "a7d3ddb158f98dd1850bae2a8ac47d5c290beeb420095fa4777901fcc62e9b87",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P003",
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves domain inclusion and agreement on constants, functions and predicates as the exact substructure conditions. OLMTB-002 adds only the nonempty domain condition required by the edition's definition of a first-order structure.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0185-B007",
+      "unit_id": "OLP-0185",
+      "source_path": "upstream/content/model-theory/basics/substructures.tex",
+      "target_path": "gu/content/model-theory/basics/substructures.tex",
+      "source_range_utf8": [
+        1421,
+        1702
+      ],
+      "target_range_utf8": [
+        2178,
+        3141
+      ],
+      "source_sha256": "75e76203caedd3c760c23616fd882ed0dc92264af4c726d44187f2c8364cdb06",
+      "target_sha256": "0331fa9f1b1c8f82c2caa81b5d0e2ef113821135eec1381424bcebad7656891b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P003",
+        "GU-P057",
+        "GU-P064",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves domain inclusion and agreement on constants, functions and predicates as the exact substructure conditions. OLMTB-002 adds only the nonempty domain condition required by the edition's definition of a first-order structure.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B004",
+      "unit_id": "OLP-0186",
+      "source_path": "upstream/content/model-theory/basics/overspill.tex",
+      "target_path": "gu/content/model-theory/basics/overspill.tex",
+      "source_range_utf8": [
+        153,
+        199
+      ],
+      "target_range_utf8": [
+        142,
+        206
+      ],
+      "source_sha256": "f5b6b34aae8593890f7462a14bd04d1b214ad41ed98db84c9bc61d9b34a4dbd3",
+      "target_sha256": "b0dc6fe5c908a90511ebbf6f60818ded3daf1da126370c617d4966fc5d19ee8b",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P004",
+        "GU-P046",
+        "GU-P049",
+        "GU-P050",
+        "GU-P065",
+        "GU-P070",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B005",
+      "unit_id": "OLP-0186",
+      "source_path": "upstream/content/model-theory/basics/overspill.tex",
+      "target_path": "gu/content/model-theory/basics/overspill.tex",
+      "source_range_utf8": [
+        201,
+        341
+      ],
+      "target_range_utf8": [
+        208,
+        461
+      ],
+      "source_sha256": "e87dfc400a96644fea31d0f639ead691d67d08b184390d9e6faccc1e41ef314d",
+      "target_sha256": "098a414b0a9de679290c13a5412862a1008574ecc125a0a2d41d9a5e9d7f5fd5",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P004",
+        "GU-P046",
+        "GU-P049",
+        "GU-P050",
+        "GU-P065",
+        "GU-P070",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B006",
+      "unit_id": "OLP-0186",
+      "source_path": "upstream/content/model-theory/basics/overspill.tex",
+      "target_path": "gu/content/model-theory/basics/overspill.tex",
+      "source_range_utf8": [
+        343,
+        927
+      ],
+      "target_range_utf8": [
+        463,
+        1551
+      ],
+      "source_sha256": "03897e437a43670fb636d84b006fb66691dcd4966d8fb3447d4b7c94aa54980e",
+      "target_sha256": "996374a4b209238e404763d98e093dc311be3bb3fec5e8eccc3fb8d99f8513fd",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P004",
+        "GU-P046",
+        "GU-P049",
+        "GU-P050",
+        "GU-P065",
+        "GU-P070",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B007",
+      "unit_id": "OLP-0186",
+      "source_path": "upstream/content/model-theory/basics/overspill.tex",
+      "target_path": "gu/content/model-theory/basics/overspill.tex",
+      "source_range_utf8": [
+        929,
+        1144
+      ],
+      "target_range_utf8": [
+        1553,
+        1976
+      ],
+      "source_sha256": "34c224418501479f3031b5586c67251a935066330ba771a0d9e62951eb730108",
+      "target_sha256": "eaf9ae629463c9532edeb8c899bac36b6524ae753f06e7ac8f48a225cb976707",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P004",
+        "GU-P046",
+        "GU-P049",
+        "GU-P050",
+        "GU-P065",
+        "GU-P070",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B008",
+      "unit_id": "OLP-0186",
+      "source_path": "upstream/content/model-theory/basics/overspill.tex",
+      "target_path": "gu/content/model-theory/basics/overspill.tex",
+      "source_range_utf8": [
+        1146,
+        1409
+      ],
+      "target_range_utf8": [
+        1978,
+        2428
+      ],
+      "source_sha256": "ac032b553cfa4866d4e1de9d433fc42ea62d189eabea83d3479817255c5e2094",
+      "target_sha256": "b22d2547567a8a971ccd17052fe8238b0859b81160e8f192326ea303ad748fa5",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P004",
+        "GU-P046",
+        "GU-P049",
+        "GU-P050",
+        "GU-P065",
+        "GU-P070",
+        "GU-P074",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B004",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        155,
+        213
+      ],
+      "target_range_utf8": [
+        144,
+        218
+      ],
+      "source_sha256": "7c7dc201cbc8808f46f7832c0f304d83ca7d75940b54a8022a4dfd3fd27c932e",
+      "target_sha256": "8621bb8a59d3aaefefabe91313a4ac0afddb67fbb4cc890e00a664fe9412befb",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B005",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        215,
+        1101
+      ],
+      "target_range_utf8": [
+        220,
+        1855
+      ],
+      "source_sha256": "1e4b7884796c05180582984954a92522dc5c322332bba406c097b9c90348b91c",
+      "target_sha256": "8a920d7d5efa74dae65d9d5f912a70af5d92053fa626322caa2822ef15a534d0",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B006",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        1103,
+        1456
+      ],
+      "target_range_utf8": [
+        1857,
+        2478
+      ],
+      "source_sha256": "b56478f1d6e65acc82b339cc109d924cee772da1bbfe47ef983defe87410fcc8",
+      "target_sha256": "21761cd71004758d4bd55174069a2ccbdc8beaa68e0da46062bd2adf2d940b3c",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B007",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        1458,
+        2441
+      ],
+      "target_range_utf8": [
+        2480,
+        3818
+      ],
+      "source_sha256": "4bcf576e72f3f794b7dbc3771a59801dc86ec70c3e69d490aea8aea74d3318f2",
+      "target_sha256": "bf4a599e2668d8db963dd5a4097b5703a581ebb54bb6350f18dbb0619fff6ffe",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B008",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        2443,
+        2557
+      ],
+      "target_range_utf8": [
+        3820,
+        3941
+      ],
+      "source_sha256": "d62579718ed9bfe0f358985238a23b38e814ea6faf56a257a53f7c42f224f97e",
+      "target_sha256": "d092c5dbcd94bc331735d7fa07d24f02f53f802b3a68ad54f91049cf704777b8",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B009",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        2559,
+        4457
+      ],
+      "target_range_utf8": [
+        3943,
+        7266
+      ],
+      "source_sha256": "7cdad33be4d276a4fc54ea65ffb5538bce03cb61442b51f9b4c4169ed643f0d3",
+      "target_sha256": "8723577a77372e3ffefe052d919a994528dbea2cc0724aa6eb8b61c61f8f2a37",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B010",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        4459,
+        4591
+      ],
+      "target_range_utf8": [
+        7268,
+        7579
+      ],
+      "source_sha256": "3d8707f9b8c898693b0a8d8a1c976075ea1c1b38d96dfd0338be973a30105b47",
+      "target_sha256": "4affad328a1bbd36dbbac3e6d1323329f0b0c84fe6ba0d97ab7a7087b60a2d12",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B011",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        4593,
+        4821
+      ],
+      "target_range_utf8": [
+        7581,
+        7991
+      ],
+      "source_sha256": "b67d5d66c33b0e2c99ce5f223e18bb9e42e2e3a4124950b56d82d44dc44b03f9",
+      "target_sha256": "d543143f88cc4022a75ed1f44ec9e91d96bb338504ef1af447ba53071daa7cfe",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B012",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        4823,
+        4944
+      ],
+      "target_range_utf8": [
+        7993,
+        8196
+      ],
+      "source_sha256": "e0acbf3ca86722b83cc12f53a59dc9c0b1c2542835b7f31eacefe55aca499171",
+      "target_sha256": "808fe3a99688d22ba45f861f0abbd44658a91a2ff92dcc93b250e0303e12d8f4",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B013",
+      "unit_id": "OLP-0187",
+      "source_path": "upstream/content/model-theory/basics/isomorphism.tex",
+      "target_path": "gu/content/model-theory/basics/isomorphism.tex",
+      "source_range_utf8": [
+        4946,
+        5167
+      ],
+      "target_range_utf8": [
+        8198,
+        8576
+      ],
+      "source_sha256": "2f2379145f8755ec80c9af0f2c5622823fcb072ef0a748e4baa7bb4c2842adbd",
+      "target_sha256": "d87d5fbd1015b607093e163e8f3cb7ec4217d8c3b0ae43552dfbfefc3f93b2ed",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P035",
+        "GU-P040",
+        "GU-P057",
+        "GU-P064",
+        "GU-P065",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B005",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        181,
+        232
+      ],
+      "target_range_utf8": [
+        170,
+        236
+      ],
+      "source_sha256": "7a518736d5ef52864614f254910128818dc4718620877c38b5ae5b344c27efe8",
+      "target_sha256": "498902918c0dab0b089696f358b767f20e621d9dc574e0210ab03adf08b86c18",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B006",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        234,
+        501
+      ],
+      "target_range_utf8": [
+        238,
+        931
+      ],
+      "source_sha256": "d7ed3bdf5b6b2060fc5a365a0ccfd9bd67e85d197e01c1d14e5cc0af5e3222da",
+      "target_sha256": "e39077691dc6c8c30c44021c29d2819fbfda8a4b192e1b75cecb6309c95121e5",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B007",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        503,
+        721
+      ],
+      "target_range_utf8": [
+        933,
+        1276
+      ],
+      "source_sha256": "788f18120465b5b84a6152311470a3e9d271a6d7847e1ee71ba637b27ec33229",
+      "target_sha256": "0dc79c2f62432a8da0c1f838963fb8b412ac5b5b96fdf5710041593c27033bdf",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B008",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        723,
+        869
+      ],
+      "target_range_utf8": [
+        1278,
+        1587
+      ],
+      "source_sha256": "a92b1e63ed8f6a14e3c9f7983ae21f1aa50629fc4712c622e8be122b284de2ce",
+      "target_sha256": "5e3040ec4e90d0e59d80f2e63ff33d2ecc8743d7daa4b9233dd3bf036f782ab1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B009",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        871,
+        942
+      ],
+      "target_range_utf8": [
+        1589,
+        1688
+      ],
+      "source_sha256": "8c4a8f4f7d2cbdd63dbc19cb005e93e00d05b5d8cd56307c51fc6a9959efd7e8",
+      "target_sha256": "f418406fc7be3ae19a11d1d02d509f2f0450f8ea9fcbbebd76d8fda73f132888",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B010",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        944,
+        1100
+      ],
+      "target_range_utf8": [
+        1690,
+        1914
+      ],
+      "source_sha256": "46e0ddd4f55ac9db7d38c10deb78228af416c336897880c4c1207cc95745ff78",
+      "target_sha256": "44a002ad25d71d6c06787b47d71d5334c51cd176588da640c18bcc469c97be85",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B011",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        1102,
+        1248
+      ],
+      "target_range_utf8": [
+        1916,
+        2084
+      ],
+      "source_sha256": "beadb262b71e587f026f48361ba578800f58b686a209f1c88cba679ae68f0aed",
+      "target_sha256": "3e654bfcafd2daf9d0f1c53233b23ef13495178cda39c1d981a0871cfbf0738c",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B012",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        1250,
+        1577
+      ],
+      "target_range_utf8": [
+        2086,
+        2494
+      ],
+      "source_sha256": "9a47076c5a6b76659acfcd74064ec7237c62600de2e6c16bae9abf5a5fc04d44",
+      "target_sha256": "cb1c3a97385643cd93914c0d29d3030a6c65808e02e2a6a6de86cc1f14fdfd4d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B013",
+      "unit_id": "OLP-0188",
+      "source_path": "upstream/content/model-theory/basics/theory-of-m.tex",
+      "target_path": "gu/content/model-theory/basics/theory-of-m.tex",
+      "source_range_utf8": [
+        1579,
+        2241
+      ],
+      "target_range_utf8": [
+        2496,
+        3700
+      ],
+      "source_sha256": "b4fb12d4b06fe52a9ce8cf59512c03c7610f9186fd8a16108d6e4a713e54a3ec",
+      "target_sha256": "7532fa06a7c1e70006d1493ce84fb92970fd6ef11358afa6a057ef6eea3fdd5d",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P057",
+        "GU-P065",
+        "GU-P068",
+        "GU-P070",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B004",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        155,
+        210
+      ],
+      "target_range_utf8": [
+        144,
+        219
+      ],
+      "source_sha256": "5c9010e3dc60568bc296e7aec65bceb2b80476adf60c3107144bd3e0f3074556",
+      "target_sha256": "be990311547648020a9034f91a509af9f0729730cc51f62e876e6b4a47e66064",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B005",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        212,
+        1210
+      ],
+      "target_range_utf8": [
+        221,
+        1720
+      ],
+      "source_sha256": "1d3b83c3b59446bf2f96cdc54682987bca88047b94afb3b44bd6c893b079366f",
+      "target_sha256": "b7e6b59e46950e42155ddf4290b188e753a5860eadca6c36199657ac877a603f",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B006",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        1212,
+        1318
+      ],
+      "target_range_utf8": [
+        1722,
+        1908
+      ],
+      "source_sha256": "4ec33ea1fccacc14a6a8976bb37a7290cc9eb2c73aeb8af12aefba150c6bfdc4",
+      "target_sha256": "1872b1f575743aa498fe7cdeecbd7b2543f4c7c76704356d579891513411f9e1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B007",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        1320,
+        1994
+      ],
+      "target_range_utf8": [
+        1910,
+        2980
+      ],
+      "source_sha256": "78ddcd2e834f3089d274da5bb20a16775373e5a6067cb8fe98f5f4b819d22a46",
+      "target_sha256": "92ec0c78532ae7aee8a35e7e120d3097c2d7412636ed284357c4399aa784f2b3",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B008",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        1996,
+        2168
+      ],
+      "target_range_utf8": [
+        2982,
+        3176
+      ],
+      "source_sha256": "f5412f20cda7a640baba158390a1fb00fa1e72d8fac1f4f9116c807af891775d",
+      "target_sha256": "796731df2c1f83e043021ed7597ac79752205a06295bb5490e3953b59ba6fb69",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B009",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        2170,
+        3015
+      ],
+      "target_range_utf8": [
+        3178,
+        4470
+      ],
+      "source_sha256": "3d417732f1703bbc2893e098bd009b8de688338106a0ab12bfb7e6a6e741adfa",
+      "target_sha256": "093514b3d27c67fdc8b49d900365335d6f5b425c65a4259bc70070df6fc34dd9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B010",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        3017,
+        3144
+      ],
+      "target_range_utf8": [
+        4472,
+        4666
+      ],
+      "source_sha256": "d8024660194c422204678dfd8019032f8482d2893cf66dba6f17997294ee7ce2",
+      "target_sha256": "b8c90bc942baad3045172b7a868ff88501f60bb066623add935ea43d21552517",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B011",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        3146,
+        3457
+      ],
+      "target_range_utf8": [
+        4668,
+        5106
+      ],
+      "source_sha256": "b4e35a43cda76ef127043c9f5899661870db60f31f876122c5845153d7c67bd0",
+      "target_sha256": "bab170a3992423dd3d42add0ac0ea5529f4d3c9f3c3ab4f5043874c891599e35",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B012",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        3459,
+        3851
+      ],
+      "target_range_utf8": [
+        5108,
+        5726
+      ],
+      "source_sha256": "0d3b5b77cc0b5427b3e4bde9c2192908268f57b0840880938b4a547ead7c90e7",
+      "target_sha256": "1d709a3ae5de4146a16b87109c3cb4424081fa0a9bdc023d3015776a66af0e98",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B013",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        3853,
+        4149
+      ],
+      "target_range_utf8": [
+        5728,
+        6180
+      ],
+      "source_sha256": "42508a8c149ed0be0d6076d34230f815eec2fa0bd299926ae767e5663565889f",
+      "target_sha256": "f62a28909ca0a1f5d18050e1a9a1e460cd7c5b23497ff155aae7227273d92f97",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B014",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        4151,
+        4361
+      ],
+      "target_range_utf8": [
+        6182,
+        6650
+      ],
+      "source_sha256": "074a17f8cec48477cb762f138b9fb3e05081f1d3bfb4c52624ad3dc3c548ff88",
+      "target_sha256": "75e64ea3b742523622099038df52f0c07fd3d26507a0b381a968f20b3081dba3",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B015",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        4363,
+        4775
+      ],
+      "target_range_utf8": [
+        6652,
+        7468
+      ],
+      "source_sha256": "cee1de684eb2b451053250fd95c30945685d81c2d3ef998b5d7ebbd38cd9c22b",
+      "target_sha256": "c7d89f0d67f786f4aa1f9164544401d76ac12b1163e987cf5003c8447b59a7b8",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B016",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        4777,
+        5184
+      ],
+      "target_range_utf8": [
+        7470,
+        9092
+      ],
+      "source_sha256": "2c9cc6315adf54649eb34899cc87633d8eebeddcf510d3866af36e9cf1862248",
+      "target_sha256": "8a544a3f6e013d0979336e57f6721b78aa81ba8fc50c9597e6834eaab0a3bc11",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B017",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        5186,
+        5234
+      ],
+      "target_range_utf8": [
+        9094,
+        9158
+      ],
+      "source_sha256": "f4b927414e81743d0568648e1755aa92f23f0d0c2f8382b20e78af940d85808d",
+      "target_sha256": "5f984c2c6402f40c35d904535a0c89dd81caed92e78925d857283862c7b9d2ed",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B018",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        5236,
+        5626
+      ],
+      "target_range_utf8": [
+        9160,
+        9770
+      ],
+      "source_sha256": "db1600cf879ef5a5d38c4ea6e5f08566571a484057295fdb5ac2b045aeaa808c",
+      "target_sha256": "cd93f019c813011f35c21bd9b6080cf42f708f1bba50948705bb3ac09ed973ba",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B019",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        5628,
+        6437
+      ],
+      "target_range_utf8": [
+        9772,
+        11844
+      ],
+      "source_sha256": "24d874914af7661debced988f7bc9ec60e21ead0cc8c7bd9e66ecdc5e4bdddf9",
+      "target_sha256": "33f5cd0b8f5a94b7aca533509823df228996bc2c31f628a3f676e8dde63c72b0",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B020",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        6440,
+        6621
+      ],
+      "target_range_utf8": [
+        11847,
+        12107
+      ],
+      "source_sha256": "48785b1703b83428e8eb54950d9ed67e78a63ab7ce3e832d1651467774553d14",
+      "target_sha256": "21e80480f10adf322a9d266298542af52dde71d27a02e97049b88afdb4a74a76",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B021",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        6623,
+        7053
+      ],
+      "target_range_utf8": [
+        12109,
+        12882
+      ],
+      "source_sha256": "d048aaf22142f38fa0fcd06049ff4a4cfb9f67a72089c942d120682c4de27e2b",
+      "target_sha256": "8d941e04f02a9da646bc6383235c63b9df5bfad4f124cd4bd6334cac7bef2963",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B022",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        7055,
+        7467
+      ],
+      "target_range_utf8": [
+        12884,
+        13645
+      ],
+      "source_sha256": "d018dcd3c2c594cb2eb4f9464d2dc7983d0cfc44413e1b9dfa2e20575b95d42d",
+      "target_sha256": "a4ed898c1b76b3a1d525a22ff236ede6db4e1a1e28b0b269637c55767ea767ae",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B023",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        7471,
+        7664
+      ],
+      "target_range_utf8": [
+        13649,
+        13970
+      ],
+      "source_sha256": "18fb0c14680c9baa3801ff2a9841aca21dd2007fffac84f66bc8995b0d9b611d",
+      "target_sha256": "8ffc05cf52f692d1a526f33fc38c846621493e96df3aa8c721a8439db5c80eda",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B024",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        7668,
+        8221
+      ],
+      "target_range_utf8": [
+        13974,
+        14855
+      ],
+      "source_sha256": "8c334191dea5f50333a707645dfb70a6157e3d0849e4e20d0070aaae84b678be",
+      "target_sha256": "f2be74207fea8c50b905b5d5eb12b60aaceb3f0a78d049dc0ffbffa4ff875bc8",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B025",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        8225,
+        9108
+      ],
+      "target_range_utf8": [
+        14859,
+        17306
+      ],
+      "source_sha256": "fcb43b5e3afb8525aa81bcb07d74d73623eed39e2c3777091731d343f330c677",
+      "target_sha256": "a49f693a0ae0b6443886263acb061976c7a42acaffe09ad1b3fab00b8f7fcc38",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B026",
+      "unit_id": "OLP-0189",
+      "source_path": "upstream/content/model-theory/basics/partial-iso.tex",
+      "target_path": "gu/content/model-theory/basics/partial-iso.tex",
+      "source_range_utf8": [
+        9110,
+        9462
+      ],
+      "target_range_utf8": [
+        17308,
+        17892
+      ],
+      "source_sha256": "2ded35f263cb7405c361be1012327d119ca872b382317f99717d42555d6c3fbf",
+      "target_sha256": "d404ec279233316222917b54c7ea7fcaaca4647bbf042cbc1cda4d6dabc3a7e9",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P008",
+        "GU-P016",
+        "GU-P049",
+        "GU-P057",
+        "GU-P062",
+        "GU-P064",
+        "GU-P065",
+        "GU-P067",
+        "GU-P068",
+        "GU-P074",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B004",
+      "unit_id": "OLP-0190",
+      "source_path": "upstream/content/model-theory/basics/dlo.tex",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "source_range_utf8": [
+        155,
+        209
+      ],
+      "target_range_utf8": [
+        144,
+        220
+      ],
+      "source_sha256": "60fae6ce0a51786768acc0f20577d3cc27cf345915ef83b8ba6f2687164e79d9",
+      "target_sha256": "300e617c8c334ef063c7656f569c193faad735f0f34c8ed6bf0210fb7c3ae53e",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P019",
+        "GU-P022",
+        "GU-P031",
+        "GU-P046",
+        "GU-P057",
+        "GU-P064",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B005",
+      "unit_id": "OLP-0190",
+      "source_path": "upstream/content/model-theory/basics/dlo.tex",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "source_range_utf8": [
+        211,
+        829
+      ],
+      "target_range_utf8": [
+        222,
+        977
+      ],
+      "source_sha256": "eae8aa25e1a812edadd8bba85319eea07285f6d1509d6c0a3ea8f953b15c11b3",
+      "target_sha256": "5f5610d43a4b64f83b8b93609336ca105925100296ef0865670fdd2fefb33ff1",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P019",
+        "GU-P022",
+        "GU-P031",
+        "GU-P046",
+        "GU-P057",
+        "GU-P064",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B006",
+      "unit_id": "OLP-0190",
+      "source_path": "upstream/content/model-theory/basics/dlo.tex",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "source_range_utf8": [
+        831,
+        957
+      ],
+      "target_range_utf8": [
+        979,
+        1178
+      ],
+      "source_sha256": "51c2c1cf4d5a43ad89132c96ecb841bc86eaa2cf0a1df8acadc0a6daf9522d86",
+      "target_sha256": "9bad216fcb0fb918ad9785a10ab5f21d2ccbd6c1f76667bef76d2d47e4c5ea87",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P019",
+        "GU-P022",
+        "GU-P031",
+        "GU-P046",
+        "GU-P057",
+        "GU-P064",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B007",
+      "unit_id": "OLP-0190",
+      "source_path": "upstream/content/model-theory/basics/dlo.tex",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "source_range_utf8": [
+        959,
+        1442
+      ],
+      "target_range_utf8": [
+        1180,
+        1955
+      ],
+      "source_sha256": "1bcb3b89f30317971608f8d80622df3f33860c71a3a20797c1b9873abc824d88",
+      "target_sha256": "847c82e1c88d393591ff7f989a88828fc3a24c99af7bbcaf7ce2c932928cadb8",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P019",
+        "GU-P022",
+        "GU-P031",
+        "GU-P046",
+        "GU-P057",
+        "GU-P064",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B008",
+      "unit_id": "OLP-0190",
+      "source_path": "upstream/content/model-theory/basics/dlo.tex",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "source_range_utf8": [
+        1446,
+        2449
+      ],
+      "target_range_utf8": [
+        1959,
+        4344
+      ],
+      "source_sha256": "fe5ce2573424c52cf7042cd13db28e1f6ce7b1ccd7a1ea999087d8670a75e9ee",
+      "target_sha256": "44a86844168ff58633f7eb2d3bdcb2c784a4fe2dbf1851847322e6306cf5cd3a",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P019",
+        "GU-P022",
+        "GU-P031",
+        "GU-P046",
+        "GU-P057",
+        "GU-P064",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B009",
+      "unit_id": "OLP-0190",
+      "source_path": "upstream/content/model-theory/basics/dlo.tex",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "source_range_utf8": [
+        2451,
+        2593
+      ],
+      "target_range_utf8": [
+        4346,
+        4564
+      ],
+      "source_sha256": "e9e7942472fb44fec739ead98570de0a30952275ad815504956e8c0a055abd70",
+      "target_sha256": "08eb5da72e61e6ec20700c95bddcfdc0bfb42059ef2ce977b54cb4a9a3f9992c",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P019",
+        "GU-P022",
+        "GU-P031",
+        "GU-P046",
+        "GU-P057",
+        "GU-P064",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B010",
+      "unit_id": "OLP-0190",
+      "source_path": "upstream/content/model-theory/basics/dlo.tex",
+      "target_path": "gu/content/model-theory/basics/dlo.tex",
+      "source_range_utf8": [
+        2595,
+        3509
+      ],
+      "target_range_utf8": [
+        4566,
+        5963
+      ],
+      "source_sha256": "58fcd7c4d051ac8d3bbce7f691d254499c9a6c3069165e4125a5a1e64807549e",
+      "target_sha256": "d5fc43a7d953d32954c7fad9b7fba72cb6e00ba102796f58b02a700a31a46404",
+      "source_alignment": "same_ordinal_correction_aware_block",
+      "consulted_passage_ids": [
+        "GU-P019",
+        "GU-P022",
+        "GU-P031",
+        "GU-P046",
+        "GU-P057",
+        "GU-P064",
+        "GU-P066",
+        "GU-P068",
+        "GU-P070",
+        "GU-P075",
+        "GU-P077"
+      ],
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ],
+  "samples": [
+    {
+      "segment_id": "OLP-0182-B005",
+      "unit_id": "OLP-0182",
+      "source_sha256": "74d8a8eb9d8c55dfdf31b52f3a27d993a07146da67a3ec97b411cb03c39d7735",
+      "target_sha256": "74fbf195d3dd3cf0e704c893e45d314020caa4627cec9a343e3f5fcdbabf8e00",
+      "reverse_paraphrase": "The material is explicitly incomplete and experimental, adapts Antonelli's model-theory notes minus theories, completeness and compactness already covered elsewhere, needs substantially more pedagogy and exercises, and records a plan to work on this part.",
+      "assessment": "The part driver preserves the editorial status of the model-theory material, its derivation from Aldo Antonelli's notes, the excluded first-order topics, the needed pedagogical additions and the linked work plan. OLMTB-001 repairs only the malformed English planning phrase.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B005",
+      "unit_id": "OLP-0184",
+      "source_sha256": "1bd0d87f76481be1f01582460d3b167e7f07f4cfadef4819dd1d0101b19db28d",
+      "target_sha256": "02c3b800198a712dddd08dd90aa54cf41f2c883c215acd54a03c00f04d61cd06",
+      "reverse_paraphrase": "When L is contained in L-prime, an L-structure can gain interpretations for the extra symbols while keeping the old ones, and an L-prime structure can be reduced by forgetting symbols outside L.",
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B006",
+      "unit_id": "OLP-0184",
+      "source_sha256": "7213ca4e32fbd5250418393286c81b0e7b7acda6c486c4d7c52d9e94a4e32597",
+      "target_sha256": "4c117b2a05a210a47d51457d2330ae1b610c79780f7d3184d7d58ad345ec9184",
+      "reverse_paraphrase": "M is the L-reduct of M-prime exactly when the domains agree and every L-constant, function and predicate receives the same interpretation; conversely M-prime is an expansion to L-prime.",
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B007",
+      "unit_id": "OLP-0184",
+      "source_sha256": "aca4208a5a035b3b816311dd7bdbaf884f936b55e9977526a8d4948495bb42d5",
+      "target_sha256": "3335f62ad25f769ab543356fcc716c01a9adb117004edf02e3d430d827125f0b",
+      "reverse_paraphrase": "A sentence written in the smaller language has the same truth value in a structure and any expansion whose reduct is that structure.",
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B008",
+      "unit_id": "OLP-0184",
+      "source_sha256": "5c1629f4abdb1fa4d97a4d38d8df34d4d015cb746bb0ca99ded7e8572d0f7000",
+      "target_sha256": "f63b1935e4d079684b1d502a5487b5c199586806eb2fe0a2a450db14d0b2df53",
+      "reverse_paraphrase": "The proof is assigned as an exercise.",
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B009",
+      "unit_id": "OLP-0184",
+      "source_sha256": "0d931efbcbc0734d3421c902f2299c0bebea2dd006dec544fb338c35b3369bba",
+      "target_sha256": "dc2141e6e5cf1850c6bfec7ca46c281c8db6858f51b9262ca8061550ed4d3566",
+      "reverse_paraphrase": "The reader is asked to prove the preceding reduct-invariance proposition.",
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0184-B010",
+      "unit_id": "OLP-0184",
+      "source_sha256": "69db6e3b00b6c4d3ce01bfc929ed24236e3060a0a3f9f3b7f1e0c9ed221cb825",
+      "target_sha256": "3b5fe99ec27247256d49a8efa2c8455d9aab2003b414f1ddce22f910c0bd882b",
+      "reverse_paraphrase": "If L-prime adds one n-place predicate P to L and R is an n-place relation on M, the notation M expanded by R denotes the expansion interpreting P as R.",
+      "assessment": "The section preserves the smaller- versus larger-language relation, common domain and interpretations in reducts and expansions, truth invariance for sentences of the smaller language, and the notation for adding one predicate interpreted by R.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0185-B005",
+      "unit_id": "OLP-0185",
+      "source_sha256": "d1952eba659af397a4c8d1c4197c74025254a87c938a9e1e95e496786af0d4c0",
+      "target_sha256": "0d76bf0b0e788a7c21f4315522a09298405d612a4b46596aa99fe13d7195304b",
+      "reverse_paraphrase": "Domain inclusion alone does not make M part of M-prime; the two structures must also agree on the language symbols throughout the shared domain.",
+      "assessment": "The section preserves domain inclusion and agreement on constants, functions and predicates as the exact substructure conditions. OLMTB-002 adds only the nonempty domain condition required by the edition's definition of a first-order structure.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0185-B006",
+      "unit_id": "OLP-0185",
+      "source_sha256": "68d4eea99f75ee5744559dda7bc869c7d2ca2d8262fafad2d02a59a39705ce1e",
+      "target_sha256": "a7d3ddb158f98dd1850bae2a8ac47d5c290beeb420095fa4777901fcc62e9b87",
+      "reverse_paraphrase": "A substructure has an included domain, identical constant values, identical function values on old tuples and identical predicate membership on old tuples; the larger structure is its extension.",
+      "assessment": "The section preserves domain inclusion and agreement on constants, functions and predicates as the exact substructure conditions. OLMTB-002 adds only the nonempty domain condition required by the edition's definition of a first-order structure.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0185-B007",
+      "unit_id": "OLP-0185",
+      "source_sha256": "75e76203caedd3c760c23616fd882ed0dc92264af4c726d44187f2c8364cdb06",
+      "target_sha256": "0331fa9f1b1c8f82c2caa81b5d0e2ef113821135eec1381424bcebad7656891b",
+      "reverse_paraphrase": "In a language with neither constants nor functions, every nonempty subset N induces a substructure by restricting each n-place relation to N to the n-th power.",
+      "assessment": "The section preserves domain inclusion and agreement on constants, functions and predicates as the exact substructure conditions. OLMTB-002 adds only the nonempty domain condition required by the edition's definition of a first-order structure.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B005",
+      "unit_id": "OLP-0186",
+      "source_sha256": "e87dfc400a96644fea31d0f639ead691d67d08b184390d9e6faccc1e41ef314d",
+      "target_sha256": "098a414b0a9de679290c13a5412862a1008574ecc125a0a2d41d9a5e9d7f5fd5",
+      "reverse_paraphrase": "If a sentence set has finite models beyond every prescribed finite size, it also has an infinite model.",
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B006",
+      "unit_id": "OLP-0186",
+      "source_sha256": "03897e437a43670fb636d84b006fb66691dcd4966d8fb3447d4b7c94aa54980e",
+      "target_sha256": "996374a4b209238e404763d98e093dc311be3bb3fec5e8eccc3fb8d99f8513fd",
+      "reverse_paraphrase": "Add countably many constants required to be pairwise distinct; each finite fragment is satisfiable in a sufficiently large finite model, so compactness supplies a model whose infinitely many distinct constant values force an infinite domain.",
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B007",
+      "unit_id": "OLP-0186",
+      "source_sha256": "34c224418501479f3031b5586c67251a935066330ba771a0d9e62951eb730108",
+      "target_sha256": "eaf9ae629463c9532edeb8c899bac36b6524ae753f06e7ac8f48a225cb976707",
+      "reverse_paraphrase": "No sentence of any first-order language is true in exactly those structures whose domains are infinite.",
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0186-B008",
+      "unit_id": "OLP-0186",
+      "source_sha256": "ac032b553cfa4866d4e1de9d433fc42ea62d189eabea83d3479817255c5e2094",
+      "target_sha256": "b22d2547567a8a971ccd17052fe8238b0859b81160e8f192326ea303ad748fa5",
+      "reverse_paraphrase": "Otherwise the negation of such a sentence would have arbitrarily large finite models but no infinite model, contradicting overspill.",
+      "assessment": "The section preserves the overspill argument: unbounded finite models make the distinct-constant theory finitely satisfiable, compactness yields an infinite model, and therefore no first-order sentence defines exactly the infinite structures.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B005",
+      "unit_id": "OLP-0187",
+      "source_sha256": "1e4b7884796c05180582984954a92522dc5c322332bba406c097b9c90348b91c",
+      "target_sha256": "8a920d7d5efa74dae65d9d5f912a70af5d92053fa626322caa2822ef15a534d0",
+      "reverse_paraphrase": "Agreement on all first-order sentences is elementary equivalence, which may hold even between structures of different cardinalities; isomorphism is the stricter sameness of all structural features up to renaming objects.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B006",
+      "unit_id": "OLP-0187",
+      "source_sha256": "b56478f1d6e65acc82b339cc109d924cee772da1bbfe47ef983defe87410fcc8",
+      "target_sha256": "21761cd71004758d4bd55174069a2ccbdc8beaa68e0da46062bd2adf2d940b3c",
+      "reverse_paraphrase": "Two structures in the same language are elementarily equivalent exactly when they satisfy the same sentence of that language.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B007",
+      "unit_id": "OLP-0187",
+      "source_sha256": "4bcf576e72f3f794b7dbc3771a59801dc86ec70c3e69d490aea8aea74d3318f2",
+      "target_sha256": "bf4a599e2668d8db963dd5a4097b5703a581ebb54bb6350f18dbb0619fff6ffe",
+      "reverse_paraphrase": "An isomorphism is a bijection preserving constants, predicate membership in both directions and function values for every tuple.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B008",
+      "unit_id": "OLP-0187",
+      "source_sha256": "d62579718ed9bfe0f358985238a23b38e814ea6faf56a257a53f7c42f224f97e",
+      "target_sha256": "d092c5dbcd94bc331735d7fa07d24f02f53f802b3a68ad54f91049cf704777b8",
+      "reverse_paraphrase": "Isomorphic structures are elementarily equivalent.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B009",
+      "unit_id": "OLP-0187",
+      "source_sha256": "7cdad33be4d276a4fc54ea65ffb5538bce03cb61442b51f9b4c4169ed643f0d3",
+      "target_sha256": "8723577a77372e3ffefe052d919a994528dbea2cc0724aa6eb8b61c61f8f2a37",
+      "reverse_paraphrase": "Composing an assignment with the isomorphism preserves every term value and formula satisfaction; induction on terms handles constants, variables and compound terms, using the target structure's function interpretation and the function-preservation clause.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B010",
+      "unit_id": "OLP-0187",
+      "source_sha256": "3d8707f9b8c898693b0a8d8a1c976075ea1c1b38d96dfd0338be973a30105b47",
+      "target_sha256": "4affad328a1bbd36dbbac3e6d1323329f0b0c84fe6ba0d97ab7a7087b60a2d12",
+      "reverse_paraphrase": "For a sentence, assignments do not matter, so the formula-preservation result directly yields identical truth in the two structures.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B011",
+      "unit_id": "OLP-0187",
+      "source_sha256": "b67d5d66c33b0e2c99ce5f223e18bb9e42e2e3a4124950b56d82d44dc44b03f9",
+      "target_sha256": "d543143f88cc4022a75ed1f44ec9e91d96bb338504ef1af447ba53071daa7cfe",
+      "reverse_paraphrase": "The exercise asks for the omitted induction on formulas and for an account of where each of the five isomorphism properties enters.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B012",
+      "unit_id": "OLP-0187",
+      "source_sha256": "e0acbf3ca86722b83cc12f53a59dc9c0b1c2542835b7f31eacefe55aca499171",
+      "target_sha256": "808fe3a99688d22ba45f861f0abbd44658a91a2ff92dcc93b250e0303e12d8f4",
+      "reverse_paraphrase": "An automorphism of M is an isomorphism from M onto itself.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0187-B013",
+      "unit_id": "OLP-0187",
+      "source_sha256": "2f2379145f8755ec80c9af0f2c5622823fcb072ef0a748e4baa7bb4c2842adbd",
+      "target_sha256": "d87d5fbd1015b607093e163e8f3cb7ec4217d8c3b0ae43552dfbfefc3f93b2ed",
+      "reverse_paraphrase": "The exercise asks the reader to prove that any definable subset of a structure is invariant under every automorphism of that structure.",
+      "assessment": "The section preserves the contrast between elementary equivalence and isomorphism, all five isomorphism conditions, the induction proving preservation of terms and formulas, and the automorphism consequence for definable sets. OLMTB-003 and OLMTB-004 repair only the target-structure interpretation and a missing parenthesis.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B006",
+      "unit_id": "OLP-0188",
+      "source_sha256": "d7ed3bdf5b6b2060fc5a365a0ccfd9bd67e85d197e01c1d14e5cc0af5e3222da",
+      "target_sha256": "e39077691dc6c8c30c44021c29d2819fbfda8a4b192e1b75cecb6309c95121e5",
+      "reverse_paraphrase": "The theory of a structure is the set of all sentences it makes true, and it is deductively a theory because every semantic consequence remains true in that structure.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B007",
+      "unit_id": "OLP-0188",
+      "source_sha256": "788f18120465b5b84a6152311470a3e9d271a6d7847e1ee71ba637b27ec33229",
+      "target_sha256": "0dc79c2f62432a8da0c1f838963fb8b412ac5b5b96fdf5710041593c27033bdf",
+      "reverse_paraphrase": "Theory M is defined as exactly the set of sentences A such that M satisfies A.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B008",
+      "unit_id": "OLP-0188",
+      "source_sha256": "a92b1e63ed8f6a14e3c9f7983ae21f1aa50629fc4712c622e8be122b284de2ce",
+      "target_sha256": "5e3040ec4e90d0e59d80f2e63ff33d2ecc8743d7daa4b9233dd3bf036f782ab1",
+      "reverse_paraphrase": "The word theory is also used informally for sentence sets with an intended interpretation even when they are not deductively closed.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B009",
+      "unit_id": "OLP-0188",
+      "source_sha256": "8c4a8f4f7d2cbdd63dbc19cb005e93e00d05b5d8cd56307c51fc6a9959efd7e8",
+      "target_sha256": "f418406fc7be3ae19a11d1d02d509f2f0450f8ea9fcbbebd76d8fda73f132888",
+      "reverse_paraphrase": "The theory of every structure is complete.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B010",
+      "unit_id": "OLP-0188",
+      "source_sha256": "46e0ddd4f55ac9db7d38c10deb78228af416c336897880c4c1207cc95745ff78",
+      "target_sha256": "44a002ad25d71d6c06787b47d71d5334c51cd176588da640c18bcc469c97be85",
+      "reverse_paraphrase": "For every sentence A, the structure satisfies either A or its negation, so its theory contains one of those two sentences.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B011",
+      "unit_id": "OLP-0188",
+      "source_sha256": "beadb262b71e587f026f48361ba578800f58b686a209f1c88cba679ae68f0aed",
+      "target_sha256": "3e654bfcafd2daf9d0f1c53233b23ef13495178cda39c1d981a0871cfbf0738c",
+      "reverse_paraphrase": "Any structure N satisfying every sentence in Theory M is elementarily equivalent to M.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B012",
+      "unit_id": "OLP-0188",
+      "source_sha256": "9a47076c5a6b76659acfcd74064ec7237c62600de2e6c16bae9abf5a5fc04d44",
+      "target_sha256": "cb1c3a97385643cd93914c0d29d3030a6c65808e02e2a6a6de86cc1f14fdfd4d",
+      "reverse_paraphrase": "Theory M is included in Theory N; if N satisfies A it cannot satisfy not-A, so completeness of Theory M forces A into Theory M, giving the reverse inclusion and elementary equivalence.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0188-B013",
+      "unit_id": "OLP-0188",
+      "source_sha256": "b4fb12d4b06fe52a9ce8cf59512c03c7610f9186fd8a16108d6e4a713e54a3ec",
+      "target_sha256": "7532fa06a7c1e70006d1493ce84fb92970fd6ef11358afa6a057ef6eea3fdd5d",
+      "reverse_paraphrase": "The real order is uncountable, but its consistent theory has a countable model S by Löwenheim–Skolem; S is elementarily equivalent yet not isomorphic to the real order, so the converse of isomorphism implying elementary equivalence fails.",
+      "assessment": "The section preserves the theory of a structure as its true sentences, formal and informal uses of theory, completeness of that theory, elementary equivalence of its models, and the countable model of the real order's theory. The source's documented \\Sat/ negated-satisfaction syntax is intentionally preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B005",
+      "unit_id": "OLP-0189",
+      "source_sha256": "1d3b83c3b59446bf2f96cdc54682987bca88047b94afb3b44bd6c893b079366f",
+      "target_sha256": "b7e6b59e46950e42155ddf4290b188e753a5860eadca6c36199657ac877a603f",
+      "reverse_paraphrase": "A partial isomorphism is a finite partial function from M to N that is injective and preserves every defined constant value, predicate tuple and function value on its domain.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B006",
+      "unit_id": "OLP-0189",
+      "source_sha256": "4ec33ea1fccacc14a6a8976bb37a7290cc9eb2c73aeb8af12aefba150c6bfdc4",
+      "target_sha256": "1872b1f575743aa498fe7cdeecbd7b2543f4c7c76704356d579891513411f9e1",
+      "reverse_paraphrase": "The empty function is a partial isomorphism between any two structures.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B007",
+      "unit_id": "OLP-0189",
+      "source_sha256": "78ddcd2e834f3089d274da5bb20a16775373e5a6067cb8fe98f5f4b819d22a46",
+      "target_sha256": "92ec0c78532ae7aee8a35e7e120d3097c2d7412636ed284357c4399aa784f2b3",
+      "reverse_paraphrase": "M and N are partially isomorphic when a nonempty family of partial isomorphisms can always be extended to include any chosen element of M in a domain and any chosen element of N in a range.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B008",
+      "unit_id": "OLP-0189",
+      "source_sha256": "f5412f20cda7a640baba158390a1fb00fa1e72d8fac1f4f9116c807af891775d",
+      "target_sha256": "796731df2c1f83e043021ed7597ac79752205a06295bb5490e3953b59ba6fb69",
+      "reverse_paraphrase": "Enumerable partially isomorphic structures are isomorphic.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B009",
+      "unit_id": "OLP-0189",
+      "source_sha256": "3d417732f1703bbc2893e098bd009b8de688338106a0ab12bfb7e6a6e741adfa",
+      "target_sha256": "093514b3d27c67fdc8b49d900365335d6f5b425c65a4259bc70070df6fc34dd9",
+      "reverse_paraphrase": "Enumerate both domains, alternately use Forth and Back to build an increasing chain of partial isomorphisms covering successive elements on each side, and take their union to obtain a total isomorphism.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B010",
+      "unit_id": "OLP-0189",
+      "source_sha256": "d8024660194c422204678dfd8019032f8482d2893cf66dba6f17997294ee7ce2",
+      "target_sha256": "b8c90bc942baad3045172b7a868ff88501f60bb066623add935ea43d21552517",
+      "reverse_paraphrase": "The exercise asks for the detailed verification that the union of the constructed chain is an isomorphism.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B011",
+      "unit_id": "OLP-0189",
+      "source_sha256": "b4e35a43cda76ef127043c9f5899661870db60f31f876122c5845153d7c67bd0",
+      "target_sha256": "bab170a3992423dd3d42add0ac0ea5529f4d3c9f3c3ab4f5043874c891599e35",
+      "reverse_paraphrase": "For structures in a language containing predicates but neither functions nor constants, partial isomorphism implies elementary equivalence.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B012",
+      "unit_id": "OLP-0189",
+      "source_sha256": "0d3b5b77cc0b5427b3e4bde9c2192908268f57b0840880938b4a547ead7c90e7",
+      "target_sha256": "1d709a3ae5de4146a16b87109c3cb4424081fa0a9bdc023d3015776a66af0e98",
+      "reverse_paraphrase": "Induction on formulas shows that tuples paired by a partial isomorphism satisfy the same formulas under the corresponding assignments; the empty-tuple case gives elementary equivalence.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B013",
+      "unit_id": "OLP-0189",
+      "source_sha256": "42508a8c149ed0be0d6076d34230f815eec2fa0bd299926ae767e5663565889f",
+      "target_sha256": "f62a28909ca0a1f5d18050e1a9a1e460cd7c5b23497ff155aae7227273d92f97",
+      "reverse_paraphrase": "With function symbols present, the argument instead uses the isomorphism induced between the substructures generated by the paired tuples.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B014",
+      "unit_id": "OLP-0189",
+      "source_sha256": "074a17f8cec48477cb762f138b9fb3e05081f1d3bfb4c52624ad3dc3c548ff88",
+      "target_sha256": "75e64ea3b742523622099038df52f0c07fd3d26507a0b381a968f20b3081dba3",
+      "reverse_paraphrase": "The previous result can be stratified by matching quantifier nesting depth with the number of permitted extensions of partial isomorphisms.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B015",
+      "unit_id": "OLP-0189",
+      "source_sha256": "cee1de684eb2b451053250fd95c30945685d81c2d3ef998b5d7ebbd38cd9c22b",
+      "target_sha256": "c7d89f0d67f786f4aa1f9164544401d76ac12b1163e987cf5003c8447b59a7b8",
+      "reverse_paraphrase": "Quantifier rank is maximum nested-quantifier depth, and n-equivalent structures agree on every sentence whose quantifier rank is at most n.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B016",
+      "unit_id": "OLP-0189",
+      "source_sha256": "2c9cc6315adf54649eb34899cc87633d8eebeddcf510d3866af36e9cf1862248",
+      "target_sha256": "8a544a3f6e013d0979336e57f6721b78aa81ba8fc50c9597e6834eaab0a3bc11",
+      "reverse_paraphrase": "For a finite language with only finitely many predicate symbols and no functions or constants, there are only finitely many sentences of bounded quantifier rank up to logical equivalence.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B017",
+      "unit_id": "OLP-0189",
+      "source_sha256": "f4b927414e81743d0568648e1755aa92f23f0d0c2f8382b20e78af940d85808d",
+      "target_sha256": "5f984c2c6402f40c35d904535a0c89dd81caed92e78925d857283862c7b9d2ed",
+      "reverse_paraphrase": "The proposition is proved by induction on n.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B018",
+      "unit_id": "OLP-0189",
+      "source_sha256": "db1600cf879ef5a5d38c4ea6e5f08566571a484057295fdb5ac2b045aeaa808c",
+      "target_sha256": "cd93f019c813011f35c21bd9b6080cf42f708f1bba50948705bb3ac09ed973ba",
+      "reverse_paraphrase": "M to the less-than-omega power denotes all finite sequences from its domain; bold letters range over them, and appending a to bold-a is written by juxtaposition.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B019",
+      "unit_id": "OLP-0189",
+      "source_sha256": "24d874914af7661debced988f7bc9ec60e21ead0cc8c7bd9e66ecdc5e4bdddf9",
+      "target_sha256": "33f5cd0b8f5a94b7aca533509823df228996bc2c31f628a3f676e8dde63c72b0",
+      "reverse_paraphrase": "I-zero says equal-length tuples satisfy the same atomic formulas, with tuple length k independent of the recursion rank; I-n-plus-one requires matching one-element extensions in both directions.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B020",
+      "unit_id": "OLP-0189",
+      "source_sha256": "48785b1703b83428e8eb54950d9ed67e78a63ab7ce3e832d1651467774553d14",
+      "target_sha256": "21e80480f10adf322a9d266298542af52dde71d27a02e97049b88afdb4a74a76",
+      "reverse_paraphrase": "M is approximately-n N when I-n holds of the two empty sequences.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B021",
+      "unit_id": "OLP-0189",
+      "source_sha256": "d048aaf22142f38fa0fcd06049ff4a4cfb9f67a72089c942d120682c4de27e2b",
+      "target_sha256": "8d941e04f02a9da646bc6383235c63b9df5bfad4f124cd4bd6334cac7bef2963",
+      "reverse_paraphrase": "I-n related tuples satisfy the same formulas of quantifier rank at most n, and in a finite relational language the converse holds as well.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B022",
+      "unit_id": "OLP-0189",
+      "source_sha256": "d018dcd3c2c594cb2eb4f9464d2dc7983d0cfc44413e1b9dfa2e20575b95d42d",
+      "target_sha256": "a4ed898c1b76b3a1d525a22ff236ede6db4e1a1e28b0b269637c55767ea767ae",
+      "reverse_paraphrase": "The forward implication follows by induction on formulas; the converse uses induction on n and finiteness, up to equivalence, of formulas at each bounded rank.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B023",
+      "unit_id": "OLP-0189",
+      "source_sha256": "18fb0c14680c9baa3801ff2a9841aca21dd2007fffac84f66bc8995b0d9b611d",
+      "target_sha256": "8ffc05cf52f692d1a526f33fc38c846621493e96df3aa8c721a8439db5c80eda",
+      "reverse_paraphrase": "At rank zero, agreement on all quantifier-free formulas yields agreement on atomic formulas, which is exactly I-zero.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B024",
+      "unit_id": "OLP-0189",
+      "source_sha256": "8c334191dea5f50333a707645dfb70a6157e3d0849e4e20d0070aaae84b678be",
+      "target_sha256": "f2be74207fea8c50b905b5d5eb12b60aaceb3f0a78d049dc0ffbffa4ff875bc8",
+      "reverse_paraphrase": "At rank n-plus-one, it suffices in each direction to match any added element by one whose extended tuple agrees on every formula of rank at most n.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B025",
+      "unit_id": "OLP-0189",
+      "source_sha256": "fcb43b5e3afb8525aa81bcb07d74d73623eed39e2c3777091731d343f330c677",
+      "target_sha256": "a49f693a0ae0b6443886263acb061976c7a42acaffe09ad1b3fab00b8f7fcc38",
+      "reverse_paraphrase": "For a chosen a, conjoin one satisfied representative from each bounded-rank logical-equivalence class; the matching existential sentence supplies b in N, and satisfying that conjunction makes the extended tuples agree on every rank-at-most-n formula, with the reverse direction symmetric.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0189-B026",
+      "unit_id": "OLP-0189",
+      "source_sha256": "2ded35f263cb7405c361be1012327d119ca872b382317f99717d42555d6c3fbf",
+      "target_sha256": "d404ec279233316222917b54c7ea7fcaaca4647bbf042cbc1cda4d6dabc3a7e9",
+      "reverse_paraphrase": "For finite purely relational languages, approximate-n and n-equivalence coincide, and full elementary equivalence is equivalent to approximate-n for every n.",
+      "assessment": "The section preserves partial isomorphisms, the back-and-forth construction of an isomorphism for enumerable structures, elementary equivalence in relational languages, quantifier rank, the recursive I_n relations and their equivalence with n-equivalence. OLMTB-005 through OLMTB-007 resolve the relational-language conflict, the tuple-length variable collision and the finite-conjunction argument.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B005",
+      "unit_id": "OLP-0190",
+      "source_sha256": "eae8aa25e1a812edadd8bba85319eea07285f6d1509d6c0a3ea8f953b15c11b3",
+      "target_sha256": "5f5610d43a4b64f83b8b93609336ca105925100296ef0865670fdd2fefb33ff1",
+      "reverse_paraphrase": "A dense linear order without endpoints has one binary predicate less-than satisfying irreflexivity, transitivity, trichotomy, elements above and below every point, and a point strictly between every ordered pair.",
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B006",
+      "unit_id": "OLP-0190",
+      "source_sha256": "51c2c1cf4d5a43ad89132c96ecb841bc86eaa2cf0a1df8acadc0a6daf9522d86",
+      "target_sha256": "9bad216fcb0fb918ad9785a10ab5f21d2ccbd6c1f76667bef76d2d47e4c5ea87",
+      "reverse_paraphrase": "Any two enumerable dense linear orders without endpoints are isomorphic.",
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B007",
+      "unit_id": "OLP-0190",
+      "source_sha256": "1bcb3b89f30317971608f8d80622df3f33860c71a3a20797c1b9873abc824d88",
+      "target_sha256": "847c82e1c88d393591ff7f989a88828fc3a24c99af7bbcaf7ce2c932928cadb8",
+      "reverse_paraphrase": "Take all partial isomorphisms between the two orders; the empty map makes this family nonempty, and proving Back and Forth reduces the theorem to the earlier enumerable partial-isomorphism theorem.",
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B008",
+      "unit_id": "OLP-0190",
+      "source_sha256": "fe5ce2573424c52cf7042cd13db28e1f6ce7b1ccd7a1ea999087d8670a75e9ee",
+      "target_sha256": "44a86844168ff58633f7eb2d3bdcb2c784a4fe2dbf1851847322e6306cf5cd3a",
+      "reverse_paraphrase": "For Forth, keep an already mapped element fixed, choose any target when the map is empty, and otherwise choose below the first, above the last or between consecutive images; density and the lack of endpoints guarantee the choice, and adjoining the pair preserves partial isomorphism.",
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B009",
+      "unit_id": "OLP-0190",
+      "source_sha256": "e9e7942472fb44fec739ead98570de0a30952275ad815504956e8c0a055abd70",
+      "target_sha256": "08eb5da72e61e6ec20700c95bddcfdc0bfb42059ef2ce977b54cb4a9a3f9992c",
+      "reverse_paraphrase": "The exercise asks for the analogous verification of the Back property.",
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0190-B010",
+      "unit_id": "OLP-0190",
+      "source_sha256": "58fcd7c4d051ac8d3bbce7f691d254499c9a6c3069165e4125a5a1e64807549e",
+      "target_sha256": "d5fc43a7d953d32954c7fad9b7fba72cb6e00ba102796f58b02a700a31a46404",
+      "reverse_paraphrase": "Every enumerable dense linear order without endpoints is isomorphic to the rational order; a countable model of the real order's theory is therefore isomorphic to the rationals, making the real and rational orders elementarily equivalent, also obtainable directly by back-and-forth.",
+      "assessment": "The section preserves all six axioms for dense linear orders without endpoints, Cantor's isomorphism theorem for enumerable such orders, its back-and-forth proof, and the elementary equivalence of the rational and real orders. OLMTB-008 completes the Forth case split without altering its construction.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: frame-completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{fra}
+
+\olsection{ફ્રેમ-પૂર્ણતા}
+
+જ્યારે આપણે બતાવીએ કે આપેલા તર્કનું કૅનોનિકલ નિદર્શન અનુરૂપ ફ્રેમ
+ગુણધર્મ ધરાવે છે, ત્યારે \Log{K}નો પૂર્ણતા પ્રમેય બીજા મોડલ તંત્રો
+સુધી વિસ્તારી શકાય છે.
+
+\begin{thm}\ollabel{thm:completeframeprops}
+  જો સામાન્ય મોડલ તર્ક $\Sigma$માં \olref{tab:correspondencetable}ની
+  ડાબી બાજુનાં !!{formula}s પૈકી કોઈ એક હોય, તો~$\Sigma$નું કૅનોનિકલ
+  નિદર્શન જમણી બાજુનો અનુરૂપ ગુણધર્મ ધરાવે છે.
+\end{thm}
+
+\begin{table}[htp]
+  \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      \emph{જો $\Sigma$માં \dots{} હોય} & \emph{તો $\Sigma$નું કૅનોનિકલ
+        નિદર્શન આ પ્રકારનું છે:} \\
+      \hline \hline
+      \Ax{D}:\;\; $\Box!A \lif \Diamond !A$ & \quad સિરિયલ; \\
+      \hline
+      \Ax{T}:\;\; $\Box!A \lif !A$ &\quad સ્વપ્રતિબિંબિત;\\
+      \hline
+      \Ax{B}: \;\;$!A \lif \Box\Diamond!A$ &\quad સંમિત; \\
+      \hline
+      \Ax{4}: \;\; $\Box!A \lif \Box\Box!A$ & \quad પરંપરિત; \\
+      \hline
+      \Ax{5}: \;\; $\Diamond !A \lif \Box\Diamond!A$& \quad યુક્લિડિયન.\\
+      \hline
+    \end{tabular}
+    \caption{મૂળભૂત અનુરૂપતાની હકીકતો.}
+    \ollabel{tab:correspondencetable}
+\end{table}
+
+\begin{proof}
+  આ દરેક કિસ્સો ક્રમે લઈએ.
+
+  ધારો કે $\Sigma$માં \Ax{D} છે, અને $\Delta \in W^\Sigma$ લો.
+  એવું $\Delta'$ છે કે $R^\Sigma \Delta\Delta'$ તે બતાવવું છે.
+  $\Box^{-1}\Delta$ એ $\Sigma$-સુસંગત છે તે બતાવવું પૂરતું છે:
+  ત્યાર પછી લિન્ડનબાઉમના સહાયક પ્રમેયથી એવો પૂર્ણ
+  $\Sigma$-સુસંગત ગણ $\Delta' \supseteq \Box^{-1}\Delta$ મળે છે,
+  અને $R^\Sigma$ની વ્યાખ્યા
+  \iftag{prvBox}{}{અને \olref[mod]{lem:box-iff-diamond} }મુજબ
+  $R^\Sigma \Delta\Delta'$. હવે વિરોધ માટે ધારો કે
+  $\Box^{-1}\Delta$ એ $\Sigma$-સુસંગત \emph{નથી}, એટલે કે
+  $\Box^{-1}\Delta \Proves[\Sigma] \lfalse$.
+  \olref[mod]{lem:box2} મુજબ $\Delta \Proves[\Sigma]
+  \Box\lfalse$; અને $\Sigma$માં \Ax{D} હોવાથી
+  $\Delta \Proves[\Sigma] \Diamond\lfalse$ પણ મળે છે.
+  પરંતુ $\Sigma$ સામાન્ય હોવાથી $\Sigma \Proves
+  \lnot\Diamond \lfalse$ (\olref[prf][nor]{prop:notDiamondBot});
+  તેથી $\Delta \Proves[\Sigma] \lnot\Diamond \lfalse$ પણ,
+  જે~$\Delta$ની સુસંગતતાનો વિરોધ કરે છે.
+
+  હવે ધારો કે $\Sigma$માં \Ax{T} છે, અને $\Delta \in W^\Sigma$
+  લો. $R^\Sigma \Delta\Delta$, એટલે કે
+  \iftag{prvBox}{}{\olref[mod]{lem:box-iff-diamond} મુજબ}%
+  $\Box^{-1}\Delta \subseteq \Delta$, બતાવવું છે. પરંતુ
+  $\Box!A \in \Delta$ હોય તો \Ax{T}થી $!A \in \Delta$ પણ,
+  જેમ જોઈતું હતું.
+
+  હવે ધારો કે $\Sigma$માં \Ax{B} છે, અને $\Delta$,
+  $\Delta' \in W^\Sigma$ માટે $R^\Sigma \Delta\Delta'$.
+  $R^\Sigma \Delta'\Delta$ બતાવવું છે, એટલે કે
+  \iftag{prvBox}{$\Box^{-1}\Delta' \subseteq \Delta$.
+    \olref[mod]{lem:box-iff-diamond} મુજબ આ સમકક્ષ છે}{}
+  $\Diamond\Delta \subseteq \Delta'$. તેથી $!A \in \Delta$
+  ધારો. \Ax{B}થી $\Box\Diamond!A \in \Delta$ પણ.
+  $R^\Sigma \Delta\Delta'$ની પૂર્વધારણા
+  \iftag{prvBox}{}{અને \olref[mod]{lem:box-iff-diamond}} મુજબ
+  $\Box^{-1}\Delta \subseteq \Delta'$; તેથી જરૂરી મુજબ
+  $\Diamond!A \in \Delta'$.
+
+  હવે ધારો કે $\Sigma$માં \Ax{4} છે, અને $R^\Sigma
+  \Delta_1\Delta_2$ તથા $R^\Sigma \Delta_2\Delta_3$.
+  $R^\Sigma \Delta_1\Delta_3$ બતાવવું છે. પૂર્વધારણા
+  \iftag{prvBox}{}{અને \olref[mod]{lem:box-iff-diamond}} મુજબ
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$ અને
+  $\Box^{-1}\Delta_2 \subseteq \Delta_3$ બંને મળે છે.
+  $R^\Sigma \Delta_1\Delta_3$ માટે
+  $\Box^{-1}\Delta_1 \subseteq \Delta_3$ બતાવવું પૂરતું છે.
+  તેથી $!B \in \Box^{-1}\Delta_1$, એટલે કે
+  $\Box!B \in \Delta_1$, લો. \Ax{4}થી
+  $\Box\Box!B \in \Delta_1$ પણ; પછી પૂર્વધારણાથી પહેલાં
+  $\Box!B \in \Delta_2$ અને ત્યાર બાદ $!B \in \Delta_3$,
+  જેમ જોઈતું હતું.
+
+  હવે ધારો કે $\Sigma$માં \Ax{5} છે, અને $R^\Sigma
+  \Delta_1\Delta_2$ તથા $R^\Sigma \Delta_1\Delta_3$.
+  $R^\Sigma \Delta_2\Delta_3$ બતાવવું છે. પહેલી પૂર્વધારણાથી
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$
+  \iftag{prvBox}{}{\olref[mod]{lem:box-iff-diamond} મુજબ} મળે છે;
+  બીજી પૂર્વધારણા $\Diamond\Delta_3 \subseteq \Delta_1$ને
+  સમકક્ષ છે\iftag{prvBox}{,
+    \olref[mod]{lem:box-iff-diamond} મુજબ}{}.
+  $R^\Sigma \Delta_2\Delta_3$ બતાવવા
+  \iftag{prvBox}{\olref[mod]{lem:box-iff-diamond} મુજબ
+    એટલું પૂરતું છે કે}{આપણે બતાવવું પડશે કે}%
+  $\Diamond\Delta_3 \subseteq \Delta_2$.
+  તેથી $\Diamond!A \in \Diamond\Delta_3$, એટલે કે
+  $!A \in \Delta_3$, લો. બીજી પૂર્વધારણાથી
+  $\Diamond!A \in \Delta_1$ અને \Ax{5}થી
+  $\Box\Diamond!A \in \Delta_1$ પણ. હવે પહેલી પૂર્વધારણાથી
+  $\Diamond!A \in \Delta_2$, જેમ જોઈતું હતું.
+  \end{proof}
+
+પરિણામ તરીકે અનેક તંત્રોના પૂર્ણતા-પરિણામો મળે છે. દાખલા તરીકે,
+$\Log{S5} = \Log{KT5} = \Log{KTB4}$ એ બધાં સ્વપ્રતિબિંબિત અને
+યુક્લિડિયન નિદર્શનોના વર્ગને અનુલક્ષીને પૂર્ણ છે; આ વર્ગ બધાં
+સ્વપ્રતિબિંબિત, સંમિત અને પરંપરિત નિદર્શનોના વર્ગ સમાન છે.
+
+\begin{thm}\ollabel{thm:generaldet}
+  $\mClass{C}_\Ax{D}$, $\mClass{C}_\Ax{T}$,
+  $\mClass{C}_\Ax{B}$, $\mClass{C}_\Ax{4}$ અને
+  $\mClass{C}_\Ax{5}$ અનુક્રમે બધાં સિરિયલ, સ્વપ્રતિબિંબિત,
+  સંમિત, પરંપરિત અને યુક્લિડિયન નિદર્શનોના વર્ગો હોય. ત્યારે
+  \Ax{D}, \Ax{T}, \Ax{B}, \Ax{4} અને \Ax{5}માંથી કોઈપણ
+  સ્કીમા $!A_1$, \dots, $!A_n$ માટે તંત્ર
+  $\Log{K}!A_1 \dots !A_n$ નિદર્શનોના વર્ગ
+  $\mClass{C} = \mClass{C}_{!A_1} \cap \dots
+  \cap \mClass{C}_{!A_n}$ વડે નિર્ધારિત થાય છે.
+\end{thm}
+
+\begin{prop}
+  ધારો કે $\Sigma$ સામાન્ય મોડલ તર્ક છે. ત્યારે:
+  \begin{enumerate}
+  \item\ollabel{prop:anotherfive-a}%
+    જો $\Sigma$માં સ્કીમા $\Diamond!A \lif \Box
+    !A$ હોય, તો $\Sigma$નું કૅનોનિકલ નિદર્શન આંશિક વિધેયાત્મક છે.
+  \item જો $\Sigma$માં સ્કીમા $\Diamond!A \liff \Box
+    !A$ હોય, તો $\Sigma$નું કૅનોનિકલ નિદર્શન વિધેયાત્મક છે.
+  \item જો $\Sigma$માં સ્કીમા $\Box\Box!A \lif \Box
+    !A$ હોય, તો $\Sigma$નું કૅનોનિકલ નિદર્શન નબળે સઘન છે.
+  \end{enumerate}
+(આ ફ્રેમ ગુણધર્મોની વ્યાખ્યાઓ માટે \olref[frd][acc]{tab:anotherfive}
+  જુઓ).
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item ધારો કે $\Sigma$માં સ્કીમા $\Diamond !A \lif
+    \Box !A$ છે. $R^\Sigma$ આંશિક વિધેયાત્મક છે તે બતાવવા
+    કોઈપણ $\Delta_1$, $\Delta_2$, $\Delta_3 \in W^\Sigma$
+    માટે $R^\Sigma \Delta_1\Delta_2$ અને $R^\Sigma
+    \Delta_1\Delta_3$ હોય તો $\Delta_2=\Delta_3$ તે સાબિત કરવું
+    પડશે. $R^\Sigma \Delta_1\Delta_2$ હોવાથી
+    $\Box^{-1}\Delta_1 \subseteq \Delta_2$, અને
+    $R^\Sigma \Delta_1\Delta_3$ હોવાથી
+    $\Box^{-1}\Delta_1 \subseteq \Delta_3$ પણ
+    \iftag{prvBox}{}{, બંને \olref[mod]{lem:box-iff-diamond} મુજબ}.
+    $\Delta_2=\Delta_3$ માટે બે સમાવેશ
+    $\Delta_2 \subseteq \Delta_3$ અને $\Delta_3 \subseteq
+    \Delta_2$ સ્થાપિત કરવાનું પૂરતું છે. પહેલા સમાવેશ માટે
+    $!A \in \Delta_2$ લો; ત્યારે $\Diamond!A \in \Delta_1$,
+    અને સ્કીમા તથા $\Delta_1$ની નિષ્પત્તિ હેઠળની બંધતાથી
+    $\Box!A \in \Delta_1$ પણ. તેથી $R^\Sigma
+    \Delta_1\Delta_3$ની પૂર્વધારણાથી $!A \in \Delta_3$.
+    બીજો સમાવેશ એ જ રીતે મળે છે.
+
+  \item આ મુદ્દા~\olref{prop:anotherfive-a} અને
+    \olref{thm:completeframeprops}માં સિરિયલતાના પ્રમાણમાંથી
+    તરત ફલિત થાય છે.
+
+  \item ધારો કે $\Sigma$માં સ્કીમા $\Box\Box!A \lif \Box!A$
+    છે. $R^\Sigma$ નબળે સઘન છે તે બતાવવા $R^\Sigma
+    \Delta_1\Delta_2$ લો. એવું પૂર્ણ $\Sigma$-સુસંગત
+    ગણ $\Delta_3$ છે કે $R^\Sigma \Delta_1\Delta_3$ અને
+    $R^\Sigma \Delta_3\Delta_2$ તે બતાવવું છે. મૂકો:
+    \[
+    \Gamma = \Box^{-1}\Delta_1 \cup \Diamond\Delta_2.
+    \]
+    $\Gamma$ એ $\Sigma$-સુસંગત છે તે બતાવવું પૂરતું છે;
+    ત્યારે લિન્ડનબાઉમના સહાયક પ્રમેયથી તેને એવા પૂર્ણ
+    $\Sigma$-સુસંગત ગણ~$\Delta_3$ સુધી વિસ્તારી શકાય કે
+    $\Box^{-1}\Delta_1 \subseteq \Delta_3$ અને
+    $\Diamond\Delta_2 \subseteq \Delta_3$, એટલે કે
+    $R^\Sigma \Delta_1\Delta_3$\iftag{prvBox}{}{ (
+      \olref[mod]{lem:box-iff-diamond} મુજબ)} અને $R^\Sigma
+    \Delta_3\Delta_2$\iftag{prvBox}{ (
+      \olref[mod]{lem:box-iff-diamond} મુજબ)}{}.
+
+    વિરોધ માટે ધારો કે $\Gamma$ સુસંગત નથી. ત્યારે એવાં
+    !!{formula}s $\Box!A_1$, \dots, $\Box!A_n \in \Delta_1$
+    અને $!B_1$, \dots,~$!B_m \in \Delta_2$ છે કે
+    \[!A_1, \dots,
+    !A_n, \Diamond!B_1, \dots, \Diamond!B_m \Proves[\Sigma]
+    \lfalse.\]
+    $\Diamond (!B_1 \land \dots \land !B_m) \to
+    (\Diamond!B_1 \land \dots \land \Diamond!B_m)$ દરેક સામાન્ય
+    મોડલ તર્કમાં !!{derivable} હોવાથી આપણે નીચે મુજબ દલીલ કરીને
+    $\Delta_2$ની સુસંગતતાનો વિરોધ મેળવીએ છીએ:
+    \begin{align*}
+      !A_1, \dots, !A_n, & \Diamond!B_1, \dots,
+      \Diamond!B_m \Proves[\Sigma] \lfalse \\
+      !A_1, \dots,!A_n & \Proves[\Sigma] (\Diamond!B_1 \land
+      \dots \land \Diamond!B_m) \lif \lfalse\\
+      & \qquad\text{નિષ્પત્તિ પ્રમેયથી}\\
+      & \qquad\text{\olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-deduction}, અને \Taut} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Diamond(!B_1 \land
+      \dots \land !B_m) \lif \lfalse\\
+      & \qquad \text{કારણ કે $\Sigma$ સામાન્ય છે} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \lnot\Diamond (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{\PL\ મુજબ} \\
+      !A_1, \dots,!A_n & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{$\lnot\Diamond$ને બદલે $\Box\lnot$} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma] \Box\Box \lnot (!B_1 \land \dots \land !B_m)\\
+      & \qquad\text{\olref[mod]{lem:box1} મુજબ} \\
+      \Box!A_1, \dots,\Box!A_n
+      & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{સ્કીમા $\Box\Box!A \lif \Box!A$થી} \\
+      \Delta_1 & \Proves[\Sigma]
+      \Box\lnot (!B_1 \land \dots \land !B_m)\\
+      &\qquad\text{એકદિશવર્ધિતાથી, \olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-monotonicity}} \\
+      & \Box\lnot (!B_1 \land \dots \land !B_m) \in \Delta_1\\
+      &\qquad\text{નિષ્પત્તિ હેઠળની બંધતાથી}; \\
+      & \lnot (!B_1 \land \dots \land !B_m) \in \Delta_2\\
+      &\qquad \text{કારણ કે }
+      R^\Sigma \Delta_1\Delta_2.
+    \end{align*}
+    પરંતુ પસંદ કરેલાં બધાં સૂત્રો બીજા ગણમાં પણ છે, જેથી તેની
+    સુસંગતતાનો વિરોધ મળે છે.
+  \end{enumerate}
+\end{proof}
+
+આ ઉદાહરણોથી એવું લાગી શકે કે મોડલ તર્કનું દરેક તંત્ર~$\Sigma$
+એ અર્થમાં \emph{પૂર્ણ} છે કે $\Sigma$ના દરેક પ્રમેય માન્ય હોય તેવી
+દરેક ફ્રેમમાં માન્ય હોય તેવું દરેક સૂત્ર તે સાબિત કરે છે.
+દુર્ભાગ્યે, આ અર્થમાં પૂર્ણ ન હોય એવાં ઘણાં તંત્રો છે.
+
+\end{document}

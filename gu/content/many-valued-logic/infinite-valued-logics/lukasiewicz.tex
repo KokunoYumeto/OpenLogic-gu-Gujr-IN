@@ -1,0 +1,126 @@
+% Part: many-valued-logic
+% Chapter: infinite-valued-logics
+% Section: lukasiewicz
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{luk}
+
+\olsection{લુકાશેવિચનું તર્કશાસ્ત્ર}
+
+\begin{editorial}
+  અનંતમૂલ્ય લુકાશેવિચ તર્કશાસ્ત્ર અંગેનો આ વિભાગ ટૂંકું
+  ``પ્રારૂપ'' માત્ર છે.
+\end{editorial}
+
+\begin{defn}\ollabel{def:lukasiewicz} અનંતમૂલ્ય લુકાશેવિચ
+તર્કશાસ્ત્ર~$\LogLuk[\infty]$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી
+  પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ $V_\infty$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $1$ છે; એટલે $V^+ = \{1\}$.
+  \item અસત્ય-અચલનું મૂલ્ય શૂન્ય છે. અન્ય સત્યવિધેયો
+  નીચેના વિધેયો વડે અપાય છે:
+  \begin{align*}
+    \tf{\lnot}[\LogLuk](x) & = 1 - x\\
+    \tf{\land}[\LogLuk](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogLuk](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogLuk](x,y) & = \min(1,1-(x-y)) = \begin{cases}
+      1 & \text{જો } x \le y\\
+      1-(x-y) & \text{અન્યથા.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-મૂલ્ય લુકાશેવિચ તર્કશાસ્ત્રની વ્યાખ્યા પણ આવી જ છે;
+માત્ર $V = V_m$ છે.
+\end{defn}
+\sourcecorrection{OLMV-013}{સ્થિર અંગ્રેજી મૂળ
+અહીં પ્રમાણભૂત ભાષા~$\Lang L_0$ લે છે, જેમાં
+અગાઉથી અસત્ય-અચલ સામેલ છે, પરંતુ તેનું સત્યવિધેય
+આપતું નથી. અગાઉની ત્રિમૂલ્ય લુકાશેવિચ શ્રેણિક
+સાથે એકરૂપતા રાખવા અહીં તેનું મૂલ્ય શૂન્ય
+સ્પષ્ટ કર્યું છે.}
+
+\begin{prop}
+  \olref[thr][luk]{def:lukasiewicz} વડે વ્યાખ્યાયિત
+  $\LogLuk[3]$ એ \olref{def:lukasiewicz} વડે વ્યાખ્યાયિત
+  $\LogLuk[3]$ જેવું જ છે.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][luk]{def:lukasiewicz}માં આપેલી સંયોજકોની
+  સત્યતાસારણીઓની સરખામણી \olref{def:lukasiewicz}નાં
+  સમીકરણોથી મળતી નીચેની સત્યતાસારણીઓ સાથે કરીને આ જોઈ શકાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $1/2$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $1/2$ \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+
+\begin{prop}\ollabel{prop:luk-infty-m}
+  જો $\Gamma \Entails[\LogLuk[\infty]] !B$, તો બધાં~$m \ge 2$
+  માટે $\Gamma \Entails[\LogLuk[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][luk]{prop:luk-infty-m} સાબિત કરો.
+\end{prob}
+
+હકીકતમાં, સાન્ત આધારગણ માટે વિપરીત દિશા પણ સાચી છે.
+\sourcecorrection{OLMV-014}{સ્થિર અંગ્રેજી મૂળ
+વિપરીત દિશા કોઈ મર્યાદા વિના કહે છે. સાન્ત
+આધારગણ માટે વિરોધી મૂલ્યાંકનમાં આવતા માત્ર
+સાન્ત ઘણા સંમેય મૂલ્યોને એક જ સાન્ત જાળીમાં
+સમાવી શકાય છે. પરંતુ અનંત આધારગણ જુદા જુદા
+છેદવાળાં અસંખ્ય ચલોનાં મૂલ્યો નિર્ધારિત કરી શકે;
+બધી સાન્ત જાળીઓમાં તેના આધાર અસંતોષ્ય છતાં
+અનંત સંમેય જાળીમાં સંતોષ્ય હોઈ શકે. તેથી અહીં
+દાવો સાન્ત આધારગણ સુધી મર્યાદિત કર્યો છે.}
+
+અનંતમૂલ્ય લુકાશેવિચ તર્કશાસ્ત્ર સૌથી પ્રચલિત અસ્પષ્ટ
+તર્કશાસ્ત્ર છે. અસ્પષ્ટ તર્કશાસ્ત્રના સાહિત્યમાં પ્રેરણ સંયોજકને
+ઘણી વાર $\lnot !A \lor !B$ તરીકે વ્યાખ્યાયિત કરે છે. ત્યારે
+અનંતમૂલ્ય પ્રબળ ક્લીની તર્કશાસ્ત્ર મળશે.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ એ~$\LogLuk[\infty]$ની
+  પુનરુક્તિ છે તે બતાવો.
+\end{prob}
+
+\end{document}

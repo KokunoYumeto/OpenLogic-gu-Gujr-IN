@@ -1,0 +1,93 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{expo}
+\olsection{ક્રમવાચક સંખ્યાઓની ઘાતક્રિયા}
+
+હવે ક્રમવાચક સંખ્યાઓની ઘાતક્રિયા જોઈએ. દુર્ભાગ્યે,
+તે માટે કોઈ \emph{સરસ} રચનાત્મક વ્યાખ્યા નથી.
+
+અલબત્ત, સ્પષ્ટ રચનાત્મક વ્યાખ્યાઓ \emph{છે}.
+એક આ છે. $\text{finfun}(\alpha,\beta)$ એ બધાં
+એવાં વિધેયો $f
+\colon \alpha \to \beta$નો ગણ હોય કે
+$\Setabs{\gamma \in
+\alpha}{f(\gamma) \neq 0}$ કોઈ પ્રાકૃતિક સંખ્યા
+જેટલા ઘટકો ધરાવે. $\text{finfun}(\alpha,\beta)$
+પર $f
+\sqsubset g$ ત્યારે અને માત્ર ત્યારે એવો સુક્રમ
+વ્યાખ્યાયિત કરો કે $f \neq g$ હોય અને
+$f(\gamma_0) < g(\gamma_0)$, જ્યાં
+$\gamma_0 = \text{max}\Setabs{\gamma \in \alpha}{f(\gamma) \neq
+g(\gamma)}$. પછી $\ordexpo{\alpha}{\beta}$ને
+$\ordtype{\text{finfun}(\beta, \alpha), \sqsubset}$
+તરીકે વ્યાખ્યાયિત કરી શકીએ. પોટર આ સ્પષ્ટ વ્યાખ્યા
+વાપરે છે અને તરત જ સમજાવે છે:
+\sourcecorrection{OLMD-132}{મૂળમાં
+$\text{finfun}(\alpha,\beta)$ એ $\alpha$થી
+$\beta$ સુધીનાં મર્યાદિત આધારવાળાં વિધેયો છે,
+પરંતુ તેનો ક્રમપ્રકાર $\ordexpo{\alpha}{\beta}$
+લખાયો છે. આ વિધેયોનો ઊલટો-શબ્દકોશક્રમ
+$\ordexpo{\beta}{\alpha}$ આપે છે. તેથી અહીં
+$\ordexpo{\alpha}{\beta}$ માટે
+$\text{finfun}(\beta,\alpha)$ લીધો છે; છેલ્લાં
+સ્વાધ્યાયમાં પણ એ જ સુધારો છે.}
+\begin{quote}
+	આ ક્રમની પસંદગી માત્ર યોગ્ય પુનરાવર્તી શરત
+	સંતોષતી ક્રમવાચક ઘાતક્રિયાની વ્યાખ્યા મેળવવાની
+	આપણી ઇચ્છાથી નક્કી થાય છે\ldots; અને ક્રમિત
+	સરવાળા કે ક્રમિત ગુણાકાર કરતાં તેનું ચિત્ર મનમાં
+	ઊભું કરવું ઘણું અઘરું છે.
+	\citep[p.~199]{Potter2004}
+\end{quote}
+બરાબર. સરવાળાને ``$\alpha$ની નકલ પછી
+$\beta$ની નકલ'' તરીકે અને ગુણાકારને
+``$\alpha$ની નકલોનો $\beta$-અનુક્રમ'' તરીકે
+સમજાવ્યા હતા. પરંતુ $\text{finfun}(\alpha, \gamma)$
+વિશે એવું કોઈ ટૂંકું સહજ વર્ણન નથી. તેથી ક્રમવાચક
+ઘાતક્રિયાની વ્યાખ્યા \emph{સીધી} અનંતાતીત
+પુનરાવર્તનથી આપીએ છીએ, એટલે કે:
+
+\begin{defn}\ollabel{ordexporecursion}
+\begin{align*}
+	\ordexpo{\alpha}{0} &= 1\\
+	\ordexpo{\alpha}{\beta\ordplus 1} &=\ordexpo{\alpha}{\beta} \ordtimes \alpha\\
+	\ordexpo{\alpha}{\beta} &= \bigcup_{\delta < \beta}\ordexpo{\alpha}{\delta}& & \text{when $\beta$ is a limit ordinal}
+\end{align*}
+\sourcecorrection{OLMD-133}{મૂળનું સીમા-સમીકરણ
+આધાર $\alpha=0$ માટે ઉપરની રચનાત્મક વ્યાખ્યાથી
+મેળ ખાતું નથી. $\ordexpo{0}{0}=1$ અને
+પછીના અનુગામી ઘાત $0$ હોવાથી પ્રદર્શિત સીમા-યોગગણ
+$\ordexpo{0}{\omega}=1$ આપે છે; પરંતુ
+$\text{finfun}(\omega,0)$ ખાલી હોવાથી તેનો
+ક્રમપ્રકાર $0$ છે. શૂન્ય આધાર માટે અલગ શરત વિના
+આ પ્રદર્શનને બંને વ્યાખ્યાઓની સમકક્ષતા ગણવી નહીં.}
+\end{defn}
+
+આપણે \emph{ગણસિદ્ધાંતીઓ તરીકે} કામ કરતા હોત,
+તો ક્રમવાચક ઘાતક્રિયાના કેટલાક ગુણધર્મો વધુ
+તપાસતા. પરંતુ તે અદલબદલીય નથી એ અપેક્ષિત
+તથ્ય સિવાય અહીં વધુ ઉમેરવાનું નથી. ખરેખર
+$\ordexpo{2}{\omega} =
+\bigcup_{\delta < \omega}\ordexpo{2}{\delta} = \omega$,
+જ્યારે $\ordexpo{\omega}{2} = \omega \ordtimes \omega$.
+પણ ઘાતક્રિયા અદલબદલીય હશે એવી \emph{અપેક્ષા}
+રાખવી જ ન જોઈએ, કારણ કે પ્રાકૃતિક સંખ્યાઓમાં પણ
+એવું નથી: $\ordexpo{2}{3} = 8 < 9 = \ordexpo{3}{2}$.
+
+\begin{prob}
+અનંતાતીત અનુમાનથી સાબિત કરો કે જો
+$\ordexpo{\alpha}{\beta} = \ordtype{\text{finfun}(\beta, \alpha),
+\sqsubset}$ વ્યાખ્યાયિત કરીએ, તો
+\olref[sth][ord-arithmetic][expo]{ordexporecursion}નાં
+પુનરાવર્તી સમીકરણો મળે છે.
+\sourcecorrection{OLMD-134}{મૂળના આ સ્વાધ્યાયમાં
+પણ OLMD-132 મુજબ વિધેયોના દલીલોનું સ્થાન
+સુધાર્યું છે. તેમ છતાં OLMD-133 મુજબ $\alpha=0$
+અને સીમા $\beta$ માટે પ્રદર્શિત સમીકરણ ખોટું પડે છે;
+તેથી એ શરત સુધાર્યા વિના આ સ્વાધ્યાય બધા
+ક્રમવાચક આધાર માટે સાબિત કરી શકાતો નથી.}
+\end{prob}
+
+\end{document}

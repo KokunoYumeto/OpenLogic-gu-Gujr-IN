@@ -1,0 +1,113 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0678",
+  "checked_at_utc": "2026-09-28T20:29:56.262640+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0678 Normal N2i and cut-free G2i translations; state-only draft",
+  "report": {
+    "unit_id": "OLP-0678",
+    "source_path": "content/proof-theory/normalization/translations.tex",
+    "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+    "draft_path": "private-state\\work\\batch044_draft\\normalization-translations.tex",
+    "draft_sha256": "3fef541f3e1f3ed961dc6826ef3ead88ef26f01eba807a88f779a5775559e0ec",
+    "aligned_blocks": 24,
+    "linguistic_blocks": 19,
+    "source_math_spans_correction_aware": 157,
+    "target_math_spans_after_corrections": 157,
+    "glossary_tokens": 69,
+    "source_correction_notes": [
+      "OLMD-261",
+      "OLMD-262",
+      "OLMD-263",
+      "OLMD-264",
+      "OLMD-265",
+      "OLMD-266",
+      "OLMD-267",
+      "OLMD-268"
+    ],
+    "source_detector_ascii_tokens": 951,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\Log{2i}",
+        "\\Log{G2i}"
+      ],
+      [
+        "\\Log{N2c}-!!{proof}",
+        "\\Log{N2i}-!!{proof}"
+      ],
+      [
+        "If the \\Log{N2i}-!!{proof} we start from, this\ncan, however, be avoided.",
+        "If the \\Log{N2i}-!!{proof} we start from is normal, this\ncan, however, be avoided."
+      ],
+      [
+        "Since every\n  $S_i$ in the main branch",
+        "Since every nonfinal\n  $S_i$ in the main branch"
+      ],
+      [
+        "$\\delta'$ plus~$1$",
+        "$\\delta_1$ plus~$1$"
+      ],
+      [
+        "$x:!D, \\Gamma_1 \\Sequent !A$",
+        "$!D, \\Gamma_1' \\Sequent !A$"
+      ],
+      [
+        "$\\Gamma_1 \\Sequent !D$",
+        "$\\Gamma_1' \\Sequent !D$"
+      ],
+      [
+        "$!E, \\Gamma_1' \\Sequent !A$",
+        "$!E, \\Gamma_2' \\Sequent !A$"
+      ],
+      [
+        "If $!D$ and/or $!A \\ident \\lfalse$",
+        "If $!D \\ident \\lfalse$ and/or $!A \\ident \\lfalse$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "સાબિતીઓ",
+          "ધારણાઓ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "કટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ into }",
+        "target": "\\text{માં ફેરવો}",
+        "count": 2
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

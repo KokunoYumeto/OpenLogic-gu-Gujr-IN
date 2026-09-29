@@ -1,0 +1,349 @@
+{
+  "schema": "openlogic-gu-full-reader-frozen-assets/1",
+  "checked_at_utc": "2026-09-29T01:14:29.227609+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "photo_source_revision": "81c1990df896568410b452fea68b81cbb6ce46fa",
+  "photos": [
+    "cantor-georg",
+    "church-alonzo",
+    "gentzen-gerhard",
+    "goedel-kurt",
+    "noether-emmy",
+    "peter-rozsa",
+    "robinson-julia",
+    "russell-bertrand",
+    "tarski-alfred",
+    "turing-alan",
+    "zermelo-ernst"
+  ],
+  "diagrams": [
+    "assets/diagrams/bijective.tikz",
+    "assets/diagrams/composition.tikz",
+    "assets/diagrams/difference.tikz",
+    "assets/diagrams/function.tikz",
+    "assets/diagrams/injective.tikz",
+    "assets/diagrams/intersection.tikz",
+    "assets/diagrams/surjective.tikz",
+    "assets/diagrams/turing-machine.tikz",
+    "assets/diagrams/union.tikz"
+  ],
+  "files": [
+    {
+      "path": "assets/diagrams/bijective.tikz",
+      "bytes": 7893,
+      "sha256": "c6b3bf38943e8a2ecef195c57cbe77a2e016610ebd853fca1eba044a9c6789d5",
+      "frozen_git_blob": "e0119d59bb546fb37f2df8b47b4d1fafd334366c"
+    },
+    {
+      "path": "assets/diagrams/composition.tikz",
+      "bytes": 13841,
+      "sha256": "d712231c90796b4b2987506502723cd756fa9c5b7f4111e65284d107a79d2d4b",
+      "frozen_git_blob": "048098869eb9e38013a25a78471ed7cbcabfe22a"
+    },
+    {
+      "path": "assets/diagrams/difference.tikz",
+      "bytes": 4614,
+      "sha256": "c4214baef02f0261773a29b793a8221144fbe1d022ef1e753054c56080e4cdfc",
+      "frozen_git_blob": "001e45531ed9e27016f2d065748a44105a7ff51e"
+    },
+    {
+      "path": "assets/diagrams/function.tikz",
+      "bytes": 9766,
+      "sha256": "0f9ad6d025a743c8b90509d7507bd88bfc6934e555175adc29d36c8ce93a04c9",
+      "frozen_git_blob": "2c64764ce57072184a89a0ef23d2424a3255bd8f"
+    },
+    {
+      "path": "assets/diagrams/injective.tikz",
+      "bytes": 9530,
+      "sha256": "7e2a17dfe1cab68938c4eed21fe135a33c0af33895cfe386fb38f270829060c2",
+      "frozen_git_blob": "42ce20cf5caece1950d036f3775b0c1d65e8a41b"
+    },
+    {
+      "path": "assets/diagrams/intersection.tikz",
+      "bytes": 3937,
+      "sha256": "d95d0e70278ddbdc46e76f94930b6f29aedec8b91a3550338e553ba35067464c",
+      "frozen_git_blob": "5e3ca62d47d616021a2761817c69ae8741a47637"
+    },
+    {
+      "path": "assets/diagrams/surjective.tikz",
+      "bytes": 7262,
+      "sha256": "324e03fb275baee81614586cadb5243deaf801050d061b9ec33d7ccebd4a282d",
+      "frozen_git_blob": "d77cc27ab85c70dbe5f35bd4cb1329c006830142"
+    },
+    {
+      "path": "assets/diagrams/turing-machine.tikz",
+      "bytes": 32195,
+      "sha256": "9bd7deae83ae88cd03ceacaec3b17bbc00b3020660dedcbded89c6fa5c4df092",
+      "frozen_git_blob": "c3da906b62f7b2191117e9244a6bd6abb3be301a"
+    },
+    {
+      "path": "assets/diagrams/union.tikz",
+      "bytes": 5031,
+      "sha256": "f9ca5508f0bac1f848271027572c4a59a6caba3db1f2c31bdd844f5bcea3e22e",
+      "frozen_git_blob": "73017022b1be59a733052f9c3caac4e41b1baab7"
+    },
+    {
+      "path": "assets/logos/by.pdf",
+      "bytes": 1406,
+      "sha256": "e006252e6556509483e13ce851f59c43569dfb77518b01e49bf9892e1f6076ea",
+      "frozen_git_blob": "04d3686814199a19a85ee0ab72e01866bd90c902"
+    },
+    {
+      "path": "assets/logos/cc.pdf",
+      "bytes": 1943,
+      "sha256": "3675e2ab61cc94de674ab418dcd0e3d6511f306abf50f90c0c6771414186885a",
+      "frozen_git_blob": "66dd9c0d9a32fa615c3f6d98e9c038fa77f4ec50"
+    },
+    {
+      "path": "assets/logos/openlogic-logo-bw.pdf",
+      "bytes": 1084,
+      "sha256": "1c5933c487dbe3f804474ee439e1e189c8547e608ed4eef0edeb21f6981db8d0",
+      "frozen_git_blob": "62a3a30f01ccf57d7cf71881ace8eabae0743972"
+    },
+    {
+      "path": "assets/logos/remix.pdf",
+      "bytes": 1451,
+      "sha256": "3ed058c675a84eda0568c4213830a1a85c9202bc4f29c731bf55adb786ab6f07",
+      "frozen_git_blob": "c24041e692f82c035f72d9a02879a19f69750526"
+    },
+    {
+      "path": "assets/photos/README.md",
+      "bytes": 1351,
+      "sha256": "8c24a313830fe66d4bf010c26f0e5e8fd149ace67d036bff0030e20de52393c1",
+      "frozen_git_blob": "ce6a4850930398d42173871350f06a5e470e2e40",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/cantor-georg/cantor-georg-credit.tex",
+      "bytes": 196,
+      "sha256": "56bf0d795187692806afcfbb1232e01159b6ecb92c0e092713b5879d9fd3ae44",
+      "frozen_git_blob": "3b4b5e7df3e24c774b96db99a78fb8ef396401b9",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/cantor-georg/cantor-georg-large.png",
+      "bytes": 415275,
+      "sha256": "4b883398c2121f31feded13228b3ff22bbbefb97c1bee3f59df19c2009d4d4e2",
+      "frozen_git_blob": "e481b8d5553a2b8836cc8168a711e83acbccb11e",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/cantor-georg/cantor-georg-small.png",
+      "bytes": 77681,
+      "sha256": "fcf2d6e515dad4fdec9adab876fdf46532af5234931cd105520ac80cf951fce8",
+      "frozen_git_blob": "b491aa7f517fccf6171fab33405924e21231c2d9",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/church-alonzo/church-alonzo-credit.tex",
+      "bytes": 508,
+      "sha256": "b1f035bc45c7b40b7ee9c602ff82c07586e50dd1aa8a3339171e5fc9e8d7870e",
+      "frozen_git_blob": "8c4c8e66606dedbe01bdcb6ac969e59a3e879d67",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/church-alonzo/church-alonzo-large.png",
+      "bytes": 618615,
+      "sha256": "d810d4962253f8068fba85723b644c6d18481aaa231600e8a130f2663e49aa61",
+      "frozen_git_blob": "4fc8d719bb14a073e0b3dc2cc6b7b78778dbfc39",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/church-alonzo/church-alonzo-small.png",
+      "bytes": 56666,
+      "sha256": "41a708886ccdfdac8e84ddaaef2216e1bd5de312b13dd4cf398bfd3122e94144",
+      "frozen_git_blob": "e7b54c091fac5366a2db27a83a51d0861c8c0974",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/gentzen-gerhard/gentzen-gerhard-credit.tex",
+      "bytes": 80,
+      "sha256": "913f32e3c521c3e72a7016725f6dd87b4845d4e8a69356f49189af1245482f6d",
+      "frozen_git_blob": "969e925868f46d1e86676f4ee7a662da79c90d74",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/gentzen-gerhard/gentzen-gerhard-large.png",
+      "bytes": 419479,
+      "sha256": "1ee39542a56bcf6b72ca4fa9c18fa4871f1a163de1b573c7ae41968bfbb1723a",
+      "frozen_git_blob": "00bc6a1bb264247d253f6251f98bcfbf3c44a0e1",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/gentzen-gerhard/gentzen-gerhard-small.png",
+      "bytes": 47868,
+      "sha256": "07d24ee7434628022d6493ded9ed72ffb7de82f8ff7051508e6630a77cc19d13",
+      "frozen_git_blob": "1f260f5c8e8154db294a40a82e1a7d79dd805c73",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/goedel-kurt/goedel-kurt-credit.tex",
+      "bytes": 656,
+      "sha256": "c90a039e10829f9d85e0a17d985f411a5bf8efd0e7861bc1103f63becb7321a9",
+      "frozen_git_blob": "2855cda9e6e93b66d3995cb8c57c7a06cec776a5",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/goedel-kurt/goedel-kurt-large.png",
+      "bytes": 881707,
+      "sha256": "b3399afe71e30f67828ffb9e456bda42068d8648df04e94e64384c8c84c13ea4",
+      "frozen_git_blob": "18fe008aedf69760b0196b7ea16aa9e63175df4f",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/goedel-kurt/goedel-kurt-small.png",
+      "bytes": 81226,
+      "sha256": "5fb344771a18ba62b9b77d9a0478afe364c6758f961c5f2d2852f9a6cec34e4e",
+      "frozen_git_blob": "15daa3926a6be5e7d97f6330345b6e1ff5d42330",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/noether-emmy/noether-emmy-credit.tex",
+      "bytes": 408,
+      "sha256": "0d73a266dd1d12e6afe7c970a86c3d5f939652610348ff0c50eba2f5df9777b0",
+      "frozen_git_blob": "b5e5f2a968ec13c1046e95edfe0bbb148ae77af8",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/noether-emmy/noether-emmy-large.png",
+      "bytes": 520249,
+      "sha256": "e5286b0a1840854ba1708ecce3895fa4d91dd09cf3b8e2e5189e8eb49a34ecd9",
+      "frozen_git_blob": "77f2e558e15566b86cc91034e7c9bd1a83b25424",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/noether-emmy/noether-emmy-small.png",
+      "bytes": 66783,
+      "sha256": "024677f0d153f8151b3b61d3587ffe5e46eb823b2148a70dc2eb297a72de3bff",
+      "frozen_git_blob": "d8dd36594d1ccc2c0ffb381b3180b71b7748e5bd",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/peter-rozsa/peter-rozsa-credit.tex",
+      "bytes": 92,
+      "sha256": "9fb907bd93ee8e63621afd2d1a0952d984a0cd58df6472c053425c9f6639e54d",
+      "frozen_git_blob": "3a6bc7ae6ca3f5aa9c7c4367ae568227555f6946",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/peter-rozsa/peter-rozsa-large.png",
+      "bytes": 541074,
+      "sha256": "23f6fb1376efc18987d4f156ed91ca0e2febe7cb40de93cd1a1aa2052412d359",
+      "frozen_git_blob": "4f0c203299427d237baf603e9548a6eb194465d6",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/peter-rozsa/peter-rozsa-small.png",
+      "bytes": 60879,
+      "sha256": "9b2af8595ed736c391083882e7735e65826d1f17aee7b4074b3a58eec74a9e67",
+      "frozen_git_blob": "40359b11fbefd7a3c043f560104449d074a64597",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/robinson-julia/robinson-julia-credit.tex",
+      "bytes": 238,
+      "sha256": "a8599b564fbb2f75ad2c71968e6ba7eb7138beb1ab82b042f821f7888a4dd79c",
+      "frozen_git_blob": "a6fb6f4b0f9fa9641daa65e1569f4da4b91fd3c9",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/robinson-julia/robinson-julia-large.png",
+      "bytes": 540664,
+      "sha256": "3791d2e1fe675d820e77b832b81a4d81e85754d0fddc2262caf456179740cd50",
+      "frozen_git_blob": "342b08affd2c83df513f73923ba631e533f55fe7",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/robinson-julia/robinson-julia-small.png",
+      "bytes": 62034,
+      "sha256": "13419015459fddc6091c396b4dfbcdb8a26c95ed28859676fca4a371ffab192f",
+      "frozen_git_blob": "00bec49d6e3d4c5fb6a9ef3a5538ec338abe53bf",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/russell-bertrand/russell-bertrand-credit.tex",
+      "bytes": 238,
+      "sha256": "e3a94c92dd793a7af81d0605c67a9f62596fa5fa6761c93e518ed5eb4a0687c0",
+      "frozen_git_blob": "2ed56ac6a68de3183da2e18280d1e96b9f945a93",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/russell-bertrand/russell-bertrand-large.png",
+      "bytes": 705436,
+      "sha256": "423814a0701ba0e0c60757e291540706326122aaf11cd5a39b6cefabc6c9deac",
+      "frozen_git_blob": "948dd08b2c38c283a9e87dd6aaf7612809003f69",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/russell-bertrand/russell-bertrand-small.png",
+      "bytes": 65629,
+      "sha256": "9a8a753a5b39e1cce4676134971f9c07aaee1b805e4b263fd64217053d7080a6",
+      "frozen_git_blob": "efc73eaf69219971dbab0adef1544db56eb6e2e4",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/tarski-alfred/tarski-alfred-credit.tex",
+      "bytes": 471,
+      "sha256": "f33a0851891e4d4e4690aad4757225f70395d3014d07c441189a1d3b71bafede",
+      "frozen_git_blob": "6b7ce1c4f715f238ab3931c149c377b647ad5a3c",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/tarski-alfred/tarski-alfred-large.png",
+      "bytes": 619047,
+      "sha256": "0387d5fc13950cd34aec6c0de766c8bfee3bcb4ee58b6e1911fd9c418dc46453",
+      "frozen_git_blob": "902dc1b72239e53b495e16b3b5067bd8df9e8c77",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/tarski-alfred/tarski-alfred-small.png",
+      "bytes": 65037,
+      "sha256": "68bfa6a270f1e95ead76c667bf2ac39f4a6ab446206026ae6dda41f31ab0ad77",
+      "frozen_git_blob": "6b44881caec796057bb9923160b2daba7b5a032c",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/turing-alan/turing-alan-credit.tex",
+      "bytes": 325,
+      "sha256": "07a38ecb47dfd20f6a62d2bb9318e024deb3804fe7d249ba0f8fb2c5f80f9928",
+      "frozen_git_blob": "6d4278ec3ced1eea7b3ae2ac7b492ec3b095d9a7",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/turing-alan/turing-alan-large.png",
+      "bytes": 254797,
+      "sha256": "e724109a38dcb1785e2b503b3059e209b45f79b2770e6fbedf78cdb0b421c213",
+      "frozen_git_blob": "3c7fbe9201579fd807b226b334e33f8ddc1b9286",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/turing-alan/turing-alan-small.png",
+      "bytes": 64966,
+      "sha256": "a59dc606caa27c4614d40151e736f356017c656e241e3c63098b06fb9fe83e56",
+      "frozen_git_blob": "f075ce66f081acd824a8fcce86bb3bf19e7ddb61",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/zermelo-ernst/zermelo-ernst-credit.tex",
+      "bytes": 361,
+      "sha256": "b996e8f70e635feee7289d541b4d6389d72ae0baa295e91a4572090ad0713616",
+      "frozen_git_blob": "6034542bbdede95c11f9e473a4a6a4a21ea6cda7",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/zermelo-ernst/zermelo-ernst-large.png",
+      "bytes": 627711,
+      "sha256": "ceecb2f1eb18a60c3a9bf8e284b89e7a79bd14c35fe3fae2b2bca80921abae51",
+      "frozen_git_blob": "f78c24b720da5abc381d9663bf4d74ff0db79af1",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    },
+    {
+      "path": "assets/photos/zermelo-ernst/zermelo-ernst-small.png",
+      "bytes": 73183,
+      "sha256": "cd83b5a8ca694fee7d3f77aa01b8a428279226d5084dd34f6f4a0be34ec0a6cc",
+      "frozen_git_blob": "9947c1f4326034edae422189cb573c00dc279ac2",
+      "photo_source_commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    }
+  ],
+  "status": "frozen_asset_bytes_verified_original_credits_preserved_localization_pending"
+}

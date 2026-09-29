@@ -1,0 +1,77 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: relational-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{rel}
+
+\olsection{\usetoken{P}{relational model}}
+
+સ્ફુરણાવાદી વિધાનાત્મક તર્કનું ચોક્કસ અર્થવિજ્ઞાન આપવા,
+જેના સંદર્ભમાં !!{formula}sનું મૂલ્યાંકન કરી શકીએ એવા
+નિદર્શની વ્યાખ્યા આપવી પડે. એવી વ્યાખ્યાને આધારે પછી
+પ્રામાણ્યતા અને અનુસરણ જેવા અર્થવિજ્ઞાનલક્ષી ખ્યાલો પણ
+વ્યાખ્યાયિત કરી શકાય છે. આવું એક અર્થવિજ્ઞાન
+!!{relational model}s વડે મળે છે.
+
+\begin{defn}
+  સ્ફુરણાવાદી વિધાનાત્મક તર્કનું !!^a{relational model}
+  એ ત્રિક $\mModel{M} = \tuple{W, R, V}$ છે, જ્યાં
+  \begin{enumerate}
+  \item $W$ એ અખાલી ગણ છે,
+  \item $R$ એ~$W$ પરનો આંશિક ક્રમ (એટલે સ્વવાચક, વિસંમિત
+    અને પરંપરિત દ્વિસ્થાની સંબંધ) છે, અને
+  \item $V$ એવું વિધેય છે જે દરેક !!{propositional
+    variable}~$p$ને~$W$નો ઉપગણ આપે છે, જેથી
+  \item $V$ એ $R$ની દૃષ્ટિએ એકદિશવર્ધી છે: જો $w
+    \in V(p)$ અને $Rww'$ હોય, તો $w' \in V(p)$.
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}\ollabel{defn:true-at-w}
+  નિદર્શ~$\mModel{M}$માં $!A$નું \emph{$w$ ખાતે સત્ય
+    હોવું}, સંજ્ઞામાં $\mSat{M}{!A}[w]$, નીચે મુજબ
+  આગમનાત્મક રીતે વ્યાખ્યાયિત કરીએ છીએ:
+  \begin{enumerate}
+  \item \indcase{!A}{p}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $w \in V(p)$.}
+  \item \indcase{!A}{\lfalse}{$\mSat{M}{\indfrm}[w]$ નહીં}.
+  \item \indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $Rww'$ ધરાવતું એવું કોઈ $w'$ નથી કે $\mSat{M}{!B}[w']$}.
+  \item \indcase{!A}{!B \land !C}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$}.
+  \item \indcase{!A}{!B \lor !C}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$ (અથવા બંને)}.
+  \item \indcase{!A}{!B \lif !C}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $Rww'$ ધરાવતા દરેક $w'$ માટે $\mSat{M}{!B}[w']$ નહીં
+    અથવા $\mSat{M}{!C}[w']$} (અથવા બંને).
+  \end{enumerate}
+  $\mSat{M}{!A}[w]$ ન હોય તો $\mSat/{M}{!A}[w]$ લખીએ છીએ.
+  $\Gamma$ એ !!{formula}sનો ગણ હોય, તો
+  $\mSat{M}{\Gamma}[w]$નો અર્થ બધા $!B \in \Gamma$
+  માટે $\mSat{M}{!B}[w]$ એવો થાય છે.
+\end{defn}
+
+\begin{prob}
+  \olref[int][sem][rel]{defn:true-at-w} મુજબ
+  $\mSat{M}{\lnot !A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $\mSat{M}{!A \lif \lfalse}[w]$ થાય છે તે બતાવો.
+\end{prob}
+
+\begin{prop}\ollabel{prop:true-monotonic}
+  જગતોમાં સત્યતા~$R$ની દૃષ્ટિએ એકદિશવર્ધી છે: જો
+  $\mSat{M}{!A}[w]$ અને $Rww'$ હોય, તો
+  $\mSat{M}{!A}[w']$.
+\end{prop}
+
+\begin{proof}
+  સ્વાધ્યાય.
+\end{proof}
+
+\begin{prob}
+  \olref[int][sem][rel]{prop:true-monotonic} સાબિત કરો.
+\end{prob}
+
+\end{document}

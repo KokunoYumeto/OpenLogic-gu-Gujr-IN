@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0538",
+  "checked_at_utc": "2026-09-27T23:42:45.301584+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0538 stage principles in more detail; state-only draft",
+  "report": {
+    "unit_id": "OLP-0538",
+    "source_path": "content/set-theory/z/story.tex",
+    "source_sha256": "675bc77160d15d826fc2960c15764275f12e8ef2450e121d6f34981d7af64a99",
+    "draft_path": "private-state\\work\\batch044_draft\\zermelo-story.tex",
+    "draft_sha256": "1ae873564708bac7427b55768d853ffc13b79efd9e7c2ba62adaa45ebba86e05",
+    "aligned_blocks": 6,
+    "linguistic_blocks": 3,
+    "source_math_spans_correction_aware": 4,
+    "target_math_spans_after_corrections": 4,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 198,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\trees.tex",
+        "sha256": "a42ed9b56a413aaa6f6d0dad00b49ee65b8366028fc68c24b23f60ba1d5b108b",
+        "terms": [
+          "સુક્રમિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cumulative-approach.tex",
+        "sha256": "406d630c98b96fba4eb2edf4ed84703d9e58fa92ec4c71cf643ba90bd11f56ee",
+        "terms": [
+          "શોએનફેલ્ડ",
+          "તબક્કા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-labels-044.tex",
+        "sha256": "33a0a4105f7f2d529f962fe5ad80dfb8d2ba87e73903494ee585a1aa4528e145",
+        "terms": [
+          "તબક્કાઓ પાયારૂપ છે",
+          "તબક્કાઓ ક્રમબદ્ધ છે",
+          "તબક્કાઓમાં સંચય થાય છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Well-ordering is not silently weakened to mere ordering or added to the visible ordering principle; it remains the source's tacit footnote assumption.",
+      "The no-other-sets clause remains scoped to stage S.",
+      "Scott1974 and ButtonLT1 claims are translated and cited, not independently reproved.",
+      "Shoenfield's name is normalized from the source's Schoenfield typo, consistent with the frozen bibliography.",
+      "The stage display-name bindings are recorded separately from the unchanged source macros."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [
+      {
+        "path": "work/STAGE_LABEL_LOCALIZATION_044_0538.json",
+        "sha256": "c4a0ce9ffa65d33150f2518997822871a8d52a2d61e3985d8cd37024610383f8"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

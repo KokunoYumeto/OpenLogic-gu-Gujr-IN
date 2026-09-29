@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0636",
+  "checked_at_utc": "2026-09-28T16:02:36.249395+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0636 Pathological continuous functions, Cantor's line-square bijection and space-filling curves; state-only draft",
+  "report": {
+    "unit_id": "OLP-0636",
+    "source_path": "content/history/set-theory/pathologies.tex",
+    "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+    "draft_path": "private-state\\work\\batch044_draft\\pathologies.tex",
+    "draft_sha256": "4c671e232324f151fe24fcdda7eb13e3dc25a1892bc6d16d9980623447e76573",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 1,
+    "target_math_spans_after_corrections": 1,
+    "glossary_tokens": 1,
+    "source_correction_notes": [
+      "OLMD-168"
+    ],
+    "source_detector_ascii_tokens": 650,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\limits.tex",
+        "sha256": "1c3ea3159effc7bdc430b9f09612e894d79c96401a53a9c26e1b617d9bd79eb3",
+        "terms": [
+          "લક્ષ",
+          "સતત",
+          "વિકલનીય"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "je le vois, mais je ne le crois pas",
+        "count": 1,
+        "reason": "Cantor's French sentence is preserved exactly and immediately glossed in Gujarati."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 1,
+    "inherited_diagrams_visual_qa": "pending",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0527",
+  "checked_at_utc": "2026-09-27T22:55:22.083972+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0527 transitivity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0527",
+    "source_path": "content/counterfactuals/minimal-change-semantics/transitivity.tex",
+    "source_sha256": "e5b649b07980ba0ec35bc7b18cfa27c1b9bf28553363ab8a10736c3cc182ee0a",
+    "draft_path": "private-state\\work\\batch043_draft\\transitivity.tex",
+    "draft_sha256": "eac090c9483c49ff8825cbc5aa2c5ef3d97ededb5ffe9bf5850c380b44b34dd4",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 25,
+    "target_math_spans_after_corrections": 25,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-110"
+    ],
+    "source_detector_ascii_tokens": 431,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_except_one_source_repair": true,
+    "finite_countermodel_verified": true,
+    "source_grammatical_typos_regularized": true
+  },
+  "status": "draft_linguistic_semantic_and_countermodel_review_passed_source_repair_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

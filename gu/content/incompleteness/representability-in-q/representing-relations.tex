@@ -1,0 +1,104 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: representing-relations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{rel}
+
+\olsection{સંબંધોનું નિરૂપણ}
+
+\emph{સંબંધ} નિરૂપ્ય હોય તેનો
+અર્થ શું છે તે કહીએ.
+
+\begin{defn}
+\ollabel{defn:representing-relations}
+પ્રાકૃતિક સંખ્યાઓ પરનો સંબંધ
+$R(x_0,\dots,x_k)$ {\em
+$\Th{Q}$માં નિરૂપ્ય} કહેવાય,
+જો એવું સૂત્ર $!A_R(x_0,\dots,x_k)$
+હોય કે $R(n_0,\dots,n_k)$
+સાચું હોય ત્યારે
+$\Th{Q}$માં
+$!A_R(\num{n_0},\dots,\num{n_k})$
+સાબિત થાય, અને
+$R(n_0,\dots,n_k)$ ખોટું હોય
+ત્યારે $\Th{Q}$માં
+$\lnot !A_R(\num{n_0},
+\dots, \num{n_k})$ સાબિત થાય.
+\end{defn}
+
+\begin{thm}
+\ollabel{thm:representing-rels}
+સંબંધ $\Th{Q}$માં નિરૂપ્ય
+હોય ત્યારે અને માત્ર ત્યારે જ
+તે સંગણનીય હોય છે.
+\end{thm}
+
+\begin{proof}
+પહેલી દિશા માટે માનો કે
+$R(x_0,\dots,x_k)$નું નિરૂપણ
+$!A_R(x_0,\dots,x_k)$ સૂત્ર
+કરે છે. $R$ ગણવા માટેની
+રીત આ છે: ઇનપુટ
+$n_0$, \dots,~$n_k$ મળે ત્યારે
+$!A_R(\num{n_0}, \dots, \num{n_k})$
+ની સાબિતી અને
+$\lnot !A_R(\num{n_0}, \dots, \num{n_k})$
+ની સાબિતી એકસાથે શોધો.
+આપણી ધારણા પ્રમાણે એ બેમાંથી
+એક સાબિતી જરૂર મળશે; પહેલી
+મળે તો ``હા'' કહો, અન્યથા
+``ના'' કહો.
+
+બીજી દિશામાં, માનો કે
+$R(x_0, \dots, x_k)$ સંગણનીય
+છે. વ્યાખ્યા પ્રમાણે આનો અર્થ
+તેનું લાક્ષણિક વિધેય
+$\Char{R}(x_0, \dots, x_k)$
+સંગણનીય છે. \olref[int]{thm:representable-iff-comp}
+પ્રમાણે, $\Char{R}$ને કોઈ
+સૂત્ર, કહો કે
+$!A_{\Char{R}}(x_0, \dots, x_k,
+y)$, નિરૂપે છે.
+$!A_R(x_0, \dots, x_k)$ તરીકે
+$!A_{\Char{R}}(x_0,
+\dots, x_k, \num{1})$ સૂત્ર
+લો. હવે કોઈપણ $n_0$,
+\dots,~$n_k$ માટે,
+$R(n_0, \dots, n_k)$ સાચું
+હોય તો $\Char{R}(n_0, \dots,
+n_k) = 1$; આ કિસ્સામાં
+$\Th{Q}$માં
+$!A_{\Char{R}}(\num{n_0}, \dots, \num{n_k},
+\num{1})$ સાબિત થાય છે,
+એટલે $\Th{Q}$માં
+$!A_R(\num{n_0}, \dots,
+\num{n_k})$ સાબિત થાય છે.
+બીજી તરફ, $R(n_0, \dots,
+n_k)$ ખોટું હોય તો
+$\Char{R}(n_0, \dots, n_k) = 0$.
+આથી $\Th{Q}$માં આ સાબિત થાય છે:
+\[
+\lforall[y][(!A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, y) \lif y =
+  \num{0})].
+\]
+$\Th{Q}$માં
+$\eq/[\num{0}][\num{1}]$
+સાબિત થાય છે, તેથી
+$\Th{Q}$માં
+$\lnot !A_{\Char{R}}(\num{n_0}, \dots, \num{n_k}, \num{1})$
+સાબિત થાય છે; પરિણામે
+$\lnot !A_R(\num{n_0}, \dots, \num{n_k})$
+પણ સાબિત થાય છે.
+\end{proof}
+
+\begin{prob}
+$R$ એ~$\Th{Q}$માં નિરૂપ્ય
+હોય, તો~$\Char{R}$ પણ તેમાં
+નિરૂપ્ય છે તે બતાવો.
+\end{prob}
+
+\end{document}

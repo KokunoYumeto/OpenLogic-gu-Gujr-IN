@@ -1,0 +1,92 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: truth-in-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{tru}
+
+\olsection{નિદર્શનમાં સત્યતા}
+
+ક્યારેક કોઈ નિદર્શનના દરેક જગતમાં કયાં !!{formula}s સત્ય છે
+તે જાણવામાં આપણને રસ હોય છે. તે માટે સંકેત રજૂ કરીએ.
+
+\begin{defn}
+  !!^a{formula}~$!A$ એ નિદર્શન $M = \tuple{W, R,
+    V}$માં \emph{સત્ય} છે, જે $\mSat{M}{!A}$થી દર્શાવાય છે,
+  ત્યારે અને માત્ર ત્યારે જ જ્યારે દરેક $w \in W$ માટે
+  $\mSat{M}{!A}[w]$ હોય.
+\end{defn}
+
+\begin{prop}\ollabel{prop:truthfacts}
+  \begin{enumerate}
+  \item જો $\mSat{M}{!A}$ હોય તો $\mSat/{M}{\lnot !A}$ હોય,
+    પણ તેનું વિપરીત વિધાન \emph{સાચું નથી}.
+  \item જો $\mSat{M}{!A \lif !B}$ હોય તો $\mSat{M}{!A}$ હોય
+    ત્યારે $\mSat{M}{!B}$ પણ હોય; પરંતુ તેનું વિપરીત વિધાન
+    \emph{સાચું નથી}.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item જો $\mSat{M}{!A}$ હોય તો $!A$ એ $W$ના બધા જગતોમાં
+    સત્ય છે. $W \neq \emptyset$ હોવાથી $\mSat{M}{\lnot!A}$
+    શક્ય નથી; નહીંતર કોઈ એક જગતમાં $!A$ સત્ય પણ અને અસત્ય પણ
+    હોવું પડે.
+
+    બીજી બાજુ, જો $\mSat/{M}{\lnot !A}$ હોય તો $!A$ એ કોઈ
+    $w \in W$માં સત્ય છે. તે પરથી \emph{દરેક}~$w \in W$ માટે
+    $\mSat{M}{!A}[w]$ ફલિત થતું નથી. ઉદાહરણ તરીકે,
+    \olref[rel]{fig:simple}ના નિદર્શનમાં $\mSat/{M}{\lnot p}$
+    અને $\mSat/{M}{p}$ બંને છે.
+  \item $\mSat{M}{!A \lif !B}$ અને $\mSat{M}{!A}$ માનો.
+    $\mSat{M}{!B}$ બતાવવા માટે $w \in W$ કોઈપણ જગત લો.
+    ત્યારે $\mSat{M}{!A \lif !B}[w]$ અને $\mSat{M}{!A}[w]$
+    હોવાથી $\mSat{M}{!B}[w]$ છે. $w$ ગમે તે હતું, તેથી
+    $\mSat{M}{!B}$.
+
+    વિપરીત વિધાન ખોટું છે તે બતાવવા એવું નિદર્શન
+    $\mModel{M}$ જોઈએ જેમાં $\mSat{M}{!A}$ હોય તો
+    $\mSat{M}{!B}$ હોય, છતાં $\mSat/{M}{!A \lif !B}$ હોય.
+    ફરી \olref[rel]{fig:simple}નું નિદર્શન લો:
+    $\mSat/{M}{p}$ હોવાથી (પૂર્વપક્ષ ખોટો હોવાથી)
+    $\mSat{M}{p}$ હોય તો $\mSat{M}{q}$ હોય એવું વિધાન સાચું છે.
+    તેમ છતાં $\mSat/{M}{p \lif
+      q}$ છે, કેમ કે~$w_1$માં $p$ સત્ય છે અને $q$ અસત્ય છે.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  માત્ર $p_1$, $p_2$, $p_3$ને !!{propositional variable}s તરીકે
+  ધરાવતી ભાષા માટે નીચેનું નિદર્શન $\mModel{M}$ વિચારો:
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]left:\mTrue{p_1}\\\mFalse{p_2}\\\mFalse{p_3}}]
+            {$w_1$} ; 
+      \node[world] (w2) [label={[align=right]right:\mTrue{p_1}\\\mTrue{p_2}\\\mFalse{p_3}},
+        below right=of w1]  {$w_2$}; 
+      \node[world] (w3) [label={[align=right]right:\mTrue{p_1}\\\mTrue{p_2}\\\mTrue{p_3}},
+        above right=of w2] {$w_3$};
+      \draw[reflexive above] (w3) to (w3); 
+      \draw[->] (w1) to (w2);
+      \draw[->] (w2) to (w3);
+      \draw[->] (w1) to (w3); 
+    \end{tikzpicture}
+  \end{center}
+  નીચેના !!{formula}s અને સૂત્ર-ઢાંચા નિદર્શન
+  $\mModel{M}$માં, એટલે કે $\mModel{M}$ના દરેક જગતમાં, સત્ય છે?
+  સમજાવો.
+  \begin{enumerate}
+  \item $p\lif \Diamond p$ ($p$ પરમાણુ હોય ત્યારે);
+  \item $!A\lif \Diamond !A$ ($!A$ કોઈપણ સૂત્ર હોય ત્યારે);
+  \item $\Box p \lif p$ ($p$ પરમાણુ હોય ત્યારે);
+  \item $\lnot p \lif \Diamond \Box p$ ($p$ પરમાણુ હોય ત્યારે);
+  \item $\Diamond \Box !A$ ($!A$ કોઈપણ સૂત્ર હોય ત્યારે);
+  \item $\Box \Diamond p$ ($p$ પરમાણુ હોય ત્યારે).
+  \end{enumerate}
+\end{prob}
+
+\end{document}

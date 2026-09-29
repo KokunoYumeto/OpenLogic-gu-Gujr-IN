@@ -1,0 +1,85 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{sem}
+
+\olsection{અર્થવિજ્ઞાનલક્ષી ખ્યાલો}
+
+\begin{defn}
+  બધા $w \in W$ માટે $\mSat{M}{!A}[w]$ હોય ત્યારે અને માત્ર
+  ત્યારે જ $!A$ એ \emph{નિદર્શ $\mModel{M} = \tuple{W,R,V}$માં
+  સત્ય છે}, એટલે $\mSat{M}{!A}$, એમ કહીએ છીએ.
+  બધા નિદર્શોમાં સત્ય હોય ત્યારે અને માત્ર ત્યારે જ $!A$
+  \emph{પ્રામાણ્ય} ધરાવે છે, એટલે $\Entails !A$.
+  !!{formula}sનો ગણ~$\Gamma$ એ~$!A$ને \emph{ફલિત કરે છે},
+  એટલે $\Gamma \Entails !A$, એમ ત્યારે અને માત્ર ત્યારે જ
+  કહીએ છીએ જ્યારે દરેક નિદર્શ~$\mModel{M}$ અને દરેક~$w$
+  માટે $\mSat{M}{\Gamma}[w]$ હોય તો $\mSat{M}{!A}[w]$ હોય.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-entails}
+  \begin{enumerate}
+  \item\ollabel{prop:sat-entails1} જો $\mSat{M}{\Gamma}[w]$ અને
+    $\Gamma \Entails !A$ હોય, તો $\mSat{M}{!A}[w]$.
+  \item\ollabel{prop:sat-entails2} જો $\mSat{M}{\Gamma}$ અને $\Gamma
+    \Entails !A$ હોય, તો $\mSat{M}{!A}$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \sourcecorrection{OLMD-086}{મૂળમાં પહેલી પંક્તિની સાબિતી
+  બીજી પંક્તિની સર્વજગત શરત માનીને આપે છે, અને પછી બીજી
+  પંક્તિને પહેલીમાંથી અનુસરતી કહે છે. પહેલી પંક્તિ વ્યાખ્યાથી
+  સીધી મળે છે; મૂળનો સર્વજગત તર્ક બીજી પંક્તિમાં મૂક્યો છે.}
+  \item પહેલું વિધાન અનુસરણની વ્યાખ્યાથી સીધું મળે છે.
+  \item ધારો કે $\mSat{M}{\Gamma}$. $\Gamma \Entails !A$
+    હોવાથી $\mSat{M}{\Gamma}[w]$ હોય તો
+    $\mSat{M}{!A}[w]$ થાય છે. દરેક $u \in W$ માટે
+    $\mSat{M}{\Gamma}[u]$ હોવાથી
+    $\mSat{M}{\Gamma}[w]$ પણ છે. તેથી
+    $\mSat{M}{!A}[w]$. દરેક જગત માટે આ સાચું છે;
+    આ \olref{prop:sat-entails1}ને દરેક જગતમાં લાગુ કરીને
+    પણ તરત મળે છે.
+  \end{enumerate}
+\end{proof}
+
+
+\begin{defn}\ollabel{defn:restrict}
+  ધારો કે $\mModel{M}$ એ સંબંધાત્મક નિદર્શ છે અને $w \in W$.
+  $\mModel{M}$નું~$w$ સુધીનું \emph{મર્યાદન}
+  $\mModel{M}_w=\tuple{W_w, R_w, V_w}$ આ પ્રમાણે છે:
+  \begin{align*}
+    W_w & = \Setabs{u \in W}{Rwu},\\
+    R_w  & = R \cap (W_w)^2, \text{ અને}\\
+    V_w(p) & = V(p) \cap W_w.
+  \end{align*}
+\end{defn}
+
+\begin{prop}\ollabel{prop:restrict}
+  $\mSat{M}{!A}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $\mSat{M_w}{!A}$.
+\end{prop}
+
+\begin{prob}
+  \olref[int][sem][sem]{prop:restrict} સાબિત કરો.
+\end{prob}
+
+\begin{prop}
+  ધારો કે $\mSat{M}{\Gamma}$ ધરાવતા દરેક નિદર્શ~$\mModel{M}$
+  માટે $\mSat{M}{!A}$. તો $\Gamma \Entails !A$.
+\end{prop}
+
+\begin{proof}
+  ધારો કે $\mSat{M}{\Gamma}[w]$. દરેક~$!B \in \Gamma$
+  પર \olref{prop:restrict} લાગુ કરતાં $\mSat{M_w}{\Gamma}$
+  મળે છે. ધારણા મુજબ $\mSat{M_w}{!A}$. ફરી
+  \olref{prop:restrict} વડે $\mSat{M}{!A}[w]$ મળે છે.
+\end{proof}
+
+\end{document}

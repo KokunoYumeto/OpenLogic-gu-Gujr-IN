@@ -1,0 +1,88 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0605",
+  "checked_at_utc": "2026-09-28T14:09:18.653026+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0605 using definitions to unpack set equality and union; state-only draft",
+  "report": {
+    "unit_id": "OLP-0605",
+    "source_path": "content/methods/proofs/using-definitions.tex",
+    "source_sha256": "0496b9489f10eb402e2eb91b503c7b522c2e73349e1481ceb9781f2e191a3bce",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-using-definitions.tex",
+    "draft_sha256": "bb8e0d0841f4f0a60e829d26fdf3968cf1f800aee79308c21e99e4d0aca4d754",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 71,
+    "target_math_spans_after_corrections": 71,
+    "glossary_tokens": 9,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 713,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\union.tex",
+        "sha256": "8cf83b4f062e7d0efa953119a6a5461180d1fc433271318394aa88b8745d203f",
+        "terms": [
+          "યોગગણ",
+          "ગણો"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-introduction.tex",
+        "sha256": "dc70f7cf288048418dd39f075748e30c2b87b33c531a1a1dc7f9018520c3d688",
+        "terms": [
+          "પ્રતિજ્ઞાપન",
+          "સાબિતી",
+          "પૂર્વધારણાઓ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Frozen source OLP-0605 uses mod/prf/def although the enclosing part uses mth. The draft preserves that literal; SOURCE_GAPS_045_0605.json requires integration review.",
+      "The definendum is the abbreviated expression A=B; the definiens is the bidirectional membership condition, not the other way around.",
+      "The footnote distinguishes one identical set from different ways of designating it, making the definition nontrivial.",
+      "A union B substitutes for definition-variable A and B union A for definition-variable B; proving A=B would not prove union commutativity.",
+      "Both \\text{ or } instances inside set-builder formulas are localized to Gujarati; the exact other mathematical expressions and two-way membership conditions remain structurally aligned.",
+      "The final problem only asks the reader to restate A intersection B nonempty without intersection, equality or empty-set symbols; the answer is not added."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "definiendum",
+        "count": 1,
+        "reason": "Latin technical label retained in parentheses after the Gujarati term"
+      },
+      {
+        "literal": "definiens",
+        "count": 1,
+        "reason": "Latin technical label retained in parentheses after the Gujarati term"
+      },
+      {
+        "literal": "iff",
+        "count": 1,
+        "reason": "Source abbreviation explained as the English shorthand for if and only if"
+      }
+    ],
+    "localized_math_text": [
+      {
+        "source": "\\text{ or }",
+        "target": "\\text{ અથવા }",
+        "count": 2
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [
+      {
+        "path": "work/SOURCE_GAPS_045_0605.json",
+        "sha256": "320f712e46465841c2641bc61d3b0b4a0426715fc38906a1c7c4cd96f57b05c2"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

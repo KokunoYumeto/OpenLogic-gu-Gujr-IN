@@ -1,0 +1,97 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0570",
+  "checked_at_utc": "2026-09-28T01:54:55.320197+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0570 absolute infinity, stage cofinality and an intrinsic Replacement argument; state-only draft",
+  "report": {
+    "unit_id": "OLP-0570",
+    "source_path": "content/set-theory/replacement/absinf.tex",
+    "source_sha256": "fd6cb8f41f12694c74f9cc52336851f0b04eee98efbcdad5b60300c2de0ebea2",
+    "draft_path": "private-state\\work\\batch044_draft\\replacement-absinf.tex",
+    "draft_sha256": "5cc5ecf0f6f33c30790b4fb0836cd7ce9bc6c7861615df4354abdb8f536290b0",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 35,
+    "target_math_spans_after_corrections": 35,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 686,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-limofsize.tex",
+        "sha256": "eabcaafc3c34ee1ba04ad510d3457f9c7fa43998b7f2e622282c14370cb6538c",
+        "terms": [
+          "\\limofsize",
+          "કદની મર્યાદા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-idea.tex",
+        "sha256": "3c6aec7a0807659af5a151a6569ed2680de6e189752b1c629cd5394063de9598",
+        "terms": [
+          "\\omega+\\omega",
+          "બેકી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+        "sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+        "terms": [
+          "\\ollabel{thmOrdinalRepresentation}",
+          "ક્રમ-એકરૂપ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-rank.tex",
+        "sha256": "c12244adb25c2d040cc761178dab315e3fa746fed06f8e3fab4c4c3259e5632a",
+        "terms": [
+          "\\ollabel{ordsetrankalpha}",
+          "સ્તરાંક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-replacement-stage-labels-044.tex",
+        "sha256": "8e0eef71b1a5b4e6c007636c5358566f1eaab911ec7bad63ea32b7eb9f911d16",
+        "terms": [
+          "તબક્કાઓ અખૂટ છે",
+          "કોઈ ગણ તબક્કાઓમાં સહઅંતિમ નથી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The old five stage principle identifiers and both newly localized stage-label identifiers remain exact; the new display strings are verified against frozen style definitions.",
+      "The text distinguishes an informal, morally omega-plus-omega ordering from formal existence of the ordinal and its stage.",
+      "The ordinal representation theorem is only proposed as an axiom and is explicitly weaker than Replacement; no equivalence is asserted.",
+      "The stage-non-cofinal principle uses an upper stage for the image of every set under a stage-valued mapping; all source equations and quantifier instances in the informal Replacement argument remain exact.",
+      "The source explicitly calls formalizing stage non-cofinality over Z difficult and offers an LT extension as one possible route; the Gujarati preserves those qualifications.",
+      "The final absolute-infinity-to-non-cofinality step remains an intuitive plausibility argument rather than a claimed formal derivation."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citeauthor{Shoenfield:AST}",
+        "count": 1,
+        "reason": "Frozen citation key inside a source-matched citation command is a structural identifier, not untranslated prose."
+      }
+    ],
+    "supporting_receipts": [
+      {
+        "path": "work/STAGE_LABEL_LOCALIZATION_044_0570-inex.json",
+        "sha256": "7ce19d19a70ccf6eabebd9ef12042a138daf7d90eca66486c79197854dcbc719"
+      },
+      {
+        "path": "work/STAGE_LABEL_LOCALIZATION_044_0570-cofin.json",
+        "sha256": "677b91bc1974789366d32c73efe489eb4d5d2e3f3c0aae09515903812714ee4a"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

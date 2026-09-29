@@ -1,0 +1,4157 @@
+{
+  "schema": "openlogic-gu-semantic/1",
+  "reviewed_at_utc": "2026-09-07T17:00:00.892253+00:00",
+  "batch": "OLP-0098–0111 First-order Logic signed analytic tableaux under the complete classical first-order profile",
+  "reviewer": "same translation agent",
+  "independent_native_or_human_certification": false,
+  "method": "Fresh comparison of every exact frozen-English and Gujarati linguistic block, with selected independently worded reverse paraphrases focused on signed polarity, branch closure, rule arity and branching, eigenvariable scope, proof-theoretic quantifiers, soundness preservation, identity substitution and all twelve adjacent disclosed source repairs.",
+  "all_drafted_blocks_directly_compared_during_translation": 132,
+  "reverse_paraphrase_samples": 35,
+  "blocks": [
+    {
+      "segment_id": "OLP-0098-B004",
+      "unit_id": "OLP-0098",
+      "source_path": "upstream/content/first-order-logic/tableaux/tableaux.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/tableaux.tex",
+      "source_range_utf8": [
+        128,
+        216
+      ],
+      "target_range_utf8": [
+        128,
+        236
+      ],
+      "source_sha256": "2658f34642e61e2cf12d0b52362afbf75e5e2d0c82da25735038769d56f28c89",
+      "target_sha256": "bae8a3c5c7b156be08e2d0722bd82c82b01b6e2e8c1112b3c413f768781bf413",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The chapter identity, signed-analytic scope and prfTab profile are preserved after OLTAB-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0098-B005",
+      "unit_id": "OLP-0098",
+      "source_path": "upstream/content/first-order-logic/tableaux/tableaux.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/tableaux.tex",
+      "source_range_utf8": [
+        218,
+        292
+      ],
+      "target_range_utf8": [
+        238,
+        409
+      ],
+      "source_sha256": "cfd884d5e71276e5e5a5260b9fbfd7feedfd320cc99fe00e1197119741559f02",
+      "target_sha256": "e8dbf1c4eee42bd1a29d9c599d188a0fa191ffe8401e3db4c6777be45181af0e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The chapter identity, signed-analytic scope and prfTab profile are preserved after OLTAB-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0098-B006",
+      "unit_id": "OLP-0098",
+      "source_path": "upstream/content/first-order-logic/tableaux/tableaux.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/tableaux.tex",
+      "source_range_utf8": [
+        296,
+        415
+      ],
+      "target_range_utf8": [
+        411,
+        1147
+      ],
+      "source_sha256": "266cf6c5dfdb57b19ac06328726fdc2669ac35f6555a8ece23b7989943efa333",
+      "target_sha256": "585aa028fb928f582f737e3ebdf7077e484615e7739c290c7c647f7ca9831c5d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The chapter identity, signed-analytic scope and prfTab profile are preserved after OLTAB-001.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B005",
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_range_utf8": [
+        234,
+        277
+      ],
+      "target_range_utf8": [
+        234,
+        293
+      ],
+      "source_sha256": "9c45cd24ca446c4d5d80062c09d421ad41c66274d8d74a0538ee89410aa57081",
+      "target_sha256": "7f821742064aeea38ec1aeedfca81ade3ece2e3f5f8d61fcbdb89974995d68b7",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B006",
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_range_utf8": [
+        279,
+        588
+      ],
+      "target_range_utf8": [
+        295,
+        905
+      ],
+      "source_sha256": "9abd9278959b403d86306ed12d646b9a1e66c01dd898c3165a4daeaa66a80165",
+      "target_sha256": "308e79a450f4d3594585732827f91df267aaed8053f7e372d7a91f4478cdbf8d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B007",
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_range_utf8": [
+        590,
+        778
+      ],
+      "target_range_utf8": [
+        907,
+        1176
+      ],
+      "source_sha256": "5df885ded19f30dbb2d39ed74370c1e37f3591a74c391b4d7845d93fe65a72e9",
+      "target_sha256": "4632295147c2b6cf4ded846494d5dd4b290a9314b70d2739e9fa483f40f7ae8c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B008",
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_range_utf8": [
+        780,
+        929
+      ],
+      "target_range_utf8": [
+        1178,
+        1445
+      ],
+      "source_sha256": "7aec031d66147cbe0c908aadbf2fe0b2128152aae67d8311ec0a08f90a03621e",
+      "target_sha256": "1df8309dc3569fc06569a1d049de271fc3faf6920669f125761e04c4cf8d1095",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B009",
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_range_utf8": [
+        931,
+        1595
+      ],
+      "target_range_utf8": [
+        1447,
+        2826
+      ],
+      "source_sha256": "6e99e70eb0ea373b81aa56cd3d0c79c77f08e388e88fd0fd333d44479b401289",
+      "target_sha256": "4c647283c172247b5d6ccfee4f740938009ded092529493655ed657d9cf9e27b",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B010",
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_range_utf8": [
+        1597,
+        2210
+      ],
+      "target_range_utf8": [
+        2828,
+        4051
+      ],
+      "source_sha256": "3d3382d5bc942a2b9d517741206d003916e435480f7a26cdefd530ea75a77107",
+      "target_sha256": "3250e14c6c2eda49a90c90cc31c29b958a61231f380852a6b489cadd8d84a356",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B011",
+      "unit_id": "OLP-0099",
+      "source_path": "upstream/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/rules-and-proofs.tex",
+      "source_range_utf8": [
+        2212,
+        2449
+      ],
+      "target_range_utf8": [
+        4053,
+        4532
+      ],
+      "source_sha256": "bb10c27fabaffd4a5712d365d6731159ab1e9552937394360bd9bd3c6c2bc2b7",
+      "target_sha256": "bbc46bd14afbed438e1698e928c8abf1d856052296a00be70066d9e701366b11",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B005",
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_range_utf8": [
+        237,
+        268
+      ],
+      "target_range_utf8": [
+        237,
+        295
+      ],
+      "source_sha256": "2f4ec5ff4d346c7d6530c26a3a1e8594b8b37777a91af9ea0a45f63f72b46e0d",
+      "target_sha256": "6251428c270b8e52ca749614cb2f19e855a78dcbba7d3885d0a0c04aad1f512d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B006",
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_range_utf8": [
+        270,
+        300
+      ],
+      "target_range_utf8": [
+        297,
+        352
+      ],
+      "source_sha256": "ca6b45c33873098084b2878e818ee07e0ccf30e3df881f664d17514a807389df",
+      "target_sha256": "d8f478492afa135e56f3f68c597095e8c305169ea40192efd79476afb0b86c42",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B008",
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_range_utf8": [
+        563,
+        593
+      ],
+      "target_range_utf8": [
+        615,
+        670
+      ],
+      "source_sha256": "12e2c91c01087282935a170a9025e0dc12a58889c5b75b23cce9c88adf487cf1",
+      "target_sha256": "f95ca4491bc473fafe4d73f9702bf8709a8afd330a24dffff19ab5298c26cb27",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B010",
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_range_utf8": [
+        947,
+        976
+      ],
+      "target_range_utf8": [
+        1024,
+        1078
+      ],
+      "source_sha256": "e5de37a181edf8429f13b52ccfbb3fa34466e020f4c2dcd1a7719f4e8a4cd3cb",
+      "target_sha256": "8dfdbe9931b1b7423bc41a784f1d4aab6b0006a07f19f35fdb533f1d313a771a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B012",
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_range_utf8": [
+        1317,
+        1346
+      ],
+      "target_range_utf8": [
+        1419,
+        1473
+      ],
+      "source_sha256": "93ae164a55cdaddc58693c360625a20ba44cd333c68c3a58f0f512e05ed73a49",
+      "target_sha256": "c51bcaa6db34ed16c8a7d6ef48dd9b499606e7bcd5298813c10df1309254f326",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B014",
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_range_utf8": [
+        1687,
+        1712
+      ],
+      "target_range_utf8": [
+        1814,
+        1852
+      ],
+      "source_sha256": "9c583b90a2b9e36857a4e22ee06e5c0db104c70b757af3c2fbf9b94ae9f8afb3",
+      "target_sha256": "191544cc0222b44b59246acd21e812252f111ca4deb3780dbd75e596acdf2524",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B016",
+      "unit_id": "OLP-0100",
+      "source_path": "upstream/content/first-order-logic/tableaux/propositional-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/propositional-rules.tex",
+      "source_range_utf8": [
+        1853,
+        2229
+      ],
+      "target_range_utf8": [
+        1993,
+        2795
+      ],
+      "source_sha256": "8f7e81e2e6e4bc0f478f130da69c48badf1ec1e7010262ccb4ccafb0b62d05fe",
+      "target_sha256": "e7bf911c02dbeaad011bfc105b185f1d2be1f675fd83edb7a5c9ce216c73ff5a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B005",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        182,
+        210
+      ],
+      "target_range_utf8": [
+        182,
+        231
+      ],
+      "source_sha256": "57152bededcd50051b123dd0353ccbd52f7601fb9271ca4a5b39b040ba6ad6c8",
+      "target_sha256": "38b65c9d64d0fe635d86ddde716cb23ffd004b59ebe0aa506f50d3b750600f58",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B006",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        212,
+        245
+      ],
+      "target_range_utf8": [
+        233,
+        291
+      ],
+      "source_sha256": "e35f87b2b63c8849dd20869c94d5616f59d9004364c685874f47bd4fe4db8fa6",
+      "target_sha256": "27ac21ce552cf114138235e6dfb0ac4680dba1d3fc74aea8883ba8f59c750461",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B008",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        539,
+        953
+      ],
+      "target_range_utf8": [
+        585,
+        1274
+      ],
+      "source_sha256": "40cba2ae635def798aec01aba2b6a28e6fa976397e68289e346bf6bcfc79bd0b",
+      "target_sha256": "efbd08a16497a2595efa3e47b0f47a66ba60013d494739cb3a32d818b4e6bd35",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B009",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        955,
+        988
+      ],
+      "target_range_utf8": [
+        1276,
+        1334
+      ],
+      "source_sha256": "8e88892e6e3a5589d00ff7a4174eb50041db5351487f484b37bbfdde43ddf2e0",
+      "target_sha256": "0776eb2b3d1f431fb13d28c3bfeded424c982e40e9a1177b5da5373645363245",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B011",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        1283,
+        1490
+      ],
+      "target_range_utf8": [
+        1629,
+        1952
+      ],
+      "source_sha256": "683137945373c53a85f357216a81f1f313ff3512a51035e9305bf46aafe207fb",
+      "target_sha256": "dffef8c0eb68c4f5a628980c29eb3f8f679e7b0a7fb0d8d675519da7471a978a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B012",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        1492,
+        1669
+      ],
+      "target_range_utf8": [
+        1954,
+        2191
+      ],
+      "source_sha256": "0371ec61649c528ed8f6cbf7cb1370adb233b1305e86c743d6641c793e1a281b",
+      "target_sha256": "d01cf7de5ceb361d14dd66a3b72ceff79968265e62b56adbb7f652b26c01c25f",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B013",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        1671,
+        2669
+      ],
+      "target_range_utf8": [
+        2193,
+        3688
+      ],
+      "source_sha256": "81c3122ce0c5c2451509e5fda4611191a16545fa7a28047c755f3de25d118afe",
+      "target_sha256": "5b551c70fe982d391223aa5f156fb943e189a2b0b11f3ac63d9754e8798a1aac",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B014",
+      "unit_id": "OLP-0101",
+      "source_path": "upstream/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/quantifier-rules.tex",
+      "source_range_utf8": [
+        2671,
+        3833
+      ],
+      "target_range_utf8": [
+        3690,
+        5078
+      ],
+      "source_sha256": "cff550d0ac9c324e1499b5597de48c384b2440686a908a9065260a133316cd66",
+      "target_sha256": "94482f8801204ed438153cbb045ccee9b701ae743a09b766ebda7d47efd48f72",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B005",
+      "unit_id": "OLP-0102",
+      "source_path": "upstream/content/first-order-logic/tableaux/derivations.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/derivations.tex",
+      "source_range_utf8": [
+        229,
+        262
+      ],
+      "target_range_utf8": [
+        229,
+        262
+      ],
+      "source_sha256": "dc139b98b78e5173c6eeeec94b882cc224a11efff39be53c9cb73483a5b04e7b",
+      "target_sha256": "dc139b98b78e5173c6eeeec94b882cc224a11efff39be53c9cb73483a5b04e7b",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B006",
+      "unit_id": "OLP-0102",
+      "source_path": "upstream/content/first-order-logic/tableaux/derivations.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/derivations.tex",
+      "source_range_utf8": [
+        264,
+        589
+      ],
+      "target_range_utf8": [
+        264,
+        883
+      ],
+      "source_sha256": "e438852eb58b45e2d6dda1586ce41c9956e8362267b0c7e4b20e70e33e7cb5bb",
+      "target_sha256": "be8b8fbfeb9d9cfb1ff33449a293ae392326b147d23cc45b566802c512064a7e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B007",
+      "unit_id": "OLP-0102",
+      "source_path": "upstream/content/first-order-logic/tableaux/derivations.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/derivations.tex",
+      "source_range_utf8": [
+        591,
+        1493
+      ],
+      "target_range_utf8": [
+        885,
+        2391
+      ],
+      "source_sha256": "52fc69957a841c5815fe237cd08a4a916291a8ac59bab8e2f3116da85ff5f80c",
+      "target_sha256": "42a5fa0f03b365cca0d3eb12b2e02ccf2582cba043797ceeaa8b5e3e1d3cedc0",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B008",
+      "unit_id": "OLP-0102",
+      "source_path": "upstream/content/first-order-logic/tableaux/derivations.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/derivations.tex",
+      "source_range_utf8": [
+        1495,
+        1745
+      ],
+      "target_range_utf8": [
+        2393,
+        2807
+      ],
+      "source_sha256": "4b964b52b6cef465c881ff41026780e7896133120092f7349bf203a98a277e3c",
+      "target_sha256": "49fcecdc2c52cfe36b65959b85176688b64d1a30373deb57144fb446ba80f32a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B009",
+      "unit_id": "OLP-0102",
+      "source_path": "upstream/content/first-order-logic/tableaux/derivations.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/derivations.tex",
+      "source_range_utf8": [
+        1749,
+        2040
+      ],
+      "target_range_utf8": [
+        2811,
+        3436
+      ],
+      "source_sha256": "25a3f7e84e8bba361a8b539b7c633074f4a6caf7925a70c67138b072b477865b",
+      "target_sha256": "0b575c2425ab701dbd15ba3f4e38ce6f10ae36e76b83aaad43e0c8cd4b32942a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B010",
+      "unit_id": "OLP-0102",
+      "source_path": "upstream/content/first-order-logic/tableaux/derivations.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/derivations.tex",
+      "source_range_utf8": [
+        2044,
+        3770
+      ],
+      "target_range_utf8": [
+        3440,
+        5741
+      ],
+      "source_sha256": "15266fd33f7be4be1e305a026c2e91b617141472c38851863de4e6ac51f9ca31",
+      "target_sha256": "2396435bb6ec3fc366bfb5e2a30622e18b284d27c3bcbab7725ae570b1819988",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B005",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        232,
+        277
+      ],
+      "target_range_utf8": [
+        232,
+        296
+      ],
+      "source_sha256": "00ab9fc56e8cd6a4dd456a9028f773e25c666a28326eea648057bf32b9617d56",
+      "target_sha256": "9fd21634cc2868305a9ef0d9fad392e07ed48954e121bc319fe3f2ce335793e7",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B006",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        279,
+        367
+      ],
+      "target_range_utf8": [
+        298,
+        397
+      ],
+      "source_sha256": "dedaddb6d4d2be99daaa30469403d6760dbce4eb6f1179adbadee28afea854d0",
+      "target_sha256": "9f1a22c523c1fbc107e279e072cab928f8c0e0c0d40d42021cb9aebf65befb54",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B007",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        369,
+        569
+      ],
+      "target_range_utf8": [
+        399,
+        667
+      ],
+      "source_sha256": "15d534c27071bddc5d629bcd8d1b7680c3528df37f61aab45b3d4cf828931d32",
+      "target_sha256": "f4cd2468502f7093579934e230e5dd02351a3bfda8c665f13a4bf2f7068a2c4d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B008",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        571,
+        1765
+      ],
+      "target_range_utf8": [
+        669,
+        2765
+      ],
+      "source_sha256": "2d53c5d3ba64750bae8d907df6724676b58119ecf183155b06ab758ce4eed3ce",
+      "target_sha256": "1ae7127a16ca6991e1ce8d9388bd72aea427ec9a9f472845b815e9c777cfe0f5",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B009",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        1767,
+        2669
+      ],
+      "target_range_utf8": [
+        2767,
+        3940
+      ],
+      "source_sha256": "7e2e7e128eba9132f4e173f562db58c3aae20b21f0c571b58acc3068c10648b2",
+      "target_sha256": "68340fa9b797c46f07df04ca643eff8ea846f3ca3baf061cbc36e34d016ddf80",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B010",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        2671,
+        2761
+      ],
+      "target_range_utf8": [
+        3942,
+        4053
+      ],
+      "source_sha256": "effb27d5019c14b87f7a3aa6b3d182e91781e4ee0f0c3af2a17e2540de099d71",
+      "target_sha256": "9578b509a2b01d2a88dac6377fa5b4a648d909ed7f01a49f6054f235ccf541a6",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B011",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        2763,
+        6946
+      ],
+      "target_range_utf8": [
+        4055,
+        9559
+      ],
+      "source_sha256": "a50e2db0f9dc840534034db084d5a160db7077aed804c370abc9d0666bac5419",
+      "target_sha256": "9493366dbdc81fd60f47c122acbfc60e1613f6c3aabc3980d53208383fc6aedd",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B012",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        6948,
+        11997
+      ],
+      "target_range_utf8": [
+        9561,
+        15467
+      ],
+      "source_sha256": "1c55487ae9a29b732f43f46d13e14d355313edd16848fc3dfdb60c9d546007c0",
+      "target_sha256": "0f1886221344f041bb484c015db17a8e6bddfaeaa707f4d92a537250bb326521",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B013",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        11999,
+        14277
+      ],
+      "target_range_utf8": [
+        15469,
+        17882
+      ],
+      "source_sha256": "a055dec13704efd52750295ade124fb29db4c057fae84cf0a145261ffc1f3cf3",
+      "target_sha256": "598d8e267b111237dd0c132cbd41c7c59175d6390a8fbdebb3116f7f0c693fce",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B014",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        14279,
+        16168
+      ],
+      "target_range_utf8": [
+        17884,
+        19903
+      ],
+      "source_sha256": "fd9521c117d439f98f8114f14bb2e4ed4fb687e9859c9e7f27b38957b7fe7853",
+      "target_sha256": "b0d47a0f79d02522c4afede26ae2cd7387be4ec1ff26474ce39fe98cc97b5837",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B015",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        16170,
+        16581
+      ],
+      "target_range_utf8": [
+        19905,
+        20339
+      ],
+      "source_sha256": "3adb48cdf03b76ff7060b9d1400c4654e807ad3eb96e7f5cf41f4c705141ff6f",
+      "target_sha256": "dfd27faf418867b9a49a8d683015da4497fd66ed8ce28744281e11cb383f2706",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B016",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        16583,
+        17541
+      ],
+      "target_range_utf8": [
+        20341,
+        21909
+      ],
+      "source_sha256": "72b3e22cf72839eeae797ebf7a31cc87ca100ca1ad438650c6d0bdb72678d572",
+      "target_sha256": "a135c12f459e500a37983d5360457befff89839c24549415eb1e036321c456ad",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B017",
+      "unit_id": "OLP-0103",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things.tex",
+      "source_range_utf8": [
+        17543,
+        18208
+      ],
+      "target_range_utf8": [
+        21911,
+        22599
+      ],
+      "source_sha256": "c562f44eb38f82f420003f25d11af299fa1882cf7d44bf413f648484a1f4c886",
+      "target_sha256": "a8d07f0027ad0acfb25b5d67019dc63c569f2191942a44af3e43849080dc51b8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B005",
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_range_utf8": [
+        186,
+        236
+      ],
+      "target_range_utf8": [
+        186,
+        263
+      ],
+      "source_sha256": "8fe5973ba53b315052c8ed3fbbcdd7603366187e6cd805306a4873dfe4abc049",
+      "target_sha256": "e2a253a01d89d02aa8c25be1dc25192660e17c290cee34b09ca1369dc602ea29",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B006",
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_range_utf8": [
+        238,
+        591
+      ],
+      "target_range_utf8": [
+        265,
+        971
+      ],
+      "source_sha256": "6b5df9b49ad9afc0a7a7968f710c255395103d2b53642b22ac1fd54b8a18309e",
+      "target_sha256": "beda567dcbb2046f7f9049e0fa6bdcfd4b14042393a630918cae157085f4c56d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B007",
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_range_utf8": [
+        593,
+        3399
+      ],
+      "target_range_utf8": [
+        973,
+        4267
+      ],
+      "source_sha256": "976f27cbd7e73a4876388ecc1f2158b798630d6a372893e276c0c7fca91f4185",
+      "target_sha256": "f4194182a94169b0b1d16da3908eeda315b87f975dfd5bb162ed8f3e0db9d99e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B008",
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_range_utf8": [
+        3401,
+        7954
+      ],
+      "target_range_utf8": [
+        4269,
+        9988
+      ],
+      "source_sha256": "949b9fa27ad508440e4ff2942f185cadc974967644645868affc815235dea7af",
+      "target_sha256": "9fe4e6c0940b1767ba8735373c117e6665308db5a87a44952ac2721500836a9c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B010",
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_range_utf8": [
+        7967,
+        12159
+      ],
+      "target_range_utf8": [
+        10001,
+        15088
+      ],
+      "source_sha256": "82dce916134bc5410a33afdfec51f16a83fec1002f7b1e50adeaeae4d806adf6",
+      "target_sha256": "ae6785fef5c2b2a5b59a7d2c8a71bdc54cb4a141cb475cd0efd101b7b0af4a18",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B011",
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_range_utf8": [
+        12161,
+        12865
+      ],
+      "target_range_utf8": [
+        15090,
+        15817
+      ],
+      "source_sha256": "12b0699e0fc1b6f49d372d616eb0534b470ec4056919005bb1ff0a23988a4efc",
+      "target_sha256": "93dbc5b98db3f0da1e72e4259c5fad30ee8d438e1a49373281ba9b6d45b5aff7",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B012",
+      "unit_id": "OLP-0104",
+      "source_path": "upstream/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proving-things-quant.tex",
+      "source_range_utf8": [
+        12867,
+        13214
+      ],
+      "target_range_utf8": [
+        15819,
+        16189
+      ],
+      "source_sha256": "a8d21027d870408c69a2ed90f2ee66899e789adc5db606ed6b41d9ae2b0a9a78",
+      "target_sha256": "bf743f85ff6416f5e777da530fa4ac6313c6ba175c1e1f24bd0cb8dced88fcb2",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B005",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        247,
+        282
+      ],
+      "target_range_utf8": [
+        241,
+        321
+      ],
+      "source_sha256": "a4d7f9696615ed4c2bbd4f7c8f942c1bf076c86055419d4a2b6901960af18cc5",
+      "target_sha256": "72d242b2e3c3d16de3bd43df601a6a683236147beb378612ab976143c59f7f1e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B006",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        284,
+        413
+      ],
+      "target_range_utf8": [
+        323,
+        598
+      ],
+      "source_sha256": "0a50091a3a31dc6cc685a7833ffc5e66a8af39166c73785c899f207585010f7b",
+      "target_sha256": "13c4c976c092fce375b756be40be2b7c3013c4dbac158649c56e94e8c6a8128b",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B007",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        415,
+        900
+      ],
+      "target_range_utf8": [
+        600,
+        1675
+      ],
+      "source_sha256": "9b4d265ee0116003cc5ee4d449d4e81de0db2ed2ad6eedcec5a71389c709d3c1",
+      "target_sha256": "c677f72c8ad3cf8ba684d531003f9054588832db808f0766ac20190db59a43f2",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B008",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        903,
+        1111
+      ],
+      "target_range_utf8": [
+        1678,
+        1972
+      ],
+      "source_sha256": "952ba61d850345b5c1bd138488f205cfa307000b456ba4bf1a13abadabccb645",
+      "target_sha256": "dffda16e9fea5ced5071c1f2e9cf6cce085e9d6d6cdc21fe9a7c9acfef18a082",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B009",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1113,
+        1524
+      ],
+      "target_range_utf8": [
+        1974,
+        2539
+      ],
+      "source_sha256": "e2d657a11df732f38ff453166d46ae59262fac02b6361dc638d0050cfc92407b",
+      "target_sha256": "57923662573ae29093d42eb30a290650b608dd04281f10bded9784cf96f214fc",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B010",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1526,
+        1855
+      ],
+      "target_range_utf8": [
+        2541,
+        3040
+      ],
+      "source_sha256": "fb30c4bf04ccf3e05b9732c83fe25de95858238b0af7d94a4350e85ebdd0c565",
+      "target_sha256": "b0b8a585eb6fdd8e53bd5a36d489b94188a76a34dd2eabf3e7449336c9b3d02a",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B011",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1857,
+        1966
+      ],
+      "target_range_utf8": [
+        3042,
+        3183
+      ],
+      "source_sha256": "5d8e818c1c44e8219f194a940afcc1201566e483efcb5ec03a0b945b81a0fcba",
+      "target_sha256": "da733001936646be60bc003adcf395814b1e2d3f56a1b4424727e1be8eb9163d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B012",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        1968,
+        2220
+      ],
+      "target_range_utf8": [
+        3185,
+        3510
+      ],
+      "source_sha256": "26dad73bba4ff3cfbb3cb8a9c0e1050ade1cdd2457b07f203ac79adb13a57223",
+      "target_sha256": "a9714ec3fe8cdf46ea115f9d7f44795a57b5409aba15634656174a618db41541",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B013",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2225,
+        2370
+      ],
+      "target_range_utf8": [
+        3513,
+        3704
+      ],
+      "source_sha256": "06602badc4d4f05c3c735094fed1dffff52b105f739f416004a71e0d843d0d7c",
+      "target_sha256": "ae8fcf0534e7b95ee8d9717adf0a1f0ce174606e6cce635900930ca328793c62",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B014",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2372,
+        2464
+      ],
+      "target_range_utf8": [
+        3706,
+        3848
+      ],
+      "source_sha256": "17564205a076174f8ea0dbe1d6cb6f2ce0571f5d231c289f7e034422a554a8b3",
+      "target_sha256": "00a8544f3a84f6f91ede25afa6249e3f6cae58c9d4568a3328c2f0ca138ea08f",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B015",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2466,
+        2629
+      ],
+      "target_range_utf8": [
+        3850,
+        4050
+      ],
+      "source_sha256": "af7a38f7196c1180e162dd40503c935a060fb8f6691eb5deb730e75f774424a4",
+      "target_sha256": "ad8f99cd19a9988f95a26c61236d75193b078a70cb04b33b7c8b6aa8349441be",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B016",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        2631,
+        3120
+      ],
+      "target_range_utf8": [
+        4052,
+        4661
+      ],
+      "source_sha256": "166229e33eca4be858b74a2422887a40067228d3a08c5840e6e0b8d05d876990",
+      "target_sha256": "a7f406d1fd5ba515ccdf731575509f8e044359de6796065de00a68caddc4f74c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B017",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        3122,
+        3952
+      ],
+      "target_range_utf8": [
+        4663,
+        6421
+      ],
+      "source_sha256": "5c0f35371691540e32d38fe184859e22e2e526327cd37181e7a22c312e27261c",
+      "target_sha256": "e08222be82630a2229e9ce4548f17517f32012ced993565b004fb9bc7601e861",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B018",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        3954,
+        4184
+      ],
+      "target_range_utf8": [
+        6423,
+        6823
+      ],
+      "source_sha256": "660cfcfd7eb33c3f465cc1b41068fd930bdbe06ddebdfaf811c8e763f9f4bbab",
+      "target_sha256": "bbf57e65b1faacb8a8a44fd707fa6d1dbb34daeff5ef4e47bddc38954e7b4212",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B019",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4186,
+        4311
+      ],
+      "target_range_utf8": [
+        6825,
+        7013
+      ],
+      "source_sha256": "2b695ea048b5c3af7a36bfef4ab7731abd58fe6b351d0d1da03088525ec1e192",
+      "target_sha256": "a5061ba3c0344cad2cde4108522cd41cb52d808e90c7559a1b0ec990275e55a2",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B020",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4313,
+        4348
+      ],
+      "target_range_utf8": [
+        7015,
+        7078
+      ],
+      "source_sha256": "d8c6d2d2cb1cd5f40f2a98ada1fb5c447be05e542181c1495d0c8e8ef828e75d",
+      "target_sha256": "5260d96b0b04dffb67a4dcaf934654c71e4cf71bc28e0226d9a5993c9e04b202",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B021",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4350,
+        4440
+      ],
+      "target_range_utf8": [
+        7080,
+        7191
+      ],
+      "source_sha256": "d3d10ab5a2c669928ed9b01ee87230b2092ea25f18f2f96a9883bfd2af21d795",
+      "target_sha256": "169ca5a0550aaa80ea7a0221542a6849df552ad0d75603ed6de3cf8dd5f65ee9",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B022",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4442,
+        4534
+      ],
+      "target_range_utf8": [
+        7193,
+        7306
+      ],
+      "source_sha256": "33d84fa03067c823f7e52eee213c44e737809dd3e5c8c6cff05a63e57b5b4d18",
+      "target_sha256": "f49d669d2880e7aa99cc24d802e3b639d1a1fd984111d4cb5c003b92d5148c8c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B023",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4536,
+        4859
+      ],
+      "target_range_utf8": [
+        7308,
+        7724
+      ],
+      "source_sha256": "838dc841294e52f4cde3593467ba9e049add1add51ccfaaf31d69896d6060229",
+      "target_sha256": "8e918379ee5d20eb42f682f43db982a366a5dc6cefb8034fb10150e0f6544c9b",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B024",
+      "unit_id": "OLP-0105",
+      "source_path": "upstream/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "source_range_utf8": [
+        4861,
+        5504
+      ],
+      "target_range_utf8": [
+        7726,
+        8618
+      ],
+      "source_sha256": "d038c9d170cdfce721ab18fefa140c744814b48c864f088bc736a9a4d0f86a7f",
+      "target_sha256": "e348a9fc982fa3cf166d6aa5c5aa6fbecb949f3582cf487dc6c83fb370337cad",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B005",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        241,
+        295
+      ],
+      "target_range_utf8": [
+        241,
+        314
+      ],
+      "source_sha256": "ec1be7ec6e1691f267264698cd218c78624674606ae509d8d4d427172101a8f7",
+      "target_sha256": "3de5489dfdcfa68c57dd3877af19c6bd9d0cd0b6b8ed6bdab2c0daa669a2c105",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B006",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        297,
+        480
+      ],
+      "target_range_utf8": [
+        316,
+        703
+      ],
+      "source_sha256": "4b0d057e2c7e97206d98d1d07e3f4fb611af24b7daf6bb5e87ca5e0e8c9cc230",
+      "target_sha256": "4adb2f18dfd8c6f9138111156d4cbd6a50397a47cc05b6843f542741b28c637d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B007",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        482,
+        637
+      ],
+      "target_range_utf8": [
+        705,
+        911
+      ],
+      "source_sha256": "84da41fb325465c2b647125a6c8cd42e31c64fee6a320d800a38bfeb0bea770d",
+      "target_sha256": "0514304b257b0bf2d90eec19e5955e7c0731289ce12a18b6122af8dad5e85e9d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B008",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        639,
+        1298
+      ],
+      "target_range_utf8": [
+        913,
+        2280
+      ],
+      "source_sha256": "5071671727b77010e7dfd2b593e4e6ea8289198cb3affae4f6743dd2ceaabf61",
+      "target_sha256": "e35e7abba3491cc2a3ce20beaed9b958167ae0c7b7ea7cebdb0b9d31804b16fc",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B009",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        1300,
+        1418
+      ],
+      "target_range_utf8": [
+        2282,
+        2449
+      ],
+      "source_sha256": "752b780decac87043ecf9304f74c0ddb1eddf54cafa7f6adcb98dd767ce1c992",
+      "target_sha256": "48bc3e874e56def029116fa6c40f2b52da3840e11d89c88ce449cec3d7c4f4ba",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B010",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        1420,
+        1758
+      ],
+      "target_range_utf8": [
+        2451,
+        2959
+      ],
+      "source_sha256": "8b081110c8498ec54a9cdfbec830200d7885e884508c738a859ada3421afa9be",
+      "target_sha256": "da83938d093346f970769e322d1f4e8756c08fc1768e767c19f0aef9b3d3d05d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B011",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        1760,
+        2671
+      ],
+      "target_range_utf8": [
+        2961,
+        4401
+      ],
+      "source_sha256": "0a985efd2aa9d478ab148854f64a555427baa869d3852e9441778a532e2003c6",
+      "target_sha256": "fbcf97734def5719e5d675215b51b62d79d4a9f12a09774b545c93ccfc20cbe6",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B012",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        2673,
+        2775
+      ],
+      "target_range_utf8": [
+        4403,
+        4587
+      ],
+      "source_sha256": "4b0f7da5e58e265d7a259dcc12e82914e6fcd04eec14b4822427c3aef1bfda39",
+      "target_sha256": "44382672b35eb57891d07d98fe691e25e8968065314927b3350aa16e5ad2dd93",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B013",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        2777,
+        2912
+      ],
+      "target_range_utf8": [
+        4589,
+        4759
+      ],
+      "source_sha256": "17aba60cd9562c1f173960b11fc92b40844aada9556e8004e7271a85b01b67cc",
+      "target_sha256": "fdf35e4e660c2c15ea4f514c570046974eaf66224dfb26a1a2f41232c514d820",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B014",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        2914,
+        3620
+      ],
+      "target_range_utf8": [
+        4761,
+        6262
+      ],
+      "source_sha256": "747a5c573f13af06c9045b9593b68cef38a0e22baf66007550f087d852c358dc",
+      "target_sha256": "2966fe4add8b0e76fb1497e982163aa346514788b9246ed2bcaff22e5d9349d1",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B015",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        3622,
+        3795
+      ],
+      "target_range_utf8": [
+        6264,
+        6485
+      ],
+      "source_sha256": "1263ebde7b783d7b4741ce301935e6a86ab4ab6398aa4df18b72bf7b256f3295",
+      "target_sha256": "f00f373650f9d0cbf1fe8b8bf4d8aeda99ba1c3459e881bfa9f2caf546fe417d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B016",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        3797,
+        4549
+      ],
+      "target_range_utf8": [
+        6487,
+        7496
+      ],
+      "source_sha256": "7d284c3882b9e3bbe263b73d28238e1fa52dbfe089b1a3758ff86fa536075e76",
+      "target_sha256": "b72c18d2c0c98ed4ee37bed61ba34dcabdff796840c9cb63150d6a5708ffad01",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B017",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        4555,
+        4848
+      ],
+      "target_range_utf8": [
+        7500,
+        8008
+      ],
+      "source_sha256": "07e178a429720250ca7f74f5a1bde893eead129c905b8ccd32e1980a1b471b86",
+      "target_sha256": "3f3bfd1322356b27b148c236757f4c0039a6f3fe715272beba71dfc7be0e96a9",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B018",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        4854,
+        5263
+      ],
+      "target_range_utf8": [
+        8012,
+        8655
+      ],
+      "source_sha256": "a404ae9e3fa44be1ccb4b233525264b6cc11140620a84a7e0dc7bca0ffa4b314",
+      "target_sha256": "bf7373e1d10d5c0627e51ecda536da4147f0f2b403e9b8f0d6445b3fc954fbf3",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B019",
+      "unit_id": "OLP-0106",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-consistency.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-consistency.tex",
+      "source_range_utf8": [
+        5267,
+        6103
+      ],
+      "target_range_utf8": [
+        8659,
+        10018
+      ],
+      "source_sha256": "47117cc6ddf2bbb89779118c3b9d2aa18aa02c20f514420333e6c722609188d7",
+      "target_sha256": "c753a2edeacef910f139fbe3b5077364e6cd64aa245fdc1e0215acab3dffda9e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B006",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        356,
+        428
+      ],
+      "target_range_utf8": [
+        356,
+        457
+      ],
+      "source_sha256": "a4600572c5e405be7d1e4648b7ab99922a340118a560981e1d16d94433928720",
+      "target_sha256": "231701fdeb7a3bf8ddd41ca0e5ac125829aef098a1dd684ae30f368c449f8adf",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B007",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        430,
+        779
+      ],
+      "target_range_utf8": [
+        459,
+        1095
+      ],
+      "source_sha256": "ce07eacc4ae1bdc09ccdfca7db287f466277492b857c59d9d4bcea27666944a6",
+      "target_sha256": "c9e0106aeefbed583df339dd5c678b349667dbaa469dc83be1c2826615295b15",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B008",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        781,
+        1062
+      ],
+      "target_range_utf8": [
+        1097,
+        1408
+      ],
+      "source_sha256": "eb7cdfab60475ee2c4b1574a099c6bfae6feef1406e415b3b6dc91806b24b325",
+      "target_sha256": "b2b56217433fa15d61b9bdca038bbe52bb719e7aa42fad42f670295f9dc3e90d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B009",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        1064,
+        2533
+      ],
+      "target_range_utf8": [
+        1410,
+        3500
+      ],
+      "source_sha256": "1d3fc13c472f013fd81ea4aa5d55bf0908d7093c5569a58530703dda4e0fc8bb",
+      "target_sha256": "15224bf825d90d5dec7ba5cea78ea120c69a6b38060b4afb5602059833f0d925",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B010",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        2535,
+        2754
+      ],
+      "target_range_utf8": [
+        3502,
+        3772
+      ],
+      "source_sha256": "58b7a28096a9a39ae5f64c202de16406fafcf55c7bf1b1d83c0aed4b638405ce",
+      "target_sha256": "1e7ee658c3e4a23453672808e478ed58094acaddb8669fd6d82169604efb180c",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B011",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        2756,
+        4402
+      ],
+      "target_range_utf8": [
+        3774,
+        6010
+      ],
+      "source_sha256": "071ca6bd1b8159c9fcfa7b29361775e61a8405bd41f5ae4c5d81f324fe1eefdc",
+      "target_sha256": "02b8743d32525a64548192fdd0aea90f1e303d7063fd8606d282c614a90277a1",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B012",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        4404,
+        4682
+      ],
+      "target_range_utf8": [
+        6012,
+        6323
+      ],
+      "source_sha256": "0c52c98742b62937eb032be41d7b659d165389e0a64a1b1fe3347a6e6fed81ab",
+      "target_sha256": "49772504c98328f9c9e9a301493cbe2fc5183181d3dd4937c469d7c071926b4d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B013",
+      "unit_id": "OLP-0107",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-propositional.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-propositional.tex",
+      "source_range_utf8": [
+        4684,
+        6281
+      ],
+      "target_range_utf8": [
+        6325,
+        7971
+      ],
+      "source_sha256": "2aaa10f93987bc784af47e11eea086dc18d952b96ff5b2800f8e77dd29018f20",
+      "target_sha256": "fe3b0e4d85d86414d49f3637831a037f93b278a13ad18bc9a502e930042c2592",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0108-B004",
+      "unit_id": "OLP-0108",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_range_utf8": [
+        163,
+        246
+      ],
+      "target_range_utf8": [
+        163,
+        261
+      ],
+      "source_sha256": "f4136d095171373286954402c697580f839badd7ece8fc94922201ca3a3e40f0",
+      "target_sha256": "7d3c94c4d7da1e5d537c5e534fd607f89eed3ae5c4f5f63b6d666e4a3876725d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization preserves both freshness restrictions, and the existential and universal derivability tableaux retain their signs after OLTAB-008.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0108-B005",
+      "unit_id": "OLP-0108",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_range_utf8": [
+        248,
+        405
+      ],
+      "target_range_utf8": [
+        263,
+        559
+      ],
+      "source_sha256": "69369c5d2d9aa1359a40ccc50ef816fba9c4fea3cc75dfaec91528abc7113b4f",
+      "target_sha256": "a2c2f122ef7cff67c5d882b2b3224fa79aff658a0ea06838a958997e4d4c3538",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization preserves both freshness restrictions, and the existential and universal derivability tableaux retain their signs after OLTAB-008.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0108-B006",
+      "unit_id": "OLP-0108",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_range_utf8": [
+        407,
+        592
+      ],
+      "target_range_utf8": [
+        561,
+        811
+      ],
+      "source_sha256": "77d6ce83f3233f27da646d4c0f4f7e50a83b1620b30a0209219c9cc576cd7df2",
+      "target_sha256": "01cc4e99b2906c8426738ea621f40d7ad544ac5275f7b5f31cd837929e967723",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization preserves both freshness restrictions, and the existential and universal derivability tableaux retain their signs after OLTAB-008.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0108-B007",
+      "unit_id": "OLP-0108",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_range_utf8": [
+        594,
+        2021
+      ],
+      "target_range_utf8": [
+        813,
+        2716
+      ],
+      "source_sha256": "d2b7481ebb75b0106b8d3fcf4f5b1e09dc2ce3632584286713dccf462b4addd5",
+      "target_sha256": "29231496f808a0c90172992edde27ea16cfc21c991338f3d9f5e661908562f8d",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization preserves both freshness restrictions, and the existential and universal derivability tableaux retain their signs after OLTAB-008.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0108-B009",
+      "unit_id": "OLP-0108",
+      "source_path": "upstream/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/provability-quantifiers.tex",
+      "source_range_utf8": [
+        2252,
+        3043
+      ],
+      "target_range_utf8": [
+        2947,
+        4198
+      ],
+      "source_sha256": "7bc3e80cf603e45434fb7f8f13c7f7d1627dd4a9d58d993502e4c58ca889dd0a",
+      "target_sha256": "10726772381b019124f0133b5c6ad7b4c39d0593ad47edf269df0248f69031c2",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Strong generalization preserves both freshness restrictions, and the existential and universal derivability tableaux retain their signs after OLTAB-008.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B005",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        237,
+        258
+      ],
+      "target_range_utf8": [
+        231,
+        267
+      ],
+      "source_sha256": "6a622c1f67b0b1f78c617967434c93120d7a5e017d0a194285e61c1365da3980",
+      "target_sha256": "beccf4596efc564dce45606c666f37c9abdb47ab6d8ccbcf4ea660e019394ead",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B006",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        260,
+        1096
+      ],
+      "target_range_utf8": [
+        269,
+        1889
+      ],
+      "source_sha256": "997f566d6607eb59f367cf90e3fe977dda65b3f413d8724771723e4454d323a0",
+      "target_sha256": "7026b3b1b94ac289d88911a796ebc40a3263851e0851a6a5c6f156ab638cc9f9",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B007",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        1098,
+        1558
+      ],
+      "target_range_utf8": [
+        1891,
+        2909
+      ],
+      "source_sha256": "044fab64c77b6b786fe2ae8767d41597ab5210cbdb6452d11540d60b73b66376",
+      "target_sha256": "adb70062b90dfe030d504abfb0fcc9a917baa34c3782c3105a1e4caf3b2295ba",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B008",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        1560,
+        2129
+      ],
+      "target_range_utf8": [
+        2911,
+        3777
+      ],
+      "source_sha256": "e8458075f07a276bec13e9d1f9c7b4d12c0752e3cd804517b96af9c12c768820",
+      "target_sha256": "4d2d2808656f5200230471d2aab5fa000381cb09452df90821237daa24a06aa6",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B009",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        2131,
+        2264
+      ],
+      "target_range_utf8": [
+        3779,
+        3973
+      ],
+      "source_sha256": "3481d576ea43a5a7ed5804ab1bd03aa953a54fbaeecb59cb2039e1fc34fa1213",
+      "target_sha256": "a30dab146791ebff0367038c4de6a5f129af29cf12c5264382a03116ccdb3c33",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B010",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        2266,
+        2472
+      ],
+      "target_range_utf8": [
+        3975,
+        4376
+      ],
+      "source_sha256": "2af753087640a0cb883e580e031b739d2d667782b2adfb709c9d8eff85097b0e",
+      "target_sha256": "832adaee087d0c6f753c633b083af16f06e0d4e1416eecb0939bb7b1305166fa",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B011",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        2474,
+        3032
+      ],
+      "target_range_utf8": [
+        4378,
+        5465
+      ],
+      "source_sha256": "a3c3fb81921fb256e0e8824f90fa390c847a6e543a07f9109ba8270aef6accc7",
+      "target_sha256": "979a35753d04af4eb9724886cc5f591b38a9033d1e4350f872c8c362a2924ab8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B012",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        3034,
+        3524
+      ],
+      "target_range_utf8": [
+        5467,
+        6556
+      ],
+      "source_sha256": "a0c23d8e7ec40d0f26ae2335d02662b4005452a6770c911ee23be213676c1e37",
+      "target_sha256": "d9d3c65250faee2cd9a5337df971a6f0f786d20ad03c7d7a20f687d9ee2f40a6",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B013",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        3526,
+        3967
+      ],
+      "target_range_utf8": [
+        6558,
+        7312
+      ],
+      "source_sha256": "dd4b6ecd2f85cebc3d29b90ba8a8aa413bfad4cf4597d6c3104472571d9441ff",
+      "target_sha256": "b65da44f7c6d710e16d5f2c766213d583d573c886d65a75aaac36c737d801ba8",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B014",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        3971,
+        5844
+      ],
+      "target_range_utf8": [
+        7314,
+        9940
+      ],
+      "source_sha256": "b8a5d144ae39f489743cbec02de41e97933da1a2ec7593b261a339ac0ac49386",
+      "target_sha256": "e3b169ef9629e858d9295eee743fe055639f35b337f74b2c43c8332e70c89e31",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B015",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        5846,
+        6261
+      ],
+      "target_range_utf8": [
+        9942,
+        10484
+      ],
+      "source_sha256": "facda82b9900dd0c465bdf9d040505163abcec5ceab847ea3c43a0b6e920ef61",
+      "target_sha256": "90b1dd8701ab0f881d71a312e20f2a89ea5af11e05316b84316ff79965a47683",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B016",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        6263,
+        6781
+      ],
+      "target_range_utf8": [
+        10486,
+        11293
+      ],
+      "source_sha256": "3857fb8c56ce8759b52ea376b6e7a9609ab9a1ff85ebe98cae874277a80479a7",
+      "target_sha256": "ce5f7e8572301836fc3ff7fb06d70fb97a832b5badeb183c196754f6f9dff928",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B017",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        6785,
+        7188
+      ],
+      "target_range_utf8": [
+        11297,
+        11873
+      ],
+      "source_sha256": "037d718d4d1159780df9307f162e77653348b65126b1587f1df820d89c3c33a7",
+      "target_sha256": "ef72dfadba2c005a9ac639cf764e0a3026c54e6c9105000ec8ab40def7191158",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B018",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        7192,
+        9320
+      ],
+      "target_range_utf8": [
+        11877,
+        15552
+      ],
+      "source_sha256": "69c9e21edb92621d8a07b2ffd779dd4e93d02edff698e65e4e7176e92a30c7ca",
+      "target_sha256": "c5edd8617aba019e3b99501be389ec46fa39170287668ef62594a66a14dc82b2",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B019",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        9322,
+        9439
+      ],
+      "target_range_utf8": [
+        15554,
+        15697
+      ],
+      "source_sha256": "5ce5f2116176ec8b4c9adbddd6b01d323afe5479107baa4bfb5e219c7e81b385",
+      "target_sha256": "7004f30c6931316912d1acc6dbf22c16a31893b9acce9ace99273ce81a37a6e9",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B020",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        9441,
+        9560
+      ],
+      "target_range_utf8": [
+        15699,
+        15844
+      ],
+      "source_sha256": "e9eff166e436fb9a4729c660824dde7675a52b4196f5a8ac1a795ca2072d83d5",
+      "target_sha256": "9b10b969a0a73e37a9dab9504edae93a0bcc4364a7ae811e82bc9d59f84486a1",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B021",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        9562,
+        9674
+      ],
+      "target_range_utf8": [
+        15846,
+        16017
+      ],
+      "source_sha256": "52b68a0b47b35124b31d2c5a3c4c3ef920b847477006ac047a67c0b401a3222b",
+      "target_sha256": "7c3c2e89d1f864a5c431e5eb745806b8cb7b05e23128a6e6bc3f97bba1904ddd",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B022",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        9676,
+        9782
+      ],
+      "target_range_utf8": [
+        16019,
+        16142
+      ],
+      "source_sha256": "f3c289c959dbe94008370aff80da14f5286a1d5b6f2d851f62ab04a27c344339",
+      "target_sha256": "566d7c7e8aebcb3f1d0991d28f8e30984d48930f5a55e9c1dd5d7ef81cb4de6e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B023",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        9784,
+        10268
+      ],
+      "target_range_utf8": [
+        16144,
+        16826
+      ],
+      "source_sha256": "cca5f068cbd00342cd90052ea10f87410e20977bcbc112dcc85cb523eb814afc",
+      "target_sha256": "a6b4800000ea7a3b55925ba6b1f11cccc8debdd76b1b47034faa845c77e43490",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B024",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        10270,
+        10378
+      ],
+      "target_range_utf8": [
+        16828,
+        16975
+      ],
+      "source_sha256": "a5c185cafd40fc5d3e8d1170584d20ebbaed91d9cc0d14c201ec05e1156950aa",
+      "target_sha256": "fb1b2658c3291681aee30235f2bbfacc74f9df3263d9423bf91d182f67e842bb",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B025",
+      "unit_id": "OLP-0109",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness.tex",
+      "source_range_utf8": [
+        10380,
+        10809
+      ],
+      "target_range_utf8": [
+        16977,
+        17594
+      ],
+      "source_sha256": "2ca52c0c24a0d4fec1eef3cf3c0750b6e35f869837251313b843de783e8bc05a",
+      "target_sha256": "37e9ea6d6f1e09a452222d1d9a14d95dbed9ba08822b4e68b3c681f69f59decb",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B005",
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "source_range_utf8": [
+        174,
+        235
+      ],
+      "target_range_utf8": [
+        174,
+        249
+      ],
+      "source_sha256": "50c7e87045393969931f7773a1ccca5d378c667d42bbe51a905953ccf1c5a772",
+      "target_sha256": "fc9219ec628d2fdde982c390bb0b426fb3780250a50d1d0d2b6aaf936fbf46fa",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B006",
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "source_range_utf8": [
+        237,
+        370
+      ],
+      "target_range_utf8": [
+        251,
+        499
+      ],
+      "source_sha256": "9334bf12b3c244f647a0ac7d16b1dea4e5ae36a2359cf8b833dfb8b5f12dbb5b",
+      "target_sha256": "26424902d970f936e1e299314bd3d5a425c109a48e757ab12dc481e16034c8b5",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B007",
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "source_range_utf8": [
+        372,
+        1060
+      ],
+      "target_range_utf8": [
+        501,
+        1314
+      ],
+      "source_sha256": "7336ffafe27c89a224804bd9cffd8ec8a5df89874c39f45691150515e138ce83",
+      "target_sha256": "5c8e7af29404ba212384459b9b09bd81821611982d5906d5f35738a1b35426b6",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B008",
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "source_range_utf8": [
+        1062,
+        1509
+      ],
+      "target_range_utf8": [
+        1316,
+        1967
+      ],
+      "source_sha256": "55cf21ecef46e0266b40742296df89e62bcc365b50b71dbf0ff6ed5bc309c31f",
+      "target_sha256": "4556b38e8ebf211cfe8fdb905251574a97fba16c1adc1231a2022d942403e723",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B009",
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "source_range_utf8": [
+        1511,
+        2164
+      ],
+      "target_range_utf8": [
+        1969,
+        3408
+      ],
+      "source_sha256": "a86777fa8afd17b6ce391c12ed7b01eabf2b928118ab8095e74d3136a55b0e9c",
+      "target_sha256": "4b6074991dc0d329213735e3d97dbcd1425b8fdb8281c24dcf8aa689fdca3140",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B010",
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "source_range_utf8": [
+        2166,
+        2990
+      ],
+      "target_range_utf8": [
+        3410,
+        4912
+      ],
+      "source_sha256": "92e035e14531db5eceef74ea9d4153b64d0a253e84ed32cbbdc2189f06ddf11d",
+      "target_sha256": "a21ae0d45b986d41fa8d3b6c879dbde586a56dd5e5d8bdf7051809b91b617659",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B011",
+      "unit_id": "OLP-0110",
+      "source_path": "upstream/content/first-order-logic/tableaux/identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/identity.tex",
+      "source_range_utf8": [
+        2992,
+        3379
+      ],
+      "target_range_utf8": [
+        4914,
+        5323
+      ],
+      "source_sha256": "7bdcc3170edd6b99fd1bd2be046ae61033d66c3e1c92999ff070660051ae16e3",
+      "target_sha256": "5b8244145d8d72ef188b44efd387c862d2e836a0a5f1dd98339067d15dba1a9e",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0111-B005",
+      "unit_id": "OLP-0111",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_range_utf8": [
+        184,
+        233
+      ],
+      "target_range_utf8": [
+        184,
+        256
+      ],
+      "source_sha256": "ef64c5def19cab3f7a5605165d11736f7d7de61cf1826e780c6d4591d68a589e",
+      "target_sha256": "42eb0f43e04698ff54d988fe58a37422eb54b24161cdd33482cb920aa2ad26f3",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves reflexivity, equality of term values, extensionality transfer and signed polarity after OLTAB-012.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0111-B006",
+      "unit_id": "OLP-0111",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_range_utf8": [
+        235,
+        347
+      ],
+      "target_range_utf8": [
+        258,
+        469
+      ],
+      "source_sha256": "05b2d65a60a042122641208b18933813a660a5b38d81fb4a6f88cdceed50439b",
+      "target_sha256": "075fdd4db3e735575886395390cf01d9d6b90859df4fc1b500bf541d4ba2af72",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves reflexivity, equality of term values, extensionality transfer and signed polarity after OLTAB-012.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0111-B007",
+      "unit_id": "OLP-0111",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_range_utf8": [
+        349,
+        651
+      ],
+      "target_range_utf8": [
+        471,
+        1048
+      ],
+      "source_sha256": "ba6cb76fe0c7967909f367d56bcc2b04217f1c1845da3500c8cf69b54e32ff5f",
+      "target_sha256": "5bc05e269f12917e9bbaa506e2081be8c0e8bb43d465517613bcc3b9f3c33495",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves reflexivity, equality of term values, extensionality transfer and signed polarity after OLTAB-012.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0111-B008",
+      "unit_id": "OLP-0111",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_range_utf8": [
+        653,
+        871
+      ],
+      "target_range_utf8": [
+        1050,
+        1427
+      ],
+      "source_sha256": "d72fff3390d68db9b8bd54ad16058c359190e86217b6a77e5a0ee0eddfdc9390",
+      "target_sha256": "32ed77473d520bb6b6f971ec6c98f035e8ae6574d8b00f4ccf71d48915e4c64b",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves reflexivity, equality of term values, extensionality transfer and signed polarity after OLTAB-012.",
+      "status": "same_agent_semantic_comparison_passed"
+    },
+    {
+      "segment_id": "OLP-0111-B009",
+      "unit_id": "OLP-0111",
+      "source_path": "upstream/content/first-order-logic/tableaux/soundness-identity.tex",
+      "target_path": "gu/content/first-order-logic/tableaux/soundness-identity.tex",
+      "source_range_utf8": [
+        873,
+        1683
+      ],
+      "target_range_utf8": [
+        1429,
+        2964
+      ],
+      "source_sha256": "e3ba0db63dc36483d473c59dc6f6872ea473749a46d639ab95509ef92dacf308",
+      "target_sha256": "ae4f862bea2287be83bc7ab0872c15ff690c0e83537e30086380ff44971e6369",
+      "consulted_passage_ids": [
+        "GU-P065",
+        "GU-P067",
+        "GU-P070",
+        "GU-P072",
+        "GU-P073",
+        "GU-P074",
+        "GU-P075",
+        "GU-P076",
+        "GU-P077"
+      ],
+      "assessment": "Identity soundness preserves reflexivity, equality of term values, extensionality transfer and signed polarity after OLTAB-012.",
+      "status": "same_agent_semantic_comparison_passed"
+    }
+  ],
+  "samples": [
+    {
+      "segment_id": "OLP-0098-B005",
+      "unit_id": "OLP-0098",
+      "source_sha256": "cfd884d5e71276e5e5a5260b9fbfd7feedfd320cc99fe00e1197119741559f02",
+      "target_sha256": "e8dbf1c4eee42bd1a29d9c599d188a0fa191ffe8401e3db4c6777be45181af0e",
+      "reverse_paraphrase": "The chapter introduces a signed analytic tableaux system.",
+      "assessment": "The chapter identity, signed-analytic scope and prfTab profile are preserved after OLTAB-001.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0098-B006",
+      "unit_id": "OLP-0098",
+      "source_sha256": "266cf6c5dfdb57b19ac06328726fdc2669ac35f6555a8ece23b7989943efa333",
+      "target_sha256": "585aa028fb928f582f737e3ebdf7077e484615e7739c290c7c647f7ca9831c5d",
+      "reverse_paraphrase": "The prfTab tag controls content about tableaux as a proof system; OLTAB-001 repairs the copied reference to natural deduction.",
+      "assessment": "The chapter identity, signed-analytic scope and prfTab profile are preserved after OLTAB-001.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B006",
+      "unit_id": "OLP-0099",
+      "source_sha256": "9abd9278959b403d86306ed12d646b9a1e66c01dd898c3165a4daeaa66a80165",
+      "target_sha256": "308e79a450f4d3594585732827f91df267aaed8053f7e372d7a91f4478cdbf8d",
+      "reverse_paraphrase": "A tableau systematically explores how sentences may be true or false by arranging truth-signed formulas in a downward-growing tree.",
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B010",
+      "unit_id": "OLP-0099",
+      "source_sha256": "3d3382d5bc942a2b9d517741206d003916e435480f7a26cdefd530ea75a77107",
+      "target_sha256": "3250e14c6c2eda49a90c90cc31c29b958a61231f380852a6b489cadd8d84a356",
+      "reverse_paraphrase": "A branch closes when it contains both truth signs for the same formula, and a tableau closes only when every branch does.",
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0099-B011",
+      "unit_id": "OLP-0099",
+      "source_sha256": "bb10c27fabaffd4a5712d365d6731159ab1e9552937394360bd9bd3c6c2bc2b7",
+      "target_sha256": "bbc46bd14afbed438e1698e928c8abf1d856052296a00be70066d9e701366b11",
+      "reverse_paraphrase": "A closed tableau rooted in false A eliminates every way A could be false, so A holds in every structure.",
+      "assessment": "Signed-formula polarity, downward tree structure, rule application scope and the definitions of branch and tableau closure are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0100-B016",
+      "unit_id": "OLP-0100",
+      "source_sha256": "8f7e81e2e6e4bc0f478f130da69c48badf1ec1e7010262ccb4ccafb0b62d05fe",
+      "target_sha256": "e7bf911c02dbeaad011bfc105b185f1d2be1f675fd83edb7a5c9ce216c73ff5a",
+      "reverse_paraphrase": "Cut may split every branch into a True-A side and a False-A side; it is eliminable but useful for combining tableaux.",
+      "assessment": "Every propositional rule retains its sign, connective, arity and branching behavior, while Cut retains its optional two-way split.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B008",
+      "unit_id": "OLP-0101",
+      "source_sha256": "40cba2ae635def798aec01aba2b6a28e6fa976397e68289e346bf6bcfc79bd0b",
+      "target_sha256": "efbd08a16497a2595efa3e47b0f47a66ba60013d494739cb3a32d818b4e6bd35",
+      "reverse_paraphrase": "True-universal accepts a closed term, while false-universal introduces a constant fresh from the whole preceding branch.",
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B013",
+      "unit_id": "OLP-0101",
+      "source_sha256": "81c3122ce0c5c2451509e5fda4611191a16545fa7a28047c755f3de25d118afe",
+      "target_sha256": "5b551c70fe982d391223aa5f156fb943e189a2b0b11f3ac63d9754e8798a1aac",
+      "reverse_paraphrase": "Unrestricted instantiation may reuse a term already in A, but an eigenvariable may not occur in A; the valid and invalid examples preserve that distinction.",
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0101-B014",
+      "unit_id": "OLP-0101",
+      "source_sha256": "cff550d0ac9c324e1499b5597de48c384b2440686a908a9065260a133316cd66",
+      "target_sha256": "94482f8801204ed438153cbb045ccee9b701ae743a09b766ebda7d47efd48f72",
+      "reverse_paraphrase": "Freshness for true-existential and false-universal is required for soundness; omitting it would wrongly close the displayed invalid implication.",
+      "assessment": "Closed-term scope, eigenvariable freshness, substitution convention and the invalid counterexample all preserve their rule-specific polarity.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B007",
+      "unit_id": "OLP-0102",
+      "source_sha256": "52fc69957a841c5815fe237cd08a4a916291a8ac59bab8e2f3116da85ff5f80c",
+      "target_sha256": "42a5fa0f03b365cca0d3eb12b2e02ccf2582cba043797ceeaa8b5e3e1d3cedc0",
+      "reverse_paraphrase": "A tableau is a finite signed-formula tree with its assumptions at the top and every later formula licensed by a rule applied above it; openness and closure are branchwise.",
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0102-B010",
+      "unit_id": "OLP-0102",
+      "source_sha256": "15266fd33f7be4be1e305a026c2e91b617141472c38851863de4e6ac51f9ca31",
+      "target_sha256": "2396435bb6ec3fc366bfb5e2a30622e18b284d27c3bcbab7725ae570b1819988",
+      "reverse_paraphrase": "The example expands true A-and-not-A into true A and true not-A, then obtains false A and closes the branch.",
+      "assessment": "The inductive and finite-tree definitions, top assumptions, rule-generated descendants, open branches and closed tableaux are preserved.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B008",
+      "unit_id": "OLP-0103",
+      "source_sha256": "2d53c5d3ba64750bae8d907df6724676b58119ecf183155b06ab758ce4eed3ce",
+      "target_sha256": "1ae7127a16ca6991e1ce8d9388bd72aea427ec9a9f472845b815e9c777cfe0f5",
+      "reverse_paraphrase": "A checkmark records that the unique rule for a signed main connective has been applied on every open branch, rather than merely once somewhere.",
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B011",
+      "unit_id": "OLP-0103",
+      "source_sha256": "a50e2db0f9dc840534034db084d5a160db7077aed804c370abc9d0666bac5419",
+      "target_sha256": "9493366dbdc81fd60f47c122acbfc60e1613f6c3aabc3980d53208383fc6aedd",
+      "reverse_paraphrase": "The second example first branches on true disjunction, propagates false-conditional conclusions to both branches, and closes each branch with opposite signs.",
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0103-B016",
+      "unit_id": "OLP-0103",
+      "source_sha256": "72b3e22cf72839eeae797ebf7a31cc87ca100ca1ad438650c6d0bdb72678d572",
+      "target_sha256": "a135c12f459e500a37983d5360457befff89839c24549415eb1e036321c456ad",
+      "reverse_paraphrase": "The exercise retains each signed premise as a separate formula; OLTAB-002 restores true not-B as a separate assumption instead of placing it inside another formula.",
+      "assessment": "The worked propositional tableaux preserve rule order, checkmark scope, branch propagation, line references and every exercise formula after OLTAB-002.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B006",
+      "unit_id": "OLP-0104",
+      "source_sha256": "6b5df9b49ad9afc0a7a7968f710c255395103d2b53642b22ac1fd54b8a18309e",
+      "target_sha256": "beda567dcbb2046f7f9049e0fa6bdcfd4b14042393a630918cae157085f4c56d",
+      "reverse_paraphrase": "Quantified proof search should generally apply eigenvariable-constrained rules before later lines can introduce constants that would violate freshness.",
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B008",
+      "unit_id": "OLP-0104",
+      "source_sha256": "949b9fa27ad508440e4ff2942f185cadc974967644645868affc815235dea7af",
+      "target_sha256": "9fe4e6c0940b1767ba8735373c117e6665308db5a87a44952ac2721500836a9c",
+      "reverse_paraphrase": "The worked multi-premise tableau chooses a fresh constant for true-existential before instantiating the unrestricted universal and false-existential rules.",
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0104-B010",
+      "unit_id": "OLP-0104",
+      "source_sha256": "82dce916134bc5410a33afdfec51f16a83fec1002f7b1e50adeaeae4d806adf6",
+      "target_sha256": "ae6785fef5c2b2a5b59a7d2c8a71bdc54cb4a141cb475cd0efd101b7b0af4a18",
+      "reverse_paraphrase": "Unrestricted quantifier rules may need repeated application as new constants appear, so delaying them can avoid duplicating work.",
+      "assessment": "The quantified examples preserve eigenvariable-first proof search, delayed unrestricted instantiation, constant freshness and every branch dependency.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B009",
+      "unit_id": "OLP-0105",
+      "source_sha256": "e2d657a11df732f38ff453166d46ae59262fac02b6361dc638d0050cfc92407b",
+      "target_sha256": "57923662573ae29093d42eb30a290650b608dd04281f10bded9784cf96f214fc",
+      "reverse_paraphrase": "Gamma derives A exactly when some finite subset of Gamma, signed true, closes together with false A; OLTAB-003 restores the finite-set braces.",
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B010",
+      "unit_id": "OLP-0105",
+      "source_sha256": "fb30c4bf04ccf3e05b9732c83fe25de95858238b0af7d94a4350e85ebdd0c565",
+      "target_sha256": "b0b8a585eb6fdd8e53bd5a36d489b94188a76a34dd2eabf3e7449336c9b3d02a",
+      "reverse_paraphrase": "Gamma is inconsistent exactly when some finite subset of Gamma, with all members signed true, has a closed tableau.",
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B017",
+      "unit_id": "OLP-0105",
+      "source_sha256": "5c0f35371691540e32d38fe184859e22e2e526327cd37181e7a22c312e27261c",
+      "target_sha256": "e08222be82630a2229e9ce4548f17517f32012ced993565b004fb9bc7601e861",
+      "reverse_paraphrase": "Transitivity uses Cut on A: one branch receives the closed tableau deriving B from A and Delta, while the other receives the closed tableau deriving A from Gamma.",
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0105-B023",
+      "unit_id": "OLP-0105",
+      "source_sha256": "838dc841294e52f4cde3593467ba9e049add1add51ccfaaf31d69896d6060229",
+      "target_sha256": "8e918379ee5d20eb42f682f43db982a366a5dc6cefb8034fb10150e0f6544c9b",
+      "reverse_paraphrase": "Proof-theoretic compactness gives a finite subset witnessing derivability, and consistency follows when every finite subset is consistent.",
+      "assessment": "Theoremhood, derivability, consistency, transitivity by Cut and compactness preserve their finite-witness quantifiers after OLTAB-003.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B008",
+      "unit_id": "OLP-0106",
+      "source_sha256": "5071671727b77010e7dfd2b593e4e6ea8289198cb3affae4f6743dd2ceaabf61",
+      "target_sha256": "e35e7abba3491cc2a3ce20beaed9b958167ae0c7b7ea7cebdb0b9d31804b16fc",
+      "reverse_paraphrase": "The first proposition combines two finite closed tableaux with Cut on A; OLTAB-004 restores the second finite set's final index m.",
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B010",
+      "unit_id": "OLP-0106",
+      "source_sha256": "8b081110c8498ec54a9cdfbec830200d7885e884508c738a859ada3421afa9be",
+      "target_sha256": "da83938d093346f970769e322d1f4e8756c08fc1768e767c19f0aef9b3d3d05d",
+      "reverse_paraphrase": "A closed tableau for false A plus true Gamma becomes one for true not-A plus true Gamma through the true-negation rule; OLTAB-005 restores that rule's premise.",
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0106-B016",
+      "unit_id": "OLP-0106",
+      "source_sha256": "7d284c3882b9e3bbe263b73d28238e1fa52dbfe089b1a3758ff86fa536075e76",
+      "target_sha256": "b72c18d2c0c98ed4ee37bed61ba34dcabdff796840c9cb63150d6a5708ffad01",
+      "reverse_paraphrase": "If both Gamma-with-A and Gamma-with-not-A are inconsistent, Cut supplies true A on one branch and false A on the other so the two witnesses can be attached.",
+      "assessment": "All links between derivability and inconsistency preserve negation polarity, Cut branches and tableau transformations after OLTAB-004 and OLTAB-005.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B009",
+      "unit_id": "OLP-0107",
+      "source_sha256": "1d3fc13c472f013fd81ea4aa5d55bf0908d7093c5569a58530703dda4e0fc8bb",
+      "target_sha256": "15224bf825d90d5dec7ba5cea78ea120c69a6b38060b4afb5602059833f0d925",
+      "reverse_paraphrase": "The conjunction tableaux derive each conjunct from a true conjunction and derive the true conjunction from both true conjuncts; OLTAB-006 and OLTAB-007 repair malformed sign macros.",
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0107-B013",
+      "unit_id": "OLP-0107",
+      "source_sha256": "2aaa10f93987bc784af47e11eea086dc18d952b96ff5b2800f8e77dd29018f20",
+      "target_sha256": "fe3b0e4d85d86414d49f3637831a037f93b278a13ad18bc9a502e930042c2592",
+      "reverse_paraphrase": "Modus ponens closes both branches of true implication, while false implication closes from either true not-A or true B.",
+      "assessment": "The conjunction, disjunction and conditional derivability claims and their closing branches are preserved after OLTAB-006 and OLTAB-007.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0108-B006",
+      "unit_id": "OLP-0108",
+      "source_sha256": "77d6ce83f3233f27da646d4c0f4f7e50a83b1620b30a0209219c9cc576cd7df2",
+      "target_sha256": "01cc4e99b2906c8426738ea621f40d7ad544ac5275f7b5f31cd837929e967723",
+      "reverse_paraphrase": "Strong generalization permits deriving forall-x A(x) from A(c) only when c occurs in neither Gamma nor A(x).",
+      "assessment": "Strong generalization preserves both freshness restrictions, and the existential and universal derivability tableaux retain their signs after OLTAB-008.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0108-B007",
+      "unit_id": "OLP-0108",
+      "source_sha256": "d2b7481ebb75b0106b8d3fcf4f5b1e09dc2ce3632584286713dccf462b4addd5",
+      "target_sha256": "29231496f808a0c90172992edde27ea16cfc21c991338f3d9f5e661908562f8d",
+      "reverse_paraphrase": "The proof replaces false A(c) with false forall-x A(x) and inserts false A(c); freshness makes the false-universal inference valid.",
+      "assessment": "Strong generalization preserves both freshness restrictions, and the existential and universal derivability tableaux retain their signs after OLTAB-008.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B011",
+      "unit_id": "OLP-0109",
+      "source_sha256": "a3c3fb81921fb256e0e8824f90fa390c847a6e543a07f9109ba8270aef6accc7",
+      "target_sha256": "979a35753d04af4eb9724886cc5f591b38a9033d1e4350f872c8c362a2924ab8",
+      "reverse_paraphrase": "Every rule extension preserves at least one satisfiable branch, whereas a closed tableau has no satisfiable branch because each contains opposite signs for one formula.",
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B014",
+      "unit_id": "OLP-0109",
+      "source_sha256": "b8a5d144ae39f489743cbec02de41e97933da1a2ec7593b261a339ac0ac49386",
+      "target_sha256": "e3b169ef9629e858d9295eee743fe055639f35b337f74b2c43c8332e70c89e31",
+      "reverse_paraphrase": "Each nonbranching propositional case adds exactly the signed consequences forced by a model of the premise branch.",
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B016",
+      "unit_id": "OLP-0109",
+      "source_sha256": "3857fb8c56ce8759b52ea376b6e7a9609ab9a1ff85ebe98cae874277a80479a7",
+      "target_sha256": "ce5f7e8572301836fc3ff7fb06d70fb97a832b5badeb183c196754f6f9dff928",
+      "reverse_paraphrase": "For false-universal, a fresh constant is reinterpreted as a counterexample object without changing satisfaction of the preceding branch; OLTAB-009 keeps A consistent throughout.",
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0109-B023",
+      "unit_id": "OLP-0109",
+      "source_sha256": "cca5f068cbd00342cd90052ea10f87410e20977bcbc112dcc85cb523eb814afc",
+      "target_sha256": "a6b4800000ea7a3b55925ba6b1f11cccc8debdd76b1b47034faa845c77e43490",
+      "reverse_paraphrase": "If Gamma derives A, tableau soundness forces every structure satisfying Gamma to satisfy A, yielding semantic consequence.",
+      "assessment": "Signed satisfaction, preservation under each rule, branch splitting and all three soundness corollaries preserve semantic polarity after OLTAB-009.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B009",
+      "unit_id": "OLP-0110",
+      "source_sha256": "a86777fa8afd17b6ce391c12ed7b01eabf2b928118ab8095e74d3136a55b0e9c",
+      "target_sha256": "4b6074991dc0d329213735e3d97dbcd1425b8fdb8281c24dcf8aa689fdca3140",
+      "reverse_paraphrase": "Symmetry follows by reflexivity and signed identity substitution; OLTAB-011 restores A(s1) as the prerequisite that yields A(s2).",
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0110-B010",
+      "unit_id": "OLP-0110",
+      "source_sha256": "92e035e14531db5eceef74ea9d4153b64d0a253e84ed32cbbdc2189f06ddf11d",
+      "target_sha256": "a21ae0d45b986d41fa8d3b6c879dbde586a56dd5e5d8bdf7051809b91b617659",
+      "reverse_paraphrase": "Transitivity substitutes s3 for s2 in s1=s2 using s2=s3; OLTAB-010 restores the instantiated equality named on line 2.",
+      "assessment": "Identity introduction, signed substitution, symmetry, transitivity and the exercise formulas are preserved after OLTAB-010 and OLTAB-011.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    },
+    {
+      "segment_id": "OLP-0111-B009",
+      "unit_id": "OLP-0111",
+      "source_sha256": "e3ba0db63dc36483d473c59dc6f6872ea473749a46d639ab95509ef92dacf308",
+      "target_sha256": "ae4f862bea2287be83bc7ab0872c15ff690c0e83537e30086380ff44971e6369",
+      "reverse_paraphrase": "Identity soundness transfers satisfaction from A(t1) to A(t2) because true t1=t2 gives equal denotations; the false-signed case is analogous.",
+      "assessment": "Identity soundness preserves reflexivity, equality of term values, extensionality transfer and signed polarity after OLTAB-012.",
+      "status": "same_agent_reverse_paraphrase_passed"
+    }
+  ]
+}

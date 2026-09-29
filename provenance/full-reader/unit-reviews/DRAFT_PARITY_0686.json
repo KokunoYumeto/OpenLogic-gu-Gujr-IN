@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0686",
+  "checked_at_utc": "2026-09-28T21:03:43.702654+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0686 Curry–Howard introduction and simply typed lambda calculus; state-only draft",
+  "report": {
+    "unit_id": "OLP-0686",
+    "source_path": "content/proof-theory/propositions-as-types/introduction.tex",
+    "source_sha256": "d1e4e979af0f251cc4e7d93d8f32e4e0b9e2e8b71e349b0deecfa78649f460c9",
+    "draft_path": "private-state\\work\\batch044_draft\\propositions-as-types-introduction.tex",
+    "draft_sha256": "155186e0b61e8569c20bafe561749675307dfaea18b9a0244e407fc91a6389e8",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 111,
+    "target_math_spans_after_corrections": 111,
+    "glossary_tokens": 8,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 540,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\normalization-introduction.tex",
+        "sha256": "87b17687d7ebcfc3fcde3b71ed4ce7745d45c83df66f222214b9a42d03ecceea",
+        "terms": [
+          "સામાન્ય સ્વરૂપમાં"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\natural-deduction-introduction.tex",
+        "sha256": "bed9868a3afe599a17b1ad11aeb4566fe4b2d8a6154f33809fe52f10a0b77744",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{corresponds to}",
+        "target": "\\text{ને અનુરૂપ}",
+        "count": 2
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

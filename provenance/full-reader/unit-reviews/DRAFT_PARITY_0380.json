@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0380",
+  "checked_at_utc": "2026-09-27T08:28:04.908759+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0380 regular minimization; state-only draft",
+  "report": {
+    "unit_id": "OLP-0380",
+    "source_path": "content/lambda-calculus/lambda-definability/minimization.tex",
+    "source_sha256": "4da3bef314009bbd93701e19fa66ff1bd7dc718427fa1ddd06d223b2aaf9b7f6",
+    "draft_path": "private-state\\work\\batch038_draft\\minimization.tex",
+    "draft_sha256": "fe86e76c57d60f6428c9f9632e11615a4e281030ff311f88ab909bc057cd2b50",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 21,
+    "target_math_spans_after_corrections": 21,
+    "glossary_tokens": 9,
+    "source_correction_notes": [
+      "OLLAM-060",
+      "OLLAM-061"
+    ],
+    "source_detector_ascii_tokens": 125,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7,
+      8
+    ]
+  },
+  "status": "draft_linguistic_and_keyed_math_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

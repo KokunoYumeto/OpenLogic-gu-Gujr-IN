@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0618",
+  "checked_at_utc": "2026-09-28T15:03:51.307494+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0618 structural induction and nonempty proper-prefix bracket invariant; state-only draft",
+  "report": {
+    "unit_id": "OLP-0618",
+    "source_path": "content/methods/induction/structural-induction.tex",
+    "source_sha256": "f57f94a62ed4aab37f569b5d56430b3756ee6e3a5281a0488cae5c233f2a62d8",
+    "draft_path": "private-state\\work\\batch044_draft\\induction-structural-induction.tex",
+    "draft_sha256": "2b60698d9c2574336194840314be9ff90052af37c7e3b6545881534a61b23f96",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 104,
+    "target_math_spans_after_corrections": 104,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-165"
+    ],
+    "source_detector_ascii_tokens": 534,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\arithmetization\\checking-details.tex",
+        "sha256": "77b13461dc42a8d952431a1987a8134c972df7d7b8f06c404e20343d7e9a440f",
+        "terms": [
+          "આરંભિક ખંડ",
+          "અરિક્ત ઉચિત આરંભિક ખંડ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\induction-introduction.tex",
+        "sha256": "50fc702e79d4adb2ed2d48e70b637eb90ce21865bcc3a072ec74889b2fcf7d77",
+        "terms": [
+          "સંરચનાત્મક આગમન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

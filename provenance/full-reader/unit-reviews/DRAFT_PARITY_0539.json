@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0539",
+  "checked_at_utc": "2026-09-27T23:48:02.107442+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0539 separation schema and its consequences; state-only draft",
+  "report": {
+    "unit_id": "OLP-0539",
+    "source_path": "content/set-theory/z/separation.tex",
+    "source_sha256": "5e4a9611823aa454b51908d88aa15f3fd4ee41af84f847a98e1c8a003a9b7a0b",
+    "draft_path": "private-state\\work\\batch044_draft\\separation.tex",
+    "draft_sha256": "b69123900add155945875e833da784adb7a6719fce6464f0db893bb2ddd0c1a8",
+    "aligned_blocks": 24,
+    "linguistic_blocks": 21,
+    "source_math_spans_correction_aware": 42,
+    "target_math_spans_after_corrections": 42,
+    "glossary_tokens": 2,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 441,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\models-theories\\set-theory.tex",
+        "sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48",
+        "terms": [
+          "પૃથક્કરણ સિદ્ધાંત"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-induction.tex",
+        "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945",
+        "terms": [
+          "પ્રાચલો",
+          "natinductionschema"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\extensionality.tex",
+        "sha256": "be103783e4ba30e4118344fb25be3383732bda255321d36b38e47c01e08cf6b5",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત સમાનતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-labels-044.tex",
+        "sha256": "33a0a4105f7f2d529f962fe5ad80dfb8d2ba87e73903494ee585a1aa4528e145",
+        "terms": [
+          "તબક્કાઓ પાયારૂપ છે",
+          "તબક્કાઓમાં સંચય થાય છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Restricted separation yields R_A notin R_A; if R_A were in A, the defining condition would put it in itself, so R_A notin A.",
+      "The intersection proof needs a member c of A; its nonempty-family hypothesis is retained.",
+      "The empty-intersection remark follows the source's absolute membership definition, not a convention that assigns empty intersection inside a separately fixed universe.",
+      "All 42 formula spans are unchanged; the source's this avoid grammatical typo is regularized without a substantive correction note."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

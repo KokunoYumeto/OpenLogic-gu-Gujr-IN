@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0400",
+  "checked_at_utc": "2026-09-27T09:51:42.590021+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0400 infinite-valued Łukasiewicz logic; state-only draft",
+  "report": {
+    "unit_id": "OLP-0400",
+    "source_path": "content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex",
+    "source_sha256": "cd08c78b079f961505db9f62af56babd0570bf52682f8375f6ba4d340c2afcc6",
+    "draft_path": "private-state\\work\\batch039_draft\\infinite-valued-lukasiewicz.tex",
+    "draft_sha256": "64fdf10ab499b1490b719cf17607d9394eac94bffc460594a14bf22116086226",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 75,
+    "target_math_spans_after_corrections": 75,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMV-013",
+      "OLMV-014"
+    ],
+    "source_detector_ascii_tokens": 130,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [],
+    "four_truth_tables_cell_and_order_exact": true,
+    "source_comment_chapter_typo_fixed": true,
+    "finite_premise_converse_countermodel_verified": true,
+    "prose_scan_tabular_exception": "four parity-verified tables removed from prose scan; their column codes are structural TeX"
+  },
+  "status": "draft_linguistic_math_table_and_visible_source_scope_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

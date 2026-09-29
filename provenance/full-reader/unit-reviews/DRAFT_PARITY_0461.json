@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0461",
+  "checked_at_utc": "2026-09-27T18:14:21.468501+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0461 modal tableaux introduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0461",
+    "source_path": "content/normal-modal-logic/tableaux/introduction.tex",
+    "source_sha256": "87a62d9825b9d30949d14e5530488544e403e28c7594774a9bf6c91e73803b54",
+    "draft_path": "private-state\\work\\batch040_draft\\tableaux-introduction.tex",
+    "draft_sha256": "ad3f3c78115bc49e1bfdcdfcbfde99237e7c61e73af32255305565d10cf555a7",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 29,
+    "target_math_spans_after_corrections": 29,
+    "glossary_tokens": 24,
+    "source_correction_notes": [
+      "OLMD-051"
+    ],
+    "source_detector_ascii_tokens": 223,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "tableau_closure_proves_and_prefix_semantics_reviewed": true
+  },
+  "status": "draft_linguistic_math_and_prefix_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

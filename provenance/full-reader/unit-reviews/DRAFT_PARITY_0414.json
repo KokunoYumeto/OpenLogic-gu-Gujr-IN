@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0414",
+  "checked_at_utc": "2026-09-27T10:29:29.556568+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0414 truth in a model; state-only draft",
+  "report": {
+    "unit_id": "OLP-0414",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/truth-in-model.tex",
+    "source_sha256": "12c305069df324d6b4346d4cf1d7ef7e1ee8c6f44479959de738f8a76323cbd6",
+    "draft_path": "private-state\\work\\batch040_draft\\truth-in-model.tex",
+    "draft_sha256": "66495291c63783c2906159c23d16622e7e0c80b943564ca572f7aad378fb149b",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 64,
+    "target_math_spans_after_corrections": 64,
+    "glossary_tokens": 4,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 185,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_and_labels_equal": true,
+    "six_exercise_formulas_exact": true,
+    "tikz_diagram_byte_exact": true,
+    "exercise_model_answer_pattern": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "global_countermodel_checked": true
+  },
+  "status": "draft_linguistic_math_countermodel_diagram_and_exercise_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

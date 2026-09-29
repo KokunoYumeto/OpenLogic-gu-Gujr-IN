@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0614",
+  "checked_at_utc": "2026-09-28T14:50:15.792713+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0614 empirical versus mathematical induction and structural induction introduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0614",
+    "source_path": "content/methods/induction/introduction.tex",
+    "source_sha256": "45629bfdf1f5502361156b1f4e061afe2a2820a7983eb612c18473dfc12cfa51",
+    "draft_path": "private-state\\work\\batch044_draft\\induction-introduction.tex",
+    "draft_sha256": "50fc702e79d4adb2ed2d48e70b637eb90ce21865bcc3a072ec74889b2fcf7d77",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 6,
+    "target_math_spans_after_corrections": 6,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 308,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-induction.tex",
+        "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945",
+        "terms": [
+          "ગાણિતિક અનુમાન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\second-order-logic\\metatheory\\second-order-arithmetic.tex",
+        "sha256": "5277ec579b21ca2917d593ff27cab27edc6de0ff1f1663b02de93b5cdd49a4d8",
+        "terms": [
+          "આગમનનું",
+          "આગમનના"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-using-addition.tex",
+        "sha256": "54c52a27923fcfb6fa3e156586066d9efc5232ab4df6ba4f70bca737d92e4210",
+        "terms": [
+          "સીમિત"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

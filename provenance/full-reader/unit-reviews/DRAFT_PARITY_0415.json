@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0415",
+  "checked_at_utc": "2026-09-27T10:32:26.339641+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0415 modal validity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0415",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/modal-validity.tex",
+    "source_sha256": "ac462d167fe4acb6dee2adad68ff523384f14e0bd9976bad5d48fe34f2af8bab",
+    "draft_path": "private-state\\work\\batch040_draft\\modal-validity.tex",
+    "draft_sha256": "1947292a41da4946252a2f15727285509b292c3ae78d79dd33f89e9a437e8d30",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 46,
+    "target_math_spans_after_corrections": 46,
+    "glossary_tokens": 4,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 268,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_and_labels_equal": true,
+    "three_exercise_formulas_exact": true,
+    "finite_model_cases_checked": 33032,
+    "nonreflexive_T_counterexamples": 12966
+  },
+  "status": "draft_linguistic_math_and_finite_model_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-gu-full-expert-review-localization/1",
+  "checked_at_utc": "2026-09-29T03:47:38.327475+00:00",
+  "units": 722,
+  "segments": 6732,
+  "term_records": 278,
+  "current_term_choices": 270,
+  "current_grammar_rules": 4,
+  "original_term_ledger_sha256": "8211884afb7a220512bf66ae182f933e2509353e7d93051a6585e3254a1be1e0",
+  "original_binding_index_sha256": "d5cd560770de7989c8c4bb35853aa16056b220c0e441a2444b654cd932ae2568",
+  "fresh_register_only": {
+    "passage_id": "GU-P075",
+    "range_utf8": [
+      14904,
+      17212
+    ],
+    "sha256": "6931472c6d0dcd4be410171fdf2c0c115fe9d19c241a0fb346e397b9f06e7966"
+  },
+  "files": [
+    {
+      "path": "docs/FULL_READER_EXPERT_REVIEW.gu.md",
+      "bytes": 89739,
+      "sha256": "38cd1f48237252f0fe225772ce84bd4586859450fe3b15b42b6416b3437bd444"
+    },
+    {
+      "path": "docs/TERMINOLOGY_REVIEW.gu.md",
+      "bytes": 898091,
+      "sha256": "8ebde83281ca2dd6bb8a9c46fdf22123a8c2e1c076d9ab66ca691cab017a0973"
+    },
+    {
+      "path": "provenance/full-reader/CURRENT_SEGMENT_BINDINGS.gu.jsonl",
+      "bytes": 23746630,
+      "sha256": "b7a0229a573080794491004b1f5ce513d014bf68a1e1c150f42738ff4aaee44d"
+    },
+    {
+      "path": "provenance/full-reader/TERM_DECISIONS.gu.jsonl",
+      "bytes": 979916,
+      "sha256": "861208f500f0818cee95a934cfba8f8c04c72008fc2259c45a38acbabff7e6c4"
+    },
+    {
+      "path": "docs/translation-decisions/START_HERE.md",
+      "bytes": 2642,
+      "sha256": "584374cb396f5b7d1ec344943ff5f3af1f5e7ea6e802f46c22b188d12496f862"
+    }
+  ],
+  "status": "complete_gujarati_primary_review_surfaces_exact_current_segment_hashes_verified",
+  "human_independent_review": false
+}

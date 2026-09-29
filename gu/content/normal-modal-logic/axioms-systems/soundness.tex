@@ -1,0 +1,60 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{snd}
+
+\olsection{યથાર્થતા}
+
+જો !!^a{derivation} તંત્રમાં જે કંઈ !!{derive} કરી શકાય તે બધું
+પ્રામાણ્ય હોય, તો તે તંત્ર યથાર્થ કહેવાય છે. મોડલ તંત્રોમાં, એટલે કે
+!!{derivation}sમાં જ્યાં \Ax{K} ઉપરાંત કેટલાંક !!{formula}s $!A_1$,
+\dots,~$!A_n$ના દૃષ્ટાંતો વાપરી શકાય છે, આપણે ઇચ્છીએ છીએ કે દરેક
+!!{derivable} સૂત્ર એવા દરેક નિદર્શનમાં સત્ય હોય જેમાં $!A_1$,
+\dots, $!A_n$ સત્ય હોય.
+
+\begin{thm}[યથાર્થતાનું પ્રમેય]\ollabel{thm:soundness}
+  જો $!A_1$, \dots, $!A_n$ના દરેક દૃષ્ટાંત અનુક્રમે નિદર્શનોના
+  વર્ગો $\mClass{C}_1$, \dots, $\mClass{C}_n$માં પ્રામાણ્ય હોય,
+  તો $\Log{K}!A_1\dots !A_n
+  \Proves !B$ હોય ત્યારે $!B$ નિદર્શનોના વર્ગ
+  $\mClass{C}_1 \cap \dots \cap \mClass{C}_n$માં પ્રામાણ્ય છે.
+\end{thm}
+
+\begin{proof}
+  પ્રમાણોની લંબાઈ પર આગમનથી. સંક્ષેપમાં $\mClass{C} =
+  \mClass{C}_1 \cap \dots \cap \mClass{C}_n$ મૂકો.
+  \begin{enumerate}
+  \item આગમનનો આધાર: જો $!B$નું પ્રમાણ લંબાઈ~$1$નું હોય, તો તે
+    કાં તો પુનરુક્તિનો દૃષ્ટાંત, કાં~\Ax{K}નો દૃષ્ટાંત,\iftag{prvDiamond}{
+    કાં~\Dual{}નો દૃષ્ટાંત,}{} અથવા $!A_1$, \dots,~$!A_n$ પૈકી કોઈ
+    એકનો દૃષ્ટાંત છે. પ્રથમ કિસ્સામાં $!B$ એ $\mClass{C}$માં
+    પ્રામાણ્ય છે, કારણ કે \olref[syn][tau]{prop:valid-taut} મુજબ
+    પુનરુક્તિના દૃષ્ટાંતો નિદર્શનોના \emph{કોઈપણ} વર્ગમાં પ્રામાણ્ય છે.
+    એ જ રીતે બીજા કિસ્સામાં
+    \olref[syn][sch]{prop:Kvalid}\iftag{prvDiamond}{ અને
+      \olref[syn][sch]{prop:Dual-valid}}{} મુજબ પ્રામાણ્યતા મળે છે.
+    અંતે ત્રીજા કિસ્સામાં, $!B$ એ $\mClass{C}_i$માં પ્રામાણ્ય છે અને
+    $\mClass{C} \subseteq \mClass{C}_i$, તેથી
+    \olref[syn][val]{prop:subset-class} મુજબ $!B$ એ $\mClass{C}$માં
+    પણ પ્રામાણ્ય છે.
+  \item આગમનનું પગલું: માનો કે $!B$નું પ્રમાણ લંબાઈ $k>1$નું છે. જો
+    $!B$ પુનરુક્તિનો દૃષ્ટાંત, $!A_1$, \dots, $!A_n$ પૈકી કોઈનો
+    દૃષ્ટાંત, અથવા ઉપર ગણાવેલી બીજી સ્વયંસિદ્ધિઓમાંથી કોઈનો દૃષ્ટાંત
+    હોય, તો અગાઉના પગલાની જેમ જ ચાલીએ.\sourcecorrection{OLMD-027}{મૂળના આ આગમન-પગલામાં માત્ર પુનરુક્તિ અને વધારાના A_i દૃષ્ટાંતો ફરી ગણાવ્યા છે; K તથા શરતી Dualના દૃષ્ટાંતો પણ આધારકિસ્સાની જ રીતથી આવરે છે, તેથી બધા સ્વયંસિદ્ધિ-કિસ્સા સ્પષ્ટ કર્યા છે.}
+    હવે માનો કે $!B$ અગાઉનાં !!{formula}s $!C \lif !B$ અને $!C$માંથી
+    \MP{} વડે મળ્યું છે. ત્યારે $!C \lif !B$ અને $!C$નાં પ્રમાણોની
+    લંબાઈ $<k$ છે અને આગમન-પરિકલ્પના મુજબ તે~$\mClass{C}$માં પ્રામાણ્ય
+    છે. \olref[syn][sch]{prop:soundMP} મુજબ $!B$ પણ
+    $\mClass{C}$માં પ્રામાણ્ય છે. અંતે માનો કે $!B$ એ $!C$માંથી
+    \Nec{} વડે મળ્યું છે (એટલે $!B = \Box!C$). આગમન-પરિકલ્પના મુજબ
+    $!C$ એ $\mClass{C}$માં પ્રામાણ્ય છે અને
+    \olref[syn][val]{prop:Nec-rule} મુજબ~$!B$ પણ પ્રામાણ્ય છે.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0673",
+  "checked_at_utc": "2026-09-28T20:08:57.291658+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0673 Normalization theorem for N1i and N2i; state-only draft",
+  "report": {
+    "unit_id": "OLP-0673",
+    "source_path": "content/proof-theory/normalization/normalization-thm.tex",
+    "source_sha256": "ec1fd2839474750e88e272f8e90be4d8001f328b03f666b39e7a36518d2d12e6",
+    "draft_path": "private-state\\work\\batch044_draft\\normalization-thm.tex",
+    "draft_sha256": "4869769c4ac793f5add335d701b70858113e74ca73a31efd791147a474b9a272",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 11,
+    "target_math_spans_after_corrections": 11,
+    "glossary_tokens": 10,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 256,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન",
+          "સાબિતી-તંત્ર"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "કટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

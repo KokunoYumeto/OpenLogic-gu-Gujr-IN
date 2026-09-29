@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/29-0300",
+  "checked_at_utc": "2026-09-27T00:27:22.086716+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0300 state-only Sigma-1 completeness draft",
+  "report": {
+    "unit_id": "OLP-0300",
+    "source_path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+    "source_sha256": "9509cb0c6c1a6d93245a581021a177b4a658d0b098eb467d96a1fd0ba2e14d3d",
+    "draft_path": "private-state\\work\\batch029_draft\\sigma1-completeness.tex",
+    "draft_sha256": "61b6ab8d0fb371a93bbbd68cc12323ba67c45a66175fd88cbc559e12e4039a15",
+    "aligned_blocks": 32,
+    "linguistic_blocks": 28,
+    "source_math_spans": 232,
+    "glossary_tokens": 24,
+    "source_correction_notes": [
+      "OLINC-032",
+      "OLINC-033",
+      "OLINC-034",
+      "OLINC-035",
+      "OLINC-036",
+      "OLINC-037"
+    ],
+    "correction_aware_math_structure_and_glossary_equal": true
+  },
+  "status": "draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

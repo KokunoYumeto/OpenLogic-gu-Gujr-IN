@@ -1,0 +1,186 @@
+% Part: lambda-calculus
+% Chapter: lambda-definability
+% Section: primitive-recursive-functions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{ldf}{prf}
+\olsection{આદિમ પુનરાવર્તી વિધેયો \usetoken{S}{lambda definable} છે}
+
+યાદ કરો કે આદિમ પુનરાવર્તી વિધેયો એ છે, જે મૂળભૂત
+વિધેયો $\Zero$, $\Succ$ અને $\Proj{n}{i}$માંથી
+સંયોજન તથા આદિમ પુનરાવર્તન દ્વારા વ્યાખ્યાયિત કરી શકાય.
+
+\begin{lem}
+  \ollabel{lem:basic}
+  મૂળભૂત આદિમ પુનરાવર્તી વિધેયો $\Zero$, $\Succ$ અને
+  પ્રક્ષેપો~$\Proj{n}{i}$ !!{lambda definable} છે.
+\end{lem}
+
+\begin{proof}
+નીચેનાં પદો તેમને !!{lambda define} કરે છે:
+\begin{align*}
+  \fn{Zero} & \ident \lambd[a][\lambd[fx][x]]\\
+  \fn{Succ} & \ident \lambd[a][\lambd[fx][f (a f x)]] \\
+  \fn{Proj}^n_i & \ident \lambd[x_0\dots x_{n-1}][x_i]
+\end{align*}
+\end{proof}
+
+\begin{lem}
+  \ollabel{lem:comp} ધારો કે $k$-સ્થાનીય વિધેય $f$ અને
+  $n$-સ્થાનીય વિધેયો $g_0, \dots, g_{k-1}$ અનુક્રમે
+  $F$, $G_0$, \dots, $G_{k-1}$ પદો દ્વારા
+  !!{lambda definable} છે, અને $h$ તેમની
+  સંયોજનથી વ્યાખ્યાયિત થાય છે. તો $h$ પણ
+  !!{lambda definable} છે.
+  \sourcecorrection{OLLAM-054}{સ્થિર અંગ્રેજી મૂળમાં
+  $k$ વિધેયો $g_0,\dots,g_{k-1}$ હોવા છતાં
+  તેમને દર્શાવતાં પદોનો ક્રમ $G_k$ સુધી જાય છે;
+  અહીં છેલ્લું પદ $G_{k-1}$ કર્યું છે. મૂળના
+  નિષ્કર્ષમાં ``$H$ is lambda definable'' છે,
+  પરંતુ $H$ નિરૂપણ પદ છે; વ્યાખ્યાયિત થતું
+  વિધેય $h$ છે.}
+\end{lem}
+
+\begin{proof}
+  વિધેય~$h$ને આ પદ !!{lambda define} કરે છે:
+  \[
+  H \ident \lambd[x_0 \dots x_{n-1}][F\, (G_0 x_0 \dots
+    x_{n-1}) \dots (G_{k-1} x_0 \dots x_{n-1})]
+  \]
+  આ હકીકતની ચકાસણી કસરત તરીકે છોડી છે.
+\end{proof}
+
+\begin{prob}
+  $H\num{n_0}\dots\num{n_{n-1}} \red \num{h(n_0, \dots,
+    n_{n-1})}$ બતાવીને
+  \olref[lam][ldf][prf]{lem:comp}નો પુરાવો પૂર્ણ કરો.
+\end{prob}
+
+નોંધો કે \olref{lem:comp}માં $f$ અને $g_0$,
+\dots,~$g_{k-1}$ આદિમ પુનરાવર્તી હોવાં જરૂરી
+નથી; તેઓ સર્વત્ર વ્યાખ્યાયિત અને !!{lambda definable}
+હોય એટલું જ જરૂરી છે.
+
+\begin{lem}\ollabel{lem:prim}
+  ધારો કે $f$ એ $n$-સ્થાનીય વિધેય અને~$g$ એ
+  $n+2$-સ્થાનીય વિધેય છે; તેઓ અનુક્રમે
+  $F$ અને~$G$ પદો દ્વારા !!{lambda definable} છે,
+  અને $h$ એ $f$ તથા $g$માંથી આદિમ
+  પુનરાવર્તન દ્વારા વ્યાખ્યાયિત છે. તો $h$ પણ
+  !!{lambda definable} છે.
+\end{lem}
+
+\begin{proof}
+  યાદ કરો કે $h$ની વ્યાખ્યા આ છે:
+  \begin{align*}
+    h(x_1, \dots, x_n, 0) &= f(x_1, \dots, x_n)\\
+    h(x_1, \dots, x_n, y+1) & = g(x_1, \dots, x_n, y, h(x_1, \dots, x_n, y)).
+  \end{align*}
+  \sourcecorrection{OLLAM-055}{સ્થિર અંગ્રેજી મૂળના
+  બીજા પુનરાવર્તન સમીકરણમાં જમણી બાજુનું બહારનું
+  વિધેય ભૂલથી $h$ છે. પગલું-વિધેય $g$ હોવું
+  જોઈએ; પછીના પુરાવામાં પણ $g$ જ વપરાય છે.}
+  અનૌપચારિક રીતે, આદિમ પુનરાવર્તનની વ્યાખ્યા
+  $f(x_1,\dots,x_n)$થી શરૂ કરીને પગલું-વિધેય~$g$
+  $y$ વાર લાગુ કરે છે. આ ચર્ચ અંકોની પુનરાવર્તક
+  તરીકેની વ્યાખ્યાની યાદ અપાવે છે.
+
+  સરળતા માટે, એક જ વધારાની દલીલ~$x$ હોય તે
+  કિસ્સાની વ્યાખ્યા અને સાબિતી આપીએ છીએ.
+  વિધેય~$h$ને આ પદ !!{lambda define} કરે છે:
+  \begin{align*}
+    H \ident & \lambd[x][\lambd[y][\fn{Snd} (y
+        D \tuple{\num{0}, F x})]]
+    \intertext{જ્યાં }
+    D \ident & \lambd[p][\tuple{\fn{Succ} (\fn{Fst}\, p), (G x
+          (\fn{Fst}\, p) (\fn{Snd}\, p))}]
+  \end{align*}
+  \sourcecorrection{OLLAM-056}{અહીં $D$માં $x$
+  મુક્ત રહે છે; $H$ના બહારના $\lambd[x]$ની અંદર
+  તેનો અર્થ દરેક નક્કી કરેલા $x$ માટેનું પગલું-પદ
+  છે. પછીના પુરાવાનું $D_n$ એ $x$ના સ્થાને
+  $\num n$ મૂકેલું આ જ પદ છે. આ અવલંબન
+  મૂળના સંકેતનમાં સ્પષ્ટ નહોતું.}
+  આપણે રાખેલી પુનરાવર્તનની સ્થિતિ એક જોડી છે:
+  તેનો પહેલો ઘટક હાલનું~$y$ છે અને બીજો~$h$નું
+  અનુરૂપ મૂલ્ય છે. દરેક પગલે $y$ અને~$h$નાં
+  નવા મૂલ્યોની જોડી બનાવીએ છીએ; પુનરાવર્તન પૂરું
+  થયા પછી તેનો બીજો ઘટક પાછો આપીએ છીએ;
+  તે જ $h$નું અંતિમ મૂલ્ય છે.
+  હવે આ ખરેખર આદિમ પુનરાવર્તનનું નિરૂપણ છે
+  તે સાબિત કરીએ.
+
+  આપણે દરેક $n$ અને $m$ માટે
+  $H\,\num{n}\,\num{m} \red \num{h(n,m)}$
+  સાબિત કરવું છે. પહેલાં, $D_n \ident
+  \Subst{D}{\num{n}}{x}$ હોય તો
+  $D_n^m \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m}, \num{h(n, m)}}$ છે એમ
+  $m$ પર ગાણિતિક અનુમાનથી બતાવીએ.
+
+  $m=0$ હોય તો
+  $D_n^0 \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{0}, \num{h(n, 0)}}$ બતાવવું છે.
+  પરંતુ $D_n^0 \tuple{\num{0}, F\, \num{n}}$
+  એટલે $\tuple{\num{0}, F\, \num{n}}$ જ.
+  $F$ એ~$f$ને !!{lambda define} કરતું હોવાથી
+  આ $\tuple{\num{0}, \num{f(n)}}$માં
+  લઘુકૃત થાય છે; અને $f(n)=h(n,0)$ હોવાથી
+  તે $\tuple{\num{0}, \num{h(n,0)}}$ છે.
+
+  હવે ધારો કે
+  $D_n^m \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m}, \num{h(n, m)}}$.
+  આપણે $D_n^{m+1} \tuple{\num{0}, F\, \num{n}} \red
+  \tuple{\num{m+1}, \num{h(n, m+1)}}$
+  બતાવવું છે.
+  \begin{align*}
+    D_n^{m+1} \tuple{\num{0}, F\, \num{n}}
+    & \ident D_n(D_n^{m} \tuple{\num{0}, F\, \num{n}})\\
+    & \red D_n\,\tuple{\num{m}, \num{h(n, m)}} \text{\qquad (અનુમાનથી)}\\
+    & \ident (\lambd[p][
+      \tuple{
+        \fn{Succ} (\fn{Fst}\, p), (G \, \num{n} (\fn{Fst}\, p) (\fn{Snd}\, p))
+    }]) \tuple{\num{m}, \num{h(n,m)}}\\
+    & \redone
+    \tuple{\fn{Succ} (\fn{Fst}\, \tuple{\num{m}, \num{h(n,m)}}),\\
+      & \qquad (G \, \num{n} (\fn{Fst}\, \tuple{\num{m}, \num{h(n,m)}}) (\fn{Snd}\, \tuple{\num{m}, \num{h(n,m)}}))}\\
+    & \red
+    \tuple{\fn{Succ}\, \num{m}, (G \, \num{n} \,\num{m} \, \num{h(n,m)})}\\
+    & \red \tuple{\num{m+1}, \num{g(n, m, h(n, m))}}
+  \end{align*}
+  $g(n,m,h(n,m))=h(n,m+1)$ હોવાથી ઇચ્છિત
+  પરિણામ મળે છે.
+
+  અંતે, આ ગણતરી જુઓ:
+  \begin{align*}
+    H\,\num n\,\num m &\ident \lambd[x][\lambd[y][\fn{Snd} (y
+        (\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G\, x\,
+          (\fn{Fst}\, p)\, (\fn{Snd}\, p))}) \tuple{\num{0}, F x})]]\\
+    & \qquad\,\num n\, \num m\\
+    & \red \fn{Snd} (\num m \,
+    \underbrace{(\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G \,\num n\,
+      (\fn{Fst}\, p) (\fn{Snd}\, p))})}_{D_n} \tuple{\num{0}, F \num n})\\
+    & \ident \fn{Snd} (\num m \, D_n\, \tuple{\num{0}, F \num n})\\
+    & \red \fn{Snd} \, (D_n^m \tuple{\num{0}, F \num n})\\
+    & \red \fn{Snd} \,\tuple{\num{m}, \num{h(n, m)}} \\
+    & \red \num{h(n,m)}.
+  \end{align*}
+\end{proof}
+
+\begin{prop}
+  દરેક આદિમ પુનરાવર્તી વિધેય !!{lambda definable} છે.
+\end{prop}
+
+\begin{proof}
+  \olref{lem:basic} મુજબ બધાં મૂળભૂત વિધેયો
+  !!{lambda definable} છે. \olref{lem:comp}
+  અને \olref{lem:prim} મુજબ
+  !!{lambda definable} વિધેયો સંયોજન તથા
+  આદિમ પુનરાવર્તન હેઠળ બંધ છે.
+\end{proof}
+
+\end{document}

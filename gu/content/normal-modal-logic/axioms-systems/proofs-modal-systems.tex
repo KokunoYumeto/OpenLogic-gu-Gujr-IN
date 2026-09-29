@@ -1,0 +1,107 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: proofs-modal-systems
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prs}
+
+\olsection{મોડલ તંત્રોમાં પ્રમાણો}
+
+હવે આપણે~\Log{K} સિવાયનાં મોડલ તર્કનાં તંત્રોમાં પ્રમાણો જોઈએ.
+
+\begin{prop}\ollabel{prop:S5facts}
+નીચેના નિષ્પન્નતાના પરિણામો સાચાં છે:
+  \begin{enumerate}
+  \item $\Log{KT5} \Proves \Ax{B}$;
+  \item $\Log{KT5} \Proves \Ax{4}$;
+  \item $\Log{KDB4} \Proves \Ax{T}$;
+  \item $\Log{KB4} \Proves \Ax{5}$;
+  \item $\Log{KB5} \Proves \Ax{4}$;
+  \item \ollabel{prop:S5facts-KT-D}$\Log{KT} \Proves \Ax{D}$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  આપણે દરેક માટે પ્રમાણ આપીએ છીએ.
+  \begin{enumerate}
+    \item $\Log{KT5} \Proves \Ax{B}$:
+      \begin{derivation}
+        1. & $\Log{KT5} \Proves \Diamond!A \lif \Box\Diamond!A$ & \Ax{5}\\
+        2. & $\Log{KT5} \Proves !A \lif \Diamond!A$ & $\Ax{T_\Diamond}$\\
+        3. & $\Log{KT5} \Proves !A \lif \Box\Diamond!A$ & \PL, 2, 1.
+      \end{derivation}
+    \item $\Log{KT5} \Proves \Ax{4}$:
+      \begin{derivation}
+        1. &$\Log{KT5} \Proves \Diamond\Box!A \lif \Box\Diamond\Box!A$ & \Ax{5}
+        જેમાં $p$ના સ્થાને $\Box!A$ મૂક્યું છે\\
+        2. & $\Log{KT5} \Proves \Box!A \lif \Diamond\Box!A$ & $\Ax{T_\Diamond}$
+        જેમાં $p$ના સ્થાને $\Box!A$ મૂક્યું છે\\
+        3. & $\Log{KT5} \Proves \Box!A \lif \Box\Diamond\Box!A$ & \PL, 2, 1\\
+        4. & $\Log{KT5} \Proves \Diamond\Box!A \lif \Box!A$ & $\Ax{5_\Diamond}$\\
+        5. & $\Log{KT5} \Proves \Box\Diamond\Box!A \lif \Box\Box!A$ & \RK{}, 4 \\
+        6. & $\Log{KT5} \Proves \Box!A \lif \Box\Box!A$ & \PL, 3, 5. \\
+      \end{derivation}
+    \item $\Log{KDB4} \Proves \Ax{T}$:
+      \begin{derivation}
+        1. & $\Log{KDB4} \Proves \Diamond\Box!A \lif !A $ & $\Ax{B_\Diamond}$ \\
+        2. & $\Log{KDB4} \Proves \Box\Box!A \lif \Diamond\Box!A$ & $\Ax{D}$
+        જેમાં $p$ના સ્થાને $\Box!A$ મૂક્યું છે\\
+        3. & $\Log{KDB4} \Proves \Box\Box!A \lif !A$ & \PL, 1, 2\\
+        4. & $\Log{KDB4} \Proves \Box!A \lif \Box\Box!A$ & \Ax{4} \\
+        5. & $\Log{KDB4} \Proves \Box!A \lif !A$ & \PL, 4, 3. \\
+      \end{derivation}
+    \item $\Log{KB4} \Proves \Ax{5}$:
+      \begin{derivation}
+        1. & $\Log{KB4} \Proves \Diamond!A \lif \Box \Diamond\Diamond!A$ & \Ax{B}
+        જેમાં $p$ના સ્થાને $\Diamond!A$ મૂક્યું છે\\
+        2. & $\Log{KB4} \Proves \Diamond\Diamond !A \lif \Diamond !A$ &
+        $\Ax{4_\Diamond}$ \\
+        3. & $\Log{KB4} \Proves \Box\Diamond\Diamond !A \lif \Box \Diamond!A$ &
+        \RK{}, 2 \\
+        4. & $\Log{KB4} \Proves \Diamond!A \lif \Box\Diamond!A$ & \PL, 1, 3.
+      \end{derivation}
+    \item $\Log{KB5} \Proves \Ax{4}$:
+      \begin{derivation}
+        1. & $\Log{KB5} \Proves \Box!A \lif \Box\Diamond\Box !A$ & \Ax{B};
+        $p$ના સ્થાને $\Box!A$ મૂક્યું છે \\
+        2. & $\Log{KB5} \Proves  \Diamond\Box!A \lif \Box !A$ &
+        $\Ax{5_\Diamond}$\\
+        3. & $\Log{KB5} \Proves  \Box\Diamond\Box!A \lif \Box\Box !A$ & \RK{}, 2 \\
+        4. & $\Log{KB5} \Proves  \Box!A \lif \Box\Box!A$ & \PL, 1, 3.
+      \end{derivation}
+    \item $\Log{KT} \Proves \Ax{D}$:
+      \begin{derivation}
+        1. & $\Log{KT} \Proves \Box !A \lif !A$ & \Ax{T} \\
+        2. & $\Log{KT} \Proves !A \lif \Diamond!A$ & $\Ax{T_\Diamond}$ \\
+        3. & $\Log{KT} \Proves \Box !A \lif \Diamond !A$ &  \PL, 1, 2
+      \end{derivation}
+  \end{enumerate}
+\end{proof}
+
+\begin{defn}
+  પ્રચલિત પરંપરા અનુસાર આપણે \Log{S4}ને તંત્ર
+  \Log{KT4} અને \Log{S5}ને તંત્ર \Log{KTB4} તરીકે વ્યાખ્યાયિત કરીએ છીએ.
+\end{defn}
+
+નીચેનો પ્રસ્તાવ બતાવે છે કે પરંપરાગત તંત્ર \Log{S5} માટે અનેક સમકક્ષ
+સ્વયંસિદ્ધિકરણો છે. તેમાં આશ્ચર્ય નથી, કારણ કે સ્વયંસિદ્ધિઓનાં આ વિવિધ
+સંયોજનો બધાં સામ્ય સંબંધોને લક્ષણિત કરે છે
+(જુઓ \olref[frd][es5]{prop:equivalences}).
+
+\begin{prop}\ollabel{prop:S5}
+  $\Log{KTB4} = \Log{KT5} = \Log{KDB4} = \Log{KDB5}$.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[nml][prf][prs]{prop:S5} સાબિત કરો.
+\end{prob}
+
+
+\end{document}

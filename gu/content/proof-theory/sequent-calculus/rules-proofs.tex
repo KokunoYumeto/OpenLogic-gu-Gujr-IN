@@ -1,0 +1,209 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: rules-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{rp}
+
+\olsection{નિયમો અને \usetoken{P}{proof}}
+
+શરૂઆતમાં કેટલીક વ્યાખ્યાઓ અને પરિભાષાઓ નક્કી કરીએ.
+
+દાખલા તરીકે, \Log{G3c}ના એવા બે નિયમો લો જે
+$!A$ અને $!B$ ધરાવતા સિક્વન્ટોમાંથી $!A \land !B$
+ધરાવતા સિક્વન્ટ !!{proving} કરવાની છૂટ આપે છે:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\DisplayProof
+\]
+રેખાની ઉપરના સિક્વન્ટોને \emph{આધાર-સિક્વન્ટો} અને
+રેખાની નીચેના સિક્વન્ટને \emph{ફલિત-સિક્વન્ટ} કહે છે.
+દરેક નિયમમાં $\Gamma$ અને $\Delta$નાં !!{formula}ને
+\emph{સંદર્ભ} અથવા \emph{ગૌણ !!{formula}} કહે છે.
+ફલિતમાં સંદર્ભનો ભાગ ન હોય તે !!{formula}ને
+\emph{મુખ્ય} !!{formula} કહે છે, અને આધારોમાં સંદર્ભનો ભાગ
+ન હોય તે !!{formula}ને \emph{સક્રિય} (અથવા \emph{સહાયક})
+!!{formula} કહે છે.
+
+પરિમાણકના નિયમો થોડા વધુ જટિલ છે. દાખલા તરીકે,
+\Log{G1c}માં $\lforall$ માટેના નિયમો આ છે:
+\[\Axiom$ !A(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$ \Gamma \fCenter \Delta, !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+\DisplayProof
+\]
+\LeftR{\lforall}ના નિયમમાં સક્રિય !!{formula} એ $!A(t)$ છે,
+જ્યાં $t$ બંધ પદ છે, એટલે કે ચલ વિનાનું પદ.
+આવું અનુમાન યોગ્ય છે, એટલે કે \LeftR{\lforall}ના ઢાંચારૂપ
+નિયમ સાથે મેળ ખાય છે, જો કોઈ !!{formula}~$!A$, કોઈ ચલ~$x$
+અને કોઈ બંધ પદ~$t$ એવાં હોય કે ફલિતમાં મુખ્ય
+!!{formula} એ $\lforall[x][!A]$ હોય અને આધારમાં સક્રિય
+!!{formula} એ $\Subst{!A}{t}{x}$ હોય. \RightR{\lforall}નો
+નિયમ એ જ રીતે કામ કરે છે, પરંતુ કોઈ પણ પદ~$t$ને બદલે
+આધારમાં સક્રિય !!{formula} એ $\Subst{!A}{a}{x}$ હોવું જોઈએ,
+જ્યાં $a$ એ !!a{constant} છે. આ અચળને
+\RightR{\lforall}ના અનુમાનનો \emph{આઇગનચલ} કહે છે.
+અનુમાન ત્યારે જ યોગ્ય છે જ્યારે નીચેના સિક્વન્ટમાં $a$
+ન હોય, એટલે કે $a$ એ $\Gamma$, $\Delta$ કે $!A$માં ન આવે.
+આને \emph{આઇગનચલ-શરત} કહે છે.
+
+\Log{G1c} અને \Log{G3c} જેવાં સિક્વન્ટ-તંત્રોમાં
+આ રીતે ઢાંચારૂપે આપેલા નિયમોનો સમૂહ તથા સ્વયંસિદ્ધ ગણાતા
+કેટલાક સિક્વન્ટો હોય છે; તેઓ પણ ઢાંચારૂપે અપાય છે.
+આવા તંત્રની !!^{proof} એ સ્વયંસિદ્ધોમાંથી અનુમાનના નિયમો
+વડે આગમનથી ઉત્પન્ન કરેલાં સિક્વન્ટોનાં સાંત વૃક્ષો છે.
+દરેક પર્ણ સ્વયંસિદ્ધ છે, અને બીજા દરેક સિક્વન્ટને તેની તરત
+ઉપરના સિક્વન્ટોમાંથી તંત્રના કોઈ અનુમાન-નિયમ વડે મેળવાય છે.
+
+\begin{defn}\ollabel{defn:proof}
+સિક્વન્ટ-તંત્રની \emph{!!^{proof}} એ નીચે પ્રમાણે
+આગમનથી રચાતાં સિક્વન્ટોનાં સાંત વૃક્ષો છે:
+\begin{enumerate}
+  \item\ollabel{defn:prf:axiom} દરેક સ્વયંસિદ્ધ !!a{proof} છે.
+  \item\ollabel{defn:prf:one-prem} જો $\pi_1$ એ
+  સિક્વન્ટ~$S_1$માં અંત પામતી !!a{proof} હોય, અને $S$ એ
+  એક આધારવાળા નિયમ~$R$ વડે $S_1$માંથી મળતો સિક્વન્ટ હોય, તો
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$S$}
+  \DisplayProof
+  \]
+  એ !!a{proof} છે.
+  \item\ollabel{defn:prf:two-prem} જો $\pi_1$ અને $\pi_2$
+  અનુક્રમે સિક્વન્ટ~$S_1$ અને $S_2$માં અંત પામતી !!{proof}
+  હોય, અને $S$ એ બે આધારવાળા નિયમ~$R$ વડે $S_1$ અને $S_2$માંથી
+  મળતો સિક્વન્ટ હોય, તો
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \DeduceC{$S_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$S$}
+  \DisplayProof
+  \]
+  એ !!a{proof} છે.
+\end{enumerate}
+\end{defn}
+
+\Olref{defn:proof}માં !!{proof}ને સિક્વન્ટોનાં વૃક્ષો
+તરીકે વ્યાખ્યાયિત કરી છે. આ વૃક્ષો ``ઉપર તરફ''
+વધે છે તેમ વિચારીએ. વૃક્ષની સૌથી ઉપરની પર્ણ-ગાંઠો
+સ્વયંસિદ્ધો છે અને તેમને \emph{આરંભિક સિક્વન્ટો} કહે છે.
+સૌથી નીચેના સિક્વન્ટને \emph{અંતિમ સિક્વન્ટ} કહે છે.
+જો $\pi$ એ અંતિમ સિક્વન્ટ~$S$ ધરાવતી !!a{proof} હોય તો
+$\pi \Proves S$ પણ લખીએ. સિક્વન્ટ~$S$ની !!a{proof}
+હોય તો $\Proves S$ લખીએ; જરૂર પડે તો $\Proves$ ચિહ્નની
+ડાબે તે સાબિતીનું તંત્ર બતાવીએ, દાખલા તરીકે
+$\Log{G1c} \Proves !A, !B \Sequent !A \land
+!B$. !!a{proof}માં આરંભિક સિક્વન્ટો સિવાયનો દરેક સિક્વન્ટ
+કોઈ નિયમ~$R$ના અનુમાનનું \emph{ફલિત} છે.
+!!a{proof}માં સિક્વન્ટની તરત ઉપર આવેલા એક કે બે સિક્વન્ટોને,
+એટલે કે તેની ગાંઠની પિતૃ-ગાંઠોને, અનુમાનના \emph{આધારો} કહે છે.
+
+!!a{proof}ની આગમનથી થતી રચનામાં વપરાતી
+!!{proof}ને તેની \emph{ઉપ-!!{proof}} કહે છે.
+અનુમાનના આધારોમાં અંત પામતી ઉપ-!!{proof}ને
+તે અનુમાનની \emph{તાત્કાલિક ઉપ-!!{proof}} કહે છે.
+
+!!{proof}ની જટિલતા પ્રાકૃતિક સંખ્યા વડે માપવી ઘણી વાર
+જરૂરી બને છે. !!a{proof}માં સિક્વન્ટોની કુલ સંખ્યા ગણી શકાય,
+પણ ઘણી વાર વધુ ઉપયોગી માપ !!a{proof}ની !!{height} છે:
+અંતિમ સિક્વન્ટથી આરંભિક સિક્વન્ટ સુધીની શાખામાં અનુમાન-પગલાંની
+મહત્તમ સંખ્યા. તેની આગમનથી થતી વ્યાખ્યા પણ આપી શકીએ.
+
+\begin{defn}
+!!a{proof}~$\pi$ની \emph{!!{height}}~$\pheight{\pi}$
+નીચે પ્રમાણે આગમનથી વ્યાખ્યાયિત છે.
+\begin{enumerate}
+  \item જો $\pi$ ફક્ત એક સ્વયંસિદ્ધની બનેલી હોય, તો
+  $\pheight{\pi} = 0$.
+  \item જો $\pi$નો અંત એક આધારવાળા અનુમાનમાં થતો હોય અને તેની
+  તાત્કાલિક ઉપ-!!{proof} એ $\pi_1$ હોય, તો
+  $\pheight{\pi} = \pheight{\pi_1} + 1$.
+  \item જો $\pi$નો અંત બે આધારવાળા અનુમાનમાં થતો હોય અને તેની
+  તાત્કાલિક ઉપ-!!{proof} એ $\pi_1$ અને $\pi_2$ હોય, તો
+  $\pheight{\pi} =
+  \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$.
+\end{enumerate}
+જો સિક્વન્ટ~$S$ને ઊંચાઈ $\le n$ની !!a{proof}
+હોય, તો $\Proves[n] S$ લખીએ.
+\end{defn}
+
+\begin{ex}
+\Log{G3c}માં $!C, \Gamma \Sequent \Delta, !C$ સ્વરૂપનો
+દરેક સિક્વન્ટ સ્વયંસિદ્ધ છે, જ્યાં $!C$ પરમાણ્વીય હોવું જોઈએ.
+ધારો કે $!D$ અને $!E$ પરમાણ્વીય વાક્યો છે.
+તો $!D, !E \Sequent !D$ અને $!D, !E \Sequent !E$ એ
+સ્વયંસિદ્ધ $!C, \Gamma \Sequent \Delta, !C$ના દાખલા છે.
+દાખલા તરીકે, $!C, \Gamma \Sequent \Delta, !C$માં
+$!C \ident !E$, $\Gamma = \{!D\}$ અને
+$\Delta = \emptyset$ લઈએ તો બરાબર
+$!D, !E \Sequent !E$ સિક્વન્ટ મળે છે.
+(યાદ રાખો કે અહીં બહુ\emph{ગણ} છે, એટલે
+$!D, !E \Sequent !E$ અને $!E, !D \Sequent !E$ એક જ સિક્વન્ટ છે.)
+\sourcecorrection{OLMD-339}{મૂળના છેલ્લા તુલનાત્મક સિક્વન્ટના ઉત્તરાંગમાં પહેલાથી જુદું સૂત્ર હતું. બહુગણનો ક્રમ બદલવાથી પૂર્વાંગમાં ફેર નથી પડતો, પરંતુ ઉત્તરાંગનું સૂત્ર બદલવું તે સમાન સિક્વન્ટ આપતું નથી. તેથી બંને ઉત્તરાંગમાં એક જ સૂત્ર રાખ્યું છે.}
+
+$!D, !E \Sequent !D$ એ \Log{G3c}ના સ્વયંસિદ્ધનો દાખલો
+હોવાથી તે એકલો પણ \Log{G3c}માં !!a{proof} ગણાય છે;
+$!D, !E \Sequent !E$ માટે પણ
+\olref{defn:proof}\olref{defn:prf:axiom} પ્રમાણે એમ જ છે.
+તેમને $\pi_1$ અને $\pi_2$ કહીએ.
+\olref{defn:prf:two-prem} પ્રમાણે આ બે !!{proof} લઈને
+બે આધારવાળા નિયમ~$\RightR{\land}$ વડે નવી
+સાબિતી~$\pi_3$ ઉત્પન્ન કરી શકીએ:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\DisplayProof
+\]
+પછી $\pi_3$માંથી !!{proof}~$\pi_4$ મળે છે:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\insertBetweenHyps{\hspace{5ex}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\LeftSubproofLabel{$\pi_3$}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!D \land !E  \fCenter !D \land !E$
+\RightSubproofLabel{$\pi_4$}
+\DisplayProof
+\]
+અહીં એક આધારવાળો નિયમ~$\LeftR{\land}$ વાપર્યો છે
+(\olref{defn:proof}\olref{defn:prf:one-prem} પ્રમાણે).
+$\pi_4$ના છેલ્લા અનુમાનની તાત્કાલિક ઉપ-!!{proof} એ $\pi_3$ છે.
+$\RightR{\land}$ના અનુમાનની તાત્કાલિક ઉપ-!!{proof} એ
+$\pi_1$ અને $\pi_2$ છે. $\pi_4$ની ઉપ-!!{proof}માં
+$\pi_1$, $\pi_2$, $\pi_3$ અને $\pi_4$ પોતે આવે છે.
+અહીં $\pheight{\pi_1} =
+\pheight{\pi_2} = 0$, $\pheight{\pi_3} = 1$ અને
+$\pheight{\pi_4} = 2$ છે. કોઈ પણ પરમાણ્વીય $!D$ અને
+$!E$ માટે $\Log{G3c} \Proves[4] !D \land !E \fCenter !D
+\land !E$ બતાવ્યું છે.
+\end{ex}
+
+\end{document}

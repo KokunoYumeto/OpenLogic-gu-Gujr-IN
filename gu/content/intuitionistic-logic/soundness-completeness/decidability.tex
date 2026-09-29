@@ -1,0 +1,66 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: decidability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{dec}
+
+\olsection{નિર્ણેયતા}
+નોંધો કે પૂર્ણતા પ્રમેયની સાબિતી દરેક
+$\Gamma \Proves/ !A$ માટે અનંત સંખ્યામાં જગતો ધરાવતું
+એવું નિદર્શ આપે છે જે $\Gamma \Entails/ !A$ની સાક્ષી
+પૂરે છે. નીચેનું વિધાન બતાવે છે કે $\Entails !A$
+સાબિત કરવા બધા સાન્ત નિદર્શો માટે
+$\mSat{M}{!A}$ સાબિત કરવું પૂરતું છે (એટલે, સાન્ત
+જગતગણ ધરાવતા નિદર્શો માટે).
+
+\begin{thm}\ollabel{thm:decidability}
+  જો $\Entails/ !A$ હોય, તો એવું સાન્ત નિદર્શ છે કે
+  $\mSat/{M'}{!A}$.
+\end{thm}
+
+\begin{proof}
+  ધારો કે $\mModel{M}=\tuple{W, R, V}$ એવું છે કે
+  $\mSat/{M}{!A}$ અને $P$ એ~$!A$માં આવતા
+  !!{propositional variable}sનો ગણ છે.
+  $W' = \Setabs{[w]}{w \in W}$ લઈને, જ્યાં
+  $[w] = \Setabs{p \in P}{w \in V(p)}$, $R'$ને
+  ઉપગણ-સંબંધ અને
+  $V'(p)=\Setabs{[w]}{p \in [w]}$ રાખીને
+  $\mModel{M'}=\tuple{W', R', V'}$ વ્યાખ્યાયિત કરો.
+  $W'$ સાન્ત ગણ છે અને $\mModel{M'}$ એ
+  !!a{relational model} છે તે સ્પષ્ટ છે.
+
+  $!A$ પર આગમન કરીને બતાવી શકાય છે કે
+  \[
+    \mSat{M}{!A}[w] \text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે } \mSat{M'}{!A}[{[w]}]
+  \]
+  આ $P$માંથી જ !!{propositional variable}s ધરાવતા
+  બધા !!{formula}s~$!A$ માટે સાચું છે. તેની સાબિતી
+  વાચક માટે સ્વાધ્યાય તરીકે છોડી છે.
+  \sourcecorrection{OLMD-096}{મૂળમાં આપેલી આ રચના
+  નિષેધ માટે સત્યતા જાળવતી નથી. દાખલા તરીકે,
+  $W=\{u,v\}$, $R$ ઓળખસંબંધ અને $V(p)=\{v\}$
+  હોય, તો $u$ ખાતે $\lnot p$ સાચું છે. પરંતુ નવા
+  નિદર્શમાં $[u]=\emptyset \subseteq \{p\}=[v]$,
+  એટલે $[u]$થી $p$ સાચું હોય એવા જગત સુધી પહોંચી
+  શકાય છે અને ત્યાં $\lnot p$ ખોટું છે. સાન્ત-નિદર્શ
+  પ્રમેયની બીજી સાબિતી જરૂરી છે; આ દાવાની ખામી
+  નોંધ્યા વિના તેને ચકાસેલી સાબિતી માનવી નહીં.}
+\end{proof}
+
+\begin{prob}
+\olref[int][sc][dec]{thm:decidability}ની સાબિતી પૂરી
+કરો: ફક્ત~$P$માંથી વિધાનાત્મક ચલો ધરાવતા બધા
+!!{formula}s~$!A$ માટે $\mSat{M,w}{!A}$ ત્યારે
+અને માત્ર ત્યારે જ જ્યારે $\mSat{M',[w]}{!A}$
+તે બતાવો.
+\end{prob}
+
+\olref{thm:decidability} પરથી $\Entails !A$ છે કે નહીં
+તે નક્કી કરવાની કલનવિધિ મળે છે.
+
+\end{document}

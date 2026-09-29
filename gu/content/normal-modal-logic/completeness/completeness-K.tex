@@ -1,0 +1,64 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: completeness-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmk}
+
+\olsection{\Log{K} માટે નિર્ધારણ અને પૂર્ણતા}
+
+હવે આપણે કૅનોનિકલ નિદર્શન વડે પૂર્ણતા સ્થાપિત કરવા તૈયાર છીએ.
+પૂર્ણતા એ હકીકતમાંથી ફલિત થાય છે કે~$\Sigma$ના કૅનોનિકલ નિદર્શનમાં
+સત્ય !!{formula}s ચોક્કસપણે $\Sigma$માંથી !!{derivable} સૂત્રો જ છે.
+આ ગુણધર્મવાળા નિદર્શનો $\Sigma$નું \emph{નિર્ધારણ કરે છે} એમ કહેવાય છે.
+
+\begin{defn}
+  નિદર્શન $\mModel{M}$ કોઈ સામાન્ય મોડલ તર્ક~$\Sigma$નું
+  \emph{નિર્ધારણ કરે છે} જો અને માત્ર જો બધાં !!{formula}s~$!A$
+  માટે $\mSat{M}{!A}$ જો અને માત્ર જો $\Sigma \Proves !A$.
+\end{defn}
+
+\begin{thm}[નિર્ધારણ]\ollabel{thm:determination}
+   $\mSat{M^\Sigma}{!A}$ જો અને માત્ર જો $\Sigma \Proves !A$.
+\end{thm}
+
+\begin{proof}
+  જો $\mSat{M^\Sigma}{!A}$ હોય, તો દરેક પૂર્ણ
+  $\Sigma$-સુસંગત $\Delta$ માટે $\mSat{M^\Sigma}{!A}[\Delta]$.
+  તેથી સત્યતા સહાયક પ્રમેય મુજબ દરેક પૂર્ણ $\Sigma$-સુસંગત
+  $\Delta$માં $!A \in \Delta$; એટલે
+  \olref[lin]{cor:provability-characterization} મુજબ ($\Gamma =
+  \emptyset$ લઈને) $\Sigma \Proves !A$.
+
+  ઊલટું, જો $\Sigma \Proves !A$ હોય, તો
+  \olref[ccs]{prop:ccs-properties}\olref[ccs]{prop:ccs-closed}
+  મુજબ દરેક પૂર્ણ $\Sigma$-સુસંગત $\Delta$માં~$!A$ છે; તેથી
+  સત્યતા સહાયક પ્રમેય મુજબ દરેક~$\Delta \in W^\Sigma$ માટે
+  $\mSat{M^\Sigma}{!A}[\Delta]$, એટલે કે
+  $\mSat{M^\Sigma}{!A}$.
+\end{proof}
+
+\Log{K}નું કૅનોનિકલ નિદર્શન~\Log{K}નું નિર્ધારણ કરતું હોવાથી
+પરિણામ તરીકે~\Log{K}ની પૂર્ણતા તરત મળે છે:
+
+\begin{cor}\ollabel{cor:Kcomplete}
+  પાયાનો મોડલ તર્ક \Log{K} બધાં નિદર્શનોના વર્ગને અનુલક્ષીને પૂર્ણ
+  છે, એટલે કે $\Entails !A$ હોય તો $\Log{K} \Proves !A$.
+\end{cor}
+
+\begin{proof}
+  પ્રતિપક્ષી રીતે, જો $\Log{K} \Proves/ !A$ હોય, તો નિર્ધારણ મુજબ
+  $\mSat/{M^{\Log{K}}}{!A}$; તેથી $!A$ માન્ય નથી.
+\end{proof}
+
+નિદર્શનોના કોઈ વર્ગને અનુલક્ષીને તંત્ર $\Sigma$ની પૂર્ણતાનો સામાન્ય
+કિસ્સો લો, જેમ કે સ્વપ્રતિબિંબિત, સંમિત અને પરંપરિત નિદર્શનોના વર્ગને
+અનુલક્ષીને \Log{KTB4}ની પૂર્ણતા. અહીં માત્ર નિર્ધારણ પૂરતું નથી.
+તંત્ર $\Sigma$નું કૅનોનિકલ નિદર્શન તે વર્ગનું સભ્ય છે એ પણ બતાવવું
+પડશે. કૅનોનિકલ નિદર્શનની રચનામાંથી આ સ્પષ્ટ રીતે ફલિત થતું નથી—અને
+તે હંમેશાં સાચું પણ નથી!
+
+\end{document}

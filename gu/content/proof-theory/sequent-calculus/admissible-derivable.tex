@@ -1,0 +1,294 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: admissible-derivable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{adm}
+
+\olsection{સ્વીકાર્ય અને નિષ્પન્નક્ષમ નિયમો}
+
+સાબિતી-સિદ્ધાંતનાં ઘણાં પરિણામો આ પ્રશ્નને લગતાં
+પરિણામો વિશે છે અથવા તેમનો ઉપયોગ કરે છે:
+કોઈ ચોક્કસ નિયમથી જે બધું !!{prove}d થઈ શકે
+તે એ નિયમ વિના પણ !!{prove}d થઈ શકે?
+કટ-લોપનું પ્રમેય આનું સૌથી જાણીતું ઉદાહરણ છે.
+તે બતાવે છે કે~\Cut{} સાથેના સિક્વન્ટ તંત્રના નિયમોથી
+જે સિક્વન્ટ !!{prove}d થઈ શકે તે~\Cut વિના પણ
+!!{prove}d થઈ શકે છે. આ પ્રકારનો ગુણધર્મ
+મહત્ત્વનો હોવાથી તેને નામ આપ્યું છે.
+
+\begin{defn}
+સિક્વન્ટ તંત્રમાં નિયમ~$R$ \emph{સ્વીકાર્ય} છે,
+જો તંત્ર સાથે નિયમ~$R$ વાપરીને સાબિત થઈ શકે તે દરેક
+સિક્વન્ટ~$R$ વિના પણ સાબિત થઈ શકે.
+\end{defn}
+
+\begin{ex}\ollabel{ex:land-deriv}
+\Log{G1c} અને \Log{G3c}માં $\LeftR{\land}$ નિયમનાં
+સ્વરૂપ જુદાં છે. \Log{G1c}માં નિયમનાં બે સ્વરૂપ છે:
+એકમાં મુખ્ય !!{formula}~$!A \land !B$નું
+ડાબું સંયોજ્ય $!A$ આધારમાં છે અને
+બીજામાં જમણું સંયોજ્ય~$!B$ છે:
+\[
+\Axiom$ !A, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\Log{G3c}માં ફક્ત એક નિયમ છે:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_3$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+હવે પૂછી શકીએ: ``\Log{G3c}નો $\LeftR{\land}_3$ નિયમ
+\Log{G1c}માં સ્વીકાર્ય છે?'' હા છે:
+$\LeftR{\land}_3$થી થતાં દરેક અનુમાનનું
+ફક્ત~\Log{G1c}ના નિયમોથી સીધું અનુકરણ કરી શકીએ.
+$\LeftR{\land}_1$ અને $\LeftR{\land}_2$ ઉપરાંત
+બંધારણીય નિયમ~$\LeftR{\Contraction}$ પણ જોઈએ:
+\[
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-300}{મૂળના અંતિમ સંકોચન-પગલામાં મુખ્ય સંયોજન અને બાજુના સંદર્ભ વચ્ચેનો અલ્પવિરામ ખૂટે છે; ઉમેર્યો છે.}
+\end{ex}
+
+એક નિયમથી થતા અનુમાનનું બીજા નિયમોથી અનુકરણ કરવું
+એ નિયમ સ્વીકાર્ય છે તે બતાવવાની એક રીત છે.
+પરંતુ એ એકમાત્ર રીત નથી; કેટલાક નિયમો સ્વીકાર્ય હોય
+પરંતુ આ રીતે તેમનું અનુકરણ ન થઈ શકે.
+જેમનું થઈ શકે તેમને \emph{નિષ્પન્નક્ષમ} કહે છે.
+
+\begin{defn}
+નિયમ~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+તંત્રમાં \emph{નિષ્પન્નક્ષમ} કહેવાય, જો તંત્રના નિયમો
+અને સ્વયંસિદ્ધો સાથે~$S_1$, \dots,~$S_n$નાં સ્વરૂપના
+વધારાના આરંભિક સિક્વન્ટો વાપરીને
+સિક્વન્ટ~$S$ની ઢાંચારૂપ !!{proof} મળે.
+\end{defn}
+
+\olref{ex:land-deriv}માં આપેલી !!{proof} બતાવે છે
+કે $\LeftR{\land}_3$ એ~\Log{G1c}માં નિષ્પન્નક્ષમ નિયમ છે:
+તે !!{proof}, $\LeftR{\land}_3$ના આધારને
+આરંભિક સિક્વન્ટો તરીકે લઈ, ફક્ત \Log{G1c}ના નિયમોથી
+$\LeftR{\land}_3$ના નિષ્કર્ષની ઢાંચારૂપ !!{proof} આપે છે.
+(તેમાં \Log{G1c}ના કોઈ સ્વયંસિદ્ધ વપરાયા નથી.)
+
+\begin{prop}\ollabel{prop:lor-G3-adm}
+\Log{G3c}ના $\LeftR{\land}$ અને $\RightR{\lor}$
+નિયમો~\Log{G1c}માં નિષ્પન્નક્ષમ છે.
+\end{prop}
+
+\begin{proof}
+  $\LeftR{\land}$ માટેની સાબિતી \olref{ex:land-deriv}માં આપી છે.
+  $\RightR{\lor}$ માટેની સાબિતી સ્વાધ્યાય તરીકે છોડી છે.
+\end{proof}
+
+\begin{prob}
+\Log{G3c}નો $\RightR{\lor}$ નિયમ~\Log{G1c}માં
+નિષ્પન્નક્ષમ છે તે બતાવો.
+\end{prob}
+
+\begin{prob}
+$\liff$ વ્યાખ્યાયિત !!{operator} છે એમ ધારો:
+$!A \liff !B$ એ $(!A \lif !B) \land (!B \lif !A)$નું
+ટૂંકું રૂપ છે. બતાવો કે આ નિયમો
+\begin{enumerate}
+\item \Axiom$\Gamma, !A, !B \fCenter \Delta$
+\Axiom$\Gamma \fCenter \Delta, !A, !B$
+\RightLabel{\LeftR{\liff}}
+\BinaryInf$!A \liff !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\item
+\Axiom$!A, \Gamma \fCenter \Delta, !B$
+\Axiom$!B, \Gamma \fCenter \Delta, !A$
+\RightLabel{\RightR{\liff}}
+\BinaryInf$\Gamma \fCenter \Delta, !A \liff !B$
+\DisplayProof
+\end{enumerate}
+(a)~\Log{G1c}માં અને (b)~\Log{G3c}માં નિષ્પન્નક્ષમ છે.
+\sourcecorrection{OLMD-301}{મૂળમાં ડાબા દ્વિઅનુસરણ-નિયમનું મુખ્ય સૂત્ર પણ જમણી બાજુ છે. તેને નિષ્કર્ષની ડાબી બાજુ મૂક્યું છે: બંને આધાર અનુક્રમે બંને સૂત્રો સત્ય હોય અને બંને અસત્ય હોય તે કિસ્સા આવરે છે.}
+\end{prob}
+
+
+\begin{ex}\ollabel{ex:weak-adm}
+\Log{G1c}નો $\RightR{\Weakening}$ નિયમ,
+\[
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\]
+\Log{G3c}માં સ્વીકાર્ય છે.
+સાબિતીનો વિચાર સરળ છે:~\Log{G3c}માં
+આધાર $\Gamma \Sequent \Delta$ની !!a{proof}~$\pi$ છે એમ ધારો.
+$\pi$ના દરેક સિક્વન્ટના ઉત્તરાંગમાં !!{formula}~$!A$ ઉમેરો.
+સ્વયંસિદ્ધો સ્વયંસિદ્ધ જ રહે છે;
+યોગ્ય અનુમાનો પણ યોગ્ય અનુમાન જ રહે છે.
+નવી !!{proof}નો અંતિમ સિક્વન્ટ $\Gamma \Sequent
+\Delta, !A$ છે.
+\sourcecorrection{OLMD-302}{મૂળ નવી સાબિતીના આ અંતને સૂત્ર કહે છે, પરંતુ દર્શાવેલું પદ આખું સિક્વન્ટ છે. તે પ્રમાણે અહીં અંતિમ સિક્વન્ટ કહ્યું છે.}
+
+પરંતુ $\RightR{\Weakening}$ નિયમ~\Log{G3c}માં નિષ્પન્નક્ષમ નથી.
+તે હોય એમ ધારો: ફક્ત~\Log{G3c}ના સ્વયંસિદ્ધો અને નિયમો,
+તથા જરૂર હોય તો વધારાનો આરંભિક સિક્વન્ટ~$\Gamma \Sequent \Delta$,
+વાપરીને $\Gamma \Sequent \Delta, !A$ની !!a{proof} મળે એમ ધારો.
+$\RightR{\Weakening}$ નિષ્પન્નક્ષમ હોવા માટે જરૂરી છે તેમ
+આ !!{proof} સંપૂર્ણ ઢાંચારૂપ હોય,
+તો $\Gamma$ અને~$\Delta$ કાઢીને તેને~$\Sequent !A$ની
+!!a{proof}માં ફેરવી શકીએ.
+એથી વધારાના આરંભિક સિક્વન્ટો~$\Gamma \Sequent \Delta$
+ખાલી સિક્વન્ટ~$\quad \Sequent \quad$ બની જાય.
+ખાલી સિક્વન્ટમાં કોઈ !!{formula}s નથી,
+પરંતુ~\Log{G3c}ના દરેક નિયમના આધારમાં ઓછામાં ઓછું
+એક સક્રિય !!{formula} જરૂરી છે.
+એટલે ખાલી સિક્વન્ટ આ ઢાંચારૂપ !!{proof}ના
+કોઈ અનુમાનનો આધાર ન બની શકે.
+તેથી !!{proof} ઢાંચારૂપ ત્યારે જ હોઈ શકે
+જ્યારે વધારાનો સિક્વન્ટ $\Gamma \Sequent \Delta$
+તેમાં ખરેખર આરંભિક સિક્વન્ટ તરીકે વપરાયો ન હોય.
+બીજા શબ્દોમાં, તે ફક્ત~\Log{G3c}ના સ્વયંસિદ્ધો અને નિયમોથી
+$\Gamma \Sequent \Delta, !A$ની ઢાંચારૂપ નિષ્પત્તિ હોય,
+અને આ સ્વરૂપના દરેક સિક્વન્ટની~\Log{G3c}માં
+!!a{proof} છે તે બતાવ્યું હોય.
+પરંતુ આ અશક્ય છે, કારણ કે \Log{G3c} યથાર્થ છે;
+એટલે દરેક !!{structure}માં સત્ય હોય તેવા સિક્વન્ટો જ
+!!{prove} કરી શકે. $\Gamma = \Delta = \emptyset$
+અને $!A \ident \lfalse$ લઈએ, તો \Log{G3c}એ
+દાખલા તરીકે $\quad \Sequent \lfalse$ સિક્વન્ટ !!{prove}
+કરવો પડે, જે તે કરી શકતું નથી.
+\end{ex}
+
+હવે શિથિલીકરણ~\Log{G3c}માં સ્વીકાર્ય નિયમ છે
+તે પરિણામની આગમનથી સાબિતી આપીએ.
+ખરેખર સહજ દલીલ બતાવે છે તેમ થોડું વધુ સબળ પરિણામ સાચું છે:
+$\pi$ના દરેક સિક્વન્ટની જમણી બાજુ $!A$ ઉમેરવાથી
+!!{proof}ની સંરચના બદલાતી નથી;
+ખાસ કરીને ઊંચાઈ વધતી નથી.
+આ મહત્ત્વના ગુણધર્મની અલગ વ્યાખ્યા આપીએ.
+
+\begin{defn}
+નિયમ~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+તંત્રમાં \emph{!!{height}-સંરક્ષક સ્વીકાર્ય}
+(અથવા \emph{!!{hp}-સ્વીકાર્ય}) છે, જો
+$\Proves[h_i] S_i$ એ $i = 1$, \dots,~$n$ માટે હોય,
+ત્યારે $\Proves_m S$ હોય, જ્યાં $m = \max(h_1, \dots,
+h_n)$.
+\end{defn}
+
+નિયમ !!{height}-સંરક્ષક સ્વીકાર્ય થવા માટે આ પૂરતું છે:
+આધારો~$S_i$ની !!{proof}s~$\pi_i$ને
+!!{height}~$h_i = \pheight{\pi_i}$ હોય,
+ત્યારે નિષ્કર્ષની એવી !!a{proof}~$\pi$ મળે
+જેની !!{height}~$\pheight{\pi}$ એ~$h_i$ના મહત્તમ કરતાં મોટી ન હોય.
+ખાસ કરીને એક જ આધાર~$S_1$ હોય,
+તો $\pheight{\pi} \le \pheight{\pi_1}$ પૂરતું છે.
+$\RightR{\Weakening}$ અને $\LeftR{\Weakening}$ના કિસ્સામાં
+ખરેખર $\pheight{\pi} = \pheight{\pi_1}$ છે,
+પરંતુ સમાનતા જરૂરી નથી.
+
+\begin{prop}\ollabel{prop:weak-G3c-adm}
+\Log{G1c}ના $\RightR{\Weakening}$ અને $\LeftR{\Weakening}$
+નિયમો~\Log{G3c}માં !!{height}-સંરક્ષક સ્વીકાર્ય છે.
+\end{prop}
+
+\begin{proof}
+  બતાવવાનું છે કે $\Log{G3c} \Proves \Gamma \Sequent \Delta$
+  માટે !!{height}~$\pheight{\pi} = n$ની !!{proof}~$\pi$ હોય,
+  તો $\pheight{\pi'} = n$ સાથે
+  $\Gamma \Sequent \Delta, !A$ની \Log{G3c}-!!{proof} $\pi'$ મળે.
+  $n$ પર આગમનથી સાબિતી કરીએ.
+  $n=0$ હોય, તો $\pi$ ફક્ત સ્વયંસિદ્ધ $\Gamma \Sequent \Delta$ છે
+  (સામાન્ય ઓળખ-સ્વયંસિદ્ધના કિસ્સામાં કોઈ આણ્વિક $!C$
+  બંને $\Gamma$ અને~$\Delta$માં આવે છે);
+  $\Gamma \Sequent \Delta, !A$ પણ સ્વયંસિદ્ધ છે.
+  \sourcecorrection{OLMD-303}{મૂળના આધાર-કિસ્સાના કૌંસમાં ફક્ત આણ્વિક ઓળખ-સ્વયંસિદ્ધનો ઉલ્લેખ છે. G3cના કોષ્ટકમાં અસત્ય ડાબે હોય તે સ્વયંસિદ્ધ પણ છે; તેની જમણી બાજુ સૂત્ર ઉમેરવાથી તે પણ સ્વયંસિદ્ધ રહે છે. આ બીજો આધાર-કિસ્સો અહીં સ્પષ્ટ નોંધ્યો છે.}
+  $n = \pheight{\pi} >0$ હોય,
+  તો !!{proof}~$\pi$નું છેલ્લું અનુમાન હોય.
+  વપરાયેલા નિયમ પ્રમાણે કિસ્સા જુદા પાડીએ.
+  ફક્ત એક ઉદાહરણ આપીએ:
+  છેલ્લું અનુમાન $\RightR{\land}$ છે એમ ધારો.
+  ત્યારે $\Delta = \Delta', !B \land !C$ છે
+  અને છેલ્લાં અનુમાનની તરત પહેલાંની ઉપ-!!{proof}s
+  $\pi_1$ અને~$\pi_2$નાં અંતિમ સિક્વન્ટો અનુક્રમે
+  $\Gamma \Sequent \Delta', !B$ અને
+  $\Gamma \Sequent \Delta', !C$ છે.
+  બીજા શબ્દોમાં $\pi$નું સ્વરૂપ આ છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma \fCenter \Delta', !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma \fCenter \Delta', !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C$
+  \DisplayProof
+  \]
+  વળી $n = \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$ છે.
+  એટલે $\pheight{\pi_1} < n$ અને $\pheight{\pi_2} < n$ છે,
+  તેથી આગમન-ધારણા લાગુ પડે છે:
+  $\Gamma \Sequent \Delta', !B, !A$ તથા
+  $\Gamma \Sequent \Delta', !C, !A$ની
+  !!{proof}s $\pi_1'$ અને~$\pi_2'$ મળે છે.
+  $\RightR{\land}$ નિયમથી
+  $\Gamma \Sequent \Delta', !B \land !C, !A$ની
+  !!a{proof}~$\pi'$ મળે છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta', !B, !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta', !C, !A$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A$
+  \DisplayProof
+  \]
+  અહીં $\pheight{\pi'} =
+  \max(\pheight{\pi_1'}, \pheight{\pi_2'}) + 1 = \max(\pheight{\pi_1},
+  \pheight{\pi_2}) + 1 = \pheight{\pi}$ છે.
+\end{proof}
+
+\olref{prop:weak-G3c-adm} ઘણું ઉપયોગી છે.
+તેને વારંવાર લગાવવાની નોંધ આપીએ:
+$\pi$ એ~$\Gamma \Sequent \Delta$ની !!a{proof} હોય,
+તો $\pi[\Pi \Sequent \Lambda]$ એ
+$\Pi$નાં બધાં !!{formula}s માટે ડાબે શિથિલીકરણની સ્વીકાર્યતા
+અને~$\Lambda$નાં બધાં !!{formula}s માટે
+જમણે શિથિલીકરણની સ્વીકાર્યતા લગાવવાનું પરિણામ છે.
+તે $\Gamma, \Pi \Sequent \Delta, \Lambda$ની !!a{proof} છે.
+
+\end{document}

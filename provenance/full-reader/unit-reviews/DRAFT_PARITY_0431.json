@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0431",
+  "checked_at_utc": "2026-09-27T11:25:23.852392+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0431 proofs in K; state-only draft",
+  "report": {
+    "unit_id": "OLP-0431",
+    "source_path": "content/normal-modal-logic/axioms-systems/proofs-in-K.tex",
+    "source_sha256": "c320ad89ad9b3c091d61aceebf38dc3626e52bcf4d66d23cf7c356646090393d",
+    "draft_path": "private-state\\work\\batch040_draft\\proofs-in-K.tex",
+    "draft_sha256": "0d56d2e8af133113cd1055cbaaa1f6dec1385a80585b1cb6a6e2c1c27311253f",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 82,
+    "target_math_spans_after_corrections": 82,
+    "glossary_tokens": 8,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 85,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "derivation_tables_exact": true,
+    "derivation_line_counts": [
+      4,
+      11,
+      10,
+      12,
+      6,
+      5
+    ],
+    "conditional_modal_branches_preserved": 3
+  },
+  "status": "draft_linguistic_math_and_six_derivation_tables_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

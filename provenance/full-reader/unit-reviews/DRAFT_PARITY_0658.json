@@ -1,0 +1,96 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0658",
+  "checked_at_utc": "2026-09-28T19:04:45.624592+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0658 Maehara interpolation, Craig, Beth, and Robinson; state-only draft",
+  "report": {
+    "unit_id": "OLP-0658",
+    "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+    "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+    "draft_path": "private-state\\work\\batch044_draft\\interpolation.tex",
+    "draft_sha256": "f7a9642d07ad6aa54d1386584f50895c6fd50a874d81ce10e23c9cc19bb9e381",
+    "aligned_blocks": 37,
+    "linguistic_blocks": 32,
+    "source_math_spans_correction_aware": 284,
+    "target_math_spans_after_corrections": 284,
+    "glossary_tokens": 71,
+    "source_correction_notes": [
+      "OLMD-206",
+      "OLMD-207",
+      "OLMD-208",
+      "OLMD-209",
+      "OLMD-210",
+      "OLMD-211",
+      "OLMD-212"
+    ],
+    "source_detector_ascii_tokens": 1607,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\Lang L(!A) = \\Lang L_1 \\cap\n  \\Lang L_2 = \\Lang L(\\Gamma) \\setminus \\{R\\}",
+        "\\Lang L(!A) \\subseteq \\Lang L(\\Gamma) \\setminus \\{R\\}"
+      ],
+      [
+        "$!R$",
+        "$R$"
+      ],
+      [
+        "$\\Lang L(\\Gamma) \\subseteq \\Lang L(\\Gamma_1)\n\\cap \\Lang L(\\Gamma_2)$",
+        "$\\Lang L(\\Gamma) = \\Lang L(\\Gamma_1)\\cap \\Lang L(\\Gamma_2)$"
+      ],
+      [
+        "$\\Gamma \\Entails/\n\\lnot !A$",
+        "$\\Gamma_2 \\Entails \\lnot !A$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\model-theory\\interpolation\\introduction.tex",
+        "sha256": "5cdff6e7f1d49484d76f8e74cba3603ea1af6907f745a1b1008756cb814776ae",
+        "terms": [
+          "અંતર્વેશન પ્રમેય",
+          "અંતર્વેશક",
+          "બેથનું વ્યાખ્યેયતા પ્રમેય",
+          "રૉબિન્સનનું સંયુક્ત સુસંગતતા પ્રમેય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\model-theory\\interpolation\\definability.tex",
+        "sha256": "fb9de44a305d709372d70cf2b605abb18a64f72519c366a473d7cf038ee1e764",
+        "terms": [
+          "ગૂઢ રીતે વ્યાખ્યાયિત",
+          "સ્પષ્ટ રીતે વ્યાખ્યાયિત"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "શિથિલીકરણ",
+          "સંકોચન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{and}",
+        "target": "\\text{અને}",
+        "count": 9
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 8
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0694",
+  "checked_at_utc": "2026-09-28T23:00:58.413958+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0694 Sequent-style natural deduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0694",
+    "source_path": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",
+    "source_sha256": "44525323721b70654bc19c745388c1ea8196fa4a2fe82c355799018bdeb6d705",
+    "draft_path": "private-state\\work\\batch044_draft\\sequent-natural-deduction.tex",
+    "draft_sha256": "ccce15e85acdafa32e48d8ea781930a26b0e35df1431da46b6c2968b8fdcdc17",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 80,
+    "target_math_spans_after_corrections": 80,
+    "glossary_tokens": 20,
+    "source_correction_notes": [
+      "OLMD-295",
+      "OLMD-296"
+    ],
+    "source_detector_ascii_tokens": 183,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\Gamma \\Sequent !A \\land !A$",
+        "$\\Gamma \\Sequent !A \\land !B$"
+      ],
+      [
+        "$!A \\land !A$",
+        "$!A \\land !B$"
+      ],
+      [
+        "$!A, !B\\lif \\fCenter \\lfalse$",
+        "$!A, !B \\fCenter \\lfalse$"
+      ],
+      [
+        "$(!B \\fCenter !A \\lif \\lfalse$",
+        "$!B \\fCenter !A \\lif \\lfalse$"
+      ],
+      [
+        "$( !B \\fCenter !A \\lor (!A \\lif \\lfalse)$",
+        "$!B \\fCenter !A \\lor (!A \\lif \\lfalse)$"
+      ],
+      [
+        "$(!B \\fCenter !B$",
+        "$!B \\fCenter !B$"
+      ],
+      [
+        "$(!B \\fCenter \\lfalse$",
+        "$!B \\fCenter \\lfalse$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\natural-deduction-introduction.tex",
+        "sha256": "bed9868a3afe599a17b1ad11aeb4566fe4b2d8a6154f33809fe52f10a0b77744",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0,
+    "verified_gather_displays_exact": 1
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

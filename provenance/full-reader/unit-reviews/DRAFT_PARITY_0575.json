@@ -1,0 +1,71 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0575",
+  "checked_at_utc": "2026-09-28T02:13:17.756758+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0575 ordinal-arithmetic introduction and two ways to compute; state-only draft",
+  "report": {
+    "unit_id": "OLP-0575",
+    "source_path": "content/set-theory/ord-arithmetic/introduction.tex",
+    "source_sha256": "9e0976b1ea12b68d90487495db0bc3624653a8c55cdea1300fded90db48a73b8",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-introduction.tex",
+    "draft_sha256": "c4fe0108a2bfd44ece66c106e1ac20089add00c3c9e7b99f19531e2f0f799fb2",
+    "aligned_blocks": 6,
+    "linguistic_blocks": 3,
+    "source_math_spans_correction_aware": 3,
+    "target_math_spans_after_corrections": 3,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 107,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic.tex",
+        "sha256": "c70334c84bcf11d8fa5f0d724e1c69c22a441ead3cf62ababf8b2f311f9e4549",
+        "terms": [
+          "ક્રમવાચક સંખ્યાઓનું અંકગણિત",
+          "\\olimport{addition}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinals.tex",
+        "sha256": "3eb012194bc0e67586089d5c9518d8727d3e01369956bef550e910ee6d547afb",
+        "terms": [
+          "ક્રમવાચક સંખ્યાઓ",
+          "\\olchapter"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine.tex",
+        "sha256": "acceeecc811d33031e89d29ba17cdf4622270983b1c65b6ef9902f842de351bf",
+        "terms": [
+          "તબક્કાઓ અને સ્તરાંકો",
+          "\\olchapter"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-idea.tex",
+        "sha256": "3c6aec7a0807659af5a151a6569ed2680de6e189752b1c629cd5394063de9598",
+        "terms": [
+          "\\omega+1",
+          "\\omega+\\omega"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The three ordinal expressions are exact, and their prior informal status is retained.",
+      "The spine metaphor is translated as a structural axis, without identifying ordinal arithmetic with rank itself.",
+      "The promise of two ways remains deliberately unspecified until later sections define them."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0509",
+  "checked_at_utc": "2026-09-27T21:49:22.991582+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0509 intuitionistic completeness theorem; state-only draft",
+  "report": {
+    "unit_id": "OLP-0509",
+    "source_path": "content/intuitionistic-logic/soundness-completeness/completeness-thm.tex",
+    "source_sha256": "810866d495adead851b265f7e62f0c993a3d49fc0f42e901bf0acc24f32efe3c",
+    "draft_path": "private-state\\work\\batch042_draft\\intuitionistic-completeness-thm.tex",
+    "draft_sha256": "6c64a6068a60f3d5e56c1dd27d94abd07b8f5913875a813a4390bae133485afe",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 30,
+    "target_math_spans_after_corrections": 30,
+    "glossary_tokens": 1,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 91,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "truth_lemma_source_gap_dependency": "work/SOURCE_GAPS_042_0508.json",
+    "full_completeness_proof_verified": false
+  },
+  "status": "draft_translation_review_passed_source_proof_dependency_open_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,152 @@
+% Part: normal-modal-logic
+% Chapter: filtrations
+% Section: euclidean-filtrations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{fil}{euc}
+
+\olsection{યુક્લિડિયન નિદર્શનોનાં ફિલ્ટ્રેશનો}
+
+\olref[acc]{sec}ની રીત યુક્લિડિયન અથવા સિરિયલ અને યુક્લિડિયન
+નિદર્શનોના કિસ્સામાં કામ કરતી નથી. \olref{fig:ser-eucl}ની ઉપરની
+આકૃતિનું નિદર્શન જુઓ, જે યુક્લિડિયન અને સિરિયલ બંને છે. ધારો કે
+$\Gamma = \{p, \Box p \}$. $\Gamma$ દ્વારા ફિલ્ટ્રેશન લેતાં
+$[w_1] = [w_3]$ થાય છે, કારણ કે $w_1$ અને $w_3$ જ
+એવાં જગતો છે જે~$\Gamma$ પર સહમત છે. દરેક ફિલ્ટ્રેશનમાં
+$\mModel{M}$માંથી મળતી કિનારીઓ પણ રહેશે, જેમ
+\olref{fig:ser-eucl2}માં દર્શાવ્યું છે. તે નિદર્શન યુક્લિડિયન નથી.
+વળી તેને યુક્લિડિયન બનાવવા કિનારીઓ ઉમેરી પણ શકાતી નથી:
+$[w_2]$ અને $[w_4]$ વચ્ચે બંને દિશામાં, અને પછી $[w_2]$
+અને~$[w_5]$ વચ્ચે પણ બંને દિશામાં કિનારીઓ ઉમેરવી પડે.
+\sourcecorrection{OLMD-050}{મૂળમાં બીજા કિનારી-યુગ્મ માટે
+મૂળ જગતો $w_2,w_5$ લખ્યાં છે; અહીં ચર્ચા ફિલ્ટ્રેશનની હોવાથી
+સમકક્ષતા-વર્ગો $[w_2],[w_5]$ લખ્યા છે.}
+પરંતુ
+~$w_2$ પર $\Box p$ સત્ય હોવું જોઈએ, જ્યારે~$w_5$ પર $p$
+અસત્ય છે.
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tikzpicture}[modal]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$}] {$w_1$};
+    \node[world] (w2)
+          [label={right: \mTrue{p}},
+            label = {below: $\mSat{{}}{\Box p}$},
+            right=of w1] {$w_2$};
+    \draw[->] (w1) to (w2);
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w3)
+          [label={left: \mFalse{p}},
+            label={below: $\mSat{{}}{\Box p}$},
+            below=of w1] {$w_3$};
+    \node[world] (w4)
+          [label={right:\mTrue{p}},
+            label={below: $\mSat/{{}}{\Box p}$},
+            right=of w3] {$w_4$};
+    \draw[->] (w3) to (w4);
+    \draw[reflexive above] (w4) to (w4);
+    \node[world] (w5)
+          [label={right: \mFalse{p}},
+            label=below:$\mSat/{{}}{\Box p}$,
+            right=of w4] {$w_5$};
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);
+  \end{tikzpicture}
+  \caption{સિરિયલ અને યુક્લિડિયન નિદર્શન.}
+  \ollabel{fig:ser-eucl}
+\end{figure}
+\sourcecorrection{OLMD-048}{મૂળની બંને આકૃતિમાં બીજા જગતનું
+સ્વ-લૂપ છૂટી ગયું છે. તે વિના ઉપરનું નિદર્શન સિરિયલ પણ નથી અને
+યુક્લિડિયન પણ નથી; મૂળ દાવાને સાચો બનાવવા બંને આકૃતિમાં તે
+લૂપ ઉમેર્યો છે.}
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[modal,every text node part/.style={align=center}]
+    \node[world] (w1)
+          [label={left: \mFalse{p}},
+            label={right:$[w_1]=[w_3]$},
+            label={below: $\mSat{{}}{\Box p}$}] {$[w_1]$};
+    \node[world] (w2)
+         [label={right: \mTrue{p}},
+           label = {below: $\mSat{{}}{\Box p}$},
+           right=of w1, yshift=1.5cm] {$[w_2]$};
+    \draw[->] (w1) to (w2);
+    \draw[reflexive above] (w2) to (w2);
+    \node[world] (w4)
+         [label={right:\mTrue{p}},
+           label={below: $\mSat/{{}}{\Box p}$},
+           right=of w1,yshift=-1.5cm] {$[w_4]$};
+    \draw[->] (w1) to (w4);
+    \draw[reflexive above] (w4) to (w4);
+    \node[world] (w5)
+         [label={right: \mFalse{p}},
+             label=below:$\mSat/{{}}{\Box p}$,
+             right=of w4] {$[w_5]$};
+    \draw[->, bend left] (w4) to (w5);
+    \draw[->, bend left] (w5) to (w4);
+    \draw[reflexive above] (w5) to (w5);
+  \end{tikzpicture}
+  \caption{\olref{fig:ser-eucl}ના નિદર્શનનું ફિલ્ટ્રેશન.}
+  \ollabel{fig:ser-eucl2}
+\end{figure}
+
+ખાસ કરીને યુક્લિડિયન ફિલ્ટ્રેશન મેળવવા માત્ર મનસ્વી
+ઉપ-!!{formula}s-બંધ ગણો $\Gamma$ દ્વારા ફિલ્ટ્રેશન લેવું પૂરતું
+નથી. તેના બદલે \emph{મોડલ રીતે બંધ} ગણો $\Gamma$
+લેવા પડે છે (જુઓ \olref[pre]{defn:modallyclosed}). વાક્યોના
+આવા ગણો અનંત હોય છે; તેથી તેઓ તાત્કાલિક સાંત નિદર્શન ગુણધર્મ
+અથવા અનુરૂપ પદ્ધતિની નિર્ણેયતા આપતા નથી.
+
+\begin{thm}\ollabel{thm:modal-closed-filt}
+  $\Gamma$ મોડલ રીતે બંધ હોય,
+  $\mModel{M}=\tuple{W,R,V}$ હોય, અને
+  $\mModel{M^*} = \tuple{W^*,R^*,V^*}$ એ
+  $\mModel{M}$નું સૌથી સ્થૂલ ફિલ્ટ્રેશન હોય.
+  \begin{enumerate}
+  \item જો $\mModel{M}$ સંમિત હોય, તો $\mModel{M^*}$ પણ સંમિત છે.
+  \item જો $\mModel{M}$ પરંપરિત હોય, તો $\mModel{M^*}$ પણ પરંપરિત છે.
+  \item જો $\mModel{M}$ યુક્લિડિયન હોય, તો $\mModel{M^*}$ પણ યુક્લિડિયન છે.
+  \end{enumerate}
+\end{thm}
+
+\begin{proof}
+\sourcecorrection{OLMD-049}{મૂળના પ્રમાણમાં પ્રથમ કિસ્સો
+પરંપરિતતા માટે છે, જ્યારે પ્રમેયમાં પહેલું વિધાન સંમિતતાનું છે;
+બાકીના બે પ્રશ્નો પણ સરકેલા છે. પ્રમાણના ત્રણ કિસ્સાઓ પ્રમેયના
+ક્રમ સાથે ગોઠવ્યા છે.}
+\begin{enumerate}
+  \item અભ્યાસ માટે છોડ્યું છે. બધાં સંમિત નિદર્શનોમાં
+    \Ax{B} અને $\Ax{B_\Diamond}$ માન્ય છે તેનો ઉપયોગ કરો.
+  \item જો $\mModel{M^*}$ સૌથી સ્થૂલ ફિલ્ટ્રેશન હોય, તો વ્યાખ્યા
+    મુજબ $R^*[u][v]$ જો અને માત્ર જો $C_1(u,v)$. પરંપરિતતા
+    માટે $C_1(u,v)$ અને $C_1(v,w)$ ધારો; $C_1(u,w)$ બતાવવાનું છે.
+    \iftag{prvBox}{ધારો કે $\mSat{M}{\Box !A}[u]$; ત્યારે
+      બધાં પરંપરિત નિદર્શનોમાં \Ax{4} માન્ય હોવાથી
+      $\mSat{M}{\Box\Box!A}[u]$. મોડલ બંધતાથી
+      $\Box\Box!A \in \Gamma$ હોવાથી $C_1(u,v)$ દ્વારા
+      $\mSat{M}{\Box!A}[v]$ અને $C_1(v,w)$ દ્વારા
+      $\mSat{M}{!A}[w]$. }{}%
+    \iftag{prvDiamond}{ધારો કે $\mSat{M}{!A}[w]$; મોડલ
+      બંધતાથી $\Diamond !A \in \Gamma$ હોવાથી $C_1(v,w)$
+      દ્વારા $\mSat{M}{\Diamond !A}[v]$. મોડલ બંધતાથી
+      $\Diamond\Diamond!A \in \Gamma$ હોવાથી $C_1(u,v)$
+      દ્વારા $\mSat{M}{\Diamond\Diamond !A}[u]$. બધાં
+      પરંપરિત નિદર્શનોમાં $\Ax{4}_\Diamond$ માન્ય હોવાથી
+      $\mSat{M}{\Diamond!A}[u]$.}{}
+  \item અભ્યાસ માટે છોડ્યું છે. બધાં યુક્લિડિયન નિદર્શનોમાં
+    \Ax{5} અને $\Ax{5_\Diamond}$ માન્ય છે તેનો ઉપયોગ કરો.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[nml][fil][euc]{thm:modal-closed-filt}ની સાબિતી પૂરી કરો.
+\end{prob}
+
+\end{document}

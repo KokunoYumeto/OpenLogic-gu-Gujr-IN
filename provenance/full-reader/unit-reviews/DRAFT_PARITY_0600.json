@@ -1,0 +1,102 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0600",
+  "checked_at_utc": "2026-09-28T03:52:17.382736+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0600 Vitali circle paradox and the rotation-group sketch of Banach–Tarski; state-only draft",
+  "report": {
+    "unit_id": "OLP-0600",
+    "source_path": "content/set-theory/choice/vitali.tex",
+    "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+    "draft_path": "private-state\\work\\batch044_draft\\choice-vitali.tex",
+    "draft_sha256": "55b16d3b15e0eb7178ea4916077c9e0f8ec3bac546b60882d1bf63c9256ea937",
+    "aligned_blocks": 37,
+    "linguistic_blocks": 34,
+    "source_math_spans_correction_aware": 135,
+    "target_math_spans_after_corrections": 135,
+    "glossary_tokens": 5,
+    "source_correction_notes": [
+      "OLMD-151",
+      "OLMD-152",
+      "OLMD-153",
+      "OLMD-154"
+    ],
+    "source_detector_ascii_tokens": 1289,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\emph{ iff }",
+        "\\emph{ ત્યારે અને ત્યારે જ }"
+      ],
+      [
+        "$\\rho \\in R_1$",
+        "$\\rho \\in \\rotationsgroup_1$"
+      ],
+      [
+        "$\\rho \\in C$",
+        "$\\rho \\in \\rotationsgroup$"
+      ],
+      [
+        "$\\rho \\in\r\nC$",
+        "$\\rho \\in \\rotationsgroup$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-banach.tex",
+        "sha256": "ca5009650211438eb52c4208671ea5709261cf96ad2ac1430b4708ff1d50aabe",
+        "terms": [
+          "બાનાખ--ટાર્સ્કી",
+          "માપનીય"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-simp.tex",
+        "sha256": "4f217a5c40f0d10bea591b7daaf9f2627651a24e4aadffac57024b6ca9f8aea3",
+        "terms": [
+          "\\ollabel{kappaunionkappasize}",
+          "ગણાંક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-wellorderingproblem.tex",
+        "sha256": "7b4f2088cb139fe6b6b8e10dbd117f6b6305a9dad9f9b2c17e238170a11ffc38",
+        "terms": [
+          "પસંદગી વિધેય",
+          "\\ollabel{thmwochoice}"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "OLMD-151 changes prose only: angles are rational fractions of a complete turn, so the inverse and half-group doubling steps are valid.",
+      "OLMD-153 openly marks the absent fixed-point removal and absorption step in the three-dimensional sketch; it does not claim to supply that proof.",
+      "OLMD-154 restricts the final proof's rho variable to rotationsgroup and explicitly invokes standard nonnegative measure values.",
+      "The five inherited glossary markers remain exact, while the final two-dimensional anagram retains the original letters."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Banach-Tarski",
+        "count": 3,
+        "reason": "The two-dimensional anagram joke preserves the original Latin letters rather than changing its combinatorial wording."
+      }
+    ],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citet[Theorem 5.2]{Wagon2016}",
+        "count": 1
+      },
+      {
+        "literal": "\\citet[Theorem 2.1]{Wagon2016}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

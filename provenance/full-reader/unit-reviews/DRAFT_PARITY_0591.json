@@ -1,0 +1,97 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0591",
+  "checked_at_utc": "2026-09-28T03:13:58.824587+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0591 aleph and beth fixed points and hierarchy width-height comparison; state-only draft",
+  "report": {
+    "unit_id": "OLP-0591",
+    "source_path": "content/set-theory/card-arithmetic/fix.tex",
+    "source_sha256": "cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-fix.tex",
+    "draft_sha256": "3a081955a9d67f30610f11af8d55eb50309655f2bdb984eaf96749ce18f49149",
+    "aligned_blocks": 22,
+    "linguistic_blocks": 19,
+    "source_math_spans_correction_aware": 58,
+    "target_math_spans_after_corrections": 58,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-143"
+    ],
+    "source_detector_ascii_tokens": 632,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\tau_0(A) & \\defis \\card{A}",
+        "\\tau_0(A) & \\defis \\cardsucc{(\\card{A})}"
+      ],
+      [
+        "\\intertext{As in \\olref{bethfixed}, $\\tau(A)$ is a\r\n$\\beth$-fixed point for any $A$, and trivially $\\card{A} < \\tau(A)$.\r\nSo now consider this recursive definition:}",
+        "\\intertext{\\olref{bethfixed}ની જેમ કોઈ પણ $A$ માટે\n$\\tau(A)$ એ $\\beth$-સ્થિરબિંદુ છે અને\n$\\card{A} < \\tau(A)$. હવે આ પુનરાવર્તી વ્યાખ્યા જુઓ:}"
+      ],
+      [
+        "\\text{, when $\\alpha$ is a limit}",
+        "\\text{, જ્યારે $\\alpha$ સીમા ક્રમવાચક સંખ્યા હોય}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\spine.tex",
+        "sha256": "acceeecc811d33031e89d29ba17cdf4622270983b1c65b6ef9902f842de351bf",
+        "terms": [
+          "\\olchapter{sth}{spine}",
+          "તબક્કાઓ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-extrinsic.tex",
+        "sha256": "ab45e8670543a84fb62ed0b5f5d3be8e418dbdc4d74427b1890ea9e13b3c5ba4",
+        "terms": [
+          "બૂલોઝ",
+          "પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-classing.tex",
+        "sha256": "20e65b4282ccaf9667608ff33ce6677e8cbf50f88bba69ddb9230e835147255d",
+        "terms": [
+          "\\ollabel{unioncardinalscardinal}",
+          "ગણાંકો"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-arithmetic.tex",
+        "sha256": "c70334c84bcf11d8fa5f0d724e1c69c22a441ead3cf62ababf8b2f311f9e4549",
+        "terms": [
+          "\\olchapter{sth}{ord-arithmetic}",
+          "અંકગણિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-ch.tex",
+        "sha256": "685cb9a9f0fc7b78e4166e63eeaed5d48592b3adf7369473fa453d4dd25d0b7c",
+        "terms": [
+          "\\beth_{\\alpha}",
+          "સાતત્યક પરિકલ્પના"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The first aleph and beth fixed-point constructions remain the source's omega iterations, while only the final tau iteration changes its starting term.",
+      "With tau_0(A)=cardsucc(card(A)), even an A whose cardinal is already a beth fixed point yields tau(A)>card(A); this makes the W successor step strictly increasing.",
+      "The inactive source proof comment is preserved but ignored for math-span counting, avoiding a spurious cross-comment dollar span.",
+      "The prose inside the final align intertext is localized to Gujarati; the formal recursive formulas otherwise remain exact apart from the visible tau_0 repair.",
+      "Reader-facing English explanations inside displayed mathematics are localized to Gujarati; variables, citations and mathematical relations retain their source meaning."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

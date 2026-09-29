@@ -1,0 +1,73 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-axd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{sax}
+
+\olsection{સ્વયંસિદ્ધિમૂલક \usetoken{P}{derivation}ની યથાર્થતા}
+
+\begin{editorial}
+  યથાર્થતાની સાબિતી દરેક સ્વયંસિદ્ધિ સ્ફુરણાવાદી રીતે
+  પ્રામાણ્ય ધરાવે છે એ હકીકત પર આધાર રાખે છે; આ હજી
+  સાબિત કરવાનું બાકી છે, દાખલા તરીકે અર્થવિજ્ઞાનના પ્રકરણમાં.
+\end{editorial}
+
+\begin{thm}[યથાર્થતા]
+  \ollabel{thm:soundness}
+  જો $\Gamma \Proves !A$ હોય, તો $ \Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+  જો $\Gamma \Proves !A$ હોય, તો $\Gamma \Entails !A$
+  તે સાબિત કરીએ છીએ. $\Gamma$માંથી~$!A$ના !!{derivation}માં
+  આવતા !!{formula}sની સંખ્યા~$n$ પર આગમન કરીએ છીએ.
+  $!A_1$, \dots, $!A_n = !A$ એ~$\Gamma$માંથી
+  !!a{derivation} હોય, તો $\Gamma \Entails !A_n$ છે તે બતાવીએ.
+  નોંધો કે $!A_1$, \dots, $!A_n$ એ !!a{derivation} હોય,
+  તો કોઈ પણ $k<n$ માટે $!A_1$, \dots, $!A_k$ પણ
+  નિગમન છે.
+
+  લંબાઈ~$0$નું કોઈ !!{derivation} નથી, તેથી $n=0$ માટે
+  દાવો નિર્વિકલ્પે સાચો છે. હવે લંબાઈ~$<n$નાં બધાં
+  !!{derivation}s માટે દાવો સાચો માની લઈએ. $!A_n$નું
+  સમર્થન કેવી રીતે મળે છે તે મુજબ કિસ્સા અલગ પાડીએ છીએ.
+
+  \begin{enumerate}
+  \item $!A_n$ એક સ્વયંસિદ્ધિ છે. બધી સ્વયંસિદ્ધિઓ
+    પ્રામાણ્ય ધરાવે છે, તેથી કોઈ પણ~$\Gamma$ માટે
+    $\Gamma \Entails !A_n$.
+  \item $!A_n \in \Gamma$. ત્યારે કોઈ પણ $\mModel{M}$
+    અને $w$ માટે, જો $\mSat{M}{\Gamma}[w]$ હોય, તો
+    સ્પષ્ટ છે કે $\mSat{M}{!A_n}[w]$; એટલે
+    $\Gamma \Entails !A$.
+    \sourcecorrection{OLMD-089}{મૂળમાં અહીં
+    $\mSat{M}{\Gamma}{!A_n}[w]$ એમ ત્રણ દલીલવાળી
+    ખામીયુક્ત સંજ્ઞા છે; જરૂરી નિષ્કર્ષ
+    $\mSat{M}{!A_n}[w]$ છે.}
+  \item $!A_i$ અને $!A_j \ident !A_i \lif !A_n$ પરથી
+    \MP{} વડે $!A_n$ મળે છે. $!A_1$, \dots, $!A_i$
+    અને $!A_1$, \dots, $!A_j$ એ~$\Gamma$માંથી
+    !!{derivation}s છે, તેથી આગમનની ધારણાથી
+    $\Gamma \Entails !A_i$ અને
+    $\Gamma \Entails !A_i \lif !A_n$.
+
+    ધારો કે $\mSat{M}{\Gamma}[w]$. $\mSat{M}{\Gamma}[w]$
+    અને
+    $\Gamma \Entails !A_i \lif !A_n$ પરથી
+    $\mSat{M}{!A_i \lif !A_n}[w]$ મળે છે. વ્યાખ્યા મુજબ,
+    $Rww'$ હોય એવા દરેક $w'$ માટે, જો
+    $\mSat{M}{!A_i}[w']$ હોય, તો
+    $\mSat{M}{!A_n}[w']$ થાય છે. $R$ સ્વવાચક હોવાથી
+    $Rww'$ ધરાવતા $w'$માં $w$ પોતે પણ આવે છે;
+    એટલે જો $\mSat{M}{!A_i}[w]$ હોય, તો
+    $\mSat{M}{!A_n}[w]$. હવે $\Gamma \Entails !A_i$
+    હોવાથી $\mSat{M}{!A_i}[w]$ છે. તેથી ઇચ્છિત
+    $\mSat{M}{!A_n}[w]$ મળે છે.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

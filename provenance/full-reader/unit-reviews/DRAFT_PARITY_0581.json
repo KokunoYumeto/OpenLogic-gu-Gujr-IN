@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0581",
+  "checked_at_utc": "2026-09-28T02:34:28.236301+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0581 Cantor's Principle relating cardinal equality to equinumerosity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0581",
+    "source_path": "content/set-theory/cardinals/cp.tex",
+    "source_sha256": "950307ddcd75e93c0cb6aeaeb8f969f17e519027f1ff3672f433552edd519fae",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinals-cp.tex",
+    "draft_sha256": "db4c5d306da9bcad4bee6d9a627075c73d4249769d12ea8185f9fd2044e2df86",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 8,
+    "target_math_spans_after_corrections": 8,
+    "glossary_tokens": 3,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 213,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-vn.tex",
+        "sha256": "d634e926539b703109c4034ef9abc68986efe47f9aedc4a2bffa993b704f1d25",
+        "terms": [
+          "\\olfileid{sth}{ordinals}{vn}",
+          "અવેજ",
+          "ક્રમપ્રકાર"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+        "sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+        "terms": [
+          "\\ollabel{ordtypesworklikeyouwant}",
+          "ક્રમ-એકરૂપ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\size-of-sets\\equinumerous-sets.tex",
+        "sha256": "6fbd4a47047c24d9dc2f53b708812801075de97462a139f0ae6b7852a0bac85b",
+        "terms": [
+          "\\olfileid{sfr}{siz}{equ}",
+          "સામ્ય ગણો",
+          "\\cardeq{A}{B}"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The first display is an ordinal order-type equation, not a bare equality of underlying sets; the second display removes any order-preservation condition.",
+      "The source says Cantor was probably first to have the principle clearly in mind; the Gujarati preserves that uncertainty.",
+      "The source's ambiguous cardinality noun is rendered by the attested ગણાંક in the formal card(X) context and the previously published કદ for intuitive size."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

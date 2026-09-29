@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0468",
+  "checked_at_utc": "2026-09-27T18:59:01.750070+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0468 K tableau completeness; state-only draft",
+  "report": {
+    "unit_id": "OLP-0468",
+    "source_path": "content/normal-modal-logic/tableaux/completeness.tex",
+    "source_sha256": "ee4e86d1549731cdbe7088d4d682c304f04a9c007a93a525c99b25959a2c2d90",
+    "draft_path": "private-state\\work\\batch040_draft\\tableaux-completeness.tex",
+    "draft_sha256": "3d677ef60a973604909ef228efe1b376dce8fb6c4ef3801b6e800dc68750d7f4",
+    "aligned_blocks": 25,
+    "linguistic_blocks": 20,
+    "source_math_spans_correction_aware": 131,
+    "target_math_spans_after_corrections": 131,
+    "glossary_tokens": 20,
+    "source_correction_notes": [
+      "OLMD-063",
+      "OLMD-064",
+      "OLMD-065",
+      "OLMD-066",
+      "OLMD-067",
+      "OLMD-068",
+      "OLMD-069",
+      "OLMD-070"
+    ],
+    "source_detector_ascii_tokens": 704,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "seven_induction_cases_and_fair_branch_argument_reviewed": true
+  },
+  "status": "draft_linguistic_math_and_corrected_proof_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

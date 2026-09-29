@@ -1,0 +1,148 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{rank}
+\olsection{સ્તરાંક}
+
+હવે આપણે તબક્કાઓને $V_\alpha$ તરીકે વ્યાખ્યાયિત કર્યા છે અને
+દરેક ગણ કોઈક તબક્કાનો ઉપગણ છે તે જાણીએ છીએ. તેથી ગણનો
+\emph{સ્તરાંક} વ્યાખ્યાયિત કરી શકીએ. સહજ રીતે કહીએ તો
+$A$નો સ્તરાંક એ $A$ રચાય તેની પ્રથમ ક્ષણ છે. વધુ ચોક્કસ રીતે:
+
+\begin{defn}\ollabel{defnsetrank}
+દરેક ગણ $A$ માટે, $\setrank{A}$ એ એવી લઘુતમ ક્રમવાચક સંખ્યા
+$\alpha$ છે કે $A
+\subseteq V_\alpha$.
+\end{defn}
+\begin{prop}\ollabel{ranksexist}
+	દરેક $A$ માટે $\setrank{A}$ અસ્તિત્વમાં છે.
+\end{prop}
+\begin{proof}
+	સાબિતી સ્વાધ્યાય તરીકે છોડી છે.
+\end{proof}
+\begin{prob}
+	\olref[sth][spine][rank]{ranksexist} સાબિત કરો.
+\end{prob}
+\noindent 
+સ્તરાંકોના સુક્રમથી કેટલાંક મહત્ત્વનાં પરિણામો સાબિત કરી શકીએ:
+\begin{prop}\ollabel{valphalowerrank}
+કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$ માટે,
+$V_\alpha = \Setabs{x}{\setrank{x} \in \alpha}$.
+\end{prop}
+
+\begin{proof}
+જો $\setrank{x} \in \alpha$ હોય, તો $x \subseteq V_{\setrank{x}} \in
+V_\alpha$; અને $V_\alpha$ ઉપગણ-સંવૃત હોવાથી
+(\olref[Valphabasic]{Valphabasicprops}નો વારંવાર ઉપયોગ કરીને)
+$x \in V_\alpha$. ઊલટું, જો $x \in V_\alpha$ હોય, તો
+$x \subseteq V_\alpha$, તેથી $\setrank{x} \leq \alpha$;
+હવે સરળ અનંતાતીત અનુમાનથી $\setrank{x} \in \alpha$ મળે છે.
+\sourcecorrection{OLMD-120}{મૂળની આ છેલ્લી પંક્તિમાં
+``$x \notin V_\alpha$'' લખાયું છે, જે શરૂઆતની
+``$x \in V_\alpha$'' ધારણાની વિરુદ્ધ જાય છે.
+જોઈતો નિષ્કર્ષ $\setrank{x} \in \alpha$ છે: ખાલી
+તબક્કે સાબિત કરવાનું કશું નથી; અનુગામી તબક્કે $x$
+અગાઉના તબક્કાનો ઉપગણ હોવાથી તેનો સ્તરાંક અગાઉના
+સૂચકાંકથી મોટો નથી; સીમા તબક્કે $x$ કોઈ પહેલાંના
+તબક્કામાં આવે છે અને અનુમાનની ધારણા લાગુ પડે છે.}
+\end{proof}
+\begin{prob}
+	\olref[sth][spine][rank]{valphalowerrank}માં ઉલ્લેખેલું
+	સરળ અનંતાતીત અનુમાન પૂર્ણ કરો.
+\end{prob}
+
+\begin{prop}\ollabel{rankmemberslower}
+જો $B \in A$ હોય, તો $\setrank{B} \in \setrank{A}$.
+\end{prop}
+
+\begin{proof}
+\olref{valphalowerrank} મુજબ
+$A \subseteq V_{\setrank{A}} = \Setabs{x}{\setrank{x} \in
+\setrank{A}}$.
+\end{proof}
+\noindent
+આ હકીકતથી એવું પરિણામ સ્થાપી શકીએ છીએ જેનાથી અનુમાનની
+એક રીત દ્વારા \emph{બધા ગણો} વિશે વિધાનો સાબિત થાય છે:
+
+\begin{thm}[$\in$-અનુમાનનું પ્રરૂપ] 
+કોઈ પણ સૂત્ર $\phi$ માટે:
+\[
+	\forall A((\forall x \in A)\phi(x) \lif \phi(A)) \lif \forall A \phi(A).
+\]
+\end{thm}
+
+\begin{proof}
+આપણે પ્રતિવિધાન સાબિત કરીએ. ધારો કે $\lnot \forall A
+\phi(A)$. અનંતાતીત અનુમાન
+(\olref[ordinals][basic]{ordinductionschema}) મુજબ
+લઘુતમ શક્ય સ્તરાંક ધરાવતું કોઈ બિન-$\phi$ મળે છે;
+એટલે કે એવું $A$ છે કે $\lnot \phi(A)$ અને
+$\forall x(\setrank{x} \in \setrank{A}
+\lif \phi(x))$. હવે $x \in A$ હોય, તો
+\olref{rankmemberslower} મુજબ $\setrank{x} \in
+\setrank{A}$, તેથી $\phi(x)$; એટલે કે $(\forall x \in
+A)\phi(x) \land \lnot \phi(A)$.
+\end{proof}\noindent આ શક્તિશાળી પરિણામનો અનૌપચારિક અર્થ આ છે.
+ગણનો દરેક !!{element} $\phi$ હોય ત્યારે ગણ પોતે પણ
+$\phi$ હોય, તો અને માત્ર તો $\phi$ને \emph{વારસાગત}
+કહીએ. ત્યારે $\in$-અનુમાન કહે છે: જો $\phi$ વારસાગત હોય,
+તો દરેક ગણ $\phi$ છે.
+
+સ્તરાંકોની ચર્ચા (હાલ માટે) પૂરી કરતાં પહેલાં, અગાઉ
+કેટલીક વાર સૂચવેલાં થોડાં પરિણામો સાબિત કરીએ.
+
+\begin{prop}\ollabel{ranksupstrict}
+$\setrank{A} = \supstrict_{x \in A}\setrank{x}$.
+\end{prop}
+
+\begin{proof}
+$\alpha = \supstrict_{x \in A}\setrank{x}$ લો.
+\olref{rankmemberslower} મુજબ $\alpha \leq \setrank{A}$.
+પરંતુ $x \in A$ હોય, તો $\setrank{x} \in \alpha$;
+તેથી \olref{valphalowerrank} મુજબ $x \in V_\alpha$ અને આમ $A
+\subseteq V_\alpha$, એટલે $\setrank{A} \leq \alpha$.
+તેથી $\setrank{A} = \alpha$.
+\end{proof}
+
+\begin{cor}\ollabel{ordsetrankalpha}
+કોઈ પણ ક્રમવાચક સંખ્યા $\alpha$ માટે $\setrank{\alpha} = \alpha$.
+\end{cor}
+
+\begin{proof}
+અનંતાતીત અનુમાન માટે ધારો કે બધા $\beta \in \alpha$ માટે
+$\setrank{\beta} = \beta$. હવે \olref{ranksupstrict} મુજબ
+$\setrank{\alpha} = \supstrict_{\beta \in
+\alpha}\setrank{\beta} = \supstrict_{\beta \in \alpha}\beta = \alpha$.
+%	First note that $\setrank{\alpha} \neq \beta$ for any $\beta \in
+%	\alpha$. For otherwise we would have $\beta = \setrank{\beta} \in
+%	\setrank{\alpha} = \beta$ by \olref{rankmemberslower}, i.e.,
+%	$\beta \in \beta$, a contradiction. 
+%
+%	Now note that $\alpha \subseteq V_\alpha$. For $\alpha =
+%	\Setabs{\beta}{\beta \in \alpha}$ by
+%	\olref[sfr][ordinals][basic]{ordissetofsmallerord}. And if
+%	$\beta \in \alpha$ then $\beta \subseteq V_{\setrank{\beta}} =
+%	V_\beta \in V_\alpha$, hence $\beta \in V_\alpha$, by
+%	\olref[sfr][spine][Valphabasic]{Valphabasicprops} twice. 
+\end{proof}
+
+છેલ્લે, \olref[foundation]{sec}ના અંતે આપેલું વચન પૂર્ણ કરતી
+ટૂંકી સાબિતી આપીએ: $\ZFminus$માં શરતી વિધાન
+$\emph{Regularity} \Rightarrow \emph{Foundation}$ સાબિત થાય છે.
+(ધ્યાન આપો કે આ સાબિતીમાં ``સ્તરાંક''નો ખ્યાલ અને
+\olref{rankmemberslower} વાપરી શકીએ છીએ, કારણ કે આ વિભાગના
+આરંભમાં કહ્યું તેમ તેમને $\ZFminus + \text{Regularity}$માં
+રજૂ કરી શકાય છે.)
+
+\begin{prop}[$\ZFminus + \text{Regularity}$માં કામ કરતાં]\ollabel{zfminusregularityfoundation} આધાર સાચો છે.
+\end{prop}
+
+\begin{proof}
+$A \neq \emptyset$ લો અને લઘુતમ શક્ય સ્તરાંક ધરાવતું
+કોઈ $B \in A$ પસંદ કરો. જો $c \in B$ હોય, તો
+\olref{rankmemberslower} મુજબ $\setrank{c} \in \setrank{B}$;
+તેથી $B$ની પસંદગી પ્રમાણે $c \notin A$.
+\end{proof}
+
+\end{document}

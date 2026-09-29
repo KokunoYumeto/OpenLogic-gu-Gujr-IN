@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/30-advanced",
+  "checked_at_utc": "2026-09-27T01:38:24.359659+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0309–0310 inseparability and Q-consistency state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0309",
+      "source_path": "content/incompleteness/theories-computability/inseparability.tex",
+      "source_sha256": "d9da8fc6073ab195b526966775f35c67384af226328d0e98531a7a8b111c6ff8",
+      "draft_path": "private-state\\work\\batch030_draft\\inseparability.tex",
+      "draft_sha256": "9652a4ef584c334c2f967c9ca1ab4d661f7314b50b66765ebd1dd1919dcb018f",
+      "aligned_blocks": 10,
+      "linguistic_blocks": 5,
+      "source_math_spans": 25,
+      "glossary_tokens": 0,
+      "source_correction_notes": [
+        "OLINC-041"
+      ],
+      "source_detector_ascii_tokens": 81,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0310",
+      "source_path": "content/incompleteness/theories-computability/consis-with-q.tex",
+      "source_sha256": "990cb27b8ea30898025f22704de1d8c790213d7e4439d43744f4e005722375ea",
+      "draft_path": "private-state\\work\\batch030_draft\\consis-with-q.tex",
+      "draft_sha256": "e08705830b34cfc7ffb6310b469deeb2e13b0ac288152a68b1e6e74bb9084226",
+      "aligned_blocks": 15,
+      "linguistic_blocks": 10,
+      "source_math_spans": 48,
+      "glossary_tokens": 1,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 204,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    }
+  ],
+  "status": "partial_draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

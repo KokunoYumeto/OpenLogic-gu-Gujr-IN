@@ -1,0 +1,84 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: modal-validity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{val}
+
+\olsection{માન્યતા}
+
+\begin{explain}
+  બધાં નિદર્શનોમાં, એટલે કે દરેક નિદર્શનના દરેક જગતમાં,
+  સત્ય હોય તેવાં !!^{formula}s ખાસ રસપ્રદ છે. શક્ય જગતો
+  પરના કોઈ સુલભતા સંબંધથી ઉદ્ભવતા અર્થમાં અર્થઘટન
+  ``સામાન્ય'' હોય ત્યાં સુધી $\Box$ અને $\Diamond$નું
+  અર્થઘટન ગમે તેમ કરવામાં આવે, આ મોડલ વિધાનો
+  સત્ય રહે છે. આવાં !!{formula}sને આપણે \emph{માન્ય} કહીએ.
+  ઉદાહરણ તરીકે, $\Box(p \land q) \lif \Box p$ માન્ય છે.
+  પરંતુ $\Box$ના સત્યલક્ષી અર્થઘટનને આધારે માન્ય હોવાની
+  અપેક્ષા રાખી શકાય એવાં કેટલાંક !!{formula}s, જેમ કે
+  $\Box p \lif p$, માન્ય નથી. સંબંધાત્મક નિદર્શનો
+  રસપ્રદ હોવાનું એક કારણ એ છે કે વિવિધ પ્રકારના
+  સુલભતા સંબંધો વડે $\Box$ અને $\Diamond$નાં વિવિધ
+  અર્થઘટનો વ્યક્ત કરી શકાય છે. તેથી માન્યતાની વ્યાખ્યા
+  માત્ર \emph{બધાં} નિદર્શનો સાપેક્ષે જ નહીં, પરંતુ
+  \emph{ચોક્કસ પ્રકારનાં} બધાં નિદર્શનો સાપેક્ષે પણ
+  આપવી જોઈએ. દાખલા તરીકે, જે નિદર્શનોમાં દરેક
+  જગત પોતામાંથી સુલભ છે, એટલે કે $R$ સ્વવાચક છે,
+  તેમાં $\Box p \lif p$ સત્ય છે. નિદર્શનોના વર્ગ
+  સાપેક્ષે માન્યતા વ્યાખ્યાયિત કરવાથી આ વાત ટૂંકમાં
+  કહી શકાય: $\Box p \lif p$ સ્વવાચક નિદર્શનોના
+  વર્ગમાં માન્ય છે.
+\end{explain}
+
+\begin{defn}
+  !!^a{formula}~$!A$ નિદર્શનોના વર્ગ $\mClass{C}$માં
+  \emph{માન્ય} છે, જો તે $\mClass{C}$ના દરેક નિદર્શનમાં
+  સત્ય હોય (એટલે કે $\mClass{C}$ના દરેક નિદર્શનના
+  દરેક જગતમાં સત્ય હોય). જો $!A$ એ~$\mClass{C}$માં
+  માન્ય હોય, તો $\mClass{C} \Entails !A$ લખીએ;
+  અને $!A$ \emph{બધાં} નિદર્શનોના વર્ગમાં માન્ય હોય,
+  તો $\Entails !A$ લખીએ.
+\end{defn}
+
+\begin{prop}\ollabel{prop:subset-class}
+  જો $!A$ વર્ગ $\mClass{C}$માં માન્ય હોય, તો તે દરેક
+  ઉપવર્ગ $\mClass{C}' \subseteq \mClass{C}$માં પણ માન્ય છે.
+\end{prop}
+
+\begin{prop}\ollabel{prop:Nec-rule}
+  જો $!A$ માન્ય હોય, તો $\Box!A$ પણ માન્ય છે.
+\end{prop}
+
+\begin{proof}
+  $\Entails !A$ માનો. $\Entails \Box!A$ બતાવવા માટે
+  કોઈપણ નિદર્શન $\mModel{M} =
+  \tuple{W, R, V}$ અને $w \in W$ લો. જો $Rww'$ હોય,
+  તો $!A$ માન્ય હોવાથી $\mSat{M}{!A}[w']$ છે;
+  તેથી $\mSat{M}{\Box!A}[w]$ પણ છે. નિદર્શન
+  $\mModel{M}$ અને જગત $w$ ગમે તે હતાં, તેથી
+  $\Entails \Box!A$.
+\end{proof}
+
+\begin{prob}
+  નીચેના સૂત્રો માન્ય છે તે બતાવો:
+  \begin{enumerate}
+  \item $\Box p \lif \Box (q \lif p)$;
+  \item $\Box \lnot \lfalse$;
+  \item $\Box p \lif (\Box q \lif \Box p)$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  $W = \{w\}$ ધરાવતા નિદર્શનો $\mModel{M} =
+  \tuple{W, R, V}$ના વર્ગ $\mClass{C}$માં
+  $!A \lif \Box!A$ માન્ય છે તે બતાવો. એ જ રીતે,
+  $R = \emptyset$ ધરાવતા નિદર્શનો $\mModel{M} =
+  \tuple{W, R, V}$ના વર્ગમાં $!B \lif \Box !A$
+  અને $\Diamond !A \lif !B$ માન્ય છે તે બતાવો.
+\end{prob}
+
+\end{document}

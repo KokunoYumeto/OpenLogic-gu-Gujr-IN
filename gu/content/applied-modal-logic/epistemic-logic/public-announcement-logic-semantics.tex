@@ -1,0 +1,135 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: public-announcement-logic-semantics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{psm}
+
+\olsection{જાહેર જાહેરાતના તર્કનું અર્થવિજ્ઞાન}
+
+જાહેર જાહેરાતના તર્ક માટેનાં સંબંધાત્મક નિદર્શો જ્ઞાનસંબંધી
+તર્કનાં નિદર્શો જેવાં જ છે. પરંતુ જાહેર-જાહેરાત સંક્રિયકનું
+અર્થવિજ્ઞાન નવું છે.
+
+\begin{defn}\ollabel{defn:mmodels} નિદર્શ~$\mModel M = \tuple{W, R, V}$માં
+  \emph{!!a{formula}~$!A$નું~$w$માં સત્ય હોવું}, સંજ્ઞામાં
+  $\mSat{M}{!A}[w]$, નીચે મુજબ આગમનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[w]$ ક્યારેય નહીં}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[w]$ હંમેશા}.}{}
+  \item $\mSat{M}{p}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $w \in V(p)$
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$} (અથવા બંને).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat/{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બંને હોય, અથવા
+    $\mSat{M}{!B}[w]$ તથા $\mSat{M}{!C}[w]$ બેમાંથી એકેય ન હોય}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $R_a ww'$ ધરાવતા દરેક $w' \in W$ માટે $\mSat{M}{!B}[w']$}
+  \item\ollabel{defn:sub:mmodels-pal}
+    \indcase{!A}{[!B] !C}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ હોય તો $\mSat{M \mid !B}{!C}[w]$}
+
+  
+  અહીં $\mModel M \mid !B = \tuple{W', R', V'}$ નીચે મુજબ
+  વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+    \item $W' = \Setabs{ u \in W}{\mSat{M}{!B}[u]}$. એટલે
+      $\mModel M \mid !B$નાં જગતો, $\mModel M$માં $!B$ સત્ય હોય
+      તે જ જગતો છે.
+    \item $R'_a = R_a \cap (W' \times W')$. દરેક કર્તાનો સુલભતા
+      સંબંધ ફક્ત~$W'$માં બચેલાં જગતો સુધી મર્યાદિત થાય છે.
+    \item $V'(p) = \Setabs{ u \in W'}{u \in V(p) }$. એવી જ રીતે,
+      જગતોમાં વિધાનાત્મક ચલની સત્ય-નિમણૂક એ જ રહે છે: માહિતીલક્ષી
+      ઘટનાઓ વિધાનાત્મક ચલોનાં સત્યમૂલ્યો બદલતી નથી.
+  \end{enumerate}
+  
+  \end{enumerate} 
+\end{defn}
+
+જાહેર જાહેરાતના તર્કની વિશિષ્ટતા એ છે કે નિદર્શ~$\mModel M$માં
+!!a{formula}નું સત્ય હોવું ક્યારેક $\mModel M$ સિવાયના બીજા
+નિદર્શને જોઈને જ નક્કી કરી શકાય છે.
+
+આપણું અર્થવિજ્ઞાન જાહેરાતના સંક્રિયકને $\Box$~સંક્રિયક ગણે છે.
+તેથી કોઈ જગતમાં !!a{formula}~$!A$ સત્યપૂર્વક જાહેર કરી ન શકાય,
+તો ત્યાં $[!A]!B$ રિક્તપણે સત્ય હશે; જેમ અંતિમ જગતોમાં બધાં
+$\Box$ !!{formula}s સત્ય હોય છે.
+\sourcecorrection{OLMD-081}{મૂળમાં અહીં $[!A]B$ છે, જ્યારે
+ભાષાની વ્યાખ્યામાં પરિણામનું સૂત્ર $!B$ છે. એ સંજ્ઞા
+જાળવવા $[!A]!B$ મૂક્યું છે.}
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={below left:$p, \lnot q$}]{$w_1$}; 
+      \node[world] (w2) [left=of w1, label={left:$\lnot p, \lnot q$}]{$w_2$}; 
+      \node[world] (w3) [above=of w1, label={right:$p, q$}] {$w_3$};
+      \draw[<->] (w1) to [swap] node {$b$} (w2);
+      \draw[->,loop below] (w1) to node {$a, b$} (w1);
+      \draw[<->] (w1) to [swap] node {$a$} (w3);
+      \draw[->,loop above] (w2) to node {$a, b$} (w2) ;
+      \draw[->,loop above] (w3) to node {$a, b$} (w3) ;
+      
+      \node[world](v1)[right of=w1, xshift=1.25in, label={right:$p, \lnot q$}]{$w'_1$};
+      \node[world](v3)[above of=v1,label={right:$p,q$}]{$w'_3$};
+      \draw[<->] (v1) to node {$a$} (v3);
+      \draw[->,loop below] (v1) to node {$a,b$} (v1);
+      \draw[->,loop above] (v3) to node {$a,b$} (v3) ;
+      
+      \node(m)[below=of w1]{$\mModel M$};
+      \node(m')[below=of v1]{$\mModel M \mid p$}; 
+
+      \draw[-,dotted] (w1) to node {\footnotesize $p$ની જાહેરાત}(v1) ;
+     
+    \end{tikzpicture}
+  \end{center}
+  \caption{$p$ની જાહેર જાહેરાત પહેલાં અને પછી.}
+  \ollabel{fig:announcement-example}
+\end{figure}
+
+!!a{formula}ની જાહેર જાહેરાતને નિદર્શનું સંકોચન, એટલે કે
+!!{formula} સત્ય હોય તે જ જગતો સુધી તેને મર્યાદિત કરવું,
+એમ સમજી શકીએ છીએ. \olref{fig:announcement-example}માં~$p$ની
+જાહેર જાહેરાતની અસરનું ઉદાહરણ છે. તેમાં નોંધવા જેવી વાત એ છે
+કે જાહેરાતના પરિણામે કર્તા~$b$ને~$p$ની ખબર પડે છે, જ્યારે
+કર્તા~$a$ને નવી ખબર પડતી નથી (કારણ કે $a$ને~$p$ સત્ય હોવાની
+પહેલેથી જ ખબર હતી).
+
+વધુ ઔપચારિક રીતે, $\mSat{M}{\lnot \Knows_b p}[w_1]$ છે,
+પરંતુ $\mSat{M \mid p}{\Knows_b p}[w'_1]$ છે. તેથી
+$\mSat{M}{[p] \Knows_b p}[w_1]$. જાહેરાતના પરિણામ વિશે
+એથી પણ પ્રબળ દાવો કરી શકાય છે. હકીકતમાં,
+$\mSat{M}{[p]\CKnows_{\{a,b\}} p}[w_1]$ પણ છે. બીજા શબ્દોમાં,
+$p$ જાહેર થયા પછી તે \emph{સામાન્ય જ્ઞાન} બને છે.
+
+પણ શું સામાન્ય રીતે પણ એમ જ થાય? શું~$!A$ની સત્ય જાહેરાત
+\emph{હંમેશા} $!A$ને સામાન્ય જ્ઞાન બનાવે છે? કદાચ આશ્ચર્યની વાત
+છે કે જવાબ ના છે. હકીકતમાં, અમુક !!{formula}s સત્યપૂર્વક
+જાહેર કરી શકાય, પરંતુ જાહેરાત પછી તે સત્ય રહેતાં નથી. દાખલા
+તરીકે, \olref{fig:announcement-example}માં~$w_1$ ખાતે
+$p \land \lnot \Knows_b p$ની જાહેરાતની અસર વિચારો.
+\sourcecorrection{OLMD-082}{મૂળમાં $\mModel M \mid p$ અને
+$\mModel M \mid (p \land \lnot \Knows_b p)$ એક જ નિદર્શ
+હોવાનું કહે છે; આ આકૃતિમાં પહેલામાં બે જગતો અને બીજામાં
+એક જ જગત બચે છે. છતાં બંનેમાં મૂળ પ્રથમ જગતમાં જાહેરાત
+પછી $b$ને $p$ ખબર પડે છે, તેથી મુખ્ય નિષ્કર્ષ જળવાય છે.}
+હકીકતમાં, $\mModel M \mid p$ અને
+$\mModel M \mid (p \land \lnot \Knows_b p)$ એક જ નિદર્શ
+નથી: બીજામાં ફક્ત પ્રથમ જગત બચે છે, જ્યારે પહેલામાં પ્રથમ
+અને ત્રીજું બંને બચે છે. જોકે આપણે અગાઉ નોંધ્યું છે તેમ,
+$\mSat{M \mid p}{\Knows_b p}[w'_1]$. તેથી
+$\mSat{M \mid (p \land \lnot \Knows_b p)}{\lnot
+(p \land \lnot \Knows_b p)}[w'_1]$. આમ આ !!a{formula}
+જાહેર થયા પછી અસત્ય બને છે.
+
+\end{document}

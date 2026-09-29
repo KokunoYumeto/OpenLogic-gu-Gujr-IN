@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0641",
+  "checked_at_utc": "2026-09-28T16:20:06.013562+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0641 Greek alphabet reference table; state-only draft",
+  "report": {
+    "unit_id": "OLP-0641",
+    "source_path": "content/reference/greek-alphabet/greek-alphabet.tex",
+    "source_sha256": "67556451d23cb84d04fa7cb22c5728e508e170cd6fc0ca3ded3e2fb018986822",
+    "draft_path": "private-state\\work\\batch044_draft\\greek-alphabet.tex",
+    "draft_sha256": "4a6afc064b789fcca900e0a3c366dcc1819a24f3ce8af87c8bde3325fbf14d19",
+    "aligned_blocks": 6,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 48,
+    "target_math_spans_after_corrections": 48,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 29,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\computability\\computability-theory\\fixed-point-thm.tex",
+        "sha256": "4da41a5627aeee2d20f980ae3b25a4ddd3b17e078141058983180b5d7b717fe7",
+        "terms": [
+          "લૅમ્બ્ડા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "lll@{\\qquad}lll",
+        "count": 1,
+        "reason": "Exact TeX column-layout specification, retained from the frozen source."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

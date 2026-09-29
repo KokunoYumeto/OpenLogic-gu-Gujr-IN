@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/30",
+  "checked_at_utc": "2026-09-27T00:31:58.710656+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0301–0302 theories/computability opening state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0301",
+      "source_path": "content/incompleteness/theories-computability/theories-computability.tex",
+      "source_sha256": "7ad40d40de21a99732a88044dbcad5e27bc167251fec630bd668d70b02562e7d",
+      "draft_path": "private-state\\work\\batch030_draft\\theories-computability.tex",
+      "draft_sha256": "782851c1694874316b73b302990a9646c17a2e4c345f38d504f0f4a6ff99277d",
+      "aligned_blocks": 17,
+      "linguistic_blocks": 2,
+      "source_math_spans": 0,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 40,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0302",
+      "source_path": "content/incompleteness/theories-computability/introduction.tex",
+      "source_sha256": "6279aee1c9f721738aea943abd540619f8b8719601bd1507ed8feebfba56ee3b",
+      "draft_path": "private-state\\work\\batch030_draft\\introduction.tex",
+      "draft_sha256": "8f5948e3e651fe989dc00806a224d049fb25e96ff8da65e1b68537ee96de18da",
+      "aligned_blocks": 9,
+      "linguistic_blocks": 4,
+      "source_math_spans": 13,
+      "glossary_tokens": 0,
+      "source_correction_notes": [
+        "OLINC-038"
+      ],
+      "source_detector_ascii_tokens": 155,
+      "target_untranslated_prose_findings": 0,
+      "source_correction_untranslated_prose_findings": 0,
+      "correction_aware_math_structure_and_glossary_equal": true
+    }
+  ],
+  "status": "partial_draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

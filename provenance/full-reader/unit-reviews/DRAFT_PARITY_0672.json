@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0672",
+  "checked_at_utc": "2026-09-28T20:07:07.291904+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0672 Normalization introduction and detour example; state-only draft",
+  "report": {
+    "unit_id": "OLP-0672",
+    "source_path": "content/proof-theory/normalization/introduction.tex",
+    "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+    "draft_path": "private-state\\work\\batch044_draft\\normalization-introduction.tex",
+    "draft_sha256": "87b17687d7ebcfc3fcde3b71ed4ce7745d45c83df66f222214b9a42d03ecceea",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 14,
+    "target_math_spans_after_corrections": 14,
+    "glossary_tokens": 23,
+    "source_correction_notes": [
+      "OLMD-252"
+    ],
+    "source_detector_ascii_tokens": 250,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "!!{proof}~$\\delta_1$ of~$!A \\lif !B$",
+        "!!{proof}~$\\delta$ of~$!A \\lif !B$"
+      ],
+      [
+        "\\RightLabel{$\\delta_2$}\n\\DeduceC{$!A$}",
+        "\\RightLabel{$\\delta_1$}\n\\DeduceC{$!A$}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન",
+          "સાબિતી-તંત્ર"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "ધારણાઓ",
+          "સાબિતીઓ",
+          "અનુમાન-નિયમો"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "કટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

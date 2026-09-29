@@ -1,0 +1,30 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: composition
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{com}
+\olsection{\usetoken{S}{lambda definable} વિધેયો સંયોજન હેઠળ બંધ છે}
+
+\begin{lem}
+!!{lambda definable} વિધેયો સંયોજન હેઠળ બંધ છે.
+\end{lem}
+
+\begin{proof}
+ધારો કે $h$, $g_0,$ \dots,~$g_{k-1}$ના સંયોજનથી~$f$
+વ્યાખ્યાયિત થાય છે. હવે ધારો કે $H$, $G_0$, \dots,~$G_{k-1}$ વડે
+અનુક્રમે $h$, $g_0$, \dots,~$g_{k-1}$ !!{lambda defined} છે. આપણે
+$f$ને !!{lambda define} કરતું પદ~$F$ શોધવાનું છે. પરંતુ~$F$ને
+સીધું આ રીતે વ્યાખ્યાયિત કરી શકીએ:
+\[
+F(x_0, \dots, x_{l-1}) = H(G_0(x_0, \dots, x_{l-1}),
+\dots, G_{k-1}(x_0, \dots, x_{l-1})).
+\]
+બીજા શબ્દોમાં, લૅમ્બડા કલનની ભાષા સંયોજનનું નિરૂપણ કરવા માટે
+અનુકૂળ છે.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0528",
+  "checked_at_utc": "2026-09-27T22:52:03.861003+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0528 contraposition; state-only draft",
+  "report": {
+    "unit_id": "OLP-0528",
+    "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+    "source_sha256": "bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc",
+    "draft_path": "private-state\\work\\batch043_draft\\contraposition.tex",
+    "draft_sha256": "91c61ccc7fdabd71563e93074f1a178f64245a0171feb350998a4b019fb6440d",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 28,
+    "target_math_spans_after_corrections": 28,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-111"
+    ],
+    "source_detector_ascii_tokens": 176,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_except_three_model_notation_repairs": true,
+    "diagram_sha256": "a45ebc8b36592022542f6d69c9faccb1d3642d8e56596d9dd3fb1d46cbe40afd",
+    "diagram_byte_identical": true,
+    "finite_countermodel_verified": true,
+    "structural_scan_exclusions": [
+      {
+        "source": "unchanged TikZ countermodel code",
+        "finding_contexts": 8,
+        "reason": "TikZ keys and node names, not untranslated prose; diagram body exactly matches frozen source"
+      }
+    ]
+  },
+  "status": "draft_linguistic_semantic_formula_and_countermodel_review_passed_source_repair_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

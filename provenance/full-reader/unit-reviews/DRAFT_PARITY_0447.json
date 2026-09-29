@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0447",
+  "checked_at_utc": "2026-09-27T12:18:12.864459+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0447 modal truth lemma; state-only draft",
+  "report": {
+    "unit_id": "OLP-0447",
+    "source_path": "content/normal-modal-logic/completeness/truth-lemma.tex",
+    "source_sha256": "ba09b193f2ccb8f8c5751a1c762c0f81f14937ffbb42bd0e7bfad1f82d51f147",
+    "draft_path": "private-state\\work\\batch040_draft\\truth-lemma.tex",
+    "draft_sha256": "732bb65e0caee8a118fa2a8e0f38b39d32c722993c0d785825b037ad7e048d0e",
+    "aligned_blocks": 21,
+    "linguistic_blocks": 16,
+    "source_math_spans_correction_aware": 106,
+    "target_math_spans_after_corrections": 106,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-037",
+      "OLMD-038",
+      "OLMD-039"
+    ],
+    "source_detector_ascii_tokens": 247,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "ten_induction_cases_preserved": true,
+    "diamond_reference_and_induction_step_repaired": true,
+    "problem_tag_case_repaired": true
+  },
+  "status": "draft_linguistic_math_induction_and_source_repair_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

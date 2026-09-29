@@ -1,0 +1,110 @@
+% Part: methods
+% Chapter: proofs
+% Section: example-2
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mth}{prf}{ex2}
+
+\olsection{બીજું ઉદાહરણ}
+
+\begin{prop}
+જો $A \subseteq C$, તો $A \cup (C \setminus A) = C$.
+\end{prop}
+
+\begin{proof}
+  ધારો કે $A \subseteq C$. આપણે $A \cup (C
+  \setminus A) = C$ બતાવવું છે.
+  \begin{quote}
+    પહેલાં નોંધીએ કે આ શરતી વિધાન છે. તેમાં સાર્વત્રિક પરિમાણક
+    સ્પષ્ટ લખાયો નથી: પ્રતિજ્ઞાપન બધા ગણો $A$ અને $C$ માટે
+    છે. તેથી $A$ અને $C$ મનસ્વી ગણો દર્શાવતા ચલો છે. આવું
+    વિધાન સાબિત કરવા પૂર્વપક્ષ ધારીને પરિણામ સાબિત કરીએ.
+
+    હવે $A \subseteq C$ની પૂર્વધારણા વાપરીએ. $\subseteq$ની
+    વ્યાખ્યા ઉકેલીએ: તેનો અર્થ એ છે કે~$A$નાં બધાં
+    !!{element}s, $C$નાં પણ !!{element}s છે. આ લખી
+    લઈએ---આગળની આખી સાબિતીમાં આ હકીકત વાપરીશું.
+  \end{quote}
+  $\subseteq$ની વ્યાખ્યા મુજબ, $A \subseteq C$ હોવાથી દરેક
+  $z$ માટે જો $z \in A$ તો $z \in C$.
+  \begin{quote}
+    પૂર્વધારણામાં આવેલી બધી વ્યાખ્યાઓ ઉકેલી લીધી. હવે
+    નિષ્કર્ષ તરફ જઈએ. આપણે $A \cup (C \setminus A) = C$
+    બતાવવું છે. તેથી અગાઉના ઉદાહરણની જેમ સાબિતી ગોઠવીએ:
+    $A \cup (C \setminus A)$નું દરેક !!{element}~$C$નું
+    !!a{element} પણ છે અને ઊલટું, $C$નું દરેક !!{element},
+    $A \cup (C
+    \setminus A)$નું !!a{element} પણ છે તે બતાવીએ. તેને
+    ટૂંકમાં $A \cup (C \setminus A)
+    \subseteq C$ અને $C \subseteq A \cup (C \setminus A)$
+    કહીએ. (અહીં વ્યાખ્યા ઉકેલવાને બદલે તેનો વિપરીત ઉપયોગ
+    કરીએ છીએ, પણ તેથી સાબિતી વાંચવી થોડી સરળ બને છે.)
+    આ સંયોજન હોવાથી બંને ભાગો સાબિત કરવા પડે. પહેલો ભાગ,
+    એટલે $A \cup (C \setminus A)$નું દરેક !!{element}~$C$નું
+    !!a{element} પણ છે તે બતાવવા, મનસ્વી~$z$ માટે
+    $z \in A \cup (C \setminus A)$ ધારીને $z \in C$
+    બતાવીએ. $\cup$ની વ્યાખ્યા મુજબ $z \in A \cup (C \setminus A)$
+    પરથી $z \in A$ અથવા $z \in C \setminus A$ મળે છે.
+    હવે તમને આ રીત સમજાતી હશે.
+    \end{quote}
+  $A \cup (C \setminus A) = C$ ત્યારે અને ત્યારે જ જ્યારે
+  $A \cup (C \setminus A) \subseteq
+  C$ અને $C \subseteq (A \cup (C \setminus A))$ છે.\sourcecorrection{OLMD-158}{મૂળમાં
+  અહીં જમણી બાજુના યોગગણના સૂત્રનું છેલ્લું કૌંસ છૂટી ગયું છે;
+  અહીં તે પૂર્યું છે.} પહેલાં $A \cup (C \setminus A) \subseteq C$
+  સાબિત કરીએ. $z \in A \cup (C
+  \setminus A)$ લો. તેથી કાં તો $z \in A$ અથવા $z \in (C \setminus A)$.
+  \begin{quote}
+    આપણે વિયોજન સુધી પહોંચ્યા છીએ; તેમાંથી $z \in C$
+    સાબિત કરવું છે. કિસ્સાવાર સાબિતી વાપરીએ.
+  \end{quote}
+  કિસ્સો 1: $z \in A$. દરેક $z$ માટે $z \in A$ હોય તો
+  $z \in C$ હોવાથી અહીં $z \in C$ મળે છે.
+  \begin{quote}
+    અહીં પ્રતિજ્ઞાપનની $A \subseteq C$ પૂર્વધારણાથી મળેલી
+    અગાઉ નોંધેલી હકીકત વાપરી છે. પહેલો કિસ્સો પૂરો થયો;
+    હવે બીજા કિસ્સા $z \in (C
+    \setminus A)$ તરફ જઈએ. યાદ રાખો કે $C \setminus A$ એ
+    બે ગણોનો \emph{તફાવત ગણ} છે, એટલે~$C$નાં એ બધાં
+    !!{element}sનો ગણ જે~$A$નાં !!{element}s નથી. પરંતુ
+    $A$માં ન હોય એવું $C$નું કોઈ પણ !!{element},~$C$નું
+    !!a{element} તો છે જ.
+  \end{quote}
+  કિસ્સો 2: $z \in (C \setminus A)$. એટલે $z \in C$ અને
+  $z
+  \notin A$. તેથી ખાસ કરીને $z \in C$.
+  \begin{quote}
+    સારું, પહેલી દિશા સાબિત થઈ. હવે બીજી દિશામાં
+    $C \subseteq A \cup (C \setminus
+    A)$ સાબિત કરીએ. એટલે $z \in C$ ધારીને $z \in A \cup (C
+    \setminus A)$ બતાવીએ.
+  \end{quote}
+  હવે $z \in C$ લો. આપણે $z \in A$ અથવા $z \in C
+  \setminus A$ બતાવવું છે.
+  \begin{quote}
+    $A$નાં બધાં !!{element}s, $C$નાં પણ !!{element}s છે;
+    અને $C
+    \setminus A$ એ $C$નાં એવા !!{element}sનો ગણ છે જે
+    $A$માં નથી. તેથી $z$ કાં તો $A$માં છે અથવા $C
+    \setminus A$માં છે. પરિણામ પહેલેથી સાચું છે તે ખબર ન હોય
+    તો આ પગલું અસ્પષ્ટ લાગશે. તેને પગલાંવાર સાબિત કરવું સારું.
+    સાબિતી વિના કહી શકાય એવી સરળ હકીકત મદદ કરશે:
+    $z \in A$ અથવા $z \notin A$. આને ``વર્જિત મધ્યનો નિયમ''
+    કહે છે: કોઈ પણ વિધાન~$p$ માટે કાં તો $p$ સાચું છે અથવા
+    તેનો નિષેધ સાચો છે. (અહીં $p$ એટલે $z \in A$ એ વિધાન.)
+    આ વિયોજન હોવાથી ફરી કિસ્સાવાર સાબિતી કરી શકીએ.
+  \end{quote}
+  કાં તો $z \in A$ અથવા $z \notin A$. પહેલા કિસ્સામાં
+  $z \in A \cup
+  (C \setminus A)$. બીજા કિસ્સામાં $z \in C$ અને
+  $z \notin A$, તેથી $z \in C \setminus A$. પરિણામે
+  $z \in A \cup (C \setminus A)$.
+  \begin{quote}
+    સાબિતી પૂરી થઈ: આપણે $A \cup (C \setminus A) = C$ બતાવ્યું છે.
+  \end{quote}
+\end{proof}
+
+\end{document}

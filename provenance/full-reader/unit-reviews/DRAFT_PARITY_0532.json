@@ -1,0 +1,66 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0532",
+  "checked_at_utc": "2026-09-27T23:24:03.149711+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0532 Russell's paradox again; state-only draft",
+  "report": {
+    "unit_id": "OLP-0532",
+    "source_path": "content/set-theory/story/russells-paradox-again.tex",
+    "source_sha256": "c468df1becf253ceb2c82540f2ec7e5112fa07bf649119e120184b4593f23b7d",
+    "draft_path": "private-state\\work\\batch044_draft\\russells-paradox-again.tex",
+    "draft_sha256": "e62b2d165b604d47921965045523cd4eba48b62c886d197f1d8d8b7079f440f8",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 11,
+    "target_math_spans_after_corrections": 11,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 384,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\sets\\russells-paradox.tex",
+        "sha256": "6946b2ff400e46866f64e91253e6d319c83c04c43d182c4dc701bf870965c002",
+        "terms": [
+          "રસેલનો વિરોધાભાસ",
+          "સ્વસભ્ય ન",
+          "ગણરચના"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\extensionality.tex",
+        "sha256": "be103783e4ba30e4118344fb25be3383732bda255321d36b38e47c01e08cf6b5",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત સમાનતા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Instantiating the quantified relation scheme at z=x yields P iff not P, hence a contradiction in classical logic.",
+      "No set-existence axiom is imported into the pure logical impossibility argument.",
+      "The historical claims are translated from the frozen source; no independent historical verification is asserted."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "\\emph{Grundgesetze}",
+        "count": 1,
+        "reason": "Exact German book title in the source's historical bibliographic discussion."
+      }
+    ],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citet[pp.~124--8]{Heijenoort1967}",
+        "count": 1,
+        "reason": "Frozen bibliography key and page locator; not ordinary untranslated prose."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware"
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

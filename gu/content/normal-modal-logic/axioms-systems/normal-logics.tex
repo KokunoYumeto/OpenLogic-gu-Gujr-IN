@@ -1,0 +1,119 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: normal-logics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{nor}
+
+\olsection{સામાન્ય મોડલ તર્કશાસ્ત્રો}
+
+મોડલ !!{formula}sના દરેક ગણને સ્વયંસિદ્ધિઓના કોઈ ગણમાંથી નિષ્પન્ન થતા
+!!{formula}sના ગણ તરીકે સહેલાઈથી લક્ષણિત કરી શકાતો નથી. આપણે મોડલ તર્કો
+સુવ્યવસ્થિત હોય એવું ઇચ્છીએ છીએ. સૌપ્રથમ, પરંપરાગત વિધાનાત્મક તર્કમાં
+જે કંઈ આપણે !!{derive} કરી શકીએ તે હજી પણ !!{derivable} હોવું જોઈએ;
+અલબત્ત, !!{formula}sમાં હવે \iftag{prvBox}{$\Box$\iftag{prvDiamond}{
+    અને~}{}}{}\iftag{prvDiamond}{$\Diamond$}{} પણ હોઈ શકે છે. આ માટે
+અમે માગીએ છીએ કે મોડલ તર્કમાં પુનરુક્તિઓના બધા દૃષ્ટાંતો હોય અને તે
+મોડસ પોનેન્સ હેઠળ બંધ હોય.
+
+\begin{defn}
+  \emph{મોડલ તર્કશાસ્ત્ર} એ મોડલ !!{formula}sનો એવો ગણ~$\Sigma$ છે જે
+  \begin{enumerate}
+  \item બધી પુનરુક્તિઓ ધરાવે છે, અને
+  \item પ્રતિસ્થાપન હેઠળ બંધ છે, એટલે કે જો $!A \in \Sigma$ હોય અને
+    $!D_1$, \dots, $!D_n$ !!{formula}s હોય, તો
+    \[
+    \SSubst{!A}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \in \Sigma,
+    \]
+    \item \emph{મોડસ પોનેન્સ} હેઠળ બંધ છે, એટલે કે જો $!A$ અને $!A
+      \lif !B \in \Sigma$ હોય, તો $!B \in \Sigma$ હોય છે.
+  \end{enumerate}
+\end{defn}
+
+મોડલ તર્કો માટે સંબંધાત્મક અર્થવિજ્ઞાન વાપરવું હોય, તો બધાં મોડલ
+નિદર્શનોમાં પ્રામાણ્ય હોય એવાં બધાં !!{formula}s પણ તેમાં સામેલ હોય તેવી
+માગ રાખવી પડે. \Ax{K}\iftag{prvDiamond}{ અને~\Dual{}}{}ના બધા દૃષ્ટાંતો
+!!{derivable} હોય, અને !!a{formula}~$!A$ !!{derivable} હોય ત્યારે
+$\Box !A$ પણ નિષ્પન્ન હોય, તો આ માગ પૂરી થાય છે. આ શરતો પૂરી કરતો
+મોડલ તર્ક \emph{સામાન્ય} કહેવાય છે. (નિશ્ચિતપણે, અસામાન્ય મોડલ તર્કો પણ
+છે, પરંતુ સામાન્ય સંબંધાત્મક નિદર્શનો તેમને માટે પર્યાપ્ત નથી.)
+
+\begin{defn}
+  મોડલ તર્ક $\Sigma$ \emph{સામાન્ય} છે, જો તે આ સૂત્રો ધરાવે:
+  \begin{align*}
+    \tag{\Ax{K}} & \Box(p \lif q) \lif (\Box p \lif \Box q),
+    \iftag{prvDiamond}{\\
+      \tag{\Dual} & \Diamond p \liff \lnot\Box\lnot p}{}
+  \end{align*}
+  અને તે \emph{આવશ્યકીકરણ} હેઠળ બંધ હોય, એટલે કે $!A \in
+  \Sigma$ હોય, તો $\Box !A \in \Sigma$ પણ હોય.
+\end{defn}
+
+નોંધો કે પુનરુક્તિમૂલક પ્રેરણ ``સૂક્ષ્મ'' અર્થમાં કોઈ \emph{જગતમાં
+સત્યતા} જાળવવા જેટલું પૂરતું છે, જ્યારે નિયમ \Nec{} માત્ર \emph{નિદર્શનમાં
+સત્યતા} જાળવે છે (અને તેથી ફ્રેમમાં કે ફ્રેમોના વર્ગમાં પ્રામાણ્યતા પણ
+જાળવે છે).
+
+\begin{prop}\ollabel{prop:rk}
+  દરેક સામાન્ય મોડલ તર્કશાસ્ત્ર નિયમ \RK હેઠળ બંધ છે:
+  \begin{prooftree}
+    \AxiomC{$!A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif !A_n)\cdots)$}
+    \RightLabel{\RK}
+    \UnaryInfC{$\Box!A_1 \lif (\Box!A_2 \lif \cdots (\Box!A_{n-1}
+      \lif \Box!A_n)\cdots).$}
+  \end{prooftree}
+\end{prop}
+
+\begin{proof}
+  $n$ પર આગમનથી: $n = 1$ હોય, તો આ નિયમ માત્ર \Nec છે, અને દરેક
+  સામાન્ય મોડલ તર્ક \Nec હેઠળ બંધ છે.
+
+  હવે માનો કે પરિણામ $n-1$ માટે સાચું છે; આપણે તે~$n$ માટે બતાવીએ.
+
+  માનો કે
+  \begin{align*}
+  & !A_1 \lif (!A_2 \lif \cdots (!A_{n-1} \lif !A_n)\cdots) \in \Sigma
+  \intertext{આગમન-પરિકલ્પના મુજબ આપણને મળે છે}
+  & \Box!A_1 \lif (\Box!A_2 \lif \cdots \Box(!A_{n-1} \lif !A_n)\cdots)
+  \in \Sigma
+  \intertext{$\Sigma$ સામાન્ય મોડલ તર્ક હોવાથી તે~$\Ax{K}$ના બધા દૃષ્ટાંતો,
+    ખાસ કરીને આ દૃષ્ટાંત, ધરાવે છે}
+  & \Box(!A_{n-1} \lif !A_n) \lif (\Box!A_{n-1} \lif \Box!A_n) \in \Sigma
+  \intertext{મોડસ પોનેન્સ અને પુનરુક્તિઓના યોગ્ય દૃષ્ટાંતો વાપરવાથી મળે છે}
+  & \Box!A_1 \lif (\Box!A_2 \lif \cdots (\Box!A_{n-1}
+  \lif \Box!A_n)\cdots) \in \Sigma. 
+  \end{align*}
+\end{proof}
+
+\begin{prop}\ollabel{prop:notDiamondBot}
+  દરેક સામાન્ય મોડલ તર્ક $\Sigma$માં~$\lnot\Diamond\lfalse$ હોય છે.
+\end{prop}
+
+\begin{prob}
+  \olref[nml][prf][nor]{prop:notDiamondBot} સાબિત કરો.
+\end{prob}
+
+\begin{prop}
+  માનો કે $!A_1$, \dots, $!A_n$ !!{formula}s છે. ત્યારે $!A_1$,
+  \dots, $!A_n$ના બધા દૃષ્ટાંતો ધરાવતો સૌથી નાનો સામાન્ય મોડલ તર્ક
+  $\Sigma$ છે.
+\end{prop}\sourcecorrection{OLMD-023}{મૂળ પ્રસ્તાવમાં માત્ર ``મોડલ તર્ક'' લખાયું છે, પરંતુ તેની સાબિતી સામાન્ય મોડલ તર્કોના છેદથી સૌથી નાનો સામાન્ય મોડલ તર્ક રચે છે; આ વિશેષણ અહીં સ્પષ્ટ કર્યું છે.}
+
+\begin{proof}
+  $!A_1$, \dots, $!A_n$ આપેલાં હોય ત્યારે $\Sigma$ને એવાં બધાં સામાન્ય
+  મોડલ તર્કોના છેદ તરીકે વ્યાખ્યાયિત કરો જે $!A_1$, \dots, $!A_n$ના
+  બધા દૃષ્ટાંતો ધરાવે છે. આવો છેદ ખાલી નથી, કારણ કે બધાં !!{formula}sનો
+  ગણ~$\Frm[L]$ પોતે એવો મોડલ તર્ક છે.
+\end{proof}
+
+\begin{defn}
+$!A_1$, \dots, $!A_n$ ધરાવતો સૌથી નાનો સામાન્ય મોડલ તર્ક
+\emph{મોડલ તંત્ર} કહેવાય છે અને તેને $\Log{K} !A_1 \dots
+!A_n$ વડે દર્શાવાય છે. સૌથી નાનો સામાન્ય મોડલ તર્ક~\Log{K} વડે
+દર્શાવાય છે.
+\end{defn}
+
+\end{document}

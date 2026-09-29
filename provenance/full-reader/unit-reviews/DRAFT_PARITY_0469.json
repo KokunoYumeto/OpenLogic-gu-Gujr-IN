@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0469",
+  "checked_at_utc": "2026-09-27T19:04:36.186879+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0469 modal tableau countermodels; state-only draft",
+  "report": {
+    "unit_id": "OLP-0469",
+    "source_path": "content/normal-modal-logic/tableaux/countermodels.tex",
+    "source_sha256": "c47ac240cc48f6e82093505895045e59de1a1f034b7e377086c5b53944d744bd",
+    "draft_path": "private-state\\work\\batch040_draft\\tableaux-countermodels.tex",
+    "draft_sha256": "12f9925f82bbaba1834aae5ddcbbc62cf96e9865d1a453a369ddb6130c100478",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 51,
+    "target_math_spans_after_corrections": 51,
+    "glossary_tokens": 10,
+    "source_correction_notes": [
+      "OLMD-071",
+      "OLMD-072",
+      "OLMD-073",
+      "OLMD-074"
+    ],
+    "source_detector_ascii_tokens": 518,
+    "target_untranslated_prose_findings": 0,
+    "excluded_structural_detector_findings": "TikZ node and edge syntax in two byte-exact diagrams",
+    "all_math_spans_exact": true,
+    "five_trees_byte_exact_one_tree_visibly_repaired": true,
+    "two_diagrams_byte_exact": true
+  },
+  "status": "draft_linguistic_math_tree_and_diagram_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

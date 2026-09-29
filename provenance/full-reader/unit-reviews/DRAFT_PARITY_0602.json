@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0602",
+  "checked_at_utc": "2026-09-28T14:09:18.416825+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0602 Proofs chapter title and ten-section topology; state-only draft",
+  "report": {
+    "unit_id": "OLP-0602",
+    "source_path": "content/methods/proofs/proofs.tex",
+    "source_sha256": "174ff1e6150d27c58b80541f4891c2c679b359a0d2b6a8b35b5dae2ab16761b5",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs.tex",
+    "draft_sha256": "5b21a1738895ddaf180d15f7f0bb7456828857db6a3d4e6947756761e1f5c13d",
+    "aligned_blocks": 16,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 1,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\propositional-logic\\syntax-and-semantics\\syntax-and-semantics.tex",
+        "sha256": "66d77e0969cb525423d6ffd7ef6b08916e99f26d4ab58eb876b757b9e5b01031",
+        "terms": [
+          "સાબિતીઓનો"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\methods.tex",
+        "sha256": "100e4087c74e7f5be19ea5c63e733128e5b26889be7e960bc394ce4ea2fa6ebf",
+        "terms": [
+          "સાબિતીઓ કેવી રીતે લખવી",
+          "સાબિતી-પદ્ધતિઓની"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

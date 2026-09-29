@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0650",
+  "checked_at_utc": "2026-09-28T18:14:54.520000+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0650 Lambda-calculus lists by right fold, sum, and length; state-only draft",
+  "report": {
+    "unit_id": "OLP-0650",
+    "source_path": "content/lambda-calculus/lambda-definability/lists.tex",
+    "source_sha256": "65011d98e9f7484a6da8310227096fe1d72bad74d24db096dda5f0873c1f4c97",
+    "draft_path": "private-state\\work\\batch044_draft\\lists.tex",
+    "draft_sha256": "e520e6fc98b41ff48b9a5604889f52cd865890dff8e238b10cccd68cee48daef",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 9,
+    "target_math_spans_after_corrections": 9,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-187"
+    ],
+    "source_detector_ascii_tokens": 161,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\computability\\recursive-functions\\trees.tex",
+        "sha256": "942be8b8d2cb73806bc4c2aa724338fea51a37b8d2444fe0f9fe4cfa79af5894",
+        "terms": [
+          "યાદી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

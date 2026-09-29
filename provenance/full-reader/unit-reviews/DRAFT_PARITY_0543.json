@@ -1,0 +1,96 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0543",
+  "checked_at_utc": "2026-09-28T00:17:05.677866+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0543 infinity and the natural-number successor; state-only draft",
+  "report": {
+    "unit_id": "OLP-0543",
+    "source_path": "content/set-theory/z/infinity-again.tex",
+    "source_sha256": "29267a484b8628ec7cafd50d87dac4a0f6650914c625dec7dd06ac0e79aa3f91",
+    "draft_path": "private-state\\work\\batch044_draft\\infinity-again.tex",
+    "draft_sha256": "8f1e1364dd675967c7c95deb9c84e11bde16937375f65b77ef8107380dcbf798",
+    "aligned_blocks": 21,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 70,
+    "target_math_spans_after_corrections": 70,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-114"
+    ],
+    "source_detector_ascii_tokens": 684,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "and the injection on",
+        "and the successor operation on"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-algebra.tex",
+        "sha256": "8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe",
+        "terms": [
+          "ડેડેકિન્ડ બીજગણિત",
+          "અનુગામી વિધેય",
+          "સંવૃત",
+          "સંવરણ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-induction.tex",
+        "sha256": "b8f4824c179e97e5dcbe438a064b14b8f70f32858b4dc23fa27371c7d102c945",
+        "terms": [
+          "ગાણિતિક અનુમાન",
+          "પ્રાકૃતિક સંખ્યાઓ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\proof-theoretic-notions.tex",
+        "sha256": "42280456f97a71e0a4892c6bcd91ae14ea3411607ef9dcf12156c07abe7cf43e",
+        "terms": [
+          "પ્રતિવિધાન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-infinity-044.tex",
+        "sha256": "2dd0ea1ef1d9d86e8530e412787068ec4b6f8fa77955846f9d43757bf07a2981",
+        "terms": [
+          "તબક્કાઓ અનંતતા સુધી પહોંચે છે"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-successor-044.tex",
+        "sha256": "c5b610cae7356f658e68cbf69597f7db7c60b1586a54ff7a1ef4a4aa5ec0810b",
+        "terms": [
+          "તબક્કાઓ આગળ વધતા રહે છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "All 70 raw-file formula spans, including inactive enumeration-comment numbers, are preserved.",
+      "The two glossary injection markers are unchanged.",
+      "OLMD-114 repairs the arbitrary-inductive-set scope, not the Infinity axiom or the definition of omega.",
+      "In Case 2, m lies outside ran(f), so replacing the unique value n preserves injectivity; the new proper range omits n.",
+      "The extra infinite-stage principle is explicitly assumed, not derived from the bare iterative conception."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [
+      {
+        "path": "work/STAGE_LABEL_LOCALIZATION_044_0543.json",
+        "sha256": "fa01f570b1a9f110da1aa85066a1e5c1cea48d28ff8df2e089dbda08b3e5ce75"
+      },
+      {
+        "path": "work/SUCCESSOR_SCOPE_AUDIT_044_0543.json",
+        "sha256": "6e2e6b64f2b2ab74311554197c33096158a206dcf744a6a65712f50aba7b29c4"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0667",
+  "checked_at_utc": "2026-09-28T19:38:41.035133+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0667 Auxiliary N2 sequent natural-deduction rule table; state-only draft",
+  "report": {
+    "unit_id": "OLP-0667",
+    "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+    "source_sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+    "draft_path": "private-state\\work\\batch044_draft\\rules-N2.tex",
+    "draft_sha256": "7f4a97fc0cf04a9de7b60617f0f4e6f7143fcb71b043d0a32f7f611605c43e9a",
+    "aligned_blocks": 5,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 44,
+    "target_math_spans_after_corrections": 44,
+    "glossary_tokens": 2,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 35,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "સ્વાભાવિક નિગમન",
+          "અનુમાન-નિયમો",
+          "ધારણાઓ",
+          "આધારવાક્યો"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

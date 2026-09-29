@@ -1,0 +1,253 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: more-soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{msn}
+      
+\olsection{વધારાના નિયમોની યથાર્થતા}
+
+નિયમને નિદર્શનોના કોઈ વર્ગ માટે યથાર્થ ત્યારે કહીએ જ્યારે
+!!a{tableau}ની કોઈ શાખા તે વર્ગના નિદર્શનમાં સંતોષ્ય હોય ત્યારે
+નિયમ લાગુ કરવાથી મળતી શાખા પણ તે વર્ગના નિદર્શનમાં સંતોષ્ય હોય.
+
+\begin{prop}
+  \ollabel{prop:soundness-T} 
+  \iftag{prvBox}{\Ax{T}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ અને }%
+  \iftag{prvDiamond}{\Ax{T}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{નિયમ}{નિયમો}
+  સ્વવાચક નિદર્શનો માટે યથાર્થ છે.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{$\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$ને
+  T$\Box$ લાગુ કરીને શાખા વિસ્તારીએ:
+  \iftag{probBox}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\True}{!B}[\sigma]$ મળે છે. ધારો કે
+    $\mSat{M}{\Gamma}[f]$, ખાસ કરીને $\mSat{M}{\Box
+      !B}[f(\sigma)]$. $R$ સ્વવાચક હોવાથી
+    $Rf(\sigma)f(\sigma)$. તેથી $\mSat{M}{!B}[f(\sigma)]$;
+    એટલે $\mModel{M}, f$ એ $\sFmla{\True}{!B}[\sigma]$ને
+    સંતોષે છે.}}{}
+\tagitem{prvDiamond}{$\sFmla{\False}{\Diamond !B}[\sigma]
+  \in \Gamma$ને T$\Diamond$ લાગુ કરીને શાખા વિસ્તારીએ:
+  \iftag{probDiamond}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\False}{!B}[\sigma]$ મળે છે. ધારો કે
+    $\mSat{M}{\Gamma}[f]$, ખાસ કરીને $\mSat/{M}{\Diamond
+      !B}[f(\sigma)]$. $R$ સ્વવાચક હોવાથી
+    $Rf(\sigma)f(\sigma)$. તેથી $\mSat/{M}{!B}[f(\sigma)]$;
+    એટલે $\mModel{M}, f$ એ $\sFmla{\False}{!B}[\sigma]$ને
+    સંતોષે છે.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-T}નું પ્રમાણ પૂર્ણ કરો.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-D} 
+  \iftag{prvBox}{\Ax{D}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ અને }%
+  \iftag{prvDiamond}{\Ax{D}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{નિયમ}{નિયમો}
+  સિરિયલ નિદર્શનો માટે યથાર્થ છે.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{D$\Box$ને
+  $\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$ પર લાગુ કરીને
+  શાખા વિસ્તારીએ:
+  \iftag{probBox}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\True}{\Diamond !B}[\sigma]$ મળે છે.
+    ધારો કે $\mSat{M}{\Gamma}[f]$, ખાસ કરીને
+    $\mSat{M}{\Box !B}[f(\sigma)]$. $R$ સિરિયલ હોવાથી એવું
+    $w \in W$ છે કે $Rf(\sigma)w$. ત્યારે $\mSat{M}{!B}[w]$;
+    તેથી $\mSat{M}{\Diamond !B}[f(\sigma)]$.
+    આમ $\mModel{M}, f$ એ
+    $\sFmla{\True}{\Diamond!B}[\sigma]$ને સંતોષે છે.}}{}
+\tagitem{prvDiamond}{D$\Diamond$ને
+  $\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$ પર લાગુ
+  કરીને શાખા વિસ્તારીએ:
+  \iftag{probDiamond}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\False}{\Box !B}[\sigma]$ મળે છે.
+    ધારો કે $\mSat{M}{\Gamma}[f]$, ખાસ કરીને
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$. $R$ સિરિયલ હોવાથી
+    એવું $w \in W$ છે કે $Rf(\sigma)w$. ત્યારે
+    $\mSat/{M}{!B}[w]$; તેથી
+    $\mSat/{M}{\Box !B}[f(\sigma)]$. આમ $\mModel{M}, f$ એ
+    $\sFmla{\False}{\Box!B}[\sigma]$ને સંતોષે છે.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-D}નું પ્રમાણ પૂર્ણ કરો.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-B} 
+  \iftag{prvBox}{\Ax{B}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ અને }%
+  \iftag{prvDiamond}{\Ax{B}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{નિયમ}{નિયમો}
+  સંમિત નિદર્શનો માટે યથાર્થ છે.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{B$\Box$ને
+  $\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$ પર લાગુ કરીને
+  શાખા વિસ્તારીએ:
+  \iftag{probBox}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\True}{!B}[\sigma]$ મળે છે. ધારો કે
+    $\mSat{M}{\Gamma}[f]$, ખાસ કરીને $\mSat{M}{\Box
+      !B}[f(\sigma.n)]$. $f$ એ શાખાના ઉપસર્ગોનું
+    $\mModel{M}$માં અર્થઘટન હોવાથી $Rf(\sigma)f(\sigma.n)$.
+    $R$ સંમિત હોવાથી $Rf(\sigma.n)f(\sigma)$ પણ છે.
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$ હોવાથી
+    $\mSat{M}{!B}[f(\sigma)]$. તેથી $\mModel{M}, f$ એ
+    $\sFmla{\True}{!B}[\sigma]$ને સંતોષે છે.}}{}
+\tagitem{prvDiamond}{B$\Diamond$ને
+  $\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$ પર લાગુ
+  કરીને શાખા વિસ્તારીએ:
+  \iftag{probDiamond}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\False}{!B}[\sigma]$ મળે છે. ધારો કે
+    $\mSat{M}{\Gamma}[f]$, ખાસ કરીને $\mSat/{M}{\Diamond
+      !B}[f(\sigma.n)]$. $f$ એ શાખાના ઉપસર્ગોનું
+    $\mModel{M}$માં અર્થઘટન હોવાથી $Rf(\sigma)f(\sigma.n)$.
+    $R$ સંમિત હોવાથી $Rf(\sigma.n)f(\sigma)$ પણ છે.
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$ હોવાથી
+    $\mSat/{M}{!B}[f(\sigma)]$. તેથી $\mModel{M}, f$ એ
+    $\sFmla{\False}{!B}[\sigma]$ને સંતોષે છે.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-B}નું પ્રમાણ પૂર્ણ કરો.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4} 
+  \iftag{prvBox}{\Ax{4}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ અને }%
+  \iftag{prvDiamond}{\Ax{4}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{નિયમ}{નિયમો}
+  પરંપરિત નિદર્શનો માટે યથાર્થ છે.
+\end{prop}
+
+\begin{proof}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{4$\Box$ને
+  $\sFmla{\True}{\Box !B}[\sigma] \in \Gamma$ પર લાગુ કરીને
+  શાખા વિસ્તારીએ:
+  \iftag{probBox}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\True}{\Box!B}[\sigma.n]$ મળે છે.
+    ધારો કે $\mSat{M}{\Gamma}[f]$, ખાસ કરીને
+    $\mSat{M}{\Box !B}[f(\sigma)]$. $f$ એ શાખાના
+    ઉપસર્ગોનું~$\mModel{M}$માં અર્થઘટન છે અને $\sigma.n$
+    વપરાયેલો હોવો જોઈએ, તેથી $Rf(\sigma)f(\sigma.n)$.
+    હવે $Rf(\sigma.n)w$ હોય એવું કોઈપણ જગત~$w$ લો.
+    $R$ પરંપરિત હોવાથી $Rf(\sigma)w$.
+    $\mSat{M}{\Box !B}[f(\sigma)]$ હોવાથી
+    $\mSat{M}{!B}[w]$. તેથી
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$ અને $\mModel{M}, f$ એ
+    $\sFmla{\True}{\Box !B}[\sigma.n]$ને સંતોષે છે.}}{}
+\tagitem{prvDiamond}{4$\Diamond$ને
+  $\sFmla{\False}{\Diamond !B}[\sigma] \in \Gamma$ પર લાગુ
+  કરીને શાખા વિસ્તારીએ:
+  \iftag{probDiamond}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\False}{\Diamond!B}[\sigma.n]$ મળે છે.
+    ધારો કે $\mSat{M}{\Gamma}[f]$, ખાસ કરીને
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$. $f$ એ શાખાના
+    ઉપસર્ગોનું~$\mModel{M}$માં અર્થઘટન છે અને $\sigma.n$
+    વપરાયેલો હોવો જોઈએ, તેથી $Rf(\sigma)f(\sigma.n)$.
+    હવે $Rf(\sigma.n)w$ હોય એવું કોઈપણ જગત~$w$ લો.
+    $R$ પરંપરિત હોવાથી $Rf(\sigma)w$.
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$ હોવાથી
+    $\mSat/{M}{!B}[w]$. તેથી
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$ અને $\mModel{M}, f$ એ
+    $\sFmla{\False}{\Diamond !B}[\sigma.n]$ને સંતોષે છે.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-4}નું પ્રમાણ પૂર્ણ કરો.
+\end{prob}
+\tagendprob
+
+\begin{prop}
+  \ollabel{prop:soundness-4r} 
+  \iftag{prvBox}{\Ax{4r}$\Box$}{}%
+  \iftag{notprvBox,notprvDiamond}{}{ અને }%
+  \iftag{prvDiamond}{\Ax{4r}$\Diamond$}{}
+  \iftag{notprvBox,notprvDiamond}{નિયમ}{નિયમો}
+  યુક્લિડિયન નિદર્શનો માટે યથાર્થ છે.
+\end{prop}
+
+\begin{proof}
+\sourcecorrection{OLMD-061}{મૂળમાં બંને યુક્લિડિયન કિસ્સામાં
+$f(\sigma).n$ લખાયું છે, જે વિધેયના મૂલ્યને ઉપસર્ગ જેવું ગણે છે;
+પૂર્વપક્ષ મુજબ અહીં $f(\sigma.n)$ જરૂરી છે.}
+\begin{tagenumerate}{prvBox,prvDiamond}
+\tagitem{prvBox}{4r$\Box$ને
+  $\sFmla{\True}{\Box !B}[\sigma.n] \in \Gamma$ પર લાગુ કરીને
+  શાખા વિસ્તારીએ:
+  \iftag{probBox}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\True}{\Box!B}[\sigma]$ મળે છે. ધારો કે
+    $\mSat{M}{\Gamma}[f]$, ખાસ કરીને $\mSat{M}{\Box
+      !B}[f(\sigma.n)]$. $f$ એ શાખાના ઉપસર્ગોનું
+    $\mModel{M}$માં અર્થઘટન હોવાથી $Rf(\sigma)f(\sigma.n)$.
+    હવે $Rf(\sigma)w$ હોય એવું કોઈપણ જગત~$w$ લો.
+    $R$ યુક્લિડિયન હોવાથી $Rf(\sigma.n)w$.
+    $\mSat{M}{\Box !B}[f(\sigma.n)]$ હોવાથી
+    $\mSat{M}{!B}[w]$. તેથી $\mSat{M}{\Box !B}[f(\sigma)]$;
+    એટલે $\mModel{M}, f$ એ
+    $\sFmla{\True}{\Box !B}[\sigma]$ને સંતોષે છે.}}{}
+\tagitem{prvDiamond}{4r$\Diamond$ને
+  $\sFmla{\False}{\Diamond !B}[\sigma.n] \in \Gamma$ પર લાગુ
+  કરીને શાખા વિસ્તારીએ:
+  \iftag{probDiamond}{અભ્યાસપ્રશ્ન.}{તેનાથી શાખા પર નવું !!{signed
+      formula}~$\sFmla{\False}{\Diamond!B}[\sigma]$ મળે છે.
+    \sourcecorrection{OLMD-062}{મૂળમાં ડાયમંડ-નિયમનો નિષ્કર્ષ
+    $\sFmla{\True}{\Box!B}[\sigma]$ લખાયો છે; નિયમ-કોષ્ટક અને
+    આ જ પ્રમાણના અંતિમ વાક્ય મુજબ તે
+    $\sFmla{\False}{\Diamond!B}[\sigma]$ હોવો જોઈએ.}
+    ધારો કે $\mSat{M}{\Gamma}[f]$, ખાસ કરીને
+    $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$.
+    $f$ એ શાખાના ઉપસર્ગોનું $\mModel{M}$માં અર્થઘટન હોવાથી
+    $Rf(\sigma)f(\sigma.n)$. હવે $Rf(\sigma)w$ હોય એવું
+    કોઈપણ જગત~$w$ લો. $R$ યુક્લિડિયન હોવાથી
+    $Rf(\sigma.n)w$. $\mSat/{M}{\Diamond !B}[f(\sigma.n)]$
+    હોવાથી $\mSat/{M}{!B}[w]$. તેથી
+    $\mSat/{M}{\Diamond !B}[f(\sigma)]$; એટલે
+    $\mModel{M}, f$ એ
+    $\sFmla{\False}{\Diamond !B}[\sigma]$ને સંતોષે છે.}}{}
+\end{tagenumerate}
+\end{proof}
+
+\tagprob{probBox,probDiamond}
+\begin{prob}
+  \olref[nml][tab][msn]{prop:soundness-4r}નું પ્રમાણ પૂર્ણ કરો.
+\end{prob}
+\tagendprob
+
+\begin{cor}
+\ollabel{cor:soundness-logics} \olref[mru]{tab:logics-rules}માં
+આપેલી !!{tableau} પ્રણાલીઓ નિદર્શનોના અનુરૂપ વર્ગો માટે
+યથાર્થ છે.
+\end{cor}
+
+\end{document}

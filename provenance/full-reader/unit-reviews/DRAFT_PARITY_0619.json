@@ -1,0 +1,106 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0619",
+  "checked_at_utc": "2026-09-28T15:08:28.434050+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0619 inductively defined subterm relation, unique readability, and depth functions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0619",
+    "source_path": "content/methods/induction/relations.tex",
+    "source_sha256": "66fc09c76443827350bdabf32900631432ebb9f043e51fe33b447fe64f3c0ba4",
+    "draft_path": "private-state\\work\\batch044_draft\\induction-relations.tex",
+    "draft_sha256": "26b3f47fc1464ae714bad8151f2b77ed44b1d5bfc8be1c389a9e1deb24124b9a",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 110,
+    "target_math_spans_after_corrections": 110,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-166"
+    ],
+    "source_detector_ascii_tokens": 632,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\mathrm{a} \\sqsubseteq b",
+        "\\mathrm{a} \\sqsubseteq \\mathrm{b}"
+      ],
+      [
+        "\\mathrm{a} \\circ b",
+        "\\mathrm{a} \\circ \\mathrm{b}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\syntax-and-semantics\\extensionality.tex",
+        "sha256": "24fd9e51fb4635605230ba6e6defa14abdbe96d4e6a0c9184ea0598b2e35d43c",
+        "terms": [
+          "ઉપપદોનાં"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\syntax-and-semantics\\unique-readability.tex",
+        "sha256": "081d5bce6e8dea75c5fedfa33840376e644275484887d256dba8498cc32a5943",
+        "terms": [
+          "એકમાત્ર વાંચન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\induction-structural-induction.tex",
+        "sha256": "2b60698d9c2574336194840314be9ff90052af37c7e3b6545881534a61b23f96",
+        "terms": [
+          "ઉચિત આરંભિક ખંડ",
+          "\\ollabel{prop:initial}"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ and}",
+        "target": "\\text{ અને}",
+        "count": 5
+      },
+      {
+        "source": "\\text{ if $t$ is a letter}",
+        "target": "\\text{ જો $t$ અક્ષર હોય}",
+        "count": 2
+      },
+      {
+        "source": "\\text{ if $t = [s_1 \\circ s_2]$.}",
+        "target": "\\text{ જો $t = [s_1 \\circ s_2]$ હોય.}",
+        "count": 1
+      },
+      {
+        "source": "\\text{ if $t = s_1 \\circ s_2$.}",
+        "target": "\\text{ જો $t = s_1 \\circ s_2$ હોય.}",
+        "count": 1
+      },
+      {
+        "source": "\\intertext{It is also of the form $r_1 \\circ r_2$ with}",
+        "target": "\\intertext{તે $r_1 \\circ r_2$ સ્વરૂપનું પણ છે, જ્યાં}",
+        "count": 1
+      },
+      {
+        "source": "\\intertext{or as $r_1 \\circ r_2$ with}",
+        "target": "\\intertext{અથવા $r_1 \\circ r_2$ સ્વરૂપમાં}",
+        "count": 1
+      },
+      {
+        "source": "\\intertext{while according to the other reading we get}",
+        "target": "\\intertext{જ્યારે બીજા વાંચન મુજબ મળે}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

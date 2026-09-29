@@ -1,0 +1,84 @@
+% Part: incompleteness
+% Chapter: incompleteness-provability
+% Section: second-incompleteness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{inp}{2in}
+
+\olsection{બીજું અપૂર્ણતા પ્રમેય}
+
+$\Th{PA}$ પોતાની સુસંગતતા સાબિત કરતું નથી એવો દાવો કેવી રીતે વ્યક્ત કરવો? $\Th{PA}$ અસુસંગત છે એમ કહેવું એટલે $\Th{PA} \Proves \eq[0][1]$ એમ કહેવું. તેથી તેની સુસંગતતાનું વિધાન $\OCon[\Th{PA}]$ આપણે !!{sentence} $\lnot\OProv[\Th{PA}](\gn{\lfalse})$ લઈ શકીએ: અહીં બંને વિરોધાભાસ સમકક્ષ છે. પછીનું પ્રમેય આપણને જોઈતું પરિણામ આપે છે.
+\sourcecorrection{OLINC-045}{સ્થિર અંગ્રેજી મૂળ શરૂઆતમાં સુસંગતતાનું વિધાન $\lnot\OProv[\Th{PA}](\gn{\eq[0][1]})$ લે છે, પણ નીચેની ઔપચારિક દલીલમાં $\OCon \ident \lnot\OProv(\gn{\lfalse})$ વાપરે છે. અહીં દલીલ સાથે સુસંગત રહેવા બીજું નિરૂપણ પસંદ કર્યું છે; $\Th{PA}$માં બંને વિરોધાભાસોની સાબિતિક્ષમતા સમકક્ષ છે.}
+
+\begin{thm}
+\ollabel{thm:second-incompleteness}
+જો $\Th{PA}$ સુસંગત હોય, તો $\Th{PA}$ એ $\OCon[\Th{PA}]$ને !!{derive} કરતું નથી.
+\end{thm}
+
+આ પ્રમેય $\OCon[\Th{PA}]$ના ચોક્કસ નિરૂપણ પર, એટલે $\OProv[\Th{PA}](y)$ના ચોક્કસ નિરૂપણ પર, આધાર રાખે છે એ નોંધવું જરૂરી છે. આપણે માત્ર એટલું જ વાપરીશું કે $\OProv[\Th{PA}](y)$નું નિરૂપણ ત્રણ !!{derivability} શરતો સંતોષે છે. તેથી આ ગુણધર્મો ધરાવતા !!a{derivability} વિધેયધર્મવાળા કોઈપણ સિદ્ધાંત માટે પ્રમેય વ્યાપક થાય છે.
+
+ગોડેલે આપેલી દલીલની રૂપરેખા વાંચવા જેવી છે: પ્રમેય દલીલના અસરકારક અંતિમ પરિણામની જેમ નીકળે છે. દલીલ આ છે. \olref[1in]{thm:first-incompleteness}ની સાબિતીમાં રચેલું ગોડેલનું વાક્ય $!G_\Th{PA}$ લો. આપણે બતાવ્યું છે: ``જો $\Th{PA}$ સુસંગત હોય, તો $\Th{PA}$ એ $!G_\Th{PA}$ને !!{derive} કરતું નથી.'' આ વાતને $\Th{PA}$ની \emph{અંદર} ઔપચારિક કરીએ તો નીચેની સાબિતી મળે છે:
+\[
+\OCon[\Th{PA}] \lif \lnot \OProv[\Th{PA}](\gn{!G_\Th{PA}}).
+\]
+હવે માનો કે $\Th{PA}$ એ $\OCon[\Th{PA}]$ને !!{derive} કરે છે. ત્યારે તે $\lnot\OProv[\Th{PA}](\gn{!G_\Th{PA}})$ને પણ !!{derive} કરે છે. પરંતુ $!G_\Th{PA}$ ગોડેલનું વાક્ય હોવાથી આ $!G_\Th{PA}$ની સમકક્ષ છે. તેથી $\Th{PA}$ એ $!G_\Th{PA}$ને !!{derive} કરે છે.
+\sourcecorrection{OLINC-046}{સ્થિર અંગ્રેજી મૂળમાં અહીં બહારના $\Prov[\Th{PA}]$નો ઉપયોગ છે. અગાઉ વ્યાખ્યાયિત અને દલીલમાં જરૂરી અંકગણિતીય સૂત્ર $\OProv[\Th{PA}]$ મૂક્યું છે.}
+
+પરંતુ આપણે જાણીએ છીએ કે $\Th{PA}$ સુસંગત હોય તો તે $!G_\Th{PA}$ને !!{derive} કરતું નથી!{} તેથી $\Th{PA}$ સુસંગત હોય તો તે $\OCon[\Th{PA}]$ને !!{derive} કરી શકતું નથી.
+
+દલીલને વધુ ચોક્કસ બનાવવા $!G_\Th{PA}$ને $\Th{PA}$ માટેનું ગોડેલ વાક્ય લઈએ અને !!{derivability} શરતો (P1)--(P3) વડે બતાવીએ કે $\Th{PA}$ એ $\OCon[\Th{PA}] \lif !G_\Th{PA}$ને !!{derive} કરે છે. તેથી $\Th{PA}$ એ $\OCon[\Th{PA}]$ને !!{derive} કરતું નથી એવું નીકળશે. હવે $\Th{PA}$ની \emph{અંદર} સાબિતીની રૂપરેખા જોઈએ. સરળતા માટે $\Th{PA}$ના નીચલા સૂચક છોડીએ છીએ.
+\begin{align}
+& !G \liff \lnot \OProv(\gn{!G}) \ollabel{G2-1}\\
+& \qquad\text{$!G$ ગોડેલનું વાક્ય છે}\notag \\
+& !G \lif \lnot \OProv(\gn{!G}) \ollabel{G2-2}\\
+  & \qquad\text{\olref{G2-1} પરથી} \notag\\
+& !G \lif
+  (\OProv(\gn{!G}) \lif \lfalse) \ollabel{G2-3}\\
+  & \qquad\text{\olref{G2-2} અને તર્ક પરથી}\notag\\
+& \OProv(\gn{
+    !G \lif
+    (\OProv(\gn{!G}) \lif \lfalse)
+  }) \ollabel{G2-4}\\
+  & \qquad\text{\olref{G2-3} અને શરત P1 પરથી} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{
+    (\OProv(\gn{!G}) \lif \lfalse)
+    }) \ollabel{G2-5}\\
+  & \qquad\text{\olref{G2-4} અને શરત P2 પરથી} \notag\\
+& \OProv(\gn{!G}) \lif (\OProv(\gn{\OProv(\gn{!G})}) \lif \OProv(\gn{\lfalse})) \ollabel{G2-6}\\
+  & \qquad\text{\olref{G2-5}, શરત P2 અને તર્ક પરથી} \notag\\
+& \OProv(\gn{!G}) \lif
+  \OProv(\gn{\OProv(\gn{!G})}) \ollabel{G2-7}\\
+   & \qquad\text{શરત P3 પરથી} \notag\\
+& \OProv(\gn{!G}) \lif \OProv(\gn{\lfalse}) \ollabel{G2-8}\\
+  & \qquad \text{\olref{G2-6}, \olref{G2-7} અને તર્ક પરથી}\notag\\
+& \OCon \lif \lnot \OProv(\gn{!G}) \ollabel{G2-9}\\
+  & \qquad\text{\olref{G2-8}નું પ્રતિધનાત્મક રૂપ અને $\OCon \ident \lnot \OProv(\gn{\lfalse})$ પરથી}\notag \\
+& \OCon \lif !G \notag\\
+  & \qquad\text{\olref{G2-1}, \olref{G2-9} અને તર્ક પરથી}\notag
+\end{align}
+ઉપર તર્કનો ઉપયોગ માત્ર વિધાનતર્કની પ્રાથમિક હકીકતો માટે છે. દાખલા તરીકે, \olref{G2-3}માં $\Proves \lnot!A \liff (!A\lif\lfalse)$ વપરાય છે; અને \olref{G2-8}માં $!A \lif (!B \lif !C), !A \lif !B \Proves !A \lif !C$ વપરાય છે. \olref{G2-5} અને \olref{G2-6}માં શરત~P2નો ઉપયોગ તેના ઉદાહરણો $\OProv(\gn{!A \lif !B}) \lif (\OProv(\gn{!A}) \lif \OProv(\gn{!B}))$ પર આધાર રાખે છે. પહેલા ઉદાહરણમાં $!A \ident !G$ અને $!B \ident \OProv(\gn{!G}) \lif \lfalse$ છે; બીજામાં $!A \ident \OProv(\gn{!G})$ અને $!B \ident \lfalse$ છે.
+\sourcecorrection{OLINC-047}{સ્થિર અંગ્રેજી મૂળની છેલ્લી સમજણમાં બીજા ઉદાહરણ માટે $\OProv(\gn{G})$ છે, જ્યારે ઉપરની દલીલ તથા પહેલા ઉદાહરણમાં વાક્ય $!G$ છે. અહીં $\OProv(\gn{!G})$ રાખ્યું છે.}
+
+બીજા અપૂર્ણતા પ્રમેયનું વધુ અમૂર્ત સ્વરૂપ આ છે:
+
+\begin{thm}
+\ollabel{thm:second-incompleteness-gen}
+$\Th{T}$ એ $\Th{Q}$નું કોઈ સુસંગત, !!{axiomatized} વિસ્તરણ હોય અને $\OProv[\Th{T}](y)$ એ $\Th{T}$ માટે !!{derivability} શરતો P1--P3 સંતોષતું કોઈ સૂત્ર હોય. તો $\Th{T}$ એ $\OCon[\Th{T}]$ને !!{derive} કરતું નથી.
+\end{thm}
+\sourcecorrection{OLINC-048}{સ્થિર અંગ્રેજી મૂળમાં છેલ્લે $\OCon[T]$ છે. આ પ્રમેય અને અગાઉની વ્યાખ્યા સાથે સુસંગત સિદ્ધાંત-ચિહ્ન $\OCon[\Th{T}]$ રાખ્યું છે.}
+
+\begin{prob}
+બતાવો કે $\Th{PA}$ એ $!G_{\Th{PA}} \lif \OCon[\Th{PA}]$ને !!{derive} કરે છે.
+\end{prob}
+
+\begin{digress}
+આમાંથી બોધ એ મળે છે કે ગણિતનો કોઈપણ ``વાજબી'' સુસંગત સિદ્ધાંત પોતાની સુસંગતતાનું વિધાન !!{derive} કરી શકતો નથી. માનો કે $\Th{T}$ એ ગણિતનો એવો સિદ્ધાંત છે જેમાં $\Th{Q}$ તથા હિલ્બર્ટની ``સાન્તવાદી'' દલીલો (જેનો અર્થ જે કંઈ હોય તે) સામેલ છે. તો આખો $\Th{T}$ એ $\Th{T}$નું સુસંગતતાનું વિધાન !!{derive} કરી શકતો નથી; તેથી તેની સાન્તવાદી ભાગ-રચના પણ $\Th{T}$નું એ વિધાન !!{derive} કરી શકતી નથી. આ અર્થમાં ``આખા ગણિત'' માટે સાન્તવાદી સુસંગતતા-સાબિતી હોઈ શકતી નથી.
+
+``સાન્તવાદી'' શબ્દનો અર્થ સમજવામાં થોડો અવકાશ છે. ગોડેલે ૧૯૩૧ના લેખમાં એવી શક્યતા સ્વીકારી હતી કે જેને આપણે ``સાન્તવાદી'' ગણીએ તે હિલ્બર્ટ ઔપચારિક કરવા માગતા હતા તે પ્રકારના ગણિતની બહાર હોઈ શકે. પરંતુ ગોડેલ અહીં ઉદાર હતા: આજે સાન્તવાદી કહેવા યોગ્ય, છતાં દાખલા તરીકે પસંદગીના સ્વયંસિદ્ધિ સાથેના ઝર્મેલો--ફ્રેન્કેલ ગણસિદ્ધાંત $\Th{ZFC}$માં ઔપચારિક ન કરી શકાય એવું કંઈ શોધવું મુશ્કેલ છે.
+\end{digress}
+
+\end{document}

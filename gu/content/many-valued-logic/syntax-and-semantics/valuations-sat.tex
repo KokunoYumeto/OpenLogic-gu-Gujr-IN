@@ -1,0 +1,48 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: valuations-sat
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{val}
+
+\olsection{\usetoken{P}{valuation} અને સંતોષ}
+
+\begin{defn}[!!^{valuation}s]
+$V$ સત્યમૂલ્યોનો ગણ હોય. $\Lang{L}$ માટે $V$માં મૂલ્યો ધરાવતું
+\emph{!!{valuation}} એ ભાષાના !!{propositional variable}sને $V$નો
+!!a{element} નિયુક્ત કરતું વિધેય~$\pAssign{v}$ છે; એટલે કે,
+$\pAssign{v} \colon \PVar \to V$.
+\end{defn}
+
+\begin{defn}\ollabel{defn:pValue}
+બહુમૂલ્ય તર્કશાસ્ત્ર~$\Log L$ના સત્યમૂલ્યોના ગણ~$V$માં મૂલ્યો
+ધરાવતું !!a{valuation}~$\pAssign{v}$ આપેલું હોય, ત્યારે મૂલ્યાંકન
+વિધેય $\pValue{v} \colon \Frm[L] \to V$ને નીચે પ્રમાણે અનુમાનાત્મક
+રીતે વ્યાખ્યાયિત કરો:
+  \begin{enumerate}
+    \item $\pValue{v}(\Obj p_n) = \pAssign{v}(\Obj p_n)$;
+    \item જો $\star$ એ $0$-સ્થાનીય સંયોજક હોય, તો $\pValue{v}(\star)  = \tf{\star}[\Log L]$;
+    \item જો $\star$ એ $n$-સ્થાનીય સંયોજક હોય, તો
+    \[
+      \pValue{v}(\star(!A_1, \dots, !A_n)) = \tf{\star}[\Log L]
+      (\pValue{v}(!A_1), \dots, \pValue{v}(!A_n)).
+    \]
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}[સંતોષ]
+\ollabel{defn:satisfaction} !!{formula}~$!A$નો !!a{valuation}~$\pAssign{v}$
+વડે \emph{સંતોષ} થાય છે, $\pSat{v}{!A}[\Log L]$, ત્યારે જ જ્યારે
+$\pValue{v}(!A)[\Log L] \in V^+$ હોય; અહીં $V^+$ એ~$\Log L$ના
+નિર્દિષ્ટ સત્યમૂલ્યોનો ગણ છે.
+
+``$\pSat{v}{!A}[\Log L]$ નથી'' એવો અર્થ દર્શાવવા આપણે
+$\pSat/{v}{!A}[\Log L]$ લખીએ છીએ. જો $\Gamma$ !!{formula}sનો ગણ હોય, તો
+દરેક~$!A \in \Gamma$ માટે $\pSat{v}{!A}[\Log L]$ હોય ત્યારે જ
+$\pSat{v}{\Gamma}[\Log L]$.
+\end{defn}
+
+\end{document}

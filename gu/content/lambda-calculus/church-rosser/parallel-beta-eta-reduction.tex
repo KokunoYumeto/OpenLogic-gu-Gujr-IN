@@ -1,0 +1,155 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-eta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pbe}
+
+\olsection{સમાંતર $\beta\eta$-લઘુકરણ}
+
+આ વિભાગમાં $\beta\eta$-લઘુકરણને અનુરૂપ સમાંતર
+$\beta\eta$-લઘુકરણ માટે ચર્ચ--રોસર ગુણધર્મ
+સાબિત કરવાનો હેતુ છે.
+
+\begin{defn}[સમાંતર $\beta\eta$-લઘુકરણ, $\beredpar$] \ollabel{defn:beredpar}
+  પદો પરનું \emph{સમાંતર $\beta\eta$-લઘુકરણ}
+  ($\beredpar$) આગમનથી આ રીતે વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+    \item \ollabel{defn:beredpar1} $x \beredpar x$.
+    \item \ollabel{defn:beredpar2} જો $N \beredpar N'$,
+      તો $\lambd[x][N] \beredpar \lambd[x][N']$.
+      \sourcecorrection{OLLAM-039}{સ્થિર અંગ્રેજી મૂળ
+      આ અમૂર્તીકરણ-નિયમમાં $N \xrightarrow{\beta} N'$
+      લખે છે; પછીની સ્વવાચકતા અને આગમનાત્મક
+      સાબિતીઓ માટે $N \beredpar N'$ જરૂરી છે.
+      અગાઉના સમાંતર $\beta$-નિયમની જેમ અહીં સંબંધ
+      સુધાર્યો છે.}
+    \item \ollabel{defn:beredpar3} જો $P \beredpar P'$ અને
+      $Q \beredpar Q'$, તો $PQ \beredpar P'Q'$.
+    \item \ollabel{defn:beredpar4} જો $N \beredpar N'$ અને
+      $Q \beredpar Q'$, તો
+      $(\lambd[x][N])Q \beredpar \Subst{N'}{Q'}{x}$.
+    \item \ollabel{defn:beredpar5} જો $N \beredpar N'$,
+      તો $\lambd[x][Nx] \beredpar N'$, જો
+      $x \notin FV(N)$.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\ollabel{thm:refl}
+  $M \beredpar M$.
+\end{thm}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pbe]{thm:refl} સાબિત કરો.
+\end{prob}
+
+\begin{defn}[$\beta\eta$-પૂર્ણ વિકાસ]\ollabel{defn:becd}
+  $M$નો \emph{$\beta\eta$-પૂર્ણ વિકાસ}~$\becd{M}$
+  નીચે મુજબ વ્યાખ્યાયિત થાય છે:
+  \begin{align}
+    \becd{x} &= x \ollabel{defn:becd1} \\
+    \becd{(\lambd[x][N])} &= \lambd[x][\becd{N}] \ollabel{defn:becd2}\\
+    \becd{(PQ)} &= \becd{P}\becd{Q} && \text{જો $P$ એ $\lambd$-અમૂર્તીકરણ ન હોય}
+    \ollabel{defn:becd3} \\
+    \becd{((\lambd[x][N])Q)} &= \Subst{\becd{N}}{\becd{Q}}{x}
+                             \ollabel{defn:becd4} \\
+    \becd{(\lambd[x][Nx])} &= \becd{N} \ollabel{defn:becd5} & \text{જો $x
+                                                      \notin FV(N)$}
+  \end{align}
+  પાંચમી કલમ લાગુ પડતી હોય ત્યારે તેને બીજી કલમથી
+  પહેલાં લાગુ કરવાની છે; બીજી કલમ બાકી અમૂર્તીકરણો
+  માટે છે. નહિ તો એક જ $\eta$-સંકોચ્ય પદને બંને
+  કલમો જુદાં મૂલ્યો આપે.
+  \sourcecorrection{OLLAM-040}{સ્થિર અંગ્રેજી મૂળની
+  બીજી કલમ દરેક અમૂર્તીકરણ માટે છે, જ્યારે પાંચમી
+  કલમ કેટલાક અમૂર્તીકરણો માટે જુદું પરિણામ આપે છે.
+  આથી વ્યાખ્યા પરસ્પર આવરી લેતી અને અસંગત બને છે.
+  અહીં પાંચમી કલમને પ્રાથમિકતા આપી બીજી કલમને
+  બાકી કિસ્સાઓ સુધી મર્યાદિત કરી છે; આ પસંદગીની
+  અનુરૂપ સાબિતી આગળ હજી જરૂરી છે.}
+\end{defn}
+
+\begin{lem}\ollabel{lem:comp}
+  $M \beredpar M'$ અને $R \beredpar R'$ હોય તો
+  $\Subst{M}{R}{y} \beredpar
+  \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  $M \beredpar M'$ની !!{derivation} પર આગમનથી.
+
+  પહેલા ચાર કિસ્સા \olref[pb]{lem:comp} જેવા છે;
+  ત્યાં નોંધાયેલો સ્થાનાપન્ન-સંયોજનનો સાબિતી-ગાળો
+  અહીં પણ રહે છે. છેલ્લો નિયમ
+  \olref{defn:beredpar5} હોય તો
+  $M$ એ $\lambd[x][Nx]$ અને $M'$ એ $N'$, કોઈક
+  $x$ અને~$N'$ માટે, જ્યાં $x \notin FV(N)$ અને
+  $N \beredpar N'$. બતાવવું છે કે
+  $\Subst{(\lambd[x][Nx])}{R}{y} \beredpar
+  \Subst{N'}{R'}{y}$. $x$ને $y$, $R$ અને~$R'$થી
+  તાજો પસંદ કરીએ તો જરૂરી દાવો
+  $\lambd[x][\Subst{N}{R}{y} x] \beredpar
+  \Subst{N'}{R'}{y}$ બને છે. અહીં
+  $x \notin FV(\Subst{N}{R}{y})$ પણ છે.
+  તેથી આગમનની ધારણા અને
+  \olref{defn:beredpar}\olref{defn:beredpar5}
+  લાગુ પડે છે.
+  \sourcecorrection{OLLAM-041}{સ્થિર અંગ્રેજી મૂળ
+  $\eta$-કિસ્સામાં સ્થાનાપન્ન પછીનો બાંધનાર~$x$
+  તાજો રહે છે એમ કોઈ શરત વિના માને છે. વર્ગના
+  પ્રતિનિધિમાં~$x$ને $y$, $R$ અને~$R'$થી તાજો
+  પસંદ કરીને જ પાંચમો નિયમ લગાડી શકાય. પહેલા
+  ચાર કિસ્સા પણ \olref[pb]{lem:comp}ના અગાઉના
+  ખુલ્લા સંયોજન-ગાળાને વારસામાં લે છે.}
+\end{proof}
+
+\begin{lem}\ollabel{lem:cont}
+  $M \beredpar M'$ હોય તો
+  $M' \beredpar \becd{M}$.
+\end{lem}
+
+\begin{proof}
+  $M \beredpar M'$ની !!{derivation} પર આગમનથી.
+
+  સ્થિર મૂળ પહેલા ચાર કિસ્સા
+  \olref[pb]{lem:cont} જેવા કહે છે. પરંતુ
+  $M$ એ $\eta$-સંકોચ્ય અમૂર્તીકરણ હોય ત્યારે
+  ઉપર પ્રાથમિકતા આપેલી પાંચમી કલમથી
+  $\becd{M}$ નક્કી થાય છે; સામાન્ય
+  અમૂર્તીકરણ-કિસ્સાની જૂની દલીલ એ પરિણામ સુધી
+  પહોંચે છે એવું અહીં સાબિત થયું નથી.
+  \sourcecorrection{OLLAM-042}{સ્થિર અંગ્રેજી મૂળની
+  પૂર્ણ-વિકાસ વ્યાખ્યાના બીજા અને પાંચમા નિયમો
+  અથડાય છે. પાંચમાને પ્રાથમિકતા આપ્યા પછી
+  અમૂર્તીકરણ હેઠળના સમાંતર પગલાં માટે સંપૂર્ણ
+  વિકાસ સુધીનું એક વધુ પગલું મળે છે તે અલગ
+  સાબિત કરવું પડે; ``પહેલા ચાર કિસ્સા અગાઉ જેવા''
+  કહેવું પૂરતું નથી. આ સાબિતી-ગાળો ખુલ્લો છે.}
+  છેલ્લો નિયમ \olref{defn:beredpar5} હોય તો
+  $M$ એ $\lambd[x][Nx]$ અને $M'$ એ $N'$, કોઈક
+  $x$, $N$, $N'$ માટે, જ્યાં $x \notin FV(N)$ અને
+  $N \beredpar N'$. બતાવવું છે કે
+  $N' \beredpar \becd{(\lambd[x][Nx])}$,
+  એટલે પાંચમી કલમ પ્રમાણે
+  $N' \beredpar \becd{N}$. આ આગમનની ધારણાથી
+  તરત મળે છે, પરંતુ ઉપરનો અમૂર્તીકરણ-કિસ્સો
+  હજી ખુલ્લો રહે છે.
+\end{proof}
+
+\begin{thm}\ollabel{thm:cr}
+  $\beredpar$ ચર્ચ--રોસર ગુણધર્મ ધરાવે છે.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:cont}માંથી આ પરિણામ મળે, જો તેની
+  ઉપર નોંધેલી સાબિતી-ખામી પૂરી કરવામાં આવે.
+\end{proof}
+
+\end{document}

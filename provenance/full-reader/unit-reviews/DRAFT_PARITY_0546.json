@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0546",
+  "checked_at_utc": "2026-09-28T00:23:11.238815+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0546 separation-bounded closure and arbitrary intersections; state-only draft",
+  "report": {
+    "unit_id": "OLP-0546",
+    "source_path": "content/set-theory/z/arbintersections.tex",
+    "source_sha256": "866857905e11e5f329a248326ba04ba14f293b388bd8e3573caaf05fb2b7d56d",
+    "draft_path": "private-state\\work\\batch044_draft\\arbintersections.tex",
+    "draft_sha256": "4485faf4731e1b69080a4216360a7265d02e1a8781ef53fd5c7f54b3e15ad799",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 28,
+    "target_math_spans_after_corrections": 28,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 235,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-algebra.tex",
+        "sha256": "8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe",
+        "terms": [
+          "સંવરણ",
+          "સંવૃત",
+          "f \\colon A \\to A"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\separation.tex",
+        "sha256": "b69123900add155945875e833da784adb7a6719fce6464f0db893bb2ddd0c1a8",
+        "terms": [
+          "પૃથક્કરણ",
+          "સહજ ગણરચના",
+          "\\ollabel{prop:intersectionsexist}"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The starred biconditional is counted and compared as a complete equation-environment formula, rather than left outside math parity.",
+      "The witness phi(S) is essential: without any satisfying set, the right side of (*) holds for every x and asks for a universal set.",
+      "For the reverse implication of (*), instantiate the universal condition at the fixed witness S to obtain x in S before applying Separation.",
+      "The closure instance inherits the earlier explicit endofunction assumption f:A->A in OLINF-001. This makes ran(f) union {o} an f-closed witness; no new unconditional claim for arbitrary partial functions is introduced.",
+      "Inactive source-proof comments remain inactive, including the source's lowercase c; it is not silently treated as visible corrected mathematics."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

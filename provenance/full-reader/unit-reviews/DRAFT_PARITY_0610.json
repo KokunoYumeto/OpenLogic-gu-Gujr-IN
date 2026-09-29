@@ -1,0 +1,84 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0610",
+  "checked_at_utc": "2026-09-28T14:33:56.013954+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0610 reading compressed proofs of the set absorption law; state-only draft",
+  "report": {
+    "unit_id": "OLP-0610",
+    "source_path": "content/methods/proofs/reading-proofs.tex",
+    "source_sha256": "e5146120b8fd42d544e1e6e51fdcad7fd3a0c721a54ae320692c4fd4277fec33",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-reading-proofs.tex",
+    "draft_sha256": "8c007ad27f590cf3bdf94902122c68bebb261d17abc8aea888dc59215bcc1eff",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 85,
+    "target_math_spans_after_corrections": 85,
+    "glossary_tokens": 8,
+    "source_correction_notes": [
+      "OLMD-161",
+      "OLMD-162"
+    ],
+    "source_detector_ascii_tokens": 541,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "(b) $A \\cap (A \\cup B)\n  \\subseteq A$",
+        "(b) $A \\subseteq A \\cap (A \\cup B)$"
+      ],
+      [
+        "$z\n  \\in A \\cup B)$",
+        "$z\n  \\in A \\cup B$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\union.tex",
+        "sha256": "8cf83b4f062e7d0efa953119a6a5461180d1fc433271318394aa88b8745d203f",
+        "terms": [
+          "યોગગણ",
+          "છેદગણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-example-1.tex",
+        "sha256": "b8cbe2d18a2460c1e92d735bfbbf1964db4da5ddd9efbd570d5c1c3c25bfd2ed",
+        "terms": [
+          "પૂર્વધારણા",
+          "વ્યાખ્યા",
+          "બંને"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The absorption identity is A intersection (A union B)=A for arbitrary A and B. The compact proof establishes both inclusions and is followed by two explanatory quotations.",
+      "The expanded proof is deliberately pedagogical: bracketed explanations spell out the definition of equality, subset and intersection while keeping the original short proof steps.",
+      "The source repeats the forward inclusion as part (b) in the expanded equality proof; the reverse inclusion is visibly repaired to A subseteq A intersection (A union B).",
+      "One extra closing parenthesis in the final union-membership expression is visibly removed.",
+      "The final exercise asks readers to expand the proof of A union (A intersection B)=A and name inference patterns, reasons and definitions; the supplied short proof remains short.",
+      "શોષણ has only general-language lexical support from a native Gujarati encyclopedic article about physical absorption. No directly consulted native mathematical attestation for this set-law heading is claimed."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "(ii)",
+        "count": 3,
+        "reason": "Roman-numeral pedagogical substep retained to match the paired (i)/(ii) proof explanation."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [
+      {
+        "path": "work/LEXICAL_CONSULTATION_045_0610.json",
+        "sha256": "2b9f96f9f5cd56e3bc71c8e773ea43403db6ca216b76afba66ab14f111cafdd9"
+      }
+    ],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

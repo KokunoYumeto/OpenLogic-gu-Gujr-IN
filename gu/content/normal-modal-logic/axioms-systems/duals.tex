@@ -1,0 +1,41 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: duals
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{dua}
+
+\olsection{દ્વૈત \usetoken{P}{formula}}
+
+\begin{defn}\ollabel{def:duals}
+  !!{formula}s \Ax{T}, \Ax{B}, \Ax{4} અને \Ax{5} દરેકનું
+  \emph{દ્વૈત} છે; તેને નીચેની જેમ અધોલિખિત હીરાથી દર્શાવીએ છીએ:
+  \begin{align}
+    \tag{\Ax{T_\Diamond}} p & \lif \Diamond p\\
+    \tag{\Ax{B_\Diamond}} \Diamond\Box p & \lif p\\
+    \tag{\Ax{4_\Diamond}} \Diamond\Diamond p & \lif \Diamond p\\
+    \tag{\Ax{5_\Diamond}} \Diamond\Box p & \lif \Box p
+    \end{align}
+\end{defn}
+
+ઉપરના દરેક દ્વૈત !!{formula}ને અનુરૂપ !!{formula}માંથી મેળવવા પહેલાં
+$p$ના સ્થાને $\lnot p$ મૂકો, પછી પ્રતિપક્ષી વિધાન લો, પછી
+$\lnot\Box\lnot$ના સ્થાને $\Diamond$ અને $\lnot\Diamond\lnot$ના
+સ્થાને~$\Box$ મૂકો. આ અર્થમાં \Ax{D}, એટલે કે
+$\Box!A \lif \Diamond!A$, પોતાનું જ દ્વૈત છે.
+
+\begin{prop}\ollabel{prop:dualsys}
+  \olref[nml][prf][dua]{def:duals}માંના દરેક !!{formula}~$!A$ માટે:
+  $\Log{K}!A = \Log{K}!A_{\Diamond}$.
+\end{prop}
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+\begin{prob}
+  \olref[nml][prf][dua]{prop:dualsys} સાબિત કરો.
+\end{prob}
+
+\end{document}

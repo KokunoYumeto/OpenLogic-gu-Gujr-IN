@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0603",
+  "checked_at_utc": "2026-09-28T14:09:18.499822+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0603 informal mathematical proofs, rigor, result types and hypotheses; state-only draft",
+  "report": {
+    "unit_id": "OLP-0603",
+    "source_path": "content/methods/proofs/introduction.tex",
+    "source_sha256": "ae06d0471d8f4c8565a11f9dbd7bb77513f837bb495032b6356cafbaa319ad83",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-introduction.tex",
+    "draft_sha256": "dc70f7cf288048418dd39f075748e30c2b87b33c531a1a1dc7f9018520c3d688",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 6,
+    "target_math_spans_after_corrections": 6,
+    "glossary_tokens": 7,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 516,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\propositional-logic\\syntax-and-semantics\\formulas.tex",
+        "sha256": "759ce2b24633dbdbbf798103b980025599bc741377792cad68c1f069a7c66701",
+        "terms": [
+          "વિધાનાત્મક",
+          "!!a{formula}"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\beyond\\intuitionistic-logic.tex",
+        "sha256": "fd369c9e308320685df49c6027c50adbd26fccb849db6a8246ca5405761cf33a",
+        "terms": [
+          "સાબિતી",
+          "પુરાવા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\methods.tex",
+        "sha256": "100e4087c74e7f5be19ea5c63e733128e5b26889be7e960bc394ce4ea2fa6ebf",
+        "terms": [
+          "સાબિતીઓ કેવી રીતે લખવી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Formal derivation systems are distinguished from ordinary-language metatheoretic proofs; English in the source is explicitly localized to Gujarati while retained as the source reference.",
+      "The prime example says every prime other than two is odd; the rigor paragraph requires every step and its actual assumptions, definitions and inferences to be justified.",
+      "Proposition, theorem, lemma and corollary remain four distinct result labels; lemma can be important itself; corollary follows easily from another result.",
+      "The two sample hypotheses and all six math spans remain exact, and arbitrary conditional B implies C is restricted to conditional formulas."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

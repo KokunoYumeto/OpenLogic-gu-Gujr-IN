@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0697",
+  "checked_at_utc": "2026-09-28T23:08:18.506554+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0697 Contexts, types and typed lambda calculus; state-only draft",
+  "report": {
+    "unit_id": "OLP-0697",
+    "source_path": "content/proof-theory/propositions-as-types/types.tex",
+    "source_sha256": "8e3fa53eb78ebc918ee94e0eead7724d931e5a27b75d714bca1db80f04ba9152",
+    "draft_path": "private-state\\work\\batch044_draft\\types.tex",
+    "draft_sha256": "22d5f23b06515491c9cd99d99730de206da57d69e434452b6b2166907ac8b3b8",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 119,
+    "target_math_spans_after_corrections": 119,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-297",
+      "OLMD-298",
+      "OLMD-299"
+    ],
+    "source_detector_ascii_tokens": 542,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\inj[!B]{i}{!M}$",
+        "$\\inj[!B]{i}{N}$"
+      ],
+      [
+        "$\\dcase{M}{x_1}{N_1}{x_2}{N_2}$",
+        "$\\dcase{M}{x}{N_1}{y}{N_2}$"
+      ],
+      [
+        "\\text{ or }",
+        "\\text{ અથવા }"
+      ],
+      [
+        "\\text{ if }",
+        "\\text{ જો }"
+      ],
+      [
+        "\\text{ if\n}",
+        "\\text{ જો\n}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-terms.tex",
+        "sha256": "04a94a8e5015bcd50bd4827a2b6e0e46a9781ceb8422bf643e107220a74c6a9c",
+        "terms": [
+          "સાબિતી-પદ"
+        ]
+      },
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "આંશિક સંગણનીય",
+          "સંગણના"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{ or ",
+        "target": "\\text{ અથવા ",
+        "count": 1
+      },
+      {
+        "source": "\\text{ if",
+        "target": "\\text{ જો",
+        "count": 2
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

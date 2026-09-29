@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0545",
+  "checked_at_utc": "2026-09-28T00:23:09.627813+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0545 choosing natural-number set representations; state-only draft",
+  "report": {
+    "unit_id": "OLP-0545",
+    "source_path": "content/set-theory/z/nat.tex",
+    "source_sha256": "33f3b77912ba9c7217893e6a0e9f59c16b2ca51e5b0652f99850bed6aeb8f12c",
+    "draft_path": "private-state\\work\\batch044_draft\\nat.tex",
+    "draft_sha256": "4e495c69c855f1119dfde847043e3778167382d8bc5962fa94d61815942d7efe",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 11,
+    "target_math_spans_after_corrections": 11,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 299,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekind-algebra.tex",
+        "sha256": "8fa27f1cf0441b5e33e791dc1db162a62542a908ab4a96d1b537e9b8c495f8fe",
+        "terms": [
+          "ડેડેકિન્ડ બીજગણિત",
+          "અનુગામી વિધેય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\infinite\\dedekinds-proof.tex",
+        "sha256": "c22dc425e4688da45ff2573876a7e4072e493f2cf411436fdb9567a46fa031d4",
+        "terms": [
+          "અવેજ",
+          "સંરચનાવાદીઓ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\relations-as-sets.tex",
+        "sha256": "c687a37a6ab57f94571a00635c60c61e414efd41c83d344133c2f25d0de69495",
+        "terms": [
+          "ક્રમયુક્ત જોડ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The singleton successor map is injective by Extensionality even without Foundation; the preceding arbitrary-I successor issue does not transfer to this map.",
+      "The inactive opening source comment is copied as an exact raw block; it contributes no visible English prose.",
+      "The claim about always-available simulation alternatives is the source's philosophical assertion, not an independently proved metatheorem.",
+      "The word transfinite is rendered transparently as અનંતાતીત and will be reviewed against its later formal use."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

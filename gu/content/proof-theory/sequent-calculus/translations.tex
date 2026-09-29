@@ -1,0 +1,111 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{tr}
+
+\olsection{\Log{G1c} અને \Log{G3c} વચ્ચેનું રૂપાંતરણ}
+
+અગાઉ કહ્યું હતું કે \Log{G1c} અને \Log{G3c} બંને
+શાસ્ત્રીય તર્ક માટે યથાર્થ અને પૂર્ણ છે: દરેક !!{structure}માં
+સાચા હોય તે અને ફક્ત તે જ સિક્વન્ટો બંને તંત્રમાં સાબિત થાય છે.
+ખાસ કરીને બંને એક જ સિક્વન્ટો સાબિત કરે છે. હવે આ હકીકતને
+યથાર્થતા અને પૂર્ણતાનાં પ્રમેયોમાંથી પસાર થયા વિના,
+ફક્ત સાબિતી-સિદ્ધાંત વડે સાબિત કરી શકીએ.
+આવી સાબિતી \Log{G1c}ની !!{proof}ને \Log{G3c}ની
+!!{proof}માં અને ઊલટી દિશામાં \emph{રૂપાંતરણો} આપે છે.
+
+\begin{prop}
+જો $\Log{G1c} \Proves S$ હોય, તો $\Log{G3c} \Proves S$.
+\end{prop}
+
+\begin{proof}
+  બતાવીએ કે જો $\pi$ એ \Log{G1c}માં !!a{proof} હોય, તો
+  \Log{G3c}માં $S$ની !!a{proof}~$\pi'$ છે.
+  આ માટે $n = \pheight{\pi}$ પર આગમન વાપરીએ.
+
+  જો $n = 0$ હોય, તો $\pi$ સ્વયંસિદ્ધ છે.
+  સ્વયંસિદ્ધ $\lfalse \Sequent
+  \quad$ એ \Log{G3c}નું પણ સ્વયંસિદ્ધ છે:
+  સંદર્ભ $\Gamma,
+  \Delta$ ખાલી લો. \Log{G1c}માં કોઈ પણ $!A$ માટે,
+  ફક્ત પરમાણ્વીય માટે નહીં, $!A \Sequent !A$ સ્વયંસિદ્ધ માન્ય છે.
+  પરંતુ \olref[ex]{prop:G3c-axioms}માં સાબિત કર્યું છે કે
+  આવા બધા સિક્વન્ટો \Log{G3c}માં !!{provable} છે.
+  \sourcecorrection{OLMD-340}{મૂળ અહીં કોઈ પણ સૂત્રના ઓળખ-સિક્વન્ટને સ્વયંસિદ્ધ તરીકે મંજૂરી આપતું તંત્ર G3c કહે છે. આ G1cની શરત છે; G3cમાં પરમાણ્વીય ઓળખ-સિક્વન્ટો જ સ્વયંસિદ્ધ છે, જ્યારે સામાન્ય ઓળખ-સિક્વન્ટો નિષ્પન્ન થાય છે. તંત્રનું નામ તે મુજબ સુધાર્યું છે.}
+
+  જો $n>0$ હોય, તો $\pi$નો અંત નિયમ~$R$માં થાય છે.
+  આગમનની ધારણાથી તે નિયમના આધારોની !!{proof}
+  \Log{G3c}માં મળે છે, એટલે કે તાત્કાલિક ઉપ-!!{proof}નાં
+  \Log{G3c}માં રૂપાંતરણો મળે છે.
+  જો નિયમ~$R$ એ \Log{G3c}નો પણ નિયમ હોય તો
+  આધારોની રૂપાંતરિત !!{proof} પર તે નિયમ લાગુ પાડીએ.
+  જે નિયમો \Log{G3c}માં એ જ સ્વરૂપે નથી, તેમને
+  સ્વીકાર્ય નિયમો અને વધારાનાં શિથિલીકરણથી અનુકરિત કરીએ.
+  જો નિયમ~$R$ એ $\LeftR{\land}$ અથવા $\RightR{\lor}$
+  હોય, તો \olref[adm]{prop:weak-G3c-adm} મુજબ
+  ચૂકી ગયેલું સક્રિય સૂત્ર ઉમેર્યા પછી સંબંધિત તાર્કિક નિયમ વાપરીએ.
+  શિથિલીકરણના નિયમ માટે \olref[adm]{prop:weak-G3c-adm}
+  અને સંકોચનના નિયમ માટે \olref[inv]{prop:G3c-cont-adm} વાપરીએ.
+  \sourcecorrection{OLMD-341}{મૂળનો સંદર્ભ વિરુદ્ધ દિશાના નિયમ-નિષ્પન્નન અંગે છે. યોગ્ય દિશામાં, સંયોજનના ડાબા નિયમ માટે આધારના પૂર્વાંગમાં ચૂકી ગયેલું બીજું જોડક-સૂત્ર ઉમેરો અને પછી G3cનો સંયોજન-ડાબો નિયમ વાપરો. વિકલ્પના જમણા નિયમ માટે ઉત્તરાંગમાં ચૂકી ગયેલું બીજું વિકલ્પક ઉમેરો અને પછી G3cનો વિકલ્પ-જમણો નિયમ વાપરો. તેથી અહીં સ્વીકાર્ય શિથિલીકરણના પરિણામનો સંદર્ભ આપ્યો છે.}
+  \sourcecorrection{OLMD-342}{મૂળ બંને દિશાની ચર્ચામાં બે પરિમાણક-નિયમોના તફાવતને ચૂકી જાય છે. G1cથી G3cમાં સર્વપરિમાણક-ડાબા આધારના પૂર્વાંગમાં મુખ્ય સર્વપરિમાણિત સૂત્ર શિથિલીકરણથી ઉમેરો; અસ્તિત્વપરિમાણક-જમણા આધારના ઉત્તરાંગમાં મુખ્ય અસ્તિત્વપરિમાણિત સૂત્ર ઉમેરો. પછી સંબંધિત G3c નિયમ લાગુ પડે છે. ઊલટી દિશામાં, G3cના આધારમાં મુખ્ય સૂત્ર પહેલેથી જ હોવાથી G1cનો સંબંધિત પરિમાણક-નિયમ લાગુ કરતાં મુખ્ય સૂત્રની બે આવૃત્તિ મળે છે; સર્વપરિમાણક માટે ડાબું અને અસ્તિત્વપરિમાણક માટે જમણું સંકોચન વાપરો. બાકીના સામાન્ય નિયમો સીધા લાગુ પડે છે. આ પગલાં બંને આગમનોના ચૂકી ગયેલા કિસ્સાઓ પૂર્ણ કરે છે.}
+\end{proof}
+
+\begin{prop}
+જો $\Log{G3c} \Proves S$ હોય, તો $\Log{G1c} \Proves S$.
+\end{prop}
+
+\begin{proof}
+  ફરી $S$ની !!a{proof}~$\pi$ની !!{height} પર આગમન વાપરીએ.
+  \Log{G3c}નું દરેક સ્વયંસિદ્ધ \Log{G1c}માં કોઈ સ્વયંસિદ્ધ
+  તથા \LeftR{\Weakening} અને \RightR{\Weakening}ના
+  વારંવાર ઉપયોગથી !!{prove} કરી શકાય:
+  \[
+  \Axiom$!C \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter !C$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter \Delta, !C$
+  \DisplayProof
+\qquad
+  \Axiom$\lfalse \fCenter$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  જો $\pi$નો અંત નિયમ~$R$માં થાય, તો આગમનની ધારણાથી
+  આધારોની !!{proof} \Log{G1c}માં મળે છે.
+  બંને તંત્રમાં એકસરખો હોય તે નિયમ~$R$ આ !!{proof} પર સીધો લાગુ પડે છે.
+  \LeftR{\land} અને \RightR{\lor}ના સ્વરૂપો
+  \Log{G1c} અને \Log{G3c}માં જુદાં છે;
+  પરિમાણકના બે વધારાના કિસ્સા ઉપરની નોંધમાં સમજાવ્યા છે.
+  \Log{G3c}ના આ બે જોડક-નિયમો \Log{G1c}માં નીચે પ્રમાણે નિષ્પન્ન થાય છે:
+  \[
+  \Axiom$!A, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+\qquad
+  \Axiom$\Gamma \fCenter \Delta, !A, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !A \lor !B$
+  \RightLabel{\RightR{\Contraction}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+  \]
+  \sourcecorrection{OLMD-343}{મૂળના વિકલ્પ-જમણા વૃક્ષની વચલી પંક્તિમાં બે લગોલગ અલ્પવિરામ છે. સંદર્ભ અને બે મુખ્ય સૂત્ર-આવૃત્તિઓ વચ્ચે ફક્ત જરૂરી અલ્પવિરામ જાળવ્યો છે.}
+\end{proof}
+
+\end{document}

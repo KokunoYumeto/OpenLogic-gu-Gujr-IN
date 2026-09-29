@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0531",
+  "checked_at_utc": "2026-09-27T23:07:29.935070+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0531 extensionality; state-only draft",
+  "report": {
+    "unit_id": "OLP-0531",
+    "source_path": "content/set-theory/story/extensionality.tex",
+    "source_sha256": "d70f6b437cb7f29b4e9ef5bcc1ab66c3021ea6f57d1b2fdf5aaea5b51bdb81c9",
+    "draft_path": "private-state\\work\\batch044_draft\\extensionality.tex",
+    "draft_sha256": "be103783e4ba30e4118344fb25be3383732bda255321d36b38e47c01e08cf6b5",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 5,
+    "target_math_spans_after_corrections": 5,
+    "glossary_tokens": 3,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 141,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\models-theories\\set-theory.tex",
+        "sha256": "1144ae5c48a339eea92730b27846ad2a8f943db14c5c99fc1dae5c9a1d54ec48",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત સમાનતા",
+          "ગણસિદ્ધાંત"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\sets\\russells-paradox.tex",
+        "sha256": "6946b2ff400e46866f64e91253e6d319c83c04c43d182c4dc701bf870965c002",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત સમાનતાનો સિદ્ધાંત"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The axiom determines equality of existing sets; it does not assert a set for each property.",
+      "The conceptual defense of extensionality remains the source's philosophical argument."
+    ]
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

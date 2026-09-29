@@ -1,0 +1,46 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: formulas
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{fml}
+
+\olsection{\usetoken{P}{formula}}
+
+\begin{defn}[સૂત્ર]
+\ollabel{defn:formulas}
+વિધાનાત્મક ભાષા~$\Lang L$નાં \emph{!!{formula}s}નો
+ગણ~$\Frm[L]$ નીચે મુજબ અનુમાનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item દરેક !!{propositional variable}~$\Obj p_i$ આણ્વિક
+  !!{formula} છે.
+\item $\Lang L$નો દરેક $0$-સ્થાનીય સંયોજક
+  (વિધાનાત્મક અચલ) આણ્વિક !!{formula} છે.
+\item $\star$ એ $\Lang L$નો $n$-સ્થાનીય સંયોજક
+  હોય અને $!A_1$, \dots, $!A_n$ !!{formula}s હોય,
+  તો $\star(!A_1, \dots, !A_n)$ પણ !!a{formula} છે.
+\tagitem{limitClause}{આ સિવાય બીજું કંઈ !!a{formula} નથી.}{}
+\end{enumerate}
+$\star$ $1$-સ્થાનીય હોય તો $\star(!A_1)$ને ઘણી વાર
+માત્ર $\star !A_1$ લખીશું. $\star$ $2$-સ્થાનીય હોય તો
+$\star(!A_1,!A_2)$ને ઘણી વાર $(!A_1 \star !A_2)$
+લખીશું.
+\end{defn}
+
+હંમેશની જેમ, ઘણી વાર સૌથી બહારનાં કૌંસ ચૂપચાપ
+છોડી દઈશું.
+
+\begin{ex}
+  પ્રમાણભૂત ભાષા~$\Lang{L_0}$માં $\Obj p_1 \lif (\Obj p_1
+  \land \lnot \Obj p_2)$ એક સૂત્ર છે. ગુણન
+  તર્કશાસ્ત્રની ભાષામાં તેને $\Obj p_1 \lif (\Obj p_1 \odot
+  \lnot \Obj p_2)$ તરીકે લખાશે. ભાષામાં $1$-સ્થાનીય
+  $\triangle$ ઉમેરીએ તો $\triangle (\Obj p_1
+  \land \Obj p_2) \lif (\triangle \Obj p_1 \land \triangle \Obj p_2)$
+  જેવાં સૂત્રો પણ મળશે.
+\end{ex}
+
+\end{document}

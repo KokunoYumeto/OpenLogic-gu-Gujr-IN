@@ -1,0 +1,236 @@
+% Part: proof-theory
+% Chapter: proof-search
+% Section: tableaux
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{ps}{tab}
+
+\olsection{કોષ્ટક-વૃક્ષો}
+
+કોષ્ટક-વૃક્ષ તંત્રો સિક્વન્ટ-કલન સાથે નજીકનો સંબંધ ધરાવતાં
+!!{proof} તંત્રો છે. હાથથી અને સૉફ્ટવેરમાં બંને રીતે
+સાબિતી-શોધ માટે તે ખાસ અનુકૂળ છે. કોષ્ટક-વૃક્ષમાં
+સિક્વન્ટોનું વૃક્ષ બનાવવાને બદલે !!a{proof} એ
+!!{formula}sનું વૃક્ષ છે. જોકે સ્વાભાવિક નિગમનથી
+વિપરીત, તેના નિયમો સિક્વન્ટ-કલનના નિયમોને અનુસરે છે.
+કોષ્ટક-વૃક્ષની !!{proof} હકીકતમાં નિદર્શની સ્પષ્ટ શોધ
+છે. તેથી તેને ક્યારેક \emph{અર્થલક્ષી} કોષ્ટક-વૃક્ષ
+અથવા \emph{સત્ય-વૃક્ષ} પણ કહે છે.
+
+\emph{ચિહ્નિત} કોષ્ટક-વૃક્ષ ચિહ્નિત !!{formula}sનું
+વૃક્ષ છે; તે $\sFmla{\True}{!A}$ અથવા
+$\sFmla{\False}{!A}$ સ્વરૂપનાં હોઈ શકે.
+વૃક્ષો નીચેની દિશામાં વધે છે. શરૂઆતમાં જે
+!!{formula}s હોય છે તે આપણે શું !!{prove} કરવું છે
+તે નક્કી કરે છે. દાખલા તરીકે,
+$!A, !B \Sequent !C, !D$ સિક્વન્ટને !!{prove}
+કરવા માટે તે
+$\sFmla{\True}{!A}, \sFmla{\True}{!B},
+\sFmla{\False}{!C}, \sFmla{\False}{!D}$થી
+શરૂ થાય.
+\sourcecorrection{OLMD-278}{મૂળ ઉદાહરણમાં $!D$ને ભૂલથી સત્ય-ચિહ્ન અપાયું છે; તરત પછીનું ગદ્ય $!C$ અને $!D$ બંને અસત્ય રાખે છે, તેથી અહીં અસત્ય-ચિહ્ન કર્યું છે.}
+$!A$ અને $!B$ને સત્ય તથા $!C$ અને $!D$ને
+અસત્ય કરતી !!^a{structure} એ
+$!A, !B \Sequent !C, !D$ અપ્રામાણ્ય છે તે
+દર્શાવતી !!a{structure} છે.
+
+કોષ્ટક-વૃક્ષના પાન, એટલે સૌથી નીચેના શિરોબિંદુ,
+શાખા-વિસ્તારના નિયમોથી આગળ વધારી શકાય છે. આ
+નિયમો એ જ શાખામાં નવા શિરોબિંદુઓ ઉમેરે છે અથવા
+નીચે બે સમકક્ષ શિરોબિંદુઓ ઉમેરી શાખાને બે ભાગે
+વહેંચે છે. એક જ શાખામાં પાનની ઉપરના કોઈ પણ
+ચિહ્નિત !!{formula} પર નિયમ લાગુ થઈ શકે છે.
+શાસ્ત્રીય કોષ્ટક-વૃક્ષ તંત્ર \Log{Tc}ના
+શાખા-વિસ્તારના નિયમો \olref{tab:Tc}માં આપ્યા છે.
+
+\subfile{rules-Tc}
+
+જોઈ શકાય છે કે આ નિયમો \Log{G3c}ના નિયમો ઊલટા
+મૂકેલા છે. $\True$ અને $\False$ ચિહ્નો સૂચવે છે કે
+!!a{formula} સિક્વન્ટની અનુક્રમે ડાબી અને જમણી
+બાજુએ મુખ્ય સૂત્ર છે.
+
+કોષ્ટક-વૃક્ષની શાખામાં
+$\sFmla{\True}{!A}$ અને $\sFmla{\False}{!A}$
+બંને હોય, તો તે \emph{બંધ} છે. દરેક શાખા બંધ
+હોય, તો આખું કોષ્ટક-વૃક્ષ બંધ કહેવાય.
+દાખલા તરીકે,
+$!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
+(!A \lor !C)$ માટેનું આ બંધ કોષ્ટક-વૃક્ષ છે;
+તે $\sFmla{\True}{!A \lor (!B \land !C)}$
+અને $\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$થી
+શરૂ થાય છે:
+\sourcecorrection{OLMD-279}{મૂળમાં clause tableau લખાયું છે, પરંતુ દર્શાવેલા વૃક્ષની બધી શાખાઓ બંધ છે; અહીં બંધ કોષ્ટક-વૃક્ષ કર્યું છે.}
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}, checked
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+            [\sFmla{\True}{\formula{C}},
+              just={\TRule{\True}{\land}[3]}
+              [\sFmla{\False}{\formula{A}},
+                just={\TRule{\False}{\lor}[4]}
+                [\sFmla{\False}{\formula{B}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+              [\sFmla{\True}{\formula{C}},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\False}{\formula{A}},
+                  just={\TRule{\False}{\lor}[4]}
+                  [\sFmla{\False}{\formula{C}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+ખરાની નિશાનીઓ સૂચવે છે કે તેમની નીચેની બધી
+શાખાઓમાં સંબંધિત !!a{formula} પર નિયમ લાગુ
+કરી દેવાયો છે. $\otimes$ ચિહ્ન બંધ શાખા સૂચવે છે.
+નિયમોની પાછળની પંક્તિ-સંખ્યાઓ કયા ચિહ્નિત
+!!{formula}s પર નિયમ લાગુ કર્યો છે તે બતાવે છે,
+અર્થાત્ એ જ શાખામાં દર્શાવેલી પંક્તિ પરના
+!!{formula} પર.
+
+કોષ્ટક-વૃક્ષમાં સાબિતી-શોધ સરળ છે. કોષ્ટક-વૃક્ષ
+તબક્કાવાર બનાવીએ. તબક્કા~$0$એ શરૂઆતનાં
+!!{formula}s સૌથી ઉપર લખો. તબક્કા~$n+1$એ
+દરેક પાન માટે આ કરો: જે ચિહ્નિત સૂત્ર પર
+હજી ખરાની નિશાની નથી તેમાંથી સૌથી ઉપરનું
+પ્રથમ સૂત્ર શોધો. તેના પર શાખા-વિસ્તારનો નિયમ
+લાગુ કરો. એ ચિહ્નિત સૂત્ર ધરાવતી દરેક
+શાખામાં નિયમ લાગુ થઈ જાય, પછી તેના પર ખરાની
+નિશાની કરો. (ઉપરનું ઉદાહરણ આ અલ્ગોરિધમથી
+બનાવ્યું છે.)
+
+$\sFmla{\True}{\lforall}$ અને
+$\sFmla{\False}{\lexists}$ સ્વરૂપનાં ચિહ્નિત
+!!{formula}s પર કદી ખરાની નિશાની થતી નથી,
+એટલે તેમની વિશેષ સંભાળ લેવી પડે. તે હાજર હોય,
+તો $\TRule{\True}{\forall}$ અને
+$\TRule{\False}{\lexists}$ નિયમો દરેક લાગુ પડતા
+પદ માટે આખરે લાગુ થાય તેની ખાતરી કરવી પડે.
+દાખલા તરીકે, દરેક તબક્કે દરેક શાખાના આવાં બધાં
+સૂત્રો પર આ નિયમો લાગુ કરી શકાય છે
+(આ સ્વરૂપનું ન હોય એવા સૌથી ઉપરના ચિહ્નિત
+!!{formula} પર કામ કર્યા પછી). વાપરવાનું પદ
+$t$ એ શાખામાં પહેલેથી આવતાં !!{constant}s
+(અથવા કોઈ !!{constant} ન આવતો હોય તો
+$\Obj c_0$) અને શરૂઆતનાં !!{formula}sમાં
+આવતાં !!{function}s વડે બની શકે એવું પ્રથમ
+પદ~$t$ છે, જેના માટે સંબંધિત ચિહ્નિત
+!!{formula} $\sFmla{\True}{!B(t)}$ અથવા
+$\sFmla{\False}{!B(t)}$ શાખામાં અગાઉ આવતું નથી.
+
+આ સાબિતી-શોધથી બંધ કોષ્ટક-વૃક્ષ ન બને, તો
+કાં તો તેમાં એવી સીમિત ખુલ્લી શાખા હોય છે
+જેના બધા બિનઆણ્વિક !!{formula}s પર ખરાની
+નિશાની છે, અથવા શોધ અનંત પણ સીમિત-શાખાવાળું
+વૃક્ષ બનાવે છે, જેમાં અનંત શાખા હોવી જ પડે.
+\olref[cpl]{sec}ની જેમ, આપણે એવી
+!!a{structure}~$\Struct{M}$ વ્યાખ્યાયિત કરી
+શકીએ કે શાખામાં $\sFmla{\True}{!A}$ આવે તો
+$\Sat{M}{!A}$, અને $\sFmla{\False}{!A}$
+આવે તો $\Sat/{M}{!A}$.
+($\Theta =
+\Setabs{!A}{\sFmla{\True}{!A} \text{ શાખા પર}}$
+અને $\Xi =
+\Setabs{!A}{\sFmla{\False}{!A} \text{ શાખા પર}}$ લો.)
+
+આ રીતે શોધીને બનાવેલાં કોષ્ટક-વૃક્ષના દરેક
+શિરોબિંદુને સિક્વન્ટ સોંપવાથી તેને સરળતાથી
+\Log{G3c}ની સાબિતીમાં રૂપાંતરિત કરી શકાય છે.
+શરૂઆતનાં સૂત્રો $\Gamma \Sequent \Delta$
+સિક્વન્ટને અનુરૂપ હોય, તો દરેક શરૂઆતના
+સૂત્રને $\Gamma \Sequent \Delta$ ચિહ્ન આપો.
+$\sFmla{\True}{!A}$ ચિહ્નિત !!{formula}
+પર શાખા-વિસ્તારનો નિયમ લાગુ કરવાથી શાખા
+વધે, તો પાનને $!A, \Pi \Sequent \Lambda$
+ચિહ્ન આપો; ચિહ્નિત !!{formula}
+$\sFmla{\False}{!A}$ પર તે
+લાગુ થાય, તો પાનને $\Pi \Sequent \Lambda, !A$
+ચિહ્ન આપો. કોષ્ટક-વૃક્ષમાં
+\TRule{\True}{\star} નિયમ લાગુ થાય, ત્યાં
+સિક્વન્ટ પર \LeftR{\star} નિયમ લગાવો
+($!A$ને મુખ્ય સૂત્ર રાખીને); અને
+\TRule{\False}{\star} લાગુ થાય, ત્યાં
+\RightR{\star} નિયમ લગાવો. નિયમના
+આધારવિધાનો કોષ્ટક-વૃક્ષમાં ઉમેરાયેલા
+સંબંધિત શિરોબિંદુઓને ચિહ્નિત કરતા સિક્વન્ટો
+છે. $\sFmla{\True}{!A}$ અને
+$\sFmla{\False}{!A}$ વડે કોષ્ટક-વૃક્ષ બંધ
+થાય, ત્યારે અંતિમ પાનનું ચિહ્ન
+$!A, \Pi \Sequent \Lambda, !A$ સ્વરૂપનો
+સિક્વન્ટ હશે. કોષ્ટક-વૃક્ષમાં ક્રમશઃ આવતા
+કેટલાંક શિરોબિંદુઓને એક જ સિક્વન્ટ સોંપાશે;
+પુનરાવર્તિત નકલો કાઢી નાખો. દાખલા તરીકે,
+ઉપરનું કોષ્ટક-વૃક્ષ આ !!{proof}માં રૂપાંતરિત થાય છે:
+\[\small
+\Axiom$!A \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !B$
+\Axiom$!A \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!A \fCenter (!A \lor !B) \land (!A \lor !C)$
+\Axiom$!B, !C \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !B$
+\Axiom$!B, !C \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!A \lor (!B \land !C) \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\DisplayProof
+\]
+
+\end{document}

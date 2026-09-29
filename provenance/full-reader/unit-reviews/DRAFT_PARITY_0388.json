@@ -1,0 +1,27 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0388",
+  "checked_at_utc": "2026-09-27T08:53:29.759565+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0388 many-valued logical matrices; state-only draft",
+  "report": {
+    "unit_id": "OLP-0388",
+    "source_path": "content/many-valued-logic/syntax-and-semantics/matrices.tex",
+    "source_sha256": "b52a35007f90b9c696d8f3396d4ebbf625e24983bbbbb806fdffa6837bd0f9a1",
+    "draft_path": "private-state\\work\\batch039_draft\\matrices.tex",
+    "draft_sha256": "d5c17cb453384a365a3c8b9691457c10aded36a918e44af0ca32b2155d50f39b",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 56,
+    "target_math_spans_after_corrections": 56,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 107,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "four_truth_tables_cell_and_order_exact": true,
+    "prose_scan_tabular_exception": "four parity-verified tables removed from prose scan; no table body prose",
+    "changed_math_block_ordinals": []
+  },
+  "status": "draft_linguistic_structure_math_and_truth_table_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0443",
+  "checked_at_utc": "2026-09-27T12:04:50.773782+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0443 complete Sigma-consistent sets; state-only draft",
+  "report": {
+    "unit_id": "OLP-0443",
+    "source_path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+    "source_sha256": "b5bab763b10f3972e8a8c53ae3036677c0b462f86df13137ccb6181d9ce632e1",
+    "draft_path": "private-state\\work\\batch040_draft\\complete-consistent-sets.tex",
+    "draft_sha256": "ebb02a3029a2e6d5edb1f8737ef6582143de98135c2ee3ed99b95efb0fa033c6",
+    "aligned_blocks": 21,
+    "linguistic_blocks": 16,
+    "source_math_spans_correction_aware": 131,
+    "target_math_spans_after_corrections": 131,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-032",
+      "OLMD-033",
+      "OLMD-034"
+    ],
+    "source_detector_ascii_tokens": 310,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_after_two_formula_repairs": true,
+    "nine_labeled_properties_preserved": true,
+    "missing_disjunction_proof_direction_supplied": true
+  },
+  "status": "draft_linguistic_math_property_and_source_repair_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,378 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{his}{set}{hilbertcurve}
+
+\olsection{પરિશિષ્ટ: હિલ્બર્ટની અવકાશ ભરતી વક્રરેખાઓ}
+
+\olref[pathology]{sec} પ્રકરણમાં
+આપણે જોયું કે રેખા અને
+ચોરસમાં બિંદુઓની સંખ્યા
+બરાબર છે એવી કૅન્ટૉરની
+સાબિતીએ
+(\olref[his][set][cantorplane]{thm:cantorplane})
+પીઆનોને પૂછવા પ્રેર્યા કે
+શું અવકાશ ભરતી
+\emph{વક્રરેખા} હોઈ શકે.
+1890માં તેમને તેનો
+હકારાત્મક ઉત્તર મળ્યો.
+આ વિભાગમાં હિલ્બર્ટની
+અવકાશ ભરતી વક્રરેખા
+કેવી રીતે રચવી તે
+અનૌપચારિક રીતે
+સમજાવીએ છીએ
+(એક નાનકડા ફેરફાર સાથે).
+\footnote{વધુ ચુસ્ત સમજૂતી
+માટે \cite{Rose2010} જુઓ.
+ફેરફાર એટલે નીચેની
+વક્રરેખાઓના લાલ
+ભાગો ઉમેરવા; તેથી
+વક્રરેખા સતત છે તે
+તપાસવું થોડું સહેલું બને છે.}
+
+આપણે વિધેયો $h_1$, $h_2$, $h_3$,
+\dots\@ના અનુક્રમના
+લક્ષ તરીકે વિધેય $h$
+વ્યાખ્યાયિત કરવાનું છે.
+પહેલાં રચના વર્ણવીશું,
+પછી તે અવકાશ ભરે છે
+તે અને અંતે તે
+વક્રરેખા છે તે બતાવીશું.
+
+$h$નો વિસ્તાર એકમ ચોરસ
+$\unitsquare$ લઈશું.
+$h$નો પહેલો અંદાજ,
+એટલે $h_1$, આ છે:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 40pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (20pt, 0)--(20pt, 20pt);
+	\draw[oldiagcolorC, thick] (60pt, 0)--(60pt, 20pt);		
+	\begin{scope}[xshift=20pt, yshift=20pt]
+	\draw [black, thick, l-system={Hilbert curve, step=40pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+રચનાને અનુસરવા ચોરસ પર
+$2 \times 2$ની જાળી મૂકી છે.
+વક્રરેખા નીચેના ડાબા ચતુર્થાંશથી
+શરૂ થઈ ઉપર ડાબે,
+પછી ઉપર જમણે અને
+અંતે નીચે જમણે જાય
+છે એમ વિચારી શકીએ.
+રચનાનો બીજો તબક્કો,
+એટલે $h_2$, આ છે:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 20pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (0pt, 10pt)--(10pt, 10pt);
+	\draw[oldiagcolorC, thick] (70pt, 10pt)--(80pt, 10pt);
+	\draw[thick, oldiagcolorE] (10pt, 30pt)--(10pt, 50pt); 
+	\draw[thick, oldiagcolorE] (30pt, 50pt)--(50pt, 50pt); 
+	\draw[thick, oldiagcolorE] (70pt, 50pt)--(70pt, 30pt); \begin{scope}[xshift=10pt, yshift=30pt]
+	\draw [thick, rotate=270,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=10pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=50pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=70pt, yshift=10pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+જુદા રંગો $h_2$ની
+રચના સમજવામાં મદદ કરશે.
+પહેલાં $h_1$ના
+!!{colorC} સિવાયના
+ભાગની નાની નકલો
+ચોરસના નીચે ડાબા,
+ઉપર ડાબા, ઉપર જમણા
+અને નીચે જમણા
+ચતુર્થાંશમાં મૂકીએ
+(કાળા રંગમાં).
+પછી આ ચાર આકૃતિઓને
+!!{colorE} રેખાઓથી
+જોડીએ. અંતે આકૃતિને
+!!{colorC} રેખાઓથી
+ચોરસની સીમા સાથે જોડીએ.
+
+હવે $h_3$ તરફ વળીએ.
+$h_1$ના લાલ સિવાયના
+ભાગની જોડેલી ચાર નાની
+નકલોથી $h_2$ બન્યું,
+તે જ રીતે $h_2$ના
+લાલ સિવાયના ભાગની
+ચાર નાની નકલોથી
+$h_3$ બને છે
+(કાળા રંગમાં).
+પછી તેમને !!{colorE}
+રેખાઓથી એકબીજા
+સાથે અને અંતે
+!!{colorC} રેખાઓથી
+ચોરસની સીમા
+સાથે જોડીએ.
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 10pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[thick, oldiagcolorC](5pt, 0pt)--(5pt, 5pt); 
+	\draw[thick, oldiagcolorC] (75pt, 0pt)--(75pt, 5pt); 
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt);
+	\draw[thick, oldiagcolorE] (5pt, 35pt)--(5pt, 45pt); 
+	\draw[thick, oldiagcolorE] (35pt, 45pt)--(45pt, 45pt); 
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt); \begin{scope}[xshift=5pt, yshift=35pt]
+	\draw [rotate=270, thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=5pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=45pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=75pt, yshift=5pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+આ રીતે $h_n$ પરથી
+$h_{n+1}$ વ્યાખ્યાયિત
+કરવાની સામાન્ય રીત
+દેખાય છે. હવે આ
+અનુક્રમી વિધેયો
+$h_1$, $h_2$, \dots\@
+ના બિંદુવાર લક્ષથી
+વક્રરેખા $h$ને
+\emph{પોતે} વ્યાખ્યાયિત
+કરીએ. એટલે દરેક
+$x \in \unitline$ માટે:
+\begin{align*}
+	h(x) &= \lim_{n \rightarrow \infty} h_n(x)
+\end{align*} 
+\sourcecorrection{OLMD-170}{મૂળમાં
+$x \in \unitsquare$ લખાયું છે,
+પણ $h_n$ અને $h$નો
+પ્રદેશ $\unitline$ હોવો
+જોઈએ. ચિત્રો માત્ર
+વક્રરેખાઓના માર્ગ
+દર્શાવે છે; દરેક
+$h_n$નું પરિમાણીકરણ
+અને તેનું બિંદુવાર
+લક્ષ અસ્તિત્વમાં છે
+તે અહીં સાબિત
+થતું નથી.}
+હવે આ વક્રરેખા
+અવકાશ ભરે છે
+તે બતાવીએ.
+$h_n$ દોરીએ ત્યારે
+$\unitsquare$ પર
+$2^n \times 2^n$ની
+જાળી મૂકીએ છીએ.
+પાયથાગોરસના પ્રમેયથી
+જાળીના દરેક કોષના
+કર્ણની લંબાઈ છે:
+\[
+\sqrt{\left(\nicefrac{1}{2^{n}}\right)^2+\left(\nicefrac{1}{2^{n}}\right)^2} = 2^{(\frac{1}{2}-n)}
+\]
+અને સ્પષ્ટપણે $h_n$
+જાળીના દરેક કોષમાંથી
+પસાર થાય છે. તેથી
+$\unitsquare$નો દરેક
+બિંદુ $h_n$ પરના
+કોઈ બિંદુથી \emph{વધુમાં વધુ}
+$2^{(\frac{1}{2}-n)}$
+અંતરે છે. હવે $h$ને
+વિધેયો $h_1$, $h_2$,
+$h_3$, \dots\@ના લક્ષ
+તરીકે વ્યાખ્યાયિત કર્યું છે.
+તેથી મૂળની દલીલ પ્રમાણે
+કોઈ પણ બિંદુનું $h$થી
+મહત્તમ અંતર આ લક્ષ છે:
+\[
+\lim_{n \rightarrow \infty} 2^{(\frac{1}{2}-n)} = 0.
+\]
+અર્થાત્, $\unitsquare$નો
+દરેક બિંદુ $h$થી
+$0$ અંતરે છે. બીજા
+શબ્દોમાં, $\unitsquare$નો
+દરેક બિંદુ વક્રરેખા
+\emph{પર} છે; તેથી
+$h$ અવકાશ ભરે છે!{}
+\sourcecorrection{OLMD-171}{દરેક
+$h_n$ની છબી જાળીના
+બધા કોષને મળે છે અને
+માત્ર બિંદુવાર લક્ષ
+છે, તે પરથી છબી
+$h(\unitline)$ આખો
+ચોરસ ભરે છે એવો
+નિષ્કર્ષ નીકળતો નથી.
+તે માટે વિધેયોનું
+સમરૂપ અભિસરણ
+સ્થાપવું, અને
+લક્ષની છબી બંધ છે
+તેવું સાતત્ય/સઘનતા
+આધારિત પગલું
+આપવું પડે.
+આ બંને અહીં
+અસાબિત છે.}
+
+હવે $h$ ખરેખર
+\emph{વક્રરેખા} છે
+તે બતાવવાનું બાકી છે.
+એ માટે આ ખ્યાલ
+વ્યાખ્યાયિત કરવો પડે.
+આધુનિક વ્યાખ્યા
+જોર્ડને 1887માં
+આપેલી વ્યાખ્યા
+પર આધારિત છે
+(પહેલી અવકાશ ભરતી
+વક્રરેખા રજૂ થાય
+તેના થોડાં વર્ષ પહેલાં):
+
+\begin{defn}
+વક્રરેખા એટલે
+$\unitline$માંથી
+$\Real^2$માંનું
+સતત ચિત્રણ.
+\end{defn}
+
+આ વ્યાખ્યા ઘણી સહજ
+લાગે છે: સહજ રીતે,
+વક્રરેખા પ્રમાણભૂત
+રેખાને સમતલ
+$\Real^2$ પર લઈ
+જતું “મસૃણ” ચિત્રણ
+છે. આપણું વિધેય
+$h$ ખરેખર
+$\unitline$માંથી
+$\Real^2$માં જાય છે.
+તેથી $h$ સતત
+છે તે બતાવવું બાકી છે.
+\olref[limits]{sec}માં
+આપણે $\epsilon$/$\delta$
+સંકેતથી સાતત્ય
+વ્યાખ્યાયિત કર્યું હતું.
+મૂળની બોલચાલની
+વાત આ છે:
+\emph{જો તમે $\unitsquare$માં
+બિંદુ $p$ અને ઇચ્છિત
+ચોકસાઈ $\epsilon$ આપો,
+તો $\unitline$નો એવો
+ખુલ્લો ભાગ મળે કે
+તેમાંના કોઈ પણ $x$
+માટે $h(x)$ એ $p$થી
+$\epsilon$ કરતાં ઓછા
+અંતરે હોય.}
+\sourcecorrection{OLMD-172}{અહીં
+“મસૃણ” ગણિતીય
+વ્યાખ્યા નથી; વ્યાખ્યા
+માત્ર સાતત્ય માગે છે.
+મૂળનું પછીનું બોલચાલનું
+વિધાન પણ સાતત્ય
+નથી બતાવતું: તે
+દરેક લક્ષ્યબિંદુની
+પાસે ક્યાંક આગતોનો
+ખુલ્લો ભાગ મળે
+એવું કહે છે. સાચી
+સાતત્ય-શરત દરેક
+$t\in\unitline$
+અને $\epsilon>0$
+માટે એવો $\delta>0$
+માગે છે કે
+$|x-t|<\delta$
+હોય ત્યારે
+$\|h(x)-h(t)\|<\epsilon$
+હોય.}
+
+હવે માનો કે તમે
+$p$ અને $\epsilon$
+આપ્યાં છે. તેનો
+અર્થ $\unitsquare$માં
+કેન્દ્ર $p$ અને
+ત્રિજ્યા $\epsilon$
+વાળું વર્તુળ દોરવા
+જેવો છે. (વર્તુળનો
+ભાગ $\unitsquare$ની
+સીમા બહાર જઈ શકે,
+પણ તેથી વાંધો નથી.)
+યાદ કરો કે $h_n$
+વર્ણવતાં આપણે
+$\unitsquare$ પર
+$2^n \times 2^n$ની
+જાળી મૂકી હતી.
+$\epsilon$ ગમે તેટલું
+નાનું હોય, એવું
+કોઈ $n$ મળે છે કે
+$\unitsquare$ પરની આ
+$2^n \times 2^n$ જાળીના ઓછામાં
+ઓછો એક કોષ
+કેન્દ્ર $p$ અને
+ત્રિજ્યા $\epsilon$
+વાળા વર્તુળની
+અંદર આખો આવે છે.
+
+એવું $n$ લો અને
+$I$ને $\unitline$નો
+એવો સૌથી મોટો
+ખુલ્લો ભાગ માનો
+જેને $h_n$ સંબંધિત
+જાળીકોષની અંદર
+આખો ચિતરે છે.
+($2^n\times 2^n$
+જાળીના દરેક કોષમાંથી
+$h_n$ પસાર થાય
+છે એમ આપણે
+નોંધ્યું હોવાથી
+એવો $(a,b)$
+મળે છે.) હવે
+જ્યારે પણ $x \in I$
+હોય ત્યારે $h(x)$
+એ જ જાળીકોષમાં
+રહે છે તે બતાવવું
+પૂરતું છે. અને
+\emph{આ} માટે
+દરેક $m > n$
+માટે $h_m(x)$
+એ જ કોષમાં
+રહે છે તે
+બતાવવું પૂરતું છે.
+મૂળની દલીલમાં
+આ સ્પષ્ટ ગણાય છે:
+$m > n$ માટે
+$h_m$માં એકમ
+અંતરાલનો બરાબર
+“એ જ ભાગ”
+એ જ જાળીકોષમાં
+ચિતરાય છે;
+ફક્ત ત્યાં તેની
+રચના વધુ લંબાયેલી
+અને વળાંકવાળી
+થતી જાય છે.
+\sourcecorrection{OLMD-173}{આ
+દલીલ આપેલા
+$p$ની પાસે
+વક્રરેખાનો થોડો
+ભાગ આવે છે
+એવું બતાવવાનો
+પ્રયત્ન કરે છે;
+પણ દરેક નિશ્ચિત
+આગત $t$ની પાસે
+$h(x)$ એ $h(t)$ની
+પાસે રહે છે,
+તે બતાવતી નથી.
+વળી “સૌથી મોટો”
+ખુલ્લો ભાગ અને
+બધાં પછીના
+$h_m$ની કોષ-સ્થિરતા
+પરિમાણીકરણ
+વિના સ્થાપિત
+નથી. તેથી અહીં
+સાતત્યની સાબિતી
+હજી અધૂરી છે.}
+
+\end{document}

@@ -1,0 +1,98 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: rules-G3c
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\begin{table}
+\begin{tabular}{@{}c@{}c@{}}
+\multicolumn{2}{@{}c@{}}{સ્વયંસિદ્ધો}\\[2ex]
+$!C, \Gamma \Sequent !C$ & $\lfalse, \Gamma \Sequent \Delta$
+\\[2ex]
+\multicolumn{2}{@{}c@{}}{તાર્કિક નિયમો}\\[2ex]
+\Axiom$\lnot !A, \Gamma \fCenter !A $
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$!A, \Gamma \fCenter$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma \fCenter \lnot !A $
+\DisplayProof
+\\[4ex]
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter !A$
+\Axiom$ \Gamma \fCenter !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter !A \land !B $
+\DisplayProof
+\\[4ex]\Axiom$!A, \Gamma \fCenter \Delta$
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!A \lor !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\begin{tabular}[t]{@{}r@{}}
+\Axiom$\Gamma \fCenter !A$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \Gamma \fCenter !A \lor !B$
+\DisplayProof
+\\[3ex]
+\Axiom$\Gamma \fCenter !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \Gamma \fCenter !A \lor !B$
+\DisplayProof\\[3ex]
+\end{tabular}
+\\[4ex]
+\Axiom$!A \lif !B, \Gamma \fCenter !A$
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A \lif !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$!A, \Gamma \fCenter !B$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter !A \lif !B $
+\DisplayProof
+\\[4ex]
+\Axiom$ !A(t), \lforall[x][!A(x)], \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \lforall[x][!A(x)]$
+\DisplayProof
+\\[4ex]
+\Axiom$ !A(a), \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][!A(x)], \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter !A(t) $
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \Gamma \fCenter \lexists[x][!A(x)]$
+\DisplayProof
+\end{tabular}
+\caption{અંતઃપ્રજ્ઞાવાદી તર્ક માટે \Log{G3i}ના નિયમો.
+$\RightR{\forall}$ અને $\LeftR{\exists}$માં !!{constant}~$a$
+ફલિત-સિક્વન્ટમાં આવવો નહીં. $\Gamma$ એ !!{formula}નો બહુગણ છે,
+અને $\Delta$ ખાલી હોઈ શકે અથવા એક જ !!{formula} ધરાવી શકે.
+સ્વયંસિદ્ધોમાં !!{formula}~$!C$ પરમાણ્વીય હોવું જોઈએ.
+અલગ તંત્ર અંગે નોંધ: \Log{G1m} એ જમણા શિથિલીકરણ અને
+$\lfalse, \Gamma \Sequent
+\Delta$ સ્વરૂપનાં સ્વયંસિદ્ધો વિનાનું \Log{G1i} છે.}
+\ollabel{tab:G3c}
+\end{table}
+\sourcecorrection{OLMD-334}{મૂળ સર્વપરિમાણકના ડાબા નિયમના આધારમાં મુખ્ય સૂત્ર અને સંદર્ભ વચ્ચેનો અલ્પવિરામ ઉમેર્યો છે.}
+\sourcecorrection{OLMD-335}{મૂળ વિકલ્પના જમણા નિયમના આધારમાં બે સૂત્રો છે, જ્યારે આ જ કોષ્ટકની શરત ઉત્તરાંગમાં વધુમાં વધુ એક સૂત્રની છૂટ આપે છે. તેથી એક સૂત્રવાળા બે જુદા દાખલ-નિયમ દર્શાવ્યા છે: એકમાં પહેલું વિકલ્પક અને બીજામાં બીજું વિકલ્પક આધાર છે. આ સ્વરૂપ G1iના કોષ્ટક અને નિયમોના અર્થઘટન સાથે મેળ ખાય છે.}
+\sourcecorrection{OLMD-336}{મૂળની છેલ્લી કૅપ્શન-નોંધ G1નાં તંત્રો અંગે છે; તેને આ G3i કોષ્ટકની વ્યાખ્યા ગણવી નહીં. G1iના અલગ કોષ્ટક અનુસાર G1mમાં જમણું શિથિલીકરણ પણ દૂર કરવું પડે છે. અહીં એ ચૂકી ગયેલી શરત ઉમેરેલી છે; ફક્ત અસત્યનાં સ્વયંસિદ્ધો દૂર કરવાથી મૂળ નકાર-નિયમો સાથે ઇચ્છિત ન્યૂનતમ તર્ક મળતું નથી.}
+
+\end{document}

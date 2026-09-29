@@ -1,0 +1,44 @@
+% Part: lambda-calculus
+% Chapter: syntax
+% Section: abbreviated-syntax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{syn}{abb}
+\olsection{સંક્ષિપ્ત વાક્યરચના}
+
+\olref[trm]{defn:term} મુજબ વ્યાખ્યાયિત પદો લખવામાં ક્યારેક
+ભારે પડે છે; તેથી વધુ સંક્ષિપ્ત વાક્યરચના ઉપયોગી છે. આ
+સંક્ષિપ્ત સંકેતનમાં પણ પદોને અનન્ય રીતે વાંચી શકાય તેની
+કાળજી લેવી જોઈએ. વ્યાપકપણે વપરાતું એક સ્વરૂપ
+\emph{સંક્ષિપ્ત પદો} કહેવાય છે અને તે આ પ્રમાણે છે.
+
+\begin{enumerate}
+\item કૌંસ છોડવામાં આવે ત્યારે અનુપ્રયોગ ડાબેથી જમણે થાય છે.
+  દાખલા તરીકે, $M$, $N$, $P$ અને~$Q$ પદો હોય તો
+  $MNPQ$ એ~$(((MN)P)Q)$નું સંક્ષિપ્ત સ્વરૂપ છે.
+\item ફરી, કૌંસ છોડવામાં આવે ત્યારે લૅમ્બડા અમૂર્તીકરણનો
+  વ્યાપ શક્ય તેટલો મોટો લેવાય છે. દાખલા તરીકે,
+  $\lambd[x][MNP]$ને~$(\lambd[x][MNP])$ એમ વાંચવું.
+\item એક લૅમ્બડાથી અનેક ચલોનું અમૂર્તીકરણ કરી શકાય છે.
+  દાખલા તરીકે, $\lambd[xyz][M]$ એ
+  $\lambd[x][\lambd[y][\lambd[z][M]]]$નું સંક્ષિપ્ત સ્વરૂપ છે.
+\end{enumerate}
+
+દાખલા તરીકે,
+\[
+\lambd[xy][xxyx \lambd[z][xz]]
+\]
+એ નીચેનું સંક્ષિપ્ત સ્વરૂપ છે:
+\[
+(\lambd[x][(\lambd[y][((((xx)y)x)(\lambd[z][(xz)]))])]).
+\]
+
+\begin{prob}
+સંક્ષિપ્ત પદ~$\lambd[g][(\lambd[x][g (x x)])
+  \lambd[x][g (x x)]]$ને પૂર્ણ સ્વરૂપે લખો.
+\end{prob}
+
+\end{document}

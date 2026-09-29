@@ -1,0 +1,37 @@
+% Part: propositional-logic
+% Chapter: propositional-logic 
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{prp}{snd}
+
+\olsection{પ્રતિજ્ઞાપન તર્કશાસ્ત્રની યથાર્થતા}
+
+\begin{thm}[યથાર્થતા]
+\ollabel{thm:soundness}
+જો $\Gamma\Proves!A$ હોય, તો $\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+નિષ્પન્ન થતી પ્રતિજ્ઞાપનાઓ પર આગમન કરીએ.
+જો $!A$ સ્વયંસિદ્ધ હોય, તો $\Entails
+!A$, એટલે $\Gamma \Entails!A$ પણ થાય.
+તે જ રીતે, જો $!A \in \Gamma$ હોય, તો $\Gamma \Entails!A$.
+આગમનના પગલામાં ધારો કે $!A$ એ $!C$ અને $!C\lif!A$માંથી
+\emph{મોડસ પોનેન્સ} વડે મળ્યું હોય.
+આગમનની ધારણા મુજબ $!C\lif !A$ અને $!C$ માટે પ્રમેય સાચું છે.
+\olref[pl][syn][sem]{prop:semanticalfacts}નો બીજો મુદ્દો
+ઇચ્છિત પરિણામ આપે છે.
+\sourcecorrection{OLMD-345}{મૂળ અહીં અર્થવિજ્ઞાનના પરિણામનો ત્રીજો મુદ્દો કહે છે. સ્થિર મૂળમાં મોડસ પોનેન્સને અનુરૂપ સત્ય-સંરક્ષણ બીજો મુદ્દો છે; ત્રીજો મુદ્દો સાંત ઉપગણોની સંતોષ્યતા અંગે છે. ક્રમસંખ્યા અને સ્રોતના સાચા ભાગ-અધ્યાય સુધીનો સંદર્ભ સુધાર્યા છે.}
+\end{proof}
+
+\begin{cor}
+જો $\Gamma$ સંતોષ્ય હોય, તો $\Gamma$ સુસંગત છે.
+આથી પ્રતિજ્ઞાપન તર્કશાસ્ત્ર સુસંગત છે.
+\end{cor}
+
+\end{document}
+

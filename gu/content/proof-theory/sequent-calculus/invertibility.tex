@@ -1,0 +1,445 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: invertibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{inv}
+
+\olsection{નિયમોની પ્રતિલોમક્ષમતા}
+
+\begin{defn}
+નિયમ~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_k$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+તંત્રમાં \emph{પ્રતિલોમક્ષમ} છે,
+જો $\Proves S$ હોય ત્યારે
+$i = 1$, \dots,~$k$ માટે $\Proves S_i$ હોય.
+તે તંત્રમાં \emph{!!{height}-સંરક્ષક પ્રતિલોમક્ષમ}
+(અથવા \emph{!!{hp}-પ્રતિલોમક્ષમ}) છે,
+જો $\Proves[n] S$ હોય ત્યારે $i = 1$, \dots,~$k$ માટે
+$\Proves[n] S_i$ હોય.
+\sourcecorrection{OLMD-308}{મૂળ એક જ $n$ને આધારોની સંખ્યા અને ઊંચાઈની સીમા બંને માટે વાપરે છે; આધારોની સંખ્યા $k$ કરી છે. સામાન્ય પ્રતિલોમક્ષમતામાં અનિર્ધારિત ઊંચાઈ-સૂચક $h_i$ દૂર કર્યો છે અને ઊંચાઈની નોંધ બાકીના અધ્યાય પ્રમાણે ચોરસ કૌંસમાં કરી છે. અર્થ એ છે કે નિષ્કર્ષની સાબિતીથી દરેક આધારની સાબિતી મળે, અને ઊંચાઈ-સંરક્ષક કિસ્સામાં તેની ઊંચાઈ ન વધે.}
+\end{defn}
+
+\begin{lem}\ollabel{lem:G3c-invert}
+\Log{G3c}ના $\lnot$, $\land$, $\lor$ અને $\lif$ માટેના નિયમો
+!!{height}-સંરક્ષક પ્રતિલોમક્ષમ છે, એટલે:
+\begin{enumerate}
+  \item \RightR{\lnot}: જો $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, \lnot !A$, તો $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta$.
+  \item \LeftR{\lnot}: જો $\Log{G3c} \Proves[n] \Gamma, \lnot !A
+  \Sequent \Delta$, તો $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  !A$.
+  \item \RightR{\land}: જો $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \land !B$, તો $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A$ અને $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !B$.
+  \item \LeftR{\land}: જો $\Log{G3c} \Proves[n] \Gamma, !A \land !B
+  \Sequent \Delta$, તો $\Log{G3c} \Proves[n] !A, !B, \Gamma \Sequent
+  \Delta$.
+  \item \RightR{\lor}: જો $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \lor !B$, તો $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A, !B$.
+  \item \LeftR{\lor}: જો $\Log{G3c} \Proves[n] !A \lor !B, \Gamma \Sequent
+  \Delta$, તો $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta$ અને $\Log{G3c} \Proves[n] !B, \Gamma \Sequent
+  \Delta$.
+  \item \RightR{\lif}: જો $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \lif !B$, તો $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta, !B$.
+  \item \LeftR{\lif}: જો $\Log{G3c} \Proves[n] !A \lif !B, \Gamma
+  \Sequent \Delta$, તો $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  !A$ અને $\Log{G3c} \Proves[n] !B, \Gamma \Sequent \Delta$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+બતાવવાનું છે કે~\Log{G3c}ના કોઈ નિયમ~$R$ માટે,
+$R$ના નિષ્કર્ષ~$S$ની !!a{proof}~$\pi$ હોય,
+તો~$R$ના આધારો $S_i$ની !!{proof}s~$\pi_i$ પણ હોય,
+અને $\pheight{\pi_i} \le \pheight{\pi}$ હોય.
+\LeftR{\land} નિયમ વિચારીએ:
+$!A \land !B, \Gamma \Sequent \Delta$ સ્વરૂપના
+અંતિમ સિક્વન્ટની !!a{proof}~$\pi$ છે એમ ધારો.
+બતાવવાનું છે કે $!A, !B, \Gamma \Sequent \Delta$ની
+!!a{proof} $\pi'$ મળે અને
+$\pheight{\pi'} \le \pheight{\pi}$ હોય.
+આ $n = \pheight{\pi}$ પર આગમનથી કરીએ.
+
+$n = 0$ હોય, તો $\pi$માં ફક્ત સ્વયંસિદ્ધ
+$!A \land !B, \Gamma \Sequent \Delta$ છે.
+\Log{G3c}ના ઓળખ-સ્વયંસિદ્ધોનું સ્વરૂપ
+$!C, \Gamma \Sequent \Delta, !C$ છે, જ્યાં $!C$ આણ્વિક છે.
+એટલે $!C$ એ $!A \land !B$ ન હોઈ શકે.
+$!A \land !B, \Gamma \Sequent \Delta$ ઓળખ-સ્વયંસિદ્ધ હોય,
+તો કોઈ આણ્વિક $!C$ બંને $\Gamma$ અને~$\Delta$નું !!a{element} છે.
+ત્યારે $!A, !B, \Gamma \Sequent \Delta$ પણ સ્વયંસિદ્ધ છે,
+અને આપણી !!{proof}~$\pi'$ મળી ગઈ
+(તેની પણ !!{height}~$0$ છે).
+\sourcecorrection{OLMD-309}{મૂળ આ આધાર-કિસ્સામાં G3cના સ્વયંસિદ્ધોને ફક્ત આણ્વિક ઓળખ-સ્વયંસિદ્ધ ગણે છે. કોષ્ટકમાં અસત્ય ડાબે હોય તે સ્વયંસિદ્ધ પણ છે. અહીં મુખ્ય સંયોજનને બે સંયોજ્યોથી બદલતાં સંદર્ભનું અસત્ય સૂત્ર રહે છે; તેથી એ કિસ્સામાં પણ પરિણામ શૂન્ય ઊંચાઈનું સ્વયંસિદ્ધ છે.}
+
+$n>0$ હોય, તો છેલ્લે અનુમાન આવે છે.
+$n$ માટે દાવો સાબિત કરવો છે, પરંતુ
+ઊંચાઈ~$<n$ની કોઈ પણ !!{proof} માટે તે સાચો છે એમ માની શકીએ,
+સંદર્ભ જુદો હોય તો પણ.
+એટલે કોઈ પણ $k<n$ અને $\Pi$, $\Lambda$ માટે,
+$!A \land !B, \Pi \Sequent \Lambda$ની
+!!{height}~$k$ની !!a{proof} હોય,
+તો $!A, !B, \Pi \Sequent \Lambda$ની
+!!{height}~$\le k$ની !!a{proof} મળે.
+
+બે કિસ્સા છે: ડાબેનું $!A \land !B$ મુખ્ય સૂત્ર છે અથવા નથી.
+મુખ્ય હોય, તો છેલ્લું અનુમાન \LeftR{\land} છે
+અને તેની તરત પહેલાંની ઉપ-!!{proof}~$\pi_1$નો અંત
+$!A, !B, \Gamma \Sequent \Delta$ છે.
+$\pheight{\pi_1} < \pheight{\pi}$ હોવાથી પરિણામ આ કિસ્સામાં સાચું છે.
+
+$!A \land !B$ મુખ્ય ન હોય,
+તો બીજું કોઈ !!{formula} મુખ્ય છે અને $!A \land !B$
+છેલ્લાં અનુમાનના સંદર્ભમાં છે.
+ત્યારે છેલ્લા નિયમ~$R$ની તરત પહેલાંની ઉપ-!!{proof}s પર
+આગમન-ધારણા લાગુ પડે છે.
+તેમાંથી એક !!a{proof}~$\pi_1'$ અથવા બે
+!!{proof}s~$\pi_1'$ અને~$\pi_2'$ મળે છે,
+જેમની !!{height}~$\pi$ની તરત પહેલાંની ઉપ-!!{proof}sની
+ઊંચાઈ કરતાં મોટી નથી.
+$\pi_1'$ અને $\pi_2'$ના અંતિમ સિક્વન્ટોના ડાબા સંદર્ભમાં
+$!A \land !B$ને બદલે $!A, !B$ હોય છે.
+$R$ લગાવતાં સાબિતી~$\pi'$ મળે.
+દાખલા તરીકે $\pi$નો અંત~\LeftR{\lif}થી થાય એમ ધારો:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!A \land !B, \Gamma' \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A \land !B, \Gamma', !D \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A \land !B, \Gamma', !C \lif !D \fCenter \Delta$
+\DisplayProof
+\]
+અહીં ડાબેનું $!C \lif !D$ મુખ્ય છે
+અને ડાબો સંદર્ભ $!A \land !B, \Gamma'$ છે
+(એટલે $\Gamma = \Gamma', !C \lif !D$).
+આગમન-ધારણાથી અનુક્રમે
+$!A, !B, \Gamma' \Sequent \Delta, !C$
+અને $!A, !B, \Gamma', !D \Sequent \Delta$ની
+!!{proof}s $\pi_1'$ અને $\pi_2'$ મળે છે.
+આ બે સિક્વન્ટોને ફરી \LeftR{\lif}ના આધાર તરીકે
+લઈને~$\pi'$ મળે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!A, !B, \Gamma' \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!A, !B, \Gamma', !D \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A, !B, \Gamma', !C \lif !D \fCenter \Delta$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-310}{મૂળ આ આગમન-પગલાના ગદ્યમાં મળેલા બંને આધારોમાં હજી $!A \land !B$ લખે છે, જ્યારે તરત પછીનું વૃક્ષ યોગ્ય રીતે $!A, !B$ ધરાવે છે. ગદ્યના બંને આધાર એ જ વિસ્તૃત સંયોજન પ્રમાણે કર્યા છે.}
+આપણી પાસે
+\begin{align*}
+\pheight{\pi} & = \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1\\
+\pheight{\pi'} & = \max(\pheight{\pi_1'}, \pheight{\pi_2'}) + 1
+\intertext{વ્યાખ્યા મુજબ, અને}
+\pheight{\pi_1'} & \le \pheight{\pi_1}\\
+\pheight{\pi_2'} & \le \pheight{\pi_2}
+\intertext{આગમન-ધારણા મુજબ. એટલે,}
+\pheight{\pi'} & \le \pheight{\pi}.
+\end{align*}
+\end{proof}
+
+\begin{prob}
+\RightR{\lif} માટે \olref{lem:G3c-invert}ની સાબિતી આપો.
+\end{prob}
+
+\begin{lem}\ollabel{lem:invert-quant}
+\RightR{\lforall} અને \LeftR{\lexists} નિયમો
+આ અર્થમાં !!{height}-સંરક્ષક પ્રતિલોમક્ષમ છે:
+\begin{enumerate}
+  \item $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  \lforall[x][!A(x)]$ હોય, તો
+  $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta, !A(c)$ છે, અને
+  \item $\Log{G3c} \Proves[n] \lexists[x][!A(x)], \Gamma \Sequent
+  \Delta$ હોય, તો
+  $\Log{G3c} \Proves[n] !A(c), \Gamma \Sequent \Delta$ છે.
+\end{enumerate}
+આ કોઈ પણ એવા $c$ માટે છે
+જે $\Gamma$, $\Delta$ અને અનુક્રમે
+$\lforall[x][!A(x)]$ અથવા $\lexists[x][!A(x)]$માં ન આવે.
+\end{lem}
+
+\begin{proof}
+  (1) બતાવીએ અને (2) સ્વાધ્યાય તરીકે છોડીએ.
+  દલીલ \olref{lem:G3c-invert}ની સાબિતી જેવી છે.
+  આગમનના પગલામાં ફરી બે કિસ્સા છે.
+  $\lforall[x][!A(x)]$ મુખ્ય હોય તે કિસ્સો સરળ છે:
+  છેલ્લા $\RightR{\lforall}$ અનુમાનનો આધાર
+  જરૂરી સ્વરૂપ $\Gamma \Sequent \Delta, !A(a)$નો છે,
+  અને તેનાથી પૂરી થતી તરત પહેલાંની ઉપ-!!{proof}~$\pi_1$ માટે
+  $\pheight{\pi_1} < \pheight{\pi}$ છે.
+  વળી આઇગનચલ-શરતથી $a$ એ $\Gamma$, $\Delta$
+  કે $\lforall[x][!A(x)]$માં આવતું નથી.
+  $\pi_1$ નિયમિત છે એમ માની શકીએ,
+  તેથી \olref[qua]{lem:subst-regular} મુજબ
+  $\Subst{\pi_1}{c}{a}$ એ
+  $\Gamma \Sequent \Delta, !A(c)$ની
+  એ જ !!{height}ની !!a{proof} છે.
+
+બીજા કિસ્સામાં $\lforall[x][!A(x)]$
+છેલ્લાં અનુમાનમાં મુખ્ય નથી; બીજું સૂત્ર મુખ્ય છે.
+ફરી એક કિસ્સાનું ઉદાહરણ લઈએ:
+છેલ્લું અનુમાન~\RightR{\land} છે એમ ધારો.
+$\Delta$નું કોઈ !!{formula}~$!B \land !C$ સ્વરૂપનું અને મુખ્ય છે.
+!!{proof}~$\pi$નો અંત આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+અહીં $\Delta = \Delta', !B \land !C$ છે.
+ઉપપાદની બધી તાજગી-શરતો સંતોષતો
+!!a{constant} $c$ લઈએ, જે $\Delta$માં ન આવે.
+ત્યારે તે $\Delta', !B$ કે $\Delta', !C$માં પણ આવતો નથી.
+\sourcecorrection{OLMD-311}{મૂળ ઉદાહરણમાં ફક્ત ઉત્તરાંગમાં ન આવતો અચળ પસંદ કરવાનું કહે છે. ઉપરના ઉપપાદની શરત મુજબ તે પૂર્વાંગ અને સંબંધિત પરિમાણિત સૂત્રમાં પણ ન આવવો જોઈએ; તે બધી શરતો જાળવી છે.}
+એટલે આગમન-ધારણા $\pi_1$ અને~$\pi_2$ પર લાગુ પડે:
+!!{proof}s~$\pi_1'$ અને $\pi_2'$ મળે છે,
+જ્યાં $\pheight{\pi_1'} \le \pheight{\pi_1}$
+અને $\pheight{\pi_2'} \le \pheight{\pi_2}$ છે.
+$\Gamma \Sequent \Delta, !A(c)$ની
+જરૂરી !!{proof}~$\pi'$ આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !A(c), !B$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta', !A(c), !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !A(c), !B \land !C$
+\DisplayProof
+\]
+અહીં $\pheight{\pi'} = \max(\pheight{\pi_1'}, \pheight{\pi_2'})+1 \le \pheight{\pi}$ છે.
+\end{proof}
+
+\Olref{lem:G3c-invert} કટ-લોપના પ્રમેયની સાબિતીમાં
+મહત્ત્વનું છે. તેનો ઉપયોગ આ પરિણામ બતાવવા પણ કરી શકાય:
+
+\begin{prop}\ollabel{prop:G3c-cont-adm}
+\Log{G1c}ના સંકોચન-નિયમો \LeftR{\Contraction} અને \RightR{\Contraction}
+\Log{G3c}માં !!{height}-સંરક્ષક સ્વીકાર્ય છે.
+\end{prop}
+
+\begin{proof}
+\RightR{\Contraction} અને \LeftR{\Contraction} માટે એકસાથે દલીલ આપીએ.
+\Log{G3c}માં $\Gamma \Sequent \Delta, !A, !A$
+અથવા $!A, !A, \Gamma \Sequent \Delta$ની !!a{proof} $\pi$ છે એમ ધારો.
+બતાવવાનું છે કે અનુક્રમે $\Gamma \Sequent \Delta, !A$
+અથવા $!A, \Gamma \Sequent \Delta$ની
+\Log{G3c}-!!{proof}~$\pi'$ મળે,
+અને $\pheight{\pi'} \le \pheight{\pi}$ હોય.
+આ $n = \pheight{\pi}$ પર આગમનથી કરીએ.
+
+$n=0$ હોય, તો $\pi$ ફક્ત સ્વયંસિદ્ધ છે.
+$\Gamma \Sequent \Delta, !A, !A$ એ~\Log{G3c}નું
+ઓળખ-સ્વયંસિદ્ધ હોય, તો $\Gamma \Sequent \Delta, !A$ પણ એવું છે:
+કાં તો કોઈ આણ્વિક~$!C$ બંને $\Gamma$ અને~$\Delta$નું !!a{element} છે,
+અથવા $!A$ આણ્વિક છે અને~$\Gamma$નું !!a{element} છે.
+અંતિમ સિક્વન્ટ $!A, !A, \Gamma \Sequent \Delta$ હોય,
+તો પણ એ જ દલીલ લાગુ પડે.
+\sourcecorrection{OLMD-312}{મૂળ આ આધાર-કિસ્સામાં ફક્ત ઓળખ-સ્વયંસિદ્ધની શક્યતાઓ આપે છે. અસત્ય ડાબે હોય તે સ્વયંસિદ્ધ માટે પણ સંકોચન પછી અસત્યની ઓછામાં ઓછી એક આવૃત્તિ રહે છે; તેથી આ બીજા સ્વયંસિદ્ધનો કિસ્સો પણ શૂન્ય ઊંચાઈએ સાચો છે.}
+
+$n>0$ હોય, તો $\pi$નો અંત કોઈ નિયમ~$R$થી થાય.
+આ છેલ્લા અનુમાનમાં $!A$ મુખ્ય ન હોય,
+તો \olref{lem:G3c-invert}ની સાબિતીની જેમ
+$\pi$ની તરત પહેલાંની ઉપ-!!{proof}s પર આગમન-ધારણા લગાવીએ
+અને મળેલી !!{proof}s પર એ જ નિયમ~$R$ લગાવીને
+!!a{proof}~$\pi'$ મેળવી શકીએ.
+આગમન-ધારણા આ છે:
+$\Pi \Sequent \Lambda, !D, !D$
+અથવા $!D, !D, \Pi \Sequent \Lambda$ની
+!!{height}~$k<n$ની !!a{proof} હોય,
+તો અનુક્રમે $\Pi \Sequent \Lambda, !D$
+અથવા $!D, \Pi \Sequent \Lambda$ની
+!!{height}~$\le k$ની !!a{proof} મળે.
+(સંદર્ભો કે સંકોચાતું !!{formula} એ $\Gamma$, $\Delta$
+કે~$!A$થી જુદાં હોય, તો પણ આગમન-ધારણા લાગુ પડે છે!)
+
+દાખલા તરીકે $R$ એ $\RightR{\land}$ છે
+અને $\pi$~નો અંત આ છે એમ ધારો:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !B, !A, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta', !C, !A, !A$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A, !A$
+\DisplayProof
+\]
+અહીં $\Delta = \Delta', !B \land !C$ છે.
+આગમન-ધારણાથી અનુક્રમે
+$\Gamma \fCenter \Delta', !B, !A$
+અને $\Gamma \fCenter \Delta', !C, !A$ની
+!!{proof}s $\pi_1'$ અને $\pi_2'$ મળે છે,
+જ્યાં $\pheight{\pi_1'} \le \pheight{\pi_1}$
+અને $\pheight{\pi_2'} \le \pheight{\pi_2}$ છે.
+!!{proof}~$\pi'$ આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !B, !A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta', !C, !A$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A$
+\DisplayProof
+\]
+
+છેલ્લાં અનુમાનમાં $!A$ મુખ્ય હોય,
+તો $\pi$ની તરત પહેલાંની ઉપ-!!{proof}s પર
+પ્રતિલોમન-ઉપપાદ (\olref{lem:G3c-invert}) લગાવીએ,
+પછી આગમન-ધારણા અને પછી ફરી નિયમ~$R$ લગાવીએ.
+દાખલા તરીકે $\pi$ એ $\Gamma \Sequent \Delta, !A, !A$
+સાબિત કરે છે, $!A \ident (!B \land !C)$ છે
+અને છેલ્લા અનુમાનમાં મુખ્ય છે એમ ધારો.
+ત્યારે $\pi$નું સ્વરૂપ આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C, !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta, !B \land !C, !B \land !C$
+\DisplayProof
+\]
+$\pi_1$ પર \olref{lem:G3c-invert} લગાવીને
+$\Gamma \Sequent \Delta, !B, !B$ની !!a{proof}~$\pi_1'$ મળે.
+(તે $\Gamma \Sequent \Delta, !C, !B$ની
+!!a{proof} પણ આપે છે, પરંતુ તેની જરૂર નથી.)
+એ જ રીતે~$\pi_2$ પર \olref{lem:G3c-invert} લગાવીને
+$\Gamma \Sequent \Delta, !C, !C$ની !!a{proof}~$\pi_2'$ મળે.
+\RightR{\land}નું પ્રતિલોમન !!{height}-સંરક્ષક હોવાથી
+$\pheight{\pi_1'} \le \pheight{\pi_1} < \pheight{\pi}$
+અને $\pheight{\pi_2'} \le \pheight{\pi_2} < \pheight{\pi}$ છે.
+એટલે આગમન-ધારણા $\pi_1'$ અને $\pi_2'$ પર લાગુ પડે:
+અનુક્રમે $\Gamma \Sequent \Delta, !B$
+અને $\Gamma \Sequent \Delta, !C$ની
+!!{proof}s~$\pi_1''$ અને $\pi_2''$ મળે,
+જ્યાં $\pheight{\pi_1''} \le \pheight{\pi_1'} \le \pheight{\pi_1}$
+અને $\pheight{\pi_2''} \le \pheight{\pi_2'} \le \pheight{\pi_2}$ છે.
+પછી !!{proof}~$\pi'$ આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$\Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta, !B \land !C$
+\DisplayProof
+\]
+અને $\pheight{\pi'} \le \pheight{\pi}$ છે.
+
+પરિમાણક-નિયમોમાં !!{formula} મુખ્ય હોય
+તે કિસ્સામાં ખાસ સાવચેતી લેવી જોઈએ.
+
+$!A \ident \lforall[x][!B(x)]$ જમણે મુખ્ય છે એમ ધારો.
+ત્યારે $\pi$નો અંત આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, \lforall[x][!B(x)], !B(a)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)], \lforall[x][!B(x)]$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-313}{મૂળ આ સર્વપરિમાણકના વૃક્ષમાં અસ્તિત્વપરિમાણકના જમણા નિયમનું લેબલ આપે છે. આધાર અને નિષ્કર્ષ બંને મુજબ તેને સર્વપરિમાણકનો જમણો નિયમ કર્યો છે.}
+\olref{lem:invert-quant} મુજબ કોઈ પણ એવા~$c$ માટે
+જે $\Gamma \fCenter \Delta, \lforall[x][!B(x)], !B(a)$માં ન આવે,
+$\Gamma \fCenter \Delta, !B(c), !B(a)$ની
+!!{height} $\le \pheight{\pi_1}$ની !!a{proof}~$\pi_1'$ છે.
+$\pi_1'$ નિયમિત છે એમ માની શકીએ;
+એટલે \olref[qua]{lem:subst-regular} મુજબ
+!!{proof} $\Subst{\pi_1'}{a}{c}$ એ
+$\Gamma \fCenter \Delta, !B(a), !B(a)$ની
+!!{height} $\le \pheight{\pi_1}$ની !!a{proof} છે.
+હવે આગમન-ધારણા લાગુ પડે છે અને
+$\Gamma \fCenter \Delta, !B(a)$ની !!a{proof}~$\pi_1''$ આપે છે.
+\RightR{\lforall} લગાવીને~$\pi'$ મેળવો:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B(a)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\DisplayProof
+\]
+અહીં $\pheight{\pi'} \le \pheight{\pi}$ છે.
+
+હવે $!A \ident \lexists[x][!B(x)]$ છે
+અને જમણે મુખ્ય છે એમ ધારો. ત્યારે $\pi$નું સ્વરૂપ આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, \lexists[x][!B(x)], \lexists[x][!B(x)], !B(t)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!B(x)], \lexists[x][!B(x)]$
+\DisplayProof
+\]
+આગમન-ધારણા~$\pi_1$ પર લાગુ પડે છે
+અને $\Gamma \Sequent \Delta, \lexists[x][!B(x)], !B(t)$ની
+!!a{proof}~$\pi_1'$ મળે છે.
+(અહીં પ્રતિલોમન-ઉપપાદની જરૂર નથી તે નોંધો!)
+પછી !!{proof}~$\pi'$ આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta,  \lexists[x][!B(x)], !B(t)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!B(x)]$
+\DisplayProof
+\]
+અહીં $\pheight{\pi'} \le \pheight{\pi}$ છે.
+\sourcecorrection{OLMD-314}{મૂળ આગમનથી મળેલા આધારના ગદ્ય અને વૃક્ષમાં પરિમાણકનું દાખલ-સૂત્ર ફક્ત $!B$ લખે છે. બંને સ્થાનોમાં મૂળ પહેલાના આધારનું એ જ દાખલ $!B(t)$ રાખ્યું છે. એક મળેલી સાબિતી માટે મૂળનું ભૂલથી આવેલું બહુવચન પણ એકવચન કર્યું છે.}
+\end{proof}
+
+\begin{prob}
+\LeftR{\Contraction} માટે \olref{prop:G3c-cont-adm}ની
+સાબિતીની રૂપરેખા આપો.
+$!A \ident (!B \land !C)$ અને $!A \ident (!B \lif !C)$
+હોય તે કિસ્સા વર્ણવો.
+\end{prob}
+
+\begin{prob}
+\LeftR{\Contraction} માટે \olref{prop:G3c-cont-adm}ની
+સાબિતીના બાકી પરિમાણક-કિસ્સાની રૂપરેખા આપો:
+$!A \ident \lforall[x][!B(x)]$
+અને $!A \ident \lexists[x][!B(x)]$ હોય તે કિસ્સા.
+\end{prob}
+
+
+\end{document}

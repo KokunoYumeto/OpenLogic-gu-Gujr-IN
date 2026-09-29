@@ -1,0 +1,94 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0562",
+  "checked_at_utc": "2026-09-28T01:31:22.641722+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0562 Foundation, internal Regularity, and the transitive-closure proof; state-only draft",
+  "report": {
+    "unit_id": "OLP-0562",
+    "source_path": "content/set-theory/spine/foundation.tex",
+    "source_sha256": "18d5d41a2becf13c6d5221d1c3504ea8300d96d85572c8848ed22bfc7ea321a5",
+    "draft_path": "private-state\\work\\batch044_draft\\spine-foundation.tex",
+    "draft_sha256": "ac0d027ab6f44ed014fe53f57a5851673abbf5cd3e9552848b7495f6eb50e0f1",
+    "aligned_blocks": 19,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 51,
+    "target_math_spans_after_corrections": 51,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-119"
+    ],
+    "source_detector_ascii_tokens": 327,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "(\\exists x \\in b)",
+        "(\\exists x \\in B)"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-idea.tex",
+        "sha256": "0e754ebf889a7583c9fdc1e27df41a53e46cf4989d628f28653470d12ccfc801",
+        "terms": [
+          "તબક્કાઓ",
+          "પદાનુક્રમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-stagesbasics.tex",
+        "sha256": "5e15f7e4331eb426db2c4be011214573ad87dbe96fc7972577a32455979782f3",
+        "terms": [
+          "પરંપરિત",
+          "ઉપગણ-સંવૃત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+        "sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+        "terms": [
+          "ન્યૂનતમ કડક ઉચ્ચસીમા",
+          "\\supstrict"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-milestone.tex",
+        "sha256": "a27682872d729b00a6f6559cc63b06b349843e52490466673e5fa217dbe071cb",
+        "terms": [
+          "\\ZFminus",
+          "પ્રતિસ્થાપન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\relations\\operations.tex",
+        "sha256": "8baad1e3ebf355a5c5195bab8f6a9060126934153bd3830b6d68fafa4306831b",
+        "terms": [
+          "પરંપરિત સંવરણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-labels-044.tex",
+        "sha256": "33a0a4105f7f2d529f962fe5ad80dfb8d2ba87e73903494ee585a1aa4528e145",
+        "terms": [
+          "તબક્કાઓ પાયારૂપ છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The two different axioms are kept distinct: Regularity is the source's stage-bounding statement, while Foundation asserts an A-disjoint member of each nonempty A.",
+      "The displayed beta formula in the frozen source refers to undefined lowercase b. OLMD-119 changes only that single symbol to the selected uppercase B; the other 50 formula spans and all formal references are preserved correction-aware.",
+      "The least bounding ordinal values are set-indexed using Replacement; the draft does not pretend the whole class of ordinals is a set.",
+      "The reverse Regularity-to-Foundation proof is explicitly deferred to the rank section, not presented as proved here.",
+      "આધાર and નિયમિતતા are provisional transparent labels governed by exact formulas, not claimed to be direct Gujarati canonical attestations."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0526",
+  "checked_at_utc": "2026-09-27T22:45:06.756564+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0526 antecedent strengthening; state-only draft",
+  "report": {
+    "unit_id": "OLP-0526",
+    "source_path": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+    "source_sha256": "17178d12f5c6ec82fbe5143286b95f4e2cce3b97117cde0884304e39333892c8",
+    "draft_path": "private-state\\work\\batch043_draft\\antecedent-strengthening.tex",
+    "draft_sha256": "592c710c040b364e926fae249b063b7c1e94260d736fa9e76cd1470058709135",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 22,
+    "target_math_spans_after_corrections": 22,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 216,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "diagram_sha256": "8d6c235bb67b33b9c7f6c1ef560b997167a13f361319cf7342b0da13f9cad668",
+    "diagram_byte_identical": true,
+    "finite_countermodel_verified": true,
+    "structural_scan_exclusions": [
+      {
+        "source": "unchanged TikZ countermodel code",
+        "finding_contexts": 9,
+        "reason": "TikZ keys and node names, not untranslated prose; diagram body exactly matches frozen source"
+      }
+    ],
+    "source_light_strike_wording_regularized": true
+  },
+  "status": "draft_linguistic_semantic_formula_and_countermodel_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

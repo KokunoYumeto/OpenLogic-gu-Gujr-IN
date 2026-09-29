@@ -1,0 +1,344 @@
+% Part: incompleteness
+% Chapter: representability-in-q
+% Section: basic-representable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{req}{bre}
+\olsection{મૂળભૂત વિધેયો~$\Th{Q}$માં નિરૂપ્ય છે}
+
+પહેલાં બધા મૂળભૂત વિધેયો
+$\Th{Q}$માં નિરૂપ્ય છે તે બતાવવું
+પડશે. છેવટે દરેક $k$-ચલવાળા
+મૂળભૂત વિધેય $f(x_0,\dots,x_{k-1})$
+માટે તેનું નિરૂપણ કરતું
+!!a{formula}
+$!A_f(x_0,\dots,x_{k-1},y)$
+કેવી રીતે આપવું તે બતાવવાનું છે.
+
+શૂન્ય વિધેય, ઉત્તરગામી વિધેય,
+સરવાળો, ગુણાકાર, સમતા માટેનું
+લાક્ષણિક વિધેય અને પ્રક્ષેપણોનું
+નિરૂપણ કરી શકીશું. દરેક કિસ્સામાં
+યોગ્ય નિરૂપક સૂત્ર સીધું છે:
+દાખલા તરીકે, શૂન્ય વિધેયને
+$y = \Obj 0$ સૂત્ર, ઉત્તરગામીને
+$x_0' = y$ !!{formula}, અને
+સરવાળાને $(x_0 + x_1) = y$
+!!{formula} નિરૂપે છે. કામ એ
+બતાવવાનું છે કે સંબંધિત
+!!{sentence}s~$\Th{Q}$માં
+સાબિત થાય છે. દાખલા તરીકે,
+ઉપરનું !!{formula} સરવાળાને
+નિરૂપે છે એમ કહેવા માટે દરેક
+પ્રાકૃતિક સંખ્યાની જોડ $m$ અને
+$n$ માટે $\Th{Q}$માં આ બંને
+સાબિત થાય છે તે બતાવવું પડે:
+\begin{align*}
+& \eq[\num n + \num m][\num {n+m}] \text{અને}\\
+& \lforall[y][(\eq[(\num n + \num m)][y] \lif \eq[y][\num{n+m}])].
+\end{align*}
+
+\begin{prop}
+\ollabel{prop:rep-zero}
+શૂન્ય વિધેય $\Zero(x) = 0$ને
+$!A_{\Zero}(x,y) \ident \eq[y][\Obj 0]$
+સૂત્ર~$\Th{Q}$માં નિરૂપે છે.
+\end{prop}
+
+\begin{prop}
+\ollabel{prop:rep-succ}
+ઉત્તરગામી વિધેય $\Succ(x) = x+1$ને
+$!A_{\Succ}(x,y) \ident \eq[y][x']$
+સૂત્ર~$\Th{Q}$માં નિરૂપે છે.
+\end{prop}
+
+\begin{prop}
+\ollabel{prop:rep-proj}
+પ્રક્ષેપણ વિધેય
+$\Proj{n}{i}(x_0, \dots, x_{n-1}) = x_i$ને
+$\Th{Q}$માં આ સૂત્ર નિરૂપે છે:
+\[!A_{\Proj{n}{i}}(x_0, \dots, x_{n-1}, y) \ident \eq[y][x_i].\]
+\end{prop}
+
+\begin{prob}
+$\eq[y][\Obj 0]$, $\eq[y][x']$
+અને $\eq[y][x_i]$ અનુક્રમે
+$\Zero$, $\Succ$ અને
+$\Proj{n}{i}$ને નિરૂપે છે
+તે સાબિત કરો.
+\end{prob}
+
+\begin{prop}
+\ollabel{prop:rep-id}
+સમતા~$=$નું લાક્ષણિક વિધેય
+\[
+\Char{=}(x_0, x_1) =
+\begin{cases}
+  1 & \text{જો } x_0 =x_1\\
+  0 & \text{અન્યથા}
+\end{cases}
+\]
+ને~$\Th{Q}$માં આ સૂત્ર નિરૂપે છે:
+\[
+  !A_{\Char{=}}(x_0, x_1, y) \ident (\eq[x_0][x_1] \land \eq[y][\num{1}]) \lor (\eq/[x_0][x_1] \land
+\eq[y][\num{0}]).
+\]
+\end{prop}
+
+સાબિતી માટે આ લેમ્મા જરૂરી છે.
+
+\begin{lem}
+\ollabel{lem:q-proves-neq}
+પ્રાકૃતિક સંખ્યાઓ $n$ અને $m$
+માટે, જો $n \neq m$ હોય, તો
+$\Th{Q} \Proves \eq/[\num n][\num m]$.
+\end{lem}
+
+\begin{proof}
+$n$ પર આગમન વડે સાબિત કરો કે
+દરેક $m$ માટે, $n \neq m$ હોય
+તો $Q \Proves \eq/[\num n][\num m]$.
+
+પાયાના કિસ્સામાં $n = 0$.
+$m$ એ $0$ની બરાબર ન હોય, તો
+કોઈ પ્રાકૃતિક સંખ્યા $k$ માટે
+$m = k + 1$. આપણી પાસે
+$\lforall[x][\eq/[0][x']]$
+કહેતું સ્વયંસિદ્ધ વાક્ય છે.
+પરિમાણકના સ્વયંસિદ્ધ વાક્યથી
+$x$ને $\num k$ વડે બદલીને
+$\eq/[0][\num k']$ તારવી
+શકીએ. પરંતુ $\num k'$ એ જ
+$\num m$ છે.
+
+આગમનના પગથિયામાં $n$ માટે
+દાવો સાચો છે એમ માનીને $n+1$
+વિચારીએ. $m$ કોઈપણ પ્રાકૃતિક
+સંખ્યા લો. બે શક્યતાઓ છે:
+$m = 0$, અથવા કોઈ $k$ માટે
+$m = k+1$. પહેલો કિસ્સો ઉપર
+પ્રમાણે ઉકેલાય છે. બીજા કિસ્સામાં
+માનો કે $n+1 \neq k+1$.
+તો $n \neq k$. $n$ માટેની
+આગમન-ધારણાથી
+$\Th{Q} \Proves \eq/[\num n][\num k]$.
+આપણી પાસે આ સ્વયંસિદ્ધ વાક્ય છે:
+$\lforall[x][\lforall[y][\eq[x'][y'] \lif \eq[x][y]]]$.
+પરિમાણકના સ્વયંસિદ્ધ વાક્યથી
+$\eq[\num n'][\num k'] \lif \eq[\num n][\num
+  k]$ મળે છે. વિધાનાત્મક તર્કથી
+$\Th{Q}$માં
+$\eq/[\num n][\num k] \lif \eq/[\num n'][\num k']$
+તારવી શકીએ. મોડસ પોનેન્સથી
+$\eq/[\num n'][\num k']$ મળે,
+અને એ જ જોઈએ છે, કારણ કે
+$\num k'$ એ $\num m$ છે.
+\end{proof}
+
+\begin{explain}
+લેમ્માનો દાવો બહુ મોટો નથી:
+તેનો સાર એટલો છે કે જુદાં
+અંકનિરૂપણો જુદા પદાર્થો દર્શાવે
+છે તે $\Th{Q}$ સાબિત કરી શકે છે.
+દાખલા તરીકે, $\Th{Q}$ આ સાબિત
+કરે છે: $0'' \neq 0'''$.
+પરંતુ આ સામાન્ય રીતે સાચું છે
+તે બતાવવા થોડી કાળજી જોઈએ.
+આગમન વાપરીએ છીએ, પણ એ
+$\Th{Q}$ની \emph{બહાર}નું
+આગમન છે, એ પણ ધ્યાન રાખો.
+\end{explain}
+
+\begin{proof}[\olref{prop:rep-id}ની સાબિતી]
+$n = m$ હોય, તો $\num{n}$ અને
+$\num{m}$ એક જ પદ છે અને
+$\Char{=}(n, m) = 1$.
+પરંતુ $\Th{Q} \Proves
+(\eq[\num{n}][\num{m}] \land
+\eq[\num{1}][\num{1}])$,
+તેથી $!A_=(\num{n}, \num{m},
+\num{1})$ પણ સાબિત થાય છે.
+$n \neq m$ હોય, તો
+$\Char=(n, m) = 0$.
+\olref{lem:q-proves-neq} પ્રમાણે
+$\Th{Q} \Proves \eq/[\num{n}][\num{m}]$;
+તેથી
+$(\eq/[\num{n}][\num{m}] \land \Obj 0 = \Obj 0)$
+પણ સાબિત થાય છે. આમ
+$\Th{Q} \Proves !A_=(\num{n},
+\num{m}, \num{0})$.
+
+બીજા ભાગમાં પણ બે કિસ્સા છે.
+$n = m$ હોય, તો
+$\Th{Q} \Proves \lforall[y][(!A_=(\num{n}, \num{m}, y)
+  \lif \eq[y][\num{1}])]$
+બતાવવાનું છે. અનૌપચારિક રીતે
+દલીલ કરીએ: માનો કે
+$!A_=(\num{n}, \num{m}, y)$,
+એટલે કે
+\[
+(\eq[\num{n}][\num{n}] \land \eq[y][\num{1}]) \lor
+(\eq/[\num{n}][\num{n}] \land \eq[y][\num{0}])
+\]
+ડાબો વિકલ્પ તર્કથી
+$\eq[y][\num{1}]$ આપે છે;
+જમણો વિકલ્પ તર્કથી સાબિત થતા
+$\eq[\num{n}][\num{n}]$ સાથે
+વિરોધાભાસમાં છે.
+
+બીજી તરફ, માનો કે $n \neq m$.
+ત્યારે $!A_=(\num{n},
+\num{m}, y)$ આ છે:
+\[
+(\eq[\num{n}][\num{m}] \land \eq[y][\num{1}]) \lor
+(\eq/[\num{n}][\num{m}] \land \eq[y][\num{0}])
+\]
+અહીં ડાબો વિકલ્પ
+$\eq/[\num{n}][\num{m}]$ સાથે
+વિરોધાભાસમાં છે; આ વિધાન
+$\Th{Q}$માં
+\olref{lem:q-proves-neq}થી
+સાબિત થાય છે. જમણા
+વિકલ્પમાંથી $\eq[y][\num{0}]$
+નીકળે છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-add}
+સરવાળાનું વિધેય
+$\Add(x_0, x_1) = x_0+x_1$ને
+$\Th{Q}$માં આ સૂત્ર નિરૂપે છે:
+\[
+  !A_{\Add}(x_0, x_1, y) \ident \eq[y][(x_0 + x_1)].
+\]
+\end{prop}
+
+\begin{lem}
+\ollabel{lem:q-proves-add}
+$\Th{Q} \Proves \eq[(\num{n} + \num{m})][\num{n+m}]$
+\end{lem}
+
+\begin{proof}
+આ દાવો~$m$ પર આગમનથી
+સાબિત કરીએ. $m = 0$ હોય, તો
+$\Th{Q} \Proves
+\eq[(\num{n} + \Obj 0)][\num{n}]$
+બતાવવાનું છે. તે સ્વયંસિદ્ધ
+વાક્ય~$!Q_4$થી મળે છે.
+હવે $m$ માટે દાવો માનીને
+$m+1$ માટે, એટલે કે
+$\Th{Q} \Proves \eq[(\num{n} +
+  \num{m+1})][\num{n+m+1}]$,
+સાબિત કરીએ. ધ્યાન આપો કે
+$\num{m+1}$ એ $\num{m}'$
+અને $\num{n+m+1}$ એ
+$\num{n+m}'$ જ છે.
+સ્વયંસિદ્ધ વાક્ય $!Q_5$થી
+$\Th{Q} \Proves
+\eq[(\num{n} + \num{m}')][(\num{n}+\num{m})']$.
+આગમન-ધારણાથી
+$\Th{Q} \Proves
+\eq[(\num{n} + \num{m})][\num{n+m}]$.
+તેથી $\Th{Q} \Proves
+\eq[(\num{n} + \num{m}')][\num{n+m}']$.
+\end{proof}
+
+\begin{proof}[\olref{prop:rep-add}ની સાબિતી]
+$\Add$નું નિરૂપણ કરતું
+!!{formula}~$!A_\Add(x_0, x_1, y)$
+એ $\eq[y][(x_0 + x_1)]$ છે.
+પહેલાં બતાવીએ કે
+$\Add(n, m) = k$ હોય, તો
+$\Th{Q} \Proves
+!A_\Add(\num{n}, \num{m}, \num{k})$,
+એટલે કે $\Th{Q} \Proves
+\eq[\num{k}][(\num{n} + \num{m})]$.
+પરંતુ $k = n + m$ હોવાથી
+$\num{k}$ એ $\num{n+m}$ જ છે;
+અને \olref{lem:q-proves-add}માં
+$\Th{Q} \Proves \eq[(\num{n} +
+  \num{m})][\num{n+m}]$
+પહેલેથી બતાવ્યું છે.
+
+$\Add(n, m) = k$ હોય, તો આ પણ
+બતાવવું પડે:
+\[
+\Th{Q} \Proves \lforall[y][(!A_\Add(\num{n}, \num{m}, y) \lif
+  \eq[y][\num{k}])].
+\]
+માનો કે
+$\eq[(\num{n} + \num{m})][y]$ છે.
+કારણ કે
+\[
+\Th{Q} \Proves \eq[(\num{n}+\num{m})][\num{n+m}],
+\]
+ડાબી બાજુને $\num{n+m}$ વડે
+બદલતાં કોઈપણ~$y$ માટે
+$\eq[\num{n+m}][y]$ મળે છે.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:rep-mult}
+ગુણાકારનું વિધેય
+$\Mult(x_0, x_1) = x_0 \cdot x_1$ને
+$\Th{Q}$માં આ સૂત્ર નિરૂપે છે:
+\[
+  !A_{\Mult}(x_0, x_1, y) \ident y = (x_0 \times x_1).
+\]
+\end{prop}
+
+\begin{proof} અભ્યાસપ્રશ્ન. \end{proof}
+
+\begin{lem}
+\ollabel{lem:q-proves-mult}
+$\Th{Q} \Proves \eq[(\num{n} \times \num{m})][\num{n \cdot m}]$
+\end{lem}
+
+\begin{proof} અભ્યાસપ્રશ્ન. \end{proof}
+
+\begin{prob}
+\olref[inc][req][bre]{lem:q-proves-mult}
+સાબિત કરો.
+\end{prob}
+
+\begin{prob}
+\olref[inc][req][bre]{lem:q-proves-mult}
+વાપરીને
+\olref[inc][req][bre]{prop:rep-mult}
+સાબિત કરો.
+\end{prob}
+
+\begin{explain}
+યાદ રાખો કે અંકગણિતની
+ભાષામાં વિધેય-ચિહ્ન માટે
+$\times$ અને સંખ્યાઓ પરની
+સામાન્ય ગુણાકારક્રિયા માટે
+$\cdot$ વાપરીએ છીએ.
+તેથી સંખ્યાઓ દર્શાવતી
+અભિવ્યક્તિઓની વચ્ચે
+$\cdot$ આવી શકે છે (જેમ કે
+$m \cdot n$માં), જ્યારે
+$\times$ માત્ર અંકગણિતની
+ભાષાનાં પદોની વચ્ચે આવે છે
+(જેમ કે $(\num{m} \times
+  \num{n})$માં). વાત વધુ
+ગૂંચવાય છે, કારણ કે $+$
+બંને માટે વપરાય છે:
+!!{function} માટે પણ અને
+સરવાળાની ક્રિયા માટે પણ.
+તે પદોની વચ્ચે આવે—દાખલા
+તરીકે $(\num{n} + \num{m})$માં—તો
+તે અંકગણિતની ભાષાનું $2$-સ્થાની
+!!{function} છે; અને સંખ્યાઓની
+વચ્ચે આવે—દાખલા તરીકે
+$n+m$માં—તો તે સરવાળાની
+ક્રિયા છે. $\num{n+m}$નો
+કિસ્સો પણ આમાં આવે છે:
+તે સંખ્યા~$n+m$ને અનુરૂપ
+પ્રમાણભૂત અંકનિરૂપણ છે.
+\end{explain}
+
+\end{document}

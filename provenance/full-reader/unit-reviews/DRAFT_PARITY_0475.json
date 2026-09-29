@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0475",
+  "checked_at_utc": "2026-09-27T19:26:07.703875+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0475 applied modal logic part driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0475",
+    "source_path": "content/applied-modal-logic/applied-modal-logic.tex",
+    "source_sha256": "e4daecb067402048d5f0180f1ed05cc9260fc93d2442079ac5ddf7841327ef1e",
+    "draft_path": "private-state\\work\\batch041_draft\\applied-modal-logic.tex",
+    "draft_sha256": "733bab391f9bf311664cf002de879144b2203cc372b6a7dcdf05e8406d323a79",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 22,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "two_active_imports_preserved": true,
+    "structural_scan_exclusions": [
+      {
+        "token": "aml",
+        "count": 1,
+        "reason": "part identifier"
+      }
+    ]
+  },
+  "status": "draft_linguistic_and_import_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

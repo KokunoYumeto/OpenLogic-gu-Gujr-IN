@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/28-middle",
+  "checked_at_utc": "2026-09-26T22:50:16.140157+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0283–0285 state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0283",
+      "source_path": "content/incompleteness/arithmetization-syntax/coding-terms.tex",
+      "source_sha256": "8b7fe6f274da5f46458440ad1e2abb4549f983738a7edd9ae90ae994df19200a",
+      "draft_path": "private-state\\work\\batch028_draft\\coding-terms.tex",
+      "draft_sha256": "98baf82236141f9fbbe9a4601f1e078e2bcef03f08064b7a3e7ec1dcaaff8660",
+      "aligned_blocks": 16,
+      "linguistic_blocks": 12,
+      "source_math_spans": 83,
+      "glossary_tokens": 9,
+      "correction_notes": [],
+      "noncorrection_structure_and_math_equal": true
+    },
+    {
+      "unit_id": "OLP-0284",
+      "source_path": "content/incompleteness/arithmetization-syntax/coding-formulas.tex",
+      "source_sha256": "b8658dcae853e6a0e1321e127effe853874900cc16270e1cc25ab03c8f37b8be",
+      "draft_path": "private-state\\work\\batch028_draft\\coding-formulas.tex",
+      "draft_sha256": "1e1eb98941227989d650505f9ed58275b008d7d006deb70e07660ef5c99a9289",
+      "aligned_blocks": 16,
+      "linguistic_blocks": 12,
+      "source_math_spans": 37,
+      "glossary_tokens": 14,
+      "correction_notes": [
+        "OLINC-005"
+      ],
+      "noncorrection_structure_and_math_equal": true
+    },
+    {
+      "unit_id": "OLP-0285",
+      "source_path": "content/incompleteness/arithmetization-syntax/substitution.tex",
+      "source_sha256": "66c0850ca95d870ba9fbb680abc3b9bbc9a80d98615be0c1a3fe3c3c0d8bbf62",
+      "draft_path": "private-state\\work\\batch028_draft\\substitution.tex",
+      "draft_sha256": "d174a1cca79a1292bf8aab6cb04cb12574896e7acb6abccb3a3712bb50505a59",
+      "aligned_blocks": 11,
+      "linguistic_blocks": 7,
+      "source_math_spans": 14,
+      "glossary_tokens": 5,
+      "correction_notes": [],
+      "noncorrection_structure_and_math_equal": true
+    }
+  ],
+  "status": "partial_draft_correction_aware_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 260
+}

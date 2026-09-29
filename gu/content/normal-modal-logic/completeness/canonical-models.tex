@@ -1,0 +1,35 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: canonical-models
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{cmd}
+
+\olsection{કૅનોનિકલ નિદર્શનો}
+
+મોડલ તંત્ર~$\Sigma$ માટેનું \emph{કૅનોનિકલ નિદર્શન} એ એવું ચોક્કસ
+નિદર્શન~$\mModel{M^\Sigma}$ છે જેમાં જગતો બધા પૂર્ણ
+$\Sigma$-સુસંગત ગણો છે. તેનો પ્રાપ્યતા સંબંધ~$R^\Sigma$ અને
+સત્યમૂલ્ય-નિયુક્તિ $V^\Sigma$ એવી રીતે વ્યાખ્યાયિત થાય છે કે
+જગત~$\Delta$ પર સત્ય !!{formula}s ચોક્કસપણે~$\Delta$માંનાં
+!!{formula}s જ હોય.
+
+\begin{defn}
+  ધારો કે $\Sigma$ સામાન્ય મોડલ તર્ક છે. $\Sigma$ માટેનું
+  \emph{કૅનોનિકલ નિદર્શન} $\mModel{M}^\Sigma =
+  \tuple{W^\Sigma, R^\Sigma, V^\Sigma}$ છે, જ્યાં:
+  \begin{enumerate}
+  \item $W^\Sigma = \Setabs{ \Delta }{\Delta \text{
+      એ પૂર્ણ $\Sigma$-સુસંગત છે} }$.
+  \item $R^\Sigma \Delta\Delta'$ જો અને માત્ર જો
+    \iftag{prvBox}{$\Box^{-1}\Delta \subseteq
+      \Delta'$}{$\Diamond\Delta' \subseteq \Delta$}.
+  \item $V^\Sigma(p) = \Setabs{\Delta}{p \in \Delta}$.
+  \end{enumerate}
+\end{defn}
+
+
+\end{document}

@@ -1,0 +1,94 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0576",
+  "checked_at_utc": "2026-09-28T02:17:52.044963+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0576 ordinal addition by disjoint order sums, recursive equations and noncommutativity; state-only draft",
+  "report": {
+    "unit_id": "OLP-0576",
+    "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+    "source_sha256": "e812adca016fb2b68daed98ef2bc27f45e48a57ceeeb27d244ad5c92a453a6e6",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-arithmetic-addition.tex",
+    "draft_sha256": "9e73541a68e424fc5af4eafe872358f522b4c537ca21d4f31183192e6c5cbacf",
+    "aligned_blocks": 26,
+    "linguistic_blocks": 23,
+    "source_math_spans_correction_aware": 82,
+    "target_math_spans_after_corrections": 82,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-128",
+      "OLMD-129",
+      "OLMD-130"
+    ],
+    "source_detector_ascii_tokens": 617,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\alpha\\disjointsum1 = (\\alpha \\times \\{0\\})\r\n\\disjointsum (\\{0\\} \\times \\{1\\})",
+        "\\alpha\\disjointsum1 = (\\alpha \\times \\{0\\})\r\n\\cup (\\{0\\} \\times \\{1\\})"
+      ],
+      [
+        "\\ordtype{(\\alpha \\times \\{0\\}) \\cup \\{0\\}, \\rlexless}",
+        "\\ordtype{(\\alpha \\times \\{0\\}) \\cup \\emptyset, \\rlexless}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-idea.tex",
+        "sha256": "3c6aec7a0807659af5a151a6569ed2680de6e189752b1c629cd5394063de9598",
+        "terms": [
+          "\\omega+1",
+          "\\omega+\\omega"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+        "sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+        "terms": [
+          "\\ollabel{thmOrdinalRepresentation}",
+          "ક્રમપ્રકાર"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-basic.tex",
+        "sha256": "04651b060194f7d1566c1b81a0f5ab73b80a6d025107ba0db0a280141af07554",
+        "terms": [
+          "\\ollabel{ordinalsaresubsets}",
+          "ઉપગણ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-recursion.tex",
+        "sha256": "aeb5abe00df7192c8e56b9ed2a8dfef17660d4e5ef647f113090239df415f777",
+        "terms": [
+          "\\ollabel{transrecursionschema}",
+          "અનંતાતીત પુનરાવર્તન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+        "sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+        "terms": [
+          "\\supstrict",
+          "સીમા ક્રમવાચક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The disjoint-sum and reverse-lexicographic displays, including English inside the inherited math display, remain exact except two visibly documented source corrections.",
+      "OLMD-128 replaces a second disjoint sum of already tagged pieces by their union; OLMD-129 replaces {0} by the empty set because 0 times {1} is empty.",
+      "The strict-supremum equation is restricted to nonzero limit beta, as the proof states; no commutativity is inferred from associativity.",
+      "OLMD-130 retains the original representation-theorem reference but makes visible that transfinite recursion is the warrant for the recursive equations' existence and uniqueness.",
+      "The Hilbert's Hotel reference is an external prior-section reference, not an invented local result."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,215 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-N2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tni}
+
+\olsection{\Log{N2}માંથી \Log{G2}માં રૂપાંતર}
+
+\begin{prop}\ollabel{prop:N2-to-G2}
+જો $\Log{N2c}\ (\Log{N2i}) \Proves
+\Gamma \Sequent !A$,
+તો~$\Log{G2c}\ (\Log{G2i}) + \Cut \Proves \Gamma'
+\Sequent \Delta$,
+જ્યાં~$\Gamma$માંથી
+ચિહ્નો દૂર કરતાં
+મળતો !!{formula}sનો
+બહુગણ~$\Gamma'$ છે,
+અને~$!A$ એ~$\lfalse$
+ન હોય તો~$\Delta = \{!A\}$,
+જ્યારે હોય તો
+$\Delta = \emptyset$.
+\sourcecorrection{OLMD-249}{મૂળના પરિણામમાં G2c પછી કૌંસમાં N2i લખાયું છે; અનુરૂપ અંતઃપ્રજ્ઞાવાદી સિક્વન્ટ-કલન G2i છે.}
+\end{prop}
+
+\begin{proof}
+ફરી~$\Gamma \Sequent !A$ની
+!!{proof}~$\delta$ની
+ઊંચાઈ પર આગમન કરીએ.
+જો~$\delta$ એ
+$x:!A \Sequent !A$
+સ્વયંસિદ્ધ હોય,
+તો~$\pi$ એ અનુરૂપ
+$!A \Sequent !A$
+સ્વયંસિદ્ધ છે;
+$!A \ident \lfalse$
+હોય ત્યારે
+$\lfalse \Sequent \ $
+લેવું.
+
+જો~$\delta$નો અંત
+અનુમાન-નિયમમાં થાય,
+તો કિસ્સા જુદા પાડીએ:
+\begin{enumerate}
+  \item જો~$R$ એ
+  મુખ્ય સૂત્ર~$!B \lif !C$
+  ધરાવતું~\Intro{\lif}
+  હોય અને~$x:!B$
+  આધારવિધાનના સંદર્ભમાં
+  હોય પણ નિષ્કર્ષના
+  સંદર્ભમાં ન હોય,
+  તો~$\delta$નો અંત
+  આ રીતે થાય છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પનાથી
+  $!B, \Gamma' \Sequent !C$ની
+  (અથવા~$!C \ident \lfalse$
+  હોય તો~$!B, \Gamma'
+  \Sequent \ $ની)
+  !!a{proof}~$\pi_1$
+  મળે છે. પછી
+  \RightR{\lif} લગાવી
+  $\pi$ મળે છે
+  ($!C \ident \lfalse$
+  હોય તો પહેલાં
+  \RightR{\Weakening}
+  લગાવીએ).
+  \item જો~$R$ એ
+  \Intro{\lif} હોય,
+  પણ~$x:!B$
+  આધારવિધાનના સંદર્ભમાં
+  ન હોય, તો~$\delta$નો
+  અંત આ રીતે થાય છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પનાથી
+  $\Gamma' \Sequent !C$ની
+  !!a{proof}~$\pi_1$
+  મળે છે. તેમાં
+  પહેલાં~$!B$ સાથે
+  \LeftR{\Weakening}
+  અને પછી~\RightR{\lif}
+  લગાવી~$\pi$
+  મેળવીએ છીએ.
+  \item જો~$R$ એ
+  \Elim{\lif} હોય,
+  તો~$\delta$નો
+  અંત આ રીતે થાય છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$\Gamma_2 \fCenter !B$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  અહીં~$\Gamma = \Gamma_1 \cup \Gamma_2$.
+  આગમન-પરિકલ્પનાથી
+  $\Gamma_1' \Sequent !B \lif !A$ની
+  !!{proof}~$\pi_1$
+  અને~$\Gamma_2' \Sequent !B$ની
+  સાબિતી~$\pi_2$
+  મળે છે.
+  !!{proof}~$\pi$
+  આ રીતે મળે છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter !B$
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!B \lif !A, \Gamma_2' \fCenter !A$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  બહુગણ~$\Gamma_1' \cup \Gamma_2'$
+  કદાચ~$\Gamma' =
+  (\Gamma_1 \cup \Gamma_2)'$
+  જેટલો ન હોય:
+  દાખલા તરીકે,
+  $\Gamma_1$ અને~$\Gamma_2$
+  બંનેમાં~$x:!C$ હોય,
+  તો~$\Gamma_1' \cup \Gamma_2'$
+  માં~$!C$ની બે નકલો
+  છે, જ્યારે
+  $(\Gamma_1 \cup \Gamma_2)'$
+  માં એક જ છે.
+  યોગ્ય
+  \LeftR{\Contraction}
+  અનુમાનો ઉમેરી
+  આ ભેદ દૂર કરી શકાય.
+
+  જો~$!A \ident \lfalse$
+  હોય, તો~$\delta_2$ પર
+  આગમન-પરિકલ્પના
+  લગાવતાં
+  $\Gamma_2' \Sequent !B$ની
+  !!a{proof} મળે છે.
+  તેને પહેલા આધારવિધાનની
+  સાબિતી અને અસત્યના
+  ખાલી-ઉત્તરાંગ સ્વયંસિદ્ધ
+  સાથે~\LeftR{\lif}
+  અને પછી~\Cut વડે
+  જોડીને
+  !!{proof}~$\pi$
+  મળે છે; અહીં~$!A$
+  માટે ઉત્તરાંગ ખાલી છે.
+  \sourcecorrection{OLMD-250}{મૂળમાં અસત્ય-નિષ્કર્ષના કિસ્સામાં $\delta_2$નું અનુવાદિત ઉત્તરાંગ ખાલી કહેવાયું છે; તે હજી $!B$ સાબિત કરે છે. ખાલી ઉત્તરાંગ અસત્ય-ડાબા સ્વયંસિદ્ધમાંથી આવે છે, જેને અનુસરણ-ડાબા નિયમ અને કટથી જોડવું પડે.}
+\item જો~$R$ એ
+\FalseCl હોય,
+તો~$\delta$નો
+અંત આ રીતે થાય છે:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x: \lnot !A, \Gamma \fCenter \lfalse$
+  \RightLabel{\FalseCl}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof
+  \]
+  આગમન-પરિકલ્પનાથી
+  $\lnot !A,
+  \Gamma' \Sequent \ $ની
+  !!a{proof}~$\pi_1$
+  છે. !!{proof}~$\pi$
+  આ રીતે લઈએ:
+  \[
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma' \fCenter $
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma' \fCenter !A$
+  \DisplayProof
+  \]
+  \sourcecorrection{OLMD-251}{મૂળના અંતિમ G2 વૃક્ષમાં $\pi_1$ના સિક્વન્ટમાં N2નું $x:$ ચિહ્ન રહી ગયું છે; G2 પૂર્વાંગ ચિહ્નવિહોણા સૂત્રોનું બહુગણ છે.}
+\end{enumerate}
+નોંધો કે ફક્ત
+\FalseCl{}ના રૂપાંતરમાં
+જમણી બાજુ એકથી વધુ
+!!{formula} ધરાવતી
+!!a{proof}~$\pi$
+મળે છે. એટલે
+\Log{N2i}ની
+!!{proof}નું રૂપાંતર
+\Log{G2i}-!!{proof}
+છે.
+\end{proof}
+
+\end{document}

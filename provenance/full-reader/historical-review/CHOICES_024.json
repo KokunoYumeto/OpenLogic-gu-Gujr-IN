@@ -1,0 +1,175 @@
+{
+  "schema": "openlogic-gu-contextual-choices/24",
+  "scope": "Computability Theory draft OLP-0228–0251; exact segment links and direct-attestation limits",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "confidence_note": "Qualitative editorial judgments; no calibrated confidence, exhaustive terminology search or independent native-speaker certification is claimed.",
+  "choices": [
+    {
+      "choice_id": "GU-T217",
+      "source_concept": "computability theory / recursion theory / partial computable",
+      "target_forms": "સંગણનીયતા સિદ્ધાંત / પુનરાવર્તન સિદ્ધાંત / આંશિક સંગણનીય",
+      "segment_ids": [
+        "OLP-0229-B005",
+        "OLP-0229-B006",
+        "OLP-0231-B006"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "rationale": "સંગણના અને પુનરાવર્તનનાં ઘટકો સરકારી ગણિત પરિભાષામાં મળે છે; ઐતિહાસિક બે નામોનો ભેદ અને આંશિક વિધેયનો પ્રદેશ સ્થિર મૂળ નક્કી કરે છે.",
+      "alternatives_considered": [
+        "ગણનક્ષમતા — શક્ય નામ, પણ પહેલાંના ૨૦ એકમોમાં સ્થાપિત સંગણનીયતા સાથે સુસંગતતા રાખી છે."
+      ],
+      "uncertainty": "medium: ઘટકો પ્રમાણિત, સંપૂર્ણ specialist નામો સંદર્ભાધારિત",
+      "review_question": "computability theory માટે સંગણનીયતા સિદ્ધાંત પ્રચલિત ગુજરાતી ગણિતીય નામ છે?"
+    },
+    {
+      "choice_id": "GU-T218",
+      "source_concept": "universal partial computable function / indexed enumeration",
+      "target_forms": "સર્વવ્યાપી આંશિક સંગણનીય વિધેય / સૂચક વડે પરિગણના",
+      "segment_ids": [
+        "OLP-0233-B005",
+        "OLP-0233-B007",
+        "OLP-0234-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale": "Un(e,x)ની બે-આર્ગ્યુમેન્ટવાળી વ્યાખ્યા બધા એક-આર્ગ્યુમેન્ટવાળા આંશિક વિધેયો આપે છે; આંશિકતા વિકર્ણ-વિરોધાભાસને ટાળે છે. તપાસેલો સ્ત્રોત સંગણનાનો ઘટક આપે છે, પૂર્ણ નામ નહીં.",
+      "alternatives_considered": [
+        "યુનિવર્સલ વિધેય — ઓળખાય છે, પરંતુ સર્વવ્યાપી મૂળનો કાર્યક્ષેત્ર ગુજરાતી વાચકને ખોલે છે."
+      ],
+      "uncertainty": "open: આખું specialist compound સીધું પ્રમાણિત નથી",
+      "review_question": "universal partial computable function માટે આ રચના સ્પષ્ટ અને સ્વાભાવિક છે?"
+    },
+    {
+      "choice_id": "GU-T219",
+      "source_concept": "computably enumerable / recursively enumerable / semi-decidable",
+      "target_forms": "સંગણકીય રીતે પરિગણનીય / પુનરાવર્તી રીતે પરિગણનીય / અર્ધનિર્ણેય",
+      "segment_ids": [
+        "OLP-0238-B005",
+        "OLP-0238-B006",
+        "OLP-0239-B008"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "rationale": "ખાલી ગણ અથવા સંગણનીય વિધેયનો મૂલ્યગણ એ વ્યાખ્યા છે; અર્ધનિર્ણય સભ્ય માટે હા આપે છે પરંતુ અસદસ્ય માટે ના ફરજિયાત નથી. પરિગણના અગાઉના ગુજરાતી કાર્ય સાથે સુસંગત છે, છતાં સંપૂર્ણ c.e. નામનું સીધું પ્રમાણ બાકી છે.",
+      "alternatives_considered": [
+        "ગણનીય — માત્ર cardinal countabilityનો ગેરઅર્થ આપી શકે; અસરકારક યાદી જરૂરી છે."
+      ],
+      "uncertainty": "open: પૂરું તકનીકી નામ સીધું પ્રમાણિત નથી",
+      "review_question": "c.e. અને r.e. ગણો માટે આ લાંબી પરિભાષા યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T220",
+      "source_concept": "halting set / self-halting set",
+      "target_forms": "અટકવાનો ગણ / સ્વ-અટકવાનો ગણ",
+      "segment_ids": [
+        "OLP-0240-B009",
+        "OLP-0240-B010",
+        "OLP-0235-B005"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale": "K_0 કાર્યક્રમ-ઇનપુટ જોડીઓ અને K સ્વ-ઇનપુટ સૂચકોનો ગણ છે. અગાઉના અટકવાની સમસ્યા નામ સાથે ખાસ ગણ-નામ સુસંગત રાખ્યાં; તપાસેલ glossary આખું નામ આપતું નથી.",
+      "alternatives_considered": [
+        "હાલ્ટિંગ ગણ — અંગ્રેજીનો લિપ્યાંતર, પરંતુ અટકવાનો ગણ ક્રિયા બતાવે છે."
+      ],
+      "uncertainty": "open: સંપૂર્ણ halting-set નામ સીધું પ્રમાણિત નથી",
+      "review_question": "K_0 અને K માટે આ બે જુદાં નામો સ્પષ્ટ છે?"
+    },
+    {
+      "choice_id": "GU-T221",
+      "source_concept": "many-one / one-one / Turing reducibility",
+      "target_forms": "બહુ-એક / એક-એક / ટ્યુરિંગ ન્યૂનીકરણક્ષમતા",
+      "segment_ids": [
+        "OLP-0243-B006",
+        "OLP-0243-B008",
+        "OLP-0243-B009",
+        "OLP-0244-B014"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P034",
+        "GU-P088"
+      ],
+      "rationale": "એક-એક વિધેયનો ઘટક પાઠ્યપુસ્તકમાં છે; m-reductionનું iff સભ્યતા-સૂત્ર હા અને ના બંને જાળવે છે, જ્યારે ટ્યુરિંગ ન્યૂનીકરણ અનેક પ્રશ્નો પૂછે છે. પૂર્ણ નામો સંદર્ભથી રચ્યાં છે.",
+      "alternatives_considered": [
+        "ઘટાડાપણું — ટૂંકું પરંતુ અગાઉના ન્યૂનીકરણ શબ્દ સાથે અસંગત."
+      ],
+      "uncertainty": "open: specialist reductions માટે ગુજરાતી પ્રમાણ બાકી",
+      "review_question": "many-one reducibility માટે બહુ-એક ન્યૂનીકરણક્ષમતા યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T222",
+      "source_concept": "complete computably enumerable set",
+      "target_forms": "પૂર્ણ સંગણકીય રીતે પરિગણનીય ગણ",
+      "segment_ids": [
+        "OLP-0245-B005",
+        "OLP-0245-B006",
+        "OLP-0245-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale": "અહીં પૂર્ણતાનો અર્થ દરેક c.e. ગણનું બહુ-એક ન્યૂનીકરણ છે, માત્ર નિર્ણેયતા કે તર્કશાસ્ત્રીય પૂર્ણતા નહીં; દિશાનો મૂળભૂલ OLCT-009માં ખુલ્લો છે.",
+      "alternatives_considered": [
+        "સંપૂર્ણ ગણ — ટૂંકું, પરંતુ અગાઉના તર્કશાસ્ત્રીય completeness સાથે વધુ ગૂંચવણ કરે છે."
+      ],
+      "uncertainty": "open: આ ખાસ completenessનું સીધું ગુજરાતી પ્રમાણ નથી",
+      "review_question": "c.e.-complete માટે પૂર્ણ શબ્દનો આ સંદર્ભ પૂરતો સ્પષ્ટ છે?"
+    },
+    {
+      "choice_id": "GU-T223",
+      "source_concept": "Rice's theorem / index set / semantic program property",
+      "target_forms": "રાઇસનું પ્રમેય / સૂચક ગણ / પ્રોગ્રામના વર્તનનો ગુણધર્મ",
+      "segment_ids": [
+        "OLP-0248-B008",
+        "OLP-0248-B009",
+        "OLP-0248-B015"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale": "સૂચક ગણ એક જ વિધેય ગણતા બધા સૂચકો અંગે બંધ છે; વાક્યરચનાત્મક પ્રશ્નોથી વર્તન અંગેના પ્રશ્નો અલગ છે. ચોક્કસ નામો મૂળની વ્યાખ્યાથી નિયંત્રિત છે.",
+      "alternatives_considered": [
+        "ઇન્ડેક્સ સેટ — ઓળખાય છે, પરંતુ સૂચક ગણ અગાઉના સૂચક-પ્રયોગ સાથે બંધબેસે છે."
+      ],
+      "uncertainty": "open: ઇપોનિમ અને index-set નામનું સીધું પ્રમાણ નથી",
+      "review_question": "index set માટે સૂચક ગણ અને Rice's theorem માટે રાઇસનું પ્રમેય યોગ્ય છે?"
+    },
+    {
+      "choice_id": "GU-T224",
+      "source_concept": "fixed-point theorem / self-reference / diagonal index",
+      "target_forms": "નિશ્ચિત-બિંદુનું પ્રમેય / સ્વ-સંદર્ભ / વિકર્ણ સૂચક",
+      "segment_ids": [
+        "OLP-0249-B004",
+        "OLP-0249-B008",
+        "OLP-0249-B015",
+        "OLP-0251-B005"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P090"
+      ],
+      "rationale": "સૂચક e પોતાને પ્રથમ પ્રાચલ તરીકે આપી પોતાનો કાર્યક્રમ મેળવી શકે છે; l અને diagની આર્ગ્યુમેન્ટ-સંખ્યાઓ OLCT-011માં સ્પષ્ટ છે. નોંધાયેલા સ્ત્રોતો ગદ્ય અને ઘટક આપે છે, આ પૂર્ણ પ્રમેય-નામ નહીં.",
+      "alternatives_considered": [
+        "સ્થિર-બિંદુનું પ્રમેય — શક્ય શબ્દ; વર્તમાન ગુજરાતી ગદ્યમાં નિશ્ચિત-બિંદુ સતત વપરાયું છે."
+      ],
+      "uncertainty": "open: સંપૂર્ણ specialist નામનું સીધું પ્રમાણ નથી",
+      "review_question": "fixed-point theorem અને self-reference માટે આ ગુજરાતી શબ્દો અનુકૂળ છે?"
+    }
+  ],
+  "status": "complete_draft_choices_same_agent_semantic_review_passed_reader_qa_pending"
+}

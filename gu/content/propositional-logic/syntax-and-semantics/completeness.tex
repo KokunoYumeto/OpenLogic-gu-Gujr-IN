@@ -1,0 +1,133 @@
+% Part: propositional-logic
+% Chapter: propositional-logic 
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{prp}{com}
+
+\olsection{પ્રતિજ્ઞાપન તર્કશાસ્ત્રની પૂર્ણતા}
+
+\begin{defn}
+\ollabel{def:MaxCon}
+!!{formula}નો ગણ~$\Gamma$ \emph{મહત્તમ સુસંગત} કહેવાય,
+જો તે સુસંગત હોય અને કોઈ સુસંગત ગણ~$\Delta$ માટે
+$\Gamma \subseteq \Delta$ હોય ત્યારે $\Gamma = \Delta$ થાય.
+\end{defn}
+
+\begin{lem}[સત્ય સહાયક પ્રમેય]
+  \ollabel{lem:truth}
+$\Gamma$ મહત્તમ સુસંગત હોય, તો:
+\begin{enumerate}
+\item \ollabel{lem:truth-1} $!A \in \Gamma$ જો અને ફક્ત જો
+  $\lnot !A \notin \Gamma$;
+\item \ollabel{lem:truth-2} $\Gamma \Proves !A$ જો અને ફક્ત જો
+  $!A \in \Gamma$;
+\item \ollabel{lem:truth-3} $!A \lif !B \in \Gamma$ જો અને ફક્ત જો
+  કાં તો $!A \notin \Gamma$ અથવા $!B \in \Gamma$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\begin{enumerate}
+\item ધારો કે $!A \in \Gamma$ હોય. જો $\lnot !A \in \Gamma$
+  પણ હોય, તો $\Gamma$ અસુસંગત થાય.
+  બીજી શક્યતા એ છે કે $!A$ કે $\lnot!A$ બેમાંથી એકેય
+  $\Gamma$માં ન હોય. ત્યારે
+  \olref[pl][axd][prv]{prop:provability-exhaustive} પ્રમાણે
+  $\Gamma\cup\{!A\}$ અને $\Gamma \cup \{\lnot !A\}$માંથી
+  એક સુસંગત હોય, એટલે $\Gamma$ મહત્તમ ન હોય.
+  આ બંને અવલોકનો ઊલટી દિશા પણ આપે છે.
+\item જો $!A \in \Gamma$ હોય, તો દેખીતી રીતે $\Gamma \Proves !A$.
+  ઊલટી તરફ, ધારો કે $\Gamma \Proves !A$ હોય.
+  જો $!A \notin \Gamma$ હોય, તો \olref{lem:truth-1}
+  પ્રમાણે $\lnot !A \in \Gamma$ થાય.
+  આમ $\Gamma \Proves !A$ અને $\Gamma \Proves \lnot !A$,
+  જે સુસંગતતા સાથે વિરોધાભાસ આપે છે.
+\item કસરત.
+\end{enumerate}
+\sourcecorrection{OLMD-344}{મૂળના બે જૂના સંદર્ભ એકેય વિસ્તરણ સુસંગત ન હોય તો મૂળ ગણ અસુસંગત થાય તે પરિણામને નિર્દેશે છે, પરંતુ આપેલા નામવાળો ઉલ્લેખ સ્થિર સ્રોતમાં મળતો નથી. તેમની જગ્યાએ હાલની સ્વયંસિદ્ધ-નિગમન રચનાના અસુસંગતતાનાં બંને વિસ્તરણ અંગેના પરિણામનો સ્પષ્ટ સંદર્ભ આપ્યો છે. આગળના નિષ્પન્નતા-અસુસંગતતા સંદર્ભને પણ તેના સાચા વિભાગ સુધી વિસ્તૃત કર્યો છે.}
+\end{proof}
+
+\olref{lem:truth}\olref{lem:truth-2}ની ડાબેથી જમણી દિશા
+બતાવે છે કે $\Gamma$ \emph{નિગમન હેઠળ બંધ} છે:
+દરેક $!A$ માટે, જો $\Gamma \Proves !A$ હોય, તો $!A
+\in \Gamma$ થાય.
+
+\begin{prob}
+  \olref{lem:truth}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{thm}[પૂર્ણતા]
+\ollabel{thm:completeness}
+જો $\Gamma$ સુસંગત હોય, તો $\Gamma$ સંતોષ્ય છે.
+\end{thm}
+
+\begin{proof}
+ભાષાનાં બધાં !!{formula}ની સંપૂર્ણ સૂચિ $!A_0$, $!A_1$,
+\dots લો. !!{formula}ના ગણોનો વધતો ક્રમ
+$\Gamma_0$, $\Gamma_1$, \dots નીચે મુજબ પુનરાવર્તનથી વ્યાખ્યાયિત કરીએ:
+\begin{align*}
+\Gamma_0 & = \Gamma\\
+\Gamma_{n+1} &  =
+\begin{cases}
+  \Gamma_n \cup \{!A_n\} & \text{જો $\Gamma_n \cup \{!A_n\}$ સુસંગત હોય;}\\
+  \Gamma_n \cup \{\lnot !A_n\} & \text{અન્યથા}.
+\end{cases}
+\end{align*}
+પછી આ વ્યાખ્યા આપીએ:
+\[
+\Gamma^* = \bigcup_{0\le n}\Gamma_n.
+\]
+હવે સાબિતીને આગળ વધારવા ક્રમશઃ નીચેની હકીકતો સ્થાપિત કરવાની છે:
+\begin{enumerate}
+\item દરેક $n$ માટે ગણ~$\Gamma_n$ સુસંગત છે:
+  \olref[pl][axd][prv]{prop:provability-exhaustive} વાપરી
+  $n$ પર આગમન કરો;
+\item $\Gamma^*$ સુસંગત છે;
+\item $\Gamma^*$ મહત્તમ છે.
+\end{enumerate}
+પછી સત્યમૂલ્ય-નિયુક્તિ~$v$ એવી વ્યાખ્યાયિત કરીએ કે
+$v(p_i) = \True$ જો અને ફક્ત જો $p_i \in \Gamma^*$.
+$!A$ પર આગમનથી બતાવવાનું છે કે વધુ જટિલ !!{sentence}
+માટે પણ $\Gamma^*$નું સભ્યપદ અને $v$ અનુસારનું સત્ય એક જ છે:
+$\overline{v}(!A) = \True$ જો અને ફક્ત જો $!A \in \Gamma^*$.
+ખાસ કરીને $v$ એ $\Gamma^*$ને સંતોષે છે;
+$\Gamma \subseteq \Gamma^*$ હોવાથી $\Gamma$ પણ સંતોષ્ય છે,
+જે જોઈએ છે.
+\end{proof}
+
+\begin{cor}
+જો $\Gamma \Entails !A$ હોય, તો $\Gamma \Proves !A$.
+\end{cor}
+
+\begin{proof}
+જો $\Gamma\Proves/ !A$ હોય, તો
+\olref[pl][axd][prv]{prop:prov-incons} પ્રમાણે
+$\Gamma \cup \{\lnot !A\}$ સુસંગત છે.
+પૂર્ણતા પ્રમેયથી $\Gamma \cup
+\{\lnot !A\}$ સંતોષ્ય છે, એટલે $\Gamma \Entails/ !A$.
+\end{proof}
+
+\begin{prop}[સઘનતા પ્રમેય]
+\ollabel{prop:compactness}
+$\Gamma$ સંતોષ્ય છે જો અને ફક્ત જો $\Gamma$નો દરેક
+\emph{સાંત} ઉપગણ~$\Gamma_0$ સંતોષ્ય હોય.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ અસંતોષ્ય છે જો અને ફક્ત જો તે અસુસંગત હોય;
+જો અને ફક્ત જો $\Gamma$નો કોઈ સાંત ઉપગણ~$\Gamma_0$
+અસુસંગત હોય; જો અને ફક્ત જો $\Gamma$નો કોઈ સાંત
+ઉપગણ~$\Gamma_0$ અસંતોષ્ય હોય.
+\end{proof}
+
+\begin{cor}
+$\Gamma \Entails !A$ જો અને ફક્ત જો $\Gamma$ના
+કોઈ સાંત ઉપગણ~$\Gamma_0$ માટે $\Gamma_0 \Entails !A$.
+\end{cor}
+
+\end{document}
+

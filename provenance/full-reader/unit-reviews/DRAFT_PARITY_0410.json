@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0410",
+  "checked_at_utc": "2026-09-27T10:13:25.596291+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0410 basic modal language; state-only draft",
+  "report": {
+    "unit_id": "OLP-0410",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/language-modal-logic.tex",
+    "source_sha256": "a75f481c6e175130df3c9145984ca245a8156503d2cb9ff833bd77c39b9529ab",
+    "draft_path": "private-state\\work\\batch040_draft\\language-modal-logic.tex",
+    "draft_sha256": "b8bc2e416690ee3f1b6459166d2d0bd49d933603c9aa19a9f27adef2e5ddb0b3",
+    "aligned_blocks": 30,
+    "linguistic_blocks": 24,
+    "source_math_spans_correction_aware": 61,
+    "target_math_spans_after_corrections": 61,
+    "glossary_tokens": 29,
+    "source_correction_notes": [
+      "OLMD-001"
+    ],
+    "source_detector_ascii_tokens": 129,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      25
+    ],
+    "tagitem_and_iftag_ids_exact_in_order": true
+  },
+  "status": "draft_linguistic_structure_tag_branch_math_and_visible_source_repair_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

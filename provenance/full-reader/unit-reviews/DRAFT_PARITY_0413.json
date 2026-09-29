@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0413",
+  "checked_at_utc": "2026-09-27T10:25:25.267524+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0413 truth at a world and modal duality; state-only draft",
+  "report": {
+    "unit_id": "OLP-0413",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+    "source_sha256": "4c1ea773c2dd5106ceba1ec676dfadbbae432fc9d56b528a4a6b00f2c270fd50",
+    "draft_path": "private-state\\work\\batch040_draft\\truth-at-w.tex",
+    "draft_sha256": "46d30d657530f1e42eddff031f35a1780c09e3a9264daad900a181a46c4c9d03",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 118,
+    "target_math_spans_after_corrections": 118,
+    "glossary_tokens": 7,
+    "source_correction_notes": [
+      "OLMD-004",
+      "OLMD-005",
+      "OLMD-006"
+    ],
+    "source_detector_ascii_tokens": 262,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      11
+    ],
+    "nine_exercise_formulas_exact": true,
+    "modal_truth_clause_tag_scope_repairs": true,
+    "duality_graph_cases_checked": 12420,
+    "source_comment_localized": true
+  },
+  "status": "draft_linguistic_math_proof_duality_and_visible_source_scope_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

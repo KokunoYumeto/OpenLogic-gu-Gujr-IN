@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0372",
+  "checked_at_utc": "2026-09-27T07:00:19.049346+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0372 beta-eta-reduction; state-only draft with proof dependency",
+  "report": {
+    "unit_id": "OLP-0372",
+    "source_path": "content/lambda-calculus/church-rosser/beta-eta-reduction.tex",
+    "source_sha256": "2eee11e77e3bb3052a2e139079f26cb22c1126577b4418f88918a3ede85a3cf4",
+    "draft_path": "private-state\\work\\batch037_draft\\beta-eta-reduction.tex",
+    "draft_sha256": "fa5cab87ff52bd3a8f7eb272aceae48b85231497a902ad913f317f8b59fcb6ba",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 11,
+    "source_math_spans_correction_aware": 28,
+    "target_math_spans_after_corrections": 34,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLLAM-043",
+      "OLLAM-044"
+    ],
+    "source_detector_ascii_tokens": 75,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      6,
+      8,
+      11
+    ],
+    "open_proof_gap": null,
+    "open_proof_dependency": "OLP-0371 parallel beta-eta Church–Rosser proof is not closed"
+  },
+  "status": "draft_linguistic_review_passed_upstream_proof_dependency_open_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

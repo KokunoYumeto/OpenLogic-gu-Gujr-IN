@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/35-opening",
+  "checked_at_utc": "2026-09-27T04:13:40.078079+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0341–0342 λ-calculus opening state-only draft",
+  "reports": [
+    {
+      "unit_id": "OLP-0341",
+      "source_path": "content/lambda-calculus/lambda-calculus.tex",
+      "source_sha256": "55f3d4f5216c89a10fcbf8a214d658099485999fefd9391402994dea1881cec3",
+      "draft_path": "private-state\\work\\batch035_draft\\lambda-calculus.tex",
+      "draft_sha256": "9a664c807c0a6beb00a5ed3ac654c566671e84c2066511f395440e6c2d71bc7d",
+      "aligned_blocks": 11,
+      "linguistic_blocks": 2,
+      "source_math_spans": 0,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 58,
+      "target_untranslated_prose_findings": 0,
+      "legitimate_ascii_exceptions": [
+        "lam macro identifier",
+        "Jeremy Avigad",
+        "Zesen Qian",
+        "Mitacs"
+      ],
+      "math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0342",
+      "source_path": "content/lambda-calculus/introduction/introduction.tex",
+      "source_sha256": "6988c2c02fea28c8ff52a0d0fa77a51efceb656455a10f50c3fd702a4a09a5fc",
+      "draft_path": "private-state\\work\\batch035_draft\\introduction.tex",
+      "draft_sha256": "7fdda89fd747d466e4030db4004188c51a9313c03e44d8b26dcd8de57e1f9160",
+      "aligned_blocks": 20,
+      "linguistic_blocks": 2,
+      "source_math_spans": 0,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 38,
+      "target_untranslated_prose_findings": 0,
+      "legitimate_ascii_exceptions": [
+        "Jeremy proper name"
+      ],
+      "math_structure_and_glossary_equal": true
+    }
+  ],
+  "status": "draft_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0401",
+  "checked_at_utc": "2026-09-27T09:51:42.585288+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0401 infinite-valued Gödel logic; state-only draft",
+  "report": {
+    "unit_id": "OLP-0401",
+    "source_path": "content/many-valued-logic/infinite-valued-logics/goedel.tex",
+    "source_sha256": "5d2ee265f4bec099c01297f7e6d605c3c0100e59a96cce2cf9636ec9fb9e186b",
+    "draft_path": "private-state\\work\\batch039_draft\\infinite-valued-goedel.tex",
+    "draft_sha256": "af27b477f404465ca234ff0264ce6d98fc461b430144f420daa2c0bac0e84b70",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 89,
+    "target_math_spans_after_corrections": 89,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMV-015",
+      "OLMV-016"
+    ],
+    "source_detector_ascii_tokens": 171,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7
+    ],
+    "four_truth_tables_cell_and_order_exact": true,
+    "finite_premise_converse_countermodel_verified": true,
+    "source_comment_chapter_typo_fixed": true,
+    "prose_scan_tabular_exception": "four parity-verified tables removed from prose scan; their column codes are structural TeX"
+  },
+  "status": "draft_linguistic_math_table_and_visible_source_scope_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

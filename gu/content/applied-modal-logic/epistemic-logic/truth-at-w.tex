@@ -1,0 +1,118 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: truth-at-w
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{trw}
+
+\olsection{જગતમાં સત્ય}
+
+સામાન્ય મોડલ તર્કની જેમ દરેક જ્ઞાનસંબંધી નિદર્શ એ નક્કી કરે છે કે
+તેના કયા જગતમાં કયાં !!{formula}s સત્ય ગણાય. સંબંધાત્મક
+અર્થવિજ્ઞાનના મૂળ ખ્યાલ માટે આપણે એ જ સંજ્ઞા વાપરીએ છીએ:
+``નિદર્શ~$\mModel{M}$માં !!{formula}~$!A$ જગત~$w$માં સત્ય છે.''
+આ સંબંધ આગમનાત્મક રીતે વ્યાખ્યાયિત થાય છે અને બધા બિનમોડલ
+સંક્રિયકો માટે સામાન્ય મોડલ તર્કના કિસ્સા જેવો જ છે.
+
+\begin{defn}\ollabel{defn:mmodels}
+  નિદર્શ~$\mModel M$માં \emph{!!a{formula}~$!A$નું~$w$માં સત્ય હોવું},
+  સંજ્ઞામાં $\mSat{M}{!A}[w]$, નીચે મુજબ આગમનાત્મક રીતે
+  વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[w]$ ક્યારેય નહીં}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[w]$ હંમેશા}.}{}
+  \item $\mSat{M}{p}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $w \in V(p)$
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$} (અથવા બંને).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat/{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બંને હોય, અથવા
+    $\mSat{M}{!B}[w]$ તથા $\mSat{M}{!C}[w]$ બેમાંથી એકેય ન હોય}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+    $R_a ww'$ ધરાવતા દરેક $w' \in W$ માટે $\mSat{M}{!B}[w']$}
+  \end{enumerate} 
+\end{defn}
+
+પરંતુ અહીં આપણા સુલભતા સંબંધો પરનાં નિયંત્રણો વિશે વિચારવું પડે.
+કારણ કે \olref{defn:sub:mmodels-box}ની શરત મુજબ, $R_a ww'$
+ધરાવતું કોઈ~$w'$ ન હોય ત્યારે~$\Knows_a !B$ એ !!a{formula}
+જગત~$w$માં સત્ય છે. આ સામાન્ય મોડલ તર્કની જ શરત છે: કોઈ
+જગતનાં અનુગામી જગતો ન હોય, તો ત્યાં બધાં $\Box$-સૂત્રો
+રિક્તપણે સત્ય હોય છે. પરંતુ $\Knows$ને \emph{જ્ઞાન} દર્શાવતો
+માનીએ, તો આ ઘણું વિસંગત લાગે છે. સામાન્ય રીતે આપણે માનીએ છીએ
+કે એવો \emph{કોઈ} સંજોગ નથી જેમાં કર્તા એક જ સમયે $!A$ અને
+$\lnot !A$ બંને જાણતો હોય.
+
+એક ઉપાય એ છે કે જ્ઞાનસંબંધી તર્કમાં સુલભતા સંબંધ હંમેશા
+\emph{સ્વવાચક} હોય તે સુનિશ્ચિત કરીએ. આ લગભગ એ વિચારને અનુરૂપ
+છે કે વાસ્તવિક જગત કર્તાની માહિતી સાથે સુસંગત છે. હકીકતમાં,
+જ્ઞાનસંબંધી તર્કપદ્ધતિઓ સામાન્ય રીતે S5 વાપરે છે, પરંતુ
+$\Knows_a$ સંબંધ વડે ચોક્કસ શું દર્શાવવું છે તેના આધારે
+કેટલીક પદ્ધતિઓ નબળાં તંત્રો વાપરી શકે છે.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$}; 
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$}; 
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[<->] (w1) to node {$a$} (w2);
+      \draw[->,loop left] (w1) to node {$a,b$} (w1);
+      \draw[<->] (w1) to [swap] node {$b$} (w3);
+      \draw[->,loop above] (w2) to node {$a,b$} (w2) ;
+      \draw[->,loop below] (w3) to node {$a,b$} (w3) ;
+    \end{tikzpicture}
+  \end{center}
+  \caption{એક સરળ જ્ઞાનસંબંધી નિદર્શ.}
+  \ollabel{fig:simple}
+\end{figure}
+
+\begin{prob}
+  નીચેનામાંથી કયા દાવા
+  \olref[aml][el][trw]{fig:simple}માં સત્ય છે તે વિચારો:
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_a \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b q \lor \Knows_b \lnot q}[w_2]$;
+    \item $\mSat{M}{\Knows_a( \Knows_b q \lor \Knows_b \lnot q)}[w_2]$;
+    \item $\mSat{M}{\EKnows_{\{a,b\}} \lnot q}[w_3]$;
+    \end{enumerate}
+\end{prob}
+
+હવે જગતમાં સત્યની મૂળભૂત વ્યાખ્યા આપી છે, એટલે સામાન્ય મોડલ
+તર્કના મોડલ પ્રામાણ્યતા અને તાર્કિક પરિણામ જેવા બીજા
+અર્થવિજ્ઞાનલક્ષી ખ્યાલો અહીં પણ સીધા લાગુ પડે છે; ફક્ત મોડલ
+સંક્રિયકોનું અર્થઘટન કરવાની આ નવી રીત તેમને લાગુ પડે છે.
+
+હવે સામાન્ય જ્ઞાનના સંક્રિયક~$\CKnows_G$ માટે સત્ય-શરતો પણ આપી
+શકીએ છીએ. \olref[sfr][rel][ops]{sec}માંથી યાદ કરો કે સંબંધ~$R$નું
+\emph{પરંપરિત સંવરણ}~$R^+$ નીચે મુજબ વ્યાખ્યાયિત થાય છે:
+\begin{align*}
+  R^+ &= \bigcup_{ n \in \mathbb{N}} R^n, 
+\intertext{જ્યાં}
+  R^0 & = R \text{ અને}\\ 
+  R^{n+1} & = \Setabs{\tuple{x, z}}{\exists y (R^n xy \land Ryz)}.
+\end{align*}
+પછી $G$ કર્તાઓનો સમૂહ હોય ત્યારે, $R_G = ( \bigcup_{b
+\in G} R_b )^+$ને બધા કર્તાઓના સુલભતા સંબંધોના સંઘનું
+પરંપરિત સંવરણ તરીકે વ્યાખ્યાયિત કરીએ છીએ.
+
+\begin{defn}
+જો $G' \subseteq G$ હોય, તો $\mSat{M}{\CKnows_{G'} !A}[ w]$
+ત્યારે અને માત્ર ત્યારે જ જ્યારે $R_{G'} w w'$ ધરાવતા દરેક
+$w'$ માટે $\mSat{M}{!A}[w']$.
+\end{defn}
+
+\end{document}

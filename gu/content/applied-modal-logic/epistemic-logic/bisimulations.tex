@@ -1,0 +1,104 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: bisimulations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{bsd}
+
+\olsection{દ્વિઅનુકરણો}
+
+આપણી જ્ઞાનસંબંધી ભાષાની અભિવ્યક્તિ-શક્તિ વિશેનો એક બાકી પ્રશ્ન
+નિદર્શો અને તેમાં સત્ય હોય એવાં સૂત્રો વચ્ચેના સંબંધને લગે છે.
+ફ્રેમ-અનુરૂપતાનાં પરિણામોમાં આપણે જોયું છે કે અમુક સૂત્રો
+ફ્રેમમાં પ્રામાણ્ય હોય, તો એ ફ્રેમ અમુક ગુણધર્મો ધરાવે છે.
+પણ શું આપણી મોડલ ભાષા, દાખલા તરીકે, પોતાને જ જતું સ્વવાચક તીર
+ધરાવતા જગત અને એક પછી બીજા જગતમાં જતી અનંત શૃંખલા વચ્ચે ભેદ
+કરી શકે? એટલે કે, આ બેમાંથી માત્ર એક જ જગતમાં સત્ય હોય એવું
+કોઈ સૂત્ર~$A$ છે?
+
+\emph{દ્વિઅનુકરણ} (બાઇસિમ્યુલેશન) એવો સંબંધ છે જે બે
+સંબંધાત્મક નિદર્શો વચ્ચે વ્યાખ્યાયિત કરી શકાય છે અને દર્શાવે
+છે કે એમની રચના અસરકારક રીતે સમાન છે. આપણે જોઈશું કે તે
+આપણી જ્ઞાનસંબંધી ભાષા વડે ઓળખી શકાય એવી નિદર્શોની એક પ્રકારની
+સમતુલ્યતા પકડે છે.
+
+\begin{defn}[દ્વિઅનુકરણ]
+$M_1 = \tuple{W_1, R_1, V_1}$ અને $M_2 = \tuple{W_2, R_2, V_2}$
+એ બે સંબંધાત્મક નિદર્શો હોય. વળી $\mathcal{R} \subseteq W_1 \times W_2$
+દ્વિસ્થાની સંબંધ હોય. દરેક $\tuple{w_1, w_2} \in \mathcal{R}$
+માટે નીચેની શરતો પૂરી થાય ત્યારે $\mathcal{R}$ને
+\emph{દ્વિઅનુકરણ} કહીએ છીએ:
+\sourcecorrection{OLMD-079}{મૂળની બીજી અને ત્રીજી શરતમાં
+કર્તાઓનો ગણ $A$ લખાયો છે; આ પ્રકરણમાં તે ગણ $G$ તરીકે
+વ્યાખ્યાયિત થયો છે. બંને શરતમાં $G$ મૂક્યો છે.}
+
+\begin{enumerate}
+  \item બધા !!{propositional variable}s~$p$ માટે
+  $w_1 \in V_1(p)$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $w_2 \in V_2(p)$.
+  \item બધા કર્તાઓ $a \in G$ અને જગતો $v_1 \in W_1$ માટે,
+  $R_{1_a} w_1 v_1$ હોય તો કોઈ $v_2 \in W_2$ એવું હોય કે
+  $R_{2_a} w_2 v_2$ અને $\tuple{v_1, v_2} \in
+  \mathcal{R}$.
+  \item બધા કર્તાઓ $a \in G$ અને જગતો $v_2 \in W_2$ માટે,
+  $R_{2_a} w_2 v_2$ હોય તો કોઈ $v_1 \in W_1$ એવું હોય કે
+  $R_{1_a} w_1 v_1$ અને $\tuple{v_1, v_2} \in
+  \mathcal{R}$.
+\end{enumerate}
+
+$M_1$ અને $M_2$ વચ્ચેના દ્વિઅનુકરણમાં જગતો $w_1$ અને $w_2$
+જોડાયેલા હોય, તો $\tuple{M_1, w_1} \leftrightarroweq
+\tuple{M_2, w_2}$ પણ લખી શકીએ છીએ અને $\tuple{M_1, w_1}$ તથા
+$\tuple{M_2, w_2}$ને \emph{દ્વિઅનુકરણ-સમાન} કહીએ છીએ.
+\end{defn}
+
+દ્વિઅનુકરણની જુદી શરતો જુદી બાબતો સુનિશ્ચિત કરે છે.
+પહેલી શરત બધા !!{propositional variable}s વિશે સહમતિ
+સુનિશ્ચિત કરે છે; તેથી દ્વિઅનુકરણ-સમાન જગતોમાં સમાન
+મોડલ-મુક્ત સૂત્રો સત્ય હશે. બીજી અને ત્રીજી શરતોને અનુક્રમે
+``આગળ'' અને ``પાછળ''ની શરત કહેવાય છે; તે સુલભતા સંબંધોની
+રચના સમાન હોવાની ખાતરી આપે છે.
+
+\begin{thm}
+જો $\tuple{M_1, w_1} \leftrightarroweq \tuple{M_2, w_2}$, તો દરેક
+!!{formula}~$!A$ માટે $\mSat{M_1}{!A}[w_1]$ ત્યારે અને માત્ર
+ત્યારે જ જ્યારે $\mSat{M_2}{!A}[w_2]$.
+\end{thm}
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) {$w_1$}; 
+      \node[world] (w2) [above left=of w1]{$w_2$}; 
+      \node[world] (w3) [above right=of w1] {$w_3$};
+      \draw[<->] (w1) to node {$a$} (w2);
+      \draw[->,loop below] (w1) to node {$a$} (w1);
+      \draw[<->] (w1) to [swap] node {$a$} (w3);
+      \draw[->,loop above] (w2) to node {$a$} (w2) ;
+      \draw[->,loop above] (w3) to node {$a$} (w3) ;
+      
+      \node[world](v1)[right of=w1, xshift=1.5in]{$v_1$};
+      \node[world](v2)[above of=v1]{$v_2$};
+      \draw[<->] (v1) to node {$a$} (v2);
+      \draw[->,loop below] (v1) to node {$a$} (v1);
+      \draw[->,loop above] (v2) to node {$a$} (v2) ;
+
+      \draw[-,dotted] (w1) to (v1) ;
+      \draw[-,dotted,bend left=45] (w2) to (v2) ;
+      \draw[-,dotted,bend left=30] (w3) to (v2) ;
+    \end{tikzpicture}
+  \end{center}
+  \caption{બે દ્વિઅનુકરણ-સમાન નિદર્શો.}
+  \ollabel{fig:bisimilar}
+\end{figure}
+
+\olref{fig:bisimilar}માં દર્શાવેલા બે નિદર્શો એકસરખા નથી,
+છતાં જગતો $w_1$ અને~$v_1$ને જોડતું દ્વિઅનુકરણ છે. આ
+દ્વિઅનુકરણ $w_2$ અને $w_3$ બંનેને~$v_2$ સાથે પણ જોડે છે:
+આપણી મોડલ ભાષામાં વ્યક્ત થઈ શકે એવી કોઈ બાબત ખરેખર એમની
+વચ્ચે ભેદ કરી શકતી નથી. જોકે $w_2$ અને~$w_3$માં જુદાં
+!!{propositional variable}s સત્ય હોત, તો સ્થિતિ જુદી હોત.
+
+\end{document}

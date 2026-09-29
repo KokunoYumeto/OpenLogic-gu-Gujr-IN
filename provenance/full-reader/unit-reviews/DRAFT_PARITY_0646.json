@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0646",
+  "checked_at_utc": "2026-09-28T16:43:44.812453+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0646 Combined first-order syntax and semantics chapter driver; state-only draft",
+  "report": {
+    "unit_id": "OLP-0646",
+    "source_path": "content/first-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+    "source_sha256": "380792883e147d6bd35236c0ab68243f087e068d8d12ddc189fca9f33d633cb8",
+    "draft_path": "private-state\\work\\batch044_draft\\syntax-and-semantics.tex",
+    "draft_sha256": "3119e592e3593504bb57cb6235233f770b0ba7169ff99e942e98c377ddf64de8",
+    "aligned_blocks": 21,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 3,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\syntax-and-semantics\\intro-syntax.tex",
+        "sha256": "90f6cb8e3a46b7038883cb93dc9cdc362443592fce7a4dcffe4ec21a346f1218",
+        "terms": [
+          "વાક્યરચના"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\syntax-and-semantics\\intro-semantics.tex",
+        "sha256": "51d9700d5088838b6709763cba455bfc185b342af6d76bf68d79dae8e626c335",
+        "terms": [
+          "અર્થવિચાર"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

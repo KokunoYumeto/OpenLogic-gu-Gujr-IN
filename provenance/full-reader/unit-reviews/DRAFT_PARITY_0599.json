@@ -1,0 +1,86 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0599",
+  "checked_at_utc": "2026-09-28T03:40:10.411853+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0599 Banach–Tarski and extrinsic considerations about Choice; state-only draft",
+  "report": {
+    "unit_id": "OLP-0599",
+    "source_path": "content/set-theory/choice/banach.tex",
+    "source_sha256": "51f2d8e142b4bccd21bc0aa06330ecff874360d32005b34c415955eaaa24943a",
+    "draft_path": "private-state\\work\\batch044_draft\\choice-banach.tex",
+    "draft_sha256": "ca5009650211438eb52c4208671ea5709261cf96ad2ac1430b4708ff1d50aabe",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 5,
+    "target_math_spans_after_corrections": 5,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-150"
+    ],
+    "source_detector_ascii_tokens": 474,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\tan(\\pi(r-\\nicefrac{1}{2})))$",
+        "$\\tan(\\pi(r-\\nicefrac{1}{2}))$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-extrinsic.tex",
+        "sha256": "ab45e8670543a84fb62ed0b5f5d3be8e418dbdc4d74427b1890ea9e13b3c5ba4",
+        "terms": [
+          "બૂલોઝ",
+          "બાહ્ય"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-justifications.tex",
+        "sha256": "42ad70b722e578e3125e67b6d5c883338887d077674e75f1c6492f6e49898bb8",
+        "terms": [
+          "\\stagesacc",
+          "બધા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-hartogs.tex",
+        "sha256": "67000ccd938d62c3c5f6aa9ba01a40de5b62bb5575880b29b54307eb00d15b38",
+        "terms": [
+          "તુલનીયતા",
+          "સુક્રમિતતા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The theorem is presented for solid balls in the volume context; translations are rigid motions, not transport of physical matter.",
+      "The five-piece observation says not all pieces are measurable, without assigning volumes to nonmeasurable pieces.",
+      "The joke preserves the exact Latin letters in its question and answer because transliteration would change the anagram."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Banach--Tarski",
+        "count": 3,
+        "reason": "The closing anagram joke depends on the exact Latin letters of the name and repeats them in its answer."
+      }
+    ],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citet[Theorem 3.12]{Wagon2016}",
+        "count": 1
+      },
+      {
+        "literal": "\\citet[pp.~66--7]{Wagon2016}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

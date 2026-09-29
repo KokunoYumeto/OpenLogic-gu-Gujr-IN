@@ -1,0 +1,174 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: tautological-instances
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{tau}
+
+\olsection{પુનરુક્તિના પ્રતિસ્થાપન દૃષ્ટાંતો}
+
+\begin{explain}
+મોડલ-મુક્ત સૂત્ર દરેક સત્યમૂલ્ય-નિમણૂક હેઠળ સત્ય હોય
+તો તે પુનરુક્તિ છે. સ્પષ્ટ છે કે દરેક પુનરુક્તિ દરેક
+નિદર્શનના દરેક જગતમાં સત્ય છે. પરંતુ $\Box$
+અને~$\Diamond$ ધરાવતા !!{formula}s માટે પુનરુક્તિનો
+ખ્યાલ વ્યાખ્યાયિત નથી. તો શું, દાખલા તરીકે,
+$\Box p \lor \lnot \Box p$---મધ્યના નિષેધના સિદ્ધાંતનો
+એક દૃષ્ટાંત---માન્ય છે? \emph{પુનરુક્તિનો પ્રતિસ્થાપન દૃષ્ટાંત}
+એ ખ્યાલ ઉપયોગી છે: તે (બિનમોડલ) પુનરુક્તિનો
+પ્રતિસ્થાપન દૃષ્ટાંત હોય એવું !!a{formula}. દરેક
+આવો દૃષ્ટાંત માન્ય છે તે નવાઈની વાત નથી, છતાં
+તેનું પ્રમાણ જરૂરી છે.
+\end{explain}
+
+\begin{defn}
+  મોડલ !!{formula}~$!B$ \emph{પુનરુક્તિનો પ્રતિસ્થાપન દૃષ્ટાંત}
+  ત્યારે અને માત્ર ત્યારે જ છે જ્યારે !!{propositional
+    variable}s $p_1$, \dots,~$p_n$ ધરાવતી મોડલ-મુક્ત
+  પુનરુક્તિ~$!A$ અને !!{formula}s $!D_1$,
+  \dots,~$!D_n$ એવાં હોય કે $!B \ident \SSubst{!A}{\subst{!D_1}{p_1},
+    \dots, \subst{!D_n}{p_n}}$.
+\end{defn}
+
+\begin{lem}\ollabel{lem:valid-taut}
+  માનો કે $!A$ એ મોડલ-મુક્ત !!{formula} છે જેનાં !!{propositional
+  variable}s $p_1$, \dots, $p_n$ છે, અને $!D_1$, \dots,
+  $!D_n$ મોડલ !!{formula}s છે. તો કોઈપણ નિમણૂક $\pAssign{v}$,
+  કોઈપણ નિદર્શન $\mModel{M} = \tuple{W, R, V}$ અને એવા કોઈપણ
+  $w \in W$ માટે કે જ્યાં $\pAssign{v}(p_i) = \True$ ત્યારે અને માત્ર
+  ત્યારે જ જ્યારે $\mSat{M}{!D_i}[w]$ હોય, નીચેનું સાચું છે:
+  $\pSat{v}{!A}$ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $\mSat{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+      \subst{!D_n}{p_n}}}[w]$.
+\end{lem}
+
+\begin{proof}
+  $!A$ પર આગમનથી.
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\pSat/{v}{\lfalse}$
+      અને $\mSat/{M}{\lfalse}[w]$ બંને ખોટાં છે.}}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\pSat{v}{\ltrue}$
+      અને $\mSat{M}{\ltrue}[w]$ બંને સાચાં છે.}}{}
+  \item \indcase{!A}{p_i}{%
+    \begin{align*}
+      \pSat{v}{p_i} \Leftrightarrow {} & \pAssign{v}(p_i) = \True \\
+      & \qquad \text{$\pSat{v}{p_i}$ની વ્યાખ્યા મુજબ}\\
+      \Leftrightarrow {} & \mSat{M}{!D_i}[w] \\
+      &\qquad \text{ધારણા મુજબ}\\
+      \Leftrightarrow {} & \mSat{M}{\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+      &\qquad \text{કેમ કે $\SSubst{p_i}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}} \ident !D_i$}.
+      \end{align*}}
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+      \begin{align*}
+        \pSat{v}{\lnot !B} \Leftrightarrow {} & \pSat/{v}{!B}\\
+        &\qquad \text{$\pSat{v}{}$ની વ્યાખ્યા મુજબ};\\
+        \Leftrightarrow {} & \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{આગમન-ધારણા મુજબ}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{\lnot !B}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ}.
+      \end{align*}}}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \land !C} \Leftrightarrow {} &
+        \pSat{v}{!B} \text{ અને } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ની વ્યાખ્યા મુજબ}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ અને } \\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{આગમન-ધારણા મુજબ}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \land !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ}.
+      \end{align*}}}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lor !C} \Leftrightarrow{} &
+        \pSat{v}{!B} \text{ અથવા } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ની વ્યાખ્યા મુજબ};\\
+        \Leftrightarrow{} & \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ અથવા }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{આગમન-ધારણા મુજબ}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lor !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ}.
+      \end{align*}}}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \lif !C} \Leftrightarrow{} &
+        \pSat/{v}{!B} \text{ અથવા } \pSat{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ની વ્યાખ્યા મુજબ}\\
+        \Leftrightarrow{} &
+        \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ અથવા }\\
+        & \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{આગમન-ધારણા મુજબ}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(!B \lif !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ}.
+      \end{align*}}}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{%
+      \begin{align*}
+        \pSat{v}{!B \liff !C} \Leftrightarrow {} &
+        \text{ક્યાં તો } \pSat{v}{!B} \text{ અને } \pSat{v}{!C}\\
+        & \text{અથવા } \pSat/{v}{!B} \text{ અને } \pSat/{v}{!C}\\
+        &\qquad \text{$\pSat{v}{}$ની વ્યાખ્યા મુજબ}\\
+        \Leftrightarrow {} &
+        \text{ક્યાં તો } \mSat{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ અને }\\
+        & \qquad \mSat{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\ 
+        &  \text{ અથવા } \mSat/{M}{\SSubst{!B}{\subst{!D_1}{p_1}, \dots,
+            \subst{!D_n}{p_n}}}[w] \text{ અને }\\
+        & \qquad \mSat/{M}{\SSubst{!C}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad\text{આગમન-ધારણા મુજબ}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{(!B \liff !C)}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ની વ્યાખ્યા મુજબ}.
+      \end{align*}}}{}
+  \end{enumerate}
+  \end{proof}
+\sourcecorrection{OLMD-007}{સ્થિર અંગ્રેજી મૂળમાં
+નકારનો આગમન-કિસ્સો \texttt{prvFalse} હેઠળ મૂકાયો છે;
+અહીં એ જ પ્રમાણ \texttt{prvNot} હેઠળ મૂક્યું છે.}
+\sourcecorrection{OLMD-008}{દ્વિપક્ષીયના આગમન-કિસ્સાની
+પ્રથમ સમતામાં મૂળે \texttt{lif} લખાયેલું છે; કિસ્સાના
+સૂત્ર અને અંતિમ સમતા પ્રમાણે તેને \texttt{liff} કર્યું છે.}
+\sourcecorrection{OLMD-009}{નકારના કિસ્સાની અંતિમ
+સમતાનું કારણ મૂળે \texttt{pSat}ની વ્યાખ્યા કહે છે;
+તે ખરેખર નિદર્શનની \texttt{mSat} સત્યતા-વ્યાખ્યા છે.}
+
+\begin{prop}\ollabel{prop:valid-taut}
+  પુનરુક્તિના બધા પ્રતિસ્થાપન દૃષ્ટાંતો માન્ય છે.
+\end{prop}
+
+\begin{proof}
+  પ્રતિધનાત્મક રીતે, માનો કે કોઈ નિદર્શન $\mModel{M}$ અને
+  જગત~$w$ માટે એવું $!A$ છે કે
+  $\mSat/{M}{\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+  \subst{!D_n}{p_n}}}[w]$.
+  એવી નિમણૂક $\pAssign{v}$ વ્યાખ્યાયિત કરો કે $\pAssign{v}(p_i) =
+  \True$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $\mSat{M}{!D_i}[w]$
+  હોય (અને $q \notin \{p_1, \dots, p_n \}$ માટે $\pAssign{v}$
+  ગમે તે સત્યમૂલ્યો આપે). તો \olref{lem:valid-taut} મુજબ
+  $\pSat/{v}{!A}$, તેથી $!A$ પુનરુક્તિ નથી.
+\end{proof}
+
+\end{document}

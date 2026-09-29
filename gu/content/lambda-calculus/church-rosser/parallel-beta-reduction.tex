@@ -1,0 +1,206 @@
+% Part: lambda-calculus
+% Chapter: church-rosser
+% Section: parallel-beta-reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{cr}{pb}
+
+\olsection{સમાંતર $\beta$-લઘુકરણ}
+
+અહીં \emph{સમાંતર $\beta$-લઘુકરણ}નો ખ્યાલ રજૂ કરીને
+તે ચર્ચ--રોસર ગુણધર્મ ધરાવે છે એમ સાબિત કરીશું.
+
+\begin{defn}[સમાંતર $\beta$-લઘુકરણ, $\bredpar$] \ollabel{defn:bredpar}
+  પદોનું સમાંતર લઘુકરણ ($\bredpar$) આગમનથી આ રીતે
+  વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+    \item \ollabel{defn:bredpar1} $x \bredpar x$.
+    \item \ollabel{defn:bredpar2} જો $N \bredpar N'$, તો
+      $\lambd[x][N] \bredpar \lambd[x][N']$.
+      \sourcecorrection{OLLAM-033}{સ્થિર અંગ્રેજી મૂળના
+      બીજા નિયમની પૂર્વધારણા $N \xrightarrow{\beta} N'$
+      છે, જ્યારે પછીની સ્વવાચકતા અને આગમનાત્મક
+      સાબિતીઓ આ જ સંબંધની પૂર્વધારણા
+      $N \bredpar N'$ વાપરે છે. અહીં તે સુધાર્યું છે.}
+    \item \ollabel{defn:bredpar3} જો $P \bredpar P'$ અને
+      $Q \bredpar Q'$, તો $PQ \bredpar P'Q'$.
+    \item \ollabel{defn:bredpar4} જો $N \bredpar N'$ અને
+      $Q \bredpar Q'$, તો
+      $(\lambd[x][N])Q \bredpar \Subst{N'}{Q'}{x}$.
+  \end{enumerate}
+\end{defn}
+
+સમાંતર $\beta$-લઘુકરણથી પદમાંનાં ગમે તેટલાં
+સંકોચ્ય પદો એક જ પગલામાં સંકોચી શકાય છે. તે સામાન્ય
+$\beta$-લઘુકરણથી જુદું છે: અહીં
+મૂળ પદમાં પહેલેથી હાજર સંકોચ્ય પદો જ સંકોચી શકાય;
+સમાંતર $\beta$-લઘુકરણથી નવાં ઊભાં થતાં સંકોચ્ય પદો એ જ
+પગલામાં સંકોચી શકાતાં નથી. દાખલા તરીકે,
+$(\lambd[f][fx])(\lambd[y][y])$નું એક પગલામાં
+સમાંતર $\beta$-લઘુકરણ તેના પોતાના પદમાં અથવા
+$(\lambd[y][y])x$માં થઈ શકે છે, પણ સીધું~$x$માં
+નહીં. જોકે સામાન્ય $\beta$-લઘુકરણથી તે~$x$માં
+જાય છે. નવું સંકોચ્ય પદ પહેલા સમાંતર $\beta$-લઘુકરણના
+પગલા પછી જ ઊભું થાય છે; બીજા સમાંતર $\beta$-લઘુકરણના
+પગલાથી~$x$ મળે છે.
+
+\begin{thm}\ollabel{thm:refl}
+  $M \bredpar M$.
+\end{thm}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{thm:refl} સાબિત કરો.
+\end{prob}
+
+\begin{defn}[$\beta$-પૂર્ણ વિકાસ]\ollabel{defn:bcd}
+  $M$નો \emph{$\beta$-પૂર્ણ વિકાસ}~$\bcd{M}$ આ રીતે
+  આગમનથી વ્યાખ્યાયિત થાય છે:
+  \begin{align}
+    \bcd{x} &= x \ollabel{defn:bcd1} \\
+    \bcd{(\lambd[x][N])} &= \lambd[x][\bcd{N}] \ollabel{defn:bcd2}\\
+    \bcd{(PQ)} &= \bcd{P}\bcd{Q} && \text{જો $P$ એ $\lambd$-અમૂર્તીકરણ ન હોય}
+    \ollabel{defn:bcd3} \\
+    \bcd{((\lambd[x][N])Q)} &= \Subst{\bcd{N}}{\bcd{Q}}{x} \ollabel{defn:bcd4}
+  \end{align}
+\end{defn}
+
+પદનો $\beta$-પૂર્ણ વિકાસ નામ મુજબ ``પૂર્ણ સમાંતર
+લઘુકરણ'' છે. સામાન્ય સમાંતર $\beta$-લઘુકરણમાં કોઈ
+સંકોચ્ય પદ ન સંકોચવાનું પસંદ કરી શકાય છે; પૂર્ણ વિકાસમાં
+બધાંનું સંકોચન કરવું જ પડે. તેથી
+$(\lambd[f][fx])(\lambd[y][y])$નો પૂર્ણ વિકાસ
+$(\lambd[y][y])x$ છે, મૂળ પદ પોતે નહીં.
+
+\begin{editorial}
+  આ વ્યાખ્યામાં એક અડચણ છે: આપણે હજી
+  ($\lambd$-)પદો પર વિધેયોનું પુનરાવર્તી વ્યાખ્યાયન
+  કેવી રીતે કરવું તે રજૂ કર્યું નથી. આગળ સુધારીશું.
+\end{editorial}
+
+\begin{lem}\ollabel{lem:comp}
+  $M \bredpar M'$ અને $R \bredpar R'$ હોય તો
+  $\Subst{M}{R}{y} \bredpar
+  \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  $M \bredpar M'$ની !!{derivation} પર આગમનથી.
+  \begin{enumerate}
+    \item છેલ્લો નિયમ \olref{defn:bredpar1} હોય: અભ્યાસપ્રશ્ન.
+    \item છેલ્લો નિયમ \olref{defn:bredpar2} હોય:
+      $M$ એ $\lambd[x][N]$ અને $M'$ એ $\lambd[x][N']$,
+      જ્યાં $N \bredpar N'$. બતાવવું છે કે
+      $\Subst{(\lambd[x][N])}{R}{y} \bredpar
+      \Subst{(\lambd[x][N'])}{R'}{y}$; એટલે કે,
+      યોગ્ય તાજા બાંધનાર~$x$ પસંદ કર્યા પછી
+      $\lambd[x][\Subst{N}{R}{y}] \bredpar
+      \lambd[x][\Subst{N'}{R'}{y}]$.
+      આગમનની ધારણા અને \olref{defn:bredpar2}થી આ મળે છે.
+      \sourcecorrection{OLLAM-034}{સ્થિર અંગ્રેજી મૂળ
+      આ કિસ્સાના બીજા અમૂર્તીકરણમાં
+      $\Subst{N'}{R}{y}$ લખે છે, જોકે દાવામાં બીજો
+      પ્રતિસ્થાપક~$R'$ છે. અહીં~$R'$ કર્યું છે;
+      બાંધનાર તાજો પસંદ કરવાની જરૂર પણ સ્પષ્ટ કરી છે.}
+    \item છેલ્લો નિયમ \olref{defn:bredpar3} હોય: અભ્યાસપ્રશ્ન.
+    \item છેલ્લો નિયમ \olref{defn:bredpar4} હોય:
+      $M$ એ $(\lambd[x][N])Q$ અને
+      $M'$ એ $\Subst{N'}{Q'}{x}$. બતાવવું છે કે
+      $\Subst{((\lambd[x][N])Q)}{R}{y} \bredpar
+      \Subst{\Subst{N'}{Q'}{x}}{R'}{y}$.
+      બાંધનાર~$x$ને $y$, $R$ અને~$R'$થી તાજો
+      પસંદ કર્યા પછી દાવાને નીચેના સ્વરૂપમાં લાવવાનો રહે છે:
+      $(\lambd[x][\Subst{N}{R}{y}])\Subst{Q}{R}{y} \bredpar
+      \Subst{\Subst{N'}{R'}{y}}{\Subst{Q'}{R'}{y}}{x}$.
+      અહીં જમણી બાજુ માટે સ્થાનાપન્ન-સંયોજનનો
+      અલગ લેમ્મો જોઈએ. તે સાબિત થાય તો, આગમનની ધારણા અને
+      \olref{defn:bredpar4}થી દાવો મળે છે.
+      \sourcecorrection{OLLAM-035}{સ્થિર અંગ્રેજી મૂળ
+      જમણી બાજુનાં બે ક્રમિક સ્થાનાપન્નોનો ક્રમ
+      કોઈ દલીલ વિના ફેરવે છે. આ માટે~$x\neq y$
+      અને~$x$ પ્રતિસ્થાપકમાં મુક્ત ન હોય તેવી
+      તાજગી-શરતો સાથે સ્થાનાપન્ન-સંયોજનનો લેમ્મો
+      સાબિત કરવો પડે. અહીં તે અનુપસ્થિત સહાયક
+      લેમ્મો સ્પષ્ટ કર્યો છે; તેથી સ્થિર મૂળની આ
+      સાબિતી આ બિંદુએ અધૂરી છે.}
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{lem:comp}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{lem}\ollabel{lem:cont}
+  $M \bredpar M'$ હોય તો $M' \bredpar \bcd{M}$.
+\end{lem}
+\begin{proof}
+  $M \bredpar M'$ની !!{derivation} પર આગમનથી.
+  \begin{enumerate}
+    \item છેલ્લો નિયમ \olref{defn:bredpar1} હોય: અભ્યાસપ્રશ્ન.
+    \item છેલ્લો નિયમ \olref{defn:bredpar2} હોય:
+      $M$ એ $\lambd[x][N]$ અને $M'$ એ $\lambd[x][N']$,
+      જ્યાં $N \bredpar N'$. બતાવવું છે કે
+      $\lambd[x][N'] \bredpar
+      \bcd{(\lambd[x][N])}$, એટલે
+      \olref{defn:bcd2} મુજબ
+      $\lambd[x][N'] \bredpar \lambd[x][\bcd{N}]$.
+      આગમનની ધારણા અને \olref{defn:bredpar2}થી આ મળે છે.
+    \item છેલ્લો નિયમ \olref{defn:bredpar3} હોય:
+      $M$ એ $PQ$ અને $M'$ એ $P'Q'$,
+      એવા કોઈક $P$, $Q$, $P'$ અને $Q'$ માટે, જ્યાં
+      $P \bredpar P'$ તથા $Q \bredpar Q'$.
+      આગમનની ધારણાથી $P' \bredpar \bcd{P}$
+      અને $Q' \bredpar \bcd{Q}$ છે.
+      \begin{enumerate}
+        \item $P$ એ $\lambd[x][N]$ હોય તો,
+          એવા કોઈક $x$ અને $N$ માટે,
+          $P'$ એ $\lambd[x][N']$ એવા કોઈ~$N'$ માટે,
+          જ્યાં $N \bredpar N'$. આગમનની ધારણાથી
+          $N' \bredpar \bcd{N}$ અને
+          $Q' \bredpar \bcd{Q}$. તેથી
+          \olref{defn:bredpar4} મુજબ
+          $(\lambd[x][N'])Q' \bredpar
+          \Subst{\bcd{N}}{\bcd{Q}}{x}$.
+        \item $P$ કોઈ $\lambd$-અમૂર્તીકરણ ન હોય તો
+          \olref{defn:bredpar3} મુજબ
+          $P'Q' \bredpar \bcd{P}\bcd{Q}$;
+          \olref{defn:bcd3} મુજબ જમણી બાજુ
+          $\bcd{PQ}$ છે.
+      \end{enumerate}
+    \item છેલ્લો નિયમ \olref{defn:bredpar4} હોય:
+      $M$ એ $(\lambd[x][N])Q$ અને
+      $M'$ એ $\Subst{N'}{Q'}{x}$,
+      એવા કોઈક $x$, $N$, $Q$, $N'$ અને~$Q'$ માટે, જ્યાં
+      $N \bredpar N'$ અને $Q \bredpar Q'$.
+      આગમનની ધારણાથી $N' \bredpar \bcd{N}$
+      અને $Q' \bredpar \bcd{Q}$. તેથી
+      \olref{lem:comp} મુજબ
+      $\Subst{N'}{Q'}{x} \bredpar
+      \Subst{\bcd{N}}{\bcd{Q}}{x}$;
+      જમણી બાજુ બરાબર
+      $\bcd{((\lambd[x][N])Q)}$ છે. અહીં
+      \olref{lem:comp}ની અગાઉ નોંધેલી સાબિતી-ખામીનો
+      આધાર હજી ખુલ્લો છે.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[lam][cr][pb]{lem:cont}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+\begin{thm}\ollabel{thm:cr}
+  $\bredpar$ ચર્ચ--રોસર ગુણધર્મ ધરાવે છે.
+\end{thm}
+
+\begin{proof}
+  \olref{lem:cont}માંથી તરત મળે છે; એ લેમ્માની
+  ઉપર નોંધેલી સાબિતી-ખામી અહીં પણ લાગુ પડે છે.
+\end{proof}
+
+\end{document}

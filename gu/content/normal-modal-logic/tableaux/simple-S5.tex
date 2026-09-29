@@ -1,0 +1,90 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: simple-S5
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{s5}
+
+\olsection{\Log{S5} માટે સરળ \usetoken{P}{tableau}}
+
+\Log{S5} સાર્વત્રિક નિદર્શનોના વર્ગને અનુલક્ષીને યથાર્થ અને પૂર્ણ
+છે, એટલે એવા નિદર્શનો જેમાં દરેક જગત દરેક જગતમાંથી સુલભ
+હોય છે. સાર્વત્રિક નિદર્શનમાં સુલભતા-સંબંધથી કોઈ વધારાનો
+ભેદ પડતો નથી: ``એવું જગત~$w$ છે જ્યાં
+$\mSat{M}{!A}[w]$'' ત્યારે અને માત્ર ત્યારે સાચું છે જ્યારે
+એવું જગત~$w$~$u$થી સુલભ હોય. તેથી \Log{S5}માં નિદર્શનને
+જગતોના ગણ અને નિમણૂક~$V$ વડે જ વ્યાખ્યાયિત કરી શકીએ.
+આથી !!{tableau}ના નિયમો પણ સરળ કરી શકાય એવું સૂચન મળે છે.
+સામાન્ય કિસ્સામાં ઉપસર્ગ તરીકે ધન પૂર્ણાંકોની શ્રેણીઓ લઈએ
+છીએ, જેથી કયા ઉપસર્ગ બીજા કયા ઉપસર્ગથી સુલભ જગતોને નામ આપે
+છે તેનો હિસાબ રાખી શકાય: $\sigma.n$ એ~$\sigma$થી સુલભ
+જગતનું નામ આપે છે. પરંતુ \Log{S5}માં દરેક જગત બીજા દરેક
+જગતથી સુલભ છે, તેથી આવો હિસાબ રાખવો જરૂરી નથી. તેના
+બદલે ધન પૂર્ણાંકોને જ ઉપસર્ગ તરીકે વાપરી શકીએ. સરળ બનાવેલા
+નિયમો \olref{tab:rules-S5}માં આપ્યા છે.
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}\def\fCenter{}
+    \begin{tabular}{|c|c|}
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[n]}
+      \RightLabel{\TRule{\True}{\Box}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Box !A}[n]}
+      \RightLabel{\TRule{\False}{\Box}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ વપરાયેલો છે & $m$ નવો છે
+      \\[1ex]
+      \hline}{}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\True}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\True}{\Diamond}}
+      \UnaryInfC{\sFmla{\True}{!A}[m]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Diamond !A}[n]}
+      \RightLabel{\TRule{\False}{\Diamond}}
+      \UnaryInfC{\sFmla{\False}{!A}[m]}
+      \DisplayProof\\
+      $m$ નવો છે & $m$ વપરાયેલો છે
+      \\[1ex]
+      \hline}{}
+    \end{tabular}
+  \end{center}
+  \caption{\Log{S5} માટેના સરળ બનાવેલા નિયમો.}
+  \ollabel{tab:rules-S5}
+\end{table}
+
+\begin{ex}
+  $\Log{S5} \Proves \Ax{5}$, એટલે કે,
+  $\Diamond!A \lif \Box\Diamond!A$ બતાવતું સરળ બનાવેલું બંધ
+  ટેબ્લો આપીએ છીએ.
+  \begin{oltableau}
+    [\pFmla{\False}{\Diamond\formula{A} \lif \Box\Diamond \formula{A}}{1},
+      just = \TAss
+      [\pFmla{\True}{\Diamond \formula{A}}{1}, just = {\TRule{\False}{\lif}[1]}
+        [\pFmla{\False}{\Box\Diamond \formula{A}}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\False}{\Diamond \formula{A}}{2},
+            just = {\TRule{\False}{\Box}[3]}
+            [\pFmla{\True}{\formula{A}}{3},
+              just = {\TRule{\True}{\Diamond}[2]}
+                [\pFmla{\False}{\formula{A}}{3},
+                  just = {\TRule{\False}{\Diamond}[4]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+\end{ex}
+
+\end{document}

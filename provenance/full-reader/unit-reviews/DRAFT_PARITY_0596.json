@@ -1,0 +1,96 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0596",
+  "checked_at_utc": "2026-09-28T03:29:49.032363+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0596 choice-function definition and equivalence with well-ordering; state-only draft",
+  "report": {
+    "unit_id": "OLP-0596",
+    "source_path": "content/set-theory/choice/wellorderingproblem.tex",
+    "source_sha256": "9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4",
+    "draft_path": "private-state\\work\\batch044_draft\\choice-wellorderingproblem.tex",
+    "draft_sha256": "7b4f2088cb139fe6b6b8e10dbd117f6b6305a9dad9f9b2c17e238170a11ffc38",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 47,
+    "target_math_spans_after_corrections": 47,
+    "glossary_tokens": 3,
+    "source_correction_notes": [
+      "OLMD-147",
+      "OLMD-148"
+    ],
+    "source_detector_ascii_tokens": 344,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\text{the $<$-least\r\nmember of }x",
+        "\\text{$x$નો\n$<$ મુજબ લઘુતમ ઘટક}"
+      ],
+      [
+        "\\text{stop!{}}",
+        "\\text{થોભો!{}}"
+      ],
+      [
+        "\\text{if }",
+        "\\text{જો }"
+      ],
+      [
+        "\\text{otherwise}",
+        "\\text{અન્યથા}"
+      ],
+      [
+        "$\\delta \\leq \\alpha$",
+        "$\\delta \\geq \\alpha$"
+      ],
+      [
+        "$\\ran{g} = A$",
+        "$\\funimage{g}{\\alpha}=A$"
+      ],
+      [
+        "$g$ is !!a{bijection}",
+        "$\\funrestrictionto{g}{\\alpha}$ is !!a{bijection}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-hartogs.tex",
+        "sha256": "67000ccd938d62c3c5f6aa9ba01a40de5b62bb5575880b29b54307eb00d15b38",
+        "terms": [
+          "\\ollabel{HartogsLemma}",
+          "સુક્રમિતતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-recursion.tex",
+        "sha256": "aeb5abe00df7192c8e56b9ed2a8dfef17660d4e5ef647f113090239df415f777",
+        "terms": [
+          "\\ollabel{transrecursionschema}",
+          "પુનરાવર્તન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-milestone.tex",
+        "sha256": "1f6cb68e1d4fb01b2f04bfc5d9c8807032658889ebab02ae4c3ff0155093d8f3",
+        "terms": [
+          "પસંદગી",
+          "સુક્રમિતતા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The empty-set case is settled separately so f(A) is never evaluated outside the choice-function domain.",
+      "The stopping convention is forward from the first stop, delta>=alpha; injectivity and bijectivity are restricted to stages before alpha.",
+      "The formal case labels inside align/cases and the minimum-element description are Gujarati; variable names and recurrence relations remain governed by the frozen source."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

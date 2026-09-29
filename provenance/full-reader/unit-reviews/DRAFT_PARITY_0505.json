@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0505",
+  "checked_at_utc": "2026-09-27T21:35:56.188561+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0505 intuitionistic natural-deduction soundness; state-only draft",
+  "report": {
+    "unit_id": "OLP-0505",
+    "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+    "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+    "draft_path": "private-state\\work\\batch042_draft\\intuitionistic-soundness-nd.tex",
+    "draft_sha256": "b924cf2c5fadd064c9d9e275e2a7c08e9341d5cee6d2944a4c4d8e30c4854e0c",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 157,
+    "target_math_spans_after_corrections": 157,
+    "glossary_tokens": 35,
+    "source_correction_notes": [
+      "OLMD-090",
+      "OLMD-091",
+      "OLMD-092"
+    ],
+    "source_detector_ascii_tokens": 444,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "formula_changes_limited_to_four_visible_repair_sites": true,
+    "conditional_case_tags_preserved": true
+  },
+  "status": "draft_linguistic_semantic_and_correction_aware_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

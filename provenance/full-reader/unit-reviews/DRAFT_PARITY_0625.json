@@ -1,0 +1,82 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0625",
+  "checked_at_utc": "2026-09-28T15:26:45.007337+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0625 Kurt Gödel biography, completeness and incompleteness; state-only draft",
+  "report": {
+    "unit_id": "OLP-0625",
+    "source_path": "content/history/biographies/kurt-goedel.tex",
+    "source_sha256": "b1096c00b2909587e2ac9bae78c9fb1484e4b056e4ebc13c08316cb85afc2664",
+    "draft_path": "private-state\\work\\batch044_draft\\kurt-goedel.tex",
+    "draft_sha256": "e9393de35d1ada6bfdf42133689fd0c6d3678f77e8ef43615bd8f92ae73313dd",
+    "aligned_blocks": 15,
+    "linguistic_blocks": 10,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 460,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\proof-systems\\introduction.tex",
+        "sha256": "1b84a55e723ee46dbbc3703c635e010a63a12f7e1015b956874cab45e9385ad8",
+        "terms": [
+          "કુર્ત ગેડલે"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\completeness\\identity.tex",
+        "sha256": "9fed54ac2824ca92bc5828157f54e8314961039ed8e7afc4eb98c3cb16d72a93",
+        "terms": [
+          "તાદાત્મ્ય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\completeness\\completeness-thm.tex",
+        "sha256": "9e809d33b143be7596c61d732e127fd4b4890df86619a8b19807a8a6236aae3c",
+        "terms": [
+          "પૂર્ણતા પ્રમેય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\computability\\computability-theory\\fixed-point-thm.tex",
+        "sha256": "4da41a5627aeee2d20f980ae3b25a4ddd3b17e078141058983180b5d7b717fe7",
+        "terms": [
+          "અપૂર્ણતાનાં પ્રમેયો"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Der kleine Herr Warum",
+        "count": 1,
+        "reason": "Exact German family nickname retained with its Gujarati gloss."
+      },
+      {
+        "literal": "Collected Papers",
+        "count": 1,
+        "reason": "Exact English proper title of the cited collected edition."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "goedel-kurt",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

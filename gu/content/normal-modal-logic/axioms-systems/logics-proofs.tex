@@ -1,0 +1,98 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: logics-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prf}
+
+\olsection{\usetoken{P}{derivation} અને મોડલ તંત્રો}
+
+પહેલાં આપણે સામાન્ય મોડલ તર્કો માટે !!a{derivation} શું છે તે
+વ્યાખ્યાયિત કરીએ. અંદાજે, !!a{derivation} એ !!{formula}sની એવી શ્રેણી છે
+જેમાં દરેક !!{element} કાં તો કેટલાંક \emph{સ્વયંસિદ્ધિઓ}માંનું એક
+(અથવા તેનો પ્રતિસ્થાપન દૃષ્ટાંત) હોય છે, અથવા અગાઉનાં !!{element}sમાંથી
+થોડા અનુમાન-નિયમોમાંના કોઈ નિયમ વડે ફલિત થાય છે. સામાન્ય મોડલ તર્કો
+માટે પુનરુક્તિઓના બધા દૃષ્ટાંતો\iftag{prvDiamond}{, \Ax{K} અને~\Dual{}}{ અને~\Ax{K}}
+સ્વયંસિદ્ધિઓ ગણાય છે. તેનાથી સૌથી નાનો સામાન્ય મોડલ તર્ક, મોડલ
+તંત્ર~$\Log{K}$, મળે છે. બીજા તંત્રો મેળવવા આપણે વધારાનાં
+સ્વયંસિદ્ધિઓ ઉમેરી શકીએ. નિયમો હંમેશા મોડસ પોનેન્સ~\MP{} અને
+આવશ્યકીકરણ~\Nec છે.
+
+\begin{defn}
+  મોડલ તંત્ર $\Log{K} !A_1 \dots !A_n$ અને !!a{formula}~$!B$ આપેલાં
+  હોય, ત્યારે $!B$ એ $\Log{K} !A_1 \dots
+  !A_n$માં \emph{!!{derivable}} છે, જે
+  $\Log{K} !A_1 \dots !A_n \Proves !B$ લખાય છે, જો અને માત્ર જો
+  એવાં !!{formula}s $!C_1$, \dots, $!C_k$ હોય કે $!C_k = !B$ અને દરેક
+  $!C_i$ કાં તો પુનરુક્તિનો દૃષ્ટાંત હોય, અથવા
+  $\Ax{K}$,\iftag{prvDiamond}{ $\Dual$,}{} $!A_1$,
+  \dots, $!A_n$ પૈકી કોઈ એકનો દૃષ્ટાંત હોય, અથવા અગાઉનાં
+  !!{formula}sમાંથી \MP{} કે~\Nec નિયમ વડે ફલિત થાય.
+\end{defn}
+
+નીચેનો પ્રસ્તાવ~$!B$ની $\Sigma$-!!{derivation} દર્શાવીને
+$!B \in \Sigma$ સાબિત કરવા દે છે.
+
+\begin{prop}
+  $\Log{K} !A_1 \dots !A_n = \Setabs{!B}{\Log{K} !A_1 \dots !A_n \Proves !B}$.
+\end{prop}
+
+\begin{proof}
+  !!{derivation}sની લંબાઈ પર આગમન વાપરીને આપણે બતાવીએ છીએ કે
+  $\Setabs{!B}{\Log{K} !A_1 \dots !A_n \Proves !B} \subseteq
+  \Log{K} !A_1 \dots !A_n$.
+
+  જો~$!B$ની !!{derivation}ની લંબાઈ~$1$ હોય, તો તેમાં એક જ !!{formula}
+  છે. તે !!{formula} અગાઉનાં સૂત્રોમાંથી \MP{} કે \Nec વડે ફલિત થઈ
+  શકે નહિ; એટલે તે પુનરુક્તિનો દૃષ્ટાંત, \Ax{K}નો દૃષ્ટાંત,\iftag{prvDiamond}{
+  $\Dual$નો દૃષ્ટાંત,}{} અથવા $!A_1$, \dots,~$!A_n$ પૈકી કોઈ એકનો
+  દૃષ્ટાંત હોવું જોઈએ. પણ $\Log{K}!A_1\dots!A_n$માં આ બધાં હોય છે;
+  તેથી $!B \in \Log{K}!A_1 \dots !A_n$.
+
+  જો $!B$ની !!{derivation}ની લંબાઈ~$> 1$ હોય, તો $!B$ એ !!{derivation}ની
+  છેલ્લી પંક્તિમાં ન આવતાં અગાઉનાં !!{formula}sમાંથી \MP{} કે \Nec{}
+  વડે પણ મેળવાયેલું હોઈ શકે છે. જો $!B$ એ $!C$ અને $!C \lif !B$માંથી
+  (\MP વડે) ફલિત થતું હોય, તો આગમન-પરિકલ્પના અનુસાર $!C$ અને $!C \lif !B \in
+  \Log{K}!A_1 \dots !A_n$. પણ દરેક મોડલ તર્ક મોડસ પોનેન્સ હેઠળ બંધ
+  છે; તેથી $!B \in \Log{K}!A_1 \dots
+  !A_n$. જો $!B \equiv \Box !C$ એ $!C$માંથી \Nec વડે ફલિત થતું હોય,
+  તો આગમન-પરિકલ્પના અનુસાર $!C
+  \in \Log{K}!A_1 \dots !A_n$. પણ દરેક સામાન્ય મોડલ તર્ક $\Nec$
+  હેઠળ બંધ છે; તેથી $!B \in
+  \Log{K}!A_1\dots!A_n$.
+
+  વિપરીત સમાવેશ સાબિત કરવા આપણે બતાવીએ છીએ કે
+  $\Sigma = \Setabs{!B}{\Log{K} !A_1 \dots !A_n \Proves !B }$ એ
+  $!A_1$, \dots, $!A_n$ના બધા દૃષ્ટાંતો ધરાવતો સામાન્ય મોડલ તર્ક છે.
+  પછી વ્યાખ્યા મુજબ $\Log{K} !A_1 \dots !A_n$ સૌથી નાનો એવો તર્ક
+  છે, એ અવલોકન વાપરીએ છીએ.
+  \begin{enumerate}
+    \item દરેક પુનરુક્તિ~$!B$ પુનરુક્તિનો દૃષ્ટાંત હોવાથી
+      $\Log{K}!A_1\dots!A_n \Proves !B$; તેથી $\Sigma$ બધી
+      પુનરુક્તિઓ ધરાવે છે.
+    \item જો $\Log{K}!A_1\dots!A_n \Proves !C$ અને
+      $\Log{K}!A_1\dots!A_n \Proves !C \lif !B$ હોય, તો
+      $\Log{K}!A_1\dots!A_n \Proves !B$: $!C$ની !!{derivation}ને
+      $!C \lif !B$ની નિષ્પત્તિ સાથે જોડો અને અંતે~$!B$ની પંક્તિ
+      ઉમેરો. છેલ્લી પંક્તિ \MP{}થી સમર્થિત છે. તેથી $\Sigma$ મોડસ
+      પોનેન્સ હેઠળ બંધ છે.
+    \item જો $!B$ની !!a{derivation} હોય, તો $!B$ના દરેક પ્રતિસ્થાપન
+      દૃષ્ટાંતની પણ !!a{derivation} હોય છે: !!{derivation}માંના દરેક
+      !!{formula} પર એ પ્રતિસ્થાપન લાગુ કરો. (અભ્યાસપ્રશ્ન: !!{derivation}sની
+      લંબાઈ પર આગમનથી સાબિત કરો કે પરિણામ પણ યોગ્ય !!{derivation} છે.)
+      તેથી $\Sigma$ એકસાથે પ્રતિસ્થાપન હેઠળ બંધ છે. (હવે આપણે
+      સ્થાપ્યું છે કે $\Sigma$ મોડલ તર્કની બધી શરતો પૂરી કરે છે.)
+    \item આપણી પાસે $\Log{K}!A_1\dots!A_n \Proves \Ax{K}$ છે;
+      તેથી $\Ax{K} \in \Sigma$.\sourcecorrection{OLMD-024}{મૂળ નિષ્કર્ષમાં $K \in \Sigma$ છે, પરંતુ અહીં \Sigma સૂત્રોનો ગણ છે અને પૂર્વપક્ષમાં \Ax{K} છે; નિષ્કર્ષમાં પણ એ જ સૂત્રચિહ્ન મૂક્યું છે.}
+    \tagitem{prvDiamond}{આપણી પાસે
+      $\Log{K}!A_1\dots!A_n \Proves \Dual$ છે; તેથી $\Dual \in \Sigma$.}{}
+    \item જો $\Log{K}!A_1\dots!A_n \Proves !C$ હોય, તો વધારાની
+      પંક્તિ~$\Box !C$ને~\Nec વડે સમર્થન મળે છે. તેથી $\Sigma$
+      એ~\Nec હેઠળ બંધ છે; એટલે $\Sigma$ સામાન્ય છે.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

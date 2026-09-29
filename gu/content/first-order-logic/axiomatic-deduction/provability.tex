@@ -1,0 +1,472 @@
+% Part: first-order-logic 
+% Chapter: axiomatic-deduction 
+% Section: provability
+
+% verification of properties of provability needed for maximally 
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{\usetoken{S}{derivability}ના ગુણધર્મો}
+
+\begin{prop}[એકદિશવર્ધિતા] જો $\Gamma \subseteq \Delta$ અને $\Gamma \Proves !A$
+હોય, તો $\Delta \Proves !A$ પણ હોય. \end{prop}
+
+\begin{proof} કોઈ પણ સાન્ત $\Gamma_0 \subseteq \Gamma$ એ
+$\Delta$નો પણ સાન્ત ઉપગણ છે. તેથી
+$\Gamma_0 \Proves !A$ની !!a{derivation}
+$\Delta \Proves !A$ પણ બતાવે છે. \end{proof}
+
+\begin{prop}\ollabel{prop:provability} $\Gamma \Proves !A$ જો અને માત્ર જો
+$\Gamma\cup \{\lnot!A \}$ અસુસંગત હોય. \end{prop}
+
+\begin{prop} \begin{enumerate}
+\item \ollabel{prop:provability-contr} જો $\Gamma \Proves !A$ અને $\Gamma
+\cup \{ !A\} \Proves \lfalse$, તો $\Gamma$ અસુસંગત છે.
+
+\item \ollabel{prop:provability-lnot} જો $\Gamma \cup \{!A\}
+\Proves \lfalse$, તો $\Gamma \Proves \lnot !A$.
+
+\item \ollabel{prop:provability-exhaustive} જો $\Gamma \cup \{!A\}
+\Proves \lfalse$ અને $\Gamma \cup \{\lnot !A\} \Proves
+\lfalse$, તો $\Gamma \Proves \lfalse$.
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-left} જો $\Gamma \cup \{!A\}
+\Proves \lfalse$ અને $\Gamma \cup \{!B\} \Proves
+\lfalse$, તો $\Gamma \cup \{!A \lor !B\} \Proves \lfalse$.}{}
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-right} જો $\Gamma
+\Proves !A$ અથવા $\Gamma \Proves !B$, તો $\Gamma
+\Proves !A \lor !B$.}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-left} જો $\Gamma
+\Proves !A \land !B$, તો $\Gamma \Proves !A$ અને
+$\Gamma \Proves !B$.}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-right} જો $\Gamma
+\Proves !A$ અને $\Gamma \Proves !B$, તો $\Gamma
+\Proves !A \land !B$.}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-mp} જો $\Gamma \Proves
+!A$ અને $\Gamma \Proves !A \lif !B$, તો $\Gamma
+\Proves !B$.}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-lif} જો $\Gamma \Proves
+\lnot !A$ અથવા $\Gamma \Proves !B$, તો $\Gamma \Proves
+!A \lif !B$.}{} \end{enumerate} \end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item માનો કે $\Gamma_0 \cup \{!A\} \Proves \lfalse$.
+
+\begin{derivation} 
+1. & $\Gamma_0 \cup \{!A\} \Proves \lfalse$ & ધારણા \\
+2. & $\Gamma_1 \Proves !A$ & ધારણા\\
+3. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & કટ \\
+\end{derivation}
+
+કારણ કે $\Gamma_0 \subseteq \Gamma$ અને $\Gamma_1 \subseteq \Gamma$,
+તેથી $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; આથી $\Gamma \Proves \lfalse$.
+
+\item માનો કે $\Gamma_0 \cup\{!A\} \Proves \lfalse$.
+
+\begin{derivation} 
+1. & $\Gamma_0 \cup\{!A\} \Proves \lfalse$ & ધારણા \\
+2. & $\Gamma_0 \Proves !A \lif \lfalse$ & નિગમન પ્રમેય\\
+3. & $\Gamma_0 \Proves (!A \lif \lfalse) \lif \lnot !A$ & Ax0\\
+4. & $\Gamma_0 \Proves \lnot !A$ & MP 2, 3 \\
+\end{derivation}
+\sourcecorrection{OLMD-174}{મૂળના આ બીજા
+કિસ્સામાં વિધાન
+$\Gamma\cup\{!A\}\Proves\lfalse$
+છે, પરંતુ સાબિતી
+$\Gamma_0\cup\{\lnot !A\}\Proves\lfalse$
+થી શરૂ થઈ
+$!A$ પર પહોંચે છે.
+અહીં ધારણા અને
+પછીના ચાર પગલાં
+વિધાન મુજબ
+$\lnot !A$ કાઢવા
+સુધાર્યાં છે.}
+
+\item માનો કે $\Gamma_0 \cup \{ !A \} \Proves \lfalse$ અને
+$\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$.
+
+\begin{derivation} 
+1. & $\Gamma_0 \cup\{!A\} \Proves \lfalse$ & ધારણા \\
+2. & $\Gamma_0 \Proves !A \lif \lfalse$ & નિગમન પ્રમેય \\
+3. & $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ & ધારણા\\
+4. & $\Gamma_0 \Proves (!A \lif \lfalse) \lif \lnot !A$ & Ax0\\
+5. & $\Gamma_0 \Proves \lnot !A$ & MP 2, 4\\
+6. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & કટ 3, 5 \\
+\end{derivation}
+
+કારણ કે $\Gamma_0 \subseteq \Gamma$ અને $\Gamma_1 \subseteq \Gamma$,
+તેથી $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$.
+આથી $\Gamma \Proves \lfalse$.
+\sourcecorrection{OLMD-175}{મૂળમાં
+આ ત્રીજા કિસ્સાની
+પ્રારંભિક સાન્ત
+ધારણા માટે
+$\Gamma$ લખાયું છે,
+પણ પછીની નિષ્પત્તિ
+$\Gamma_0$ વાપરે છે.
+સાન્ત સાક્ષી
+$\Gamma_0\subseteq\Gamma$
+સ્પષ્ટ કરવા પ્રારંભિક
+સૂત્ર સુધાર્યું છે.}
+
+% prop:provability-lor-left 
+\tagitem{defOr}{}{
+\iftag{probOr}{કસરત.}{કસરત.}}
+
+% prop:provability-lor-right 
+\tagitem{defOr}{}{ \iftag{probOr}{કસરત.}{
+માનો કે $\Gamma_0 \Proves !A$.
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !A$ & ધારણા \\
+2. & $\Gamma_0 \Proves !A \lif (!A \lor !B)$ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A \lor !B$ & MP 1, 2 \\
+\end{derivation}
+
+તેથી $\Gamma \Proves !A \lor !B$.
+$\Gamma \Proves !B$ હોય ત્યારે
+સાબિતી સમાન છે.}}
+
+% prop:provability-land-left 
+\tagitem{defAnd}{}{ \iftag{probAnd}{કસરત}{
+માનો કે $\Gamma_0 \Proves !A \land !B$
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !A \land !B$ & ધારણા \\
+2. & $\Gamma_0 \Proves (!A\land !B) \lif !A $ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A$ & MP 1, 2 \\
+\end{derivation}
+\sourcecorrection{OLMD-176}{મૂળની
+ત્રીજી પંક્તિમાં
+પૂર્વધારણા અને
+બીજી પંક્તિના
+પ્રેરણમાંથી
+$!A\lor !B$
+કાઢ્યું છે. મોડસ
+પોનેન્સથી અહીં
+$!A$ મળે છે;
+તે મુજબ સૂત્ર
+સુધાર્યું છે.}
+
+આથી $\Gamma \Proves !A$.
+તેવી જ !!{derivation}
+$\Gamma \Proves !B$
+પણ બતાવે છે.}}
+
+% prop:provability-land-right
+\tagitem{defAnd}{}{\iftag{probAnd}{કસરત.}{કસરત.}}
+
+% prop:provability-mp 
+\tagitem{defIf}{}{ \iftag{probIf}{કસરત.}{ માનો કે
+$\Gamma_0 \Proves !A$ અને $\Gamma_0 \Proves !A \lif !B $ બંને છે.
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !A$ & ધારણા \\
+2. & $\Gamma_0 \Proves !A \lif !B $ & ધારણા\\
+3. & $\Gamma_0 \Proves !B$ & MP 1, 2\\
+\end{derivation}
+
+કારણ કે $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$,
+આથી $\Gamma \Proves !B$.
+\sourcecorrection{OLMD-177}{મૂળના
+આ કિસ્સામાં
+$\Gamma_1$ ક્યાંય
+નક્કી કરાયું નથી.
+નિષ્કર્ષ માટે
+પહેલેથી પસંદ
+કરાયેલ સાન્ત
+$\Gamma_0\subseteq\Gamma$
+જ પૂરતું છે;
+વધારાના
+$\Gamma_1$ની
+જરૂર નથી.}}}
+
+% prop:provability-lif 
+\tagitem{defIf}{}{\iftag{probIf}{કસરત.}{પહેલાં
+માનો કે $\Gamma \Proves \lnot !A$.
+    
+\begin{derivation} 
+1. & $\Gamma_0 \Proves \lnot !A$ & ધારણા \\
+2. & $\Gamma_0 \Proves \lnot !A \lif (!A \lif !B) $ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A \lif !B$ & MP 1,
+2\\ \end{derivation}
+
+$\Gamma \Proves !B$ માટેની સાબિતી સમાન છે:
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves !B$ & ધારણા \\
+2. & $\Gamma_0 \Proves !B \lif (!A \lif !B) $ & Ax0\\ 
+3. & $\Gamma_0 \Proves !A \lif !B$ & MP 1, 2\\
+\end{derivation}}}
+
+\end{enumerate} 
+\end{proof}
+
+\begin{probtag}{probOr,probAnd,probIf} આની સાબિતી પૂરી કરો:
+\olref[fol][axd][prv]{prop:provability}. 
+\end{probtag}
+
+\begin{thm}[સર્વત્રીકરણ] \ollabel{thm:Generalization} જો $\Gamma \Proves
+!A$ અને $x$ એ $\Gamma$નાં કોઈ પણ !!{formula}માં મુક્ત ન હોય,
+તો $\Gamma \Proves \lforall[x][!A]$.
+\end{thm}
+
+\begin{proof} $\mathsf{Thm}_\Gamma$ પરના આગમનથી:
+જો $!A$ સ્વયંસિદ્ધિ હોય, તો
+$\lforall[x][!A]$ પણ હોય.
+જો $!A\in \Gamma$, તો $x$ એ $!A$માં મુક્ત
+નથી; તેથી $!A \lif \lforall[x][!A]$
+સ્વયંસિદ્ધિ છે (\textbf{Ax3}) અને MPથી
+$\Gamma \Proves \lforall[x][!A]$ મળે.
+હવે માનો કે $\Gamma \Proves !B$ અને
+$\Gamma \Proves !B \lif !A$ હોવાથી
+MPથી $!A$ મળે છે. આગમન-પરિકલ્પનાથી
+$\Gamma \Proves \lforall[x][!B]$ અને
+$\Gamma \Proves \lforall[x][( !B \lif !A)]$.
+પરંતુ \textbf{Ax2}થી આ પણ મળે:
+\[ \Gamma \Proves
+\lforall[x][( !B \lif !A)] \lif (\lforall[x][ !B] \lif \lforall[x][!A]), \]
+અને MPના બે ઉપયોગથી ઇચ્છિત
+$\Gamma \Proves \lforall[x][!A]$ મળે. \end{proof}
+
+\begin{thm}\ollabel{thm:WeakGen} (\emph{અચળો પર નબળું સર્વત્રીકરણ})
+જો $\Gamma \Proves !A$ અને $c$ એ $\Gamma$માં
+ન આવતું !!a{constant} હોય, તો $!A$માં
+ન આવતું કોઈ ચલ $x$ એવું મળે કે
+$\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$;
+આ સાબિતીમાં $c$ આવતું નથી.
+\end{thm}
+
+\begin{proof} $!A_1,\ldots,!A_n$ એ $\Gamma$માંથી
+$!A$ની સાબિતી માનો, જેથી $!A=!A_n$.
+$!A_1,\ldots,!A_n$માં ન આવતું
+ચલ $x$ પસંદ કરો અને
+નવો અનુક્રમ લો:
+$\Subst{!A_1}{x}{c},\ldots,\Subst{!A_n}{x}{c}.$
+આવો અનુક્રમ $\Gamma$માંથી
+$\Subst{!A}{x}{c}$ની સાબિતી છે.
+ખરેખર, દરેક $i=1,\ldots,n$ માટે:
+\begin{itemize}
+\item જો $!A_i$ સ્વયંસિદ્ધિ હોય, તો
+$\Subst{!A_i}{x}{c}$ પણ સ્વયંસિદ્ધિ છે;
+\item જો $!A_i \in \Gamma$, તો
+$c$ એ $\Gamma$માં નથી,
+એટલે $\Subst{!A_i}{x}{c} = !A_i \in \Gamma$;
+\item જો $!A_i$ એ $!A_j$
+અને $!A_j \lif !A_i$માંથી મળે,
+તો $\Subst{!A_j}{x}{c}$ અને
+$\Subst{(!A_j \lif !A_i)}{x}{c}
+= \Subst{!A_j}{x}{c} \lif \Subst{!A_i}{x}{c}$
+પર MP લગાવી $\Subst{!A_i}{x}{c}$ મળે.
+\end{itemize}
+\sourcecorrection{OLMD-178}{મૂળની
+સાબિતીમાં દરેક
+$i$ માટે કિસ્સા
+જુદાં પાડવામાં
+આવે છે, છતાં
+પહેલી શરતમાં
+$!A$ લખાયું છે.
+તેને સંબંધિત
+પંક્તિ $!A_i$
+કરી છે.}
+નવા અનુક્રમમાં !!{constant} $c$
+હવે આવતું નથી તે સ્પષ્ટ છે.
+હવે $\Gamma$નાં જે !!{formula}s
+$\Subst{!A}{x}{c}$ની !!{derivation}માં
+આવે તેમનો ગણ $\Gamma'$ લો.
+ત્યારે $x$ એ $\Gamma'$નાં
+કોઈ પણ !!{formula}માં મુક્ત નથી
+અને $\Gamma' \Proves \Subst{!A}{x}{c}$.
+સર્વત્રીકરણથી
+(\olref{thm:Generalization})
+$\Gamma' \Proves \lforall[x][\Subst{!A}{x}{c}]$,
+અને એકદિશવર્ધિતાથી ઇચ્છિત
+$\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$ મળે.
+\end{proof}
+
+\begin{explain}
+આપણો હેતુ \olref{thm:WeakGen}ની
+$x$ એ $!A$માં બિલકુલ ન આવતું
+હોવાની શરતને બે નબળી શરતોથી
+બદલવાનો છે: $x$ એ $!A$માં
+મુક્ત ન હોય અને $!A$માં
+$c$ની જગ્યાએ મૂકવા !!{free for}
+હોય. બંધ !!{variable} બદલીને
+આ કરી શકાય છે; તેથી પહેલાં
+એ જ સાબિત કરીશું.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:free-for} 
+જો $x$ એ $!A$માં $c$ની જગ્યાએ
+મૂકવા મુક્ત હોય અને $y$ એ $!A$માં
+મુક્ત ન હોય, તો $x$ એ
+$\Subst{!A}{y}{c}$માં $y$ની
+જગ્યાએ મૂકવા !!{free for} છે.
+\end{lem}
+
+\begin{proof} જો $x$ એ
+$\Subst{!A}{y}{c}$માં
+$y$ની જગ્યાએ મૂકવા
+!!{free for} ન હોય,
+તો $\Subst{!A}{y}{c}$માં
+$y$નું કોઈ મુક્ત આગમન
+$\lforall[x]$ પરિમાણકના
+વ્યાપમાં પડે. પરંતુ
+પરિકલ્પના મુજબ $y$
+એ $!A$માં મુક્ત નથી;
+તેથી આવા બધા આગમનો
+$\Subst{}{y}{c}$ અવેજીથી
+આવે છે. એટલે $c$નું
+કોઈ આગમન $\lforall[x]$ના
+વ્યાપમાં પડે અને $x$
+એ $!A$માં $c$ની
+જગ્યાએ મૂકવા
+!!{free for} ન રહે.
+\sourcecorrection{OLMD-179}{મૂળની
+સાબિતીના પ્રથમ વાક્યમાં
+$\Subst{!A}{y}{x}$
+લખાયું છે, પરંતુ
+પ્રમેયનું વિધાન અને
+આગળનાં વાક્યો
+$\Subst{!A}{y}{c}$
+વિશે છે. એ જ
+અવેજી પ્રથમ
+વાક્યમાં સુધારી છે.}
+\end{proof}
+
+\begin{lem}[બંધ ચલનું પરિવર્તન]
+\ollabel{lem:ChangeBdVar} 
+જો $x$ અને $y$ એ $!A$માં મુક્ત
+ન હોય અને બંને $!A$માં $c$ની
+જગ્યાએ મૂકવા !!{free for}
+હોય, તો $\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$;
+અને સાબિતીમાં $c$ આવતું નથી.
+\end{lem}
+
+\begin{proof}
+પરિકલ્પનાથી $y$ એ $!A$માં
+$c$ની જગ્યાએ મૂકવા !!{free for}
+છે અને $x$ એ $!A$માં મુક્ત
+નથી; તેથી અગાઉના
+\olref{lem:free-for}થી $y$ એ
+$\Subst{!A}{x}{c}$માં
+$x$ની જગ્યાએ મૂકવા
+!!{free for} છે. આથી
+$\lforall[x][\Subst{!A}{x}{c}] \lif \Subst{!A}{x}{c} \Subst{}{y}{x}$
+સ્વયંસિદ્ધિ છે (\textbf{Ax1}).
+\sourcecorrection{OLMD-180}{મૂળમાં
+સર્વવાચી પરિમાણક
+આખા પ્રેરણ
+પર મૂકાયો છે,
+પરંતુ \textbf{Ax1}
+માટે જરૂરી સ્વરૂપ
+સર્વત્રીકૃત પૂર્વાંગ
+પછી તેના દૃષ્ટાંત
+તરફના પ્રેરણનું છે.
+અહીં કૌંસ અને
+પ્રેરણનું સ્થાન
+તે મુજબ સુધાર્યું છે.}
+$x$ એ $!A$માં મુક્ત
+ન હોવાથી
+$\Subst{!A}{x}{c} \Subst{}{y}{x} = \Subst{!A}{y}{c}$;
+તેથી
+\[
+\Proves \lforall[x][\Subst{!A}{x}{c}] \lif \Subst{!A}{y}{c}, 
+\] 
+અને નિગમન પ્રમેયથી
+$\lforall[x][\Subst{!A}{x}{c}] \Proves
+\Subst{!A}{y}{c}$ મળે.
+$y$ એ $!A$માં મુક્ત
+ન હોવાથી
+$\lforall[x][\Subst{!A}{x}{c}]$માં
+પણ મુક્ત નથી; તેથી
+સર્વત્રીકરણથી
+$\lforall[x][\Subst{!A}{x}{c}] \Proves \lforall[y][\Subst{!A}{y}{c}]$,
+અને ફરી નિગમન
+પ્રમેયથી $\Proves
+\lforall[x][\Subst{!A}{x}{c}] \lif \lforall[y][\Subst{!A}{y}{c}]$.
+$\Proves \lforall[y][\Subst{!A}{y}{c}] \lif \lforall[x]
+[\Subst{!A}{x}{c}]$ની
+સાબિતી સંપૂર્ણ
+સમમિત છે; તેથી
+ટોટોલોજી વડે
+નિષ્કર્ષ મળે છે.
+\end{proof}
+
+\begin{thm}[અચળો પર પ્રબળ સર્વત્રીકરણ]
+\ollabel{thm:StrongGen} 
+જો $\Gamma \Proves !A$, !!{constant}
+$c$ એ $\Gamma$માં આવતું ન હોય,
+અને $x$ એ $!A$માં મુક્ત
+ન હોય છતાં $!A$માં
+$c$ની જગ્યાએ મૂકવા
+!!{free for} હોય, તો
+$\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$.
+\end{thm}
+
+\begin{proof}
+કારણ કે $\Gamma \Proves !A$
+અને $c$ એ $\Gamma$માં
+નથી, નબળા સર્વત્રીકરણથી
+$!A$માં ન આવતું
+!!a{variable} $y$ મળે કે
+$\Gamma \Proves \lforall[y][\Subst{!A}{y}{c}]$.
+$y$ એ $!A$માં બિલકુલ
+ન આવતું હોવાથી તે
+$!A$માં મુક્ત નથી
+અને $!A$માં $c$ની જગ્યાએ
+મૂકવા !!{free for} પણ છે.
+વળી, પરિકલ્પના મુજબ
+$x$ એ $!A$માં
+મુક્ત નથી અને
+$!A$માં $c$ની જગ્યાએ
+મૂકવા !!{free for} છે.
+એટલે બંધ !!{variable}
+બદલવાની શરતો પૂરી થાય છે:
+$\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$;
+તેથી $\Gamma \Proves
+\lforall[x][\Subst{!A}{x}{c}]$.
+\end{proof}
+
+\begin{thm} 
+\ollabel{thm:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll} 
+\tagitem{prvEx}{જો $\Gamma \Proves !A(t)$, તો $\Gamma \Proves
+  \lexists[x][!A(x)]$.}{} 
+\tagitem{prvAll}{જો $\Gamma \Proves \lforall[x][!A(x)]$, તો $\Gamma
+  \Proves !A(t)$.}{}
+\end{tagenumerate} 
+\end{thm}
+
+\begin{proof} 
+\begin{tagenumerate}{prvEx,prvAll} 
+%%Need axioms for exists
+\tagitem{prvEx}{કસરત.}{}
+\tagitem{prvAll} {માનો કે $\Gamma_0 \Proves \lforall[x][!A(x)]$.
+
+\begin{derivation} 
+1. & $\Gamma_0 \Proves \lforall[x][!A(x)]$ & ધારણા \\
+2. & $\Gamma_0 \Proves \lforall[x][!A(x)] \lif \Subst{!A}{t}{x}$ & Ax1 \\ 
+3. & $\Gamma_0 \Proves \Subst{!A}{t}{x}$ & MP 1, 2 \\ 
+\end{derivation}}{}
+
+\end{tagenumerate} 
+\end{proof}
+
+\end{document}

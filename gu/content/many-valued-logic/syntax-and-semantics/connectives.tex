@@ -1,0 +1,76 @@
+% Part: many-valued-logic
+% Chapter: syntax-and-semantics
+% Section: connectives
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{syn}{con}
+
+\olsection{ભાષાઓ અને સંયોજકો}
+
+શાસ્ત્રીય વિધાનાત્મક તર્કશાસ્ત્ર અને અન્ય ઘણાં
+તર્કશાસ્ત્રો \emph{વિધાનાત્મક અચલો} તથા
+\emph{સંયોજકો}નો ગણ વાપરે છે. દાખલા તરીકે,
+નીચેનાંને આપણે મૂળભૂત માનીએ છીએ:
+\begin{enumerate}
+\tagitem{prvFalse}{!!{falsity} માટેનો વિધાનાત્મક અચલ~$\lfalse$.}{}
+\tagitem{prvTrue}{!!{truth} માટેનો વિધાનાત્મક અચલ~$\ltrue$.}{}
+\item તાર્કિક સંયોજકો:
+  \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (નિષેધ)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (સંયોજન)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (વિયોજન)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{prvIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+\end{enumerate}
+\iftag{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defEx,defAll}{%
+ઉપરના મૂળભૂત સંયોજકો ઉપરાંત આપણે સંક્ષેપો તરીકે
+વ્યાખ્યાયિત સંકેતો પણ વાપરીએ છીએ, જેમ કે
+\startycommalist
+  \iftag{defNot}{\ycomma $\lnot$ (નિષેધ)}{}%
+  \iftag{defAnd}{\ycomma $\land$ (સંયોજન)}{}%
+  \iftag{defOr}{\ycomma $\lor$ (વિયોજન)}{}%
+  \iftag{defIf}{\ycomma $\lif$ (!!{conditional})}{}%
+  \iftag{defIff}{\ycomma $\liff$ (!!{biconditional})}{}%
+  \iftag{defFalse}{\ycomma $\lfalse$ (!!{falsity})}{}%
+  \iftag{defTrue}{\ycomma $\ltrue$ (!!{truth})}.}{}
+
+બહુમૂલ્ય તર્કશાસ્ત્રોમાં પણ આ જ સંયોજકો વપરાય છે.
+જોકે, એક જ તર્કશાસ્ત્રમાં, માનો કે સંયોજનનાં જુદાં
+સ્વરૂપો સમાવવાં ઘણી વાર ઉપયોગી છે; તેમને અલગ
+ઓળખાવવા જુદા સંકેતો જોઈએ. કેટલાક બહુમૂલ્ય
+તર્કશાસ્ત્રોમાં શાસ્ત્રીય તર્કશાસ્ત્રમાં સમકક્ષ ન હોય
+એવા સંયોજકો પણ છે. તેથી આપણે સામાન્ય કરતાં
+થોડી વધુ વ્યાપક રીત લઈશું.
+
+\begin{defn}
+  \emph{વિધાનાત્મક ભાષા} એટલે સંયોજકોનો ગણ~$\Lang L$.
+  દરેક સંયોજક~$\star$ની \emph{આર્ગ્યુમેન્ટ-સંખ્યા}
+  હોય છે; આર્ગ્યુમેન્ટ-સંખ્યા~$n$ ધરાવતો સંયોજક
+  \emph{$n$-સ્થાનીય} કહેવાય છે. આર્ગ્યુમેન્ટ-સંખ્યા~$0$
+  ધરાવતા સંયોજકો \emph{અચલો} પણ કહેવાય છે;
+  આર્ગ્યુમેન્ટ-સંખ્યા~$1$ ધરાવતાં સંયોજકોને
+  \emph{એકસ્થાનીય} અને આર્ગ્યુમેન્ટ-સંખ્યા~$2$
+  ધરાવતાંને \emph{દ્વિસ્થાનીય} કહે છે.
+\end{defn}
+
+\begin{ex}
+  વિધાનાત્મક તર્કશાસ્ત્રની પ્રમાણભૂત ભાષા~$\Lang L_0$માં
+  નીચેના સંયોજકો છે (કૌંસમાં તેમની આર્ગ્યુમેન્ટ-સંખ્યા છે):
+  $\lfalse$~($0$),
+  $\lnot$~($1$),
+  $\land$~($2$),
+  $\lor$~($2$),
+  $\lif$~($2$). આપણે વિચારવાના મોટાભાગના
+  તર્કશાસ્ત્રો આ ભાષા વાપરશે. કેટલાક તર્કશાસ્ત્રો
+  રૂઢિ અનુસાર અમુક સંયોજકો માટે જુદા સંકેતો
+  વાપરે છે. દાખલા તરીકે, ગુણન તર્કશાસ્ત્રમાં
+  સંયોજનનો સંકેત ઘણી વાર $\land$ને બદલે~$\odot$
+  હોય છે. ક્યારેક નવો કારક ઉમેરવો અનુકૂળ હોય છે;
+  દાખલા તરીકે, નિર્ધારિતતા કારક~$\triangle$
+  ($1$-સ્થાનીય).
+\end{ex}
+
+\end{document}

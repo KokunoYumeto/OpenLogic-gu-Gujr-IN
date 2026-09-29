@@ -1,0 +1,117 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0643",
+  "checked_at_utc": "2026-09-28T16:35:32.330257+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0643 Axiomatic derivability properties and generalization proofs with visible source repairs; state-only draft",
+  "report": {
+    "unit_id": "OLP-0643",
+    "source_path": "content/first-order-logic/axiomatic-deduction/provability.tex",
+    "source_sha256": "150b411bdceac490428e642969889123ecc14db1668fde926adfc1d831e28745",
+    "draft_path": "private-state\\work\\batch044_draft\\provability.tex",
+    "draft_sha256": "29bd5d8213aaf966149c453671306c485546a9aec76f74d1d02f029c6ab4207f",
+    "aligned_blocks": 59,
+    "linguistic_blocks": 51,
+    "source_math_spans_correction_aware": 232,
+    "target_math_spans_after_corrections": 232,
+    "glossary_tokens": 22,
+    "source_correction_notes": [
+      "OLMD-174",
+      "OLMD-175",
+      "OLMD-176",
+      "OLMD-177",
+      "OLMD-178",
+      "OLMD-179",
+      "OLMD-180"
+    ],
+    "source_detector_ascii_tokens": 514,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\Gamma_0 \\cup\\{\\lnot !A\\} \\Proves \\lfalse$",
+        "$\\Gamma_0 \\cup\\{!A\\} \\Proves \\lfalse$",
+        2
+      ],
+      [
+        "$\\Gamma_0 \\Proves \\lnot !A \\lif \\lfalse$",
+        "$\\Gamma_0 \\Proves !A \\lif \\lfalse$"
+      ],
+      [
+        "$\\Gamma_0 \\Proves (\\lnot !A \\lif \\lfalse) \\lif !A$",
+        "$\\Gamma_0 \\Proves (!A \\lif \\lfalse) \\lif \\lnot !A$"
+      ],
+      [
+        "$\\Gamma_0 \\Proves !A$ & MP 2, 3",
+        "$\\Gamma_0 \\Proves \\lnot !A$ & MP 2, 3"
+      ],
+      [
+        "$\\Gamma \\cup \\{ !A \\} \\Proves \\lfalse$",
+        "$\\Gamma_0 \\cup \\{ !A \\} \\Proves \\lfalse$"
+      ],
+      [
+        "2. & $\\Gamma_0 \\Proves (!A\\land !B) \\lif !A $ & Ax0\\\\ \n3. & $\\Gamma_0 \\Proves !A \\lor !B$",
+        "2. & $\\Gamma_0 \\Proves (!A\\land !B) \\lif !A $ & Ax0\\\\ \n3. & $\\Gamma_0 \\Proves !A$"
+      ],
+      [
+        "\\item if $!A$ is an axiom",
+        "\\item if $!A_i$ is an axiom"
+      ],
+      [
+        "$\\Subst{!A}{y}{x}$",
+        "$\\Subst{!A}{y}{c}$"
+      ],
+      [
+        "$\\lforall[x][\\Subst{!A}{x}{c} \\lif \\Subst{!A}{x}{c} \\Subst{}{y}{x}]$",
+        "$\\lforall[x][\\Subst{!A}{x}{c}] \\lif \\Subst{!A}{x}{c} \\Subst{}{y}{x}$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\axiomatic-deduction\\proof-theoretic-notions.tex",
+        "sha256": "8ddc8f4fb15873b3cc76d6ae3ab42aacc3cddea451f2f22cead67d87178189d3",
+        "terms": [
+          "એકદિશવર્ધિતા"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\axiomatic-deduction\\deduction-theorem.tex",
+        "sha256": "b557deada5a7da1e9a3f27f805c4df14a48521fb2bb5a6f87d7f2a8c0fff02ff",
+        "terms": [
+          "નિગમન પ્રમેય"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\axiomatic-deduction\\axioms-rules-quantifiers.tex",
+        "sha256": "eae7c9239fdbbfc1de118279c2e6729d1570edc018a15641a14e16842ec86157",
+        "terms": [
+          "સર્વત્રીકરણ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\axiomatic-deduction\\provability-propositional.tex",
+        "sha256": "7a2a9e65285fe271a219bbbdcb5e4b332d1c926fee73bafb8ca7c97133a129b4",
+        "terms": [
+          "મોડસ પોનેન્સ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "probOr,probAnd,probIf",
+        "count": 1,
+        "reason": "Exact source condition-tag list in the exercise environment."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

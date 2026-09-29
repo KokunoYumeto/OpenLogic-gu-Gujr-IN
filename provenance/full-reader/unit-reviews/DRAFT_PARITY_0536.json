@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0536",
+  "checked_at_utc": "2026-09-27T23:26:39.196337+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0536 Frege's Basic Law V; state-only draft",
+  "report": {
+    "unit_id": "OLP-0536",
+    "source_path": "content/set-theory/story/grundgesetze.tex",
+    "source_sha256": "d5b70cb63a142ee49c968e41a593dd7c6131d35817afcc6fda2321fa07162cd5",
+    "draft_path": "private-state\\work\\batch044_draft\\grundgesetze.tex",
+    "draft_sha256": "14fa3a3e9770fc574c86e65a5e9caec7dae84027788bb2bc4b0afac05fa1ffe2",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 9,
+    "source_math_spans_correction_aware": 26,
+    "target_math_spans_after_corrections": 26,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 241,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\second-order-logic\\syntax-and-semantics\\terms-formulas.tex",
+        "sha256": "b3f9517f4ba2d706f54fd1ed6ccf7cc8cec85af592e28c82e668ee095c1e0396",
+        "terms": [
+          "દ્વિતીય-ક્રમ",
+          "વિધેયધર્મ-ચલ",
+          "વિધેય-ચલ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\russells-paradox-again.tex",
+        "sha256": "e62b2d165b604d47921965045523cd4eba48b62c886d197f1d8d8b7079f440f8",
+        "terms": [
+          "વિધેયધર્મોના વ્યાપો",
+          "સહજ ગણરચના"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The G witness in the first proof may be F; universal coextension then supplies the forward direction at a.",
+      "The extension term is the witness for the existential set s in the second proof.",
+      "The final Russell substitution uses the intended unrestricted second-order property comprehension; the section is not claimed to prove inconsistency of every weakened predicative fragment of Basic Law V.",
+      "Frege's value-range is a technical abstract, not silently identified with the ordinary image set of a function.",
+      "All formulas, including the full double-dollar Basic Law V display, are checked."
+    ],
+    "intentional_foreign_literals": [
+      {
+        "literal": "\\emph{Grundgesetze}",
+        "count": 3,
+        "reason": "Exact German bibliographic title in the introduction and the two lemma headers."
+      }
+    ],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\citet[pp.\\ 8--9]{Heck2012}",
+        "count": 1,
+        "reason": "Original bibliography key and page locator; not ordinary untranslated prose."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-aware",
+    "verified_double_dollar_displays": 1
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,2449 @@
+% આ ભાગનો પૂર્ણ સંપાદનીય પાઠ છે. શૈલી, ફોન્ટ, ચિત્રો અને પ્રકરણસંદર્ભ માટે સંપૂર્ણ સ્રોત ZIP તથા reader/full-reader.tex જુઓ. આ એકલી સ્વતંત્ર કમ્પાઇલ થતી મુખ્ય ફાઇલ નથી.
+
+% BEGIN OLP-0383
+\olpart{mvl}{બહુમૂલ્ય તર્કશાસ્ત્ર}
+\phantomsection\label{guunit:OLP-0383}
+
+
+\begin{editorial}
+  આ ભાગમાં વિધાનાત્મક બહુમૂલ્ય તર્કશાસ્ત્ર વિશેની
+  પ્રારૂપ સામગ્રી છે.
+\end{editorial}
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0384
+\olchapter{mvl}{syn}{વાક્યરચના અને અર્થવિજ્ઞાન}
+\olchapterid{mvl}{syn}
+\phantomsection\label{guunit:OLP-0384}
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0385
+\olfileid{mvl}{syn}{int}
+
+\olsection{પરિચય}
+\phantomsection\label{guunit:OLP-0385}
+
+
+શાસ્ત્રીય તર્કશાસ્ત્રમાં આપણે $\lnot$, $\land$, $\lor$,
+$\lif$ અને $\liff$ એ વિધાનાત્મક સંયોજકો વડે
+પ્રતિજ્ઞાપન ચલોમાંથી બનેલાં સૂત્રોનો
+અભ્યાસ કરીએ છીએ. શાસ્ત્રીય તર્કશાસ્ત્રનું અર્થવિજ્ઞાન
+વ્યાખ્યાયિત કરતી વખતે $\True$ અને $\False$ એ બે
+સત્યમૂલ્યો વાપરીએ છીએ. સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$માં
+પ્રતિજ્ઞાપન ચલોને અર્થ આપીએ છીએ; તે
+પ્રતિજ્ઞાપન ચલોને $\True$, $\False$ એ
+સત્યમૂલ્યો નિયુક્ત કરે છે. દરેક સત્યમૂલ્ય-નિયુક્તિ પછી
+કોઈ પણ સૂત્ર~$!A$ માટે સત્યમૂલ્ય
+$\pValue{v}(!A)$ નક્કી કરે છે. જ્યારે
+$\pValue{v}(!A) = \True$ હોય ત્યારે અને માત્ર
+ત્યારે સૂત્ર, સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$માં
+સંતોષાય છે; તેને $\pSat{v}{!A}$ લખીએ છીએ.
+
+બહુમૂલ્ય તર્કશાસ્ત્રો $\True$ અને $\False$ ઉપરાંત
+વધુ સત્યમૂલ્યો માન્ય રાખીને શાસ્ત્રીય દ્વિમૂલ્ય
+તર્કશાસ્ત્રનું સામાન્યકરણ કરે છે. તેથી બહુમૂલ્ય
+તર્કશાસ્ત્રમાં સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ એ
+દરેક પ્રતિજ્ઞાપન ચલ~$p$ને શક્ય
+સત્યમૂલ્યોમાંથી એક નિયુક્ત કરતું વિધેય છે. માન્ય
+સત્યમૂલ્યોના ગણને સામાન્ય રીતે~$V$ કહીશું.
+શાસ્ત્રીય તર્કશાસ્ત્ર પણ $V = \{\True, \False\}$
+વાળું બહુમૂલ્ય તર્કશાસ્ત્ર છે; તેમાં સંયોજકો માટેની
+પરિચિત સત્યતાસારણીઓ વડે સત્યમૂલ્ય
+$\pValue{v}(!A)$ ગણાય છે.
+
+વધારાનાં સત્યમૂલ્યો ઉમેરીએ પછી ``અને'', ``અથવા'',
+``નહિ'' અને ``જો---તો'' તરીકે વાંચાતા સંયોજકો માટે
+$\pValue{v}(!A)$ કેવી રીતે ગણવું તેની એકથી વધુ
+સ્વાભાવિક પસંદગીઓ મળે છે. તેથી બહુમૂલ્ય તર્કશાસ્ત્ર
+માત્ર સત્યમૂલ્યોના ગણથી જ નહીં, પરંતુ દરેક
+સંયોજક માટે પસંદ કરેલાં \emph{સત્યવિધેયો}થી પણ
+નક્કી થાય છે. પરંતુ બહુમૂલ્ય તર્કશાસ્ત્ર~$\Log L$
+માટે આ પસંદગી થઈ જાય પછી, શાસ્ત્રીય તર્કશાસ્ત્રની
+જેમ જ, મૂલ્યાંકન સત્યમૂલ્ય
+$\pValue{v}(!A)[\Log L]$ને એકમાત્ર રીતે નક્કી કરે
+છે. શાસ્ત્રીય તર્કશાસ્ત્રની જેમ બહુમૂલ્ય તર્કશાસ્ત્રો
+પણ \emph{સત્યતાફલનલક્ષી} છે.
+
+અર્થવિજ્ઞાનના આ મૂળ ઘટકો મળ્યા પછી પુનરુક્તિ,
+ફલિતતા અને સંતોષ્યતા જેવા અર્થવિજ્ઞાનના ખ્યાલોનો
+અનુરૂપ અર્થ વ્યાખ્યાયિત કરી શકીએ. શાસ્ત્રીય
+તર્કશાસ્ત્રમાં કોઈ પણ~$\pAssign{v}$ માટે સત્યમૂલ્ય
+$\pValue{v}(!A) = \True$ હોય તો સૂત્ર
+પુનરુક્તિ છે. બહુમૂલ્ય તર્કશાસ્ત્રમાં આને પણ થોડું
+સામાન્ય બનાવવું પડે છે. સૌપ્રથમ, સત્યમૂલ્યોના
+ગણ~$V$માં $\True$ હોવું જરૂરી નથી. દાખલા તરીકે,
+કેટલાક બહુમૂલ્ય તર્કશાસ્ત્રો સત્યમૂલ્યોના ગણ તરીકે
+$0$ અને~$1$ વચ્ચેની બધી પરિમેય સંખ્યાઓ જેવી
+સંખ્યાઓ વાપરે છે. એવા કિસ્સામાં $1$ સામાન્ય રીતે
+$\True$ની ભૂમિકા ભજવે છે. અન્ય તર્કશાસ્ત્રોમાં
+માત્ર એક નહીં, અનેક સત્યમૂલ્યો એવી ભૂમિકા
+ભજવે છે. તેથી દરેક બહુમૂલ્ય તર્કશાસ્ત્રમાં
+\emph{નિર્દિષ્ટ મૂલ્યો}નો ગણ~$V^+$ હોય એવી શરત
+રાખીએ છીએ. પછી $\pValue{v}(!A)[\Log L] \in V^+$
+હોય ત્યારે અને માત્ર ત્યારે સૂત્ર,
+સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$માં સંતોષાય છે;
+તેને $\pSat{v}{!A}[\Log L]$ લખીએ છીએ.
+દરેક~$\pAssign{v}$ માટે $\pValue{v}(!A) \in
+V^+$ હોય તો અને તો જ સૂત્ર~$!A$ એ
+તર્કશાસ્ત્રની પુનરુક્તિ છે, જેને $\Entails[\Log L]
+!A$ લખીએ છીએ. અંતે, સૂત્રોના ગણ~$\Gamma$માંથી
+$!A$ ફલિત થાય છે એમ કહીએ અને $\Gamma
+\Entails[\Log L] !A$ લખીએ છીએ, જો
+તે ગણનાં બધાં સૂત્રોને સંતોષતું દરેક
+સત્યમૂલ્ય-નિયુક્તિ~$!A$ને પણ સંતોષે.
+% END OLP-0385
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0386
+\olfileid{mvl}{syn}{con}
+
+\olsection{ભાષાઓ અને સંયોજકો}
+\phantomsection\label{guunit:OLP-0386}
+
+
+શાસ્ત્રીય વિધાનાત્મક તર્કશાસ્ત્ર અને અન્ય ઘણાં
+તર્કશાસ્ત્રો \emph{વિધાનાત્મક અચલો} તથા
+\emph{સંયોજકો}નો ગણ વાપરે છે. દાખલા તરીકે,
+નીચેનાંને આપણે મૂળભૂત માનીએ છીએ:
+\begin{enumerate}
+\item અસત્ય માટેનો વિધાનાત્મક અચલ~$\lfalse$.
+\item સત્ય માટેનો વિધાનાત્મક અચલ~$\ltrue$.
+\item તાર્કિક સંયોજકો:
+  \startycommalist
+  \ycomma $\lnot$ (નિષેધ)%
+  \ycomma $\land$ (સંયોજન)%
+  \ycomma $\lor$ (વિયોજન)%
+  \ycomma $\lif$ (પ્રેરણ)%
+  \ycomma $\liff$ (દ્વિમુખી પ્રેરણ)%
+\end{enumerate}
+
+
+બહુમૂલ્ય તર્કશાસ્ત્રોમાં પણ આ જ સંયોજકો વપરાય છે.
+જોકે, એક જ તર્કશાસ્ત્રમાં, માનો કે સંયોજનનાં જુદાં
+સ્વરૂપો સમાવવાં ઘણી વાર ઉપયોગી છે; તેમને અલગ
+ઓળખાવવા જુદા સંકેતો જોઈએ. કેટલાક બહુમૂલ્ય
+તર્કશાસ્ત્રોમાં શાસ્ત્રીય તર્કશાસ્ત્રમાં સમકક્ષ ન હોય
+એવા સંયોજકો પણ છે. તેથી આપણે સામાન્ય કરતાં
+થોડી વધુ વ્યાપક રીત લઈશું.
+
+\begin{defn}
+  \emph{વિધાનાત્મક ભાષા} એટલે સંયોજકોનો ગણ~$\Lang L$.
+  દરેક સંયોજક~$\star$ની \emph{આર્ગ્યુમેન્ટ-સંખ્યા}
+  હોય છે; આર્ગ્યુમેન્ટ-સંખ્યા~$n$ ધરાવતો સંયોજક
+  \emph{$n$-સ્થાનીય} કહેવાય છે. આર્ગ્યુમેન્ટ-સંખ્યા~$0$
+  ધરાવતા સંયોજકો \emph{અચલો} પણ કહેવાય છે;
+  આર્ગ્યુમેન્ટ-સંખ્યા~$1$ ધરાવતાં સંયોજકોને
+  \emph{એકસ્થાનીય} અને આર્ગ્યુમેન્ટ-સંખ્યા~$2$
+  ધરાવતાંને \emph{દ્વિસ્થાનીય} કહે છે.
+\end{defn}
+
+\begin{ex}
+  વિધાનાત્મક તર્કશાસ્ત્રની પ્રમાણભૂત ભાષા~$\Lang L_0$માં
+  નીચેના સંયોજકો છે (કૌંસમાં તેમની આર્ગ્યુમેન્ટ-સંખ્યા છે):
+  $\lfalse$~($0$),
+  $\lnot$~($1$),
+  $\land$~($2$),
+  $\lor$~($2$),
+  $\lif$~($2$). આપણે વિચારવાના મોટાભાગના
+  તર્કશાસ્ત્રો આ ભાષા વાપરશે. કેટલાક તર્કશાસ્ત્રો
+  રૂઢિ અનુસાર અમુક સંયોજકો માટે જુદા સંકેતો
+  વાપરે છે. દાખલા તરીકે, ગુણન તર્કશાસ્ત્રમાં
+  સંયોજનનો સંકેત ઘણી વાર $\land$ને બદલે~$\odot$
+  હોય છે. ક્યારેક નવો કારક ઉમેરવો અનુકૂળ હોય છે;
+  દાખલા તરીકે, નિર્ધારિતતા કારક~$\triangle$
+  ($1$-સ્થાનીય).
+\end{ex}
+% END OLP-0386
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0387
+\olfileid{mvl}{syn}{fml}
+
+\olsection{સૂત્રો}
+\phantomsection\label{guunit:OLP-0387}
+
+
+\begin{defn}[સૂત્ર]
+\ollabel{defn:formulas}
+વિધાનાત્મક ભાષા~$\Lang L$નાં \emph{સૂત્રો}નો
+ગણ~$\Frm[L]$ નીચે મુજબ અનુમાનાત્મક રીતે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+\item દરેક પ્રતિજ્ઞાપન ચલ~$\Obj p_i$ આણ્વિક
+  સૂત્ર છે.
+\item $\Lang L$નો દરેક $0$-સ્થાનીય સંયોજક
+  (વિધાનાત્મક અચલ) આણ્વિક સૂત્ર છે.
+\item $\star$ એ $\Lang L$નો $n$-સ્થાનીય સંયોજક
+  હોય અને $!A_1$, \dots, $!A_n$ સૂત્રો હોય,
+  તો $\star(!A_1, \dots, !A_n)$ પણ સૂત્ર છે.
+\item આ સિવાય બીજું કંઈ સૂત્ર નથી.
+\end{enumerate}
+$\star$ $1$-સ્થાનીય હોય તો $\star(!A_1)$ને ઘણી વાર
+માત્ર $\star !A_1$ લખીશું. $\star$ $2$-સ્થાનીય હોય તો
+$\star(!A_1,!A_2)$ને ઘણી વાર $(!A_1 \star !A_2)$
+લખીશું.
+\end{defn}
+
+હંમેશની જેમ, ઘણી વાર સૌથી બહારનાં કૌંસ ચૂપચાપ
+છોડી દઈશું.
+
+\begin{ex}
+  પ્રમાણભૂત ભાષા~$\Lang{L_0}$માં $\Obj p_1 \lif (\Obj p_1
+  \land \lnot \Obj p_2)$ એક સૂત્ર છે. ગુણન
+  તર્કશાસ્ત્રની ભાષામાં તેને $\Obj p_1 \lif (\Obj p_1 \odot
+  \lnot \Obj p_2)$ તરીકે લખાશે. ભાષામાં $1$-સ્થાનીય
+  $\triangle$ ઉમેરીએ તો $\triangle (\Obj p_1
+  \land \Obj p_2) \lif (\triangle \Obj p_1 \land \triangle \Obj p_2)$
+  જેવાં સૂત્રો પણ મળશે.
+\end{ex}
+% END OLP-0387
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0388
+\olfileid{mvl}{syn}{mat}
+
+\olsection{શ્રેણિકો}
+\phantomsection\label{guunit:OLP-0388}
+
+
+બહુમૂલ્ય તર્કશાસ્ત્ર તેની ભાષા, સત્યમૂલ્યોના ગણ~$V$,
+નિર્દિષ્ટ સત્યમૂલ્યોના ઉપગણ અને તેના સંયોજકોનાં
+સત્યવિધેયો વડે વ્યાખ્યાયિત થાય છે. આ ઘટકોને
+એકસાથે \emph{શ્રેણિક} કહે છે.
+
+\begin{defn}[શ્રેણિક]
+\ollabel{defn:matrix}
+તર્કશાસ્ત્ર~$\Log L$ માટેની \emph{શ્રેણિક}માં આ હોય છે:
+\begin{enumerate}
+\item ભાષા~$\Lang L$ બનાવતો સંયોજકોનો ગણ;
+\item સત્યમૂલ્યોનો અરિક્ત ગણ~$V \neq \emptyset$;
+\item નિર્દિષ્ટ સત્યમૂલ્યોનો ગણ~$V^+ \subseteq V$;
+\item $\Lang L$ના દરેક $n$-સ્થાનીય સંયોજક~$\star$
+માટે સત્યવિધેય~$\tf{\star} : V^n \to V$. જો
+$n = 0$ હોય, તો $\tf{\star}$ એ $V$નો માત્ર એક ઘટક છે.
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+શાસ્ત્રીય તર્કશાસ્ત્ર~\LogCL{} માટેની શ્રેણિકમાં આ હોય છે:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$ અને $\lif$
+  ધરાવતી પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ~$V = \{\True, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય~$\True$ છે, એટલે
+  $V^+ = \{\True\}$.
+  \item $\lfalse$ માટે $\tf{\lfalse} = \False$ છે.
+  અન્ય સત્યવિધેયો સામાન્ય સત્યતાસારણીઓ વડે
+  અપાય છે (જુઓ \olref{fig:tf-CL}).
+\end{enumerate}
+\begin{figure}
+  \begin{center}
+      \begin{tabular}{c|c}
+        $\tf{\lnot}$ & \\
+        \hline
+        $\True$ & $\False$ \\
+        $\False$ & $\True$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\land}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\False$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lor}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\True$ \\
+        $\False$ & $\True$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lif}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
+    \caption{શાસ્ત્રીય તર્કશાસ્ત્ર~$\LogCL$ માટેનાં સત્યવિધેયો.}
+    \ollabel{fig:tf-CL}
+  \end{figure}
+  \end{ex}
+% END OLP-0388
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0389
+\olfileid{mvl}{syn}{val}
+
+\olsection{સત્યમૂલ્ય-નિયુક્તિઓ અને સંતોષ}
+\phantomsection\label{guunit:OLP-0389}
+
+
+\begin{defn}[સત્યમૂલ્ય-નિયુક્તિઓ]
+$V$ સત્યમૂલ્યોનો ગણ હોય. $\Lang{L}$ માટે $V$માં મૂલ્યો ધરાવતું
+\emph{સત્યમૂલ્ય-નિયુક્તિ} એ ભાષાના પ્રતિજ્ઞાપન ચલોને $V$નો
+ઘટક નિયુક્ત કરતું વિધેય~$\pAssign{v}$ છે; એટલે કે,
+$\pAssign{v} \colon \PVar \to V$.
+\end{defn}
+
+\begin{defn}\ollabel{defn:pValue}
+બહુમૂલ્ય તર્કશાસ્ત્ર~$\Log L$ના સત્યમૂલ્યોના ગણ~$V$માં મૂલ્યો
+ધરાવતું સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ આપેલું હોય, ત્યારે મૂલ્યાંકન
+વિધેય $\pValue{v} \colon \Frm[L] \to V$ને નીચે પ્રમાણે અનુમાનાત્મક
+રીતે વ્યાખ્યાયિત કરો:
+  \begin{enumerate}
+    \item $\pValue{v}(\Obj p_n) = \pAssign{v}(\Obj p_n)$;
+    \item જો $\star$ એ $0$-સ્થાનીય સંયોજક હોય, તો $\pValue{v}(\star)  = \tf{\star}[\Log L]$;
+    \item જો $\star$ એ $n$-સ્થાનીય સંયોજક હોય, તો
+    \[
+      \pValue{v}(\star(!A_1, \dots, !A_n)) = \tf{\star}[\Log L]
+      (\pValue{v}(!A_1), \dots, \pValue{v}(!A_n)).
+    \]
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}[સંતોષ]
+\ollabel{defn:satisfaction} સૂત્ર~$!A$નો સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$
+વડે \emph{સંતોષ} થાય છે, $\pSat{v}{!A}[\Log L]$, ત્યારે જ જ્યારે
+$\pValue{v}(!A)[\Log L] \in V^+$ હોય; અહીં $V^+$ એ~$\Log L$ના
+નિર્દિષ્ટ સત્યમૂલ્યોનો ગણ છે.
+
+``$\pSat{v}{!A}[\Log L]$ નથી'' એવો અર્થ દર્શાવવા આપણે
+$\pSat/{v}{!A}[\Log L]$ લખીએ છીએ. જો $\Gamma$ સૂત્રોનો ગણ હોય, તો
+દરેક~$!A \in \Gamma$ માટે $\pSat{v}{!A}[\Log L]$ હોય ત્યારે જ
+$\pSat{v}{\Gamma}[\Log L]$.
+\end{defn}
+% END OLP-0389
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0390
+\olfileid{mvl}{syn}{sem}
+
+\olsection{અર્થવિચારી ખ્યાલો}
+\phantomsection\label{guunit:OLP-0390}
+
+
+ધારો કે બહુમૂલ્ય તર્કશાસ્ત્ર~$\Log L$ શ્રેણિક વડે આપેલું છે. ત્યારે
+આપણે~$\Log L$ માટેના સામાન્ય અર્થવિચારી ખ્યાલો વ્યાખ્યાયિત કરી શકીએ.
+
+\begin{defn}
+\begin{enumerate}
+\item કોઈ~$\pAssign{v}$ માટે $\pSat{v}{!A}$ હોય, તો
+  સૂત્ર~$!A$ \emph{સંતોષ્ય} છે; કોઈ પણ $\pAssign{v}$ માટે
+  $\pSat{v}{!A}$ ન હોય, તો તે \emph{અસંતોષ્ય} છે;
+\item બધાં સત્યમૂલ્ય-નિયુક્તિઓ~$v$ માટે $\pSat{v}{!A}$ હોય, તો
+  સૂત્ર~$!A$ \emph{પુનરુક્તિ} છે;
+\item જો $\Gamma$ એ સૂત્રોનો ગણ હોય, તો $\Gamma \Entails !A$
+  (``$\Gamma$, $!A$ને ફલિત કરે છે'') ત્યારે અને માત્ર ત્યારે, જ્યારે
+  $\pSat{v}{\Gamma}$ હોય એવા દરેક સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ માટે
+  $\pSat{v}{!A}$ હોય.
+\item જો $\Gamma$ એ સૂત્રોનો ગણ હોય, તો એવા કોઈ
+  સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ માટે $\pSat{v}{\Gamma}$ હોય ત્યારે
+  $\Gamma$ \emph{સંતોષ્ય} છે; અન્યથા $\Gamma$ \emph{અસંતોષ્ય} છે.
+\end{enumerate}
+\end{defn}
+
+આ ખ્યાલો માટે શાસ્ત્રીય તર્કશાસ્ત્રના કિસ્સા જેવી કેટલીક હકીકતો મળે છે:
+
+\begin{prop}
+\ollabel{prop:semanticalfacts}
+\begin{enumerate}
+\item $!A$ પુનરુક્તિ હોય ત્યારે અને માત્ર ત્યારે
+  $\emptyset \Entails !A$;
+\item જો $\Gamma$ સંતોષ્ય હોય, તો $\Gamma$નો દરેક સાન્ત ઉપગણ પણ
+  સંતોષ્ય છે;
+\item\ollabel{def:monotonicity}%
+એકદિશવર્ધિતા: જો $\Gamma \subseteq \Delta$
+  અને $\Gamma \Entails !A$, તો $\Delta \Entails !A$ પણ;
+\item\ollabel{def:Cut}%
+પરંપરિતતા: જો $\Gamma \Entails !A$ અને
+  $\Delta \cup \{ !A\} \Entails !B$, તો $\Gamma \cup \Delta \Entails
+  !B$;
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+\olref[mvl][syn][sem]{prop:semanticalfacts} સાબિત કરો.
+\end{prob}
+
+શાસ્ત્રીય તર્કશાસ્ત્રમાં ફલિતતા અને પ્રેરણ સંયોજક વચ્ચે સંબંધ સ્થાપી શકાય છે.
+દાખલા તરીકે, \emph{મોદુસ પોનેન્સ}નું પ્રામાણ્ય મળે છે: જો $\Gamma
+\Entails !A$ અને $\Gamma \Entails !A \lif !B$, તો $\Gamma \Entails
+!B$. શાસ્ત્રીય તર્કશાસ્ત્રમાં $\Entails$ અને $\lif$ વચ્ચેનો બીજો
+મહત્ત્વનો સંબંધ અર્થાનુસારી નિગમન પ્રમેય છે: $\Gamma \Entails !A
+\lif !B$ ત્યારે અને માત્ર ત્યારે, જ્યારે $\Gamma \cup \{!A\} \Entails
+!B$. આ પરિણામો બહુમૂલ્ય તર્કશાસ્ત્રોમાં \emph{હંમેશાં લાગુ પડતાં નથી}.
+તેઓ લાગુ પડે છે કે કેમ તે સત્યવિધેય~$\tf{\lif}$ પર આધાર રાખે છે.
+% END OLP-0390
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0391
+\olfileid{mvl}{syn}{sub}
+
+\olsection{શાસ્ત્રીય તર્કશાસ્ત્ર~$\LogCL$ના ઉપતર્કશાસ્ત્રો તરીકે બહુમૂલ્ય તર્કશાસ્ત્રો}
+\phantomsection\label{guunit:OLP-0391}
+
+
+સામાન્ય બહુમૂલ્ય તર્કશાસ્ત્રોની વ્યાખ્યા એવી શ્રેણિકો વડે થાય છે જેમાં
+$\{\True, \False\}$માંથી લેવાયેલા આર્ગ્યુમેન્ટ માટે સત્યવિધેયનું
+મૂલ્ય શાસ્ત્રીય સત્યવિધેયના મૂલ્ય સાથે મળે છે. ચોક્કસ કહીએ તો, આ
+તર્કશાસ્ત્રોમાં $x \in \{\True, \False\}$ હોય ત્યારે
+$\tf{\lnot}[\Log L](x) = \tf{\lnot}[\LogCL](x)$; અને $\star$ એ
+$\land$, $\lor$, $\lif$માંથી કોઈ પણ એક હોય અને
+$x, y \in \{\True, \False\}$ હોય ત્યારે
+$\tf{\star}[\Log L](x,y) = \tf{\star}[\LogCL](x,y)$.
+બીજા શબ્દોમાં, $\lnot$, $\land$, $\lor$, $\lif$ માટેનાં સત્યવિધેયો
+$\{\True,\False\}$ પર મર્યાદિત કરીએ તો તે ચોક્કસ શાસ્ત્રીય
+સત્યવિધેયો છે.
+
+\begin{prop}\ollabel{prop:mvl-cl}
+  ધારો કે બહુમૂલ્ય તર્કશાસ્ત્ર~$\Log L$ની ભાષામાં $\lnot$, $\land$,
+  $\lor$, $\lif$ સંયોજકો છે, $\True, \False \in V$ છે, અને તેનાં
+  સત્યવિધેયો નીચેની શરતો સંતોષે છે:
+  \begin{enumerate}
+    \item\ollabel{prop:not} $\tf{\lnot}[\Log L](x) = \tf{\lnot}[\LogCL](x)$ જો $x =
+    \True$ અથવા $x = \False$;
+    \item\ollabel{prop:land} $\tf{\land}[\Log L](x,y) = \tf{\land}[\LogCL](x,y)$,
+    \item\ollabel{prop:lor} $\tf{\lor}[\Log L](x,y) = \tf{\lor}[\LogCL](x,y)$,
+    \item\ollabel{prop:lif} $\tf{\lif}[\Log L](x,y) = \tf{\lif}[\LogCL](x,y)$,
+    જો $x, y \in \{\True, \False\}$ હોય.
+  \end{enumerate}
+  ત્યારે ઉપરના ચાર સંયોજકો અને વિધાનચલોથી બનેલા કોઈ પણ સૂત્ર માટે,
+  તે સૂત્રના દરેક વિધાનચલને શાસ્ત્રીય મૂલ્ય આપતું~$V$માંનું
+  કોઈ પણ મૂલ્યાંકન $\pAssign v$, જેના માટે
+  $\pAssign v(p) \in \{\True,\False\}$ હોય, તે હેઠળ
+  $\pValue v[\Log L](!A) = \pValue v[\LogCL](!A)$.
+\end{prop}
+\sourcecorrection{OLMV-001}{સ્થિર અંગ્રેજી મૂળ આ સમતા
+બહુમૂલ્ય ભાષાના દરેક સૂત્ર માટે કહે છે, છતાં વધારાના
+સંયોજકોનાં સત્યવિધેયો પર કોઈ શરત મૂકતું નથી. તે
+મૂલ્યાંકનની દ્વિમૂલ્ય શરત પણ એક મુક્ત વિધાનચલ માટે
+જ લખે છે. અહીં વિધાનને દર્શાવેલા ચાર સંયોજકોના
+સામાન્ય ખંડ અને સૂત્રના દરેક વિધાનચલ સુધી મર્યાદિત
+કર્યું છે; શૂન્યસ્થાનીય સંયોજકનો સમાવેશ કરવા તેના
+મૂલ્યની અલગ સમાનતા-શરત જોઈએ. દાખલા તરીકે, બીજા
+તર્કમાં અસત્ય-અચલને સત્ય મૂલ્ય આપીએ તો ચાર
+સંયોજકોની શરતો છતાં આ સમતા તૂટે છે.}
+
+\begin{proof}
+  $!A$ પર અનુમાનથી.
+  \begin{enumerate}
+  \item જો આણ્વિક સૂત્ર $!A \ident p$ હોય, તો
+  $\pValue v[\Log L](!A) = \pAssign v(p) = \pValue
+  v[\LogCL](!A)$.
+  \item જો $!A \ident \lnot B$ હોય, તો
+  \begin{align*}
+    \pValue v[\Log L](!A) & = \tf{\lnot}[\Log L](\pValue v[\Log L](!B)) & &\text{\olref[val]{defn:pValue} અનુસાર}\\
+    & = \tf{\lnot}[\Log L](\pValue v[\LogCL](!B)) && \text{અનુમાનની પૂર્વધારણાથી}\\
+    & = \tf{\lnot}[\LogCL](\pValue v[\LogCL](!B))
+&&\text{ધારણા \olref{prop:not} અનુસાર,}\\
+&&&\text{કારણ કે $\pValue v[\LogCL](!B) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](!A) &&\text{\olref[val]{defn:pValue} અનુસાર}.
+\end{align*}
+\item જો $!A \ident (!B \land !C)$ હોય, તો
+\begin{align*}
+  \pValue v[\Log L](!A) & = \tf{\land}[\Log L](\pValue v[\Log L](!B), \pValue v[\Log L](!C)) & &\text{\olref[val]{defn:pValue} અનુસાર}\\
+  & = \tf{\land}[\Log L](\pValue v[\LogCL](!B),\pValue v[\LogCL](!C)) && \text{અનુમાનની પૂર્વધારણાથી}\\
+  & = \tf{\land}[\LogCL](\pValue v[\LogCL](!B),\pValue v[\LogCL](!C))
+&&\text{ધારણા \olref{prop:land} અનુસાર,}\\
+&&&\text{કારણ કે $\pValue v[\LogCL](!B),\pValue v[\LogCL](!C) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](!A) &&\text{\olref[val]{defn:pValue} અનુસાર}.
+\end{align*}
+\end{enumerate}
+$!A \ident (!B \lor !C)$ અને $!A \ident (!B \lif !C)$ના
+કિસ્સા સમાન રીતે સાબિત થાય છે.
+\end{proof}
+
+\begin{cor}
+  જો બહુમૂલ્ય તર્કશાસ્ત્ર \olref{prop:mvl-cl}ની શરતો સંતોષે,
+  $\True \in V^+$ અને $\False \notin V^+$ હોય, તો ઉપરના
+  સામાન્ય સૂત્ર-ખંડ પર ${\Entails[\Log L]} \subseteq {\Entails[\LogCL]}$;
+  એટલે કે, જો $\Gamma \Entails[\Log L] !B$ હોય, તો
+  $\Gamma \Entails[\LogCL] !B$ પણ. ખાસ કરીને,
+  $\Log L$ની આ ખંડમાં આવેલી દરેક પુનરુક્તિ શાસ્ત્રીય પુનરુક્તિ પણ છે.
+\end{cor}
+\sourcecorrection{OLMV-002}{સ્થિર અંગ્રેજી મૂળનો
+ફલિતતા-સમાવેશ ભાષાના બધા સૂત્રો માટે જણાવાયો છે.
+અગાઉના વિધાનથી તેનો પુરાવો માત્ર બંને ભાષાના
+સામાન્ય ચાર-સંયોજક ખંડમાં જ મળે છે; અહીં
+નિષ્કર્ષનો વ્યાપ એ પ્રમાણે સ્પષ્ટ કર્યો છે.}
+
+\begin{proof}
+  આપણે વિરુદ્ધવિધાન સાબિત કરીએ. ધારો કે $\Gamma \Entails/[\LogCL] !B$.
+  ત્યારે એવું કોઈ સત્યમૂલ્ય-નિયુક્તિ~$\pAssign v\colon \PVar \to
+  \{\True, \False\}$ છે કે દરેક $!A \in \Gamma$ માટે
+  $\pValue v[\LogCL](!A) = \True$ અને
+  $\pValue v[\LogCL](!B) = \False$. કારણ કે $\True,
+  \False \in V$, એ સત્યમૂલ્ય-નિયુક્તિ~$\pAssign v$ એ~$\Log L$ માટેનું
+  સત્યમૂલ્ય-નિયુક્તિ પણ છે. \olref{prop:mvl-cl} અનુસાર, દરેક
+  $!A \in \Gamma$ માટે $\pValue v[\Log L](!A) =
+  \True$ અને $\pValue v[\Log L](!B) = \False$.
+  $\True \in V^+$ અને $\False \notin V^+$ હોવાથી
+  $\pAssign v \Entails[\Log L] \Gamma$ અને
+  $\pAssign v \Entails/[\Log L] !B$; એટલે કે,
+  $\Gamma \Entails/[\Log L] !B$.
+\end{proof}
+% END OLP-0391
+\endgroup
+
+
+\OLEndChapterHook
+% END OLP-0384
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0392
+\olchapter{mvl}{thr}{ત્રિમૂલ્ય તર્કશાસ્ત્રો}
+\olchapterid{mvl}{thr}
+\phantomsection\label{guunit:OLP-0392}
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0393
+\olfileid{mvl}{thr}{int}
+
+\olsection{પરિચય}
+\phantomsection\label{guunit:OLP-0393}
+
+
+$\True$ અને $\False$માં માત્ર એક વધુ મૂલ્ય~$\Undef$ ઉમેરીએ,
+તો ત્રિમૂલ્ય તર્કશાસ્ત્ર મળે છે. એક જ વધારાનું સત્યમૂલ્ય
+હોવા છતાં $\lnot$, $\land$, $\lor$ અને $\lif$ માટે
+સત્યવિધેયો વ્યાખ્યાયિત કરવાની ઘણી રીતો છે. પછી કોઈ
+તર્કશાસ્ત્ર આ સત્યવિધેયોના કોઈ પણ સંયોજનનો ઉપયોગ કરી શકે છે;
+ઉપરાંત માત્ર $\True$ને નિર્દિષ્ટ ગણવું કે $\True$ અને~$\Undef$
+બંનેને નિર્દિષ્ટ ગણવાં, એ પસંદગી પણ છે.
+
+અહીં આપણે સૌથી જાણીતા ત્રિમૂલ્ય તર્કશાસ્ત્રોમાંથી કેટલાક,
+તેમની પાછળની પ્રેરણા અને તેમના કેટલાક ગુણધર્મો રજૂ કરીએ છીએ.
+% END OLP-0393
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0394
+\olfileid{mvl}{thr}{luk}
+
+\olsection{લુકાશેવિચનું તર્કશાસ્ત્ર}
+\phantomsection\label{guunit:OLP-0394}
+
+
+બહુમૂલ્ય તર્કશાસ્ત્રની પ્રકાશિત અને વિગતે વિકસાવેલી શરૂઆતની
+દરખાસ્તોમાંની એક પોલૅન્ડના તત્ત્વચિંતક યાન~\L ukasiewiczએ
+1921માં આપી હતી. લુકાશેવિચને પ્રેરણા એરિસ્ટોટલની દરિયાઈ યુદ્ધની
+સમસ્યામાંથી મળી હતી: \emph{આજે} ``આવતી કાલે દરિયાઈ યુદ્ધ થશે'' એ
+વિધાન ન તો સાચું લાગે છે, ન તો ખોટું; તેનું સત્યમૂલ્ય હજી નક્કી થયું
+નથી. લુકાશેવિચે આવાં ``ભાવિ અનિશ્ચિત'' વિધાનો માટે ત્રીજું સત્યમૂલ્ય
+રજૂ કરવાની દરખાસ્ત કરી.
+\begin{quote}
+આવતા વર્ષે કોઈ નિશ્ચિત ક્ષણે, દાખલા તરીકે 21 ડિસેમ્બરે બપોરે,
+હું વૉર્સોમાં હાજર હોઈશ કે નહિ, તે અત્યારે હકારાત્મક કે નકારાત્મક
+રીતે નક્કી નથી—આ હું વિરોધાભાસ વિના માની શકું છું. તેથી તે
+સમયે હું વૉર્સોમાં હોઉં એ શક્ય છે, પણ આવશ્યક નથી. આ ધારણા હેઠળ
+``આવતા વર્ષે 21 ડિસેમ્બરે બપોરે હું વૉર્સોમાં હોઈશ'' એ વિધાન અત્યારે
+સાચું પણ નથી અને ખોટું પણ નથી. જો તે અત્યારે સાચું હોય, તો મારી
+ભાવિ હાજરી આવશ્યક બને, જે ધારણાથી વિરુદ્ધ છે. બીજી બાજુ, જો તે
+અત્યારે ખોટું હોય, તો મારી ભાવિ હાજરી અશક્ય બને, જે પણ ધારણાથી
+વિરુદ્ધ છે. તેથી વિચારાધીન વિધાન અત્યારે સાચું કે ખોટું નથી; તેને
+``0'' અથવા અસત્ય અને ``1'' અથવા સત્યથી જુદું ત્રીજું મૂલ્ય હોવું
+જોઈએ. આ મૂલ્યને આપણે ``$\frac{1}{2}$'' વડે દર્શાવી શકીએ. તે
+``શક્ય''ને દર્શાવે છે અને ``સાચું'' તથા ``ખોટું'' સાથે ત્રીજા મૂલ્ય
+તરીકે જોડાય છે.
+\end{quote}
+લુકાશેવિચના ત્રીજા સત્યમૂલ્ય માટે આપણે $\Undef$ વાપરીશું.\footnote{લુકાશેવિચ
+અહીં ``શક્ય''નો આજકાલ ઓછો પ્રચલિત અર્થ લે છે: શક્ય, પણ આવશ્યક નહિ.}
+
+$\lnot$, $\land$ અને $\lor$ સંયોજકોનાં સત્યવિધેયો આ અર્થઘટન હેઠળ
+નક્કી કરવાં સહેલાં છે: ભાવિ અનિશ્ચિત વિધાનનો નિષેધ પણ ભાવિ અનિશ્ચિત
+વિધાન છે, તેથી $\tf{\lnot}(\Undef) = \Undef$. સંયોજનનો એક ઘટક
+અનિર્ધારિત અને બીજો સાચો હોય, તો આખું સંયોજન પણ અનિર્ધારિત છે—કારણ
+કે ભાવિ અનિશ્ચિત ઘટક છેવટે કેવો નીકળે તેના આધારે સંયોજન સાચું પણ
+નીકળી શકે અને ખોટું પણ. તેથી \[
+    \tf{\land}(\True, \Undef) =
+\tf{\land}(\Undef, \True) =
+\Undef.
+\]
+પરંતુ બીજો ઘટક ખોટો હોય તો સંયોજન સાચું નીકળી શકે નહિ, તેથી
+\[\tf{\land}(\False, \Undef) =
+\tf{\land}(\Undef, \False) = \False.\]
+\sourcecorrection{OLMV-003}{સ્થિર અંગ્રેજી મૂળના આ
+સમીકરણમાં બંને ડાબી બાજુએ એક જ ક્રમમાં અસત્ય અને
+અનિર્ધારિત મૂલ્ય લખાયું છે. નીચેની સંયોજન-સારણી
+અનુસાર બીજો ક્રમ ઉલટો છે; અહીં બંને ક્રમ દર્શાવ્યા છે.}
+બાકીનાં મૂલ્યો માટે, જ્યારે આર્ગ્યુમેન્ટનાં સત્યમૂલ્યો $\True$
+અથવા $\False$ તરીકે નક્કી હોય, ત્યારે શાસ્ત્રીય તર્કશાસ્ત્રના
+જ મૂલ્યો મળે છે.
+
+પ્રેરણ સંયોજકનો કિસ્સો થોડો વધુ મુશ્કેલ છે. ધારો કે $q$ ભાવિ
+અનિશ્ચિત વિધાન છે. જો $p$ ખોટું હોય, તો $q$ છેવટે ગમે તે નીકળે,
+$p \lif q$ સાચું રહેશે; તેથી $\tf{\lif}(\False, \Undef) = \True$
+રાખવું જોઈએ. અને જો $p$ સાચું હોય, તો $q$ ગમે તે નીકળે,
+$q \lif p$ સાચું રહેશે; તેથી $\tf{\lif}(\Undef, \True) = \True$.
+જો $p$ સાચું હોય, તો $p \lif q$ છેવટે સાચું કે ખોટું નીકળી શકે;
+તેથી $\tf{\lif}(\True, \Undef) = \Undef$. એ જ રીતે, જો $p$
+ખોટું હોય, તો $q \lif p$ છેવટે સાચું કે ખોટું નીકળી શકે; તેથી
+$\tf{\lif}(\Undef, \False) = \Undef$. હવે $p$ અને $q$ બંને
+ભાવિ અનિશ્ચિત હોય એવો કિસ્સો બાકી રહે છે. પ્રેરણાના આધાર પરથી
+આ કિસ્સામાં ખરેખર $\Undef$ આપવું જોઈએ. પરંતુ એમ કરવાથી
+$!A \lif !A$ \emph{પુનરુક્તિ નહિ રહે}. લુકાશેવિચને
+$!A \lor \lnot !A$ અને $\lnot(!A \land \lnot !A)$ છોડવામાં
+અડચણ નહોતી, પણ $!A \lif !A$ છોડવામાં વાંધો હતો. તેથી તેણે
+$\tf{\lif}(\Undef, \Undef) = \True$ નક્કી કર્યું.
+
+\begin{defn}\ollabel{def:lukasiewicz}
+ત્રિમૂલ્ય લુકાશેવિચ તર્કશાસ્ત્ર નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી પ્રમાણભૂત
+  વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $\True$ છે; એટલે $V^+ = \{\True\}$.
+  \item અસત્ય-અચલનું મૂલ્ય અસત્ય છે. અન્ય સત્યવિધેયો નીચેની
+  સારણીઓ વડે અપાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\Undef$ \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\sourcecorrection{OLMV-004}{પહેલાં $\Lang L_0$માં
+અસત્ય-અચલ શૂન્યસ્થાનીય સંયોજક તરીકે વ્યાખ્યાયિત છે,
+પણ સ્થિર અંગ્રેજી મૂળની આ શ્રેણિક તેનો સત્યવિધેય
+આપતી નથી. શાસ્ત્રીય અર્થ જાળવવા અહીં તેનું
+મૂલ્ય અસત્ય હોવાનું સ્પષ્ટ કર્યું છે.}
+
+સરળતાથી જોઈ શકાય છે કે માત્ર $\lnot$, $\land$ અને $\lor$
+ધરાવતું કોઈ પણ સૂત્ર~$!A$, જો તેનાં બધાં
+પ્રતિજ્ઞાપન ચલોને $\Undef$ આપવામાં આવે, તો તેનું
+સત્યમૂલ્ય~$\Undef$ થશે. તેથી, દાખલા તરીકે, શાસ્ત્રીય પુનરુક્તિઓ
+$p \lor \lnot p$ અને $\lnot(p \land \lnot p)$ એ
+$\LogLuk[3]$માં પુનરુક્તિ નથી, કારણ કે $\pAssign v(p) = \Undef$
+હોય ત્યારે $\pValue{v}(!A) = \Undef$.
+
+જ્યાં $\pAssign v(p) = \True$ અથવા $\False$ હોય એવા
+સત્યમૂલ્ય-નિયુક્તિઓ પર $\pValue v(!A)$ તેનું શાસ્ત્રીય સત્યમૂલ્ય જ આપશે.
+
+\begin{prop}
+  $!A$માં આવતા દરેક $p$ માટે જો $\pAssign v(p) \in \{\True, \False\}$,
+  તો $\pValue v(!A)[\LogLuk[3]] = \pValue v(!A)[\LogCL]$.
+\end{prop}
+
+\begin{prob}\label{mvl:thr:luk:prob:luk-iff} ધારો કે~$\LogLuk[3]$માં
+  $\pValue v(!A \liff !B) = \pValue v((!A \lif !B) \land (!B \lif
+  !A))$ એમ વ્યાખ્યાયિત કરીએ. ત્યારે $\liff$ની સત્યતાસારણી કેવી હશે?
+\end{prob}
+
+ઘણી શાસ્ત્રીય પુનરુક્તિઓ \LogLuk[3]માં પણ પુનરુક્તિ \emph{છે};
+દાખલા તરીકે $\lnot p \lif (p \lif q)$. શાસ્ત્રીય તર્કશાસ્ત્રની
+જેમ સત્યતાસારણીથી આ તપાસી શકીએ છીએ:
+\begin{center}
+\begin{tabular}{cc|cccccc}
+  $p$ & $q$ & $\lnot$ & $p$ & $\lif$ & $\smash{(}p$ & $\lif$ & $q\smash{)}$ \\ \hline
+  \True & \True & \False & \True & \True & \True & \True & \True \\
+  \True & \Undef & \False & \True & \True & \True & \Undef & \Undef \\
+  \True & \False & \False & \True & \True & \True & \False & \False \\
+  \Undef & \True & \Undef & \Undef & \True & \Undef & \True & \True \\
+  \Undef & \Undef & \Undef & \Undef & \True & \Undef & \True & \Undef \\
+  \Undef & \False & \Undef & \Undef & \True & \Undef & \Undef & \False \\
+  \False & \True & \True & \False & \True & \False & \True & \True \\
+  \False & \Undef & \True & \False & \True & \False & \True & \Undef \\
+  \False & \False & \True & \False & \True & \False & \True & \False \\
+\end{tabular}
+\end{center}
+
+\begin{prob}
+  નીચેનાં સૂત્રો \LogLuk[3]માં પુનરુક્તિ છે તે બતાવો:
+  \begin{enumerate}
+    \item $p \lif (q \lif p)$
+    \item\label{mvl:thr:luk:prob:luk-taut-2} $\lnot(p \land q) \liff (\lnot p \lor \lnot q)$
+    \item\label{mvl:thr:luk:prob:luk-taut-3} $\lnot(p \lor q) \liff (\lnot p \land \lnot q)$
+  \end{enumerate}
+  (\olref[mvl][thr][luk]{prob:luk-taut-2} અને
+  \olref[mvl][thr][luk]{prob:luk-taut-3}માં $!A \liff !B$ને
+  $(!A \lif !B) \land (!B \lif !A)$નું સંક્ષિપ્ત લેખન માનો,
+  અથવા \olref[mvl][thr][luk]{prob:luk-iff}ના તમારા ઉકેલનો ઉપયોગ કરો.)
+\end{prob}
+
+\begin{prob}
+  નીચેનાં શાસ્ત્રીય પુનરુક્તિઓ \LogLuk[3]માં પુનરુક્તિ નથી તે બતાવો:
+  \begin{enumerate}
+    \item $(\lnot p \land p) \lif q$
+    \item $((p \lif q) \lif p) \lif p$
+    \item $(p \lif (p \lif q)) \lif (p \lif q)$
+  \end{enumerate}
+\end{prob}
+\sourcecorrection{OLMV-005}{સ્થિર અંગ્રેજી મૂળના
+પહેલા અભ્યાસપ્રશ્નમાં અંતે વધારાનો જમણો કૌંસ છે.
+અહીં વધારાનો કૌંસ દૂર કર્યો છે; સૂત્રનો અર્થ અને
+શાસ્ત્રીય પુનરુક્તિરૂપ જળવાય છે.}
+
+આથી કદાચ એમ લાગી શકે કે બધી શાસ્ત્રીય પુનરુક્તિઓ
+$\LogLuk[3]$માં પુનરુક્તિ ન હોય તોપણ દરેક
+સત્યમૂલ્ય-નિયુક્તિ હેઠળ તેમનું મૂલ્ય ઓછામાં ઓછું $\True$ અથવા
+$\Undef$ હશે. પરંતુ એવું નથી. નીચેનું પ્રતિઉદાહરણ જુઓ:
+\[
+  \lnot(p \lif \lnot p) \lor \lnot(\lnot p \lif p)
+\]
+જો $p$નું મૂલ્ય~$\Undef$ હોય, તો આ સૂત્રનું મૂલ્ય $\False$ છે.
+
+\begin{prob}
+  લુકાશેવિચ તર્કશાસ્ત્રમાં નીચેનામાંથી કયા ફલિતતા-સંબંધો સાચા છે?
+  દરેક માટે સત્યતાસારણી આપો.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot\lnot p \Entails p$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+લુકાશેવિચે પોતાના ત્રિમૂલ્ય તર્કશાસ્ત્રના આધારે સંભાવનાનું
+તર્કશાસ્ત્ર બનાવવાની આશા રાખી હતી. તેણે એકસ્થાનીય
+સંયોજક $\Diamond !A$ (``$!A$ શક્ય છે'' માટે) અને તેને અનુરૂપ
+$\Box !A$ (``$!A$ આવશ્યક છે'' માટે) રજૂ કર્યા:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\Diamond}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+  \quad
+  \begin{tabular}{c|c}
+    $\tf{\Box}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\False$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+બીજા શબ્દોમાં, $p$ શક્ય ત્યારે અને માત્ર ત્યારે છે જ્યારે
+તે પહેલેથી ખોટું હોવાનું નક્કી નથી; અને $p$ આવશ્યક ત્યારે
+અને માત્ર ત્યારે છે જ્યારે તે પહેલેથી સાચું હોવાનું નક્કી છે.
+
+\begin{prob}
+  $\Box p \liff \lnot\Diamond \lnot p$ અને $\Diamond p \liff
+  \lnot \Box \lnot p$ એ $\Box$ અને~$\Diamond$ની ઉપરની
+  સત્યતાસારણીઓથી વિસ્તૃત \LogLuk[3]માં પુનરુક્તિ છે તે બતાવો.
+\end{prob}
+
+પરંતુ સૂચિત આ વિધાત્મક તર્કશાસ્ત્રની મર્યાદા ટૂંક સમયમાં
+સ્પષ્ટ થઈ: ભવિષ્યમાં ગમે તે થાય, $p \land \lnot p$ કદી સાચું
+નીકળી શકે નહિ. તેથી અત્યારે તેનું મૂલ્ય અનિર્ધારિત હોય તોપણ તેને
+અશક્ય ગણવું જોઈએ; એટલે $\lnot \Diamond(p \land \lnot p)$ પુનરુક્તિ
+હોવું જોઈએ. પરંતુ જો $\pAssign v(p) = \Undef$, તો
+$\pValue v(\lnot \Diamond(p \land \lnot p)) = \False$.
+\sourcecorrection{OLMV-006}{સ્થિર અંગ્રેજી મૂળ અહીં
+અંતિમ મૂલ્ય અનિર્ધારિત કહે છે. ઉપરની સારણીઓ મુજબ
+અનિર્ધારિત વિધાન અને તેનો નિષેધ ભેગાં કરીએ તો
+અનિર્ધારિત મળે છે, તેનું સંભાવના-મૂલ્ય સત્ય અને
+તેનો નિષેધ અસત્ય મળે છે. તેથી અહીં અસત્ય લખ્યું છે;
+પ્રતિઉદાહરણનો હેતુ યથાવત્ રહે છે.}
+લુકાશેવિચે શક્યતા અને આવશ્યકતા જેવા વિધાત્મક ભેદો માટે
+બે સત્યમૂલ્યો પૂરતાં નથી એમ સાચું કહ્યું હતું, પરંતુ
+ત્રીજું સત્યમૂલ્ય ઉમેરવું પણ પૂરતું નથી.
+% END OLP-0394
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0395
+\olfileid{mvl}{thr}{skl}
+
+\olsection{ક્લીની તર્કશાસ્ત્રો}
+\phantomsection\label{guunit:OLP-0395}
+
+
+સ્ટીફન ક્લીનીએ બે ત્રિમૂલ્ય તર્કશાસ્ત્રો રજૂ કર્યાં. તેમની પ્રેરણા
+એવા તર્કશાસ્ત્રમાંથી આવી જેમાં સત્યમૂલ્યોને સંગણનાત્મક પ્રક્રિયાઓના
+પરિણામો માનવામાં આવે છે: કોઈ પ્રક્રિયા $\True$ અથવા $\False$ આપી
+શકે, પણ તે અટકે જ નહિ એવું પણ બને. ત્યારે તેને અનુરૂપ સત્યમૂલ્ય
+અવ્યાખ્યાયિત હોય છે અને તેને~$\Undef$ વડે દર્શાવીએ છીએ.
+
+વિધાન~$!A$નો નિષેધ ગણવા માટે પહેલાં~$!A$નું મૂલ્ય ગણવું પડે અને
+પછી તેનું વિપરીત મૂલ્ય આપવું પડે. જો $!A$ની ગણતરી અટકે નહિ, તો
+આખી પ્રક્રિયા પણ અટકતી નથી; તેથી $\Undef$નો નિષેધ $\Undef$ છે.
+
+સંયોજન $!A \land !B$ ગણવાની બે રીતો છે. પહેલાં~$!A$ અને પછી
+$!B$ ગણીએ, તો બંનેનાં પરિણામ~$\True$ હોય ત્યારે જવાબ $\True$,
+અન્યથા $\False$ મળે. બેમાંથી એક પણ ગણતરી અટકે નહિ, તો આખી
+પ્રક્રિયા પણ અટકતી નથી. તેથી આ પદ્ધતિમાં એક ઘટક અવ્યાખ્યાયિત
+હોય, તો સંયોજન પણ અવ્યાખ્યાયિત છે. વિયોજન માટે પણ એવું જ છે.
+
+પરંતુ $!A$ અને $!B$ને સમાંતરે ગણાવી શકીએ તો વધુ સારું થાય.
+બેમાંથી એક પ્રક્રિયા અટકી $\False$ આપે, તો આપણે અટકી શકીએ,
+કારણ કે જવાબ ખોટો જ હશે. એટલે આ કિસ્સામાં એક ઘટક ખોટો હોય
+તો બીજો અવ્યાખ્યાયિત હોવા છતાં સંયોજન ખોટું છે. એવી જ રીતે,
+વિયોજન સમાંતરે ગણતાં કોઈ એક ઘટક સાચો નીકળે એટલે અટકી શકાય:
+વિયોજન સાચું જ હશે. આમ એક ઘટક અવ્યાખ્યાયિત હોય તોપણ સંયુક્ત
+વિધાનનું પરિણામ જાણી શકાય છે. આ અર્થઘટનમાં $\Undef$ને
+``અવ્યાખ્યાયિત'' કરતાં ``અજ્ઞાત'' તરીકે વાંચી શકીએ.
+
+આ બે અર્થઘટનોમાંથી ક્લીનીનાં પ્રબળ અને દુર્બળ તર્કશાસ્ત્રો મળે છે.
+પ્રેરણ સંયોજકને $\lnot !A \lor !B$ની સમકક્ષ તરીકે વ્યાખ્યાયિત કરીએ છીએ.
+
+\begin{defn}
+\emph{પ્રબળ ક્લીની તર્કશાસ્ત્ર}~$\LogKs$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી અને
+  અસત્ય-અચલ વિનાની પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$ની ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $\True$ છે; એટલે $V^+ = \{\True\}$.
+  \item સત્યવિધેયો નીચેની સારણીઓ વડે અપાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+\emph{દુર્બળ ક્લીની તર્કશાસ્ત્ર}~$\LogKw$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી અને
+  અસત્ય-અચલ વિનાની પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$ની ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $\True$ છે; એટલે $V^+ = \{\True\}$.
+  \item સત્યવિધેયો નીચેની સારણીઓ વડે અપાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$\\
+      $\False$ & $\False$ & $\Undef$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\True$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\sourcecorrection{OLMV-007}{સ્થિર અંગ્રેજી મૂળ બંને
+શ્રેણિકોમાં આખી પ્રમાણભૂત ભાષા~$\Lang L_0$ કહે છે;
+પરંતુ અગાઉ તેની અંદર અસત્ય-અચલ પણ છે, જ્યારે અહીં
+તેનું સત્યવિધેય અપાયું નથી. તેને અસત્ય મૂલ્ય આપીએ
+તોપણ તેના નિષેધથી પુનરુક્તિ મળે છે અને નીચેનું
+પ્રમેય ખોટું પડે છે. તેથી બંને શ્રેણિકોને અહીં
+ચોક્કસ ચાર-સંયોજક, અચલ વિનાની ઉપભાષા સુધી
+મર્યાદિત કરી છે.}
+
+\begin{prop}
+  $\LogKs$ અને $\LogKw$માં કોઈ પુનરુક્તિ નથી.
+\end{prop}
+
+\begin{proof}
+  બધાં પ્રતિજ્ઞાપન ચલો~$p$ માટે જો
+  $\pAssign v(p) = \Undef$, તો કોઈ પણ સૂત્ર~$!A$નું સત્યમૂલ્ય
+  $\pValue v(!A) = \Undef$ હશે, કારણ કે બંને તર્કશાસ્ત્રોમાં
+  \[
+    \tf{\lnot}(\Undef) = \tf{\lor}(\Undef, \Undef) = \tf{\land}(\Undef,
+  \Undef) = \tf{\lif}(\Undef, \Undef) = \Undef
+  \]
+  અને $\LogKs$ કે $\LogKw$માંથી કોઈ પણ તર્કશાસ્ત્રમાં
+  $\Undef \notin V^+$.
+  તેથી આ સત્યમૂલ્ય-નિયુક્તિ હેઠળ $!A$ નિર્દિષ્ટ નથી.
+\end{proof}
+
+પ્રબળ અને દુર્બળ ક્લીની તર્કશાસ્ત્રોમાં પુનરુક્તિ ન હોવા છતાં
+તેમના ફલિતતા-સંબંધો ગૌણ નથી.
+
+\begin{prob}
+  નીચેનામાંથી કયા સંબંધો (a)~પ્રબળ અને (b)~દુર્બળ ક્લીની
+  તર્કશાસ્ત્રમાં સાચા છે? દરેક માટે સત્યતાસારણી આપો.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+દિમિત્રી બોચ્વારે $\Undef$નો અર્થ ``નિરર્થક'' લીધો અને
+જૂઠ્ઠાણાના વિરોધાભાસ જેવા વિરોધાભાસો ઉકેલવા માટે વિરોધાભાસી
+વિધાનોને~$\Undef$ મૂલ્ય આપવાની દરખાસ્ત કરી. તેણે એવો તર્કશાસ્ત્ર
+રજૂ કર્યો જે મૂળભૂત રીતે વધારાના સંયોજકો સાથેનું દુર્બળ ક્લીની
+તર્કશાસ્ત્ર છે. એમાંથી બે ``બાહ્ય નિષેધ'' અને ``અવ્યાખ્યાયિત છે''
+કારક છે:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\sim}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\True$
+  \end{tabular}
+\quad
+  \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+
+\begin{prob}
+  બોચ્વારના તર્કશાસ્ત્રમાં $\lnot$ અને~$+$ વડે $\sim$ વ્યાખ્યાયિત
+  કરી શકાય છે? એટલે માત્ર પ્રતિજ્ઞાપન ચલ~$p$ ધરાવતું અને $\sim$ વિનાનું એવું સૂત્ર
+  શોધો જેનું સત્યમૂલ્ય હંમેશાં~$\mathord{\sim}p$ જેટલું જ હોય.
+  તમારો જવાબ સાચો છે તે દર્શાવવા સત્યતાસારણી આપો.
+\end{prob}
+% END OLP-0395
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0396
+\olfileid{mvl}{thr}{god}
+
+\olsection{ગોડેલ તર્કશાસ્ત્રો}
+\phantomsection\label{guunit:OLP-0396}
+
+
+કુર્ત ગોડેલે $n$-મૂલ્ય તર્કશાસ્ત્રોની એવી શ્રેણી રજૂ કરી કે
+તેમાંના દરેકમાં સ્ફુરણાવાદી તર્કશાસ્ત્રમાં પ્રામાણ્ય ધરાવતાં બધાં
+સૂત્રો સામેલ છે, અને તે દરેક તર્કશાસ્ત્ર શાસ્ત્રીય
+તર્કશાસ્ત્રમાં સમાયેલું છે.
+તેમાંનું પહેલું રસપ્રદ તર્કશાસ્ત્ર આ છે:
+
+\begin{defn}\ollabel{defn:goedel}
+\emph{$3$-મૂલ્ય ગોડેલ તર્કશાસ્ત્ર}~$\LogGod$ નીચેની શ્રેણિક વડે
+વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$
+  ધરાવતી પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $\True$ છે; એટલે $V^+ = \{\True\}$.
+  \item $\lfalse$ માટે $\tf{\lfalse} = \False$ છે. અન્ય
+  સંયોજકોનાં સત્યવિધેયો નીચેની સારણીઓ વડે અપાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}[\LogGod]$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\False$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\False$ \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+
+અહીં $\land$ અને~$\lor$ની સત્યતાસારણીઓ લુકાશેવિચ અને પ્રબળ
+ક્લીની તર્કશાસ્ત્ર જેવી જ છે, પણ $\lnot$ અને~$\lif$ની
+સત્યતાસારણીઓ દરેકમાં જુદી છે. ગોડેલ તર્કશાસ્ત્રમાં
+$\tf{\lnot}(\Undef) = \False$. લુકાશેવિચ અને ક્લીની
+તર્કશાસ્ત્રોથી વિપરીત, $\tf{\lif}(\Undef, \False) = \False$;
+અને ક્લીની તર્કશાસ્ત્રથી વિપરીત, પરંતુ લુકાશેવિચ તર્કશાસ્ત્રની જેમ,
+$\tf{\lif}(\Undef, \Undef) = \True$.
+
+ઉપર સૂચવેલા સ્ફુરણાવાદી તર્કશાસ્ત્ર સાથેના સંબંધ પરથી સમજાય છે કે
+$\LogGod[3]$ તેની નજીક છે. બધી સ્ફુરણાવાદી સત્યતાઓ
+$\LogGod[3]$માં પુનરુક્તિ છે; જ્યારે સ્ફુરણાવાદી અર્થમાં પ્રામાણ્ય
+ન ધરાવતી ઘણી શાસ્ત્રીય પુનરુક્તિઓ $\LogGod[3]$માં પણ પુનરુક્તિ નથી.
+દાખલા તરીકે, આ પુનરુક્તિઓ નથી:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+પરંતુ $\LogGod[3]$ની દરેક પુનરુક્તિ સ્ફુરણાવાદી અર્થમાં પણ
+પ્રામાણ્ય ધરાવે એવું નથી; દાખલા તરીકે $\lnot\lnot p \lor \lnot p$
+અથવા $(p \lif q) \lor (q \lif p)$.
+
+\begin{prob}
+  નીચેનાં સૂત્રો~$\LogGod[3]$માં પુનરુક્તિ છે તે બતાવવા
+  સત્યતાસારણીઓ આપો:
+  \begin{align*}
+    & \lnot\lnot p \lor \lnot p\\
+    & (p \lif q) \lor (q \lif p) \\
+    & \lnot(p \land q) \lif (\lnot p \lor \lnot q) \\
+    & (p \lif q) \lor (q \lif r) \lor (r \lif s)
+  \end{align*}
+\end{prob}
+
+\begin{prob}
+  નીચેનાં સૂત્રો~$\LogGod[3]$માં પુનરુક્તિ નથી તે બતાવવા
+  સત્યતાસારણીઓ આપો:
+  \begin{align*}
+    & (p \lif q) \lif (\lnot p \lor q) \\
+    & \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+    & ((p \lif q) \lif p) \lif p \\
+    & \lnot(p \lif q) \lif (p \land \lnot q)
+  \end{align*}
+\end{prob}
+
+\begin{prob}
+  ગોડેલ તર્કશાસ્ત્રમાં નીચેનામાંથી કયા ફલિતતા-સંબંધો સાચા છે?
+  દરેક માટે સત્યતાસારણી આપો.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+% END OLP-0396
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0397
+\olfileid{mvl}{thr}{mul}
+
+\olsection{માત્ર $\True$ જ નિર્દિષ્ટ નહિ}
+\phantomsection\label{guunit:OLP-0397}
+
+
+અત્યાર સુધી જોયેલા બધાં તર્કશાસ્ત્રોમાં નિર્દિષ્ટ સત્યમૂલ્યોનો ગણ
+$V^+ = \{\True\}$ હતો; એટલે કોઈ વસ્તુનું સત્યમૂલ્ય~$\True$
+હોય ત્યારે અને માત્ર ત્યારે જ તેને સાચી ગણાતી. પરંતુ કોઈ વસ્તુ
+માત્ર~$\False$ ન હોય તોપણ તેને સાચી ગણી શકાય. દાખલા તરીકે,
+શ્રેણિકમાં $V^+ = \{\True, \Undef\}$ નક્કી કરવાથી આવું
+તર્કશાસ્ત્ર મળશે.
+
+\begin{defn}
+\emph{વિરોધાભાસનું તર્કશાસ્ત્ર}~$\LogLP$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી અને
+  અસત્ય-અચલ વિનાની પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$ની ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item $\True$ અને $\Undef$ નિર્દિષ્ટ છે; એટલે $V^+ = \{\True, \Undef\}$.
+  \item સત્યવિધેયો પ્રબળ ક્લીની તર્કશાસ્ત્ર જેવા જ છે.
+\end{enumerate}
+\end{defn}
+
+\begin{defn}
+હાલ્ડેનનું \emph{નિરર્થકતાનું તર્કશાસ્ત્ર}~$\LogHal$ નીચેની શ્રેણિક વડે
+વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ અને $1$-સ્થાનીય
+  સંયોજક~$+$ ધરાવતી, અસત્ય-અચલ વિનાની પ્રમાણભૂત
+  વિધાનાત્મક ભાષા~$\Lang L_0$ની વિસ્તૃત ઉપભાષા.
+  \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+  \item $\True$ અને $\Undef$ નિર્દિષ્ટ છે; એટલે $V^+ = \{\True, \Undef\}$.
+  \item સત્યવિધેયો દુર્બળ ક્લીની તર્કશાસ્ત્ર જેવા છે, અને ઉપરાંત
+  ``નિરર્થક છે'' કારક આ પ્રમાણે છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\sourcecorrection{OLMV-008}{સ્થિર અંગ્રેજી મૂળ બંને
+શ્રેણિકોમાં આખી ભાષા~$\Lang L_0$ કહે છે, પરંતુ
+તેમાં અગાઉથી અસત્ય-અચલ છે અને અહીં તેનું સત્યવિધેય
+આપેલું નથી. અગાઉના ક્લીની વિભાગની જેમ અહીં
+બંને શ્રેણિકોને અચલ વિનાની સામાન્ય ઉપભાષા પર
+વ્યાખ્યાયિત કરી છે. વધારાનો કારક ધરાવતા હાલ્ડેન
+તર્કશાસ્ત્રની પુનરુક્તિઓની શાસ્ત્રીય સાથેની સરખામણી
+પણ સામાન્ય ચાર-સંયોજક ખંડ પૂરતી છે.}
+
+સમાન સત્યતાસારણીઓ ધરાવતા ક્લીની તર્કશાસ્ત્રોથી વિપરીત,
+આ બંનેમાં પુનરુક્તિઓ \emph{છે}.
+
+\begin{prop}\ollabel{prop:LP-taut-CL} સામાન્ય ચાર-સંયોજક ખંડમાં
+  $\LogLP$ની પુનરુક્તિઓ શાસ્ત્રીય વિધાનાત્મક તર્કશાસ્ત્રની
+  પુનરુક્તિઓ જેવી જ છે.
+\end{prop}
+
+\begin{proof}
+  \olref[syn][sub]{prop:mvl-cl} અનુસાર, જો $\Entails[\LogLP] !A$
+  હોય, તો $\Entails[\LogCL] !A$. વિપરીત દિશા માટે બતાવીએ કે
+  જો એવું કોઈ સત્યમૂલ્ય-નિયુક્તિ~$\pAssign v\colon \PVar \to \{\False, \True,
+  \Undef\}$ હોય કે $\pValue v(!A)[\LogKs] = \False$, તો એવું
+  સત્યમૂલ્ય-નિયુક્તિ~$\pAssign {v'}\colon \PVar \to \{\False, \True\}$
+  હોય કે $\pValue {v'}(!A)[\LogCL] = \False$. આથી $\LogLP$ માટે
+  પરિણામ મળે છે, કારણ કે $\LogKs$ અને $\LogLP$નાં લાક્ષણિક
+  સત્યવિધેયો સરખાં છે અને $\LogLP$નું એકમાત્ર અનિર્દિષ્ટ
+  સત્યમૂલ્ય $\False$ છે (આ જ $\LogLP$ અને~$\LogKs$ વચ્ચેનો ભેદ છે).
+  તેથી જો $\Entails/[\LogLP] !A$, તો કોઈ સત્યમૂલ્ય-નિયુક્તિ~$\pAssign v$
+  માટે $\pValue v(!A)[\LogLP] = \pValue
+  v[\LogKs](!A) = \False$. આપણે જે દાવો સાબિત કરીએ છીએ તે મુજબ
+  $\pValue{v'}[\LogCL](!A) = \False$; એટલે
+  $\Entails/[\LogCL] !A$.
+
+  દાવો સાબિત કરવા પહેલાં $\pAssign {v'}$ને આ રીતે વ્યાખ્યાયિત કરીએ:
+  \[
+    \pAssign {v'}(p) =
+    \begin{cases}
+    \True & \text{જો } \pAssign {v}(p) \in \{\True, \Undef\}\\
+    \False & \text{અન્યથા}
+  \end{cases}
+  \]
+  હવે $!A$ પર અનુમાનથી બતાવીએ કે (a)~જો $\pValue v(!A)[\LogKs]
+  = \False$, તો $\pValue {v'}(!A)[\LogCL] = \False$; અને (b)~જો
+  $\pValue v(!A)[\LogKs] = \True$, તો $\pValue {v'}(!A)[\LogCL] =
+  \True$.
+  \begin{enumerate}
+    \item અનુમાનનો આધાર: $!A \ident p$. 
+    \olref[syn][val]{defn:pValue} અનુસાર,
+    $\pValue v(!A)[\LogKs] = \pAssign v(p)$.
+    જો આ મૂલ્ય $\False$ અથવા $\True$ હોય, તો ઉપરની
+    $\pAssign {v'}$ની વ્યાખ્યા મુજબ $\pValue {v'}(!A)[\LogCL]$
+    પણ એ જ મૂલ્ય છે; એટલે (a) અને~(b) બંને મળે છે.
+    જો મૂલ્ય $\Undef$ હોય, તો બંને પૂર્વપક્ષ ખોટા છે.
+    \sourcecorrection{OLMV-009}{સ્થિર અંગ્રેજી મૂળ
+    બધા મૂલ્યાંકનો માટે $\pAssign v(p)=\pValue{v'}(!A)$
+    કહે છે; પરંતુ $\pAssign v(p)=\Undef$ હોય ત્યારે
+    $\pAssign{v'}(p)=\True$ છે. અહીં માત્ર (a) અને
+    (b) માટે જરૂરી બે શરતી દાવા સાબિત કર્યા છે.}
+
+    અનુમાનના પગલા માટે નીચેના કિસ્સા લો:
+    \item $!A \ident \lnot !B$.
+    \begin{enumerate}
+      \item ધારો કે $\pValue v(\lnot!B)[\LogKs] = \False$.
+      $\tf{\lnot}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \True$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(b)થી $\pValue {v'}(!B)[\LogCL] = \True$ મળે છે;
+      તેથી $\pValue {v'}(\lnot !B)[\LogCL] = \False$.
+      \item ધારો કે $\pValue v(\lnot!B)[\LogKs] = \True$.
+      $\tf{\lnot}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \False$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(a)થી $\pValue {v'}(!B)[\LogCL] = \False$ મળે છે;
+      તેથી $\pValue {v'}(\lnot !B)[\LogCL] = \True$.
+    \end{enumerate}
+
+    \item $!A \ident (!B \land !C)$.
+    \begin{enumerate}
+      \item ધારો કે $\pValue v(!B \land !C)[\LogKs] = \False$.
+      $\tf{\land}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \False$ અથવા
+      $\pValue v(!C)[\LogKs] = \False$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(a)થી $\pValue {v'}(!B)[\LogCL] = \False$
+      અથવા $\pValue {v'}(!C)[\LogCL] = \False$ મળે છે; તેથી
+      $\pValue {v'}(!B \land !C)[\LogCL] = \False$.
+      \item ધારો કે $\pValue v(!B \land !C)[\LogKs] = \True$.
+      $\tf{\land}[\LogKs]$ની વ્યાખ્યા મુજબ
+      $\pValue v(!B)[\LogKs] = \True$ અને
+      $\pValue v(!C)[\LogKs] = \True$. અનુમાનની પૂર્વધારણાના
+      કિસ્સા~(b)થી $\pValue {v'}(!B)[\LogCL] = \True$
+      અને $\pValue {v'}(!C)[\LogCL] = \True$ મળે છે; તેથી
+      $\pValue {v'}(!B \land !C)[\LogCL] = \True$.
+    \end{enumerate}
+    \sourcecorrection{OLMV-010}{સ્થિર અંગ્રેજી મૂળ
+    સંયોજન ખોટું અને સાચું હોય તે બંને કિસ્સામાં
+    બે વાર~$!B$નું મૂલ્ય લખે છે, જોકે આગળનો
+    નિષ્કર્ષ $!B$ અને~$!C$ પર આધારિત છે. અહીં
+    બીજા ઘટકનું મૂલ્ય $!C$ તરીકે સુધાર્યું છે.}
+  \end{enumerate}
+
+  બીજા બે કિસ્સા સમાન રીતે સાબિત થાય છે; તેમને અભ્યાસપ્રશ્ન તરીકે
+  રાખ્યા છે. વિકલ્પે, ઉપરનો પુરાવો માત્ર $\lnot$ અને~$\land$
+  ધરાવતા બધાં સૂત્રો માટે પરિણામ સ્થાપિત કરે છે. હવે
+  $\LogKs$ અને $\LogCL$ બંનેમાં કોઈ પણ $\pAssign v$ માટે
+  $\pValue v(!B \lor
+  !C) = \pValue v(\lnot(\lnot!B \land \lnot !C))$ અને
+  $\pValue v(!B \lif
+  !C) = \pValue v(\lnot(!B \land \lnot !C))$ એ હકીકતોનો
+  ઉપયોગ કરી શકાય છે.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][thr][mul]{prop:LP-taut-CL}નો પુરાવો પૂર્ણ કરો; એટલે
+  $!A \ident (!B \lor !C)$ અને $!A \ident (!B \lif !C)$ના
+  કિસ્સાઓમાં (a) અને~(b) સ્થાપિત કરો.
+\end{prob}
+
+\begin{prob}
+દરેક શાસ્ત્રીય પુનરુક્તિ~$\LogHal$માં પુનરુક્તિ છે તે સાબિત કરો.
+\end{prob}
+
+સામાન્ય ચાર-સંયોજક ખંડમાં તેમની પુનરુક્તિઓ શાસ્ત્રીય તર્કશાસ્ત્ર
+જેવી હોવા છતાં તેમના ફલિતતા-સંબંધો જુદા છે. દાખલા તરીકે,
+$\LogLP$ \emph{વિરોધાભાસ-સહનશીલ} છે: $\lnot p, p \Entails/ q$.
+તેથી વિસ્ફોટનો સિદ્ધાંત $\lnot !A, !A \Entails !B$ સામાન્ય રીતે
+લાગુ પડતો નથી. (કેટલાક $!A$ અને $!B$ના કિસ્સામાં તે લાગુ પડે છે;
+દાખલા તરીકે, $!B$~પુનરુક્તિ હોય ત્યારે.)
+
+\begin{prob}
+  નીચેનામાંથી કયા સંબંધો (a)~$\LogLP$માં અને (b)~$\LogHal$માં
+  સાચા છે? દરેક માટે સત્યતાસારણી આપો.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot q, p \lif q \Entails \lnot p$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+    \item $p \lif q, q\lif r \Entails p \lif r$
+  \end{enumerate}
+\end{prob}
+
+$\LogLuk[3]$માં $\Undef$ને નિર્દિષ્ટ ગણીએ તો શું થાય?
+
+\begin{defn}
+\emph{ત્રિમૂલ્ય આર-મિંગલ}~$\LogRM[3]$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+  \begin{enumerate}
+    \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$
+    ધરાવતી પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+    \item સત્યમૂલ્યોનો ગણ $V = \{\True, \Undef, \False\}$.
+    \item $\True$ અને $\Undef$ નિર્દિષ્ટ છે; એટલે $V^+ = \{\True, \Undef\}$.
+    \item સત્યવિધેયો લુકાશેવિચ તર્કશાસ્ત્ર~$\LogLuk[3]$ જેવા જ છે.
+  \end{enumerate}
+\end{defn}
+
+\begin{prob}
+  $\LogRM[3]$માં નીચેનામાંથી કયા સંબંધો સાચા છે?
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+નિર્દિષ્ટ મૂલ્યો બદલવાથી જુદી સત્યતાસારણીઓ ક્યારેક સમાન
+તર્કશાસ્ત્ર, એટલે સમાન ફલિતતા-સંબંધ, આપી શકે છે. દાખલા તરીકે,
+ગોડેલ તર્કશાસ્ત્રમાં $\{\True\}$ને બદલે
+$V^+ = \{\True, \Undef\}$ લઈએ ત્યારે એવું થાય છે.
+
+\begin{prop}\ollabel{prop:gl-udes}
+  $V = \{\False, \Undef,\True\}$, $V^+=\{\True,
+  \Undef\}$ અને $3$-મૂલ્ય ગોડેલ તર્કશાસ્ત્રનાં સત્યવિધેયો ધરાવતી
+  શ્રેણિક શાસ્ત્રીય તર્કશાસ્ત્ર વ્યાખ્યાયિત કરે છે.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  ગોડેલ તર્કશાસ્ત્રની જેમ વ્યાખ્યાયિત પરંતુ
+  $V^+=\{\True,\Undef\}$ ધરાવતા તર્કશાસ્ત્ર~$\Log L$ માટે,
+  જો $\Gamma \Entails/[\Log L] !B$ તો
+  $\Gamma \Entails/[\LogCL] !B$ છે તે બતાવી
+  \olref[mvl][thr][mul]{prop:gl-udes} સાબિત કરો.
+  \olref[mvl][thr][mul]{prop:LP-taut-CL}ના વિચારોનો ઉપયોગ કરો;
+  પરંતુ (a) અને~(b) સાબિત કરવાને બદલે
+  $\pValue v(!A)[\LogGod] = \False$ ત્યારે અને માત્ર ત્યારે જ્યારે
+  $\pValue {v'}(!A)[\LogCL] = \False$ છે તે બતાવો
+  (અને તેથી $\pValue v(!A)[\LogGod] \in \{\True,\Undef\}$ ત્યારે
+  અને માત્ર ત્યારે જ્યારે $\pValue {v'}(!A)[\LogCL] = \True$).
+  આથી વિધાન કેવી રીતે સ્થાપિત થાય છે તે સમજાવો.
+\end{prob}
+% END OLP-0397
+\endgroup
+
+
+\OLEndChapterHook
+% END OLP-0392
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0398
+\olchapter{mvl}{inf}{અનંતમૂલ્ય તર્કશાસ્ત્રો}
+\olchapterid{mvl}{inf}
+\phantomsection\label{guunit:OLP-0398}
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0399
+\olfileid{mvl}{inf}{int}
+
+\olsection{પરિચય}
+\phantomsection\label{guunit:OLP-0399}
+
+
+શ્રેણિકમાં સત્યમૂલ્યોની સંખ્યા સાન્ત હોવી જરૂરી નથી. અનંત સત્યમૂલ્યોના
+ગણ માટે સહજ પસંદગી $0$ અને~$1$ વચ્ચેની સંમેય સંખ્યાઓનો ગણ
+$V_\infty = [0,1] \cap \Rat$ છે; એટલે કે,
+\begin{align*}
+    V_\infty & = \Setabs{\frac{n}{m}}{n,m \in \Nat \text{ અને } m>0 \text{ તથા } n\le m}.
+\intertext{આ અનંત સત્યમૂલ્ય-ગણને ધ્યાનમાં લેતાં, તેના નીચેના ઉપગણો
+પણ ધ્યાનમાં લેવા ઘણી વાર ઉપયોગી છે; અહીં $m\ge 2$ છે:}
+V_m & = \Setabs{\frac{n}{m-1}}{n \in \Nat \text{ અને } n<m}
+\intertext{દાખલા તરીકે, $V_5$ એ સમાન અંતરે આવેલાં $5$ સત્યમૂલ્યોનો ગણ છે,}
+V_5 & = \{0, \frac{1}{4}, \frac{1}{2}, \frac{3}{4}, 1\}.
+\end{align*}
+\sourcecorrection{OLMV-011}{સ્થિર અંગ્રેજી મૂળના
+અનંત સંમેય ગણમાં ભાગાકારના છેદ માટે શૂન્યને
+બાકાત રાખતું નથી. શૂન્યનો ભાગાકાર અવ્યાખ્યાયિત
+હોવાથી અહીં છેદ ધન હોય તે શરત સ્પષ્ટ કરી છે.}
+\sourcecorrection{OLMV-012}{સ્થિર અંગ્રેજી મૂળના
+સૂત્રમાં $V_m$ માટે અંશને $m$ સુધી મંજૂર કરે છે,
+જેથી દર્શાવેલા $V_5$માં પાંચને બદલે છ મૂલ્યો અને
+એક કરતાં મોટું મૂલ્ય મળે. અહીં અંશ $m$ કરતાં
+નાનો રાખ્યો છે તથા છેદ શૂન્ય ન થાય તે માટે
+$m\ge 2$ સ્પષ્ટ કર્યું છે.}
+આ સત્યમૂલ્ય-ગણો પર આધારિત તર્કશાસ્ત્રોમાં સામાન્ય રીતે માત્ર
+$1$ નિર્દિષ્ટ હોય છે; એટલે $V^+ = \{1\}$. બીજા શબ્દોમાં,
+$1$ને (સંપૂર્ણ) સત્ય અને $0$ને સંપૂર્ણ અસત્યની ભૂમિકા આપીએ છીએ,
+પરંતુ સૂત્રોનું મૂલ્ય~$V$માંનું કોઈ પણ મધ્યવર્તી મૂલ્ય હોઈ શકે.
+
+આ ઉપરાંત $0$ અને~$1$ વચ્ચેની બધી \emph{વાસ્તવિક} સંખ્યાઓનો ગણ
+$V_{[0,1]} = [0,1]$ અથવા $[0,1]$ના બીજા અનંત ઉપગણો પણ વિચારી શકાય.
+આ સત્યમૂલ્ય-ગણ ધરાવતા તર્કશાસ્ત્રોને ઘણી વાર \emph{અસ્પષ્ટ}
+તર્કશાસ્ત્રો કહે છે.
+% END OLP-0399
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0400
+\olfileid{mvl}{inf}{luk}
+
+\olsection{લુકાશેવિચનું તર્કશાસ્ત્ર}
+\phantomsection\label{guunit:OLP-0400}
+
+
+\begin{editorial}
+  અનંતમૂલ્ય લુકાશેવિચ તર્કશાસ્ત્ર અંગેનો આ વિભાગ ટૂંકું
+  ``પ્રારૂપ'' માત્ર છે.
+\end{editorial}
+
+\begin{defn}\ollabel{def:lukasiewicz} અનંતમૂલ્ય લુકાશેવિચ
+તર્કશાસ્ત્ર~$\LogLuk[\infty]$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી
+  પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ $V_\infty$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $1$ છે; એટલે $V^+ = \{1\}$.
+  \item અસત્ય-અચલનું મૂલ્ય શૂન્ય છે. અન્ય સત્યવિધેયો
+  નીચેના વિધેયો વડે અપાય છે:
+  \begin{align*}
+    \tf{\lnot}[\LogLuk](x) & = 1 - x\\
+    \tf{\land}[\LogLuk](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogLuk](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogLuk](x,y) & = \min(1,1-(x-y)) = \begin{cases}
+      1 & \text{જો } x \le y\\
+      1-(x-y) & \text{અન્યથા.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-મૂલ્ય લુકાશેવિચ તર્કશાસ્ત્રની વ્યાખ્યા પણ આવી જ છે;
+માત્ર $V = V_m$ છે.
+\end{defn}
+\sourcecorrection{OLMV-013}{સ્થિર અંગ્રેજી મૂળ
+અહીં પ્રમાણભૂત ભાષા~$\Lang L_0$ લે છે, જેમાં
+અગાઉથી અસત્ય-અચલ સામેલ છે, પરંતુ તેનું સત્યવિધેય
+આપતું નથી. અગાઉની ત્રિમૂલ્ય લુકાશેવિચ શ્રેણિક
+સાથે એકરૂપતા રાખવા અહીં તેનું મૂલ્ય શૂન્ય
+સ્પષ્ટ કર્યું છે.}
+
+\begin{prop}
+  \olref[thr][luk]{def:lukasiewicz} વડે વ્યાખ્યાયિત
+  $\LogLuk[3]$ એ \olref{def:lukasiewicz} વડે વ્યાખ્યાયિત
+  $\LogLuk[3]$ જેવું જ છે.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][luk]{def:lukasiewicz}માં આપેલી સંયોજકોની
+  સત્યતાસારણીઓની સરખામણી \olref{def:lukasiewicz}નાં
+  સમીકરણોથી મળતી નીચેની સત્યતાસારણીઓ સાથે કરીને આ જોઈ શકાય છે:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $1/2$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $1/2$ \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+
+\begin{prop}\ollabel{prop:luk-infty-m}
+  જો $\Gamma \Entails[\LogLuk[\infty]] !B$, તો બધાં~$m \ge 2$
+  માટે $\Gamma \Entails[\LogLuk[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][luk]{prop:luk-infty-m} સાબિત કરો.
+\end{prob}
+
+હકીકતમાં, સાન્ત આધારગણ માટે વિપરીત દિશા પણ સાચી છે.
+\sourcecorrection{OLMV-014}{સ્થિર અંગ્રેજી મૂળ
+વિપરીત દિશા કોઈ મર્યાદા વિના કહે છે. સાન્ત
+આધારગણ માટે વિરોધી મૂલ્યાંકનમાં આવતા માત્ર
+સાન્ત ઘણા સંમેય મૂલ્યોને એક જ સાન્ત જાળીમાં
+સમાવી શકાય છે. પરંતુ અનંત આધારગણ જુદા જુદા
+છેદવાળાં અસંખ્ય ચલોનાં મૂલ્યો નિર્ધારિત કરી શકે;
+બધી સાન્ત જાળીઓમાં તેના આધાર અસંતોષ્ય છતાં
+અનંત સંમેય જાળીમાં સંતોષ્ય હોઈ શકે. તેથી અહીં
+દાવો સાન્ત આધારગણ સુધી મર્યાદિત કર્યો છે.}
+
+અનંતમૂલ્ય લુકાશેવિચ તર્કશાસ્ત્ર સૌથી પ્રચલિત અસ્પષ્ટ
+તર્કશાસ્ત્ર છે. અસ્પષ્ટ તર્કશાસ્ત્રના સાહિત્યમાં પ્રેરણ સંયોજકને
+ઘણી વાર $\lnot !A \lor !B$ તરીકે વ્યાખ્યાયિત કરે છે. ત્યારે
+અનંતમૂલ્ય પ્રબળ ક્લીની તર્કશાસ્ત્ર મળશે.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ એ~$\LogLuk[\infty]$ની
+  પુનરુક્તિ છે તે બતાવો.
+\end{prob}
+% END OLP-0400
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0401
+\olfileid{mvl}{inf}{god}
+
+\olsection{ગોડેલનાં તર્કશાસ્ત્રો}
+\phantomsection\label{guunit:OLP-0401}
+
+
+\begin{editorial}
+  અનંતમૂલ્ય ગોડેલ તર્કશાસ્ત્ર અંગેનો આ વિભાગ ટૂંકું
+  ``પ્રારૂપ'' માત્ર છે.
+\end{editorial}
+
+\begin{defn}\ollabel{def:goedel} અનંતમૂલ્ય ગોડેલ
+તર્કશાસ્ત્ર~$\LogGod[\infty]$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી
+  પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ $V_\infty$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $1$ છે; એટલે $V^+ = \{1\}$.
+  \item સત્યવિધેયો નીચેના વિધેયો વડે અપાય છે:
+  \begin{align*}
+    \tf{\lfalse} & = 0\\
+    \tf{\lnot}[\LogGod](x) & = \begin{cases}
+      1 & \text{જો } x =0\\
+      0 & \text{અન્યથા}
+    \end{cases}\\
+    \tf{\land}[\LogGod](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogGod](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogGod](x,y) & = \begin{cases}
+      1 & \text{જો } x \le y\\
+      y & \text{અન્યથા.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-મૂલ્ય ગોડેલ તર્કશાસ્ત્રની વ્યાખ્યા પણ આવી જ છે;
+માત્ર $V = V_m$ છે.
+\end{defn}
+\sourcecorrection{OLMV-015}{સ્થિર અંગ્રેજી મૂળના
+નિષેધ-વિધેયની \texttt{cases} રચના પહેલેથી ગણિતીય
+વાતાવરણમાં હોવા છતાં પરિણામો આસપાસ ફરી
+\texttt{\$} ચિહ્ન મૂકે છે. તે અયોગ્ય ગણિતીય
+વાતાવરણ દૂર કરીને $1$ અને $0$નાં મૂલ્યો
+યથાવત રાખ્યાં છે.}
+
+\begin{prop}
+  \olref[thr][god]{defn:goedel} વડે વ્યાખ્યાયિત
+  $\LogGod[3]$ એ \olref{def:goedel} વડે વ્યાખ્યાયિત
+  $\LogGod[3]$ જેવું જ છે.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][god]{defn:goedel}માં આપેલી સંયોજકોની
+  સત્યતાસારણીઓની સરખામણી \olref{def:goedel}નાં
+  સમીકરણોથી મળતી સત્યતાસારણીઓ સાથે કરીને આ જોઈ શકાય છે:
+  \begin{center}
+    \begin{tabular}{c|c} 
+      $\tf{\lnot}[\LogGod[3]]$ & \\ 
+      \hline  
+      $1$ & $0$ \\ 
+      $1/2$ & $0$ \\
+      $0$ & $1$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\land}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1/2$ & $1/2$ & $0$\\ 
+      $0$ & $0$ & $0$ & $0$ 
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc} 
+      $\tf{\lor}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1$ & $1$ \\ 
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\lif}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1$ & $1$ & $0$  \\ 
+      $0$ & $1$ & $1$ & $1$ 
+    \end{tabular}
+  \end{center} 
+\end{proof}
+
+\begin{prop}\ollabel{prop:god-infty-m}
+  જો $\Gamma \Entails[\LogGod[\infty]] !B$, તો બધાં~$m \ge 2$
+  માટે $\Gamma \Entails[\LogGod[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][god]{prop:god-infty-m} સાબિત કરો.
+\end{prob}
+
+હકીકતમાં, સાન્ત આધારગણ માટે વિપરીત દિશા પણ સાચી છે.
+\sourcecorrection{OLMV-016}{સ્થિર અંગ્રેજી મૂળ
+વિપરીત દિશા કોઈ મર્યાદા વિના કહે છે. સાન્ત
+આધારગણ માટે સંમેય વિરોધી મૂલ્યાંકનમાં આવતા
+મર્યાદિત સત્યમૂલ્યો એક જ સાન્ત જાળીમાં સમાય છે.
+પરંતુ અનંત આધારગણ ગોડેલના પ્રેરણ વડે અસીમ
+ઉતરતા મૂલ્યો ફરજિયાત કરી શકે; તે દરેક સાન્ત
+જાળીમાં નિષ્કર્ષને નિર્દિષ્ટ કરે છતાં અનંત
+સંમેય જાળીમાં વિરોધી મૂલ્યાંકન આપે છે.
+તેથી અહીં દાવો સાન્ત આધારગણ સુધી મર્યાદિત કર્યો છે.}
+
+$\LogGod[3]$ની જેમ $\LogGod[\infty]$માં બધી સ્ફુરણાવાદી રીતે
+પ્રામાણ્ય સૂત્રો પુનરુક્તિઓ છે, અને નીચે દર્શાવેલી
+બિનપુનરુક્તિઓ~$\LogGod[\infty]$માં પણ બિનપુનરુક્તિઓ છે:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+સ્ફુરણાવાદી રીતે અપ્રામાણ્ય સૂત્ર હોવા છતાં $\LogGod[3]$ની પુનરુક્તિ
+હોવાનું ઉદાહરણ $(p \lif q) \lor (q \lif p)$ એ
+$\LogGod[\infty]$માં પણ પુનરુક્તિ છે. હકીકતમાં,
+$\LogGod[\infty]$ને $(!A \lif !B) \lor (!B \lif !A)$ની
+યોજના ઉમેરેલા સ્ફુરણાવાદી તર્કશાસ્ત્ર તરીકે લક્ષણિત
+કરી શકાય છે. આ માઇકલ ડમેટે બતાવ્યું હતું, અને તેથી
+$\LogGod[\infty]$ને ગોડેલ--ડમેટ તર્કશાસ્ત્ર~$\Log{LC}$ પણ કહે છે.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ એ~$\LogGod[\infty]$ની
+  પુનરુક્તિ છે તે બતાવો.
+\end{prob}
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif r) \lor (r \lif s)$ એ
+  $\LogGod[3]$ની પુનરુક્તિ છે, પરંતુ~$\LogGod[\infty]$ની
+  પુનરુક્તિ નથી, તે બતાવો.
+\end{prob}
+% END OLP-0401
+\endgroup
+
+
+\OLEndChapterHook
+% END OLP-0398
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0402
+\olchapter{mvl}{seq}{સિક્વન્ટ કલન}
+\olchapterid{mvl}{seq}
+\phantomsection\label{guunit:OLP-0402}
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0403
+\olfileid{mvl}{seq}{int}
+
+\olsection{પરિચય}
+\phantomsection\label{guunit:OLP-0403}
+
+
+શાસ્ત્રીય તર્કશાસ્ત્રનું સિક્વન્ટ કલન કાર્યક્ષમ અને સરળ
+નિષ્પત્તિ તંત્ર છે. જો કોઈ બહુમૂલ્ય તર્કશાસ્ત્ર સાન્ત
+સત્યમૂલ્યો ધરાવતી શ્રેણિક વડે વ્યાખ્યાયિત થાય, એટલે કે $V$
+સાન્ત હોય, તો તેના માટે સિક્વન્ટ કલન આપી શકાય છે.
+તે કેવી રીતે કરવું તેનો વિચાર શાસ્ત્રીય કિસ્સામાં સિક્વન્ટોના
+અર્થ અને અનુમાનના નિયમોના સ્વરૂપ પરથી આવે છે.
+
+હવે યાદ કરો કે સિક્વન્ટ
+\begin{align*}
+    !A_1, \dots, !A_m & \Sequent !B_1, \dots, !B_n
+\intertext{નું અર્થઘટન નીચેના સૂત્ર તરીકે થઈ શકે છે:}
+    (!A_1 \land \cdots \land !A_m) & \lif (!B_1 \lor \cdots \lor
+!B_n)
+\end{align*}
+\sourcecorrection{OLMV-017}{સ્થિર અંગ્રેજી મૂળ
+સિક્વન્ટની ડાબી બાજુનો છેલ્લો ક્રમસૂચક $n$ લખે છે,
+પણ તરત નીચેના અર્થઘટનમાં ડાબી બાજુ માટે $m$ વાપરે છે.
+બંને બાજુની લંબાઈ સ્વતંત્ર રહે તે માટે અહીં ડાબે
+$!A_1,\dots,!A_m$ અને જમણે $!B_1,\dots,!B_n$ રાખ્યા છે.}
+બીજા શબ્દોમાં, સત્યમૂલ્ય-નિયુક્તિ~$\pAssign{v}$ સિક્વન્ટ
+$\Gamma \Sequent \Delta$ને \emph{સંતોષે છે} જો અને માત્ર જો
+કોઈ $!A \in \Gamma$ માટે $\pValue{v}(!A) = \False$ હોય
+અથવા કોઈ $!A \in \Delta$ માટે $\pValue{v}(!A) = \True$ હોય.
+આ અર્થઘટન મુજબ આરંભિક સિક્વન્ટો $!A \Sequent !A$
+હંમેશા સંતોષાય છે, કારણ કે $\pValue v(!A) = \True$ અથવા
+$\pValue{v}(!A) = \False$ હોય છે.
+\sourcecorrection{OLMV-018}{સ્થિર અંગ્રેજી મૂળ
+આરંભિક સિક્વન્ટ અંગેના અસત્ય-કિસ્સામાં
+\texttt{\textbackslash pValue}નું મૂલ્યાંકન-ચલ $v$
+છોડી દે છે. બંને વિકલ્પોમાં એ જ $v$ રાખ્યું છે.}
+
+અહીં બાજુનાં સૂત્રો $\Gamma$ અને $\Delta$ છોડી દઈને
+$\Log{LK}$માં પ્રેરણ સંયોજકના અનુમાન-નિયમો આપ્યાં છે:
+
+\begin{defish}
+    \Axiom$ \fCenter !A$
+    \Axiom$ !B \fCenter $
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$ !A \lif !B \fCenter $
+    \DisplayProof
+    \hfill
+    \Axiom$ !A \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter !A \lif !B $
+    \DisplayProof
+\end{defish}
+
+ઉપર આપેલા સિક્વન્ટના અર્થઘટનને લાગુ કરીએ તો
+$\LeftR{\lif}$ નિયમ કહે છે કે જો $\pValue v(!A) = \True$
+અને $\pValue v(!B) = \False$ હોય, તો
+$\pValue v(!A \lif !B) = \False$ હોય છે. તેવી જ રીતે,
+$\RightR{\lif}$ નિયમ કહે છે કે જો $\pValue v(!A) = \False$
+અથવા $\pValue v(!B) = \True$ હોય, તો
+$\pValue v(!A \lif !B) = \True$ હોય છે. હકીકતમાં,
+આ બંને શરતી વિધાનો દ્વિશરતી છે. $\LeftR{\land}$ અને
+$\RightR{\lor}$ નિયમોના પ્રમાણભૂત સ્વરૂપમાં તેમના
+અનુરૂપ શરતી વિધાનો દ્વિશરતી નહીં હોય. પરંતુ આ
+નિયમોનાં વૈકલ્પિક સ્વરૂપો છે જેમાં તે દ્વિશરતી બને છે:
+
+\begin{defish}
+    \Axiom$!A, !B, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \hfill
+    \Axiom$ \Gamma \fCenter \Delta, !A, !B$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$ \Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+\end{defish}
+
+આ મૂળભૂત વિચાર $n$-મૂલ્ય તર્કશાસ્ત્ર પર લાગુ કરતાં
+બેને બદલે $n$ સ્થાનોવાળું સિક્વન્ટ કલન મળે છે, જેમાં
+દરેક સત્યમૂલ્ય માટે એક સ્થાન હોય છે. $V = \{\False, \Undef, \True\}$
+ધરાવતા ત્રિમૂલ્ય તર્કશાસ્ત્ર માટે સિક્વન્ટ
+$\Gamma \mid \Pi \mid \Delta$ સ્વરૂપનું પદ છે. તે
+સત્યમૂલ્ય-નિયુક્તિ~$\pAssign v$માં સંતોષાય છે જો અને માત્ર જો
+કોઈ $!A \in \Gamma$ માટે $\pValue{v}(!A) = \False$
+અથવા કોઈ $!A \in \Delta$ માટે $\pValue{v}(!A) = \True$
+અથવા કોઈ $!A \in \Pi$ માટે $\pValue{v}(!A) = \Undef$
+હોય. તેથી આરંભિક સિક્વન્ટો $!A \mid !A \mid !A$
+હંમેશા સંતોષાય છે.
+% END OLP-0403
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0404
+\olfileid{mvl}{seq}{rul}
+
+\olsection{નિયમો અને નિષ્પત્તિઓ}
+\phantomsection\label{guunit:OLP-0404}
+
+
+નીચેના માટે, $\Gamma, \Delta, \Pi, \Lambda$ એ વાક્યોની
+સાન્ત શ્રેણીઓ દર્શાવે તેમ માનો.
+
+\begin{defn}[સિક્વન્ટ]
+\emph{$n$-બાજુવાળો સિક્વન્ટ} નીચેના સ્વરૂપનું પદ છે:
+\[
+\Gamma_1 \nSequent \dots \nSequent \Gamma_n
+\]
+અહીં દરેક $\Gamma_i$ એ ભાષા~$\Lang L$નાં વાક્યોની
+સાન્ત (સંભવતઃ ખાલી) શ્રેણી છે.
+\end{defn}
+\sourcecorrection{OLMV-019}{સ્થિર અંગ્રેજી મૂળ
+સિક્વન્ટનાં $n$ સ્થાનો દર્શાવ્યા પછી દરેક સ્થાનને
+$\Gamma_1$ કહે છે. સામાન્ય સ્થાન માટે $\Gamma_i$
+વાપરીને તેની વ્યાખ્યા અને ગણિતીય સૂચકાંક એકરૂપ કર્યા છે.}
+
+\begin{defn}[આરંભિક સિક્વન્ટ]
+\emph{$n$-બાજુવાળો આરંભિક સિક્વન્ટ} ભાષાના કોઈપણ
+વાક્ય $!A$ માટે $!A \nSequent \dots \nSequent !A$
+સ્વરૂપનો $n$-બાજુવાળો સિક્વન્ટ છે.
+
+જો ભાષામાં $0$-સ્થાનવાળો સંયોજક~$\star$ હોય, એટલે
+કે વિધાનાત્મક અચલ હોય, તો $\dots \nSequent
+\star \nSequent \dots$ સિક્વન્ટ પણ આરંભિક ગણીએ છીએ.
+તેમાં $\star$ તેના $\tf{\star} \in V$ સાથે સંકળાયેલા
+સત્યમૂલ્યના સ્થાનમાં આવે છે અને અન્ય સ્થાનો ખાલી રહે છે.
+\end{defn}
+
+$n$-મૂલ્ય તર્કશાસ્ત્ર~$\Log{L}$ના દરેક સંયોજક માટે,
+તે સંયોજક~$\Log{L}$માં લઈ શકે એવા દરેક સત્યમૂલ્યને
+અનુરૂપ એક તાર્કિક નિયમ હોય છે. $\Log{L}$ના $n$-બાજુવાળા
+સિક્વન્ટ કલનમાં નિષ્પત્તિઓ એ સિક્વન્ટોનાં વૃક્ષો છે:
+સૌથી ઉપરના સિક્વન્ટો આરંભિક સિક્વન્ટો હોય છે, અને
+જો કોઈ સિક્વન્ટ બીજા એક કે વધુ સિક્વન્ટોની નીચે હોય,
+તો તે $\Log{L}$ના સંયોજકોના અનુમાન-નિયમ વડે તેમાંથી
+યોગ્ય રીતે મળવું જોઈએ.
+
+\begin{defn}[પ્રમેયો]
+વાક્ય~$!A$ એ $n$-મૂલ્ય તર્કશાસ્ત્ર~$\Log{L}$નું
+\emph{પ્રમેય} છે જો $\Log{L}$ના નિર્દિષ્ટ સત્યમૂલ્યને
+અનુરૂપ દરેક સ્થાનમાં $!A$ ધરાવતા $n$-સિક્વન્ટની
+નિષ્પત્તિ હોય. જો $!A$ પ્રમેય હોય તો
+$\Proves[\Log{L}] !A$ લખીએ છીએ, અને ન હોય તો
+$\Proves/[\Log{L}] !A$ લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[નિષ્પન્નક્ષમતા]
+વાક્ય~$!A$ એ વાક્યોના ગણ~$\Gamma$માંથી
+$n$-મૂલ્ય તર્કશાસ્ત્ર~$\Log{L}$માં \emph{નિષ્પન્ન કરી શકાય એવું}
+છે, $\Gamma \Proves[\Log{L}] !A$, જો અને માત્ર જો
+કોઈ સાન્ત ઉપગણ~$\Gamma_0 \subseteq \Gamma$
+અને $\Gamma_0$નાં વાક્યોની કોઈ શ્રેણી $\Gamma_0'$
+હોય જેથી નીચેના સિક્વન્ટની નિષ્પત્તિ હોય:
+\[ \Lambda_1 \nSequent \dots \nSequent \Lambda_n \]
+અહીં જો સ્થાન $i$ કોઈ નિર્દિષ્ટ સત્યમૂલ્યને અનુરૂપ હોય
+તો $\Lambda_i$ એ $!A$ છે, અને અન્યથા $\Gamma_0'$ છે.
+જો $!A$ એ~$\Gamma$માંથી નિષ્પન્ન કરી શકાય એવું ન હોય તો
+$\Gamma \Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+દાખલા તરીકે, $3$-મૂલ્ય લુકાશેવિચ તર્કશાસ્ત્રમાં
+$3$-બાજુવાળું સિક્વન્ટ કલન છે. $3$-બાજુવાળા સિક્વન્ટ
+$\Gamma \nSequent \Pi \nSequent \Delta$માં $\Gamma$
+એ~$\False$ને, $\Delta$ એ~$\True$ને, અને $\Pi$
+એ~$\Undef$ને અનુરૂપ છે. સ્વયંસિદ્ધિઓ
+$!A \nSequent !A \nSequent !A$ છે. માત્ર $\True$
+નિર્દિષ્ટ હોવાથી, $\Gamma \Proves[\LogLuk[3]] !A$
+ત્યારે અને માત્ર ત્યારે જ જ્યારે
+$\Gamma \nSequent \Gamma \nSequent !A$ સિક્વન્ટની
+નિષ્પત્તિ હોય. (જો $\Undef$ પણ નિર્દિષ્ટ હોત,
+તો $\Gamma \nSequent !A \nSequent !A$ની
+નિષ્પત્તિ જોઈતી હોત.)
+% END OLP-0404
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0405
+\olfileid{mvl}{seq}{str}
+
+\olsection{સંરચનાત્મક નિયમો}
+\phantomsection\label{guunit:OLP-0405}
+
+
+$n$-બાજુવાળા સિક્વન્ટ કલનના સંરચનાત્મક નિયમો
+શાસ્ત્રીય કિસ્સાની જેમ જ કાર્ય કરે છે, પરંતુ દરેક
+સ્થાન~$i$ માટે અલગ હોય છે.
+
+\begin{defish}
+\begin{center}
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \phantom{!A,}\Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Weakening}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent !A, \Gamma_i \nSequent \dots \nSequent \Gamma_n$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent !A, !A, \Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Contraction}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent \phantom{!A,}!A, \Gamma_i \nSequent
+\dots \nSequent \Gamma_n$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \Gamma_i, !A, !B, \Gamma_i' \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Exchange}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent \Gamma_i, !B, !A, \Gamma_i' \nSequent \dots
+\nSequent \Gamma_n$}
+\DisplayProof
+\end{center}
+\end{defish}
+
+શિથિલીકરણ, સંકોચન અને અદલાબદલીનાં અનુમાનોની શ્રેણી
+ઘણી વાર બેવડી અનુમાન-રેખાઓથી દર્શાવવામાં આવશે.
+
+\Cut{} નિયમનાં અનેક સ્વરૂપો છે: સિક્વન્ટમાંનાં ભિન્ન
+સ્થાનોના દરેક સંયોજન $i \neq j$ માટે એક સ્વરૂપ.
+\begin{defish}
+\[
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent !A, \Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\AxiomC{$ \Delta_1 \nSequent \dots \nSequent !A, \Delta_j \nSequent \dots \nSequent \Delta_n $}
+\RightLabel{$\iR{\Cut}{i,j}$}
+\BinaryInfC{$\Gamma_1,\Delta_1 \nSequent \dots \nSequent \Gamma_n, \Delta_n$}
+\DisplayProof
+\]
+\end{defish}
+% END OLP-0405
+\endgroup
+
+
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0406
+\olfileid{mvl}{seq}{prl}
+
+\olsection{પસંદ કરેલાં તર્કશાસ્ત્રો માટે વિધાનાત્મક નિયમો}
+\phantomsection\label{guunit:OLP-0406}
+
+
+$n$-બાજુવાળા સિક્વન્ટ કલનમાં કોઈ સંયોજકના અનુમાન-નિયમો
+માત્ર તે સંયોજકના લાક્ષણિક સત્યવિધેય પર આધાર રાખે છે.
+તેથી જુદા તર્કશાસ્ત્રોમાં કોઈ સંયોજક એ જ સત્યવિધેય વડે
+વ્યાખ્યાયિત હોય, તો તે સંયોજકના $n$-બાજુવાળા સિક્વન્ટ
+નિયમો પણ તે તર્કશાસ્ત્રોમાં સમાન હોય છે.
+
+\subsection{$\lnot$ માટેના નિયમો}
+
+નીચેના $\lnot$ માટેના નિયમો લુકાશેવિચ અને ક્લીનીનાં
+તર્કશાસ્ત્રો તથા તેમનાં ભેદોને લાગુ પડે છે.
+
+\begin{defish}
+  \begin{center}
+\AxiomC{$ \Gamma \nSequent \Pi \nSequent \Delta, !A $}
+\RightLabel{\iR{\lnot}{\False}}
+\UnaryInfC{$ \lnot !A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma \nSequent !A, \Pi \nSequent \Delta $}
+\RightLabel{\iR{\lnot}{\Undef}}
+\UnaryInfC{$\Gamma \nSequent \lnot !A, \Pi \nSequent \Delta$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\RightLabel{\iR{\lnot}{\True}}
+\UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta,  \lnot !A$}
+\DisplayProof
+  \end{center}
+\end{defish}
+
+નીચેના $\lnot$ માટેના નિયમો ગોડેલ તર્કશાસ્ત્રને લાગુ પડે છે.
+
+\begin{defish}
+\AxiomC{$ \Gamma \nSequent !A, \Pi \nSequent \Delta, !A $}
+\RightLabel{\iR{\lnot}{\False}[\LogGod]}
+\UnaryInfC{$ \lnot !A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\DisplayProof
+\hfill
+\AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta$}
+\RightLabel{\iR{\lnot}{\True}[\LogGod]}
+\UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta,  \lnot !A$}
+\DisplayProof
+\hfill
+\end{defish}
+
+(ગોડેલ તર્કશાસ્ત્રમાં $\lnot !A$નું મૂલ્ય ક્યારેય~$\Undef$
+હોઈ શકતું નથી; તેથી મધ્યના સ્થાન માટે નિયમ નથી.)
+
+\subsection{$\land$ માટેના નિયમો}
+
+આ $\land$ માટેના નિયમો લુકાશેવિચ, પ્રબળ ક્લીની અને
+ગોડેલ તર્કશાસ્ત્રમાં લાગુ પડે છે.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$!A, !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR{\land}{\False}$}
+  \UnaryInfC{$!A \land !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$\Gamma \nSequent !A, \Pi \nSequent !A, \Delta$}
+  \AxiomC{$\Gamma \nSequent !B, \Pi \nSequent !B, \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\land\Undef$}
+  \TrinaryInfC{$\Gamma \nSequent !A \land !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]  
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR\land\True$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \land !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+\subsection{$\lor$ માટેના નિયમો}
+
+આ $\lor$ માટેના નિયમો લુકાશેવિચ, પ્રબળ ક્લીની અને
+ગોડેલ તર્કશાસ્ત્રમાં લાગુ પડે છે.
+
+\begin{defish}
+\begin{center}
+ \AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lor\False$}
+  \BinaryInfC{$!A \lor !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent !A, \Pi \nSequent \Delta$}
+  \AxiomC{$!B, \Gamma \nSequent !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lor\Undef$}
+  \TrinaryInfC{$\Gamma \nSequent !A \lor !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]  
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A, !B$}
+  \RightLabel{$\iR\lor\True$}
+  \UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lor !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+\subsection{$\lif$ માટેના નિયમો}
+
+આ $\lif$ માટેના નિયમો લુકાશેવિચ તર્કશાસ્ત્રમાં લાગુ પડે છે.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogLuk[3]]$}
+  \BinaryInfC{$!A \lif !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \RightLabel{$\iR\lif\Undef[\LogLuk[3]]$}
+  \BinaryInfC{$\Gamma \nSequent !A \lif !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent !B, \Pi \nSequent \Delta, !B$}
+  \AxiomC{$!A, \Gamma \nSequent !A, \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR{\lif}{\True}[\LogLuk[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lif !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+આ $\lif$ માટેના નિયમો પ્રબળ ક્લીની તર્કશાસ્ત્રમાં લાગુ પડે છે.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogKs]$}
+  \BinaryInfC{$!A \lif !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$!B, \Gamma \nSequent !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent !A, \Pi \nSequent \Delta, !A$}
+  \RightLabel{$\iR\lif\Undef[\LogKs]$}
+  \TrinaryInfC{$\Gamma \nSequent !A \lif !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR{\lif}{\True}[\LogKs]$}
+  \UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lif !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+આ $\lif$ માટેના નિયમો ગોડેલ તર્કશાસ્ત્રમાં લાગુ પડે છે.
+
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent !A, \Pi \nSequent \Delta, !A$}
+  \AxiomC{$!B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogGod[3]]$}
+  \BinaryInfC{$!A \lif !B, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent !B, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, !A$}
+  \RightLabel{$\iR\lif\Undef[\LogGod[3]]$}
+  \BinaryInfC{$\Gamma \nSequent !A \lif !B, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$!A, \Gamma \nSequent !B, \Pi \nSequent \Delta, !B$}
+  \AxiomC{$!A, \Gamma \nSequent !A, \Pi \nSequent \Delta, !B$}
+  \RightLabel{$\iR{\lif}{\True}[\LogGod[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, !A \lif !B$}
+  \DisplayProof
+\end{center}
+\end{defish}
+
+
+\begin{sidewaysfigure}
+  \begin{center}  
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$A \nSequent B, A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$A \nSequent A, B, A \nSequent B, A$}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent A, A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, A \nSequent A \nSequent B, A, A$}
+  \RightLabel{$\iR\lif\Undef$}
+  \BinaryInfC{$A \nSequent A \lif B, A \nSequent B, A$}
+  \AxiomC{$B \nSequent B \nSequent B$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$B \nSequent A, B \nSequent B$}
+  \RightLabel{\iR \Exchange \Undef}
+  \UnaryInfC{$B \nSequent B, A \nSequent B$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$B \nSequent A, B, A \nSequent B$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$A, B \nSequent A, B, A \nSequent B$}
+  \RightLabel{\iR \Exchange \False}
+  \UnaryInfC{$B, A \nSequent A, B, A \nSequent B$}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, B, A \nSequent A \nSequent B, A$}
+  \RightLabel{$\iR\lif\Undef$}
+  \BinaryInfC{$B, A \nSequent A \lif B, A \nSequent B$}
+  \RightLabel{$\iR\lif\False$}
+  \BinaryInfC{$A \lif B, A \nSequent A \lif B, A \nSequent B$}
+  \DisplayProof
+  \end{center}
+  \caption{$\LogLuk[3]$માં નિષ્પત્તિનું ઉદાહરણ}
+\end{sidewaysfigure}
+% END OLP-0406
+\endgroup
+
+
+\OLEndChapterHook
+
+
+\begin{editorial}
+આગળનો સંબંધિત અંશ મૂળના સક્રિય આયાતક્રમમાં નથી. તેને અહીં સ્પષ્ટ વૈકલ્પિક સંદર્ભમાં જાળવ્યો છે.
+\end{editorial}
+\begingroup
+\makeatletter\def\ol@sectioncs{section}\makeatother
+
+% BEGIN OLP-0652
+\olfileid{mvl}{seq}{prf}
+
+\olsection{સાબિતી-સૈદ્ધાંતિક ખ્યાલો}
+\phantomsection\label{guunit:OLP-0652}
+
+
+\begin{explain}
+આપણે અનેક મહત્વના અર્થાનુસારી ખ્યાલો
+(પ્રામાણ્ય, ફલિતતા અને સંતોષ્યતા) વ્યાખ્યાયિત
+કર્યા છે; એ જ રીતે હવે તેમને અનુરૂપ
+\emph{સાબિતી-સૈદ્ધાંતિક ખ્યાલો}
+વ્યાખ્યાયિત કરીએ છીએ. આ ખ્યાલો
+સંરચનાઓમાં વાક્યોના
+સંતોષનો આશરો લઈને નહીં, પરંતુ અમુક
+સિક્વન્ટોની નિષ્પન્નક્ષમતા અથવા
+અનિષ્પન્નક્ષમતાનો આશરો લઈને
+વ્યાખ્યાયિત થાય છે. આ બંને પ્રકારના
+ખ્યાલો એકરૂપ થાય છે એ એક મહત્વની
+શોધ હતી. તેઓ એકરૂપ થાય છે તે જ
+\emph{યથાર્થતા} અને \emph{પૂર્ણતાના પ્રમેય}
+દર્શાવે છે.
+\end{explain}
+
+\begin{defn}[પ્રમેયો]
+જો સિક્વન્ટ $\quad \Sequent !A$ની
+$\Log{LK}$માં કોઈ નિષ્પત્તિ હોય,
+તો વાક્ય~$!A$ \emph{પ્રમેય}
+છે. $!A$ પ્રમેય હોય તો $\Proves
+!A$ અને ન હોય તો $\Proves/ !A$
+લખીએ છીએ.
+\end{defn}
+
+\begin{defn}[નિષ્પન્નક્ષમતા]
+વાક્ય~$!A$ એ
+વાક્યોના ગણ~$\Gamma$માંથી
+\emph{નિષ્પન્ન કરી શકાય એવું} છે, એટલે
+$\Gamma \Proves !A$, જો અને માત્ર જો
+એવો સાન્ત ઉપગણ~$\Gamma_0 \subseteq \Gamma$
+અને $\Gamma_0$માંનાં વાક્યોની
+એવી શ્રેણી $\Gamma_0'$ હોય કે
+$\Log{LK}$ એ $\Gamma_0' \Sequent !A$ને
+નિષ્પન્ન કરે. $!A$ એ $\Gamma$માંથી
+નિષ્પન્ન કરી શકાય એવું ન હોય તો
+$\Gamma \Proves/ !A$ લખીએ છીએ.
+\end{defn}
+
+સંકોચન, શિથિલીકરણ અને અદલાબદલીના
+નિયમોને કારણે $\Gamma_0'$માંનાં
+વાક્યોનો ક્રમ અને તેમની સંખ્યા
+મહત્ત્વ ધરાવતાં નથી: જો
+$\Gamma_0' \Sequent !A$ નિષ્પન્ન કરી શકાય એવું
+હોય, તો $\Gamma_0'$માં હોય એ જ
+વાક્યો ધરાવતી કોઈપણ
+$\Gamma_0''$ માટે
+$\Gamma_0'' \Sequent !A$ પણ
+નિષ્પન્ન થઈ શકે છે. દાખલા તરીકે,
+જો $\Gamma_0 = \{!B, !C\}$ હોય,
+તો $\Gamma_0' = \tuple{!B, !B, !C}$
+અને $\Gamma_0'' =
+\tuple{!C, !C, !B}$ બંને
+એવી શ્રેણીઓ છે જેમાં માત્ર
+$\Gamma_0$નાં વાક્યો જ છે.
+તેમાંથી એક ધરાવતું સિક્વન્ટ
+નિષ્પન્ન કરી શકાય એવું હોય, તો બીજું
+ધરાવતું સિક્વન્ટ પણ નિષ્પન્ન
+થઈ શકે છે; દાખલા તરીકે:
+\begin{prooftree}
+  \AxiomC{}
+  \Deduce$!B, !B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B, !C \fCenter !A$
+  \RightLabel{\LeftR{\Exchange}}
+  \UnaryInf$!C, !B \fCenter !A$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!C, !C, !B \fCenter !A$
+\end{prooftree}
+હવેથી, $\Gamma_0$ એ વાક્યોનો
+સાન્ત ગણ હોય ત્યારે
+$\Gamma_0 \Sequent !A$ એ એવું
+કોઈપણ સિક્વન્ટ છે જેનું પૂર્વાંગ
+$\Gamma_0$માંનાં વાક્યોની
+શ્રેણી છે, એમ કહીશું; અને જરૂર
+પડે ત્યાં સંકોચન, અદલાબદલી
+અને શિથિલીકરણોને ગર્ભિત રીતે
+સમાવિષ્ટ માનીશું.
+
+\begin{defn}[સુસંગતતા]
+વાક્યોનો ગણ~$\Gamma$ \emph{અસુસંગત}
+છે જો અને માત્ર જો એવો સાન્ત
+ઉપગણ~$\Gamma_0 \subseteq \Gamma$
+હોય કે $\Log{LK}$ એ
+$\Gamma_0 \Sequent \quad$ને
+નિષ્પન્ન કરે. $\Gamma$
+અસુસંગત ન હોય, એટલે કે
+દરેક સાન્ત $\Gamma_0 \subseteq \Gamma$
+માટે $\Log{LK}$ એ
+$\Gamma_0 \Sequent \quad$ને
+નિષ્પન્ન ન કરે, તો તેને
+\emph{સુસંગત} કહીએ છીએ.
+\end{defn}
+
+\begin{prop}[સ્વવાચકતા]
+\ollabel{prop:reflexivity}
+જો $!A \in \Gamma$ હોય, તો
+$\Gamma \Proves !A$.
+\end{prop}
+
+\begin{proof}
+આરંભિક સિક્વન્ટ $!A \Sequent !A$
+નિષ્પન્ન કરી શકાય એવું છે અને
+$\{!A\} \subseteq \Gamma$ છે.
+\end{proof}
+
+\begin{prop}[એકદિશવર્ધિતા]
+\ollabel{prop:monotonicity}
+જો $\Gamma \subseteq \Delta$ અને
+$\Gamma \Proves !A$ હોય, તો
+$\Delta \Proves !A$.
+\end{prop}
+
+\begin{proof}
+માનો કે $\Gamma \Proves !A$,
+એટલે એવો સાન્ત $\Gamma_0
+\subseteq \Gamma$ છે કે
+$\Gamma_0 \Sequent !A$
+નિષ્પન્ન કરી શકાય એવું છે.
+$\Gamma \subseteq \Delta$
+હોવાથી $\Gamma_0$ એ
+$\Delta$નો પણ સાન્ત ઉપગણ છે.
+તેથી $\Gamma_0 \Sequent !A$ની
+નિષ્પત્તિ એ
+$\Delta \Proves !A$ પણ બતાવે છે.
+\end{proof}
+
+\begin{prop}[પરંપરિતતા]
+\ollabel{prop:transitivity}
+જો $\Gamma \Proves !A$ અને
+$\{!A\} \cup \Delta \Proves
+!B$ હોય, તો $\Gamma \cup \Delta
+\Proves !B$.
+\end{prop}
+
+\begin{proof}
+જો $\Gamma \Proves !A$ હોય,
+તો કોઈ સાન્ત $\Gamma_0 \subseteq \Gamma$
+અને $\Gamma_0 \Sequent !A$ની
+નિષ્પત્તિ~$\pi_0$ હોય છે.
+જો $\{!A\} \cup \Delta \Proves !B$
+હોય, તો કોઈ સાન્ત ઉપગણ
+$\Delta_0 \subseteq \Delta$
+માટે $!A, \Delta_0 \Sequent !B$ની
+નિષ્પત્તિ~$\pi_1$ હોય છે.
+નીચેની નિષ્પત્તિ જુઓ:
+\begin{prooftree}
+  \AxiomC{}
+  \RightLabel{$\pi_0$}
+  \Deduce$\Gamma_0 \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!A, \Delta_0 \fCenter !B$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_0, \Delta_0 \fCenter !B$
+\end{prooftree}
+$\Gamma_0 \cup \Delta_0 \subseteq
+\Gamma \cup \Delta$ હોવાથી આ
+$\Gamma \cup \Delta \Proves !B$
+બતાવે છે.
+\end{proof}
+
+નોંધો કે ખાસ કરીને તેનો અર્થ એવો
+થાય છે કે જો $\Gamma \Proves !A$
+અને $!A \Proves !B$ હોય, તો
+$\Gamma \Proves !B$. વળી, જો
+$!A_1, \dots, !A_n \Proves !B$
+અને દરેક~$i$ માટે
+$\Gamma \Proves !A_i$ હોય,
+તો $\Gamma \Proves !B$
+એવું પણ ફલિત થાય છે.
+
+\begin{prop}
+\ollabel{prop:incons}
+$\Gamma$ અસુસંગત હોય જો અને
+માત્ર જો દરેક વાક્ય~$!A$ માટે
+$\Gamma \Proves {!A}$.
+\end{prop}
+
+\begin{proof}
+સ્વાધ્યાય.
+\end{proof}
+
+\begin{prob}
+\olref[mvl][seq][prf]{prop:incons} સાબિત કરો.
+\sourcecorrection{OLMD-189}{મૂળ કસરત
+આ વિભાગના \texttt{mvl/seq/prf}
+પ્રતિજ્ઞાપનને બદલે
+\texttt{fol/seq/ptn}ના સમાન
+પ્રતિજ્ઞાપન તરફ નિર્દેશ કરે છે;
+કસરતનું સ્થાનિક લક્ષ્ય અહીં રાખ્યું છે.}
+\end{prob}
+
+\begin{prop}[સઘનતા]
+  \ollabel{prop:proves-compact}
+  \begin{enumerate}
+  \item જો $\Gamma \Proves !A$ હોય, તો
+    એવો સાન્ત ઉપગણ $\Gamma_0
+    \subseteq \Gamma$ છે કે
+    $\Gamma_0 \Proves !A$.
+  \item જો $\Gamma$નો દરેક
+    સાન્ત ઉપગણ સુસંગત હોય,
+    તો $\Gamma$ સુસંગત છે.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item જો $\Gamma \Proves !A$ હોય,
+      તો એવો સાન્ત ઉપગણ
+      $\Gamma_0 \subseteq \Gamma$ છે કે
+      સિક્વન્ટ $\Gamma_0
+      \Sequent !A$ને
+      નિષ્પત્તિ હોય. તેથી
+      $\Gamma_0 \Proves !A$.
+    \item જો $\Gamma$ અસુસંગત હોય,
+      તો એવો સાન્ત ઉપગણ
+      $\Gamma_0 \subseteq \Gamma$ છે કે
+      $\Log{LK}$ એ $\Gamma_0
+      \Sequent \quad$ને
+      નિષ્પન્ન કરે. પરંતુ
+      ત્યારે $\Gamma_0$ એ
+      $\Gamma$નો અસુસંગત
+      સાન્ત ઉપગણ છે.
+  \end{enumerate}
+\end{proof}
+% END OLP-0652
+\endgroup
+% END OLP-0402
+\endgroup
+
+
+\OLEndPartHook
+% END OLP-0383

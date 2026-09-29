@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0412",
+  "checked_at_utc": "2026-09-27T10:19:56.070163+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0412 relational modal models; state-only draft",
+  "report": {
+    "unit_id": "OLP-0412",
+    "source_path": "content/normal-modal-logic/syntax-and-semantics/relational-models.tex",
+    "source_sha256": "e8bc152c0c35fa129babf11ba07aa8a42fc867905526c126d93bb50ea2cfc2cf",
+    "draft_path": "private-state\\work\\batch040_draft\\relational-models.tex",
+    "draft_sha256": "37a9b102e6a0ad9ac5bca540cb06e5764e189e06705b802c8450ad2d65bcd9a5",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 26,
+    "target_math_spans_after_corrections": 26,
+    "glossary_tokens": 2,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 142,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [],
+    "tikz_graph_byte_exact": true,
+    "graph_worlds_arrows_and_variable_extensions_verified": true,
+    "prose_scan_tikz_exception": "Byte-exact TikZ body removed from prose detector; caption retained and translated"
+  },
+  "status": "draft_linguistic_model_math_and_exact_diagram_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

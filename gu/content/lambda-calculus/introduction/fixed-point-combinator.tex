@@ -1,0 +1,42 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: fixed-point-combinator
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{fix}
+\olsection{નિશ્ચિત-બિંદુ સંયોજકો}
+
+ધારો કે આપણી પાસે લૅમ્બડા પદ~$g$ છે અને એવું બીજું પદ~$k$ જોઈએ છે
+કે~$k$, $gk$ સાથે $\beta$-સમકક્ષ હોય. આપણા સંકેતન પ્રમાણે પદો
+વ્યાખ્યાયિત કરો:
+\[
+\fn{diag}(x) = xx
+\]
+અને
+\[
+l(x) = g(\fn{diag}(x))
+\]
+બીજા શબ્દોમાં, $l$ એ પદ~$\lambd[x][g(xx)]$ છે. $k$ એ પદ~$ll$
+રાખો. ત્યારે મળે છે:
+\begin{align*}
+k & = (\lambd[x][g(xx)])(\lambd[x][g(xx)]) \\
+& \red  g((\lambd[x][g(xx)])(\lambd[x][g(xx)])) \\
+& = gk.
+\end{align*}
+જો
+\[
+Y = \lambd[g][((\lambd[x][g(xx)])(\lambd[x][g(xx)]))]
+\]
+રાખીએ, તો $Yg$ અને $g(Yg)$ બંને એક જ પદ સુધી લઘુકરણ પામે છે;
+આથી $Yg \equiv_\beta g(Yg)$. તેને ``કરીનો સંયોજક'' કહે છે. તેના
+બદલે જો
+\[
+Y = (\lambd[xg][g(xxg)])(\lambd[xg][g(xxg)])
+\]
+રાખીએ, તો ખરેખર $Yg$નું $g(Yg)$ સુધી લઘુકરણ થાય છે; આ વધુ
+મજબૂત વિધાન છે. $Y$ના આ બીજા રૂપને ``ટ્યુરિંગનો સંયોજક'' કહે છે.
+
+\end{document}

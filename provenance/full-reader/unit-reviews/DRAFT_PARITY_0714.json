@@ -1,0 +1,77 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0714",
+  "checked_at_utc": "2026-09-29T00:25:15.663081+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0714 Alternative propositional completeness proof; state-only draft",
+  "report": {
+    "unit_id": "OLP-0714",
+    "source_path": "content/propositional-logic/syntax-and-semantics/completeness.tex",
+    "source_sha256": "9222c1a4bfe25f71a47e9d2447846c67dd8f162e10b394d3a8f9185f30cc6dfe",
+    "draft_path": "private-state\\work\\batch044_draft\\alternative-pl-completeness.tex",
+    "draft_sha256": "40566236dbe9be14a830cf667f134204415e190555d53323c105946a170cde0e",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 13,
+    "source_math_spans_correction_aware": 75,
+    "target_math_spans_after_corrections": 75,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-344"
+    ],
+    "source_detector_ascii_tokens": 273,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "\\text{if $\\Gamma_n \\cup \\{!A_n\\}$ is\n    consistent;}",
+        "\\text{જો $\\Gamma_n \\cup \\{!A_n\\}$ સુસંગત હોય;}"
+      ],
+      [
+        "\\text{otherwise}",
+        "\\text{અન્યથા}"
+      ],
+      [
+        "\\olref[axd]{prop:phi}",
+        "\\olref[pl][axd][prv]{prop:provability-exhaustive}",
+        2
+      ],
+      [
+        "\\olref[axd]{prop:prov-incons}",
+        "\\olref[pl][axd][prv]{prop:prov-incons}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\upstream\\content\\first-order-logic\\axiomatic-deduction\\provability-consistency.tex",
+        "sha256": "22a6a04d9ab4298d762efd6bf2041fa9bf3f2d91c6803b744458812c232cdacc",
+        "terms": [
+          "prop:provability-exhaustive",
+          "prop:prov-incons"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{if $\\Gamma_n \\cup \\{!A_n\\}$ is\n    consistent;}",
+        "target": "\\text{જો $\\Gamma_n \\cup \\{!A_n\\}$ સુસંગત હોય;}",
+        "count": 1
+      },
+      {
+        "source": "\\text{otherwise}",
+        "target": "\\text{અન્યથા}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 1
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

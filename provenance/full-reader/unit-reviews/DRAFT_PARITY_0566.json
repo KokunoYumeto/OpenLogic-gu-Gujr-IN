@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0566",
+  "checked_at_utc": "2026-09-28T01:41:14.131772+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0566 Replacement's strength and extrinsic versus intrinsic justification; state-only draft",
+  "report": {
+    "unit_id": "OLP-0566",
+    "source_path": "content/set-theory/replacement/introduction.tex",
+    "source_sha256": "e623e78d259b8d80570492733074213737414fe7fbbc8d7dc641d77760783ad6",
+    "draft_path": "private-state\\work\\batch044_draft\\replacement-introduction.tex",
+    "draft_sha256": "90ada58ffd3a8f6a9320170d03e6c0c24a4374ede71508794addb7b78423da8c",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 2,
+    "target_math_spans_after_corrections": 2,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 146,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-replacement.tex",
+        "sha256": "26a05b92c09a1ba8edfcde66d51a841858744b476bae38a81d1999d3ac26c1ef",
+        "terms": [
+          "પ્રતિસ્થાપનનું પ્રરૂપ",
+          "શક્તિશાળી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-zf.tex",
+        "sha256": "d3c7abdd61c0795743c4c59b6fea83261af721c1e287e7158e90924e819fe9ac",
+        "terms": [
+          "\\ZF",
+          "\\Z",
+          "પ્રતિસ્થાપન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Extrinsic and intrinsic are introduced by their source-defined justificatory roles, not as previously canonically attested Gujarati technical labels.",
+      "The chapter range, future section reference, citation author and both citation years retain their frozen identifiers.",
+      "The source does not claim the axiom is already justified; the Gujarati keeps that question open."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\crefrange{sth:ordinals::chap}{sth:spine::chap}",
+        "count": 1,
+        "reason": "Frozen chapter-range reference keys, not ordinary English prose."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,51 @@
+% Part: normal-modal-logic
+% Chapter: axioms-systems
+% Section: provability-properties
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{prf}{prp}
+
+\olsection{\usetoken{S}{derivability}ના ગુણધર્મો}
+
+\begin{prop}\ollabel{prop:derivabilityfacts}
+  માનો કે $\Sigma$ મોડલ તંત્ર અને $\Gamma$ મોડલ !!{formula}sનો ગણ છે.
+  નીચેના ગુણધર્મો સાચા છે:
+  \begin{enumerate}
+  \item\ollabel{prop:derivabilityfacts-monotonicity} \emph{એકદિશવર્ધિતા}: જો
+    $\Gamma \Proves[\Sigma] !A$ અને $\Gamma \subseteq \Delta$ હોય, તો
+    $\Delta \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-reflexivity}
+    \emph{સ્વવાચકતા}: જો $!A \in \Gamma$ હોય, તો $\Gamma
+    \Proves[\Sigma] !A$;
+  \item\ollabel{prop:derivabilityfacts-cut} \emph{કટ}: જો $\Gamma
+    \Proves[\Sigma] !A$ અને $\Delta \cup \{!A\} \Proves[\Sigma] !B$
+    હોય, તો $\Gamma \cup \Delta \Proves[\Sigma] !B$;
+  \item\ollabel{prop:derivabilityfacts-deduction} \emph{નિષ્પત્તિ પ્રમેય}:
+    $\Gamma \cup \{!B\}
+    \Proves[\Sigma] !A$ જો અને માત્ર જો $\Gamma \Proves[\Sigma] !B \lif
+      !A$;
+  \item \ollabel{prop:derivabilityfacts-ruleT}\emph{નિયમ T}: જો
+    $\Gamma \Proves[\Sigma] !A_1$ અને \dots અને $\Gamma
+    \Proves[\Sigma] !A_n$ હોય અને $!A_1 \to (!A_2 \lif \cdots (!A_n \lif
+    !B)\cdots)$ પુનરુક્તિનો દૃષ્ટાંત હોય, તો $\Gamma
+    \Proves[\Sigma] !B$.\sourcecorrection{OLMD-031}{મૂળની છેલ્લી યાદી-પંક્તિમાં 'Rule T: If' ટિપ્પણીમાં હોવાથી છપાતું નથી; નિયમનું નામ અને 'જો'ની શરત દેખાય એમ પુનઃસ્થાપિત કર્યાં છે.}
+  \end{enumerate}
+\end{prop}
+
+સાબિતી સરળ અભ્યાસપ્રશ્ન છે. \olref{prop:derivabilityfacts}ના
+\olref{prop:derivabilityfacts-ruleT} ભાગથી, દાખલા તરીકે, જો
+$\Gamma \Proves[\Sigma] !A \lor !B$ અને
+$\Gamma \Proves[\Sigma] \lnot !A$ હોય, તો $\Gamma \Proves[\Sigma]
+!B$ મળે છે. આગળ આપણે $\Gamma \cup \{ !A\} \Proves[\Sigma] !B$ના
+સ્થાને $\Gamma, !A \Proves[\Sigma] !B$ લખીશું.
+
+\begin{defn}
+  ગણ $\Gamma$ એ તંત્ર~$\Sigma$ને અનુલક્ષીને \emph{નિષ્પત્તિ હેઠળ બંધ}
+  છે જો અને માત્ર જો $\Gamma \Proves[\Sigma] !A$ હોય ત્યારે
+  $!A \in \Gamma$ હોય.
+\end{defn}
+
+\end{document}

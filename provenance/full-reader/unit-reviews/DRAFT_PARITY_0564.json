@@ -1,0 +1,87 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0564",
+  "checked_at_utc": "2026-09-28T01:37:24.310952+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0564 set rank, membership induction, rank supremum, and Regularity-to-Foundation; state-only draft",
+  "report": {
+    "unit_id": "OLP-0564",
+    "source_path": "content/set-theory/spine/rank.tex",
+    "source_sha256": "fa9b9faa09478d4d5d6e510c52a2d5752fa72985db8efaff4a432a0e24d81dd0",
+    "draft_path": "private-state\\work\\batch044_draft\\spine-rank.tex",
+    "draft_sha256": "c12244adb25c2d040cc761178dab315e3fa746fed06f8e3fab4c4c3259e5632a",
+    "aligned_blocks": 19,
+    "linguistic_blocks": 16,
+    "source_math_spans_correction_aware": 73,
+    "target_math_spans_after_corrections": 73,
+    "glossary_tokens": 1,
+    "source_correction_notes": [
+      "OLMD-120"
+    ],
+    "source_detector_ascii_tokens": 293,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$x \\notin V_\\alpha$",
+        "$\\setrank{x} \\in \\alpha$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\separation.tex",
+        "sha256": "b69123900add155945875e833da784adb7a6719fce6464f0db893bb2ddd0c1a8",
+        "terms": [
+          "સ્તરાંક"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-idea.tex",
+        "sha256": "0e754ebf889a7583c9fdc1e27df41a53e46cf4989d628f28653470d12ccfc801",
+        "terms": [
+          "તબક્કાઓ",
+          "\\Pow"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-stagesbasics.tex",
+        "sha256": "5e15f7e4331eb426db2c4be011214573ad87dbe96fc7972577a32455979782f3",
+        "terms": [
+          "ઉપગણ-સંવૃત",
+          "પરંપરિત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-foundation.tex",
+        "sha256": "ac0d027ab6f44ed014fe53f57a5851673abbf5cd3e9552848b7495f6eb50e0f1",
+        "terms": [
+          "આધાર",
+          "નિયમિતતા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-opps.tex",
+        "sha256": "e2785e51a7623f41243a8aaa736eafb4ff91db2fd3c699c093913f05aca0f558",
+        "terms": [
+          "\\supstrict",
+          "સીમા ક્રમવાચક"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The original converse proof of V-alpha={x:rank(x) in alpha} concludes x notin V-alpha after assuming x in V-alpha. OLMD-120 changes exactly that conclusion to rank(x) in alpha, with a visible induction-case explanation.",
+      "The intuitive first-formation phrasing is subordinate to the exact least-alpha-with-A-subseteq-V-alpha definition; no false equation A in V-rank(A) is added.",
+      "The existence of ranks and the completion of a cited induction remain exercises as in the source.",
+      "The final converse Foundation proof is explicitly relative to ZFminus plus Regularity, not asserted in weaker Z alone.",
+      "The inactive alternative ordinal-rank proof remains frozen comment text."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

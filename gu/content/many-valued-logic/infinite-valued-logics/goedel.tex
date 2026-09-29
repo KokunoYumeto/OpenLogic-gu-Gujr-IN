@@ -1,0 +1,146 @@
+% Part: many-valued-logic
+% Chapter: infinite-valued-logics
+% Section: goedel
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mvl}{inf}{god}
+
+\olsection{ગોડેલનાં તર્કશાસ્ત્રો}
+
+\begin{editorial}
+  અનંતમૂલ્ય ગોડેલ તર્કશાસ્ત્ર અંગેનો આ વિભાગ ટૂંકું
+  ``પ્રારૂપ'' માત્ર છે.
+\end{editorial}
+
+\begin{defn}\ollabel{def:goedel} અનંતમૂલ્ય ગોડેલ
+તર્કશાસ્ત્ર~$\LogGod[\infty]$ નીચેની શ્રેણિક વડે વ્યાખ્યાયિત થાય છે:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ ધરાવતી
+  પ્રમાણભૂત વિધાનાત્મક ભાષા~$\Lang L_0$.
+  \item સત્યમૂલ્યોનો ગણ $V_\infty$.
+  \item એકમાત્ર નિર્દિષ્ટ મૂલ્ય $1$ છે; એટલે $V^+ = \{1\}$.
+  \item સત્યવિધેયો નીચેના વિધેયો વડે અપાય છે:
+  \begin{align*}
+    \tf{\lfalse} & = 0\\
+    \tf{\lnot}[\LogGod](x) & = \begin{cases}
+      1 & \text{જો } x =0\\
+      0 & \text{અન્યથા}
+    \end{cases}\\
+    \tf{\land}[\LogGod](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogGod](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogGod](x,y) & = \begin{cases}
+      1 & \text{જો } x \le y\\
+      y & \text{અન્યથા.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-મૂલ્ય ગોડેલ તર્કશાસ્ત્રની વ્યાખ્યા પણ આવી જ છે;
+માત્ર $V = V_m$ છે.
+\end{defn}
+\sourcecorrection{OLMV-015}{સ્થિર અંગ્રેજી મૂળના
+નિષેધ-વિધેયની \texttt{cases} રચના પહેલેથી ગણિતીય
+વાતાવરણમાં હોવા છતાં પરિણામો આસપાસ ફરી
+\texttt{\$} ચિહ્ન મૂકે છે. તે અયોગ્ય ગણિતીય
+વાતાવરણ દૂર કરીને $1$ અને $0$નાં મૂલ્યો
+યથાવત રાખ્યાં છે.}
+
+\begin{prop}
+  \olref[thr][god]{defn:goedel} વડે વ્યાખ્યાયિત
+  $\LogGod[3]$ એ \olref{def:goedel} વડે વ્યાખ્યાયિત
+  $\LogGod[3]$ જેવું જ છે.
+\end{prop}
+
+\begin{proof}
+  \olref[thr][god]{defn:goedel}માં આપેલી સંયોજકોની
+  સત્યતાસારણીઓની સરખામણી \olref{def:goedel}નાં
+  સમીકરણોથી મળતી સત્યતાસારણીઓ સાથે કરીને આ જોઈ શકાય છે:
+  \begin{center}
+    \begin{tabular}{c|c} 
+      $\tf{\lnot}[\LogGod[3]]$ & \\ 
+      \hline  
+      $1$ & $0$ \\ 
+      $1/2$ & $0$ \\
+      $0$ & $1$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\land}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1/2$ & $1/2$ & $0$\\ 
+      $0$ & $0$ & $0$ & $0$ 
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc} 
+      $\tf{\lor}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1$ & $1$ \\ 
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$ 
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc} 
+      $\tf{\lif}[\LogGod]$ & $1$ & $1/2$ & $0$ \\ 
+      \hline 
+      $1$ & $1$ & $1/2$ & $0$ \\ 
+      $1/2$ & $1$ & $1$ & $0$  \\ 
+      $0$ & $1$ & $1$ & $1$ 
+    \end{tabular}
+  \end{center} 
+\end{proof}
+
+\begin{prop}\ollabel{prop:god-infty-m}
+  જો $\Gamma \Entails[\LogGod[\infty]] !B$, તો બધાં~$m \ge 2$
+  માટે $\Gamma \Entails[\LogGod[m]] !B$.
+\end{prop}
+
+\begin{proof}
+  અભ્યાસપ્રશ્ન.
+\end{proof}
+
+\begin{prob}
+  \olref[mvl][inf][god]{prop:god-infty-m} સાબિત કરો.
+\end{prob}
+
+હકીકતમાં, સાન્ત આધારગણ માટે વિપરીત દિશા પણ સાચી છે.
+\sourcecorrection{OLMV-016}{સ્થિર અંગ્રેજી મૂળ
+વિપરીત દિશા કોઈ મર્યાદા વિના કહે છે. સાન્ત
+આધારગણ માટે સંમેય વિરોધી મૂલ્યાંકનમાં આવતા
+મર્યાદિત સત્યમૂલ્યો એક જ સાન્ત જાળીમાં સમાય છે.
+પરંતુ અનંત આધારગણ ગોડેલના પ્રેરણ વડે અસીમ
+ઉતરતા મૂલ્યો ફરજિયાત કરી શકે; તે દરેક સાન્ત
+જાળીમાં નિષ્કર્ષને નિર્દિષ્ટ કરે છતાં અનંત
+સંમેય જાળીમાં વિરોધી મૂલ્યાંકન આપે છે.
+તેથી અહીં દાવો સાન્ત આધારગણ સુધી મર્યાદિત કર્યો છે.}
+
+$\LogGod[3]$ની જેમ $\LogGod[\infty]$માં બધી સ્ફુરણાવાદી રીતે
+પ્રામાણ્ય !!{formula}s પુનરુક્તિઓ છે, અને નીચે દર્શાવેલી
+બિનપુનરુક્તિઓ~$\LogGod[\infty]$માં પણ બિનપુનરુક્તિઓ છે:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+સ્ફુરણાવાદી રીતે અપ્રામાણ્ય !!{formula} હોવા છતાં $\LogGod[3]$ની પુનરુક્તિ
+હોવાનું ઉદાહરણ $(p \lif q) \lor (q \lif p)$ એ
+$\LogGod[\infty]$માં પણ પુનરુક્તિ છે. હકીકતમાં,
+$\LogGod[\infty]$ને $(!A \lif !B) \lor (!B \lif !A)$ની
+યોજના ઉમેરેલા સ્ફુરણાવાદી તર્કશાસ્ત્ર તરીકે લક્ષણિત
+કરી શકાય છે. આ માઇકલ ડમેટે બતાવ્યું હતું, અને તેથી
+$\LogGod[\infty]$ને ગોડેલ--ડમેટ તર્કશાસ્ત્ર~$\Log{LC}$ પણ કહે છે.
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ એ~$\LogGod[\infty]$ની
+  પુનરુક્તિ છે તે બતાવો.
+\end{prob}
+
+\begin{prob}
+  $(p \lif q) \lor (q \lif r) \lor (r \lif s)$ એ
+  $\LogGod[3]$ની પુનરુક્તિ છે, પરંતુ~$\LogGod[\infty]$ની
+  પુનરુક્તિ નથી, તે બતાવો.
+\end{prob}
+
+\end{document}

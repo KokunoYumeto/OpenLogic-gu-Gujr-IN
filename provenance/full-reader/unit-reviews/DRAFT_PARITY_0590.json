@@ -1,0 +1,116 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0590",
+  "checked_at_utc": "2026-09-28T03:13:58.717522+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0590 aleph and beth sequences, GCH, CH and their independence; state-only draft",
+  "report": {
+    "unit_id": "OLP-0590",
+    "source_path": "content/set-theory/card-arithmetic/ch.tex",
+    "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+    "draft_path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-ch.tex",
+    "draft_sha256": "685cb9a9f0fc7b78e4166e63eeaed5d48592b3adf7369473fa453d4dd25d0b7c",
+    "aligned_blocks": 25,
+    "linguistic_blocks": 22,
+    "source_math_spans_correction_aware": 59,
+    "target_math_spans_after_corrections": 59,
+    "glossary_tokens": 0,
+    "source_correction_notes": [
+      "OLMD-140",
+      "OLMD-141",
+      "OLMD-142"
+    ],
+    "source_detector_ascii_tokens": 627,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "definition of $\\cardfont{a}$ is provided by transfinite recursion",
+        "definition of the aleph and beth sequences is provided by transfinite recursion"
+      ],
+      [
+        "\\bigcup_{\\cardfont{b} < \\cardfont{a}} \\cardfont{b} =",
+        "\\bigcup_{\\omega \\leq \\cardfont{b} < \\cardfont{a}} \\cardfont{b} ="
+      ],
+      [
+        "\\bigcup_{\\cardfont{b} < \\cardfont{a}}{\\aleph_{\\gamma_\\cardfont{b}}}",
+        "\\bigcup_{\\omega \\leq \\cardfont{b} < \\cardfont{a}}{\\aleph_{\\gamma_\\cardfont{b}}}"
+      ],
+      [
+        "\\bigcup_{\\cardfont{b} < \\cardfont{a}}\\gamma_\\cardfont{b}",
+        "\\bigcup_{\\omega \\leq \\cardfont{b} < \\cardfont{a}}\\gamma_\\cardfont{b}"
+      ],
+      [
+        "when $\\cardfont{b} < \\cardfont{a}$, the value",
+        "when $0<\\cardfont{b} < \\cardfont{a}$, the value"
+      ],
+      [
+        "\\text{when $\\alpha$ is a limit ordinal}",
+        "\\text{જ્યારે $\\alpha$ સીમા ક્રમવાચક સંખ્યા હોય}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-expotough.tex",
+        "sha256": "9612f5098ff687bf2992d7daf6a1dcac6f914cb788d2839cc017cb722bce2ea8",
+        "terms": [
+          "\\ollabel{cardexpo2reduct}",
+          "ઘાતક્રિયા"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinal-arithmetic-opps.tex",
+        "sha256": "ce48855cdaaf5535f30cc6368c29f00d3970e99a82e008493858bcb36466feef",
+        "terms": [
+          "\\ollabel{lem:SizePowerset2Exp}",
+          "\\ollabel{continuumis2aleph0}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\cardinals-classing.tex",
+        "sha256": "20e65b4282ccaf9667608ff33ce6677e8cbf50f88bba69ddb9230e835147255d",
+        "terms": [
+          "\\ollabel{lem:NoLargestCardinal}",
+          "\\ollabel{omegaisacardinal}",
+          "\\ollabel{unioncardinalscardinal}"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\second-order-logic\\sol-and-set-theory\\power-of-continuum.tex",
+        "sha256": "4e58fbdf9babda3e4702213763d8e75bc0a090aae98039f2a06ed2b741a54884",
+        "terms": [
+          "સાતત્યક પરિકલ્પના",
+          "સાતત્યકનું કદ",
+          "\\aleph_1"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "OLMD-140 changes only the mistaken referent in the explanatory sentence, not the six aleph/beth recursion equations.",
+      "OLMD-141 adds the omega base case and restricts the limit-case indexed unions to infinite predecessor cardinals, for which gamma_b exists.",
+      "OLMD-142 explicitly restricts the GCH exponentiation interval to an infinite base and positive smaller exponent; the source's unrestricted b=0 and finite-base cases are false.",
+      "Relative consistency, independence and truth are kept distinct; the inactive source comment remains out of reader-facing prose.",
+      "Reader-facing English explanations inside displayed mathematics are localized to Gujarati; variables, citations and mathematical relations retain their source meaning."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [
+      {
+        "literal": "GCH",
+        "count": 7,
+        "reason": "Exact formal abbreviation for the Generalized Continuum Hypothesis."
+      },
+      {
+        "literal": "CH",
+        "count": 5,
+        "reason": "Exact formal abbreviation for the Continuum Hypothesis, counted as a standalone token rather than inside GCH."
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

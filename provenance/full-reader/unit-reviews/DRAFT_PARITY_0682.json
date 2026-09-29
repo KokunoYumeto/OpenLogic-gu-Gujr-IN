@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0682",
+  "checked_at_utc": "2026-09-28T20:44:36.476382+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0682 Auxiliary Tc tableaux rule table; state-only draft",
+  "report": {
+    "unit_id": "OLP-0682",
+    "source_path": "content/proof-theory/proof-search/rules-Tc.tex",
+    "source_sha256": "766ce01962f35ef9833f3be95a35250d13a9fca800100f15885dd9009cc74241",
+    "draft_path": "private-state\\work\\batch044_draft\\rules-Tc.tex",
+    "draft_sha256": "1bdeb56f61182760f8f8fde7f73a60c77ca68404c2d40f5be75bd9cef36793af",
+    "aligned_blocks": 5,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 6,
+    "target_math_spans_after_corrections": 6,
+    "glossary_tokens": 1,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 20,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "અનુમાન-નિયમો",
+          "ધારણાઓ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\begin{tabular}{@{}cc@{}}",
+        "count": 1
+      },
+      {
+        "literal": "\\Log{Tc}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

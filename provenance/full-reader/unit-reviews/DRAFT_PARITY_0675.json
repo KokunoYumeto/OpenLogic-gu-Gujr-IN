@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0675",
+  "checked_at_utc": "2026-09-28T20:14:20.690924+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0675 Permutation conversions and cut-length decrease; state-only draft",
+  "report": {
+    "unit_id": "OLP-0675",
+    "source_path": "content/proof-theory/normalization/permutations.tex",
+    "source_sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+    "draft_path": "private-state\\work\\batch044_draft\\permutations.tex",
+    "draft_sha256": "c9cad00daefa2508bec4927039ece39274db740153818339384636b4c8ce5bcb",
+    "aligned_blocks": 18,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 109,
+    "target_math_spans_after_corrections": 109,
+    "glossary_tokens": 21,
+    "source_correction_notes": [
+      "OLMD-253",
+      "OLMD-254"
+    ],
+    "source_detector_ascii_tokens": 520,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$!A \\ident !B \\lor !C$",
+        "$!A \\ident !B \\land !C$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\natural-deduction.tex",
+        "sha256": "508e3daa5574aefdc72906a0a70d81edd1efa0ee7767e8ac051f8cd4c4dbb784",
+        "terms": [
+          "સ્વાભાવિક નિગમન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\natural-deduction\\rules-and-proofs.tex",
+        "sha256": "31eebdfe5797424cd4224b145215c435df47173c10ff549a4cc804a41280d4ee",
+        "terms": [
+          "સાબિતીઓ",
+          "ધારણાઓ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\sequent-calculus\\structural-rules.tex",
+        "sha256": "53fd66abbd2b851c1af08e5873881eaccbfaa394e7ebe67e6989b76a446e2100",
+        "terms": [
+          "સિક્વન્ટ",
+          "કટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "x\\,y",
+        "count": 20
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

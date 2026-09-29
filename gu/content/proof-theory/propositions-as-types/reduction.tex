@@ -1,0 +1,234 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{red}
+
+\olsection{ઘટાડો}
+
+સ્વાભાવિક નિગમનની !!{derivation}sમાં
+!!a{introduction} નિયમ પછી
+!!a{elimination} નિયમ આવે, તો તે
+આડમાર્ગ છે જેને ``ઘટાડી'' શકાય છે.
+દાખલા તરીકે, $\Intro{\land}$ પછી
+$\Elim{\land}$ આવે ત્યારે તે
+``એકબીજાને રદ કરે છે'': \Intro{\land}થી
+બનતા સંયોજનના બે સંયોજ્યો પૈકી
+એક $\Elim{\land}$નો નિષ્કર્ષ હોય છે,
+અને $\Intro{\land}$નાં આધારવિધાનો એ
+બંને સંયોજ્યો છે. તેથી કોઈ પણ
+સંયોજ્યની !!a{derivation} જોઈએ, તો
+સંયોજન દાખલ કરીને પછી તેને દૂર
+કરવાને બદલે સીધી એ જ !!{derivation}
+વાપરી શકીએ. આમ:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInfC{$!A_1 \land !A_2$}
+  \RightLabel{$\Elim{\land}_i$}
+  \UnaryInfC{$!A_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!A_i$}
+  \DisplayProof
+\end{gather*}
+
+આ સરળીકરણ પરથી સંબંધિત સાબિતી-પદો પર
+ઘટાડાનો સમાન સંબંધ લઈ શકીએ.
+$\delta_1$નું સાબિતી-પદ~$N_1$ અને
+$\delta_2$નું પદ~$N_2$ હોય, તો
+ડાબી સાબિતીનું પદ એક પગલામાં
+જમણી સાબિતીના પદમાં ઘટે છે:
+\[
+  \proj{i}{\pair{N_1}{N_2}} \redone N_i
+\]
+પ્રકારિત લૅમ્બડા-કલનમાં આ
+ગુણાકાર-પ્રકારનો \emph{બીટા-ઘટાડાનો}
+નિયમ છે.
+\sourcecorrection{OLMD-291}{મૂળ જોડીના બંને પદ એક જ આર્ગ્યુમેન્ટમાં લખે છે. સાબિતી-પદની વ્યાખ્યા અને નિયમ-કોષ્ટક મુજબ જોડીના બંને આર્ગ્યુમેન્ટ અલગ કર્યા છે.}
+
+સ્વાભાવિક નિગમનમાં \Intro{\land} પછી
+\Elim{\land} જેવા બે અનુમાનો, એટલે
+ઘટાડી શકાય એવાં અનુમાનોની જોડી,
+\emph{કટ} કહેવાય છે. પ્રકારિત
+લૅમ્બડા-કલનમાં $\redone$ની ડાબી
+બાજુનું પદ \emph{સંકોચ્ય પદ} અને
+જમણી બાજુનું પદ \emph{સંકોચનનું પરિણામ}
+કહેવાય છે. અપ્રકારિત લૅમ્બડા-કલનમાં
+ફક્ત $(\lambd[x][N])Q$ સંકોચ્ય પદ
+ગણાય છે; પ્રકારિત લૅમ્બડા-કલનમાં
+વાક્યરચનામાં $\pair{N}{M}$,
+$\proj{i}{N}$, $\inj[!A]{i}{N}$,
+$\dcase{N}{x_1}{M_1}{x_2}{M_2}$ અને
+$\abort{!A}{N}$ ધરાવતાં પદો પણ
+ઉમેરાય છે, જેમનાં અનુરૂપ સંકોચ્ય પદો છે.
+\sourcecorrection{OLMD-292}{મૂળ વિકલ્પ-દાખલના ચિહ્ન માટે ત્રણ ફરજિયાત આર્ગ્યુમેન્ટ લખે છે; વ્યાખ્યા અને નિયમ-કોષ્ટક મુજબ પ્રકારની નોંધ વૈકલ્પિક આર્ગ્યુમેન્ટમાં મૂકી છે.}
+
+એ જ રીતે વિકલ્પ માટે ઘટાડો છે:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!C$}
+  \DisplayProof
+\end{gather*}
+તે સાબિતી-પદો પરના આ ઘટાડાને અનુરૂપ છે:
+\begin{gather*}
+  \dcase{\inj[!A_{3-i}]{i}{M}}{x_1}{N_1}{x_2}{N_2} \redone \Subst{N_i}{M}{x_i}
+\end{gather*}
+અહીં $M$ એ~$\delta$નું સાબિતી-પદ અને
+$N_i$ એ~$\delta_i$નું પદ છે.
+આ સરવાળા-પ્રકારનો બીટા-ઘટાડાનો નિયમ છે.
+અહીં $\Subst{M}{N_i}{x}$ એટલે~$M$માં
+ચલ~$x$ની દરેક મુક્ત આવૃત્તિને~$N_i$થી
+બદલવી.
+\sourcecorrection{OLMD-293}{મૂળ વિકલ્પ-દાખલની વૈકલ્પિક નોંધમાં દાખલ થતા પદનો પોતાનો પ્રકાર આપે છે. નિયમ-કોષ્ટક પ્રમાણે આ નોંધ બીજો, હજી નિર્દિષ્ટ ન થયેલો વિકલ્પ આપે છે; તેથી અહીં $!A_{3-i}$ કર્યું છે.}
+
+વિધેય-પ્રકારનો ઘટાડો $\Intro\lif$
+પછી $\Elim\lif$ના આડમાર્ગને
+દૂર કરવાને અનુરૂપ છે.
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!A}{x}$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DischargeRule{$\Intro{\lif}$}{x}
+  \UnaryInfC{$!A \lif !B$}
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInfC{$!B$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DisplayProof
+\end{gather*}
+સાબિતી-પદો માટે આ સામાન્ય બીટા-ઘટાડો છે:
+\begin{gather*}
+  (\lambd[\typeof{x}{!A}][N]M)
+  \redone \Subst{N}{M}{x}
+\end{gather*}
+
+!!{proof}sનાં ઘટાડા-રૂપાંતરો ઉપરાંત
+ક્રમચય-રૂપાંતરો પણ લઈ શકીએ.
+તે એવી (ઉપ-)!!{proof}s પર લાગુ
+થાય છે જેના અંતે \Elim{\lor}
+પછી બીજો !!{elimination} નિયમ
+આવે છે. દાખલા તરીકે:
+\begin{multline*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \\
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_i$}
+  \DisplayProof
+\end{multline*}
+$\delta$, $\delta_1$ અને $\delta_2$નાં
+સાબિતી-પદો અનુક્રમે $M$, $N_1$ અને
+$N_2$ હોય, તો સાબિતી-પદો, એટલે
+$\lambd$-પદો, માટેનો અનુરૂપ
+ઘટાડા-નિયમ છે:
+\[
+  \proj{i}{\dcase{M}{x_1}{N_1}{x_2}{N_2}} \redone 
+\dcase{M}{x_1}{\proj{i}{N_1}}{x_2}{\proj{i}{N_2}}
+\]
+
+આડમાર્ગો ફક્ત !!{proof}sના અંતે જ
+નહીં, પણ !!{proof}sની અંદર પણ
+દૂર કરી શકીએ: આડમાર્ગથી પૂરી થતી
+ઉપ-!!{proof} પર ઘટાડા-રૂપાંતર લગાવો.
+એ જ રીતે $\beta$-ઘટાડો
+$\lambd$-પદોના ઉપપદો પર લાગુ
+થાય છે. $N$ એ~$M$નું ઉપપદ હોય
+અને $N \redone N'$ થાય, તો
+$M$માંનું ઉપપદ~$N$ એ~$N'$થી
+બદલી $M'$ મેળવી શકીએ.
+ત્યારે પણ $M \redone M'$ લખીએ.
+$M = M_1 \redone M_2 \redone M_3 \redone \dots \redone M_k = M'$
+અનુક્રમ હોય ($k=1$, એટલે $M = M'$
+હોય તે કિસ્સો સહિત), તો
+$M \red M'$ લખીએ.
+\sourcecorrection{OLMD-294}{મૂળ અનુક્રમમાં બીજું પદ બે વખત લખાયું છે; ક્રમશઃ ત્રીજું પદ મૂક્યું છે.}
+
+જેના કોઈ પણ ઉપ-!!{proof} પર રૂપાંતર
+લાગુ ન થઈ શકે તેવી !!{proof}
+\emph{સામાન્ય} કહેવાય છે.
+એ જ રીતે જેના કોઈ પણ ઉપપદ પર
+રૂપાંતર લાગુ ન થઈ શકે એવું
+$\lambd$-પદ \emph{સામાન્ય} કહેવાય છે.
+સામાન્ય $\lambd$-પદને
+\emph{સામાન્ય સ્વરૂપ} પણ કહે છે.
+
+\end{document}

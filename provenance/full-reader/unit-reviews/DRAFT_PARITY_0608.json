@@ -1,0 +1,74 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0608",
+  "checked_at_utc": "2026-09-28T14:25:20.930776+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0608 set difference, subset equality and excluded-middle case proof; state-only draft",
+  "report": {
+    "unit_id": "OLP-0608",
+    "source_path": "content/methods/proofs/example-2.tex",
+    "source_sha256": "cbef120cea559b153f4e6b828d2fe7942050d3534e3bb61e642fd467f897aa80",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-example-2.tex",
+    "draft_sha256": "0f51da278637b330255b09539725fd38f080615b0430d57fcd16b1f99d5e6443",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 4,
+    "source_math_spans_correction_aware": 86,
+    "target_math_spans_after_corrections": 86,
+    "glossary_tokens": 15,
+    "source_correction_notes": [
+      "OLMD-158"
+    ],
+    "source_detector_ascii_tokens": 464,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$C \\subseteq (A \\cup (C \\setminus A)$",
+        "$C \\subseteq (A \\cup (C \\setminus A))$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\sets\\unions-and-intersections.tex",
+        "sha256": "479a866032c9eae22230d376f546944bc9e67e7852575dd0dd39aa30fb335a81",
+        "terms": [
+          "તફાવત ગણ",
+          "\\setminus"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\first-order-logic\\beyond\\intuitionistic-logic.tex",
+        "sha256": "fd369c9e308320685df49c6027c50adbd26fccb849db6a8246ca5405761cf33a",
+        "terms": [
+          "વર્જિત",
+          "મધ્યનો નિયમ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-example-1.tex",
+        "sha256": "b8cbe2d18a2460c1e92d735bfbbf1964db4da5ddd9efbd570d5c1c3c25bfd2ed",
+        "terms": [
+          "કિસ્સાવાર સાબિતી",
+          "પૂર્વધારણા"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The conditional proposition quantifies arbitrary A and C implicitly; assume A subseteq C and prove A union (C setminus A)=C.",
+      "The equality is converted into two inclusions, not just the forward inclusion. The source's malformed second inclusion receives one visible parenthesis repair.",
+      "Forward inclusion splits z in A or z in C setminus A. Case 1 uses A subseteq C; Case 2 uses the definition of set difference.",
+      "Reverse inclusion fixes z in C and applies excluded middle to z in A or z not in A. In the latter case z lies in C setminus A.",
+      "The seven quote environments give teaching commentary and remain separate from proof steps; the prior Gujarati edition term for excluded middle is reused."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0466",
+  "checked_at_utc": "2026-09-27T18:43:06.023149+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0466 soundness for additional modal tableau rules; state-only draft",
+  "report": {
+    "unit_id": "OLP-0466",
+    "source_path": "content/normal-modal-logic/tableaux/more-soundness.tex",
+    "source_sha256": "8c68f92959ba86967753495c186b9f49a3da00247457511f5527e72e5a9eb936",
+    "draft_path": "private-state\\work\\batch040_draft\\tableaux-more-soundness.tex",
+    "draft_sha256": "7b2a3f2dd8b3f0824a8c6467c40a31cf3cd97edbc8123f76b9ad2170fe133146",
+    "aligned_blocks": 23,
+    "linguistic_blocks": 18,
+    "source_math_spans_correction_aware": 152,
+    "target_math_spans_after_corrections": 152,
+    "glossary_tokens": 12,
+    "source_correction_notes": [
+      "OLMD-061",
+      "OLMD-062"
+    ],
+    "source_detector_ascii_tokens": 480,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "five_property_classes_and_ten_rule_cases_reviewed": true
+  },
+  "status": "draft_linguistic_math_and_rule_proof_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

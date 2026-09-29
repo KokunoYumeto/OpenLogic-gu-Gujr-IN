@@ -1,0 +1,47 @@
+% Part: lambda-calculus
+% Chapter: introduction
+% Section: lambda-computable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{lam}{int}{cmp}
+\olsection{\usetoken{S}{lambda definable} વિધેયો સંગણનીય છે}
+
+\begin{thm}
+\ollabel{thm:lambda-computable}
+આંશિક વિધેય~$f$ લૅમ્બડા પદ વડે !!{lambda defined} હોય, તો તે
+સંગણનીય છે.
+\end{thm}
+
+\begin{proof}
+માનો કે વિધેય~$f$ લૅમ્બડા પદ~$X$ વડે !!{lambda defined} છે.
+$f$ ગણવાની અનૌપચારિક પ્રક્રિયા વર્ણવીએ. ઇનપુટ $m_0$,
+\dots,~$m_{n-1}$ માટે પદ $X \num{m_0} \ldots \num{m_{n-1}}$
+લખો. ત્યાર પછી વૃક્ષ બનાવો: પહેલાં મૂળ પદનાં બધાં એક-પગલાનાં
+લઘુકરણો લખો; તેમની નીચે તે પદોનાં બધાં એક-પગલાનાં લઘુકરણો
+(અર્થાત્ મૂળ પદનાં બે-પગલાનાં લઘુકરણો) લખો; અને એમ આગળ વધો.
+ક્યારેય ચર્ચ અંક મળે તો તેને ઉત્તર તરીકે પરત કરો; ન મળે તો
+વિધેયનું મૂલ્ય અવ્યાખ્યાયિત રહે છે.
+\sourcecorrection{OLLAM-005}{સ્થિર અંગ્રેજી મૂળમાં પ્રથમ
+ઇનપુટ-પદમાં~\texttt{\textbackslash num m\_0} અને
+\texttt{\textbackslash num m\_\{n-1\}} છે. આથી~$m_0$
+અને~$m_{n-1}$ આખાં \texttt{\textbackslash num}ના દલીલરૂપે
+જતા નથી. નીચેની જ પંક્તિમાં વપરાતી સાચી શૈલી મુજબ અહીં
+\texttt{\textbackslash num\{m\_0\}} વગેરે લખ્યું છે.}
+
+ચર્ચની માન્યતાનો આધાર લઈને કહી શકાય કે આ વિધેય સંગણનીય છે.
+પ્રમેયની વધુ સારી સાબિતી માટે આ શોધપ્રક્રિયાનું પુનરાવર્તી વર્ણન
+આપવું જોઈએ. દાખલા તરીકે,
+``$\fn{IsASubterm}$'', ``$\fn{Substitute}$'',
+``$\fn{ReducesToInOneStep}$'', ``$\fn{ReductionSequence}$'',
+``$\fn{Numeral}$'' વગેરે આદિમ પુનરાવર્તી વિધેયો અને સંબંધોની
+શ્રેણી વ્યાખ્યાયિત કરી શકાય. ત્યાર પછી $f(m_0, \dots, m_{n-1})$
+ગણવાની આંશિક પુનરાવર્તી પ્રક્રિયા એ છે કે
+$X \num{m_0} \dots \num{m_{n-1}}$થી શરૂ થઈ ચર્ચ અંક પર પૂરી થતી
+એક-પગલાનાં લઘુકરણોની શ્રેણી શોધો, અને તે અંકને અનુરૂપ સંખ્યા
+પરત કરો. વિગત લાંબી અને કંટાળાજનક છે, પરંતુ બાકી નિયમિત છે.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,64 @@
+% Part: incompleteness
+% Chapter: theories-computability
+% Section: complete-decidable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{tcp}{cdc}
+
+\olsection{\printtoken{S}{axiomatizable} પૂર્ણ સિદ્ધાંતો નિર્ણેય છે}
+
+સિદ્ધાંતને {\em પૂર્ણ} ત્યારે કહીએ
+જ્યારે દરેક વાક્ય~$!A$ માટે
+$!A$ અથવા $\lnot !A$
+બેમાંથી એક સાબિત થાય.
+
+\begin{lem}
+માનો કે સિદ્ધાંત~$\Th{T}$
+પૂર્ણ અને !!{axiomatizable} છે.
+તો $\Th{T}$ નિર્ણેય છે.
+\end{lem}
+
+\begin{proof}
+માનો કે $\Th{T}$ પૂર્ણ છે
+અને $A$ તેના સ્વયંસિદ્ધિઓનો
+સંગણનીય ગણ છે.
+જો $\Th{T}$ અસુસંગત હોય,
+તો તે સ્પષ્ટપણે સંગણનીય છે.
+(કલનવિધિ: ``હા'' કહો.)
+આથી માની શકીએ કે
+$\Th{T}$ સુસંગત પણ છે.
+
+વાક્ય~$!A$ એ~$\Th{T}$માં
+છે કે નહીં તે નક્કી કરવા,
+$\Th{T}$માંથી~$!A$નું
+!!a{derivation} અને
+$\lnot !A$નું !!a{derivation}
+બંને એકસાથે શોધો.
+$\Th{T}$ પૂર્ણ હોવાથી
+બેમાંથી એક મળી જ જશે;
+અને $\Th{T}$ સુસંગત હોવાથી,
+જો $\lnot !A$નું
+!!a{derivation} મળે તો
+$!A$નું !!{derivation}
+હોઈ શકે નહીં.
+
+જુદી રીતે કહીએ તો
+$\Th{T}$ !!{c.e.} છે
+તે આપણે જાણીએ છીએ;
+અગાઉ સાબિત કરેલા પ્રમેય
+મુજબ $\Th{T}$નો પૂરક પણ
+!!{c.e.} છે એટલું
+બતાવવું પૂરતું છે.
+પરંતુ !!a{formula}~$!A$ એ~$\Th{\bar
+T}$માં ત્યારે અને માત્ર
+ત્યારે જ હોય જ્યારે
+$\lnot !A$ એ~$\Th{T}$માં
+હોય; તેથી
+$\Th{\bar T} \leq_m
+\Th{T}$.
+\end{proof}
+
+\end{document}

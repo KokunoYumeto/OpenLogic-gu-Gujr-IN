@@ -1,0 +1,149 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{cardsasords}
+\olsection{ક્રમવાચક સંખ્યાઓ તરીકે ગણાંકો}
+
+હકીકતમાં આપણો ગણાંકોનો સિદ્ધાંત ક્રમવાચક સંખ્યાઓના
+સિદ્ધાંતનો જ (નિઃસંકોચ) ઉપયોગ કરશે. એટલે કે ગણાંકોને
+કેટલીક ચોક્કસ ક્રમવાચક સંખ્યાઓ તરીકે જ વ્યાખ્યાયિત કરીશું.
+ખાસ કરીને નીચેની વ્યાખ્યા આપીશું:
+
+\begin{defn}\ollabel{defcardinalasordinal}
+જો $A$ને સુક્રમિત કરી શકાય, તો $\card{A}$ એવી લઘુતમ
+ક્રમવાચક સંખ્યા $\gamma$ છે કે $\cardeq{A}{\gamma}$.
+કોઈ પણ ક્રમવાચક સંખ્યા $\gamma$ માટે કહીએ કે $\gamma$
+એ \emph{ગણાંક} છે, જો અને માત્ર જો
+$\gamma = \card{\gamma}$.
+\end{defn}
+
+હમણાં આપણે ``$A$ને સુક્રમિત કરી શકાય'' એવો શબ્દપ્રયોગ
+કર્યો. ગણિતમાં લગભગ હંમેશની જેમ અહીં ``શકાય'' કહેવું
+એ અસ્તિત્વના વિધાનને ઢીલી રીતે કહેવા બરાબર છે:
+``$A$ને સુક્રમિત કરી શકાય'' એટલે ``$A$ને સુક્રમિત
+કરે એવો કોઈ સંબંધ છે''.
+
+પરંતુ \olref{defcardinalasordinal}માં એક મુશ્કેલી છે.
+દરેક ગણનું કદ હોય, એટલે દરેક~$A$ માટે $\card{A}$
+અસ્તિત્વમાં હોય, એમ આપણે ઇચ્છીએ છીએ. જોકે હમણાંની
+વ્યાખ્યા એક શરતથી શરૂ થાય છે: ``\emph{જો} $A$ને
+સુક્રમિત કરી શકાય\ldots''. કોઈ એવો ગણ $A$ હોય
+જેને સુક્રમિત ન કરી શકાય, તો આપણી વ્યાખ્યા
+$\card{A}$ નામની કોઈ વસ્તુ નક્કી જ નહીં કરે.
+
+તેથી \olref{defcardinalasordinal} વાપરવા માટે
+દરેક ગણને સુક્રમિત કરી શકાય તેની ખાતરી જોઈએ.
+પરંતુ આ ખાતરી~$\ZF$માં મળતી નથી. તેથી
+\olref{defcardinalasordinal}
+વાપરવી હોય, તો નીચેની જેમ નવું સ્વયંસિદ્ધિ ઉમેર્યા
+વિના રસ્તો નથી:
+\begin{axiom}[સુક્રમિતતા]
+દરેક ગણને સુક્રમિત કરી શકાય.
+\end{axiom}
+સુક્રમિતતાનું સ્વયંસિદ્ધિ સ્વીકાર્ય છે કે નહીં તેની
+ચર્ચા \olref[choice][]{chap}માં કરીશું. હમણાંથી તો
+તેનો ઉપયોગ કરીશું. તેનો ઉપયોગ કરતાં
+\olref{defcardinalasordinal} મુજબ વ્યાખ્યાયિત
+ગણાંકો અસ્તિત્વમાં છે અને ઇચ્છિત રીતે વર્તે છે તે
+સાબિત કરવું સહેલું છે:
+
+\begin{lem}\ollabel{lem:CardinalsExist}
+દરેક ગણ $A$ માટે:
+\begin{enumerate}
+	\item\ollabel{cardaexists} $\card{A}$ અસ્તિત્વમાં છે અને અનન્ય છે;
+	\item\ollabel{cardaapprox}  $\cardeq{\card{A}}{A}$;
+	\item\ollabel{cardaidem}  $\card{A}$ ગણાંક છે, એટલે કે
+	$\card{A} = \card{\card{A}}$;
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$A$ નક્કી કરો. સુક્રમિતતાથી $\tuple{A, R}$ એવો
+સુક્રમ મળે છે. \olref[ordinals][ordtype]{thmOrdinalRepresentation}
+મુજબ $\tuple{A, R}$ અનન્ય ક્રમવાચક સંખ્યા $\beta$
+સાથે ક્રમ-એકરૂપ છે. તેથી $\cardeq{A}{\beta}$.
+અનંતાતીત અનુમાનથી એવી અનન્ય લઘુતમ ક્રમવાચક સંખ્યા
+$\gamma$ મળે છે કે $\cardeq{A}{\gamma}$.
+આથી $\card{A} = \gamma$, જેનાથી \olref{cardaexists}
+અને \olref{cardaapprox} સાબિત થાય છે.
+\olref{cardaidem} માટે નોંધો કે $\delta \in \gamma$
+હોય, તો $\gamma$ની પસંદગીથી $\cardless{\delta}{A}$;
+અને ગણસામ્ય સામ્ય સંબંધ હોવાથી
+(\olref[sfr][siz][equ]{equinumerosityisequi})
+$\cardless{\delta}{\gamma}$ પણ મળે છે.
+તેથી $\gamma = \card{\gamma}$.
+%So, for reductio, suppose that there is some ordinal $\delta \in \gamma$ such that $\cardeq{\gamma}{\delta}$. Then, $\cardeq{\cardeq{A}{\gamma}}{\delta}$ so that $\cardeq{A}{\delta}$ by \olref[sfr][set][equ]{equinumerosityisequi}, which contradicts the choice of $\gamma$ as the least ordinal such that $\cardeq{A}{\gamma}$.
+\end{proof}
+
+આગળનું પરિણામ કૅન્ટરનો સિદ્ધાંત અને તે ઉપરાંત
+બીજી બાબતોની પણ ખાતરી આપે છે. (નોંધો કે ગણાંકોનો
+ક્રમ તેમને ક્રમવાચક સંખ્યાઓમાંથી મળે છે, એટલે કે
+$\cardfont{a} < \cardfont{b}$ જો અને માત્ર જો
+$\cardfont{a} \in \cardfont{b}$. અહીં જે વસ્તુઓ
+ગણાંક છે તે આપણે જાણીએ છીએ તેમના માટે ફ્રેક્ટુર
+અક્ષરો વાપરીશું. આ પ્રયોગ પ્રચલિત છે. બીજી સામાન્ય
+રીત ગ્રીક અક્ષરો લેવાની છે, કારણ કે ગણાંકો ક્રમવાચક
+સંખ્યાઓ છે; પરંતુ એવા અક્ષરો મૂળાક્ષરના મધ્યમાંથી
+પસંદ કરે છે, જેમ કે $\kappa, \lambda$.):
+\begin{lem}\ollabel{lem:CardinalsBehaveRight}
+કોઈ પણ ગણો $A$ અને $B$ માટે:
+\begin{align*}
+	\cardeq{A}{B} &\text{ iff } \card{A} = \card{B}\\
+	\cardle{A}{B} &\text{ iff } \card{A} \leq \card{B}\\
+	\cardless{A}{B}&\text{ iff } \card{A} < \card{B}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+બીજા વિધાનની ડાબેથી જમણી દિશા સાબિત કરીશું
+(બીજા કિસ્સા સમાન છે અને સ્વાધ્યાય માટે છોડીએ છીએ).
+આ આકૃતિ જુઓ:
+\begin{center}
+	\begin{tikzpicture}
+	\node (nodea) {$A$};
+	\node[right = 6em of nodea] (nodeb) {$B$};
+	\node[below = 2em of nodea] (nodecarda) {$\card{A}$};
+	\node[below = 2em of nodeb] (nodecardb) {$\card{B}$};
+	\draw[->] (nodea)--(nodeb);
+	\draw[<->] (nodea)--(nodecarda);
+	\draw[<->] (nodeb)--(nodecardb);
+	\draw[->, dashed] (nodecarda)--(nodecardb);
+\end{tikzpicture}
+\end{center}
+બંને બાજુ તીરવાળાં રેખાખંડો !!{bijection}s દર્શાવે છે;
+એનું અસ્તિત્વ \olref{lem:CardinalsExist}થી મળે છે.
+$\cardle{A}{B}$ ધારીએ, તો $A\to B$ એવું
+!!a{injection} મળે છે. હવે તીરોને $\card{A}$થી
+$A$, ત્યાંથી $B$ અને પછી $\card{B}$ સુધી અનુસરતાં
+$\card{A} \to \card{B}$ એવું !!a{injection} મળે
+છે (તૂટક તીર).
+\end{proof}\noindent \olref{lem:CardinalsBehaveRight} વાપરીને
+શ્રેડર--બર્નસ્ટાઇન પ્રમેય ફરી સાબિત કરી શકીએ.
+તેનું વિધાન છે કે $\cardle{A}{B}$ અને
+$\cardle{B}{A}$ હોય, તો $\cardeq{A}{B}$.
+આપણે તેને \olref[sfr][siz][sb]{thm:schroder-bernstein}
+તરીકે કહ્યું હતું, પરંતુ સૌપ્રથમ વધુ મહેનતથી
+\olref[sfr][infinite][card-sb]{sec}માં સાબિત કર્યું હતું.
+હવે જુઓ:
+
+\begin{proof}[શ્રેડર--બર્નસ્ટાઇનની ફરી સાબિતી]
+$\cardle{A}{B}$ અને $\cardle{B}{A}$ હોય, તો
+\olref{lem:CardinalsBehaveRight} મુજબ
+$\card{A} \leq \card{B}$ અને
+$\card{B} \leq \card{A}$. તેથી ત્રિવિભાજન અને
+\olref{lem:CardinalsBehaveRight}થી
+$\card{A} = \card{B}$ તથા $\cardeq{A}{B}$.
+\end{proof}
+\noindent
+આ સાબિતી બહુ સરળ છે, પરંતુ ગૂઢ રીતે તે
+પ્રતિસ્થાપન પર
+(\olref[ordinals][ordtype]{thmOrdinalRepresentation}
+માટે) અને સુક્રમિતતા પર
+(\olref{lem:CardinalsBehaveRight} માટે)
+આધાર રાખે છે. તેની સામે,
+\olref[sfr][infinite][card-sb]{sec}ની સાબિતી
+ઘણી વધુ સ્વતંત્ર હતી (ખરેખર તે~$\Zminus$માં પણ
+કરી શકાય છે).
+
+\end{document}

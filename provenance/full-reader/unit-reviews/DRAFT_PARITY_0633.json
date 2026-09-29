@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0633",
+  "checked_at_utc": "2026-09-28T15:47:19.021372+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0633 History and Mythology of Set Theory chapter driver and six imports; state-only draft",
+  "report": {
+    "unit_id": "OLP-0633",
+    "source_path": "content/history/set-theory/set-theory.tex",
+    "source_sha256": "ee70b24e3407317f80b68ff14169f662199c01faeb4a9e9c3d1b532f375432bb",
+    "draft_path": "private-state\\work\\batch044_draft\\history-set-theory.tex",
+    "draft_sha256": "1f4983179caebd0a076b519dd2fa37655c330da33de6b170e940e2d3166be423",
+    "aligned_blocks": 7,
+    "linguistic_blocks": 2,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 19,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\set-theory.tex",
+        "sha256": "eb470a1bc4adbf335d48633421818ddf36a93e0fff497cb8c38974a29593fd25",
+        "terms": [
+          "\\olpart{sth}{ગણસિદ્ધાંત}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\history.tex",
+        "sha256": "82c4d114350d2b11bbc2d02a787f6111759c32308f34aec410b589259584d964",
+        "terms": [
+          "\\olpart{his}{ઇતિહાસ}",
+          "\\olimport[set-theory]{set-theory}"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Open Set Theory",
+        "count": 1,
+        "reason": "Exact English proper title of Tim Button's referenced source text."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

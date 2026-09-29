@@ -1,0 +1,45 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: isomorphisms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{iso}
+\olsection{એકરૂપતા}
+
+\begin{explain}
+\emph{એકરૂપતા} એ જોડાતા ગણોની સંરચના જાળવતું એક-એક વ્યાપ્ત વિધેય છે.
+સંરચના એટલે ગણોના !!{element}s વચ્ચે રહેલા સંબંધો.
+બે ગણ $X=\{1,2,3\}$ અને $Y=\{4,5,6\}$ લો.
+બંનેમાં અનુગામી હોવાનો, નાનું હોવાનો અને મોટું હોવાનો સંબંધ છે.
+બે ગણો વચ્ચેની એકરૂપતા આ સંરચનાઓ જાળવતું !!a{bijection} છે.
+એટલે !!a{bijective} ફલન~$f \colon X
+\to Y$ એકરૂપતા છે જો, ગણના કોઈ પણ બે ઘટકો માટે,
+$i<j$ જો અને ફક્ત જો $f(i)<f(j)$,
+$i>j$ જો અને ફક્ત જો $f(i)>f(j)$,
+અને $j$ એ $i$નો અનુગામી હોય જો અને ફક્ત જો $f(j)$ એ
+$f(i)$નો અનુગામી હોય.
+\end{explain}
+
+\begin{defn}[એકરૂપતા]
+$U$ એ જોડી $\langle X, R\rangle$ અને $V$ એ જોડી
+$\langle Y, S\rangle$ હોય, જ્યાં $X$ અને $Y$ ગણો છે અને
+$R$ તથા $S$ અનુક્રમે $X$ તથા $Y$ પરના સંબંધો છે.
+$X$થી $Y$માં જતું !!{bijection}~$f$ એ $U$થી $V$માં જતી
+\emph{એકરૂપતા} છે જો અને ફક્ત જો તે સંબંધની સંરચના જાળવે:
+$X$ના કોઈ પણ $x_{1}$ અને $x_{2}$ માટે
+$\tuple{x_1,x_2} \in R$ જો અને ફક્ત જો
+$\tuple{f(x_1),f(x_2)} \in S$.
+\end{defn}
+
+\begin{ex}
+બે ગણ $X=\{1,2,3\}$ અને $Y=\{4,5,6\}$ લો,
+સાથે નાનું હોવાનો અને મોટું હોવાનો સંબંધ લો.
+$f(x) = 7-x$ વડે આપેલું ફલન~$f\colon X \to Y$
+એ $\tuple{X,<}$ અને $\tuple{Y,>}$ વચ્ચેની એકરૂપતા છે.
+\end{ex}
+
+\end{document}
+

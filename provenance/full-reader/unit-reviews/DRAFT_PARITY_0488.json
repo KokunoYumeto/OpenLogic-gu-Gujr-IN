@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0488",
+  "checked_at_utc": "2026-09-27T20:14:18.297064+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0488 epistemic bisimulations; state-only draft",
+  "report": {
+    "unit_id": "OLP-0488",
+    "source_path": "content/applied-modal-logic/epistemic-logic/bisimulations.tex",
+    "source_sha256": "3be0d4f2009365ab48416c0235ba2a8dfa8a5c04a68c0066d377959a0489c60d",
+    "draft_path": "private-state\\work\\batch041_draft\\epistemic-bisimulations.tex",
+    "draft_sha256": "1c74e80d22bbd5543cb367b1a3a99aefbcba5f2e37954a7cef32fa4af3bfe6ee",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 52,
+    "target_math_spans_after_corrections": 52,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMD-079"
+    ],
+    "source_detector_ascii_tokens": 385,
+    "target_detector_findings_all_tikz_structural": 17,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_after_logged_repair": true,
+    "tikz_figure_byte_exact": true
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0702",
+  "checked_at_utc": "2026-09-28T23:50:33.547038+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0702 Proof search examples and general identity sequents; state-only draft",
+  "report": {
+    "unit_id": "OLP-0702",
+    "source_path": "content/proof-theory/sequent-calculus/proof-examples.tex",
+    "source_sha256": "c19f22b1b416d0cfbc56182056961ac353bee13b6f662e915c3b2699edc36ce8",
+    "draft_path": "private-state\\work\\batch044_draft\\proof-sequent-examples.tex",
+    "draft_sha256": "ff8b92c824524758cdd448ff62f23dc26dd7204756e6b277c4c0d62c2af98f33",
+    "aligned_blocks": 26,
+    "linguistic_blocks": 21,
+    "source_math_spans_correction_aware": 143,
+    "target_math_spans_after_corrections": 143,
+    "glossary_tokens": 37,
+    "source_correction_notes": [
+      "OLMD-315",
+      "OLMD-316",
+      "OLMD-317",
+      "OLMD-318",
+      "OLMD-319",
+      "OLMD-320",
+      "OLMD-321",
+      "OLMD-322",
+      "OLMD-323",
+      "OLMD-324",
+      "OLMD-325",
+      "OLMD-326",
+      "OLMD-327",
+      "OLMD-328"
+    ],
+    "source_detector_ascii_tokens": 776,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\Gamma = \\{!C \\lif (!D \\lif !E)\\}$",
+        "$\\Gamma = \\{(!C \\land !D) \\lif !E\\}$"
+      ],
+      [
+        "\\RightLabel{\\RightR{\\lif}}\n\\BinaryInf$ !D, !C, (!C \\land !D) \\lif !E \\fCenter !E$",
+        "\\RightLabel{\\LeftR{\\lif}}\n\\BinaryInf$ !D, !C, (!C \\land !D) \\lif !E \\fCenter !E$"
+      ],
+      [
+        "\\UnaryInf$!D, !C \\fCenter !E, !C$\n\\]",
+        "\\UnaryInf$!D, !C \\fCenter !E, !C$\n\\DisplayProof\n\\]"
+      ],
+      [
+        "\\UnaryInf$!C, !E \\fCenter !C$",
+        "\\UnaryInf$!C, !E \\fCenter !E$"
+      ],
+      [
+        "\\[\\Log{G1c} \\Proves (!C \\land !D)",
+        "\\[\\Log{G3c} \\Proves (!C \\land !D)"
+      ],
+      [
+        "$!A \\ident \\lforall[x][A]$",
+        "$!A \\ident \\lforall[x][!B]$"
+      ],
+      [
+        "$!A \\ident \\lexists[x][A]$",
+        "$!A \\ident \\lexists[x][!B]$"
+      ],
+      [
+        "\\BinaryInf$!B \\land !C \\fCenter !B \\land !C$",
+        "\\BinaryInf$!B \\land !C, !B \\land !C \\fCenter !B \\land !C$"
+      ],
+      [
+        "\\UnaryInf$!B \\land !C \\fCenter !B$",
+        "\\UnaryInf$!B \\land !C \\fCenter !B \\land !C$"
+      ],
+      [
+        "\\lforall[x][B(x)]",
+        "\\lforall[x][!B(x)]",
+        4
+      ],
+      [
+        "\\depth{B(c)}",
+        "\\depth{!B(c)}"
+      ],
+      [
+        "$D!$",
+        "$!D$"
+      ],
+      [
+        "$\\Pi = !B, \\Lambda$",
+        "$\\Pi = !B, \\Gamma$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "આઇગનચલ",
+          "શિથિલીકરણ",
+          "સંકોચન"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\interpretation-rules.tex",
+        "sha256": "c2eaec5d886bdf12ea63d5781c511b2791628cd9fe16973d46ea249e611e1c51",
+        "terms": [
+          "ઉત્તરાંગ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The intentionally invalid universal eigenvariable example remains invalid and labeled as such.",
+      "Correction-aware complete display comparison includes the added DisplayProof command and the repaired conjunction contraction tree."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 1
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

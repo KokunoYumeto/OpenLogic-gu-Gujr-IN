@@ -1,0 +1,427 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: midsequent
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{mid}
+
+\olsection{મધ્ય-સિક્વન્ટ પ્રમેય અને હર્બ્રાન્ડનું પ્રમેય}
+
+કટ-નિરાકરણ પ્રમેયનું મહત્ત્વનું
+પરિણામ મધ્ય-સિક્વન્ટ પ્રમેય છે.
+તે કહે છે કે જો
+$\Gamma \Sequent \Delta$ની
+એવી !!a{proof}~$\pi$ હોય
+જેમાં દરેક !!{formula} પરિમાણક-અગ્ર
+સ્વરૂપનું હોય, તો એવી
+!!a{proof}~$\pi'$ છે જેમાં
+$S \ident \Pi \Sequent \Lambda$
+સિક્વન્ટ (\emph{મધ્ય-સિક્વન્ટ})
+હોય અને~$\pi'$માં~$S$ની
+ઉપરનાં બધાં અનુમાનો વિધાનાત્મક,
+જ્યારે~$S$ની નીચેના બધાં અનુમાનો
+પરિમાણકનાં હોય.
+(!!^a{formula}~$!A$ ત્યારે
+\emph{પરિમાણક-અગ્ર સ્વરૂપનું}
+હોય જ્યારે તેનું સ્વરૂપ
+\[\mathsf{Q}_1x_1\dots\mathsf{Q}_nx_n\,!B(x_1,\dots,x_n)\]
+હોય, જ્યાં દરેક
+$\mathsf{Q}_i$ એ~$\lforall$
+અથવા~$\lexists$ છે.)
+મધ્ય-સિક્વન્ટ પ્રમેયનું બીજું
+મહત્ત્વનું પરિણામ હર્બ્રાન્ડનું
+પ્રમેય છે. તેનો સામાન્ય કિસ્સો
+વર્ણવવો થોડો મુશ્કેલ છે,
+પણ વ્યાપક રીતે તે કહે છે કે
+પ્રથમ-ક્રમ તર્કના દરેક
+!!{provable} !!{sentence}~$!A$
+માટે એવી વિધાનાત્મક
+પુનરુક્તિ~$!A'$ છે જેમાંથી
+$!A$ !!{prove}d કરી શકાય.
+અહીં~$!B$ પરિમાણક-રહિત હોય ત્યારે
+$\lexists[x][!B(x)]$ સ્વરૂપનાં
+!!{sentence}s માટેનું રૂપ આપીએ:
+
+\begin{thm}[હર્બ્રાન્ડનું પ્રમેય]
+માનો કે~$!B(x)$ પરિમાણક-રહિત છે
+અને $\Proves
+\lexists[x][!B(x)]$.
+તો એવાં પદો~$t_1$, \dots, $t_n$
+છે કે
+$\Proves !B(t_1) \lor \dots \lor !B(t_n)$.
+\end{thm}
+
+!!{formula}
+$!B(t_1) \lor \dots \lor !B(t_n)$ને
+$\lexists[x][!B(x)]$નો
+\emph{હર્બ્રાન્ડ વિકલ્પ} કહે છે.
+કારણ કે~$!B$ પરિમાણક-રહિત છે,
+આ વિકલ્પ પણ પરિમાણક-રહિત છે.
+આથી તે !!{provable} હોય તો
+કટ-મુક્ત સાબિતીથી !!{provable} છે,
+અને તેથી માત્ર વિધાનાત્મક
+અનુમાનો વાપરતી !!a{proof}
+પણ છે. એટલે તે પુનરુક્તિ છે.
+
+હર્બ્રાન્ડના પ્રમેયનો મુશ્કેલ ભાગ
+એ છે કે દરેક !!{provable}
+!!{formula}~$\lexists[x][!B(x)]$
+માટે હર્બ્રાન્ડ વિકલ્પ છે
+તે બતાવવું. વ્યસ્ત દિશા,
+એટલે~$\lexists[x][!B(x)]$નો
+હર્બ્રાન્ડ વિકલ્પ હોય તો
+તે સાબિત થઈ શકે, સહેલી છે.
+ખરેખર હર્બ્રાન્ડ વિકલ્પમાંથી
+$\lexists[x][!B(x)]$ ફલિત થાય છે.
+દાખલા તરીકે~$n=2$ માટે
+~$\Log{G3c}$માં આ
+!!a{proof} છે:
+\[
+\Axiom$!B(t_1) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\Axiom$!B(t_2) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)], !B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)]$
+\DisplayProof
+\]
+
+$\Sequent \lexists[x][!B(x)]$ની
+!!a{proof}~$\pi$માંથી
+હર્બ્રાન્ડ વિકલ્પ કાઢવા,
+પહેલાં એવો કિસ્સો લો જેમાં
+કટ-મુક્ત !!{proof}~$\pi$નાં
+બધાં $\RightR{\lexists}$
+અનુમાનો અંતે આવે છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$ \fCenter \lexists[x][!B(x)], !B(t_1), \dots, !B(t_n)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \fCenter \lexists[x][!B(x)], !B(t_2), \dots, !B(t_n)$
+\RightLabel{$(n-1) \times \RightR{\lexists}$}
+\Deduce$ \fCenter \lexists[x][!B(x)]$
+\DisplayProof
+\]
+જો~$\pi$માં
+$\lexists[x][!B(x)]$
+સક્રિય હોય એવાં
+$\RightR{\lexists}$
+અનુમાનો આ બધાં જ હોય,
+તો~$\pi_1$માં બીજું કોઈ
+પરિમાણક-અનુમાન નથી.
+\sourcecorrection{OLMD-221}{મૂળમાં અહીં અપરિભાષિત $\pi_1'$ લખાયું છે; ઉપરના વૃક્ષની ઉપરની ઉપસાબિતી $\pi_1$ છે.}
+કારણ કે~$!B(x)$માં બીજાં
+પરિમાણકો નથી અને અંતિમ
+સિક્વન્ટના પૂર્વાંગમાં
+કોઈ !!{formula}s નથી.
+અર્થાત્,
+$ \fCenter \lexists[x][!B(x)],
+!B(t_1), \dots, !B(t_n)$
+એ~$\pi$નો મધ્ય-સિક્વન્ટ છે.
+વધુમાં, તેની ઉપર પરિમાણક-અનુમાનો
+ન હોવાથી ઉપરના બધા સિક્વન્ટમાં
+$\lexists[x][!B(x)]$ હોય છે,
+પણ તે સક્રિય કે મુખ્ય નથી.
+તેથી તેને~$\pi_1$ !!{proof}માંથી
+કાઢી શકાય છે અને
+$\fCenter !B(t_1), \dots, !B(t_n)$ની
+!!a{proof} મળે છે.
+પછી~$\RightR{\lor}$ના
+$n-1$ ઉપયોગોથી
+હર્બ્રાન્ડ વિકલ્પ
+$\Sequent !B(t_1) \lor \dots \lor !B(t_n)$ની
+!!a{proof} મળે છે.
+
+મુશ્કેલી એ છે કે
+$\Sequent \lexists[x][!B(x)]$ની
+કટ-મુક્ત !!{proof}માં પણ
+બધાં~\RightR{\lexists}
+અનુમાનો એક જ અંતિમ જૂથમાં
+હોય એમ ધારવું ચાલે નહીં.
+તેમની વચ્ચે એવા અનુમાનો
+હોઈ શકે જેમાં કોઈ~$!B(t_i)$
+મુખ્ય હોય. તેથી મધ્ય-સિક્વન્ટ
+પ્રમેય જોઈએ.
+
+\begin{thm}[મધ્ય-સિક્વન્ટ પ્રમેય]\ollabel{thm:midsequent}
+જો $\Gamma \Sequent \Delta$ની
+\Log{G3c}-!!{proof}~$\pi$ હોય
+અને~$\Gamma$ તથા~$\Delta$નાં
+બધાં !!{formula}s પરિમાણક-અગ્ર
+સ્વરૂપનાં હોય, તો એવી
+!!a{proof}~$\pi'$ છે જેમાં
+$\Pi \Sequent \Lambda$
+સિક્વન્ટ છે અને તેની નીચેના
+બધાં અનુમાનો પરિમાણકનાં,
+ઉપરનાં બધાં વિધાનાત્મક છે.
+\end{thm}
+
+\begin{proof}
+  ~$\pi$માંના પરિમાણક-અનુમાનનો
+  \emph{ક્રમ} એટલે તેની નીચેના
+  વિધાનાત્મક અનુમાનોની સંખ્યા,
+  અને~$\pi$નો ક્રમ~$o(\pi)$ એટલે
+  તેનાં બધાં પરિમાણક-અનુમાનોના
+  ક્રમોનો સરવાળો, એમ વ્યાખ્યાયિત કરો.
+  જો $o(\pi) = 0$, તો કોઈ
+  પરિમાણક-અનુમાનની નીચે
+  વિધાનાત્મક અનુમાન નથી,
+  અને કામ પૂરું છે:
+  પરિમાણક-અનુમાનો હોય તો
+  બધાં એક-આધારવિધાનવાળાં હોવાથી
+  સૌથી ઉપરનું એક પરિમાણક-અનુમાન
+  છે; તેનું આધારવિધાન
+  મધ્ય-સિક્વન્ટ છે.
+  પરિમાણક-અનુમાન જ ન હોય તો
+  અંતિમ સિક્વન્ટ મધ્ય-સિક્વન્ટ લઈએ.
+  \sourcecorrection{OLMD-222}{મૂળ આધારકિસ્સો પરિમાણક-અનુમાન હોય ત્યારે જ સૌથી ઉપરના અનુમાનનું આધારવિધાન બતાવે છે; એકેય પરિમાણક-અનુમાન ન હોય તે કિસ્સામાં અંતિમ સિક્વન્ટ પૂરતું છે.}
+
+  જો $o(\pi) > 0$, તો
+  $>0$ ક્રમનું સૌથી નીચેનું
+  પરિમાણક-અનુમાન પસંદ કરો.
+  તેનો ક્રમ $>0$ હોવાથી
+  તેની નીચે વિધાનાત્મક
+  અનુમાન હોવું જોઈએ.
+  તે સૌથી નીચેનું હોવાથી
+  તેનો નિષ્કર્ષ બીજા
+  પરિમાણક-અનુમાનનું આધારવિધાન
+  હોઈ શકે નહીં; એવું હોય
+  તો એ નીચેના પરિમાણક-અનુમાનની
+  નીચે પણ વિધાનાત્મક અનુમાન
+  હશે. કયું પરિમાણક-અનુમાન
+  અને તેની નીચે કયું વિધાનાત્મક
+  અનુમાન છે તેના (ઘણા)
+  કિસ્સા જુદા પાડીએ.
+  અંતિમ સિક્વન્ટમાં માત્ર
+  પરિમાણક-અગ્ર સૂત્રો હોવાથી
+  પરિમાણક-અનુમાનનું મુખ્ય
+  સૂત્ર પછીના વિધાનાત્મક
+  અનુમાનમાં સક્રિય હોઈ
+  શકે નહીં. નહીં તો
+  તે વિધાનાત્મક અનુમાનના
+  મુખ્ય સૂત્રમાં વિધાનાત્મક
+  સંયોજકના વ્યાપમાં
+  પરિમાણક આવશે.
+  ઉપ-!!{formula} ગુણધર્મથી
+  તે અંતિમ સિક્વન્ટના કોઈ
+  !!a{formula}નું
+  ઉપ-!!{formula} હોવું પડશે.
+  તેથી પરિમાણક-અનુમાનનું
+  મુખ્ય !!{formula} નીચેના
+  વિધાનાત્મક અનુમાનના સંદર્ભનું
+  !!a{element} છે.
+
+  બે ઉદાહરણો જોઈએ:
+
+પહેલાં માનો કે $\RightR{\lforall}$નું
+નિષ્કર્ષ $\LeftR{\lif}$ના જમણા
+આધારવિધાનમાં આવે છે. ત્યારે~$\pi$ની
+સંબંધિત ઉપ-!!{proof}નો અંત
+ઉપ-!!{proof}~$\pi_1$માં થાય છે.
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!C, \Gamma' \fCenter \Delta', !A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$!C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)]$
+\DisplayProof
+\]
+આપણે ધારીએ કે~$\pi$ નિયમિત છે;
+આથી સ્વનિર્ધારક ચલ~$c$,
+$\pi_3$ની બહાર આવતો નથી.
+ખાસ કરીને તે $!B
+\lif !C$માં કે~$\pi_2$માં
+આવતો નથી. હવે સાબિતી~$\pi_1'$
+જુઓ:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c), !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c)$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], \lforall[x][!A(x)]$
+\DisplayProof
+\]
+અહીં~$\pi_2$ના જમણા ભાગમાં
+$!A(c)$ ઉમેરી શિથિલીકરણ
+કરવાથી~$\pi_2'$ મળે છે.
+(આથી કોઈ અનુમાન, ખાસ કરીને
+ક્રમને અસર કરે એવું પરિમાણક-અનુમાન,
+ઉમેરાતું નથી. વળી~$\pi_2$ની
+સ્વનિર્ધારક ચલની કોઈ શરત પણ
+ભંગ થતી નથી, કારણ કે~$!A(c)$માં
+આવતો કોઈ અચળ~$\pi_2$માં
+સ્વનિર્ધારક ચલ તરીકે વપરાતો નથી.)
+$c$ એ~$!B \lif !C$માં
+આવતો ન હોવાથી
+\RightR{\lforall}ની
+સ્વનિર્ધારક ચલની શરત
+હજી પણ પૂરી થાય છે.
+
+હવે સંકોચનના સ્વીકાર્યપણાથી
+$!B \lif !C, \Gamma' \fCenter \Delta',
+\lforall[x][!A(x)]$ની
+!!a{proof}~$\pi_1''$ મળે છે.
+$\lforall[x][!A(x)]$ માટે
+$\RightR{\Contraction}$નું
+સ્વીકાર્યપણું સાબિત કરતી
+સાબિતી અને તેમાં વપરાયેલી
+$\RightR{\lforall}$ની
+ઉલટાવી શકાય તેવી હોવાની
+સાબિતી કોઈ અનુમાનનો ક્રમ
+બદલતી નથી: વધુમાં વધુ
+અનુમાનો દૂર કરે છે.
+આથી~$\pi_1''$માં
+$\pi_1$ કરતાં વધુ
+પરિમાણક-અનુમાનો નથી.
+વળી~$\pi_1''$માં દરેક
+પરિમાણક-અનુમાનની નીચે
+તેનાં~$\pi_1$માંનાં
+અનુરૂપ અનુમાન જેટલાં જ
+વિધાનાત્મક અનુમાનો છે,
+એક અપવાદ સિવાય:
+છેલ્લા \RightR{\lforall}ની
+નીચે~$\pi$માં \LeftR{\lif} હતું;
+તેને~$\pi_1''$માં
+ઉપર ખસેડ્યું છે.
+હવે~$\pi$માં
+$\pi_1$ને બદલે~$\pi_1''$
+મૂકો. મળેલી !!{proof}નો
+ક્રમ ઓછો છે, કારણ કે
+ઓછામાં ઓછો
+$\RightR{\lforall}$ અનુમાનનો
+ક્રમ (ઓછામાં ઓછો)~$1$ ઘટ્યો છે.
+હવે અનુગામી ધારણા લાગુ પડે છે.
+
+પરિમાણક-અનુમાન
+\RightR{\lexists} હોય તે
+કિસ્સા વધુ સહેલા છે, કારણ કે
+સંકોચન જરૂરી નથી અને
+સ્વનિર્ધારક ચલની શરતની
+ચિંતા પણ નથી. દાખલા તરીકે,
+માનો કે~$\RightR{\lexists}$
+પછી~$\RightR{\land}$ આવે છે
+(આ વખતે તેના ડાબા
+આધારવિધાન તરીકે).
+સંબંધિત ઉપ-!!{proof}
+$\pi_1$ આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-223}{મૂળ વૃક્ષમાં આ સિક્વન્ટના \(\Gamma'\) પહેલાં વધારાનું ઉદ્ગારચિહ્ન હતું; અનુમાનના આધારવિધાન અને નિષ્કર્ષ સાથે સુસંગત કરવા તે કાઢ્યું છે.}
+હવે~$\pi$માં $\pi_1$ને
+બદલે~$\pi_1'$ મૂકો:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B \land !C$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+અહીં~$\pi_3$ના જમણા ભાગમાં
+$!A(t)$ ઉમેરી શિથિલીકરણ
+કરવાથી~$\pi_3'$ મળે છે.
+આ શિથિલીકરણમાં~$\pi_3$ના
+દરેક સિક્વન્ટની જમણી બાજુ
+માત્ર~$!A(t)$ ઉમેરાય છે,
+તેથી કોઈ પરિમાણક-અનુમાનનો
+ક્રમ બદલાતો નથી.
+$\pi'$માં પરિમાણક-અનુમાનોના
+ક્રમો~$\pi$ જેવા જ છે;
+માત્ર~\RightR{\land} સાથે
+અદલબદલ કરેલા
+\RightR{\lexists} અનુમાનનો
+ક્રમ~$1$ ઘટ્યો છે.
+હવે અનુગામી ધારણા લાગુ પડે છે.
+\end{proof}
+
+\begin{prob}
+\olref{thm:midsequent}ની
+સાબિતીમાં એ કિસ્સા વર્ણવો
+જ્યાં~\LeftR{\lexists}નું
+નિષ્કર્ષ~\RightR{\lif}ના
+આધારવિધાનમાં આવે છે,
+અને જ્યાં~\LeftR{\lforall}નું
+નિષ્કર્ષ~\LeftR{\lor}ના
+ડાબા આધારવિધાનમાં આવે છે.
+\end{prob}
+
+\begin{proof}[હર્બ્રાન્ડના પ્રમેયની સાબિતી]
+માનો કે~$\pi$નો અંત
+$\Sequent \lexists[x][!A(x)]$માં
+થાય છે.
+\olref{thm:midsequent}થી
+આપણે~$\pi$ને મધ્ય-સિક્વન્ટ~$S$
+ધરાવતી !!a{proof}~$\pi'$માં
+ફેરવી શકીએ છીએ. આ
+મધ્ય-સિક્વન્ટનું સ્વરૂપ
+\[\Sequent
+\lexists[x][!A(x)], !A(t_1), \dots, !A(t_n).\]
+હોવું જોઈએ.
+$S$ની ઉપરનાં બધાં
+અનુમાનો વિધાનાત્મક હોવાથી
+$\lexists[x][!A(x)]$
+$S$ની ઉપરના કોઈ અનુમાનમાં
+મુખ્ય હોઈ શકે નહીં.
+તે પરમાણ્વીય નથી, તેથી
+સ્વયંસિદ્ધમાં પણ મુખ્ય
+હોઈ શકે નહીં.
+વળી~$\lexists[x][!A(x)]$,
+$!A(t_1)$નું યોગ્ય
+ઉપસૂત્ર હોઈ શકે નહીં
+(યાદ રાખો કે~$!A(x)$
+પરિમાણક-રહિત છે), એટલે
+$S$ની ઉપર સક્રિય પણ
+હોઈ શકે નહીં.
+તેથી~$S$માં પૂરી થતી
+ઉપ-!!{proof}માંથી
+$\lexists[x][!A(x)]$
+દૂર કરતાં
+$\Sequent !A(t_1), \dots, !A(t_n)$ની
+સાચી !!{proof} મળે છે.
+તેમાંથી~$n-1$ વાર
+$\RightR{\lor}$ લાગુ કરી
+$\Sequent !A(t_1) \lor \dots \lor !A(t_n)$ની
+!!a{proof} મેળવી શકાય છે.
+\end{proof}
+
+% \begin{prob}
+% Find a Herbrand disjunction of $\lexists[x][\lforall[y][(!A(x) \lif
+% !A(y))]]$ by finding a cut-free !!{proof} of $\Sequent
+% \lexists[x][\lforall[y][(!A(x) \lif !A(y))]]$ and applying the
+% transformation in \olref{thm:midsequent} to find a midsequent (if
+% necessary).
+% \end{prob}
+
+\end{document}

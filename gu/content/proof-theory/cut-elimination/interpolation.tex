@@ -1,0 +1,832 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: interpolation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{itp}
+
+\olsection{માએહારાનું ઉપપ્રમેય અને ક્રેગનું અંતર્વેશન પ્રમેય}
+
+વિલિયમ ક્રેગનું અંતર્વેશન પ્રમેય કહે છે:
+જો $!A \Entails !B$, તો એવું
+!!a{sentence}~$!C$ (\emph{અંતર્વેશક}) છે કે
+$!A \Entails !C$ અને $!C \Entails !B$.
+મહત્ત્વની વાત એ છે કે અંતર્વેશક~$!C$
+એવો પસંદ કરી શકાય કે આ~$!C$માં આવતાં
+બધાં !!{constant}s અને !!{predicate}s
+~$!A$ તથા~$!B$ બંનેમાં આવે.
+(અહીં કોઈ !!{function}s સામેલ નથી એમ ધારીએ છીએ.)
+આ મર્યાદા ન હોય તો~$!A$ અને~$!B$
+પોતે જ સરળતાથી અંતર્વેશક બની જાય.
+
+અંતર્વેશન પ્રમેય શાસ્ત્રીય પ્રથમ-ક્રમ
+તર્ક માટે સાચું છે. તેને શોધાયેલો
+પ્રથમ-ક્રમ તર્કનો ``છેલ્લો મહત્ત્વનો ગુણધર્મ''
+પણ કહેવામાં આવ્યો છે.
+નિદર્શ સિદ્ધાંત અને સ્વયંસંચાલિત
+તર્કવિચારમાં તેના મહત્ત્વના ઉપયોગો છે.
+તેની મૂળ પ્રેરણા અને ઉપયોગ વિજ્ઞાનના
+તત્ત્વજ્ઞાનમાં હતાં: કોઈ સિદ્ધાંતને
+કયા મૂળભૂત ખ્યાલોથી સ્વયંસિદ્ધ કરી શકાય
+કે ન શકાય, તે તપાસવામાં તે મદદ કરે છે.
+તેમાંથી બેથનું વ્યાખ્યેયતા પ્રમેય પણ
+ફલિત થાય છે: સિદ્ધાંત કોઈ ખ્યાલને
+ગૂઢ રીતે વ્યાખ્યાયિત કરી શકે,
+તો સ્પષ્ટ રીતે પણ કરી શકે છે.
+
+ગણિતીય તર્કનાં અનેક પરિણામોની જેમ
+અંતર્વેશન પ્રમેયને નિદર્શ સિદ્ધાંતની
+અને સાબિતી સિદ્ધાંતની, બંને પદ્ધતિથી
+સાબિત કરી શકાય છે.
+સાબિતી-સૈદ્ધાંતિક પદ્ધતિનો લાભ એ છે કે
+તે અંતર્વેશકનું અસ્તિત્વ જ નહીં,
+પરંતુ $!A \Entails !B$ની
+!!a{proof}માંથી તેને ગણતો કલનવિધિ
+પણ આપે છે; દાખલા તરીકે,
+~\Log{G3c}માં
+$!A \Sequent !B$ની !!a{proof}માંથી.
+
+$\Lang L(!A)$ એ~$!A$માંનાં
+!!{constant}s અને !!{predicate}sનો ગણ
+અને
+$\Lang L(\Gamma) = \bigcup \Setabs{\Lang L(!A)}{!A \in
+\Gamma}$ માનો. આ સમગ્ર વિભાગમાં
+!!{function}s વિનાનાં !!{formula}s
+લેવાં છે.
+
+\begin{thm}[ક્રેગનું અંતર્વેશન પ્રમેય]\ollabel{thm:interpolation}
+~$!A$ની !!{language}ને~$\Lang L(!A)$
+અને~$!B$ની ભાષાને~$\Lang L(!B)$ કહો.
+જો $\Log{G3c} \Proves !A \Sequent !B$,
+તો એવી !!a{formula}~$!C$ છે
+જેની !!{language} માટે
+$\Lang L(!C) \subseteq \Lang
+L(!A) \cap \Lang L(!B)$ અને
+$\Log{G3c} \Proves !A \Sequent !C$
+તેમજ
+$\Log{G3c} \Proves !C \Sequent !B$.
+\end{thm}
+
+~\Log{G3c}ની !!{proof}sની રચનાનો
+ઉપયોગ કરવા અંતર્વેશન પ્રમેયનું
+સામાન્યીકરણ સાબિત કરીએ છીએ.
+તે માટે સિક્વન્ટના પૂર્વાંગ અને
+ઉત્તરાંગને બે બે ભાગમાં વહેંચેલા
+વિચારો. $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+\maeh{\Delta_1}{\Delta_2}$ લખીએ ત્યારે
+$\Gamma_1$ અને $\Delta_1$ પહેલા ભાગમાં,
+અને $\Gamma_2$ અને $\Delta_2$
+બીજા ભાગમાં છે. પછી નીચેના ઉપપ્રમેયથી
+અંતર્વેશન પ્રમેય તરત ફલિત થાય છે.
+
+\begin{lem}[માએહારાનું ઉપપ્રમેય]\ollabel{lem:maehara}
+જો $\Log{G3c}
+\Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent \maeh{\Delta_1}{\Delta_2}$,
+તો એવી !!a{formula}~$!C$ છે
+જેની !!{language} માટે
+$\Lang L(!C)
+\subseteq \Lang L(\Gamma_1,
+\Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$
+અને
+$\Log{G3c} \Proves \Gamma_1 \Sequent \Delta_1, !C$
+તથા
+$\Log{G3c} \Proves !C,
+\Gamma_2 \Sequent \Delta_2$.
+\end{lem}
+
+\begin{proof}
+  માનો કે $\pi \Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$.
+  $n=\pheight{\pi}$ પર આગમનથી
+  દાવો સાબિત કરીએ છીએ.
+
+  જો $n=0$, તો
+  $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$
+  સ્વયંસિદ્ધ છે અને કોઈ પરમાણ્વીય
+  !!{formula}~$!A$ એ
+  $\Gamma_1, \Gamma_2$ તથા
+  $\Delta_1, \Delta_2$ બંનેમાં આવે છે.
+  ડાબે~$!A$ પહેલા કે બીજા ભાગમાં,
+  અને જમણે પહેલા કે બીજા ભાગમાં છે,
+  તેના ચાર કિસ્સા છે.
+  \begin{enumerate}
+    \item $!A \in \Gamma_1$ અને $!A \in \Delta_1$.
+    એવું~$!C$ જોઈએ કે
+    $\Gamma_1 \Sequent \Delta_1, !C$ અને
+    $!C, \Gamma_2 \Sequent \Delta_2$
+    બંને !!{provable} હોય.
+    પહેલું તો~$!C$ ગમે તે લઈએ
+    તોય સ્વયંસિદ્ધ છે, કારણ કે~$!A$
+    ડાબે અને જમણે બંને છે.
+    $!C, \Gamma_2 \Sequent \Delta_2$
+    !!{provable} રહે તેની ખાતરી માટે
+    $!C \ident \lfalse$ લેવું પડે.
+    \item $!A \in \Gamma_1$ અને
+    $!A \in \Delta_2$. ત્યારે
+    $\Gamma_1 \Sequent \Delta_1, !A$
+    અને $!A, \Gamma_2 \Sequent \Delta_2$
+    બંને સ્વયંસિદ્ધ છે; તેથી
+    $!C \ident !A$ લઈ શકાય.
+    \item $!A \in \Gamma_2$ અને
+    $!A \in \Delta_1$. ત્યારે
+    $!A, \Gamma_1 \Sequent \Delta_1$
+    અને $\Gamma_2 \Sequent \Delta_2, !A$
+    સ્વયંસિદ્ધ હોય, પરંતુ તેમાં~$!A$
+    ખોટી બાજુએ છે. આથી~$!A$
+    અંતર્વેશક નથી. તેમ છતાં
+    $\RightR{\lnot}$ અને
+    $\LeftR{\lnot}$ વડે
+    $\Gamma_1 \Sequent \Delta_1, \lnot!A$
+    અને $\lnot !A, \Gamma_2 \Sequent \Delta_2$
+    !!{prove} કરી શકાય.
+    \item $!A \in \Gamma_2$ અને
+    $!A \in \Delta_2$. કસરત.
+  \end{enumerate}
+  જો $\lfalse \in \Gamma_1$
+  અથવા $\lfalse \in \Gamma_2$
+  હોવાને કારણે
+  $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$
+  સ્વયંસિદ્ધ હોય, તો એ કિસ્સાઓ
+  પણ કસરત તરીકે છોડીએ છીએ.
+
+  જો $n>0$, તો~$\pi$નો અંત
+  તાર્કિક અનુમાનથી થાય છે.
+  કયો નિયમ વપરાયો અને મુખ્ય સૂત્ર
+  કયા ભાગમાં છે, તેના કિસ્સા
+  જુદા પાડવા પડે.
+  દરેક કિસ્સામાં આગમન-પૂર્વધારણા
+  વાપરી શકીએ: $\pheight{\pi_1} < n$
+  ધરાવતી દરેક !!{proof}~$\pi_1$
+  માટે, ~$\pi_1$ના અંતિમ સિક્વન્ટના
+  બે ભાગ ગમે તે રીતે કર્યા હોય,
+  ઉપપ્રમેય સાચું છે.
+  હવે કેટલાક ચોક્કસ કિસ્સા જોઈએ.
+  \begin{enumerate}
+    \item $\pi$નો અંત~$\RightR{\lnot}$થી
+    થાય છે અને મુખ્ય સૂત્ર~$\lnot !A$ છે.
+    $\lnot !A$ પહેલા કે બીજા ભાગમાં છે
+    તે પ્રમાણે~$\pi$નો અંત બેમાંથી
+    એક રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lnot !A}{\Delta_2}$
+    \DisplayProof
+    \]
+    અથવા
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lnot !A}$
+    \DisplayProof
+    \]
+    ધ્યાન આપો: જો મુખ્ય !!{formula}
+    ~$\lnot !A$ પહેલા ભાગમાં હોય,
+    તો આધારવિધાનમાં સક્રિય
+    !!{formula}~$!A$ પણ પહેલા
+    ભાગમાં મૂક્યું છે. આ પસંદગી
+    આપણી છે. સક્રિય સૂત્ર બીજા
+    ભાગમાં મૂક્યું હોય તોય
+    આગમન-પૂર્વધારણા લાગુ પડે,
+    પરંતુ પછી અંતર્વેશક મળી
+    શકતો નથી (કસરત: અજમાવી જુઓ).
+
+    પહેલાં~$\lnot !A$ પહેલા ભાગમાં
+    હોય તે સ્થિતિ લો.
+    આગમન-પૂર્વધારણાથી~$\pi_1$ના અંતિમ
+    સિક્વન્ટનો અંતર્વેશક, એટલે
+    !!a{formula}~$!C_1$, એવો છે કે નીચેના
+    બંને સિક્વન્ટ
+    \begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{અને} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{સાબિત થઈ શકે છે. આપણને એવી !!a{formula}~$!C$ જોઈએ કે નીચેના બંને સિક્વન્ટ !!{provable} હોય:}
+    \Gamma_1 & \Sequent \Delta_1, \lnot !A, !C &&\text{અને} &
+    !C, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    સ્પષ્ટ રીતે~$!C \ident !C_1$ લઈ શકાય:
+    જમણો સિક્વન્ટ !!{provable} છે
+    એ આગમન-પૂર્વધારણાથી મળે છે,
+    અને ડાબો સિક્વન્ટ
+    આગમન-પૂર્વધારણાથી મળેલા સિક્વન્ટ
+    પર~$\RightR{\lnot}$ લગાવતાં મળે છે.
+    આગમન-પૂર્વધારણા એમ પણ કહે છે કે
+    $\Lang L(!C_1) \subseteq \Lang L(!A, \Gamma_1,
+    \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$.
+    કારણ કે $\Lang L(\lnot !A) = \Lang L(!A)$
+    અને $\Lang L(!C) = \Lang L(!C_1)$,
+    આપણને
+    $\Lang L(!C_1) \subseteq
+    \Lang L(\Gamma_1, \Delta_1, \lnot !A) \cap
+    \Lang L(\Gamma_2, \Delta_2)$ મળે છે.
+
+    બીજા કિસ્સામાં~$\lnot !A$ બીજા
+    ભાગમાં હોવાથી સ્થિતિ થોડી જુદી છે.
+    આધારવિધાનનું સક્રિય !!{formula}
+    પણ બીજા ભાગમાં મૂકીને
+    આગમન-પૂર્વધારણા આના પર લગાવીએ:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{અને} &
+    !C_1, !A, \Gamma_2 & \Sequent \Delta_2
+    \intertext{આ બંને સાબિત થઈ શકે છે. બીજાં સિક્વન્ટ પર ફરી \RightR{\lnot} લગાવતાં આની !!{proof}s મળે છે:}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{અને} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, \lnot !A
+    \end{align*}
+    $!C_1$ અંતર્વેશક હોય ત્યારે
+    આપણને !!{provable} જોઈએ એવા
+    બરાબર આ જ સિક્વન્ટ છે;
+    ફરી~$!C \ident !C_1$ લઈએ.
+    અગાઉની જેમ
+    $\Lang L(!C_1) \subseteq
+    \Lang L(\Gamma_1, \Delta_1) \cap
+    \Lang L(\Gamma_2, \Delta_2, \lnot !A)$.
+    \item $\pi$નો અંત~$\RightR{\lif}$થી
+    થાય છે અને મુખ્ય
+    !!{formula}~$!A \lif !B$ છે.
+    $!A \lif !B$ પહેલા કે બીજા
+    ભાગમાં છે તે પ્રમાણે બે કિસ્સા છે.
+    !!{proof}~$\pi$નો અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !B}{\Delta_2}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A \lif !B}{\Delta_2}$
+    \DisplayProof
+    \]
+    અથવા
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !B}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A \lif !B}$
+    \DisplayProof
+    \]
+    ફરી, આધારવિધાનનાં સક્રિય
+    !!{formula}sને નિષ્કર્ષના મુખ્ય
+    !!{formula}ના જ ભાગમાં મૂક્યાં છે.
+    પહેલા કિસ્સામાં આગમન-પૂર્વધારણાથી
+    આની !!{proof}s મળે છે:
+    \begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !B, !C_1 &&\text{અને} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{ડાબો સિક્વન્ટ \RightR{\lif}નું યોગ્ય આધારવિધાન છે. તેથી નીચેના સિક્વન્ટ !!{provable} છે:}
+    \Gamma_1 & \Sequent \Delta_1, !A \lif !B, !C_1 &&\text{અને} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    આથી~$!C_1$ એ~$\pi$ના અંતિમ
+    સિક્વન્ટનો પણ અંતર્વેશક છે;
+    ફરી~$!C \ident !C_1$ લઈ શકાય.
+    
+    બીજો કિસ્સો એ જ રીતે થાય છે.
+    \item $\pi$નો અંત~$\LeftR{\lif}$થી
+    થાય છે અને મુખ્ય !!{formula}
+    ~$!A \lif !B$ છે.
+    જો $!A \lif !B$ પહેલા ભાગમાં હોય,
+    તો !!{proof}~$\pi$નો અંત આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A}{\Delta_2}$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\maeh{!B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \BinaryInf$\maeh{!A \lif !B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \DisplayProof
+    \]
+    આગમન-પૂર્વધારણા ચાર
+    !!{provable} સિક્વન્ટ આપે છે:
+    ડાબા આધારવિધાનના અંતર્વેશક~$!C_1$
+    માટે બે અને બીજા આધારવિધાનના
+    અંતર્વેશક~$!C_2$ માટે બે:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !A, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2 && \text{(2)}\\
+    !B, \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    શિથિલીકરણ વડે (1)ના જમણે~$!C_2$
+    અને (3)ના જમણે~$!C_1$ ઉમેરીએ,
+    તો સિક્વન્ટ (1) અને (3)
+    ~\LeftR{\lif}નાં આધારવિધાન બને:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !A, !C_1, !C_2$
+    \AxiomC{}
+    \Deduce$!B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \DisplayProof
+    \]
+    ~$\RightR{\lor}$ લગાવતાં સિક્વન્ટ મળે:
+    \[
+    !A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1 \lor !C_2
+    \]
+    આથી આ કિસ્સામાં
+    $!C_1 \lor !C_2$ અંતર્વેશક હોઈ શકે.
+    ખરેખર, બાકી સિક્વન્ટ (2) અને~(4)
+    વડે બીજું જરૂરી સિક્વન્ટ
+    !!{prove} કરી શકાય:
+    \[
+    \AxiomC{}
+    \Deduce$!C_1, \Gamma_2 \fCenter \Delta_2$
+    \AxiomC{}
+    \Deduce$!C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lor}}
+    \BinaryInf$!C_1 \lor !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    $!C_1 \lor !C_2$ યોગ્ય ભાષામાં છે
+    તે ચકાસવાનું રહે છે.
+    આગમન-પૂર્વધારણાથી મળે છે કે
+    \begin{align*}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A) \cap \Lang L(\Gamma_2, \Delta_2) &\text{અને}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(!B, \Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{કારણ કે}
+    \Lang L(!A) & \subseteq \Lang L(!A \lif !B) &\text{અને}\\
+    \Lang L(!B) & \subseteq \Lang L(!A \lif !B)
+    \intertext{તેથી બંને માટે}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2) &\text{અને}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{અને તેથી $\Lang L (!C_1 \lor !C_2) = {}$}
+    \Lang L(!C_1) \cup \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2),
+    \end{align*}
+    જે જરૂરી હતું તે જ છે.
+
+    જો~$!A \lif !B$ બીજા ભાગમાં હોય,
+    તો સ્થિતિ જુદી છે, પણ દલીલ સમાન છે.
+    આગમન-પૂર્વધારણા ફરી ચાર
+    !!{provable} સિક્વન્ટ આપે છે:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, !A && \text{(2)}\\
+    \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, !B, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    હવે સિક્વન્ટ (2) અને (4),
+    શિથિલીકરણથી ઉમેરેલાં કેટલાંક
+    !!{formula}s સાથે,
+    ~\LeftR{\lif}નાં આધારવિધાન બને:
+    \[
+    \AxiomC{}
+    \Deduce$!C_1, !C_2, \Gamma_2 \fCenter \Delta_2, !A$
+    \AxiomC{}
+    \Deduce$!B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    આ વખતે પણ~$!C_1$ અને~$!C_2$માંથી
+    બનેલું એક જ !!{formula} ધરાવતો
+    સિક્વન્ટ જોઈએ, પણ તે પૂર્વાંગમાં
+    જોઈએ (કારણ કે હવે બીજો ભાગ છે).
+    ~$\LeftR{\land}$ લગાવતાં કામ થાય છે;
+    $!C \ident (!C_1 \land !C_2)$
+    અંતર્વેશક લેવો જોઈએ.
+    બાકી સિક્વન્ટ (1) અને (3)
+    વડે બીજા ભાગને અનુરૂપ સિક્વન્ટ
+    !!{prove} કરી શકાય:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_1$
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_2$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1 \fCenter \Delta_1, !C_1 \land !C_2$
+    \DisplayProof
+    \]
+    અગાઉની જેમ
+    $\Lang L(!C_1 \land !C_2) \subseteq \Lang
+    L(\Gamma_1, \Delta_1) \cap
+    \Lang L(\Gamma_2, \Delta_2, !A \lif !B)$.
+
+    \item $\pi$નો અંત~$\RightR{\lforall}$થી
+    થાય છે અને મુખ્ય !!{formula}
+    ~$\lforall[x][!A(x)]$ છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+    \maeh{\Delta_1, !A(c)}{\Delta_2}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lforall[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    અથવા
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A(c)}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lforall[x][!A(x)]}$
+    \DisplayProof
+    \]
+    પહેલા કિસ્સામાં આગમન-પૂર્વધારણાથી
+    $\Gamma_1 \Sequent \Delta_1, !A(c), !C_1$
+    અને $!C_1, \Gamma_2 \Sequent \Delta_2$ની
+    !!{proof}s મળે છે. પહેલા સિક્વન્ટ પર
+    $\RightR{\lforall}$ લગાવતાં
+    $\Gamma_1 \Sequent \Delta_1,
+    \lforall[x][!A(x)], !C_1$ મળે છે.
+    (સ્વચલ-શરત પૂરી છે, કારણ કે~$\pi$ના
+    અંતિમ \RightR{\lforall}માં તે
+    પહેલેથી પૂરી હતી.)
+    તેથી
+    $\Lang L(!C_1) \subseteq
+    \Lang L(\Gamma_1, \Delta_1, \lforall[x][!A(x)])
+    \cap \Lang L(\Gamma_2, \Delta_2)$
+    હોય તો~$!C_1$ અંતર્વેશક છે.
+    આગમન-પૂર્વધારણા
+    $\Lang L(!C_1) \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A(c))
+    \cap \Lang L(\Gamma_2, \Delta_2)$ આપે છે.
+    એટલે~$c$ અંગે ચિંતા છે:
+    શું~$c$ એ~$!C_1$માં આવી શકે?
+    ના. જો~$c$ એ~$!C_1$માં આવે,
+    તો $c \in \Lang L(\Gamma_1, \Delta_1, !A(c))$
+    (જે સાચું છે) અને
+    $c \in \Lang L(\Gamma_2, \Delta_2)$
+    બંને થશે. પરંતુ ત્યારે~$c$
+    એ~$\pi$ના $\RightR{\lforall}$
+    અનુમાનના નિષ્કર્ષમાં આવશે,
+    જે સ્વચલ-શરતનો ભંગ કરે છે.
+    
+    બીજો કિસ્સો સમાન છે.
+
+    \item $\pi$નો અંત~$\RightR{\lexists}$થી
+    થાય છે અને મુખ્ય
+    !!{formula}~$\lexists[x][!A(x)]$ છે.
+    ફરી બે કિસ્સા છે.
+    $\lexists[x][!A(x)]$ પહેલા ભાગમાં
+    હોય તે કિસ્સો જોઈએ;
+    બીજો કસરત તરીકે છોડીએ છીએ.
+
+    પહેલા કિસ્સામાં~$\pi$નો અંત
+    આ રીતે થાય છે:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)], !A(t)}{\Delta_2}$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    આગમન-પૂર્વધારણાથી
+    $\Gamma_1 \Sequent
+    \Delta_1, \lexists[x][!A(x)], !A(t), !C_1$
+    અને $!C_1, \Gamma_2 \Sequent \Delta_2$ની
+    !!{proof}s મળે છે.
+    પહેલા સિક્વન્ટ પર
+    $\RightR{\lexists}$ લગાવતાં
+    $\Gamma_1 \Sequent \Delta_1,
+    \lexists[x][!A(x)], !C_1$ મળે છે.
+    તેથી
+    $\Lang L(!C_1) \subseteq
+    \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)])
+    \cap \Lang L(\Gamma_2, \Delta_2)$
+    હોય તો~$!C_1$ ફરી અંતર્વેશક છે.
+    અહીં આગમન-પૂર્વધારણાથી
+    $\Lang L(!C_1) \subseteq
+    \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)], !A(t))
+    \cap \Lang L(\Gamma_2, \Delta_2)$ મળે છે.
+    યાદ કરો કે !!{function}s નથી.
+    પદ~$t$ ચલ હોઈ શકે; એ
+    ભાષામાં નવું અતાર્કિક ચિહ્ન ઉમેરતું નથી,
+    એટલે એ કિસ્સામાં અંતર્વેશક સીધો ચાલે.
+    અચલના કિસ્સામાં તે
+    !!a{constant} છે, એટલે
+    $t \ident b$.
+    \sourcecorrection{OLMD-206}{મૂળ લખાણમાં !!{function}s ન હોવાથી $t$ માત્ર અચલ છે એવો દાવો છે; ચલ પણ પદ છે, પરંતુ તે અંતર્વેશકની અતાર્કિક શબ્દાવલી વધારતું નથી. નીચેની અચલ-વિભાગની દલીલ યથાવત્ છે.}
+    જો $b \notin \Lang L(!C_1)$
+    અથવા
+    $b \in \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)]) \cap
+    \Lang L(\Gamma_2, \Delta_2)$,
+    તો ચિંતા નથી:~$!C_1$ને
+    અંતર્વેશક લઈ શકાય.
+    પરંતુ જો
+    $b \in \Lang L(!C_1)$ અને
+    $b \notin \Lang
+    L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)])
+    \cap \Lang L(\Gamma_2, \Delta_2)$ હોય તો?
+    પહેલાં~$!C_1$માં~$b$ના
+    દરેક દૃષ્ટાંતને !!a{variable}~$y$થી
+    બદલી
+    $!C_1 \ident \Subst{!C_1'}{b}{y}$
+    લખી શકાય, જ્યાં~$!C_1'$માં~$b$
+    આવતો નથી. વધુમાં, કાં તો
+    $b \notin
+    \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)])$
+    અથવા
+    $b \notin \Lang L(\Gamma_2, \Delta_2)$.
+    અનુક્રમે
+    $!C \ident \lforall[y][!C_1'(y)]$
+    અથવા
+    $!C \ident \lexists[y][!C_1'(y)]$
+    લઈ શકાય. પહેલા કિસ્સામાં:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter \Delta_1, \lexists[x][!A(x)], !C_1'(b)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lforall[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    અને
+    \[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    ઉપરના સિક્વન્ટની !!{proof}s
+    આગમન-પૂર્વધારણાથી મળે છે
+    (બીજામાં પૂર્વાંગમાં
+    $\lforall[y][!C_1'(y)]$
+    ઉમેરવા શિથિલીકરણની સ્વીકાર્યતા
+    વાપરીએ છીએ).
+    પહેલી !!{proof}માં
+    \RightR{\lforall}ની સ્વચલ-શરત
+    પૂરી થાય છે: કારણ કે
+    $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)])$ અને
+    $!C_1'$ની વ્યાખ્યા એવી છે કે
+    તેમાં~$b$ નથી.
+    
+    બીજા કિસ્સામાં આગમન-પૂર્વધારણા
+    અને~$\lexists[y][!C_1'(y)]$
+    ઉમેરતા શિથિલીકરણની સ્વીકાર્યતા વડે:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    અને
+    \[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lexists}}
+    \UnaryInf$\lexists[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    બીજી !!{proof}માં
+    \LeftR{\lexists}ની સ્વચલ-શરત
+    પૂરી થાય છે, કારણ કે
+    $b \notin \Lang L(\Gamma_2, \Delta_2)$
+    અને~$!C_1'$ની વ્યાખ્યા એવી છે
+    કે તેમાં~$b$ નથી.
+  \end{enumerate}
+  બીજા કિસ્સા સમાન છે;
+  તેમને કસરત તરીકે છોડીએ છીએ.
+\end{proof}
+
+\begin{prob}
+માનો કે~$\lnand$ સંયોજક માટે
+આ નિયમો હોય:
+\[
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$\Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\lnand}}
+\BinaryInf$!A \lnand !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\quad
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnand}}
+\UnaryInf$\Gamma \fCenter \Delta, !A \lnand !B$
+\DisplayProof
+\]
+\olref{lem:maehara}ની સાબિતીમાં
+જ્યાં~$\pi$નો અંત આમાંથી કોઈ
+નિયમથી થાય છે તે કિસ્સા કરીને
+માએહારાનું ઉપપ્રમેય હજી સાચું છે
+એ બતાવો.
+\end{prob}
+
+માએહારાનું ઉપપ્રમેય મળ્યું છે;
+હવે તે વડે ક્રેગનું અંતર્વેશન
+પ્રમેય સાબિત કરીએ.
+
+\begin{proof}[\olref{thm:interpolation}ની સાબિતી]
+  માનો કે $!A \Sequent !B$
+  !!{provable} છે.
+  $\maeh{!A}{\ } \Sequent \maeh{\ }{!B}$
+  પર \olref{lem:maehara} લગાવતાં
+  અંતર્વેશક~$!C$ મળે છે.
+  આપણને
+  $\Proves !A \Sequent !C$ અને
+  $\Proves !C \Sequent !B$ મળે છે.
+\end{proof}
+
+માનો કે~$\Gamma$ એ~$n$-સ્થાની
+વિધેય~$R$ ધરાવતી
+!!a{language}~$\Lang L$નો
+સિદ્ધાંત (!!{sentence}sનો ગણ) છે.
+~$\Gamma$ એ~$R$ને
+\emph{ગૂઢ રીતે વ્યાખ્યાયિત કરે છે}
+ત્યારે અને માત્ર ત્યારે જ જ્યારે
+\begin{align*}
+\Gamma, \Gamma'
+& \Entails \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff
+R'(x_1, \dots, x_n))]],
+\intertext{અહીં $\Gamma'$ એ $\Gamma$માં $R$ના બધા દૃષ્ટાંતોને $R' \notin \Lang L$થી બદલીને મળ્યું છે. $\Gamma$ એ $R$ને \emph{સ્પષ્ટ રીતે વ્યાખ્યાયિત કરે છે} ત્યારે અને માત્ર ત્યારે જ જ્યારે $R$ ન ધરાવતું એવું $!A(x_1, \dots, x_n)$ છે કે}
+\Gamma &\Entails
+\lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1,
+\dots, x_n))]].
+\end{align*}
+સ્પષ્ટ છે કે જો~$\Gamma$ એ~$R$ને
+સ્પષ્ટ રીતે વ્યાખ્યાયિત કરે,
+તો ગૂઢ રીતે પણ કરે છે.
+~$R$ માટે વ્યસ્ત દિશા તરત સ્પષ્ટ નથી,
+પણ તે પણ સાચી છે:
+
+\begin{lem}[બેથનું વ્યાખ્યેયતા પ્રમેય]
+  જો~$\Gamma$ એ~$R$ને ગૂઢ રીતે
+  વ્યાખ્યાયિત કરે, તો સ્પષ્ટ
+  રીતે પણ વ્યાખ્યાયિત કરે છે.
+\end{lem}
+
+\begin{proof}
+  માનો કે~$\Gamma$ એ~$R$ને ગૂઢ રીતે
+  વ્યાખ્યાયિત કરે છે.
+  ઉપર મુજબ~$R'$ અને~$\Gamma'$
+  લો તથા
+  $\Lang L' = \Lang L(\Gamma') =
+  \Lang L \setminus \{R\}
+  \cup \{R'\}$.
+  પૂર્વધારણાથી મળે છે:
+  \begin{align*}
+    \Gamma, \Gamma' & 
+    \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) 
+    \liff R'(x_1, \dots, x_n))]]
+  \intertext{$c_1$, \dots,~$c_n$ એ $\Gamma$માં ન આવતાં !!{constant}s હો. ઉલટાવી શકવાના ઉપપ્રમેયથી મળે છે:}
+    \Gamma, \Gamma', R(c_1,\dots,c_n) & \Sequent  R'(c_1, \dots, c_n)
+  \intertext{માએહારાનું ઉપપ્રમેય આના પર લગાવો:}
+    \maeh{\Gamma, R(c_1,\dots,c_n)}{\Gamma'} & \Sequent
+      \maeh{\ }{R'(c_1, \dots, c_n)}
+  \intertext{ત્યારે એવું $!A \ident !A(x_1, \dots, x_n)$ મળે છે કે}
+    \Gamma, R(c_1,\dots,c_n) & \Sequent !A(c_1, \dots, c_n) \\
+    !A(c_1, \dots, c_n), \Gamma' & \Sequent R'(c_1, \dots, c_n)
+  \intertext{આ બંનેની !!{proof}s છે. માએહારાના ઉપપ્રમેય મુજબ $\Lang L(!A) \subseteq \Lang L(\Gamma) \setminus \{R\}$; એટલે $!A$માં $R$ નથી. બીજા સિક્વન્ટની !!{proof}માં $R'$ને સર્વત્ર $R$થી બદલો; ત્યારે આની !!a{proof} મળે છે:}
+    !A(c_1, \dots, c_n), \Gamma & \Sequent R(c_1, \dots, c_n)
+  \end{align*}
+  \sourcecorrection{OLMD-207}{મૂળમાં અંતર્વેશકની ભાષા સામાન્ય ભાષાના બરાબર છે અને અપરિભાષિત $L_1,L_2$ વાપરે છે; ઉપપ્રમેય માત્ર સમાવેશ આપે છે, જે અહીં પૂરતો છે.}
+  બંને દિશાના અનુસરણો માટે
+  \RightR{\lif}, પછી દ્વિમુખી
+  સંબંધની રજૂઆત અને
+  \RightR{\lforall} લગાવી
+  આની !!a{proof} મેળવો:
+  \sourcecorrection{OLMD-208}{મૂળમાં માત્ર અનુસરણ-જમણો અને સર્વમાન્યક-જમણો નિયમ લખેલા છે; બે દિશા ભેગી કરીને દ્વિમુખી સંબંધ બનાવવાનું મધ્યવર્તી પગલું પણ જરૂરી છે.}
+  \[
+    \Gamma \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1, \dots, x_n))]].
+  \]
+  આ બતાવે છે કે
+  $!A(x_1, \dots, x_n)$
+  એ~$\Gamma$માં~$R$ને
+  સ્પષ્ટ રીતે વ્યાખ્યાયિત કરે છે.
+  \sourcecorrection{OLMD-209}{મૂળ અંતિમ વાક્યમાં $!R$ લખાયું છે, જ્યારે $R$ અહીં વ્યાખ્યાયિત થતું વિધેયચિહ્ન છે.}
+\end{proof}
+
+અંતર્વેશનને સમકક્ષ ત્રીજું પરિણામ
+(જેને પણ માએહારાના ઉપપ્રમેયથી
+સાબિત કરી શકાય) આ છે:
+જો બે સુસંગત સિદ્ધાંતો~$\Gamma_1$
+અને~$\Gamma_2$માં તેમના સામાન્ય
+ભાષાનો પૂર્ણ સિદ્ધાંત~$\Gamma$
+સમાયેલો હોય, એટલે
+$\Lang L(\Gamma) =
+\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$,
+તો $\Gamma_1 \cup \Gamma_2$
+સુસંગત છે.
+\sourcecorrection{OLMD-210}{મૂળમાં $\Lang L(\Gamma)$ને માત્ર સામાન્ય ભાષાનો ઉપગણ કહે છે; આગળની પૂર્ણતાની દલીલ દરેક સામાન્ય-ભાષાના વાક્ય પર ચાલે છે, તેથી અહીં ભાષાઓની સમાનતા જરૂરી છે.}
+
+યાદ કરો: પૂર્ણ સિદ્ધાંત એવો છે કે તેની
+ભાષાના દરેક !!{sentence}~$!A$ માટે
+કાં તો $\Gamma \Proves !A$ અથવા
+$\Gamma \Proves \lnot !A$.
+કારણ કે~$\Gamma_1$ અને~$\Gamma_2$
+એ~$\Gamma$ના સુસંગત વિસ્તારો છે,
+$\Gamma$ પણ સુસંગત છે.
+એથી જો~$!A$ એ
+$\Lang L(\Gamma_1) \cap
+\Lang L(\Gamma_2)$ની
+!!a{sentence} હોય, તો
+$\Gamma_1 \Entails !A$ અને
+$\Gamma_2 \Entails \lnot !A$
+બંને હોઈ શકે નહીં.
+વિરોધ માટે માનો કે એવું~$!A$ છે.
+$\Gamma_1 \Entails !A$ છે;
+આથી પૂર્ણતા મુજબ
+$\Gamma \Entails !A$ જ હોવું જોઈએ.
+\sourcecorrection{OLMD-211}{મૂળમાં $\Gamma_1\Entails !A$ પરથી સીધું $\Gamma\Entails !A$ કાઢ્યું છે; નાનું સિદ્ધાંત મોટાના બધા પરિણામો આપતું નથી. પૂર્ણતા અને $\Gamma_1$ની સુસંગતતા વડે જ આ નિષ્કર્ષ મળે છે.}
+નહીં તો~$\Gamma$ની પૂર્ણતાથી
+$\Gamma \Entails \lnot !A$,
+અને $\Gamma \subseteq \Gamma_1$
+હોવાથી
+$\Gamma_1 \Entails \lnot !A$ પણ,
+જે~$\Gamma_1$ને અસુસંગત બનાવે.
+તેથી $\Gamma \Entails !A$;
+અને $\Gamma \subseteq \Gamma_2$
+હોવાથી
+$\Gamma_2 \Entails !A$.
+પણ પૂર્વધારણા મુજબ
+$\Gamma_2 \Entails \lnot !A$ પણ છે,
+જે~$\Gamma_2$ની સુસંગતતા સામે છે.
+\sourcecorrection{OLMD-212}{મૂળ અંતિમ સૂત્રમાં $\Gamma\Entails/\lnot !A$ લખ્યું છે; વિરોધ ખરેખર $\Gamma_2$માં $!A$ અને $\lnot !A$ બંને ફલિત થવાથી મળે છે.}
+
+સાબિતી માટે એટલું જ જરૂરી છે કે
+સામાન્ય
+!!{language}~$\Lang L(\Gamma_1)
+\cap \Lang L(\Gamma_2)$માં
+એવું કોઈ !!a{sentence}~$!A$ ન હોય
+જેના માટે
+$\Gamma_1 \Entails !A$ અને
+$\Gamma_2 \Entails \lnot !A$.
+હવે માએહારાના ઉપપ્રમેય વડે
+સાબિતી-સૈદ્ધાંતિક સાબિતી આપીએ.
+
+\begin{thm}[રૉબિન્સનનું સંયુક્ત સુસંગતતા પ્રમેય]
+માનો કે~$\Gamma_1$ અને~$\Gamma_2$
+સુસંગત સિદ્ધાંતો છે, અને
+!!{language}
+$\Lang L(\Gamma_1) \cap
+\Lang L(\Gamma_2)$માં એવું
+કોઈ~$!A$ નથી કે
+$\Gamma_1 \Entails !A$ અને
+$\Gamma_2 \Entails \lnot !A$.
+તો~$\Gamma_1 \cup \Gamma_2$
+સુસંગત છે.
+\end{thm}
+
+\begin{proof}
+  વિરોધ માટે માનો કે
+  $\Gamma_1 \cup \Gamma_2$
+  અસુસંગત છે. ત્યારે
+  $\Gamma_1, \Gamma_2 \Sequent \ $
+  સિક્વન્ટની !!a{proof} છે.
+  $\maeh{\Gamma_1}{\Gamma_2}
+  \Sequent \maeh{\ }{\ }$
+  પર માએહારાનું ઉપપ્રમેય
+  લગાવતાં
+  !!{language}~$\Lang L(\Gamma_1)
+  \cap \Lang L(\Gamma_2)$માં
+  એવી !!a{sentence}~$!A$ મળે છે કે
+  $\Proves \Gamma_1 \Sequent !A$
+  અને
+  $\Proves !A, \Gamma_2 \Sequent \quad$.
+  બીજા સિક્વન્ટથી
+  $\Proves \Gamma_2 \Sequent \lnot !A$
+  મળે છે. પરંતુ એવું કોઈ
+  !!{sentence} નથી એમ ધારેલું છે.
+\end{proof}
+
+ઉપર સિદ્ધાંતો~$\Gamma$,
+$\Gamma_1$ અને~$\Gamma_2$
+સાન્ત છે એવું ગર્ભિત રીતે
+ધાર્યું છે. સઘનતાથી પરિણામો
+અનંત સિદ્ધાંતો માટે પણ સાચાં છે.
+
+\end{document}

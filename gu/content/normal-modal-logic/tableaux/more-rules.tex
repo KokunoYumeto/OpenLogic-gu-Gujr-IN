@@ -1,0 +1,203 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: more-rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{mru}
+
+\olsection{અન્ય સુલભતા-સંબંધો માટેના નિયમો}
+
+વિશિષ્ટ સુલભતા-સંબંધોથી નિર્ધારિત તર્કપદ્ધતિઓ માટે
+\olref{tab:more-rules}ના વધારાના નિયમો લઈએ છીએ.
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}\def\fCenter{}
+    \iftag{notprvBox,notprvDiamond}
+          {\begin{tabular}{|c|}}
+          {\begin{tabular}{|c|c|}}
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[\sigma]}
+      \RightLabel{T$\Box$}
+      \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{&}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\False}{\Diamond !A}[\sigma]}
+      \RightLabel{T$\Diamond$}
+      \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+      \DisplayProof}{}
+    \\[1ex]
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[\sigma]}
+      \RightLabel{D$\Box$}
+      \UnaryInfC{\sFmla{\True}{\Diamond!A}[\sigma]}
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{&}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\False}{\Diamond !A}[\sigma]}
+      \RightLabel{D$\Diamond$}
+      \UnaryInfC{\sFmla{\False}{\Box!A}[\sigma]}
+      \DisplayProof}{}
+    \\[1ex]
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[\sigma.n]}
+      \RightLabel{B$\Box$}
+      \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{&}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\False}{\Diamond !A}[\sigma.n]}
+      \RightLabel{B$\Diamond$}
+      \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+      \DisplayProof}{}
+    \\[1ex]
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[\sigma]}
+      \RightLabel{4$\Box$}
+      \UnaryInfC{\sFmla{\True}{\Box!A}[\sigma.n]}
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{&}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\False}{\Diamond !A}[\sigma]}
+      \RightLabel{4$\Diamond$}
+      \UnaryInfC{\sFmla{\False}{\Diamond!A}[\sigma.n]}
+      \DisplayProof}{}
+    \\
+    \iftag{notprvBox,notprvDiamond}
+         {$\sigma.n$ વપરાયેલો છે}
+         {$\sigma.n$ વપરાયેલો છે & $\sigma.n$ વપરાયેલો છે}
+    \\[1ex]
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[\sigma.n]}
+      \RightLabel{4r$\Box$}
+      \UnaryInfC{\sFmla{\True}{\Box!A}[\sigma]}
+      \DisplayProof}{}
+    \iftag{notprvBox,notprvDiamond}{}{&}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\False}{\Diamond !A}[\sigma.n]}
+      \RightLabel{4r$\Diamond$}
+      \UnaryInfC{\sFmla{\False}{\Diamond!A}[\sigma]}
+      \DisplayProof}{}
+    \\[1ex]
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{વધારાના મોડલ નિયમો.}
+  \ollabel{tab:more-rules}
+\end{table}
+
+આ નિયમો ઉમેરવાથી \olref{tab:logics-rules}માં આપેલી
+તર્કપદ્ધતિઓ માટે યથાર્થ અને પૂર્ણ એવી પ્રણાલીઓ મળે છે.
+
+\begin{table}
+  \begin{center}
+    \begin{tabular}{lll}
+      \hline
+      તર્કપદ્ધતિ & $R$નો ગુણધર્મ & નિયમો\\
+      \hline
+      $\Log{T} = \Log{KT}$ & સ્વવાચક &
+      \iftag{prvBox}{T$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{T$\Diamond$}{}
+      \\ \hline
+      $\Log{D} = \Log{KD}$ & સિરિયલ &
+      \iftag{prvBox}{D$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{D$\Diamond$}{}
+      \\ \hline
+      $\Log{K4}$ & પરંપરિત &
+      \iftag{prvBox}{4$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{4$\Diamond$}{}
+      \\ \hline
+      $\Log{B} = \Log{KTB}$ & સ્વવાચક, &
+      \iftag{prvBox}{T$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{T$\Diamond$}{}\\
+      & સંમિત &
+      \iftag{prvBox}{B$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{B$\Diamond$}{}
+      \\ \hline
+      $\Log{S4} = \Log{KT4}$ & સ્વવાચક, &
+      \iftag{prvBox}{T$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{T$\Diamond$}{},\\
+      & પરંપરિત &
+      \iftag{prvBox}{4$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{4$\Diamond$}{}
+      \\ \hline
+      $\Log{S5} = \Log{KT4B}$ & સ્વવાચક, &
+      \iftag{prvBox}{T$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{T$\Diamond$}{},\\
+      & પરંપરિત, &
+      \iftag{prvBox}{4$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{4$\Diamond$}{},\\
+      &  યુક્લિડિયન &
+      \iftag{prvBox}{4r$\Box$}{}%
+      \iftag{notprvBox,notprvDiamond}{}{, }%
+      \iftag{prvDiamond}{4r$\Diamond$}{}
+      \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{વિવિધ મોડલ તર્કપદ્ધતિઓ માટેના !!^{tableau} નિયમો.}
+  \ollabel{tab:logics-rules}
+\end{table}
+
+
+\begin{ex}
+  $\Log{S5} \Proves \Ax{5}$નો દાવો સાચો છે; નીચેનું બંધ ટેબ્લો
+  $\Box!A \lif \Box\Diamond!A$ બતાવે છે.
+  \sourcecorrection{OLMD-060}{મૂળમાં બીજા સૂત્રને જ \Ax{5} તરીકે
+  ઓળખાવ્યું છે. પરંતુ \Ax{5}નું સૂત્ર
+  $\Diamond!A \lif \Box\Diamond!A$ છે; પ્રદર્શિત વૃક્ષ
+  $\Box!A \lif \Box\Diamond!A$ સાબિત કરે છે. તેથી બંને દાવા
+  અલગ કરીને વૃક્ષનો ખરેખર નિષ્કર્ષ સ્પષ્ટ કર્યો છે.}
+  \begin{oltableau}
+    [\pFmla{\False}{\Box\formula{A} \lif \Box\Diamond \formula{A}}{1},
+      just = \TAss
+      [\pFmla{\True}{\Box \formula{A}}{1}, just = {\TRule{\False}{\lif}[1]}
+        [\pFmla{\False}{\Box\Diamond \formula{A}}{1},
+          just = {\TRule{\False}{\lif}[1]}
+          [\pFmla{\False}{\Diamond \formula{A}}{1.1},
+            just = {\TRule{\False}{\Box}[3]}
+            [\pFmla{\False}{\Diamond \formula{A}}{1},
+              just = {4r$\Diamond$ 4}
+              [\pFmla{\False}{\formula{A}}{1.1},
+                just = {\TRule{\False}{\Diamond}[5]}
+                [\pFmla{\True}{\formula{A}}{1.1},
+                  just = {\TRule{\True}{\Box}[2]}, close]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+\end{ex}
+
+\begin{prob}
+નીચેના દાવા બતાવતાં બંધ !!{tableau}s આપો:
+  \begin{enumerate}
+  \item $\Log{KT5} \Proves \Ax{B}$;
+  \item $\Log{KT5} \Proves \Ax{4}$;
+  \item $\Log{KDB4} \Proves \Ax{T}$;
+  \item $\Log{KB4} \Proves \Ax{5}$;
+  \item $\Log{KB5} \Proves \Ax{4}$;
+  \item $\Log{KT} \Proves \Ax{D}$.
+  \end{enumerate}
+\end{prob}
+
+\end{document}

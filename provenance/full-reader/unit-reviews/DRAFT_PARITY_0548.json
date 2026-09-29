@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0548",
+  "checked_at_utc": "2026-09-28T00:39:35.682279+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0548 introduction to transfinite ordinals; state-only draft",
+  "report": {
+    "unit_id": "OLP-0548",
+    "source_path": "content/set-theory/ordinals/introduction.tex",
+    "source_sha256": "9538b3e7fbf0ee81a67a6cf2cb46524cc37de36875009504088390d21e5df86e",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-introduction.tex",
+    "draft_sha256": "d70b876059d2ce33c66c4b20a050dacb5ff19f7125d436624d3d3fe9665839a6",
+    "aligned_blocks": 8,
+    "linguistic_blocks": 3,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 138,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\LEXICAL_CONSULTATION_044_0547.json",
+        "sha256": "1216550acbd6cb6501ecfd96b0900a130233b79bcd373875eac03ad70686369c",
+        "terms": [
+          "ક્રમવાચક (સંખ્યા)",
+          "અનંતાતીત"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-infinity-044.tex",
+        "sha256": "2dd0ea1ef1d9d86e8530e412787068ec4b6f8fa77955846f9d43757bf07a2981",
+        "terms": [
+          "તબક્કાઓ અનંતતા સુધી પહોંચે છે"
+        ]
+      },
+      {
+        "path": "private-state\\work\\gu-set-theory-stage-successor-044.tex",
+        "sha256": "c5b610cae7356f658e68cbf69597f7db7c60b1586a54ff7a1ef4a4aa5ec0810b",
+        "terms": [
+          "તબક્કાઓ આગળ વધતા રહે છે"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "Infinite-th is rendered as the first infinite stage, consistent with the source's explicit first-infinite-stage phrase in the same paragraph.",
+      "No existence or uniqueness theorem for every ordinal is added to this motivational introduction.",
+      "The lexical ordinal entry does not establish the mathematical transfinite concept."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0632",
+  "checked_at_utc": "2026-09-28T15:41:13.220619+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0632 Ernst Zermelo biography, axiom of choice and set theory; state-only draft",
+  "report": {
+    "unit_id": "OLP-0632",
+    "source_path": "content/history/biographies/ernst-zermelo.tex",
+    "source_sha256": "2bf8bef1ebdfcadf3ae701be0416db71d1a24786269cec3b8e41a767f8499a41",
+    "draft_path": "private-state\\work\\batch044_draft\\ernst-zermelo.tex",
+    "draft_sha256": "46342ad79f25e9fe740611255b931437c8c20fdb38f0d9de0d5ea4701c1f007f",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 347,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\sets-functions-relations\\functions\\inverses.tex",
+        "sha256": "d782d6872d682641ec8ccd156efcfce26b78dc81d2ce0155297cb0e17c22de5c",
+        "terms": [
+          "પસંદગીની સ્વયંસિદ્ધિ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\choice-wellorderingproblem.tex",
+        "sha256": "7b4f2088cb139fe6b6b8e10dbd117f6b6305a9dad9f9b2c17e238170a11ffc38",
+        "terms": [
+          "ઝર્મેલોએ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\replacement-finiteaxiomatizability.tex",
+        "sha256": "00290ad655105d493466e41aa04b412016b35faeecfed76d567d2ffccc1029a3",
+        "terms": [
+          "સ્વયંસિદ્ધીકરણ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "Investigations in\n  the Calculus of Variations",
+        "count": 1,
+        "reason": "Exact English proper title of the dissertation in the frozen source."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "zermelo-ernst",
+        "count": 1,
+        "reason": "Frozen portrait asset key; visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

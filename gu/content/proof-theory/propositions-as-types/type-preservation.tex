@@ -1,0 +1,131 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: type-preservation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tpr}
+
+\olsection{પ્રકારનું સંરક્ષણ}
+
+વિચારેલા ઘટાડા અને ક્રમચય-રૂપાંતરો
+\Log{tN2i} તથા \Log{tN3i} તંત્રો માટે સીધા પણ વ્યાખ્યાયિત કરી શકાય.
+\Log{tN3i} તંત્ર સંદર્ભ~$\Gamma$ની સાપેક્ષે
+$\lambd$-પદ~$N$નો પ્રકાર એવું !!{formula}~$!A$ ગણે છે,
+જે માટે $\Gamma \Sequent N : !A$ની
+!!a{proof} \Log{tN3i}માં હોય.
+$\lambd$-પદોના $\beta$-ઘટાડાના નિયમો
+!!{proof}sના ઘટાડા અને ક્રમચય-રૂપાંતરોને બરાબર અનુરૂપ છે.
+આ હકીકતનું એક મહત્ત્વનું પરિણામ છે:
+સંદર્ભ~$\Gamma$ની સાપેક્ષે $\lambd$-પદનો પ્રકાર
+$\beta$-રૂપાંતર પછી એ જ રહે છે.
+આ ગુણધર્મને \emph{પ્રકારનું સંરક્ષણ} કહે છે.
+
+\begin{prop}
+$N$નો પ્રકાર $\Gamma$ની સાપેક્ષે~$!A$ હોય
+અને $N \redone N'$ હોય,
+તો $N'$નો પ્રકાર~$\Gamma$ની સાપેક્ષે~$!A$ છે.
+\end{prop}
+
+\begin{proof}
+  $N$ અને $\Gamma \Sequent N : !A$ની
+  !!{proof}s~$\delta$ની ઊંચાઈ પર આગમનથી
+  આ સરળતાથી સ્થાપી શકાય:
+  $M$ એ~$N$નું ઉપપદ હોય, તો $\delta$માં
+  $\Gamma' \Sequent M : !B$થી પૂરી થતી
+  ઉપ-!!{proof}~$\delta_1$ છે.
+  $M$ સંકોચ્ય પદ હોય, તો~$\delta_1$ પર રૂપાંતર લાગુ પડે છે.
+  $\delta_1$ પર ઘટાડો લગાવીને
+  $\Gamma' \Sequent M' : !B$ની !!a{proof}~$\delta_1'$ મળે છે.
+  \Log{tN3i}નાં રૂપાંતરો તપાસવાથી
+  $M'$ એ~$M$ના સંકોચનનું પરિણામ છે તે દેખાય છે.
+  $\delta$માં $\delta_1$ને બદલે $\delta_1'$ મૂકવાથી
+  $\Gamma \Sequent N' : !A$ની !!a{proof}~$\delta'$ મળે છે;
+  અહીં $N$માં ઉપપદ~$M$ને બદલે~$M'$ મૂકતાં $N'$ મળે છે.
+
+  દાખલા તરીકે~\Intro{\land} પછી
+  \Elim{\land} આવે તે માટેનું ઘટાડા-રૂપાંતર વિચારીએ:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_1 : !B_1$
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_2 : !B_2$
+  \RightLabel{\Intro{\land}}
+  \BinaryInf$\Gamma \fCenter \pair{N_1}{N_2} : !B_1 \land !B_2$
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInf$\Gamma \fCenter \proj{i}{\pair{N_1}{N_2}} : !B_i$
+  \DisplayProof
+  \quad\redone\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_i : !B_i$
+  \DisplayProof
+  \]
+  જમણી તરફની !!{proof}, એટલે $\delta_1'$નું સાબિતી-પદ
+  $N_i$ છે તે દેખાય છે.
+  તે બરાબર ડાબી તરફની !!{proof}~($\delta_1$)ના
+  સાબિતી-પદ $\proj{i}{\pair{N_1}{N_2}}$ પર
+  $\beta$-રૂપાંતર લગાવવાનું પરિણામ છે.
+
+  અથવા \Intro{\lif} પછી \Elim{\lif} અનુમાન આવે
+  અને તેના પર ઘટાડા-રૂપાંતર લગાવીએ તે વિચારીએ:
+  \begin{multline*}
+  \bottomAlignProof
+  \AxiomC{$\delta_2$}
+  \Deduce$x: !B_1, \Gamma \fCenter N : !B_2$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter \lambd[\typeof{x}{!B_1}][N] : !B_1 \lif !B_2$
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma \fCenter (\lambd[\typeof{x}{!B_1}][N] M) : !B_2$
+  \DisplayProof
+  \quad\redone\\
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{$\Subst{\delta_2}{\delta_3}{x:!B_1}$}
+  \Deduce$\Gamma \fCenter \Subst{N}{M}{x} : !B_2$
+  \DisplayProof
+  \end{multline*}
+  અહીં પણ જમણી તરફની !!{proof}નું સાબિતી-પદ
+  બરાબર ડાબી તરફની !!{proof}ના સાબિતી-પદ પર
+  $\beta$-ઘટાડો લગાવવાનું પરિણામ છે.
+  અલબત્ત,~$\delta_2$ની ઊંચાઈ પર આગમનથી
+  સાવધાનીપૂર્વક આ તપાસવું પડે:
+  $\delta_2$માં $\Gamma' \Sequent x:!B_1$ સ્વરૂપના બધા
+  સ્વયંસિદ્ધોને બદલે $\Gamma \Sequent M:!B_1$ની
+  !!{proof}~$\delta_3$ મૂકતાં ખરેખર
+  $\Gamma \Sequent \Subst{N}{M}{x} : !B_2$ની
+  !!a{proof} $\Subst{\delta_2}{\delta_3}{x:!B_1}$ મળે છે.
+\end{proof}
+
+!!{proof}s અને $\lambd$-પદો વચ્ચેની નિકટ અનુરૂપતાનું
+બીજું પણ પરિણામ છે.
+$N$ સંદર્ભ~$\Gamma$ની સાપેક્ષે પ્રકાર $!A$નું
+$\lambd$-પદ હોય અને તેમાં સંકોચ્ય પદ~$M$ હોય
+(એટલે તે સામાન્ય સ્વરૂપ ન હોય), તો તેને અનુરૂપ
+$\Gamma \Sequent N : !A$ની \Log{tN3i} સાબિતી~$\delta$માં
+$\Gamma' \Sequent M: !B$થી પૂરી થતી એવી
+ઉપ-!!{proof} હોય છે જેના પર રૂપાંતર લગાવી શકાય.
+$M$ને બદલે તેના સંકોચનનું પરિણામ મૂકવાથી
+$N \redone N'$ હોય, તો~$\delta$ પર
+અનુરૂપ ઘટાડો લગાવવાનું પરિણામ
+$\Gamma \Sequent N' : !A$ની !!a{proof} છે.
+એટલે સામાન્ય સ્વરૂપમાં ન હોય એવું દરેક $\lambd$-પદ
+$\beta$-ઘટાડાથી બીજા પદમાં જાય છે.
+આ ગુણધર્મને \emph{પ્રગતિ} કહે છે.
+
+પ્રગતિ અને પ્રકારનું સંરક્ષણ મળીને ખાતરી આપે છે
+કે $\lambd$-પદોનો $\beta$-ઘટાડો ક્યારેય ``અટકી જતો'' નથી:
+પદ યોગ્ય રીતે પ્રકારિત હોય અને સામાન્ય સ્વરૂપમાં ન હોય,
+તો તે બીજા યોગ્ય રીતે પ્રકારિત પદમાં ઘટે છે
+(અને એ પદનો પ્રકાર એ જ હોય છે).
+
+\end{document}
+

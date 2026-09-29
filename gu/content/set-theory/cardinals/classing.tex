@@ -1,0 +1,226 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{classing}
+\olsection{સાન્ત, \usetoken{S}{enumerable}, \usetoken{S}{nonenumerable}}
+
+ગણાંકોનો પરિચય થયા પછી તેમના જુદા પ્રકારો વિશે થોડું
+વિચારવું યોગ્ય છે; ખાસ કરીને સાન્ત, !!{enumerable}
+અને !!{nonenumerable} ગણાંકો વિશે.
+
+આપણા પહેલા બે પરિણામોથી સાન્ત ગણાંકો બરાબર સાન્ત
+ક્રમવાચક સંખ્યાઓ જ હશે. તેમને આપણે અગાઉ
+\olref[z][infinity-again]{defnomega}માં આપણી
+\emph{પ્રાકૃતિક સંખ્યાઓ} તરીકે વ્યાખ્યાયિત કરી હતી:
+
+\begin{prop}\ollabel{finitecardisoequal}
+ધારો કે $n, m \in \omega$. ત્યારે $n = m$ જો અને માત્ર જો
+$\cardeq{n}{m}$.
+\end{prop}
+
+\begin{proof}
+\emph{ડાબેથી જમણે} સ્પષ્ટ છે. \emph{જમણેથી ડાબે}
+માટે ધારો કે $\cardeq{n}{m}$ છતાં $n \neq m$.
+ત્રિવિભાજનથી કાં તો $n \in m$ અથવા $m \in n$;
+સામાન્યતા ગુમાવ્યા વિના $n \in m$ ધારો.
+ત્યારે $n \subsetneq m$ અને
+!!a{bijection} $f \colon m \to n$ છે, તેથી $m$
+ડેડેકિન્ડ-અનંત છે. આ
+\olref[z][infinity-again]{naturalnumbersarentinfinite}
+સાથે વિરોધાભાસ છે.
+\end{proof}
+
+\begin{cor}\ollabel{naturalsarecardinals}
+જો $n \in \omega$, તો $n$ ગણાંક છે.
+\end{cor}
+
+\begin{proof}
+તરત જ મળે છે.
+\end{proof}
+\noindent
+આમાંથી એ પણ મળે છે કે ગણાંકને ``સાન્ત'' અથવા
+``અનંત'' કહેવાના ઘણા યોગ્ય લાગે એવા ખ્યાલો એકસરખા છે:
+\begin{thm}\ollabel{generalinfinitycharacter}કોઈ પણ ગણ $A$ માટે નીચેની શરતો સમકક્ષ છે:
+\begin{enumerate}
+	\item\ollabel{card:notinomega} $\card{A} \notin \omega$, એટલે કે
+	$\card{A}$ પ્રાકૃતિક સંખ્યા નથી;
+	\sourcecorrection{OLMD-135}{મૂળમાં અહીં ``$A$ પ્રાકૃતિક સંખ્યા નથી'' લખાયું છે, પરંતુ
+	$A$ મનસ્વી ગણ છે અને સાન્ત હોવા છતાં પ્રાકૃતિક સંખ્યા ન હોઈ શકે.
+	શરત $\card{A} \notin \omega$ને સમકક્ષ અર્થમાં
+	``$\card{A}$ પ્રાકૃતિક સંખ્યા નથી'' વાંચવું જોઈએ.}
+	\item\ollabel{card:omegaplus} $\omega \leq \card{A}$;
+	\item\ollabel{card:infinite} $A$ ડેડેકિન્ડ-અનંત છે.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\olref[ord-arithmetic][using-addition]{ordinfinitycharacter},
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight},
+અને \olref{naturalsarecardinals}થી મળે છે.
+\end{proof}
+
+આથી \olref[sfr][][]{part}માં થોડા અનૌપચારિક રીતે
+વાપરેલા કેટલાક ખ્યાલોની નીચેની \emph{વ્યાખ્યા} આપી શકીએ:
+
+\begin{defn}\ollabel{defnfinite}
+$A$ને \emph{સાન્ત} કહીએ જો અને માત્ર જો
+$\card{A}$ પ્રાકૃતિક સંખ્યા હોય, એટલે કે
+$\card{A} \in \omega$. અન્યથા $A$ને
+\emph{અનંત} કહીએ.
+\end{defn}
+\noindent
+પરંતુ નોંધો કે આ વ્યાખ્યા $\ZFC$ની પૃષ્ઠભૂમિમાં
+આપેલી છે. છેવટે દરેક ગણનો ગણાંક હોય તેની ખાતરી
+માટે આપણને સુક્રમિતતા જરૂરી હતી. ખરેખર સુક્રમિતતા
+વિના એવો ગણ હોઈ શકે જે ન તો સાન્ત હોય, ન તો
+ડેડેકિન્ડ-અનંત. આ પ્રકારના પ્રશ્ન પર
+\olref[choice][]{chap}માં ફરી આવીશું. હમણાં
+સુક્રમિતતા વાપરવાનું ચાલુ રાખીએ.
+
+હવે સાન્ત ગણાંકોથી અનંત ગણાંકો તરફ વળીએ.
+પહેલી બે સાદી બાબતો આ છે:
+
+\begin{cor}\ollabel{omegaisacardinal}
+$\omega$ લઘુતમ અનંત ગણાંક છે.
+\end{cor}
+
+\begin{proof}
+$\omega$ ગણાંક છે, કારણ કે $\omega$ ડેડેકિન્ડ-અનંત
+છે અને કોઈ $n \in \omega$ માટે
+$\cardeq{\omega}{n}$ હોય, તો $n$ પણ ડેડેકિન્ડ-અનંત
+થાય; આ \olref[z][infinity-again]{naturalnumbersarentinfinite}
+સાથે વિરોધાભાસ છે. હવે વ્યાખ્યાથી $\omega$
+લઘુતમ અનંત ગણાંક છે.
+\end{proof}
+
+\begin{cor}
+દરેક અનંત ગણાંક સીમા ક્રમવાચક સંખ્યા છે.
+\end{cor}
+
+\begin{proof}
+ધારો કે $\alpha$ અનંત અનુગામી ક્રમવાચક સંખ્યા છે,
+એટલે કોઈ $\beta$ માટે $\alpha = \beta
+\ordplus 1$. $\beta$ પણ અનંત છે: મૂળમાં અહીં
+\olref{finitecardisoequal}નો ઉલ્લેખ છે, પરંતુ
+પૂર્વવર્તી ક્રમવાચક સંખ્યા સાન્ત હોય, તો તેનો
+અનુગામી પણ સાન્ત થાય. તેથી
+\olref[ord-arithmetic][using-addition]{ordinfinitycharacter}
+મુજબ $\cardeq{\beta}{\beta \ordplus 1}$.
+હવે \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}
+મુજબ $\card{\beta} = \card{\beta\ordplus 1} =
+\card{\alpha}$, તેથી $\alpha \neq \card{\alpha}$.
+\sourcecorrection{OLMD-136}{મૂળે $\beta$ અનંત છે તે માટે
+\olref{finitecardisoequal}નો સંદર્ભ આપ્યો છે; તે
+પરિણામ ફક્ત બે સાન્ત ક્રમવાચક સંખ્યાઓની સમકદતાની
+ચર્ચા કરે છે. અહીં જરૂરી કારણ એ છે કે સાન્ત
+$\beta$નો અનુગામી પણ સાન્ત થાય, જે અનંત
+$\alpha$ને વિરોધે છે.}
+\end{proof}
+
+અગાઉ \olref[sfr][siz][enm-alt]{defn:enumerable}થી જ
+આપણે !!{enumerable} અને !!{nonenumerable} અનંત
+ગણોમાં ભેદ પાડ્યો હતો. એ વ્યાખ્યાથી સ્વાભાવિક રીતે
+આ મળે છે:
+
+\begin{prop}
+$A$ એ !!{enumerable} હોય જો અને માત્ર જો
+$\card{A} \leq \omega$, અને $A$ એ
+!!{nonenumerable} હોય જો અને માત્ર જો
+$\omega < \card{A}$.
+\end{prop}
+
+\begin{proof}
+ત્રિવિભાજનથી બંને દાવા સમકક્ષ છે; તેથી
+$A$ એ !!{enumerable} હોય જો અને માત્ર જો
+$\card{A} \leq \omega$ તે સાબિત કરવું પૂરતું છે.
+\emph{જમણેથી ડાબે}: $\card{A} \leq \omega$ હોય, તો
+\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}
+અને \olref{omegaisacardinal} મુજબ
+$\cardle{A}{\omega}$.
+\emph{ડાબેથી જમણે}: ધારો કે $A$ એ
+!!{enumerable} છે; તો
+\olref[sfr][siz][enm-alt]{defn:enumerable} મુજબ
+ત્રણ સંભવિત કિસ્સા છે:
+\begin{enumerate}
+	\item જો $A = \emptyset$, તો
+	\olref{naturalsarecardinals} અને
+	\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}
+	મુજબ $\card{A} = 0 \in \omega$.
+	\item જો $\cardeq{n}{A}$, તો
+	\olref{naturalsarecardinals} અને
+	\olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}
+	મુજબ $\card{A} = n \in \omega$.
+	\item જો $\cardeq{\omega}{A}$, તો
+	\olref{omegaisacardinal} મુજબ $\card{A} = \omega$.
+\end{enumerate}
+તેથી બધા કિસ્સામાં $\card{A} \leq \omega$.
+\end{proof}
+\noindent
+ખરેખર $\omega$ને ખાસ સ્થાન છે. ગણનીય ક્રમવાચક
+સંખ્યાઓ ઘણી હોવા છતાં:
+
+\begin{cor}
+$\omega$ એકમાત્ર !!{enumerable} અનંત ગણાંક છે.
+\end{cor}
+
+\begin{proof}
+ધારો કે $\cardfont{a}$ એ !!a{enumerable} અનંત ગણાંક
+છે. $\cardfont{a}$ અનંત હોવાથી
+$\omega \leq \cardfont{a}$. $\cardfont{a}$ એ
+!!a{enumerable} ગણાંક હોવાથી
+$\cardfont{a} = \card{\cardfont{a}} \leq \omega$.
+તેથી ત્રિવિભાજનથી $\cardfont{a} = \omega$.
+\end{proof}
+
+અલબત્ત, અનંત ઘણા ગણાંકો છે. તેથી પૂછી શકાય:
+\emph{ગણાંકો કેટલા છે?} આગળનાં પરિણામો બતાવે છે
+કે કદાચ આ પ્રશ્ન ફરી વિચારવો જોઈએ.
+
+\begin{prop}\ollabel{unioncardinalscardinal}
+જો $X$નો દરેક ઘટક ગણાંક હોય, તો $\bigcup X$
+પણ ગણાંક છે.
+\end{prop}
+
+\begin{proof}
+$\bigcup X$ ક્રમવાચક સંખ્યા છે તે તપાસવું સરળ છે.
+ધારો કે $\alpha \in \bigcup X$ ક્રમવાચક સંખ્યા છે;
+તો કોઈ ગણાંક $\cardfont{b}$ માટે
+$\alpha \in \cardfont{b} \in X$. $\cardfont{b}$
+ગણાંક હોવાથી $\cardless{\alpha}{\cardfont{b}}$.
+$\cardfont{b} \subseteq \bigcup X$ હોવાથી
+$\cardle{\cardfont{b}}{\bigcup X}$, તેથી
+$\cardneq{\alpha}{\bigcup X}$. સામાન્યકરણથી
+$\bigcup X$ ગણાંક છે.
+\end{proof}
+
+\begin{thm}\ollabel{lem:NoLargestCardinal}
+સૌથી મોટો ગણાંક નથી.
+\end{thm}
+
+\begin{proof}
+કોઈ પણ ગણાંક $\cardfont{a}$ માટે કૅન્ટરનું પ્રમેય
+(\olref[sfr][siz][car]{thm:cantor}) અને
+\olref[cardinals][cardsasords]{lem:CardinalsExist}
+મુજબ $\cardfont{a} < \card{\Pow{\cardfont{a}}}$.
+\end{proof}
+
+\begin{thm}
+બધા ગણાંકોનો ગણ અસ્તિત્વમાં નથી.
+\end{thm}
+
+\begin{proof}
+વિરોધાભાસ માટે ધારો કે $C = \Setabs{\cardfont{a}}{\cardfont{a} \text{
+is a cardinal}}$. હવે \olref{unioncardinalscardinal}
+મુજબ $\bigcup C$ ગણાંક છે; તેથી
+\olref{lem:NoLargestCardinal} મુજબ કોઈ ગણાંક
+$\cardfont{b} > \bigcup C$ છે. વ્યાખ્યાથી
+$\cardfont{b} \in C$, એટલે
+$\cardfont{b} \subseteq \bigcup{C}$, તેથી
+$\cardfont{b} \leq \bigcup C$; આ વિરોધાભાસ છે.
+\end{proof}
+
+આ પરિણામને રસેલના વિરોધાભાસ અને બુરાલી-ફોર્ટીના
+વિરોધાભાસ બંને સાથે સરખાવો.
+
+\end{document}

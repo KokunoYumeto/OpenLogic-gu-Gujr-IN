@@ -1,0 +1,113 @@
+% Part: normal-modal-logic
+% Chapter: syntax-and-semantics
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{syn}{sub}
+
+\olsection{એકસાથે પ્રતિસ્થાપન}
+
+!!a{formula}~$!A$માં !!a{propositional variable}નાં બધાં આવર્તનોને
+કોઈ બીજા !!{formula}થી બદલીને મળતું પરિણામ એ~$!A$નો
+\emph{દૃષ્ટાંત} છે. પ્રામાણ્ય અને !!{derivability} બંનેની ચર્ચામાં
+!!{formula}sના આવા દૃષ્ટાંતોનો વારંવાર ઉલ્લેખ આવશે. તેથી આ ખ્યાલની
+ચોક્કસ વ્યાખ્યા આપવી ઉપયોગી છે.
+
+\begin{defn}\ollabel{def:subst-inst}
+  ધારો કે $!A$ એ મોડલ !!{formula} છે જેમાંનાં બધાં !!{propositional
+    variable}s $p_1$, \dots, $p_n$ પૈકીનાં છે, અને $!D_1$, \dots,
+  $!D_n$ પણ મોડલ !!{formula}s છે. ત્યારે
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ને
+  $!A$માં દરેક $p_i$ માટે એકસાથે $!D_i$નું પ્રતિસ્થાપન
+  કરવાથી મળતું પરિણામ વ્યાખ્યાયિત કરીએ છીએ. ચોક્કસ રીતે,
+  આ વ્યાખ્યા~$!A$ પર અનુમાન વડે અપાય છે:
+  \begin{enumerate}
+    \tagitem{prvFalse}{\indcase{!A}{\lfalse}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ એ $\lfalse$ છે.}}{}
+    \tagitem{prvTrue}{\indcase{!A}{\ltrue}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ એ $\ltrue$ છે.}}{}
+    \item \indcase{!A}{q}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+        \subst{!D_n}{p_n}}$ એ $q$ છે, જો $i
+      = 1$, \dots,~$n$ માટે $q \not\ident p_i$ હોય.}
+    \item \indcase{!A}{p_i}{$\SSubst{\indfrm}{\subst{!D_1}{p_1},
+        \dots, \subst{!D_n}{p_n}}$ એ $!D_i$ છે.}
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ એ
+        $\lnot \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ છે.}}{}
+    \tagitem{prvAnd}{\indcase{!A}{(!B \land
+        !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ એ
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \land
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\] છે.}}{}
+    \tagitem{prvOr}{\indcase{!A}{(!B \lor
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ એ
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lor
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\] છે.}}{}
+    \tagitem{prvIf}{\indcase{!A}{(!B \lif
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ એ
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \lif
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\] છે.}}{}
+    \tagitem{prvIff}{\indcase{!A}{(!B \liff
+          !C)}{$\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots,
+          \subst{!D_n}{p_n}}$ એ
+        \[(\SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}} \liff
+          \SSubst{!C}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}).\] છે.}}{}
+    \tagitem{prvBox}{\indcase{!A}{\Box !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ એ
+        $\Box
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$ છે}}{}
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}{%
+        $\SSubst{\indfrm}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}$ એ
+        $\Diamond
+        \SSubst{!B}{\subst{!D_1}{p_1}, \dots, \subst{!D_n}{p_n}}.$ છે}}{}
+  \end{enumerate}
+  !!{formula} $\SSubst{!A}{\subst{!D_1}{p_1}, \dots,
+    \subst{!D_n}{p_n}}$ને $!A$નો \emph{પ્રતિસ્થાપન દૃષ્ટાંત}
+  કહે છે.
+\end{defn}
+\sourcecorrection{OLMD-002}{સ્થિર અંગ્રેજી મૂળ
+દ્વિમુખી પ્રેરણના આગમન-કિસ્સાને ભૂલથી
+\texttt{prvIf} ટૅગ આપે છે, જ્યારે તેની સૂત્રરચના
+$!B \liff !C$ છે. મૂળ ભાષાની રચના-વ્યાખ્યા
+સાથે સુસંગત \texttt{prvIff} ટૅગ અહીં રાખ્યો છે.}
+\sourcecorrection{OLMD-003}{સ્થિર અંગ્રેજી મૂળ
+$\Box !B$ના આગમન-કિસ્સાને અશરતી \texttt{item}
+રૂપે રાખે છે, જ્યારે મૂળ ભાષામાં $\Box$નો પ્રાથમિક
+કારક \texttt{prvBox} ટૅગથી પસંદ થાય છે. તેની સાથે
+સુસંગત રીતે આ કિસ્સો \texttt{prvBox}થી શરતિત કર્યો છે.}
+
+\begin{ex}
+  માનો કે $!A$ એ $p_1 \lif \Box(p_1 \land p_2)$ છે,
+  $!D_1$ એ $\Diamond(p_2 \lif p_3)$ છે અને $!D_2$
+  એ $\lnot\Box p_1$ છે. ત્યારે
+  $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ આ છે:
+  \begin{align*}
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2 \lif p_3) \land \lnot\Box p_1)
+    \intertext{જ્યારે $\SSubst{!A}{\subst{!D_2}{p_1}, \subst{!D_1}{p_2}}$ આ છે:}
+    \lnot\Box p_1 &
+    \lif \Box(\lnot\Box p_1 \land \Diamond(p_2 \lif p_3))
+    \intertext{નોંધો કે એકસાથે પ્રતિસ્થાપન સામાન્ય રીતે
+      ક્રમિક પ્રતિસ્થાપન જેવું નથી. દાખલા તરીકે, ઉપરના
+      $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ને
+      $\Subst{(\Subst{!A}{!D_1}{p_1})}{!D_2}{p_2}$ સાથે સરખાવો; તે આ છે:}
+    \Diamond(p_2 \lif p_3) & \Subst{\lif \Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ અર્થાત્,}\\
+    \Diamond(\lnot\Box p_1 \lif p_3) &
+    \lif \Box(\Diamond(\lnot\Box p_1
+    \lif p_3) \land \lnot\Box p_1)\\
+    \intertext{અને $\Subst{(\Subst{!A}{!D_2}{p_2})}{!D_1}{p_1}$ સાથે પણ સરખાવો:}
+    p_1 & \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ અર્થાત્,}\\
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2
+    \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).
+  \end{align*}
+\end{ex}
+
+\end{document}

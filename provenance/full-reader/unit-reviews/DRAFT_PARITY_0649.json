@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0649",
+  "checked_at_utc": "2026-09-28T18:12:40.338315+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0649 Intuitionistic propositions as sets of worlds; state-only draft",
+  "report": {
+    "unit_id": "OLP-0649",
+    "source_path": "content/intuitionistic-logic/semantics/propositions.tex",
+    "source_sha256": "20c8335bd58196ed260e7376435aa13c0b073441a29a4341305057fa56f7012a",
+    "draft_path": "private-state\\work\\batch044_draft\\propositions.tex",
+    "draft_sha256": "81a5000f51774fa155b7da46412378712d036d70aa433932e5bd717083917fec",
+    "aligned_blocks": 11,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 16,
+    "target_math_spans_after_corrections": 16,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-185",
+      "OLMD-186"
+    ],
+    "source_detector_ascii_tokens": 38,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$\\Prop{M}{!A} \\colon \\Frm\n  \\to \\Pow{W}$",
+        "$\\Prop{M}{\\cdot} \\colon \\Frm\n  \\to \\Pow{W}$"
+      ],
+      [
+        "$\\mModel{M}{!A}[w]$",
+        "$\\mSat{M}{!A}[w]$"
+      ]
+    ],
+    "edition_references": [],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{for every $w'$ such that $Rww'$",
+        "target": "\\text{દરેક $w'$ માટે જે $Rww'$ સંતોષે છે",
+        "count": 2
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

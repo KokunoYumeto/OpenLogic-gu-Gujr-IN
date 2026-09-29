@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0698",
+  "checked_at_utc": "2026-09-28T23:20:56.670745+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0698 Admissibility derivability and height-preserving weakening; state-only draft",
+  "report": {
+    "unit_id": "OLP-0698",
+    "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+    "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+    "draft_path": "private-state\\work\\batch044_draft\\admissible-derivable.tex",
+    "draft_sha256": "9d7fc09c1a6d36bb895db6a81bfb1469d5fb651b5f6f937ee1715690856c3a29",
+    "aligned_blocks": 24,
+    "linguistic_blocks": 19,
+    "source_math_spans_correction_aware": 122,
+    "target_math_spans_after_corrections": 122,
+    "glossary_tokens": 44,
+    "source_correction_notes": [
+      "OLMD-300",
+      "OLMD-301",
+      "OLMD-302",
+      "OLMD-303"
+    ],
+    "source_detector_ascii_tokens": 800,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\UnaryInf$!A \\land !B \\Gamma \\fCenter \\Delta$",
+        "\\UnaryInf$!A \\land !B, \\Gamma \\fCenter \\Delta$"
+      ],
+      [
+        "\\RightLabel{\\LeftR{\\liff}}\n\\BinaryInf$\\Gamma \\fCenter \\Delta, !A \\liff !B$",
+        "\\RightLabel{\\LeftR{\\liff}}\n\\BinaryInf$!A \\liff !B, \\Gamma \\fCenter \\Delta$"
+      ],
+      [
+        "end-!!{formula} of the new !!{proof}",
+        "end-sequent of the new !!{proof}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "શિથિલીકરણ",
+          "સંકોચન",
+          "સિક્વન્ટ કલન"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

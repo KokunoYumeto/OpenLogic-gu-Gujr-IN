@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0604",
+  "checked_at_utc": "2026-09-28T14:09:18.576494+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0604 starting a proof from its goal, assumptions and definitions; state-only draft",
+  "report": {
+    "unit_id": "OLP-0604",
+    "source_path": "content/methods/proofs/starting-proofs.tex",
+    "source_sha256": "84908cb7ef78b1ec62e2ccc41376d5bc039c6e44e1855c386d7b112c69d5ce64",
+    "draft_path": "private-state\\work\\batch044_draft\\proofs-starting-proofs.tex",
+    "draft_sha256": "356543f33a614ac0593d852c6d01c2fc0b36341e17c7a0154b74e94fe8ef4785",
+    "aligned_blocks": 10,
+    "linguistic_blocks": 5,
+    "source_math_spans_correction_aware": 3,
+    "target_math_spans_after_corrections": 3,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 215,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\proofs-introduction.tex",
+        "sha256": "dc70f7cf288048418dd39f075748e30c2b87b33c531a1a1dc7f9018520c3d688",
+        "terms": [
+          "પૂર્વધારણાઓ",
+          "સાબિતી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\methods.tex",
+        "sha256": "100e4087c74e7f5be19ea5c63e733128e5b26889be7e960bc394ce4ea2fa6ebf",
+        "terms": [
+          "સાબિતીઓ કેવી રીતે લખવી"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The conclusion belongs at the end of a proof; announcing it at the start is permitted but using it as an assumption is not.",
+      "The working-page layout is pedagogical: goal at bottom, explicitly flagged assumptions at top, and definitions written out and understood.",
+      "The next section's promise concerns proof setup based on the form of the question/sentence, not a proof already supplied."
+    ],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

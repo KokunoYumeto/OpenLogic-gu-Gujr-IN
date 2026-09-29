@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0622",
+  "checked_at_utc": "2026-09-28T15:16:56.743287+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0622 Georg Cantor biography and four reading references; state-only draft",
+  "report": {
+    "unit_id": "OLP-0622",
+    "source_path": "content/history/biographies/georg-cantor.tex",
+    "source_sha256": "aadadf813251dfc5337fde2b1a4da6dff17e1de0c4b9629e5f541edb030fe9fe",
+    "draft_path": "private-state\\work\\batch044_draft\\biography-georg-cantor.tex",
+    "draft_sha256": "226b77574c4b8fb52f4ec6f7602c65fb5604d2f1ad4d46522886c854612c61a9",
+    "aligned_blocks": 12,
+    "linguistic_blocks": 7,
+    "source_math_spans_correction_aware": 0,
+    "target_math_spans_after_corrections": 0,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 250,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\nat.tex",
+        "sha256": "4e495c69c855f1119dfde847043e3778167382d8bc5962fa94d61815942d7efe",
+        "terms": [
+          "અનંતાતીત સંખ્યાઓને"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [
+      {
+        "literal": "A Brief History of\n  Mathematics",
+        "count": 1,
+        "reason": "Exact English proper title of the cited BBC Radio 4 program, surrounded by Gujarati prose."
+      }
+    ],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "cantor-georg",
+        "count": 1,
+        "reason": "Frozen portrait asset key in the olphoto command; the visible caption is Gujarati."
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

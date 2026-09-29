@@ -1,0 +1,87 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{tru}
+
+\olsection{સત્યતા સહાયક પ્રમેય}
+
+નીચેનું સહાયક પ્રમેય કૅનોનિકલ નિદર્શમાં સત્ય હોવાને
+કયા !!{formula}s અભાજ્ય ગણ~$\Delta$ના !!{element}s
+છે તેની સાથે જોડે છે.
+
+\begin{lem}\ollabel{lem:truth}
+  જો $\Delta$ અભાજ્ય હોય, તો $\mSat{M(\Delta)}{!A}[\sigma]$
+  ત્યારે અને માત્ર ત્યારે જ જ્યારે
+  $\Delta(\sigma) \Proves !A$.
+\end{lem}
+
+\begin{proof}
+  $!A$ પર આગમન કરીએ.
+  \begin{enumerate}
+    \item \indcase{!A}{\lfalse}{$\Delta(\sigma)$ અભાજ્ય છે,
+      તેથી સુસંગત છે અને $\Delta(\sigma) \Proves/ \indfrm$.
+      વ્યાખ્યા મુજબ $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}
+      \item \indcase{!A}{p}{$\mSat{{}}{}$ની વ્યાખ્યા મુજબ
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$ ત્યારે અને માત્ર
+        ત્યારે જ જ્યારે $\sigma \in V(p)$, એટલે
+        $\Delta(\sigma) \Proves \indfrm$.}
+      \item \indcase!{!A}{\lnot !B}{}
+      \item \indcase{!A}{!B \land
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$ ત્યારે અને
+        માત્ર ત્યારે જ જ્યારે
+        $\mSat{M(\Delta)}{!B}[\sigma]$ અને
+        $\mSat{M(\Delta)}{!C}[\sigma]$. આગમનની ધારણાથી
+        $\mSat{M(\Delta)}{!B}[\sigma]$ ત્યારે અને માત્ર
+        ત્યારે જ જ્યારે $\Delta(\sigma) \Proves
+        !B$; $!C$ માટે પણ એ જ રીતે. હવે
+        $\Delta(\sigma) \Proves !B$ અને
+        $\Delta(\sigma) \Proves !C$ ત્યારે અને માત્ર ત્યારે
+        જ જ્યારે $\Delta(\sigma)
+        \Proves \indfrm$.}
+      \item \indcase{!A}{!B \lor
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$ ત્યારે અને
+        માત્ર ત્યારે જ જ્યારે
+        $\mSat{M(\Delta)}{!B}[\sigma]$ અથવા
+        $\mSat{M(\Delta)}{!C}[\sigma]$. આગમનની ધારણાથી
+        આ ત્યારે અને માત્ર ત્યારે જ જ્યારે
+        $\Delta(\sigma) \Proves !B$ અથવા
+        $\Delta(\sigma) \Proves !C$. હવે આ શરત
+        $\Delta(\sigma) \Proves \indfrm$ સાથે સમકક્ષ
+        છે તે બતાવવું છે. ડાબેથી જમણી દિશા સ્પષ્ટ છે.
+        જમણેથી ડાબી દિશા $\Delta(\sigma)$ અભાજ્ય
+        હોવાથી મળે છે.}
+      \item \indcase{!A}{!B \lif !C}{પહેલાં ડાબેથી જમણી
+        દિશાનું પ્રતિપક્ષી વિધાન. ધારો કે
+        $\Delta(\sigma) \Proves/ !B
+        \lif !C$. તો $\Delta(\sigma) \cup \{!B\} \Proves/
+        !C$ પણ છે. કોઈક~$n$ માટે $\tuple{!B, !C}$ એ
+        $\tuple{!B_n, !C_n}$ હોવાથી
+        $\Delta(\sigma.n) = (\Delta(\sigma) \cup
+        \{!B\})^*$, અને $\Delta(\sigma.n) \Proves !B$
+        પરંતુ $\Delta(\sigma.n) \Proves/ !C$. આગમનની
+        ધારણાથી $\mSat{M(\Delta)}{!B}[\sigma.n]$
+        અને $\mSat/{M(\Delta)}{!C}[\sigma.n]$.
+        $R\sigma(\sigma.n)$ હોવાથી આનો અર્થ
+        $\mSat/{M(\Delta)}{\indfrm}[\sigma]$ થાય છે.
+
+        હવે ધારો કે $\Delta(\sigma) \Proves !B \lif !C$
+        અને $R\sigma\sigma'$. $\Delta(\sigma) \subseteq
+        \Delta(\sigma')$ હોવાથી, જો
+        $\Delta(\sigma') \Proves !B$ હોય, તો
+        $\Delta(\sigma') \Proves !C$. બીજા શબ્દોમાં,
+        $R\sigma\sigma'$ ધરાવતા દરેક $\sigma'$ માટે
+        $\Delta(\sigma') \Proves/ !B$ અથવા
+        $\Delta(\sigma') \Proves !C$. આગમનની ધારણાથી
+        $R\sigma\sigma'$ હોય ત્યારે
+        $\mSat/{M(\Delta)}{!B}[\sigma']$ અથવા
+        $\mSat{M(\Delta)}{!C}[\sigma']$;
+        એટલે $\mSat{M(\Delta)}{\indfrm}[\sigma]$.}
+  \end{enumerate}
+\end{proof}
+
+\end{document}

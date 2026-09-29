@@ -1,0 +1,391 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: proof-examples
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{ex}
+
+\olsection{સાબિતીઓનાં ઉદાહરણો}
+
+સિક્વન્ટોની !!{proof}s આપવા
+સામાન્ય રીતે અંતિમ સિક્વન્ટથી ઉપર તરફ કામ કરવું અનુકૂળ છે:
+તેમાંના !!a{formula}ને મુખ્ય !!{formula} તરીકે પસંદ કરી,
+અનુરૂપ નિયમના આધારો સિક્વન્ટની ઉપર લખીએ;
+પછી સ્વયંસિદ્ધો સુધી પહોંચીએ ત્યાં સુધી પ્રક્રિયા દોહરાવીએ.
+\sourcecorrection{OLMD-315}{મૂળ પાછી તરફ સાબિતી-શોધમાં નિષ્કર્ષમાંથી પસંદ કરેલા સૂત્રને સક્રિય કહે છે. નિયમની વ્યાખ્યા મુજબ નિષ્કર્ષનું પસંદ કરેલું સૂત્ર મુખ્ય છે; આધારોમાં તેનાથી મળતાં સૂત્રો સક્રિય છે. અહીં શરૂઆત અને બીજા અનુસરણના પગલામાં મુખ્ય સૂત્ર કહ્યું છે.}
+દાખલા તરીકે આ સિક્વન્ટ સાબિત કરવો છે એમ ધારો:
+\[(!C \land !D) \lif !E \Sequent !C \lif (!D \lif !E)\]
+$!C \lif (!D \lif !E)$ વિચારીએ:
+તે $!A \lif !B$ સ્વરૂપનું છે
+અને સિક્વન્ટની જમણી બાજુ છે.
+આખા સિક્વન્ટને \Log{G1c}ના $\RightR{\lif}$ નિયમ સાથે સરખાવીએ,
+\[\Axiom$ !A, \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lif !B $
+\DisplayProof\]
+તો $\Gamma = \{(!C \land !D) \lif !E\}$,
+$\Delta = \emptyset$, $!A \ident !C$
+અને $!B \ident !D \lif !E$ લેવા જોઈએ તે સૂચવે છે.
+\sourcecorrection{OLMD-316}{મૂળ આ પગલામાં સંદર્ભને નિષ્કર્ષના જમણા સૂત્રથી ભરે છે. દર્શાવેલા સિક્વન્ટનો પૂર્વાંગ તો સંયોજનમાંથી અનુસરણ છે; Gammaમાં એ જ પૂર્વાંગ રાખ્યો છે, જેમ તરત પછીનું વૃક્ષ કરે છે.}
+એટલે સાબિતીનું છેલ્લું અનુમાન આ હોઈ શકે:
+\[\Axiom$ !C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+$!D \lif !E$ને મુખ્ય સૂત્ર ગણીને વિચાર દોહરાવીએ,
+તો આ મળે:
+\[\Axiom$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+હવે $(!C \land !D) \lif !E$ પર ધ્યાન આપવું
+અને \Log{G1c}નો $\LeftR{\lif}$ નિયમ વાપરવો જોઈએ:
+\[\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !A \lif !B, \Gamma \fCenter \Delta$
+\DisplayProof\]
+તેથી આ મળે:
+\[\Axiom$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+સૌથી ઉપરના ડાબા સિક્વન્ટમાં !!{formula} $!C \land !D$ને
+મુખ્ય ગણી $\RightR{\land}$ લગાવીએ, તો આ મળે:
+\[
+\Axiom$!D, !C \fCenter !E, !C$
+\Axiom$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-317}{મૂળના આ વૃક્ષમાં બે આધારવાળા અનુસરણ-ડાબા પગલાનું લેબલ અનુસરણ-જમણું છે. બંને આધાર અને મુખ્ય પૂર્વાંગ પ્રમાણે તેને ડાબું કર્યું છે.}
+અત્યાર સુધી બધું યોગ્ય છે.
+અત્યાર સુધી વાપરેલા નિયમો \Log{G1c} અને~\Log{G3c}માં સમાન હોવાથી
+આ બધું \Log{G3c}માં પણ ચાલે છે.
+આપણે !!a{proof}ના એવા અંશ સુધી પહોંચ્યા છીએ
+જેના દરેક સૌથી ઉપરના સિક્વન્ટમાં ડાબે અને જમણે એ જ !!{formula} છે.
+પરંતુ તેઓ હજી સ્વયંસિદ્ધો નથી.
+
+\Log{G1c}માં $!A \Sequent !A$ સ્વરૂપના સ્વયંસિદ્ધોમાંથી
+સૌથી ઉપરના સિક્વન્ટોની !!{proof}s આપવી પડે.
+શિથિલીકરણના નિયમોથી આ સરળતાથી થઈ શકે.
+દાખલા તરીકે ડાબે સૌથી ઉપરનો સિક્વન્ટ
+$!D, !C \Sequent !E, !C$ આ રીતે !!{prove}d થઈ શકે:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-318}{મૂળ આ નાનાં શિથિલીકરણ-વૃક્ષ પછી તેને દર્શાવતો DisplayProof આદેશ છોડે છે. માત્ર તે આદેશ ઉમેર્યો છે; વૃક્ષનાં સૂત્રો અને નિયમો અચળ છે.}
+આખરે \Log{G1c}માં આ સ્વરૂપની !!a{proof} મળે:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\Axiom$!D \fCenter !D$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !D$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!C, !E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+\sourcecorrection{OLMD-319}{મૂળના જમણા સ્વયંસિદ્ધમાંથી પહેલા શિથિલીકરણના પગલામાં ઉત્તરાંગ બદલીને બીજું સૂત્ર કરે છે. અહીં ઉત્તરાંગનું એ જ $!E$ રાખ્યું છે; શિથિલીકરણ ફક્ત ડાબે $!C$ ઉમેરે છે.}
+આ સાબિતીની સંરચના (ખાસ કરીને ઊંચાઈ)
+!!{formula}s $!C$, $!D$ અને~$!E$ કયા છે તેનાથી સ્વતંત્ર છે.
+ઉપરની !!{proof}માં આ ચિહ્નોની જગ્યાએ
+કોઈ પણ !!{formula}s મૂકી શકાય,
+અને પરિણામ હજી~\Log{G1c}ની !!{proof} હોય.
+\Log{G1c}ની સાબિતી \emph{ઢાંચારૂપ} છે.
+
+\Log{G3c}માં સ્વયંસિદ્ધો
+$!A, \Gamma \Sequent \Delta, !A$ સ્વરૂપના સિક્વન્ટો છે,
+જ્યાં $!A$ આણ્વિક હોવું જોઈએ.
+એટલે $!D, !C \Sequent !E, !C$ એ \Log{G3c}ના
+સ્વયંસિદ્ધ જેવો લાગે છે
+($\Gamma = \{!D\}$; $\Delta = \{!E\}$),
+પરંતુ $!C$ ખરેખર આણ્વિક હોય ત્યારે
+તે આ મેળ ખાતી આવૃત્તિઓથી \emph{ખરેખર} સ્વયંસિદ્ધ છે.
+$!C$, $!D$ અને $!E$ આણ્વિક !!{formula}s હોય,
+તો આપણો સાબિતી-અંશ \Log{G3c}માં સંપૂર્ણ સાબિતી છે.
+\sourcecorrection{OLMD-320}{મૂળ આણ્વિકતાને આ સિક્વન્ટો સ્વયંસિદ્ધ હોવાની આવશ્યક શરત કહે છે. અહીં બતાવેલી મેળ ખાતી આવૃત્તિઓ આણ્વિક હોય તે પૂરતી શરત છે; બીજા આણ્વિક સૂત્રનો બંને બાજુ મેળ અથવા ડાબે અસત્ય હોવાથી પણ સિક્વન્ટ સ્વયંસિદ્ધ હોઈ શકે. તેથી પૂરતી શરત તરીકે કહ્યું છે.}
+
+સખત રીતે જોતાં આપણે
+\[\Log{G3c} \Proves (!C \land !D) \lif !E \fCenter !C \lif (!D \lif
+!E),\]
+બતાવ્યું નથી, છતાં વ્યવહારમાં આપણે આટલું જ કરવાની
+જરૂર છે (અને આટલું જ કરી શકીએ).
+કારણ કે $!A$ પોતે આણ્વિક ન હોય તો પણ
+$!A, \Gamma \Sequent \Delta, !A$ સ્વરૂપનો દરેક સિક્વન્ટ
+\Log{G3c}માં સાબિત થઈ શકે છે.
+$!A$ની ઊંડાઈ~$\depth{!A}$ પર આગમનથી આ બતાવી શકીએ.
+\sourcecorrection{OLMD-321}{મૂળ આ વાક્યના પ્રદર્શનને G1c કહે છે, પરંતુ એ તંત્રની સંપૂર્ણ ઢાંચારૂપ સાબિતી ઉપર આપી ચૂક્યું છે. અહીં હજી પૂર્ણ ન થયેલી વાત G3cમાં અણઆણ્વિક સ્વયંસિદ્ધોના સ્થાને સાબિતીઓ આપવાની છે; તેથી તંત્રનું નામ G3c કર્યું છે.}
+
+\begin{defn}\ollabel{defn:depth}
+!!a{formula}ની \emph{ઊંડાઈ}~$\depth{!A}$ આ રીતે વ્યાખ્યાયિત છે:
+\begin{enumerate}
+  \item $!A$ આણ્વિક હોય, તો $\depth{!A} = 0$.
+  \item $!A \ident \lnot !B$, $!A \ident \lforall[x][!B]$
+  અથવા $!A \ident \lexists[x][!B]$ હોય,
+  તો $\depth{!A} = \depth{!B} + 1$.
+  \item $!A \ident (!B \land !C)$, $(!B \lor !C)$
+  અથવા $(!B \lif !C)$ હોય,
+  તો $\depth{!A} = \max(\depth{!B},\depth{!C}) + 1$.
+\end{enumerate}
+\sourcecorrection{OLMD-322}{મૂળ પરિમાણકનાં બંને કિસ્સામાં અંદરનું સૂત્ર $A$ લખે છે, પરંતુ ઊંડાઈની જમણી બાજુ અસંબંધિત $!B$ છે. બંને અંદરના સૂત્રોને એ જ $!B$ કર્યા છે, જેમ નિષેધના કિસ્સામાં છે.}
+\end{defn}
+
+કોઈ પણ પદ~$t$ માટે $\depth{A(x)} = \depth{A(t)}$
+સાબિત કરવું મુશ્કેલ નથી.
+આપણા માટે મહત્ત્વની વાત એ છે કે વિઘટનના તાર્કિક નિયમોમાં
+મુખ્ય !!{formula}ની ઊંડાઈ તેમાંથી મળતાં સક્રિય
+ઉપ-!!{formula}sની ઊંડાઈ કરતાં મોટી છે.
+\sourcecorrection{OLMD-323}{મૂળ આ ઊંડાઈની કડક અસમાનતા દરેક નિયમ માટે કહે છે. સંકોચન જેવા બંધારણીય નિયમમાં એક જ સૂત્રની ઊંડાઈ બદલાતી નથી; મુખ્ય સૂત્રની નકલ જાળવતા પરિમાણક-નિયમમાં પણ એ નકલની ઊંડાઈ સમાન છે. અહીં ઊંડાઈ ઘટતી હોય તે સાચા વિઘટિત ઉપસૂત્રોની વાત સ્પષ્ટ કરી છે.}
+દાખલા તરીકે:
+\begin{align*}
+\depth{P(x)} = \depth{P(a)} & = 0,\\
+\depth{\lforall[x][P(x)]} & = 1,\\
+\depth{(\lforall[x][P(x)] \lif P(a))} & = \max(1,0) + 1 = 2.
+\end{align*}
+આથી~$\depth{!A}$ પર આગમનથી પરિણામો સાબિત કરી શકીએ,
+જેમ કે આ પરિણામ.
+
+\begin{prop}\ollabel{prop:G1c-axioms}
+કોઈ પણ~$!A$ માટે $!A \Sequent !A$ની $ \Log{G1c}$માં
+એવી !!a{proof} છે જેના બધા સ્વયંસિદ્ધો આણ્વિક છે.
+\end{prop}
+
+\begin{proof}
+  $\depth{!A}$ પર આગમનથી સાબિતી કરીએ.
+  $\depth{!A} = 0$ હોય, તો $!A$ આણ્વિક છે
+  અને $!A \Sequent !A$ પોતે~\Log{G1c}ની
+  જરૂરી સ્વરૂપની !!{proof} છે.
+  $\depth{!A} > 0$ હોય, તો $!A$ ઓછી ઊંડાઈનાં
+  !!{formula}sમાંથી બનેલું છે,
+  દાખલા તરીકે $!A \ident \lnot !B$,
+  $!A \ident (!B \land !C)$
+  અથવા $!A \ident \lforall[x][A(x)]$.
+  આગમન-ધારણા એ છે કે
+  $\depth{!D} < \depth{!A}$ હોય તે બધાં $!D$ માટે
+  આણ્વિક સ્વયંસિદ્ધોમાંથી $\Log{G1c} \Proves !D \Sequent !D$ છે.
+
+  $!A \ident \lnot !B$ હોય, તો $\depth{!B} < \depth{!A}$ છે.
+  આગમન-ધારણાથી \Log{G1c}માં આણ્વિક સ્વયંસિદ્ધોમાંથી
+  $!B \Sequent !B$ની !!a{proof}~$\pi_1$ છે.
+  તેને આ રીતે $ \lnot !B \Sequent \lnot !B$ની !!a{proof}માં વિસ્તારી શકીએ:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B \fCenter !B$
+  \RightLabel{\LeftR{\lnot}}
+  \UnaryInf$\lnot !B, !B \fCenter $
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\lnot !B \fCenter \lnot !B$
+  \DisplayProof
+\]
+
+  $!A \ident (!B \land !C)$ હોય,
+  તો $\depth{!B} < \depth{!A}$ અને $\depth{!C} < \depth{!A}$ છે.
+  આગમન-ધારણાથી \Log{G1c}માં આણ્વિક સ્વયંસિદ્ધોમાંથી
+  $!B \Sequent !B$ અને $!C \Sequent !C$ની
+  !!{proof}s~$\pi_1$ અને~$\pi_2$ છે.
+  તેમને $!B \land !C \Sequent !B \land !C$ની
+  !!a{proof}માં આ રીતે વિસ્તારી શકીએ:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B, \fCenter !B$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C, \fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C\fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!C, \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C, \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$!B \land !C, !B \land !C \fCenter !B \land !C$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B \land !C \fCenter !B \land !C$
+  \DisplayProof
+  \]
+  \sourcecorrection{OLMD-324}{મૂળના છેલ્લાં બે પગલામાં સંયોજન-જમણાનો નિષ્કર્ષ એક ડાબી આવૃત્તિ ખોટી રીતે ગુમાવે છે અને પછી ડાબું સંકોચન જમણું સંયોજન બદલી નાખે છે. પહેલા પગલામાં ડાબે બે સંયોજન રાખ્યાં છે; સંકોચન પછી ડાબે એક સંયોજન અને જમણે એ જ સંયોજન રહે છે.}
+
+  હવે $!A \ident \lforall[x][!B(x)]$ છે એમ ધારો.
+  $\lforall[x][!B(x)]$માં ન આવતો !!a{constant}~$c$ લો.
+  ત્યારે $\depth{!B(c)} = \depth{!B(x)} < \depth{!A}$ છે.
+  આગમન-ધારણાથી \Log{G1c}માં આણ્વિક સ્વયંસિદ્ધોમાંથી
+  $!B(c) \Sequent !B(c)$ની !!a{proof}~$\pi_1$ છે.
+  તેને $\lforall[x][!B(x)] \Sequent \lforall[x][!B(x)]$ની
+  !!a{proof}માં આ રીતે વિસ્તારી શકીએ:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+  \sourcecorrection{OLMD-325}{મૂળ આ પરિચ્છેદના કેટલાક સૂત્રોમાં સામાન્ય $B$ અને કેટલાકમાં સૂત્ર-સ્થાનધારક $!B$ વાપરે છે; વૃક્ષમાં $!B$ છે. ગદ્યની સર્વપરિમાણક-ઓળખ અને દાખલની ઊંડાઈ પણ એ જ $!B$ સાથે સુસંગત કરી છે.}
+
+  બાકીના કિસ્સા સ્વાધ્યાય તરીકે છોડ્યા છે.
+\end{proof}
+
+\begin{prob}
+  $!A \ident (!B \lor !C)$, $!A \ident (!B \lif !C)$
+  અને $!A \ident \lexists[x][B(x)]$ હોય તે કિસ્સા કરીને
+  \olref{prop:G1c-axioms}ની સાબિતી પૂર્ણ કરો.
+\end{prob}
+
+આપણા હેતુ માટે $!A \ident \lnot !B$ના કિસ્સામાં
+આ !!{proof} પણ વાપરી શક્યા હોત:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \fCenter !B$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter !B, \lnot !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B \fCenter \lnot !B$
+\DisplayProof
+\]
+પરંતુ કેટલાંક સિક્વન્ટ તંત્રોમાં આ ન ચાલ્યું હોત.
+અંતઃપ્રજ્ઞાવાદી સિક્વન્ટ કલન \Log{G1i} એ \Log{G1c}ને અનુરૂપ છે;
+તેમાં દરેક સિક્વન્ટની જમણી બાજુ વધુમાં વધુ એક !!{formula}ની મર્યાદા છે.
+$\Delta = \emptyset$ હોય, તો પહેલી !!{proof}
+\Log{G1i}માં પણ !!a{proof} હોય,
+પરંતુ બીજી ન હોય, કારણ કે એક સિક્વન્ટની જમણી બાજુ
+બંને $!B$ અને~$\lnot !B$ છે.
+\sourcecorrection{OLMD-326}{મૂળ અહીં ફરી G1iનો તફાવત માત્ર જમણી બાજુની સંખ્યાની મર્યાદા તરીકે કહે છે. અગાઉના અર્થઘટન-વિભાગમાં નોંધ્યું છે તેમ કેટલાક નિયમોના આધારનું સ્વરૂપ પણ બદલાય છે. અહીં આ મર્યાદા બંને નિષેધ-વૃક્ષો વચ્ચેનો બતાવેલો તફાવત સમજાવે છે.}
+
+\Log{G1c}માં પણ $!A \ident \lforall[x][!B(x)]$
+હોય ત્યારે નિયમોનો બીજો ક્રમ વાપરી ન શક્યા હોત તે નોંધો.
+આ !!a{proof} \emph{નથી}:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$!B(c) \fCenter \lforall[x][!B(x)]$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+કારણ કે~$\RightR{\lforall}$ની આઇગનચલ-શરત તૂટે છે.
+
+\begin{prop}\ollabel{prop:G3c-axioms}
+$!A, \Gamma \Sequent \Delta, !A$ સ્વરૂપનો દરેક સિક્વન્ટ
+($!A$ આણ્વિક હોવું \emph{જરૂરી નથી})
+\Log{G3c}માં સાબિત થઈ શકે છે.
+\end{prop}
+
+\begin{proof}
+સાબિતી \olref{prop:G1c-axioms}ની સાબિતી જેવી છે,
+પરંતુ આગમન-ધારણા વિશે સાવચેતી લેવી જોઈએ.
+$n = \depth{!A} = 0$નો કિસ્સો ફરી સરળ છે.
+$n=0$ હોય, તો $!A$ આણ્વિક છે,
+અને $!A, \Gamma \Sequent \Delta, !A$ એ~\Log{G3c}નું સ્વયંસિદ્ધ છે.
+
+હવે $n>0$ ધારો. ફરી કિસ્સા જુદા પાડીએ.
+આગમન-ધારણા આ છે:
+$\depth{!D} < n$ હોય તે બધાં $!D$ માટે,
+અને બધા $\Pi$ તથા $\Lambda$ માટે,
+$\Log{G3c} \Proves !D, \Pi \Sequent \Lambda, !D$ છે.
+\sourcecorrection{OLMD-327}{મૂળ આ સ્થાનધારકને $D!$ લખે છે; બાકીના સૂત્રો પ્રમાણે તેને $!D$ કર્યો છે.}
+$!A \ident (!B \land !C)$નો કિસ્સો લઈએ.
+આગમન-ધારણા બે વાર વાપરીએ:
+એક વાર $!D = !B$, $\Pi = !C, \Gamma$
+અને $\Lambda = \Delta$ લઈને
+$!B, !C, \Gamma \Sequent \Delta, !B$ની !!a{proof}~$\pi_1$ મેળવીએ;
+બીજી વાર $!D = !C$, $\Pi = !B, \Gamma$
+અને $\Lambda = \Delta$ લઈને
+$!B, !C, \Gamma \Sequent \Delta, !C$ની !!a{proof}~$\pi_2$ મેળવીએ.
+\sourcecorrection{OLMD-328}{મૂળ બીજી આગમન-અરજીમાં ડાબા સંદર્ભ માટે જમણા સંદર્ભનું ચિહ્ન Lambda લખે છે. દર્શાવેલા આધાર અને વૃક્ષ મુજબ અહીં એ જ ડાબો Gamma સંદર્ભ રાખ્યો છે.}
+$!B \land !C, \Gamma \Sequent \Delta, !B \land !C$ની
+!!{proof} આ છે:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta, !B \land !C$
+\DisplayProof
+\]
+
+$!A \ident \lforall[x][!B(x)]$ માટે
+$\lforall[x][!B(x)]$, $\Gamma$ કે~$\Delta$માં
+ન આવતો !!a{constant} પસંદ કરો.
+$!D = !B(c)$, $\Pi = \lforall[x][!B(x)], \Gamma$
+અને $\Lambda = \Delta$ માટે આગમન-ધારણા લગાવો.
+તેથી $!B(c), \lforall[x][!B(x)], \Gamma \Sequent \Delta, !B(c)$ની
+!!a{proof}~$\pi_1$ મળે છે, જેમાંથી આ મેળવીએ:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B(c), \lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\DisplayProof
+\]
+$c$ની પસંદગીથી $\RightR{\lforall}$ની આઇગનચલ-શરત સંતોષાય છે.
+\end{proof}
+
+\begin{prob}
+  $!A \ident (!B \lif !C)$ અને $!A \ident \lexists[x][B(x)]$
+  હોય તે કિસ્સા કરીને \olref{prop:G3c-axioms}ની સાબિતી આગળ વધારો.
+\end{prob}
+
+\end{document}

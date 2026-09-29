@@ -1,0 +1,95 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0647",
+  "checked_at_utc": "2026-09-28T18:08:33.551699+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0647 Legacy combined proof that C-functions are representable in Q; state-only draft",
+  "report": {
+    "unit_id": "OLP-0647",
+    "source_path": "content/incompleteness/representability-in-q/c-representable.tex",
+    "source_sha256": "95d02f4982ae3ce8a01422b06515b4a37aeaedfac49e2f883dcad351def072d0",
+    "draft_path": "private-state\\work\\batch044_draft\\c-representable.tex",
+    "draft_sha256": "f586a4511e3a9033cf4bdfe760ebb31ff4f30f1ae548d7fa184e46c570b62e36",
+    "aligned_blocks": 24,
+    "linguistic_blocks": 20,
+    "source_math_spans_correction_aware": 134,
+    "target_math_spans_after_corrections": 134,
+    "glossary_tokens": 2,
+    "source_correction_notes": [
+      "OLMD-181",
+      "OLMD-182",
+      "OLMD-183",
+      "OLMD-184"
+    ],
+    "source_detector_ascii_tokens": 756,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\lexists[z_0\\dots][\\lexists[z_{k-1}][(",
+        "\\lexists[z_0][\\dots \\lexists[z_{k-1}][("
+      ],
+      [
+        "\\land]]\\\\\n  !A_f(z_0,\\dots,z_{k-1},y)).",
+        "\\land\\\\\n  !A_f(z_0,\\dots,z_{k-1},y))]]."
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "project\\gu\\content\\computability\\recursive-functions\\general-recursive-functions.tex",
+        "sha256": "5038174067a2620203fc60f94cef96e443a582412da23a3f76b733f3911f441b",
+        "terms": [
+          "નિયમિત",
+          "અનિયત મર્યાદા સુધીની શોધ",
+          "પ્રક્ષેપો",
+          "સંયોજન"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\computability\\recursive-functions\\introduction.tex",
+        "sha256": "c30e681e691c687b21c20fb280a031749cb6f5cfd4b89acccac4db0cc4dc7758",
+        "terms": [
+          "સંગણનીય વિધેય"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [
+      {
+        "source": "\\text{from axiom 4}",
+        "target": "\\text{સ્વયંસિદ્ધિ 4થી}",
+        "count": 2
+      },
+      {
+        "source": "\\text{by line 2}",
+        "target": "\\text{બીજી પંક્તિથી}",
+        "count": 1
+      },
+      {
+        "source": "\\text{lines 1 and 3}",
+        "target": "\\text{પહેલી અને ત્રીજી પંક્તિથી}",
+        "count": 1
+      },
+      {
+        "source": "\\text{axiom 5}",
+        "target": "\\text{સ્વયંસિદ્ધિ 5થી}",
+        "count": 1
+      },
+      {
+        "source": "\\text{from the inductive hypothesis}",
+        "target": "\\text{આગમન-પરિકલ્પનાથી}",
+        "count": 1
+      }
+    ],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_eqnarray_displays": 2
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

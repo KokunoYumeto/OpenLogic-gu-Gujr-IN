@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0429",
+  "checked_at_utc": "2026-09-27T11:19:06.306883+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0429 normal modal logic definitions and RK; state-only draft",
+  "report": {
+    "unit_id": "OLP-0429",
+    "source_path": "content/normal-modal-logic/axioms-systems/normal-logics.tex",
+    "source_sha256": "6bcccf354cf8966f674c16ad3c6196a62ebcf8ca9545418d60ef08adf89e3819",
+    "draft_path": "private-state\\work\\batch040_draft\\normal-logics.tex",
+    "draft_sha256": "b0e8ea7b8f5e1e9757f2bf2bfdf3c18887131a3e89bc575370fd0a504b5ca5ae",
+    "aligned_blocks": 20,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 39,
+    "target_math_spans_after_corrections": 39,
+    "glossary_tokens": 13,
+    "source_correction_notes": [
+      "OLMD-023"
+    ],
+    "source_detector_ascii_tokens": 316,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "rk_proof_tree_exact": true,
+    "least_normal_logic_source_scope_repaired": true
+  },
+  "status": "draft_linguistic_math_RK_and_source_scope_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

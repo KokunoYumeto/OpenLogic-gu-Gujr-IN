@@ -1,0 +1,391 @@
+{
+  "schema": "openlogic-gu-contextual-choices/25",
+  "scope": "OLP-0252–0263 draft; exact segment links and attestation limits",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "choices": [
+    {
+      "choice_id": "GU-T225",
+      "english": "Turing machine / model of computation",
+      "gujarati": "ટ્યુરિંગ મશીન / સંગણનનો નિદર્શ",
+      "segment_ids": [
+        "OLP-0252-B004",
+        "OLP-0254-B005",
+        "OLP-0255-B005",
+        "OLP-0256-B004"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "ટ્યુરિંગ મશીન નામનું લિપ્યાંતર અગાઉના સંગણનીયતા વિભાગ સાથે સુસંગત છે. GU-P088 સંગણનનો ઘટક આપે છે; સંપૂર્ણ નિદર્શ-નામને સીધું પ્રમાણ નથી.",
+      "alternatives_considered_gujarati": "ટ્યુરિંગ યંત્ર અગાઉના ગદ્યમાં ક્યાંક છે, પરંતુ આ વિભાગમાં મશીન સતત વપરાય છે.",
+      "uncertainty": "પૂર્ણ તકનીકી નામ માટે સીધું ગુજરાતી પ્રમાણ ખુલ્લું છે.",
+      "precise_review_question_gujarati": "સંગણનનો નિદર્શ ગણિતીય મોડેલ માટે યોગ્ય છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T226",
+      "english": "tape / read-write head / tape symbols",
+      "gujarati": "ટેપ / વાંચન-લેખન હેડ / ટેપનાં પ્રતીકો",
+      "segment_ids": [
+        "OLP-0254-B006",
+        "OLP-0255-B005",
+        "OLP-0255-B007"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P097",
+        "GU-P098",
+        "GU-P099"
+      ],
+      "rationale_gujarati": "GU-P098 ટેપ-વાચકમાં ટેપ ઘટક આપે છે અને GU-P097 પ્રતીક આપે છે. હેડ તથા આખું ટ્યુરિંગ-મશીન માળખું મૂળની વ્યાખ્યાથી નક્કી થાય છે.",
+      "alternatives_considered_gujarati": "વાંચન-લેખન શિર — શક્ય, પરંતુ ટેપની ઉપર ચાલતા ભૌતિક-રૂપકમાં હેડ ઓળખાય છે.",
+      "uncertainty": "હેડ અને ટેપના ચોક્કસ specialist અર્થનું સીધું પ્રમાણ બાકી છે.",
+      "precise_review_question_gujarati": "વાંચન-લેખન હેડ ગુજરાતી શૈક્ષણિક ગદ્યમાં સુગમ છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T227",
+      "english": "machine state / transition function",
+      "gujarati": "અવસ્થા / સંક્રમણ વિધેય",
+      "segment_ids": [
+        "OLP-0254-B006",
+        "OLP-0254-B008",
+        "OLP-0255-B005",
+        "OLP-0255-B007",
+        "OLP-0255-B011",
+        "OLP-0256-B006",
+        "OLP-0257-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P097",
+        "GU-P098",
+        "GU-P099"
+      ],
+      "rationale_gujarati": "GU-P099 સંક્રમણનો ઘટક સીધો આપે છે; દરેક અવસ્થા-પ્રતીક જોડીની આંશિક વિધેય-વ્યાખ્યા અંગ્રેજી અને સૂત્રો નક્કી કરે છે. અવસ્થા માટે આ પાનાં સીધું પ્રમાણ નથી.",
+      "alternatives_considered_gujarati": "સ્થિતિ / પરિવર્તન વિધેય — સ્થિતિ સામાન્ય વર્ણનમાં વપરાય છે, પણ q_i માટે અવસ્થા પસંદ છે.",
+      "uncertainty": "અવસ્થા તથા પૂર્ણ સંક્રમણ વિધેય compound માટે સીધું પ્રમાણ બાકી છે.",
+      "precise_review_question_gujarati": "ટ્યુરિંગ મશીનની state માટે અવસ્થા અને configuration માટે અલગ સંરૂપણ યોગ્ય છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T228",
+      "english": "input / output",
+      "gujarati": "ઇનપુટ / આઉટપુટ",
+      "segment_ids": [
+        "OLP-0254-B006",
+        "OLP-0255-B012",
+        "OLP-0255-B022",
+        "OLP-0255-B023",
+        "OLP-0257-B011",
+        "OLP-0257-B012"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P097",
+        "GU-P098",
+        "GU-P096"
+      ],
+      "rationale_gujarati": "GU-P095 નિવેશ અને GU-P096 ઉત્પાદન/નિર્ગમ આપે છે; અગાઉની ગુજરાતી આવૃત્તિમાં સંગણનના ઇનપુટ/આઉટપુટ માટે ઓળખાતા લોનશબ્દો સતત છે. તપાસેલા પાનાં વૈકલ્પિક શબ્દો દર્શાવે છે, પસંદ કરેલા શબ્દોને પ્રમાણ આપતા નથી.",
+      "alternatives_considered_gujarati": "નિવેશ / નિર્ગમ — સરકારી પરિભાષામાં છે; અહીં સતત વપરાયેલા લોનશબ્દો વાચકને મશીન-સૂત્ર સાથે સીધા જોડે છે.",
+      "uncertainty": "અગાઉના આવૃત્તિ-પ્રયોગ પર આધારિત શૈલી-પસંદગી.",
+      "precise_review_question_gujarati": "ઇનપુટ અને આઉટપુટ યથાવત્ રાખવા કે નિવેશ અને નિર્ગમ અપનાવવા?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T229",
+      "english": "configuration",
+      "gujarati": "સંરૂપણ",
+      "segment_ids": [
+        "OLP-0255-B012",
+        "OLP-0255-B013",
+        "OLP-0255-B014",
+        "OLP-0255-B015",
+        "OLP-0255-B026",
+        "OLP-0257-B005",
+        "OLP-0257-B006",
+        "OLP-0257-B008"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P096",
+        "GU-P098",
+        "GU-P099",
+        "GU-P088",
+        "GU-P097"
+      ],
+      "rationale_gujarati": "અહીં સંરૂપણમાં ટેપની સામગ્રી, મશીનની અવસ્થા અને હેડનું સ્થાન એકસાથે આવે છે; પછીની ઔપચારિક વ્યાખ્યા સુધી આ સમજ સીધી રીતે લખી છે. GU-P077 માત્ર ચોક્કસ ગણિતીય ગદ્યની શૈલી આપે છે.",
+      "alternatives_considered_gujarati": "ગોઠવણી / યંત્રસ્થિતિ — પ્રથમ સામાન્ય છે, બીજું અવસ્થા સાથે ગૂંચવી શકે છે.",
+      "uncertainty": "configuration માટે તપાસેલી પરિભાષામાં સીધું પ્રમાણ નથી.",
+      "precise_review_question_gujarati": "ટેપ, હેડ અને અવસ્થા ત્રણેય ધરાવતી configuration માટે સંરૂપણ યોગ્ય છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T230",
+      "english": "state diagram / machine table",
+      "gujarati": "અવસ્થા-આલેખ / મશીન-કોષ્ટક",
+      "segment_ids": [
+        "OLP-0255-B005",
+        "OLP-0255-B020",
+        "OLP-0255-B021"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P097",
+        "GU-P098"
+      ],
+      "rationale_gujarati": "તીરવાળા આલેખમાં અવસ્થાનાં ખાનાં છે; કોષ્ટકમાં x-અક્ષ પર પ્રતીકો અને y-અક્ષ પર અવસ્થાઓ છે. પૂર્ણ compound માટે GU-P077 સીધું પ્રમાણ નથી, મૂળના ચિત્ર/કોષ્ટક અર્થને નિયંત્રિત કરે છે.",
+      "alternatives_considered_gujarati": "સ્થિતિ-આકૃતિ / યંત્ર-તાલિકા — શક્ય, પરંતુ હાલનાં નામો ભેદ સ્પષ્ટ કરે છે.",
+      "uncertainty": "બંને specialist compounds માટે સીધું પ્રમાણ નથી.",
+      "precise_review_question_gujarati": "અવસ્થા-આલેખ અને મશીન-કોષ્ટકની જોડ વાચકને સમાન વિધેયનાં બે નિરૂપણો જણાવી શકે છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T231",
+      "english": "accept / reject by halting / nonhalting",
+      "gujarati": "થંભીને સ્વીકારવું / ન થંભીને નકારવું",
+      "segment_ids": [
+        "OLP-0255-B013",
+        "OLP-0255-B015",
+        "OLP-0255-B027",
+        "OLP-0255-B029",
+        "OLP-0257-B012"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P098",
+        "GU-P096",
+        "GU-P097"
+      ],
+      "rationale_gujarati": "આ વિભાગમાં સ્વીકાર/નકારનો નિયમ સામાન્ય નિર્ણાયક મશીન કરતાં જુદો છે: સ્વીકાર માટે થંભે છે અને નકાર માટે અનંત ચાલે છે. ગુજરાતી ગદ્યમાં આ નિયમ દરેક પ્રશ્ને સ્પષ્ટ કર્યો છે.",
+      "alternatives_considered_gujarati": "નકાર માટે અલગ અંતિમ અવસ્થા — મૂળમાં આવી શરત નથી.",
+      "uncertainty": "અર્થ મૂળના હાલ્ટિંગ-સંબંધિત નિયમથી સ્પષ્ટ છે; નામનો સ્વતંત્ર સ્ત્રોત નથી.",
+      "precise_review_question_gujarati": "થંભવું એટલે સ્વીકારવું એવા આ સ્થાનિક નિયમને પૂરતું સ્પષ્ટ કર્યું છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T232",
+      "english": "doubler machine",
+      "gujarati": "બમણું કરનાર મશીન",
+      "segment_ids": [
+        "OLP-0255-B022",
+        "OLP-0255-B023",
+        "OLP-0255-B025",
+        "OLP-0255-B026"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P096",
+        "GU-P098"
+      ],
+      "rationale_gujarati": "ઇનપુટના દરેક સ્ટ્રોક માટે બે આઉટપુટ સ્ટ્રોક લખવાની રીતને આ નામ સીધી રીતે સમજાવે છે; સૂત્ર n થી 2n યથાવત્ છે. GU-P077 માત્ર ગદ્યની શૈલી માટે છે.",
+      "alternatives_considered_gujarati": "દ્વિગુણક — ટૂંકો, પરંતુ ક્રિયા કરતાં ગુણક-વિધેયનો અર્થ સૂચવી શકે છે.",
+      "uncertainty": "મશીનનું પૂર્ણ નામ સીધું પ્રમાણિત નથી.",
+      "precise_review_question_gujarati": "બમણું કરનાર મશીન નામ રૂપરેખા અને 2n આઉટપુટ સાથે સ્પષ્ટ છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T233",
+      "english": "initial configuration / concatenation",
+      "gujarati": "પ્રારંભિક સંરૂપણ / અનુક્રમોનું જોડાણ",
+      "segment_ids": [
+        "OLP-0257-B007",
+        "OLP-0257-B008",
+        "OLP-0257-B009"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P097",
+        "GU-P098"
+      ],
+      "rationale_gujarati": "પ્રારંભિક સંરૂપણનું $m=1$ અને છેડાના ચિહ્નની જમણે ઇનપુટ મૂકતું $\\TMendtape \\frown I$ સૂત્ર મુખ્ય આધાર છે. OLTM-001 અને OLTM-002 મૂળના બે ગદ્ય-ભેદ ખુલ્લા દર્શાવે છે; GU-P077 માત્ર ગણિતીય ગદ્યનું પ્રમાણ છે.",
+      "alternatives_considered_gujarati": "પ્રારંભિક ગોઠવણી / સંલગ્નીકરણ — શક્ય, પરંતુ સંરૂપણ સાથે પહેલેથી પસંદ કરેલું જોડાણ રાખ્યું છે.",
+      "uncertainty": "પૂરા specialist compound માટે સીધું પરિભાષાકીય પ્રમાણ નથી.",
+      "precise_review_question_gujarati": "પ્રારંભિક સંરૂપણ અને જોડાણના સ્પષ્ટીકરણથી છેડાના ચિહ્નની જમણી બાજુ તથા m=1 સ્પષ્ટ થાય છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T234",
+      "english": "unary numerical representation / stroke string",
+      "gujarati": "એક-પ્રતીકી નિરૂપણ / સ્ટ્રોકનો અનુક્રમ",
+      "segment_ids": [
+        "OLP-0258-B005",
+        "OLP-0258-B006",
+        "OLP-0258-B022"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P096",
+        "GU-P097",
+        "GU-P098",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "n=0 માટે ખાલી અનુક્રમ અને n>0 માટે બરાબર n સ્ટ્રોકનું મૂળ સૂત્ર આ નિરૂપણ નક્કી કરે છે; GU-P077 ગદ્ય અને GU-P088 સંગણન ઘટક આપે છે, પૂર્ણ નામ નહીં.",
+      "alternatives_considered_gujarati": "એકક નિરૂપણ — ટૂંકું પણ પ્રતીકોના અનુક્રમનું સ્વરૂપ ઓછું સ્પષ્ટ કરે છે.",
+      "uncertainty": "પૂર્ણ specialist નામનું સીધું પ્રમાણ બાકી છે.",
+      "precise_review_question_gujarati": "unary code માટે એક-પ્રતીકી નિરૂપણ શૂન્યના ખાલી અનુક્રમને પૂરતું સ્પષ્ટ કરે છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T235",
+      "english": "total versus partial function computed by a Turing machine",
+      "gujarati": "પૂર્ણ વિધેય / આંશિક વિધેયનું મશીન-સંગણન",
+      "segment_ids": [
+        "OLP-0258-B006",
+        "OLP-0258-B022"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088",
+        "GU-P095",
+        "GU-P096"
+      ],
+      "rationale_gujarati": "આંશિક વિધેય અવ્યાખ્યાયિત હોય ત્યારે મશીન ન થંભે અથવા એક સ્ટ્રોક સમૂહ ન હોય એવું આઉટપુટ આપે છે. આ ઔપચારિક ભેદ મૂળનું વિધાન નિયંત્રિત કરે છે.",
+      "alternatives_considered_gujarati": "દરેક થંભવું સફળ ગણતરી ગણવું — મૂળની બીજી શરતનો ભંગ કરે છે.",
+      "uncertainty": "સંપૂર્ણ સંયુક્ત નામનું સીધું પ્રમાણ નથી.",
+      "precise_review_question_gujarati": "અવ્યાખ્યાયિત મૂલ્ય માટેના બંને વિકલ્પો વાચકને સ્પષ્ટ છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T236",
+      "english": "halting state / reject state",
+      "gujarati": "થંભવાની અવસ્થા / નકારવાની અવસ્થા",
+      "segment_ids": [
+        "OLP-0259-B005",
+        "OLP-0259-B006",
+        "OLP-0259-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P096"
+      ],
+      "rationale_gujarati": "h અને rના આલેખમાં સ્વીકાર/નકારનાં અલગ અંતિમ બિંદુઓ સ્પષ્ટ છે; અગાઉના અવ્યાખ્યાયિત સંક્રમણવાળા થંભવાથી અહીંનો સ્થાનિક નિયમ જુદો છે.",
+      "alternatives_considered_gujarati": "હાલ્ટ સ્થિતિ — ઓળખાય એવું લિપ્યાંતર, પણ થંભવું પહેલેથી સ્થાપિત છે.",
+      "uncertainty": "પૂર્ણ state નામોનું સીધું પરિભાષાકીય પ્રમાણ નથી.",
+      "precise_review_question_gujarati": "થંભવાની અને નકારવાની અવસ્થાઓનો ભેદ સ્પષ્ટ છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T237",
+      "english": "disciplined Turing machine",
+      "gujarati": "શિસ્તબદ્ધ ટ્યુરિંગ મશીન",
+      "segment_ids": [
+        "OLP-0260-B004",
+        "OLP-0260-B005",
+        "OLP-0260-B006",
+        "OLP-0260-B011"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P098",
+        "GU-P097",
+        "GU-P088",
+        "GU-P096"
+      ],
+      "rationale_gujarati": "નિર્ધારિત h, ખાનું 1 પર થંભવું, ખાનું 0નું ચિહ્ન જાળવવું અને ત્યાંથી ડાબે ન જવું---ચારેય ઔપચારિક શરતો સાથે શિસ્તબદ્ધ રૂપક જોડાય છે.",
+      "alternatives_considered_gujarati": "નિયંત્રિત મશીન — સામાન્ય શબ્દ, ચાર ચોક્કસ શરતો ઓછું યાદ અપાવે છે.",
+      "uncertainty": "પૂર્ણ specialist નામનું સીધું પ્રમાણ નથી.",
+      "precise_review_question_gujarati": "disciplined માટે શિસ્તબદ્ધ શૈક્ષણિક ગુજરાતી તરીકે યોગ્ય છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T238",
+      "english": "sequential combination of Turing machines",
+      "gujarati": "ટ્યુરિંગ મશીનોનું સંયોજન",
+      "segment_ids": [
+        "OLP-0261-B004",
+        "OLP-0261-B006",
+        "OLP-0261-B014",
+        "OLP-0261-B015"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P097",
+        "GU-P098",
+        "GU-P099",
+        "GU-P096"
+      ],
+      "rationale_gujarati": "M અટકે પછી એની ટેપ અને હેડની સ્થિતિથી M' શરૂ થાય છે. OLTM-004 પ્રથમ caseમાં વ્યાખ્યાયિત હોવાની શરત ઉમેરી ત્રીજો case કાર્યરત રાખે છે. GU-P099 માત્ર સંક્રમણ ઘટક આપે છે.",
+      "alternatives_considered_gujarati": "સાંકળબંધ જોડાણ — શક્ય, પણ M\frown M'ના રચનાત્મક નિયમ માટે સંયોજન સરળ છે.",
+      "uncertainty": "પૂર્ણ construction શબ્દનો સીધો સ્ત્રોત નથી.",
+      "precise_review_question_gujarati": "M\frown M'ને સંયોજન કહેતાં શિસ્તબદ્ધતાની માથાની સ્થિતિ-શરત સ્પષ્ટ રહે છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T239",
+      "english": "nondeterministic Turing machine / transition relation",
+      "gujarati": "અનિર્ધારિત ટ્યુરિંગ મશીન / સંક્રમણ સંબંધ",
+      "segment_ids": [
+        "OLP-0262-B005",
+        "OLP-0262-B006"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P097",
+        "GU-P098",
+        "GU-P099",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "એક અવસ્થા-પ્રતીક જોડી માટે બે જુદી આગળની ત્રિકો હોઈ શકે છે; અહીં અનિર્ધારિતનો અર્થ અનેક શક્ય ચાલ, વિધેય અવ્યાખ્યાયિત હોવાનો નહીં. GU-P099 સંબંધનું પૂર્ણ નામ નહીં પરંતુ સંક્રમણ આપે છે.",
+      "alternatives_considered_gujarati": "અનિશ્ચિત મશીન — સામાન્ય છે, પણ ગણિતીય નિર્ધારણનો ભેદ ઓછો સ્પષ્ટ કરે છે.",
+      "uncertainty": "nondeterministic માટે પૂર્ણ સીધું ગુજરાતી પ્રમાણ બાકી છે.",
+      "precise_review_question_gujarati": "અનિર્ધારિત અને અવ્યાખ્યાયિતનો ભેદ વાચકને સ્પષ્ટ પડે છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T240",
+      "english": "unary / binary representation",
+      "gujarati": "એક-પ્રતીકી / દ્વિ-આધારી નિરૂપણ",
+      "segment_ids": [
+        "OLP-0262-B008",
+        "OLP-0262-B010"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P095",
+        "GU-P096",
+        "GU-P097",
+        "GU-P088",
+        "GU-P098"
+      ],
+      "rationale_gujarati": "મૂળમાં એક-પ્રતીકી માટે એક stroke છે અને દ્વિ-આધારી માટે blank તથા end-marker ઉપરાંત બે પ્રતીકો જોઈએ. નિરૂપણ બદલવાથી સંગણનીય વિધેયોનો વર્ગ બદલાતો નથી.",
+      "alternatives_considered_gujarati": "એકાધારી / દ્વિઆધારી — શક્ય ટૂંકા નામ; એક-પ્રતીકી અગાઉનાં વ્યાખ્યાયિત કોડને સીધું યાદ અપાવે છે.",
+      "uncertainty": "unaryના પૂર્ણ નામનું સીધું પ્રમાણ નથી.",
+      "precise_review_question_gujarati": "એક-પ્રતીકી અને દ્વિ-આધારી નામોની જોડી સુસંગત છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    },
+    {
+      "choice_id": "GU-T241",
+      "english": "effective procedure / Church–Turing thesis",
+      "gujarati": "અસરકારક પ્રક્રિયા / ચર્ચ--ટ્યુરિંગ માન્યતા",
+      "segment_ids": [
+        "OLP-0263-B004",
+        "OLP-0263-B005",
+        "OLP-0263-B006",
+        "OLP-0263-B007",
+        "OLP-0263-B008"
+      ],
+      "consulted_passage_ids": [
+        "GU-P077",
+        "GU-P088"
+      ],
+      "rationale_gujarati": "માન્યતા અસરકારક પ્રક્રિયાથી ગણી શકાય તે ટ્યુરિંગ-સંગણનીય છે એવો દાવો છે; તે બે ઔપચારિક વ્યાખ્યાઓમાંથી નીકળતું પ્રમેય નથી. અગાઉની આવૃત્તિમાં ચર્ચ--ટ્યુરિંગ માન્યતા નામ છે; GU-P088 સંગણનનો ઘટક આપે છે.",
+      "alternatives_considered_gujarati": "કાર્યક્ષમ પ્રક્રિયા — સમય/સંસાધનની કાર્યક્ષમતા એવો ખોટો અર્થ આપે છે.",
+      "uncertainty": "effective procedure માટે અસરકારકનું સીધું પરિભાષાકીય પ્રમાણ બાકી છે.",
+      "precise_review_question_gujarati": "અસરકારક પ્રક્રિયા શબ્દથી નિયમસર અમલમાં મૂકી શકાય તેવી પ્રક્રિયા સમજાય છે?",
+      "status": "adopted_contextual_open_for_asynchronous_expert_correction"
+    }
+  ],
+  "status": "complete_chapter_draft_same_agent_review_passed_reader_qa_pending"
+}

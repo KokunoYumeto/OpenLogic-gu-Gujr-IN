@@ -1,0 +1,66 @@
+% Part: counterfactuals
+% Chapter: minimal-change-semantics
+% Section: transitivity
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{min}{cpo}
+
+\olsection{પ્રતિપક્ષી રૂપાંતર}
+
+ભૌતિક અને કડક શરતી વિધાનો પોતાનાં પ્રતિપક્ષી સ્વરૂપો સાથે સમતુલ્ય
+છે. પ્રતિતથ્યાત્મક વિધાનો એવાં નથી. ક્રાત્ઝરે આપેલું ઉદાહરણ જુઓ:
+\begin{quote}
+  જો ગોથે 1832માં મૃત્યુ પામ્યા ન હોત, તો તેઓ અત્યારે પણ મૃત્યુ પામેલા હોત.
+
+  જો ગોથે અત્યારે મૃત્યુ પામેલા ન હોત, તો તેઓ 1832માં મૃત્યુ પામ્યા હોત.
+\end{quote}
+પહેલું વાક્ય સત્ય છે: મનુષ્યો સેંકડો વર્ષ જીવતા નથી. બીજું વાક્ય
+સ્પષ્ટપણે અસત્ય છે: ગોથે અત્યારે મૃત્યુ પામેલા ન હોત, તો હજુ જીવતા
+હોત અને તેથી 1832માં મૃત્યુ પામ્યા ન હોઈ શકે.
+
+\begin{ex}\ollabel{ex:contraposition-counterex}
+  ગોળા-અર્થવિચાર પ્રતિપક્ષી રૂપાંતરને અમાન્ય ઠરાવે છે; એટલે $p
+  \cif q \Entails/ \lnot q \cif \lnot p$. $p$ને ``ગોથે 1832માં
+  મૃત્યુ પામ્યા ન હતા'' અને $q$ને ``ગોથે અત્યારે મૃત્યુ પામેલા છે''
+  તરીકે સમજો. તેને નિદર્શ $\mModel{M_1} = \tuple{W, O, V}$માં
+  રજૂ કરી શકાય છે, જ્યાં $W = \{w, w_1, w_2\}$,
+  $O_w = \{\{w\}, \{w, w_1\}, \{w, w_1, w_2\}\}$,
+  $V(p) = \{w_1, w_2\}$ અને $V(q) = \{w, w_1\}$. એટલે $w$
+  વાસ્તવિક જગત છે જેમાં ગોથે 1832માં મૃત્યુ પામ્યા અને હજુ મૃત્યુ
+  પામેલા છે; $w_1$ નજીકનું જગત છે જેમાં તેઓ, માનો કે, 1833માં
+  મૃત્યુ પામ્યા અને હજુ મૃત્યુ પામેલા છે; $w_2$ દૂરનું જગત છે જેમાં
+  તેઓ હજુ જીવતા છે.
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.6,layerwidth=1.5]\tiny
+  \spheresystem{3}
+  \begin{scope}
+    \clip \propositionplot{0}{.8}{50}{4.5} -- (4.5,-4.5) -- (-4.5,-4.5) -- (-4.5,4.5) -- (4.5,4.5);
+    \spherelayer{3}
+  \end{scope}
+  \propositionintersect{0}{2}{110}{5.5}
+  \proposition{0}{.8}{50}{4.5}
+  \path (0,0) node[world] {$w$};
+  \spherepos{0}{2}{node[world] {$w_1$}}
+  \spherepos{-50}{3}{node[world] {$w_2$}}
+  \spherepos{28}{3}{node {$q$}}
+  \spherepos{42}{3}{node {$\lnot q$}}
+  \spherepos{-55}{4}{node {$p$}}
+  \spherepos{-67}{4}{node {$\lnot p$}}
+\end{tikzpicture}
+\caption{પ્રતિપક્ષી રૂપાંતરનું પ્રત્યુદાહરણ}
+\ollabel{fig:contraposition}
+\end{center}
+\end{figure}
+$p$ને સ્વીકારતો ગોળો $S = \{w, w_1\}$ છે અને તેમાંનાં બધાં
+જગતોમાં $p \lif q$ સત્ય છે; તેથી $\mSat{M_1}{p \cif q}[w]$.
+પરંતુ $\lnot q$ને સ્વીકારતા ગોળા $\{w, w_1, w_2\}$માં જગત~$w_2$
+છે, જ્યાં $q$ અસત્ય અને $p$ સત્ય છે; તેથી
+$\mSat/{M_1}{\lnot q \lif \lnot p}[w_2]$.
+\sourcecorrection{OLMD-111}{મૂળમાં જગતનું ગોળા-તંત્ર Oને બદલે O_w હોવું જોઈએ અને નિદર્શનું નામ M_1 આપ્યા પછી સંતોષ-સૂત્રોમાં M છે; અહીં બંને સંજ્ઞાઓ સુસંગત કરી છે.}
+\end{ex}
+
+\end{document}

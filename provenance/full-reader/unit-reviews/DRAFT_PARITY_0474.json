@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0474",
+  "checked_at_utc": "2026-09-27T19:22:37.534452+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0474 additional modal sequent rules; state-only draft",
+  "report": {
+    "unit_id": "OLP-0474",
+    "source_path": "content/normal-modal-logic/sequent-calculus/more-rules.tex",
+    "source_sha256": "7208b51ded8fec09ae57789b113c42fc47b8e8a4c8e6c290c8f7b25ffb27ef45",
+    "draft_path": "private-state\\work\\batch040_draft\\sequent-more-rules.tex",
+    "draft_sha256": "3e49724db3c66acdfda1e96fa8d208412163950c55ca3e097ceaa6737d338b8d",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 160,
+    "target_math_spans_after_corrections": 160,
+    "glossary_tokens": 7,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 122,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "three_formal_rule_tables_byte_exact": true,
+    "six_formal_proof_trees_byte_exact": true,
+    "structural_scan_exclusions": [
+      {
+        "token": "cc",
+        "count": 3,
+        "reason": "tabular column specification"
+      },
+      {
+        "token": "lll",
+        "count": 1,
+        "reason": "tabular column specification"
+      }
+    ]
+  },
+  "status": "draft_linguistic_math_and_formal_rule_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,62 @@
+% Part: incompleteness
+% Chapter: arithmetization-syntax
+% Section: substitution
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{inc}{art}{sub}
+\olsection{પ્રતિસ્થાપન}
+
+યાદ કરો કે પ્રતિસ્થાપન એ
+!!a{formula}~$!A$માં !!a{variable}~$u$ની
+બધી મુક્ત ઘટનાઓની જગ્યાએ પદ~$t$
+મૂકવાની ક્રિયા છે; તેને~$\Subst{!A}{t}{u}$
+લખીએ છીએ. !!{variable}s, !!{formula}s
+અને પદોની ગડેલ-સંખ્યાઓ પર કરવામાં આવે
+ત્યારે આ ક્રિયા આદિમ પુનરાવર્તી છે.
+
+\begin{prop}\ollabel{prop:subst-primrec}
+એવું આદિમ પુનરાવર્તી વિધેય
+$\fn{Subst}(x, y, z)$ છે કે
+\[
+\fn{Subst}(\Gn{!A}, \Gn{t}, \Gn{u}) = \Gn{\Subst{!A}{t}{u}}.
+\]
+\end{prop}
+
+\begin{proof}
+આદિમ પુનરાવર્તન વડે વિધેય~$\fn{hSubst}$
+આ પ્રમાણે વ્યાખ્યાયિત કરી શકીએ:
+\begin{multline*}
+\begin{aligned}
+\fn{hSubst}(x, y, z, 0) & = \emptyseq \\
+\fn{hSubst}(x, y, z, i+1) & =
+\end{aligned}\\
+\begin{cases}
+\fn{hSubst}(x, y, z, i) \concat y & \text{જો $\fn{FreeOcc}(x, z, i)$ હોય} \\
+\fn{append}(\fn{hSubst}(x, y, z, i), (x)_{i}) & \text{અન્યથા.}
+\end{cases}
+\end{multline*}
+હવે~$\fn{Subst}(x, y, z)$ને
+$\fn{hSubst}(x, y, z, \len{x})$ તરીકે
+વ્યાખ્યાયિત કરી શકીએ.
+\end{proof}
+
+\begin{prop}
+\ollabel{prop:free-for}
+ગડેલ-સંખ્યા~$x$ ધરાવતા સૂત્રમાં
+ગડેલ-સંખ્યા~$y$ ધરાવતું પદ,
+ગડેલ-સંખ્યા~$z$ ધરાવતા ચલની જગ્યાએ
+!!{free for} હોય ત્યારે અને માત્ર ત્યારે
+સત્ય થતો સંબંધ~$\fn{FreeFor}(x, y, z)$
+આદિમ પુનરાવર્તી છે.
+\end{prop}
+
+\begin{proof} અભ્યાસપ્રશ્ન. \end{proof}
+
+\begin{prob}
+\olref[inc][art][sub]{prop:free-for} સાબિત કરો.
+\end{prob}
+
+\end{document}

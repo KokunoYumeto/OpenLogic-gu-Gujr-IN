@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0699",
+  "checked_at_utc": "2026-09-28T23:27:25.128404+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0699 Truth conditions and interpretation of sequent rules; state-only draft",
+  "report": {
+    "unit_id": "OLP-0699",
+    "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+    "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+    "draft_path": "private-state\\work\\batch044_draft\\interpretation-rules.tex",
+    "draft_sha256": "c2eaec5d886bdf12ea63d5781c511b2791628cd9fe16973d46ea249e611e1c51",
+    "aligned_blocks": 14,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 53,
+    "target_math_spans_after_corrections": 53,
+    "glossary_tokens": 15,
+    "source_correction_notes": [
+      "OLMD-304",
+      "OLMD-305",
+      "OLMD-306"
+    ],
+    "source_detector_ascii_tokens": 688,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "\\RightLabel{\\RightR{\\oplus}}\n\\BinaryInf$!A \\oplus !B, \\Gamma \\fCenter \\Delta$",
+        "\\RightLabel{\\LeftR{\\oplus}}\n\\BinaryInf$!A \\oplus !B, \\Gamma \\fCenter \\Delta$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "શિથિલીકરણ",
+          "સંકોચન",
+          "સિક્વન્ટ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [],
+    "intentional_acronyms": [
+      {
+        "literal": "LK",
+        "count": 2
+      },
+      {
+        "literal": "LJ",
+        "count": 3
+      },
+      {
+        "literal": "NOR",
+        "count": 1
+      }
+    ],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 1
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

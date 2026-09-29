@@ -1,0 +1,274 @@
+% Part: normal-modal-logic
+% Chapter: tableaux
+% Section: rules-for-K
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{tab}{rul}
+
+\olsection{\Ax{K} માટેના નિયમો}
+
+સામાન્ય વિધાનસંબંધી જોડાણીઓ માટેના નિયમો સામાન્ય વિધાનસંબંધી
+ચિહ્નિત !!{tableau}s જેવા જ છે; ફક્ત ઉપસર્ગો ઉમેરાય છે.
+દરેક કિસ્સામાં, ચિહ્નિત !!{formula}
+$\sFmla{S}{!A}[\sigma]$ પર લાગુ થયેલો નિયમ નવાં !!{formula}s
+આપે છે, જેમને પણ~$\sigma$ ઉપસર્ગ હોય છે. આ સહજ છે: દાખલા તરીકે,
+જો $!A \land !B$ એ~$\sigma$ નામના જગત પર સત્ય હોય, તો
+$!A$ અને $!B$ પણ~$\sigma$ પર જ સત્ય છે (અન્ય જગત પર જરૂરી
+નથી). વિધાનસંબંધી નિયમો \olref{tab:prop-rules}માં એકત્ર કર્યા છે.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\True}{\lnot}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\False}{\lnot}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \DisplayProof
+    \\[1ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\land}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\True}{!B}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\land}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\False}{!B}[\sigma]$}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lor}}
+    \UnaryInfC{$\sFmla{\True}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lor}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lif}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid
+      \quad \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lif}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+  \end{array}\]
+  \caption{વિધાનસંબંધી જોડાણીઓ માટે ઉપસર્ગવાળા !!{tableau} નિયમો}
+  \ollabel{tab:prop-rules}
+\end{table}
+
+બંધતાની શરત સામાન્ય !!{tableau}s જેવી જ છે, પરંતુ અહીં માત્ર
+!!{formula}s જ નહિ, ઉપસર્ગો પણ સરખા હોવા જોઈએ. તેથી કોઈ શાખામાં
+નીચેના બંને હોય તો તે બંધ છે:
+\[
+\sFmla{\True}{!A}[\sigma] \quad\text{અને}\quad \sFmla{\False}{!A}[\sigma]
+\]
+કોઈ ઉપસર્ગ $\sigma$ અને !!{formula}~$!A$ માટે.
+
+ધારણાઓ ગોઠવવાના નિયમો પણ સામાન્ય !!{tableau}s જેવા જ છે;
+ફક્ત ધારણાઓ માટે આપણે હંમેશા ઉપસર્ગ~$1$ લઈએ છીએ.
+(કયો ઉપસર્ગ લઈએ તે મહત્ત્વનું નથી, જો બધી ધારણાઓ માટે તે એક જ હોય.)
+દાખલા તરીકે, આપણે કહીએ છીએ કે
+\[
+!B_1, \dots, !B_n \Proves !A
+\]
+જો અને માત્ર જો નીચેની ધારણાઓ માટે બંધ ટેબ્લો હોય:
+\[
+\sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1],
+\sFmla{\False}{!A}[1].
+\]
+
+\iftag{prvBox}{\iftag{prvDiamond}{$\Box$ અને }{$\Box$}}{}%
+\iftag{prvDiamond}{$\Diamond$}{} જેવા મોડલ સંક્રિયકો માટે,
+ઉપસર્ગ~$\sigma$વાળા !!a{formula} પર લાગુ થયેલા નિયમના
+નિષ્કર્ષનો ઉપસર્ગ $\sigma.n$ હોય છે. જોકે કયું $n$ લઈ શકાય
+તે ચિહ્ન~$\True$ છે કે~$\False$ તેના પર આધાર રાખે છે.
+
+\iftag{prvBox}{$\TRule{\True}{\Box}$ નિયમ
+  $\sFmla{\True}{\Box !A}[\sigma]$ ધરાવતી શાખાને
+  $\sFmla{\True}{!A}[\sigma.n]$થી વિસ્તારે છે.
+  \iftag{prvDiamond}{તેવી જ રીતે, }{}}{}%
+\iftag{prvDiamond}{$\TRule{\False}{\Diamond}$ નિયમ
+  $\sFmla{\False}{\Diamond !A}[\sigma]$ ધરાવતી શાખાને
+  $\sFmla{\False}{!A}[\sigma.n]$થી વિસ્તારે છે.}{}
+\iftag{notprvBox,notprvDiamond}{આ નિયમ}{આ નિયમો} ફક્ત એવા
+ઉપસર્ગ~$\sigma.n$ માટે લાગુ કરી શકાય છે જે સંબંધિત શાખા પર
+\emph{પહેલેથી} આવે છે. આવા ઉપસર્ગને તે શાખા પર ``વપરાયેલો'' કહીએ.
+
+\iftag{prvBox}{$\TRule{\False}{\Box}$ નિયમ
+  $\sFmla{\False}{\Box !A}[\sigma]$ ધરાવતી શાખાને
+  $\sFmla{\False}{!A}[\sigma.n]$થી વિસ્તારે છે.
+  \iftag{prvDiamond}{તેવી જ રીતે, }{}}{}%
+\iftag{prvDiamond}{$\TRule{\True}{\Diamond}$ નિયમ
+  $\sFmla{\True}{\Diamond !A}[\sigma]$ ધરાવતી શાખાને
+  $\sFmla{\True}{!A}[\sigma.n]$થી વિસ્તારે છે.}{}
+જોકે \iftag{notprvBox,notprvDiamond}{આ નિયમ}{આ નિયમો} ફક્ત એવા
+ઉપસર્ગ~$\sigma.n$ માટે લાગુ કરી શકાય છે જે સંબંધિત શાખા પર
+\emph{પહેલેથી આવતો નથી}. આવા ઉપસર્ગોને તે શાખા માટે ``નવા'' કહીએ.
+
+નિયમો \olref{tab:rules-K}માં આપ્યા છે.
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}\def\fCenter{}
+    \begin{tabular}{|c|c|}
+    \hline
+    \iftag{prvBox}{
+      \AxiomC{\sFmla{\True}{\Box !A}[\sigma]}
+      \RightLabel{\TRule{\True}{\Box}}
+      \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Box !A}[\sigma]}
+      \RightLabel{\TRule{\False}{\Box}}
+      \UnaryInfC{\sFmla{\False}{!A}[\sigma.n]}
+      \DisplayProof\\
+      $\sigma.n$ વપરાયેલો છે & $\sigma.n$ નવો છે
+      \\[1ex]
+      \hline}{}
+    \iftag{prvDiamond}{
+      \AxiomC{\sFmla{\True}{\Diamond !A}[\sigma]}
+      \RightLabel{\TRule{\True}{\Diamond}}
+      \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+      \DisplayProof
+      &
+      \AxiomC{\sFmla{\False}{\Diamond !A}[\sigma]}
+      \RightLabel{\TRule{\False}{\Diamond}}
+      \UnaryInfC{\sFmla{\False}{!A}[\sigma.n]}
+      \DisplayProof\\
+      $\sigma.n$ નવો છે & $\sigma.n$ વપરાયેલો છે
+      \\[1ex]
+      \hline}{}
+    \end{tabular}
+  \end{center}
+  \caption{\Ax{K} માટેના મોડલ નિયમો.}
+  \ollabel{tab:rules-K}
+\end{table}
+
+\iftag{prvBox}{\TRule{\True}{\Box}}{\TRule{\False}{\Diamond}}
+માટેનો ઉપસર્ગ વપરાયેલો હોવો જોઈએ એવી મર્યાદા જરૂરી છે;
+નહિ તો નીચેનું પણ બંધ !!{tableau} ગણવું પડે:
+\iftag{notprvBox,notprvDiamond}{%
+  \iftag{prvBox}{%
+  \begin{oltableau}
+    [\pFmla{\True}{\Box \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\lnot\Box\lnot \formula{A}}{1}, just = \TAss
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[1]}
+          [\pFmla{\True}{\Box\lnot\formula{A}}{1},
+            just ={\TRule{\False}{\lnot}[2]}
+            [\pFmla{\True}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\True}{\Box}[4]}
+              [\pFmla{\False}{\formula{A}}{1.1},
+                  just ={\TRule{\True}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  }{
+  \begin{oltableau}
+    [\pFmla{\True}{\lnot\Diamond\lnot \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\Diamond\formula{A}}{1}, just = \TAss
+        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\False}{\Diamond}[2]}
+          [\pFmla{\False}{\Diamond\lnot\formula{A}}{1},
+            just ={\TRule{\True}{\lnot}[1]}
+            [\pFmla{\False}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\False}{\Diamond}[4]}
+              [\pFmla{\True}{\formula{A}}{1.1},
+                  just ={\TRule{\True}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+}}{
+  \begin{oltableau}
+    [\pFmla{\True}{\Box \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\Diamond \formula{A}}{1}, just = \TAss
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[1]}
+          [\pFmla{\False}{\formula{A}}{1.1},
+            just = {\TRule{\False}{\Diamond}[2]}, close]
+        ]
+      ]
+    ]
+\end{oltableau}}
+
+પરંતુ $\Box \formula{A} \Entails/ \Diamond \formula{A}$,
+તેથી આપણી પ્રમાણપદ્ધતિ અવિશ્વસનીય બની જાય. તેવી જ રીતે,
+$\Diamond \formula{A} \Entails/
+\Box \formula{A}$ પણ નથી; છતાં
+\iftag{prvBox}{\TRule{\False}{\Box}}{\TRule{\True}{\Diamond}}
+માટેનો ઉપસર્ગ નવો હોવાની મર્યાદા ન હોય, તો નીચેનું બંધ ટેબ્લો થાય:
+\iftag{notprvBox,notprvDiamond}{%
+  \iftag{prvBox}{%
+  \begin{oltableau}
+    [\pFmla{\True}{\lnot\Box\lnot \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\Box \formula{A}}{1}, just = \TAss
+        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[2]}
+          [\pFmla{\False}{\Box\lnot\formula{A}}{1},
+            just ={\TRule{\True}{\lnot}[1]}
+            [\pFmla{\False}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\False}{\Box}[4]}
+              [\pFmla{\True}{\formula{A}}{1.1},
+                  just ={\TRule{\False}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+  }{
+  \begin{oltableau}
+    [\pFmla{\True}{\Diamond \formula{A}}{1}, just = \TAss
+      [\pFmla{\False}{\lnot\Diamond\lnot\formula{A}}{1}, just = \TAss
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Diamond}[1]}
+          [\pFmla{\True}{\Diamond\lnot\formula{A}}{1},
+            just ={\TRule{\False}{\lnot}[2]}
+            [\pFmla{\True}{\lnot\formula{A}}{1.1},
+              just = {\TRule{\True}{\Diamond}[4]}
+              [\pFmla{\False}{\formula{A}}{1.1},
+                  just ={\TRule{\True}{\lnot}[5]}, close]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+}}{
+  \begin{oltableau}
+    [\pFmla{\True}{\Diamond \formula{A}}{1}, just = \TAss,name=one
+      [\pFmla{\False}{\Box \formula{A}}{1}, just = \TAss, name=two
+        [\pFmla{\True}{\formula{A}}{1.1}, just = {\TRule{\True}{\Diamond}[1]}
+          [\pFmla{\False}{\formula{A}}{1.1},
+            just = {\TRule{\False}{\Box}[2]}, close]
+        ]
+      ]
+    ]
+  \end{oltableau}}
+
+\end{document}

@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/36-0358-0359",
+  "checked_at_utc": "2026-09-27T05:46:14.131207+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0358 unique readability and OLP-0359 abbreviated syntax; state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0358",
+      "source_path": "content/lambda-calculus/syntax/unique-readability.tex",
+      "source_sha256": "a11a3822afc6fd0e95f81b2040023d553f0682b5b099b7c75511d4b2a720b7f7",
+      "draft_path": "private-state\\work\\batch036_draft\\unique-readability.tex",
+      "draft_sha256": "8c3950d48c57bea68eb97a5fa7ac9c31a0de36601c281c8952c6a034d00726c6",
+      "aligned_blocks": 15,
+      "linguistic_blocks": 11,
+      "source_math_spans": 43,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 405,
+      "target_untranslated_prose_findings": 0,
+      "math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0359",
+      "source_path": "content/lambda-calculus/syntax/abbreviated-syntax.tex",
+      "source_sha256": "89683422a361faf74ad312ab557f265f94eb9541fcc3bd3fadbfaf1437bd9c46",
+      "draft_path": "private-state\\work\\batch036_draft\\abbreviated-syntax.tex",
+      "draft_sha256": "613ddd6a2f9e02191ba1fe9d11c27696ab1beded83776f892e0339d1d15086a6",
+      "aligned_blocks": 9,
+      "linguistic_blocks": 5,
+      "source_math_spans": 13,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 109,
+      "target_untranslated_prose_findings": 0,
+      "math_structure_and_glossary_equal": true
+    }
+  ],
+  "status": "draft_math_structure_glossary_and_reference_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

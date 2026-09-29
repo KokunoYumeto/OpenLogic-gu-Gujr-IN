@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0567",
+  "checked_at_utc": "2026-09-28T01:44:40.406012+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0567 Replacement strength via V-omega-plus-omega and relativized Z models; state-only draft",
+  "report": {
+    "unit_id": "OLP-0567",
+    "source_path": "content/set-theory/replacement/strength.tex",
+    "source_sha256": "4f3e4108f3ab822b38f880ddcade17b6e270a0f0272d9b0c40e9a9a389911301",
+    "draft_path": "private-state\\work\\batch044_draft\\replacement-strength.tex",
+    "draft_sha256": "03f286c59d3b3c75a84b22f1a0dc200e6cb82bbf5ee4354bcd801a8a48cca94a",
+    "aligned_blocks": 9,
+    "linguistic_blocks": 6,
+    "source_math_spans_correction_aware": 30,
+    "target_math_spans_after_corrections": 30,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 276,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-idea.tex",
+        "sha256": "3c6aec7a0807659af5a151a6569ed2680de6e189752b1c629cd5394063de9598",
+        "terms": [
+          "\\omega",
+          "બેકી"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-ordtype.tex",
+        "sha256": "93685f5f44835cb5d1c576892cd559473c969a90b45a861ac801c1d86b97fc77",
+        "terms": [
+          "ક્રમપ્રકાર",
+          "\\ollabel{thmOrdinalRepresentation}"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\spine-rank.tex",
+        "sha256": "c12244adb25c2d040cc761178dab315e3fa746fed06f8e3fab4c4c3259e5632a",
+        "terms": [
+          "\\ollabel{ordsetrankalpha}",
+          "સ્તરાંક"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\model-theory\\lindstrom\\abstract-logics.tex",
+        "sha256": "daf549ed20e049debe096a5a43b3da1533fc3f377daed84627a14a66d6963f3d",
+        "terms": [
+          "સાપેક્ષીકરણ"
+        ]
+      },
+      {
+        "path": "project\\gu\\content\\model-theory\\models-of-arithmetic\\models-of-q.tex",
+        "sha256": "ad5d3c73ca100611f9c65ecfe69b7f91913849608e06a4c390a63e78f0da74f7",
+        "terms": [
+          "નિદર્શ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The relativization definition restricts all quantifiers to M, with the exact existential and universal replacement notations retained.",
+      "The V_(omega+omega) argument is presented as the source's sketch of relative non-provability, not as an unconditional consistency proof independent of any metatheoretic assumption.",
+      "The inherited two-line parity-order display is copied exactly, including English within TeX math; no even/odd clauses are reversed.",
+      "સાપેક્ષીકરણ is directly attested in the published Gujarati model-theory text, while the particular V_(omega+omega) application remains controlled by the frozen source."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

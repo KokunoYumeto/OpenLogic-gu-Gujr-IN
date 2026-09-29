@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0423",
+  "checked_at_utc": "2026-09-27T10:59:30.380316+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0423 frame definability; state-only draft",
+  "report": {
+    "unit_id": "OLP-0423",
+    "source_path": "content/normal-modal-logic/frame-definability/definability.tex",
+    "source_sha256": "a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c",
+    "draft_path": "private-state\\work\\batch040_draft\\definability.tex",
+    "draft_sha256": "c3d71d45cf983e5cd65623f2a97610556f248a7d906ff40d875a4746c09ae460",
+    "aligned_blocks": 20,
+    "linguistic_blocks": 15,
+    "source_math_spans_correction_aware": 141,
+    "target_math_spans_after_corrections": 141,
+    "glossary_tokens": 14,
+    "source_correction_notes": [
+      "OLMD-015",
+      "OLMD-016"
+    ],
+    "source_detector_ascii_tokens": 770,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      10
+    ],
+    "finite_frame_cases_checked": 530,
+    "finite_model_cases_checked": 4164,
+    "relation_facts_checked": true
+  },
+  "status": "draft_linguistic_math_proof_and_visible_source_repair_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

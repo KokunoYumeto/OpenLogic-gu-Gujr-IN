@@ -1,0 +1,152 @@
+% Part: normal-modal-logic
+% Chapter: completeness
+% Section: complete-consistent-sets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{nml}{com}{ccs}
+
+\olsection{પૂર્ણ $\Sigma$-સુસંગત ગણો}
+
+ધારો કે $\Sigma$ મોડલ !!{formula}sનો ગણ છે—તેને સામાન્ય મોડલ
+તર્કની સ્વયંસિદ્ધિઓ અથવા તેને વ્યાખ્યાયિત કરતા સિદ્ધાંતો માનો. ગણ
+$\Gamma$ એ $\Sigma$-સુસંગત છે જો અને માત્ર જો $\Gamma
+\Proves/[\Sigma] \lfalse$, એટલે કે $\Sigma$માંથી
+$!A_1 \lif (!A_2 \lif \cdots (!A_n \lif \lfalse)\dots)$ની કોઈ
+!!{derivation} નથી, જ્યાં દરેક $!A_i \in \Gamma$. આપણે એવું
+``કૅનોનિકલ'' નિદર્શન રચીશું જેમાં દરેક જગત વિશિષ્ટ પ્રકારનો
+$\Sigma$-સુસંગત ગણ હોય: જે માત્ર $\Sigma$-સુસંગત જ નહિ, પણ એ અર્થમાં
+મહત્તમ હોય કે દરેક મોડલ !!{formula}નું સત્યમૂલ્ય નક્કી કરે—દરેક $!A$
+માટે કાં તો $!A \in \Gamma$ અથવા $\lnot !A \in \Gamma$:
+
+\begin{defn}
+  ગણ $\Gamma$ \emph{પૂર્ણ $\Sigma$-સુસંગત} છે જો અને માત્ર જો તે
+  $\Sigma$-સુસંગત છે અને દરેક~$!A$ માટે કાં $!A \in \Gamma$ અથવા
+  $\lnot !A \in \Gamma$.
+\end{defn}
+
+પૂર્ણ $\Sigma$-સુસંગત ગણો $\Gamma$ના અનેક ઉપયોગી ગુણધર્મો છે.
+ખાસ કરીને તેઓ નિષ્પત્તિ હેઠળ બંધ છે, એટલે કે $\Gamma
+\Proves[\Sigma] !A$ હોય તો $!A \in \Gamma$. તેથી
+!!a{formula}~$!A \in \Sigma$નો દરેક દૃષ્ટાંત પણ
+$\in \Gamma$ છે. વધુમાં, $\Gamma$માં સભ્યતા વિધાનાત્મક સંયોજકોની
+સત્યતાની શરતોને પ્રતિબિંબિત કરે છે. ``કૅનોનિકલ નિદર્શન'' વ્યાખ્યાયિત
+કરીશું ત્યારે આ અગત્યનું બનશે.
+
+\begin{prop}\ollabel{prop:ccs-properties}
+  ધારો કે $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત છે. ત્યારે:
+  \begin{enumerate}
+  \item \ollabel{prop:ccs-closed}%
+    $\Gamma$ એ~$\Sigma$માં નિષ્પત્તિ હેઠળ બંધ છે.
+  \item \ollabel{prop:ccs-sigma}%
+    $\Sigma \subseteq \Gamma$.
+  \tagitem{prvFalse}{\ollabel{prop:ccs-lfalse}%
+    $\lfalse \notin \Gamma$}{}
+  \tagitem{prvTrue}{\ollabel{prop:ccs-ltrue}%
+    $\ltrue \in \Gamma$}{}
+  \item \ollabel{prop:ccs-lnot}%
+    $\lnot!A \in \Gamma$ જો અને માત્ર જો $!A \notin
+    \Gamma$.
+  \tagitem{prvAnd}{\ollabel{prop:ccs-land}%
+    $!A \land !B \in \Gamma$ જો અને માત્ર જો $!A \in \Gamma$ અને
+    $!B \in \Gamma$}{}
+  \tagitem{prvOr}{\ollabel{prop:ccs-lor}%
+    $!A \lor !B \in \Gamma$ જો અને માત્ર જો $!A \in \Gamma$ અથવા
+    $!B \in \Gamma$}{}
+  \tagitem{prvIf}{\ollabel{prop:ccs-lif}%
+    $!A \lif !B \in \Gamma$ જો અને માત્ર જો $!A \notin \Gamma$
+    અથવા $!B \in \Gamma$}{}
+  \tagitem{prvIff}{\ollabel{prop:ccs-liff}%
+    $!A \liff !B \in \Gamma$ જો અને માત્ર જો કાં તો $!A \in \Gamma$
+    અને $!B \in \Gamma$ બંને, અથવા $!A \notin \Gamma$ અને
+    $!B \notin \Gamma$ બંને}{}
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item ધારો કે $\Gamma \Proves[\Sigma] !A$, પણ $!A \notin
+    \Gamma$. ત્યારે $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોવાથી
+    $\lnot!A \in \Gamma$. આથી $\Gamma$ અસુસંગત થઈ જાય, કારણ કે
+    $!A, \lnot !A \Proves[\Sigma] \lfalse$.
+
+  \item જો $!A \in \Sigma$ હોય તો $\Gamma \Proves[\Sigma] !A$,
+    અને નિષ્પત્તિ હેઠળની બંધતાથી $!A \in \Gamma$, એટલે કે
+    મુદ્દા~\olref{prop:ccs-closed} મુજબ.
+
+  \tagitem{prvFalse}{જો $\lfalse \in \Gamma$ હોય તો $\Gamma
+    \Proves[\Sigma] \lfalse$; તેથી $\Gamma$ એ
+    $\Sigma$-અસુસંગત બને.}{}
+
+  \tagitem{prvTrue}{$\Gamma \Proves[\Sigma] \ltrue$, તેથી
+    નિષ્પત્તિ હેઠળની બંધતા, એટલે કે મુદ્દા~\olref{prop:ccs-closed}
+    મુજબ $\ltrue \in \Gamma$.}{}
+
+  \item જો $\lnot!A \in \Gamma$ હોય તો સુસંગતતાથી $!A \notin
+    \Gamma$; અને જો $!A \notin \Gamma$ હોય તો $\Gamma$ પૂર્ણ
+    $\Sigma$-સુસંગત હોવાથી $\lnot !A \in \Gamma$.
+    \sourcecorrection{OLMD-032}{મૂળના આ બીજા ખંડમાં નિષેધચિહ્ન
+    છૂટી ગયું છે; પૂર્ણતાની વ્યાખ્યા મુજબ અહીં નિષેધિત સૂત્ર ગણમાં
+    આવવું જોઈએ.}
+
+  \tagitem{prvAnd}{\iftag{probAnd}{પ્રશ્ન.}{ધારો કે $!A \land !B \in
+      \Gamma$. $(!A \land !B) \lif !A$ પુનરુક્તિનો દૃષ્ટાંત હોવાથી
+      નિષ્પત્તિ હેઠળની બંધતા, એટલે કે મુદ્દા~\olref{prop:ccs-closed}
+      મુજબ $!A \in \Gamma$. $!B \in \Gamma$ માટે પણ તેવી જ દલીલ છે.
+      ઊલટી દિશામાં, ધારો કે $!A \in \Gamma$ અને $!B \in
+      \Gamma$ બંને. ત્યારે નિષ્પત્તિ હેઠળની બંધતાથી $(!A \land !B) \in
+      \Gamma$, કારણ કે $!A \lif (!B \lif (!A \land !B))$
+      પુનરુક્તિનો દૃષ્ટાંત છે.}}{}
+
+  \tagitem{prvOr}{\iftag{probOr}{પ્રશ્ન.}{ધારો કે $!A \lor !B \in
+      \Gamma$, પણ $!A \notin \Gamma$ અને $!B \notin \Gamma$.
+      $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોવાથી $\lnot!A \in \Gamma$
+      અને $\lnot !B \in \Gamma$. ત્યારે $\lnot(!A \lor !B) \in
+      \Gamma$, કારણ કે $\lnot !A \lif (\lnot !B \lif \lnot (!A \lor !B))$
+      પુનરુક્તિનો દૃષ્ટાંત છે. આથી $\Gamma$ એ $\Sigma$-અસુસંગત
+      બને, જે વિરોધાભાસ છે. ઊલટી દિશામાં, કોઈ એક વિયોજક ગણમાં હોય તો
+      તેને વિયોજનમાં લઈ જતી વિધાનાત્મક પુનરુક્તિ અને નિષ્પત્તિ હેઠળની
+      બંધતાથી વિયોજન પણ ગણમાં આવે છે.
+      \sourcecorrection{OLMD-033}{મૂળની આ સાબિતીમાં વિયોજનના દ્વિમુખી
+      વિધાનની માત્ર એક દિશા આપવામાં આવી છે; અહીં બીજી દિશાની દલીલ
+      સ્પષ્ટ કરી છે.}}}{}
+
+  \tagitem{prvIf}{\iftag{probIf}{પ્રશ્ન.}{ધારો કે $!A \lif !B \in
+      \Gamma$ અને $!A \in \Gamma$; ત્યારે $\Gamma \Proves[\Sigma] !B$,
+      અને નિષ્પત્તિ હેઠળની બંધતાથી $!B \in \Gamma$. ઊલટું, જો $!A
+      \lif !B \notin \Gamma$ હોય તો $\Gamma$ પૂર્ણ
+      $\Sigma$-સુસંગત હોવાથી $\lnot (!A \lif !B) \in \Gamma$.
+      $\lnot(!A \lif !B) \lif !A$ પુનરુક્તિનો દૃષ્ટાંત હોવાથી
+      નિષ્પત્તિ હેઠળની બંધતાથી $!A \in \Gamma$. એ જ રીતે
+      $\lnot(!A \lif !B) \lif \lnot !B$ પુનરુક્તિનો દૃષ્ટાંત હોવાથી
+      $\lnot !B \in \Gamma$. તેથી $\Gamma$ એ $\Sigma$-સુસંગત
+      હોવાથી $!B \notin \Gamma$.}}{}
+
+  \tagitem{prvIff}{\iftag{probIff}{પ્રશ્ન.}{ધારો કે $!A \liff !B \in
+      \Gamma$. જો $!A \in \Gamma$ હોય તો $!B \in \Gamma$, કારણ કે
+      $(!A \liff !B) \lif (!A \lif !B)$ પુનરુક્તિનો દૃષ્ટાંત છે.
+      એ જ રીતે, $!B \in \Gamma$ હોય તો $!A \in \Gamma$. તેથી કાં
+      તો $!A \in \Gamma$ અને $!B \in \Gamma$ બંને, અથવા
+      $!A \in \Gamma$ પણ નહિ અને $!B \in \Gamma$ પણ નહિ.
+
+      ઊલટું, ધારો કે $!A \liff !B \notin \Gamma$. $\Gamma$ પૂર્ણ
+      $\Sigma$-સુસંગત હોવાથી $\lnot (!A \liff !B) \in \Gamma$.
+      \sourcecorrection{OLMD-034}{મૂળની આ ઊલટી દિશાના આરંભમાં
+      દ્વિમુખી પ્રેરણની જગ્યાએ એકમુખી પ્રેરણ લખાઈ છે; આગળનું નિષેધિત
+      સૂત્ર દ્વિમુખી પ્રેરણનું જ છે.}
+      $\lnot(!A \liff !B) \lif (!A \lif \lnot !B)$ પુનરુક્તિનો
+      દૃષ્ટાંત હોવાથી $!A \in \Gamma$ હોય તો $\lnot !B \in
+      \Gamma$; અને $\Gamma$ એ $\Sigma$-સુસંગત હોવાથી $!B \notin
+      \Gamma$. એ જ રીતે, $!B \in \Gamma$ હોય તો $!A \notin \Gamma$.
+      તેથી $!A \in \Gamma$ અને $!B \in \Gamma$ બંને નથી, તેમજ
+      $!A \notin \Gamma$ અને $!B \notin \Gamma$ બંને પણ નથી.}}{}
+  \end{enumerate}
+\end{proof}
+
+\begin{probtag}{probAnd,probOr,probIf,probIff}
+  \olref[nml][com][ccs]{prop:ccs-properties}ની સાબિતી પૂરી કરો.
+\end{probtag}
+
+\end{document}

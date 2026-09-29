@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0711",
+  "checked_at_utc": "2026-09-29T00:12:00.530810+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0711 Inference rules, proof trees and proof height; state-only draft",
+  "report": {
+    "unit_id": "OLP-0711",
+    "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+    "source_sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699",
+    "draft_path": "private-state\\work\\batch044_draft\\sequent-rules-proofs.tex",
+    "draft_sha256": "071d88e5f7eb7283a6283dbe739d0925d023c6391b600a5660d84ff32852464b",
+    "aligned_blocks": 17,
+    "linguistic_blocks": 12,
+    "source_math_spans_correction_aware": 101,
+    "target_math_spans_after_corrections": 101,
+    "glossary_tokens": 45,
+    "source_correction_notes": [
+      "OLMD-339"
+    ],
+    "source_detector_ascii_tokens": 676,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": false,
+    "source_replacements": [
+      [
+        "$!E, !D \\Sequent !D$",
+        "$!E, !D \\Sequent !E$"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\TERM_DECISIONS.jsonl",
+        "sha256": "90ff8e85a438a67fcd4e1e230902cfee4c9e40cdbb59ffb0aa77d81dc30f04e3",
+        "terms": [
+          "આઇગનચલ",
+          "અંતિમ સિક્વન્ટ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-sequent-introduction.tex",
+        "sha256": "e1291e4d75113bff2da5ea97503b0888c0cb188e0919496aee31e6dd74a993ea",
+        "terms": [
+          "બહુગણ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\Olref{defn:proof}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

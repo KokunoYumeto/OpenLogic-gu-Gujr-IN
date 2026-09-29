@@ -1,0 +1,90 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{ordtype}
+\olsection{ક્રમપ્રકારો તરીકે ક્રમવાચક સંખ્યાઓ}
+
+હવે આપણી પાસે પ્રતિસ્થાપન છે અને આપણે $\ZFminus$માં કામ કરીએ છીએ.
+તેથી અંતે આપણે ઇચ્છેલું પરિણામ સાબિત કરી શકીએ:
+
+\begin{thm}\ollabel{thmOrdinalRepresentation}
+દરેક સુક્રમ એક અને માત્ર એક ક્રમવાચક સંખ્યા સાથે ક્રમ-એકરૂપ છે.
+\end{thm}
+
+\begin{proof}
+ધારો કે $\tuple{A, <}$ સુક્રમ છે.
+\olref[basic]{ordisoidentity} મુજબ તે વધુમાં વધુ એક ક્રમવાચક
+સંખ્યા સાથે ક્રમ-એકરૂપ છે. તેથી વિરોધાભાસ માટે ધારો કે
+$\tuple{A, <}$ \emph{કોઈ પણ} ક્રમવાચક સંખ્યા સાથે
+ક્રમ-એકરૂપ નથી. પહેલાં આપણે ``$\tuple{A, <}$ને બને તેટલું નાનું
+બનાવીશું''. વિગતવાર: કોઈ ઉચિત આરંભિક ખંડ $\tuple{A_a,
+<_a}$ કોઈ ક્રમવાચક સંખ્યા સાથે ક્રમ-એકરૂપ ન હોય, તો આ ગુણધર્મ
+ધરાવતું લઘુતમ $a \in A$ મળે; પછી $B = A_a$ અને $\mathord{\lessdot} =
+\mathord{<_a}$ લો. અન્યથા $B = A$ અને $\mathord{\lessdot} =
+\mathord{<}$ લો.
+
+રચના મુજબ $B$નો દરેક ઉચિત આરંભિક ખંડ કોઈ ક્રમવાચક સંખ્યા સાથે
+ક્રમ-એકરૂપ છે, અને ઉપર મુજબ એ સંખ્યા અનન્ય છે. તેથી
+પ્રતિસ્થાપનથી નીચેનો ગણ અસ્તિત્વમાં છે અને તે વિધેય છે:
+\[
+	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ and }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
+\]
+વિરોધાભાસ પૂર્ણ કરવા આપણે બતાવીશું કે કોઈ ક્રમવાચક સંખ્યા
+$\alpha$ માટે $f$ એ $\alpha \to B$ એકરૂપતા છે.
+
+સ્પષ્ટ છે કે $\ran{f}
+= B$. વળી \olref[iso]{lemordsegments} મુજબ $f$ ક્રમ જાળવે છે,
+એટલે કે $\gamma \in \beta$ જો અને માત્ર જો
+$f(\gamma) \lessdot f(\beta)$. હવે $\dom{f}$ ક્રમવાચક
+સંખ્યા છે તે બતાવવા \olref[basic]{corordtransitiveord}
+મુજબ $\dom{f}$ પરંપરિત છે એટલું બતાવવું પૂરતું છે. તેથી
+$\beta \in \dom{f}$ લો, એટલે કે કોઈ $b$ માટે
+$\ordeq{\beta}{\tuple{B_b, \lessdot_b}}$. જો $\gamma \in
+\beta$ હોય, તો \olref[iso]{wellordinitialsegment} મુજબ
+$\gamma \in \dom{f}$. સામાન્યકરણ કરતાં $\beta \subseteq
+\dom{f}$.
+\end{proof}
+
+આ પરિણામથી આપણે \olref[vn]{sec}થી ઇચ્છતા હતા તે વ્યાખ્યા આપી
+શકીએ છીએ:
+
+\begin{defn}
+જો $\tuple{A, <}$ સુક્રમ હોય, તો તેનો ક્રમપ્રકાર
+$\ordtype{A, <}$ એવી અનન્ય ક્રમવાચક સંખ્યા $\alpha$ છે કે
+$\ordeq{\tuple{A, < }}{\alpha}$.
+\end{defn}
+
+વળી, આ વ્યાખ્યાથી બે સરસ સિદ્ધાંતો મળે છે:
+
+\begin{cor}\ollabel{ordtypesworklikeyouwant}
+$\tuple{A, <}$ અને $\tuple{B, \lessdot}$ સુક્રમો હોય ત્યારે:
+\begin{align*}
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
+	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ for some }b \in B
+\end{align*}
+\end{cor}
+
+\begin{proof}
+સમાનતાનું નિવેદન \olref[basic]{ordisoidentity}થી મળે છે. બીજું
+નિવેદન સાબિત કરવા $\ordtype{A, <} = \alpha$ અને $\ordtype{B,
+\lessdot} = \beta$ લો, અને $f \colon \beta \to \tuple {B, \lessdot}$
+આપણી એકરૂપતા હોય. તો:
+\begin{align*}
+	\alpha \in \beta&\text{ iff }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ is an isomorphism}\\
+	&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
+	&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ for some $b \in B$}
+\end{align*}
+\sourcecorrection{OLMD-117}{મૂળના પ્રદર્શનની પહેલી હરોળમાં
+$f(\alpha)$ ફક્ત $\alpha \in \beta$ હોય ત્યારે જ
+વ્યાખ્યાયિત છે. તેથી તેની જમણી બાજુને આ શરત સાથે વાંચવી;
+નહિતર એ સમકક્ષતાનું જમણું વિધાન વ્યાખ્યાયિત જ નથી.
+તે જ રીતે $f \colon \beta \to \tuple {B, \lessdot}$માં
+વિધેયનું લક્ષ્ય-ગણ $B$ છે અને $\tuple{B, \lessdot}$ એ
+લક્ષ્યની ક્રમરચના દર્શાવે છે.}
+\olref[iso]{ordisounique},
+\olref[iso]{wellordinitialsegment}, અને
+\olref[basic]{ordissetofsmallerord} મુજબ.
+\end{proof}
+
+\end{document}

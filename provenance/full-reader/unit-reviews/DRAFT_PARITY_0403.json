@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0403",
+  "checked_at_utc": "2026-09-27T09:51:42.573425+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0403 many-valued sequent calculus chapter opening; state-only draft",
+  "report": {
+    "unit_id": "OLP-0403",
+    "source_path": "content/many-valued-logic/sequent-calculus/introduction.tex",
+    "source_sha256": "d34708177650e4673f957d0b6ecdc9f210e4d65987e47f0694077c3d21ce63ef",
+    "draft_path": "private-state\\work\\batch039_draft\\sequent-introduction.tex",
+    "draft_sha256": "5aaff3fa4abdd6109767ed8d81f1e91cd8bc27cea3e79c502b9e7350800de188",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 45,
+    "target_math_spans_after_corrections": 45,
+    "glossary_tokens": 4,
+    "source_correction_notes": [
+      "OLMV-017",
+      "OLMV-018"
+    ],
+    "source_detector_ascii_tokens": 217,
+    "target_untranslated_prose_findings": 0,
+    "unchanged_math_spans_equal_and_keyed_differences_match": true,
+    "changed_math_block_ordinals": [
+      7
+    ],
+    "source_comment_chapter_typo_fixed": false,
+    "two_inference_diagrams_exact": true
+  },
+  "status": "draft_linguistic_structure_math_and_visible_source_repair_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

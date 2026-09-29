@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/35-0344-0346",
+  "checked_at_utc": "2026-09-27T04:20:03.996016+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0344–0346 λ syntax/reduction/Church–Rosser state-only drafts",
+  "reports": [
+    {
+      "unit_id": "OLP-0344",
+      "source_path": "content/lambda-calculus/introduction/syntax.tex",
+      "source_sha256": "fce80dba497fdd924804265f8a34b90f3eeef16f2f285a7816b6aba7185674ca",
+      "draft_path": "private-state\\work\\batch035_draft\\syntax.tex",
+      "draft_sha256": "da4af14d0199ac462a11dfce6147b7bb4042382b6b1d282552200716a0dc78a4",
+      "aligned_blocks": 11,
+      "linguistic_blocks": 7,
+      "source_math_spans": 40,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 281,
+      "target_untranslated_prose_findings": 0,
+      "math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0345",
+      "source_path": "content/lambda-calculus/introduction/reduction.tex",
+      "source_sha256": "974b487078982e551afa7213faf54e35b1dcc37a3f1d38b7a42cc4f34c6322d6",
+      "draft_path": "private-state\\work\\batch035_draft\\reduction.tex",
+      "draft_sha256": "967c484e91fb84866dda92d31883e3e05f2169df69aaab2269f4af2526943bf5",
+      "aligned_blocks": 10,
+      "linguistic_blocks": 6,
+      "source_math_spans": 41,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 229,
+      "target_untranslated_prose_findings": 0,
+      "math_structure_and_glossary_equal": true
+    },
+    {
+      "unit_id": "OLP-0346",
+      "source_path": "content/lambda-calculus/introduction/church-rosser.tex",
+      "source_sha256": "6c6e2b92cf64a4352de9fe746fc9bbac51c02c79351e9c97ddea3b4c3991b6dc",
+      "draft_path": "private-state\\work\\batch035_draft\\church-rosser.tex",
+      "draft_sha256": "0892467c81a9e38b69c18eb50539ad6d3db5c56becba4ad391ef7c37fd9afd28",
+      "aligned_blocks": 9,
+      "linguistic_blocks": 5,
+      "source_math_spans": 32,
+      "glossary_tokens": 0,
+      "source_correction_notes": [],
+      "source_detector_ascii_tokens": 122,
+      "target_untranslated_prose_findings": 0,
+      "math_structure_and_glossary_equal": true
+    }
+  ],
+  "status": "draft_math_and_glossary_parity_passed_reader_qa_pending",
+  "public_coverage_unchanged": 270
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0451",
+  "checked_at_utc": "2026-09-27T12:30:56.752999+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0451 filtrations opening; state-only draft",
+  "report": {
+    "unit_id": "OLP-0451",
+    "source_path": "content/normal-modal-logic/filtrations/introduction.tex",
+    "source_sha256": "faffee0613cc37515af229a202fed584e49ea182600e77c96d722654492eb01a",
+    "draft_path": "private-state\\work\\batch040_draft\\filtrations-introduction.tex",
+    "draft_sha256": "3cdaaa73995dd99edaac647c838664f375bc103e4bb23925f6215b80ae897a9e",
+    "aligned_blocks": 13,
+    "linguistic_blocks": 8,
+    "source_math_spans_correction_aware": 84,
+    "target_math_spans_after_corrections": 84,
+    "glossary_tokens": 19,
+    "source_correction_notes": [
+      "OLMD-040",
+      "OLMD-041",
+      "OLMD-042",
+      "OLMD-043"
+    ],
+    "source_detector_ascii_tokens": 989,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_after_disclosed_repair": true,
+    "imports_exact_in_order": false
+  },
+  "status": "draft_linguistic_math_and_source_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0555",
+  "checked_at_utc": "2026-09-28T01:09:34.205554+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0555 the ZFminus milestone and exact axiom list; state-only draft",
+  "report": {
+    "unit_id": "OLP-0555",
+    "source_path": "content/set-theory/ordinals/milestone.tex",
+    "source_sha256": "3f99ff5c244929fec27396ee3ff21b3b2bb76a56cada018c045a5d5459e6f289",
+    "draft_path": "private-state\\work\\batch044_draft\\ordinal-milestone.tex",
+    "draft_sha256": "a27682872d729b00a6f6559cc63b06b349843e52490466673e5fa217dbe071cb",
+    "aligned_blocks": 5,
+    "linguistic_blocks": 3,
+    "source_math_spans_correction_aware": 5,
+    "target_math_spans_after_corrections": 5,
+    "glossary_tokens": 0,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 105,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\milestone.tex",
+        "sha256": "6fedf939f25a1478ca822bc44025b491a1cddadc5bdd88644b817db8e22e4324",
+        "terms": [
+          "ઘટકો દ્વારા નિર્ધારિત",
+          "યોગગણ",
+          "જોડ",
+          "ઘાતગણો",
+          "અનંતતા",
+          "પૃથક્કરણ",
+          "પ્રરૂપ",
+          "એક મહત્ત્વનો પડાવ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\ordinal-replacement.tex",
+        "sha256": "26a05b92c09a1ba8edfcde66d51a841858744b476bae38a81d1999d3ac26c1ef",
+        "terms": [
+          "પ્રતિસ્થાપનનું પ્રરૂપ"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [
+      "The frozen title and all five occurrences of mathematical theory macros remain formula-identical.",
+      "The translation does not silently add Foundation or Choice to the exact ZFminus list.",
+      "Fraenkel 1922 and Skolem 1922 are kept as source claims with their exact citation commands, not independently adjudicated historical priority."
+    ],
+    "intentional_foreign_literals": [],
+    "structural_scan_exclusions": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-and-equation-aware",
+    "verified_double_dollar_displays": 0
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

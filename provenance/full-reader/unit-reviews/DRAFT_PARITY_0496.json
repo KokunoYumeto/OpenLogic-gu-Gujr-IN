@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0496",
+  "checked_at_utc": "2026-09-27T20:45:13.818471+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0496 intuitionistic natural deduction; state-only draft",
+  "report": {
+    "unit_id": "OLP-0496",
+    "source_path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+    "source_sha256": "3fc69e5ddaa3c9273ab2fa9c4a9e5c7826c3044aa9945152d4f710f8cf62afd3",
+    "draft_path": "private-state\\work\\batch042_draft\\intuitionistic-natural-deduction.tex",
+    "draft_sha256": "065c8cd4ee593444884e10194388c5c0840c6550d3a12036d75912c8a1c06ee8",
+    "aligned_blocks": 34,
+    "linguistic_blocks": 29,
+    "source_math_spans_correction_aware": 158,
+    "target_math_spans_after_corrections": 158,
+    "glossary_tokens": 16,
+    "source_correction_notes": [
+      "OLMD-085"
+    ],
+    "source_detector_ascii_tokens": 413,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact_after_logged_repair": true,
+    "formal_proof_diagrams_byte_exact": 9,
+    "bhk_acronym_scan_exclusions": 4
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

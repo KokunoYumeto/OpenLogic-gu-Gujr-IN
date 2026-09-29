@@ -1,0 +1,81 @@
+{
+  "schema": "openlogic-gu-partial-draft-parity/0705",
+  "checked_at_utc": "2026-09-29T00:07:54.814721+00:00",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "scope": "OLP-0705 rules-G1i rule table; state-only draft",
+  "report": {
+    "unit_id": "OLP-0705",
+    "source_path": "content/proof-theory/sequent-calculus/rules-G1i.tex",
+    "source_sha256": "b16548e594dc5a0a414c919e26078d474488c3186487c7cbdce170fb23035b7b",
+    "draft_path": "private-state\\work\\batch044_draft\\rules-G1i.tex",
+    "draft_sha256": "b6c7197df1974b0bde919b9e76f262ab49aac56a86b9909785224875a3bdd79a",
+    "aligned_blocks": 5,
+    "linguistic_blocks": 1,
+    "source_math_spans_correction_aware": 45,
+    "target_math_spans_after_corrections": 45,
+    "glossary_tokens": 3,
+    "source_correction_notes": [],
+    "source_detector_ascii_tokens": 39,
+    "target_untranslated_prose_findings": 0,
+    "all_math_spans_exact": true,
+    "source_replacements": [
+      [
+        "{Axioms}",
+        "{સ્વયંસિદ્ધો}"
+      ],
+      [
+        "{Structural Rules}",
+        "{બંધારણીય નિયમો}"
+      ],
+      [
+        "{Logical Rules}",
+        "{તાર્કિક નિયમો}"
+      ]
+    ],
+    "edition_references": [
+      {
+        "path": "private-state\\work\\batch044_draft\\proof-sequent-introduction.tex",
+        "sha256": "e1291e4d75113bff2da5ea97503b0888c0cb188e0919496aee31e6dd74a993ea",
+        "terms": [
+          "બહુગણ",
+          "સ્વયંસિદ્ધ"
+        ]
+      },
+      {
+        "path": "private-state\\work\\batch044_draft\\interpretation-rules.tex",
+        "sha256": "c2eaec5d886bdf12ea63d5781c511b2791628cd9fe16973d46ea249e611e1c51",
+        "terms": [
+          "અંતઃપ્રજ્ઞાવાદી",
+          "બંધારણીય"
+        ]
+      }
+    ],
+    "additional_semantic_checks": [],
+    "intentional_foreign_literals": [],
+    "localized_math_text": [],
+    "structural_scan_exclusions": [
+      {
+        "literal": "\\begin{tabular}{@{}c@{}c@{}}",
+        "count": 1
+      },
+      {
+        "literal": "\\begin{tabular}[t]{@{}l@{}}",
+        "count": 1
+      },
+      {
+        "literal": "\\begin{tabular}[t]{@{}r@{}}",
+        "count": 1
+      }
+    ],
+    "intentional_acronyms": [],
+    "supporting_receipts": [],
+    "inherited_tikz_diagrams_exact": 0,
+    "inherited_diagrams_visual_qa": "not_applicable",
+    "math_parser": "double-dollar-equation-align-and-eqnarray-aware",
+    "verified_double_dollar_displays": 0,
+    "verified_align_or_eqnarray_displays": 0,
+    "verified_rule_table_body_exact": true
+  },
+  "status": "draft_linguistic_semantic_and_formula_review_passed_reader_qa_pending",
+  "public_coverage_unchanged": 289
+}

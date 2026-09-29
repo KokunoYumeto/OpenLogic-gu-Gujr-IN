@@ -1,0 +1,110 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: proofs-to-terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{pt}
+
+\olsection{\usetoken{P}{derivation}ને સાબિતી-પદોમાં રૂપાંતરિત કરવી}
+
+સ્વાભાવિક નિગમનની !!{proof}sને સાબિતી-પદોમાં
+રૂપાંતરિત કરવી, એટલે~\Log{N2i}ની !!{proof}sને
+\Log{tN2i}ની !!{proof}sમાં ફેરવવી, ખૂબ
+સરળ છે. !!{derivation}ના દરેક સિક્વન્ટની
+જમણી બાજુના !!{formula}ની પહેલાં
+સાબિતી-પદ લખવાનું જ છે; આમ
+$\Gamma \Sequent M : !A$ સ્વરૂપના
+સિક્વન્ટો મળે છે. પછી કહીએ કે
+સંદર્ભ~$\Gamma$માં $M$ એ~$!A$નું
+\emph{સાક્ષ્ય આપે છે}. કયું સાબિતી-પદ
+લખવું તે \Log{tN2i}ના નિયમોથી
+સંપૂર્ણ નક્કી થાય છે.
+
+\begin{prop}
+\Log{N2i}માં $\Gamma \Sequent !A$ની
+દરેક !!{proof}~$\delta$ને અનુરૂપ
+\Log{tN2i}માં $\Gamma \Sequent N : !A$ની
+!!a{proof}~$\delta'$ છે. સાબિતી-પદ~$N$
+એ~$\delta$થી અનન્ય રીતે નક્કી થાય છે.
+\end{prop}
+
+\begin{proof}
+$\delta$ની ઊંચાઈ પર આગમન કરીએ.
+$\delta$ એ $x:!A \Sequent !A$ સ્વયંસિદ્ધ હોય,
+તો $\delta'$ એ~$x:!A \Sequent x:!A$
+સ્વયંસિદ્ધ છે. $\delta$ અનુમાન-નિયમથી
+પૂરી થતી હોય, તો આગમન-ધારણા દરેક
+આધારવિધાનનું સાબિતી-પદ અને તેને ધરાવતા
+અનુરૂપ સિક્વન્ટની \Log{tN2i}-!!{proof}s
+આપે છે. અનુરૂપ \Log{tN2i} નિયમ
+લાગુ કરીએ; આ \Log{tN2i} અનુમાન-નિયમ સંબંધિત
+સાબિતી-પદ નક્કી કરે છે.
+\end{proof}
+
+\begin{ex}
+  \Log{N1i}માં $(!A \land !B) \lif (!B \land !A)$ની
+  આ ખૂબ સરળ !!{proof} લો:
+  \[
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[2]}
+  \UnaryInfC{$!B$}
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[1]}
+  \UnaryInfC{$!A$}
+  \RightLabel{\Intro\land}
+  \BinaryInfC{$!B \land !A$}
+  \DischargeRule{\Intro\lif}{x}
+  \UnaryInfC{$(!A \land !B) \lif (!B \land !A)$}
+  \DisplayProof
+  \]
+  \Log{N2i}માં તે આવી છે:
+  \[
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter !B$
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+  ઉપરથી નીચે સાબિતી-પદો સોંપીએ.
+  સ્વયંસિદ્ધોનાં પદો સંદર્ભના ચલ~$x$
+  જ છે. પછી $\Elim\land[i]$ને અનુરૂપ
+  પદો $\proj{2}{x}$ અને~$\proj{1}{x}$
+  તરીકે નક્કી થાય છે. \Intro{\land}
+  લાગુ કરીએ ત્યારે આ બંને પદો જોડીએ:
+  $\pair{\proj{2}{x}}{\proj{1}{x}}$.
+  છેલ્લે \Intro{\lif} નિયમ
+  $\lambd$-અમૂર્તીકરણ લાગુ કરે છે:
+  તે~$x$ને બદ્ધ કરે છે અને~$x$ એ
+  ધારણા~$!A \land !B$નું ચિહ્ન હતું
+  તે નોંધે છે:
+  $\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]$.
+  આમ \Log{tN2i}ની !!{proof} છે:
+  \[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+\end{ex}
+
+
+\end{document}
