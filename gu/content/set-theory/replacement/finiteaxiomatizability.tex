@@ -31,7 +31,7 @@
 	
 	હવે $\psi(X)$ નીચેનું ટૂંકું લખાણ હોય:
 	\[
-		\theta^X \land X\text{ is transitive} \land (\forall Y \in X)(Y\text{ is transitive}\lif \lnot \theta^{Y})
+		\theta^X \land X\text{ પરંપરિત છે} \land (\forall Y \in X)(Y\text{ પરંપરિત છે}\lif \lnot \theta^{Y})
 	\]
 	આશરે તેનો અર્થ એ છે કે $X$ એ $\theta$નો પરંપરિત
 	નિદર્શ છે અને આ બાબતમાં $\in$-લઘુતમ છે. હવે
@@ -47,12 +47,12 @@
 	થાય છે. તેથી \eqref{Mpsi} મુજબ:
 	\begin{align*}
 		\Th{T} &\Proves \forall X(\psi(X) \lif (\exists N \psi(N))^X)\\
-	\intertext{Using this, and \eqref{Mpsi} again:}
+	\intertext{આ અને ફરીથી \eqref{Mpsi} વાપરતાં:}
 		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \psi(N))^M)
-	\intertext{In particular, then:}
-		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)((N\text{ is transitive})^M \land (\theta^N)^M))
-	\intertext{So, by elementary reasoning concerning transitivity:}
-		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)(N\text{ is transitive} \land \theta^N))
+	\intertext{ખાસ કરીને, તેથી:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)((N\text{ પરંપરિત છે})^M \land (\theta^N)^M))
+	\intertext{તેથી, પરંપરિતતા અંગેના મૂળભૂત તર્કથી:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)(N\text{ પરંપરિત છે} \land \theta^N))
 	\end{align*}
 	\sourcecorrection{OLMD-125}{મૂળની ત્રીજી પંક્તિમાં
 	$N$ની પરંપરિતતા પરનું સાપેક્ષીકરણ ભૂલથી $N$ સુધી
@@ -88,7 +88,7 @@
 	થોડું વધુ કામ છે. પૃથક્કરણના કિસ્સાઓ $\Th{T}$માં
 	છે, પણ $\theta$ના સંયોજકો નથી. જોકે મૂળ અહીં
 	દાવો કરે છે કે દરેક પૃથક્કરણ-કિસ્સા $\sigma$ માટે
-	$\Th{T} \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$
+	$\Th{T} \Proves \forall X(X\text{ પરંપરિત છે} \lif \sigma^X)$
 	સાબિત કરીને આ અવરોધ દૂર કરી શકીએ. આ વાચક માટે
 	છોડેલું છે.
 	\sourcecorrection{OLMD-126}{આ દાવો જણાવેલા સ્વરૂપમાં
@@ -103,7 +103,7 @@
 \end{proof}
 \begin{prob}
 	બતાવો કે દરેક પૃથક્કરણ-કિસ્સા $\sigma$ માટે
-	$\Z \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$.
+	$\Z \Proves \forall X(X\text{ પરંપરિત છે} \lif \sigma^X)$.
 	(આ પ્રરૂપ \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ}માં
 	વાપર્યું હતું.)
 \end{prob}

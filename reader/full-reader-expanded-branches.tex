@@ -3695,7 +3695,7 @@ $g \colon \Bin^\omega \to \Bin$નો વિચાર કરો: તે $0$ અ�
 જોઈએ; અન્યથા દલીલ ચાલતી નથી: $f(x_1)$, $f(x_2)$, \dots{}માં
 $B$ના બધા ઘટકો આવે તેની ખાતરી રહેતી નથી. દાખલા તરીકે,
 \[
-h(n) = \underbrace{000\dots0}_{\text{$n$ $0$'s}}111\dots
+h(n) = \underbrace{000\dots0}_{\text{$n$ વાર $0$}}111\dots
 \]
 વિધેય $h\colon \PosInt \to \Bin^\omega$ વ્યાખ્યાયિત કરે છે,
 પરંતુ $\PosInt$ એ ગણનીય છે.
@@ -16144,7 +16144,7 @@ $\True$ અથવા~$\False$ હોય છે. આ ચિહ્નિત સૂ
   \emph{ચિહ્નિત સૂત્ર} એ સત્ય-મૂલ્ય અને વાક્યથી બનેલી
   જોડી છે, એટલે કે આ બેમાંથી એક:
   \[
-  \sFmla{\True}{!A} \text{ or } \sFmla{\False}{!A}.
+  \sFmla{\True}{!A} \text{ અથવા } \sFmla{\False}{!A}.
   \]
 \end{defn}
 
@@ -70878,8 +70878,8 @@ $\Box/\Diamond$નો સૂત્ર-આર્ગ્યુમેન્ટ ખ�
 વ્યાખ્યાયિત કરીએ છીએ. તેમાં~$\Delta$માં આવતા ઉપસર્ગો
 જગતો છે અને સુલભતા-સંબંધ આ રીતે અપાય છે:
 \[
-R\sigma\sigma' \quad \text{iff} \quad
-\sigma'=\sigma.n \quad \text{for some~$n$}
+R\sigma\sigma' \quad \text{જો અને માત્ર જો} \quad
+\sigma'=\sigma.n \quad \text{કોઈ~$n$ માટે}
 \]
 અને
 \[
@@ -78639,7 +78639,7 @@ $\tuple{A, <}$ \emph{કોઈ પણ} ક્રમવાચક સંખ્ય�
 ક્રમ-એકરૂપ છે, અને ઉપર મુજબ એ સંખ્યા અનન્ય છે. તેથી
 પ્રતિસ્થાપનથી નીચેનો ગણ અસ્તિત્વમાં છે અને તે વિધેય છે:
 \[
-	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ and }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
+	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ અને }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
 \]
 વિરોધાભાસ પૂર્ણ કરવા આપણે બતાવીશું કે કોઈ ક્રમવાચક સંખ્યા
 $\alpha$ માટે $f$ એ $\alpha \to B$ એકરૂપતા છે.
@@ -78671,8 +78671,8 @@ $\ordeq{\tuple{A, < }}{\alpha}$.
 \begin{cor}\ollabel{ordtypesworklikeyouwant}
 $\tuple{A, <}$ અને $\tuple{B, \lessdot}$ સુક્રમો હોય ત્યારે:
 \begin{align*}
-	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
-	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ for some }b \in B
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
+	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ કોઈ }b \in B\text{ માટે}
 \end{align*}
 \end{cor}
 
@@ -78682,9 +78682,9 @@ $\tuple{A, <}$ અને $\tuple{B, \lessdot}$ સુક્રમો હોય �
 \lessdot} = \beta$ લો, અને $f \colon \beta \to \tuple {B, \lessdot}$
 આપણી એકરૂપતા હોય. તો:
 \begin{align*}
-	\alpha \in \beta&\text{ iff }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ is an isomorphism}\\
-	&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
-	&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ for some $b \in B$}
+	\alpha \in \beta&\text{ જો અને માત્ર જો }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ એકરૂપતા છે}\\
+	&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
+	&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ કોઈ $b \in B$ માટે}
 \end{align*}
 \sourcecorrection{OLMD-117}{મૂળના પ્રદર્શનની પહેલી હરોળમાં
 $f(\alpha)$ ફક્ત $\alpha \in \beta$ હોય ત્યારે જ
@@ -78844,9 +78844,9 @@ $\supstrict(X) = \bigcup Y$. ક્રમવાચક સંખ્યાઓ પ�
 	\begin{align*}
 	V_\emptyset &\defis \emptyset\\
 	V_{\ordsucc{\alpha}} &\defis \Pow{V_\alpha} & & 
-	\text{for any ordinal }\alpha\\
+	\text{દરેક ક્રમવાચક સંખ્યા }\alpha\text{ માટે}\\
 	V_{\alpha} &\defis \bigcup_{\gamma < \alpha} V_\gamma & & 
-	\text{when }\alpha\text{ is a limit ordinal}
+	\text{જો }\alpha\text{ સીમા ક્રમવાચક સંખ્યા હોય}
 \end{align*}
 \end{defn}
 \noindent
@@ -78977,9 +78977,9 @@ $\dom{\sigma}$ બધી ક્રમવાચક સંખ્યાઓનો �
 \begin{align*}
 	\sigma(\emptyset) &= A\\
 	\sigma(\ordsucc{\alpha}) &= \tau(\sigma(\alpha)) &&
-		\text{for any ordinal }\alpha\\
+		\text{દરેક ક્રમવાચક સંખ્યા }\alpha\text{ માટે}\\
 	\sigma(\alpha) &= \theta(\ran{\funrestrictionto{\sigma}{\alpha}})&&
-	\text{when }\alpha\text{ is a limit ordinal}
+	\text{જો }\alpha\text{ સીમા ક્રમવાચક સંખ્યા હોય}
 \end{align*}
 \end{thm}
 
@@ -78988,10 +78988,10 @@ $\dom{\sigma}$ બધી ક્રમવાચક સંખ્યાઓનો �
 \[
 	\xi(x) = 
 	\begin{cases}
-			A &\text{if $x$ is not a function whose}\\
-			&\hspace{1em}\text{domain is an ordinal; otherwise:}\\
-			\tau(x(\alpha)) & \text{if $\dom{x} = \ordsucc{\alpha}$}\\
-			\theta(\ran{x}) & \text{if $\dom{x}$ is a limit ordinal}
+			A &\text{જો $x$ એવું વિધેય ન હોય}\\
+			&\hspace{1em}\text{જેનો પ્રદેશ ક્રમવાચક સંખ્યા છે; અન્યથા:}\\
+			\tau(x(\alpha)) & \text{જો $\dom{x} = \ordsucc{\alpha}$ હોય}\\
+			\theta(\ran{x}) & \text{જો $\dom{x}$ સીમા ક્રમવાચક સંખ્યા હોય}
 	\end{cases}
 \]
 \sourcecorrection{OLMD-118}{મૂળની ખંડવાર વ્યાખ્યામાં ખાલી વિધેય
@@ -79438,10 +79438,10 @@ $\setrank{\alpha} = \supstrict_{\beta \in
 $\emph{Regularity} \Rightarrow \emph{Foundation}$ સાબિત થાય છે.
 (ધ્યાન આપો કે આ સાબિતીમાં ``સ્તરાંક''નો ખ્યાલ અને
 \olref{rankmemberslower} વાપરી શકીએ છીએ, કારણ કે આ વિભાગના
-આરંભમાં કહ્યું તેમ તેમને $\ZFminus + \text{Regularity}$માં
+આરંભમાં કહ્યું તેમ તેમને $\ZFminus + \text{નિયમિતતા}$માં
 રજૂ કરી શકાય છે.)
 
-\begin{prop}[$\ZFminus + \text{Regularity}$માં કામ કરતાં]\ollabel{zfminusregularityfoundation} આધાર સાચો છે.
+\begin{prop}[$\ZFminus + \text{નિયમિતતા}$માં કામ કરતાં]\ollabel{zfminusregularityfoundation} આધાર સાચો છે.
 \end{prop}
 
 \begin{proof}
@@ -79537,8 +79537,8 @@ $\omega+\omega$નું અસ્તિત્વ ન હોવું $\Z$ સ�
 \olref[ordinals][idea]{sec}માં પ્રાકૃતિક સંખ્યાઓ પરનો આ
 ક્રમ આપીને તેનું અનૌપચારિક ઉદાહરણ આપ્યું હતું:
 \begin{align*}
-	n \lessdot m \text{ iff }&\text{either }n < m\text{ and }m-n\text{ is even,}\\
-	& \text{or $n$ is even and $m$ is odd.}
+	n \lessdot m \text{ જો અને માત્ર જો }&\text{કાં તો }n < m\text{ અને }m-n\text{ યુગ્મ હોય,}\\
+	& \text{અથવા $n$ યુગ્મ હોય અને $m$ અયુગ્મ હોય.}
 \end{align*}
 પરંતુ $\omega+\omega$ અસ્તિત્વમાં ન હોય, તો આ સુક્રમ કોઈ
 પણ ક્રમવાચક સંખ્યા સાથે ક્રમ-એકરૂપ નથી. તેથી $\Z$માં
@@ -80038,15 +80038,15 @@ $\psi_i(\overline{a}_i) \leftrightarrow
 $\overline{a}_i \in V_\beta$ નક્કી કરો; ત્યારે:
 \begin{align*}
 	(\exists x \psi_i(\overline{a}_i, x))^{V_\beta}
-	&\text{ iff }
+	&\text{ જો અને માત્ર જો }
 	(\exists x \in V_\beta)\psi_i^{V_\beta}(\overline{a}_i, x)
-	&&\text{by definition}\\
-	&\text{ iff }
+	&&\text{વ્યાખ્યા મુજબ}\\
+	&\text{ જો અને માત્ર જો }
 	(\exists x \in V_\beta)\psi_i(\overline{a}_i,  x)
-	&&\text{by hypothesis}\\
-	&\text{ iff }
+	&&\text{અનુમાનની ધારણા મુજબ}\\
+	&\text{ જો અને માત્ર જો }
 	\exists x \psi_i(\overline{a}_i, x)
-	&&\text{by \eqref{reflectionnicelybehaved}}
+	&&\text{\eqref{reflectionnicelybehaved} મુજબ}
 \end{align*}
 આથી અનુમાન પૂરું થાય છે; $\psi_k = \phi$ હોવાથી
 જોઈતું પરિણામ મળે છે.
@@ -80080,7 +80080,7 @@ $(\forall \overline{x} \in S)(\phi \liff
 part of Theorem 2]{Levy1960}ને અનુસરીને બતાવીશું
 કે બે સૂત્રોને એકસાથે ``પ્રતિબિંબિત'' કરી શકીએ છીએ:
 
-\begin{lem}[$\Z + \text{Weak-Reflection}$માં.]\ollabel{lem:reflect}
+\begin{lem}[$\Z + \text{નબળું પ્રતિબિંબન}$માં.]\ollabel{lem:reflect}
 કોઈ પણ સૂત્રો $\psi, \chi$ માટે એવો પરંપરિત
 ગણ $S$ છે કે $0$ અને $1$ (અને સૂત્રોના કોઈ પણ
 પરિમાણો) $S$ના ઘટકો છે, અને
@@ -80106,11 +80106,11 @@ $\xi(z) \liff \xi^S(z)$.}
 નબળા પ્રતિબિંબન મુજબ યોગ્ય $S$ એવો મળે છે કે:
 \begin{align*}
 	(\forall z, \overline{x} \in S)(&\phi \liff \phi^S)\\
-	\text{i.e. }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi)) \liff {}\\
+	\text{એટલે કે }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi)) \liff {}\\
 	&\phantom{(}((z = 0 \land \psi) \lor (z = 1 \land \chi))^S)\\
-	\text{i.e. }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi))\liff {}\\
+	\text{એટલે કે }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi))\liff {}\\
 	&\phantom{(}((z = 0 \land \psi^S) \lor (z = 1 \land \chi^S)))\\
-	\text{i.e. }(\forall \overline{x} \in S)(&(\psi \liff \psi^S) \land (\chi \liff \chi^S))
+	\text{એટલે કે }(\forall \overline{x} \in S)(&(\psi \liff \psi^S) \land (\chi \liff \chi^S))
 \end{align*}
 બીજું વિધાન ત્રીજું વિધાન આપે છે, કારણ કે ``$z = 0$''
 અને ``$z=1$'' $S$ માટે નિરપેક્ષ છે; ચોથું વિધાન
@@ -80131,8 +80131,8 @@ $0 \neq 1$ હોવાથી મળે છે.
 $(\forall x \in A)\lexists![y][\phi(x,y)]$ થાય એવો
 $A$ નક્કી કરો અને નીચેના સૂત્રો વ્યાખ્યાયિત કરો:
 \begin{align*}
-	\psi &\text{ is } (\phi(x, z) \land A = A)\\
-	\chi &\text{ is } \lexists[y][\phi(x, y)]
+	\psi &\text{ એ } (\phi(x, z) \land A = A)\\
+	\chi &\text{ એ } \lexists[y][\phi(x, y)]
 \end{align*}
 \olref{lem:reflect} વાપરીએ. $A$ એ $\psi$નો
 પરિમાણ હોવાથી, એવો પરંપરિત~$S$ મળે છે કે
@@ -80194,7 +80194,7 @@ x \in A) \phi(x, y)}$ મળે છે.
 	
 	હવે $\psi(X)$ નીચેનું ટૂંકું લખાણ હોય:
 	\[
-		\theta^X \land X\text{ is transitive} \land (\forall Y \in X)(Y\text{ is transitive}\lif \lnot \theta^{Y})
+		\theta^X \land X\text{ પરંપરિત છે} \land (\forall Y \in X)(Y\text{ પરંપરિત છે}\lif \lnot \theta^{Y})
 	\]
 	આશરે તેનો અર્થ એ છે કે $X$ એ $\theta$નો પરંપરિત
 	નિદર્શ છે અને આ બાબતમાં $\in$-લઘુતમ છે. હવે
@@ -80210,12 +80210,12 @@ x \in A) \phi(x, y)}$ મળે છે.
 	થાય છે. તેથી \eqref{Mpsi} મુજબ:
 	\begin{align*}
 		\Th{T} &\Proves \forall X(\psi(X) \lif (\exists N \psi(N))^X)\\
-	\intertext{Using this, and \eqref{Mpsi} again:}
+	\intertext{આ અને ફરીથી \eqref{Mpsi} વાપરતાં:}
 		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \psi(N))^M)
-	\intertext{In particular, then:}
-		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)((N\text{ is transitive})^M \land (\theta^N)^M))
-	\intertext{So, by elementary reasoning concerning transitivity:}
-		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)(N\text{ is transitive} \land \theta^N))
+	\intertext{ખાસ કરીને, તેથી:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)((N\text{ પરંપરિત છે})^M \land (\theta^N)^M))
+	\intertext{તેથી, પરંપરિતતા અંગેના મૂળભૂત તર્કથી:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)(N\text{ પરંપરિત છે} \land \theta^N))
 	\end{align*}
 	\sourcecorrection{OLMD-125}{મૂળની ત્રીજી પંક્તિમાં
 	$N$ની પરંપરિતતા પરનું સાપેક્ષીકરણ ભૂલથી $N$ સુધી
@@ -80251,7 +80251,7 @@ x \in A) \phi(x, y)}$ મળે છે.
 	થોડું વધુ કામ છે. પૃથક્કરણના કિસ્સાઓ $\Th{T}$માં
 	છે, પણ $\theta$ના સંયોજકો નથી. જોકે મૂળ અહીં
 	દાવો કરે છે કે દરેક પૃથક્કરણ-કિસ્સા $\sigma$ માટે
-	$\Th{T} \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$
+	$\Th{T} \Proves \forall X(X\text{ પરંપરિત છે} \lif \sigma^X)$
 	સાબિત કરીને આ અવરોધ દૂર કરી શકીએ. આ વાચક માટે
 	છોડેલું છે.
 	\sourcecorrection{OLMD-126}{આ દાવો જણાવેલા સ્વરૂપમાં
@@ -80266,7 +80266,7 @@ x \in A) \phi(x, y)}$ મળે છે.
 \end{proof}
 \begin{prob}
 	બતાવો કે દરેક પૃથક્કરણ-કિસ્સા $\sigma$ માટે
-	$\Z \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$.
+	$\Z \Proves \forall X(X\text{ પરંપરિત છે} \lif \sigma^X)$.
 	(આ પ્રરૂપ \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ}માં
 	વાપર્યું હતું.)
 \end{prob}
@@ -80376,9 +80376,9 @@ $A \disjointsum B = (A\times
 કોઈ પણ ક્રમવાચક સંખ્યાઓ
 $\alpha_1, \alpha_2, \beta_1, \beta_2$ માટે કહીએ કે:
 \begin{align*}
-	\tuple{\alpha_1, \alpha_2} \rlexless \tuple{\beta_1, \beta_2}\text{ iff }&
-	\text{either $\alpha_2 \in \beta_2$}\\
-	& \text{or both $\alpha_2 = \beta_2$ and $\alpha_1 \in \beta_1$}
+	\tuple{\alpha_1, \alpha_2} \rlexless \tuple{\beta_1, \beta_2}\text{ જો અને માત્ર જો }&
+	\text{કાં તો $\alpha_2 \in \beta_2$}\\
+	& \text{અથવા $\alpha_2 = \beta_2$ અને $\alpha_1 \in \beta_1$ બંને હોય}
 \end{align*}
 \end{defn}
 
@@ -80452,7 +80452,7 @@ $\alpha\disjointsum1$ સમાન નથી. અહીં વ્યાખ્ય
 \begin{align*}
 	\alpha\ordplus 0 &= \alpha\\
 	\alpha \ordplus  (\beta\ordplus 1) &= (\alpha \ordplus  \beta) \ordplus  1\\
-	\alpha  \ordplus  \beta &= \supstrict_{\delta < \beta}(\alpha \ordplus  \delta) && \text{if $\beta $ is a limit ordinal}
+	\alpha  \ordplus  \beta &= \supstrict_{\delta < \beta}(\alpha \ordplus  \delta) && \text{જો $\beta $ સીમા ક્રમવાચક સંખ્યા હોય}
 \end{align*}
 \end{lem}
 
@@ -80793,7 +80793,7 @@ $\tuple{\alpha \times \beta, \rlexless}$ સુક્રમ છે.
 		(\alpha \ordtimes \beta) \ordplus \alpha\\
 	\alpha  \ordtimes \beta &=
 		\supstrict_{\delta < \beta}(\alpha \ordtimes \delta) &&
-		\text{when $\beta$ is a limit ordinal}.
+		\text{જો $\beta$ સીમા ક્રમવાચક સંખ્યા હોય}.
 \end{align*}
 \end{lem}
 
@@ -80919,7 +80919,7 @@ $\beta$ની નકલ'' તરીકે અને ગુણાકારને
 \begin{align*}
 	\ordexpo{\alpha}{0} &= 1\\
 	\ordexpo{\alpha}{\beta\ordplus 1} &=\ordexpo{\alpha}{\beta} \ordtimes \alpha\\
-	\ordexpo{\alpha}{\beta} &= \bigcup_{\delta < \beta}\ordexpo{\alpha}{\delta}& & \text{when $\beta$ is a limit ordinal}
+	\ordexpo{\alpha}{\beta} &= \bigcup_{\delta < \beta}\ordexpo{\alpha}{\delta}& & \text{જો $\beta$ સીમા ક્રમવાચક સંખ્યા હોય}
 \end{align*}
 \sourcecorrection{OLMD-133}{મૂળનું સીમા-સમીકરણ
 આધાર $\alpha=0$ માટે ઉપરની રચનાત્મક વ્યાખ્યાથી
@@ -80989,7 +80989,7 @@ $\ordexpo{\alpha}{\beta} = \ordtype{\text{finfun}(\beta, \alpha),
 બતાવ્યું કે તેઓ અપેક્ષા પ્રમાણે વર્તે છે, એટલે કે:
 \[
 	\ordtype{A, <} = \ordtype{B, \lessdot} 
-	\text{ iff } \tuple{A, <} \isomorphic \tuple{B, \lessdot}.
+	\text{ જો અને માત્ર જો } \tuple{A, <} \isomorphic \tuple{B, \lessdot}.
 \]
 હવે તેનાથી પણ પહેલાંના \olref[sfr][siz][equ]{sec}ને યાદ કરો.
 ત્યાં આપણે અનૌપચારિક રીતે કામ કરતાં ગણના ``કદ''નો
@@ -81010,7 +81010,7 @@ $\ordexpo{\alpha}{\beta} = \ordtype{\text{finfun}(\beta, \alpha),
 જોઈએ એવો સિદ્ધાંત નક્કી કરીએ. ગણ $X$નો ગણાંક
 દર્શાવવા $\card{X}$ લખીએ, તો આપણે ઇચ્છીએ કે:
 \[
-	\card{A} = \card{B} \text{ iff } \cardeq{A}{B}.
+	\card{A} = \card{B} \text{ જો અને માત્ર જો } \cardeq{A}{B}.
 \]
 આને \emph{કૅન્ટરનો} સિદ્ધાંત કહીશું, કારણ કે કદાચ
 કૅન્ટરે જ સૌપ્રથમ આ વિચાર સ્પષ્ટ રીતે મનમાં રાખ્યો હતો.
@@ -81113,9 +81113,9 @@ $\cardfont{a} \in \cardfont{b}$. અહીં જે વસ્તુઓ
 \begin{lem}\ollabel{lem:CardinalsBehaveRight}
 કોઈ પણ ગણો $A$ અને $B$ માટે:
 \begin{align*}
-	\cardeq{A}{B} &\text{ iff } \card{A} = \card{B}\\
-	\cardle{A}{B} &\text{ iff } \card{A} \leq \card{B}\\
-	\cardless{A}{B}&\text{ iff } \card{A} < \card{B}
+	\cardeq{A}{B} &\text{ જો અને માત્ર જો } \card{A} = \card{B}\\
+	\cardle{A}{B} &\text{ જો અને માત્ર જો } \card{A} \leq \card{B}\\
+	\cardless{A}{B}&\text{ જો અને માત્ર જો } \card{A} < \card{B}
 \end{align*}
 \end{lem}
 
@@ -81422,7 +81422,7 @@ $\bigcup X$ ગણાંક છે.
 
 \begin{proof}
 વિરોધાભાસ માટે ધારો કે $C = \Setabs{\cardfont{a}}{\cardfont{a} \text{
-is a cardinal}}$. હવે \olref{unioncardinalscardinal}
+ગણાંક છે}}$. હવે \olref{unioncardinalscardinal}
 મુજબ $\bigcup C$ ગણાંક છે; તેથી
 \olref{lem:NoLargestCardinal} મુજબ કોઈ ગણાંક
 $\cardfont{b} > \bigcup C$ છે. વ્યાખ્યાથી
@@ -81448,10 +81448,10 @@ $\cardfont{b} \leq \bigcup C$; આ વિરોધાભાસ છે.
 \olref[cp]{sec}માં આપણે કૅન્ટરનો સિદ્ધાંત વર્ણવ્યો હતો.
 તે આ હતો:
 \begin{align*}
-	\card{A} = \card{B} & \text{ iff } A \approx B.
+	\card{A} = \card{B} & \text{ જો અને માત્ર જો } A \approx B.
 \intertext{આ આજકાલ \emph{હ્યુમનો સિદ્ધાંત} કહેવાય છે
 તેના જેવો છે; તે કહે છે:}
-	\fregenum{x} {F(x)} = \fregenum{x}{G(x)} & \text{ iff } F \sim G
+	\fregenum{x} {F(x)} = \fregenum{x}{G(x)} & \text{ જો અને માત્ર જો } F \sim G
 \end{align*}
 અહીં `$F \sim G$' એટલે $F$ હોય એવી વસ્તુઓ
 $G$ હોય એવી વસ્તુઓ જેટલી જ છે; એટલે $F$ હોય
@@ -81490,7 +81490,7 @@ $G$ હોય એવી વસ્તુઓની સંખ્યા જેટલ
 સમાનતા નોંધો. તેને આપણે \olref[story][blv]{sec}માં
 આમ રજૂ કર્યો હતો:
 \[
-	\fregeext{x}{F(x)} = \fregeext{x}{G(x)} \text{iff } \lforall[x][(F(x) \liff G(x))].
+	\fregeext{x}{F(x)} = \fregeext{x}{G(x)} \text{જો અને માત્ર જો } \lforall[x][(F(x) \liff G(x))].
 \]
 અહીં થોડી ટિપ્પણી અને સરખામણી ઉપયોગી થશે.
 

@@ -9,9 +9,9 @@
   "appended_existing_genuine_rows": 4004,
   "current_index": {
     "path": "private-state\\work\\FULL_SEGMENT_CANON_BINDINGS_049.jsonl",
-    "sha256": "d5cd560770de7989c8c4bb35853aa16056b220c0e441a2444b654cd932ae2568"
+    "sha256": "72eb5feb06cbc0004bb3e539aaa0d647efdc770da9ed378ee49820ebaf70d535"
   },
-  "main_ledger_sha256": "6af6f41b5ae3941980eb29ae65bcb7e7a3f91fe4ce1480fed87da667303d341e",
+  "main_ledger_sha256": "6193916419f0d208662ec4a158c9aaf03b1f18e1384443d6d77061f5b383b44f",
   "evidence_files": [
     {
       "segment_id": "OLP-0001-B001",
@@ -53871,5 +53871,6 @@
     }
   ],
   "method": "Use only pre-existing unit review rows with genuine recorded consultation. Recheck live frozen source/target file and raw segment byte hashes. Preserve historical rows; append only missing current rows. Consolidation is not a new consultation or review.",
-  "status": "current_evidence_consolidated_remaining_uncovered_roles_require_concrete_classification_or_repair"
+  "status": "current_exact_bindings_complete_with_genuine_formula_annotation_reconsultation",
+  "annotation_localization_overlay": "FORMULA_ANNOTATION_LOCALIZATION_050.json"
 }

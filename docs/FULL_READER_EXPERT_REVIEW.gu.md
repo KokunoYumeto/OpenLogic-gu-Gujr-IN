@@ -8,6 +8,8 @@ OpenAI Codex — GPT-5.6 Sol અને GPT-6 Sol, Ultra effort દ્વાર�
 
 સુધારો સૂચવતાં એકમ/ખંડની ઓળખ, હાલનું રૂપ, સૂચિત રૂપ, અર્થનો ભેદ અને પ્રમાણિત ગુજરાતી સ્રોતનું ચોક્કસ સ્થાન આપો. અંગ્રેજીના સૂત્ર, પરિમાણક, ધારણા અને શરતો જાળવો. નિષ્ણાતનો જવાબ પ્રકાશન માટેનો માનવીય અવરોધ નથી.
 
+[સૂત્રની અંદરના 66 ગદ્ય પ્રસંગની નવી ગુજરાતી સમીક્ષા](FORMULA_ANNOTATION_REVIEW.gu.md). પહેલાંની આયાત-પ્રગતિ જણાવતા સમીક્ષા-વાક્યો ઐતિહાસિક છે; હાલ બધા 722 એકમ પૂર્ણ છે.
+
 - [OLP-0001](review-units/OLP-0001.gu.md) — `content/open-logic-about.tex`; 4 ખંડ.
 - [OLP-0002](review-units/OLP-0002.gu.md) — `content/content.tex`; 3 ખંડ.
 - [OLP-0003](review-units/OLP-0003.gu.md) — `content/sets-functions-relations/sets-functions-relations-complete.tex`; 2 ખંડ.

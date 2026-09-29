@@ -1,48 +1,48 @@
 {
   "schema": "openlogic-gu-full-reader-guarded-build/1",
-  "started_at_utc": "2026-09-29T03:45:00.7768014Z",
+  "started_at_utc": "2026-09-29T04:28:54.9001765Z",
   "mutex": "Global\\InterlanguageTeXSlotV1",
   "timeout_ms": 1000,
   "acquired": true,
   "steps": [
     {
       "step": "lualatex-1",
-      "process_id": 28968,
+      "process_id": 74800,
       "exit_code": 0
     },
     {
       "step": "bibtex",
-      "process_id": 37616,
+      "process_id": 57476,
       "exit_code": 0
     },
     {
       "step": "lualatex-2",
-      "process_id": 65480,
+      "process_id": 52468,
       "exit_code": 0
     },
     {
       "step": "lualatex-3",
-      "process_id": 35432,
+      "process_id": 21372,
       "exit_code": 0
     }
   ],
   "status": "three_lualatex_passes_and_bibtex_succeeded_visual_and_semantic_QA_pending",
-  "preparation_sha256": "7152ad0224712a79d8d0e37d28facbf8c3631a234f128584be26b026ef1ecc44",
+  "preparation_sha256": "ec471bec601be74a4a0e79509949679b099d6708b6e2c015177d12781a982cfb",
   "log": {
     "path": "private-state\\work\\full-reader-proof-049\\gu-full-reader-proof.log",
-    "sha256": "884841380ce15578be0e8f6a97a74515c5e9394387bd369cd0bf403e7923baac"
+    "sha256": "10c44feb15e451a361dbb79b66eb00841efc34a1739931f91a77f928957ab329"
   },
   "missing_characters": [],
   "undefined_references": [],
   "pdf": {
     "path": "private-state\\work\\full-reader-proof-049\\gu-full-reader-proof.pdf",
-    "bytes": 8640831,
-    "sha256": "7b452b63950cdfcbd5c0729fb2281cd41d49459a57b7703ef5974a8165e82aef"
+    "bytes": 8640418,
+    "sha256": "d3ac6296f87722c4de9b5478b31378416586df4142956678e48727c5edd9cea2"
   },
-  "ended_at_utc": "2026-09-29T03:50:10.6373425Z",
+  "ended_at_utc": "2026-09-29T04:34:03.4523340Z",
   "tex_errors": [],
   "saved_log": {
-    "path": "private-state\\work\\full-reader-proof-049\\20260929T034500Z.tex.log",
-    "sha256": "884841380ce15578be0e8f6a97a74515c5e9394387bd369cd0bf403e7923baac"
+    "path": "private-state\\work\\full-reader-proof-049\\20260929T042854Z.tex.log",
+    "sha256": "10c44feb15e451a361dbb79b66eb00841efc34a1739931f91a77f928957ab329"
   }
 }

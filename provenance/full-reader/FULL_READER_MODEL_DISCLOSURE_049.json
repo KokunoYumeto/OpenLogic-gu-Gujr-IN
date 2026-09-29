@@ -1,20 +1,8 @@
 {
   "schema": "openlogic-gu-full-reader-model-disclosure/1",
-  "checked_at_utc": "2026-09-29T03:53:02.004245+00:00",
-  "method_gu": "આ ચોક્કસ કાર્યના જાણીતા મૂળ turn_contextમાંથી ફક્ત મોડેલ, effort, સમય અને નોંધના હૅશ લીધા છે. સંવાદ, ખાનગી પથ અથવા ઓળખપત્ર-સામગ્રી જાહેર નોંધમાં નથી.",
-  "models": [
-    {
-      "model": "gpt-5.6-sol",
-      "effort": "ultra",
-      "turns": 123
-    },
-    {
-      "model": "gpt-6-sol",
-      "effort": "ultra",
-      "turns": 81
-    }
-  ],
-  "turn_metadata": [
+  "checked_at_utc": "2026-09-29T04:28:42.678207+00:00",
+  "method": "Only turn_context metadata from this exact task's known local rollout; no prompt or credential content retained.",
+  "records": [
     {
       "timestamp_utc": "2026-09-04T14:24:25.688Z",
       "model": "gpt-5.6-sol",
@@ -1238,7 +1226,27 @@
       "model": "gpt-6-sol",
       "effort": "ultra",
       "record_sha256": "cbb365b14fa41e18d8a6915a6436af740b8108d7fd2eefc3ca3ff4006ea5503f"
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:08:43.413Z",
+      "model": "gpt-6-sol",
+      "effort": "ultra",
+      "record_sha256": "5637aab91109e5268731fa5b41f5584be59ba4db51f4c65d4786a20cbbf9d165"
     }
   ],
-  "disclosure_gu": "OpenAI Codex — GPT-5.6 Sol અને GPT-6 Sol, Ultra effort દ્વારા ભાષાંતર, સુધારા, સંપાદન અને પોતાની સમીક્ષા થયાં છે. સ્વતંત્ર માનવ નિષ્ણાતનું પ્રમાણન નથી."
+  "counts": [
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "ultra",
+      "turns": 123
+    },
+    {
+      "model": "gpt-6-sol",
+      "effort": "ultra",
+      "turns": 82
+    }
+  ],
+  "human_certification_claimed": false,
+  "current_model": "gpt-6-sol",
+  "current_effort": "ultra"
 }

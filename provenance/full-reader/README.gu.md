@@ -6,4 +6,6 @@ CANON_SOURCES અને CANON_PASSAGESમાં સ્થાનિક સંશ�
 
 યંત્રવાચ્ય ચાવીઓ, મૂળ અંગ્રેજી તુલના-પાઠ, ઐતિહાસિક નોંધો અને સ્થિર ઓળખો જાળવ્યાં છે. સંપૂર્ણ ગુજરાતી સમીક્ષા માટે docs/FULL_READER_EXPERT_REVIEW.gu.md અને docs/TERMINOLOGY_REVIEW.gu.md જુઓ. CURRENT_SEGMENT_BINDINGS.gu.jsonl બધા 6732 હાલના ખંડનો ગુજરાતી પ્રવેશ અને TERM_DECISIONS.gu.jsonl પસંદગીઓના ગુજરાતી કારણો આપે છે. docs/FULL_READER_REVIEW.gu.md નવા એકમોની મૂળ ગુજરાતી સમીક્ષા છે; docs/FULL_READER_GRAMMAR_REVIEW.gu.md વ્યાકરણના ચોક્કસ પ્રસંગ આપે છે. કેટલાક વિશિષ્ટ શબ્દોને કામચલાઉ રીતે અપનાવ્યા છે; સામાન્ય ગુજરાતી ગદ્યનું સાક્ષ્ય તે વિશિષ્ટ શબ્દનું મૂળ-ભાષીય પ્રમાણ નથી.
 
+સૂત્રોની અંદરના 66 ગદ્ય પ્રસંગનો અંતિમ ગુજરાતી સુધારો docs/FORMULA_ANNOTATION_REVIEW.gu.md અને FORMULA_ANNOTATION_LOCALIZATION_050.jsonમાં નોંધાયો છે. મૂળ ચલ તથા ગણિતીય શરતો જાળવ્યાં છે; નવા 28 બદલાયેલા ખંડોના સાક્ષ્ય-બંધનો ફરી જોડી દીધાં છે.
+
 OpenAI Codex — GPT-5.6 Sol અને GPT-6 Sol, Ultra effort દ્વારા અનુવાદ, સુધારા અને પોતાની સમીક્ષા થયાં છે. સ્વતંત્ર માનવીય સમીક્ષા કે પ્રમાણનનો દાવો નથી.

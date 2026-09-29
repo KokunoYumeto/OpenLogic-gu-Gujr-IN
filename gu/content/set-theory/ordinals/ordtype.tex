@@ -28,7 +28,7 @@ $\tuple{A, <}$ \emph{કોઈ પણ} ક્રમવાચક સંખ્ય�
 ક્રમ-એકરૂપ છે, અને ઉપર મુજબ એ સંખ્યા અનન્ય છે. તેથી
 પ્રતિસ્થાપનથી નીચેનો ગણ અસ્તિત્વમાં છે અને તે વિધેય છે:
 \[
-	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ and }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
+	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ અને }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
 \]
 વિરોધાભાસ પૂર્ણ કરવા આપણે બતાવીશું કે કોઈ ક્રમવાચક સંખ્યા
 $\alpha$ માટે $f$ એ $\alpha \to B$ એકરૂપતા છે.
@@ -60,8 +60,8 @@ $\ordeq{\tuple{A, < }}{\alpha}$.
 \begin{cor}\ollabel{ordtypesworklikeyouwant}
 $\tuple{A, <}$ અને $\tuple{B, \lessdot}$ સુક્રમો હોય ત્યારે:
 \begin{align*}
-	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
-	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ for some }b \in B
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
+	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ કોઈ }b \in B\text{ માટે}
 \end{align*}
 \end{cor}
 
@@ -71,9 +71,9 @@ $\tuple{A, <}$ અને $\tuple{B, \lessdot}$ સુક્રમો હોય �
 \lessdot} = \beta$ લો, અને $f \colon \beta \to \tuple {B, \lessdot}$
 આપણી એકરૂપતા હોય. તો:
 \begin{align*}
-	\alpha \in \beta&\text{ iff }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ is an isomorphism}\\
-	&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
-	&\text{ iff }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ for some $b \in B$}
+	\alpha \in \beta&\text{ જો અને માત્ર જો }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ એકરૂપતા છે}\\
+	&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
+	&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ કોઈ $b \in B$ માટે}
 \end{align*}
 \sourcecorrection{OLMD-117}{મૂળના પ્રદર્શનની પહેલી હરોળમાં
 $f(\alpha)$ ફક્ત $\alpha \in \beta$ હોય ત્યારે જ
