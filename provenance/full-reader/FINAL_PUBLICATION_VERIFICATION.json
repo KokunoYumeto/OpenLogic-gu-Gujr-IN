@@ -1,0 +1,633 @@
+{
+  "schema": "openlogic-gu-final-publication-verification/1",
+  "verified_at_utc": "2026-09-29T04:58:48.829246+00:00",
+  "version": "full-edition-v1.0.1",
+  "status": "passed_both_public_destinations_all_owned_file_bytes_sha256_and_complete_sources",
+  "summary_gu": "બધા 722 એકમની સંપૂર્ણ આવૃત્તિ GitHub અને એ જ Zenodo સંકલ્પ-શ્રેણીમાં ખુલ્લી છે. બંને સ્થળની દરેક 25 ફાઇલ અનામી રીતે ડાઉનલોડ કરીને બાઇટ-સંખ્યા અને SHA-256 સરખાવ્યાં. દરેક સ્રોત ZIPના 2829 હૅશવાળા સભ્યો અને બંને 722-મોડ્યુલ સમૂહ ચકાસ્યાં; સીધી TeX અને PDF તેના આર્કાઇવ-પ્રતિ સાથે સમાન છે.",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "source_units": 722,
+  "pdf_pages": 960,
+  "pdf_sha256": "d3ac6296f87722c4de9b5478b31378416586df4142956678e48727c5edd9cea2",
+  "models": [
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "ultra"
+    },
+    {
+      "model": "gpt-6-sol",
+      "effort": "ultra"
+    }
+  ],
+  "github": {
+    "schema": "openlogic-gu-full-edition-anonymous-verification/1",
+    "verified_at_utc": "2026-09-29T04:52:31.127858+00:00",
+    "destination": "github",
+    "record_url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/full-edition-v1.0.1",
+    "version": "full-edition-v1.0.1",
+    "source_units": 722,
+    "artifacts": [
+      {
+        "filename": "01-OpenLogic-gu-Gujr-IN-Full.pdf",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/01-OpenLogic-gu-Gujr-IN-Full.pdf",
+        "bytes": 8640418,
+        "sha256": "d3ac6296f87722c4de9b5478b31378416586df4142956678e48727c5edd9cea2",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "02-OpenLogic-gu-Gujr-IN-Full-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/02-OpenLogic-gu-Gujr-IN-Full-Text.tex",
+        "bytes": 5207188,
+        "sha256": "b8cd82a4400083b688d81b2b0b7cfc20e1b0e78682c8a72099859f678f7d23be",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "03-OpenLogic-gu-Gujr-IN-Full-Source.zip",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/03-OpenLogic-gu-Gujr-IN-Full-Source.zip",
+        "bytes": 38571076,
+        "sha256": "2e98b77a3c1158d89b060ed3627297755d8a8a50a1621566b935d8efdedeee17",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "04-OpenLogic-gu-Gujr-IN-Source-Index.html",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/04-OpenLogic-gu-Gujr-IN-Source-Index.html",
+        "bytes": 352045,
+        "sha256": "b84fa31c9960ab74071f21c978be9a60310e3fb46c8f60678d41a4378ae43cd4",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "05-OpenLogic-gu-Gujr-IN-Full-QA.json",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/05-OpenLogic-gu-Gujr-IN-Full-QA.json",
+        "bytes": 64385,
+        "sha256": "83f44123d90b4d8a589ca61f67d7bc0f124e568c1ef6155fe4629865a9345b92",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "10-OpenLogic-gu-Gujr-IN-OLP-0003-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/10-OpenLogic-gu-Gujr-IN-OLP-0003-Part-Text.tex",
+        "bytes": 419381,
+        "sha256": "05fe4620c499e2317a30625a4efd0acc4708c22e871bf9ac389892429642919f",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "11-OpenLogic-gu-Gujr-IN-OLP-0055-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/11-OpenLogic-gu-Gujr-IN-OLP-0055-Part-Text.tex",
+        "bytes": 57131,
+        "sha256": "2f7b8915b7742bfa717c464538d27e32a3eb8f1fa82324978c0283b6e1fb56a0",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "12-OpenLogic-gu-Gujr-IN-OLP-0138-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/12-OpenLogic-gu-Gujr-IN-OLP-0138-Part-Text.tex",
+        "bytes": 956624,
+        "sha256": "c630fdbd31982c04494765f713e36b9f0ade111ddc99a0016397ebf5a7b8f03f",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "13-OpenLogic-gu-Gujr-IN-OLP-0182-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/13-OpenLogic-gu-Gujr-IN-OLP-0182-Part-Text.tex",
+        "bytes": 220600,
+        "sha256": "df624a002e90aacaa54027bc7144efa6331becb42b96ed267f4ed4561110d7b7",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "14-OpenLogic-gu-Gujr-IN-OLP-0208-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/14-OpenLogic-gu-Gujr-IN-OLP-0208-Part-Text.tex",
+        "bytes": 256574,
+        "sha256": "2dccb926c2a73ec461627c6a59a88ce83e9ac64e27704f71051e038c726aa0b4",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "15-OpenLogic-gu-Gujr-IN-OLP-0252-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/15-OpenLogic-gu-Gujr-IN-OLP-0252-Part-Text.tex",
+        "bytes": 220445,
+        "sha256": "82b73071678b1b06567adb01bf0e168cbdd2b6bdddfdb4e792d85230a674f580",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "16-OpenLogic-gu-Gujr-IN-OLP-0274-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/16-OpenLogic-gu-Gujr-IN-OLP-0274-Part-Text.tex",
+        "bytes": 421734,
+        "sha256": "dd5320b5522093306d6168b9e90601ae17d6e62de2d71c2ab45330b37d402313",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "17-OpenLogic-gu-Gujr-IN-OLP-0322-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/17-OpenLogic-gu-Gujr-IN-OLP-0322-Part-Text.tex",
+        "bytes": 111428,
+        "sha256": "64488824e0d2a2a8b52bbcfc3a3cc66053d5ae8a0ce9df0d2b65ccca766f98ef",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "18-OpenLogic-gu-Gujr-IN-OLP-0341-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/18-OpenLogic-gu-Gujr-IN-OLP-0341-Part-Text.tex",
+        "bytes": 245552,
+        "sha256": "fce221d9605ff46f8db438851b12ca75067d9492de5507189a2034ed3fa0f996",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "19-OpenLogic-gu-Gujr-IN-OLP-0685-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/19-OpenLogic-gu-Gujr-IN-OLP-0685-Part-Text.tex",
+        "bytes": 607030,
+        "sha256": "9f6057b5ed3237c9938b95748c3d5917e19f91519bc0b12feef8552bb73014af",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "20-OpenLogic-gu-Gujr-IN-OLP-0383-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/20-OpenLogic-gu-Gujr-IN-OLP-0383-Part-Text.tex",
+        "bytes": 135785,
+        "sha256": "f14444a7a0b17e3b4c5f68bb2ec344d83e06743413dc96dbb14706ff0720c40a",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "21-OpenLogic-gu-Gujr-IN-OLP-0407-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/21-OpenLogic-gu-Gujr-IN-OLP-0407-Part-Text.tex",
+        "bytes": 470308,
+        "sha256": "2924a297f229ee2a256038bf7167a6fd0cd8eb46088bbffe791785820abf71ed",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "22-OpenLogic-gu-Gujr-IN-OLP-0475-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/22-OpenLogic-gu-Gujr-IN-OLP-0475-Part-Text.tex",
+        "bytes": 78701,
+        "sha256": "fda0f54edf933780a2c1cc7c00a6962846b87ef7102e6c814180081cbab73c69",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "23-OpenLogic-gu-Gujr-IN-OLP-0491-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/23-OpenLogic-gu-Gujr-IN-OLP-0491-Part-Text.tex",
+        "bytes": 147470,
+        "sha256": "326ccc9f43109748ca36c0f3ff3a2f23f4d023f8fb1d8f61a119d4f0a53e48b0",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "24-OpenLogic-gu-Gujr-IN-OLP-0516-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/24-OpenLogic-gu-Gujr-IN-OLP-0516-Part-Text.tex",
+        "bytes": 63921,
+        "sha256": "3067ab5d9ae9e1b6af1406db894cb33559221768a4141dbc90b9aa153cfdf074",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "25-OpenLogic-gu-Gujr-IN-OLP-0529-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/25-OpenLogic-gu-Gujr-IN-OLP-0529-Part-Text.tex",
+        "bytes": 446299,
+        "sha256": "699ce60ac1db008e5916ebfcb1df80134d464a1da6acfa2d04d346a7a8f21413",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "26-OpenLogic-gu-Gujr-IN-OLP-0601-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/26-OpenLogic-gu-Gujr-IN-OLP-0601-Part-Text.tex",
+        "bytes": 163102,
+        "sha256": "1c459078350bda58e82f66b1fc3f4f106bcdf88d1120641773e85b9aabaf5fad",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "27-OpenLogic-gu-Gujr-IN-OLP-0620-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/27-OpenLogic-gu-Gujr-IN-OLP-0620-Part-Text.tex",
+        "bytes": 129700,
+        "sha256": "181aaa12cbcb9cf0ea09944fdeba4ef782db7ea7283986611ab419a5590fc083",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "28-OpenLogic-gu-Gujr-IN-OLP-0640-Part-Text.tex",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/28-OpenLogic-gu-Gujr-IN-OLP-0640-Part-Text.tex",
+        "bytes": 3770,
+        "sha256": "3fa2579e10a5dd4d9994df5e8c579c8c45b0cefe96f78f76eecb172fa2158aec",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "99-SHA256SUMS-Full.txt",
+        "url": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.0.1/99-SHA256SUMS-Full.txt",
+        "bytes": 2667,
+        "sha256": "670960255e2d7fb49f57d1df748675de7243c8f5d4c8fee1893d351b53201946",
+        "anonymous_verified": true
+      }
+    ],
+    "source_inventory": {
+      "archive_entries": 2831,
+      "inventory_entries": 2829,
+      "all_members_bytes_sha256_verified": true,
+      "gujarati_tex_units": 722,
+      "frozen_english_tex_units": 722,
+      "direct_tex_matches_master": true,
+      "pdf_matches_archived_pdf": true
+    },
+    "status": "passed_all_anonymous_file_bytes_hashes_and_source_inventory",
+    "authentication": "No token loaded or Authorization header; trust_env disabled"
+  },
+  "zenodo": {
+    "schema": "openlogic-gu-full-edition-anonymous-verification/1",
+    "verified_at_utc": "2026-09-29T04:56:29.388489+00:00",
+    "destination": "zenodo",
+    "record_url": "https://zenodo.org/records/23030256",
+    "version": "full-edition-v1.0.1",
+    "source_units": 722,
+    "artifacts": [
+      {
+        "filename": "01-OpenLogic-gu-Gujr-IN-Full.pdf",
+        "url": "https://zenodo.org/api/records/23030256/files/01-OpenLogic-gu-Gujr-IN-Full.pdf/content",
+        "bytes": 8640418,
+        "sha256": "d3ac6296f87722c4de9b5478b31378416586df4142956678e48727c5edd9cea2",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "02-OpenLogic-gu-Gujr-IN-Full-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/02-OpenLogic-gu-Gujr-IN-Full-Text.tex/content",
+        "bytes": 5207188,
+        "sha256": "b8cd82a4400083b688d81b2b0b7cfc20e1b0e78682c8a72099859f678f7d23be",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "03-OpenLogic-gu-Gujr-IN-Full-Source.zip",
+        "url": "https://zenodo.org/api/records/23030256/files/03-OpenLogic-gu-Gujr-IN-Full-Source.zip/content",
+        "bytes": 38571076,
+        "sha256": "2e98b77a3c1158d89b060ed3627297755d8a8a50a1621566b935d8efdedeee17",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "04-OpenLogic-gu-Gujr-IN-Source-Index.html",
+        "url": "https://zenodo.org/api/records/23030256/files/04-OpenLogic-gu-Gujr-IN-Source-Index.html/content",
+        "bytes": 352045,
+        "sha256": "b84fa31c9960ab74071f21c978be9a60310e3fb46c8f60678d41a4378ae43cd4",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "05-OpenLogic-gu-Gujr-IN-Full-QA.json",
+        "url": "https://zenodo.org/api/records/23030256/files/05-OpenLogic-gu-Gujr-IN-Full-QA.json/content",
+        "bytes": 64385,
+        "sha256": "83f44123d90b4d8a589ca61f67d7bc0f124e568c1ef6155fe4629865a9345b92",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "10-OpenLogic-gu-Gujr-IN-OLP-0003-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/10-OpenLogic-gu-Gujr-IN-OLP-0003-Part-Text.tex/content",
+        "bytes": 419381,
+        "sha256": "05fe4620c499e2317a30625a4efd0acc4708c22e871bf9ac389892429642919f",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "11-OpenLogic-gu-Gujr-IN-OLP-0055-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/11-OpenLogic-gu-Gujr-IN-OLP-0055-Part-Text.tex/content",
+        "bytes": 57131,
+        "sha256": "2f7b8915b7742bfa717c464538d27e32a3eb8f1fa82324978c0283b6e1fb56a0",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "12-OpenLogic-gu-Gujr-IN-OLP-0138-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/12-OpenLogic-gu-Gujr-IN-OLP-0138-Part-Text.tex/content",
+        "bytes": 956624,
+        "sha256": "c630fdbd31982c04494765f713e36b9f0ade111ddc99a0016397ebf5a7b8f03f",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "13-OpenLogic-gu-Gujr-IN-OLP-0182-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/13-OpenLogic-gu-Gujr-IN-OLP-0182-Part-Text.tex/content",
+        "bytes": 220600,
+        "sha256": "df624a002e90aacaa54027bc7144efa6331becb42b96ed267f4ed4561110d7b7",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "14-OpenLogic-gu-Gujr-IN-OLP-0208-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/14-OpenLogic-gu-Gujr-IN-OLP-0208-Part-Text.tex/content",
+        "bytes": 256574,
+        "sha256": "2dccb926c2a73ec461627c6a59a88ce83e9ac64e27704f71051e038c726aa0b4",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "15-OpenLogic-gu-Gujr-IN-OLP-0252-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/15-OpenLogic-gu-Gujr-IN-OLP-0252-Part-Text.tex/content",
+        "bytes": 220445,
+        "sha256": "82b73071678b1b06567adb01bf0e168cbdd2b6bdddfdb4e792d85230a674f580",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "16-OpenLogic-gu-Gujr-IN-OLP-0274-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/16-OpenLogic-gu-Gujr-IN-OLP-0274-Part-Text.tex/content",
+        "bytes": 421734,
+        "sha256": "dd5320b5522093306d6168b9e90601ae17d6e62de2d71c2ab45330b37d402313",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "17-OpenLogic-gu-Gujr-IN-OLP-0322-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/17-OpenLogic-gu-Gujr-IN-OLP-0322-Part-Text.tex/content",
+        "bytes": 111428,
+        "sha256": "64488824e0d2a2a8b52bbcfc3a3cc66053d5ae8a0ce9df0d2b65ccca766f98ef",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "18-OpenLogic-gu-Gujr-IN-OLP-0341-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/18-OpenLogic-gu-Gujr-IN-OLP-0341-Part-Text.tex/content",
+        "bytes": 245552,
+        "sha256": "fce221d9605ff46f8db438851b12ca75067d9492de5507189a2034ed3fa0f996",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "19-OpenLogic-gu-Gujr-IN-OLP-0685-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/19-OpenLogic-gu-Gujr-IN-OLP-0685-Part-Text.tex/content",
+        "bytes": 607030,
+        "sha256": "9f6057b5ed3237c9938b95748c3d5917e19f91519bc0b12feef8552bb73014af",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "20-OpenLogic-gu-Gujr-IN-OLP-0383-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/20-OpenLogic-gu-Gujr-IN-OLP-0383-Part-Text.tex/content",
+        "bytes": 135785,
+        "sha256": "f14444a7a0b17e3b4c5f68bb2ec344d83e06743413dc96dbb14706ff0720c40a",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "21-OpenLogic-gu-Gujr-IN-OLP-0407-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/21-OpenLogic-gu-Gujr-IN-OLP-0407-Part-Text.tex/content",
+        "bytes": 470308,
+        "sha256": "2924a297f229ee2a256038bf7167a6fd0cd8eb46088bbffe791785820abf71ed",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "22-OpenLogic-gu-Gujr-IN-OLP-0475-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/22-OpenLogic-gu-Gujr-IN-OLP-0475-Part-Text.tex/content",
+        "bytes": 78701,
+        "sha256": "fda0f54edf933780a2c1cc7c00a6962846b87ef7102e6c814180081cbab73c69",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "23-OpenLogic-gu-Gujr-IN-OLP-0491-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/23-OpenLogic-gu-Gujr-IN-OLP-0491-Part-Text.tex/content",
+        "bytes": 147470,
+        "sha256": "326ccc9f43109748ca36c0f3ff3a2f23f4d023f8fb1d8f61a119d4f0a53e48b0",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "24-OpenLogic-gu-Gujr-IN-OLP-0516-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/24-OpenLogic-gu-Gujr-IN-OLP-0516-Part-Text.tex/content",
+        "bytes": 63921,
+        "sha256": "3067ab5d9ae9e1b6af1406db894cb33559221768a4141dbc90b9aa153cfdf074",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "25-OpenLogic-gu-Gujr-IN-OLP-0529-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/25-OpenLogic-gu-Gujr-IN-OLP-0529-Part-Text.tex/content",
+        "bytes": 446299,
+        "sha256": "699ce60ac1db008e5916ebfcb1df80134d464a1da6acfa2d04d346a7a8f21413",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "26-OpenLogic-gu-Gujr-IN-OLP-0601-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/26-OpenLogic-gu-Gujr-IN-OLP-0601-Part-Text.tex/content",
+        "bytes": 163102,
+        "sha256": "1c459078350bda58e82f66b1fc3f4f106bcdf88d1120641773e85b9aabaf5fad",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "27-OpenLogic-gu-Gujr-IN-OLP-0620-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/27-OpenLogic-gu-Gujr-IN-OLP-0620-Part-Text.tex/content",
+        "bytes": 129700,
+        "sha256": "181aaa12cbcb9cf0ea09944fdeba4ef782db7ea7283986611ab419a5590fc083",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "28-OpenLogic-gu-Gujr-IN-OLP-0640-Part-Text.tex",
+        "url": "https://zenodo.org/api/records/23030256/files/28-OpenLogic-gu-Gujr-IN-OLP-0640-Part-Text.tex/content",
+        "bytes": 3770,
+        "sha256": "3fa2579e10a5dd4d9994df5e8c579c8c45b0cefe96f78f76eecb172fa2158aec",
+        "anonymous_verified": true
+      },
+      {
+        "filename": "99-SHA256SUMS-Full.txt",
+        "url": "https://zenodo.org/api/records/23030256/files/99-SHA256SUMS-Full.txt/content",
+        "bytes": 2667,
+        "sha256": "670960255e2d7fb49f57d1df748675de7243c8f5d4c8fee1893d351b53201946",
+        "anonymous_verified": true
+      }
+    ],
+    "source_inventory": {
+      "archive_entries": 2831,
+      "inventory_entries": 2829,
+      "all_members_bytes_sha256_verified": true,
+      "gujarati_tex_units": 722,
+      "frozen_english_tex_units": 722,
+      "direct_tex_matches_master": true,
+      "pdf_matches_archived_pdf": true
+    },
+    "status": "passed_all_anonymous_file_bytes_hashes_and_source_inventory",
+    "authentication": "No token loaded or Authorization header; trust_env disabled",
+    "doi": "10.5281/zenodo.23030256",
+    "conceptrecid": "22308101",
+    "preview_file": "01-OpenLogic-gu-Gujr-IN-Full.pdf",
+    "pdf_default_preview_verified": true,
+    "old_public_record_preserved": 22991323,
+    "earlier_full_public_record_preserved": 23029704
+  },
+  "provider_archives": {
+    "schema": "openlogic-gu-github-provider-source-verification/1",
+    "checked_at_utc": "2026-09-29T04:52:46.152644+00:00",
+    "version": "full-edition-v1.0.1",
+    "edition_uploaded_files": 25,
+    "provider_generated_source_files": 2,
+    "complete_release_download_inventory": 27,
+    "file_cap": 100,
+    "artifacts": [
+      {
+        "provider_filename": "full-edition-v1.0.1",
+        "format": "zip",
+        "url": "https://api.github.com/repos/KokunoYumeto/OpenLogic-gu-Gujr-IN/zipball/full-edition-v1.0.1",
+        "bytes": 127960675,
+        "sha256": "4ef3cc955f83699f18a5040337d55ce22385df2b4961fc24ac161dd70b1931e6",
+        "package_inventory_members_verified": 2829,
+        "anonymous_download_verified": true
+      },
+      {
+        "provider_filename": "full-edition-v1.0.1",
+        "format": "tar.gz",
+        "url": "https://api.github.com/repos/KokunoYumeto/OpenLogic-gu-Gujr-IN/tarball/full-edition-v1.0.1",
+        "bytes": 125079716,
+        "sha256": "8e129c1cc908c5e0c71d5a1024ed001a089adf938d1f224535abf2bfa5dd99b0",
+        "package_inventory_members_verified": 2829,
+        "anonymous_download_verified": true
+      }
+    ],
+    "note_gu": "GitHub પોતાની બે સ્રોત-આર્કાઇવ ઉમેરે છે. પ્રકાશકની 25 ફાઇલો સાથે કુલ 27 ડાઉનલોડ છે. બંને આર્કાઇવ અનામી રીતે વાંચી, તેમના પૅકેજ-સ્રોતના 2829 સભ્યોનો હૅશ સરખાવ્યો છે.",
+    "status": "passed_anonymous_provider_archives_and_full_release_file_cap"
+  },
+  "rendered_public_surfaces": {
+    "schema": "openlogic-gu-public-ui-inspection/2",
+    "checked_at_utc": "2026-09-29T04:58:12.145504+00:00",
+    "version": "full-edition-v1.0.1",
+    "observations_gu": [
+      "GitHubની નવી આવૃત્તિનો મથાળો, વર્ણન અને ડાઉનલોડ-ક્રમ ખરેખર ગુજરાતીમાં વાંચ્યાં. 722 એકમ, 960 પાનાં, 133 દૃશ્ય નમૂના, બંને ચોક્કસ મોડલ/Ultra અને 66 સુધારા દેખાય છે. Assets 27 દેખાય છે.",
+      "સૂત્ર-ગદ્યની ગુજરાતી સુધારા-નોંધ ખરેખર રેન્ડર થયેલી વાંચી: અંગ્રેજી મૂળ ઉદ્ધરણ સામે ગુજરાતી પસંદગી, અર્થ/સંકેત જાળવણી, અગાઉની ભૂલ અને વિશિષ્ટ નામના કામચલાઉ સ્વરૂપનો ભેદ છે.",
+      "બધા 722 એકમ અને 6732 ખંડની ગુજરાતી સમીક્ષા-સૂચિ ખરેખર ખુલેલી વાંચી; 66 નવી સુધારાની કડી અને જૂના પ્રગતિ-વાક્યોનો ઐતિહાસિક ભેદ સ્પષ્ટ છે.",
+      "નવી ટૅગની પરિભાષા-નોંધ રેન્ડર થયેલી વાંચી; ગુજરાતી કારણ, ખરેખર નોંધાયેલા વિકલ્પ, વિશ્વાસની મર્યાદા અને કૅનનના ચોક્કસ સ્થળ/હૅશ દેખાય છે.",
+      "Zenodo નોંધ 23030256 ખુલ્લી છે. ગુજરાતી મથાળો અને વર્ણન, 722 એકમ, 960 પાનાં, બંને મોડલ/Ultra, સ્વતંત્ર માનવ પ્રમાણન ન હોવાની નોંધ અને PDF/TeX/ZIP ક્રમ ખરેખર વાંચ્યાં.",
+      "Zenodoનું મુખ્ય પૂર્વદર્શન સંપૂર્ણ PDFનું છે. અલગ PDF પૂર્વદર્શન ખરેખર ખુલ્યું, “of 960” બતાવ્યું અને પ્રથમ પાનાનું ગુજરાતી ચિત્ર વાંચી શકાય તેવું જોયું."
+    ],
+    "pdfjs_text_layer_limit_gu": "ચિત્રમાં ગુજરાતી અક્ષરો યોગ્ય અને વાંચી શકાય છે, છતાં આ જ PDF.jsના ટેક્સ્ટ/સુગમતા સ્તરમાં કેટલાક ગુજરાતી અક્ષરો વિખંડિત કે બદલાવ-ચિહ્નવાળા જોયાં. સંપૂર્ણ PDF ટેક્સ્ટ-સુગમતા કે નિષ્કર્ષણની સફળતાનો દાવો નથી. ચોક્કસ પાઠ અને સંપાદન માટે TeX અને ગુજરાતી સમીક્ષા-પાઠ વાપરો.",
+    "pages": [
+      "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/full-edition-v1.0.1",
+      "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/blob/full-edition-v1.0.1/docs/FORMULA_ANNOTATION_REVIEW.gu.md",
+      "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/blob/full-edition-v1.0.1/docs/FULL_READER_EXPERT_REVIEW.gu.md",
+      "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/blob/full-edition-v1.0.1/docs/TERMINOLOGY_REVIEW.gu.md",
+      "https://zenodo.org/records/23030256",
+      "https://zenodo.org/records/23030256/preview/01-OpenLogic-gu-Gujr-IN-Full.pdf"
+    ],
+    "account_or_session_data_saved": false,
+    "status": "passed_actual_public_target_language_surfaces_and_readable_pdf_preview"
+  },
+  "completion_evidence": {
+    "schema": "openlogic-gu-completion-audit/1",
+    "checked_at_utc": "2026-09-29T04:58:48.648980+00:00",
+    "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "source_units": 722,
+    "live_checks": {
+      "source_and_target_units": 722,
+      "current_exact_bound_segments": 6732,
+      "actually_recorded_canon_passages_with_original_identity_verified": 96,
+      "new_review_receipts_bound_to_current_targets": 433,
+      "new_review_totals": {
+        "aligned_blocks": 6105,
+        "linguistic_blocks": 3844,
+        "source_math_spans_correction_aware": 18861,
+        "glossary_tokens": 3142
+      },
+      "earlier_verified_source_scope": 289,
+      "earlier_units_unchanged": 287,
+      "earlier_units_with_verified_annotation_correction": 2,
+      "annotation_corrections": 66,
+      "annotation_units": 17,
+      "fresh_annotation_segment_bindings": 28,
+      "gujarati_term_choices": 270,
+      "current_grammar_rules": 4,
+      "grammar_occurrences": 52,
+      "gujarati_unit_review_pages": 722,
+      "pdf_pages": 960,
+      "actual_visual_sample_pages": 133,
+      "reader_tail_fallback": 0,
+      "github_release_downloads_including_provider": 27,
+      "zenodo_files": 25
+    },
+    "adopted_checks_gu": [
+      "સમાન હાલના સ્રોત માટે મૂળ અર્થ-સમીક્ષા અને પાછા અર્થકથનનાં રેકોર્ડ ફરી વાપર્યાં; આ ઓડિટ નવો કૅનન પરામર્શ કે નવી આખી અર્થ-સમીક્ષા નથી.",
+      "પહેલાંના બિલ્ડ/કવરેજ રેકોર્ડમાં “pending” તે સમયની સ્થિતિ છે; પછીની સમાન-બાઇટ પુનર્નિર્માણ, દૃશ્ય તપાસ અને બંને જાહેર બાઇટ-ચકાસણીએ તે તબક્કા પૂર્ણ કર્યા છે.",
+      "મૂળના અધૂરા તર્ક ખુલ્લી સંપાદકીય નોંધ છે; ભાષાંતરમાં ગાયબ લખાણ નથી. પહેલાંની અધૂરી આયાત-પ્રગતિ જણાવતી સમીક્ષા-વાક્યો ઐતિહાસિક છે; આ આવૃત્તિમાં બધા 722 એકમ અલગ નોંધ સાથે પૂર્ણ છે."
+    ],
+    "limitations_gu": [
+      "અંગ્રેજી મૂળ સાથે એજન્ટની પોતાની સરખામણી, નોંધાયેલા અર્થવર્ણન નમૂનાઓ, મૂળ ગુજરાતી સાક્ષ્યના પ્રસંગવાર હૅશ અને યાંત્રિક તપાસ ઉપલબ્ધ છે. સ્વતંત્ર માનવીય નિષ્ણાતનું પ્રમાણન નથી. વિશિષ્ટ પરિભાષામાં કામચલાઉ નિર્ણયો અને મૂળના અધૂરા તર્ક ખુલ્લી નોંધ સાથે જાળવ્યાં છે.",
+      "PDFમાંથી ગુજરાતી લખાણ કાઢતાં કેટલાક સાધનો શબ્દોની અંદર ખાલી જગ્યા ઉમેરે અથવા બે શબ્દોને જોડે છે; જૂના ગણિતીય ફોન્ટના અમુક ચિહ્નો ટેક્સ્ટમાં યોગ્ય રીતે ન ઊતરે. Zenodoના PDF.js ટેક્સ્ટ/સુગમતા સ્તરમાં કેટલાક ગુજરાતી સંયુક્તાક્ષરો વિખંડિત અથવા બદલાવ-ચિહ્નવાળા આવે છે, જોકે રેન્ડર થયેલા અક્ષર વાંચી શકાય છે. ચોક્કસ પાઠ અને સૂત્રોના સંપાદન માટે સીધી સંપૂર્ણ TeX અને ગુજરાતી સમીક્ષા-પાઠ વાપરો.",
+      "ચિત્રમાં ગુજરાતી અક્ષરો યોગ્ય અને વાંચી શકાય છે, છતાં આ જ PDF.jsના ટેક્સ્ટ/સુગમતા સ્તરમાં કેટલાક ગુજરાતી અક્ષરો વિખંડિત કે બદલાવ-ચિહ્નવાળા જોયાં. સંપૂર્ણ PDF ટેક્સ્ટ-સુગમતા કે નિષ્કર્ષણની સફળતાનો દાવો નથી. ચોક્કસ પાઠ અને સંપાદન માટે TeX અને ગુજરાતી સમીક્ષા-પાઠ વાપરો.",
+      "છ નાનાં overfull hbox ચેતવણીઓ છે; સૌથી વધુ 3.61192 pt છે. યાંત્રિક પાનાંસીમા તપાસ અને સંબંધિત દૃશ્ય તપાસમાં કાપેલું લખાણ મળ્યું નથી."
+    ],
+    "evidence": [
+      {
+        "file": "FULL_FROZEN_SEED_VERIFICATION_049.json",
+        "bytes": 1041,
+        "sha256": "fc7b54f4e81d6f7235ab5cac5e9859b8722c503a1d19f79d07e86237bfa61f38"
+      },
+      {
+        "file": "FULL_CORPUS_SOURCE_COVERAGE_049.json",
+        "bytes": 496711,
+        "sha256": "dda11cec5fbccb446731b944d48714a3e6a61a92e58dd754ca9008050e5c8bc3"
+      },
+      {
+        "file": "FULL_CORPUS_SOURCE_INTEGRATION_049.json",
+        "bytes": 427015,
+        "sha256": "fccb851f27a1644a307ee895cb36879510dc274e4c4ead9014b584911bb71495"
+      },
+      {
+        "file": "FULL_SEGMENT_CANON_CONSOLIDATION_049.json",
+        "bytes": 2494761,
+        "sha256": "96dff638bfd7fcb183888257ce99b73f15d1909d940a5df167574170a66da14a"
+      },
+      {
+        "file": "FULL_READER_ASSEMBLY_049.json",
+        "bytes": 361065,
+        "sha256": "1da57205ff6a95afbc00b07975cb2c2f7b0499579fab23743e5cae39584352b6"
+      },
+      {
+        "file": "FULL_READER_GLOSSARY_049.json",
+        "bytes": 2091851,
+        "sha256": "417235acd67e4c3b093ce2ec38b09b201bd4c2f3c8b8cfb18126eeb6fa704fa8"
+      },
+      {
+        "file": "FULL_READER_GRAMMAR_REVIEW_049.json",
+        "bytes": 96628,
+        "sha256": "f6a77abd34e7f1f6b3de2953cf5869ad8bfc68de0f5b5a262a59f0486598a119"
+      },
+      {
+        "file": "FULL_READER_EXPERT_LOCALIZATION_049.json",
+        "bytes": 1679,
+        "sha256": "d15353fafebcb568f7e46d0bef97b27609753c2b479908c9b052dfc549b31974"
+      },
+      {
+        "file": "FULL_READER_TEX_ATTEMPT_049.json",
+        "bytes": 1606,
+        "sha256": "4332b54325720b83c21a176618eacfff06c69529977ca53e267bb1947acadb70"
+      },
+      {
+        "file": "FULL_READER_PORTABLE_SOURCE_049.json",
+        "bytes": 230947,
+        "sha256": "b3e39a8b14452c788a610c5f00d5ef797898629b139bdb79775de8ea1b55bca4"
+      },
+      {
+        "file": "FULL_READER_VISUAL_QA_049.json",
+        "bytes": 39043,
+        "sha256": "7e5f63e130f95f92bb8dd60fb5ac9df622aa5457a40fc08e25ab895e9e9cb036"
+      },
+      {
+        "file": "FULL_READER_PDF_PRELIMINARY_049.json",
+        "bytes": 206807,
+        "sha256": "5f289654f95877a23eaab7ab3d07eb80dd1798f2ba834300de435120b8e77a8f"
+      },
+      {
+        "file": "FULL_READER_PHOTO_CREDITS_049.json",
+        "bytes": 9361,
+        "sha256": "cb0bbd47b1011736b77f38ac74442955d74daacabf53638a1e3fcad5c3bc5850"
+      },
+      {
+        "file": "FULL_READER_FROZEN_ASSETS_049.json",
+        "bytes": 15492,
+        "sha256": "446bdd6f077855a439d7386f440b811668bad336a71ce0b0852b92d75c1d63fd"
+      },
+      {
+        "file": "FULL_READER_MODEL_DISCLOSURE_049.json",
+        "bytes": 43236,
+        "sha256": "4591bfd3d94136668ba86740c22e931d94e8f69d293be2c9285eabf30a7a4702"
+      },
+      {
+        "file": "GITHUB_FULL_ANONYMOUS_049.json",
+        "bytes": 10205,
+        "sha256": "f557ff0ce9e7fc435a50b8940d6b08a31b823092a25fe9bba6118e324a569086"
+      },
+      {
+        "file": "ZENODO_FULL_ANONYMOUS_049.json",
+        "bytes": 9491,
+        "sha256": "0b2f98b565be557d7b74661d9b1b62ca724b505ccd7aff5467edb2966de88522"
+      },
+      {
+        "file": "GITHUB_FULL_PROVIDER_ARCHIVES_049.json",
+        "bytes": 1637,
+        "sha256": "5a8b7b24aac1755835820f0920ed14b66efb9fb1d7606da17c63bb2c18f63967"
+      },
+      {
+        "file": "FULL_READER_PUBLIC_UI_049.json",
+        "bytes": 3994,
+        "sha256": "7d135595cadd9d00489f4ff6411ac8f545d74d1b74cca84d391ef7e43365a216"
+      },
+      {
+        "file": "PREPUBLICATION_FULL_049.json",
+        "bytes": 30221,
+        "sha256": "0703e1ea408e472070181bd8cf59db0ab722df716a3ffe17f1f630842bc79f1c"
+      },
+      {
+        "file": "FORMULA_ANNOTATION_LOCALIZATION_050.json",
+        "bytes": 252498,
+        "sha256": "3d5515facb828e1dabbe0e1874623a3f8ae489231bf107f095c78952008e7517"
+      },
+      {
+        "file": "FORMULA_ANNOTATION_REMAINING_CHECK_050.json",
+        "bytes": 9037,
+        "sha256": "edbddebf01c49f931a87e9478248423a4e40e6908daee3180f2804965d97a7e2"
+      }
+    ],
+    "status": "passed_translation_build_complete_sources_and_both_public_release_verifications"
+  },
+  "independent_human_certification": false,
+  "snapshot_scope_gu": "પ્રકાશિત ZIP અને QA તેમના પ્રકાશન-પૂર્વ ક્ષણનું હૅશસ્થિર સાક્ષ્ય છે. આ પ્રકાશન-પછીની નોંધ તેમને બદલે છે નહીં; જાહેર ચકાસણી પૂર્ણ થયાનું વધારાનું સાક્ષ્ય છે."
+}
