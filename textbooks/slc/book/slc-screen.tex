@@ -1,0 +1,68 @@
+\RequirePackage{luatex85}
+\pdfminorversion=7
+\documentclass[screen]{../../../../sty/open-logic-book}
+\usepackage[all]{nowidow}
+\usepackage[no-math]{fontspec}
+\newcommand{\olpath}{../../../..}
+\defaultfontfeatures{Renderer=HarfBuzz,Script=Gujarati}
+\setmainfont{NotoSansGujarati-Regular.ttf}[
+  Path=\olpath/fonts/,BoldFont=NotoSansGujarati-Bold.ttf,
+  ItalicFont=NotoSansGujarati-Regular.ttf,ItalicFeatures={FakeSlant=.15},
+  BoldItalicFont=NotoSansGujarati-Bold.ttf,BoldItalicFeatures={FakeSlant=.15}]
+\setsansfont{NotoSansGujarati-Regular.ttf}[
+  Path=\olpath/fonts/,BoldFont=NotoSansGujarati-Bold.ttf,
+  ItalicFont=NotoSansGujarati-Regular.ttf,ItalicFeatures={FakeSlant=.15},
+  BoldItalicFont=NotoSansGujarati-Bold.ttf,BoldItalicFeatures={FakeSlant=.15}]
+\setmonofont{NotoSansGujarati-Regular.ttf}[
+  Path=\olpath/fonts/,BoldFont=NotoSansGujarati-Bold.ttf]
+\definecolor{OLPcolor}{RGB}{248,154,14}
+\definecolor{OLPdkcolor}{RGB}{104,65,6}
+\definecolor{OLPltcolor}{RGB}{248,203,137}
+
+\usepackage[nonumberlist,toc,style=index,nopostdot]{glossaries}
+\makeglossaries
+\NewDocumentCommand\slcterm{O{} m m m m}{%
+  \newglossaryentry{#2}{sort={#3},name={#4},plural={#4},
+    symbol={#1},description={#5}}}
+
+\def\oljobname{slc}
+\newcommand*{\ollangid}{gu}
+\newcommand*{\ollanguage}{gujarati}
+\PassOptionsToPackage{provide=*}{babel}
+\input{\olpath/sty/open-logic.sty}
+\renewcommand{\gitissue}[1]{\href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{મુદ્દો \##1}}
+\RenewDocumentCommand{\olasset}{O{\olphotowidth} m}{%
+  \begin{center}\resizebox{#1}{!}{%
+    \IfFileExists{#2}{\input{#2}}{\input{\olpath/#2}}}%
+  \end{center}}
+\tikzset{initial text=પ્રારંભ}
+\input{slc-metadata}
+\input{\olpath/sty/open-logic-defer.sty}
+\loadglsentries{include/glossary}
+\hypersetup{unicode=true}
+\usepackage{truncate}
+\AtBeginDocument{%
+  \makeoddhead{OLPpage}{\slcchaptermark}{}{\slcpagefolio}%
+  \makeevenhead{OLPpage}{\slcchaptermark}{}{\slcpagefolio}}
+\newcommand*{\slcchaptermark}{%
+  \small\sffamily\color{OLPdkcolor}\truncate{.85\textwidth}{\leftmark}}
+\newcommand*{\slcpagefolio}{\sffamily\bfseries\color{OLPdkcolor}\thepage}
+\emergencystretch=2em
+\errorcontextlines=20
+
+\begin{document}
+\raggedbottom
+\OLPscreencover{%
+  \hfill\hspace{.29\textwidth}\includegraphics[width=.29\textwidth]{\olpath/assets/portraits/cantor-circle.pdf}\hfill{}
+
+  \hfill{}
+  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/goedel-circle.pdf}
+  \hfil\includegraphics[width=.29\textwidth]{\olpath/assets/portraits/turing-circle.pdf}\hfil{}
+  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/skolem-circle.pdf}
+  \hfill{}
+
+  \hfill{}
+  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/noether-circle.pdf}\hspace{.29\textwidth}\hfill{}
+}
+\input{slc}
+\end{document}

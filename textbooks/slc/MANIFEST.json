@@ -1,0 +1,105 @@
+{
+  "title": "ગણો, તર્ક, સંગણન",
+  "language": "gu-Gujr-IN",
+  "locale": "gu",
+  "babel": "gujarati",
+  "sources": {
+    "open_logic": {
+      "repository": "https://github.com/OpenLogicProject/OpenLogic",
+      "commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "license": "CC BY 4.0"
+    },
+    "slc": {
+      "repository": "https://github.com/rzach/sets-logic-computation",
+      "commit": "6178f32f61645f3b62ef621b4c5a88f8e67778ad",
+      "original_author": "Richard Zach",
+      "license": "CC BY 4.0",
+      "screen_pdf": "https://slc.openlogicproject.org/slc-screen.pdf",
+      "comparison_pdf_sha256": "39081a7e3cade6b9d6935e15448fd14279b44708c1a8da2abd30ff817c4a35d9",
+      "original_files_sha256": {
+        "slc.tex": "5c4728eac32f6d35f5b8f49c90c100780c34c5007ae2d76e37782d93cbdf2089",
+        "slc-screen.tex": "2a8f06a3a2e39493a64339c431797e9a579ada8a40dd93467db04942ab177c7e",
+        "slc-config.sty": "e1c8b9ae8cd7d09cf3da2db5fd6b83a74431a586e93ac768a09986ed60d7e914",
+        "slc-screen.xmpdata": "f0ca407e98ed1872da8a7b0a059701acf05f04d1a39cd99dd0346bcc89df5ca8",
+        "slc-print-cover.tex": "ef6763f029750fac2fb96b701a121d9ec34fa29b4b289e14d703b5a3ad3f1b24",
+        "printtest/cover-blurb-6by9.tex": "16dc9f069ce37978f6419f1e7bee90c7d718d9427de444d36f1abe153066f787",
+        "printtest/cover-lulu-royal.tex": "7c76012c4dc5ece6ed378b99a0d580adcc79d5eb062d2322dee40b533b077108",
+        "include/preface.tex": "1d8c32e3b79c33e899b962542cc0cf3478a004f5d2a576f7c0080ba4c5be629d",
+        "include/glossary.tex": "9fc8a48d0e39cf4b9a150b669cd11b4ab05753083fd537a06b80a6f581cb8134",
+        "include/summary-1.tex": "35c8ec7393513e82af276af8524ee2cf0d0d6fe89601a0288f60957cf456479a",
+        "include/summary-2.tex": "302064af6915d33935b2a4070f4578bcbd09f59387abc8f11dff5d847d9ecb33",
+        "include/summary-3.tex": "d6aa1014359fd3cc905bd57b6f2aec10b3e2e01a55587875c37b6b1116d6f814",
+        "include/summary-4.tex": "ea91898b50a457313134820ee35052e7a6aea8eda68456fb189375984e854b26",
+        "include/summary-6.tex": "90b28ba4309d811d0a39c373e1d579c2ac752fc6e164ed6f7d10f71b18e1333c",
+        "include/summary-7.tex": "71666abf89bf52be585c98bbe0928c337b59713a9623944a130c636c0e3b3dc6",
+        "include/summary-8.tex": "f61951cf673c61f3a1a6e5770bf0a8a8d58a10c88fb438a97418bd4c9a84076f",
+        "include/summary-10.tex": "606ae0e346ec4f343c53bcd563e24c0a222d3a9f8f4c70078ae49dacdaa2d46d",
+        "include/summary-11.tex": "32122479d812d2a97735a97674f7335623aa4b077886eb75124b54c7274dc9c6",
+        "include/summary-12.tex": "711ea92f242ca9d550878b93f25910a17e99bf7fdd305edc098bc4e091ca317b",
+        "include/summary-14.tex": "39e707ebd75783a85018a2016e0be997331ff966342cb093abe7514716d56162",
+        "include/summary-15.tex": "7f421d49a3cf98aefc67ad1e30760316c73fe5ab424f05fba591184bc13b6ded"
+      }
+    },
+    "portraits": {
+      "repository": "https://github.com/OpenLogicProject/portraits",
+      "commit": "1a92d54a0bf964d35b5300f45f1830749c462544",
+      "artist": "Matthew Leadbeater",
+      "license": "CC BY-NC 4.0"
+    },
+    "photos": {
+      "repository": "https://github.com/OpenLogicProject/photos",
+      "commit": "81c1990df896568410b452fea68b81cbb6ce46fa",
+      "terms": "Individual photograph credits and usage terms in upstream/assets/photos and the printed photo credits."
+    },
+    "gujarati_open_logic": {
+      "repository": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN",
+      "commit": "7678d1e8ee16a7f962cf748d491725923d008f44",
+      "locale_input_units": 722,
+      "edition": "full-edition-v1.1.0"
+    }
+  },
+  "translation": {
+    "authorship": "AI-produced by OpenAI Codex",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "session_metadata_observed_at_utc": "2026-11-12T22:52:33.013Z",
+    "scope": "Gujarati translation of the SLC-specific text and adaptations for the Gujarati textbook. The imported Gujarati OLP units are credited to their recorded edition."
+  },
+  "screen": {
+    "chapter_summaries": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14,
+      15
+    ],
+    "glossary_entries": 79,
+    "engine": "LuaLaTeX",
+    "imported_localized_modules": 176,
+    "output": {
+      "path": "slc-screen-gu.pdf",
+      "pages": 311,
+      "sha256": "c6bfd022271d66c4cbd9d61fd1350893c03ed50a89b635153a2d9a817254d3b7",
+      "page_size_points": [
+        468,
+        684
+      ]
+    },
+    "numbered_chapters": 15,
+    "appendices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "gujarati_font": "Noto Sans Gujarati",
+    "source_date_epoch": 1783832456
+  }
+}

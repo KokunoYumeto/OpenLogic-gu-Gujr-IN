@@ -7,6 +7,8 @@ Open Logic Projectના રૂપલક્ષી તર્કશાસ્ત્
 - [પૂર્ણ સંપાદનીય LaTeX](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.1.0/02-OpenLogic-gu-Gujr-IN-Full-Text.tex)
 - [મોડ્યુલો, ફોન્ટ, ચિત્રો અને બિલ્ડ સાધનોવાળો સ્રોત ZIP](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.1.0/03-OpenLogic-gu-Gujr-IN-Full-Source.zip)
 
+[ગણો, તર્ક, સંગણન](textbooks/slc/README.md) · [ગુજરાતી પાઠ્યપુસ્તકની પીડીએફ](textbooks/slc/slc-screen-gu.pdf)
+
 [સ્રોત-સૂચિ](reader/full-source-index.html) પરથી ગુજરાતી અને અંગ્રેજી મોડ્યુલો મેળવી શકાય છે. [બિલ્ડ માર્ગદર્શિકા](docs/BUILD_FULL_READER.gu.md) અને [શ્રેય તથા પરવાના](docs/LICENSE_NOTES.md) સાથી સ્રોતો સમજાવે છે. [આવૃત્તિની બધી ફાઇલો](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/tag/full-edition-v1.1.0)માં ભાગવાર સંપાદનીય TeX પણ છે; તેઓ સંપૂર્ણ પ્રોજેક્ટના સંદર્ભ સાથે વપરાય છે.
 
 મૂળ લેખન [Open Logic Project અને તેના સહયોગીઓ](https://openlogicproject.org/people/)નું છે. આધારસ્રોત [revision 9620cc73f9c8e0ad003c514a5d3748f29611c4c0](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0) છે. મૂળ લેખકો, ઉદ્ધૃત ગ્રંથો, આકૃતિઓ અને ફોટોગ્રાફનો શ્રેય તેમના સંબંધિત સ્રોત અને પુસ્તકમાં જાળવેલો છે. આ સુધારેલી ગુજરાતી આવૃત્તિમાં ગણિતીય સંપાદકીય નોંધો સંબંધિત સ્થળે છે.

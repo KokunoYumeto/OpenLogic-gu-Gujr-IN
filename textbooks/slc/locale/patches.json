@@ -1,0 +1,97 @@
+[
+  {
+    "path": "content/sets-functions-relations/size-of-sets/pairing.tex",
+    "before": "``a finite set \\(\\Nat\\)'' એવો વ્યાકરણદોષ છે.",
+    "after": "$\\Nat$ સાથે મૂકેલો સાન્ત ગણનો પ્રયોગ વ્યાકરણદોષ ધરાવે છે."
+  },
+  {
+    "path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+    "before": "\\texttt{single-two place relation} એવો વિકૃત સંયુક્ત",
+    "after": "એક દ્વિસ્થાની સંબંધ માટે વિકૃત સંયુક્ત"
+  },
+  {
+    "path": "content/first-order-logic/syntax-and-semantics/structures.tex",
+    "before": "\\texttt{single two-place relation}નો અર્થ",
+    "after": "એક દ્વિસ્થાની સંબંધનો અર્થ"
+  },
+  {
+    "path": "content/first-order-logic/completeness/compactness.tex",
+    "before": "``any sentences $\\Gamma$ and $!A$'' લખ્યું છે, જોકે~$\\Gamma$ વાક્ય",
+    "after": "$\\Gamma$ અને $!A$ બંનેને વાક્યો કહ્યાં છે, જોકે~$\\Gamma$ વાક્ય"
+  },
+  {
+    "path": "content/first-order-logic/completeness/compactness.tex",
+    "before": "``there are models $\\Sat{M}{\\Gamma\\cup\\Delta}$''થી સંરચનાને સંતોષના",
+    "after": "નિદર્શના અસ્તિત્વનો દાવો કરતી વખતે સંરચનાને $\\Sat{M}{\\Gamma\\cup\\Delta}$ જેવા સંતોષના"
+  },
+  {
+    "path": "content/first-order-logic/completeness/compactness.tex",
+    "before": "``for all the sentences ... have'' એવી ખામીયુક્ત",
+    "after": "બધાં વાક્યો માટેનો દાવો કરતી વખતે ખામીયુક્ત"
+  },
+  {
+    "path": "content/first-order-logic/completeness/introduction.tex",
+    "before": "``the proof of'' પહેલાં અનાવશ્યક બીજો ``the'' આવે છે.",
+    "after": "સાબિતીનો ઉલ્લેખ કરતાં અંગ્રેજી નિશ્ચિત ઉપપદ બિનજરૂરી રીતે બે વાર આવે છે."
+  },
+  {
+    "path": "content/first-order-logic/completeness/outline.tex",
+    "before": "``all sentence'' લખાયું છે.",
+    "after": "બધાં વાક્યોની વાત કરતી વખતે એકવચન વપરાયું છે."
+  },
+  {
+    "path": "content/first-order-logic/beyond/higher-order-logic.tex",
+    "before": "``formulated''ની અંદર નામપદ માટેનું શબ્દકોશ-ટોકન",
+    "after": "રચના દર્શાવતા ક્રિયાપદની અંદર નામપદ માટેનું શબ્દકોશ-ટોકન"
+  },
+  {
+    "path": "content/first-order-logic/beyond/higher-order-logic.tex",
+    "before": "આ ટોકનનું વિસ્તરણ અને \\texttt{ted} મળીને યોગ્ય ``formulated'' બનાવે છે;",
+    "after": "આ ટોકનનું વિસ્તરણ અને \\texttt{ted} મળીને મૂળ અંગ્રેજીમાં યોગ્ય ક્રિયાપદ બનાવે છે."
+  },
+  {
+    "path": "content/first-order-logic/beyond/modal-logics.tex",
+    "before": "``structuring'' અને\n``structure'' ક્રિયાપદોની અંદર",
+    "after": "સંરચના કરવાનું દર્શાવતા ક્રિયાપદના બે રૂપોની અંદર"
+  },
+  {
+    "path": "content/methods/proofs/using-definitions.tex",
+    "before": " (definiendum)",
+    "after": ""
+  },
+  {
+    "path": "content/methods/proofs/using-definitions.tex",
+    "before": " (definiens)",
+    "after": ""
+  },
+  {
+    "path": "content/methods/proofs/using-definitions.tex",
+    "before": " (અંગ્રેજીમાં આને\nટૂંકમાં ``iff'' લખાય છે).",
+    "after": "."
+  },
+  {
+    "path": "content/methods/proofs/inference-patterns.tex",
+    "before": ", અંગ્રેજીમાં ``iff''",
+    "after": ""
+  },
+  {
+    "path": "content/turing-machines/machines-computations/unary-numbers.tex",
+    "before": "\\fn{equality}(n,m)",
+    "after": "\\fn{eq}(n,m)"
+  },
+  {
+    "path": "content/turing-machines/undecidability/halting-problem.tex",
+    "before": " (3-Halt)",
+    "after": ""
+  },
+  {
+    "before": "પંક્તિ 70નું ``for some \\(B_i\\in\\Gamma\\)''",
+    "after": "પંક્તિ 70નો કોઈ \\(B_i\\in\\Gamma\\) માટેનો ઉલ્લેખ",
+    "path": "content/first-order-logic/proof-systems/tableaux.tex"
+  },
+  {
+    "before": "\\texttt{denumerable} પછી વધારાનો",
+    "after": "ગણનીય અનંત માટેના અંગ્રેજી શબ્દ પછી વધારાનો",
+    "path": "content/first-order-logic/completeness/introduction.tex"
+  }
+]

@@ -1,0 +1,20 @@
+\ollatinformulas
+\DeclareMathAlphabet{\mathbi}{OT1}{pplx}{b}{it}
+\DeclareDocumentCommand\Struct{m}{\applytofirst{\mathbi}{#1}}
+\DeclareDocumentMacro\TMblank{\sqcup}
+\DeclareDocumentMacro\TMstroke{I}
+
+\settexttoken{enumerable}{ગણનીય}{ગણનીય}[ગણનીય][ગણનીય]
+\settexttoken{nonenumerable}{અગણનીય}{અગણનીય}[અગણનીય][અગણનીય]
+\settexttoken{denumerable}{ગણનીય અનંત}{ગણનીય અનંત}[ગણનીય અનંત][ગણનીય અનંત]
+
+\tagtrue{defIff,defTrue}
+\tagfalse{prvIff,prvTrue}
+\tagtrue{probAnd,probIf,probAll}
+\tagtrue{prfND,prfSC}
+\tagfalse{prfAX,prfTab}
+
+% Compact rule labels leave space for Gujarati prose and wide proof trees.
+\RenewDocumentCommand\Intro{m o}{\ensuremath{{#1}\mathrm{I}\IfValueT{#2}{_{#2}}}}
+\RenewDocumentCommand\Elim{m o}{\ensuremath{{#1}\mathrm{E}\IfValueT{#2}{_{#2}}}}
+\DeclareDocumentMacro\Cut{\ensuremath{\text{છેદ}}}
