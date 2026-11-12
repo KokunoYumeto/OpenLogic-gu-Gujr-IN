@@ -54,7 +54,7 @@ $\mSat{M^\Sigma}{!A}[\Delta]$ જો અને માત્ર જો $!A \in \D
   $\Diamond!A \in \Delta$, કોઈપણ $!A$ અને
   $R^\Sigma\Delta\Delta'$ હોય તેવા $\Delta'$ માટે. જો આપણે
   $!A \in \Delta'$ હોય તેવા બધા સૂત્રો માટે $\Diamond!A \in \Delta$
-  હોય ત્યારે $R^\Sigma\Delta\Delta'$ માનીએ, તો આ વિધાન સાચું
+  હોય ત્યારે અને માત્ર ત્યારે $R^\Sigma\Delta\Delta'$ માનીએ, તો આ વિધાન સાચું
   રહેશે. ``જો અને માત્ર જો''ની જમણી બાજુની શરત વધુ સંક્ષેપમાં આમ
   લખી શકાય: $\Setabs{\Diamond!A}{!A \in \Delta'} \subseteq \Delta$.}
 
@@ -104,6 +104,9 @@ $\Box$થી શરૂ થતા બધાં !!{formula}sમાંથી શર
   \cdots (\Box!B_k \lif \Box!A)\cdots)$, જ્યાં સ્પષ્ટ રીતે
   $\Box!B_1$, \dots, $\Box!B_k \in \Box\Gamma$. તેથી વ્યાખ્યા મુજબ
   $\Box\Gamma \Proves[\Sigma] \Box !A$.
+  $k=0$ હોય ત્યારે $\Sigma \Proves !A$ પરથી સીધા $\Nec$ વડે
+  $\Sigma \Proves \Box !A$ મળે છે; તેથી આ કિસ્સામાં પણ
+  $\Box\Gamma \Proves[\Sigma] \Box !A$ છે.
   \sourcecorrection{OLMD-036}{મૂળની બંને શૃંખલાના છેલ્લા પદમાં
   સૂચક બદલાઈ જાય છે; ગણમાં પસંદ કરાયેલા સૂત્રોની સંખ્યા સાથે મેળ
   રાખવા અહીં એ જ અંતિમ સૂચક વાપર્યો છે.}
@@ -116,13 +119,20 @@ $\Box$થી શરૂ થતા બધાં !!{formula}sમાંથી શર
 
 \begin{proof}
   ધારો કે $\Box^{-1}\Gamma \Proves[\Sigma] !A$; ત્યારે
-  \olref{lem:box1} મુજબ $\Box\Box^{-1}\Gamma \Proves \Box!A$.
+  \olref{lem:box1} મુજબ $\Box\Box^{-1}\Gamma \Proves[\Sigma] \Box!A$.
   પરંતુ $\Box\Box^{-1}\Gamma \subseteq \Gamma$ હોવાથી
   એકદિશવર્ધિતાથી $\Gamma \Proves[\Sigma] \Box!A$ પણ મળે છે.
 \end{proof}
 
+\sourcecorrection{OLREA-119}{મૂળના બીજા સહાયક પ્રમેયના
+મધ્યવર્તી નિષ્પન્નતા-ચિહ્નમાં તંત્રનો સૂચક છૂટ્યો છે; આખી દલીલ
+એ જ $\Sigma$માં છે. પ્રથમ સહાયક પ્રમેયમાં ખાલી પૂર્વધારણા-શ્રેણી
+માટે જરૂરી $\Nec$ પગલું સ્પષ્ટ કર્યું છે. ડાયમંડ-માત્રવાળી વૈકલ્પિક ચર્ચામાં પ્રાપ્યતા-સંબંધની શરતને દ્વિમુખી વ્યાખ્યા તરીકે સ્પષ્ટ કરી છે; માત્ર શરતથી સંબંધ ફલિત થવો પૂરતો નથી.}
+
 \iftag{prvBox}{%
 % Box is primitive
+
+
 
 \begin{prop}\ollabel{prop:box}
   જો $\Gamma$ પૂર્ણ $\Sigma$-સુસંગત હોય, તો $\Box !A \in

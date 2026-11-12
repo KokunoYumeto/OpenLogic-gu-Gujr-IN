@@ -84,7 +84,7 @@ $R(x,y)$ નીચેની શરત હોય
 ત્યારે અને માત્ર ત્યારે જ
 સાચો લો:
 \begin{quote}
-$x$ એ સૂત્ર $!D(u)$નો
+$x$ એ $u$ સિવાય કોઈ મુક્ત ચલ ન ધરાવતા સૂત્ર $!D(u)$નો
 સંકેત છે અને $\Th{T}$માં
 $!D(\num y)$ સાબિત થાય છે.
 \end{quote}
@@ -98,13 +98,13 @@ $\Th{T}$માં પણ,
 $!D_S(u)$ સૂત્ર નિરૂપે છે.
 તેથી દરેક~$n$ માટે
 \begin{eqnarray*}
-S(\num n) & \lif & T \vdash !D_S(\num n) \\
+S(n) & \lif & \Th{T} \Proves !D_S(\num n) \\
 & \lif & R(\Gn{!D_S(u)}, n)
 \end{eqnarray*}
 અને
 \begin{eqnarray*}
-\lnot S(\num n) & \lif & T \vdash \lnot !D_S(\num n) \\
-& \lif & T \not\vdash !D_S(\num n) \quad \text{(કારણ કે $\Th{T}$ સુસંગત છે)} \\
+\lnot S(n) & \lif & \Th{T} \Proves \lnot !D_S(\num n) \\
+& \lif & \Th{T} \Proves/ !D_S(\num n) \quad \text{(કારણ કે $\Th{T}$ સુસંગત છે)} \\
 & \lif & \lnot R(\Gn{!D_S(u)}, n).
 \end{eqnarray*}
 એટલે દરેક~$y$ માટે
@@ -114,6 +114,11 @@ $R(\Gn{!D_S(u)}, y)$
 સાચું છે. તેથી $R$
 સાર્વત્રિક છે, અને માંગેલો
 વિરોધાભાસ મળી ગયો.
+\sourcecorrection{OLREA-049}{મૂળના આ બે નિગમન-સરણમાં
+બાહ્ય સંગણનીય સંબંધના આર્ગ્યુમેન્ટ તરીકે અંક~$\num n$
+લખેલો છે. અહીં તે સંખ્યા~$n$ છે; અંક~$\num n$ તો
+ઔપચારિક અંકગણિતીય સૂત્ર~$!D_S$ની અંદર વપરાય છે.
+બંને સ્તરનો આ ભેદ જાળવ્યો છે.}
 \end{proof}
 
 ``સાચું અંકગણિત'' એટલે

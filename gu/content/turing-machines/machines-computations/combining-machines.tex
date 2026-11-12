@@ -83,7 +83,7 @@ $M$ના થંભવાના સંરૂપણમાં હેડ ખાન�
   \node[state]         (C) [right of=B] {$q_2$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
@@ -107,7 +107,7 @@ $M$ના થંભવાના સંરૂપણમાં હેડ ખાન�
   \node[state]         (E) [below left of=D] {$q_4$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
@@ -138,7 +138,7 @@ $M$ના થંભવાના સંરૂપણમાં હેડ ખાન�
   \node[state]         (6) [left of=5]  {$q_9$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
@@ -160,6 +160,14 @@ $M$ના થંભવાના સંરૂપણમાં હેડ ખાન�
 \caption{સરવાળાનું અને બમણું કરનાર મશીન જોડવાં}
 \ollabel{fig:combined}
 \end{figure}
+\sourcecorrection{OLREA-018-CMB}{સરવાળાના $q_0$માં
+સ્ટ્રોક વાંચતું તીર અહીંના ત્રણે આલેખોમાં પણ $q_0$માં
+જ પાછું આવે તે રીતે સુધાર્યું છે; OLREA-018નું એ જ
+કારણ લાગુ પડે છે. સંયુક્ત આલેખ ટેપ પર $2(m+n)$ સ્ટ્રોક
+આપે છે, પરંતુ મૂળ બમણું કરનાર મશીનની જેમ તેમની ડાબે
+ખાલી પ્રતીકો રહે છે. તેથી ઔપચારિક એક-પ્રતીકી આઉટપુટ
+માટે વધારાનું ખસેડનાર મશીન અથવા
+\olref[una]{fig:doubler-disc}નું $2x$ ગણતું મશીન વાપરવું પડે.}
 \end{ex}
 
 \begin{prop}

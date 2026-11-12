@@ -13,7 +13,7 @@
 માગીએ છીએ કે તેમને અમુક (બૈજિક) ગુણધર્મો હોય: સરવાળા, ગુણાકાર વગેરે
 હેઠળ તેમનો વ્યવહાર સુસંગત હોવો જોઈએ.
 
-ડેડેકિન્ડનો વિચાર \emph{અનુગામી વિધેય}ના ખ્યાલને મૂળભૂત માનવાનો અને
+ડેડેકિન્ડનો વિચાર \emph{અનુગામી ફલન}ના ખ્યાલને મૂળભૂત માનવાનો અને
 પછી નીચેના ગુણધર્મો ધરાવતી સંખ્યાઓ તરીકે તેમનું લક્ષણ આપવાનો હતો:
 \begin{enumerate}
 	\item એવી સંખ્યા $0$ છે જે કોઈ પણ સંખ્યાની અનુગામી નથી
@@ -23,7 +23,7 @@
 	\\અર્થાત્, $s$ એ !!a{injection} છે
 	\\અર્થાત્, $\forall x \forall y (s(x) = s(y) \lif x = y)$
 	\item\ollabel{repeatedapplication} દરેક સંખ્યા $0$ પર અનુગામી
-	વિધેય વારંવાર લગાડવાથી મળે છે.
+	ફલન વારંવાર લગાડવાથી મળે છે.
 \end{enumerate}
 પહેલી બે શરતોને પ્રથમ-ક્રમ તર્કશાસ્ત્રથી સહેલાઈથી સંભાળી શકાય છે
 (ઉપર જુઓ). પરંતુ માત્ર પ્રથમ-ક્રમ તર્કશાસ્ત્રથી
@@ -32,20 +32,20 @@
 ઘડવામાં હતી:
 \begin{enumerate}
 	\item[3$'$.] પ્રાકૃતિક સંખ્યાઓ એવો નાનામાં નાનો ગણ છે જે
-	\emph{અનુગામી વિધેય હેઠળ સંવૃત} છે: એટલે કે, ગણના કોઈ પણ
+	\emph{અનુગામી ફલન હેઠળ સંવૃત} છે: એટલે કે, ગણના કોઈ પણ
 	!!{element} પર $s$ લગાડીએ તો ગણનો બીજો !!{element} મળે છે.
 \end{enumerate}
 પરંતુ આ વાત આપણે ધીમે ધીમે પૂરેપૂરી સ્પષ્ટ કરવી પડશે.
 
 \begin{defn}\ollabel{Closure}
-	દરેક વિધેય $f \colon A \to A$ માટે ગણ $X \subseteq A$ એ
-	$f$-\emph{સંવૃત} છે {iff} $(\forall x \in X)f(x) \in X$.
+	દરેક ફલન $f \colon A \to A$ માટે ગણ $X \subseteq A$ એ
+	$f$-\emph{સંવૃત} છે ત્યારે અને માત્ર ત્યારે જ્યારે $(\forall x \in X)f(x) \in X$.
 	હવે દરેક $o \in A$ માટે વ્યાખ્યા કરીએ:
 	$$\closureofunder{f}{o} = \bigcap\Setabs{X}{o \in X\text{ અને }X
 \text{ એ $f$-સંવૃત છે}}$$
 \end{defn}
 \sourcecorrection{OLINF-001}{મૂળની \texttt{dedekind-algebra.tex},
-પંક્તિઓ 40--64માં સંવરણની વ્યાખ્યા કોઈ પણ $f$ અને $o$ માટે અપાઈ
+પંક્તિઓ 41--65માં સંવરણની વ્યાખ્યા કોઈ પણ $f$ અને $o$ માટે અપાઈ
 છે, પછીના લેમામાં $A$ને બાંધ્યા વિના $o\in A$ લખાયું છે, અને
 સાબિતીમાં $\ran{f}\cup\{o\}$ એ $f$-સંવૃત હોવાનો ઉપયોગ થાય છે.
 આ દલીલને જરૂરી અને પછીના બધા ઉપયોગો સાથે સુસંગત એવી ધારણા
@@ -57,7 +57,7 @@ $\closureofunder{f}{o}$ એ !!a{element} તરીકે $o$ ધરાવતો
 \emph{નાનામાં નાનો} $f$-સંવૃત ગણ છે. આગળનું પરિણામ આ સહજ વિચારને
 ચોક્કસ બનાવે છે;
 \begin{lem}\ollabel{closureproperties}
-	દરેક વિધેય $f \colon A \to A$ અને દરેક $o \in A$ માટે:
+	દરેક ફલન $f \colon A \to A$ અને દરેક $o \in A$ માટે:
 	\begin{enumerate}
 		\item\ollabel{closurehaselem} $o \in \closureofunder{f}{o}$; અને
 		\item\ollabel{closureclosed} $\closureofunder{f}{o}$ એ $f$-સંવૃત છે; અને
@@ -87,7 +87,7 @@ $\bigcap C \subseteq X$.
 આનો ઉપયોગ કરીને આપણે કહી શકીએ:
 
 \begin{defn}
-\emph{ડેડેકિન્ડ બીજગણિત} એટલે ગણ $A$, વિધેય $f \colon A \to A$
+\emph{ડેડેકિન્ડ બીજગણિત} એટલે ગણ $A$, ફલન $f \colon A \to A$
 અને કોઈ $o \in A$ એવાં કે:
 	\begin{enumerate}
 		\item \ollabel{ded:proper} $o \notin \ran{f}$
@@ -100,7 +100,7 @@ $A = \closureofunder{f}{o}$ હોવાથી આપણું પહેલા�
 $A$ એ !!a{element} તરીકે $o$ ધરાવતો નાનામાં નાનો $f$-સંવૃત ગણ છે.
 ડેડેકિન્ડ બીજગણિત સ્પષ્ટપણે ડેડેકિન્ડ-અનંત છે; વ્યાખ્યાની કલમો
 \olref{ded:proper} અને \olref{ded:injection} જ જુઓ. પરંતુ વધુ રસપ્રદ
-હકીકત એ છે કે કોઈ પણ ડેડેકિન્ડ-અનંત ગણને ડેડેકિન્ડ બીજગણિતમાં ફેરવી
+હકીકત એ છે કે કોઈ પણ ડેડેકિન્ડ-અનંત ગણના યોગ્ય ઉપગણ પર ડેડેકિન્ડ બીજગણિત મેળવી
 શકાય છે.
 
 \begin{thm}\ollabel{thm:DedekindInfiniteAlgebra}
@@ -108,7 +108,7 @@ $A$ એ !!a{element} તરીકે $o$ ધરાવતો નાનામા�
 \end{thm}
 
 \begin{proof}
-ધારો કે $D$ ડેડેકિન્ડ-અનંત છે. તેથી એક-એક વિધેય $g \colon D \to
+ધારો કે $D$ ડેડેકિન્ડ-અનંત છે. તેથી એક-એક ફલન $g \colon D \to
 D$ અને ઘટક $o \in D \setminus \ran{g}$ છે. હવે $A =
 \closureofunder{g}{o}$ લો; \olref{closureproperties} મુજબ $A$
 અસ્તિત્વ ધરાવે છે અને $o \in A$. $f = \funrestrictionto{g}{A}$ લો.
@@ -117,8 +117,8 @@ $A, f, o$ મળીને ડેડેકિન્ડ બીજગણિત ર�
 \olref{ded:proper} અંગે: $o \notin \ran{g}$ અને $\ran{f}
 \subseteq \ran{g}$ હોવાથી $o\notin \ran{f}$.
 
-\olref{ded:injection} અંગે: $g$ એ $D$ પર એક-એક વિધેય છે; તેથી
-$f \subseteq g$ પણ એક-એક વિધેય જ હોય.
+\olref{ded:injection} અંગે: $g$ એ $D$ પર એક-એક ફલન છે; તેથી
+$f \subseteq g$ પણ એક-એક ફલન જ હોય.
 
 \olref{ded:closure} અંગે: \olref{closureproperties} મુજબ $A$ એ
 $g$-સંવૃત છે; તેથી ખાસ કરીને $A$ એ $f$-સંવૃત છે. આમ

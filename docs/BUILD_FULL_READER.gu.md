@@ -1,19 +1,27 @@
-# સંપૂર્ણ ગુજરાતી વાચનપાઠ ફરી બનાવવો
+# ગુજરાતી PDF અને EPUB બનાવવાં
 
-સીધી 02-OpenLogic-gu-Gujr-IN-Full-Text.tex ફાઇલમાં બધા 722 એકમોનો વાચનપાઠ, પૂર્ણ સંદર્ભગ્રંથો અને ફોટોગ્રાફનો શ્રેય છે. તે નાની આયાત-સૂચિ નથી. તે જ બાઇટ્સ reader/full-reader.texમાં છે. ZIPની શૈલી, ફોન્ટ અને ચિત્રો સાથે પ્રોજેક્ટના મૂળ ફોલ્ડરમાંથી બિલ્ડ કરો.
+પૂર્ણ સ્રોત ZIP ખોલીને તેના મૂળ ફોલ્ડરમાંથી બિલ્ડ કરો. `reader/full-reader.tex`માં બધો પાઠ, સંદર્ભગ્રંથો અને ફોટોગ્રાફનો શ્રેય છે. સીધી ડાઉનલોડ થતી `02-OpenLogic-gu-Gujr-IN-Full-Text.tex`ના બાઇટ્સ એ જ છે. શૈલી, ફોન્ટ અને ચિત્રો માટે ZIPના સાથી ફોલ્ડર જરૂરી છે.
 
-પરીક્ષણ માટે PowerShell 7 અને MiKTeX LuaLaTeX વપરાય છે. ફોન્ટ ફાઇલો fontsમાં અને મૂળ ગણિતીય શૈલી upstreamમાં છે. સામાન્ય TeX પૅકેજો TeX વિતરણમાંથી મળે છે. બિલ્ડ દરમિયાન સ્વયંસ્થાપન અને shell escape બંધ છે.
+PDF માટે PowerShell 7 અને MiKTeX LuaLaTeX તથા સામાન્ય TeX પૅકેજો વાપરો:
 
 ```powershell
-& .\tools\build_full_reader_guarded.ps1
+& .\tools\build_full_reader_guarded.ps1 -BuildSubdir full-reader-public-20261105 -JobName gu-full-reader-public-20261105
 ```
 
-સ્ક્રિપ્ટ Global\InterlanguageTeXSlotV1 માટે એક મર્યાદિત પ્રયાસ કરે છે, બધા ત્રણ ફેરામાં સ્લોટ રાખે છે અને અંતે છોડે છે. સ્લોટ ભરેલો હોય તો બીજો TeX કાર્યકર્તા ચલાવતી નથી. કોઈ બીજાની પ્રક્રિયા બંધ કરતી નથી. પરિણામ build/full-reader/gu-full-reader-proof.pdfમાં અને નોંધ ત્યાંના FULL_READER_BUILD.jsonમાં છે. ગ્રંથસૂચિનો સંપૂર્ણ સંપાદનીય પાઠ સીધી TeXમાં જ હોવાથી આ બિલ્ડને BibTeXની જરૂર નથી; મૂળ .bib અને .bst પણ ZIPમાં જાળવ્યાં છે.
+PDF `build/full-reader-public-20261105/gu-full-reader-public-20261105.pdf`માં મળે છે. ગ્રંથસૂચિ સીધી TeXમાં છે; BibTeX જરૂરી નથી. મૂળ `.bib` અને `.bst` સાથી સ્રોતમાં છે. સ્ક્રિપ્ટ shell escape અને પૅકેજોનું સ્વયંસ્થાપન બંધ રાખે છે. અન્ય TeX, ફોન્ટ કે converter સંસ્કરણથી બાઇટ્સ બદલાઈ શકે છે.
 
-પુનર્નિર્માણ માટે SOURCE_DATE_EPOCH=1788530400 અને FORCE_SOURCE_DATE=1 છે. નવા ફોન્ટ કે TeX સંસ્કરણથી બાઇટ્સ બદલાઈ શકે; પ્રકાશિત આવૃત્તિના સરવાળા સામે તપાસો. મૂળ ગ્રંથનાં શૈલી, સંકેતો, ચિત્રો અને પરવાનાને જાળવો.
+EPUB માટે Python 3, Pandoc અને Python પૅકેજો `beautifulsoup4`, `lxml`, `PyMuPDF`, `fonttools` જરૂરી છે. પહેલાં PDF બિલ્ડ કરો, જેથી સૂત્ર અને આકૃતિના સંદર્ભો તેની વર્તમાન `.aux` ફાઇલ પરથી આવે. પછી:
 
-ગુજારતી મૂળ એકમો gu/contentમાં, અપરિવર્તિત અંગ્રેજી એકમો upstream/contentમાં છે. બધા સ્રોત-વિકલ્પો reader/full-reader-original-branches.tex અને reader/full-reader-expanded-branches.texમાં પણ છે. સંપૂર્ણ પઠન માટે પસંદ કરેલો સંદર્ભ reader/full-reader-resolved-body.texમાં છે. સંબંધિત વૈકલ્પિક અંશોને તેમના પ્રકરણની પાસે જાળવ્યાં છે; વારંવાર આયાત થતા અંશનો પાઠ એક જ વાર છે અને અન્ય સ્થળે કડી છે.
+```powershell
+python -X utf8 .\tools\prepare_full_epub_html.py
+python -X utf8 .\tools\audit_full_epub_figures.py
+python -X utf8 .\tools\build_full_epub.py
+```
 
-reader/full-reader.tex સંપાદન માટેનું કાર્યરત સંપૂર્ણ દસ્તાવેજ છે. gu/contentનાં મૂળ મોડ્યુલો સ્રોતના આયાત માળખા અને કાચા પરિભાષા-ચિહ્નો જાળવે છે. તેમને સ્વતંત્ર નાની ફાઇલ તરીકે કમ્પાઇલ કરવાનો આ બિલ્ડ નથી. નોંધની ગણિતીય ટાઇપસેટિંગ, ખાનગી સંદર્ભ-નામો અને શબ્દોના સંદર્ભસર વિસ્તારો સંપૂર્ણ વાચનપાઠમાં લાગુ થયા છે; તેમની ચોક્કસ નોંધ સાથી સમીક્ષામાં છે.
+EPUB `build/OpenLogic-gu-Gujr-IN-Full-draft.epub`માં મળે છે. અહીં `draft` સાધનની ફાઇલ-નામ પરંપરા છે. EPUBCheckથી EPUBનું માળખું તપાસી શકાય છે.
 
-OpenAI Codex — GPT-5.6 Sol અને GPT-6 Sol, Ultra effort દ્વારા ભાષાંતર, સુધારા અને યાંત્રિક તપાસ થયાં છે. સ્વતંત્ર ગુજરાતી નિષ્ણાતનું પ્રમાણન નથી. મુખ્ય લખાણ CC BY 4.0, Noto Sans Gujarati SIL Open Font License અને Latin Modern GUST Font License હેઠળ છે. ફોટોગ્રાફની અલગ શરતો તથા મૂળ શ્રેય ગ્રંથ અને upstream/assets/photosમાં છે.
+સંપાદનીય ગુજરાતી મોડ્યુલો `gu/content`માં અને સ્થિર અંગ્રેજી મૂળ `upstream/content`માં છે. સીધો સંપૂર્ણ વાચનપાઠ `reader/full-reader.tex`માં અને તેનો સંલગ્ન મુખ્ય પાઠ `reader/full-reader-resolved-body.tex`માં છે. મૂળ મોડ્યુલો આયાત-માળખું વાપરે છે અને એકલા નાના દસ્તાવેજ તરીકે કમ્પાઇલ થતા નથી. ભાગવાર TeX સંપૂર્ણ પ્રોજેક્ટ સાથે સંપાદન માટે છે.
+
+`reader/figures/native`માં સંપાદનીય TikZ આકૃતિઓના વેક્ટર SVG રૂપ છે. તેમની સાથેના સ્રોત-બંધનો આકૃતિ, વ્યાખ્યા અને શૈલીના ચોક્કસ બાઇટ્સ ઓળખે છે. આકૃતિ કે તેની વ્યાખ્યા બદલાય ત્યારે વેક્ટર રૂપ પણ ફરી બનાવવું જરૂરી છે. અન્ય સંબંધ અને ટ્યુરિંગ આકૃતિઓ converter તેમના સંપાદનીય સ્રોત પરથી બનાવે છે. બધા આકૃતિ-લેબલ મૂળ TeXમાં સંપાદનીય છે.
+
+`SOURCE_INVENTORY.json` ZIPમાં રહેલી ફાઇલો અને તેમના SHA-256 સરવાળા આપે છે. લખાણ, ફોટોગ્રાફ, ફોન્ટ અને અન્ય ઘટકોના મૂળ શ્રેય તથા પરવાના જાળવો; [પરવાના-નોંધ](LICENSE_NOTES.md) જુઓ.

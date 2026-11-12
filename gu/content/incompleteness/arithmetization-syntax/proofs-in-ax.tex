@@ -146,7 +146,7 @@ $\delta$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
   સ્વરૂપની હોય, કોઈ અગાઉની પંક્તિ
   કોઈ !!{constant}~$c$ માટે
   $!B \lif !A(c)$ હોય અને $c$
-  એ~$!B$માં ન આવતો હોય. આ ત્યારે
+  એ~$!B$માં કે $!A(x)$માં ન આવતો હોય. આ ત્યારે
   અને માત્ર ત્યારે બને જ્યારે
   \begin{enumerate}
   \item કોઈ !!a{sentence}~$!B$ હોય,
@@ -157,7 +157,7 @@ $\delta$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
   \item કોઈ સ્થિર પદ~$c$ માટે અગાઉની
     પંક્તિ $j < i$ પર
     $!B \lif \Subst{!A}{c}{x}$ હોય,
-  \item અને એ~$!B$માં ન આવતું હોય.
+  \item અને એ~$!B$માં કે $!A(x)$માં ન આવતું હોય.
   \end{enumerate}
   આ બધી શરતો આદિમ પુનરાવર્તી રીતે
   ચકાસી શકાય છે: $!B$, $!A(x)$
@@ -169,14 +169,15 @@ $\delta$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
   \begin{multline*}
     \fn{QR}_1(d, i) \defiff \bexists{j<i}{\bexists{b < (d)_i}{\bexists{x <
         (d)_i}{\bexists{a < (d)_i}{\bexists{c < (d)_j}{(}}}}}
-    \\ \fn{Var}(x) \land \fn{Const}(c) \land {} \\
+    \\ \fn{Var}(x) \land \fn{Const}(c) \land \fn{Frm}(a) \land {} \\
     (d)_i = \Gn{(} \concat
     b \concat \Gn{\lif} \concat \Gn{\lforall} \concat x \concat a
     \concat \Gn{)} \land {}\\
     (d)_j = \Gn{(} \concat b \concat
     \Gn{\lif} \concat \fn{Subst}(a,c,x) \concat \Gn{)} \land {}\\ \fn{Sent}(b)
     \land \fn{Sent}(\fn{Subst}(a,c,x)) \land {} \bforall{k <
-      \len{b}}{(b)_k \neq (c)_0})
+      \len{b}}{(b)_k \neq (c)_0} \land
+      \bforall{k < \len{a}}{(a)_k \neq (c)_0})
   \end{multline*}
   \sourcecorrection{OLINC-018}{સ્થિર અંગ્રેજી
   મૂળના આ સૂત્રમાં અગાઉની પંક્તિનો
@@ -198,7 +199,15 @@ $\delta$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
   !!a{sentence} છે કે નહીં તે ચકાસીએ.
   $!B$નું દરેક ચિહ્ન~$c$થી જુદું છે
   એવી શરતથી $c$ એ~$!B$માં નથી
-  તેની ખાતરી કરીએ.
+  તેની ખાતરી કરીએ. એ જ ચિહ્ન-તપાસ $!A(x)$ માટે પણ કરીએ.
+  \sourcecorrection{OLREA-038}{મૂળની આ આંકિક તપાસમાં
+  $c$ એ $!A(x)$માં ન આવતો હોવાની વિશિષ્ટ-અચળની શરત નથી.
+  આ જ ગ્રંથના સ્વયંસિદ્ધિમૂલક તંત્રના યથાર્થતા-પુરાવામાં
+  એ શરત સ્પષ્ટ જરૂરી છે. તે વિના $!A(x)$ને $\eq[x][c]$
+  અને $!B$ને $\ltrue$ લઈએ: $\ltrue\lif\eq[c][c]$માંથી
+  $\ltrue\lif\lforall[x][\eq[x][c]]$ મળી જાય, જે બે-ઘટક
+  પ્રદેશમાં અસત્ય છે. અહીં $a$ સૂત્રનો સંકેત છે અને તેમાં
+  $c$ નથી તે બંને તપાસ ઉમેરેલી છે.}
 
   \QR{}નું બીજું સ્વરૂપ અભ્યાસપ્રશ્ન
   તરીકે મૂકીએ છીએ.
@@ -207,10 +216,19 @@ $\delta$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
   છે જ્યારે તેની દરેક પંક્તિ કાં તો
   સ્વયંસિદ્ધિ હોય અથવા મોડસ પોનેન્સ
   કે~\QR{} વડે પ્રમાણિત હોય. તેથી:
-  \[
-  \fn{Deriv}(d) \defiff \bforall{i < \len{d}}{(\fn{IsAx}((d)_i) \lor
-    \fn{MP}(d,i) \lor \fn{QR}(d, i))}
-  \]
+  \begin{multline*}
+  \fn{Deriv}(d) \defiff \fn{SeqCode}(d) \land \len{d}>0 \land {}\\
+  \bforall{i < \len{d}}{\bigl(\fn{Sent}((d)_i) \land {}}\\
+  (\fn{IsAx}((d)_i) \lor
+    \fn{MP}(d,i) \lor \fn{QR}(d, i))\bigr)
+  \end{multline*}
+  \sourcecorrection{OLREA-039}{મૂળની સર્વપરિમાણિત
+  પંક્તિ-તપાસ ખાલી અનુક્રમ માટે ખાલીપણે સત્ય થાય છે.
+  પરંતુ અંતિમ વાક્ય ધરાવતી નિષ્પત્તિ ખાલી નથી. વધુમાં,
+  સંખ્યામાં શરૂઆતના સતત અવિભાજ્ય અવયવો સિવાયના વધારાના
+  અવયવો હોય તો મૂળની ઘટક-તપાસ તેમને અવગણી શકે છે.
+  અહીં આખો સંકેત માન્ય અનુક્રમનો, તેની લંબાઈ ધન અને
+  દરેક પંક્તિ વાક્ય હોય તે શરતો ઉમેરેલી છે.}
 \end{enumerate}
 \end{proof}
 
@@ -312,11 +330,13 @@ $\Proves (!B_1 \lif (!B_2 \lif
 શરતી વાક્ય બનાવી શકીએ:
 \begin{align*}
   \fn{hCond}(s, y, 0) & = y \\
-  \fn{hCond}(s, y, n+1) & = \Gn{(} \concat (s)_{n} \concat \Gn{\lif}
+  \fn{hCond}(s, y, n+1) & = \Gn{(} \concat (s)_{\len{s}\tsub(n+1)} \concat \Gn{\lif}
   \concat \fn{hCond}(s, y, n) \concat \Gn{)}\\
   \fn{Cond}(s, y) & = \fn{hCond}(s, y, \len{s})\\
   \intertext{તેથી $\Prf[\Gamma](x, y)$ને આ પ્રમાણે વ્યાખ્યાયિત કરી શકીએ:}
-  \Prf[\Gamma](x, y) & \defiff \bexists{s < \fn{sequenceBound}(x,x)}{(} \\
+  \Prf[\Gamma](x, y) & \defiff \fn{Sent}(y) \land
+    \bexists{s < \fn{sequenceBound}(x,x)+1}{(} \\
+  &\qquad \fn{SeqCode}(s) \land {} \\
   &\qquad (x)_{\len{x}-1} = \fn{Cond}(s,y) \land {} \\
   &\qquad\bforall{i<\len{s}}{R_\Gamma((s)_i)} \land {} \\
   &\qquad\fn{Deriv}(x)).
@@ -337,6 +357,15 @@ $(s)_i \in \Gamma$ અનૌપચારિક
 $R_\Gamma((s)_i)$ વડે જ તેની
 સીમિત ચકાસણી વ્યક્ત થાય છે.
 અહીં એ જ વિધાન વાપર્યું છે.}
+\sourcecorrection{OLREA-040}{મૂળના પુનરાવર્તનમાં
+$(s)_n$ને દર પગલે બહાર મૂકવાથી પૂર્વપક્ષોનો ક્રમ ઊલટો થાય છે.
+અહીં $s=\tuple{!B_1,\ldots,!B_n}$ માટે ઉપર દર્શાવેલો
+$!B_1\lif(!B_2\lif\cdots(!B_n\lif!A)\cdots)$ જ મળે
+તે માટે છેલ્લેથી પહેલો ઘટક લેવાય છે. સાધ્યતાનો ભેદ થતો નથી,
+પણ સંકેતિત વાક્યનો ક્રમ સ્પષ્ટ થાય છે. શોધમાં $s$ માન્ય
+અનુક્રમ અને $y$ વાક્ય હોવાની તપાસ પણ ઉમેરેલી છે.
+અગાઉના સીમા-વિધેયની બાંયધરી નાનું-અથવા-સમાન છે;
+કડક શોધ માટે તે સીમામાં $1$ ઉમેરેલું છે.}
 $s$ માટેની મર્યાદા એ હકીકત પરથી
 આવે છે કે દરેક $(s)_i$ એ
 !!{derivation}ની છેલ્લી પંક્તિના

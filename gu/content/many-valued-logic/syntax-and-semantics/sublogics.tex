@@ -57,7 +57,7 @@ $\{\True,\False\}$ પર મર્યાદિત કરીએ તો તે �
   \item જો આણ્વિક સૂત્ર $!A \ident p$ હોય, તો
   $\pValue v[\Log L](!A) = \pAssign v(p) = \pValue
   v[\LogCL](!A)$.
-  \item જો $!A \ident \lnot B$ હોય, તો
+  \item જો $!A \ident \lnot !B$ હોય, તો
   \begin{align*}
     \pValue v[\Log L](!A) & = \tf{\lnot}[\Log L](\pValue v[\Log L](!B)) & &\text{\olref[val]{defn:pValue} અનુસાર}\\
     & = \tf{\lnot}[\Log L](\pValue v[\LogCL](!B)) && \text{અનુમાનની પૂર્વધારણાથી}\\
@@ -100,13 +100,24 @@ $!A \ident (!B \lor !C)$ અને $!A \ident (!B \lif !C)$ના
   \{\True, \False\}$ છે કે દરેક $!A \in \Gamma$ માટે
   $\pValue v[\LogCL](!A) = \True$ અને
   $\pValue v[\LogCL](!B) = \False$. કારણ કે $\True,
-  \False \in V$, એ !!{valuation}~$\pAssign v$ એ~$\Log L$ માટેનું
+  \False \in V$, એ !!{valuation}~$\pAssign v$ એ~$\Log L$ માટેની
   !!a{valuation} પણ છે. \olref{prop:mvl-cl} અનુસાર, દરેક
   $!A \in \Gamma$ માટે $\pValue v[\Log L](!A) =
   \True$ અને $\pValue v[\Log L](!B) = \False$.
   $\True \in V^+$ અને $\False \notin V^+$ હોવાથી
-  $\pAssign v \Entails[\Log L] \Gamma$ અને
-  $\pAssign v \Entails/[\Log L] !B$; એટલે કે,
+  $\pSat{v}{\Gamma}[\Log L]$ અને
+  $\pSat/{v}{!B}[\Log L]$; એટલે કે,
   $\Gamma \Entails/[\Log L] !B$.
 \end{proof}
+\sourcecorrection{OLREA-093}{સ્થિર અંગ્રેજી મૂળ અને અગાઉના
+ગુજરાતી પાઠમાં છેલ્લા પુરાવામાં મૂલ્યાંકન સાથે ફલિતતાનું
+ચિહ્ન વપરાયું હતું. મૂલ્યાંકન સૂત્રોનો ગણ સંતોષે છે અથવા
+સૂત્ર સંતોષતું નથી; ફલિતતા સૂત્રોના ગણ અને સૂત્ર વચ્ચેનો
+સંબંધ છે. અહીં અગાઉ વ્યાખ્યાયિત સંતોષ-સંબંધનાં ચિહ્નો
+વાપર્યાં છે. નિષ્કર્ષ અને તેનો વિરુદ્ધવિધાન-પુરાવો યથાવત છે.}
+\sourcecorrection{OLREA-095}{સ્થિર અંગ્રેજી મૂળ અને અગાઉના
+ગુજરાતી પાઠમાં નિષેધના અનુમાન-કિસ્સામાં ઘટકનું નામ
+પછીનાં સમીકરણોમાં વપરાયેલા સૂત્ર-પ્રાચલથી જુદું હતું.
+અહીં કિસ્સાની પૂર્વધારણા અને તેના દરેક સમીકરણમાં
+એક જ સૂત્ર-પ્રાચલ વાપર્યો છે.}
 \end{document}

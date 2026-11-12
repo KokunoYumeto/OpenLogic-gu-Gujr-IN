@@ -22,16 +22,16 @@ $\cardle{A}{B}$ અને $\cardle{B}{A}$ હોય, તો $\cardeq{A}{B}$; એ
 છે જેની \emph{ઘણી} રસપ્રદ અને જુદી સાબિતીઓ છે.
 
 \olref[sfr][infinite][dedekind]{Closure} જેવી જ સંજ્ઞા વાપરીને,
-દરેક ગણ $B$ અને વિધેય~$f$ માટે લો:
+દરેક ફલન $f\colon D\to D$ અને ગણ $B\subseteq D$ માટે લો:
 \[
-\Closureofunder{f}{B} = \bigcap \Setabs{X}{B \subseteq X
+\Closureofunder{f}{B} = \bigcap \Setabs{X\subseteq D}{B \subseteq X
 \text{ અને $X$ એ $f$-સંવૃત છે}}
 \]
 આ રીતે વ્યાખ્યાયિત $\Closureofunder{f}{B}$ એ $B$ને સમાવતો નાનામાં
 નાનો $f$-સંવૃત ગણ છે, એ અર્થમાં કે:
 
 \begin{lem}\ollabel{Closureprops}
-	દરેક વિધેય $f$ અને દરેક $B$ માટે:
+	દરેક ફલન $f\colon D\to D$ અને દરેક $B\subseteq D$ માટે:
 	\begin{enumerate}
 		\item\ollabel{Closurehaselem} $B \subseteq \Closureofunder{f}{B}$; અને
 		\item\ollabel{Closureclosed} $\Closureofunder{f}{B}$ એ $f$-સંવૃત છે; અને
@@ -39,6 +39,7 @@ $\cardle{A}{B}$ અને $\cardle{B}{A}$ હોય, તો $\cardeq{A}{B}$; એ
 		\subseteq X$, તો $\Closureofunder{f}{B} \subseteq X$.
 	\end{enumerate}
 \end{lem}
+\sourcecorrection{OLREA-231}{મૂળની \texttt{card-sb.tex}, પંક્તિઓ 25--43માં સંવરણ કોઈ પણ ફલન \(f\) અને ગણ \(B\) માટે આપેલું છે. \(B\) ફલનના પ્રદેશની બહાર હોય અથવા ફલનનો વિસ્તાર પ્રદેશની બહાર જાય ત્યારે એવો સંવૃત ગણ હોવો જરૂરી નથી. અગાઉના સંવરણ-પરિણામની જેમ અહીં \(f\colon D\to D\), \(B\subseteq D\) અને \(X\subseteq D\) સ્પષ્ટ કર્યાં છે. આગળના ઉપયોગમાં \(f\colon C\to A\) તથા \(A\subseteq C\) છે, એટલે તેને \(C\)નો સ્વનકશો ગણવો યોગ્ય છે.}
 
 \begin{proof}
 બરાબર \olref[sfr][infinite][dedekind]{closureproperties}ની જેમ.
@@ -61,7 +62,7 @@ $A \approx B \approx C$માં વિસ્તરે છે; તેથી ત�
 
 \begin{proof}
 !!a{bijection} $f \colon C \to A$ આપેલું હોય, ત્યારે $F =
-\Closureofunder{f}{C \setminus B}$ લો અને પ્રદેશ $C$ ધરાવતું વિધેય
+\Closureofunder{f}{C \setminus B}$ લો અને પ્રદેશ $C$ ધરાવતું ફલન
 $g$ આ પ્રમાણે વ્યાખ્યાયિત કરો:
 \[
 	g(x) =
@@ -91,7 +92,7 @@ $f$-સંવૃત હોત અને $C\setminus B$ને સમાવતો 
 \olref{Closureprops}થી અશક્ય છે. હવે $g(y) = f(y) = x$.
 \end{proof}
 
-છેલ્લે મુખ્ય પરિણામની સાબિતી આ રહી. યાદ કરો કે વિધેય $h$ અને ગણ $D$
+છેલ્લે મુખ્ય પરિણામની સાબિતી આ રહી. યાદ કરો કે ફલન $h$ અને ગણ $D$
 આપેલાં હોય ત્યારે આપણે $\funimage{h}{D} = \Setabs{h(x)}{x
 \in D}$ વ્યાખ્યાયિત કરીએ છીએ.
 

@@ -29,8 +29,9 @@
 \end{proof}
 
 \begin{lem}
-  \ollabel{lem:comp} ધારો કે $k$-સ્થાનીય વિધેય $f$ અને
-  $n$-સ્થાનીય વિધેયો $g_0, \dots, g_{k-1}$ અનુક્રમે
+  \ollabel{lem:comp} ધારો કે સર્વત્ર વ્યાખ્યાયિત
+  $k$-સ્થાનીય વિધેય $f$ અને
+  સર્વત્ર વ્યાખ્યાયિત $n$-સ્થાનીય વિધેયો $g_0, \dots, g_{k-1}$ અનુક્રમે
   $F$, $G_0$, \dots, $G_{k-1}$ પદો દ્વારા
   !!{lambda definable} છે, અને $h$ તેમની
   સંયોજનથી વ્યાખ્યાયિત થાય છે. તો $h$ પણ
@@ -46,6 +47,8 @@
 
 \begin{proof}
   વિધેય~$h$ને આ પદ !!{lambda define} કરે છે:
+  નવા બાંધનાર~$x_0,\ldots,x_{n-1}$ એકબીજાથી જુદા તથા
+  $F,G_0,\ldots,G_{k-1}$ના બધા મુક્ત ચલોથી તાજા છે.
   \[
   H \ident \lambd[x_0 \dots x_{n-1}][F\, (G_0 x_0 \dots
     x_{n-1}) \dots (G_{k-1} x_0 \dots x_{n-1})]
@@ -65,7 +68,8 @@
 હોય એટલું જ જરૂરી છે.
 
 \begin{lem}\ollabel{lem:prim}
-  ધારો કે $f$ એ $n$-સ્થાનીય વિધેય અને~$g$ એ
+  ધારો કે $f$ એ સર્વત્ર વ્યાખ્યાયિત $n$-સ્થાનીય વિધેય
+  અને~$g$ એ સર્વત્ર વ્યાખ્યાયિત
   $n+2$-સ્થાનીય વિધેય છે; તેઓ અનુક્રમે
   $F$ અને~$G$ પદો દ્વારા !!{lambda definable} છે,
   અને $h$ એ $f$ તથા $g$માંથી આદિમ
@@ -90,6 +94,8 @@
 
   સરળતા માટે, એક જ વધારાની દલીલ~$x$ હોય તે
   કિસ્સાની વ્યાખ્યા અને સાબિતી આપીએ છીએ.
+  નીચેના બાંધનાર~$x,y,p$ એકબીજાથી જુદા અને~$F,G$ના
+  બધા મુક્ત ચલોથી તાજા પસંદ કરીએ છીએ.
   વિધેય~$h$ને આ પદ !!{lambda define} કરે છે:
   \begin{align*}
     H \ident & \lambd[x][\lambd[y][\fn{Snd} (y
@@ -158,18 +164,29 @@
   અંતે, આ ગણતરી જુઓ:
   \begin{align*}
     H\,\num n\,\num m &\ident \lambd[x][\lambd[y][\fn{Snd} (y
-        (\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G\, x\,
-          (\fn{Fst}\, p)\, (\fn{Snd}\, p))}) \tuple{\num{0}, F x})]]\\
+        (\lambd[p][\tuple{\fn{Succ} (\fn{Fst}\, p), (G\, x\,
+          (\fn{Fst}\, p)\, (\fn{Snd}\, p))}]) \tuple{\num{0}, F x})]]\\
     & \qquad\,\num n\, \num m\\
     & \red \fn{Snd} (\num m \,
-    \underbrace{(\lambd[p].\tuple{\fn{Succ} (\fn{Fst}\, p), (G \,\num n\,
-      (\fn{Fst}\, p) (\fn{Snd}\, p))})}_{D_n} \tuple{\num{0}, F \num n})\\
+    \underbrace{(\lambd[p][\tuple{\fn{Succ} (\fn{Fst}\, p), (G \,\num n\,
+      (\fn{Fst}\, p) (\fn{Snd}\, p))}])}_{D_n} \tuple{\num{0}, F \num n})\\
     & \ident \fn{Snd} (\num m \, D_n\, \tuple{\num{0}, F \num n})\\
     & \red \fn{Snd} \, (D_n^m \tuple{\num{0}, F \num n})\\
     & \red \fn{Snd} \,\tuple{\num{m}, \num{h(n, m)}} \\
     & \red \num{h(n,m)}.
   \end{align*}
 \end{proof}
+
+\sourcecorrection{OLREA-089}{મૂળના સંયોજન પછીના ગદ્યમાં
+સર્વત્ર વ્યાખ્યાયિત હોવાની શરત છે, પરંતુ બંને બંધતા-લેમ્માના
+નિવેદનોમાં તે સ્પષ્ટ નહોતી. અહીં આ અધ્યાયના આદિમ પુનરાવર્તી
+વિધેયો માટે જરૂરી સંપૂર્ણતા બંને નિવેદનોમાં મૂકી છે.
+આંશિક વિધેયની અવ્યાખ્યાયિત અંદરની ગણતરીને બહારનું
+પદ ભૂંસી શકે છે; તેથી એ જ સીધાં પદોથી કડક આંશિક બંધતા
+સાબિત થતી નથી. \olref[lam][int][com]{sec} અને
+\olref[lam][int][pr]{sec}માં આ ભેદના પ્રતિઉદાહરણો છે.
+નવા બાંધનારની તાજગી અને અંતિમ પ્રદર્શનમાં બે
+અધૂરાં લૅમ્બડા મુખ્ય-ભાગ સંકેતો પણ સુધાર્યા છે.}
 
 \begin{prop}
   દરેક આદિમ પુનરાવર્તી વિધેય !!{lambda definable} છે.

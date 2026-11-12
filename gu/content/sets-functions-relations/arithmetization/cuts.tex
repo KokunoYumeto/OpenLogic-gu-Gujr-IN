@@ -1,4 +1,4 @@
-% ભાગ: ગણો-વિધેયો-સંબંધો
+% ભાગ: ગણો-ફલનો-સંબંધો
 % પ્રકરણ: અંકગણિતીકરણ
 % વિભાગ: કાપ
 %
@@ -23,11 +23,11 @@ $\alpha$ ન્યૂનતમ ઉચ્ચસીમા છે અને બી�
 આથી ચોક્કસ વ્યાખ્યા નીચે મુજબ આપીએ છીએ:
 
 \begin{defn}[કાપ]
-\emph{કાપ} $\alpha$ એ સંમેય સંખ્યાઓનો એવો કોઈ પણ અખાલી ઉચિત
+\emph{કાપ} $\alpha$ એ સંમેય સંખ્યાઓનો એવો કોઈ પણ અરિક્ત ઉચિત
 આરંભખંડ છે જેનો મહત્તમ ઘટક નથી. એટલે કે, $\alpha$ કાપ છે ત્યારે અને
 માત્ર ત્યારે જ જ્યારે:
 \begin{enumerate}
-  \item \emph{અખાલી, ઉચિત}: $\emptyset \neq \alpha \subsetneq \Rat$
+  \item \emph{અરિક્ત, ઉચિત}: $\emptyset \neq \alpha \subsetneq \Rat$
   \item \emph{આરંભિક}: બધા $p,q \in \Rat$ માટે, જો $p < q \in \alpha$ હોય તો $p \in \alpha$
   \item \emph{મહત્તમ ઘટક નહીં}: દરેક $p \in \alpha$ માટે કોઈ $q \in \alpha$ એવું છે કે $p < q$
 \end{enumerate}
@@ -39,13 +39,13 @@ $\alpha$ ન્યૂનતમ ઉચ્ચસીમા છે અને બી�
 પરંતુ તે તપાસ \olref[check]{sec}માં રાખી છે.
 
 પહેલાંની જેમ, કેટલીક વસ્તુઓની વ્યાખ્યા આપ્યા પછી હવે તેમના પરનાં
-મૂળભૂત વિધેયો અને સંબંધોની વ્યાખ્યા કરવાની છે. એક સરળ વ્યાખ્યાથી શરૂ કરીએ:
+મૂળભૂત ફલનો અને સંબંધોની વ્યાખ્યા કરવાની છે. એક સરળ વ્યાખ્યાથી શરૂ કરીએ:
 \begin{align*}
   \alpha \leq \beta \text{ ત્યારે અને માત્ર ત્યારે જ જ્યારે }\alpha \subseteq \beta
 \end{align*}
 ક્રમની આ વ્યાખ્યા આપણને કેન્દ્રીય પરિણામ \emph{કહેવા} દે છે: કાપોનો
 ગણ પૂર્ણતા ગુણધર્મ ધરાવે છે. પૂરેપૂરું લખીએ તો વિધાનનું સ્વરૂપ આવું છે.
-$S$ એ ઉચ્ચસીમા ધરાવતો કાપોનો અખાલી ગણ હોય તો $S$ને ન્યૂનતમ ઉચ્ચસીમા
+$S$ એ ઉચ્ચસીમા ધરાવતો કાપોનો અરિક્ત ગણ હોય તો $S$ને ન્યૂનતમ ઉચ્ચસીમા
 હોય છે. વધુ વિગતે: કોઈ કાપ $\lambda$ એ $S$ની ઉચ્ચસીમા છે, એટલે કે
 $(\forall \alpha \in S)\alpha \subseteq \lambda$, અને $\lambda$ આવો
 ન્યૂનતમ કાપ છે, એટલે કે
@@ -57,11 +57,11 @@ $(\forall \beta \in \Real)((\forall \alpha \in S)\alpha \subseteq \beta \lif \la
 \end{thm}
 
 \begin{proof}
-$S$ એ ઉચ્ચસીમા ધરાવતો કાપોનો કોઈ અખાલી ગણ હોય. $\lambda = \bigcup S$ લો.
+$S$ એ ઉચ્ચસીમા ધરાવતો કાપોનો કોઈ અરિક્ત ગણ હોય. $\lambda = \bigcup S$ લો.
 %\Setabs{p \in \Rat}{(\exists \alpha \in S)p \in \alpha}$$
 પહેલાં આપણે દાવો કરીએ કે $\lambda$ કાપ છે:
 \begin{enumerate}
-\item $S$ અખાલી હોવાથી ઓછામાં ઓછો એક કાપ $S$માં છે, તેથી
+\item $S$ અરિક્ત હોવાથી ઓછામાં ઓછો એક કાપ $S$માં છે, તેથી
 $\emptyset \neq \lambda$. $S$ કાપોનો ગણ હોવાથી $\lambda
 \subseteq \Rat$. $S$ને ઉચ્ચસીમા હોવાથી કોઈ $p \in \Rat$ દરેક કાપ
 $\alpha \in S$માંથી ગેરહાજર છે. તેથી $p\notin \lambda$, અને પરિણામે
@@ -83,7 +83,7 @@ $\lambda \subseteq \beta$. આથી $\lambda$ એ $S$ની \emph{ન્યૂ�
 ઉચ્ચસીમા છે.
 \sourcecorrection{OLARI-002}{મૂળની \texttt{cuts.tex}, પંક્તિઓ 61--65માં
 \(S\)માં ઓછામાં ઓછો એક કાપ હોવાનો આધાર ભૂલથી “\(S\)ને ઉચ્ચસીમા છે”
-એમ આપ્યો છે. આ તારણ \(S\) અખાલી છે એ ધારણાથી મળે છે; અહીં તે જ
+એમ આપ્યો છે. આ તારણ \(S\) અરિક્ત છે એ ધારણાથી મળે છે; અહીં તે જ
 યોગ્ય ધારણા લખી છે.}
 \end{proof}
 
@@ -100,7 +100,7 @@ $\lambda \subseteq \beta$. આથી $\lambda$ એ $S$ની \emph{ન્યૂ�
   \alpha + \beta &= \Setabs{p + q}{p \in \alpha \land q \in \beta}\\
 %  \alpha - \beta &\defis \Setabs{p - q}{p \in \alpha \land q \in \Rat \setminus \beta}\\
   \alpha \times \beta &=
-  \Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0^\mathbb{R} & \text{ જો }\alpha, \beta \geq 0_\Real
+  \Setabs{p \times q}{0 \leq p \in \alpha \land 0 \leq q \in \beta} \cup 0_\Real & \text{ જો }\alpha, \beta \geq 0_\Real
 %  \alpha \div \beta &\defis
 %  \Setabs{\nicefrac{p}{q}}{p \in \alpha \land q \in \Rat \setminus \beta}  & \text{ જો }\alpha \geq 0_\Real, \beta > 0_\Real
 \end{align*}
@@ -112,11 +112,13 @@ $\lambda \subseteq \beta$. આથી $\lambda$ એ $S$ની \emph{ન્યૂ�
 \begin{align*}
   \alpha \times \beta &\defis
   \begin{cases}
+    0_\Real &\text{ જો }\alpha=0_\Real\text{ અથવા }\beta=0_\Real\\
     \mathord{-}\alpha \times \mathord{-}\beta &\text{ જો }\alpha < 0_\Real\text{ અને }\beta < 0_\Real\\
     \mathord{-}(\mathord{-}\alpha \times \beta) &\text{ જો }\alpha < 0_\Real \text{ અને }\beta > 0_\Real\\
     \mathord{-}(\alpha \times \mathord{-}\beta) &\text{ જો }\alpha > 0_\Real \text{ અને }\beta < 0_\Real
   \end{cases}
 \end{align*}
+\sourcecorrection{OLREA-228}{મૂળની \texttt{cuts.tex}, પંક્તિ 92માં શૂન્ય-કાપને ઉપરના સૂચકવાળું \(0^{\mathbb R}\) લખાયું છે; અહીં પહેલેથી વ્યાખ્યાયિત \(0_\Real\) વાપર્યું છે. પંક્તિઓ 101--107ના ત્રણ ઋણ-ચિહ્નવાળા કિસ્સાઓમાં એક પરિબળ શૂન્ય અને બીજું ઋણ હોય તે કિસ્સાઓ આવતાં નથી. અહીં શૂન્ય પરિબળનો કિસ્સો સક્રિય વ્યાખ્યામાં મૂક્યો છે; મૂળમાં તે માત્ર ટિપ્પણીમાં છે.}
 આમાંની દરેક વ્યાખ્યા હંમેશાં કાપ જ આપે છે તેની તપાસ કરવી પડશે.
 છેલ્લે, આ રીતે વ્યાખ્યાયિત કાપોનો વ્યવહાર બરાબર જેવો હોવો જોઈએ
 તેવો જ છે તેનું સરળ પરંતુ લાંબું નિદર્શન કરવું પડશે. આ બધું

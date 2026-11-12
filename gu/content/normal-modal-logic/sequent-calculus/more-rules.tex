@@ -171,21 +171,21 @@
       \hline
       તર્કપદ્ધતિ & $R$નો ગુણધર્મ & નિયમો\\
       \hline
-      $\Log{T} = \Log{KT}$ & સ્વવાચક & $\Box$,
+      $\Log{T} = \Log{KT}$ & સ્વવાચક & \iftag{prvBox}{$\Box$}{}\iftag{notprvBox,notprvDiamond}{}{, }\iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}
       \\ \hline
-      $\Log{D} = \Log{KD}$ & સિરિયલ & $\Box$,
+      $\Log{D} = \Log{KD}$ & સિરિયલ & \iftag{prvBox}{$\Box$}{}\iftag{notprvBox,notprvDiamond}{}{, }\iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{%
         \iftag{prvDiamond}{D}{D$\Box$}}{D$\Diamond$}
       \\ \hline
-      $\Log{K4}$ & પરંપરિત & $\Box$,
+      $\Log{K4}$ & પરંપરિત & \iftag{prvBox}{$\Box$}{}\iftag{notprvBox,notprvDiamond}{}{, }\iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{4$\Box$}{}% 
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{4$\Diamond$}{}
       \\ \hline
-      $\Log{B} = \Log{KTB}$ & સ્વવાચક, & $\Box$,
+      $\Log{B} = \Log{KTB}$ & સ્વવાચક, & \iftag{prvBox}{$\Box$}{}\iftag{notprvBox,notprvDiamond}{}{, }\iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -194,7 +194,7 @@
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{B$\Diamond$}{}
       \\ \hline
-      $\Log{S4} = \Log{KT4}$ & સ્વવાચક, & $\Box$,
+      $\Log{S4} = \Log{KT4}$ & સ્વવાચક, & \iftag{prvBox}{$\Box$}{}\iftag{notprvBox,notprvDiamond}{}{, }\iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -203,7 +203,7 @@
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{4$\Diamond$}{}
       \\ \hline
-      $\Log{S5} = \Log{KT5}$ & સ્વવાચક, & $\Box$,
+      $\Log{S5} = \Log{KT5}$ & સ્વવાચક, & \iftag{prvBox}{$\Box$}{}\iftag{notprvBox,notprvDiamond}{}{, }\iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -296,10 +296,12 @@
 \end{ex}
 }
 \begin{ex}
-\Log{S5} માટેનું સિક્વન્ટ કલન \Cut{} નિયમ વિના પૂર્ણ નથી;
-દાખલા તરીકે, \iftag{prvBox}{$\Diamond\Box !A \lif !A$}{$!A \lif
-\Box\Diamond !A$} એ~$\Log{S5}$માં માન્ય છે, પણ તેનું
-\Cut વિના પ્રમાણ નથી. અહીં~\Cut વાપરતું !!a{derivation} છે:
+અહીંના નિયમોથી મળતું \Log{S5} માટેનું સિક્વન્ટ કલન
+\Cut{} નિયમ વિના પૂર્ણ નથી;
+દાખલા તરીકે, પ્રતિજ્ઞાપન ચલ~$p$ માટે
+\iftag{prvBox}{$\Diamond\Box p \lif p$}{$p \lif
+\Box\Diamond p$} એ~$\Log{S5}$માં માન્ય છે, પણ આ
+કલનમાં તેનું \Cut વિના પ્રમાણ નથી. અહીં~\Cut વાપરતું !!a{derivation} છે:
 \begin{prooftree}
 \iftag{prvBox}{\iftag{prvDiamond}{% both [] and <> primitive
 \Axiom$\Box !A \fCenter \Box!A$
@@ -341,7 +343,7 @@
 \UnaryInf$\lnot\Diamond!A , \Diamond!A \fCenter$
 \RightLabel{5$\Diamond$}
 \UnaryInf$\Diamond\lnot\Diamond!A , \Diamond!A\fCenter$
-\RightLabel{\RightR{\Exchange}}
+\RightLabel{\LeftR{\Exchange}}
 \UnaryInf$\Diamond!A, \Diamond\lnot\Diamond!A\fCenter $
 
 \RightLabel{\Cut}
@@ -366,4 +368,11 @@
   \end{enumerate}
 \end{prob}
 
+\sourcecorrection{OLREA-138}{અપૂર્ણતા અહીં દર્શાવેલી નિયમ-પ્રણાલી
+વિશે છે; દરેક S5 કલન વિશે નથી. કટ વિના અપ્રાપ્ય ઉદાહરણ
+પ્રતિજ્ઞાપન ચલ માટે આપ્યું છે, કારણ કે યોજનાના કેટલાક વિશિષ્ટ
+સૂત્રો કટ વિના પણ સાધ્ય હોઈ શકે. કોષ્ટકમાં આદિમ સંક્રિયકોના
+અનુરૂપ બંને મૂળ નિયમો દર્શાવ્યા છે. માત્ર ડાયમંડ-શાખાના
+કટ-વૃક્ષમાં ડાબી બાજુનાં સૂત્રોની અદલાબદલીનું લેબલ પણ
+ડાબા નિયમ તરીકે સુધાર્યું છે.}
 \end{document}

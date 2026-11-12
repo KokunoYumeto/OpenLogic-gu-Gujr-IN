@@ -98,16 +98,25 @@ $\Box !B$ના આગમન-કિસ્સાને અશરતી \texttt{it
       ક્રમિક પ્રતિસ્થાપન જેવું નથી. દાખલા તરીકે, ઉપરના
       $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ને
       $\Subst{(\Subst{!A}{!D_1}{p_1})}{!D_2}{p_2}$ સાથે સરખાવો; તે આ છે:}
-    \Diamond(p_2 \lif p_3) & \Subst{\lif \Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ અર્થાત્,}\\
+    &\Subst{\bigl(\Diamond(p_2 \lif p_3) \lif
+      \Box(\Diamond(p_2 \lif p_3) \land p_2)\bigr)}
+      {\lnot\Box p_1}{p_2}, \text{ અર્થાત્,}\\
     \Diamond(\lnot\Box p_1 \lif p_3) &
     \lif \Box(\Diamond(\lnot\Box p_1
     \lif p_3) \land \lnot\Box p_1)\\
     \intertext{અને $\Subst{(\Subst{!A}{!D_2}{p_2})}{!D_1}{p_1}$ સાથે પણ સરખાવો:}
-    p_1 & \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ અર્થાત્,}\\
+    &\Subst{\bigl(p_1 \lif \Box(p_1 \land \lnot\Box p_1)\bigr)}
+      {\Diamond(p_2 \lif p_3)}{p_1}, \text{ અર્થાત્,}\\
     \Diamond(p_2 \lif p_3) &
     \lif \Box(\Diamond(p_2
     \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).
   \end{align*}
 \end{ex}
+\sourcecorrection{OLREA-098}{સ્થિર અંગ્રેજી મૂળના
+ક્રમિક પ્રતિસ્થાપનનાં બંને મધ્યવર્તી પગલાંમાં પ્રતિસ્થાપનનો
+સંકેત આખા શરતી સૂત્રને બદલે તેના ઉત્તરપક્ષને જ લાગુ પડતો હતો.
+આગળનાં વિસ્તરણોમાં પૂર્વપક્ષ પણ બદલાય છે. તેથી બંને
+પગલાંમાં આખા શરતી સૂત્રને કૌંસમાં લઈ તેના પર પ્રતિસ્થાપન
+મૂક્યું છે; એકસાથે અને ક્રમિક પ્રતિસ્થાપનનાં અંતિમ સૂત્રો જાળવ્યાં છે.}
 
 \end{document}

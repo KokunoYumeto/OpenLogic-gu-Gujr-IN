@@ -14,14 +14,14 @@
 $\{\True,\False\}$ને ``સત્ય'' અને ``અસત્ય'' એ બે સત્યમૂલ્યોનો ગણ
 માનો. $\Lang{L_0}$ માટેની \emph{!!{valuation}} એ ભાષાનાં
 !!{propositional variable}sને $\True$ અથવા $\False$ નિયુક્ત કરતું
-વિધેય~$\pAssign{v}$ છે; એટલે કે, $\pAssign{v}\colon
+ફલન~$\pAssign{v}$ છે; એટલે કે, $\pAssign{v}\colon
 \PVar\to\{\True,\False\}$.
 \end{defn}
 
 \begin{defn}
-  !!a{valuation}~$\pAssign{v}$ આપેલી હોય, ત્યારે મૂલ્યાંકન વિધેય
+  !!a{valuation}~$\pAssign{v}$ આપેલી હોય, ત્યારે મૂલ્યાંકન ફલન
   $\pValue{v}\colon\Frm[L_0]\to\{\True,\False\}$ને નીચે પ્રમાણે
-  અનુમાનાત્મક રીતે વ્યાખ્યાયિત કરો:
+  આગમનાત્મક રીતે વ્યાખ્યાયિત કરો:
   \begin{align*}
     \iftag{prvFalse}{\pValue{v}(\lfalse) & = \False; \\}{}
     \iftag{prvTrue}{\pValue{v}(\ltrue) & = \True; \\}{}
@@ -143,13 +143,13 @@ $\pValue{v_1}(!A)=\pValue{v_2}(!A)$.
 \end{thm}
 
 \begin{proof}
-$!A$ પર અનુમાનથી.
+$!A$ પર આગમનથી.
 \end{proof}
 
 \begin{defn}[સંતોષ]
 \ollabel{defn:satisfaction} !!a{valuation}~$\pAssign{v}$ વડે
   !!a{formula}~$!A$ના \emph{સંતોષ}, $\pSat{v}{!A}$,નો ખ્યાલ આપણે
-  નીચે પ્રમાણે અનુમાનાત્મક રીતે વ્યાખ્યાયિત કરી શકીએ છીએ.
+  નીચે પ્રમાણે આગમનાત્મક રીતે વ્યાખ્યાયિત કરી શકીએ છીએ.
   (``$\pSat{v}{!A}$ નથી'' એ કહેવા આપણે $\pSat/{v}{!A}$ લખીએ છીએ.)
 \begin{enumerate}
 \tagitem{prvFalse}{%
@@ -191,7 +191,7 @@ $\pSat{v}{!A}$ હોય ત્યારે જ $\pSat{v}{\Gamma}$.
 \end{prop}
 
 \begin{proof}
-  $!A$ પર અનુમાનથી.
+  $!A$ પર આગમનથી.
 \end{proof}
 
 \begin{prob}

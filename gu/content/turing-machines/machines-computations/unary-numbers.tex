@@ -56,7 +56,7 @@ $\TMstroke$ ભૂંસી નાખવાની છે.
   \node[state]         (C) [right of=B] {$q_2$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
@@ -64,6 +64,12 @@ $\TMstroke$ ભૂંસી નાખવાની છે.
 \]\caption{$f(x,y) = x+y$ ગણતું મશીન}
 \ollabel{fig:adder}
 \end{figure}
+\sourcecorrection{OLREA-018}{સ્થિર અંગ્રેજી મૂળમાં $q_0$ના
+સ્ટ્રોક વાંચતા તીરનું લક્ષ્ય $q_1$ છે, છતાં તેને પોતાને
+જોડતું તીર દર્શાવ્યું છે. તેથી પ્રથમ સમૂહના માત્ર એક સ્ટ્રોક
+પછી મશીન $q_1$માં જઈ સરવાળો ખોટો આપે છે. અહીં આ તીરનું
+લક્ષ્ય $q_0$ રાખ્યું છે: પહેલા આખો પ્રથમ સમૂહ વટાવીએ,
+પછી વચ્ચેના ખાલી પ્રતીકને સ્ટ્રોકથી બદલીને $q_1$માં જઈએ.}
 \end{ex}
 
 \begin{prob}
