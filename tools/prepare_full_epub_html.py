@@ -992,6 +992,17 @@ def main() -> None:
         json.dumps({'schema':'openlogic-gu-full-epub-native-pdf-figures/1',
                     'input_sha256':sha(MASTER), 'pdf_sha256':NATIVE_FIGURE_PDF_SHA,
                     'figures':native_receipts},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    # maxwidth changes print geometry only. Keep the same proof/tableau
+    # content and present it in the converter's existing display environments.
+    text = re.sub(
+        r"\\begin\{maxwidth\}\s*\\begin\{tableau\}\{\}([\s\S]*?)"
+        r"\\end\{tableau\}\s*\\end\{maxwidth\}",
+        lambda match: r"\begin{oltableau}" + match[1] + r"\end{oltableau}", text,
+    )
+    text = re.sub(
+        r"\\begin\{maxwidth\}\s*\$\s*([\s\S]*?\\DisplayProof)\$\s*\\end\{maxwidth\}",
+        lambda match: r"\[" + "\n" + match[1] + "\n" + r"\]", text,
+    )
     text = structural_preprocess(text)
     text, proof_receipts = render_proof_structures(text)
     text, table_groups = source_table_groups(text)

@@ -5898,9 +5898,9 @@ $g$ આ પ્રમાણે વ્યાખ્યાયિત કરો:
 			x & \text{અન્યથા}
 		\end{cases}
 \]
-$g$ એ $C \to B$નું એક-એક વ્યાપ્ત ફલન છે તે આપણે બતાવીશું; તેના પરથી
-$\comp{f^{-1}}{g} \colon A \to B$ એ એક-એક વ્યાપ્ત ફલન છે એવું મળશે અને
-સાબિતી પૂરી થશે.
+$g$ એ $C \to B$નું એક-એક વ્યાપ્ત ફલન છે તે આપણે બતાવીશું, એટલે
+$\cardeq{B}{C}$. ત્યાર પછી $\comp{f^{-1}}{g} \colon A \to B$ પણ
+એક-એક વ્યાપ્ત ફલન છે, એટલે $\cardeq{A}{B}$.
 
 પહેલો દાવો એ છે કે જો $x \in F$ પણ $y\notin F$ હોય, તો
 $g(x) \neq g(y)$. વિરોધાભાસ મેળવવા ઊલટું ધારો; ત્યારે
@@ -49360,21 +49360,22 @@ $(!A \lor !B) \land (\lnot !A \lor \lnot !B)$ સત્ય હોય,
 સિક્વન્ટ કલનના નિયમો આ રીતે રજૂ કરી શકીએ:
 \begin{align*}
 &
+\Axiom$!A, \Gamma \fCenter \Delta, !B$
+\Axiom$!B, \Gamma \fCenter \Delta, !A$
+\RightLabel{\LeftR{\oplus}}
+\BinaryInf$!A \oplus !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\\
+&
 \Axiom$\Gamma \fCenter \Delta, !A, !B$
 \Axiom$!A, !B, \Gamma \fCenter \Delta$
 \RightLabel{\RightR{\oplus}}
 \BinaryInf$\Gamma \fCenter \Delta, !A \oplus !B$
 \DisplayProof
-\\
-& \Axiom$!A, \Gamma \fCenter \Delta, !B$
-\Axiom$!B, \Gamma \fCenter \Delta, !A$
-\RightLabel{\LeftR{\oplus}}
-\BinaryInf$!A \oplus !B, \Gamma \fCenter \Delta$
-\DisplayProof
 \end{align*}
 આ નિયમો પણ યથાર્થ અને પૂર્ણ હોય.
 તેમનાં નિષ્કર્ષ સત્ય છે જો અને ફક્ત જો બધા આધાર સત્ય હોય.
-\sourcecorrection{OLMD-304}{મૂળના બીજા અપવર્જક-વિકલ્પ નિયમમાં મુખ્ય સૂત્ર ડાબે છે પરંતુ નિયમ-લેબલ જમણો કહે છે. તેને ડાબો નિયમ કર્યો છે; આધાર અને નિષ્કર્ષ અચળ છે.}
+\sourcecorrection{OLMD-304}{સ્થિર અગાઉના અંગ્રેજી સ્રોતના અપવર્જક-વિકલ્પ નિયમમાં મુખ્ય સૂત્ર ડાબે છે પરંતુ નિયમ-લેબલ જમણો કહે છે. તેને ડાબો નિયમ કર્યો છે; આધાર અને નિષ્કર્ષ અચળ છે.}
 
 \begin{prob}
 $!A \downarrow !B$ સત્ય છે જો અને ફક્ત જો
@@ -50745,7 +50746,7 @@ $\RightR{\forall}$ અને $\LeftR{\exists}$માં અચળ~$a$
 \RightR{\Contraction}નો નિયમ નથી. \Log{G1m} એ
 \RightR{\Weakening} અને $\lfalse,
 \Gamma \Sequent \Delta$ સ્વરૂપનાં સ્વયંસિદ્ધો વિનાનું \Log{G1i} છે.}
-\ollabel{tab:G1c}
+\ollabel{tab:G1i}
 \end{table}
 % END OLP-0705
 \endgroup
@@ -50844,7 +50845,7 @@ $\RightR{\forall}$ અને $\LeftR{\exists}$માં અચળ~$a$
 અલગ તંત્ર અંગે નોંધ: \Log{G1m} એ જમણા શિથિલીકરણ અને
 $\lfalse, \Gamma \Sequent
 \Delta$ સ્વરૂપનાં સ્વયંસિદ્ધો વિનાનું \Log{G1i} છે.}
-\ollabel{tab:G3c}
+\ollabel{tab:G3i}
 \end{table}
 \sourcecorrection{OLMD-334}{મૂળ સર્વપરિમાણકના ડાબા નિયમના આધારમાં મુખ્ય સૂત્ર અને સંદર્ભ વચ્ચેનો અલ્પવિરામ ઉમેર્યો છે.}
 \sourcecorrection{OLMD-335}{મૂળ વિકલ્પના જમણા નિયમના આધારમાં બે સૂત્રો છે, જ્યારે આ જ કોષ્ટકની શરત ઉત્તરાંગમાં વધુમાં વધુ એક સૂત્રની છૂટ આપે છે. તેથી એક સૂત્રવાળા બે જુદા દાખલ-નિયમ દર્શાવ્યા છે: એકમાં પહેલું વિકલ્પક અને બીજામાં બીજું વિકલ્પક આધાર છે. આ સ્વરૂપ G1iના કોષ્ટક અને નિયમોના અર્થઘટન સાથે મેળ ખાય છે.}
@@ -59476,7 +59477,7 @@ $N$નો પ્રકાર $\Gamma$ની સાપેક્ષે~$!A$ હો
 \olref{defn:type}ની કલમો પરિચિત લાગવી જોઈએ:
 તેઓ એક નાના તફાવત સાથે બરાબર \Log{tN2i}ના નિયમો જ છે;
 સંદર્ભ~$\Gamma$ બધે એ જ છે.
-આ વ્યાખ્યાને \olref{tab:tN2ip}માં આપેલા નિયમો ધરાવતા
+આ વ્યાખ્યાને \olref{tab:tN3ip}માં આપેલા નિયમો ધરાવતા
 \Log{tN3i} કલન તરીકે રજૂ કરી શકીએ.
 
 \begingroup
@@ -59547,7 +59548,7 @@ $N$નો પ્રકાર $\Gamma$ની સાપેક્ષે~$!A$ હો
 \caption{પ્રકાર-સોંપણી તંત્ર તરીકે કામ કરતા પદથી ચિહ્નિત
 અંતઃપ્રજ્ઞાવાદી વિધાનતર્કીય સ્વાભાવિક નિગમન તંત્ર
 \Log{tN3ip}ના નિયમો.}
-\ollabel{tab:tN2ip}
+\ollabel{tab:tN3ip}
 \end{table}
 % END OLP-0693
 \endgroup
@@ -62178,7 +62179,8 @@ $!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
 અને $\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$થી
 શરૂ થાય છે:
 \sourcecorrection{OLMD-279}{મૂળમાં clause tableau લખાયું છે, પરંતુ દર્શાવેલા વૃક્ષની બધી શાખાઓ બંધ છે; અહીં બંધ કોષ્ટક-વૃક્ષ કર્યું છે.}
-\begin{oltableau}
+\begin{maxwidth}
+  \begin{tableau}{}
   [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
     just=\TAss, checked
     [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
@@ -62236,7 +62238,8 @@ $!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
       ]
     ]
   ]
-\end{oltableau}
+  \end{tableau}
+\end{maxwidth}
 
 ખરાની નિશાનીઓ સૂચવે છે કે તેમની નીચેની બધી
 શાખાઓમાં સંબંધિત સૂત્ર પર નિયમ લાગુ
@@ -62326,7 +62329,8 @@ $!A, \Pi \Sequent \Lambda, !A$ સ્વરૂપનો
 કેટલાંક શિરોબિંદુઓને એક જ સિક્વન્ટ સોંપાશે;
 પુનરાવર્તિત નકલો કાઢી નાખો. દાખલા તરીકે,
 ઉપરનું કોષ્ટક-વૃક્ષ આ સાબિતીમાં રૂપાંતરિત થાય છે:
-\[\small
+\begin{maxwidth}
+$
 \Axiom$!A \fCenter !A, !B$
 \RightLabel{\RightR{\lor}}
 \UnaryInf$!A \fCenter !A \lor !B$
@@ -62351,8 +62355,8 @@ $!A, \Pi \Sequent \Lambda, !A$ સ્વરૂપનો
 \RightLabel{\LeftR{\lor}}
 \BinaryInf$!A \lor (!B \land !C) \fCenter (!A \lor !B) \land
 (!A \lor !C)$
-\DisplayProof
-\]
+\DisplayProof$
+\end{maxwidth}
 % END OLP-0684
 \endgroup
 
