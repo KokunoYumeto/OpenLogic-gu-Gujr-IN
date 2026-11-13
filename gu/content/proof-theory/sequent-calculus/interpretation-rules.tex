@@ -47,21 +47,22 @@ $(!A \lor !B) \land (\lnot !A \lor \lnot !B)$ સત્ય હોય,
 સિક્વન્ટ કલનના નિયમો આ રીતે રજૂ કરી શકીએ:
 \begin{align*}
 &
+\Axiom$!A, \Gamma \fCenter \Delta, !B$
+\Axiom$!B, \Gamma \fCenter \Delta, !A$
+\RightLabel{\LeftR{\oplus}}
+\BinaryInf$!A \oplus !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\\
+&
 \Axiom$\Gamma \fCenter \Delta, !A, !B$
 \Axiom$!A, !B, \Gamma \fCenter \Delta$
 \RightLabel{\RightR{\oplus}}
 \BinaryInf$\Gamma \fCenter \Delta, !A \oplus !B$
 \DisplayProof
-\\
-& \Axiom$!A, \Gamma \fCenter \Delta, !B$
-\Axiom$!B, \Gamma \fCenter \Delta, !A$
-\RightLabel{\LeftR{\oplus}}
-\BinaryInf$!A \oplus !B, \Gamma \fCenter \Delta$
-\DisplayProof
 \end{align*}
 આ નિયમો પણ યથાર્થ અને પૂર્ણ હોય.
 તેમનાં નિષ્કર્ષ સત્ય છે જો અને ફક્ત જો બધા આધાર સત્ય હોય.
-\sourcecorrection{OLMD-304}{મૂળના બીજા અપવર્જક-વિકલ્પ નિયમમાં મુખ્ય સૂત્ર ડાબે છે પરંતુ નિયમ-લેબલ જમણો કહે છે. તેને ડાબો નિયમ કર્યો છે; આધાર અને નિષ્કર્ષ અચળ છે.}
+\sourcecorrection{OLMD-304}{સ્થિર અગાઉના અંગ્રેજી સ્રોતના અપવર્જક-વિકલ્પ નિયમમાં મુખ્ય સૂત્ર ડાબે છે પરંતુ નિયમ-લેબલ જમણો કહે છે. તેને ડાબો નિયમ કર્યો છે; આધાર અને નિષ્કર્ષ અચળ છે.}
 
 \begin{prob}
 $!A \downarrow !B$ સત્ય છે જો અને ફક્ત જો

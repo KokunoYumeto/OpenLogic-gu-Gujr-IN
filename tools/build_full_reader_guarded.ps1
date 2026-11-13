@@ -1,5 +1,6 @@
 param([int]$TimeoutMs=1000,[string]$BuildSubdir='full-reader',[string]$JobName='gu-full-reader-proof')
 $ErrorActionPreference='Stop'
+Add-Type -Path (Join-Path $PSScriptRoot 'WindowsTeXJob.cs')
 $GuRepo=Split-Path -Parent $PSScriptRoot
 $GuState=Join-Path $GuRepo 'build'
 $GuInput=Join-Path $GuRepo 'reader\full-reader.tex'
@@ -18,33 +19,29 @@ if ((Get-Content -LiteralPath $GuInput -Raw).Contains('\input{reader/gu-reader-l
 $GuReceipt.job_name=$GuJob
 function Invoke-GuCapturedBuild {
  param([string]$Executable,[string[]]$Arguments,[string]$Directory,[string]$Step,[int]$LimitMs)
- $GuInfo=[System.Diagnostics.ProcessStartInfo]::new()
- $GuInfo.FileName=$Executable
- foreach ($GuArg in $Arguments) {[void]$GuInfo.ArgumentList.Add($GuArg)}
- $GuInfo.WorkingDirectory=$Directory
- $GuInfo.UseShellExecute=$false
- $GuInfo.CreateNoWindow=$true
- $GuInfo.RedirectStandardOutput=$true
- $GuInfo.RedirectStandardError=$true
- $GuProcess=[System.Diagnostics.Process]::new()
- $GuProcess.StartInfo=$GuInfo
- [void]$GuProcess.Start()
- $GuPid=$GuProcess.Id
- $GuStdout=$GuProcess.StandardOutput.ReadToEndAsync()
- $GuStderr=$GuProcess.StandardError.ReadToEndAsync()
+ $GuJobHandle = [GuTeXJob]::CreateJobObject([IntPtr]::Zero,$null)
+ if ($GuJobHandle -eq [IntPtr]::Zero) {throw 'Unable to create the TeX process job.'}
+ $GuProcess = $null
  try {
-  if (-not $GuProcess.WaitForExit($LimitMs)) {$GuProcess.Kill($true);$GuProcess.WaitForExit();throw "Own $Step process exceeded bounded runtime."}
-  $GuProcess.Refresh()
-  $GuExit=$GuProcess.ExitCode
-  $GuOutText=$GuStdout.GetAwaiter().GetResult()
-  $GuErrText=$GuStderr.GetAwaiter().GetResult()
-  $GuOutText | Set-Content -LiteralPath (Join-Path $GuOutput ($Step+'.stdout.log')) -Encoding utf8
-  $GuErrText | Set-Content -LiteralPath (Join-Path $GuOutput ($Step+'.stderr.log')) -Encoding utf8
-  $GuReceipt.steps += [ordered]@{step=$Step;process_id=$GuPid;exit_code=$GuExit}
-  if ($GuExit -ne 0) {throw "$Step failed; inspect its saved stdout/stderr and TeX log."}
+  [GuTeXJob]::Limit($GuJobHandle)
+  $GuExePath = (Get-Command $Executable -CommandType Application).Source
+  $GuArgString = ($Arguments | ForEach-Object { '"' + $_ + '"' }) -join ' '
+  $GuProcess = [GuTeXJob]::Launch($GuExePath,$GuArgString,$Directory,$GuJobHandle,(Join-Path $GuOutput ($Step+'.stdout.log')))
+  $GuClock = [Diagnostics.Stopwatch]::StartNew()
+  while (-not $GuProcess.HasExited -or [GuTeXJob]::Active($GuJobHandle) -gt 0) {
+   if ($GuClock.ElapsedMilliseconds -gt $LimitMs) {throw "$Step exceeded bounded runtime."}
+   Start-Sleep -Milliseconds 100
+  }
+  $GuProcess.WaitForExit()
+  $GuReceipt.steps += [ordered]@{step=$Step;process_id=$GuProcess.Id;exit_code=$GuProcess.ExitCode;job_memory_limit_bytes=5000000000}
+  if ($GuProcess.ExitCode -ne 0) {throw "$Step failed; inspect its captured output and TeX log."}
  } finally {
-  if (-not $GuProcess.HasExited) {$GuProcess.Kill($true);$GuProcess.WaitForExit()}
-  $GuProcess.Dispose()
+  if ([GuTeXJob]::Active($GuJobHandle) -gt 0) {
+   [void][GuTeXJob]::TerminateJobObject($GuJobHandle,125)
+   while ([GuTeXJob]::Active($GuJobHandle) -gt 0) { Start-Sleep -Milliseconds 100 }
+  }
+  [void][GuTeXJob]::CloseHandle($GuJobHandle)
+  if ($GuProcess) {$GuProcess.Dispose()}
  }
 }
 try {
@@ -56,12 +53,12 @@ try {
   $GuFullWork=[System.IO.Path]::GetFullPath($GuState)
   if (-not $GuFullOutput.StartsWith($GuFullWork+[System.IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) {throw 'Output escaped own task state.'}
   [void](New-Item -ItemType Directory -Force -Path $GuOutput)
-  $env:SOURCE_DATE_EPOCH='1788530400'
+  $env:SOURCE_DATE_EPOCH='1786722663'
   $env:FORCE_SOURCE_DATE='1'
   $env:MIKTEX_ENABLE_INSTALLER='0'
   $env:BIBINPUTS=$GuRepo+';'
   $env:BSTINPUTS=$GuRepo+';'
-  $GuTeXArgs=@('--disable-installer','--no-shell-escape','--interaction=nonstopmode','--halt-on-error',('--jobname='+$GuJob),('--output-directory='+$GuOutput),$GuInput)
+  $GuTeXArgs=@('--disable-installer','--no-shell-escape','--interaction=nonstopmode','--halt-on-error','--recorder',('--jobname='+$GuJob),('--output-directory='+$GuOutput),$GuInput)
   Invoke-GuCapturedBuild 'lualatex.exe' $GuTeXArgs $GuRepo 'lualatex-1' 600000
   Invoke-GuCapturedBuild 'lualatex.exe' $GuTeXArgs $GuRepo 'lualatex-2' 600000
   Invoke-GuCapturedBuild 'lualatex.exe' $GuTeXArgs $GuRepo 'lualatex-3' 600000

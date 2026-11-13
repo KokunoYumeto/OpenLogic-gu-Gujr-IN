@@ -6,7 +6,7 @@
   "sources": {
     "open_logic": {
       "repository": "https://github.com/OpenLogicProject/OpenLogic",
-      "commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "commit": "1e960beff9ed7835bf3e3f1335e21af3439cd107",
       "license": "CC BY 4.0"
     },
     "slc": {
@@ -53,9 +53,9 @@
     },
     "gujarati_open_logic": {
       "repository": "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN",
-      "commit": "7678d1e8ee16a7f962cf748d491725923d008f44",
+      "commit": "3e743c5d2bfd8dd246d36bda047b6b7b8e98116d",
       "locale_input_units": 722,
-      "edition": "full-edition-v1.1.0"
+      "edition": "full-edition-v1.2.0"
     }
   },
   "translation": {
@@ -100,6 +100,11 @@
       "D"
     ],
     "gujarati_font": "Noto Sans Gujarati",
-    "source_date_epoch": 1783832456
+    "source_date_epoch": 1786722663
+  },
+  "source_sync": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "observed_utc": "2026-11-13T18:27:47.219Z"
   }
 }
