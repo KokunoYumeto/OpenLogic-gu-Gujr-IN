@@ -39,8 +39,8 @@ $\cutrank{\pi} = \depth{!A}$ છે.
 \end{lem}
 
 \begin{proof}
-સાબિતી કટની !!{height} અને ક્રમ પર
-દ્વિ-આગમનથી છે. !!{proof}~$\pi$નો અંત આ રીતે થાય છે:
+સાબિતી પહેલાં કટના ક્રમ પર અને નિશ્ચિત ક્રમ માટે
+કટની !!{height} પર દ્વિ-આગમનથી છે. !!{proof}~$\pi$નો અંત આ રીતે થાય છે:
 \[
 \AxiomC{}
 \RightLabel{$\pi_1$}
@@ -82,7 +82,10 @@ $\cutrank{\pi} > 0$ (અથવા બંને)
 જ્યારે $\cheight{\pi} = 0$ હોય
 (બંને આધારવિધાન સ્વયંસિદ્ધ હોય), ત્યારે
 કિસ્સા~A અને~B લાગુ પડે છે.
-$\cheight{\pi} > 0$ના કિસ્સા C--Dમાં આવે છે.
+$\cheight{\pi} > 0$ના કિસ્સા C--Eમાં આવે છે.
+\sourcecorrection{OLREA-190}{મૂળ અહીં કિસ્સા C--D કહે છે,
+પરંતુ બંને છેલ્લાં અનુમાનોમાં કટસૂત્ર મુખ્ય હોય ત્યારે
+નીચેનો કિસ્સો E જરૂરી છે. તેથી સંપૂર્ણ શ્રેણી C--E કરી છે.}
 
 \paragraph{કિસ્સો A:}
 કોઈ~$!B$ એ~$\Gamma$ અને~$\Delta$ બંનેમાં છે.
@@ -344,9 +347,13 @@ $\Gamma \Sequent \Delta$,
 \UnaryInf$!A, \lexists[x][!B(x)], \Gamma' \fCenter \Delta$
 \RightSubproofLabel{$\pi_2$}
 \RightLabel{\CutCS}
-\BinaryInf$\Gamma' \fCenter \Delta$
+\BinaryInf$\lexists[x][!B(x)], \Gamma' \fCenter \Delta$
 \DisplayProof
 \]
+\sourcecorrection{OLREA-191}{મૂળ આ કટના નિષ્કર્ષમાંથી
+$\lexists[x][!B(x)]$ કાઢી નાખે છે, જોકે કટસૂત્ર $!A$ છે.
+બંને આધારવિધાનોમાં રહેલું અસ્તિત્વસૂત્ર સંદર્ભમાં રહેવું
+જોઈએ; અહીં તે પુનઃસ્થાપિત કર્યું છે.}
 ફરી આગમન-પૂર્વધારણા આના પર લગાવીએ:
 \[
 \AxiomC{}
@@ -550,7 +557,7 @@ $\pi_1$ અને $\pi_2$ બંને એવા
 !!{height} જાળવતા શિથિલીકરણથી મળે છે.
 તેનો કટ-ક્રમ $< \cutrank{\pi}$ છે,
 કારણ કે $\depth{!C} < \depth{!B \lor !C}$.
-\sourcecorrection{OLMD-204}{મૂળમાં અપરિભાષિત $\cutr{\pi}$ છે; આ વિભાગની વ્યાખ્યા પ્રમાણે યોગ્ય સંજ્ઞા $\cutrank{\pi}$ છે.}
+
 તેથી આગમન-પૂર્વધારણાથી
 \Log{G3c}માં
 $\Gamma \fCenter \Delta, !B$ની
@@ -603,12 +610,19 @@ $= \depth{!B} < \depth{!B \lor !C}$ છે.
 \RightLabel{$\pi_1'$}
 \Deduce$!B, \Gamma \fCenter \Delta, !C$
 \AxiomC{}
-\RightLabel{$\pi_2''$}
-\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{$\pi_2''[!B \Sequent {}]$}
+\Deduce$!C, !B, \Gamma \fCenter \Delta$
 \RightLabel{\CutCS}
 \BinaryInf$!B, \Gamma \fCenter \Delta$
 \DisplayProof
 \]
+\sourcecorrection{OLREA-192}{મૂળ અનુબંધના ઘટાડાનાં
+બંને ચિત્રોમાં $\CutCS$ના આધારવિધાનોના સંદર્ભો મેળ ખાતા નથી:
+ડાબે $!B,\Gamma$ છે અને જમણે માત્ર $\Gamma$ છે. જમણી
+ઉપસાબિતીમાં $!B$ વડે ઊંચાઈ જાળવતું શિથિલીકરણ કરીને
+સામાન્ય સંદર્ભ $!B,\Gamma$ કર્યો છે. આથી દર્શાવેલો કટ
+યોગ્ય બને છે અને આગમન માટે જરૂરી ક્રમ તથા ઊંચાઈની સીમા
+જળવાય છે.}
 તેનો કટ-ક્રમ~$\pi$ કરતાં ઓછો છે.
 આગમન-પૂર્વધારણા
 $!B, \Gamma \fCenter \Delta$ની
@@ -719,10 +733,13 @@ $\Gamma \Sequent \Delta, !B(t)$ની
 \end{prob}
 
 \begin{prob}
-\olref{lem:cut-adm-G3c}ની સાબિતીના કિસ્સા~Dનો
+\olref{lem:cut-adm-G3c}ની સાબિતીના કિસ્સા~Cનો
 એ ઉપકિસ્સો ચકાસો જેમાં~$!A$ એ~$\pi_1$ના
 છેલ્લા અનુમાનમાં મુખ્ય નથી અને તે અનુમાનનો
 અંત~$\LeftR{\lforall}$થી થાય છે.
+\sourcecorrection{OLREA-193}{મૂળ આ એક-આધારવિધાનવાળા
+$\LeftR{\lforall}$ને બે-આધારવિધાનવાળા નિયમોના કિસ્સા Dમાં
+મૂકે છે. આ કસરત કિસ્સા Cની છે; સંદર્ભ એટલો સુધાર્યો છે.}
 \end{prob}
 
 \begin{prob}
@@ -757,8 +774,8 @@ $!A \ident (!B \lif !C)$ હોય ત્યારે
 \RightLabel{$\pi_1'$}
 \Deduce$!B, \Gamma \fCenter \Delta, !C$
 \AxiomC{}
-\RightLabel{$\pi_2''$}
-\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{$\pi_2''[!B \Sequent {}]$}
+\Deduce$!C, !B, \Gamma \fCenter \Delta$
 \RightLabel{\CutCS}
 \BinaryInf$!B, \Gamma \fCenter \Delta$
 \RightSubproofLabel{$\pi_1''$}
@@ -770,9 +787,10 @@ $!A \ident (!B \lif !C)$ હોય ત્યારે
 ઉપરનો \CutCS{} એ~$\pi_1'$ અને $\pi_2''$
 વચ્ચે છે; તેનો કટ-ક્રમ અને કટની
 !!{height} બંને~$\pi$ કરતાં ઓછાં છે.
-પણ આગમન-પૂર્વધારણાથી મળેલી
-!!{proof}~$\pi_1''$ની કટ-!!{height}
-હવે~$\pi$ કરતાં ઓછી હોવી જરૂરી નથી.
+પરંતુ આગમન-પૂર્વધારણાથી મળેલી ઉપસાબિતી
+$\pi_1''$ની !!{height} વધી શકે છે. તેથી નીચેના કટની
+કટ-ઊંચાઈ મૂળ~$\pi$ની કટ-ઊંચાઈ કરતાં ઓછી હોવી
+જરૂરી નથી.
 તેમ છતાં, નીચેના \CutCS{}નું
 કટ !!{formula}~$!B$ હોવાથી તેનો
 કટ \emph{ક્રમ}~$\pi$ના કટ-ક્રમ કરતાં

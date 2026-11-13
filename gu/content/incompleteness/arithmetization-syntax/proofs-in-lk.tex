@@ -143,9 +143,18 @@ $\fn{EndSequent}$ વાપરે છે; અહીં
 પછીનું વિધાન સર્વત્ર અર્થપૂર્ણ બને છે.}
 નીચેના વિધાનથી વ્યાખ્યાયિત
 $\fn{Sequent}(s)$ ગુણધર્મ જુઓ:
-\[
-  \len{s} = 2 \land \bforall{i<\len{(s)_0} + \len{(s)_1}}{\fn{Sent}(((s)_0 \concat (s)_1)_i)}
-\]
+\begin{multline*}
+  \fn{SeqCode}(s) \land \len{s} = 2 \land {}\\
+  \fn{SeqCode}((s)_0) \land \fn{SeqCode}((s)_1) \land {}\\
+  \bforall{i<\len{(s)_0} + \len{(s)_1}}{\fn{Sent}(((s)_0 \concat (s)_1)_i)}
+\end{multline*}
+\sourcecorrection{OLREA-034}{મૂળનું સૂત્ર માત્ર લંબાઈ અને
+ઘટકો તપાસે છે; સંખ્યા ખરેખર અનુક્રમનો સંકેત છે તે તપાસતું નથી.
+દાખલા તરીકે $42=\tuple{0,0}\cdot7$ માટે દર્શાવેલું લંબાઈ-વિધેય
+$2$ આપે છે અને બંને ઘટકો $0$ છે. તેથી મૂળની વાક્ય-તપાસ
+ખાલીપણે સત્ય થાય છે, છતાં $42$ બે-ઘટક ટપલનો સંકેત નથી.
+બાહ્ય ટપલ અને તેની બંને બાજુઓ માટે અગાઉ વ્યાખ્યાયિત
+$\fn{SeqCode}$ની શરતો ઉમેરેલી છે.}
 તે $s$ માટે ત્યારે અને માત્ર ત્યારે
 સત્ય છે જ્યારે $s$ એ !!{sentence}sના
 સિક્વન્ટની ગડેલ-સંખ્યા હોય. કેટલાક
@@ -171,7 +180,7 @@ $\pi$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
   છે, જો કાં તો કોઈ !!a{sentence}~$!A$
   માટે $\Gamma \Sequent \Delta$ એ
   $!A \Sequent !A$ હોય,
-  અથવા કોઈ પદ~$t$ માટે
+  અથવા કોઈ બંધ પદ~$t$ માટે
   $\Gamma \Sequent \Delta$ એ
   $\emptyset \Sequent \eq[t][t]$ હોય.
   ગડેલ-સંખ્યાઓની ભાષામાં
@@ -181,7 +190,7 @@ $\pi$ અને~$!A$ની ગડેલ-સંખ્યાઓનો
   \bexists{x < s}{} (\fn{Sent}(x) & \land
   s = \tuple{\tuple{x},\tuple{x}})
   \lor {}\\
-  \bexists{t<s}{} (\fn{Term}(t) & \land
+  \bexists{t<s}{} (\fn{ClTerm}(t) & \land
   s = \tuple{0, \tuple{\Gn{{\eq}(} \concat t \concat \Gn{,} \concat t \concat \Gn{)}}}).
   \end{align*}
 
@@ -259,7 +268,7 @@ $\RightR\land$ (નંબર~$10$) છે.''
 $\pi$નું છેલ્લું અનુમાન
 $\RightR\lexists$નો યોગ્ય ઉપયોગ હોય,
 તો અને માત્ર તો જ !!a{formula}~$!A$,
-ચલ~$x$, પદ~$t$ અને શ્રેણીઓ
+ચલ~$x$, બંધ પદ~$t$ અને શ્રેણીઓ
 $\Gamma$, $\Delta$ એવાં હોય કે
 $\pi$નું અંતિમ સિક્વન્ટ
 $\Gamma \Sequent \Delta, \lexists[x][!A]$
@@ -271,6 +280,7 @@ $\fn{FollowsBy}_{\RightR\lexists}(p)$
 ત્યારે અને માત્ર ત્યારે સત્ય છે જ્યારે
 \begin{align*}
   & \bexists{g<p}{\bexists{d<p}{\bexists{a<p}{\bexists{x<p}{\bexists{t<p}{\quad}}}}}\\
+  & \qquad \fn{Frm}(a) \land \fn{Var}(x) \land \fn{ClTerm}(t) \land {}\\
   & \qquad \fn{EndSequent}(p) = 
   \tuple{
     g,
@@ -283,15 +293,42 @@ $\fn{FollowsBy}_{\RightR\lexists}(p)$
   } \land {}\\
   & \qquad (p)_0 = 1 \land \fn{LastRule}(p) = 18.
 \end{align*}
+\sourcecorrection{OLREA-033}{મૂળના આ આંકિક સૂત્રમાં
+$a$ સૂત્ર, $x$ ચલ અને $t$ બંધ પદના સંકેત હોવાની
+તપાસ નથી. આ જ ગ્રંથના અસ્તિત્વ-પરિમાણકના જમણા
+નિયમમાં પદ બંધ હોવું જરૂરી છે. અહીં તે ત્રણ
+વાક્યરચનાત્મક શરતો ઉમેરેલી છે. આરંભિક સમાનતા-સિક્વન્ટમાં
+પણ $t$ બંધ પદ હોય તે માટે $\fn{Term}$ને બદલે
+$\fn{ClTerm}$ રાખ્યું છે; સિક્વન્ટનાં સૂત્રો વાક્યો જ હોવાં જોઈએ.
+બંધ પદથી
+પ્રતિસ્થાપન કરતી વખતે કોઈ મુક્ત ચલનું બંધન થઈ
+જતું નથી.}
+અહીં નોડનો સંકેત નીચેના ત્રણ ચોક્કસ સ્વરૂપોમાંથી
+એક હોવો પણ જરૂરી છે. આ શરતને
+$\fn{NodeCode}(p)$ કહીએ:
+\begin{multline*}
+[(p)_0=0 \land p=\tuple{0,\fn{EndSequent}(p)}] \lor {}\\
+[(p)_0=1 \land p=\tuple{1,(p)_1,\fn{EndSequent}(p),\fn{LastRule}(p)}] \lor {}\\
+[(p)_0=2 \land p=\tuple{2,(p)_1,(p)_2,\fn{EndSequent}(p),\fn{LastRule}(p)}].
+\end{multline*}
 હવે $\fn{Correct}(p)$ને આ પ્રમાણે
 વ્યાખ્યાયિત કરીએ:
 \begin{multline*}
-  \fn{Sequent}(\fn{EndSequent}(p)) \land {}\\ 
+  \fn{NodeCode}(p) \land \fn{Sequent}(\fn{EndSequent}(p)) \land {}\\ 
   [(\fn{LastRule}(p) = 1 \land 
   \fn{FollowsBy}_{\LeftR\Weakening}(p)) \lor \dots \lor {}\\
   (\fn{LastRule}(p) = 20 \land \fn{FollowsBy}_{\eq}(p)) \lor {}\\
   (p)_0 = 0 \land \fn{InitSeq}(\fn{EndSequent}(p))]
 \end{multline*}
+\sourcecorrection{OLREA-032}{મૂળની તપાસ નોડની
+ટપલ ખરેખર ઉપર વ્યાખ્યાયિત સ્વરૂપની છે કે નહીં
+તે તપાસતી નથી. દાખલા તરીકે, યોગ્ય આરંભિક
+સિક્વન્ટનો સંકેત $s$ હોય તો $\tuple{0,s,99}$
+પણ મૂળની છેલ્લી શરત સંતોષે, છતાં તે આરંભિક
+નિષ્પત્તિનો વ્યાખ્યાયિત સંકેત $\tuple{0,s}$ નથી.
+$\fn{NodeCode}$થી વધારાના કે ખૂટતા ઘટકવાળા
+સંકેતો પણ કાઢી શકાય છે. આ સંબંધ ઘટક-વિધેયો
+અને ટપલ-સંકેતના આદિમ પુનરાવર્તી વિધેયોથી બને છે.}
 \sourcecorrection{OLINC-008}{સ્થિર અંગ્રેજી મૂળમાં
 આરંભિક સિક્વન્ટના ગુણધર્મનું નામ
 પહેલાં $\fn{InitSeq}$ છે, પણ આ

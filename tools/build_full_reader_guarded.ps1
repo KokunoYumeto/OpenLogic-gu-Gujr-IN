@@ -1,14 +1,21 @@
-param([int]$TimeoutMs=1000)
+param([int]$TimeoutMs=1000,[string]$BuildSubdir='full-reader',[string]$JobName='gu-full-reader-proof')
 $ErrorActionPreference='Stop'
 $GuRepo=Split-Path -Parent $PSScriptRoot
 $GuState=Join-Path $GuRepo 'build'
 $GuInput=Join-Path $GuRepo 'reader\full-reader.tex'
-$GuOutput=Join-Path $GuRepo 'build\full-reader'
-$GuJob='gu-full-reader-proof'
+if ($BuildSubdir -notmatch '^[a-z0-9-]+$' -or $JobName -notmatch '^gu-[a-z0-9-]+$') {throw 'Invalid task-local build directory or job name.'}
+$GuOutput=Join-Path $GuState $BuildSubdir
+$GuJob=$JobName
 $GuReceiptPath=Join-Path $GuOutput 'FULL_READER_BUILD.json'
 $GuMutex=[System.Threading.Mutex]::new($false,'Global\InterlanguageTeXSlotV1')
 $GuAcquired=$false
 $GuReceipt=[ordered]@{schema='openlogic-gu-full-reader-guarded-build/1';started_at_utc=[DateTime]::UtcNow.ToString('o');mutex='Global\InterlanguageTeXSlotV1';timeout_ms=$TimeoutMs;acquired=$false;steps=@();status='starting'}
+$GuReceipt.input=[ordered]@{path=$GuInput;bytes=(Get-Item -LiteralPath $GuInput).Length;sha256=(Get-FileHash -LiteralPath $GuInput -Algorithm SHA256).Hash.ToLowerInvariant()}
+if ((Get-Content -LiteralPath $GuInput -Raw).Contains('\input{reader/gu-reader-layout.tex}')) {
+ $GuLayout=Join-Path $GuRepo 'reader\gu-reader-layout.tex'
+ $GuReceipt.reader_layout_dependency=[ordered]@{path=$GuLayout;bytes=(Get-Item -LiteralPath $GuLayout).Length;sha256=(Get-FileHash -LiteralPath $GuLayout -Algorithm SHA256).Hash.ToLowerInvariant()}
+}
+$GuReceipt.job_name=$GuJob
 function Invoke-GuCapturedBuild {
  param([string]$Executable,[string[]]$Arguments,[string]$Directory,[string]$Step,[int]$LimitMs)
  $GuInfo=[System.Diagnostics.ProcessStartInfo]::new()
@@ -58,6 +65,8 @@ try {
   Invoke-GuCapturedBuild 'lualatex.exe' $GuTeXArgs $GuRepo 'lualatex-1' 600000
   Invoke-GuCapturedBuild 'lualatex.exe' $GuTeXArgs $GuRepo 'lualatex-2' 600000
   Invoke-GuCapturedBuild 'lualatex.exe' $GuTeXArgs $GuRepo 'lualatex-3' 600000
+  if ((Get-FileHash -LiteralPath $GuInput -Algorithm SHA256).Hash.ToLowerInvariant() -ne $GuReceipt.input.sha256) {throw 'Reader input changed during captured build; rendered identity cannot be certified.'}
+  if ($GuReceipt.Contains('reader_layout_dependency') -and (Get-FileHash -LiteralPath $GuLayout -Algorithm SHA256).Hash.ToLowerInvariant() -ne $GuReceipt.reader_layout_dependency.sha256) {throw 'Reader layout dependency changed during captured build; rendered identity cannot be certified.'}
   $GuLogPath=Join-Path $GuOutput ($GuJob+'.log')
   $GuLog=Get-Content -LiteralPath $GuLogPath -Raw
   $GuReceipt.log=[ordered]@{path=$GuLogPath;sha256=(Get-FileHash -LiteralPath $GuLogPath -Algorithm SHA256).Hash.ToLowerInvariant()}

@@ -93,8 +93,6 @@
     \UnaryInf$\Diamond\lnot !A, \Box !A \fCenter $
     \RightLabel{\RightR{\lnot}}
     \UnaryInf$\Box !A \fCenter \lnot\Diamond\lnot !A$
-    \RightLabel{\RightR{\lif}}
-    \UnaryInf$\fCenter \Box !A \lif \lnot\Diamond\lnot !A$
     \Axiom$!A \fCenter !A$
     \RightLabel{\RightR{\lnot}}
     \UnaryInf$\fCenter !A, \lnot !A $
@@ -106,11 +104,16 @@
     \UnaryInf$\fCenter \Box !A, \Diamond\lnot !A$
     \RightLabel{\RightR{\lnot}}
     \UnaryInf$\lnot\Diamond\lnot !A \fCenter \Box !A$
-    \RightLabel{\RightR{\lif}}
-    \UnaryInf$\fCenter \lnot \Diamond \lnot !A \lif \Box !A$
-    \RightLabel{\RightR{\land}}
+    \RightLabel{\RightR{\liff}}
     \BinaryInf$\fCenter \Box !A \liff \lnot\Diamond\lnot !A$ 
   \end{prooftree} 
+
+  \sourcecorrection{OLREA-137}{મૂળમાં બે અનુબંધોને
+  સંયોજનના નિયમથી જોડીને આદિમ દ્વિઅનુબંધ લખ્યો છે;
+  તે નિયમનો નિષ્કર્ષ સંયોજન છે. અહીં બે વિરુદ્ધ દિશાવાળા
+  સિક્વન્ટો $\Box !A \Sequent \lnot\Diamond\lnot !A$ અને
+  $\lnot\Diamond\lnot !A \Sequent \Box !A$ને દ્વિઅનુબંધના
+  જમણા નિયમથી જોડ્યાં છે. તેથી નિષ્કર્ષ અને નિયમ મળે છે.}
 
 % અભ્યાસપ્રશ્નો મુલતવી હોય ત્યારે આ ચાલતું નથી.
 % \begin{prob}

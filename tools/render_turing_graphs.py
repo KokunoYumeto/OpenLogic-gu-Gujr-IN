@@ -126,6 +126,17 @@ def transition_lines(edge: dict) -> list[str]:
     return [", ".join(triple) for triple in edge["triples"]]
 
 
+def arrowhead(x, y, dx, dy):
+    """Explicit geometry also works in SVG consumers without marker support."""
+    length = math.hypot(dx, dy)
+    assert length > 0
+    ux, uy = dx/length, dy/length
+    bx, by = x-10*ux, y-10*uy
+    return (f'<path d="M{bx-4*uy:.1f},{by+4*ux:.1f} '
+            f'L{x:.1f},{y:.1f} L{bx+4*uy:.1f},{by-4*ux:.1f}" '
+            'fill="none" stroke="#17233b" stroke-width="2.2"/>')
+
+
 def render_turing_diagram(
     source: str, output_root: Path, repo_root: Path,
     receipts: list[dict], descriptions: dict[str, str],
@@ -144,7 +155,9 @@ def render_turing_diagram(
     height = ymax - ymin + 2 * margin_y
     coords = {key: (x - xmin + margin_x, y - ymin + margin_y)
               for key, (x, y) in coordinates.items()}
-    alt = "અવસ્થાચિત્ર: " + "; ".join(
+    initial = [state["label"] for state in states if state["initial"]]
+    assert len(initial) == 1, initial
+    alt = "અવસ્થાચિત્ર; પ્રારંભિક અવસ્થા " + initial[0] + ": " + "; ".join(
         f"{next(s['label'] for s in states if s['id'] == edge['source'])} થી "
         f"{next(s['label'] for s in states if s['id'] == edge['target'])}: "
         + " અથવા ".join(transition_lines(edge))
@@ -156,12 +169,7 @@ def render_turing_diagram(
         'role="img" aria-labelledby="tm-title tm-desc">',
         f'<title id="tm-title">ટ્યુરિંગ મશીનનું અવસ્થાચિત્ર {number}</title>',
         f'<desc id="tm-desc">{html.escape(alt)}</desc>',
-        '<defs><marker id="tm-arrow" markerWidth="10" markerHeight="10" '
-        'refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">'
-        '<path d="M0,0 L10,5 L0,10" fill="none" stroke="#17233b" '
-        'stroke-width="1.5"/></marker></defs>',
-        '<g fill="none" stroke="#17233b" stroke-width="2.2" '
-        'marker-end="url(#tm-arrow)">',
+        '<g fill="none" stroke="#17233b" stroke-width="2.2">',
     ]
     loop_counts = {}
     for edge in edges:
@@ -179,15 +187,19 @@ def render_turing_diagram(
             if orientation == "above":
                 path = f"M{sx-16},{sy-20} C{sx-56},{sy-reach} {sx+56},{sy-reach} {sx+16},{sy-20}"
                 label_at = (sx, sy - reach + 8)
+                arrow = (sx+16, sy-20, -40, reach-20)
             elif orientation == "below":
                 path = f"M{sx+16},{sy+20} C{sx+56},{sy+reach} {sx-56},{sy+reach} {sx-16},{sy+20}"
                 label_at = (sx, sy + reach - 2)
+                arrow = (sx-16, sy+20, 40, 20-reach)
             elif orientation == "left":
                 path = f"M{sx-20},{sy+16} C{sx-reach},{sy+56} {sx-reach},{sy-56} {sx-20},{sy-16}"
                 label_at = (sx - reach, sy)
+                arrow = (sx-20, sy-16, reach-20, 40)
             else:
                 path = f"M{sx+20},{sy-16} C{sx+reach},{sy-56} {sx+reach},{sy+56} {sx+20},{sy+16}"
                 label_at = (sx + reach, sy)
+                arrow = (sx+20, sy+16, 20-reach, -40)
         else:
             dx, dy = tx - sx, ty - sy
             length = math.hypot(dx, dy)
@@ -207,12 +219,15 @@ def render_turing_diagram(
                 path = (f"M{start_x:.1f},{start_y:.1f} Q{control_x:.1f},{control_y:.1f} "
                         f"{end_x:.1f},{end_y:.1f}")
                 label_at = (mid_x + bend * nx / 2, mid_y + bend * ny / 2)
+                arrow = (end_x, end_y, end_x-control_x, end_y-control_y)
             else:
                 path = f"M{start_x:.1f},{start_y:.1f} L{end_x:.1f},{end_y:.1f}"
                 label_at = (mid_x, mid_y)
+                arrow = (end_x, end_y, dx, dy)
             label_at = (label_at[0] + (16 if abs(dy) > abs(dx) else 0),
                         label_at[1] - (13 if abs(dx) >= abs(dy) else 0))
         svg.append(f'<path d="{path}"/>')
+        svg.append(arrowhead(*arrow))
         edge["label_position"] = [round(value, 1) for value in label_at]
     svg.append('</g>')
     for edge in edges:
@@ -233,7 +248,8 @@ def render_turing_diagram(
         x, y = coords[state["id"]]
         if state["initial"]:
             svg.append(f'<path d="M{x-70},{y} L{x-27},{y}" fill="none" '
-                       'stroke="#17233b" stroke-width="2.2" marker-end="url(#tm-arrow)"/>')
+                       'stroke="#17233b" stroke-width="2.2"/>')
+            svg.append(arrowhead(x-27,y,1,0))
         svg.append(f'<circle cx="{x}" cy="{y}" r="26" fill="white" '
                    'stroke="#17233b" stroke-width="2.2"/>')
         svg.append(f'<text x="{x}" y="{y+6}" text-anchor="middle" '

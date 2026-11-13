@@ -88,7 +88,8 @@ $\Gamma^*\Proves\Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}$.
 
 \begin{defn}
 ધારો કે~$\Gamma^*$ ભાષા~$\Lang L$નો સુસંગત અને !!{complete} ગણ છે,
-~$t$ બંધ પદ છે અને~$\approx$ પાછલી વ્યાખ્યામાંનો સંબંધ છે. ત્યારે:
+~$t$ બંધ પદ છે અને~$\approx$ પાછલી વ્યાખ્યામાંનો સંબંધ છે.
+અહીં ભાગફલ સંકેતનમાં~$\Trm[L]$ એ બંધ પદોના ગણ માટે વપરાય છે. ત્યારે:
 \[
 \equivrep{t}{\approx}=\Setabs{t'}{t'\in\Trm[L],t\approx t'}
 \]
@@ -135,7 +136,7 @@ $\equivrep{t'}{\approx}\notin\Assign{R}{\equivclass{M}{\approx}}$ હોવુ�
 \olref{prop:approx-equiv} ખાતરી આપે છે કે આવું બની શકતું નથી.
 \end{explain}
 
-\sourcecorrection{OLCO-012}{મૂળની \texttt{identity.tex}, પંક્તિ~134માં
+\sourcecorrection{OLCO-012}{મૂળની \texttt{identity.tex}, પંક્તિ~126માં
 બીજા પ્રતિનિધિ~$t'$ની ચર્ચા છતાં અસંતોષનું સૂત્ર
 $\Sat/{M}{\Atom{R}{t}}$ લખાયું છે. દલીલને જોઈતું અને પછીના
 નિષ્કર્ષમાં વપરાતું સૂત્ર $\Sat/{M}{\Atom{R}{t'}}$ હોવાથી અહીં એ
@@ -170,7 +171,7 @@ $t_1$, \dots, $t_n$, $t_1'$, \dots, $t_n'$ બંધ પદો હોય અન�
 
 \begin{lem}
 \ollabel{lem:val-in-termmodel-factored} ધારો કે
-$\Struct M=\Struct M(\Gamma^*)$. તો
+$\Struct M=\Struct M(\Gamma^*)$. તો દરેક બંધ પદ~$t$ માટે
 $\Value{t}{\equivclass{M}{\approx}}=\equivrep{t}{\approx}$.
 \end{lem}
 \begin{proof}
@@ -201,11 +202,9 @@ $\Value{t}{\equivclass{M}{\approx}}=\equivrep{t}{\approx}$.
 \end{align*}
 \end{proof}
 
-\sourcecorrection{OLCO-013}{મૂળની \texttt{identity.tex}, પંક્તિ~188માં
-પહેલી સમતુલ્યતાને માત્ર ભાગફલ સંરચનાની વ્યાખ્યાથી મળતી કહે છે. પદોના
-મૂલ્યો તેમના સામ્ય વર્ગો છે એ માટે તરત પહેલાંનું
-\olref{lem:val-in-termmodel-factored} પણ જરૂરી છે; અહીં એ સંદર્ભ સ્પષ્ટ
-કર્યો છે.}
+\begin{editorial}
+\textbf{OLCO-013.} મૂળની \texttt{identity.tex}, પંક્તિ~187માં પહેલી સમતુલ્યતાનો આધાર ભાગફલ સંરચનાની વ્યાખ્યા આપ્યો છે. આ પગલામાં તરત પહેલાં સાબિત કરેલું પદના મૂલ્યનું સહાયક પ્રમેય વપરાય છે. અનુવાદમાં \olref{lem:val-in-termmodel-factored}નો સ્પષ્ટ સંદર્ભ માત્ર એ જ પગલાનું સંપાદકીય સ્પષ્ટીકરણ છે.
+\end{editorial}
 
 \begin{digress}
 નોંધો કે~$\Struct{M(\Gamma^*)}$ હંમેશાં !!{enumerable} અને અનંત છે,

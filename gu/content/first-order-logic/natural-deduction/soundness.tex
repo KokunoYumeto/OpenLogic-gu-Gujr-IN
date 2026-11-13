@@ -49,7 +49,7 @@ $!A$ની કોઈ !!a{derivation}ને $\delta$ કહો. $\delta$માં
 એ~$!A$ને પણ સંતોષે છે.
 
 હવે આગમન-પગલું લો. માનો કે $\delta$માં~$n$ અનુમાનો છે. સૌથી નીચેના
-અનુમાનનાં આધારવાક્યો એવી ઉપ-!!{derivation}s વડે !!{derive}d થયાં છે
+અનુમાનનાં આધારવાક્યો એવી ઉપ-!!{derivation}s વડે નિષ્પન્ન થયાં છે
 જેમાં દરેકમાં~$n$ કરતાં ઓછાં અનુમાનો છે. આગમન-પરિકલ્પના પ્રમાણે સૌથી
 નીચેના અનુમાનનાં આધારવાક્યો એ આધારવાક્યો પર સમાપ્ત થતી
 ઉપ-!!{derivation}sની !!{undischarged} ધારણાઓમાંથી ફલિત થાય છે. આખી
@@ -201,14 +201,19 @@ $!A$ની કોઈ !!a{derivation}ને $\delta$ કહો. $\delta$માં
 
 \item છેલ્લું અનુમાન \Elim{\lforall} છે: અભ્યાસપ્રશ્ન.
 }{}
-\sourcecorrection{OLND-006}{સ્થિર અંગ્રેજી મૂળ સર્વપરિમાણકના
-નિવારણ-કિસ્સાને અહીં એકમાત્ર વાર $\Elim{\forall}$ લખે છે; પ્રકરણના
-નિયમ અને બાકીના બધા ઉપયોગ મુજબ તેને $\Elim{\lforall}$ કર્યું છે.}
+\begin{editorial}
+\textbf{OLND-006.} સ્થિર અંગ્રેજી મૂળના \texttt{first-order-logic/natural-deduction/soundness.tex}:207માં $\Elim{\forall}$ લખ્યું છે. સ્થિર \texttt{open-logic-config.sty}:152--159 અને 226 મુજબ દલીલો વગરનું $\lforall$ એ જ $\forall$ ચિહ્ન આપે છે, તેથી $\Elim{\forall}$ અને $\Elim{\lforall}$ સમાન નિયમ દર્શાવે છે. એકસરખું મેક્રો-સંકેતન રાખવું સંપાદકીય પસંદગી છે.
+\end{editorial}
 \end{enumerate}
 
 હવે અનેક આધારવાક્યો ધરાવતાં સંભવિત અનુમાનો જોઈએ:
-\Elim{\lor}, \Intro{\land},
+\Elim{\lor}, \Intro{\land}, \Elim{\lnot},
 \iftag{FOL}{\Elim{\lif} અને \Elim{\lexists}}{\Elim{\lif}}.
+\sourcecorrection{OLREA-238}{સ્થિર અંગ્રેજી મૂળના
+\texttt{first-order-logic/natural-deduction/soundness.tex}:211--213ની
+એક કરતાં વધુ આધારવાક્યો ધરાવતા નિયમોની યાદીમાં દ્વિ-આધારી
+$\Elim{\lnot}$ છૂટી ગયો છે, જોકે પંક્તિ 273માં તેનો કિસ્સો સામેલ છે.
+અહીં યાદીમાં એ નિયમ ઉમેર્યો છે; તેની સાબિતીનો અભ્યાસપ્રશ્ન યથાવત્ છે.}
 \begin{enumerate}
 
 \item છેલ્લું અનુમાન \Intro{\land} છે. આધારવાક્યો $!A$ અને $!B$માંથી

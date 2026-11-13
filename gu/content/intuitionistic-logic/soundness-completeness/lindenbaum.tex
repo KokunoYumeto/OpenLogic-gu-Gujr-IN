@@ -27,8 +27,10 @@ $\lnot\lnot!A \lif !A$ સ્ફુરણાવાદી રીતે માન�
 આથી નિદર્શ~$\mModel{M}$ રચતી વખતે !!{formula}~$!A$નું
 !!{derivability} ન હોવું ધ્યાનમાં રાખવું પડે છે. તેથી નિદર્શ
 $\mModel{M}$ રચવા માટે પૂર્ણ ગણ $\Gamma^* \supseteq \Gamma$
-વાપરી શકાતો નથી, કારણ કે દરેક પૂર્ણ ગણ~$\Gamma^*$માં
+સામાન્ય રીતે વાપરવાથી $!A$ની અસાધ્યતા જળવાશે તેની
+ખાતરી નથી, કારણ કે દરેક પૂર્ણ ગણ~$\Gamma^*$માં
 $\Gamma^* \Proves !A \lor \lnot !A$ હોય છે.
+
 
 પૂર્ણ ગણ~$\Gamma^*$ને બદલે આપણે સૂત્રોના અભાજ્ય ગણનો
 ખ્યાલ વાપરીશું:
@@ -46,6 +48,8 @@ $\Gamma^* \Proves !A \lor \lnot !A$ હોય છે.
   \end{enumerate}
 \end{defn}
 
+
+
 \begin{lem}[લિન્ડનબાઉમનું સહાયક પ્રમેય]
   \ollabel{lem:lindenbaum} જો $\Gamma \Proves/ !A$ હોય,
   તો એવો $\Gamma^* \supseteq \Gamma$ છે કે $\Gamma^*$
@@ -57,7 +61,7 @@ $\Gamma^* \Proves !A \lor \lnot !A$ હોય છે.
   $!B \lor !C$ સ્વરૂપના બધા !!{formula}sની પરિગણના હોય.
   !!{formula}sના ગણોની વધતી શ્રેણી~$\Gamma_n$ વ્યાખ્યાયિત
   કરીએ છીએ, જેમાં દરેક $\Gamma_{n+1}$ એ $\Gamma_n$માં
-  એક નવું !!{formula} ઉમેરીને બને છે. બધા~$\Gamma_n$નો
+  વધુમાં વધુ એક નવું !!{formula} ઉમેરીને બને છે. બધા~$\Gamma_n$નો
   યોગગણ $\Gamma^*$ હશે. નવા !!{formula}s એવી રીતે પસંદ
   કરીએ છીએ કે $\Gamma^*$ અભાજ્ય રહે અને છતાં
   $\Gamma^* \Proves/ !A$ હોય. એટલે દરેક તબક્કે
@@ -119,7 +123,8 @@ $\Gamma^* \Proves !A \lor \lnot !A$ હોય છે.
   $\Gamma' \subseteq \Gamma^*$ હોય
   કે $\Gamma' \Proves !A$. તેનું દરેક
   $!D \in \Gamma'$ કોઈક~$i$ માટે $\Gamma_i$માં હશે.
-  આ સૂચકોમાં સૌથી મોટો $n$ લો. $i \le n$ હોય ત્યારે
+  $\Gamma'$ અખાલી હોય, તો આ સૂચકોમાં સૌથી મોટો $n$ લો;
+  $\Gamma'=\emptyset$ હોય, તો $n=0$ લો. $i \le n$ હોય ત્યારે
   $\Gamma_i \subseteq \Gamma_n$ હોવાથી
   $\Gamma' \subseteq \Gamma_n$. તેથી
   $\Gamma_n \Proves !A$, જે ઉપર સાબિત કરેલા

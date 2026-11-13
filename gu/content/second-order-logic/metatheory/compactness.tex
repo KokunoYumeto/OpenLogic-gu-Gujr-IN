@@ -39,6 +39,9 @@ $\Gamma \Entails !A$, તો પૂર્ણતા મુજબ $\Gamma \Proves 
 \texttt{thm:sol-not-compact} આપ્યું છે.}
 
 \begin{proof}
+અહીં અગાઉની જેમ પ્રમાણભૂત અર્થવિજ્ઞાન અને પસંદગી સહિતનો
+ગણસિદ્ધાંતીય પરિપ્રેક્ષ્ય વાપરીએ છીએ, જેથી ડેડેકિન્ડ-સાન્તતા
+સામાન્ય સાન્તતાની સમકક્ષ છે.
 યાદ કરો કે
 \[
 \fn{Inf} \ident \lexists[u][(\lforall[x][\lforall[y][(\eq[u(x)][u(y)]
@@ -49,9 +52,12 @@ $\Gamma \Entails !A$, તો પૂર્ણતા મુજબ $\Gamma \Proves 
 વાક્ય હોય જે વ્યાપકક્ષેત્રમાં ઓછામાં ઓછા $n$ !!{element}s છે એમ કહે;
 દાખલા તરીકે,
 \[
-!A^{\ge n} \ident \lexists[x_1][\dots\lexists[x_n][(\eq/[x_1][x_2]
-    \land \eq/[x_1][x_3] \land \dots \land \eq/[x_{n-1}][x_n])]].
+!A^{\ge n} \ident \lexists[x_1][\dots\lexists[x_n][
+  \bigwedge_{1\le i<j\le n}\eq/[x_i][x_j]]], \qquad n\ge1.
 \]
+અહીં સાન્ત સંયુક્ત સૂત્ર બધા જુદા સૂચક-જોડાં માટે છે; $n=1$
+હોય ત્યારે રિક્ત સંયુક્ત સૂત્ર~$\ltrue$ છે. તેથી
+$!A^{\ge1}\ident\lexists[x_1][\ltrue]$ છે.
 આ !!{sentence}sનો ગણ વિચારો:
 \[
 \Gamma = \{\lnot \fn{Inf}, !A^{\ge 1}, !A^{\ge 2}, !A^{\ge 3}, \dots\}.

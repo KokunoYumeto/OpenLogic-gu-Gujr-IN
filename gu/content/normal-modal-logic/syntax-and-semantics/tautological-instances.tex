@@ -49,7 +49,7 @@ $\Box p \lor \lnot \Box p$---મધ્યના નિષેધના સિદ�
   $!A$ પર આગમનથી.
   \begin{enumerate}
   \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\pSat/{v}{\lfalse}$
-      અને $\mSat/{M}{\lfalse}[w]$ બંને ખોટાં છે.}}{}
+      અને $\mSat/{M}{\lfalse}[w]$ બંને સાચાં છે.}}{}
   \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\pSat{v}{\ltrue}$
       અને $\mSat{M}{\ltrue}[w]$ બંને સાચાં છે.}}{}
   \item \indcase{!A}{p_i}{%
@@ -145,6 +145,9 @@ $\Box p \lor \lnot \Box p$---મધ્યના નિષેધના સિદ�
       \end{align*}}}{}
   \end{enumerate}
   \end{proof}
+\begin{editorial}
+\textbf{OLREA-099.} આધારકિસ્સામાં અચલ $\lfalse$ સંતોષાતું નથી, એટલે $\pSat/{v}{\lfalse}$ અને $\mSat/{M}{\lfalse}[w]$ બંને વિધાનો સાચાં છે.
+\end{editorial}
 \sourcecorrection{OLMD-007}{સ્થિર અંગ્રેજી મૂળમાં
 નકારનો આગમન-કિસ્સો \texttt{prvFalse} હેઠળ મૂકાયો છે;
 અહીં એ જ પ્રમાણ \texttt{prvNot} હેઠળ મૂક્યું છે.}

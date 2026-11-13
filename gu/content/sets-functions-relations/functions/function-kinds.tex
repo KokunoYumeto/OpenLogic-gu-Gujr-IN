@@ -7,33 +7,33 @@
 \begin{document}
 
 \olfileid{sfr}{fun}{kin}
-\olsection{વિધેયોના પ્રકારો}
+\olsection{ફલનોના પ્રકારો}
 
 \begin{explain}
-આપણને વારંવાર મળતા વિધેયોના કેટલાક પ્રકારોનું
+આપણને વારંવાર મળતા ફલનોના કેટલાક પ્રકારોનું
 વર્ગીકરણ રજૂ કરવું ઉપયોગી થશે.
 
-શરૂઆતમાં એવાં વિધેયો લઈએ જેમના સહપ્રદેશનો દરેક સભ્ય
-વિધેયની કિંમત હોય. આવાં વિધેયોને !!{surjective} કહે છે;
+શરૂઆતમાં એવાં ફલનો લઈએ જેમના સહપ્રદેશનો દરેક સભ્ય
+ફલનની કિંમત હોય. આવાં ફલનોને !!{surjective} કહે છે;
 તેમને \olref{fig:surjective} પ્રમાણે ચિત્રમાં દર્શાવી શકાય.
 
 \begin{figure}
   \olasset{assets/diagrams/surjective.tikz}
-  \caption{!!^a{surjective} વિધેયના સહપ્રદેશનો દરેક
+  \caption{!!^a{surjective} ફલનના સહપ્રદેશનો દરેક
     !!{element} તેની કિંમત હોય છે.}
   \ollabel{fig:surjective}
 \end{figure}
 \end{explain}
 
-\begin{defn}[!!^{surjective} વિધેય]
-વિધેય $f \colon A \rightarrow B$ \emph{!!{surjective}}
+\begin{defn}[!!^{surjective} ફલન]
+ફલન $f \colon A \rightarrow B$ \emph{!!{surjective}}
 હોય જો અને માત્ર જો $B$ એ $f$નો વિસ્તાર પણ હોય, એટલે કે
 દરેક $y \in B$ માટે ઓછામાં ઓછો એક $x \in A$
 એવો હોય કે $f(x) = y$; અથવા પ્રતીકોમાં:
 \[
   (\forall y \in B)(\exists x \in A)f(x) = y.
 \]
-આવા વિધેયને $A$થી $B$માંનું !!a{surjection} કહીએ છીએ.
+આવા ફલનને $A$થી $B$માંનું !!a{surjection} કહીએ છીએ.
 \end{defn}
 
 \begin{explain}
@@ -41,34 +41,34 @@ $f$ એ !!a{surjection} છે તે બતાવવા, તમારે બત
 કે $f$ના સહપ્રદેશની દરેક વસ્તુ કોઈક આગત $x$ માટે
 $f(x)$ની કિંમત છે.
 
-નોંધો કે કોઈ પણ વિધેય !!a{surjection}
-\emph{ઉત્પન્ન કરે છે}. કારણ કે આપેલા વિધેય
+નોંધો કે કોઈ પણ ફલન !!a{surjection}
+\emph{ઉત્પન્ન કરે છે}. કારણ કે આપેલા ફલન
 $f \colon A \to B$ માટે $f'(x) = f(x)$ દ્વારા
 $f' \colon A \to \ran{f}$ વ્યાખ્યાયિત કરીએ.
 $\ran{f}$ની \emph{વ્યાખ્યા} જ
-$\Setabs{f(x) \in B}{x \in A}$ હોવાથી આ વિધેય
+$\Setabs{f(x)}{x \in A}$ હોવાથી આ ફલન
 $f'$ ચોક્કસ !!a{surjection} છે.
 \end{explain}
 
 \begin{explain}
-કોઈ પણ વિધેય દરેક સંભવિત આગતને અનન્ય નિર્ગત પર મોકલે છે.
-પરંતુ એવાં વિધેયો પણ છે જે જુદાં આગતોને કદી એક જ
-નિર્ગત પર મોકલતાં નથી. આવાં વિધેયોને !!{injective}
+કોઈ પણ ફલન દરેક સંભવિત આગતને અનન્ય નિર્ગત પર મોકલે છે.
+પરંતુ એવાં ફલનો પણ છે જે જુદાં આગતોને કદી એક જ
+નિર્ગત પર મોકલતાં નથી. આવાં ફલનોને !!{injective}
 કહે છે; તેમને \olref{fig:injective} પ્રમાણે ચિત્રમાં
 દર્શાવી શકાય.
 \begin{figure}
   \olasset{assets/diagrams/injective.tikz}
-  \caption{!!^a{injective} વિધેય કદી બે જુદી દલીલોને
+  \caption{!!^a{injective} ફલન કદી બે જુદા આર્ગ્યુમેન્ટોને
     એક જ કિંમત પર મોકલતું નથી.}
   \ollabel{fig:injective}
 \end{figure}
 \end{explain}
 
-\begin{defn}[!!^{injective} વિધેય]
-વિધેય $f \colon A \rightarrow B$ \emph{!!{injective}}
+\begin{defn}[!!^{injective} ફલન]
+ફલન $f \colon A \rightarrow B$ \emph{!!{injective}}
 હોય જો અને માત્ર જો દરેક $y \in B$ માટે વધુમાં વધુ
 એક $x \in A$ એવો હોય કે $f(x) = y$.
-આવા વિધેયને $A$થી $B$માંનું !!a{injection} કહીએ છીએ.
+આવા ફલનને $A$થી $B$માંનું !!a{injection} કહીએ છીએ.
 \end{defn}
 
 \begin{explain}
@@ -78,19 +78,19 @@ $f$ એ !!a{injection} છે તે બતાવવા, તમારે બત�
 \end{explain}
 
 \begin{ex}
-$f(x) = 1$ દ્વારા આપેલું અચળ વિધેય
+$f(x) = 1$ દ્વારા આપેલું અચળ ફલન
 $f\colon \Nat \to \Nat$ !!{injective} પણ નથી
 અને !!{surjective} પણ નથી.
 
-$f(x) = x$ દ્વારા આપેલું તદેવ વિધેય
+$f(x) = x$ દ્વારા આપેલું તદેવ ફલન
 $f\colon \Nat \to \Nat$ !!{injective} અને
 !!{surjective} બંને છે.
 
-$f(x) = x+1$ દ્વારા આપેલું અનુગામી વિધેય
+$f(x) = x+1$ દ્વારા આપેલું અનુગામી ફલન
 $f \colon \Nat \to \Nat$ !!{injective} છે,
 પરંતુ !!{surjective} નથી.
 
-નીચે મુજબ વ્યાખ્યાયિત વિધેય $f \colon \Nat \to \Nat$:
+નીચે મુજબ વ્યાખ્યાયિત ફલન $f \colon \Nat \to \Nat$:
 \[
   f(x) =
   \begin{cases}
@@ -103,24 +103,24 @@ $f \colon \Nat \to \Nat$ !!{injective} છે,
 
 \begin{explain}
 ઘણી વાર આપણે !!{injective} અને !!{surjective} બંને
-હોય એવાં વિધેયો લેવા માગીએ છીએ. આવાં વિધેયોને
+હોય એવાં ફલનો લેવા માગીએ છીએ. આવાં ફલનોને
 !!{bijective} કહીએ છીએ. તેઓ
-\olref{fig:bijective}માં દર્શાવેલા વિધેય જેવાં દેખાય છે.
+\olref{fig:bijective}માં દર્શાવેલા ફલન જેવાં દેખાય છે.
 !!^{bijection}sને ક્યારેક \emph{પરસ્પર એક-એક સંગતતાઓ}
 પણ કહે છે, કારણ કે તેઓ સહપ્રદેશના ઘટકોને પ્રદેશના
 ઘટકો સાથે અનન્ય રીતે જોડે છે.
 \begin{figure}
   \olasset{assets/diagrams/bijective.tikz}
-  \caption{!!^a{bijective} વિધેય સહપ્રદેશના ઘટકોને
+  \caption{!!^a{bijective} ફલન સહપ્રદેશના ઘટકોને
     પ્રદેશના ઘટકો સાથે અનન્ય રીતે જોડે છે.}
   \ollabel{fig:bijective}
 \end{figure}
 \end{explain}
 
 \begin{defn}[!!^{bijection}]
-વિધેય $f \colon A \to B$ \emph{!!{bijective}} હોય
+ફલન $f \colon A \to B$ \emph{!!{bijective}} હોય
 જો અને માત્ર જો તે !!{surjective} અને !!{injective}
-બંને હોય. આવા વિધેયને $A$થી $B$માંનું
+બંને હોય. આવા ફલનને $A$થી $B$માંનું
 (અથવા $A$ અને~$B$ વચ્ચેનું) !!a{bijection} કહીએ છીએ.
 \end{defn}
 

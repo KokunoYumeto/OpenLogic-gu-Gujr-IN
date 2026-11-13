@@ -277,10 +277,16 @@ $\TRule{\True}{\lif}$ વાપરીએ છીએ.
     ]
   ]
 \end{oltableau}
-શાખાઓ બંધ કરવા માટે પંક્તિઓ $1$ અને~$3$નાં !!{signed formula}s વાપરવાં
+શાખાઓ બંધ કરવા માટે પંક્તિઓ $1$ અને~$4$નાં !!{signed formula}s વાપરવાં
 પડે છે. તેમને અનુરૂપ નિયમો (\TRule{\True}{\lforall} અને
 \TRule{\False}{\lexists})ને આઇગનચલ-શરતો નથી, તેથી અનુકૂળ પદો પસંદ
 કરવાની આપણને છૂટ છે. આ કિસ્સામાં અનુક્રમે $b$ અને~$c$ અનુકૂળ છે.
+\sourcecorrection{OLREA-241}{સ્થિર અંગ્રેજી મૂળના
+\texttt{first-order-logic/tableaux/proving-things-quant.tex}:280--284માં
+અંતિમ બે શાખાઓ બંધ કરવા માટે પંક્તિઓ 1 અને 3 કહી છે. પરંતુ જરૂરી
+$\sFmla{\False}{\lexists[y][!B(y)]}$ પંક્તિ 4 પર છે; પંક્તિ 3 પર
+તેનો સત્યચિહ્નિત નિષેધ છે. દર્શાવેલા અંતિમ ટેબ્લોની યોગ્ય નિયમ-નોંધ
+મુજબ અહીં 3ના બદલે 4 કર્યું છે.}
 \begin{oltableau}
   [\sFmla{\True}{\lforall[x][\formula{A}(x)]}, just=\TAss
     [\sFmla{\True}{\lforall[x][\formula{A}(x)] \lif

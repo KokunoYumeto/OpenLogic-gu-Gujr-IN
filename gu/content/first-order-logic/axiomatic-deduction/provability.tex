@@ -110,17 +110,7 @@ $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$.
 કારણ કે $\Gamma_0 \subseteq \Gamma$ અને $\Gamma_1 \subseteq \Gamma$,
 તેથી $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$.
 આથી $\Gamma \Proves \lfalse$.
-\sourcecorrection{OLMD-175}{મૂળમાં
-આ ત્રીજા કિસ્સાની
-પ્રારંભિક સાન્ત
-ધારણા માટે
-$\Gamma$ લખાયું છે,
-પણ પછીની નિષ્પત્તિ
-$\Gamma_0$ વાપરે છે.
-સાન્ત સાક્ષી
-$\Gamma_0\subseteq\Gamma$
-સ્પષ્ટ કરવા પ્રારંભિક
-સૂત્ર સુધાર્યું છે.}
+
 
 % prop:provability-lor-left 
 \tagitem{defOr}{}{
@@ -153,7 +143,7 @@ $\Gamma \Proves !B$ હોય ત્યારે
 ત્રીજી પંક્તિમાં
 પૂર્વધારણા અને
 બીજી પંક્તિના
-પ્રેરણમાંથી
+અનુબંધમાંથી
 $!A\lor !B$
 કાઢ્યું છે. મોડસ
 પોનેન્સથી અહીં
@@ -179,7 +169,7 @@ $\Gamma_0 \Proves !A$ અને $\Gamma_0 \Proves !A \lif !B $ બંને છ�
 3. & $\Gamma_0 \Proves !B$ & MP 1, 2\\
 \end{derivation}
 
-કારણ કે $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$,
+કારણ કે $\Gamma_0 \subseteq \Gamma$,
 આથી $\Gamma \Proves !B$.
 \sourcecorrection{OLMD-177}{મૂળના
 આ કિસ્સામાં
@@ -336,6 +326,8 @@ $\Subst{}{y}{c}$ અવેજીથી
 એ $!A$માં $c$ની
 જગ્યાએ મૂકવા
 !!{free for} ન રહે.
+
+\end{proof}
 \sourcecorrection{OLMD-179}{મૂળની
 સાબિતીના પ્રથમ વાક્યમાં
 $\Subst{!A}{y}{x}$
@@ -346,7 +338,6 @@ $\Subst{!A}{y}{c}$
 વિશે છે. એ જ
 અવેજી પ્રથમ
 વાક્યમાં સુધારી છે.}
-\end{proof}
 
 \begin{lem}[બંધ ચલનું પરિવર્તન]
 \ollabel{lem:ChangeBdVar} 
@@ -371,15 +362,15 @@ $\lforall[x][\Subst{!A}{x}{c}] \lif \Subst{!A}{x}{c} \Subst{}{y}{x}$
 સ્વયંસિદ્ધિ છે (\textbf{Ax1}).
 \sourcecorrection{OLMD-180}{મૂળમાં
 સર્વવાચી પરિમાણક
-આખા પ્રેરણ
+આખા અનુબંધ
 પર મૂકાયો છે,
 પરંતુ \textbf{Ax1}
 માટે જરૂરી સ્વરૂપ
 સર્વત્રીકૃત પૂર્વાંગ
 પછી તેના દૃષ્ટાંત
-તરફના પ્રેરણનું છે.
+તરફના અનુબંધનું છે.
 અહીં કૌંસ અને
-પ્રેરણનું સ્થાન
+અનુબંધનું સ્થાન
 તે મુજબ સુધાર્યું છે.}
 $x$ એ $!A$માં મુક્ત
 ન હોવાથી

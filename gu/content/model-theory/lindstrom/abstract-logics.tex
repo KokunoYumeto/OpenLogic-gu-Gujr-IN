@@ -106,18 +106,24 @@ $L(\Lang{L})$નાં ``!!{sentence}s'' પ્રથમ-ક્રમ તર્�
   \dots, $c_n$ આપેલા હોય ત્યારે એવું !!a{sentence} $!F \in
   L(\Lang{L} \cup \{R,c_1,\ldots,c_n\})$ છે, જેને $!E$નું
   $\Atom{R}{x, c_1, \dots c_n}$ને \emph{સાપેક્ષીકરણ} કહીએ છીએ, કે
-  દરેક !!{structure}~$\Struct{M}$ માટે:
+  નીચેનો ગણ બિનખાલી હોય અને $\Lang{L}$ના બધા અચળોનાં અર્થઘટનો
+  ધરાવતો હોય ત્યારે દરેક !!{structure}~$\Struct{M}$ માટે:
   \[
   \Expan{M}{X, b_1, \ldots, b_n} \models_L !F \text{ ત્યારે અને
     માત્ર ત્યારે જ્યારે } \Struct{N} \models_L !E,
   \]
   જ્યાં $\Struct{N}$ એ $\Struct{M}$ની એવી ઉપસંરચના છે જેનું
   !!{domain}
-  $\Domain{N} = \Setabs{a\in \Domain{M}}{\Assign{R}{M}(a, b_1,
-  \dots, b_n)}$ છે (જુઓ \olref[bas][sub]{rem:substructure}), અને
+  $\Domain{N} = \Setabs{a\in \Domain{M}}{\tuple{a,b_1,\dots,b_n}\in X}$ છે
+  (જુઓ \olref[bas][sub]{rem:substructure}), અને
   $\Expan{M}{X, b_1, \ldots, b_n}$ એ $R$, $c_1$, \dots, $c_n$નું
   અનુક્રમે $X$, $b_1,$ \dots, $b_n$ તરીકે અર્થઘટન કરતો
   $\Struct{M}$નો વિસ્તાર છે (જ્યાં $X \subseteq M^{n+1}$).
+  \sourcecorrection{OLLIN-014}{મૂળની \texttt{abstract-logics.tex},
+    પંક્તિ~100માં $R\notin\Lang{L}$ હોવા છતાં $\Assign{R}{M}$ લખ્યું છે.
+    $R$નું અર્થઘટન વિસ્તાર સંરચનામાં $X$ છે; અહીં એ જ સંબંધ દ્વારા
+    વ્યાપકક્ષેત્ર વ્યાખ્યાયિત કર્યું છે. બિનખાલીપણું અને અચળો અંગેની
+    શરતો અગાઉની ઉપસંરચના-વ્યાખ્યાનો વ્યાપ સ્પષ્ટ કરે છે.}
 \end{enumerate}
 \end{defn}
 
@@ -139,7 +145,8 @@ $\tuple{L_2, \models_{L_2}}$ \emph{સમકક્ષ} છે.
   પ્રથમ-ક્રમ તર્કશાસ્ત્ર, એટલે કે અમૂર્ત તર્કશાસ્ત્ર
   $\tuple{F, \models}$, સામાન્ય છે. વાસ્તવમાં ઉપરના ગુણધર્મો
   પ્રથમ-ક્રમ તર્કશાસ્ત્ર માટે મોટે ભાગે સીધા છે. આપણે માત્ર એટલું
-  નોંધીએ કે વિસ્તાર ગુણધર્મ પ્રસ્તુત ઘટકો દ્વારા નિર્ધારણ સુધી આવે છે,
+  નોંધીએ કે વિસ્તાર ગુણધર્મ વાક્યમાં આવતા સાન્ત સંખ્યામાં બિનતાર્કિક
+  સંકેતો દ્વારા નિર્ધારણ સુધી આવે છે,
   અને !!a{sentence} $!E$નું $\Atom{R}{x, c_1, \dots, c_n}$ને
   સાપેક્ષીકરણ દરેક !!{subformula} $\lforall[x][!F]$ને
   $\lforall[x][(\Atom{R}{x, c_1, \dots, c_n} \lif \ !F)]$થી બદલીને

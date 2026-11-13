@@ -61,7 +61,7 @@ $\Lang L(\Gamma) = \bigcup \Setabs{\Lang L(!A)}{!A \in
 ~$!A$ની !!{language}ને~$\Lang L(!A)$
 અને~$!B$ની ભાષાને~$\Lang L(!B)$ કહો.
 જો $\Log{G3c} \Proves !A \Sequent !B$,
-તો એવી !!a{formula}~$!C$ છે
+તો એવું !!a{formula}~$!C$ છે
 જેની !!{language} માટે
 $\Lang L(!C) \subseteq \Lang
 L(!A) \cap \Lang L(!B)$ અને
@@ -85,7 +85,7 @@ $\Gamma_1$ અને $\Delta_1$ પહેલા ભાગમાં,
 \begin{lem}[માએહારાનું ઉપપ્રમેય]\ollabel{lem:maehara}
 જો $\Log{G3c}
 \Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent \maeh{\Delta_1}{\Delta_2}$,
-તો એવી !!a{formula}~$!C$ છે
+તો એવું !!a{formula}~$!C$ છે
 જેની !!{language} માટે
 $\Lang L(!C)
 \subseteq \Lang L(\Gamma_1,
@@ -142,7 +142,7 @@ $\Log{G3c} \Proves !C,
     $\LeftR{\lnot}$ વડે
     $\Gamma_1 \Sequent \Delta_1, \lnot!A$
     અને $\lnot !A, \Gamma_2 \Sequent \Delta_2$
-    !!{prove} કરી શકાય.
+    સાબિત કરી શકાય.
     \item $!A \in \Gamma_2$ અને
     $!A \in \Delta_2$. કસરત.
   \end{enumerate}
@@ -213,7 +213,7 @@ $\Log{G3c} \Proves !C,
     \begin{align*}
     !A, \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{અને} &
     !C_1, \Gamma_2 & \Sequent \Delta_2
-    \intertext{સાબિત થઈ શકે છે. આપણને એવી !!a{formula}~$!C$ જોઈએ કે નીચેના બંને સિક્વન્ટ !!{provable} હોય:}
+    \intertext{સાબિત થઈ શકે છે. આપણને એવું !!a{formula}~$!C$ જોઈએ કે નીચેના બંને સિક્વન્ટ !!{provable} હોય:}
     \Gamma_1 & \Sequent \Delta_1, \lnot !A, !C &&\text{અને} &
     !C, \Gamma_2 & \Sequent \Delta_2
     \end{align*}
@@ -345,7 +345,7 @@ $\Log{G3c} \Proves !C,
     $!C_1 \lor !C_2$ અંતર્વેશક હોઈ શકે.
     ખરેખર, બાકી સિક્વન્ટ (2) અને~(4)
     વડે બીજું જરૂરી સિક્વન્ટ
-    !!{prove} કરી શકાય:
+    સાબિત કરી શકાય:
     \[
     \AxiomC{}
     \Deduce$!C_1, \Gamma_2 \fCenter \Delta_2$
@@ -408,8 +408,8 @@ $\Log{G3c} \Proves !C,
     $!C \ident (!C_1 \land !C_2)$
     અંતર્વેશક લેવો જોઈએ.
     બાકી સિક્વન્ટ (1) અને (3)
-    વડે બીજા ભાગને અનુરૂપ સિક્વન્ટ
-    !!{prove} કરી શકાય:
+    વડે પહેલા ભાગને અનુરૂપ સિક્વન્ટ
+    સાબિત કરી શકાય:
     \[
     \AxiomC{}
     \Deduce$\Gamma_1 \fCenter \Delta_1, !C_1$
@@ -524,10 +524,10 @@ $\Log{G3c} \Proves !C,
     પદ~$t$ ચલ હોઈ શકે; એ
     ભાષામાં નવું અતાર્કિક ચિહ્ન ઉમેરતું નથી,
     એટલે એ કિસ્સામાં અંતર્વેશક સીધો ચાલે.
-    અચલના કિસ્સામાં તે
+    અચળના કિસ્સામાં તે
     !!a{constant} છે, એટલે
     $t \ident b$.
-    \sourcecorrection{OLMD-206}{મૂળ લખાણમાં !!{function}s ન હોવાથી $t$ માત્ર અચલ છે એવો દાવો છે; ચલ પણ પદ છે, પરંતુ તે અંતર્વેશકની અતાર્કિક શબ્દાવલી વધારતું નથી. નીચેની અચલ-વિભાગની દલીલ યથાવત્ છે.}
+    \sourcecorrection{OLMD-206}{મૂળ લખાણમાં !!{function}s ન હોવાથી $t$ માત્ર અચળ છે એવો દાવો છે; ચલ પણ પદ છે, પરંતુ તે અંતર્વેશકની અતાર્કિક શબ્દાવલી વધારતું નથી. નીચેની અચળ-વિભાગની દલીલ યથાવત્ છે.}
     જો $b \notin \Lang L(!C_1)$
     અથવા
     $b \in \Lang L(\Gamma_1, \Delta_1,
@@ -542,7 +542,7 @@ $\Log{G3c} \Proves !C,
     \lexists[x][!A(x)])
     \cap \Lang L(\Gamma_2, \Delta_2)$ હોય તો?
     પહેલાં~$!C_1$માં~$b$ના
-    દરેક દૃષ્ટાંતને !!a{variable}~$y$થી
+    દરેક દૃષ્ટાંતને નવા !!a{variable}~$y$થી
     બદલી
     $!C_1 \ident \Subst{!C_1'}{b}{y}$
     લખી શકાય, જ્યાં~$!C_1'$માં~$b$
@@ -714,12 +714,12 @@ R'(x_1, \dots, x_n))]],
     !A(c_1, \dots, c_n), \Gamma & \Sequent R(c_1, \dots, c_n)
   \end{align*}
   \sourcecorrection{OLMD-207}{મૂળમાં અંતર્વેશકની ભાષા સામાન્ય ભાષાના બરાબર છે અને અપરિભાષિત $L_1,L_2$ વાપરે છે; ઉપપ્રમેય માત્ર સમાવેશ આપે છે, જે અહીં પૂરતો છે.}
-  બંને દિશાના અનુસરણો માટે
-  \RightR{\lif}, પછી દ્વિમુખી
-  સંબંધની રજૂઆત અને
+  બંને દિશાના અનુબંધો માટે
+  \RightR{\lif}, પછી દ્વિઅનુબંધની
+  રજૂઆત અને
   \RightR{\lforall} લગાવી
   આની !!a{proof} મેળવો:
-  \sourcecorrection{OLMD-208}{મૂળમાં માત્ર અનુસરણ-જમણો અને સર્વમાન્યક-જમણો નિયમ લખેલા છે; બે દિશા ભેગી કરીને દ્વિમુખી સંબંધ બનાવવાનું મધ્યવર્તી પગલું પણ જરૂરી છે.}
+  
   \[
     \Gamma \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1, \dots, x_n))]].
   \]
@@ -761,7 +761,7 @@ $\Gamma_2 \Entails \lnot !A$
 $\Gamma_1 \Entails !A$ છે;
 આથી પૂર્ણતા મુજબ
 $\Gamma \Entails !A$ જ હોવું જોઈએ.
-\sourcecorrection{OLMD-211}{મૂળમાં $\Gamma_1\Entails !A$ પરથી સીધું $\Gamma\Entails !A$ કાઢ્યું છે; નાનું સિદ્ધાંત મોટાના બધા પરિણામો આપતું નથી. પૂર્ણતા અને $\Gamma_1$ની સુસંગતતા વડે જ આ નિષ્કર્ષ મળે છે.}
+
 નહીં તો~$\Gamma$ની પૂર્ણતાથી
 $\Gamma \Entails \lnot !A$,
 અને $\Gamma \subseteq \Gamma_1$
@@ -775,7 +775,7 @@ $\Gamma_2 \Entails !A$.
 પણ પૂર્વધારણા મુજબ
 $\Gamma_2 \Entails \lnot !A$ પણ છે,
 જે~$\Gamma_2$ની સુસંગતતા સામે છે.
-\sourcecorrection{OLMD-212}{મૂળ અંતિમ સૂત્રમાં $\Gamma\Entails/\lnot !A$ લખ્યું છે; વિરોધ ખરેખર $\Gamma_2$માં $!A$ અને $\lnot !A$ બંને ફલિત થવાથી મળે છે.}
+
 
 સાબિતી માટે એટલું જ જરૂરી છે કે
 સામાન્ય
@@ -813,7 +813,7 @@ $\Gamma_2 \Entails \lnot !A$.
   લગાવતાં
   !!{language}~$\Lang L(\Gamma_1)
   \cap \Lang L(\Gamma_2)$માં
-  એવી !!a{sentence}~$!A$ મળે છે કે
+  એવું !!a{sentence}~$!A$ મળે છે કે
   $\Proves \Gamma_1 \Sequent !A$
   અને
   $\Proves !A, \Gamma_2 \Sequent \quad$.

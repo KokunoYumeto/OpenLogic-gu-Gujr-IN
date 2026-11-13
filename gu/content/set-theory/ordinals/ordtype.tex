@@ -26,7 +26,7 @@ $\tuple{A, <}$ \emph{કોઈ પણ} ક્રમવાચક સંખ્ય�
 
 રચના મુજબ $B$નો દરેક ઉચિત આરંભિક ખંડ કોઈ ક્રમવાચક સંખ્યા સાથે
 ક્રમ-એકરૂપ છે, અને ઉપર મુજબ એ સંખ્યા અનન્ય છે. તેથી
-પ્રતિસ્થાપનથી નીચેનો ગણ અસ્તિત્વમાં છે અને તે વિધેય છે:
+પ્રતિસ્થાપનથી નીચેનો ગણ અસ્તિત્વમાં છે અને તે ફલન છે:
 \[
 	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ અને }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
 \]
@@ -68,23 +68,29 @@ $\tuple{A, <}$ અને $\tuple{B, \lessdot}$ સુક્રમો હોય �
 \begin{proof}
 સમાનતાનું નિવેદન \olref[basic]{ordisoidentity}થી મળે છે. બીજું
 નિવેદન સાબિત કરવા $\ordtype{A, <} = \alpha$ અને $\ordtype{B,
-\lessdot} = \beta$ લો, અને $f \colon \beta \to \tuple {B, \lessdot}$
-આપણી એકરૂપતા હોય. તો:
-\begin{align*}
-	\alpha \in \beta&\text{ જો અને માત્ર જો }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ એકરૂપતા છે}\\
-	&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
-	&\text{ જો અને માત્ર જો }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ કોઈ $b \in B$ માટે}
-\end{align*}
-\sourcecorrection{OLMD-117}{મૂળના પ્રદર્શનની પહેલી હરોળમાં
-$f(\alpha)$ ફક્ત $\alpha \in \beta$ હોય ત્યારે જ
-વ્યાખ્યાયિત છે. તેથી તેની જમણી બાજુને આ શરત સાથે વાંચવી;
-નહિતર એ સમકક્ષતાનું જમણું વિધાન વ્યાખ્યાયિત જ નથી.
-તે જ રીતે $f \colon \beta \to \tuple {B, \lessdot}$માં
-વિધેયનું લક્ષ્ય-ગણ $B$ છે અને $\tuple{B, \lessdot}$ એ
-લક્ષ્યની ક્રમરચના દર્શાવે છે.}
-\olref[iso]{ordisounique},
-\olref[iso]{wellordinitialsegment}, અને
-\olref[basic]{ordissetofsmallerord} મુજબ.
+\lessdot} = \beta$ લો, અને $f \colon \beta \to B$
+આપણી એકરૂપતા હોય.
+
+જો $\alpha \in \beta$ હોય, તો
+\olref[iso]{wellordinitialsegment} અને
+\olref[basic]{ordissetofsmallerord} મુજબ
+$\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}$
+એકરૂપતા છે. તેથી
+$\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}$.
+
+ઊલટું, કોઈ $b \in B$ માટે
+$\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}$ હોય એમ ધારો.
+$\gamma=f^{-1}(b)\in\beta$ લો. ફરી
+\olref[iso]{wellordinitialsegment} મુજબ
+$\funrestrictionto{f}{\gamma} \colon \gamma \to B_b$ એકરૂપતા છે.
+આથી $\ordeq{\alpha}{\gamma}$; તેથી
+\olref[basic]{ordisoidentity} મુજબ $\alpha=\gamma\in\beta$.
+\sourcecorrection{OLMD-117}{મૂળની સમકક્ષતાઓની શ્રેણીમાં
+$f(\alpha)$ વપરાયું છે, પણ તે ફક્ત $\alpha\in\beta$ હોય ત્યારે
+જ વ્યાખ્યાયિત છે. માત્ર આ શરત ઉમેરવાથી ઊલટી દિશા સાબિત થતી
+નથી. અહીં બંને દિશાઓ જુદી લખી છે: આગળની દિશામાં $f(\alpha)$
+અને ઊલટી દિશામાં આપેલા $b\in B$ માટેનું મૂલ્ય $f^{-1}(b)$
+વાપરવાથી દરેક ફલનમૂલ્ય તેના પ્રદેશમાં જ લેવાય છે.}
 \end{proof}
 
 \end{document}

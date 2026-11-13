@@ -27,7 +27,7 @@ $x$ આણ્વિક !!{formula}ની ગડેલ-સંખ્યા
 ગડેલ-સંખ્યા છે:
 \begin{enumerate}
 \item એવાં~$n$, $j < x$ અને~$z < x$
-  હોય કે દરેક~$i < n$ માટે
+  હોય કે $\len{z}=n$, દરેક~$i < n$ માટે
   $\fn{Term}((z)_i)$ અને $x = $
 \[
 \Gn{\Obj P^n_j(} \concat \fn{flatten}(z) \concat \Gn{)}.
@@ -41,6 +41,11 @@ $x$ આણ્વિક !!{formula}ની ગડેલ-સંખ્યા
   \tagitem{prvFalse}{$x = \Gn{\lfalse}$.}{}
   \tagitem{prvTrue}{$x = \Gn{\ltrue}$.}{}
 \end{enumerate}
+\sourcecorrection{OLREA-030}{મૂળના પહેલા કિસ્સામાં
+આર્ગ્યુમેન્ટોની સંખ્યા તપાસતી $\len{z}=n$ શરત નથી.
+માત્ર પહેલા $n$ પદો તપાસવાથી $n$-સ્થાનિક વિધેયમાં
+વધારાનાં આર્ગ્યુમેન્ટવાળું અયોગ્ય સૂત્ર પણ સ્વીકારાઈ
+શકે. અહીં આર્ગ્યુમેન્ટ-અનુક્રમની લંબાઈ સ્પષ્ટ કરી છે.}
 \end{proof}
 
 \begin{prop}
@@ -120,9 +125,14 @@ $x$ કોઈ !!a{sentence}ની ગડેલ-સંખ્યા
 $\fn{Sent}(x)$ ત્યારે અને માત્ર ત્યારે,
 જ્યારે
 \begin{multline*}
-\bforall{i<\len{x}}{\bforall{z<x}{}}\\
+\fn{Frm}(x) \land \bforall{i<\len{x}}{\bforall{z<x}{}}\\
 (\bexists{j<z}{z=\Gn{\Obj v_j}} \lif \lnot\fn{FreeOcc}(x,z,i)).
 \end{multline*}
+\sourcecorrection{OLREA-031}{મૂળના સૂત્રમાં $x$
+સૂત્રની ગડેલ-સંખ્યા હોવાની શરત નથી. ખાલી અનુક્રમનો
+સંકેત $x=\emptyseq$ હોય ત્યારે બધાં સૂચકો પરની
+શરત ખાલીપણે સત્ય બને, છતાં ખાલી અનુક્રમ વાક્ય નથી.
+તેથી $\fn{Frm}(x)$ જરૂરી છે અને અહીં ઉમેર્યું છે.}
 \end{proof}
 
 

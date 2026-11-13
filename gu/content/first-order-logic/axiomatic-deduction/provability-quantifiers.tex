@@ -32,17 +32,13 @@ $\ltrue$ સ્વયંસિદ્ધિ હોવાથી મોડસ પ�
 $\Gamma \Proves \lforall[x][!A(x)]$.
 \end{proof}
 
-\sourcecorrection{OLAX-011}{મૂળની
-\texttt{provability-quantifiers.tex}, પંક્તિ~29માં અગાઉ અને પછી વપરાતા
-ભાષા-ચિહ્ન~$\ltrue$ને બદલે કાચું \texttt{\string\top} લખાયું છે. અહીં
-એક જ સ્વયંસિદ્ધિ-ચિહ્ન~$\ltrue$ રાખ્યું છે.}
+\begin{editorial}
+\textbf{OLAX-011.} મૂળની \texttt{provability-quantifiers.tex}, પંક્તિ~29માં અગાઉ અને પછી વપરાતા ભાષા-ચિહ્ન~$\ltrue$ને બદલે \texttt{\string\top} લખાયું છે. પરંતુ સ્થિર \texttt{open-logic-config.sty:78} મુજબ $\ltrue$ એ જ $\top$ ચિહ્ન આપે છે. અનુવાદમાં એક જ મેક્રો $\ltrue$ રાખવું સંકેતનની સંપાદકીય પસંદગી છે.
+\end{editorial}
 
-\sourcecorrection{OLAX-012}{મૂળની
-\texttt{provability-quantifiers.tex}, પંક્તિઓ 30--31માં
-$\Gamma\Proves\ltrue\lif\lforall[x][!A(x)]$માંથી સર્વત્રીકૃત પરિણામને
-``નિગમન પ્રમેય ફરી'' વડે મેળવ્યું છે. જરૂરી પગલું એ છે કે $\ltrue$
-સ્વયંસિદ્ધિ હોવાથી તેને અને પ્રેરણને મોડસ પોનેન્સમાં વાપરવું; અહીં એ
-પ્રમાણન લખ્યું છે.}
+\begin{editorial}
+\textbf{OLAX-012.} મૂળની \texttt{provability-quantifiers.tex}, પંક્તિઓ 30--31માં $\Gamma\Proves\ltrue\lif\lforall[x][!A(x)]$માંથી સર્વત્રીકૃત પરિણામને ``નિગમન પ્રમેય ફરી'' વડે મેળવ્યું છે. આથી પહેલાં $\Gamma\cup\{\ltrue\}\Proves\lforall[x][!A(x)]$ મળે છે અને $\ltrue$ સ્વયંસિદ્ધિ હોવાથી પરંપરિતતા વડે વધારાની ધારણા દૂર થાય છે. તેથી મૂળનું સંક્ષિપ્ત પ્રમાણન માન્ય છે. અનુવાદમાં $\ltrue$ અને શરતી વાક્યને સીધાં મોડસ પોનેન્સમાં વાપરવું માત્ર એ જ પગલાનું સ્પષ્ટ પ્રમાણન છે.
+\end{editorial}
 
 \begin{prop}
 \ollabel{prop:provability-quantifiers}

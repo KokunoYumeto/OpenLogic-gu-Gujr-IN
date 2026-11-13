@@ -1,0 +1,33 @@
+% Local full-reader repairs; the frozen upstream style stays unchanged.
+\usepackage{float}
+\NewCommandCopy\guwrappedphoto\olphoto
+\newcommand*{\guunwrappedphoto}[3][\olphotowidth]{%
+  \iftag{olphotos}{%
+    \IfFileExists{\olpath/assets/photos/#2/#2-large.png}{%
+      \begin{figure}[H]
+        \centering
+        \iftag{olphotos-lowres}{%
+          \includegraphics[width=#1]{\olpath/assets/photos/#2/#2-small}}{%
+          \includegraphics[width=#1]{\olpath/assets/photos/#2/#2-large}}
+        \caption{#3}\label{photo-#2}
+        \IfFileExists{\olpath/assets/photos/#2/#2-credit.tex}{%
+          \ifdefined\ollangid
+            \IfFileExists{\olpath/locale/\ollangid/photocredits/#2-credit.tex}{%
+              \CatchFileDef{\photocredit}{\olpath/locale/\ollangid/photocredits/#2-credit.tex}{}%
+              \addtocontents{pcr}{#3, \cpageref{photo-#2}: \photocredit\par}}{%
+              \PackageWarning{open-logic}{Photo credits for #2 not found}}
+          \else
+            \CatchFileDef{\photocredit}{\olpath/assets/photos/#2/#2-credit.tex}{}%
+            \addtocontents{pcr}{#3, \cpageref{photo-#2}: \photocredit\par}
+          \fi}{}%
+      \end{figure}}{}%
+  }{}%
+}
+\RenewDocumentCommand{\olphoto}{O{\olphotowidth} m m}{%
+  \ifboolexpr{test {\ifstrequal{#2}{russell-bertrand}} or
+               test {\ifstrequal{#2}{tarski-alfred}} or
+               test {\ifstrequal{#2}{turing-alan}} or
+               test {\ifstrequal{#2}{zermelo-ernst}}}{%
+    \guunwrappedphoto[#1]{#2}{#3}}{%
+    \guwrappedphoto[#1]{#2}{#3}}%
+}

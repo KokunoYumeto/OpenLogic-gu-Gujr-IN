@@ -96,14 +96,21 @@ $\Gamma \cup \{!A\}$ અસુસંગત હોય, એ સાબિત કર
   \sFmla{\True}{\lnot !A}થી બદલો અને \sFmla{\True}{\lnot !A}ને
   \TRule{\True}{\lnot} લાગુ કરવાનું ફલિત ધારણાઓ પછી દાખલ કરો. જૂના
   !!{tableau}માં પંક્તિ~$1$ના આધારે સમર્થિત દરેક !!{sentence} હવે
-  પંક્તિ~$n+1$ના આધારે સમર્થિત છે. તેથી જૂનો !!{tableau} બંધ હોય તો
+  પંક્તિ~$n+2$ના આધારે સમર્થિત છે. તેથી જૂનો !!{tableau} બંધ હોય તો
   નવો પણ બંધ છે. બધી ધારણાઓ~$\Gamma$માં હોવાથી તે દર્શાવે છે કે
   $\Gamma$ અસુસંગત છે.
   \sourcecorrection{OLTAB-005}{મૂળની
-  \texttt{provability-consistency.tex}, પંક્તિ~93માં
+  \texttt{provability-consistency.tex}, પંક્તિ~92માં
   $\TRule{\True}{\lnot}$ને $\sFmla{\False}{!A}$ પર લાગુ કરવાનું લખ્યું
   છે. નિયમ અને પૂર્વવાક્ય મુજબ તેનું આધારવાક્ય
   $\sFmla{\True}{\lnot !A}$ છે; અહીં એ જ પુનઃસ્થાપિત કર્યું છે.}
+  \sourcecorrection{OLREA-242}{સ્થિર અંગ્રેજી મૂળના
+  \texttt{first-order-logic/tableaux/provability-consistency.tex:94--95}માં
+  જૂની પંક્તિ~1નો નવો આધાર પંક્તિ~$n+1$ કહ્યો છે. નવી ધારણાઓ
+  $\sFmla{\True}{\lnot !A}$ અને $\sFmla{\True}{!B_1},\dots,
+  \sFmla{\True}{!B_n}$ કુલ $n+1$ પંક્તિઓ રોકે છે; તેમના પછી દાખલ
+  કરેલું $\sFmla{\False}{!A}$ તેથી પંક્તિ~$n+2$ પર છે. અહીં એ
+  પંક્તિ-સંદર્ભ સુધાર્યો છે.}
 \end{proof}
 
 \begin{prop}\ollabel{prop:provability-exhaustive}

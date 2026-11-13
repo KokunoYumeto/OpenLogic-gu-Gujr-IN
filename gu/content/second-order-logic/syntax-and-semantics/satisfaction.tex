@@ -28,7 +28,7 @@
 \item $n$-સ્થાની સંબંધ-ચલ~$\Obj{V_i^n}$ને~$\Domain{M}$ પરનો
   $n$-સ્થાની સંબંધ આપે છે, એટલે
   $s(\Obj{V_i^n}) \subseteq \Domain{M}^n$;
-\item $n$-સ્થાની વિધેય-ચલ~$\Obj{u_i^n}$ને $\Domain{M}$માંથી
+\item $n$-સ્થાની વિધેય-ચલ~$\Obj{u_i^n}$ને $\Domain{M}^n$માંથી
   $\Domain{M}$માં જતું $n$-સ્થાની વિધેય આપે છે, એટલે
   $s(\Obj{u_i^n})\colon \Domain{M}^n \to \Domain{M}$.
 \end{enumerate}
@@ -72,32 +72,40 @@ $\varAssign{s'}{s}{x}$ લખીએ છીએ. (દ્વિતીય-ક્ર�
   જો~$s$ એ !!a{structure}~$\Struct M$ માટેની !!a{variable} નિયુક્તિ
   હોય અને~$m \in \Domain{M}$ હોય, તો~$\Subst{s}{m}{x}$ નીચે મુજબ
   વ્યાખ્યાયિત !!{variable} નિયુક્તિ છે:
-  \[\Subst{s}{m}{y} = \begin{cases}
+  \[\Subst{s}{m}{x}(y) = \begin{cases}
     m & \text{જો } y \ident x\\
     s(y) & \text{અન્યથા},
   \end{cases}\]
-  જો~$X$ એ $n$-સ્થાની સંબંધ-!!{variable} હોય અને $M \subseteq
-  \Domain{M}^n$ હોય, તો~$\Subst{s}{M}{X}$ નીચે મુજબ વ્યાખ્યાયિત
+  જો~$X$ એ $n$-સ્થાની સંબંધ-!!{variable} હોય અને $N \subseteq
+  \Domain{M}^n$ હોય, તો~$\Subst{s}{N}{X}$ નીચે મુજબ વ્યાખ્યાયિત
   !!{variable} નિયુક્તિ છે:
-  \[\Subst{s}{M}{y} = \begin{cases}
-    M & \text{જો } y \ident X\\
+  \[\Subst{s}{N}{X}(y) = \begin{cases}
+    N & \text{જો } y \ident X\\
     s(y) & \text{અન્યથા}.
   \end{cases}\]
   જો~$u$ એ $n$-સ્થાની વિધેય-!!{variable} હોય અને $f\colon \Domain{M}^n
   \to \Domain{M}$ હોય, તો~$\Subst{s}{f}{u}$ નીચે મુજબ વ્યાખ્યાયિત
   !!{variable} નિયુક્તિ છે:
-  \[\Subst{s}{f}{y} = \begin{cases}
+  \[\Subst{s}{f}{u}(y) = \begin{cases}
     f & \text{જો } y \ident u\\
     s(y) & \text{અન્યથા}.
   \end{cases}\]
   દરેક કિસ્સામાં~$y$ કોઈપણ પ્રથમ-ક્રમ અથવા દ્વિતીય-ક્રમ !!{variable}
   હોઈ શકે છે.
+  \sourcecorrection{OLREA-058}{સ્થિર અંગ્રેજી મૂળના ત્રણેય
+  કિસ્સાવાર સૂત્રોની ડાબી બાજુએ બદલવાનો ચલ $y$ લખ્યો છે અને
+  નિયુક્તિનું $y$ પરનું મૂલ્ય દર્શાવ્યું નથી. ઉપર વ્યાખ્યાયિત
+  નિયુક્તિઓ મુજબ અનુક્રમે $\Subst{s}{m}{x}(y)$,
+  $\Subst{s}{N}{X}(y)$ અને $\Subst{s}{f}{u}(y)$ જરૂરી છે.
+  સંબંધ માટે $N$ નામ લીધું છે જેથી સંરચના~$\Struct M$ સાથે
+  ગૂંચવણ ન થાય.}
 \end{defn}
 
 \begin{defn}[સંતોષ]
 દ્વિતીય-ક્રમ !!{formula}s~$!A$ માટે સંતોષની વ્યાખ્યા
 \olref[fol][syn][sat]{defn:satisfaction} જેવી જ છે, પરંતુ તેમાં
 નીચેની કલમો ઉમેરાય છે:
+અહીં $X$ એ $n$-સ્થાની સંબંધ-ચલ અને $u$ એ $n$-સ્થાની વિધેય-ચલ છે.
 \begin{enumerate}
 \item \indcase{!A}{\Atom{X^n}{t_1, \dots, t_n}}{$\Sat{M}{\indfrm}[s]$
   ત્યારે અને માત્ર ત્યારે જ જ્યારે
@@ -105,13 +113,13 @@ $\varAssign{s'}{s}{x}$ લખીએ છીએ. (દ્વિતીય-ક્ર�
   s(X^n)$.}
 \tagitem{prvAll}{%
   \indcase{!A}{\lforall[X][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
-  માત્ર ત્યારે જ જ્યારે દરેક $M \subseteq \Domain{M}^n$ માટે
-  $\Sat{M}{!B}[\Subst{s}{M}{X}]$.}}{}
+  માત્ર ત્યારે જ જ્યારે દરેક $N \subseteq \Domain{M}^n$ માટે
+  $\Sat{M}{!B}[\Subst{s}{N}{X}]$.}}{}
 
 \tagitem{prvEx}{%
   \indcase{!A}{\lexists[X][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
-  માત્ર ત્યારે જ જ્યારે ઓછામાં ઓછા એક $M \subseteq \Domain{M}^n$
-  માટે $\Sat{M}{!B}[\Subst{s}{M}{X}]$.}}{}
+  માત્ર ત્યારે જ જ્યારે ઓછામાં ઓછા એક $N \subseteq \Domain{M}^n$
+  માટે $\Sat{M}{!B}[\Subst{s}{N}{X}]$.}}{}
 
 \tagitem{prvAll}{%
   \indcase{!A}{\lforall[u][!B]}{$\Sat{M}{\indfrm}[s]$ ત્યારે અને
@@ -199,9 +207,9 @@ $\varAssign{s'}{s}{x}$ લખીએ છીએ. (દ્વિતીય-ક્ર�
   \lexists[X][\lexists[Y][(\lexists[y][\Atom{Y}{y}] \land
       \lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})])]]
   \]
-  કોઈપણ નિયુક્તિ~$s$ને સાપેક્ષ સંતોષાય છે, કારણ કે હંમેશાં
-  $M \subseteq \Domain{M}$ અને $M \neq \Domain{M}$ એવો ઉપગણ મળી
-  શકે છે (દાખલા તરીકે $M = \emptyset$).
+  કોઈપણ નિયુક્તિ~$s$ને સાપેક્ષ સંતોષાય છે: અરિક્ત વ્યાપકક્ષેત્રમાં
+  $X$ને રિક્ત ગણ અને $Y$ને આખું $\Domain{M}$ આપીએ, તો
+  $Y$ અરિક્ત છે અને બંને ગણ પરસ્પર પૂરક છે.
 \end{ex}
 
 \begin{ex}
@@ -213,8 +221,9 @@ $\varAssign{s'}{s}{x}$ લખીએ છીએ. (દ્વિતીય-ક્ર�
   તર્કશાસ્ત્રમાં $!A \lif \lforall[X][\lforall[y][X(y)]]$ એ
   $\lnot !A$ને સમકક્ષ છે, એટલે
   $\Sat{M}{!A \lif
-  \lforall[X][\lforall[y][X(y)]]}$ ત્યારે અને માત્ર ત્યારે જ
-  જ્યારે $\Sat{M}{\lnot !A}$. બીજા શબ્દોમાં, દ્વિતીય-ક્રમ
+  \lforall[X][\lforall[y][X(y)]]}[s]$ ત્યારે અને માત્ર ત્યારે જ
+  જ્યારે $\Sat{M}{\lnot !A}[s]$, દરેક ચલ-નિયુક્તિ~$s$ માટે.
+  બીજા શબ્દોમાં, દ્વિતીય-ક્રમ
   તર્કશાસ્ત્રમાં $\lforall$ અને~$\lif$ વડે $\lnot$ વ્યાખ્યાયિત
   કરી શકાય છે.
 \end{ex}
@@ -222,6 +231,13 @@ $\varAssign{s'}{s}{x}$ લખીએ છીએ. (દ્વિતીય-ક્ર�
 \begin{prob}
   બતાવો કે દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં $\lforall$ અને~$\lif$ વડે
   બીજા સંયોજકો વ્યાખ્યાયિત કરી શકાય છે:
+  નીચે $X$ એકસ્થાની સંબંધ-ચલ છે જે $!A$ અને $!B$માં મુક્ત
+  આવતો નથી. બીજી કલમની રચનામાં પણ નવા બદ્ધ ચલો મૂળ સૂત્રના
+  મુક્ત ચલોને પકડી ન લે તે રીતે પસંદ કરો.
+  \sourcecorrection{OLREA-059}{સ્થિર અંગ્રેજી મૂળ સ્વાધ્યાયમાં
+  $X$ માટેની આ જરૂરી શરત આપતું નથી. જો $!A$ અથવા $!B$માં
+  $X$ મુક્ત હોય, તો બહારનો $\lforall[X]$ તેને પકડી લે છે અને
+  દર્શાવેલી સમકક્ષતા સામાન્ય રીતે ખોટી બને છે.}
   \begin{enumerate}
     \item સાબિત કરો કે દ્વિતીય-ક્રમ તર્કશાસ્ત્રમાં $!A \land !B$ એ
     $\lforall[X][(!A \lif (!B \lif \lforall[x][X(x)])\lif

@@ -88,6 +88,30 @@ $!A$ અને $!B$ પણ~$\sigma$ પર જ સત્ય છે (અન્ય
 \]
 કોઈ ઉપસર્ગ $\sigma$ અને !!{formula}~$!A$ માટે.
 
+સત્ય અને અસત્યનાં આદિમ અચળો માટે,
+$\sFmla{\True}{\lfalse}[\sigma]$ અથવા
+$\sFmla{\False}{\ltrue}[\sigma]$ હોય તો શાખા તરત બંધ થાય છે.
+$\sFmla{\True}{\ltrue}[\sigma]$ અને
+$\sFmla{\False}{\lfalse}[\sigma]$ને વિસ્તૃત કરવાની જરૂર નથી.
+આદિમ દ્વિઅનુબંધ માટે બે શાખા આપતા નિયમો પણ ઉમેરીએ:
+\begin{enumerate}
+\item $\sFmla{\True}{!A \liff !B}[\sigma]$ પરથી એક શાખામાં
+  $\sFmla{\True}{!A}[\sigma]$ અને
+  $\sFmla{\True}{!B}[\sigma]$ બંને ઉમેરો; બીજી શાખામાં
+  $\sFmla{\False}{!A}[\sigma]$ અને
+  $\sFmla{\False}{!B}[\sigma]$ બંને ઉમેરો.
+\item $\sFmla{\False}{!A \liff !B}[\sigma]$ પરથી એક શાખામાં
+  $\sFmla{\True}{!A}[\sigma]$ અને
+  $\sFmla{\False}{!B}[\sigma]$ બંને ઉમેરો; બીજી શાખામાં
+  $\sFmla{\False}{!A}[\sigma]$ અને
+  $\sFmla{\True}{!B}[\sigma]$ બંને ઉમેરો.
+\end{enumerate}
+\sourcecorrection{OLREA-132}{મૂળના નિયમોમાં આદિમ
+સત્ય-અસત્ય અચળો અને દ્વિઅનુબંધના કિસ્સા છૂટે છે, જોકે
+આવૃત્તિની ભાષામાં ત્રણેય આદિમ છે. તેમની બંધતા-શરતો અને
+દ્વિઅનુબંધના બંને શાખા-નિયમો ઉમેર્યાં છે; આગળના
+યથાર્થતા અને પૂર્ણતા પ્રમાણોમાં પણ આ કિસ્સા સમાવ્યા છે.}
+
 ધારણાઓ ગોઠવવાના નિયમો પણ સામાન્ય !!{tableau}s જેવા જ છે;
 ફક્ત ધારણાઓ માટે આપણે હંમેશા ઉપસર્ગ~$1$ લઈએ છીએ.
 (કયો ઉપસર્ગ લઈએ તે મહત્ત્વનું નથી, જો બધી ધારણાઓ માટે તે એક જ હોય.)
@@ -219,9 +243,9 @@ $!A$ અને $!B$ પણ~$\sigma$ પર જ સત્ય છે (અન્ય
 \end{oltableau}}
 
 પરંતુ $\Box \formula{A} \Entails/ \Diamond \formula{A}$,
-તેથી આપણી પ્રમાણપદ્ધતિ અવિશ્વસનીય બની જાય. તેવી જ રીતે,
+તેથી આપણી પ્રમાણપદ્ધતિ અયથાર્થ બની જાય. તેવી જ રીતે,
 $\Diamond \formula{A} \Entails/
-\Box \formula{A}$ પણ નથી; છતાં
+\Box \formula{A}$ છે; છતાં
 \iftag{prvBox}{\TRule{\False}{\Box}}{\TRule{\True}{\Diamond}}
 માટેનો ઉપસર્ગ નવો હોવાની મર્યાદા ન હોય, તો નીચેનું બંધ ટેબ્લો થાય:
 \iftag{notprvBox,notprvDiamond}{%
@@ -229,7 +253,7 @@ $\Diamond \formula{A} \Entails/
   \begin{oltableau}
     [\pFmla{\True}{\lnot\Box\lnot \formula{A}}{1}, just = \TAss
       [\pFmla{\False}{\Box \formula{A}}{1}, just = \TAss
-        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[2]}
+        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\False}{\Box}[2]}
           [\pFmla{\False}{\Box\lnot\formula{A}}{1},
             just ={\TRule{\True}{\lnot}[1]}
             [\pFmla{\False}{\lnot\formula{A}}{1.1},
@@ -270,5 +294,7 @@ $\Diamond \formula{A} \Entails/
       ]
     ]
   \end{oltableau}}
+
+\sourcecorrection{OLREA-131}{બંને દર્શાવેલા અનનુસરણ-ચિહ્નો પહેલેથી નિષેધિત છે; બીજા ચિહ્ન પછીનું ગદ્ય તેનો ફરી નિષેધ કરતું હતું, જે સુધાર્યું છે. બૉક્સ-માત્રવાળી વૈકલ્પિક આકૃતિમાં અસત્ય બૉક્સમાંથી અસત્ય સૂત્ર મેળવવાના પગલાને મૂળમાં સત્ય બૉક્સનો નિયમ આપ્યો હતો; હવે યોગ્ય અસત્ય બૉક્સનો નિયમ છે. પ્રમાણપદ્ધતિની ખામી યથાર્થતાની છે, જેને અયથાર્થતા તરીકે ઓળખાવી છે.}
 
 \end{document}

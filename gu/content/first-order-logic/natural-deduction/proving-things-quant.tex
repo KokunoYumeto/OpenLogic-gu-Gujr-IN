@@ -35,9 +35,12 @@ $\lnot \lforall[x][!A(x)]$ પર લાગુ પડે એવો કોઈ સ
 $\lexists[x][\lnot !A(x)]$માં કે તે જેના પર આધાર રાખે છે એવી કોઈ
 ધારણામાં ન આવતો અચળ પસંદ કરવો જોઈએ. (જોકે કોઈ !!{constant}s આવતા જ
 નથી, તેથી કોઈ પણ પસંદગી ચાલશે.)
-\sourcecorrection{OLND-004}{સ્થિર અંગ્રેજી મૂળ આ વાક્યમાં મુખ્ય
-આધારવાક્યને $\lexists[x][!A(x)]$ લખીને તેનો નિષેધ ચૂકી જાય છે; દર્શાવેલી
-નિષ્પત્તિ મુજબ અહીં $\lexists[x][\lnot !A(x)]$ રાખ્યું છે.}
+\sourcecorrection{OLND-004}{સ્થિર અંગ્રેજી મૂળના
+\texttt{first-order-logic/natural-deduction/proving-things-quant.tex}:39માં
+મુખ્ય આધારવાક્યના ઉલ્લેખમાં નિષેધ છૂટી ગયો છે; દર્શાવેલી નિષ્પત્તિ મુજબ
+અહીં $\lexists[x][\lnot !A(x)]$ રાખ્યું છે. આ સંકેતનનો સુધારો છે:
+નિષેધ ઉમેરવાથી તેમાં આવતા અચળો બદલાતા નથી, તેથી આઇગનચલ-શરતની
+માન્યતા અંગેની અલગ ભૂલ નથી.}
 \begin{prooftree}
 \AxiomC{$\Discharge{\lexists[x][\lnot !A(x)]}{1}$}
 \AxiomC{$\Discharge{\lnot !A(a)}{2}$}
@@ -88,10 +91,9 @@ $x$ના સ્થાને ઇચ્છિત પદ વાપરી શકી
 આઇગનચલ-શરતને આધીન એકમાત્ર નિયમ \Elim{\lexists} હતો; તથા આઇગનચલ~$a$
 તે જેના પર આધાર રાખે છે એવી કોઈ અનિવૃત્ત ધારણામાં આવતો નથી, તેથી આ
 યોગ્ય !!{derivation} છે.
-\sourcecorrection{OLND-005}{સ્થિર અંગ્રેજી મૂળ આ અંતિમ તપાસમાં
-અસ્તિત્વ-નિવારણને $\Elim{\exists}$થી લખે છે, જ્યારે આખા પ્રકરણમાં અને
-સંબંધિત નિષ્પત્તિમાં નિર્ધારિત કારક $\Elim{\lexists}$ છે; અહીં એ જ
-સુસંગત રૂપ રાખ્યું છે.}
+\begin{editorial}
+\textbf{OLND-005.} સ્થિર અંગ્રેજી મૂળના \texttt{first-order-logic/natural-deduction/proving-things-quant.tex}:91માં $\Elim{\exists}$ લખ્યું છે. સ્થિર \texttt{open-logic-config.sty}:137--148 અને 226 મુજબ દલીલો વગરનું $\lexists$ એ જ $\exists$ ચિહ્ન આપે છે, તેથી $\Elim{\exists}$ અને $\Elim{\lexists}$ સમાન નિયમ દર્શાવે છે. અહીં રાખેલું એકસરખું મેક્રો-સંકેતન સંપાદકીય પસંદગી છે.
+\end{editorial}
 \end{ex}
 
 \begin{ex}
