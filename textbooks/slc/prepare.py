@@ -92,9 +92,9 @@ def stage_sources():
     replace_once(book_class, r"\usepackage[osf]{Baskervaldx}", "")
     replace_once(book_class, r"\usepackage[scaled=.92]{helvet}", "")
     replace_once(book_class, r"\OLPbookformat{8in}{5in}{.6in}{1}",
-                 r"\OLPbookformat{9.5in}{6.5in}{.7in}{1}")
+                 r"\OLPbookformat{9.5in}{7in}{.7in}{1}")
     replace_once(book_class, r"\settypeblocksize{*}{300pt}{1.62}",
-                 r"\settypeblocksize{*}{400pt}{1.44}")
+                 r"\settypeblocksize{*}{435pt}{1.32}")
     replace_once(book_class, r"(0in,3.5in)", r"(0in,.435\stockheight)")
     replace_once(book_class, r"\vbox to 4.5in", r"\vbox to .565\stockheight")
     replace_once(book_class, r"\textsc{\OLPbookversion}", r"\textbf{\OLPbookversion}")
@@ -105,6 +105,10 @@ def stage_sources():
         'FUNCTION {bbl.and}\n{ "and"}',
         'FUNCTION {bbl.and}\n{ "અને"}',
     )
+
+    envs = olp / "sty" / "open-logic-book-envs.sty"
+    replace_once(envs, r"\begin{mdframed}[style=defishstyle]",
+                 r"\begin{mdframed}[style=defishstyle,nobreak=true]")
 
     book = locale / "courses" / "sets-logic-computation"
     copytree(PROJECT / "book", book)

@@ -11,6 +11,7 @@ book = Path(sys.argv[1]).resolve()
 locale = book.parent.parent
 manifest = json.loads((project / "MANIFEST.json").read_bytes())
 expected = set((project / "locale" / "scope.txt").read_text(encoding="utf-8").splitlines())
+cumulative = len(sys.argv) > 2 and sys.argv[2].lower() == "true"
 content = locale / "content"
 imports = set()
 for record in (book / "slc-screen.fls").read_text(encoding="utf-8").splitlines():
@@ -18,12 +19,16 @@ for record in (book / "slc-screen.fls").read_text(encoding="utf-8").splitlines()
         path = (book / record[6:]).resolve()
         if path.is_relative_to(content) and path.suffix == ".tex":
             imports.add(path.relative_to(locale).as_posix())
+        if cumulative and path.parent == book and re.fullmatch(r"slc-module-\d{3}\.tex", path.name):
+            scope = (project / "locale" / "scope.txt").read_text(encoding="utf-8").splitlines()
+            imports.add(scope[int(path.stem.rsplit("-", 1)[1]) - 1])
 if imports != expected:
     missing = sorted(expected - imports)
     extra = sorted(imports - expected)
     raise SystemExit(f"Textbook import mismatch. Missing {missing}, extra {extra}")
 
-glossary = (book / "include" / "glossary.tex").read_text(encoding="utf-8")
+glossary_path = "slc-embedded-glossary.tex" if cumulative else "include/glossary.tex"
+glossary = (book / glossary_path).read_text(encoding="utf-8")
 sort_keys = dict(re.findall(r"(?m)^\\slcterm(?:\[.*?\])?\{([^}]+)\}\{([^}]+)\}", glossary))
 gls = (book / "slc-screen.gls").read_text(encoding="utf-8")
 rendered = re.findall(r"(?m)^\\glossentry\{([^}]+)\}", gls)
@@ -37,6 +42,11 @@ summary_paths = {
     int(name) for name in re.findall(r"(?m)^INPUT .*include[/\\]summary-(\d+)\.tex$",
                                     (book / "slc-screen.fls").read_text(encoding="utf-8"))
 }
+if cumulative:
+    summary_paths = {
+        int(name) for name in re.findall(r"(?m)^INPUT .*slc-embedded-summary-(\d+)\.tex$",
+                                        (book / "slc-screen.fls").read_text(encoding="utf-8"))
+    }
 if summary_paths != set(manifest["screen"]["chapter_summaries"]):
     raise SystemExit(f"Summary import mismatch. Observed {sorted(summary_paths)}.")
 print(json.dumps({"imported_modules": len(imports), "glossary_entries": len(rendered),

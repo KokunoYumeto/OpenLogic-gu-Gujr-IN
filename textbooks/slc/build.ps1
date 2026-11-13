@@ -1,14 +1,26 @@
 [CmdletBinding()]
-param([ValidateRange(1, 180000)][int]$AcquireTimeoutMs = 1000)
+param([ValidateRange(1, 180000)][int]$AcquireTimeoutMs = 1000, [string]$SourceTree, [switch]$Cumulative)
 
 $ErrorActionPreference = 'Stop'
-$source = & python (Join-Path $PSScriptRoot 'prepare.py')
-if ($LASTEXITCODE -ne 0) { throw 'Source staging failed.' }
-$inputTree = $source | ConvertFrom-Json
-$book = $inputTree.book
-$stage = $inputTree.stage
+if ($SourceTree) {
+    $olp = (Resolve-Path -LiteralPath $SourceTree).Path
+    $book = Join-Path $olp 'locale/gu/courses/sets-logic-computation'
+    $stage = $olp
+    $inputTree = @{olp=$olp; source_units=176; localized_ids=$null}
+} else {
+    $source = & python (Join-Path $PSScriptRoot 'prepare.py')
+    if ($LASTEXITCODE -ne 0) { throw 'Source staging failed.' }
+    $inputTree = $source | ConvertFrom-Json
+    $book = $inputTree.book
+    $stage = $inputTree.stage
+}
+$driver = if ($Cumulative) { 'slc-screen-gu.tex' } else { 'slc-screen.tex' }
+if ($Cumulative) {
+    Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'slc-screen-gu.tex') -Destination $book
+}
 $pdf = Join-Path $book 'slc-screen.pdf'
-$out = Join-Path $PSScriptRoot 'slc-screen-gu.pdf'
+$outName = if ($Cumulative) { 'slc-screen-gu-cumulative.pdf' } else { 'slc-screen-gu.pdf' }
+$out = Join-Path $PSScriptRoot $outName
 $receiptFile = Join-Path $stage 'build.json'
 $receipt = [ordered]@{
     status = 'not_started'
@@ -25,24 +37,25 @@ function Invoke-SlcTool([string]$Name, [string[]]$Arguments) {
     $log = Join-Path $stage ('{0:D2}-{1}.txt' -f $sequence, $Name)
     $code = $null
     if ($IsWindows) {
-        $job = [SlcProcessJob]::CreateJobObject([IntPtr]::Zero, $null)
+        $job = [GuTeXJob]::CreateJobObject([IntPtr]::Zero, $null)
         if ($job -eq [IntPtr]::Zero) { throw 'Could not create a Windows process job.' }
         $proc = $null
         try {
-            $proc = [SlcProcessJob]::Launch($exe, ($Arguments -join ' '), $book, $job, $log)
+            [GuTeXJob]::Limit($job)
+            $proc = [GuTeXJob]::Launch($exe, ($Arguments -join ' '), $book, $job, $log)
             $clock = [Diagnostics.Stopwatch]::StartNew()
-            while (-not $proc.HasExited -or [SlcProcessJob]::Active($job) -gt 0) {
+            while (-not $proc.HasExited -or [GuTeXJob]::Active($job) -gt 0) {
                 if ($clock.Elapsed.TotalSeconds -gt 240) { throw "$Name exceeded four minutes." }
                 Start-Sleep -Milliseconds 100
             }
             $proc.WaitForExit()
             $code = $proc.ExitCode
         } finally {
-            if ([SlcProcessJob]::Active($job) -gt 0) {
-                $null = [SlcProcessJob]::TerminateJobObject($job, 125)
-                while ([SlcProcessJob]::Active($job) -gt 0) { Start-Sleep -Milliseconds 100 }
+            if ([GuTeXJob]::Active($job) -gt 0) {
+                $null = [GuTeXJob]::TerminateJobObject($job, 125)
+                while ([GuTeXJob]::Active($job) -gt 0) { Start-Sleep -Milliseconds 100 }
             }
-            $null = [SlcProcessJob]::CloseHandle($job)
+            $null = [GuTeXJob]::CloseHandle($job)
             if ($proc) { $proc.Dispose() }
         }
     } else {
@@ -64,7 +77,7 @@ $previousEpoch = $env:SOURCE_DATE_EPOCH
 $previousForceDate = $env:FORCE_SOURCE_DATE
 try {
     if ($IsWindows) {
-        Add-Type -Path (Join-Path $PSScriptRoot 'WindowsProcessJob.cs')
+        Add-Type -Path (Join-Path $PSScriptRoot 'WindowsTeXJob.cs')
         $mutex = [Threading.Mutex]::new($false, 'Global\InterlanguageTeXSlotV1')
         try { $receipt.mutex_acquired = $mutex.WaitOne($AcquireTimeoutMs) }
         catch [Threading.AbandonedMutexException] { $receipt.mutex_acquired = $true }
@@ -75,12 +88,12 @@ try {
     }
 
     $env:BSTINPUTS = (Join-Path $inputTree.olp 'bib') + [IO.Path]::PathSeparator
-    $env:SOURCE_DATE_EPOCH = '1783832456'
+    $env:SOURCE_DATE_EPOCH = '1786722663'
     $env:FORCE_SOURCE_DATE = '1'
     $version = & lualatex --version | Select-Object -First 1
     $platformOptions = if ($version -match 'MiKTeX') { @('--disable-installer') } else { @() }
     $texArgs = @($platformOptions) + @('-no-shell-escape','-interaction=nonstopmode',
-        '-halt-on-error','-file-line-error','-recorder','slc-screen.tex')
+        '-halt-on-error','-file-line-error','-recorder','-jobname=slc-screen',$driver)
     $bibArgs = @($platformOptions) + @('slc-screen')
     $indexArgs = @('-s','slc-screen.ist','-t','slc-screen.glg','-o','slc-screen.gls','slc-screen.glo')
     Invoke-SlcTool lualatex $texArgs
@@ -114,7 +127,7 @@ try {
     $receipt.remaining_log_checks = $warnings
     if ($warnings.Count -gt 0) { throw "Unsettled build. See $book/slc-screen.log." }
     if (-not (Test-Path -LiteralPath $pdf -PathType Leaf)) { throw 'The screen PDF is absent.' }
-    $inventory = & python (Join-Path $PSScriptRoot 'check-build.py') $book
+    $inventory = & python (Join-Path $PSScriptRoot 'check-build.py') $book $Cumulative.IsPresent.ToString()
     if ($LASTEXITCODE -ne 0) { throw 'Textbook content inventory did not pass.' }
     $receipt.inventory = $inventory | ConvertFrom-Json
     Copy-Item -LiteralPath $pdf -Destination $out
