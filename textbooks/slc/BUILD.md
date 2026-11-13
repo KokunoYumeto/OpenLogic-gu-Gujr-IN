@@ -1,6 +1,6 @@
 # ગણો, તર્ક, સંગણન
 
-ZIP ખોલીને તેના મુખ્ય ફોલ્ડરમાંથી PowerShell 7 વડે ચલાવો.
+ZIP ખોલીને તેના મુખ્ય ફોલ્ડરમાંથી Windows પર PowerShell 7 વડે ચલાવો.
 
 ```powershell
 pwsh -NoProfile -File build.ps1 -SourceTree source

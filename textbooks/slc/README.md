@@ -10,13 +10,13 @@
 
 મૂળ પુસ્તક *Sets, Logic, Computation* Richard Zachનું છે અને તે Open Logic Projectના *The Open Logic Text* પર આધારિત છે. બંને પાઠો [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) પરવાના હેઠળ છે. આ અનુવાદે [મૂળ પુસ્તકની આવૃત્તિ](https://github.com/rzach/sets-logic-computation/tree/6178f32f61645f3b62ef621b4c5a88f8e67778ad) અને [Open Logic Projectની આવૃત્તિ](https://github.com/OpenLogicProject/OpenLogic/tree/1e960beff9ed7835bf3e3f1335e21af3439cd107) વાપરી છે.
 
-પુસ્તક-વિશિષ્ટ ગુજરાતી અનુવાદ અને ગોઠવણી OpenAI Codexના GPT-6.1 Sol (Ultra) વડે કૃત્રિમ બુદ્ધિથી તૈયાર થયાં છે. સમાવેલા પ્રકરણો ગુજરાતી Open Logic Projectની [પૂર્ણ આવૃત્તિ v1.2.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/tree/caa999f02d29e434161ea2a9a1528163d49072c1)માંથી છે. એ ગુજરાતી આવૃત્તિનો અનુવાદ OpenAI Codexના GPT-5.6 Sol, GPT-6 Sol અને GPT-6.1 Sol (Ultra) વડે તૈયાર થયો છે. મૂળ માનવીય લેખનનો શ્રેય તેના લેખકોને છે.
+પુસ્તક-વિશિષ્ટ ગુજરાતી અનુવાદ અને ગોઠવણી OpenAI Codexના GPT-6.1 Sol (Ultra) વડે કૃત્રિમ બુદ્ધિથી તૈયાર થયાં છે. સમાવેલા પ્રકરણો ગુજરાતી Open Logic Projectની [પૂર્ણ આવૃત્તિ v1.2.0](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/tree/431fc41bda7ebeeb6099f26e812a0693c690a688)માંથી છે. એ ગુજરાતી આવૃત્તિનો અનુવાદ OpenAI Codexના GPT-5.6 Sol, GPT-6 Sol અને GPT-6.1 Sol (Ultra) વડે તૈયાર થયો છે. મૂળ માનવીય લેખનનો શ્રેય તેના લેખકોને છે.
 
 Matthew Leadbeaterનાં મુખપૃષ્ઠ અને ભાગચિત્રો [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) હેઠળ છે. જીવનચરિત્રોમાં વપરાયેલા ફોટોગ્રાફ માટે પુસ્તકમાં આપેલો વ્યક્તિગત શ્રેય અને વપરાશની શરતો લાગુ પડે છે. સ્રોતો, મોડેલ અને આવૃત્તિઓ [મેનિફેસ્ટમાં](MANIFEST.json) નોંધેલાં છે.
 
 ## પીડીએફ બનાવવી
 
-આ ભંડારના મુખ્ય ફોલ્ડરમાંથી PowerShell 7 વડે ચલાવો.
+આ ભંડારના મુખ્ય ફોલ્ડરમાંથી Windows પર PowerShell 7 વડે ચલાવો.
 
 ```powershell
 pwsh -NoProfile -File textbooks/slc/build.ps1
