@@ -52,8 +52,16 @@
 \setlength{\cftsecnumwidth}{3.7em}
 % Three-component subsection numbers also appear in the contents.
 \setlength{\cftsubsecnumwidth}{4.3em}
-% Allow the modal correspondence table's fixed-width cells to fit their labels.
+% An interword space after the fixed-width hbox in the modal table makes
+% its multirow cell wider than its p column. Trim trailing interword glue
+% from multirow contents in this section, leaving the column widths intact.
+\makeatletter
+\newcommand*{\gutrimmodalmultirows}{%
+  \let\guoriginalmultirow\@xmultirow
+  \long\def\@xmultirow[##1]##2[##3]##4[##5]##6{%
+    \guoriginalmultirow[##1]{##2}[##3]{##4}[##5]{##6\unskip}}}
+\makeatother
 \AtBeginEnvironment{tabular}{%
   \ifboolexpr{test {\ifdefstring{\theolpart}{nml}} and
                test {\ifdefstring{\theolchapter}{frd}} and
-               test {\ifdefstring{\theolsection}{acc}}}{\small}{}}
+               test {\ifdefstring{\theolsection}{acc}}}{\gutrimmodalmultirows}{}}
