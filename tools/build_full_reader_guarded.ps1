@@ -96,3 +96,4 @@ try {
 }
 $GuReceipt | ConvertTo-Json -Depth 10
 if ($GuReceipt.status -eq 'failed') {exit 1}
+if (-not $GuAcquired) {exit 75}
