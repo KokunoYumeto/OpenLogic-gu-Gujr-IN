@@ -10,7 +10,8 @@ project = Path(__file__).resolve().parent
 book = Path(sys.argv[1]).resolve()
 locale = book.parent.parent
 manifest = json.loads((project / "MANIFEST.json").read_bytes())
-expected = set((project / "locale" / "scope.txt").read_text(encoding="utf-8").splitlines())
+scope = (project / "locale" / "scope.txt").read_text(encoding="utf-8").splitlines()
+expected = set(scope)
 cumulative = len(sys.argv) > 2 and sys.argv[2].lower() == "true"
 content = locale / "content"
 imports = set()
@@ -20,7 +21,6 @@ for record in (book / "slc-screen.fls").read_text(encoding="utf-8").splitlines()
         if path.is_relative_to(content) and path.suffix == ".tex":
             imports.add(path.relative_to(locale).as_posix())
         if cumulative and path.parent == book and re.fullmatch(r"slc-module-\d{3}\.tex", path.name):
-            scope = (project / "locale" / "scope.txt").read_text(encoding="utf-8").splitlines()
             imports.add(scope[int(path.stem.rsplit("-", 1)[1]) - 1])
 if imports != expected:
     missing = sorted(expected - imports)

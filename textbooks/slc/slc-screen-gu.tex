@@ -4627,7 +4627,7 @@ $\lforall[x][\lforall[y][(\eq[x][y] \lif \eq[y][x])]]$ અને
 $\lforall[x][\lforall[y][\lforall[z][((\eq[x][y] \land \eq[y][z])
 \lif \eq[x][z])]]]$ની !!{derivation}s આપો.
 \sourcecorrection{OLREA-239}{સ્થિર અંગ્રેજી મૂળના
-\texttt{first-order-logic/natural-deduction/identity.tex}:55--56માં
+\nolinkurl{first-order-logic/natural-deduction/identity.tex}:55--56માં
 પરંપરિતતાના સૂત્રમાં $z$ના સર્વપરિમાણકની વ્યાપ-દલીલને ઘેરતી ચોરસ
 કૌંસોની જોડી છૂટી ગઈ છે. અહીં તે જોડી પૂરી કરીને ત્રણેય પરિમાણકોનું
 સંકેતન સુધાર્યું છે; સાબિતી આપવાનો અભ્યાસપ્રશ્ન યથાવત્ છે.}
@@ -6403,7 +6403,7 @@ $!A$ની કોઈ !!a{derivation}ને $\delta$ કહો. $\delta$માં
 \Elim{\lor}, \Intro{\land}, \Elim{\lnot},
 \iftag{FOL}{\Elim{\lif} અને \Elim{\lexists}}{\Elim{\lif}}.
 \sourcecorrection{OLREA-238}{સ્થિર અંગ્રેજી મૂળના
-\texttt{first-order-logic/natural-deduction/soundness.tex}:211--213ની
+\nolinkurl{first-order-logic/natural-deduction/soundness.tex}:211--213ની
 એક કરતાં વધુ આધારવાક્યો ધરાવતા નિયમોની યાદીમાં દ્વિ-આધારી
 $\Elim{\lnot}$ છૂટી ગયો છે, જોકે પંક્તિ 273માં તેનો કિસ્સો સામેલ છે.
 અહીં યાદીમાં એ નિયમ ઉમેર્યો છે; તેની સાબિતીનો અભ્યાસપ્રશ્ન યથાવત્ છે.}
@@ -9918,14 +9918,16 @@ $!A$ માટેની \emph{રચના-શ્રેણી} ત્યાર�
 \end{defn}
 
 \begin{ex}
-\[
+\begin{maxwidth}
+$\displaystyle
 \tuple{
     \Atom{\Obj A^1_0}{\Obj v_0},
     \Atom{\Obj A^1_1}{\Obj c_1},
     (\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0}),
     \lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj A^1_0}{\Obj v_0})]
 }
-\]
+$
+\end{maxwidth}
 એ $\lexists[\Obj v_0][(\Atom{\Obj A^1_1}{\Obj c_1} \land \Atom{\Obj
 A^1_0}{\Obj v_0})]$ માટેની રચના-શ્રેણી છે; એવી જ રીતે
 \begin{multline*}
@@ -20405,7 +20407,8 @@ $\TMblank$ વાંચવા માટેની સૂચના ઉમેરી
 નિર્ણય આપતી સામાન્ય કલનવિધિ નથી; આ શરત ગદ્યમાં સ્પષ્ટ કરી છે.}
 
 \begin{ex}
-\[
+\begin{maxwidth}
+$\displaystyle
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
                     semithick]
   \tikzstyle{every state}=[fill=none,draw=black,text=black]
@@ -20419,7 +20422,8 @@ $\TMblank$ વાંચવા માટેની સૂચના ઉમેરી
   (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
       edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
 \end{tikzpicture}
-\]
+$
+\end{maxwidth}
 \end{ex}
 
 \begin{explain}
@@ -23755,16 +23759,16 @@ $0$ છે. તેને \emph{અટકવાનું ફલન} કહે છ
 \begin{document}
 \raggedbottom
 \OLPscreencover{%
-  \hfill\hspace{.29\textwidth}\includegraphics[width=.29\textwidth]{\olpath/assets/portraits/cantor-circle.pdf}\hfill{}
+  \hfill\hspace{.29\textwidth}\includegraphics[width=.26\textwidth]{\olpath/assets/portraits/cantor-circle.pdf}\hfill{}
 
   \hfill{}
-  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/goedel-circle.pdf}
-  \hfil\includegraphics[width=.29\textwidth]{\olpath/assets/portraits/turing-circle.pdf}\hfil{}
-  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/skolem-circle.pdf}
+  \includegraphics[width=.26\textwidth]{\olpath/assets/portraits/goedel-circle.pdf}
+  \hfil\includegraphics[width=.26\textwidth]{\olpath/assets/portraits/turing-circle.pdf}\hfil{}
+  \includegraphics[width=.26\textwidth]{\olpath/assets/portraits/skolem-circle.pdf}
   \hfill{}
 
   \hfill{}
-  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/noether-circle.pdf}\hspace{.29\textwidth}\hfill{}
+  \includegraphics[width=.26\textwidth]{\olpath/assets/portraits/noether-circle.pdf}\hspace{.29\textwidth}\hfill{}
 }
 \input{slc-embedded-book}
 \end{document}

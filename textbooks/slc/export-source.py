@@ -36,15 +36,17 @@ def archive_source(tree, output):
     members["SOURCE-SHA256SUMS.txt"] = "".join(
         f"{sha256(data).hexdigest()}  {name}\n" for name, data in sorted(members.items())
     ).encode("ascii")
-    with ZipFile(output, "w", compression=ZIP_DEFLATED, compresslevel=6) as z:
+    temporary = output.with_suffix(".tmp")
+    with ZipFile(temporary, "w", compression=ZIP_DEFLATED, compresslevel=6) as z:
         for name, data in sorted(members.items()):
             assert not {"..", ".git", "build", ".build"}.intersection(Path(name).parts)
             info = ZipInfo(name, (2026, 11, 13, 0, 0, 0))
             info.compress_type = ZIP_DEFLATED
             info.external_attr = 0o100644 << 16
             z.writestr(info, data)
-    with ZipFile(output) as z:
+    with ZipFile(temporary) as z:
         assert sorted(z.namelist()) == sorted(members) and z.testzip() is None
+    temporary.replace(output)
     print(json.dumps({"members": len(members), "sha256": sha256(output.read_bytes()).hexdigest()}))
 
 

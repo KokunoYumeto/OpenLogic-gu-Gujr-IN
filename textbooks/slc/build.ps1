@@ -2,6 +2,7 @@
 param([ValidateRange(1, 180000)][int]$AcquireTimeoutMs = 1000, [string]$SourceTree, [switch]$Cumulative)
 
 $ErrorActionPreference = 'Stop'
+if (-not $IsWindows) { throw 'This build requires Windows for the shared TeX slot and capped process job.' }
 if ($SourceTree) {
     $olp = (Resolve-Path -LiteralPath $SourceTree).Path
     $book = Join-Path $olp 'locale/gu/courses/sets-logic-computation'
@@ -58,8 +59,6 @@ function Invoke-SlcTool([string]$Name, [string[]]$Arguments) {
             $null = [GuTeXJob]::CloseHandle($job)
             if ($proc) { $proc.Dispose() }
         }
-    } else {
-        throw 'This build requires the Windows shared TeX slot and capped process job.'
     }
     $receipt.commands += @{tool = $Name; log = (Split-Path -Leaf $log); exit_code = $code; job_memory_limit_bytes = 5000000000}
     if ($code -ne 0 -or $null -eq $code) { throw "$Name failed. See $log." }
