@@ -1,0 +1,316 @@
+% Gujarati ICU collation. Numeric sort keys let MakeIndex preserve this order.
+\slcterm{dtheorem}{033}{નિગમન પ્રમેય}{
+  ધારણામાંથી વાક્ય ફલિત થવું કે સાબિત થવું અને અનુરૂપ પ્રેરણ ફલિત થવું કે સાબિત થવું, એ વચ્ચેનો સંબંધ. અર્થવિષયક સ્વરૂપમાં (\olref[fol][syn][sem]{thm:sem-deduction}) $\Gamma \cup \{!A\} \Entails !B$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Gamma \Entails !A \lif !B$. સાબિતી-સિદ્ધાંતના સ્વરૂપમાં $\Gamma \cup \{!A\} \Proves !B$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Gamma \Proves !A \lif !B$.
+}
+
+\slcterm{set-extensionality}{021}{ઘટકો દ્વારા નિર્ધારિત સમાનતા (ગણો)}{
+  $A = B$ ત્યારે અને માત્ર ત્યારે જ જ્યારે $A$નો દરેક ઘટક $B$નો અને $B$નો દરેક ઘટક $A$નો ઘટક હોય (જુઓ \olref[sfr][set][bas]{sec}).
+}
+
+\slcterm{sat-extensionality}{065}{સંતોષની વિસ્તારપરકતા}{
+  $!A$ સંતોષાય છે કે કેમ તેનો આધાર $!A$માં ખરેખર આવતા અતાર્કિક ચિહ્નો અને મુક્ત ચલોને અપાયેલાં મૂલ્યો પર જ છે.
+}
+
+\slcterm{set}{020}{ગણ}{
+  વસ્તુઓનો એવો સંગ્રહ કે જેમાં તેને નિર્દિષ્ટ કરવાની રીત, વસ્તુઓનો ક્રમ અને તેમની આવૃત્તિ અપ્રસ્તુત છે (જુઓ \olref[sfr][set][bas]{sec}).
+}
+
+\slcterm{symmetric}{068}{સંમિત}{
+  $R$ સંમિત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $Rxy$ હોય તે દરેક કિસ્સામાં $Ryx$ પણ હોય (જુઓ \olref[sfr][rel][prp]{sec}).
+}
+
+\slcterm[\ensuremath{A \times B}]{cp}{019}{કાર્તેઝીય ગુણાકાર}{
+  $A$ અને $B$ના ઘટકોની બધી જોડીઓનો ગણ. $A \times B = \Setabs{\tuple{x,y}}{x \in A \text{ અને } y\in B}$ (જુઓ \olref[sfr][set][pai]{sec}).
+}
+
+\slcterm[\ensuremath{A \subseteq B}]{subset}{013}{ઉપગણ}{
+  જેનો દરેક ઘટક આપેલા ગણ $B$નો ઘટક હોય તેવો ગણ (જુઓ \olref[sfr][set][sub]{sec}).
+}
+
+\slcterm[\ensuremath{A^*}]{finsequence}{004}{અનુક્રમ (સાન્ત)}{
+  $A$ના ઘટકોની સાન્ત માળા, એટલે કે કોઈ $n$ માટે $A^n$નો એક ઘટક (જુઓ \olref[sfr][set][imp]{sec}).
+}
+
+\slcterm[\ensuremath{A^\omega}]{infsequence}{003}{અનુક્રમ (અનંત)}{
+  $A$ના ઘટકોનો ખાલી જગ્યા વિનાનો અને કદી પૂરો ન થતો અનુક્રમ. ઔપચારિક રીતે $s\colon \PosInt \to A$ પ્રકારનું ફલન (જુઓ \olref[sfr][set][imp]{sec}).
+}
+
+\slcterm[\ensuremath{\Pow{A}}]{ps}{022}{ઘાતગણ}{
+  $A$ના બધા ઉપગણોનો ગણ. $\Pow{A}=\Setabs{x}{x\subseteq A}$ (જુઓ \olref[sfr][set][sub]{sec}).
+}
+
+\slcterm[\ensuremath{A\cup B}]{union}{056}{યોગગણ}{
+  $A$ અને $B$ના બધા ઘટકો ભેગા કરીને મળતો ગણ. $A \cup B = \Setabs{x}{x\in A \lor x\in B}$ (જુઓ \olref[sfr][set][uni]{sec}).
+}
+
+\slcterm[\ensuremath{A\cap B}]{intersection}{026}{છેદગણ}{
+  $A$ અને $B$ બંનેના ઘટક હોય એવી બધી વસ્તુઓનો ગણ. $A \cap B = \Setabs{x}{x\in A\land x\in B}$ (જુઓ \olref[sfr][set][uni]{sec}).
+}
+
+\slcterm[\ensuremath{A\setminus B}]{difference}{027}{તફાવત}{
+  $A$ના એવા બધા ઘટકોનો ગણ જે $B$માં નથી. $A\setminus B=\Setabs{x}{x\in A \text{ અને } x\notin B}$ (જુઓ \olref[sfr][set][uni]{sec}).
+}
+
+\slcterm{disjoint}{032}{નિઃસામાન્ય}{
+  બે ગણો જેમનો કોઈ સામાન્ય ઘટક નથી (જુઓ \olref[sfr][set][uni]{sec}).
+}
+
+\slcterm[\ensuremath{g\circ f}]{composition}{069}{સંયોજન}{
+  $f$ અને $g$ને અનુક્રમે લગાડતાં મળતું ફલન. $(g\circ f)(x)=g(f(x))$ (જુઓ \olref[sfr][fun][cmp]{sec}).
+}
+
+\slcterm[\ensuremath{f\colon A\to B}]{function}{050}{ફલન}{
+  પ્રદેશ $A$ના દરેક ઘટકને સહપ્રદેશ $B$ના એક ઘટક સાથે સાંકળતી નિયુક્તિ (જુઓ \olref[sfr][fun][bas]{sec}).
+}
+
+\slcterm[\ensuremath{\dom{f}}]{fdomain}{047}{પ્રદેશ (ફલનનો)}{
+  જે વસ્તુઓ માટે (આંશિક) ફલન વ્યાખ્યાયિત છે તેમનો ગણ (જુઓ \olref[sfr][fun][bas]{sec}).
+}
+
+\slcterm[\ensuremath{\ran{f}}]{range}{062}{વિસ્તાર}{
+  સહપ્રદેશનો એવો ઉપગણ જેના ઘટકો ખરેખર $f$નાં મૂલ્યો તરીકે મળે છે. $\ran{f}=\Setabs{y\in B}{\text{કોઈ } x\in A \text{ માટે } f(x)=y}$ (જુઓ \olref[sfr][fun][bas]{sec}).
+}
+
+\slcterm{graph}{011}{આલેખ (ફલનનો)}{
+  જો $f\colon A\pto B$ હોય તો $R_f\subseteq A\times B$ એવો સંબંધ જેમાં $R_f=\Setabs{\tuple{x,y}}{f(x)=y}$ (જુઓ \olref[sfr][fun][rel]{sec}).
+}
+
+\slcterm{inverse}{046}{પ્રતિફલન}{
+  જો $f\colon A\to B$ એક-એક અને વ્યાપ્ત હોય તો $f^{-1}\colon B\to A$ એવું ફલન છે કે $f^{-1}(y)$ એ એકમાત્ર $x\in A$ છે જેના માટે $f(x)=y$ (જુઓ \olref[sfr][fun][inv]{sec}).
+}
+
+\slcterm[\ensuremath{f\colon A\pto B}]{pf}{009}{આંશિક ફલન}{
+  $A$ના દરેક ઘટકને $B$ના વધુમાં વધુ એક ઘટક સાથે સાંકળતી નિયુક્તિ. જો $f$ એ $x\in A$ને $B$નો ઘટક આપે તો $f(x)$ વ્યાખ્યાયિત છે, અન્યથા અવ્યાખ્યાયિત છે (જુઓ \olref[sfr][fun][par]{sec}).
+}
+
+\slcterm[\ensuremath{R^+}]{tc}{040}{પરંપરિત સંવરણ}{
+  $R$ને સમાવતો લઘુતમ \gls{transitive} સંબંધ (જુઓ \olref[sfr][rel][ops]{sec}).
+}
+
+\slcterm[\ensuremath{R^{-1}}]{ir}{063}{વ્યસ્ત સંબંધ}{
+  $R$ની જોડીઓ ઊલટાવવાથી મળતો સંબંધ. $R^{-1}=\Setabs{\tuple{y,x}}{\tuple{x,y}\in R}$ (જુઓ \olref[sfr][rel][ops]{sec}).
+}
+
+\slcterm{preorder}{045}{પૂર્વક્રમ}{
+  \gls{reflexive} અને \gls{transitive} સંબંધ (જુઓ \olref[sfr][rel][ord]{sec}).
+}
+
+\slcterm{po}{008}{આંશિક ક્રમ}{
+  \gls{reflexive}, \gls{anti-symmetric} અને \gls{transitive} સંબંધ (જુઓ \olref[sfr][rel][ord]{sec}).
+}
+
+\slcterm{to}{067}{સંપૂર્ણ ક્રમ}{
+  જુઓ \gls{lo}.
+}
+
+\slcterm{irreflexive}{007}{અસ્વવાચક}{
+  $R$ અસ્વવાચક છે જો કોઈ $x\in A$ માટે $Rxx$ ન હોય (જુઓ \olref[sfr][rel][ord]{sec}).
+}
+
+\slcterm{asymmetric}{006}{અસંમિત}{
+  $R$ અસંમિત છે જો $x,y\in A$ની કોઈ જોડી માટે $Rxy$ અને $Ryx$ બંને ન હોય (જુઓ \olref[sfr][rel][ord]{sec}).
+}
+
+\slcterm{so}{017}{કડક ક્રમ}{
+  \gls{irreflexive}, \gls{asymmetric} અને \gls{transitive} સંબંધ (જુઓ \olref[sfr][rel][ord]{sec}).
+}
+
+\slcterm{slo}{018}{કડક રેખીય ક્રમ}{
+  તુલનાયુક્ત \gls{so} (જુઓ \olref[sfr][rel][ord]{sec}).
+}
+
+\slcterm{lo}{057}{રેખીય ક્રમ}{
+  તુલનાયુક્ત \gls{po} (જુઓ \olref[sfr][rel][ord]{sec}).
+}
+
+\slcterm{br}{030}{દ્વિઘટકી સંબંધ}{
+  $A^2$નો ઉપગણ. $\tuple{x,y}\in R$ માટે $Rxy$ (અથવા $xRy$) લખીએ છીએ (જુઓ \olref[sfr][rel][set]{sec}).
+}
+
+\slcterm{reflexive}{079}{સ્વવાચક}{
+  $R$ સ્વવાચક છે ત્યારે અને માત્ર ત્યારે જ જ્યારે દરેક $x\in A$ માટે $Rxx$ હોય (જુઓ \olref[sfr][rel][prp]{sec}).
+}
+
+\slcterm{transitive}{039}{પરંપરિત}{
+  $R$ પરંપરિત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $Rxy$ અને $Ryz$ હોય તે દરેક કિસ્સામાં $Rxz$ પણ હોય (જુઓ \olref[sfr][rel][prp]{sec}).
+}
+
+\slcterm{anti-symmetric}{061}{વિસંમિત}{
+  $R$ વિસંમિત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $Rxy$ અને $Ryx$ બંને હોય તો $x=y$. સમકક્ષ રીતે, જો $x\neq y$ તો $Rxy$ ન હોય અથવા $Ryx$ ન હોય (જુઓ \olref[sfr][rel][prp]{sec}).
+}
+
+\slcterm{connected}{029}{તુલનાયુક્ત}{
+  $R$ તુલનાયુક્ત છે જો $x\neq y$ ધરાવતા બધા $x,y\in A$ માટે $Rxy$ અથવા $Ryx$ હોય (જુઓ \olref[sfr][rel][prp]{sec}).
+}
+
+\slcterm{er}{075}{સામ્ય સંબંધ}{
+  સ્વવાચક, સંમિત અને પરંપરિત સંબંધ (જુઓ \olref[sfr][rel][prp]{sec}).
+}
+
+\slcterm{sf}{064}{વ્યાપ્ત}{
+  $f\colon A\to B$ વ્યાપ્ત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $f$નો વિસ્તાર આખો $B$ હોય, એટલે કે દરેક $y\in B$ માટે ઓછામાં ઓછો એક $x\in A$ હોય કે $f(x)=y$ (જુઓ \olref[sfr][fun][kin]{sec}).
+}
+
+\slcterm{if}{015}{એક-એક}{
+  $f\colon A\to B$ એક-એક છે ત્યારે અને માત્ર ત્યારે જ જ્યારે દરેક $y\in B$ માટે વધુમાં વધુ એક $x\in A$ હોય કે $f(x)=y$. સમકક્ષ રીતે, $x\neq x'$ હોય ત્યારે $f(x)\neq f(x')$ (જુઓ \olref[sfr][fun][kin]{sec}).
+}
+
+\slcterm{bijection}{016}{એક-એક વ્યાપ્ત ફલન}{
+  જે ફલન વ્યાપ્ત પણ હોય અને એક-એક પણ હોય (જુઓ \olref[sfr][fun][kin]{sec}).
+}
+
+\slcterm{enumeration}{041}{પરિગણના}{
+  ગણ $A$ના બધા ઘટકોની સંભવતઃ અનંત યાદી. ઔપચારિક રીતે તે વ્યાપ્ત ફલન $f\colon \Nat\to A$ છે (જુઓ \olref[sfr][siz][enm]{sec}).
+}
+
+\slcterm{equinumerous}{073}{સમસંખ્યક}{
+  $A$ અને $B$ સમસંખ્યક છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $A$થી $B$ સુધી સર્વત્ર વ્યાખ્યાયિત એક-એક વ્યાપ્ત ફલન હોય (જુઓ \olref[sfr][siz][equ]{sec}).
+}
+
+\slcterm{finitely satisfiable}{074}{સાન્ત રીતે સંતોષ્ય}{
+  $\Gamma$ સાન્ત રીતે સંતોષ્ય છે ત્યારે અને માત્ર ત્યારે જ જ્યારે દરેક સાન્ત $\Gamma_0\subseteq\Gamma$ સંતોષ્ય હોય (જુઓ \olref[fol][com][com]{sec}).
+}
+
+\slcterm{mcs}{042}{પૂર્ણ સુસંગત ગણ}{
+  વાક્યોનો ગણ પૂર્ણ અને સુસંગત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે તે સુસંગત હોય અને દરેક વાક્ય $!A$ માટે $!A$ અથવા $\lnot !A$ ગણમાં હોય (જુઓ \olref[fol][com][ccs]{sec}).
+}
+
+\slcterm{mos}{034}{નિદર્શ}{
+  જે સંરચનામાં $\Gamma$નું દરેક વાક્ય સાચું છે તે $\Gamma$નો નિદર્શ છે (જુઓ \olref[fol][mat][exs]{sec}).
+}
+
+\slcterm{closed}{071}{સંવૃત}{
+  વાક્યોનો ગણ $\Gamma$ સંવૃત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Gamma \Entails !A$ હોય તે દરેક કિસ્સામાં $!A\in\Gamma$ હોય. $\Setabs{!A}{\Gamma \Entails !A}$ એ $\Gamma$ની સંવૃતિ છે (જુઓ \olref[fol][mat][int]{sec}).
+}
+
+\slcterm[\ensuremath{\Gamma \Proves !A}]{derivability}{038}{નિષ્પન્નક્ષમતા}{
+  સિક્વન્ટ કલનમાં $!A$ એ $\Gamma$માંથી નિષ્પન્ન કરી શકાય છે જો $\Gamma_0\Sequent !A$ સિક્વન્ટની નિષ્પત્તિ હોય, જ્યાં $\Gamma_0$ એ $\Gamma$માંનાં વાક્યોનો સાન્ત અનુક્રમ છે (જુઓ \olref[fol][seq][ptn]{sec}). સ્વાભાવિક નિગમનમાં $!A$ એ $\Gamma$માંથી નિષ્પન્ન કરી શકાય છે જો $!A$ અંતિમ સૂત્ર હોય તેવી નિષ્પત્તિ હોય અને તેમાંની દરેક ધારણા નિવૃત્ત હોય અથવા $\Gamma$માં હોય (જુઓ \olref[fol][ntd][ptn]{sec}).
+}
+
+\slcterm[\ensuremath{\Proves !A}]{theorem}{049}{પ્રમેય}{
+  સિક્વન્ટ કલનમાં $!A$ (તર્કનું) પ્રમેય છે જો $\Sequent !A$ સિક્વન્ટની નિષ્પત્તિ હોય (જુઓ \olref[fol][seq][ptn]{sec}). સ્વાભાવિક નિગમનમાં $!A$ પ્રમેય છે જો તેની કોઈ નિષ્પત્તિમાં બધી ધારણાઓ \gls{discharged} હોય (જુઓ \olref[fol][ntd][ptn]{sec}). જો $\Gamma\Proves !A$ તો $!A$ એ સિદ્ધાંત $\Gamma$નું પ્રમેય પણ કહેવાય છે.
+}
+
+\slcterm{consistent}{077}{સુસંગત}{
+  સિક્વન્ટ કલનમાં વાક્યોનો ગણ $\Gamma$ સુસંગત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Gamma_0\subseteq\Gamma$ હોય એવો $\Gamma_0\Sequent\quad$ સિક્વન્ટ નિષ્પન્ન કરી ન શકાય (જુઓ \olref[fol][seq][ptn]{sec}). સ્વાભાવિક નિગમનમાં $\Gamma$ સુસંગત છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Gamma\Proves/\lfalse$ (જુઓ \olref[fol][ntd][ptn]{sec}). $\Gamma$ સુસંગત ન હોય તો તે અસંગત છે.
+}
+
+\slcterm{inconsistent}{005}{અસંગત}{
+  જુઓ \gls{consistent}.
+}
+
+\slcterm{derivation}{037}{નિષ્પત્તિ}{
+  સિક્વન્ટ કલનમાં સિક્વન્ટોનું એવું વૃક્ષ જેમાં દરેક સિક્વન્ટ આરંભિક હોય અથવા તેની બરાબર ઉપરના સિક્વન્ટોથી અનુમાનનિયમ વડે મળે (જુઓ \olref[fol][seq][rul]{sec}). સ્વાભાવિક નિગમનમાં સૂત્રોનું એવું વૃક્ષ જેમાં દરેક સૂત્ર ધારણા હોય અથવા તેની બરાબર ઉપરનાં સૂત્રોથી અનુમાનનિયમ વડે મળે (જુઓ \olref[fol][ntd][rul]{sec}).
+}
+
+\slcterm{eigenvariable}{010}{આઇગનચલ}{
+  સિક્વન્ટ કલનમાં $\LeftR{\lexists}$ અથવા $\RightR{\lforall}$ અનુમાનના આધારવાક્યમાંનું વિશેષ અચળચિહ્ન જે તારણમાં આવી શકતું નથી (જુઓ \olref[fol][seq][rul]{sec}). સ્વાભાવિક નિગમનમાં $\Elim{\lexists}$ અથવા $\Intro{\lforall}$ અનુમાનના આધારવાક્યમાંનું વિશેષ અચળચિહ્ન જે તારણમાં કે કોઈ \gls{undischarged} ધારણામાં આવી શકતું નથી (જુઓ \olref[fol][ntd][rul]{sec}).
+}
+
+\slcterm{discharged}{036}{નિવૃત્ત}{
+  નિષ્પત્તિમાંની \gls{assumption} તેની નીચે વપરાયેલા અનુમાનનિયમથી નિવૃત્ત થઈ શકે છે. ત્યારે નિયમ અને ધારણાને એક જ સંજ્ઞા અપાય છે, જેમ કે $[!A]^2$. નિવૃત્ત ન કરેલી ધારણા અનિવૃત્ત કહેવાય છે (જુઓ \olref[fol][ntd][rul]{sec}).
+}
+
+\slcterm{undischarged}{002}{અનિવૃત્ત}{
+  જુઓ \gls{discharged}.
+}
+
+\slcterm{assumption}{031}{ધારણા}{
+  નિષ્પત્તિની ટોચે રહેલું સૂત્ર. તેને આરંભિક સૂત્ર પણ કહે છે. તે \gls{discharged} અથવા અનિવૃત્ત હોઈ શકે (જુઓ \olref[fol][ntd][rul]{sec}).
+}
+
+\slcterm{soundness}{055}{યથાર્થતા}{
+  નિષ્પત્તિ-પ્રણાલીનો ગુણધર્મ. જ્યારે પણ $\Gamma\Proves !A$ હોય ત્યારે $\Gamma\Entails !A$ હોય તો તે યથાર્થ છે (જુઓ \olref[fol][seq][sou]{sec} અને \olref[fol][ntd][sou]{sec}).
+}
+
+\slcterm{sequent}{076}{સિક્વન્ટ}{
+  $\Gamma\Sequent\Delta$ સ્વરૂપનો અભિવ્યંજક, જેમાં $\Gamma$ અને $\Delta$ વાક્યોના સાન્ત અનુક્રમો છે (જુઓ \olref[fol][seq][rul]{sec}).
+}
+
+\slcterm{sentence}{059}{વાક્ય}{
+  કોઈ \gls{free} ચલ વિનાનું સૂત્ર (જુઓ \olref[fol][syn][fvs]{sec}).
+}
+
+\slcterm{variable assignment}{025}{ચલ-નિયુક્તિ}{
+  દરેક ચલને $\Domain M$ના એક ઘટક સાથે સાંકળતું \gls{function} (જુઓ \olref[fol][syn][sat]{sec}).
+}
+
+\slcterm{$x$-variant}{060}{$x$-વિકલ્પ}{
+  બે ચલ-નિયુક્તિઓ $x$-વિકલ્પો છે, $s\sim_x s'$, જો તે વધુમાં વધુ $x$ને અપાતા મૂલ્યમાં જુદી પડે (જુઓ \olref[fol][syn][sat]{sec}).
+}
+
+\slcterm[\ensuremath{\Entails !A}]{valid}{053}{માન્ય}{
+  વાક્ય $!A$ માન્ય છે ત્યારે અને માત્ર ત્યારે જ જ્યારે દરેક \gls{structure} $\Struct M$ માટે $\Sat{M}{!A}$ (જુઓ \olref[fol][syn][sem]{sec}).
+}
+
+\slcterm[\ensuremath{\Gamma\Entails !A}]{entailment}{028}{તાર્કિક પરિણામ}{
+  વાક્યોના ગણ $\Gamma$નું તાર્કિક પરિણામ વાક્ય $!A$ છે ત્યારે અને માત્ર ત્યારે જ જ્યારે $\Sat{M}{\Gamma}$ ધરાવતી દરેક \gls{structure} $\Struct M$ માટે $\Sat{M}{!A}$ (જુઓ \olref[fol][syn][sem]{sec}).
+}
+
+\slcterm{satisfiable}{066}{સંતોષ્ય}{
+  વાક્યોનો ગણ $\Gamma$ સંતોષ્ય છે જો કોઈ \gls{structure} $\Struct M$ માટે $\Sat{M}{\Gamma}$ હોય. અન્યથા તે અસંતોષ્ય છે (જુઓ \olref[fol][syn][sem]{sec}).
+}
+
+\slcterm{cs}{012}{આવૃત}{
+  એવી \gls{structure} જેના પ્રદેશનો દરેક ઘટક કોઈ સંવૃત પદનું મૂલ્ય છે (જુઓ \olref[fol][syn][str]{sec}).
+}
+
+\slcterm{subformula}{014}{ઉપસૂત્ર}{
+  સૂત્રનો એવો ભાગ જે પોતે પણ સૂત્ર છે (જુઓ \olref[fol][syn][sbf]{sec}).
+}
+
+\slcterm{free for}{052}{માટે મુક્ત}{
+  પદ $t$ એ $!A$માં $x$ માટે મુક્ત છે જો $!A$માં $x$ની કોઈ \gls{free} ઉપસ્થિતિ એવા પરિમાણકના વ્યાપમાં ન હોય જે $t$માંના કોઈ ચલને બાંધે છે (જુઓ \olref[fol][syn][sub]{sec}).
+}
+
+\slcterm{church-turing thesis}{024}{ચર્ચ--ટ્યુરિંગ માન્યતા}{
+  અસરકારક પ્રક્રિયાથી સંગણી શકાય તે બધું ટ્યુરિંગ-સંગણનીય છે એમ કહે છે (જુઓ \olref[tur][mac][ctt]{sec}).
+}
+
+\slcterm{completeness}{043}{પૂર્ણતા}{
+  નિષ્પત્તિ-પ્રણાલીનો ગુણધર્મ. જ્યારે પણ $!A$ એ $\Gamma$નું તાર્કિક પરિણામ હોય ત્યારે $\Gamma\Proves !A$ સ્થાપિત કરતી નિષ્પત્તિ હોય તો પ્રણાલી પૂર્ણ છે. સમકક્ષ રીતે, વાક્યોનો દરેક \gls{consistent} ગણ \gls{satisfiable} હોય (જુઓ \olref[fol][com][int]{sec}).
+}
+
+\slcterm{formula}{078}{સૂત્ર}{
+  પ્રથમ-ક્રમની ભાષા $\Lang L$ના એવા અભિવ્યંજકો જે સંબંધો કે ગુણધર્મો વ્યક્ત કરે છે અથવા સાચા કે ખોટા હોય છે (જુઓ \olref[fol][syn][frm]{sec}).
+}
+
+\slcterm[\ensuremath{\Struct{M}}]{structure}{070}{સંરચના}{
+  પ્રથમ-ક્રમની ભાષાનું અર્થઘટન જેમાં એક \gls{sdomain} અને ભાષાનાં અચળચિહ્નો, વિધેયચિહ્નો તથા ફલનચિહ્નો માટે નિયુક્તિઓ હોય છે (જુઓ \olref[fol][syn][str]{sec}).
+}
+
+\slcterm[\ensuremath{\Domain{M}}]{sdomain}{048}{પ્રદેશ (સંરચનાનો)}{
+  અખાલી ગણ જેના ઘટકોમાંથી \gls{structure}માં નિયુક્તિઓ તથા ચલોનાં મૂલ્યો લેવાય છે (જુઓ \olref[fol][syn][str]{sec}).
+}
+
+\slcterm{halting problem}{001}{અટકવાની સમસ્યા}{
+  કોઈ પણ $e,n$ માટે ટ્યુરિંગ મશીન $M_e$ એ $n$ ઊભી લીટીઓનો નિવેશ આપતાં અટકે છે કે કેમ તે નક્કી કરવાની સમસ્યા (જુઓ \olref[tur][und][hal]{sec}).
+}
+
+\slcterm{bound}{051}{બદ્ધ}{
+  એ જ ચલ વાપરતા પરિમાણકના વ્યાપમાં આવતી ચલની ઉપસ્થિતિ (જુઓ \olref[fol][syn][fvs]{sec}).
+}
+
+\slcterm{free}{054}{મુક્ત}{
+  ચલની એવી ઉપસ્થિતિ જે \gls{bound} ન હોય (જુઓ \olref[fol][syn][fvs]{sec}).
+}
+
+\slcterm{compactness theorem}{072}{સઘનતા પ્રમેય}{
+  વાક્યોનો દરેક \gls{finitely satisfiable} ગણ સંતોષ્ય છે એમ કહે છે (જુઓ \olref[fol][com][com]{sec}).
+}
+
+\slcterm{ls}{058}{લેવેનહાઇમ--સ્કોલેમ પ્રમેય}{
+  વાક્યોના દરેક સંતોષ્ય ગણનો ગણનીય નિદર્શ છે એમ કહે છે (જુઓ \olref[fol][com][dls]{sec}).
+}
+
+\slcterm{Church-Turing Theorem}{023}{ચર્ચ--ટ્યુરિંગ પ્રમેય}{
+  પ્રથમ-ક્રમ તર્કનું આપેલું વાક્ય \gls{valid} છે કે કેમ તે નક્કી કરતું કોઈ ટ્યુરિંગ મશીન નથી એમ કહે છે (જુઓ \olref[tur][und][uns]{sec}).
+}
+
+\slcterm{decision problem}{035}{નિર્ણય સમસ્યા}{
+  પ્રથમ-ક્રમ તર્કનું આપેલું વાક્ય \gls{valid} છે કે કેમ તે નક્કી કરવાની સમસ્યા (જુઓ \gls{Church-Turing Theorem}).
+}
+
+\slcterm{completeness-theorem}{044}{પૂર્ણતાનું પ્રમેય}{
+  પ્રથમ-ક્રમ તર્ક પૂર્ણ છે એમ કહે છે. વાક્યોનો દરેક \gls{consistent} ગણ \gls{satisfiable} છે.
+}

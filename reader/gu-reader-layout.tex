@@ -1,5 +1,9 @@
 % Local full-reader repairs; the frozen upstream style stays unchanged.
 \usepackage{float}
+% Full-edition defaults for the optional textbook vocabulary and notation.
+\newcommand{\guEditionGloss}[1]{#1}
+\newcommand{\guUnaryEquality}{\fn{equality}}
+\newcommand{\guSourcePath}[1]{\texttt{#1}}
 \NewCommandCopy\guwrappedphoto\olphoto
 \newcommand*{\guunwrappedphoto}[3][\olphotowidth]{%
   \iftag{olphotos}{%

@@ -1,0 +1,18 @@
+\usepackage[no-math]{fontspec}
+\defaultfontfeatures{Renderer=HarfBuzz,Script=Gujarati}
+\setmainfont{NotoSansGujarati-Regular.ttf}[
+  Path=\olpath/fonts/,BoldFont=NotoSansGujarati-Bold.ttf,
+  ItalicFont=NotoSansGujarati-Regular.ttf,ItalicFeatures={FakeSlant=.15},
+  BoldItalicFont=NotoSansGujarati-Bold.ttf,BoldItalicFeatures={FakeSlant=.15}]
+\setsansfont{NotoSansGujarati-Regular.ttf}[
+  Path=\olpath/fonts/,BoldFont=NotoSansGujarati-Bold.ttf,
+  ItalicFont=NotoSansGujarati-Regular.ttf,ItalicFeatures={FakeSlant=.15},
+  BoldItalicFont=NotoSansGujarati-Bold.ttf,BoldItalicFeatures={FakeSlant=.15}]
+\setmonofont{NotoSansGujarati-Regular.ttf}[
+  Path=\olpath/fonts/,BoldFont=NotoSansGujarati-Bold.ttf]
+\newcommand*{\ollangid}{gu}
+\newcommand*{\ollanguage}{gujarati}
+\PassOptionsToPackage{provide=*}{babel}
+\NewDocumentCommand\slcterm{O{} m m m m}{%
+  \newglossaryentry{#2}{sort={#3},name={#4},plural={#4},
+    symbol={#1},description={#5}}}
