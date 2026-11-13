@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\olfileid{tur}{mac}{rep}
+\olfileid[gu]{tur}{mac}{rep}
 \olsection{ટ્યુરિંગ મશીનોનું નિરૂપણ}
 
 \begin{explain}
@@ -157,7 +157,8 @@ $\TMblank$ વાંચવા માટેની સૂચના ઉમેરી
 નિર્ણય આપતી સામાન્ય કલનવિધિ નથી; આ શરત ગદ્યમાં સ્પષ્ટ કરી છે.}
 
 \begin{ex}
-\[
+\begin{maxwidth}
+$\displaystyle
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
                     semithick]
   \tikzstyle{every state}=[fill=none,draw=black,text=black]
@@ -171,7 +172,8 @@ $\TMblank$ વાંચવા માટેની સૂચના ઉમેરી
   (B) edge [loop above] node {\TMtrans{\TMblank}{\TMblank}{\TMright}} (B)
       edge [bend left] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A);
 \end{tikzpicture}
-\]
+$
+\end{maxwidth}
 \end{ex}
 
 \begin{explain}

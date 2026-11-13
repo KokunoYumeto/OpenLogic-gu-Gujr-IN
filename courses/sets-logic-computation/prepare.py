@@ -113,24 +113,6 @@ def stage_sources():
         r"\begin{adjustbox}{max width=\dimexpr\linewidth-1pt\relax}",
     )
 
-    # Bound the two unbreakable objects reported by the screen proof.
-    for path, first, last, occurrence in (
-        ("first-order-logic/syntax-and-semantics/formation-sequences.tex",
-         r"\tuple{", "}", 1),
-        ("turing-machines/machines-computations/representing-tms.tex",
-         r"\begin{tikzpicture}", r"\end{tikzpicture}", 3),
-    ):
-        unit = locale / "content" / path
-        text = unit.read_text(encoding="utf-8")
-        opening = "\\[\n" + first
-        closing = "\n" + last + "\n\\]"
-        hits = [match.start() for match in re.finditer(re.escape(opening), text)]
-        start = hits[occurrence - 1]
-        stop = text.index(closing, start) + len(closing)
-        body = text[start + 3:stop - 2]
-        replacement = "\\begin{maxwidth}\n$\\displaystyle\n" + body + "$\n\\end{maxwidth}"
-        write(unit, text[:start] + replacement + text[stop:])
-
     book = locale / "courses" / "sets-logic-computation"
     book.mkdir(parents=True)
     for name in ("include", "illustrations"):
