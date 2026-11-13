@@ -1,0 +1,33 @@
+locale = "gu"
+language_tag = "gu-Gujr-IN"
+script = "Gujr"
+babel = "gujarati"
+engine = "lualatex"
+repository = "https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN"
+schema_version = 1
+products = ["olp-complete", "slc-screen-pdf"]
+
+[paths]
+content = "gu/content"
+source_content = "upstream/content"
+
+[conversion]
+source_manifest = "SOURCE_PROVENANCE.json"
+source_manifest_sha256 = "b08bd8949af7322c543e5b73df51ba2315cd487640b8e57cf3a0952615e4624e"
+attribution_policy = "preserve-recorded-else-unresolved"
+
+[pins.olp]
+repository = "https://github.com/OpenLogicProject/OpenLogic"
+commit = "1e960beff9ed7835bf3e3f1335e21af3439cd107"
+
+[pins.slc]
+repository = "https://github.com/rzach/sets-logic-computation"
+commit = "6178f32f61645f3b62ef621b4c5a88f8e67778ad"
+
+[pins.portraits]
+repository = "https://github.com/OpenLogicProject/portraits"
+commit = "1a92d54a0bf964d35b5300f45f1830749c462544"
+
+[pins.photos]
+repository = "https://github.com/OpenLogicProject/photos"
+commit = "81c1990df896568410b452fea68b81cbb6ce46fa"
