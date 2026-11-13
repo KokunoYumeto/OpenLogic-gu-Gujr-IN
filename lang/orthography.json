@@ -1,0 +1,27 @@
+{
+  "locale": "gu",
+  "rules": [
+    {
+      "id": "unicode-nfc",
+      "kind": "nfc",
+      "reason": "Use Unicode NFC for consistent TeX source encoding. The retained Gujarati canon passages match NFC and Unicode Standard Annex #15 section 1.2 defines the normalization form. This encoding rule carries no judgment about word choice or spelling.",
+      "evidence": [
+        {
+          "source": "https://gujarativishwakosh.org/ગણનીયતા/",
+          "sha256": "7b7e192aa9c99e07962f789ffd966d71ad9ff60ffdce705d7caa7d2533ec2508",
+          "locator": "GU-P046, retained UTF-8 extract line 42, bytes 4564–6197 (end exclusive)."
+        },
+        {
+          "source": "https://gujarativishwakosh.org/%E0%AA%97%E0%AA%A3%E0%AA%B8%E0%AA%BF%E0%AA%A6%E0%AB%8D%E0%AA%A7%E0%AA%BE%E0%AA%82%E0%AA%A4/",
+          "sha256": "e1d2fdb1e4355c5a5bab03b6ce8b6d5ff12aef7138bdb2f896f0b2ddf5ebd98e",
+          "locator": "GU-P049, retained UTF-8 extract line 46, bytes 6583–9817 (end exclusive)."
+        },
+        {
+          "source": "https://gujarativishwakosh.org/%E0%AA%97%E0%AA%A3%E0%AA%BF%E0%AA%A4/",
+          "sha256": "cdeccbaadf5274656f40f60a67ce450fc8a3b985daa95df23264bfbab0e4be67",
+          "locator": "GU-P050, retained UTF-8 extract line 80, bytes 39535–40685 (end exclusive)."
+        }
+      ]
+    }
+  ]
+}
