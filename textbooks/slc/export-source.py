@@ -23,6 +23,15 @@ def archive_source(tree, output):
     biblog = (book / "slc-screen.blg").read_text(encoding="utf-8", errors="replace")
     assert "open-logic.bib" in biblog and "natbib-oup.bst" in biblog, biblog
     consumed.update({tree / "bib/open-logic.bib", tree / "bib/natbib-oup.bst"})
+    # LuaHBTeX's HarfBuzz font loader records these font paths in the final
+    # engine log, but the Lua file access does not appear in MiKTeX's .fls.
+    texlog = (book / "slc-screen.log").read_text(encoding="utf-8", errors="replace")
+    font_paths = tuple(tree / "fonts" / name for name in
+                       ("NotoSansGujarati-Regular.ttf", "NotoSansGujarati-Bold.ttf"))
+    unwrapped_log = "".join(texlog.splitlines())
+    if any(font.name not in unwrapped_log for font in font_paths):
+        raise ValueError("Final LuaHBTeX log is missing a staged Gujarati font.")
+    consumed.update(font_paths)
     for path in ("LICENSE.md", "assets/photos/README.md", "assets/portraits/LICENSE.md", "fonts/OFL.txt"):
         consumed.add(tree / path)
     members = {("source/" + p.relative_to(tree).as_posix()): p.read_bytes() for p in consumed}
