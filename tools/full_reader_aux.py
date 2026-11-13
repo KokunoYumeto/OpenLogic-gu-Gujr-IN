@@ -15,6 +15,11 @@ def current_aux(root):
             continue
         if record.get('status') != 'three_lualatex_passes_succeeded_visual_QA_pending':
             continue
+        dependency = record.get('reader_layout_dependency')
+        if dependency:
+            layout = root/'reader/gu-reader-layout.tex'
+            if hashlib.sha256(layout.read_bytes()).hexdigest() != dependency['sha256']:
+                continue
         assert record.get('ended_at_utc'), path
         job = record['job_name']
         assert re.fullmatch(r'gu-[a-z0-9-]+', job), job
@@ -22,9 +27,6 @@ def current_aux(root):
         pdf = path.parent/(job+'.pdf')
         assert aux.is_file() and pdf.is_file(), path
         assert hashlib.sha256(pdf.read_bytes()).hexdigest() == record['pdf']['sha256'], path
-        dependency = record.get('reader_layout_dependency')
-        if dependency:
-            assert hashlib.sha256((root/'reader/gu-reader-layout.tex').read_bytes()).hexdigest() == dependency['sha256'], path
         candidates.append((record['ended_at_utc'], aux, path, record))
     if not candidates:
         raise RuntimeError('Build the current reader successfully before converting its EPUB references.')
