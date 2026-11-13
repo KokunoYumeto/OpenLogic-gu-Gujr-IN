@@ -3,7 +3,6 @@ import argparse
 from hashlib import sha256
 import json
 from pathlib import Path
-import subprocess
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 PROJECT = Path(__file__).resolve().parent
@@ -26,9 +25,6 @@ def archive_source(tree, output):
     consumed.update({tree / "bib/open-logic.bib", tree / "bib/natbib-oup.bst"})
     for path in ("LICENSE.md", "assets/photos/README.md", "assets/portraits/LICENSE.md", "fonts/OFL.txt"):
         consumed.add(tree / path)
-    for path in (PROJECT / "assets" / "tex").iterdir():
-        if path.name != "nowidow.sty":
-            assert path.is_file()
     members = {("source/" + p.relative_to(tree).as_posix()): p.read_bytes() for p in consumed}
     companion = ["LICENSE-SLC.md", "BUILD.md", "build.ps1", "WindowsTeXJob.cs",
                  "check-build.py", "MANIFEST.json", "locale/scope.txt", "slc-screen-gu.tex"]

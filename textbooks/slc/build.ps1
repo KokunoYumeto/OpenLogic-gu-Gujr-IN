@@ -59,15 +59,9 @@ function Invoke-SlcTool([string]$Name, [string[]]$Arguments) {
             if ($proc) { $proc.Dispose() }
         }
     } else {
-        Push-Location -LiteralPath $book
-        try {
-            & $exe @Arguments *> $log
-            $code = $LASTEXITCODE
-        } finally {
-            Pop-Location
-        }
+        throw 'This build requires the Windows shared TeX slot and capped process job.'
     }
-    $receipt.commands += @{tool = $Name; log = (Split-Path -Leaf $log); exit_code = $code}
+    $receipt.commands += @{tool = $Name; log = (Split-Path -Leaf $log); exit_code = $code; job_memory_limit_bytes = 5000000000}
     if ($code -ne 0 -or $null -eq $code) { throw "$Name failed. See $log." }
 }
 
@@ -90,8 +84,7 @@ try {
     $env:BSTINPUTS = (Join-Path $inputTree.olp 'bib') + [IO.Path]::PathSeparator
     $env:SOURCE_DATE_EPOCH = '1786722663'
     $env:FORCE_SOURCE_DATE = '1'
-    $version = & lualatex --version | Select-Object -First 1
-    $platformOptions = if ($version -match 'MiKTeX') { @('--disable-installer') } else { @() }
+    $platformOptions = if (Get-Command miktex -ErrorAction SilentlyContinue) { @('--disable-installer') } else { @() }
     $texArgs = @($platformOptions) + @('-no-shell-escape','-interaction=nonstopmode',
         '-halt-on-error','-file-line-error','-recorder','-jobname=slc-screen',$driver)
     $bibArgs = @($platformOptions) + @('slc-screen')
@@ -127,7 +120,7 @@ try {
     $receipt.remaining_log_checks = $warnings
     if ($warnings.Count -gt 0) { throw "Unsettled build. See $book/slc-screen.log." }
     if (-not (Test-Path -LiteralPath $pdf -PathType Leaf)) { throw 'The screen PDF is absent.' }
-    $inventory = & python (Join-Path $PSScriptRoot 'check-build.py') $book $Cumulative.IsPresent.ToString()
+    $inventory = & python (Join-Path $PSScriptRoot 'check-build.py') $book ([string]$Cumulative.IsPresent)
     if ($LASTEXITCODE -ne 0) { throw 'Textbook content inventory did not pass.' }
     $receipt.inventory = $inventory | ConvertFrom-Json
     Copy-Item -LiteralPath $pdf -Destination $out
