@@ -1,6 +1,5 @@
 % Local full-reader repairs; the frozen upstream style stays unchanged.
 \usepackage{float}
-\geometry{left=21mm,right=21mm}
 \NewCommandCopy\guwrappedphoto\olphoto
 \newcommand*{\guunwrappedphoto}[3][\olphotowidth]{%
   \iftag{olphotos}{%
@@ -32,3 +31,29 @@
     \guunwrappedphoto[#1]{#2}{#3}}{%
     \guwrappedphoto[#1]{#2}{#3}}%
 }
+
+% Use the nominal sign column when possible; longer symbolic signs keep their width.
+\newsavebox{\gusignbox}
+\RenewDocumentCommand{\sFmla}{m m o}{%
+  \ensuremath{%
+    \IfValueT{#3}{#3\,}%
+    \sbox{\gusignbox}{$#1$}%
+    \ifdim\wd\gusignbox>.8em\usebox{\gusignbox}%
+    \else\makebox[.8em][l]{\usebox{\gusignbox}}\fi
+    #2}}
+% Let prose break at available spaces without changing the source or math.
+\AtBeginDocument{\emergencystretch=5em}
+\pretolerance=300
+\tolerance=2200
+% Tighten source tables modestly while retaining every row, column and cell.
+\setlength{\tabcolsep}{5pt}
+\geometry{left=19mm,right=19mm}
+% The complete table of contents uses three-component section numbers.
+\setlength{\cftsecnumwidth}{3.7em}
+% Three-component subsection numbers also appear in the contents.
+\setlength{\cftsubsecnumwidth}{4.3em}
+% Allow the modal correspondence table's fixed-width cells to fit their labels.
+\AtBeginEnvironment{table}{%
+  \ifboolexpr{test {\ifdefstring{\theolpart}{nml}} and
+               test {\ifdefstring{\theolchapter}{frd}} and
+               test {\ifdefstring{\theolsection}{acc}}}{\small}{}}

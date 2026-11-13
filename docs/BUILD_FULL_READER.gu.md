@@ -5,10 +5,10 @@
 PDF માટે PowerShell 7 અને MiKTeX LuaLaTeX તથા સામાન્ય TeX પૅકેજો વાપરો:
 
 ```powershell
-& .\tools\build_full_reader_guarded.ps1 -BuildSubdir full-reader-sync-1e960bef -JobName gu-full-reader-sync-1e960bef
+& .\tools\build_full_reader_guarded.ps1 -BuildSubdir full-reader-final-1e960bef -JobName gu-full-reader-sync-1e960bef
 ```
 
-PDF `build/full-reader-sync-1e960bef/gu-full-reader-sync-1e960bef.pdf`માં મળે છે. ગ્રંથસૂચિ સીધી TeXમાં છે; BibTeX જરૂરી નથી. મૂળ `.bib` અને `.bst` સાથી સ્રોતમાં છે. સ્ક્રિપ્ટ shell escape અને પૅકેજોનું સ્વયંસ્થાપન બંધ રાખે છે. અન્ય TeX, ફોન્ટ કે converter સંસ્કરણથી બાઇટ્સ બદલાઈ શકે છે.
+PDF `build/full-reader-final-1e960bef/gu-full-reader-sync-1e960bef.pdf`માં મળે છે. ગ્રંથસૂચિ સીધી TeXમાં છે; BibTeX જરૂરી નથી. મૂળ `.bib` અને `.bst` સાથી સ્રોતમાં છે. સ્ક્રિપ્ટ shell escape અને પૅકેજોનું સ્વયંસ્થાપન બંધ રાખે છે. અન્ય TeX, ફોન્ટ કે converter સંસ્કરણથી બાઇટ્સ બદલાઈ શકે છે.
 
 EPUB માટે Python 3, Pandoc અને Python પૅકેજો `beautifulsoup4`, `lxml`, `PyMuPDF`, `fonttools` જરૂરી છે. પહેલાં PDF બિલ્ડ કરો, જેથી સૂત્ર અને આકૃતિના સંદર્ભો તેની વર્તમાન `.aux` ફાઇલ પરથી આવે. પછી:
 

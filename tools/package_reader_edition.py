@@ -13,7 +13,7 @@ import shutil
 ROOT = Path(__file__).resolve().parents[1]
 VERSION = 'full-edition-v1.2.0'
 OUT = ROOT/'releases'/VERSION
-BUILD = ROOT/'build/full-reader-sync-1e960bef'
+BUILD = ROOT/'build/full-reader-final-1e960bef'
 JOB = 'gu-full-reader-sync-1e960bef'
 NAMES = ['01-OpenLogic-gu-Gujr-IN-Full.pdf',
          '02-OpenLogic-gu-Gujr-IN-Full-Text.tex',
@@ -86,12 +86,14 @@ def main():
     assert body.read_bytes() in reader.read_bytes(), 'The cumulative reader must contain the exact resolved body.'
     build=load(BUILD/'FULL_READER_BUILD.json')
     assert build['input']['sha256']==digest(reader)
+    assert build['reader_layout_dependency']['sha256']==digest(ROOT/'reader/gu-reader-layout.tex')
     assert build['status']=='three_lualatex_passes_succeeded_visual_QA_pending'
     assert not build['missing_characters'] and not build['undefined_references'] and not build['tex_errors']
     pdf=BUILD/(JOB+'.pdf');assert digest(pdf)==build['pdf']['sha256']
     epub_build=load(ROOT/'build/FULL_EPUB_BUILD.json')
     assert epub_build['source_reader_sha256']==digest(reader)
     epub=ROOT/epub_build['epub_path'];assert digest(epub)==epub_build['epub_sha256']
+    assert epub_build['reference_auxiliary']['pdf_sha256']==digest(pdf)
     assert epub_build['unit_anchors']==722 and epub_build['mathml_formulas'] > 0
     shutil.copyfile(pdf,OUT/NAMES[0]);shutil.copyfile(reader,OUT/NAMES[1]);shutil.copyfile(epub,OUT/NAMES[5])
     index=(ROOT/'reader/full-source-index.html').read_text(encoding='utf-8')
