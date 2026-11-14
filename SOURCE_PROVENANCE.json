@@ -537,11 +537,11 @@
       "id": "OLP-0033",
       "path": "content/sets-functions-relations/size-of-sets/non-enumerability.tex",
       "english_sha256": "4471def29c2da48dcb01635adf692cd0bc89cb6885636db149f4b2d86ff4e9fa",
-      "gujarati_sha256": "052f5dc441d1055d5c69bfaaac38ce1b3f6c07d12ffc4045fa61381e8752b459",
+      "gujarati_sha256": "badd887edc4d3ac638c6cf2254acefc97a5a7d7c2ba53644664b28a9e75f8700",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -617,11 +617,11 @@
       "id": "OLP-0037",
       "path": "content/sets-functions-relations/size-of-sets/schroder-bernstein.tex",
       "english_sha256": "7b99b3e032e24e425383734ce80ad9a5cc37d018c09205e02f37b927d50bb56a",
-      "gujarati_sha256": "64cacb52b78f8a98111acaef418f1ab5a7f16707ebc4622c32d3314d9e40d144",
+      "gujarati_sha256": "f7896dde524adb5291dfb9a5dc88cf6901a32ae14e3094064fd72dc680593d68",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -787,7 +787,21 @@
       "id": "OLP-0063",
       "path": "content/first-order-logic/proof-systems/proof-systems.tex",
       "english_sha256": "09977f6410bc57fcedf4428c2212ccf67b2bf0bf574413c4e2fdcf4de6cccab7",
-      "gujarati_sha256": "9bedb80b99a48fe0030d908ede634330cb59c94d41c8fb1cdc9997505f7513f0"
+      "gujarati_sha256": "c86626912d571fe01b0bb520f6db135c41039af5690038ba6671011328555b44",
+      "by": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "inherited_translation_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      }
     },
     {
       "id": "OLP-0064",
@@ -853,11 +867,11 @@
       "id": "OLP-0067",
       "path": "content/first-order-logic/proof-systems/tableaux.tex",
       "english_sha256": "8c9db50bcbc7a4aa757b8d57796b2e51df04b1cabb61f46756a79f72a1780b8f",
-      "gujarati_sha256": "143a04629489dd99418f1af74164dee1f194b3bd0a7d8b3593d42005d0693f92",
+      "gujarati_sha256": "1dcc82368901e6cf26aea8f7010966a486ad08ec2a3ffa4294107d322f23a82e",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -893,7 +907,21 @@
       "id": "OLP-0069",
       "path": "content/first-order-logic/sequent-calculus/sequent-calculus.tex",
       "english_sha256": "f7e79d7b3f181c61d3defb24c630db20ceaf12a3ec237c9b0a2ab1f7855494fb",
-      "gujarati_sha256": "68f88a1b99a6e676395eef56d75b33283585ca25a6ddd30995627eec80e9a383"
+      "gujarati_sha256": "877e50f7d4b6b9c228744d5e7597686e54ad02d27e78daaa0b1acbbe9e6db862",
+      "by": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "inherited_translation_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      }
     },
     {
       "id": "OLP-0070",
@@ -1179,7 +1207,21 @@
       "id": "OLP-0084",
       "path": "content/first-order-logic/natural-deduction/natural-deduction.tex",
       "english_sha256": "c53bed3aa593285a104c9e4c1c40a08efadb3b58094119043baa7a27b8a652e7",
-      "gujarati_sha256": "e17886e24581f37ee991ca8826111a08b158e3ac607af924c26edb58aa2e32ed"
+      "gujarati_sha256": "dd42b897429c7101d81af0dff9b89b77040ce8339212f5ce47635ee6ad7cad7c",
+      "by": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "inherited_translation_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      }
     },
     {
       "id": "OLP-0085",
@@ -1285,11 +1327,11 @@
       "id": "OLP-0090",
       "path": "content/first-order-logic/natural-deduction/proving-things-quant.tex",
       "english_sha256": "962c30713b222744c165ce87f7cb8ab11d18d0e805d8d386900bfe8e8104f63f",
-      "gujarati_sha256": "c878605918193c1f78b243e14276f3ad8a65500946e4032cb469fa5ac696d08b",
+      "gujarati_sha256": "5cb7a534075bf2208cd13b2346756fc4cbc2892b725d788b97eb871459da8102",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1385,11 +1427,11 @@
       "id": "OLP-0095",
       "path": "content/first-order-logic/natural-deduction/soundness.tex",
       "english_sha256": "8b90318e1a2ed38568fb61cd5529d496cdfd17f322fd9c731a194e2d08e0a4b9",
-      "gujarati_sha256": "e33735cbe35b3cce6fc779b5efbfd5f4bfa591a5c9a7c39aec63168fb650e91a",
+      "gujarati_sha256": "49356d44fa959d91a35066b3e223702dc59dca6b551c29c542483d0f35b22c05",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1619,11 +1661,11 @@
       "id": "OLP-0127",
       "path": "content/first-order-logic/completeness/introduction.tex",
       "english_sha256": "e263d8a466c6fa7457f247217e75e7d571fe5af13faf97e24472e2273a089498",
-      "gujarati_sha256": "4b1f145e3302e632ce76142c5bc857052cd5bfa45732ef3a133d533697421338",
+      "gujarati_sha256": "927963f958b222b2458c230df13dbd803c543a5b4302216458a3690499844d84",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1639,11 +1681,11 @@
       "id": "OLP-0128",
       "path": "content/first-order-logic/completeness/outline.tex",
       "english_sha256": "b3cbb5543255b168edbed2239981fa772d3a954bd5ce3dbf5bb8073e9b0525b1",
-      "gujarati_sha256": "19301136456ac14d5ed12f6de75b97f6a38dfd5cc3bc2c5a2b1edd4201c10da4",
+      "gujarati_sha256": "ee0de9601af124db002ba4926b9a133418bae9af8a62c9113d2879af84ca7a04",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1679,11 +1721,11 @@
       "id": "OLP-0130",
       "path": "content/first-order-logic/completeness/henkin-expansions.tex",
       "english_sha256": "353b1ea300b6d916be92a5100dfa2e2f4cf9ad9f44e9506c96f028acea3b1ec8",
-      "gujarati_sha256": "d81868f31d41311af3cd8351544c49a313e660aaa264a3f8a2e922273bc9d1d8",
+      "gujarati_sha256": "c14e49ff5020e20a509a8dbb67183a9c00b88521b163a79e5a5558806b5cc13d",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1719,11 +1761,11 @@
       "id": "OLP-0132",
       "path": "content/first-order-logic/completeness/construction-of-model.tex",
       "english_sha256": "4eefa87745fd3f79045f8f49b82dcd2c0a9c3268148150863870c82401c60702",
-      "gujarati_sha256": "4fd2deab5450675963a2df9793ea54c12c57bd19b3b9c3aeaebcf2460f0ca03a",
+      "gujarati_sha256": "d265151afaad0959370ff4201956494adee6a69d1a53ffdf7950622c1562a2d7",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1739,11 +1781,11 @@
       "id": "OLP-0133",
       "path": "content/first-order-logic/completeness/identity.tex",
       "english_sha256": "bc3391e4db38b0552ee8429b14f32124cdb7ee71e766ce17a5eaa2422126aa71",
-      "gujarati_sha256": "b325d4ba4ee80ca0155153ecb0467fbd66c48d0b2c8d0d2ce19d5393d42bc2f7",
+      "gujarati_sha256": "3f935b6f0f10590888b354bae8cf15db236bf6a89d9ab18c1924c6cb33d731d0",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1799,11 +1841,11 @@
       "id": "OLP-0136",
       "path": "content/first-order-logic/completeness/compactness-direct.tex",
       "english_sha256": "7334d3683b1ca6356dea7526b1a53448c6d768353e720c31d766a07c67017122",
-      "gujarati_sha256": "047ebe8b26667625e5d610c4fc28e9536ddbab8420fe1c3576b2d9c1f360927a",
+      "gujarati_sha256": "c1b2088ee8714771b3a8258667a0e421791a9d2b3be80e3734b1820e37b2b74e",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1839,7 +1881,21 @@
       "id": "OLP-0138",
       "path": "content/first-order-logic/first-order-logic.tex",
       "english_sha256": "d3db70ccef0969cf026f4f67149b0cb6cde3a398935b6582f01e056b1904a41f",
-      "gujarati_sha256": "adf1e9379b114875102c9873d146c943be02badd631edb451ec7c22fea11df6b"
+      "gujarati_sha256": "2d76ba19b0e9362fafcdbc335708b29c140bcc47daa8706fca8d0abadd48acb9",
+      "by": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "inherited_translation_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      }
     },
     {
       "id": "OLP-0139",
@@ -2057,11 +2113,11 @@
       "id": "OLP-0151",
       "path": "content/first-order-logic/syntax-and-semantics/first-order-languages.tex",
       "english_sha256": "12389cc260a1209a3b4db95aa795df350026c94576bb0e62653229438ada136d",
-      "gujarati_sha256": "5e27fc2d7bfc24ce98adf4474ee520a615cbb25e0d0ae55d03eb7a54a778ca50",
+      "gujarati_sha256": "aa59854980b388db63a939098d2e740da51b97346ebb3ed0b79ce3f0d63ec8b5",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2117,11 +2173,11 @@
       "id": "OLP-0154",
       "path": "content/first-order-logic/syntax-and-semantics/main-operator.tex",
       "english_sha256": "788d271215826c823cfcc63c0b54ab7ef65a42a50cde27b27542f2072de2d786",
-      "gujarati_sha256": "f215c844cea06f9f1611cc20f5cef778d22fec8a8955dcdcd79d308afd32eae2",
+      "gujarati_sha256": "4a8b17eb74acf1396f418457184bb32d2119a66630ca773b425259c18a6607fa",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2243,11 +2299,11 @@
       "id": "OLP-0161",
       "path": "content/first-order-logic/syntax-and-semantics/structures.tex",
       "english_sha256": "7e144a9715ae1bfff09927c72b15f902f831042a7808541d595820981b722ebf",
-      "gujarati_sha256": "04ed21935610d265cca5cf6b29571e3446b5766762652dd94609db06c1da6bb5",
+      "gujarati_sha256": "b11a6a2af466691df7a76fc5c554339e448dbefca3522ae95bcc1dae7bc4a9a0",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2283,11 +2339,11 @@
       "id": "OLP-0163",
       "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
       "english_sha256": "1345318ddf4f4df715f3cb3403b5a457eaf5d2941b0c745593d4a0001ade7ace",
-      "gujarati_sha256": "fbb6d599927a0460badbf9fbf5224dbf4e26e7a91fd853e9ba55a38253ff823b",
+      "gujarati_sha256": "5cc1e9541163ea6d4bfee9a7bf479538ba479e37d84f00edc08c590644c1488c",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2303,11 +2359,11 @@
       "id": "OLP-0164",
       "path": "content/first-order-logic/syntax-and-semantics/assignments.tex",
       "english_sha256": "761e28eb126777a36e0be833eff8e34c09452a07991be2427ded51d765d919e1",
-      "gujarati_sha256": "a4a5764d87ab3fee85dc98ab84d63cfe89a9cb1f8c03b7895968061409f15b8a",
+      "gujarati_sha256": "5620d509e8d47b95050ba64d28010d720eb1702141887f6de78ac5769b643bf4",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2489,7 +2545,21 @@
       "id": "OLP-0174",
       "path": "content/first-order-logic/beyond/beyond.tex",
       "english_sha256": "59901c1d2af5fb520f86537ed3bfe163adc9ce43cad347b1ce2808f3c79f9d15",
-      "gujarati_sha256": "691481c96c91d853350e8f7af3141790d9108f317d571cf4badd54cac868b074"
+      "gujarati_sha256": "233646d76357fa8d33e54ffb1de09f7201435e3ba946efeef951b1657ea95d8c",
+      "by": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "inherited_translation_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      }
     },
     {
       "id": "OLP-0175",
@@ -2555,11 +2625,11 @@
       "id": "OLP-0178",
       "path": "content/first-order-logic/beyond/higher-order-logic.tex",
       "english_sha256": "38ced5d3bad860479a37abcc7745229561d26bbfdbe77a5b2a1c6dece2a455b1",
-      "gujarati_sha256": "adcb5a88db15049e0aa5f887ef67d280fc0e56e9777eb86fd44a097a733a1e29",
+      "gujarati_sha256": "4b3351419a5d9ade02d7b8d14063126fa39072ed5853edae154305fdefc857ae",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2595,11 +2665,11 @@
       "id": "OLP-0180",
       "path": "content/first-order-logic/beyond/modal-logics.tex",
       "english_sha256": "8dff5692c79c06aa452bc0e20871109f3334a9232bd18997062196e872539881",
-      "gujarati_sha256": "71a6a9f29a48030f9b96d253f33ef4bde7c3f5b2828165a09f314fa8d59bd712",
+      "gujarati_sha256": "9af1f497532260bb0dfc41d1162cc53aa8ca111db45e4a77b42cdc4c51db11bb",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -5447,11 +5517,11 @@
       "id": "OLP-0604",
       "path": "content/methods/proofs/starting-proofs.tex",
       "english_sha256": "84908cb7ef78b1ec62e2ccc41376d5bc039c6e44e1855c386d7b112c69d5ce64",
-      "gujarati_sha256": "595bd6556009b71b5abffccd2ced832004a09ca53004c76fdb240f6a9999999b",
+      "gujarati_sha256": "e87ab435eaeef4763ac54c2578936dd507ee9e5e683f0798825a780d433c6eee",
       "by": {
         "model": "gpt-6.1-sol",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -6479,7 +6549,21 @@
       "id": "OLP-0720",
       "path": "content/sets-functions-relations/sets-functions-relations.tex",
       "english_sha256": "8a374d68ba657b45cce83c420e6d6863cdf452d54bbb6d7c10f068f669bbc3cb",
-      "gujarati_sha256": "d42b8a698dd8d22598cc0a16cde0c1d6d0b166807a96aa6cc59da8d50266b6c3"
+      "gujarati_sha256": "4d952da739b1ce5064d725f760b974cc29827b5bad175cf6b4231d9c52756005",
+      "by": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "inherited_translation_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      }
     },
     {
       "id": "OLP-0721",
@@ -6491,7 +6575,21 @@
       "id": "OLP-0722",
       "path": "content/sets-functions-relations/size-of-sets/size-of-sets.tex",
       "english_sha256": "1b755d63c0edd2bf25f5f07187bf39da92895ff846a16a59d579227124ef116b",
-      "gujarati_sha256": "3208eb6039feb096e8fe75501af6aef13f6b939b602e34dd0a86e973c68b10e6"
+      "gujarati_sha256": "3416b330d11dc93111e88ab82112100d61098f2153130658b47e8b6a17934ed9",
+      "by": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "inherited_translation_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      }
     }
   ]
 }
