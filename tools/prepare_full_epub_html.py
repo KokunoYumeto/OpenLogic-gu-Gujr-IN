@@ -854,6 +854,10 @@ def math_preprocess(text: str, labels: dict[str, str]) -> str:
 
 
 def structural_preprocess(text: str) -> str:
+    text = replace_command(text, "guEditionGloss", 1, lambda gloss: gloss)
+    text = replace_command(text, "guSourcePath", 1,
+                           lambda path: r"\texttt{" + path + "}")
+    text = re.sub(r"\\guUnaryEquality\b", lambda _: r"\fn{equality}", text)
     text = text.replace(
         r"\DeclareRobustCommand{\VDash}{\mathrel{||}\joinrel\Relbar}", ""
     ).replace(r"\VDash", r"\Vdash")

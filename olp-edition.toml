@@ -10,10 +10,11 @@ products = ["olp-complete", "slc-screen-pdf"]
 [paths]
 content = "gu/content"
 source_content = "upstream/content"
+courses = "courses"
 
 [conversion]
 source_manifest = "SOURCE_PROVENANCE.json"
-source_manifest_sha256 = "b08bd8949af7322c543e5b73df51ba2315cd487640b8e57cf3a0952615e4624e"
+source_manifest_sha256 = "b958518cdeacf8f93cd0bba8b5fa2d15e834c7c4514609660ca6f52301e720f5"
 attribution_policy = "preserve-recorded-else-unresolved"
 
 [pins.olp]

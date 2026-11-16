@@ -1,0 +1,24 @@
+\newcommand*{\olpBookSummary}{સારાંશ}
+\newcommand*{\olpBookFigure}{આકૃતિ}
+\newcommand*{\olpBookBiographies}{તર્કશાસ્ત્રીઓનાં જીવનચરિત્રો}
+\newcommand*{\olpBookGlossary}{પરિભાષાકોશ}
+\newcommand*{\olpCoverPortraitWidth}{0.26}
+\newcommand*{\olpCoverPortraitSpacing}{0.29}
+\renewcommand{\printglossaries}{%
+  \printglossary[title=\olpBookGlossary,toctitle=\olpBookGlossary]}
+\tikzset{initial text=પ્રારંભ}
+\errorcontextlines=20
+\renewcommand{\gitissue}[1]{\href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{મુદ્દો \##1}}
+\RenewDocumentCommand{\olasset}{O{\olphotowidth} m}{%
+  \begin{center}\resizebox{#1}{!}{%
+    \IfFileExists{#2}{\input{#2}}{\input{\olpath/#2}}}%
+  \end{center}}
+\hypersetup{unicode=true}
+\usepackage{truncate}
+\AtBeginDocument{%
+  \makeoddhead{OLPpage}{\slcchaptermark}{}{\slcpagefolio}%
+  \makeevenhead{OLPpage}{\slcchaptermark}{}{\slcpagefolio}}
+\newcommand*{\slcchaptermark}{%
+  \small\sffamily\color{OLPdkcolor}\truncate{.85\textwidth}{\leftmark}}
+\newcommand*{\slcpagefolio}{\sffamily\bfseries\color{OLPdkcolor}\thepage}
+\emergencystretch=2em
