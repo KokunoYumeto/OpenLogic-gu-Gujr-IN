@@ -60,11 +60,6 @@
 !!{main operator} છે; જ્યારે $\lnot$, $\lor$ અને $\lif$નું બીજું
 આવર્તન બીજા સંયોજકના વ્યાપમાં છે, તેથી તેમને પછી સંભાળીશું. એટલે આપણે
 \Intro{\lif} નિયમથી શરૂ કરીએ છીએ. તેનો યોગ્ય ઉપયોગ આવો હોવો જોઈએ:
-\sourcecorrection{OLND-002}{સ્થિર અંગ્રેજી મૂળના
-\texttt{first-order-logic/natural-deduction/proving-things.tex}:67માં
-આ સ્વાભાવિક-નિગમન નિષ્પત્તિના અંતિમ વાક્યને ભૂલથી
-``અંતિમ સિક્વન્ટમાંનું વાક્ય'' કહે છે;
-અહીં આશય મુજબ તેને ફલિતવાક્યમાંનું વાક્ય કહ્યું છે.}
 \begin{prooftree}
 \AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
 \DeduceC{$!A \lif !B$}
@@ -113,10 +108,6 @@ $\lnot !A \lor !B$ના બે વિયોજિત ઘટકોમાંથ�
 અને છેલ્લી જમણી શાખામાં $!A$ અને $!B$માંથી, $!B$ની
 !!{derivation}s જોઈએ. પહેલા
 પહેલો ભાગ લઈએ. $\lnot !A$ અને $!A$ એ \Elim{\lnot}નાં બે આધારવાક્યો છે:
-\sourcecorrection{OLREA-237}{સ્થિર અંગ્રેજી મૂળના
-\texttt{first-order-logic/natural-deduction/proving-things.tex}:116--118માં
-$!A$ અને $!B$ ધરાવતી શાખાને ``ડાબી'' કહે છે; દર્શાવેલા વૃક્ષમાં તે
-છેલ્લી જમણી શાખા છે, અને અહીં એ દિશા સુધારી છે.}
 \begin{prooftree}
 \AxiomC{$\Discharge{\lnot !A}{2}$}
 \AxiomC{$\Discharge{!A}{3}$}
@@ -144,11 +135,6 @@ $!A$ અને $!B$ ધરાવતી શાખાને ``ડાબી'' ક�
 \DischargeRule{\Intro{\lif}}{1}
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
-\sourcecorrection{OLND-003}{સ્થિર અંગ્રેજી મૂળના
-\texttt{first-order-logic/natural-deduction/proving-things.tex}:133માં
-આ નિષ્પત્તિમાં વ્યાઘાત આપતા દ્વિ-આધારી પગલાને ભૂલથી
-$\Intro{\lfalse}$ કહે છે; ઉપરના
-વર્ણન અને નિયમ મુજબ અહીં $\Elim{\lnot}$ મૂક્યું છે.}
 
 હવે સૌથી જમણી શાખા જોઈએ. અહીં યાદ રાખવું જરૂરી છે કે !!{derivation}ની
 વ્યાખ્યા ધારણાઓ \emph{નિવૃત્ત કરવાની છૂટ આપે છે}, પણ તેમ કરવું
