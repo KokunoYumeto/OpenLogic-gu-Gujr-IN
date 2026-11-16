@@ -2,9 +2,9 @@
 
 અધિતર્કનો મુક્ત પરિચય. ગુજરાતી આવૃત્તિમાં ગણો, સંબંધો અને ફલનો, પ્રથમ-ક્રમ તર્ક, સ્વાભાવિક નિગમન, સિક્વન્ટ કલન અને ટ્યુરિંગ મશીનોનો અભ્યાસ છે. તેમાં પ્રસ્તાવના, બાર પ્રકરણસાર, પરિશિષ્ટો અને પરિભાષાકોશ છે.
 
-[ગુજરાતી પુસ્તક વાંચો (પીડીએફ)](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/blob/dcf9b9eca8a24759bea53ef17bac00239592a64a/textbooks/slc/slc-screen-gu.pdf)
+[પુસ્તક વાંચો (PDF)](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu.pdf) · [સંપૂર્ણ સંપાદનીય LaTeX](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu.tex) · [સ્રોત અને સંકલન માટેની ફાઇલો](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu-source.zip) · [EPUB ડાઉનલોડ કરો](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu.epub) · [ઑફલાઇન HTML](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu-html.zip)
 
-[સંપૂર્ણ સંપાદનીય LaTeX](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/blob/dcf9b9eca8a24759bea53ef17bac00239592a64a/textbooks/slc/slc-screen-gu.tex) · [સ્રોત ZIP](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/blob/dcf9b9eca8a24759bea53ef17bac00239592a64a/textbooks/slc/slc-source-gu.zip) · [સરવાળા](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/blob/dcf9b9eca8a24759bea53ef17bac00239592a64a/textbooks/slc/SHA256SUMS.txt)
+મૂળ પુસ્તક Richard Zach અને Open Logic Projectના લેખકોના કાર્ય પર આધારિત છે. “પ્રથમ-ક્રમ તર્કશાસ્ત્રથી આગળ” પ્રકરણ Jeremy Avigadની તર્કશાસ્ત્રની નોંધો પરથી રચાયું છે. ગુજરાતી અનુવાદ OpenAI Codexનાં GPT-5.6 Sol, GPT-6 Sol અને GPT-6.1 Sol વડે તથા પુસ્તક-વિશિષ્ટ સામગ્રીનો અનુવાદ GPT-6.1 Sol વડે થયો છે. પાઠસંપાદન, ગાણિતિક સંકેતોની સુધારણા, આકૃતિઓનાં ગુજરાતી વર્ણનો અને સૂત્રોનાં વાંચનો GPT-6 Astra વડે તૈયાર થયાં છે. આ બધાં મોડેલમાં તર્કપ્રયાસનું સ્તર Ultra હતું.
 
 ## શ્રેય અને પરવાના
 
