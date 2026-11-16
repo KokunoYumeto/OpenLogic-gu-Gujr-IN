@@ -787,11 +787,11 @@
       "id": "OLP-0063",
       "path": "content/first-order-logic/proof-systems/proof-systems.tex",
       "english_sha256": "09977f6410bc57fcedf4428c2212ccf67b2bf0bf574413c4e2fdcf4de6cccab7",
-      "gujarati_sha256": "c86626912d571fe01b0bb520f6db135c41039af5690038ba6671011328555b44",
+      "gujarati_sha256": "9bedb80b99a48fe0030d908ede634330cb59c94d41c8fb1cdc9997505f7513f0",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-14",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -801,6 +801,19 @@
         "date": null,
         "method": "inherited",
         "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "before_author_note_restoration": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "editorial_source": {
+        "pilot_translation_sha256": "9bedb80b99a48fe0030d908ede634330cb59c94d41c8fb1cdc9997505f7513f0",
+        "source_note_sha256": "c299d2f96e65fc4f9e69a377fb7ece72f2a4e40b0ef2ff0f0021fcbbc564dbcd",
+        "reused_translation_sha256": "d779af3d7d3e2f3ea0bbc11041d9fc71b40f9e862c0f97b888085facf740cc03",
+        "scope": "editorial"
       }
     },
     {
@@ -907,11 +920,11 @@
       "id": "OLP-0069",
       "path": "content/first-order-logic/sequent-calculus/sequent-calculus.tex",
       "english_sha256": "f7e79d7b3f181c61d3defb24c630db20ceaf12a3ec237c9b0a2ab1f7855494fb",
-      "gujarati_sha256": "877e50f7d4b6b9c228744d5e7597686e54ad02d27e78daaa0b1acbbe9e6db862",
+      "gujarati_sha256": "07a38d0cbf5ceea26963e07ff7c6490cfc687c7cb640a371e590ebbb6e888d7d",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-14",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -921,6 +934,19 @@
         "date": null,
         "method": "inherited",
         "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "before_author_note_restoration": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "editorial_source": {
+        "pilot_translation_sha256": "68f88a1b99a6e676395eef56d75b33283585ca25a6ddd30995627eec80e9a383",
+        "source_note_sha256": "0b2e76a777ca617fcfdb4c09e95de97585c8a65af318cc6260803db6f0ffb463",
+        "reused_translation_sha256": "e4a04651732093209aa9f12fcc03a7c7f7e7d2384e41ae6c005cb5db7d0913ae",
+        "scope": "editorial"
       }
     },
     {
@@ -1207,11 +1233,11 @@
       "id": "OLP-0084",
       "path": "content/first-order-logic/natural-deduction/natural-deduction.tex",
       "english_sha256": "c53bed3aa593285a104c9e4c1c40a08efadb3b58094119043baa7a27b8a652e7",
-      "gujarati_sha256": "dd42b897429c7101d81af0dff9b89b77040ce8339212f5ce47635ee6ad7cad7c",
+      "gujarati_sha256": "e17886e24581f37ee991ca8826111a08b158e3ac607af924c26edb58aa2e32ed",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-14",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1221,6 +1247,19 @@
         "date": null,
         "method": "inherited",
         "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "before_author_note_restoration": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "editorial_source": {
+        "pilot_translation_sha256": "e17886e24581f37ee991ca8826111a08b158e3ac607af924c26edb58aa2e32ed",
+        "source_note_sha256": "c7c137e39745192bcc9505d89414590283831c7bf9d75399515ee31f8f662c8e",
+        "reused_translation_sha256": "614c001934c06ed72e6df0ad339edd24319540d93b1db8bf59e286b0495ef995",
+        "scope": "editorial"
       }
     },
     {
@@ -1881,11 +1920,11 @@
       "id": "OLP-0138",
       "path": "content/first-order-logic/first-order-logic.tex",
       "english_sha256": "d3db70ccef0969cf026f4f67149b0cb6cde3a398935b6582f01e056b1904a41f",
-      "gujarati_sha256": "2d76ba19b0e9362fafcdbc335708b29c140bcc47daa8706fca8d0abadd48acb9",
+      "gujarati_sha256": "adf1e9379b114875102c9873d146c943be02badd631edb451ec7c22fea11df6b",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-14",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -1895,6 +1934,19 @@
         "date": null,
         "method": "inherited",
         "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "before_author_note_restoration": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "editorial_source": {
+        "pilot_translation_sha256": "adf1e9379b114875102c9873d146c943be02badd631edb451ec7c22fea11df6b",
+        "source_note_sha256": "24200e7512e02841e4178336e412e0b4230eceb1c2ab8904257ba1168636975d",
+        "reused_translation_sha256": "a1e5218623a1f736d3ad27063d59e8b915c6cdd309ec6f7c2507f9ff77d5263f",
+        "scope": "editorial"
       }
     },
     {
@@ -2545,11 +2597,11 @@
       "id": "OLP-0174",
       "path": "content/first-order-logic/beyond/beyond.tex",
       "english_sha256": "59901c1d2af5fb520f86537ed3bfe163adc9ce43cad347b1ce2808f3c79f9d15",
-      "gujarati_sha256": "233646d76357fa8d33e54ffb1de09f7201435e3ba946efeef951b1657ea95d8c",
+      "gujarati_sha256": "691481c96c91d853350e8f7af3141790d9108f317d571cf4badd54cac868b074",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-14",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2559,6 +2611,19 @@
         "date": null,
         "method": "inherited",
         "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "before_author_note_restoration": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "editorial_source": {
+        "pilot_translation_sha256": "691481c96c91d853350e8f7af3141790d9108f317d571cf4badd54cac868b074",
+        "source_note_sha256": "71e66b731dced5d364eca196e37c2d68b1b1baddbf3cea7098161bc62fc6dde9",
+        "reused_translation_sha256": "40a51777b74d5353012791aa3bb5fd5a9f842480f88579ac5b4b5877bd093990",
+        "scope": "editorial"
       }
     },
     {
@@ -6549,11 +6614,11 @@
       "id": "OLP-0720",
       "path": "content/sets-functions-relations/sets-functions-relations.tex",
       "english_sha256": "8a374d68ba657b45cce83c420e6d6863cdf452d54bbb6d7c10f068f669bbc3cb",
-      "gujarati_sha256": "4d952da739b1ce5064d725f760b974cc29827b5bad175cf6b4231d9c52756005",
+      "gujarati_sha256": "d42b8a698dd8d22598cc0a16cde0c1d6d0b166807a96aa6cc59da8d50266b6c3",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-14",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -6563,6 +6628,19 @@
         "date": null,
         "method": "inherited",
         "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "before_author_note_restoration": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "editorial_source": {
+        "pilot_translation_sha256": "d42b8a698dd8d22598cc0a16cde0c1d6d0b166807a96aa6cc59da8d50266b6c3",
+        "source_note_sha256": "fee5cdda8d7e3f6411ea35cd8b0c6db9fe791acc8faa8bcc41f4ce4212d558c0",
+        "reused_translation_sha256": "19b3307a1220c72c1fd299b6124a08f735e658203bd6c8ef97d7c1a05db90df0",
+        "scope": "editorial"
       }
     },
     {
@@ -6575,11 +6653,11 @@
       "id": "OLP-0722",
       "path": "content/sets-functions-relations/size-of-sets/size-of-sets.tex",
       "english_sha256": "1b755d63c0edd2bf25f5f07187bf39da92895ff846a16a59d579227124ef116b",
-      "gujarati_sha256": "3416b330d11dc93111e88ab82112100d61098f2153130658b47e8b6a17934ed9",
+      "gujarati_sha256": "3208eb6039feb096e8fe75501af6aef13f6b939b602e34dd0a86e973c68b10e6",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-14",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -6589,6 +6667,19 @@
         "date": null,
         "method": "inherited",
         "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "before_author_note_restoration": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "editorial_source": {
+        "pilot_translation_sha256": "3208eb6039feb096e8fe75501af6aef13f6b939b602e34dd0a86e973c68b10e6",
+        "source_note_sha256": "2a47d307fb1ad3f40b5d310293fb84e76bc46b9a4016764bfe218b5771a2310f",
+        "reused_translation_sha256": "2f51be8c0c26028eee483993d871373c8c6c4c9680006d0bac81c70143f7fe44",
+        "scope": "editorial"
       }
     }
   ]
