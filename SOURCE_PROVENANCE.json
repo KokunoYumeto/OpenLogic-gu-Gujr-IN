@@ -2650,11 +2650,11 @@
       "id": "OLP-0176",
       "path": "content/first-order-logic/beyond/many-sorted-logic.tex",
       "english_sha256": "5a6abcd66e91868de97e0c1ec44cdf848396655cc6995adc05d6771844ecfac7",
-      "gujarati_sha256": "9cfac42c934a6c1f0a52a6fef7633a968a8aa35c3393d23cec16397ec1b7cff3",
+      "gujarati_sha256": "51025f703e080fc63043ac7f1799f95eb28b61e54d23e0328389ccc1e19ee1c4",
       "by": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6-astra",
         "effort": "ultra",
-        "date": "2026-11-13",
+        "date": "2026-11-16",
         "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       },
@@ -2663,6 +2663,13 @@
         "effort": null,
         "date": null,
         "method": "inherited",
+        "evidence": "SOURCE_PROVENANCE.json"
+      },
+      "prior_editorial_attribution": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-13",
+        "method": "patched",
         "evidence": "SOURCE_PROVENANCE.json"
       }
     },
