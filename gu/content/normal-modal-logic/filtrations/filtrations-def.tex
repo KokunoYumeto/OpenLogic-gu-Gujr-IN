@@ -84,16 +84,16 @@ $w \equiv u$. તેથી $[w] \in V^*(p)$ હોય ત્યારે આપ�
       પૂર્વધારણા મુજબ $p \in \Gamma$ અને $\mSat{M}{p}[v]$
       હોવાથી $\mSat{M}{\indfrm}[w]$.}
 
-    \tagitem{prvNot}{\iftag{probNot}{પ્રશ્ન.}{\indcase{!A}{\lnot
-          !B}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+    \tagitem{prvNot}{\indcase{!A}{\lnot
+          !B}{\iftag{probNot}{પ્રશ્ન.}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
           $\mSat/{M}{!B}[w]$. અનુમાનની પૂર્વધારણાથી
           $\mSat/{M}{!B}[w]$ જો અને માત્ર જો
           $\mSat/{M^*}{!B}[{[w]}]$. છેલ્લે,
           $\mSat/{M^*}{!B}[{[w]}]$ જો અને માત્ર જો
           $\mSat{M^*}{\indfrm}[{[w]}]$.}}}{}
 
-    \tagitem{prvAnd}{\iftag{probAnd}{પ્રશ્ન.}{\indcase{!A}{(!B \land
-          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+    \tagitem{prvAnd}{\indcase{!A}{(!B \land
+          !C)}{\iftag{probAnd}{પ્રશ્ન.}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
           $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બંને.
           અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
           $\mSat{M^*}{!B}[{[w]}]$, અને $\mSat{M}{!C}[w]$ જો અને
@@ -102,8 +102,8 @@ $w \equiv u$. તેથી $[w] \in V^*(p)$ હોય ત્યારે આપ�
           $\mSat{M^*}{!B}[{[w]}]$ અને
           $\mSat{M^*}{!C}[{[w]}]$ બંને.}}}{}
 
-    \tagitem{prvOr}{\iftag{probOr}{પ્રશ્ન.}{\indcase{!A}{(!B \lor
-          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+    \tagitem{prvOr}{\indcase{!A}{(!B \lor
+          !C)}{\iftag{probOr}{પ્રશ્ન.}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
           $\mSat{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$.
           અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
           $\mSat{M^*}{!B}[{[w]}]$, અને $\mSat{M}{!C}[w]$ જો અને
@@ -112,8 +112,8 @@ $w \equiv u$. તેથી $[w] \in V^*(p)$ હોય ત્યારે આપ�
           $\mSat{M^*}{!B}[{[w]}]$ અથવા
           $\mSat{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvIf}{\iftag{probIf}{પ્રશ્ન.}{\indcase{!A}{(!B \lif
-          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+    \tagitem{prvIf}{\indcase{!A}{(!B \lif
+          !C)}{\iftag{probIf}{પ્રશ્ન.}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
           $\mSat/{M}{!B}[w]$ અથવા $\mSat{M}{!C}[w]$.
           અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
           $\mSat{M^*}{!B}[{[w]}]$, અને $\mSat{M}{!C}[w]$ જો અને
@@ -122,8 +122,8 @@ $w \equiv u$. તેથી $[w] \in V^*(p)$ હોય ત્યારે આપ�
           $\mSat/{M^*}{!B}[{[w]}]$ અથવા
           $\mSat{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvIff}{\iftag{probIff}{પ્રશ્ન.}{\indcase{!A}{(!B \liff
-          !C)}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
+    \tagitem{prvIff}{\indcase{!A}{(!B \liff
+          !C)}{\iftag{probIff}{પ્રશ્ન.}{$\mSat{M}{\indfrm}[w]$ જો અને માત્ર જો
           $\mSat{M}{!B}[w]$ અને $\mSat{M}{!C}[w]$ બંને, અથવા
           $\mSat/{M}{!B}[w]$ અને $\mSat/{M}{!C}[w]$ બંને.
           અનુમાનની પૂર્વધારણાથી $\mSat{M}{!B}[w]$ જો અને માત્ર જો
@@ -135,8 +135,8 @@ $w \equiv u$. તેથી $[w] \in V^*(p)$ હોય ત્યારે આપ�
           $\mSat/{M^*}{!B}[{[w]}]$ અને
           $\mSat/{M^*}{!C}[{[w]}]$ બંને.}}}{}
 
-    \tagitem{prvBox}{\iftag{probBox}{પ્રશ્ન.}{\indcase{!A}{\Box
-          !B}{ધારો કે $\mSat{M}{\indfrm}[w]$.
+    \tagitem{prvBox}{\indcase{!A}{\Box
+          !B}{\iftag{probBox}{પ્રશ્ન.}{ધારો કે $\mSat{M}{\indfrm}[w]$.
           $\mSat{M^*}{\indfrm}[{[w]}]$ બતાવવા એવો $v$ લો કે
           $R^*[w][v]$. \olref{defn:filtration}%
           \olref{defn:filtration-R2} મુજબ $\mSat{M}{!B}[v]$;
@@ -151,8 +151,8 @@ $w \equiv u$. તેથી $[w] \in V^*(p)$ હોય ત્યારે આપ�
           $\mSat{M}{!B}[v]$. $v$ મનસ્વી હોવાથી
           $\mSat{M}{\indfrm}[w]$.}}}{}
 
-    \tagitem{prvDiamond}{\iftag{probDiamond}{પ્રશ્ન.}{\indcase{!A}{\Diamond
-          !B}{ધારો કે $\mSat{M}{\indfrm}[w]$.
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond
+          !B}{\iftag{probDiamond}{પ્રશ્ન.}{ધારો કે $\mSat{M}{\indfrm}[w]$.
           ત્યારે કોઈ $v \in W$ માટે $Rwv$ અને
           $\mSat{M}{!B}[v]$. અનુમાનની પૂર્વધારણાથી
           $\mSat{M^*}{!B}[{[v]}]$; અને

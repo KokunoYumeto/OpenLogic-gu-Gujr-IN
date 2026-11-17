@@ -206,7 +206,7 @@ $\{\Obj c_0\}$
 માટે આ
 કરીએ:
 
-!!a{formula}~$!A$
+કોઈ આણ્વિક !!{formula}~$!A$
 સિક્વન્ટની
 ડાબી અને
 જમણી બંને
@@ -250,19 +250,12 @@ $!A^i, \Pi
 $\Pi \Sequent \Lambda, !A^i$
 છે.
 $k$ એ
-આ સિક્વન્ટના
-મહત્તમ
-અનુક્રમણિકાંક
-કરતાં એક
-વધુ, એટલે
-આગલો ન
-વપરાયેલો
-અનુક્રમણિકાંક,
+આ સિક્વન્ટનો મહત્તમ અનુક્રમણિકાંક,
 અને~$C$
 તેને સોંપેલો
 !!{constant}sનો
 ગણ હોય.
-\sourcecorrection{OLMD-275}{મૂળ $k$ને હાલનો મહત્તમ અનુક્રમણિકાંક કહે છે, પરંતુ નીચેના નિયમો નવા સૂત્રોને $k$ અને $k+1$ આપે છે. તેમની તાજગી તથા ન્યાયી પસંદગી માટે $k$ હાલના મહત્તમથી એક વધુ હોવો જોઈએ.}
+\sourcecorrection{OLMD-275}{નવા સૂત્રોને $k+1$ અને જરૂર પડે ત્યાં $k+2$ આપવાથી તેમનો અનુક્રમણિકાંક હાલના દરેક અનુક્રમણિકાંક કરતાં મોટો રહે છે. આથી પહેલેથી રાહ જોતા સૂત્રનો વારો આગળ આવે છે.}
 
 $!A^i$ને
 ``ઘટાડીએ'':
@@ -283,7 +276,7 @@ $!A^i$ને
   $(!B \land !C)^i, \Pi \Sequent \Lambda$ની ઉપર એક નવો
   સૌથી ઉપરનો સિક્વન્ટ ઉમેરો:
   \[
-  \Axiom$!B^k, !C^{k+1}, \Pi \fCenter \Lambda$
+  \Axiom$!B^{k+1}, !C^{k+2}, \Pi \fCenter \Lambda$
   \RightLabel{\LeftR{\land}}
   \UnaryInf$(!B \land !C)^i, \Pi \fCenter \Lambda$
   \DisplayProof
@@ -293,8 +286,8 @@ $!A^i$ને
   $\Pi \Sequent \Lambda, (!B \land !C)^i$ની ઉપર બે નવા
   સૌથી ઉપરના સિક્વન્ટો ઉમેરો:
   \[
-  \Axiom$\Pi \fCenter \Lambda, !B^k$
-  \Axiom$\Pi \fCenter \Lambda, !C^k$
+  \Axiom$\Pi \fCenter \Lambda, !B^{k+1}$
+  \Axiom$\Pi \fCenter \Lambda, !C^{k+1}$
   \RightLabel{\RightR{\land}}
   \BinaryInf$\Pi \fCenter \Lambda, (!B \land !C)^i$
   \DisplayProof
@@ -309,7 +302,7 @@ $!A^i$ને
   $\lexists[x][!B(x)]^i, \Pi \Sequent \Lambda$ની ઉપર એક નવો
   સૌથી ઉપરનો સિક્વન્ટ ઉમેરો:
   \[
-  \Axiom$!B(c)^k, \Pi \fCenter \Lambda$
+  \Axiom$!B(c)^{k+1}, \Pi \fCenter \Lambda$
   \RightLabel{\LeftR{\lexists}}
   \UnaryInf$\lexists[x][!B(x)]^i, \Pi \fCenter \Lambda$
   \DisplayProof
@@ -321,7 +314,7 @@ $!A^i$ને
   સૌથી ઉપરનો સિક્વન્ટ ઉમેરો:
   
   \[
-  \Axiom$\Pi \fCenter \Lambda, \lexists[x][!B(x)]^k, !B(t)^{k+1}$
+  \Axiom$\Pi \fCenter \Lambda, \lexists[x][!B(x)]^{k+1}, !B(t)^{k+2}$
   \RightLabel{\RightR{\lexists}}
   \UnaryInf$\Pi \fCenter \Lambda, \lexists[x][!B(x)]^i$
   \DisplayProof
@@ -332,13 +325,8 @@ $!A^i$ને
   (અથવા આવાં બધાં પદો વપરાઈ ગયાં હોય તો
   $C$માંનો પ્રથમ !!{constant}).
   નવા સિક્વન્ટને સોંપેલો !!{constant}sનો ગણ $C$ છે.
-  \sourcecorrection{OLREA-206}{મૂળનો વૈકલ્પિક અચળ
-  $\Obj c_0$ ગણ~$C$માં ન પણ હોય. બધા પદો વપરાયા
-  પછી તેને ગણ બદલ્યા વિના દાખલ કરવાથી આગળના
-  સ્વનિર્ધારક અચળની તાજગી બગડી શકે છે. $C$ શરૂઆતથી
-  બિનખાલી છે; તેમાંનો પ્રથમ અચળ ફરી વાપરવાથી
-  બધા આવતાં અચળો $C$માં હોવાની શરત જળવાય છે.}
-  \sourcecorrection{OLMD-276}{મૂળ નિયમવૃક્ષમાં જમણી બાજુના અસ્તિત્વ-સૂત્ર માટે ભૂલથી ડાબો નિયમ \LeftR{\lexists} લખાયો છે; તેને યોગ્ય \RightR{\lexists} કર્યો છે.}
+  \sourcecorrection{OLREA-206}{અચળ $\Obj c_0$ ગણ~$C$માં ન પણ હોય. બધાં પદો વપરાયા પછી તેને ગણ બદલ્યા વિના દાખલ કરવાથી આગળ પસંદ થનારા અચળની તાજગી બગડી શકે છે. $C$ શરૂઆતથી બિનખાલી છે. તેમાંનો પ્રથમ અચળ ફરી વાપરવાથી સિક્વન્ટમાં આવતાં બધાં અચળો $C$માં હોવાની શરત જળવાય છે.}
+  \sourcecorrection{OLMD-276}{અહીં અસ્તિત્વ-સૂત્ર સિક્વન્ટની જમણી બાજુએ છે. તેથી લાગુ પડતો નિયમ \RightR{\lexists} છે.}
   \item $!A \ident \lforall[x][!B(x)]$ના કિસ્સા સમાન છે અને
   અભ્યાસ માટે છોડ્યા છે.
 \end{enumerate}
@@ -348,8 +336,8 @@ $!A^i$ને
 થોભે છે. આ કિસ્સામાં તબક્કા~$n+1$ના વૃક્ષમાંથી
 બધા અનુક્રમણિકાંક ભૂંસીને $\Gamma \Sequent \Delta$ની
 !!a{proof} મળે છે. સૌથી ઉપરના બધા સિક્વન્ટો
-$!A, \Pi \Sequent \Lambda, !A$ અથવા
-$\lfalse, \Pi \Sequent \Lambda$ સ્વરૂપના છે.
+$!A, \Pi \Sequent \Lambda, !A$ સ્વરૂપના છે, જ્યાં $!A$ આણ્વિક છે,
+અથવા $\lfalse, \Pi \Sequent \Lambda$ સ્વરૂપના છે.
 બધાં અનુમાનો \Log{G3c}નાં યોગ્ય અનુમાનો છે.
 વિધાનતર્કીય અનુમાનો માટે આ સ્પષ્ટ છે.
 નોંધો કે દરેક પગલે સિક્વન્ટને સોંપેલા

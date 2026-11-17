@@ -20,12 +20,12 @@ courses = "courses"
 
 [conversion]
 source_manifest = "SOURCE_PROVENANCE.json"
-source_manifest_sha256 = "d7802fd918c0726b0201f09a6fd87ea198f083374adab02fc04277bf805f5df4"
+source_manifest_sha256 = "faa4960db1cf605c10dad4a339c04a8dba9191dadc22cff013c7d6526d100f34"
 attribution_policy = "preserve-recorded-else-unresolved"
 
 [pins.olp]
 repository = "https://github.com/OpenLogicProject/OpenLogic"
-commit = "1e960beff9ed7835bf3e3f1335e21af3439cd107"
+commit = "3aacf4afad2ed3827c7cdb46b1b49942574247a6"
 
 [pins.slc]
 repository = "https://github.com/rzach/sets-logic-computation"

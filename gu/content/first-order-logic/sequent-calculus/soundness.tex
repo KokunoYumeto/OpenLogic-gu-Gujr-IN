@@ -159,9 +159,10 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$, અને $\Xi = \Delta$ હોવાથી
   $!C \in \Xi$ પણ છે. આમ દરેક કિસ્સામાં
   \iftag{FOL}{$\Struct M$}{$\pAssign{v}$} એ
-  $!A \land !B, \Gamma \Sequent \Delta$ને સંતોષે છે. આ
+  $!A \land !B, \Gamma \Sequent \Delta$, એટલે કે
+  $\Theta \Sequent \Xi$ને સંતોષે છે. આ
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} મનસ્વી હતું, તેથી
-  $!A \land !B, \Gamma \Sequent \Delta$ પ્રામાણ્ય છે. $!B$માંથી
+  $\Theta \Sequent \Xi$ પ્રામાણ્ય છે. $!B$માંથી
   $!A \land !B$નું અનુમાન થતું હોય તે કિસ્સો $!A$ને $!B$થી બદલીને એ જ
   રીતે સંભાળાય છે.
 \item છેલ્લું અનુમાન \RightR{\lor} છે. તેનાં બે રૂપ છે: આધાર-સિક્વન્ટની
@@ -212,9 +213,10 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   કિસ્સા (d)માં કોઈ $!C \in \Delta$ માટે
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. દરેક કિસ્સામાં
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
-  $\Gamma \Sequent \Delta, !A \lif !B$ને સંતોષે છે. આ
+  $\Gamma \Sequent \Delta, !A \lif !B$, એટલે કે
+  $\Theta \Sequent \Xi$ને સંતોષે છે. આ
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} મનસ્વી હતું, તેથી
-  $\Gamma \Sequent \Delta, !A \lif !B$ પ્રામાણ્ય છે. \iftag{FOL}{%
+  $\Theta \Sequent \Xi$ પ્રામાણ્ય છે. \iftag{FOL}{%
 \item છેલ્લું અનુમાન \LeftR{\lforall} છે. ત્યારે એવું !!a{formula}~$!A(x)$
   અને બંધ પદ~$t$ છે કે $\pi$નો અંત આ પ્રમાણે છે:
   \begin{prooftree}
@@ -234,7 +236,8 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   અને (c)માં $\Struct{M}$ એ
   $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ને પણ સંતોષે છે.
   $\Struct M$ મનસ્વી હતું, તેથી
-  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ પ્રામાણ્ય છે.
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$, એટલે કે
+  $\Theta \Sequent \Xi$, પ્રામાણ્ય છે.
 \item છેલ્લું અનુમાન \RightR{\lexists} છે: અભ્યાસપ્રશ્ન.
 \item છેલ્લું અનુમાન \RightR{\lforall} છે. ત્યારે એવું !!a{formula}~$!A(x)$
   અને એવું !!a{constant}~$a$ છે કે $\pi$નો અંત આ પ્રમાણે છે:
@@ -311,7 +314,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   લો. જો \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} એ
   $\Gamma \Sequent \Delta$ને સંતોષે, તો કામ પૂરું થયું. તેથી માનો કે તે
   તેને સંતોષતું નથી. આગમન-પરિકલ્પના મુજબ
-  $\Gamma \fCenter \Delta, !A$ પ્રામાણ્ય હોવાથી
+  $\Gamma \Sequent \Delta, !A$ પ્રામાણ્ય હોવાથી
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. એ જ રીતે,
   $\Gamma \Sequent \Delta, !B$ પ્રામાણ્ય હોવાથી
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. તેથી
