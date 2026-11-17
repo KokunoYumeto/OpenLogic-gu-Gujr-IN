@@ -11,10 +11,10 @@ import re
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = 'full-edition-v1.2.0'
+VERSION = 'full-edition-v1.3.0'
 OUT = ROOT/'releases'/VERSION
-BUILD = ROOT/'build/full-reader-final-1e960bef'
-JOB = 'gu-full-reader-sync-1e960bef'
+BUILD = ROOT/'build/full-reader-sync-3aacf4af'
+JOB = 'gu-source-sync'
 NAMES = ['01-OpenLogic-gu-Gujr-IN-Full.pdf',
          '02-OpenLogic-gu-Gujr-IN-Full-Text.tex',
          '03-OpenLogic-gu-Gujr-IN-Full-Source.zip',
@@ -28,6 +28,8 @@ TOOLS = ['build_full_reader_guarded.ps1','WindowsTeXJob.cs','prepare_full_epub_h
          'render_native_epub_figures.py','build_exact_operator_fonts.py',
          'edition_metadata.py','package_reader_edition.py']
 FILES = ['LICENSE.md','README.md','CITATION.cff','SOURCE_PROVENANCE.json',
+         'units.jsonl',
+         'lang/orthography.json','lang/lint-exceptions.tsv',
          'docs/BUILD_FULL_READER.gu.md','docs/LICENSE_NOTES.md',
          'docs/EDITION_HISTORY.gu.md','reader/full-reader.tex',
          'reader/full-reader-resolved-body.tex','reader/full-reader-config.sty',
@@ -37,7 +39,8 @@ FILES = ['LICENSE.md','README.md','CITATION.cff','SOURCE_PROVENANCE.json',
          'upstream/open-logic-locale.sty','upstream/open-logic-complete-config.sty']
 DIRECTORIES = ['gu/content','upstream/content','upstream/sty','upstream/include','upstream/bib',
                'upstream/assets/diagrams','upstream/assets/photos','fonts',
-               'reader/assets','reader/figures/native','reader/fonts/exact-operators']
+               'reader/assets','reader/figures/native','reader/fonts/exact-operators',
+               'provenance/canon']
 GENERATED_SUFFIXES = {'.aux','.fls','.fdb_latexmk','.log','.out','.pcr','.pyc','.pyo','.synctex','.toc'}
 
 
@@ -131,7 +134,8 @@ def main():
                      'source='+'"goal"']
     forbidden=re.compile(r'(?i)C:[/\\]+Users[/\\]+|'+'|'.join(re.escape(term) for term in private_terms))
     for name,path in selected.items():
-        assert not name.startswith(('provenance/','work/','build/','tmp/'))
+        assert not name.startswith(('work/','build/','tmp/'))
+        assert not name.startswith('provenance/') or name.startswith('provenance/canon/')
         if path.suffix.lower() in ('.py','.ps1','.md','.txt','.tex','.json','.jsonl','.html','.cff'):
             content=path.read_text(encoding='utf-8-sig',errors='replace')
             assert not forbidden.search(content),'Private administrative content in '+name
@@ -141,9 +145,9 @@ def main():
     manifest=(json.dumps(inventory,ensure_ascii=False,indent=2)+'\n').encode('utf-8')
     with ZipFile(OUT/NAMES[2],'w') as archive:
         for name,path in sorted(selected.items()):
-            info=ZipInfo(name,(2026,11,13,0,0,0));info.external_attr=0o100644<<16
+            info=ZipInfo(name,(2026,11,17,0,0,0));info.external_attr=0o100644<<16
             archive.writestr(info,path.read_bytes(),compress_type=ZIP_DEFLATED,compresslevel=9)
-        info=ZipInfo('SOURCE_INVENTORY.json',(2026,11,13,0,0,0));info.external_attr=0o100644<<16
+        info=ZipInfo('SOURCE_INVENTORY.json',(2026,11,17,0,0,0));info.external_attr=0o100644<<16
         archive.writestr(info,manifest,compress_type=ZIP_DEFLATED,compresslevel=9)
     with ZipFile(OUT/NAMES[2]) as archive:
         assert set(archive.namelist())==set(selected)|{'SOURCE_INVENTORY.json'}
