@@ -9,6 +9,11 @@ schema_version = 1
 products = ["olp-complete", "slc-screen-pdf"]
 
 [paths]
+orthography = "lang/orthography.json"
+termbase = "provenance/canon/TERM_DECISIONS.jsonl"
+canon_sources = "provenance/canon/CANON_SOURCES.jsonl"
+canon_passages = "provenance/canon/CANON_PASSAGES.jsonl"
+segment_canon = "provenance/canon/SEGMENT_CANON.jsonl"
 content = "gu/content"
 source_content = "upstream/content"
 courses = "courses"

@@ -6,6 +6,7 @@ Open Logic Projectના રૂપલક્ષી તર્કશાસ્ત્
 - [પ્રવાહી EPUB](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.2.0/06-OpenLogic-gu-Gujr-IN-Full.epub)
 - [પૂર્ણ સંપાદનીય LaTeX](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.2.0/02-OpenLogic-gu-Gujr-IN-Full-Text.tex)
 - [મોડ્યુલો, ફોન્ટ, ચિત્રો અને બિલ્ડ સાધનોવાળો સ્રોત ZIP](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/full-edition-v1.2.0/03-OpenLogic-gu-Gujr-IN-Full-Source.zip)
+- [ગુજરાતી પરિભાષા, ગ્રંથસૂચિ અને ઉદાહરણ સાથેની માર્ગદર્શિકા](provenance/canon/README.md)
 
 [ગણો, તર્ક, સંગણન](courses/sets-logic-computation/README.md) · [પુસ્તક વાંચો (PDF)](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu.pdf) · [સંપૂર્ણ સંપાદનીય LaTeX](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu.tex) · [સ્રોત અને સંકલન માટેની ફાઇલો](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu-source.zip) · [EPUB ડાઉનલોડ કરો](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu.epub) · [ઑફલાઇન HTML](https://github.com/KokunoYumeto/OpenLogic-gu-Gujr-IN/releases/download/slc-2026-11-16/slc-screen-gu-html.zip)
 
