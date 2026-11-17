@@ -17,6 +17,74 @@
 \usepackage{microtype}
 \includeenv{editorial}
 \pdfvariable suppressoptionalinfo 767
+% Enable the standard Type 1 glyph list and supply font-specific math mappings.
+% LuaHBTeX 1.24 or later supports the tfm: qualifier. Keep this block in
+% the driver so the downloadable cumulative TeX uses the same mappings.
+\begingroup
+  \protected\def\pdfglyphtounicode{\pdfextension glyphtounicode}
+  \input{glyphtounicode.tex}
+\endgroup
+\pdfvariable gentounicode=1
+% Sized delimiters and the Unicode pieces of extensible delimiters.
+\pdfextension glyphtounicode{tfm:cmex10/parenleftbig}{0028}
+\pdfextension glyphtounicode{tfm:cmex10/parenrightbig}{0029}
+\pdfextension glyphtounicode{tfm:cmex10/bracketleftbig}{005B}
+\pdfextension glyphtounicode{tfm:cmex10/bracketrightbig}{005D}
+\pdfextension glyphtounicode{tfm:cmex10/ceilingleftbig}{2308}
+\pdfextension glyphtounicode{tfm:cmex10/ceilingrightbig}{2309}
+\pdfextension glyphtounicode{tfm:cmex10/vextendsingle}{23D0}
+\pdfextension glyphtounicode{tfm:cmex10/parenleftbigg}{0028}
+\pdfextension glyphtounicode{tfm:cmex10/parenrightbigg}{0029}
+\pdfextension glyphtounicode{tfm:cmex10/bracerightbigg}{007D}
+\pdfextension glyphtounicode{tfm:cmex10/braceleftBigg}{007B}
+\pdfextension glyphtounicode{tfm:cmex10/bracerightBigg}{007D}
+\pdfextension glyphtounicode{tfm:cmex10/bracelefttp}{23A7}
+\pdfextension glyphtounicode{tfm:cmex10/bracerighttp}{23AB}
+\pdfextension glyphtounicode{tfm:cmex10/braceleftmid}{23A8}
+\pdfextension glyphtounicode{tfm:cmex10/bracerightmid}{23AC}
+\pdfextension glyphtounicode{tfm:cmex10/braceleftbt}{23A9}
+\pdfextension glyphtounicode{tfm:cmex10/bracerightbt}{23AD}
+\pdfextension glyphtounicode{tfm:cmex10/braceex}{23AA}
+\pdfextension glyphtounicode{tfm:cmex10/braceleftBig}{007B}
+\pdfextension glyphtounicode{tfm:cmex10/bracerightBig}{007D}
+\pdfextension glyphtounicode{tfm:cmex10/radicalBig}{221A}
+\pdfextension glyphtounicode{tfm:cmex10/bracehtipdownleft}{23DF}
+\pdfextension glyphtounicode{tfm:cmex10/bracehtipdownright}{23DF}
+\pdfextension glyphtounicode{tfm:cmex10/bracehtipupleft}{23DE}
+\pdfextension glyphtounicode{tfm:cmex10/bracehtipupright}{23DE}
+% Large operators share the Unicode value across their printed sizes.
+\pdfextension glyphtounicode{tfm:cmex10/uniontext}{22C3}
+\pdfextension glyphtounicode{tfm:cmex10/uniondisplay}{22C3}
+\pdfextension glyphtounicode{tfm:cmex9/uniontext}{22C3}
+\pdfextension glyphtounicode{tfm:cmex10/intersectiontext}{22C2}
+\pdfextension glyphtounicode{tfm:cmex10/intersectiondisplay}{22C2}
+\pdfextension glyphtounicode{tfm:cmex10/logicalandtext}{22C0}
+\pdfextension glyphtounicode{tfm:cmex10/logicalanddisplay}{22C0}
+\pdfextension glyphtounicode{tfm:cmex10/logicalortext}{22C1}
+\pdfextension glyphtounicode{tfm:cmex10/logicalordisplay}{22C1}
+\pdfextension glyphtounicode{tfm:cmex10/summationtext}{2211}
+\pdfextension glyphtounicode{tfm:cmex10/summationdisplay}{2211}
+\pdfextension glyphtounicode{tfm:cmex10/productdisplay}{220F}
+\pdfextension glyphtounicode{tfm:cmex10/hatwide}{02C6}
+\pdfextension glyphtounicode{tfm:cmex10/tildewide}{02DC}
+\pdfextension glyphtounicode{tfm:cmex10/tildewider}{02DC}
+% Computer Modern uses a separate arrow after the bar in longmapsto.
+\pdfextension glyphtounicode{tfm:cmsy10/mapsto}{007C}
+\pdfextension glyphtounicode{tfm:msam10/satisfies}{22A8}
+\pdfextension glyphtounicode{tfm:msam10/square}{25A1}
+\pdfextension glyphtounicode{tfm:msam10/harpoonupright}{21BE}
+\pdfextension glyphtounicode{tfm:msbm10/notapproxequal}{2247}
+\pdfextension glyphtounicode{tfm:msbm10/notprecedesoreql}{2AAF 0338}
+\pdfextension glyphtounicode{tfm:stmary10/leftrightarroweq}{2194 0332}
+\pdfextension glyphtounicode{tfm:stmary10/varolessthan}{29C0}
+\pdfextension glyphtounicode{tfm:txsyc/strict}{297D}
+\pdfextension glyphtounicode{tfm:txsyc/squareright}{25A1 2192}
+% HFbright old-style numerals have ordinary digit values.
+\pdfextension glyphtounicode{tfm:hfbrmi10/zerooldstyle}{0030}
+\pdfextension glyphtounicode{tfm:hfbrmi10/oneoldstyle}{0031}
+\pdfextension glyphtounicode{tfm:hfbrmi8/zerooldstyle}{0030}
+\pdfextension glyphtounicode{tfm:hfbrmi8/oneoldstyle}{0031}
+
 \input{reader/gu-reader-layout.tex}
 \hypersetup{unicode=true,linkcolor=black,citecolor=black,urlcolor=black,pdftitle={ઓપન લોજિક ગુજરાતી: તર્કશાસ્ત્ર અને રૂપલક્ષી પદ્ધતિઓ},pdfauthor={Open Logic Project},pdfsubject={ગુજરાતી AI-અનુવાદ અને ગણિતીય સંપાદકીય નોંધો}}
 \setlength{\parindent}{0pt}
